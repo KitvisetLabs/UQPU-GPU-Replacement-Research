@@ -89,3 +89,14 @@
 **Decision:** Use inverse design to divide the maximum UQCS cost/task allowed by each target tier among compute, memory, storage, fabric, control/QEC and power/operations.
 
 **Reason:** A 100×–100M× goal becomes an actionable engineering constraint only when every subsystem has a measurable budget.
+
+
+## 2026-09-09 — D018: Use inverse economic targets to drive hardware specifications
+**Decision:** Hardware requirements should be derived backward from end-to-end cost/task targets rather than chosen independently.
+
+**Reason:** This connects fidelity, power, bandwidth, yield, photonic loss and QEC resources directly to the 100×–100M× economic objective.
+
+## 2026-09-09 — D019: Require monotonic target tightening in inverse-design models
+**Decision:** As economic target tiers become more demanding, inverse-design constraints must tighten monotonically unless a model explicitly explains a non-monotonic physical effect.
+
+**Reason:** This is a useful software invariant and exposed a defect in the first utilization/yield implementation.
