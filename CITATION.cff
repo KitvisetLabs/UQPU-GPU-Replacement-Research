@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research, please cite it as below."
+title: "UQPU: Universal Quantum Processing Unit — A Research Blueprint for Functional Replacement of General-Purpose GPUs"
+type: report
+authors:
+  - family-names: "Pongpanna"
+    given-names: "Kanutsanan"
+date-released: 2026-09-09
+version: "0.2"
+abstract: "A research blueprint for a quantum-first processing architecture intended to cover the full functional workload domain of general-purpose GPUs without requiring GPU-like internal execution."
+keywords:
+  - quantum computing
+  - QPU
+  - GPU replacement
+  - computer architecture
+  - quantum accelerator
+  - semantic compiler
