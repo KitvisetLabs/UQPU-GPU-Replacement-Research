@@ -213,3 +213,28 @@ Research implication:
 The economic target can now be propagated from a measured conventional system cost/task into explicit subsystem budgets. This makes it possible to reject architectures whose compute, memory, storage, fabric, QEC/control or operations budget cannot satisfy a selected target.
 
 Repository synchronization completed for this development cycle.
+
+
+### Inverse hardware design solver
+Implemented MODEL_ONLY inverse solvers that translate UQCS cost-target tiers into hardware constraints for:
+- subsystem cost/task budgets
+- operating power
+- effective bandwidth
+- fabrication yield
+- photonic loss
+- detector/source/switch efficiencies
+- QEC runtime
+- physical-qubit budget
+- non-Clifford-operation budget
+
+Verification/refinement:
+- added inverse-hardware unit tests
+- inspected monotonic behavior across 100× to 100,000,000× targets
+- found and fixed a utilization/yield scaling defect in the first implementation; the initial code used a branch that did not tighten utilization correctly for floating-point scale values
+- replaced it with logarithmic decade-based scaling
+- added regression tests requiring tighter target tiers to increase minimum utilization/yield and reduce power/loss budgets
+
+Evidence status:
+All numerical hardware requirements remain MODEL_ONLY architecture-search constraints. They are not specifications of current hardware and are not evidence of achieved quantum advantage.
+
+GitHub synchronization completed for this research cycle.
