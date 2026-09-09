@@ -158,3 +158,12 @@
 ## 2026-09-09 — D031: Treat lithography as one element of an integrated patterning/fab system
 **Decision:** No lithography route may be evaluated without eventually including resist/materials, etch, deposition, metrology, defects, yield, masks, cleaning, packaging and facility costs.
 **Reason:** Published tool resolution alone is not a manufacturing-cost metric and cannot establish the project's 100× economic objective.
+
+
+## 2026-09-09 — D032: Optimize fabrication by cost per good die, not tool resolution alone
+**Decision:** UQCS fabrication economics will use cumulative yield and total process cost to estimate cost per good die.
+**Reason:** A nominally cheaper or higher-resolution process can lose economically through low yield, excessive steps, long cycle time or high facility/process overhead.
+
+## 2026-09-09 — D033: Rank fab bottlenecks across cost, yield, time and energy
+**Decision:** Fabrication optimization should identify the highest combined process penalties rather than assuming lithography is always dominant.
+**Reason:** Deposition, etch, CMP, cleaning, metrology, test or packaging may dominate a specific quantum/photonic/semiconductor process flow.
