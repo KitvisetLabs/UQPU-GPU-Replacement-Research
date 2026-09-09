@@ -2,71 +2,54 @@
 
 ## Development loop
 
-The UQPU prototype follows:
-
 ```text
 design -> implement -> unit test -> inspect result -> refine model
        -> regression test -> commit -> CI -> next iteration
 ```
 
-## Local verification completed for v0.2
+## Verification history
 
-Environment used during development: Python 3.x standard library only.
+### v0.2
+- 9 local tests passed.
+- CLI smoke test passed.
+- Added MODEL_ONLY evidence labeling.
 
-Command:
+### v0.3
+New verification suite adds 11 tests covering:
 
-```bash
-python -m unittest discover -s tests -v
-```
+- quantum hardware-profile validation
+- rejection of physical error rates above the configured QEC threshold
+- GPU hardware-profile economics
+- surface-code distance parity and lower bound
+- monotonic code-distance behavior as error targets tighten
+- total physical-qubit accounting
+- GPU cost increasing with runtime
+- sensitivity sweep behavior
+- 100× target calculation
+- 100,000,000× moonshot target calculation
+- target-ladder ordering
 
-Result:
+Local v0.3 module result:
 
 ```text
-Ran 9 tests
+Ran 11 tests
 OK
 ```
 
-Verified areas:
-
-- IR validation
-- invalid I/O rejection
-- exact-contract fallback behavior
-- quantum-native candidate discovery
-- positive cost accounting
-- cost-advantage calculation
-- cost-tier boundaries
-- MODEL_ONLY evidence labeling
-- JSON workload parsing
-
-CLI smoke test:
-
-```bash
-python -m uqpu.cli compile examples/search_workload.json
-```
-
-Expected behavior:
-
-- selects a contract-compatible backend
-- emits a resource/cost estimate
-- marks evidence as MODEL_ONLY
-- exposes confidence
-- does not claim hardware-demonstrated advantage
-
-## Continuous integration
-
-GitHub Actions runs tests on Python 3.10, 3.11 and 3.12 whenever prototype code changes or a Pull Request modifies it.
+The repository now contains 20 unit tests total (9 from v0.2 plus 11 introduced in v0.3). GitHub Actions remains the integration-level verifier across Python 3.10, 3.11 and 3.12.
 
 ## Scientific verification rule
 
-Passing software tests only demonstrates **software consistency**. It does not validate the physical assumptions in resource models.
+Passing software tests demonstrates software consistency only. It does **not** validate the physical assumptions of the models.
 
-Future verification layers:
+Verification maturity ladder:
 
 1. unit tests
 2. property/invariant tests
-3. benchmark reproducibility
-4. literature-calibrated resource models
-5. simulator cross-checks
-6. QPU-provider experiments
-7. GPU baseline measurements
-8. end-to-end economic validation
+3. integration/CI
+4. benchmark reproducibility
+5. literature-calibrated resource models
+6. simulator cross-checks
+7. QPU-provider experiments
+8. measured GPU baselines
+9. end-to-end economic validation
