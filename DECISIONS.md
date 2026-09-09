@@ -341,3 +341,16 @@
 ## 2026-09-09 — D073: Scale research capital by evidence and uncertainty reduction
 **Decision:** Lane H capital-allocation research should preserve all eight lanes while giving larger marginal funding to experiments that reduce mission-critical uncertainty most efficiently.
 **Reason:** Equal funding by organizational lane is not automatically optimal.
+
+
+## 2026-09-09 — D074: Use a baseline ladder and prohibit toy-baseline advantage claims
+**Decision:** Classical benchmarking progresses from correctness fixture to optimized CPU and competitive multicore/GPU baselines before serious economic comparison.
+**Reason:** A quantum system compared only against naive Python would create a meaningless advantage ratio.
+
+## 2026-09-09 — D075: Capture classical-baseline provenance before cost claims
+**Decision:** Runtime evidence must record implementation, platform/hardware context, workload objective and cost methodology.
+**Reason:** Cost/useful-task cannot be reproduced from an unlabeled timing number.
+
+## 2026-09-09 — D076: Convert cross-lane interfaces into reusable schemas
+**Decision:** D/G and E research must use structured requirement/qualification templates when moving from concept to measurable engineering.
+**Reason:** Templates reduce ambiguity and make later automation/agent parallelization safer.
