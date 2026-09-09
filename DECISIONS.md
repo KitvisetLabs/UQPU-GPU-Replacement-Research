@@ -78,3 +78,14 @@
 **Decision:** The primary memory research direction is whole-graph semantic execution that avoids large intermediate tensors/frames/states when possible, rather than assuming quantum memory must imitate HBM or DRAM exactly.
 
 **Reason:** A quantum system is most likely to gain a system-level advantage by changing the computation/data representation, not by reproducing every classical memory transaction.
+
+
+## 2026-09-09 — D016: Compare complete computing stacks, not isolated accelerator chips
+**Decision:** Economic benchmarking will expand to CPU+GPU+VRAM/HBM+RAM+storage+fabric+power/cooling/operations versus the complete UQCS stack.
+
+**Reason:** Component-only comparisons can hide costs that dominate real data-center workloads.
+
+## 2026-09-09 — D017: Allocate economic targets backward to subsystem budgets
+**Decision:** Use inverse design to divide the maximum UQCS cost/task allowed by each target tier among compute, memory, storage, fabric, control/QEC and power/operations.
+
+**Reason:** A 100×–100M× goal becomes an actionable engineering constraint only when every subsystem has a measurable budget.
