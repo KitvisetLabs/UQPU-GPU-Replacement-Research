@@ -137,3 +137,18 @@ Immediate gate: RG-023 reference objectives/bounds, then measured optimized clas
 | H | Article 007: reference certificates for strategy | STRATEGIC_RESEARCH | apply gates to first quantified stage |
 
 Immediate gate: RG-024 certified reference for small/medium contracts, then identical-contract simulator/cloud-QPU execution.
+
+
+## Batch 010
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | executable optimized-reference generator | TESTABLE SOFTWARE | execute pinned small/medium references |
+| B | stable contract remains QUBO-routing unit | SOFTWARE CONTRACT | simulator/authorized provider execution |
+| C | no new memory/state claim | GOVERNED EVIDENCE | measured transfer/state accounting |
+| D | process-window framework retained | ENGINEERING_FRAMEWORK | numeric device windows |
+| E | functional-unit rule retained | ECONOMIC_FRAMEWORK | sourced incumbent comparison |
+| F | machine-readable proof-strength manifest | TESTABLE SOFTWARE | real benchmark provenance |
+| G | process capability side retained | ENGINEERING_FRAMEWORK | metrology/capability data |
+| H | evidence-gated strategy retained | STRATEGIC_RESEARCH | quantified stage-gate article |
+
+Immediate gate: RG-025 controlled optimized-reference execution, which unlocks RG-024 certified small/medium references.
