@@ -108,3 +108,7 @@ Fabrication research must maintain separable lithography, deposition, etch, dopi
 
 ### INV-017 — Permanent multilingual strategic-plan preservation
 The user-provided **Ketskaew Chulamani / Kanusanan Pongpanna Model** multilingual plan and the public source links recorded in `STRATEGIC_PLAN_REFERENCES.md` are permanent project context. Every meaningful project update/release must preserve a visible repository reference to that document and must not silently remove its links. The plan must be considered during research integration while scientific/economic claims remain subject to independent evidence verification.
+
+
+### INV-018 — Cross-chat research operating system continuity
+The canonical operating method in `docs/RESEARCH_OPERATING_SYSTEM.md` is a permanent project invariant. Every AI agent, contributor, new chat/session, automation or development environment working on this repository must begin by reading the repository's current charter, version invariants, research operating system, master strategy, decisions, worklog and living research gaps rather than relying on prior-chat memory. The six-lane Parallel Simple Mode, shared work-item contract, P0–P4 priorities, single scoreboard, integration gate, evidence discipline, negative-result preservation and GitHub synchronization rule must remain the default workflow unless an explicit documented decision replaces it.
