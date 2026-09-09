@@ -141,3 +141,13 @@ The project permanently operates as SEVEN concurrent research lanes. Lane A is P
 Lane G is distinct from Lane D: Lane D owns the chips/devices/process architecture and manufacturability requirements; Lane G owns the machines, tooling, software and factory-production systems that realize those requirements. The two lanes must co-design continuously.
 
 **Permanent rule:** Priority #1 means emphasis, not exclusivity. Every research cycle must explicitly recognize A–G and must not silently delete, merge away or suspend a lane. All seven feed the same North-Star mission.
+
+
+### INV-024 — Permanent eight-lane research architecture and Lane H strategic-plan research
+The project permanently operates as EIGHT concurrent research lanes A–H. Lane A remains Priority #1, but all eight lanes must remain known, active, reviewed, progressively advanced and publicly documented in this repository.
+
+**Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Development, Finance & Future-Industry Research:** continuously research, deepen, test, structure and expand the user's master development/financial plan and its related articles. This includes the progression from agriculture/Pangola grass/biomass and cash-flow foundations through carbon/materials, energy, semiconductor/photonics/quantum, AI/robotics, biotechnology/health, food/water/agriculture, future cities/infrastructure, global economic networks, space industry and explicitly labeled speculative/far-future concepts, toward the Ketskaew Chulamani social-development vision. It also includes financial engineering, startup/funding pathways, One Person Business Company, Local AI, Local Deep Agents, agent-swarm operations, business automation and integration with the technical A–G research program.
+
+Lane H must continuously produce research notes/articles/roadmaps/feasibility analyses and publish verified progress to GitHub. Preserve the multilingual master-plan references and public links as canonical reference material. Clearly distinguish factual evidence, forecasts, hypotheses, personal/religious vision and speculative technology; do not convert targets or beliefs into scientific claims.
+
+**Permanent rule:** Lane A is Priority #1, but A–H all progress concurrently. Every research cycle must explicitly recognize all eight lanes and must not silently delete, merge away, suspend or forget Lane H or any other lane.
