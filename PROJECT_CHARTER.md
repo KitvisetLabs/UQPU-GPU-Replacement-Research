@@ -122,3 +122,7 @@ For CPU/GPU/RAM/VRAM/storage replacement, UQPU is judged by useful workload beha
 
 ### INV-021 — Software-first economic supremacy target
 The first path toward >=100x and up to 100,000,000x lower total cost/useful-task must prioritize software techniques on existing cloud quantum infrastructure before proposing new hardware. Each workload study should first attempt: semantic reformulation -> provider-neutral lowering -> cloud execution/simulation -> output validation -> total cost/task measurement -> optimization. Hardware redesign is escalated only when this path is blocked and the blocker is documented.
+
+
+### INV-022 — Priority #1 does not suspend parallel research
+Quantum programming/software-first cloud-QPU execution is Priority #1, but it is NOT the only active research stream. Every established project lane must continue producing measurable research progress in parallel on every ongoing research horizon: workloads/software; quantum/cloud; memory/state/data movement; devices/fabrication/packaging; materials/biomass/power/cooling/infrastructure; economics/evidence/integration; and any additional approved project domains. Priority #1 determines ordering, emphasis and conflict resolution, not cancellation or suspension of the other lanes. Cross-lane results must be integrated continuously toward the common North-Star mission.
