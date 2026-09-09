@@ -96,3 +96,33 @@ Next development iteration:
 - add measured GPU-baseline schema
 - add sensitivity/uncertainty analysis
 - add first literature-backed quantum algorithm estimator
+
+
+### Software prototype v0.3 — hardware/QEC/economic modeling
+Implemented the next development layer:
+
+- configurable quantum hardware profiles
+- generic GPU hardware/economic profiles
+- phenomenological surface-code QEC estimator
+- physical-qubit accounting
+- GPU cost-per-task baseline model
+- sensitivity sweep engine
+- inverse cost-target solver for 100× through 100,000,000×
+- MODEL_ONLY reference profiles
+
+Verification:
+- 11 new local tests passed
+- cumulative repository test inventory: 20 tests
+- GitHub Actions remains configured for Python 3.10/3.11/3.12 integration testing
+
+Scientific guardrails:
+- reference hardware profiles are explicitly MODEL_ONLY
+- QEC model is phenomenological and not vendor-calibrated
+- cost-target solver computes required UQPU budget; it does not claim the target is physically achievable
+
+Next iteration:
+- inverse hardware design solver
+- uncertainty distributions / Monte Carlo sensitivity
+- measured GPU baseline ingestion
+- literature-backed algorithm-specific resource models
+- QEC model alternatives and calibration hooks
