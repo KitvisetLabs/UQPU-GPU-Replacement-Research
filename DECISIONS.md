@@ -67,3 +67,14 @@
 **Decision:** Preserve cloud portability, full GPU functional scope, 100× minimum economic target, 100,000,000× moonshot, evidence discipline and provider surveillance in every version through explicit charter/invariant documents and automated tests.
 
 **Reason:** The core mission should not silently disappear or weaken as code and community contributions evolve.
+
+
+## 2026-09-09 — D014: Treat VRAM/HBM and host-memory pressure as part of GPU replacement
+**Decision:** UQPU must target not only GPU compute but also the functional/economic role of accelerator-local VRAM/HBM and, where possible, reduce host-RAM and data-movement requirements.
+
+**Reason:** Modern accelerator workloads depend heavily on memory capacity and bandwidth; excluding memory would understate the real cost and architectural burden of data-center GPU systems.
+
+## 2026-09-09 — D015: Prefer avoiding classical materialization over one-for-one memory emulation
+**Decision:** The primary memory research direction is whole-graph semantic execution that avoids large intermediate tensors/frames/states when possible, rather than assuming quantum memory must imitate HBM or DRAM exactly.
+
+**Reason:** A quantum system is most likely to gain a system-level advantage by changing the computation/data representation, not by reproducing every classical memory transaction.
