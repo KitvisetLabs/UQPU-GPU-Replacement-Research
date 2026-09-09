@@ -582,3 +582,9 @@ The permanent Kanusanan Pongpanna master strategy/reference set, GitHub canonica
 
 ### Parallel-research priority hardened
 Clarified the software-first mission rule to prevent an unintended interpretation that secondary lanes should wait for software blockers. Quantum programming remains Priority #1, while every established research lane must continue producing progress concurrently. Added INV-022 and updated the Research OS, mission map and README. Hardware, photonics, fabrication, memory/storage, biomass/materials, energy/infrastructure and economics/evidence remain continuously active and feed results back into the primary software/cloud-QPU path.
+
+
+### Research architecture expanded from six to seven permanent lanes
+Added Lane G — Quantum Chip Manufacturing Equipment & Software — as a distinct continuous research lane. Lane G owns the hardware/software/tooling/factory systems required to manufacture quantum-processing chips across relevant modalities, while Lane D continues to own device/chip/process architecture, fabrication requirements, packaging and manufacturability. D and G co-design continuously.
+
+Added INV-023 and propagated the seven-lane A–G architecture into the charter, invariants, Research OS, original mission execution map, README, decisions and daily automation. Lane A remains Priority #1. All seven lanes must be recognized and advanced concurrently.
