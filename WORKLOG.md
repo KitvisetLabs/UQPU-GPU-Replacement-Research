@@ -794,3 +794,15 @@ H:
 - published Article 007 on applying reference certificates/evidence gates to strategic-plan progress.
 
 No paid QPU execution occurred. No quantum advantage or >=100x result is claimed.
+
+
+### Eight-Lane Research Batch 010 — executable reference generation
+A/F: implemented an optional OR-Tools reference-generation pipeline and machine-readable reference manifest. OPTIMAL status can emit EXACT_OPTIMUM; FEASIBLE status emits only BEST_KNOWN_FEASIBLE. Added controlled regression tests so proof strength cannot silently inflate.
+
+B: the identical stable contract remains the unit passed toward QUBO provider lowering.
+C: no new state/memory performance claim.
+D/G: retained process-window calibration as an open evidence task.
+E: retained functional-unit substitution economics as an open sourced-comparison task.
+H: retained evidence-gated strategic publication rules.
+
+Priority #1, all eight lanes A-H, multilingual master references and evidence boundaries were preserved. No paid QPU execution occurred and no quantum advantage or >=100x result is claimed.
