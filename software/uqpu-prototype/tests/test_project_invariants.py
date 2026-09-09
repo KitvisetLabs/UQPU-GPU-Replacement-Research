@@ -24,7 +24,7 @@ class ProjectInvariantTests(unittest.TestCase):
 
     def test_version_invariants_include_all_ids(self):
         text = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
-        for i in range(1, 14):
+        for i in range(1, 15):
             self.assertIn(f"INV-{i:03d}", text)
 
     def test_goals_preserve_cloud_and_cost_targets(self):
