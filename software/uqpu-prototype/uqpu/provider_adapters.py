@@ -117,7 +117,7 @@ class AzureQuantumAdapter(BaseConcreteAdapter):
     provider_id = "azure_quantum"
     readiness = AdapterReadiness.REAL_SUBMIT_IMPLEMENTED
     sdk_module = "qdk"
-    credential_env = ("AZURE_QUANTUM_CONNECTION_STRING", "AZURE_TENANT_ID")
+    credential_env = ("AZURE_QUANTUM_RESOURCE_ID", "AZURE_QUANTUM_CONNECTION_STRING", "AZURE_TENANT_ID")
 
     def submit(self, program: LoweredProgram, guard: SubmissionGuard | None = None) -> str:
         self._guard(guard, paid=True)
@@ -125,11 +125,15 @@ class AzureQuantumAdapter(BaseConcreteAdapter):
             raise ValueError("Azure Quantum requires target id")
         # Azure target formats vary. Use the workspace target submit path when
         # an already provider-native payload is supplied.
-        from azure.quantum import Workspace
+        from qdk.azure import Workspace
+        resource_id = os.getenv("AZURE_QUANTUM_RESOURCE_ID")
         connection = os.getenv("AZURE_QUANTUM_CONNECTION_STRING")
-        if not connection:
-            raise RuntimeError("AZURE_QUANTUM_CONNECTION_STRING is required for generic Azure submission")
-        workspace = Workspace.from_connection_string(connection)
+        if resource_id:
+            workspace = Workspace(resource_id=resource_id)
+        elif connection:
+            workspace = Workspace.from_connection_string(connection)
+        else:
+            raise RuntimeError("AZURE_QUANTUM_RESOURCE_ID or AZURE_QUANTUM_CONNECTION_STRING is required")
         target = workspace.get_targets(self.config.target)
         kwargs = dict(self.config.options)
         kwargs.setdefault("shots", self.config.shots)
@@ -137,11 +141,15 @@ class AzureQuantumAdapter(BaseConcreteAdapter):
         return job.id
 
     def result(self, job_id: str) -> Mapping[str, Any]:
-        from azure.quantum import Workspace
+        from qdk.azure import Workspace
+        resource_id = os.getenv("AZURE_QUANTUM_RESOURCE_ID")
         connection = os.getenv("AZURE_QUANTUM_CONNECTION_STRING")
-        if not connection:
-            raise RuntimeError("AZURE_QUANTUM_CONNECTION_STRING is required")
-        workspace = Workspace.from_connection_string(connection)
+        if resource_id:
+            workspace = Workspace(resource_id=resource_id)
+        elif connection:
+            workspace = Workspace.from_connection_string(connection)
+        else:
+            raise RuntimeError("AZURE_QUANTUM_RESOURCE_ID or AZURE_QUANTUM_CONNECTION_STRING is required")
         job = workspace.get_job(job_id)
         return {"job_id": job_id, "status": str(job.details.status), "result": job.get_results()}
 
