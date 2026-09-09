@@ -158,3 +158,14 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Proposed experiments:** start with combinatorial optimization and structured estimation candidates; simulator first; then smallest bounded cloud execution when credentials/consent exist.
 **Dependencies:** Lane A contracts, Lane B adapter verification, Lane C state accounting and Lane F benchmark economics.
 **Next review trigger:** simulator benchmark completion or credentialed cloud access.
+
+
+## RG-017 — Provider throughput-normalized workload economics
+**Status:** DATA_BLOCKED / NOT_YET_DEMONSTRATED
+**Objective:** Add provider throughput/reset/repetition metrics to workload routing and determine whether higher circuit throughput lowers total cost/useful-task for Priority #1 workloads.
+**Blockers:** public throughput metrics are provider-specific and not uniformly defined; workload-level billed runtime and retry behavior are not yet measured across providers.
+**Current alternative:** qualitative provider notes plus billing/runtime models.
+**Unlock criteria:** common workload benchmark with measured circuit throughput, output quality and billed cost on at least two providers.
+**Proposed experiments:** extend HardwareSnapshot with throughput metrics; run simulator/authorized cloud benchmark; normalize by useful accepted outputs rather than raw circuits.
+**Dependencies:** Lane A workload contracts, Lane B provider adapters, Lane F benchmark evidence.
+**Next review trigger:** first authorized provider benchmark or additional official throughput data.
