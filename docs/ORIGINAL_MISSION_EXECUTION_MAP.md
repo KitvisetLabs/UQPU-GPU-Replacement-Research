@@ -96,3 +96,7 @@ Programming / Semantic Transformation
 -> >=100x Target
 -> Only then hardware escalation for documented blockers
 ```
+
+
+## Parallel mission execution rule
+Quantum programming on current cloud QPUs is Priority #1. Nevertheless, all previously approved research domains continue concurrently. Hardware/device physics, photonics, fabrication/lithography/packaging, RAM/VRAM/storage architectures, biomass-derived materials, energy/cooling/infrastructure and economics/evidence must continue generating progress rather than waiting for a software blocker. Their findings are continuously fed back into the Priority #1 software path and the common North-Star mission.
