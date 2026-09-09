@@ -363,3 +363,12 @@
 ## 2026-09-09 — D078: Use scalable seeded instances before provider execution
 **Decision:** Candidate optimization workloads require reproducible scalable instance generation before simulator or real-QPU economic comparisons.
 **Reason:** Tiny fixtures validate correctness but cannot establish realistic scaling or economics.
+
+
+## 2026-09-09 — D079: Treat benchmark tiers as revisable research hypotheses
+**Decision:** Batch tier sizes/densities are versioned research starting points and may change when measured CPU/GPU/QPU scaling evidence warrants it.
+**Reason:** Freezing arbitrary early sizes as permanent benchmarks would optimize the project around an unvalidated workload envelope.
+
+## 2026-09-09 — D080: Preserve unknown measurement fields as unknown
+**Decision:** Missing energy, transfer, memory or cost measurements must remain null/unknown rather than being silently imputed in measured benchmark artifacts.
+**Reason:** Separating measurement from modeling is necessary for credible end-to-end advantage claims.
