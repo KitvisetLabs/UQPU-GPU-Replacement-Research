@@ -91,3 +91,19 @@ RG-019 remains open because no competitive CPU/GPU solver has yet been measured.
 | H | Article 005 evidence-option portfolio | STRATEGIC_RESEARCH | quantify experiment portfolio |
 
 RG-019 and RG-020 remain open until competitive measured baselines and calibrated tier evidence exist.
+
+
+## Batch 007
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | optional optimized QUBO solver adapter | TESTABLE SOFTWARE | measured tier executions |
+| B | benchmark artifact carries provider/backend identity | SOFTWARE SCHEMA | real provider artifact |
+| C | artifact preserves memory/transfer fields without imputation | EVIDENCE SCHEMA | measured data movement |
+| D | project-memory CI protects D/G contracts | PROCESS GOVERNANCE | numeric device requirements |
+| E | qualification research preserved under CI governance | PROCESS GOVERNANCE | first sourced property table |
+| F | future-proof invariants + benchmark artifact ID | TESTABLE SOFTWARE | CI green + measured artifacts |
+| G | factory co-design state preserved by invariant architecture | PROCESS GOVERNANCE | equipment response evidence |
+| H | Article 006: CI as Research Governance | STRATEGIC_RESEARCH | stage-gate governance schema |
+
+The immediate operational gate is a green GitHub Actions run after the invariant repair, followed by RG-022 measured optimized-solver artifacts.
