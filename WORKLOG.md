@@ -709,3 +709,28 @@ H:
 
 RG-018 remains open; RG-019 now isolates the next missing step: a competitive optimized CPU/GPU baseline.
 No paid QPU execution occurred.
+
+
+### Eight-Lane Research Batch 005 — Representative optimization contract
+Priority #1 quantum-programming work advanced RG-019 from a fixed toy instance toward reproducible scalable benchmark instances.
+
+A/F:
+- added deterministic Max-Cut to QUBO conversion;
+- added seeded scalable random-graph instances;
+- added dependency-free greedy bit-flip reference heuristic;
+- added immutable benchmark contract IDs and output-quality tolerance;
+- added regression tests.
+
+B/C:
+- benchmark contract is designed to be shared unchanged by classical, simulator and real-QPU/hybrid execution, preventing silent workload drift.
+
+D/G:
+- Batch 004 structured D/G interface remains the active co-design contract; next population requires modality-specific numeric evidence.
+
+E:
+- opened the first explicit biomass-derived carbon qualification candidate for EMI/structural functions, with rejection criteria and no elemental-replacement claim.
+
+H:
+- published Article 004 on the option value of software-first quantum research before irreversible deep-tech CAPEX.
+
+Evidence boundary: the new greedy solver is not a competitive GPU baseline. No quantum advantage or >=100x claim is made.
