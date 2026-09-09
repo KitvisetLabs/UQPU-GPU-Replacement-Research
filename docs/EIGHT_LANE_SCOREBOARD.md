@@ -75,3 +75,19 @@ Batch 004 deliberately does not close RG-018: the new exact QUBO is a correctnes
 | H | Article 004: option value of software-first research | STRATEGIC_RESEARCH | quantify experiment-value framework |
 
 RG-019 remains open because no competitive CPU/GPU solver has yet been measured. RG-020 isolates benchmark-tier calibration as an additional prerequisite.
+
+
+## Batch 006
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | small/medium/large reproducible optimization tiers | TESTABLE SOFTWARE | established optimized solver |
+| B | tiers ready for identical-contract simulator/QPU mapping | SOFTWARE CONTRACT | authorized execution |
+| C | measurement envelope includes transfer/memory fields | ENGINEERING RULE | measured state/data evidence |
+| D | first D/G co-design target selected | ENGINEERING_FRAMEWORK | sourced numeric requirements |
+| E | Batch 005 qualification candidate retained | MODEL_ONLY CANDIDATE | numeric property evidence |
+| F | tier manifest + provenance discipline | TESTABLE SOFTWARE | measured classical artifacts |
+| G | superconducting support-stack response target | FABRICATION_PROPOSAL | equipment/metrology response |
+| H | Article 005 evidence-option portfolio | STRATEGIC_RESEARCH | quantify experiment portfolio |
+
+RG-019 and RG-020 remain open until competitive measured baselines and calibrated tier evidence exist.
