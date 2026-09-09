@@ -95,3 +95,14 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Dependencies:** target device, foundry route, lithography route, package architecture.
 **Safety/legal constraints:** no unsafe laboratory processing outside appropriate professional facilities.
 **Next review trigger:** access to calibrated foundry/process data or a fabrication partner.
+
+
+## RG-011 — Calibrated device lifetime/useful-task amortization
+**Status:** DATA_BLOCKED / MODEL_ONLY
+**Objective:** Calibrate how many useful workload tasks each fabricated UQCS device/package can execute over its economic lifetime so manufacturing cost can be amortized into cost/useful-task.
+**Blockers:** device lifetime, duty cycle, calibration downtime, failure/repair rates, workload mix, utilization and package replacement rates are architecture- and modality-specific and not yet measured for a UQCS device.
+**Current alternative:** explicit scenario parameter `lifetime_useful_tasks_per_device` with sensitivity analysis.
+**Unlock criteria:** measured or independently defensible lifetime/utilization data for a specific device + workload deployment.
+**Proposed experiments:** collect provider/device reliability and utilization evidence; simulate lifetime distributions; benchmark workload throughput; couple failure/maintenance models to manufacturing amortization.
+**Dependencies:** chosen hardware modality, package architecture, workload contract, cooling/control architecture.
+**Next review trigger:** availability of measured prototype/cloud/device uptime or reliability data.
