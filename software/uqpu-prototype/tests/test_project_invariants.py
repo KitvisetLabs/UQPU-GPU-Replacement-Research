@@ -24,7 +24,7 @@ class ProjectInvariantTests(unittest.TestCase):
 
     def test_version_invariants_include_all_ids(self):
         text = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
-        for i in range(1, 11):
+        for i in range(1, 12):
             self.assertIn(f"INV-{i:03d}", text)
 
     def test_goals_preserve_cloud_and_cost_targets(self):
@@ -33,6 +33,13 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertIn("100×", text)
         self.assertIn("100,000,000×", text)
 
+
+    def test_memory_scope_is_permanent(self):
+        charter = (ROOT / "PROJECT_CHARTER.md").read_text(encoding="utf-8")
+        goals = (ROOT / "GOALS.md").read_text(encoding="utf-8")
+        self.assertIn("VRAM/HBM", charter)
+        self.assertIn("host-RAM", charter)
+        self.assertIn("MEMORY_REPLACEMENT.md", goals)
 
 if __name__ == "__main__":
     unittest.main()
