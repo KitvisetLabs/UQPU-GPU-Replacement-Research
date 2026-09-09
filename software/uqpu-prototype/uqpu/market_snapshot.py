@@ -11,6 +11,15 @@ def market_snapshot_2026_09() -> tuple[HardwareSnapshot, ...]:
     """
     return (
         HardwareSnapshot(
+            "ibm_quantum","Nighthawk r2 / ibm_phoenix","gate_model",
+            physical_qubits=120,
+            cloud_accessible=True,
+            evidence_date="2026-09",
+            evidence_level="PUBLISHED_EXPERIMENT",
+            source_url="https://quantum.cloud.ibm.com/docs/en/guides/changelog-quantum-compute-service",
+            notes="IBM reports ibm_phoenix as the first Nighthawk r2 QPU, with 120 programmable qubits, >100,000 MCPS throughput and up to 25x higher throughput than Heron while matching fidelity. Throughput is recorded in notes because HardwareSnapshot does not yet have an MCPS field."
+        ),
+        HardwareSnapshot(
             "ibm_quantum","Heron","gate_model",
             physical_qubits=156,
             cloud_accessible=True,
