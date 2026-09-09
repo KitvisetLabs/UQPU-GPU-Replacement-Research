@@ -31,3 +31,5 @@ The repository includes an automated policy test that checks for the presence of
 | INV-016 | Parallel fab workstreams with cross-system integration | Yes |
 
 | INV-017 | Preserve multilingual Ketskaew Chulamani / Kanusanan Pongpanna strategic plan links and integrate the plan as permanent research context | Yes |
+
+| INV-018 | Cross-chat/session continuity: load and follow the canonical six-lane Research Operating System from GitHub | Yes |
