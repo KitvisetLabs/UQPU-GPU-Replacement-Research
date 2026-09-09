@@ -59,3 +59,19 @@ Batch 003 does not claim a verified quantum win. The largest immediate blocker i
 | H | Article 003 stage-gate finance | STRATEGIC_RESEARCH | quantify first transition gate |
 
 Batch 004 deliberately does not close RG-018: the new exact QUBO is a correctness fixture, not a competitive CPU/GPU benchmark. RG-019 defines the next measurable step.
+
+
+## Batch 005
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | scalable seeded Max-Cut/QUBO + reference heuristic | TESTABLE SOFTWARE | optimized CPU/GPU solver |
+| B | provider-neutral benchmark contract | SOFTWARE CONTRACT | map contract to simulator/QPU adapters |
+| C | identical-contract rule preserves state/I/O comparison | ENGINEERING RULE | measured memory/transfer provenance |
+| D | D/G schema retained for numeric population | ENGINEERING_FRAMEWORK | choose first modality/device |
+| E | first biomass-carbon qualification candidate | MODEL_ONLY CANDIDATE | sourced numeric property comparison |
+| F | stable contract ID + quality tolerance | TESTABLE SOFTWARE | tier manifests + calibrated economics |
+| G | factory-response contract retained | FABRICATION_PROPOSAL | respond to first populated D requirement |
+| H | Article 004: option value of software-first research | STRATEGIC_RESEARCH | quantify experiment-value framework |
+
+RG-019 remains open because no competitive CPU/GPU solver has yet been measured. RG-020 isolates benchmark-tier calibration as an additional prerequisite.
