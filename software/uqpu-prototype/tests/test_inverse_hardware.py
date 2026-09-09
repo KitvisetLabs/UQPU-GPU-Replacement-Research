@@ -38,5 +38,17 @@ class InverseHardwareTests(unittest.TestCase):
         self.assertGreaterEqual(b.min_detector_efficiency, a.min_detector_efficiency)
 
 
+    def test_harder_targets_raise_utilization_and_yield(self):
+        budgets = allocate_inverse_budget(1.0)
+        reqs = derive_hardware_requirements(
+            budgets,
+            reference_task_seconds=1.0,
+            reference_bandwidth_gbps=1000,
+            reference_power_watts=10000,
+            reference_loss_db=3.0,
+        )
+        self.assertGreater(reqs[-1].min_utilization, reqs[0].min_utilization)
+        self.assertGreater(reqs[-1].min_fabrication_yield, reqs[0].min_fabrication_yield)
+
 if __name__ == "__main__":
     unittest.main()
