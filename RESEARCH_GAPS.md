@@ -106,3 +106,14 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Proposed experiments:** collect provider/device reliability and utilization evidence; simulate lifetime distributions; benchmark workload throughput; couple failure/maintenance models to manufacturing amortization.
 **Dependencies:** chosen hardware modality, package architecture, workload contract, cooling/control architecture.
 **Next review trigger:** availability of measured prototype/cloud/device uptime or reliability data.
+
+
+## RG-012 — Calibrated cloud-vs-owned crossover
+**Status:** DATA_BLOCKED / MODEL_ONLY
+**Objective:** Determine workload-specific economic crossover points between renting cloud QPU access and owning UQCS hardware.
+**Blockers:** owned UQCS CAPEX/lifetime/utilization are unknown; provider pricing changes; infrastructure/storage charges may be additional; currency conversion is time-dependent; queue/throughput and workload quality must be normalized.
+**Current alternative:** dated official-pricing snapshot plus explicit owned-hardware scenario model.
+**Unlock criteria:** workload-specific cloud execution evidence + calibrated owned hardware economics in a common currency and common useful-output contract.
+**Proposed experiments:** ingest provider cost reports; add FX conversion with dated source; model queue/utilization; benchmark simulator/real-QPU throughput; sensitivity sweep on CAPEX/lifetime/utilization/power.
+**Dependencies:** provider adapter maturity, workload contract, hardware architecture, fabrication budget.
+**Next review trigger:** new verified provider pricing or measured owned-prototype economics.
