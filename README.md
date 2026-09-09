@@ -190,8 +190,8 @@ Hardware, photonics, fabrication and biomass/materials research remain in the pr
 **Quantum programming / software-first cloud-QPU execution is Priority #1. It is not the only active work.** All established research lanes continue in parallel and are expected to make ongoing progress: software/workloads, quantum/cloud, memory/state/storage, hardware/photonics/fabrication/packaging, biomass/materials/energy/infrastructure, and economics/evidence/integration. Priority #1 controls emphasis and conflict resolution; it does not pause other research.
 
 
-## Permanent Seven-Lane Research Architecture
-UQPU/UQCS operates through **seven concurrent research lanes**:
+## Historical Seven-Lane Milestone — Superseded by the Eight-Lane Architecture
+The project previously operated through **seven concurrent research lanes** before Lane H was added. This section is retained as project history:
 
 1. **A — Quantum Programming / Workloads / Compiler / Runtime — Priority #1**
 2. **B — Quantum Cloud / QPU / Provider Integration**
