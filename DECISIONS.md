@@ -180,3 +180,16 @@
 ## 2026-09-09 — D036: Preserve strategic intent while independently verifying evidence
 **Decision:** The master plan guides research priorities and integration, but scientific, technical, financial, legal, market and vendor claims require current independent primary-source verification before being treated as verified findings.
 **Reason:** Long-term strategic continuity and scientific/economic credibility must be maintained simultaneously.
+
+
+## 2026-09-09 — D037: Consolidate research into six parallel lanes
+**Decision:** Replace fine-grained day-to-day coordination across many independent workstreams with six stable lanes sharing one work-item contract, scoreboard and integration gate.
+**Reason:** The project scope is broad enough that excessive coordination can become a bottleneck. Six lanes preserve domain separation while reducing duplicated planning and integration overhead.
+
+## 2026-09-09 — D038: Prioritize integration/economic blockers before feature breadth
+**Decision:** Rank P0 integration blockers and P1 economic bottlenecks ahead of general feature expansion, while retaining lower-priority enabling and speculative research.
+**Reason:** The permanent mission is determined by end-to-end functional coverage, evidence and cost/useful-task; subsystem progress that cannot integrate should not dominate resources.
+
+## 2026-09-09 — D039: Integrate once per research batch
+**Decision:** Allow lanes to work independently against stable contracts, then perform one cross-lane integration gate at the end of a batch unless a dependency requires earlier coordination.
+**Reason:** Repeated cross-checking after every small change creates avoidable overhead and makes parallel work less efficient.
