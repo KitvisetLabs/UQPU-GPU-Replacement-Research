@@ -588,3 +588,9 @@ Clarified the software-first mission rule to prevent an unintended interpretatio
 Added Lane G — Quantum Chip Manufacturing Equipment & Software — as a distinct continuous research lane. Lane G owns the hardware/software/tooling/factory systems required to manufacture quantum-processing chips across relevant modalities, while Lane D continues to own device/chip/process architecture, fabrication requirements, packaging and manufacturability. D and G co-design continuously.
 
 Added INV-023 and propagated the seven-lane A–G architecture into the charter, invariants, Research OS, original mission execution map, README, decisions and daily automation. Lane A remains Priority #1. All seven lanes must be recognized and advanced concurrently.
+
+
+### Research architecture expanded from seven to eight permanent lanes
+Added Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Development, Finance & Future-Industry Research. Lane H turns the existing multilingual master plan from a preserved reference into a continuous research-and-publication program: deepen the plan, test feasibility, develop financial/funding/automation pathways, expand related articles, connect findings to A–G, and publish progress to GitHub.
+
+Added INV-024 and propagated the eight-lane A–H architecture into the charter, invariants, Research OS, mission map, README, decisions and daily automation. Lane A remains Priority #1; A–H all advance concurrently.
