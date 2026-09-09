@@ -68,6 +68,10 @@ def compare_cloud_vs_owned(
     owned_hw: OwnedHardwareEconomics,
     owned_usage: OwnedWorkloadUsage,
 ) -> CloudVsOwnedResult:
+    if cloud_profile.currency != "USD":
+        raise ValueError(
+            "cloud-vs-owned comparison requires explicit FX conversion to USD"
+        )
     cloud = cloud_cost_per_useful_task(cloud_profile, cloud_usage)
     owned = owned_cost_per_useful_task(owned_hw, owned_usage)
     if cloud == owned:
