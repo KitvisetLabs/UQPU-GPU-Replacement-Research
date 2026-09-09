@@ -274,3 +274,22 @@ Current limitation:
 This snapshot is a research baseline, not yet a live runtime discovery feed. Provider APIs and official documentation must continue to be checked and the snapshot refreshed.
 
 GitHub synchronization completed for this research cycle.
+
+
+### Biomass-to-critical-materials strategy
+Expanded the permanent research program to use Pangola grass and agricultural residues as strategic renewable feedstocks for advanced materials and UQCS supply-chain cost reduction.
+
+Implemented:
+- biomass/critical-material strategy document
+- machine-readable material-substitution candidate model
+- functional-substitution, minimization, recovery and hybrid strategy taxonomy
+- cost/function advantage calculation
+- tests preventing accidental transmutation-style strategy labels
+- permanent INV-014
+
+Scientific boundary:
+Ordinary chemistry cannot convert biomass carbon into Au, Cu, Ag, rare-earth elements or arbitrary elemental species. Research therefore targets functional substitution, mineral minimization, recovery/recycling and hybrid composites/coatings. Recovery may extract elements naturally present in feedstock or use biomass-derived media to recover metals from external waste/process streams.
+
+Daily automation has been updated to preserve this strategy and integrate it with the Kanusanan Pongpanna staged future-industry model.
+
+GitHub synchronization completed for this research cycle.
