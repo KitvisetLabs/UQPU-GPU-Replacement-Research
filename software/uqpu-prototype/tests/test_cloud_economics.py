@@ -47,5 +47,15 @@ class CloudEconomicsTests(unittest.TestCase):
             self.assertIn(x,ids)
 
 
+    def test_cross_currency_comparison_rejected(self):
+        p = CloudPricingProfile("x","x",CloudPricingKind.PER_QPU_HOUR,currency="EUR",per_qpu_hour=100)
+        with self.assertRaises(ValueError):
+            compare_cloud_vs_owned(
+                p,
+                CloudWorkloadUsage(runtime_seconds=1,useful_tasks=1),
+                OwnedHardwareEconomics(1000,1_000_000,.8,100),
+                OwnedWorkloadUsage(1,1),
+            )
+
 if __name__=="__main__":
     unittest.main()
