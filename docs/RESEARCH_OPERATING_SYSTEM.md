@@ -197,5 +197,14 @@ Owns the complete manufacturing-tool stack needed to produce quantum-processing 
 
 Lane G must co-design with Lane D. Lane D specifies device/chip/process/manufacturability requirements; Lane G develops the machines, tooling, software and production systems capable of realizing them.
 
-## Seven-lane cycle invariant
+## Eight-lane cycle invariant
 Every daily/research cycle must explicitly inspect A, B, C, D, E, F and G. Lane A receives Priority #1 emphasis. The other six remain continuously active, receive research/review/progress tasks, and feed discoveries back into Lane A and the North-Star mission.
+
+
+### Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Development, Finance & Future-Industry Research — CONTINUOUS PARALLEL LANE
+Owns continuous research, expansion and publication of the master development/financial plan and related articles. It connects the economic foundation (Pangola grass, agriculture, biomass, cash flow, processing and markets) to advanced materials/energy, semiconductors/photonics/quantum, AI/robotics, biotech/health, food/water, future cities, global networks, space industry and clearly labeled speculative future technologies. It also researches financial engineering, startup/funding pathways, One Person Business Company, Local AI, Local Deep Agents, agent-swarm business operations and automation.
+
+Lane H must continually deepen the plan with evidence, feasibility gates, economics, dependencies, milestones, risk registers, research questions and new public-facing articles. It must preserve and reference the multilingual source documents and strategic links already recorded in the repository.
+
+### A–H daily invariant
+Every research cycle explicitly inspects A, B, C, D, E, F, G and H. Lane A receives Priority #1 emphasis. B–H continue in parallel. Lane H must create or advance strategic-plan research/publication work rather than serving only as a static archive.
