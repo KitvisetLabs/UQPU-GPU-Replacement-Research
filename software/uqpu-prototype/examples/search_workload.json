@@ -1,0 +1,13 @@
+{
+  "name": "structured-search-demo",
+  "domain": "data",
+  "contract": "probabilistic",
+  "input_bytes": 1048576,
+  "output_bytes": 8,
+  "operations": [
+    {"kind": "search", "params": {"items": 131072}}
+  ],
+  "metadata": {
+    "note": "Demonstration workload only; resource model is hypothetical."
+  }
+}
