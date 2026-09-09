@@ -128,3 +128,22 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Proposed experiments:** ingest real job cost reports, measured runtime/queue/retry data, prototype utilization/power/lifetime data, and dated FX; run Monte Carlo crossover analysis.
 **Dependencies:** provider adapters, benchmark harness, real-QPU execution evidence, owned hardware/fabrication model.
 **Next review trigger:** first real-QPU cost dataset or prototype lifecycle dataset.
+
+
+## RG-014 — Real-QPU verification of all cloud adapters
+**Status:** RESOURCE_BLOCKED / CREDENTIAL_BLOCKED / NOT_YET_DEMONSTRATED
+**Objective:** Promote every software-prepared provider path from dry-run/serialization to simulator and real-QPU verification with reproducible job IDs, normalized results and actual billed cost.
+**Blockers:** provider accounts, credentials, quotas, target availability, paid-execution budget and some account-specific direct APIs are not available in the repository environment.
+**Current alternative:** concrete adapter layer, health diagnostics, dry-run validation and aggregator routing through Braket/Azure where supported.
+**Unlock criteria:** credentialed smoke test for each active route, with explicit paid-execution consent where required, followed by committed job/result/cost evidence.
+**Proposed experiments:** simulator-first smoke tests; then bounded real-QPU jobs per provider; validate status/result normalization and actual billing.
+**Dependencies:** provider accounts, SDK versions, target access, explicit execution budget.
+**Next review trigger:** credentials/account entitlement or newly available free/simulator access.
+
+## RG-015 — Quandela and OQC direct-runtime account integration
+**Status:** ACCOUNT_CONFIG_BLOCKED
+**Objective:** Complete direct account-specific submission/result paths for Quandela and OQC in addition to current serialization/dry-run readiness.
+**Blockers:** account-specific endpoint/RPC/runtime configuration and entitlement are not available in the current execution environment.
+**Current alternative:** provider-neutral lowering/dry-run; use supported partner/official access routes when available.
+**Unlock criteria:** official account credentials/configuration plus a documented supported submission endpoint/client version.
+**Next review trigger:** account access or updated public SDK/API documentation.
