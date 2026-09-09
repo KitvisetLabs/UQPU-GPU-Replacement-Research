@@ -1,8 +1,13 @@
 import pathlib
+import re
 import unittest
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
+
+
+def invariant_ids(text: str) -> set[str]:
+    return set(re.findall(r"INV-\d{3}", text))
 
 
 class ProjectInvariantTests(unittest.TestCase):
@@ -22,10 +27,14 @@ class ProjectInvariantTests(unittest.TestCase):
         for marker in markers:
             self.assertIn(marker, text)
 
-    def test_version_invariants_include_all_ids(self):
-        text = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
-        for i in range(1, 25):
-            self.assertIn(f"INV-{i:03d}", text)
+    def test_version_invariants_match_charter(self):
+        charter = (ROOT / "PROJECT_CHARTER.md").read_text(encoding="utf-8")
+        table = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
+        charter_ids = invariant_ids(charter)
+        table_ids = invariant_ids(table)
+        self.assertTrue(charter_ids)
+        self.assertTrue(charter_ids.issubset(table_ids))
+        self.assertIn("INV-024", charter_ids)
 
     def test_goals_preserve_cloud_and_cost_targets(self):
         text = (ROOT / "GOALS.md").read_text(encoding="utf-8")
@@ -33,14 +42,12 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertIn("100×", text)
         self.assertIn("100,000,000×", text)
 
-
     def test_memory_scope_is_permanent(self):
         charter = (ROOT / "PROJECT_CHARTER.md").read_text(encoding="utf-8")
         goals = (ROOT / "GOALS.md").read_text(encoding="utf-8")
         self.assertIn("VRAM/HBM", charter)
         self.assertIn("host-RAM", charter)
         self.assertIn("MEMORY_REPLACEMENT.md", goals)
-
 
     def test_strategic_master_plan_preserved(self):
         master = ROOT / "docs" / "KANUSANAN_PONGPANNA_MODEL.md"
@@ -70,7 +77,6 @@ class ProjectInvariantTests(unittest.TestCase):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("docs/KANUSANAN_PONGPANNA_MODEL.md", readme)
 
-
     def test_cross_chat_operating_system_bootstrap(self):
         charter = (ROOT / "PROJECT_CHARTER.md").read_text(encoding="utf-8")
         invariants = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
@@ -83,6 +89,7 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertIn("eight-lane", readme.lower())
         for lane in ["Lane A", "Lane B", "Lane C", "Lane D", "Lane E", "Lane F", "Lane G", "Lane H"]:
             self.assertIn(lane, ros)
+
 
 if __name__ == "__main__":
     unittest.main()
