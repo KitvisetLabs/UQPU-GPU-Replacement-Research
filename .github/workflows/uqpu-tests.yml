@@ -5,6 +5,10 @@ on:
     paths:
       - "software/uqpu-prototype/**"
       - "PROJECT_CHARTER.md"
+      - "STRATEGIC_PLAN_REFERENCES.md"
+      - "docs/KANUSANAN_PONGPANNA_MODEL.md"
+      - "docs/RESEARCH_OPERATING_SYSTEM.md"
+      - "README.md"
       - "VERSION_INVARIANTS.md"
       - "GOALS.md"
       - "docs/CLOUD_COMPATIBILITY.md"
