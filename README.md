@@ -77,6 +77,17 @@ Useful starting points:
 
 **Critical and negative results are welcome.** The objective is to discover what is physically and economically achievable, not to force a predetermined conclusion.
 
+
+## Executable Software Prototype
+
+The research now includes a running implementation at:
+
+- `software/uqpu-prototype/` — semantic compiler, resource/cost model, backend estimators, CLI and tests
+- `software/uqpu-prototype/TESTING.md` — verification process and current test status
+- `.github/workflows/uqpu-tests.yml` — automatic CI for every relevant push and Pull Request
+
+Current software status: **v0.2**, verified locally with **9/9 unit tests passing**. Resource estimates are explicitly labeled **MODEL_ONLY** until calibrated against literature, simulators and real QPU/GPU measurements.
+
 ## Research traceability
 
 - `GOALS.md` — north-star, functional and economic goals
