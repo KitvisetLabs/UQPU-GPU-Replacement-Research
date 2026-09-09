@@ -116,3 +116,14 @@
 **Decision:** Future announced/roadmap systems can inform inverse design and strategic planning but cannot be used as evidence of currently executable cloud capability.
 
 **Reason:** Economic and functional claims must reflect hardware that actually exists and is accessible at the time of benchmarking.
+
+
+## 2026-09-09 — D023: Add biomass as a strategic UQCS materials feedstock
+**Decision:** Pangola grass and agricultural residues become a permanent materials research track for reducing UQCS/future-technology supply-chain cost.
+
+**Reason:** Low-cost renewable carbon, cellulose, lignin and selected inorganic fractions can potentially supply electrodes, adsorbents, composites, membranes, packaging and other functional materials.
+
+## 2026-09-09 — D024: Replace expensive elements by function, minimization, recovery or hybridization—not chemical transmutation
+**Decision:** Biomass research must not claim ordinary processing creates Au, Cu, Ag, rare-earths or other absent elements. Valid pathways are functional substitution, reduced loading, recovery/recycling and hybrid structures.
+
+**Reason:** Chemical processing rearranges atoms but does not change elemental identity. Maintaining this boundary keeps the cost-reduction program physically credible.
