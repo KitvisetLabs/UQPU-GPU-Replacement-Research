@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from math import log10
 from typing import Iterable
 
 from .inverse_system import SubsystemBudget
@@ -46,14 +47,15 @@ def derive_hardware_requirements(
     out = []
     for b in budgets:
         scale = max(1.0, b.target_advantage / 100.0)
+        decades = log10(scale)
 
-        # MODEL_ONLY inverse-design heuristics. These are intentionally
-        # monotonic constraints for architecture search, not hardware claims.
-        min_utilization = min(0.995, 0.70 + 0.05 * (scale.bit_length() if isinstance(scale, int) else 1))
+        # MODEL_ONLY inverse-design heuristics. These are monotonic
+        # architecture-search constraints, not hardware predictions.
+        min_utilization = min(0.995, 0.70 + 0.04 * decades)
         max_power = reference_power_watts / (scale ** 0.35)
         min_bandwidth = reference_bandwidth_gbps * (scale ** 0.20)
         max_loss = reference_loss_db / (scale ** 0.15) if reference_loss_db > 0 else 0.0
-        min_yield = min(0.999, base_yield + 0.03 * (scale ** 0.10 - 1.0))
+        min_yield = min(0.999, base_yield + 0.025 * decades)
 
         out.append(HardwareRequirementTarget(
             target_advantage=b.target_advantage,
