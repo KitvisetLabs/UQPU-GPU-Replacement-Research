@@ -1,7 +1,9 @@
 # Original Mission Execution Map
 
 ## North-star mission
-The project exists to discover and build every scientifically credible path toward a computing system that can replace the useful functional roles of the conventional CPU/GPU/memory/storage/network stack while pursuing dramatically lower **total cost per useful completed task**.
+The PRIMARY mission is to use **software/programming on currently available cloud quantum computers** to perform the useful functional roles of the conventional CPU/GPU/RAM/VRAM/persistent-storage stack while pursuing dramatically lower **total cost per useful completed task**.
+
+The project does not start by assuming a new quantum processor must be invented. It first asks how far semantic compilation, quantum algorithms, runtime orchestration, alternative state representations and multi-provider cloud execution can push existing quantum hardware. New hardware research is a secondary escalation path when software/cloud execution reaches a documented blocker.
 
 Internal computation does not need to imitate classical CPU/GPU execution.
 
@@ -28,8 +30,8 @@ Reduce VRAM/HBM/RAM/storage/data-movement burden through:
 ### M3 — Quantum-cloud universality
 Use provider-neutral software with adapters/capability negotiation for the broadest practical set of cloud quantum providers.
 
-### M4 — Manufacturable hardware
-Develop device/fabrication/process/packaging paths for quantum, photonic, semiconductor, memory, control and interconnect components.
+### M4 — Manufacturable hardware — secondary escalation
+Develop device/fabrication/process/packaging paths only as a secondary path when software-first use of existing cloud QPUs exposes documented hardware limitations or when hardware research clearly improves the economic target.
 
 ### M5 — Materials and supply-chain cost reduction
 Use Pangola grass and agricultural residues as strategic feedstocks for functional material substitution, mineral minimization, recovery/recycling and hybrid composites where scientifically possible.
@@ -81,3 +83,16 @@ The permanent Kanusanan Pongpanna Model and multilingual strategic references re
 - total cost/useful-task is measured end-to-end;
 - evidence supports the claimed advantage;
 - results are independently reproducible.
+
+
+## Primary execution order
+The mission priority is:
+```text
+Programming / Semantic Transformation
+-> Current Cloud QPUs
+-> Functional CPU/GPU/RAM/VRAM/Storage Workload Contracts
+-> Validation
+-> Cost/Useful-Task Optimization
+-> >=100x Target
+-> Only then hardware escalation for documented blockers
+```
