@@ -127,3 +127,16 @@
 **Decision:** Biomass research must not claim ordinary processing creates Au, Cu, Ag, rare-earths or other absent elements. Valid pathways are functional substitution, reduced loading, recovery/recycling and hybrid structures.
 
 **Reason:** Chemical processing rearranges atoms but does not change elemental identity. Maintaining this boundary keeps the cost-reduction program physically credible.
+
+
+## 2026-09-09 — D025: Co-design UQCS devices with fabrication equipment
+**Decision:** Treat chip-fabrication equipment/process architecture as part of UQCS, including DUV/EUV and alternative lithography plus deposition, etch, doping, metrology, cleaning, test and packaging.
+**Reason:** A computing architecture cannot meet aggressive system economics if its manufacturing route is ignored.
+
+## 2026-09-09 — D026: Do not default to the most advanced lithography
+**Decision:** Select the least-cost fabrication route that satisfies device requirements; EUV is an option, not an invariant.
+**Reason:** Quantum, photonic and heterogeneous devices may achieve system goals on mature or specialized processes with lower total cost.
+
+## 2026-09-09 — D027: Integrate parallel fab research through shared interfaces
+**Decision:** Maintain separate fab workstreams and periodically reconcile evidence, dependencies, bottlenecks, negative results and cost impact.
+**Reason:** Lithography alone cannot determine manufacturability; yield and system economics emerge from the integrated process.
