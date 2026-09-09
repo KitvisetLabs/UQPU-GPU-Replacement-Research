@@ -39,3 +39,5 @@ The repository includes an automated policy test that checks for the presence of
 | INV-021 | Attempt software/cloud path to >=100x economics before escalating to new hardware | Yes |
 
 | INV-022 | Quantum programming is Priority #1 while all established research lanes continue progressing in parallel | Yes |
+
+| INV-023 | Permanent seven-lane architecture A–G; Lane A Priority #1 while all seven progress concurrently | Yes |
