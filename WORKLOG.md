@@ -150,3 +150,22 @@ A cloud connection is not considered strategically successful merely because exe
 
 Current status:
 Provider registry entries are architecture metadata. Real paid QPU submission adapters are not yet enabled by default and will require credentials/budget plus provider-specific validation.
+
+
+### Permanent mission and version invariants
+Created `PROJECT_CHARTER.md` and `VERSION_INVARIANTS.md` so every future release preserves the project's core requirements:
+
+- provider-agnostic quantum-cloud portability
+- extensible adapters for old and new providers
+- full GPU functional-domain research scope
+- end-to-end cost accounting
+- >=100× cost/task research target
+- up to 100,000,000× workload-specific moonshot
+- no unsupported quantum-advantage claims
+- continuous develop/test/inspect/improve loop
+- external-user usability
+- continuous quantum-provider market surveillance
+
+Added automated invariant tests and expanded GitHub Actions triggers so edits to project charter/goals/cloud compatibility are tested alongside software changes.
+
+This converts the mission from informal documentation into a version-level repository policy.
