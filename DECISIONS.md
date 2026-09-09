@@ -408,3 +408,12 @@
 ## 2026-09-09 — D088: Reference manifests must carry execution provenance
 **Decision:** Reference artifacts record stable certificate/contract IDs, method, evidence level, source, runtime, solver status and proven-optimal flag.
 **Reason:** QPU quality comparisons must be reproducible against the same reference evidence rather than an undocumented objective number.
+
+
+## 2026-09-09 — D089: Do not promote time-limited feasible reference runs to exact certificates
+**Decision:** The first controlled hosted reference benchmark produced FEASIBLE results for both small and medium tiers, so both remain best-known feasible evidence.
+**Reason:** Reproducible execution is valuable, but proof strength is determined by solver/bound evidence rather than elapsed effort or benchmark success.
+
+## 2026-09-09 — D090: Keep benchmark contract IDs fixed while strengthening reference evidence
+**Decision:** Future formulation, time-limit or solver experiments intended to improve reference proof strength must preserve the same workload contract IDs unless benchmark semantics themselves change.
+**Reason:** This allows legitimate comparison of stronger reference-generation methods without moving the target.
