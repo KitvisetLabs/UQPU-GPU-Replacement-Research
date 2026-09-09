@@ -239,3 +239,16 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Blocker:** OR-Tools is optional and absent from default CI; benchmark hardware provenance must not be fabricated.
 **Unlock criteria:** controlled environment records dependency version, CPU/OS context, contract ID, solver status, runtime, objective and certificate ID; OPTIMAL must be independently reproducible before EXACT_OPTIMUM is used downstream.
 **Next experiment:** create/run a dedicated benchmark job with pinned optional requirements, small tier first, then medium.
+
+
+## RG-025 status update — controlled environment demonstrated
+**Status:** PARTIALLY_UNLOCKED / MEASURED_LOCAL
+GitHub Actions run 34374036120 successfully installed OR-Tools 9.14.6206 and executed the controlled small/medium reference benchmark on Python 3.12.14 x86_64 Linux.
+
+Measured outcomes:
+- small: objective -65.0, FEASIBLE, 30.002208606 s;
+- medium: objective -433.0, FEASIBLE, 45.003255759 s.
+
+This satisfies the environment/provenance portion of RG-025 but not the proof-quality portion of RG-024.
+
+**Next unlock:** obtain OPTIMAL status or a rigorous proven lower bound for at least the small contract, while preserving the exact same contract ID.
