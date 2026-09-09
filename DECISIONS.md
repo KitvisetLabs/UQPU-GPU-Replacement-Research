@@ -193,3 +193,12 @@
 ## 2026-09-09 — D039: Integrate once per research batch
 **Decision:** Allow lanes to work independently against stable contracts, then perform one cross-lane integration gate at the end of a batch unless a dependency requires earlier coordination.
 **Reason:** Repeated cross-checking after every small change creates avoidable overhead and makes parallel work less efficient.
+
+
+## 2026-09-09 — D040: Make GitHub the canonical cross-chat project memory
+**Decision:** New chats, agents, automations and contributors must reconstruct project context from the repository's canonical documents rather than depending on conversational memory.
+**Reason:** Chat/session context is not a reliable permanent storage mechanism; version-controlled repository state is inspectable, shareable and auditable.
+
+## 2026-09-09 — D041: Make the six-lane operating system a permanent invariant
+**Decision:** Preserve the Parallel Simple Mode defined in `docs/RESEARCH_OPERATING_SYSTEM.md` as INV-018 and require explicit documented decisions for any future replacement.
+**Reason:** The workflow must survive new chats, different AI agents, community contributions and long-running development without silently reverting to ad-hoc coordination.
