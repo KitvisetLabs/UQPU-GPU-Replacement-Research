@@ -272,3 +272,8 @@
 ## 2026-09-09 — D057: Treat memory/storage replacement as semantic state-service replacement
 **Decision:** RAM, VRAM/HBM and persistent-storage goals should first be attacked by changing representation, materialization, access and persistence semantics rather than trying to recreate DRAM/HBM/disk cells inside a QPU.
 **Reason:** The internal mechanism may differ; the acceptance criterion is the useful application/state contract plus end-to-end economics.
+
+
+## 2026-09-09 — D058: Priority #1 means emphasis, not exclusivity
+**Decision:** Quantum programming/software-first cloud-QPU execution remains Priority #1, while all established research lanes continue concurrently and must make ongoing progress.
+**Reason:** The project is intentionally multidisciplinary. Priority determines scheduling emphasis and resolves resource conflicts; it must never be interpreted as permission to stop hardware, photonics, fabrication, memory/storage, biomass/materials, infrastructure or economics/evidence research.
