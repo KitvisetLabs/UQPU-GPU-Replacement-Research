@@ -763,3 +763,9 @@ H:
 
 Evidence boundary:
 Optional OR-Tools integration creates a path to a stronger classical baseline but does not itself establish a competitive GPU baseline or quantum advantage.
+
+
+### Eight-Lane Research Batch 008 — reproducible tier execution
+A/F: connected the versioned small/medium/large MaxCut contracts to executable greedy and optional OR-Tools runners using the common benchmark artifact schema. Added regression tests for stable contract identity and deterministic objective under a fixed heuristic seed.
+
+Evidence correction: runner completion is not benchmark acceptance. Heuristic quality must be checked against a reference/bound under the contract before it can support a win claim.
