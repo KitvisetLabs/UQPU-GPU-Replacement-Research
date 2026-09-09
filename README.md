@@ -159,3 +159,26 @@ F Economics/Evidence/Integration
 ```
 
 This bootstrap rule is permanent under **INV-018**, so a future chat/session can reconstruct the working method directly from the repository even without access to earlier conversation history.
+
+
+## Primary Strategy Clarification — Software First
+
+The project's most important path is **not** to invent a new QPU first.
+
+The primary strategy is:
+
+**program existing cloud quantum computers so they can perform the useful functional roles currently served by CPU, GPU, RAM, VRAM/HBM and persistent storage, using different internal computational processes where necessary.**
+
+Priority order:
+
+```text
+Software / compiler / quantum algorithms / semantic transformation
+-> provider-neutral cloud adapters
+-> existing cloud QPUs
+-> workload/output validation
+-> total cost/useful-task
+-> >=100x target and workload-specific 100M× moonshot
+-> hardware redesign only for documented blockers
+```
+
+Hardware, photonics, fabrication and biomass/materials research remain in the project, but they are secondary to the software/cloud execution path unless existing hardware prevents mission progress.
