@@ -806,3 +806,15 @@ E: retained functional-unit substitution economics as an open sourced-comparison
 H: retained evidence-gated strategic publication rules.
 
 Priority #1, all eight lanes A-H, multilingual master references and evidence boundaries were preserved. No paid QPU execution occurred and no quantum advantage or >=100x result is claimed.
+
+
+### Batch 011 measured reference benchmark result
+Dedicated GitHub Actions reference job 34374036120 completed successfully on Python 3.12.14 / OR-Tools 9.14.6206 / x86_64 Linux Azure runner.
+
+Measured results:
+- small contract 8e478d5edde63daa: objective -65.0, FEASIBLE, 30.002208606 s, not proven optimal;
+- medium contract 2ec80fa696739a17: objective -433.0, FEASIBLE, 45.003255759 s, not proven optimal.
+
+The evidence pipeline correctly classified both as best-known feasible, not exact optimum. RG-025 is materially advanced because a pinned controlled benchmark environment now exists and has produced measured provenance. RG-024 remains open because neither tier has proof-quality reference evidence.
+
+Priority #1, all eight lanes A-H, multilingual master references and evidence boundaries were preserved.
