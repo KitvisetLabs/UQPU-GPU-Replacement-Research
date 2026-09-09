@@ -6,7 +6,7 @@ All work serves one measurable mission: maximize useful-computing functional cov
 The permanent Kanusanan Pongpanna Model and multilingual references remain strategic context for every cycle.
 
 ## Operating principle: many lanes, one scoreboard
-Do not run the project as dozens of unrelated projects. Run **6 parallel lanes** that share one input contract, one result contract, one priority queue and one integration gate.
+Do not run the project as dozens of unrelated projects. Run **8 parallel lanes** that share one input contract, one result contract, one priority queue and one integration gate.
 
 ### Lane A — Workloads & software — PRIMARY LANE
 Owns CPU/GPU/RAM/VRAM/storage functional contracts, Semantic IR, compiler/runtime, quantum algorithm reformulation, state/data representation, workload decomposition, benchmarks and output correctness. This is the highest-priority execution lane because the primary strategy is to make existing cloud QPUs perform classical-system roles through programming.
@@ -67,7 +67,7 @@ No work item may disappear because it failed. BLOCKED/REJECTED_CURRENT_ASSUMPTIO
                        GITHUB SYNC
 ```
 
-When independent agents are available, assign one or more lanes to agents concurrently. When they are unavailable, execute the same six-lane batch sequentially without changing the contracts. Never claim parallel execution when it did not occur.
+When independent agents are available, assign one or more lanes to agents concurrently. When they are unavailable, execute the same eight-lane batch sequentially without changing the contracts. Never claim parallel execution when it did not occur.
 
 ## Priority score
 Lane F ranks candidate work before each cycle. Prefer the item with the highest expected mission impact:
@@ -167,7 +167,7 @@ A cycle is complete only when:
 - WORKLOG captures meaningful progress;
 - GitHub is synchronized.
 
-This operating system replaces ad-hoc expansion with coordinated parallel research: **six lanes, one contract, one scoreboard, one integration gate, one mission.**
+This operating system replaces ad-hoc expansion with coordinated parallel research: **eight lanes, one contract, one scoreboard, one integration gate, one mission.**
 
 
 ## Software-first escalation ladder
@@ -198,7 +198,7 @@ Owns the complete manufacturing-tool stack needed to produce quantum-processing 
 Lane G must co-design with Lane D. Lane D specifies device/chip/process/manufacturability requirements; Lane G develops the machines, tooling, software and production systems capable of realizing them.
 
 ## Eight-lane cycle invariant
-Every daily/research cycle must explicitly inspect A, B, C, D, E, F and G. Lane A receives Priority #1 emphasis. The other six remain continuously active, receive research/review/progress tasks, and feed discoveries back into Lane A and the North-Star mission.
+Every daily/research cycle must explicitly inspect A, B, C, D, E, F, G and H. Lane A receives Priority #1 emphasis. The other seven remain continuously active, receive research/review/progress tasks, and feed discoveries back into Lane A and the North-Star mission.
 
 
 ### Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Development, Finance & Future-Industry Research — CONTINUOUS PARALLEL LANE
