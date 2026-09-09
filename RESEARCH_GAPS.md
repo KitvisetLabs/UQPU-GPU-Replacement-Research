@@ -221,3 +221,12 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Objective:** Establish defensible reference objectives or bounds for the versioned small/medium/large MaxCut contracts so acceptance is computed rather than assumed.
 **Unlock criteria:** each tier has a provenance-bearing reference/bound and the artifact acceptance flag is derived from OptimizationBenchmarkContract.accepts.
 **Next experiment:** use the optimized classical solver path to establish or bound tier objectives, starting with small and medium.
+
+
+## RG-024 — Certified small/medium optimization references
+**Status:** OPEN / TOOL_EXECUTION_PENDING
+**Objective:** Produce provenance-bearing EXACT_OPTIMUM or PROVEN_LOWER_BOUND certificates for the current small and medium benchmark contracts.
+**Current artifact:** reference-certificate schema and quality-assessment gate.
+**Blockers:** optimized solver execution environment and proof/bound extraction for larger tiers.
+**Unlock criteria:** matching contract IDs with defensible reference objective/bound, method, source and evidence level.
+**Next experiment:** run the optional optimized classical path for small first, then medium; record whether optimality is proven or only a best-known feasible objective.
