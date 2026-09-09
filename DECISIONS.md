@@ -211,3 +211,16 @@
 ## 2026-09-09 — D043: Keep manufacturing-budget allocation explicit and scenario-dependent
 **Decision:** Do not hard-code a universal fraction of compute budget for fabrication. Require each architecture/economic scenario to state and sensitivity-test its manufacturing allocation.
 **Reason:** Quantum, photonic, semiconductor and hybrid architectures distribute cost differently across fabrication, package/test, QEC/control, memory, photonics and operations.
+
+
+## 2026-09-09 — D044: Compare cloud and owned hardware using cost per useful task
+**Decision:** Cloud-QPU rental and owned-UQCS deployment must use the same useful-task denominator before economic conclusions are drawn.
+**Reason:** Headline per-minute, per-shot or CAPEX values are not directly comparable without workload normalization and amortization.
+
+## 2026-09-09 — D045: Preserve dated provider pricing snapshots
+**Decision:** Store quantum-cloud pricing with snapshot date and official source rather than treating provider prices as permanent constants.
+**Reason:** Quantum-cloud prices and plans change; reproducible historical economics require provenance.
+
+## 2026-09-09 — D046: Reject cross-currency comparisons without explicit FX conversion
+**Decision:** Do not compare EUR and USD pricing numerically unless a dated, explicit currency conversion is supplied.
+**Reason:** Silent cross-currency arithmetic can produce false cost rankings.
