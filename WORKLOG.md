@@ -345,3 +345,23 @@ Important limitation:
 The route selector's relative tool/process/yield economics are still MODEL_ONLY. GitHub Actions status was not yet available from the connector at the time this worklog entry was written, so the new test suite is committed for CI verification rather than reported as already passed.
 
 GitHub synchronization completed for this cycle.
+
+
+### Full fab process-flow model
+Extended fabrication research beyond lithography to a full wafer/device process chain.
+
+Implemented:
+- process-step graph covering deposition, lithography, etch, implantation/doping, thermal processing, CMP, cleaning, metrology, inspection and test/package allocation
+- cumulative process-yield accounting
+- Poisson-style random-defect yield term (MODEL_ONLY)
+- gross and expected good dies/wafer
+- cost per good die
+- cycle-time and energy accounting
+- bottleneck ranking by cost share, yield loss, cycle time and energy
+- five unit/regression tests
+- `docs/FULL_FAB_PROCESS_FLOW.md`
+- RG-010 for missing calibrated full-fab data
+
+Scientific anchors were checked against official ASML and Applied Materials manufacturing/process documentation. The reference step costs/yields/times remain MODEL_ONLY and are not foundry quotes or validated production data.
+
+GitHub synchronization completed for this cycle.
