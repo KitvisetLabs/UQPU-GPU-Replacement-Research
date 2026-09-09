@@ -1,0 +1,16 @@
+{
+  "evidence_level": "MODEL_ONLY",
+  "name": "reference-ftqc-model",
+  "physical_error_rate": 0.0001,
+  "qec_threshold": 0.01,
+  "logical_cycle_seconds": 0.000001,
+  "measurement_seconds": 0.000001,
+  "state_prep_bandwidth_bytes_s": 1000000000,
+  "decode_bandwidth_bytes_s": 1000000000,
+  "control_power_watts": 1000,
+  "cooling_power_watts": 20000,
+  "capex_usd": 10000000,
+  "lifetime_seconds": 157680000,
+  "utilization": 0.7,
+  "note": "Hypothetical profile for sensitivity studies only. Not calibrated to a vendor system."
+}
