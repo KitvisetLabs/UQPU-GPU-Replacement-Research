@@ -1,0 +1,39 @@
+name: UQPU Prototype Tests
+
+on:
+  push:
+    paths:
+      - "software/uqpu-prototype/**"
+      - ".github/workflows/uqpu-tests.yml"
+  pull_request:
+    paths:
+      - "software/uqpu-prototype/**"
+      - ".github/workflows/uqpu-tests.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install prototype
+        working-directory: software/uqpu-prototype
+        run: python -m pip install -e .
+
+      - name: Run unit tests
+        working-directory: software/uqpu-prototype
+        run: python -m unittest discover -s tests -v
+
+      - name: Run CLI smoke test
+        working-directory: software/uqpu-prototype
+        run: python -m uqpu.cli compile examples/search_workload.json
