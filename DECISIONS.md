@@ -237,3 +237,12 @@
 ## 2026-09-09 — D049: Require dated provenance for FX conversion
 **Decision:** Currency conversion used in provider economics must carry source currency, target currency, rate, as-of date and source provenance.
 **Reason:** FX is time-dependent and must be reproducible in historical cost comparisons.
+
+
+## 2026-09-09 — D050: Require every integrated change to advance the original mission
+**Decision:** A subsystem result should not count as integrated mission progress unless it improves functional coverage, cost/useful-task, evidence maturity, provider portability, data movement, manufacturability or removes a documented blocker.
+**Reason:** The project has expanded into many disciplines; an explicit mission gate prevents scope growth from displacing the original objective.
+
+## 2026-09-09 — D051: Use mission-impact scoring to prioritize research effort
+**Decision:** Candidate work should be ranked by expected mission benefit divided by estimated effort, with P0/P1 blockers taking precedence.
+**Reason:** The fastest route to the original objective is reducing the highest-value uncertainty and cost/functional bottlenecks rather than maximizing raw activity.
