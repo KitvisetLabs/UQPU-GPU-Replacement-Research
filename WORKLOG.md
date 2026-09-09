@@ -297,3 +297,23 @@ GitHub synchronization completed for this research cycle.
 
 ### Complete chip-fabrication system scope
 Expanded UQCS into fabrication-equipment/factory research. Added DUV/EUV/maskless/nanoimprint research scope, complete process-flow coverage, parallel fab workstreams and a MODEL_ONLY route-selection module that prefers the lowest modeled-cost fabrication route satisfying feature-size/process/yield constraints rather than automatically preferring the smallest node. Added unit tests and updated the daily research automation so fabrication research and cross-workstream integration remain recurring requirements. GitHub synchronization completed for this cycle.
+
+
+### Research operating system activated
+Started the integrated execution phase after completing the expanded project scope.
+
+Implemented:
+- permanent living `RESEARCH_GAPS.md`
+- explicit gap status taxonomy
+- initial gaps for universal QPU replacement, 100x/100M economics, quantum memory/storage, biomass/mineral substitution, EUV-class fabrication and sub-agent availability
+- `docs/RESEARCH_OPERATING_SYSTEM.md` defining 11 coordinated workstreams and their integration contract
+- machine-readable `ResearchGap` schema
+- tests requiring blocked research to contain measurable unlock criteria and next experiments
+
+Operational rule:
+A failed or blocked research path cannot disappear. It must return an evidence level, blocker, best current alternative, unlock criteria and next experiment.
+
+Current execution limitation:
+Independent parallel sub-agent orchestration is not exposed in the present execution environment, so workstreams are decomposed and integrated sequentially. This is recorded as RG-008 rather than represented as parallel execution.
+
+GitHub synchronization completed for this cycle.
