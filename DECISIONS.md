@@ -372,3 +372,12 @@
 ## 2026-09-09 — D080: Preserve unknown measurement fields as unknown
 **Decision:** Missing energy, transfer, memory or cost measurements must remain null/unknown rather than being silently imputed in measured benchmark artifacts.
 **Reason:** Separating measurement from modeling is necessary for credible end-to-end advantage claims.
+
+
+## 2026-09-09 — D081: Make invariant CI compare canonical documents rather than hard-code project age
+**Decision:** Project invariant tests should derive the current invariant set from canonical repository documents and verify required minimum/current markers instead of assuming the project permanently stops at a fixed invariant number.
+**Reason:** The previous hard-coded INV-018/six-lane assumptions became a false failure after documented evolution to INV-024/eight lanes.
+
+## 2026-09-09 — D082: Keep competitive solver dependencies optional
+**Decision:** Established benchmark solvers such as OR-Tools belong in an optional benchmark dependency set rather than the UQPU core runtime.
+**Reason:** Provider/runtime portability should not require heavyweight classical benchmark packages, while evidence work still needs credible competitor solvers.
