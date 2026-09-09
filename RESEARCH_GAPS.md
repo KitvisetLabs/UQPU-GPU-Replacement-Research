@@ -206,3 +206,11 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Blockers:** dependency selection/version pinning, reproducible execution environment, hardware provenance and later GPU-capable comparison.
 **Unlock criteria:** measured artifacts for small/medium/large tiers with solver/version/hardware/runtime/objective/quality provenance.
 **Next experiment:** implement an optional optimized-solver adapter without making it a core dependency.
+
+
+## RG-022 — Measured OR-Tools benchmark artifacts
+**Status:** TOOL/EXECUTION_PENDING
+**Objective:** Run the optional OR-Tools adapter on Batch-006 small/medium/large contracts and commit measured benchmark artifacts.
+**Blockers:** optional solver dependency is not installed in default CI; measured execution requires a benchmark environment with hardware provenance.
+**Unlock criteria:** artifact files recording solver version, contract ID, runtime, objective/quality and hardware context for all selected tiers.
+**Next experiment:** install benchmark-optional requirements in a dedicated benchmark job or controlled local/cloud runner and execute the tier manifest.
