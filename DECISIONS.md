@@ -311,3 +311,16 @@
 ## 2026-09-09 — D066: Make the first verified cloud-QPU workload win the primary cross-lane milestone
 **Decision:** The highest-value near-term integration milestone is a reproducible workload contract carried from classical baseline through current cloud-QPU/hybrid execution to validated output and total cost/useful-task.
 **Reason:** This is the shortest evidence path from software architecture toward the original functional/economic mission.
+
+
+## 2026-09-09 — D067: Require REAL_QPU evidence before calling a workload a verified quantum win
+**Decision:** MODEL_ONLY, SIMULATION and DRY_RUN results may guide research but cannot satisfy the verified-win gate. A verified win requires real-QPU execution, accepted output quality and measured end-to-end economics.
+**Reason:** This prevents software models or simulator performance from being confused with demonstrated cloud-QPU advantage.
+
+## 2026-09-09 — D068: Add provider throughput as a first-class routing/economics variable
+**Decision:** Provider selection should eventually include circuit/reset/repetition throughput in addition to qubit count, fidelity, modality and headline price.
+**Reason:** IBM's Nighthawk r2 illustrates that a system with similar/smaller qubit scale can materially change useful-work economics through much higher throughput.
+
+## 2026-09-09 — D069: Lane H uses stage gates instead of assuming automatic industrial progression
+**Decision:** Transitions in the Kanusanan Pongpanna Model should be analyzed through explicit technical, market, cash-flow and financing gates.
+**Reason:** Success in agriculture/biomass does not automatically make semiconductor/quantum investment economically feasible; each transition requires evidence.
