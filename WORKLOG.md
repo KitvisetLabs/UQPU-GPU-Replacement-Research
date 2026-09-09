@@ -44,3 +44,55 @@ Added project goals, research/engineering process, decision log and work log so 
 - implement first quantum-native benchmark candidates
 - compare against real GPU baselines
 - identify which workload classes can realistically approach 100× and which cannot
+
+
+### Software prototype v0.2
+Implemented the first executable UQPU software prototype under `software/uqpu-prototype/`.
+
+Implemented:
+- semantic workload IR and result contracts
+- quantum-native backend estimator
+- reversible deterministic fallback estimator
+- end-to-end cost model
+- semantic compiler/backend selection
+- benchmark classifications
+- 100×–100,000,000× cost tiers
+- JSON workload input
+- CLI
+- unit tests
+- GitHub Actions continuous integration
+
+### Verification cycle
+Development iteration 1:
+- implemented initial prototype
+- ran 6 unit tests
+- result: 6/6 passed
+- inspected benchmark output
+
+Issue discovered:
+- hypothetical cost estimates could be misread as experimentally demonstrated advantage.
+
+Development iteration 2:
+- added mandatory `MODEL_ONLY` evidence labels
+- added confidence values
+- added explicit cost-supremacy tiers
+- added JSON workload ingestion
+- expanded tests
+
+Verification:
+- ran 9 unit tests
+- result: 9/9 passed
+- CLI smoke test passed
+
+Scientific note:
+A demonstration Monte Carlo model produced a hypothetical >100× cost ratio, but this remains a low-confidence MODEL_ONLY result. It is not accepted as physical quantum advantage until resource assumptions are calibrated against literature and hardware.
+
+### Continuous verification
+Added GitHub Actions CI to test Python 3.10, 3.11 and 3.12 on prototype changes and Pull Requests.
+
+Next development iteration:
+- replace heuristic QPU resource assumptions with configurable hardware profiles
+- add surface-code/QEC model
+- add measured GPU-baseline schema
+- add sensitivity/uncertainty analysis
+- add first literature-backed quantum algorithm estimator
