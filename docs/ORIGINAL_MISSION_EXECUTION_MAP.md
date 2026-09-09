@@ -115,3 +115,9 @@ G. Quantum Chip Manufacturing Equipment & Software.
 Lane G covers the hardware and software of the production machinery/factory stack required to manufacture all relevant quantum-processing chip modalities. It includes lithography (DUV/EUV/alternatives), deposition, etching, implantation/doping where applicable, cleaning, masks, wafer handling, metrology/inspection, process control, EDA/TCAD/process simulation, factory automation/robotics, cryogenic/electrical/optical characterization, photonic manufacturing, bonding/assembly/packaging/test and future manufacturing approaches.
 
 All seven lanes advance concurrently. Lane A is Priority #1, but no lane is optional or dormant by default.
+
+
+## Lane H — Strategic development/finance and future-industry mission
+The eighth permanent lane researches and expands the Ketskaew Chulamani / Kanusanan Pongpanna Model master plan. It treats the plan as a living research program: agriculture/biomass -> processing/carbon/materials -> energy -> semiconductor/photonics/quantum -> AI/robotics -> biotechnology/health -> food/water -> cities/infrastructure -> global economic networks -> space industry -> clearly labeled speculative/far-future concepts -> social-development vision.
+
+Lane H also develops financial engineering, startup/funding routes, One Person Business Company, Local AI/Local Deep Agents and agent-swarm operating models, and continuously connects their economics and execution pathways back to technical lanes A–G. Research outputs and expanded articles are published progressively to GitHub with evidence/status labeling.
