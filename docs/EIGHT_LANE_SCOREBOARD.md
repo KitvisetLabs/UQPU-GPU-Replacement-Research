@@ -107,3 +107,18 @@ RG-019 and RG-020 remain open until competitive measured baselines and calibrate
 | H | Article 006: CI as Research Governance | STRATEGIC_RESEARCH | stage-gate governance schema |
 
 The immediate operational gate is a green GitHub Actions run after the invariant repair, followed by RG-022 measured optimized-solver artifacts.
+
+
+## Batch 008
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | executable tier runners | TESTABLE SOFTWARE | reference-quality gate |
+| B | same contract IDs ready for provider mapping | SOFTWARE CONTRACT | simulator/real-QPU mapping |
+| C | artifact schema remains measurement-ready | EVIDENCE SCHEMA | measured transfer/memory |
+| D | no new device claim | GOVERNED RESEARCH | numeric requirements |
+| E | no new material claim | GOVERNED RESEARCH | sourced property evidence |
+| F | deterministic tier regression tests | TESTABLE SOFTWARE | optimized measured artifacts |
+| G | no new fabrication claim | GOVERNED RESEARCH | equipment response evidence |
+| H | strategy remains linked through canonical project memory | STRATEGIC GOVERNANCE | next evidence-linked article |
+
+Immediate gate: RG-023 reference objectives/bounds, then measured optimized classical artifacts.
