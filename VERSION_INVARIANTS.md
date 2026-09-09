@@ -33,3 +33,7 @@ The repository includes an automated policy test that checks for the presence of
 | INV-017 | Preserve multilingual Ketskaew Chulamani / Kanusanan Pongpanna strategic plan links and integrate the plan as permanent research context | Yes |
 
 | INV-018 | Cross-chat/session continuity: load and follow the canonical six-lane Research Operating System from GitHub | Yes |
+
+| INV-019 | Software/programming-first use of current cloud QPUs is the primary execution strategy | Yes |
+| INV-020 | Replace CPU/GPU/RAM/VRAM/storage by application outcome, not classical internal mechanism | Yes |
+| INV-021 | Attempt software/cloud path to >=100x economics before escalating to new hardware | Yes |
