@@ -182,3 +182,7 @@ Software / compiler / quantum algorithms / semantic transformation
 ```
 
 Hardware, photonics, fabrication and biomass/materials research remain in the project, but they are secondary to the software/cloud execution path unless existing hardware prevents mission progress.
+
+
+## Priority #1 + Parallel Research Rule
+**Quantum programming / software-first cloud-QPU execution is Priority #1. It is not the only active work.** All established research lanes continue in parallel and are expected to make ongoing progress: software/workloads, quantum/cloud, memory/state/storage, hardware/photonics/fabrication/packaging, biomass/materials/energy/infrastructure, and economics/evidence/integration. Priority #1 controls emphasis and conflict resolution; it does not pause other research.
