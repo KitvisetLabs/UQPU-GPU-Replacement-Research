@@ -152,3 +152,18 @@ Immediate gate: RG-024 certified reference for small/medium contracts, then iden
 | H | evidence-gated strategy retained | STRATEGIC_RESEARCH | quantified stage-gate article |
 
 Immediate gate: RG-025 controlled optimized-reference execution, which unlocks RG-024 certified small/medium references.
+
+
+## Batch 011
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | small/medium reference generator executed on hosted CPU | MEASURED_LOCAL | proof-quality reference/bound |
+| B | identical QUBO contracts remain ready for provider route | SOFTWARE CONTRACT | simulator/authorized QPU run |
+| C | state evidence checklist published | ENGINEERING CHECKLIST | measured memory/transfer data |
+| D | metrology/process feedback loop extended | ENGINEERING_FRAMEWORK | numeric process windows |
+| E | material evidence ladder extended | ENGINEERING/RESEARCH FRAMEWORK | sourced functional-unit comparison |
+| F | pinned OR-Tools benchmark run with provenance | MEASURED_LOCAL | OPTIMAL/proven bound + GPU baseline |
+| G | metrology/control feedback contract extended | ENGINEERING_FRAMEWORK | calibrated tool capability |
+| H | Article 008: reproducible capital gates | STRATEGIC_RESEARCH | quantified first capital gate |
+
+Measured CPU reference evidence exists, but small/medium are FEASIBLE only. No proof-quality optimum, GPU baseline, real-QPU advantage or >=100x result has been demonstrated.
