@@ -324,3 +324,20 @@
 ## 2026-09-09 — D069: Lane H uses stage gates instead of assuming automatic industrial progression
 **Decision:** Transitions in the Kanusanan Pongpanna Model should be analyzed through explicit technical, market, cash-flow and financing gates.
 **Reason:** Success in agriculture/biomass does not automatically make semiconductor/quantum investment economically feasible; each transition requires evidence.
+
+
+## 2026-09-09 — D070: Benchmark the useful workload contract, not an isolated quantum kernel
+**Decision:** A First Verified Win benchmark must include workload semantics, provider modality fit, state/I/O accounting, output quality and total cost/useful-task.
+**Reason:** Kernel-only quantum performance can hide input preparation, state movement, retries and reconstruction costs.
+
+## 2026-09-09 — D071: Make device/factory co-design use a measurable shared contract
+**Decision:** Lane D must supply critical device/process/test requirements to Lane G, and Lane G must return equipment capability, throughput, yield, cost and blocker information.
+**Reason:** Separating chip architecture from equipment research without a formal interface creates unusable manufacturing studies.
+
+## 2026-09-09 — D072: Derive Lane E material research from system functions
+**Decision:** Biomass/advanced-material candidates must map to defined computing/fabrication/infrastructure functions and qualification requirements.
+**Reason:** Functional requirements make substitution research economically and scientifically testable.
+
+## 2026-09-09 — D073: Scale research capital by evidence and uncertainty reduction
+**Decision:** Lane H capital-allocation research should preserve all eight lanes while giving larger marginal funding to experiments that reduce mission-critical uncertainty most efficiently.
+**Reason:** Equal funding by organizational lane is not automatically optimal.
