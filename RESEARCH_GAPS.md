@@ -169,3 +169,14 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Proposed experiments:** extend HardwareSnapshot with throughput metrics; run simulator/authorized cloud benchmark; normalize by useful accepted outputs rather than raw circuits.
 **Dependencies:** Lane A workload contracts, Lane B provider adapters, Lane F benchmark evidence.
 **Next review trigger:** first authorized provider benchmark or additional official throughput data.
+
+
+## RG-018 — Benchmark harness calibration against real classical baselines
+**Status:** DATA_BLOCKED / NOT_YET_DEMONSTRATED
+**Objective:** Populate Batch 003 benchmark plans with measured competitive CPU/GPU baseline runtime, cost, memory/state movement and output-quality data.
+**Blockers:** no current measured baseline dataset is yet committed for the first candidate workload.
+**Current alternative:** machine-readable workload contracts, provider-fit model, state accounting and evidence gate.
+**Unlock criteria:** reproducible classical baseline artifact for one candidate workload, including hardware/software configuration, runtime, cost/task, input/output and memory/state accounting.
+**Proposed experiments:** implement a small exact/heuristic combinatorial-optimization baseline and record hardware/runtime/cost assumptions.
+**Dependencies:** Lane A benchmark definition and Lane F economics.
+**Next review trigger:** first committed classical benchmark dataset.
