@@ -26,3 +26,6 @@ A version should not be considered compliant if it removes or weakens these inva
 ## CI enforcement
 
 The repository includes an automated policy test that checks for the presence of these permanent mission markers in core project documentation.
+
+| INV-015 | Complete chip-fabrication equipment/process research scope | Yes |
+| INV-016 | Parallel fab workstreams with cross-system integration | Yes |
