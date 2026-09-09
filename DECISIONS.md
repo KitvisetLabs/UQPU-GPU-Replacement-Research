@@ -167,3 +167,16 @@
 ## 2026-09-09 — D033: Rank fab bottlenecks across cost, yield, time and energy
 **Decision:** Fabrication optimization should identify the highest combined process penalties rather than assuming lithography is always dominant.
 **Reason:** Deposition, etch, CMP, cleaning, metrology, test or packaging may dominate a specific quantum/photonic/semiconductor process flow.
+
+
+## 2026-09-09 — D034: Preserve the complete Kanusanan Pongpanna Model as a master project artifact
+**Decision:** Maintain `docs/KANUSANAN_PONGPANNA_MODEL.md` as the canonical strategic master document containing the staged investment/future-industry vision, public multilingual source links, AI-agent/business-automation context, biomass strategy and UQCS integration.
+**Reason:** The user's strategic plan must remain durable, public and available to every future research cycle rather than relying on chat history alone.
+
+## 2026-09-09 — D035: Enforce strategic-plan preservation in CI and daily workflow
+**Decision:** Every meaningful project version/progress cycle must preserve the master plan, all multilingual source links and README visibility; CI and daily automation will verify/require this.
+**Reason:** This prevents later refactoring, contributions or long-running development from silently losing the project's strategic foundation.
+
+## 2026-09-09 — D036: Preserve strategic intent while independently verifying evidence
+**Decision:** The master plan guides research priorities and integration, but scientific, technical, financial, legal, market and vendor claims require current independent primary-source verification before being treated as verified findings.
+**Reason:** Long-term strategic continuity and scientific/economic credibility must be maintained simultaneously.
