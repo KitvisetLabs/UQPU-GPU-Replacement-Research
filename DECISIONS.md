@@ -259,3 +259,16 @@
 ## 2026-09-09 — D054: Distinguish software readiness from real-QPU verification
 **Decision:** Adapter readiness must explicitly distinguish serialization/dry-run, simulator verification, implemented real-submit code, aggregator routing and real-QPU verified execution.
 **Reason:** A correct-looking integration cannot be claimed as verified hardware access without credentials, target availability, job evidence and result/cost validation.
+
+
+## 2026-09-09 — D055: Make programming on existing cloud QPUs the primary project strategy
+**Decision:** The first and highest-priority path is to program currently available cloud quantum computers to perform application-level CPU/GPU/RAM/VRAM/storage roles through semantic transformation, quantum algorithms and runtime orchestration.
+**Reason:** The user's original intent is software-driven functional replacement using market-available cloud quantum hardware, not hardware invention as the primary prerequisite.
+
+## 2026-09-09 — D056: Escalate to custom hardware only after a documented software/cloud blocker
+**Decision:** Hardware, device physics, lithography and fabrication remain active research but are secondary unless software/cloud execution produces a measurable blocker that existing hardware cannot overcome.
+**Reason:** This prevents hardware research from consuming priority before the software-first hypothesis has been tested.
+
+## 2026-09-09 — D057: Treat memory/storage replacement as semantic state-service replacement
+**Decision:** RAM, VRAM/HBM and persistent-storage goals should first be attacked by changing representation, materialization, access and persistence semantics rather than trying to recreate DRAM/HBM/disk cells inside a QPU.
+**Reason:** The internal mechanism may differ; the acceptance criterion is the useful application/state contract plus end-to-end economics.
