@@ -290,3 +290,15 @@
 ## 2026-09-09 — D061: Every cycle must explicitly recognize all seven lanes
 **Decision:** Every research/daily cycle must inspect A–G. Lane A receives Priority #1 emphasis, while B–G continue research and progress in parallel.
 **Reason:** The seven-lane structure is project memory and must remain stable across chats, agents and scheduled runs.
+
+
+## 2026-09-09 — D062: Expand the permanent operating architecture to eight research lanes
+**Decision:** Add Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Development, Finance & Future-Industry Research — making A–H the permanent project architecture.
+**Reason:** The master development/financial plan is not merely a reference document; it is an independent living research program requiring continuous deepening, feasibility analysis, article expansion and public GitHub publication.
+
+## 2026-09-09 — D063: Lane H continuously publishes research while preserving evidence boundaries
+**Decision:** Lane H must progressively publish research notes/articles/roadmaps derived from the plan, preserve multilingual source references, and distinguish evidence, forecasts, hypotheses, speculative technologies, personal/religious vision and targets.
+**Reason:** Continuous publication supports open collaboration while evidence labels prevent aspirational or belief-based material from being mistaken for demonstrated scientific results.
+
+## 2026-09-09 — D064: Every cycle explicitly recognizes A–H
+**Decision:** Every research/daily cycle must inspect all eight lanes. Lane A remains Priority #1; B–H continue progress in parallel.
