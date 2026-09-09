@@ -238,3 +238,39 @@ Evidence status:
 All numerical hardware requirements remain MODEL_ONLY architecture-search constraints. They are not specifications of current hardware and are not evidence of achieved quantum advantage.
 
 GitHub synchronization completed for this research cycle.
+
+
+### Quantum hardware market gap analysis — September 2026
+Added a modality-aware market snapshot and executable hardware-gap analyzer.
+
+Current official-source snapshot includes:
+- IBM Heron and Starling roadmap
+- Quantinuum Helios
+- IonQ 2026 roadmap
+- Pasqal 1024-atom register milestone
+- QuEra Aquila
+- Rigetti Cepheus-1-108Q
+- D-Wave Advantage2
+- OQC Toshiko and Genesis roadmap
+- Quandela cloud-accessible photonic progress in the documentation snapshot
+
+Implemented:
+- `uqpu.provider_hardware.HardwareSnapshot`
+- requirement vectors
+- gap comparison
+- unknown-metric handling
+- paradigm-aware ranking
+- `uqpu.market_snapshot.market_snapshot_2026_09()`
+- unit tests covering paradigm mismatch, unknown fields and known logical/fidelity metrics
+- `docs/MARKET_HARDWARE_SNAPSHOT_2026-09.md`
+
+Research finding:
+Raw qubit count is not a valid cross-provider ranking metric. Gate-model, analog, annealing and photonic systems have different computational semantics and must be matched to workload contracts before resource comparison.
+
+Scientific rule added in implementation:
+An unknown metric never counts as satisfying a requirement. Roadmap values remain labeled ROADMAP and are not treated as current hardware.
+
+Current limitation:
+This snapshot is a research baseline, not yet a live runtime discovery feed. Provider APIs and official documentation must continue to be checked and the snapshot refreshed.
+
+GitHub synchronization completed for this research cycle.
