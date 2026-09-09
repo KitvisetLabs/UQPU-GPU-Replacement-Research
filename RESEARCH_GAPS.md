@@ -71,3 +71,15 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Current alternative:** sequential workstream decomposition with explicit integration review.
 **Unlock criteria:** supported multi-agent execution environment with auditable outputs and permissions.
 **Next work:** maintain workstream interfaces so parallelization can be adopted later.
+
+
+## RG-009 — Calibrated lithography/fab economics
+**Status:** DATA_BLOCKED / MODEL_ONLY
+**Objective:** Select the least-total-cost fabrication route for each UQCS device using calibrated real economics rather than normalized placeholders.
+**Blockers:** public tool purchase/service pricing is incomplete; layer-specific mask/resist/etch/metrology costs, multi-patterning penalties, local utility/cleanroom costs, yield-learning curves and supply-chain terms are not fully available.
+**Current alternative:** normalized route-selection model anchored to published capability data.
+**Unlock criteria:** validated cost/yield inputs for at least one real fab route and one target UQCS device/process flow.
+**Proposed experiments:** collect foundry quotes/public cost data where lawful/available; build layer-by-layer process-flow model; sensitivity analysis for yield, throughput, masks, energy and metrology.
+**Dependencies:** device requirements, process flow, fab geography, equipment access.
+**Safety/legal constraints:** industrial lithography and semiconductor processing require professional facilities and compliance.
+**Next review trigger:** availability of calibrated fab economics or foundry/process-partner data.
