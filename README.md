@@ -86,7 +86,7 @@ The research now includes a running implementation at:
 - `software/uqpu-prototype/TESTING.md` — verification process and current test status
 - `.github/workflows/uqpu-tests.yml` — automatic CI for every relevant push and Pull Request
 
-Current software status: **v0.2**, verified locally with **9/9 unit tests passing**. Resource estimates are explicitly labeled **MODEL_ONLY** until calibrated against literature, simulators and real QPU/GPU measurements.
+Current software package: **v0.3.0**. Batch 012 verification ran **142 tests: 141 passed, one optional OR-Tools test skipped**. Resource estimates are explicitly labeled **MODEL_ONLY** until calibrated against literature, simulators and real QPU/GPU measurements.
 
 ## Research traceability
 
@@ -146,7 +146,7 @@ Before doing project work in a new ChatGPT chat/session, AI agent, automation or
 7. `DECISIONS.md`
 8. `WORKLOG.md`
 
-Then continue using the canonical **six-lane Parallel Simple Mode**:
+Then continue using the canonical **eight-lane Parallel Simple Mode**:
 
 ```text
 A Quantum Programming / Workloads / Compiler / Runtime — Priority #1
@@ -212,3 +212,15 @@ The project now has **eight concurrent research lanes (A–H)**. Lane H is a per
 Lane H continuously deepens feasibility, financial engineering, funding/startup pathways, One Person Business Company, Local AI, Local Deep Agents, agent-swarm operations, milestones, risks and cross-links to technical lanes A–G. Research notes and expanded articles are to be published progressively in this repository. The multilingual plan references remain canonical public references.
 
 **Lane A remains Priority #1. A–H all progress continuously in parallel.**
+
+
+## Latest research — Batch 012
+
+Quantum programming remains **Priority #1** across the full A–H program.
+
+- [QUBO-to-QAOA compiler, simulation results and next gates](docs/BATCH_012_QAOA_PROGRAMMING_AND_SIMULATION.md)
+- [Primary-source review and project continuity audit](docs/BATCH_012_SOURCE_REVIEW.md)
+- [Reproducible code, counts, circuits and data](benchmarks/results/batch012-qaoa-verification.json)
+- [Lane H Article 009: compiler evidence and staged capital](docs/LANE_H_ARTICLE_009_COMPILER_EVIDENCE_AND_CAPITAL.md)
+
+The new path is verified on ideal 3/6/8-qubit simulations; 32/128/512-variable circuits are inspection-only. Real-QPU advantage, >=100× cost reduction and full CPU/GPU/memory/storage replacement remain unproven.

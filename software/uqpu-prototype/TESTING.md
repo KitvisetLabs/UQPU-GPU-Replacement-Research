@@ -53,3 +53,9 @@ Verification maturity ladder:
 7. QPU-provider experiments
 8. measured GPU baselines
 9. end-to-end economic validation
+
+
+## Batch 012 (2026-09-09)
+Current local suite: **142 tests, 141 passed, one optional OR-Tools availability test skipped**. Ten new tests independently verify QUBO/Ising energy semantics, two-layer QAOA state evolution, global phase, normalization, sampling, provider inspection and allocation limits. The historical counts above describe earlier releases.
+
+Reproduce the experiment with `PYTHONPATH=. python examples/run_qaoa_verification.py --output /tmp/qaoa-verification.json`. This runs ideal CPU simulation, not a QPU benchmark.

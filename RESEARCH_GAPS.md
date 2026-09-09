@@ -252,3 +252,24 @@ Measured outcomes:
 This satisfies the environment/provenance portion of RG-025 but not the proof-quality portion of RG-024.
 
 **Next unlock:** obtain OPTIMAL status or a rigorous proven lower bound for at least the small contract, while preserving the exact same contract ID.
+
+
+## RG-026 — Independent SDK, noise and provider validation of QAOA
+**Status:** PARTIALLY_UNLOCKED / SIMULATION + DRY_RUN_ONLY
+**Objective:** Carry identical QUBOs from exact semantics through independent SDK validation, target ISA, sampled decoding and authorized QPU execution.
+**Current evidence:** Batch 012 ideal 3/6/8-qubit simulations, independent dense-definition tests, and existing 32/128/512-variable inspection payloads.
+**Blocker:** no independent vendor SDK, hardware routing/calibration, noisy results or QPU job evidence in Batch 012. Direct dense simulation is exponentially expensive.
+**Unlock criteria:** same input digest/contract, independently agreeing circuit, documented target and layout, measured counts/quality, full overhead and reference provenance.
+**Next experiment:** SDK circuit/statevector cross-check without submitting jobs; then noise and finite-shot quality curves.
+**Dependencies:** A/B/C/F, RG-024 proof-quality classical references, authorized provider access/budget.
+**Review trigger:** next software batch or a target/calibration becoming available.
+
+## RG-027 — Correlation encoding versus direct QAOA
+**Status:** RESEARCH_CANDIDATE / NOT_IMPLEMENTED
+**Objective:** Test whether fewer qubits produce lower total cost at matched decoded MaxCut quality.
+**Evidence:** primary-source review in docs/BATCH_012_SOURCE_REVIEW.md; capacity-only model gives 6/10/19 qubits for 32/128/512 variables under the two-body construction.
+**Blocker:** capacity is not representability, optimizer success or useful-output quality; shot/decoding costs are unknown.
+**Unlock criteria:** reproducible encoding/loss/measurement/decoding experiment, same original instance digest and reference, equal evaluation/shot budget, recorded negative outcomes.
+**Next experiment:** tiny bounded noiseless comparison, followed by shot noise and reachable-quality investigation.
+**Dependencies:** A/C/F and RG-026; no hardware fabrication prerequisite.
+**Review trigger:** independent circuit verification completed.

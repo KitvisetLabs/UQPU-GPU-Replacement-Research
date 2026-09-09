@@ -60,7 +60,13 @@ The 100× minimum target and 10^8× moonshot target must be tested through this 
 ## Parallel Simple Mode
 The canonical coordination method is defined in `docs/RESEARCH_OPERATING_SYSTEM.md`.
 
-All research is grouped into six lanes:
-A) workloads/software; B) quantum/cloud; C) memory/photonics/interconnect; D) devices/fabrication/packaging; E) biomass/materials/energy/infrastructure; F) economics/evidence/integration.
+All research is grouped into eight lanes:
+A) workloads/software; B) quantum/cloud; C) memory/photonics/interconnect; D) devices/fabrication/packaging; E) biomass/materials/energy/infrastructure; F) economics/evidence/integration; G) quantum-chip manufacturing equipment/software; H) strategic-plan/finance/future-industry research.
 
 All lanes use one work-item contract and converge through one integration gate. Prioritize P0 integration blockers and P1 economic bottlenecks before broad feature expansion. Parallel agents may execute lanes concurrently when available; otherwise use the identical lane decomposition sequentially and record the limitation.
+
+
+## Continuous evidence and publication
+Every working cycle performs targeted searches of primary research and official provider/programming documentation, recording access date, review depth and the concrete experiment/decision informed. Quantum programming is Priority #1; A–H all receive explicit progress or blocker review.
+
+Publish code, articles, reproducibility data and negative results at every meaningful validated milestone. Verify the remote commit and its own CI state; old successful runs and empty status lists are not proof of current-commit success. Relevant Gmail notifications are diagnostic inputs; inspect the corresponding public workflow and publish project evidence rather than private mail or tracking links.

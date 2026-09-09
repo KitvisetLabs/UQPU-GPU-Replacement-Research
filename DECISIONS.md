@@ -417,3 +417,16 @@
 ## 2026-09-09 — D090: Keep benchmark contract IDs fixed while strengthening reference evidence
 **Decision:** Future formulation, time-limit or solver experiments intended to improve reference proof strength must preserve the same workload contract IDs unless benchmark semantics themselves change.
 **Reason:** This allows legitimate comparison of stronger reference-generation methods without moving the target.
+
+
+## 2026-09-09 — D091: Preserve exact QUBO semantics through gate-model lowering
+**Decision:** Carry objective offset, variable/bit mapping, contract ID and input digest through QUBO-to-Ising-to-QAOA. Validate energies exhaustively on bounded fixtures and compare the circuit against an independently formulated dense oracle.
+**Reason:** Sign, scale, diagonal terms and bit ordering can silently invalidate solution-quality comparisons.
+
+## 2026-09-09 — D092: Keep simulation, inspection and target execution distinct
+**Decision:** Cap the verification simulator at 12 qubits, publish all search costs and label larger-tier lowering DRY_RUN_ONLY until target-specific validation. Record exact-state expectations separately from sampled objectives.
+**Reason:** A compiled large circuit is not an executed computation, and best-of-shots quality is not mean quality or economic advantage.
+
+## 2026-09-09 — D093: Research alternative encodings under original-output contracts
+**Decision:** Evaluate Pauli correlation encoding as a candidate with equal total evaluation/shot accounting, original-objective decoding and competitive reference comparison.
+**Reason:** Qubit-count compression can transfer cost into optimization, measurement and decoding; it is not generic quantum RAM.

@@ -167,3 +167,18 @@ Immediate gate: RG-025 controlled optimized-reference execution, which unlocks R
 | H | Article 008: reproducible capital gates | STRATEGIC_RESEARCH | quantified first capital gate |
 
 Measured CPU reference evidence exists, but small/medium are FEASIBLE only. No proof-quality optimum, GPU baseline, real-QPU advantage or >=100x result has been demonstrated.
+
+
+## Batch 012
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Objective-preserving QUBO/QAOA plus 3/6/8-qubit sampled loop | PROTOTYPE / SIMULATION | Independent SDK + noisy correctness |
+| B | Existing tier circuits through IBM/Braket/Azure inspection | DRY_RUN_ONLY | Target ISA, layout and actual result decoding |
+| C | Bit mapping, byte records, exponential memory cap | SOFTWARE / MODEL_ONLY memory payload | Measured overhead and alternative encoding |
+| D | Small circuit needs 32 qubits, 83 interactions, 166 CX pre-routing | COMPILER-DERIVED REQUIREMENTS | Calibrated device/routing/noise response |
+| E | Functional-unit energy/material criteria reviewed | DATA_BLOCKED | Measured equal-quality lifecycle comparison |
+| F | Raw grids/counts, certificates and source hashes | REPRODUCIBLE SIMULATION | RG-024 tier bounds and competitive baseline |
+| G | Calibration/metrology response tied to D circuit demands | ENGINEERING_FRAMEWORK | Numeric process/device capability evidence |
+| H | Article 009: compiler evidence and staged capital | STRATEGIC_RESEARCH | Evidence-based next integration gate |
+
+Full report: [Batch 012](BATCH_012_QAOA_PROGRAMMING_AND_SIMULATION.md). No REAL_QPU, GPU replacement or ≥100× claim.

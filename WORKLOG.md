@@ -818,3 +818,21 @@ Measured results:
 The evidence pipeline correctly classified both as best-known feasible, not exact optimum. RG-025 is materially advanced because a pinned controlled benchmark environment now exists and has produced measured provenance. RG-024 remains open because neither tier has proof-quality reference evidence.
 
 Priority #1, all eight lanes A-H, multilingual master references and evidence boundaries were preserved.
+
+
+### Eight-Lane Research Batch 012 — executable quantum programming
+Read the shared project conversation and reconstructed current state from the 208-file checkout at 58d0e02. Reviewed primary quantum-programming sources and official provider documentation. Old CI failure emails were reconciled with newer successful public runs.
+
+A: implemented objective-preserving QUBO→Ising→portable QAOA, ideal bounded simulation and deterministic 24×24 parameter search. Three 3/6/8-qubit fixtures produced exact-optimum sampled assignments; this does not certify optimal expected objectives or advantage.
+B: lowered the existing 32/128/512-variable contracts to IBM/Braket/Azure inspection payloads with unchanged contract IDs. No SDK/ISA or real-QPU execution claim.
+C: recorded bit/variable mapping, serialized byte counts and explicit 12-qubit simulation cap; 32-qubit dense payload alone is a modeled 64 GiB.
+D/G: derived small-tier requirements of 32 qubits, 83 interactions and 166 pre-routing CX; target connectivity, noise, calibration and metrology remain open.
+E: reviewed lifecycle/functional-unit accounting; energy, cooling and material-performance claims remain unmeasured.
+F: published raw grids/probabilities/counts, inputs, hashes, environment, reference certificates and limitations. RG-024 remains open.
+H: published Article 009 linking compiler evidence to the next research-spending gate.
+
+Validation: full local suite 142 tests, 141 passed and one optional OR-Tools availability test skipped; ten new mathematical/compiler tests passed. Reproduction command and data are in docs/BATCH_012_QAOA_PROGRAMMING_AND_SIMULATION.md.
+
+Updated the existing enabled daily research automation, preserving its approximately 08:00 Asia/Bangkok schedule, to require source searches on every cycle and publication at each validated milestone; relevant Gmail notifications are checked against GitHub. No extra automation was created.
+
+Priority #1, all eight lanes A–H, multilingual master references and evidence boundaries were preserved. Research was integrated sequentially. No paid QPU execution, quantum advantage or >=100× result is claimed.
