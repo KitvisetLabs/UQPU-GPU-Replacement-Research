@@ -224,3 +224,16 @@
 ## 2026-09-09 — D046: Reject cross-currency comparisons without explicit FX conversion
 **Decision:** Do not compare EUR and USD pricing numerically unless a dated, explicit currency conversion is supplied.
 **Reason:** Silent cross-currency arithmetic can produce false cost rankings.
+
+
+## 2026-09-09 — D047: Treat cloud-vs-owned deployment as a crossover under uncertainty
+**Decision:** Deployment economics must be sensitivity-tested across utilization, CAPEX, runtime and other major variables rather than decided from one central scenario.
+**Reason:** Small changes in utilization or lifecycle assumptions can reverse which route is cheaper.
+
+## 2026-09-09 — D048: Use robust interval classification before deployment claims
+**Decision:** Classify a route as robustly cheaper only when its high-cost estimate remains below the competing route's low-cost estimate; otherwise report uncertainty overlap.
+**Reason:** This prevents fragile MODEL_ONLY assumptions from becoming false strategic conclusions.
+
+## 2026-09-09 — D049: Require dated provenance for FX conversion
+**Decision:** Currency conversion used in provider economics must carry source currency, target currency, rate, as-of date and source provenance.
+**Reason:** FX is time-dependent and must be reproducible in historical cost comparisons.
