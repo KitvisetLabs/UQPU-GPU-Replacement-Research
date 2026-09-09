@@ -1,0 +1,27 @@
+schema_version: 1
+device:
+  modality: TBD
+  function: TBD
+  critical_dimension_nm: null
+  film_stack: []
+  max_surface_roughness_nm: null
+  max_contamination_ppb: null
+  overlay_nm: null
+  test:
+    cryogenic_temperature_k: null
+    electrical: []
+    optical: []
+  package_interconnect: []
+  target_yield_fraction: null
+  target_reliability_hours: null
+factory_response:
+  candidate_route: TBD
+  equipment: []
+  metrology: []
+  process_control: []
+  estimated_throughput_units_per_hour: null
+  estimated_yield_fraction: null
+  estimated_cost_per_good_device_usd: null
+  facility_constraints: []
+  blockers: []
+evidence_status: MODEL_ONLY
