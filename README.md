@@ -129,3 +129,33 @@ Every compliant project version must preserve and reference the complete strateg
 - **[STRATEGIC_PLAN_REFERENCES.md](STRATEGIC_PLAN_REFERENCES.md)** — compact permanent multilingual reference index.
 
 **Progress-update rule:** every meaningful research/release cycle must keep these master references present and preserve all multilingual source links. Scientific/technical/economic claims remain subject to independent evidence verification.
+
+
+## Start Here — Required for every new chat, agent or contributor
+
+**Do not rely on chat memory to continue this project. GitHub is the canonical project memory.**
+
+Before doing project work in a new ChatGPT chat/session, AI agent, automation or contributor environment, read these files in order:
+
+1. `PROJECT_CHARTER.md`
+2. `VERSION_INVARIANTS.md`
+3. `docs/RESEARCH_OPERATING_SYSTEM.md`
+4. `docs/KANUSANAN_PONGPANNA_MODEL.md`
+5. `STRATEGIC_PLAN_REFERENCES.md`
+6. `RESEARCH_GAPS.md`
+7. `DECISIONS.md`
+8. `WORKLOG.md`
+
+Then continue using the canonical **six-lane Parallel Simple Mode**:
+
+```text
+A Workloads/Software
+B Quantum/Cloud
+C Memory/Photonics/Interconnect
+D Devices/Fabrication/Packaging
+E Biomass/Materials/Energy/Infrastructure
+F Economics/Evidence/Integration
+        -> one Integration Gate -> tests/evidence/cost -> GitHub sync
+```
+
+This bootstrap rule is permanent under **INV-018**, so a future chat/session can reconstruct the working method directly from the repository even without access to earlier conversation history.
