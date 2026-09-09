@@ -119,3 +119,13 @@ Functional replacement of GPUs by a future QPU-like system is not ruled out as a
 Current quantum platforms are predominantly hybrid rather than GPU-replacing. This repository intentionally explores a stronger long-horizon architecture: replacing the **functional role** of the GPU while still permitting classical control electronics.
 
 See `REFERENCES.md`.
+
+
+## Permanent Master Strategy — Kanusanan Pongpanna Model
+
+Every compliant project version must preserve and reference the complete strategic master plan:
+
+- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — complete staged strategy, multilingual public document links, AI-agent/Local-AI context, biomass-to-future-industry pathway, future-city/industry vision, and its integration with UQPU/UQCS.
+- **[STRATEGIC_PLAN_REFERENCES.md](STRATEGIC_PLAN_REFERENCES.md)** — compact permanent multilingual reference index.
+
+**Progress-update rule:** every meaningful research/release cycle must keep these master references present and preserve all multilingual source links. Scientific/technical/economic claims remain subject to independent evidence verification.
