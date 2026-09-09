@@ -8,8 +8,8 @@ The permanent Kanusanan Pongpanna Model and multilingual references remain strat
 ## Operating principle: many lanes, one scoreboard
 Do not run the project as dozens of unrelated projects. Run **6 parallel lanes** that share one input contract, one result contract, one priority queue and one integration gate.
 
-### Lane A — Workloads & software
-Owns GPU/CPU workload contracts, Semantic IR, compiler/runtime, algorithms, benchmarks and output correctness.
+### Lane A — Workloads & software — PRIMARY LANE
+Owns CPU/GPU/RAM/VRAM/storage functional contracts, Semantic IR, compiler/runtime, quantum algorithm reformulation, state/data representation, workload decomposition, benchmarks and output correctness. This is the highest-priority execution lane because the primary strategy is to make existing cloud QPUs perform classical-system roles through programming.
 
 ### Lane B — Quantum & cloud
 Owns QPU modalities, QEC, logical/physical resources, provider adapters, provider surveillance and real/simulated execution evidence.
@@ -17,8 +17,8 @@ Owns QPU modalities, QEC, logical/physical resources, provider adapters, provide
 ### Lane C — Memory, photonics & interconnect
 Owns VRAM/HBM/RAM/storage replacement or avoidance, photonics, networking, chiplet/interconnect bandwidth and data-movement reduction.
 
-### Lane D — Devices, fabrication & packaging
-Owns quantum/photonic/semiconductor devices, lithography, complete fab flow, yield, packaging, reliability and manufacturability.
+### Lane D — Devices, fabrication & packaging — SECONDARY/ESCALATION LANE
+Owns quantum/photonic/semiconductor devices, lithography, complete fab flow, yield, packaging, reliability and manufacturability. Lane D is activated aggressively only when Lane A/B/C/F produce a documented blocker showing that existing cloud hardware/software cannot meet the required functional or economic target.
 
 ### Lane E — Biomass, materials, energy & infrastructure
 Owns Pangola/agricultural-residue feedstocks, functional material substitution/minimization/recovery, power, cooling and data-center infrastructure.
@@ -82,8 +82,8 @@ Priority ~= (functional-coverage gain
 
 Do not pretend this heuristic is a measured scientific quantity. It is a project-management rule.
 
-### P0 — integration blockers
-Anything preventing a complete workload path, test, evidence classification or cost calculation.
+### P0 — software/cloud execution blockers
+Anything preventing a complete programming-first path from a CPU/GPU/RAM/VRAM/storage workload contract through semantic transformation, provider-neutral lowering, cloud-QPU execution/simulation, output validation and cost/useful-task measurement.
 
 ### P1 — economic bottlenecks
 Largest contributors preventing >=100x cost/task.
@@ -168,3 +168,21 @@ A cycle is complete only when:
 - GitHub is synchronized.
 
 This operating system replaces ad-hoc expansion with coordinated parallel research: **six lanes, one contract, one scoreboard, one integration gate, one mission.**
+
+
+## Software-first escalation ladder
+
+Every workload must follow this order before custom hardware becomes a primary solution:
+
+1. Define the useful classical workload contract.
+2. Remove unnecessary classical implementation assumptions.
+3. Reformulate mathematically/semantically for quantum, analog, annealing, photonic or hybrid execution.
+4. Reduce input/state-loading and output-materialization requirements.
+5. Lower through provider-neutral IR.
+6. Try compatible current cloud providers/simulators.
+7. Validate application output/quality.
+8. Measure total provider + host + I/O + retry + decoding cost/useful-task.
+9. Optimize algorithm/runtime/provider selection.
+10. Only if a documented blocker remains, escalate to hardware/device/fabrication research.
+
+This ladder is the default research order in every daily cycle and every new chat/session.
