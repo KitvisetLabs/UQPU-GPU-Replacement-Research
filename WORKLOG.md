@@ -476,3 +476,30 @@ Cloud headline prices are verified snapshot inputs, but a cheaper route in the c
 
 The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
 GitHub synchronization completed.
+
+
+### Cloud-vs-owned crossover sensitivity and uncertainty
+Extended Lane B/F deployment economics from a single-scenario comparator into a crossover/sensitivity framework.
+
+Current official pricing anchors were rechecked against IBM, Amazon Braket and Microsoft Azure Quantum primary sources. The existing September 2026 snapshot remains consistent with current published headline pricing used by the repository.
+
+Implemented:
+- `uqpu.economic_sensitivity`
+- utilization sweeps
+- CAPEX sweeps
+- automatic route-transition detection
+- explicit FX conversion object requiring currencies, rate, date and provenance
+- low/central/high cost envelopes
+- robust classifications: ROBUST_CLOUD, ROBUST_OWNED, UNCERTAIN_OVERLAP
+- six unit/regression tests
+- `docs/ECONOMIC_CROSSOVER_SENSITIVITY.md`
+- RG-013 for empirically calibrated uncertainty distributions
+
+Research implication:
+A central MODEL_ONLY estimate is no longer sufficient to recommend cloud or owned hardware. If uncertainty intervals overlap, the correct classification is uncertain rather than forcing a winner.
+
+Evidence boundary:
+Provider headline pricing is official-source snapshot data. Owned hardware parameters and the first uncertainty ranges remain MODEL_ONLY until measured UQCS/prototype data exist.
+
+The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
+GitHub synchronization completed.
