@@ -126,3 +126,27 @@ Next iteration:
 - measured GPU baseline ingestion
 - literature-backed algorithm-specific resource models
 - QEC model alternatives and calibration hooks
+
+
+### Multi-provider quantum cloud portability becomes a core requirement
+Expanded UQPU from a provider-agnostic research concept into a market-aware cloud execution architecture.
+
+Implemented:
+- provider registry
+- active / preview / announced / retired lifecycle states
+- paradigm classification: gate model, analog, annealing, photonic, hybrid
+- capability negotiation
+- provider adapter interface
+- initial market registry covering IBM Quantum, Amazon Braket, Azure Quantum, IonQ, Rigetti QCS, D-Wave Leap, IQM Resonance, Quantinuum Nexus, Pasqal Cloud, QuEra/Bloqade, Quandela Cloud and OQC Cloud
+- preview tracking for Quantum Circuits on Azure
+- cloud-compatibility tests
+- documentation defining CLOUD-L0 through CLOUD-L5 validation maturity
+
+Market surveillance rule:
+At every development cycle, check official provider/cloud documentation for new providers, hardware targets, previews, retirements, SDK/API changes and pricing/access changes. Update registry and adapter plans accordingly.
+
+Economic rule:
+A cloud connection is not considered strategically successful merely because execution works. Every real-QPU integration should progress toward a measured GPU-vs-QPU cost/task benchmark, targeting at least 100× lower cost/task and up to 100,000,000× as a workload-specific moonshot.
+
+Current status:
+Provider registry entries are architecture metadata. Real paid QPU submission adapters are not yet enabled by default and will require credentials/budget plus provider-specific validation.
