@@ -385,3 +385,24 @@ Preservation enforcement:
 The permanent master strategy/reference set was preserved for this cycle.
 
 GitHub synchronization completed for this preservation update.
+
+
+### Research workflow simplified for coordinated parallel execution
+Reorganized the growing UQCS program into a simpler operating model: **six parallel lanes, one task contract, one scoreboard, one integration gate, one mission**.
+
+The six lanes consolidate the previous workstreams into workloads/software; quantum/cloud; memory/photonics/interconnect; devices/fabrication/packaging; biomass/materials/energy/infrastructure; and economics/evidence/integration.
+
+Added:
+- common READY/ACTIVE/BLOCKED/DONE status contract
+- P0-P4 priority system
+- mission-impact priority heuristic
+- five-question integration gate
+- minimal daily batch
+- weekly system-integration review
+- shared project scoreboard
+- anti-complexity rules
+- explicit fallback to sequential lane execution when independent agents are unavailable
+
+This reduces coordination overhead without deleting any research scope. Failed work still enters RESEARCH_GAPS with unlock criteria. The permanent Kanusanan Pongpanna master strategy and multilingual references remain preserved.
+
+GitHub synchronization completed for this workflow-reorganization cycle.
