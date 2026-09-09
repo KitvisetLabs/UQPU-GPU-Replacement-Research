@@ -17,8 +17,8 @@ Owns QPU modalities, QEC, logical/physical resources, provider adapters, provide
 ### Lane C — Memory, photonics & interconnect
 Owns VRAM/HBM/RAM/storage replacement or avoidance, photonics, networking, chiplet/interconnect bandwidth and data-movement reduction.
 
-### Lane D — Devices, fabrication & packaging — SECONDARY/ESCALATION LANE
-Owns quantum/photonic/semiconductor devices, lithography, complete fab flow, yield, packaging, reliability and manufacturability. Lane D is activated aggressively only when Lane A/B/C/F produce a documented blocker showing that existing cloud hardware/software cannot meet the required functional or economic target.
+### Lane D — Devices, fabrication & packaging — CONTINUOUS PARALLEL LANE
+Owns quantum/photonic/semiconductor devices, lithography, complete fab flow, yield, packaging, reliability and manufacturability. Lane D runs continuously in parallel and must show ongoing progress. It receives lower scheduling priority than quantum programming when resources conflict, but it is never suspended. Documented software/cloud blockers may raise its urgency.
 
 ### Lane E — Biomass, materials, energy & infrastructure
 Owns Pangola/agricultural-residue feedstocks, functional material substitution/minimization/recovery, power, cooling and data-center infrastructure.
@@ -186,3 +186,7 @@ Every workload must follow this order before custom hardware becomes a primary s
 10. Only if a documented blocker remains, escalate to hardware/device/fabrication research.
 
 This ladder is the default research order in every daily cycle and every new chat/session.
+
+
+## Parallel-progress rule
+Quantum programming/cloud-QPU execution is Priority #1, while ALL lanes remain active. Every research cycle should advance Lane A as the primary lane and also advance or explicitly review the remaining lanes so that hardware, photonics, fabrication, memory/storage, biomass/materials, energy/infrastructure and economics/evidence continue accumulating useful results. Priority means emphasis, not exclusivity.
