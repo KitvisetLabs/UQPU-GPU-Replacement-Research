@@ -8,7 +8,7 @@ The internal process does **not** need to imitate GPU microarchitecture.
 
 The permanent target is:
 
-1. **GPU Functional Replacement** — cover the full application-level workload domain of GPUs.
+1. **GPU + Accelerator-Memory Functional Replacement** — cover the full application-level workload domain of GPUs while also targeting the functional/economic roles of VRAM/HBM and reducing dependence on large host RAM where possible.
 2. **Quantum Cloud Portability** — users of this repository should be able to connect UQPU software to the broadest practical set of quantum cloud providers through provider adapters.
 3. **Economic Supremacy Research Target** — pursue at least **100× lower total cost per useful completed task** than a competitive market GPU baseline, with a workload-specific moonshot target up to **100,000,000×**.
 4. **Open Development** — anyone may study, fork, adapt, extend and contribute according to the repository license and contribution rules.
@@ -64,12 +64,17 @@ Documentation, examples, provider adapters and setup instructions should be suff
 ### INV-010 — Provider-market surveillance
 Every major development/release cycle must check both existing and newly appearing quantum-cloud providers and record meaningful changes.
 
+### INV-011 — Memory-system replacement scope
+The project must treat GPU-local VRAM/HBM and associated host-RAM/data-movement costs as part of the system-level replacement target. UQPU research must seek to reduce or eliminate large classical intermediate materialization where possible, while honestly retaining classical memory where required by input/output and control.
+
 ## Definition of Success
 
 The long-term project succeeds only when all three dimensions converge:
 
 ```text
-GPU functional coverage
+GPU + VRAM/HBM functional coverage
+        +
+Reduced host-RAM/data-movement burden
         +
 Quantum-cloud portability
         +
@@ -80,4 +85,4 @@ A connection to a QPU alone is not success.
 A simulated speedup alone is not success.
 A narrow quantum algorithm alone is not success.
 
-The target is an open system that can execute useful GPU-domain workloads through cloud quantum computers and demonstrate end-to-end economic value against competitive GPUs.
+The target is an open system that can execute useful GPU-domain workloads through cloud quantum computers and demonstrate end-to-end economic value against competitive GPU+VRAM/HBM+host-memory stacks.
