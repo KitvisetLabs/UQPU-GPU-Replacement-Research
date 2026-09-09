@@ -354,3 +354,12 @@
 ## 2026-09-09 — D076: Convert cross-lane interfaces into reusable schemas
 **Decision:** D/G and E research must use structured requirement/qualification templates when moving from concept to measurable engineering.
 **Reason:** Templates reduce ambiguity and make later automation/agent parallelization safer.
+
+
+## 2026-09-09 — D077: Freeze benchmark semantics with stable contract IDs
+**Decision:** Classical and quantum comparisons must share a canonical workload contract whose identity changes when benchmark semantics change.
+**Reason:** This prevents accidental advantage claims caused by comparing different instances, quality tolerances or objective definitions.
+
+## 2026-09-09 — D078: Use scalable seeded instances before provider execution
+**Decision:** Candidate optimization workloads require reproducible scalable instance generation before simulator or real-QPU economic comparisons.
+**Reason:** Tiny fixtures validate correctness but cannot establish realistic scaling or economics.
