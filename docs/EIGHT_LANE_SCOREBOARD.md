@@ -182,3 +182,18 @@ Measured CPU reference evidence exists, but small/medium are FEASIBLE only. No p
 | H | Article 009: compiler evidence and staged capital | STRATEGIC_RESEARCH | Evidence-based next integration gate |
 
 Full report: [Batch 012](BATCH_012_QAOA_PROGRAMMING_AND_SIMULATION.md). No REAL_QPU, GPU replacement or ≥100× claim.
+
+
+## Batch 013
+| Lane | Advance / reviewed blocker | Evidence | Next gate |
+|---|---|---|---|
+| A | Independent Qiskit circuit probabilities agree | SIMULATION | Finite-shot/noisy quality |
+| B | QASM parsed, no provider jobs | SDK_VERIFIED / DRY_RUN_ONLY | Target ISA/calibration |
+| C | Terminal readout permutation decoded | TESTED SOFTWARE | Provider result schema |
+| D | Synthetic small-tier CX grows 166→1,043 | COMPILER EXPERIMENT | Actual coupling/calibration |
+| E | Routing overhead enters energy accounting requirements | DATA_BLOCKED | Equal-quality measured energy |
+| F | Pinned SDK, hashes and CI gate | REPRODUCIBLE SIMULATION | RG-024 + competitive baseline |
+| G | D routing demand linked to calibration/metrology | ENGINEERING_FRAMEWORK | Numeric capability evidence |
+| H | Article 009 software gate updated | STRATEGIC_RESEARCH | Next evidence-based experiment |
+
+See [Batch 013](BATCH_013_INDEPENDENT_SDK_AND_ROUTING.md); no hardware or economic win claimed.

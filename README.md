@@ -224,3 +224,8 @@ Quantum programming remains **Priority #1** across the full A–H program.
 - [Lane H Article 009: compiler evidence and staged capital](docs/LANE_H_ARTICLE_009_COMPILER_EVIDENCE_AND_CAPITAL.md)
 
 The new path is verified on ideal 3/6/8-qubit simulations; 32/128/512-variable circuits are inspection-only. Real-QPU advantage, >=100× cost reduction and full CPU/GPU/memory/storage replacement remain unproven.
+
+
+## Batch 013 — independent SDK and routing verification
+
+[Qiskit cross-check report](docs/BATCH_013_INDEPENDENT_SDK_AND_ROUTING.md) and [raw results](benchmarks/results/batch013-qiskit-crosscheck.json): bounded fixture probabilities agree within 1.4e-16 after readout decoding. A synthetic 32-qubit line-routing experiment increases CX from 166 to 1,043. This is simulator/compiler evidence, not real-QPU performance.

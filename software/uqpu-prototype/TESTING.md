@@ -59,3 +59,7 @@ Verification maturity ladder:
 Current local suite: **142 tests, 141 passed, one optional OR-Tools availability test skipped**. Ten new tests independently verify QUBO/Ising energy semantics, two-layer QAOA state evolution, global phase, normalization, sampling, provider inspection and allocation limits. The historical counts above describe earlier releases.
 
 Reproduce the experiment with `PYTHONPATH=. python examples/run_qaoa_verification.py --output /tmp/qaoa-verification.json`. This runs ideal CPU simulation, not a QPU benchmark.
+
+
+## Batch 013 (2026-09-09)
+SDK environment: **145 tests, 144 passed, one OR-Tools skip**. Core environment: **145 tests, 141 passed, four optional skips**. Three new SDK tests cover reordered measurement, rejection of unsupported measurement patterns and bounded state allocation. The dedicated CI job parses the committed Batch 012 payloads, compares independent probabilities and tests synthetic routing. See `verification-optional-requirements.txt` and `examples/run_qiskit_crosscheck.py`.

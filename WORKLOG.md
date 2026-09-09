@@ -836,3 +836,18 @@ Validation: full local suite 142 tests, 141 passed and one optional OR-Tools ava
 Updated the existing enabled daily research automation, preserving its approximately 08:00 Asia/Bangkok schedule, to require source searches on every cycle and publication at each validated milestone; relevant Gmail notifications are checked against GitHub. No extra automation was created.
 
 Priority #1, all eight lanes A–H, multilingual master references and evidence boundaries were preserved. Research was integrated sequentially. No paid QPU execution, quantum advantage or >=100× result is claimed.
+
+
+### Eight-Lane Research Batch 013 — independent SDK and routing
+Published Batch 012 as commit 9b6fc08a364f8dc05ad3d219e6c4cb2c28a1b3be. Its own GitHub Actions run 34377624850 completed successfully. Publication used the authenticated GitHub connector after command-line push lacked credentials; the published tree matched the locally tested tree exactly.
+
+A/B: Qiskit 2.5.2 and importer 0.6.0 independently parsed and simulated three 3/6/8-qubit circuits under each of three provider inspection labels. Nine fixture comparisons agree within 1.4e-16, including synthetic routing. All nine larger-tier payloads parse; they are not QPU-executed.
+C: terminal readout permutations now decode to original classical bit ordering with rejection of unsupported partial/dynamic measurement.
+D/G: synthetic line routing of the existing small contract changes 166 CX to 1,043 and depth 66 to 352. This is topology/compiler evidence, not calibration or fabricated hardware.
+E: reviewed gate overhead as an input to future equal-quality energy accounting; no energy/material claim.
+F: pinned optional SDK environment, source/input hashes, raw result artifact and dedicated CI cross-check job. SDK suite 145 tests: 144 passed, one OR-Tools test skipped; core suite 141 passed and four optional tests skipped.
+H: Article 009 updated with SDK-gate evidence and remaining spending/measurement decisions.
+
+Research sources: official Qiskit QASM3 API and IBM QAOA workflow; inspected correlation-encoding paper abstract/journal metadata without promoting external claims to UQPU measurements.
+
+Priority #1, all eight lanes A–H, multilingual master references and evidence boundaries were preserved. The next gate is frozen-circuit finite-shot/noise sensitivity and calibrated target routing. No paid job, REAL_QPU, quantum advantage or >=100× result is claimed.

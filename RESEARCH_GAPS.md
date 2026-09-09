@@ -273,3 +273,9 @@ This satisfies the environment/provenance portion of RG-025 but not the proof-qu
 **Next experiment:** tiny bounded noiseless comparison, followed by shot noise and reachable-quality investigation.
 **Dependencies:** A/C/F and RG-026; no hardware fabrication prerequisite.
 **Review trigger:** independent circuit verification completed.
+
+
+## RG-026 update — independent SDK gate passed on bounded fixtures
+Batch 013 Qiskit parsing/statevector verification agrees with Batch 012 to <1.4e-16 on the three selected fixtures, including synthetic routing and decoded measurement layout. Larger tier payloads parse successfully.
+**Remaining blocker:** actual provider acceptance, calibrated noise/routing, finite-shot quality and authorized QPU evidence. Synthetic line routing of small grows CX 166→1,043; no physical-duration or cost ratio follows.
+**Next experiment:** frozen-circuit finite-shot/noise sensitivity, followed by target-specific calibration.

@@ -25,3 +25,7 @@ Let an experiment have a bounded cost B and let its possible outcomes change whe
 For the next software experiment, list two outcomes: an alternative encoding preserves decoded quality within the chosen evaluation/shot budget, or it fails that contract. Success unlocks a noisy/target-specific test; failure retains the direct encoding and identifies which overhead dominates. Neither outcome automatically unlocks a factory or proves that biomass revenue will finance later stages.
 
 The publication gate is evidence, not optimism: release the input, code, result, negative finding and next criterion together. The value of this batch is a smaller, testable uncertainty about programming existing QPUs. The original ≥100× goal and workload-specific 100,000,000× moonshot remain research targets.
+
+
+## Batch 013 follow-up
+Independent Qiskit simulation now closes the first SDK-equivalence gate on the tested circuits. Synthetic topology routing exposes a concrete next uncertainty: the 32-qubit small-tier circuit requires 1,043 CX on the chosen line model versus 166 before routing. The next research effort should compare calibrated topology/noise and decoded quality. This observation does not support a factory purchase, generic provider ranking or an energy-savings estimate; it improves the specification of the next bounded experiment.

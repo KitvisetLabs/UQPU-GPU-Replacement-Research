@@ -430,3 +430,12 @@
 ## 2026-09-09 — D093: Research alternative encodings under original-output contracts
 **Decision:** Evaluate Pauli correlation encoding as a candidate with equal total evaluation/shot accounting, original-objective decoding and competitive reference comparison.
 **Reason:** Qubit-count compression can transfer cost into optimization, measurement and decoding; it is not generic quantum RAM.
+
+
+## 2026-09-09 — D094: Verify serialized circuits with an independent SDK
+**Decision:** Keep Qiskit verification in an optional pinned Python 3.12 environment and CI job; compare probabilities from serialized QASM against the original simulator.
+**Reason:** Independent parsing/state evolution reduces shared implementation-error risk without adding a provider SDK to the core runtime.
+
+## 2026-09-09 — D095: Decode routed measurement layout before comparing quality
+**Decision:** Reconstruct classical output order from explicit terminal measurement maps and reject partial/dynamic layouts in this bounded verifier. Label synthetic routing separately from provider calibration.
+**Reason:** Routing changes qubit placement and can inflate gate count; a raw physical basis index is not automatically the original variable assignment.

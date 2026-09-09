@@ -1,0 +1,12 @@
+# Batch 013 tested optional SDK environment: Python 3.12, Linux x86_64.
+# Install in an isolated environment; these are not core runtime dependencies.
+antlr4-python3-runtime==4.13.2
+dill==0.4.1
+numpy==2.5.3
+openqasm3==1.0.1
+qiskit==2.5.2
+qiskit-qasm3-import==0.6.0
+rustworkx==0.18.1
+scipy==1.18.1
+stevedore==5.9.1
+typing_extensions==4.16.0
