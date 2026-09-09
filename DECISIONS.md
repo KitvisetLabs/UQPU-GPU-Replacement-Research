@@ -386,3 +386,16 @@
 ## 2026-09-09 — D083: Execution success is not output-quality acceptance
 **Decision:** A benchmark runner may record that execution completed, but accepted=true must ultimately be derived from a contract quality check against a defensible reference/bound.
 **Reason:** Conflating process success with solution quality would create false benchmark wins.
+
+
+## 2026-09-09 — D084: Require a reference certificate before benchmark acceptance
+**Decision:** Tier runner artifacts default to accepted=false unless the workload contract is paired with a matching objective reference certificate.
+**Reason:** This implements D083 in code and prevents execution success from being mistaken for solution-quality success.
+
+## 2026-09-09 — D085: Distinguish best-known feasible values from proof-quality references
+**Decision:** BEST_KNOWN_FEASIBLE may support comparison but cannot produce verified-quality status; EXACT_OPTIMUM or a valid PROVEN_LOWER_BOUND is required for certified minimization-gap evidence.
+**Reason:** A feasible incumbent is not a proof of distance from the true optimum.
+
+## 2026-09-09 — D086: Compare materials on functional units
+**Decision:** Lane E cost comparisons must normalize to the delivered function and reliability requirement rather than feedstock mass price alone.
+**Reason:** Processing, loading, durability and replacement frequency can reverse apparent raw-material savings.
