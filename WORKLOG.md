@@ -734,3 +734,9 @@ H:
 - published Article 004 on the option value of software-first quantum research before irreversible deep-tech CAPEX.
 
 Evidence boundary: the new greedy solver is not a competitive GPU baseline. No quantum advantage or >=100x claim is made.
+
+
+### Eight-Lane Research Batch 006 — benchmark tiers
+Converted scalable optimization generation into explicit small/medium/large research tiers and preserved measurement provenance requirements. Selected the first Lane D/G co-design target and published Lane H Article 005.
+
+Scientific boundary: tier sizes are research starting points. They do not establish industrial representativeness, QPU capacity, quantum advantage or >=100x economics. Competitive CPU/GPU measurement remains required.
