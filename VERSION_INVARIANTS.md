@@ -37,3 +37,5 @@ The repository includes an automated policy test that checks for the presence of
 | INV-019 | Software/programming-first use of current cloud QPUs is the primary execution strategy | Yes |
 | INV-020 | Replace CPU/GPU/RAM/VRAM/storage by application outcome, not classical internal mechanism | Yes |
 | INV-021 | Attempt software/cloud path to >=100x economics before escalating to new hardware | Yes |
+
+| INV-022 | Quantum programming is Priority #1 while all established research lanes continue progressing in parallel | Yes |
