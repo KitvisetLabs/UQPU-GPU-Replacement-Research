@@ -302,3 +302,12 @@
 
 ## 2026-09-09 — D064: Every cycle explicitly recognizes A–H
 **Decision:** Every research/daily cycle must inspect all eight lanes. Lane A remains Priority #1; B–H continue progress in parallel.
+
+
+## 2026-09-09 — D065: Require an artifact or explicit reviewed status from every lane in integrated batches
+**Decision:** Integrated A–H research batches should produce a concrete artifact, tested model, evidence update or explicit blocker/review result for every lane.
+**Reason:** The eight-lane architecture should create measurable progress rather than merely exist as an organizational diagram.
+
+## 2026-09-09 — D066: Make the first verified cloud-QPU workload win the primary cross-lane milestone
+**Decision:** The highest-value near-term integration milestone is a reproducible workload contract carried from classical baseline through current cloud-QPU/hybrid execution to validated output and total cost/useful-task.
+**Reason:** This is the shortest evidence path from software architecture toward the original functional/economic mission.
