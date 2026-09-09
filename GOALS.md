@@ -2,7 +2,36 @@
 
 ## North-star goal
 
-Create a new **Universal Quantum Processing Unit (UQPU)** whose internal process does not need to resemble a GPU, but whose external capabilities can satisfy every major objective currently served by GPUs.
+Create a **Universal Quantum Processing Unit (UQPU)** software/hardware architecture whose internal process can differ fundamentally from a GPU, while covering the full functional workload domain currently served by GPUs.
+
+## Mandatory cloud goal
+
+The UQPU software must run across the broadest practical set of **quantum cloud computers from multiple providers**.
+
+Provider lock-in is not acceptable.
+
+The software must continuously track:
+- existing quantum cloud providers;
+- newly launched providers;
+- new hardware targets from existing providers;
+- preview/announced targets;
+- retired targets;
+- SDK/API changes;
+- pricing and access changes.
+
+## Execution objective
+
+For every workload:
+
+```text
+UQPU workload
+  -> provider discovery
+  -> capability match
+  -> provider-specific lowering
+  -> cloud QPU execution
+  -> normalized result
+  -> GPU comparison
+```
 
 ## Functional goal
 
@@ -18,35 +47,42 @@ UQPU must ultimately cover:
 - data analytics
 - general-purpose parallel compute
 - optimization/search
-- arbitrary kernel fallback
+- arbitrary-kernel fallback
 
 ## Economic goal
 
 Primary target: **at least 100× lower total cost per useful completed task than a competitive GPU implementation.**
 
-Moonshot target: **up to 100,000,000× lower cost/task** for workload classes where quantum algorithms and hardware economics make this possible.
+Moonshot target: **up to 100,000,000× lower cost/task** for workload classes where quantum algorithms, provider economics and hardware characteristics make this physically achievable.
+
+For cloud execution, total cost includes provider billing, shots, reservations, retries, classical orchestration, error mitigation/QEC, data transfer and output reconstruction.
 
 ## Design principles
 
 1. Same goal/output, different internal process is allowed.
 2. Functional equivalence matters more than instruction compatibility.
 3. Semantic compilation is preferred over instruction translation.
-4. Quantum-native execution is preferred when beneficial.
-5. Reversible deterministic execution exists as a fallback.
-6. End-to-end accounting includes input, state preparation, QEC, measurement and output.
-7. CPU/control electronics are allowed; GPU dependency is not.
-8. Claims must be benchmarked and falsifiable.
-9. Cost targets are goals, not assumed outcomes.
-10. The project must preserve negative results and unresolved barriers.
+4. Provider-specific SDKs stay behind adapters.
+5. Capability negotiation is mandatory.
+6. Quantum-native execution is preferred when beneficial.
+7. Reversible deterministic execution exists as a fallback.
+8. End-to-end accounting includes input, state preparation, QEC, measurement and output.
+9. CPU/control electronics are allowed; GPU dependency is not.
+10. Claims must be benchmarked and falsifiable.
+11. Cost targets are goals, not assumed outcomes.
+12. Negative results and provider incompatibilities must be recorded.
+13. Provider discovery is continuous, not a one-time survey.
 
 ## Success definition
 
-A workload is functionally replaced when no GPU is required and the UQPU produces an accepted result under the workload's output contract.
+A workload is functionally replaced when no GPU is required in the validated execution path and the UQPU produces an accepted result.
+
+A cloud provider reaches integration success when it progresses through adapter/dry-run/simulator/real-QPU validation.
 
 A workload is economically surpassed when:
 
 [
-C_{GPU/task}/C_{UQPU/task} ge 100
+C_{GPU/task}/C_{UQPU-cloud/task} ge 100
 ]
 
-The long-term program succeeds only when broad functional coverage and strong economic advantage converge.
+The long-term program succeeds only when broad GPU functional coverage, broad quantum-cloud portability and strong economic advantage converge.
