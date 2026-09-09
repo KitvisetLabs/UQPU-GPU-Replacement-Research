@@ -578,3 +578,7 @@ Important boundary:
 This does not claim current cloud QPUs can already replace all classical resources. It changes the research ORDER: first exhaust credible software/programming transformations on existing quantum cloud hardware, measure real functional/economic gaps, then escalate to hardware research only when justified.
 
 The permanent Kanusanan Pongpanna master strategy/reference set, GitHub canonical-memory rule and six-lane operating system were preserved.
+
+
+### Parallel-research priority hardened
+Clarified the software-first mission rule to prevent an unintended interpretation that secondary lanes should wait for software blockers. Quantum programming remains Priority #1, while every established research lane must continue producing progress concurrently. Added INV-022 and updated the Research OS, mission map and README. Hardware, photonics, fabrication, memory/storage, biomass/materials, energy/infrastructure and economics/evidence remain continuously active and feed results back into the primary software/cloud-QPU path.
