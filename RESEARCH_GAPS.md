@@ -214,3 +214,10 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Blockers:** optional solver dependency is not installed in default CI; measured execution requires a benchmark environment with hardware provenance.
 **Unlock criteria:** artifact files recording solver version, contract ID, runtime, objective/quality and hardware context for all selected tiers.
 **Next experiment:** install benchmark-optional requirements in a dedicated benchmark job or controlled local/cloud runner and execute the tier manifest.
+
+
+## RG-023 — Reference objectives/bounds for tier acceptance
+**Status:** OPEN
+**Objective:** Establish defensible reference objectives or bounds for the versioned small/medium/large MaxCut contracts so acceptance is computed rather than assumed.
+**Unlock criteria:** each tier has a provenance-bearing reference/bound and the artifact acceptance flag is derived from OptimizationBenchmarkContract.accepts.
+**Next experiment:** use the optimized classical solver path to establish or bound tier objectives, starting with small and medium.
