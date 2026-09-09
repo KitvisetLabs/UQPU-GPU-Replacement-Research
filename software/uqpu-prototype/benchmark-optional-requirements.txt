@@ -1,3 +1,4 @@
 # Optional dependencies for competitive benchmark work.
-# Core UQPU remains dependency-light.
-ortools
+# Kept outside the core runtime.
+# Pinned for reproducible Batch-011 GitHub-hosted reference runs.
+ortools==9.14.6206
