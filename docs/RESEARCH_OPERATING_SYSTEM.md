@@ -190,3 +190,12 @@ This ladder is the default research order in every daily cycle and every new cha
 
 ## Parallel-progress rule
 Quantum programming/cloud-QPU execution is Priority #1, while ALL lanes remain active. Every research cycle should advance Lane A as the primary lane and also advance or explicitly review the remaining lanes so that hardware, photonics, fabrication, memory/storage, biomass/materials, energy/infrastructure and economics/evidence continue accumulating useful results. Priority means emphasis, not exclusivity.
+
+
+### Lane G — Quantum Chip Manufacturing Equipment & Software — CONTINUOUS PARALLEL LANE
+Owns the complete manufacturing-tool stack needed to produce quantum-processing chips of all relevant modalities: DUV/EUV and alternative lithography; deposition; etch; implantation/doping where applicable; cleaning; masks; wafer/substrate handling; metrology and defect inspection; process-control software; EDA/TCAD/process simulation; automation and robotics; cryogenic/electrical/optical characterization; photonic fabrication equipment; bonding, assembly, packaging and test; and future manufacturing methods.
+
+Lane G must co-design with Lane D. Lane D specifies device/chip/process/manufacturability requirements; Lane G develops the machines, tooling, software and production systems capable of realizing them.
+
+## Seven-lane cycle invariant
+Every daily/research cycle must explicitly inspect A, B, C, D, E, F and G. Lane A receives Priority #1 emphasis. The other six remain continuously active, receive research/review/progress tasks, and feed discoveries back into Lane A and the North-Star mission.
