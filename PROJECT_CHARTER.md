@@ -97,3 +97,10 @@ Hardware, photonic processors, semiconductor/process technology, packaging, cont
 
 ### INV-014 — Biomass and agricultural-residue materials strategy
 Pangola grass and broadly available agricultural residues remain a permanent low-cost renewable-feedstock research track for UQCS and future-technology supply chains. The project must investigate functional substitution, critical-material minimization, recovery/recycling and hybrid-material routes that can reduce dependence on expensive minerals/metals while preserving scientific constraints on elemental identity.
+
+
+### INV-015 — Complete chip-fabrication equipment and process scope
+UQCS research includes fabrication equipment and factory/process integration required for candidate semiconductor, photonic, quantum, memory, control and packaging devices. Lithography research may include mature optical, DUV, immersion, EUV at system/economic level, direct-write, e-beam, nanoimprint and future routes. The project must co-optimize device architecture and fabrication economics rather than assume the most advanced lithography is required.
+
+### INV-016 — Parallel fabrication workstreams and integration review
+Fabrication research must maintain separable lithography, deposition, etch, doping, metrology, cleaning, photonics, quantum-device, packaging, materials, economics and automation workstreams with explicit interfaces. Findings must be integrated against the permanent end-to-end functional and economic objective.
