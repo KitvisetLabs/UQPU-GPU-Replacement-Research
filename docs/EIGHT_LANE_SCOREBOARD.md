@@ -122,3 +122,18 @@ The immediate operational gate is a green GitHub Actions run after the invariant
 | H | strategy remains linked through canonical project memory | STRATEGIC GOVERNANCE | next evidence-linked article |
 
 Immediate gate: RG-023 reference objectives/bounds, then measured optimized classical artifacts.
+
+
+## Batch 009
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | quality-reference certificates enforced in tier runner | TESTABLE SOFTWARE | certified small/medium references |
+| B | portable + D-Wave QUBO serialization | TESTABLE SOFTWARE | simulator/authorized annealing execution |
+| C | state/I/O remains part of same evidence path | GOVERNED EVIDENCE | measured transfer/memory |
+| D | device process-window requirement | ENGINEERING_FRAMEWORK | numeric window evidence |
+| E | functional-unit material cost rule | ENGINEERING/ECONOMIC FRAMEWORK | first sourced incumbent comparison |
+| F | proof-strength quality classification | TESTABLE SOFTWARE | measured reference certificates |
+| G | manufacturing process-window response rule | ENGINEERING_FRAMEWORK | capability distribution/metrology data |
+| H | Article 007: reference certificates for strategy | STRATEGIC_RESEARCH | apply gates to first quantified stage |
+
+Immediate gate: RG-024 certified reference for small/medium contracts, then identical-contract simulator/cloud-QPU execution.
