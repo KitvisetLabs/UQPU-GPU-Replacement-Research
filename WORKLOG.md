@@ -406,3 +406,19 @@ Added:
 This reduces coordination overhead without deleting any research scope. Failed work still enters RESEARCH_GAPS with unlock criteria. The permanent Kanusanan Pongpanna master strategy and multilingual references remain preserved.
 
 GitHub synchronization completed for this workflow-reorganization cycle.
+
+
+### Cross-chat/session continuity hardened
+Promoted the six-lane Parallel Simple Mode from a working convention into permanent project memory.
+
+Implemented:
+- INV-018 in PROJECT_CHARTER.md and VERSION_INVARIANTS.md
+- README “Start Here” bootstrap sequence for every new chat, agent, automation or contributor
+- GitHub declared the canonical project memory rather than prior-chat memory
+- required startup reading order covering charter, invariants, operating system, master strategy, strategic references, research gaps, decisions and worklog
+- CI policy expansion to preserve the cross-session operating-system invariant
+
+Result: a new chat/session can reconstruct the current project mission, strategy and operating method from the repository before making changes.
+
+The permanent Kanusanan Pongpanna master strategy/reference set was preserved for this cycle.
+GitHub synchronization completed for this continuity update.
