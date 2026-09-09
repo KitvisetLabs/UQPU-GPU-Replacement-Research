@@ -180,3 +180,12 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Proposed experiments:** implement a small exact/heuristic combinatorial-optimization baseline and record hardware/runtime/cost assumptions.
 **Dependencies:** Lane A benchmark definition and Lane F economics.
 **Next review trigger:** first committed classical benchmark dataset.
+
+
+## RG-019 — Competitive optimization baseline implementation
+**Status:** NOT_YET_DEMONSTRATED / DATA_BLOCKED
+**Objective:** Advance the first optimization workload from a correctness fixture to a competitive CPU/GPU baseline suitable for economic comparison.
+**Current artifact:** exact tiny-QUBO fixture plus provenance capture.
+**Blockers:** optimized solver selection, representative instance corpus, measured CPU/GPU hardware, memory/energy accounting and normalized cost.
+**Unlock criteria:** reproducible Level-2 baseline over the same instance/quality contract used by the QPU path.
+**Next experiment:** add an established optimized classical solver and representative scalable instance generator before authorized real-QPU comparison.
