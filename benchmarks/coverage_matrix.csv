@@ -1,0 +1,15 @@
+domain,workload,functional_target,candidate_route,dominant_blocker,priority
+graphics,raster rendering,framebuffer,semantic scene generation/reversible fallback,classical output bandwidth,high
+graphics,ray tracing,same pixel output,amplitude estimation/quantum sampling,oracle construction + scene loading,high
+graphics,path tracing,converged image,quantum Monte Carlo,reconstruction and shots,high
+ai,inference,same prediction,QML/quantum linear algebra,state preparation,critical
+ai,training,equivalent trained quality,variational/quantum optimization,iteration and readout cost,critical
+compute,GEMM,same matrix or downstream task,quantum linear algebra/fallback,full dense output,critical
+hpc,linear solve,solution/observables,QLSA,conditioning + loading,critical
+hpc,eigenproblem,eigenvalues/observables,phase estimation/VQE,precision + QEC,critical
+hpc,Monte Carlo,bounded-error estimate,amplitude estimation,oracle implementation,critical
+data,sorting,ordered dataset,reversible sort/quantum subroutines,explicit output,medium
+data,search,same index/result,Grover-like search,oracle construction,high
+media,video encode,standard bitstream,quantum optimization + deterministic fallback,exact compliance,medium
+media,video decode,raw frames,reversible deterministic path,output bandwidth,medium
+general,arbitrary kernel,same output contract,reversible synthesis fallback,resource overhead,critical
