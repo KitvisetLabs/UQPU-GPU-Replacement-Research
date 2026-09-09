@@ -769,3 +769,28 @@ Optional OR-Tools integration creates a path to a stronger classical baseline bu
 A/F: connected the versioned small/medium/large MaxCut contracts to executable greedy and optional OR-Tools runners using the common benchmark artifact schema. Added regression tests for stable contract identity and deterministic objective under a fixed heuristic seed.
 
 Evidence correction: runner completion is not benchmark acceptance. Heuristic quality must be checked against a reference/bound under the contract before it can support a win claim.
+
+
+### Eight-Lane Research Batch 009 — reference certificates + QUBO routing
+A/F:
+- enforced that benchmark artifacts default to accepted=false without a matching quality reference;
+- added exact-optimum, proven-lower-bound and best-known-feasible reference certificate types with stable certificate IDs;
+- distinguished comparison acceptance from verified-quality evidence;
+- added regression tests for certificate semantics.
+
+B:
+- added provider-neutral QUBO serialization and the D-Wave QUBO payload convention used by the current DWaveLeapAdapter.
+
+C:
+- preserved the requirement that state/data measurements remain part of the same contract/artifact path before end-to-end advantage claims.
+
+D/G:
+- added a process-window contract: device-required windows must overlap controlled manufacturing capability, not merely nominal tool function.
+
+E:
+- added the functional-unit cost rule for biomass/material substitution; feedstock price/kg is not a sufficient economic comparison.
+
+H:
+- published Article 007 on applying reference certificates/evidence gates to strategic-plan progress.
+
+No paid QPU execution occurred. No quantum advantage or >=100x result is claimed.
