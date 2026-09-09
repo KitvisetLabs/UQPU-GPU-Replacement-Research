@@ -246,3 +246,16 @@
 ## 2026-09-09 — D051: Use mission-impact scoring to prioritize research effort
 **Decision:** Candidate work should be ranked by expected mission benefit divided by estimated effort, with P0/P1 blockers taking precedence.
 **Reason:** The fastest route to the original objective is reducing the highest-value uncertainty and cost/functional bottlenecks rather than maximizing raw activity.
+
+
+## 2026-09-09 — D052: Make vendor SDKs a strict adapter-only boundary
+**Decision:** Provider-specific SDK/API imports must remain inside concrete adapter modules; the semantic compiler and core execution model remain provider-neutral.
+**Reason:** This is required for broad cloud portability and prevents vendor SDK churn from propagating through UQCS core architecture.
+
+## 2026-09-09 — D053: Prefer aggregator routing when it reduces duplicated provider integration
+**Decision:** Hardware providers accessible through Amazon Braket or Azure Quantum may use the aggregator adapter as the primary UQPU production path, while direct adapters can be added when they provide meaningful capability/economic benefits.
+**Reason:** Shared authentication, billing and job lifecycle reduce duplicated integration code without changing the underlying target hardware.
+
+## 2026-09-09 — D054: Distinguish software readiness from real-QPU verification
+**Decision:** Adapter readiness must explicitly distinguish serialization/dry-run, simulator verification, implemented real-submit code, aggregator routing and real-QPU verified execution.
+**Reason:** A correct-looking integration cannot be claimed as verified hardware access without credentials, target availability, job evidence and result/cost validation.
