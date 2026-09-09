@@ -317,3 +317,31 @@ Current execution limitation:
 Independent parallel sub-agent orchestration is not exposed in the present execution environment, so workstreams are decomposed and integrated sequentially. This is recorded as RG-008 rather than represented as parallel execution.
 
 GitHub synchronization completed for this cycle.
+
+
+### Lithography route selector — first integrated fabrication execution
+Implemented the first executable fabrication-route decision layer.
+
+Current official-source research anchors:
+- ASML DUV remains a high-volume manufacturing workhorse and many layers can use less-advanced lithography more cost-effectively.
+- ASML public specifications anchor immersion DUV productivity/resolution classes.
+- ASML documents 0.33 NA EUV and 0.55 NA High-NA EUV capability classes; July 2026 reporting indicates High-NA use on selected Intel 18A production layers.
+- Canon documents a 14 nm minimum-linewidth nanoimprint platform and potential cost-of-ownership reduction for suitable use cases.
+- imec's 2026 patterning research emphasizes lithography + materials + etch + metrology + yield as an integrated problem.
+
+Implemented:
+- `uqpu.fabrication_routes`
+- route types for dry DUV, immersion DUV, low-NA EUV, High-NA EUV, nanoimprint and direct-write research
+- device process requirements for feature size, overlay, yield, throughput and maskless needs
+- explicit blocker reporting
+- normalized MODEL_ONLY route economics
+- least-modeled-cost feasible route selection
+- explicit failure when no route satisfies requirements
+- five regression/unit tests in `test_fabrication_routes.py`
+- `docs/CHIP_FABRICATION_RESEARCH.md`
+- RG-009 for missing calibrated fab economics
+
+Important limitation:
+The route selector's relative tool/process/yield economics are still MODEL_ONLY. GitHub Actions status was not yet available from the connector at the time this worklog entry was written, so the new test suite is committed for CI verification rather than reported as already passed.
+
+GitHub synchronization completed for this cycle.
