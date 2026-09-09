@@ -147,3 +147,14 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Current alternative:** provider-neutral lowering/dry-run; use supported partner/official access routes when available.
 **Unlock criteria:** official account credentials/configuration plus a documented supported submission endpoint/client version.
 **Next review trigger:** account access or updated public SDK/API documentation.
+
+
+## RG-016 — First verified workload win
+**Status:** NOT_YET_DEMONSTRATED
+**Objective:** Obtain the first reproducible workload where a current cloud-QPU/hybrid path satisfies a defined useful output contract and is compared end-to-end against a competitive classical baseline.
+**Blockers:** no credentialed QPU result/cost dataset yet; state preparation, retries, output reconstruction and provider cost must be measured.
+**Current alternative:** workload contracts, provider adapters, simulator/dry-run paths and cost models.
+**Unlock criteria:** one workload with reproducible classical baseline, authorized cloud execution, validated output quality and measured total cost/useful-task.
+**Proposed experiments:** start with combinatorial optimization and structured estimation candidates; simulator first; then smallest bounded cloud execution when credentials/consent exist.
+**Dependencies:** Lane A contracts, Lane B adapter verification, Lane C state accounting and Lane F benchmark economics.
+**Next review trigger:** simulator benchmark completion or credentialed cloud access.
