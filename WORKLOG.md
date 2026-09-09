@@ -556,3 +556,25 @@ Remote GitHub workflow status was not available through the connected status end
 
 The permanent Kanusanan Pongpanna master strategy/reference set, original mission gate and six-lane operating system were preserved.
 GitHub synchronization completed.
+
+
+### Mission priority clarified: software-first cloud-QPU replacement
+The project priority was corrected and hardened to match the original intended execution strategy.
+
+Primary strategy:
+Use programming, Semantic IR, quantum algorithms, workload reformulation, runtime orchestration and provider-neutral adapters to make CURRENT cloud quantum computers perform the useful functional roles of CPU, GPU, RAM, VRAM/HBM and persistent storage.
+
+Changes:
+- added INV-019 software-first cloud-QPU replacement priority
+- added INV-020 outcome-based replacement for compute/memory/storage roles
+- added INV-021 software/cloud-first economic path before hardware escalation
+- promoted Lane A to PRIMARY
+- reclassified Lane D hardware/fabrication as secondary escalation
+- changed P0 to software/cloud execution blockers
+- added mandatory software-first escalation ladder
+- updated original mission execution map and README
+
+Important boundary:
+This does not claim current cloud QPUs can already replace all classical resources. It changes the research ORDER: first exhaust credible software/programming transformations on existing quantum cloud hardware, measure real functional/economic gaps, then escalate to hardware research only when justified.
+
+The permanent Kanusanan Pongpanna master strategy/reference set, GitHub canonical-memory rule and six-lane operating system were preserved.
