@@ -169,3 +169,28 @@ Created `PROJECT_CHARTER.md` and `VERSION_INVARIANTS.md` so every future release
 Added automated invariant tests and expanded GitHub Actions triggers so edits to project charter/goals/cloud compatibility are tested alongside software changes.
 
 This converts the mission from informal documentation into a version-level repository policy.
+
+
+### GPU + VRAM/HBM + host-memory replacement scope
+Expanded the permanent UQPU mission beyond compute-only GPU replacement.
+
+New scope:
+- GPU compute function
+- accelerator-local VRAM/HBM function and economics
+- host RAM required to feed accelerator workloads
+- memory bandwidth and data movement
+- intermediate tensor/frame/simulation materialization
+- interconnect and memory-energy costs
+
+Implemented:
+- `docs/MEMORY_REPLACEMENT.md`
+- `uqpu.memory` memory-footprint and cost model
+- materialization-avoidance metric
+- memory unit tests
+- new permanent invariant INV-011
+- CI project-invariant coverage updated to include memory scope
+
+Architecture principle:
+The preferred route is not necessarily replacing HBM/DRAM bit-for-bit. The semantic compiler should seek to avoid creating large classical intermediate representations in the first place when a quantum/native computation can preserve state until the final useful observable/output.
+
+Economic comparison is expanded from GPU-only cost to the complete GPU + VRAM/HBM + host-memory/data-movement stack.
