@@ -15,6 +15,8 @@ Every UQPU release must preserve the following project-level guarantees in its d
 | INV-009 | External-user usability and documentation | Yes |
 | INV-010 | Continuous provider-market surveillance | Yes |
 | INV-011 | VRAM/HBM and host-memory/data-movement replacement scope | Yes |
+| INV-012 | CPU/storage/network/full-system research scope | Yes |
+| INV-013 | Hardware/photonics/device-physics research scope | Yes |
 
 ## Release rule
 
