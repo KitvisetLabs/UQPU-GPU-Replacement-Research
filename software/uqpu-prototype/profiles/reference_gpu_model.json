@@ -1,0 +1,11 @@
+{
+  "evidence_level": "MODEL_ONLY",
+  "name": "reference-gpu-model",
+  "capex_usd": 30000,
+  "lifetime_seconds": 94608000,
+  "utilization": 0.7,
+  "board_power_watts": 700,
+  "system_overhead_watts": 300,
+  "cooling_multiplier": 0.25,
+  "note": "Generic illustrative GPU economics profile. Replace with measured deployment data for research claims."
+}
