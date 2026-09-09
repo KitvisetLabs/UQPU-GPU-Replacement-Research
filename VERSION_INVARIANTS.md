@@ -14,6 +14,7 @@ Every UQPU release must preserve the following project-level guarantees in its d
 | INV-008 | Develop-test-inspect-improve loop | Yes |
 | INV-009 | External-user usability and documentation | Yes |
 | INV-010 | Continuous provider-market surveillance | Yes |
+| INV-011 | VRAM/HBM and host-memory/data-movement replacement scope | Yes |
 
 ## Release rule
 
