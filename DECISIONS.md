@@ -100,3 +100,19 @@
 **Decision:** As economic target tiers become more demanding, inverse-design constraints must tighten monotonically unless a model explicitly explains a non-monotonic physical effect.
 
 **Reason:** This is a useful software invariant and exposed a defect in the first utilization/yield implementation.
+
+
+## 2026-09-09 — D020: Make hardware gap analysis paradigm-aware
+**Decision:** Compare provider hardware only after matching computational paradigm and workload contract. Do not rank gate-model, analog, annealing or photonic systems by raw qubit count alone.
+
+**Reason:** A qubit count has different operational meaning across modalities and can create invalid conclusions about capability.
+
+## 2026-09-09 — D021: Unknown provider metrics must not be treated as success
+**Decision:** If a requirement needs a metric that a provider has not published or the snapshot has not verified, classify the field as unknown rather than passing the requirement.
+
+**Reason:** This prevents missing data from being converted into fabricated capability.
+
+## 2026-09-09 — D022: Separate roadmap targets from current hardware
+**Decision:** Future announced/roadmap systems can inform inverse design and strategic planning but cannot be used as evidence of currently executable cloud capability.
+
+**Reason:** Economic and functional claims must reflect hardware that actually exists and is accessible at the time of benchmarking.
