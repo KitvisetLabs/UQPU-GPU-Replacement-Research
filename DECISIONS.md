@@ -140,3 +140,12 @@
 ## 2026-09-09 — D027: Integrate parallel fab research through shared interfaces
 **Decision:** Maintain separate fab workstreams and periodically reconcile evidence, dependencies, bottlenecks, negative results and cost impact.
 **Reason:** Lithography alone cannot determine manufacturability; yield and system economics emerge from the integrated process.
+
+
+## 2026-09-09 — D028: Make unresolved limitations permanent research objects
+**Decision:** Every blocked, failed, infeasible or unsupported research path must be represented in a living research-gap backlog with an unlock path and next experiment.
+**Reason:** The project should accumulate negative knowledge instead of repeatedly rediscovering the same limitations.
+
+## 2026-09-09 — D029: Coordinate the project through explicit workstream interfaces
+**Decision:** Organize UQCS into compute/compiler, quantum/QEC, cloud, memory/storage, photonics, fabrication, packaging, biomass/materials, power/cooling, economics and evidence/integration workstreams.
+**Reason:** The mission is too cross-disciplinary for isolated optimization; each workstream must expose requirements, cost, dependencies and blockers to system integration.
