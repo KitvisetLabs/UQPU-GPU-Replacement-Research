@@ -41,3 +41,5 @@ The repository includes an automated policy test that checks for the presence of
 | INV-022 | Quantum programming is Priority #1 while all established research lanes continue progressing in parallel | Yes |
 
 | INV-023 | Permanent seven-lane architecture A–G; Lane A Priority #1 while all seven progress concurrently | Yes |
+
+| INV-024 | Permanent eight-lane architecture A–H; Lane H continuously researches/publishes the Ketskaew Chulamani / Kanusanan Pongpanna Model strategic plan | Yes |
