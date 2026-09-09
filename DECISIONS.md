@@ -45,3 +45,19 @@
 **Decision:** Generic hardware profiles and the first surface-code estimator are modeling tools only until calibrated against literature and hardware measurements.
 
 **Reason:** Prevents hypothetical parameters from being confused with vendor specifications or demonstrated quantum advantage.
+
+
+## 2026-09-09 — D010: Multi-provider quantum cloud portability is mandatory
+**Decision:** All UQPU software architecture must support multiple quantum cloud providers through adapters and capability negotiation.
+
+**Reason:** The research objective is to use available cloud QPUs as execution hardware without provider lock-in and to compare which cloud/device can best satisfy GPU-replacement workloads.
+
+## 2026-09-09 — D011: Continuously discover new quantum cloud providers
+**Decision:** Provider discovery is repeated during every development cycle. New, preview, announced and retired services are recorded rather than relying on a static provider list.
+
+**Reason:** Quantum cloud offerings change rapidly, and new hardware/providers may alter feasibility or economics.
+
+## 2026-09-09 — D012: Cloud execution must remain tied to the 100×–100M× economic objective
+**Decision:** A successful adapter connection alone is insufficient. Real cloud-QPU execution must ultimately be benchmarked against competitive GPU cost/task using complete provider and system costs.
+
+**Reason:** The primary project goal is functional GPU replacement with dramatic cost reduction, not merely quantum-cloud interoperability.
