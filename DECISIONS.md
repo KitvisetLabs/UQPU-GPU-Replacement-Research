@@ -381,3 +381,8 @@
 ## 2026-09-09 — D082: Keep competitive solver dependencies optional
 **Decision:** Established benchmark solvers such as OR-Tools belong in an optional benchmark dependency set rather than the UQPU core runtime.
 **Reason:** Provider/runtime portability should not require heavyweight classical benchmark packages, while evidence work still needs credible competitor solvers.
+
+
+## 2026-09-09 — D083: Execution success is not output-quality acceptance
+**Decision:** A benchmark runner may record that execution completed, but accepted=true must ultimately be derived from a contract quality check against a defensible reference/bound.
+**Reason:** Conflating process success with solution quality would create false benchmark wins.
