@@ -55,3 +55,12 @@ For every workload investigate:
 10. failure/retry reduction
 
 The 100× minimum target and 10^8× moonshot target must be tested through this full stack.
+
+
+## Parallel Simple Mode
+The canonical coordination method is defined in `docs/RESEARCH_OPERATING_SYSTEM.md`.
+
+All research is grouped into six lanes:
+A) workloads/software; B) quantum/cloud; C) memory/photonics/interconnect; D) devices/fabrication/packaging; E) biomass/materials/energy/infrastructure; F) economics/evidence/integration.
+
+All lanes use one work-item contract and converge through one integration gate. Prioritize P0 integration blockers and P1 economic bottlenecks before broad feature expansion. Parallel agents may execute lanes concurrently when available; otherwise use the identical lane decomposition sequentially and record the limitation.
