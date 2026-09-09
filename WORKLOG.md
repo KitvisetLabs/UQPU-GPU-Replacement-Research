@@ -449,3 +449,30 @@ GitHub's available connector returned no pull-request workflow run for the new t
 
 The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
 GitHub synchronization completed.
+
+
+### Cloud-vs-owned UQCS economics
+Added the first P1 deployment-economics comparison between rented quantum-cloud access and owned UQCS hardware.
+
+Official pricing snapshot checked against current primary sources:
+- IBM Quantum Pay-As-You-Go starts at USD96/minute; Flex USD72/minute; Premium USD48/minute.
+- Amazon Braket on-demand pricing uses USD0.30/task plus device-specific shot pricing; snapshot includes Rigetti Cepheus, IQM Garnet/Emerald, QuEra Aquila, AQT IBEX-Q1 and IonQ Forte.
+- Azure Quantum uses provider-specific billing; snapshot includes IonQ gate-shot/minimum-program pricing, Pasqal QPU-hour pricing and Rigetti execution-time increments.
+
+Implemented:
+- `uqpu.cloud_economics` supporting per-second, task+shot, gate-shot, QPU-hour and time-increment billing
+- dated `official_pricing_snapshot_2026_09()`
+- owned-hardware CAPEX/lifetime/utilization/power/maintenance model
+- cloud-vs-owned cost/useful-task comparator
+- unit tests for billing formulas, minimum program charges, increment rounding, utilization effects and provider snapshot coverage
+- `docs/CLOUD_VS_OWNED_ECONOMICS.md`
+- RG-012 for missing calibrated crossover evidence
+
+Verification/refinement:
+A defect/risk was found before integration: the initial comparator could numerically compare EUR cloud pricing against USD owned-hardware cost. This was corrected by rejecting non-USD cloud profiles until explicit FX conversion is supplied, and a regression test was added.
+
+Evidence boundary:
+Cloud headline prices are verified snapshot inputs, but a cheaper route in the comparator is still MODEL_ONLY until workload output quality, runtime, infrastructure charges and owned-hardware assumptions are calibrated.
+
+The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
+GitHub synchronization completed.
