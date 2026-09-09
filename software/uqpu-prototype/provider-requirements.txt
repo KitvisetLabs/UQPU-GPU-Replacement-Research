@@ -1,0 +1,37 @@
+# Install only the provider SDKs you need.
+# Versions should be pinned by deployment after compatibility validation.
+
+# IBM Quantum Compute
+qiskit
+qiskit-ibm-runtime
+
+# Amazon Braket
+amazon-braket-sdk
+
+# Microsoft Azure Quantum / QDK
+qdk[azure,qiskit]
+azure-quantum
+
+# Rigetti
+pyquil
+
+# D-Wave
+dwave-ocean-sdk
+
+# Quantinuum
+qnexus
+pytket
+
+# IQM direct SDK / interoperability
+iqm-client
+
+# Pasqal neutral-atom programming
+pulser
+
+# QuEra
+bloqade
+
+# Quandela photonics
+perceval-quandela
+
+# OQC uses account/runtime-specific supported client paths.
