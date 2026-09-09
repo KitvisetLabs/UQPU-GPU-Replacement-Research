@@ -61,3 +61,9 @@
 **Decision:** A successful adapter connection alone is insufficient. Real cloud-QPU execution must ultimately be benchmarked against competitive GPU cost/task using complete provider and system costs.
 
 **Reason:** The primary project goal is functional GPU replacement with dramatic cost reduction, not merely quantum-cloud interoperability.
+
+
+## 2026-09-09 — D013: Treat project mission as version invariants enforced by CI
+**Decision:** Preserve cloud portability, full GPU functional scope, 100× minimum economic target, 100,000,000× moonshot, evidence discipline and provider surveillance in every version through explicit charter/invariant documents and automated tests.
+
+**Reason:** The core mission should not silently disappear or weaken as code and community contributions evolve.
