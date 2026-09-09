@@ -112,3 +112,13 @@ The user-provided **Ketskaew Chulamani / Kanusanan Pongpanna Model** multilingua
 
 ### INV-018 — Cross-chat research operating system continuity
 The canonical operating method in `docs/RESEARCH_OPERATING_SYSTEM.md` is a permanent project invariant. Every AI agent, contributor, new chat/session, automation or development environment working on this repository must begin by reading the repository's current charter, version invariants, research operating system, master strategy, decisions, worklog and living research gaps rather than relying on prior-chat memory. The six-lane Parallel Simple Mode, shared work-item contract, P0–P4 priorities, single scoreboard, integration gate, evidence discipline, negative-result preservation and GitHub synchronization rule must remain the default workflow unless an explicit documented decision replaces it.
+
+
+### INV-019 — Software-first cloud-QPU replacement priority
+The project's PRIMARY execution objective is software/programming-first: use compiler transformations, semantic IR, quantum algorithms, runtime orchestration, state/data representations, provider adapters and cloud-QPU execution to make CURRENT cloud quantum computers perform the useful application-level roles served today by CPU, GPU, RAM, VRAM/HBM and persistent storage wherever physically possible. New custom quantum hardware is NOT the primary path. Hardware/device/fabrication/materials research remains important but is secondary unless a documented software/cloud blocker proves that existing cloud hardware cannot satisfy a required function or economic target.
+
+### INV-020 — Cloud-first functional emulation by outcome, not classical mechanism
+For CPU/GPU/RAM/VRAM/storage replacement, UQPU is judged by useful workload behavior and economics, not by reproducing classical instructions, memory cells or disk mechanisms internally. Software may transform, eliminate, compress, defer or encode state differently as long as the required application contract is satisfied and all I/O/state-recovery constraints are accounted for.
+
+### INV-021 — Software-first economic supremacy target
+The first path toward >=100x and up to 100,000,000x lower total cost/useful-task must prioritize software techniques on existing cloud quantum infrastructure before proposing new hardware. Each workload study should first attempt: semantic reformulation -> provider-neutral lowering -> cloud execution/simulation -> output validation -> total cost/task measurement -> optimization. Hardware redesign is escalated only when this path is blocked and the blocker is documented.
