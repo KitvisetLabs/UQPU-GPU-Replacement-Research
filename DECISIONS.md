@@ -202,3 +202,12 @@
 ## 2026-09-09 — D041: Make the six-lane operating system a permanent invariant
 **Decision:** Preserve the Parallel Simple Mode defined in `docs/RESEARCH_OPERATING_SYSTEM.md` as INV-018 and require explicit documented decisions for any future replacement.
 **Reason:** The workflow must survive new chats, different AI agents, community contributions and long-running development without silently reverting to ad-hoc coordination.
+
+
+## 2026-09-09 — D042: Gate fabrication by amortized cost per useful task
+**Decision:** A UQCS fabrication route must be evaluated by manufacturing cost amortized over useful lifetime workload tasks, not by cost/wafer or cost/die alone.
+**Reason:** The permanent economic objective is total cost/useful-task. Device count, lifetime, utilization and packaging/test can reverse conclusions drawn from raw die cost.
+
+## 2026-09-09 — D043: Keep manufacturing-budget allocation explicit and scenario-dependent
+**Decision:** Do not hard-code a universal fraction of compute budget for fabrication. Require each architecture/economic scenario to state and sensitivity-test its manufacturing allocation.
+**Reason:** Quantum, photonic, semiconductor and hybrid architectures distribute cost differently across fabrication, package/test, QEC/control, memory, photonics and operations.
