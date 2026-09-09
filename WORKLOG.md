@@ -619,3 +619,36 @@ Batch 001 establishes executable research structures and next gates. It does not
 
 The permanent Kanusanan Pongpanna master strategy, multilingual source links, Priority #1 quantum-programming rule and eight-lane architecture were preserved.
 GitHub synchronization completed.
+
+
+### Eight-Lane Research Batch 002 — market-driven integration
+Advanced the eight-lane program using current September 9, 2026 official-source developments.
+
+Lane A/F:
+- added `benchmark_evidence.py` so MODEL_ONLY/SIMULATION/DRY_RUN results cannot be counted as verified wins;
+- a verified win now requires REAL_QPU evidence, output-quality pass and measured end-to-end cost advantage;
+- >=100x is separately gated.
+
+Lane B:
+- refreshed cloud/hardware assumptions using current IBM and Quantinuum developments;
+- added IBM Nighthawk r2 / `ibm_phoenix` to the machine-readable September market snapshot.
+
+Lane C:
+- Quantinuum Helix logical-memory/logical-computation results are now tracked as relevant evidence for semantic logical-state research, without claiming direct RAM equivalence.
+
+Lane D/G:
+- recorded Quantinuum's CHIPS R&D manufacturing program, GlobalFoundries ion-trap/control-electronics collaboration and optical-component manufacturing path;
+- recorded IonQ/SkyWater manufacturing integration as an industrial reference for quantum-foundry strategy.
+
+Lane H:
+- published Article 001: `From Biomass Cash Flow to Quantum Infrastructure`, converting the master plan into stage-gated feasibility questions.
+
+Added:
+- `docs/MARKET_DELTA_2026-09-09.md`
+- RG-017 for throughput-normalized provider economics.
+
+Evidence boundary:
+Official announcements and service documentation are current evidence for market capability/strategy, not proof of UQPU workload advantage. No paid QPU execution occurred.
+
+The permanent Kanusanan Pongpanna master strategy, multilingual links, Priority #1 programming rule and eight-lane architecture were preserved.
+GitHub synchronization completed for Batch 002.
