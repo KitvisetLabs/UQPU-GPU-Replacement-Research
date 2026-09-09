@@ -1,0 +1,23 @@
+{
+  "project": "UQPU-GPU-Replacement-Research",
+  "version": "0.2",
+  "date": "2026-09-09",
+  "authors": {
+    "lead_researcher": "Kanutsanan Pongpanna",
+    "ai_research_collaborator": "OpenAI GPT-5.6 Sol"
+  },
+  "files": [
+    "CITATION.cff",
+    "README.md",
+    "REFERENCES.md",
+    "benchmarks/BENCHMARK_PLAN.md",
+    "benchmarks/coverage_matrix.csv",
+    "docs/ARCHITECTURE.md",
+    "docs/COMPILER_RUNTIME.md",
+    "docs/FEASIBILITY_AND_LIMITS.md",
+    "docs/GPU_FUNCTIONAL_COVERAGE.md",
+    "docs/PAPER.md",
+    "manifest.json",
+    "spec/UQPU_REQUIREMENTS.md"
+  ]
+}
