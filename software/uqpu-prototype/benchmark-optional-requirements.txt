@@ -1,0 +1,3 @@
+# Optional dependencies for competitive benchmark work.
+# Core UQPU remains dependency-light.
+ortools
