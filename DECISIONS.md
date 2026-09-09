@@ -149,3 +149,12 @@
 ## 2026-09-09 — D029: Coordinate the project through explicit workstream interfaces
 **Decision:** Organize UQCS into compute/compiler, quantum/QEC, cloud, memory/storage, photonics, fabrication, packaging, biomass/materials, power/cooling, economics and evidence/integration workstreams.
 **Reason:** The mission is too cross-disciplinary for isolated optimization; each workstream must expose requirements, cost, dependencies and blockers to system integration.
+
+
+## 2026-09-09 — D030: Select lithography by device requirement and total economics
+**Decision:** UQCS fabrication planning should choose the least-modeled-cost route that satisfies feature-size, overlay, yield, throughput and mask requirements rather than defaulting to EUV.
+**Reason:** Mature DUV, nanoimprint or specialized/direct-write processes may be economically superior for quantum, photonic, control, power or packaging devices that do not need leading-edge CMOS geometry.
+
+## 2026-09-09 — D031: Treat lithography as one element of an integrated patterning/fab system
+**Decision:** No lithography route may be evaluated without eventually including resist/materials, etch, deposition, metrology, defects, yield, masks, cleaning, packaging and facility costs.
+**Reason:** Published tool resolution alone is not a manufacturing-cost metric and cannot establish the project's 100× economic objective.
