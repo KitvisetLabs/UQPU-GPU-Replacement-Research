@@ -2,7 +2,7 @@
 
 ## North-star goal
 
-Create a **Universal Quantum Processing Unit (UQPU)** software/hardware architecture whose internal process can differ fundamentally from a GPU, while covering the full functional workload domain currently served by GPUs.
+Create a **Universal Quantum Processing Unit (UQPU)** software/hardware architecture whose internal process can differ fundamentally from a GPU, while covering the full functional workload domain currently served by GPUs and targeting the functional/economic roles of accelerator VRAM/HBM plus reductions in host-RAM/data-movement burden.
 
 ## Mandatory cloud goal
 
@@ -33,6 +33,21 @@ UQPU workload
   -> GPU comparison
 ```
 
+## Memory-system goal
+
+The project must explicitly model and challenge the cost/function of:
+- GPU-local VRAM/HBM;
+- host RAM used to feed accelerators;
+- memory bandwidth;
+- intermediate tensor/frame/simulation materialization;
+- interconnect/data-movement energy and cost.
+
+The preferred UQPU path is not necessarily a one-for-one replacement of memory chips. Whole-graph semantic execution should avoid materializing large classical intermediate states whenever possible.
+
+Classical RAM remains allowed where required for control, exact storage, ingress/egress and compatibility.
+
+See `docs/MEMORY_REPLACEMENT.md`.
+
 ## Functional goal
 
 UQPU must ultimately cover:
@@ -51,7 +66,7 @@ UQPU must ultimately cover:
 
 ## Economic goal
 
-Primary target: **at least 100× lower total cost per useful completed task than a competitive GPU implementation.**
+Primary target: **at least 100× lower total cost per useful completed task than a competitive GPU + VRAM/HBM + host-memory implementation.**
 
 Moonshot target: **up to 100,000,000× lower cost/task** for workload classes where quantum algorithms, provider economics and hardware characteristics make this physically achievable.
 
