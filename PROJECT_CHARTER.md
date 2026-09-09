@@ -93,3 +93,7 @@ The long-term research scope includes CPU/general compute, persistent storage, n
 
 ### INV-013 — Hardware/photonics/device-physics scope
 Hardware, photonic processors, semiconductor/process technology, packaging, control/readout, cryogenics, materials and goal-directed device/fundamental physics remain valid research layers whenever required to meet functional or economic targets.
+
+
+### INV-014 — Biomass and agricultural-residue materials strategy
+Pangola grass and broadly available agricultural residues remain a permanent low-cost renewable-feedstock research track for UQCS and future-technology supply chains. The project must investigate functional substitution, critical-material minimization, recovery/recycling and hybrid-material routes that can reduce dependence on expensive minerals/metals while preserving scientific constraints on elemental identity.
