@@ -9,6 +9,11 @@ It is deliberately **modality-aware**. Qubit counts from gate-model, analog and 
 ## Verified current/roadmap observations
 
 ### IBM Quantum
+
+**Nighthawk r2 / ibm_phoenix:** IBM's September 2026 Quantum Compute Service changelog reports the first Nighthawk r2 cloud QPU, `ibm_phoenix`, with 120 programmable qubits, >100,000 MCPS throughput and up to 25x higher throughput than Heron while matching fidelity. This is now included in the machine-readable snapshot.
+
+Source: https://quantum.cloud.ibm.com/docs/en/guides/changelog-quantum-compute-service
+
 IBM lists current Heron-family systems at 133/156 programmable qubits and Nighthawk at 120 programmable qubits. IBM's 2029 Starling roadmap target is 200 logical qubits and 100 million quantum gates.
 
 Source: https://www.ibm.com/quantum/hardware
