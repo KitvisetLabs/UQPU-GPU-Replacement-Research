@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uqpu-prototype"
-version = "0.2.0"
+version = "0.3.0"
 description = "Research prototype for a Universal Quantum Processing Unit semantic compiler and cost estimator"
 requires-python = ">=3.10"
 authors = [{name = "Kanutsanan Pongpanna"}]
