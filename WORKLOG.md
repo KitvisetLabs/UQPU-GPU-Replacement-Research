@@ -684,3 +684,28 @@ Added RG-018 for missing measured classical baseline data.
 
 No paid QPU execution occurred. The permanent master plan, multilingual links, Priority #1 programming rule and eight-lane architecture were preserved.
 GitHub synchronization completed for Batch 003.
+
+
+### Eight-Lane Research Batch 004 — Classical baseline ladder
+Focused Priority #1 work on closing RG-018 while preserving A–H parallel progress.
+
+A/F:
+- added executable exact QUBO correctness fixture;
+- added baseline provenance capture for runtime, platform, processor, states evaluated, objective and cost method;
+- added tests and an explicit exponential-size safety cap;
+- documented a four-level baseline ladder so toy Python timing cannot be misrepresented as competitive CPU/GPU evidence.
+
+B/C:
+- preserved the requirement that cloud-QPU comparison use the identical workload/output-quality contract and include state/data movement.
+
+D/G:
+- converted the shared device/factory interface into a reusable YAML requirements template.
+
+E:
+- added a material qualification template requiring incumbent comparison, numeric properties, compatibility, reliability, lifecycle cost and evidence status.
+
+H:
+- published Article 003 defining stage-gate financing from cash-flow businesses to deep-tech R&D and scale.
+
+RG-018 remains open; RG-019 now isolates the next missing step: a competitive optimized CPU/GPU baseline.
+No paid QPU execution occurred.
