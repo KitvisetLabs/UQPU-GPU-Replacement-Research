@@ -24,7 +24,7 @@ class ProjectInvariantTests(unittest.TestCase):
 
     def test_version_invariants_include_all_ids(self):
         text = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
-        for i in range(1, 18):
+        for i in range(1, 19):
             self.assertIn(f"INV-{i:03d}", text)
 
     def test_goals_preserve_cloud_and_cost_targets(self):
@@ -69,6 +69,20 @@ class ProjectInvariantTests(unittest.TestCase):
     def test_readme_links_strategic_master_plan(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("docs/KANUSANAN_PONGPANNA_MODEL.md", readme)
+
+
+    def test_cross_chat_operating_system_bootstrap(self):
+        charter = (ROOT / "PROJECT_CHARTER.md").read_text(encoding="utf-8")
+        invariants = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        ros = (ROOT / "docs" / "RESEARCH_OPERATING_SYSTEM.md").read_text(encoding="utf-8")
+        self.assertIn("INV-018", charter)
+        self.assertIn("INV-018", invariants)
+        self.assertIn("GitHub is the canonical project memory", readme)
+        self.assertIn("docs/RESEARCH_OPERATING_SYSTEM.md", readme)
+        self.assertIn("six-lane Parallel Simple Mode", readme)
+        for lane in ["Lane A", "Lane B", "Lane C", "Lane D", "Lane E", "Lane F"]:
+            self.assertIn(lane, ros)
 
 if __name__ == "__main__":
     unittest.main()
