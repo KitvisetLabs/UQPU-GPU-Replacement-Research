@@ -126,3 +126,18 @@ The first path toward >=100x and up to 100,000,000x lower total cost/useful-task
 
 ### INV-022 — Priority #1 does not suspend parallel research
 Quantum programming/software-first cloud-QPU execution is Priority #1, but it is NOT the only active research stream. Every established project lane must continue producing measurable research progress in parallel on every ongoing research horizon: workloads/software; quantum/cloud; memory/state/data movement; devices/fabrication/packaging; materials/biomass/power/cooling/infrastructure; economics/evidence/integration; and any additional approved project domains. Priority #1 determines ordering, emphasis and conflict resolution, not cancellation or suspension of the other lanes. Cross-lane results must be integrated continuously toward the common North-Star mission.
+
+
+### INV-023 — Permanent seven-lane research architecture
+The project permanently operates as SEVEN concurrent research lanes. Lane A is Priority #1, but all seven lanes must remain known, active, reviewed and progressively advanced:
+1. **Lane A — Quantum Programming / Workloads / Compiler / Runtime (Priority #1):** semantic reformulation, algorithms, IR, compiler/runtime, application contracts and software-first CPU/GPU functional replacement.
+2. **Lane B — Quantum Cloud / QPU / Provider Integration:** provider-neutral adapters, capability negotiation, execution, cloud portability, QPU/photonic/annealing/analog access and provider surveillance.
+3. **Lane C — RAM / VRAM / HBM / Storage / State & Data Movement:** memory/state semantics, persistence, caching, recomputation, compression, bandwidth, I/O and data movement.
+4. **Lane D — Quantum / Photonic / Semiconductor Devices, Chip Architecture, Fabrication & Packaging:** device physics, qubit/photonic/semiconductor architectures, chip processes, packaging, reliability and manufacturability.
+5. **Lane E — Biomass / Advanced Materials / Energy / Cooling / Infrastructure:** Pangola/biomass-derived materials, carbon/graphene and material substitution, power, cooling, facilities, sustainability and infrastructure.
+6. **Lane F — Economics / Benchmark / Evidence / Integration:** total cost/useful-task, baselines, benchmarks, evidence classification, reproducibility, cross-lane integration and mission scorekeeping.
+7. **Lane G — Quantum Chip Manufacturing Equipment & Software:** research and design of ALL hardware, software, control systems and production equipment required to manufacture every relevant form of quantum-processing chip, including lithography (DUV/EUV and alternatives), deposition, etch, implantation/doping where applicable, cleaning, wafer handling, metrology/inspection, masks, process control, EDA/TCAD/process simulation, automation/robotics, cryogenic/electrical/optical characterization, photonic fabrication, assembly, bonding, packaging, test and future manufacturing methods.
+
+Lane G is distinct from Lane D: Lane D owns the chips/devices/process architecture and manufacturability requirements; Lane G owns the machines, tooling, software and factory-production systems that realize those requirements. The two lanes must co-design continuously.
+
+**Permanent rule:** Priority #1 means emphasis, not exclusivity. Every research cycle must explicitly recognize A–G and must not silently delete, merge away or suspend a lane. All seven feed the same North-Star mission.
