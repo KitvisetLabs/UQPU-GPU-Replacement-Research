@@ -740,3 +740,26 @@ Evidence boundary: the new greedy solver is not a competitive GPU baseline. No q
 Converted scalable optimization generation into explicit small/medium/large research tiers and preserved measurement provenance requirements. Selected the first Lane D/G co-design target and published Lane H Article 005.
 
 Scientific boundary: tier sizes are research starting points. They do not establish industrial representativeness, QPU capacity, quantum advantage or >=100x economics. Competitive CPU/GPU measurement remains required.
+
+
+### Eight-Lane Research Batch 007 — optimized baseline adapter + CI hardening
+A/F:
+- repaired stale invariant tests that caused GitHub Actions failures after migration to the eight-lane architecture;
+- made invariant checking future-proof by comparing charter IDs against VERSION_INVARIANTS;
+- upgraded GitHub Actions checkout/setup-python major versions for the current runner runtime;
+- added an optional OR-Tools CP-SAT QUBO adapter and common benchmark artifact schema.
+
+B/C:
+- benchmark artifact fields now preserve provider/backend and transfer/memory measurements when actually known.
+
+D/G:
+- existing device/factory co-design contract remains active; CI governance now protects its project-memory references from accidental regression.
+
+E:
+- existing material-qualification rules remain active and covered by the eight-lane project-memory structure.
+
+H:
+- published Article 006: CI as Research Governance.
+
+Evidence boundary:
+Optional OR-Tools integration creates a path to a stronger classical baseline but does not itself establish a competitive GPU baseline or quantum advantage.
