@@ -230,3 +230,12 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Blockers:** optimized solver execution environment and proof/bound extraction for larger tiers.
 **Unlock criteria:** matching contract IDs with defensible reference objective/bound, method, source and evidence level.
 **Next experiment:** run the optional optimized classical path for small first, then medium; record whether optimality is proven or only a best-known feasible objective.
+
+
+## RG-025 — Dedicated optimized-reference benchmark environment
+**Status:** TOOL_BLOCKED / EXECUTION_PENDING
+**Objective:** Execute the Batch-010 reference generator with a pinned OR-Tools version and record real CPU/OS/runtime provenance for small and medium contracts.
+**Current artifact:** executable reference generator + manifest schema + regression tests.
+**Blocker:** OR-Tools is optional and absent from default CI; benchmark hardware provenance must not be fabricated.
+**Unlock criteria:** controlled environment records dependency version, CPU/OS context, contract ID, solver status, runtime, objective and certificate ID; OPTIMAL must be independently reproducible before EXACT_OPTIMUM is used downstream.
+**Next experiment:** create/run a dedicated benchmark job with pinned optional requirements, small tier first, then medium.
