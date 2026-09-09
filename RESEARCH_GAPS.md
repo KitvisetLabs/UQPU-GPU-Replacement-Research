@@ -189,3 +189,12 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Blockers:** optimized solver selection, representative instance corpus, measured CPU/GPU hardware, memory/energy accounting and normalized cost.
 **Unlock criteria:** reproducible Level-2 baseline over the same instance/quality contract used by the QPU path.
 **Next experiment:** add an established optimized classical solver and representative scalable instance generator before authorized real-QPU comparison.
+
+
+## RG-020 — Representative optimization benchmark tiers
+**Status:** MODEL_ONLY / NOT_YET_CALIBRATED
+**Objective:** Define defensible Max-Cut/QUBO size, density and quality tiers that stress competitive CPU/GPU solvers and remain mappable to target quantum modalities.
+**Current artifact:** seeded scalable instance generator and stable benchmark contract.
+**Blockers:** representative application corpus, solver-specific scaling data, QPU embedding/circuit resource limits and provider execution constraints.
+**Unlock criteria:** published/reproducible tier definitions plus measured competitive classical results and mapped QPU resource requirements.
+**Next experiment:** construct small/medium/large tier manifests and benchmark an established optimized classical solver.
