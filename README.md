@@ -57,6 +57,26 @@ measurement / decoding / classical I/O
 application-compatible result
 ```
 
+## Open Research — Contributions Welcome
+
+**UQPU is open for public collaboration.** Researchers, developers, students, physicists, mathematicians, GPU/HPC experts, AI engineers and quantum-computing practitioners are invited to contribute.
+
+You can participate without direct repository write access:
+
+```text
+Fork repository -> create branch -> research/build/test -> open Pull Request -> review -> merge
+```
+
+Useful starting points:
+
+- `CONTRIBUTING.md` — contribution rules and research-integrity requirements
+- `COMMUNITY.md` — ways researchers and developers can participate
+- `ROADMAP.md` — open research tracks and milestones
+- GitHub Issues — research proposals and benchmark proposals
+- Pull Requests — code, papers, experiments, corrections and negative results
+
+**Critical and negative results are welcome.** The objective is to discover what is physically and economically achievable, not to force a predetermined conclusion.
+
 ## Research traceability
 
 - `GOALS.md` — north-star, functional and economic goals
