@@ -86,3 +86,10 @@ A simulated speedup alone is not success.
 A narrow quantum algorithm alone is not success.
 
 The target is an open system that can execute useful GPU-domain workloads through cloud quantum computers and demonstrate end-to-end economic value against competitive GPU+VRAM/HBM+host-memory stacks.
+
+
+### INV-012 — Universal computing-stack scope
+The long-term research scope includes CPU/general compute, persistent storage, networking/interconnect and system orchestration in addition to GPU, VRAM/HBM and RAM. The project may replace, semantically eliminate or reduce conventional subsystems while preserving useful application behavior.
+
+### INV-013 — Hardware/photonics/device-physics scope
+Hardware, photonic processors, semiconductor/process technology, packaging, control/readout, cryogenics, materials and goal-directed device/fundamental physics remain valid research layers whenever required to meet functional or economic targets.
