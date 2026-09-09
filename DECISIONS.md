@@ -34,3 +34,14 @@
 **Decision:** Failed mappings, no-advantage results and unresolved barriers remain part of the repository.
 
 **Reason:** The project is a research program and must remain falsifiable.
+
+
+## 2026-09-09 — D008: Introduce inverse design from economic targets
+**Decision:** Treat 100×–100,000,000× cost goals as constraints to solve backward from measured GPU cost/task into maximum UQPU cost/task and, later, required hardware parameters.
+
+**Reason:** This turns economic ambition into falsifiable engineering requirements instead of treating cost advantage as a narrative claim.
+
+## 2026-09-09 — D009: Keep hardware and QEC reference profiles explicitly MODEL_ONLY
+**Decision:** Generic hardware profiles and the first surface-code estimator are modeling tools only until calibrated against literature and hardware measurements.
+
+**Reason:** Prevents hypothetical parameters from being confused with vendor specifications or demonstrated quantum advantage.
