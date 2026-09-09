@@ -43,3 +43,19 @@ Batch 001 does NOT claim a quantum advantage or >=100x cost win. Its value is th
 | H | Article 002: evidence-driven capital allocation | STRATEGIC_RESEARCH | first quantified Lane-H stage-gate model |
 
 Batch 003 does not claim a verified quantum win. The largest immediate blocker is RG-018: a measured competitive classical baseline for the first candidate workload.
+
+
+## Batch 004
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | executable tiny-QUBO exact baseline | TESTABLE SOFTWARE / correctness only | optimized scalable CPU/GPU baseline |
+| B | same-contract QPU comparison preserved | ADAPTER SOFTWARE | authorized simulator/QPU comparison |
+| C | state/data accounting required at higher baseline levels | MODEL_ONLY | measured memory/transfer data |
+| D | reusable device requirement schema | ENGINEERING_FRAMEWORK | populate modality-specific numbers |
+| E | material qualification template | ENGINEERING_FRAMEWORK | first incumbent-vs-candidate qualification row |
+| F | baseline provenance + evidence ladder | TESTABLE SOFTWARE | calibrated cost/task methodology |
+| G | reusable factory-response schema | FABRICATION_PROPOSAL | populate equipment/yield/cost response |
+| H | Article 003 stage-gate finance | STRATEGIC_RESEARCH | quantify first transition gate |
+
+Batch 004 deliberately does not close RG-018: the new exact QUBO is a correctness fixture, not a competitive CPU/GPU benchmark. RG-019 defines the next measurable step.
