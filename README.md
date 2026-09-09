@@ -149,12 +149,14 @@ Before doing project work in a new ChatGPT chat/session, AI agent, automation or
 Then continue using the canonical **six-lane Parallel Simple Mode**:
 
 ```text
-A Workloads/Software
-B Quantum/Cloud
-C Memory/Photonics/Interconnect
-D Devices/Fabrication/Packaging
-E Biomass/Materials/Energy/Infrastructure
-F Economics/Evidence/Integration
+A Quantum Programming / Workloads / Compiler / Runtime — Priority #1
+B Quantum Cloud / QPU / Provider Integration
+C RAM / VRAM / HBM / Storage / State & Data Movement
+D Quantum / Photonic / Semiconductor Devices / Fabrication / Packaging
+E Biomass / Advanced Materials / Energy / Cooling / Infrastructure
+F Economics / Benchmark / Evidence / Integration
+G Quantum Chip Manufacturing Equipment & Software
+H Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Research
         -> one Integration Gate -> tests/evidence/cost -> GitHub sync
 ```
 
