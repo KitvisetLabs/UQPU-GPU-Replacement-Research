@@ -117,3 +117,14 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Proposed experiments:** ingest provider cost reports; add FX conversion with dated source; model queue/utilization; benchmark simulator/real-QPU throughput; sensitivity sweep on CAPEX/lifetime/utilization/power.
 **Dependencies:** provider adapter maturity, workload contract, hardware architecture, fabrication budget.
 **Next review trigger:** new verified provider pricing or measured owned-prototype economics.
+
+
+## RG-013 — Uncertainty-calibrated deployment crossover
+**Status:** DATA_BLOCKED / MODEL_ONLY
+**Objective:** Replace scenario-only cloud-vs-owned comparisons with statistically defensible uncertainty intervals and workload-specific crossover distributions.
+**Blockers:** owned UQCS CAPEX/lifetime/utilization/power are not measured; provider queue/throughput data and infrastructure add-ons vary; FX changes; workload execution quality and retries are not yet normalized across providers.
+**Current alternative:** deterministic parameter sweeps plus explicit low/central/high cost envelopes.
+**Unlock criteria:** empirical distributions or independently defensible ranges for provider runtime/cost and owned-hardware lifecycle variables on a defined workload contract.
+**Proposed experiments:** ingest real job cost reports, measured runtime/queue/retry data, prototype utilization/power/lifetime data, and dated FX; run Monte Carlo crossover analysis.
+**Dependencies:** provider adapters, benchmark harness, real-QPU execution evidence, owned hardware/fabrication model.
+**Next review trigger:** first real-QPU cost dataset or prototype lifecycle dataset.
