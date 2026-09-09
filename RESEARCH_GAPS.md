@@ -198,3 +198,11 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Blockers:** representative application corpus, solver-specific scaling data, QPU embedding/circuit resource limits and provider execution constraints.
 **Unlock criteria:** published/reproducible tier definitions plus measured competitive classical results and mapped QPU resource requirements.
 **Next experiment:** construct small/medium/large tier manifests and benchmark an established optimized classical solver.
+
+
+## RG-021 — Established optimized solver integration
+**Status:** TOOL/DATA_PENDING
+**Objective:** Produce reproducible measured results from at least one established optimized classical solver on the same Batch-006 contracts.
+**Blockers:** dependency selection/version pinning, reproducible execution environment, hardware provenance and later GPU-capable comparison.
+**Unlock criteria:** measured artifacts for small/medium/large tiers with solver/version/hardware/runtime/objective/quality provenance.
+**Next experiment:** implement an optional optimized-solver adapter without making it a core dependency.
