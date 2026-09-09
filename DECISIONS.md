@@ -1,0 +1,36 @@
+# Decision Log
+
+## 2026-09-09 — D001: Define replacement at the functional level
+**Decision:** UQPU does not need to reproduce GPU internal architecture or execution. It must satisfy the same end-use goals and output contracts.
+
+**Reason:** Instruction-level emulation would unnecessarily inherit GPU computation patterns and likely erase quantum advantages.
+
+## 2026-09-09 — D002: Require complete GPU functional-domain coverage
+**Decision:** The research target includes graphics, AI, HPC, simulation, media, analytics and general parallel compute.
+
+**Reason:** The objective is GPU replacement, not a narrow quantum accelerator.
+
+## 2026-09-09 — D003: Permit classical control electronics but no GPU dependency
+**Decision:** CPU, controllers, memory interfaces, QEC decoders and display/network I/O are allowed. A qualifying UQPU workload must not require a GPU.
+
+**Reason:** Quantum hardware requires classical control; eliminating all classical electronics is not part of the research objective.
+
+## 2026-09-09 — D004: Use semantic compilation
+**Decision:** Compile application intent and mathematical structure to a UQPU execution plan rather than translating GPU instructions one-for-one.
+
+**Reason:** Whole-program transformations can avoid unnecessary classical intermediates and expose quantum-native algorithms.
+
+## 2026-09-09 — D005: Add economic supremacy as a core objective
+**Decision:** Target ≥100× lower total cost per useful task versus GPU, with a moonshot target up to 100,000,000× where physically possible.
+
+**Reason:** Functional replacement alone is insufficient for disruptive adoption.
+
+## 2026-09-09 — D006: Treat 100,000,000× as a moonshot, not a guaranteed result
+**Decision:** Extreme cost claims must be workload-specific and include full system cost.
+
+**Reason:** Quantum advantage is problem-specific and can be erased by data loading, QEC, measurement and classical output.
+
+## 2026-09-09 — D007: Preserve negative results
+**Decision:** Failed mappings, no-advantage results and unresolved barriers remain part of the repository.
+
+**Reason:** The project is a research program and must remain falsifiable.
