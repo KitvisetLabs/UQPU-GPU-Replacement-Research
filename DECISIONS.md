@@ -277,3 +277,16 @@
 ## 2026-09-09 — D058: Priority #1 means emphasis, not exclusivity
 **Decision:** Quantum programming/software-first cloud-QPU execution remains Priority #1, while all established research lanes continue concurrently and must make ongoing progress.
 **Reason:** The project is intentionally multidisciplinary. Priority determines scheduling emphasis and resolves resource conflicts; it must never be interpreted as permission to stop hardware, photonics, fabrication, memory/storage, biomass/materials, infrastructure or economics/evidence research.
+
+
+## 2026-09-09 — D059: Expand the permanent operating architecture to seven research lanes
+**Decision:** Add Lane G — Quantum Chip Manufacturing Equipment & Software — and make A–G the permanent project operating architecture.
+**Reason:** Designing a manufacturable quantum chip and designing the machines/software/factory stack that can produce it are related but distinct engineering problems and require separate ownership.
+
+## 2026-09-09 — D060: Separate chip/process design from manufacturing-equipment design
+**Decision:** Lane D owns quantum/photonic/semiconductor device and chip architecture, process requirements, fabrication/packaging and manufacturability. Lane G owns manufacturing machines, tooling, production software, process-control/EDA systems, metrology, automation, characterization and factory systems. D and G co-design continuously.
+**Reason:** The separation improves research accountability while retaining cross-lane integration.
+
+## 2026-09-09 — D061: Every cycle must explicitly recognize all seven lanes
+**Decision:** Every research/daily cycle must inspect A–G. Lane A receives Priority #1 emphasis, while B–G continue research and progress in parallel.
+**Reason:** The seven-lane structure is project memory and must remain stable across chats, agents and scheduled runs.
