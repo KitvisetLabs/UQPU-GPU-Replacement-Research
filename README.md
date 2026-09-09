@@ -186,3 +186,19 @@ Hardware, photonics, fabrication and biomass/materials research remain in the pr
 
 ## Priority #1 + Parallel Research Rule
 **Quantum programming / software-first cloud-QPU execution is Priority #1. It is not the only active work.** All established research lanes continue in parallel and are expected to make ongoing progress: software/workloads, quantum/cloud, memory/state/storage, hardware/photonics/fabrication/packaging, biomass/materials/energy/infrastructure, and economics/evidence/integration. Priority #1 controls emphasis and conflict resolution; it does not pause other research.
+
+
+## Permanent Seven-Lane Research Architecture
+UQPU/UQCS operates through **seven concurrent research lanes**:
+
+1. **A — Quantum Programming / Workloads / Compiler / Runtime — Priority #1**
+2. **B — Quantum Cloud / QPU / Provider Integration**
+3. **C — RAM / VRAM / HBM / Storage / State & Data Movement**
+4. **D — Quantum / Photonic / Semiconductor Devices, Chip Architecture, Fabrication & Packaging**
+5. **E — Biomass / Advanced Materials / Energy / Cooling / Infrastructure**
+6. **F — Economics / Benchmark / Evidence / Integration**
+7. **G — Quantum Chip Manufacturing Equipment & Software**
+
+Lane G researches the complete equipment/software/factory stack for manufacturing quantum-processing chips of every relevant modality: DUV/EUV and alternative lithography, deposition, etch, implantation/doping where applicable, cleaning, wafer handling, masks, metrology/inspection, process control, EDA/TCAD/process simulation, automation/robotics, cryogenic/electrical/optical characterization, photonic fabrication, bonding, assembly, packaging, test and future manufacturing techniques.
+
+**A is Priority #1; A–G all progress continuously. Priority means emphasis, never abandonment of another lane.**
