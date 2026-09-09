@@ -399,3 +399,12 @@
 ## 2026-09-09 — D086: Compare materials on functional units
 **Decision:** Lane E cost comparisons must normalize to the delivered function and reliability requirement rather than feedstock mass price alone.
 **Reason:** Processing, loading, durability and replacement frequency can reverse apparent raw-material savings.
+
+
+## 2026-09-09 — D087: Solver status controls reference proof strength
+**Decision:** The reference generator emits EXACT_OPTIMUM only from an optimized solver result explicitly reporting proven optimality. A feasible time-limited result is recorded as BEST_KNOWN_FEASIBLE.
+**Reason:** A strong incumbent is useful but is not proof of the global optimum.
+
+## 2026-09-09 — D088: Reference manifests must carry execution provenance
+**Decision:** Reference artifacts record stable certificate/contract IDs, method, evidence level, source, runtime, solver status and proven-optimal flag.
+**Reason:** QPU quality comparisons must be reproducible against the same reference evidence rather than an undocumented objective number.
