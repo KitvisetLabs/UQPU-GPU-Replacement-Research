@@ -83,3 +83,15 @@ Each item should record: objective; status; evidence; blocker; best current alte
 **Dependencies:** device requirements, process flow, fab geography, equipment access.
 **Safety/legal constraints:** industrial lithography and semiconductor processing require professional facilities and compliance.
 **Next review trigger:** availability of calibrated fab economics or foundry/process-partner data.
+
+
+## RG-010 — Calibrated full fab process flow
+**Status:** DATA_BLOCKED / MODEL_ONLY
+**Objective:** Replace the generic process skeleton with calibrated process-step data for at least one real semiconductor, photonic or quantum-device flow.
+**Blockers:** detailed foundry recipes, per-step cost/yield/energy/cycle-time, rework, scrap, tool utilization, mask amortization, chemistry/gas/water/abatement, facility overhead and packaging/test yield are not fully public.
+**Current alternative:** generic MODEL_ONLY process graph with cumulative yield and cost/good-die accounting.
+**Unlock criteria:** validated step-level inputs for a real process plus reproducible cost/good-die calculation.
+**Proposed experiments:** collect public/partner process data; calibrate defect-density model; add rework/queueing/tool-availability and packaging-yield models.
+**Dependencies:** target device, foundry route, lithography route, package architecture.
+**Safety/legal constraints:** no unsafe laboratory processing outside appropriate professional facilities.
+**Next review trigger:** access to calibrated foundry/process data or a fabrication partner.
