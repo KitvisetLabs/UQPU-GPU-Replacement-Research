@@ -503,3 +503,21 @@ Provider headline pricing is official-source snapshot data. Owned hardware param
 
 The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
 GitHub synchronization completed.
+
+
+### Original-mission execution gate
+Added a permanent execution map that forces current work to remain tied to the mission defined at project inception.
+
+Implemented:
+- `docs/ORIGINAL_MISSION_EXECUTION_MAP.md`
+- mission decomposition M1-M7 across functional replacement, memory/storage, cloud portability, manufacturable hardware, biomass/materials, full-stack economics and evidence/falsifiability
+- explicit P0-P4 priority linkage to the original mission
+- `uqpu.mission_score` mission-impact scoring helper
+- mission gate requiring each accepted subsystem change to advance at least one mission dimension
+- four unit tests for score ordering and mission-gate acceptance/rejection
+
+Operational implication:
+Feature growth that cannot demonstrate impact on functional coverage, cost/useful-task, evidence maturity, provider portability, data movement, manufacturability or blocker reduction should not outrank mission-critical work.
+
+The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
+GitHub synchronization completed.
