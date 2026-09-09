@@ -652,3 +652,35 @@ Official announcements and service documentation are current evidence for market
 
 The permanent Kanusanan Pongpanna master strategy, multilingual links, Priority #1 programming rule and eight-lane architecture were preserved.
 GitHub synchronization completed for Batch 002.
+
+
+### Eight-Lane Research Batch 003 — First Verified Win pipeline
+Advanced all eight lanes around the highest-value near-term milestone.
+
+Lane A:
+- added machine-readable provider-fit logic for workload contracts;
+- formalized candidate quantum paradigms per workload.
+
+Lane B:
+- provider-fit layer now connects workload semantics to provider modality selection rather than selecting clouds by brand alone.
+
+Lane C:
+- added explicit state/I/O accounting for input bytes, intermediate materialization, output, persistence, host-memory time and transfer volume.
+
+Lane D/G:
+- added a shared device/factory interface so chip requirements and manufacturing-equipment research exchange measurable requirements instead of drifting independently.
+
+Lane E:
+- tied biomass/material research to explicit compute/fab functions such as dielectric, EMI, thermal, packaging, purification, energy storage and critical-metal recovery.
+
+Lane F:
+- added `benchmark_pipeline.py` integrating workload contract -> provider fit -> state accounting -> evidence gate;
+- simulator/model results remain unable to pass verified-win/100x gates.
+
+Lane H:
+- published Article 002 on evidence-driven eight-lane capital allocation.
+
+Added RG-018 for missing measured classical baseline data.
+
+No paid QPU execution occurred. The permanent master plan, multilingual links, Priority #1 programming rule and eight-lane architecture were preserved.
+GitHub synchronization completed for Batch 003.
