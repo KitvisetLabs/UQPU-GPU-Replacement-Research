@@ -521,3 +521,38 @@ Feature growth that cannot demonstrate impact on functional coverage, cost/usefu
 
 The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
 GitHub synchronization completed.
+
+
+### Concrete quantum-cloud provider adapter layer
+Expanded the earlier provider registry into executable provider-boundary software.
+
+Implemented:
+- `provider_runtime.py`: runtime config, adapter readiness, SDK/credential health and explicit paid-execution guard
+- `provider_adapters.py`: concrete adapters for IBM Quantum, Amazon Braket, Azure Quantum, IonQ direct, Rigetti QCS, D-Wave Leap, Quantinuum Nexus, IQM, Pasqal, QuEra, Quandela and OQC
+- aggregator routing for IQM/QuEra through Braket and Pasqal through Azure where appropriate
+- direct IonQ API v0.4 submission path
+- provider health matrix
+- dry-run lowering for every registered adapter without requiring vendor SDKs
+- `provider_cli.py` for health and dry-run diagnostics
+- provider dependency manifest
+- new-provider adapter template
+- adapter and CLI tests
+- provider onboarding checklist
+- `docs/QUANTUM_CLOUD_ADAPTERS.md`
+
+Current primary-source checks:
+- IBM Quantum Compute remains accessed through `qiskit-ibm-runtime`; IBM's 2026 service rename does not require existing application code changes.
+- Amazon Braket uses `AwsDevice.run()` and asynchronous task IDs/state/result.
+- Azure Quantum's current QDK uses `qdk.azure.Workspace`; adapter was updated to this current namespace.
+- IonQ API v0.4 supports direct POST /jobs, simulator/QPU backends, job retrieval and billing endpoints.
+- Rigetti QCS uses pyQuil/Quil.
+- D-Wave Leap uses Ocean SDK samplers.
+- Quantinuum Nexus exposes qnexus execution/job APIs.
+
+Evidence boundary:
+Software-prepared is not equivalent to real-QPU verified. No paid QPU jobs were submitted in this cycle. RG-014 records the credential/budget requirement for real-QPU validation, and RG-015 records direct account-integration gaps for Quandela/OQC.
+
+Remote GitHub workflow status was not available through the connected status endpoint for the new commits, so this cycle does not claim remote CI passed.
+
+The permanent Kanusanan Pongpanna master strategy/reference set, original mission gate and six-lane operating system were preserved.
+GitHub synchronization completed.
