@@ -422,3 +422,30 @@ Result: a new chat/session can reconstruct the current project mission, strategy
 
 The permanent Kanusanan Pongpanna master strategy/reference set was preserved for this cycle.
 GitHub synchronization completed for this continuity update.
+
+
+### Fabrication economics connected to inverse UQCS cost targets
+Completed the first direct integration between Lane D (devices/fabrication/packaging) and Lane F (economics/evidence/integration).
+
+Implemented:
+- `uqpu.fabrication_budget`
+- inverse maximum manufacturing cost/device
+- inverse maximum fab cost/good die after package/test
+- manufacturing cost/task amortization using devices/system and useful lifetime tasks/device
+- explicit manufacturing fraction of compute budget
+- budget headroom and PASS/FAIL
+- five tests covering target tightening, device-count pressure, lifetime amortization, package-cost exhaustion and invalid budget fractions
+- `docs/FABRICATION_TO_COST_TARGET.md`
+- RG-011 for missing calibrated lifetime/useful-task amortization evidence
+
+Integration finding:
+Fabrication cost cannot be judged from wafer/die price alone. A die that appears expensive can still fit a cost/task target if it executes enough useful lifetime tasks, while a cheap die can fail if the system needs many devices, short lifetime, low utilization or expensive packaging/test.
+
+Evidence boundary:
+The accounting equations are deterministic, but current fab-flow and deployment assumptions remain MODEL_ONLY until calibrated.
+
+Verification status:
+GitHub's available connector returned no pull-request workflow run for the new test commit. Therefore this cycle does not claim that remote CI passed; the tests are committed for CI execution and future verification.
+
+The permanent Kanusanan Pongpanna master strategy/reference set and six-lane operating system were preserved for this cycle.
+GitHub synchronization completed.
