@@ -27,3 +27,19 @@ Each batch records one row for A–H with:
 ## Integration result
 
 Batch 001 does NOT claim a quantum advantage or >=100x cost win. Its value is that all eight permanent lanes now have executable/documented next gates tied to the same mission.
+
+
+## Batch 003
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | workload->paradigm/provider-fit logic | MODEL_ONLY / software artifact | implement first concrete optimization benchmark |
+| B | workload-driven provider selection interface | MODEL_ONLY + adapter code | simulator/authorized target execution |
+| C | explicit state/I/O accounting | MODEL_ONLY / software artifact | populate bytes/time from real baseline |
+| D | measurable D->G device requirement contract | ENGINEERING_FRAMEWORK | modality-specific numeric requirements |
+| E | compute-derived material function requirements | mixed literature/MODEL_ONLY | property/cost qualification table |
+| F | end-to-end benchmark gate | software artifact | measured classical baseline + QPU evidence |
+| G | measurable G->D equipment response contract | FABRICATION_PROPOSAL | equipment capability/cost calibration |
+| H | Article 002: evidence-driven capital allocation | STRATEGIC_RESEARCH | first quantified Lane-H stage-gate model |
+
+Batch 003 does not claim a verified quantum win. The largest immediate blocker is RG-018: a measured competitive classical baseline for the first candidate workload.
