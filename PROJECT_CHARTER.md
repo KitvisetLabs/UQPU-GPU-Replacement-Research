@@ -104,3 +104,7 @@ UQCS research includes fabrication equipment and factory/process integration req
 
 ### INV-016 — Parallel fabrication workstreams and integration review
 Fabrication research must maintain separable lithography, deposition, etch, doping, metrology, cleaning, photonics, quantum-device, packaging, materials, economics and automation workstreams with explicit interfaces. Findings must be integrated against the permanent end-to-end functional and economic objective.
+
+
+### INV-017 — Permanent multilingual strategic-plan preservation
+The user-provided **Ketskaew Chulamani / Kanusanan Pongpanna Model** multilingual plan and the public source links recorded in `STRATEGIC_PLAN_REFERENCES.md` are permanent project context. Every meaningful project update/release must preserve a visible repository reference to that document and must not silently remove its links. The plan must be considered during research integration while scientific/economic claims remain subject to independent evidence verification.
