@@ -111,7 +111,7 @@ The user-provided **Ketskaew Chulamani / Kanusanan Pongpanna Model** multilingua
 
 
 ### INV-018 — Cross-chat research operating system continuity
-The canonical operating method in `docs/RESEARCH_OPERATING_SYSTEM.md` is a permanent project invariant. Every AI agent, contributor, new chat/session, automation or development environment working on this repository must begin by reading the repository's current charter, version invariants, research operating system, master strategy, decisions, worklog and living research gaps rather than relying on prior-chat memory. The six-lane Parallel Simple Mode, shared work-item contract, P0–P4 priorities, single scoreboard, integration gate, evidence discipline, negative-result preservation and GitHub synchronization rule must remain the default workflow unless an explicit documented decision replaces it.
+The canonical operating method in `docs/RESEARCH_OPERATING_SYSTEM.md` is a permanent project invariant. Every AI agent, contributor, new chat/session, automation or development environment working on this repository must begin by reading the repository's current charter, version invariants, research operating system, master strategy, decisions, worklog and living research gaps rather than relying on prior-chat memory. The current eight-lane A–H Research Operating System, shared work-item contract, P0–P4 priorities, single scoreboard, integration gate, evidence discipline, negative-result preservation and GitHub synchronization rule must remain the default workflow unless an explicit documented decision replaces it.
 
 
 ### INV-019 — Software-first cloud-QPU replacement priority
