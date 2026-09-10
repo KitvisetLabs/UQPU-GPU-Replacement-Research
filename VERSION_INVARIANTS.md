@@ -41,6 +41,7 @@ The repository includes automated policy tests that check permanent mission mark
 | INV-026 | Universal ~100,000,000-unit GPU/CPU/NPU/RAM/VRAM/storage functional replacement + >=100,000,000x cost moonshot; subsystem-specific equivalence contracts required | Yes |
 | INV-027 | Open-frontier search across all scientifically/mathematically plausible depths, including fundamental physics, with falsifiability and evidence gates | Yes |
 | INV-028 | Dedicated GitHub folders for lanes A–H, maximum 16 directory levels from repository root, primary artifact ownership, and integration-first cross-lane interfaces through the shared integration hub | Yes |
+| INV-029 | Ultimate North Star: compress a user-defined $10T–$100T data-center-scale capability envelope into one future phone-class device costing only tens of thousands of THB, judged by equivalent useful service contracts rather than dollar-value analogy | Yes |
 
 ## INV-028 operational definition
 
@@ -49,3 +50,11 @@ The canonical lane-oriented workspace is `research_lanes/`, containing one clear
 ## NPU scope clarification
 
 NPU is a permanent accelerator-replacement target alongside GPU and CPU. NPU claims must use neural-workload equivalence contracts—model/checkpoint, precision/quantization, task quality, batch/sequence/input shape, latency, throughput, memory/data movement and total cost—not headline TOPS alone. The permanent detailed tracks are `research_lanes/A_quantum_programming_runtime/NPU_REPLACEMENT_TRACK.md` and `research_lanes/F_economics_benchmark_evidence/NPU_EQUIVALENCE_AND_COST_CONTRACT.md`.
+
+## INV-029 operational definition — Data Center to Phone
+
+The project owner's highest long-term mission is to investigate whether the useful computing/service capability associated with an extraordinarily large hypothetical data-center envelope—expressed by the owner as roughly **US$10 trillion to US$100 trillion of present-era conventional infrastructure value**—can ultimately be compressed into **one phone-class physical device** with a future device price in the **tens of thousands of Thai baht**.
+
+The US$10T–US$100T range is a **user-defined ambition/scale proxy, not a claim that a present-day individual data center has that market value**. Success must be established through concrete capability contracts: GPU/CPU/NPU compute, RAM/VRAM/HBM/storage/state services, networking/I/O, AI/HPC/application throughput, latency, reliability, persistence where required, energy/thermal constraints, device form factor and total lifecycle cost. Cloud dependence, external classical infrastructure, cryogenics and control hardware must be counted honestly rather than hidden outside the phone boundary.
+
+All earlier 100× and 100,000,000× research targets, subsystem-replacement tracks, quantum programming, cloud-QPU experiments, device/material/manufacturing work and Lane H strategy are subordinate stepping stones toward this ultimate North Star. It remains a long-horizon falsifiable research objective, not a demonstrated capability or promised delivery date.
