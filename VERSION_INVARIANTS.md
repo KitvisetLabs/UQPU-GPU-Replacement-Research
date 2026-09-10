@@ -42,6 +42,7 @@ The repository includes automated policy tests that check permanent mission mark
 | INV-027 | Open-frontier search across all scientifically/mathematically plausible depths, including fundamental physics, with falsifiability and evidence gates | Yes |
 | INV-028 | Dedicated GitHub folders for lanes A–H, maximum 16 directory levels from repository root, primary artifact ownership, and integration-first cross-lane interfaces through the shared integration hub | Yes |
 | INV-029 | Ultimate North Star: compress a user-defined $10T–$100T data-center-scale capability envelope into one future phone-class device costing only tens of thousands of THB, judged by equivalent useful service contracts rather than dollar-value analogy | Yes |
+| INV-030 | Pangola/biomass carbon innovation is a permanent strategic pillar for replacing, minimizing or recovering expensive technology minerals/materials across the full industrial stack | Yes |
 
 ## INV-028 operational definition
 
@@ -58,3 +59,13 @@ The project owner's highest long-term mission is to investigate whether the usef
 The US$10T–US$100T range is a **user-defined ambition/scale proxy, not a claim that a present-day individual data center has that market value**. Success must be established through concrete capability contracts: GPU/CPU/NPU compute, RAM/VRAM/HBM/storage/state services, networking/I/O, AI/HPC/application throughput, latency, reliability, persistence where required, energy/thermal constraints, device form factor and total lifecycle cost. Cloud dependence, external classical infrastructure, cryogenics and control hardware must be counted honestly rather than hidden outside the phone boundary.
 
 All earlier 100× and 100,000,000× research targets, subsystem-replacement tracks, quantum programming, cloud-QPU experiments, device/material/manufacturing work and Lane H strategy are subordinate stepping stones toward this ultimate North Star. It remains a long-horizon falsifiable research objective, not a demonstrated capability or promised delivery date.
+
+## INV-030 operational definition — Pangola/Biomass Carbon Strategic Pillar
+
+The project permanently prioritizes research into **carbon-rich materials and carbon powders derived from Pangola grass and diverse agricultural residues**, including solid-carbon/char streams produced through thermochemical conversion and carbonaceous streams associated with bio-oil production, upgrading and distillation/refining where scientifically applicable.
+
+The strategic objective is to use purification, activation, graphitization, heteroatom doping, nanostructuring, composites, coatings, membranes and other carbon-material innovations to **replace the required function, minimize the required loading, enable recovery/recycling, or redesign away dependence** on expensive or supply-constrained technology materials. Priority comparison families include gold (Au), copper (Cu), silver (Ag), lithium (Li), cobalt (Co), nickel (Ni), rare-earth elements and other high-value/critical minerals used across electronics, semiconductors, quantum/photonics, batteries, power systems, AI/data centers, robotics, aerospace and future infrastructure.
+
+This invariant does not assert elemental transmutation or universal one-for-one substitution. Ordinary carbon processing does not create Au, Cu, Ag, Li, Co, Ni or rare-earth atoms. For every target material the project must identify the **specific incumbent function**—for example electrical conduction/contact, electrochemical ion carrier, catalytic activity, magnetic/optical behavior, thermal spreading, structural support or adsorption—and test the biomass-carbon route against that functional unit. When direct carbon substitution is physically unsuitable, the required research route is critical-material minimization, hybridization, recovery/recycling, chemistry/architecture substitution or system-level elimination.
+
+The canonical public strategy is `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`. INV-030 is a central enabling strategy for INV-029 because extreme data-center-to-phone compression also requires radical reductions in material cost, supply-chain burden, energy, cooling, packaging and manufacturability.
