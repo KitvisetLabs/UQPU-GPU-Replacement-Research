@@ -1,0 +1,41 @@
+{
+  "schema": "uqpu-batch022-foundational-limits-v1",
+  "date": "2026-09-10",
+  "evidence_level": "THEORY",
+  "measured_hardware": false,
+  "quantum_advantage_demonstrated": false,
+  "constants": {
+    "boltzmann_constant_j_per_k": 1.380649e-23,
+    "planck_constant_j_s": 6.62607015e-34,
+    "si_status": "exact defining constants"
+  },
+  "landauer": {
+    "formula": "k_B*T*ln(2)",
+    "temperature_kelvin": 300.0,
+    "minimum_joule_per_erased_bit": 2.870978885078724e-21,
+    "reciprocal_ideal_bit_erasures_per_joule": 3.4831325482652566e20,
+    "interpretation": "ideal lower bound for logically irreversible erasure; not device energy or achievable throughput"
+  },
+  "margolus_levitin": {
+    "formula_orthogonal_state_setting": "h/(4E)",
+    "mean_energy_above_ground_joule": 1.0,
+    "minimum_seconds": 1.6565175375e-34,
+    "interpretation": "ideal energy-time lower bound; not an achievable gate time"
+  },
+  "constraints": [
+    "no-cloning prevents perfect copying of an arbitrary unknown quantum state",
+    "Hilbert-space dimension is not freely readable classical RAM/storage capacity",
+    "mathematical possibility does not imply physical realizability",
+    "physical realizability does not imply engineering feasibility",
+    "engineering feasibility does not imply economic advantage"
+  ],
+  "next_work_packages": ["FND-001", "FND-002", "FND-003", "FND-004", "FND-005", "FND-006"],
+  "sources": [
+    "https://home.cern/science/physics/standard-model/",
+    "https://www.nature.com/articles/nature10872",
+    "https://www.nature.com/articles/s41567-025-02930-9",
+    "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/limitations-on-quantum-information",
+    "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.052202",
+    "https://arxiv.org/abs/0804.3401"
+  ]
+}
