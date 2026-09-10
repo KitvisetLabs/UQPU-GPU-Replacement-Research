@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-10",
+  "method": "InsightSR",
+  "title": "InsightSR: Refining Symbolic Regression Search Spaces via Parallel Semantic and Structural LLM Guidance",
+  "arxiv": "2608.25291v1",
+  "arxiv_date": "2026-08-26",
+  "status": "LITERATURE_ONLY_NOT_EXECUTED_BY_UQPU",
+  "reported_method": "LLM-guided semantic seeds and structural feature transformations around the PySR search engine rather than direct formula generation alone",
+  "reported_results": {
+    "feynman_exact_recovery_rate": "95%",
+    "llm_srbench_lsr_transform_accuracy": "80.18%"
+  },
+  "uqpu_reproduction_completed": false,
+  "public_code_verified_by_uqpu": false,
+  "benchmark_bytes_executed_by_uqpu": false,
+  "uqpu_protocol_consequence": {
+    "new_frozen_arm": "LLM_GUIDED_SEARCH_SPACE",
+    "reason": "BANK/LLM_DIRECT/UNION does not fully represent methods where the LLM modifies the feature/grammar/search space rather than directly emitting candidate equations.",
+    "resource_ledger_required": true
+  },
+  "non_claims": [
+    "UQPU has not reproduced the reported 95% Feynman result",
+    "UQPU has not reproduced the reported 80.18% LSR-Transform result",
+    "the reported results do not establish discovery of new physical laws",
+    "candidate-count parity alone is not compute or cost parity"
+  ]
+}
