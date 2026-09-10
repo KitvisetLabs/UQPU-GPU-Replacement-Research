@@ -128,3 +128,9 @@ jobs:
         run: |
           python examples/run_target_snapshot_noise.py --output /tmp/uqpu-target-snapshot-noise.json --shots 4096
           cat /tmp/uqpu-target-snapshot-noise.json
+
+      - name: Extract active-qubit calibration inputs
+        working-directory: software/uqpu-prototype
+        run: |
+          python examples/run_active_target_calibration.py --output /tmp/uqpu-active-target-calibration.json
+          cat /tmp/uqpu-active-target-calibration.json
