@@ -1,0 +1,33 @@
+{
+  "schema": "uqpu-batch024-output-information-bounds-v1",
+  "date": "2026-09-10",
+  "evidence_level": "THEORY_EXECUTABLE_BOUND",
+  "real_qpu_executed": false,
+  "quantum_advantage_demonstrated": false,
+  "zero_error_fixed_length_scenarios": [
+    {"name": "binary_decision", "outcome_count": "2", "minimum_label_bits": 1},
+    {"name": "triangle_assignment_identity", "outcome_count": "8", "minimum_label_bits": 3},
+    {"name": "er6_assignment_identity", "outcome_count": "64", "minimum_label_bits": 6},
+    {"name": "er8_assignment_identity", "outcome_count": "256", "minimum_label_bits": 8},
+    {"name": "full_assignment_32", "outcome_count": "2^32", "minimum_label_bits": 32},
+    {"name": "full_assignment_128", "outcome_count": "2^128", "minimum_label_bits": 128},
+    {"name": "full_assignment_512", "outcome_count": "2^512", "minimum_label_bits": 512}
+  ],
+  "fixed_width_service_rate_examples": [
+    {"assignment_bits": 32, "results_per_second": 1000000, "raw_fixed_width_bitrate_bps": 32000000},
+    {"assignment_bits": 128, "results_per_second": 1000000, "raw_fixed_width_bitrate_bps": 128000000},
+    {"assignment_bits": 512, "results_per_second": 1000000, "raw_fixed_width_bitrate_bps": 512000000}
+  ],
+  "fano_uniform_prior_examples_M64": [
+    {"decoder_error_probability": 0.0, "mutual_information_lower_bound_bits": 6.0},
+    {"decoder_error_probability": 0.01, "mutual_information_lower_bound_bits": 5.85943406486909},
+    {"decoder_error_probability": 0.1, "mutual_information_lower_bound_bits": 4.933276414060727}
+  ],
+  "interpretation": "Distinguishable application-visible outputs impose classical information semantics even when the internal quantum state space is much larger. Compact useful outputs need not materialize the full internal state.",
+  "limitations": [
+    "The zero-error result is a fixed-length output-label counting bound, not a computation-time or memory-capacity lower bound.",
+    "Fixed-width bitrate examples are not general Shannon channel-capacity bounds and can change with compression, correlations, side information or a changed application contract.",
+    "Fano values lower-bound mutual information for a specified equiprobable M-way decision problem; they are not automatically qubit counts, transmitted physical bits or operation counts.",
+    "No performance or economic advantage follows from these bounds alone."
+  ]
+}
