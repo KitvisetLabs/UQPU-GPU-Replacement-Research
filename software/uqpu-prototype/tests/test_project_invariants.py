@@ -49,6 +49,27 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertIn("host-RAM", charter)
         self.assertIn("MEMORY_REPLACEMENT.md", goals)
 
+    def test_ultimate_north_star_and_biomass_carbon_pillar_are_permanent(self):
+        invariants = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
+        goals = (ROOT / "GOALS.md").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        north_star_path = ROOT / "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md"
+        carbon_path = ROOT / "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md"
+        self.assertIn("INV-029", invariants)
+        self.assertIn("INV-030", invariants)
+        self.assertTrue(north_star_path.exists())
+        self.assertTrue(carbon_path.exists())
+        self.assertIn(north_star_path.name, readme)
+        self.assertIn(carbon_path.name, readme)
+        self.assertIn("INV-029", goals)
+        self.assertIn("INV-030", goals)
+        carbon = carbon_path.read_text(encoding="utf-8")
+        for material in ("Gold (Au)", "Copper (Cu)", "Silver (Ag)", "Lithium (Li)", "Cobalt (Co)", "Nickel (Ni)", "Rare-earth"):
+            self.assertIn(material, carbon)
+        self.assertIn("does **not** claim", carbon)
+        moonshot = (ROOT / "software" / "uqpu-prototype" / "uqpu" / "moonshot_contract.py").read_text(encoding="utf-8")
+        self.assertIn('"npu"', moonshot)
+
     def test_strategic_master_plan_preserved(self):
         master = ROOT / "docs" / "KANUSANAN_PONGPANNA_MODEL.md"
         self.assertTrue(master.exists())
