@@ -1,5 +1,19 @@
 # UQPU Project Goals
 
+## Ultimate North Star — Data Center to One Phone
+
+The highest long-term objective of this project is to investigate whether the **useful computing/service capability of an extraordinarily large conventional data-center-scale system can ultimately be compressed into one phone-class physical device**.
+
+The project owner defines the ambition scale as conventional infrastructure whose present-era value would be on the order of **US$10 trillion to US$100 trillion**, while the future phone-class device should cost only **tens of thousands of Thai baht**.
+
+This US$10T–US$100T range is a **user-defined scale proxy, not a claim about the valuation of an individual present-day data center**. The objective must therefore be translated into measurable capability contracts: compute, AI, memory/state, storage, networking/I/O, throughput, latency, quality, reliability, persistence, energy/thermal requirements, physical form factor and total lifecycle cost.
+
+A phone that merely acts as a terminal to a remote data center does not satisfy the ultimate physical-compression objective. Required external QPUs, servers, memory/storage, cryogenics, control electronics, networking, cooling and power infrastructure must be counted honestly.
+
+All other project goals—including 100× economics, the >=100,000,000× moonshot, 100-million-unit GPU/CPU/NPU/RAM/VRAM/storage replacement, quantum-cloud programming, device/material/manufacturing research and the Lane H strategic plan—are stepping stones toward this ultimate North Star.
+
+Canonical detail: `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`.
+
 ## North-star goal
 
 Create a **Universal Quantum Processing Unit (UQPU)** software/hardware architecture whose internal process can differ fundamentally from conventional accelerators, while covering the useful functional workload domains currently served by GPUs, CPUs and NPUs and targeting the functional/economic roles of accelerator VRAM/HBM plus reductions in host-RAM/data-movement burden and persistent-storage dependence where physically meaningful.
