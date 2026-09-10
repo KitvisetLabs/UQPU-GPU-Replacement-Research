@@ -101,3 +101,14 @@ C_{GPU/task}/C_{UQPU-cloud/task} ge 100
 ]
 
 The long-term program succeeds only when broad GPU functional coverage, broad quantum-cloud portability and strong economic advantage converge.
+
+
+## Extreme single-QPU replacement research direction
+
+A permanent parallel moonshot direction is to investigate whether **one quantum computer / one logically unified UQPU execution system can replace the useful completed-task throughput of approximately 100,000,000 competitive GPUs** for specific workload classes.
+
+The paired economic objective is to investigate whether the same useful workload can achieve **at least 100,000,000× lower total financial cost per accepted useful task** than the corresponding competitive GPU fleet, after full end-to-end accounting.
+
+These are **research targets, not current capability claims**. A result may count only when the workload/output-quality contract is identical or defensibly equivalent and the comparison includes throughput, latency, state preparation, shots, QEC/error mitigation, retries, host compute, memory/data movement, networking, cooling/energy, utilization, capital/provider charges, maintenance and output reconstruction.
+
+This direction must be developed in parallel with the broader UQPU research rather than replacing the staged evidence program. Intermediate results at smaller multipliers remain valuable evidence toward or against the hypothesis.
