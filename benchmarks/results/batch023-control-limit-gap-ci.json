@@ -1,0 +1,43 @@
+{
+  "schema": "uqpu-batch023-control-limit-gap-ci-v1",
+  "evidence_level": "CALIBRATION_SNAPSHOT_DERIVED_BOUND",
+  "source_github_actions_run_id": 34458341082,
+  "source_backend": "generic_backend_120q_fake_kingston_v2",
+  "source_backend_name": "fake_kingston",
+  "real_qpu_executed": false,
+  "actual_gate_energy_measured": false,
+  "actual_quantum_speed_limit_gap_measured": false,
+  "engineering_speedup_demonstrated": false,
+  "fixtures": {
+    "triangle": {
+      "active_physical_qubits": [108, 109, 110],
+      "included_instruction_count": 31,
+      "excluded_instruction_counts": {"measure": 3, "rz": 42},
+      "summed_included_instruction_duration_seconds": 1.316e-6,
+      "summed_duration_is_wall_clock_latency": false,
+      "operations": {
+        "sx": {"count": 21, "duration_seconds": 3.2e-8, "ml_required_mean_energy_joule_for_equal_bound": 5.1766173046875e-27, "ml_equivalent_energy_frequency_hz": 7812500.0},
+        "x": {"count": 1, "duration_seconds": 3.2e-8, "ml_required_mean_energy_joule_for_equal_bound": 5.1766173046875e-27, "ml_equivalent_energy_frequency_hz": 7812500.0},
+        "cz": {"count": 9, "duration_seconds": 6.8e-8, "ml_required_mean_energy_joule_for_equal_bound": 2.4364228492647058e-27, "ml_equivalent_energy_frequency_hz": 3676470.588235294}
+      }
+    },
+    "er6": {
+      "active_physical_qubits": [69, 68, 67, 66, 65, 64],
+      "included_instruction_count": 62,
+      "excluded_instruction_counts": {"measure": 6, "rz": 324},
+      "summed_included_instruction_duration_seconds": 2.92e-6,
+      "summed_duration_is_wall_clock_latency": false,
+      "operations": {
+        "sx": {"count": 36, "duration_seconds": 3.2e-8, "ml_required_mean_energy_joule_for_equal_bound": 5.1766173046875e-27, "ml_equivalent_energy_frequency_hz": 7812500.0},
+        "cz": {"count": 26, "duration_seconds": 6.8e-8, "ml_required_mean_energy_joule_for_equal_bound": 2.4364228492647058e-27, "ml_equivalent_energy_frequency_hz": 3676470.588235294}
+      }
+    }
+  },
+  "interpretation": "The inverse ML values are mathematical equality scales only. A true observed-to-bound ratio requires mean energy above ground for the same physical evolution and a justified quantum-speed-limit theorem.",
+  "limitations": [
+    "Saved fake-backend calibration snapshot, not live QPU timing evidence.",
+    "Inverse ML energy is not measured pulse, device, qubit, cryogenic or wall-plug energy.",
+    "Instruction-duration sums are not wall-clock circuit latency.",
+    "Not every hardware gate is an orthogonal-state transition."
+  ]
+}
