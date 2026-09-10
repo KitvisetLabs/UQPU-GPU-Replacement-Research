@@ -197,3 +197,18 @@ Full report: [Batch 012](BATCH_012_QAOA_PROGRAMMING_AND_SIMULATION.md). No REAL_
 | H | Article 009 software gate updated | STRATEGIC_RESEARCH | Next evidence-based experiment |
 
 See [Batch 013](BATCH_013_INDEPENDENT_SDK_AND_ROUTING.md); no hardware or economic win claimed.
+
+
+## Batch 014
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | finite-shot/readout sensitivity on verified QAOA fixtures | SYNTHETIC_NOISE_SIMULATION | calibrated target model |
+| B | provider lowering + independent Qiskit verification preserved | SDK_VERIFIED/DRY_RUN | authorized backend target |
+| C | shot/output sensitivity now explicit; no RAM-equivalence claim | MODEL/MEASUREMENT CONTRACT | measured transfer/memory |
+| D | routed gate overhead remains hardware requirement input | COMPILER EVIDENCE | dated calibration/connectivity |
+| E | no material-cost claim added | GOVERNED RESEARCH | functional-unit measurement |
+| F | 149 core tests pass; reproducible sensitivity experiment | CI_MEASURED | competitive GPU + real-QPU economics |
+| G | calibration is now an explicit metrology input | ENGINEERING CONTRACT | calibration/metrology dataset |
+| H | capital gate remains software/calibration evidence before paid scale | STRATEGIC_RESEARCH | bounded first QPU spend |
+
+The project has moved from compiler-only evidence to independent SDK verification and controlled synthetic sensitivity, but the headline >=100x–100M× objective remains unverified.
