@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class ConventionalSystemCost:
-    cpu: float=0.0; gpu: float=0.0; accelerator_memory: float=0.0
+    cpu: float=0.0; gpu: float=0.0; npu: float=0.0; accelerator_memory: float=0.0
     host_memory: float=0.0; storage: float=0.0; interconnect_network: float=0.0
     power_cooling: float=0.0; operations: float=0.0
     def validate(self):
