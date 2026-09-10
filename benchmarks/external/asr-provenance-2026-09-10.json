@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-10",
+  "method": "A-SR",
+  "title": "A-SR: Self-Evolving Agentic LLMs for Symbolic Regression via Hierarchical Coordination",
+  "arxiv": "2608.04872",
+  "arxiv_date": "2026-08-05",
+  "status": "LITERATURE_ONLY_NOT_EXECUTED_BY_UQPU",
+  "reported_results": {
+    "benchmark_scope": "four LSR-Synth scientific domains in LLM-SRBench",
+    "backbone": "Llama3.1-8B-Instruct",
+    "A_SR_average_Acc_at_0_01_percent": 48.30,
+    "stated_DE_baseline_average_Acc_at_0_01_percent": 25.79
+  },
+  "reported_budget_protocol": {
+    "maximum_evaluated_candidates_per_task": 400,
+    "early_profiling_budget": 80,
+    "budget_counts": "evaluated formulas",
+    "raw_llm_tokens_in_primary_budget": false
+  },
+  "uqpu_interpretation": {
+    "candidate_budget_value": "Useful for defining equal proposal/evaluator opportunity.",
+    "limitation": "Equal evaluated-candidate counts are not sufficient to establish equal compute, energy or monetary cost when methods differ in LLM calls, token counts, optimizer work, parallelism and wall time.",
+    "required_EQN_002C_ledger": [
+      "evaluated candidates",
+      "LLM calls",
+      "prompt tokens",
+      "completion tokens",
+      "continuous-optimizer evaluations",
+      "wall time",
+      "peak host/GPU memory when measurable",
+      "model/provider and hardware provenance"
+    ],
+    "BANK_LLM_UNION_requirement_retained": true
+  },
+  "non_claims": [
+    "UQPU has not reproduced A-SR results",
+    "UQPU has not executed official gated LLM-SRBench numerical bytes",
+    "reported accuracy does not demonstrate a new physical law",
+    "reported accuracy does not imply equal compute or cost"
+  ]
+}
