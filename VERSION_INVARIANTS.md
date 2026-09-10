@@ -43,6 +43,9 @@ The repository includes automated policy tests that check permanent mission mark
 | INV-028 | Dedicated GitHub folders for lanes A–H, maximum 16 directory levels from repository root, primary artifact ownership, and integration-first cross-lane interfaces through the shared integration hub | Yes |
 | INV-029 | Ultimate North Star: compress a user-defined $10T–$100T data-center-scale capability envelope into one future phone-class device costing only tens of thousands of THB, judged by equivalent useful service contracts rather than dollar-value analogy | Yes |
 | INV-030 | Pangola/biomass carbon innovation is a permanent strategic pillar for replacing, minimizing or recovering expensive technology minerals/materials across the full industrial stack | Yes |
+| INV-031 | Ultra-low-cost biomass-derived bio-oil/biofuel is a permanent strategic pillar; compare accepted liquid-energy/fuel function with full process, upgrading, logistics, coproduct and financing cost | Yes |
+| INV-032 | Ultra-low-cost fusion electricity is a permanent strategic pillar; judge success by net reliable delivered electricity and full lifecycle/financing cost, not fusion gain alone | Yes |
+| INV-033 | Interest-cost/R&D-finance compression is a permanent strategic pillar: reduce required principal, financing duration and project risk; any reduction in financing rate/WACC itself requires separate evidence | Yes |
 
 ## INV-028 operational definition
 
@@ -69,3 +72,27 @@ The strategic objective is to use purification, activation, graphitization, hete
 This invariant does not assert elemental transmutation or universal one-for-one substitution. Ordinary carbon processing does not create Au, Cu, Ag, Li, Co, Ni or rare-earth atoms. For every target material the project must identify the **specific incumbent function**—for example electrical conduction/contact, electrochemical ion carrier, catalytic activity, magnetic/optical behavior, thermal spreading, structural support or adsorption—and test the biomass-carbon route against that functional unit. When direct carbon substitution is physically unsuitable, the required research route is critical-material minimization, hybridization, recovery/recycling, chemistry/architecture substitution or system-level elimination.
 
 The canonical public strategy is `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`. INV-030 is a central enabling strategy for INV-029 because extreme data-center-to-phone compression also requires radical reductions in material cost, supply-chain burden, energy, cooling, packaging and manufacturability.
+
+## INV-031 operational definition — Ultra-Low-Cost Biomass Bio-Oil / Biofuel
+
+The project permanently researches how Pangola grass and other abundant biomass/agricultural residues can be converted into **the lowest-cost defensible useful liquid-energy product or refinery-compatible intermediate**. Candidate pathways include fast/catalytic pyrolysis, hydrothermal liquefaction where suitable, gasification-derived liquids, refinery co-processing and integrated liquid-plus-carbon coproduct systems.
+
+Cost must be normalized to accepted product quality and energy/service function. Required accounting includes feedstock collection and moisture/preprocessing, conversion yield, upgrading/hydrogen/catalyst demand, utilities, CAPEX/OPEX, uptime, storage/logistics/distribution, financing and defensible non-double-counted coproduct credits. Crude pyrolysis liquid volume alone is not equivalent to finished diesel/gasoline/jet fuel or refinery feedstock.
+
+The canonical public strategy is `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`. INV-031 is **ACTIVE RESEARCH / NOT_YET_DEMONSTRATED_AT_TARGET_COST**.
+
+## INV-032 operational definition — Fusion Electricity Cost Minimization
+
+Fusion is a permanent strategic energy pillar. The objective is not merely ignition, plasma gain or gross thermal output; it is to minimize **net reliable delivered electricity cost** while meeting safety, reliability, maintainability and manufacturability requirements.
+
+Every serious fusion-economic comparison must account for net output after recirculating power, capacity factor, plant CAPEX, construction duration, magnets/lasers/pulsed-power systems, fuel cycle, blanket/divertor/chamber lifetime, neutron/material damage where applicable, component replacement, remote maintenance, power conversion, cooling, grid/interconnect, decommissioning, financing and uncertainty. Present roadmaps or simulations cannot be represented as commercial cheap electricity.
+
+The canonical public strategy is `03_FUSION_ELECTRICITY_COST_STRATEGY.md`. INV-032 is **ACTIVE LONG-HORIZON RESEARCH / COMMERCIAL LOW-COST FUSION NOT_YET_DEMONSTRATED**.
+
+## INV-033 operational definition — Interest-Cost and R&D-Finance Compression
+
+The project permanently treats financing burden as a first-class engineering/economic objective. Reducing technology, material, fuel, electricity, factory and infrastructure costs can directly reduce required **CAPEX, OPEX, working capital and financed principal**, and therefore reduce absolute interest expense when borrowing terms are otherwise unchanged. Shorter construction and evidence cycles can also reduce the time capital remains tied up.
+
+Lower technical/commercial risk and stronger cash-flow coverage may reduce a project's risk premium or WACC if lenders/investors recognize the improvement, but this second-order effect requires separate evidence. The repository must never claim that cheaper technology or energy automatically lowers central-bank policy rates or economy-wide interest rates, which also depend on inflation, monetary policy, sovereign/currency risk, market structure and credit conditions.
+
+The canonical public strategy is `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`. Every large future research/industrial program should progressively measure financed principal, rate/WACC assumptions, tenor, construction/evidence duration, total interest, capital-at-risk per evidence milestone and lifecycle financing cost per accepted useful service.
