@@ -70,6 +70,29 @@ class ProjectInvariantTests(unittest.TestCase):
         moonshot = (ROOT / "software" / "uqpu-prototype" / "uqpu" / "moonshot_contract.py").read_text(encoding="utf-8")
         self.assertIn('"npu"', moonshot)
 
+    def test_low_cost_energy_and_interest_pillars_are_permanent(self):
+        invariants = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
+        goals = (ROOT / "GOALS.md").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        master = (ROOT / "docs" / "KANUSANAN_PONGPANNA_MODEL.md").read_text(encoding="utf-8")
+        required = {
+            "INV-031": ROOT / "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+            "INV-032": ROOT / "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+            "INV-033": ROOT / "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+        }
+        for invariant, path in required.items():
+            self.assertIn(invariant, invariants)
+            self.assertIn(invariant, goals)
+            self.assertIn(invariant, master)
+            self.assertTrue(path.exists())
+            self.assertIn(path.name, readme)
+            self.assertIn(path.name, goals)
+            self.assertIn(path.name, master)
+        self.assertIn("bio-oil", readme.lower())
+        self.assertIn("fusion", readme.lower())
+        self.assertIn("interest", readme.lower())
+        self.assertIn("automatically lower", (ROOT / "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md").read_text(encoding="utf-8"))
+
     def test_strategic_master_plan_preserved(self):
         master = ROOT / "docs" / "KANUSANAN_PONGPANNA_MODEL.md"
         self.assertTrue(master.exists())
