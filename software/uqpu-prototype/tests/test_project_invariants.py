@@ -61,7 +61,7 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertTrue(carbon_path.exists())
         self.assertIn(north_star_path.name, readme)
         self.assertIn(carbon_path.name, readme)
-        self.assertIn("INV-029", goals)
+        self.assertIn(north_star_path.name, goals)
         self.assertIn("INV-030", goals)
         carbon = carbon_path.read_text(encoding="utf-8")
         for material in ("Gold (Au)", "Copper (Cu)", "Silver (Ag)", "Lithium (Li)", "Cobalt (Co)", "Nickel (Ni)", "Rare-earth"):
