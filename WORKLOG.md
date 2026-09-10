@@ -872,3 +872,9 @@ All eight lanes, master strategy, multilingual references and evidence boundarie
 The project owner clarified a permanent parallel development direction: investigate architectures where one quantum computer / logically unified UQPU system could replace the useful-task output of approximately 100,000,000 GPUs and be at least 100,000,000× more financially economical per accepted useful task.
 
 This has been formalized in GOALS.md and PROJECT_CHARTER.md as a moonshot hypothesis with strict evidence boundaries. It does not change existing measured results and is not presented as demonstrated capability. Future A–H research must test routes toward this target while retaining full-stack equivalent-output accounting and falsifiability.
+
+
+### Strategic direction clarification — universal 100M-unit subsystem moonshot
+The project owner expanded the extreme replacement direction from GPU-only to GPU, CPU, RAM, VRAM/HBM and persistent storage. The permanent hypothesis now asks whether one quantum/UQPU system can replace approximately 100,000,000 conventional units for each subsystem under a rigorously defined useful-function equivalence contract, while achieving >=100,000,000x lower total financial cost for that accepted function.
+
+The project explicitly distinguishes compute equivalence from memory/storage equivalence. No qubit-to-byte shortcut is permitted. This clarification is formalized in GOALS.md and PROJECT_CHARTER.md as INV-026 and must progress alongside all eight research lanes without being represented as an achieved capability.
