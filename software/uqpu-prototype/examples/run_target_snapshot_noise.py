@@ -1,4 +1,4 @@
-"""Batch 016: target-aware noisy simulation from an IBM fake-backend system snapshot.
+"""Target-aware noisy simulation from an IBM fake-backend system snapshot.
 
 This job uses qiskit_ibm_runtime.fake_provider and Qiskit Aer. It does not
 initialize an IBM account, discover live backends, submit a QPU job, or incur
@@ -29,6 +29,14 @@ def qubo_from_portable(payload: dict) -> QuboInstance:
     )
 
 
+def select_fixture(data: dict, fixture_name: str) -> dict:
+    for row in data.get("fixtures", []):
+        if row.get("name") == fixture_name:
+            return row
+    available = sorted(str(row.get("name")) for row in data.get("fixtures", []))
+    raise ValueError(f"unknown fixture {fixture_name!r}; available={available}")
+
+
 def instruction_summary(backend, name: str):
     if name not in backend.target.operation_names:
         return None
@@ -40,6 +48,7 @@ def instruction_summary(backend, name: str):
             errors.append(float(prop.error))
         if getattr(prop, "duration", None) is not None:
             durations.append(float(prop.duration))
+
     def stats(values):
         if not values:
             return None
@@ -50,16 +59,23 @@ def instruction_summary(backend, name: str):
             "median": values[len(values) // 2],
             "max": values[-1],
         }
+
     return {"error": stats(errors), "duration_seconds": stats(durations)}
 
 
-def run(input_path: Path, *, shots: int = 4096, seed: int = 1601):
+def run(
+    input_path: Path,
+    *,
+    fixture_name: str = "triangle",
+    shots: int = 4096,
+    seed: int = 1601,
+):
     from qiskit import qasm3, transpile
     from qiskit_aer import AerSimulator
     from qiskit_ibm_runtime.fake_provider import FakeKingston
 
     data = json.loads(input_path.read_text())
-    fixture = next(row for row in data["fixtures"] if row["name"] == "triangle")
+    fixture = select_fixture(data, fixture_name)
     payload = next(row for row in fixture["providers"] if row["provider_id"] == "ibm_quantum")
     if hashlib.sha256(payload["payload"].encode()).hexdigest() != payload["payload_sha256"]:
         raise ValueError("QASM payload hash mismatch")
@@ -96,7 +112,7 @@ def run(input_path: Path, *, shots: int = 4096, seed: int = 1601):
     packages = {name: importlib.metadata.version(name) for name in package_names}
 
     return {
-        "schema": "uqpu-target-snapshot-noise-v1",
+        "schema": "uqpu-target-snapshot-noise-v2",
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "evidence_level": "CALIBRATION_SNAPSHOT_SIMULATION",
         "backend": {
@@ -146,7 +162,7 @@ def run(input_path: Path, *, shots: int = 4096, seed: int = 1601):
         "limitations": [
             "FakeKingston is a saved system snapshot, not a current live backend calibration.",
             "AerSimulator.from_backend constructs an approximate device noise model; it is not exact hardware behavior.",
-            "Only the 3-qubit triangle correctness fixture is executed in this bounded job.",
+            f"This bounded job executes only the {fixture['name']} correctness fixture.",
             "No queueing, calibration drift after the snapshot, provider billing, mitigation, QEC, energy, or network cost is measured.",
             "This result cannot establish quantum advantage or the 100M-unit moonshot.",
         ],
@@ -161,15 +177,17 @@ if __name__ == "__main__":
         default=Path(__file__).resolve().parents[3] / "benchmarks/results/batch012-qaoa-verification.json",
     )
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--fixture", default="triangle")
     parser.add_argument("--shots", type=int, default=4096)
     args = parser.parse_args()
     if not 1 <= args.shots <= 100_000:
         raise SystemExit("shots must be in 1..100000")
-    result = run(args.input, shots=args.shots)
+    result = run(args.input, fixture_name=args.fixture, shots=args.shots)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n")
     print(json.dumps({
         "backend": result["backend"]["fake_backend_class"],
+        "fixture": result["fixture"]["name"],
         "ideal_optimum_probability": result["ideal_optimum_probability"],
         "snapshot_noisy_optimum_probability": result["snapshot_noisy_optimum_probability"],
         "routed_depth": result["fixture"]["routed_depth"],
