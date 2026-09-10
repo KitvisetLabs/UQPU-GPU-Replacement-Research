@@ -1,0 +1,71 @@
+{
+  "dimension_contract": "z is dimensionless; all candidate polynomial terms are unit-consistent",
+  "evidence_level": "MODEL_ONLY_SYNTHETIC",
+  "new_physical_law_claim": false,
+  "noise_levels": [
+    {
+      "error_only": {
+        "exact_structure_recovery_rate": 0.48046875,
+        "false_discovery_rate": 0.51953125,
+        "median_extrapolation_rmse": 0.1997338130567382,
+        "median_holdout_rmse": 0.010477570667418223
+      },
+      "noise_sigma": 0.01,
+      "parsimony_regularized": {
+        "exact_structure_recovery_rate": 0.87890625,
+        "false_discovery_rate": 0.12109375,
+        "median_extrapolation_rmse": 0.16582028424762255,
+        "median_holdout_rmse": 0.013661098001942873
+      }
+    },
+    {
+      "error_only": {
+        "exact_structure_recovery_rate": 0.4453125,
+        "false_discovery_rate": 0.5546875,
+        "median_extrapolation_rmse": 1.1571844909505646,
+        "median_holdout_rmse": 0.05238785333709162
+      },
+      "noise_sigma": 0.05,
+      "parsimony_regularized": {
+        "exact_structure_recovery_rate": 0.87109375,
+        "false_discovery_rate": 0.12890625,
+        "median_extrapolation_rmse": 0.8413437151855913,
+        "median_holdout_rmse": 0.06743730649927432
+      }
+    },
+    {
+      "error_only": {
+        "exact_structure_recovery_rate": 0.41796875,
+        "false_discovery_rate": 0.58203125,
+        "median_extrapolation_rmse": 2.604011769384986,
+        "median_holdout_rmse": 0.10280342272643775
+      },
+      "noise_sigma": 0.1,
+      "parsimony_regularized": {
+        "exact_structure_recovery_rate": 0.83203125,
+        "false_discovery_rate": 0.16796875,
+        "median_extrapolation_rmse": 1.7170362245051134,
+        "median_holdout_rmse": 0.1343165470326424
+      }
+    },
+    {
+      "error_only": {
+        "exact_structure_recovery_rate": 0.40234375,
+        "false_discovery_rate": 0.59765625,
+        "median_extrapolation_rmse": 5.351807263826803,
+        "median_holdout_rmse": 0.20729377657547127
+      },
+      "noise_sigma": 0.2,
+      "parsimony_regularized": {
+        "exact_structure_recovery_rate": 0.6953125,
+        "false_discovery_rate": 0.3046875,
+        "median_extrapolation_rmse": 3.806984709407824,
+        "median_holdout_rmse": 0.26299399033158805
+      }
+    }
+  ],
+  "parsimony_penalty_strength": 4.0,
+  "program": "INV-035/EQN-002/RG-031",
+  "seed_count": 256,
+  "truth": "y = 1.5*z^2"
+}
