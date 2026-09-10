@@ -2,7 +2,7 @@
 
 ## North-star goal
 
-Create a **Universal Quantum Processing Unit (UQPU)** software/hardware architecture whose internal process can differ fundamentally from a GPU, while covering the full functional workload domain currently served by GPUs and targeting the functional/economic roles of accelerator VRAM/HBM plus reductions in host-RAM/data-movement burden.
+Create a **Universal Quantum Processing Unit (UQPU)** software/hardware architecture whose internal process can differ fundamentally from conventional accelerators, while covering the useful functional workload domains currently served by GPUs, CPUs and NPUs and targeting the functional/economic roles of accelerator VRAM/HBM plus reductions in host-RAM/data-movement burden and persistent-storage dependence where physically meaningful.
 
 ## Mandatory cloud goal
 
@@ -30,13 +30,13 @@ UQPU workload
   -> provider-specific lowering
   -> cloud QPU execution
   -> normalized result
-  -> GPU comparison
+  -> GPU / CPU / NPU / memory / storage comparison as applicable
 ```
 
 ## Memory-system goal
 
 The project must explicitly model and challenge the cost/function of:
-- GPU-local VRAM/HBM;
+- GPU/NPU-local VRAM/HBM or accelerator-local memory;
 - host RAM used to feed accelerators;
 - memory bandwidth;
 - intermediate tensor/frame/simulation materialization;
@@ -54,7 +54,7 @@ UQPU must ultimately cover:
 
 - graphics and rendering
 - ray/path tracing
-- AI training and inference
+- AI training and inference, including NPU-targeted neural workloads
 - tensor and matrix computation
 - scientific/HPC workloads
 - simulation
@@ -66,9 +66,9 @@ UQPU must ultimately cover:
 
 ## Economic goal
 
-Primary target: **at least 100× lower total cost per useful completed task than a competitive GPU + VRAM/HBM + host-memory implementation.**
+Primary target: **at least 100× lower total cost per useful completed task than a competitive conventional implementation**, including GPU, CPU, NPU, VRAM/HBM, host-memory and storage resources required by the workload.
 
-Moonshot target: **up to 100,000,000× lower cost/task** for workload classes where quantum algorithms, provider economics and hardware characteristics make this physically achievable.
+Moonshot target: **up to and beyond 100,000,000× lower cost/task** for workload classes where quantum algorithms, provider economics and hardware characteristics make this physically achievable. The permanent extreme research direction treats **>=100,000,000×** as the target threshold for the 100-million-unit replacement hypothesis.
 
 For cloud execution, total cost includes provider billing, shots, reservations, retries, classical orchestration, error mitigation/QEC, data transfer and output reconstruction.
 
@@ -82,26 +82,22 @@ For cloud execution, total cost includes provider billing, shots, reservations, 
 6. Quantum-native execution is preferred when beneficial.
 7. Reversible deterministic execution exists as a fallback.
 8. End-to-end accounting includes input, state preparation, QEC, measurement and output.
-9. CPU/control electronics are allowed; GPU dependency is not.
+9. CPU/control electronics are allowed where required by a validated hybrid path; dependence on the target conventional accelerator/subsystem must be counted honestly.
 10. Claims must be benchmarked and falsifiable.
 11. Cost targets are goals, not assumed outcomes.
 12. Negative results and provider incompatibilities must be recorded.
 13. Provider discovery is continuous, not a one-time survey.
+14. NPU replacement is evaluated by real neural-workload contracts, not headline TOPS alone.
 
 ## Success definition
 
-A workload is functionally replaced when no GPU is required in the validated execution path and the UQPU produces an accepted result.
+A workload is functionally replaced when the targeted conventional subsystem (GPU, CPU, NPU, RAM, VRAM/HBM or persistent-storage role) is not required in the validated execution path except for explicitly allowed and fully accounted support functions, and the UQPU produces an accepted result under the same useful-output contract.
 
 A cloud provider reaches integration success when it progresses through adapter/dry-run/simulator/real-QPU validation.
 
-A workload is economically surpassed when:
+A workload is economically surpassed when the measured total-cost ratio against the applicable competitive conventional baseline reaches the declared threshold under equivalent accepted output.
 
-[
-C_{GPU/task}/C_{UQPU-cloud/task} ge 100
-]
-
-The long-term program succeeds only when broad GPU functional coverage, broad quantum-cloud portability and strong economic advantage converge.
-
+The long-term program succeeds only when broad conventional-computing functional coverage, broad quantum-cloud portability and strong measured economic advantage converge.
 
 ## Extreme single-QPU replacement research direction
 
@@ -113,21 +109,23 @@ These are **research targets, not current capability claims**. A result may coun
 
 This direction must be developed in parallel with the broader UQPU research rather than replacing the staged evidence program. Intermediate results at smaller multipliers remain valuable evidence toward or against the hypothesis.
 
-
 ## Extreme universal subsystem replacement direction
 
 The single-UQPU moonshot is generalized beyond GPUs. A permanent parallel research direction is to test whether **one quantum computer / one logically unified UQPU system can replace the accepted useful function or useful-work capacity otherwise requiring approximately 100,000,000 units of a competitive conventional subsystem**, including, where a physically meaningful equivalent contract can be defined:
 
 - GPU / accelerator compute;
 - CPU / general compute;
+- **NPU / neural-AI accelerator compute**;
 - RAM;
-- VRAM / HBM;
+- VRAM / HBM / accelerator-local memory;
 - persistent storage such as HDD/SSD.
 
-The paired economic moonshot is **>=100,000,000x lower total financial cost per accepted useful function/task** than the corresponding conventional implementation.
+The paired economic moonshot is **>=100,000,000× lower total financial cost per accepted useful function/task** than the corresponding conventional implementation.
+
+For NPU workloads, equivalence must use actual neural application contracts: model and version, input/output semantics, numeric precision/quantization, accuracy or task-quality threshold, batch/sequence/input shape, latency, throughput, memory traffic and any preprocessing/postprocessing. TOPS, operation count or theoretical peak alone cannot establish NPU replacement.
 
 For RAM/VRAM/storage, "replacement" does not mean that qubits are automatically equivalent to readable classical bytes. The comparison must define capacity, bandwidth, latency, persistence, random access, retention, durability, read/write semantics, error/recovery behavior and useful application outcome. Quantum information that cannot provide the required classical storage semantics does not count as equivalent capacity.
 
 For compute, the comparison must define workload, accepted output quality, throughput and latency. For every subsystem, all classical support, state preparation, QEC/error mitigation, repetitions, I/O, networking, energy/cooling, provider charges/hardware amortization and reconstruction must be included.
 
-The 10^8-unit and 10^8-cost factors are falsifiable research targets, not demonstrated present-day capabilities.
+The 10^8-unit and >=10^8-cost factors are falsifiable research targets, not demonstrated present-day capabilities.
