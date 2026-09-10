@@ -12,11 +12,13 @@ The permanent target is:
 2. **Quantum Cloud Portability** — users of this repository should be able to connect UQPU software to the broadest practical set of quantum cloud providers through provider adapters.
 3. **Economic Supremacy Research Target** — pursue at least **100× lower total cost per useful completed task** than a competitive conventional baseline, with a workload-specific moonshot target at and beyond **100,000,000×**.
 4. **Ultimate Data-Center-to-Phone North Star** — investigate whether the useful capability associated with the owner's user-defined US$10T–US$100T conventional-infrastructure ambition envelope can ultimately be compressed into one phone-class device costing only tens of thousands of Thai baht.
-5. **Open Development** — anyone may study, fork, adapt, extend and contribute according to the repository license and contribution rules.
-6. **Continuous Provider Discovery** — every development cycle must inspect whether new quantum cloud providers, devices, SDKs, APIs, access routes or pricing models have appeared.
-7. **Evidence Discipline** — cost/capability multipliers and extreme-compression objectives are research targets, not guaranteed results. All claims must be supported by end-to-end measurements or clearly labeled models.
+5. **Ultra-Low-Cost Materials / Fuel / Electricity** — permanently research Pangola/biomass-carbon critical-material reduction, ultra-low-cost biomass bio-oil/biofuel and ultra-low-cost fusion electricity as enabling industrial pillars.
+6. **Interest-Cost / R&D-Finance Compression** — reduce financed principal, capital lock-up time, project risk and absolute interest expense; treat any claimed reduction in financing rate/WACC as a separately evidenced effect.
+7. **Open Development** — anyone may study, fork, adapt, extend and contribute according to the repository license and contribution rules.
+8. **Continuous Provider Discovery** — every development cycle must inspect whether new quantum cloud providers, devices, SDKs, APIs, access routes or pricing models have appeared.
+9. **Evidence Discipline** — cost/capability multipliers and extreme-compression objectives are research targets, not guaranteed results. All claims must be supported by end-to-end measurements or clearly labeled models.
 
-The detailed ultimate mission is published at `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`.
+The detailed ultimate mission is published at `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`. The permanent enabling strategies are `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`, `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`, `03_FUSION_ELECTRICITY_COST_STRATEGY.md` and `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`.
 
 ## Permanent Invariants
 
@@ -85,6 +87,8 @@ Quantum-cloud portability during the development path
         +
 Measured economic advantage
         +
+Low-cost materials / fuel / electricity / financing burden
+        +
 Progressive physical integration
         +
 Ultimate phone-class system boundary
@@ -93,6 +97,8 @@ Ultimate phone-class system boundary
 A connection to a QPU alone is not success.
 A simulated speedup alone is not success.
 A narrow quantum algorithm alone is not success.
+A fusion-gain milestone alone is not cheap electricity.
+A low raw biomass price alone is not cheap saleable fuel or advanced material.
 A phone acting only as a remote terminal to an external data center is not final data-center-to-phone physical replacement.
 
 The target is an open system that can progressively execute useful conventional-computing workloads through quantum/UQPU methods and demonstrate end-to-end economic and physical value against competitive conventional stacks.
@@ -144,13 +150,13 @@ The project permanently operates as EIGHT concurrent research lanes A–H. Lane 
 
 **Lane D — Quantum / Photonic / Semiconductor Devices, Chip Architecture, Fabrication & Packaging:** device physics, qubit/photonic/semiconductor architectures, chip processes, packaging, reliability and manufacturability.
 
-**Lane E — Biomass / Advanced Materials / Energy / Cooling / Infrastructure:** Pangola/biomass-derived materials, carbon/graphene and material substitution, power, cooling, facilities, sustainability and infrastructure.
+**Lane E — Biomass / Advanced Materials / Energy / Cooling / Infrastructure:** Pangola/biomass-derived materials, carbon/graphene and material substitution, ultra-low-cost bio-oil/biofuel, fusion electricity, power, cooling, facilities, sustainability and infrastructure.
 
-**Lane F — Economics / Benchmark / Evidence / Integration:** total cost/useful-task, baselines, benchmarks, evidence classification, reproducibility, cross-lane integration and mission scorekeeping.
+**Lane F — Economics / Benchmark / Evidence / Integration:** total cost/useful-task, baselines, benchmarks, energy/fuel economics, financing/interest burden, evidence classification, reproducibility, cross-lane integration and mission scorekeeping.
 
 **Lane G — Quantum Chip Manufacturing Equipment & Software:** research and design of the hardware, software, tooling and factory-production systems needed to manufacture relevant quantum-processing chips and integrated future systems, including DUV/EUV and alternative lithography, deposition, etch, implantation/doping where applicable, cleaning, wafer handling, metrology/inspection, masks, process control, EDA/TCAD/process simulation, automation/robotics, cryogenic/electrical/optical characterization, photonic fabrication, assembly, bonding, packaging and test.
 
-**Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Development, Finance & Future-Industry Research:** continuously research, deepen, test, structure and expand the user's master development/financial plan and related articles from agriculture/Pangola/biomass and cash-flow foundations through materials, energy, semiconductor/photonics/quantum, AI/robotics, biotechnology/health, food/water/agriculture, future cities/infrastructure, global economic networks, space industry and explicitly labeled speculative/far-future concepts, toward the Ketskaew Chulamani social-development vision.
+**Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Development, Finance & Future-Industry Research:** continuously research, deepen, test, structure and expand the user's master development/financial plan and related articles from agriculture/Pangola/biomass and cash-flow foundations through bio-oil, materials, cheap energy/fusion, financing/interest compression, semiconductor/photonics/quantum, AI/robotics, biotechnology/health, food/water/agriculture, future cities/infrastructure, global economic networks, space industry and explicitly labeled speculative/far-future concepts, toward the Ketskaew Chulamani social-development vision.
 
 Lane H must continuously produce research notes/articles/roadmaps/feasibility analyses and publish verified progress to GitHub. Preserve multilingual master-plan references and public links as canonical reference material. Clearly distinguish factual evidence, forecasts, hypotheses, personal/religious vision and speculative technology; do not convert targets or beliefs into scientific claims.
 
@@ -188,3 +194,15 @@ The final phone-class physical-compression claim may not hide essential infrastr
 All earlier project targets—including >=100× economic advantage, >=100,000,000× moonshots, approximately 100-million-unit subsystem replacement, quantum-cloud programming, memory/storage transformation, device/material/manufacturing research and the Lane H financial-development strategy—are to be treated as staged research pathways toward INV-029.
 
 INV-029 is **LONG-HORIZON / NOT_YET_DEMONSTRATED**. It is a falsifiable mission direction, not a claim of current physical feasibility and not a promised calendar delivery date. The canonical detailed milestone schedule is `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`.
+
+### INV-030 — Pangola/Biomass Carbon Strategic Pillar
+The project permanently prioritizes Pangola/biomass-derived carbon and advanced-material research for functional substitution, material minimization, recovery/recycling, hybridization and system redesign to reduce dependence on expensive or supply-constrained technology materials. Ordinary biomass-carbon processing does not create Au, Cu, Ag, Li, Co, Ni or rare-earth atoms, so every claim is judged on the required function and lifecycle economics. Canonical strategy: `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`.
+
+### INV-031 — Ultra-Low-Cost Biomass Bio-Oil / Biofuel
+The project permanently researches the lowest defensible cost for useful biomass-derived liquid fuel or refinery-compatible intermediate, with Pangola grass and other agricultural residues as candidate feedstocks. Evidence must include final accepted product quality, feedstock/preprocessing, physical yield, upgrading/hydrogen/catalysts, utilities, CAPEX/OPEX, uptime, logistics, financing and defensible non-double-counted coproduct credits. Crude liquid yield alone is not a commercial fuel-cost result. Canonical strategy: `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`.
+
+### INV-032 — Fusion Electricity Cost Minimization
+Fusion is a permanent cheap-electricity research pillar. Success is measured by reliable **net delivered electricity cost**, not ignition, plasma gain or gross heat alone. Required economics include recirculating power, capacity factor, CAPEX/construction time, component lifetime, fuel cycle, materials damage, maintenance/remote handling, conversion/cooling, grid interfaces, financing and decommissioning. Commercial ultra-low-cost fusion electricity remains NOT_YET_DEMONSTRATED. Canonical strategy: `03_FUSION_ELECTRICITY_COST_STRATEGY.md`.
+
+### INV-033 — Interest-Cost and R&D-Finance Compression
+The project permanently minimizes financing burden by reducing underlying technology/material/fuel/electricity costs, required CAPEX/OPEX/working capital, financed principal, capital lock-up time and project risk. Lower principal directly lowers absolute interest expense at unchanged terms. Any claim that a lower-cost technology also lowers the financing rate, project WACC, policy rate or economy-wide interest rate must be separately evidenced rather than assumed. Canonical strategy: `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`.
