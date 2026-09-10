@@ -12,7 +12,7 @@ A phone that merely acts as a terminal to a remote data center does not satisfy 
 
 All other project goals—including 100× economics, the >=100,000,000× moonshot, 100-million-unit GPU/CPU/NPU/RAM/VRAM/storage replacement, quantum-cloud programming, device/material/manufacturing research and the Lane H strategic plan—are stepping stones toward this ultimate North Star.
 
-Canonical detail: `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`.
+Canonical detail: `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md` and INV-029.
 
 ## Permanent Strategic Pillar — Pangola/Biomass Carbon for Critical-Material Reduction
 
@@ -25,6 +25,43 @@ This is a materials-and-system strategy, not an elemental-transmutation claim. C
 This pillar is intended to support the full technology stack—semiconductors, quantum/photonics, batteries, AI/NPU/GPU systems, data centers, robotics, energy, aerospace, manufacturing and ultimately the Data-Center-to-One-Phone mission.
 
 Canonical detail: `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md` and INV-030.
+
+## Permanent Strategic Pillar — Ultra-Low-Cost Biomass Bio-Oil / Biofuel
+
+The project permanently researches how to make useful liquid fuel and refinery-compatible biomass intermediates **as inexpensive as scientifically, energetically and economically possible**, using Pangola grass and other abundant agricultural residues where they are physically suitable.
+
+The goal is not cheap crude condensate by itself. Comparisons must normalize to accepted product quality or delivered energy/service and include feedstock collection, drying/preprocessing, conversion yield, upgrading/hydrogen/catalysts, utilities, plant CAPEX/OPEX, uptime, logistics/storage/distribution, financing and defensible coproduct credits.
+
+This program supports agriculture, logistics, construction, mining, manufacturing, backup energy and any future-industry activity that still requires liquid fuels. It is also a financing strategy because lower recurring fuel and plant costs can reduce working-capital and debt requirements.
+
+Canonical detail: `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md` and INV-031.
+
+## Permanent Strategic Pillar — Ultra-Low-Cost Fusion Electricity
+
+The project permanently researches how fusion could ultimately deliver **reliable net electricity at the lowest defensible lifecycle cost**.
+
+Fusion gain, ignition or gross thermal output are not sufficient economic success criteria. Comparisons must include recirculating plant power, net electricity, capacity factor, CAPEX, construction time, fuel-cycle systems, magnets/lasers/pulsed power, blanket/divertor/chamber/component lifetime, materials damage, maintenance and remote handling, replacement parts, conversion efficiency, cooling, grid/interconnect, financing and decommissioning.
+
+Fusion remains a long-horizon research program: commercial ultra-low-cost fusion electricity is not yet demonstrated. The program must compare against the best current and future competing electricity systems rather than an outdated expensive baseline.
+
+Canonical detail: `03_FUSION_ELECTRICITY_COST_STRATEGY.md` and INV-032.
+
+## Permanent Strategic Pillar — Interest-Cost and R&D-Finance Compression
+
+The project permanently treats **financing and interest burden as an engineering/economic variable**. The objective is to reduce the amount of capital that future research, factories and infrastructure must borrow, reduce the duration for which capital is tied up, reduce technology/completion risk and reduce operating-cost volatility.
+
+The direct causal channel is:
+
+```text
+cheaper technology/materials/fuel/electricity
+-> lower CAPEX/OPEX/working-capital need
+-> lower required financed principal and/or shorter financing duration
+-> lower absolute interest expense at unchanged financing terms
+```
+
+Improved reliability, cash-flow coverage and lower technology risk may also reduce a project risk premium or WACC if lenders/investors recognize the improvement, but this effect requires separate evidence. The project must not claim that cheaper technology or energy automatically lowers central-bank policy rates or economy-wide interest rates.
+
+Canonical detail: `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md` and INV-033.
 
 ## North-star goal
 
@@ -98,6 +135,8 @@ Moonshot target: **up to and beyond 100,000,000× lower cost/task** for workload
 
 For cloud execution, total cost includes provider billing, shots, reservations, retries, classical orchestration, error mitigation/QEC, data transfer and output reconstruction.
 
+Across the broader Ketskaew Chulamani industrial program, total-cost optimization must also treat **materials, liquid fuel, electricity and financing/interest expense** as first-class inputs rather than external constants.
+
 ## Design principles
 
 1. Same goal/output, different internal process is allowed.
@@ -115,6 +154,9 @@ For cloud execution, total cost includes provider billing, shots, reservations, 
 13. Provider discovery is continuous, not a one-time survey.
 14. NPU replacement is evaluated by real neural-workload contracts, not headline TOPS alone.
 15. Biomass-carbon substitution is evaluated by specific functional-unit performance and lifecycle economics, not by elemental analogy or feedstock price alone.
+16. Bio-oil/fuel is evaluated by final accepted energy/fuel function and full upgrading/logistics/financing cost, not crude liquid yield alone.
+17. Fusion electricity is evaluated by net delivered electricity and lifecycle economics, not plasma gain alone.
+18. Lower capital required directly lowers absolute interest expense at unchanged financing terms; lower financing rates/WACC require separate evidence.
 
 ## Success definition
 
@@ -122,11 +164,17 @@ A workload is functionally replaced when the targeted conventional subsystem (GP
 
 A material dependency is functionally reduced when a biomass-derived carbon/material route demonstrably substitutes the required function, lowers critical-material loading, enables recovery/recycling, or redesigns away the dependency at acceptable quality, reliability and total lifecycle cost.
 
+A biomass liquid-fuel pathway is economically improved only when the same accepted fuel/energy service is delivered at lower total lifecycle cost with measured or defensibly modeled physical yields and quality.
+
+A fusion-electricity pathway is economically improved only when net reliable delivered electricity cost falls under a comparable system boundary; plasma or fusion-gain milestones alone do not establish that result.
+
+A financing improvement must distinguish lower **absolute interest expense from reduced principal/duration** from any separately evidenced reduction in the **financing rate/WACC**.
+
 A cloud provider reaches integration success when it progresses through adapter/dry-run/simulator/real-QPU validation.
 
 A workload is economically surpassed when the measured total-cost ratio against the applicable competitive conventional baseline reaches the declared threshold under equivalent accepted output.
 
-The long-term program succeeds only when broad conventional-computing functional coverage, broad quantum-cloud portability, strong measured economic advantage, manufacturable material systems and progressive physical compression converge.
+The long-term program succeeds only when broad conventional-computing functional coverage, broad quantum-cloud portability, strong measured economic advantage, manufacturable material systems, low-cost energy/fuel/financing and progressive physical compression converge.
 
 ## Extreme single-QPU replacement research direction
 
