@@ -26,6 +26,32 @@ A phone that merely acts as a terminal to an external data center does **not** s
 
 **Scientific boundary:** ordinary carbon processing cannot create gold, copper, silver, lithium, cobalt, nickel or rare-earth atoms. Every material claim must therefore identify the exact incumbent function and prove a functional-unit advantage. When direct carbon substitution is unsuitable, the project must pursue minimization, recovery/recycling, hybridization or system redesign rather than force a false one-for-one claim.
 
+# PERMANENT STRATEGIC PILLAR — ULTRA-LOW-COST BIOMASS BIO-OIL / BIOFUEL
+
+> Research how to make useful liquid fuel and refinery-compatible biomass intermediates **as inexpensive as scientifically, energetically and economically possible**, with Pangola grass and other abundant agricultural residues as candidate feedstocks.
+>
+> The comparison boundary includes feedstock collection, moisture/preprocessing, conversion yield, upgrading/hydrogen/catalysts, utilities, CAPEX/OPEX, storage/logistics, financing and defensible coproduct credits. Crude pyrolysis liquid volume alone is not equivalent to finished fuel.
+
+**Canonical strategy:** [02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md](02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md) — permanent under **INV-031**.
+
+# PERMANENT STRATEGIC PILLAR — ULTRA-LOW-COST FUSION ELECTRICITY
+
+> Research how fusion could ultimately provide **reliable net electricity at the lowest defensible lifecycle cost**. Fusion gain, ignition or gross thermal power alone do not satisfy the economic objective.
+>
+> The cost boundary includes recirculating power, net electric output, capacity factor, plant CAPEX, construction time, fuel cycle, magnets/lasers/pulsed systems, blanket/divertor/chamber lifetime, materials damage, maintenance/remote handling, replacement parts, power conversion, cooling, grid interfaces, financing and decommissioning.
+
+**Canonical strategy:** [03_FUSION_ELECTRICITY_COST_STRATEGY.md](03_FUSION_ELECTRICITY_COST_STRATEGY.md) — permanent under **INV-032**.
+
+# PERMANENT STRATEGIC PILLAR — INTEREST COST / R&D FINANCE COMPRESSION
+
+> Lower technology, materials, bio-oil/fuel and electricity costs so that future research, factories and infrastructure require **less financed capital and lower absolute interest expense**. Also reduce construction/evidence time and project risk so that financing terms may improve when evidence supports it.
+>
+> **Important boundary:** lower underlying costs directly reduce required principal and therefore absolute interest at unchanged terms; they do **not** automatically lower central-bank policy rates or economy-wide interest rates. Any claimed reduction in WACC/risk premium itself requires separate evidence.
+
+**Canonical strategy:** [04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md) — permanent under **INV-033**.
+
+The four root-level enabling strategies `01`–`04` are intentionally prominent because materials, liquid fuel, electricity and financing cost determine how much future R&D and industrial capability can be built per unit of capital.
+
 ## Core mission
 
 The UQPU/UQCS program researches whether quantum-first computation can replace or semantically eliminate useful functions currently served by:
@@ -76,18 +102,18 @@ A — Quantum Programming / Workloads / Compiler / Runtime — Priority #1
 B — Quantum Cloud / QPU / Provider Integration
 C — RAM / VRAM / HBM / Storage / State & Data Movement
 D — Quantum / Photonic / Semiconductor Devices / Fabrication / Packaging
-E — Pangola/Biomass / Advanced Materials / Energy / Cooling / Infrastructure
-F — Economics / Benchmark / Evidence / Integration
+E — Pangola/Biomass / Advanced Materials / Bio-Oil / Fusion Energy / Cooling / Infrastructure
+F — Economics / Benchmark / Evidence / Interest & Financing / Integration
 G — Quantum Chip Manufacturing Equipment & Software
 H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Research
         -> Integration Gate -> evidence/tests/cost -> GitHub sync
 ```
 
-Lane E treats the Pangola/biomass-carbon strategy as a central materials program. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims. Lane H integrates staged financing and future-industry development with the technical program.
+Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
 
 ## Current evidence status
 
-The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis and finite-shot/synthetic-noise studies.
+The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies and testable energy/financing cost models.
 
 However:
 
@@ -95,7 +121,10 @@ However:
 - no 100-million-unit replacement has been demonstrated;
 - no >=100× or >=100,000,000× real-QPU end-to-end economic advantage has been verified;
 - no data-center-to-phone equivalence has been demonstrated;
-- no universal Au/Cu/Ag/Li/Co/Ni/rare-earth replacement by biomass carbon has been demonstrated.
+- no universal Au/Cu/Ag/Li/Co/Ni/rare-earth replacement by biomass carbon has been demonstrated;
+- no Pangola-derived liquid fuel has yet been certified at the project's ultra-low-cost target;
+- no commercial ultra-low-cost fusion electricity result has been demonstrated;
+- no claim is made that these technology programs automatically reduce economy-wide interest rates.
 
 Negative results and impossible direct substitutions are first-class research outputs.
 
@@ -109,7 +138,7 @@ No paid QPU job should be submitted without credentials, a bounded budget and ex
 
 The complete strategic master plan is preserved here:
 
-- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → carbon/materials → energy → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision.
+- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → bio-oil/carbon/materials → low-cost energy/fusion → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision, with financing/interest compression as a cross-cutting objective.
 - **[STRATEGIC_PLAN_REFERENCES.md](STRATEGIC_PLAN_REFERENCES.md)** — permanent multilingual source/reference index.
 
 The public Thai, English, Chinese, Japanese, Korean and German master-plan links must remain preserved. Strategic, philosophical and speculative concepts are kept separate from experimentally verified scientific claims.
@@ -122,14 +151,17 @@ Read in this order:
 
 1. `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`
 2. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
-3. `PROJECT_CHARTER.md`
-4. `VERSION_INVARIANTS.md`
-5. `docs/RESEARCH_OPERATING_SYSTEM.md`
-6. `docs/KANUSANAN_PONGPANNA_MODEL.md`
-7. `STRATEGIC_PLAN_REFERENCES.md`
-8. `RESEARCH_GAPS.md`
-9. `DECISIONS.md`
-10. `WORKLOG.md`
+3. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
+4. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
+5. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
+6. `PROJECT_CHARTER.md`
+7. `VERSION_INVARIANTS.md`
+8. `docs/RESEARCH_OPERATING_SYSTEM.md`
+9. `docs/KANUSANAN_PONGPANNA_MODEL.md`
+10. `STRATEGIC_PLAN_REFERENCES.md`
+11. `RESEARCH_GAPS.md`
+12. `DECISIONS.md`
+13. `WORKLOG.md`
 
 Then continue from the newest committed state and latest Batch/evidence records.
 
@@ -140,18 +172,20 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `VERSION_INVARIANTS.md` — release-preservation rules
 - `ROADMAP.md` — evidence-gated development path toward phone-class integration
 - `docs/BIOMASS_CRITICAL_MATERIALS_STRATEGY.md` — technical biomass/material-function program
+- `docs/BATCH_021_BIO_OIL_FUSION_INTEREST_COST.md` — integrated cheap-fuel/cheap-electricity/finance research batch
 - `research_lanes/A_quantum_programming_runtime/NPU_REPLACEMENT_TRACK.md` — NPU replacement track
 - `research_lanes/F_economics_benchmark_evidence/NPU_EQUIVALENCE_AND_COST_CONTRACT.md` — NPU comparison contract
+- `software/uqpu-prototype/uqpu/energy_finance.py` — executable energy/financing model
 - `software/uqpu-prototype/` — executable UQPU software prototype
 - `benchmarks/` — benchmark contracts and reproducibility data
 - `docs/EIGHT_LANE_SCOREBOARD.md` — integrated progress scoreboard
 
 ## Open Research — Contributions Welcome
 
-Researchers, developers, physicists, mathematicians, materials scientists, chemists, semiconductor/process engineers, AI/HPC specialists, economists and manufacturing experts are invited to challenge, reproduce and extend the work.
+Researchers, developers, physicists, mathematicians, materials scientists, chemists, semiconductor/process engineers, fusion/energy specialists, AI/HPC specialists, economists, financiers and manufacturing experts are invited to challenge, reproduce and extend the work.
 
 ```text
 Fork -> research/build/test -> document evidence -> Pull Request -> review -> integrate
 ```
 
-The objective is not to force a predetermined conclusion. The objective is to discover how far extreme functional, economic, material and physical compression can actually be pushed under known physics—and to identify what new science would be required when current methods fail.
+The objective is not to force a predetermined conclusion. The objective is to discover how far extreme functional, economic, material, energy, financing and physical compression can actually be pushed under known physics—and to identify what new science would be required when current methods fail.
