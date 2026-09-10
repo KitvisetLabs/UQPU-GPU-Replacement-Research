@@ -47,3 +47,5 @@ The repository includes an automated policy test that checks for the presence of
 
 | INV-025 | Single-QPU ~100,000,000-GPU useful-work replacement + >=100,000,000x cost moonshot; evidence-gated | Yes |
 | INV-026 | Universal ~100,000,000-unit GPU/CPU/RAM/VRAM/storage functional replacement + >=100,000,000x cost moonshot; subsystem-specific equivalence contracts required | Yes |
+
+| INV-027 | Open-frontier search across all scientifically/mathematically plausible depths, including fundamental physics, with falsifiability and evidence gates | Yes |
