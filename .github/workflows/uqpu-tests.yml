@@ -144,6 +144,12 @@ jobs:
           python examples/run_active_target_calibration.py --fixture triangle --output /tmp/uqpu-active-target-calibration.json
           cat /tmp/uqpu-active-target-calibration.json
 
+      - name: Evaluate 3-qubit inverse quantum speed-limit requirements
+        working-directory: software/uqpu-prototype
+        run: |
+          python examples/run_control_limit_gap.py --calibration /tmp/uqpu-active-target-calibration.json --output /tmp/uqpu-control-limit-gap.json
+          cat /tmp/uqpu-control-limit-gap.json
+
       - name: Compute 3-qubit quality-adjusted shot budget
         working-directory: software/uqpu-prototype
         run: |
@@ -161,6 +167,12 @@ jobs:
         run: |
           python examples/run_active_target_calibration.py --fixture er6 --output /tmp/uqpu-active-target-calibration-er6.json
           cat /tmp/uqpu-active-target-calibration-er6.json
+
+      - name: Evaluate 6-qubit inverse quantum speed-limit requirements
+        working-directory: software/uqpu-prototype
+        run: |
+          python examples/run_control_limit_gap.py --calibration /tmp/uqpu-active-target-calibration-er6.json --output /tmp/uqpu-control-limit-gap-er6.json
+          cat /tmp/uqpu-control-limit-gap-er6.json
 
       - name: Compute 6-qubit quality-adjusted shot budget
         working-directory: software/uqpu-prototype
