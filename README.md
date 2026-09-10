@@ -16,6 +16,16 @@
 
 A phone that merely acts as a terminal to an external data center does **not** satisfy the final physical-compression objective. Required remote QPUs/servers, cryogenics, classical control, memory/storage, networking, cooling and power infrastructure must be counted honestly.
 
+# PERMANENT RESEARCH FOUNDATION — FOUNDATIONAL PHYSICS & MATHEMATICS DEEP FRONTIER
+
+> The project is permanently authorized and required to descend to the deepest scientifically relevant layer when needed: **logic and proof, advanced mathematics, information/computational complexity, quantum-information foundations, quantum thermodynamics, quantum field theory and elementary-particle physics, AMO/condensed-matter/many-body/photonics, materials/chemistry, device physics, engineering, algorithms, systems and economics**.
+>
+> Every deep-frontier hypothesis must climb back to the mission through an explicit **mathematical formulation -> causal mechanism -> known-constraint check -> scaling law -> falsifier/observable -> reproducible experiment/proof -> device/system/economic consequence**. Mathematical possibility alone is not physical realizability; physical realizability alone is not engineering feasibility; engineering feasibility alone is not economic advantage.
+
+**Canonical foundation:** [05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) — permanent under **INV-034**, operationalizing the broader INV-027 open-frontier mandate.
+
+This agenda explicitly preserves elementary-particle physics and fundamental mathematics as active upstream research layers while rejecting unsupported appeals to unknown physics. Standard Model, thermodynamic, causality, quantum-information, measurement/readout and energy-time constraints must be treated as research inputs rather than ignored.
+
 # PERMANENT STRATEGIC PILLAR — PANGOLA / BIOMASS CARBON
 
 > Build an advanced-material innovation platform from **Pangola grass and agricultural residues**, especially carbon powders/chars and engineered carbon materials associated with thermochemical conversion and bio-oil production/upgrading/distillation/refining where scientifically applicable.
@@ -50,7 +60,7 @@ A phone that merely acts as a terminal to an external data center does **not** s
 
 **Canonical strategy:** [04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md) — permanent under **INV-033**.
 
-The four root-level enabling strategies `01`–`04` are intentionally prominent because materials, liquid fuel, electricity and financing cost determine how much future R&D and industrial capability can be built per unit of capital.
+The root-level mission/foundation/pillars `00`–`05` are intentionally prominent because the project couples fundamental science, computation, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
 
 ## Core mission
 
@@ -109,11 +119,11 @@ H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Research
         -> Integration Gate -> evidence/tests/cost -> GitHub sync
 ```
 
-Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
+The Foundational Physics & Mathematics Deep-Frontier Agenda is a cross-cutting upstream layer feeding **all A–H lanes**. Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
 
 ## Current evidence status
 
-The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies and testable energy/financing cost models.
+The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies, testable energy/financing cost models and executable fundamental-limit helpers.
 
 However:
 
@@ -124,9 +134,10 @@ However:
 - no universal Au/Cu/Ag/Li/Co/Ni/rare-earth replacement by biomass carbon has been demonstrated;
 - no Pangola-derived liquid fuel has yet been certified at the project's ultra-low-cost target;
 - no commercial ultra-low-cost fusion electricity result has been demonstrated;
-- no claim is made that these technology programs automatically reduce economy-wide interest rates.
+- no claim is made that these technology programs automatically reduce economy-wide interest rates;
+- no beyond-established-physics mechanism has been demonstrated to provide a mission-level computational advantage.
 
-Negative results and impossible direct substitutions are first-class research outputs.
+Negative results, impossibility bounds and impossible direct substitutions are first-class research outputs.
 
 ## Open cloud-QPU direction
 
@@ -138,7 +149,7 @@ No paid QPU job should be submitted without credentials, a bounded budget and ex
 
 The complete strategic master plan is preserved here:
 
-- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → bio-oil/carbon/materials → low-cost energy/fusion → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision, with financing/interest compression as a cross-cutting objective.
+- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → bio-oil/carbon/materials → low-cost energy/fusion → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision, with financing/interest compression and foundational-science descent as cross-cutting objectives.
 - **[STRATEGIC_PLAN_REFERENCES.md](STRATEGIC_PLAN_REFERENCES.md)** — permanent multilingual source/reference index.
 
 The public Thai, English, Chinese, Japanese, Korean and German master-plan links must remain preserved. Strategic, philosophical and speculative concepts are kept separate from experimentally verified scientific claims.
@@ -150,18 +161,20 @@ The public Thai, English, Chinese, Japanese, Korean and German master-plan links
 Read in this order:
 
 1. `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`
-2. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
-3. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
-4. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
-5. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
-6. `PROJECT_CHARTER.md`
-7. `VERSION_INVARIANTS.md`
-8. `docs/RESEARCH_OPERATING_SYSTEM.md`
-9. `docs/KANUSANAN_PONGPANNA_MODEL.md`
-10. `STRATEGIC_PLAN_REFERENCES.md`
-11. `RESEARCH_GAPS.md`
-12. `DECISIONS.md`
-13. `WORKLOG.md`
+2. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
+3. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
+4. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
+5. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
+6. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
+7. `PROJECT_CHARTER.md`
+8. `VERSION_INVARIANTS.md`
+9. `docs/RESEARCH_OPERATING_SYSTEM.md`
+10. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
+11. `docs/KANUSANAN_PONGPANNA_MODEL.md`
+12. `STRATEGIC_PLAN_REFERENCES.md`
+13. `RESEARCH_GAPS.md`
+14. `DECISIONS.md`
+15. `WORKLOG.md`
 
 Then continue from the newest committed state and latest Batch/evidence records.
 
@@ -170,11 +183,15 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `GOALS.md` — ultimate, functional and economic goals
 - `PROJECT_CHARTER.md` — permanent mission/invariants
 - `VERSION_INVARIANTS.md` — release-preservation rules
+- `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` — deepest-first foundational research agenda
+- `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md` — broad open-frontier research rule
 - `ROADMAP.md` — evidence-gated development path toward phone-class integration
 - `docs/BIOMASS_CRITICAL_MATERIALS_STRATEGY.md` — technical biomass/material-function program
 - `docs/BATCH_021_BIO_OIL_FUSION_INTEREST_COST.md` — integrated cheap-fuel/cheap-electricity/finance research batch
 - `research_lanes/A_quantum_programming_runtime/NPU_REPLACEMENT_TRACK.md` — NPU replacement track
 - `research_lanes/F_economics_benchmark_evidence/NPU_EQUIVALENCE_AND_COST_CONTRACT.md` — NPU comparison contract
+- `software/uqpu-prototype/uqpu/fundamental_limits.py` — executable Landauer and quantum-speed-limit lower-bound helpers
+- `software/uqpu-prototype/uqpu/frontier_hypothesis.py` — falsifiable deep-frontier hypothesis contract
 - `software/uqpu-prototype/uqpu/energy_finance.py` — executable energy/financing model
 - `software/uqpu-prototype/` — executable UQPU software prototype
 - `benchmarks/` — benchmark contracts and reproducibility data
@@ -182,10 +199,10 @@ Then continue from the newest committed state and latest Batch/evidence records.
 
 ## Open Research — Contributions Welcome
 
-Researchers, developers, physicists, mathematicians, materials scientists, chemists, semiconductor/process engineers, fusion/energy specialists, AI/HPC specialists, economists, financiers and manufacturing experts are invited to challenge, reproduce and extend the work.
+Researchers, developers, particle/fundamental physicists, quantum-information scientists, mathematicians, materials scientists, chemists, semiconductor/process engineers, fusion/energy specialists, AI/HPC specialists, economists, financiers and manufacturing experts are invited to challenge, reproduce and extend the work.
 
 ```text
 Fork -> research/build/test -> document evidence -> Pull Request -> review -> integrate
 ```
 
-The objective is not to force a predetermined conclusion. The objective is to discover how far extreme functional, economic, material, energy, financing and physical compression can actually be pushed under known physics—and to identify what new science would be required when current methods fail.
+The objective is not to force a predetermined conclusion. The objective is to discover how far extreme functional, economic, material, energy, financing and physical compression can actually be pushed under known physics—and to descend into deeper mathematics/physics with explicit falsification gates when current methods fail.
