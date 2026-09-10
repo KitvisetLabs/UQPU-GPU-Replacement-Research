@@ -3,7 +3,21 @@
 
 > **Permanent strategic master document for the UQPU/UQCS project.**
 >
-> This document preserves the strategic intent supplied by Kanusanan Pongpanna. It is free for public study and adaptation according to the source author's stated intent. Scientific, technical, economic, legal and market claims are strategic context and must be independently verified before being treated as evidence.
+> This document preserves the strategic intent supplied by Kanusanan Pongpanna. Scientific, technical, economic, legal and market claims are strategic context and must be independently verified before being treated as evidence.
+
+## HIGHEST TECHNICAL NORTH STAR
+
+The highest long-term computing objective is the project's **Data-Center-to-One-Phone** mission: investigate whether extreme conventional data-center-scale useful capability can ultimately be compressed into one affordable phone-class physical device. See `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md` and INV-029.
+
+## PERMANENT MATERIALS STRATEGIC PILLAR — PANGOLA / BIOMASS CARBON
+
+A central industrial strategy is to transform **Pangola grass and agricultural-residue biomass into carbon-rich powders, chars and advanced carbon materials**, including useful carbonaceous streams from thermochemical conversion and bio-oil production/upgrading/distillation/refining where technically appropriate.
+
+The goal is to use carbon-material innovation to replace the **function**, reduce the loading, recover/recycle, hybridize, or architecturally eliminate expensive/critical technology materials—explicitly including **gold (Au), copper (Cu), silver (Ag), lithium (Li), cobalt (Co), nickel (Ni), rare-earth elements and other high-value minerals/materials** across electronics, semiconductors, quantum/photonics, batteries, AI/data centers, robotics, energy, aerospace and future infrastructure.
+
+This strategy is intended to be highly visible and continuously researched across Lane E, D/G manufacturing/device work, Lane F economics and Lane H industrial-finance strategy. The canonical detailed public directive is `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md` and INV-030.
+
+**Scientific boundary:** carbon processing does not chemically create Au, Cu, Ag, Li, Co, Ni or rare-earth atoms. Therefore a valid substitution claim must compare the exact required function. Where direct carbon substitution is unsuitable, research must pursue critical-material minimization, hybrid materials, recovery/recycling, alternative chemistry or architecture-level elimination rather than asserting elemental replacement.
 
 ## Public multilingual editions
 
@@ -54,7 +68,8 @@ Primary purpose:
 - create cash flow;
 - build markets;
 - accumulate capital;
-- build production/logistics/storage systems.
+- build production/logistics/storage systems;
+- establish controlled biomass feedstock streams for carbon-material R&D.
 
 ### Era 2 — Processing and carbon industry
 Move from low-value raw-material sales toward higher-value products.
@@ -62,10 +77,13 @@ Move from low-value raw-material sales toward higher-value products.
 Strategic chain:
 
 ```text
-feedstock -> processing -> products -> technology -> intellectual property
+feedstock -> thermochemical / biochemical processing
+-> bio-oil + carbonaceous solids + useful coproducts
+-> purification / activation / graphitization / material engineering
+-> components -> technology -> intellectual property
 ```
 
-Research includes biomass-derived carbon materials, bio-based materials, energy products and industrial products.
+Research includes biomass-derived carbon materials, bio-based materials, energy products and industrial products, with the permanent critical-material substitution/minimization/recovery objective defined in INV-030.
 
 ### Era 3 — Energy and advanced materials
 Research/investment scope:
@@ -75,12 +93,12 @@ Research/investment scope:
 - solid-state batteries
 - hydrogen
 - advanced carbon materials
-- graphene
+- graphene and graphitic structures
 - nanomaterials
 - lightweight/high-strength materials
 - smart materials
 - carbon capture
-- advanced recycling
+- advanced recycling and critical-mineral recovery
 - long-horizon fusion research if commercially relevant evidence emerges
 
 ### Era 4 — Electronics and future computing
@@ -90,10 +108,10 @@ Strategic industrial progression:
 Semiconductor
 -> Advanced Chip
 -> Photonic Chip
--> AI Accelerator
+-> AI Accelerator / NPU
 -> Neuromorphic Computing
 -> Quantum Chip
--> Quantum Computing
+-> Quantum Computing / UQPU-UQCS
 ```
 
 Also:
@@ -102,6 +120,7 @@ Also:
 - edge computing
 - AI infrastructure
 - large-scale networking
+- extreme system miniaturization toward the phone-class North Star
 
 Goal: progress from technology user toward technology creator.
 
@@ -213,14 +232,16 @@ Its planning principle for this project is:
 ## Strategic ladder
 
 ```text
-Agriculture / Biomass
--> Processing / Carbon Industry
+Agriculture / Pangola / Biomass
+-> Bio-oil / Carbon Industry
+-> Critical-Material Functional Substitution / Recovery
 -> Energy / Advanced Materials
 -> Semiconductor / Photonic / Quantum
--> AI / Robotics
--> Biotechnology
--> Food / Water / Future Agriculture
--> Future Cities / Infrastructure
+-> AI / NPU / Robotics
+-> Integrated UQPU/UQCS
+-> Extreme Data-Center Compression
+-> Phone-Class Computing North Star
+-> Biotechnology / Food / Water / Future Cities
 -> Global Economy / Industrial Networks
 -> Space Industry
 -> Speculative Far-Future Research
@@ -229,15 +250,16 @@ Agriculture / Biomass
 
 ## Biomass-to-future-technology integration
 
-Pangola grass and agricultural residues are a permanent UQCS feedstock research track.
+Pangola grass and agricultural residues are a permanent UQCS feedstock research track and a central strategic pillar rather than a side project.
 
 They may contribute through:
+- carbon powders/chars and advanced carbon materials;
 - functional substitution for expensive materials;
 - critical-mineral minimization;
 - recovery/recycling media;
-- carbon materials;
-- activated carbon;
+- activated/porous carbon;
 - hard/graphitic carbon where feasible;
+- graphene/CNT-like or other nanostructured carbon where technically/economically achievable;
 - cellulose/nanocellulose;
 - lignin-derived materials;
 - composites;
@@ -247,19 +269,20 @@ They may contribute through:
 - structural/packaging materials;
 - energy products.
 
-Ordinary chemistry cannot transmute biomass into Au, Cu, Ag or rare-earth elements. If a direct material substitution is impossible, the project must pursue minimization, recovery/recycling, hybridization or architectural elimination.
+Ordinary chemistry cannot transmute biomass into Au, Cu, Ag, Li, Co, Ni or rare-earth elements. If a direct material substitution is impossible, the project must pursue minimization, recovery/recycling, hybridization, alternative chemistry or architectural elimination.
 
 ## Relation to UQPU/UQCS
 
 This strategic plan is integrated into:
+- the ultimate data-center-to-phone mission;
 - quantum cloud portability;
-- CPU/GPU functional replacement;
+- CPU/GPU/NPU functional replacement;
 - VRAM/HBM/RAM/storage research;
 - semiconductor fabrication and lithography;
 - photonics;
 - quantum hardware;
 - data-center infrastructure;
-- biomass/advanced materials;
+- Pangola/biomass carbon and critical-material substitution;
 - power/cooling;
 - AI automation;
 - staged financing and commercialization.
@@ -267,7 +290,8 @@ This strategic plan is integrated into:
 The permanent computing objective remains:
 - full conventional-computing functional coverage where physically possible;
 - >=100× lower total cost per useful task as the minimum research target;
-- up to 100,000,000× as a workload-specific moonshot;
+- >=100,000,000× as an extreme workload/subsystem moonshot;
+- progressive physical/economic compression toward one phone-class device;
 - rigorous evidence and full-stack accounting.
 
 ## Permanent preservation rule
@@ -275,10 +299,12 @@ The permanent computing objective remains:
 Every meaningful GitHub progress update/release must:
 1. preserve this document;
 2. preserve all multilingual source links above;
-3. keep a visible README link to this document;
-4. mention this master plan in the project's strategic-reference section;
-5. maintain its relationship to current UQCS research;
-6. record broken/inaccessible source links instead of silently deleting them;
-7. preserve clear separation between strategic vision, religious/philosophical context, speculative far-future concepts and experimentally verified science.
+3. preserve `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`;
+4. preserve `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`;
+5. keep visible README links to the master strategy and the two root-level strategic pillars;
+6. mention this master plan in the project's strategic-reference section;
+7. maintain its relationship to current UQCS research;
+8. record broken/inaccessible source links instead of silently deleting them;
+9. preserve clear separation between strategic vision, religious/philosophical context, speculative far-future concepts and experimentally verified science.
 
-This rule is enforced through project invariants and CI checks.
+This rule is enforced through project invariants and CI-oriented project governance.
