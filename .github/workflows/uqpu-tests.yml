@@ -134,3 +134,9 @@ jobs:
         run: |
           python examples/run_active_target_calibration.py --output /tmp/uqpu-active-target-calibration.json
           cat /tmp/uqpu-active-target-calibration.json
+
+      - name: Compute quality-adjusted shot budget
+        working-directory: software/uqpu-prototype
+        run: |
+          python examples/run_quality_adjusted_snapshot_economics.py --input /tmp/uqpu-target-snapshot-noise.json --output /tmp/uqpu-quality-adjusted-shot-budget.json
+          cat /tmp/uqpu-quality-adjusted-shot-budget.json
