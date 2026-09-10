@@ -851,3 +851,18 @@ H: Article 009 updated with SDK-gate evidence and remaining spending/measurement
 Research sources: official Qiskit QASM3 API and IBM QAOA workflow; inspected correlation-encoding paper abstract/journal metadata without promoting external claims to UQPU measurements.
 
 Priority #1, all eight lanes A–H, multilingual master references and evidence boundaries were preserved. The next gate is frozen-circuit finite-shot/noise sensitivity and calibrated target routing. No paid job, REAL_QPU, quantum advantage or >=100× result is claimed.
+
+
+### Eight-Lane Research Batch 014 — finite-shot / synthetic readout sensitivity
+Checked repository state first: repository remains public; Batch 012 and Batch 013 GitHub Actions runs are successful. Batch 013 independently verified the QAOA path with Qiskit.
+
+Priority #1 advance: added a bounded independent-bitflip readout channel and deterministic finite-shot experiment for the same 3/6/8-qubit QAOA correctness fixtures. GitHub Actions run 34432243877 reports 149 core tests passed and Qiskit verification success.
+
+Exact synthetic-channel optimum probabilities at 0% -> 5% per-bit readout flip:
+- triangle: 0.994208 -> 0.947808;
+- ER6: 0.253917 -> 0.201560;
+- ER8: 0.129883 -> 0.100666.
+
+This is SYNTHETIC_NOISE_SIMULATION only. It is not a calibrated hardware prediction. The next gate is a frozen target plus real calibration snapshot, target-aware noise/transpilation, then bounded authorized QPU execution.
+
+All eight lanes, master strategy, multilingual references and evidence boundaries remain active.
