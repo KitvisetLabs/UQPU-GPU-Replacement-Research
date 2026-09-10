@@ -60,3 +60,44 @@ def margolus_levitin_max_orthogonal_transitions_per_second(
 ) -> float:
     """Reciprocal of the ML minimum transition time; an ideal upper bound."""
     return 1.0 / margolus_levitin_min_seconds(mean_energy_above_ground_joule)
+
+
+def margolus_levitin_required_mean_energy_joule(
+    observed_duration_seconds: float,
+) -> float:
+    """Invert the ML expression for a supplied duration.
+
+    Returns E_req = h/(4*t). This is the mean energy above the ground state
+    that would make the Margolus-Levitin lower bound equal ``t`` in the
+    orthogonal-state setting. It is *not* an estimate of the actual device or
+    control energy and does not prove that a hardware gate is an orthogonal
+    state transition.
+    """
+    duration = _positive_finite("observed_duration_seconds", observed_duration_seconds)
+    return PLANCK_CONSTANT_J_S / (4.0 * duration)
+
+
+def margolus_levitin_equivalent_frequency_hz(
+    observed_duration_seconds: float,
+) -> float:
+    """Return E_req/h = 1/(4*t) for the inverse ML duration diagnostic.
+
+    The result is an equivalent energy-frequency scale, not a qubit resonance,
+    drive frequency, Rabi rate or measured control bandwidth.
+    """
+    duration = _positive_finite("observed_duration_seconds", observed_duration_seconds)
+    return 1.0 / (4.0 * duration)
+
+
+def margolus_levitin_observed_to_bound_ratio(
+    observed_duration_seconds: float,
+    mean_energy_above_ground_joule: float,
+) -> float:
+    """Ratio of an observed duration to the ML lower-bound time.
+
+    Interpret this ratio only when the supplied energy refers to the same
+    physical evolution and the Margolus-Levitin assumptions are appropriate.
+    A large ratio by itself does not imply an engineering speedup is attainable.
+    """
+    observed = _positive_finite("observed_duration_seconds", observed_duration_seconds)
+    return observed / margolus_levitin_min_seconds(mean_energy_above_ground_joule)
