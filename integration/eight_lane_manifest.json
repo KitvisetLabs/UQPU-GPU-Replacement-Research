@@ -2,7 +2,7 @@
   "schema": "uqpu-eight-lane-manifest-v1",
   "max_directory_depth_from_repo_root": 16,
   "priority_lane": "A",
-  "integration_goal": "maximize defensible integration across A-H around the same useful-output and total-cost mission",
+  "integration_goal": "maximize defensible integration across A-H around the same useful-output and total-cost mission without forcing scientifically meaningless coupling",
   "lanes": {
     "A": {"folder": "research_lanes/A_quantum_programming_runtime", "primary": "quantum programming, workloads, compiler, runtime"},
     "B": {"folder": "research_lanes/B_cloud_qpu_provider_integration", "primary": "cloud QPU and provider integration"},
@@ -13,8 +13,16 @@
     "G": {"folder": "research_lanes/G_manufacturing_equipment_factory_software", "primary": "manufacturing equipment, factory software and production systems"},
     "H": {"folder": "research_lanes/H_strategy_finance_future_industries", "primary": "strategy, finance and future industries"}
   },
-  "required_integration_relations": [
-    "A<->B", "A<->C", "A<->F", "B<->F", "C<->F", "D<->G", "D<->E", "D<->F", "E<->G", "E<->F", "G<->F", "H<->A", "H<->B", "H<->C", "H<->D", "H<->E", "H<->F", "H<->G"
+  "integration_review_pairs": [
+    "A<->B", "A<->C", "A<->D", "A<->E", "A<->F", "A<->G", "A<->H",
+    "B<->C", "B<->D", "B<->E", "B<->F", "B<->G", "B<->H",
+    "C<->D", "C<->E", "C<->F", "C<->G", "C<->H",
+    "D<->E", "D<->F", "D<->G", "D<->H",
+    "E<->F", "E<->G", "E<->H",
+    "F<->G", "F<->H",
+    "G<->H"
   ],
+  "mandatory_high_leverage_links": ["A<->B", "A<->C", "A<->F", "B<->F", "C<->F", "D<->G", "D<->E", "D<->F", "E<->G", "E<->F", "G<->F"],
+  "pair_review_rule": "Every integrated batch reviews all 28 lane pairs for meaningful coupling. A pair may be marked N/A with rationale; artificial integration is not required.",
   "evidence_rule": "cross-lane synthesis may not promote weaker evidence to a stronger evidence class"
 }
