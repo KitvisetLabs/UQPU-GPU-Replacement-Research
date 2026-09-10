@@ -43,3 +43,7 @@ The repository includes an automated policy test that checks for the presence of
 | INV-023 | Permanent seven-lane architecture A–G; Lane A Priority #1 while all seven progress concurrently | Yes |
 
 | INV-024 | Permanent eight-lane architecture A–H; Lane H continuously researches/publishes the Ketskaew Chulamani / Kanusanan Pongpanna Model strategic plan | Yes |
+
+
+| INV-025 | Single-QPU ~100,000,000-GPU useful-work replacement + >=100,000,000x cost moonshot; evidence-gated | Yes |
+| INV-026 | Universal ~100,000,000-unit GPU/CPU/RAM/VRAM/storage functional replacement + >=100,000,000x cost moonshot; subsystem-specific equivalence contracts required | Yes |
