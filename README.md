@@ -16,6 +16,38 @@
 
 A phone that merely acts as a terminal to an external data center does **not** satisfy the final physical-compression objective. Required remote QPUs/servers, cryogenics, classical control, memory/storage, networking, cooling and power infrastructure must be counted honestly.
 
+# PERMANENT PRINCIPLE — AI-ASSISTED PHYSICS EQUATION DISCOVERY
+## INV-035 — MAXIMUM IMAGINATION FOR NEW EQUATIONS; MAXIMUM KNOWLEDGE AND EVIDENCE FOR REAL TECHNOLOGY
+
+> **Present physical equations and experimentally supported limits remain binding for present engineering claims. They are not assumed to be the final possible description of nature.**
+>
+> The project permanently uses **mathematics + AI + scientific literature + falsifiable experiment** to search for improved equations, effective laws, mathematical structures and physical models that may expand the space of technologically useful possibilities.
+>
+> **Imagination is deliberately maximized when generating new equations and hypotheses. Knowledge, established evidence, reproducibility and physical validation are deliberately maximized when building real technology.**
+
+This principle is not permission to ignore known physics. A proposed new equation must identify exactly which assumption of the incumbent model changes and must survive dimensional consistency, symmetry/conservation/causality checks where applicable, limiting cases, scaling tests, held-out predictions, counterexample search and a discriminating experiment or proof. An AI-generated or mathematically elegant equation is a **hypothesis**, not a new law of nature, until independent evidence supports it.
+
+The permanent research loop is:
+
+```text
+current equation / limit / unexplained observation
+-> inspect assumptions and mathematical structure
+-> generate alternative equations/models with mathematics + AI
+-> dimensional / symmetry / conservation / causality checks
+-> limiting cases + scaling law
+-> held-out prediction + counterexample search
+-> proof / simulation / discriminating experiment
+-> independent replication
+-> physical primitive / device / algorithm consequence
+-> system + economic consequence
+-> mission-level validation
+```
+
+The program must continuously search newly published research in physics, mathematics and scientific AI. Material findings are to be written as dated GitHub literature-watch/research articles with source provenance, novelty, limitations, evidence level and a falsifiable next experiment. Failed hypotheses and no-go results are first-class outputs.
+
+**Highest-visibility principle:** [00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md](00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md)  
+**Canonical research program:** [06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md) — permanent under **INV-035**.
+
 # PERMANENT RESEARCH FOUNDATION — FOUNDATIONAL PHYSICS & MATHEMATICS DEEP FRONTIER
 
 > The project is permanently authorized and required to descend to the deepest scientifically relevant layer when needed: **logic and proof, advanced mathematics, information/computational complexity, quantum-information foundations, quantum thermodynamics, quantum field theory and elementary-particle physics, AMO/condensed-matter/many-body/photonics, materials/chemistry, device physics, engineering, algorithms, systems and economics**.
@@ -34,7 +66,7 @@ This agenda explicitly preserves elementary-particle physics and fundamental mat
 
 **Canonical strategy:** [01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md](01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md) — permanent under **INV-030**.
 
-**Scientific boundary:** ordinary carbon processing cannot create gold, copper, silver, lithium, cobalt, nickel or rare-earth atoms. Every material claim must therefore identify the exact incumbent function and prove a functional-unit advantage. When direct carbon substitution is unsuitable, the project must pursue minimization, recovery/recycling, hybridization or system redesign rather than force a false one-for-one claim.
+**Scientific boundary:** ordinary carbon processing cannot create gold, copper, silver, lithium, cobalt, nickel or rare-earth atoms. Every material claim must identify the exact incumbent function and prove a functional-unit advantage. When direct carbon substitution is unsuitable, pursue minimization, recovery/recycling, hybridization or system redesign instead of a false one-for-one claim.
 
 # PERMANENT STRATEGIC PILLAR — ULTRA-LOW-COST BIOMASS BIO-OIL / BIOFUEL
 
@@ -54,13 +86,13 @@ This agenda explicitly preserves elementary-particle physics and fundamental mat
 
 # PERMANENT STRATEGIC PILLAR — INTEREST COST / R&D FINANCE COMPRESSION
 
-> Lower technology, materials, bio-oil/fuel and electricity costs so that future research, factories and infrastructure require **less financed capital and lower absolute interest expense**. Also reduce construction/evidence time and project risk so that financing terms may improve when evidence supports it.
+> Lower technology, materials, bio-oil/fuel and electricity costs so that future research, factories and infrastructure require **less financed capital and lower absolute interest expense**. Also reduce construction/evidence time and project risk so financing terms may improve when evidence supports it.
 >
 > **Important boundary:** lower underlying costs directly reduce required principal and therefore absolute interest at unchanged terms; they do **not** automatically lower central-bank policy rates or economy-wide interest rates. Any claimed reduction in WACC/risk premium itself requires separate evidence.
 
 **Canonical strategy:** [04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md) — permanent under **INV-033**.
 
-The root-level mission/foundation/pillars `00`–`05` are intentionally prominent because the project couples fundamental science, computation, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
+The root-level mission/foundation/pillars `00`, `00A`, `01`–`06` are intentionally prominent because the project couples scientific invention, computation, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
 
 ## Core mission
 
@@ -119,11 +151,11 @@ H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Research
         -> Integration Gate -> evidence/tests/cost -> GitHub sync
 ```
 
-The Foundational Physics & Mathematics Deep-Frontier Agenda is a cross-cutting upstream layer feeding **all A–H lanes**. Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
+The Foundational Physics & Mathematics Deep-Frontier Agenda and AI-Assisted Physics Equation Discovery are cross-cutting upstream layers feeding **all A–H lanes**. Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
 
 ## Current evidence status
 
-The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies, testable energy/financing cost models and executable fundamental-limit helpers.
+The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies, testable energy/financing cost models, executable fundamental-limit helpers and an executable equation-discovery hypothesis gate.
 
 However:
 
@@ -135,9 +167,10 @@ However:
 - no Pangola-derived liquid fuel has yet been certified at the project's ultra-low-cost target;
 - no commercial ultra-low-cost fusion electricity result has been demonstrated;
 - no claim is made that these technology programs automatically reduce economy-wide interest rates;
-- no beyond-established-physics mechanism has been demonstrated to provide a mission-level computational advantage.
+- no beyond-established-physics mechanism has been demonstrated to provide a mission-level computational advantage;
+- no AI-generated candidate equation has been established by this project as a new law of nature.
 
-Negative results, impossibility bounds and impossible direct substitutions are first-class research outputs.
+Negative results, impossibility bounds, failed equation candidates and impossible direct substitutions are first-class research outputs.
 
 ## Open cloud-QPU direction
 
@@ -149,7 +182,7 @@ No paid QPU job should be submitted without credentials, a bounded budget and ex
 
 The complete strategic master plan is preserved here:
 
-- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → bio-oil/carbon/materials → low-cost energy/fusion → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision, with financing/interest compression and foundational-science descent as cross-cutting objectives.
+- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → bio-oil/carbon/materials → low-cost energy/fusion → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision, with financing/interest compression, foundational-science descent and AI-assisted equation discovery as cross-cutting objectives.
 - **[STRATEGIC_PLAN_REFERENCES.md](STRATEGIC_PLAN_REFERENCES.md)** — permanent multilingual source/reference index.
 
 The public Thai, English, Chinese, Japanese, Korean and German master-plan links must remain preserved. Strategic, philosophical and speculative concepts are kept separate from experimentally verified scientific claims.
@@ -161,20 +194,22 @@ The public Thai, English, Chinese, Japanese, Korean and German master-plan links
 Read in this order:
 
 1. `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`
-2. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
-3. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
-4. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
-5. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
-6. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
-7. `PROJECT_CHARTER.md`
-8. `VERSION_INVARIANTS.md`
-9. `docs/RESEARCH_OPERATING_SYSTEM.md`
-10. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
-11. `docs/KANUSANAN_PONGPANNA_MODEL.md`
-12. `STRATEGIC_PLAN_REFERENCES.md`
-13. `RESEARCH_GAPS.md`
-14. `DECISIONS.md`
-15. `WORKLOG.md`
+2. `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`
+3. `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`
+4. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
+5. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
+6. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
+7. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
+8. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
+9. `PROJECT_CHARTER.md`
+10. `VERSION_INVARIANTS.md`
+11. `docs/RESEARCH_OPERATING_SYSTEM.md`
+12. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
+13. `docs/KANUSANAN_PONGPANNA_MODEL.md`
+14. `STRATEGIC_PLAN_REFERENCES.md`
+15. `RESEARCH_GAPS.md`
+16. `DECISIONS.md`
+17. `WORKLOG.md`
 
 Then continue from the newest committed state and latest Batch/evidence records.
 
@@ -183,6 +218,8 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `GOALS.md` — ultimate, functional and economic goals
 - `PROJECT_CHARTER.md` — permanent mission/invariants
 - `VERSION_INVARIANTS.md` — release-preservation rules
+- `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md` — highest-visibility permanent equation-discovery principle
+- `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md` — canonical AI-assisted equation-discovery program
 - `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` — deepest-first foundational research agenda
 - `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md` — broad open-frontier research rule
 - `ROADMAP.md` — evidence-gated development path toward phone-class integration
@@ -190,8 +227,9 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `docs/BATCH_021_BIO_OIL_FUSION_INTEREST_COST.md` — integrated cheap-fuel/cheap-electricity/finance research batch
 - `research_lanes/A_quantum_programming_runtime/NPU_REPLACEMENT_TRACK.md` — NPU replacement track
 - `research_lanes/F_economics_benchmark_evidence/NPU_EQUIVALENCE_AND_COST_CONTRACT.md` — NPU comparison contract
-- `software/uqpu-prototype/uqpu/fundamental_limits.py` — executable Landauer and quantum-speed-limit lower-bound helpers
+- `software/uqpu-prototype/uqpu/fundamental_limits.py` — executable physical lower-bound helpers
 - `software/uqpu-prototype/uqpu/frontier_hypothesis.py` — falsifiable deep-frontier hypothesis contract
+- `software/uqpu-prototype/uqpu/equation_discovery.py` — AI/mathematics equation-candidate governance and validation contract
 - `software/uqpu-prototype/uqpu/energy_finance.py` — executable energy/financing model
 - `software/uqpu-prototype/` — executable UQPU software prototype
 - `benchmarks/` — benchmark contracts and reproducibility data
@@ -199,10 +237,10 @@ Then continue from the newest committed state and latest Batch/evidence records.
 
 ## Open Research — Contributions Welcome
 
-Researchers, developers, particle/fundamental physicists, quantum-information scientists, mathematicians, materials scientists, chemists, semiconductor/process engineers, fusion/energy specialists, AI/HPC specialists, economists, financiers and manufacturing experts are invited to challenge, reproduce and extend the work.
+Researchers, developers, particle/fundamental physicists, quantum-information scientists, mathematicians, materials scientists, chemists, semiconductor/process engineers, fusion/energy specialists, scientific-AI researchers, AI/HPC specialists, economists, financiers and manufacturing experts are invited to challenge, reproduce and extend the work.
 
 ```text
 Fork -> research/build/test -> document evidence -> Pull Request -> review -> integrate
 ```
 
-The objective is not to force a predetermined conclusion. The objective is to discover how far extreme functional, economic, material, energy, financing and physical compression can actually be pushed under known physics—and to descend into deeper mathematics/physics with explicit falsification gates when current methods fail.
+The objective is not to force a predetermined conclusion. The objective is to discover how far extreme functional, economic, material, energy, financing and physical compression can actually be pushed under the best validated physics available—and to use mathematics, AI and experiment to search for better explanatory equations when current models leave open questions, while keeping every new candidate falsifiable and evidence-gated.
