@@ -1,0 +1,93 @@
+{
+  "batch": 29,
+  "date": "2026-09-10",
+  "evidence": "THEORY_EXECUTABLE_REPRODUCTION + PUBLIC_METADATA_AUDIT",
+  "external_research_delta": {
+    "llm_srbench_followup": {
+      "arxiv": "2607.28684v1",
+      "current_snapshot_lsr_synth_tasks_reported": 129,
+      "design_consequence": "future EQN-002C must include a semantics-free fixed-library baseline and distinguish library reachability from LLM-specific scientific-prior contribution"
+    }
+  },
+  "llm_srbench_public_count_reconciliation": {
+    "benchmark": "LLM-SRBench",
+    "consistent": false,
+    "declared_total": 239,
+    "delta": 1,
+    "evidence_level": "PUBLIC_METADATA_ONLY",
+    "external_execution_completed": false,
+    "fabricate_239_task_slice": false,
+    "interpretation": "Public metadata is internally inconsistent with the prose total. Use 240 as the released-snapshot count for provenance discussions, but do not claim an official-byte benchmark run until gated data are accessed and pinned directly.",
+    "observed_total": 240,
+    "official_dataset_bytes_accessed": false,
+    "released_snapshot_denominator_indicated_by_public_metadata": 240,
+    "split_counts": {
+      "lsr_synth_bio_pop_growth": 24,
+      "lsr_synth_chem_react": 36,
+      "lsr_synth_matsci": 25,
+      "lsr_synth_phys_osc": 44,
+      "lsr_transform": 111
+    }
+  },
+  "non_claims": [
+    "does not invalidate QOS as a whole",
+    "does not repair Lemma D.20",
+    "does not demonstrate quantum advantage or UQPU replacement",
+    "does not execute LLM-SRBench official gated numerical bytes",
+    "does not demonstrate >=100x or >=100,000,000x advantage"
+  ],
+  "program": [
+    "Issue-1",
+    "QOS-AUDIT-002",
+    "EQN-002C"
+  ],
+  "qos_d20_visible_arithmetic_gap": {
+    "corrected_visible_bound_at_corrected_samples": 0.0498937475698968,
+    "corrected_visible_bound_at_source_samples": 0.06142474700827294,
+    "corrected_visible_bound_exceeds_epsilon_at_source_samples": true,
+    "corrected_visible_bound_meets_epsilon": true,
+    "corrected_visible_integer_samples": 277,
+    "epsilon": 0.05,
+    "evidence_level": "THEORY_EXECUTABLE_ARITHMETIC_AUDIT",
+    "qos_globally_invalidated": false,
+    "quantum_advantage_demonstrated": false,
+    "repaired_d20_theorem_claimed": false,
+    "repetition_number": 0.5,
+    "scope": "arXiv:2604.07639v1 D182-D185 displayed arithmetic",
+    "source_displayed_bound_at_source_samples": 0.049857722256552287,
+    "source_integer_samples_from_displayed_linear_R_bound": 225,
+    "sqrt_r_over_r": 1.4142135623730951,
+    "support_size": 2,
+    "uniform_support_minimum_repetition_number": 0.5,
+    "uqpu_advantage_demonstrated": false
+  },
+  "qos_d20_zero_sample_boundary": {
+    "common_zero_sample_channel_diamond_lower_bound": 0.8660254037844386,
+    "dimension": 4,
+    "epsilon": 0.5,
+    "evidence_level": "THEORY_EXECUTABLE_REPRODUCTION",
+    "printed_d185_sample_count": 0.0,
+    "printed_formula_permits_zero_samples": true,
+    "qos_globally_invalidated": false,
+    "quantum_advantage_demonstrated": false,
+    "repetition_number": 0.0,
+    "row_sparsity": 1,
+    "scope": "arXiv:2604.07639v1 Lemma D.20 / Eq. D185 boundary",
+    "stated_epsilon_cannot_hold_for_both_targets": true,
+    "support_size": 1,
+    "target_output_overlap": 0.5,
+    "target_output_unnormalized_trace_distance": 1.7320508075688772,
+    "uqpu_advantage_demonstrated": false
+  },
+  "qos_source": {
+    "arxiv": "2604.07639v1",
+    "arxiv_current_version_checked_2026-09-10": "v1",
+    "audited_node": "Lemma D.20 / Eqs. D183-D185",
+    "paper": "Exponential quantum advantage in processing massive classical data",
+    "source_repo_latest_commit_date_observed": "2026-09-06",
+    "source_repo_latest_commit_observed": "a3fe8d6fe777750749f5e90131180e016088bdaf"
+  },
+  "quantum_advantage_demonstrated": false,
+  "real_qpu": false,
+  "uqpu_advantage_demonstrated": false
+}
