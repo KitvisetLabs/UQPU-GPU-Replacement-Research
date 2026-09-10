@@ -167,3 +167,7 @@ jobs:
         run: |
           python examples/run_quality_adjusted_snapshot_economics.py --input /tmp/uqpu-target-snapshot-noise-er6.json --output /tmp/uqpu-quality-adjusted-shot-budget-er6.json
           cat /tmp/uqpu-quality-adjusted-shot-budget-er6.json
+
+      - name: Compare mean-energy and CVaR circuits on equal-shot IBM snapshot
+        working-directory: software/uqpu-prototype
+        run: python examples/run_qaoa_objective_target_compare.py
