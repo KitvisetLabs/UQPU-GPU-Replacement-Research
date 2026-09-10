@@ -25,27 +25,23 @@ A version should not be considered compliant if it removes or weakens these inva
 
 ## CI enforcement
 
-The repository includes an automated policy test that checks for the presence of these permanent mission markers in core project documentation.
+The repository includes automated policy tests that check permanent mission markers, the eight-lane directory architecture and the maximum directory-depth rule.
 
 | INV-015 | Complete chip-fabrication equipment/process research scope | Yes |
 | INV-016 | Parallel fab workstreams with cross-system integration | Yes |
-
 | INV-017 | Preserve multilingual Ketskaew Chulamani / Kanusanan Pongpanna strategic plan links and integrate the plan as permanent research context | Yes |
-
-| INV-018 | Cross-chat/session continuity: load and follow the canonical six-lane Research Operating System from GitHub | Yes |
-
+| INV-018 | Cross-chat/session continuity: load and follow the canonical current eight-lane Research Operating System from GitHub | Yes |
 | INV-019 | Software/programming-first use of current cloud QPUs is the primary execution strategy | Yes |
 | INV-020 | Replace CPU/GPU/RAM/VRAM/storage by application outcome, not classical internal mechanism | Yes |
 | INV-021 | Attempt software/cloud path to >=100x economics before escalating to new hardware | Yes |
-
 | INV-022 | Quantum programming is Priority #1 while all established research lanes continue progressing in parallel | Yes |
-
-| INV-023 | Permanent seven-lane architecture A–G; Lane A Priority #1 while all seven progress concurrently | Yes |
-
+| INV-023 | Historical seven-lane architecture milestone preserved as project history; superseded operationally by INV-024 | Yes |
 | INV-024 | Permanent eight-lane architecture A–H; Lane H continuously researches/publishes the Ketskaew Chulamani / Kanusanan Pongpanna Model strategic plan | Yes |
-
-
 | INV-025 | Single-QPU ~100,000,000-GPU useful-work replacement + >=100,000,000x cost moonshot; evidence-gated | Yes |
 | INV-026 | Universal ~100,000,000-unit GPU/CPU/RAM/VRAM/storage functional replacement + >=100,000,000x cost moonshot; subsystem-specific equivalence contracts required | Yes |
-
 | INV-027 | Open-frontier search across all scientifically/mathematically plausible depths, including fundamental physics, with falsifiability and evidence gates | Yes |
+| INV-028 | Dedicated GitHub folders for lanes A–H, maximum 16 directory levels from repository root, primary artifact ownership, and integration-first cross-lane interfaces through the shared integration hub | Yes |
+
+## INV-028 operational definition
+
+The canonical lane-oriented workspace is `research_lanes/`, containing one clearly separated folder for each permanent lane A–H. Future special projects may create nested subfolders under the owning lane or under `integration/`, but repository paths must never exceed **16 directory levels from repository root**. Every substantive artifact has one primary owning lane; shared work uses cross-lane contracts and stable references rather than unnecessary duplication. Existing canonical code/docs may migrate incrementally when moving them can be done without breaking imports, links, reproducibility identifiers, tests or CI. Research direction must maximize scientifically defensible integration among all eight lanes around common useful-output, feasibility and total-cost objectives. See `research_lanes/README.md`, `research_lanes/LANE_DIRECTORY_POLICY.md` and `integration/LANE_INTERFACE_CONTRACT.md`.
