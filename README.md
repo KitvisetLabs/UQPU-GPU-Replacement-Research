@@ -17,7 +17,7 @@
 A phone that merely acts as a terminal to an external data center does **not** satisfy the final physical-compression objective. Required remote QPUs/servers, cryogenics, classical control, memory/storage, networking, cooling and power infrastructure must be counted honestly.
 
 # PERMANENT PRINCIPLE — AI-ASSISTED PHYSICS EQUATION DISCOVERY
-## INV-035 — MAXIMUM IMAGINATION FOR NEW EQUATIONS; MAXIMUM KNOWLEDGE AND EVIDENCE FOR REAL TECHNOLOGY
+## INV-035 — ULTRA IMAGINATION FOR NEW EQUATIONS; ULTRA KNOWLEDGE AND EVIDENCE FOR REAL TECHNOLOGY
 
 > **Present physical equations and experimentally supported limits remain binding for present engineering claims. They are not assumed to be the final possible description of nature.**
 >
