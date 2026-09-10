@@ -1,0 +1,20 @@
+{
+  "schema": "uqpu-eight-lane-manifest-v1",
+  "max_directory_depth_from_repo_root": 16,
+  "priority_lane": "A",
+  "integration_goal": "maximize defensible integration across A-H around the same useful-output and total-cost mission",
+  "lanes": {
+    "A": {"folder": "research_lanes/A_quantum_programming_runtime", "primary": "quantum programming, workloads, compiler, runtime"},
+    "B": {"folder": "research_lanes/B_cloud_qpu_provider_integration", "primary": "cloud QPU and provider integration"},
+    "C": {"folder": "research_lanes/C_state_memory_storage_data_movement", "primary": "state, RAM, VRAM, HBM, storage and data movement"},
+    "D": {"folder": "research_lanes/D_device_chip_fabrication_packaging", "primary": "device, chip, fabrication and packaging"},
+    "E": {"folder": "research_lanes/E_materials_energy_cooling_infrastructure", "primary": "materials, biomass, energy, cooling and infrastructure"},
+    "F": {"folder": "research_lanes/F_economics_benchmarks_evidence_integration", "primary": "economics, benchmarks, evidence and integration accounting"},
+    "G": {"folder": "research_lanes/G_manufacturing_equipment_factory_software", "primary": "manufacturing equipment, factory software and production systems"},
+    "H": {"folder": "research_lanes/H_strategy_finance_future_industries", "primary": "strategy, finance and future industries"}
+  },
+  "required_integration_relations": [
+    "A<->B", "A<->C", "A<->F", "B<->F", "C<->F", "D<->G", "D<->E", "D<->F", "E<->G", "E<->F", "G<->F", "H<->A", "H<->B", "H<->C", "H<->D", "H<->E", "H<->F", "H<->G"
+  ],
+  "evidence_rule": "cross-lane synthesis may not promote weaker evidence to a stronger evidence class"
+}
