@@ -19,6 +19,42 @@ This strategy is intended to be highly visible and continuously researched acros
 
 **Scientific boundary:** carbon processing does not chemically create Au, Cu, Ag, Li, Co, Ni or rare-earth atoms. Therefore a valid substitution claim must compare the exact required function. Where direct carbon substitution is unsuitable, research must pursue critical-material minimization, hybrid materials, recovery/recycling, alternative chemistry or architecture-level elimination rather than asserting elemental replacement.
 
+## PERMANENT LOW-COST LIQUID-ENERGY PILLAR — BIOMASS BIO-OIL / BIOFUEL
+
+The master plan permanently prioritizes making **useful biomass-derived liquid fuel and refinery-compatible intermediates as inexpensive as scientifically and economically possible**. Pangola grass and other agricultural residues are candidate feedstocks, but each pathway must be selected by measured conversion quality and full cost rather than by feedstock price alone.
+
+The accepted cost boundary includes collection, drying/preprocessing, conversion yield, upgrading, hydrogen/catalysts, utilities, CAPEX/OPEX, plant uptime, storage/logistics/distribution, financing and defensible non-double-counted coproduct credits. Crude pyrolysis liquid is not automatically equivalent to finished transport fuel.
+
+This pillar is important to agriculture, logistics, construction, mining, manufacturing, backup energy, aviation/shipping pathways and the wider cost base of future industry. See `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md` and **INV-031**.
+
+## PERMANENT LOW-COST ELECTRICITY PILLAR — FUSION
+
+Fusion is elevated from a secondary long-horizon note to a **permanent strategic cheap-electricity research pillar**. The goal is not merely ignition or plasma gain; it is to minimize **net reliable delivered electricity cost** while satisfying safety, availability, maintainability, materials and manufacturing constraints.
+
+The accounting boundary includes recirculating plant power, net electric output, capacity factor, CAPEX and construction time, fuel cycle, magnets/lasers/pulsed-power systems, component lifetime, neutron/material damage where relevant, remote maintenance, replacement parts, power conversion, cooling, grid interfaces, financing and decommissioning.
+
+Commercial ultra-low-cost fusion electricity is **not yet demonstrated**. Roadmaps and experimental physics milestones must remain separate from commercial cost evidence. See `03_FUSION_ELECTRICITY_COST_STRATEGY.md` and **INV-032**.
+
+## PERMANENT FINANCIAL PILLAR — INTEREST-COST / R&D-FINANCE COMPRESSION
+
+A central financial objective is to make future scientific and industrial development cheaper by reducing the amount of capital that must be financed and the time/risk for which that capital is exposed.
+
+The project therefore explicitly researches the causal chain:
+
+```text
+cheaper technology + cheaper materials + cheaper bio-oil/fuel + cheaper electricity
+-> lower CAPEX / OPEX / working-capital need
+-> lower financed principal and/or shorter financing duration
+-> lower absolute interest expense at unchanged financing terms
+-> stronger cash flow and lower project risk
+-> potentially lower project risk premium / WACC when separately evidenced
+-> more R&D and infrastructure per unit of capital
+```
+
+The direct principal-to-interest reduction is a project-finance mechanism. The plan does **not** assume that cheaper technology automatically lowers a central-bank policy rate or economy-wide interest rates; those broader rates also depend on inflation, monetary policy, sovereign/currency risk, financial-market structure and credit conditions.
+
+Research should progressively measure **capital required per validated milestone, interest paid per validated milestone, time-to-evidence, construction duration, project risk and total lifecycle financing cost per accepted useful service**. See `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md` and **INV-033**.
+
 ## Public multilingual editions
 
 ### ภาษาไทย
@@ -69,29 +105,31 @@ Primary purpose:
 - build markets;
 - accumulate capital;
 - build production/logistics/storage systems;
-- establish controlled biomass feedstock streams for carbon-material R&D.
+- establish controlled biomass feedstock streams for bio-oil and carbon-material R&D.
 
-### Era 2 — Processing and carbon industry
-Move from low-value raw-material sales toward higher-value products.
+### Era 2 — Processing, low-cost bio-oil and carbon industry
+Move from low-value raw-material sales toward higher-value products and lower-cost energy carriers.
 
 Strategic chain:
 
 ```text
 feedstock -> thermochemical / biochemical processing
 -> bio-oil + carbonaceous solids + useful coproducts
+-> stabilization / upgrading / refining where required
 -> purification / activation / graphitization / material engineering
--> components -> technology -> intellectual property
+-> fuels + components + technology + intellectual property
 ```
 
-Research includes biomass-derived carbon materials, bio-based materials, energy products and industrial products, with the permanent critical-material substitution/minimization/recovery objective defined in INV-030.
+Research includes biomass-derived liquid fuels, carbon materials, bio-based materials, energy products and industrial products, with the permanent bio-oil cost objective in INV-031 and critical-material substitution/minimization/recovery objective in INV-030.
 
-### Era 3 — Energy and advanced materials
+### Era 3 — Ultra-low-cost energy and advanced materials
 Research/investment scope:
 - solar and renewable energy
 - energy storage
 - battery technology
 - solid-state batteries
 - hydrogen
+- **fusion electricity cost minimization as a permanent strategic pillar**
 - advanced carbon materials
 - graphene and graphitic structures
 - nanomaterials
@@ -99,7 +137,7 @@ Research/investment scope:
 - smart materials
 - carbon capture
 - advanced recycling and critical-mineral recovery
-- long-horizon fusion research if commercially relevant evidence emerges
+- energy/manufacturing integration that reduces CAPEX, OPEX and financing burden
 
 ### Era 4 — Electronics and future computing
 Strategic industrial progression:
@@ -233,9 +271,10 @@ Its planning principle for this project is:
 
 ```text
 Agriculture / Pangola / Biomass
--> Bio-oil / Carbon Industry
--> Critical-Material Functional Substitution / Recovery
--> Energy / Advanced Materials
+-> Ultra-Low-Cost Bio-Oil / Liquid Energy
+-> Carbon Industry / Critical-Material Functional Substitution / Recovery
+-> Ultra-Low-Cost Electricity / Fusion + Other Energy
+-> Interest-Cost / R&D-Finance Compression
 -> Semiconductor / Photonic / Quantum
 -> AI / NPU / Robotics
 -> Integrated UQPU/UQCS
@@ -253,6 +292,7 @@ Agriculture / Pangola / Biomass
 Pangola grass and agricultural residues are a permanent UQCS feedstock research track and a central strategic pillar rather than a side project.
 
 They may contribute through:
+- ultra-low-cost bio-oil/liquid-energy intermediates where viable;
 - carbon powders/chars and advanced carbon materials;
 - functional substitution for expensive materials;
 - critical-mineral minimization;
@@ -283,9 +323,13 @@ This strategic plan is integrated into:
 - quantum hardware;
 - data-center infrastructure;
 - Pangola/biomass carbon and critical-material substitution;
+- ultra-low-cost biomass bio-oil/biofuel;
+- ultra-low-cost fusion electricity;
 - power/cooling;
 - AI automation;
-- staged financing and commercialization.
+- staged financing and commercialization;
+- direct reduction of required capital and absolute interest expense;
+- evidence-gated research into lower risk premiums/WACC.
 
 The permanent computing objective remains:
 - full conventional-computing functional coverage where physically possible;
@@ -294,6 +338,8 @@ The permanent computing objective remains:
 - progressive physical/economic compression toward one phone-class device;
 - rigorous evidence and full-stack accounting.
 
+The permanent industrial-finance objective additionally seeks to drive down **technology, materials, liquid fuel, electricity and financing burden together**, because the amount and duration of capital required determine how much future research and infrastructure can be built.
+
 ## Permanent preservation rule
 
 Every meaningful GitHub progress update/release must:
@@ -301,10 +347,14 @@ Every meaningful GitHub progress update/release must:
 2. preserve all multilingual source links above;
 3. preserve `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`;
 4. preserve `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`;
-5. keep visible README links to the master strategy and the two root-level strategic pillars;
-6. mention this master plan in the project's strategic-reference section;
-7. maintain its relationship to current UQCS research;
-8. record broken/inaccessible source links instead of silently deleting them;
-9. preserve clear separation between strategic vision, religious/philosophical context, speculative far-future concepts and experimentally verified science.
+5. preserve `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`;
+6. preserve `03_FUSION_ELECTRICITY_COST_STRATEGY.md`;
+7. preserve `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`;
+8. keep visible README links to the master strategy and all root-level strategic pillars;
+9. mention this master plan in the project's strategic-reference section;
+10. maintain its relationship to current UQCS research;
+11. record broken/inaccessible source links instead of silently deleting them;
+12. preserve clear separation between strategic vision, religious/philosophical context, speculative far-future concepts and experimentally verified science;
+13. preserve the distinction between directly lower absolute interest from lower financed principal and separately evidenced changes in financing rates/WACC.
 
 This rule is enforced through project invariants and CI-oriented project governance.
