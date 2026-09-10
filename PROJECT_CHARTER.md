@@ -151,3 +151,11 @@ The project permanently operates as EIGHT concurrent research lanes A–H. Lane 
 Lane H must continuously produce research notes/articles/roadmaps/feasibility analyses and publish verified progress to GitHub. Preserve the multilingual master-plan references and public links as canonical reference material. Clearly distinguish factual evidence, forecasts, hypotheses, personal/religious vision and speculative technology; do not convert targets or beliefs into scientific claims.
 
 **Permanent rule:** Lane A is Priority #1, but A–H all progress concurrently. Every research cycle must explicitly recognize all eight lanes and must not silently delete, merge away, suspend or forget Lane H or any other lane.
+
+
+### INV-025 — Single-QPU 100-million-GPU replacement moonshot
+The project must maintain a parallel research direction testing whether one quantum computer, or one logically unified UQPU execution system, can deliver the accepted useful-work output otherwise requiring approximately **100,000,000 competitive GPUs** for a defined workload class, while targeting **>=100,000,000× lower total financial cost per accepted useful task**.
+
+This is a permanent **moonshot research objective and falsifiable hypothesis**, not an assertion about present quantum computers. Evidence must compare equivalent useful output and account for throughput, latency, state preparation, repetitions/shots, QEC/error mitigation, retries, classical orchestration, RAM/VRAM/data movement, network/interconnect, energy/cooling, utilization, provider charges or hardware amortization, maintenance and reconstruction/verification. Simulation, asymptotic complexity or qubit-count arguments alone cannot establish this invariant as achieved.
+
+Research cycles should develop algorithmic, architectural, cloud-QPU, memory/state, hardware, manufacturing and economic routes toward this target in parallel with the other A–H lanes, while preserving negative results and lower-multiplier intermediate evidence.
