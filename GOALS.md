@@ -14,6 +14,28 @@ All other project goals—including 100× economics, the >=100,000,000× moonsho
 
 Canonical detail: `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md` and INV-029.
 
+## Permanent Research Foundation — Foundational Physics & Mathematics Deep Frontier
+
+A permanent upstream objective is to research **as deeply as necessary from formal logic and advanced mathematics through information/computational complexity, quantum-information foundations, quantum thermodynamics, quantum field theory, elementary-particle physics, AMO/condensed-matter/many-body/photonics, materials/chemistry, device physics and engineering** whenever a credible causal path can help remove a mission bottleneck.
+
+The project must not stop at today's computer abstractions if the decisive limitation lies deeper in physics or mathematics. Conversely, deep theory does not count as progress toward the mission unless it can climb back through a testable chain:
+
+```text
+mathematical formulation
+-> causal physical mechanism
+-> known-constraint check
+-> scaling law
+-> falsifier / observable
+-> proof, simulation or experiment
+-> device / algorithm / material consequence
+-> system / energy / economic consequence
+-> mission-level evidence
+```
+
+This agenda explicitly includes fundamental-particle and QFT research but does **not** assume unknown physics exists or that beyond-Standard-Model effects will help computation. Any such proposal must remain CONCEPT/THEORY until a discriminating test supports it. Thermodynamics, causality, no-cloning, state preparation, measurement/readout and energy-time limits cannot be ignored.
+
+Canonical detail: `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`, INV-034 and the broader INV-027 open-frontier mandate.
+
 ## Permanent Strategic Pillar — Pangola/Biomass Carbon for Critical-Material Reduction
 
 A second highly visible, cross-cutting objective is to develop **carbon powders, chars and advanced carbon materials from Pangola grass and agricultural residues**, including carbonaceous streams arising from thermochemical conversion and bio-oil production/upgrading/distillation/refining where scientifically applicable.
@@ -157,6 +179,7 @@ Across the broader Ketskaew Chulamani industrial program, total-cost optimizatio
 16. Bio-oil/fuel is evaluated by final accepted energy/fuel function and full upgrading/logistics/financing cost, not crude liquid yield alone.
 17. Fusion electricity is evaluated by net delivered electricity and lifecycle economics, not plasma gain alone.
 18. Lower capital required directly lowers absolute interest expense at unchanged financing terms; lower financing rates/WACC require separate evidence.
+19. Deep-frontier science must preserve mathematical precision, known physical constraints, explicit scaling and falsifiability before it can be used to support an engineering or economic claim.
 
 ## Success definition
 
@@ -170,11 +193,13 @@ A fusion-electricity pathway is economically improved only when net reliable del
 
 A financing improvement must distinguish lower **absolute interest expense from reduced principal/duration** from any separately evidenced reduction in the **financing rate/WACC**.
 
+A deep-frontier hypothesis is promoted only when its mathematical formulation, mechanism, constraints, scaling, falsifier, observable, baseline and resource accounting are explicit; promotion to a mission claim still requires the ordinary end-to-end evidence gates.
+
 A cloud provider reaches integration success when it progresses through adapter/dry-run/simulator/real-QPU validation.
 
 A workload is economically surpassed when the measured total-cost ratio against the applicable competitive conventional baseline reaches the declared threshold under equivalent accepted output.
 
-The long-term program succeeds only when broad conventional-computing functional coverage, broad quantum-cloud portability, strong measured economic advantage, manufacturable material systems, low-cost energy/fuel/financing and progressive physical compression converge.
+The long-term program succeeds only when broad conventional-computing functional coverage, broad quantum-cloud portability, strong measured economic advantage, manufacturable material systems, low-cost energy/fuel/financing, foundational-science validity and progressive physical compression converge.
 
 ## Extreme single-QPU replacement research direction
 
