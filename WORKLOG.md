@@ -866,3 +866,9 @@ Exact synthetic-channel optimum probabilities at 0% -> 5% per-bit readout flip:
 This is SYNTHETIC_NOISE_SIMULATION only. It is not a calibrated hardware prediction. The next gate is a frozen target plus real calibration snapshot, target-aware noise/transpilation, then bounded authorized QPU execution.
 
 All eight lanes, master strategy, multilingual references and evidence boundaries remain active.
+
+
+### Strategic direction clarification — 100M GPU single-QPU moonshot
+The project owner clarified a permanent parallel development direction: investigate architectures where one quantum computer / logically unified UQPU system could replace the useful-task output of approximately 100,000,000 GPUs and be at least 100,000,000× more financially economical per accepted useful task.
+
+This has been formalized in GOALS.md and PROJECT_CHARTER.md as a moonshot hypothesis with strict evidence boundaries. It does not change existing measured results and is not presented as demonstrated capability. Future A–H research must test routes toward this target while retaining full-stack equivalent-output accounting and falsifiability.
