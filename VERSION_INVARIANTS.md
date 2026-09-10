@@ -46,6 +46,7 @@ The repository includes automated policy tests that check permanent mission mark
 | INV-031 | Ultra-low-cost biomass-derived bio-oil/biofuel is a permanent strategic pillar; compare accepted liquid-energy/fuel function with full process, upgrading, logistics, coproduct and financing cost | Yes |
 | INV-032 | Ultra-low-cost fusion electricity is a permanent strategic pillar; judge success by net reliable delivered electricity and full lifecycle/financing cost, not fusion gain alone | Yes |
 | INV-033 | Interest-cost/R&D-finance compression is a permanent strategic pillar: reduce required principal, financing duration and project risk; any reduction in financing rate/WACC itself requires separate evidence | Yes |
+| INV-034 | Foundational Physics & Mathematics Deep-Frontier Agenda: research may descend from logic/mathematics through information theory, quantum foundations, QFT/elementary-particle physics and other sciences, then climb to devices/engineering/systems under explicit mechanism, constraints, scaling and falsification gates | Yes |
 
 ## INV-028 operational definition
 
@@ -96,3 +97,11 @@ The project permanently treats financing burden as a first-class engineering/eco
 Lower technical/commercial risk and stronger cash-flow coverage may reduce a project's risk premium or WACC if lenders/investors recognize the improvement, but this second-order effect requires separate evidence. The repository must never claim that cheaper technology or energy automatically lowers central-bank policy rates or economy-wide interest rates, which also depend on inflation, monetary policy, sovereign/currency risk, market structure and credit conditions.
 
 The canonical public strategy is `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`. Every large future research/industrial program should progressively measure financed principal, rate/WACC assumptions, tenor, construction/evidence duration, total interest, capital-at-risk per evidence milestone and lifecycle financing cost per accepted useful service.
+
+## INV-034 operational definition — Foundational Physics & Mathematics Deep-Frontier Agenda
+
+The project permanently treats **foundational mathematics and fundamental physics as an active upstream research layer**, not as an emergency appendix. Research may descend from formal logic, proof, computability and advanced mathematics through information/complexity theory, quantum information, quantum thermodynamics, QFT and elementary-particle physics, AMO/condensed-matter/many-body/photonics, materials and chemistry, then climb through device physics, fabrication, control, algorithms, architecture, systems, energy and economics toward every project target.
+
+Every deep-frontier hypothesis must provide a mathematical formulation, causal physical mechanism, mission bottleneck, known-constraint analysis, scaling law, falsifier, observable, baseline, resource accounting and governed evidence label. Established constraints such as thermodynamics, causality, no-cloning, measurement/readout limits, state preparation and energy-time bounds may not be hand-waved away. A mathematical possibility is not automatically physical realizability; physical realizability is not automatically engineering feasibility; engineering feasibility is not automatically economic advantage.
+
+The canonical public directive is `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`. This operationalizes and makes highly visible the broader open-frontier mandate of INV-027. It is **ACTIVE PERMANENT RESEARCH**, while any individual beyond-established-physics hypothesis remains CONCEPT/THEORY until discriminating evidence supports it.
