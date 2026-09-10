@@ -1,0 +1,61 @@
+{
+  "batch": 30,
+  "date": "2026-09-10",
+  "program": ["Issue-1", "QOS-AUDIT-003", "EQN-002C-2"],
+  "evidence": "THEORY_EXECUTABLE_ERROR_BUDGET_AUDIT + THEORY_EXECUTABLE_SENSITIVITY_ANALYSIS + EXTERNAL_METHOD_AUDIT",
+  "real_qpu": false,
+  "quantum_advantage_demonstrated": false,
+  "uqpu_advantage_demonstrated": false,
+  "qos_source": {
+    "arxiv": "2604.07639v1",
+    "arxiv_submission_date": "2026-04-08",
+    "current_version_checked_2026-09-10": "v1",
+    "source_repo_latest_commit_observed": "a3fe8d6fe777750749f5e90131180e016088bdaf",
+    "source_repo_latest_commit_date_observed": "2026-09-06",
+    "audited_node": "Lemma D.21 / Eqs. D207-D209"
+  },
+  "qos_d21_error_budget": {
+    "dimension": 1048576,
+    "row_sparsity": 1024,
+    "epsilon": 0.01,
+    "n": 20,
+    "m": 10,
+    "counter_oracle_uses": 30,
+    "source_displayed_epsilon2": 0.0005,
+    "triangle_bound_using_source_epsilon2": 0.015,
+    "triangle_bound_over_target_ratio": 1.5,
+    "displayed_allocation_alone_certifies_target": false,
+    "triangle_safe_epsilon2": 0.0003333333333333333,
+    "required_precision_tightening_factor": 1.5,
+    "worst_case_ratio_when_row_sparsity_le_dimension": 2.0,
+    "interpretation": "The final D.21 paragraph states n+ceil(log2(s_r))<=2n approximate counter-oracle uses and sets epsilon_2=epsilon/n. Under the standard telescoping/triangle accounting with an epsilon_2 error per use, that displayed choice alone gives up to (1+m/n)epsilon rather than epsilon. Replacing it by epsilon/(n+m) repairs this constant accounting without changing asymptotic order.",
+    "d21_theorem_refuted": false
+  },
+  "qos_d20_downstream_visible_sensitivity": {
+    "uniform_nondegenerate_minimum_R": 0.5,
+    "maximum_visible_coefficient_inflation_ratio_on_R_in_[0.5,1]": 1.2320006656581772,
+    "maximum_percent_inflation": 23.20006656581772,
+    "asymptotic_order_changed_by_this_specific_correction": false,
+    "interpretation": "The specific D.183 sqrt(R) arithmetic correction from Batch 029 is a bounded constant-factor change on the nondegenerate uniform-support regime. This does not repair the separate D.20 history-selected-coordinate issue and does not establish D.21/D.23 validity."
+  },
+  "eqn_external_delta": {
+    "paper": "A-SR: Self-Evolving Agentic LLMs for Symbolic Regression via Hierarchical Coordination",
+    "arxiv": "2608.04872",
+    "date": "2026-08-05",
+    "reported_lsr_synth_result": "A-SR with Llama3.1-8B-Instruct reports average Acc@0.01 48.30% versus 25.79% for the stated DE baseline across four LSR-Synth domains.",
+    "reported_search_budget": {
+      "evaluated_candidates_per_task": 400,
+      "profiling_candidates": 80,
+      "budget_definition": "evaluated formulas, not raw LLM tokens"
+    },
+    "uqpu_design_consequence": "EQN-002C must report candidate-evaluation parity and a second resource ledger including LLM calls/tokens, optimizer work, wall time and memory. Equal candidate counts alone are not full compute/cost parity.",
+    "uqpu_execution_completed": false
+  },
+  "non_claims": [
+    "does not refute Lemma D.21 as a theorem; it identifies a displayed proof-budget constant shortfall",
+    "does not repair Lemma D.20 or validate downstream QOS theorems",
+    "does not invalidate QOS as a whole",
+    "does not execute A-SR or official gated LLM-SRBench bytes",
+    "does not demonstrate quantum advantage, UQPU replacement, >=100x or >=100,000,000x advantage"
+  ]
+}
