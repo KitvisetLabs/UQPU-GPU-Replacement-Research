@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-10",
+  "benchmark": "LLM-SRBench",
+  "status": "PROVENANCE_PINNED_DATA_NOT_IMPORTED",
+  "paper": {
+    "title": "LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models",
+    "venue": "ICML 2025 Oral",
+    "arxiv": "2504.10415",
+    "declared_problem_count": 239,
+    "declared_lsr_transform": 111,
+    "declared_lsr_synth": 128
+  },
+  "official_code": {
+    "repository": "deep-symbolic-mathematics/llm-srbench",
+    "commit": "6fdbe409b75ea749c0a93c69b6861637d804dec4",
+    "tree": "ef351c4c02bc68fdff1f90a31ea02ec5032d090a"
+  },
+  "official_dataset": {
+    "repository": "nnheui/llm-srbench",
+    "access": "GATED_REQUIRES_USER_ACCEPTANCE",
+    "revision": null,
+    "hdf5_sha256": null,
+    "metadata_counts_observed": {
+      "lsr_synth_bio_pop_growth": 24,
+      "lsr_synth_chem_react": 36,
+      "lsr_synth_matsci": 25,
+      "lsr_synth_phys_osc": 44,
+      "lsr_transform": 111,
+      "total": 240
+    }
+  },
+  "provenance_finding": "The current public dataset metadata sums to 240 examples while the paper/dataset prose states 239. UQPU must not freeze an external benchmark subset until the official dataset revision and exact problem IDs/files are directly pinned after authorized gated access.",
+  "promotion_blockers": [
+    "official gated dataset revision not directly obtained",
+    "official HDF5 checksum not directly verified by UQPU",
+    "239-versus-240 metadata discrepancy unresolved",
+    "no external problem subset has been executed by UQPU yet"
+  ],
+  "third_party_mirrors": "May be used only for exploratory cross-checks; not canonical UQPU evidence until matched element-for-element against the authorized official dataset."
+}

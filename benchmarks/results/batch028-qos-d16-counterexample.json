@@ -1,0 +1,53 @@
+{
+  "batch": 28,
+  "date": "2026-09-10",
+  "program": [
+    "INV-035",
+    "Issue-1",
+    "QOS_ADVERSARIAL_REVIEW"
+  ],
+  "evidence": "THEORY_EXECUTABLE_REPRODUCTION",
+  "real_qpu": false,
+  "quantum_advantage_demonstrated": false,
+  "uqpu_advantage_demonstrated": false,
+  "source": {
+    "paper": "Exponential quantum advantage in processing massive classical data",
+    "arxiv": "2604.07639v1",
+    "arxiv_submission_date": "2026-04-08",
+    "theorem": "D.16",
+    "equation": "D99",
+    "pdf_page": 49,
+    "source_repo": "haimengzhao/quantum-oracle-sketching",
+    "source_repo_latest_commit_observed": "a3fe8d6fe777750749f5e90131180e016088bdaf",
+    "source_repo_latest_commit_date_observed": "2026-09-06"
+  },
+  "audit_reference": {
+    "repository": "gatephys/quantum-oracle-sketching",
+    "commit_observed": "c00a0b5bf2bcfde6a150fd9be6553858e2676ace",
+    "paper_a_version": 2,
+    "doi": "10.5281/zenodo.21704142"
+  },
+  "witness": {
+    "t": 6.283185307179586,
+    "p_max": 0.5,
+    "alphabet_size": 2,
+    "repetition_number": 1.0,
+    "epsilon": 0.05,
+    "samples": 752,
+    "pairs": 376,
+    "printed_threshold": 750.2148110962436,
+    "smallest_even_integer_meeting_threshold": 752,
+    "threshold_condition_satisfied": true,
+    "coherence": 0.9488539991849398,
+    "unnormalized_diamond_error": 0.051146000815060155,
+    "stated_error_target_violated": true
+  },
+  "interpretation": "Executable arithmetic/channel reproduction of the repeated-pair witness against the sufficient threshold printed in Theorem D.16 / Eq. D99 of arXiv:2604.07639v1. This is version- and theorem-scoped and does not invalidate Quantum Oracle Sketching as a whole.",
+  "non_claims": [
+    "does not invalidate the IID core or every QOS theorem",
+    "does not establish or refute all machine-size advantage claims",
+    "does not demonstrate UQPU, GPU, NPU, RAM, VRAM or storage replacement",
+    "does not demonstrate >=100x or >=100,000,000x advantage",
+    "does not use a real QPU"
+  ]
+}
