@@ -20,6 +20,6 @@ AI is permanently assigned to help search literature, generate symbolic candidat
 
 **Permanent slogan for the research method:**
 
-> **Maximum imagination for new equations; maximum knowledge and evidence for real technology.**
+> **ULTRA IMAGINATION FOR NEW EQUATIONS; ULTRA KNOWLEDGE AND EVIDENCE FOR REAL TECHNOLOGY.**
 
 See `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md` and `docs/BATCH_025_AI_ASSISTED_EQUATION_DISCOVERY.md`.
