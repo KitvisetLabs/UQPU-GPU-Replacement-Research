@@ -1,0 +1,89 @@
+{
+  "schema": "uqpu-real-qpu-paired-objective-protocol-v1",
+  "batch": 20,
+  "status": "READY_FOR_AUTHORIZED_PROVIDER_MATCHED_EXECUTION",
+  "evidence_before_execution": "CALIBRATION_SNAPSHOT_SIMULATION",
+  "real_qpu_executed": false,
+  "paid_job_submitted": false,
+  "explicit_budget_authorization_required": true,
+  "workload": {
+    "family": "MaxCut_QUBO_QAOA",
+    "fixture": "er6",
+    "contract_id": "8efaa94bb3306d25",
+    "variables": 6,
+    "exact_reference_objective": -7.0,
+    "reference_use": "acceptance/evaluation only"
+  },
+  "frozen_candidates": [
+    {
+      "id": "mean_energy_p1",
+      "selection_objective": "mean_energy",
+      "gamma": 0.5235987755982988,
+      "beta": 1.3089969389957472,
+      "ideal_optimum_probability": 0.25391734004004546,
+      "saved_snapshot_optimum_probability": 0.234375
+    },
+    {
+      "id": "cvar_alpha_0.5_p1",
+      "selection_objective": "cvar_minimization",
+      "alpha": 0.5,
+      "gamma": 0.6544984694978736,
+      "beta": 2.748893571891069,
+      "ideal_optimum_probability": 0.3088642279953902,
+      "saved_snapshot_optimum_probability": 0.2752685546875
+    }
+  ],
+  "fairness_contract": {
+    "same_provider": true,
+    "same_backend": true,
+    "same_calibration_window": true,
+    "same_shots_per_candidate": true,
+    "same_result_decoding": true,
+    "same_acceptance_rule": true,
+    "same_transpilation_policy": true,
+    "same_error_mitigation_policy": true,
+    "same_job_priority_or_execution_class": true,
+    "no_cross_provider_price_probability_mixing": true
+  },
+  "execution_plan": {
+    "initial_shots_per_candidate": 8192,
+    "preferred_pairing": "submit candidates as closely in time as provider API permits",
+    "repeat_policy": "repeat paired runs only under predeclared budget and retain all runs",
+    "mitigation": "none unless applied identically to both candidates and separately accounted",
+    "target_selection": "choose accessible gate-model backend supporting the frozen six-qubit circuit; record backend identity and dated calibration provenance"
+  },
+  "required_measurements": [
+    "provider",
+    "backend",
+    "job_id",
+    "submission_timestamp",
+    "start_timestamp_if_available",
+    "completion_timestamp",
+    "backend_calibration_timestamp_or_snapshot_id",
+    "physical_qubit_layout",
+    "transpiled_depth",
+    "two_qubit_gate_count",
+    "shots_requested",
+    "shots_completed",
+    "raw_counts_or_provider_result_reference",
+    "optimum_hits",
+    "accepted_output_probability",
+    "confidence_interval_from_sampling",
+    "provider_reported_qpu_time_if_available",
+    "wall_clock_elapsed_time",
+    "queue_time_if_available",
+    "provider_billed_cost_and_currency",
+    "classical_host_orchestration_cost_if_measurable",
+    "error_mitigation_cost_if_used",
+    "retry_or_failed_job_cost",
+    "output_reconstruction_cost"
+  ],
+  "primary_hypothesis": "CVaR-selected frozen circuit has higher real-QPU exact-optimum probability than the mean-energy-selected frozen circuit under an equal-shot provider-matched execution contract.",
+  "falsification": "Record the result as negative or inconclusive if the CVaR probability gain disappears, reverses, or cannot be separated from execution/calibration uncertainty under the paired protocol.",
+  "economic_gate": "No economic advantage label until provider-matched billed cost per accepted optimum and a competitive classical baseline are measured under equivalent useful-output semantics.",
+  "north_star_gate": "No Data-Center-to-Phone, 100M-unit replacement, or >=100M-times advantage inference may be made from this six-qubit experiment.",
+  "provenance": {
+    "selection_evidence_doc": "docs/BATCH_019_QAOA_CVAR_EQUAL_BUDGET.md",
+    "saved_snapshot_result": "benchmarks/results/batch019-qaoa-cvar-target-comparison.json"
+  }
+}
