@@ -14,6 +14,18 @@ All other project goals—including 100× economics, the >=100,000,000× moonsho
 
 Canonical detail: `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`.
 
+## Permanent Strategic Pillar — Pangola/Biomass Carbon for Critical-Material Reduction
+
+A second highly visible, cross-cutting objective is to develop **carbon powders, chars and advanced carbon materials from Pangola grass and agricultural residues**, including carbonaceous streams arising from thermochemical conversion and bio-oil production/upgrading/distillation/refining where scientifically applicable.
+
+The strategic target is to reduce dependence on expensive technology materials—explicitly including **Au, Cu, Ag, Li, Co, Ni, rare-earth elements and other high-value/critical minerals**—by pursuing five routes: **functional substitution, material minimization, recovery/recycling, hybridization, and architecture/chemistry substitution**.
+
+This is a materials-and-system strategy, not an elemental-transmutation claim. Carbon processing does not chemically create Au, Cu, Ag, Li, Co, Ni or rare-earth atoms. Each candidate must therefore be judged by the exact required application function and by cost per delivered functional unit. When direct substitution is physically unsuitable, the project must explicitly move to minimization, recovery, hybridization or redesign rather than force a false claim.
+
+This pillar is intended to support the full technology stack—semiconductors, quantum/photonics, batteries, AI/NPU/GPU systems, data centers, robotics, energy, aerospace, manufacturing and ultimately the Data-Center-to-One-Phone mission.
+
+Canonical detail: `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md` and INV-030.
+
 ## North-star goal
 
 Create a **Universal Quantum Processing Unit (UQPU)** software/hardware architecture whose internal process can differ fundamentally from conventional accelerators, while covering the useful functional workload domains currently served by GPUs, CPUs and NPUs and targeting the functional/economic roles of accelerator VRAM/HBM plus reductions in host-RAM/data-movement burden and persistent-storage dependence where physically meaningful.
@@ -102,16 +114,19 @@ For cloud execution, total cost includes provider billing, shots, reservations, 
 12. Negative results and provider incompatibilities must be recorded.
 13. Provider discovery is continuous, not a one-time survey.
 14. NPU replacement is evaluated by real neural-workload contracts, not headline TOPS alone.
+15. Biomass-carbon substitution is evaluated by specific functional-unit performance and lifecycle economics, not by elemental analogy or feedstock price alone.
 
 ## Success definition
 
 A workload is functionally replaced when the targeted conventional subsystem (GPU, CPU, NPU, RAM, VRAM/HBM or persistent-storage role) is not required in the validated execution path except for explicitly allowed and fully accounted support functions, and the UQPU produces an accepted result under the same useful-output contract.
 
+A material dependency is functionally reduced when a biomass-derived carbon/material route demonstrably substitutes the required function, lowers critical-material loading, enables recovery/recycling, or redesigns away the dependency at acceptable quality, reliability and total lifecycle cost.
+
 A cloud provider reaches integration success when it progresses through adapter/dry-run/simulator/real-QPU validation.
 
 A workload is economically surpassed when the measured total-cost ratio against the applicable competitive conventional baseline reaches the declared threshold under equivalent accepted output.
 
-The long-term program succeeds only when broad conventional-computing functional coverage, broad quantum-cloud portability and strong measured economic advantage converge.
+The long-term program succeeds only when broad conventional-computing functional coverage, broad quantum-cloud portability, strong measured economic advantage, manufacturable material systems and progressive physical compression converge.
 
 ## Extreme single-QPU replacement research direction
 
