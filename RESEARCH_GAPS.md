@@ -279,3 +279,12 @@ This satisfies the environment/provenance portion of RG-025 but not the proof-qu
 Batch 013 Qiskit parsing/statevector verification agrees with Batch 012 to <1.4e-16 on the three selected fixtures, including synthetic routing and decoded measurement layout. Larger tier payloads parse successfully.
 **Remaining blocker:** actual provider acceptance, calibrated noise/routing, finite-shot quality and authorized QPU evidence. Synthetic line routing of small grows CX 166→1,043; no physical-duration or cost ratio follows.
 **Next experiment:** frozen-circuit finite-shot/noise sensitivity, followed by target-specific calibration.
+
+
+## RG-026 — Calibrated target-aware QAOA noise evidence
+**Status:** DATA/CREDENTIAL_BLOCKED / NOT_YET_DEMONSTRATED
+**Objective:** Replace Batch 014's deliberately synthetic readout-only channel with a dated target-specific calibration/noise model while preserving the same circuit, bit mapping and output-quality contract.
+**Current evidence:** independent SDK circuit verification plus exact synthetic readout sensitivity for 3/6/8-qubit fixtures.
+**Missing:** target calibration snapshot, routed physical circuit, readout assignment data, one-/two-qubit error/coherence assumptions, drift timestamp and mitigation cost.
+**Unlock criteria:** reproducible target-aware simulation tied to an identifiable backend calibration snapshot; then an authorized bounded QPU run with job/result/cost provenance.
+**Evidence boundary:** synthetic sensitivity cannot be promoted to REAL_QPU or provider performance evidence.
