@@ -50,6 +50,11 @@ jobs:
         working-directory: software/uqpu-prototype
         run: python -m uqpu.cli compile examples/search_workload.json
 
+      - name: Run synthetic finite-shot sensitivity
+        if: matrix.python-version == '3.12'
+        working-directory: software/uqpu-prototype
+        run: python examples/run_noise_sensitivity.py
+
 
   reference-benchmark:
     runs-on: ubuntu-latest
