@@ -112,3 +112,22 @@ The paired economic objective is to investigate whether the same useful workload
 These are **research targets, not current capability claims**. A result may count only when the workload/output-quality contract is identical or defensibly equivalent and the comparison includes throughput, latency, state preparation, shots, QEC/error mitigation, retries, host compute, memory/data movement, networking, cooling/energy, utilization, capital/provider charges, maintenance and output reconstruction.
 
 This direction must be developed in parallel with the broader UQPU research rather than replacing the staged evidence program. Intermediate results at smaller multipliers remain valuable evidence toward or against the hypothesis.
+
+
+## Extreme universal subsystem replacement direction
+
+The single-UQPU moonshot is generalized beyond GPUs. A permanent parallel research direction is to test whether **one quantum computer / one logically unified UQPU system can replace the accepted useful function or useful-work capacity otherwise requiring approximately 100,000,000 units of a competitive conventional subsystem**, including, where a physically meaningful equivalent contract can be defined:
+
+- GPU / accelerator compute;
+- CPU / general compute;
+- RAM;
+- VRAM / HBM;
+- persistent storage such as HDD/SSD.
+
+The paired economic moonshot is **>=100,000,000x lower total financial cost per accepted useful function/task** than the corresponding conventional implementation.
+
+For RAM/VRAM/storage, "replacement" does not mean that qubits are automatically equivalent to readable classical bytes. The comparison must define capacity, bandwidth, latency, persistence, random access, retention, durability, read/write semantics, error/recovery behavior and useful application outcome. Quantum information that cannot provide the required classical storage semantics does not count as equivalent capacity.
+
+For compute, the comparison must define workload, accepted output quality, throughput and latency. For every subsystem, all classical support, state preparation, QEC/error mitigation, repetitions, I/O, networking, energy/cooling, provider charges/hardware amortization and reconstruction must be included.
+
+The 10^8-unit and 10^8-cost factors are falsifiable research targets, not demonstrated present-day capabilities.
