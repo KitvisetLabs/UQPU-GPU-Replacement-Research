@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "software/uqpu-prototype/**"
+      - "research_lanes/**"
+      - "integration/**"
       - "PROJECT_CHARTER.md"
       - "STRATEGIC_PLAN_REFERENCES.md"
       - "docs/KANUSANAN_PONGPANNA_MODEL.md"
@@ -16,6 +18,8 @@ on:
   pull_request:
     paths:
       - "software/uqpu-prototype/**"
+      - "research_lanes/**"
+      - "integration/**"
       - "PROJECT_CHARTER.md"
       - "VERSION_INVARIANTS.md"
       - "GOALS.md"
@@ -123,20 +127,38 @@ jobs:
           python -m pip install -e .
           python -m pip install -r target-noise-optional-requirements.txt
 
-      - name: Run IBM snapshot-derived noisy simulation
+      - name: Run 3-qubit IBM snapshot-derived noisy simulation
         working-directory: software/uqpu-prototype
         run: |
-          python examples/run_target_snapshot_noise.py --output /tmp/uqpu-target-snapshot-noise.json --shots 4096
+          python examples/run_target_snapshot_noise.py --fixture triangle --output /tmp/uqpu-target-snapshot-noise.json --shots 4096
           cat /tmp/uqpu-target-snapshot-noise.json
 
-      - name: Extract active-qubit calibration inputs
+      - name: Extract 3-qubit active-qubit calibration inputs
         working-directory: software/uqpu-prototype
         run: |
-          python examples/run_active_target_calibration.py --output /tmp/uqpu-active-target-calibration.json
+          python examples/run_active_target_calibration.py --fixture triangle --output /tmp/uqpu-active-target-calibration.json
           cat /tmp/uqpu-active-target-calibration.json
 
-      - name: Compute quality-adjusted shot budget
+      - name: Compute 3-qubit quality-adjusted shot budget
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_quality_adjusted_snapshot_economics.py --input /tmp/uqpu-target-snapshot-noise.json --output /tmp/uqpu-quality-adjusted-shot-budget.json
           cat /tmp/uqpu-quality-adjusted-shot-budget.json
+
+      - name: Run 6-qubit IBM snapshot-derived noisy simulation
+        working-directory: software/uqpu-prototype
+        run: |
+          python examples/run_target_snapshot_noise.py --fixture er6 --output /tmp/uqpu-target-snapshot-noise-er6.json --shots 4096
+          cat /tmp/uqpu-target-snapshot-noise-er6.json
+
+      - name: Extract 6-qubit active-qubit calibration inputs
+        working-directory: software/uqpu-prototype
+        run: |
+          python examples/run_active_target_calibration.py --fixture er6 --output /tmp/uqpu-active-target-calibration-er6.json
+          cat /tmp/uqpu-active-target-calibration-er6.json
+
+      - name: Compute 6-qubit quality-adjusted shot budget
+        working-directory: software/uqpu-prototype
+        run: |
+          python examples/run_quality_adjusted_snapshot_economics.py --input /tmp/uqpu-target-snapshot-noise-er6.json --output /tmp/uqpu-quality-adjusted-shot-budget-er6.json
+          cat /tmp/uqpu-quality-adjusted-shot-budget-er6.json
