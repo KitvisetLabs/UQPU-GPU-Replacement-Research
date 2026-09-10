@@ -878,3 +878,11 @@ This has been formalized in GOALS.md and PROJECT_CHARTER.md as a moonshot hypoth
 The project owner expanded the extreme replacement direction from GPU-only to GPU, CPU, RAM, VRAM/HBM and persistent storage. The permanent hypothesis now asks whether one quantum/UQPU system can replace approximately 100,000,000 conventional units for each subsystem under a rigorously defined useful-function equivalence contract, while achieving >=100,000,000x lower total financial cost for that accepted function.
 
 The project explicitly distinguishes compute equivalence from memory/storage equivalence. No qubit-to-byte shortcut is permitted. This clarification is formalized in GOALS.md and PROJECT_CHARTER.md as INV-026 and must progress alongside all eight research lanes without being represented as an achieved capability.
+
+
+### Eight-Lane Research Batch 015 — executable 100M-unit evidence gate
+Repository health check found that commits adding INV-025/026 initially failed CI because VERSION_INVARIANTS.md had not yet been synchronized with PROJECT_CHARTER.md. Root cause was the invariant-consistency test, not a quantum-code regression. The release-invariant table was repaired; GitHub Actions run 34435329425 then completed successfully across Python 3.10/3.11/3.12, Qiskit verification and reference benchmark.
+
+Priority #1 / Lane F integration advance: added uqpu.moonshot_contract, tests and docs/BATCH_015_100M_UNIT_MEASUREMENT_CONTRACT.md. The executable gate refuses to label the 100M-unit/100Mx moonshot demonstrated from arithmetic alone: scale, economic threshold, accepted-output equivalence and end-to-end measurement must all pass. Current Batch 015 core tests are successful on Python 3.10/3.11/3.12; downstream Qiskit/reference jobs were still running at the time this note was written.
+
+INV-025 and INV-026 therefore remain NOT_YET_DEMONSTRATED. The next useful evidence step is subsystem-specific equivalence fixtures populated from competitive classical measurements and bounded real-QPU results.
