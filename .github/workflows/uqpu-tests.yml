@@ -59,6 +59,11 @@ jobs:
         working-directory: software/uqpu-prototype
         run: python examples/run_noise_sensitivity.py
 
+      - name: Run equal-budget QAOA objective-selection experiment
+        if: matrix.python-version == '3.12'
+        working-directory: software/uqpu-prototype
+        run: python examples/run_qaoa_objective_selection.py
+
   reference-benchmark:
     runs-on: ubuntu-latest
     needs: test
