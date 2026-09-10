@@ -2,7 +2,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import math
 
-SUBSYSTEMS=("gpu","cpu","ram","vram","storage")
+SUBSYSTEMS=("gpu","cpu","npu","ram","vram","storage")
 
 @dataclass(frozen=True)
 class ReplacementContract:
