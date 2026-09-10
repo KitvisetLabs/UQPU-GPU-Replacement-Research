@@ -1,0 +1,61 @@
+{
+  "batch": 32,
+  "date": "2026-09-10",
+  "program": [
+    "Issue-1",
+    "QOS-AUDIT-004",
+    "EQN-002C-3",
+    "Lane-C"
+  ],
+  "evidence": "THEORY_EXECUTABLE_INTERFACE_WITNESS + THEORY_DEPENDENCY_AUDIT + EXECUTABLE_BENCHMARK_PROTOCOL",
+  "real_qpu": false,
+  "quantum_advantage_demonstrated": false,
+  "uqpu_advantage_demonstrated": false,
+  "qos_source": {
+    "arxiv": "2604.07639v1",
+    "audited_nodes": [
+      "D.148-D.150",
+      "D.211-D.218"
+    ],
+    "d23_source_dependencies": [
+      "D.19",
+      "D.21",
+      "D.22"
+    ]
+  },
+  "d19_shared_realization_witness": {
+    "bit_count": 8,
+    "target_epsilon": 0.001,
+    "theta": 0.01581155300743842,
+    "marginal_average_error_per_slot": 0.00012500000000004174,
+    "sum_of_marginal_average_errors": 0.001000000000000334,
+    "shared_realization_joint_error": 0.00798950524871378,
+    "joint_over_target_ratio": 7.98950524871378,
+    "joint_over_marginal_sum_ratio": 7.989505248711112,
+    "conditional_revealed_slot_error": 0.01581138830084454,
+    "valid_repeated_use_hybrid_upper_bound": 0.11080471810591182,
+    "specific_d19_matrix_stream_counterexample_claimed": false,
+    "d19_theorem_refuted": false
+  },
+  "d23_dependency": {
+    "chain_closed": false,
+    "theorem_refuted": false,
+    "sample_complexity_ready_for_uqpu_advantage_claim": false
+  },
+  "memory_translation": {
+    "source_machine_size_metric": "logical qubits versus classical floating-point numbers",
+    "dram_hbm_replacement_claim_ready": false,
+    "reason": "Batch 031 physical memory-role ledger is not populated by machine-size units alone."
+  },
+  "eqn_external_delta": {
+    "paper": "InsightSR: Refining Symbolic Regression Search Spaces via Parallel Semantic and Structural LLM Guidance",
+    "arxiv": "2608.25291v1",
+    "date": "2026-08-26",
+    "reported_results": {
+      "feynman_exact_recovery": "95%",
+      "llm_srbench_lsr_transform_accuracy": "80.18%"
+    },
+    "status": "LITERATURE_ONLY_NOT_EXECUTED_BY_UQPU",
+    "design_consequence": "Add LLM_GUIDED_SEARCH_SPACE as a frozen comparator arm and require the same resource ledger as BANK/LLM_DIRECT/UNION."
+  }
+}
