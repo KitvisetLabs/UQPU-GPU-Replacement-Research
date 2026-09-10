@@ -5,12 +5,15 @@ This directory is the canonical lane-oriented workspace for the project.
 ## Permanent lanes
 - `A_quantum_programming_runtime` — Priority #1 software/workloads/compiler/runtime
 - `B_cloud_qpu_provider_integration` — cloud QPU/provider integration
-- `C_state_memory_storage_data_movement` — RAM/VRAM/HBM/storage/state/data movement
+- `C_state_memory_storage_data_movement` — volatile memory and state services: system/host RAM (including DDR/LPDDR/RDIMM/MRDIMM-class DRAM), accelerator-local VRAM/HBM/GDDR, on-chip SRAM/cache, storage/state/data movement
 - `D_device_chip_fabrication_packaging` — device/chip/process/fabrication/packaging
 - `E_materials_energy_cooling_infrastructure` — biomass/materials/energy/cooling/infrastructure
 - `F_economics_benchmarks_evidence_integration` — economics/benchmark/evidence/integration
 - `G_manufacturing_equipment_factory_software` — manufacturing equipment/software/factory systems
 - `H_strategy_finance_future_industries` — strategy/finance/future industries
+
+## Memory-taxonomy rule
+Lane C uses **role-based memory taxonomy** rather than treating `DRAM` as a separate peer subsystem. DRAM is a technology family that can implement multiple volatile-memory roles: system DDR/LPDDR/RDIMM/MRDIMM and accelerator-local HBM/GDDR are all DRAM-derived or DRAM-class technologies, while SRAM/cache is a distinct volatile-memory class. Replacement/economic claims must therefore name the memory role and the physical technology being compared.
 
 ## Folder-depth rule
 Future special projects may create additional subfolders inside the appropriate lane. A repository path must not exceed **16 directory levels from repository root**. Prefer shallower paths whenever possible.
