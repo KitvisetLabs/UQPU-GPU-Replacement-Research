@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-11",
+  "topic": "uniform singular-value amplification and bounded-polynomial derivative control",
+  "status": "LITERATURE_THEOREM_PROVENANCE",
+  "sources": [
+    {
+      "title": "Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics",
+      "authors": "Andras Gilyen, Yuan Su, Guang Hao Low, Nathan Wiebe",
+      "arxiv": "1806.01838",
+      "relevant_result": "Theorem 30, uniform singular value amplification",
+      "contract_note": "The standard theorem uses amplification gamma>1 together with a positive margin delta and applies on singular values <=(1-delta)/gamma."
+    },
+    {
+      "title": "Classical Bernstein-Markov inequality for bounded real algebraic polynomials",
+      "relevant_result": "|P'(x)|/sqrt(1-P(x)^2) <= degree(P)/sqrt(1-x^2)",
+      "contract_note": "Used only to derive the endpoint degree lower bound under the explicitly stated bounded-polynomial interpretation."
+    }
+  ],
+  "uqpu_execution": "The analytic certificates derived from these public results are executed in uqpu.qos_d23_qsvt_margin_audit; no external numerical benchmark is claimed reproduced."
+}
