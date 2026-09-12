@@ -1,0 +1,60 @@
+{
+  "repair_route": "positive target margin via controlled under-amplification",
+  "sparsity": 4,
+  "bias_fraction": 0.5,
+  "classification": "D23_ENDPOINT_POSITIVE_MARGIN_REPAIR_EXACT_INPUT_ONLY",
+  "examples": {
+    "epsilon_0.05": {
+      "normalization_bias_budget": 0.025,
+      "target_scale": 0.975,
+      "amplification_gamma": 3.9,
+      "maximum_positive_margin_delta": 0.025,
+      "amplification_relative_error_budget": 0.025,
+      "theorem30_scaling_proxy_without_hidden_constant": 787.7775371309278,
+      "source_nominal_s_log_proxy": 17.528106538695525,
+      "proxy_ratio_to_source_nominal": 44.9436757696451
+    },
+    "epsilon_0.01": {
+      "normalization_bias_budget": 0.005,
+      "target_scale": 0.995,
+      "amplification_gamma": 3.98,
+      "maximum_positive_margin_delta": 0.005,
+      "amplification_relative_error_budget": 0.005,
+      "theorem30_scaling_proxy_without_hidden_constant": 5316.960951932129,
+      "source_nominal_s_log_proxy": 23.965858188431927,
+      "proxy_ratio_to_source_nominal": 221.85564606647685
+    },
+    "epsilon_0.001": {
+      "normalization_bias_budget": 0.0005,
+      "target_scale": 0.9995,
+      "amplification_gamma": 3.998,
+      "maximum_positive_margin_delta": 0.0005,
+      "amplification_relative_error_budget": 0.0005,
+      "theorem30_scaling_proxy_without_hidden_constant": 71857.62677817984,
+      "source_nominal_s_log_proxy": 33.17619856040811,
+      "proxy_ratio_to_source_nominal": 2165.9391339649583
+    },
+    "epsilon_0.0001": {
+      "normalization_bias_budget": 0.00005,
+      "target_scale": 0.99995,
+      "amplification_gamma": 3.9998,
+      "maximum_positive_margin_delta": 0.00005,
+      "amplification_relative_error_budget": 0.00005,
+      "theorem30_scaling_proxy_without_hidden_constant": 903133.3940648285,
+      "source_nominal_s_log_proxy": 42.38653893238429,
+      "proxy_ratio_to_source_nominal": 21307.080427244175
+    }
+  },
+  "closed": {
+    "endpoint_positive_margin_contract_for_exact_input": true
+  },
+  "not_closed": {
+    "approximate_input_robustness": true,
+    "full_channel_error": true,
+    "earlier_D16_D19_D20_D21_dependencies": true,
+    "physical_resource_or_economic_advantage": true
+  },
+  "real_qpu": false,
+  "quantum_advantage_demonstrated": false,
+  "gpu_npu_dram_hbm_replacement_demonstrated": false
+}

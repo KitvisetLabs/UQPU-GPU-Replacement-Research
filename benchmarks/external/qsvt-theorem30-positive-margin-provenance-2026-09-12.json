@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-09-12",
+  "source": {
+    "title": "Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics",
+    "authors": ["Andras Gilyen", "Yuan Su", "Guang Hao Low", "Nathan Wiebe"],
+    "arxiv": "1806.01838",
+    "url": "https://arxiv.org/abs/1806.01838"
+  },
+  "theorem": "Theorem 30 (Uniform singular value amplification)",
+  "contract": {
+    "gamma": "> 1",
+    "delta": "in (0, 1/2)",
+    "epsilon": "in (0, 1/2)",
+    "singular_value_domain": "sigma_i <= (1-delta)/gamma",
+    "degree_scaling": "O((gamma/delta) * log(gamma/epsilon))",
+    "query_statement": "m uses of U and U-dagger plus projector-controlled gates"
+  },
+  "uqpu_use": "Imported theorem contract only; Batch 034 applies its algebra to an explicit under-amplified target and does not claim hidden constants or a realized QSVT circuit."
+}
