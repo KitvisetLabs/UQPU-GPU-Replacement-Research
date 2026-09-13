@@ -4,7 +4,7 @@
 **Status:** Active research / executable prototype / long-horizon architecture  
 **Lead Researcher:** Kanutsanan Pongpanna  
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
-**Date:** 2026-09-10
+**Date:** 2026-09-13
 
 # ULTIMATE NORTH STAR — DATA CENTER TO ONE PHONE
 
@@ -15,6 +15,19 @@
 **Canonical mission:** [00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md](00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md) — permanent under **INV-029**.
 
 A phone that merely acts as a terminal to an external data center does **not** satisfy the final physical-compression objective. Required remote QPUs/servers, cryogenics, classical control, memory/storage, networking, cooling and power infrastructure must be counted honestly.
+
+# PRIORITY RESEARCH PROGRAM — QUANTUM / HYBRID AI TRAINING COST COMPRESSION
+## Moonshot: US$10–100 trillion ambition-scale infrastructure capability -> tens of thousands of Thai baht
+
+> **Major research objective:** investigate whether AI-training and AI-service capability represented by an owner-defined conventional-infrastructure ambition proxy of approximately **US$10 trillion to US$100 trillion** can ultimately be delivered by an end-to-end architecture costing only **tens of thousands of Thai baht**, while preserving an explicit accepted-capability contract.
+>
+> This is a **moonshot research target, not a demonstrated capability or valuation claim**. The US$10–100 trillion range does not assert that any one existing data center presently costs that amount. Compute, model quality, training time, data, memory, network, QPU/control/readout, energy/cooling, reliability, hardware lifetime and all remote infrastructure must be counted.
+
+**Canonical priority program:** [00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md](00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md) — primary owner **Lane A**, with Lane B/C/D/F dependencies.
+
+Batch 038 freezes a reproducible canonical accounting example: at `50,000 THB`, the target requires approximately **6.609 billion-fold** total cost compression from the US$10T proxy and **66.09 billion-fold** from the US$100T proxy. Therefore the existing `100,000,000x` moonshot is an intermediate target and is not sufficient for this stricter example. The first executable gate requires the non-accelerated residual cost fraction to fall to roughly `1.51e-10`–`1.51e-11` even if the accelerated component became free. This makes data loading, memory, communication, classical control, readout, energy/cooling and lifecycle infrastructure first-class research problems rather than hidden overheads.
+
+No real-QPU AI-training advantage, frontier-model cost advantage, GPU/NPU/RAM/DRAM/HBM replacement, billion-fold realized saving or tens-of-thousands-of-baht data-center equivalence is currently claimed.
 
 # PERMANENT PRINCIPLE — AI-ASSISTED PHYSICS EQUATION DISCOVERY
 ## INV-035 — ULTRA IMAGINATION FOR NEW EQUATIONS; ULTRA KNOWLEDGE AND EVIDENCE FOR REAL TECHNOLOGY
@@ -92,7 +105,7 @@ This agenda explicitly preserves elementary-particle physics and fundamental mat
 
 **Canonical strategy:** [04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md) — permanent under **INV-033**.
 
-The root-level mission/foundation/pillars `00`, `00A`, `01`–`06` are intentionally prominent because the project couples scientific invention, computation, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
+The root-level mission/foundation/pillars `00`, `00A`, `00B`, `01`–`06` are intentionally prominent because the project couples scientific invention, computation, AI-training cost compression, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
 
 ## Core mission
 
@@ -112,7 +125,7 @@ The internal process does **not** need to reproduce classical microarchitecture 
 
 The minimum research target is **>=100× lower total cost per accepted useful task** than a competitive conventional baseline.
 
-The extreme research direction tests **>=100,000,000× lower total cost** and approximately **100,000,000-unit functional replacement** for suitable GPU/CPU/NPU/RAM/VRAM/storage workload classes.
+The extreme research direction tests **>=100,000,000× lower total cost** and approximately **100,000,000-unit functional replacement** for suitable GPU/CPU/NPU/RAM/VRAM/storage workload classes. The stricter AI-training/data-center-compression program now additionally investigates billion-to-tens-of-billions-fold end-to-end compression where required by its explicit cost contract.
 
 These multipliers are targets and falsifiable hypotheses—not demonstrated present-day capabilities. State preparation, QEC/error mitigation, shots/retries, host control, memory/data movement, networking, energy/cooling, provider billing or hardware amortization, maintenance and output reconstruction must all be counted.
 
@@ -151,7 +164,7 @@ H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Research
         -> Integration Gate -> evidence/tests/cost -> GitHub sync
 ```
 
-The Foundational Physics & Mathematics Deep-Frontier Agenda and AI-Assisted Physics Equation Discovery are cross-cutting upstream layers feeding **all A–H lanes**. Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
+The Foundational Physics & Mathematics Deep-Frontier Agenda and AI-Assisted Physics Equation Discovery are cross-cutting upstream layers feeding **all A–H lanes**. Lane A owns the quantum/hybrid AI-training cost-compression workload program, with B/C/D/F providing execution, memory/data-movement, physical-device and economics/evidence contracts. Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
 
 ## Current evidence status
 
@@ -162,6 +175,7 @@ However:
 - no universal GPU/CPU/NPU/RAM/VRAM/storage replacement has been demonstrated;
 - no 100-million-unit replacement has been demonstrated;
 - no >=100× or >=100,000,000× real-QPU end-to-end economic advantage has been verified;
+- no billion-fold or tens-of-billions-fold AI-training cost advantage has been demonstrated;
 - no data-center-to-phone equivalence has been demonstrated;
 - no universal Au/Cu/Ag/Li/Co/Ni/rare-earth replacement by biomass carbon has been demonstrated;
 - no Pangola-derived liquid fuel has yet been certified at the project's ultra-low-cost target;
@@ -194,22 +208,23 @@ The public Thai, English, Chinese, Japanese, Korean and German master-plan links
 Read in this order:
 
 1. `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`
-2. `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`
-3. `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`
-4. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
-5. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
-6. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
-7. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
-8. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
-9. `PROJECT_CHARTER.md`
-10. `VERSION_INVARIANTS.md`
-11. `docs/RESEARCH_OPERATING_SYSTEM.md`
-12. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
-13. `docs/KANUSANAN_PONGPANNA_MODEL.md`
-14. `STRATEGIC_PLAN_REFERENCES.md`
-15. `RESEARCH_GAPS.md`
-16. `DECISIONS.md`
-17. `WORKLOG.md`
+2. `00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md`
+3. `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`
+4. `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`
+5. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
+6. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
+7. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
+8. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
+9. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
+10. `PROJECT_CHARTER.md`
+11. `VERSION_INVARIANTS.md`
+12. `docs/RESEARCH_OPERATING_SYSTEM.md`
+13. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
+14. `docs/KANUSANAN_PONGPANNA_MODEL.md`
+15. `STRATEGIC_PLAN_REFERENCES.md`
+16. `RESEARCH_GAPS.md`
+17. `DECISIONS.md`
+18. `WORKLOG.md`
 
 Then continue from the newest committed state and latest Batch/evidence records.
 
@@ -218,6 +233,7 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `GOALS.md` — ultimate, functional and economic goals
 - `PROJECT_CHARTER.md` — permanent mission/invariants
 - `VERSION_INVARIANTS.md` — release-preservation rules
+- `00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md` — high-priority quantum/hybrid AI-training cost-compression program
 - `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md` — highest-visibility permanent equation-discovery principle
 - `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md` — canonical AI-assisted equation-discovery program
 - `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` — deepest-first foundational research agenda
@@ -227,6 +243,7 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `docs/BATCH_021_BIO_OIL_FUSION_INTEREST_COST.md` — integrated cheap-fuel/cheap-electricity/finance research batch
 - `research_lanes/A_quantum_programming_runtime/NPU_REPLACEMENT_TRACK.md` — NPU replacement track
 - `research_lanes/F_economics_benchmark_evidence/NPU_EQUIVALENCE_AND_COST_CONTRACT.md` — NPU comparison contract
+- `software/uqpu-prototype/uqpu/quantum_ai_training_cost_gate.py` — executable AI-training moonshot necessary-condition gate
 - `software/uqpu-prototype/uqpu/fundamental_limits.py` — executable physical lower-bound helpers
 - `software/uqpu-prototype/uqpu/frontier_hypothesis.py` — falsifiable deep-frontier hypothesis contract
 - `software/uqpu-prototype/uqpu/equation_discovery.py` — AI/mathematics equation-candidate governance and validation contract
