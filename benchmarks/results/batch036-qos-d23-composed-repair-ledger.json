@@ -1,0 +1,121 @@
+{
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": [
+      "primary-source theorem/interface audit",
+      "mathematical composition",
+      "executable implementation",
+      "reproducibility test design",
+      "research documentation preparation"
+    ]
+  },
+  "classification": "D23_REPAIRED_PROJECTED_LEDGER_COMPOSED_NUMERIC_DEGREE_OPEN",
+  "evidence_level": "THEORY_EXECUTABLE_IMPORTED_INTERFACE_COMPOSITION",
+  "source_version": "arXiv:2604.07639v1",
+  "imported_primary_source": "arXiv:1806.01838v1 Lemma 23, Lemma 29, Theorem 30, Corollary 18",
+  "canonical_case": {
+    "sparsity": 4,
+    "total_projected_error_budget": 0.01,
+    "budget_fractions": {
+      "normalization_bias": 0.3333333333333333,
+      "amplification_approximation": 0.3333333333333333,
+      "projected_input_robustness": 0.33333333333333337
+    },
+    "theorem30_interface": {
+      "target_scale": 0.9966666666666667,
+      "gamma": 3.986666666666667,
+      "delta": 0.003333333333333333,
+      "rectangle_t": 0.25041806020066887,
+      "rectangle_delta_prime": 0.00041806020066889626,
+      "rectangle_epsilon_prime": 0.0008361204013377925,
+      "certified_linear_domain_endpoint": 0.25,
+      "polynomial_form": "P_amp(x)=gamma*x*P_rect(x)",
+      "polynomial_parity": "odd",
+      "global_bound_contract": "|P_amp(x)|<=1 on [-1,1]",
+      "numeric_degree_closed": false
+    },
+    "conditional_actual_degree_examples": {
+      "degree_101": {
+        "actual_degree_parameter": 101,
+        "max_projected_input_error_eta": 0.000022595747001045743,
+        "lemma23_linear_coefficient": 1.4605978872265473,
+        "lemma23_robustness_bound": 0.0033333333333333335,
+        "projected_total_error_upper_bound": 0.00998888888888889,
+        "sufficient_per_query_diamond_error_budget": 0.00009900990099009902
+      },
+      "degree_1001": {
+        "actual_degree_parameter": 1001,
+        "max_projected_input_error_eta": 0.000002279896732453569,
+        "lemma23_linear_coefficient": 1.4605939306819669,
+        "lemma23_robustness_bound": 0.0033333333333333335,
+        "projected_total_error_upper_bound": 0.00998888888888889,
+        "sufficient_per_query_diamond_error_budget": 0.00000999000999000999
+      },
+      "degree_10001": {
+        "actual_degree_parameter": 10001,
+        "max_projected_input_error_eta": 2.2819490585948172e-7,
+        "lemma23_linear_coefficient": 1.4605935311204543,
+        "lemma23_robustness_bound": 0.0033333333333333335,
+        "projected_total_error_upper_bound": 0.00998888888888889,
+        "sufficient_per_query_diamond_error_budget": 9.99900009999e-7
+      }
+    }
+  },
+  "asymptotic_diagnostic_examples": {
+    "epsilon_0.05": {
+      "repair_degree_proxy_without_hidden_constant": 1289.464305986044,
+      "source_degree_proxy_without_hidden_constant": 14.755517816455745,
+      "diagnostic_degree_proxy_ratio": 87.3886177378336,
+      "diagnostic_D217_common_factor_ratio": 7636.770510129205
+    },
+    "epsilon_0.01": {
+      "repair_degree_proxy_without_hidden_constant": 8475.73856967465,
+      "source_degree_proxy_without_hidden_constant": 21.193269466192145,
+      "diagnostic_degree_proxy_ratio": 399.925956832441,
+      "diagnostic_D217_common_factor_ratio": 159940.77094834344
+    },
+    "epsilon_0.001": {
+      "repair_degree_proxy_without_hidden_constant": 112670.37316426731,
+      "source_degree_proxy_without_hidden_constant": 30.40360983816833,
+      "diagnostic_degree_proxy_ratio": 3705.8222284783524,
+      "diagnostic_D217_common_factor_ratio": 13733118.38908426
+    },
+    "epsilon_0.0001": {
+      "repair_degree_proxy_without_hidden_constant": 1403378.8616902821,
+      "source_degree_proxy_without_hidden_constant": 39.61395021014451,
+      "diagnostic_degree_proxy_ratio": 35426.38020812423,
+      "diagnostic_D217_common_factor_ratio": 1255028414.6505764
+    }
+  },
+  "derived_conditional_scaling": {
+    "repaired_degree": "O((s/epsilon)*log(s/epsilon)) for fixed positive error-budget fractions",
+    "required_projected_input_error": "O(epsilon^2/(s*log(s/epsilon))) under Lemma-23 linear robustness",
+    "per_query_channel_error": "O(epsilon^2/(s*log(s/epsilon))) under d-fold diamond subadditivity",
+    "source_D217_general_structure": "M = O(R^2*n^2*s^3*d^2*polylog/epsilon)",
+    "sufficient_repair_substitution": "O(R^2*n^2*s^5*polylog/epsilon^3), with logarithms and hidden constants unresolved"
+  },
+  "interface_findings": {
+    "theorem30_polynomial_interface_bridge_closed": true,
+    "corollary18_to_lemma23_bridge": "Apply Lemma 23 to the Corollary-8 lift P and P* and average as in the Corollary-18 proof; no extra factor is required by the triangle bound.",
+    "source_local_lemma_D8_even_only": true,
+    "source_local_D8_directly_covers_D23_odd_linear_polynomial": false,
+    "imported_corollary18_supplies_odd_real_polynomial_route": true,
+    "numeric_degree_constant_closed": false
+  },
+  "non_claims": {
+    "d23_theorem_proved": false,
+    "d23_theorem_refuted": false,
+    "qos_globally_invalidated": false,
+    "full_channel_repaired_D23_established": false,
+    "diagnostic_ratios_are_measured_resources": false,
+    "real_qpu": false,
+    "quantum_advantage_demonstrated": false,
+    "gpu_npu_ram_dram_hbm_replacement_demonstrated": false,
+    "advantage_100x_demonstrated": false,
+    "advantage_100000000x_demonstrated": false,
+    "new_physical_law_claimed": false
+  }
+}

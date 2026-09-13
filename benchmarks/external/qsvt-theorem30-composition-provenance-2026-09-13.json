@@ -1,0 +1,82 @@
+{
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": [
+      "primary-source literature verification",
+      "theorem/interface extraction",
+      "parity audit",
+      "composition derivation",
+      "provenance recording"
+    ]
+  },
+  "checked_date": "2026-09-13",
+  "primary_sources": [
+    {
+      "title": "Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics",
+      "authors": ["Andras Gilyen", "Yuan Su", "Guang Hao Low", "Nathan Wiebe"],
+      "arxiv": "1806.01838v1",
+      "url": "https://arxiv.org/abs/1806.01838",
+      "contracts": {
+        "corollary18": {
+          "page": 19,
+          "summary": "A real degree-n polynomial with parity n mod 2 and absolute value at most one on [-1,1] has a singular-value-transformation implementation. The proof lifts the real polynomial to a Corollary-8 polynomial P and averages P and P*."
+        },
+        "lemma23": {
+          "pages": [24, 25],
+          "summary": "For a degree-n Corollary-8 polynomial and matrices A,A_tilde of norm at most one satisfying ||A-A_tilde|| + ||(A+A_tilde)/2||^2 <= 1, the singular-value-transform perturbation is at most n*sqrt(2/(1-||(A+A_tilde)/2||^2))*||A-A_tilde||."
+        },
+        "lemma29": {
+          "pages": [28, 29],
+          "summary": "Constructs an even bounded rectangle polynomial with degree O(log(1/epsilon_prime)/delta_prime)."
+        },
+        "theorem30": {
+          "page": 29,
+          "summary": "Uniform singular value amplification with gamma>1, delta,epsilon in (0,1/2), singular values up to (1-delta)/gamma, and degree O((gamma/delta) log(gamma/epsilon)).",
+          "proof_parameter_map": {
+            "t": "(1-delta/2)/gamma",
+            "delta_prime": "delta/(2*gamma)",
+            "epsilon_prime": "epsilon/gamma",
+            "amplification_polynomial": "P_amp(x)=gamma*x*P_rect(x)",
+            "polynomial_properties": "odd, bounded by one on [-1,1], epsilon-multiplicative approximation to gamma*x on [-(1-delta)/gamma,(1-delta)/gamma]"
+          }
+        },
+        "numeric_degree_limitation": "Theorem 30, Lemma 29 and Lemma 25 expose asymptotic degree scaling but the inspected primary source does not state a numerical universal hidden constant sufficient to convert the big-O expression into a certified concrete degree."
+      }
+    },
+    {
+      "title": "Exponential quantum advantage in processing massive classical data",
+      "authors": ["Haimeng Zhao", "Alexander Zlokapa", "Hartmut Neven", "Ryan Babbush", "John Preskill", "Jarrod R. McClean", "Hsin-Yuan Huang"],
+      "arxiv": "2604.07639v1",
+      "url": "https://arxiv.org/abs/2604.07639",
+      "contracts": {
+        "lemma_D8": {
+          "page": 37,
+          "summary": "The locally stated quantum eigenvalue transform lemma in source-v1 is restricted to even real polynomial P and even integer d with |P(x)|<=1 on [-1,1]."
+        },
+        "lemma_D23_D214_D215": {
+          "page": 64,
+          "summary": "The proof first approximates A/s with projected-block error epsilon_1, then states QSVT applies the odd linear function f(x)=s*x on [-1/s,1/s], with displayed degree O(s log(1/epsilon_2)) and output error epsilon_2 + O(d epsilon_1)."
+        },
+        "D216_D217": {
+          "page": 64,
+          "summary": "The random-oracle channel error is accumulated across O(d) sparse-oracle uses; epsilon_3 is chosen of order epsilon/d, giving a sample-complexity structure proportional to d/epsilon_3 and therefore d^2/epsilon up to the source's common factors and logarithms."
+        }
+      },
+      "interface_observation": "The source-local Lemma D.8 as printed does not directly cover the odd linear polynomial used in D.23. Gilyen et al. Corollary 18 provides an imported odd-real-polynomial route, so this is an interface obligation rather than a theorem refutation."
+    }
+  ],
+  "non_claims": [
+    "not a proof or refutation of QOS Lemma D.23 as a whole",
+    "not a certified numerical QSVT degree",
+    "not a realized or measured circuit depth",
+    "not a full-unitary or diamond-norm repaired D.23 guarantee",
+    "not a real-QPU result",
+    "not a quantum-advantage result",
+    "not a GPU/NPU/RAM/DRAM/HBM replacement result",
+    "not a 100x or 100000000x result",
+    "not a new physical law"
+  ]
+}
