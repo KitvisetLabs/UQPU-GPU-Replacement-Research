@@ -1,5 +1,12 @@
 from __future__ import annotations
 
+# Research Attribution
+# Research Owner / Principal Investigator / Research Direction: Kanutsanan Pongpanna
+# Facebook: https://www.facebook.com/LoveMoneyTH
+# YouTube: https://www.youtube.com/@LoveMoneyTHOfficial
+# AI Research Agent: OpenAI GPT-5.6 Sol
+# AI-assisted contribution: theorem/interface test design and reproducibility checks.
+
 import unittest
 
 from uqpu.qos_d23_composed_repair_ledger import (
