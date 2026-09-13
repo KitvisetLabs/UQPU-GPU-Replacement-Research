@@ -1,0 +1,131 @@
+{
+  "batch": 40,
+  "gate": "AI-COST-003",
+  "classification": "VQC_XOR_ACCEPTED_CAPABILITY_REACHED_BY_HYBRID_READOUT_REPAIR_NO_COST_ADVANTAGE",
+  "evidence_level": "IDEAL_STATEVECTOR_REPRODUCTION_PLUS_ANALYTIC_RESOURCE_LEDGER",
+  "public_route_provenance": {
+    "paper": "Comparing Classical and Quantum Variational Classifiers on the XOR Problem",
+    "arxiv": "2602.24220v1",
+    "authors": ["Miras Seilkhan", "Adilbek Taizhanov"],
+    "public_repo": "mseilkhan/XOR-research-Quantum-ML-vs-Classic",
+    "public_repo_commit": "d7dd995db6a19295235c48483fe1abb108d9022d",
+    "source_model_path": "core/models/vqc.py",
+    "source_settings_path": "experiments/settings.py"
+  },
+  "frozen_batch039_contract": {
+    "train_examples": 256,
+    "held_out_examples": 256,
+    "held_out_accuracy_minimum": 0.98,
+    "held_out_binary_cross_entropy_maximum": 0.19
+  },
+  "paper_architecture_route": {
+    "architecture": "2 qubits; RX(pi*x_i) encoding after affine [-1,1]->[0,1] map; depth-2 [Rot on q0, Rot on q1, CNOT(0->1)]; Z0 readout",
+    "label_alignment": "fixed output complement because Batch039 class-1 is XNOR while paper Dataset-C class-1 is XOR",
+    "trainable_parameters_nominal": 12,
+    "structurally_inactive_last_layer_parameter_indices": [8, 9, 10, 11],
+    "optimizer": "full-batch gradient descent",
+    "epochs": 250,
+    "learning_rate": 0.2,
+    "initialization": "NumPy RandomState seed=0 normal(0,0.1), frozen explicitly",
+    "train_metrics": {
+      "accuracy": 0.96484375,
+      "binary_cross_entropy": 0.3809695833065735
+    },
+    "held_out_metrics": {
+      "accuracy": 0.95703125,
+      "binary_cross_entropy": 0.37888043300038676
+    },
+    "accepted_capability_pass": false,
+    "result": "negative reproduction on the frozen Batch039 contract"
+  },
+  "uqpu_readout_repair": {
+    "change": "replace single-wire Z0 readout by parity Z0Z1 and add two-scalar classical calibration p=sigmoid(a*m+b)",
+    "structurally_inactive_last_layer_parameter_indices": [8, 11],
+    "quantum_training_before_calibration": {
+      "train_metrics": {
+        "accuracy": 1.0,
+        "binary_cross_entropy": 0.3835357370819664
+      },
+      "held_out_metrics": {
+        "accuracy": 0.9921875,
+        "binary_cross_entropy": 0.3774990388898494
+      },
+      "accuracy_gate_pass": true,
+      "bce_gate_pass": false
+    },
+    "classical_calibration": {
+      "parameters": 2,
+      "epochs": 2000,
+      "learning_rate": 0.2,
+      "scale": 10.603102052547635,
+      "bias": -0.08930314977146993,
+      "training_examples_processed": 512000
+    },
+    "after_calibration": {
+      "train_metrics": {
+        "accuracy": 0.9921875,
+        "binary_cross_entropy": 0.1320469933712274
+      },
+      "held_out_metrics": {
+        "accuracy": 0.984375,
+        "binary_cross_entropy": 0.12508869380594245
+      },
+      "accepted_capability_pass": true
+    }
+  },
+  "parameter_shift_deployment_ledger": {
+    "status": "PARAMETER_SHIFT_CIRCUIT_EQUIVALENT_NOT_EXECUTED",
+    "trainable_parameters": 12,
+    "training_samples_processed": 64000,
+    "circuits_per_training_sample": 25,
+    "training_circuit_evaluations": 1600000,
+    "final_evaluation_circuits": 512,
+    "single_qubit_rotations_per_circuit": 14,
+    "cnot_per_circuit": 2,
+    "training_single_qubit_rotation_applications": 22400000,
+    "training_cnot_applications": 3200000,
+    "training_total_elementary_gate_applications": 25600000,
+    "shots_if_128_per_circuit": 204800000,
+    "shots_if_1024_per_circuit": 1638400000,
+    "warning": "resource-pressure proxy only; not measured runtime/provider cost, fault-tolerant estimate, or proof that parameter-shift is optimal"
+  },
+  "serial_break_even_pressure_against_batch039_reference_runtime": {
+    "batch039_reference_median_seconds": 1.1564624219998905,
+    "if_1600000_training_circuits_were_serialized_seconds_per_circuit": 7.227890137499316e-07,
+    "microseconds_per_circuit": 0.7227890137499315,
+    "nanoseconds_per_shot_at_128_shots_if_fully_serialized": 5.64678916992134,
+    "nanoseconds_per_shot_at_1024_shots_if_fully_serialized": 0.7058486462401675,
+    "warning": "pressure envelope only; batching, parallelism, advanced gradients, hardware concurrency, queueing and host overhead are omitted"
+  },
+  "information_gain": [
+    "the public Z0 route fails the frozen Batch039 quality contract",
+    "four nominal last-layer parameters are exactly inactive under the Z0 measurement interface",
+    "parity readout reduces that exact inactive tail from four parameters to two",
+    "the parity route clears the accuracy gate but not the BCE gate before calibration",
+    "a two-scalar classical calibration layer clears both frozen quality thresholds in ideal simulation",
+    "meeting quality does not establish any speed, energy, provider-cost or end-to-end economic advantage"
+  ],
+  "next_gates": [
+    "AI-COST-003B: independent Qiskit/PennyLane cross-check of parity-readout candidate and finite-shot/noise degradation",
+    "AI-COST-003C: search lower-circuit-evaluation gradients/ansatzes while preserving the same quality contract",
+    "AI-COST-004: residual-cost destruction map including state preparation, shots/readout, control, memory, energy and lifecycle cost"
+  ],
+  "non_claims": {
+    "real_qpu_ai_training": false,
+    "quantum_advantage": false,
+    "practical_quantum_speedup": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "measured_end_to_end_tco": false,
+    "one_hundred_million_x_saving": false,
+    "billion_fold_saving": false,
+    "data_center_to_tens_of_thousands_thb_equivalence": false,
+    "new_physical_law": false
+  },
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "public VQC reproduction design, interface audit, ideal-statevector implementation, resource ledger, hybrid readout repair, tests, results and documentation"
+  }
+}
