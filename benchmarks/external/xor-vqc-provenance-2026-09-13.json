@@ -1,0 +1,53 @@
+{
+  "checked_on": "2026-09-13",
+  "paper": {
+    "title": "Comparing Classical and Quantum Variational Classifiers on the XOR Problem",
+    "authors": ["Miras Seilkhan", "Adilbek Taizhanov"],
+    "arxiv": "2602.24220v1",
+    "submitted": "2026-02-27",
+    "public_claim_scope_observed": "two-qubit VQC with depths 1 and 2 on XOR variants; depth 2 can match representative XOR accuracy, while the MLP is reported substantially faster and no clear efficiency advantage is reported"
+  },
+  "public_code": {
+    "repository": "mseilkhan/XOR-research-Quantum-ML-vs-Classic",
+    "branch_checked": "main",
+    "commit_sha": "d7dd995db6a19295235c48483fe1abb108d9022d",
+    "model_file": "core/models/vqc.py",
+    "settings_file": "experiments/settings.py",
+    "architecture": {
+      "qubits": 2,
+      "encoding": "RX(pi*x[0]) on wire 0; RX(pi*x[1]) on wire 1",
+      "ansatz_per_layer": "Rot(3 params) on wire 0; Rot(3 params) on wire 1; CNOT(0->1)",
+      "depths": [1, 2],
+      "observable": "PauliZ(0)",
+      "probability_mapping": "p(y=1|x)=(1-<Z0>)/2",
+      "trainable_parameters": "6*depth"
+    },
+    "training": {
+      "optimizer": "full-batch gradient descent in reported simulator settings",
+      "vqc_epochs": 250,
+      "learning_rate": 0.2,
+      "model_seeds_main": [0, 1, 2, 3, 4],
+      "analytic_and_finite_shot_regimes": ["analytic", 128, 1024]
+    },
+    "hardware_note": "public repository states that IBM hardware executions described in the manuscript are not included in the public artifact"
+  },
+  "uqpu_reproduction_scope": {
+    "dataset_change": "Batch039 deterministic continuous quadrant-XOR/XNOR contract is retained; inputs are affinely mapped from [-1,1] to [0,1] before public RX encoding",
+    "label_change": "Batch039 labels same-sign quadrants as class 1, complementing the paper Dataset-C XOR convention; UQPU therefore applies a fixed output-label complement",
+    "simulator": "independent pure-Python ideal two-qubit statevector implementation with exact forward analytic derivatives",
+    "not_claimed": [
+      "byte-for-byte reproduction of PennyLane internals",
+      "real-QPU reproduction",
+      "paper-wide validation or refutation",
+      "quantum advantage",
+      "economic advantage"
+    ]
+  },
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "public literature/code provenance audit and reproduction-interface mapping"
+  }
+}
