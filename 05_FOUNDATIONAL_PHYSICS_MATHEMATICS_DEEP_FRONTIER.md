@@ -128,7 +128,7 @@ particle / state
 
 Quark routes must explicitly account for confinement and may proceed either directly, if a controllable/readable particle-level state is physically specified, or indirectly through hadronic/nuclear states, QCD phases, gauge-theory simulation, sensing, materials or algorithms. String/holography routes begin as theory/information structures and may support physical-device claims only after an experimentally supported particle/state mechanism is identified.
 
-Canonical Batch-040 objective: `research_lanes/D_device_chip_fabrication/batches/BATCH_040_FND_007_FUNDAMENTAL_PARTICLE_TECHNOLOGY_SEARCH.md`.
+Canonical Batch-041 objective: `research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md`.
 
 ## Immediate foundational work program
 
