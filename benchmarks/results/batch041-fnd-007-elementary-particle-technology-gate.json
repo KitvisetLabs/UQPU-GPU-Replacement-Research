@@ -1,0 +1,96 @@
+{
+  "batch": 41,
+  "gate": "FND-007",
+  "classification": "ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH_GATE_ESTABLISHED",
+  "evidence_level": "RESEARCH_OBJECTIVE_PLUS_EXECUTABLE_EVIDENCE_GATE_WITH_LITERATURE_TRIAGE",
+  "primary_lane": "Lane D - Device / Chip / Fabrication",
+  "upstream_foundation": "F4 - quantum field theory / elementary-particle physics",
+  "cross_lane_dependencies": ["Lane A", "Lane C", "Lane E", "Lane F"],
+  "elementary_particle_families": [
+    "quarks",
+    "charged_leptons",
+    "neutrinos",
+    "photon",
+    "gluon",
+    "w_boson",
+    "z_boson",
+    "higgs_boson",
+    "antiparticle_states",
+    "proposed_bsm_particles"
+  ],
+  "theory_frameworks_are_tools_not_particle_substitutes": [
+    "standard_model_qft",
+    "qcd",
+    "qed",
+    "electroweak_theory",
+    "lattice_gauge_theory",
+    "effective_field_theory",
+    "string_m_theory_holography",
+    "other_quantum_gravity",
+    "bsm_open_registry"
+  ],
+  "highest_information_gain_initial_route": {
+    "route": "experimentally controllable lattice-gauge / fermionic quantum simulation",
+    "reason": "published 2025 hardware evidence provides a testable bridge from elementary-particle/gauge-theory structure to controllable quantum systems without assuming isolated-quark logic",
+    "direct_quark_logic_status": "BLOCKED_PENDING_PREPARATION_CONTROL_RETENTION_READOUT_MECHANISM"
+  },
+  "pinned_public_evidence": [
+    {
+      "source": "CERN Standard Model",
+      "url": "https://home.cern/science/physics/standard-model/",
+      "role": "established elementary-particle inventory"
+    },
+    {
+      "source": "Meth et al., Nature Physics 21, 570-576 (2025)",
+      "doi": "10.1038/s41567-025-02797-w",
+      "role": "experimental 2D lattice-QED simulation with matter and gauge fields on a trapped-ion qudit processor"
+    },
+    {
+      "source": "Halimeh et al., Nature Physics 21, 25-36 (2025)",
+      "doi": "10.1038/s41567-024-02721-8",
+      "role": "review of cold-atom quantum simulation of gauge theories"
+    },
+    {
+      "source": "Mathew and Raychowdhury, Communications Physics 8, 313 (2025)",
+      "doi": "10.1038/s42005-025-02230-x",
+      "role": "SU(3) lattice-gauge symmetry protection under dynamics/noise"
+    }
+  ],
+  "promotion_contract_requires": [
+    "particle_or_state",
+    "theory_framework",
+    "mathematical_formulation",
+    "causal_physical_mechanism",
+    "preparation",
+    "controllability",
+    "retention_or_coherence",
+    "readout",
+    "target_bottleneck",
+    "known_constraints",
+    "scaling_law",
+    "falsifier",
+    "observable",
+    "baseline",
+    "full_resource_accounting",
+    "evidence_label"
+  ],
+  "non_claims": {
+    "direct_quark_device_demonstrated": false,
+    "elementary_particle_device_demonstrated": false,
+    "string_scale_device_demonstrated": false,
+    "bsm_particle_discovery": false,
+    "new_physical_law": false,
+    "quantum_advantage": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "one_hundred_million_x_saving": false,
+    "data_center_to_phone_achievement": false
+  },
+  "next_gates": ["FND-007A", "FND-007B", "FND-007C", "FND-007D"],
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "elementary-particle research-objective design, literature triage, evidence-tier separation, executable gate/tests, frozen result artifact and documentation"
+  }
+}
