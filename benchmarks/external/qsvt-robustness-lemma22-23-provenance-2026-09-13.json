@@ -1,0 +1,60 @@
+{
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": [
+      "public literature verification",
+      "theorem contract extraction",
+      "interface audit",
+      "provenance recording"
+    ]
+  },
+  "checked_date": "2026-09-13",
+  "primary_sources": [
+    {
+      "title": "Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics",
+      "authors": ["Andras Gilyen", "Yuan Su", "Guang Hao Low", "Nathan Wiebe"],
+      "arxiv": "1806.01838v1",
+      "url": "https://arxiv.org/abs/1806.01838",
+      "section": "3.3 Robustness of singular value transformation",
+      "contracts": {
+        "lemma22": {
+          "name": "Robustness of singular value transformation 2",
+          "requirements": "degree-n polynomial P satisfying Corollary 8; A and A_tilde have operator norm at most 1",
+          "bound": "||P^(SV)(A)-P^(SV)(A_tilde)|| <= 4 n sqrt(||A-A_tilde||)"
+        },
+        "lemma23": {
+          "name": "Robustness of singular value transformation 3",
+          "requirements": "degree-n polynomial P satisfying Corollary 8; A and A_tilde have operator norm at most 1; ||A-A_tilde|| + ||(A+A_tilde)/2||^2 <= 1",
+          "bound": "||P^(SV)(A)-P^(SV)(A_tilde)|| <= n sqrt(2/(1-||(A+A_tilde)/2||^2)) ||A-A_tilde||"
+        }
+      }
+    },
+    {
+      "title": "Exponential quantum advantage in processing massive classical data",
+      "authors": ["Haimeng Zhao", "Alexander Zlokapa", "Hartmut Neven", "Ryan Babbush", "John Preskill", "Jarrod R. McClean", "Hsin-Yuan Huang"],
+      "arxiv": "2604.07639v1",
+      "url": "https://arxiv.org/abs/2604.07639",
+      "version_history_checked": "Public arXiv submission history showed v1 only on 2026-09-13",
+      "relevant_location": "Lemma D.23 / Eqs. D214-D215",
+      "interface_summary": "The proof first obtains a projected block approximating A/s, then applies a degree-d QSVT polynomial and displays output propagation epsilon_2 + O(d epsilon_1)."
+    }
+  ],
+  "uqpu_interpretation": {
+    "ideal_normalized_block": "B=A/s with ||B||<=1/s",
+    "approximate_block_contract": "||B_tilde-B||<=eta",
+    "sufficient_lemma23_condition": "eta + (1/s + eta/2)^2 <= 1",
+    "closed_form_positive_eta_cap": "2*(sqrt(2+2/s)-1-1/s)",
+    "scope": "projected singular-value-transform operator error only",
+    "non_claims": [
+      "not a proof of QOS Lemma D.23",
+      "not a refutation of QOS Lemma D.23",
+      "not a full-unitary or diamond-norm channel bound",
+      "not a realized QSVT circuit-depth measurement",
+      "not a real-QPU result",
+      "not a quantum-advantage or hardware-replacement result"
+    ]
+  }
+}
