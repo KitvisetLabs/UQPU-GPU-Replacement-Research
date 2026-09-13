@@ -1,0 +1,131 @@
+{
+  "batch": 42,
+  "gate": "FND-007B",
+  "classification": "LATTICE_QED_QUDIT_RESOURCE_AND_PLAQUETTE_REPRODUCTION",
+  "evidence_level": "INDEPENDENT_CLASSICAL_REPRODUCTION_OF_PUBLISHED_SMALL_MODEL",
+  "checked_on": "2026-09-13",
+  "source": {
+    "title": "Simulating 2D lattice gauge theories on a qudit quantum computer",
+    "authors": [
+      "Michael Meth",
+      "Jan F. Haase",
+      "Jinglei Zhang",
+      "Claire Edmunds",
+      "Lukas Postler",
+      "Alex Steiner",
+      "Andrew J. Jena",
+      "Luca Dellantonio",
+      "Rainer Blatt",
+      "Peter Zoller",
+      "Thomas Monz",
+      "Philipp Schindler",
+      "Christine Muschik",
+      "Martin Ringbauer"
+    ],
+    "arxiv": "2310.12110v3",
+    "journal": "Nature Physics 21, 570-576 (2025)",
+    "doi": "10.1038/s41567-025-02797-w",
+    "reproduced_interfaces": [
+      "Eqs. 9-10: single open plaquette 2D-QED Hamiltonian after Gauss-law elimination",
+      "Appendix G Table 1: full gauge one-plaquette register/CNOT resource formulas",
+      "Appendix G Table 2: pure-gauge periodic-plaquette register/CNOT resource formulas"
+    ]
+  },
+  "single_plaquette_reproduction": {
+    "matter_sites": 4,
+    "independent_gauge_fields_after_gauss_elimination": 1,
+    "gauge_dimension": 3,
+    "zero_total_charge_sector_dimension": 18,
+    "mass": 0.1,
+    "omega": 5.0,
+    "solver": "deterministic shifted power iteration on the exact finite real-symmetric Hamiltonian",
+    "curve": [
+      {
+        "inverse_g_squared": 0.01,
+        "ground_energy": -2.13625748030171,
+        "plaquette_expectation": 0.00028353531764597123
+      },
+      {
+        "inverse_g_squared": 0.1,
+        "ground_energy": -9.138735278662324,
+        "plaquette_expectation": 0.11677802242605197
+      },
+      {
+        "inverse_g_squared": 1.0,
+        "ground_energy": -13.413890680611074,
+        "plaquette_expectation": 0.5745823967558195
+      },
+      {
+        "inverse_g_squared": 10.0,
+        "ground_energy": -20.372391698091615,
+        "plaquette_expectation": 0.69256480058238
+      },
+      {
+        "inverse_g_squared": 100.0,
+        "ground_energy": -83.9002548334451,
+        "plaquette_expectation": 0.7066013009670551
+      }
+    ],
+    "source_weak_coupling_reference": 0.7071067811865475,
+    "finding": "The independent exact finite-dimensional calculation reproduces the source-v3 qualitative strong-to-weak-coupling behavior and approaches the stated d=3 weak-coupling plaquette value 1/sqrt(2)."
+  },
+  "appendix_g_full_gauge_resource_reproduction": {
+    "qudit_formulas": {
+      "register_size": "5",
+      "cnot_count": "18 + 4*(d-1)"
+    },
+    "qubit_one_hot_formulas": {
+      "register_size": "4 + d",
+      "cnot_count": "18 + 36*(d-1)"
+    },
+    "rows": [
+      {"d": 3, "qudit_register": 5, "qudit_cnot": 26, "qubit_register": 7, "qubit_cnot": 90},
+      {"d": 5, "qudit_register": 5, "qudit_cnot": 34, "qubit_register": 9, "qubit_cnot": 162},
+      {"d": 7, "qudit_register": 5, "qudit_cnot": 42, "qubit_register": 11, "qubit_cnot": 234}
+    ]
+  },
+  "appendix_g_pure_gauge_resource_reproduction": {
+    "qudit_formulas": {
+      "register_size": "3",
+      "cnot_count": "8"
+    },
+    "qubit_one_hot_formulas": {
+      "register_size": "3*d",
+      "cnot_count": "48 + 12*d"
+    },
+    "rows": [
+      {"d": 3, "qudit_register": 3, "qudit_cnot": 8, "qubit_register": 9, "qubit_cnot": 84},
+      {"d": 5, "qudit_register": 3, "qudit_cnot": 8, "qubit_register": 15, "qubit_cnot": 108},
+      {"d": 7, "qudit_register": 3, "qudit_cnot": 8, "qubit_register": 21, "qubit_cnot": 132}
+    ]
+  },
+  "interpretation": {
+    "positive_result": "A published experimentally grounded particle-physics quantum-simulation route is independently reproducible at the Hamiltonian/resource-interface level, and native qudits give a concrete encoding/circuit-complexity advantage over the paper's comparable one-hot qubit construction for these small circuits.",
+    "boundary": "This is a representation/circuit-resource advantage for a specific small lattice-QED simulation route, not an end-to-end computational or economic quantum advantage.",
+    "technology_path": "elementary-particle/QED theory -> lattice gauge model -> Gauss-law reduction -> native qudit gauge-field encoding -> lower register/entangling-gate burden -> candidate device/runtime primitive"
+  },
+  "non_claims": {
+    "real_qpu_reproduction_by_uqpu": false,
+    "quantum_advantage": false,
+    "direct_quark_computer": false,
+    "elementary_particle_computer": false,
+    "qcd_simulation_demonstrated_by_uqpu": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "one_hundred_million_x_saving": false,
+    "data_center_to_phone_achieved": false,
+    "new_physical_law": false
+  },
+  "next_gates": [
+    "FND-007B2: independently reconstruct the same d=3 Hamiltonian with a second implementation or SDK and compare eigenvalues/plaquette observables",
+    "FND-007B3: add finite-shot/noise and hardware-timing/cost accounting for the qudit-vs-qubit resource route",
+    "FND-007B4: move from U(1) QED to an SU(3)/QCD-adjacent symmetry-protection reproduction without promoting it to a direct-quark-device claim",
+    "FND-007C: separately test string/holography-inspired information structures after mapping to realizable workload resources"
+  ],
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "latest-literature triage, published Hamiltonian/resource-interface audit, independent exact reproduction, executable implementation/tests, evidence classification and research documentation"
+  }
+}
