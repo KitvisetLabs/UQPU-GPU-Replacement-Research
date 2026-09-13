@@ -1,0 +1,166 @@
+{
+  "batch": 44,
+  "gate": "FND-007B3",
+  "classification": "LATTICE_QED_QUDIT_QUALITY_ADJUSTED_HARDWARE_THRESHOLD_LEDGER",
+  "evidence_level": "SOURCE_GROUNDED_CONDITIONAL_HARDWARE_DIAGNOSTIC",
+  "checked_on": "2026-09-14",
+  "source": {
+    "title": "Simulating 2D lattice gauge theories on a qudit quantum computer",
+    "authors_short": "Meth et al.",
+    "journal": "Nature Physics 21, 570-576 (2025)",
+    "doi": "10.1038/s41567-025-02797-w",
+    "arxiv": "2310.12110v3",
+    "source_grounded_values": {
+      "qutrit_repetitions": 150,
+      "ququint_repetitions": 300,
+      "time_evolution_repetitions": 150,
+      "motional_coherence_seconds": 0.0274,
+      "heating_rate_phonons_per_second": 2.7,
+      "optical_t1_seconds": 1.1,
+      "optical_t2_seconds": 0.092,
+      "representative_blue_sideband_rabi_hz": 4000.0
+    }
+  },
+  "resource_pairs_from_batch042": {
+    "full_gauge_d3": {
+      "native_qudit_entangler_equivalents": 26,
+      "one_hot_qubit_entanglers": 90
+    },
+    "pure_gauge_d3": {
+      "native_qudit_entangler_equivalents": 8,
+      "one_hot_qubit_entanglers": 84
+    }
+  },
+  "quality_model": {
+    "survival_proxy": "p^G",
+    "quality_adjusted_entangler_cost": "G / p^G",
+    "break_even_definition": "minimum native-qudit p_d such that G_d/p_d^G_d <= G_b/p_b^G_b",
+    "scope": "conditional independent-identical entangler proxy only; excludes SPAM, correlations, coherent errors, compiler details, mitigation, parallelism, calibration overhead and money cost"
+  },
+  "full_gauge_d3_thresholds": [
+    {
+      "one_hot_qubit_per_entangler_success": 0.98,
+      "native_qudit_break_even_success": 0.8889710169965934,
+      "equal_fidelity_native_qudit_cost": 43.963815838281896,
+      "equal_fidelity_one_hot_qubit_cost": 554.4925265640153,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 12.612474963585528
+    },
+    {
+      "one_hot_qubit_per_entangler_success": 0.99,
+      "native_qudit_break_even_success": 0.9207674043211239,
+      "equal_fidelity_native_qudit_cost": 33.76434183154045,
+      "equal_fidelity_one_hot_qubit_cost": 222.36938535995262,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 6.585923885897566
+    },
+    {
+      "one_hot_qubit_per_entangler_success": 0.995,
+      "native_qudit_break_even_success": 0.936965044025807,
+      "equal_fidelity_native_qudit_cost": 29.619194838457275,
+      "equal_fidelity_one_hot_qubit_cost": 141.30750955395902,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 4.770808603159149
+    },
+    {
+      "one_hot_qubit_per_entangler_success": 0.999,
+      "native_qudit_break_even_success": 0.9500682377259113,
+      "equal_fidelity_native_qudit_cost": 26.685211797250386,
+      "equal_fidelity_one_hot_qubit_cost": 98.48011999564721,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 3.690438012779591
+    }
+  ],
+  "pure_gauge_d3_thresholds": [
+    {
+      "one_hot_qubit_per_entangler_success": 0.98,
+      "native_qudit_break_even_success": 0.6028720257920178,
+      "equal_fidelity_native_qudit_cost": 9.403323590302074,
+      "equal_fidelity_one_hot_qubit_cost": 458.4467812425779,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 48.753696162853274
+    },
+    {
+      "one_hot_qubit_per_entangler_success": 0.99,
+      "native_qudit_break_even_success": 0.6706885326500162,
+      "equal_fidelity_native_qudit_cost": 8.669787047607802,
+      "equal_fidelity_one_hot_qubit_cost": 195.39927134083695,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 22.537955115604852
+    },
+    {
+      "one_hot_qubit_per_entangler_success": 0.995,
+      "native_qudit_break_even_success": 0.7071209192119038,
+      "equal_fidelity_native_qudit_cost": 8.327321670016666,
+      "equal_fidelity_one_hot_qubit_cost": 127.97952779430905,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 15.368630259007746
+    },
+    {
+      "one_hot_qubit_per_entangler_success": 0.999,
+      "native_qudit_break_even_success": 0.7375457486324559,
+      "equal_fidelity_native_qudit_cost": 8.06428896264635,
+      "equal_fidelity_one_hot_qubit_cost": 91.36466687539097,
+      "equal_fidelity_qubit_to_qudit_cost_ratio": 11.329537830128677
+    }
+  ],
+  "serial_coherence_exposure_ceiling_us": {
+    "full_gauge_d3": {
+      "motional_coherence_native_qudit": 1053.8461538461538,
+      "motional_coherence_one_hot_qubit": 304.44444444444446,
+      "optical_t2_native_qudit": 3538.4615384615386,
+      "optical_t2_one_hot_qubit": 1022.2222222222221
+    },
+    "pure_gauge_d3": {
+      "motional_coherence_native_qudit": 3425.0,
+      "motional_coherence_one_hot_qubit": 326.1904761904762,
+      "optical_t2_native_qudit": 11500.0,
+      "optical_t2_one_hot_qubit": 1095.2380952380954
+    },
+    "boundary": "count-only fully serial budget; not a measured or compiled gate duration"
+  },
+  "finite_shot_diagnostics": {
+    "outcome_model": "generic bounded observable in [-1, 1]",
+    "qutrit_150_repetitions": {
+      "worst_case_standard_error": 0.08164965809277261,
+      "hoeffding_95_percent_half_width": 0.22177704883099564
+    },
+    "ququint_300_repetitions": {
+      "worst_case_standard_error": 0.05773502691896257,
+      "hoeffding_95_percent_half_width": 0.1568200551399371
+    },
+    "sufficient_95_percent_hoeffding_repetitions": {
+      "absolute_error_0.10": 738,
+      "absolute_error_0.05": 2952,
+      "absolute_error_0.02": 18445,
+      "absolute_error_0.01": 73778
+    },
+    "boundary": "independent worst-case concentration diagnostic; not a reconstruction of the source Monte-Carlo error bars"
+  },
+  "heating_context": {
+    "expected_phonons_over_one_reported_motional_coherence_time": 0.07398,
+    "boundary": "rate-times-interval context only; not a complete motional-noise model"
+  },
+  "finding": {
+    "positive": "The source-scoped native-qudit gate-count advantage has substantial conditional headroom under a simple independent-entangler survival proxy. For the d=3 full-gauge 26-vs-90 comparison, if the one-hot-qubit entangler success is 0.99, the native-qudit break-even success is about 0.92077 in this proxy.",
+    "falsifier": "The gate-count result must not be promoted to hardware advantage if measured native-qudit entangler quality, duration, SPAM, control/calibration burden, or cost crosses the corresponding break-even boundary.",
+    "unresolved": "Directly comparable native-qudit and one-hot-qubit per-entangler fidelities, exact compiled durations, readout confusion matrices, parallel schedules, calibration burden and monetary cost are not pinned in this batch."
+  },
+  "next_gates": [
+    "FND-007B3B: pin directly comparable experimental gate/readout/duration data or execute a controlled hardware/simulator benchmark before claiming measured quality-adjusted advantage",
+    "FND-007B4: execute SU(3)/QCD-adjacent symmetry-protection reproduction with an explicit gauge/symmetry-violation metric",
+    "FND-007C: map string/holography structures to realizable workload resources"
+  ],
+  "non_claims": {
+    "measured_end_to_end_qudit_advantage": false,
+    "real_qpu_reproduction_by_uqpu": false,
+    "quantum_advantage": false,
+    "direct_quark_computer": false,
+    "qcd_simulation_demonstrated_by_uqpu": false,
+    "universal_qudit_advantage": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "one_hundred_x": false,
+    "one_hundred_million_x": false,
+    "new_physical_law": false
+  },
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "primary-source hardware-data audit, conditional quality model, finite-shot bounds, coherence-exposure diagnostics, executable implementation/tests, evidence classification and documentation"
+  }
+}
