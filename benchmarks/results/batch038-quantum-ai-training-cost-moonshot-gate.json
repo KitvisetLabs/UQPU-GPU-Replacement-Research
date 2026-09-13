@@ -1,0 +1,46 @@
+{
+  "batch": 38,
+  "gate": "AI-COST-001",
+  "classification": "AI_TRAINING_COST_MOONSHOT_NECESSARY_CONDITION_GATE_ESTABLISHED",
+  "evidence_level": "ANALYTIC_ACCOUNTING_NECESSARY_CONDITION_WITH_LITERATURE_MAP",
+  "owner_defined_ambition_scale_proxy_usd": [10000000000000, 100000000000000],
+  "canonical_target_thb": 50000,
+  "fx_snapshot": {
+    "date": "2026-09-13",
+    "thb_per_usd": 33.045,
+    "purpose": "reproducible accounting snapshot; not a forecast"
+  },
+  "canonical_target_usd": 1513.0882130428204,
+  "required_cost_compression": {
+    "from_10_trillion_usd": 6609000000.0,
+    "from_100_trillion_usd": 66090000000.0
+  },
+  "maximum_nonaccelerated_residual_fraction_even_if_accelerated_part_is_free": {
+    "from_10_trillion_usd": 1.5130882130428204e-10,
+    "from_100_trillion_usd": 1.5130882130428203e-11
+  },
+  "one_hundred_million_x_is_sufficient_for_canonical_target": false,
+  "cost_after_100_million_x_thb": {
+    "from_10_trillion_usd": 3304500.0,
+    "from_100_trillion_usd": 33045000.0
+  },
+  "illustrative_residual_floor_fraction": 1e-6,
+  "illustrative_infinite_acceleration_floor_thb": {
+    "from_10_trillion_usd": 330450000.0,
+    "from_100_trillion_usd": 3304500000.0
+  },
+  "interpretation": "The moonshot cannot be reached by accelerating only a dominant compute kernel if ordinary residual costs remain above the target fraction. State preparation, data movement, memory, networking, control, readout, energy, cooling, hardware and lifecycle cost must be included or structurally eliminated/compressed.",
+  "real_qpu": false,
+  "quantum_advantage_demonstrated": false,
+  "frontier_ai_training_cost_advantage_demonstrated": false,
+  "gpu_npu_ram_dram_hbm_replacement_demonstrated": false,
+  "hundred_million_x_demonstrated": false,
+  "new_physical_law": false,
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "literature triage, cost-compression formulation, analytic necessary-condition model, executable artifact, tests, results and research-note preparation"
+  }
+}

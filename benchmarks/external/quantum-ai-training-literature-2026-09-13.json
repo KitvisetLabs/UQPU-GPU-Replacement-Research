@@ -1,0 +1,83 @@
+{
+  "checked_on": "2026-09-13",
+  "purpose": "AI-COST-001 public-literature map for quantum/hybrid AI training cost reduction",
+  "sources": [
+    {
+      "title": "A quantum algorithm for training wide and deep classical neural networks",
+      "authors": "Alexander Zlokapa, Hartmut Neven, Seth Lloyd",
+      "arxiv": "2107.09200",
+      "url": "https://arxiv.org/abs/2107.09200",
+      "evidence": "THEORETICAL_ALGORITHM_PLUS_NUMERICAL_DEMONSTRATION",
+      "relevance": "Reports logarithmic-in-training-set-size complexity for a specified wide/deep-network setting under efficient quantum linear-system, state-preparation and readout conditions; the paper itself states these conditions are required for end-to-end exponential speedup.",
+      "boundary": "Not a demonstration of general frontier-model training cost reduction on real hardware."
+    },
+    {
+      "title": "Quantum algorithms for feedforward neural networks",
+      "authors": "Jonathan Allcock, Chang-Yu Hsieh, Iordanis Kerenidis, Shengyu Zhang",
+      "arxiv": "1812.03089",
+      "url": "https://arxiv.org/abs/1812.03089",
+      "evidence": "THEORETICAL_ALGORITHM",
+      "relevance": "Provides training/evaluation algorithms with potential quadratic network-size dependence improvement while relying on quantum memory/data-access primitives.",
+      "boundary": "Asymptotic algorithmic result; not end-to-end infrastructure economics."
+    },
+    {
+      "title": "Backpropagation scaling in parameterised quantum circuits",
+      "authors": "Joseph Bowles, David Wierichs, Chae-Yeun Park",
+      "arxiv": "2306.14962",
+      "url": "https://arxiv.org/abs/2306.14962",
+      "evidence": "THEORY_PLUS_TOY_NUMERICS",
+      "relevance": "Identifies structured parameterized circuits with gradient-estimation scaling approaching classical backpropagation and reports about two orders of magnitude training-cost reduction on a 16-qubit toy classification example.",
+      "boundary": "Not a frontier-AI or end-to-end cost demonstration."
+    },
+    {
+      "title": "On quantum backpropagation, information reuse, and cheating measurement collapse",
+      "authors": "Amira Abbas et al.",
+      "arxiv": "2305.13362",
+      "url": "https://arxiv.org/abs/2305.13362",
+      "evidence": "THEORETICAL_LIMIT_AND_ALGORITHM",
+      "relevance": "Shows a key obstacle to backpropagation-style information reuse in quantum models and identifies conditions involving multiple state copies for matching backpropagation scaling.",
+      "boundary": "Barrier/interface result, not a cost advantage claim."
+    },
+    {
+      "title": "Barren plateaus in variational quantum computing",
+      "journal": "Nature Reviews Physics 7, 174–189 (2025)",
+      "url": "https://www.nature.com/articles/s42254-025-00813-9",
+      "evidence": "PEER_REVIEWED_REVIEW",
+      "relevance": "Documents exponentially suppressed gradients as a major trainability barrier and surveys causes/mitigations.",
+      "boundary": "Review evidence; does not establish a practical AI-training advantage."
+    },
+    {
+      "title": "Does provable absence of barren plateaus imply classical simulability?",
+      "journal": "Nature Communications 16, 7907 (2025)",
+      "url": "https://www.nature.com/articles/s41467-025-63099-6",
+      "evidence": "PEER_REVIEWED_PERSPECTIVE_ANALYSIS",
+      "relevance": "Collects evidence that structures avoiding barren plateaus can in many cases also enable classical simulation, creating a critical advantage-vs-trainability gate.",
+      "boundary": "Case-by-case evidence, not a universal no-go theorem."
+    },
+    {
+      "title": "Resource-state quantum RAM for fast and error-correctable queries",
+      "journal": "Nature Communications 17, 7152 (2026)",
+      "url": "https://www.nature.com/articles/s41467-026-73275-x",
+      "evidence": "PEER_REVIEWED_QRAM_ARCHITECTURE",
+      "relevance": "Recent QRAM architecture relevant to coherent classical-data access, a prerequisite/cost center for many QML algorithms.",
+      "boundary": "QRAM architecture progress is not evidence of cheap end-to-end AI training."
+    },
+    {
+      "title": "A rigorous and robust quantum speed-up in supervised machine learning",
+      "journal": "Nature Physics 17, 1013–1017 (2021)",
+      "url": "https://www.nature.com/articles/s41567-021-01287-z",
+      "evidence": "RIGOROUS_TASK_SPECIFIC_THEORETICAL_ADVANTAGE",
+      "relevance": "Establishes an end-to-end quantum speedup for a constructed supervised classification problem with classical data access.",
+      "boundary": "Task-specific learning advantage; not general neural-network training economics."
+    },
+    {
+      "title": "Advantage of quantum machine learning from general computational advantages",
+      "journal": "npj Quantum Information (2026)",
+      "url": "https://www.nature.com/articles/s41534-026-01279-y",
+      "evidence": "THEORETICAL_QML_ADVANTAGE_FRAMEWORK",
+      "relevance": "Shows how general quantum computational advantages can induce supervised-learning advantage for carefully defined task families.",
+      "boundary": "Does not demonstrate practical frontier-AI training or the UQPU cost moonshot."
+    }
+  ],
+  "research_boundary": "Public literature contains important conditional, task-specific and architectural routes, but this audit found no evidence establishing a general 100,000,000x, billion-fold or tens-of-billions-fold end-to-end reduction in practical frontier AI training cost."
+}
