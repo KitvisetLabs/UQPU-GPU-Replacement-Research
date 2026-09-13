@@ -1,0 +1,107 @@
+{
+  "batch": 39,
+  "gate": "AI-COST-002",
+  "classification": "CLASSICAL_AI_TRAINING_ACCEPTED_CAPABILITY_BASELINE_FROZEN",
+  "evidence_level": "EXECUTABLE_CLASSICAL_SOFTWARE_BASELINE_PLUS_ANALYTIC_RESOURCE_LEDGER",
+  "workload": {
+    "name": "deterministic XOR-quadrant binary classification",
+    "model": "dense MLP 2-16-1 with tanh hidden and sigmoid output",
+    "train_examples": 256,
+    "held_out_examples": 256,
+    "epochs": 800,
+    "learning_rate": 0.2,
+    "seed": 1234,
+    "parameter_count": 65,
+    "scalar_representation": "FP64 logical payload contract"
+  },
+  "accepted_capability_contract": {
+    "held_out_accuracy_minimum": 0.98,
+    "held_out_binary_cross_entropy_maximum": 0.19,
+    "reference_train_accuracy": 0.9765625,
+    "reference_train_binary_cross_entropy": 0.18211116370212715,
+    "reference_held_out_accuracy": 0.98046875,
+    "reference_held_out_binary_cross_entropy": 0.17734677266198473
+  },
+  "exact_source_level_training_operation_ledger": {
+    "training_samples_processed": 204800,
+    "multiply": 29595200,
+    "add_subtract": 26676000,
+    "tanh": 3276800,
+    "exp": 204800,
+    "division": 204800
+  },
+  "logical_tensor_payload_ledger": {
+    "parameter_payload_bytes": 520,
+    "gradient_payload_bytes": 520,
+    "train_dataset_payload_bytes": 6144,
+    "streaming_activation_payload_bytes_per_example": 136,
+    "logical_peak_payload_bytes_streaming": 7320,
+    "minimum_dataset_read_bytes_over_training": 4915200,
+    "optimizer_parameter_traffic_bytes": 832000
+  },
+  "reference_execution_snapshot": {
+    "measurement_type": "wall-clock only",
+    "python": "3.13.5",
+    "platform": "Linux x86_64",
+    "cpu_reported": "AMD EPYC 9V74 80-Core Processor",
+    "runtime_samples_seconds": [
+      1.1424663410000448,
+      1.1636279660000355,
+      1.163067027000011,
+      1.1542783059999238,
+      1.1615304919999971,
+      1.1564624219998905,
+      1.1212282330000107
+    ],
+    "median_training_wall_seconds": 1.1564624219998905,
+    "warning": "runtime is environment-specific and is not a hardware-neutral performance guarantee"
+  },
+  "modelled_cost_scenario": {
+    "status": "MODELLED_SCENARIO_COST_NOT_MEASURED_TCO",
+    "host_power_w_assumption": 65.0,
+    "electricity_usd_per_kwh_assumption": 0.10,
+    "host_capex_usd_assumption": 500.0,
+    "host_lifetime_years_assumption": 3.0,
+    "utilization_fraction_assumption": 0.5,
+    "energy_kwh_model": 0.000020880571508331355,
+    "electricity_cost_usd_model": 0.0000020880571508331354,
+    "host_amortization_usd_per_hour_model": 0.0380517503805175,
+    "host_amortization_cost_usd_model": 0.000012223727612885702,
+    "electricity_plus_host_amortization_usd_model": 0.000014311784763718838,
+    "excluded_from_this_toy_scenario": [
+      "facility power and cooling",
+      "networking",
+      "storage lifecycle",
+      "operator labor",
+      "software/licensing",
+      "financing",
+      "reliability/redundancy",
+      "data acquisition/curation"
+    ]
+  },
+  "comparison_rule_for_ai_cost_003": {
+    "same_train_and_test_examples": true,
+    "same_held_out_accuracy_threshold": true,
+    "same_loss_threshold": true,
+    "state_preparation_and_readout_must_be_counted": true,
+    "classical_host_and_memory_cost_must_be_counted": true,
+    "failed_or_slower_quantum_route_is_publishable": true
+  },
+  "non_claims": {
+    "frontier_ai_baseline": false,
+    "real_qpu": false,
+    "quantum_advantage": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "one_hundred_million_x_saving": false,
+    "billion_fold_saving": false,
+    "data_center_to_tens_of_thousands_thb_equivalence": false,
+    "new_physical_law": false
+  },
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "classical baseline design, exact resource-ledger derivation, executable implementation, tests, reference measurement and research documentation"
+  }
+}
