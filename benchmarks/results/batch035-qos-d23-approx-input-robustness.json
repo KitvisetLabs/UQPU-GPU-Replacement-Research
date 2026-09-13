@@ -1,0 +1,74 @@
+{
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": [
+      "theorem and interface audit",
+      "mathematical derivation",
+      "executable implementation",
+      "reproducibility test design",
+      "research documentation preparation"
+    ]
+  },
+  "classification": "D23_PROJECTED_BLOCK_LINEAR_ROBUSTNESS_MARGIN_CONTRACT_IDENTIFIED",
+  "evidence_level": "THEORY_EXECUTABLE_IMPORTED_ROBUSTNESS_INTERFACE_AUDIT",
+  "source_version": "arXiv:2604.07639v1",
+  "imported_theorem_source": "arXiv:1806.01838v1 Lemmas 22-23",
+  "sparsity": 4,
+  "total_error_for_diagnostic_split": 0.01,
+  "robustness_budget": 0.0033333333333333335,
+  "lemma23_sufficient_input_error_cap": 0.6622776601683795,
+  "examples": {
+    "degree_10": {
+      "actual_degree_parameter": 10,
+      "robustness_budget": 0.0033333333333333335,
+      "max_projected_input_error_linear_lemma23": 0.00022821078637028224,
+      "max_projected_input_error_generic_lemma22": 6.944444444444446e-09,
+      "linear_to_generic_tolerance_ratio": 32862.35323732063,
+      "lemma23_bound_at_linear_tolerance": 0.0033333333333333335,
+      "lemma23_condition_lhs_at_linear_tolerance": 0.0627852765030036
+    },
+    "degree_100": {
+      "actual_degree_parameter": 100,
+      "robustness_budget": 0.0033333333333333335,
+      "max_projected_input_error_linear_lemma23": 2.2821703783458297e-05,
+      "max_projected_input_error_generic_lemma22": 6.944444444444445e-11,
+      "linear_to_generic_tolerance_ratio": 328632.5344817994,
+      "lemma23_bound_at_linear_tolerance": 0.0033333333333333335,
+      "lemma23_condition_lhs_at_linear_tolerance": 0.06252852725993685
+    },
+    "degree_1000": {
+      "actual_degree_parameter": 1000,
+      "robustness_budget": 0.0033333333333333335,
+      "max_projected_input_error_linear_lemma23": 2.2821766284922683e-06,
+      "max_projected_input_error_generic_lemma22": 6.944444444444446e-13,
+      "linear_to_generic_tolerance_ratio": 3286334.3450288656,
+      "lemma23_bound_at_linear_tolerance": 0.003333333333333333,
+      "lemma23_condition_lhs_at_linear_tolerance": 0.06250285272208769
+    },
+    "degree_10000": {
+      "actual_degree_parameter": 10000,
+      "robustness_budget": 0.0033333333333333335,
+      "max_projected_input_error_linear_lemma23": 2.282177253493733e-07,
+      "max_projected_input_error_generic_lemma22": 6.944444444444445e-15,
+      "linear_to_generic_tolerance_ratio": 32863352.45030975,
+      "lemma23_bound_at_linear_tolerance": 0.0033333333333333335,
+      "lemma23_condition_lhs_at_linear_tolerance": 0.0625002852721697
+    }
+  },
+  "source_d215_linear_O_d_eta_form_supportable_under_explicit_interior_contract": true,
+  "diagnostic_degree_examples_are_actual_degree_parameters_not_batch034_big_O_realizations": true,
+  "d23_theorem_proved": false,
+  "d23_theorem_refuted": false,
+  "qos_globally_invalidated": false,
+  "full_unitary_error_bound_established": false,
+  "full_channel_error_bound_established": false,
+  "real_qpu": false,
+  "quantum_advantage_demonstrated": false,
+  "gpu_npu_ram_dram_hbm_replacement_demonstrated": false,
+  "advantage_100x_demonstrated": false,
+  "advantage_100000000x_demonstrated": false,
+  "new_physical_law_claimed": false
+}
