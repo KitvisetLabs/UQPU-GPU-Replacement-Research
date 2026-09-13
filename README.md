@@ -29,6 +29,23 @@ Batch 038 freezes a reproducible canonical accounting example: at `50,000 THB`, 
 
 No real-QPU AI-training advantage, frontier-model cost advantage, GPU/NPU/RAM/DRAM/HBM replacement, billion-fold realized saving or tens-of-thousands-of-baht data-center equivalence is currently claimed.
 
+# PRIORITY RESEARCH PROGRAM — ELEMENTARY-PARTICLE TECHNOLOGY
+## Search every credible particle-level route for new computation, AI, memory, sensing, materials, energy and cost-compression primitives
+
+> **Major research objective:** investigate whether **elementary particles and particle-level quantum states** can be turned directly or indirectly into useful technology primitives. The search includes all established Standard Model elementary-particle families—quarks, charged leptons, neutrinos, photon, gluon, W, Z and Higgs—plus antiparticle-state routes and falsifiable proposed particles when evidence permits.
+>
+> QCD, QED, electroweak theory, lattice gauge theory, effective field theory, string/M-theory, holography, quantum-gravity programs and BSM theories are treated as **frameworks for describing, predicting or inventing particle-level hypotheses**, not as substitutes for the elementary-particle objective and not as automatically validated physics.
+
+**Primary lane:** **Lane D — Quantum / Photonic / Semiconductor Devices / Fabrication / Packaging**, with the Foundational Physics & Mathematics Deep Frontier as its upstream F4 layer and Lane A/C/E/F dependencies for algorithms, state/memory, materials/energy and benchmark/economics.
+
+The project explicitly tests both **direct** and **indirect** routes. For example, up/down quark differences may motivate hypotheses, but confinement, preparation, controllability, retention/coherence and readout must be solved before any direct-quark-device claim can advance. Indirect routes through hadronic/nuclear states, gauge-theory encodings, quantum simulation, sensing, transduction, materials or algorithms remain valid research paths.
+
+String theory and holography are included as high-risk exploratory frameworks. Their mathematical/information structures may be investigated for useful encodings, dualities, error-correction structures or algorithmic transformations, but no string-scale device claim is allowed without an experimentally supported particle/state mechanism.
+
+**Canonical current gate:** [research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md](research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md). The executable gate requires each candidate to specify particle/state, theory framework, mechanism, preparation, control, retention/coherence, readout, scaling, falsifier, observable, baseline and full resource accounting.
+
+No direct quark computer, elementary-particle computer, string-scale computer, BSM discovery, new physical law, quantum advantage, GPU/NPU/RAM/DRAM/HBM replacement or >=100,000,000x saving is currently claimed.
+
 # PERMANENT PRINCIPLE — AI-ASSISTED PHYSICS EQUATION DISCOVERY
 ## INV-035 — ULTRA IMAGINATION FOR NEW EQUATIONS; ULTRA KNOWLEDGE AND EVIDENCE FOR REAL TECHNOLOGY
 
@@ -105,7 +122,7 @@ This agenda explicitly preserves elementary-particle physics and fundamental mat
 
 **Canonical strategy:** [04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md) — permanent under **INV-033**.
 
-The root-level mission/foundation/pillars `00`, `00A`, `00B`, `01`–`06` are intentionally prominent because the project couples scientific invention, computation, AI-training cost compression, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
+The root-level mission/foundation/pillars `00`, `00A`, `00B`, `01`–`06` are intentionally prominent because the project couples scientific invention, computation, AI-training cost compression, elementary-particle technology research, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
 
 ## Core mission
 
@@ -164,11 +181,11 @@ H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Research
         -> Integration Gate -> evidence/tests/cost -> GitHub sync
 ```
 
-The Foundational Physics & Mathematics Deep-Frontier Agenda and AI-Assisted Physics Equation Discovery are cross-cutting upstream layers feeding **all A–H lanes**. Lane A owns the quantum/hybrid AI-training cost-compression workload program, with B/C/D/F providing execution, memory/data-movement, physical-device and economics/evidence contracts. Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
+The Foundational Physics & Mathematics Deep-Frontier Agenda and AI-Assisted Physics Equation Discovery are cross-cutting upstream layers feeding **all A–H lanes**. Lane A owns the quantum/hybrid AI-training cost-compression workload program, with B/C/D/F providing execution, memory/data-movement, physical-device and economics/evidence contracts. **Lane D owns the elementary-particle technology program at the device-feasibility layer, fed by the F4 elementary-particle/QFT foundation and coupled to A/C/E/F for algorithmic translation, state semantics, physical infrastructure and evidence/economics.** Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
 
 ## Current evidence status
 
-The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies, testable energy/financing cost models, executable fundamental-limit helpers and an executable equation-discovery hypothesis gate.
+The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies, testable energy/financing cost models, executable fundamental-limit helpers, an executable equation-discovery hypothesis gate and an executable elementary-particle technology evidence gate.
 
 However:
 
@@ -177,6 +194,8 @@ However:
 - no >=100× or >=100,000,000× real-QPU end-to-end economic advantage has been verified;
 - no billion-fold or tens-of-billions-fold AI-training cost advantage has been demonstrated;
 - no data-center-to-phone equivalence has been demonstrated;
+- no direct quark or elementary-particle computing device has been demonstrated;
+- no string-scale computing device or BSM particle technology has been demonstrated;
 - no universal Au/Cu/Ag/Li/Co/Ni/rare-earth replacement by biomass carbon has been demonstrated;
 - no Pangola-derived liquid fuel has yet been certified at the project's ultra-low-cost target;
 - no commercial ultra-low-cost fusion electricity result has been demonstrated;
@@ -209,22 +228,23 @@ Read in this order:
 
 1. `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`
 2. `00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md`
-3. `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`
-4. `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`
-5. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
-6. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
-7. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
-8. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
-9. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
-10. `PROJECT_CHARTER.md`
-11. `VERSION_INVARIANTS.md`
-12. `docs/RESEARCH_OPERATING_SYSTEM.md`
-13. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
-14. `docs/KANUSANAN_PONGPANNA_MODEL.md`
-15. `STRATEGIC_PLAN_REFERENCES.md`
-16. `RESEARCH_GAPS.md`
-17. `DECISIONS.md`
-18. `WORKLOG.md`
+3. `research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md`
+4. `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`
+5. `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`
+6. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
+7. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
+8. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
+9. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
+10. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
+11. `PROJECT_CHARTER.md`
+12. `VERSION_INVARIANTS.md`
+13. `docs/RESEARCH_OPERATING_SYSTEM.md`
+14. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
+15. `docs/KANUSANAN_PONGPANNA_MODEL.md`
+16. `STRATEGIC_PLAN_REFERENCES.md`
+17. `RESEARCH_GAPS.md`
+18. `DECISIONS.md`
+19. `WORKLOG.md`
 
 Then continue from the newest committed state and latest Batch/evidence records.
 
@@ -234,6 +254,7 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `PROJECT_CHARTER.md` — permanent mission/invariants
 - `VERSION_INVARIANTS.md` — release-preservation rules
 - `00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md` — high-priority quantum/hybrid AI-training cost-compression program
+- `research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md` — high-priority elementary-particle technology research program
 - `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md` — highest-visibility permanent equation-discovery principle
 - `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md` — canonical AI-assisted equation-discovery program
 - `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` — deepest-first foundational research agenda
@@ -244,6 +265,8 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `research_lanes/A_quantum_programming_runtime/NPU_REPLACEMENT_TRACK.md` — NPU replacement track
 - `research_lanes/F_economics_benchmark_evidence/NPU_EQUIVALENCE_AND_COST_CONTRACT.md` — NPU comparison contract
 - `software/uqpu-prototype/uqpu/quantum_ai_training_cost_gate.py` — executable AI-training moonshot necessary-condition gate
+- `software/uqpu-prototype/uqpu/fundamental_theory_gate.py` — executable elementary-particle technology promotion gate
+- `benchmarks/results/batch041-fnd-007-elementary-particle-technology-gate.json` — frozen Batch-041 particle/theory coverage and evidence snapshot
 - `software/uqpu-prototype/uqpu/fundamental_limits.py` — executable physical lower-bound helpers
 - `software/uqpu-prototype/uqpu/frontier_hypothesis.py` — falsifiable deep-frontier hypothesis contract
 - `software/uqpu-prototype/uqpu/equation_discovery.py` — AI/mathematics equation-candidate governance and validation contract

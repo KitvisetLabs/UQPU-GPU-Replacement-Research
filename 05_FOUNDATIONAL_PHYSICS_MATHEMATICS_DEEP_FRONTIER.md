@@ -100,6 +100,36 @@ Quantum computation provides distinct complexity classes and powerful algorithms
 
 Reference: John Watrous, *Quantum Computational Complexity* — https://arxiv.org/abs/0804.3401
 
+## Permanent elementary-particle technology objective
+
+The project permanently treats **elementary particles themselves and particle-level quantum states as a technology search space**. This is distinct from merely studying fundamental forces. The registry must cover all established Standard Model elementary-particle families—quarks, charged leptons, neutrinos, photon, gluon, W, Z and Higgs—and remain open to antiparticle-state routes and falsifiable proposed BSM particles.
+
+Theoretical frameworks such as QCD, QED, electroweak theory, lattice gauge theory, effective field theory, string/M-theory, holography and other quantum-gravity/BSM programs are tools for generating and testing particle-level mechanisms. Their inclusion does not imply that speculative particles or theories are experimentally established.
+
+For a particle-level route, the mandatory contract is strengthened to:
+
+```text
+particle / state
+-> theory and mathematical formulation
+-> causal physical mechanism
+-> preparation
+-> controllability
+-> retention / coherence
+-> readout
+-> target bottleneck
+-> known constraints
+-> scaling law
+-> falsifier / observable
+-> competitive baseline
+-> full resource accounting
+-> device / algorithm consequence
+-> system / economic consequence
+```
+
+Quark routes must explicitly account for confinement and may proceed either directly, if a controllable/readable particle-level state is physically specified, or indirectly through hadronic/nuclear states, QCD phases, gauge-theory simulation, sensing, materials or algorithms. String/holography routes begin as theory/information structures and may support physical-device claims only after an experimentally supported particle/state mechanism is identified.
+
+Canonical Batch-041 objective: `research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md`.
+
 ## Immediate foundational work program
 
 **FND-001 — Thermodynamic-gap accounting:** quantify the ratio between measured energy per accepted useful result and relevant Landauer-style irreversible-information floors for selected classical and UQPU workloads.
@@ -110,9 +140,11 @@ Reference: John Watrous, *Quantum Computational Complexity* — https://arxiv.or
 
 **FND-004 — New computational primitives:** systematically evaluate many-body, bosonic/photonic, topological, analog, continuous-variable and other physical primitives by the mandatory hypothesis contract.
 
-**FND-005 — Elementary-particle/QFT route scan:** search for particle/field-level mechanisms only where a precise chain exists from field dynamics -> controllable state -> computation/storage/energy/material function -> measurement -> system advantage. Negative results are valuable and must be retained.
+**FND-005 — Elementary-particle/QFT route scan:** search for particle/field-level mechanisms only where a precise chain exists from elementary particle/state -> controllable state -> computation/storage/energy/material function -> measurement -> system advantage. Negative results are valuable and must be retained.
 
 **FND-006 — Mathematics-first invention:** use theorem search, lower bounds, alternative encodings, approximation theory, geometric/topological methods and new algorithmic representations to seek transformations that reduce required physical resources before proposing new hardware.
+
+**FND-007 — Elementary-particle technology search:** maintain comprehensive coverage of established elementary particles plus falsifiable proposed particles, use all relevant theoretical frameworks as hypothesis generators, and promote only routes that satisfy preparation/control/retention/readout/scaling/falsifier/resource gates. The first reproducible subgate should prioritize an established-particle or gauge-theory route before speculative particle/device claims.
 
 ## Relation to all project pillars
 
@@ -135,6 +167,6 @@ It also supports bio-oil and fusion research by allowing descent into reaction p
 
 ## Evidence boundary
 
-The project **does not assume that unknown physics exists, that the Standard Model is wrong in a mission-useful way, or that fundamental-particle effects will produce computational advantage**. Those are research questions. Any beyond-established-physics proposal remains THEORY/CONCEPT until a discriminating prediction is experimentally supported.
+The project **does not assume that unknown physics exists, that the Standard Model is wrong in a mission-useful way, or that elementary-particle effects will produce computational advantage**. Those are research questions. Any beyond-established-physics proposal remains THEORY/CONCEPT until a discriminating prediction is experimentally supported.
 
 The project is therefore simultaneously **maximally ambitious in search depth and maximally strict about evidence**.
