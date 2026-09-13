@@ -10,7 +10,7 @@
 - Facebook: https://www.facebook.com/LoveMoneyTH
 - YouTube: https://www.youtube.com/@LoveMoneyTHOfficial
 - AI Research Agent: **OpenAI GPT-5.6 Sol**
-- AI-assisted contribution: elementary-particle coverage design, evidence-tier separation, technology-path mapping and research documentation.
+- AI-assisted contribution: elementary-particle coverage design, evidence-tier separation, technology-path mapping, literature triage and research documentation.
 
 Attribution reflects roles in this batch only.
 
@@ -64,11 +64,15 @@ Every concrete elementary-particle technology candidate must state:
 
 No candidate is promoted because of novelty alone. Negative results are retained.
 
-## Initial evidence map
+## Initial evidence map and literature provenance
 
-- CERN's Standard Model summary remains the baseline for established elementary-particle classification.
-- Particle/QFT structures already enter technology indirectly through quantum simulation, precision sensing, nuclear/particle instrumentation and symmetry-based computational models; these routes provide testable bridges without assuming direct isolated-quark devices.
-- String/holography frameworks may supply mathematical structures or particle hypotheses, but this batch does not identify an experimentally established string-scale particle technology primitive.
+1. **Established particle inventory:** CERN's Standard Model overview remains the baseline for quarks, leptons and force-carrier/Higgs sectors: https://home.cern/science/physics/standard-model/
+2. **Experimentally grounded indirect bridge:** Meth et al., *Simulating two-dimensional lattice gauge theories on a qudit quantum computer*, Nature Physics 21, 570–576 (2025), experimentally simulates 2D lattice QED with matter and gauge fields on a trapped-ion qudit processor and reports reduced register/circuit complexity for the demonstrated encoding: https://doi.org/10.1038/s41567-025-02797-w
+3. **Broader gauge-theory technology bridge:** Halimeh et al., *Cold-atom quantum simulators of gauge theories*, Nature Physics 21, 25–36 (2025), reviews tunable tabletop quantum simulation of gauge theories and the connection to Standard-Model-type gauge structures: https://doi.org/10.1038/s41567-024-02721-8
+4. **Non-Abelian constraint engineering:** Mathew and Raychowdhury, *Protecting gauge symmetries in the dynamics of SU(3) lattice gauge theories*, Communications Physics 8, 313 (2025), studies maintaining physical gauge constraints under dynamics/noise: https://doi.org/10.1038/s42005-025-02230-x
+5. **String/holography:** these frameworks remain admitted as theory/information-structure routes, but this batch does not identify an experimentally established string-scale elementary-particle technology primitive.
+
+The highest-information-gain near-term path is therefore **not** to assume isolated quark logic. It is to use experimentally controllable systems that encode elementary-particle/gauge-theory structure, then ask whether any resulting representation/control primitive produces a reproducible resource improvement that can climb from F4 to F7–F10.
 
 ## Non-claims
 
@@ -77,6 +81,6 @@ This objective does **not** demonstrate a direct quark computer, elementary-part
 ## Next gates
 
 - `FND-007A`: build an elementary-particle-to-technology candidate registry with evidence tier, preparation, controllability, retention, readout, required physical conditions and first falsifier.
-- `FND-007B`: select the highest-information-gain **established-particle** route, likely a QCD/lattice-gauge/fermionic-simulation or particle-sensing route, and make at least one executable reproduction.
+- `FND-007B`: select the highest-information-gain **established-particle** route, initially prioritizing a lattice-gauge/fermionic-simulation route with published experimental hardware evidence, and make at least one executable reproduction/resource comparison.
 - `FND-007C`: separately evaluate whether string/holography-inspired structures produce a particle-level hypothesis or an algorithmic resource reduction after mapping to a realizable workload.
 - `FND-007D`: only after a particle/state primitive survives these gates, propagate it to Lane D device feasibility and Lane F end-to-end economics.
