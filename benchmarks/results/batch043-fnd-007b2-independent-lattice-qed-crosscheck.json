@@ -1,0 +1,123 @@
+{
+  "batch": 43,
+  "gate": "FND-007B2",
+  "classification": "LATTICE_QED_INDEPENDENT_OPERATOR_CROSSCHECK",
+  "evidence_level": "INTERNAL_INDEPENDENT_IMPLEMENTATION_CROSSCHECK",
+  "checked_on": "2026-09-14",
+  "source": {
+    "title": "Simulating 2D lattice gauge theories on a qudit quantum computer",
+    "arxiv": "2310.12110v3",
+    "journal": "Nature Physics 21, 570-576 (2025)",
+    "doi": "10.1038/s41567-025-02797-w",
+    "interfaces": ["Eqs. 9-10"]
+  },
+  "independent_path": {
+    "construction": "explicit tensor-product operators in full 2^4*3=48 Hilbert space, then zero-magnetization projection",
+    "projected_dimension": 18,
+    "eigensolver": "deterministic real-symmetric Jacobi rotations",
+    "imports_batch042_builder": false
+  },
+  "comparison": {
+    "max_projected_hamiltonian_element_abs_difference": 0.0,
+    "max_ground_energy_abs_difference": 7.531752999057062e-13,
+    "max_plaquette_abs_difference": 6.715861733397333e-08,
+    "max_batch042_ground_eigenpair_residual_norm": 5.333978744288818e-06,
+    "couplings": [
+      {
+        "inverse_g_squared": 0.01,
+        "independent_ground_energy": -2.1362574803022554,
+        "batch042_ground_energy": -2.13625748030171,
+        "energy_abs_difference": 5.453415496958769e-13,
+        "independent_plaquette_expectation": 0.00028353538987396456,
+        "batch042_plaquette_expectation": 0.0002835353176459713,
+        "plaquette_abs_difference": 7.222799328033755e-11,
+        "batch042_residual_norm": 5.333978744288818e-06,
+        "ground_state_squared_overlap": 0.9999999999999916,
+        "jacobi_rotations": 299,
+        "lowest_five_eigenvalues": [-2.1362574803022554, 49.01379641015774, 49.999999666666675, 49.999999708310064, 50.93022244958777]
+      },
+      {
+        "inverse_g_squared": 0.1,
+        "independent_ground_energy": -9.138735278662697,
+        "batch042_ground_energy": -9.138735278662324,
+        "energy_abs_difference": 3.730349362740526e-13,
+        "independent_plaquette_expectation": 0.11677803630616274,
+        "batch042_plaquette_expectation": 0.11677802242605195,
+        "plaquette_abs_difference": 1.3880110782960031e-08,
+        "batch042_residual_norm": 1.709496653162386e-06,
+        "ground_state_squared_overlap": 0.9999999999999543,
+        "jacobi_rotations": 494,
+        "lowest_five_eigenvalues": [-9.138735278662697, -1.282184090299521, 2.9887952260241066, 4.99966667592538, 4.999705477819157]
+      },
+      {
+        "inverse_g_squared": 1.0,
+        "independent_ground_energy": -13.41389068061163,
+        "batch042_ground_energy": -13.413890680611074,
+        "energy_abs_difference": 5.559996907322784e-13,
+        "independent_plaquette_expectation": 0.5745824639144368,
+        "batch042_plaquette_expectation": 0.5745823967558195,
+        "plaquette_abs_difference": 6.715861733397333e-08,
+        "batch042_residual_norm": 1.2675769839171677e-06,
+        "ground_state_squared_overlap": 0.9999999999998082,
+        "jacobi_rotations": 549,
+        "lowest_five_eigenvalues": [-13.41389068061163, -10.534079437527417, -7.985234776491676, -5.359573624358627, -2.9416104995387133]
+      },
+      {
+        "inverse_g_squared": 10.0,
+        "independent_ground_energy": -20.372391698091782,
+        "batch042_ground_energy": -20.372391698091615,
+        "energy_abs_difference": 1.6697754290362354e-13,
+        "independent_plaquette_expectation": 0.692564801305346,
+        "batch042_plaquette_expectation": 0.6925648005823799,
+        "plaquette_abs_difference": 7.229661314056557e-10,
+        "batch042_residual_norm": 1.1985382052100644e-06,
+        "ground_state_squared_overlap": 0.9999999999999818,
+        "jacobi_rotations": 591,
+        "lowest_five_eigenvalues": [-20.372391698091782, -12.212081000788858, -7.911053270838435, -7.744561797610239, -6.922462170681931]
+      },
+      {
+        "inverse_g_squared": 100.0,
+        "independent_ground_energy": -83.90025483344586,
+        "batch042_ground_energy": -83.9002548334451,
+        "energy_abs_difference": 7.531752999057062e-13,
+        "independent_plaquette_expectation": 0.7066013009684016,
+        "batch042_plaquette_expectation": 0.7066013009670553,
+        "plaquette_abs_difference": 1.3462564396604648e-12,
+        "batch042_residual_norm": 3.0307740279610844e-06,
+        "ground_state_squared_overlap": 0.9999999999999345,
+        "jacobi_rotations": 519,
+        "lowest_five_eigenvalues": [-83.90025483344586, -72.2505738614552, -70.74418828619538, -70.69567953266836, -69.31461215325015]
+      }
+    ],
+    "finding": "The independent operator construction matches Batch 042 element-wise across all five couplings. The Batch-042 energy-only stopping rule yields ground energies agreeing below 1e-12 while its state residual is around 1e-6 and the largest plaquette difference is about 6.72e-8. This is a numerical convergence refinement, not a physics discrepancy."
+  },
+  "interpretation": {
+    "positive_result": "The Batch-042 lattice-QED route survives a second internal implementation path and independent eigensolver cross-check.",
+    "boundary": "Internal code-path independence only; not an independent external team, experimental replication or real-QPU result."
+  },
+  "next_gates": [
+    "FND-007B3: finite-shot/noise plus state-preparation/readout/control/runtime/cost ledger for the qudit-vs-qubit route",
+    "FND-007B4: SU(3)/QCD-adjacent symmetry-protection reproduction",
+    "FND-007C: string/holography mapping to realizable workload resources"
+  ],
+  "non_claims": {
+    "real_qpu_reproduction": false,
+    "quantum_advantage": false,
+    "direct_quark_computer": false,
+    "elementary_particle_computer": false,
+    "qcd_simulation_demonstrated_by_uqpu": false,
+    "universal_qudit_advantage": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "one_hundred_x": false,
+    "one_hundred_million_x": false,
+    "data_center_to_phone_achieved": false,
+    "new_physical_law": false
+  },
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "primary-source verification, independent operator-algebra implementation, deterministic eigensolver, cross-check design, numerical audit, tests, evidence classification and research documentation"
+  }
+}
