@@ -5,7 +5,7 @@
 **Status:** Active priority research / moonshot target / not demonstrated  
 **Primary lane owner:** Lane A — Quantum Programming / Workloads / Compiler / Runtime  
 **Cross-lane dependencies:** Lane B (QPU/provider execution), Lane C (memory/data movement), Lane D (device feasibility), Lane F (economics/benchmark/evidence)  
-**Program gate:** `AI-COST-001`  
+**Program gate:** `AI-COST-002` classical accepted-capability baseline frozen; next `AI-COST-003`  
 
 ## Research Attribution
 
@@ -13,7 +13,7 @@
 - **Facebook:** https://www.facebook.com/LoveMoneyTH
 - **YouTube:** https://www.youtube.com/@LoveMoneyTHOfficial
 - **AI Research Agent:** OpenAI GPT-5.6 Sol
-- **AI-assisted contribution:** literature triage, cost-compression formulation, necessary-condition analysis, executable gate design, test/result/research-note preparation.
+- **AI-assisted contribution:** literature triage, cost-compression formulation, necessary-condition analysis, classical accepted-capability baseline/resource ledger, executable tests/results and research documentation.
 
 Attribution describes roles in this program and does not assign work beyond contributions actually performed.
 
@@ -74,6 +74,16 @@ No approach may be promoted directly from an asymptotic theorem or simulator res
 Required progression:
 
 `literature/theory -> executable toy reproduction -> competitive classical baseline -> data-loading/readout contract -> memory/I/O contract -> logical-resource estimate -> fault-tolerant/physical-resource estimate -> measured or defensibly priced system -> end-to-end accepted-capability cost`.
+
+## Current reproducible baseline — Batch 039 / AI-COST-002
+
+The first classical accepted-capability comparison point is frozen in `docs/BATCH_039_AI_COST_002_CLASSICAL_BASELINE.md` and `benchmarks/results/batch039-ai-cost-002-classical-baseline.json`.
+
+It uses a deterministic non-linear XOR-quadrant task with a pure-Python dense `2 -> 16 -> 1` MLP, 65 parameters, 256 training examples, 256 held-out examples and 800 full-batch epochs. The accepted-capability contract is held-out accuracy `>=0.98` and BCE `<0.19`; the frozen reference reached `0.98046875` held-out accuracy and `0.17734677266198473` BCE.
+
+The baseline additionally freezes exact source-level arithmetic/nonlinear counts and logical FP64 payload/traffic proxies. Runtime measurement is kept separate from energy/cost assumptions. Any `AI-COST-003` quantum/hybrid route must use the same task/quality semantics or document and justify an equivalent reformulation, and it must count state preparation, shots/readout and classical residual work rather than comparing only an isolated quantum kernel.
+
+This toy baseline is a **benchmark-contract scaffold**, not a frontier-model baseline or evidence that the moonshot is close to being achieved.
 
 ## Non-claims
 
