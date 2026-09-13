@@ -1,0 +1,28 @@
+{
+  "checked_on": "2026-09-13",
+  "purpose": "QOS-AUDIT-009 phase-synthesis follow-up provenance",
+  "sources": [
+    {
+      "title": "Finding Angles for Quantum Signal Processing with Machine Precision",
+      "authors": "Rui Chao, Dawei Ding, Andras Gilyen, Cupjin Huang, Mario Szegedy",
+      "arxiv": "2003.02831",
+      "url": "https://arxiv.org/abs/2003.02831",
+      "relevance": "Constructive classical algorithms for recovering QSP angle sequences from admissible target polynomials; demonstrates machine-precision phase recovery for high degrees."
+    },
+    {
+      "title": "Efficient phase-factor evaluation in quantum signal processing",
+      "authors": "Yulong Dong, Xiang Meng, K. Birgitta Whaley, Lin Lin",
+      "arxiv": "2002.11649",
+      "doi": "10.1103/PhysRevA.103.042419",
+      "url": "https://arxiv.org/abs/2002.11649",
+      "relevance": "Optimization-based QSP phase-factor evaluation in standard double precision, including reported demonstrations beyond degree 10000."
+    },
+    {
+      "title": "pyqsp - Python quantum signal processing",
+      "url": "https://github.com/ichuang/pyqsp",
+      "checked_state": "Public repository and PyPI documentation inspected on 2026-09-13",
+      "relevance": "Public software route for phase-angle generation; not yet imported as a repository dependency in Batch 037."
+    }
+  ],
+  "boundary": "These sources establish available phase-synthesis methods. Batch 037 does not claim that a phase sequence for its degree-81 candidate has already been synthesized or independently verified."
+}
