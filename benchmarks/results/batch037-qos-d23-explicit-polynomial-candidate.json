@@ -1,0 +1,47 @@
+{
+  "batch": 37,
+  "gate": "QOS-AUDIT-009",
+  "classification": "D23_EXPLICIT_NUMERICAL_POLYNOMIAL_CANDIDATE_DEGREE_81_PHASES_OPEN",
+  "frozen_case": {
+    "sparsity_s": 4,
+    "total_projected_error": 0.01,
+    "bias_b": 0.0033333333333333335,
+    "gamma": 3.986666666666667,
+    "target_domain": [-0.25, 0.25],
+    "amplification_error_budget": 0.0033333333333333335
+  },
+  "candidate": {
+    "basis": "Chebyshev T_k on [-1,1]",
+    "parity": "odd",
+    "degree": 81,
+    "nonzero_coefficients": 41,
+    "generation_method": "cutting-plane linear program over odd Chebyshev coefficients; global-grid constraints iteratively augmented with numerically located critical-point violations",
+    "frozen_coefficients_location": "software/uqpu-prototype/uqpu/qos_d23_explicit_polynomial_candidate.py"
+  },
+  "independent_numerical_checks": {
+    "dense_global_grid_points": 200001,
+    "dense_global_max_abs": 0.9990000451669641,
+    "dense_target_grid_points": 100001,
+    "dense_target_max_error": 0.0024171473863981996,
+    "critical_point_method": "NumPy Chebyshev derivative roots, independent of the repository stdlib grid evaluator",
+    "critical_point_global_max_abs": 0.9990000715936669,
+    "critical_point_target_max_error": 0.002417147392736352,
+    "passes_amplification_budget_numerically": true,
+    "passes_global_unit_bound_numerically": true
+  },
+  "evidence_level": "NUMERICALLY_EXPLICIT_POLYNOMIAL_CANDIDATE_WITH_INDEPENDENT_DENSE_AND_CRITICAL_POINT_CHECKS",
+  "formal_global_boundedness_proof_closed": false,
+  "qsp_phase_sequence_synthesized": false,
+  "qsp_phase_sequence_independently_verified": false,
+  "full_channel_repaired_D23_established": false,
+  "real_qpu": false,
+  "quantum_advantage_demonstrated": false,
+  "gpu_npu_ram_dram_hbm_replacement_demonstrated": false,
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "QOS-AUDIT-009 candidate construction, numerical optimization, independent verification design, executable implementation, tests, provenance, documentation and PR preparation"
+  }
+}
