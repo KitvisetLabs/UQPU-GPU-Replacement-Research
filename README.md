@@ -260,7 +260,7 @@ No paid QPU job should be submitted without credentials, a bounded budget and ex
 
 The complete strategic master plan is preserved here:
 
-- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → bio-oil/carbon/materials → low-cost energy/fusion → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision, with financing/interest compression, foundational-science descent and AI-assisted equation discovery as cross-cutting objectives.
+- **[docs/KANUSANAN_PONGPANNA_MODEL.md](docs/KANUSANAN_PONGPANNA_MODEL.md)** — staged agriculture/biomass → bio-oil/carbon/materials → low-cost energy/fusion → semiconductor/photonics/quantum → AI/robotics → biotechnology → infrastructure → global industry → space → far-future/social vision, with financing/interest compression, foundational-science descent and AI-assisted equation discovery as cross-cutting objectives.
 - **[STRATEGIC_PLAN_REFERENCES.md](STRATEGIC_PLAN_REFERENCES.md)** — permanent multilingual source/reference index.
 
 The public Thai, English, Chinese, Japanese, Korean and German master-plan links must remain preserved. Strategic, philosophical and speculative concepts are kept separate from experimentally verified scientific claims.
