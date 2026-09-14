@@ -104,6 +104,44 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertIn("EQN-001", text)
         self.assertIn("Permanent literature surveillance", text)
 
+    def test_difference_to_technology_particle_spacetime_principle_is_permanent(self):
+        invariants = (ROOT / "VERSION_INVARIANTS.md").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        principle = ROOT / "00C_DIFFERENCE_TO_TECHNOLOGY_PARTICLE_SPACETIME_PRINCIPLE.md"
+        batch = ROOT / "research_lanes" / "D_device_chip_fabrication" / "batches" / "BATCH_045_FND_008_DIFFERENCE_PARTICLE_SPACETIME_TECHNOLOGY.md"
+        diamond = ROOT / "research_lanes" / "E_materials_energy_cooling" / "PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md"
+        materials = ROOT / "research_lanes" / "E_materials_energy_cooling" / "ABUNDANT_LOW_COST_MATERIAL_INNOVATION_DIRECTIVE.md"
+        self.assertIn("INV-035", invariants)
+        self.assertIn("INV-036", invariants)
+        self.assertTrue(principle.exists())
+        self.assertTrue(batch.exists())
+        self.assertTrue(diamond.exists())
+        self.assertTrue(materials.exists())
+        self.assertIn("INV-036", readme)
+        self.assertIn(principle.name, readme)
+        self.assertIn(batch.name, readme)
+        self.assertIn(diamond.name, readme)
+        self.assertIn(materials.name, readme)
+        principle_text = principle.read_text(encoding="utf-8")
+        for marker in (
+            "quark and gluon spin",
+            "antiparticles and antimatter",
+            "dark matter",
+            "dark energy",
+            "spacetime, gravity",
+            "extra dimensions",
+            "Material-Agnostic Innovation Rule",
+            "Synthetic Diamond Starting Hypothesis",
+            "ΔE = E_final - E_initial",
+        ):
+            self.assertIn(marker, principle_text)
+        material_text = materials.read_text(encoding="utf-8")
+        self.assertIn("not restricted to Pangola grass", material_text)
+        self.assertIn("candidate list", material_text)
+        self.assertIn("falsifier", material_text.lower())
+        self.assertIn("Pangola", diamond.read_text(encoding="utf-8"))
+        self.assertIn("ODMR", diamond.read_text(encoding="utf-8"))
+
     def test_strategic_master_plan_preserved(self):
         master = ROOT / "docs" / "KANUSANAN_PONGPANNA_MODEL.md"
         self.assertTrue(master.exists())

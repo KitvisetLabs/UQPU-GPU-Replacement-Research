@@ -1,0 +1,66 @@
+{
+  "batch": 45,
+  "date": "2026-09-14",
+  "program": "INV-036/FND-008",
+  "classification": "PARTICLE_SPACETIME_DIFFERENCE_TECHNOLOGY_RESEARCH_EXPANSION",
+  "evidence_level": "SOURCE_GROUNDED_RESEARCH_PROGRAM_WITH_TESTABLE_MATERIAL_HYPOTHESIS",
+  "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+  "facebook": "https://www.facebook.com/LoveMoneyTH",
+  "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+  "ai_research_agent": "OpenAI GPT-5.6 Sol",
+  "ai_assisted_contribution": "literature verification, scientific operationalization, particle/spacetime taxonomy, biomass-diamond hypothesis, evidence gates, executable registry/tests, documentation and PR preparation",
+  "difference_principle": {
+    "owner_heuristic": "Search for controllable technological opportunity wherever a reproducible difference exists, analogous to the usefulness of distinguishable binary 0/1 states.",
+    "scientific_operationalization": "delta-X -> distinguishability -> preparation -> control -> retention -> readout -> useful function -> resources -> falsifier",
+    "energy_boundary": "When the relevant difference is energy, use delta-E = E_final - E_initial. The project does not assert that every abstract difference is literally energy."
+  },
+  "mandatory_domains": [
+    "quark_spin_qcd",
+    "antimatter_antiparticle",
+    "dark_matter_detection",
+    "dark_energy_cosmology",
+    "spacetime_gravity",
+    "extra_dimensions_quantum_gravity",
+    "diamond_defect_spin",
+    "other_particle_quantum_states"
+  ],
+  "pangola_biomass_diamond_hypothesis": {
+    "status": "MATERIAL_PATH_HYPOTHESIS",
+    "chain": [
+      "Pangola/agricultural-residue biomass",
+      "bio-oil or thermochemical conversion",
+      "defined carbon-rich residue/coproduct",
+      "chemical and phase characterization",
+      "purification",
+      "precursor conditioning / graphitization or hydrocarbon route",
+      "HPHT and/or CVD diamond synthesis",
+      "diamond phase and crystal-quality verification",
+      "defect engineering",
+      "ODMR or other accepted state readout",
+      "coherence/sensitivity/device metric",
+      "lifecycle energy and cost comparison"
+    ],
+    "demonstrated_by_project": false
+  },
+  "next_gates": [
+    "FND-008A biomass-carbon-to-diamond feedstock gate",
+    "FND-008B diamond defect technology gate",
+    "FND-008C particle/spacetime registry scoring",
+    "FND-008D dark-sector/spacetime detector spillover",
+    "FND-008E antiparticle production/trapping/readout/resource ledger"
+  ],
+  "non_claims": {
+    "new_physical_law": false,
+    "all_difference_is_literal_energy": false,
+    "direct_quark_computer": false,
+    "dark_matter_device_material": false,
+    "dark_energy_power_source": false,
+    "extra_dimensional_device": false,
+    "antimatter_net_energy_source": false,
+    "pangola_device_grade_diamond_demonstrated": false,
+    "quantum_advantage": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "hundred_x_saving": false,
+    "hundred_million_x_saving": false
+  }
+}
