@@ -1,0 +1,72 @@
+{
+  "snapshot_date": "2026-09-14",
+  "program": "FND-008B1/BATCH-049",
+  "principle": "SAME_ACCEPTED_FUNCTION_OR_NO_WINNER",
+  "sources": [
+    {
+      "host": "4H-SiC",
+      "url": "https://www.nature.com/articles/s41563-025-02382-9",
+      "evidence": "Nature Materials 2025 shallow single-divacancy quantum sensor at room temperature; ~13 nT/sqrt(Hz projected for isotope-engineered material and ~56 nT/sqrt(Hz anticipated from observed non-optimized shallow-center parameters.",
+      "benchmark_warning": "Sensitivity values are model-derived/anticipated from measured parameters and are not automatically comparable with a differently configured diamond sensor."
+    },
+    {
+      "host": "diamond",
+      "url": "https://www.nature.com/articles/s41467-025-61026-3",
+      "evidence": "Nature Communications 2025 shallow-NV interface engineering; calculated AC sensitivity improves from ~50 to 23 nT/sqrt(Hz using recorded parameters, with CPMG-enhanced coherence above 1 ms and a reported calculated 16 nT/sqrt(Hz under CPMG-64.",
+      "benchmark_warning": "The sensitivity analysis uses an echo/AC protocol and differs from the SiC qNMR/pulsed-ESR context; exact depth/frequency/task matching is required."
+    },
+    {
+      "host": "diamond",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925963525000020",
+      "evidence": "Diamond and Related Materials 2025 portable NV ensemble magnetometer; directly measured mean 0.3 +/- 0.2 nT/sqrt(Hz in non-vector mode over 10-150 Hz.",
+      "benchmark_warning": "This is an ensemble portable device and cannot be used as an apples-to-apples winner against a single-defect SiC number."
+    },
+    {
+      "host": "4H-SiC",
+      "url": "https://www.nature.com/articles/s41467-025-58629-1",
+      "evidence": "Nature Communications 2025 coherent photoelectrical single-spin readout at room temperature; PDMR single-spin SNR was 1.7-2.0 times the optimized optical readout for two measured defects.",
+      "benchmark_warning": "This establishes a within-SiC readout comparison, not a cross-host magnetic-sensitivity or end-to-end cost winner."
+    },
+    {
+      "host": "diamond",
+      "url": "https://www.nature.com/articles/s41467-025-58635-3",
+      "evidence": "Nature Communications 2025 ambient single-NV surface-voltage detected coherent dynamics using KPFM; single spin at ~7 nm depth, with signal response on the order of 10 ms.",
+      "benchmark_warning": "Different electrical-readout physics and response-time boundary from SiC PDMR; no matched cross-host resource/cost comparison is established."
+    },
+    {
+      "host": "4H-SiC",
+      "url": "https://www.nature.com/articles/s44310-026-00118-4",
+      "evidence": "npj Nanophotonics 2026 waveguide-integrated SiC V2 color centers; >100 kcps standard PLE, ~125 kcps with charge-resonance check, theoretical >98% single-shot readout fidelity at cryogenic conditions.",
+      "benchmark_warning": "Cryogenic photonic integration is valuable device evidence but cannot be mixed with room-temperature sensing metrics without environmental-resource accounting."
+    },
+    {
+      "host": "diamond",
+      "url": "https://www.nist.gov/programs-projects/diamond-nv-center-magnetometry",
+      "evidence": "NIST overview notes room-temperature NV coherence up to milliseconds in carefully prepared diamond and field detectivities on the order of 1 nT/sqrt(Hz.",
+      "benchmark_warning": "Overview-scale reference; use primary matched experiments for winner claims."
+    }
+  ],
+  "required_matched_fields": [
+    "accepted_function",
+    "sensor_class_single_vs_ensemble",
+    "temperature_regime",
+    "AC_or_DC_protocol",
+    "frequency_band",
+    "defect_depth_or_geometry",
+    "direct_measured_vs_model_derived_status",
+    "acquisition_and_averaging_time",
+    "readout_chain",
+    "control_chain",
+    "sensitivity_or_SNR_acceptance_target",
+    "device_yield_and_fabrication_boundary",
+    "power_energy_environment_boundary",
+    "lifecycle_cost_boundary"
+  ],
+  "research_attribution": {
+    "human_research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_contribution": "primary-source literature verification, apples-to-apples benchmark sufficiency design, evidence classification and provenance capture"
+  }
+}
