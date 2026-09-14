@@ -142,6 +142,30 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertIn("Pangola", diamond.read_text(encoding="utf-8"))
         self.assertIn("ODMR", diamond.read_text(encoding="utf-8"))
 
+    def test_discovery_articles_registry_is_permanent(self):
+        directive = ROOT / "00D_NEW_DISCOVERY_ARTICLES.md"
+        registry = ROOT / "articles" / "README.md"
+        template = ROOT / "articles" / "ARTICLE_TEMPLATE.md"
+        physics = ROOT / "articles" / "physics" / "README.md"
+        science = ROOT / "articles" / "science" / "README.md"
+        mathematics = ROOT / "articles" / "mathematics" / "README.md"
+        for path in (directive, registry, template, physics, science, mathematics):
+            self.assertTrue(path.exists(), path)
+        directive_text = directive.read_text(encoding="utf-8")
+        registry_text = registry.read_text(encoding="utf-8")
+        self.assertIn("INV-037", directive_text)
+        self.assertIn("articles/", directive_text)
+        self.assertIn("Physics / Science / Mathematics", directive_text)
+        for status in (
+            "HYPOTHESIS_OR_PROPOSAL",
+            "PROJECT_REPRODUCED_RESULT",
+            "INDEPENDENTLY_REPRODUCED_CANDIDATE",
+            "VERIFIED_DISCOVERY",
+            "ESTABLISHED_EXTERNAL_DISCOVERY",
+        ):
+            self.assertIn(status, registry_text)
+        self.assertIn("Creating an article does not make an idea a discovery", registry_text)
+
     def test_strategic_master_plan_preserved(self):
         master = ROOT / "docs" / "KANUSANAN_PONGPANNA_MODEL.md"
         self.assertTrue(master.exists())
