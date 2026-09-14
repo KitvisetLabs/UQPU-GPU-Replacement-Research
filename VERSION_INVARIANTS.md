@@ -47,6 +47,8 @@ The repository includes automated policy tests that check permanent mission mark
 | INV-032 | Ultra-low-cost fusion electricity is a permanent strategic pillar; judge success by net reliable delivered electricity and full lifecycle/financing cost, not fusion gain alone | Yes |
 | INV-033 | Interest-cost/R&D-finance compression is a permanent strategic pillar: reduce required principal, financing duration and project risk; any reduction in financing rate/WACC itself requires separate evidence | Yes |
 | INV-034 | Foundational Physics & Mathematics Deep-Frontier Agenda: research may descend from logic/mathematics through information theory, quantum foundations, QFT/elementary-particle physics and other sciences, then climb to devices/engineering/systems under explicit mechanism, constraints, scaling and falsification gates | Yes |
+| INV-035 | AI-Assisted Physics Equation Discovery: maximize imagination for candidate equations/models while requiring dimensional, symmetry/conservation/causality, held-out-prediction, falsification and independent-evidence gates before physical-law or technology claims | Yes |
+| INV-036 | Difference-to-Technology Particle/Spacetime Principle: systematically search controllable/readable differences across particle, antiparticle, dark-sector, spacetime/gravity and material-defect scales; preserve the Pangola/biomass-carbon -> synthetic-diamond hypothesis under explicit material/device/economic falsifiers | Yes |
 
 ## INV-028 operational definition
 
@@ -105,3 +107,41 @@ The project permanently treats **foundational mathematics and fundamental physic
 Every deep-frontier hypothesis must provide a mathematical formulation, causal physical mechanism, mission bottleneck, known-constraint analysis, scaling law, falsifier, observable, baseline, resource accounting and governed evidence label. Established constraints such as thermodynamics, causality, no-cloning, measurement/readout limits, state preparation and energy-time bounds may not be hand-waved away. A mathematical possibility is not automatically physical realizability; physical realizability is not automatically engineering feasibility; engineering feasibility is not automatically economic advantage.
 
 The canonical public directive is `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`. This operationalizes and makes highly visible the broader open-frontier mandate of INV-027. It is **ACTIVE PERMANENT RESEARCH**, while any individual beyond-established-physics hypothesis remains CONCEPT/THEORY until discriminating evidence supports it.
+
+## INV-035 operational definition — AI-Assisted Physics Equation Discovery
+
+The project permanently uses mathematics, scientific literature, computation and AI to generate, recover, stress-test and falsify candidate equations and effective models. Imagination may be broad during hypothesis generation, but every candidate must identify which incumbent assumption changes and must pass the applicable dimensional, symmetry, conservation, causality, limiting-case, scaling, held-out-prediction, counterexample and discriminating-experiment/proof checks before promotion.
+
+A human- or AI-generated equation is not a new physical law because it is elegant or fits a training dataset. Independent evidence is required. The canonical public directive is `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`, with the highest-visibility companion `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`.
+
+## INV-036 operational definition — Difference-to-Technology Particle/Spacetime Principle
+
+The project permanently treats a **reproducible measurable difference** as a technology-search starting point. Binary 0/1 states motivate the heuristic, which is extended to spin, charge, flavour, particle/antiparticle structure, matter/antimatter comparison, field amplitude, phase/frequency, energy level, spacetime/gravity, symmetry sector, material defect and other measurable differences.
+
+The required engineering chain is:
+
+```text
+ΔX
+-> distinguishability
+-> preparation
+-> control
+-> retention / coherence / stability
+-> readout
+-> useful function
+-> scaling/resources
+-> falsifier
+-> independent reproduction
+```
+
+When `ΔX` is an energy difference, the project uses `ΔE = E_final - E_initial`; INV-036 does not claim that all abstract differences are literally energy or establish a new physical law.
+
+Mandatory research coverage includes quark/gluon spin and QCD structure, antiparticles/antimatter, dark-matter detector technology, dark-energy/cosmology measurement technology, spacetime/gravity and relativistic clock differences, extra-dimension/quantum-gravity falsifiable searches, diamond/color-center spin defects, and other credible particle/quantum-state routes. Detector technology must not be confused with control of the detected phenomenon.
+
+INV-036 also permanently links INV-030's Pangola/agricultural-residue carbon program to a falsifiable synthetic-diamond route: defined biomass carbon stream -> characterization/purification -> suitable HPHT/CVD precursor -> verified diamond phase/crystal quality -> intentional defect engineering -> ODMR/accepted state readout -> coherence/sensitivity/device metric -> lifecycle energy and cost comparison. The exact Pangola-residue-to-device-grade-diamond chain remains an unproven material hypothesis until experimentally demonstrated.
+
+Canonical documents:
+- `00C_DIFFERENCE_TO_TECHNOLOGY_PARTICLE_SPACETIME_PRINCIPLE.md`
+- `research_lanes/D_device_chip_fabrication/batches/BATCH_045_FND_008_DIFFERENCE_PARTICLE_SPACETIME_TECHNOLOGY.md`
+- `research_lanes/E_materials_energy_cooling/PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md`
+
+INV-036 is **ACTIVE PERMANENT RESEARCH / NO PARTICLE-SPACETIME OR PANGOLA-DIAMOND TECHNOLOGY ADVANTAGE YET DEMONSTRATED**.
