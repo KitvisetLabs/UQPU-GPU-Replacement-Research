@@ -103,7 +103,7 @@ def canonical_registry() -> tuple[DifferenceTechnologyRoute, ...]:
             difference_coordinate="spin/polarization and QCD quantum-number-dependent observables",
             evidence_level="SOURCE_GROUNDED_RESEARCH_ROUTE",
             carrier_status="quarks/gluons are confined in ordinary low-energy matter; use hadronic/nuclear or simulation observables unless a direct mechanism is proven",
-            preparation="polarized hadrons/nuclei or controlled gauge-theory simulation state",
+            preparation="polarized hadronic/nuclear states or controlled gauge-theory simulation state",
             control="beam polarization, fields, pulse/control sequence or encoded gauge dynamics",
             retention="defined by prepared hadronic/simulator state and experimental coherence/stability window",
             readout="spin asymmetry, scattering observable, hadronic/nuclear observable or encoded gauge observable",
