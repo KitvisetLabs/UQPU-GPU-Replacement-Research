@@ -1,0 +1,82 @@
+{
+  "program": "FND-008B1/BATCH-049",
+  "classification": "SIC_DIAMOND_ACCEPTED_FUNCTION_BENCHMARK_SUFFICIENCY_GATE",
+  "evidence_level": "SOURCE_GROUNDED_COMPARABILITY_AUDIT",
+  "principle": "SAME_ACCEPTED_FUNCTION_OR_NO_WINNER",
+  "current_public_evidence_summary": {
+    "sic_single_defect_room_temperature": {
+      "sensitivity_examples_nt_sqrt_hz": [13.0, 56.0],
+      "status": "MODEL_DERIVED_OR_ANTICIPATED_FROM_MEASURED_PARAMETERS",
+      "source": "https://www.nature.com/articles/s41563-025-02382-9"
+    },
+    "diamond_shallow_single_nv_room_temperature": {
+      "sensitivity_example_nt_sqrt_hz": 23.0,
+      "status": "MODEL_DERIVED_FROM_RECORDED_PARAMETERS",
+      "source": "https://www.nature.com/articles/s41467-025-61026-3"
+    },
+    "diamond_portable_ensemble": {
+      "sensitivity_nt_sqrt_hz": 0.3,
+      "uncertainty_nt_sqrt_hz": 0.2,
+      "frequency_band_hz": [10.0, 150.0],
+      "status": "MEASURED_DIRECT",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0925963525000020"
+    },
+    "sic_single_spin_electrical_readout": {
+      "PDMR_to_ODMR_SNR_ratio_range": [1.7, 2.0],
+      "status": "WITHIN_STUDY_READOUT_COMPARISON",
+      "source": "https://www.nature.com/articles/s41467-025-58629-1"
+    },
+    "diamond_single_spin_voltage_readout": {
+      "response_time_order_ms": 10.0,
+      "status": "SINGLE_SPIN_COHERENT_DYNAMICS_READOUT_DEMONSTRATION",
+      "source": "https://www.nature.com/articles/s41467-025-58635-3"
+    }
+  },
+  "audit": {
+    "current_cross_host_performance_winner_allowed": false,
+    "current_end_to_end_cost_winner_allowed": false,
+    "primary_blockers": [
+      "sensor class mismatch in the most striking published sensitivity numbers",
+      "protocol mismatch between pulsed/qNMR and echo/portable magnetometry",
+      "missing matched frequency bands",
+      "missing matched defect depth/geometry",
+      "model-derived versus directly measured evidence mismatch",
+      "readout-chain mismatch",
+      "no complete matched fabrication/yield/power/lifecycle-cost boundary"
+    ]
+  },
+  "next_matched_fixture": {
+    "accepted_function": "ROOM_TEMPERATURE_SINGLE_DEFECT_MAGNETIC_FIELD_SENSING",
+    "required_same_conditions": [
+      "single defect",
+      "same AC or DC protocol",
+      "same frequency band",
+      "matched depth class",
+      "same acquisition/averaging rule",
+      "same calibration rule",
+      "direct measured sensitivity",
+      "full laser/microwave/electrical readout resource ledger",
+      "fabrication and yield ledger",
+      "power/temperature/environment ledger",
+      "lifecycle cost boundary"
+    ],
+    "decision_rule": "No SiC-vs-diamond performance or cost winner until the matched fixture passes every required field."
+  },
+  "non_claims": {
+    "sic_beats_diamond": false,
+    "diamond_beats_sic": false,
+    "sic_is_cheaper_end_to_end": false,
+    "diamond_is_cheaper_end_to_end": false,
+    "pangola_device_grade_diamond_demonstrated": false,
+    "quantum_advantage": false,
+    "hundred_x_saving": false,
+    "hundred_million_x_saving": false
+  },
+  "research_attribution": {
+    "human_research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_contribution": "source verification, accepted-function benchmark contract, comparability audit, executable gate/tests and frozen result"
+  }
+}
