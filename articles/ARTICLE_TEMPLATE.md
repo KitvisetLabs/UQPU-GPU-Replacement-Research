@@ -1,9 +1,11 @@
-# Discovery Article Template
+# Verified Discovery Article Template
 
-**Title:** <precise title>  
+> Use this template **only after the result has passed the INV-037 verified-discovery entry gate**. Do not create an article from this template for an idea, hypothesis, candidate result, simulation-only result, project-only reproduction, preliminary experiment or literature summary.
+
+**Title:** <precise verified discovery title>  
 **Date:** YYYY-MM-DD  
 **Domain:** PHYSICS | SCIENCE | MATHEMATICS  
-**Evidence status:** HYPOTHESIS_OR_PROPOSAL | PROJECT_REPRODUCED_RESULT | INDEPENDENTLY_REPRODUCED_CANDIDATE | VERIFIED_DISCOVERY | ESTABLISHED_EXTERNAL_DISCOVERY
+**Discovery status:** VERIFIED_DISCOVERY
 
 ## Research Attribution
 
@@ -14,68 +16,69 @@
 - AI Research Agent(s): <only models/agents actually used>
 - AI-assisted contribution: <exact work actually performed>
 
-Do not attribute a person/model/agent that did not contribute to this article.
+Do not attribute a person/model/agent that did not contribute to this discovery.
 
 ## Abstract
 
-State the result without overstating its evidence level.
+State the verified new result narrowly and precisely.
 
-## Novelty statement
+## Discovery statement
 
-What appears new? What exactly differs from known literature, known theory, previous project results or prior mathematical results?
+What exactly has been discovered? State the claim in the narrowest form supported by the evidence/proof.
 
-## Prior-art / literature search
+## Novelty / prior-art determination
 
-Record search date, databases/sources, key search terms, closest known results and why the present result is or is not distinct.
-
-## Claim under test
-
-Give the narrowest precise statement.
+Record search date, databases/sources, key search terms, closest known results, and the evidence that this result is genuinely new rather than a rediscovery or known special case.
 
 ## Assumptions / scope
 
-List all assumptions and regime restrictions.
+List all assumptions, domains of validity, regime restrictions and excluded interpretations.
 
 ## Method / proof / experiment
 
-Provide enough detail to reproduce the result.
+Provide enough detail for an independent expert to reproduce or check the discovery.
 
-## Executable / formal artifacts
+## Primary evidence / proof artifacts
 
-Link code, tests, data, proof files, symbolic notebooks, benchmark results, commit SHA, PR and issue.
+Link raw/derived data, code, tests, experiment records, complete proof/formal files, symbolic artifacts, benchmark results, commit SHA, PR and issue as applicable.
 
 ## Results
 
-State observations, theorem/proof outcome, measurements or derived results with units and uncertainty where applicable.
+State measurements, theorem/proof outcome or derived results with units and uncertainty where applicable.
 
 ## Independent validation
 
-Identify independent replication/check evidence. If absent, write `NOT YET AVAILABLE` and do not use `VERIFIED_DISCOVERY`.
+Identify the independent reproduction, proof check, external evidence, or comparably strong independent validation that qualified this result for article entry.
 
-## Falsifiers / counterexamples
+## Falsifiers / counterexamples / alternative explanations
 
-State what observation, proof, counterexample or alternative explanation would invalidate or narrow the claim.
+Record the strongest attempted falsifiers, counterexample search and alternative explanations, including outcomes.
+
+## Uncertainty / error analysis
+
+Mandatory for physics and empirical science. For mathematics, use this section for proof-boundary and formal-verification limitations where applicable.
 
 ## Limitations
 
-Record unresolved assumptions, scale-up issues, numerical limitations, measurement limitations and evidence gaps.
+Record unresolved assumptions, scale-up issues, measurement limitations, proof scope and remaining uncertainty.
 
 ## Implications
 
-Separate mathematical/physical consequence from engineering/economic consequence.
+Separate scientific/mathematical consequences from engineering/economic consequences. Do not infer technology advantage without separate evidence.
 
 ## Non-claims
 
-Explicitly list claims that this result does not establish, including any relevant real-QPU, quantum-advantage, subsystem-replacement, cost-multiplier or new-law boundaries.
+Explicitly list claims that this discovery does not establish, including any relevant real-QPU, quantum-advantage, subsystem-replacement, cost-multiplier or new-law boundaries.
 
-## Reproduction checklist
+## Verification checklist
 
+- [ ] result is already verified as genuinely new before article creation
+- [ ] explicit prior-art/novelty search documented
 - [ ] exact source/data/proof provenance recorded
-- [ ] environment/dependencies or proof checker recorded
-- [ ] deterministic seeds/parameters recorded where applicable
-- [ ] tests/checks pass
-- [ ] uncertainty/error analysis completed where applicable
-- [ ] prior-art search documented
-- [ ] falsifier/counterexample analysis documented
-- [ ] evidence status matches the actual validation level
+- [ ] reproducibility environment or proof checker recorded
+- [ ] falsifier/counterexample/alternative-explanation analysis documented
+- [ ] independent validation documented
+- [ ] uncertainty/error analysis completed for physics/empirical science
+- [ ] complete proof/formal artifact present for mathematical discovery where applicable
+- [ ] scope and limitations match actual evidence
 - [ ] attribution matches actual roles
