@@ -94,7 +94,7 @@ Candidate technology primitives include:
 - navigation and synchronization;
 - precision tests that constrain new interactions or dark-sector couplings.
 
-Anchor: https://www.nist.gov/quantum-information-science/quantum-sensing-explained/atomic-clocks-exquisite-sensors-more-than-just-time
+Anchor: https://www.nist.gov/quantum-information-science/quantum-sensing-explained/atomic-clocks-exquisite-sensors-more-just-time
 
 ### 6. Extra dimensions / quantum gravity / vacuum structure
 
