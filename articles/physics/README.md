@@ -1,9 +1,9 @@
-# Physics Discovery Articles
+# Physics Verified-Discovery Articles
 
-Canonical home for UQPU physics discovery candidates and verified physics discoveries under `INV-037`.
+Canonical home for **verified genuinely new UQPU physics discoveries only** under `INV-037`.
 
-Use `../ARTICLE_TEMPLATE.md` and preserve the evidence-status ladder in `../README.md`.
+Do not place physics ideas, hypotheses, candidate equations, simulations, model-only results, project-only reproductions, preliminary observations or literature summaries here. Those remain in ordinary research folders until the full verified-discovery gate passes.
 
-This folder includes candidate or validated findings in particle physics, quantum physics, field theory, spacetime/gravity, condensed matter, AMO, device/material physics and related physical science.
+Use `../ARTICLE_TEMPLATE.md` only after novelty, reproducibility, falsification, uncertainty/error analysis and independent-validation requirements have been satisfied.
 
-A theory, simulation, AI-generated equation or project-only reproduction must remain below `VERIFIED_DISCOVERY` until the required novelty and independent-evidence gates pass.
+Eligible subjects may include particle physics, quantum physics, field theory, spacetime/gravity, condensed matter, AMO, device/material physics and related physical science—but subject relevance alone never qualifies a result for this folder.
