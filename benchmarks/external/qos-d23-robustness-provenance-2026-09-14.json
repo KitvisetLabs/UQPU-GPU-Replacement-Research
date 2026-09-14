@@ -1,0 +1,37 @@
+{
+  "snapshot_date": "2026-09-14",
+  "gate": "QOS-AUDIT-007",
+  "sources": [
+    {
+      "title": "Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics",
+      "authors": ["Andras Gilyen", "Yuan Su", "Guang Hao Low", "Nathan Wiebe"],
+      "arxiv": "1806.01838",
+      "doi": "10.1145/3313276.3316366",
+      "source_url": "https://ir.cwi.nl/pub/28513/28513.pdf",
+      "used_result": "Lemma 22 robustness bound: degree-n QSVT polynomial perturbation is bounded by 4 n sqrt(||A-A_tilde||) without the stronger half-norm premise.",
+      "evidence_level": "PRIMARY_THEORY_SOURCE"
+    },
+    {
+      "title": "Quantum Regularized Least Squares",
+      "authors": ["Shantanav Chakraborty", "Aditya Morolia", "Anurudh Peduri"],
+      "journal": "Quantum 7, 988 (2023)",
+      "arxiv": "2206.13143v3",
+      "doi": "10.22331/q-2023-04-27-988",
+      "source_url": "https://quantum-journal.org/papers/q-2023-04-27-988/",
+      "used_result": "Theorem 8 robust QSVT: for ||A|| <= alpha/2, input block-encoding error epsilon <= alpha*delta/(2n) suffices for output block-encoding error delta using degree n.",
+      "evidence_level": "PEER_REVIEWED_THEORY_SOURCE"
+    },
+    {
+      "title": "Quantum Oracle Sketching technical supplement v2",
+      "source_url": "https://github.com/gatephys/quantum-oracle-sketching/blob/main/Paper_A_Technical_Supplement_v2.md",
+      "used_result": "Version-specific source map identifies D.23 amplification/robustness at D.214-D.217 and imports Gilyen et al. Lemmas 22-23 / Theorem 30.",
+      "evidence_level": "SOURCE_AUTHOR_TECHNICAL_SUPPLEMENT"
+    }
+  ],
+  "derivation_scope": {
+    "normalized_projected_block": "X=A/s",
+    "premises": ["s>=2", "||A||<=1", "explicit polynomial degree n>=2"],
+    "consequence": "||X||<=1/2, so the sufficient linear robust-QSVT input-error contract applies.",
+    "excluded": ["exact phase synthesis", "compiled circuit depth", "wall time", "full-unitary distance", "diamond-channel distance", "hardware advantage", "memory replacement economics"]
+  }
+}
