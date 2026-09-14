@@ -1,0 +1,32 @@
+{
+  "snapshot_date": "2026-09-14",
+  "program": "FND-008C/BATCH-048",
+  "purpose": "Source-grounded ordinal research-priority inputs; not a performance or technology-readiness certification.",
+  "sources": [
+    {"route":"silicon_carbide_spin_defect","url":"https://www.nature.com/articles/s41467-025-58629-1","type":"primary_experiment","note":"Nature Communications 2025: coherent photoelectrical single-spin readout in silicon carbide at room temperature; directly relevant to integratable ambient spin technology."},
+    {"route":"silicon_carbide_spin_defect","url":"https://www.nature.com/articles/s44310-026-00118-4","type":"primary_device_integration","note":"npj Nanophotonics 2026: waveguide-integrated color centers in silicon carbide with photonic-crystal reflectors; relevant to device integration."},
+    {"route":"diamond_and_beyond_spin_defects","url":"https://www.nature.com/articles/s41563-026-02648-w","type":"review","note":"Nature Materials 2026 review of NV sensing and emerging defects beyond diamond."},
+    {"route":"quantum_defect_material_search","url":"https://www.nature.com/articles/s43246-026-01225-7","type":"review","note":"Communications Materials 2026: predictive design of quantum defects across diverse host materials, including data-driven discovery."},
+    {"route":"beyond_diamond_watchlist","url":"https://pubs.acs.org/doi/10.1021/acsnano.5c00802","type":"review","note":"ACS Nano 2025 review compares spin defects in SiC, hBN and GaN; supports material-agnostic host search."},
+    {"route":"spacetime_atomic_clocks","url":"https://www.nature.com/articles/s41467-026-73441-1","type":"review","note":"Nature Communications 2026 review of precision clocks, synchronization, optical-clock directions and gravitational applications."},
+    {"route":"dark_matter_detection","url":"https://www.nature.com/articles/s42005-026-02563-1","type":"perspective","note":"Communications Physics 2026: multiple detector technologies while microscopic dark-matter identity remains unresolved; detector-first classification."},
+    {"route":"dark_energy_cosmology","url":"https://www.desi.lbl.gov/2026/07/30/new-desi-dr2-lyman-alpha-results-shed-light-on-dark-energy/","type":"collaboration_update","note":"DESI DR2 2026 Lyman-alpha full-shape result improves cosmological constraints; precision-inference route, not localized controllable medium."},
+    {"route":"antimatter_precision","url":"https://home.cern/alpha-measures-tiny-energy-gap-in-antimatter-with-improved-precision/","type":"primary_result_summary","note":"CERN ALPHA 2026: two-orders-of-magnitude improvement in antihydrogen ground-state hyperfine-splitting precision."},
+    {"route":"antimatter_detector_spillover","url":"https://www.sciencedirect.com/science/article/pii/S0168900226007230","type":"primary_detector_result","note":"2026 AEgIS detector work reports real-time antiproton-annihilation imaging with submicrometric spatial accuracy using large-area CMOS imaging."},
+    {"route":"quark_spin_qcd","url":"https://www.bnl.gov/eic/goals.php","type":"facility_program","note":"Electron-Ion Collider science program targets quark/gluon contributions to nucleon spin and confinement; supports indirect QCD spin/gauge research, not isolated-quark logic claims."}
+  ],
+  "evidence_boundary": {
+    "latest_source_does_not_equal_project_reproduction": true,
+    "ordinal_score_does_not_equal_trl": true,
+    "detector_does_not_equal_controlled_target_medium": true,
+    "cosmology_measurement_does_not_equal_dark_energy_device": true,
+    "quark_spin_research_does_not_equal_direct_quark_computer": true
+  },
+  "research_attribution": {
+    "human_research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_contribution": "latest-literature verification, provenance capture, evidence-boundary mapping and candidate-priority model inputs"
+  }
+}
