@@ -1,9 +1,9 @@
-# Mathematics Discovery Articles
+# Mathematics Verified-Discovery Articles
 
-Canonical home for UQPU mathematical discovery candidates and verified mathematical results under `INV-037`.
+Canonical home for **verified genuinely new UQPU mathematical discoveries only** under `INV-037`.
 
-Use `../ARTICLE_TEMPLATE.md` and preserve the evidence-status ladder in `../README.md`.
+Do not place conjectures, candidate theorems, incomplete proofs, numerical experiments, symbolic fits, finite examples or project-only proof attempts here. Those remain in ordinary research folders until the full verified-discovery gate passes.
 
-This folder includes theorems, proofs, counterexamples, bounds, algorithms, identities, structures and formally stated mathematical results.
+Eligible results may include new theorems, proofs, counterexamples, bounds, identities, algorithms or mathematical structures.
 
-Numerical agreement, symbolic fitting or finite examples do not constitute a proof. `VERIFIED_DISCOVERY` requires an explicit theorem statement, assumptions, a complete proof or equivalently strong formal artifact, prior-art/novelty review and an independent check/review route.
+Entry requires a precise result statement and assumptions, complete proof or equivalently strong formal artifact where applicable, counterexample/boundary analysis, explicit prior-art/novelty review, and independent proof checking/review. Use `../ARTICLE_TEMPLATE.md` only after those requirements are satisfied.
