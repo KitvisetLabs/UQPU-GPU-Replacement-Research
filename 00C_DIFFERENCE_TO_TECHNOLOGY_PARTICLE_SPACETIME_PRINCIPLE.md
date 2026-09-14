@@ -2,7 +2,7 @@
 
 **Permanent invariant:** INV-036  
 **Primary program:** Elementary-Particle Technology / Foundational Physics F4 -> Lane D  
-**Materials bridge:** Lane E — Pangola / biomass carbon -> engineered carbon -> synthetic-diamond hypothesis  
+**Materials bridge:** Lane E — any abundant/low-cost material; Pangola/biomass carbon is a priority starting route, not a restriction  
 **Date established:** 2026-09-14
 
 ## Research Attribution
@@ -11,7 +11,7 @@
 - Facebook: https://www.facebook.com/LoveMoneyTH
 - YouTube: https://www.youtube.com/@LoveMoneyTHOfficial
 - AI Research Agent: **OpenAI GPT-5.6 Sol**
-- AI-assisted contribution: scientific operationalization of the owner-defined difference principle, literature verification, particle/spacetime technology taxonomy, biomass-carbon-to-diamond hypothesis design, evidence gates, falsifiers, executable-registry design and documentation.
+- AI-assisted contribution: scientific operationalization of the owner-defined difference principle, literature verification, particle/spacetime technology taxonomy, low-cost-material search architecture, biomass-carbon-to-diamond hypothesis design, evidence gates, falsifiers, executable-registry design and documentation.
 
 Attribution reflects roles in this research program only.
 
@@ -62,13 +62,41 @@ The elementary-particle program shall explicitly include, without assuming techn
 5. **spacetime, gravity and relativistic time/frequency differences** — atomic clocks, interferometry, gravimetry, geodesy, navigation, field sensing and tests of relativity are direct technology-adjacent routes;
 6. **extra dimensions / quantum gravity / vacuum-structure hypotheses** — high-risk theory layer only until a discriminating observable exists; mathematical elegance is not device evidence;
 7. **neutrino, muon, nuclear/hadronic, photon, bosonic and other particle routes** — include every credible state difference that can satisfy the preparation-control-retention-readout chain;
-8. **material-hosted particle/spin defects** — especially synthetic diamond color centers such as NV and related defects, because they provide an experimentally grounded bridge from carbon materials to particle/spin sensing and quantum technology.
+8. **material-hosted particle/spin defects** — especially synthetic diamond color centers such as NV and related defects, because they provide an experimentally grounded bridge from materials to particle/spin sensing and quantum technology.
 
 The scope is deliberately wider than “quark computers.” The research target is **any difference at these scales that can become a controlled, measurable, resource-advantaged technology primitive**.
 
-# Pangola / Agricultural-Residue Carbon -> Synthetic Diamond Hypothesis
+# Permanent Material-Agnostic Innovation Rule
 
-The project shall begin a dedicated materials-to-particle-technology route from carbonaceous co-products/residues associated with Pangola grass and other agricultural biomass conversion and bio-oil production.
+The project shall not restrict invention to Pangola grass, biomass carbon, diamond, silicon, rare elements, or any single material family. **Any material that is abundant, inexpensive, locally available, recyclable, waste-derived, easy to manufacture, or otherwise advantageous may enter the research pipeline.**
+
+The preferred search pattern is:
+
+```text
+cheap / abundant / waste / recycled / local material
+-> provenance + composition
+-> purification / separation / conditioning
+-> phase / defect / interface / geometry engineering
+-> controllable measurable difference ΔX
+-> useful function
+-> manufacturability / scale-up
+-> lifecycle energy + cost
+-> best-incumbent comparison
+-> falsifier
+-> transfer lessons to the next material candidate
+```
+
+Candidate sources may include agricultural residues, biomass carbon, chars, soot, graphite, common minerals/oxides, silica, clays, salts/brines, recycled glass/metals/polymers/electronics, benign industrial residues, common ceramics/composites, conventional semiconductor materials, or newly identified cheap feedstocks. The candidate list is intentionally open-ended.
+
+A low feedstock price is never enough for a technology claim. Purification, yield, energy, equipment, environmental burden, process control, lifetime, packaging, readout/control hardware and rejected material must be counted. A failed material route remains useful if it reveals a transferable process, defect mechanism, interface effect, cost floor or no-go boundary.
+
+**Canonical Lane-E directive:** `research_lanes/E_materials_energy_cooling/ABUNDANT_LOW_COST_MATERIAL_INNOVATION_DIRECTIVE.md`.
+
+# Pangola / Agricultural-Residue Carbon -> Synthetic Diamond Starting Hypothesis
+
+Pangola grass and other agricultural-residue carbon streams remain a **priority starting example**, not an exclusive feedstock mandate. If another cheap/easy material produces a better accepted function, the project should use that material instead.
+
+The project shall test a dedicated materials-to-particle-technology route from carbonaceous co-products/residues associated with Pangola grass and other agricultural biomass conversion and bio-oil production.
 
 The proposed chain is:
 
@@ -155,6 +183,7 @@ INV-036 does **not** claim:
 
 - that every physical difference is energy;
 - a new physical law;
+- that every cheap material can replace every expensive material;
 - direct quark control outside established confinement constraints;
 - usable dark-matter material or dark-energy power extraction;
 - an extra-dimensional device;
@@ -165,4 +194,4 @@ INV-036 does **not** claim:
 - `>=100x` or `>=100,000,000x` savings;
 - the Data-Center-to-One-Phone mission has been achieved.
 
-The permanent commitment is narrower and stronger: **search systematically for technologically useful differences across particle, field, spacetime and material scales, and require each candidate to climb from distinguishability to controlled function under explicit evidence and falsification gates.**
+The permanent commitment is narrower and stronger: **search systematically and indefinitely for technologically useful differences across particle, field, spacetime and material scales; keep the material candidate universe open; and require each candidate to climb from distinguishability to controlled function under explicit evidence and falsification gates.**
