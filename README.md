@@ -6,6 +6,20 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+# 📚 VERIFIED RESEARCH ARTICLES — ROOT-LEVEL PUBLICATION HUB
+## `articles/` is a first-class folder on the repository front page — not a subfolder
+
+> **Permanent navigation rule:** the canonical verified-discovery publication folder is **[`articles/`](articles/)** at the **repository root**, at the same structural level as `README.md`, `docs/`, `research_lanes/`, `software/` and `benchmarks/`. It must not be moved under `docs/`, any research lane, or another subfolder.
+>
+> The folder is intentionally prominent because it is the public publication surface for UQPU results that have passed the strict **INV-037 `VERIFIED_DISCOVERY`** admission gate. Ordinary hypotheses, simulations, project-only reproductions, literature summaries and unverified candidate results stay in the research folders until they pass that gate.
+
+**Open the root article hub:** **[📚 `articles/`](articles/)**  
+**Verified Physics:** [`articles/physics/`](articles/physics/)  
+**Verified Science:** [`articles/science/`](articles/science/)  
+**Verified Mathematics:** [`articles/mathematics/`](articles/mathematics/)  
+**Admission policy:** [`articles/README.md`](articles/README.md)  
+**Verified-discovery directive:** [`00D_NEW_DISCOVERY_ARTICLES.md`](00D_NEW_DISCOVERY_ARTICLES.md)
+
 # PERMANENT PRINCIPLE — DIFFERENCE TO TECHNOLOGY
 ## INV-036 — FIND A REPRODUCIBLE DIFFERENCE, THEN TEST WHETHER IT CAN BECOME A CONTROLLED TECHNOLOGY PRIMITIVE
 

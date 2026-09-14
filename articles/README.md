@@ -2,6 +2,12 @@
 
 **Permanent verified-discovery registry — INV-037**
 
+## Canonical repository location — root level only
+
+The canonical publication hub is **`/articles/` at the repository root**. It is a first-class front-page folder, at the same structural level as `README.md`, `docs/`, `research_lanes/`, `software/` and `benchmarks/`.
+
+Do **not** move the canonical registry under `docs/`, a research lane, `software/`, or any other subfolder. Supporting research notes may live elsewhere, but a result admitted as a verified UQPU discovery is published through this root-level `articles/` registry.
+
 This folder is only for genuinely new UQPU discoveries in physics, science, or mathematics that have already passed the full verification gate.
 
 Creating an article does not make an idea a discovery. The result must already be verified before an article is created.
@@ -54,7 +60,7 @@ idea / hypothesis / candidate / project-only result
 -> falsification / counterexample search
 -> independent validation
 -> verified genuinely new discovery
--> create article in articles/
+-> create article in root-level articles/
 ```
 
 If later evidence overturns or narrows a published discovery, preserve a visible correction or retraction trail.

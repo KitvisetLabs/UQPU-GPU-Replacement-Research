@@ -144,11 +144,15 @@ class ProjectInvariantTests(unittest.TestCase):
 
     def test_discovery_articles_registry_is_permanent(self):
         directive = ROOT / "00D_NEW_DISCOVERY_ARTICLES.md"
-        registry = ROOT / "articles" / "README.md"
-        template = ROOT / "articles" / "ARTICLE_TEMPLATE.md"
-        physics = ROOT / "articles" / "physics" / "README.md"
-        science = ROOT / "articles" / "science" / "README.md"
-        mathematics = ROOT / "articles" / "mathematics" / "README.md"
+        root_articles = ROOT / "articles"
+        registry = root_articles / "README.md"
+        template = root_articles / "ARTICLE_TEMPLATE.md"
+        physics = root_articles / "physics" / "README.md"
+        science = root_articles / "science" / "README.md"
+        mathematics = root_articles / "mathematics" / "README.md"
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertTrue(root_articles.is_dir())
+        self.assertEqual(root_articles.parent, ROOT)
         for path in (directive, registry, template, physics, science, mathematics):
             self.assertTrue(path.exists(), path)
         directive_text = directive.read_text(encoding="utf-8")
@@ -156,6 +160,17 @@ class ProjectInvariantTests(unittest.TestCase):
         self.assertIn("INV-037", directive_text)
         self.assertIn("articles/", directive_text)
         self.assertIn("Physics / Science / Mathematics", directive_text)
+        self.assertIn("Canonical repository location — root level only", registry_text)
+        self.assertIn("repository root", registry_text)
+        self.assertIn("# 📚 VERIFIED RESEARCH ARTICLES — ROOT-LEVEL PUBLICATION HUB", readme)
+        self.assertIn("[📚 `articles/`](articles/)", readme)
+        self.assertIn("articles/physics/", readme)
+        self.assertIn("articles/science/", readme)
+        self.assertIn("articles/mathematics/", readme)
+        self.assertLess(
+            readme.index("# 📚 VERIFIED RESEARCH ARTICLES — ROOT-LEVEL PUBLICATION HUB"),
+            readme.index("# PERMANENT PRINCIPLE — DIFFERENCE TO TECHNOLOGY"),
+        )
         for status in (
             "HYPOTHESIS_OR_PROPOSAL",
             "PROJECT_REPRODUCED_RESULT",
