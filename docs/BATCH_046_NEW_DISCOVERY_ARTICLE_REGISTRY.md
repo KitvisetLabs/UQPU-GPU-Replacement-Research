@@ -1,4 +1,4 @@
-# Batch 046 — New-Discovery Article Registry and Promotion Gate
+# Batch 046 — Verified New-Discovery Article Registry and Admission Gate
 
 **Status:** repository-governance / executable evidence gate  
 **Permanent directive:** INV-037  
@@ -11,17 +11,19 @@
 - Facebook: https://www.facebook.com/LoveMoneyTH
 - YouTube: https://www.youtube.com/@LoveMoneyTHOfficial
 - AI Research Agent: **OpenAI GPT-5.6 Sol**
-- AI-assisted contribution: evidence-status design, domain-specific discovery promotion rules, executable gate/tests, directory architecture, frozen certificate, documentation and PR preparation.
+- AI-assisted contribution: verified-discovery publication design, domain-specific admission rules, executable gate/tests, directory architecture, frozen certificate, documentation and PR preparation.
 
-Attribution in future articles must list only contributors/models/agents that actually participated in that specific result.
+Attribution in future articles must list only contributors/models/agents that actually participated in that specific discovery.
 
-## Owner direction
+## Owner direction — corrected boundary
 
-Future genuinely new findings in physics, science and mathematics must be preserved as visible articles in a dedicated repository folder. The publication area must remain easy to find and must expand as research continues.
+The `articles/` folder is **not** for new ideas, hypotheses, candidate discoveries or intermediate research results. It is reserved only for results that have already been established as genuinely new discoveries in physics, science or mathematics.
+
+Ideas, hypotheses, simulations, candidate equations, project-only reproductions, preliminary observations and literature findings remain in ordinary research locations such as `docs/`, the owning research lane, benchmark/result folders or issues until the full discovery gate has passed.
 
 ## Implementation
 
-Batch 046 creates a root-level `articles/` registry with three permanent domains:
+Batch 046 creates a root-level verified-discovery registry with three permanent domains:
 
 - `articles/physics/`
 - `articles/science/`
@@ -30,48 +32,52 @@ Batch 046 creates a root-level `articles/` registry with three permanent domains
 It also creates:
 
 - `00D_NEW_DISCOVERY_ARTICLES.md` — root-level permanent directive;
-- `articles/README.md` — canonical index and evidence-status policy;
-- `articles/ARTICLE_TEMPLATE.md` — reusable article contract;
-- `software/uqpu-prototype/uqpu/discovery_article_gate.py` — executable promotion rules;
-- `software/uqpu-prototype/tests/test_discovery_article_gate.py` — domain/status validation tests;
+- `articles/README.md` — canonical verified-only admission policy;
+- `articles/ARTICLE_TEMPLATE.md` — template usable only after admission passes;
+- `software/uqpu-prototype/uqpu/discovery_article_gate.py` — executable verified-discovery admission rules;
+- `software/uqpu-prototype/tests/test_discovery_article_gate.py` — positive and negative admission tests;
 - permanent folder/policy checks in `test_project_invariants.py`;
 - `benchmarks/results/batch046-new-discovery-article-gate.json` — frozen governance certificate.
 
-## Evidence ladder
+## Hard admission rule
 
-The registry separates five states:
+The only allowed project-article status is:
 
-1. `HYPOTHESIS_OR_PROPOSAL`
-2. `PROJECT_REPRODUCED_RESULT`
-3. `INDEPENDENTLY_REPRODUCED_CANDIDATE`
-4. `VERIFIED_DISCOVERY`
-5. `ESTABLISHED_EXTERNAL_DISCOVERY`
+```text
+VERIFIED_DISCOVERY
+```
 
-This allows high-imagination work to be published early without laundering a hypothesis into a discovery claim.
+The following remain outside `articles/`:
 
-## Promotion gates
+- `HYPOTHESIS_OR_PROPOSAL`
+- `PROJECT_REPRODUCED_RESULT`
+- `INDEPENDENTLY_REPRODUCED_CANDIDATE`
+- preliminary/internal results
+- external literature summaries
 
-### Physics / empirical science
+The result must already be verified before the article is created.
 
-A `VERIFIED_DISCOVERY` record must include independent validation and uncertainty/error analysis in addition to the common novelty/prior-art, reproducibility, falsifier, limitation and attribution fields.
+## Physics / empirical science gate
 
-### Mathematics
+Admission requires documented prior-art/novelty review, reproducible primary evidence, falsification/alternative-explanation analysis, uncertainty/error analysis and independent validation appropriate to the domain. Theory, simulation, AI generation or project-only reproduction alone cannot qualify.
 
-A `VERIFIED_DISCOVERY` record must include independent validation plus a complete proof or formal artifact. Numerical agreement or symbolic fitting alone cannot satisfy the proof gate.
+## Mathematics gate
 
-### External discoveries
+Admission requires a precise theorem/result and assumptions, complete proof or equivalently strong formal artifact where applicable, counterexample/boundary analysis, prior-art/novelty review and independent proof checking/review. Numerical agreement or symbolic fitting alone cannot qualify.
 
-`ESTABLISHED_EXTERNAL_DISCOVERY` requires explicit external discoverer/source attribution so the project cannot silently take ownership of public results.
+## External discoveries
+
+Discoveries made by other researchers are essential research inputs but ordinary literature summaries do not enter this project's verified-new-discovery `articles/` registry. They remain literature/research notes with proper original attribution. A genuinely new UQPU extension may enter only after passing the same full gate.
 
 ## Publishable result
 
-The publishable result of Batch 046 is **not a new scientific discovery**. It is a reproducible governance mechanism ensuring that future candidate discoveries are preserved visibly while the word `VERIFIED_DISCOVERY` remains evidence-gated.
+The publishable result of Batch 046 is **not a new scientific or mathematical discovery**. It is a reproducible governance mechanism that reserves a prominent repository area for future discoveries only after they are genuinely verified as new.
 
 ## Evidence classification
 
 ```text
 classification:
-  NEW_DISCOVERY_ARTICLE_REGISTRY_AND_PROMOTION_GATE
+  VERIFIED_NEW_DISCOVERY_ARTICLE_REGISTRY_AND_ADMISSION_GATE
 
 evidence_level:
   RESEARCH_GOVERNANCE_EXECUTABLE
@@ -79,11 +85,11 @@ evidence_level:
 
 ## Non-claims
 
-Batch 046 does not retroactively promote any UQPU theory, model, simulation, symbolic-regression output, internal reproduction or AI-generated equation into a verified discovery or new law. It does not establish real-QPU advantage, quantum advantage, GPU/NPU/RAM/DRAM/HBM replacement, `>=100x`, `>=100,000,000x`, or Data-Center-to-One-Phone achievement.
+Batch 046 does not retroactively promote any UQPU theory, model, simulation, symbolic-regression output, internal reproduction or AI-generated equation into a discovery or new law. It does not establish real-QPU advantage, quantum advantage, GPU/NPU/RAM/DRAM/HBM replacement, `>=100x`, `>=100,000,000x`, or Data-Center-to-One-Phone achievement.
 
 ## Next gates
 
-1. Wire the article registry into future research-batch closing procedure: every batch must explicitly answer whether an article trigger fired.
-2. For the next genuinely novel candidate result, publish the first domain article at its actual evidence status.
-3. Add machine-readable article metadata/schema if article volume grows enough to justify indexing/search automation.
-4. When an article is promoted, preserve the prior status and evidence history in Git/GitHub rather than rewriting provenance.
+1. Wire the verified-discovery registry into future research-batch closing procedure: every batch must explicitly answer whether the strict article-admission gate passed.
+2. Do not create the first substantive discovery article until a result actually satisfies the full verified-discovery contract.
+3. Add machine-readable article metadata/schema only after the first verified article or when indexing becomes necessary.
+4. Preserve correction/retraction history if later evidence overturns or narrows any published discovery.
