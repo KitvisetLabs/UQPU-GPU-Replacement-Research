@@ -4,7 +4,26 @@
 **Status:** Active research / executable prototype / long-horizon architecture  
 **Lead Researcher:** Kanutsanan Pongpanna  
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
-**Date:** 2026-09-13
+**Date:** 2026-09-14
+
+# PERMANENT PRINCIPLE — DIFFERENCE TO TECHNOLOGY
+## INV-036 — FIND A REPRODUCIBLE DIFFERENCE, THEN TEST WHETHER IT CAN BECOME A CONTROLLED TECHNOLOGY PRIMITIVE
+
+> **Research-owner principle:** enormous technologies can grow from a simple controllable difference. Binary `0` and `1` are the familiar example. The project shall therefore search for useful differences across particle spin, charge, flavour, particle/antiparticle structure, matter/antimatter comparisons, fields, phase/frequency, energy levels, spacetime/gravity, symmetry sectors, material defects and other particle/field/quantum degrees of freedom.
+>
+> The engineering form is strict: **difference `ΔX` -> distinguishability -> preparation -> control -> retention/coherence -> readout -> useful function -> scaling/resources -> falsifier -> independent reproduction**.
+>
+> When the physical variable is energy, use the ordinary energy difference `ΔE = E_final - E_initial`. The owner heuristic “energy is difference / difference is energy” guides hypothesis generation, but the project does **not** claim that every abstract difference is literally energy or that this is a new law of physics.
+
+The permanent elementary-particle/spacetime search now explicitly includes **quark/gluon spin and QCD structure, antiparticles/antimatter, dark-matter detector technology, dark-energy/cosmology instrumentation, spacetime/gravity and relativistic clock differences, extra-dimension/quantum-gravity falsifiable searches, neutrino/muon/other particle routes, and material-hosted spin defects such as diamond color centers**. A detector for a phenomenon is not automatically a device made from that phenomenon; each route must pass preparation/control/readout/evidence gates before technology claims advance.
+
+The materials bridge begins with the project hypothesis **Pangola grass and agricultural-residue bio-oil/thermochemical carbon coproduct -> purification -> suitable carbon precursor -> HPHT/CVD synthetic diamond -> verified diamond phase -> defect engineering -> ODMR/state readout -> coherence/sensitivity/device metric -> lifecycle cost/energy comparison**. Biomass-to-engineered-carbon, synthetic-diamond growth from suitable carbon precursors and diamond spin-defect technology each have published precedent, but the exact Pangola-residue-to-device chain is **not yet demonstrated** and remains a falsifiable materials hypothesis.
+
+**Canonical permanent principle:** [00C_DIFFERENCE_TO_TECHNOLOGY_PARTICLE_SPACETIME_PRINCIPLE.md](00C_DIFFERENCE_TO_TECHNOLOGY_PARTICLE_SPACETIME_PRINCIPLE.md)  
+**Current expanded research gate:** [research_lanes/D_device_chip_fabrication/batches/BATCH_045_FND_008_DIFFERENCE_PARTICLE_SPACETIME_TECHNOLOGY.md](research_lanes/D_device_chip_fabrication/batches/BATCH_045_FND_008_DIFFERENCE_PARTICLE_SPACETIME_TECHNOLOGY.md)  
+**Pangola/biomass-to-diamond route:** [research_lanes/E_materials_energy_cooling/PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md](research_lanes/E_materials_energy_cooling/PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md)
+
+No direct quark computer, controllable dark-matter medium, dark-energy power source, extra-dimensional device, net-positive antimatter energy source, Pangola-derived device-grade diamond, new physical law, quantum advantage or subsystem replacement is claimed by INV-036.
 
 # ULTIMATE NORTH STAR — DATA CENTER TO ONE PHONE
 
@@ -42,7 +61,7 @@ The project explicitly tests both **direct** and **indirect** routes. For exampl
 
 String theory and holography are included as high-risk exploratory frameworks. Their mathematical/information structures may be investigated for useful encodings, dualities, error-correction structures or algorithmic transformations, but no string-scale device claim is allowed without an experimentally supported particle/state mechanism.
 
-**Canonical current gate:** [research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md](research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md). The executable gate requires each candidate to specify particle/state, theory framework, mechanism, preparation, control, retention/coherence, readout, scaling, falsifier, observable, baseline and full resource accounting.
+**Canonical current gate:** [research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md](research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md). The executable gate requires each candidate to specify particle/state, theory framework, mechanism, preparation, control, retention/coherence, readout, scaling, falsifier, observable, baseline and full resource accounting. The expanded FND-008 program adds quark-spin, antimatter, dark-sector, spacetime/gravity and biomass-to-diamond spin-defect research under the permanent difference-to-technology principle.
 
 No direct quark computer, elementary-particle computer, string-scale computer, BSM discovery, new physical law, quantum advantage, GPU/NPU/RAM/DRAM/HBM replacement or >=100,000,000x saving is currently claimed.
 
@@ -94,7 +113,7 @@ This agenda explicitly preserves elementary-particle physics and fundamental mat
 >
 > The objective is to reduce dependence on expensive/critical technology materials including **Au, Cu, Ag, Li, Co, Ni, rare-earth elements and other high-value minerals** through **functional substitution, material minimization, recovery/recycling, hybrid materials, and architecture/chemistry substitution**.
 
-**Canonical strategy:** [01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md](01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md) — permanent under **INV-030**.
+**Canonical strategy:** [01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md](01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md) — permanent under **INV-030**. The expanded materials route now also tests whether sufficiently purified Pangola/agricultural-residue carbon streams can become synthetic-diamond precursors and, if successful, color-center spin-technology materials under FND-008.
 
 **Scientific boundary:** ordinary carbon processing cannot create gold, copper, silver, lithium, cobalt, nickel or rare-earth atoms. Every material claim must identify the exact incumbent function and prove a functional-unit advantage. When direct carbon substitution is unsuitable, pursue minimization, recovery/recycling, hybridization or system redesign instead of a false one-for-one claim.
 
@@ -122,7 +141,7 @@ This agenda explicitly preserves elementary-particle physics and fundamental mat
 
 **Canonical strategy:** [04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md) — permanent under **INV-033**.
 
-The root-level mission/foundation/pillars `00`, `00A`, `00B`, `01`–`06` are intentionally prominent because the project couples scientific invention, computation, AI-training cost compression, elementary-particle technology research, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
+The root-level mission/foundation/pillars `00`, `00A`, `00B`, `00C`, `01`–`06` are intentionally prominent because the project couples scientific invention, computation, AI-training cost compression, elementary-particle/spacetime technology research, materials, liquid fuel, electricity and financing into one evidence-gated route toward extreme physical/economic compression.
 
 ## Core mission
 
@@ -181,11 +200,11 @@ H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategic Research
         -> Integration Gate -> evidence/tests/cost -> GitHub sync
 ```
 
-The Foundational Physics & Mathematics Deep-Frontier Agenda and AI-Assisted Physics Equation Discovery are cross-cutting upstream layers feeding **all A–H lanes**. Lane A owns the quantum/hybrid AI-training cost-compression workload program, with B/C/D/F providing execution, memory/data-movement, physical-device and economics/evidence contracts. **Lane D owns the elementary-particle technology program at the device-feasibility layer, fed by the F4 elementary-particle/QFT foundation and coupled to A/C/E/F for algorithmic translation, state semantics, physical infrastructure and evidence/economics.** Lane E treats Pangola/biomass carbon, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
+The Foundational Physics & Mathematics Deep-Frontier Agenda, AI-Assisted Physics Equation Discovery and Difference-to-Technology Principle are cross-cutting upstream layers feeding **all A–H lanes**. Lane A owns the quantum/hybrid AI-training cost-compression workload program, with B/C/D/F providing execution, memory/data-movement, physical-device and economics/evidence contracts. **Lane D owns the elementary-particle/spacetime technology program at the device-feasibility layer, fed by the F4 elementary-particle/QFT foundation and coupled to A/C/E/F for algorithmic translation, state semantics, physical infrastructure and evidence/economics.** Lane E treats Pangola/biomass carbon, the biomass-to-synthetic-diamond hypothesis, low-cost biomass liquid fuel and fusion-electricity cost minimization as central energy/material programs. D/G co-design device/process/manufacturing requirements. Lane F prevents unsupported performance/economic claims and quantifies financing/interest burden. Lane H integrates staged financing and future-industry development with the technical program.
 
 ## Current evidence status
 
-The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies, testable energy/financing cost models, executable fundamental-limit helpers, an executable equation-discovery hypothesis gate and an executable elementary-particle technology evidence gate.
+The repository has progressed beyond concept-only work into executable software, provider adapters, QUBO/QAOA compilation, independent Qiskit cross-checking, classical reference-generation experiments, routing analysis, finite-shot/synthetic-noise studies, testable energy/financing cost models, executable fundamental-limit helpers, an executable equation-discovery hypothesis gate, an executable elementary-particle technology evidence gate and an executable particle/spacetime difference-to-technology registry gate.
 
 However:
 
@@ -195,6 +214,9 @@ However:
 - no billion-fold or tens-of-billions-fold AI-training cost advantage has been demonstrated;
 - no data-center-to-phone equivalence has been demonstrated;
 - no direct quark or elementary-particle computing device has been demonstrated;
+- no controllable dark-matter technology medium, dark-energy power source or extra-dimensional device has been demonstrated;
+- no net-positive antimatter energy technology has been demonstrated;
+- no Pangola/agricultural-residue-derived device-grade synthetic diamond has been demonstrated;
 - no string-scale computing device or BSM particle technology has been demonstrated;
 - no universal Au/Cu/Ag/Li/Co/Ni/rare-earth replacement by biomass carbon has been demonstrated;
 - no Pangola-derived liquid fuel has yet been certified at the project's ultra-low-cost target;
@@ -227,24 +249,27 @@ The public Thai, English, Chinese, Japanese, Korean and German master-plan links
 Read in this order:
 
 1. `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`
-2. `00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md`
-3. `research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md`
-4. `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`
-5. `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`
-6. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
-7. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
-8. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
-9. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
-10. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
-11. `PROJECT_CHARTER.md`
-12. `VERSION_INVARIANTS.md`
-13. `docs/RESEARCH_OPERATING_SYSTEM.md`
-14. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
-15. `docs/KANUSANAN_PONGPANNA_MODEL.md`
-16. `STRATEGIC_PLAN_REFERENCES.md`
-17. `RESEARCH_GAPS.md`
-18. `DECISIONS.md`
-19. `WORKLOG.md`
+2. `00C_DIFFERENCE_TO_TECHNOLOGY_PARTICLE_SPACETIME_PRINCIPLE.md`
+3. `00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md`
+4. `research_lanes/D_device_chip_fabrication/batches/BATCH_045_FND_008_DIFFERENCE_PARTICLE_SPACETIME_TECHNOLOGY.md`
+5. `research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md`
+6. `research_lanes/E_materials_energy_cooling/PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md`
+7. `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`
+8. `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`
+9. `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`
+10. `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`
+11. `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`
+12. `03_FUSION_ELECTRICITY_COST_STRATEGY.md`
+13. `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`
+14. `PROJECT_CHARTER.md`
+15. `VERSION_INVARIANTS.md`
+16. `docs/RESEARCH_OPERATING_SYSTEM.md`
+17. `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md`
+18. `docs/KANUSANAN_PONGPANNA_MODEL.md`
+19. `STRATEGIC_PLAN_REFERENCES.md`
+20. `RESEARCH_GAPS.md`
+21. `DECISIONS.md`
+22. `WORKLOG.md`
 
 Then continue from the newest committed state and latest Batch/evidence records.
 
@@ -253,6 +278,10 @@ Then continue from the newest committed state and latest Batch/evidence records.
 - `GOALS.md` — ultimate, functional and economic goals
 - `PROJECT_CHARTER.md` — permanent mission/invariants
 - `VERSION_INVARIANTS.md` — release-preservation rules
+- `00C_DIFFERENCE_TO_TECHNOLOGY_PARTICLE_SPACETIME_PRINCIPLE.md` — permanent difference-to-technology and particle/spacetime scope
+- `research_lanes/D_device_chip_fabrication/batches/BATCH_045_FND_008_DIFFERENCE_PARTICLE_SPACETIME_TECHNOLOGY.md` — expanded particle/spacetime research program
+- `research_lanes/E_materials_energy_cooling/PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md` — Pangola/biomass-carbon to synthetic-diamond hypothesis and gates
+- `software/uqpu-prototype/uqpu/particle_spacetime_difference_gate.py` — executable domain-coverage and promotion-contract gate
 - `00B_QUANTUM_AI_TRAINING_COST_COMPRESSION_MOONSHOT.md` — high-priority quantum/hybrid AI-training cost-compression program
 - `research_lanes/D_device_chip_fabrication/batches/BATCH_041_FND_007_ELEMENTARY_PARTICLE_TECHNOLOGY_SEARCH.md` — high-priority elementary-particle technology research program
 - `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md` — highest-visibility permanent equation-discovery principle
