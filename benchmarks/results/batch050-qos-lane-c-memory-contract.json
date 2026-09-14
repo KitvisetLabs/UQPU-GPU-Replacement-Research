@@ -1,0 +1,55 @@
+{
+  "gate": "LANE-C-QOS-MEMORY-001",
+  "classification": "QOS_LANE_C_REPLACEMENT_AND_ECONOMICS_NOT_READY",
+  "evidence_level": "EXECUTABLE_MATCHED_ROLE_CONTRACT",
+  "qos_state_input": {
+    "source_version": "arXiv:2604.07639v1",
+    "latest_issue_1_qos_batch": 37,
+    "degree_81_numerical_polynomial_candidate": true,
+    "formal_global_boundedness_proof_closed": false,
+    "qsp_phase_sequence_synthesized": false,
+    "qsp_response_independently_reconstructed": false,
+    "projected_block_robustness_closed": true,
+    "full_channel_contract_closed": false,
+    "logical_to_physical_resource_mapping_closed": false
+  },
+  "required_matched_roles": [
+    "capacity_bytes",
+    "sustained_bandwidth_bytes_per_s",
+    "latency_seconds",
+    "memory_energy_j_per_accepted_task",
+    "memory_cost_per_accepted_task",
+    "materialized_bytes_per_accepted_task"
+  ],
+  "current_role_status": {
+    "capacity_bytes": "UNKNOWN_FOR_MATCHED_QOS_ACCEPTED_FUNCTION",
+    "sustained_bandwidth_bytes_per_s": "UNKNOWN_FOR_MATCHED_QOS_ACCEPTED_FUNCTION",
+    "latency_seconds": "UNKNOWN_FOR_MATCHED_QOS_ACCEPTED_FUNCTION",
+    "memory_energy_j_per_accepted_task": "UNKNOWN_FOR_MATCHED_QOS_ACCEPTED_FUNCTION",
+    "memory_cost_per_accepted_task": "UNKNOWN_FOR_MATCHED_QOS_ACCEPTED_FUNCTION",
+    "materialized_bytes_per_accepted_task": "UNKNOWN_FOR_MATCHED_QOS_ACCEPTED_FUNCTION"
+  },
+  "decision": {
+    "same_accepted_function_frozen": false,
+    "all_roles_quantified": false,
+    "all_roles_non_model_or_estimate": false,
+    "upstream_contract_closed": false,
+    "dram_hbm_replacement_claim_ready": false,
+    "economic_winner_claim_ready": false
+  },
+  "permanent_rules": [
+    "machine-size reduction != DRAM/HBM replacement != cost reduction",
+    "capacity ratio != bandwidth ratio != latency ratio != energy ratio != cost ratio",
+    "model-only or engineering-estimate ratios cannot establish a measured replacement winner",
+    "QOS projected-block success cannot be promoted to full-channel or physical-memory equivalence without the missing interfaces"
+  ],
+  "next_gate": "QOS-AUDIT-010 phase synthesis/formal boundedness in parallel with freezing a same-accepted-function classical memory baseline and candidate physical-resource boundary",
+  "non_claims": {
+    "real_qpu": false,
+    "quantum_advantage": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "hundred_x": false,
+    "hundred_million_x": false,
+    "new_physical_law": false
+  }
+}
