@@ -1,6 +1,6 @@
 {
   "program": "INV-037/BATCH-046",
-  "classification": "NEW_DISCOVERY_ARTICLE_REGISTRY_AND_PROMOTION_GATE",
+  "classification": "VERIFIED_NEW_DISCOVERY_ARTICLE_REGISTRY_AND_ADMISSION_GATE",
   "evidence_level": "RESEARCH_GOVERNANCE_EXECUTABLE",
   "canonical_root": "articles/",
   "domains": [
@@ -8,21 +8,28 @@
     "PHYSICS",
     "SCIENCE"
   ],
-  "statuses": [
-    "ESTABLISHED_EXTERNAL_DISCOVERY",
-    "HYPOTHESIS_OR_PROPOSAL",
-    "INDEPENDENTLY_REPRODUCED_CANDIDATE",
-    "PROJECT_REPRODUCED_RESULT",
+  "allowed_article_statuses": [
     "VERIFIED_DISCOVERY"
   ],
-  "promotion_contract": {
+  "non_article_research_states": [
+    "EXTERNAL_LITERATURE_RESULT",
+    "HYPOTHESIS_OR_PROPOSAL",
+    "INDEPENDENTLY_REPRODUCED_CANDIDATE",
+    "PRELIMINARY_RESULT",
+    "PROJECT_REPRODUCED_RESULT"
+  ],
+  "admission_contract": {
+    "articles_are_verified_discovery_only": true,
+    "hypotheses_forbidden_in_articles": true,
+    "project_only_reproductions_forbidden_in_articles": true,
+    "external_literature_summaries_forbidden_in_articles": true,
+    "verified_discovery_requires_prior_art_novelty_review": true,
     "verified_discovery_requires_independent_validation": true,
     "mathematics_requires_complete_proof_or_formal_artifact": true,
-    "physics_science_require_uncertainty_or_error_analysis": true,
-    "external_discovery_requires_external_attribution": true
+    "physics_science_require_uncertainty_or_error_analysis": true
   },
   "non_claims": {
-    "article_presence_implies_discovery": false,
+    "registry_creation_implies_current_discovery": false,
     "simulation_implies_experimental_discovery": false,
     "ai_generated_equation_implies_new_law": false,
     "project_only_reproduction_implies_verified_discovery": false,
@@ -36,6 +43,6 @@
     "facebook": "https://www.facebook.com/LoveMoneyTH",
     "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
     "ai_research_agent": "OpenAI GPT-5.6 Sol",
-    "ai_assisted_contribution": "discovery-publication governance, evidence-status ladder, reproducibility and promotion contract, executable validation, tests, documentation and PR preparation"
+    "ai_assisted_contribution": "verified-discovery publication governance, admission contract, executable validation, tests, documentation and PR preparation"
   }
 }
