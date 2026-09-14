@@ -1,0 +1,47 @@
+{
+  "batch": 51,
+  "gate": "QOS-AUDIT-010A",
+  "classification": "D23_FROZEN_FLOAT_POLYNOMIAL_EXACT_BERNSTEIN_BOUNDEDNESS_CERTIFIED_PHASES_OPEN",
+  "evidence_level": "EXACT_RATIONAL_BERNSTEIN_CERTIFICATE_FOR_FROZEN_RUNTIME_FLOAT_POLYNOMIAL",
+  "degree": 81,
+  "coefficient_fingerprint_sha256": "4364297169fe219da396c1d663680f474508a03afed93e321dc8e9d8f0bad13a",
+  "method": {
+    "coefficient_semantics": "Each frozen Python float is converted with Fraction.from_float, so the proof applies to the exact binary rational instantiated by the repository artifact.",
+    "basis_conversion": "Exact rational Chebyshev-to-power recurrence, followed by exact rational affine power-basis mapping.",
+    "range_certificate": "Exact rational power-to-Bernstein conversion plus recursive de Casteljau subdivision at t=1/2; the Bernstein convex-hull property certifies each accepted leaf interval.",
+    "external_numeric_solver_required": false
+  },
+  "global_all_real_bound": {
+    "domain": [-1.0, 1.0],
+    "threshold": 1.0,
+    "certified": true,
+    "leaf_intervals": 196,
+    "maximum_depth": 13,
+    "tightest_bernstein_margin_lower_bound": 3.7988558217421443e-06
+  },
+  "target_error_bound": {
+    "domain": [-0.25, 0.25],
+    "threshold": 0.0033333333333333335,
+    "certified": true,
+    "leaf_intervals": 6,
+    "maximum_depth": 3,
+    "tightest_bernstein_margin_lower_bound": 0.00034946208732517816
+  },
+  "formal_global_boundedness_for_frozen_runtime_polynomial_closed": true,
+  "formal_target_error_bound_for_frozen_runtime_polynomial_closed": true,
+  "still_open": {
+    "qsp_phase_sequence_synthesized": false,
+    "qsp_response_independently_reconstructed": false,
+    "phase_convention_mapped_to_batch036_qsvt_interface": false,
+    "full_channel_repaired_D23_established": false,
+    "logical_to_physical_resource_mapping_closed": false
+  },
+  "non_claims": {
+    "real_qpu": true,
+    "quantum_advantage": true,
+    "gpu_npu_ram_dram_hbm_replacement": true,
+    "hundred_x": true,
+    "hundred_million_x": true,
+    "new_physical_law": true
+  }
+}
