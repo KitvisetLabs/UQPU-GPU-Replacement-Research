@@ -2,9 +2,9 @@
 
 **Permanent verified-discovery registry — INV-037**
 
-This root-level folder is reserved exclusively for UQPU results that have already been established as genuinely new discoveries in **physics, broader science, or mathematics** under the project's strict discovery gate.
+This folder is only for genuinely new UQPU discoveries in physics, science, or mathematics that have already passed the full verification gate.
 
-It is **not** a notebook for ideas, hypotheses, candidate discoveries, internal-only reproductions, simulations, literature summaries, or preliminary results.
+Creating an article does not make an idea a discovery. The result must already be verified before an article is created.
 
 ## Research Attribution
 
@@ -14,65 +14,51 @@ It is **not** a notebook for ideas, hypotheses, candidate discoveries, internal-
 - AI Research Agent: **OpenAI GPT-5.6 Sol**
 - AI-assisted contribution in establishing this registry: verified-discovery governance, novelty/independent-validation rules, directory architecture, executable validation and documentation.
 
-Attribution in every future article must reflect the actual contributors and roles for that discovery. Do not copy an AI/model name into an article unless that model/agent actually contributed.
+Each future article must record only the actual contributors and roles for that discovery.
 
-# Hard boundary
+## Allowed status
 
-A file may be created in `articles/` only after the result passes the full verified-discovery contract. Before that point, all research belongs elsewhere in the repository.
+The only article-entry status is `VERIFIED_DISCOVERY`.
 
-Forbidden as standalone discovery articles here:
+The following labels describe research that must remain outside `articles/`:
 
-- ideas or brainstorming;
-- `HYPOTHESIS_OR_PROPOSAL` work;
-- candidate equations or conjectures;
-- simulation-only or model-only results;
-- `PROJECT_REPRODUCED_RESULT` work without independent validation;
-- preliminary experimental observations;
-- literature reviews or summaries of discoveries made by others;
-- AI-generated equations or symbolic-regression results that have not passed the full discovery gate.
+- `HYPOTHESIS_OR_PROPOSAL`
+- `PROJECT_REPRODUCED_RESULT`
+- `INDEPENDENTLY_REPRODUCED_CANDIDATE`
+- `ESTABLISHED_EXTERNAL_DISCOVERY`
+
+The last label represents discoveries made elsewhere; external literature belongs in research/literature notes unless UQPU later makes and verifies a genuinely new extension.
 
 ## Directory map
 
 - `physics/` — verified new physics discoveries only.
 - `science/` — verified new non-physics scientific discoveries only.
 - `mathematics/` — verified new mathematical discoveries only.
-- `ARTICLE_TEMPLATE.md` — mandatory structure used only after the entry gate passes.
+- `ARTICLE_TEMPLATE.md` — use only after the entry gate passes.
 
-# Common verified-discovery entry contract
+## Entry contract
 
-Every discovery article must document:
+Every article must document a precise discovery statement, prior-art/novelty search, reproducible primary evidence or proof, falsifier/counterexample analysis, independent validation, limitations, scope, provenance and actual attribution.
 
-1. precise discovery statement;
-2. explicit prior-art/novelty search and closest known work;
-3. reproducible primary evidence, code/data/experiment/proof provenance as applicable;
-4. falsifier, counterexample or discriminating alternative analysis;
-5. independent validation appropriate to the domain;
-6. limitations and exact scope;
-7. actual human/AI attribution and provenance links.
+Physics and empirical science additionally require uncertainty/error analysis and domain-appropriate independent evidence. Theory, simulation, model-only or project-only reproduction is not enough.
 
-## Physics / empirical science
+Mathematics additionally requires a precise theorem/result statement and assumptions, complete proof or comparably strong formal artifact, boundary/counterexample analysis, novelty review and independent proof checking/review.
 
-Entry additionally requires domain-appropriate empirical evidence where the claim is empirical, uncertainty/error analysis, alternative-explanation testing, and independent reproduction or comparably strong independent evidence. Simulation, theory or internal reproduction alone cannot create an article here.
-
-## Mathematics
-
-Entry additionally requires a precise theorem/result statement and assumptions, a complete proof or equivalently strong formal artifact where applicable, counterexample/boundary analysis, novelty review and independent proof checking/review. Numerical examples or symbolic agreement are not proofs.
-
-# Workflow
+## Workflow
 
 ```text
 idea / hypothesis / candidate / project-only result
--> ordinary research folders (NOT articles/)
--> prior-art search
+-> ordinary research folders, not articles/
+-> novelty search
 -> reproducibility / proof
--> adversarial falsification / counterexample search
+-> falsification / counterexample search
 -> independent validation
 -> verified genuinely new discovery
 -> create article in articles/
 ```
 
-If later evidence overturns or materially narrows a published discovery, correction/retraction provenance must be preserved publicly.
+If later evidence overturns or narrows a published discovery, preserve a visible correction or retraction trail.
 
-# Non-claims
+## Non-claims
 
-The existence of this folder does not imply that UQPU currently has a verified new discovery. Batch 046 establishes publication governance only. No existing model, simulation, AI-generated equation, internal reproduction, quantum advantage, subsystem replacement, `>=100x`, `>=100,000,000x`, Data-Center-to-One-Phone result, or new physical law is promoted by creating this registry.
+The existence of this registry does not mean UQPU currently has a verified new discovery. Batch 046 establishes publication governance only and does not promote any existing model, simulation, AI-generated equation, internal reproduction, quantum advantage, subsystem replacement, cost multiplier, Data-Center-to-One-Phone result, or new physical law.
