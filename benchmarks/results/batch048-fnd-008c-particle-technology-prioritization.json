@@ -1,0 +1,45 @@
+{
+  "program": "FND-008C/BATCH-048",
+  "classification": "PARTICLE_SPACETIME_TECHNOLOGY_ORDINAL_PRIORITIZATION_GATE",
+  "evidence_level": "SOURCE_GROUNDED_ORDINAL_RESEARCH_PRIORITY_MODEL",
+  "score_warning": "Ordinal research-priority bookkeeping only; not a physical metric, success probability, TRL certification or advantage claim.",
+  "ranking": [
+    {"rank":1,"name":"Silicon-carbide spin-defect semiconductor platform","domain":"other_particle_quantum_states","positive_score":16,"infrastructure_burden":1,"actionability_score":15,"priority":"P1_BUILD_AND_BENCHMARK","direct_carrier_controlled":true},
+    {"rank":2,"name":"Diamond NV / color-center spin platform","domain":"diamond_defect_spin","positive_score":15,"infrastructure_burden":1,"actionability_score":14,"priority":"P1_BUILD_AND_BENCHMARK","direct_carrier_controlled":true},
+    {"rank":3,"name":"Atomic-clock spacetime/gravity sensing platform","domain":"spacetime_gravity","positive_score":15,"infrastructure_burden":2,"actionability_score":13,"priority":"P1_BUILD_AND_BENCHMARK","direct_carrier_controlled":true},
+    {"rank":4,"name":"Dark-matter quantum-sensor spillover platform","domain":"dark_matter_detection","positive_score":14,"infrastructure_burden":2,"actionability_score":12,"priority":"P2_INSTRUMENT_SPILLOVER","direct_carrier_controlled":false},
+    {"rank":5,"name":"Dark-energy precision-instrumentation route","domain":"dark_energy_cosmology","positive_score":13,"infrastructure_burden":3,"actionability_score":10,"priority":"P2_INSTRUMENT_SPILLOVER","direct_carrier_controlled":false},
+    {"rank":6,"name":"Antimatter precision trapping / readout route","domain":"antimatter_antiparticle","positive_score":11,"infrastructure_burden":3,"actionability_score":8,"priority":"P2_REPRODUCE_AND_BENCHMARK","direct_carrier_controlled":true},
+    {"rank":7,"name":"QCD spin / gauge-structure indirect technology route","domain":"quark_spin_qcd","positive_score":9,"infrastructure_burden":3,"actionability_score":6,"priority":"P3_DETECTOR_OR_INDIRECT_RESEARCH","direct_carrier_controlled":false},
+    {"rank":8,"name":"Extra-dimension / quantum-gravity precision search","domain":"extra_dimensions_quantum_gravity","positive_score":5,"infrastructure_burden":3,"actionability_score":2,"priority":"P4_THEORY_OR_PRECISION_SEARCH","direct_carrier_controlled":false}
+  ],
+  "top_build_candidates": [
+    "Silicon-carbide spin-defect semiconductor platform",
+    "Diamond NV / color-center spin platform",
+    "Atomic-clock spacetime/gravity sensing platform"
+  ],
+  "research_decision": {
+    "next_primary_experiment": "FND-008B1: SiC-vs-diamond spin-defect accepted-function/resource benchmark",
+    "parallel_route": "FND-008A: low-cost feedstock/material acceptance ledger for diamond and alternative hosts",
+    "retain_without_promotion": ["dark_matter_detection","dark_energy_cosmology","quark_spin_qcd","extra_dimensions_quantum_gravity"]
+  },
+  "non_claims": {
+    "score_is_physical_metric": false,
+    "quantum_advantage": false,
+    "direct_dark_matter_device": false,
+    "dark_energy_power_source": false,
+    "extra_dimensional_device": false,
+    "economical_antimatter": false,
+    "direct_quark_computer": false,
+    "pangola_device_grade_diamond_demonstrated": false,
+    "hundred_x_saving": false,
+    "hundred_million_x_saving": false
+  },
+  "research_attribution": {
+    "human_research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_contribution": "literature verification, ordinal prioritization design, executable scoring logic, tests, frozen result and evidence-boundary documentation"
+  }
+}
