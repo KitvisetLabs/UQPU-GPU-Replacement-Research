@@ -193,7 +193,7 @@ The route should be deprioritized or redirected if reproducible evidence shows a
 
 - Biomass-derived engineered-carbon review and examples: https://doi.org/10.1016/j.esi.2025.12.004
 - HPHT synthesis/doping of nanodiamonds from hydrocarbon precursors: https://doi.org/10.1016/bs.semsem.2020.08.006
-- Diamond synthesis from carbonate under HPHT, illustrating alternative carbon-precursor chemistry: https://doi.org/10.1016/j.diamond.2025.112985
+- Diamond synthesis from carbonate under HPHT, illustrating alternative carbon-precursor chemistry: https://doi.org/10.1016/j.diamond.2025.112709
 - Diamond NV nanoscale sensors review: https://doi.org/10.1038/s42254-024-00775-4
 - Hybrid diamond photonics/quantum technology review: https://doi.org/10.1038/s44172-025-00398-2
 
