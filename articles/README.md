@@ -1,8 +1,10 @@
-# NEW DISCOVERY ARTICLES
+# VERIFIED NEW-DISCOVERY ARTICLES
 
-**Permanent discovery-article registry — INV-037**
+**Permanent verified-discovery registry — INV-037**
 
-This root-level folder is the canonical publication area for UQPU articles about potentially new findings in **physics, broader science, and mathematics**.
+This root-level folder is reserved exclusively for UQPU results that have already been established as genuinely new discoveries in **physics, broader science, or mathematics** under the project's strict discovery gate.
+
+It is **not** a notebook for ideas, hypotheses, candidate discoveries, internal-only reproductions, simulations, literature summaries, or preliminary results.
 
 ## Research Attribution
 
@@ -10,107 +12,67 @@ This root-level folder is the canonical publication area for UQPU articles about
 - Facebook: https://www.facebook.com/LoveMoneyTH
 - YouTube: https://www.youtube.com/@LoveMoneyTHOfficial
 - AI Research Agent: **OpenAI GPT-5.6 Sol**
-- AI-assisted contribution in establishing this registry: evidence-status design, article promotion rules, reproducibility contract, directory architecture, executable validation and documentation.
+- AI-assisted contribution in establishing this registry: verified-discovery governance, novelty/independent-validation rules, directory architecture, executable validation and documentation.
 
-Attribution in every future article must reflect the actual contributors and roles for that article. Do not copy an AI/model name into an article unless that model/agent actually contributed.
+Attribution in every future article must reflect the actual contributors and roles for that discovery. Do not copy an AI/model name into an article unless that model/agent actually contributed.
 
-# Permanent rule
+# Hard boundary
 
-Whenever this project develops, reproduces, validates, or identifies a materially new result in physics, science, or mathematics, create or update an article in this folder.
+A file may be created in `articles/` only after the result passes the full verified-discovery contract. Before that point, all research belongs elsewhere in the repository.
 
-The folder is deliberately prominent and permanent. New work must not be hidden only in chat history, an issue comment, a benchmark JSON, or a code commit when it materially changes the scientific/mathematical understanding of the project.
+Forbidden as standalone discovery articles here:
+
+- ideas or brainstorming;
+- `HYPOTHESIS_OR_PROPOSAL` work;
+- candidate equations or conjectures;
+- simulation-only or model-only results;
+- `PROJECT_REPRODUCED_RESULT` work without independent validation;
+- preliminary experimental observations;
+- literature reviews or summaries of discoveries made by others;
+- AI-generated equations or symbolic-regression results that have not passed the full discovery gate.
 
 ## Directory map
 
-- `physics/` — physics results, hypotheses, new mechanisms, physical laws/effective laws, particle/field/spacetime/material-physics findings.
-- `science/` — non-physics scientific findings, including chemistry, materials, energy, biology or other scientific domains relevant to UQPU.
-- `mathematics/` — theorems, proofs, counterexamples, bounds, algorithms or mathematical structures.
-- `ARTICLE_TEMPLATE.md` — mandatory minimum structure for new articles.
+- `physics/` — verified new physics discoveries only.
+- `science/` — verified new non-physics scientific discoveries only.
+- `mathematics/` — verified new mathematical discoveries only.
+- `ARTICLE_TEMPLATE.md` — mandatory structure used only after the entry gate passes.
 
-## Evidence-status ladder
+# Common verified-discovery entry contract
 
-Every article must declare exactly one current status:
+Every discovery article must document:
 
-1. `HYPOTHESIS_OR_PROPOSAL` — a novel idea, equation, mechanism or conjecture; not a discovery claim.
-2. `PROJECT_REPRODUCED_RESULT` — reproducible inside this repository/project, but not yet independently validated as a new discovery.
-3. `INDEPENDENTLY_REPRODUCED_CANDIDATE` — independent validation/reproduction exists, but novelty and broader discovery status still require careful review.
-4. `VERIFIED_DISCOVERY` — reserved for a result with a documented novelty search plus domain-appropriate independent validation. This is the only status that permits the repository to call the project result a verified new discovery.
-5. `ESTABLISHED_EXTERNAL_DISCOVERY` — an article explains or extends a discovery made elsewhere; the repository must attribute the external discoverers and must not claim ownership.
+1. precise discovery statement;
+2. explicit prior-art/novelty search and closest known work;
+3. reproducible primary evidence, code/data/experiment/proof provenance as applicable;
+4. falsifier, counterexample or discriminating alternative analysis;
+5. independent validation appropriate to the domain;
+6. limitations and exact scope;
+7. actual human/AI attribution and provenance links.
 
-## Domain-specific promotion rules
+## Physics / empirical science
 
-### Physics / empirical science
+Entry additionally requires domain-appropriate empirical evidence where the claim is empirical, uncertainty/error analysis, alternative-explanation testing, and independent reproduction or comparably strong independent evidence. Simulation, theory or internal reproduction alone cannot create an article here.
 
-`VERIFIED_DISCOVERY` requires, at minimum:
+## Mathematics
 
-- explicit prior-art/literature search;
-- reproducible methods and raw/derived evidence provenance;
-- uncertainty/error analysis;
-- a falsifier or discriminating alternative explanation;
-- independent reproduction or independent evidence capable of discriminating the claim;
-- no promotion from simulation/theory/model alone to experimental fact;
-- exact separation between project evidence and external evidence.
+Entry additionally requires a precise theorem/result statement and assumptions, a complete proof or equivalently strong formal artifact where applicable, counterexample/boundary analysis, novelty review and independent proof checking/review. Numerical examples or symbolic agreement are not proofs.
 
-### Mathematics
-
-`VERIFIED_DISCOVERY` requires, at minimum:
-
-- explicit novelty/prior-art search;
-- complete theorem statement and assumptions;
-- complete proof or machine-checkable/formally checkable proof artifact where applicable;
-- independent proof review/check or an equivalently strong verification route;
-- counterexample search and boundary/degenerate-case analysis;
-- no claim that numerical examples or symbolic fitting constitute a proof.
-
-## Required article metadata
-
-Every substantive article must identify:
-
-- title and date;
-- domain;
-- evidence status;
-- novelty statement;
-- relationship to prior work;
-- methods/proof;
-- reproducibility instructions;
-- evidence and uncertainty;
-- falsifiers/counterexamples;
-- limitations;
-- implications;
-- non-claims;
-- human and AI contribution attribution according to actual roles;
-- links to code/tests/results/PR/commit/issue where applicable.
-
-## Naming convention
-
-Recommended filename:
-
-`YYYY-MM-DD_<DOMAIN>_<SHORT_DISCOVERY_NAME>.md`
-
-Examples:
-
-- `2026-09-14_PHYSICS_candidate_spin_transport_effect.md`
-- `2026-09-14_MATHEMATICS_new_operator_bound.md`
-- `2026-09-14_SCIENCE_new_material_conversion_result.md`
-
-A filename may contain the word `candidate`; filenames should avoid `verified_discovery` until the promotion gate passes.
-
-## Discovery article workflow
+# Workflow
 
 ```text
-new observation / theorem / hypothesis
+idea / hypothesis / candidate / project-only result
+-> ordinary research folders (NOT articles/)
 -> prior-art search
--> article at correct evidence status
--> code/proof/data + tests
--> internal reproduction
--> adversarial review / counterexample search
--> independent validation when required
--> promotion or demotion of evidence status
--> permanent article + provenance links
+-> reproducibility / proof
+-> adversarial falsification / counterexample search
+-> independent validation
+-> verified genuinely new discovery
+-> create article in articles/
 ```
 
-Negative results, refutations and failed candidate discoveries may also be published because they prevent repeated dead ends and improve the research record.
+If later evidence overturns or materially narrows a published discovery, correction/retraction provenance must be preserved publicly.
 
-## Non-claims
+# Non-claims
 
-Creating an article does not make an idea a discovery. A model, simulation, AI-generated equation, numerical fit, internal reproduction, or unreviewed proof is not automatically a new physical law, scientific discovery, mathematical theorem, quantum advantage, subsystem replacement, `>=100x`, or `>=100,000,000x` result.
+The existence of this folder does not imply that UQPU currently has a verified new discovery. Batch 046 establishes publication governance only. No existing model, simulation, AI-generated equation, internal reproduction, quantum advantage, subsystem replacement, `>=100x`, `>=100,000,000x`, Data-Center-to-One-Phone result, or new physical law is promoted by creating this registry.
