@@ -1,0 +1,36 @@
+{
+  "batch": 52,
+  "gate": "QOS-AUDIT-010B1",
+  "classification": "QOS_PHASE_SYNTHESIS_PUBLIC_INTERFACE_PINNED_EXECUTION_PENDING_CI_ENVIRONMENT",
+  "candidate_fingerprint": "4364297169fe219da396c1d663680f474508a03afed93e321dc8e9d8f0bad13a",
+  "candidate_degree": 81,
+  "candidate_parity": "odd",
+  "synthesis_contract": {
+    "package": "qsppack",
+    "version": "0.3.0",
+    "entrypoint": "qsppack.solve",
+    "coefficient_basis": "nonzero odd Chebyshev coefficients low-to-high",
+    "parity": 1,
+    "method": "Newton",
+    "criteria": 1e-12,
+    "targetPre": true,
+    "typePhi": "full"
+  },
+  "public_documentation_checked_utc_date": "2026-09-15",
+  "expected_phase_count_if_converged": 82,
+  "qsp_phase_sequence_synthesized": false,
+  "independent_reconstruction_passed": false,
+  "full_channel_repaired_D23_established": false,
+  "evidence_level": "PUBLIC_IMPLEMENTATION_INTERFACE_AND_CONVENTION_CONTRACT",
+  "next_gate": "Install exactly qsppack==0.3.0 in an isolated/reproducible job, execute synthesis on the unchanged fingerprinted coefficients, freeze solver diagnostics/phases if converged, then independently reconstruct the QSP response without qsppack.get_entry.",
+  "non_claims": [
+    "real-QPU execution",
+    "quantum advantage",
+    "QSP phase synthesis success",
+    "independent QSP reconstruction",
+    "GPU/NPU/RAM/DRAM/HBM replacement",
+    ">=100x advantage",
+    ">=100000000x advantage",
+    "new physical law"
+  ]
+}
