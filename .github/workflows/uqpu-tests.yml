@@ -32,37 +32,54 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.10", "3.11", "3.12"]
-
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
-
       - name: Install prototype
         working-directory: software/uqpu-prototype
         run: python -m pip install -e .
-
       - name: Run unit and invariant tests
         working-directory: software/uqpu-prototype
         run: python -m unittest discover -s tests -v
-
       - name: Run CLI smoke test
         working-directory: software/uqpu-prototype
         run: python -m uqpu.cli compile examples/search_workload.json
-
       - name: Run synthetic finite-shot sensitivity
         if: matrix.python-version == '3.12'
         working-directory: software/uqpu-prototype
         run: python examples/run_noise_sensitivity.py
-
       - name: Run equal-budget QAOA objective-selection experiment
         if: matrix.python-version == '3.12'
         working-directory: software/uqpu-prototype
         run: python examples/run_qaoa_objective_selection.py
+
+  qos-phase-synthesis:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install prototype and pinned QSPPACK
+        working-directory: software/uqpu-prototype
+        run: |
+          python -m pip install -e .
+          python -m pip install qsppack==0.3.0
+      - name: Execute frozen degree-81 synthesis contract
+        working-directory: software/uqpu-prototype
+        run: python examples/run_qos_phase_synthesis.py --output /tmp/uqpu-qos-phase-synthesis.json
+      - name: Upload synthesis result
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch053-qos-phase-synthesis
+          path: /tmp/uqpu-qos-phase-synthesis.json
 
   reference-benchmark:
     runs-on: ubuntu-latest
@@ -70,20 +87,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
       - name: Install prototype
         working-directory: software/uqpu-prototype
         run: python -m pip install -e .
-
       - name: Install pinned benchmark dependency
         working-directory: software/uqpu-prototype
         run: python -m pip install -r benchmark-optional-requirements.txt
-
       - name: Run controlled small and medium reference benchmarks
         working-directory: software/uqpu-prototype
         run: python examples/run_reference_benchmark.py
@@ -94,22 +107,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
       - name: Install prototype and pinned independent SDK
         working-directory: software/uqpu-prototype
         run: |
           python -m pip install -e .
           python -m pip install -r verification-optional-requirements.txt
-
       - name: Test SDK readout decoding
         working-directory: software/uqpu-prototype
         run: python -m unittest discover -s tests -p test_sdk_verification.py -v
-
       - name: Cross-check QASM and synthetic routing
         working-directory: software/uqpu-prototype
         run: python examples/run_qiskit_crosscheck.py --output /tmp/uqpu-qiskit-crosscheck.json
@@ -120,66 +129,55 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
       - name: Install prototype and pinned target-noise SDKs
         working-directory: software/uqpu-prototype
         run: |
           python -m pip install -e .
           python -m pip install -r target-noise-optional-requirements.txt
-
       - name: Run 3-qubit IBM snapshot-derived noisy simulation
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_target_snapshot_noise.py --fixture triangle --output /tmp/uqpu-target-snapshot-noise.json --shots 4096
           cat /tmp/uqpu-target-snapshot-noise.json
-
       - name: Extract 3-qubit active-qubit calibration inputs
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_active_target_calibration.py --fixture triangle --output /tmp/uqpu-active-target-calibration.json
           cat /tmp/uqpu-active-target-calibration.json
-
       - name: Evaluate 3-qubit inverse quantum speed-limit requirements
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_control_limit_gap.py --calibration /tmp/uqpu-active-target-calibration.json --output /tmp/uqpu-control-limit-gap.json
           cat /tmp/uqpu-control-limit-gap.json
-
       - name: Compute 3-qubit quality-adjusted shot budget
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_quality_adjusted_snapshot_economics.py --input /tmp/uqpu-target-snapshot-noise.json --output /tmp/uqpu-quality-adjusted-shot-budget.json
           cat /tmp/uqpu-quality-adjusted-shot-budget.json
-
       - name: Run 6-qubit IBM snapshot-derived noisy simulation
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_target_snapshot_noise.py --fixture er6 --output /tmp/uqpu-target-snapshot-noise-er6.json --shots 4096
           cat /tmp/uqpu-target-snapshot-noise-er6.json
-
       - name: Extract 6-qubit active-qubit calibration inputs
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_active_target_calibration.py --fixture er6 --output /tmp/uqpu-active-target-calibration-er6.json
           cat /tmp/uqpu-active-target-calibration-er6.json
-
       - name: Evaluate 6-qubit inverse quantum speed-limit requirements
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_control_limit_gap.py --calibration /tmp/uqpu-active-target-calibration-er6.json --output /tmp/uqpu-control-limit-gap-er6.json
           cat /tmp/uqpu-control-limit-gap-er6.json
-
       - name: Compute 6-qubit quality-adjusted shot budget
         working-directory: software/uqpu-prototype
         run: |
           python examples/run_quality_adjusted_snapshot_economics.py --input /tmp/uqpu-target-snapshot-noise-er6.json --output /tmp/uqpu-quality-adjusted-shot-budget-er6.json
           cat /tmp/uqpu-quality-adjusted-shot-budget-er6.json
-
       - name: Compare mean-energy and CVaR circuits on equal-shot IBM snapshot
         working-directory: software/uqpu-prototype
         run: python examples/run_qaoa_objective_target_compare.py
