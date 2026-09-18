@@ -67,19 +67,29 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Install prototype and pinned QSPPACK
+      - name: Install prototype and pinned QSPPACK runtime closure
         working-directory: software/uqpu-prototype
         run: |
           python -m pip install -e .
-          python -m pip install qsppack==0.3.0
+          python -m pip install qsppack==0.3.0 sympy==1.14.0
+          python -m pip check
+          python -c "import qsppack, sympy; print('qsppack import OK; sympy=' + sympy.__version__)"
       - name: Execute frozen degree-81 synthesis contract
+        id: synthesis
+        continue-on-error: true
         working-directory: software/uqpu-prototype
         run: python examples/run_qos_phase_synthesis.py --output /tmp/uqpu-qos-phase-synthesis.json
       - name: Upload synthesis result
+        if: always() && hashFiles('/tmp/uqpu-qos-phase-synthesis.json') != ''
         uses: actions/upload-artifact@v4
         with:
           name: batch053-qos-phase-synthesis
           path: /tmp/uqpu-qos-phase-synthesis.json
+      - name: Enforce synthesis execution gate
+        if: steps.synthesis.outcome != 'success'
+        run: |
+          echo "Pinned synthesis execution failed; preserve logs/result as research evidence."
+          exit 1
 
   reference-benchmark:
     runs-on: ubuntu-latest
