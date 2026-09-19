@@ -1,0 +1,38 @@
+{
+  "batch": 53,
+  "gate": "QOS-AUDIT-010B2",
+  "evidence_level": "PINNED_PUBLIC_NUMERICAL_PHASE_SYNTHESIS_EXCEPTION",
+  "source_ci_run": 423,
+  "source_ci_job": 105510703761,
+  "runtime": {
+    "python": "3.12.14",
+    "qsppack": "0.3.0",
+    "sympy": "1.14.0"
+  },
+  "contract": {
+    "coefficient_fingerprint": "4364297169fe219da396c1d663680f474508a03afed93e321dc8e9d8f0bad13a",
+    "criteria": 1e-12,
+    "method": "Newton",
+    "package": "qsppack",
+    "parity": 1,
+    "phase_type": "full",
+    "target_pre": true,
+    "version": "0.3.0"
+  },
+  "observed_status": "SYNTHESIS_EXCEPTION",
+  "exception_type": "ValueError",
+  "exception_message": "could not broadcast input array from shape (41,) into shape (42,)",
+  "qsp_phase_sequence_synthesized": false,
+  "independent_reconstruction_passed": false,
+  "interpretation": "The pinned public implementation executed after its runtime dependency closure was satisfied, but raised a shape exception before producing phases. This is an implementation/interface execution failure, not evidence that the certified degree-81 polynomial is mathematically unrealizable by QSP.",
+  "non_claims": [
+    "real-QPU execution",
+    "quantum advantage",
+    "theorem-certified QSP/QSVT correctness",
+    "GPU/NPU/RAM/DRAM/HBM replacement",
+    ">=100x speedup",
+    ">=100000000x speedup",
+    "measured economic advantage",
+    "new physical law"
+  ]
+}

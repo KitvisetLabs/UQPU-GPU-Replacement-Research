@@ -1,11 +1,10 @@
 from __future__ import annotations
 
-import hashlib
 import importlib.metadata
-import json
 from dataclasses import dataclass
 
-from .qos_d23_explicit_polynomial_candidate import DEGREE, ODD_CHEBYSHEV_COEFFICIENTS
+from .qos_d23_explicit_polynomial_candidate import ODD_CHEBYSHEV_COEFFICIENTS
+from .qos_d23_exact_bernstein_certificate import coefficient_fingerprint
 
 EXPECTED_FINGERPRINT = "4364297169fe219da396c1d663680f474508a03afed93e321dc8e9d8f0bad13a"
 PINNED_PACKAGE = "qsppack"
@@ -15,18 +14,6 @@ PINNED_PARITY = 1
 PINNED_TARGET_PRE = True
 PINNED_PHASE_TYPE = "full"
 PINNED_CRITERIA = 1e-12
-
-
-def coefficient_fingerprint() -> str:
-    payload = json.dumps(
-        {
-            "degree": DEGREE,
-            "odd_chebyshev_coefficients": [float.hex(x) for x in ODD_CHEBYSHEV_COEFFICIENTS],
-        },
-        sort_keys=True,
-        separators=(",", ":"),
-    ).encode()
-    return hashlib.sha256(payload).hexdigest()
 
 
 @dataclass(frozen=True)
@@ -66,6 +53,15 @@ def synthesize_with_pinned_qsppack() -> dict[str, object]:
     hardware result.
     """
     contract = frozen_contract()
+    runtime_fingerprint = coefficient_fingerprint()
+    if runtime_fingerprint != EXPECTED_FINGERPRINT:
+        return {
+            "status": "COEFFICIENT_FINGERPRINT_MISMATCH",
+            "runtime_coefficient_fingerprint": runtime_fingerprint,
+            "contract": contract.__dict__,
+            "qsp_phase_sequence_synthesized": False,
+            "independent_reconstruction_passed": False,
+        }
     try:
         installed = importlib.metadata.version(PINNED_PACKAGE)
     except importlib.metadata.PackageNotFoundError:
@@ -97,7 +93,7 @@ def synthesize_with_pinned_qsppack() -> dict[str, object]:
     }
     try:
         phases, info = solve(coefficients, PINNED_PARITY, options)
-    except Exception as exc:  # preserve solver failure as research evidence
+    except Exception as exc:
         return {
             "status": "SYNTHESIS_EXCEPTION",
             "exception_type": type(exc).__name__,
