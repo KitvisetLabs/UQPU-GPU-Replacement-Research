@@ -2,23 +2,33 @@
 
 ## Gate
 
-`QOS-AUDIT-010B2` executes the Batch-052 frozen public interface against the exact Batch-051 coefficient fingerprint in CI.
+`QOS-AUDIT-010B2` executes the Batch-052 frozen public interface against the exact Batch-051 coefficient fingerprint.
 
-The CI job installs `qsppack==0.3.0` in Python 3.12 and executes `synthesize_with_pinned_qsppack()` with the frozen Newton/parity/target/convention settings. The emitted JSON is uploaded as the `batch053-qos-phase-synthesis` workflow artifact whether numerical synthesis converges or not. Solver non-convergence is preserved as research evidence; only coefficient-contract corruption fails the runner.
+The CI job installs `qsppack==0.3.0` plus the explicitly pinned missing runtime dependency `sympy==1.14.0`, checks the environment with `pip check`, imports the package, and executes `synthesize_with_pinned_qsppack()` with the frozen Newton/parity/target/convention settings.
+
+## Observed result
+
+CI run 423 reached the solver after the runtime dependency closure passed. The pinned call raised:
+
+`ValueError: could not broadcast input array from shape (41,) into shape (42,)`
+
+No phase vector was produced. This is preserved in `benchmarks/results/batch053-qos-phase-synthesis-failure.json`.
+
+A separate harness defect was also found: Batch 052 had reimplemented the coefficient fingerprint with a different serialization than Batch 051, so the reported runtime fingerprint was not comparable to the frozen certificate fingerprint. This branch now imports the Batch-051 `coefficient_fingerprint()` directly and fails closed on a real mismatch.
 
 ## Public implementation evidence
 
-QSPPACK's public solver documentation specifies that `solve(coef, parity, opts)` accepts the nonzero definite-parity Chebyshev coefficients ordered low-to-high and reports phase factors plus `converged`, `value`, `iter`, parity, target and phase-type metadata. Batch 052 pinned that interface to version 0.3.0. Batch 053 turns the previously pending execution into a repository CI gate.
+The upstream QSPPACK examples pass only the definite-parity Chebyshev subsequence to the solver (for example, `coef = coef(parity+1:2:end)` before `QSP_solver`). Therefore the observed 41-to-42 broadcast exception is not, by itself, evidence that a full 82-entry Chebyshev vector should be supplied. The next audit must locate the exact Python 0.3.0 shape assumption or test a separately pinned solver/method without silently changing the polynomial contract.
 
 ## Evidence level
 
-`PINNED_PUBLIC_NUMERICAL_PHASE_SYNTHESIS_EXECUTION` if the CI artifact reports `SYNTHESIS_CONVERGED`; otherwise `PINNED_PUBLIC_NUMERICAL_PHASE_SYNTHESIS_FAILURE` with the exact status/exception retained.
+`PINNED_PUBLIC_NUMERICAL_PHASE_SYNTHESIS_EXCEPTION`.
 
-Neither outcome is an independent QSP reconstruction or a theorem proof.
+This is implementation/interface execution evidence only. It is not evidence that the Batch-051 polynomial is mathematically unrealizable by QSP, and it is not an independent QSP reconstruction or theorem proof.
 
 ## Acceptance boundary
 
-A converged phase vector may be frozen only after the CI artifact is inspected. Independent reconstruction must use repository-owned matrix-product code rather than QSPPACK's `get_entry`; that is a separate gate.
+A phase vector may be frozen only after a pinned solver returns convergence for the exact Batch-051 fingerprint. Independent reconstruction must then use repository-owned matrix-product code rather than the synthesis package's response helper.
 
 ## Non-claims
 
@@ -26,6 +36,4 @@ This batch does not claim real-QPU execution, quantum advantage, theorem-certifi
 
 ## Next gate
 
-If synthesis converges: `QOS-AUDIT-010B3` freezes the phase vector and independently reconstructs the QSP response with an explicit convention map to the Batch-036 interface.
-
-If synthesis fails: preserve the failure and audit feasibility margin/solver-method sensitivity without weakening the Batch-051 boundedness or target-error requirements.
+`QOS-AUDIT-010B2A`: reproduce and isolate the QSPPACK 0.3.0 41-to-42 shape exception against a minimal odd-parity fixture and the degree-81 candidate, inspect the pinned implementation's expected dimensions, and compare at least one separately pinned synthesis method/implementation if necessary. Preserve all failures; do not weaken Batch-051 boundedness or target-error requirements.
