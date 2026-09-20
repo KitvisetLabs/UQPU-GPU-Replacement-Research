@@ -1,0 +1,30 @@
+{
+  "batch": 54,
+  "gate": "QOS-AUDIT-010B2A",
+  "input_main_sha": "930624a5ce6ab95e4b78af068e00209ae1898464",
+  "input_batch053_status": "SYNTHESIS_EXCEPTION",
+  "input_exception": "could not broadcast input array from shape (41,) into shape (42,)",
+  "coefficient_fingerprint": "4364297169fe219da396c1d663680f474508a03afed93e321dc8e9d8f0bad13a",
+  "classification": "TOOL_BLOCKED_REPRODUCED",
+  "evidence_level": "PINNED_PUBLIC_NUMERICAL_PHASE_SYNTHESIS_EXCEPTION_PLUS_FAIL_CLOSED_DECISION_CONTRACT",
+  "phase_vector_usable": false,
+  "independent_reconstruction_allowed": false,
+  "mathematical_infeasibility_claim_allowed": false,
+  "next_gate": "QOS-AUDIT-010B2A: minimal odd-parity Jacobian contract or independent maintained solver",
+  "literature_context": [
+    "QSPPACK documents optimization and direct phase-factor solvers for definite-parity bounded polynomials.",
+    "Dong et al. 2023 describes a robust Newton method for symmetric QSP; the observed Python 0.3.0 shape exception is therefore treated as an implementation/interface blocker rather than a mathematical refutation.",
+    "Ni and Ying 2024 describes Half-Cholesky and fast fixed-point phase-factor methods as independent algorithmic alternatives for future audit."
+  ],
+  "non_claims": [
+    "real-QPU execution",
+    "quantum advantage",
+    "theorem-certified QSP/QSVT correctness",
+    "mathematical QSP infeasibility",
+    "GPU/NPU/RAM/DRAM/HBM replacement",
+    ">=100x speedup",
+    ">=100000000x speedup",
+    "measured economic advantage",
+    "new physical law"
+  ]
+}
