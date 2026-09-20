@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import importlib.metadata
 import json
+import math
 from dataclasses import dataclass
 
 from .qos_d23_explicit_polynomial_candidate import DEGREE, ODD_CHEBYSHEV_COEFFICIENTS
@@ -15,6 +16,18 @@ PINNED_PARITY = 1
 PINNED_TARGET_PRE = True
 PINNED_PHASE_TYPE = "full"
 PINNED_CRITERIA = 1e-12
+EXPECTED_PHASE_COUNT = DEGREE + 1
+
+
+def _dependency_versions() -> dict[str, str | None]:
+    """Return exact package provenance without importing heavy dependencies."""
+    versions: dict[str, str | None] = {}
+    for package in ("qsppack", "numpy", "scipy", "sympy"):
+        try:
+            versions[package] = importlib.metadata.version(package)
+        except importlib.metadata.PackageNotFoundError:
+            versions[package] = None
+    return versions
 
 
 def coefficient_fingerprint() -> str:
@@ -66,12 +79,13 @@ def synthesize_with_pinned_qsppack() -> dict[str, object]:
     hardware result.
     """
     contract = frozen_contract()
-    try:
-        installed = importlib.metadata.version(PINNED_PACKAGE)
-    except importlib.metadata.PackageNotFoundError:
+    dependency_versions = _dependency_versions()
+    installed = dependency_versions[PINNED_PACKAGE]
+    if installed is None:
         return {
             "status": "DEPENDENCY_NOT_INSTALLED",
             "contract": contract.__dict__,
+            "dependency_versions": dependency_versions,
             "qsp_phase_sequence_synthesized": False,
             "independent_reconstruction_passed": False,
         }
@@ -80,12 +94,24 @@ def synthesize_with_pinned_qsppack() -> dict[str, object]:
             "status": "PINNED_VERSION_MISMATCH",
             "installed_version": installed,
             "contract": contract.__dict__,
+            "dependency_versions": dependency_versions,
             "qsp_phase_sequence_synthesized": False,
             "independent_reconstruction_passed": False,
         }
 
-    import numpy as np
-    from qsppack import solve
+    try:
+        import numpy as np
+        from qsppack import solve
+    except Exception as exc:
+        return {
+            "status": "DEPENDENCY_IMPORT_EXCEPTION",
+            "exception_type": type(exc).__name__,
+            "exception_message": str(exc),
+            "contract": contract.__dict__,
+            "dependency_versions": dependency_versions,
+            "qsp_phase_sequence_synthesized": False,
+            "independent_reconstruction_passed": False,
+        }
 
     coefficients = np.asarray(ODD_CHEBYSHEV_COEFFICIENTS, dtype=float)
     options = {
@@ -103,24 +129,35 @@ def synthesize_with_pinned_qsppack() -> dict[str, object]:
             "exception_type": type(exc).__name__,
             "exception_message": str(exc),
             "contract": contract.__dict__,
+            "dependency_versions": dependency_versions,
             "qsp_phase_sequence_synthesized": False,
             "independent_reconstruction_passed": False,
         }
 
-    converged = bool(info.get("converged", False))
+    # QSPPACK 0.3.0 documents and returns ``value`` but no ``converged`` key.
+    # Therefore convergence must be derived from the pinned numeric criterion,
+    # while also requiring the degree+1 full phase count and finite phases.
+    value = float(info.get("value", float("nan")))
+    phase_count = int(len(phases))
+    finite_phases = all(math.isfinite(float(x)) for x in phases)
+    criterion_met = math.isfinite(value) and value <= PINNED_CRITERIA
+    converged = criterion_met and phase_count == EXPECTED_PHASE_COUNT and finite_phases
     return {
         "status": "SYNTHESIS_CONVERGED" if converged else "SYNTHESIS_NOT_CONVERGED",
         "contract": contract.__dict__,
+        "dependency_versions": dependency_versions,
         "solver_info": {
             "converged": converged,
-            "value": float(info.get("value", float("nan"))),
+            "criterion_met": criterion_met,
+            "finite_phases": finite_phases,
+            "value": value,
             "iter": int(info.get("iter", -1)),
             "method": str(info.get("method", PINNED_METHOD)),
             "parity": int(info.get("parity", PINNED_PARITY)),
             "targetPre": bool(info.get("targetPre", PINNED_TARGET_PRE)),
             "typePhi": str(info.get("typePhi", PINNED_PHASE_TYPE)),
         },
-        "phase_count": int(len(phases)),
+        "phase_count": phase_count,
         "phases": [float(x) for x in phases] if converged else [],
         "qsp_phase_sequence_synthesized": converged,
         "independent_reconstruction_passed": False,

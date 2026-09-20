@@ -288,3 +288,16 @@ Batch 013 Qiskit parsing/statevector verification agrees with Batch 012 to <1.4e
 **Missing:** target calibration snapshot, routed physical circuit, readout assignment data, one-/two-qubit error/coherence assumptions, drift timestamp and mitigation cost.
 **Unlock criteria:** reproducible target-aware simulation tied to an identifiable backend calibration snapshot; then an authorized bounded QPU run with job/result/cost provenance.
 **Evidence boundary:** synthetic sensitivity cannot be promoted to REAL_QPU or provider performance evidence.
+
+
+## RG-032 — Degree-81 odd-parity QSP phase synthesis
+**Status:** TOOL_BLOCKED / NEGATIVE_RESULT_REPRODUCED
+**Objective:** Synthesize and independently reconstruct a full 82-phase QSP response for the frozen degree-81 polynomial fingerprint `4364297169fe219da396c1d663680f474508a03afed93e321dc8e9d8f0bad13a`.
+**Evidence:** In an isolated Python 3.12.14 environment, pinned `qsppack==0.3.0` Newton execution raises `ValueError: could not broadcast input array from shape (41,) into shape (42,)`. Source inspection identifies a 41-versus-42 derivative/Jacobian allocation mismatch. QSPPACK also imports undeclared `sympy`; the repository now pins it explicitly.
+**Why still open:** this is an implementation failure, not a proof of mathematical infeasibility. No phase vector exists to reconstruct or lower.
+**Best current alternative:** preserve the exact coefficients and contract while testing a minimal odd-parity Jacobian correction or an independent maintained implementation. FPI at 2,000 iterations returned error about 5.5491 and LBFGS raised a separate exception, so neither is accepted.
+**Unlock criteria:** a declared implementation returns 82 finite phases meeting its `1e-12` residual criterion; repository-owned 2x2 products independently reproduce the frozen polynomial within a predeclared tolerance; convention mapping is explicit.
+**Required tool/data:** versioned synthesis source, deterministic environment, coefficient fingerprint, phase list, solver diagnostics and independent reconstruction grid.
+**Dependencies:** QOS-AUDIT-010B3, Lane A/F; B/C/D/G remain downstream.
+**Next experiment:** expose the odd-parity Jacobian dimensional contract on a small known polynomial, then test the smallest auditable correction or independent solver.
+**Review trigger:** first independently reconstructable phase vector or a rigorous mathematical infeasibility certificate.

@@ -439,3 +439,12 @@
 ## 2026-09-09 — D095: Decode routed measurement layout before comparing quality
 **Decision:** Reconstruct classical output order from explicit terminal measurement maps and reject partial/dynamic layouts in this bounded verifier. Label synthetic routing separately from provider calibration.
 **Reason:** Routing changes qubit placement and can inflate gate count; a raw physical basis index is not automatically the original variable assignment.
+
+
+## 2026-09-20 — D096: Treat pinned phase-solver exceptions as tool blockers, not mathematical refutations
+**Decision:** Preserve the Batch-053 QSPPACK 0.3.0 Newton shape exception as a provenance-bearing negative software result. Do not change the frozen polynomial, weaken the residual threshold, or promote alternate-method output merely to obtain phases.
+**Reason:** A third-party implementation mismatch does not establish that the QSP phase problem is infeasible, and a returned vector without criterion and independent reconstruction is not a valid synthesis certificate.
+
+## 2026-09-20 — D097: Derive QSPPACK 0.3.0 convergence from returned residual plus structural checks
+**Decision:** For the pinned interface, accept synthesis only when `value <= 1e-12`, exactly 82 finite full phases are returned, and subsequent repository-owned reconstruction passes. Do not depend on a nonexistent `converged` result key.
+**Reason:** QSPPACK 0.3.0 returns `value`, `iter`, `time`, `parity`, `targetPre`, and `typePhi`; inventing a missing flag would reject or accept results for the wrong reason.
