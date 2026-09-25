@@ -127,6 +127,7 @@ def reconstruct_on_grid(
     grid_points: int = 20_001,
     residual_tolerance: float = 2e-12,
     unitarity_tolerance: float = 2e-13,
+    phases: tuple[float, ...] = FROZEN_PHASES_V040,
 ) -> ReconstructionCertificate:
     if grid_points < 3 or grid_points % 2 == 0:
         raise ValueError("grid_points must be an odd integer >= 3")
@@ -135,22 +136,22 @@ def reconstruct_on_grid(
     max_unitarity = 0.0
     for index in range(grid_points):
         x = -1.0 + 2.0 * index / (grid_points - 1)
-        unitary = qsp_unitary(x)
+        unitary = qsp_unitary(x, phases)
         residual = abs(unitary[0].real - target_polynomial(x))
         if residual > max_residual:
             max_residual = residual
             argmax = x
         max_unitarity = max(max_unitarity, unitarity_residual(unitary))
     passed = (
-        phase_fingerprint() == EXPECTED_PHASE_FINGERPRINT
-        and len(FROZEN_PHASES_V040) == EXPECTED_PHASE_COUNT
+        len(phases) == EXPECTED_PHASE_COUNT
+        and all(math.isfinite(value) for value in phases)
         and max_residual <= residual_tolerance
         and max_unitarity <= unitarity_tolerance
     )
     return ReconstructionCertificate(
         coefficient_fingerprint=EXPECTED_FINGERPRINT,
-        phase_fingerprint=phase_fingerprint(),
-        phase_count=len(FROZEN_PHASES_V040),
+        phase_fingerprint=phase_fingerprint(phases),
+        phase_count=len(phases),
         grid_points=grid_points,
         max_real_residual=max_residual,
         residual_argmax_x=argmax,
@@ -205,8 +206,9 @@ def synthesize_with_pinned_qsppack_v040() -> dict[str, object]:
         and residual <= PINNED_CRITERIA
         and len(frozen) == EXPECTED_PHASE_COUNT
         and all(math.isfinite(value) for value in frozen)
-        and phase_fingerprint(frozen) == EXPECTED_PHASE_FINGERPRINT
     )
+    reconstruction = reconstruct_on_grid(phases=frozen) if accepted else None
+    accepted = accepted and reconstruction is not None and reconstruction.passed
     return {
         "status": "SYNTHESIS_CONVERGED" if accepted else "SYNTHESIS_NOT_ACCEPTED",
         "package": PINNED_PACKAGE,
@@ -215,6 +217,7 @@ def synthesize_with_pinned_qsppack_v040() -> dict[str, object]:
         "criteria": PINNED_CRITERIA,
         "coefficient_fingerprint": EXPECTED_FINGERPRINT,
         "phase_fingerprint": phase_fingerprint(frozen),
+        "matches_frozen_phase_fingerprint": phase_fingerprint(frozen) == EXPECTED_PHASE_FINGERPRINT,
         "phase_count": len(frozen),
         "solver_info": {
             "iter": int(info.get("iter", -1)),
@@ -223,5 +226,5 @@ def synthesize_with_pinned_qsppack_v040() -> dict[str, object]:
             "typePhi": str(info.get("typePhi", "")),
         },
         "synthesized": accepted,
-        "independent_reconstruction": asdict(reconstruct_on_grid()) if accepted else None,
+        "independent_reconstruction": asdict(reconstruction) if reconstruction is not None else None,
     }

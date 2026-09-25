@@ -452,8 +452,10 @@
 ## 2026-09-25 — D098: Preserve the failing solver as a negative control while qualifying the corrected release separately
 **Decision:** Keep pinned QSPPACK 0.3.0 and its odd-parity dimension failure in a
 dedicated negative-control CI job. Qualify 0.4.0 only through a separate full
-dependency lock, unchanged coefficient fingerprint, exact phase fingerprint,
-declared solver residual and repository-owned 2x2 reconstruction.
+dependency lock, unchanged coefficient fingerprint, recorded phase fingerprint,
+declared solver residual and repository-owned 2x2 reconstruction. Byte-identical
+floating-point phases across platforms are not required when each returned vector
+is finite, structurally valid, fingerprinted and independently reconstructed.
 
 **Reason:** A newer dependency may fix an implementation defect without erasing
 the earlier reproducible result. Separation prevents silent dependency drift and

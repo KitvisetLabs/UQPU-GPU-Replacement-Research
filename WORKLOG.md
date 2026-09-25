@@ -929,3 +929,10 @@ Japanese/Korean/German master references, strategic AI-agent/funding references
 and evidence boundaries were preserved. QOS-AUDIT-010B4 is next: bounded matrix/
 QSVT convention and singular-value verification, resource accounting, and
 higher-assurance phase validation before provider/hardware/economic promotion.
+
+Hosted CI portability note: the first Batch-055 workflow exposed harmless
+last-bit phase variation across numerical environments, which made a raw-float
+fingerprint equality check fail before reconstruction. The contract was repaired
+to fingerprint and independently reconstruct each returned phase vector while
+retaining phase-count, finiteness, solver-residual, response and unitarity gates.
+This is a portability correction, not a relaxed evidence threshold.

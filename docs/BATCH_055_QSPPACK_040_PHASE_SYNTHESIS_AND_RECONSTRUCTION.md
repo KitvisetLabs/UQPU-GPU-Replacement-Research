@@ -28,8 +28,8 @@ execute a provider job, or establish hardware or economic advantage.
 
 ## Implementation and reproducibility
 
-- `uqpu/qos_d23_phase_reconstruction_v040.py`: frozen phases, fingerprinting,
-  strict optional synthesis and independent 2x2 reconstruction.
+- `uqpu/qos_d23_phase_reconstruction_v040.py`: frozen phases, per-run
+  fingerprinting, strict optional synthesis and independent 2x2 reconstruction.
 - `tests/test_qos_d23_phase_reconstruction_v040.py`: structural, pointwise,
   grid and optional solver regression tests.
 - `qsp-synthesis-v040-optional-requirements.txt`: full isolated dependency lock.
@@ -96,3 +96,13 @@ independently verify transformed singular values and exact convention mapping,
 record circuit/query/ancilla/depth and host-I/O costs, and add higher-assurance
 phase validation through a second implementation or interval/error certificate.
 Provider lowering, device/factory response and economics remain downstream.
+
+## CI portability correction
+
+The first hosted run showed that raw Newton phase floats can differ at the last
+bits across numerical environments, so requiring the hosted phase SHA-256 to
+equal the locally frozen vector was not a valid portability criterion. The gate
+remains fail-closed but now fingerprints every returned vector and independently
+reconstructs that exact vector. Phase count, finiteness, package residual and
+the unchanged response/unitarity tolerances remain mandatory; no evidence
+threshold was weakened.
