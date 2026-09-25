@@ -1,0 +1,18 @@
+{
+  "contract_id": "QOS-AUDIT-010B3",
+  "date": "2026-09-25",
+  "input_coefficient_fingerprint": "4364297169fe219da396c1d663680f474508a03afed93e321dc8e9d8f0bad13a",
+  "phase_fingerprint": "268d1809a8d88309df001d2c63b1f78ba5101d2b9e254c304b014ba4e8397445",
+  "phase_count": 82,
+  "status": "NUMERICAL_RECONSTRUCTION_PASSED",
+  "evidence_label": "SIMULATION",
+  "downstream_interfaces": {
+    "A": "phase vector available for bounded QSVT convention-mapping experiment",
+    "B": "provider lowering remains closed until QSVT fixture and resource ledger pass",
+    "C": "no readable-memory or state-service equivalence follows",
+    "D": "no device requirement accepted before circuit resource accounting",
+    "F": "numerical residual certificate accepted; advantage/economics remain untested",
+    "G": "no process-window or factory requirement accepted before D resource contract"
+  },
+  "next_gate": "QOS-AUDIT-010B4"
+}

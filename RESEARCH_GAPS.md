@@ -301,3 +301,24 @@ Batch 013 Qiskit parsing/statevector verification agrees with Batch 012 to <1.4e
 **Dependencies:** QOS-AUDIT-010B3, Lane A/F; B/C/D/G remain downstream.
 **Next experiment:** expose the odd-parity Jacobian dimensional contract on a small known polynomial, then test the smallest auditable correction or independent solver.
 **Review trigger:** first independently reconstructable phase vector or a rigorous mathematical infeasibility certificate.
+
+## RG-032 status update — numerical phase/reconstruction gate passed
+**Status:** PARTIALLY_UNLOCKED / SIMULATION
+**Date:** 2026-09-25
+
+Pinned `qsppack==0.4.0` returned 82 finite phases for the unchanged degree-81
+coefficient fingerprint, reporting Newton residual `2.6281060661048627e-15`.
+A repository-owned 2x2 product independently reconstructed the response on
+20,001 grid points with maximum real residual `1.2667644710973036e-13` and
+maximum unitarity residual `1.554312234475219e-14`. The phase fingerprint is
+`268d1809a8d88309df001d2c63b1f78ba5101d2b9e254c304b014ba4e8397445`.
+
+**Why still open:** finite-grid numerical agreement is not a formal uniform
+error certificate, independent phase-solver agreement, QSVT workload result,
+provider execution or economic evidence. The `0.3.0` failure remains a retained
+negative control, not evidence against mathematical feasibility.
+
+**Next experiment / unlock:** QOS-AUDIT-010B4 must map the phases into a bounded
+matrix/QSVT fixture, independently verify transformed singular values and
+conventions, account for resources/I/O, and obtain second-implementation or
+interval/error assurance before provider or hardware promotion.

@@ -897,3 +897,35 @@ Priority #1 / Lane A/F: executed the exact Batch-052 `qsppack==0.3.0` Newton con
 Lanes B/C/D/E/G/H were explicitly reviewed and remain gated: no provider job, memory equivalence, hardware/resource claim, material/bio-oil/fusion result, factory response, or economic win was promoted. FND-001–006 and EQN-001–006 were reviewed with no new physical-law claim. Fresh literature surveillance found no material post-Batch-052 primary result changing the active experiment.
 
 Priority #1, all eight lanes A–H, INV-025–035, multilingual Thai/English/Chinese/Japanese/Korean/German master references, strategic AI-agent/funding references, and evidence boundaries were preserved. The next gate is QOS-AUDIT-010B3: test the odd-parity Jacobian contract, obtain a valid phase vector from an auditable corrected/independent implementation, and reconstruct it independently before QSVT/resource promotion.
+
+### 2026-09-25 — Eight-Lane Research Batch 055
+
+Started from canonical commit `7f3ebbca3ec6a690109815b24ad0c43a5b8b9ebe`
+and successful GitHub Actions run 35569917677. Priority #1 / Lane A/F advanced
+the unchanged degree-81 QSP contract from a reproduced QSPPACK 0.3.0 tool
+failure to an independently checked numerical phase artifact. Pinned 0.4.0
+returned 82 finite phases in 9 Newton iterations with reported residual
+`2.6281060661048627e-15`; repository-owned 2x2 multiplication passed a 20,001-
+point reconstruction with maximum real residual `1.2667644710973036e-13` and
+maximum unitarity residual `1.554312234475219e-14`.
+
+The 0.3.0 failure remains as a negative CI control. Added a separate 0.4.0 lock,
+strict phase/coefficient fingerprints, reconstruction code and tests, raw result,
+integration gate, dated software watch and dedicated CI job. Local core
+validation passed 371 tests with 6 optional skips; isolated 0.4.0 validation
+passed 5 tests. No paid job was submitted.
+
+All lanes were explicitly inspected. B remains provider-blocked pending QSVT
+semantics; C makes no memory/storage equivalence; D/G await circuit/resource
+requirements; E reviewed Pangola, BIO-001 and FUS-001 without new measurements;
+F retains simulation-only provenance and no economic claim; H published the
+stage-gated positive/negative software record. FND-001–006 and EQN-001–006 were
+reviewed without a new-law claim. The literature/software watch found QSPPACK
+0.4.0 materially relevant but no newer primary equation/theorem-discovery result
+that changed the active experiment.
+
+Priority #1, all eight lanes A–H, INV-025–035, multilingual Thai/English/Chinese/
+Japanese/Korean/German master references, strategic AI-agent/funding references
+and evidence boundaries were preserved. QOS-AUDIT-010B4 is next: bounded matrix/
+QSVT convention and singular-value verification, resource accounting, and
+higher-assurance phase validation before provider/hardware/economic promotion.

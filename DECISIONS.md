@@ -448,3 +448,22 @@
 ## 2026-09-20 — D097: Derive QSPPACK 0.3.0 convergence from returned residual plus structural checks
 **Decision:** For the pinned interface, accept synthesis only when `value <= 1e-12`, exactly 82 finite full phases are returned, and subsequent repository-owned reconstruction passes. Do not depend on a nonexistent `converged` result key.
 **Reason:** QSPPACK 0.3.0 returns `value`, `iter`, `time`, `parity`, `targetPre`, and `typePhi`; inventing a missing flag would reject or accept results for the wrong reason.
+
+## 2026-09-25 — D098: Preserve the failing solver as a negative control while qualifying the corrected release separately
+**Decision:** Keep pinned QSPPACK 0.3.0 and its odd-parity dimension failure in a
+dedicated negative-control CI job. Qualify 0.4.0 only through a separate full
+dependency lock, unchanged coefficient fingerprint, exact phase fingerprint,
+declared solver residual and repository-owned 2x2 reconstruction.
+
+**Reason:** A newer dependency may fix an implementation defect without erasing
+the earlier reproducible result. Separation prevents silent dependency drift and
+lets the project distinguish tool repair from a changed mathematical contract.
+
+## 2026-09-25 — D099: Finite-grid phase reconstruction unlocks QSVT testing, not hardware or advantage claims
+**Decision:** Classify the 82-phase result as `SIMULATION` and permit it to enter
+QOS-AUDIT-010B4 bounded matrix/QSVT testing. Do not promote it to formal uniform
+approximation, provider execution, device requirement, replacement capability or
+economic evidence until the corresponding downstream gates pass.
+
+**Reason:** Numerical response and unitarity checks establish a useful compiler
+artifact, but they do not themselves demonstrate accepted useful-task output.
