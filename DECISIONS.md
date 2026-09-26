@@ -469,3 +469,20 @@ economic evidence until the corresponding downstream gates pass.
 
 **Reason:** Numerical response and unitarity checks establish a useful compiler
 artifact, but they do not themselves demonstrate accepted useful-task output.
+
+## 2026-09-26 — D100: Require matrix-level convention agreement before circuit lowering
+**Decision:** Accept the frozen phase sequence for downstream circuit work only
+after a non-diagonal bounded matrix block encoding reproduces the spectral
+polynomial transform and preserves unitarity within declared tolerances.
+
+**Reason:** Scalar response agreement alone does not expose block ordering,
+ancilla-phase convention or projected-subspace mistakes.
+
+## 2026-09-26 — D101: Treat query counts as compiler resources, not hardware or economic measurements
+**Decision:** Record the 81 signal queries, 82 phase rotations, ancilla count and
+dense-fixture bytes as `MODEL_ONLY` resource fields. Do not convert them into
+physical gate depth, energy, device requirements or cost until an explicit
+target-aware circuit and measurement path exists.
+
+**Reason:** Oracle/query complexity omits block-encoding implementation,
+routing, control, error correction/mitigation, shots, host work and I/O.

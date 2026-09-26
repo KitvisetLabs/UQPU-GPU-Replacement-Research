@@ -936,3 +936,36 @@ fingerprint equality check fail before reconstruction. The contract was repaired
 to fingerprint and independently reconstruct each returned phase vector while
 retaining phase-count, finiteness, solver-residual, response and unitarity gates.
 This is a portability correction, not a relaxed evidence threshold.
+
+### 2026-09-26 — Eight-Lane Research Batch 056
+
+Started from canonical commit `6e97fe31e190055332bc44c3e7299a86f7802ffc`
+and successful GitHub Actions run 36082931611. Priority #1 / Lane A/F completed
+QOS-AUDIT-010B4 on a constructed non-diagonal Hermitian 2x2 contraction. The
+repository-owned 4x4 block encoding and 82-phase transform agree with independent
+spectral polynomial calculus to `5.440092820663267e-15`; transformed unitarity
+residual is `1.021405182655144e-14`. A phase-perturbation negative control fails
+as required.
+
+A stable integration contract and resource ledger record 81 block-encoding
+queries, 82 phase rotations, one signal ancilla and bounded dense payload sizes.
+These are SIMULATION/MODEL_ONLY fields: no circuit decomposition, shots,
+provider job, energy, hardware requirement, accepted workload, cost ratio or
+advantage is claimed. RG-033 now isolates the independent-SDK/circuit gate.
+Local validation passed 375 tests with 6 optional skips; the dedicated matrix
+fixture suite passed all 4 positive/negative contract tests, and the fresh
+isolated QSPPACK 0.4.0 environment passed all 9 combined tests.
+
+All A–H lanes were inspected: B has no provider execution; C records state/I/O
+without memory equivalence; D/G await target-aware gates and depth; E reviewed
+Pangola, BIO-001, FUS-001 and cooling with no new measurement; F enforces the
+resource/evidence boundary; H published a software-first capital gate. Fresh
+literature surveillance connected primary QSVT and 2026 equation/theorem-
+discovery sources to concrete follow-ups without treating external claims as
+project evidence. FND-001–006 and EQN-001–006 were reviewed with no new-law claim.
+
+Priority #1, all eight lanes A–H, INV-025–035, all permanent invariants,
+multilingual Thai/English/Chinese/Japanese/Korean/German master references,
+strategic AI-agent/funding references and evidence boundaries were preserved.
+The next gate is QOS-AUDIT-010B5: independent SDK reconstruction, explicit
+circuit decomposition/serialization and measured host resource provenance.

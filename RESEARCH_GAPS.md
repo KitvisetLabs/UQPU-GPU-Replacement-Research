@@ -322,3 +322,31 @@ negative control, not evidence against mathematical feasibility.
 matrix/QSVT fixture, independently verify transformed singular values and
 conventions, account for resources/I/O, and obtain second-implementation or
 interval/error assurance before provider or hardware promotion.
+
+## RG-032 status update — bounded matrix/QSVT convention passed
+**Status:** PARTIALLY_UNLOCKED / SIMULATION
+**Date:** 2026-09-26
+
+QOS-AUDIT-010B4 constructed a non-diagonal Hermitian 2x2 contraction inside a
+4x4 one-ancilla block encoding. The 82 phases produced the expected real
+polynomial transform with maximum block residual `5.440092820663267e-15` and
+transformed-unitary residual `1.021405182655144e-14`. A perturbed phase fails.
+
+**Why still open:** this is dense numerical validation on a constructed fixture.
+There is no formal uniform certificate, independent SDK circuit, accepted
+workload, target calibration, provider execution or economic comparison.
+
+## RG-033 — Independent SDK and explicit QSVT circuit/resource reproduction
+**Status:** OPEN / TOOL_EXECUTION_PENDING
+**Objective:** Reproduce QOS-AUDIT-010B4 in an independent pinned SDK and export
+an explicit provider-neutral circuit/resource artifact.
+**Current artifact:** repository-owned 4x4 dense block-encoding/QSVT certificate
+plus model-only query, ancilla and byte ledger.
+**Missing:** SDK convention mapping; decomposed one-/two-qubit gates; depth;
+serialized bytes; measured host runtime/memory; independent output agreement.
+**Unlock criteria:** unchanged fixture/phase contract, independent projected-block
+agreement within `2e-12`, explicit circuit and reproducible resource provenance.
+**Dependencies:** Lane A/B/C/F; D/G consume the result only after this gate.
+**Next experiment:** QOS-AUDIT-010B5 pinned SDK reconstruction and serialization.
+**Review trigger:** independently executable circuit artifact or a documented SDK
+convention blocker.

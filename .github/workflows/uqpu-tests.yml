@@ -162,7 +162,10 @@ jobs:
         run: |
           python -m unittest tests.test_qos_d23_phase_reconstruction_v040 -v
           python examples/run_qos_d23_phase_reconstruction_v040.py --output /tmp/uqpu-qsp-v040.json
+          python -m unittest tests.test_qos_d23_qsvt_matrix_fixture -v
+          python examples/run_qos_d23_qsvt_matrix_fixture.py --output /tmp/uqpu-qsvt-matrix.json
           cat /tmp/uqpu-qsp-v040.json
+          cat /tmp/uqpu-qsvt-matrix.json
 
   target-snapshot-noise:
     runs-on: ubuntu-latest

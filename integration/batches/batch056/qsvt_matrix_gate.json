@@ -1,0 +1,24 @@
+{
+  "contract_id": "QOS-AUDIT-010B4",
+  "date": "2026-09-26",
+  "primary_owner": "A",
+  "integration_owner": "F",
+  "status": "BOUNDED_MATRIX_TRANSFORM_PASSED",
+  "evidence_label": "SIMULATION",
+  "stable_inputs": {
+    "polynomial_degree": 81,
+    "phase_count": 82,
+    "fixture_eigenvalues": [0.2, 0.8],
+    "fixture_rotation_radians": 0.37
+  },
+  "lane_interfaces": {
+    "B": "provider lowering remains closed until gate decomposition and independent SDK agreement",
+    "C": "phase and dense-fixture payloads recorded; no memory/storage equivalence",
+    "D": "81 oracle queries and 82 phase rotations are compiler-level inputs, not device requirements",
+    "E": "energy/cooling/material entries remain NOT_MEASURED",
+    "F": "accepted numerical fixture only; no workload baseline or cost ratio",
+    "G": "factory/process response remains blocked on target-aware circuit resources",
+    "H": "capital escalation remains blocked on independent SDK and accepted-workload evidence"
+  },
+  "next_gate": "QOS-AUDIT-010B5"
+}

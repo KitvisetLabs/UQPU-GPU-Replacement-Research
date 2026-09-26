@@ -1,0 +1,35 @@
+{
+  "certificate": {
+    "block_encoding_dimension": 4,
+    "block_encoding_top_left_residual": 0.0,
+    "block_encoding_unitarity_residual": 1.1102230246251565e-16,
+    "contract_id": "QOS-AUDIT-010B4",
+    "evidence_label": "SIMULATION",
+    "fixture_eigenvalues": [0.2, 0.8],
+    "fixture_rotation_radians": 0.37,
+    "passed": true,
+    "phase_count": 82,
+    "transform_tolerance": 2e-12,
+    "transformed_real_block_residual": 5.440092820663267e-15,
+    "transformed_unitarity_residual": 1.021405182655144e-14,
+    "unitarity_tolerance": 2e-13
+  },
+  "resource_ledger": {
+    "accounting_scope": "BOUNDED_DENSE_FIXTURE_MODEL_ONLY",
+    "contract_id": "QOS-AUDIT-010B4",
+    "dense_operator_complex128_bytes": 256,
+    "dense_statevector_complex128_bytes": 64,
+    "energy_and_cost_status": "NOT_MEASURED",
+    "gate_decomposition_status": "NOT_PERFORMED",
+    "logical_qubits_fixture_total": 2,
+    "logical_system_qubits_fixture": 1,
+    "phase_payload_binary64_bytes": 656,
+    "phase_rotations": 82,
+    "polynomial_degree": 81,
+    "provider_jobs": 0,
+    "shots": 0,
+    "signal_ancillas": 1,
+    "signal_or_block_encoding_queries": 81
+  },
+  "warning": "Dense numerical matrix validation only; not a provider circuit, real-QPU result, competitive workload, hardware requirement, or economic advantage."
+}
