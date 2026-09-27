@@ -6,7 +6,7 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-# 🔭 SPECIAL RESEARCH FRONTIER — SPIRITUAL COMMUNICATION MECHANICS (SCM)
+## 🔀 PARALLEL RESEARCH PORTFOLIO\n\nThe project runs multiple research lanes concurrently rather than serializing all effort behind one frontier. See **[Parallel Research Portfolio — Multi-Lane Execution Map](docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md)** for A–H, FND/EQN, SCM, AI-COST and QOS/QSVT work packets, dependencies, evidence gates and portfolio cadence. Parallel work increases search breadth; **each lane must still pass its own evidence gate before promotion.**\n\n# 🔭 SPECIAL RESEARCH FRONTIER — SPIRITUAL COMMUNICATION MECHANICS (SCM)
 ## Evidence-gated research-to-fiction program for the *คำภีร์โลกาธิบดี* five-volume canon
 
 > **Purpose:** SCM is a serious hypothesis-generation and worldbuilding research frontier connecting measurement science, consciousness research, information theory, quantum/foundational physics, anomaly controls and speculative cross-realm technology to the five-volume literary canon. It does **not** establish ghosts, post-mortem consciousness, other realms, cross-realm communication or portals as demonstrated physical phenomena.
