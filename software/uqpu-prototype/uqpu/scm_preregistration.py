@@ -24,6 +24,9 @@ class SCMPreregistration:
     replication_plan: str
     human_participants: bool = False
     ethics_approval_ref: str = ""
+    consent_status: str = "NOT_APPLICABLE"
+    consent_scope: str = ""
+    consent_reference: str = ""
     evidence_class: str = "PREREGISTRATION_ONLY_NO_EMPIRICAL_RESULT"
 
 REQUIRED_LEAKAGE_ITEMS = (
@@ -48,8 +51,17 @@ def validate_preregistration(p: SCMPreregistration) -> tuple[str, ...]:
         errors.append("missing:exclusion_rules")
     missing=sorted(set(REQUIRED_LEAKAGE_ITEMS)-set(p.leakage_audit_items))
     errors.extend(f"missing_leakage:{x}" for x in missing)
-    if p.human_participants and not p.ethics_approval_ref.strip():
-        errors.append("missing:ethics_approval_ref")
+    if p.human_participants:
+        if not p.ethics_approval_ref.strip():
+            errors.append("missing:ethics_approval_ref")
+        if p.consent_status not in {"DOCUMENTED", "WAIVED_WITH_ETHICS_APPROVAL"}:
+            errors.append("invalid:consent_status")
+        if not p.consent_scope.strip():
+            errors.append("missing:consent_scope")
+        if not p.consent_reference.strip():
+            errors.append("missing:consent_reference")
+    elif p.consent_status != "NOT_APPLICABLE" or p.consent_scope or p.consent_reference:
+        errors.append("unexpected:consent_fields_without_human_participants")
     return tuple(errors)
 
 def ready_to_collect(p: SCMPreregistration) -> bool:
