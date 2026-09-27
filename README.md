@@ -21,6 +21,8 @@
 
 **Phase 1 infrastructure status (2026-09-28):** SCM-GATE-001–004 now have executable/protocol artifacts covering synthetic null characterization, blinded-decoder/pareidolia controls, prospective cryptographic challenge-response, and an [independent replication contract](docs/SCM_GATE_004_INDEPENDENT_REPLICATION_CONTRACT_2026-09-28.md). This marks protocol/control infrastructure progress only; it is **not empirical evidence** for spirits, survival after death, or cross-realm communication.
 
+**External knowledge + five-volume canon synthesis:** [SCM External Knowledge Synthesis](docs/SCM_EXTERNAL_KNOWLEDGE_SYNTHESIS_AND_FIVE_VOLUME_CANON_2026-09-28.md) — integrates verifiable scientific literature, registers the four supplied YouTube videos as `PENDING_TRANSCRIPT` until their content can be verified, sharpens SCM-1→5 architecture, and maps the research ladder into all five *คำภีร์โลกาธิบดี* volumes including an information-first inter-realm economy and conservation-gated gold transfer.
+
 **Permanent evidence boundary:** anomaly ≠ spirit ≠ communication. A dramatic or statistically unusual signal is not accepted as cross-realm communication without recoverable source-dependent information, ordinary-cause controls, blinded testing, falsifiers and independent replication. AI-generated equations remain hypotheses under INV-035. Quantum terminology, Hilbert-space size, entanglement, extra dimensions or consciousness theories are never treated as automatic evidence for spiritual realms.
 
 # 📚 VERIFIED RESEARCH ARTICLES — ROOT-LEVEL PUBLICATION HUB
