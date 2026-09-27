@@ -17,6 +17,8 @@
 
 **Technology ladder:** `SCM-1 Anomaly Detector -> SCM-2 Cross-Realm Imager -> SCM-3 Inter-Realm Communicator -> SCM-4 Realm/Spacetime Portal -> SCM-5 Inter-Realm Economy`.
 
+**Research roadmap:** **[SCM Research Program and Evidence Roadmap](docs/SCM_RESEARCH_PROGRAM_AND_EVIDENCE_ROADMAP_2026-09-27.md)** — evidence states SCM-E0–E8, hypothesis registry SCM-H001–H006, falsifiable gates SCM-GATE-001–004, A–H/FND/EQN integration, failure registry and five-volume canon transfer.
+
 **Permanent evidence boundary:** anomaly ≠ spirit ≠ communication. A dramatic or statistically unusual signal is not accepted as cross-realm communication without recoverable source-dependent information, ordinary-cause controls, blinded testing, falsifiers and independent replication. AI-generated equations remain hypotheses under INV-035. Quantum terminology, Hilbert-space size, entanglement, extra dimensions or consciousness theories are never treated as automatic evidence for spiritual realms.
 
 # 📚 VERIFIED RESEARCH ARTICLES — ROOT-LEVEL PUBLICATION HUB
