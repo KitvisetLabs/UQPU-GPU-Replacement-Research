@@ -559,7 +559,7 @@ def build_synthetic_cal001_fixture(
             "source_claim_supported": False,
             "human_participants": False,
         },
-        "blinding_boundary": "Observations omit condition labels; truth and trial ledger are separate fixture files in the same reproducibility package. This is not operational blinding or a human study.",
+        "blinding_boundary": "Observation payloads omit condition labels, but the same JSON bundle contains labeled truth and a labeled trial ledger; anyone with the artifact can unseal it. This is not operational blinding or a human study.",
         "non_claims": [
             "no physical sensor calibration",
             "no human-participant data",

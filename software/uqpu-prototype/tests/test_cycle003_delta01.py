@@ -119,6 +119,8 @@ class Cycle003Delta01Tests(unittest.TestCase):
         self.assertEqual(first["summary_after_truth_unseal"]["sensitivity"], 1.0)
         self.assertFalse(first["independent_site_manifest"]["source_claim_supported"])
         self.assertEqual(first["independent_site_manifest"]["status"], "NOT_EXECUTED_NO_SECOND_SITE")
+        self.assertIn("same JSON bundle contains labeled truth", first["blinding_boundary"])
+        self.assertIn("not operational blinding", first["blinding_boundary"])
 
     def test_synthetic_replication_manifest_binds_data_and_code_without_claiming_a_replication(self):
         result = build_synthetic_cal001_fixture(code_commit="a" * 40)
