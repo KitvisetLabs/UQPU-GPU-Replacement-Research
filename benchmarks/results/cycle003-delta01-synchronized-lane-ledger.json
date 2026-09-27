@@ -3,7 +3,7 @@
   "cycle": "003",
   "delta": "01",
   "date": "2026-09-28",
-  "status": "CLOSEOUT_PENDING_ARTIFACT_VERIFICATION",
+  "status": "CLOSED_SYNCHRONIZED_RESEARCH_CYCLE_NO_NEW_EMPIRICAL_CLAIM",
   "policy": "All 12 portfolio lanes have a progress event in this delta; evidence is lane-local and no result is promoted across lanes.",
   "evidence_summary": {
     "new_empirical_claims": false,
@@ -149,7 +149,7 @@
   ],
   "verification": {
     "workflow": ".github/workflows/uqpu-tests.yml",
-    "all_runs_success": false,
+    "all_runs_success": true,
     "runs": [
       {
         "run_number": 485,
@@ -164,17 +164,24 @@
         "commit_sha": "7b3ca1fde4a34238f40408df51236600cf4a4a61",
         "conclusion": "success",
         "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36359275988"
+      },
+      {
+        "run_number": 487,
+        "run_id": 36359654504,
+        "commit_sha": "59154aa6c6a8ff64219a611fad82b5091bd41a2c",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36359654504"
       }
     ],
-    "coverage_note": "Runs #485 and #486 succeeded across the configured workflow jobs. Local Cycle 003 tests pass 10/10 with generated artifacts present. A final GitHub Actions run will make the artifact-to-generator equality check mandatory and verify the committed files."
+    "coverage_note": "GitHub Actions #485-#487 succeeded. Run #487 passed the Python 3.10, 3.11 and 3.12 matrix with committed circuit and SCM JSON files present; the artifact-to-generator equality check was mandatory and no longer skipped. All other configured verification jobs passed. Local Cycle 003 unit tests passed 10/10."
   },
   "closure": {
-    "cycle_closed": false,
+    "cycle_closed": true,
     "closure_basis": [
       "all 12 portfolio lane progress events recorded",
-      "provider-neutral circuit, cost, source and synthetic-calibration artifacts generated and content-hashed",
+      "provider-neutral circuit, tariff/cost, source and synthetic-calibration artifacts committed with content hashes",
       "cycle report and Cycle 004 handoff recorded",
-      "artifact-inclusive GitHub Actions run is still pending"
+      "mandatory artifact-to-generator equality test and configured GitHub Actions run #487 succeeded"
     ],
     "evidence_promotion": "none"
   }
