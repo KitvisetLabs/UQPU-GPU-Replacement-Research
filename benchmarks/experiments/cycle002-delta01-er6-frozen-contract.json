@@ -1,0 +1,312 @@
+{
+  "schema": "uqpu-er6-frozen-useful-output-contract-v1",
+  "cycle": "002",
+  "delta": "01",
+  "status": "FROZEN_REPRODUCIBLE_CONTRACT_NO_NEW_HARDWARE_EVIDENCE",
+  "fixture": {
+    "case_id": "er6",
+    "generator": {
+      "function": "seeded_erdos_renyi_maxcut",
+      "node_count": 6,
+      "edge_probability": 0.5,
+      "seed": 42
+    },
+    "variables": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "qubo": {
+      "sense": "minimize negative unweighted cut",
+      "constant": 0.0,
+      "linear": [
+        -3.0,
+        -2.0,
+        -3.0,
+        -4.0,
+        -4.0,
+        -2.0
+      ],
+      "quadratic": [
+        [
+          0,
+          2,
+          2.0
+        ],
+        [
+          0,
+          3,
+          2.0
+        ],
+        [
+          0,
+          4,
+          2.0
+        ],
+        [
+          1,
+          4,
+          2.0
+        ],
+        [
+          1,
+          5,
+          2.0
+        ],
+        [
+          2,
+          3,
+          2.0
+        ],
+        [
+          2,
+          4,
+          2.0
+        ],
+        [
+          3,
+          4,
+          2.0
+        ],
+        [
+          3,
+          5,
+          2.0
+        ]
+      ]
+    },
+    "qubo_to_ising_sha256": "bc3fb615b6fd2530694b097fde804e62f165fd7d0953bf66aff4602cd77fa201",
+    "hash_scope": "Full canonical QUBO payload used by uqpu.qaoa.qubo_to_ising: compact sorted-key UTF-8 JSON over variables, constant, linear and pairs; SHA-256. It is not a hash of this whole report or of the random seed alone.",
+    "ising": {
+      "mapping": "x=(1-Z)/2",
+      "offset": -4.5,
+      "z": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zz": [
+        [
+          0,
+          2,
+          0.5
+        ],
+        [
+          0,
+          3,
+          0.5
+        ],
+        [
+          0,
+          4,
+          0.5
+        ],
+        [
+          1,
+          4,
+          0.5
+        ],
+        [
+          1,
+          5,
+          0.5
+        ],
+        [
+          2,
+          3,
+          0.5
+        ],
+        [
+          2,
+          4,
+          0.5
+        ],
+        [
+          3,
+          4,
+          0.5
+        ],
+        [
+          3,
+          5,
+          0.5
+        ]
+      ]
+    },
+    "bit_order": "Variable 0 maps to the least-significant bit / qubit 0; displayed output strings are v5..v0.",
+    "exact_enumeration": {
+      "states": 64,
+      "objective_minimum": -7.0,
+      "optimal_assignment_indices": [
+        11,
+        14,
+        49,
+        52
+      ],
+      "accepted_bitstrings_v5_to_v0": [
+        "001011",
+        "001110",
+        "110001",
+        "110100"
+      ],
+      "evidence_class": "LOCAL_EXHAUSTIVE_ENUMERATION_REPRODUCED"
+    }
+  },
+  "output_contract": {
+    "contract_id": "8efaa94bb3306d25",
+    "workload_id": "er6",
+    "instance_family": "batch012-verification-fixture",
+    "instance_seed": 42,
+    "variable_count": 6,
+    "objective_sense": "minimize",
+    "quality_metric": "objective_value",
+    "required_relative_gap": 0.0,
+    "accepted_objective": -7.0,
+    "accepted_outputs": [
+      {
+        "index": 11,
+        "bits_v5_to_v0": "001011"
+      },
+      {
+        "index": 14,
+        "bits_v5_to_v0": "001110"
+      },
+      {
+        "index": 49,
+        "bits_v5_to_v0": "110001"
+      },
+      {
+        "index": 52,
+        "bits_v5_to_v0": "110100"
+      }
+    ],
+    "semantic_note": "This exact-optimum/zero-relative-gap workload contract is not the Cycle-001 scalar-energy epsilon/confidence-0.95 template. For future sampled hardware results, estimate optimum-hit probability with a declared interval separately from objective acceptance."
+  },
+  "frozen_p1_candidates": [
+    {
+      "id": "mean_energy_p1",
+      "selection_objective": "mean_energy",
+      "gamma": 0.5235987755982988,
+      "beta": 1.3089969389957472,
+      "ideal_expected_energy": -5.680228276362292,
+      "ideal_optimum_probability": 0.25391734004004546,
+      "saved_fakekingston": {
+        "optimum_hits": 1920,
+        "shots": 8192,
+        "optimum_probability": 0.234375,
+        "wilson_95": [
+          0.22532417624351284,
+          0.24365979697362594
+        ],
+        "expected_shots_per_optimum": 4.266666666666667,
+        "shots_for_at_least_99pct_one_optimum": 18,
+        "routed_depth": 76,
+        "routed_cz_gates": 26
+      }
+    },
+    {
+      "id": "cvar_alpha_0.5_p1",
+      "selection_objective": "cvar_minimization",
+      "alpha": 0.5,
+      "gamma": 0.6544984694978736,
+      "beta": 2.748893571891069,
+      "ideal_expected_energy": -5.605529342392878,
+      "ideal_optimum_probability": 0.3088642279953902,
+      "saved_fakekingston": {
+        "optimum_hits": 2255,
+        "shots": 8192,
+        "optimum_probability": 0.2752685546875,
+        "wilson_95": [
+          0.265710264742677,
+          0.285051870345696
+        ],
+        "expected_shots_per_optimum": 3.6328159645232816,
+        "shots_for_at_least_99pct_one_optimum": 15,
+        "routed_depth": 75,
+        "routed_cz_gates": 26
+      }
+    }
+  ],
+  "equal_output_and_budget_rules": {
+    "parameter_grid_evaluations": 576,
+    "both_objectives_share_same_grid": true,
+    "exact_optimum_used_only_for_post_selection_diagnosis": true,
+    "live_comparison_initial_shots_per_candidate": 8192,
+    "same_provider_backend_calibration_window_and_decoder_required": true,
+    "price_probability_must_not_be_combined_across_providers": true
+  },
+  "evidence_and_authorization": {
+    "ideal_result": "EXACT_STATEVECTOR_SIMULATION",
+    "saved_noise_result": "CALIBRATION_SNAPSHOT_SIMULATION_NOT_LIVE_DEVICE_EVIDENCE",
+    "live_provider_execution": "NOT_RUN",
+    "paid_job_submitted": false,
+    "explicit_bounded_budget_authorization_required": true,
+    "provider_cost_usd": null,
+    "provider_energy_joules": null,
+    "classical_wall_time_seconds": null,
+    "classical_energy_joules": null,
+    "provider_billed_cost_per_accepted_output": null
+  },
+  "provenance": {
+    "selection_report": "docs/BATCH_019_QAOA_CVAR_EQUAL_BUDGET.md",
+    "live_falsification_protocol": "docs/BATCH_020_PROVIDER_MATCHED_REAL_QPU_PROTOCOL.md",
+    "live_protocol_json": "benchmarks/experiments/batch020-er6-mean-vs-cvar-real-qpu-protocol.json",
+    "prior_cycle_packet": "docs/SYNCHRONIZED_CYCLE_001_EXECUTION_DELTA_07_2026-09-28.md",
+    "primary_algorithm_source": "Farhi, Goldstone & Gutmann (2014), A Quantum Approximate Optimization Algorithm, arXiv:1411.4028, https://arxiv.org/abs/1411.4028",
+    "primary_ising_formulation_source": "Lucas (2014), Ising formulations of many NP problems, Frontiers in Physics 2, 5, https://doi.org/10.3389/fphy.2014.00005"
+  },
+  "non_claims": [
+    "no live QPU run",
+    "no quantum advantage",
+    "no speedup claim",
+    "no CPU/GPU/NPU replacement claim",
+    "no real performance or cost claim",
+    "FakeKingston is a saved target snapshot, not current backend calibration",
+    "Wilson intervals apply to simulator sampling counts, not model uncertainty or hardware uncertainty",
+    "the six-qubit ER6 result does not establish the Data-Center-to-One-Phone mission or 100M-unit replacement"
+  ]
+}
