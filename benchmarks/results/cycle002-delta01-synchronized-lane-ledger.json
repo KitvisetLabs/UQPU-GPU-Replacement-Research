@@ -1,0 +1,194 @@
+{
+  "schema": "uqpu-synchronized-cycle-lane-ledger-v1",
+  "cycle": "002",
+  "delta": "01",
+  "date": "2026-09-28",
+  "status": "CLOSED_SYNCHRONIZED_RESEARCH_CYCLE_NO_NEW_EMPIRICAL_CLAIM",
+  "policy": "All 12 lanes have a progress event in this delta; evidence status is lane-local and no result is promoted across lanes.",
+  "evidence_summary": {
+    "new_empirical_claims": false,
+    "live_qpu_executed": false,
+    "paid_job_submitted": false,
+    "pangola_coupons_fabricated": false,
+    "human_participant_study_started": false,
+    "capital_authorized": false
+  },
+  "lane_count": 12,
+  "lanes": [
+    {
+      "lane": "A",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Regenerated the existing ER6 MaxCut instance (seed 42), froze its full Ising-content SHA-256 and existing zero-gap output-contract ID 8efaa94bb3306d25, and enumerated all 64 assignments. Exact minimum is -7; accepted indices are 11, 14, 49, 52 under variable-0-as-LSB convention.",
+      "dependency": "Provider-matched useful-output comparison and competitive classical resource accounting remain unmeasured.",
+      "next_cycle": "Extend the same-instance ledger with measured end-to-end classical resources and a provider-ready circuit manifest; keep hardware fields null until an authorized run."
+    },
+    {
+      "lane": "B",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Rechecked official IBM, AWS Braket, and Azure tariff structures. AWS Braket/Rigetti arithmetic for two 8,192-shot candidates is $7.5632 in task-plus-shot charges before cloud/ancillary charges; no provider is selected and no paid job was submitted.",
+      "dependency": "Provider, backend, current calibration, billed records, queue and ancillary costs are not yet frozen or authorized.",
+      "next_cycle": "Compare dated provider quotes and billing terms against the frozen B020 protocol; keep all charges as conditional sensitivity until authorization."
+    },
+    {
+      "lane": "C",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "The accepted optimization output is a six-bit assignment; exact verification enumerates 64 states. Batch 019's shared p=1 grid uses 576 candidate circuit evaluations. This clarifies useful-output semantics but supplies no measured memory or transfer data.",
+      "dependency": "Preparation, state-vector/sampling memory, host-device movement, persistent I/O, and readout/post-processing remain unmeasured.",
+      "next_cycle": "Add explicit byte and time accounting for state preparation, result transfer, persistence, and decoding on the same task contract."
+    },
+    {
+      "lane": "D",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Mapped the selected literature system's device stack: five cat-storage modes, four transmon syndrome ancillas, 2.8 microsecond QEC cycle and MWPM decoding; project device target and matched retention horizon remain null.",
+      "dependency": "No UQPU device reproduction or matched error/retention target is available.",
+      "next_cycle": "Build a source-grounded control/readout/resource table and define a project-side matched memory target before reproduction."
+    },
+    {
+      "lane": "E",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Set a proposed 30 MHz–1.5 GHz ASTM D4935 comparison band with 101 logarithmic points and a named Parker PREMIER A230-HTHF incumbent. Datasheet density implies a 2.085 kg/m² nominal areal-density target at 1.50 mm; this is a design target, not measured coupon performance.",
+      "dependency": "Authenticated Pangola lot, paid/available standard text, resin/cure choice, matched coupons and VNA data are absent.",
+      "next_cycle": "Resolve feedstock and resin documents, freeze metrology and nominal geometry, then review fabrication readiness without starting fabrication."
+    },
+    {
+      "lane": "F",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Kept the project's 50,000 THB budget ceiling and 33.045 THB/USD planning FX visible. Official provider tariffs are separated from workload costs; cloud, host, mitigation, failures and service overhead remain unknown.",
+      "dependency": "No provider-billed cost per accepted output or complete lifecycle economics is measured.",
+      "next_cycle": "Build a cost ledger for the identical useful-output contract with provider charges, host orchestration, retries, queueing, energy and classical baseline."
+    },
+    {
+      "lane": "G",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Defined a proposed Pangola process window: dry to constant mass, carbonize at 800±5°C under N2 (10°C/min ramp, 60-minute dwell), cool under N2, sieve below 150 µm, and test a 40/60 wt% char/epoxy point across 3×5 coupons. Geometry comparison now uses an explicit provisional 2% screen, not an ASTM tolerance.",
+      "dependency": "Species/lot authentication, exact resin/hardener/cure, metrology uncertainty and process feasibility remain unresolved; no coupons were fabricated.",
+      "next_cycle": "Close material and resin evidence, check metrology against the provisional screen, and complete a no-fabrication readiness review."
+    },
+    {
+      "lane": "H",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Reconciled CAP-DMF-EMI-001 and CAP-BOSONIC-001 against Cycle 002 evidence. Capital-at-risk remains null and authorization remains NOT_AUTHORIZED.",
+      "dependency": "Both gates still lack their cheapest decisive experimental evidence and a decision-ready costed proposal.",
+      "next_cycle": "Update gate states from the new falsification plans only; do not populate capital or authorize spending."
+    },
+    {
+      "lane": "FND/EQN",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Selected Putterman et al. (Nature, 2025) as a source-grounded bosonic-QEC record: reported overall logical error 1.65(3)% per cycle at |alpha|²=1.5. This is a paper result, not a project reproduction, and does not specify the project's target/retention horizon.",
+      "dependency": "Supplementary per-run data and full preparation/control/readout/decoder/energy/cost overhead extraction remain outstanding.",
+      "next_cycle": "Extract supplementary/data DOI fields with provenance and distinguish logical error per cycle from logical lifetime and physical component rates."
+    },
+    {
+      "lane": "SCM",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "No frozen primary/independent study packages were found in the project record used for this delta. Added consent status, scope and reference to the preregistration gate; human-participant readiness now requires approved consent or an ethics-approved waiver. Synthetic-only calibration remains the allowed current path.",
+      "dependency": "No primary or independent site package, ethics/consent record, or empirical source claim exists.",
+      "next_cycle": "Prepare and test a synthetic known-interference fixture and independent-site manifest; do not collect human data without documented ethics and consent."
+    },
+    {
+      "lane": "AI-COST",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Applied the project's ceiling and FX assumption: 50,000 THB = about $1,513.09 before provider/fixed costs. Against owner-proxy $10T/$100T baselines, the zero-overhead upper shares are 1.5131e-10 / 1.5131e-11; adjusted shares stay null because those costs and baseline evidence are missing.",
+      "dependency": "No frozen functionally equivalent AI task, measured incumbent training/service cost or full provider-plus-fixed-cost ledger.",
+      "next_cycle": "Lock baseline provenance and functional equivalence, then compute residual allowable share after all upstream costs."
+    },
+    {
+      "lane": "QOS/QSVT",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Reused the exact ER6 hash/contract and reproduced the shared 24×24 p=1 search selection; both candidates remain the same 576-evaluation budget. Saved FakeKingston depth/CZ and 8,192-shot values are snapshot simulation only, not current device data.",
+      "dependency": "No live-provider result, full compilation/measurement cost, or QSVT synthesis certificate for this application is attached.",
+      "next_cycle": "Attach circuit/transpilation manifests and total gate/shot/post-processing cost to the common contract; keep QSVT claims gated by independent reconstruction."
+    }
+  ],
+  "source_register": [
+    {
+      "id": "repo-er6",
+      "ref": "benchmarks/experiments/cycle002-delta01-er6-frozen-contract.json"
+    },
+    {
+      "id": "repo-b019",
+      "ref": "benchmarks/results/batch019-qaoa-cvar-target-comparison.json"
+    },
+    {
+      "id": "repo-b020",
+      "ref": "benchmarks/experiments/batch020-er6-mean-vs-cvar-real-qpu-protocol.json"
+    },
+    {
+      "id": "bosonic-primary",
+      "url": "https://www.nature.com/articles/s41586-025-08642-7"
+    },
+    {
+      "id": "bosonic-data",
+      "url": "https://doi.org/10.5281/zenodo.14257632"
+    },
+    {
+      "id": "astm-d4935",
+      "url": "https://store.astm.org/standards/d4935"
+    },
+    {
+      "id": "parker-a230",
+      "url": "https://www.parker.com/content/dam/Parker-com/Literature/Chomerics/Parker-Chomerics-PREMIER-PC-ABS-GENERAL-PURPOSE-GRADES-%28HT%29.pdf"
+    },
+    {
+      "id": "aws-braket-pricing",
+      "url": "https://aws.amazon.com/braket/pricing/"
+    },
+    {
+      "id": "ibm-quantum-pricing",
+      "url": "https://www.ibm.com/quantum/products"
+    },
+    {
+      "id": "azure-quantum-pricing",
+      "url": "https://learn.microsoft.com/en-us/azure/quantum/pricing"
+    },
+    {
+      "id": "qaoa",
+      "url": "https://arxiv.org/abs/1411.4028"
+    }
+  ],
+  "verification": {
+    "workflow": ".github/workflows/uqpu-tests.yml",
+    "all_runs_success": true,
+    "runs": [
+      {
+        "run_number": 481,
+        "run_id": 36355091816,
+        "commit_sha": "ded1fadff43ca7ca741c17fc56b3784490655013",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36355091816"
+      },
+      {
+        "run_number": 482,
+        "run_id": 36355111882,
+        "commit_sha": "f1e8fcac9d6a1bbd62f0bad688f9584eb3d2b5ac",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36355111882"
+      },
+      {
+        "run_number": 483,
+        "run_id": 36355393397,
+        "commit_sha": "dcb8a4c428db94bddec9a64a1584a8515faaa9e9",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36355393397"
+      },
+      {
+        "run_number": 484,
+        "run_id": 36355399837,
+        "commit_sha": "859299e46aa01a58ee07ad40d934452daf5362ca",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36355399837"
+      }
+    ],
+    "coverage_note": "New Python test additions passed the repo unit/invariant matrix on Python 3.10, 3.11 and 3.12; full configured workflow runs concluded success."
+  },
+  "closure": {
+    "cycle_closed": true,
+    "closure_basis": [
+      "all 12 lane progress events recorded",
+      "ER6 contract tests pass",
+      "coupon geometry and SCM consent tests pass",
+      "configured CI runs succeeded"
+    ],
+    "evidence_promotion": "none"
+  }
+}
