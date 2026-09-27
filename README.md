@@ -6,6 +6,19 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+# 🔭 SPECIAL RESEARCH FRONTIER — SPIRITUAL COMMUNICATION MECHANICS (SCM)
+## Evidence-gated research-to-fiction program for the *คำภีร์โลกาธิบดี* five-volume canon
+
+> **Purpose:** SCM is a serious hypothesis-generation and worldbuilding research frontier connecting measurement science, consciousness research, information theory, quantum/foundational physics, anomaly controls and speculative cross-realm technology to the five-volume literary canon. It does **not** establish ghosts, post-mortem consciousness, other realms, cross-realm communication or portals as demonstrated physical phenomena.
+>
+> **Research order:** established measurement science -> contested/anomalous literature -> explicit fictional hypothesis -> falsifiable model -> blinded/null-controlled test -> independent replication -> fictional device consequence -> system/economic consequence. Present validated physics remains binding for real-world engineering claims.
+
+**Start here:** **[SCM Research-to-Fiction Canon Framework](docs/SPIRITUAL_COMMUNICATION_MECHANICS_RESEARCH_TO_FICTION_FRAMEWORK_2026-09-27.md)** — includes a front-page research Table of Contents and navigation map.
+
+**Technology ladder:** `SCM-1 Anomaly Detector -> SCM-2 Cross-Realm Imager -> SCM-3 Inter-Realm Communicator -> SCM-4 Realm/Spacetime Portal -> SCM-5 Inter-Realm Economy`.
+
+**Permanent evidence boundary:** anomaly ≠ spirit ≠ communication. A dramatic or statistically unusual signal is not accepted as cross-realm communication without recoverable source-dependent information, ordinary-cause controls, blinded testing, falsifiers and independent replication. AI-generated equations remain hypotheses under INV-035. Quantum terminology, Hilbert-space size, entanglement, extra dimensions or consciousness theories are never treated as automatic evidence for spiritual realms.
+
 # 📚 VERIFIED RESEARCH ARTICLES — ROOT-LEVEL PUBLICATION HUB
 ## `articles/` is a first-class folder on the repository front page — not a subfolder
 
