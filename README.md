@@ -19,6 +19,8 @@
 
 **Research roadmap:** **[SCM Research Program and Evidence Roadmap](docs/SCM_RESEARCH_PROGRAM_AND_EVIDENCE_ROADMAP_2026-09-27.md)** — evidence states SCM-E0–E8, hypothesis registry SCM-H001–H006, falsifiable gates SCM-GATE-001–004, A–H/FND/EQN integration, failure registry and five-volume canon transfer.
 
+**Phase 1 infrastructure status (2026-09-28):** SCM-GATE-001–004 now have executable/protocol artifacts covering synthetic null characterization, blinded-decoder/pareidolia controls, prospective cryptographic challenge-response, and an [independent replication contract](docs/SCM_GATE_004_INDEPENDENT_REPLICATION_CONTRACT_2026-09-28.md). This marks protocol/control infrastructure progress only; it is **not empirical evidence** for spirits, survival after death, or cross-realm communication.
+
 **Permanent evidence boundary:** anomaly ≠ spirit ≠ communication. A dramatic or statistically unusual signal is not accepted as cross-realm communication without recoverable source-dependent information, ordinary-cause controls, blinded testing, falsifiers and independent replication. AI-generated equations remain hypotheses under INV-035. Quantum terminology, Hilbert-space size, entanglement, extra dimensions or consciousness theories are never treated as automatic evidence for spiritual realms.
 
 # 📚 VERIFIED RESEARCH ARTICLES — ROOT-LEVEL PUBLICATION HUB
