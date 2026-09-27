@@ -140,8 +140,6 @@ class Cycle003Delta01Tests(unittest.TestCase):
             build_cycle003_manifest(self.freeze, protocol)
 
     def test_committed_reproducibility_artifacts_match_builder(self):
-        if not CIRCUIT_ARTIFACT.exists() or not SCM_ARTIFACT.exists():
-            self.skipTest("Final Cycle 003 artifacts are added after the code commit is identified.")
         circuit = json.loads(CIRCUIT_ARTIFACT.read_text(encoding="utf-8"))
         scm = json.loads(SCM_ARTIFACT.read_text(encoding="utf-8"))
         code_sha = scm["replication_manifest"]["code_commit"]
