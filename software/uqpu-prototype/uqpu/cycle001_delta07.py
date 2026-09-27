@@ -274,18 +274,32 @@ def coupon_missing_preregistration_and_measurements(x: PangolaCouponResult) -> t
 
 
 def compare_coupon_curves(
-    candidate: PangolaCouponResult, incumbent: PangolaCouponResult
+    candidate: PangolaCouponResult,
+    incumbent: PangolaCouponResult,
+    *,
+    geometry_rel_tolerance: float = 0.02,
 ) -> tuple[tuple[float, float], ...]:
-    """Return candidate-minus-incumbent dB by frequency after matched geometry checks."""
+    """Return candidate-minus-incumbent dB after a preregistered geometry match.
+
+    The 2% default is a project screening choice, not an ASTM D4935 tolerance.
+    A physical test protocol must check that tolerance against its metrology
+    uncertainty and freeze the nominal geometry before fabrication.
+    """
+    if not math.isfinite(geometry_rel_tolerance) or geometry_rel_tolerance < 0:
+        raise ValueError("geometry_rel_tolerance must be finite and non-negative")
     if not candidate.shielding_curve_db or not incumbent.shielding_curve_db:
         raise ValueError("both measured shielding curves are required")
     if candidate.thickness_mm is None or incumbent.thickness_mm is None:
         raise ValueError("matched thickness measurements are required")
-    if not math.isclose(candidate.thickness_mm, incumbent.thickness_mm, rel_tol=1e-6, abs_tol=1e-9):
+    if candidate.thickness_mm <= 0 or incumbent.thickness_mm <= 0:
+        raise ValueError("positive thickness measurements are required")
+    if not math.isclose(candidate.thickness_mm, incumbent.thickness_mm, rel_tol=geometry_rel_tolerance, abs_tol=0.0):
         raise ValueError("thickness mismatch")
     if candidate.areal_density_kg_m2 is None or incumbent.areal_density_kg_m2 is None:
         raise ValueError("matched areal-density measurements are required")
-    if not math.isclose(candidate.areal_density_kg_m2, incumbent.areal_density_kg_m2, rel_tol=1e-6, abs_tol=1e-9):
+    if candidate.areal_density_kg_m2 <= 0 or incumbent.areal_density_kg_m2 <= 0:
+        raise ValueError("positive areal-density measurements are required")
+    if not math.isclose(candidate.areal_density_kg_m2, incumbent.areal_density_kg_m2, rel_tol=geometry_rel_tolerance, abs_tol=0.0):
         raise ValueError("areal-density mismatch")
     if tuple(f for f, _ in candidate.shielding_curve_db) != tuple(f for f, _ in incumbent.shielding_curve_db):
         raise ValueError("frequency grids differ")
