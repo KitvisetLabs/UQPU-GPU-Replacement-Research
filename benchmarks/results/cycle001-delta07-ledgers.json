@@ -1,0 +1,125 @@
+{
+  "bosonic_memory": {
+    "ancilla_count": null,
+    "case_id": "FND-BOSONIC-QEC-001",
+    "cost_usd": null,
+    "decoder_seconds": null,
+    "encoding": "cat/GKP candidate; select one platform before reproduction",
+    "energy_joules": null,
+    "evidence_class": "LITERATURE_ANCHORED_RESOURCE_TEMPLATE",
+    "logical_task": "matched logical-memory function; contract and target must be frozen",
+    "observed_logical_error_rate": null,
+    "observed_retention_cycles": null,
+    "oscillator_count": null,
+    "readout_seconds": null,
+    "source_record_id": "docs/CYCLE_001_DELTA_05_LITERATURE_SNAPSHOT_BIOMASS_EMI_BOSONIC_QEC_2026-09-28.md",
+    "stabilization_seconds_per_cycle": null,
+    "state_prep_seconds": null,
+    "target_logical_error_rate": null,
+    "target_retention_cycles": null
+  },
+  "capital_gates": [
+    {
+      "authorization_status": "NOT_AUTHORIZED",
+      "cheapest_decisive_test": "fabricate controlled coupons; measure shielding vs frequency, conductivity, thermal/mechanical stability, process yield, energy, chemicals and cost",
+      "evidence_class": "CAPITAL_GOVERNANCE_ONLY",
+      "evidence_state": "LITERATURE_CANDIDATE_NO_PANGOLA_RESULT",
+      "failure_action": "stop or reformulate processing/composition before component escalation",
+      "gate_id": "CAP-DMF-EMI-001",
+      "next_gate": "matched Pangola coupon test against a named incumbent",
+      "proposed_capital_at_risk_thb": null,
+      "success_unlock": "bounded component prototype review; no automatic factory funding"
+    },
+    {
+      "authorization_status": "NOT_AUTHORIZED",
+      "cheapest_decisive_test": "populate preparation, stabilization/control, ancilla, readout, decoder, energy and cost for one frozen logical-memory target",
+      "evidence_class": "CAPITAL_GOVERNANCE_ONLY",
+      "evidence_state": "PUBLISHED_BOSONIC_QEC_EXPERIMENTS_UQPU_ADVANTAGE_UNVERIFIED",
+      "failure_action": "deprioritize this platform if full-stack cost closes the useful-output case",
+      "gate_id": "CAP-BOSONIC-001",
+      "next_gate": "matched logical-memory resource reproduction/model with full overhead",
+      "proposed_capital_at_risk_thb": null,
+      "success_unlock": "review a bounded authorized provider/device experiment"
+    }
+  ],
+  "cycle": "001",
+  "delta": "07",
+  "ising": {
+    "classical": {
+      "case_id": "OBS-ISING-ENERGY-001",
+      "confidence": 0.95,
+      "cost_usd": null,
+      "energy_joules": null,
+      "epsilon": 0.01,
+      "evidence_class": "TEMPLATE_NOT_EXECUTION_EVIDENCE",
+      "hardware": "CPU/GPU class and version required",
+      "instance_sha256": "",
+      "output_contract_id": "ising-energy-epsilon-0.01-confidence-0.95",
+      "peak_memory_bytes": null,
+      "solver": "competitive exact/tensor/sampling baseline selected by instance structure",
+      "wall_seconds": null
+    },
+    "quantum": {
+      "backend": "backend required before execution",
+      "case_id": "OBS-ISING-ENERGY-001",
+      "confidence": 0.95,
+      "cost_usd": null,
+      "energy_joules": null,
+      "epsilon": 0.01,
+      "estimator": "QOS/QSVT or other estimator; state preparation and all shots charged",
+      "evidence_class": "TEMPLATE_NOT_EXECUTION_EVIDENCE",
+      "instance_sha256": "",
+      "output_contract_id": "ising-energy-epsilon-0.01-confidence-0.95",
+      "postprocess_seconds": null,
+      "provider": "provider required before execution",
+      "readout_seconds": null,
+      "sampling_shots": null,
+      "state_prep_seconds": null
+    }
+  },
+  "pangola_coupon": {
+    "areal_density_kg_m2": null,
+    "case_id": "DMF-BIOCARBON-EMI-001",
+    "chemical_mass_g": null,
+    "conductivity_s_per_m": null,
+    "cost_thb": null,
+    "energy_mj": null,
+    "evidence_class": "TEMPLATE_NO_MEASUREMENTS",
+    "feedstock_lot": "",
+    "incumbent_id": "",
+    "max_frequency_hz": null,
+    "mechanical_strength_mpa": null,
+    "min_frequency_hz": null,
+    "process_recipe_id": "",
+    "process_yield_fraction": null,
+    "shielding_curve_db": [],
+    "test_method": "",
+    "thermal_stability_c": null,
+    "thickness_mm": null
+  },
+  "provider_ai_cost_links": [
+    {
+      "baseline_id": "BASELINE-10T-USD",
+      "evidence_class": "ANALYTIC_NECESSARY_CONDITION_NOT_COST_EVIDENCE",
+      "maximum_residual_fraction": null,
+      "other_fixed_cost_usd": null,
+      "provider_component_cost_usd": null,
+      "status": "PRICE_EVIDENCE_REQUIRED",
+      "target_usd": 1513.0882130428204
+    },
+    {
+      "baseline_id": "BASELINE-100T-USD",
+      "evidence_class": "ANALYTIC_NECESSARY_CONDITION_NOT_COST_EVIDENCE",
+      "maximum_residual_fraction": null,
+      "other_fixed_cost_usd": null,
+      "provider_component_cost_usd": null,
+      "status": "PRICE_EVIDENCE_REQUIRED",
+      "target_usd": 1513.0882130428204
+    }
+  ],
+  "scm_replication": {
+    "evidence_class": "REPLICATION_INFRASTRUCTURE_ONLY",
+    "status": "AWAITING_PRIMARY_AND_INDEPENDENT_REPLICATION_PACKAGES"
+  },
+  "status": "ALL_LANE_CONTRACTS_AND_TEMPLATES_NO_NEW_EMPIRICAL_CLAIM"
+}
