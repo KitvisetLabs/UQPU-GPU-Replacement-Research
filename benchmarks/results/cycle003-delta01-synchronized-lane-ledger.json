@@ -1,0 +1,181 @@
+{
+  "schema": "uqpu-synchronized-cycle-lane-ledger-v1",
+  "cycle": "003",
+  "delta": "01",
+  "date": "2026-09-28",
+  "status": "CLOSEOUT_PENDING_ARTIFACT_VERIFICATION",
+  "policy": "All 12 portfolio lanes have a progress event in this delta; evidence is lane-local and no result is promoted across lanes.",
+  "evidence_summary": {
+    "new_empirical_claims": false,
+    "live_qpu_executed": false,
+    "paid_job_submitted": false,
+    "pangola_coupons_fabricated": false,
+    "human_participant_study_started": false,
+    "capital_authorized": false,
+    "evidence_promotion": "none"
+  },
+  "lane_count": 12,
+  "lanes": [
+    {
+      "lane": "A",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Lowered the frozen ER6 p=1 mean-energy and CVaR candidates into provider-neutral OpenQASM 3 while preserving the six-qubit instance, hash, bit order and accepted-output contract; each candidate has 39 logical gate instructions (6 H, 18 CX, 9 RZ, 6 RX).",
+      "dependency": "Provider-valid transpilation, physical layout/depth, current calibration, QPU output and stronger classical baseline remain absent.",
+      "next_cycle": "Freeze a reproducible classical baseline and measure end-to-end time/resources against the same accepted-output contract."
+    },
+    {
+      "lane": "B",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Checked the official AWS Braket Rigetti Cepheus tariff on 2026-09-28. Two 8,192-shot tasks produce $7.5632 task-plus-shot arithmetic; provider tariff is kept separate from execution evidence.",
+      "dependency": "Full AWS/cloud bill, provider-matched execution/billing provenance, credentials, quote and authorization remain absent.",
+      "next_cycle": "Update official terms/quote and provider-ready packet; preserve the no-job gate and do not mix providers."
+    },
+    {
+      "lane": "C",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Computed exact output payload bounds for six measured bits and 8,192 shots: 49,152 raw bits (6,144 packed bytes) per candidate and 12,288 packed bytes for the pair; two bits label one of four accepted identities.",
+      "dependency": "Provider serialization size and measured transfer, persistence, readout and decode time remain unknown.",
+      "next_cycle": "Measure local serialization, persistence and decode bytes/times reproducibly; keep provider transfer values null absent a run."
+    },
+    {
+      "lane": "D",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Recorded published distance-5 cat-code context: five storage modes, four syndrome ancillas and a 2.8 μs cycle; no project-side memory service contract is supplied.",
+      "dependency": "No matched UQPU target, live calibration, hardware reproduction or source-level complete control/readout/decoder cost.",
+      "next_cycle": "Define service/retention contract first; extract source-level control/readout/decoder resources and state device dependencies."
+    },
+    {
+      "lane": "E",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Refreshed official ASTM D4935 catalog metadata: active D4935-18(2026), designation D4935-18R26, listed at $80 on 2026-09-28; page scope and uncertainty factors were recorded.",
+      "dependency": "Full method text is unavailable to the project; no purchase authorization, matched material input, or project compliance evidence.",
+      "next_cycle": "Use authorized text access if available; reconcile feedstock, resin and incumbent/candidate requirements before fabrication."
+    },
+    {
+      "lane": "F",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Built a full-stack accepted-output cost schema; provider tariff arithmetic is isolated and all unknown bill, orchestration, queue, transfer/storage, retry, mitigation/decoder, energy/cooling, capital and acceptance-count fields remain null.",
+      "dependency": "No provider bill or observed accepted-output denominator; classical baseline and lifecycle costs unmeasured.",
+      "next_cycle": "Extend ledger with all provider, host, queue, storage, retry, mitigation, energy, labor and classical baseline components."
+    },
+    {
+      "lane": "G",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Updated the no-fabrication readiness gate with current ASTM scope and catalog edition plus material, mismatch, dynamic-range and ancillary-equipment uncertainty factors.",
+      "dependency": "Authenticated feedstock, fixed resin/hardener/cure, method access and metrology uncertainty remain unresolved; no fabrication or VNA measurement.",
+      "next_cycle": "Complete a no-fabrication readiness review of provenance, resin/cure and uncertainty against the measurement range."
+    },
+    {
+      "lane": "H",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Rechecked CAP-DMF-EMI-001 and CAP-BOSONIC-001 against Cycle 003 evidence; both retain NOT_AUTHORIZED status and null capital at risk.",
+      "dependency": "No decision-ready experimental evidence or costed capital proposal; this automation authorizes no spend.",
+      "next_cycle": "Reconcile gate evidence only; keep amounts null and make no funding or purchase decision."
+    },
+    {
+      "lane": "FND/EQN",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Recorded Putterman et al.'s reported 1.65±0.03% distance-5 logical error at |α|²=1.5 and 2.8 μs syndrome cycle. Derived TX≥42.424 μs only from the central value, nonnegative bit-flip probability and source equations.",
+      "dependency": "No project target or retention horizon; raw Zenodo data were not extracted due rate limiting; the inference is not a confidence/lifetime result.",
+      "next_cycle": "Retry primary-data retrieval and separate per-cycle error, lifetime, component rates and uncertainty before modeling a target."
+    },
+    {
+      "lane": "SCM",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Generated deterministic CAL-001 synthetic fixture with 128 control and 128 known-interference trials, raw hashes and a replication schema. Fixed fixture detects all 128 injected cases with zero control triggers under a 4σ/2-of-6 rule; truth and trial ledger are labeled in the same artifact.",
+      "dependency": "Synthetic counts do not estimate physical detector performance; bundle is unsealed at rest; independent site and human study are absent.",
+      "next_cycle": "Design a two-party synthetic-only blinded handoff with separately controlled truth, a pre-frozen scorer and manifest; test unseal controls."
+    },
+    {
+      "lane": "AI-COST",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Converted the owner-defined 50,000 THB ceiling at 33.045 THB/USD to $1,513.088213043 before other costs; zero-fixed-cost shares against $10T/$100T proxies are 1.513088213043e-10/1.513088213043e-11.",
+      "dependency": "No functionally equivalent AI workload, measured incumbent baseline, provider bill or residual allowable-cost calculation.",
+      "next_cycle": "Specify one functionally equivalent task, quality gate and baseline provenance before any residual-cost calculation."
+    },
+    {
+      "lane": "QOS/QSVT",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Added hashed provider-neutral OpenQASM 3 payloads and logical gate/readout counts for both candidates under the ER6 contract; no provider-specific compilation is claimed.",
+      "dependency": "No independent provider compilation, physical resource/shot accounting or application-specific QSVT certificate.",
+      "next_cycle": "Cross-parse/reconstruct the saved circuit with an independent SDK, record decomposition/serialization, and keep hardware/QSVT promotion gated."
+    }
+  ],
+  "source_register": [
+    {
+      "id": "cycle002-er6-contract",
+      "ref": "benchmarks/experiments/cycle002-delta01-er6-frozen-contract.json"
+    },
+    {
+      "id": "batch020-provider-protocol",
+      "ref": "benchmarks/experiments/batch020-er6-mean-vs-cvar-real-qpu-protocol.json"
+    },
+    {
+      "id": "cycle003-er6-provider-neutral-manifest",
+      "ref": "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-manifest.json",
+      "sha256": "6e2df63eb26f38b7ba1c6da26df5f31622c16b32f1349b5ded20b1f09fffe511"
+    },
+    {
+      "id": "cycle003-scm-synthetic-cal001",
+      "ref": "benchmarks/results/cycle003-delta01-scm-cal001-synthetic.json",
+      "sha256": "393b8ef61c7bb0c0f22b95a51814a5865d371916f67d284e78cb2c34eb6c7f7d",
+      "dataset_bundle_sha256": "553381511defb23c374cf10c7ea6fdb5cf880f3142f161cc527a970ba44a89c2"
+    },
+    {
+      "id": "nature-bosonic-qec",
+      "url": "https://www.nature.com/articles/s41586-025-08642-7",
+      "publication_date": "2025-02-26",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_PUBLISHED_EXPERIMENT_PLUS_CENTRAL_VALUE_ARITHMETIC_INFERENCE"
+    },
+    {
+      "id": "nature-data",
+      "url": "https://doi.org/10.5281/zenodo.14257632",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_DATA_RECORD_CITED_RAW_FILES_NOT_RETRIEVED"
+    },
+    {
+      "id": "aws-braket-pricing",
+      "url": "https://aws.amazon.com/braket/pricing/",
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_TARIFF_ARITHMETIC_NOT_QUOTE_OR_BILL"
+    },
+    {
+      "id": "astm-d4935-catalog",
+      "url": "https://store.astm.org/standards/d4935",
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_CATALOG_METADATA_NO_PROJECT_METHOD_ACCESS"
+    }
+  ],
+  "verification": {
+    "workflow": ".github/workflows/uqpu-tests.yml",
+    "all_runs_success": false,
+    "runs": [
+      {
+        "run_number": 485,
+        "run_id": 36358936101,
+        "commit_sha": "3494042aaac89cfeb36d8fbdd6b6a3ca65449065",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36358936101"
+      },
+      {
+        "run_number": 486,
+        "run_id": 36359275988,
+        "commit_sha": "7b3ca1fde4a34238f40408df51236600cf4a4a61",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36359275988"
+      }
+    ],
+    "coverage_note": "Runs #485 and #486 succeeded across the configured workflow jobs. Local Cycle 003 tests pass 10/10 with generated artifacts present. A final GitHub Actions run will make the artifact-to-generator equality check mandatory and verify the committed files."
+  },
+  "closure": {
+    "cycle_closed": false,
+    "closure_basis": [
+      "all 12 portfolio lane progress events recorded",
+      "provider-neutral circuit, cost, source and synthetic-calibration artifacts generated and content-hashed",
+      "cycle report and Cycle 004 handoff recorded",
+      "artifact-inclusive GitHub Actions run is still pending"
+    ],
+    "evidence_promotion": "none"
+  }
+}
