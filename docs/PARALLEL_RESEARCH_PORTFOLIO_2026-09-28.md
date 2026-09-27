@@ -9,8 +9,10 @@
 3. [Shared evidence gates](#3-shared-evidence-gates)
 4. [Current parallel work packets](#4-current-parallel-work-packets)
 5. [Dependencies](#5-dependencies)
-6. [Cadence](#6-cadence)
-7. [Promotion rule](#7-promotion-rule)
+6. [Synchronized cadence](#6-synchronized-cadence)
+7. [Cross-lane integration fabric](#7-cross-lane-integration-fabric)
+8. [Timeline progress contract](#8-timeline-progress-contract)
+9. [Promotion rule](#9-promotion-rule)
 
 ## 1. Purpose
 Run multiple independent research directions concurrently while preventing a result in one lane from being misrepresented as evidence for another. Parallelism is for search breadth and throughput, not weaker standards.
@@ -80,14 +82,57 @@ Continue CAL-001, DEC-001 and INF-001 as measurement/information-control infrast
 - SCM can reuse D sensing, C information bounds, A protocol/compiler concepts, F economics and G metrology; it cannot inherit their evidence for a spiritual source.
 - AI-COST depends on A/C/B/F and eventually D/G for hardware reality.
 
-## 6. Cadence
-Run a portfolio cycle rather than a single linear queue:
-1. one cheapest decisive experiment/model per active lane;
-2. CI/reproducibility check;
-3. evidence-state update;
-4. cross-lane dependency update;
-5. kill/continue/escalate decision;
-6. only verified discoveries enter root `articles/`.
+## 6. Synchronized cadence
+The portfolio is **synchronous, not round-robin**. Every named lane must receive a recorded progress event in every portfolio cycle. A progress event may be a new experiment, model, proof, dataset, benchmark, literature delta, executable artifact, external-evidence check, negative/null result, blocker reduction, or explicit gate-state update.
 
-## 7. Promotion rule
-Parallel execution never means simultaneous promotion. Each lane advances only when its own evidence gate passes. Negative/null results remain first-class outputs and may terminate expensive branches early.
+A cycle is incomplete if a lane silently receives no update. When a lane is externally blocked, its required progress is to reduce the blocker: freeze a protocol, improve a baseline, prepare a reproducibility package, quantify an uncertainty, or identify the next externally dependent action.
+
+Cycle sequence:
+1. freeze one bounded work packet for **every lane**;
+2. execute independent packets concurrently where dependencies allow;
+3. execute shared integration packets once and feed their outputs to all dependent lanes;
+4. run CI/reproducibility/evidence checks;
+5. update every lane's status and delta;
+6. update cross-lane dependency edges;
+7. record continue / kill / blocked / escalate;
+8. only independently qualifying discoveries may approach root `articles/`.
+
+## 7. Cross-lane integration fabric
+Integration is encouraged wherever the causal interface is explicit.
+
+| Integration cluster | Shared object | Participating lanes |
+|---|---|---|
+| Useful-output stack | identical task/output contract, latency, accepted quality, lifecycle cost | A + B + C + F + AI-COST + QOS |
+| Device-to-factory stack | measurable device requirements, material properties, process windows, metrology, yield | D + E + G + F |
+| Deep-theory stack | lower bounds, candidate equations, falsifiers, measurable observables | FND/EQN + A + C + D + E |
+| Sensor/information stack | calibration, provenance, null models, decoding, authentication | D + C + A + SCM |
+| Energy/material/economics stack | energy flow, cooling, feedstock/material functional unit, CAPEX/OPEX | E + F + G + H |
+| Commercialization stack | evidence state, stage gate, capital at risk, dependency graph | F + H + all producing lanes |
+| Fiction/research transfer | evidence boundary, device consequence, social/economic consequence | SCM + H + FND/EQN + relevant A-G lanes |
+
+**Integration rule:** reuse methods, measurements, code, constraints and economic models; never copy an evidence status across a causal boundary. For example, a validated magnetometer is a validated sensor, not a validated spiritual-source detector.
+
+## 8. Timeline progress contract
+Every portfolio-cycle ledger must contain one row for each lane below.
+
+| Lane | Required per-cycle delta |
+|---|---|
+| A | algorithm/workload/compiler evidence delta |
+| B | provider/execution/provenance delta |
+| C | memory/state/I-O delta |
+| D | device/physics/sensing delta |
+| E | materials/biomass/energy-material delta |
+| F | economics/evidence/uncertainty delta |
+| G | fabrication/metrology/yield delta |
+| H | strategy/capital/commercialization delta |
+| FND/EQN | mathematical/physical hypothesis or falsification delta |
+| SCM | measurement/information/canon-transfer delta |
+| AI-COST | functional-equivalence/end-to-end cost delta |
+| QOS/QSVT | synthesis/certificate/resource delta |
+
+A lane may report `BLOCKED_WITH_PROGRESS` only if the cycle records what was learned, what dependency is missing, and what preparatory artifact was completed. `NO_UPDATE` is not an acceptable steady-state status.
+
+This contract means all timelines advance together at the portfolio level even though scientific maturity and gate promotion will differ across lanes.
+
+## 9. Promotion rule
+Synchronized progress does **not** mean synchronized scientific promotion. Each lane advances evidence state only when its own gate passes. Negative/null results are first-class progress. Cross-lane integration may accelerate a gate but cannot bypass it.
