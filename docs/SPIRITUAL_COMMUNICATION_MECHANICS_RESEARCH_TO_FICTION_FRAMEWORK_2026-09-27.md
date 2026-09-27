@@ -5,6 +5,41 @@
 **Primary use:** `คำภีร์โลกาธิบดี` five-volume literary canon and falsifiable speculative worldbuilding.  
 **Evidence boundary:** This document does **not** establish ghosts, surviving post-mortem consciousness, other realms, cross-realm communication, portals, or an inter-realm economy as demonstrated physical phenomena.
 
+## Table of Contents — สารบัญงานวิจัย
+
+1. [Purpose — วัตถุประสงค์](#1-purpose)
+2. [Four epistemic layers — ระดับสถานะของหลักฐาน](#2-four-epistemic-layers)
+3. [Core fictional communication model — แบบจำลองช่องสัญญาณข้ามภพ](#3-core-fictional-communication-model)
+4. [Device ladder — ลำดับเทคโนโลยี SCM-1 ถึง SCM-5](#4-device-ladder-for-the-novels)
+   - [SCM-1 Anomaly Detector](#scm-1--anomaly-detector)
+   - [SCM-2 Cross-Realm Imager](#scm-2--cross-realm-imager)
+   - [SCM-3 Inter-Realm Communicator](#scm-3--inter-realm-communicator)
+   - [SCM-4 Realm/Spacetime Portal](#scm-4--realmspacetime-portal)
+   - [SCM-5 Inter-Realm Economy](#scm-5--inter-realm-economy)
+5. [Falsifiable discovery ladder — วิธีพัฒนาสมมติฐานให้ตรวจสอบได้](#5-falsifiable-discovery-ladder)
+6. [Real literature anchors and tensions — ฐานวรรณกรรมวิชาการและข้อโต้แย้ง](#6-real-literature-anchors-and-tensions)
+7. [Five-volume narrative integration — การเชื่อมคำภีร์โลกาธิบดีทั้ง 5 เล่ม](#7-five-volume-narrative-integration)
+8. [Recurring scene grammar — โครงสร้างฉากวิทยาศาสตร์–จิตวิญญาณ](#8-recommended-recurring-scene-grammar)
+9. [Research sources — แหล่งข้อมูลวิจัย](#9-research-sources-consulted-for-this-framework)
+10. [YouTube-source boundary — สถานะคลิปต้นทาง](#10-youtube-source-boundary)
+11. [Canon safety rule — กฎแยกหลักฐานกับโลกสมมติ](#11-canon-safety-rule)
+
+### Research Navigation Map
+
+| Research question | Primary section | Technology/output |
+|---|---|---|
+| เราตรวจพบ “ความผิดปกติ” โดยไม่รีบเรียกว่าผีได้อย่างไร? | §2–4 | SCM-1 |
+| จะสร้างภาพโดยลด pareidolia / sensor / AI artifacts ได้อย่างไร? | §3–5 | SCM-2 |
+| อะไรทำให้ anomaly กลายเป็นการสื่อสารสองทางจริงในโลกนิยาย? | §3–5 | SCM-3 |
+| การสื่อสารต่างจากการเคลื่อนย้ายข้ามมิติอย่างไร? | §4–6 | SCM-4 |
+| เศรษฐกิจข้ามภพต้องมีเงื่อนไขอะไรบ้าง? | §4, §7 | SCM-5 |
+| สมการหรือฟิสิกส์ใหม่ต้องผ่านอะไรจึงเลื่อนสถานะได้? | §2, §5 | Falsification / replication gate |
+| งานวิจัยจริงถูกนำเข้าวรรณกรรมอย่างไรโดยไม่กลายเป็นข้ออ้างเกินหลักฐาน? | §6–11 | Five-volume canon integration |
+
+**Reading order:** Evidence boundary → measurement/null model → communication → transport → economics → literary integration. This ordering is intentional: later technology never inherits validity merely because an earlier fictional stage exists.
+
+---
+
 ## 1. Purpose
 
 Develop a coherent fictional technology family called **Spiritual Communication Mechanics (SCM; กลศาสตร์การสื่อสารทางจิตวิญญาณ)** while preserving the project's evidence discipline. Present physics remains binding for real-world engineering. Religious cosmology, reported anomalous experiences, contested experiments, and fictional mechanisms are kept as distinct epistemic layers.
