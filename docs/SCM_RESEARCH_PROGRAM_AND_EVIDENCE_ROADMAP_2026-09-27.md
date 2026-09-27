@@ -188,7 +188,7 @@ Treat these as first-class negative evidence:
 
 **SCM-GATE-004 — Independent replication contract.** Freeze hardware/software/data schema so a second team can reproduce a positive or negative result.\n\n**Implemented protocol artifacts:** [SCM-GATE-002 blinded decoder benchmark](SCM_GATE_002_BLINDED_DECODER_PAREIDOLIA_BENCHMARK_2026-09-28.md) and [SCM-GATE-003 cryptographic challenge-response protocol](SCM_GATE_003_CRYPTOGRAPHIC_CHALLENGE_RESPONSE_PROTOCOL_2026-09-28.md). These are control/protocol infrastructure, not evidence of a cross-realm source.
 
-Only after a robust SCM-E4/E5 result should equation discovery attempt to fit a new coupling mechanism to data.
+**Implemented replication artifact:** [SCM-GATE-004 Independent Replication Contract](SCM_GATE_004_INDEPENDENT_REPLICATION_CONTRACT_2026-09-28.md). GATE-001–004 now form the control/protocol infrastructure for SCM Phase 1; they are not empirical evidence of a cross-realm source.\n\nOnly after a robust SCM-E4/E5 result should equation discovery attempt to fit a new coupling mechanism to data.
 
 ## 13. Five-volume canon transfer
 
