@@ -210,3 +210,4 @@ This transfer is narrative architecture, not evidence that the fictional breakth
 - PubMed PMID 34147342 — triple-blind mediumship accuracy study.
 - Nature Reviews Clean Technology (2025), quantum sensing for emerging energy technologies, DOI 10.1038/s44359-025-00112-7.
 
+\n\n## 14. Phase 2 — Preregistered experimental design\n\nPhase 1 GATE-001–004 supplies control/protocol infrastructure. Phase 2 is now defined in [SCM PHASE 2 — Preregistered Experimental Design Program](SCM_PHASE_2_PREREGISTERED_EXPERIMENTAL_DESIGN_2026-09-28.md). The first target is ordinary known-interference calibration (SCM-P2-CAL-001), followed by blinded decoder controls and only then a prospective information-channel design. Phase-2 readiness is not empirical evidence.\n
