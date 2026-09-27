@@ -1,7 +1,7 @@
 # Synchronized Multi-Lane Cycle 001 — Execution Delta 07
 
 **Date:** 2026-09-28  
-**Status:** ALL-LANE DELTA / EXECUTABLE LEDGERS + GATES / NO NEW EMPIRICAL CLAIM
+**Status:** CYCLE 001 CLOSED AFTER CI + LANE RECONCILIATION / NO NEW EMPIRICAL CLAIM
 
 ## 1. Artifacts
 
@@ -42,14 +42,32 @@ The existing literature snapshot remains the source anchor for biomass-derived E
 ## 4. Verification and cycle state
 
 - Delta 07 unit tests: 8/8 pass locally.
-- Full repository CI remains a required gate on Python 3.10, 3.11 and 3.12; check the GitHub Actions run for this delta before closing Cycle 001.
-- Cycle 001 stays active until CI and every-lane evidence states are reconciled. Delta 07 is not an empirical result or automatic evidence promotion.
+- GitHub Actions run `36351995323` completed successfully: unit/invariant suites on Python 3.10, 3.11 and 3.12, reference benchmark, target-snapshot noise, Qiskit verification, QSP phase synthesis and phase reconstruction.
+- Every lane has a Delta 07 record and evidence state in Sections 2–3. Cycle 001 is closed as a synchronized research/governance cycle; no lane has been promoted past its own evidence gate.
+- Empirical dependencies remain open and move to Cycle 002. Cycle closure is not an empirical result or automatic evidence promotion.
 
-## 5. Delta 08 packet
+## 5. Cycle 001 lane reconciliation
 
-- **A/B/C/QOS:** freeze one Ising instance hash and populate matched classical/quantum ledgers; preserve provider data as unknown until an authorized run supplies it.
-- **D/FND/EQN:** select one bosonic encoding and sourced logical-memory contract, then populate the complete resource ledger or record the exact missing source fields.
-- **E/G:** select the incumbent and precommit the frequency band and process recipe before a Pangola coupon is fabricated or measured.
-- **F/H/AI-COST:** attach verified provider/fixed-cost evidence when available and re-evaluate residual headroom; leave the capital amounts blank pending the gate inputs.
-- **SCM:** run the evaluator against frozen primary and independent second-site packages; human-participant work remains subject to ethics and consent governance.
-- Reconcile each row against the portfolio timeline contract; record `CONTINUE`, `BLOCKED_WITH_PROGRESS`, or `KILL` for every lane.
+| Lane | Closeout state | Reconciled blocker / carry-forward |
+|---|---|---|
+| A | `BLOCKED_WITH_PROGRESS` | same-instance classical/quantum resources remain unpopulated |
+| B | `BLOCKED_WITH_PROGRESS` | no authorized provider run or bill is present |
+| C | `BLOCKED_WITH_PROGRESS` | measured state, memory and I/O data remain absent |
+| D | `BLOCKED_WITH_PROGRESS` | bosonic target and observed device values still need a sourced task |
+| E | `BLOCKED_WITH_PROGRESS` | Pangola lot, incumbent and coupon measurements are pending |
+| F | `BLOCKED_WITH_PROGRESS` | provider and other fixed costs are still unknown |
+| G | `BLOCKED_WITH_PROGRESS` | process, metrology, yield and cost have not been measured |
+| H | `BLOCKED_WITH_PROGRESS` | stage gates are defined; no capital amount is budgeted or authorized |
+| FND/EQN | `BLOCKED_WITH_PROGRESS` | named primitive has a falsifiable ledger; matched task data are pending |
+| SCM | `BLOCKED_WITH_PROGRESS` | evaluator is ready; primary and independent replication packages are absent |
+| AI-COST | `BLOCKED_WITH_PROGRESS` | necessary-condition link is executable; provider/fixed-cost evidence is pending |
+| QOS/QSVT | `BLOCKED_WITH_PROGRESS` | matched useful-output resource values and synthesis overhead are pending |
+
+## 6. Cycle 002 — Delta 01 starting packet
+
+- **A/B/C/QOS:** freeze a hash-identified Ising instance and source-backed equal-output parameters; populate what can be reproduced locally, leaving real-provider fields untouched.
+- **D/FND/EQN:** choose a published bosonic-QEC result and extract the logical task/target plus preparation, control, readout and decoding fields with exact source references.
+- **E/G:** source a defensible incumbent/test method, then freeze Pangola coupon frequency band and process recipe before any fabrication or measurement.
+- **F/H/AI-COST:** obtain official provider price inputs or keep them explicitly unknown; re-evaluate the necessary-condition budget without authorizing expenditure.
+- **SCM:** use the evaluator only on frozen packages; preserve the independent-site and consent/ethics requirements.
+- Issue a fresh status and progress event for all 12 lanes in Cycle 002 Delta 01, even when a lane remains `BLOCKED_WITH_PROGRESS`.
