@@ -5,7 +5,7 @@
 | Date | 2026-09-28 |
 | Branch | `research/cycle-014-delta-01-2026-09-28` |
 | Base | Verified Cycle 013 closeout `06218a1f6ad053fe96d1086305431e1260a2d5d4` |
-| State | All 12 local contracts pass; exact-SHA GitHub Actions pending |
+| State | Cycle 014 closed; exact-SHA GitHub Actions passed 8/8; external gates remain open |
 
 ## Canonical process and evidence state
 
@@ -36,7 +36,7 @@ No lane is `NO_UPDATE`. All 12 lanes remain `BLOCKED_WITH_PROGRESS`; no external
 - Cycle 012 + 013 + 014 regression suite in the validation workspace: **39/39 passed**.
 - `py_compile` for the Cycle 014 module, runner and tests: passed.
 - Acceptance artifact: `benchmarks/results/cycle014-delta01-executable-acceptance.json`; payload SHA-256 `d7fce2d11826819b55e2b5e618926e621d579b15677645b0ce0ad4bc4a153c98`; artifact SHA-256 `a979c10300b0d5d489f31d6549434beb713535b2dc2849db3075655a826cf5b8`. Source hashes are recorded in the artifact.
-- Exact-SHA repository Actions are pending publication. Cycle 014 remains open until that run is inspected and recorded.
+- Exact-SHA GitHub Actions [run 36443790588](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36443790588) on `766442bbc84e08f75aa81bd19cab4f3b99b9260d` passed **8/8 jobs**: test (3.10), test (3.11), test (3.12), qiskit-verification, qsp-phase-synthesis, qsp-phase-reconstruction-v040, reference-benchmark and target-snapshot-noise. The research branch has been rechecked at the exact code/evidence SHA.
 
 ## Primary sources and uncertainty
 
@@ -47,6 +47,6 @@ No lane is `NO_UPDATE`. All 12 lanes remain `BLOCKED_WITH_PROGRESS`; no external
 
 Scenario grids, covariance values, receipt and AI metrics are synthetic. Their numeric outputs are exact only for the declared fixtures. No hardware performance, provider execution/bill, calibrated measurement, commercial economics, new physical law, capital authorization, or empirical spiritual communication is claimed.
 
-## Next gate
+## Closeout and next gate
 
-Run and inspect GitHub Actions for the exact published code/evidence SHA, fix feasible failures, record all job results, close Cycle 014 and prepare the Cycle 015 handoff. Do not merge to `main`.
+Cycle 014 is closed at the documentation closeout commit after exact code/evidence SHA `766442bbc84e08f75aa81bd19cab4f3b99b9260d` passed Actions 8/8. All external lane gates remain open. The Cycle 015 handoff is included; start its dedicated branch from the exact Cycle 014 closeout SHA. Do not merge to `main`.
