@@ -36,7 +36,7 @@
     "No empirical SCM coupling, new physical law, quantum advantage, GPU replacement, or QPU execution."
   ],
   "fixtures_artifact": "benchmarks/experiments/cycle010-delta01-preregistered-gates.json",
-  "full_cycle_closeout_pending": true,
+  "full_cycle_closeout_pending": false,
   "lane_count": 12,
   "lanes": {
     "A": {
@@ -150,15 +150,23 @@
       "implementation_sha256": "70564fa6072d1b51d8fc6e66fe52b01b501d578e9e72e142d2238bf0c915f3de",
       "next_handoff_sha256": "4836d854a630140a926743adc32a91e508be26a2e7349d0b150a3a872bf3f7f8",
       "open_gates_sha256": "2fb633a6799ef6f3774a8d26dbaae3ac739ba348ac58d7cfcf92eaedfa3c7b7a",
-      "report_sha256": "d2ed1b8f0ff315aff8290d1b6e47054ce6ced2f1a74cc4a3639408f702a13b45",
+      "report_sha256": "dd192f6cefb1f7cbd9eb84dd5f44ee7676b26872030a5d8b78c7aa265f7adbfe",
       "runner_sha256": "781cc2cb9b78f1604505aec0711b0dbdb673e119135fa4edd78bc922f17d6adf",
       "tests_sha256": "654eca7b8e4d0eb22cb2ad074d21c0e44a327471f8217f3241ae84ddaab7f896",
-      "worklog_sha256": "7a33f5985d854efcc72ba7793dfa75483bb8233c88b5b5bc139aa60a119dbaf5"
+      "worklog_sha256": "a7a26ad99e49e476069838e9351e6ccdbd8d499d0b1ddb1df82a673b3703dfaf"
     },
-    "status": "PASS_LOCAL_ACCEPTANCE_EXACT_SHA_CI_PENDING"
+    "status": "PASS_LOCAL_ACCEPTANCE_EXACT_SHA_ACTIONS_PASSED",
+    "evidence_commit": "fcf1ff0103d70f873fe582a469dce48a04517750",
+    "github_actions": {
+      "commit_sha": "fcf1ff0103d70f873fe582a469dce48a04517750",
+      "jobs_passed": 8,
+      "run_id": 36429361264,
+      "run_number": 512,
+      "status": "PASS"
+    }
   },
   "next_cycle_handoff": "docs/SYNCHRONIZED_CYCLE_011_HANDOFF_2026-09-28.md",
-  "next_falsifiable_gate": "Publish the exact software/evidence SHA, inspect every configured GitHub Actions job for it, then record the closeout.",
+  "next_falsifiable_gate": "Create and verify the Cycle 011 research branch from the exact remote Cycle 010 metadata closeout commit, then execute all 12 handoff packets.",
   "nonclaims": [
     "The MaxCut fixtures are finite seeded classical software comparisons, not GPU/QPU evidence, competitive baselines, or scaling claims.",
     "All material, cost, uncertainty, AI, and SCM positive records are synthetic; gate-ranking inputs are assumptions.",
@@ -191,7 +199,7 @@
   ],
   "report": "docs/SYNCHRONIZED_CYCLE_010_EXECUTION_DELTA_01_2026-09-28.md",
   "schema": "uqpu-cycle010-delta01-synchronized-lane-ledger-v1",
-  "status": "ACTIVE_ALL_12_LANE_EXECUTABLE_CHECKPOINT_NOT_CLOSED",
+  "status": "CLOSED_SYNCHRONIZED_RESEARCH_CYCLE_NO_EVIDENCE_PROMOTION",
   "uncertainty": [
     "Host runtime varies by environment and is reported separately from objective/gap.",
     "The 2x2 expanded uncertainty is a synthetic calculation; no metrology result or coverage guarantee is inferred.",
@@ -216,12 +224,16 @@
       "tests_run": 516
     },
     "github_actions": {
-      "commit_sha": null,
-      "jobs_passed": 0,
-      "run_id": null,
-      "run_number": null,
-      "status": "PENDING_EXACT_SHA"
+      "commit_sha": "fcf1ff0103d70f873fe582a469dce48a04517750",
+      "job_count": 8,
+      "jobs_passed": 8,
+      "run_id": 36429361264,
+      "run_number": 512,
+      "status": "PASS",
+      "workflow": ".github/workflows/uqpu-tests.yml"
     },
-    "local_validation": "PASS"
-  }
+    "local_validation": "PASS; exact remote code/evidence SHA passed Actions 8/8"
+  },
+  "closed_date": "2026-09-28",
+  "verified_evidence_commit": "fcf1ff0103d70f873fe582a469dce48a04517750"
 }

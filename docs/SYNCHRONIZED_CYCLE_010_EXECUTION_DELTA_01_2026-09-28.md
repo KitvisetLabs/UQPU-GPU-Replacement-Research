@@ -2,7 +2,7 @@
 
 | Date | Branch | Base closeout | State |
 |---|---|---|---|
-| 2026-09-28 | `research/cycle-010-delta-01-2026-09-28` | Cycle 009 closeout `e3157fc47bd6d125636a7a3c5dccf869ced5ba32` | ACTIVE / LOCAL ALL-LANE ACCEPTANCE PASS / EXACT-SHA CI PENDING |
+| 2026-09-28 | `research/cycle-010-delta-01-2026-09-28` | Cycle 009 closeout `e3157fc47bd6d125636a7a3c5dccf869ced5ba32` | CLOSED / EXACT-SHA ACTIONS #512 PASSED 8/8 / NO EVIDENCE PROMOTION |
 
 ## Integrated contribution
 
@@ -30,16 +30,15 @@ their independent external evidence gates remain open.
 | AI-COST | The train/validation/test manifest hashes canonical synthetic source bytes and per-split metrics. Byte changes, overlap, missing metrics, and unsupported schema version reject before scoring. | Immutable real-data lineage and independently evaluated held-out quality, energy, and cost. |
 | QOS/QSVT | Frozen ER6 certificate binds source hash, qubit/bit register counts, measurement destinations, and resource bounds. Source, register, map, and resource mutations reject. Hardware receipt remains null. | Independent parser/SDK reconstruction, provider transpilation, and authorized hardware evidence. |
 
-## Verification and closeout gate
+## Verification and closeout
 
 - Focused Cycle 010 suite: **12/12 tests passed**.
 - Full prototype suite: **516 tests run**, **508 passed**, **8 optional-environment skips**.
 - `benchmarks/results/cycle010-delta01-executable-acceptance.json` records the
   full twelve-lane output, exact source/fixture hashes, process scopes,
   mutation errors, assumptions, uncertainties, and non-claims.
-- Exact-SHA GitHub Actions is still required. The code/evidence checkpoint
-  must be published and all configured jobs for that SHA verified before
-  Cycle 010 closes.
+- Code/evidence commit `fcf1ff0103d70f873fe582a469dce48a04517750` passed GitHub Actions **#512** (run ID `36429361264`) with **8/8 jobs successful**: Python 3.10, 3.11, and 3.12 tests; QSP phase synthesis; Qiskit verification; reference benchmark; QSP phase reconstruction; and target snapshot/noise checks.
+- The exact-SHA CI result is recorded in the synchronized ledger and work log. All twelve lanes remain `BLOCKED_WITH_PROGRESS`; this closes the portfolio cycle without promoting any external evidence gate.
 - Work remains on the dedicated research branch; no merge to `main` is made.
 
 ## Primary sources and evidence boundary
@@ -70,5 +69,4 @@ replacement, or empirical SCM claim is made.
 - `software/uqpu-prototype/examples/run_cycle010_delta01.py`
 - Next-cycle handoff: `docs/SYNCHRONIZED_CYCLE_011_HANDOFF_2026-09-28.md`
 
-**Closeout gate:** publish the exact code/evidence tree, verify its SHA in
-GitHub Actions, then record the verified run and close Cycle 010.
+**Closeout:** the published code/evidence SHA passed all 8 configured GitHub Actions jobs; the metadata closeout records run #512 and closes Cycle 010. Cycle 011 may start from the exact remote closeout SHA after it is verified.
