@@ -1,0 +1,33 @@
+{
+  "schema": "uqpu-cycle018-delta01-preregistered-gates-v1",
+  "cycle": "018",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-018-delta-01-2026-09-28",
+  "base_cycle017_closeout_sha": "f6646ad0dce25e734703d4f0b21365917c76b203",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {"status": "BLOCKED_WITH_PROGRESS", "unmeasured_values": null, "fiction_empirical_cast": "prohibited"},
+  "lanes": {
+    "A": {"graph": "10-node positive weighted MaxCut", "variants": ["unchanged", "edge 0 +1", "edge 0 +2"], "states": 1024, "acceptance": "task/result/witness hashes stable under orientation/order; changed edge changes task identity; no scaling claim"},
+    "B": {"receipt": "receipt-v5", "canonical_encoding": "project sorted-key compact UTF-8 JSON", "tests": ["scope", "request", "key rotation", "invoice null"], "acceptance": "fixture HMAC only; external authority/key/job/invoice/provider claim null"},
+    "C": {"fixture": "concurrent subprocess replacement", "controls": ["exit before replace", "exit after replace", "stale-stage cleanup", "active-name collision", "unsafe target"], "acceptance": "complete visible payload, active name survives stale cleanup, crash durability null"},
+    "D": {"format": "ZIP64 local header / central entry / descriptor", "disk": 1, "offset": 64, "mutations": ["flags", "filename", "disk", "descriptor sizes"], "acceptance": "all mismatches fail before payload reads"},
+    "E": {"events": 3, "terminal_head": "last event digest", "mutations": ["truncation", "replay", "reordering", "issuer revocation"], "acceptance": "invalid chain rejects; physical sample null"},
+    "F": {"components": 3, "accepted_outputs": [1, 2, 4, 0], "covariance": ["independent", "correlated", "indefinite", "non-finite"], "acceptance": "model-only bounds; invalid matrices and zero denominator null"},
+    "G": {"measurands": ["length:m", "mass:kg", "duration:s", "current:A"], "dimension_basis": "SI seven base dimensions", "acceptance": "pairwise unit/dimension products, expected ordering, symmetry and PSD; calibration null"},
+    "H": {"alternatives": ["identity", "positive-pair", "mixed-adverse"], "orders_each": 4, "acceptance": "finite stability range with explicit assumptions; no probability or capital claim"},
+    "FND/EQN": {"expression": "(m/s)*s / m", "result_unit": "1", "acceptance": "exact rational bounds and sort/source preserved; source mismatch rejects"},
+    "SCM": {"sort": "Fiction", "controls": ["nonce replacement", "replay", "consent scope transition"], "acceptance": "only fresh authorized fiction passes; empirical coupling null"},
+    "AI-COST": {"manifest_version": 8, "parent_version": 7, "tests": ["parent digest mutation", "held-out metric deletion"], "acceptance": "source/config/split/metric lineage bound; candidate/equivalence null"},
+    "QOS/QSVT": {"operator": "six-bit U followed by U inverse", "reconstruction_states": 64, "acceptance": "independent reconstruction residual and resource certificate; hardware null"}
+  },
+  "primary_sources": [
+    {"title": "PKWARE APPNOTE.TXT - .ZIP File Format Specification", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "version": "6.3.10 FINAL", "source_date": "2022-11-01", "access_date": "2026-09-28", "locator": "sections 4.3.7, 4.3.9, 4.3.12", "evidence_class": "PRIMARY_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-09-28", "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"},
+    {"title": "UQPU Unified Mathematical Language and Discovery Ledger", "source_revision": "f6646ad0dce25e734703d4f0b21365917c76b203", "locator": "UMRL-031", "evidence_class": "PROJECT_CANONICAL_INTERFACE"}
+  ],
+  "assumptions": ["All graph, receipt, custody, covariance, priority, lineage, and operator data are fixtures or models.", "Filesystem results are local process observations only.", "ZIP tests inspect only the declared records, not payload data."],
+  "uncertainty": "External provider evidence, crash durability, independent archive corpus, operational custody, measured lifecycle data, owner priorities, independent equation derivation, AI equivalence and physical operator evidence remain open; missing data are null.",
+  "nonclaims": ["No measured hardware result or quantum advantage.", "No provider authorization, bill, commercial economics or capital claim.", "No new physical law; SCM is fiction-only."],
+  "next_falsifiable_gate": "Run the Cycle 018 focused/regression suite, publish the code/evidence checkpoint and verify exact-SHA Actions."
+}

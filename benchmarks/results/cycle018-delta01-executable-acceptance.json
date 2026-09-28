@@ -1,0 +1,509 @@
+{
+  "schema": "uqpu-cycle018-delta01-executable-acceptance-v1",
+  "cycle": "018",
+  "status": "PASS_LOCAL",
+  "lane_count": 12,
+  "evidence_class": "LOCAL_SOFTWARE_SYNTHETIC_MODEL_AND_FICTION_ONLY",
+  "source_sha256": {
+    "preregistered_gates": "782b003ac70de3bcd698791bf73b03d4f07ecd706bc8363e03bb15b13335f701",
+    "implementation": "9e428d5087c88734aa69b69e8838b0e3141257747de606cd0a06924a8863144c",
+    "tests": "76dd1911eb0043b7aa96b29ed6483bde32d30b3e5fba7abb3f1e67d0c47669b5",
+    "runner": "ff995e1f52f16cf2ae29c11a5dc27094229ef5c076668180014875c29c702292",
+    "primary_source_review": "bdd02c9e390d756a685ee6ab068e79bf2521dba6adac3dd173e7039892bc951b",
+    "canonical_dimension_registry": "734284e08668b6d343daa9e15d096884bc06f657d847dbacb94cb07daeeb39e8",
+    "typed_goal_registry": "7c4f9070548f3cb74b577fb967683e3497ab1390b2005e74ad05fdde306d4f2c",
+    "scm_fiction_contract": "57d89236f08190cd61868101ff647e2fab3fc1c59c639483a03885a2efc61dee",
+    "umrl_interface": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
+  },
+  "source_evidence": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "revision_date": "2022-11-01",
+      "sections": [
+        "4.3.7",
+        "4.3.9",
+        "4.3.12"
+      ],
+      "accessed": "2026-09-28",
+      "use": "ZIP64 local/central/descriptor gate",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "accessed": "2026-09-28",
+      "use": "filesystem replacement limits",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "lanes": {
+    "A": {
+      "variants": [
+        {
+          "variant": "unchanged",
+          "task_sha256": "8dd37e6fff67cbf180435f5ee0515caac90c86127b5105b8678c2d66754e8b7a",
+          "result_sha256": "0a1c9ec1dd067b3ad7aaae1c2763b59ea9746b2d547424d853ff61c34545dd68",
+          "state_count": 1024,
+          "objective": 60,
+          "witness_sha256": "e3bb602240ff1d2c6d12638bd6a180dbf8583c431bf182b7d9713dd4c28a9b8f",
+          "scaling_claim": null
+        },
+        {
+          "variant": "edge_0_plus_one",
+          "task_sha256": "57d688a6c4cc97cfc12d101c1051192fae2c85c20440814bab96c12e420e40c3",
+          "result_sha256": "64997a8c0a87770e480c38ab7da471f04d7938b96460c759fa3638c5b7f9f119",
+          "state_count": 1024,
+          "objective": 61,
+          "witness_sha256": "e3bb602240ff1d2c6d12638bd6a180dbf8583c431bf182b7d9713dd4c28a9b8f",
+          "scaling_claim": null
+        },
+        {
+          "variant": "edge_0_plus_two",
+          "task_sha256": "edc528a0d927b80e7450a3bc57bf39a1dbab5f449022b3c7f96cae17e7e31a03",
+          "result_sha256": "3670d0235edba58331e87cc04c3b4fb2e36fd36674ae0669ea2882db42f2c694",
+          "state_count": 1024,
+          "objective": 62,
+          "witness_sha256": "e3bb602240ff1d2c6d12638bd6a180dbf8583c431bf182b7d9713dd4c28a9b8f",
+          "scaling_claim": null
+        }
+      ],
+      "unchanged_edges_invariant": true,
+      "changed_edge_index": 0,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "scaling_claim": null
+    },
+    "B": {
+      "cases": {
+        "canonical_reordering": true,
+        "rotated_key": true,
+        "scope_mutation_rejected": true,
+        "request_mutation_rejected": true,
+        "invoice_mutation_rejected": true,
+        "key_rotation_mutation_rejected": true
+      },
+      "missing_external_authority_key_job_invoice": null,
+      "provider_claim": null,
+      "evidence_class": "SYNTHETIC_RECEIPT_V5"
+    },
+    "C": {
+      "unsafe_name_rejected_before_write": true,
+      "process_exit_codes": [
+        0,
+        23,
+        23
+      ],
+      "live_name_survived_stale_cleanup": true,
+      "stale_stage_removed_after_exit": true,
+      "orphan_names_removed_after_all_exits": 1,
+      "visible_payload_complete": true,
+      "crash_durability": null,
+      "evidence_class": "LOCAL_PROCESS_FIXTURE"
+    },
+    "D": {
+      "name_sha256": "99f60a80be7350f062f19aa21d3f66186560ab24f9c3d0d4027aaeed0a57aa5b",
+      "disk": 1,
+      "offset": 64,
+      "sizes": [
+        8,
+        8
+      ],
+      "cross_bound": true,
+      "payload_read": false,
+      "evidence_class": "SYNTHETIC_ZIP64_CROSS_BIND"
+    },
+    "E": {
+      "terminal_event_sha256": "377ea0370e0f4e62564d8c3858a23243649fbc3db1095ea09cf7e9080481f776",
+      "negative_controls": {
+        "truncated": true,
+        "replayed": true,
+        "reordered": true,
+        "revoked_issuer": true
+      },
+      "physical_sample_claim": null,
+      "evidence_class": "SYNTHETIC_CUSTODY_NEGATIVE_CONTROL"
+    },
+    "F": {
+      "components": 3,
+      "sigma_multiplier": 1.0,
+      "scenarios": {
+        "independent": {
+          "total_usd": [
+            3.125834261322606,
+            6.874165738677394
+          ],
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": [
+                3.125834261322606,
+                6.874165738677394
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": [
+                1.562917130661303,
+                3.437082869338697
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": [
+                0.7814585653306515,
+                1.7185414346693486
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_NONPOSITIVE_DENOMINATOR"
+            }
+          ]
+        },
+        "correlated": {
+          "total_usd": [
+            3.0,
+            7.0
+          ],
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": [
+                3.0,
+                7.0
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": [
+                1.5,
+                3.5
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": [
+                0.75,
+                1.75
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_NONPOSITIVE_DENOMINATOR"
+            }
+          ]
+        },
+        "invalid": {
+          "total_usd": null,
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            }
+          ]
+        },
+        "nonfinite": {
+          "total_usd": null,
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            }
+          ]
+        }
+      },
+      "evidence_class": "MODEL_ONLY",
+      "commercial_interpretation": null
+    },
+    "G": {
+      "measurand_order": [
+        "length",
+        "mass",
+        "duration",
+        "current"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          1.0,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          1.0,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ]
+      ],
+      "positive_semidefinite": true,
+      "calibration": null,
+      "evidence_class": "SYNTHETIC_TYPED_FOUR_MEASURAND_COVARIANCE",
+      "order_sha256": "992cd86831a53a068ef83df703b305da5da866f386553d82665a783f384ff585"
+    },
+    "H": {
+      "alternatives": [
+        {
+          "name": "identity",
+          "correlation": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "stability_bounds": [
+            0.25,
+            0.25
+          ],
+          "scenario_count": 4,
+          "assumption": "identity scenario"
+        },
+        {
+          "name": "positive-pairs",
+          "correlation": [
+            [
+              1,
+              0.5,
+              0,
+              0
+            ],
+            [
+              0.5,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0.4
+            ],
+            [
+              0,
+              0,
+              0.4,
+              1
+            ]
+          ],
+          "stability_bounds": [
+            0.25,
+            0.25
+          ],
+          "scenario_count": 4,
+          "assumption": "positive pair stress"
+        },
+        {
+          "name": "mixed-adverse",
+          "correlation": [
+            [
+              1,
+              0.2,
+              0,
+              0
+            ],
+            [
+              0.2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              -0.3
+            ],
+            [
+              0,
+              0,
+              -0.3,
+              1
+            ]
+          ],
+          "stability_bounds": [
+            0.25,
+            0.25
+          ],
+          "scenario_count": 4,
+          "assumption": "mixed signed pair stress"
+        }
+      ],
+      "observed_stability_range": [
+        0.25,
+        0.25
+      ],
+      "capital": null,
+      "evidence_class": "ILLUSTRATIVE_SCENARIO_GRID",
+      "interpretation": "finite declared alternatives; no distribution or capital estimate",
+      "declared_alternatives": 3,
+      "declared_order_count": 12
+    },
+    "FND/EQN": {
+      "speed": {
+        "unit": "m/s",
+        "lower": [
+          1,
+          2
+        ],
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "recovered_length": {
+        "unit": "m",
+        "lower": [
+          1,
+          1
+        ],
+        "upper": [
+          8,
+          1
+        ]
+      },
+      "dimensionless": {
+        "unit": "1",
+        "lower": [
+          1,
+          4
+        ],
+        "upper": [
+          4,
+          1
+        ]
+      },
+      "source_mismatch_rejected": true,
+      "source_sha256": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2",
+      "sort": [
+        "RealModel",
+        "Model"
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL"
+    },
+    "SCM": {
+      "cases": {
+        "fresh": true,
+        "replacement_nonce": true,
+        "replay_rejected": true,
+        "unconsented_scope_transition_rejected": true
+      },
+      "sort": "Fiction",
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY"
+    },
+    "AI-COST": {
+      "manifest": {
+        "version": 8,
+        "parent_manifest_sha256": "826144903cdb0d7159d0b2af1b4c395ca28f2627e9acbac185dba69acc73a597",
+        "source_sha256": "4230faf43b2aacd906e10cabaa603fcd3f4f0a02b7f18a880bbf897059f333d3",
+        "split_hashes": {
+          "train": "362b2e5d9f84a403fa0fae999328e922b7bdb57772eda54b48bb5ff77fbd3e58",
+          "validation": "ecef3fd0fb07b742d559b77b2585e38e42579ed5075c12bf8f9d56a22580f273",
+          "test": "e4b4976db3c5b72f6354fa7a78ef3c93ffefac200ab89ccc84f3e547cfbbc634"
+        },
+        "metrics_sha256": "1661bc8d9c051611c44b77242c202dc4e719580d595d9161a36063e464141ebd",
+        "config_sha256": "b06794bcf08adb12c7beb114adc468f3aae408a25deb8ff27cc0c6d8552996b5",
+        "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+        "functional_equivalence": null,
+        "manifest_sha256": "6870301be7b9c2a81708a3c3e627fcb7423c9397fe50fca928054a3f4f26e8ab"
+      },
+      "candidate_result": null,
+      "status": "LINEAGE_BOUND_SYNTHETIC_ONLY"
+    },
+    "QOS/QSVT": {
+      "basis_states_checked": 64,
+      "residual": 0,
+      "resource_certificate_sha256": "b1953ab42a10d7773d338a843691412345c532e3e2dc74e79c3c07da24d3bf52",
+      "resource_regression_rejected": true,
+      "parent_mutation_rejected": true,
+      "hardware": null,
+      "evidence_class": "ER6_SYNTHETIC_INVERSE_PAIR"
+    }
+  },
+  "uncertainty": [
+    "local process/filesystem only",
+    "no independent ZIP producer corpus",
+    "finite cost/ranking scenarios are not probability distributions",
+    "custody/receipt/AI/QOS records are synthetic"
+  ],
+  "nonclaims": [
+    "no QPU/GPU performance, advantage or replacement",
+    "no provider authorization/execution/billing or commercial result",
+    "no crash/power-loss durability, physical sample, calibration or new physical law",
+    "no AI equivalence, capital claim or empirical SCM communication"
+  ],
+  "payload_sha256": "0bb1f9450003d2ccb9586d95a1a16b8f0a1f3e07517a88f78f2146170b4e1a1e"
+}
