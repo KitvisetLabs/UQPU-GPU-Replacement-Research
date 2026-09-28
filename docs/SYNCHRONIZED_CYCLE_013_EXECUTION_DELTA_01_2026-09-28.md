@@ -3,7 +3,7 @@
 Date: 2026-09-28  
 Branch: `research/cycle-013-delta-01-2026-09-28`  
 Base cycle closeout: Cycle 012, `707750fb4bec7d701d2c6c35f155c3e381c72b00`  
-Status: all 12 local lane contracts pass; exact-SHA GitHub Actions pending publication.
+Status: Cycle 013 closed after exact-SHA GitHub Actions passed all 8 jobs; external evidence gates remain open.
 
 ## Canonical state checked
 
@@ -38,7 +38,7 @@ All lanes remain `BLOCKED_WITH_PROGRESS`; none is `NO_UPDATE`. Cost/priority val
 - Available Cycle 012 + Cycle 013 regression suite: **26/26 passed** in the local validation workspace.
 - Python compile check: passed.
 - Executable acceptance artifact: `benchmarks/results/cycle013-delta01-executable-acceptance.json`; payload SHA-256 `0ac676a97f0ce0d224ea703c58c7d4924680e5d0c3efeef2d35de9870d7bc4f5`; artifact SHA-256 `3cf486eb2bb01e8eb6d305655ed9eed8fdd2e619d1801b4020a31a2791ac9a95`. Source hashes are recorded inside the artifact.
-- The repository's full GitHub Actions matrix on the exact checkpoint SHA is pending. Cycle 013 stays open until that remote run is inspected and recorded.
+- Exact-SHA GitHub Actions: [run 36442244923](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36442244923) on `9376f9808193318d914d45406256b33712e7e18e`, **8/8 jobs successful**. Jobs: test (3.10), test (3.11), test (3.12), qiskit-verification, qsp-phase-synthesis, qsp-phase-reconstruction-v040, reference-benchmark, target-snapshot-noise. The branch closeout records this run; external lane gates remain open.
 
 ## Primary sources reviewed (2026-09-28)
 
@@ -54,6 +54,6 @@ The cost interval, ranking shocks, covariance, consent events, archive layout, s
 
 No measured QPU/GPU performance, quantum advantage, GPU replacement, provider execution/bill, physical material/device result, commercial lifecycle economics, new physical law, capital authorization, or empirical spiritual communication is claimed.
 
-## Next falsifiable gate
+## Closeout and next falsifiable gate
 
-Publish the validated checkpoint to the research branch, inspect GitHub Actions for its exact SHA, fix feasible failures, record the exact run/jobs, then close Cycle 013 and hand off Cycle 014. Do not merge to `main`.
+Cycle 013 is closed at the documentation closeout commit after code/evidence SHA `9376f9808193318d914d45406256b33712e7e18e` passed exact-SHA Actions 8/8. All external evidence gates remain open. The next branch must start from the exact Cycle 013 closeout SHA, and Cycle 014 must advance all 12 lanes under the current canonical parallel portfolio. Do not merge to `main`.
