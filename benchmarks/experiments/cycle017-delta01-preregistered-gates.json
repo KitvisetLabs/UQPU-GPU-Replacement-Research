@@ -1,0 +1,38 @@
+{
+  "schema":"uqpu-cycle017-delta01-preregistered-gates-v1",
+  "cycle":"017","delta":"01","date":"2026-09-28",
+  "branch":"research/cycle-017-delta-01-2026-09-28",
+  "base_closeout":"4824f7f034411dbbf9eeca6b41590f902ac6fca6",
+  "portfolio":"docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "lanes":{
+    "A":"Run the 1,024-state 10-node weighted graph and a preregistered two-edge weight perturbation; record exact task/result hashes and comparator agreement.",
+    "B":"Add canonical receipt-v4 fixture bytes with key rotation/revocation and null job/invoice; no provider signature or claim.",
+    "C":"Reject path traversal/target collisions and confirm same-device parent/stage identity with concurrent complete-payload writers.",
+    "D":"Cross-bind ZIP64 local header, central entry, disk-relative offset, size sentinels and 64-bit descriptor before payload reads.",
+    "E":"Add custody completion-head binding, truncation and duplicate-sequence negatives to the multi-issuer chain.",
+    "F":"Compare shared and independent covariance over the accepted-output grid with invalid matrix and denominator nulls.",
+    "G":"Validate a three-measurand mixed-unit covariance block for m*m, m*s, kg*m, s*s, kg*s and kg*kg dimensions.",
+    "H":"Expand the explicit adverse ranking grid against the Cycle 016 stability range and keep capital null.",
+    "FND/EQN":"Compose registered rational m/s division with multiplication by s; preserve exact source/sort and reject zero-crossing denominator.",
+    "SCM":"Repeat nonce expiry/replay/scope/response controls in Fiction sort; empirical coupling null.",
+    "AI-COST":"Add a v7 manifest linked through v6/v5/v4 and keep candidate/equivalence null absent real evaluation.",
+    "QOS/QSVT":"Reconstruct a second six-bit operator against the Cycle 014 v4 parent; bind exact residual and null hardware."
+  },
+  "primary_sources":[
+    {"title":"PKWARE APPNOTE.TXT - .ZIP File Format Specification","url":"https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT","version":"6.3.10 FINAL","source_date":"2022-11-01","access_date":"2026-09-28","locator":"sections 4.3.7, 4.3.9 and 4.3.12-4.3.16","evidence_class":"PRIMARY_SPECIFICATION"},
+    {"title":"Python os.replace documentation","url":"https://docs.python.org/3/library/os.html#os.replace","access_date":"2026-09-28","evidence_class":"PRIMARY_LANGUAGE_DOCUMENTATION"},
+    {"title":"Python tempfile.mkstemp documentation","url":"https://docs.python.org/3/library/tempfile.html#tempfile.mkstemp","access_date":"2026-09-28","evidence_class":"PRIMARY_LANGUAGE_DOCUMENTATION"},
+    {"title":"NIST SP 330, Section 2","url":"https://www.nist.gov/pml/special-publication-330/sp-330-section-2","access_date":"2026-09-28","locator":"SI base dimensions","evidence_class":"PRIMARY_METROLOGY_REFERENCE"},
+    {"title":"UQPU Unified Mathematical Language and Discovery Ledger","url":"https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/research/cycle-017-delta-01-2026-09-28/00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md","source_revision":"4824f7f034411dbbf9eeca6b41590f902ac6fca6","locator":"UMRL-031 typed values, units, provenance and explicit sorts","evidence_class":"PROJECT_CANONICAL_INTERFACE"}
+  ],
+  "assumptions":[
+    "The weighted graph, receipt key, archive bytes, custody events, covariance and priority orders are local fixtures.",
+    "HMAC is a fixture authentication tag, not provider authorization or a digital signature.",
+    "A same-device process test does not establish crash, flush or power-loss durability.",
+    "Archive parsing stops at metadata; payload bytes are not read or authenticated.",
+    "AI/QOS and SCM inputs remain synthetic or fiction-only."
+  ],
+  "uncertainty":"Provider authorization/signature/job/invoice, crash durability, real archive behavior, operational custody, measured covariance/economics, owner priorities, independent derivations, AI equivalence and physical QOS remain unresolved; missing evidence is null.",
+  "evidence_boundary":"No hardware performance, provider execution, physical calibration, commercial economics, new physical law, capital authorization, AI equivalence or empirical SCM claim is made.",
+  "next_falsifiable_gate":"Run all Cycle 017 tests, publish the exact branch checkpoint and verify GitHub Actions on its triggering code SHA."
+}

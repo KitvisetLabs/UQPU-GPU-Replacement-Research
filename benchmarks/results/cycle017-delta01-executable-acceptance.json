@@ -1,0 +1,444 @@
+{
+  "all_external_gates_closed": false,
+  "all_lane_fixture_acceptance_passed": true,
+  "base_closeout": "4824f7f034411dbbf9eeca6b41590f902ac6fca6",
+  "branch": "research/cycle-017-delta-01-2026-09-28",
+  "cycle": "017",
+  "date": "2026-09-28",
+  "delta": "01",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "rows": [
+        {
+          "best_cut_weight": 60,
+          "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+          "reference_graph_sha256": "31f9ce53a2d32cb75272ce8e853cc703d448c33a9bbd3d53daee4769466d2dc6",
+          "result_sha256": "0a1c9ec1dd067b3ad7aaae1c2763b59ea9746b2d547424d853ff61c34545dd68",
+          "scaling_claim": null,
+          "state_count": 1024,
+          "task_sha256": "8dd37e6fff67cbf180435f5ee0515caac90c86127b5105b8678c2d66754e8b7a",
+          "witness_sha256": "e3bb602240ff1d2c6d12638bd6a180dbf8583c431bf182b7d9713dd4c28a9b8f"
+        },
+        {
+          "best_cut_weight": 63,
+          "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+          "reference_graph_sha256": "5f8aff57bb4fc23391ea77980767e57a7f79c914f8accd5a749c161c5475381a",
+          "result_sha256": "02ac393874912c4c5c53fdb90269682ed02f56a0bf0b10988b4138afb178e1eb",
+          "scaling_claim": null,
+          "state_count": 1024,
+          "task_sha256": "3b91a3113534ce4c6c63389a0a724672938f912640e80d59cc92fba1b4622312",
+          "witness_sha256": "e3bb602240ff1d2c6d12638bd6a180dbf8583c431bf182b7d9713dd4c28a9b8f"
+        }
+      ],
+      "same_task": false,
+      "scaling_claim": null
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "equivalence": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "manifest": {
+        "config_sha256": "beced1fe696351bb996169a4f1987ca19b5f52f37c7ef3071f9c044cf3580bfc",
+        "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+        "functional_equivalence": null,
+        "manifest_sha256": "1eef54fb2f5b2c46fadaf6c5cea360f8f3836645631264ed8f7b65375a736262",
+        "metrics_sha256": "1661bc8d9c051611c44b77242c202dc4e719580d595d9161a36063e464141ebd",
+        "parent_manifest_sha256": "64918c376ffcd48000197b03de768082f3c84f62ad33d34c6021d78694c785f3",
+        "source_sha256": "22a706ae67234e9fce89f07dead8e03e2c9d2e3a3eafa30c86fae1508074a672",
+        "split_hashes": {
+          "test": "e4b4976db3c5b72f6354fa7a78ef3c93ffefac200ab89ccc84f3e547cfbbc634",
+          "train": "b813212912f4d0c4cc7c9dceba3fb8e0b088946be058e149461ec5f82d00c817",
+          "validation": "ecef3fd0fb07b742d559b77b2585e38e42579ed5075c12bf8f9d56a22580f273"
+        },
+        "version": 7
+      }
+    },
+    "B": {
+      "canonical_bytes_sha256": "2ddc32992931dc8160cd15207c45d10a29f0320d05a57f305d22e700a2fbc40d",
+      "evidence_class": "SYNTHETIC_RECEIPT_AUTHENTICATION",
+      "provider_claim": null,
+      "receipt": {
+        "authorization_scope": "fixture-only",
+        "authorized": false,
+        "invoice": null,
+        "job_id": null,
+        "key_id": "key-rotate-a",
+        "provider_status": "NOT_EXECUTED",
+        "request_sha256": "23c12c30061c25c0775f41edfcfe8f3ae853547890ec9007ab823f288a662696",
+        "schema": "receipt-v4",
+        "signature": "f305b277c3e409f69b995c630eb36a5e9a7b8dfe49d27cc8bbc7a1a25539b522",
+        "signature_algorithm": "HMAC-SHA256-FIXTURE"
+      },
+      "revoked_rejected": true,
+      "verified": true
+    },
+    "C": {
+      "crash_durability": null,
+      "device_id_match": true,
+      "device_id_values": 1,
+      "evidence_class": "SAME_FILESYSTEM_PROCESS_FIXTURE",
+      "replacement": {
+        "active_names_survived_stale_cleanup": true,
+        "active_payload_sha256_at_barrier": [
+          "79ccc59548563a9f7a7477e11b721a7368e79a8d2cac0e9836d35e3524afc508",
+          "8b48b844f3cdc624219ac97a5d97756b4cfc294dfa31ce368a42ec171d8fc482",
+          "292871e2c32586d00ceee58d06cb1649bfe630c986d237a4848fb4c99f43b46b"
+        ],
+        "durability": "PROCESS_TERMINATION_ONLY",
+        "evidence_class": "CONCURRENT_PROCESS_FIXTURE",
+        "exit_codes": [
+          0,
+          23,
+          23
+        ],
+        "visible_complete": true,
+        "visible_sha256": "79ccc59548563a9f7a7477e11b721a7368e79a8d2cac0e9836d35e3524afc508",
+        "writer_count": 3
+      }
+    },
+    "D": {
+      "central": {
+        "compressed_size": 8,
+        "disk": 1,
+        "evidence_class": "SYNTHETIC_ZIP64_DIRECTORY_METADATA",
+        "filename_sha256": "6df3a0037181570e9c4d1f9d41bc434bfab1a1040111696b969e22fcd87ab4c2",
+        "local_header_offset": 64,
+        "payload_read": false,
+        "uncompressed_size": 8
+      },
+      "data_descriptor_flag": true,
+      "evidence_class": "SYNTHETIC_ZIP64_CROSS_BIND",
+      "local_central_match": true,
+      "payload_read": false
+    },
+    "E": {
+      "duplicate_sequence_rejected": true,
+      "evidence_class": "SYNTHETIC_CUSTODY_NEGATIVE_CONTROL",
+      "physical_sample_claim": null,
+      "truncated_chain_rejected": true,
+      "valid_events": 3
+    },
+    "F": {
+      "commercial_interpretation": null,
+      "components": 2,
+      "evidence_class": "MODEL_ONLY",
+      "scenarios": {
+        "independent": {
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": [
+                2.2928932188134525,
+                5.707106781186548
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": [
+                1.1464466094067263,
+                2.853553390593274
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": [
+                0.5732233047033631,
+                1.426776695296637
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_NONPOSITIVE_DENOMINATOR"
+            }
+          ],
+          "total_usd": [
+            2.2928932188134525,
+            5.707106781186548
+          ]
+        },
+        "invalid": {
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            }
+          ],
+          "total_usd": null
+        },
+        "shared": {
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": [
+                2.0,
+                6.0
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": [
+                1.0,
+                3.0
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": [
+                0.5,
+                1.5
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_NONPOSITIVE_DENOMINATOR"
+            }
+          ],
+          "total_usd": [
+            2.0,
+            6.0
+          ]
+        }
+      },
+      "sigma_multiplier": 1.0
+    },
+    "FND/EQN": {
+      "composed_length": {
+        "dimension": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "domain_sort": "RealModel",
+        "evidence_sort": "Model",
+        "lower": [
+          1,
+          1
+        ],
+        "source_sha256": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2",
+        "unit": "m",
+        "upper": [
+          6,
+          1
+        ]
+      },
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "ratio": {
+        "dimension": [
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "domain_sort": "RealModel",
+        "evidence_sort": "Model",
+        "lower": [
+          1,
+          2
+        ],
+        "source_sha256": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2",
+        "unit": "m/s",
+        "upper": [
+          2,
+          1
+        ]
+      }
+    },
+    "G": {
+      "calibration": null,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "measurand_order": [
+        "length",
+        "duration",
+        "mass"
+      ],
+      "positive_semidefinite": true
+    },
+    "H": {
+      "alternatives": [
+        {
+          "assumption": "baseline and two adjacent swaps",
+          "correlation": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "name": "center",
+          "scenario_count": 3,
+          "stability_bounds": [
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        },
+        {
+          "assumption": "predeclared adverse order set",
+          "correlation": [
+            [
+              1,
+              0.8,
+              0,
+              0
+            ],
+            [
+              0.8,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0.4
+            ],
+            [
+              0,
+              0,
+              0.4,
+              1
+            ]
+          ],
+          "name": "adverse",
+          "scenario_count": 3,
+          "stability_bounds": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "capital": null,
+      "evidence_class": "ILLUSTRATIVE_SCENARIO_GRID",
+      "interpretation": "finite declared alternatives; no distribution or capital estimate",
+      "observed_stability_range": [
+        0.0,
+        0.3333333333333333
+      ]
+    },
+    "QOS/QSVT": {
+      "basis_states_checked": 64,
+      "certificate_v4": {
+        "certificate_sha256": "1d247ccdf61d55bb09d92559e3dc321fbf3f1ccfaac1afdc3665110c5d2f69fc",
+        "evidence_class": "ER6_SYNTHETIC_CERTIFICATE",
+        "hardware": null,
+        "map_sha256": "9d2946652c0599fe22bcb57e2a4c6a879c9f9152745b3574e72be3e1e81ca9cb",
+        "previous_resources": {
+          "bits": 6,
+          "depth": 14,
+          "gates": 30,
+          "qubits": 6
+        },
+        "resources": {
+          "bits": 6,
+          "depth": 3,
+          "gates": 3,
+          "qubits": 6
+        },
+        "source_sha256": "4290e0c8a1e1d5eb2de5b2a66cab32db51700ed2c3d553035c0fa91707289b56",
+        "version": 4
+      },
+      "evidence_class": "ER6_SYNTHETIC_RECONSTRUCTION",
+      "hardware": null,
+      "maximum_integer_residual": 0,
+      "parent_certificate_v4_sha256": "fe6fa1b4e203e7a51060c99718765769365a26d69403a197db99fadc2afeef5a",
+      "permutation_matrix_sha256": "39e83941105848f5796428dc94b4f73045024c047845d28055196bbcc31f3f79",
+      "reconstruction": "independent basis-permutation matrix versus gate-word simulation",
+      "reconstruction_sha256": "3e05defadd1e52f400347d7e9de0590076aff7610b40f6493307b0a1253e9cbb",
+      "version": 5
+    },
+    "SCM": {
+      "cases": {
+        "expired": "REJECTED",
+        "replayed": "REJECTED",
+        "response_mutation": "REJECTED",
+        "revoked": "REJECTED",
+        "scope_mutation": "REJECTED",
+        "valid_fiction": "ACCEPTED_FICTION_ONLY"
+      },
+      "challenge_sha256": "999ec5a3009a59e9e33aa8d49c3d6ba392bd1081598e893f20a87e5161199456",
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY"
+    }
+  },
+  "nonclaims": [
+    "No measured QPU/GPU performance or provider execution.",
+    "No crash durability or commercial economics.",
+    "No physical-law, AI-equivalence, capital or empirical SCM claim; QOS hardware null."
+  ],
+  "schema": "uqpu-cycle017-delta01-executable-acceptance-v1",
+  "source_hashes": {
+    "cycle017_module": "faa19b9adee4e4f723cbb2d1013a1d3cbabe50257a1721c21d92b90057a6b83f",
+    "cycle017_tests": "82418bd4b7443286293549f349677f059509f665e2fb062e06f5297e337158e3",
+    "preregistered_gates": "229e6c67ac464fe8edaf77e99c2cdb9b9bd2b1bd24c8895278c20d34a3ad2796",
+    "umrl": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
+  }
+}
