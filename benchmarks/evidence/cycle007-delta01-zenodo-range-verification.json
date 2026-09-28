@@ -1,0 +1,95 @@
+{
+  "access_date_utc": "2026-09-28",
+  "analysis_state": {
+    "experimental_values_read": false,
+    "full_archive_md5_recomputed": false,
+    "parquet_payload_retrieved": false,
+    "project_reproduction": false
+  },
+  "archive": {
+    "bytes": 145469232,
+    "central_directory": {
+      "eocd": {
+        "central_directory_disk": 0,
+        "central_directory_offset": 145408537,
+        "central_directory_size": 60673,
+        "comment_length": 0,
+        "disk": 0,
+        "entries": 502
+      },
+      "inventory_summary": {
+        "compressed_file_bytes_sum": 145353888,
+        "compression_method_entry_counts": {
+          "0": 20,
+          "8": 482
+        },
+        "directories": 20,
+        "entries": 502,
+        "files": 482,
+        "uncompressed_file_bytes_sum": 243933814
+      },
+      "readme_entry": {
+        "compressed_size": 1079,
+        "compression_method": 8,
+        "crc32": "fd09c11f",
+        "directory": false,
+        "local_header_offset": 96016687,
+        "path": "data_upload/README.md",
+        "uncompressed_size": 3065
+      }
+    },
+    "full_archive_checksum_recomputed": false,
+    "full_archive_downloaded": false,
+    "key": "data_upload.zip",
+    "publisher_checksum_metadata": "md5:d4f051ba40bf3d1940f90f9da4e9953c",
+    "tail_range": {
+      "content_range": "bytes 145403675-145469231/145469232",
+      "end": 145469231,
+      "http_date": "Mon, 28 Sep 2026 10:34:42 GMT",
+      "returned_bytes": 65557,
+      "sha256": "aa42afc7eb52c9aedace344931a2368e1b6e0e37dafb8967b240442c5ffddc57",
+      "start": 145403675,
+      "status": 206
+    }
+  },
+  "cycle": "007",
+  "delta": "01",
+  "evidence_class": "PRIMARY_ZENODO_API_AND_HTTP_RANGE_VERIFIED_ARCHIVE_METADATA_AND_README_CRC",
+  "nonclaims": [
+    "The API publisher MD5 is recorded but was not recomputed across the full archive.",
+    "No Parquet payload, experimental value, rate, fit, uncertainty, or reproduction was analyzed.",
+    "Range integrity and README CRC do not authenticate every archive byte."
+  ],
+  "readme_range": {
+    "central_directory_crc32": "fd09c11f",
+    "content_range": "bytes 96016687-96020782/145469232",
+    "end": 96020782,
+    "http_date": "Mon, 28 Sep 2026 10:34:51 GMT",
+    "member_bytes": 3065,
+    "member_crc32": "fd09c11f",
+    "member_path": "data_upload/README.md",
+    "member_sha256": "bbc0015a5f19a2aabacfdd5e99ce309f2ea8cf106fc0f2f1c03c49d1561b7a13",
+    "returned_bytes": 4096,
+    "semantic_anchors_checked": 7,
+    "semantic_anchors_missing": [],
+    "sha256": "af8079d5ff9f04cd3a2aa1dc21578323504bc3f450a74efa4b1be1aa18f2e280",
+    "start": 96016687,
+    "status": 206
+  },
+  "schema": "uqpu-cycle007-primary-source-range-verification-v1",
+  "source": {
+    "api_http_date": "Mon, 28 Sep 2026 10:34:31 GMT",
+    "api_http_status": 200,
+    "api_response_bytes": 3942,
+    "api_response_sha256": "a27ebff614070ee90202fd73dbbf29b7ab95d0c0cad2574560069cace350db02",
+    "api_url": "https://zenodo.org/api/records/14257632",
+    "archive_url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "publication_date": "2024-12-03",
+    "record_id": 14257632,
+    "record_url": "https://zenodo.org/records/14257632",
+    "title": "Data from \"Hardware-efficient quantum error correction using concatenated bosonic qubits\""
+  }
+}

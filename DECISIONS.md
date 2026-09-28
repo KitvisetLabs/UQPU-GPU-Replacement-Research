@@ -511,3 +511,9 @@ fictional model types distinct.
 quantity/unit/dimension fields. Guessing dimensions from labels would turn an
 unauditable equation into a false proof and could assign physical dimensions to
 objects that are not physical quantities.
+
+
+## 2026-09-28 — D104: Range metadata is not a full-file checksum
+**Decision:** Accept a primary-source archive range only when HTTP status is 206, the returned `Content-Range` exactly matches the requested byte interval and total size, and the bounded body length is exact. Keep publisher checksum metadata distinct from a locally recomputed whole-file digest.
+
+**Reason:** The Cycle 007 Zenodo check verified a 65,557-byte ZIP tail and a 4,096-byte README range with a matching local/central CRC, while the archive is 145,469,232 bytes. Those observations support the bounded metadata/readme claim but do not prove the publisher MD5 for every archive byte.

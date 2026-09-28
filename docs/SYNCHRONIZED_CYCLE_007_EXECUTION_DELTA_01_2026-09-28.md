@@ -57,7 +57,7 @@ All evidence reviewed here is repository-primary, at the checked base commit abo
 ## Checkpoint 02 — typed-math schema audit
 
 **Checked parent:** `c37090ac41aef28cdcf8073e43f1132e5786c067` on the Cycle 007 branch.
-**State:** Cycle 007 remains active; local verification passed and exact-commit GitHub Actions is pending publication.
+**State:** Published in `7a876a8160b0dfcf3cb59c12496a58960103d805`; GitHub Actions #499 (run ID `36409580836`) passed all 8 jobs. Cycle 007 remains active.
 
 A reproducible validator and negative tests now inventory the UMRL and SCM mathematical registries. They contain 30 UMRL equations, 23 goal contracts, 19 SCM equations, and 134 equation-variable declarations. All 134 declarations carry descriptive `unit_or_type` text, while zero have machine-readable `quantity_kind`, canonical `unit_code`, or `dimension_vector` fields. The audit therefore establishes a schema gap that prevents dimensional-balance checking; it does not find an unbalanced equation. Lane-attributed counts can overlap where an equation has multiple owners; global counts above are registry counts.
 
@@ -65,6 +65,15 @@ The validator accepts only exact rational exponents when a dimension vector is p
 
 - Cycle 007 focused tests: **5 passed**.
 - Full prototype suite: **444 passed, 8 optional-environment skips**.
-- The changed validator/test/example paths match the workflow's push filter. Check the Actions result for the exact published commit before cycle closeout.
+- The changed validator/test/example paths matched the workflow push filter; Actions #499 passed all 8 jobs on exact commit `7a876a8160b0dfcf3cb59c12496a58960103d805`.
 
 No equation dimensional consistency, new physical law, hardware performance, provider economics, or real-world SCM effect is claimed. This checkpoint does not close Cycle 007. Remaining Cycle 007 work includes implementing and testing the other lane-specific acceptance cases and then recording the complete closeout and Cycle 008 handoff.
+
+
+## Checkpoint 03 — official bounded archive range verification
+
+**Reviewed:** 2026-09-28. **State:** Cycle 007 remains active; this checkpoint's local tests pass and its exact-commit Actions run is pending publication.
+
+The official [Zenodo record](https://zenodo.org/records/14257632) and [record API](https://zenodo.org/api/records/14257632) identify `data_upload.zip` as 145,469,232 bytes and publish checksum metadata `md5:d4f051ba40bf3d1940f90f9da4e9953c`. The bounded retrieval runner rejects anything other than HTTP 206 with exact `Content-Range` coordinates. It fetched only the 65,557-byte ZIP tail and a 4,096-byte range at the README local-header offset. The central directory parsed as 502 entries / 482 files; the recovered 3,065-byte README had CRC-32 `fd09c11f`, matching its central-directory entry, and SHA-256 `bbc0015a5f19a2aabacfdd5e99ce309f2ea8cf106fc0f2f1c03c49d1561b7a13`. The reproducible result is `benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json`; the runner is `software/uqpu-prototype/examples/run_cycle007_zenodo_range_check.py`.
+
+This verifies the publisher's checksum metadata and two bounded range responses, not the MD5 of the full archive. No Parquet payload or experimental value was read. The full-prototype suite now passes **446 tests** with **8 optional-environment skips**, including **7 Cycle 007 focused tests**. The new source and software paths require an Actions run for the next published commit.

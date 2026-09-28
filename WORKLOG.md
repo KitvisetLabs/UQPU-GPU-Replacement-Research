@@ -1045,3 +1045,10 @@ next gate is to classify physical quantities, information, currency, states,
 categories and fictional variables before assigning exact unit and dimension
 metadata or claiming equation-level dimensional consistency. No physical law,
 SCM channel, hardware result or economic outcome is claimed.
+
+
+### 2026-09-28 — Cycle 007 bounded primary-source verification
+
+The Cycle 007 typed-math checkpoint `7a876a8160b0dfcf3cb59c12496a58960103d805` passed GitHub Actions #499 (run ID `36409580836`, all 8 jobs). A bounded request to the official Zenodo API and archive then verified exact HTTP 206 range coordinates for the 65,557-byte ZIP tail and 4,096-byte README window, parsed 502 ZIP entries / 482 files, and matched the README local-header CRC to its central-directory CRC. The publisher MD5 remains metadata only because the 145,469,232-byte archive was not downloaded or rehashed. No Parquet payload or experimental result was accessed.
+
+The reproducible artifact is `benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json`; the bounded runner and status validator are `software/uqpu-prototype/examples/run_cycle007_zenodo_range_check.py` and `software/uqpu-prototype/uqpu/cycle007_delta01.py`. Local Cycle 007 tests passed **7/7**, and the full suite passed **446 tests** with **8 optional-environment skips**. The next checkpoint must record Actions for the commit containing this source-range artifact.

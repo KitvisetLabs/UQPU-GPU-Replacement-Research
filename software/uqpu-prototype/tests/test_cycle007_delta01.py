@@ -4,13 +4,14 @@ import json
 from pathlib import Path
 import unittest
 
-from uqpu.cycle007_delta01 import audit_dimension_contracts
+from uqpu.cycle007_delta01 import audit_dimension_contracts, validate_content_range
 
 
 ROOT = Path(__file__).resolve().parents[3]
 UMRL_PATH = ROOT / "benchmarks/experiments/cycle006-delta01-unified-math-goal-registry.json"
 SCM_PATH = ROOT / "benchmarks/experiments/cycle006-delta01-scm-lokathibodi-math-registry.json"
 ARTIFACT = ROOT / "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json"
+ZENODO_RANGE = ROOT / "benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json"
 LEDGER = ROOT / "benchmarks/results/cycle007-delta01-synchronized-lane-ledger.json"
 
 
@@ -59,6 +60,53 @@ class Cycle007Delta01Tests(unittest.TestCase):
         self.assertFalse(result["valid_registry_structure"])
         self.assertTrue(any("scm_variable_type_label_missing" in e for e in result["errors"]))
 
+    def test_lane_d_range_gate_requires_exact_bounded_http_206(self):
+        self.assertEqual(validate_content_range(
+            status=206,
+            content_range="bytes 0-0/145469232",
+            start=0,
+            end=0,
+            total=145469232,
+            body_length=1,
+        ), [])
+        errors = validate_content_range(
+            status=200,
+            content_range=None,
+            start=0,
+            end=0,
+            total=145469232,
+            body_length=1,
+        )
+        self.assertIn("http_status_must_be_206", errors)
+        self.assertIn("content_range_header_invalid", errors)
+        errors = validate_content_range(
+            status=206,
+            content_range="bytes 0-1/145469233",
+            start=0,
+            end=0,
+            total=145469232,
+            body_length=2,
+        )
+        self.assertIn("content_range_coordinates_mismatch", errors)
+        self.assertIn("range_body_length_mismatch", errors)
+
+    def test_live_lane_d_range_artifact_preserves_crc_and_nonclaims(self):
+        evidence = _read(ZENODO_RANGE)
+        archive = evidence["archive"]
+        readme = evidence["readme_range"]
+        self.assertEqual(evidence["schema"], "uqpu-cycle007-primary-source-range-verification-v1")
+        self.assertEqual(archive["bytes"], 145469232)
+        self.assertEqual(archive["publisher_checksum_metadata"], "md5:d4f051ba40bf3d1940f90f9da4e9953c")
+        self.assertEqual(archive["tail_range"]["status"], 206)
+        self.assertEqual(archive["tail_range"]["returned_bytes"], 65557)
+        self.assertEqual(archive["central_directory"]["inventory_summary"]["entries"], 502)
+        self.assertEqual(readme["status"], 206)
+        self.assertEqual(readme["member_bytes"], 3065)
+        self.assertEqual(readme["semantic_anchors_missing"], [])
+        self.assertEqual(readme["member_crc32"], readme["central_directory_crc32"])
+        self.assertFalse(archive["full_archive_checksum_recomputed"])
+        self.assertFalse(evidence["analysis_state"]["parquet_payload_retrieved"])
+
     def test_committed_audit_artifact_matches_the_generator(self):
         artifact = _read(ARTIFACT)
         regenerated = audit_dimension_contracts(self.umrl, self.scm)
@@ -69,8 +117,8 @@ class Cycle007Delta01Tests(unittest.TestCase):
         ledger = _read(LEDGER)
         self.assertEqual(ledger["cycle"], "007")
         self.assertTrue(ledger["full_cycle_closeout_pending"])
-        self.assertEqual(ledger["validation"]["cycle007_focused_tests"]["passed"], 5)
-        self.assertEqual(ledger["validation"]["full_prototype_suite"]["passed"], 444)
+        self.assertEqual(ledger["validation"]["cycle007_focused_tests"]["passed"], 7)
+        self.assertEqual(ledger["validation"]["full_prototype_suite"]["passed"], 446)
         self.assertEqual(ledger["validation"]["full_prototype_suite"]["skipped_optional"], 8)
         self.assertEqual(set(ledger["lanes"]), {
             "A", "B", "C", "D", "E", "F", "G", "H",

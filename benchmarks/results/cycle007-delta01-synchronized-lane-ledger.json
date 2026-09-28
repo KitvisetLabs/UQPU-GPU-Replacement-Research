@@ -10,13 +10,17 @@
     "goal_count": 23,
     "invalid_machine_dimension_vector_count": 0,
     "lane_count": 12,
+    "lane_d_range_verified": true,
     "machine_dimension_vector_count": 0,
     "machine_dimension_vector_coverage": 0.0,
     "quantity_kind_count": 0,
     "unit_code_count": 0,
     "unit_or_type_present_count": 134,
     "valid_machine_dimension_vector_count": 0,
-    "variable_declaration_count": 134
+    "variable_declaration_count": 134,
+    "zenodo_archive_bytes": 145469232,
+    "zenodo_central_directory_entries": 502,
+    "zenodo_readme_crc_matches": true
   },
   "base_commit": "90d32285c8991afef7f2a6285f42d78d6d6ae71e",
   "cross_lane_integration": [
@@ -111,12 +115,23 @@
       "unit_or_type_present": 43
     },
     "D": {
-      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
-      "evidence_class": "DATA_PROVENANCE_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "artifact": "benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json",
+      "evidence_class": "DATA_PROVENANCE_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF; PRIMARY_SOURCE_HTTP_RANGE_AND_README_CRC_VERIFICATION_NOT_FULL_ARCHIVE_CHECKSUM",
       "machine_dimension_vectors": 0,
-      "progress": "Specified source/range/byte-count/archive/member-hash/payload-read provenance chain. Typed-math schema audit: Cross-lane typed-math audit covered 15 UMRL equations and 42 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 42 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified source/range/byte-count/archive/member-hash/payload-read provenance chain. Typed-math schema audit: Cross-lane typed-math audit covered 15 UMRL equations and 42 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 42 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Live bounded request to the official Zenodo record validated the exact 65,557-byte archive-tail Content-Range, parsed 502 entries/482 files, and recovered the 3,065-byte README with matching local/central CRC.",
       "quantity_kinds": 0,
-      "remaining_gate": "Independent checksum/content-range verification and payload analysis remain open. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "range_verification": {
+        "archive_bytes": 145469232,
+        "central_directory_entries": 502,
+        "central_directory_files": 482,
+        "full_archive_checksum_recomputed": false,
+        "publisher_checksum_metadata": "md5:d4f051ba40bf3d1940f90f9da4e9953c",
+        "readme_content_range": "bytes 96016687-96020782/145469232",
+        "readme_crc_matches_central_directory": true,
+        "readme_sha256": "bbc0015a5f19a2aabacfdd5e99ce309f2ea8cf106fc0f2f1c03c49d1561b7a13",
+        "tail_content_range": "bytes 145403675-145469231/145469232"
+      },
+      "remaining_gate": "Independent checksum/content-range verification and payload analysis remain open. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification. Full-archive MD5 was not recomputed; Parquet payload, experimental values, uncertainty, and reproduction remain unreviewed.",
       "status": "BLOCKED_WITH_PROGRESS",
       "typed_math_audit": {
         "machine_dimension_vectors": 0,
@@ -277,31 +292,45 @@
   "status": "IN_PROGRESS_CHECKPOINT_02_TYPED_MATH_AUDIT",
   "validation": {
     "cycle007_focused_tests": {
-      "passed": 5,
+      "passed": 7,
       "skipped": 0
     },
     "full_prototype_suite": {
-      "passed": 444,
+      "passed": 446,
       "skipped_optional": 8
     },
     "lane_coverage": "12/12",
     "ledger_structure": "PASS",
-    "status": "LOCAL_PASS_GITHUB_ACTIONS_PENDING"
+    "status": "LOCAL_PASS_NEXT_COMMIT_CI_PENDING",
+    "zenodo_range_capture": "PASS"
   },
   "verification": {
+    "checkpoint_02_ci": {
+      "commit": "7a876a8160b0dfcf3cb59c12496a58960103d805",
+      "conclusion": "success",
+      "jobs_passed": 8,
+      "run_id": 36409580836,
+      "run_number": 499
+    },
     "checkpoint_02_parent_ci": {
       "commit": "c37090ac41aef28cdcf8073e43f1132e5786c067",
       "workflow_status": "NO_RUN_EXPECTED_FOR_PRIOR_DOCS_ONLY_CHECKPOINT"
     },
+    "checkpoint_03_local": {
+      "focused_tests": 7,
+      "full_suite_passed": 446,
+      "optional_skips": 8,
+      "zenodo_range_capture": "PASS"
+    },
     "cycle007_focused_tests": {
-      "passed": 5,
+      "passed": 7,
       "skipped": 0
     },
     "full_prototype_suite": {
-      "passed": 444,
+      "passed": 446,
       "skipped_optional": 8
     },
-    "github_actions_expected": "RUN_REQUIRED_FOR_CHECKPOINT_02_SOFTWARE_PATHS",
+    "github_actions_expected": "RUN_REQUIRED_AFTER_CHECKPOINT_03_SOFTWARE_PATHS",
     "lane_coverage": "12/12",
     "latest_base_ci": {
       "conclusion": "success",
@@ -315,6 +344,6 @@
       "No independent reproduction, new physical law, quantum advantage, or GPU replacement.",
       "No empirical spiritual-source channel."
     ],
-    "repository_test_suite": "PASS_444_WITH_8_OPTIONAL_SKIPS"
+    "repository_test_suite": "PASS_446_WITH_8_OPTIONAL_SKIPS_LOCAL"
   }
 }

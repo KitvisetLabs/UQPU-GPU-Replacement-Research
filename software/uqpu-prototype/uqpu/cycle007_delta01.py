@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from fractions import Fraction
+import re
 from typing import Any
 
 
@@ -38,6 +39,38 @@ def _valid_dimension_vector(value: Any) -> bool:
         and set(value) == set(PROJECT_DIMENSION_BASIS)
         and all(_is_exact_rational(value[axis]) for axis in PROJECT_DIMENSION_BASIS)
     )
+
+
+_CONTENT_RANGE_RE = re.compile(r"bytes (\d+)-(\d+)/(\d+)")
+
+
+def validate_content_range(
+    *, status: int, content_range: str | None,
+    start: int, end: int, total: int, body_length: int,
+) -> list[str]:
+    """Require an exact bounded HTTP 206 range response.
+
+    This gate prevents a server that ignores ``Range`` and returns HTTP 200
+    from being treated as a successful small metadata fetch. It checks the
+    response coordinates and byte count; it does not authenticate the server
+    or verify a publisher checksum over an entire archive.
+    """
+    errors = []
+    if not all(isinstance(value, int) and not isinstance(value, bool)
+               for value in (status, start, end, total, body_length)):
+        return ["range_coordinates_must_be_integers"]
+    if total < 1 or start < 0 or end < start or end >= total:
+        errors.append("requested_range_out_of_bounds")
+    if status != 206:
+        errors.append("http_status_must_be_206")
+    match = _CONTENT_RANGE_RE.fullmatch(content_range or "")
+    if not match:
+        errors.append("content_range_header_invalid")
+    elif tuple(map(int, match.groups())) != (start, end, total):
+        errors.append("content_range_coordinates_mismatch")
+    if body_length != end - start + 1:
+        errors.append("range_body_length_mismatch")
+    return errors
 
 
 def audit_dimension_contracts(unified_registry: dict, scm_registry: dict) -> dict:
