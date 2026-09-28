@@ -396,3 +396,26 @@ convention blocker.
 | QOS/QSVT | Frozen ER6 certificate binds source identity, registers, measurement map, and bounded resource counts. | Independently parse/reconstruct, then obtain provider and hardware evidence only under authorization. |
 
 **Evidence boundary:** MaxCut is a finite classical software comparison; C is local filesystem behavior; D is metadata-only; E/F/G/AI are synthetic; H is assumed; FND/EQN is dimensional consistency; SCM is fiction-only; QOS/QSVT is a frozen certificate. No hardware, materials, measured commercial economics, funding, capital, physical-law, GPU-replacement, or empirical SCM claim is promoted.
+
+
+## RG-036 — Cycle 011 twelve-lane evidence follow-through
+**Status:** OPEN / LOCAL, SYNTHETIC, ASSUMPTION-BOUND OR FICTION-ONLY GATES
+**Date:** 2026-09-28
+**Current checkpoint:** `docs/SYNCHRONIZED_CYCLE_011_EXECUTION_DELTA_01_2026-09-28.md` and `benchmarks/results/cycle011-delta01-synchronized-lane-ledger.json`. The 12 local acceptance gates pass, but no independent external lane gate closes.
+
+| Lane | Progress this cycle | Remaining dependency and next falsifiable gate |
+|---|---|---|
+| A | Fourth seeded n=8 graph and an exact-capped positive-weight graph record state completion, exact gap and restart prefixes. | Add a broader preregistered set and comparable CPU/GPU baselines; retain separate objective and host-time fields. |
+| B | Strict v2-to-v3 envelope migration rejects unknown fields and binds token, source commit and canonical payload hash. | Reconcile an explicitly authorized provider request, receipt and bill. |
+| C | Same/fresh-process hashes match; injected pre-replace failure preserves old bytes and leaves no temp file; cache remains uncontrolled. | Obtain a separately authorized controlled cache, termination/power-loss and device/service durability protocol. |
+| D | Three-entry ZIP64 order, overlap, truncation and locator mutations reject offline. | Verify declared archive digest and size under lawful bounded access before payload validation. |
+| E | Two-link custody chain, sample/control identity, method version, calibration expiry and uncertainty unit are checked synthetically. | Measure physical sample/control with traceable calibration and uncertainty. |
+| F | Three synthetic cost components produce a bounded USD interval; partial/non-PSD covariance, currency/unit mismatch and zero output remain null or fail closed. | Reconcile real lifecycle cost rows with accepted outputs and justified covariance. |
+| G | Synthetic two-measurand budget checks scoped units, expiry, component count, coverage and PSD. | Obtain current operational certificate and measured scoped uncertainty inputs. |
+| H | Four-gate, 6,561-case assumed grid yields 24 orders and 5,694 reversals; capital remains null. | Replace illustrative inputs with sourced distributions and an owner decision. |
+| FND/EQN | Hash-bound `USD/count` and `J/count` intervals use registered dimensions and project source bytes. | Add source-backed quantities plus an independent falsifiable validity test. |
+| SCM | Fictional consent state machine invalidates revoked nonce and rejects replay/cross-sort transition; five-volume coverage retained. | Preserve fiction-only status; require ethical review and preregistration before any empirical study. |
+| AI-COST | Second synthetic source version is hash-linked to its parent; split identities and held-out completeness validate before scoring. | Freeze real source lineage and independently evaluate held-out quality, runtime, energy and cost. |
+| QOS/QSVT | Second frozen ER6 source carries append-only measurement migration and resource bounds. | Independently reconstruct with a pinned parser/SDK, then obtain authorized provider/hardware evidence. |
+
+**Evidence boundary:** A is a finite classical software comparison; C is local filesystem behavior; D is offline metadata validation; E/F/G/AI are synthetic; H is assumption-bound; FND/EQN validates declared dimensions; SCM is fiction-only; QOS/QSVT is a frozen certificate. No hardware performance, physical material property, measured economics, capital authorization, physical-law result, GPU replacement, or empirical SCM claim is promoted.
