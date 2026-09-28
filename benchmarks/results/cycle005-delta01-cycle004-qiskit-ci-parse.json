@@ -1,0 +1,72 @@
+{
+  "all_passed": true,
+  "evidence_class": "PERSISTED_OUTPUT_FROM_PINNED_INDEPENDENT_SDK_PARSE_NOT_PROVIDER_VALIDATION",
+  "hardware_executed": false,
+  "input_path": "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-manifest.json",
+  "input_sha256": "6e2df63eb26f38b7ba1c6da26df5f31622c16b32f1349b5ded20b1f09fffe511",
+  "limitations": [
+    "This JSON transcribes the successful runner output retained in the GitHub Actions log; it was not regenerated locally.",
+    "Qiskit parsing does not establish provider acceptance, physical transpilation, hardware execution, performance, energy, or cost."
+  ],
+  "provider_transpilation": null,
+  "provenance": {
+    "branch": "research/cycle-004-delta-01-2026-09-28",
+    "commit": "5700c05682be08c2b02529a622d31f31222c39c7",
+    "github_actions_job_id": 108741564430,
+    "github_actions_run_id": 36362191884,
+    "github_actions_run_number": 490,
+    "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36362191884",
+    "persistence_date": "2026-09-28",
+    "source": "successful GitHub Actions job log"
+  },
+  "qiskit_version": "2.5.2",
+  "rows": [
+    {
+      "candidate_id": "mean_energy_p1",
+      "logical_depth_qiskit": 24,
+      "measurement_map": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "num_clbits": 6,
+      "num_qubits": 6,
+      "operation_counts": {
+        "cx": 18,
+        "h": 6,
+        "measure": 6,
+        "rx": 6,
+        "rz": 9
+      },
+      "parse_passed": true,
+      "qasm_sha256": "7e7817cc4f253c6edae42256aeee3a17dbe772035d578b10f5c6d380deb7d74e"
+    },
+    {
+      "candidate_id": "cvar_alpha_0.5_p1",
+      "logical_depth_qiskit": 24,
+      "measurement_map": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "num_clbits": 6,
+      "num_qubits": 6,
+      "operation_counts": {
+        "cx": 18,
+        "h": 6,
+        "measure": 6,
+        "rx": 6,
+        "rz": 9
+      },
+      "parse_passed": true,
+      "qasm_sha256": "8f6d4d41f7c6934feee9657cf213fb23212e905f549a7138679e9d0b6baa3d32"
+    }
+  ],
+  "schema": "uqpu-cycle005-persisted-cycle004-qiskit-qasm-parse-v1"
+}
