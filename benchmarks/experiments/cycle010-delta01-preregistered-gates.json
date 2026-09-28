@@ -1,0 +1,187 @@
+{
+  "schema": "uqpu-cycle010-delta01-preregistered-gates-v1",
+  "cycle": "010",
+  "delta": "01",
+  "date": "2026-09-28",
+  "base_closeout_commit": "e3157fc47bd6d125636a7a3c5dccf869ced5ba32",
+  "lanes": {
+    "A": {
+      "node_count": 8,
+      "instances": [
+        {"seed": 1, "density": 0.25, "node_count": 8},
+        {"seed": 7, "density": 0.4, "node_count": 8},
+        {"seed": 42, "density": 0.6, "node_count": 8}
+      ],
+      "restart_budgets": [1, 4, 16, 64],
+      "exact_state_cap": 512
+    },
+    "B": {
+      "schema_v1": {
+        "schema_version": 1,
+        "idempotency_token": "cycle010-synthetic-token-001",
+        "source_commit": "e3157fc47bd6d125636a7a3c5dccf869ced5ba32",
+        "request": {"action": "synthetic_compile", "shots": 16, "payload": {"fixture": "bounded"}}
+      },
+      "supported_schema_versions": [1, 2]
+    },
+    "C": {
+      "old_payload": "cycle010-old-payload",
+      "new_payload": "cycle010-new-payload",
+      "same_process_repeats": 3,
+      "fresh_process_repeats": 2,
+      "interruption_boundaries": ["before_write", "after_staging_fsync", "after_replace"],
+      "cache_state": "UNCONTROLLED"
+    },
+    "D": {
+      "zip64": {
+        "file_size": 1276,
+        "central_directory_start": 1000,
+        "central_directory_size": 200,
+        "zip64_eocd_offset": 1200,
+        "zip64_eocd_size": 56,
+        "zip64_locator_offset": 1256,
+        "entries": [
+          {
+            "compressed_size": 4294967295,
+            "uncompressed_size": 4294967295,
+            "local_header_offset": 4294967295,
+            "zip64_extra": {
+              "compressed_size": 8,
+              "uncompressed_size": 10,
+              "local_header_offset": 20
+            }
+          }
+        ]
+      },
+      "valid_unsatisfied_range": {"status": 416, "content_range": "bytes */128", "expected_total": 128, "body_length": 0}
+    },
+    "E": {
+      "as_of": "2026-09-28",
+      "record": {
+        "sample_id": "SYNTH-SAMPLE-10A",
+        "control_id": "SYNTH-CONTROL-10A",
+        "measurand": "conductivity",
+        "unit": "S/m",
+        "method_id": "SYNTH-METHOD-RES-1",
+        "calibration_issuer": "SYNTHETIC-LAB",
+        "calibration_scope": ["conductivity"],
+        "calibration_expiry": "2027-01-01",
+        "uncertainty": "0.05",
+        "uncertainty_unit": "S/m",
+        "evidence_class": "SYNTHETIC_FIXTURE"
+      }
+    },
+    "F": {
+      "currency": "USD",
+      "uncertainty_unit": "USD",
+      "required_components": ["compute", "data"],
+      "components": {
+        "compute": {"low": "0.80", "high": "1.10"},
+        "data": {"low": "0.20", "high": "0.40"}
+      },
+      "accepted_outputs": 2,
+      "accepted_output_contract": {"schema": "synthetic-accepted-output-contract-v1", "quality_gate": "fixture-only"},
+      "standard_uncertainties": ["0.3", "0.4"],
+      "coverage_factor": 2,
+      "independent_correlation_matrix": [[1, 0], [0, 1]],
+      "correlated_correlation_matrix": [[1, 0.5], [0.5, 1]],
+      "non_psd_correlation_matrix": [[1, 1.2], [1.2, 1]]
+    },
+    "G": {
+      "as_of": "2026-09-28",
+      "budget": {
+        "required_component_ids": ["u_a", "u_b"],
+        "components": [
+          {"component_id": "u_a", "standard_uncertainty": "0.3", "unit": "m"},
+          {"component_id": "u_b", "standard_uncertainty": "0.4", "unit": "m"}
+        ],
+        "method": "CORRELATED_STANDARD_UNCERTAINTY_V1",
+        "scope": "synthetic_measurand_x",
+        "expected_scope": "synthetic_measurand_x",
+        "unit": "m",
+        "expected_unit": "m",
+        "certificate_expiry": "2027-01-01",
+        "coverage_factor": 2,
+        "correlation_matrix": [[1, 0.25], [0.25, 1]]
+      }
+    },
+    "H": {
+      "multipliers": [0.5, 1.0, 2.0],
+      "gates": [
+        {"gate_id": "provider_receipt", "effort": 3.0, "impact": 8.0},
+        {"gate_id": "controlled_io", "effort": 4.0, "impact": 9.0},
+        {"gate_id": "material_sample", "effort": 5.0, "impact": 6.0}
+      ],
+      "input_class": "ILLUSTRATIVE_ASSUMPTIONS_ONLY"
+    },
+    "FND/EQN": {
+      "unit_registry": "benchmarks/experiments/cycle008-delta01-typed-math-scm-registry.json",
+      "primary_sources": [
+        "docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md#1-typed-project-quantities",
+        "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md#4-functional-equivalence-and-accepted-outputs"
+      ],
+      "quantities": [
+        {"quantity_id": "c_acc", "quantity_kind": "LIFECYCLE_COST_PER_ACCEPTED_OUTPUT", "unit_code": "USD/count", "numerator_units": ["USD"], "denominator_units": ["count"], "source_index": 1},
+        {"quantity_id": "e_acc", "quantity_kind": "LIFECYCLE_ENERGY_PER_ACCEPTED_OUTPUT", "unit_code": "J/count", "numerator_units": ["W", "s"], "denominator_units": ["count"], "source_index": 1}
+      ]
+    },
+    "SCM": {
+      "graph": {
+        "schema_version": 1,
+        "canon_version": "fiction-canon-v5",
+        "states": [
+          {"state_id": "vigilant", "domain_sort": "FICTION_CANON"},
+          {"state_id": "consented", "domain_sort": "FICTION_CANON"},
+          {"state_id": "closed", "domain_sort": "FICTION_CANON"}
+        ],
+        "equations": ["SCM-FIC-010-1", "SCM-FIC-010-2", "SCM-FIC-010-3", "SCM-FIC-010-4", "SCM-FIC-010-5"],
+        "edges": [
+          {"from_state": "vigilant", "to_state": "consented", "equation_id": "SCM-FIC-010-1", "canon_version": "fiction-canon-v5", "domain_sort": "FICTION_CANON", "consent_required": true, "consent_nonce": "fic-010-nonce-a"},
+          {"from_state": "consented", "to_state": "closed", "equation_id": "SCM-FIC-010-2", "canon_version": "fiction-canon-v5", "domain_sort": "FICTION_CANON", "consent_required": true, "consent_nonce": "fic-010-nonce-b"}
+        ],
+        "volume_equation_links": {
+          "V1": ["SCM-FIC-010-1"],
+          "V2": ["SCM-FIC-010-2"],
+          "V3": ["SCM-FIC-010-3"],
+          "V4": ["SCM-FIC-010-4"],
+          "V5": ["SCM-FIC-010-5"]
+        },
+        "empirical_coupling": null
+      }
+    },
+    "AI-COST": {
+      "required_metrics": ["quality_complete", "runtime_complete", "energy_complete"],
+      "record_ids": {"train": ["tr-1", "tr-2"], "validation": ["va-1"], "test": ["te-1", "te-2"]},
+      "source_records": {
+        "train": [{"id": "tr-1", "input": "synthetic-a", "target": 0}, {"id": "tr-2", "input": "synthetic-b", "target": 1}],
+        "validation": [{"id": "va-1", "input": "synthetic-c", "target": 1}],
+        "test": [{"id": "te-1", "input": "synthetic-d", "target": 0}, {"id": "te-2", "input": "synthetic-e", "target": 1}]
+      }
+    },
+    "QOS/QSVT": {
+      "source": {
+        "grammar": "ER6_CYCLE010_FROZEN_SUBSET",
+        "source_id": "ER6-SYNTH-010",
+        "qubit_count": 6,
+        "bit_count": 6,
+        "measurement_destinations": [
+          {"qubit": "q[0]", "bit": "c[0]"},
+          {"qubit": "q[1]", "bit": "c[1]"},
+          {"qubit": "q[2]", "bit": "c[2]"},
+          {"qubit": "q[3]", "bit": "c[3]"},
+          {"qubit": "q[4]", "bit": "c[4]"},
+          {"qubit": "q[5]", "bit": "c[5]"}
+        ]
+      },
+      "resource_bounds": {"qubit_count": 6, "bit_count": 6, "depth": 500, "gate_count": 5000, "serialized_bytes": 200000},
+      "candidate_resources": {"depth": 44, "gate_count": 88, "serialized_bytes": 2048}
+    }
+  },
+  "nonclaims": [
+    "The MaxCut fixtures are finite seeded classical software comparisons, not GPU/QPU evidence, competitive baselines, or scaling claims.",
+    "All material, cost, uncertainty, AI, and SCM positive records are synthetic; gate-ranking inputs are assumptions.",
+    "Filesystem writes, process readback, fsync capability and injected exceptions do not establish controlled cache, device flush, remote durability, or power-loss survival.",
+    "ZIP64 fixtures validate declared metadata bounds only; no archive was downloaded or payload read.",
+    "Dimensional consistency verifies declarations, not physical truth; SCM remains fiction-only; no QOS/QSVT provider or hardware execution occurs."
+  ]
+}

@@ -373,3 +373,26 @@ convention blocker.
 | QOS/QSVT | Frozen ER6 register/measurement/resource mutations reject; no provider or hardware execution. | Broader independent semantic validation, provider transpilation and hardware receipt. | Reconstruct the frozen circuit in an independent parser/SDK; only proceed to authorized provider execution with exact source and resource provenance. |
 
 **Evidence boundary:** all positive material, cost, uncertainty, AI and SCM values are synthetic; local file tests are software exception-injection screens; H values are assumptions; the A result is a finite classical fixture. No hardware, material, economic, funding, capital, physical-law, GPU-replacement or empirical SCM claim is promoted.
+
+
+## RG-035 — Cycle 010 twelve-lane evidence follow-through
+**Status:** OPEN / LOCAL, SYNTHETIC, OR ASSUMPTION-BOUND ACCEPTANCE ONLY
+**Date:** 2026-09-28
+**Current checkpoint:** `docs/SYNCHRONIZED_CYCLE_010_EXECUTION_DELTA_01_2026-09-28.md` and `benchmarks/results/cycle010-delta01-synchronized-lane-ledger.json`. The exact local artifact gate passes all twelve lanes; no external lane gate is closed.
+
+| Lane | Current progress | Remaining dependency and falsifiable unlock |
+|---|---|---|
+| A | Three small fixed-seed graphs match exact enumeration at every tested budget. | Add a broader preregistered set and same-output competitive CPU/GPU baseline; preserve exact gaps and separate host runtime. |
+| B | Duplicate keys, schema migration, payload hashing and changed-envelope replay are bounded in software. | Obtain explicit provider authorization and reconcile one real request/receipt/bill before any provider claim. |
+| C | Local same/fresh-process atomic writes and interruption boundary states pass; cache is uncontrolled. | Use a separately authorized controlled storage protocol for cache, power-loss/termination, device flush, and service durability. |
+| D | ZIP64 metadata/offset and HTTP 416/206 response checks reject targeted mutations offline. | Verify declared archive size/digest and obtain lawful bounded access before full-byte checksum or payload checks. |
+| E | Synthetic sample/control and calibration provenance mutations fail closed. | Measure a physical sample/control pair with traceable method, calibration, units, and uncertainty. |
+| F | Synthetic USD intervals and independent/correlated covariance outputs are separated; null cases remain null. | Reconcile measured lifecycle costs and accepted outputs with a justified covariance model and source records. |
+| G | Synthetic 2x2 correlation budget requires declared scope, units, components, method, expiry, and PSD. | Validate measured inputs under a current operational certificate with a justified covariance and coverage rule. |
+| H | A 729-case assumed-input grid exposes six rankings and 507 base-order reversals; capital remains null. | Replace assumed inputs with sourced effort/impact data; owner authorization remains required for capital. |
+| FND/EQN | `c_acc` and `e_acc` derive exact USD/count and J/count vectors from source-backed equations and units. | Add more explicit source declarations and independent evidence of physical validity; a balanced unit vector is not proof of the equation. |
+| SCM | Fictional graph validates all five volume links and rejects unknowns, replay, missing consent, and cross-sort conversion. | Remain fiction-only; no empirical coupling or human study is represented or authorized. |
+| AI-COST | Three disjoint synthetic splits bind canonical source bytes to hashes and per-split metrics before scoring. | Establish immutable real source lineage and independently evaluate held-out quality, runtime, energy, and cost. |
+| QOS/QSVT | Frozen ER6 certificate binds source identity, registers, measurement map, and bounded resource counts. | Independently parse/reconstruct, then obtain provider and hardware evidence only under authorization. |
+
+**Evidence boundary:** MaxCut is a finite classical software comparison; C is local filesystem behavior; D is metadata-only; E/F/G/AI are synthetic; H is assumed; FND/EQN is dimensional consistency; SCM is fiction-only; QOS/QSVT is a frozen certificate. No hardware, materials, measured commercial economics, funding, capital, physical-law, GPU-replacement, or empirical SCM claim is promoted.

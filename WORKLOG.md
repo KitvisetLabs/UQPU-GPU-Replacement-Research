@@ -1130,3 +1130,12 @@ task, bill, cache control, power-loss result, material measurement, measured
 lifecycle economics, capital authorization, physical-law result, QPU result,
 GPU replacement, or empirical SCM result is claimed. All work is on the
 research branch from the exact C008 closeout; `main` is unchanged.
+
+
+### 2026-09-28 — Synchronized Cycle 010 Delta 01 checkpoint
+
+Cycle 009 closeout is verified remotely at `e3157fc47bd6d125636a7a3c5dccf869ced5ba32`; its exact code/evidence SHA `cb0663bd983172d3bd2cd17c74d6062d186aa5bc` passed Actions #511 (run ID `36425586293`, 8/8). Created the dedicated Cycle 010 branch from that exact closeout and checked the branch ref before work. The current research branch is `research/cycle-010-delta-01-2026-09-28`; `main` remains unchanged.
+
+Cycle 010 adds preregistered exact-capped MaxCut budgets, duplicate-key and schema migration checks, same/fresh-process atomic-write screens, offline ZIP64/HTTP range mutation cases, synthetic material provenance, correlated cost/uncertainty gates, a 729-point assumed priority grid, exact source-linked cost/energy per accepted-output types, a five-volume fiction-only state graph, immutable synthetic AI source bytes, and a source-bound ER6 certificate. The focused suite passed **12/12**; the full prototype suite ran **516 tests** (**508 passed**, **8 optional-environment skips**). All twelve local acceptance gates passed and all lanes remain `BLOCKED_WITH_PROGRESS`.
+
+Primary basis: project equations in `docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md` and `00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md`; official PKWARE APPNOTE 6.3.10 FINAL (revised 2022-11-01, accessed 2026-09-28) for ZIP64 record/locator/extra-field vocabulary only. The fixtures and models do not establish hardware performance, real materials or costs, measured uncertainty, a physical law, GPU replacement, or empirical SCM. Exact-SHA GitHub Actions is still required before Cycle 010 closeout.
