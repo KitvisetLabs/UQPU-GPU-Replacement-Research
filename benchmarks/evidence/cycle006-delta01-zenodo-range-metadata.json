@@ -1,0 +1,4703 @@
+{
+  "analysis_state": {
+    "basis_resolved_rates_extracted": false,
+    "data_values_read": false,
+    "parquet_payload_retrieved": false,
+    "project_reproduction": false,
+    "uncertainty_definition_extracted": false
+  },
+  "archive": {
+    "bytes": 145469232,
+    "full_archive_checksum_recomputed": false,
+    "full_archive_downloaded": false,
+    "http_observations": {
+      "access_date": "2026-09-28",
+      "api": {
+        "bytes": 3942,
+        "fetched_at_utc": "2026-09-28T03:48:19Z",
+        "method": "GET",
+        "status": 200,
+        "url": "https://zenodo.org/api/records/14257632"
+      },
+      "api_response_sha256": "a27ebff614070ee90202fd73dbbf29b7ab95d0c0cad2574560069cace350db02",
+      "archive_head": {
+        "accept_ranges": null,
+        "content_disposition": "attachment; filename=data_upload.zip",
+        "content_length": 145469232,
+        "content_type": "application/octet-stream",
+        "final_status": 200,
+        "last_modified": "Fri, 30 Jan 2026 20:46:37 GMT",
+        "method": "HEAD",
+        "observed_at_utc": "2026-09-28T03:48:19Z",
+        "url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1"
+      },
+      "collection_policy": {
+        "cookies_recorded": false,
+        "full_archive_downloaded": false,
+        "parquet_payload_requested": false,
+        "private_or_account_data_used": false,
+        "response_headers_retained": [
+          "accept-ranges",
+          "content-disposition",
+          "content-length",
+          "content-range",
+          "content-type",
+          "last-modified",
+          "status"
+        ]
+      },
+      "readme_range": {
+        "accept_ranges": "bytes",
+        "bytes": 4096,
+        "content_range": "bytes 96016687-96020782/145469232",
+        "method": "GET Range",
+        "observed_at_utc": "2026-09-28T03:48:30Z",
+        "requested_range": "bytes=96016687-96020782",
+        "sha256": "af8079d5ff9f04cd3a2aa1dc21578323504bc3f450a74efa4b1be1aa18f2e280",
+        "status": 206,
+        "url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1"
+      },
+      "schema": "uqpu-cycle006-zenodo-http-observations-v1",
+      "tail_range": {
+        "accept_ranges": "bytes",
+        "bytes": 65536,
+        "content_range": "bytes 145403696-145469231/145469232",
+        "method": "GET Range",
+        "observed_at_utc": "2026-09-28T03:48:27Z",
+        "requested_range": "bytes=145403696-145469231",
+        "sha256": "a5f6dc9bddf653343528937affacf4f6a5e0a58c127e52ca06b7279e949e0cca",
+        "status": 206,
+        "url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1"
+      }
+    },
+    "name": "data_upload.zip",
+    "publisher_checksum": "md5:d4f051ba40bf3d1940f90f9da4e9953c"
+  },
+  "capture_code_commit": "f336b6ddbda555aaba212b5c05bd0a818e9c6368",
+  "central_directory": {
+    "entries": [
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 0,
+        "path": "data_upload/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 70,
+        "path": "data_upload/d5_phase_flip/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 154,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 367395,
+        "compression_method": 8,
+        "crc32": "88b63ac5",
+        "directory": false,
+        "local_header_offset": 247,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_27",
+        "uncompressed_size": 610252
+      },
+      {
+        "compressed_size": 1132,
+        "compression_method": 8,
+        "crc32": "acc59cbe",
+        "directory": false,
+        "local_header_offset": 367748,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/all_cycle_numbers",
+        "uncompressed_size": 2634
+      },
+      {
+        "compressed_size": 545974,
+        "compression_method": 8,
+        "crc32": "d072c606",
+        "directory": false,
+        "local_header_offset": 368990,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_43",
+        "uncompressed_size": 893655
+      },
+      {
+        "compressed_size": 268834,
+        "compression_method": 8,
+        "crc32": "99e7c972",
+        "directory": false,
+        "local_header_offset": 915070,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_19",
+        "uncompressed_size": 468546
+      },
+      {
+        "compressed_size": 293960,
+        "compression_method": 8,
+        "crc32": "e134f59a",
+        "directory": false,
+        "local_header_offset": 1184010,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_21",
+        "uncompressed_size": 503956
+      },
+      {
+        "compressed_size": 250137,
+        "compression_method": 8,
+        "crc32": "85948796",
+        "directory": false,
+        "local_header_offset": 1478076,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_17",
+        "uncompressed_size": 433142
+      },
+      {
+        "compressed_size": 169325,
+        "compression_method": 8,
+        "crc32": "4964279e",
+        "directory": false,
+        "local_header_offset": 1728319,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_10",
+        "uncompressed_size": 309124
+      },
+      {
+        "compressed_size": 1270805,
+        "compression_method": 8,
+        "crc32": "1209fd77",
+        "directory": false,
+        "local_header_offset": 1897750,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_107",
+        "uncompressed_size": 2028469
+      },
+      {
+        "compressed_size": 125472,
+        "compression_method": 8,
+        "crc32": "fd8a555d",
+        "directory": false,
+        "local_header_offset": 3168662,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_6",
+        "uncompressed_size": 238371
+      },
+      {
+        "compressed_size": 66593,
+        "compression_method": 8,
+        "crc32": "2c3a83dd",
+        "directory": false,
+        "local_header_offset": 3294239,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_1",
+        "uncompressed_size": 149990
+      },
+      {
+        "compressed_size": 829289,
+        "compression_method": 8,
+        "crc32": "28cc9b44",
+        "directory": false,
+        "local_header_offset": 3360937,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_68",
+        "uncompressed_size": 1336587
+      },
+      {
+        "compressed_size": 1150248,
+        "compression_method": 8,
+        "crc32": "30e11941",
+        "directory": false,
+        "local_header_offset": 4190332,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_95",
+        "uncompressed_size": 1815445
+      },
+      {
+        "compressed_size": 145218,
+        "compression_method": 8,
+        "crc32": "fcb49fe2",
+        "directory": false,
+        "local_header_offset": 5340686,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_8",
+        "uncompressed_size": 273718
+      },
+      {
+        "compressed_size": 443335,
+        "compression_method": 8,
+        "crc32": "457815d6",
+        "directory": false,
+        "local_header_offset": 5486009,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_34",
+        "uncompressed_size": 734188
+      },
+      {
+        "compressed_size": 736558,
+        "compression_method": 8,
+        "crc32": "d3f18ce8",
+        "directory": false,
+        "local_header_offset": 5929450,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_60",
+        "uncompressed_size": 1194741
+      },
+      {
+        "compressed_size": 160198,
+        "compression_method": 8,
+        "crc32": "aad2e17e",
+        "directory": false,
+        "local_header_offset": 6666114,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_9",
+        "uncompressed_size": 291444
+      },
+      {
+        "compressed_size": 136255,
+        "compression_method": 8,
+        "crc32": "9a19b1d7",
+        "directory": false,
+        "local_header_offset": 6826417,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_7",
+        "uncompressed_size": 256091
+      },
+      {
+        "compressed_size": 227764,
+        "compression_method": 8,
+        "crc32": "5d03f90a",
+        "directory": false,
+        "local_header_offset": 6962777,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_15",
+        "uncompressed_size": 397731
+      },
+      {
+        "compressed_size": 194177,
+        "compression_method": 8,
+        "crc32": "d689a9a2",
+        "directory": false,
+        "local_header_offset": 7190647,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_12",
+        "uncompressed_size": 344521
+      },
+      {
+        "compressed_size": 327275,
+        "compression_method": 8,
+        "crc32": "0b75eeed",
+        "directory": false,
+        "local_header_offset": 7384930,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_24",
+        "uncompressed_size": 557072
+      },
+      {
+        "compressed_size": 601726,
+        "compression_method": 8,
+        "crc32": "55883ea2",
+        "directory": false,
+        "local_header_offset": 7712311,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_48",
+        "uncompressed_size": 982211
+      },
+      {
+        "compressed_size": 202878,
+        "compression_method": 8,
+        "crc32": "1c2be8a2",
+        "directory": false,
+        "local_header_offset": 8314143,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_13",
+        "uncompressed_size": 362255
+      },
+      {
+        "compressed_size": 1034236,
+        "compression_method": 8,
+        "crc32": "0d92b604",
+        "directory": false,
+        "local_header_offset": 8517127,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_85",
+        "uncompressed_size": 1638092
+      },
+      {
+        "compressed_size": 921560,
+        "compression_method": 8,
+        "crc32": "af8986c8",
+        "directory": false,
+        "local_header_offset": 9551469,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_76",
+        "uncompressed_size": 1478513
+      },
+      {
+        "compressed_size": 1425717,
+        "compression_method": 8,
+        "crc32": "11ef0dad",
+        "directory": false,
+        "local_header_offset": 10473135,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_120",
+        "uncompressed_size": 2259536
+      },
+      {
+        "compressed_size": 1590674,
+        "compression_method": 8,
+        "crc32": "e0708c96",
+        "directory": false,
+        "local_header_offset": 11898959,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_135",
+        "uncompressed_size": 2526009
+      },
+      {
+        "compressed_size": 672537,
+        "compression_method": 8,
+        "crc32": "3d9797dd",
+        "directory": false,
+        "local_header_offset": 13489740,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_54",
+        "uncompressed_size": 1088493
+      },
+      {
+        "compressed_size": 77898,
+        "compression_method": 8,
+        "crc32": "122300f7",
+        "directory": false,
+        "local_header_offset": 14162383,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_2",
+        "uncompressed_size": 167676
+      },
+      {
+        "compressed_size": 110537,
+        "compression_method": 8,
+        "crc32": "e18656e5",
+        "directory": false,
+        "local_header_offset": 14240386,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_5",
+        "uncompressed_size": 220714
+      },
+      {
+        "compressed_size": 491953,
+        "compression_method": 8,
+        "crc32": "5b40d5c5",
+        "directory": false,
+        "local_header_offset": 14351028,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_38",
+        "uncompressed_size": 805047
+      },
+      {
+        "compressed_size": 101088,
+        "compression_method": 8,
+        "crc32": "cd3d523b",
+        "directory": false,
+        "local_header_offset": 14843087,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_4",
+        "uncompressed_size": 203037
+      },
+      {
+        "compressed_size": 89793,
+        "compression_method": 8,
+        "crc32": "3c57227c",
+        "directory": false,
+        "local_header_offset": 14944280,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_3",
+        "uncompressed_size": 185370
+      },
+      {
+        "compressed_size": 399055,
+        "compression_method": 8,
+        "crc32": "55937a86",
+        "directory": false,
+        "local_header_offset": 15034178,
+        "path": "data_upload/d5_phase_flip/nbar_1.0/num_cycles_30",
+        "uncompressed_size": 663384
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 15433339,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 368482,
+        "compression_method": 8,
+        "crc32": "09ba32f6",
+        "directory": false,
+        "local_header_offset": 15433432,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_27",
+        "uncompressed_size": 610174
+      },
+      {
+        "compressed_size": 1132,
+        "compression_method": 8,
+        "crc32": "acc59cbe",
+        "directory": false,
+        "local_header_offset": 15802020,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/all_cycle_numbers",
+        "uncompressed_size": 2634
+      },
+      {
+        "compressed_size": 550096,
+        "compression_method": 8,
+        "crc32": "b9988745",
+        "directory": false,
+        "local_header_offset": 15803262,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_43",
+        "uncompressed_size": 893544
+      },
+      {
+        "compressed_size": 276089,
+        "compression_method": 8,
+        "crc32": "da7342d8",
+        "directory": false,
+        "local_header_offset": 16353464,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_19",
+        "uncompressed_size": 468464
+      },
+      {
+        "compressed_size": 296090,
+        "compression_method": 8,
+        "crc32": "863a0dd5",
+        "directory": false,
+        "local_header_offset": 16629659,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_21",
+        "uncompressed_size": 503879
+      },
+      {
+        "compressed_size": 254026,
+        "compression_method": 8,
+        "crc32": "54abb09e",
+        "directory": false,
+        "local_header_offset": 16925855,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_17",
+        "uncompressed_size": 433045
+      },
+      {
+        "compressed_size": 168742,
+        "compression_method": 8,
+        "crc32": "b1e513ab",
+        "directory": false,
+        "local_header_offset": 17179987,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_10",
+        "uncompressed_size": 309055
+      },
+      {
+        "compressed_size": 1287548,
+        "compression_method": 8,
+        "crc32": "bef210fd",
+        "directory": false,
+        "local_header_offset": 17348835,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_107",
+        "uncompressed_size": 2028324
+      },
+      {
+        "compressed_size": 127011,
+        "compression_method": 8,
+        "crc32": "ceba23ba",
+        "directory": false,
+        "local_header_offset": 18636490,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_6",
+        "uncompressed_size": 238339
+      },
+      {
+        "compressed_size": 66880,
+        "compression_method": 8,
+        "crc32": "30f9858e",
+        "directory": false,
+        "local_header_offset": 18763606,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_1",
+        "uncompressed_size": 149948
+      },
+      {
+        "compressed_size": 835353,
+        "compression_method": 8,
+        "crc32": "acae551c",
+        "directory": false,
+        "local_header_offset": 18830591,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_68",
+        "uncompressed_size": 1336396
+      },
+      {
+        "compressed_size": 1147093,
+        "compression_method": 8,
+        "crc32": "fc5d0199",
+        "directory": false,
+        "local_header_offset": 19666050,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_95",
+        "uncompressed_size": 1815318
+      },
+      {
+        "compressed_size": 149878,
+        "compression_method": 8,
+        "crc32": "e427be37",
+        "directory": false,
+        "local_header_offset": 20813249,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_8",
+        "uncompressed_size": 273689
+      },
+      {
+        "compressed_size": 448207,
+        "compression_method": 8,
+        "crc32": "33d68e7d",
+        "directory": false,
+        "local_header_offset": 20963232,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_34",
+        "uncompressed_size": 734137
+      },
+      {
+        "compressed_size": 747794,
+        "compression_method": 8,
+        "crc32": "f308e537",
+        "directory": false,
+        "local_header_offset": 21411545,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_60",
+        "uncompressed_size": 1194669
+      },
+      {
+        "compressed_size": 158825,
+        "compression_method": 8,
+        "crc32": "45dcb885",
+        "directory": false,
+        "local_header_offset": 22159445,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_9",
+        "uncompressed_size": 291388
+      },
+      {
+        "compressed_size": 135557,
+        "compression_method": 8,
+        "crc32": "2c0ec6a9",
+        "directory": false,
+        "local_header_offset": 22318375,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_7",
+        "uncompressed_size": 256012
+      },
+      {
+        "compressed_size": 229512,
+        "compression_method": 8,
+        "crc32": "f9b89e1d",
+        "directory": false,
+        "local_header_offset": 22454037,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_15",
+        "uncompressed_size": 397636
+      },
+      {
+        "compressed_size": 192787,
+        "compression_method": 8,
+        "crc32": "d445489a",
+        "directory": false,
+        "local_header_offset": 22683655,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_12",
+        "uncompressed_size": 344478
+      },
+      {
+        "compressed_size": 337510,
+        "compression_method": 8,
+        "crc32": "7bd84f6c",
+        "directory": false,
+        "local_header_offset": 22876548,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_24",
+        "uncompressed_size": 557001
+      },
+      {
+        "compressed_size": 603193,
+        "compression_method": 8,
+        "crc32": "356b68eb",
+        "directory": false,
+        "local_header_offset": 23214164,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_48",
+        "uncompressed_size": 982051
+      },
+      {
+        "compressed_size": 204816,
+        "compression_method": 8,
+        "crc32": "026de0f3",
+        "directory": false,
+        "local_header_offset": 23817463,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_13",
+        "uncompressed_size": 362189
+      },
+      {
+        "compressed_size": 1032697,
+        "compression_method": 8,
+        "crc32": "5dfbc7cf",
+        "directory": false,
+        "local_header_offset": 24022385,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_85",
+        "uncompressed_size": 1637931
+      },
+      {
+        "compressed_size": 921599,
+        "compression_method": 8,
+        "crc32": "159deba5",
+        "directory": false,
+        "local_header_offset": 25055188,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_76",
+        "uncompressed_size": 1478282
+      },
+      {
+        "compressed_size": 1438951,
+        "compression_method": 8,
+        "crc32": "6d80a674",
+        "directory": false,
+        "local_header_offset": 25976893,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_120",
+        "uncompressed_size": 2259219
+      },
+      {
+        "compressed_size": 1603127,
+        "compression_method": 8,
+        "crc32": "365f28d1",
+        "directory": false,
+        "local_header_offset": 27415951,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_135",
+        "uncompressed_size": 2525811
+      },
+      {
+        "compressed_size": 675659,
+        "compression_method": 8,
+        "crc32": "0616ddf1",
+        "directory": false,
+        "local_header_offset": 29019185,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_54",
+        "uncompressed_size": 1088349
+      },
+      {
+        "compressed_size": 77647,
+        "compression_method": 8,
+        "crc32": "7a59bd7f",
+        "directory": false,
+        "local_header_offset": 29694950,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_2",
+        "uncompressed_size": 167622
+      },
+      {
+        "compressed_size": 112710,
+        "compression_method": 8,
+        "crc32": "527dd6ae",
+        "directory": false,
+        "local_header_offset": 29772702,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_5",
+        "uncompressed_size": 220679
+      },
+      {
+        "compressed_size": 491308,
+        "compression_method": 8,
+        "crc32": "0ed6e818",
+        "directory": false,
+        "local_header_offset": 29885517,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_38",
+        "uncompressed_size": 804975
+      },
+      {
+        "compressed_size": 101811,
+        "compression_method": 8,
+        "crc32": "0fcf04a9",
+        "directory": false,
+        "local_header_offset": 30376931,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_4",
+        "uncompressed_size": 202963
+      },
+      {
+        "compressed_size": 89901,
+        "compression_method": 8,
+        "crc32": "2ae1d4ef",
+        "directory": false,
+        "local_header_offset": 30478847,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_3",
+        "uncompressed_size": 185302
+      },
+      {
+        "compressed_size": 398551,
+        "compression_method": 8,
+        "crc32": "4be8977e",
+        "directory": false,
+        "local_header_offset": 30568853,
+        "path": "data_upload/d5_phase_flip/nbar_3.5/num_cycles_30",
+        "uncompressed_size": 663247
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 30967510,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 365999,
+        "compression_method": 8,
+        "crc32": "f2877ec1",
+        "directory": false,
+        "local_header_offset": 30967603,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_27",
+        "uncompressed_size": 610154
+      },
+      {
+        "compressed_size": 1132,
+        "compression_method": 8,
+        "crc32": "acc59cbe",
+        "directory": false,
+        "local_header_offset": 31333708,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/all_cycle_numbers",
+        "uncompressed_size": 2634
+      },
+      {
+        "compressed_size": 549922,
+        "compression_method": 8,
+        "crc32": "2417b1f2",
+        "directory": false,
+        "local_header_offset": 31334950,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_43",
+        "uncompressed_size": 893539
+      },
+      {
+        "compressed_size": 273827,
+        "compression_method": 8,
+        "crc32": "34e228c6",
+        "directory": false,
+        "local_header_offset": 31884978,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_19",
+        "uncompressed_size": 468497
+      },
+      {
+        "compressed_size": 301403,
+        "compression_method": 8,
+        "crc32": "934770bc",
+        "directory": false,
+        "local_header_offset": 32158911,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_21",
+        "uncompressed_size": 503893
+      },
+      {
+        "compressed_size": 250097,
+        "compression_method": 8,
+        "crc32": "a31ba5f7",
+        "directory": false,
+        "local_header_offset": 32460420,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_17",
+        "uncompressed_size": 433048
+      },
+      {
+        "compressed_size": 167894,
+        "compression_method": 8,
+        "crc32": "d772f8c7",
+        "directory": false,
+        "local_header_offset": 32710623,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_10",
+        "uncompressed_size": 309080
+      },
+      {
+        "compressed_size": 1281031,
+        "compression_method": 8,
+        "crc32": "f73f0aeb",
+        "directory": false,
+        "local_header_offset": 32878623,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_107",
+        "uncompressed_size": 2028366
+      },
+      {
+        "compressed_size": 126198,
+        "compression_method": 8,
+        "crc32": "2ced5d12",
+        "directory": false,
+        "local_header_offset": 34159761,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_6",
+        "uncompressed_size": 238339
+      },
+      {
+        "compressed_size": 65683,
+        "compression_method": 8,
+        "crc32": "9b60f53c",
+        "directory": false,
+        "local_header_offset": 34286064,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_1",
+        "uncompressed_size": 149957
+      },
+      {
+        "compressed_size": 836665,
+        "compression_method": 8,
+        "crc32": "36fefff3",
+        "directory": false,
+        "local_header_offset": 34351852,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_68",
+        "uncompressed_size": 1336384
+      },
+      {
+        "compressed_size": 1151975,
+        "compression_method": 8,
+        "crc32": "a26935fe",
+        "directory": false,
+        "local_header_offset": 35188623,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_95",
+        "uncompressed_size": 1815280
+      },
+      {
+        "compressed_size": 149477,
+        "compression_method": 8,
+        "crc32": "c648fb55",
+        "directory": false,
+        "local_header_offset": 36340704,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_8",
+        "uncompressed_size": 273712
+      },
+      {
+        "compressed_size": 442503,
+        "compression_method": 8,
+        "crc32": "4b991e56",
+        "directory": false,
+        "local_header_offset": 36490286,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_34",
+        "uncompressed_size": 734105
+      },
+      {
+        "compressed_size": 746066,
+        "compression_method": 8,
+        "crc32": "115011cd",
+        "directory": false,
+        "local_header_offset": 36932895,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_60",
+        "uncompressed_size": 1194668
+      },
+      {
+        "compressed_size": 159390,
+        "compression_method": 8,
+        "crc32": "041f36a0",
+        "directory": false,
+        "local_header_offset": 37679067,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_9",
+        "uncompressed_size": 291375
+      },
+      {
+        "compressed_size": 136875,
+        "compression_method": 8,
+        "crc32": "bbd5c3c1",
+        "directory": false,
+        "local_header_offset": 37838562,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_7",
+        "uncompressed_size": 256032
+      },
+      {
+        "compressed_size": 226449,
+        "compression_method": 8,
+        "crc32": "e4db38db",
+        "directory": false,
+        "local_header_offset": 37975542,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_15",
+        "uncompressed_size": 397636
+      },
+      {
+        "compressed_size": 195119,
+        "compression_method": 8,
+        "crc32": "7db57310",
+        "directory": false,
+        "local_header_offset": 38202097,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_12",
+        "uncompressed_size": 344497
+      },
+      {
+        "compressed_size": 331648,
+        "compression_method": 8,
+        "crc32": "055fafd4",
+        "directory": false,
+        "local_header_offset": 38397322,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_24",
+        "uncompressed_size": 556985
+      },
+      {
+        "compressed_size": 601366,
+        "compression_method": 8,
+        "crc32": "1f466036",
+        "directory": false,
+        "local_header_offset": 38729076,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_48",
+        "uncompressed_size": 982126
+      },
+      {
+        "compressed_size": 204825,
+        "compression_method": 8,
+        "crc32": "fbc9588a",
+        "directory": false,
+        "local_header_offset": 39330548,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_13",
+        "uncompressed_size": 362213
+      },
+      {
+        "compressed_size": 1035351,
+        "compression_method": 8,
+        "crc32": "1b0900c2",
+        "directory": false,
+        "local_header_offset": 39535479,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_85",
+        "uncompressed_size": 1637873
+      },
+      {
+        "compressed_size": 924885,
+        "compression_method": 8,
+        "crc32": "f18e870c",
+        "directory": false,
+        "local_header_offset": 40570936,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_76",
+        "uncompressed_size": 1478263
+      },
+      {
+        "compressed_size": 1434464,
+        "compression_method": 8,
+        "crc32": "8be164e5",
+        "directory": false,
+        "local_header_offset": 41495927,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_120",
+        "uncompressed_size": 2259318
+      },
+      {
+        "compressed_size": 1603522,
+        "compression_method": 8,
+        "crc32": "9a6209c4",
+        "directory": false,
+        "local_header_offset": 42930498,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_135",
+        "uncompressed_size": 2525797
+      },
+      {
+        "compressed_size": 679592,
+        "compression_method": 8,
+        "crc32": "27282f76",
+        "directory": false,
+        "local_header_offset": 44534127,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_54",
+        "uncompressed_size": 1088399
+      },
+      {
+        "compressed_size": 77570,
+        "compression_method": 8,
+        "crc32": "f5d2b012",
+        "directory": false,
+        "local_header_offset": 45213825,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_2",
+        "uncompressed_size": 167621
+      },
+      {
+        "compressed_size": 114129,
+        "compression_method": 8,
+        "crc32": "f49b94a3",
+        "directory": false,
+        "local_header_offset": 45291500,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_5",
+        "uncompressed_size": 220668
+      },
+      {
+        "compressed_size": 491968,
+        "compression_method": 8,
+        "crc32": "08b4efe5",
+        "directory": false,
+        "local_header_offset": 45405734,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_38",
+        "uncompressed_size": 804970
+      },
+      {
+        "compressed_size": 102801,
+        "compression_method": 8,
+        "crc32": "266f7dbb",
+        "directory": false,
+        "local_header_offset": 45897808,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_4",
+        "uncompressed_size": 202987
+      },
+      {
+        "compressed_size": 89671,
+        "compression_method": 8,
+        "crc32": "e528f921",
+        "directory": false,
+        "local_header_offset": 46000714,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_3",
+        "uncompressed_size": 185309
+      },
+      {
+        "compressed_size": 395348,
+        "compression_method": 8,
+        "crc32": "4423d781",
+        "directory": false,
+        "local_header_offset": 46090490,
+        "path": "data_upload/d5_phase_flip/nbar_2.0/num_cycles_30",
+        "uncompressed_size": 663275
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 46485944,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 365296,
+        "compression_method": 8,
+        "crc32": "b0231fdb",
+        "directory": false,
+        "local_header_offset": 46486037,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_27",
+        "uncompressed_size": 610119
+      },
+      {
+        "compressed_size": 1132,
+        "compression_method": 8,
+        "crc32": "acc59cbe",
+        "directory": false,
+        "local_header_offset": 46851439,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/all_cycle_numbers",
+        "uncompressed_size": 2634
+      },
+      {
+        "compressed_size": 554189,
+        "compression_method": 8,
+        "crc32": "a6a33bd7",
+        "directory": false,
+        "local_header_offset": 46852681,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_43",
+        "uncompressed_size": 893472
+      },
+      {
+        "compressed_size": 273251,
+        "compression_method": 8,
+        "crc32": "550b6e44",
+        "directory": false,
+        "local_header_offset": 47406976,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_19",
+        "uncompressed_size": 468474
+      },
+      {
+        "compressed_size": 298109,
+        "compression_method": 8,
+        "crc32": "0932e16f",
+        "directory": false,
+        "local_header_offset": 47680333,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_21",
+        "uncompressed_size": 503874
+      },
+      {
+        "compressed_size": 253929,
+        "compression_method": 8,
+        "crc32": "2c910c2b",
+        "directory": false,
+        "local_header_offset": 47978548,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_17",
+        "uncompressed_size": 433029
+      },
+      {
+        "compressed_size": 168641,
+        "compression_method": 8,
+        "crc32": "34655bc7",
+        "directory": false,
+        "local_header_offset": 48232583,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_10",
+        "uncompressed_size": 309037
+      },
+      {
+        "compressed_size": 1290261,
+        "compression_method": 8,
+        "crc32": "1db37e6e",
+        "directory": false,
+        "local_header_offset": 48401330,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_107",
+        "uncompressed_size": 2028277
+      },
+      {
+        "compressed_size": 123200,
+        "compression_method": 8,
+        "crc32": "554f6642",
+        "directory": false,
+        "local_header_offset": 49691698,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_6",
+        "uncompressed_size": 238351
+      },
+      {
+        "compressed_size": 66453,
+        "compression_method": 8,
+        "crc32": "83f9b7cc",
+        "directory": false,
+        "local_header_offset": 49815003,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_1",
+        "uncompressed_size": 149936
+      },
+      {
+        "compressed_size": 837444,
+        "compression_method": 8,
+        "crc32": "60dfb86c",
+        "directory": false,
+        "local_header_offset": 49881561,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_68",
+        "uncompressed_size": 1336385
+      },
+      {
+        "compressed_size": 1157463,
+        "compression_method": 8,
+        "crc32": "c651157b",
+        "directory": false,
+        "local_header_offset": 50719111,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_95",
+        "uncompressed_size": 1815280
+      },
+      {
+        "compressed_size": 146724,
+        "compression_method": 8,
+        "crc32": "acf120bb",
+        "directory": false,
+        "local_header_offset": 51876680,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_8",
+        "uncompressed_size": 273689
+      },
+      {
+        "compressed_size": 452577,
+        "compression_method": 8,
+        "crc32": "80b17dc2",
+        "directory": false,
+        "local_header_offset": 52023509,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_34",
+        "uncompressed_size": 734117
+      },
+      {
+        "compressed_size": 756565,
+        "compression_method": 8,
+        "crc32": "085e2633",
+        "directory": false,
+        "local_header_offset": 52476192,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_60",
+        "uncompressed_size": 1194599
+      },
+      {
+        "compressed_size": 160378,
+        "compression_method": 8,
+        "crc32": "9fa34f52",
+        "directory": false,
+        "local_header_offset": 53232863,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_9",
+        "uncompressed_size": 291405
+      },
+      {
+        "compressed_size": 138491,
+        "compression_method": 8,
+        "crc32": "7115b0bf",
+        "directory": false,
+        "local_header_offset": 53393346,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_7",
+        "uncompressed_size": 256031
+      },
+      {
+        "compressed_size": 228852,
+        "compression_method": 8,
+        "crc32": "3628b68b",
+        "directory": false,
+        "local_header_offset": 53531942,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_15",
+        "uncompressed_size": 397626
+      },
+      {
+        "compressed_size": 193559,
+        "compression_method": 8,
+        "crc32": "70e3353c",
+        "directory": false,
+        "local_header_offset": 53760900,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_12",
+        "uncompressed_size": 344462
+      },
+      {
+        "compressed_size": 331386,
+        "compression_method": 8,
+        "crc32": "a969948e",
+        "directory": false,
+        "local_header_offset": 53954565,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_24",
+        "uncompressed_size": 556994
+      },
+      {
+        "compressed_size": 616328,
+        "compression_method": 8,
+        "crc32": "a9c687ad",
+        "directory": false,
+        "local_header_offset": 54286057,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_48",
+        "uncompressed_size": 982053
+      },
+      {
+        "compressed_size": 206029,
+        "compression_method": 8,
+        "crc32": "99a1fed9",
+        "directory": false,
+        "local_header_offset": 54902491,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_13",
+        "uncompressed_size": 362192
+      },
+      {
+        "compressed_size": 1036847,
+        "compression_method": 8,
+        "crc32": "24dfd30d",
+        "directory": false,
+        "local_header_offset": 55108626,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_85",
+        "uncompressed_size": 1637929
+      },
+      {
+        "compressed_size": 936858,
+        "compression_method": 8,
+        "crc32": "0e407051",
+        "directory": false,
+        "local_header_offset": 56145579,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_76",
+        "uncompressed_size": 1478279
+      },
+      {
+        "compressed_size": 1440018,
+        "compression_method": 8,
+        "crc32": "508b7eb6",
+        "directory": false,
+        "local_header_offset": 57082543,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_120",
+        "uncompressed_size": 2259241
+      },
+      {
+        "compressed_size": 1606991,
+        "compression_method": 8,
+        "crc32": "0d63b557",
+        "directory": false,
+        "local_header_offset": 58522668,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_135",
+        "uncompressed_size": 2525773
+      },
+      {
+        "compressed_size": 678756,
+        "compression_method": 8,
+        "crc32": "2e8b1db8",
+        "directory": false,
+        "local_header_offset": 60129766,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_54",
+        "uncompressed_size": 1088398
+      },
+      {
+        "compressed_size": 77447,
+        "compression_method": 8,
+        "crc32": "31660b07",
+        "directory": false,
+        "local_header_offset": 60808628,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_2",
+        "uncompressed_size": 167631
+      },
+      {
+        "compressed_size": 113870,
+        "compression_method": 8,
+        "crc32": "924b4f04",
+        "directory": false,
+        "local_header_offset": 60886180,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_5",
+        "uncompressed_size": 220659
+      },
+      {
+        "compressed_size": 498123,
+        "compression_method": 8,
+        "crc32": "181fd3ec",
+        "directory": false,
+        "local_header_offset": 61000155,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_38",
+        "uncompressed_size": 804962
+      },
+      {
+        "compressed_size": 98401,
+        "compression_method": 8,
+        "crc32": "99ede6c6",
+        "directory": false,
+        "local_header_offset": 61498384,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_4",
+        "uncompressed_size": 202982
+      },
+      {
+        "compressed_size": 90853,
+        "compression_method": 8,
+        "crc32": "db086ca4",
+        "directory": false,
+        "local_header_offset": 61596890,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_3",
+        "uncompressed_size": 185299
+      },
+      {
+        "compressed_size": 401754,
+        "compression_method": 8,
+        "crc32": "ca3f859d",
+        "directory": false,
+        "local_header_offset": 61687848,
+        "path": "data_upload/d5_phase_flip/nbar_3.0/num_cycles_30",
+        "uncompressed_size": 663256
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 62089708,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 364608,
+        "compression_method": 8,
+        "crc32": "69cb2959",
+        "directory": false,
+        "local_header_offset": 62089801,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_27",
+        "uncompressed_size": 610160
+      },
+      {
+        "compressed_size": 1132,
+        "compression_method": 8,
+        "crc32": "acc59cbe",
+        "directory": false,
+        "local_header_offset": 62454515,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/all_cycle_numbers",
+        "uncompressed_size": 2634
+      },
+      {
+        "compressed_size": 553376,
+        "compression_method": 8,
+        "crc32": "6f75118a",
+        "directory": false,
+        "local_header_offset": 62455757,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_43",
+        "uncompressed_size": 893540
+      },
+      {
+        "compressed_size": 272385,
+        "compression_method": 8,
+        "crc32": "b0039836",
+        "directory": false,
+        "local_header_offset": 63009239,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_19",
+        "uncompressed_size": 468473
+      },
+      {
+        "compressed_size": 293125,
+        "compression_method": 8,
+        "crc32": "11be1fa7",
+        "directory": false,
+        "local_header_offset": 63281730,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_21",
+        "uncompressed_size": 503903
+      },
+      {
+        "compressed_size": 250960,
+        "compression_method": 8,
+        "crc32": "03cb8457",
+        "directory": false,
+        "local_header_offset": 63574961,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_17",
+        "uncompressed_size": 433088
+      },
+      {
+        "compressed_size": 169854,
+        "compression_method": 8,
+        "crc32": "be6b4f97",
+        "directory": false,
+        "local_header_offset": 63826027,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_10",
+        "uncompressed_size": 309079
+      },
+      {
+        "compressed_size": 1278527,
+        "compression_method": 8,
+        "crc32": "d6b7bee9",
+        "directory": false,
+        "local_header_offset": 63995987,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_107",
+        "uncompressed_size": 2028326
+      },
+      {
+        "compressed_size": 124291,
+        "compression_method": 8,
+        "crc32": "c1b70f3f",
+        "directory": false,
+        "local_header_offset": 65274621,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_6",
+        "uncompressed_size": 238348
+      },
+      {
+        "compressed_size": 67055,
+        "compression_method": 8,
+        "crc32": "8628e130",
+        "directory": false,
+        "local_header_offset": 65399017,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_1",
+        "uncompressed_size": 149958
+      },
+      {
+        "compressed_size": 843371,
+        "compression_method": 8,
+        "crc32": "274bbc58",
+        "directory": false,
+        "local_header_offset": 65466177,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_68",
+        "uncompressed_size": 1336375
+      },
+      {
+        "compressed_size": 1145763,
+        "compression_method": 8,
+        "crc32": "91b267b3",
+        "directory": false,
+        "local_header_offset": 66309654,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_95",
+        "uncompressed_size": 1815291
+      },
+      {
+        "compressed_size": 147836,
+        "compression_method": 8,
+        "crc32": "61590525",
+        "directory": false,
+        "local_header_offset": 67455523,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_8",
+        "uncompressed_size": 273722
+      },
+      {
+        "compressed_size": 451382,
+        "compression_method": 8,
+        "crc32": "26b90530",
+        "directory": false,
+        "local_header_offset": 67603464,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_34",
+        "uncompressed_size": 734189
+      },
+      {
+        "compressed_size": 747704,
+        "compression_method": 8,
+        "crc32": "ab62ef2a",
+        "directory": false,
+        "local_header_offset": 68054952,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_60",
+        "uncompressed_size": 1194671
+      },
+      {
+        "compressed_size": 159565,
+        "compression_method": 8,
+        "crc32": "964ce59d",
+        "directory": false,
+        "local_header_offset": 68802762,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_9",
+        "uncompressed_size": 291408
+      },
+      {
+        "compressed_size": 134608,
+        "compression_method": 8,
+        "crc32": "535e6b0d",
+        "directory": false,
+        "local_header_offset": 68962432,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_7",
+        "uncompressed_size": 256042
+      },
+      {
+        "compressed_size": 225940,
+        "compression_method": 8,
+        "crc32": "fd39d148",
+        "directory": false,
+        "local_header_offset": 69097145,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_15",
+        "uncompressed_size": 397654
+      },
+      {
+        "compressed_size": 194068,
+        "compression_method": 8,
+        "crc32": "0ddbf432",
+        "directory": false,
+        "local_header_offset": 69323191,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_12",
+        "uncompressed_size": 344477
+      },
+      {
+        "compressed_size": 328398,
+        "compression_method": 8,
+        "crc32": "498d235e",
+        "directory": false,
+        "local_header_offset": 69517365,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_24",
+        "uncompressed_size": 557070
+      },
+      {
+        "compressed_size": 607361,
+        "compression_method": 8,
+        "crc32": "866cb5b6",
+        "directory": false,
+        "local_header_offset": 69845869,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_48",
+        "uncompressed_size": 982164
+      },
+      {
+        "compressed_size": 205312,
+        "compression_method": 8,
+        "crc32": "974ec1c5",
+        "directory": false,
+        "local_header_offset": 70453336,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_13",
+        "uncompressed_size": 362227
+      },
+      {
+        "compressed_size": 1028622,
+        "compression_method": 8,
+        "crc32": "cd429d84",
+        "directory": false,
+        "local_header_offset": 70658754,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_85",
+        "uncompressed_size": 1637928
+      },
+      {
+        "compressed_size": 932144,
+        "compression_method": 8,
+        "crc32": "c7741d3a",
+        "directory": false,
+        "local_header_offset": 71687482,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_76",
+        "uncompressed_size": 1478330
+      },
+      {
+        "compressed_size": 1431264,
+        "compression_method": 8,
+        "crc32": "eb590cae",
+        "directory": false,
+        "local_header_offset": 72619732,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_120",
+        "uncompressed_size": 2259365
+      },
+      {
+        "compressed_size": 1609997,
+        "compression_method": 8,
+        "crc32": "4001a160",
+        "directory": false,
+        "local_header_offset": 74051103,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_135",
+        "uncompressed_size": 2525776
+      },
+      {
+        "compressed_size": 670308,
+        "compression_method": 8,
+        "crc32": "f0ad7717",
+        "directory": false,
+        "local_header_offset": 75661207,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_54",
+        "uncompressed_size": 1088380
+      },
+      {
+        "compressed_size": 78288,
+        "compression_method": 8,
+        "crc32": "f658e895",
+        "directory": false,
+        "local_header_offset": 76331621,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_2",
+        "uncompressed_size": 167621
+      },
+      {
+        "compressed_size": 112366,
+        "compression_method": 8,
+        "crc32": "0f01f696",
+        "directory": false,
+        "local_header_offset": 76410014,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_5",
+        "uncompressed_size": 220666
+      },
+      {
+        "compressed_size": 494548,
+        "compression_method": 8,
+        "crc32": "d12ddc87",
+        "directory": false,
+        "local_header_offset": 76522485,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_38",
+        "uncompressed_size": 804966
+      },
+      {
+        "compressed_size": 99735,
+        "compression_method": 8,
+        "crc32": "1f3d0635",
+        "directory": false,
+        "local_header_offset": 77017139,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_4",
+        "uncompressed_size": 202980
+      },
+      {
+        "compressed_size": 89453,
+        "compression_method": 8,
+        "crc32": "d2265fb2",
+        "directory": false,
+        "local_header_offset": 77116979,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_3",
+        "uncompressed_size": 185316
+      },
+      {
+        "compressed_size": 402710,
+        "compression_method": 8,
+        "crc32": "0d0d2e2b",
+        "directory": false,
+        "local_header_offset": 77206537,
+        "path": "data_upload/d5_phase_flip/nbar_1.5/num_cycles_30",
+        "uncompressed_size": 663277
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 77609353,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 366473,
+        "compression_method": 8,
+        "crc32": "3879e695",
+        "directory": false,
+        "local_header_offset": 77609446,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_27",
+        "uncompressed_size": 610153
+      },
+      {
+        "compressed_size": 1132,
+        "compression_method": 8,
+        "crc32": "acc59cbe",
+        "directory": false,
+        "local_header_offset": 77976025,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/all_cycle_numbers",
+        "uncompressed_size": 2634
+      },
+      {
+        "compressed_size": 555226,
+        "compression_method": 8,
+        "crc32": "f00e8350",
+        "directory": false,
+        "local_header_offset": 77977267,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_43",
+        "uncompressed_size": 893524
+      },
+      {
+        "compressed_size": 276425,
+        "compression_method": 8,
+        "crc32": "e837fe52",
+        "directory": false,
+        "local_header_offset": 78532599,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_19",
+        "uncompressed_size": 468458
+      },
+      {
+        "compressed_size": 295024,
+        "compression_method": 8,
+        "crc32": "580b9781",
+        "directory": false,
+        "local_header_offset": 78809130,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_21",
+        "uncompressed_size": 503872
+      },
+      {
+        "compressed_size": 253675,
+        "compression_method": 8,
+        "crc32": "a830c3a9",
+        "directory": false,
+        "local_header_offset": 79104260,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_17",
+        "uncompressed_size": 433051
+      },
+      {
+        "compressed_size": 171886,
+        "compression_method": 8,
+        "crc32": "9a417731",
+        "directory": false,
+        "local_header_offset": 79358041,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_10",
+        "uncompressed_size": 309081
+      },
+      {
+        "compressed_size": 1286950,
+        "compression_method": 8,
+        "crc32": "70c6fdc0",
+        "directory": false,
+        "local_header_offset": 79530033,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_107",
+        "uncompressed_size": 2028269
+      },
+      {
+        "compressed_size": 122061,
+        "compression_method": 8,
+        "crc32": "565beb0b",
+        "directory": false,
+        "local_header_offset": 80817090,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_6",
+        "uncompressed_size": 238355
+      },
+      {
+        "compressed_size": 66099,
+        "compression_method": 8,
+        "crc32": "92830f0b",
+        "directory": false,
+        "local_header_offset": 80939256,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_1",
+        "uncompressed_size": 149939
+      },
+      {
+        "compressed_size": 836459,
+        "compression_method": 8,
+        "crc32": "52c9c3ed",
+        "directory": false,
+        "local_header_offset": 81005460,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_68",
+        "uncompressed_size": 1336358
+      },
+      {
+        "compressed_size": 1146311,
+        "compression_method": 8,
+        "crc32": "cf2f2388",
+        "directory": false,
+        "local_header_offset": 81842025,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_95",
+        "uncompressed_size": 1815211
+      },
+      {
+        "compressed_size": 144458,
+        "compression_method": 8,
+        "crc32": "7963cd8d",
+        "directory": false,
+        "local_header_offset": 82988442,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_8",
+        "uncompressed_size": 273700
+      },
+      {
+        "compressed_size": 446741,
+        "compression_method": 8,
+        "crc32": "dde4d358",
+        "directory": false,
+        "local_header_offset": 83133005,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_34",
+        "uncompressed_size": 734124
+      },
+      {
+        "compressed_size": 744062,
+        "compression_method": 8,
+        "crc32": "509af18b",
+        "directory": false,
+        "local_header_offset": 83579852,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_60",
+        "uncompressed_size": 1194579
+      },
+      {
+        "compressed_size": 158503,
+        "compression_method": 8,
+        "crc32": "f4c22abd",
+        "directory": false,
+        "local_header_offset": 84324020,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_9",
+        "uncompressed_size": 291393
+      },
+      {
+        "compressed_size": 136417,
+        "compression_method": 8,
+        "crc32": "ca315f0d",
+        "directory": false,
+        "local_header_offset": 84482628,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_7",
+        "uncompressed_size": 256050
+      },
+      {
+        "compressed_size": 227672,
+        "compression_method": 8,
+        "crc32": "102cae5b",
+        "directory": false,
+        "local_header_offset": 84619150,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_15",
+        "uncompressed_size": 397640
+      },
+      {
+        "compressed_size": 192912,
+        "compression_method": 8,
+        "crc32": "80c03029",
+        "directory": false,
+        "local_header_offset": 84846928,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_12",
+        "uncompressed_size": 344479
+      },
+      {
+        "compressed_size": 329108,
+        "compression_method": 8,
+        "crc32": "4f56902f",
+        "directory": false,
+        "local_header_offset": 85039946,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_24",
+        "uncompressed_size": 557009
+      },
+      {
+        "compressed_size": 605317,
+        "compression_method": 8,
+        "crc32": "878cbcab",
+        "directory": false,
+        "local_header_offset": 85369160,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_48",
+        "uncompressed_size": 982089
+      },
+      {
+        "compressed_size": 206972,
+        "compression_method": 8,
+        "crc32": "e471e599",
+        "directory": false,
+        "local_header_offset": 85974583,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_13",
+        "uncompressed_size": 362213
+      },
+      {
+        "compressed_size": 1039153,
+        "compression_method": 8,
+        "crc32": "9a8b71e7",
+        "directory": false,
+        "local_header_offset": 86181661,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_85",
+        "uncompressed_size": 1637934
+      },
+      {
+        "compressed_size": 930851,
+        "compression_method": 8,
+        "crc32": "aefaf822",
+        "directory": false,
+        "local_header_offset": 87220920,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_76",
+        "uncompressed_size": 1478364
+      },
+      {
+        "compressed_size": 1433082,
+        "compression_method": 8,
+        "crc32": "704f5099",
+        "directory": false,
+        "local_header_offset": 88151877,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_120",
+        "uncompressed_size": 2259228
+      },
+      {
+        "compressed_size": 1600915,
+        "compression_method": 8,
+        "crc32": "8c26f1ad",
+        "directory": false,
+        "local_header_offset": 89585066,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_135",
+        "uncompressed_size": 2525774
+      },
+      {
+        "compressed_size": 678683,
+        "compression_method": 8,
+        "crc32": "c5dfb9ee",
+        "directory": false,
+        "local_header_offset": 91186088,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_54",
+        "uncompressed_size": 1088346
+      },
+      {
+        "compressed_size": 78889,
+        "compression_method": 8,
+        "crc32": "5b22f9a3",
+        "directory": false,
+        "local_header_offset": 91864877,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_2",
+        "uncompressed_size": 167604
+      },
+      {
+        "compressed_size": 113091,
+        "compression_method": 8,
+        "crc32": "4780d3a5",
+        "directory": false,
+        "local_header_offset": 91943871,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_5",
+        "uncompressed_size": 220642
+      },
+      {
+        "compressed_size": 491171,
+        "compression_method": 8,
+        "crc32": "7d022a7e",
+        "directory": false,
+        "local_header_offset": 92057067,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_38",
+        "uncompressed_size": 804937
+      },
+      {
+        "compressed_size": 101739,
+        "compression_method": 8,
+        "crc32": "c8e3ee4c",
+        "directory": false,
+        "local_header_offset": 92548344,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_4",
+        "uncompressed_size": 202987
+      },
+      {
+        "compressed_size": 88141,
+        "compression_method": 8,
+        "crc32": "5f103f39",
+        "directory": false,
+        "local_header_offset": 92650188,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_3",
+        "uncompressed_size": 185311
+      },
+      {
+        "compressed_size": 399255,
+        "compression_method": 8,
+        "crc32": "01af1a38",
+        "directory": false,
+        "local_header_offset": 92738434,
+        "path": "data_upload/d5_phase_flip/nbar_2.5/num_cycles_30",
+        "uncompressed_size": 663271
+      },
+      {
+        "compressed_size": 2018385,
+        "compression_method": 8,
+        "crc32": "7000c101",
+        "directory": false,
+        "local_header_offset": 93137795,
+        "path": "data_upload/d5_bit_flip",
+        "uncompressed_size": 2252582
+      },
+      {
+        "compressed_size": 860339,
+        "compression_method": 8,
+        "crc32": "83e02ce1",
+        "directory": false,
+        "local_header_offset": 95156261,
+        "path": "data_upload/first_d3_bit_flip",
+        "uncompressed_size": 1015301
+      },
+      {
+        "compressed_size": 1079,
+        "compression_method": 8,
+        "crc32": "fd09c11f",
+        "directory": false,
+        "local_header_offset": 96016687,
+        "path": "data_upload/README.md",
+        "uncompressed_size": 3065
+      },
+      {
+        "compressed_size": 864241,
+        "compression_method": 8,
+        "crc32": "0e7f76b8",
+        "directory": false,
+        "local_header_offset": 96017845,
+        "path": "data_upload/second_d3_bit_flip",
+        "uncompressed_size": 1014659
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 96882174,
+        "path": "data_upload/second_d3_phase_flip/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 96882265,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 107453,
+        "compression_method": 8,
+        "crc32": "f78e49d1",
+        "directory": false,
+        "local_header_offset": 96882365,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_11",
+        "uncompressed_size": 211813
+      },
+      {
+        "compressed_size": 137328,
+        "compression_method": 8,
+        "crc32": "dd27053c",
+        "directory": false,
+        "local_header_offset": 96989931,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_16",
+        "uncompressed_size": 256078
+      },
+      {
+        "compressed_size": 208225,
+        "compression_method": 8,
+        "crc32": "7eee8300",
+        "directory": false,
+        "local_header_offset": 97127372,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_29",
+        "uncompressed_size": 371215
+      },
+      {
+        "compressed_size": 158943,
+        "compression_method": 8,
+        "crc32": "bbb1a722",
+        "directory": false,
+        "local_header_offset": 97335710,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_20",
+        "uncompressed_size": 291496
+      },
+      {
+        "compressed_size": 144759,
+        "compression_method": 8,
+        "crc32": "6f781135",
+        "directory": false,
+        "local_header_offset": 97494766,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_18",
+        "uncompressed_size": 273804
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 97639638,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 464845,
+        "compression_method": 8,
+        "crc32": "fbbbff13",
+        "directory": false,
+        "local_header_offset": 97640876,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_75",
+        "uncompressed_size": 778619
+      },
+      {
+        "compressed_size": 192138,
+        "compression_method": 8,
+        "crc32": "26218b28",
+        "directory": false,
+        "local_header_offset": 98105834,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_26",
+        "uncompressed_size": 344681
+      },
+      {
+        "compressed_size": 100623,
+        "compression_method": 8,
+        "crc32": "92c604fd",
+        "directory": false,
+        "local_header_offset": 98298085,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_10",
+        "uncompressed_size": 202931
+      },
+      {
+        "compressed_size": 79112,
+        "compression_method": 8,
+        "crc32": "9a8d8ce4",
+        "directory": false,
+        "local_header_offset": 98398821,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_6",
+        "uncompressed_size": 167572
+      },
+      {
+        "compressed_size": 50352,
+        "compression_method": 8,
+        "crc32": "71cf9a55",
+        "directory": false,
+        "local_header_offset": 98478045,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_1",
+        "uncompressed_size": 123361
+      },
+      {
+        "compressed_size": 88989,
+        "compression_method": 8,
+        "crc32": "40d08a28",
+        "directory": false,
+        "local_header_offset": 98528509,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_8",
+        "uncompressed_size": 185261
+      },
+      {
+        "compressed_size": 417008,
+        "compression_method": 8,
+        "crc32": "2457046f",
+        "directory": false,
+        "local_header_offset": 98617610,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_66",
+        "uncompressed_size": 698908
+      },
+      {
+        "compressed_size": 383249,
+        "compression_method": 8,
+        "crc32": "4b6b6d0a",
+        "directory": false,
+        "local_header_offset": 99034731,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_59",
+        "uncompressed_size": 636964
+      },
+      {
+        "compressed_size": 229702,
+        "compression_method": 8,
+        "crc32": "75a57ce8",
+        "directory": false,
+        "local_header_offset": 99418093,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_33",
+        "uncompressed_size": 406629
+      },
+      {
+        "compressed_size": 96626,
+        "compression_method": 8,
+        "crc32": "01b3b7e9",
+        "directory": false,
+        "local_header_offset": 99647908,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_9",
+        "uncompressed_size": 194086
+      },
+      {
+        "compressed_size": 84173,
+        "compression_method": 8,
+        "crc32": "ee293954",
+        "directory": false,
+        "local_header_offset": 99744646,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_7",
+        "uncompressed_size": 176423
+      },
+      {
+        "compressed_size": 175491,
+        "compression_method": 8,
+        "crc32": "108682a2",
+        "directory": false,
+        "local_header_offset": 99828931,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_23",
+        "uncompressed_size": 318086
+      },
+      {
+        "compressed_size": 278837,
+        "compression_method": 8,
+        "crc32": "e30aeef9",
+        "directory": false,
+        "local_header_offset": 100004535,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_41",
+        "uncompressed_size": 477478
+      },
+      {
+        "compressed_size": 120806,
+        "compression_method": 8,
+        "crc32": "7f5ccf58",
+        "directory": false,
+        "local_header_offset": 100283485,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_13",
+        "uncompressed_size": 229536
+      },
+      {
+        "compressed_size": 121835,
+        "compression_method": 8,
+        "crc32": "c32e277f",
+        "directory": false,
+        "local_header_offset": 100404404,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_14",
+        "uncompressed_size": 238353
+      },
+      {
+        "compressed_size": 307490,
+        "compression_method": 8,
+        "crc32": "646eb181",
+        "directory": false,
+        "local_header_offset": 100526352,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_47",
+        "uncompressed_size": 530668
+      },
+      {
+        "compressed_size": 55743,
+        "compression_method": 8,
+        "crc32": "159bfb46",
+        "directory": false,
+        "local_header_offset": 100833955,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_2",
+        "uncompressed_size": 132208
+      },
+      {
+        "compressed_size": 73781,
+        "compression_method": 8,
+        "crc32": "8966b592",
+        "directory": false,
+        "local_header_offset": 100889810,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_5",
+        "uncompressed_size": 158742
+      },
+      {
+        "compressed_size": 336903,
+        "compression_method": 8,
+        "crc32": "81d6a9d9",
+        "directory": false,
+        "local_header_offset": 100963703,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_52",
+        "uncompressed_size": 574889
+      },
+      {
+        "compressed_size": 66276,
+        "compression_method": 8,
+        "crc32": "cc27cd52",
+        "directory": false,
+        "local_header_offset": 101300719,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_4",
+        "uncompressed_size": 149907
+      },
+      {
+        "compressed_size": 61229,
+        "compression_method": 8,
+        "crc32": "e86de310",
+        "directory": false,
+        "local_header_offset": 101367107,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_3",
+        "uncompressed_size": 141041
+      },
+      {
+        "compressed_size": 254305,
+        "compression_method": 8,
+        "crc32": "bf9ecf8d",
+        "directory": false,
+        "local_header_offset": 101428448,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.0/num_cycles_37",
+        "uncompressed_size": 442056
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 101682866,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 107614,
+        "compression_method": 8,
+        "crc32": "da6b2df1",
+        "directory": false,
+        "local_header_offset": 101682966,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_11",
+        "uncompressed_size": 211761
+      },
+      {
+        "compressed_size": 135592,
+        "compression_method": 8,
+        "crc32": "ec07f37a",
+        "directory": false,
+        "local_header_offset": 101790693,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_16",
+        "uncompressed_size": 256036
+      },
+      {
+        "compressed_size": 210463,
+        "compression_method": 8,
+        "crc32": "b26c3af9",
+        "directory": false,
+        "local_header_offset": 101926398,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_29",
+        "uncompressed_size": 371187
+      },
+      {
+        "compressed_size": 159616,
+        "compression_method": 8,
+        "crc32": "e761846c",
+        "directory": false,
+        "local_header_offset": 102136974,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_20",
+        "uncompressed_size": 291467
+      },
+      {
+        "compressed_size": 148810,
+        "compression_method": 8,
+        "crc32": "93a4b548",
+        "directory": false,
+        "local_header_offset": 102296703,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_18",
+        "uncompressed_size": 273755
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 102445626,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 479294,
+        "compression_method": 8,
+        "crc32": "08852209",
+        "directory": false,
+        "local_header_offset": 102446864,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_75",
+        "uncompressed_size": 778486
+      },
+      {
+        "compressed_size": 193657,
+        "compression_method": 8,
+        "crc32": "952b79f9",
+        "directory": false,
+        "local_header_offset": 102926271,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_26",
+        "uncompressed_size": 344604
+      },
+      {
+        "compressed_size": 103148,
+        "compression_method": 8,
+        "crc32": "6bcba93a",
+        "directory": false,
+        "local_header_offset": 103120041,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_10",
+        "uncompressed_size": 202906
+      },
+      {
+        "compressed_size": 78659,
+        "compression_method": 8,
+        "crc32": "800cf335",
+        "directory": false,
+        "local_header_offset": 103223302,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_6",
+        "uncompressed_size": 167524
+      },
+      {
+        "compressed_size": 49976,
+        "compression_method": 8,
+        "crc32": "1fd4c38a",
+        "directory": false,
+        "local_header_offset": 103302073,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_1",
+        "uncompressed_size": 123341
+      },
+      {
+        "compressed_size": 92399,
+        "compression_method": 8,
+        "crc32": "d46839cf",
+        "directory": false,
+        "local_header_offset": 103352161,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_8",
+        "uncompressed_size": 185228
+      },
+      {
+        "compressed_size": 423695,
+        "compression_method": 8,
+        "crc32": "bfaee437",
+        "directory": false,
+        "local_header_offset": 103444672,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_66",
+        "uncompressed_size": 698836
+      },
+      {
+        "compressed_size": 380862,
+        "compression_method": 8,
+        "crc32": "35a95728",
+        "directory": false,
+        "local_header_offset": 103868480,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_59",
+        "uncompressed_size": 636861
+      },
+      {
+        "compressed_size": 236939,
+        "compression_method": 8,
+        "crc32": "085ea583",
+        "directory": false,
+        "local_header_offset": 104249455,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_33",
+        "uncompressed_size": 406610
+      },
+      {
+        "compressed_size": 95919,
+        "compression_method": 8,
+        "crc32": "c7435a23",
+        "directory": false,
+        "local_header_offset": 104486507,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_9",
+        "uncompressed_size": 194056
+      },
+      {
+        "compressed_size": 85632,
+        "compression_method": 8,
+        "crc32": "c620a4cb",
+        "directory": false,
+        "local_header_offset": 104582538,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_7",
+        "uncompressed_size": 176383
+      },
+      {
+        "compressed_size": 178532,
+        "compression_method": 8,
+        "crc32": "ee81e166",
+        "directory": false,
+        "local_header_offset": 104668282,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_23",
+        "uncompressed_size": 318030
+      },
+      {
+        "compressed_size": 280321,
+        "compression_method": 8,
+        "crc32": "282e66b6",
+        "directory": false,
+        "local_header_offset": 104846927,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_41",
+        "uncompressed_size": 477443
+      },
+      {
+        "compressed_size": 119617,
+        "compression_method": 8,
+        "crc32": "2a90527b",
+        "directory": false,
+        "local_header_offset": 105127361,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_13",
+        "uncompressed_size": 229482
+      },
+      {
+        "compressed_size": 126221,
+        "compression_method": 8,
+        "crc32": "35506f80",
+        "directory": false,
+        "local_header_offset": 105247091,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_14",
+        "uncompressed_size": 238341
+      },
+      {
+        "compressed_size": 314218,
+        "compression_method": 8,
+        "crc32": "dfa52830",
+        "directory": false,
+        "local_header_offset": 105373425,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_47",
+        "uncompressed_size": 530597
+      },
+      {
+        "compressed_size": 56901,
+        "compression_method": 8,
+        "crc32": "234863f8",
+        "directory": false,
+        "local_header_offset": 105687756,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_2",
+        "uncompressed_size": 132175
+      },
+      {
+        "compressed_size": 72940,
+        "compression_method": 8,
+        "crc32": "dbf88817",
+        "directory": false,
+        "local_header_offset": 105744769,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_5",
+        "uncompressed_size": 158714
+      },
+      {
+        "compressed_size": 343464,
+        "compression_method": 8,
+        "crc32": "935b2971",
+        "directory": false,
+        "local_header_offset": 105817821,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_52",
+        "uncompressed_size": 574862
+      },
+      {
+        "compressed_size": 67128,
+        "compression_method": 8,
+        "crc32": "ed8a968e",
+        "directory": false,
+        "local_header_offset": 106161398,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_4",
+        "uncompressed_size": 149853
+      },
+      {
+        "compressed_size": 61408,
+        "compression_method": 8,
+        "crc32": "94dbfa24",
+        "directory": false,
+        "local_header_offset": 106228638,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_3",
+        "uncompressed_size": 141024
+      },
+      {
+        "compressed_size": 255653,
+        "compression_method": 8,
+        "crc32": "23e44887",
+        "directory": false,
+        "local_header_offset": 106290158,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.0/num_cycles_37",
+        "uncompressed_size": 442015
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 106545924,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 107072,
+        "compression_method": 8,
+        "crc32": "83523774",
+        "directory": false,
+        "local_header_offset": 106546024,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_11",
+        "uncompressed_size": 211762
+      },
+      {
+        "compressed_size": 133507,
+        "compression_method": 8,
+        "crc32": "7dd65ced",
+        "directory": false,
+        "local_header_offset": 106653209,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_16",
+        "uncompressed_size": 256045
+      },
+      {
+        "compressed_size": 211495,
+        "compression_method": 8,
+        "crc32": "1e01f184",
+        "directory": false,
+        "local_header_offset": 106786829,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_29",
+        "uncompressed_size": 371165
+      },
+      {
+        "compressed_size": 159986,
+        "compression_method": 8,
+        "crc32": "b70df7d1",
+        "directory": false,
+        "local_header_offset": 106998437,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_20",
+        "uncompressed_size": 291464
+      },
+      {
+        "compressed_size": 146523,
+        "compression_method": 8,
+        "crc32": "5bf04886",
+        "directory": false,
+        "local_header_offset": 107158536,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_18",
+        "uncompressed_size": 273774
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 107305172,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 468333,
+        "compression_method": 8,
+        "crc32": "531e7f24",
+        "directory": false,
+        "local_header_offset": 107306410,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_75",
+        "uncompressed_size": 778528
+      },
+      {
+        "compressed_size": 193302,
+        "compression_method": 8,
+        "crc32": "5bdebc7f",
+        "directory": false,
+        "local_header_offset": 107774856,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_26",
+        "uncompressed_size": 344606
+      },
+      {
+        "compressed_size": 102180,
+        "compression_method": 8,
+        "crc32": "8daeaefb",
+        "directory": false,
+        "local_header_offset": 107968271,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_10",
+        "uncompressed_size": 202905
+      },
+      {
+        "compressed_size": 80055,
+        "compression_method": 8,
+        "crc32": "2f64186a",
+        "directory": false,
+        "local_header_offset": 108070564,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_6",
+        "uncompressed_size": 167539
+      },
+      {
+        "compressed_size": 50713,
+        "compression_method": 8,
+        "crc32": "b407b9ab",
+        "directory": false,
+        "local_header_offset": 108150731,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_1",
+        "uncompressed_size": 123351
+      },
+      {
+        "compressed_size": 90801,
+        "compression_method": 8,
+        "crc32": "6ace6ac8",
+        "directory": false,
+        "local_header_offset": 108201556,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_8",
+        "uncompressed_size": 185238
+      },
+      {
+        "compressed_size": 422289,
+        "compression_method": 8,
+        "crc32": "143b7d28",
+        "directory": false,
+        "local_header_offset": 108292469,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_66",
+        "uncompressed_size": 698848
+      },
+      {
+        "compressed_size": 385421,
+        "compression_method": 8,
+        "crc32": "9a72d619",
+        "directory": false,
+        "local_header_offset": 108714871,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_59",
+        "uncompressed_size": 636880
+      },
+      {
+        "compressed_size": 234775,
+        "compression_method": 8,
+        "crc32": "7e416263",
+        "directory": false,
+        "local_header_offset": 109100405,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_33",
+        "uncompressed_size": 406576
+      },
+      {
+        "compressed_size": 97662,
+        "compression_method": 8,
+        "crc32": "4f457016",
+        "directory": false,
+        "local_header_offset": 109335293,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_9",
+        "uncompressed_size": 194088
+      },
+      {
+        "compressed_size": 85811,
+        "compression_method": 8,
+        "crc32": "743e7240",
+        "directory": false,
+        "local_header_offset": 109433067,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_7",
+        "uncompressed_size": 176381
+      },
+      {
+        "compressed_size": 174738,
+        "compression_method": 8,
+        "crc32": "bf9ce5dd",
+        "directory": false,
+        "local_header_offset": 109518990,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_23",
+        "uncompressed_size": 318012
+      },
+      {
+        "compressed_size": 281465,
+        "compression_method": 8,
+        "crc32": "943735c0",
+        "directory": false,
+        "local_header_offset": 109693841,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_41",
+        "uncompressed_size": 477449
+      },
+      {
+        "compressed_size": 119017,
+        "compression_method": 8,
+        "crc32": "9ad39871",
+        "directory": false,
+        "local_header_offset": 109975419,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_13",
+        "uncompressed_size": 229470
+      },
+      {
+        "compressed_size": 125908,
+        "compression_method": 8,
+        "crc32": "d5fdffa8",
+        "directory": false,
+        "local_header_offset": 110094549,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_14",
+        "uncompressed_size": 238336
+      },
+      {
+        "compressed_size": 313463,
+        "compression_method": 8,
+        "crc32": "3357d885",
+        "directory": false,
+        "local_header_offset": 110220570,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_47",
+        "uncompressed_size": 530582
+      },
+      {
+        "compressed_size": 56039,
+        "compression_method": 8,
+        "crc32": "2b59a2e4",
+        "directory": false,
+        "local_header_offset": 110534146,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_2",
+        "uncompressed_size": 132189
+      },
+      {
+        "compressed_size": 74220,
+        "compression_method": 8,
+        "crc32": "e407a3f6",
+        "directory": false,
+        "local_header_offset": 110590297,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_5",
+        "uncompressed_size": 158701
+      },
+      {
+        "compressed_size": 340876,
+        "compression_method": 8,
+        "crc32": "e1297a6e",
+        "directory": false,
+        "local_header_offset": 110664629,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_52",
+        "uncompressed_size": 574849
+      },
+      {
+        "compressed_size": 68201,
+        "compression_method": 8,
+        "crc32": "36218c3c",
+        "directory": false,
+        "local_header_offset": 111005618,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_4",
+        "uncompressed_size": 149866
+      },
+      {
+        "compressed_size": 62372,
+        "compression_method": 8,
+        "crc32": "15ec7660",
+        "directory": false,
+        "local_header_offset": 111073931,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_3",
+        "uncompressed_size": 141031
+      },
+      {
+        "compressed_size": 259923,
+        "compression_method": 8,
+        "crc32": "1ac06516",
+        "directory": false,
+        "local_header_offset": 111136415,
+        "path": "data_upload/second_d3_phase_flip/nbar_3.0/num_cycles_37",
+        "uncompressed_size": 442022
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 111396451,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 106215,
+        "compression_method": 8,
+        "crc32": "56f876d4",
+        "directory": false,
+        "local_header_offset": 111396551,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_11",
+        "uncompressed_size": 211768
+      },
+      {
+        "compressed_size": 138806,
+        "compression_method": 8,
+        "crc32": "b8ab7bfe",
+        "directory": false,
+        "local_header_offset": 111502879,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_16",
+        "uncompressed_size": 256057
+      },
+      {
+        "compressed_size": 210071,
+        "compression_method": 8,
+        "crc32": "dd95a050",
+        "directory": false,
+        "local_header_offset": 111641798,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_29",
+        "uncompressed_size": 371175
+      },
+      {
+        "compressed_size": 160753,
+        "compression_method": 8,
+        "crc32": "ca3b3e92",
+        "directory": false,
+        "local_header_offset": 111851982,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_20",
+        "uncompressed_size": 291472
+      },
+      {
+        "compressed_size": 148252,
+        "compression_method": 8,
+        "crc32": "825f74dc",
+        "directory": false,
+        "local_header_offset": 112012848,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_18",
+        "uncompressed_size": 273754
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 112161213,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 467700,
+        "compression_method": 8,
+        "crc32": "7c33e816",
+        "directory": false,
+        "local_header_offset": 112162451,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_75",
+        "uncompressed_size": 778582
+      },
+      {
+        "compressed_size": 194468,
+        "compression_method": 8,
+        "crc32": "e7e28433",
+        "directory": false,
+        "local_header_offset": 112630264,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_26",
+        "uncompressed_size": 344627
+      },
+      {
+        "compressed_size": 101672,
+        "compression_method": 8,
+        "crc32": "15f190cd",
+        "directory": false,
+        "local_header_offset": 112824845,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_10",
+        "uncompressed_size": 202901
+      },
+      {
+        "compressed_size": 80164,
+        "compression_method": 8,
+        "crc32": "cbca815f",
+        "directory": false,
+        "local_header_offset": 112926630,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_6",
+        "uncompressed_size": 167543
+      },
+      {
+        "compressed_size": 49965,
+        "compression_method": 8,
+        "crc32": "b7edf94c",
+        "directory": false,
+        "local_header_offset": 113006906,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_1",
+        "uncompressed_size": 123356
+      },
+      {
+        "compressed_size": 91208,
+        "compression_method": 8,
+        "crc32": "f5446f8b",
+        "directory": false,
+        "local_header_offset": 113056983,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_8",
+        "uncompressed_size": 185222
+      },
+      {
+        "compressed_size": 421079,
+        "compression_method": 8,
+        "crc32": "1474245a",
+        "directory": false,
+        "local_header_offset": 113148303,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_66",
+        "uncompressed_size": 698858
+      },
+      {
+        "compressed_size": 381410,
+        "compression_method": 8,
+        "crc32": "9bc7c654",
+        "directory": false,
+        "local_header_offset": 113569495,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_59",
+        "uncompressed_size": 636869
+      },
+      {
+        "compressed_size": 234186,
+        "compression_method": 8,
+        "crc32": "e052fa7e",
+        "directory": false,
+        "local_header_offset": 113951018,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_33",
+        "uncompressed_size": 406651
+      },
+      {
+        "compressed_size": 95300,
+        "compression_method": 8,
+        "crc32": "3e27876b",
+        "directory": false,
+        "local_header_offset": 114185317,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_9",
+        "uncompressed_size": 194080
+      },
+      {
+        "compressed_size": 85038,
+        "compression_method": 8,
+        "crc32": "46f233a9",
+        "directory": false,
+        "local_header_offset": 114280729,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_7",
+        "uncompressed_size": 176376
+      },
+      {
+        "compressed_size": 174807,
+        "compression_method": 8,
+        "crc32": "bb33d2dc",
+        "directory": false,
+        "local_header_offset": 114365879,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_23",
+        "uncompressed_size": 318034
+      },
+      {
+        "compressed_size": 276353,
+        "compression_method": 8,
+        "crc32": "09bc4fc7",
+        "directory": false,
+        "local_header_offset": 114540799,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_41",
+        "uncompressed_size": 477436
+      },
+      {
+        "compressed_size": 120269,
+        "compression_method": 8,
+        "crc32": "97891961",
+        "directory": false,
+        "local_header_offset": 114817265,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_13",
+        "uncompressed_size": 229475
+      },
+      {
+        "compressed_size": 126406,
+        "compression_method": 8,
+        "crc32": "3a121267",
+        "directory": false,
+        "local_header_offset": 114937647,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_14",
+        "uncompressed_size": 238336
+      },
+      {
+        "compressed_size": 317222,
+        "compression_method": 8,
+        "crc32": "22ed5a73",
+        "directory": false,
+        "local_header_offset": 115064166,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_47",
+        "uncompressed_size": 530582
+      },
+      {
+        "compressed_size": 56848,
+        "compression_method": 8,
+        "crc32": "2f2ebf06",
+        "directory": false,
+        "local_header_offset": 115381501,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_2",
+        "uncompressed_size": 132194
+      },
+      {
+        "compressed_size": 73604,
+        "compression_method": 8,
+        "crc32": "5a87667e",
+        "directory": false,
+        "local_header_offset": 115438461,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_5",
+        "uncompressed_size": 158723
+      },
+      {
+        "compressed_size": 337887,
+        "compression_method": 8,
+        "crc32": "00229c76",
+        "directory": false,
+        "local_header_offset": 115512177,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_52",
+        "uncompressed_size": 574870
+      },
+      {
+        "compressed_size": 67256,
+        "compression_method": 8,
+        "crc32": "5b70012d",
+        "directory": false,
+        "local_header_offset": 115850177,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_4",
+        "uncompressed_size": 149874
+      },
+      {
+        "compressed_size": 61910,
+        "compression_method": 8,
+        "crc32": "0d029b75",
+        "directory": false,
+        "local_header_offset": 115917545,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_3",
+        "uncompressed_size": 141021
+      },
+      {
+        "compressed_size": 257620,
+        "compression_method": 8,
+        "crc32": "0ba64857",
+        "directory": false,
+        "local_header_offset": 115979567,
+        "path": "data_upload/second_d3_phase_flip/nbar_1.5/num_cycles_37",
+        "uncompressed_size": 442029
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 116237300,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 109274,
+        "compression_method": 8,
+        "crc32": "4f757500",
+        "directory": false,
+        "local_header_offset": 116237400,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_11",
+        "uncompressed_size": 211769
+      },
+      {
+        "compressed_size": 135045,
+        "compression_method": 8,
+        "crc32": "382a13d8",
+        "directory": false,
+        "local_header_offset": 116346787,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_16",
+        "uncompressed_size": 256042
+      },
+      {
+        "compressed_size": 208981,
+        "compression_method": 8,
+        "crc32": "b18afdbb",
+        "directory": false,
+        "local_header_offset": 116481945,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_29",
+        "uncompressed_size": 371128
+      },
+      {
+        "compressed_size": 157847,
+        "compression_method": 8,
+        "crc32": "ea41919c",
+        "directory": false,
+        "local_header_offset": 116691039,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_20",
+        "uncompressed_size": 291470
+      },
+      {
+        "compressed_size": 150346,
+        "compression_method": 8,
+        "crc32": "5ba4121c",
+        "directory": false,
+        "local_header_offset": 116848999,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_18",
+        "uncompressed_size": 273755
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 116999458,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 471459,
+        "compression_method": 8,
+        "crc32": "ab6d354c",
+        "directory": false,
+        "local_header_offset": 117000696,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_75",
+        "uncompressed_size": 778578
+      },
+      {
+        "compressed_size": 192641,
+        "compression_method": 8,
+        "crc32": "67f020a2",
+        "directory": false,
+        "local_header_offset": 117472268,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_26",
+        "uncompressed_size": 344613
+      },
+      {
+        "compressed_size": 101806,
+        "compression_method": 8,
+        "crc32": "efb6c650",
+        "directory": false,
+        "local_header_offset": 117665022,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_10",
+        "uncompressed_size": 202911
+      },
+      {
+        "compressed_size": 79177,
+        "compression_method": 8,
+        "crc32": "d1e6258e",
+        "directory": false,
+        "local_header_offset": 117766941,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_6",
+        "uncompressed_size": 167540
+      },
+      {
+        "compressed_size": 50724,
+        "compression_method": 8,
+        "crc32": "55ed00bd",
+        "directory": false,
+        "local_header_offset": 117846230,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_1",
+        "uncompressed_size": 123338
+      },
+      {
+        "compressed_size": 90632,
+        "compression_method": 8,
+        "crc32": "69ac576e",
+        "directory": false,
+        "local_header_offset": 117897066,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_8",
+        "uncompressed_size": 185223
+      },
+      {
+        "compressed_size": 424606,
+        "compression_method": 8,
+        "crc32": "bf6078e2",
+        "directory": false,
+        "local_header_offset": 117987810,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_66",
+        "uncompressed_size": 698822
+      },
+      {
+        "compressed_size": 383708,
+        "compression_method": 8,
+        "crc32": "72b0a35e",
+        "directory": false,
+        "local_header_offset": 118412529,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_59",
+        "uncompressed_size": 636806
+      },
+      {
+        "compressed_size": 235576,
+        "compression_method": 8,
+        "crc32": "2efc6019",
+        "directory": false,
+        "local_header_offset": 118796350,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_33",
+        "uncompressed_size": 406596
+      },
+      {
+        "compressed_size": 97306,
+        "compression_method": 8,
+        "crc32": "6a30539d",
+        "directory": false,
+        "local_header_offset": 119032039,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_9",
+        "uncompressed_size": 194074
+      },
+      {
+        "compressed_size": 84928,
+        "compression_method": 8,
+        "crc32": "3396968b",
+        "directory": false,
+        "local_header_offset": 119129457,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_7",
+        "uncompressed_size": 176378
+      },
+      {
+        "compressed_size": 175207,
+        "compression_method": 8,
+        "crc32": "34eb359c",
+        "directory": false,
+        "local_header_offset": 119214497,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_23",
+        "uncompressed_size": 318041
+      },
+      {
+        "compressed_size": 276324,
+        "compression_method": 8,
+        "crc32": "b392aade",
+        "directory": false,
+        "local_header_offset": 119389817,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_41",
+        "uncompressed_size": 477422
+      },
+      {
+        "compressed_size": 121224,
+        "compression_method": 8,
+        "crc32": "3f428826",
+        "directory": false,
+        "local_header_offset": 119666254,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_13",
+        "uncompressed_size": 229476
+      },
+      {
+        "compressed_size": 126322,
+        "compression_method": 8,
+        "crc32": "04a40f58",
+        "directory": false,
+        "local_header_offset": 119787591,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_14",
+        "uncompressed_size": 238316
+      },
+      {
+        "compressed_size": 313207,
+        "compression_method": 8,
+        "crc32": "ab56f367",
+        "directory": false,
+        "local_header_offset": 119914026,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_47",
+        "uncompressed_size": 530558
+      },
+      {
+        "compressed_size": 57056,
+        "compression_method": 8,
+        "crc32": "ba2eacd8",
+        "directory": false,
+        "local_header_offset": 120227346,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_2",
+        "uncompressed_size": 132184
+      },
+      {
+        "compressed_size": 74024,
+        "compression_method": 8,
+        "crc32": "d87304cb",
+        "directory": false,
+        "local_header_offset": 120284514,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_5",
+        "uncompressed_size": 158726
+      },
+      {
+        "compressed_size": 342784,
+        "compression_method": 8,
+        "crc32": "1632e81e",
+        "directory": false,
+        "local_header_offset": 120358650,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_52",
+        "uncompressed_size": 574842
+      },
+      {
+        "compressed_size": 66189,
+        "compression_method": 8,
+        "crc32": "4bf7fd0c",
+        "directory": false,
+        "local_header_offset": 120701547,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_4",
+        "uncompressed_size": 149861
+      },
+      {
+        "compressed_size": 61298,
+        "compression_method": 8,
+        "crc32": "870ccf97",
+        "directory": false,
+        "local_header_offset": 120767848,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_3",
+        "uncompressed_size": 141024
+      },
+      {
+        "compressed_size": 254453,
+        "compression_method": 8,
+        "crc32": "f06d10d4",
+        "directory": false,
+        "local_header_offset": 120829258,
+        "path": "data_upload/second_d3_phase_flip/nbar_2.5/num_cycles_37",
+        "uncompressed_size": 442028
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 121083824,
+        "path": "data_upload/first_d3_phase_flip/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 121083914,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 105774,
+        "compression_method": 8,
+        "crc32": "eb3cb1c9",
+        "directory": false,
+        "local_header_offset": 121084013,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_11",
+        "uncompressed_size": 211793
+      },
+      {
+        "compressed_size": 138174,
+        "compression_method": 8,
+        "crc32": "8531397a",
+        "directory": false,
+        "local_header_offset": 121189899,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_16",
+        "uncompressed_size": 256038
+      },
+      {
+        "compressed_size": 209110,
+        "compression_method": 8,
+        "crc32": "a00daadb",
+        "directory": false,
+        "local_header_offset": 121328185,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_29",
+        "uncompressed_size": 371204
+      },
+      {
+        "compressed_size": 159467,
+        "compression_method": 8,
+        "crc32": "cb70422b",
+        "directory": false,
+        "local_header_offset": 121537407,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_20",
+        "uncompressed_size": 291472
+      },
+      {
+        "compressed_size": 147663,
+        "compression_method": 8,
+        "crc32": "28aa444d",
+        "directory": false,
+        "local_header_offset": 121696986,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_18",
+        "uncompressed_size": 273777
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 121844761,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 472178,
+        "compression_method": 8,
+        "crc32": "979a31a8",
+        "directory": false,
+        "local_header_offset": 121845998,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_75",
+        "uncompressed_size": 778605
+      },
+      {
+        "compressed_size": 191950,
+        "compression_method": 8,
+        "crc32": "7646b49e",
+        "directory": false,
+        "local_header_offset": 122318288,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_26",
+        "uncompressed_size": 344653
+      },
+      {
+        "compressed_size": 101357,
+        "compression_method": 8,
+        "crc32": "cd5e583b",
+        "directory": false,
+        "local_header_offset": 122510350,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_10",
+        "uncompressed_size": 202950
+      },
+      {
+        "compressed_size": 79398,
+        "compression_method": 8,
+        "crc32": "00d480a7",
+        "directory": false,
+        "local_header_offset": 122611819,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_6",
+        "uncompressed_size": 167589
+      },
+      {
+        "compressed_size": 49728,
+        "compression_method": 8,
+        "crc32": "d97a3a4d",
+        "directory": false,
+        "local_header_offset": 122691328,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_1",
+        "uncompressed_size": 123369
+      },
+      {
+        "compressed_size": 88893,
+        "compression_method": 8,
+        "crc32": "7d14e8dd",
+        "directory": false,
+        "local_header_offset": 122741167,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_8",
+        "uncompressed_size": 185238
+      },
+      {
+        "compressed_size": 418584,
+        "compression_method": 8,
+        "crc32": "c34f6eee",
+        "directory": false,
+        "local_header_offset": 122830171,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_66",
+        "uncompressed_size": 698936
+      },
+      {
+        "compressed_size": 383657,
+        "compression_method": 8,
+        "crc32": "2e39c216",
+        "directory": false,
+        "local_header_offset": 123248867,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_59",
+        "uncompressed_size": 636950
+      },
+      {
+        "compressed_size": 228451,
+        "compression_method": 8,
+        "crc32": "2042870a",
+        "directory": false,
+        "local_header_offset": 123632636,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_33",
+        "uncompressed_size": 406593
+      },
+      {
+        "compressed_size": 95591,
+        "compression_method": 8,
+        "crc32": "14ac9f89",
+        "directory": false,
+        "local_header_offset": 123861199,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_9",
+        "uncompressed_size": 194116
+      },
+      {
+        "compressed_size": 83771,
+        "compression_method": 8,
+        "crc32": "e59125c8",
+        "directory": false,
+        "local_header_offset": 123956901,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_7",
+        "uncompressed_size": 176422
+      },
+      {
+        "compressed_size": 175454,
+        "compression_method": 8,
+        "crc32": "0f8ef82b",
+        "directory": false,
+        "local_header_offset": 124040783,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_23",
+        "uncompressed_size": 318066
+      },
+      {
+        "compressed_size": 281060,
+        "compression_method": 8,
+        "crc32": "c0060f93",
+        "directory": false,
+        "local_header_offset": 124216349,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_41",
+        "uncompressed_size": 477480
+      },
+      {
+        "compressed_size": 119449,
+        "compression_method": 8,
+        "crc32": "ce27aa60",
+        "directory": false,
+        "local_header_offset": 124497521,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_13",
+        "uncompressed_size": 229515
+      },
+      {
+        "compressed_size": 127423,
+        "compression_method": 8,
+        "crc32": "fabe38d5",
+        "directory": false,
+        "local_header_offset": 124617082,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_14",
+        "uncompressed_size": 238335
+      },
+      {
+        "compressed_size": 314359,
+        "compression_method": 8,
+        "crc32": "aa70c744",
+        "directory": false,
+        "local_header_offset": 124744617,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_47",
+        "uncompressed_size": 530625
+      },
+      {
+        "compressed_size": 55304,
+        "compression_method": 8,
+        "crc32": "31e42768",
+        "directory": false,
+        "local_header_offset": 125059088,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_2",
+        "uncompressed_size": 132205
+      },
+      {
+        "compressed_size": 73294,
+        "compression_method": 8,
+        "crc32": "78b6381d",
+        "directory": false,
+        "local_header_offset": 125114503,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_5",
+        "uncompressed_size": 158735
+      },
+      {
+        "compressed_size": 342572,
+        "compression_method": 8,
+        "crc32": "b0d68687",
+        "directory": false,
+        "local_header_offset": 125187908,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_52",
+        "uncompressed_size": 574910
+      },
+      {
+        "compressed_size": 67853,
+        "compression_method": 8,
+        "crc32": "259c1204",
+        "directory": false,
+        "local_header_offset": 125530592,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_4",
+        "uncompressed_size": 149910
+      },
+      {
+        "compressed_size": 61387,
+        "compression_method": 8,
+        "crc32": "50b91c61",
+        "directory": false,
+        "local_header_offset": 125598556,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_3",
+        "uncompressed_size": 141041
+      },
+      {
+        "compressed_size": 257518,
+        "compression_method": 8,
+        "crc32": "e133b246",
+        "directory": false,
+        "local_header_offset": 125660054,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.0/num_cycles_37",
+        "uncompressed_size": 442043
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 125917684,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 108193,
+        "compression_method": 8,
+        "crc32": "ec0842e6",
+        "directory": false,
+        "local_header_offset": 125917783,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_11",
+        "uncompressed_size": 211773
+      },
+      {
+        "compressed_size": 137324,
+        "compression_method": 8,
+        "crc32": "4df85f44",
+        "directory": false,
+        "local_header_offset": 126026088,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_16",
+        "uncompressed_size": 256039
+      },
+      {
+        "compressed_size": 210483,
+        "compression_method": 8,
+        "crc32": "49ddcb6e",
+        "directory": false,
+        "local_header_offset": 126163524,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_29",
+        "uncompressed_size": 371171
+      },
+      {
+        "compressed_size": 160519,
+        "compression_method": 8,
+        "crc32": "df5dc5ed",
+        "directory": false,
+        "local_header_offset": 126374119,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_20",
+        "uncompressed_size": 291459
+      },
+      {
+        "compressed_size": 147937,
+        "compression_method": 8,
+        "crc32": "ee3498ba",
+        "directory": false,
+        "local_header_offset": 126534750,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_18",
+        "uncompressed_size": 273749
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 126682799,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 467061,
+        "compression_method": 8,
+        "crc32": "a1deefd6",
+        "directory": false,
+        "local_header_offset": 126684036,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_75",
+        "uncompressed_size": 778499
+      },
+      {
+        "compressed_size": 192075,
+        "compression_method": 8,
+        "crc32": "2fb7504c",
+        "directory": false,
+        "local_header_offset": 127151209,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_26",
+        "uncompressed_size": 344585
+      },
+      {
+        "compressed_size": 101947,
+        "compression_method": 8,
+        "crc32": "dc4e7d0d",
+        "directory": false,
+        "local_header_offset": 127343396,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_10",
+        "uncompressed_size": 202899
+      },
+      {
+        "compressed_size": 78266,
+        "compression_method": 8,
+        "crc32": "f8a3a006",
+        "directory": false,
+        "local_header_offset": 127445455,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_6",
+        "uncompressed_size": 167532
+      },
+      {
+        "compressed_size": 49837,
+        "compression_method": 8,
+        "crc32": "dfd42778",
+        "directory": false,
+        "local_header_offset": 127523832,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_1",
+        "uncompressed_size": 123349
+      },
+      {
+        "compressed_size": 93023,
+        "compression_method": 8,
+        "crc32": "52e7b276",
+        "directory": false,
+        "local_header_offset": 127573780,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_8",
+        "uncompressed_size": 185237
+      },
+      {
+        "compressed_size": 425565,
+        "compression_method": 8,
+        "crc32": "4d6c8827",
+        "directory": false,
+        "local_header_offset": 127666914,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_66",
+        "uncompressed_size": 698855
+      },
+      {
+        "compressed_size": 387230,
+        "compression_method": 8,
+        "crc32": "6d495787",
+        "directory": false,
+        "local_header_offset": 128092591,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_59",
+        "uncompressed_size": 636846
+      },
+      {
+        "compressed_size": 234442,
+        "compression_method": 8,
+        "crc32": "bc11cf5e",
+        "directory": false,
+        "local_header_offset": 128479933,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_33",
+        "uncompressed_size": 406598
+      },
+      {
+        "compressed_size": 96438,
+        "compression_method": 8,
+        "crc32": "d3288026",
+        "directory": false,
+        "local_header_offset": 128714487,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_9",
+        "uncompressed_size": 194063
+      },
+      {
+        "compressed_size": 85229,
+        "compression_method": 8,
+        "crc32": "6ce21460",
+        "directory": false,
+        "local_header_offset": 128811036,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_7",
+        "uncompressed_size": 176380
+      },
+      {
+        "compressed_size": 177596,
+        "compression_method": 8,
+        "crc32": "8d919b76",
+        "directory": false,
+        "local_header_offset": 128896376,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_23",
+        "uncompressed_size": 318031
+      },
+      {
+        "compressed_size": 283568,
+        "compression_method": 8,
+        "crc32": "c3e7db1e",
+        "directory": false,
+        "local_header_offset": 129074084,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_41",
+        "uncompressed_size": 477430
+      },
+      {
+        "compressed_size": 119631,
+        "compression_method": 8,
+        "crc32": "215c6582",
+        "directory": false,
+        "local_header_offset": 129357764,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_13",
+        "uncompressed_size": 229474
+      },
+      {
+        "compressed_size": 126364,
+        "compression_method": 8,
+        "crc32": "dad83fc2",
+        "directory": false,
+        "local_header_offset": 129477507,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_14",
+        "uncompressed_size": 238322
+      },
+      {
+        "compressed_size": 318086,
+        "compression_method": 8,
+        "crc32": "1b50187a",
+        "directory": false,
+        "local_header_offset": 129603983,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_47",
+        "uncompressed_size": 530535
+      },
+      {
+        "compressed_size": 55421,
+        "compression_method": 8,
+        "crc32": "0cb7ab55",
+        "directory": false,
+        "local_header_offset": 129922181,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_2",
+        "uncompressed_size": 132190
+      },
+      {
+        "compressed_size": 73351,
+        "compression_method": 8,
+        "crc32": "f1b6885f",
+        "directory": false,
+        "local_header_offset": 129977713,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_5",
+        "uncompressed_size": 158714
+      },
+      {
+        "compressed_size": 346541,
+        "compression_method": 8,
+        "crc32": "0e3d2da0",
+        "directory": false,
+        "local_header_offset": 130051175,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_52",
+        "uncompressed_size": 574839
+      },
+      {
+        "compressed_size": 65967,
+        "compression_method": 8,
+        "crc32": "3cc96be4",
+        "directory": false,
+        "local_header_offset": 130397828,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_4",
+        "uncompressed_size": 149865
+      },
+      {
+        "compressed_size": 63292,
+        "compression_method": 8,
+        "crc32": "18a3256c",
+        "directory": false,
+        "local_header_offset": 130463906,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_3",
+        "uncompressed_size": 141029
+      },
+      {
+        "compressed_size": 256565,
+        "compression_method": 8,
+        "crc32": "3028c7d8",
+        "directory": false,
+        "local_header_offset": 130527309,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.0/num_cycles_37",
+        "uncompressed_size": 442011
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 130783986,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 107113,
+        "compression_method": 8,
+        "crc32": "5ad84734",
+        "directory": false,
+        "local_header_offset": 130784085,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_11",
+        "uncompressed_size": 211769
+      },
+      {
+        "compressed_size": 138602,
+        "compression_method": 8,
+        "crc32": "19e8287d",
+        "directory": false,
+        "local_header_offset": 130891310,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_16",
+        "uncompressed_size": 256046
+      },
+      {
+        "compressed_size": 213341,
+        "compression_method": 8,
+        "crc32": "bd49b5b2",
+        "directory": false,
+        "local_header_offset": 131030024,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_29",
+        "uncompressed_size": 371158
+      },
+      {
+        "compressed_size": 161716,
+        "compression_method": 8,
+        "crc32": "8949acd5",
+        "directory": false,
+        "local_header_offset": 131243477,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_20",
+        "uncompressed_size": 291473
+      },
+      {
+        "compressed_size": 148011,
+        "compression_method": 8,
+        "crc32": "f8e44422",
+        "directory": false,
+        "local_header_offset": 131405305,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_18",
+        "uncompressed_size": 273741
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 131553428,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 477207,
+        "compression_method": 8,
+        "crc32": "2e573661",
+        "directory": false,
+        "local_header_offset": 131554665,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_75",
+        "uncompressed_size": 778510
+      },
+      {
+        "compressed_size": 196074,
+        "compression_method": 8,
+        "crc32": "dea30eaf",
+        "directory": false,
+        "local_header_offset": 132031984,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_26",
+        "uncompressed_size": 344583
+      },
+      {
+        "compressed_size": 102294,
+        "compression_method": 8,
+        "crc32": "ebbe91a0",
+        "directory": false,
+        "local_header_offset": 132228170,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_10",
+        "uncompressed_size": 202887
+      },
+      {
+        "compressed_size": 79800,
+        "compression_method": 8,
+        "crc32": "3d4bb383",
+        "directory": false,
+        "local_header_offset": 132330576,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_6",
+        "uncompressed_size": 167545
+      },
+      {
+        "compressed_size": 50509,
+        "compression_method": 8,
+        "crc32": "3c9409a3",
+        "directory": false,
+        "local_header_offset": 132410487,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_1",
+        "uncompressed_size": 123346
+      },
+      {
+        "compressed_size": 89068,
+        "compression_method": 8,
+        "crc32": "476860af",
+        "directory": false,
+        "local_header_offset": 132461107,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_8",
+        "uncompressed_size": 185222
+      },
+      {
+        "compressed_size": 424612,
+        "compression_method": 8,
+        "crc32": "7c9e7ebb",
+        "directory": false,
+        "local_header_offset": 132550286,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_66",
+        "uncompressed_size": 698767
+      },
+      {
+        "compressed_size": 385901,
+        "compression_method": 8,
+        "crc32": "8dae195b",
+        "directory": false,
+        "local_header_offset": 132975010,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_59",
+        "uncompressed_size": 636816
+      },
+      {
+        "compressed_size": 236120,
+        "compression_method": 8,
+        "crc32": "5f1e5f75",
+        "directory": false,
+        "local_header_offset": 133361023,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_33",
+        "uncompressed_size": 406597
+      },
+      {
+        "compressed_size": 97094,
+        "compression_method": 8,
+        "crc32": "3115fa4e",
+        "directory": false,
+        "local_header_offset": 133597255,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_9",
+        "uncompressed_size": 194083
+      },
+      {
+        "compressed_size": 85561,
+        "compression_method": 8,
+        "crc32": "f5651263",
+        "directory": false,
+        "local_header_offset": 133694460,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_7",
+        "uncompressed_size": 176387
+      },
+      {
+        "compressed_size": 179872,
+        "compression_method": 8,
+        "crc32": "28d4944d",
+        "directory": false,
+        "local_header_offset": 133780132,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_23",
+        "uncompressed_size": 318028
+      },
+      {
+        "compressed_size": 280728,
+        "compression_method": 8,
+        "crc32": "32103d47",
+        "directory": false,
+        "local_header_offset": 133960116,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_41",
+        "uncompressed_size": 477424
+      },
+      {
+        "compressed_size": 119172,
+        "compression_method": 8,
+        "crc32": "19481658",
+        "directory": false,
+        "local_header_offset": 134240956,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_13",
+        "uncompressed_size": 229462
+      },
+      {
+        "compressed_size": 124815,
+        "compression_method": 8,
+        "crc32": "534027db",
+        "directory": false,
+        "local_header_offset": 134360240,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_14",
+        "uncompressed_size": 238332
+      },
+      {
+        "compressed_size": 316374,
+        "compression_method": 8,
+        "crc32": "80d6a184",
+        "directory": false,
+        "local_header_offset": 134485167,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_47",
+        "uncompressed_size": 530560
+      },
+      {
+        "compressed_size": 55428,
+        "compression_method": 8,
+        "crc32": "4e7bc61e",
+        "directory": false,
+        "local_header_offset": 134801653,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_2",
+        "uncompressed_size": 132185
+      },
+      {
+        "compressed_size": 71945,
+        "compression_method": 8,
+        "crc32": "2ea6f5c0",
+        "directory": false,
+        "local_header_offset": 134857192,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_5",
+        "uncompressed_size": 158716
+      },
+      {
+        "compressed_size": 348753,
+        "compression_method": 8,
+        "crc32": "8c3a3a04",
+        "directory": false,
+        "local_header_offset": 134929248,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_52",
+        "uncompressed_size": 574834
+      },
+      {
+        "compressed_size": 67383,
+        "compression_method": 8,
+        "crc32": "0da6dd3f",
+        "directory": false,
+        "local_header_offset": 135278113,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_4",
+        "uncompressed_size": 149854
+      },
+      {
+        "compressed_size": 61384,
+        "compression_method": 8,
+        "crc32": "abf2f512",
+        "directory": false,
+        "local_header_offset": 135345607,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_3",
+        "uncompressed_size": 141023
+      },
+      {
+        "compressed_size": 258422,
+        "compression_method": 8,
+        "crc32": "a2770edf",
+        "directory": false,
+        "local_header_offset": 135407102,
+        "path": "data_upload/first_d3_phase_flip/nbar_3.0/num_cycles_37",
+        "uncompressed_size": 441999
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 135665636,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 108012,
+        "compression_method": 8,
+        "crc32": "da3f36e6",
+        "directory": false,
+        "local_header_offset": 135665735,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_11",
+        "uncompressed_size": 211781
+      },
+      {
+        "compressed_size": 134844,
+        "compression_method": 8,
+        "crc32": "debaad67",
+        "directory": false,
+        "local_header_offset": 135773859,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_16",
+        "uncompressed_size": 256038
+      },
+      {
+        "compressed_size": 214214,
+        "compression_method": 8,
+        "crc32": "59dd9a4d",
+        "directory": false,
+        "local_header_offset": 135908815,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_29",
+        "uncompressed_size": 371169
+      },
+      {
+        "compressed_size": 160107,
+        "compression_method": 8,
+        "crc32": "9c1ec8f0",
+        "directory": false,
+        "local_header_offset": 136123141,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_20",
+        "uncompressed_size": 291448
+      },
+      {
+        "compressed_size": 148885,
+        "compression_method": 8,
+        "crc32": "19a8a519",
+        "directory": false,
+        "local_header_offset": 136283360,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_18",
+        "uncompressed_size": 273769
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 136432357,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 474247,
+        "compression_method": 8,
+        "crc32": "eba42b28",
+        "directory": false,
+        "local_header_offset": 136433594,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_75",
+        "uncompressed_size": 778578
+      },
+      {
+        "compressed_size": 195873,
+        "compression_method": 8,
+        "crc32": "1b7968d1",
+        "directory": false,
+        "local_header_offset": 136907953,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_26",
+        "uncompressed_size": 344593
+      },
+      {
+        "compressed_size": 100627,
+        "compression_method": 8,
+        "crc32": "ccaf1257",
+        "directory": false,
+        "local_header_offset": 137103938,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_10",
+        "uncompressed_size": 202914
+      },
+      {
+        "compressed_size": 79167,
+        "compression_method": 8,
+        "crc32": "4bba75e9",
+        "directory": false,
+        "local_header_offset": 137204677,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_6",
+        "uncompressed_size": 167559
+      },
+      {
+        "compressed_size": 50436,
+        "compression_method": 8,
+        "crc32": "7a585b2d",
+        "directory": false,
+        "local_header_offset": 137283955,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_1",
+        "uncompressed_size": 123357
+      },
+      {
+        "compressed_size": 92644,
+        "compression_method": 8,
+        "crc32": "9e314155",
+        "directory": false,
+        "local_header_offset": 137334502,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_8",
+        "uncompressed_size": 185220
+      },
+      {
+        "compressed_size": 420763,
+        "compression_method": 8,
+        "crc32": "51ae3523",
+        "directory": false,
+        "local_header_offset": 137427257,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_66",
+        "uncompressed_size": 698817
+      },
+      {
+        "compressed_size": 385819,
+        "compression_method": 8,
+        "crc32": "38883668",
+        "directory": false,
+        "local_header_offset": 137848132,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_59",
+        "uncompressed_size": 636845
+      },
+      {
+        "compressed_size": 236839,
+        "compression_method": 8,
+        "crc32": "39b69514",
+        "directory": false,
+        "local_header_offset": 138234063,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_33",
+        "uncompressed_size": 406600
+      },
+      {
+        "compressed_size": 94294,
+        "compression_method": 8,
+        "crc32": "4408cd36",
+        "directory": false,
+        "local_header_offset": 138471014,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_9",
+        "uncompressed_size": 194068
+      },
+      {
+        "compressed_size": 83789,
+        "compression_method": 8,
+        "crc32": "b2e56c94",
+        "directory": false,
+        "local_header_offset": 138565419,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_7",
+        "uncompressed_size": 176400
+      },
+      {
+        "compressed_size": 176918,
+        "compression_method": 8,
+        "crc32": "195dcb50",
+        "directory": false,
+        "local_header_offset": 138649319,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_23",
+        "uncompressed_size": 318041
+      },
+      {
+        "compressed_size": 282194,
+        "compression_method": 8,
+        "crc32": "b8ea0d83",
+        "directory": false,
+        "local_header_offset": 138826349,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_41",
+        "uncompressed_size": 477437
+      },
+      {
+        "compressed_size": 117752,
+        "compression_method": 8,
+        "crc32": "6329f394",
+        "directory": false,
+        "local_header_offset": 139108655,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_13",
+        "uncompressed_size": 229484
+      },
+      {
+        "compressed_size": 126636,
+        "compression_method": 8,
+        "crc32": "51b07472",
+        "directory": false,
+        "local_header_offset": 139226519,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_14",
+        "uncompressed_size": 238328
+      },
+      {
+        "compressed_size": 318172,
+        "compression_method": 8,
+        "crc32": "2a8251b8",
+        "directory": false,
+        "local_header_offset": 139353267,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_47",
+        "uncompressed_size": 530562
+      },
+      {
+        "compressed_size": 55349,
+        "compression_method": 8,
+        "crc32": "022e144d",
+        "directory": false,
+        "local_header_offset": 139671551,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_2",
+        "uncompressed_size": 132187
+      },
+      {
+        "compressed_size": 73545,
+        "compression_method": 8,
+        "crc32": "0358c242",
+        "directory": false,
+        "local_header_offset": 139727011,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_5",
+        "uncompressed_size": 158722
+      },
+      {
+        "compressed_size": 340536,
+        "compression_method": 8,
+        "crc32": "d3f32260",
+        "directory": false,
+        "local_header_offset": 139800667,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_52",
+        "uncompressed_size": 574848
+      },
+      {
+        "compressed_size": 66034,
+        "compression_method": 8,
+        "crc32": "8b7ce6f7",
+        "directory": false,
+        "local_header_offset": 140141315,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_4",
+        "uncompressed_size": 149867
+      },
+      {
+        "compressed_size": 62305,
+        "compression_method": 8,
+        "crc32": "e7353148",
+        "directory": false,
+        "local_header_offset": 140207460,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_3",
+        "uncompressed_size": 141035
+      },
+      {
+        "compressed_size": 261757,
+        "compression_method": 8,
+        "crc32": "0d23c607",
+        "directory": false,
+        "local_header_offset": 140269876,
+        "path": "data_upload/first_d3_phase_flip/nbar_1.5/num_cycles_37",
+        "uncompressed_size": 442013
+      },
+      {
+        "compressed_size": 0,
+        "compression_method": 0,
+        "crc32": "00000000",
+        "directory": true,
+        "local_header_offset": 140531745,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/",
+        "uncompressed_size": 0
+      },
+      {
+        "compressed_size": 108807,
+        "compression_method": 8,
+        "crc32": "96898d31",
+        "directory": false,
+        "local_header_offset": 140531844,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_11",
+        "uncompressed_size": 211775
+      },
+      {
+        "compressed_size": 138369,
+        "compression_method": 8,
+        "crc32": "58e68af1",
+        "directory": false,
+        "local_header_offset": 140640763,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_16",
+        "uncompressed_size": 256060
+      },
+      {
+        "compressed_size": 214300,
+        "compression_method": 8,
+        "crc32": "fff50238",
+        "directory": false,
+        "local_header_offset": 140779244,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_29",
+        "uncompressed_size": 371182
+      },
+      {
+        "compressed_size": 158801,
+        "compression_method": 8,
+        "crc32": "6bfcf6a5",
+        "directory": false,
+        "local_header_offset": 140993656,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_20",
+        "uncompressed_size": 291470
+      },
+      {
+        "compressed_size": 147568,
+        "compression_method": 8,
+        "crc32": "07c4728f",
+        "directory": false,
+        "local_header_offset": 141152569,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_18",
+        "uncompressed_size": 273754
+      },
+      {
+        "compressed_size": 1121,
+        "compression_method": 8,
+        "crc32": "9d64fcc5",
+        "directory": false,
+        "local_header_offset": 141300249,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/all_cycle_numbers",
+        "uncompressed_size": 2598
+      },
+      {
+        "compressed_size": 476931,
+        "compression_method": 8,
+        "crc32": "e931e076",
+        "directory": false,
+        "local_header_offset": 141301486,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_75",
+        "uncompressed_size": 778529
+      },
+      {
+        "compressed_size": 192001,
+        "compression_method": 8,
+        "crc32": "d818904e",
+        "directory": false,
+        "local_header_offset": 141778529,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_26",
+        "uncompressed_size": 344601
+      },
+      {
+        "compressed_size": 102739,
+        "compression_method": 8,
+        "crc32": "ec19f182",
+        "directory": false,
+        "local_header_offset": 141970642,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_10",
+        "uncompressed_size": 202901
+      },
+      {
+        "compressed_size": 79721,
+        "compression_method": 8,
+        "crc32": "cd50c163",
+        "directory": false,
+        "local_header_offset": 142073493,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_6",
+        "uncompressed_size": 167533
+      },
+      {
+        "compressed_size": 49874,
+        "compression_method": 8,
+        "crc32": "a12d9034",
+        "directory": false,
+        "local_header_offset": 142153325,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_1",
+        "uncompressed_size": 123353
+      },
+      {
+        "compressed_size": 90178,
+        "compression_method": 8,
+        "crc32": "dcd7e186",
+        "directory": false,
+        "local_header_offset": 142203310,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_8",
+        "uncompressed_size": 185216
+      },
+      {
+        "compressed_size": 423007,
+        "compression_method": 8,
+        "crc32": "3485959a",
+        "directory": false,
+        "local_header_offset": 142293599,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_66",
+        "uncompressed_size": 698815
+      },
+      {
+        "compressed_size": 384692,
+        "compression_method": 8,
+        "crc32": "3a970027",
+        "directory": false,
+        "local_header_offset": 142716718,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_59",
+        "uncompressed_size": 636834
+      },
+      {
+        "compressed_size": 237753,
+        "compression_method": 8,
+        "crc32": "2060baa7",
+        "directory": false,
+        "local_header_offset": 143101522,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_33",
+        "uncompressed_size": 406575
+      },
+      {
+        "compressed_size": 96672,
+        "compression_method": 8,
+        "crc32": "697dca33",
+        "directory": false,
+        "local_header_offset": 143339387,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_9",
+        "uncompressed_size": 194080
+      },
+      {
+        "compressed_size": 84829,
+        "compression_method": 8,
+        "crc32": "ffca75d8",
+        "directory": false,
+        "local_header_offset": 143436170,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_7",
+        "uncompressed_size": 176383
+      },
+      {
+        "compressed_size": 178061,
+        "compression_method": 8,
+        "crc32": "c0d0c141",
+        "directory": false,
+        "local_header_offset": 143521110,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_23",
+        "uncompressed_size": 318036
+      },
+      {
+        "compressed_size": 282265,
+        "compression_method": 8,
+        "crc32": "ff51902d",
+        "directory": false,
+        "local_header_offset": 143699283,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_41",
+        "uncompressed_size": 477442
+      },
+      {
+        "compressed_size": 119488,
+        "compression_method": 8,
+        "crc32": "2050bd95",
+        "directory": false,
+        "local_header_offset": 143981660,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_13",
+        "uncompressed_size": 229472
+      },
+      {
+        "compressed_size": 125049,
+        "compression_method": 8,
+        "crc32": "b4e9e508",
+        "directory": false,
+        "local_header_offset": 144101260,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_14",
+        "uncompressed_size": 238333
+      },
+      {
+        "compressed_size": 315588,
+        "compression_method": 8,
+        "crc32": "dae7a330",
+        "directory": false,
+        "local_header_offset": 144226421,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_47",
+        "uncompressed_size": 530585
+      },
+      {
+        "compressed_size": 56656,
+        "compression_method": 8,
+        "crc32": "5519304a",
+        "directory": false,
+        "local_header_offset": 144542121,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_2",
+        "uncompressed_size": 132184
+      },
+      {
+        "compressed_size": 73565,
+        "compression_method": 8,
+        "crc32": "69348d6e",
+        "directory": false,
+        "local_header_offset": 144598888,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_5",
+        "uncompressed_size": 158705
+      },
+      {
+        "compressed_size": 344745,
+        "compression_method": 8,
+        "crc32": "c895cbde",
+        "directory": false,
+        "local_header_offset": 144672564,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_52",
+        "uncompressed_size": 574814
+      },
+      {
+        "compressed_size": 67152,
+        "compression_method": 8,
+        "crc32": "1f85e5a6",
+        "directory": false,
+        "local_header_offset": 145017421,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_4",
+        "uncompressed_size": 149873
+      },
+      {
+        "compressed_size": 62869,
+        "compression_method": 8,
+        "crc32": "f736e84a",
+        "directory": false,
+        "local_header_offset": 145084684,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_3",
+        "uncompressed_size": 141017
+      },
+      {
+        "compressed_size": 260761,
+        "compression_method": 8,
+        "crc32": "0ecd883e",
+        "directory": false,
+        "local_header_offset": 145147664,
+        "path": "data_upload/first_d3_phase_flip/nbar_2.5/num_cycles_37",
+        "uncompressed_size": 442017
+      }
+    ],
+    "eocd": {
+      "central_directory_disk": 0,
+      "central_directory_offset": 145408537,
+      "central_directory_size": 60673,
+      "comment_length": 0,
+      "disk": 0,
+      "entries": 502
+    },
+    "inventory_summary": {
+      "compressed_file_bytes_sum": 145353888,
+      "compression_method_entry_counts": {
+        "0": 20,
+        "8": 482
+      },
+      "directories": 20,
+      "entries": 502,
+      "files": 482,
+      "uncompressed_file_bytes_sum": 243933814
+    },
+    "tail_range": {
+      "bytes": 65536,
+      "end_inclusive": 145469231,
+      "sha256": "a5f6dc9bddf653343528937affacf4f6a5e0a58c127e52ca06b7279e949e0cca",
+      "start": 145403696
+    }
+  },
+  "evidence_class": "PRIMARY_API_PLUS_RANGE_VERIFIED_ARCHIVE_METADATA_AND_README_NOT_DATA_ANALYSIS",
+  "non_claims": [
+    "Only the archive tail and README member range were retrieved.",
+    "No Parquet payload, experimental value, fit, uncertainty, or confidence interval was analyzed.",
+    "The publisher MD5 was not recomputed over the full archive.",
+    "No project device, logical-memory performance, or physical-law result is created."
+  ],
+  "readme_range": {
+    "member": {
+      "compressed_size": 1079,
+      "compression_method": 8,
+      "crc32": "fd09c11f",
+      "path": "data_upload/README.md",
+      "sha256": "bbc0015a5f19a2aabacfdd5e99ce309f2ea8cf106fc0f2f1c03c49d1561b7a13",
+      "uncompressed_size": 3065
+    },
+    "range_sha256": "af8079d5ff9f04cd3a2aa1dc21578323504bc3f450a74efa4b1be1aa18f2e280",
+    "range_start": 96016687,
+    "returned_bytes": 4096
+  },
+  "readme_semantics": {
+    "bit_flip": {
+      "columns": "final state of each storage mode plus logical XOR state",
+      "format": "Apache Parquet readable as pandas DataFrame",
+      "index_fields": [
+        "nbar",
+        "S{i}_initial_state",
+        "num_cycles",
+        "shot"
+      ],
+      "storage_state_encoding": {
+        "0": "|alpha>",
+        "1": "|-alpha>"
+      }
+    },
+    "cycle_length_microseconds": 2.8,
+    "phase_flip": {
+      "axis": "experiment shot",
+      "column_families": [
+        "S{i}_initial_state",
+        "S{i}_final_state",
+        "A{i}_syndrome_{j}"
+      ],
+      "cycle_enumerator_file": "all_cycle_numbers",
+      "format": "Apache Parquet readable as pandas DataFrame",
+      "hierarchy": [
+        "code section",
+        "storage mean photon number",
+        "number of cycles"
+      ],
+      "storage_parity_encoding": {
+        "0": "even",
+        "1": "odd"
+      },
+      "syndrome_encoding": {
+        "0": "even",
+        "1": "erasure",
+        "2": "odd"
+      }
+    }
+  },
+  "schema": "uqpu-cycle006-zenodo-range-and-central-directory-evidence-v1",
+  "source": {
+    "access_date": "2026-09-28",
+    "access_right": "open",
+    "api_response_sha256": "a27ebff614070ee90202fd73dbbf29b7ab95d0c0cad2574560069cace350db02",
+    "api_url": "https://zenodo.org/api/records/14257632",
+    "archive_url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "publication_date": "2024-12-03",
+    "record_url": "https://zenodo.org/records/14257632",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "title": "Data from \"Hardware-efficient quantum error correction using concatenated bosonic qubits\""
+  }
+}

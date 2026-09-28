@@ -1,0 +1,34 @@
+{
+  "cycle005_truth_file_sha256": "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7",
+  "events": [
+    {
+      "action": "RECEIVE_SCORER_CLOSE_REFERENCE",
+      "actor": "synthetic_custodian_role",
+      "artifact_sha256": "bc0246abf180bab1e36a8b9417fc56e931dd39492080f6d1b5dccda5ed4f3a29",
+      "event_sha256": "dcce9c12e784fad5f4dfc220341bea4be74637ad92556dbc6e388cde021cacbd",
+      "previous_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sequence": 1
+    },
+    {
+      "action": "AUTHORIZE_SYNTHETIC_REVEAL",
+      "actor": "synthetic_custodian_role",
+      "artifact_sha256": "9136564fee2d83f17da397f56ee2fe6fdd2bd702b90954afab41b2b99ccf315a",
+      "event_sha256": "b4e31974fea5ec18c4f2074388e1f7825282a4cfc40a8a78dfeeb422596e1c89",
+      "previous_event_sha256": "dcce9c12e784fad5f4dfc220341bea4be74637ad92556dbc6e388cde021cacbd",
+      "sequence": 2
+    },
+    {
+      "action": "REVEAL_EXISTING_SYNTHETIC_TRUTH_REFERENCE",
+      "actor": "synthetic_custodian_role",
+      "artifact_sha256": "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7",
+      "event_sha256": "27e417befc852eedccb1a5383615a5628d78a45fa08bace93945c48ad63d2ecf",
+      "previous_event_sha256": "b4e31974fea5ec18c4f2074388e1f7825282a4cfc40a8a78dfeeb422596e1c89",
+      "sequence": 3
+    }
+  ],
+  "operating_system_or_account_isolation": false,
+  "required_scorer_final_event_sha256": "bc0246abf180bab1e36a8b9417fc56e931dd39492080f6d1b5dccda5ed4f3a29",
+  "role": "SYNTHETIC_CUSTODIAN",
+  "schema": "uqpu-cycle006-scm-custodian-role-package-v1",
+  "scorer_package_canonical_sha256": "9136564fee2d83f17da397f56ee2fe6fdd2bd702b90954afab41b2b99ccf315a"
+}

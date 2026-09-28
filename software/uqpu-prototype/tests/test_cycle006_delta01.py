@@ -13,6 +13,7 @@ from uqpu.cycle005_delta01 import (
     build_capital_dependency_graph,
     build_material_evidence_registry,
 )
+from uqpu.cycle003_delta01 import canonical_json_bytes
 from uqpu.cycle006_delta01 import (
     benchmark_directory_durable_io,
     build_cost_adversarial_gate,
@@ -35,6 +36,11 @@ ROOT = Path(__file__).resolve().parents[3]
 MANIFEST = ROOT / "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-manifest.json"
 AI_BASELINE = ROOT / "benchmarks/results/batch039-ai-cost-002-classical-baseline.json"
 CYCLE005_PACKET = ROOT / "benchmarks/results/cycle005-delta01-integrated-gates.json"
+SOURCE = ROOT / "benchmarks/evidence/cycle006-delta01-zenodo-range-metadata.json"
+PACKET = ROOT / "benchmarks/results/cycle006-delta01-integrated-gates.json"
+SCORER = ROOT / "benchmarks/experiments/cycle006-delta01-scm-scorer-package.json"
+CUSTODIAN = ROOT / "benchmarks/results/cycle006-delta01-scm-custodian-package.json"
+REVEAL_AUDIT = ROOT / "benchmarks/results/cycle006-delta01-scm-reveal-audit.json"
 
 
 def _load(path: Path) -> dict:
@@ -167,6 +173,64 @@ class Cycle006Delta01Tests(unittest.TestCase):
         self.assertFalse(gate["provider_transpile_receipt_complete"])
         with self.assertRaisesRegex(ValueError, "unsupported QASM"):
             parse_frozen_qasm_subset("OPENQASM 3.0;\nreset q[0];\n")
+
+    def test_committed_cycle006_artifacts_are_hash_bound_and_cover_all_lanes(self):
+        expected_hashes = {
+            SOURCE: "cc5ee23fb9b2f3d8e75fc80c749aa299dd146e52cc5b468e9d9f4a433b96d52c",
+            PACKET: "1dc1ffc37680200b5103b89db7f168a0ff0180c009c94216777f1ff7aeae226a",
+            SCORER: "b42f21ff14b468346ae1f4937edaee5c62efb150245a5f1302075fcd8707b2f3",
+            CUSTODIAN: "198f0ed1d840b816cd92236882498994a5681c6d02ecc70f0f69f15daed965cb",
+            REVEAL_AUDIT: "3f5eab3053a6c2a728501d42bbfbba704761dca76c3ff87c3c9014709076145b",
+        }
+        for path, expected in expected_hashes.items():
+            self.assertTrue(path.exists(), f"missing committed artifact: {path}")
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected)
+
+        source = _load(SOURCE)
+        packet = _load(PACKET)
+        scorer = _load(SCORER)
+        custodian = _load(CUSTODIAN)
+        audit = _load(REVEAL_AUDIT)
+        self.assertEqual(packet["cycle"], "006")
+        self.assertEqual(packet["delta"], "01")
+        self.assertEqual(
+            set(packet["lanes"]),
+            {
+                "A", "B", "C", "D", "E", "F", "G", "H",
+                "FND/EQN", "SCM", "AI-COST", "QOS/QSVT",
+            },
+        )
+        self.assertEqual(
+            packet["generator_code_commit"],
+            "f336b6ddbda555aaba212b5c05bd0a818e9c6368",
+        )
+        self.assertTrue(packet["lanes"]["A"]["repeated_scale_cases"][0]["exact"]["complete"])
+        self.assertFalse(packet["lanes"]["A"]["repeated_scale_cases"][1]["exact"]["complete"])
+        self.assertEqual(
+            packet["lanes"]["A"]["repeated_scale_cases"][1]["exact"]["stop_reason"],
+            "STATE_CAP",
+        )
+        self.assertEqual(source["source"]["license"], {"id": "cc-by-4.0"})
+        self.assertEqual(source["central_directory"]["inventory_summary"]["entries"], 502)
+        self.assertFalse(source["analysis_state"]["parquet_payload_retrieved"])
+        self.assertEqual(
+            audit["scorer_package_canonical_sha256"],
+            hashlib.sha256(canonical_json_bytes(scorer)).hexdigest(),
+        )
+        self.assertEqual(
+            audit["custodian_package_canonical_sha256"],
+            hashlib.sha256(canonical_json_bytes(custodian)).hexdigest(),
+        )
+        self.assertEqual(
+            packet["lanes"]["AI-COST"]["train"]["canonical_sha256"],
+            "57470ff96e059ff9f112a935fd1512c7208235fe9417018ef92d25e4c5dd82fe",
+        )
+        self.assertEqual(
+            packet["lanes"]["AI-COST"]["held_out"]["canonical_sha256"],
+            "791cd18405f5de38bf8df95cd9d419b86c446350b4fba89f74e9416a3819adce",
+        )
+        self.assertFalse(packet["lanes"]["H"]["funding_or_purchase_authorized"])
+        self.assertFalse(packet["lanes"]["QOS/QSVT"]["hardware_executed"])
 
 
 if __name__ == "__main__":

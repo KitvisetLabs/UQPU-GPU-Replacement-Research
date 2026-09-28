@@ -1,0 +1,34 @@
+{
+  "condition_labels_or_truth_present": false,
+  "cycle005_public_file_sha256": "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc",
+  "events": [
+    {
+      "action": "RECEIVE_PUBLIC_REFERENCE",
+      "actor": "synthetic_scorer_role",
+      "artifact_sha256": "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc",
+      "event_sha256": "c4a068bf201277d221ab7cf6130ddb89c4bfed93409a99a1efb635c125d4121c",
+      "previous_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sequence": 1
+    },
+    {
+      "action": "COMMIT_SCORES",
+      "actor": "synthetic_scorer_role",
+      "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+      "event_sha256": "2a9eca61d92dbe27dd0e9132a7e8e87e908e487a2a8a65060f7f091b1ba99e49",
+      "previous_event_sha256": "c4a068bf201277d221ab7cf6130ddb89c4bfed93409a99a1efb635c125d4121c",
+      "sequence": 2
+    },
+    {
+      "action": "CLOSE_SCORING",
+      "actor": "synthetic_scorer_role",
+      "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+      "event_sha256": "bc0246abf180bab1e36a8b9417fc56e931dd39492080f6d1b5dccda5ed4f3a29",
+      "previous_event_sha256": "2a9eca61d92dbe27dd0e9132a7e8e87e908e487a2a8a65060f7f091b1ba99e49",
+      "sequence": 3
+    }
+  ],
+  "operating_system_or_account_isolation": false,
+  "role": "SYNTHETIC_SCORER",
+  "schema": "uqpu-cycle006-scm-scorer-role-package-v1",
+  "score_commitment_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83"
+}

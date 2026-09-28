@@ -1,0 +1,11 @@
+{
+  "custodian_first_event_artifact_sha256": "bc0246abf180bab1e36a8b9417fc56e931dd39492080f6d1b5dccda5ed4f3a29",
+  "custodian_package_canonical_sha256": "c50d97a6fd576dc8b26f85b4331b86babe09882937aa84143d7ce131e7be9d69",
+  "evidence_class": "SYNTHETIC_SEPARATE_ROLE_PACKAGES_NOT_OPERATIONAL_BLINDING",
+  "human_or_physical_data": false,
+  "reveal_order_valid": true,
+  "schema": "uqpu-cycle006-scm-reveal-order-audit-v1",
+  "scorer_final_event_sha256": "bc0246abf180bab1e36a8b9417fc56e931dd39492080f6d1b5dccda5ed4f3a29",
+  "scorer_package_canonical_sha256": "9136564fee2d83f17da397f56ee2fe6fdd2bd702b90954afab41b2b99ccf315a",
+  "separate_repository_or_site": false
+}

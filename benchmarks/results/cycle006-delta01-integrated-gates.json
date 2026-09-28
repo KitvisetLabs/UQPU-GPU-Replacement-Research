@@ -1,0 +1,975 @@
+{
+  "cycle": "006",
+  "delta": "01",
+  "evidence_boundary": [
+    "A/C measurements are local process/software observations only and support no scaling, energy, GPU, provider, or QPU claim.",
+    "B contains negative schema tests and an empty receipt; it cannot submit work.",
+    "D and FND/EQN retrieve only two byte ranges plus official API metadata; no Parquet payload or experimental value is analyzed.",
+    "E/G/H are empty operational gates tested with synthetic controls; no material, sample, purchase, or capital decision exists.",
+    "F adversarially refuses incomplete or mismatched ledgers; its passing control is synthetic arithmetic only.",
+    "SCM role packages remain synthetic and co-located, not operational blinding or source evidence.",
+    "AI-COST freezes toy sample hashes but has no candidate result, measured energy, or cost.",
+    "QOS/QSVT validates a narrow repository grammar round-trip, not general OpenQASM semantics, provider transpilation, or hardware."
+  ],
+  "generator_code_commit": "f336b6ddbda555aaba212b5c05bd0a818e9c6368",
+  "lanes": {
+    "A": {
+      "evidence_class": "REPEATED_LOCAL_CLASSICAL_SOFTWARE_SCREEN_NOT_SCALING_LAW",
+      "repeated_scale_cases": [
+        {
+          "edge_count": 73,
+          "edge_probability": 0.5,
+          "environment": {
+            "logical_cpu_count": 9,
+            "machine": "x86_64",
+            "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+            "python": "3.12.14"
+          },
+          "evidence_class": "REPEATED_LOCAL_CLASSICAL_SOFTWARE_SCREEN_NOT_SCALING_LAW",
+          "exact": {
+            "best_observed_objective": -49.0,
+            "complete": true,
+            "elapsed": {
+              "maximum_seconds": 2.692919612999958,
+              "median_seconds": 2.683187244999772,
+              "minimum_seconds": 2.5480113710000296,
+              "repetitions": 3
+            },
+            "optimum_claim_allowed": true,
+            "states_evaluated": 262144,
+            "stop_reason": "COMPLETE",
+            "total_state_space": 262144
+          },
+          "fresh_process_per_repetition": true,
+          "heuristic": {
+            "elapsed": {
+              "maximum_seconds": 0.010438559999784047,
+              "median_seconds": 0.007213469999896915,
+              "minimum_seconds": 0.006926389000000199,
+              "repetitions": 3
+            },
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -49.0,
+            "objective_gap_to_exact": 0.0,
+            "restarts": 16
+          },
+          "node_count": 18,
+          "non_claims": [
+            "No asymptotic scaling fit or extrapolation is performed.",
+            "A state-cap row reports best observed objective, not an optimum.",
+            "Generated fixtures are not a competitive benchmark suite.",
+            "No power, energy, GPU, provider, QPU, or hardware-neutral result is measured."
+          ],
+          "process_peak_rss": {
+            "maximum_kib": 16640.0,
+            "median_kib": 16640.0,
+            "minimum_kib": 16640.0,
+            "repetitions": 3,
+            "semantics": "fresh-process ru_maxrss high-water mark on Linux, not incremental solver memory"
+          },
+          "schema": "uqpu-cycle006-local-maxcut-repeated-scale-v1",
+          "seed": 45
+        },
+        {
+          "edge_count": 148,
+          "edge_probability": 0.5,
+          "environment": {
+            "logical_cpu_count": 9,
+            "machine": "x86_64",
+            "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+            "python": "3.12.14"
+          },
+          "evidence_class": "REPEATED_LOCAL_CLASSICAL_SOFTWARE_SCREEN_NOT_SCALING_LAW",
+          "exact": {
+            "best_observed_objective": -88.0,
+            "complete": false,
+            "elapsed": {
+              "maximum_seconds": 1.2401262260000294,
+              "median_seconds": 1.1575569830001768,
+              "minimum_seconds": 1.1499400140000944,
+              "repetitions": 3
+            },
+            "optimum_claim_allowed": false,
+            "states_evaluated": 65536,
+            "stop_reason": "STATE_CAP",
+            "total_state_space": 16777216
+          },
+          "fresh_process_per_repetition": true,
+          "heuristic": {
+            "elapsed": {
+              "maximum_seconds": 0.021755636000307277,
+              "median_seconds": 0.021062356000129512,
+              "minimum_seconds": 0.018717305999871314,
+              "repetitions": 3
+            },
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -96.0,
+            "objective_gap_to_exact": null,
+            "restarts": 16
+          },
+          "node_count": 24,
+          "non_claims": [
+            "No asymptotic scaling fit or extrapolation is performed.",
+            "A state-cap row reports best observed objective, not an optimum.",
+            "Generated fixtures are not a competitive benchmark suite.",
+            "No power, energy, GPU, provider, QPU, or hardware-neutral result is measured."
+          ],
+          "process_peak_rss": {
+            "maximum_kib": 16640.0,
+            "median_kib": 16640.0,
+            "minimum_kib": 16640.0,
+            "repetitions": 3,
+            "semantics": "fresh-process ru_maxrss high-water mark on Linux, not incremental solver memory"
+          },
+          "schema": "uqpu-cycle006-local-maxcut-repeated-scale-v1",
+          "seed": 46
+        }
+      ]
+    },
+    "AI-COST": {
+      "baseline_file_sha256": "76ec0c685223fbe63935701626e178577563a38498da0b54008ce5160680e4fe",
+      "candidate_result": null,
+      "evidence_class": "FROZEN_TOY_DATASET_CONTENT_HASHES_NO_CANDIDATE_RESULT",
+      "generator": "random.Random(seed).uniform(-1,1); label=1 iff x1*x2>=0",
+      "generator_module_sha256": "3dde947cce750cd1febb9667bf5a800ee77c9bddf665ff60dfbca8395d7de809",
+      "held_out": {
+        "canonical_sha256": "791cd18405f5de38bf8df95cd9d419b86c446350b4fba89f74e9416a3819adce",
+        "examples": 256
+      },
+      "measured_candidate_cost": null,
+      "measured_candidate_energy": null,
+      "quality_gate": {
+        "held_out_accuracy_minimum": 0.98,
+        "held_out_binary_cross_entropy_maximum": 0.19
+      },
+      "representation": "IEEE-754 Python float.hex strings plus integer label",
+      "schema": "uqpu-cycle006-ai-dataset-content-contract-v1",
+      "seed_policy": {
+        "base": 1234,
+        "held_out": 1236,
+        "train": 1235
+      },
+      "train": {
+        "canonical_sha256": "57470ff96e059ff9f112a935fd1512c7208235fe9417018ef92d25e4c5dd82fe",
+        "examples": 256
+      }
+    },
+    "B": {
+      "dry_run": {
+        "access_date": "2026-09-28",
+        "action_sha256": "f73856f5984418a531724d3e243107e2dc18910d614f3a8e6a2a4c0064cfd893",
+        "api_reference": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html",
+        "authorization": {
+          "credentials_used": false,
+          "network_submission_attempted": false,
+          "paid_job_submitted": false,
+          "status": "NOT_AUTHORIZED"
+        },
+        "evidence_class": "OFFICIAL_API_SCHEMA_DRY_RUN_NOT_PROVIDER_VALIDATION_OR_EXECUTION",
+        "provider_observations": {
+          "backend": null,
+          "bill": null,
+          "execution_time_seconds": null,
+          "queue_time_seconds": null,
+          "result": null,
+          "task_arn": null
+        },
+        "request_body": {
+          "action": "{\"braketSchemaHeader\":{\"name\":\"braket.ir.openqasm.program\",\"version\":\"1\"},\"source\":\"OPENQASM 3.0;\\ninclude \\\"stdgates.inc\\\";\\nqubit[6] q;\\nbit[6] c;\\nh q[0];\\nh q[1];\\nh q[2];\\nh q[3];\\nh q[4];\\nh q[5];\\ncx q[0], q[2];\\nrz(0.52359877559829882) q[2];\\ncx q[0], q[2];\\ncx q[0], q[3];\\nrz(0.52359877559829882) q[3];\\ncx q[0], q[3];\\ncx q[0], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[0], q[4];\\ncx q[1], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[1], q[4];\\ncx q[1], q[5];\\nrz(0.52359877559829882) q[5];\\ncx q[1], q[5];\\ncx q[2], q[3];\\nrz(0.52359877559829882) q[3];\\ncx q[2], q[3];\\ncx q[2], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[2], q[4];\\ncx q[3], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[3], q[4];\\ncx q[3], q[5];\\nrz(0.52359877559829882) q[5];\\ncx q[3], q[5];\\nrx(2.6179938779914944) q[0];\\nrx(2.6179938779914944) q[1];\\nrx(2.6179938779914944) q[2];\\nrx(2.6179938779914944) q[3];\\nrx(2.6179938779914944) q[4];\\nrx(2.6179938779914944) q[5];\\nc[0] = measure q[0];\\nc[1] = measure q[1];\\nc[2] = measure q[2];\\nc[3] = measure q[3];\\nc[4] = measure q[4];\\nc[5] = measure q[5];\\n\"}",
+          "clientToken": null,
+          "deviceArn": null,
+          "outputS3Bucket": null,
+          "outputS3KeyPrefix": null,
+          "shots": 8192
+        },
+        "required_fields_from_api": [
+          "action",
+          "clientToken",
+          "deviceArn",
+          "outputS3Bucket",
+          "outputS3KeyPrefix",
+          "shots"
+        ],
+        "schema": "uqpu-cycle005-braket-create-task-dry-run-v1",
+        "validation": {
+          "locally_complete": false,
+          "missing_required_fields": [
+            "clientToken",
+            "deviceArn",
+            "outputS3Bucket",
+            "outputS3KeyPrefix"
+          ],
+          "provider_validated": false,
+          "submission_allowed": false,
+          "submit_method_present": false
+        }
+      },
+      "evidence_class": "LOCAL_NEGATIVE_VALIDATION_AND_RECEIPT_SCHEMA_NO_PROVIDER_EXECUTION",
+      "execution_receipt": {
+        "accepted_outputs": null,
+        "backend": null,
+        "billing_amount": null,
+        "billing_currency": null,
+        "billing_record_sha256": null,
+        "completed_at_utc": null,
+        "provider": null,
+        "receipt_id": null,
+        "request_sha256": null,
+        "requested_at_utc": null,
+        "response_sha256": null,
+        "shots_completed": null,
+        "shots_requested": null,
+        "task_arn_or_job_id": null
+      },
+      "execution_receipt_schema_fields": [
+        "receipt_id",
+        "provider",
+        "backend",
+        "task_arn_or_job_id",
+        "request_sha256",
+        "response_sha256",
+        "requested_at_utc",
+        "completed_at_utc",
+        "shots_requested",
+        "shots_completed",
+        "accepted_outputs",
+        "billing_record_sha256",
+        "billing_currency",
+        "billing_amount"
+      ],
+      "negative_request_corpus": [
+        {
+          "case_id": "missing_account_fields",
+          "errors": [
+            "clientToken_missing_or_empty",
+            "deviceArn_missing_or_empty",
+            "outputS3Bucket_missing_or_empty",
+            "outputS3KeyPrefix_missing_or_empty"
+          ]
+        },
+        {
+          "case_id": "zero_shots",
+          "errors": [
+            "shots_must_be_positive_integer"
+          ]
+        },
+        {
+          "case_id": "empty_action",
+          "errors": [
+            "action_missing_or_empty"
+          ]
+        },
+        {
+          "case_id": "boolean_shots",
+          "errors": [
+            "shots_must_be_positive_integer"
+          ]
+        }
+      ],
+      "receipt_complete": false,
+      "schema": "uqpu-cycle006-provider-request-and-receipt-gate-v1",
+      "submission_authorized": false,
+      "submission_surface_present": false,
+      "synthetic_complete_shape": {
+        "provider_validated": false,
+        "sha256": "e4990083f48e7acd37dcfcd911e9b54f1e703d74dd2c35b4beb8ef48a3a5f8ab",
+        "shape_valid": true,
+        "submitted": false
+      }
+    },
+    "C": {
+      "cache_control": {
+        "attempted": false,
+        "method": null,
+        "reason": "Dropping or proving kernel cache state requires host-level controls unavailable to this portable test.",
+        "supported_in_unprivileged_protocol": false
+      },
+      "durability_boundary": {
+        "atomic_replace_completed": true,
+        "device_flush_attested": false,
+        "directory_fsync_completed": true,
+        "directory_fsync_supported": true,
+        "file_fsync_completed": true,
+        "power_loss_survival_tested": false
+      },
+      "evidence_class": "LOCAL_FILE_AND_DIRECTORY_FSYNC_MEASUREMENT_NOT_STORAGE_SERVICE_DURABILITY",
+      "non_claims": [
+        "No device flush or power-loss survival is verified.",
+        "The read is not labeled cold or warm.",
+        "No provider, cloud, network, QPU, energy, or device-memory measurement is inferred."
+      ],
+      "payload": {
+        "bytes": 10152,
+        "sha256": "fb140f933a1d2e60873d9570c1ce490b4af6c9ee93737ad32d84968067978fb1"
+      },
+      "process_peak_rss": {
+        "semantics": "fresh worker process high-water mark when invoked through the Cycle 006 runner",
+        "unit": "KiB on Linux; platform-dependent elsewhere",
+        "value": 16640
+      },
+      "schema": "uqpu-cycle006-local-atomic-directory-durability-v1",
+      "timing": {
+        "post_publish_read_uncontrolled_cache_state": {
+          "maximum_ns": 88895,
+          "median_ns": 9803,
+          "minimum_ns": 8147,
+          "repetitions": 11
+        },
+        "write_file_fsync_atomic_replace_directory_fsync": {
+          "maximum_ns": 245188,
+          "median_ns": 162752,
+          "minimum_ns": 66027,
+          "repetitions": 11
+        }
+      }
+    },
+    "D": {
+      "analysis_state": {
+        "basis_resolved_rates_extracted": false,
+        "data_values_read": false,
+        "parquet_payload_retrieved": false,
+        "project_reproduction": false,
+        "uncertainty_definition_extracted": false
+      },
+      "archive_bytes": 145469232,
+      "artifact": "benchmarks/evidence/cycle006-delta01-zenodo-range-metadata.json",
+      "artifact_sha256": "cc5ee23fb9b2f3d8e75fc80c749aa299dd146e52cc5b468e9d9f4a433b96d52c",
+      "basis_resolved_rates_extracted": false,
+      "central_directory_summary": {
+        "compressed_file_bytes_sum": 145353888,
+        "compression_method_entry_counts": {
+          "0": 20,
+          "8": 482
+        },
+        "directories": 20,
+        "entries": 502,
+        "files": 482,
+        "uncompressed_file_bytes_sum": 243933814
+      },
+      "evidence_class": "PRIMARY_API_PLUS_RANGE_VERIFIED_ARCHIVE_METADATA_AND_README_NOT_DATA_ANALYSIS",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "project_reproduction": false,
+      "readme_member": {
+        "compressed_size": 1079,
+        "compression_method": 8,
+        "crc32": "fd09c11f",
+        "path": "data_upload/README.md",
+        "sha256": "bbc0015a5f19a2aabacfdd5e99ce309f2ea8cf106fc0f2f1c03c49d1561b7a13",
+        "uncompressed_size": 3065
+      },
+      "readme_semantics": {
+        "bit_flip": {
+          "columns": "final state of each storage mode plus logical XOR state",
+          "format": "Apache Parquet readable as pandas DataFrame",
+          "index_fields": [
+            "nbar",
+            "S{i}_initial_state",
+            "num_cycles",
+            "shot"
+          ],
+          "storage_state_encoding": {
+            "0": "|alpha>",
+            "1": "|-alpha>"
+          }
+        },
+        "cycle_length_microseconds": 2.8,
+        "phase_flip": {
+          "axis": "experiment shot",
+          "column_families": [
+            "S{i}_initial_state",
+            "S{i}_final_state",
+            "A{i}_syndrome_{j}"
+          ],
+          "cycle_enumerator_file": "all_cycle_numbers",
+          "format": "Apache Parquet readable as pandas DataFrame",
+          "hierarchy": [
+            "code section",
+            "storage mean photon number",
+            "number of cycles"
+          ],
+          "storage_parity_encoding": {
+            "0": "even",
+            "1": "odd"
+          },
+          "syndrome_encoding": {
+            "0": "even",
+            "1": "erasure",
+            "2": "odd"
+          }
+        }
+      },
+      "service_mapping_advanced": true,
+      "uncertainty_extracted": false
+    },
+    "E": {
+      "registry": {
+        "evidence_class": "IMMUTABLE_EVIDENCE_SLOT_SCHEMA_NO_MATERIAL_MEASUREMENT",
+        "fabrication_authorized": false,
+        "readiness_status": "NOT_READY_NO_FABRICATION_AUTHORIZED",
+        "required_count": 9,
+        "satisfied_count": 0,
+        "schema": "uqpu-cycle005-material-evidence-registry-v1",
+        "slots": [
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-01",
+            "requirement": "current_full_method_text",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-02",
+            "requirement": "authenticated_pangola_species_and_lot",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-03",
+            "requirement": "feedstock_moisture_and_ash",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-04",
+            "requirement": "resin_hardener_sku_and_ratio",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-05",
+            "requirement": "cure_schedule",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-06",
+            "requirement": "coupon_dimensions_and_uncertainty",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-07",
+            "requirement": "vna_fixture_calibration_and_dynamic_range",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-08",
+            "requirement": "same_protocol_incumbent_coupon",
+            "satisfied": false
+          },
+          {
+            "acceptance": {
+              "artifact_uri_required": true,
+              "issuer_or_operator_required": true,
+              "observation_or_effective_date_required": true,
+              "reviewer_required": true,
+              "sha256_required": true
+            },
+            "evidence": {
+              "artifact_uri": null,
+              "date": null,
+              "issuer_or_operator": null,
+              "reviewer": null,
+              "sha256": null
+            },
+            "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+            "prerequisite_id": "DMF-PR-09",
+            "requirement": "safety_and_waste_review",
+            "satisfied": false
+          }
+        ],
+        "study_id": "DMF-BIOCARBON-EMI-001",
+        "study_lot_id": null
+      },
+      "validation": {
+        "as_of": "2026-09-28",
+        "errors_by_prerequisite": {
+          "DMF-PR-01": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing",
+            "valid_until_missing_or_invalid"
+          ],
+          "DMF-PR-02": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing",
+            "study_lot_id_missing"
+          ],
+          "DMF-PR-03": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing",
+            "study_lot_id_missing"
+          ],
+          "DMF-PR-04": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing"
+          ],
+          "DMF-PR-05": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing"
+          ],
+          "DMF-PR-06": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing"
+          ],
+          "DMF-PR-07": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing",
+            "valid_until_missing_or_invalid"
+          ],
+          "DMF-PR-08": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing"
+          ],
+          "DMF-PR-09": [
+            "sha256_missing_or_malformed",
+            "issuer_or_operator_missing",
+            "date_missing",
+            "reviewer_missing",
+            "scope_id_missing"
+          ]
+        },
+        "evidence_class": "FAIL_CLOSED_REGISTRY_VALIDATION_NO_MATERIAL_EVIDENCE",
+        "fabrication_authorized": false,
+        "passing_count": 0,
+        "passing_prerequisite_ids": [],
+        "ready": false,
+        "required_count": 9,
+        "schema": "uqpu-cycle006-material-registry-validation-v2"
+      }
+    },
+    "F": {
+      "current_evidence": {
+        "complete": false,
+        "cost_per_accepted_output": null,
+        "currency": null,
+        "errors": [
+          "provider_id_missing",
+          "execution_id_missing",
+          "workload_contract_id_missing",
+          "ledger_currency_missing",
+          "component_missing:provider_actual_bill",
+          "component_missing:classical_host_orchestration",
+          "component_missing:queue",
+          "component_missing:network_transfer",
+          "component_missing:storage",
+          "component_missing:retry_failure",
+          "component_missing:mitigation_decoder",
+          "component_missing:energy_cooling",
+          "component_missing:labor",
+          "component_missing:capital_amortization",
+          "accepted_output_count_invalid",
+          "matched_classical_baseline_missing"
+        ],
+        "refusal_active": true,
+        "total_cost": null
+      },
+      "evidence_class": "ADVERSARIAL_COMPLETE_COST_VALIDATION_NO_BILL_OR_ECONOMIC_RESULT",
+      "negative_corpus": [
+        {
+          "case_id": "missing_component",
+          "errors": [
+            "component_missing:storage"
+          ]
+        },
+        {
+          "case_id": "negative_amount",
+          "errors": [
+            "amount_invalid:labor"
+          ]
+        },
+        {
+          "case_id": "non_finite_or_non_numeric_amount",
+          "errors": [
+            "amount_invalid:queue"
+          ]
+        },
+        {
+          "case_id": "mixed_currency",
+          "errors": [
+            "currency_mismatch:network_transfer"
+          ]
+        },
+        {
+          "case_id": "cross_provider",
+          "errors": [
+            "provider_mismatch:provider_actual_bill"
+          ]
+        },
+        {
+          "case_id": "unmatched_acceptance",
+          "errors": [
+            "accepted_outputs_execution_id_mismatch"
+          ]
+        },
+        {
+          "case_id": "unmatched_baseline",
+          "errors": [
+            "classical_baseline_contract_mismatch"
+          ]
+        }
+      ],
+      "rg028_status": "OPEN_DATA_CREDENTIAL_AUTHORIZATION_AND_COMPLETENESS_BLOCKED",
+      "schema": "uqpu-cycle006-cost-adversarial-gate-v2",
+      "synthetic_arithmetic_control": {
+        "complete": true,
+        "cost_per_accepted_output": 2.0,
+        "currency": "USD",
+        "errors": [],
+        "evidence_class": "SYNTHETIC_SCHEMA_ARITHMETIC_NOT_COMMERCIAL_EVIDENCE",
+        "refusal_active": false,
+        "total_cost": 10.0
+      }
+    },
+    "FND/EQN": {
+      "analysis_state": {
+        "basis_resolved_rates_extracted": false,
+        "data_values_read": false,
+        "parquet_payload_retrieved": false,
+        "project_reproduction": false,
+        "uncertainty_definition_extracted": false
+      },
+      "archive_bytes": 145469232,
+      "artifact": "benchmarks/evidence/cycle006-delta01-zenodo-range-metadata.json",
+      "artifact_sha256": "cc5ee23fb9b2f3d8e75fc80c749aa299dd146e52cc5b468e9d9f4a433b96d52c",
+      "central_directory_summary": {
+        "compressed_file_bytes_sum": 145353888,
+        "compression_method_entry_counts": {
+          "0": 20,
+          "8": 482
+        },
+        "directories": 20,
+        "entries": 502,
+        "files": 482,
+        "uncompressed_file_bytes_sum": 243933814
+      },
+      "evidence_class": "PRIMARY_API_PLUS_RANGE_VERIFIED_ARCHIVE_METADATA_AND_README_NOT_DATA_ANALYSIS",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "readme_member": {
+        "compressed_size": 1079,
+        "compression_method": 8,
+        "crc32": "fd09c11f",
+        "path": "data_upload/README.md",
+        "sha256": "bbc0015a5f19a2aabacfdd5e99ce309f2ea8cf106fc0f2f1c03c49d1561b7a13",
+        "uncompressed_size": 3065
+      },
+      "readme_semantics": {
+        "bit_flip": {
+          "columns": "final state of each storage mode plus logical XOR state",
+          "format": "Apache Parquet readable as pandas DataFrame",
+          "index_fields": [
+            "nbar",
+            "S{i}_initial_state",
+            "num_cycles",
+            "shot"
+          ],
+          "storage_state_encoding": {
+            "0": "|alpha>",
+            "1": "|-alpha>"
+          }
+        },
+        "cycle_length_microseconds": 2.8,
+        "phase_flip": {
+          "axis": "experiment shot",
+          "column_families": [
+            "S{i}_initial_state",
+            "S{i}_final_state",
+            "A{i}_syndrome_{j}"
+          ],
+          "cycle_enumerator_file": "all_cycle_numbers",
+          "format": "Apache Parquet readable as pandas DataFrame",
+          "hierarchy": [
+            "code section",
+            "storage mean photon number",
+            "number of cycles"
+          ],
+          "storage_parity_encoding": {
+            "0": "even",
+            "1": "odd"
+          },
+          "syndrome_encoding": {
+            "0": "even",
+            "1": "erasure",
+            "2": "odd"
+          }
+        }
+      }
+    },
+    "G": {
+      "evidence_class": "SYNTHETIC_CUSTODY_VALIDATION_NO_PHYSICAL_SAMPLE_OR_MEASUREMENT",
+      "negative_corpus": [
+        {
+          "case_id": "broken_hash_chain",
+          "errors": [
+            "event_hash_mismatch:SYN-EVENT-4",
+            "previous_hash_mismatch:SYN-EVENT-4"
+          ]
+        },
+        {
+          "case_id": "expired_calibration",
+          "errors": [
+            "calibration_not_valid_at_measurement"
+          ]
+        },
+        {
+          "case_id": "unmatched_control",
+          "errors": [
+            "matched_control_instrument_session_mismatch"
+          ]
+        }
+      ],
+      "operational_events": [],
+      "operational_ready": false,
+      "schema": "uqpu-cycle006-custody-dag-and-uncertainty-gate-v1",
+      "synthetic_valid_control_errors": [],
+      "synthetic_valid_control_sha256": "d87e7970d8abda8f3f57fe0b8b281b710672de07d91c876b4a159aea65ee9d4c"
+    },
+    "H": {
+      "derivation_rule": "Any unresolved prerequisite forces NOT_AUTHORIZED; this research workflow cannot authorize capital even when a schema passes.",
+      "evidence_class": "DERIVED_BLOCKER_LIST_NO_FINANCIAL_DECISION",
+      "funding_or_purchase_authorized": false,
+      "gates": [
+        {
+          "all_prerequisites_satisfied": false,
+          "capital_at_risk_thb": null,
+          "decision": null,
+          "gate_id": "CAP-DMF-EMI-001",
+          "prerequisite_ids": [
+            "DMF-PR-01",
+            "DMF-PR-02",
+            "DMF-PR-03",
+            "DMF-PR-04",
+            "DMF-PR-05",
+            "DMF-PR-06",
+            "DMF-PR-07",
+            "DMF-PR-08",
+            "DMF-PR-09"
+          ],
+          "status": "NOT_AUTHORIZED",
+          "unresolved_prerequisite_ids": [
+            "DMF-PR-01",
+            "DMF-PR-02",
+            "DMF-PR-03",
+            "DMF-PR-04",
+            "DMF-PR-05",
+            "DMF-PR-06",
+            "DMF-PR-07",
+            "DMF-PR-08",
+            "DMF-PR-09"
+          ]
+        },
+        {
+          "all_prerequisites_satisfied": false,
+          "capital_at_risk_thb": null,
+          "decision": null,
+          "gate_id": "CAP-BOSONIC-001",
+          "prerequisite_ids": [
+            "BOS-DATA-LOCAL-CHECKSUM",
+            "BOS-DATA-LICENSE",
+            "BOS-DATA-FORMAT",
+            "BOS-DATA-COLUMNS",
+            "BOS-BASIS-UNCERTAINTY-MAP",
+            "BOS-MATCHED-DEVICE-RESOURCES"
+          ],
+          "status": "NOT_AUTHORIZED",
+          "unresolved_prerequisite_ids": [
+            "BOS-DATA-LOCAL-CHECKSUM",
+            "BOS-BASIS-UNCERTAINTY-MAP",
+            "BOS-MATCHED-DEVICE-RESOURCES"
+          ]
+        }
+      ],
+      "schema": "uqpu-cycle006-derived-capital-blockers-v1"
+    },
+    "QOS/QSVT": {
+      "all_roundtrips_passed": true,
+      "evidence_class": "CANONICAL_SUBSET_AST_ROUNDTRIP_NOT_GENERAL_PARSER_OR_PROVIDER_TRANSPILE",
+      "grammar_scope": "frozen ER6 OpenQASM 3 subset only",
+      "hardware_executed": false,
+      "provider_transpile_receipt": {
+        "backend": null,
+        "calibration_timestamp": null,
+        "duration_seconds": null,
+        "input_qasm_sha256": null,
+        "layout": null,
+        "physical_depth": null,
+        "physical_two_qubit_gate_count": null,
+        "provider": null,
+        "sdk_and_version": null,
+        "transpiled_artifact_sha256": null
+      },
+      "provider_transpile_receipt_complete": false,
+      "rows": [
+        {
+          "ast_sha256": "f3bd27cd84da477c10b824c66e71a3667e0849b30fb862dfd049f2c685ce0e76",
+          "candidate_id": "mean_energy_p1",
+          "canonical_equals_input": true,
+          "canonical_sha256": "7e7817cc4f253c6edae42256aeee3a17dbe772035d578b10f5c6d380deb7d74e",
+          "input_sha256": "7e7817cc4f253c6edae42256aeee3a17dbe772035d578b10f5c6d380deb7d74e",
+          "roundtrip_ast_equal": true,
+          "statement_count": 49
+        },
+        {
+          "ast_sha256": "542c909f2ece03f8c1c5209488b0c4f5d061b42d44943023c8abb707f643ecb7",
+          "candidate_id": "cvar_alpha_0.5_p1",
+          "canonical_equals_input": true,
+          "canonical_sha256": "8f6d4d41f7c6934feee9657cf213fb23212e905f549a7138679e9d0b6baa3d32",
+          "input_sha256": "8f6d4d41f7c6934feee9657cf213fb23212e905f549a7138679e9d0b6baa3d32",
+          "roundtrip_ast_equal": true,
+          "statement_count": 49
+        }
+      ],
+      "schema": "uqpu-cycle006-qasm-subset-roundtrip-and-transpile-receipt-v1"
+    },
+    "SCM": {
+      "custodian_package": "benchmarks/results/cycle006-delta01-scm-custodian-package.json",
+      "evidence_class": "SYNTHETIC_SEPARATE_ROLE_PACKAGES_NOT_OPERATIONAL_BLINDING",
+      "operational_blinding": false,
+      "reveal_audit": "benchmarks/results/cycle006-delta01-scm-reveal-audit.json",
+      "scorer_package": "benchmarks/experiments/cycle006-delta01-scm-scorer-package.json",
+      "validation_errors": []
+    }
+  },
+  "schema": "uqpu-cycle006-delta01-integrated-gates-v1",
+  "status": "LOCAL_MEASUREMENTS_RANGE_VERIFIED_METADATA_AND_ADVERSARIAL_GATES_NO_EVIDENCE_PROMOTION"
+}
