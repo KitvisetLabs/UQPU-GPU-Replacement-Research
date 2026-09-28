@@ -43,6 +43,14 @@ Every task in every lane uses exactly this compact record:
 
 No work item may disappear because it failed. BLOCKED/REJECTED_CURRENT_ASSUMPTIONS items move to RESEARCH_GAPS.md with an unlock path.
 
+Under INV-037, every work item also links to or adds a mathematical contract:
+named variables, units/types, domain, assumptions, uncertainty, decision
+predicate, falsifier, evidence type, provenance and non-claims. If a useful
+definition, lemma, bound, counterexample, null or failed equation is produced,
+retain it in the discovery ledger even when the work item remains blocked.
+SCM fiction/canon equations and empirical evidence use separate types and have
+no implicit promotion path.
+
 ## Parallel execution cycle
 
 ```text

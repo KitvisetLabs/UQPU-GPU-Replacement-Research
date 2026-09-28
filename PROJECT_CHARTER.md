@@ -206,3 +206,19 @@ Fusion is a permanent cheap-electricity research pillar. Success is measured by 
 
 ### INV-033 — Interest-Cost and R&D-Finance Compression
 The project permanently minimizes financing burden by reducing underlying technology/material/fuel/electricity costs, required CAPEX/OPEX/working capital, financed principal, capital lock-up time and project risk. Lower principal directly lowers absolute interest expense at unchanged terms. Any claim that a lower-cost technology also lowers the financing rate, project WACC, policy rate or economy-wide interest rate must be separately evidenced rather than assumed. Canonical strategy: `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`.
+
+### INV-037 — Unified Mathematical Research Language
+Every canonical project goal must have a versioned mathematical description of
+its variables, units/types, domain, assumptions, uncertainty, constraints,
+decision predicate, falsifier, required evidence, provenance and non-claims.
+Mission closure is conjunctive: success in one goal cannot compensate for a
+failed or unmeasured gate elsewhere. Useful intermediate equations, bounds,
+counterexamples, nulls and failed candidates remain in the discovery ledger.
+
+SCM and *คำภีร์โลกาธิบดี* may use a rich separately typed fictional language for
+`จิต`, `เจตสิก`, Abhidhamma-inspired ontology, `อาถรรพ์คอนโทรล`, spiritual
+communication, portals and inter-realm economics. Mathematical coherence does
+not turn religious/philosophical or fictional objects into physical evidence.
+Any real-world claim still requires ordinary-cause controls, falsification,
+ethics/consent where applicable, and independent replication. Canonical detail:
+`00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md`.

@@ -1,0 +1,827 @@
+{
+  "canonical_document": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+  "date": "2026-09-28",
+  "evidence_class": "PROJECT_SPECIFIC_FORMAL_SPECIFICATION_NOT_PHYSICAL_LAW_OR_MISSION_ACHIEVEMENT",
+  "evidence_types": [
+    "DEFINITION",
+    "THEORY",
+    "MODEL",
+    "SIMULATION",
+    "LOCAL_MEASUREMENT",
+    "PROVIDER_MEASUREMENT",
+    "PHYSICAL_EXPERIMENT",
+    "COMMERCIAL_OBSERVATION"
+  ],
+  "equations": [
+    {
+      "assumptions": ["Every claim carries an explicit evidence context and type."],
+      "claim_ceiling": "Evidence typing only; no scientific truth follows from the type label.",
+      "domain": "All repository claims",
+      "equation_id": "UMRL-001",
+      "expression": "Gamma |- claim : evidence_type",
+      "falsifier": "A promoted claim whose required evidence type is absent or silently cast from another type.",
+      "kind": "TYPE_JUDGEMENT",
+      "name": "Typed evidence judgement",
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "FND/EQN", "SCM", "AI-COST", "QOS/QSVT"],
+      "uncertainty_rule": "Evidence type and statistical confidence are separate fields.",
+      "variables": [
+        {"meaning": "evidence context", "symbol": "Gamma", "unit_or_type": "provenance graph"},
+        {"meaning": "claim", "symbol": "c", "unit_or_type": "typed proposition"},
+        {"meaning": "evidence type", "symbol": "tau", "unit_or_type": "enumeration"}
+      ]
+    },
+    {
+      "assumptions": ["Dependencies are addressable and the dependency graph has a finite reachable subgraph."],
+      "claim_ceiling": "Accounting boundary definition; it does not prove that inventory is complete.",
+      "domain": "Systems, devices, processes, providers, and phone boundary",
+      "equation_id": "UMRL-002",
+      "expression": "cl(x)=mu Z ({x} union Union_{z in Z} dep(z))",
+      "falsifier": "An essential dependency required for execution is outside the computed closure.",
+      "kind": "FIXED_POINT_DEFINITION",
+      "name": "Full-system dependency closure",
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "AI-COST"],
+      "uncertainty_rule": "Unknown dependencies remain explicit unresolved nodes.",
+      "variables": [
+        {"meaning": "candidate system", "symbol": "x", "unit_or_type": "system"},
+        {"meaning": "dependency closure", "symbol": "cl(x)", "unit_or_type": "set of resource nodes"}
+      ]
+    },
+    {
+      "assumptions": ["Overlapping resources use stable identifiers and are deduplicated."],
+      "claim_ceiling": "Accounting identity; unmeasured resource values remain null.",
+      "domain": "Extensive lifecycle resources",
+      "equation_id": "UMRL-003",
+      "expression": "R_r(x;omega)=Sum_{z in cl(x)} R_r(z;omega)",
+      "falsifier": "Double-counting or omission changes the resource total under the same boundary.",
+      "kind": "ACCOUNTING_IDENTITY",
+      "name": "Dependency-closed resource total",
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "AI-COST"],
+      "uncertainty_rule": "Propagate joint uncertainty and covariance; do not add independent intervals when dependence is unknown.",
+      "variables": [
+        {"meaning": "resource total", "symbol": "R_r", "unit_or_type": "resource-specific SI or currency unit"},
+        {"meaning": "operating condition", "symbol": "omega", "unit_or_type": "scenario"}
+      ]
+    },
+    {
+      "assumptions": ["Metrics, orientations, thresholds, and normalizers are frozen before evaluation."],
+      "claim_ceiling": "Contract-relative robust margin, not universal superiority.",
+      "domain": "Useful-output, material, device, and service contracts",
+      "equation_id": "UMRL-004",
+      "expression": "m_w(x)=inf_{omega in U_(w,1-alpha)} min_k s_wk(y_wk-b_wk)/u_wk",
+      "falsifier": "Any required metric has a lower robust margin below zero.",
+      "kind": "ROBUST_ACCEPTANCE_MARGIN",
+      "name": "Functional acceptance margin",
+      "owner_lanes": ["A", "C", "D", "E", "F", "FND/EQN", "AI-COST", "QOS/QSVT"],
+      "uncertainty_rule": "Use preregistered uncertainty set U and confidence level alpha; unknown uncertainty blocks the robust claim.",
+      "variables": [
+        {"meaning": "measured metric", "symbol": "y_wk", "unit_or_type": "metric-specific"},
+        {"meaning": "acceptance boundary", "symbol": "b_wk", "unit_or_type": "same as y_wk"},
+        {"meaning": "normalization scale", "symbol": "u_wk", "unit_or_type": "same as y_wk"}
+      ]
+    },
+    {
+      "assumptions": ["All numeric and categorical terms are frozen in the useful-output contract."],
+      "claim_ceiling": "Binary acceptance for one frozen contract only.",
+      "domain": "One candidate under one useful-output contract",
+      "equation_id": "UMRL-005",
+      "expression": "A_w(x)=1[m_w(x)>=0] Product_{q in Q_w} 1[q(x)=true]",
+      "falsifier": "A required numeric margin or categorical predicate fails.",
+      "kind": "DECISION_PREDICATE",
+      "name": "Functional acceptance predicate",
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "AI-COST", "QOS/QSVT"],
+      "uncertainty_rule": "No pass when a required input or uncertainty bound is null.",
+      "variables": [
+        {"meaning": "acceptance indicator", "symbol": "A_w", "unit_or_type": "Boolean"},
+        {"meaning": "categorical predicates", "symbol": "Q_w", "unit_or_type": "set of Booleans"}
+      ]
+    },
+    {
+      "assumptions": ["Each attempted output has a frozen acceptance result."],
+      "claim_ceiling": "Counts accepted outputs; it does not establish independence between attempts.",
+      "domain": "Repeated workload outputs",
+      "equation_id": "UMRL-006",
+      "expression": "N_acc(x,w)=Sum_i 1[A_w(o_i)=1]",
+      "falsifier": "Recomputing the frozen acceptance predicate changes the recorded count.",
+      "kind": "COUNTING_IDENTITY",
+      "name": "Accepted-output count",
+      "owner_lanes": ["A", "B", "F", "AI-COST"],
+      "uncertainty_rule": "Report sampling interval and dependence model when generalizing beyond observed attempts.",
+      "variables": [
+        {"meaning": "accepted-output count", "symbol": "N_acc", "unit_or_type": "count"},
+        {"meaning": "attempted output", "symbol": "o_i", "unit_or_type": "output record"}
+      ]
+    },
+    {
+      "assumptions": ["Lifecycle cost and energy use the same dependency closure and observation window as accepted outputs."],
+      "claim_ceiling": "Observed ratios only; zero accepted outputs or incomplete numerator yields null.",
+      "domain": "Throughput, cost, and energy per accepted output",
+      "equation_id": "UMRL-007",
+      "expression": "T_acc=N_acc/Delta_t; c_acc=C_life/N_acc; e_acc=E_life/N_acc",
+      "falsifier": "A numerator term, accepted-output count, or observation window is mismatched.",
+      "kind": "ACCOUNTING_RATIO",
+      "name": "Accepted-output performance and resource ratios",
+      "owner_lanes": ["A", "B", "C", "E", "F", "H", "AI-COST"],
+      "uncertainty_rule": "Use ratio uncertainty with numerator/denominator covariance; division is refused at N_acc=0.",
+      "variables": [
+        {"meaning": "accepted throughput", "symbol": "T_acc", "unit_or_type": "accepted outputs per second"},
+        {"meaning": "cost per accepted output", "symbol": "c_acc", "unit_or_type": "currency per accepted output"},
+        {"meaning": "energy per accepted output", "symbol": "e_acc", "unit_or_type": "joule per accepted output"}
+      ]
+    },
+    {
+      "assumptions": ["Candidate and per-unit reference share workload, time horizon, quality, and required capability coordinates."],
+      "claim_ceiling": "Equivalent units for the named subsystem and contract only.",
+      "domain": "GPU, CPU, NPU, RAM, VRAM/HBM, and persistent-storage replacement",
+      "equation_id": "UMRL-008",
+      "expression": "N_eq(j,w,x)=A_w(x) min_{k in K_jw} v_k(x)/v_jk",
+      "falsifier": "Any required semantic or capability coordinate is missing, below threshold, or compared under a different contract.",
+      "kind": "BOTTLENECK_EQUIVALENCE",
+      "name": "Accepted equivalent subsystem units",
+      "owner_lanes": ["A", "C", "F", "H", "AI-COST"],
+      "uncertainty_rule": "Use a simultaneous lower confidence bound across all bottleneck ratios.",
+      "variables": [
+        {"meaning": "equivalent conventional units", "symbol": "N_eq", "unit_or_type": "units"},
+        {"meaning": "candidate capability", "symbol": "v_k(x)", "unit_or_type": "capability-specific"},
+        {"meaning": "one reference-unit capability", "symbol": "v_jk", "unit_or_type": "same as v_k"}
+      ]
+    },
+    {
+      "assumptions": ["Both systems pass the same acceptance contract and have complete lifecycle ledgers."],
+      "claim_ceiling": "Cost advantage for one matched useful service; no universal advantage.",
+      "domain": "100x and 100,000,000x economic targets",
+      "equation_id": "UMRL-009",
+      "expression": "G_C=c_acc(reference,w)/c_acc(candidate,w)",
+      "falsifier": "Contract, boundary, currency, time basis, accepted-output denominator, or bill provenance differs.",
+      "kind": "MATCHED_COST_RATIO",
+      "name": "Accepted-output cost advantage",
+      "owner_lanes": ["A", "B", "C", "E", "F", "H", "AI-COST"],
+      "uncertainty_rule": "Report a lower confidence bound; target passes only when the bound exceeds the threshold.",
+      "variables": [
+        {"meaning": "cost advantage", "symbol": "G_C", "unit_or_type": "dimensionless ratio"},
+        {"meaning": "cost per accepted output", "symbol": "c_acc", "unit_or_type": "matched currency per accepted output"}
+      ]
+    },
+    {
+      "assumptions": ["The target service portfolio and phone-class numeric boundaries are separately frozen."],
+      "claim_ceiling": "Mission decision predicate; no present feasibility is implied.",
+      "domain": "Ultimate data-center-to-phone target",
+      "equation_id": "UMRL-010",
+      "expression": "PhoneReady=All_w A_w AND essential(cl(x)) subset x AND V<=Vmax AND M<=Mmax AND Price<=Pmax AND Thermal<=ThermalMax AND Reliability>=Rmin",
+      "falsifier": "Any essential external dependency or service/resource boundary fails.",
+      "kind": "MISSION_CONJUNCTION",
+      "name": "Phone-class mission closure",
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "FND/EQN", "AI-COST", "QOS/QSVT"],
+      "uncertainty_rule": "Every conjunct uses a simultaneous conservative bound; unknown is not pass.",
+      "variables": [
+        {"meaning": "mission predicate", "symbol": "PhoneReady", "unit_or_type": "Boolean"},
+        {"meaning": "physical volume", "symbol": "V", "unit_or_type": "m^3"},
+        {"meaning": "mass", "symbol": "M", "unit_or_type": "kg"},
+        {"meaning": "device price", "symbol": "Price", "unit_or_type": "THB"}
+      ]
+    },
+    {
+      "assumptions": ["Eligible provider set is date-stamped and each stage is independently evidenced."],
+      "claim_ceiling": "Provider maturity vector; discovery or simulation is not hardware execution.",
+      "domain": "Quantum-cloud portability",
+      "equation_id": "UMRL-011",
+      "expression": "Pi(t)=|P(t)|^-1 Sum_p (discover,compile,dry_run,simulate,hardware_receipt)_p",
+      "falsifier": "A stage is marked complete without its required artifact or the denominator omits eligible providers.",
+      "kind": "MATURITY_VECTOR",
+      "name": "Date-stamped provider portability",
+      "owner_lanes": ["A", "B", "F"],
+      "uncertainty_rule": "Report each component separately with inventory date; do not collapse to one pass score.",
+      "variables": [
+        {"meaning": "provider maturity vector", "symbol": "Pi(t)", "unit_or_type": "five dimensionless fractions"},
+        {"meaning": "eligible provider inventory", "symbol": "P(t)", "unit_or_type": "date-stamped set"}
+      ]
+    },
+    {
+      "assumptions": ["Reference, compiler, lowering, execution, and normalization all use the same workload contract."],
+      "claim_ceiling": "Correctness for the tested provider and contract only.",
+      "domain": "Provider-neutral execution",
+      "equation_id": "UMRL-012",
+      "expression": "d_w(Normalize_p(Execute_p(Lower_p(Compile(w)))),Reference(w))<=epsilon_w",
+      "falsifier": "Normalized provider result exceeds the frozen output distance or uses contract drift.",
+      "kind": "COMMUTING_CORRECTNESS_CONDITION",
+      "name": "Provider lowering equivalence",
+      "owner_lanes": ["A", "B", "F", "QOS/QSVT"],
+      "uncertainty_rule": "Include shot, calibration, stochastic, and decoding uncertainty in d_w.",
+      "variables": [
+        {"meaning": "contract-specific output distance", "symbol": "d_w", "unit_or_type": "metric"},
+        {"meaning": "acceptance tolerance", "symbol": "epsilon_w", "unit_or_type": "same as d_w"}
+      ]
+    },
+    {
+      "assumptions": ["Application-visible observables and the admissible input domain are frozen."],
+      "claim_ceiling": "Semantic replacement for one application; not literal memory-cell equivalence.",
+      "domain": "RAM, VRAM/HBM, storage, and state semantic elimination",
+      "equation_id": "UMRL-013",
+      "expression": "d_w(O_w(F_x(u)),O_w(F_ref(u)))<=epsilon_w for all u in U_w",
+      "falsifier": "A valid input produces application-visible output beyond tolerance or violates access/persistence semantics.",
+      "kind": "SEMANTIC_EQUIVALENCE",
+      "name": "Application-visible state equivalence",
+      "owner_lanes": ["A", "C", "F"],
+      "uncertainty_rule": "The quantified input domain and probabilistic error rate must be explicit.",
+      "variables": [
+        {"meaning": "application observable", "symbol": "O_w", "unit_or_type": "observable map"},
+        {"meaning": "state transition", "symbol": "F", "unit_or_type": "state map"}
+      ]
+    },
+    {
+      "assumptions": ["Outputs are classically distinguishable and the channel is noiseless for the displayed bound."],
+      "claim_ceiling": "Output information lower bound; not a full memory-capacity theorem.",
+      "domain": "Classical output reconstruction",
+      "equation_id": "UMRL-014",
+      "expression": "B_out>=ceil(log2(|Y|))",
+      "falsifier": "A protocol reconstructs every member of Y with fewer noiseless bits under the same distinguishability assumptions.",
+      "kind": "INFORMATION_LOWER_BOUND",
+      "name": "Distinguishable-output bit bound",
+      "owner_lanes": ["A", "C", "FND/EQN"],
+      "uncertainty_rule": "Noisy or lossy outputs require an explicit coding/error correction bound.",
+      "variables": [
+        {"meaning": "output bits", "symbol": "B_out", "unit_or_type": "bit"},
+        {"meaning": "distinguishable output set", "symbol": "Y", "unit_or_type": "finite set"}
+      ]
+    },
+    {
+      "assumptions": ["A valid composition theorem justifies the chosen component-error aggregation."],
+      "claim_ceiling": "Upper-bound ledger, not a measured hardware error without measurements.",
+      "domain": "Algorithm, synthesis, input, implementation, and sampling error",
+      "equation_id": "UMRL-015",
+      "expression": "epsilon_total<=epsilon_model+epsilon_algorithm+epsilon_synthesis+epsilon_input+epsilon_implementation+epsilon_sampling",
+      "falsifier": "The required composition theorem does not apply or an error component is omitted.",
+      "kind": "ERROR_BUDGET_BOUND",
+      "name": "End-to-end error ledger",
+      "owner_lanes": ["A", "B", "C", "D", "F", "QOS/QSVT"],
+      "uncertainty_rule": "Dependence and coherent error require a justified non-additive bound when applicable.",
+      "variables": [
+        {"meaning": "total output error bound", "symbol": "epsilon_total", "unit_or_type": "contract metric"},
+        {"meaning": "component error", "symbol": "epsilon_component", "unit_or_type": "same metric or proved compatible norm"}
+      ]
+    },
+    {
+      "assumptions": ["Polynomial parity, domain, norm, and target function are explicit."],
+      "claim_ceiling": "Polynomial certificate only; not phase synthesis, provider transpilation, or hardware execution.",
+      "domain": "QSP/QSVT candidate polynomials",
+      "equation_id": "UMRL-016",
+      "expression": "sup_[−1,1]|P_d|<=1 AND sup_D|P_d-f|<=epsilon",
+      "falsifier": "Exact or certified evaluation violates boundedness or approximation tolerance.",
+      "kind": "POLYNOMIAL_CERTIFICATE",
+      "name": "QSVT bounded approximation",
+      "owner_lanes": ["A", "FND/EQN", "QOS/QSVT"],
+      "uncertainty_rule": "Use certified arithmetic or an explicit grid-to-continuum bound.",
+      "variables": [
+        {"meaning": "degree-d polynomial", "symbol": "P_d", "unit_or_type": "real polynomial"},
+        {"meaning": "target function", "symbol": "f", "unit_or_type": "real function"},
+        {"meaning": "approximation tolerance", "symbol": "epsilon", "unit_or_type": "dimensionless or target-function unit"}
+      ]
+    },
+    {
+      "assumptions": ["Device requirements, material lot, process settings, measurement method, and controls are frozen."],
+      "claim_ceiling": "Qualification and yield for the sampled process distribution only.",
+      "domain": "Device-material-factory chain",
+      "equation_id": "UMRL-017",
+      "expression": "Q_D=1[q(m_E,z_G) succeeds r_D]; Y_G=Pr(q(m_E,z_G) succeeds r_D)",
+      "falsifier": "Qualified metrics fail the requirement vector or reproduced yield falls outside the stated interval.",
+      "kind": "QUALIFICATION_AND_YIELD_MODEL",
+      "name": "Device qualification and process yield",
+      "owner_lanes": ["D", "E", "F", "G"],
+      "uncertainty_rule": "Report lot, metrology, calibration, sampling, and process-drift uncertainty.",
+      "variables": [
+        {"meaning": "device requirement vector", "symbol": "r_D", "unit_or_type": "typed metric vector"},
+        {"meaning": "measured material properties", "symbol": "m_E", "unit_or_type": "typed property vector"},
+        {"meaning": "process settings", "symbol": "z_G", "unit_or_type": "typed process vector"},
+        {"meaning": "qualified yield", "symbol": "Y_G", "unit_or_type": "probability"}
+      ]
+    },
+    {
+      "assumptions": ["All numerator terms and site count share one production boundary; yield is measured."],
+      "claim_ceiling": "Modeled or measured qualified-device cost according to the evidence type of every input.",
+      "domain": "Factory economics",
+      "equation_id": "UMRL-018",
+      "expression": "C_qualified=(C_wafer+C_process+C_test+C_packaging+C_scrap)/(N_sites Y_G)",
+      "falsifier": "A required cost term, site count, or measured yield is absent or boundary-mismatched.",
+      "kind": "COST_PER_QUALIFIED_DEVICE",
+      "name": "Yield-adjusted device cost",
+      "owner_lanes": ["D", "E", "F", "G", "H"],
+      "uncertainty_rule": "Yield and correlated cost uncertainty propagate to a reported interval; Y_G=0 or null refuses division.",
+      "variables": [
+        {"meaning": "cost per qualified device", "symbol": "C_qualified", "unit_or_type": "currency per qualified device"},
+        {"meaning": "candidate sites", "symbol": "N_sites", "unit_or_type": "count"},
+        {"meaning": "qualified yield", "symbol": "Y_G", "unit_or_type": "probability"}
+      ]
+    },
+    {
+      "assumptions": ["Reference and candidate deliver the same accepted material function."],
+      "claim_ceiling": "Reduction of the named element under one functional-unit contract.",
+      "domain": "Pangola/biomass critical-material strategy",
+      "equation_id": "UMRL-019",
+      "expression": "Delta_M_a=M_a(reference)-M_a(candidate)",
+      "falsifier": "Functional qualification fails or candidate element inventory is not lower.",
+      "kind": "MATERIAL_REDUCTION_IDENTITY",
+      "name": "Element-specific critical-material reduction",
+      "owner_lanes": ["D", "E", "F", "G", "H"],
+      "uncertainty_rule": "Report measurement and inventory bounds separately for each element.",
+      "variables": [
+        {"meaning": "mass reduction of element a", "symbol": "Delta_M_a", "unit_or_type": "kg per accepted functional unit"},
+        {"meaning": "element mass", "symbol": "M_a", "unit_or_type": "kg per accepted functional unit"}
+      ]
+    },
+    {
+      "assumptions": ["System boundary and inventory interval are explicit."],
+      "claim_ceiling": "Mass conservation ledger; it does not prove product identity or performance.",
+      "domain": "Biomass conversion, material processing, and fuel production",
+      "equation_id": "UMRL-020",
+      "expression": "Sum m_in=Sum m_product+Sum m_waste_emission+m_inventory_change",
+      "falsifier": "Measured closure residual exceeds the preregistered uncertainty bound.",
+      "kind": "MASS_BALANCE",
+      "name": "Material conservation boundary",
+      "owner_lanes": ["E", "F", "G", "FND/EQN"],
+      "uncertainty_rule": "Propagate flow-meter, assay, moisture, sampling, and inventory uncertainty into the closure residual.",
+      "variables": [
+        {"meaning": "mass flow or inventory", "symbol": "m", "unit_or_type": "kg"}
+      ]
+    },
+    {
+      "assumptions": ["Product quality is accepted and coproduct credits are nonduplicated."],
+      "claim_ceiling": "Lifecycle cost per accepted delivered energy for the specified pathway.",
+      "domain": "Biomass bio-oil, biofuel, or refinery intermediate",
+      "equation_id": "UMRL-021",
+      "expression": "c_fuel=(C_feed+C_pre+C_conversion+C_upgrade+C_H2_catalyst+C_utility+C_capital+C_logistics+C_finance-C_coproduct)/(m_accepted H_LHV)",
+      "falsifier": "A required cost, quality, mass-yield, heating-value, or logistics term is missing or double-counted.",
+      "kind": "LIFECYCLE_ENERGY_COST",
+      "name": "Accepted liquid-energy cost",
+      "owner_lanes": ["E", "F", "H"],
+      "uncertainty_rule": "Report sensitivity and joint interval across yield, quality, uptime, prices, financing, and coproduct allocation.",
+      "variables": [
+        {"meaning": "accepted fuel cost", "symbol": "c_fuel", "unit_or_type": "currency per joule"},
+        {"meaning": "accepted product mass", "symbol": "m_accepted", "unit_or_type": "kg"},
+        {"meaning": "lower heating value", "symbol": "H_LHV", "unit_or_type": "joule per kg"}
+      ]
+    },
+    {
+      "assumptions": ["Power terms use the same plant boundary and time basis."],
+      "claim_ceiling": "Net-power identity; positive net power is not commercial electricity.",
+      "domain": "Fusion power plant",
+      "equation_id": "UMRL-022",
+      "expression": "P_net=eta_conversion P_fusion-P_recirculating-P_auxiliary",
+      "falsifier": "Measured plant-boundary net export disagrees outside uncertainty.",
+      "kind": "POWER_BALANCE",
+      "name": "Fusion net-power balance",
+      "owner_lanes": ["D", "E", "F", "G", "H", "FND/EQN"],
+      "uncertainty_rule": "Carry correlated power measurement and duty-cycle uncertainty.",
+      "variables": [
+        {"meaning": "net exported power", "symbol": "P_net", "unit_or_type": "watt"},
+        {"meaning": "fusion thermal power", "symbol": "P_fusion", "unit_or_type": "watt"},
+        {"meaning": "conversion efficiency", "symbol": "eta_conversion", "unit_or_type": "dimensionless"}
+      ]
+    },
+    {
+      "assumptions": ["All costs and net delivered energy use one discount convention and plant boundary."],
+      "claim_ceiling": "Scenario or observed net LCOE according to input evidence; not a commercial result from roadmap inputs.",
+      "domain": "Fusion delivered-electricity economics",
+      "equation_id": "UMRL-023",
+      "expression": "LCOE_net=PV(CAPEX+OPEX+fuel+replacement+decommission)/PV(E_net_delivered)",
+      "falsifier": "A lifecycle cost, downtime, replacement, decommissioning, recirculating-power, or financing term is omitted.",
+      "kind": "DISCOUNTED_LIFECYCLE_COST",
+      "name": "Fusion net delivered LCOE",
+      "owner_lanes": ["E", "F", "G", "H"],
+      "uncertainty_rule": "Report scenario distribution over construction, capacity factor, component life, costs, and discount rate.",
+      "variables": [
+        {"meaning": "net delivered electricity cost", "symbol": "LCOE_net", "unit_or_type": "currency per joule or MWh"},
+        {"meaning": "discount rate", "symbol": "r", "unit_or_type": "per year"},
+        {"meaning": "net delivered energy", "symbol": "E_net_delivered", "unit_or_type": "joule or MWh"}
+      ]
+    },
+    {
+      "assumptions": ["Debt balance, fees, rate convention, and time base are explicit."],
+      "claim_ceiling": "Absolute financing expense; no automatic rate, WACC, or policy-rate reduction.",
+      "domain": "R&D, plant, factory, and infrastructure financing",
+      "equation_id": "UMRL-024",
+      "expression": "I_absolute=Integral_0^T r(t)D(t)dt+F_fees",
+      "falsifier": "Loan cash flows under the same terms do not reproduce the integral/accounting schedule.",
+      "kind": "FINANCE_IDENTITY",
+      "name": "Absolute interest and fee burden",
+      "owner_lanes": ["E", "F", "G", "H"],
+      "uncertainty_rule": "Separate fixed-term principal/duration effects from uncertain market-rate and risk-premium effects.",
+      "variables": [
+        {"meaning": "absolute financing burden", "symbol": "I_absolute", "unit_or_type": "currency"},
+        {"meaning": "debt balance", "symbol": "D(t)", "unit_or_type": "currency"},
+        {"meaning": "contractual rate", "symbol": "r(t)", "unit_or_type": "per unit time"}
+      ]
+    },
+    {
+      "assumptions": ["Source label, observations, and controls are preregistered; scorer is blinded."],
+      "claim_ceiling": "Conditional association test only; rejecting H0 does not identify a spiritual or paranormal cause.",
+      "domain": "SCM measurement/information protocol",
+      "equation_id": "UMRL-025",
+      "expression": "H0:I(S;Y|X)=0 versus H1:I(S;Y|X)>0",
+      "falsifier": "Leakage, multiplicity, calibration failure, protocol drift, or independent non-replication invalidates attribution.",
+      "kind": "PREREGISTERED_NULL_TEST",
+      "name": "SCM conditional-information null",
+      "owner_lanes": ["A", "C", "D", "F", "SCM"],
+      "uncertainty_rule": "Predefine estimator, null distribution, multiplicity correction, power, and confidence interval.",
+      "variables": [
+        {"meaning": "source label", "symbol": "S", "unit_or_type": "random variable"},
+        {"meaning": "blinded observation", "symbol": "Y", "unit_or_type": "random variable"},
+        {"meaning": "controls", "symbol": "X", "unit_or_type": "random vector"},
+        {"meaning": "conditional mutual information", "symbol": "I(S;Y|X)", "unit_or_type": "bit or nat"}
+      ]
+    },
+    {
+      "assumptions": ["Fraction f is the only accelerable cost share and speedup a adds no new overhead."],
+      "claim_ceiling": "Optimistic upper bound; real end-to-end AI cost advantage can only be lower unless the model changes.",
+      "domain": "AI training and service cost compression",
+      "equation_id": "UMRL-026",
+      "expression": "G_total<=1/((1-f)+f/a)",
+      "falsifier": "A claimed advantage exceeds the bound under the stated cost decomposition without changing assumptions.",
+      "kind": "AMDAHL_COST_BOUND",
+      "name": "Residual-cost compression bound",
+      "owner_lanes": ["A", "C", "F", "AI-COST"],
+      "uncertainty_rule": "Use conservative intervals for f and a and separately add new candidate overheads.",
+      "variables": [
+        {"meaning": "total cost advantage", "symbol": "G_total", "unit_or_type": "dimensionless ratio"},
+        {"meaning": "accelerable baseline fraction", "symbol": "f", "unit_or_type": "dimensionless fraction"},
+        {"meaning": "local acceleration", "symbol": "a", "unit_or_type": "dimensionless ratio"}
+      ]
+    },
+    {
+      "assumptions": ["Every candidate records every tuple field; absent fields remain explicit null blockers."],
+      "claim_ceiling": "Equation-hypothesis specification only.",
+      "domain": "New mathematics, effective equations, and physical-theory candidates",
+      "equation_id": "UMRL-027",
+      "expression": "h=(F,Theta,D,A,C,L,O,Falsifiers,Provenance)",
+      "falsifier": "The candidate lacks a domain, assumption, constraint, limiting case, discriminating observable, falsifier, or provenance path.",
+      "kind": "HYPOTHESIS_TUPLE",
+      "name": "Equation hypothesis contract",
+      "owner_lanes": ["FND/EQN", "A", "C", "D", "E", "QOS/QSVT"],
+      "uncertainty_rule": "Parameter identifiability, predictive uncertainty, and domain uncertainty are separate fields.",
+      "variables": [
+        {"meaning": "candidate symbolic object", "symbol": "F", "unit_or_type": "equation, theorem, algorithm, or model"},
+        {"meaning": "parameters", "symbol": "Theta", "unit_or_type": "typed parameter space"},
+        {"meaning": "candidate hypothesis tuple", "symbol": "h", "unit_or_type": "structured record"}
+      ]
+    },
+    {
+      "assumptions": ["Applicable checks and incumbent model are declared before evaluation."],
+      "claim_ceiling": "Promotion gate; passing is necessary but not automatically sufficient for mission use.",
+      "domain": "AI- or human-generated equation candidates",
+      "equation_id": "UMRL-028",
+      "expression": "Promote(h)=AND(dimensions,symmetry,conservation,causality,limits,heldout,counterexample,independence checks)",
+      "falsifier": "Any mandatory check fails, is untested, or uses non-independent evidence while marked independent.",
+      "kind": "EVIDENCE_CONJUNCTION",
+      "name": "Equation promotion predicate",
+      "owner_lanes": ["FND/EQN", "D", "E", "F", "H"],
+      "uncertainty_rule": "Unknown check state is OPEN, never PASS.",
+      "variables": [
+        {"meaning": "promotion predicate", "symbol": "Promote(h)", "unit_or_type": "Boolean"},
+        {"meaning": "mandatory check", "symbol": "Pass_q", "unit_or_type": "Boolean with evidence reference"}
+      ]
+    },
+    {
+      "assumptions": ["Prior, likelihood, candidate protocol, and possible outcomes are specified."],
+      "claim_ceiling": "Research prioritization signal; never spending or funding authorization.",
+      "domain": "Choice among bounded already-authorized research protocols",
+      "equation_id": "UMRL-029",
+      "expression": "EIG(pi)=H[p(theta|D)]-E_Y[H[p(theta|D,Y_pi)]]",
+      "falsifier": "Posterior calculation, prior, or outcome model is unreproducible or decision-sensitive assumptions are hidden.",
+      "kind": "EXPECTED_INFORMATION_GAIN",
+      "name": "Decisive-information value",
+      "owner_lanes": ["F", "H", "FND/EQN"],
+      "uncertainty_rule": "Report sensitivity to prior, likelihood, and protocol cost/risk models.",
+      "variables": [
+        {"meaning": "expected information gain", "symbol": "EIG", "unit_or_type": "bit or nat"},
+        {"meaning": "research protocol", "symbol": "pi", "unit_or_type": "protocol"},
+        {"meaning": "entropy", "symbol": "H", "unit_or_type": "bit or nat"}
+      ]
+    },
+    {
+      "assumptions": ["Canonical goal set, uncertainty sets, evidence predicates, provenance predicates, and non-claim predicates are complete and versioned."],
+      "claim_ceiling": "Project mission closure predicate; it is open until every conjunct has qualifying evidence.",
+      "domain": "All canonical UQPU goals",
+      "equation_id": "UMRL-030",
+      "expression": "UMCE(x,Gamma)=AND_g([inf_omega Delta_g(x,omega)>=0] AND E_g(Gamma) AND P_g(Gamma) AND N_g(Gamma))",
+      "falsifier": "Any canonical goal is omitted or any goal margin/evidence/provenance/non-claim conjunct fails.",
+      "kind": "MISSION_CLOSURE_CONJUNCTION",
+      "name": "UQPU Mission Closure Equation",
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "FND/EQN", "SCM", "AI-COST", "QOS/QSVT"],
+      "uncertainty_rule": "Use conservative simultaneous bounds; no weighted compensation between goals.",
+      "variables": [
+        {"meaning": "mission closure", "symbol": "UMCE", "unit_or_type": "Boolean"},
+        {"meaning": "goal-specific robust margin", "symbol": "Delta_g", "unit_or_type": "normalized dimensionless margin"},
+        {"meaning": "goal evidence predicate", "symbol": "E_g", "unit_or_type": "Boolean"}
+      ]
+    }
+  ],
+  "goal_contracts": [
+    {
+      "decision_predicate": "Every frozen workload family passes UMRL-005 under the same application-visible contract.",
+      "equation_ids": ["UMRL-004", "UMRL-005", "UMRL-012", "UMRL-015"],
+      "evidence_minimum": "WORKLOAD_SPECIFIC_MEASUREMENT",
+      "goal_id": "GOAL-UQPU-FUNCTIONAL-COVERAGE",
+      "non_claims": ["Compilation or simulation alone is not broad functional replacement."],
+      "owner_lanes": ["A", "B", "C", "F", "QOS/QSVT"],
+      "required_observables": ["output semantics", "quality", "latency", "throughput", "failure rate", "full dependency closure"],
+      "status": "OPEN",
+      "title": "GPU/CPU/NPU workload-family functional coverage",
+      "uncertainty_rule": "Per-workload simultaneous quality and performance bounds"
+    },
+    {
+      "decision_predicate": "UMRL-011 is reported componentwise and UMRL-012 passes for each claimed provider stage.",
+      "equation_ids": ["UMRL-011", "UMRL-012"],
+      "evidence_minimum": "PROVIDER_STAGE_SPECIFIC",
+      "goal_id": "GOAL-CLOUD-PORTABILITY",
+      "non_claims": ["Provider discovery, dry run, simulation, and real-QPU validation are not interchangeable."],
+      "owner_lanes": ["A", "B", "F"],
+      "required_observables": ["dated provider inventory", "adapter version", "request/receipt", "normalized output", "billing provenance"],
+      "status": "OPEN",
+      "title": "Broad practical quantum-cloud portability",
+      "uncertainty_rule": "Date-stamped inventory completeness and per-provider execution uncertainty"
+    },
+    {
+      "decision_predicate": "UMRL-013 passes and every required memory/storage coordinate in UMRL-008 is measured or explicitly semantically eliminated.",
+      "equation_ids": ["UMRL-008", "UMRL-013", "UMRL-014"],
+      "evidence_minimum": "APPLICATION_VISIBLE_MEASUREMENT",
+      "goal_id": "GOAL-MEMORY-STATE-STORAGE",
+      "non_claims": ["Hilbert-space dimension is not readable RAM, VRAM, HBM, or disk capacity."],
+      "owner_lanes": ["A", "C", "F", "FND/EQN"],
+      "required_observables": ["capacity", "bandwidth", "latency", "access semantics", "retention", "persistence", "durability", "recovery", "output bits"],
+      "status": "OPEN",
+      "title": "Memory/state/storage functional replacement or semantic elimination",
+      "uncertainty_rule": "Coordinate-wise lower bounds with explicit noisy-output correction"
+    },
+    {
+      "decision_predicate": "Lower confidence bound of UMRL-009 is at least 100 with complete matched ledgers.",
+      "equation_ids": ["UMRL-002", "UMRL-003", "UMRL-006", "UMRL-007", "UMRL-009"],
+      "evidence_minimum": "MATCHED_COMMERCIAL_OR_MEASURED_LIFECYCLE_EVIDENCE",
+      "goal_id": "GOAL-COST-100X",
+      "non_claims": ["Tariffs, asymptotic complexity, or model-only estimates cannot close this goal."],
+      "owner_lanes": ["A", "B", "C", "F", "H", "AI-COST"],
+      "required_observables": ["accepted outputs", "actual bill or amortized cost", "host", "queue", "transfer", "storage", "retry", "mitigation", "energy", "cooling", "labor", "capital"],
+      "status": "OPEN",
+      "title": "At least 100x lower cost per accepted useful task",
+      "uncertainty_rule": "One-sided lower confidence bound on matched cost ratio"
+    },
+    {
+      "decision_predicate": "Lower confidence bound of UMRL-009 is at least 100,000,000 with complete matched ledgers.",
+      "equation_ids": ["UMRL-002", "UMRL-003", "UMRL-006", "UMRL-007", "UMRL-009"],
+      "evidence_minimum": "MATCHED_COMMERCIAL_OR_MEASURED_LIFECYCLE_EVIDENCE",
+      "goal_id": "GOAL-COST-1E8X",
+      "non_claims": ["This is a moonshot target, not a present capability claim."],
+      "owner_lanes": ["A", "B", "C", "F", "H", "AI-COST"],
+      "required_observables": ["same as GOAL-COST-100X", "workload-specific 1e8 threshold"],
+      "status": "OPEN",
+      "title": "At least 100,000,000x lower cost per accepted useful task",
+      "uncertainty_rule": "One-sided lower confidence bound on matched cost ratio"
+    },
+    {
+      "decision_predicate": "One physically closed UQPU has a simultaneous lower bound N_eq>=1e8 for GPU service under UMRL-008.",
+      "equation_ids": ["UMRL-002", "UMRL-005", "UMRL-008"],
+      "evidence_minimum": "MEASURED_END_TO_END_SYSTEM",
+      "goal_id": "GOAL-REPLACE-1E8-GPU",
+      "non_claims": ["Qubit count, FLOP analogy, or one kernel does not establish GPU-fleet replacement."],
+      "owner_lanes": ["A", "B", "C", "D", "F", "G", "H"],
+      "required_observables": ["graphics/compute contract", "quality", "throughput", "latency", "memory/data movement", "system count"],
+      "status": "OPEN",
+      "title": "One UQPU versus approximately 100,000,000 GPUs",
+      "uncertainty_rule": "Simultaneous bottleneck lower bound"
+    },
+    {
+      "decision_predicate": "One physically closed UQPU has a simultaneous lower bound N_eq>=1e8 for CPU service under UMRL-008.",
+      "equation_ids": ["UMRL-002", "UMRL-005", "UMRL-008"],
+      "evidence_minimum": "MEASURED_END_TO_END_SYSTEM",
+      "goal_id": "GOAL-REPLACE-1E8-CPU",
+      "non_claims": ["A narrow parallel kernel does not establish general CPU replacement."],
+      "owner_lanes": ["A", "B", "C", "D", "F", "G", "H"],
+      "required_observables": ["general-compute contract", "correctness", "throughput", "latency", "fallback coverage", "system count"],
+      "status": "OPEN",
+      "title": "One UQPU versus approximately 100,000,000 CPUs",
+      "uncertainty_rule": "Simultaneous bottleneck lower bound"
+    },
+    {
+      "decision_predicate": "One physically closed UQPU has a simultaneous lower bound N_eq>=1e8 for NPU application service under UMRL-008.",
+      "equation_ids": ["UMRL-002", "UMRL-005", "UMRL-008", "UMRL-026"],
+      "evidence_minimum": "MEASURED_END_TO_END_AI_SYSTEM",
+      "goal_id": "GOAL-REPLACE-1E8-NPU",
+      "non_claims": ["Headline TOPS is not an NPU-equivalence contract."],
+      "owner_lanes": ["A", "B", "C", "F", "AI-COST"],
+      "required_observables": ["model/checkpoint", "precision", "task quality", "batch/shape", "latency", "throughput", "pre/postprocessing", "system count"],
+      "status": "OPEN",
+      "title": "One UQPU versus approximately 100,000,000 NPUs",
+      "uncertainty_rule": "Joint application-quality and service-capacity lower bound"
+    },
+    {
+      "decision_predicate": "One physically closed UQPU has N_eq>=1e8 for a frozen RAM service vector under UMRL-008 and passes UMRL-013.",
+      "equation_ids": ["UMRL-002", "UMRL-008", "UMRL-013", "UMRL-014"],
+      "evidence_minimum": "MEASURED_MEMORY_SERVICE",
+      "goal_id": "GOAL-REPLACE-1E8-RAM",
+      "non_claims": ["Unmeasurable amplitudes are not RAM bytes."],
+      "owner_lanes": ["A", "C", "F", "FND/EQN"],
+      "required_observables": ["application-visible capacity", "random access", "bandwidth", "latency", "retention", "error/recovery", "system count"],
+      "status": "OPEN",
+      "title": "One UQPU versus approximately 100,000,000 RAM units",
+      "uncertainty_rule": "Coordinate-wise service lower bound"
+    },
+    {
+      "decision_predicate": "One physically closed UQPU has N_eq>=1e8 for a frozen accelerator-memory service vector under UMRL-008 and passes UMRL-013.",
+      "equation_ids": ["UMRL-002", "UMRL-008", "UMRL-013", "UMRL-014"],
+      "evidence_minimum": "MEASURED_ACCELERATOR_MEMORY_SERVICE",
+      "goal_id": "GOAL-REPLACE-1E8-VRAM-HBM",
+      "non_claims": ["Avoided classical intermediates count only for the specific accepted application."],
+      "owner_lanes": ["A", "C", "F", "AI-COST"],
+      "required_observables": ["working-set semantics", "capacity", "bandwidth", "latency", "data movement", "application output", "system count"],
+      "status": "OPEN",
+      "title": "One UQPU versus approximately 100,000,000 VRAM/HBM units",
+      "uncertainty_rule": "Coordinate-wise service lower bound"
+    },
+    {
+      "decision_predicate": "One physically closed UQPU has N_eq>=1e8 for a frozen persistent-storage service vector under UMRL-008 and passes UMRL-013.",
+      "equation_ids": ["UMRL-002", "UMRL-008", "UMRL-013", "UMRL-014"],
+      "evidence_minimum": "MEASURED_PERSISTENT_STORAGE_SERVICE",
+      "goal_id": "GOAL-REPLACE-1E8-STORAGE",
+      "non_claims": ["Transient quantum state is not persistent storage."],
+      "owner_lanes": ["A", "C", "F", "G"],
+      "required_observables": ["persistent capacity", "read/write semantics", "bandwidth", "latency", "durability", "retention", "recovery", "system count"],
+      "status": "OPEN",
+      "title": "One UQPU versus approximately 100,000,000 persistent-storage units",
+      "uncertainty_rule": "Coordinate-wise service and durability lower bound"
+    },
+    {
+      "decision_predicate": "Every conjunct of UMRL-010 passes with all essential dependencies physically inside the declared phone boundary.",
+      "equation_ids": ["UMRL-002", "UMRL-003", "UMRL-005", "UMRL-010", "UMRL-030"],
+      "evidence_minimum": "INTEGRATED_PHYSICAL_PROTOTYPE_AND_LIFECYCLE_EVIDENCE",
+      "goal_id": "GOAL-DATACENTER-TO-PHONE",
+      "non_claims": ["A handset terminal backed by remote infrastructure does not pass."],
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "FND/EQN", "AI-COST", "QOS/QSVT"],
+      "required_observables": ["frozen service portfolio", "volume", "mass", "price", "power", "thermal", "reliability", "external-dependency closure"],
+      "status": "OPEN",
+      "title": "Extreme data-center-scale useful capability in one affordable phone-class device",
+      "uncertainty_rule": "Simultaneous mission-wide conservative bounds"
+    },
+    {
+      "decision_predicate": "UMRL-017 passes for the requirement vector with traceable lot, calibration, custody, and matched control.",
+      "equation_ids": ["UMRL-004", "UMRL-005", "UMRL-017"],
+      "evidence_minimum": "PHYSICAL_EXPERIMENT",
+      "goal_id": "GOAL-DEVICE-PRIMITIVE",
+      "non_claims": ["A published third-party effect is not a project device reproduction."],
+      "owner_lanes": ["D", "E", "F", "G", "FND/EQN"],
+      "required_observables": ["device metrics", "calibration", "control", "lifetime", "error", "readout", "operating resources"],
+      "status": "OPEN",
+      "title": "Qualified quantum/photonic/semiconductor device primitive",
+      "uncertainty_rule": "Metrology, drift, sample, lot, and control uncertainty"
+    },
+    {
+      "decision_predicate": "UMRL-017 yield and UMRL-018 cost pass under a documented reproducible process window.",
+      "equation_ids": ["UMRL-002", "UMRL-003", "UMRL-017", "UMRL-018"],
+      "evidence_minimum": "MEASURED_FACTORY_OR_PILOT_PROCESS",
+      "goal_id": "GOAL-MANUFACTURING",
+      "non_claims": ["A process roadmap or single good die is not manufacturability."],
+      "owner_lanes": ["D", "E", "F", "G", "H"],
+      "required_observables": ["process window", "metrology", "yield", "reliability", "throughput", "scrap", "packaging", "qualified cost"],
+      "status": "OPEN",
+      "title": "Least-cost manufacturable device/factory route",
+      "uncertainty_rule": "Lot-to-lot yield and cost distribution"
+    },
+    {
+      "decision_predicate": "Functional margin passes, UMRL-019 shows reduction, UMRL-020 closes, and lifecycle cost is competitive.",
+      "equation_ids": ["UMRL-004", "UMRL-005", "UMRL-019", "UMRL-020"],
+      "evidence_minimum": "PHYSICAL_MATERIAL_QUALIFICATION",
+      "goal_id": "GOAL-PANGOLA-MATERIAL",
+      "non_claims": ["Biomass carbon does not create unfed metal or rare-earth atoms."],
+      "owner_lanes": ["D", "E", "F", "G", "H"],
+      "required_observables": ["feedstock identity", "composition", "process yield", "functional properties", "critical-element inventory", "lifetime", "cost"],
+      "status": "OPEN",
+      "title": "Pangola/biomass functional material substitution, minimization, recovery, or redesign",
+      "uncertainty_rule": "Material-property, mass-balance, durability, and lifecycle-cost uncertainty"
+    },
+    {
+      "decision_predicate": "Accepted product quality passes and the conservative interval for UMRL-021 beats the competitive delivered-energy reference.",
+      "equation_ids": ["UMRL-003", "UMRL-005", "UMRL-020", "UMRL-021"],
+      "evidence_minimum": "PILOT_OR_COMMERCIAL_MEASUREMENT",
+      "goal_id": "GOAL-BIO-OIL",
+      "non_claims": ["Crude liquid volume is not saleable fuel or delivered energy."],
+      "owner_lanes": ["E", "F", "G", "H"],
+      "required_observables": ["feedstock moisture", "mass yield", "product assay", "LHV", "upgrading", "hydrogen", "utilities", "CAPEX/OPEX", "uptime", "logistics", "finance"],
+      "status": "OPEN",
+      "title": "Ultra-low-cost accepted biomass liquid-fuel or refinery-intermediate service",
+      "uncertainty_rule": "Joint process-yield, quality, price, uptime, and finance distribution"
+    },
+    {
+      "decision_predicate": "UMRL-022 is net positive and conservative UMRL-023 is competitive for reliable delivered electricity.",
+      "equation_ids": ["UMRL-003", "UMRL-017", "UMRL-022", "UMRL-023"],
+      "evidence_minimum": "INTEGRATED_PLANT_MEASUREMENT_FOR_COMMERCIAL_CLAIM",
+      "goal_id": "GOAL-FUSION-ELECTRICITY",
+      "non_claims": ["Ignition, plasma gain, or gross thermal output is not cheap net electricity."],
+      "owner_lanes": ["D", "E", "F", "G", "H", "FND/EQN"],
+      "required_observables": ["fusion power", "recirculating power", "capacity factor", "component life", "replacement", "net export", "CAPEX/OPEX", "finance", "decommissioning"],
+      "status": "OPEN",
+      "title": "Ultra-low-cost reliable net fusion electricity",
+      "uncertainty_rule": "Plant-wide correlated physics, reliability, schedule, and cost uncertainty"
+    },
+    {
+      "decision_predicate": "UMRL-024 falls through observed principal or duration changes; any rate/WACC change has separate evidence.",
+      "equation_ids": ["UMRL-003", "UMRL-024", "UMRL-029"],
+      "evidence_minimum": "FINANCE_CONTRACT_OR_AUDITED_CASH_FLOW",
+      "goal_id": "GOAL-FINANCE-COMPRESSION",
+      "non_claims": ["Cheaper technology does not automatically reduce policy rates or WACC."],
+      "owner_lanes": ["E", "F", "G", "H"],
+      "required_observables": ["financed principal", "debt schedule", "rate", "fees", "duration", "cash flow", "risk premium evidence"],
+      "status": "OPEN",
+      "title": "Interest-cost and R&D-finance compression",
+      "uncertainty_rule": "Separate contractual cash-flow uncertainty from market-rate scenarios"
+    },
+    {
+      "decision_predicate": "A candidate satisfies UMRL-027 and every applicable UMRL-028 conjunct with independent evidence before mission use.",
+      "equation_ids": ["UMRL-001", "UMRL-027", "UMRL-028", "UMRL-030"],
+      "evidence_minimum": "CANDIDATE_SPECIFICATION_THEN_INDEPENDENT_PROOF_OR_EXPERIMENT",
+      "goal_id": "GOAL-NEW-EQUATIONS",
+      "non_claims": ["UQPU-UMRL itself is not a physical law and no candidate is promoted by elegance or fit alone."],
+      "owner_lanes": ["FND/EQN", "A", "C", "D", "E", "F", "H", "QOS/QSVT"],
+      "required_observables": ["incumbent model", "symbolic object", "units", "domain", "assumptions", "constraints", "limits", "held-out prediction", "counterexamples", "falsifier", "independent evidence"],
+      "status": "OPEN",
+      "title": "Discover, test, and retain useful new mathematical equations or structures",
+      "uncertainty_rule": "Predictive, parameter, domain, and model-selection uncertainty are separate"
+    },
+    {
+      "decision_predicate": "Preregistered UMRL-025 protocol survives leakage, null, multiplicity, calibration, and independent-replication gates.",
+      "equation_ids": ["UMRL-001", "UMRL-025", "UMRL-028"],
+      "evidence_minimum": "INDEPENDENT_BLINDED_REPLICATION",
+      "goal_id": "GOAL-SCM",
+      "non_claims": ["Association is not source attribution; fiction is not empirical evidence."],
+      "owner_lanes": ["A", "C", "D", "F", "SCM"],
+      "required_observables": ["blinded observations", "controls", "calibration", "leakage audit", "frozen score", "effect interval", "replication"],
+      "supplemental_equation_ids": ["SCM-MATH-001", "SCM-MATH-002", "SCM-MATH-003", "SCM-MATH-004", "SCM-MATH-005", "SCM-MATH-006", "SCM-MATH-007", "SCM-MATH-008", "SCM-MATH-009", "SCM-MATH-010", "SCM-MATH-011", "SCM-MATH-012", "SCM-MATH-013", "SCM-MATH-014", "SCM-MATH-015", "SCM-MATH-016", "SCM-MATH-017", "SCM-MATH-018", "SCM-MATH-019"],
+      "status": "OPEN",
+      "title": "SCM measurement/information research with strict source boundary",
+      "uncertainty_rule": "Preregistered null distribution, power, multiplicity, and effect interval"
+    },
+    {
+      "decision_predicate": "Frozen AI task quality passes and measured UMRL-007/009 results respect the UMRL-026 residual-cost bound.",
+      "equation_ids": ["UMRL-004", "UMRL-005", "UMRL-007", "UMRL-009", "UMRL-026"],
+      "evidence_minimum": "MEASURED_END_TO_END_AI_WORKLOAD",
+      "goal_id": "GOAL-AI-COST",
+      "non_claims": ["Toy-model quality or model-only energy is not frontier-AI cost compression."],
+      "owner_lanes": ["A", "B", "C", "F", "AI-COST"],
+      "required_observables": ["dataset hash", "model hash", "quality", "training/inference time", "accepted outputs", "energy", "complete cost", "residual stack"],
+      "status": "OPEN",
+      "title": "Radical AI training/service cost compression",
+      "uncertainty_rule": "Held-out quality and complete lifecycle resource intervals"
+    },
+    {
+      "decision_predicate": "UMRL-016 certificate, phase synthesis, independent reconstruction, UMRL-015 budget, provider transpile receipt, and hardware result all pass for any hardware claim.",
+      "equation_ids": ["UMRL-001", "UMRL-015", "UMRL-016", "UMRL-028"],
+      "evidence_minimum": "CERTIFICATE_PLUS_STAGE_SPECIFIC_EXECUTION_EVIDENCE",
+      "goal_id": "GOAL-QOS-QSVT",
+      "non_claims": ["A bounded polynomial or parser round trip is not provider transpilation or hardware execution."],
+      "owner_lanes": ["A", "B", "F", "FND/EQN", "QOS/QSVT"],
+      "required_observables": ["polynomial coefficients", "boundedness", "approximation error", "phase vector", "reconstruction", "resource count", "transpile receipt", "hardware output"],
+      "status": "OPEN",
+      "title": "Certified QOS/QSVT synthesis, reconstruction, resources, and execution",
+      "uncertainty_rule": "Certified analytic/numeric bounds plus execution uncertainty"
+    },
+    {
+      "decision_predicate": "Every canonical goal contract is present and every UMRL-030 conjunct passes without cross-goal compensation.",
+      "equation_ids": ["UMRL-001", "UMRL-002", "UMRL-030"],
+      "evidence_minimum": "GOAL_SPECIFIC_CONJUNCTION",
+      "goal_id": "GOAL-ALL-MISSION-CLOSURE",
+      "non_claims": ["Progress in one lane cannot cancel a failed gate in another lane."],
+      "owner_lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "FND/EQN", "SCM", "AI-COST", "QOS/QSVT"],
+      "required_observables": ["all goal margins", "evidence types", "provenance", "uncertainty", "non-claim compliance"],
+      "status": "OPEN",
+      "title": "Conjunctive closure of all project goals",
+      "uncertainty_rule": "Simultaneous conservative goal-wise bounds"
+    }
+  ],
+  "lanes": ["A", "B", "C", "D", "E", "F", "G", "H", "FND/EQN", "SCM", "AI-COST", "QOS/QSVT"],
+  "non_claims": [
+    "This registry is a formal specification, not a discovered physical law.",
+    "All goal states are OPEN; no North-Star, 100x, 100,000,000x, hardware, material, energy, SCM, or commercial target is claimed achieved.",
+    "Equation identifiers express definitions, identities, bounds, hypotheses, or decision predicates with distinct evidence requirements.",
+    "A future equation may extend an incumbent model only after the explicit UMRL-027 and UMRL-028 gates pass."
+  ],
+  "schema": "uqpu-unified-mathematical-goal-registry-v0.1",
+  "service_portfolio": [
+    "graphics and rendering",
+    "ray and path tracing",
+    "AI training",
+    "AI inference",
+    "tensor and matrix computation",
+    "scientific and HPC workloads",
+    "simulation",
+    "signal, image, and video processing",
+    "data analytics",
+    "general-purpose parallel compute",
+    "optimization and search",
+    "arbitrary-kernel fallback"
+  ],
+  "supplemental_registries": [
+    {
+      "artifact": "benchmarks/experiments/cycle006-delta01-scm-lokathibodi-math-registry.json",
+      "document": "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md",
+      "equation_namespace": "SCM-MATH-001..SCM-MATH-019",
+      "purpose": "Detailed fictional mind/mental-factor/Abhidhamma-inspired ontology, Atthan Control, SCM channel, portal, and economy formalism with an empirical no-cast firewall."
+    }
+  ],
+  "status": "FORMAL_SPECIFICATION_V0_1_ALL_GOALS_OPEN",
+  "version": "0.1"
+}

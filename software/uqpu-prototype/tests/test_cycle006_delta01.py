@@ -27,6 +27,7 @@ from uqpu.cycle006_delta01 import (
     parse_zip_central_directory_tail,
     recover_zip_member_from_range,
     summarize_scale_repetitions,
+    validate_unified_math_registries,
     validate_material_registry_v2,
     validate_scm_role_packages,
 )
@@ -36,6 +37,8 @@ ROOT = Path(__file__).resolve().parents[3]
 MANIFEST = ROOT / "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-manifest.json"
 AI_BASELINE = ROOT / "benchmarks/results/batch039-ai-cost-002-classical-baseline.json"
 CYCLE005_PACKET = ROOT / "benchmarks/results/cycle005-delta01-integrated-gates.json"
+UNIFIED_MATH = ROOT / "benchmarks/experiments/cycle006-delta01-unified-math-goal-registry.json"
+SCM_MATH = ROOT / "benchmarks/experiments/cycle006-delta01-scm-lokathibodi-math-registry.json"
 SOURCE = ROOT / "benchmarks/evidence/cycle006-delta01-zenodo-range-metadata.json"
 PACKET = ROOT / "benchmarks/results/cycle006-delta01-integrated-gates.json"
 SCORER = ROOT / "benchmarks/experiments/cycle006-delta01-scm-scorer-package.json"
@@ -53,6 +56,8 @@ class Cycle006Delta01Tests(unittest.TestCase):
         cls.manifest = _load(MANIFEST)
         cls.ai = _load(AI_BASELINE)
         cls.cycle005 = _load(CYCLE005_PACKET)
+        cls.unified_math = _load(UNIFIED_MATH)
+        cls.scm_math = _load(SCM_MATH)
 
     def test_repeated_scale_summary_separates_complete_from_capped_claims(self):
         complete = [
@@ -173,6 +178,35 @@ class Cycle006Delta01Tests(unittest.TestCase):
         self.assertFalse(gate["provider_transpile_receipt_complete"])
         with self.assertRaisesRegex(ValueError, "unsupported QASM"):
             parse_frozen_qasm_subset("OPENQASM 3.0;\nreset q[0];\n")
+
+    def test_unified_math_registries_cover_all_goals_lanes_and_scm_canon(self):
+        result = validate_unified_math_registries(
+            self.unified_math, self.scm_math
+        )
+        self.assertTrue(result["formal_specification_valid"], result["errors"])
+        self.assertEqual(result["umrl_equation_count"], 30)
+        self.assertEqual(result["scm_equation_count"], 19)
+        self.assertEqual(result["goal_count"], 23)
+        self.assertEqual(result["lane_count"], 12)
+        self.assertEqual(result["device_stage_count"], 6)
+        self.assertEqual(result["lokathibodi_volume_count"], 5)
+        self.assertTrue(result["all_goal_states_open"])
+        self.assertFalse(result["empirical_spiritual_claim"])
+        self.assertFalse(result["physical_law_claim"])
+        self.assertEqual(set(result["lane_interfaces"]), {
+            "A", "B", "C", "D", "E", "F", "G", "H",
+            "FND/EQN", "SCM", "AI-COST", "QOS/QSVT",
+        })
+        self.assertIn(
+            "SCM-MATH-019",
+            result["lane_interfaces"]["SCM"]["equation_ids"],
+        )
+
+        broken = deepcopy(self.scm_math)
+        broken["epistemic_firewall"]["real_null"] = "g_SR != 0"
+        rejected = validate_unified_math_registries(self.unified_math, broken)
+        self.assertFalse(rejected["formal_specification_valid"])
+        self.assertIn("scm_epistemic_firewall_missing", rejected["errors"])
 
     def test_committed_cycle006_artifacts_are_hash_bound_and_cover_all_lanes(self):
         expected_hashes = {

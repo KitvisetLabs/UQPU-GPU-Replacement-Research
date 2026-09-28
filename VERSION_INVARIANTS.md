@@ -49,6 +49,7 @@ The repository includes automated policy tests that check permanent mission mark
 | INV-034 | Foundational Physics & Mathematics Deep-Frontier Agenda: research may descend from logic/mathematics through information theory, quantum foundations, QFT/elementary-particle physics and other sciences, then climb to devices/engineering/systems under explicit mechanism, constraints, scaling and falsification gates | Yes |
 | INV-035 | AI-Assisted Physics Equation Discovery: maximize imagination for candidate equations/models while requiring dimensional, symmetry/conservation/causality, held-out-prediction, falsification and independent-evidence gates before physical-law or technology claims | Yes |
 | INV-036 | Difference-to-Technology Particle/Spacetime Principle: systematically search controllable/readable differences across particle, antiparticle, dark-sector, spacetime/gravity and material-defect scales; preserve the Pangola/biomass-carbon -> synthetic-diamond hypothesis under explicit material/device/economic falsifiers | Yes |
+| INV-037 | Unified Mathematical Research Language: every canonical goal has a typed equation/constraint, uncertainty, falsifier, evidence predicate and non-claim boundary; SCM canon mathematics remains distinct from empirical evidence | Yes |
 
 ## INV-028 operational definition
 
@@ -145,3 +146,32 @@ Canonical documents:
 - `research_lanes/E_materials_energy_cooling/PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md`
 
 INV-036 is **ACTIVE PERMANENT RESEARCH / NO PARTICLE-SPACETIME OR PANGOLA-DIAMOND TECHNOLOGY ADVANTAGE YET DEMONSTRATED**.
+
+## INV-037 operational definition — Unified Mathematical Research Language
+
+Every canonical research target must be represented by a versioned mathematical
+object with named variables, units or types, domain, assumptions, constraints,
+uncertainty rule, decision predicate, falsifier, required evidence class,
+provenance, and non-claims. The global mission uses a conjunction of goal gates:
+a strong result in one lane cannot numerically compensate for missing function,
+safety, evidence, provenance, or an open gate in another lane.
+
+The permanent formal interface is
+`00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md`. It includes the
+project-specific UQPU Mission Closure Equation and machine-readable goal/equation
+registries. It is a specification and discovery calculus, not a new physical law
+or proof that any mission target is achievable.
+
+For SCM and *คำภีร์โลกาธิบดี*, INV-037 requires a separately typed fictional
+formalism for `จิต`, `เจตสิก`, Abhidhamma-inspired categories,
+`อาถรรพ์คอนโทรล`, information channels, identity/authentication, portals, and
+inter-realm economics. Religious/philosophical ontology, fictional mechanism,
+contested reports, and physical measurements may inform one another only through
+explicit typed bridges. No fictional equation or narrative success may be cast
+as real evidence; empirical promotion still requires null controls,
+falsification, consent/ethics where applicable, and independent replication.
+
+Every synchronized cycle retains useful intermediate mathematics—including
+definitions, lemmas, certified bounds, counterexamples, nulls, failed equation
+candidates, uncertainty reductions, observables, and protocol improvements—in
+an auditable discovery ledger rather than deleting negative paths.

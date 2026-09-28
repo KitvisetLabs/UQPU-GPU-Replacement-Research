@@ -24,6 +24,8 @@ MANIFEST = ROOT / "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-
 AI_BASELINE = ROOT / "benchmarks/results/batch039-ai-cost-002-classical-baseline.json"
 AI_GENERATOR = PROTOTYPE / "uqpu/ai_training_baseline.py"
 CYCLE005_PACKET = ROOT / "benchmarks/results/cycle005-delta01-integrated-gates.json"
+UNIFIED_MATH = ROOT / "benchmarks/experiments/cycle006-delta01-unified-math-goal-registry.json"
+SCM_MATH = ROOT / "benchmarks/experiments/cycle006-delta01-scm-lokathibodi-math-registry.json"
 SOURCE_OBSERVATIONS = ROOT / "benchmarks/evidence/cycle006-delta01-zenodo-http-observations.json"
 DEFAULT_SOURCE = ROOT / "benchmarks/evidence/cycle006-delta01-zenodo-range-metadata.json"
 DEFAULT_PACKET = ROOT / "benchmarks/results/cycle006-delta01-integrated-gates.json"
@@ -211,6 +213,10 @@ def main() -> int:
         archive_evidence=archive_evidence,
         archive_evidence_sha256=_sha(DEFAULT_SOURCE),
         cycle005_scm=cycle005["lanes"]["SCM"],
+        unified_math_registry=_read(UNIFIED_MATH),
+        unified_math_registry_sha256=_sha(UNIFIED_MATH),
+        scm_math_registry=_read(SCM_MATH),
+        scm_math_registry_sha256=_sha(SCM_MATH),
     )
     _write(args.packet_output, packet)
     _write(args.scorer_output, scorer)

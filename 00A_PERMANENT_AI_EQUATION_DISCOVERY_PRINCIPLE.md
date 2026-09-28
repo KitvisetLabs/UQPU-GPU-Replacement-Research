@@ -23,3 +23,9 @@ AI is permanently assigned to help search literature, generate symbolic candidat
 > **ULTRA IMAGINATION FOR NEW EQUATIONS; ULTRA KNOWLEDGE AND EVIDENCE FOR REAL TECHNOLOGY.**
 
 See `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md` and `docs/BATCH_025_AI_ASSISTED_EQUATION_DISCOVERY.md`.
+
+Project-wide mathematical traceability and the UQPU Mission Closure Equation
+are defined in `00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md`
+(INV-037). The SCM / *คำภีร์โลกาธิบดี* fictional formalism uses the same
+equation-discovery gates and cannot be promoted into empirical physics by
+mathematical notation alone.

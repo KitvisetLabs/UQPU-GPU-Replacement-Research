@@ -36,6 +36,34 @@ This agenda explicitly includes fundamental-particle and QFT research but does *
 
 Canonical detail: `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`, INV-034 and the broader INV-027 open-frontier mandate.
 
+## Permanent Unified Mathematical Language Goal
+
+Every canonical project goal must have a versioned mathematical specification:
+variables, units or types, domain, assumptions, constraints, uncertainty,
+decision predicate, falsifier, evidence requirement, provenance, and explicit
+non-claims. The shared project calculus must cover functional equivalence,
+cloud execution, memory/state/storage semantics, accepted-output economics,
+100x and 100,000,000x targets, data-center-to-phone closure, devices,
+materials, manufacturing, bio-oil, fusion, finance, equation discovery,
+AI-COST, QOS/QSVT, and SCM.
+
+The same goal also provides a rigorous fictional mathematical layer for
+*คำภีร์โลกาธิบดี*, including `จิต`, `เจตสิก`, Abhidhamma-inspired ontology,
+`อาถรรพ์คอนโทรล`, spiritual-communication channels, imaging, authentication,
+portal hypotheses, and inter-realm economics. Fiction/canon mathematics and
+real empirical evidence remain separately typed: mathematical coherence makes
+the story and hypotheses testable but does not establish a spiritual or
+physical phenomenon.
+
+Useful intermediate definitions, lemmas, bounds, counterexamples, nulls,
+failed candidates, observables, and cross-lane interfaces must be retained in
+the discovery ledger even when a headline target remains open.
+
+Canonical detail:
+`00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md`,
+`docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md`,
+and INV-037.
+
 ## Permanent Strategic Pillar — Pangola/Biomass Carbon for Critical-Material Reduction
 
 A second highly visible, cross-cutting objective is to develop **carbon powders, chars and advanced carbon materials from Pangola grass and agricultural residues**, including carbonaceous streams arising from thermochemical conversion and bio-oil production/upgrading/distillation/refining where scientifically applicable.

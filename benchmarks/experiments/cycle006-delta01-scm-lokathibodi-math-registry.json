@@ -1,0 +1,398 @@
+{
+  "canonical_document": "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md",
+  "canon_scope": {
+    "abhidhamma_boundary": "Versioned inspiration/ontology only; no claim of doctrinal completeness or empirical reduction.",
+    "cetasika_representation": "A versioned mental-factor vector whose exact taxonomy must come from an explicit canon table.",
+    "citta_representation": "A versioned mind-event category, not a measured neuron, field, soul, or physical particle.",
+    "lokathibodi_use": "Five-volume mathematical story and fictional-technology consistency system.",
+    "realm_representation": "A labeled canon graph, not measured spacetime coordinates."
+  },
+  "date": "2026-09-28",
+  "device_ladder": [
+    {
+      "dependencies": ["SCM-MATH-011", "SCM-MATH-012"],
+      "device_id": "SCM-1",
+      "fictional_capability": "Calibrated multimodal anomaly detection",
+      "promotion_gate": "Residual survives preregistered ordinary nulls with provenance.",
+      "real_world_status": "PROTOCOL_ONLY_NO_SPIRIT_DETECTION"
+    },
+    {
+      "dependencies": ["SCM-MATH-011", "SCM-MATH-012", "SCM-MATH-016"],
+      "device_id": "SCM-2",
+      "fictional_capability": "Cross-sensor inverse reconstruction with visible uncertainty",
+      "promotion_gate": "Held-out geometry repeats across independent sensors and sites and beats pareidolia/hallucination controls.",
+      "real_world_status": "FICTION_BRIDGE_NO_CROSS_REALM_IMAGE"
+    },
+    {
+      "dependencies": ["SCM-MATH-013", "SCM-MATH-014", "SCM-MATH-015", "SCM-MATH-016"],
+      "device_id": "SCM-3",
+      "fictional_capability": "Authenticated bidirectional symbol/text/audio/video-like communication",
+      "promotion_gate": "Positive lower bound on verified information rate after leakage controls and independent replication.",
+      "real_world_status": "INFORMATION_MODEL_NO_DEMONSTRATED_CHANNEL"
+    },
+    {
+      "dependencies": ["SCM-MATH-017", "SCM-MATH-018"],
+      "device_id": "SCM-4",
+      "fictional_capability": "Realm-state or physical-spacetime transport",
+      "promotion_gate": "Explicit state map, causal law, failure modes, and conservation-accounted independent demonstration.",
+      "real_world_status": "FICTIONAL_NO_PORTAL"
+    },
+    {
+      "dependencies": ["SCM-MATH-015", "SCM-MATH-018", "SCM-MATH-019"],
+      "device_id": "SCM-5",
+      "fictional_capability": "Authenticated inter-realm information services and, only after SCM-4, physical exchange",
+      "promotion_gate": "Identity, consent, scarcity, settlement, anti-replay, jurisdiction, capacity, and conservation all close.",
+      "real_world_status": "FICTIONAL_NO_INTER_REALM_ECONOMY"
+    },
+    {
+      "dependencies": ["SCM-MATH-003", "SCM-MATH-004", "SCM-MATH-005", "SCM-MATH-007", "SCM-MATH-009", "SCM-MATH-010"],
+      "device_id": "ATTHAN-CONTROL",
+      "fictional_capability": "Consent-bounded estimation and navigation of canon mind/mental-factor/realm states",
+      "promotion_gate": "Canon consistency, authority, consent, safety, auditability, and SCM channel gates all close.",
+      "real_world_status": "FICTIONAL_CONTROL_ARCHITECTURE_NO_MIND_OR_SPIRIT_CONTROL"
+    }
+  ],
+  "epistemic_firewall": {
+    "allowed_direction": "Real observations may inspire explicitly labeled fictional interpretations.",
+    "forbidden_cast": "A fictional/canon state or technology cannot be promoted into a real physical measurement or capability without an independently validated bridge.",
+    "real_null": "g_SR = 0",
+    "sorts": ["REAL_EMPIRICAL", "RELIGIOUS_PHILOSOPHICAL", "CONTESTED_REPORT", "FICTION_HYPOTHESIS", "CANON_TECHNOLOGY"]
+  },
+  "equations": [
+    {
+      "assumptions": ["Real and fictional objects have separate types."],
+      "canon_uses": ["Separate lived meaning, doctrine, measurement, and story technology."],
+      "epistemic_layer": "FORMAL_DEFINITION",
+      "equation_id": "SCM-MATH-001",
+      "expression": "R=(X_R,Y_R,I_R); F=(X_F,Y_F,I_F)",
+      "falsifier": "A registry object is used across sorts without a declared bridge and evidence type.",
+      "name": "Two-sorted real/fiction universe",
+      "real_world_status": "TYPE_SYSTEM_ONLY",
+      "variables": [
+        {"meaning": "real empirical system", "symbol": "R", "unit_or_type": "typed structure"},
+        {"meaning": "fiction/canon system", "symbol": "F", "unit_or_type": "typed structure"}
+      ]
+    },
+    {
+      "assumptions": ["Story interpretation and physical measurement are distinct relations."],
+      "canon_uses": ["Permit symbolism without back-projecting fictional success."],
+      "epistemic_layer": "FORMAL_DEFINITION",
+      "equation_id": "SCM-MATH-002",
+      "expression": "J(real):FICTION_INTERPRETATION does_not_imply B(fiction):PHYSICAL_MEASUREMENT",
+      "falsifier": "A fictional fact is cited as empirical evidence without an independently validated physical bridge.",
+      "name": "Epistemic no-cast firewall",
+      "real_world_status": "GOVERNANCE_RULE",
+      "variables": [
+        {"meaning": "story interpretation map", "symbol": "J", "unit_or_type": "typed map"},
+        {"meaning": "candidate physical bridge", "symbol": "B", "unit_or_type": "hypothesis map"}
+      ]
+    },
+    {
+      "assumptions": ["Canon taxonomy is explicit and versioned."],
+      "canon_uses": ["Represent mind event, mental factors, attended object, process position, quality tags, and session identity."],
+      "epistemic_layer": "FICTIONAL_ONTOLOGY",
+      "equation_id": "SCM-MATH-003",
+      "expression": "chi_t=(c_t,z_t,a_t,v_t,q_t,iota_t)",
+      "falsifier": "A required state coordinate is ambiguous, missing, or silently changes meaning.",
+      "name": "Citta-cetasika mind-event state",
+      "real_world_status": "NO_EMPIRICAL_MAPPING",
+      "variables": [
+        {"meaning": "canon mind-event category", "symbol": "c_t", "unit_or_type": "categorical"},
+        {"meaning": "mental-factor vector", "symbol": "z_t", "unit_or_type": "dimensionless vector"},
+        {"meaning": "attended object", "symbol": "a_t", "unit_or_type": "categorical or semantic object"},
+        {"meaning": "process position", "symbol": "v_t", "unit_or_type": "categorical"},
+        {"meaning": "ethical/affective/canon tags", "symbol": "q_t", "unit_or_type": "typed labels"},
+        {"meaning": "protocol/session identity reference", "symbol": "iota_t", "unit_or_type": "identifier"}
+      ]
+    },
+    {
+      "assumptions": ["Required and incompatible mental-factor combinations are encoded in a versioned canon table."],
+      "canon_uses": ["Detect inconsistent character or device-state descriptions."],
+      "epistemic_layer": "FICTIONAL_ONTOLOGY",
+      "equation_id": "SCM-MATH-004",
+      "expression": "A z_t<=b; E z_t=d(c_t); z_t in Z_canon",
+      "falsifier": "A generated state violates a registered compatibility or co-occurrence rule.",
+      "name": "Mental-factor compatibility constraints",
+      "real_world_status": "CANON_CONSISTENCY_ONLY",
+      "variables": [
+        {"meaning": "incompatibility matrix", "symbol": "A", "unit_or_type": "constraint matrix"},
+        {"meaning": "co-occurrence matrix", "symbol": "E", "unit_or_type": "constraint matrix"},
+        {"meaning": "canon-valid state set", "symbol": "Z_canon", "unit_or_type": "set"}
+      ]
+    },
+    {
+      "assumptions": ["State history, controls, perceived objects, realm label, and fictional parameters are declared."],
+      "canon_uses": ["Simulate deterministic or stochastic changes of mind and mental factors."],
+      "epistemic_layer": "FICTIONAL_DYNAMIC_MODEL",
+      "equation_id": "SCM-MATH-005",
+      "expression": "p(chi_(t+1)|chi_(0:t),u_t,o_t,r_t,theta_F)",
+      "falsifier": "Generated transitions contradict registered rules or held-out canon events under the stated model.",
+      "name": "Controlled mind-state transition kernel",
+      "real_world_status": "FICTIONAL_MODEL_NO_MIND_DYNAMICS_CLAIM",
+      "variables": [
+        {"meaning": "control input", "symbol": "u_t", "unit_or_type": "typed action"},
+        {"meaning": "perceived object", "symbol": "o_t", "unit_or_type": "semantic object"},
+        {"meaning": "realm label", "symbol": "r_t", "unit_or_type": "categorical"},
+        {"meaning": "fictional law parameters", "symbol": "theta_F", "unit_or_type": "parameter vector"}
+      ]
+    },
+    {
+      "assumptions": ["A probability distribution over canon states is available."],
+      "canon_uses": ["Measure model uncertainty and how much a permitted input changes predictions."],
+      "epistemic_layer": "FICTIONAL_INFORMATION_MODEL",
+      "equation_id": "SCM-MATH-006",
+      "expression": "H(chi_t)=-Sum_x p_t(x)log p_t(x); I(chi_(t+1);u_t|chi_t)",
+      "falsifier": "Probabilities are unnormalized or the claimed control information vanishes under the frozen distribution.",
+      "name": "Canon-state uncertainty and control information",
+      "real_world_status": "MODEL_METRIC_NOT_SPIRITUAL_ENERGY",
+      "variables": [
+        {"meaning": "state entropy", "symbol": "H", "unit_or_type": "bit or nat"},
+        {"meaning": "conditional mutual information", "symbol": "I", "unit_or_type": "bit or nat"}
+      ]
+    },
+    {
+      "assumptions": ["Realm labels and allowed transitions are versioned canon objects."],
+      "canon_uses": ["Plan narrative/control routes without claiming measured coordinates."],
+      "epistemic_layer": "FICTIONAL_ONTOLOGY",
+      "equation_id": "SCM-MATH-007",
+      "expression": "G_R=(R,E_R,ell,kappa)",
+      "falsifier": "A route uses an unregistered realm or transition without explicitly extending the canon graph.",
+      "name": "Realm classification graph",
+      "real_world_status": "NOT_A_SPACETIME_MAP",
+      "variables": [
+        {"meaning": "realm label set", "symbol": "R", "unit_or_type": "finite set"},
+        {"meaning": "allowed transition edges", "symbol": "E_R", "unit_or_type": "directed edges"},
+        {"meaning": "narrative transition cost", "symbol": "ell", "unit_or_type": "declared story unit"},
+        {"meaning": "transition conditions", "symbol": "kappa", "unit_or_type": "predicates"}
+      ]
+    },
+    {
+      "assumptions": ["Edge costs are nonnegative and path semantics are explicit."],
+      "canon_uses": ["Find a least-cost legal route through the realm graph."],
+      "epistemic_layer": "FICTIONAL_GRAPH_MODEL",
+      "equation_id": "SCM-MATH-008",
+      "expression": "d_R(r_i,r_j)=min_(paths i->j) Sum_e ell(e)",
+      "falsifier": "A shorter valid registered path exists or costs change without a version update.",
+      "name": "Narrative realm-route distance",
+      "real_world_status": "NOT_METERS_FREQUENCY_OR_ENERGY",
+      "variables": [
+        {"meaning": "realm-route distance", "symbol": "d_R", "unit_or_type": "declared narrative/control cost"}
+      ]
+    },
+    {
+      "assumptions": ["State, control, observation, transition, safety, and loss spaces are versioned."],
+      "canon_uses": ["Specify the complete fictional Atthan Control interface."],
+      "epistemic_layer": "FICTIONAL_CONTROL_ARCHITECTURE",
+      "equation_id": "SCM-MATH-009",
+      "expression": "AC=(X_F,U_consent,Y,T,O,S,L)",
+      "falsifier": "A control action bypasses consent, safety, authority, observation, or audit state.",
+      "name": "Consent-bounded Atthan Control system",
+      "real_world_status": "NO_VALIDATED_MIND_OR_SPIRIT_CONTROL",
+      "variables": [
+        {"meaning": "permitted controls", "symbol": "U_consent", "unit_or_type": "action set"},
+        {"meaning": "safety predicate", "symbol": "S", "unit_or_type": "Boolean"},
+        {"meaning": "control loss", "symbol": "L", "unit_or_type": "declared cost"}
+      ]
+    },
+    {
+      "assumptions": ["Only authorized consent-bounded actions enter the policy set; unsafe transitions fail closed."],
+      "canon_uses": ["Optimize a fictional controller while preserving safety and agency."],
+      "epistemic_layer": "FICTIONAL_CONTROL_MODEL",
+      "equation_id": "SCM-MATH-010",
+      "expression": "pi*=argmin_(u in U_consent) E[Sum_t L(chi_t,u_t)+lambda 1[not S(chi_t,u_t)]]",
+      "falsifier": "The policy selects an unauthorized, coercive, unsafe, or unaudited action.",
+      "name": "Fail-closed Atthan Control objective",
+      "real_world_status": "FICTIONAL_POLICY_ONLY",
+      "variables": [
+        {"meaning": "control policy", "symbol": "pi", "unit_or_type": "policy"},
+        {"meaning": "fail-closed safety penalty", "symbol": "lambda", "unit_or_type": "declared cost weight"}
+      ]
+    },
+    {
+      "assumptions": ["Ordinary environmental, human, instrument, and noise terms are modeled before any extra coupling."],
+      "canon_uses": ["Create a falsifiable fictional coupling term without deleting ordinary explanations."],
+      "epistemic_layer": "FICTIONAL_COUPLING_HYPOTHESIS",
+      "equation_id": "SCM-MATH-011",
+      "expression": "Y=H_env[X_env]+H_human[X_human]+H_inst[X_inst]+N+g_SR H_SR[S]",
+      "falsifier": "Residual vanishes with ordinary controls, tracks leakage/drift, or fails independent replication.",
+      "name": "Ordinary-plus-fictional observation model",
+      "real_world_status": "REAL_NULL_G_SR_EQUALS_ZERO",
+      "variables": [
+        {"meaning": "sensor observation", "symbol": "Y", "unit_or_type": "sensor-specific"},
+        {"meaning": "fictional coupling coefficient", "symbol": "g_SR", "unit_or_type": "model-specific"},
+        {"meaning": "candidate fictional source state", "symbol": "S", "unit_or_type": "latent state"}
+      ]
+    },
+    {
+      "assumptions": ["No independently validated nonordinary coupling is currently available."],
+      "canon_uses": ["Make the scientific starting point explicit before an in-world discovery."],
+      "epistemic_layer": "EMPIRICAL_NULL",
+      "equation_id": "SCM-MATH-012",
+      "expression": "H0:g_SR=0",
+      "falsifier": "A preregistered, leakage-controlled, independently replicated discriminating experiment rejects the null with a validated alternative.",
+      "name": "Real-world zero-coupling null",
+      "real_world_status": "ACTIVE_NULL_NO_REJECTION_RECORDED",
+      "variables": [
+        {"meaning": "fictional/candidate coupling coefficient", "symbol": "g_SR", "unit_or_type": "model-specific"}
+      ]
+    },
+    {
+      "assumptions": ["Challenge is unpredictable and committed; response is frozen before reveal; ordinary side information is measured."],
+      "canon_uses": ["Define the information threshold from anomaly to channel."],
+      "epistemic_layer": "INFORMATION_CHANNEL_MODEL",
+      "equation_id": "SCM-MATH-013",
+      "expression": "C_SR=sup_(p(x)) I(X;Y|Z)",
+      "falsifier": "Conditional information returns to zero under isolation, leakage control, or independent hardware/site replication.",
+      "name": "Conditional residual channel capacity",
+      "real_world_status": "NO_DEMONSTRATED_POSITIVE_CAPACITY",
+      "variables": [
+        {"meaning": "committed challenge", "symbol": "X", "unit_or_type": "random symbol"},
+        {"meaning": "frozen decoded response", "symbol": "Y", "unit_or_type": "random symbol"},
+        {"meaning": "ordinary side information", "symbol": "Z", "unit_or_type": "random vector"},
+        {"meaning": "conditional capacity", "symbol": "C_SR", "unit_or_type": "bit per channel use"}
+      ]
+    },
+    {
+      "assumptions": ["Every accepted trial passes preregistered scoring and authentication."],
+      "canon_uses": ["Price communication in verified information rather than dramatic noise."],
+      "epistemic_layer": "INFORMATION_CHANNEL_MODEL",
+      "equation_id": "SCM-MATH-014",
+      "expression": "R_v=T^-1 Sum_i a_i log2(K_i)",
+      "falsifier": "Acceptance changes after reveal, leakage explains responses, or the lower confidence bound is not positive.",
+      "name": "Verified information rate",
+      "real_world_status": "NO_REAL_SCM_RATE_MEASURED",
+      "variables": [
+        {"meaning": "verified rate", "symbol": "R_v", "unit_or_type": "verified bit per second"},
+        {"meaning": "accepted trial indicator", "symbol": "a_i", "unit_or_type": "Boolean"},
+        {"meaning": "challenge alphabet size", "symbol": "K_i", "unit_or_type": "count"},
+        {"meaning": "observation duration", "symbol": "T", "unit_or_type": "second"}
+      ]
+    },
+    {
+      "assumptions": ["Challenges are prospective, independent or dependence-modeled, and alternative identity/null likelihoods are frozen."],
+      "canon_uses": ["Separate protocol authentication from visual/voice resemblance."],
+      "epistemic_layer": "AUTHENTICATION_MODEL",
+      "equation_id": "SCM-MATH-015",
+      "expression": "log BF_j0^(n)=Sum_i log(p(y_i|x_i,H_j,Z_i)/p(y_i|x_i,H0,Z_i))",
+      "falsifier": "Replay, public-information inference, deepfake, post-selection, or model sensitivity accounts for the score.",
+      "name": "Sequential protocol-identity evidence",
+      "real_world_status": "NO_METAPHYSICAL_IDENTITY_CLAIM",
+      "variables": [
+        {"meaning": "Bayes factor", "symbol": "BF_j0", "unit_or_type": "dimensionless"},
+        {"meaning": "identity hypothesis", "symbol": "H_j", "unit_or_type": "statistical hypothesis"},
+        {"meaning": "null identity/channel hypothesis", "symbol": "H0", "unit_or_type": "statistical hypothesis"}
+      ]
+    },
+    {
+      "assumptions": ["Forward model, noise covariance, and regularizer are frozen before target reveal."],
+      "canon_uses": ["Build SCM-2 images and SCM-3C video-like reconstructions with visible uncertainty."],
+      "epistemic_layer": "INVERSE_PROBLEM_MODEL",
+      "equation_id": "SCM-MATH-016",
+      "expression": "s_hat=argmin_s ||y-Hs||_(Sigma^-1)^2+lambda R(s)",
+      "falsifier": "Blind reconstruction fails, alternative regularizers produce incompatible images, or raw-data provenance is lost.",
+      "name": "Provenance-preserving inverse reconstruction",
+      "real_world_status": "RECONSTRUCTION_METHOD_NOT_CROSS_REALM_IMAGE",
+      "variables": [
+        {"meaning": "reconstructed latent state", "symbol": "s_hat", "unit_or_type": "model state"},
+        {"meaning": "forward operator", "symbol": "H", "unit_or_type": "linear or declared nonlinear operator"},
+        {"meaning": "noise covariance", "symbol": "Sigma", "unit_or_type": "sensor-unit squared"},
+        {"meaning": "regularizer", "symbol": "R", "unit_or_type": "declared penalty"}
+      ]
+    },
+    {
+      "assumptions": ["Origin, destination, payload/body state, and bridge state are explicit."],
+      "canon_uses": ["Prevent communication success from silently becoming portal transport."],
+      "epistemic_layer": "FICTIONAL_TRANSPORT_HYPOTHESIS",
+      "equation_id": "SCM-MATH-017",
+      "expression": "P:(r_A,s_A)->(r_B,s_B,b)",
+      "falsifier": "The map cannot specify state recovery, failure, reversibility/erasure, identity, or bridge resources.",
+      "name": "Realm/portal state map",
+      "real_world_status": "NO_DEMONSTRATED_PORTAL",
+      "variables": [
+        {"meaning": "portal map", "symbol": "P", "unit_or_type": "state transformation"},
+        {"meaning": "origin/destination realms", "symbol": "r_A,r_B", "unit_or_type": "canon labels"},
+        {"meaning": "bridge state", "symbol": "b", "unit_or_type": "fictional physical/control state"}
+      ]
+    },
+    {
+      "assumptions": ["Every conserved quantity and uncertainty budget is declared by the in-world theory."],
+      "canon_uses": ["Close matter, energy, charge, momentum, entropy/information, and causal ledgers around a portal."],
+      "epistemic_layer": "FICTIONAL_CONSERVATION_GATE",
+      "equation_id": "SCM-MATH-018",
+      "expression": "Delta Q_A+Delta Q_B+Delta Q_bridge=0 within U_Q",
+      "falsifier": "A declared conserved quantity fails balance outside the uncertainty set.",
+      "name": "Portal conservation ledger",
+      "real_world_status": "FICTIONAL_GATE_PRESENT_PHYSICS_REMAINS_BINDING",
+      "variables": [
+        {"meaning": "conserved quantity", "symbol": "Q", "unit_or_type": "quantity-specific SI unit or bit"},
+        {"meaning": "uncertainty set", "symbol": "U_Q", "unit_or_type": "same as Q"}
+      ]
+    },
+    {
+      "assumptions": ["Asset type, parties, identity, consent, authorization, capacity, and settlement rules are explicit."],
+      "canon_uses": ["Model information services before any conservation-accounted physical trade."],
+      "epistemic_layer": "FICTIONAL_ECONOMIC_PROTOCOL",
+      "equation_id": "SCM-MATH-019",
+      "expression": "Sum_a debit_(k,a)=Sum_a credit_(k,a); settle_k=Auth AND Consent AND NoReplay AND CapacityAvailable",
+      "falsifier": "Ledger imbalance, duplicate settlement, unauthenticated party, absent consent, replay, or unavailable channel capacity.",
+      "name": "Inter-realm double-entry settlement",
+      "real_world_status": "FICTIONAL_NO_INTER_REALM_TRANSACTION",
+      "variables": [
+        {"meaning": "transaction settlement", "symbol": "settle_k", "unit_or_type": "Boolean"},
+        {"meaning": "debit/credit", "symbol": "debit,credit", "unit_or_type": "asset-specific unit"}
+      ]
+    }
+  ],
+  "evidence_class": "FICTIONAL_MATHEMATICAL_ONTOLOGY_AND_EMPIRICAL_PROTOCOL_BOUNDARY_NO_SPIRITUAL_CLAIM",
+  "non_claims": [
+    "No equation in this registry demonstrates spirits, post-mortem consciousness, realms, spiritual communication, mind control, a portal, or an inter-realm economy.",
+    "Citta, cetasika, Abhidhamma-inspired categories, and realm labels are respectful canon/fiction ontology terms here, not measured physical coordinates.",
+    "The real-world null keeps g_SR equal to zero until a preregistered discriminating experiment and independent replication support a validated alternative.",
+    "No human or biological experiment, coercive control, provider job, purchase, fabrication, or funding is authorized."
+  ],
+  "schema": "uqpu-cycle006-scm-lokathibodi-mathematical-formalism-v0.1",
+  "status": "FICTIONAL_FORMALISM_COMPLETE_V0_1_EMPIRICAL_GATES_OPEN",
+  "useful_byproducts": [
+    "multimodal anomaly detection",
+    "sensor calibration and null libraries",
+    "blind human/AI decoding benchmarks",
+    "conditional-information leakage analysis",
+    "cryptographic commitment and challenge-response",
+    "anti-replay and provenance logging",
+    "uncertainty-visible inverse reconstruction",
+    "consent-bounded control interfaces",
+    "POMDP state-estimation methods",
+    "narrative consistency validation",
+    "causal graphs and adversarial controls",
+    "conservation-aware worldbuilding",
+    "double-entry fictional economic design"
+  ],
+  "version": "0.1",
+  "volume_map": [
+    {
+      "equation_ids": ["SCM-MATH-001", "SCM-MATH-002", "SCM-MATH-003", "SCM-MATH-004", "SCM-MATH-005", "SCM-MATH-006"],
+      "title": "ปฐมกลศาสตร์แห่งจิตและสภาวธรรม",
+      "volume": 1
+    },
+    {
+      "equation_ids": ["SCM-MATH-007", "SCM-MATH-008", "SCM-MATH-009", "SCM-MATH-010", "SCM-MATH-011", "SCM-MATH-012"],
+      "title": "บัญชาสวรรค์และกำเนิดอาถรรพ์คอนโทรล",
+      "volume": 2
+    },
+    {
+      "equation_ids": ["SCM-MATH-013", "SCM-MATH-014", "SCM-MATH-015", "SCM-MATH-016"],
+      "title": "มายาการสัทธรรมปฏิรูปและระบบสร้างพญามาร",
+      "volume": 3
+    },
+    {
+      "equation_ids": ["SCM-MATH-009", "SCM-MATH-010", "SCM-MATH-015", "SCM-MATH-019"],
+      "title": "เปลวเพลิงกลียุคและสงครามชิงโลกธรรม",
+      "volume": 4
+    },
+    {
+      "equation_ids": ["SCM-MATH-013", "SCM-MATH-014", "SCM-MATH-015", "SCM-MATH-017", "SCM-MATH-018", "SCM-MATH-019"],
+      "title": "รุ่งอรุณสุวรรณภูมิและยุคศิวิไลซ์",
+      "volume": 5
+    }
+  ]
+}

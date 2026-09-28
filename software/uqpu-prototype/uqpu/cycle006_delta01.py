@@ -1156,6 +1156,172 @@ def build_qasm_roundtrip_gate(manifest: dict) -> dict:
     }
 
 
+def validate_unified_math_registries(registry: dict, scm_registry: dict) -> dict:
+    """Fail closed on missing goal/equation/type links in the Cycle 006 formalism."""
+    expected_lanes = {
+        "A", "B", "C", "D", "E", "F", "G", "H",
+        "FND/EQN", "SCM", "AI-COST", "QOS/QSVT",
+    }
+    expected_services = {
+        "graphics and rendering",
+        "ray and path tracing",
+        "AI training",
+        "AI inference",
+        "tensor and matrix computation",
+        "scientific and HPC workloads",
+        "simulation",
+        "signal, image, and video processing",
+        "data analytics",
+        "general-purpose parallel compute",
+        "optimization and search",
+        "arbitrary-kernel fallback",
+    }
+    errors: list[str] = []
+    if registry.get("schema") != "uqpu-unified-mathematical-goal-registry-v0.1":
+        errors.append("unified_registry_schema_mismatch")
+    if set(registry.get("lanes", [])) != expected_lanes:
+        errors.append("unified_registry_lane_set_mismatch")
+    if set(registry.get("service_portfolio", [])) != expected_services:
+        errors.append("service_portfolio_mismatch")
+
+    equations = registry.get("equations", [])
+    equation_ids = [row.get("equation_id") for row in equations]
+    expected_equations = {f"UMRL-{index:03d}" for index in range(1, 31)}
+    if len(equation_ids) != len(set(equation_ids)):
+        errors.append("duplicate_umrl_equation_id")
+    if set(equation_ids) != expected_equations:
+        errors.append("umrl_equation_set_mismatch")
+    equation_owner_coverage = set()
+    required_equation_fields = {
+        "equation_id", "name", "kind", "expression", "domain", "assumptions",
+        "variables", "uncertainty_rule", "falsifier", "claim_ceiling", "owner_lanes",
+    }
+    for row in equations:
+        equation_id = row.get("equation_id", "<missing>")
+        if not required_equation_fields.issubset(row):
+            errors.append(f"equation_required_field_missing:{equation_id}")
+        if not row.get("assumptions") or not row.get("variables"):
+            errors.append(f"equation_empty_assumptions_or_variables:{equation_id}")
+        owners = set(row.get("owner_lanes", []))
+        if not owners or not owners <= expected_lanes:
+            errors.append(f"equation_owner_invalid:{equation_id}")
+        equation_owner_coverage.update(owners)
+        for variable in row.get("variables", []):
+            if not all(variable.get(field) for field in ("symbol", "meaning", "unit_or_type")):
+                errors.append(f"equation_variable_incomplete:{equation_id}")
+
+    goals = registry.get("goal_contracts", [])
+    goal_ids = [row.get("goal_id") for row in goals]
+    if len(goal_ids) != len(set(goal_ids)):
+        errors.append("duplicate_goal_id")
+    if len(goals) < 20:
+        errors.append("canonical_goal_count_below_twenty")
+    goal_owner_coverage = set()
+    lane_interfaces: dict[str, dict[str, set[str]]] = {
+        lane: {"goal_ids": set(), "equation_ids": set()} for lane in expected_lanes
+    }
+    required_goal_fields = {
+        "goal_id", "title", "owner_lanes", "equation_ids",
+        "decision_predicate", "required_observables", "uncertainty_rule",
+        "evidence_minimum", "status", "non_claims",
+    }
+    for goal in goals:
+        goal_id = goal.get("goal_id", "<missing>")
+        if not required_goal_fields.issubset(goal):
+            errors.append(f"goal_required_field_missing:{goal_id}")
+        if goal.get("status") != "OPEN":
+            errors.append(f"goal_not_open_without_evidence:{goal_id}")
+        references = set(goal.get("equation_ids", []))
+        if not references or not references <= expected_equations:
+            errors.append(f"goal_equation_reference_invalid:{goal_id}")
+        if not goal.get("required_observables") or not goal.get("non_claims"):
+            errors.append(f"goal_observable_or_nonclaim_missing:{goal_id}")
+        owners = set(goal.get("owner_lanes", []))
+        if not owners or not owners <= expected_lanes:
+            errors.append(f"goal_owner_invalid:{goal_id}")
+        goal_owner_coverage.update(owners)
+        for lane in owners & expected_lanes:
+            lane_interfaces[lane]["goal_ids"].add(goal_id)
+            lane_interfaces[lane]["equation_ids"].update(references)
+
+    if equation_owner_coverage != expected_lanes:
+        errors.append("equation_lane_coverage_incomplete")
+    if goal_owner_coverage != expected_lanes:
+        errors.append("goal_lane_coverage_incomplete")
+
+    if scm_registry.get("schema") != (
+        "uqpu-cycle006-scm-lokathibodi-mathematical-formalism-v0.1"
+    ):
+        errors.append("scm_math_registry_schema_mismatch")
+    scm_equations = scm_registry.get("equations", [])
+    scm_equation_ids = [row.get("equation_id") for row in scm_equations]
+    expected_scm_equations = {f"SCM-MATH-{index:03d}" for index in range(1, 20)}
+    if len(scm_equation_ids) != len(set(scm_equation_ids)):
+        errors.append("duplicate_scm_equation_id")
+    if set(scm_equation_ids) != expected_scm_equations:
+        errors.append("scm_equation_set_mismatch")
+    for row in scm_equations:
+        equation_id = row.get("equation_id", "<missing>")
+        required = {
+            "equation_id", "name", "expression", "epistemic_layer",
+            "assumptions", "variables", "falsifier", "canon_uses",
+            "real_world_status",
+        }
+        if not required.issubset(row):
+            errors.append(f"scm_equation_required_field_missing:{equation_id}")
+        if not row.get("assumptions") or not row.get("variables"):
+            errors.append(f"scm_equation_empty_assumptions_or_variables:{equation_id}")
+        for variable in row.get("variables", []):
+            if not all(variable.get(field) for field in ("symbol", "meaning", "unit_or_type")):
+                errors.append(f"scm_equation_variable_incomplete:{equation_id}")
+
+    device_ids = {row.get("device_id") for row in scm_registry.get("device_ladder", [])}
+    if device_ids != {"SCM-1", "SCM-2", "SCM-3", "SCM-4", "SCM-5", "ATTHAN-CONTROL"}:
+        errors.append("scm_device_ladder_mismatch")
+    for device in scm_registry.get("device_ladder", []):
+        if not set(device.get("dependencies", [])) <= expected_scm_equations:
+            errors.append(f"scm_device_dependency_invalid:{device.get('device_id')}")
+    volumes = scm_registry.get("volume_map", [])
+    if {row.get("volume") for row in volumes} != {1, 2, 3, 4, 5}:
+        errors.append("lokathibodi_volume_map_incomplete")
+    for volume in volumes:
+        if not set(volume.get("equation_ids", [])) <= expected_scm_equations:
+            errors.append(f"volume_equation_reference_invalid:{volume.get('volume')}")
+    firewall = scm_registry.get("epistemic_firewall", {})
+    if firewall.get("real_null") != "g_SR = 0" or not firewall.get("forbidden_cast"):
+        errors.append("scm_epistemic_firewall_missing")
+    scm_goal = next((goal for goal in goals if goal.get("goal_id") == "GOAL-SCM"), {})
+    if set(scm_goal.get("supplemental_equation_ids", [])) != expected_scm_equations:
+        errors.append("scm_goal_supplemental_equation_set_mismatch")
+    lane_interfaces["SCM"]["equation_ids"].update(expected_scm_equations)
+
+    serialized_interfaces = {
+        lane: {
+            "goal_ids": sorted(values["goal_ids"]),
+            "equation_ids": sorted(values["equation_ids"]),
+        }
+        for lane, values in sorted(lane_interfaces.items())
+    }
+    return {
+        "schema": "uqpu-cycle006-unified-math-registry-validation-v1",
+        "errors": errors,
+        "formal_specification_valid": not errors,
+        "umrl_equation_count": len(equations),
+        "scm_equation_count": len(scm_equations),
+        "goal_count": len(goals),
+        "lane_count": len(expected_lanes),
+        "service_family_count": len(registry.get("service_portfolio", [])),
+        "device_stage_count": len(scm_registry.get("device_ladder", [])),
+        "lokathibodi_volume_count": len(volumes),
+        "all_goal_states_open": all(goal.get("status") == "OPEN" for goal in goals),
+        "empirical_spiritual_claim": False,
+        "physical_law_claim": False,
+        "mission_achievement_claim": False,
+        "lane_interfaces": serialized_interfaces,
+        "evidence_class": "STRUCTURAL_VALIDATION_OF_FORMAL_SPECIFICATIONS_NOT_SCIENTIFIC_VALIDATION",
+    }
+
+
 def build_cycle006_packet(
     *,
     code_commit: str,
@@ -1168,6 +1334,10 @@ def build_cycle006_packet(
     archive_evidence: dict,
     archive_evidence_sha256: str,
     cycle005_scm: dict,
+    unified_math_registry: dict,
+    unified_math_registry_sha256: str,
+    scm_math_registry: dict,
+    scm_math_registry_sha256: str,
 ) -> tuple[dict, dict, dict, dict]:
     if not re.fullmatch(r"[0-9a-f]{40}", code_commit):
         raise ValueError("code_commit must be a full lowercase Git SHA-1")
@@ -1194,6 +1364,24 @@ def build_cycle006_packet(
     })
     capital = derive_capital_blockers(graph, evidence_status)
     scorer, custodian, reveal_audit = build_scm_role_packages(cycle005_scm)
+    math_validation = validate_unified_math_registries(
+        unified_math_registry, scm_math_registry
+    )
+    if not math_validation["formal_specification_valid"]:
+        raise ValueError(f"unified mathematical registries invalid: {math_validation['errors']}")
+    math_summary = {
+        "canonical_document": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+        "goal_registry": "benchmarks/experiments/cycle006-delta01-unified-math-goal-registry.json",
+        "goal_registry_sha256": unified_math_registry_sha256,
+        "scm_document": "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md",
+        "scm_registry": "benchmarks/experiments/cycle006-delta01-scm-lokathibodi-math-registry.json",
+        "scm_registry_sha256": scm_math_registry_sha256,
+        "validation": math_validation,
+        "umce_status": "OPEN_ALL_GOALS_REQUIRE_GOAL_SPECIFIC_EVIDENCE",
+        "new_physical_law_claim": False,
+        "spiritual_channel_claim": False,
+        "evidence_class": "PROJECT_FORMAL_SPECIFICATION_AND_STRUCTURAL_VALIDATION_ONLY",
+    }
     archive_summary = {
         "artifact": "benchmarks/evidence/cycle006-delta01-zenodo-range-metadata.json",
         "artifact_sha256": archive_evidence_sha256,
@@ -1229,13 +1417,17 @@ def build_cycle006_packet(
             "F": cost,
             "G": custody,
             "H": capital,
-            "FND/EQN": archive_summary,
+            "FND/EQN": {
+                **archive_summary,
+                "unified_mathematical_language": math_summary,
+            },
             "SCM": {
                 "scorer_package": "benchmarks/experiments/cycle006-delta01-scm-scorer-package.json",
                 "custodian_package": "benchmarks/results/cycle006-delta01-scm-custodian-package.json",
                 "reveal_audit": "benchmarks/results/cycle006-delta01-scm-reveal-audit.json",
                 "validation_errors": [],
                 "operational_blinding": False,
+                "fictional_mathematical_formalism": math_summary,
                 "evidence_class": "SYNTHETIC_SEPARATE_ROLE_PACKAGES_NOT_OPERATIONAL_BLINDING",
             },
             "AI-COST": freeze_ai_dataset_contract(
@@ -1245,6 +1437,7 @@ def build_cycle006_packet(
             ),
             "QOS/QSVT": build_qasm_roundtrip_gate(manifest),
         },
+        "unified_mathematical_language": math_summary,
         "evidence_boundary": [
             "A/C measurements are local process/software observations only and support no scaling, energy, GPU, provider, or QPU claim.",
             "B contains negative schema tests and an empty receipt; it cannot submit work.",
@@ -1252,6 +1445,7 @@ def build_cycle006_packet(
             "E/G/H are empty operational gates tested with synthetic controls; no material, sample, purchase, or capital decision exists.",
             "F adversarially refuses incomplete or mismatched ledgers; its passing control is synthetic arithmetic only.",
             "SCM role packages remain synthetic and co-located, not operational blinding or source evidence.",
+            "The UQPU/SCM equations are project specifications and fictional/protocol models; structural validation is not validation of a physical law, spiritual channel, mind control, portal, or mission achievement.",
             "AI-COST freezes toy sample hashes but has no candidate result, measured energy, or cost.",
             "QOS/QSVT validates a narrow repository grammar round-trip, not general OpenQASM semantics, provider transpilation, or hardware.",
         ],

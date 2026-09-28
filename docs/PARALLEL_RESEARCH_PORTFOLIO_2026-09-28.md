@@ -68,10 +68,10 @@ Choose least-cost fabrication route satisfying device requirements. Link process
 Map cash-flow foundation -> materials -> financing -> semiconductor/quantum expansion. Capital follows cheapest decisive falsification/unlock experiment.
 
 ### P-FND/EQN — Deep frontier
-Run lower-bound, alternative-primitive, QFT/particle mechanism and mathematics-first invention scans in parallel. New equations remain hypotheses until INV-035 criteria pass.
+Run lower-bound, alternative-primitive, QFT/particle mechanism and mathematics-first invention scans in parallel. Maintain the INV-037 unified mathematical goal registry and discovery ledger. New equations remain hypotheses until INV-035 criteria pass.
 
 ### P-SCM — Spiritual Communication Mechanics
-Continue CAL-001, DEC-001 and INF-001 as measurement/information-control infrastructure; integrate into five-volume fiction while keeping real evidence state unchanged.
+Continue CAL-001, DEC-001 and INF-001 as measurement/information-control infrastructure; integrate into five-volume fiction while keeping real evidence state unchanged. Maintain the separately typed `จิต`–`เจตสิก`–Abhidhamma-inspired ontology, `อาถรรพ์คอนโทรล`, SCM-1–5 channel/portal/economy equations and the fiction-to-empirical no-cast firewall.
 
 ## 5. Dependencies
 - A/B/F form the **useful-output economics triangle**.
@@ -109,6 +109,7 @@ Integration is encouraged wherever the causal interface is explicit.
 | Energy/material/economics stack | energy flow, cooling, feedstock/material functional unit, CAPEX/OPEX | E + F + G + H |
 | Commercialization stack | evidence state, stage gate, capital at risk, dependency graph | F + H + all producing lanes |
 | Fiction/research transfer | evidence boundary, device consequence, social/economic consequence | SCM + H + FND/EQN + relevant A-G lanes |
+| Unified mathematical language | typed goals, variables/units, constraints, uncertainty, falsifiers, evidence and non-claims | all 12 tracked lanes |
 
 **Integration rule:** reuse methods, measurements, code, constraints and economic models; never copy an evidence status across a causal boundary. For example, a validated magnetometer is a validated sensor, not a validated spiritual-source detector.
 
@@ -125,8 +126,8 @@ Every portfolio-cycle ledger must contain one row for each lane below.
 | F | economics/evidence/uncertainty delta |
 | G | fabrication/metrology/yield delta |
 | H | strategy/capital/commercialization delta |
-| FND/EQN | mathematical/physical hypothesis or falsification delta |
-| SCM | measurement/information/canon-transfer delta |
+| FND/EQN | mathematical/physical hypothesis, formal goal interface, bound or falsification delta |
+| SCM | measurement/information/canon-transfer delta plus a typed fictional/empirical equation-state update |
 | AI-COST | functional-equivalence/end-to-end cost delta |
 | QOS/QSVT | synthesis/certificate/resource delta |
 
