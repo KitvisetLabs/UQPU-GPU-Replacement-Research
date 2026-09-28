@@ -1,0 +1,70 @@
+{
+  "schema": "uqpu-cycle014-delta01-preregistered-gates-v1",
+  "cycle": "014",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-014-delta-01-2026-09-28",
+  "base_closeout": "06218a1f6ad053fe96d1086305431e1260a2d5d4",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "lanes": {
+    "A": "freeze matched useful-output contract and deterministic exact comparator with declared task, output, seed, and state bound",
+    "B": "synthetic provider receipt envelope bound to request digest; unexecuted job/invoice remain null",
+    "C": "subprocess termination at named before/after os.replace boundaries; visible target must remain complete old/new bytes",
+    "D": "byte-level ZIP64 metadata fixture validates fixed ZIP64 end width, locator offset, EOCD comment length, and adjacency; no payload read",
+    "E": "custody expiry is tested at injected date boundary with no real sample or issuer claim",
+    "F": "five-component total interval propagated over positive and nonpositive accepted-output count grid; undefined denominator remains null",
+    "G": "covariance entry unit dimension equals pairwise product of seven-component SI vectors",
+    "H": "scenario ranking stability interval computed from a declared scenario grid; capital remains null",
+    "FND/EQN": "exact rational interval addition preserves unit, dimensions, domain/evidence sort, and source digest",
+    "SCM": "fictional challenge-response requires active fictional scope and fresh nonce; empirical coupling remains null",
+    "AI-COST": "version-four synthetic manifest binds source, disjoint splits, normalized metrics and frozen config digest",
+    "QOS/QSVT": "ER6 certificate v4 binds source/map and non-increasing resource counts; hardware remains null"
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE.TXT - .ZIP File Format Specification",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "version": "6.3.10 FINAL",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-28",
+      "locator": "sections 4.3.6, 4.3.12-4.3.16",
+      "evidence_class": "PRIMARY_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"
+    },
+    {
+      "title": "Python tempfile.mkstemp documentation",
+      "url": "https://docs.python.org/3/library/tempfile.html#tempfile.mkstemp",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"
+    },
+    {
+      "title": "NIST SP 330, Section 2",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "access_date": "2026-09-28",
+      "locator": "seven SI base dimensions and derived units",
+      "evidence_class": "PRIMARY_METROLOGY_REFERENCE"
+    },
+    {
+      "title": "UQPU unified mathematical language and discovery ledger",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/research/cycle-014-delta-01-2026-09-28/00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+      "source_revision": "06218a1f6ad053fe96d1086305431e1260a2d5d4",
+      "locator": "UMRL-031 typed quantity tuple and sort firewall",
+      "evidence_class": "PROJECT_CANONICAL_INTERFACE"
+    }
+  ],
+  "assumptions": [
+    "All hardware/provider/cost/AI fixtures are synthetic unless explicitly labeled fiction-only.",
+    "The SI vector order is length, mass, time, electric current, thermodynamic temperature, amount of substance, luminous intensity.",
+    "A subprocess termination fixture is not equivalent to an OS crash, power failure, device flush, or controlled cache experiment.",
+    "The ZIP64 fixture parses metadata bytes only and does not read or validate archive payload.",
+    "Priority stability, cost intervals, and AI losses are scenario/model outputs rather than measured project economics or functional-equivalence results.",
+    "SCM fiction propositions do not cast to empirical claims."
+  ],
+  "uncertainty": "External provider, device, calibration, lifecycle cost, independent mathematical derivation, and empirical SCM gates remain unresolved; no unavailable quantity is inferred as zero.",
+  "evidence_boundary": "No QPU/GPU performance, paid provider execution, physical calibration, commercial lifecycle economics, new physical law, capital authorization, or empirical spiritual communication is claimed."
+}

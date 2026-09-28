@@ -1,0 +1,177 @@
+{
+  "schema": "uqpu-cycle014-delta01-executable-acceptance-v1",
+  "cycle": "014",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-014-delta-01-2026-09-28",
+  "base_closeout": "06218a1f6ad053fe96d1086305431e1260a2d5d4",
+  "evidence_class": "LOCAL_SYNTHETIC_AND_FICTION_ONLY",
+  "lane_count": 12,
+  "status": "PASS_LOCAL",
+  "source_sha256": {
+    "preregistered_gates": "733f3f02776456b55de6cc83a552919b9b19a7064601fa17a6bbb259b4111ea7",
+    "module": "fed243a102c7c1aa2a2a718ca01113b225f4456504e545a457bd5112f006b968",
+    "tests": "e93136e8ce0b69d60b15d5b11f928b1be7d31e4067b4dbcf8c5deef98cc2acc6",
+    "runner": "f30c2deddb80222ee7f5817ac9883c70cca49ec232b849d9861d8928e4470e16",
+    "umrl_source": "e2845cfa3676aab1169351e71cf9ab244b9c478f5010840943862806b95d5174"
+  },
+  "lanes": {
+    "A": {
+      "workload_sha256": "f1dc8f5513026e49aab11096fbaa94bdd6c71f77fc0c68bd50c0dc5e2a71a533",
+      "result_sha256": "91dbc63230aa6f59e09260a003d2b7efd40586790cdbed1dec7d803590e193dd",
+      "baseline": "bounded-exhaustive-classical",
+      "accepted_output": "exact-max-cut-weight",
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "scaling_claim": null
+    },
+    "B": {
+      "schema": "receipt-v1",
+      "request_sha256": "f2ebd2ec4bc5e64e7ff3fd5406811ca5456480c8bbbc325778dfa6d8976ec4bb",
+      "provider_status": "NOT_EXECUTED",
+      "job_id": null,
+      "invoice": null,
+      "evidence_class": "SYNTHETIC_RECEIPT_ENVELOPE"
+    },
+    "C": {
+      "before": "OLD_COMPLETE",
+      "after": "NEW_COMPLETE",
+      "durability": "PROCESS_TERMINATION_ONLY"
+    },
+    "D": {
+      "zip64_eocd_bytes": 56,
+      "locator_bytes": 20,
+      "eocd_comment_bytes": 3,
+      "payload_read": false,
+      "status": "VALID_SYNTHETIC_METADATA"
+    },
+    "E": {
+      "valid": true,
+      "remaining_days": 1191,
+      "evidence_class": "SYNTHETIC_CUSTODY"
+    },
+    "F": [
+      {
+        "accepted_outputs": 1,
+        "per_output_usd": [
+          7.0,
+          12.0
+        ],
+        "status": "MODEL_ONLY"
+      },
+      {
+        "accepted_outputs": 2,
+        "per_output_usd": [
+          3.5,
+          6.0
+        ],
+        "status": "MODEL_ONLY"
+      },
+      {
+        "accepted_outputs": 4,
+        "per_output_usd": [
+          1.75,
+          3.0
+        ],
+        "status": "MODEL_ONLY"
+      },
+      {
+        "accepted_outputs": 0,
+        "per_output_usd": null,
+        "status": "NULL_NONPOSITIVE_DENOMINATOR"
+      }
+    ],
+    "G": [
+      2,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "H": {
+      "stability_bounds": [
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "scenario_count": 3,
+      "capital": null,
+      "evidence_class": "ILLUSTRATIVE_SCENARIO_GRID"
+    },
+    "FND/EQN": {
+      "source_sha256": "47ca62fa30d7d700a679b2cf9f1bdaee0d284420e9e1d14dcb26a67b46d21720",
+      "unit": "1",
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence_sort": "Model",
+      "domain_sort": "RealModel",
+      "lower": [
+        3,
+        4
+      ],
+      "upper": [
+        2,
+        1
+      ]
+    },
+    "SCM": {
+      "accepted": true,
+      "sort": "Fiction",
+      "nonce": "fresh-1",
+      "empirical_claim": null
+    },
+    "AI-COST": {
+      "version": 4,
+      "source_sha256": "af49488d757745d555af6c0808631dc581d28ba925bee75379a393b8bfcc9142",
+      "split_hashes": {
+        "train": "b813212912f4d0c4cc7c9dceba3fb8e0b088946be058e149461ec5f82d00c817",
+        "validation": "ecef3fd0fb07b742d559b77b2585e38e42579ed5075c12bf8f9d56a22580f273",
+        "test": "e4b4976db3c5b72f6354fa7a78ef3c93ffefac200ab89ccc84f3e547cfbbc634"
+      },
+      "metrics_sha256": "1661bc8d9c051611c44b77242c202dc4e719580d595d9161a36063e464141ebd",
+      "config_sha256": "ca138571d4825e02271085c4ff83a4cd0347da6cd915a803b879f0dbcd3aa58a",
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "manifest_sha256": "b440913e4a766dfc8f96c6cc8d605d5096dc4945a0a2784a116b29c2c38cf227"
+    },
+    "QOS/QSVT": {
+      "version": 4,
+      "source_sha256": "285925a7aae232379c032c355e5244ace32304146b05868b11dd315a1ac0097e",
+      "map_sha256": "09ebeac01a19291c6eabd04a89b55a041a8f5003d62276dd62c5201442e0aa5b",
+      "resources": {
+        "qubits": 6,
+        "bits": 6,
+        "depth": 14,
+        "gates": 30
+      },
+      "previous_resources": {
+        "qubits": 6,
+        "bits": 6,
+        "depth": 16,
+        "gates": 34
+      },
+      "hardware": null,
+      "evidence_class": "ER6_SYNTHETIC_CERTIFICATE",
+      "certificate_sha256": "fe6fa1b4e203e7a51060c99718765769365a26d69403a197db99fadc2afeef5a"
+    }
+  },
+  "nonclaims": [
+    "no QPU or GPU performance result",
+    "no provider execution, job identifier, or invoice",
+    "subprocess termination fixture does not establish crash or power-loss durability",
+    "ZIP64 fixture checks metadata only and reads no archive payload",
+    "cost, priority, covariance, and AI metrics are synthetic/model-only",
+    "SCM remains fiction-only; empirical coupling is null",
+    "QOS/QSVT hardware receipt remains null"
+  ],
+  "payload_sha256": "d7fce2d11826819b55e2b5e618926e621d579b15677645b0ce0ad4bc4a153c98"
+}
