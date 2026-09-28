@@ -1,0 +1,67 @@
+{
+  "access_logs": {
+    "custodian": [
+      {
+        "action": "VERIFY_SCORE_COMMITMENT",
+        "actor": "synthetic_custodian_actor",
+        "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+        "event_sha256": "5a911b068996b9383f9eafec1135b03921bca99723dff60582ac667ccb1d9581",
+        "ordinal": 1,
+        "previous_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "action": "REVEAL_SYNTHETIC_TRUTH",
+        "actor": "synthetic_custodian_actor",
+        "artifact_sha256": "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7",
+        "event_sha256": "c2381cc0f28ddd18fed5188dca8510da1e1dd60184c8617d15c9ff264548f049",
+        "ordinal": 2,
+        "previous_event_sha256": "5a911b068996b9383f9eafec1135b03921bca99723dff60582ac667ccb1d9581"
+      }
+    ],
+    "scorer": [
+      {
+        "action": "RECEIVE_PUBLIC_PACKAGE",
+        "actor": "synthetic_scorer_actor",
+        "artifact_sha256": "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc",
+        "event_sha256": "5907061c4fb7af66c66dacd606c89dbf1ee34abdaef7be539245552b63dd8261",
+        "ordinal": 1,
+        "previous_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "action": "COMMIT_FROZEN_SCORES",
+        "actor": "synthetic_scorer_actor",
+        "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+        "event_sha256": "113de84f6e0ce9e287284fa5c66f41495d25e8fe1ec51252763a9132ade852c3",
+        "ordinal": 2,
+        "previous_event_sha256": "5907061c4fb7af66c66dacd606c89dbf1ee34abdaef7be539245552b63dd8261"
+      },
+      {
+        "action": "REQUEST_REVEAL_AFTER_SCORE_COMMIT",
+        "actor": "synthetic_scorer_actor",
+        "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+        "event_sha256": "362ac0ea81a5bbff8473c0ed59ab25697a2d9ff2b996732e9d21924d7418e97d",
+        "ordinal": 3,
+        "previous_event_sha256": "113de84f6e0ce9e287284fa5c66f41495d25e8fe1ec51252763a9132ade852c3"
+      }
+    ]
+  },
+  "evidence_class": "SYNTHETIC_CHAINED_ACCESS_LOG_REHEARSAL_NOT_OPERATIONAL_BLINDING",
+  "human_or_physical_data": false,
+  "independent_site": false,
+  "input_custodian_file_sha256": "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7",
+  "input_public_file_sha256": "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc",
+  "non_claims": [
+    "Actor labels are logical roles, not independently authenticated people or systems.",
+    "No human, biological, paranormal, cross-realm, or physical-sensor evidence exists."
+  ],
+  "operational_status": "SYNTHETIC_TWO_ACTOR_LOGIC_REHEARSAL_SAME_PROCESS_AND_REPOSITORY",
+  "pre_registered_reveal_rule": {
+    "handoff_validation_errors": [],
+    "rule": "custodian reveal only after scorer score-commit event is hash-linked and handoff validation passes",
+    "rule_satisfied_in_rehearsal": true,
+    "score_commitment_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83"
+  },
+  "schema": "uqpu-cycle005-scm-two-actor-rehearsal-v1",
+  "separate_operating_system_principals": false,
+  "study_id": "SCM-P2-CAL-001-SYNTHETIC"
+}

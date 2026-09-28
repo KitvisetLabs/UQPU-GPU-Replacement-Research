@@ -1,0 +1,1071 @@
+{
+  "cycle": "005",
+  "delta": "01",
+  "evidence_boundary": [
+    "A/C are local software measurements on the recorded host; no power, cloud, provider, or hardware-neutral performance is inferred.",
+    "B is an unsubmitted incomplete dry run with credentials, execution, observations, and billing all absent.",
+    "D and FND/EQN inventory a primary record preview; the archive was not downloaded, parsed, or reanalyzed.",
+    "E/G/H are empty evidence, custody, uncertainty, and capital gates; no material, fabrication, purchase, or decision exists.",
+    "F refuses totals while lifecycle and same-provider prerequisites are missing.",
+    "SCM is a same-process synthetic rehearsal with logical actor labels, not operational blinding or source evidence.",
+    "AI-COST is a candidate schema tied to a toy baseline, not a measured candidate or frontier-AI economics.",
+    "QOS/QSVT combines a persisted CI parse with a limited grammar check, not provider transpilation or QPU execution."
+  ],
+  "generator_code_commit": "6b71722d7e19649b5b54b6a1a7105b9795881f0f",
+  "lanes": {
+    "A": {
+      "er6_regression_retained": true,
+      "evidence_class": "LOCAL_DETERMINISTIC_CLASSICAL_SCALE_SCREEN",
+      "scale_cases": [
+        {
+          "edge_count": 9,
+          "edge_probability": 0.5,
+          "environment": {
+            "logical_cpu_count": 9,
+            "machine": "x86_64",
+            "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+            "python": "3.12.14"
+          },
+          "evidence_class": "LOCAL_HOST_CLASSICAL_SOFTWARE_MEASUREMENT_NOT_COMPETITIVE_BENCHMARK",
+          "exact": {
+            "best_assignment_vn_to_v0": "110100",
+            "best_objective": -7.0,
+            "complete": true,
+            "deadline_seconds": 30.0,
+            "elapsed_seconds": 0.00017259299988836574,
+            "max_states": 1048576,
+            "method": "complete_binary_enumeration_with_state_and_wall_clock_caps",
+            "optimum_claim_allowed": true,
+            "states_evaluated": 64,
+            "stop_reason": "COMPLETE",
+            "total_state_space": 64,
+            "variables": 6
+          },
+          "generator": "seeded_erdos_renyi_maxcut",
+          "heuristic": {
+            "assignment_vn_to_v0": "110001",
+            "elapsed_seconds": 0.00041456199983258557,
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -7.0,
+            "objective_gap_to_exact": 0.0,
+            "quality_ratio": null,
+            "restarts": 16
+          },
+          "limitations": [
+            "Cases are small deterministic screening fixtures, not established benchmark-suite instances.",
+            "Peak RSS is a process high-water mark and must be measured in a fresh process for per-case comparison.",
+            "No power or energy was measured and the timings are not hardware-neutral.",
+            "The heuristic quality ratio is intentionally null because negative MaxCut QUBO objectives make naive ratios misleading."
+          ],
+          "node_count": 6,
+          "process_peak_rss": {
+            "semantics": "ru_maxrss high-water mark for this process, not incremental case memory",
+            "source": "https://docs.python.org/3/library/resource.html",
+            "unit": "KiB on Linux; platform-dependent elsewhere",
+            "value": 16640
+          },
+          "schema": "uqpu-cycle005-local-maxcut-scale-case-v1",
+          "seed": 42
+        },
+        {
+          "edge_count": 20,
+          "edge_probability": 0.5,
+          "environment": {
+            "logical_cpu_count": 9,
+            "machine": "x86_64",
+            "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+            "python": "3.12.14"
+          },
+          "evidence_class": "LOCAL_HOST_CLASSICAL_SOFTWARE_MEASUREMENT_NOT_COMPETITIVE_BENCHMARK",
+          "exact": {
+            "best_assignment_vn_to_v0": "0110111000",
+            "best_objective": -15.0,
+            "complete": true,
+            "deadline_seconds": 30.0,
+            "elapsed_seconds": 0.004081244000190054,
+            "max_states": 1048576,
+            "method": "complete_binary_enumeration_with_state_and_wall_clock_caps",
+            "optimum_claim_allowed": true,
+            "states_evaluated": 1024,
+            "stop_reason": "COMPLETE",
+            "total_state_space": 1024,
+            "variables": 10
+          },
+          "generator": "seeded_erdos_renyi_maxcut",
+          "heuristic": {
+            "assignment_vn_to_v0": "0110110010",
+            "elapsed_seconds": 0.001237973000115744,
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -15.0,
+            "objective_gap_to_exact": 0.0,
+            "quality_ratio": null,
+            "restarts": 16
+          },
+          "limitations": [
+            "Cases are small deterministic screening fixtures, not established benchmark-suite instances.",
+            "Peak RSS is a process high-water mark and must be measured in a fresh process for per-case comparison.",
+            "No power or energy was measured and the timings are not hardware-neutral.",
+            "The heuristic quality ratio is intentionally null because negative MaxCut QUBO objectives make naive ratios misleading."
+          ],
+          "node_count": 10,
+          "process_peak_rss": {
+            "semantics": "ru_maxrss high-water mark for this process, not incremental case memory",
+            "source": "https://docs.python.org/3/library/resource.html",
+            "unit": "KiB on Linux; platform-dependent elsewhere",
+            "value": 16640
+          },
+          "schema": "uqpu-cycle005-local-maxcut-scale-case-v1",
+          "seed": 43
+        },
+        {
+          "edge_count": 49,
+          "edge_probability": 0.5,
+          "environment": {
+            "logical_cpu_count": 9,
+            "machine": "x86_64",
+            "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+            "python": "3.12.14"
+          },
+          "evidence_class": "LOCAL_HOST_CLASSICAL_SOFTWARE_MEASUREMENT_NOT_COMPETITIVE_BENCHMARK",
+          "exact": {
+            "best_assignment_vn_to_v0": "00111101110000",
+            "best_objective": -36.0,
+            "complete": true,
+            "deadline_seconds": 30.0,
+            "elapsed_seconds": 0.14643696300004194,
+            "max_states": 1048576,
+            "method": "complete_binary_enumeration_with_state_and_wall_clock_caps",
+            "optimum_claim_allowed": true,
+            "states_evaluated": 16384,
+            "stop_reason": "COMPLETE",
+            "total_state_space": 16384,
+            "variables": 14
+          },
+          "generator": "seeded_erdos_renyi_maxcut",
+          "heuristic": {
+            "assignment_vn_to_v0": "11000010001111",
+            "elapsed_seconds": 0.005235389000063151,
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -36.0,
+            "objective_gap_to_exact": 0.0,
+            "quality_ratio": null,
+            "restarts": 16
+          },
+          "limitations": [
+            "Cases are small deterministic screening fixtures, not established benchmark-suite instances.",
+            "Peak RSS is a process high-water mark and must be measured in a fresh process for per-case comparison.",
+            "No power or energy was measured and the timings are not hardware-neutral.",
+            "The heuristic quality ratio is intentionally null because negative MaxCut QUBO objectives make naive ratios misleading."
+          ],
+          "node_count": 14,
+          "process_peak_rss": {
+            "semantics": "ru_maxrss high-water mark for this process, not incremental case memory",
+            "source": "https://docs.python.org/3/library/resource.html",
+            "unit": "KiB on Linux; platform-dependent elsewhere",
+            "value": 16640
+          },
+          "schema": "uqpu-cycle005-local-maxcut-scale-case-v1",
+          "seed": 44
+        }
+      ]
+    },
+    "AI-COST": {
+      "baseline_artifact_sha256": "76ec0c685223fbe63935701626e178577563a38498da0b54008ce5160680e4fe",
+      "candidate_result": {
+        "candidate_id": null,
+        "dataset_or_generator_sha256": null,
+        "end_to_end_cost_usd": null,
+        "end_to_end_energy_joules": null,
+        "held_out_accuracy": null,
+        "held_out_binary_cross_entropy": null,
+        "held_out_examples": null,
+        "seed": null,
+        "status": "NOT_RUN",
+        "train_examples": null
+      },
+      "contract_id": "AI-COST-XOR-MLP-2-16-1-V1",
+      "evidence_class": "MACHINE_CHECKABLE_TOY_AI_COMPARISON_SCHEMA_NO_CANDIDATE_RESULT",
+      "frontier_ai_baseline": false,
+      "publication_policy": {
+        "failed_quality_gate_publishable": true,
+        "missing_or_mismatched_inputs_rejected": true,
+        "slower_or_more_expensive_candidate_publishable": true
+      },
+      "quality_gate": {
+        "held_out_accuracy_minimum": 0.98,
+        "held_out_binary_cross_entropy_maximum": 0.19
+      },
+      "required_inputs": {
+        "dataset_generator": "deterministic XOR-quadrant binary classification",
+        "dataset_or_generator_sha256": "76ec0c685223fbe63935701626e178577563a38498da0b54008ce5160680e4fe",
+        "held_out_examples": 256,
+        "seed": 1234,
+        "train_examples": 256
+      },
+      "schema": "uqpu-cycle005-ai-candidate-result-gate-v1",
+      "validation": {
+        "accepted": false,
+        "errors": [
+          "candidate_result_missing"
+        ]
+      }
+    },
+    "B": {
+      "access_date": "2026-09-28",
+      "action_sha256": "f73856f5984418a531724d3e243107e2dc18910d614f3a8e6a2a4c0064cfd893",
+      "api_reference": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html",
+      "authorization": {
+        "credentials_used": false,
+        "network_submission_attempted": false,
+        "paid_job_submitted": false,
+        "status": "NOT_AUTHORIZED"
+      },
+      "evidence_class": "OFFICIAL_API_SCHEMA_DRY_RUN_NOT_PROVIDER_VALIDATION_OR_EXECUTION",
+      "provider_observations": {
+        "backend": null,
+        "bill": null,
+        "execution_time_seconds": null,
+        "queue_time_seconds": null,
+        "result": null,
+        "task_arn": null
+      },
+      "request_body": {
+        "action": "{\"braketSchemaHeader\":{\"name\":\"braket.ir.openqasm.program\",\"version\":\"1\"},\"source\":\"OPENQASM 3.0;\\ninclude \\\"stdgates.inc\\\";\\nqubit[6] q;\\nbit[6] c;\\nh q[0];\\nh q[1];\\nh q[2];\\nh q[3];\\nh q[4];\\nh q[5];\\ncx q[0], q[2];\\nrz(0.52359877559829882) q[2];\\ncx q[0], q[2];\\ncx q[0], q[3];\\nrz(0.52359877559829882) q[3];\\ncx q[0], q[3];\\ncx q[0], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[0], q[4];\\ncx q[1], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[1], q[4];\\ncx q[1], q[5];\\nrz(0.52359877559829882) q[5];\\ncx q[1], q[5];\\ncx q[2], q[3];\\nrz(0.52359877559829882) q[3];\\ncx q[2], q[3];\\ncx q[2], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[2], q[4];\\ncx q[3], q[4];\\nrz(0.52359877559829882) q[4];\\ncx q[3], q[4];\\ncx q[3], q[5];\\nrz(0.52359877559829882) q[5];\\ncx q[3], q[5];\\nrx(2.6179938779914944) q[0];\\nrx(2.6179938779914944) q[1];\\nrx(2.6179938779914944) q[2];\\nrx(2.6179938779914944) q[3];\\nrx(2.6179938779914944) q[4];\\nrx(2.6179938779914944) q[5];\\nc[0] = measure q[0];\\nc[1] = measure q[1];\\nc[2] = measure q[2];\\nc[3] = measure q[3];\\nc[4] = measure q[4];\\nc[5] = measure q[5];\\n\"}",
+        "clientToken": null,
+        "deviceArn": null,
+        "outputS3Bucket": null,
+        "outputS3KeyPrefix": null,
+        "shots": 8192
+      },
+      "required_fields_from_api": [
+        "action",
+        "clientToken",
+        "deviceArn",
+        "outputS3Bucket",
+        "outputS3KeyPrefix",
+        "shots"
+      ],
+      "schema": "uqpu-cycle005-braket-create-task-dry-run-v1",
+      "validation": {
+        "locally_complete": false,
+        "missing_required_fields": [
+          "clientToken",
+          "deviceArn",
+          "outputS3Bucket",
+          "outputS3KeyPrefix"
+        ],
+        "provider_validated": false,
+        "submission_allowed": false,
+        "submit_method_present": false
+      }
+    },
+    "C": {
+      "cache_labels": {
+        "first_read": "NOT_VERIFIED_OS_COLD",
+        "repeat_read": "NOT_VERIFIED_CACHE_HIT"
+      },
+      "durability_boundary": {
+        "directory_fsync_called": false,
+        "file_data_fsync_called": true,
+        "power_loss_survival_tested": false,
+        "storage_device_flush_verified": false
+      },
+      "evidence_class": "LOCAL_HOST_FILE_FSYNC_AND_SOFTWARE_MEMORY_MEASUREMENT_NOT_CLOUD_IO",
+      "limitations": [
+        "A file fsync call is recorded, but directory durability, device flush, and power-loss survival are not verified.",
+        "Neither first nor repeated read has controlled kernel/page-cache state.",
+        "tracemalloc measures Python allocations, not process RSS or device memory.",
+        "No provider transfer, QPU readout, network, storage service, power, or energy is measured."
+      ],
+      "payload": {
+        "canonical_json_utf8_bytes": 10152,
+        "sha256": "fb140f933a1d2e60873d9570c1ce490b4af6c9ee93737ad32d84968067978fb1"
+      },
+      "python_allocation_incremental_peak_bytes": {
+        "first_read": {
+          "maximum_bytes": 14786,
+          "median_bytes": 14786,
+          "minimum_bytes": 14786,
+          "repetitions": 21
+        },
+        "json_decode": {
+          "maximum_bytes": 38600,
+          "median_bytes": 36080,
+          "minimum_bytes": 36080,
+          "repetitions": 21
+        },
+        "repeat_read": {
+          "maximum_bytes": 14786,
+          "median_bytes": 14786,
+          "minimum_bytes": 14786,
+          "repetitions": 21
+        },
+        "write_fsync": {
+          "maximum_bytes": 5153,
+          "median_bytes": 4868,
+          "minimum_bytes": 4868,
+          "repetitions": 21
+        }
+      },
+      "schema": "uqpu-cycle005-local-durable-io-measurement-v1",
+      "timing": {
+        "immediate_repeat_read_unverified_cache_hit": {
+          "maximum_ns": 232021,
+          "median_ns": 15609,
+          "minimum_ns": 14046,
+          "repetitions": 21
+        },
+        "json_decode": {
+          "maximum_ns": 435491,
+          "median_ns": 237978,
+          "minimum_ns": 201481,
+          "repetitions": 21
+        },
+        "post_fsync_first_read_uncontrolled_cache_state": {
+          "maximum_ns": 222959,
+          "median_ns": 21592,
+          "minimum_ns": 16611,
+          "repetitions": 21
+        },
+        "write_flush_file_fsync": {
+          "maximum_ns": 1343549,
+          "median_ns": 94791,
+          "minimum_ns": 56813,
+          "repetitions": 21
+        }
+      }
+    },
+    "D": {
+      "basis_resolved_values_extracted": false,
+      "primary_archive_inventory": {
+        "access_date": "2026-09-28",
+        "archive": {
+          "displayed_size": "145.5 MB",
+          "download_result": "BLOCKED_BY_RETRIEVAL_SIZE_LIMIT",
+          "downloaded": false,
+          "local_sha256": null,
+          "locally_recomputed_md5": null,
+          "name": "data_upload.zip",
+          "publisher_displayed_md5": "d4f051ba40bf3d1940f90f9da4e9953c",
+          "response_content_length_bytes": 145469232
+        },
+        "doi": "10.5281/zenodo.14257632",
+        "evidence_class": "PRIMARY_RECORD_AND_SERVER_PREVIEW_INVENTORY_NOT_RAW_DATA_ANALYSIS",
+        "non_claims": [
+          "The archive was not downloaded, parsed, or statistically reanalyzed.",
+          "The publisher MD5 was not recomputed locally.",
+          "Directory names alone do not establish units, columns, uncertainty, or a project result.",
+          "No device reproduction or logical-memory performance claim is made."
+        ],
+        "preview_inventory": {
+          "sampled_directory_families": {
+            "d5_phase_flip_nbar": [
+              1.0,
+              1.5,
+              2.0,
+              2.5,
+              3.0,
+              3.5
+            ],
+            "first_d3_phase_flip_nbar": [
+              1.0,
+              1.5,
+              2.0,
+              2.5,
+              3.0
+            ],
+            "second_d3_phase_flip_nbar": [
+              1.0,
+              1.5,
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "scope": "SERVER_PREVIEW_ONLY_NOT_A_COMPLETE_LOCAL_ARCHIVE_WALK",
+          "top_level_entries": [
+            {
+              "displayed_size": "3.1 kB",
+              "path": "README.md"
+            },
+            {
+              "displayed_size": "2.3 MB",
+              "path": "d5_bit_flip"
+            },
+            {
+              "displayed_size": null,
+              "path": "d5_phase_flip"
+            },
+            {
+              "displayed_size": "1.0 MB",
+              "path": "first_d3_bit_flip"
+            },
+            {
+              "displayed_size": null,
+              "path": "first_d3_phase_flip"
+            },
+            {
+              "displayed_size": "1.0 MB",
+              "path": "second_d3_bit_flip"
+            },
+            {
+              "displayed_size": null,
+              "path": "second_d3_phase_flip"
+            }
+          ]
+        },
+        "provenance_gates": {
+          "bit_flip_mapping_validated": false,
+          "column_definitions": null,
+          "file_formats": null,
+          "license": null,
+          "license_observation": "NOT_DISPLAYED_ON_RECORD_PAGE",
+          "phase_flip_mapping_validated": false,
+          "readme_contents_read": false,
+          "uncertainty_columns_validated": false
+        },
+        "published_date": "2024-12-03",
+        "record_url": "https://zenodo.org/records/14257632",
+        "resource_type": "Dataset",
+        "schema": "uqpu-cycle005-primary-archive-inventory-gate-v1",
+        "service_contract_mapping": {
+          "basis_resolved_values_extracted": false,
+          "bit_flip_directory_family_identified": true,
+          "phase_flip_directory_families_identified": true,
+          "project_reproduction": false,
+          "uncertainty_extracted": false
+        },
+        "version": "v1"
+      },
+      "project_reproduction": false,
+      "service_contract_mapping_advanced": true,
+      "uncertainty_extracted": false
+    },
+    "E": {
+      "evidence_class": "IMMUTABLE_EVIDENCE_SLOT_SCHEMA_NO_MATERIAL_MEASUREMENT",
+      "fabrication_authorized": false,
+      "readiness_status": "NOT_READY_NO_FABRICATION_AUTHORIZED",
+      "required_count": 9,
+      "satisfied_count": 0,
+      "schema": "uqpu-cycle005-material-evidence-registry-v1",
+      "slots": [
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-01",
+          "requirement": "current_full_method_text",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-02",
+          "requirement": "authenticated_pangola_species_and_lot",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-03",
+          "requirement": "feedstock_moisture_and_ash",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-04",
+          "requirement": "resin_hardener_sku_and_ratio",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-05",
+          "requirement": "cure_schedule",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-06",
+          "requirement": "coupon_dimensions_and_uncertainty",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-07",
+          "requirement": "vna_fixture_calibration_and_dynamic_range",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-08",
+          "requirement": "same_protocol_incumbent_coupon",
+          "satisfied": false
+        },
+        {
+          "acceptance": {
+            "artifact_uri_required": true,
+            "issuer_or_operator_required": true,
+            "observation_or_effective_date_required": true,
+            "reviewer_required": true,
+            "sha256_required": true
+          },
+          "evidence": {
+            "artifact_uri": null,
+            "date": null,
+            "issuer_or_operator": null,
+            "reviewer": null,
+            "sha256": null
+          },
+          "immutability_status": "EMPTY_SLOT_FAILS_CLOSED",
+          "prerequisite_id": "DMF-PR-09",
+          "requirement": "safety_and_waste_review",
+          "satisfied": false
+        }
+      ],
+      "study_id": "DMF-BIOCARBON-EMI-001"
+    },
+    "F": {
+      "complete": false,
+      "cost_per_accepted_output_usd": null,
+      "missing_or_invalid": [
+        "provider_actual_bill",
+        "classical_host_orchestration",
+        "queue",
+        "network_transfer",
+        "storage",
+        "retry_failure",
+        "mitigation_decoder",
+        "energy_cooling",
+        "labor",
+        "capital_amortization",
+        "observed_accepted_outputs_positive_integer",
+        "same_provider_execution_and_bill",
+        "matched_classical_baseline"
+      ],
+      "non_claim": "A locally complete synthetic ledger would test arithmetic only; it would not establish commercial economics.",
+      "refusal_active": true,
+      "required_cost_components": [
+        "provider_actual_bill",
+        "classical_host_orchestration",
+        "queue",
+        "network_transfer",
+        "storage",
+        "retry_failure",
+        "mitigation_decoder",
+        "energy_cooling",
+        "labor",
+        "capital_amortization"
+      ],
+      "rg028_status": "OPEN_DATA_CREDENTIAL_AUTHORIZATION_AND_COMPLETENESS_BLOCKED",
+      "schema": "uqpu-cycle005-complete-cost-gate-v1",
+      "total_cost_usd": null
+    },
+    "FND/EQN": {
+      "access_date": "2026-09-28",
+      "archive": {
+        "displayed_size": "145.5 MB",
+        "download_result": "BLOCKED_BY_RETRIEVAL_SIZE_LIMIT",
+        "downloaded": false,
+        "local_sha256": null,
+        "locally_recomputed_md5": null,
+        "name": "data_upload.zip",
+        "publisher_displayed_md5": "d4f051ba40bf3d1940f90f9da4e9953c",
+        "response_content_length_bytes": 145469232
+      },
+      "doi": "10.5281/zenodo.14257632",
+      "evidence_class": "PRIMARY_RECORD_AND_SERVER_PREVIEW_INVENTORY_NOT_RAW_DATA_ANALYSIS",
+      "non_claims": [
+        "The archive was not downloaded, parsed, or statistically reanalyzed.",
+        "The publisher MD5 was not recomputed locally.",
+        "Directory names alone do not establish units, columns, uncertainty, or a project result.",
+        "No device reproduction or logical-memory performance claim is made."
+      ],
+      "preview_inventory": {
+        "sampled_directory_families": {
+          "d5_phase_flip_nbar": [
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5
+          ],
+          "first_d3_phase_flip_nbar": [
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0
+          ],
+          "second_d3_phase_flip_nbar": [
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0
+          ]
+        },
+        "scope": "SERVER_PREVIEW_ONLY_NOT_A_COMPLETE_LOCAL_ARCHIVE_WALK",
+        "top_level_entries": [
+          {
+            "displayed_size": "3.1 kB",
+            "path": "README.md"
+          },
+          {
+            "displayed_size": "2.3 MB",
+            "path": "d5_bit_flip"
+          },
+          {
+            "displayed_size": null,
+            "path": "d5_phase_flip"
+          },
+          {
+            "displayed_size": "1.0 MB",
+            "path": "first_d3_bit_flip"
+          },
+          {
+            "displayed_size": null,
+            "path": "first_d3_phase_flip"
+          },
+          {
+            "displayed_size": "1.0 MB",
+            "path": "second_d3_bit_flip"
+          },
+          {
+            "displayed_size": null,
+            "path": "second_d3_phase_flip"
+          }
+        ]
+      },
+      "provenance_gates": {
+        "bit_flip_mapping_validated": false,
+        "column_definitions": null,
+        "file_formats": null,
+        "license": null,
+        "license_observation": "NOT_DISPLAYED_ON_RECORD_PAGE",
+        "phase_flip_mapping_validated": false,
+        "readme_contents_read": false,
+        "uncertainty_columns_validated": false
+      },
+      "published_date": "2024-12-03",
+      "record_url": "https://zenodo.org/records/14257632",
+      "resource_type": "Dataset",
+      "schema": "uqpu-cycle005-primary-archive-inventory-gate-v1",
+      "service_contract_mapping": {
+        "basis_resolved_values_extracted": false,
+        "bit_flip_directory_family_identified": true,
+        "phase_flip_directory_families_identified": true,
+        "project_reproduction": false,
+        "uncertainty_extracted": false
+      },
+      "version": "v1"
+    },
+    "G": {
+      "calibration": {
+        "certificate_sha256": null,
+        "fixture_dynamic_range": null,
+        "valid_at_measurement": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      "events": [],
+      "evidence_class": "CHAIN_OF_CUSTODY_AND_UNCERTAINTY_SCHEMA_NO_PHYSICAL_SAMPLE",
+      "matched_control": {
+        "control_coupon_id": null,
+        "same_instrument_session": null,
+        "same_protocol_revision": null
+      },
+      "measurement_uncertainty": {
+        "components": [],
+        "coverage_factor": null,
+        "estimate": null,
+        "expanded_uncertainty": null,
+        "measurand": null,
+        "standard_uncertainty": null
+      },
+      "ready": false,
+      "remaining_dependency": "Populate a hash-linked custody chain, valid calibration, uncertainty budget, and matched control after authorization.",
+      "required_event_fields": [
+        "event_id",
+        "stage",
+        "timestamp_utc",
+        "actor",
+        "input_lot_ids",
+        "output_lot_ids",
+        "procedure_revision",
+        "artifact_sha256",
+        "previous_event_sha256"
+      ],
+      "required_stages": [
+        "feedstock_receipt",
+        "feedstock_preparation",
+        "resin_mix",
+        "cure",
+        "coupon_metrology",
+        "vna_measurement"
+      ],
+      "schema": "uqpu-cycle005-material-chain-of-custody-v1"
+    },
+    "H": {
+      "all_prerequisites_machine_resolvable": true,
+      "all_prerequisites_satisfied": false,
+      "decision": null,
+      "evidence_class": "CAPITAL_GATE_DEPENDENCY_SCHEMA_NO_FINANCIAL_DECISION",
+      "funding_or_purchase_authorized": false,
+      "gates": [
+        {
+          "capital_at_risk_thb": null,
+          "gate_id": "CAP-DMF-EMI-001",
+          "prerequisite_ids": [
+            "DMF-PR-01",
+            "DMF-PR-02",
+            "DMF-PR-03",
+            "DMF-PR-04",
+            "DMF-PR-05",
+            "DMF-PR-06",
+            "DMF-PR-07",
+            "DMF-PR-08",
+            "DMF-PR-09"
+          ],
+          "status": "NOT_AUTHORIZED"
+        },
+        {
+          "capital_at_risk_thb": null,
+          "gate_id": "CAP-BOSONIC-001",
+          "prerequisite_ids": [
+            "BOS-DATA-LOCAL-CHECKSUM",
+            "BOS-DATA-LICENSE",
+            "BOS-DATA-FORMAT",
+            "BOS-DATA-COLUMNS",
+            "BOS-BASIS-UNCERTAINTY-MAP",
+            "BOS-MATCHED-DEVICE-RESOURCES"
+          ],
+          "status": "NOT_AUTHORIZED"
+        }
+      ],
+      "schema": "uqpu-cycle005-capital-dependency-graph-v1"
+    },
+    "QOS/QSVT": {
+      "all_checks_passed": true,
+      "errors": [],
+      "evidence_class": "PERSISTED_PINNED_SDK_PARSE_PLUS_LIMITED_GRAMMAR_CHECK_NOT_PROVIDER_VALIDATION",
+      "hardware_executed": false,
+      "input_manifest_sha256": "6e2df63eb26f38b7ba1c6da26df5f31622c16b32f1349b5ded20b1f09fffe511",
+      "persisted_ci_parse": {
+        "all_passed": true,
+        "evidence_class": "PERSISTED_OUTPUT_FROM_PINNED_INDEPENDENT_SDK_PARSE_NOT_PROVIDER_VALIDATION",
+        "hardware_executed": false,
+        "input_path": "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-manifest.json",
+        "input_sha256": "6e2df63eb26f38b7ba1c6da26df5f31622c16b32f1349b5ded20b1f09fffe511",
+        "limitations": [
+          "This JSON transcribes the successful runner output retained in the GitHub Actions log; it was not regenerated locally.",
+          "Qiskit parsing does not establish provider acceptance, physical transpilation, hardware execution, performance, energy, or cost."
+        ],
+        "provenance": {
+          "branch": "research/cycle-004-delta-01-2026-09-28",
+          "commit": "5700c05682be08c2b02529a622d31f31222c39c7",
+          "github_actions_job_id": 108741564430,
+          "github_actions_run_id": 36362191884,
+          "github_actions_run_number": 490,
+          "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36362191884",
+          "persistence_date": "2026-09-28",
+          "source": "successful GitHub Actions job log"
+        },
+        "provider_transpilation": null,
+        "qiskit_version": "2.5.2",
+        "rows": [
+          {
+            "candidate_id": "mean_energy_p1",
+            "logical_depth_qiskit": 24,
+            "measurement_map": {
+              "0": 0,
+              "1": 1,
+              "2": 2,
+              "3": 3,
+              "4": 4,
+              "5": 5
+            },
+            "num_clbits": 6,
+            "num_qubits": 6,
+            "operation_counts": {
+              "cx": 18,
+              "h": 6,
+              "measure": 6,
+              "rx": 6,
+              "rz": 9
+            },
+            "parse_passed": true,
+            "qasm_sha256": "7e7817cc4f253c6edae42256aeee3a17dbe772035d578b10f5c6d380deb7d74e"
+          },
+          {
+            "candidate_id": "cvar_alpha_0.5_p1",
+            "logical_depth_qiskit": 24,
+            "measurement_map": {
+              "0": 0,
+              "1": 1,
+              "2": 2,
+              "3": 3,
+              "4": 4,
+              "5": 5
+            },
+            "num_clbits": 6,
+            "num_qubits": 6,
+            "operation_counts": {
+              "cx": 18,
+              "h": 6,
+              "measure": 6,
+              "rx": 6,
+              "rz": 9
+            },
+            "parse_passed": true,
+            "qasm_sha256": "8f6d4d41f7c6934feee9657cf213fb23212e905f549a7138679e9d0b6baa3d32"
+          }
+        ],
+        "schema": "uqpu-cycle005-persisted-cycle004-qiskit-qasm-parse-v1"
+      },
+      "provider_transpile": {
+        "artifact_sha256": null,
+        "backend": null,
+        "calibration_timestamp": null,
+        "layout": null,
+        "physical_depth": null,
+        "physical_two_qubit_gate_count": null,
+        "provider": null
+      },
+      "schema": "uqpu-cycle005-qasm-dual-check-gate-v1",
+      "stdlib_grammar_rows": [
+        {
+          "candidate_id": "mean_energy_p1",
+          "counts": {
+            "cx": 18,
+            "h": 6,
+            "measure": 6,
+            "rx": 6,
+            "rz": 9
+          },
+          "errors": [],
+          "grammar_subset": "ER6_OPENQASM3_STDGATES_DECLARATIONS_H_CX_RZ_RX_MEASURE_V1",
+          "measurement_map": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+          },
+          "passed": true,
+          "semantic_or_provider_validation": false,
+          "unsupported": [],
+          "widths": {
+            "classical_bits": 6,
+            "qubits": 6
+          }
+        },
+        {
+          "candidate_id": "cvar_alpha_0.5_p1",
+          "counts": {
+            "cx": 18,
+            "h": 6,
+            "measure": 6,
+            "rx": 6,
+            "rz": 9
+          },
+          "errors": [],
+          "grammar_subset": "ER6_OPENQASM3_STDGATES_DECLARATIONS_H_CX_RZ_RX_MEASURE_V1",
+          "measurement_map": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+          },
+          "passed": true,
+          "semantic_or_provider_validation": false,
+          "unsupported": [],
+          "widths": {
+            "classical_bits": 6,
+            "qubits": 6
+          }
+        }
+      ]
+    },
+    "SCM": {
+      "access_logs": {
+        "custodian": [
+          {
+            "action": "VERIFY_SCORE_COMMITMENT",
+            "actor": "synthetic_custodian_actor",
+            "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+            "event_sha256": "5a911b068996b9383f9eafec1135b03921bca99723dff60582ac667ccb1d9581",
+            "ordinal": 1,
+            "previous_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "action": "REVEAL_SYNTHETIC_TRUTH",
+            "actor": "synthetic_custodian_actor",
+            "artifact_sha256": "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7",
+            "event_sha256": "c2381cc0f28ddd18fed5188dca8510da1e1dd60184c8617d15c9ff264548f049",
+            "ordinal": 2,
+            "previous_event_sha256": "5a911b068996b9383f9eafec1135b03921bca99723dff60582ac667ccb1d9581"
+          }
+        ],
+        "scorer": [
+          {
+            "action": "RECEIVE_PUBLIC_PACKAGE",
+            "actor": "synthetic_scorer_actor",
+            "artifact_sha256": "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc",
+            "event_sha256": "5907061c4fb7af66c66dacd606c89dbf1ee34abdaef7be539245552b63dd8261",
+            "ordinal": 1,
+            "previous_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "action": "COMMIT_FROZEN_SCORES",
+            "actor": "synthetic_scorer_actor",
+            "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+            "event_sha256": "113de84f6e0ce9e287284fa5c66f41495d25e8fe1ec51252763a9132ade852c3",
+            "ordinal": 2,
+            "previous_event_sha256": "5907061c4fb7af66c66dacd606c89dbf1ee34abdaef7be539245552b63dd8261"
+          },
+          {
+            "action": "REQUEST_REVEAL_AFTER_SCORE_COMMIT",
+            "actor": "synthetic_scorer_actor",
+            "artifact_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83",
+            "event_sha256": "362ac0ea81a5bbff8473c0ed59ab25697a2d9ff2b996732e9d21924d7418e97d",
+            "ordinal": 3,
+            "previous_event_sha256": "113de84f6e0ce9e287284fa5c66f41495d25e8fe1ec51252763a9132ade852c3"
+          }
+        ]
+      },
+      "evidence_class": "SYNTHETIC_CHAINED_ACCESS_LOG_REHEARSAL_NOT_OPERATIONAL_BLINDING",
+      "human_or_physical_data": false,
+      "independent_site": false,
+      "input_custodian_file_sha256": "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7",
+      "input_public_file_sha256": "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc",
+      "non_claims": [
+        "Actor labels are logical roles, not independently authenticated people or systems.",
+        "No human, biological, paranormal, cross-realm, or physical-sensor evidence exists."
+      ],
+      "operational_status": "SYNTHETIC_TWO_ACTOR_LOGIC_REHEARSAL_SAME_PROCESS_AND_REPOSITORY",
+      "pre_registered_reveal_rule": {
+        "handoff_validation_errors": [],
+        "rule": "custodian reveal only after scorer score-commit event is hash-linked and handoff validation passes",
+        "rule_satisfied_in_rehearsal": true,
+        "score_commitment_sha256": "2b8a03a9f7699620d97b6a254b41fa63d1b0d7abe4ac4fb11076eee39d389f83"
+      },
+      "schema": "uqpu-cycle005-scm-two-actor-rehearsal-v1",
+      "separate_operating_system_principals": false,
+      "study_id": "SCM-P2-CAL-001-SYNTHETIC"
+    }
+  },
+  "schema": "uqpu-cycle005-delta01-integrated-gates-v1",
+  "status": "LOCAL_SOFTWARE_MEASUREMENT_SOURCE_INVENTORY_AND_FAIL_CLOSED_GATES_NO_EVIDENCE_PROMOTION"
+}

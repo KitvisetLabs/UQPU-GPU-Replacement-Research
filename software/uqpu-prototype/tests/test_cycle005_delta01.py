@@ -28,6 +28,8 @@ AI_BASELINE = ROOT / "benchmarks/results/batch039-ai-cost-002-classical-baseline
 CYCLE004_PUBLIC = ROOT / "benchmarks/experiments/cycle004-delta01-scm-cal001-public-handoff.json"
 CYCLE004_TRUTH = ROOT / "benchmarks/results/cycle004-delta01-scm-cal001-custodian-truth.json"
 PERSISTED_QISKIT = ROOT / "benchmarks/results/cycle005-delta01-cycle004-qiskit-ci-parse.json"
+PACKET = ROOT / "benchmarks/results/cycle005-delta01-integrated-gates.json"
+SCM_REHEARSAL = ROOT / "benchmarks/results/cycle005-delta01-scm-cal001-synthetic-rehearsal.json"
 
 
 def _load(path):
@@ -168,6 +170,34 @@ class Cycle005Delta01Tests(unittest.TestCase):
         self.assertEqual(row["persisted_ci_parse"]["qiskit_version"], "2.5.2")
         self.assertIsNone(row["provider_transpile"]["physical_depth"])
         self.assertFalse(row["hardware_executed"])
+
+    def test_committed_cycle005_artifacts_are_hash_bound_and_cover_all_twelve_lanes(self):
+        self.assertTrue(PACKET.exists(), "Cycle 005 integrated packet must be committed")
+        self.assertTrue(SCM_REHEARSAL.exists(), "Cycle 005 SCM rehearsal must be committed")
+        self.assertEqual(
+            hashlib.sha256(PACKET.read_bytes()).hexdigest(),
+            "8565b48b474790755ac9f5ba97312f20d13bfd2167ab8ea4ad2abcb4a0818825",
+        )
+        self.assertEqual(
+            hashlib.sha256(SCM_REHEARSAL.read_bytes()).hexdigest(),
+            "be21951766c637047bb5b73267dd164f638e2de85c42749cb00603a572555c6f",
+        )
+        packet = _load(PACKET)
+        rehearsal = _load(SCM_REHEARSAL)
+        self.assertEqual(packet["cycle"], "005")
+        self.assertEqual(packet["delta"], "01")
+        self.assertEqual(
+            set(packet["lanes"]),
+            {"A", "B", "C", "D", "E", "F", "G", "H", "FND/EQN", "SCM", "AI-COST", "QOS/QSVT"},
+        )
+        self.assertEqual(
+            packet["generator_code_commit"],
+            "6b71722d7e19649b5b54b6a1a7105b9795881f0f",
+        )
+        self.assertTrue(packet["lanes"]["QOS/QSVT"]["all_checks_passed"])
+        self.assertTrue(packet["lanes"]["F"]["refusal_active"])
+        self.assertFalse(packet["lanes"]["H"]["funding_or_purchase_authorized"])
+        self.assertEqual(rehearsal, packet["lanes"]["SCM"])
 
 
 if __name__ == "__main__":
