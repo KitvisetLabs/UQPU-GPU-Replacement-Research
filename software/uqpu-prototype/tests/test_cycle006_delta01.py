@@ -44,6 +44,9 @@ PACKET = ROOT / "benchmarks/results/cycle006-delta01-integrated-gates.json"
 SCORER = ROOT / "benchmarks/experiments/cycle006-delta01-scm-scorer-package.json"
 CUSTODIAN = ROOT / "benchmarks/results/cycle006-delta01-scm-custodian-package.json"
 REVEAL_AUDIT = ROOT / "benchmarks/results/cycle006-delta01-scm-reveal-audit.json"
+LANE_LEDGER = ROOT / "benchmarks/results/cycle006-delta01-synchronized-lane-ledger.json"
+CYCLE_REPORT = ROOT / "docs/SYNCHRONIZED_CYCLE_006_EXECUTION_DELTA_01_2026-09-28.md"
+NEXT_HANDOFF = ROOT / "docs/SYNCHRONIZED_CYCLE_007_HANDOFF_2026-09-28.md"
 
 
 def _load(path: Path) -> dict:
@@ -214,6 +217,7 @@ class Cycle006Delta01Tests(unittest.TestCase):
             SCM_MATH: "97ac82df2ad047ac2a563083864c1b69d973b3c1928ec8be65a5758253f694f5",
             SOURCE: "cc5ee23fb9b2f3d8e75fc80c749aa299dd146e52cc5b468e9d9f4a433b96d52c",
             PACKET: "96ea0093661daa4ced1f6a652e87e26ae952d0e851f6b174542ea1037e998cef",
+            LANE_LEDGER: "55f747bae960b303bda8d7dae5f004b77e1352d83871a4de38764f573123fdb6",
             SCORER: "b42f21ff14b468346ae1f4937edaee5c62efb150245a5f1302075fcd8707b2f3",
             CUSTODIAN: "198f0ed1d840b816cd92236882498994a5681c6d02ecc70f0f69f15daed965cb",
             REVEAL_AUDIT: "3f5eab3053a6c2a728501d42bbfbba704761dca76c3ff87c3c9014709076145b",
@@ -273,6 +277,32 @@ class Cycle006Delta01Tests(unittest.TestCase):
         self.assertEqual(math_gate["validation"]["scm_equation_count"], 19)
         self.assertFalse(math_gate["new_physical_law_claim"])
         self.assertFalse(math_gate["spiritual_channel_claim"])
+
+    def test_cycle006_closeout_report_and_cycle007_handoff_cover_all_lanes(self):
+        ledger = _load(LANE_LEDGER)
+        self.assertEqual(ledger["cycle"], "006")
+        self.assertEqual(ledger["next_cycle"], "007")
+        self.assertEqual(
+            ledger["integrated_packet_sha256"],
+            hashlib.sha256(PACKET.read_bytes()).hexdigest(),
+        )
+        self.assertEqual(set(ledger["lanes"]), {
+            "A", "B", "C", "D", "E", "F", "G", "H",
+            "FND/EQN", "SCM", "AI-COST", "QOS/QSVT",
+        })
+        self.assertTrue(
+            all(row["status"] == "BLOCKED_WITH_PROGRESS" for row in ledger["lanes"].values())
+        )
+        report = CYCLE_REPORT.read_text(encoding="utf-8")
+        handoff = NEXT_HANDOFF.read_text(encoding="utf-8")
+        for lane in ledger["lanes"]:
+            self.assertIn(f"| {lane} |", report)
+            self.assertIn(f"| {lane} |", handoff)
+        self.assertIn("Cycle 007", report)
+        self.assertIn("cycle-007-delta-01", handoff)
+        self.assertEqual(ledger["mathematical_language"]["umrl_equations"], 30)
+        self.assertEqual(ledger["mathematical_language"]["scm_equations"], 19)
+        self.assertTrue(ledger["mathematical_language"]["formal_specification_valid"])
 
 
 if __name__ == "__main__":
