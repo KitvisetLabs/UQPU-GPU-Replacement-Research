@@ -2,7 +2,7 @@
 
 | Date | Branch | Base closeout | State |
 |---|---|---|---|
-| 2026-09-28 | `research/cycle-008-delta-01-2026-09-28` | Cycle 007 commit `110d086d1d88adad19f73ae07adc7dccf3de49e4` | ACTIVE / EXECUTABLE ACCEPTANCE PUBLISHED / NO EVIDENCE PROMOTION |
+| 2026-09-28 | `research/cycle-008-delta-01-2026-09-28` | Cycle 007 commit `110d086d1d88adad19f73ae07adc7dccf3de49e4` | CLOSED / EXACT-SHA ACTIONS #510 PASSED 8/8 / NO EVIDENCE PROMOTION |
 
 ## Integrated contribution
 
@@ -41,23 +41,16 @@ gate passed, not that the lane's external evidence gate is closed.
 | AI-COST | Synthetic train/held-out and completeness gates reject split leakage and missing energy; a complete fixture is schema-valid but evidence-inadmissible. | Candidate quality, training/service cost, energy, and performance evidence. |
 | QOS/QSVT | The frozen ER6 measurement-map certificate passes; remapping and negative logical depth fail. | General syntax/semantic proof, provider transpilation, or hardware execution. |
 
-## Verification and closeout gate
+## Cycle 008 closeout — exact-commit CI verified
 
-- The prior all-lane checkpoint `7fd78c362f936e49567d61ae9e6b21f7c8934288`
-  passed GitHub Actions **#509** (run ID `36416826035`, all 8 jobs). This delta
-  expands that checkpoint with a second A-lane fixture, stricter AI-COST and
-  calibration assumptions, and the full acceptance artifact below. The earlier
-  `cycle008-delta01-executable-evidence.json` remains historical; this report
-  uses the regenerated `cycle008-delta01-executable-acceptance.json`.
-- Cycle 008 focused suite: **24 tests passed**, no skips.
-- Full prototype suite: **491 tests run**, **483 passed**, **8 optional skips**.
-- After integrating the upstream checkpoint tests, the executable acceptance runner was rerun; it regenerates the two-fixture solver record,
-  three fresh-process I/O screen, and all twelve lane statuses.
-- The typed-math audit hashes its registry, generator, implementation, tests,
-  and contract documents; its artifact-to-generator check passes.
-- Exact-commit GitHub Actions is required before Cycle 008 closeout. The
-  closeout record will name that SHA and run; the user research branch remains
-  separate from `main`.
+- The published code/evidence commit `70d5346e548c7307aa372f6408b90b64f89964d9` passed GitHub Actions **#510** (run ID `36421343187`), with **8/8 jobs successful**.
+- The Cycle 008 focused suite passed **24/24** tests. The full prototype suite ran **491 tests**, with **483 passed** and **8 optional-environment skips**.
+- All twelve lane deltas and the typed-math/SCM artifacts are present on the dedicated research branch. Each lane remains `BLOCKED_WITH_PROGRESS`; no external evidence gate is represented as closed.
+- The closeout changes are confined to this report, the synchronized ledger, and `WORKLOG.md`. These paths do not match the push workflow filters, so no additional Actions run is expected for the metadata-only closeout.
+
+Cycle 008 is closed because each tracked lane has a concrete reviewable contribution, the shared interfaces and synchronized artifacts are integrated, and the exact code/evidence SHA passed the repository workflow. This records cycle completion only; no scientific goal or external evidence gate was promoted. The branch remains unmerged to `main` under the repository process.
+
+**Next consecutive cycle:** Cycle 009 starts on `research/cycle-009-delta-01-2026-09-28` from the verified Cycle 008 closeout commit, using `docs/SYNCHRONIZED_CYCLE_009_HANDOFF_2026-09-28.md`.
 
 ## Evidence boundary
 

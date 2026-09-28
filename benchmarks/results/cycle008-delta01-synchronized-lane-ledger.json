@@ -15,6 +15,24 @@
     "A dimensionally homogeneous expression is not thereby a true or novel physical law."
   ],
   "base_commit": "110d086d1d88adad19f73ae07adc7dccf3de49e4",
+  "closeout": {
+    "all_12_lane_deltas_present": true,
+    "all_lanes_status": "BLOCKED_WITH_PROGRESS",
+    "focused_tests_passed": 24,
+    "full_suite_passed": 483,
+    "full_suite_tests_run": 491,
+    "metadata_closeout_paths_trigger_workflow": false,
+    "next_cycle": "009",
+    "optional_environment_skips": 8,
+    "push_ci": {
+      "conclusion": "success",
+      "jobs_passed": 8,
+      "run_id": 36421343187,
+      "run_number": 510
+    },
+    "scientific_goal_promotion": false,
+    "tested_commit": "70d5346e548c7307aa372f6408b90b64f89964d9"
+  },
   "cross_lane_integration": [
     "A/B/C/F/AI-COST/QOS share accepted-output and provenance fields.",
     "D/E/G/F share units, calibration, uncertainty and custody fields.",
@@ -97,6 +115,7 @@
   },
   "date": "2026-09-28",
   "delta": "01",
+  "full_cycle_closeout_pending": false,
   "lane_count": 12,
   "lanes": {
     "A": {
@@ -378,10 +397,10 @@
       "SCM-MATH-022",
       "SCM-MATH-023"
     ],
-    "status": "PASS_ACTIVE_CYCLE_NOT_CLOSEOUT",
+    "status": "PASS_EXACT_SHA_CI_VERIFIED_CLOSEOUT_RECORDED",
     "unvalidated_bridge_rejected": true
   },
-  "next_falsifiable_gate": "Publish the code/evidence commit, verify that exact SHA in GitHub Actions, then record the verified run in the report and closeout ledger.",
+  "next_falsifiable_gate": "Begin the next consecutive Cycle 009 from this verified Cycle 008 closeout and execute the bounded gates in the Cycle 009 handoff.",
   "nonclaims": [
     "No measured hardware/provider/material/economic result.",
     "No new physical law, quantum advantage or GPU replacement.",
@@ -416,7 +435,7 @@
     }
   ],
   "schema": "uqpu-cycle008-delta01-synchronized-lane-ledger-v1",
-  "status": "ACTIVE_WITH_VALIDATED_MATH_AND_12_LANE_ACCEPTANCE",
+  "status": "CLOSED_ALL_12_LANES_ACCEPTANCE_ARTIFACTS_VERIFIED_NO_EVIDENCE_PROMOTION",
   "uncertainty": [
     "Solver result is one seeded generated n=12 graph; no scaling estimate is supported.",
     "Filesystem timing is a three-process local screen; cache state is uncontrolled.",
@@ -457,13 +476,31 @@
       "tests_run": 491
     },
     "github_actions": {
-      "commit_sha": "7fd78c362f936e49567d61ae9e6b21f7c8934288",
-      "current_delta_status": "PENDING_EXACT_SHA",
+      "commit_sha": "70d5346e548c7307aa372f6408b90b64f89964d9",
+      "current_delta_status": "PASS_EXACT_SHA",
       "jobs_passed": 8,
-      "run_id": "36416826035",
-      "run_number": 509,
-      "status": "PASS_PRIOR_CHECKPOINT_ONLY"
+      "run_id": 36421343187,
+      "run_number": 510,
+      "status": "PASS"
     },
+    "github_actions_history": [
+      {
+        "commit_sha": "7fd78c362f936e49567d61ae9e6b21f7c8934288",
+        "current_delta_status": "PENDING_EXACT_SHA",
+        "jobs_passed": 8,
+        "run_id": "36416826035",
+        "run_number": 509,
+        "status": "PASS_PRIOR_CHECKPOINT_ONLY"
+      },
+      {
+        "commit_sha": "70d5346e548c7307aa372f6408b90b64f89964d9",
+        "current_delta_status": "PASS_EXACT_SHA",
+        "jobs_passed": 8,
+        "run_id": 36421343187,
+        "run_number": 510,
+        "status": "PASS"
+      }
+    ],
     "historical_runner_artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
     "local_validation": "PASS",
     "runner_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
