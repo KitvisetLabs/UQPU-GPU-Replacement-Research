@@ -1,0 +1,361 @@
+{
+  "schema": "uqpu-cycle021-delta01-executable-acceptance-v1",
+  "cycle": "021",
+  "status": "PASS_LOCAL",
+  "lane_count": 12,
+  "evidence_class": "LOCAL_SOFTWARE_SYNTHETIC_MODEL_AND_FICTION_ONLY",
+  "source_sha256": {
+    "preregistered_gates": "b44e38c82c565515eed74a421ef2f6679ff64ead2d2b8001a1318633ff071fae",
+    "implementation": "235a8c634949abd8ebffdb4eb81e9a7f6f37c880683c0c60c7ffe8f4f5b740aa",
+    "shared_zip_parser": "85c729bbd7160598b93fee7f780054371077d1a978c384c066ced9132e28b09e",
+    "tests": "b0f49c891cde51923b6998e2eba8b2a0d5a09e89e3bc5f8aef0348cd79d4e29a",
+    "runner": "af238c06195ba9efd4dd95d736d55d07cd984a90bfc3ce7ae92e5872ba8c5df8",
+    "primary_source_review": "7b84081f174cf682be7e9340d98c64a1c59a01ed34da2dfbd40d7d5966ec6fda",
+    "umrl_interface": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
+  },
+  "source_evidence": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "revision_date": "2022-11-01",
+      "sections": [
+        "4.3.7",
+        "4.3.9",
+        "4.3.12"
+      ],
+      "accessed": "2026-09-28",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "accessed": "2026-09-28",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "lanes": {
+    "A": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "states": [
+        2048,
+        2048
+      ],
+      "objectives": [
+        10,
+        11
+      ],
+      "witness_hashes": [
+        "81f715e465ae67d9d1866c98afe6d43a8010051650f71ff72ed5eb312e3acfba",
+        "55f2073d08ee2a4b234f2db1d9f9a546d0c48163572123dbcd3fda59120c5248"
+      ],
+      "unchanged_edges_invariant": true,
+      "task_hash_changed": true,
+      "scaling_claim": null,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE"
+    },
+    "B": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "canonical_nested_sha256": "00119bd5fa47f3ceeaba5e617d41e5c3b67caea43f05bb151f92bba43d79bcb3",
+      "nested_duplicate_rejected": true,
+      "key_rotation_changes_bytes": true,
+      "external_authority_job_invoice": null,
+      "provider_claim": null,
+      "evidence_class": "SYNTHETIC_RECEIPT",
+      "nested_array_bytes_sha256": "edaebd7913b644006af92fff4718cecf6840846f49d7fc0b504a8acaa63fe79e",
+      "duplicate_nested_rejected": true
+    },
+    "C": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "exit_codes": [
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ]
+      ],
+      "complete": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "crash_durability": null,
+      "evidence_class": "LOCAL_PROCESS_EXIT_FIXTURE"
+    },
+    "D": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "unrelated_field_order_accepted": true,
+      "duplicate_zip64_field_rejected": true,
+      "descriptor_forms": [
+        "signed",
+        "unsigned"
+      ],
+      "payload_read": false,
+      "evidence_class": "SYNTHETIC_ZIP64_CROSS_BIND"
+    },
+    "E": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "a7b3c8c724db26256cbea55fec424869ec314fb13dce30d726b1c90b220f340e",
+      "negative_controls": {
+        "before_start": true,
+        "at_expiry": true,
+        "revoked": true
+      },
+      "physical_sample": null,
+      "evidence_class": "SYNTHETIC_CUSTODY"
+    },
+    "F": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "model": {
+        "components": 6,
+        "sigma_multiplier": 1.0,
+        "scenarios": {
+          "independent": {
+            "total_usd": [
+              2.755051025721682,
+              6.2449489742783175
+            ],
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": [
+                  2.755051025721682,
+                  6.2449489742783175
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": [
+                  1.377525512860841,
+                  3.1224744871391588
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": [
+                  0.6887627564304205,
+                  1.5612372435695794
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_NONPOSITIVE_DENOMINATOR"
+              }
+            ]
+          },
+          "missing": {
+            "total_usd": null,
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              }
+            ]
+          },
+          "indefinite": {
+            "total_usd": null,
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              }
+            ]
+          },
+          "nonfinite": {
+            "total_usd": null,
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              }
+            ]
+          }
+        },
+        "evidence_class": "MODEL_ONLY",
+        "commercial_interpretation": null
+      },
+      "components": 6,
+      "evidence_class": "MODEL_ONLY",
+      "commercial_claim": null
+    },
+    "G": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "order": [
+        "mass",
+        "length",
+        "duration",
+        "current"
+      ],
+      "order_mutation_rejected": true,
+      "pairwise_entry_count": 16,
+      "positive_semidefinite": true,
+      "calibration": null,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE"
+    },
+    "H": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "scenario_count": 6,
+      "orders_each": 24,
+      "winner_counts": [
+        54,
+        30,
+        30,
+        30
+      ],
+      "stability_bounds": [
+        0.20833333333333334,
+        0.375
+      ],
+      "capital": null,
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO"
+    },
+    "FND/EQN": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "meters_to_kilometers": [
+        1,
+        1000
+      ],
+      "roundtrip_meters": [
+        1,
+        1
+      ],
+      "source_mismatch_rejected": true,
+      "incompatible_dimension_rejected": true,
+      "source_sha256": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2",
+      "sort": [
+        "RealModel",
+        "Model"
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL"
+    },
+    "SCM": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "negative_controls": {
+        "revoked": true,
+        "replay": true
+      },
+      "sort": "Fiction",
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY"
+    },
+    "AI-COST": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "manifest": {
+        "version": 11,
+        "parent_manifest_sha256": "cbd70a25ed1d7acfc84e0e19e162dc72f97655d9376ee2df798c73d4bc51ba00",
+        "source_sha256": "4230faf43b2aacd906e10cabaa603fcd3f4f0a02b7f18a880bbf897059f333d3",
+        "split_hashes": {
+          "train": "362b2e5d9f84a403fa0fae999328e922b7bdb57772eda54b48bb5ff77fbd3e58",
+          "validation": "ecef3fd0fb07b742d559b77b2585e38e42579ed5075c12bf8f9d56a22580f273",
+          "test": "e4b4976db3c5b72f6354fa7a78ef3c93ffefac200ab89ccc84f3e547cfbbc634"
+        },
+        "split_ids": [
+          "train-01",
+          "valid-01",
+          "test-01"
+        ],
+        "metrics_sha256": "1661bc8d9c051611c44b77242c202dc4e719580d595d9161a36063e464141ebd",
+        "config_sha256": "b06794bcf08adb12c7beb114adc468f3aae408a25deb8ff27cc0c6d8552996b5",
+        "heldout_metric": null,
+        "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+        "manifest_sha256": "18281df961361f26e2122ab2166eefde04829bc29ff5a6f3ef54c149eb7d9945"
+      },
+      "split_order_mutation_rejected": true,
+      "missing_heldout_metric_candidate": null,
+      "functional_equivalence": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE"
+    },
+    "QOS/QSVT": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "basis_states_checked": 64,
+      "residual": 0,
+      "noncommuting_controls": true,
+      "resource_mutation_rejected": true,
+      "resource_bound": {
+        "gates": 24,
+        "max_qubits": 6
+      },
+      "hardware": null,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR"
+    }
+  },
+  "uncertainty": [
+    "local process only",
+    "synthetic archive vectors",
+    "finite model and ranking scenarios",
+    "fiction-only consent and synthetic lineage"
+  ],
+  "nonclaims": [
+    "no measured QPU/GPU performance or advantage",
+    "no provider authorization, invoice, commercial economics or capital result",
+    "no crash durability, calibration, physical sample, AI equivalence, new physical law or empirical SCM evidence"
+  ],
+  "payload_sha256": "61d57715cc58c7f942311bbf18b46149922656079c1109c9d2d6e34bf3f568a3"
+}

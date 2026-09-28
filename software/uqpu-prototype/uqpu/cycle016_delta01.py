@@ -117,8 +117,29 @@ def same_filesystem_concurrent_replace(directory, target_name, payloads):
     result = concurrent_subprocess_replace(root, target_name, payloads)
     if len(set(device_ids)) != 1:
         raise AssertionError("target and staging directory cross device")
+    visible_before_failure = target.read_bytes()
+    failure_fd, failure_name = tempfile.mkstemp(prefix=f".{target_name}.failure.", dir=root)
+    failure_stage = Path(failure_name)
+    failure_injected = False
+    try:
+        with os.fdopen(failure_fd, "wb") as handle:
+            handle.write(b"incomplete-prefix")
+            handle.flush()
+            raise InterruptedError("injected write interruption before replacement")
+    except InterruptedError:
+        failure_injected = True
+    finally:
+        failure_stage.unlink(missing_ok=True)
+    failure_cleanup = {
+        "interruption_injected": failure_injected,
+        "staged_name_removed": not failure_stage.exists(),
+        "active_target_unchanged": target.read_bytes() == visible_before_failure,
+        "visible_payload_complete": visible_before_failure == b"cycle016-old-complete" or any(visible_before_failure == p for p in payloads),
+    }
+    if not all(failure_cleanup.values()):
+        raise AssertionError("injected failed stage changed or corrupted target")
     return {"device_id_match": True, "device_id_values": len(set(device_ids)), "replacement": result,
-            "evidence_class": "SAME_FILESYSTEM_PROCESS_FIXTURE", "crash_durability": None}
+            "failure_cleanup": failure_cleanup, "evidence_class": "SAME_FILESYSTEM_PROCESS_FIXTURE", "crash_durability": None}
 
 
 def zip64_central_entry_gate(record, descriptor, disk_sizes):
@@ -147,6 +168,8 @@ def zip64_central_entry_gate(record, descriptor, disk_sizes):
         if size > len(extra) - pos:
             raise ValueError("extra field size")
         if tag == 0x0001:
+            if zip64 is not None:
+                raise ValueError("duplicate ZIP64 extended information field")
             zip64 = extra[pos:pos + size]
         pos += size
     needs_zip64 = comp32 == 0xFFFFFFFF or uncomp32 == 0xFFFFFFFF or local_offset32 == 0xFFFFFFFF or disk_start16 == 0xFFFF
@@ -166,14 +189,19 @@ def zip64_central_entry_gate(record, descriptor, disk_sizes):
         raise ValueError("unexpected ZIP64 extra tail")
     if values["disk"] >= len(disk_sizes) or values["local_offset"] + 30 > disk_sizes[values["disk"]]:
         raise ValueError("local header disk-relative offset")
-    if len(descriptor) != 24:
-        raise ValueError("ZIP64 data descriptor width")
-    dd_sig, dd_crc, dd_comp, dd_uncomp = struct.unpack("<4sIQQ", descriptor)
-    if dd_sig != b"PK\x07\x08" or dd_crc != crc or dd_comp != values["compressed"] or dd_uncomp != values["uncompressed"]:
+    if len(descriptor) == 24 and descriptor[:4] == b"PK\x07\x08":
+        dd_crc, dd_comp, dd_uncomp = struct.unpack_from("<IQQ", descriptor, 4)
+        descriptor_signature = True
+    elif len(descriptor) == 20:
+        dd_crc, dd_comp, dd_uncomp = struct.unpack("<IQQ", descriptor)
+        descriptor_signature = False
+    else:
+        raise ValueError("ZIP64 data descriptor width/signature")
+    if dd_crc != crc or dd_comp != values["compressed"] or dd_uncomp != values["uncompressed"]:
         raise ValueError("data descriptor disagreement")
     return {"filename_sha256": hashlib.sha256(name).hexdigest(), "disk": values["disk"],
             "local_header_offset": values["local_offset"], "compressed_size": values["compressed"],
-            "uncompressed_size": values["uncompressed"], "payload_read": False,
+            "uncompressed_size": values["uncompressed"], "descriptor_signature_present": descriptor_signature, "payload_read": False,
             "evidence_class": "SYNTHETIC_ZIP64_DIRECTORY_METADATA"}
 
 
@@ -199,10 +227,21 @@ def custody_revocation_fork_suite(now):
         verify_custody_chain(fork, registry, now)
     except ValueError:
         fork_rejected = True
-    if not revoked or not fork_rejected:
-        raise AssertionError("revocation/fork control accepted")
+    scope_changed = False
+    try:
+        verify_custody_chain(events, {"issuer-a": {"intake"}, "issuer-b": {"other"}, "issuer-c": {"transfer"}}, now)
+    except ValueError:
+        scope_changed = True
+    expired = False
+    try:
+        verify_custody_chain(events, registry, "2027-01-01")
+    except ValueError:
+        expired = True
+    if not revoked or not fork_rejected or not scope_changed or not expired:
+        raise AssertionError("revocation/fork/scope/expiry control accepted")
     return {"valid_chain_events": valid["event_count"], "revoked_issuer_rejected": revoked,
-            "fork_rejected": fork_rejected, "historical_hashes_immutable": True,
+            "fork_rejected": fork_rejected, "scope_change_rejected": scope_changed, "expiry_rejected": expired,
+            "historical_hashes_immutable": [event["event_sha256"] for event in events],
             "evidence_class": "SYNTHETIC_CUSTODY_NEGATIVE_CONTROL", "physical_sample_claim": None}
 
 
@@ -235,12 +274,30 @@ def rational_interval_divide(left, right, source_bytes, unit_ratios):
     keys = {"unit", "dimension", "domain_sort", "evidence_sort", "source_sha256", "lower", "upper"}
     if not isinstance(left, dict) or not isinstance(right, dict) or set(left) != keys or set(right) != keys:
         raise ValueError("typed interval schema")
+    if not isinstance(source_bytes, bytes) or not source_bytes:
+        raise ValueError("source bytes")
     digest = hashlib.sha256(source_bytes).hexdigest()
     if left["source_sha256"] != digest or right["source_sha256"] != digest:
         raise ValueError("source binding")
     if left["domain_sort"] != right["domain_sort"] or left["evidence_sort"] != right["evidence_sort"]:
         raise ValueError("sort mismatch")
-    lo_b, hi_b = Fraction(*right["lower"]), Fraction(*right["upper"])
+    if (left["domain_sort"] not in ("RealModel", "Fiction")
+            or (left["domain_sort"] == "Fiction") != (left["evidence_sort"] == "Fiction")):
+        raise ValueError("cross-sort firewall")
+    if (not isinstance(left["unit"], str) or not left["unit"] or not isinstance(right["unit"], str) or not right["unit"]
+            or not isinstance(left["dimension"], list) or not isinstance(right["dimension"], list)
+            or len(left["dimension"]) == 0 or len(left["dimension"]) != len(right["dimension"])
+            or any(not isinstance(x, int) or isinstance(x, bool) for x in left["dimension"] + right["dimension"])):
+        raise ValueError("unit/dimension type")
+    def fraction_endpoint(pair):
+        if (not isinstance(pair, (list, tuple)) or len(pair) != 2
+                or any(not isinstance(x, int) or isinstance(x, bool) for x in pair) or pair[1] <= 0):
+            raise ValueError("rational endpoint")
+        return Fraction(pair[0], pair[1])
+    lo_b, hi_b = fraction_endpoint(right["lower"]), fraction_endpoint(right["upper"])
+    lo_a, hi_a = fraction_endpoint(left["lower"]), fraction_endpoint(left["upper"])
+    if lo_a > hi_a or lo_b > hi_b:
+        raise ValueError("interval order")
     if lo_b <= 0 <= hi_b:
         return {"result": None, "status": "NULL_ZERO_CROSSING_DENOMINATOR"}
     ratio = unit_ratios.get(f"{left['unit']}|{right['unit']}")
@@ -249,7 +306,6 @@ def rational_interval_divide(left, right, source_bytes, unit_ratios):
     dim = [a - b for a, b in zip(left["dimension"], right["dimension"])]
     if ratio.get("dimension") != dim:
         raise ValueError("quotient dimension mismatch")
-    lo_a, hi_a = Fraction(*left["lower"]), Fraction(*left["upper"])
     candidates = [lo_a / lo_b, lo_a / hi_b, hi_a / lo_b, hi_a / hi_b]
     lo, hi = min(candidates), max(candidates)
     return {"result": {"unit": ratio["unit"], "dimension": dim, "domain_sort": left["domain_sort"],
@@ -293,6 +349,13 @@ def ai_lineage_manifest_v6(parent_v5, source_bytes, splits, metrics, config):
         raise ValueError("parent v5 digest")
     if any(x is None for x in (source_bytes, splits, metrics, config)):
         return {"manifest": None, "candidate_result": None, "status": "NULL_MISSING_LINEAGE"}
+    if (not isinstance(source_bytes, bytes) or not source_bytes
+            or not isinstance(splits, dict) or set(splits) != {"train", "validation", "test"}
+            or any(not isinstance(rows, list) or not rows for rows in splits.values())
+            or not isinstance(metrics, dict) or set(metrics) != {"train", "validation", "test"}
+            or any(not isinstance(row, dict) or not row for row in metrics.values())
+            or not isinstance(config, dict) or not config):
+        return {"manifest": None, "candidate_result": None, "status": "NULL_INCOMPLETE_OR_INVALID_LINEAGE"}
     lineage = ai_lineage_manifest(source_bytes, splits, metrics, config)
     body = {"version": 6, "parent_manifest_sha256": parent_v5["manifest_sha256"],
             "source_sha256": lineage["source_sha256"], "split_hashes": lineage["split_hashes"],
