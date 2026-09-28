@@ -1,0 +1,63 @@
+{
+  "batch": 41,
+  "gate": "FUND-PARTICLE-001",
+  "classification": "ELEMENTARY_PARTICLE_TECHNOLOGY_BRIDGE_MATRIX_ESTABLISHED",
+  "evidence_level": "LITERATURE_GROUNDED_SCREENING_MATRIX_NOT_DEVICE_DEMONSTRATION",
+  "scope": "elementary particles are the primary research objects; QED/QCD/electroweak/QFT/string-inspired frameworks are explanatory or design tools rather than substitute research objects",
+  "standard_model_particle_coverage_count": 17,
+  "candidate_count_total": 22,
+  "classification_counts": {
+    "DIRECT_PARTICLE_TECH_BRIDGE": 2,
+    "INDIRECT_PARTICLE_DERIVED_BRIDGE": 4,
+    "NO_CURRENT_CONTROLLABLE_BRIDGE": 5,
+    "SIMULATED_PARTICLE_DYNAMICS_BRIDGE": 6,
+    "SPECULATIVE_PARTICLE_CANDIDATE_ONLY": 5
+  },
+  "direct_particle_technology_bridges": ["electron", "photon"],
+  "highest_nonbaseline_screening_scores": [
+    ["electron neutrino", 30],
+    ["muon neutrino", 30],
+    ["muon", 29],
+    ["tau neutrino", 29],
+    ["up quark", 25],
+    ["down quark", 25],
+    ["gluon", 25]
+  ],
+  "up_down_quark_finding": {
+    "technology_interest": "up/down flavor and associated quantum-number differences can be used as research primitives indirectly through hadron/isospin structure or encoded gauge-theory simulations",
+    "direct_device_status": "not established",
+    "hard_blocker": "QCD confinement prevents ordinary isolated free-quark device states",
+    "next_gate": "FUND-PARTICLE-002"
+  },
+  "neutrino_finding": {
+    "technology_interest": "three-flavor dynamics has already been encoded on qubit/qutrit hardware, making it an experimentally grounded particle-dynamics bridge",
+    "direct_device_status": "not established",
+    "hard_blocker": "weak interaction makes direct state preparation, switching and readout impractical for ordinary devices",
+    "next_gate": "FUND-PARTICLE-003"
+  },
+  "speculative_candidate_rule": "axion/ALP, sterile-neutrino, dark-photon, neutralino and graviton candidates may generate sensor/simulator/model research but cannot be promoted to direct-particle technology while empirical status remains unconfirmed",
+  "screening_score_warning": "ordinal research-priority heuristic only; not measured performance, energy, cost, fidelity or technological readiness level",
+  "next_gates": [
+    "FUND-PARTICLE-002: up/down quark -> isospin/hadron/gauge-simulator primitive audit",
+    "FUND-PARTICLE-003: neutrino flavor -> qutrit information-encoding/resource audit",
+    "FUND-PARTICLE-004: compare particle-derived primitives against electron/photon baselines at fixed functionality"
+  ],
+  "non_claims": {
+    "direct_isolated_quark_device": false,
+    "direct_neutrino_computing_device": false,
+    "bsm_particle_discovery": false,
+    "string_particle_hardware": false,
+    "quantum_advantage": false,
+    "gpu_npu_ram_dram_hbm_replacement": false,
+    "one_hundred_million_x_saving": false,
+    "data_center_to_tens_of_thousands_thb_equivalence": false,
+    "new_physical_law": false
+  },
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "elementary-particle taxonomy, literature triage, technology-bridge screening model, executable matrix/tests/results and documentation"
+  }
+}
