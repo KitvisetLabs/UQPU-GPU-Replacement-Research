@@ -1,0 +1,477 @@
+{
+  "all_external_gates_closed": false,
+  "all_lane_fixture_acceptance_passed": true,
+  "base_closeout": "6114b36912f2e3b93a6571ee45091f831e9c7eb6",
+  "branch": "research/cycle-015-delta-01-2026-09-28",
+  "cycle": "015",
+  "date": "2026-09-28",
+  "delta": "01",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "maximum_states_observed": 32,
+      "rows": [
+        {
+          "contract": {
+            "accepted_output": "exact-max-cut-weight",
+            "baseline": "bounded-exhaustive-classical",
+            "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+            "result_sha256": "6aa08552d56073d64a422fe10e78a106a57a730b9fa3ec1c7d68d043b9dc51d6",
+            "scaling_claim": null,
+            "workload_sha256": "5d55af735c6298fba9d34803d3645098397bd1df0dce3c9b9259b49c6626eff9"
+          },
+          "edge_presentation_sha256": "d438e9d53f28b233a25a6e124323d9684150a9c110074dda4cf89e1c5f705e6d",
+          "result": {
+            "best_cut_weight": 18,
+            "graph_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b",
+            "optimal_state_set_sha256": "9e2fc64b6bf2097f840c11932e2294bc97e4efd47074518004911605c6898e9e",
+            "states": 32
+          },
+          "seed_label": 0,
+          "task_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b"
+        },
+        {
+          "contract": {
+            "accepted_output": "exact-max-cut-weight",
+            "baseline": "bounded-exhaustive-classical",
+            "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+            "result_sha256": "6aa08552d56073d64a422fe10e78a106a57a730b9fa3ec1c7d68d043b9dc51d6",
+            "scaling_claim": null,
+            "workload_sha256": "8fab656562627bfb18ea65423d73b5815ff95f8efe35e656cec39254a2b54b5e"
+          },
+          "edge_presentation_sha256": "bc47919d0c86cf76f71c1b02d13af2734db6f3befb3e5ac16bba6caeb307f1bf",
+          "result": {
+            "best_cut_weight": 18,
+            "graph_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b",
+            "optimal_state_set_sha256": "9e2fc64b6bf2097f840c11932e2294bc97e4efd47074518004911605c6898e9e",
+            "states": 32
+          },
+          "seed_label": 1,
+          "task_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b"
+        },
+        {
+          "contract": {
+            "accepted_output": "exact-max-cut-weight",
+            "baseline": "bounded-exhaustive-classical",
+            "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+            "result_sha256": "6aa08552d56073d64a422fe10e78a106a57a730b9fa3ec1c7d68d043b9dc51d6",
+            "scaling_claim": null,
+            "workload_sha256": "52373297bac0aa1ab5a29af2711933e786d3d1e7deb83a06edeb3bee782000e3"
+          },
+          "edge_presentation_sha256": "4b25bc98b775fb296ae00583d02367ccf1495c39479c17ef667fc9eda8d7acb3",
+          "result": {
+            "best_cut_weight": 18,
+            "graph_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b",
+            "optimal_state_set_sha256": "9e2fc64b6bf2097f840c11932e2294bc97e4efd47074518004911605c6898e9e",
+            "states": 32
+          },
+          "seed_label": 7,
+          "task_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b"
+        },
+        {
+          "contract": {
+            "accepted_output": "exact-max-cut-weight",
+            "baseline": "bounded-exhaustive-classical",
+            "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+            "result_sha256": "6aa08552d56073d64a422fe10e78a106a57a730b9fa3ec1c7d68d043b9dc51d6",
+            "scaling_claim": null,
+            "workload_sha256": "c7453f89f2b06bd303b40c53c5768336e67d6f5de1f08ed7feb2d0c9e9df3fb4"
+          },
+          "edge_presentation_sha256": "d277d81ce62daeb3aa8a26da8b46c84658deef2e847ce481bfba837e8dfedc8d",
+          "result": {
+            "best_cut_weight": 18,
+            "graph_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b",
+            "optimal_state_set_sha256": "9e2fc64b6bf2097f840c11932e2294bc97e4efd47074518004911605c6898e9e",
+            "states": 32
+          },
+          "seed_label": 31,
+          "task_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b"
+        }
+      ],
+      "scaling_claim": null,
+      "seed_semantics": "deterministic edge presentation labels; solver is exhaustive and nonrandom",
+      "state_bound": 1024,
+      "task_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "manifest": {
+        "config_sha256": "1b7944978ee80a058756afa0c8632fed7944bacccaa530ddd7a7414b8095fdad",
+        "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+        "functional_equivalence": null,
+        "manifest_sha256": "4dd798352a373d29fe7a05c19232e9fa0b4b3e3275548291ecba5a0117fde805",
+        "metrics_sha256": "1661bc8d9c051611c44b77242c202dc4e719580d595d9161a36063e464141ebd",
+        "parent_manifest_sha256": "dfb7f476ee2312493f9322b4ef67d3f437c8d78a7b8f641c7bb45200afebe6d8",
+        "source_sha256": "3c53ffd9bc95d372c7f53036b7b1a86ca681ae00571647f881f6e6813385d04d",
+        "split_hashes": {
+          "test": "71c8a47c20716f7027a94c3d1c3a1f86ed80dd82078b4f9737a38233cfc09e6a",
+          "train": "8c5956b883fbc60a7332d613947ffc7913eddcd2581f4bf3d6b3938e4cdd2029",
+          "validation": "731808a27f6e25a9fc4f2f2fdc1dd238d6fdf98bd6f42cb20e0600ad745cf52a"
+        },
+        "version": 5
+      },
+      "status": "LINEAGE_BOUND_SYNTHETIC_ONLY"
+    },
+    "B": {
+      "authorization": null,
+      "evidence_class": "SYNTHETIC_RECEIPT_ENVELOPE",
+      "invoice": null,
+      "job_id": null,
+      "provider_claim": null,
+      "provider_status": "NOT_EXECUTED",
+      "request_sha256": "4ae7f7c0ac44d10e61d3d6c04060e5671f0ddbfadb28faf2758932737de1192d",
+      "schema": "receipt-v2",
+      "signature": null
+    },
+    "C": {
+      "active_names_survived_stale_cleanup": true,
+      "active_payload_sha256_at_barrier": [
+        "73c118ec3ea38171d2d4a6a58adfa93375c59745ab9a9ae94007e6ecbf349e23",
+        "48d0003c0e3d07a0151077155cf4e29dde99536454d22444d96928a3384eb581",
+        "74c70d565841a949393be062208b55fcbdfef826b1bb0afb8ab776e62d0c106d"
+      ],
+      "durability": "PROCESS_TERMINATION_ONLY",
+      "evidence_class": "CONCURRENT_PROCESS_FIXTURE",
+      "exit_codes": [
+        0,
+        23,
+        23
+      ],
+      "visible_complete": true,
+      "visible_sha256": "73c118ec3ea38171d2d4a6a58adfa93375c59745ab9a9ae94007e6ecbf349e23",
+      "writer_count": 3
+    },
+    "D": {
+      "central_directory_disk": 1,
+      "central_directory_offset": 64,
+      "central_directory_size": 8,
+      "entries_on_disk": 1,
+      "evidence_class": "SYNTHETIC_ZIP64_METADATA",
+      "extensible_data_bytes": 9,
+      "extension_ids": [
+        51966
+      ],
+      "payload_read": false,
+      "total_disks": 2,
+      "total_entries": 1,
+      "zip64_eocd_bytes": 65
+    },
+    "E": {
+      "event_count": 3,
+      "evidence_class": "SYNTHETIC_CUSTODY_CHAIN",
+      "final_event_sha256": "6d99e479a140058f7324a210e8a43cdb78c24f8eb7fd37d31def1e74e8d4e1e9",
+      "issuer_sequence": [
+        "issuer-a",
+        "issuer-b",
+        "issuer-c"
+      ],
+      "physical_sample_claim": null,
+      "same_sample_and_path": true
+    },
+    "F": {
+      "commercial_interpretation": null,
+      "components": 5,
+      "evidence_class": "MODEL_ONLY",
+      "scenarios": {
+        "fully_correlated_stress": {
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": [
+                6.0,
+                13.0
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": [
+                3.0,
+                6.5
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": [
+                1.5,
+                3.25
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_NONPOSITIVE_DENOMINATOR"
+            }
+          ],
+          "total_usd": [
+            6.0,
+            13.0
+          ]
+        },
+        "independent": {
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": [
+                6.552786404500042,
+                12.447213595499958
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": [
+                3.276393202250021,
+                6.223606797749979
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": [
+                1.6381966011250104,
+                3.1118033988749896
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_NONPOSITIVE_DENOMINATOR"
+            }
+          ],
+          "total_usd": [
+            6.552786404500042,
+            12.447213595499958
+          ]
+        },
+        "invalid_non_psd": {
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_INVALID_COVARIANCE"
+            }
+          ],
+          "total_usd": null
+        },
+        "zero": {
+          "outputs": [
+            {
+              "accepted_outputs": 1,
+              "per_output_usd": [
+                7.0,
+                12.0
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 2,
+              "per_output_usd": [
+                3.5,
+                6.0
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 4,
+              "per_output_usd": [
+                1.75,
+                3.0
+              ],
+              "status": "MODEL_ONLY_COVARIANCE_STRESS"
+            },
+            {
+              "accepted_outputs": 0,
+              "per_output_usd": null,
+              "status": "NULL_NONPOSITIVE_DENOMINATOR"
+            }
+          ],
+          "total_usd": [
+            7.0,
+            12.0
+          ]
+        }
+      },
+      "sigma_multiplier": 1.0
+    },
+    "FND/EQN": {
+      "dimension": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "domain_sort": "RealModel",
+      "evidence_sort": "Model",
+      "lower": [
+        3,
+        2
+      ],
+      "source_sha256": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2",
+      "unit": "m*s",
+      "upper": [
+        6,
+        1
+      ]
+    },
+    "G": {
+      "calibration": null,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "matrix": [
+        [
+          1.0,
+          0.2
+        ],
+        [
+          0.2,
+          0.5
+        ]
+      ],
+      "measurand_order": [
+        "cost-a",
+        "cost-b"
+      ],
+      "positive_semidefinite": true
+    },
+    "H": {
+      "alternatives": [
+        {
+          "assumption": "independent rank shocks",
+          "correlation": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "name": "rho-zero",
+          "scenario_count": 3,
+          "stability_bounds": [
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        },
+        {
+          "assumption": "declared positive correlation sensitivity",
+          "correlation": [
+            [
+              1,
+              0.7,
+              0
+            ],
+            [
+              0.7,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "name": "rho-positive",
+          "scenario_count": 3,
+          "stability_bounds": [
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      ],
+      "capital": null,
+      "evidence_class": "ILLUSTRATIVE_SCENARIO_GRID",
+      "interpretation": "finite declared alternatives; no distribution or capital estimate",
+      "observed_stability_range": [
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    "QOS/QSVT": {
+      "basis_states_checked": 64,
+      "certificate_v4": {
+        "certificate_sha256": "8d5b3dc04c296500b11d32070ae21253541c4967049b8c8cbe3e180f7018405f",
+        "evidence_class": "ER6_SYNTHETIC_CERTIFICATE",
+        "hardware": null,
+        "map_sha256": "9d2946652c0599fe22bcb57e2a4c6a879c9f9152745b3574e72be3e1e81ca9cb",
+        "previous_resources": {
+          "bits": 6,
+          "depth": 14,
+          "gates": 30,
+          "qubits": 6
+        },
+        "resources": {
+          "bits": 6,
+          "depth": 5,
+          "gates": 5,
+          "qubits": 6
+        },
+        "source_sha256": "db1b1e295dba9aa7893b24cd56fcdc571671a4cd0ca41d3902e69980906db413",
+        "version": 4
+      },
+      "evidence_class": "ER6_SYNTHETIC_RECONSTRUCTION",
+      "hardware": null,
+      "maximum_integer_residual": 0,
+      "parent_certificate_v4_sha256": "fe6fa1b4e203e7a51060c99718765769365a26d69403a197db99fadc2afeef5a",
+      "reconstruction": "independent basis-permutation matrix versus gate-word simulation",
+      "reconstruction_sha256": "cdebf6f38f36eb3643a0d136b039945febf7372da5d466ce7bff641dae688e21",
+      "version": 5
+    },
+    "SCM": {
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "fiction_only": true,
+      "negative_controls": {
+        "expired": "REJECTED",
+        "out_of_scope": "REJECTED",
+        "replayed": "REJECTED",
+        "revoked": "REJECTED"
+      }
+    }
+  },
+  "nonclaims": [
+    "No measured QPU/GPU performance, quantum advantage, or GPU replacement.",
+    "No provider execution, authorization, receipt signature, or invoice.",
+    "No crash/power-loss durability, calibrated device/custody evidence, or commercial economics.",
+    "No physical-law claim; SCM remains fiction-only with empirical coupling null.",
+    "No AI functional-equivalence claim and no QOS hardware claim."
+  ],
+  "schema": "uqpu-cycle015-delta01-executable-acceptance-v1",
+  "source_hashes": {
+    "cycle015_module": "4e3cb96592f971913090d460fb2249603fb3b6e440bacc4f3ca27c51ff98e066",
+    "cycle015_tests": "407b23ba576725e945d076cdebaa33bb7c9346f65f331f328b0ddcad0a9274af",
+    "preregistered_gates": "9c8095a79b282e1d99a049fae0d9dd8dd0baba17726e1a8126227089d77e039c",
+    "umrl": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
+  }
+}

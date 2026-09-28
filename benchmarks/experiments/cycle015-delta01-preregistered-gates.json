@@ -1,0 +1,71 @@
+{
+  "schema": "uqpu-cycle015-delta01-preregistered-gates-v1",
+  "cycle": "015",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-015-delta-01-2026-09-28",
+  "base_closeout": "6114b36912f2e3b93a6571ee45091f831e9c7eb6",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "lanes": {
+    "A": "Repeat the Cycle 014 exact five-node max-cut fixture across seeds 0, 1, 7, 31 and deterministic edge-order/orientation permutations; cap enumeration at 1,024 states; bind exact task/output hashes and leave scaling null.",
+    "B": "Add explicit authorization and receipt-signature slots to receipt-v2; only NOT_EXECUTED with null authorization, signature, job ID and invoice is accepted; provider claim stays null.",
+    "C": "Coordinate three concurrent subprocess writers at a parent barrier; observe complete staged hashes, run stale-only cleanup, and inspect the final complete payload after before/after replacement process exits.",
+    "D": "Parse ZIP64 EOCD extensible TLVs, multi-disk locator/count sentinels, legacy field agreement and central-directory disk-local bounds; read no archive payload.",
+    "E": "Verify a three-event synthetic custody chain with changing registered issuer/scope pairs, a stable fictional sample/path, hash continuity and half-open validity boundaries.",
+    "F": "Sweep five synthetic USD component intervals across zero, diagonal and fully correlated PSD matrices plus an invalid non-PSD matrix and output counts 1, 2, 4, 0; null invalid covariance and nonpositive denominator.",
+    "G": "Validate a symmetric typed covariance matrix; each entry uses the canonical product unit and sum of the two seven-component SI dimension vectors; calibration remains null.",
+    "H": "Compare explicit ranking orders under identity and positive-correlation alternatives; report the observed finite-grid stability range and keep capital null.",
+    "FND/EQN": "Compose exact rational interval addition and multiplication; preserve source hash and RealModel/Model sorts, require a registered m*s product and reject implicit casts.",
+    "SCM": "Run fictional negative controls for revoked consent, exact-expiry, nonce replay and out-of-scope transcript; empirical coupling remains null.",
+    "AI-COST": "Create a parent-linked version-five synthetic lineage manifest and verify source, configuration, split and metric mutations; missing lineage returns null manifest and candidate result.",
+    "QOS/QSVT": "Reconstruct a bounded six-bit ER6 permutation via an independent basis-permutation matrix, link certificate v4 to Cycle 014, bind 64 basis states/resources and leave hardware null."
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE.TXT - .ZIP File Format Specification",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "version": "6.3.10 FINAL",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-28",
+      "locator": "sections 4.3.14-4.3.16",
+      "evidence_class": "PRIMARY_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"
+    },
+    {
+      "title": "Python tempfile.mkstemp documentation",
+      "url": "https://docs.python.org/3/library/tempfile.html#tempfile.mkstemp",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"
+    },
+    {
+      "title": "NIST SP 330, Section 2",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "access_date": "2026-09-28",
+      "locator": "SI base dimensions and derived units",
+      "evidence_class": "PRIMARY_METROLOGY_REFERENCE"
+    },
+    {
+      "title": "UQPU Unified Mathematical Language and Discovery Ledger",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/research/cycle-015-delta-01-2026-09-28/00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+      "source_revision": "6114b36912f2e3b93a6571ee45091f831e9c7eb6",
+      "locator": "UMRL-031 typed quantity tuple, provenance and explicit sort firewall",
+      "evidence_class": "PROJECT_CANONICAL_INTERFACE"
+    }
+  ],
+  "assumptions": [
+    "Seed labels control deterministic edge presentation only; all max-cut states are enumerated and no random sampling is performed.",
+    "The process fixture checks complete file replacement and process exit only; it does not test kernel crash, cache flush, storage durability or power loss.",
+    "The ZIP64 parser accepts only its declared bounded metadata subset; central-directory records and payload content are not read or authenticated.",
+    "Custody, receipt, cost, covariance, ranking, AI and quantum circuit inputs are synthetic; SCM is fiction-only.",
+    "The USD intervals and covariance matrices are stress inputs, not observed costs, calibrated uncertainty or commercial economics.",
+    "The seven SI vector order is length, mass, time, electric current, thermodynamic temperature, amount of substance, luminous intensity."
+  ],
+  "uncertainty": "Provider authorization/execution/signature/invoice, operating-system and storage durability, real custody issuer and sample, calibrated covariance, sourced lifecycle cost, owner-approved priorities, independent mathematical derivation, AI functional equivalence, and physical QOS reconstruction remain unresolved. Missing evidence stays null.",
+  "evidence_boundary": "This preregistration cannot promote synthetic/local fixtures into hardware performance, provider execution, physical calibration, commercial economics, a new physical law, AI functional equivalence, or empirical SCM communication.",
+  "next_falsifiable_gate": "Run every preregistered acceptance and adversarial test; publish the exact artifact on the Cycle 015 research branch and require passing Actions for the exact code SHA before closeout."
+}
