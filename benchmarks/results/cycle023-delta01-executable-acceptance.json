@@ -1,0 +1,414 @@
+{
+  "schema": "uqpu-cycle023-delta01-executable-acceptance-v1",
+  "cycle": "023",
+  "status": "PASS_LOCAL",
+  "lane_count": 12,
+  "evidence_class": "LOCAL_SOFTWARE_SYNTHETIC_MODEL_AND_FICTION_ONLY",
+  "source_sha256": {
+    "preregistered_gates": "e22311295ea1968352299d398bbe366d25e4561ad6f02bf2bd824c9477ad6f01",
+    "implementation": "90899fcb93cb1132f616647a922e5533fb0d8bc0f26c953f57f2ce26fe299ee6",
+    "tests": "f4460403808af7a98e80999f300e3199f9e485220ec26b8b5118f3a5cb223b7f",
+    "runner": "10240be7f020141d764e80e46fd0d7572cea6ba0d3a9cb68f4cf0a9fa1eeb3d4",
+    "primary_source_review": "526abf1af52d4b5ed2bed10b8299c44b1adcc188457831a462b03a95a0b3911d",
+    "umrl_interface": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
+  },
+  "source_evidence": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "revision_date": "2022-11-01",
+      "sections": [
+        "4.3.7",
+        "4.3.9",
+        "4.3.12"
+      ],
+      "accessed": "2026-09-28",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "accessed": "2026-09-28",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "lanes": {
+    "A": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "state_counts": [
+        2048,
+        2048
+      ],
+      "objectives": [
+        10,
+        12
+      ],
+      "witness_hash_changed": true,
+      "task_hash_changed": true,
+      "unchanged_edges_invariant": true,
+      "scaling_claim": null,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE"
+    },
+    "B": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "duplicate_key_rejected": true,
+      "malformed_utf8_rejected": true,
+      "canonical_nested_sha256": "b084f743643303111e1756555e1c9fa1bcdbffda27a33fe983b3d39b72c211a3",
+      "external_authority_job_invoice": null,
+      "provider_claim": null,
+      "evidence_class": "SYNTHETIC_RECEIPT"
+    },
+    "C": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "exit_codes": [
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          23,
+          23
+        ]
+      ],
+      "complete": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "crash_durability": null,
+      "evidence_class": "LOCAL_PROCESS_EXIT_FIXTURE"
+    },
+    "D": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "valid": true,
+      "descriptor_size_mutations_rejected": true,
+      "descriptor_forms": [
+        "signed",
+        "unsigned"
+      ],
+      "payload_read": false,
+      "evidence_class": "SYNTHETIC_ZIP64_CROSS_BIND"
+    },
+    "E": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "issuer_count": 3,
+      "terminal_sha256": "d7b51911cefd2ba066e8620c9913b5c761e37076216a667d2b7c68d60b04d157",
+      "negative_controls": {
+        "before_third_start": true,
+        "at_expiry": true,
+        "revoked_third_issuer": true
+      },
+      "physical_sample": null,
+      "evidence_class": "SYNTHETIC_CUSTODY"
+    },
+    "F": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "components": 8,
+      "model": {
+        "components": 8,
+        "sigma_multiplier": 1.0,
+        "scenarios": {
+          "independent": {
+            "total_usd": [
+              1.3171572875253812,
+              6.68284271247462
+            ],
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": [
+                  1.3171572875253812,
+                  6.68284271247462
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": [
+                  0.6585786437626906,
+                  3.34142135623731
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": [
+                  0.3292893218813453,
+                  1.670710678118655
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_NONPOSITIVE_DENOMINATOR"
+              }
+            ]
+          },
+          "missing": {
+            "total_usd": null,
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              }
+            ]
+          },
+          "indefinite": {
+            "total_usd": null,
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              }
+            ]
+          },
+          "nonfinite": {
+            "total_usd": null,
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              }
+            ]
+          }
+        },
+        "evidence_class": "MODEL_ONLY",
+        "commercial_interpretation": null
+      },
+      "commercial_claim": null,
+      "evidence_class": "MODEL_ONLY"
+    },
+    "G": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "order": [
+        "mass",
+        "length",
+        "duration",
+        "current"
+      ],
+      "order_sha256": "88a9bfd52d20be5a58e75d1fea61e1a6e924e8c41bc16525f27ca39be626fc4e",
+      "pairwise_products": [
+        "g*g",
+        "g*cm",
+        "g*ms",
+        "g*mA",
+        "cm*g",
+        "cm*cm",
+        "cm*ms",
+        "cm*mA",
+        "ms*g",
+        "ms*cm",
+        "ms*ms",
+        "ms*mA",
+        "mA*g",
+        "mA*cm",
+        "mA*ms",
+        "mA*mA"
+      ],
+      "order_mutation_rejected": true,
+      "symmetric": true,
+      "psd_by_congruence": true,
+      "calibration": null,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE"
+    },
+    "H": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "scenario_count": 8,
+      "orders_each": 24,
+      "winner_counts": [
+        78,
+        30,
+        54,
+        30
+      ],
+      "stability_bounds": [
+        0.15625,
+        0.40625
+      ],
+      "capital": null,
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO"
+    },
+    "FND/EQN": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "meter_interval_km": [
+        [
+          1,
+          2000
+        ],
+        [
+          1,
+          500
+        ]
+      ],
+      "roundtrip_meters": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "seconds_to_milliseconds": [
+        1500,
+        1
+      ],
+      "milliseconds_roundtrip": [
+        3,
+        2
+      ],
+      "source_sha256": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2",
+      "source_mismatch_rejected": true,
+      "incompatible_dimension_rejected": true,
+      "sort": [
+        "RealModel",
+        "Model"
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL"
+    },
+    "SCM": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "revoked": true,
+      "replay": true,
+      "scope_bound": true,
+      "sort": "Fiction",
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY"
+    },
+    "AI-COST": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "manifest": {
+        "version": 13,
+        "parent_manifest_sha256": "1a4e1c7453209e7acd3f506da3ae23bd79f3f48014546a6593a8e4e486f7040d",
+        "source_sha256": "4230faf43b2aacd906e10cabaa603fcd3f4f0a02b7f18a880bbf897059f333d3",
+        "split_hashes": {
+          "train": "362b2e5d9f84a403fa0fae999328e922b7bdb57772eda54b48bb5ff77fbd3e58",
+          "validation": "ecef3fd0fb07b742d559b77b2585e38e42579ed5075c12bf8f9d56a22580f273",
+          "test": "e4b4976db3c5b72f6354fa7a78ef3c93ffefac200ab89ccc84f3e547cfbbc634"
+        },
+        "metrics_sha256": "1661bc8d9c051611c44b77242c202dc4e719580d595d9161a36063e464141ebd",
+        "config_sha256": "b06794bcf08adb12c7beb114adc468f3aae408a25deb8ff27cc0c6d8552996b5",
+        "heldout_metric": null,
+        "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+        "manifest_sha256": "3319a56432cfc522500900ee68d8d6bbfc7766a396d66b374a8c8206b2c992b5"
+      },
+      "parent_mutation_rejected": true,
+      "split_overlap_rejected": true,
+      "missing_heldout_candidate": null,
+      "functional_equivalence": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE"
+    },
+    "QOS/QSVT": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "basis_states_checked": 64,
+      "residual": 0,
+      "noncommuting": true,
+      "resource_bound": {
+        "gates": 24,
+        "max_qubits": 6
+      },
+      "resource_mutation_rejected": true,
+      "hardware": null,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR"
+    }
+  },
+  "uncertainty": [
+    "local process-level file tests",
+    "synthetic ZIP64 vectors",
+    "finite model/ranking outputs",
+    "fiction-only consent and synthetic lineage"
+  ],
+  "nonclaims": [
+    "no measured hardware performance or advantage",
+    "no provider authority/invoice/commercial or capital result",
+    "no crash durability, calibration, physical sample, new law, AI equivalence or empirical SCM evidence"
+  ],
+  "payload_sha256": "065a522f41deb5bc0440bd20c5ba9e5881e88aaeda28e29450ed27162247db36"
+}
