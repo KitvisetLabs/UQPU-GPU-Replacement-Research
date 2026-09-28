@@ -6,8 +6,8 @@
   "evidence_class": "LOCAL_SOFTWARE_SYNTHETIC_MODEL_AND_FICTION_ONLY",
   "source_sha256": {
     "preregistered_gates": "5c9cf4f5ce7a6e206fd035599b0baf9acd37ca213be8a6fff9cc59a50a38bdf1",
-    "implementation": "bfe136c934a25c7163c1af98e0ed07ff2f5ff4ff49377fc94429d177924cf02b",
-    "tests": "9fb5453e4d43e6aac823139d50e60218c459744547262c508c562d257945db81",
+    "implementation": "865fe3b3a381aff8c18f79fd5d04367d000e1f4db8e05d7fbd6015521137d659",
+    "tests": "ec26522ae7f8cad740d683447b7a3c733c4f106ca7bbd18ec9f27e6574bd333c",
     "runner": "ab014b37a17f1c7157a46d80a860f81f6e099ca2874d61fc2dab388b3eb41e50",
     "primary_source_review": "1bccc301d105233d165a8b61dfcbea6842b8630a0f69e5ef3409b4b939d627b9",
     "shared_zip_parser": "85c729bbd7160598b93fee7f780054371077d1a978c384c066ced9132e28b09e",
@@ -287,6 +287,24 @@
         "A->mA"
       ],
       "pairwise_products": 16,
+      "pairwise_unit_products": [
+        "g*g",
+        "g*cm",
+        "g*ms",
+        "g*mA",
+        "cm*g",
+        "cm*cm",
+        "cm*ms",
+        "cm*mA",
+        "ms*g",
+        "ms*cm",
+        "ms*ms",
+        "ms*mA",
+        "mA*g",
+        "mA*cm",
+        "mA*ms",
+        "mA*mA"
+      ],
       "order_sha256": "88a9bfd52d20be5a58e75d1fea61e1a6e924e8c41bc16525f27ca39be626fc4e",
       "covariance": [
         [
@@ -316,6 +334,7 @@
       ],
       "order_hash_bound": true,
       "symmetric": true,
+      "psd_by_congruence": true,
       "ratio_mutation_rejected": true,
       "calibration": null,
       "evidence_class": "SYNTHETIC_TYPED_COVARIANCE"
@@ -428,5 +447,5 @@
     "no provider authority, invoice, commercial or capital result",
     "no crash durability, calibration, physical sample, new law, AI equivalence or empirical SCM evidence"
   ],
-  "payload_sha256": "efe5ec50058bd37e629f55ca6a5dc764a1e95ffe7eb4113f44f82d51d7148c93"
+  "payload_sha256": "6c5c89b0a8ed74fd2b6d9814e0705eea295ceca52d97014f6abbbe4726177788"
 }

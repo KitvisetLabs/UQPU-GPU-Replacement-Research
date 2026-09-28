@@ -58,8 +58,10 @@ class Cycle022Tests(unittest.TestCase):
     def test_g_four_measurand_ratio_mutation_rejects_and_binds_order(self):
         result=four_measurand_ratio_mutation()
         self.assertEqual(result["pairwise_products"],16)
+        self.assertEqual(len(result["pairwise_unit_products"]),16)
         self.assertTrue(result["order_hash_bound"])
         self.assertTrue(result["symmetric"])
+        self.assertTrue(result["psd_by_congruence"])
         self.assertTrue(result["ratio_mutation_rejected"])
         self.assertIsNone(result["calibration"])
 

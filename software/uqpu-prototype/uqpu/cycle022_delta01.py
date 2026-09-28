@@ -84,10 +84,15 @@ def four_measurand_ratio_mutation():
     order_sha=canonical_hash(ids)
     mutation=[row[:] for row in transformed]; mutation[0][1]+=1
     mutation_rejected=mutation[0][1]!=mutation[1][0]
+    converted=["g","cm","ms","mA"]
+    product_units=[converted[i]+"*"+converted[j] for i in range(4) for j in range(4)]
+    # Base correlation matrix is 0.9 I + 0.1 J, so positive diagonal unit scaling preserves PSD.
+    psd_by_congruence=all(scale>0 for scale in factors)
     return {"order":ids,"units":["kg->g","m->cm","s->ms","A->mA"],
-        "pairwise_products":16,"order_sha256":order_sha,"covariance":transformed,
+        "pairwise_products":16,"pairwise_unit_products":product_units,"order_sha256":order_sha,"covariance":transformed,
         "order_hash_bound":True,"symmetric":all(transformed[i][j]==transformed[j][i] for i in range(4) for j in range(4)),
-        "ratio_mutation_rejected":mutation_rejected,"calibration":None,"evidence_class":"SYNTHETIC_TYPED_COVARIANCE"}
+        "psd_by_congruence":psd_by_congruence,"ratio_mutation_rejected":mutation_rejected,
+        "calibration":None,"evidence_class":"SYNTHETIC_TYPED_COVARIANCE"}
 
 def seventh_ranking_alternative():
     scenarios=[[4,3,2,1],[2,2,1,0],[2,1,2,0],[1,1,1,1],[0,3,2,3],[0,1,4,4],[4,0,4,2]]
