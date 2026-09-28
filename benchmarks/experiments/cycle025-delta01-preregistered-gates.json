@@ -1,0 +1,103 @@
+{
+  "schema": "uqpu-cycle025-delta01-preregistered-gates-v1",
+  "cycle": "025",
+  "delta": "01",
+  "date": "2026-09-29",
+  "branch": "research/cycle-025-delta-01-2026-09-28",
+  "base_cycle024_closeout_sha": "17fa4a1ed10c1e5a2a2bfd3bd073eaa212e09275",
+  "cycle024_code_evidence_sha": "5ca968cb65c5f3c127d5054b742632f327da385a",
+  "cycle024_actions": {
+    "run_id": 36464306931,
+    "jobs_passed": 8,
+    "jobs_failed": 0,
+    "status": "PASS"
+  },
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {
+    "status": "BLOCKED_WITH_PROGRESS",
+    "unmeasured_values": null,
+    "fiction_empirical_cast": "prohibited",
+    "lane_count": 12,
+    "no_update_status": "prohibited"
+  },
+  "lanes": {
+    "A": {
+      "action": "Fifth controlled 11-node edge perturbation and complete-witness comparison against Cycle 024.",
+      "acceptance": "Enumerate exactly 2,048 states per graph; bind changed-edge scope and deterministic task/witness hashes; scaling claim remains null."
+    },
+    "B": {
+      "action": "Nested numeric/boolean/null receipt canonicalization with overlong, non-finite and normalization-collision controls.",
+      "acceptance": "Equivalent objects bind stable canonical bytes; malformed or ambiguous inputs reject; provider authority/job/invoice remain null."
+    },
+    "C": {
+      "action": "Repeat before/after-replace process termination across alternating targets and classify every visible digest.",
+      "acceptance": "Every recovered target is a complete old/new payload; process-level evidence only, with crash and power-loss durability null."
+    },
+    "D": {
+      "action": "Cross-bind ZIP64 CRC and sizes under signed/unsigned descriptors plus duplicate and reordered extra-field mutations.",
+      "acceptance": "Every metadata mutation rejects before payload access; independent real-producer corpus remains open."
+    },
+    "E": {
+      "action": "Add a fifth synthetic custody issuer and test a revocation-effective boundary.",
+      "acceptance": "Terminal digest, half-open validity, revocation timing and issuer scope fail closed; physical sample remains null."
+    },
+    "F": {
+      "action": "Extend the covariance uncertainty sweep to nine model components and an additional sigma endpoint.",
+      "acceptance": "Reproducible model-only intervals; invalid, non-finite or missing matrices and zero outputs yield null; no commercial inference."
+    },
+    "G": {
+      "action": "Apply a third typed covariance rescaling with axis permutation, then exactly invert both operations across all 16 entries.",
+      "acceptance": "Bind order/dimension hashes, exact roundtrip, symmetry and PSD-by-congruence; calibration remains null."
+    },
+    "H": {
+      "action": "Add a ninth declared scenario and compare full-grid versus leave-one-out winner intervals.",
+      "acceptance": "Finite-grid winner counts and sensitivity interval only; no distribution, probability or capital claim."
+    },
+    "FND/EQN": {
+      "action": "Compose two independently source-bound exact rational interval maps and their inverses.",
+      "acceptance": "Exact endpoint roundtrip; source mutation and incompatible dimensions reject; no new physical-law claim."
+    },
+    "SCM": {
+      "action": "Add challenge-mismatch and post-expiry nonce-replacement rows to the frozen consent null table.",
+      "acceptance": "All invalid controls reject in typed Fiction; empirical coupling remains null."
+    },
+    "AI-COST": {
+      "action": "Prepare synthetic manifest v15 with held-out membership hashes and metric-schema mutation controls.",
+      "acceptance": "Parent/source/split/config/metric bindings reject mutation; candidate and equivalence remain null absent real evaluation."
+    },
+    "QOS/QSVT": {
+      "action": "Compose three non-commuting inverse pairs and independently reconstruct all six-bit basis states.",
+      "acceptance": "Exact 64-state synthetic reconstruction, zero residual and an explicit resource cap; target hardware evidence remains null."
+    }
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-29",
+      "locator": "sections 4.3.7, 4.3.9 and 4.3.12",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-29",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "All graph, receipt, archive, custody, covariance, ranking, lineage and operator inputs are bounded fixtures or models.",
+    "Process evidence is limited to local process termination and atomic replacement semantics.",
+    "SCM records are fiction-only and cannot satisfy an empirical evidence gate."
+  ],
+  "uncertainty": [
+    "Provider authorization/billing, crash and power-loss durability, independent archive interoperability, operational custody, measured covariance/calibration, owner priorities, independent equation derivation, real held-out equivalence and target hardware evidence remain open."
+  ],
+  "nonclaims": [
+    "No measured QPU/GPU performance, scaling or quantum advantage.",
+    "No provider execution/invoice, commercial economics or capital result.",
+    "No crash durability, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "next_falsifiable_gate": "Implement all twelve bounded packets, publish source-hashed acceptance evidence, run focused and regression tests, and verify exact-SHA GitHub Actions."
+}
