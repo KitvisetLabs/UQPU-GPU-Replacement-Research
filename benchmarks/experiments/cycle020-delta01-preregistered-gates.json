@@ -1,0 +1,90 @@
+{
+  "schema": "uqpu-cycle020-delta01-preregistered-gates-v1",
+  "cycle": "020",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-020-delta-01-2026-09-28",
+  "base_cycle019_closeout_sha": "a4e4dbfdc0c88d35e96dda0ec7aa2dc470cf48f7",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {
+    "status": "BLOCKED_WITH_PROGRESS",
+    "unmeasured_values": null,
+    "fiction_empirical_cast": "prohibited"
+  },
+  "lanes": {
+    "A": {
+      "action": "Bounded 11-node weighted MaxCut tie fixture, exhaustive enumeration at the 2,048-state cap.",
+      "acceptance": "Exact objective and deterministic witness/task hashes; no scaling extrapolation."
+    },
+    "B": {
+      "action": "Nested-array canonical receipt serialization and key rotation/revocation mutation matrix.",
+      "acceptance": "Reject semantic/key rebinding; external provider fields remain null."
+    },
+    "C": {
+      "action": "Repeat old/new process-exit completeness with repeated active-name collision and stale cleanup.",
+      "acceptance": "Complete visible bytes and bounded process cleanup; crash/power-loss null."
+    },
+    "D": {
+      "action": "Bind ZIP64 local/central sentinel sizes, offset and disk fields around both descriptor forms.",
+      "acceptance": "Inconsistency rejects before payload read; synthetic archive only."
+    },
+    "E": {
+      "action": "Custody issuer validity half-open expiry boundary and revocation-effective-order controls.",
+      "acceptance": "Terminal digest, expiry and revocation checks fail closed; physical sample null."
+    },
+    "F": {
+      "action": "Five-component covariance grid with missing, indefinite and non-finite controls, counts 1/2/4/0.",
+      "acceptance": "Invalid covariance and nonpositive denominator yield null; model only."
+    },
+    "G": {
+      "action": "Apply kg/g, m/cm, s/ms and A/mA scale transforms to every pairwise covariance entry.",
+      "acceptance": "Declared order, product units/dimensions, symmetry and PSD; calibration null."
+    },
+    "H": {
+      "action": "Add fifth adverse ranking scenario; enumerate all declared candidate orders.",
+      "acceptance": "Finite scenario interval, no probability or capital claim."
+    },
+    "FND/EQN": {
+      "action": "Add exact rational unit-conversion path and incompatible-dimension negative controls.",
+      "acceptance": "Exact endpoints and source digest preserved; dimension mismatch rejects; no law claim."
+    },
+    "SCM": {
+      "action": "Fiction-only revocation-before-use and nonce replacement after expiry.",
+      "acceptance": "Replay/expiry/revocation reject; empirical coupling null."
+    },
+    "AI-COST": {
+      "action": "Synthetic v10 lineage held-out split leakage and parent corruption controls.",
+      "acceptance": "Parent/source/split/metric/config hashes bind; candidate/equivalence null without real evaluation."
+    },
+    "QOS/QSVT": {
+      "action": "Second non-identity six-bit permutation/inverse pair and mutated resource-bound tests.",
+      "acceptance": "Independent 64-state reconstruction, exact residual and explicit resource bound; hardware null."
+    }
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-28",
+      "locator": "§§4.3.7, 4.3.9, 4.3.12",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "All numeric, receipt, covariance, ranking, custody, lineage and operator data are fixture/model/fiction until independently sourced."
+  ],
+  "uncertainty": "External provider, crash durability, independent archive corpus, custody, measured covariance/calibration, owner priorities, independent derivation, AI equivalence and hardware gates remain open.",
+  "nonclaims": [
+    "No measured hardware performance or quantum advantage.",
+    "No provider authorization, invoice, commercial result or capital claim.",
+    "No crash/power-loss durability, physical sample, calibration, new law or empirical SCM result."
+  ],
+  "next_falsifiable_gate": "Implement and test all twelve gates; publish a source-hashed acceptance artifact and verify exact-SHA Actions."
+}
