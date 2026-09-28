@@ -6,8 +6,8 @@
   "evidence_class": "LOCAL_SOFTWARE_SYNTHETIC_MODEL_AND_FICTION_ONLY",
   "source_sha256": {
     "preregistered_gates": "a5c73c9e9d19a85803de423c837ec146c72bc051e5e08e3e620a6de5b33c6074",
-    "implementation": "75737f92ebe57e96034c57686b43caa1c7acd6aed6d5a19929f1445da9ac96fe",
-    "tests": "8dba8a146b53f6b6ad161f7ddc7344b087811275ebd037862598b0c5ca831340",
+    "implementation": "a301f654127ac9e162fee14b9823f69723f3f4cf7b5fe2e2f7f590156db5b0a3",
+    "tests": "d8d3cabae1f1781fd48261abee6a08e0dfb88bdb34f117a87d0f4c716043a8bd",
     "runner": "9943f3cf8be836fc3e7667966cf9af9878caf25bb12e7b33fed602f469388d12",
     "primary_source_review": "227b83b43061e4c001b277e6b65667567608343943d53d7b6c94535777cc8a7a",
     "umrl_interface": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
@@ -91,6 +91,43 @@
         "scenarios": {
           "independent": {
             "total_usd": [
+              3.6,
+              8.4
+            ],
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": [
+                  3.6,
+                  8.4
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": [
+                  1.8,
+                  4.2
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": [
+                  0.9,
+                  2.1
+                ],
+                "status": "MODEL_ONLY_COVARIANCE_STRESS"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_NONPOSITIVE_DENOMINATOR"
+              }
+            ]
+          },
+          "correlated": {
+            "total_usd": [
               3.530958424017657,
               8.469041575982343
             ],
@@ -123,6 +160,31 @@
                 "accepted_outputs": 0,
                 "per_output_usd": null,
                 "status": "NULL_NONPOSITIVE_DENOMINATOR"
+              }
+            ]
+          },
+          "missing": {
+            "total_usd": null,
+            "outputs": [
+              {
+                "accepted_outputs": 1,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 2,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 4,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
+              },
+              {
+                "accepted_outputs": 0,
+                "per_output_usd": null,
+                "status": "NULL_INVALID_COVARIANCE"
               }
             ]
           },
@@ -209,14 +271,14 @@
       ],
       "orders_each": 24,
       "winner_counts": {
-        "0": 1,
-        "1": 2,
-        "2": 1,
-        "3": 0
+        "0": 54,
+        "1": 18,
+        "2": 18,
+        "3": 6
       },
       "stability_bounds": [
-        0.0,
-        0.5
+        0.0625,
+        0.5625
       ],
       "capital": null,
       "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO"
@@ -311,5 +373,5 @@
     "no provider authority, execution, invoice, commercial result or capital claim",
     "no crash durability, calibration, physical sample, new physical law, AI equivalence or empirical SCM evidence"
   ],
-  "payload_sha256": "3d158efece0bb357203f1bed85e27063be0d40dca38bcee98adffc3f1de05731"
+  "payload_sha256": "5ac9ae62c7fc04082473bcab4889f880872df4d38bbdf5a13a6ee509d2700594"
 }

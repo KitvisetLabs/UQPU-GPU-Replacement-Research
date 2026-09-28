@@ -124,11 +124,13 @@ def custody_rotation_order():
 
 
 def four_component_covariance():
+    independent = [[0.04 if i == j else 0.0 for j in range(4)] for i in range(4)]
     covariance = [[0.04 if i == j else 0.005 for j in range(4)] for i in range(4)]
     bad = [[1.0 if i == j else 2.0 for j in range(4)] for i in range(4)]
     nan = [[float("nan") if i == j == 0 else (1.0 if i == j else 0.0) for j in range(4)] for i in range(4)]
     result = component_covariance_sweep([[1, 2]] * 4,
-        {"independent": covariance, "indefinite": bad, "nonfinite": nan}, [1, 2, 4, 0])
+        {"independent": independent, "correlated": covariance, "missing": None,
+         "indefinite": bad, "nonfinite": nan}, [1, 2, 4, 0])
     return {"result": result, "components": 4, "evidence_class": "MODEL_ONLY", "commercial_claim": None}
 
 
@@ -146,14 +148,19 @@ def unit_rescale_covariance():
 def fourth_ranking_alternative():
     alternatives = [
         {"name":"identity","scores":[4,3,2,1]},
-        {"name":"positive-pair","scores":[3,4,2,1]},
-        {"name":"mixed-adverse","scores":[2,4,3,1]},
-        {"name":"rank-reversal-stress","scores":[1,2,4,3]},
+        {"name":"positive-pair","scores":[2,2,1,0]},
+        {"name":"mixed-adverse","scores":[2,1,2,0]},
+        {"name":"rank-reversal-stress","scores":[1,1,1,1]},
     ]
     counts = {str(i):0 for i in range(4)}
     for item in alternatives:
-        counts[str(item["scores"].index(max(item["scores"])))]+=1
-    bounds = [min(counts.values())/len(alternatives), max(counts.values())/len(alternatives)]
+        top = max(item["scores"])
+        eligible = {i for i, score in enumerate(item["scores"]) if score == top}
+        for order in itertools.permutations(range(4)):
+            winner = next(i for i in order if i in eligible)
+            counts[str(winner)] += 1
+    total = len(alternatives) * math.factorial(4)
+    bounds = [min(counts.values())/total, max(counts.values())/total]
     return {"alternatives": [x["name"] for x in alternatives], "orders_each": 24,
             "winner_counts": counts, "stability_bounds": bounds, "capital": None,
             "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO"}

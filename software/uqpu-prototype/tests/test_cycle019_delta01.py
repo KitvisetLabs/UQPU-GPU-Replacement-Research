@@ -49,7 +49,7 @@ class Cycle019Tests(unittest.TestCase):
         self.assertEqual(result["components"],4)
         self.assertEqual(len(result["result"]["scenarios"]["independent"]["outputs"]),4)
         self.assertIsNone(result["result"]["scenarios"]["independent"]["outputs"][-1]["per_output_usd"])
-        for scenario in ("indefinite", "nonfinite"):
+        for scenario in ("missing", "indefinite", "nonfinite"):
             self.assertTrue(all(row["per_output_usd"] is None for row in result["result"]["scenarios"][scenario]["outputs"]))
         self.assertIsNone(result["commercial_claim"])
 
@@ -63,7 +63,7 @@ class Cycle019Tests(unittest.TestCase):
         result=fourth_ranking_alternative()
         self.assertEqual(len(result["alternatives"]),4)
         self.assertEqual(result["orders_each"],24)
-        self.assertEqual(result["stability_bounds"],[0.0,0.5])
+        self.assertEqual(result["stability_bounds"],[0.0625,0.5625])
         self.assertIsNone(result["capital"])
 
     def test_fnd_exact_source_bound_composition(self):
