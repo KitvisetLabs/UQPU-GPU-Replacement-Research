@@ -1,0 +1,261 @@
+{
+  "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+  "artifacts": [
+    "RESEARCH_GAPS.md",
+    "WORKLOG.md",
+    "benchmarks/experiments/cycle009-delta01-preregistered-gates.json",
+    "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+    "benchmarks/results/cycle009-delta01-synchronized-lane-ledger.json",
+    "docs/SYNCHRONIZED_CYCLE_009_EXECUTION_DELTA_01_2026-09-28.md",
+    "docs/SYNCHRONIZED_CYCLE_010_HANDOFF_2026-09-28.md",
+    "software/uqpu-prototype/examples/run_cycle009_delta01.py",
+    "software/uqpu-prototype/tests/test_cycle009_delta01.py",
+    "software/uqpu-prototype/uqpu/cycle009_delta01.py"
+  ],
+  "assumptions": [
+    "Every positive material, cost, uncertainty, SCM, AI, QOS, and provider-shaped record is synthetic.",
+    "The H-lane effort and blocker-impact values are illustrative assumptions and are not measurements.",
+    "The A-lane exact enumeration is restricted to 256 states under a 1,024-state cap.",
+    "The interrupted-write tests inject software exceptions at named boundaries; they do not kill power or validate a storage device."
+  ],
+  "base_closeout_commit": "47c3efd2d7f369ce4797bace321302ef139a6e84",
+  "branch": "research/cycle-009-delta-01-2026-09-28",
+  "cross_lane_integration": [
+    "A/B/C and AI-COST carry stable hashes, explicit inputs, accepted-output or request provenance, and false-claim ceilings.",
+    "D/E/F/G bind data values to units, calibration/uncertainty metadata, and explicit missing-data failure states.",
+    "FND/EQN enforces exact registered dimensions; SCM remains a separate fictional sort with a no-cast rule.",
+    "H keeps sensitivity inputs assumed and capital unauthorized; QOS/QSVT keeps frozen semantics and resource bounds linked to source identity."
+  ],
+  "cycle": "009",
+  "date": "2026-09-28",
+  "delta": "01",
+  "external_gates_remaining": [
+    "No provider authorization, task, receipt, or bill.",
+    "No cache control, service durability, device flush, or power-loss evidence.",
+    "No physical material sample, operational calibration, or measured uncertainty.",
+    "No measured lifecycle economics, capital authorization, or candidate-system performance.",
+    "No new physical law, quantum advantage, GPU replacement, or empirical SCM coupling.",
+    "No provider transpilation or hardware execution of ER6/QSVT workloads."
+  ],
+  "fixtures_artifact": "benchmarks/experiments/cycle009-delta01-preregistered-gates.json",
+  "full_cycle_closeout_pending": true,
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_a_preregistered_budgets_include_a_falsifying_gap",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+      "progress": "Seed 1 n=8 MaxCut exact enumeration completed 256/256 states (objective 9); restart budgets 1/4/16 scored 8/9/9, with a one-restart exact gap of 1.",
+      "remaining_gate": "A broader preregistered set, comparative GPU/QPU evidence, energy, and scaling.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "AI-COST": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_ai_cost_three_way_splits_hashes_and_metrics_are_checked",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "SYNTHETIC_THREE_WAY_MANIFEST_GATE",
+      "progress": "Synthetic train/validation/test IDs, split hashes, source hashes and metrics are complete/disjoint; overlap, altered source hash, or missing metric rejects before scoring.",
+      "remaining_gate": "Immutable real dataset lineage, independent candidate evaluation, and quality/energy/cost evidence.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "B": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_b_canonical_order_is_stable_and_payload_mutation_fails",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "SYNTHETIC_VERSIONED_REQUEST_RECEIPT_GATE",
+      "progress": "Canonical JSON key order preserves v2 envelope hashes; unchanged replay validates; same-token payload change and missing source commit reject; submission remains disabled.",
+      "remaining_gate": "Provider authorization, real request/receipt/bill, and provider-side idempotency evidence.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "C": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_c_labels_process_scope_and_injected_interruption_boundaries",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "LOCAL_REPEATED_FRESH_PROCESS_AND_FAULT_INJECTION_SOFTWARE_SCREEN_ONLY",
+      "progress": "Two same-process and one fresh child-process local read matched SHA-256; injected interruptions before write/after staging fsync/after replace preserved a complete old or new payload; cache uncontrolled.",
+      "remaining_gate": "Controlled cache, process kill/power-loss test, device flush, remote service, or storage-durability evidence.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_d_offline_range_and_zip_mutations_reject",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "OFFLINE_SYNTHETIC_HTTP_RANGE_AND_ZIP_METADATA_GATE",
+      "progress": "Valid synthetic Content-Range and ZIP-directory coordinates pass; HTTP 200, truncated range, invalid local-header offset and declared-size mismatch reject; no download or payload read.",
+      "remaining_gate": "Authorized bounded archive access and independently verified archive/payload evidence.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "E": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_e_material_control_calibration_and_units_are_scoped",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "SYNTHETIC_MATERIAL_PROVENANCE_MUTATION_GATE",
+      "progress": "Synthetic sample/control, method, calibration scope/window and matched uncertainty units pass; missing control, unit/scope mismatch and expiry reject.",
+      "remaining_gate": "Physical sample, operational calibration, and measured material property/uncertainty.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "F": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_f_zero_outputs_and_incomplete_cost_keep_totals_null",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "SYNTHETIC_COST_INTERVAL_WITH_UNCERTAINTY",
+      "progress": "Synthetic USD interval is [17/10,23/10] total and [17/20,23/20] per two outputs; exact variance sum 1/20; model-only expanded uncertainty 0.4472 under independent-component RSS; zero/incomplete outputs keep totals null.",
+      "remaining_gate": "Complete real lifecycle ledger, actual bill, accepted-output measurement, and justified covariance/uncertainty model.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_fnd_eqn_requires_source_linked_explicit_dimension_type",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "BOUNDED_SOURCE_LINKED_TYPED_DECLARATION_AUDIT",
+      "progress": "Added source-linked typed T_acc declaration from UMRL-007 as accepted count per elapsed time (count/s); unclassified prose and unit-vector mismatch reject.",
+      "remaining_gate": "More source-linked structured quantity declarations and evidence equations describe reality.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "G": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_g_uncertainty_budget_requires_method_coverage_scope_and_all_components",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "SYNTHETIC_UNCERTAINTY_BUDGET",
+      "progress": "Synthetic 0.3/0.4 standard uncertainties with declared uncorrelated RSS and k=2 yield 1.0 model-only expanded uncertainty; unreported component/missing rule/expiry rejects.",
+      "remaining_gate": "Operational certificate, measured components, correlation evidence, and coverage justification.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "H": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_h_assumption_grid_records_rank_reversal_without_capital",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "ILLUSTRATIVE_ASSUMPTION_GRID_ONLY",
+      "progress": "Assumption-grid ranking reverses between BILL_RECEIPT and MATERIAL_SAMPLE scenarios; pairwise order stability 0.5; capital remains null/unauthorized.",
+      "remaining_gate": "Empirical effort/impact distributions and owner authorization.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "QOS/QSVT": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_qos_er6_register_measurement_and_resource_mutations_reject",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "FROZEN_ER6_SEMANTIC_AND_RESOURCE_CERTIFICATE",
+      "progress": "Frozen ER6 register/measurement map and source hash/resource bounds validate; measurement remap, source-hash mismatch and depth overrun reject.",
+      "remaining_gate": "Broader parser/semantic proof, provider transpilation, or hardware execution.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "SCM": {
+      "acceptance_artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_scm_version_state_volume_links_consent_and_replay_fail_closed",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "evidence_class": "FICTIONAL_VERSIONED_TRANSITION_MUTATION_GATE",
+      "progress": "Versioned fictional transition and all five volume/equation links validate; unknown state/equation, version mismatch, cross-domain cast and replay reject; empirical coupling null.",
+      "remaining_gate": "Fiction-only; no real mind/realm mapping, empirical coupling, consent study, or human evidence.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    }
+  },
+  "latest_checkpoint": {
+    "all_lane_acceptance_passed": true,
+    "all_lane_external_gates_closed": false,
+    "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+    "artifact_sha256": "826be9c87ba040d6a42ea7f6c2a67a1ade93749f7fe9b180edf851373bbdfa34",
+    "checkpoint_id": "CYCLE009-DELTA01-ALL-LANE-001",
+    "lane_count": 12,
+    "provenance": {
+      "fixtures_sha256": "339292eda8ebb18560ccd59826d6ff8038491b3c8ba34f57be4d5b5a709067d5",
+      "handoff_sha256": "da3f7d941238c34a301a9db62e46a70d48df1fcec77ed3a540190d8ac5500d1b",
+      "implementation_sha256": "70813e3b71260ab43994337159df64adf66442a96d20a6580789772e738b523b",
+      "open_gates_sha256": "6a9320a0fe6a9b6bd42edfc5b5eba6c933b2bf3dda5257e3055e5b184ebf752f",
+      "report_sha256": "c296f7f163fb6555892f81d218f5220eaee9263d5d24c310b5abb3a39c86656c",
+      "runner_sha256": "5a983402efbc745784866d4455755cf6671ec65a1c8ecf67a9e4f72677911d9f",
+      "tests_sha256": "72d1e503eb71676d3b4df01e8c597a694f9c95c5ef7399272bcfbbe107e3a1ab",
+      "worklog_sha256": "dd8566937df498a5f070f7dacb409ee172204da35112c869f35923617ae205b8"
+    },
+    "status": "PASS_LOCAL_ACCEPTANCE_EXACT_SHA_CI_PENDING"
+  },
+  "next_cycle_handoff": "docs/SYNCHRONIZED_CYCLE_010_HANDOFF_2026-09-28.md",
+  "next_falsifiable_gate": "Publish the exact code/evidence checkpoint, verify every configured GitHub Actions job for that SHA, then record the run and close Cycle 009.",
+  "nonclaims": [
+    "The MaxCut fixture is a fixed-seed finite software comparison, not GPU/QPU evidence or a scaling law.",
+    "All positive material, cost, uncertainty, and AI manifest inputs are synthetic.",
+    "Fresh/repeated process and injected interruptions do not establish cache control, power-loss survival, or service durability.",
+    "Offline HTTP/ZIP fixtures do not download or validate the archive payload.",
+    "SCM checks fictional canon consistency only; no empirical coupling or human study is represented.",
+    "ER6 semantic checks cover the declared frozen subset only; no provider or hardware execution is performed."
+  ],
+  "primary_source_basis": [
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "PROJECT_PRIMARY_SOURCE_DOCUMENT",
+      "scope": "UMRL-007 declares accepted throughput as accepted count per elapsed time; this cycle only adds a linked exact unit/type declaration.",
+      "url": "repo:docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md#1-typed-project-quantities"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_PROVIDER_API_DOCUMENTATION",
+      "scope": "Request field names only; no job was submitted.",
+      "url": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_METROLOGY_GUIDANCE",
+      "scope": "Uncertainty component and coverage-factor vocabulary only; no material was measured.",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-guidelines-evaluating-and-expressing-uncertainty-nist-measurement"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "LANGUAGE_SPECIFICATION",
+      "scope": "ER6 measurement destination semantics for a frozen subset only.",
+      "url": "https://openqasm.com/versions/3.1/language/insts.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_LANGUAGE_LIBRARY_DOCUMENTATION",
+      "scope": "Local rename API behavior; no power-loss or hardware durability claim.",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    }
+  ],
+  "report": "docs/SYNCHRONIZED_CYCLE_009_EXECUTION_DELTA_01_2026-09-28.md",
+  "schema": "uqpu-cycle009-delta01-synchronized-lane-ledger-v1",
+  "status": "ACTIVE_ALL_12_LANE_EXECUTABLE_CHECKPOINT_NOT_CLOSED",
+  "uncertainty": [
+    "A finite seeded MaxCut fixture and local runtimes do not establish general solver behavior.",
+    "The cost RSS output assumes independent components; its variance and expanded uncertainty are model-only.",
+    "The offline archive fixtures test declared metadata consistency only; no archive bytes are fetched."
+  ],
+  "validation": {
+    "executable_acceptance": {
+      "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
+      "artifact_sha256": "826be9c87ba040d6a42ea7f6c2a67a1ade93749f7fe9b180edf851373bbdfa34",
+      "lane_count": 12,
+      "status": "PASS"
+    },
+    "focused_cycle009_tests": {
+      "passed": 13,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "full_prototype_suite": {
+      "passed": 496,
+      "skipped_optional": 8,
+      "status": "PASS",
+      "tests_run": 504
+    },
+    "github_actions": {
+      "commit_sha": null,
+      "jobs_passed": 0,
+      "run_id": null,
+      "run_number": null,
+      "status": "PENDING_EXACT_SHA"
+    },
+    "local_validation": "PASS"
+  }
+}

@@ -350,3 +350,26 @@ agreement within `2e-12`, explicit circuit and reproducible resource provenance.
 **Next experiment:** QOS-AUDIT-010B5 pinned SDK reconstruction and serialization.
 **Review trigger:** independently executable circuit artifact or a documented SDK
 convention blocker.
+
+
+## RG-034 — Cycle 009 twelve-lane external evidence follow-through
+**Status:** OPEN / LOCAL-AND-SYNTHETIC GATES ONLY
+**Date:** 2026-09-28
+**Current checkpoint:** `docs/SYNCHRONIZED_CYCLE_009_EXECUTION_DELTA_01_2026-09-28.md` and `benchmarks/results/cycle009-delta01-synchronized-lane-ledger.json`. The Cycle 009 runner passes local acceptance; these results do not satisfy the lanes' external evidence gates.
+
+| Lane | Current bounded result | Remaining dependency | Next falsifiable unlock gate |
+|---|---|---|---|
+| A | Seeded n=8 MaxCut exact enumeration found objective 9; restart budget 1 missed by 1 while budgets 4 and 16 matched. | Broader preregistered workload set and comparable system baselines. | Freeze additional instances and output contract; report exact completion/gap and comparable CPU/GPU measurements before any QPU claim. |
+| B | Versioned synthetic request/receipt validation rejects payload mutation; submission remains disabled. | Provider authorization, execution record, receipt and bill. | With explicit authorization, match one request hash to provider task/receipt/bill; otherwise retain the blocked state. |
+| C | Local repeated/fresh-process readback and injected software exceptions preserve hashes; cache is uncontrolled. | Controlled cache, actual process interruption/power-loss, device flush or service durability evidence. | Run a separately authorized controlled storage protocol with device/platform details and independently verified old-or-new payload outcome. |
+| D | Offline HTTP-range and ZIP metadata mutation gates reject malformed inputs; no download occurred. | Authorized archive access and independently verified full archive/payload provenance. | Establish source checksum and size; only then execute the bounded download/read protocol and verify bytes against the declared digest. |
+| E | Synthetic material provenance and unit/control/calibration mutations validate. | Physical sample, operational method/calibration and measured property with uncertainty. | Measure a function-specific sample/control pair with traceable calibration, declared units and uncertainty budget. |
+| F | Synthetic interval totals are linked to fixture acceptance hashes; incomplete/zero-output denominators remain null. | Complete lifecycle ledger, actual bill, accepted-output evidence and justified uncertainty/covariance model. | Reconcile cost components to source records and accepted outputs; retain null until all required rows reconcile. |
+| G | Synthetic RSS/coverage-factor calculation rejects unreported or expired components. | Operational certificate, measured inputs, scope match and correlation evidence. | Validate a current scoped certificate and measured uncertainty budget, including documented covariance assumptions. |
+| H | Assumed gate ranking reverses across scenarios; capital remains null and unauthorized. | Empirical effort/impact distributions and owner authorization. | Replace assumed ranking inputs with sourced estimates and document the owner's explicit capital decision before allocating funds. |
+| FND/EQN | Source-linked `T_acc` typed declaration validates; prose-only and unit-vector mutations reject. | Structured source-backed classification of more quantities and evidence for physical validity. | Add a bounded sourced quantity/equation with exact dimensions and a falsifiable check; do not infer units from prose. |
+| SCM | Fictional versioned transitions and volume/equation links reject unknown state, casts and replay. | Fiction-only boundary; no empirical coupling evidence and no human-study authorization. | Keep empirical linkage null; any future evidence path needs prior independent ethical review, preregistration, consent and blinded controls. |
+| AI-COST | Synthetic train/validation/test split hashes and metrics reject overlap/source mutation before scoring. | Immutable real-data lineage and independently evaluated quality, energy and cost evidence. | Freeze dataset/source hashes and evaluation contract, then report held-out completeness before any candidate scoring. |
+| QOS/QSVT | Frozen ER6 register/measurement/resource mutations reject; no provider or hardware execution. | Broader independent semantic validation, provider transpilation and hardware receipt. | Reconstruct the frozen circuit in an independent parser/SDK; only proceed to authorized provider execution with exact source and resource provenance. |
+
+**Evidence boundary:** all positive material, cost, uncertainty, AI and SCM values are synthetic; local file tests are software exception-injection screens; H values are assumptions; the A result is a finite classical fixture. No hardware, material, economic, funding, capital, physical-law, GPU-replacement or empirical SCM claim is promoted.

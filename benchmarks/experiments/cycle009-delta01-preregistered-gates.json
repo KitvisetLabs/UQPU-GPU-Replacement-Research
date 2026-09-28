@@ -1,0 +1,344 @@
+{
+  "base_closeout_commit": "47c3efd2d7f369ce4797bace321302ef139a6e84",
+  "date": "2026-09-28",
+  "evidence_boundary": "SYNTHETIC_AND_LOCAL_SOFTWARE_GATES_ONLY",
+  "lanes": {
+    "A": {
+      "edge_probability": 0.4,
+      "exact_state_cap": 1024,
+      "expected_exact_objective": 9,
+      "expected_exact_states": 256,
+      "expected_objectives_by_budget": [
+        8,
+        9,
+        9
+      ],
+      "fixture_id": "A-ER8-SEED-1",
+      "generator": "seeded_erdos_renyi_maxcut",
+      "node_count": 8,
+      "restart_budgets": [
+        1,
+        4,
+        16
+      ],
+      "restart_seed_rule": "seed*1000003 + zero_based_restart_index",
+      "seed": 1
+    },
+    "AI-COST": {
+      "metric_values": {
+        "test": {
+          "loss": 0.1,
+          "quality": 0.9
+        },
+        "train": {
+          "loss": 0.1,
+          "quality": 0.9
+        },
+        "validation": {
+          "loss": 0.1,
+          "quality": 0.9
+        }
+      },
+      "required_metrics": [
+        "loss",
+        "quality"
+      ],
+      "source_hashes": {
+        "dataset": "559619d1a0d02b135e32992fb7b2c5b364e1e4b762d2af13135097349f08f51e",
+        "labels": "04031d1b47847dfe0b53d49befbf28438f2fdd99377c896a72000c2b423c1f36"
+      },
+      "source_payloads": {
+        "dataset": {
+          "examples": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "version": 1
+        },
+        "labels": {
+          "labels": {
+            "a": "0",
+            "b": "1",
+            "c": "0",
+            "d": "1"
+          },
+          "version": 1
+        }
+      },
+      "split_ids": {
+        "test": [
+          "d"
+        ],
+        "train": [
+          "a",
+          "b"
+        ],
+        "validation": [
+          "c"
+        ]
+      }
+    },
+    "B": {
+      "base_commit_reference": "CYCLE009_BRANCH_BASE_7_CHAR_MINIMUM",
+      "canonicalization": "JSON_SORTED_KEYS_COMPACT_V1",
+      "request": {
+        "client_token": "cycle009-fixture",
+        "operation": "sample",
+        "payload": {
+          "sample": "synthetic",
+          "value": 1
+        },
+        "payload_sha256": "cab4bf69e495738dd7c14381b2b0f940380c11322a1b5e1a2b7dc6dfd4b450e9",
+        "tags": {
+          "a": "1",
+          "b": "2"
+        }
+      },
+      "schema": "uqpu-request-envelope-v2"
+    },
+    "C": {
+      "cache_state": "UNCONTROLLED",
+      "injected_boundaries": [
+        "before_write",
+        "after_staging_fsync",
+        "after_replace"
+      ],
+      "new_payload": "new",
+      "old_payload": "old",
+      "process_scopes": [
+        "REPEATED_PROCESS",
+        "FRESH_PROCESS"
+      ]
+    },
+    "D": {
+      "range": {
+        "body_length": 8,
+        "content_range": "bytes 0-7/64",
+        "end": 7,
+        "start": 0,
+        "status": 206,
+        "total": 64
+      },
+      "zip_metadata": {
+        "archive_downloaded": false,
+        "archive_size_bytes": 2000,
+        "central_end": 2000,
+        "central_start": 1800,
+        "declared_archive_size_bytes": 2000,
+        "entries": [
+          {
+            "compressed_size_bytes": 50,
+            "local_header_offset": 100
+          }
+        ],
+        "payload_read": false
+      }
+    },
+    "E": {
+      "as_of": "2026-09-28",
+      "record": {
+        "calibration_id": "cal-1",
+        "calibration_scope": "method-1",
+        "control_id": "synthetic-control",
+        "evidence_class": "SYNTHETIC",
+        "measurand": "fixture-length",
+        "method_id": "method-1",
+        "physical_measurement": false,
+        "sample_id": "synthetic-sample",
+        "synthetic": true,
+        "uncertainty": "1/100",
+        "uncertainty_unit": "m",
+        "unit_code": "m",
+        "valid_until": "2026-10-01"
+      }
+    },
+    "F": {
+      "accepted_output_contract": {
+        "fixture_only": true,
+        "output": "fixture-result",
+        "schema": "synthetic-accepted-output-contract-v1"
+      },
+      "accepted_output_contract_sha256": "5298340a26737128cfd01074a45262b140d3fa067c242f2cd5d5e0d6c62210fa",
+      "accepted_outputs": 2,
+      "components": {
+        "compute": {
+          "currency": "USD",
+          "high": "8/5",
+          "low": "6/5",
+          "standard_uncertainty": "1/10"
+        },
+        "storage": {
+          "currency": "USD",
+          "high": "7/10",
+          "low": "1/2",
+          "standard_uncertainty": "1/5"
+        }
+      },
+      "coverage_factor": 2,
+      "currency": "USD",
+      "required_components": [
+        "compute",
+        "storage"
+      ]
+    },
+    "FND/EQN": {
+      "declaration": {
+        "dimension_vector": {
+          "count": "1",
+          "time": "-1"
+        },
+        "evidence_type": "FORMAL_MODEL_DECLARATION",
+        "quantity_id": "T_acc",
+        "source_locator": "docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md#1-typed-project-quantities/008-MATH-1",
+        "unit_code": "count/s"
+      },
+      "unit_registry": {
+        "count/s": {
+          "count": "1",
+          "time": "-1"
+        }
+      }
+    },
+    "G": {
+      "as_of": "2026-09-28",
+      "budget": {
+        "combination_method": "ROOT_SUM_SQUARES_UNCORRELATED",
+        "components": [
+          {
+            "component_id": "u1",
+            "standard_uncertainty": "0.3",
+            "unit_code": "m"
+          },
+          {
+            "component_id": "u2",
+            "standard_uncertainty": "0.4",
+            "unit_code": "m"
+          }
+        ],
+        "coverage_factor": "2",
+        "evidence_class": "SYNTHETIC_UNCERTAINTY_BUDGET",
+        "reported_component_ids": [
+          "u1",
+          "u2"
+        ],
+        "required_scope_id": "method-1",
+        "scope_id": "method-1",
+        "unit_code": "m",
+        "valid_until": "2026-10-01"
+      }
+    },
+    "H": {
+      "gates": [
+        {
+          "gate_id": "BILL_RECEIPT"
+        },
+        {
+          "gate_id": "MATERIAL_SAMPLE"
+        }
+      ],
+      "scenarios": [
+        {
+          "blocker_impact": {
+            "BILL_RECEIPT": 8,
+            "MATERIAL_SAMPLE": 4
+          },
+          "effort_cost": {
+            "BILL_RECEIPT": 4,
+            "MATERIAL_SAMPLE": 4
+          },
+          "scenario_id": "base"
+        },
+        {
+          "blocker_impact": {
+            "BILL_RECEIPT": 4,
+            "MATERIAL_SAMPLE": 2
+          },
+          "effort_cost": {
+            "BILL_RECEIPT": 8,
+            "MATERIAL_SAMPLE": 1
+          },
+          "scenario_id": "sample_favorable"
+        }
+      ]
+    },
+    "QOS/QSVT": {
+      "candidate": {
+        "grammar_subset_id": "ER6-FROZEN-V1",
+        "measurement_destinations": [
+          {
+            "bit": "c[0]",
+            "qubit": "q[0]"
+          }
+        ],
+        "register_map": {
+          "q[0]": "logical-0"
+        },
+        "resources": {
+          "depth": 5,
+          "gate_count": 8,
+          "logical_qubits": 1
+        },
+        "source_sha256": "32e3b6887b06b8b96e104992dec08f4408619705d53743a5fcfddda6c7275d42"
+      },
+      "resource_bounds": {
+        "depth": 6,
+        "gate_count": 10,
+        "logical_qubits": 2
+      },
+      "source": {
+        "grammar_subset_id": "ER6-FROZEN-V1",
+        "measurement_destinations": [
+          {
+            "bit": "c[0]",
+            "qubit": "q[0]"
+          }
+        ],
+        "register_map": {
+          "q[0]": "logical-0"
+        }
+      }
+    },
+    "SCM": {
+      "equations": [
+        "SCM-MATH-020",
+        "SCM-MATH-021",
+        "SCM-MATH-022",
+        "SCM-MATH-023"
+      ],
+      "states": [
+        "chi0",
+        "chi1"
+      ],
+      "transition": {
+        "canon_version": "v1",
+        "consent": true,
+        "consent_nonce": "nonce-1",
+        "cross_domain_cast": false,
+        "domain_sort": "FICTION_CANON",
+        "equation_id": "SCM-MATH-020",
+        "from_state": "chi0",
+        "source_version": "v1",
+        "target_version": "v1",
+        "to_state": "chi1",
+        "volume_equation_links": {
+          "V1": "SCM-MATH-022",
+          "V2": "SCM-MATH-022",
+          "V3": "SCM-MATH-022",
+          "V4": "SCM-MATH-022",
+          "V5": "SCM-MATH-022"
+        }
+      }
+    }
+  },
+  "nonclaims": [
+    "The MaxCut fixture is a fixed-seed finite software comparison, not GPU/QPU evidence or a scaling law.",
+    "All positive material, cost, uncertainty, and AI manifest inputs are synthetic.",
+    "Fresh/repeated process and injected interruptions do not establish cache control, power-loss survival, or service durability.",
+    "Offline HTTP/ZIP fixtures do not download or validate the archive payload.",
+    "SCM checks fictional canon consistency only; no empirical coupling or human study is represented.",
+    "ER6 semantic checks cover the declared frozen subset only; no provider or hardware execution is performed."
+  ],
+  "schema": "uqpu-cycle009-delta01-preregistered-gates-v1"
+}

@@ -1,0 +1,528 @@
+{
+  "assumptions": [
+    "Every positive material, cost, uncertainty, SCM, AI, QOS, and provider-shaped record is synthetic.",
+    "The H-lane effort and blocker-impact values are illustrative assumptions and are not measurements.",
+    "The A-lane exact enumeration is restricted to 256 states under a 1,024-state cap.",
+    "The interrupted-write tests inject software exceptions at named boundaries; they do not kill power or validate a storage device."
+  ],
+  "base_closeout_commit": "47c3efd2d7f369ce4797bace321302ef139a6e84",
+  "cycle": "009",
+  "delta": "01",
+  "external_gates_remaining": [
+    "No provider authorization, task, receipt, or bill.",
+    "No cache control, service durability, device flush, or power-loss evidence.",
+    "No physical material sample, operational calibration, or measured uncertainty.",
+    "No measured lifecycle economics, capital authorization, or candidate-system performance.",
+    "No new physical law, quantum advantage, GPU replacement, or empirical SCM coupling.",
+    "No provider transpilation or hardware execution of ER6/QSVT workloads."
+  ],
+  "fixtures_artifact": "benchmarks/experiments/cycle009-delta01-preregistered-gates.json",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "budget_results": [
+        {
+          "gap_to_exact": 1,
+          "objective": 8,
+          "restart_objectives": [
+            8
+          ],
+          "restarts": 1
+        },
+        {
+          "gap_to_exact": 0,
+          "objective": 9,
+          "restart_objectives": [
+            8,
+            9,
+            9,
+            8
+          ],
+          "restarts": 4
+        },
+        {
+          "gap_to_exact": 0,
+          "objective": 9,
+          "restart_objectives": [
+            8,
+            9,
+            9,
+            8,
+            9,
+            8,
+            9,
+            8,
+            8,
+            9,
+            8,
+            8,
+            8,
+            8,
+            9,
+            8
+          ],
+          "restarts": 16
+        }
+      ],
+      "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+      "exact_control": {
+        "best_objective": 9,
+        "complete": true,
+        "state_cap": 1024,
+        "states_evaluated": 256
+      },
+      "fixture": {
+        "edge_list": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            4,
+            1
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            3,
+            5,
+            1
+          ],
+          [
+            3,
+            6,
+            1
+          ],
+          [
+            4,
+            6,
+            1
+          ],
+          [
+            4,
+            7,
+            1
+          ],
+          [
+            5,
+            7,
+            1
+          ],
+          [
+            6,
+            7,
+            1
+          ]
+        ],
+        "edge_probability": 0.4,
+        "generator": "seeded_erdos_renyi_maxcut",
+        "node_count": 8,
+        "seed": 1
+      },
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "passed": true,
+      "status": "PASS",
+      "test": "test_lane_a_preregistered_budgets_include_a_falsifying_gap"
+    },
+    "AI-COST": {
+      "computed_source_hashes": {
+        "dataset": "559619d1a0d02b135e32992fb7b2c5b364e1e4b762d2af13135097349f08f51e",
+        "labels": "04031d1b47847dfe0b53d49befbf28438f2fdd99377c896a72000c2b423c1f36"
+      },
+      "evidence_class": "SYNTHETIC_THREE_WAY_MANIFEST_GATE",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "overlap_rejected": [
+        "split_overlap:train:test"
+      ],
+      "passed": true,
+      "scoring_performed": false,
+      "source_hashes_match_synthetic_payloads": true,
+      "status": "PASS",
+      "test": "test_lane_ai_cost_three_way_splits_hashes_and_metrics_are_checked",
+      "valid_manifest": {
+        "completeness": {
+          "test": {
+            "complete": true,
+            "missing_metrics": []
+          },
+          "train": {
+            "complete": true,
+            "missing_metrics": []
+          },
+          "validation": {
+            "complete": true,
+            "missing_metrics": []
+          }
+        },
+        "errors": [],
+        "evidence_class": "SYNTHETIC_THREE_WAY_MANIFEST_GATE",
+        "scoring_performed": false,
+        "valid": true
+      }
+    },
+    "B": {
+      "errors": [],
+      "evidence_class": "SYNTHETIC_VERSIONED_REQUEST_RECEIPT_GATE",
+      "key_order_invariant": true,
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "passed": true,
+      "payload_mutation_rejected": true,
+      "provider_submission_enabled": false,
+      "request_sha256": "e9ae9aef5ccb34be5140db8bdca738182fc4e2c3a389b65a1d1c1913598fe4a8",
+      "status": "PASS",
+      "test": "test_lane_b_canonical_order_is_stable_and_payload_mutation_fails",
+      "unchanged_replay_accepted": true,
+      "valid": true
+    },
+    "C": {
+      "cache_state": "UNCONTROLLED",
+      "evidence_class": "LOCAL_REPEATED_FRESH_PROCESS_AND_FAULT_INJECTION_SOFTWARE_SCREEN_ONLY",
+      "interruption_rows": {
+        "after_replace": {
+          "evidence_class": "LOCAL_FAULT_INJECTION_SOFTWARE_SCREEN_ONLY",
+          "final_sha256": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
+          "injected_boundary": "after_replace",
+          "old_or_new_payload_preserved": true,
+          "replace_completed": true
+        },
+        "after_staging_fsync": {
+          "evidence_class": "LOCAL_FAULT_INJECTION_SOFTWARE_SCREEN_ONLY",
+          "final_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "injected_boundary": "after_staging_fsync",
+          "old_or_new_payload_preserved": true,
+          "replace_completed": false
+        },
+        "before_write": {
+          "evidence_class": "LOCAL_FAULT_INJECTION_SOFTWARE_SCREEN_ONLY",
+          "final_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "injected_boundary": "before_write",
+          "old_or_new_payload_preserved": true,
+          "replace_completed": false
+        }
+      },
+      "io_probe": {
+        "cache_state": "UNCONTROLLED",
+        "evidence_class": "LOCAL_REPEATED_AND_FRESH_PROCESS_FILESYSTEM_SCREEN_ONLY",
+        "nonclaims": [
+          "No cold-cache label, device-flush attestation, remote durability, or power-loss evidence."
+        ],
+        "payload_bytes": 46,
+        "payload_sha256": "1d1c4fa2f1010f0674856276deb590c7e1e30fd7e1a8e1fe5d4affcce15f2e97",
+        "platform_capabilities": {
+          "directory_fsync_completed": true,
+          "directory_fsync_error_errno": null,
+          "directory_fsync_supported": true
+        },
+        "rows": [
+          {
+            "process_id": 2,
+            "process_scope": "REPEATED_PROCESS",
+            "readback_bytes": 46,
+            "readback_sha256": "1d1c4fa2f1010f0674856276deb590c7e1e30fd7e1a8e1fe5d4affcce15f2e97",
+            "sha256_matches": true
+          },
+          {
+            "process_id": 2,
+            "process_scope": "REPEATED_PROCESS",
+            "readback_bytes": 46,
+            "readback_sha256": "1d1c4fa2f1010f0674856276deb590c7e1e30fd7e1a8e1fe5d4affcce15f2e97",
+            "sha256_matches": true
+          },
+          {
+            "process_id": null,
+            "process_scope": "FRESH_PROCESS",
+            "readback_bytes": 46,
+            "readback_sha256": "1d1c4fa2f1010f0674856276deb590c7e1e30fd7e1a8e1fe5d4affcce15f2e97",
+            "sha256_matches": true
+          }
+        ]
+      },
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "passed": true,
+      "process_scope_errors": {
+        "FRESH_PROCESS": [],
+        "REPEATED_PROCESS": []
+      },
+      "status": "PASS",
+      "test": "test_lane_c_labels_process_scope_and_injected_interruption_boundaries"
+    },
+    "D": {
+      "archive_downloaded": false,
+      "evidence_class": "OFFLINE_SYNTHETIC_HTTP_RANGE_AND_ZIP_METADATA_GATE",
+      "http_200_rejected": [
+        "http_status_must_be_206"
+      ],
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "malformed_zip_rejected": [
+        "zip_entry_truncated_before_central_directory:0",
+        "zip_local_header_offset_invalid:0"
+      ],
+      "passed": true,
+      "payload_read": false,
+      "status": "PASS",
+      "test": "test_lane_d_offline_range_and_zip_mutations_reject",
+      "valid_range_errors": [],
+      "valid_zip_errors": []
+    },
+    "E": {
+      "evidence_class": "SYNTHETIC_MATERIAL_PROVENANCE_MUTATION_GATE",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "passed": true,
+      "physical_measurement_claim": false,
+      "status": "PASS",
+      "test": "test_lane_e_material_control_calibration_and_units_are_scoped",
+      "valid_record": {
+        "errors": [],
+        "evidence_class": "SYNTHETIC_MATERIAL_PROVENANCE_MUTATION_GATE",
+        "physical_measurement_claim": false,
+        "valid": true
+      }
+    },
+    "F": {
+      "accepted_output_contract_sha256": "5298340a26737128cfd01074a45262b140d3fa067c242f2cd5d5e0d6c62210fa",
+      "complete": true,
+      "currency": "USD",
+      "errors": [],
+      "evidence_class": "SYNTHETIC_COST_INTERVAL_WITH_UNCERTAINTY",
+      "expanded_uncertainty_model_only": "0.4472135954999579392818347338",
+      "financial_claim_admissible": false,
+      "incomplete_component_totals": null,
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "passed": true,
+      "per_accepted_output_interval": [
+        "17/20",
+        "23/20"
+      ],
+      "status": "PASS",
+      "test": "test_lane_f_zero_outputs_and_incomplete_cost_keep_totals_null",
+      "total_interval": [
+        "17/10",
+        "23/10"
+      ],
+      "uncertainty_assumption": "INDEPENDENT_COMPONENTS_ROOT_SUM_SQUARES_FOR_MODEL_ONLY",
+      "variance_sum_exact": "1/20",
+      "zero_output_totals": null
+    },
+    "FND/EQN": {
+      "evidence_class": "BOUNDED_SOURCE_LINKED_TYPED_DECLARATION_AUDIT",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "passed": true,
+      "status": "PASS",
+      "test": "test_lane_fnd_eqn_requires_source_linked_explicit_dimension_type",
+      "typed_declaration": {
+        "errors": [],
+        "evidence_class": "BOUNDED_SOURCE_LINKED_TYPED_DECLARATION_AUDIT",
+        "quantity_id": "T_acc",
+        "valid": true
+      },
+      "unclassified_declaration_errors": [
+        "dimension_vector_unclassified",
+        "unit_unclassified_or_unregistered"
+      ]
+    },
+    "G": {
+      "combination_method": "ROOT_SUM_SQUARES_UNCORRELATED",
+      "coverage_factor": "2",
+      "errors": [],
+      "evidence_class": "SYNTHETIC_UNCERTAINTY_BUDGET",
+      "expanded_uncertainty_model_only": "1.0",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "measured_uncertainty_claim": false,
+      "passed": true,
+      "status": "PASS",
+      "test": "test_lane_g_uncertainty_budget_requires_method_coverage_scope_and_all_components",
+      "unreported_component_errors": [
+        "unreported_uncertainty_component"
+      ],
+      "valid": true
+    },
+    "H": {
+      "assumptions_measured": false,
+      "base_ranking": [
+        "BILL_RECEIPT",
+        "MATERIAL_SAMPLE"
+      ],
+      "capital_amount": null,
+      "capital_authorized": false,
+      "evidence_class": "ILLUSTRATIVE_ASSUMPTION_GRID_ONLY",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "pairwise_comparisons": 2,
+      "pairwise_order_stability": 0.5,
+      "passed": true,
+      "rankings": [
+        {
+          "ranking": [
+            "BILL_RECEIPT",
+            "MATERIAL_SAMPLE"
+          ],
+          "scenario_id": "base",
+          "scores": {
+            "BILL_RECEIPT": 2.0,
+            "MATERIAL_SAMPLE": 1.0
+          }
+        },
+        {
+          "ranking": [
+            "MATERIAL_SAMPLE",
+            "BILL_RECEIPT"
+          ],
+          "scenario_id": "sample_favorable",
+          "scores": {
+            "BILL_RECEIPT": 0.5,
+            "MATERIAL_SAMPLE": 2.0
+          }
+        }
+      ],
+      "schema": "uqpu-cycle009-assumption-grid-ranking-v1",
+      "status": "PASS",
+      "test": "test_lane_h_assumption_grid_records_rank_reversal_without_capital"
+    },
+    "QOS/QSVT": {
+      "evidence_class": "FROZEN_ER6_SEMANTIC_AND_RESOURCE_CERTIFICATE",
+      "hardware_receipt": null,
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "measurement_mutation_errors": [
+        "er6_semantics_changed:measurement_destinations"
+      ],
+      "passed": true,
+      "resource_overrun_errors": [
+        "er6_resource_bound_exceeded:depth"
+      ],
+      "status": "PASS",
+      "test": "test_lane_qos_er6_register_measurement_and_resource_mutations_reject",
+      "valid_certificate": {
+        "errors": [],
+        "evidence_class": "FROZEN_ER6_SEMANTIC_AND_RESOURCE_CERTIFICATE",
+        "hardware_receipt": null,
+        "provider_transpile_receipt": null,
+        "valid": true
+      }
+    },
+    "SCM": {
+      "empirical_coupling": null,
+      "evidence_class": "FICTIONAL_VERSIONED_TRANSITION_MUTATION_GATE",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "passed": true,
+      "replay_errors": [
+        "transition_consent_nonce_replayed"
+      ],
+      "status": "PASS",
+      "test": "test_lane_scm_version_state_volume_links_consent_and_replay_fail_closed",
+      "transition": {
+        "empirical_coupling": null,
+        "errors": [],
+        "evidence_class": "FICTIONAL_VERSIONED_TRANSITION_MUTATION_GATE",
+        "valid": true
+      }
+    }
+  },
+  "nonclaims": [
+    "The MaxCut fixture is a fixed-seed finite software comparison, not GPU/QPU evidence or a scaling law.",
+    "All positive material, cost, uncertainty, and AI manifest inputs are synthetic.",
+    "Fresh/repeated process and injected interruptions do not establish cache control, power-loss survival, or service durability.",
+    "Offline HTTP/ZIP fixtures do not download or validate the archive payload.",
+    "SCM checks fictional canon consistency only; no empirical coupling or human study is represented.",
+    "ER6 semantic checks cover the declared frozen subset only; no provider or hardware execution is performed."
+  ],
+  "primary_source_basis": [
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "PROJECT_PRIMARY_SOURCE_DOCUMENT",
+      "retrieval_status": "VERIFIED_GITHUB_SOURCE",
+      "scope": "UMRL-007 declares accepted throughput as accepted count per elapsed time; this cycle only adds a linked exact unit/type declaration.",
+      "url": "repo:docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md#1-typed-project-quantities"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_PROVIDER_API_DOCUMENTATION",
+      "retrieval_status": "DIRECT_FETCH_SUCCESS",
+      "scope": "Request field names only; no job was submitted.",
+      "url": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_METROLOGY_REFERENCE_NOT_RETRIEVED",
+      "retrieval_status": "FETCH_FAILED_SERVER_ERROR",
+      "scope": "Direct fetch returned a server error on 2026-09-28; retained as a reference only, with no NIST-specific guidance attributed in this cycle.",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-guidelines-evaluating-and-expressing-uncertainty-nist-measurement"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "LANGUAGE_SPECIFICATION",
+      "retrieval_status": "DIRECT_FETCH_SUCCESS",
+      "scope": "ER6 measurement destination semantics for a frozen subset only.",
+      "url": "https://openqasm.com/versions/3.1/language/insts.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_LANGUAGE_LIBRARY_DOCUMENTATION",
+      "retrieval_status": "DIRECT_FETCH_SUCCESS",
+      "scope": "Local rename API behavior; no power-loss or hardware durability claim.",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    }
+  ],
+  "provenance": {
+    "fixtures_sha256": "339292eda8ebb18560ccd59826d6ff8038491b3c8ba34f57be4d5b5a709067d5",
+    "handoff": "docs/SYNCHRONIZED_CYCLE_009_HANDOFF_2026-09-28.md",
+    "handoff_sha256": "da3f7d941238c34a301a9db62e46a70d48df1fcec77ed3a540190d8ac5500d1b",
+    "implementation": "software/uqpu-prototype/uqpu/cycle009_delta01.py",
+    "implementation_sha256": "70813e3b71260ab43994337159df64adf66442a96d20a6580789772e738b523b",
+    "runner": "software/uqpu-prototype/examples/run_cycle009_delta01.py",
+    "runner_sha256": "5a983402efbc745784866d4455755cf6671ec65a1c8ecf67a9e4f72677911d9f",
+    "tests": "software/uqpu-prototype/tests/test_cycle009_delta01.py",
+    "tests_sha256": "72d1e503eb71676d3b4df01e8c597a694f9c95c5ef7399272bcfbbe107e3a1ab"
+  },
+  "reviewed_date": "2026-09-28",
+  "schema": "uqpu-cycle009-delta01-executable-acceptance-v1",
+  "status": "PASS_LOCAL_GATES_CYCLE_CLOSEOUT_PENDING_EXACT_SHA_CI",
+  "test_runs": {
+    "cycle009_focused": {
+      "command": [
+        "-m",
+        "unittest",
+        "tests.test_cycle009_delta01",
+        "-v"
+      ],
+      "optional_skips": 0,
+      "status": "PASS",
+      "tests_run": 13
+    },
+    "full_prototype_suite": {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "optional_skips": 8,
+      "status": "PASS",
+      "tests_run": 504
+    }
+  },
+  "uncertainty": [
+    "A finite seeded MaxCut fixture and local runtimes do not establish general solver behavior.",
+    "The cost RSS output assumes independent components; its variance and expanded uncertainty are model-only.",
+    "The offline archive fixtures test declared metadata consistency only; no archive bytes are fetched."
+  ]
+}
