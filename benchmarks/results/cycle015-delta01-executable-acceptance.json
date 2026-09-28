@@ -139,7 +139,7 @@
         23
       ],
       "visible_complete": true,
-      "visible_sha256": "74c70d565841a949393be062208b55fcbdfef826b1bb0afb8ab776e62d0c106d",
+      "visible_sha256": "73c118ec3ea38171d2d4a6a58adfa93375c59745ab9a9ae94007e6ecbf349e23",
       "writer_count": 3
     },
     "D": {
@@ -471,7 +471,7 @@
   "schema": "uqpu-cycle015-delta01-executable-acceptance-v1",
   "source_hashes": {
     "cycle015_module": "9230a3b45154f38786a78449eb8e1ec94bb3a0ceb84f3e3eb59d3eb264d40ded",
-    "cycle015_tests": "407b23ba576725e945d076cdebaa33bb7c9346f65f331f328b0ddcad0a9274af",
+    "cycle015_tests": "8922b2367abfd786b2f8112e3df2296738493c22ae6651ea6fba09a7332f1c16",
     "preregistered_gates": "9c8095a79b282e1d99a049fae0d9dd8dd0baba17726e1a8126227089d77e039c",
     "umrl": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
   }
