@@ -20,6 +20,7 @@
   ],
   "base_closeout_commit": "47c3efd2d7f369ce4797bace321302ef139a6e84",
   "branch": "research/cycle-009-delta-01-2026-09-28",
+  "closed_date": "2026-09-28",
   "cross_lane_integration": [
     "A/B/C and AI-COST carry stable hashes, explicit inputs, accepted-output or request provenance, and false-claim ceilings.",
     "D/E/F/G bind data values to units, calibration/uncertainty metadata, and explicit missing-data failure states.",
@@ -38,7 +39,7 @@
     "No provider transpilation or hardware execution of ER6/QSVT workloads."
   ],
   "fixtures_artifact": "benchmarks/experiments/cycle009-delta01-preregistered-gates.json",
-  "full_cycle_closeout_pending": true,
+  "full_cycle_closeout_pending": false,
   "lane_count": 12,
   "lanes": {
     "A": {
@@ -168,21 +169,30 @@
     "artifact": "benchmarks/results/cycle009-delta01-executable-acceptance.json",
     "artifact_sha256": "826be9c87ba040d6a42ea7f6c2a67a1ade93749f7fe9b180edf851373bbdfa34",
     "checkpoint_id": "CYCLE009-DELTA01-ALL-LANE-001",
+    "evidence_commit": "cb0663bd983172d3bd2cd17c74d6062d186aa5bc",
+    "github_actions": {
+      "commit_sha": "cb0663bd983172d3bd2cd17c74d6062d186aa5bc",
+      "jobs_passed": 8,
+      "run_id": 36425586293,
+      "run_number": 511,
+      "status": "PASS"
+    },
     "lane_count": 12,
     "provenance": {
+      "acceptance_sha256": "826be9c87ba040d6a42ea7f6c2a67a1ade93749f7fe9b180edf851373bbdfa34",
       "fixtures_sha256": "339292eda8ebb18560ccd59826d6ff8038491b3c8ba34f57be4d5b5a709067d5",
       "handoff_sha256": "da3f7d941238c34a301a9db62e46a70d48df1fcec77ed3a540190d8ac5500d1b",
       "implementation_sha256": "70813e3b71260ab43994337159df64adf66442a96d20a6580789772e738b523b",
       "open_gates_sha256": "6a9320a0fe6a9b6bd42edfc5b5eba6c933b2bf3dda5257e3055e5b184ebf752f",
-      "report_sha256": "c296f7f163fb6555892f81d218f5220eaee9263d5d24c310b5abb3a39c86656c",
+      "report_sha256": "a00b4561e1fe07034691c81f272748634d023843fb040e5d53cfaae6cba69a32",
       "runner_sha256": "5a983402efbc745784866d4455755cf6671ec65a1c8ecf67a9e4f72677911d9f",
       "tests_sha256": "72d1e503eb71676d3b4df01e8c597a694f9c95c5ef7399272bcfbbe107e3a1ab",
-      "worklog_sha256": "dd8566937df498a5f070f7dacb409ee172204da35112c869f35923617ae205b8"
+      "worklog_sha256": "e54389a605982a9c8310790d103457457b9b94acc583d906c31e4d9f307bb22e"
     },
-    "status": "PASS_LOCAL_ACCEPTANCE_EXACT_SHA_CI_PENDING"
+    "status": "PASS_LOCAL_ACCEPTANCE_EXACT_SHA_ACTIONS_PASSED"
   },
   "next_cycle_handoff": "docs/SYNCHRONIZED_CYCLE_010_HANDOFF_2026-09-28.md",
-  "next_falsifiable_gate": "Publish the exact code/evidence checkpoint, verify every configured GitHub Actions job for that SHA, then record the run and close Cycle 009.",
+  "next_falsifiable_gate": "Create and verify the Cycle 010 research branch from the exact remote Cycle 009 metadata closeout commit, then execute all 12 handoff packets.",
   "nonclaims": [
     "The MaxCut fixture is a fixed-seed finite software comparison, not GPU/QPU evidence or a scaling law.",
     "All positive material, cost, uncertainty, and AI manifest inputs are synthetic.",
@@ -225,7 +235,7 @@
   ],
   "report": "docs/SYNCHRONIZED_CYCLE_009_EXECUTION_DELTA_01_2026-09-28.md",
   "schema": "uqpu-cycle009-delta01-synchronized-lane-ledger-v1",
-  "status": "ACTIVE_ALL_12_LANE_EXECUTABLE_CHECKPOINT_NOT_CLOSED",
+  "status": "CLOSED_SYNCHRONIZED_RESEARCH_CYCLE_NO_EVIDENCE_PROMOTION",
   "uncertainty": [
     "A finite seeded MaxCut fixture and local runtimes do not establish general solver behavior.",
     "The cost RSS output assumes independent components; its variance and expanded uncertainty are model-only.",
@@ -250,12 +260,15 @@
       "tests_run": 504
     },
     "github_actions": {
-      "commit_sha": null,
-      "jobs_passed": 0,
-      "run_id": null,
-      "run_number": null,
-      "status": "PENDING_EXACT_SHA"
+      "commit_sha": "cb0663bd983172d3bd2cd17c74d6062d186aa5bc",
+      "job_count": 8,
+      "jobs_passed": 8,
+      "run_id": 36425586293,
+      "run_number": 511,
+      "status": "PASS",
+      "workflow": ".github/workflows/uqpu-tests.yml"
     },
-    "local_validation": "PASS"
-  }
+    "local_validation": "PASS; exact remote code/evidence SHA passed Actions 8/8"
+  },
+  "verified_evidence_commit": "cb0663bd983172d3bd2cd17c74d6062d186aa5bc"
 }

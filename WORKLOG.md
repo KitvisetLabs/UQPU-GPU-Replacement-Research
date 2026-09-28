@@ -1120,9 +1120,9 @@ artifact, mutation tests, synchronized ledger, report, and Cycle 010 handoff.
 The focused suite passed **13/13**; the full prototype suite ran **504 tests**
 (**496 passed**, **8 optional skips**). All twelve local lane gates passed
 while each lane remains `BLOCKED_WITH_PROGRESS`. The report and RG-034 record
-the external unlock paths. Exact GitHub Actions for the new code/evidence SHA
-is still pending; do not close Cycle 009 until that SHA's configured jobs pass
-and the closeout is published.
+the external unlock paths. GitHub Actions **#511** (run ID `36425586293`) passed **8/8** on exact
+code/evidence SHA `cb0663bd983172d3bd2cd17c74d6062d186aa5bc`; the metadata
+closeout records that verified run and closes Cycle 009.
 
 The evidence is a bounded seeded classical software comparison, local I/O
 and injected-exception tests, or synthetic/schema/model-only data. No provider
