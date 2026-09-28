@@ -1,0 +1,93 @@
+{
+  "schema": "uqpu-cycle019-delta01-preregistered-gates-v1",
+  "cycle": "019",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-019-delta-01-2026-09-28",
+  "base_cycle018_closeout_sha": "c039a96979a038c0f327d5a59fcaaf3fabdac0c4",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {
+    "status": "BLOCKED_WITH_PROGRESS",
+    "unmeasured_values": null,
+    "fiction_empirical_cast": "prohibited"
+  },
+  "lanes": {
+    "A": {
+      "action": "Tie-boundary perturbation on bounded 10-node weighted MaxCut, with deterministic optimum/witness selection under equal objective values.",
+      "acceptance": "Exact enumeration and task/result/witness hashes; unchanged-edge invariant; no scaling claim."
+    },
+    "B": {
+      "action": "Receipt-v5 fixture duplicate-key, Unicode normalization, and revoked-key mutation tests.",
+      "acceptance": "Ambiguous/rebound bytes reject; external authority/provider execution/invoice remain null."
+    },
+    "C": {
+      "action": "Repeat stale-stage cleanup under active-name collision and child exits before and after replacement.",
+      "acceptance": "Old-or-new complete visible bytes and bounded cleanup; no crash/power-loss claim."
+    },
+    "D": {
+      "action": "Exercise signed and unsigned ZIP64 descriptors plus local/central ZIP64 extra-field consistency mutations.",
+      "acceptance": "Record/size/offset/disk disagreement rejects before payload read; synthetic corpus only."
+    },
+    "E": {
+      "action": "Issuer-key rotation and revocation-order mutations bound to terminal custody head.",
+      "acceptance": "Truncated/reordered/revoked chain rejects; physical sample null."
+    },
+    "F": {
+      "action": "Four-component covariance endpoint grid including missing, indefinite, and non-finite controls.",
+      "acceptance": "Output counts 1/2/4/0; invalid inputs and zero denominator null; model only."
+    },
+    "G": {
+      "action": "Four-measurand unit-rescaling invariance test across kg/g and pairwise covariance dimensions.",
+      "acceptance": "Declared order, product units/dimensions, symmetry and PSD; calibration null."
+    },
+    "H": {
+      "action": "Add fourth adverse ranking alternative and vary declared candidate order.",
+      "acceptance": "Finite scenario interval only; no probability or capital interpretation."
+    },
+    "FND/EQN": {
+      "action": "Test exact rational associativity and source-digest binding through a longer registered unit-composition chain.",
+      "acceptance": "Exact bounds/dimensions preserved; source mismatch rejects; no physical-law claim."
+    },
+    "SCM": {
+      "action": "Bind nonce replacement, scope mutation, and expiry to synthetic consent records.",
+      "acceptance": "Fresh scoped Fiction nonce only; replay/transition reject; empirical coupling null."
+    },
+    "AI-COST": {
+      "action": "Synthetic v9 lineage mutation tests for held-out split membership and metric/config rebinding.",
+      "acceptance": "Parent/source/split/metric/config hashes bind; missing real evaluation leaves candidate/equivalence null."
+    },
+    "QOS/QSVT": {
+      "action": "Compose a non-identity six-bit operator/inverse pair and independently reconstruct all 64 basis states.",
+      "acceptance": "Exact state count/residual and explicit resource bound; hardware null."
+    }
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-28",
+      "locator": "§§4.3.7, 4.3.9, 4.3.12",
+      "use": "ZIP64 descriptors and local/central record agreement",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-28",
+      "use": "process-level replacement limits",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "Cycle 019 numeric, receipt, covariance, ranking, lineage and operator results are fixtures/models until independently sourced.",
+    "Local process observations do not establish crash durability."
+  ],
+  "uncertainty": "External provider, filesystem crash, archive producer corpus, operational custody, measured covariance/calibration, owner priorities, independent derivation, AI equivalence and physical operator gates remain open.",
+  "nonclaims": [
+    "No measured hardware performance or quantum advantage.",
+    "No provider authorization, invoice, commercial result or capital claim.",
+    "No crash/power-loss durability, new physical law or empirical SCM evidence."
+  ],
+  "next_falsifiable_gate": "Implement and test each of the twelve preregistered lane deltas; publish a source-hashed executable acceptance artifact and verify exact-SHA Actions."
+}
