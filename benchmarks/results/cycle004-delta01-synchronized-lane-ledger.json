@@ -3,7 +3,7 @@
   "cycle": "004",
   "delta": "01",
   "date": "2026-09-28",
-  "status": "CLOSEOUT_PENDING_ARTIFACT_INCLUSIVE_CI",
+  "status": "CLOSED_SYNCHRONIZED_RESEARCH_CYCLE_NO_EVIDENCE_PROMOTION",
   "policy": "All 12 canonical portfolio lanes have a concrete progress event; evidence is lane-local and no result is promoted across lanes.",
   "evidence_summary": {
     "new_local_software_measurements": true,
@@ -167,7 +167,9 @@
     "workflow": ".github/workflows/uqpu-tests.yml",
     "local_cycle004_core_assertions_passed": 10,
     "local_optional_qiskit_skipped": 1,
-    "all_runs_success": false,
+    "all_attempts_success": false,
+    "latest_required_run_success": true,
+    "failed_attempts_resolved": true,
     "runs": [
       {
         "run_number": 488,
@@ -175,17 +177,34 @@
         "commit_sha": "88887e9365affdb8e904b99ff7fdd0525c160d73",
         "conclusion": "success",
         "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36361808666"
+      },
+      {
+        "run_number": 489,
+        "run_id": 36362064055,
+        "commit_sha": "016a00a30f01fe32e6246e79670a172ba119b683",
+        "conclusion": "failure",
+        "failure_class": "UPLOAD_INTEGRITY_TRANSPORT_TRUNCATION_DETECTED_BY_MANDATORY_UTF8_PARSE",
+        "resolved_by_run_number": 490,
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36362064055"
+      },
+      {
+        "run_number": 490,
+        "run_id": 36362191884,
+        "commit_sha": "5700c05682be08c2b02529a622d31f31222c39c7",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36362191884"
       }
     ],
-    "coverage_note": "Run 488 succeeded across the Python 3.10/3.11/3.12 matrix and all configured jobs, including the pinned independent Qiskit parse gate. Artifact-inclusive mandatory CI is pending."
+    "coverage_note": "Run 488 validated generator code and the pinned Qiskit gate. Run 489's mandatory test detected a transport-truncated SCM public blob. The exact blob was restored with pre-upload Git-blob verification and file SHA-256 assertions. Run 490 then passed all eight configured jobs, including the three-version Python matrix with committed artifacts and all independent verification jobs."
   },
   "closure": {
-    "cycle_closed": false,
+    "cycle_closed": true,
     "closure_basis": [
       "all 12 portfolio lane progress events recorded",
-      "local measurement, protocol, source and synthetic handoff artifacts generated and content hashed",
-      "Cycle 004 report and Cycle 005 handoff drafted",
-      "artifact-inclusive mandatory GitHub Actions success is still required"
+      "local measurement, protocol, source and synthetic handoff artifacts committed and content hashed",
+      "Cycle 004 report and all-lane Cycle 005 handoff recorded",
+      "mandatory artifact parse, cross-link and file-hash assertions passed in GitHub Actions run 490",
+      "all eight configured jobs passed on the corrected artifact-inclusive commit"
     ],
     "evidence_promotion": "none"
   }

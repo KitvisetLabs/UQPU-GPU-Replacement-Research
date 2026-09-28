@@ -1,7 +1,7 @@
 # Synchronized Multi-Lane Cycle 004 — Delta 01
 
 **Date:** 2026-09-28  
-**Status:** CLOSEOUT PENDING ARTIFACT-INCLUSIVE GREEN CI  
+**Status:** CYCLE 004 DELTA 01 CLOSED AFTER ALL 12 LANE EVENTS AND ARTIFACT-INCLUSIVE GREEN CI / NO EVIDENCE PROMOTION  
 **Branch:** `research/cycle-004-delta-01-2026-09-28`  
 **Cycle base:** Cycle 003 closed at `fc0470b0da991d5dc54c301169040de9ed69067f`  
 **Generator commit:** `88887e9365affdb8e904b99ff7fdd0525c160d73`
@@ -79,15 +79,16 @@ This reduces the handoff-schema blocker but is not an operational blind: both fi
 
 AI-COST now has a functionally equivalent task gate: the existing deterministic XOR-quadrant dataset and seeds, 256 training and 256 held-out examples, a 2-16-1 tanh/sigmoid MLP, and acceptance of held-out accuracy ≥0.98 plus BCE ≤0.19. The repository reference is 0.98046875 accuracy and 0.1773467727 BCE. Its source-level operation and logical tensor-payload ledgers remain provenance, not measured hardware energy or frontier-AI economics.
 
-QOS/QSVT adds an independently pinned Qiskit 2.5.2 parser for the two Cycle 003 QASM 3 payloads. CI must verify hashes, six quantum and six classical bits, expected H/CX/RZ/RX counts and one-to-one terminal measurement. SDK logical depth is explicitly not physical target depth, and the gate makes no provider-acceptance or hardware claim.
+QOS/QSVT adds an independently pinned Qiskit 2.5.2 parser for the two Cycle 003 QASM 3 payloads. CI verified hashes, six quantum and six classical bits, expected H/CX/RZ/RX counts and one-to-one terminal measurement. SDK logical depth is explicitly not physical target depth, and the gate makes no provider-acceptance or hardware claim.
 
 ## 9. Verification and closure
 
 - Local Cycle 004 tests: 10/10 core assertions passed with all generated artifacts present; one optional Qiskit test skipped because the pinned optional stack is not installed locally.
 - GitHub Actions run #488 on generator commit `88887e9365affdb8e904b99ff7fdd0525c160d73`: success across the Python 3.10/3.11/3.12 matrix and every configured verification job. Its Qiskit job passed the new pinned independent-SDK parse gate for both circuits.
-- Artifact-inclusive mandatory CI: pending.
+- GitHub Actions run #489 on artifact commit `016a00a30f01fe32e6246e79670a172ba119b683`: failed when the mandatory test detected that transport truncation had corrupted the large SCM public JSON blob. This was an upload-integrity failure, not an accepted research result; the bad blob was replaced and exact local Git blob SHA checks were added.
+- GitHub Actions run #490 on correction commit `5700c05682be08c2b02529a622d31f31222c39c7`: success. All eight jobs passed, including the Python 3.10/3.11/3.12 matrix with mandatory artifact existence, UTF-8 parse, cross-link, public-file SHA-256 and custodian-file SHA-256 assertions; the pinned Qiskit, reference benchmark, QSP and target-snapshot jobs also passed.
 
-Cycle 004 closes only after committed artifacts pass the mandatory cross-link test and all configured GitHub Actions jobs succeed. Closure will record no evidence promotion.
+Cycle 004 Delta 01 is closed as a synchronized local-software-measurement, source-analysis and protocol cycle. Closure records no evidence promotion, hardware/material/SCM-source/AI-economics claim, paid execution, fabrication or capital authorization.
 
 ## 10. Open gates and Cycle 005 handoff
 
