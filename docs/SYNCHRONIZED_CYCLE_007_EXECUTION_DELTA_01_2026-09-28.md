@@ -114,3 +114,9 @@ Cycle 007 is closed because every tracked lane has a concrete executable accepta
 All project-level scientific goals remain open. Closing the coordination cycle does not promote any lane to measured hardware, commercial economics, new physics, GPU replacement, or empirical spiritual communication.
 
 **Next consecutive cycle:** Cycle 008, beginning only from the verified Cycle 007 closeout commit and the handoff below.
+
+## Closeout invariant repair
+
+The first metadata closeout commit `110d086d1d88adad19f73ae07adc7dccf3de49e4` triggered pull-request Actions #503 and failed because the Cycle 007 invariant test still required `full_cycle_closeout_pending == true`. This was a repository-state/test mismatch introduced by legitimately changing the ledger to closed; the scientific artifacts were unchanged.
+
+Commit `31d8d732f8802b4db646130d5f07950aaeea6b7d` repaired the invariant to require the closed status, Cycle 008 pointer, non-promotion flag, and recorded successful tested-tree evidence. Push Actions #504 passed all 8 jobs on the repaired exact commit. The failed run is retained as evidence and is not hidden or relabeled.
