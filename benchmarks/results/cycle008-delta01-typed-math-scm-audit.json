@@ -134,8 +134,8 @@
     "unvalidated_cast_rejected": true
   },
   "fictional_conservation": {
-    "negative_case_count": 3,
-    "negative_cases_rejected": 3,
+    "negative_case_count": 4,
+    "negative_cases_rejected": 4,
     "valid_case_balanced": true
   },
   "five_volume_contract": {
@@ -144,6 +144,11 @@
     "valid": true,
     "volume_count": 5
   },
+  "lane_links": {
+    "errors": [],
+    "lane_count": 12,
+    "valid": true
+  },
   "nonclaims": [
     "The dimension check covers only the explicitly declared subset.",
     "Canon state and conservation checks test fictional consistency, not physical laws.",
@@ -151,13 +156,19 @@
     "No empirical spiritual communication, mind control, or portal capability is demonstrated."
   ],
   "provenance": {
+    "checkpoint_document": "docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md",
+    "checkpoint_document_sha256": "5ea75827f7011140bd9c23b5619c32e8304b8cd24fdff0b3f92fea8047842dfd",
     "generator": "software/uqpu-prototype/examples/run_cycle008_math_audit.py",
-    "generator_sha256": "b0abd5fc1422782bd4983e9cd64965a6ac0d25701784542c0095e676a462cb1b",
+    "generator_sha256": "321176f86c509996ce16dc7669e981d59fe3a0f601c82b28d9739a74e1920260",
     "implementation": "software/uqpu-prototype/uqpu/cycle008_delta01.py",
-    "implementation_sha256": "9c7e1388412838b8a37e2c09e94828717a7e1b0991fc44f6a076f96fc67279e0",
-    "registry_sha256": "7422cc12297b362004cdd49fb5dc710fd4979ea9411455ea359c535d2aac171a",
+    "implementation_sha256": "690d91c0cc30bb2fb155cb25cf8e7c945a4a625021000308b50ad39e2717795d",
+    "registry_sha256": "37bdd6b999c158b7770a1f17fa3196873a858a8e769501cdbd942924adb499c4",
     "source_scm_document": "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md",
-    "source_umrl_document": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md"
+    "source_scm_sha256": "1bd8de5a9f9ddb95b4a5d605fa119a255b3ed06961eebb4ce4254a7727e19562",
+    "source_umrl_document": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+    "source_umrl_sha256": "e2845cfa3676aab1169351e71cf9ab244b9c478f5010840943862806b95d5174",
+    "test_file": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
+    "test_file_sha256": "e5f535ed077c77e94b634c3c2b6de9169afbdc8db07d6c6685004240826ff503"
   },
   "quantity_count": 15,
   "quantity_type_errors": {
@@ -189,5 +200,9 @@
     "errors": [],
     "valid": true
   },
-  "status": "PASS"
+  "status": "PASS",
+  "umrl_extension": {
+    "errors": [],
+    "valid": true
+  }
 }

@@ -25,98 +25,914 @@
   ],
   "unit_registry": {
     "count": {
-      "dimension_vector": {"length": "0", "mass": "0", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "1"}
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "1"
+      }
     },
     "s": {
-      "dimension_vector": {"length": "0", "mass": "0", "time": "1", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "1",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      }
     },
     "count/s": {
-      "dimension_vector": {"length": "0", "mass": "0", "time": "-1", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "1"}
-    },
-    "m": {
-      "dimension_vector": {"length": "1", "mass": "0", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "-1",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "1"
+      }
     },
     "USD": {
-      "dimension_vector": {"length": "0", "mass": "0", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "1", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "1",
+        "information": "0",
+        "count": "0"
+      }
     },
     "kg": {
-      "dimension_vector": {"length": "0", "mass": "1", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "0",
+        "mass": "1",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      }
     },
     "J/kg": {
-      "dimension_vector": {"length": "2", "mass": "0", "time": "-2", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "2",
+        "mass": "0",
+        "time": "-2",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      }
     },
     "USD/J": {
-      "dimension_vector": {"length": "-2", "mass": "-1", "time": "2", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "1", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "-2",
+        "mass": "-1",
+        "time": "2",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "1",
+        "information": "0",
+        "count": "0"
+      }
     },
     "W": {
-      "dimension_vector": {"length": "2", "mass": "1", "time": "-3", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "2",
+        "mass": "1",
+        "time": "-3",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      }
     },
     "dimensionless": {
-      "dimension_vector": {"length": "0", "mass": "0", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      }
     },
     "CANON:route-point": {
       "dimension_vector": null,
       "domain_sort": "FICTION_CANON"
+    },
+    "m": {
+      "dimension_vector": {
+        "length": "1",
+        "mass": "0",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      }
     }
   },
   "quantities": [
-    {"quantity_id": "N_acc", "quantity_kind": "ACCEPTED_OUTPUT_COUNT", "domain_sort": "REAL_MODEL", "unit_code": "count", "dimension_vector": {"length": "0", "mass": "0", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "1"}, "evidence_type": "MODEL"},
-    {"quantity_id": "delta_t", "quantity_kind": "ELAPSED_TIME", "domain_sort": "REAL_MODEL", "unit_code": "s", "dimension_vector": {"length": "0", "mass": "0", "time": "1", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "T_acc", "quantity_kind": "ACCEPTED_OUTPUT_RATE", "domain_sort": "REAL_MODEL", "unit_code": "count/s", "dimension_vector": {"length": "0", "mass": "0", "time": "-1", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "1"}, "evidence_type": "MODEL"},
-    {"quantity_id": "C_total", "quantity_kind": "LIFECYCLE_COST", "domain_sort": "REAL_MODEL", "unit_code": "USD", "dimension_vector": {"length": "0", "mass": "0", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "1", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "m_accepted", "quantity_kind": "ACCEPTED_FUEL_MASS", "domain_sort": "REAL_MODEL", "unit_code": "kg", "dimension_vector": {"length": "0", "mass": "1", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "H_LHV", "quantity_kind": "LOWER_HEATING_VALUE", "domain_sort": "REAL_MODEL", "unit_code": "J/kg", "dimension_vector": {"length": "2", "mass": "0", "time": "-2", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "c_fuel", "quantity_kind": "COST_PER_DELIVERED_ENERGY", "domain_sort": "REAL_MODEL", "unit_code": "USD/J", "dimension_vector": {"length": "-2", "mass": "-1", "time": "2", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "1", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "eta", "quantity_kind": "CONVERSION_EFFICIENCY", "domain_sort": "REAL_MODEL", "unit_code": "dimensionless", "dimension_vector": {"length": "0", "mass": "0", "time": "0", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "P_fusion", "quantity_kind": "GROSS_FUSION_POWER", "domain_sort": "REAL_MODEL", "unit_code": "W", "dimension_vector": {"length": "2", "mass": "1", "time": "-3", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "P_recirculating", "quantity_kind": "RECIRCULATING_POWER", "domain_sort": "REAL_MODEL", "unit_code": "W", "dimension_vector": {"length": "2", "mass": "1", "time": "-3", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "P_auxiliary", "quantity_kind": "AUXILIARY_POWER", "domain_sort": "REAL_MODEL", "unit_code": "W", "dimension_vector": {"length": "2", "mass": "1", "time": "-3", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "P_net", "quantity_kind": "NET_POWER", "domain_sort": "REAL_MODEL", "unit_code": "W", "dimension_vector": {"length": "2", "mass": "1", "time": "-3", "electric_current": "0", "temperature": "0", "amount_of_substance": "0", "luminous_intensity": "0", "currency": "0", "information": "0", "count": "0"}, "evidence_type": "MODEL"},
-    {"quantity_id": "chi_t", "quantity_kind": "CANON_MIND_EVENT_STATE", "domain_sort": "FICTION_CANON", "unit_code": null, "dimension_vector": null, "evidence_type": "FICTIONAL_ONTOLOGY"},
-    {"quantity_id": "z_t", "quantity_kind": "CANON_MENTAL_FACTOR_VECTOR", "domain_sort": "FICTION_CANON", "unit_code": null, "dimension_vector": null, "evidence_type": "FICTIONAL_ONTOLOGY"},
-    {"quantity_id": "fictional_route_cost", "quantity_kind": "NARRATIVE_ROUTE_COST", "domain_sort": "FICTION_CANON", "unit_code": "CANON:route-point", "dimension_vector": null, "evidence_type": "FICTIONAL_MODEL"}
+    {
+      "quantity_id": "N_acc",
+      "quantity_kind": "ACCEPTED_OUTPUT_COUNT",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "count",
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "1"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "delta_t",
+      "quantity_kind": "ELAPSED_TIME",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "s",
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "1",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "T_acc",
+      "quantity_kind": "ACCEPTED_OUTPUT_RATE",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "count/s",
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "-1",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "1"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "C_total",
+      "quantity_kind": "LIFECYCLE_COST",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "USD",
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "1",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "m_accepted",
+      "quantity_kind": "ACCEPTED_FUEL_MASS",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "kg",
+      "dimension_vector": {
+        "length": "0",
+        "mass": "1",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "H_LHV",
+      "quantity_kind": "LOWER_HEATING_VALUE",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "J/kg",
+      "dimension_vector": {
+        "length": "2",
+        "mass": "0",
+        "time": "-2",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "c_fuel",
+      "quantity_kind": "COST_PER_DELIVERED_ENERGY",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "USD/J",
+      "dimension_vector": {
+        "length": "-2",
+        "mass": "-1",
+        "time": "2",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "1",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "eta",
+      "quantity_kind": "CONVERSION_EFFICIENCY",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "dimensionless",
+      "dimension_vector": {
+        "length": "0",
+        "mass": "0",
+        "time": "0",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "P_fusion",
+      "quantity_kind": "GROSS_FUSION_POWER",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "W",
+      "dimension_vector": {
+        "length": "2",
+        "mass": "1",
+        "time": "-3",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "P_recirculating",
+      "quantity_kind": "RECIRCULATING_POWER",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "W",
+      "dimension_vector": {
+        "length": "2",
+        "mass": "1",
+        "time": "-3",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "P_auxiliary",
+      "quantity_kind": "AUXILIARY_POWER",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "W",
+      "dimension_vector": {
+        "length": "2",
+        "mass": "1",
+        "time": "-3",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "P_net",
+      "quantity_kind": "NET_POWER",
+      "domain_sort": "REAL_MODEL",
+      "unit_code": "W",
+      "dimension_vector": {
+        "length": "2",
+        "mass": "1",
+        "time": "-3",
+        "electric_current": "0",
+        "temperature": "0",
+        "amount_of_substance": "0",
+        "luminous_intensity": "0",
+        "currency": "0",
+        "information": "0",
+        "count": "0"
+      },
+      "evidence_type": "MODEL"
+    },
+    {
+      "quantity_id": "chi_t",
+      "quantity_kind": "CANON_MIND_EVENT_STATE",
+      "domain_sort": "FICTION_CANON",
+      "unit_code": null,
+      "dimension_vector": null,
+      "evidence_type": "FICTIONAL_ONTOLOGY"
+    },
+    {
+      "quantity_id": "z_t",
+      "quantity_kind": "CANON_MENTAL_FACTOR_VECTOR",
+      "domain_sort": "FICTION_CANON",
+      "unit_code": null,
+      "dimension_vector": null,
+      "evidence_type": "FICTIONAL_ONTOLOGY"
+    },
+    {
+      "quantity_id": "fictional_route_cost",
+      "quantity_kind": "NARRATIVE_ROUTE_COST",
+      "domain_sort": "FICTION_CANON",
+      "unit_code": "CANON:route-point",
+      "dimension_vector": null,
+      "evidence_type": "FICTIONAL_MODEL"
+    }
   ],
   "dimension_equations": [
-    {"equation_id": "UMRL-007:T_acc", "lhs": "T_acc", "rhs_terms": [{"factors": [{"quantity_id": "N_acc", "power": "1"}, {"quantity_id": "delta_t", "power": "-1"}]}]},
-    {"equation_id": "UMRL-021:c_fuel", "lhs": "c_fuel", "rhs_terms": [{"factors": [{"quantity_id": "C_total", "power": "1"}, {"quantity_id": "m_accepted", "power": "-1"}, {"quantity_id": "H_LHV", "power": "-1"}]}]},
-    {"equation_id": "UMRL-022:P_net", "lhs": "P_net", "rhs_terms": [{"factors": [{"quantity_id": "eta", "power": "1"}, {"quantity_id": "P_fusion", "power": "1"}]}, {"factors": [{"quantity_id": "P_recirculating", "power": "1"}]}, {"factors": [{"quantity_id": "P_auxiliary", "power": "1"}]}]}
+    {
+      "equation_id": "UMRL-007:T_acc",
+      "lhs": "T_acc",
+      "rhs_terms": [
+        {
+          "factors": [
+            {
+              "quantity_id": "N_acc",
+              "power": "1"
+            },
+            {
+              "quantity_id": "delta_t",
+              "power": "-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "equation_id": "UMRL-021:c_fuel",
+      "lhs": "c_fuel",
+      "rhs_terms": [
+        {
+          "factors": [
+            {
+              "quantity_id": "C_total",
+              "power": "1"
+            },
+            {
+              "quantity_id": "m_accepted",
+              "power": "-1"
+            },
+            {
+              "quantity_id": "H_LHV",
+              "power": "-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "equation_id": "UMRL-022:P_net",
+      "lhs": "P_net",
+      "rhs_terms": [
+        {
+          "factors": [
+            {
+              "quantity_id": "eta",
+              "power": "1"
+            },
+            {
+              "quantity_id": "P_fusion",
+              "power": "1"
+            }
+          ]
+        },
+        {
+          "factors": [
+            {
+              "quantity_id": "P_recirculating",
+              "power": "1"
+            }
+          ]
+        },
+        {
+          "factors": [
+            {
+              "quantity_id": "P_auxiliary",
+              "power": "1"
+            }
+          ]
+        }
+      ]
+    }
   ],
   "scm_equations": [
-    {"equation_id": "SCM-MATH-020", "name": "Versioned fictional citta-cetasika state type", "expression": "chi_t : CanonMindState[v_canon]; z_t : MentalFactorVector[v_canon]; r_t : RealmLabel[v_canon]", "domain_sort": "FICTION_CANON", "evidence_type": "FICTIONAL_ONTOLOGY", "real_world_status": "NO_EMPIRICAL_MIND_OR_REALM_MAPPING", "falsifier": "A state omits its canon version, mixes realm versions, or is assigned an empirical physical coordinate without a validated bridge.", "variables": [{"symbol": "chi_t", "quantity_kind": "CANON_MIND_EVENT_STATE", "domain_sort": "FICTION_CANON"}, {"symbol": "z_t", "quantity_kind": "CANON_MENTAL_FACTOR_VECTOR", "domain_sort": "FICTION_CANON"}, {"symbol": "r_t", "quantity_kind": "VERSIONED_REALM_LABEL", "domain_sort": "FICTION_CANON"}]},
-    {"equation_id": "SCM-MATH-021", "name": "Scoped consent and agency permit rule", "expression": "Permit(u|g)=1[ScopeMatch AND Issued<=t<Expiry AND NOT Revoked AND FreshNonce AND Agency AND Safe AND Audited]", "domain_sort": "FICTION_CANON", "evidence_type": "FICTIONAL_PROTOCOL", "real_world_status": "SYNTHETIC_GATE_ONLY_NO_REAL_MIND_CONTROL", "falsifier": "A mismatched, expired, revoked, replayed, unsafe, unaudited, or agency-inactive action is permitted.", "variables": [{"symbol": "g", "quantity_kind": "SCOPED_CONSENT_GRANT", "domain_sort": "FICTION_CANON"}, {"symbol": "u", "quantity_kind": "FICTIONAL_CONTROL_ACTION", "domain_sort": "FICTION_CANON"}, {"symbol": "Agency", "quantity_kind": "BOOLEAN_SAFETY_PREDICATE", "domain_sort": "FICTION_CANON"}]},
-    {"equation_id": "SCM-MATH-022", "name": "Typed fictional portal conservation ledger", "expression": "CanonBalance(Q)=1[ABS(SUM_i DeltaQ_i)<=epsilon_Q AND SAME_CANON_QUANTITY AND SAME_CANON_UNIT AND SAME_VERSION]", "domain_sort": "FICTION_CANON", "evidence_type": "FICTIONAL_MODEL", "real_world_status": "CANON_INTERNAL_CONSISTENCY_ONLY_PRESENT_PHYSICS_UNCHANGED", "falsifier": "A ledger mixes unit/version/sort or its exact-rational residual exceeds its declared story tolerance.", "variables": [{"symbol": "DeltaQ_i", "quantity_kind": "CANON_SCOPED_LEDGER_DELTA", "domain_sort": "FICTION_CANON"}, {"symbol": "epsilon_Q", "quantity_kind": "CANON_SCOPED_TOLERANCE", "domain_sort": "FICTION_CANON"}]},
-    {"equation_id": "SCM-MATH-023", "name": "Typed fictional challenge-response communication", "expression": "x_t:Symbol[v]; y_t~W_F(.|x_t,z_t); xhat_t=D_F(y_t,k_t); Accept=Auth AND Fresh AND Consent AND Score(x_t,xhat_t)>=threshold", "domain_sort": "FICTION_CANON", "evidence_type": "FICTIONAL_PROTOCOL", "real_world_status": "FICTIONAL_CHANNEL_MODEL_NO_EMPIRICAL_SPIRITUAL_COMMUNICATION", "falsifier": "A decoded response is accepted without authentication, fresh challenge, consent, frozen scoring, or registered canon version.", "variables": [{"symbol": "x_t", "quantity_kind": "FICTIONAL_CHALLENGE_SYMBOL", "domain_sort": "FICTION_CANON"}, {"symbol": "y_t", "quantity_kind": "FICTIONAL_CHANNEL_OBSERVATION", "domain_sort": "FICTION_CANON"}, {"symbol": "xhat_t", "quantity_kind": "FICTIONAL_DECODED_SYMBOL", "domain_sort": "FICTION_CANON"}]}
+    {
+      "equation_id": "SCM-MATH-020",
+      "name": "Versioned fictional citta-cetasika state type",
+      "expression": "chi_t : CanonMindState[v_canon]; z_t : MentalFactorVector[v_canon]; r_t : RealmLabel[v_canon]",
+      "domain_sort": "FICTION_CANON",
+      "evidence_type": "FICTIONAL_ONTOLOGY",
+      "real_world_status": "NO_EMPIRICAL_MIND_OR_REALM_MAPPING",
+      "falsifier": "A state omits its canon version, mixes realm versions, or is assigned an empirical physical coordinate without a validated bridge.",
+      "variables": [
+        {
+          "symbol": "chi_t",
+          "quantity_kind": "CANON_MIND_EVENT_STATE",
+          "domain_sort": "FICTION_CANON"
+        },
+        {
+          "symbol": "z_t",
+          "quantity_kind": "CANON_MENTAL_FACTOR_VECTOR",
+          "domain_sort": "FICTION_CANON"
+        },
+        {
+          "symbol": "r_t",
+          "quantity_kind": "VERSIONED_REALM_LABEL",
+          "domain_sort": "FICTION_CANON"
+        }
+      ]
+    },
+    {
+      "equation_id": "SCM-MATH-021",
+      "name": "Scoped consent and agency permit rule",
+      "expression": "Permit(u|g)=1[ScopeMatch AND Issued<=t<Expiry AND NOT Revoked AND FreshNonce AND Agency AND Safe AND Audited]",
+      "domain_sort": "FICTION_CANON",
+      "evidence_type": "FICTIONAL_PROTOCOL",
+      "real_world_status": "SYNTHETIC_GATE_ONLY_NO_REAL_MIND_CONTROL",
+      "falsifier": "A mismatched, expired, revoked, replayed, unsafe, unaudited, or agency-inactive action is permitted.",
+      "variables": [
+        {
+          "symbol": "g",
+          "quantity_kind": "SCOPED_CONSENT_GRANT",
+          "domain_sort": "FICTION_CANON"
+        },
+        {
+          "symbol": "u",
+          "quantity_kind": "FICTIONAL_CONTROL_ACTION",
+          "domain_sort": "FICTION_CANON"
+        },
+        {
+          "symbol": "Agency",
+          "quantity_kind": "BOOLEAN_SAFETY_PREDICATE",
+          "domain_sort": "FICTION_CANON"
+        }
+      ]
+    },
+    {
+      "equation_id": "SCM-MATH-022",
+      "name": "Typed fictional portal conservation ledger",
+      "expression": "CanonBalance(Q)=1[ABS(SUM_i DeltaQ_i)<=epsilon_Q AND SAME_CANON_QUANTITY AND SAME_CANON_UNIT AND SAME_VERSION]",
+      "domain_sort": "FICTION_CANON",
+      "evidence_type": "FICTIONAL_MODEL",
+      "real_world_status": "CANON_INTERNAL_CONSISTENCY_ONLY_PRESENT_PHYSICS_UNCHANGED",
+      "falsifier": "A ledger mixes unit/version/sort or its exact-rational residual exceeds its declared story tolerance.",
+      "variables": [
+        {
+          "symbol": "DeltaQ_i",
+          "quantity_kind": "CANON_SCOPED_LEDGER_DELTA",
+          "domain_sort": "FICTION_CANON"
+        },
+        {
+          "symbol": "epsilon_Q",
+          "quantity_kind": "CANON_SCOPED_TOLERANCE",
+          "domain_sort": "FICTION_CANON"
+        }
+      ]
+    },
+    {
+      "equation_id": "SCM-MATH-023",
+      "name": "Typed fictional challenge-response communication",
+      "expression": "x_t:Symbol[v]; y_t~W_F(.|x_t,z_t); xhat_t=D_F(y_t,k_t); Accept=Auth AND Fresh AND Consent AND Score(x_t,xhat_t)>=threshold",
+      "domain_sort": "FICTION_CANON",
+      "evidence_type": "FICTIONAL_PROTOCOL",
+      "real_world_status": "FICTIONAL_CHANNEL_MODEL_NO_EMPIRICAL_SPIRITUAL_COMMUNICATION",
+      "falsifier": "A decoded response is accepted without authentication, fresh challenge, consent, frozen scoring, or registered canon version.",
+      "variables": [
+        {
+          "symbol": "x_t",
+          "quantity_kind": "FICTIONAL_CHALLENGE_SYMBOL",
+          "domain_sort": "FICTION_CANON"
+        },
+        {
+          "symbol": "y_t",
+          "quantity_kind": "FICTIONAL_CHANNEL_OBSERVATION",
+          "domain_sort": "FICTION_CANON"
+        },
+        {
+          "symbol": "xhat_t",
+          "quantity_kind": "FICTIONAL_DECODED_SYMBOL",
+          "domain_sort": "FICTION_CANON"
+        }
+      ]
+    }
   ],
   "five_volume_contracts": [
-    {"volume": 1, "domain_sort": "FICTION_CANON", "fiction_only": true, "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE", "required_invariants": ["CANON_TAXONOMY_VERSIONED"], "equation_ids": ["SCM-MATH-020"]},
-    {"volume": 2, "domain_sort": "FICTION_CANON", "fiction_only": true, "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE", "required_invariants": ["CONSENT_SCOPED_CONTROL"], "equation_ids": ["SCM-MATH-021"]},
-    {"volume": 3, "domain_sort": "FICTION_CANON", "fiction_only": true, "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE", "required_invariants": ["CHALLENGE_RESPONSE_AUTHENTICATION"], "equation_ids": ["SCM-MATH-023"]},
-    {"volume": 4, "domain_sort": "FICTION_CANON", "fiction_only": true, "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE", "required_invariants": ["ANTI_REPLAY_AND_NONCOERCION"], "equation_ids": ["SCM-MATH-021", "SCM-MATH-023"]},
-    {"volume": 5, "domain_sort": "FICTION_CANON", "fiction_only": true, "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE", "required_invariants": ["DOUBLE_ENTRY_AND_CONSENTED_SETTLEMENT"], "equation_ids": ["SCM-MATH-022", "SCM-MATH-023"]}
+    {
+      "volume": 1,
+      "domain_sort": "FICTION_CANON",
+      "fiction_only": true,
+      "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE",
+      "required_invariants": [
+        "CANON_TAXONOMY_VERSIONED"
+      ],
+      "equation_ids": [
+        "SCM-MATH-020"
+      ]
+    },
+    {
+      "volume": 2,
+      "domain_sort": "FICTION_CANON",
+      "fiction_only": true,
+      "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE",
+      "required_invariants": [
+        "CONSENT_SCOPED_CONTROL"
+      ],
+      "equation_ids": [
+        "SCM-MATH-021"
+      ]
+    },
+    {
+      "volume": 3,
+      "domain_sort": "FICTION_CANON",
+      "fiction_only": true,
+      "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE",
+      "required_invariants": [
+        "CHALLENGE_RESPONSE_AUTHENTICATION"
+      ],
+      "equation_ids": [
+        "SCM-MATH-023"
+      ]
+    },
+    {
+      "volume": 4,
+      "domain_sort": "FICTION_CANON",
+      "fiction_only": true,
+      "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE",
+      "required_invariants": [
+        "ANTI_REPLAY_AND_NONCOERCION"
+      ],
+      "equation_ids": [
+        "SCM-MATH-021",
+        "SCM-MATH-023"
+      ]
+    },
+    {
+      "volume": 5,
+      "domain_sort": "FICTION_CANON",
+      "fiction_only": true,
+      "real_evidence_cast": "FORBIDDEN_WITHOUT_VALIDATED_BRIDGE",
+      "required_invariants": [
+        "DOUBLE_ENTRY_AND_CONSENTED_SETTLEMENT"
+      ],
+      "equation_ids": [
+        "SCM-MATH-022",
+        "SCM-MATH-023"
+      ]
+    }
   ],
   "consent_fixtures": {
     "valid": {
-      "grant": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "issued_at_tick": 10, "expires_at_tick": 20, "nonce": "SYNTHETIC-NONCE-1", "consent_state": "GRANTED", "revoked": false},
-      "request": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "now_tick": 15, "agency_active": true, "safety_pass": true, "audit_record_id": "SYNTHETIC-AUDIT-1"}
+      "grant": {
+        "subject_id": "CANON:agent-07",
+        "action": "NAVIGATE_SCENE",
+        "purpose": "STORY_SIMULATION",
+        "resource_id": "CANON:scene-2",
+        "issued_at_tick": 10,
+        "expires_at_tick": 20,
+        "nonce": "SYNTHETIC-NONCE-1",
+        "consent_state": "GRANTED",
+        "revoked": false
+      },
+      "request": {
+        "subject_id": "CANON:agent-07",
+        "action": "NAVIGATE_SCENE",
+        "purpose": "STORY_SIMULATION",
+        "resource_id": "CANON:scene-2",
+        "now_tick": 15,
+        "agency_active": true,
+        "safety_pass": true,
+        "audit_record_id": "SYNTHETIC-AUDIT-1"
+      }
     },
     "negative": [
-      {"grant": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "issued_at_tick": 10, "expires_at_tick": 20, "nonce": "SYNTHETIC-NONCE-1", "consent_state": "GRANTED", "revoked": false}, "request": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:other-scene", "now_tick": 15, "agency_active": true, "safety_pass": true, "audit_record_id": "SYNTHETIC-AUDIT-1"}},
-      {"grant": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "issued_at_tick": 10, "expires_at_tick": 20, "nonce": "SYNTHETIC-NONCE-1", "consent_state": "GRANTED", "revoked": false}, "request": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "now_tick": 20, "agency_active": true, "safety_pass": true, "audit_record_id": "SYNTHETIC-AUDIT-2"}},
-      {"grant": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "issued_at_tick": 10, "expires_at_tick": 20, "nonce": "SYNTHETIC-NONCE-1", "consent_state": "GRANTED", "revoked": true}, "request": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "now_tick": 15, "agency_active": true, "safety_pass": true, "audit_record_id": "SYNTHETIC-AUDIT-3"}},
-      {"grant": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "issued_at_tick": 10, "expires_at_tick": 20, "nonce": "SYNTHETIC-NONCE-1", "consent_state": "GRANTED", "revoked": false}, "request": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "now_tick": 15, "agency_active": false, "safety_pass": true, "audit_record_id": "SYNTHETIC-AUDIT-4"}},
-      {"grant": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "issued_at_tick": 10, "expires_at_tick": 20, "nonce": "SYNTHETIC-NONCE-1", "consent_state": "GRANTED", "revoked": false}, "request": {"subject_id": "CANON:agent-07", "action": "NAVIGATE_SCENE", "purpose": "STORY_SIMULATION", "resource_id": "CANON:scene-2", "now_tick": 15, "agency_active": true, "safety_pass": false, "audit_record_id": "SYNTHETIC-AUDIT-5"}}
+      {
+        "grant": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "issued_at_tick": 10,
+          "expires_at_tick": 20,
+          "nonce": "SYNTHETIC-NONCE-1",
+          "consent_state": "GRANTED",
+          "revoked": false
+        },
+        "request": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:other-scene",
+          "now_tick": 15,
+          "agency_active": true,
+          "safety_pass": true,
+          "audit_record_id": "SYNTHETIC-AUDIT-1"
+        }
+      },
+      {
+        "grant": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "issued_at_tick": 10,
+          "expires_at_tick": 20,
+          "nonce": "SYNTHETIC-NONCE-1",
+          "consent_state": "GRANTED",
+          "revoked": false
+        },
+        "request": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "now_tick": 20,
+          "agency_active": true,
+          "safety_pass": true,
+          "audit_record_id": "SYNTHETIC-AUDIT-2"
+        }
+      },
+      {
+        "grant": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "issued_at_tick": 10,
+          "expires_at_tick": 20,
+          "nonce": "SYNTHETIC-NONCE-1",
+          "consent_state": "GRANTED",
+          "revoked": true
+        },
+        "request": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "now_tick": 15,
+          "agency_active": true,
+          "safety_pass": true,
+          "audit_record_id": "SYNTHETIC-AUDIT-3"
+        }
+      },
+      {
+        "grant": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "issued_at_tick": 10,
+          "expires_at_tick": 20,
+          "nonce": "SYNTHETIC-NONCE-1",
+          "consent_state": "GRANTED",
+          "revoked": false
+        },
+        "request": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "now_tick": 15,
+          "agency_active": false,
+          "safety_pass": true,
+          "audit_record_id": "SYNTHETIC-AUDIT-4"
+        }
+      },
+      {
+        "grant": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "issued_at_tick": 10,
+          "expires_at_tick": 20,
+          "nonce": "SYNTHETIC-NONCE-1",
+          "consent_state": "GRANTED",
+          "revoked": false
+        },
+        "request": {
+          "subject_id": "CANON:agent-07",
+          "action": "NAVIGATE_SCENE",
+          "purpose": "STORY_SIMULATION",
+          "resource_id": "CANON:scene-2",
+          "now_tick": 15,
+          "agency_active": true,
+          "safety_pass": false,
+          "audit_record_id": "SYNTHETIC-AUDIT-5"
+        }
+      }
     ]
   },
   "conservation_fixtures": {
-    "valid": {"domain_sort": "FICTION_CANON", "entries": [{"realm": "CANON:realm-a", "delta": "5", "unit_code": "CANON:energy-token"}, {"realm": "CANON:realm-b", "delta": "-3", "unit_code": "CANON:energy-token"}, {"realm": "CANON:bridge", "delta": "-2", "unit_code": "CANON:energy-token"}]},
+    "valid": {
+      "domain_sort": "FICTION_CANON",
+      "entries": [
+        {
+          "realm": "CANON:realm-a",
+          "quantity_id": "CANON:portal-energy",
+          "canon_version": "LOKATHIBODI-1.0",
+          "delta": "5",
+          "unit_code": "CANON:energy-token"
+        },
+        {
+          "realm": "CANON:realm-b",
+          "quantity_id": "CANON:portal-energy",
+          "canon_version": "LOKATHIBODI-1.0",
+          "delta": "-3",
+          "unit_code": "CANON:energy-token"
+        },
+        {
+          "realm": "CANON:bridge",
+          "quantity_id": "CANON:portal-energy",
+          "canon_version": "LOKATHIBODI-1.0",
+          "delta": "-2",
+          "unit_code": "CANON:energy-token"
+        }
+      ]
+    },
     "valid_tolerance": "0",
     "negative": [
-      {"ledger": {"domain_sort": "FICTION_CANON", "entries": [{"realm": "CANON:realm-a", "delta": "5", "unit_code": "CANON:energy-token"}, {"realm": "CANON:bridge", "delta": "-2", "unit_code": "CANON:energy-token"}]}, "tolerance": "0"},
-      {"ledger": {"domain_sort": "FICTION_CANON", "entries": [{"realm": "CANON:realm-a", "delta": "5", "unit_code": "CANON:energy-token"}, {"realm": "CANON:bridge", "delta": "-5", "unit_code": "J"}]}, "tolerance": "0"},
-      {"ledger": {"domain_sort": "FICTION_CANON", "entries": [{"realm": "CANON:realm-a", "delta": "0.1", "unit_code": "CANON:energy-token"}, {"realm": "CANON:bridge", "delta": "-0.2", "unit_code": "CANON:energy-token"}]}, "tolerance": "0"}
+      {
+        "ledger": {
+          "domain_sort": "FICTION_CANON",
+          "entries": [
+            {
+              "realm": "CANON:realm-a",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": "5",
+              "unit_code": "CANON:energy-token"
+            },
+            {
+              "realm": "CANON:bridge",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": "-2",
+              "unit_code": "CANON:energy-token"
+            }
+          ]
+        },
+        "tolerance": "0"
+      },
+      {
+        "ledger": {
+          "domain_sort": "FICTION_CANON",
+          "entries": [
+            {
+              "realm": "CANON:realm-a",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": "5",
+              "unit_code": "CANON:energy-token"
+            },
+            {
+              "realm": "CANON:bridge",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": "-5",
+              "unit_code": "J"
+            }
+          ]
+        },
+        "tolerance": "0"
+      },
+      {
+        "ledger": {
+          "domain_sort": "FICTION_CANON",
+          "entries": [
+            {
+              "realm": "CANON:realm-a",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": "0.1",
+              "unit_code": "CANON:energy-token"
+            },
+            {
+              "realm": "CANON:bridge",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": "-0.2",
+              "unit_code": "CANON:energy-token"
+            }
+          ]
+        },
+        "tolerance": "0"
+      },
+      {
+        "ledger": {
+          "domain_sort": "FICTION_CANON",
+          "entries": [
+            {
+              "realm": "CANON:realm-a",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": 0.1,
+              "unit_code": "CANON:energy-token"
+            },
+            {
+              "realm": "CANON:bridge",
+              "quantity_id": "CANON:portal-energy",
+              "canon_version": "LOKATHIBODI-1.0",
+              "delta": -0.1,
+              "unit_code": "CANON:energy-token"
+            }
+          ]
+        },
+        "tolerance": "0"
+      }
     ]
   },
-  "bridge_fixture_unvalidated": {"source_sort": "FICTION_CANON", "target_sort": "REAL_EMPIRICAL", "status": "HYPOTHESIS", "evidence_type": "THEORY", "independent_replication": false, "provenance_id": null},
+  "bridge_fixture_unvalidated": {
+    "source_sort": "FICTION_CANON",
+    "target_sort": "REAL_EMPIRICAL",
+    "status": "HYPOTHESIS",
+    "evidence_type": "THEORY",
+    "independent_replication": false,
+    "provenance_id": null
+  },
   "nonclaims": [
     "All numerical cases are synthetic schema fixtures.",
     "The three checked UMRL equations are a bounded subset, not a full dimensional audit.",
@@ -124,17 +940,65 @@
     "No validated empirical bridge from the fictional domain is asserted to exist."
   ],
   "lane_links": {
-    "A": ["UMRL-005", "UMRL-006", "UMRL-007"],
-    "B": ["UMRL-001", "UMRL-031"],
-    "C": ["UMRL-006", "UMRL-007", "UMRL-031"],
-    "D": ["UMRL-001", "UMRL-031"],
-    "E": ["UMRL-017", "UMRL-021", "UMRL-031"],
-    "F": ["UMRL-006", "UMRL-007", "UMRL-021", "UMRL-031"],
-    "G": ["UMRL-017", "UMRL-031"],
-    "H": ["UMRL-029", "UMRL-031"],
-    "FND/EQN": ["UMRL-031", "UMRL-007", "UMRL-021", "UMRL-022"],
-    "SCM": ["UMRL-031", "SCM-MATH-020", "SCM-MATH-021", "SCM-MATH-022", "SCM-MATH-023"],
-    "AI-COST": ["UMRL-006", "UMRL-007", "UMRL-031"],
-    "QOS/QSVT": ["UMRL-001", "UMRL-005", "UMRL-031"]
+    "A": [
+      "UMRL-005",
+      "UMRL-006",
+      "UMRL-007"
+    ],
+    "B": [
+      "UMRL-001",
+      "UMRL-031"
+    ],
+    "C": [
+      "UMRL-006",
+      "UMRL-007",
+      "UMRL-031"
+    ],
+    "D": [
+      "UMRL-001",
+      "UMRL-031"
+    ],
+    "E": [
+      "UMRL-017",
+      "UMRL-021",
+      "UMRL-031"
+    ],
+    "F": [
+      "UMRL-006",
+      "UMRL-007",
+      "UMRL-021",
+      "UMRL-031"
+    ],
+    "G": [
+      "UMRL-017",
+      "UMRL-031"
+    ],
+    "H": [
+      "UMRL-029",
+      "UMRL-031"
+    ],
+    "FND/EQN": [
+      "UMRL-031",
+      "UMRL-007",
+      "UMRL-021",
+      "UMRL-022"
+    ],
+    "SCM": [
+      "UMRL-031",
+      "SCM-MATH-020",
+      "SCM-MATH-021",
+      "SCM-MATH-022",
+      "SCM-MATH-023"
+    ],
+    "AI-COST": [
+      "UMRL-006",
+      "UMRL-007",
+      "UMRL-031"
+    ],
+    "QOS/QSVT": [
+      "UMRL-001",
+      "UMRL-005",
+      "UMRL-031"
+    ]
   }
 }

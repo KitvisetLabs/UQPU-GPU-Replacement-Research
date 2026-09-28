@@ -1063,21 +1063,39 @@ The lane acceptance suite now has executable coverage across all 12 lanes. New c
 
 ### 2026-09-28 — Synchronized Cycle 008 Delta 01 checkpoint
 
-Started consecutively from the Cycle 007 closeout branch and advanced every
-tracked lane with an executable test or typed formal audit. Lane A enumerated
-all 4,096 assignments of one seeded n=12 MaxCut instance; the 32- and
-128-restart greedy variants both found -22, so the larger restart budget gave
-no improvement on this fixture. Lane C repeated local atomic publication and
-hash-checked readback in three fresh child processes; cache state remains
-uncontrolled. Lane D's full archive request remained blocked by a declared
-100,000,000-byte cap. The typed-math audit checked three selected UMRL
-equations, while the SCM addition remained fictional and consent-gated.
+Verified Cycle 007 closeout at `110d086d1d88adad19f73ae07adc7dccf3de49e4`,
+including the recorded closeout-invariant repair and successful Actions #504
+on `31d8d732f8802b4db646130d5f07950aaeea6b7d`. Started from the current
+dedicated Cycle 008 branch. Added UMRL-031 typed quantity/evidence metadata,
+three bounded dimensional equation checks, and four fiction-only SCM
+equations with explicit five-volume invariants and a real-domain cast firewall.
+The prior all-lane checkpoint `7fd78c362f936e49567d61ae9e6b21f7c8934288`
+passed GitHub Actions #509 (run ID `36416826035`, 8/8 jobs); this follow-up
+extends its local acceptance coverage before Cycle 008 closeout.
+The first USD/J dimension fixture omitted inverse mass; its counterexample
+test rejected it, and the fixture was corrected before the audit passed. The
+G-lane synthetic uncertainty budget declares its zero-covariance RSS
+assumption; AI-COST distinguishes schema-valid fixtures from admissible
+evidence.
 
-The first typed-math test run caught that its explicit `m` fixture was absent
-from the unit registry. The registry now contains the exact length vector and
-the rerun passes. Focused suites passed **10/10** and **11/11**; the full suite
-passed **478 tests** with **8 optional-environment skips**. No provider task,
-archive download, material measurement, funding, fabrication, human study,
-hardware result, physical-law claim, GPU replacement or empirical SCM result
-is asserted. All twelve lanes remain `BLOCKED_WITH_PROGRESS`. Cycle 008's
-exact-commit Actions run is pending publication and verification.
+The all-lane runner now records two generated n=12 MaxCut fixtures, each with
+complete 4,096-state enumeration and 32/128-restart heuristics matching the
+exact optimum on those fixtures (-13 and -21). Three fresh-process local file
+probes passed SHA readback; the measured cache state is uncontrolled. D
+rejected a 145,469,232-byte archive plan against the 33,554,432-byte cap and
+performed no download. Each of the 12 lanes now has a focused executable
+acceptance case. The other results are synthetic schemas, local software
+screens, and negative mutations only. An initial runner attempt exposed a
+child-process import-path issue; the runner now sets `PYTHONPATH` explicitly,
+and the regenerated run passes.
+
+Cycle 008 focused tests passed **24/24**; the full prototype suite ran **481
+tests** (**473 passed**, **8 optional-environment skips**). The generated math
+audit hashes its source inputs and matches its generator. No provider job or
+bill, full archive download, material measurement, funding, fabrication,
+human study, hardware result, new physical law, quantum advantage, GPU
+replacement, or empirical SCM result occurred. All lanes remain
+`BLOCKED_WITH_PROGRESS`. Exact-commit GitHub Actions and the report/ledger
+closeout update remain required.
+
+Cycle 008 follow-up verification after integrating upstream checkpoint `7fd78c362f936e49567d61ae9e6b21f7c8934288`: the typed-math audit was regenerated and passed against the merged registry, implementation, contract, and tests. The all-lane acceptance runner passed all 12 lane gates again; the focused suite passed 24/24; the full prototype suite ran 491 tests (483 passed, 8 optional skips). The fresh-process local storage medians on this run were 61491/24967 ns; cache remained uncontrolled. These are local software/schema gates only. The new merged delta still requires exact-SHA GitHub Actions before Cycle 008 closeout.

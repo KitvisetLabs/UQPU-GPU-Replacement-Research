@@ -1,0 +1,295 @@
+{
+  "assumptions": [
+    "Illustrative gate scores and all positive material/cost/custody records are synthetic fixtures.",
+    "Cycle 007 Zenodo source artifact remains bounded-range metadata/README evidence; this cycle does not fetch the archive payload.",
+    "The local solver and file-system probes describe only this execution environment and fixtures."
+  ],
+  "cycle": "008",
+  "delta": "01",
+  "lane_a_solver_comparison": {
+    "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+    "fixtures": [
+      {
+        "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+        "exact_control": {
+          "best_objective": -13.0,
+          "complete": true,
+          "states_evaluated": 4096,
+          "total_state_space": 4096
+        },
+        "fixture": {
+          "edge_probability": 0.3,
+          "generator": "seeded_erdos_renyi_maxcut",
+          "node_count": 12,
+          "seed": 80812
+        },
+        "nonclaims": [
+          "This is one generated finite fixture, not a competitive benchmark suite.",
+          "Restart sensitivity is not an asymptotic scaling law.",
+          "No GPU, QPU, energy, provider, or hardware comparison is made."
+        ],
+        "schema": "uqpu-cycle008-solver-restart-comparison-v1",
+        "solver_variants": [
+          {
+            "elapsed_seconds": 0.0027651609998429194,
+            "gap_to_exact": 0.0,
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -13.0,
+            "restarts": 32
+          },
+          {
+            "elapsed_seconds": 0.00991587300086394,
+            "gap_to_exact": 0.0,
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -13.0,
+            "restarts": 128
+          }
+        ]
+      },
+      {
+        "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+        "exact_control": {
+          "best_objective": -21.0,
+          "complete": true,
+          "states_evaluated": 4096,
+          "total_state_space": 4096
+        },
+        "fixture": {
+          "edge_probability": 0.3,
+          "generator": "seeded_erdos_renyi_maxcut",
+          "node_count": 12,
+          "seed": 80813
+        },
+        "nonclaims": [
+          "This is one generated finite fixture, not a competitive benchmark suite.",
+          "Restart sensitivity is not an asymptotic scaling law.",
+          "No GPU, QPU, energy, provider, or hardware comparison is made."
+        ],
+        "schema": "uqpu-cycle008-solver-restart-comparison-v1",
+        "solver_variants": [
+          {
+            "elapsed_seconds": 0.003908053000486689,
+            "gap_to_exact": 0.0,
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -21.0,
+            "restarts": 32
+          },
+          {
+            "elapsed_seconds": 0.015900368000075105,
+            "gap_to_exact": 0.0,
+            "method": "deterministic_seeded_greedy_bitflip",
+            "objective": -21.0,
+            "restarts": 128
+          }
+        ]
+      }
+    ],
+    "nonclaims": [
+      "Two generated finite fixtures do not establish a competitive benchmark suite.",
+      "Restart sensitivity does not establish an asymptotic scaling law.",
+      "No GPU, QPU, energy, provider, or hardware comparison is made."
+    ],
+    "schema": "uqpu-cycle008-two-fixture-restart-comparison-v1"
+  },
+  "lane_c_fresh_process_probe": {
+    "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_NOT_CACHE_OR_POWER_LOSS_EVIDENCE",
+    "fresh_process_per_repetition": true,
+    "non_claims": [
+      "No cold-cache or warm-cache label is inferred.",
+      "No device-flush attestation or power-loss survival is tested.",
+      "No remote-storage, cloud, energy, or hardware result is measured."
+    ],
+    "platform_capabilities": {
+      "cache_control_attempted": false,
+      "cache_state": "UNCONTROLLED",
+      "directory_fsync_completed_in_all_children": true,
+      "directory_fsync_supported_in_all_children": true,
+      "os_name": "posix",
+      "system": "Linux"
+    },
+    "repetitions": 3,
+    "rows": [
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 61,
+        "payload_sha256": "1464926e84fbe5c288b582ddf997d12f5c127ad54695d733a0b9b47006d065f0",
+        "process_id": 22,
+        "publication_ns": 61491,
+        "readback_ns": 25007,
+        "readback_sha256_matches": true
+      },
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 61,
+        "payload_sha256": "1464926e84fbe5c288b582ddf997d12f5c127ad54695d733a0b9b47006d065f0",
+        "process_id": 23,
+        "publication_ns": 60370,
+        "readback_ns": 23585,
+        "readback_sha256_matches": true
+      },
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 61,
+        "payload_sha256": "1464926e84fbe5c288b582ddf997d12f5c127ad54695d733a0b9b47006d065f0",
+        "process_id": 24,
+        "publication_ns": 65416,
+        "readback_ns": 24967,
+        "readback_sha256_matches": true
+      }
+    ],
+    "schema": "uqpu-cycle007-fresh-process-local-durability-v1",
+    "timing_summary_ns": {
+      "publication_median": 61491,
+      "readback_median": 24967
+    }
+  },
+  "lanes": {
+    "A": {
+      "acceptance_status": "PASS",
+      "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_a_restart_sensitivity_keeps_exact_completion_separate",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "AI-COST": {
+      "acceptance_status": "PASS",
+      "evidence_class": "SYNTHETIC_CANDIDATE_EVALUATION_REJECTION_GATE",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_ai_cost_rejects_split_leakage_and_incomplete_candidate_evidence",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "B": {
+      "acceptance_status": "PASS",
+      "evidence_class": "SYNTHETIC_HASH_LINKED_REQUEST_RECEIPT_GATE",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_b_hash_link_and_idempotency_mutation_fail_closed",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "C": {
+      "acceptance_status": "PASS",
+      "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_CACHE_UNCONTROLLED",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_c_process_scope_does_not_imply_cache_or_durability",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "D": {
+      "acceptance_status": "PASS",
+      "evidence_class": "RESOURCE_GUARDED_ARCHIVE_PLAN_NO_DOWNLOAD",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_d_archive_plan_enforces_resource_cap_and_never_downloads",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "E": {
+      "acceptance_status": "PASS",
+      "evidence_class": "SYNTHETIC_FUNCTION_SPECIFIC_MATERIAL_RECORD",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_e_material_record_requires_unit_matched_uncertainty",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "F": {
+      "acceptance_status": "PASS",
+      "evidence_class": "SYNTHETIC_COST_INTERVAL_SCHEMA",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_f_cost_interval_requires_common_currency_and_outputs",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "FND/EQN": {
+      "acceptance_status": "PASS",
+      "evidence_class": "EXACT_RATIONAL_DIMENSION_COUNTEREXAMPLE_GATE",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_fnd_eqn_accepts_exact_homogeneous_units_and_keeps_counterexample",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "G": {
+      "acceptance_status": "PASS",
+      "evidence_class": "SYNTHETIC_CALIBRATION_UNCERTAINTY_GATE",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_g_calibration_gate_checks_scope_expiry_and_uncertainty",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "H": {
+      "acceptance_status": "PASS",
+      "evidence_class": "ILLUSTRATIVE_SENSITIVITY_RANKING_NO_CAPITAL",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_h_gate_ranking_is_assumption_bound_and_never_authorizes",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "QOS/QSVT": {
+      "acceptance_status": "PASS",
+      "evidence_class": "FROZEN_ER6_SEMANTIC_CERTIFICATE_SCHEMA",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_qos_semantics_certificate_rejects_changed_measurement_map",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    },
+    "SCM": {
+      "acceptance_status": "PASS",
+      "evidence_class": "FICTIONAL_FIVE_VOLUME_INVARIANT_TEST",
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "test": "test_lane_scm_five_volume_fixture_is_typed_and_real_null",
+      "test_status": "PASS_IN_FOCUSED_RUN"
+    }
+  },
+  "nonclaims": [
+    "No QPU/provider task, bill, paid job, or hardware measurement.",
+    "No material measurement, fabrication, funding, or capital authorization.",
+    "No new physical law, quantum advantage, GPU replacement, or empirical spiritual communication."
+  ],
+  "reviewed_date": "2026-09-28",
+  "schema": "uqpu-cycle008-delta01-executable-acceptance-v1",
+  "source_basis": [
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_PROVIDER_API_DOCUMENTATION",
+      "informs": "request shape and required field names only; no submitted job or receipt",
+      "url": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_METROLOGY_GUIDANCE",
+      "informs": "uncertainty reporting and coverage factor context; no material property was measured",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-guidelines-evaluating-and-expressing-uncertainty-nist-measurement"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "LANGUAGE_SPECIFICATION",
+      "informs": "narrow measurement-map semantics; no provider or hardware execution",
+      "url": "https://openqasm.com/versions/3.1/language/insts.html"
+    }
+  ],
+  "test_runs": {
+    "cycle008_focused": {
+      "command": [
+        "-m",
+        "unittest",
+        "tests.test_cycle008_delta01",
+        "-v"
+      ],
+      "optional_skips": 0,
+      "status": "PASS",
+      "tests_run": 24
+    },
+    "full_prototype_suite": {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "optional_skips": 8,
+      "status": "PASS",
+      "tests_run": 491
+    }
+  },
+  "uncertainty": [
+    "Two fixed-seed finite solver fixtures; runtime varies by host and process load.",
+    "Fresh processes do not imply cold cache; cache state is UNCONTROLLED.",
+    "Synthetic schema acceptance does not establish physical, provider, or economic validity."
+  ]
+}

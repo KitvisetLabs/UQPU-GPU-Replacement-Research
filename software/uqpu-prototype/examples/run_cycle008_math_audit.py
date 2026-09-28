@@ -32,7 +32,13 @@ def main() -> None:
         "implementation": "software/uqpu-prototype/uqpu/cycle008_delta01.py",
         "implementation_sha256": sha256(ROOT / "software/uqpu-prototype/uqpu/cycle008_delta01.py"),
         "source_umrl_document": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+        "source_umrl_sha256": sha256(ROOT / "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md"),
         "source_scm_document": "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md",
+        "source_scm_sha256": sha256(ROOT / "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md"),
+        "checkpoint_document": "docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md",
+        "checkpoint_document_sha256": sha256(ROOT / "docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md"),
+        "test_file": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
+        "test_file_sha256": sha256(ROOT / "software/uqpu-prototype/tests/test_cycle008_delta01.py"),
     }
     output.write_text(
         json.dumps(artifact, indent=2, sort_keys=True) + "\n",

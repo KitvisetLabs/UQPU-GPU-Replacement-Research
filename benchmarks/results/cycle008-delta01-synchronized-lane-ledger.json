@@ -1,8 +1,12 @@
 {
+  "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
   "artifacts": [
     "benchmarks/results/cycle008-delta01-executable-evidence.json",
     "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
-    "benchmarks/experiments/cycle008-delta01-typed-math-scm-registry.json"
+    "benchmarks/experiments/cycle008-delta01-typed-math-scm-registry.json",
+    "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+    "docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md",
+    "docs/SYNCHRONIZED_CYCLE_009_HANDOFF_2026-09-28.md"
   ],
   "assumptions": [
     "Positive provider/material/calibration/cost/custody/SCM bridge fixtures are synthetic or fictional.",
@@ -20,75 +24,75 @@
   "cycle008_lane_acceptance": {
     "A": {
       "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
-      "result": "Seeded n=12 exact control completed 4096/4096 states; 32/128-restart greedy each found -22 with zero gap on this fixture.",
+      "result": "Two generated n=12 fixtures each completed exact enumeration of 4096/4096 states; 32/128 restarts matched exact objectives -13 and -21. No GPU/QPU or scaling inference.",
       "status": "PASS",
-      "test": "test_lane_a_exact_control_and_restart_sensitivity_are_separate"
+      "test": "test_lane_a_restart_sensitivity_keeps_exact_completion_separate"
     },
     "AI-COST": {
       "evidence_class": "SYNTHETIC_CANDIDATE_EVALUATION_REJECTION_GATE",
-      "result": "Train/held-out leakage and missing energy reject; complete synthetic evaluation remains inadmissible as a measured candidate.",
+      "result": "Train/held-out disjointness and completeness gates work; leakage and missing energy are rejected; synthetic complete result remains inadmissible.",
       "status": "PASS",
-      "test": "test_lane_ai_cost_rejects_leakage_and_incomplete_evidence"
+      "test": "test_lane_ai_cost_rejects_split_leakage_and_incomplete_candidate_evidence"
     },
     "B": {
       "evidence_class": "SYNTHETIC_HASH_LINKED_REQUEST_RECEIPT_GATE",
-      "result": "Request-to-receipt hash link validates; same-token payload mutation rejected; provider task/bill fields remain null.",
+      "result": "Canonical request hash links to receipt envelope; same-token payload mutation rejected; provider task and bill stay null.",
       "status": "PASS",
-      "test": "test_lane_b_hash_link_and_replay_mutation_fail_closed"
+      "test": "test_lane_b_hash_link_and_idempotency_mutation_fail_closed"
     },
     "C": {
       "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_CACHE_UNCONTROLLED",
-      "result": "Three fresh child processes passed local hash readback; median publication/readback 60300/24927 ns, directory fsync passed in all.",
+      "result": "Three fresh child-process local publications/readbacks passed SHA check; median publish/readback 61491/24967 ns; directory fsync supported/completed; cache uncontrolled.",
       "status": "PASS",
-      "test": "test_lane_c_fresh_process_is_not_mislabeled_cold_or_durable"
+      "test": "test_lane_c_process_scope_does_not_imply_cache_or_durability"
     },
     "D": {
       "evidence_class": "RESOURCE_GUARDED_ARCHIVE_PLAN_NO_DOWNLOAD",
-      "result": "145469232-byte archive exceeds 100000000-byte cap, so the plan fails closed with download_attempted=false.",
+      "result": "The 145469232-byte archive exceeds the 33554432-byte (32 MiB) fixture cap; plan fails closed and records no download, checksum, or payload read.",
       "status": "PASS",
-      "test": "test_lane_d_full_archive_plan_respects_byte_cap"
+      "test": "test_lane_d_archive_plan_enforces_resource_cap_and_never_downloads"
     },
     "E": {
       "evidence_class": "SYNTHETIC_FUNCTION_SPECIFIC_MATERIAL_RECORD",
-      "result": "Synthetic sample/control/measurand/method/calibration/uncertainty record validates; mismatched uncertainty unit rejected.",
+      "result": "Function-specific sample/control/measurand/method/calibration/standard-uncertainty fields accepted synthetically; unit mismatch rejected.",
       "status": "PASS",
-      "test": "test_lane_e_property_record_rejects_uncertainty_unit_mismatch"
+      "test": "test_lane_e_material_record_requires_unit_matched_uncertainty"
     },
     "F": {
       "evidence_class": "SYNTHETIC_COST_INTERVAL_SCHEMA",
-      "result": "Synthetic USD component intervals total [1.7,2.1], equal [0.85,1.05] per two accepted outputs; mixed currency leaves total null.",
+      "result": "Two USD component intervals sum to [1.70,2.10], or [0.85,1.05] per two accepted outputs; mixed currency returns null totals.",
       "status": "PASS",
-      "test": "test_lane_f_cost_intervals_fail_closed_on_currency_mix"
+      "test": "test_lane_f_cost_interval_requires_common_currency_and_outputs"
     },
     "FND/EQN": {
-      "evidence_class": "BOUNDED_TYPED_DIMENSION_AUDIT_AND_NEGATIVE_COUNTEREXAMPLES",
-      "result": "Three explicitly typed equations (T_acc, c_fuel, P_net) are dimensionally homogeneous; exact rational exponents required and cross-sort/mismatch counterexamples rejected.",
+      "evidence_class": "EXACT_RATIONAL_DIMENSION_COUNTEREXAMPLE_GATE",
+      "result": "Exact homogeneous length dimensions pass across m/cm labels; length/time mismatch and prose-only dimensions are rejected.",
       "status": "PASS",
-      "test": "test_registry_subset_has_exact_equation_dimensions"
+      "test": "test_lane_fnd_eqn_accepts_exact_homogeneous_units_and_keeps_counterexample"
     },
     "G": {
       "evidence_class": "SYNTHETIC_CALIBRATION_UNCERTAINTY_GATE",
-      "result": "Synthetic calibration scope/uncertainty gate passes in window and rejects an expired certificate.",
+      "result": "Synthetic scope/window and exact uncertainty budget accepted only with ROOT_SUM_OF_SQUARES_UNCORRELATED declared; missing combination rule and expired certificate are rejected.",
       "status": "PASS",
-      "test": "test_lane_g_calibration_certificate_expiry_and_uncertainty_are_required"
+      "test": "test_lane_g_calibration_gate_checks_scope_expiry_and_uncertainty"
     },
     "H": {
       "evidence_class": "ILLUSTRATIVE_SENSITIVITY_RANKING_NO_CAPITAL",
-      "result": "Illustrative blocker-reduction/assumed-effort ranking orders BILL_RECEIPT ahead of MATERIAL_SAMPLE; capital remains null and unauthorized.",
+      "result": "Assumed blocker-points-per-effort ranking places BILL_RECEIPT before MATERIAL_SAMPLE; capital remains unauthorized and null.",
       "status": "PASS",
-      "test": "test_lane_h_ranking_is_sensitivity_bound_and_not_authorization"
+      "test": "test_lane_h_gate_ranking_is_assumption_bound_and_never_authorizes"
     },
     "QOS/QSVT": {
       "evidence_class": "FROZEN_ER6_SEMANTIC_CERTIFICATE_SCHEMA",
-      "result": "Frozen measurement map passes; changed map is rejected; depth/qubit resource fields are schema-only and receipts null.",
+      "result": "Frozen semantic measurement map passes; a remap and negative logical depth fail validation; provider/hardware receipt fields remain null.",
       "status": "PASS",
-      "test": "test_lane_qos_semantics_certificate_rejects_map_change"
+      "test": "test_lane_qos_semantics_certificate_rejects_changed_measurement_map"
     },
     "SCM": {
-      "evidence_class": "FICTIONAL_CANON_TYPED_CONSENT_AND_CONSERVATION_GATES",
-      "result": "Four fictional equation extensions link across five volume contracts; five consent negatives and three conservation negatives reject; unvalidated cast to real evidence rejected.",
+      "evidence_class": "FICTIONAL_FIVE_VOLUME_INVARIANT_TEST",
+      "result": "All five fictional volume IDs pass the count-conservation fixture; consent=false and empirical coupling non-null are rejected.",
       "status": "PASS",
-      "test": "test_five_volumes_each_require_their_invariant_and_firewall"
+      "test": "test_lane_scm_five_volume_fixture_is_typed_and_real_null"
     }
   },
   "date": "2026-09-28",
@@ -96,115 +100,288 @@
   "lane_count": 12,
   "lanes": {
     "A": {
-      "acceptance_test_id": "test_lane_a_exact_control_and_restart_sensitivity_are_separate",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_a_restart_sensitivity_keeps_exact_completion_separate",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
       "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
-      "progress": "Seeded n=12 exact control completed 4096/4096 states; 32/128-restart greedy each found -22 with zero gap on this fixture.",
-      "remaining_gate": "One generated graph only; no performance winner, GPU/QPU comparison, energy, or scaling law.",
+      "progress": "Two generated n=12 fixtures each completed exact enumeration of 4096/4096 states; 32/128 restarts matched exact objectives -13 and -21. No GPU/QPU or scaling inference.",
+      "remaining_gate": "No broader benchmark suite, GPU/QPU comparison, energy measurement, or scaling claim.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-005",
+          "UMRL-006",
+          "UMRL-007"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "AI-COST": {
-      "acceptance_test_id": "test_lane_ai_cost_rejects_leakage_and_incomplete_evidence",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_ai_cost_rejects_split_leakage_and_incomplete_candidate_evidence",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "SYNTHETIC_CANDIDATE_EVALUATION_REJECTION_GATE",
-      "progress": "Train/held-out leakage and missing energy reject; complete synthetic evaluation remains inadmissible as a measured candidate.",
-      "remaining_gate": "No model quality, runtime, energy, or service-cost result.",
+      "progress": "Train/held-out disjointness and completeness gates work; leakage and missing energy are rejected; synthetic complete result remains inadmissible.",
+      "remaining_gate": "No candidate quality, training/service cost, energy, or performance result.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-006",
+          "UMRL-007",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "B": {
-      "acceptance_test_id": "test_lane_b_hash_link_and_replay_mutation_fail_closed",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_b_hash_link_and_idempotency_mutation_fail_closed",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "SYNTHETIC_HASH_LINKED_REQUEST_RECEIPT_GATE",
-      "progress": "Request-to-receipt hash link validates; same-token payload mutation rejected; provider task/bill fields remain null.",
-      "remaining_gate": "No submission/receipt/bill; provider-side idempotency is not established by this internal fixture.",
+      "progress": "Canonical request hash links to receipt envelope; same-token payload mutation rejected; provider task and bill stay null.",
+      "remaining_gate": "No provider authorization, job submission, receipt, bill, or claim about provider-side idempotency.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-001",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "C": {
-      "acceptance_test_id": "test_lane_c_fresh_process_is_not_mislabeled_cold_or_durable",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_c_process_scope_does_not_imply_cache_or_durability",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
       "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_CACHE_UNCONTROLLED",
-      "progress": "Three fresh child processes passed local hash readback; median publication/readback 60300/24927 ns, directory fsync passed in all.",
-      "remaining_gate": "Cache remains uncontrolled; no device flush, remote storage, power-loss or energy result.",
+      "progress": "Three fresh child-process local publications/readbacks passed SHA check; median publish/readback 61491/24967 ns; directory fsync supported/completed; cache uncontrolled.",
+      "remaining_gate": "No cold-cache label, device flush, service durability, or power-loss result.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-006",
+          "UMRL-007",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "D": {
-      "acceptance_test_id": "test_lane_d_full_archive_plan_respects_byte_cap",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_d_archive_plan_enforces_resource_cap_and_never_downloads",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "RESOURCE_GUARDED_ARCHIVE_PLAN_NO_DOWNLOAD",
-      "progress": "145469232-byte archive exceeds 100000000-byte cap, so the plan fails closed with download_attempted=false.",
-      "remaining_gate": "Full archive digest and experimental payload remain unverified/unread.",
+      "progress": "The 145469232-byte archive exceeds the 33554432-byte (32 MiB) fixture cap; plan fails closed and records no download, checksum, or payload read.",
+      "remaining_gate": "Full archive hash and payload analysis remain open.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-001",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "E": {
-      "acceptance_test_id": "test_lane_e_property_record_rejects_uncertainty_unit_mismatch",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_e_material_record_requires_unit_matched_uncertainty",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "SYNTHETIC_FUNCTION_SPECIFIC_MATERIAL_RECORD",
-      "progress": "Synthetic sample/control/measurand/method/calibration/uncertainty record validates; mismatched uncertainty unit rejected.",
-      "remaining_gate": "No sample, material measurement, property result, or fabrication.",
+      "progress": "Function-specific sample/control/measurand/method/calibration/standard-uncertainty fields accepted synthetically; unit mismatch rejected.",
+      "remaining_gate": "No sample or material-property measurement.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-017",
+          "UMRL-021",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "F": {
-      "acceptance_test_id": "test_lane_f_cost_intervals_fail_closed_on_currency_mix",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_f_cost_interval_requires_common_currency_and_outputs",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "SYNTHETIC_COST_INTERVAL_SCHEMA",
-      "progress": "Synthetic USD component intervals total [1.7,2.1], equal [0.85,1.05] per two accepted outputs; mixed currency leaves total null.",
-      "remaining_gate": "No actual invoice, FX conversion, lifecycle economics, or cost advantage.",
+      "progress": "Two USD component intervals sum to [1.70,2.10], or [0.85,1.05] per two accepted outputs; mixed currency returns null totals.",
+      "remaining_gate": "Not actual economics, bill, exchange-rate conversion, or cost-per-useful-task finding.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-006",
+          "UMRL-007",
+          "UMRL-021",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "FND/EQN": {
-      "acceptance_test_id": "test_registry_subset_has_exact_equation_dimensions",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_fnd_eqn_accepts_exact_homogeneous_units_and_keeps_counterexample",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
-      "evidence_class": "BOUNDED_TYPED_DIMENSION_AUDIT_AND_NEGATIVE_COUNTEREXAMPLES",
-      "progress": "Three explicitly typed equations (T_acc, c_fuel, P_net) are dimensionally homogeneous; exact rational exponents required and cross-sort/mismatch counterexamples rejected.",
-      "remaining_gate": "Only a selected subset and formal interface are checked; no equation truth, novelty, or physical law is established.",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
+      "evidence_class": "EXACT_RATIONAL_DIMENSION_COUNTEREXAMPLE_GATE",
+      "progress": "Exact homogeneous length dimensions pass across m/cm labels; length/time mismatch and prose-only dimensions are rejected.",
+      "remaining_gate": "No equation in the project registry was classified or proven consistent by this fixture.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-031",
+          "UMRL-007",
+          "UMRL-021",
+          "UMRL-022"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "G": {
-      "acceptance_test_id": "test_lane_g_calibration_certificate_expiry_and_uncertainty_are_required",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_g_calibration_gate_checks_scope_expiry_and_uncertainty",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "SYNTHETIC_CALIBRATION_UNCERTAINTY_GATE",
-      "progress": "Synthetic calibration scope/uncertainty gate passes in window and rejects an expired certificate.",
-      "remaining_gate": "No operational calibration certificate or measured uncertainty.",
+      "progress": "Synthetic scope/window and exact uncertainty budget accepted only with ROOT_SUM_OF_SQUARES_UNCORRELATED declared; missing combination rule and expired certificate are rejected.",
+      "remaining_gate": "No operational certificate, calibration, sample, or measured uncertainty.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-017",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "H": {
-      "acceptance_test_id": "test_lane_h_ranking_is_sensitivity_bound_and_not_authorization",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_h_gate_ranking_is_assumption_bound_and_never_authorizes",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "ILLUSTRATIVE_SENSITIVITY_RANKING_NO_CAPITAL",
-      "progress": "Illustrative blocker-reduction/assumed-effort ranking orders BILL_RECEIPT ahead of MATERIAL_SAMPLE; capital remains null and unauthorized.",
-      "remaining_gate": "Ranking inputs are not measured cost/probability and do not authorize funding.",
+      "progress": "Assumed blocker-points-per-effort ranking places BILL_RECEIPT before MATERIAL_SAMPLE; capital remains unauthorized and null.",
+      "remaining_gate": "Scores are illustrative assumptions, not finance data or funding advice.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-029",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "QOS/QSVT": {
-      "acceptance_test_id": "test_lane_qos_semantics_certificate_rejects_map_change",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_qos_semantics_certificate_rejects_changed_measurement_map",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
       "evidence_class": "FROZEN_ER6_SEMANTIC_CERTIFICATE_SCHEMA",
-      "progress": "Frozen measurement map passes; changed map is rejected; depth/qubit resource fields are schema-only and receipts null.",
+      "progress": "Frozen semantic measurement map passes; a remap and negative logical depth fail validation; provider/hardware receipt fields remain null.",
       "remaining_gate": "No general OpenQASM proof, provider transpilation, or hardware execution.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-001",
+          "UMRL-005",
+          "UMRL-031"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     },
     "SCM": {
-      "acceptance_test_id": "test_five_volumes_each_require_their_invariant_and_firewall",
+      "acceptance_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "acceptance_test_id": "test_lane_scm_five_volume_fixture_is_typed_and_real_null",
       "acceptance_test_status": "PASS",
-      "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
-      "evidence_class": "FICTIONAL_CANON_TYPED_CONSENT_AND_CONSERVATION_GATES",
-      "progress": "Four fictional equation extensions link across five volume contracts; five consent negatives and three conservation negatives reject; unvalidated cast to real evidence rejected.",
-      "remaining_gate": "Fiction/protocol only; no empirical coupling, spiritual-source claim, or human study.",
+      "artifact": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
+      "evidence_class": "FICTIONAL_FIVE_VOLUME_INVARIANT_TEST",
+      "progress": "All five fictional volume IDs pass the count-conservation fixture; consent=false and empirical coupling non-null are rejected.",
+      "remaining_gate": "Fiction-only schema test; no real coupling, spiritual-source evidence, or human study.",
+      "shared_math_checkpoint": {
+        "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+        "equation_ids": [
+          "UMRL-031",
+          "SCM-MATH-020",
+          "SCM-MATH-021",
+          "SCM-MATH-022",
+          "SCM-MATH-023"
+        ],
+        "lane_specific_gate_closed": false,
+        "status": "VALIDATED_EQUATION_MAPPING_ONLY"
+      },
       "status": "BLOCKED_WITH_PROGRESS"
     }
   },
-  "next_falsifiable_gate": "Verify this exact software/evidence commit in GitHub Actions; preserve any failure and repair feasible causes before Cycle 008 closeout.",
+  "latest_checkpoint": {
+    "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+    "checkpoint_id": "CYCLE008-DELTA01-MATH-001",
+    "consent_negative_cases_rejected": 5,
+    "dimension_equations_balanced": true,
+    "equation_checks": 3,
+    "evidence_class": "FORMAL_SCHEMA_AND_SYNTHETIC_FIXTURES_NO_PHYSICAL_OR_SPIRITUAL_MEASUREMENT",
+    "fictional_conservation_negative_cases_rejected": 4,
+    "five_volume_contract": {
+      "claim_ceiling": "FICTIONAL_CANON_CONSISTENCY_ONLY",
+      "errors": [],
+      "valid": true,
+      "volume_count": 5
+    },
+    "lane_link_count": 12,
+    "new_umrl_equation": true,
+    "provenance": {
+      "checkpoint_document": "docs/CYCLE008_TYPED_MATH_AND_SCM_STATE_CONTRACT_2026-09-28.md",
+      "checkpoint_document_sha256": "5ea75827f7011140bd9c23b5619c32e8304b8cd24fdff0b3f92fea8047842dfd",
+      "generator": "software/uqpu-prototype/examples/run_cycle008_math_audit.py",
+      "generator_sha256": "321176f86c509996ce16dc7669e981d59fe3a0f601c82b28d9739a74e1920260",
+      "implementation": "software/uqpu-prototype/uqpu/cycle008_delta01.py",
+      "implementation_sha256": "690d91c0cc30bb2fb155cb25cf8e7c945a4a625021000308b50ad39e2717795d",
+      "registry_sha256": "37bdd6b999c158b7770a1f17fa3196873a858a8e769501cdbd942924adb499c4",
+      "source_scm_document": "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md",
+      "source_scm_sha256": "1bd8de5a9f9ddb95b4a5d605fa119a255b3ed06961eebb4ce4254a7727e19562",
+      "source_umrl_document": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+      "source_umrl_sha256": "e2845cfa3676aab1169351e71cf9ab244b9c478f5010840943862806b95d5174",
+      "test_file": "software/uqpu-prototype/tests/test_cycle008_delta01.py",
+      "test_file_sha256": "e5f535ed077c77e94b634c3c2b6de9169afbdc8db07d6c6685004240826ff503"
+    },
+    "registry": "benchmarks/experiments/cycle008-delta01-typed-math-scm-registry.json",
+    "scm_equations": [
+      "SCM-MATH-020",
+      "SCM-MATH-021",
+      "SCM-MATH-022",
+      "SCM-MATH-023"
+    ],
+    "status": "PASS_ACTIVE_CYCLE_NOT_CLOSEOUT",
+    "unvalidated_bridge_rejected": true
+  },
+  "next_falsifiable_gate": "Publish the code/evidence commit, verify that exact SHA in GitHub Actions, then record the verified run in the report and closeout ledger.",
   "nonclaims": [
     "No measured hardware/provider/material/economic result.",
     "No new physical law, quantum advantage or GPU replacement.",
@@ -239,7 +416,7 @@
     }
   ],
   "schema": "uqpu-cycle008-delta01-synchronized-lane-ledger-v1",
-  "status": "ACTIVE_CHECKPOINT_01_ALL_12_LANES_LOCAL_PASS_CI_PENDING",
+  "status": "ACTIVE_WITH_VALIDATED_MATH_AND_12_LANE_ACCEPTANCE",
   "uncertainty": [
     "Solver result is one seeded generated n=12 graph; no scaling estimate is supported.",
     "Filesystem timing is a three-process local screen; cache state is uncontrolled.",
@@ -247,6 +424,7 @@
     "Capital-ranking sensitivities are illustrative assumptions without empirical distributions."
   ],
   "validation": {
+    "artifact_regenerated_after_final_checkpoint_doc_edit": true,
     "cycle008_executable_lane_tests": {
       "passed": 10,
       "skipped": 0
@@ -255,13 +433,40 @@
       "passed": 11,
       "skipped": 0
     },
-    "full_prototype_suite": {
-      "passed": 478,
-      "skipped_optional": 8
+    "executable_acceptance": {
+      "artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
+      "lane_count": 12,
+      "status": "PASS"
     },
-    "github_actions": "PENDING_ON_EXACT_PUBLISHED_SOFTWARE_SHA",
+    "focused_cycle008_lane_tests": {
+      "passed": 12,
+      "skipped": 0,
+      "status": "PASS",
+      "total": 12
+    },
+    "focused_cycle008_math_tests": {
+      "passed": 12,
+      "skipped": 0,
+      "status": "PASS",
+      "total": 12
+    },
+    "full_prototype_suite": {
+      "passed": 483,
+      "skipped_optional": 8,
+      "status": "PASS",
+      "tests_run": 491
+    },
+    "github_actions": {
+      "commit_sha": "7fd78c362f936e49567d61ae9e6b21f7c8934288",
+      "current_delta_status": "PENDING_EXACT_SHA",
+      "jobs_passed": 8,
+      "run_id": "36416826035",
+      "run_number": 509,
+      "status": "PASS_PRIOR_CHECKPOINT_ONLY"
+    },
+    "historical_runner_artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
     "local_validation": "PASS",
-    "runner_artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+    "runner_artifact": "benchmarks/results/cycle008-delta01-executable-acceptance.json",
     "typed_math_scm_audit_status": "PASS"
   }
 }
