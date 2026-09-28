@@ -5,9 +5,9 @@
   "date": "2026-09-28",
   "branch": "research/cycle-011-delta-01-2026-09-28",
   "base_closeout_commit": "fd8eec756d115525bc9a20bea260da1e3b14a302",
-  "status": "ACTIVE_ALL_12_LANE_EXECUTABLE_CHECKPOINT_NOT_CLOSED",
-  "full_cycle_closeout_pending": true,
-  "closed_date": null,
+  "status": "CLOSED_AFTER_EXACT_SHA_CI",
+  "full_cycle_closeout_pending": false,
+  "closed_date": "2026-09-28",
   "report": "docs/SYNCHRONIZED_CYCLE_011_EXECUTION_DELTA_01_2026-09-28.md",
   "next_cycle_handoff": "docs/SYNCHRONIZED_CYCLE_012_HANDOFF_2026-09-28.md",
   "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
@@ -121,14 +121,14 @@
     "lane_count": 12,
     "all_lane_acceptance_passed": true,
     "all_lane_external_gates_closed": false,
-    "status": "PASS_LOCAL_ACCEPTANCE_EXACT_SHA_CI_PENDING",
+    "status": "PASS_LOCAL_AND_EXACT_SHA_CI_PASSED",
     "provenance": {
       "acceptance_sha256": "5c46ae164a954b1a99d557dad48a456a0d37d18998afa21ee6d77a7c40469fec",
       "fixtures_sha256": "b87300b64735058440e3be3c2e6d53ef510484cab0b584fb780044ed068c0da5",
       "module_sha256": "54520dafb216eb6515166e6e921720abe86ad33b46691f87225bb7ebadd559b0",
       "tests_sha256": "4a51905601c36b9612122d9df1a79d7fb0b1449818bf7421f0ca291101fe9d74",
       "runner_sha256": "34f591803adf8cacfe3e7fe91cb76eadb835218416036f63afdfd42cc72e717c",
-      "report_sha256": "9b2a4f08680d3e487aa47c6b9fa7794ee0edff0e2d85f344f817100d62487eed",
+      "report_sha256": "e547ca811011b458ee625946e4881f32e0943f24b3ab69506b4b8ec29caaaef9",
       "handoff_sha256": "cf27512ca80814bbcc8d5c23cfc2743ec4f58ecb5f36a9b87e9f060faf2b1e39",
       "open_gates_sha256": "556ebfdae0369317220090abc7bd6e16a3fd2c26079eda4fb31b6755ecfa0b0d",
       "worklog_sha256": "351e590934b2a048975ea07891889d6b3491d4c6e31d0081198c0caf1b11bda7"
@@ -153,12 +153,12 @@
       "tests_run": 528
     },
     "github_actions": {
-      "commit_sha": null,
-      "job_count": 0,
-      "jobs_passed": 0,
-      "run_id": null,
-      "run_number": null,
-      "status": "PENDING_EXACT_SHA",
+      "commit_sha": "0b0d37b9fdf1ad831b44117538db936695dd198e",
+      "job_count": 8,
+      "jobs_passed": 8,
+      "run_id": 36431873538,
+      "run_number": 513,
+      "status": "SUCCESS",
       "workflow": ".github/workflows/uqpu-tests.yml"
     },
     "local_validation": "PASS"
@@ -221,7 +221,7 @@
     "SCM remains fiction-only and empirical_coupling is null.",
     "No paid hardware task, funding, physical sample, commercial economics, or empirical quantum claim is involved."
   ],
-  "next_falsifiable_gate": "Publish exact code/evidence SHA and verify all configured GitHub Actions jobs, then record CI and close Cycle 011.",
+  "next_falsifiable_gate": "Start Cycle 012 from the exact remote Cycle 011 closeout commit; retain all independent evidence gates.",
   "artifacts": [
     "RESEARCH_GAPS.md",
     "WORKLOG.md",
@@ -233,5 +233,13 @@
     "software/uqpu-prototype/examples/run_cycle011_delta01.py",
     "software/uqpu-prototype/tests/test_cycle011_delta01.py",
     "software/uqpu-prototype/uqpu/cycle011_delta01.py"
-  ]
+  ],
+  "closeout_code_evidence_commit": "0b0d37b9fdf1ad831b44117538db936695dd198e",
+  "closeout_actions": {
+    "run_id": 36431873538,
+    "run_number": 513,
+    "jobs_total": 8,
+    "jobs_passed": 8,
+    "status": "SUCCESS"
+  }
 }

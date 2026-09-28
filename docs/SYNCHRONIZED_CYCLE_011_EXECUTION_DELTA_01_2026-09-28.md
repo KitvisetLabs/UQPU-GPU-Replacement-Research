@@ -2,7 +2,7 @@
 
 | Date | Branch | Base closeout | State |
 |---|---|---|---|
-| 2026-09-28 | `research/cycle-011-delta-01-2026-09-28` | Cycle 010 remote closeout `fd8eec756d115525bc9a20bea260da1e3b14a302` | ACTIVE / 12-LANE LOCAL ACCEPTANCE PASS / EXACT-SHA CI PENDING |
+| 2026-09-28 | `research/cycle-011-delta-01-2026-09-28` | Cycle 010 remote closeout `fd8eec756d115525bc9a20bea260da1e3b14a302` | CLOSED / EXACT-SHA ACTIONS #513 PASSED 8/8 / NO EVIDENCE PROMOTION |
 
 ## Integrated contribution
 
@@ -31,7 +31,10 @@ Cycle 011 follows the canonical synchronous portfolio and advances every named l
 - Full prototype suite: **528 tests run, 520 passed, 8 optional-environment skips**.
 - All **12/12** lane acceptance outputs passed locally. The machine-readable artifact records exact fixture, implementation, test and runner hashes, assumptions, evidence classes, uncertainty and non-claims.
 - Local artifact SHA-256: `5c46ae164a954b1a99d557dad48a456a0d37d18998afa21ee6d77a7c40469fec`.
-- Exact-SHA GitHub Actions remains required. The code/evidence checkpoint must be pushed and all configured jobs for that remote SHA must pass before Cycle 011 closes.
+- Code/evidence commit `0b0d37b9fdf1ad831b44117538db936695dd198e` passed GitHub Actions **#513** (run ID `36431873538`) with **8/8 jobs successful**. The matrix covered Python 3.10–3.12, QSP synthesis and reconstruction, reference benchmark, Qiskit verification, and target/noise checks.
+- The focused suite passed **12/12**; the full suite ran **528 tests** (**520 passed**, **8 optional-environment skips**). The executable artifact records local acceptance PASS across all 12 lanes.
+- This metadata closeout records the exact-SHA CI result and closes Cycle 011. All lanes remain `BLOCKED_WITH_PROGRESS`; no external evidence gate is promoted.
+- Work remains on the dedicated research branch; `main` is unchanged.
 - Work is on the dedicated Cycle 011 research branch. No merge to `main`, paid hardware job, material purchase, funding, or capital authorization occurred.
 
 ## Sources and evidence boundary
@@ -50,4 +53,4 @@ Evidence classes are local seeded classical software comparison, synthetic schem
 - `software/uqpu-prototype/examples/run_cycle011_delta01.py`
 - Next-cycle handoff: `docs/SYNCHRONIZED_CYCLE_012_HANDOFF_2026-09-28.md`
 
-**Closeout gate:** publish this code/evidence checkpoint, inspect every configured GitHub Actions job for its exact SHA, then record the verified run and close Cycle 011.
+**Closeout:** exact code/evidence SHA `0b0d37b9fdf1ad831b44117538db936695dd198e` passed Actions #513 (run ID `36431873538`), all 8/8 jobs successful; this metadata commit records verification and closes Cycle 011. Cycle 012 may start from the resulting remote closeout SHA.
