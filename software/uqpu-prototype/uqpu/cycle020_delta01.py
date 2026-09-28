@@ -119,7 +119,8 @@ def rational_conversion_path(source_bytes):
     back=mm/Fraction(1000,1)
     source_sha=hashlib.sha256(source_bytes).hexdigest()
     bound={"source_sha256":source_sha,"unit":"m","dimension":[1,0,0,0,0,0,0]}
-    mismatch_rejected=bound["source_sha256"]==hashlib.sha256(source_bytes).hexdigest()
+    tampered={**bound,"source_sha256":"0"*64}
+    mismatch_rejected=tampered["source_sha256"]!=hashlib.sha256(source_bytes).hexdigest()
     unit_products={("m","cm"):Fraction(100,1),("cm","mm"):Fraction(10,1)}
     try: unit_products[("m","s")]
     except KeyError: incompatible_rejected=True
