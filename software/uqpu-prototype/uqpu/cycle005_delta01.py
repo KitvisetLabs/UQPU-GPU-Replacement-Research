@@ -49,6 +49,17 @@ def _timing(samples: list[int]) -> dict[str, int | float]:
     }
 
 
+def _byte_summary(samples: list[int]) -> dict[str, int | float]:
+    if not samples or any(type(item) is not int or item < 0 for item in samples):
+        raise ValueError("byte samples must be non-negative integers")
+    return {
+        "repetitions": len(samples),
+        "minimum_bytes": min(samples),
+        "median_bytes": statistics.median(samples),
+        "maximum_bytes": max(samples),
+    }
+
+
 def exact_enumeration_with_cap(
     instance,
     *,
@@ -242,7 +253,7 @@ def benchmark_durable_io(payload: dict, repetitions: int = 21) -> dict:
             "json_decode": _timing(decode),
         },
         "python_allocation_incremental_peak_bytes": {
-            name: _timing(values) for name, values in peaks.items()
+            name: _byte_summary(values) for name, values in peaks.items()
         },
         "durability_boundary": {
             "file_data_fsync_called": True,

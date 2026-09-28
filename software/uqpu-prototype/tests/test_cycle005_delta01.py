@@ -65,6 +65,10 @@ class Cycle005Delta01Tests(unittest.TestCase):
         self.assertEqual(row["cache_labels"]["first_read"], "NOT_VERIFIED_OS_COLD")
         self.assertEqual(row["cache_labels"]["repeat_read"], "NOT_VERIFIED_CACHE_HIT")
         self.assertIn("write_fsync", row["python_allocation_incremental_peak_bytes"])
+        self.assertIn(
+            "median_bytes",
+            row["python_allocation_incremental_peak_bytes"]["write_fsync"],
+        )
 
     def test_braket_dry_run_is_incomplete_and_has_no_submit_surface(self):
         row = build_braket_dry_run_packet(self.manifest)
