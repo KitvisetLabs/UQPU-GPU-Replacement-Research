@@ -1,0 +1,82 @@
+{
+  "schema": "uqpu-cycle013-delta01-preregistered-gates-v1",
+  "cycle": "013",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-013-delta-01-2026-09-28",
+  "base_closeout": "707750fb4bec7d701d2c6c35f155c3e381c72b00",
+  "caps": {
+    "maxcut_states": 1024,
+    "zip64_count": "unsigned-64-bit",
+    "cost_components": 5,
+    "covariance_measurands": 4
+  },
+  "lanes": {
+    "A": "third positive-weight graph plus exact 1,024-state acceptance/rejection boundary; assert exact optimum and optimum-set digest; canonical graph identity invariant under edge reorder/orientation; validate bounded cap before shifting",
+    "B": "canonical v4 serialization binds schema/token/payload/options/source; reject non-string JSON keys, non-finite numbers, unknown fields, and semantic mutation",
+    "C": "same-directory atomic replacement with unique exclusive temp names, stale-only namespace cleanup, two injected failure points, and concurrent complete-payload regression; cache and crash durability remain uncontrolled",
+    "D": "ZIP64 declared-count overflow, strict contiguous central-directory entry spans, minimum 56-byte ZIP64 EOCD, zero-gap locator boundary, boolean-offset rejection, and payload non-acceptance",
+    "E": "hash-linked custody binds issuer/scope and enforces one sample plus from/to path continuity; strict ISO date expiry against injected evaluation date; unauthorized-scope, path, sample, expiry, and chain mutations reject",
+    "F": "five-component USD interval with complete sparse covariance; stable scale-normalized PSD check; malformed/incomplete schema, non-PSD extreme-finite covariance, aggregate overflow, and zero accepted outputs return null",
+    "G": "four-measurand covariance certificate with registered units, ordered seven-base-dimension vectors, scope, method, strict expiry against injected date, symmetry, and overflow-safe PSD checks",
+    "H": "correlated held-out priority shocks with finite transformed/adjusted scores; reject overflow before ranking; conditional ordering stability; capital remains null",
+    "FND/EQN": "fixed registered synthetic interval type tuple, rational bounds, exact all-zero dimension vector, UMRL-031 locator/snippet and source-file SHA-256 recomputed from supplied source bytes; declaration only",
+    "SCM": "fiction-only consent expiry, typed nonempty nonce/ID, bool-time rejection, nonce replay, revocation and fresh-id regrant controls; empirical coupling null",
+    "AI-COST": "third synthetic source version validates predecessor and all split digest formats, disjoint split migration, exact finite nonnegative loss schema for train/validation/test, and metric lineage",
+    "QOS/QSVT": "third ER6 certificate version validates non-boolean resource/version integers, parent/source/semantic-map hashes, non-increasing declared resources, and emits certificate plus parent hashes and absolute resource counts"
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE.TXT - .ZIP File Format Specification",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "version": "6.3.10 FINAL",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-28",
+      "locator": "sections 4.3.6, 4.3.14-4.3.16",
+      "use": "synthetic ZIP64 record order, field widths, and locator fixture only",
+      "evidence_class": "PRIMARY_SPECIFICATION"
+    },
+    {
+      "title": "Python 3.14.6 os module documentation",
+      "url": "https://docs.python.org/3/library/os.html",
+      "source_date": "accessed 2026-09-28",
+      "locator": "os.replace",
+      "use": "same-filesystem atomic replacement behavior is tested locally; no cache or power-loss inference",
+      "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"
+    },
+    {
+      "title": "Python 3.14 tempfile module documentation",
+      "url": "https://docs.python.org/3/library/tempfile.html",
+      "source_date": "accessed 2026-09-28",
+      "locator": "tempfile.mkstemp",
+      "use": "same-directory unique exclusive temporary staging name for concurrent local writer fixture",
+      "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"
+    },
+    {
+      "title": "NIST SP 330, The International System of Units, Section 2",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "source_date": "accessed 2026-09-28",
+      "locator": "seven SI base quantities and derived-unit relations",
+      "use": "ordered dimension basis for synthetic unit-consistency checks only",
+      "evidence_class": "PRIMARY_METROLOGY_REFERENCE"
+    },
+    {
+      "title": "UQPU unified mathematical language and discovery ledger",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/research/cycle-013-delta-01-2026-09-28/00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+      "source_revision": "707750fb4bec7d701d2c6c35f155c3e381c72b00",
+      "access_date": "2026-09-28",
+      "locator": "lines 397-412, UMRL-031",
+      "use": "rational quantity tuple and real/fiction sort boundary",
+      "evidence_class": "PROJECT_CANONICAL_INTERFACE"
+    }
+  ],
+  "assumptions": [
+    "All data fixtures are synthetic unless SCM is explicitly marked fiction-only.",
+    "The SI vector order is [length, mass, time, electric current, thermodynamic temperature, amount of substance, luminous intensity].",
+    "Sparse covariance omissions are accepted as zero only when explicitly enumerated in structural_zero_pairs and the full upper triangle is covered.",
+    "The covariance PSD numerical tolerance applies to eigenvalues after max-absolute-value normalization; this is a bounded software gate, not a metrology uncertainty analysis.",
+    "Only explicitly marked stale-temp namespace files are swept; independently crashed writer temps require a separate age/lease policy and are not deleted as presumed stale.",
+    "Held-out priority shocks are illustrative model inputs and do not estimate project economics."
+  ],
+  "evidence_boundary": "No QPU/GPU performance, paid provider execution, physical material/device measurement, lifecycle economics, new physical law, capital authorization, or empirical spiritual communication is claimed."
+}

@@ -1,0 +1,200 @@
+{
+  "schema": "uqpu-cycle013-delta01-executable-acceptance-v1",
+  "cycle": "013",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-013-delta-01-2026-09-28",
+  "base_closeout": "707750fb4bec7d701d2c6c35f155c3e381c72b00",
+  "evidence_class": "LOCAL_SYNTHETIC_AND_FICTION_ONLY",
+  "lane_count": 12,
+  "status": "PASS_LOCAL",
+  "source_sha256": {
+    "preregistered_gates": "233ceaa4b43f645727cd4835146391e714668c805a69d0e62834bdd7fba83019",
+    "module": "1a64ef1ed6f977791ef5fd0b0cc5cc91ae671bc40cef3cefa07d636939f75fd0",
+    "tests": "00bc1275a731d8b0fa4fa20b6fb74e2dc1e4c6ca50dc9b7794fbf99f6619b1b9",
+    "runner": "082348883a766e7d51d577f9174cf2d8384563aafaea74015aa1d0c4657b9a5a",
+    "umrl_source": "e2845cfa3676aab1169351e71cf9ab244b9c478f5010840943862806b95d5174"
+  },
+  "lanes": {
+    "A": {
+      "graph": {
+        "states": 32,
+        "best_cut_weight": 18,
+        "optimal_state_set_sha256": "9e2fc64b6bf2097f840c11932e2294bc97e4efd47074518004911605c6898e9e",
+        "graph_sha256": "9213eddd3a10d78f584a6f49b23cef3cb66ceac72cec3d3742ddab7585848c4b",
+        "restart_sha256": "2a749346e34fd8dd59502a0a22c25632823df8df6e3216db5365f83cd2785ad3"
+      },
+      "cap_boundary": {
+        "states": 1024,
+        "accepted": true
+      }
+    },
+    "B": {
+      "schema": "v4",
+      "binding_sha256": "da729ad3684254eea9e1cf2b27e3bb083a16e5e07b9bf124da0db4126aeff372",
+      "canonical": true
+    },
+    "C": {
+      "visible_sha256": "6f6d58420e1bce5d380b5aa2f7478bf25e91b1609e3cffbd0d7669fdbe5d348e",
+      "stale_temps_removed": 0,
+      "temp_removed": true,
+      "cache_state": "UNCONTROLLED",
+      "durability": "PROCESS_LOCAL_ONLY",
+      "status": "PUBLISHED_NEW_PAYLOAD"
+    },
+    "D": {
+      "entries": 3,
+      "central_directory_bytes": 60,
+      "status": "VALID_SYNTHETIC_ZIP64_LAYOUT",
+      "payload_read": false
+    },
+    "E": {
+      "event_hashes": [
+        "d78fc3c17fea16f880ccf6a2faccfb3fd58e4b12bb345e932008ebed22ff7533"
+      ],
+      "issuer_scope_bound": true
+    },
+    "F": {
+      "component_count": 5,
+      "total_usd_interval": [
+        7,
+        12
+      ],
+      "per_accepted_output_usd": [
+        3.5,
+        6.0
+      ],
+      "aggregate_variance_usd2_model": 5.2,
+      "covariance_complete": true,
+      "evidence_class": "MODEL_ONLY"
+    },
+    "G": {
+      "measurands": 4,
+      "basis_order": [
+        "L",
+        "M",
+        "T",
+        "I",
+        "Theta",
+        "N",
+        "J"
+      ],
+      "certificate_sha256": "fe67763c4c91a1dfdd9a72c6373227c35733094ef82b681f858aefdbf9c4b9bd",
+      "status": "SYNTHETIC_VALID"
+    },
+    "H": {
+      "baseline_order": [
+        "provider",
+        "state-prep",
+        "readout"
+      ],
+      "heldout_orders": [
+        [
+          "provider",
+          "state-prep",
+          "readout"
+        ],
+        [
+          "state-prep",
+          "readout",
+          "provider"
+        ]
+      ],
+      "conditional_order_stability": 0.5,
+      "correlation_sha256": "29af7d42114edec04e480180220393af08127317c74604fff2f109ba19b881ec",
+      "evidence_class": "ILLUSTRATIVE_CORRELATED_SCENARIO",
+      "capital": null
+    },
+    "FND/EQN": {
+      "id": "FND-EQN-013-SYN-01",
+      "interval": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "kind": "bounded_interval",
+      "unit": "1",
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "domain_sort": "RealModel",
+      "source_locator": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md:397-412#UMRL-031",
+      "source_sha256": "e2845cfa3676aab1169351e71cf9ab244b9c478f5010840943862806b95d5174",
+      "evidence": "DECLARATION_ONLY"
+    },
+    "SCM": {
+      "active_consent_ids": [
+        "c2"
+      ],
+      "revoked_ids": [
+        "c1"
+      ],
+      "fiction_only": true,
+      "empirical_coupling": null
+    },
+    "AI-COST": {
+      "version": 3,
+      "parent_source_sha256": "e77134697520a89bdaa8dbe2f0ce0292767c6aeec1a6851ab7a1aa5b839ca587",
+      "source_sha256": "975101db295609f32c73ade176a8973ddbec4aeef02081e59111db9d666e3242",
+      "split_hashes": {
+        "test": "37d3ad69a89d044e6291d3cf62c85e6dfa8b26f4d1e0528919f52332346baec4",
+        "train": "38edd8d1053fa194abe91a007ebea08774cc2f77ab3811ce470d24e304f14e88",
+        "validation": "94de4f6986f4df5c9fd6e1baaae0c7e558fa56447e38494888e3924c4b070d64"
+      },
+      "metrics": {
+        "train": {
+          "loss": 1.0
+        },
+        "validation": {
+          "loss": 1.1
+        },
+        "test": {
+          "loss": 1.2
+        }
+      },
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE"
+    },
+    "QOS/QSVT": {
+      "version": 3,
+      "certificate_sha256": "7ae7b7bf071b4d3a96ad41eb0fd5679c5366d6239483ca44667a8487adf5d427",
+      "parent_certificate_sha256": "0aedf793223daab4ca21cd0db1d7dd1aaea4d30d2b54aeb3a8f51eb851cd18a6",
+      "resources": {
+        "qubits": 6,
+        "bits": 6,
+        "depth": 16,
+        "gates": 34
+      },
+      "resource_delta": {
+        "depth": -2,
+        "gates": -4
+      },
+      "source_sha256": "579671c2007ef8fec9d01e455b505d1ba94279b9f22a49f0bccd8106937b198d",
+      "map_sha256": "70a401146df27724d92a87107cb8a11c58adcef15191581c041a3dfb86736f37",
+      "hardware": null,
+      "evidence_class": "ER6_SYNTHETIC_CERTIFICATE"
+    }
+  },
+  "nonclaims": [
+    "no QPU or GPU result",
+    "no provider execution or bill",
+    "no measured material, device, or lifecycle cost",
+    "no new physical law or hardware advantage",
+    "SCM remains fiction-only; empirical coupling is null",
+    "priority and cost intervals are model/synthetic outputs only"
+  ],
+  "payload_sha256": "0ac676a97f0ce0d224ea703c58c7d4924680e5d0c3efeef2d35de9870d7bc4f5"
+}
