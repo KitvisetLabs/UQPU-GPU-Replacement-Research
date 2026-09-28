@@ -1,0 +1,91 @@
+{
+  "schema": "uqpu-cycle022-delta01-preregistered-gates-v1",
+  "cycle": "022",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-022-delta-01-2026-09-28",
+  "base_cycle021_closeout_sha": "75817b5eea9465466237317c52f12dc44a908fd8",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {
+    "status": "BLOCKED_WITH_PROGRESS",
+    "unmeasured_values": null,
+    "fiction_empirical_cast": "prohibited"
+  },
+  "lanes": {
+    "A": {
+      "action": "Second 11-node edge perturbation with full optimum witness-set comparison across changed/unchanged edges.",
+      "acceptance": "Exact 2,048-state enumeration; no scaling claim."
+    },
+    "B": {
+      "action": "Nested receipt key rotation/revocation and duplicate Unicode-key controls.",
+      "acceptance": "Canonical bytes and ambiguous-key rejection; external provider fields null."
+    },
+    "C": {
+      "action": "Repeat process-exit cleanup with alternating targets and active-name collisions.",
+      "acceptance": "Complete old/new visible bytes; no crash durability."
+    },
+    "D": {
+      "action": "Bind ZIP64 descriptor CRC/sizes under reordered extension fields and duplicate-ID negatives.",
+      "acceptance": "Reject malformed metadata before payload read."
+    },
+    "E": {
+      "action": "Multi-event issuer rotation at exact validity start and expiry boundaries.",
+      "acceptance": "Terminal digest and half-open date checks; physical sample null."
+    },
+    "F": {
+      "action": "Seven-component covariance endpoint grid with missing/indefinite/non-finite and output-count controls.",
+      "acceptance": "Counts 1/2/4/0; invalid/null denominators null; model only."
+    },
+    "G": {
+      "action": "Four-measurand unit-conversion ratio mutation and covariance order/source hashing.",
+      "acceptance": "Pairwise product units, symmetry/PSD; calibration null."
+    },
+    "H": {
+      "action": "Seventh ranking alternative with exhaustive candidate-order enumeration.",
+      "acceptance": "Finite grid only; no probability or capital interpretation."
+    },
+    "FND/EQN": {
+      "action": "Exact rational interval reciprocal and cancellation under source-bound conversion path.",
+      "acceptance": "Exact endpoints; incompatible dimensions/source mismatch reject; no law claim."
+    },
+    "SCM": {
+      "action": "Fiction-only scoped nonce replacement followed by revocation before replay.",
+      "acceptance": "Replay/revocation fail closed; empirical coupling null."
+    },
+    "AI-COST": {
+      "action": "Synthetic v12 lineage tests for reordered splits and parent digest mutation.",
+      "acceptance": "Source/split/metric/config hashes bind; candidate/equivalence null without real evaluation."
+    },
+    "QOS/QSVT": {
+      "action": "Second non-commuting operator/inverse circuit with independent resource bound.",
+      "acceptance": "Exact 64-state reconstruction and residual; hardware null."
+    }
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-28",
+      "locator": "§§4.3.7, 4.3.9, 4.3.12",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "All numeric, receipt, custody, ranking, lineage and operator inputs are fixtures/models/fiction.",
+    "Filesystem evidence is process-level only."
+  ],
+  "uncertainty": "External provider, crash durability, real archive corpus, operational custody, measured covariance/calibration, owner priorities, independent derivation, AI equivalence and hardware evidence remain open.",
+  "nonclaims": [
+    "No hardware performance/advantage claim.",
+    "No provider authorization, invoice, commercial or capital result.",
+    "No crash/power-loss durability, physical sample, calibration, new law or empirical SCM claim."
+  ],
+  "next_falsifiable_gate": "Implement and test all twelve lane deltas; publish source-hashed executable acceptance and exact-SHA Actions."
+}
