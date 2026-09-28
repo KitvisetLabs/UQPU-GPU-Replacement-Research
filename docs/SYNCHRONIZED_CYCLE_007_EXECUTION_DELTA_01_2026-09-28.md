@@ -53,3 +53,18 @@ All evidence reviewed here is repository-primary, at the checked base commit abo
 - `docs/SYNCHRONIZED_CYCLE_006_EXECUTION_DELTA_01_2026-09-28.md` and `benchmarks/results/cycle006-delta01-synchronized-lane-ledger.json` — Cycle 006 evidence, blockers, and non-claims.
 - GitHub Actions run #498: https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36406238185 (8 jobs passed on `caabf3ec0aeaf9eab0e2952d3b665d3753aea348`).
 
+
+## Checkpoint 02 — typed-math schema audit
+
+**Checked parent:** `c37090ac41aef28cdcf8073e43f1132e5786c067` on the Cycle 007 branch.
+**State:** Cycle 007 remains active; local verification passed and exact-commit GitHub Actions is pending publication.
+
+A reproducible validator and negative tests now inventory the UMRL and SCM mathematical registries. They contain 30 UMRL equations, 23 goal contracts, 19 SCM equations, and 134 equation-variable declarations. All 134 declarations carry descriptive `unit_or_type` text, while zero have machine-readable `quantity_kind`, canonical `unit_code`, or `dimension_vector` fields. The audit therefore establishes a schema gap that prevents dimensional-balance checking; it does not find an unbalanced equation. Lane-attributed counts can overlap where an equation has multiple owners; global counts above are registry counts.
+
+The validator accepts only exact rational exponents when a dimension vector is provided and refuses to infer dimensions from free text. It keeps physical quantities, information, currency, categories, states, and fictional SCM variables distinct until explicitly classified. The findings and per-lane counts are in `benchmarks/results/cycle007-delta01-umrl-dimension-audit.json`; the synchronized ledger retains both the first protocol checkpoint and this audit.
+
+- Cycle 007 focused tests: **5 passed**.
+- Full prototype suite: **444 passed, 8 optional-environment skips**.
+- The changed validator/test/example paths match the workflow's push filter. Check the Actions result for the exact published commit before cycle closeout.
+
+No equation dimensional consistency, new physical law, hardware performance, provider economics, or real-world SCM effect is claimed. This checkpoint does not close Cycle 007. Remaining Cycle 007 work includes implementing and testing the other lane-specific acceptance cases and then recording the complete closeout and Cycle 008 handoff.

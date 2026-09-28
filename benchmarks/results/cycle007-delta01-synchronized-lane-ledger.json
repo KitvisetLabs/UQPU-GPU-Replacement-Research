@@ -1,106 +1,320 @@
 {
-  "schema": "uqpu-cycle007-delta01-synchronized-lane-ledger-v1",
-  "date": "2026-09-28",
-  "cycle": "007",
-  "delta": "01",
-  "base_commit": "90d32285c8991afef7f2a6285f42d78d6d6ae71e",
-  "status": "CHECKPOINT_ALL_12_LANES_BLOCKED_WITH_PROGRESS_NO_EVIDENCE_PROMOTION",
-  "lane_count": 12,
-  "lanes": {
-    "A": {
-      "progress": "Froze separate exact-completion, cap, incumbent, and heuristic fields plus second-fixture acceptance.",
-      "evidence_class": "PROTOCOL_SPECIFICATION",
-      "remaining_gate": "Implement bounded solver and fixture; compare a competitive classical baseline.",
-      "status": "BLOCKED_WITH_PROGRESS"
+  "audit_artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+  "audit_artifact_sha256": "ea6fc3392c6dbd3a9434244f6576b6a07349d0aab06f2385a8292647f986c2be",
+  "audit_counts": {
+    "dimensional_consistency_claim": false,
+    "equation_count": {
+      "scm": 19,
+      "umrl": 30
     },
-    "B": {
-      "progress": "Froze request/receipt mutation matrix and null physical-field rule.",
-      "evidence_class": "SCHEMA_GATE_SPECIFICATION",
-      "remaining_gate": "Provider credentials, bounded authorization, real receipt and matching bill absent.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "C": {
-      "progress": "Specified fresh-process repetition record and capability report; unsupported cache controls cannot be inferred.",
-      "evidence_class": "MEASUREMENT_PROTOCOL_SPECIFICATION",
-      "remaining_gate": "No new cache, persistence, power-loss or service-durability measurement.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "D": {
-      "progress": "Specified source/range/byte-count/archive/member-hash/payload-read provenance chain.",
-      "evidence_class": "DATA_PROVENANCE_GATE_SPECIFICATION",
-      "remaining_gate": "Independent checksum/content-range verification and payload analysis remain open.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "E": {
-      "progress": "Specified synthetic cross-lot, issuer/reviewer, method-scope and expiry negatives.",
-      "evidence_class": "SYNTHETIC_TEST_SPECIFICATION",
-      "remaining_gate": "No sample, property measurement, fabrication, purchase or compliance result.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "F": {
-      "progress": "Specified rejection gates for invalid quantities, currency/unit mismatch, mismatched receipt and missing accepted-output denominator.",
-      "evidence_class": "COST_LEDGER_GATE_SPECIFICATION",
-      "remaining_gate": "No real lifecycle total or cost/useful-output; RG028 remains open.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "G": {
-      "progress": "Specified synthetic custody-DAG cases for missing predecessor, duplicate event, expired calibration and unmatched control.",
-      "evidence_class": "SYNTHETIC_CUSTODY_TEST_SPECIFICATION",
-      "remaining_gate": "No physical custody, sample, certificate, uncertainty budget or control.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "H": {
-      "progress": "Specified fail-closed authorization conjunction; unresolved prerequisites force NOT_AUTHORIZED and null amount.",
-      "evidence_class": "GOVERNANCE_LOGIC_SPECIFICATION",
-      "remaining_gate": "No capital decision or authorization.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "FND/EQN": {
-      "progress": "Specified typed dimensional-check fields for each UMRL equation reference.",
-      "evidence_class": "MATHEMATICAL_VALIDATION_SPECIFICATION",
-      "remaining_gate": "No equation-level proof of dimensional validity, novelty or physical truth.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "SCM": {
-      "progress": "Specified ontology/equation links, explicit real-null type, and mandatory consent/safety predicates.",
-      "evidence_class": "FICTIONAL_ONTOLOGY_AND_PROTOCOL_SPECIFICATION",
-      "remaining_gate": "No empirical spiritual-source evidence; no human study authorized.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "AI-COST": {
-      "progress": "Specified deterministic generator replay and hash-mismatch rejection before scoring.",
-      "evidence_class": "DATASET_REPLAY_GATE_SPECIFICATION",
-      "remaining_gate": "No candidate model run, quality, energy or service-cost result.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "QOS/QSVT": {
-      "progress": "Specified AST mutation negatives and measurement-map invariance within the frozen ER6 subset.",
-      "evidence_class": "SYNTHESIS_TEST_SPECIFICATION",
-      "remaining_gate": "No general grammar proof, provider transpile or hardware execution.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    }
+    "goal_count": 23,
+    "invalid_machine_dimension_vector_count": 0,
+    "lane_count": 12,
+    "machine_dimension_vector_count": 0,
+    "machine_dimension_vector_coverage": 0.0,
+    "quantity_kind_count": 0,
+    "unit_code_count": 0,
+    "unit_or_type_present_count": 134,
+    "valid_machine_dimension_vector_count": 0,
+    "variable_declaration_count": 134
   },
+  "base_commit": "90d32285c8991afef7f2a6285f42d78d6d6ae71e",
   "cross_lane_integration": [
     "A/B/C/F/AI-COST/QOS share accepted-output and provenance contract.",
     "D/E/G share custody, sample identity, method scope, and calibration gates.",
     "FND/EQN/SCM/H share typed claims, explicit uncertainty and fail-closed authorization; fictional and empirical evidence remain disjoint."
   ],
-  "verification": {
-    "ledger_structure": "PASS",
-    "lane_coverage": "12/12",
-    "repository_test_suite": "NOT_RUN",
-    "github_actions_expected": "NO_RUN_PATHS_OUTSIDE_PUSH_FILTERS",
-    "latest_base_ci": {
-      "run": 498,
-      "conclusion": "success",
-      "head_sha": "caabf3ec0aeaf9eab0e2952d3b665d3753aea348"
+  "cycle": "007",
+  "date": "2026-09-28",
+  "delta": "01",
+  "full_cycle_closeout_pending": true,
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "PROTOCOL_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Froze separate exact-completion, cap, incumbent, and heuristic fields plus second-fixture acceptance. Typed-math schema audit: Cross-lane typed-math audit covered 20 UMRL equations and 52 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 52 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "Implement bounded solver and fixture; compare a competitive classical baseline. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 20,
+        "umrl_variable_declarations": 52,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 52
     },
+    "AI-COST": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "DATASET_REPLAY_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified deterministic generator replay and hash-mismatch rejection before scoring. Typed-math schema audit: Cross-lane typed-math audit covered 12 UMRL equations and 32 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 32 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No candidate model run, quality, energy or service-cost result. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 12,
+        "umrl_variable_declarations": 32,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 32
+    },
+    "B": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "SCHEMA_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Froze request/receipt mutation matrix and null physical-field rule. Typed-math schema audit: Cross-lane typed-math audit covered 12 UMRL equations and 29 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 29 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "Provider credentials, bounded authorization, real receipt and matching bill absent. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 12,
+        "umrl_variable_declarations": 29,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 29
+    },
+    "C": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "MEASUREMENT_PROTOCOL_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified fresh-process repetition record and capability report; unsupported cache controls cannot be inferred. Typed-math schema audit: Cross-lane typed-math audit covered 16 UMRL equations and 43 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 43 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No new cache, persistence, power-loss or service-durability measurement. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 16,
+        "umrl_variable_declarations": 43,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 43
+    },
+    "D": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "DATA_PROVENANCE_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified source/range/byte-count/archive/member-hash/payload-read provenance chain. Typed-math schema audit: Cross-lane typed-math audit covered 15 UMRL equations and 42 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 42 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "Independent checksum/content-range verification and payload analysis remain open. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 15,
+        "umrl_variable_declarations": 42,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 42
+    },
+    "E": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "SYNTHETIC_TEST_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified synthetic cross-lot, issuer/reviewer, method-scope and expiry negatives. Typed-math schema audit: Cross-lane typed-math audit covered 19 UMRL equations and 51 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 51 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No sample, property measurement, fabrication, purchase or compliance result. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 19,
+        "umrl_variable_declarations": 51,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 51
+    },
+    "F": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "COST_LEDGER_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified rejection gates for invalid quantities, currency/unit mismatch, mismatched receipt and missing accepted-output denominator. Typed-math schema audit: Cross-lane typed-math audit covered 27 UMRL equations and 71 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 71 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No real lifecycle total or cost/useful-output; RG028 remains open. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 27,
+        "umrl_variable_declarations": 71,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 71
+    },
+    "FND/EQN": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "MATHEMATICAL_VALIDATION_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified typed dimensional-check fields for each UMRL equation reference. Typed-math schema audit: Cross-lane typed-math audit covered 11 UMRL equations and 30 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 30 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No equation-level proof of dimensional validity, novelty or physical truth. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 11,
+        "umrl_variable_declarations": 30,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 30
+    },
+    "G": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "SYNTHETIC_CUSTODY_TEST_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified synthetic custody-DAG cases for missing predecessor, duplicate event, expired calibration and unmatched control. Typed-math schema audit: Cross-lane typed-math audit covered 13 UMRL equations and 35 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 35 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No physical custody, sample, certificate, uncertainty budget or control. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 13,
+        "umrl_variable_declarations": 35,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 35
+    },
+    "H": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "GOVERNANCE_LOGIC_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified fail-closed authorization conjunction; unresolved prerequisites force NOT_AUTHORIZED and null amount. Typed-math schema audit: Cross-lane typed-math audit covered 16 UMRL equations and 44 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 44 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No capital decision or authorization. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 16,
+        "umrl_variable_declarations": 44,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 44
+    },
+    "QOS/QSVT": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "SYNTHESIS_TEST_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified AST mutation negatives and measurement-map invariance within the frozen ER6 subset. Typed-math schema audit: Cross-lane typed-math audit covered 9 UMRL equations and 25 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 25 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No general grammar proof, provider transpile or hardware execution. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 0,
+        "scm_variable_declarations": 0,
+        "umrl_equations": 9,
+        "umrl_variable_declarations": 25,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 25
+    },
+    "SCM": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "FICTIONAL_ONTOLOGY_AND_PROTOCOL_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+      "machine_dimension_vectors": 0,
+      "progress": "Specified ontology/equation links, explicit real-null type, and mandatory consent/safety predicates. Typed-math schema audit: Cross-lane typed-math audit covered 3 UMRL equations and 10 UMRL variable declarations assigned to this lane; SCM adds 19 equations and 55 variable declarations on the SCM lane. All 65 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "quantity_kinds": 0,
+      "remaining_gate": "No empirical spiritual-source evidence; no human study authorized. Classify fictional state, narrative cost and information types separately from empirical physical quantities; keep the real-world g_SR=0 firewall and do not assign physical dimensions to a fictional mechanism without an explicit model.",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "typed_math_audit": {
+        "machine_dimension_vectors": 0,
+        "quantity_kinds": 0,
+        "scm_equations": 19,
+        "scm_variable_declarations": 55,
+        "umrl_equations": 3,
+        "umrl_variable_declarations": 10,
+        "unit_codes": 0
+      },
+      "unit_codes": 0,
+      "unit_or_type_present": 65
+    }
+  },
+  "next_falsifiable_gate": "Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+  "publication_parent_commit": "c37090ac41aef28cdcf8073e43f1132e5786c067",
+  "schema": "uqpu-cycle007-delta01-synchronized-lane-ledger-v1",
+  "status": "IN_PROGRESS_CHECKPOINT_02_TYPED_MATH_AUDIT",
+  "validation": {
+    "cycle007_focused_tests": {
+      "passed": 5,
+      "skipped": 0
+    },
+    "full_prototype_suite": {
+      "passed": 444,
+      "skipped_optional": 8
+    },
+    "lane_coverage": "12/12",
+    "ledger_structure": "PASS",
+    "status": "LOCAL_PASS_GITHUB_ACTIONS_PENDING"
+  },
+  "verification": {
+    "checkpoint_02_parent_ci": {
+      "commit": "c37090ac41aef28cdcf8073e43f1132e5786c067",
+      "workflow_status": "NO_RUN_EXPECTED_FOR_PRIOR_DOCS_ONLY_CHECKPOINT"
+    },
+    "cycle007_focused_tests": {
+      "passed": 5,
+      "skipped": 0
+    },
+    "full_prototype_suite": {
+      "passed": 444,
+      "skipped_optional": 8
+    },
+    "github_actions_expected": "RUN_REQUIRED_FOR_CHECKPOINT_02_SOFTWARE_PATHS",
+    "lane_coverage": "12/12",
+    "latest_base_ci": {
+      "conclusion": "success",
+      "head_sha": "caabf3ec0aeaf9eab0e2952d3b665d3753aea348",
+      "run": 498
+    },
+    "ledger_structure": "PASS",
     "nonclaims": [
       "No measured hardware or provider execution/billing.",
       "No material property, fabrication yield, or lifecycle economic result.",
       "No independent reproduction, new physical law, quantum advantage, or GPU replacement.",
       "No empirical spiritual-source channel."
-    ]
-  },
-  "next_falsifiable_gate": "Implement the specified acceptance and negative cases in canonical validators; rerun applicable local tests and GitHub Actions for exact pushed commit."
+    ],
+    "repository_test_suite": "PASS_444_WITH_8_OPTIONAL_SKIPS"
+  }
 }

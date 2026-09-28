@@ -1,0 +1,2160 @@
+{
+  "cycle": "007",
+  "delta": "01",
+  "dimensional_consistency_claim": false,
+  "dimensionally_auditable": false,
+  "equation_count": {
+    "scm": 19,
+    "umrl": 30
+  },
+  "errors": [],
+  "evidence_class": "STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
+  "finding": "Free-text unit_or_type labels cover the declarations but do not supply machine-readable quantity kinds or dimension vectors. Do not infer dimensional balance until quantity kinds distinguish physical quantities from states, categories, records, information and fictional model variables.",
+  "goal_count": 23,
+  "invalid_machine_dimension_vector_count": 0,
+  "lane_audit": {
+    "A": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 20,
+      "umrl_variables": 52,
+      "unit_codes": 0,
+      "unit_or_type_present": 52
+    },
+    "AI-COST": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 12,
+      "umrl_variables": 32,
+      "unit_codes": 0,
+      "unit_or_type_present": 32
+    },
+    "B": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 12,
+      "umrl_variables": 29,
+      "unit_codes": 0,
+      "unit_or_type_present": 29
+    },
+    "C": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 16,
+      "umrl_variables": 43,
+      "unit_codes": 0,
+      "unit_or_type_present": 43
+    },
+    "D": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 15,
+      "umrl_variables": 42,
+      "unit_codes": 0,
+      "unit_or_type_present": 42
+    },
+    "E": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 19,
+      "umrl_variables": 51,
+      "unit_codes": 0,
+      "unit_or_type_present": 51
+    },
+    "F": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 27,
+      "umrl_variables": 71,
+      "unit_codes": 0,
+      "unit_or_type_present": 71
+    },
+    "FND/EQN": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 11,
+      "umrl_variables": 30,
+      "unit_codes": 0,
+      "unit_or_type_present": 30
+    },
+    "G": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 13,
+      "umrl_variables": 35,
+      "unit_codes": 0,
+      "unit_or_type_present": 35
+    },
+    "H": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 16,
+      "umrl_variables": 44,
+      "unit_codes": 0,
+      "unit_or_type_present": 44
+    },
+    "QOS/QSVT": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 0,
+      "scm_variables": 0,
+      "umrl_equations": 9,
+      "umrl_variables": 25,
+      "unit_codes": 0,
+      "unit_or_type_present": 25
+    },
+    "SCM": {
+      "machine_dimension_vectors": 0,
+      "quantity_kinds": 0,
+      "scm_equations": 19,
+      "scm_variables": 55,
+      "umrl_equations": 3,
+      "umrl_variables": 10,
+      "unit_codes": 0,
+      "unit_or_type_present": 65
+    }
+  },
+  "lane_count": 12,
+  "machine_dimension_vector_count": 0,
+  "machine_dimension_vector_coverage": 0.0,
+  "next_gate": "Define quantity_kind and a canonical unit registry; then annotate only dimensional quantities with exact rational exponent vectors and add equation-level balance rules.",
+  "project_dimension_basis": [
+    "length",
+    "mass",
+    "time",
+    "electric_current",
+    "temperature",
+    "amount_of_substance",
+    "luminous_intensity",
+    "currency",
+    "information",
+    "count"
+  ],
+  "quantity_kind_count": 0,
+  "schema": "uqpu-cycle007-delta01-dimension-contract-audit-v1",
+  "source_registries": {
+    "benchmarks/experiments/cycle006-delta01-scm-lokathibodi-math-registry.json": "97ac82df2ad047ac2a563083864c1b69d973b3c1928ec8be65a5758253f694f5",
+    "benchmarks/experiments/cycle006-delta01-unified-math-goal-registry.json": "14fbbb0c327020b21e63766fe652967f87052716ab0114402fd9cfb84cdfa6be"
+  },
+  "unit_code_count": 0,
+  "unit_or_type_coverage": 1.0,
+  "unit_or_type_present_count": 134,
+  "valid_machine_dimension_vector_count": 0,
+  "valid_registry_structure": true,
+  "variable_declaration_count": 134,
+  "variable_declarations": [
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-001",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Gamma",
+      "unit_code_present": false,
+      "unit_or_type": "provenance graph"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-001",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "c",
+      "unit_code_present": false,
+      "unit_or_type": "typed proposition"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-001",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "tau",
+      "unit_code_present": false,
+      "unit_or_type": "enumeration"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-002",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "x",
+      "unit_code_present": false,
+      "unit_or_type": "system"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-002",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "cl(x)",
+      "unit_code_present": false,
+      "unit_or_type": "set of resource nodes"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-003",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "R_r",
+      "unit_code_present": false,
+      "unit_or_type": "resource-specific SI or currency unit"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-003",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "omega",
+      "unit_code_present": false,
+      "unit_or_type": "scenario"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-004",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "y_wk",
+      "unit_code_present": false,
+      "unit_or_type": "metric-specific"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-004",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "b_wk",
+      "unit_code_present": false,
+      "unit_or_type": "same as y_wk"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-004",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "u_wk",
+      "unit_code_present": false,
+      "unit_or_type": "same as y_wk"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-005",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "A_w",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-005",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Q_w",
+      "unit_code_present": false,
+      "unit_or_type": "set of Booleans"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-006",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "N_acc",
+      "unit_code_present": false,
+      "unit_or_type": "count"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-006",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "o_i",
+      "unit_code_present": false,
+      "unit_or_type": "output record"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-007",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "T_acc",
+      "unit_code_present": false,
+      "unit_or_type": "accepted outputs per second"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-007",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "c_acc",
+      "unit_code_present": false,
+      "unit_or_type": "currency per accepted output"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-007",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "e_acc",
+      "unit_code_present": false,
+      "unit_or_type": "joule per accepted output"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-008",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "N_eq",
+      "unit_code_present": false,
+      "unit_or_type": "units"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-008",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "v_k(x)",
+      "unit_code_present": false,
+      "unit_or_type": "capability-specific"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-008",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "v_jk",
+      "unit_code_present": false,
+      "unit_or_type": "same as v_k"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-009",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "G_C",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless ratio"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-009",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "c_acc",
+      "unit_code_present": false,
+      "unit_or_type": "matched currency per accepted output"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-010",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "PhoneReady",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-010",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "V",
+      "unit_code_present": false,
+      "unit_or_type": "m^3"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-010",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "M",
+      "unit_code_present": false,
+      "unit_or_type": "kg"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-010",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Price",
+      "unit_code_present": false,
+      "unit_or_type": "THB"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-011",
+      "owners": [
+        "A",
+        "B",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Pi(t)",
+      "unit_code_present": false,
+      "unit_or_type": "five dimensionless fractions"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-011",
+      "owners": [
+        "A",
+        "B",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "P(t)",
+      "unit_code_present": false,
+      "unit_or_type": "date-stamped set"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-012",
+      "owners": [
+        "A",
+        "B",
+        "F",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "d_w",
+      "unit_code_present": false,
+      "unit_or_type": "metric"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-012",
+      "owners": [
+        "A",
+        "B",
+        "F",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "epsilon_w",
+      "unit_code_present": false,
+      "unit_or_type": "same as d_w"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-013",
+      "owners": [
+        "A",
+        "C",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "O_w",
+      "unit_code_present": false,
+      "unit_or_type": "observable map"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-013",
+      "owners": [
+        "A",
+        "C",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "F",
+      "unit_code_present": false,
+      "unit_or_type": "state map"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-014",
+      "owners": [
+        "A",
+        "C",
+        "FND/EQN"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "B_out",
+      "unit_code_present": false,
+      "unit_or_type": "bit"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-014",
+      "owners": [
+        "A",
+        "C",
+        "FND/EQN"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Y",
+      "unit_code_present": false,
+      "unit_or_type": "finite set"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-015",
+      "owners": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "epsilon_total",
+      "unit_code_present": false,
+      "unit_or_type": "contract metric"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-015",
+      "owners": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "epsilon_component",
+      "unit_code_present": false,
+      "unit_or_type": "same metric or proved compatible norm"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-016",
+      "owners": [
+        "A",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "P_d",
+      "unit_code_present": false,
+      "unit_or_type": "real polynomial"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-016",
+      "owners": [
+        "A",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "f",
+      "unit_code_present": false,
+      "unit_or_type": "real function"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-016",
+      "owners": [
+        "A",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "epsilon",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless or target-function unit"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-017",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "r_D",
+      "unit_code_present": false,
+      "unit_or_type": "typed metric vector"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-017",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "m_E",
+      "unit_code_present": false,
+      "unit_or_type": "typed property vector"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-017",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "z_G",
+      "unit_code_present": false,
+      "unit_or_type": "typed process vector"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-017",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Y_G",
+      "unit_code_present": false,
+      "unit_or_type": "probability"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-018",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "C_qualified",
+      "unit_code_present": false,
+      "unit_or_type": "currency per qualified device"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-018",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "N_sites",
+      "unit_code_present": false,
+      "unit_or_type": "count"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-018",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Y_G",
+      "unit_code_present": false,
+      "unit_or_type": "probability"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-019",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Delta_M_a",
+      "unit_code_present": false,
+      "unit_or_type": "kg per accepted functional unit"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-019",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "M_a",
+      "unit_code_present": false,
+      "unit_or_type": "kg per accepted functional unit"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-020",
+      "owners": [
+        "E",
+        "F",
+        "FND/EQN",
+        "G"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "m",
+      "unit_code_present": false,
+      "unit_or_type": "kg"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-021",
+      "owners": [
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "c_fuel",
+      "unit_code_present": false,
+      "unit_or_type": "currency per joule"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-021",
+      "owners": [
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "m_accepted",
+      "unit_code_present": false,
+      "unit_or_type": "kg"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-021",
+      "owners": [
+        "E",
+        "F",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "H_LHV",
+      "unit_code_present": false,
+      "unit_or_type": "joule per kg"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-022",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "P_net",
+      "unit_code_present": false,
+      "unit_or_type": "watt"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-022",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "P_fusion",
+      "unit_code_present": false,
+      "unit_or_type": "watt"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-022",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "eta_conversion",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-023",
+      "owners": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "LCOE_net",
+      "unit_code_present": false,
+      "unit_or_type": "currency per joule or MWh"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-023",
+      "owners": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "r",
+      "unit_code_present": false,
+      "unit_or_type": "per year"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-023",
+      "owners": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "E_net_delivered",
+      "unit_code_present": false,
+      "unit_or_type": "joule or MWh"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-024",
+      "owners": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "I_absolute",
+      "unit_code_present": false,
+      "unit_or_type": "currency"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-024",
+      "owners": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "D(t)",
+      "unit_code_present": false,
+      "unit_or_type": "currency"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-024",
+      "owners": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "r(t)",
+      "unit_code_present": false,
+      "unit_or_type": "per unit time"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-025",
+      "owners": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "S",
+      "unit_code_present": false,
+      "unit_or_type": "random variable"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-025",
+      "owners": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Y",
+      "unit_code_present": false,
+      "unit_or_type": "random variable"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-025",
+      "owners": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "X",
+      "unit_code_present": false,
+      "unit_or_type": "random vector"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-025",
+      "owners": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "I(S;Y|X)",
+      "unit_code_present": false,
+      "unit_or_type": "bit or nat"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-026",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "G_total",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless ratio"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-026",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "f",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless fraction"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-026",
+      "owners": [
+        "A",
+        "AI-COST",
+        "C",
+        "F"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "a",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless ratio"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-027",
+      "owners": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "F",
+      "unit_code_present": false,
+      "unit_or_type": "equation, theorem, algorithm, or model"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-027",
+      "owners": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Theta",
+      "unit_code_present": false,
+      "unit_or_type": "typed parameter space"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-027",
+      "owners": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "FND/EQN",
+        "QOS/QSVT"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "h",
+      "unit_code_present": false,
+      "unit_or_type": "structured record"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-028",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Promote(h)",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-028",
+      "owners": [
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Pass_q",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean with evidence reference"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-029",
+      "owners": [
+        "F",
+        "FND/EQN",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "EIG",
+      "unit_code_present": false,
+      "unit_or_type": "bit or nat"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-029",
+      "owners": [
+        "F",
+        "FND/EQN",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "pi",
+      "unit_code_present": false,
+      "unit_or_type": "protocol"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-029",
+      "owners": [
+        "F",
+        "FND/EQN",
+        "H"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "H",
+      "unit_code_present": false,
+      "unit_or_type": "bit or nat"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-030",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "UMCE",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-030",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "Delta_g",
+      "unit_code_present": false,
+      "unit_or_type": "normalized dimensionless margin"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "UMRL-030",
+      "owners": [
+        "A",
+        "AI-COST",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "FND/EQN",
+        "G",
+        "H",
+        "QOS/QSVT",
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "UMRL",
+      "symbol": "E_g",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-001",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "R",
+      "unit_code_present": false,
+      "unit_or_type": "typed structure"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-001",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "F",
+      "unit_code_present": false,
+      "unit_or_type": "typed structure"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-002",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "J",
+      "unit_code_present": false,
+      "unit_or_type": "typed map"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-002",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "B",
+      "unit_code_present": false,
+      "unit_or_type": "hypothesis map"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-003",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "c_t",
+      "unit_code_present": false,
+      "unit_or_type": "categorical"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-003",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "z_t",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless vector"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-003",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "a_t",
+      "unit_code_present": false,
+      "unit_or_type": "categorical or semantic object"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-003",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "v_t",
+      "unit_code_present": false,
+      "unit_or_type": "categorical"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-003",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "q_t",
+      "unit_code_present": false,
+      "unit_or_type": "typed labels"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-003",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "iota_t",
+      "unit_code_present": false,
+      "unit_or_type": "identifier"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-004",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "A",
+      "unit_code_present": false,
+      "unit_or_type": "constraint matrix"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-004",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "E",
+      "unit_code_present": false,
+      "unit_or_type": "constraint matrix"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-004",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "Z_canon",
+      "unit_code_present": false,
+      "unit_or_type": "set"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-005",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "u_t",
+      "unit_code_present": false,
+      "unit_or_type": "typed action"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-005",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "o_t",
+      "unit_code_present": false,
+      "unit_or_type": "semantic object"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-005",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "r_t",
+      "unit_code_present": false,
+      "unit_or_type": "categorical"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-005",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "theta_F",
+      "unit_code_present": false,
+      "unit_or_type": "parameter vector"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-006",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "H",
+      "unit_code_present": false,
+      "unit_or_type": "bit or nat"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-006",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "I",
+      "unit_code_present": false,
+      "unit_or_type": "bit or nat"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-007",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "R",
+      "unit_code_present": false,
+      "unit_or_type": "finite set"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-007",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "E_R",
+      "unit_code_present": false,
+      "unit_or_type": "directed edges"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-007",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "ell",
+      "unit_code_present": false,
+      "unit_or_type": "declared story unit"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-007",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "kappa",
+      "unit_code_present": false,
+      "unit_or_type": "predicates"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-008",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "d_R",
+      "unit_code_present": false,
+      "unit_or_type": "declared narrative/control cost"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-009",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "U_consent",
+      "unit_code_present": false,
+      "unit_or_type": "action set"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-009",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "S",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-009",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "L",
+      "unit_code_present": false,
+      "unit_or_type": "declared cost"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-010",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "pi",
+      "unit_code_present": false,
+      "unit_or_type": "policy"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-010",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "lambda",
+      "unit_code_present": false,
+      "unit_or_type": "declared cost weight"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-011",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "Y",
+      "unit_code_present": false,
+      "unit_or_type": "sensor-specific"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-011",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "g_SR",
+      "unit_code_present": false,
+      "unit_or_type": "model-specific"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-011",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "S",
+      "unit_code_present": false,
+      "unit_or_type": "latent state"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-012",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "g_SR",
+      "unit_code_present": false,
+      "unit_or_type": "model-specific"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-013",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "X",
+      "unit_code_present": false,
+      "unit_or_type": "random symbol"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-013",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "Y",
+      "unit_code_present": false,
+      "unit_or_type": "random symbol"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-013",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "Z",
+      "unit_code_present": false,
+      "unit_or_type": "random vector"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-013",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "C_SR",
+      "unit_code_present": false,
+      "unit_or_type": "bit per channel use"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-014",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "R_v",
+      "unit_code_present": false,
+      "unit_or_type": "verified bit per second"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-014",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "a_i",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-014",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "K_i",
+      "unit_code_present": false,
+      "unit_or_type": "count"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-014",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "T",
+      "unit_code_present": false,
+      "unit_or_type": "second"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-015",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "BF_j0",
+      "unit_code_present": false,
+      "unit_or_type": "dimensionless"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-015",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "H_j",
+      "unit_code_present": false,
+      "unit_or_type": "statistical hypothesis"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-015",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "H0",
+      "unit_code_present": false,
+      "unit_or_type": "statistical hypothesis"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-016",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "s_hat",
+      "unit_code_present": false,
+      "unit_or_type": "model state"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-016",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "H",
+      "unit_code_present": false,
+      "unit_or_type": "linear or declared nonlinear operator"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-016",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "Sigma",
+      "unit_code_present": false,
+      "unit_or_type": "sensor-unit squared"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-016",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "R",
+      "unit_code_present": false,
+      "unit_or_type": "declared penalty"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-017",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "P",
+      "unit_code_present": false,
+      "unit_or_type": "state transformation"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-017",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "r_A,r_B",
+      "unit_code_present": false,
+      "unit_or_type": "canon labels"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-017",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "b",
+      "unit_code_present": false,
+      "unit_or_type": "fictional physical/control state"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-018",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "Q",
+      "unit_code_present": false,
+      "unit_or_type": "quantity-specific SI unit or bit"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-018",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "U_Q",
+      "unit_code_present": false,
+      "unit_or_type": "same as Q"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-019",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "settle_k",
+      "unit_code_present": false,
+      "unit_or_type": "Boolean"
+    },
+    {
+      "dimension_vector_present": false,
+      "equation_id": "SCM-MATH-019",
+      "owners": [
+        "SCM"
+      ],
+      "quantity_kind_present": false,
+      "registry_kind": "SCM",
+      "symbol": "debit,credit",
+      "unit_code_present": false,
+      "unit_or_type": "asset-specific unit"
+    }
+  ]
+}

@@ -498,3 +498,16 @@ protocol type with no implicit cast to empirical physics.
 missing evidence visible, while the type boundary lets the canon explore mind,
 mental factors, Atthan Control, communication and portals without presenting
 notation or story coherence as a real-world discovery.
+
+## 2026-09-28 — D103: Free-text unit labels cannot prove dimensional balance
+**Decision:** Treat `unit_or_type` as descriptive text, not a machine-checkable
+unit. A quantity layer must separately identify semantic `quantity_kind`,
+canonical `unit_code`, and exact rational dimension vectors where appropriate.
+Resolve aliases explicitly. Apply physical dimensions only to variables classified
+as physical quantities; keep information, currency, categorical, state, and
+fictional model types distinct.
+
+**Reason:** The Cycle 007 audit found complete free-text labels but no structured
+quantity/unit/dimension fields. Guessing dimensions from labels would turn an
+unauditable equation into a false proof and could assign physical dimensions to
+objects that are not physical quantities.
