@@ -3,7 +3,16 @@
 from __future__ import annotations
 
 from fractions import Fraction
+import hashlib
+import json
+import os
+import platform
 import re
+import statistics
+import subprocess
+import sys
+import tempfile
+from time import perf_counter_ns
 from typing import Any
 
 
@@ -71,6 +80,227 @@ def validate_content_range(
     if body_length != end - start + 1:
         errors.append("range_body_length_mismatch")
     return errors
+
+
+def _fresh_process_durability_probe(payload: Any) -> dict:
+    """Perform one bounded local atomic-publication probe in a child process."""
+    encoded = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode()
+    expected_sha256 = hashlib.sha256(encoded).hexdigest()
+    with tempfile.TemporaryDirectory(prefix="uqpu-cycle007-durability-") as temporary:
+        directory = os.path.abspath(temporary)
+        staging = os.path.join(directory, "staging.json")
+        final = os.path.join(directory, "published.json")
+        started = perf_counter_ns()
+        with open(staging, "wb") as handle:
+            handle.write(encoded)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(staging, final)
+        publication_ns = perf_counter_ns() - started
+
+        directory_fsync_supported = hasattr(os, "O_DIRECTORY")
+        directory_fsync_completed = False
+        directory_fsync_error = None
+        if directory_fsync_supported:
+            try:
+                descriptor = os.open(directory, os.O_RDONLY | os.O_DIRECTORY)
+                try:
+                    os.fsync(descriptor)
+                    directory_fsync_completed = True
+                finally:
+                    os.close(descriptor)
+            except OSError as error:
+                directory_fsync_error = error.errno
+
+        started = perf_counter_ns()
+        recovered = open(final, "rb").read()
+        read_ns = perf_counter_ns() - started
+    recovered_sha256 = hashlib.sha256(recovered).hexdigest()
+    if recovered_sha256 != expected_sha256:
+        raise ValueError("fresh-process publication readback hash mismatch")
+    return {
+        "process_id": os.getpid(),
+        "payload_bytes": len(encoded),
+        "payload_sha256": expected_sha256,
+        "publication_ns": publication_ns,
+        "readback_ns": read_ns,
+        "directory_fsync_supported": directory_fsync_supported,
+        "directory_fsync_completed": directory_fsync_completed,
+        "directory_fsync_error_errno": directory_fsync_error,
+        "readback_sha256_matches": True,
+    }
+
+
+def measure_fresh_process_durability(payload: Any, *, repetitions: int = 5) -> dict:
+    """Repeat a local durability probe in separate child processes.
+
+    Cache-control commands are deliberately not attempted. The result reports
+    that limitation instead of labeling reads cold or warm.
+    """
+    if type(repetitions) is not int or repetitions < 3 or repetitions > 20:
+        raise ValueError("repetitions must be an integer from 3 through 20")
+    payload_json = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+    child_code = (
+        "import json,sys; "
+        "from uqpu.cycle007_delta01 import _fresh_process_durability_probe; "
+        "print(json.dumps(_fresh_process_durability_probe(json.loads(sys.argv[1])), sort_keys=True))"
+    )
+    rows = []
+    for index in range(repetitions):
+        completed = subprocess.run(
+            [sys.executable, "-c", child_code, payload_json],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        if completed.returncode != 0:
+            raise RuntimeError(
+                f"durability child {index} failed: {completed.stderr[-1000:]}"
+            )
+        row = json.loads(completed.stdout)
+        if not row["readback_sha256_matches"]:
+            raise ValueError(f"durability child {index} readback mismatch")
+        rows.append(row)
+    return {
+        "schema": "uqpu-cycle007-fresh-process-local-durability-v1",
+        "repetitions": repetitions,
+        "fresh_process_per_repetition": True,
+        "rows": rows,
+        "timing_summary_ns": {
+            "publication_median": statistics.median(row["publication_ns"] for row in rows),
+            "readback_median": statistics.median(row["readback_ns"] for row in rows),
+        },
+        "platform_capabilities": {
+            "system": platform.system(),
+            "os_name": os.name,
+            "directory_fsync_supported_in_all_children": all(
+                row["directory_fsync_supported"] for row in rows
+            ),
+            "directory_fsync_completed_in_all_children": all(
+                row["directory_fsync_completed"] for row in rows
+            ),
+            "cache_control_attempted": False,
+            "cache_state": "UNCONTROLLED",
+        },
+        "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_NOT_CACHE_OR_POWER_LOSS_EVIDENCE",
+        "non_claims": [
+            "No cold-cache or warm-cache label is inferred.",
+            "No device-flush attestation or power-loss survival is tested.",
+            "No remote-storage, cloud, energy, or hardware result is measured.",
+        ],
+    }
+
+
+def validate_cycle007_material_registry(registry: dict, *, as_of: Any) -> dict:
+    """Add issuer/reviewer independence and method-scope checks to the v2 gate."""
+    from uqpu.cycle006_delta01 import validate_material_registry_v2
+
+    result = validate_material_registry_v2(registry, as_of=as_of)
+    errors_by_id = {key: list(value) for key, value in result["errors_by_prerequisite"].items()}
+    expected_method_scope = registry.get("method_scope_id")
+    for slot in registry.get("slots", []):
+        prerequisite_id = slot.get("prerequisite_id") or "<missing>"
+        errors = errors_by_id.setdefault(prerequisite_id, [])
+        evidence = slot.get("evidence", {})
+        if not expected_method_scope:
+            errors.append("method_scope_id_missing")
+        elif evidence.get("method_scope_id") != expected_method_scope:
+            errors.append("method_scope_mismatch")
+        issuer = evidence.get("issuer_or_operator")
+        reviewer = evidence.get("reviewer")
+        if issuer and reviewer and issuer == reviewer:
+            errors.append("issuer_reviewer_collision")
+    passing = sorted(key for key, errors in errors_by_id.items() if not errors)
+    result.update({
+        "errors_by_prerequisite": errors_by_id,
+        "passing_prerequisite_ids": passing,
+        "passing_count": len(passing),
+        "ready": len(passing) == result["required_count"],
+        "evidence_class": "SYNTHETIC_METHOD_SCOPE_AND_ROLE_SEPARATION_GATE_NO_MATERIAL_EVIDENCE",
+    })
+    return result
+
+
+def validate_cycle007_custody_fixture(fixture: dict) -> list[str]:
+    """Extend the existing custody validator with event-ID uniqueness."""
+    from uqpu.cycle006_delta01 import validate_custody_fixture
+
+    errors = validate_custody_fixture(fixture)
+    event_ids = [event.get("event_id") for event in fixture.get("events", [])]
+    if any(not event_id for event_id in event_ids):
+        errors.append("event_id_missing")
+    if len(event_ids) != len(set(event_ids)):
+        errors.append("duplicate_event_id")
+    return sorted(set(errors))
+
+
+def validate_cycle007_complete_cost(ledger: dict) -> dict:
+    """Require cost-unit and provider-receipt agreement before exposing totals."""
+    from uqpu.cycle006_delta01 import COST_COMPONENTS, validate_complete_cost_v2
+
+    result = validate_complete_cost_v2(ledger)
+    errors = list(result["errors"])
+    currency = ledger.get("currency")
+    amount_unit = ledger.get("amount_unit")
+    if not amount_unit:
+        errors.append("amount_unit_missing")
+    elif amount_unit != currency:
+        errors.append("amount_unit_currency_mismatch")
+    for name in COST_COMPONENTS:
+        component = ledger.get("components", {}).get(name)
+        if isinstance(component, dict) and component.get("unit_code") != amount_unit:
+            errors.append(f"unit_code_mismatch:{name}")
+    accepted = ledger.get("accepted_outputs", {})
+    if accepted.get("unit_code") != "count":
+        errors.append("accepted_output_unit_must_be_count")
+    receipt_id = ledger.get("provider_receipt", {}).get("receipt_id")
+    bill = ledger.get("components", {}).get("provider_actual_bill", {})
+    if not receipt_id or bill.get("receipt_id") != receipt_id:
+        errors.append("provider_receipt_mismatch")
+    errors = sorted(set(errors))
+    complete = not errors
+    count = accepted.get("count")
+    total = result["total_cost"] if complete else None
+    result.update({
+        "errors": errors,
+        "complete": complete,
+        "total_cost": total,
+        "cost_per_accepted_output": total / count if complete else None,
+        "currency": currency if complete else None,
+        "refusal_active": not complete,
+    })
+    return result
+
+
+def validate_ai_dataset_replay(frozen: dict, replayed: dict) -> dict:
+    """Reject any frozen-data, seed, generator, or provenance replay mismatch."""
+    errors = []
+    for field in ("baseline_file_sha256", "generator_module_sha256", "generator", "seed_policy"):
+        if frozen.get(field) != replayed.get(field):
+            errors.append(f"replay_provenance_mismatch:{field}")
+    for split in ("train", "held_out"):
+        if frozen.get(split) != replayed.get(split):
+            errors.append(f"replay_hash_mismatch:{split}")
+    return {
+        "replay_valid": not errors,
+        "errors": errors,
+        "candidate_result_admissible": False,
+        "evidence_class": "DETERMINISTIC_TOY_DATA_REPLAY_GATE_NO_CANDIDATE_QUALITY_OR_COST",
+    }
+
+
+def qasm_measurement_map(ast: list[dict]) -> dict[int, int]:
+    """Return classical-bit to qubit assignments, rejecting duplicate outputs."""
+    mapping = {}
+    for statement in ast:
+        if statement.get("kind") != "measure":
+            continue
+        classical_bit, qubit = map(int, statement["arguments"])
+        if classical_bit in mapping:
+            raise ValueError(f"duplicate classical measurement target: {classical_bit}")
+        mapping[classical_bit] = qubit
+    return dict(sorted(mapping.items()))
 
 
 def audit_dimension_contracts(unified_registry: dict, scm_registry: dict) -> dict:

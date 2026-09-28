@@ -29,16 +29,126 @@
     "FND/EQN/SCM/H share typed claims, explicit uncertainty and fail-closed authorization; fictional and empirical evidence remain disjoint."
   ],
   "cycle": "007",
+  "cycle007_lane_acceptance": {
+    "A": {
+      "artifact": "benchmarks/results/cycle007-delta01-local-reproducibility.json",
+      "evidence_class": "SEEDED_LOCAL_CLASSICAL_SOFTWARE_SCREEN",
+      "result": "Two generated fixtures (8 and 9 variables), each exact enumeration completed all 256/512 states; deterministic 64-restart greedy objective and gap are separate.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_a_two_fixtures_separate_exact_control_from_64_restart_baseline"
+      ]
+    },
+    "AI-COST": {
+      "evidence_class": "DETERMINISTIC_TOY_DATA_REPLAY_GATE",
+      "result": "Deterministic train/held-out replay passes; held-out hash mutation rejected; candidate result remains inadmissible.",
+      "status": "PASS",
+      "tests": [
+        "test_ai_cost_dataset_replay_rejects_frozen_hash_mismatch"
+      ]
+    },
+    "B": {
+      "evidence_class": "SYNTHETIC_PROVIDER_REQUEST_SCHEMA_GATE",
+      "result": "clientToken/idempotency shape accepted when complete and rejected when empty; no provider submission, receipt, or bill.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_b_idempotency_shape_and_null_provider_receipt_fail_closed"
+      ]
+    },
+    "C": {
+      "artifact": "benchmarks/results/cycle007-delta01-local-reproducibility.json",
+      "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_MEASUREMENT",
+      "result": "Three fresh child processes; median publish 67430 ns, median readback 26930 ns; directory fsync supported/completed in all; cache state uncontrolled.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_c_repeats_local_publication_in_fresh_processes",
+        "test_local_reproducibility_artifact_records_a_and_c_controls"
+      ]
+    },
+    "D": {
+      "artifact": "benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json",
+      "evidence_class": "PRIMARY_SOURCE_HTTP_RANGE_AND_README_CRC",
+      "result": "502 ZIP entries / 482 files; exact 206 tail and README ranges; CRC matches. Publisher MD5 metadata not recomputed over the full archive.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_d_range_gate_requires_exact_bounded_http_206",
+        "test_live_lane_d_range_artifact_preserves_crc_and_nonclaims"
+      ]
+    },
+    "E": {
+      "evidence_class": "SYNTHETIC_MATERIAL_EVIDENCE_NEGATIVES",
+      "result": "Cross-lot, issuer/reviewer collision, method-scope mismatch, and expiry mutations rejected; no sample or fabrication result.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_e_material_gate_rejects_lot_role_scope_and_expiry_mutations"
+      ]
+    },
+    "F": {
+      "evidence_class": "SYNTHETIC_COST_SCHEMA_NEGATIVES",
+      "result": "Unit/currency mismatch, mismatched receipt, non-finite amount, and invalid accepted-output denominator rejected; valid control is synthetic only.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_f_cost_contract_rejects_units_currency_receipt_and_denominator"
+      ]
+    },
+    "FND/EQN": {
+      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "evidence_class": "STRUCTURAL_DIMENSION_SCHEMA_AUDIT",
+      "result": "134 declarations; 0 structured quantity kinds, units, or dimension vectors; malformed exact-rational vectors rejected.",
+      "status": "PASS",
+      "tests": [
+        "test_existing_registries_are_typed_but_not_machine_dimensioned",
+        "test_dimension_vectors_require_exact_rational_exponents"
+      ]
+    },
+    "G": {
+      "evidence_class": "SYNTHETIC_CUSTODY_DAG_NEGATIVES",
+      "result": "Duplicate event ID, broken predecessor chain, expired calibration, and unmatched control rejected; no operational sample/custody data.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_g_custody_gate_rejects_duplicate_predecessor_expiry_and_control"
+      ]
+    },
+    "H": {
+      "evidence_class": "GOVERNANCE_FAIL_CLOSED_TEST",
+      "result": "All schema prerequisites marked true still leave every capital gate NOT_AUTHORIZED with null amount.",
+      "status": "PASS",
+      "tests": [
+        "test_lane_h_capital_stays_unauthorized_even_if_schema_prerequisites_pass"
+      ]
+    },
+    "QOS/QSVT": {
+      "evidence_class": "FROZEN_ER6_AST_AND_MEASUREMENT_MAP_TEST",
+      "result": "Whitespace roundtrip preserves measurement mapping; AST measurement-map mutation is detected; no provider/hardware execution.",
+      "status": "PASS",
+      "tests": [
+        "test_qos_roundtrip_preserves_measurement_map_and_detects_ast_mutation"
+      ]
+    },
+    "SCM": {
+      "evidence_class": "FICTIONAL_ONTOLOGY_REFERENCE_NEGATIVES",
+      "result": "Unknown equation reference rejected; real-null firewall and no-human-study boundary preserved.",
+      "status": "PASS",
+      "tests": [
+        "test_scm_equation_and_volume_references_reject_unknown_canon_ids",
+        "test_missing_free_text_label_fails_the_audit"
+      ]
+    }
+  },
   "date": "2026-09-28",
   "delta": "01",
   "full_cycle_closeout_pending": true,
   "lane_count": 12,
   "lanes": {
     "A": {
-      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "acceptance_test_ids": [
+        "test_lane_a_two_fixtures_separate_exact_control_from_64_restart_baseline"
+      ],
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle007-delta01-local-reproducibility.json",
       "evidence_class": "PROTOCOL_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Froze separate exact-completion, cap, incumbent, and heuristic fields plus second-fixture acceptance. Typed-math schema audit: Cross-lane typed-math audit covered 20 UMRL equations and 52 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 52 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Froze separate exact-completion, cap, incumbent, and heuristic fields plus second-fixture acceptance. Typed-math schema audit: Cross-lane typed-math audit covered 20 UMRL equations and 52 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 52 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_lane_a_two_fixtures_separate_exact_control_from_64_restart_baseline.",
       "quantity_kinds": 0,
       "remaining_gate": "Implement bounded solver and fixture; compare a competitive classical baseline. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -55,10 +165,14 @@
       "unit_or_type_present": 52
     },
     "AI-COST": {
+      "acceptance_test_ids": [
+        "test_ai_cost_dataset_replay_rejects_frozen_hash_mismatch"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "DATASET_REPLAY_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified deterministic generator replay and hash-mismatch rejection before scoring. Typed-math schema audit: Cross-lane typed-math audit covered 12 UMRL equations and 32 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 32 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified deterministic generator replay and hash-mismatch rejection before scoring. Typed-math schema audit: Cross-lane typed-math audit covered 12 UMRL equations and 32 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 32 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_ai_cost_dataset_replay_rejects_frozen_hash_mismatch.",
       "quantity_kinds": 0,
       "remaining_gate": "No candidate model run, quality, energy or service-cost result. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -75,10 +189,14 @@
       "unit_or_type_present": 32
     },
     "B": {
+      "acceptance_test_ids": [
+        "test_lane_b_idempotency_shape_and_null_provider_receipt_fail_closed"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "SCHEMA_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Froze request/receipt mutation matrix and null physical-field rule. Typed-math schema audit: Cross-lane typed-math audit covered 12 UMRL equations and 29 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 29 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Froze request/receipt mutation matrix and null physical-field rule. Typed-math schema audit: Cross-lane typed-math audit covered 12 UMRL equations and 29 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 29 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_lane_b_idempotency_shape_and_null_provider_receipt_fail_closed.",
       "quantity_kinds": 0,
       "remaining_gate": "Provider credentials, bounded authorization, real receipt and matching bill absent. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -95,10 +213,15 @@
       "unit_or_type_present": 29
     },
     "C": {
-      "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+      "acceptance_test_ids": [
+        "test_lane_c_repeats_local_publication_in_fresh_processes",
+        "test_local_reproducibility_artifact_records_a_and_c_controls"
+      ],
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle007-delta01-local-reproducibility.json",
       "evidence_class": "MEASUREMENT_PROTOCOL_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified fresh-process repetition record and capability report; unsupported cache controls cannot be inferred. Typed-math schema audit: Cross-lane typed-math audit covered 16 UMRL equations and 43 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 43 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified fresh-process repetition record and capability report; unsupported cache controls cannot be inferred. Typed-math schema audit: Cross-lane typed-math audit covered 16 UMRL equations and 43 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 43 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_lane_c_repeats_local_publication_in_fresh_processes; test_local_reproducibility_artifact_records_a_and_c_controls.",
       "quantity_kinds": 0,
       "remaining_gate": "No new cache, persistence, power-loss or service-durability measurement. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -115,13 +238,19 @@
       "unit_or_type_present": 43
     },
     "D": {
+      "acceptance_test_ids": [
+        "test_lane_d_range_gate_requires_exact_bounded_http_206",
+        "test_live_lane_d_range_artifact_preserves_crc_and_nonclaims"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json",
       "evidence_class": "DATA_PROVENANCE_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF; PRIMARY_SOURCE_HTTP_RANGE_AND_README_CRC_VERIFICATION_NOT_FULL_ARCHIVE_CHECKSUM",
       "machine_dimension_vectors": 0,
-      "progress": "Specified source/range/byte-count/archive/member-hash/payload-read provenance chain. Typed-math schema audit: Cross-lane typed-math audit covered 15 UMRL equations and 42 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 42 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Live bounded request to the official Zenodo record validated the exact 65,557-byte archive-tail Content-Range, parsed 502 entries/482 files, and recovered the 3,065-byte README with matching local/central CRC.",
+      "progress": "Specified source/range/byte-count/archive/member-hash/payload-read provenance chain. Typed-math schema audit: Cross-lane typed-math audit covered 15 UMRL equations and 42 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 42 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Live bounded request to the official Zenodo record validated the exact 65,557-byte archive-tail Content-Range, parsed 502 entries/482 files, and recovered the 3,065-byte README with matching local/central CRC. Cycle 007 executable acceptance tests passed: test_lane_d_range_gate_requires_exact_bounded_http_206; test_live_lane_d_range_artifact_preserves_crc_and_nonclaims.",
       "quantity_kinds": 0,
       "range_verification": {
         "archive_bytes": 145469232,
+        "artifact_sha256": "c292baaee6c88fd54bb72a1cc57c47eb62548e92cdc833fdfe46f9385ee4ba54",
         "central_directory_entries": 502,
         "central_directory_files": 482,
         "full_archive_checksum_recomputed": false,
@@ -146,10 +275,14 @@
       "unit_or_type_present": 42
     },
     "E": {
+      "acceptance_test_ids": [
+        "test_lane_e_material_gate_rejects_lot_role_scope_and_expiry_mutations"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "SYNTHETIC_TEST_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified synthetic cross-lot, issuer/reviewer, method-scope and expiry negatives. Typed-math schema audit: Cross-lane typed-math audit covered 19 UMRL equations and 51 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 51 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified synthetic cross-lot, issuer/reviewer, method-scope and expiry negatives. Typed-math schema audit: Cross-lane typed-math audit covered 19 UMRL equations and 51 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 51 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_lane_e_material_gate_rejects_lot_role_scope_and_expiry_mutations.",
       "quantity_kinds": 0,
       "remaining_gate": "No sample, property measurement, fabrication, purchase or compliance result. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -166,10 +299,14 @@
       "unit_or_type_present": 51
     },
     "F": {
+      "acceptance_test_ids": [
+        "test_lane_f_cost_contract_rejects_units_currency_receipt_and_denominator"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "COST_LEDGER_GATE_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified rejection gates for invalid quantities, currency/unit mismatch, mismatched receipt and missing accepted-output denominator. Typed-math schema audit: Cross-lane typed-math audit covered 27 UMRL equations and 71 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 71 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified rejection gates for invalid quantities, currency/unit mismatch, mismatched receipt and missing accepted-output denominator. Typed-math schema audit: Cross-lane typed-math audit covered 27 UMRL equations and 71 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 71 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_lane_f_cost_contract_rejects_units_currency_receipt_and_denominator.",
       "quantity_kinds": 0,
       "remaining_gate": "No real lifecycle total or cost/useful-output; RG028 remains open. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -186,10 +323,15 @@
       "unit_or_type_present": 71
     },
     "FND/EQN": {
+      "acceptance_test_ids": [
+        "test_existing_registries_are_typed_but_not_machine_dimensioned",
+        "test_dimension_vectors_require_exact_rational_exponents"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "MATHEMATICAL_VALIDATION_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified typed dimensional-check fields for each UMRL equation reference. Typed-math schema audit: Cross-lane typed-math audit covered 11 UMRL equations and 30 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 30 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified typed dimensional-check fields for each UMRL equation reference. Typed-math schema audit: Cross-lane typed-math audit covered 11 UMRL equations and 30 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 30 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_existing_registries_are_typed_but_not_machine_dimensioned; test_dimension_vectors_require_exact_rational_exponents.",
       "quantity_kinds": 0,
       "remaining_gate": "No equation-level proof of dimensional validity, novelty or physical truth. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -206,10 +348,14 @@
       "unit_or_type_present": 30
     },
     "G": {
+      "acceptance_test_ids": [
+        "test_lane_g_custody_gate_rejects_duplicate_predecessor_expiry_and_control"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "SYNTHETIC_CUSTODY_TEST_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified synthetic custody-DAG cases for missing predecessor, duplicate event, expired calibration and unmatched control. Typed-math schema audit: Cross-lane typed-math audit covered 13 UMRL equations and 35 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 35 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified synthetic custody-DAG cases for missing predecessor, duplicate event, expired calibration and unmatched control. Typed-math schema audit: Cross-lane typed-math audit covered 13 UMRL equations and 35 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 35 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_lane_g_custody_gate_rejects_duplicate_predecessor_expiry_and_control.",
       "quantity_kinds": 0,
       "remaining_gate": "No physical custody, sample, certificate, uncertainty budget or control. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -226,10 +372,14 @@
       "unit_or_type_present": 35
     },
     "H": {
+      "acceptance_test_ids": [
+        "test_lane_h_capital_stays_unauthorized_even_if_schema_prerequisites_pass"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "GOVERNANCE_LOGIC_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified fail-closed authorization conjunction; unresolved prerequisites force NOT_AUTHORIZED and null amount. Typed-math schema audit: Cross-lane typed-math audit covered 16 UMRL equations and 44 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 44 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified fail-closed authorization conjunction; unresolved prerequisites force NOT_AUTHORIZED and null amount. Typed-math schema audit: Cross-lane typed-math audit covered 16 UMRL equations and 44 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 44 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_lane_h_capital_stays_unauthorized_even_if_schema_prerequisites_pass.",
       "quantity_kinds": 0,
       "remaining_gate": "No capital decision or authorization. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -246,10 +396,14 @@
       "unit_or_type_present": 44
     },
     "QOS/QSVT": {
+      "acceptance_test_ids": [
+        "test_qos_roundtrip_preserves_measurement_map_and_detects_ast_mutation"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "SYNTHESIS_TEST_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified AST mutation negatives and measurement-map invariance within the frozen ER6 subset. Typed-math schema audit: Cross-lane typed-math audit covered 9 UMRL equations and 25 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 25 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified AST mutation negatives and measurement-map invariance within the frozen ER6 subset. Typed-math schema audit: Cross-lane typed-math audit covered 9 UMRL equations and 25 UMRL variable declarations assigned to this lane; SCM adds 0 equations and 0 variable declarations on the SCM lane. All 25 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_qos_roundtrip_preserves_measurement_map_and_detects_ast_mutation.",
       "quantity_kinds": 0,
       "remaining_gate": "No general grammar proof, provider transpile or hardware execution. Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -266,10 +420,15 @@
       "unit_or_type_present": 25
     },
     "SCM": {
+      "acceptance_test_ids": [
+        "test_scm_equation_and_volume_references_reject_unknown_canon_ids",
+        "test_missing_free_text_label_fails_the_audit"
+      ],
+      "acceptance_test_status": "PASS",
       "artifact": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
       "evidence_class": "FICTIONAL_ONTOLOGY_AND_PROTOCOL_SPECIFICATION; STRUCTURAL_SCHEMA_AUDIT_NOT_DIMENSIONAL_PROOF",
       "machine_dimension_vectors": 0,
-      "progress": "Specified ontology/equation links, explicit real-null type, and mandatory consent/safety predicates. Typed-math schema audit: Cross-lane typed-math audit covered 3 UMRL equations and 10 UMRL variable declarations assigned to this lane; SCM adds 19 equations and 55 variable declarations on the SCM lane. All 65 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata.",
+      "progress": "Specified ontology/equation links, explicit real-null type, and mandatory consent/safety predicates. Typed-math schema audit: Cross-lane typed-math audit covered 3 UMRL equations and 10 UMRL variable declarations assigned to this lane; SCM adds 19 equations and 55 variable declarations on the SCM lane. All 65 lane-attributed declarations use descriptive unit_or_type text; none has machine-readable quantity_kind, unit_code, or dimension_vector metadata. Cycle 007 executable acceptance tests passed: test_scm_equation_and_volume_references_reject_unknown_canon_ids; test_missing_free_text_label_fails_the_audit.",
       "quantity_kinds": 0,
       "remaining_gate": "No empirical spiritual-source evidence; no human study authorized. Classify fictional state, narrative cost and information types separately from empirical physical quantities; keep the real-world g_SR=0 firewall and do not assign physical dimensions to a fictional mechanism without an explicit model.",
       "status": "BLOCKED_WITH_PROGRESS",
@@ -289,20 +448,21 @@
   "next_falsifiable_gate": "Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
   "publication_parent_commit": "c37090ac41aef28cdcf8073e43f1132e5786c067",
   "schema": "uqpu-cycle007-delta01-synchronized-lane-ledger-v1",
-  "status": "IN_PROGRESS_CHECKPOINT_02_TYPED_MATH_AUDIT",
+  "status": "IN_PROGRESS_CHECKPOINT_04_ALL_12_LANE_ACCEPTANCE_TESTS_PASS_CYCLE_NOT_CLOSED",
   "validation": {
     "cycle007_focused_tests": {
-      "passed": 7,
+      "passed": 18,
       "skipped": 0
     },
     "full_prototype_suite": {
-      "passed": 446,
+      "passed": 457,
       "skipped_optional": 8
     },
+    "lane_acceptance_coverage": "12/12",
     "lane_coverage": "12/12",
     "ledger_structure": "PASS",
-    "status": "LOCAL_PASS_NEXT_COMMIT_CI_PENDING",
-    "zenodo_range_capture": "PASS"
+    "local_reproducibility_artifact_sha256": "2fccced2aa52b935578b7b00d78c9b9debad4e30e8506caac85d930bdd043e32",
+    "status": "LOCAL_PASS_CHECKPOINT_04_GITHUB_ACTIONS_PENDING"
   },
   "verification": {
     "checkpoint_02_ci": {
@@ -316,21 +476,37 @@
       "commit": "c37090ac41aef28cdcf8073e43f1132e5786c067",
       "workflow_status": "NO_RUN_EXPECTED_FOR_PRIOR_DOCS_ONLY_CHECKPOINT"
     },
+    "checkpoint_03_ci": {
+      "commit": "038ac2ddd101970f40a8158ea7e29e2186d5e870",
+      "conclusion": "success",
+      "jobs_passed": 8,
+      "retry_note": "Two pinned QSP dependency-install jobs initially timed out against PyPI; failed jobs were rerun twice and all jobs passed on attempt 3.",
+      "run_attempt": 3,
+      "run_id": 36410949148,
+      "run_number": 500
+    },
     "checkpoint_03_local": {
       "focused_tests": 7,
       "full_suite_passed": 446,
       "optional_skips": 8,
       "zenodo_range_capture": "PASS"
     },
+    "checkpoint_04_local": {
+      "focused_tests": 18,
+      "full_suite_passed": 457,
+      "lane_acceptance_coverage": "12/12",
+      "optional_skips": 8,
+      "status": "PASS"
+    },
     "cycle007_focused_tests": {
-      "passed": 7,
+      "passed": 18,
       "skipped": 0
     },
     "full_prototype_suite": {
-      "passed": 446,
+      "passed": 457,
       "skipped_optional": 8
     },
-    "github_actions_expected": "RUN_REQUIRED_AFTER_CHECKPOINT_03_SOFTWARE_PATHS",
+    "github_actions_expected": "RUN_REQUIRED_AFTER_CHECKPOINT_04_SOFTWARE_PATHS",
     "lane_coverage": "12/12",
     "latest_base_ci": {
       "conclusion": "success",
@@ -338,12 +514,13 @@
       "run": 498
     },
     "ledger_structure": "PASS",
+    "local_reproducibility_artifact_sha256": "2fccced2aa52b935578b7b00d78c9b9debad4e30e8506caac85d930bdd043e32",
     "nonclaims": [
       "No measured hardware or provider execution/billing.",
       "No material property, fabrication yield, or lifecycle economic result.",
       "No independent reproduction, new physical law, quantum advantage, or GPU replacement.",
       "No empirical spiritual-source channel."
     ],
-    "repository_test_suite": "PASS_446_WITH_8_OPTIONAL_SKIPS_LOCAL"
+    "repository_test_suite": "PASS_457_WITH_8_OPTIONAL_SKIPS_LOCAL"
   }
 }

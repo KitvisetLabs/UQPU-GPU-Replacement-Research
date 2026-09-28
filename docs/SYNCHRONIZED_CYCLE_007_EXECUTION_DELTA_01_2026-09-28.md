@@ -72,8 +72,31 @@ No equation dimensional consistency, new physical law, hardware performance, pro
 
 ## Checkpoint 03 — official bounded archive range verification
 
-**Reviewed:** 2026-09-28. **State:** Cycle 007 remains active; this checkpoint's local tests pass and its exact-commit Actions run is pending publication.
+**Reviewed:** 2026-09-28. **State:** Commit `038ac2ddd101970f40a8158ea7e29e2186d5e870` passed GitHub Actions #500 (run ID `36410949148`, all 8 jobs) after two retries of transient PyPI dependency-download failures. Cycle 007 remains active.
 
 The official [Zenodo record](https://zenodo.org/records/14257632) and [record API](https://zenodo.org/api/records/14257632) identify `data_upload.zip` as 145,469,232 bytes and publish checksum metadata `md5:d4f051ba40bf3d1940f90f9da4e9953c`. The bounded retrieval runner rejects anything other than HTTP 206 with exact `Content-Range` coordinates. It fetched only the 65,557-byte ZIP tail and a 4,096-byte range at the README local-header offset. The central directory parsed as 502 entries / 482 files; the recovered 3,065-byte README had CRC-32 `fd09c11f`, matching its central-directory entry, and SHA-256 `bbc0015a5f19a2aabacfdd5e99ce309f2ea8cf106fc0f2f1c03c49d1561b7a13`. The reproducible result is `benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json`; the runner is `software/uqpu-prototype/examples/run_cycle007_zenodo_range_check.py`.
 
 This verifies the publisher's checksum metadata and two bounded range responses, not the MD5 of the full archive. No Parquet payload or experimental value was read. The full-prototype suite now passes **446 tests** with **8 optional-environment skips**, including **7 Cycle 007 focused tests**. The new source and software paths require an Actions run for the next published commit.
+
+
+## Checkpoint 04 — executable acceptance across all twelve lanes
+
+**Base:** `038ac2ddd101970f40a8158ea7e29e2186d5e870` (Actions #500 passed 8/8 on retry attempt 3).
+**Local verification:** Cycle 007 focused suite **18/18 passed**; full prototype suite **457 passed, 8 optional-environment skips**. This checkpoint's software-path Actions run is pending publication.
+
+| Lane | Executable delta and result | Remaining evidence gate |
+|---|---|---|
+| A | Two seeded local MaxCut fixtures (8 and 9 variables); exact enumeration completed 256/512 states. A deterministic 64-restart greedy result and its exact gap are separate fields. | Generated finite fixtures do not establish competitive CPU/GPU/QPU quality, scaling, or energy. |
+| B | Request shape accepts a complete synthetic idempotency token and rejects an empty token; all provider receipt fields remain null. | No credentials, authorization, provider submission, execution receipt, or bill. |
+| C | Three fresh child processes published and read back a hash-checked local fixture; directory fsync was supported/completed in all. Median publication/readback were 67,430/26,930 ns in this local run. | Cache state is uncontrolled; no device flush, power-loss, remote storage, or energy claim. |
+| D | Official Zenodo API metadata and bounded HTTP 206 ranges verified the 502-entry ZIP directory and README CRC. See the source-bound evidence artifact. | Full archive MD5 was not recomputed; no Parquet or experimental value was read. |
+| E | Synthetic cross-lot, issuer/reviewer collision, method-scope mismatch, and expiry cases fail closed. | No physical sample, material measurement, or fabrication. |
+| F | Synthetic cost gate rejects unit/currency mismatch, receipt mismatch, non-finite amount, and invalid accepted-output denominator. | No real lifecycle cost, provider bill, or cost/useful-output result. |
+| G | Synthetic custody tests reject duplicate event ID, broken predecessor chain, expired calibration, and unmatched control. | No operational sample, custody event, calibration certificate, or uncertainty budget. |
+| H | Even with all prerequisite flags true, this research gate leaves every capital decision `NOT_AUTHORIZED` with null amount. | No funding authorization or commercial decision. |
+| FND/EQN | The audit shows 134 equation-variable declarations with free-text labels and zero structured quantity kinds, unit codes, or dimension vectors; malformed rational vectors fail validation. | Equation dimensions remain unauditable until quantities and units are classified. |
+| SCM | Unknown canon-equation references are rejected; the real-null firewall remains in force. | Formal fiction/protocol tests are not empirical spiritual-source evidence; no human study. |
+| AI-COST | Frozen toy train/held-out hashes replay deterministically; a held-out hash mutation is rejected before scoring. | No candidate quality, energy, or service-cost result. |
+| QOS/QSVT | Frozen-subset roundtrip preserves the measurement map; a mutated AST map is detected. | No general OpenQASM proof, provider transpilation, or hardware execution. |
+
+The A/C reproducibility record is `benchmarks/results/cycle007-delta01-local-reproducibility.json`; the D range record is `benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json`. All twelve outcomes are `BLOCKED_WITH_PROGRESS`; these tests do not promote the open hardware, materials, economics, or physics goals. Cycle 007 remains open until this checkpoint's exact-commit CI passes and the closeout/handoff commit is verified.

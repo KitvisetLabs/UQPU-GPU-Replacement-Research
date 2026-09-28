@@ -1,0 +1,191 @@
+{
+  "access_date_utc": "2026-09-28",
+  "cross_references": {
+    "fnd_eqn_dimension_audit": "benchmarks/results/cycle007-delta01-umrl-dimension-audit.json",
+    "lane_d_primary_source_range": "benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json",
+    "synchronized_12_lane_ledger": "benchmarks/results/cycle007-delta01-synchronized-lane-ledger.json"
+  },
+  "cycle": "007",
+  "delta": "01",
+  "lane_a": {
+    "evidence_class": "SEEDED_LOCAL_CLASSICAL_SOFTWARE_SCREEN_NOT_COMPETITIVE_BENCHMARK",
+    "fixtures": [
+      {
+        "edge_count": 11,
+        "edge_probability": 0.5,
+        "environment": {
+          "logical_cpu_count": 9,
+          "machine": "x86_64",
+          "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+          "python": "3.12.14"
+        },
+        "evidence_boundary": "Generated local CPU fixture. Exact completion applies only to this finite case; 64-restart greedy objective is reported separately.",
+        "evidence_class": "REPEATED_LOCAL_CLASSICAL_SOFTWARE_SCREEN_NOT_SCALING_LAW",
+        "exact": {
+          "best_observed_objective": -9.0,
+          "complete": true,
+          "elapsed": {
+            "maximum_seconds": 0.001071736000085366,
+            "median_seconds": 0.0007851820000723819,
+            "minimum_seconds": 0.0006955489998290432,
+            "repetitions": 3
+          },
+          "optimum_claim_allowed": true,
+          "states_evaluated": 256,
+          "stop_reason": "COMPLETE",
+          "total_state_space": 256
+        },
+        "fixture_id": "seeded-maxcut-8",
+        "fresh_process_per_repetition": true,
+        "heuristic": {
+          "elapsed": {
+            "maximum_seconds": 0.0031124159995670198,
+            "median_seconds": 0.002765772999737237,
+            "minimum_seconds": 0.002714046000619419,
+            "repetitions": 3
+          },
+          "method": "deterministic_seeded_greedy_bitflip",
+          "objective": -9.0,
+          "objective_gap_to_exact": 0.0,
+          "restarts": 64
+        },
+        "node_count": 8,
+        "non_claims": [
+          "No asymptotic scaling fit or extrapolation is performed.",
+          "A state-cap row reports best observed objective, not an optimum.",
+          "Generated fixtures are not a competitive benchmark suite.",
+          "No power, energy, GPU, provider, QPU, or hardware-neutral result is measured."
+        ],
+        "process_peak_rss": {
+          "maximum_kib": 15616.0,
+          "median_kib": 15616.0,
+          "minimum_kib": 15616.0,
+          "repetitions": 3,
+          "semantics": "fresh-process ru_maxrss high-water mark on Linux, not incremental solver memory"
+        },
+        "schema": "uqpu-cycle006-local-maxcut-repeated-scale-v1",
+        "seed": 7101
+      },
+      {
+        "edge_count": 16,
+        "edge_probability": 0.5,
+        "environment": {
+          "logical_cpu_count": 9,
+          "machine": "x86_64",
+          "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+          "python": "3.12.14"
+        },
+        "evidence_boundary": "Generated local CPU fixture. Exact completion applies only to this finite case; 64-restart greedy objective is reported separately.",
+        "evidence_class": "REPEATED_LOCAL_CLASSICAL_SOFTWARE_SCREEN_NOT_SCALING_LAW",
+        "exact": {
+          "best_observed_objective": -12.0,
+          "complete": true,
+          "elapsed": {
+            "maximum_seconds": 0.0019021050002265838,
+            "median_seconds": 0.0017987609999181586,
+            "minimum_seconds": 0.001796909000404412,
+            "repetitions": 3
+          },
+          "optimum_claim_allowed": true,
+          "states_evaluated": 512,
+          "stop_reason": "COMPLETE",
+          "total_state_space": 512
+        },
+        "fixture_id": "seeded-maxcut-9",
+        "fresh_process_per_repetition": true,
+        "heuristic": {
+          "elapsed": {
+            "maximum_seconds": 0.004404697999234486,
+            "median_seconds": 0.0043083860000479035,
+            "minimum_seconds": 0.004105234999769891,
+            "repetitions": 3
+          },
+          "method": "deterministic_seeded_greedy_bitflip",
+          "objective": -12.0,
+          "objective_gap_to_exact": 0.0,
+          "restarts": 64
+        },
+        "node_count": 9,
+        "non_claims": [
+          "No asymptotic scaling fit or extrapolation is performed.",
+          "A state-cap row reports best observed objective, not an optimum.",
+          "Generated fixtures are not a competitive benchmark suite.",
+          "No power, energy, GPU, provider, QPU, or hardware-neutral result is measured."
+        ],
+        "process_peak_rss": {
+          "maximum_kib": 15616.0,
+          "median_kib": 15616.0,
+          "minimum_kib": 15616.0,
+          "repetitions": 3,
+          "semantics": "fresh-process ru_maxrss high-water mark on Linux, not incremental solver memory"
+        },
+        "schema": "uqpu-cycle006-local-maxcut-repeated-scale-v1",
+        "seed": 7102
+      }
+    ]
+  },
+  "lane_c": {
+    "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_NOT_CACHE_OR_POWER_LOSS_EVIDENCE",
+    "fresh_process_per_repetition": true,
+    "non_claims": [
+      "No cold-cache or warm-cache label is inferred.",
+      "No device-flush attestation or power-loss survival is tested.",
+      "No remote-storage, cloud, energy, or hardware result is measured."
+    ],
+    "platform_capabilities": {
+      "cache_control_attempted": false,
+      "cache_state": "UNCONTROLLED",
+      "directory_fsync_completed_in_all_children": true,
+      "directory_fsync_supported_in_all_children": true,
+      "os_name": "posix",
+      "system": "Linux"
+    },
+    "repetitions": 3,
+    "rows": [
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 50,
+        "payload_sha256": "b4642b81962affe9d66362c6966a92f8ee03596910814771f832cf915af254b5",
+        "process_id": 6,
+        "publication_ns": 66759,
+        "readback_ns": 26449,
+        "readback_sha256_matches": true
+      },
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 50,
+        "payload_sha256": "b4642b81962affe9d66362c6966a92f8ee03596910814771f832cf915af254b5",
+        "process_id": 7,
+        "publication_ns": 67430,
+        "readback_ns": 27421,
+        "readback_sha256_matches": true
+      },
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 50,
+        "payload_sha256": "b4642b81962affe9d66362c6966a92f8ee03596910814771f832cf915af254b5",
+        "process_id": 8,
+        "publication_ns": 115230,
+        "readback_ns": 26930,
+        "readback_sha256_matches": true
+      }
+    ],
+    "schema": "uqpu-cycle007-fresh-process-local-durability-v1",
+    "timing_summary_ns": {
+      "publication_median": 67430,
+      "readback_median": 26930
+    }
+  },
+  "nonclaims": [
+    "No GPU or QPU comparison, advantage, energy measurement, or scaling law is established.",
+    "No cache-state label is inferred; cache control was not attempted.",
+    "Local fsync/readback is not device-flush or power-loss evidence."
+  ],
+  "schema": "uqpu-cycle007-delta01-local-reproducibility-v1"
+}
