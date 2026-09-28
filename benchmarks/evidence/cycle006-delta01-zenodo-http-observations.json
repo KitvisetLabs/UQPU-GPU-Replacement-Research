@@ -1,0 +1,60 @@
+{
+  "access_date": "2026-09-28",
+  "api": {
+    "bytes": 3942,
+    "fetched_at_utc": "2026-09-28T03:48:19Z",
+    "method": "GET",
+    "status": 200,
+    "url": "https://zenodo.org/api/records/14257632"
+  },
+  "api_response_sha256": "a27ebff614070ee90202fd73dbbf29b7ab95d0c0cad2574560069cace350db02",
+  "archive_head": {
+    "accept_ranges": null,
+    "content_disposition": "attachment; filename=data_upload.zip",
+    "content_length": 145469232,
+    "content_type": "application/octet-stream",
+    "final_status": 200,
+    "last_modified": "Fri, 30 Jan 2026 20:46:37 GMT",
+    "method": "HEAD",
+    "observed_at_utc": "2026-09-28T03:48:19Z",
+    "url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1"
+  },
+  "collection_policy": {
+    "cookies_recorded": false,
+    "full_archive_downloaded": false,
+    "parquet_payload_requested": false,
+    "private_or_account_data_used": false,
+    "response_headers_retained": [
+      "accept-ranges",
+      "content-disposition",
+      "content-length",
+      "content-range",
+      "content-type",
+      "last-modified",
+      "status"
+    ]
+  },
+  "readme_range": {
+    "accept_ranges": "bytes",
+    "bytes": 4096,
+    "content_range": "bytes 96016687-96020782/145469232",
+    "method": "GET Range",
+    "observed_at_utc": "2026-09-28T03:48:30Z",
+    "requested_range": "bytes=96016687-96020782",
+    "sha256": "af8079d5ff9f04cd3a2aa1dc21578323504bc3f450a74efa4b1be1aa18f2e280",
+    "status": 206,
+    "url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1"
+  },
+  "schema": "uqpu-cycle006-zenodo-http-observations-v1",
+  "tail_range": {
+    "accept_ranges": "bytes",
+    "bytes": 65536,
+    "content_range": "bytes 145403696-145469231/145469232",
+    "method": "GET Range",
+    "observed_at_utc": "2026-09-28T03:48:27Z",
+    "requested_range": "bytes=145403696-145469231",
+    "sha256": "a5f6dc9bddf653343528937affacf4f6a5e0a58c127e52ca06b7279e949e0cca",
+    "status": 206,
+    "url": "https://zenodo.org/records/14257632/files/data_upload.zip?download=1"
+  }
+}
