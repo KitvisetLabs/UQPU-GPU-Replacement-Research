@@ -129,6 +129,14 @@ class Cycle004Delta01Tests(unittest.TestCase):
         packet = _load(PACKET)
         public = _load(PUBLIC)
         truth = _load(TRUTH)
+        self.assertEqual(
+            hashlib.sha256(PUBLIC.read_bytes()).hexdigest(),
+            "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc",
+        )
+        self.assertEqual(
+            hashlib.sha256(TRUTH.read_bytes()).hexdigest(),
+            "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7",
+        )
         self.assertEqual(packet["cycle"], "004")
         self.assertEqual(len(packet["generator_code_commit"]), 40)
         self.assertEqual(packet["lanes"]["A"]["result"]["states_evaluated"], 64)
