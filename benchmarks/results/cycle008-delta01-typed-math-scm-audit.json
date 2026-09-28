@@ -1,0 +1,193 @@
+{
+  "consent_gate": {
+    "negative_case_count": 5,
+    "negative_cases_rejected": 5,
+    "valid_case_authorized": true
+  },
+  "dimension_equation_count": 3,
+  "dimension_equations": [
+    {
+      "balanced": true,
+      "equation_id": "UMRL-007:T_acc",
+      "errors": [],
+      "lhs_dimension_vector": {
+        "amount_of_substance": "0",
+        "count": "1",
+        "currency": "0",
+        "electric_current": "0",
+        "information": "0",
+        "length": "0",
+        "luminous_intensity": "0",
+        "mass": "0",
+        "temperature": "0",
+        "time": "-1"
+      },
+      "rhs_term_dimension_vectors": [
+        {
+          "amount_of_substance": "0",
+          "count": "1",
+          "currency": "0",
+          "electric_current": "0",
+          "information": "0",
+          "length": "0",
+          "luminous_intensity": "0",
+          "mass": "0",
+          "temperature": "0",
+          "time": "-1"
+        }
+      ],
+      "scope": "DECLARED_SUBSET_ONLY"
+    },
+    {
+      "balanced": true,
+      "equation_id": "UMRL-021:c_fuel",
+      "errors": [],
+      "lhs_dimension_vector": {
+        "amount_of_substance": "0",
+        "count": "0",
+        "currency": "1",
+        "electric_current": "0",
+        "information": "0",
+        "length": "-2",
+        "luminous_intensity": "0",
+        "mass": "-1",
+        "temperature": "0",
+        "time": "2"
+      },
+      "rhs_term_dimension_vectors": [
+        {
+          "amount_of_substance": "0",
+          "count": "0",
+          "currency": "1",
+          "electric_current": "0",
+          "information": "0",
+          "length": "-2",
+          "luminous_intensity": "0",
+          "mass": "-1",
+          "temperature": "0",
+          "time": "2"
+        }
+      ],
+      "scope": "DECLARED_SUBSET_ONLY"
+    },
+    {
+      "balanced": true,
+      "equation_id": "UMRL-022:P_net",
+      "errors": [],
+      "lhs_dimension_vector": {
+        "amount_of_substance": "0",
+        "count": "0",
+        "currency": "0",
+        "electric_current": "0",
+        "information": "0",
+        "length": "2",
+        "luminous_intensity": "0",
+        "mass": "1",
+        "temperature": "0",
+        "time": "-3"
+      },
+      "rhs_term_dimension_vectors": [
+        {
+          "amount_of_substance": "0",
+          "count": "0",
+          "currency": "0",
+          "electric_current": "0",
+          "information": "0",
+          "length": "2",
+          "luminous_intensity": "0",
+          "mass": "1",
+          "temperature": "0",
+          "time": "-3"
+        },
+        {
+          "amount_of_substance": "0",
+          "count": "0",
+          "currency": "0",
+          "electric_current": "0",
+          "information": "0",
+          "length": "2",
+          "luminous_intensity": "0",
+          "mass": "1",
+          "temperature": "0",
+          "time": "-3"
+        },
+        {
+          "amount_of_substance": "0",
+          "count": "0",
+          "currency": "0",
+          "electric_current": "0",
+          "information": "0",
+          "length": "2",
+          "luminous_intensity": "0",
+          "mass": "1",
+          "temperature": "0",
+          "time": "-3"
+        }
+      ],
+      "scope": "DECLARED_SUBSET_ONLY"
+    }
+  ],
+  "errors": [],
+  "evidence_class": "FORMAL_SCHEMA_AND_SYNTHETIC_FIXTURES_NO_PHYSICAL_OR_SPIRITUAL_MEASUREMENT",
+  "fiction_to_real_cast": {
+    "no_synthetic_valid_bridge_fixture": true,
+    "unvalidated_cast_rejected": true
+  },
+  "fictional_conservation": {
+    "negative_case_count": 3,
+    "negative_cases_rejected": 3,
+    "valid_case_balanced": true
+  },
+  "five_volume_contract": {
+    "claim_ceiling": "FICTIONAL_CANON_CONSISTENCY_ONLY",
+    "errors": [],
+    "valid": true,
+    "volume_count": 5
+  },
+  "nonclaims": [
+    "The dimension check covers only the explicitly declared subset.",
+    "Canon state and conservation checks test fictional consistency, not physical laws.",
+    "No positive fictional-to-real bridge fixture is fabricated.",
+    "No empirical spiritual communication, mind control, or portal capability is demonstrated."
+  ],
+  "provenance": {
+    "generator": "software/uqpu-prototype/examples/run_cycle008_math_audit.py",
+    "generator_sha256": "b0abd5fc1422782bd4983e9cd64965a6ac0d25701784542c0095e676a462cb1b",
+    "implementation": "software/uqpu-prototype/uqpu/cycle008_delta01.py",
+    "implementation_sha256": "9c7e1388412838b8a37e2c09e94828717a7e1b0991fc44f6a076f96fc67279e0",
+    "registry_sha256": "7422cc12297b362004cdd49fb5dc710fd4979ea9411455ea359c535d2aac171a",
+    "source_scm_document": "docs/SCM_LOKATHIBODI_MIND_MENTAL_FACTORS_CONTROL_FORMALISM_V0_1_2026-09-28.md",
+    "source_umrl_document": "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md"
+  },
+  "quantity_count": 15,
+  "quantity_type_errors": {
+    "C_total": [],
+    "H_LHV": [],
+    "N_acc": [],
+    "P_auxiliary": [],
+    "P_fusion": [],
+    "P_net": [],
+    "P_recirculating": [],
+    "T_acc": [],
+    "c_fuel": [],
+    "chi_t": [],
+    "delta_t": [],
+    "eta": [],
+    "fictional_route_cost": [],
+    "m_accepted": [],
+    "z_t": []
+  },
+  "schema": "uqpu-cycle008-delta01-typed-math-scm-audit-v1",
+  "scm_equation_extensions": {
+    "claim_ceiling": "FICTIONAL_FORMALISM_ONLY",
+    "equation_ids": [
+      "SCM-MATH-020",
+      "SCM-MATH-021",
+      "SCM-MATH-022",
+      "SCM-MATH-023"
+    ],
+    "errors": [],
+    "valid": true
+  },
+  "status": "PASS"
+}

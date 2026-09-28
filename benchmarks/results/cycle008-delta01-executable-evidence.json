@@ -1,0 +1,244 @@
+{
+  "assumptions": [
+    "Positive material, calibration, cost and gate-ranking records in tests are synthetic.",
+    "Mixed-currency conversion is intentionally unsupported and fails closed.",
+    "Solver fixture is generated and local; host runtime is environment-dependent."
+  ],
+  "cycle": "008",
+  "delta": "01",
+  "lane_a_solver_comparison": {
+    "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+    "exact_control": {
+      "best_objective": -22.0,
+      "complete": true,
+      "states_evaluated": 4096,
+      "total_state_space": 4096
+    },
+    "fixture": {
+      "generator": "seeded_erdos_renyi_maxcut",
+      "node_count": 12,
+      "seed": 80812
+    },
+    "nonclaims": [
+      "One finite generated instance only.",
+      "No scaling-law inference.",
+      "No GPU/QPU/energy result."
+    ],
+    "schema": "uqpu-cycle008-solver-restart-comparison-v1",
+    "solver_variants": [
+      {
+        "elapsed_seconds": 0.004049192000820767,
+        "gap_to_exact": 0.0,
+        "method": "deterministic_seeded_greedy_bitflip",
+        "objective": -22.0,
+        "restarts": 32
+      },
+      {
+        "elapsed_seconds": 0.016231151000283717,
+        "gap_to_exact": 0.0,
+        "method": "deterministic_seeded_greedy_bitflip",
+        "objective": -22.0,
+        "restarts": 128
+      }
+    ]
+  },
+  "lane_c_fresh_process_probe": {
+    "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_NOT_CACHE_OR_POWER_LOSS_EVIDENCE",
+    "fresh_process_per_repetition": true,
+    "non_claims": [
+      "No cold-cache or warm-cache label is inferred.",
+      "No device-flush attestation or power-loss survival is tested.",
+      "No remote-storage, cloud, energy, or hardware result is measured."
+    ],
+    "platform_capabilities": {
+      "cache_control_attempted": false,
+      "cache_state": "UNCONTROLLED",
+      "directory_fsync_completed_in_all_children": true,
+      "directory_fsync_supported_in_all_children": true,
+      "os_name": "posix",
+      "system": "Linux"
+    },
+    "repetitions": 3,
+    "rows": [
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 37,
+        "payload_sha256": "c03e5eea73e125126fb440431cc8b1d688c48f76b6cb8ddd2f32c70732f47d39",
+        "process_id": 22,
+        "publication_ns": 57114,
+        "readback_ns": 22954,
+        "readback_sha256_matches": true
+      },
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 37,
+        "payload_sha256": "c03e5eea73e125126fb440431cc8b1d688c48f76b6cb8ddd2f32c70732f47d39",
+        "process_id": 23,
+        "publication_ns": 60300,
+        "readback_ns": 25397,
+        "readback_sha256_matches": true
+      },
+      {
+        "directory_fsync_completed": true,
+        "directory_fsync_error_errno": null,
+        "directory_fsync_supported": true,
+        "payload_bytes": 37,
+        "payload_sha256": "c03e5eea73e125126fb440431cc8b1d688c48f76b6cb8ddd2f32c70732f47d39",
+        "process_id": 24,
+        "publication_ns": 61241,
+        "readback_ns": 24927,
+        "readback_sha256_matches": true
+      }
+    ],
+    "schema": "uqpu-cycle007-fresh-process-local-durability-v1",
+    "timing_summary_ns": {
+      "publication_median": 60300,
+      "readback_median": 24927
+    }
+  },
+  "lanes": {
+    "A": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_a_exact_control_and_restart_sensitivity_are_separate"
+    },
+    "AI-COST": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_ai_cost_rejects_leakage_and_incomplete_evidence"
+    },
+    "B": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_b_hash_link_and_replay_mutation_fail_closed"
+    },
+    "C": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_c_fresh_process_is_not_mislabeled_cold_or_durable"
+    },
+    "D": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_d_full_archive_plan_respects_byte_cap"
+    },
+    "E": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_e_property_record_rejects_uncertainty_unit_mismatch"
+    },
+    "F": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_f_cost_intervals_fail_closed_on_currency_mix"
+    },
+    "FND/EQN": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_registry_subset_has_exact_equation_dimensions"
+    },
+    "G": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_g_calibration_certificate_expiry_and_uncertainty_are_required"
+    },
+    "H": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_h_ranking_is_sensitivity_bound_and_not_authorization"
+    },
+    "QOS/QSVT": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_lane_qos_semantics_certificate_rejects_map_change"
+    },
+    "SCM": {
+      "lane_status": "BLOCKED_WITH_PROGRESS",
+      "status": "PASS",
+      "test": "test_five_volumes_each_require_their_invariant_and_firewall"
+    }
+  },
+  "nonclaims": [
+    "No provider task, bill, payment, paid job, or hardware measurement.",
+    "No full archive hash or experimental payload analysis.",
+    "No material result, funding, fabrication, human study, new physical law, advantage, GPU replacement, or empirical SCM result."
+  ],
+  "primary_sources": [
+    {
+      "access_date": "2026-09-28",
+      "supports": "required clientToken field and task ARN response schema only; no claim of provider-side idempotency",
+      "url": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "supports": "uncertainty record fields; no uncertainty propagation computed",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-guidelines-evaluating-and-expressing-uncertainty-nist-measurement"
+    },
+    {
+      "access_date": "2026-09-28",
+      "supports": "measurement-to-bit mapping scope only; not general semantic proof",
+      "url": "https://openqasm.com/versions/3.1/language/insts.html"
+    }
+  ],
+  "review_date": "2026-09-28",
+  "schema": "uqpu-cycle008-executable-evidence-v1",
+  "test_runs": {
+    "focused": {
+      "command": [
+        "-m",
+        "unittest",
+        "tests.test_cycle008_evidence_delta01"
+      ],
+      "name": "Cycle 008 ten-lane focused suite",
+      "optional_skips": 0,
+      "status": "PASS",
+      "tests_run": 10
+    },
+    "full": {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "name": "full prototype suite",
+      "optional_skips": 8,
+      "status": "PASS",
+      "tests_run": 478
+    },
+    "typed_math_scm": {
+      "command": [
+        "-m",
+        "unittest",
+        "tests.test_cycle008_delta01"
+      ],
+      "name": "Cycle 008 typed-math/SCM suite",
+      "optional_skips": 0,
+      "status": "PASS",
+      "tests_run": 11
+    }
+  },
+  "typed_math_scm_audit": {
+    "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+    "dimension_equations_checked": 3,
+    "five_volume_contract_valid": true,
+    "scm_equations_added": [
+      "SCM-MATH-020",
+      "SCM-MATH-021",
+      "SCM-MATH-022",
+      "SCM-MATH-023"
+    ],
+    "status": "PASS",
+    "unvalidated_fiction_to_real_cast_rejected": true
+  },
+  "uncertainty": [
+    "One generated n=12 solver fixture does not estimate scaling uncertainty.",
+    "Filesystem cache state is uncontrolled despite fresh child processes.",
+    "Illustrative capital ranking assumptions have no empirical probability distributions."
+  ]
+}

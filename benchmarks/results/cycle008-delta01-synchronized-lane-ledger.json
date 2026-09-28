@@ -1,94 +1,267 @@
 {
-  "schema": "uqpu-cycle008-delta01-synchronized-lane-ledger-v1",
-  "date": "2026-09-28",
-  "cycle": "008",
-  "delta": "01",
+  "artifacts": [
+    "benchmarks/results/cycle008-delta01-executable-evidence.json",
+    "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+    "benchmarks/experiments/cycle008-delta01-typed-math-scm-registry.json"
+  ],
+  "assumptions": [
+    "Positive provider/material/calibration/cost/custody/SCM bridge fixtures are synthetic or fictional.",
+    "Currency conversion is not performed; mixed currencies fail closed.",
+    "A fresh process is not a cold-cache control.",
+    "A dimensionally homogeneous expression is not thereby a true or novel physical law."
+  ],
   "base_commit": "110d086d1d88adad19f73ae07adc7dccf3de49e4",
-  "status": "ACTIVE_START_PACKET_ALL_12_LANES",
-  "lane_count": 12,
-  "lanes": {
-    "A": {
-      "progress": "Froze stronger deterministic solver comparison contract with separate completion, objective, runtime and scaling fields.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "Implement on frozen fixtures; no GPU/QPU extrapolation.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "B": {
-      "progress": "Froze hash-linked request-to-receipt provenance and idempotency replay negative cases with submission disabled.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "No provider authorization, execution or bill.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "C": {
-      "progress": "Froze filesystem/platform capability fields and cold-process versus repeated-process labeling.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "Cache state, device flush and power-loss durability remain unmeasured.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "D": {
-      "progress": "Froze guarded full-download/checksum decision protocol and payload provenance state.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "Full archive checksum and payload analysis remain open.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "E": {
-      "progress": "Froze first function-specific material record fields: lot, control, unit, calibration and uncertainty.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "No physical sample or property measurement.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "F": {
-      "progress": "Froze currency/unit normalization and uncertainty interval rules tied to accepted-output provenance.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "No complete real lifecycle ledger.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "G": {
-      "progress": "Froze calibration-certificate and uncertainty-budget schemas plus expiry/scope negatives.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "No operational sample, certificate or metrology result.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "H": {
-      "progress": "Froze sensitivity-ranked decisive-gate ordering while preserving null capital amounts.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "No funding authorization or owner decision.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "FND/EQN": {
-      "progress": "Selected a bounded non-fictional subset for explicit quantity-kind, unit-code and dimension-vector classification.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "Implement classification and equation-balance counterexamples without inferring from prose.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "SCM": {
-      "progress": "Froze structured fictional state/quantity types and conservation/consent invariant tests across five volumes.",
-      "evidence_class": "FICTIONAL_CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "Real coupling remains null; no human study or empirical spiritual-source evidence.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "AI-COST": {
-      "progress": "Froze candidate-evaluation schema and rejection gates for leakage and incomplete quality/runtime/energy/cost evidence.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "No candidate result or measured economics.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    },
-    "QOS/QSVT": {
-      "progress": "Froze bounded semantic-equivalence negatives and resource-certificate fields for the ER6 subset.",
-      "evidence_class": "CYCLE008_WORK_PACKET_SPECIFICATION",
-      "remaining_gate": "No general proof, provider transpilation or hardware execution.",
-      "status": "BLOCKED_WITH_PROGRESS"
-    }
-  },
   "cross_lane_integration": [
     "A/B/C/F/AI-COST/QOS share accepted-output and provenance fields.",
     "D/E/G/F share units, calibration, uncertainty and custody fields.",
     "FND/EQN supplies typed quantities without transferring truth claims; SCM uses a separately typed fictional domain; H remains fail-closed."
   ],
+  "cycle": "008",
+  "cycle008_lane_acceptance": {
+    "A": {
+      "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+      "result": "Seeded n=12 exact control completed 4096/4096 states; 32/128-restart greedy each found -22 with zero gap on this fixture.",
+      "status": "PASS",
+      "test": "test_lane_a_exact_control_and_restart_sensitivity_are_separate"
+    },
+    "AI-COST": {
+      "evidence_class": "SYNTHETIC_CANDIDATE_EVALUATION_REJECTION_GATE",
+      "result": "Train/held-out leakage and missing energy reject; complete synthetic evaluation remains inadmissible as a measured candidate.",
+      "status": "PASS",
+      "test": "test_lane_ai_cost_rejects_leakage_and_incomplete_evidence"
+    },
+    "B": {
+      "evidence_class": "SYNTHETIC_HASH_LINKED_REQUEST_RECEIPT_GATE",
+      "result": "Request-to-receipt hash link validates; same-token payload mutation rejected; provider task/bill fields remain null.",
+      "status": "PASS",
+      "test": "test_lane_b_hash_link_and_replay_mutation_fail_closed"
+    },
+    "C": {
+      "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_CACHE_UNCONTROLLED",
+      "result": "Three fresh child processes passed local hash readback; median publication/readback 60300/24927 ns, directory fsync passed in all.",
+      "status": "PASS",
+      "test": "test_lane_c_fresh_process_is_not_mislabeled_cold_or_durable"
+    },
+    "D": {
+      "evidence_class": "RESOURCE_GUARDED_ARCHIVE_PLAN_NO_DOWNLOAD",
+      "result": "145469232-byte archive exceeds 100000000-byte cap, so the plan fails closed with download_attempted=false.",
+      "status": "PASS",
+      "test": "test_lane_d_full_archive_plan_respects_byte_cap"
+    },
+    "E": {
+      "evidence_class": "SYNTHETIC_FUNCTION_SPECIFIC_MATERIAL_RECORD",
+      "result": "Synthetic sample/control/measurand/method/calibration/uncertainty record validates; mismatched uncertainty unit rejected.",
+      "status": "PASS",
+      "test": "test_lane_e_property_record_rejects_uncertainty_unit_mismatch"
+    },
+    "F": {
+      "evidence_class": "SYNTHETIC_COST_INTERVAL_SCHEMA",
+      "result": "Synthetic USD component intervals total [1.7,2.1], equal [0.85,1.05] per two accepted outputs; mixed currency leaves total null.",
+      "status": "PASS",
+      "test": "test_lane_f_cost_intervals_fail_closed_on_currency_mix"
+    },
+    "FND/EQN": {
+      "evidence_class": "BOUNDED_TYPED_DIMENSION_AUDIT_AND_NEGATIVE_COUNTEREXAMPLES",
+      "result": "Three explicitly typed equations (T_acc, c_fuel, P_net) are dimensionally homogeneous; exact rational exponents required and cross-sort/mismatch counterexamples rejected.",
+      "status": "PASS",
+      "test": "test_registry_subset_has_exact_equation_dimensions"
+    },
+    "G": {
+      "evidence_class": "SYNTHETIC_CALIBRATION_UNCERTAINTY_GATE",
+      "result": "Synthetic calibration scope/uncertainty gate passes in window and rejects an expired certificate.",
+      "status": "PASS",
+      "test": "test_lane_g_calibration_certificate_expiry_and_uncertainty_are_required"
+    },
+    "H": {
+      "evidence_class": "ILLUSTRATIVE_SENSITIVITY_RANKING_NO_CAPITAL",
+      "result": "Illustrative blocker-reduction/assumed-effort ranking orders BILL_RECEIPT ahead of MATERIAL_SAMPLE; capital remains null and unauthorized.",
+      "status": "PASS",
+      "test": "test_lane_h_ranking_is_sensitivity_bound_and_not_authorization"
+    },
+    "QOS/QSVT": {
+      "evidence_class": "FROZEN_ER6_SEMANTIC_CERTIFICATE_SCHEMA",
+      "result": "Frozen measurement map passes; changed map is rejected; depth/qubit resource fields are schema-only and receipts null.",
+      "status": "PASS",
+      "test": "test_lane_qos_semantics_certificate_rejects_map_change"
+    },
+    "SCM": {
+      "evidence_class": "FICTIONAL_CANON_TYPED_CONSENT_AND_CONSERVATION_GATES",
+      "result": "Four fictional equation extensions link across five volume contracts; five consent negatives and three conservation negatives reject; unvalidated cast to real evidence rejected.",
+      "status": "PASS",
+      "test": "test_five_volumes_each_require_their_invariant_and_firewall"
+    }
+  },
+  "date": "2026-09-28",
+  "delta": "01",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "acceptance_test_id": "test_lane_a_exact_control_and_restart_sensitivity_are_separate",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "LOCAL_SEEDED_CLASSICAL_SOFTWARE_COMPARISON",
+      "progress": "Seeded n=12 exact control completed 4096/4096 states; 32/128-restart greedy each found -22 with zero gap on this fixture.",
+      "remaining_gate": "One generated graph only; no performance winner, GPU/QPU comparison, energy, or scaling law.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "AI-COST": {
+      "acceptance_test_id": "test_lane_ai_cost_rejects_leakage_and_incomplete_evidence",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "SYNTHETIC_CANDIDATE_EVALUATION_REJECTION_GATE",
+      "progress": "Train/held-out leakage and missing energy reject; complete synthetic evaluation remains inadmissible as a measured candidate.",
+      "remaining_gate": "No model quality, runtime, energy, or service-cost result.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "B": {
+      "acceptance_test_id": "test_lane_b_hash_link_and_replay_mutation_fail_closed",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "SYNTHETIC_HASH_LINKED_REQUEST_RECEIPT_GATE",
+      "progress": "Request-to-receipt hash link validates; same-token payload mutation rejected; provider task/bill fields remain null.",
+      "remaining_gate": "No submission/receipt/bill; provider-side idempotency is not established by this internal fixture.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "C": {
+      "acceptance_test_id": "test_lane_c_fresh_process_is_not_mislabeled_cold_or_durable",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "FRESH_PROCESS_LOCAL_FILESYSTEM_SCREEN_CACHE_UNCONTROLLED",
+      "progress": "Three fresh child processes passed local hash readback; median publication/readback 60300/24927 ns, directory fsync passed in all.",
+      "remaining_gate": "Cache remains uncontrolled; no device flush, remote storage, power-loss or energy result.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "acceptance_test_id": "test_lane_d_full_archive_plan_respects_byte_cap",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "RESOURCE_GUARDED_ARCHIVE_PLAN_NO_DOWNLOAD",
+      "progress": "145469232-byte archive exceeds 100000000-byte cap, so the plan fails closed with download_attempted=false.",
+      "remaining_gate": "Full archive digest and experimental payload remain unverified/unread.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "E": {
+      "acceptance_test_id": "test_lane_e_property_record_rejects_uncertainty_unit_mismatch",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "SYNTHETIC_FUNCTION_SPECIFIC_MATERIAL_RECORD",
+      "progress": "Synthetic sample/control/measurand/method/calibration/uncertainty record validates; mismatched uncertainty unit rejected.",
+      "remaining_gate": "No sample, material measurement, property result, or fabrication.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "F": {
+      "acceptance_test_id": "test_lane_f_cost_intervals_fail_closed_on_currency_mix",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "SYNTHETIC_COST_INTERVAL_SCHEMA",
+      "progress": "Synthetic USD component intervals total [1.7,2.1], equal [0.85,1.05] per two accepted outputs; mixed currency leaves total null.",
+      "remaining_gate": "No actual invoice, FX conversion, lifecycle economics, or cost advantage.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "acceptance_test_id": "test_registry_subset_has_exact_equation_dimensions",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+      "evidence_class": "BOUNDED_TYPED_DIMENSION_AUDIT_AND_NEGATIVE_COUNTEREXAMPLES",
+      "progress": "Three explicitly typed equations (T_acc, c_fuel, P_net) are dimensionally homogeneous; exact rational exponents required and cross-sort/mismatch counterexamples rejected.",
+      "remaining_gate": "Only a selected subset and formal interface are checked; no equation truth, novelty, or physical law is established.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "G": {
+      "acceptance_test_id": "test_lane_g_calibration_certificate_expiry_and_uncertainty_are_required",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "SYNTHETIC_CALIBRATION_UNCERTAINTY_GATE",
+      "progress": "Synthetic calibration scope/uncertainty gate passes in window and rejects an expired certificate.",
+      "remaining_gate": "No operational calibration certificate or measured uncertainty.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "H": {
+      "acceptance_test_id": "test_lane_h_ranking_is_sensitivity_bound_and_not_authorization",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "ILLUSTRATIVE_SENSITIVITY_RANKING_NO_CAPITAL",
+      "progress": "Illustrative blocker-reduction/assumed-effort ranking orders BILL_RECEIPT ahead of MATERIAL_SAMPLE; capital remains null and unauthorized.",
+      "remaining_gate": "Ranking inputs are not measured cost/probability and do not authorize funding.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "QOS/QSVT": {
+      "acceptance_test_id": "test_lane_qos_semantics_certificate_rejects_map_change",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+      "evidence_class": "FROZEN_ER6_SEMANTIC_CERTIFICATE_SCHEMA",
+      "progress": "Frozen measurement map passes; changed map is rejected; depth/qubit resource fields are schema-only and receipts null.",
+      "remaining_gate": "No general OpenQASM proof, provider transpilation, or hardware execution.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "SCM": {
+      "acceptance_test_id": "test_five_volumes_each_require_their_invariant_and_firewall",
+      "acceptance_test_status": "PASS",
+      "artifact": "benchmarks/results/cycle008-delta01-typed-math-scm-audit.json",
+      "evidence_class": "FICTIONAL_CANON_TYPED_CONSENT_AND_CONSERVATION_GATES",
+      "progress": "Four fictional equation extensions link across five volume contracts; five consent negatives and three conservation negatives reject; unvalidated cast to real evidence rejected.",
+      "remaining_gate": "Fiction/protocol only; no empirical coupling, spiritual-source claim, or human study.",
+      "status": "BLOCKED_WITH_PROGRESS"
+    }
+  },
+  "next_falsifiable_gate": "Verify this exact software/evidence commit in GitHub Actions; preserve any failure and repair feasible causes before Cycle 008 closeout.",
   "nonclaims": [
     "No measured hardware/provider/material/economic result.",
     "No new physical law, quantum advantage or GPU replacement.",
-    "No empirical spiritual communication; SCM formalism remains fictional/protocol-level."
+    "No empirical spiritual communication; SCM formalism remains fictional/protocol-level.",
+    "No full archive checksum or dataset-payload analysis was completed.",
+    "No physical material/calibration result, provider receipt, cost result, model candidate, or funding decision was generated."
   ],
-  "next_falsifiable_gate": "Implement the frozen schemas and negative tests, publish code/evidence artifacts, and verify exact-commit CI."
+  "primary_sources": [
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_PROVIDER_API_DOCUMENTATION",
+      "supports": "required clientToken request field and task ARN response shape; no provider behavior inferred",
+      "url": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_METROLOGY_GUIDANCE",
+      "supports": "uncertainty component and reporting terminology",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-guidelines-evaluating-and-expressing-uncertainty-nist-measurement"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "LANGUAGE_SPECIFICATION",
+      "supports": "narrow measurement-to-bit mapping contract",
+      "url": "https://openqasm.com/versions/3.1/language/insts.html"
+    },
+    {
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_SOURCE_BOUNDED_RANGE_AND_README_CRC",
+      "repository_artifact": "benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json",
+      "supports": "archive-size metadata used only as the byte-cap input"
+    }
+  ],
+  "schema": "uqpu-cycle008-delta01-synchronized-lane-ledger-v1",
+  "status": "ACTIVE_CHECKPOINT_01_ALL_12_LANES_LOCAL_PASS_CI_PENDING",
+  "uncertainty": [
+    "Solver result is one seeded generated n=12 graph; no scaling estimate is supported.",
+    "Filesystem timing is a three-process local screen; cache state is uncontrolled.",
+    "Typed equation check covers three selected equations only and uses declarations supplied in the supplemental registry.",
+    "Capital-ranking sensitivities are illustrative assumptions without empirical distributions."
+  ],
+  "validation": {
+    "cycle008_executable_lane_tests": {
+      "passed": 10,
+      "skipped": 0
+    },
+    "cycle008_typed_math_scm_tests": {
+      "passed": 11,
+      "skipped": 0
+    },
+    "full_prototype_suite": {
+      "passed": 478,
+      "skipped_optional": 8
+    },
+    "github_actions": "PENDING_ON_EXACT_PUBLISHED_SOFTWARE_SHA",
+    "local_validation": "PASS",
+    "runner_artifact": "benchmarks/results/cycle008-delta01-executable-evidence.json",
+    "typed_math_scm_audit_status": "PASS"
+  }
 }

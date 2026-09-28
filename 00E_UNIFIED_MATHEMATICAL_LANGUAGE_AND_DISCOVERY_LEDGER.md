@@ -1,7 +1,7 @@
 # UQPU Unified Mathematical Language and Discovery Ledger
 
 **Status:** Permanent project-wide mathematical interface / evidence-gated  
-**Version:** UQPU-UMRL 0.1  
+**Version:** UQPU-UMRL 0.2
 **Established:** 2026-09-28  
 **Primary invariant:** INV-037  
 **Related:** INV-004, INV-007, INV-025–INV-036
@@ -393,6 +393,26 @@ reconstruction costs.
 
 ## 17. New-equation hypothesis contract
 
+Each quantitative declaration is an explicit tuple of value, kind, unit,
+dimension vector, domain sort, evidence type, and provenance:
+
+$$
+q=(v,k,u,\mathbf d,\sigma,\tau,\pi),
+\qquad
+\Gamma\vdash q:\tau@\sigma.
+\tag{UMRL-031}
+$$
+
+Real numeric quantities require a registered unit and exact rational
+dimension vector; fictional canon quantities use canon-scoped types and do
+not receive SI dimensions by resemblance. Functions preserve their declared
+sort. A cross-sort map must be explicitly declared and independently
+validated; there is no implicit cast. This is a property of the project's
+formal interface, not a physical law. The bounded Cycle 008 checker audits
+three selected real-model equations and the SCM additions while leaving the
+remaining registry variables unclassified. The Cycle 006 registry remains a
+frozen UMRL-0.1 snapshot.
+
 A candidate equation is the typed object
 
 $$
@@ -461,18 +481,18 @@ success.
 
 | Lane | Primary mathematical objects |
 |---|---|
-| A | UMRL-004–009, 012, 015 |
-| B | UMRL-001–003, 011–012 |
-| C | UMRL-002–008, 013–014 |
-| D | UMRL-004–005, 017 |
-| E | UMRL-003–005, 019–023 |
-| F | UMRL-003, 006–009, 021, 023–024 |
-| G | UMRL-002–003, 017–018 |
-| H | UMRL-009–010, 024, 029–030 |
-| FND/EQN | UMRL-001, 027–030 |
-| SCM | UMRL-001, 025, 028 |
-| AI-COST | UMRL-004–009, 026 |
-| QOS/QSVT | UMRL-004–005, 015–016 |
+| A | UMRL-004–009, 012, 015, 031 |
+| B | UMRL-001–003, 011–012, 031 |
+| C | UMRL-002–008, 013–014, 031 |
+| D | UMRL-004–005, 017, 031 |
+| E | UMRL-003–005, 019–023, 031 |
+| F | UMRL-003, 006–009, 021, 023–024, 031 |
+| G | UMRL-002–003, 017–018, 031 |
+| H | UMRL-009–010, 024, 029–031 |
+| FND/EQN | UMRL-001, 027–031 |
+| SCM | UMRL-001, 025, 028, 031 |
+| AI-COST | UMRL-004–009, 026, 031 |
+| QOS/QSVT | UMRL-004–005, 015–016, 031 |
 
 ## 21. Continuous discovery ledger
 

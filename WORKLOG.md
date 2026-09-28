@@ -1058,4 +1058,26 @@ The reproducible artifact is `benchmarks/evidence/cycle007-delta01-zenodo-range-
 
 The lane acceptance suite now has executable coverage across all 12 lanes. New cases cover two exact-complete seeded MaxCut fixtures with 64 deterministic greedy restarts, provider idempotency shape, three fresh-process local storage probes, synthetic materials/cost/custody negatives, capital fail-closed logic, SCM equation references, AI toy-data replay, and QASM measurement-map mutation. The Zenodo bounded-range and UMRL dimension audits remain source-bound artifacts.
 
-`software/uqpu-prototype/tests/test_cycle007_delta01.py` passed **18/18**; the full suite passed **457 tests** with **8 optional-environment skips**. The reproducibility artifact records exact states for both local fixtures and measured local filesystem medians; it makes no hardware, cache-state, scaling, or energy claim. GitHub Actions #500 (run ID `36410949148`) on `038ac2ddd101970f40a8158ea7e29e2186d5e870` passed all eight jobs on retry attempt 3 after initial pinned-dependency downloads timed out at PyPI. The current checkpoint still requires its own Actions run before Cycle 007 closeout.
+`software/uqpu-prototype/tests/test_cycle007_delta01.py` passed **18/18**; the full suite passed **457 tests** with **8 optional-environment skips**. The reproducibility artifact records exact states for both local fixtures and measured local filesystem medians; it makes no hardware, cache-state, scaling, or energy claim. Actions #500 passed all eight jobs on `038ac2d` after retrying transient PyPI failures; Actions #501 and the Cycle 007 pull-request check #502 passed on the executable checkpoint. Cycle 007 closeout then exposed a stale test assertion: Actions #503 failed because the test still required an open ledger after closure. Commit `31d8d732f8802b4db646130d5f07950aaeea6b7d` repaired the closed-state invariant, and Actions #504 passed 8/8. The Cycle 007 closeout is recorded at `110d086d1d88adad19f73ae07adc7dccf3de49e4`; no scientific gate was promoted.
+
+
+### 2026-09-28 — Synchronized Cycle 008 Delta 01 checkpoint
+
+Started consecutively from the Cycle 007 closeout branch and advanced every
+tracked lane with an executable test or typed formal audit. Lane A enumerated
+all 4,096 assignments of one seeded n=12 MaxCut instance; the 32- and
+128-restart greedy variants both found -22, so the larger restart budget gave
+no improvement on this fixture. Lane C repeated local atomic publication and
+hash-checked readback in three fresh child processes; cache state remains
+uncontrolled. Lane D's full archive request remained blocked by a declared
+100,000,000-byte cap. The typed-math audit checked three selected UMRL
+equations, while the SCM addition remained fictional and consent-gated.
+
+The first typed-math test run caught that its explicit `m` fixture was absent
+from the unit registry. The registry now contains the exact length vector and
+the rerun passes. Focused suites passed **10/10** and **11/11**; the full suite
+passed **478 tests** with **8 optional-environment skips**. No provider task,
+archive download, material measurement, funding, fabrication, human study,
+hardware result, physical-law claim, GPU replacement or empirical SCM result
+is asserted. All twelve lanes remain `BLOCKED_WITH_PROGRESS`. Cycle 008's
+exact-commit Actions run is pending publication and verification.
