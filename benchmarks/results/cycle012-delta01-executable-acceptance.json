@@ -1,0 +1,133 @@
+{
+  "schema": "uqpu-cycle012-delta01-executable-acceptance-v1",
+  "cycle": "012",
+  "evidence_class": "LOCAL_SYNTHETIC_FICTION_ONLY_DECLARATION",
+  "lane_count": 12,
+  "status": "PASS_LOCAL",
+  "source_sha256": {
+    "preregistered_gates": "ad67ef002d14e80259adf8324997718a35f7ec459e7b8fd676eff2cc876f4b6a",
+    "module": "713548fd4ad0f71a9ba034d714511a16a7c79626277097bcdade63bcbf4d19e3",
+    "tests": "b325820afed4c35530f791cc24b49ad1cf170a2fbe7e57362a5fd03dd3efda06",
+    "runner": "35b49e64a655845aa5d499d6bd7e8301576beab0c2fec222f19b34886637e1b4"
+  },
+  "lanes": {
+    "A": {
+      "states": 16,
+      "best": 10,
+      "argmin_hash": "4d52c7dd3e7abf1a4fef932815b5bcfbf0c8287810f8940f5a5dd44325701648",
+      "graph_hash": "93d4fc68a78f6b4d7dec11aa55122242b3901d5414db66dd9a324e6fef0e2a89"
+    },
+    "B": {
+      "schema": "v4",
+      "payload": {
+        "x": 1
+      },
+      "token": "n-1",
+      "options": {},
+      "source_commit": "fixture-commit",
+      "binding": "1b95cefad05fd2bb5c86bd2f9fb10aa671a75b6a6d651b8a7002b2b10e091fc5"
+    },
+    "C": {
+      "visible_sha256": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
+      "temp_removed": true,
+      "status": "PUBLISHED_NEW_PAYLOAD"
+    },
+    "D": {
+      "entries": 2,
+      "central_bytes": 20,
+      "status": "VALID_SYNTHETIC_DIRECTORY"
+    },
+    "E": {
+      "chain": [
+        "d13f8e70a1a014bdabb361caa87cf6591b827038c54d60c43de56a7517264760"
+      ]
+    },
+    "F": {
+      "total_usd": [
+        4,
+        8
+      ],
+      "per_output_usd": [
+        2.0,
+        4.0
+      ],
+      "uncertainty": null
+    },
+    "G": {
+      "measurands": 3,
+      "scope": "fixture",
+      "method": "synthetic",
+      "expires": "2030",
+      "status": "SYNTHETIC_VALID"
+    },
+    "H": {
+      "orderings": 2,
+      "reversals": 1,
+      "held_out_orders": [
+        [
+          "b",
+          "a"
+        ]
+      ],
+      "capital": null
+    },
+    "FND/EQN": {
+      "interval": [
+        1,
+        2
+      ],
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "evidence": "DECLARATION_ONLY"
+    },
+    "SCM": {
+      "fiction_only": true,
+      "empirical_coupling": null
+    },
+    "AI-COST": {
+      "source_sha256": "4e4662d49fec1b49429e8f46be8526ec06a4fd7fc35be9311ffd8a5be3bafe5b",
+      "split_hashes": {
+        "test": "fd2079a3096d5abb9bdf54cc5c80262e7b58bac10d524846455474beff760be9",
+        "train": "0eb5b8d6f81bc677da8a08567cc4fa9a06a57e9ec8da85ed73a7f62727996002",
+        "validation": "a8950f05d3443e7921e7ec6fbe06c8febe40966a5db58b15f767a995d561290b"
+      },
+      "metrics": {
+        "train": {
+          "loss": 1
+        },
+        "validation": {
+          "loss": 1
+        },
+        "test": {
+          "loss": 1
+        }
+      }
+    },
+    "QOS/QSVT": {
+      "version": 2,
+      "resource_delta": {
+        "depth": -2,
+        "gates": -2
+      },
+      "hardware": null
+    }
+  },
+  "nonclaims": [
+    "no QPU or GPU result",
+    "no measured material or cost",
+    "no physical-law result",
+    "SCM is fiction-only; empirical coupling remains null"
+  ],
+  "payload_sha256": "142f2010ca171cf78b026571ae2900fcf86d12728ccd2670abf8dd31ccc2f712"
+}

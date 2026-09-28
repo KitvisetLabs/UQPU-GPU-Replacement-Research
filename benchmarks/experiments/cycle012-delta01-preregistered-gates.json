@@ -1,0 +1,21 @@
+{
+  "schema": "uqpu-cycle012-delta01-preregistered-gates-v1",
+  "cycle": "012",
+  "base_closeout": "9c0ae2db43037e6ab559035ac7418a6405aa15bb",
+  "caps": {"weighted_maxcut_states": 512, "zip_entries": 8, "covariance_dimension": 4},
+  "lanes": {
+    "A": "second-seed positive-integer weighted exact case with complete state cap",
+    "B": "strict v3-to-v4 optional-field migration, preserving payload/token/source binding",
+    "C": "stale temporary-file and pre-replace failure behavior; cache remains uncontrolled",
+    "D": "ZIP64 declared-count and end-record boundary consistency",
+    "E": "ordered custody-event hash chain and issuer/scope mutation rejection",
+    "F": "four-component interval with partial covariance and zero-output null",
+    "G": "third measurand in scoped covariance block, PSD and metadata gates",
+    "H": "held-out priority scenario with correlated-input sensitivity; capital null",
+    "FND/EQN": "registered dimension vector and source-bound interval",
+    "SCM": "fiction-only revoke-before-transition and repeated-revocation controls",
+    "AI-COST": "v2 lineage split reorder and missing held-out metric rejection",
+    "QOS/QSVT": "versioned ER6 certificate with decreased resource bound"
+  },
+  "evidence_boundary": "Fixtures are synthetic or fiction-only. No paid provider work, human study, or hardware claim."
+}
