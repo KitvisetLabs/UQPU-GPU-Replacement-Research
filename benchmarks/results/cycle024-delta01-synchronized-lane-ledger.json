@@ -1,0 +1,169 @@
+{
+  "schema": "uqpu-cycle024-delta01-synchronized-lane-ledger-v1",
+  "cycle": "024",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-024-delta-01-2026-09-28",
+  "base_closeout_commit": "950988295be21330a6d163dae1ea4468e7dc379f",
+  "preregistration_commit": "c93e16ff2b8528fc3fde4c94881526109b1bae5b",
+  "code_evidence_commit": "5ca968cb65c5f3c127d5054b742632f327da385a",
+  "acceptance_artifact_commit": "86ebd3c58561ff04c9d0abfb24f745b05e821e89",
+  "status": "CLOSED_CYCLE_024_CI_PASS_EXTERNAL_GATES_OPEN",
+  "full_cycle_closeout_pending": false,
+  "lane_count": 12,
+  "all_lane_acceptance_passed": true,
+  "all_lane_external_gates_closed": false,
+  "lanes": {
+    "A": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "progress": "Fourth 11-node single-edge perturbation enumerated 2,048 states per graph; exact objective changed 10→11, complete witness SHA-256 bb27fe598365460da02aa4771872d51f03eff6f50dbc555485bcb11ee903551b bound 20 optimum witnesses, and the unchanged-edge invariant held.",
+      "remaining_gate": "Matched QPU/GPU workload, accepted-output contract and independent classical baseline."
+    },
+    "B": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "progress": "Equivalent reordered nested receipts canonicalized to SHA-256 a5c88ba7211bfe738d7c9564871ded392242cc102f2f4f22b95c7cbdee98ae9d; nested and NFC-normalized duplicates, invalid UTF-8 and truncated JSON rejected.",
+      "remaining_gate": "Externally authorized provider key plus independently verifiable job and billing evidence."
+    },
+    "C": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "LOCAL_PROCESS_TERMINATION_FIXTURE",
+      "progress": "Two controlled three-writer process runs classified before/after-replace exits [0,23,23] and recovered only complete old/new payloads.",
+      "remaining_gate": "Crash consistency, cache/flush behavior and power-loss durability."
+    },
+    "D": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "SYNTHETIC_ZIP64_DESCRIPTOR",
+      "progress": "Signed and unsigned synthetic ZIP64 descriptors bound CRC and sizes; descriptor and central-directory size mutations rejected before payload access, and a signature-like payload prefix was not read.",
+      "remaining_gate": "Independent real-producer archive corpus and full interoperability."
+    },
+    "E": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "progress": "A four-issuer synthetic custody chain verified to terminal SHA-256 743478801a09bf87bb87adb557900ca27eec7422bfc0c82a6b285f7b550de663; pre-validity, revocation and expiry controls rejected.",
+      "remaining_gate": "Operational issuer keys, independent custody review and a physical sample."
+    },
+    "F": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "MODEL_ONLY",
+      "progress": "An eight-component covariance model swept sigma multipliers 0.5, 1.0 and 2.0 while missing, indefinite, non-finite and zero-output controls remained null.",
+      "remaining_gate": "Sourced measured components/covariance and an accepted-output definition."
+    },
+    "G": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "progress": "A second four-measurand typed rescaling and exact inverse covered all 16 covariance products with bound order/dimension hashes and PSD preserved by congruence.",
+      "remaining_gate": "Traceable calibration and measured covariance for the declared measurands."
+    },
+    "H": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "progress": "Eight declared scenarios enumerated 192 candidate orders and eight leave-one-out grids.",
+      "remaining_gate": "Owner-approved priorities, sourced distributions and a validated outcome model."
+    },
+    "FND/EQN": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "progress": "An independently specified exact rational interval map roundtripped exactly and rejected source and dimension mutations.",
+      "remaining_gate": "Independent derivation, registered-unit coverage and source-backed falsifiers."
+    },
+    "SCM": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "FICTION_ONLY",
+      "progress": "A five-row consent-scope × expiry × revocation null-control table accepted only the valid fictional replacement row.",
+      "remaining_gate": "No empirical inference without separate authorization and external evidence."
+    },
+    "AI-COST": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "progress": "Synthetic manifest v14 bound parent/source/split/config hashes and a specified held-out fixture metric; missing or mutated required fields rejected.",
+      "remaining_gate": "Real source lineage, held-out evaluation, independent baseline and equivalence test."
+    },
+    "QOS/QSVT": {
+      "status": "BLOCKED_WITH_PROGRESS",
+      "acceptance": "PASS_LOCAL",
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "progress": "Two non-commuting inverse pairs reconstructed all 64 basis states with exact residual 0 under the declared 22-gate/6-qubit bound.",
+      "remaining_gate": "Independent synthesis/reconstruction and target-specific resource/error evidence."
+    }
+  },
+  "validation": {
+    "local": {
+      "focused_cycle_tests": {
+        "passed": 13,
+        "failed": 0
+      },
+      "selected_regression_cycles_018_020_024": {
+        "passed": 39,
+        "failed": 0
+      },
+      "py_compile": "PASS",
+      "twelve_lane_acceptance_runner": "PASS_LOCAL",
+      "artifact_file_sha256": "310570395fa93226d73c3f5e33581ca24e43dab0e5016f155d699a7c3bc2122d"
+    },
+    "executable_acceptance_artifact": {
+      "path": "benchmarks/results/cycle024-delta01-executable-acceptance.json",
+      "payload_sha256": "e2ce6a7230ebe6281e9401d53d0fed1d18f40bdaee34c9c69b4159575770748b"
+    },
+    "github_actions": {
+      "commit": "5ca968cb65c5f3c127d5054b742632f327da385a",
+      "run_id": 36464306931,
+      "status": "completed",
+      "conclusion": "success",
+      "jobs_passed": 8,
+      "jobs_failed": 0,
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36464306931",
+      "job_names": [
+        "test (3.10)",
+        "test (3.11)",
+        "test (3.12)",
+        "qiskit-verification",
+        "reference-benchmark",
+        "qsp-phase-reconstruction-v040",
+        "qsp-phase-synthesis",
+        "target-snapshot-noise"
+      ]
+    },
+    "primary_source_review": "benchmarks/experiments/cycle024-delta01-preregistered-gates.json"
+  },
+  "source_evidence": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "locator": "§§4.3.7, 4.3.9, 4.3.12",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "All graph, receipt, archive, custody, covariance, ranking, lineage and operator inputs are bounded fixtures or models.",
+    "Process evidence covers local process termination only and does not establish crash or power-loss durability.",
+    "SCM records are fiction-only and cannot be cast to empirical evidence."
+  ],
+  "uncertainty": "Provider authority/billing, crash durability, archive interoperability, operational custody, measured covariance/calibration, decision priorities, independent derivation, AI equivalence and target-hardware gates remain open.",
+  "nonclaims": [
+    "No measured QPU/GPU performance, scaling or advantage claim.",
+    "No provider authorization, invoice, commercial economics or capital result.",
+    "No crash durability, physical sample, calibration, new physical law or empirical SCM evidence."
+  ],
+  "next_falsifiable_gate": "Execute and test all twelve Cycle 025 packets, preserve source/evidence typing, and verify exact-SHA GitHub Actions before closeout."
+}
