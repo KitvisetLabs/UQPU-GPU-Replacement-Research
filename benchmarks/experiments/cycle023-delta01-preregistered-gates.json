@@ -1,0 +1,91 @@
+{
+  "schema": "uqpu-cycle023-delta01-preregistered-gates-v1",
+  "cycle": "023",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-023-delta-01-2026-09-28",
+  "base_cycle022_closeout_sha": "4e707f05389f6600034f7d51126d8482db196657",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {
+    "status": "BLOCKED_WITH_PROGRESS",
+    "unmeasured_values": null,
+    "fiction_empirical_cast": "prohibited"
+  },
+  "lanes": {
+    "A": {
+      "action": "Third 11-node perturbation with exact witness-set checks and unchanged-edge invariant.",
+      "acceptance": "2,048-state enumeration and stable hashes; no scaling claim."
+    },
+    "B": {
+      "action": "Nested-array duplicate Unicode key and malformed UTF-8 receipt mutations.",
+      "acceptance": "Canonical/rebound content rejects; external authority/job/invoice null."
+    },
+    "C": {
+      "action": "Process exits under stale/live temp-name collision and repeated cleanup.",
+      "acceptance": "Complete old/new bytes; crash durability null."
+    },
+    "D": {
+      "action": "ZIP64 descriptor size/CRC mutations after unrelated-field reordering.",
+      "acceptance": "Reject before payload read; real producer corpus remains open."
+    },
+    "E": {
+      "action": "Third custody issuer in rotated chain with exact validity edge controls.",
+      "acceptance": "Terminal head and issuer checks; physical sample null."
+    },
+    "F": {
+      "action": "Eight-component covariance grid with missing/indefinite/non-finite and zero-output cases.",
+      "acceptance": "1/2/4/0 output counts; invalid/zero cases null; model only."
+    },
+    "G": {
+      "action": "Second four-measurand rescaling pass and ordering/source mutation.",
+      "acceptance": "Product units, order hash, symmetry and PSD; calibration null."
+    },
+    "H": {
+      "action": "Eighth ranking alternative with exhaustive candidate-order enumeration.",
+      "acceptance": "Finite grid interval only; no probability/capital claim."
+    },
+    "FND/EQN": {
+      "action": "Exact interval reciprocal cancellation across a second unit family with source binding.",
+      "acceptance": "Exact rational endpoints; incompatible dimensions reject; no law claim."
+    },
+    "SCM": {
+      "action": "Scope-bound nonce replacement followed by revocation before replay.",
+      "acceptance": "Fiction-only replay/revocation fail closed; empirical coupling null."
+    },
+    "AI-COST": {
+      "action": "Synthetic v13 split overlap, missing held-out metric and parent mutation controls.",
+      "acceptance": "Lineage hashes bind; candidate/equivalence null without real evaluation."
+    },
+    "QOS/QSVT": {
+      "action": "Third non-commuting operator/inverse pair with exact independent reconstruction.",
+      "acceptance": "64 states, residual/resource bound; hardware null."
+    }
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "access_date": "2026-09-28",
+      "locator": "§§4.3.7, 4.3.9, 4.3.12",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "All numeric and protocol records are fixtures/models/fiction until independently sourced.",
+    "Local process results do not establish crash durability."
+  ],
+  "uncertainty": "Provider, crash, archive interoperability, operational custody, covariance/calibration, priority, independent derivation, AI equivalence and hardware gates remain open.",
+  "nonclaims": [
+    "No hardware performance/advantage claim.",
+    "No provider authorization, invoice, commercial or capital result.",
+    "No crash durability, physical sample, calibration, new law or empirical SCM evidence."
+  ],
+  "next_falsifiable_gate": "Implement/test the twelve lane gates, bind sources and verify exact-SHA Actions."
+}
