@@ -12,7 +12,7 @@
     "lane_count": 12,
     "lane_d_range_verified": true,
     "machine_dimension_vector_count": 0,
-    "machine_dimension_vector_coverage": 0.0,
+    "machine_dimension_vector_coverage": 0,
     "quantity_kind_count": 0,
     "unit_code_count": 0,
     "unit_or_type_present_count": 134,
@@ -137,7 +137,7 @@
   },
   "date": "2026-09-28",
   "delta": "01",
-  "full_cycle_closeout_pending": true,
+  "full_cycle_closeout_pending": false,
   "lane_count": 12,
   "lanes": {
     "A": {
@@ -445,10 +445,10 @@
       "unit_or_type_present": 65
     }
   },
-  "next_falsifiable_gate": "Add quantity_kind and canonical unit_code fields, resolve aliases, then assign exact rational dimension vectors only to quantities that are actually dimensional; test equation balance after classification.",
+  "next_falsifiable_gate": "Cycle 008: add structured quantity kinds/unit codes/dimension vectors and equation-balance checks while advancing each remaining lane gate.",
   "publication_parent_commit": "c37090ac41aef28cdcf8073e43f1132e5786c067",
   "schema": "uqpu-cycle007-delta01-synchronized-lane-ledger-v1",
-  "status": "IN_PROGRESS_CHECKPOINT_04_ALL_12_LANE_ACCEPTANCE_TESTS_PASS_CYCLE_NOT_CLOSED",
+  "status": "CLOSED_ALL_12_LANES_ACCEPTANCE_ARTIFACTS_VERIFIED_NO_EVIDENCE_PROMOTION",
   "validation": {
     "cycle007_focused_tests": {
       "passed": 18,
@@ -506,7 +506,7 @@
       "passed": 457,
       "skipped_optional": 8
     },
-    "github_actions_expected": "RUN_REQUIRED_AFTER_CHECKPOINT_04_SOFTWARE_PATHS",
+    "github_actions_expected": "NO_NEW_RUN_EXPECTED_FOR_METADATA_ONLY_CLOSEOUT; TESTED_TREE_GREEN_AT_D8B7D0E",
     "lane_coverage": "12/12",
     "latest_base_ci": {
       "conclusion": "success",
@@ -522,5 +522,26 @@
       "No empirical spiritual-source channel."
     ],
     "repository_test_suite": "PASS_457_WITH_8_OPTIONAL_SKIPS_LOCAL"
+  },
+  "next_cycle": "008",
+  "closeout": {
+    "tested_commit": "d8b7d0e0b084be05fb4a52db382aaa18f7a737b6",
+    "push_ci": {
+      "run_number": 501,
+      "run_id": 36412725713,
+      "conclusion": "success",
+      "jobs_passed": 8
+    },
+    "pull_request_ci": {
+      "run_number": 502,
+      "run_id": 36413083323,
+      "conclusion": "success",
+      "jobs_passed": 8
+    },
+    "focused_tests_passed": 18,
+    "full_suite_passed": 457,
+    "optional_environment_skips": 8,
+    "metadata_closeout_paths_trigger_workflow": false,
+    "scientific_goal_promotion": false
   }
 }

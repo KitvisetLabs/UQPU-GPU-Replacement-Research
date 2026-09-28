@@ -100,3 +100,17 @@ This verifies the publisher's checksum metadata and two bounded range responses,
 | QOS/QSVT | Frozen-subset roundtrip preserves the measurement map; a mutated AST map is detected. | No general OpenQASM proof, provider transpilation, or hardware execution. |
 
 The A/C reproducibility record is `benchmarks/results/cycle007-delta01-local-reproducibility.json`; the D range record is `benchmarks/evidence/cycle007-delta01-zenodo-range-verification.json`. All twelve outcomes are `BLOCKED_WITH_PROGRESS`; these tests do not promote the open hardware, materials, economics, or physics goals. Cycle 007 remains open until this checkpoint's exact-commit CI passes and the closeout/handoff commit is verified.
+
+## Cycle 007 closeout — exact-commit CI verified
+
+**Closeout evidence commit:** `d8b7d0e0b084be05fb4a52db382aaa18f7a737b6`  
+**Push workflow:** GitHub Actions #501, run ID `36412725713`, completed successfully on 2026-09-28 with all 8 jobs passing.  
+**Independent pull-request workflow:** GitHub Actions #502, run ID `36413083323`, completed successfully on the same SHA with all 8 jobs passing.
+
+The passing jobs in each run were Python 3.10, 3.11 and 3.12 tests, reference benchmark, Qiskit verification, QSP phase synthesis, QSP phase reconstruction, and target-snapshot noise. The locally recorded exact state is 18 Cycle 007 focused tests passed and 457 full-suite tests passed with 8 optional-environment skips.
+
+Cycle 007 is closed because every tracked lane has a concrete executable acceptance delta, all 12 rows retain explicit evidence classes and remaining gates, the synchronized artifacts are published, and the exact software/evidence commit passed the repository workflow. The closeout commit changes only this report, the synchronized ledger, and the Cycle 008 handoff; these paths are outside the workflow's push filter, so no new Actions run is expected for the metadata-only closeout tree. The tested code and evidence tree remains the one at `d8b7d0e`.
+
+All project-level scientific goals remain open. Closing the coordination cycle does not promote any lane to measured hardware, commercial economics, new physics, GPU replacement, or empirical spiritual communication.
+
+**Next consecutive cycle:** Cycle 008, beginning only from the verified Cycle 007 closeout commit and the handoff below.
