@@ -1,0 +1,40 @@
+{
+  "schema": "uqpu-cycle016-delta01-preregistered-gates-v1",
+  "cycle": "016",
+  "delta": "01",
+  "date": "2026-09-28",
+  "branch": "research/cycle-016-delta-01-2026-09-28",
+  "base_closeout": "736d9513af8500f881b858ee83f755041b830029",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "lanes": {
+    "A": "Enumerate exactly 1,024 cuts of a preregistered 10-node weighted graph and compare the optimum against the separately implemented bounded Cycle 013 evaluator; scaling/advantage null.",
+    "B": "Use a fixture-only HMAC authentication tag to test receipt-v3 binding of request, authorization scope, key identity and null invoice/job; no external provider claim.",
+    "C": "Compare target, parent and same-directory stage device IDs, then run concurrent writers at a barrier and inspect complete visible payloads; crash durability null.",
+    "D": "Parse one ZIP64 central-directory record and 64-bit data descriptor, checking sentinels, disk-relative local-header offset, extra-field width and descriptor binding before payload read.",
+    "E": "Verify a valid multi-issuer custody chain, then remove a prior issuer and mutate a later link to test revocation and fork rejection.",
+    "F": "Sweep five component intervals over a finite output grid with PSD, invalid and nonfinite covariance cases; null invalid inputs and nonpositive denominators.",
+    "G": "Validate a typed symmetric cross-unit covariance block for distance and duration with pairwise product dimensions m*m, m*s and s*s; calibration null.",
+    "H": "Compare a four-priority identity-correlation alternative with a declared positive-pair correlation alternative and report finite-grid ranking stability spread; capital null.",
+    "FND/EQN": "Add exact rational interval division for registered m/s with source and sort preservation; a denominator interval crossing zero returns explicit null.",
+    "SCM": "Bind a fiction-only nonce/challenge/response to scope and expiry; test revoked, replayed, scope-mutated and response-mutated cases; empirical coupling null.",
+    "AI-COST": "Create a parent-linked v6 synthetic lineage manifest from v5 and test source, split/config/metric lineage plus missing-output null behavior; equivalence null.",
+    "QOS/QSVT": "Test parent-certificate digest and resource regression mutations against Cycle 014 v4; bind exact reconstruction residual and keep hardware null."
+  },
+  "primary_sources": [
+    {"title": "PKWARE APPNOTE.TXT - .ZIP File Format Specification", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "version": "6.3.10 FINAL", "source_date": "2022-11-01", "access_date": "2026-09-28", "locator": "sections 4.3.9, 4.3.12-4.3.16", "evidence_class": "PRIMARY_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-09-28", "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"},
+    {"title": "Python tempfile.mkstemp documentation", "url": "https://docs.python.org/3/library/tempfile.html#tempfile.mkstemp", "access_date": "2026-09-28", "evidence_class": "PRIMARY_LANGUAGE_DOCUMENTATION"},
+    {"title": "NIST SP 330, Section 2", "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2", "access_date": "2026-09-28", "locator": "seven SI base dimensions", "evidence_class": "PRIMARY_METROLOGY_REFERENCE"},
+    {"title": "UQPU Unified Mathematical Language and Discovery Ledger", "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/research/cycle-016-delta-01-2026-09-28/00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md", "source_revision": "736d9513af8500f881b858ee83f755041b830029", "locator": "UMRL-031 typed values, units, provenance and explicit sorts", "evidence_class": "PROJECT_CANONICAL_INTERFACE"}
+  ],
+  "assumptions": [
+    "The 10-node graph is one deterministic local fixture; exact enumeration is not a scaling or advantage claim.",
+    "HMAC-SHA256 is used only as a local test authentication tag, not as a provider digital signature or authorization.",
+    "A same-device identity and process replacement test do not establish kernel crash, flush, cache or power-loss durability.",
+    "The ZIP64 fixture parses metadata only and does not read archive payload bytes.",
+    "Covariance, cost, ranking, AI, custody and QOS values are synthetic; SCM is fiction-only."
+  ],
+  "uncertainty": "Provider authority/signature/invoice, storage crash durability, real archive producer behavior, operational custody, measured covariance/lifecycle data, owner priorities, independent equation derivation, AI equivalence and physical QOS evidence remain open. Missing evidence is null.",
+  "evidence_boundary": "No hardware performance, provider execution, calibrated physical sample, commercial economics, new physical law, functional-equivalence result, capital decision or empirical SCM communication is claimed.",
+  "next_falsifiable_gate": "Run focused and regression tests, publish the artifacts on the exact Cycle 016 branch, and inspect GitHub Actions for the exact triggering code SHA."
+}
