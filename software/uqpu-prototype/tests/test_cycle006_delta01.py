@@ -210,8 +210,10 @@ class Cycle006Delta01Tests(unittest.TestCase):
 
     def test_committed_cycle006_artifacts_are_hash_bound_and_cover_all_lanes(self):
         expected_hashes = {
+            UNIFIED_MATH: "14fbbb0c327020b21e63766fe652967f87052716ab0114402fd9cfb84cdfa6be",
+            SCM_MATH: "97ac82df2ad047ac2a563083864c1b69d973b3c1928ec8be65a5758253f694f5",
             SOURCE: "cc5ee23fb9b2f3d8e75fc80c749aa299dd146e52cc5b468e9d9f4a433b96d52c",
-            PACKET: "1dc1ffc37680200b5103b89db7f168a0ff0180c009c94216777f1ff7aeae226a",
+            PACKET: "96ea0093661daa4ced1f6a652e87e26ae952d0e851f6b174542ea1037e998cef",
             SCORER: "b42f21ff14b468346ae1f4937edaee5c62efb150245a5f1302075fcd8707b2f3",
             CUSTODIAN: "198f0ed1d840b816cd92236882498994a5681c6d02ecc70f0f69f15daed965cb",
             REVEAL_AUDIT: "3f5eab3053a6c2a728501d42bbfbba704761dca76c3ff87c3c9014709076145b",
@@ -236,7 +238,7 @@ class Cycle006Delta01Tests(unittest.TestCase):
         )
         self.assertEqual(
             packet["generator_code_commit"],
-            "f336b6ddbda555aaba212b5c05bd0a818e9c6368",
+            "6abd282fdc61a0151ab93dfbb0cadacd46c03893",
         )
         self.assertTrue(packet["lanes"]["A"]["repeated_scale_cases"][0]["exact"]["complete"])
         self.assertFalse(packet["lanes"]["A"]["repeated_scale_cases"][1]["exact"]["complete"])
@@ -265,6 +267,12 @@ class Cycle006Delta01Tests(unittest.TestCase):
         )
         self.assertFalse(packet["lanes"]["H"]["funding_or_purchase_authorized"])
         self.assertFalse(packet["lanes"]["QOS/QSVT"]["hardware_executed"])
+        math_gate = packet["unified_mathematical_language"]
+        self.assertTrue(math_gate["validation"]["formal_specification_valid"])
+        self.assertEqual(math_gate["validation"]["goal_count"], 23)
+        self.assertEqual(math_gate["validation"]["scm_equation_count"], 19)
+        self.assertFalse(math_gate["new_physical_law_claim"])
+        self.assertFalse(math_gate["spiritual_channel_claim"])
 
 
 if __name__ == "__main__":
