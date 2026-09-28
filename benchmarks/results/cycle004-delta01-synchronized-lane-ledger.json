@@ -1,0 +1,192 @@
+{
+  "schema": "uqpu-synchronized-cycle-lane-ledger-v1",
+  "cycle": "004",
+  "delta": "01",
+  "date": "2026-09-28",
+  "status": "CLOSEOUT_PENDING_ARTIFACT_INCLUSIVE_CI",
+  "policy": "All 12 canonical portfolio lanes have a concrete progress event; evidence is lane-local and no result is promoted across lanes.",
+  "evidence_summary": {
+    "new_local_software_measurements": true,
+    "new_empirical_hardware_or_material_claims": false,
+    "live_qpu_executed": false,
+    "paid_job_submitted": false,
+    "pangola_coupons_fabricated": false,
+    "human_participant_study_started": false,
+    "capital_authorized": false,
+    "evidence_promotion": "none"
+  },
+  "lane_count": 12,
+  "lanes": [
+    {
+      "lane": "A",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Measured 101 local Python repetitions of complete enumeration over all 64 ER6 states under frozen contract 8efaa94bb3306d25. Median wall time was 225371 ns; objective -7 and all four accepted outputs were reproduced exactly.",
+      "evidence_class": "LOCAL_HOST_WALL_CLOCK_MEASUREMENT_EXACT_TOY_BASELINE",
+      "dependency": "No power, peak memory, scale curve, provider execution or competitive large-instance comparison.",
+      "next_cycle": "Add deterministic larger classical cases with timeout, quality and peak-RSS instrumentation while retaining ER6 as a regression anchor."
+    },
+    {
+      "lane": "B",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Refreshed the official AWS Braket Rigetti Cepheus tariff on 2026-09-28 and retained two tasks times 8192 shots as $7.563200 task-plus-shot arithmetic; no provider or backend was selected.",
+      "evidence_class": "OFFICIAL_TARIFF_SNAPSHOT_AND_REQUEST_GATE_NOT_QUOTE_OR_BILL",
+      "dependency": "Credentials, authorization, quote, execution, provider-matched result and separately billed AWS services remain absent.",
+      "next_cycle": "Refresh provider schema/terms and build a dry-run request validator with execution disabled and provider observations null."
+    },
+    {
+      "lane": "C",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Measured 101 local canonical-JSON and temporary-file repetitions for the 10152-byte Cycle 003 manifest: median serialize/write/read/decode times were 53952/70707/9735/49475 ns.",
+      "evidence_class": "LOCAL_HOST_SOFTWARE_IO_MEASUREMENT_NOT_PROVIDER_IO",
+      "dependency": "No fsync, controlled cache state, cloud transfer, provider serialization, QPU readout, network or energy measurement.",
+      "next_cycle": "Add labeled cold/warm-cache trials, optional fsync/durability and peak-memory measurement without inferring cloud latency."
+    },
+    {
+      "lane": "D",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Froze a project screening contract of one logical qubit, 100 syndrome cycles and total failure at most 0.05. Under explicit stationary-independent arithmetic the per-cycle limit is 0.0005128014; the published 0.0165 central value is 32.176 times larger.",
+      "evidence_class": "PROJECT_CHOSEN_SERVICE_CONTRACT_PLUS_MODEL_ONLY_SOURCE_TRANSLATION",
+      "dependency": "No basis-resolved raw-data reanalysis, matched project device, decoder, erasure policy implementation or hardware reproduction.",
+      "next_cycle": "If the primary archive becomes accessible, map bit/phase components and uncertainty into the frozen schema while keeping reproduction false."
+    },
+    {
+      "lane": "E",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Converted DMF-BIOCARBON-EMI-001 into a nine-item authorized-method, feedstock, resin/cure, coupon, metrology, matched-control and safety readiness gate; zero items are currently evidenced.",
+      "evidence_class": "DOCUMENT_AND_MATERIAL_READINESS_GATE_NO_FABRICATION",
+      "dependency": "Full method, authenticated Pangola lot, same-lot measurements, exact resin/cure, coupon uncertainty, calibrated fixture, comparator and safety review are absent.",
+      "next_cycle": "Create immutable evidence slots and acceptance criteria for all nine prerequisites; do not fabricate while any gate remains open."
+    },
+    {
+      "lane": "F",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Completed a null-preserving accepted-output cost ledger. Only the narrow $7.563200 provider tariff arithmetic is present; bill, host, queue, transfer, storage, retry, mitigation, energy, labor, capital, accepts, total and cost per accept remain null.",
+      "evidence_class": "COMPLETE_COST_SCHEMA_WITH_NULL_REQUIRED_INPUTS_NOT_COMMERCIAL_ECONOMICS",
+      "dependency": "RG028 remains data, credential and authorization blocked; no provider bill or matched observed acceptance denominator.",
+      "next_cycle": "Add a completeness validator that refuses total and cost-per-accept whenever any required component or matched acceptance count is absent."
+    },
+    {
+      "lane": "G",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Added explicit same-lot feedstock, resin/hardener, cure, dimensional uncertainty, VNA/fixture dynamic range, incumbent-control and safety prerequisites to the no-fabrication review.",
+      "evidence_class": "METROLOGY_AND_CHAIN_OF_CUSTODY_PROTOCOL_NO_MATERIAL_RESULT",
+      "dependency": "No lot/recipe provenance, instrument booking, valid calibration, matched coupon or physical measurement.",
+      "next_cycle": "Define chain-of-custody and uncertainty schemas with calibration validity and matched-control requirements."
+    },
+    {
+      "lane": "H",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Reconciled CAP-DMF-EMI-001 and CAP-BOSONIC-001 with Cycle 004 evidence; both remain NOT_AUTHORIZED and capital_at_risk_thb remains null.",
+      "evidence_class": "CAPITAL_GATE_RECONCILIATION_NO_FUNDING_DECISION",
+      "dependency": "No decision-ready empirical evidence, complete cost or authorized proposal; this automation cannot authorize capital.",
+      "next_cycle": "Link each capital gate to machine-verifiable prerequisite IDs while preserving null amounts and no-decision status."
+    },
+    {
+      "lane": "FND/EQN",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Resolved Zenodo record 14257632 as dataset v1 published 2024-12-03, including data_upload.zip, displayed 145.5 MB and publisher-displayed MD5 d4f051ba40bf3d1940f90f9da4e9953c; recorded preview rate limiting.",
+      "evidence_class": "PRIMARY_DATA_RECORD_METADATA_NOT_RAW_DATA_REANALYSIS",
+      "dependency": "Archive was not downloaded or inspected, MD5 was not locally recomputed, and no values were re-fit or reproduced.",
+      "next_cycle": "Retry checksum-verified retrieval, inventory files without interpreting values, and record license, format and column provenance before analysis."
+    },
+    {
+      "lane": "SCM",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Separated the Cycle 003 synthetic CAL-001 observations/scores and custodian truth into two schema-validated packages linked by a SHA-256 truth commitment; the public package contains no condition labels.",
+      "evidence_class": "SYNTHETIC_TWO_PARTY_HANDOFF_DEMONSTRATION",
+      "dependency": "Both roles remain in the same repository, so operational blinding, independent custody, a second site, human data and physical evidence are absent.",
+      "next_cycle": "Implement a synthetic two-actor rehearsal with separate access logs and a preregistered reveal step."
+    },
+    {
+      "lane": "AI-COST",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Bound comparison to the deterministic XOR-quadrant 2-16-1 MLP with 256 train and 256 held-out examples, held-out accuracy at least 0.98 and BCE at most 0.19, preserving the repository operation and tensor ledgers.",
+      "evidence_class": "REPOSITORY_CLASSICAL_TOY_AI_BASELINE_CONTRACT_NOT_FRONTIER_AI_ECONOMICS",
+      "dependency": "No functionally equivalent quantum/UQPU candidate, candidate quality result, measured hardware resources or end-to-end residual cost.",
+      "next_cycle": "Add a candidate-results schema enforcing the same data/seeds/quality gate and publication of failed or slower candidates."
+    },
+    {
+      "lane": "QOS/QSVT",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Attached a qiskit==2.5.2 CI gate to independently parse both stored QASM 3 circuits and verify hashes, 6q/6c widths, operation counts and terminal measurement mapping.",
+      "evidence_class": "PINNED_INDEPENDENT_SDK_PARSE_NOT_PROVIDER_VALIDATION",
+      "dependency": "No provider acceptance, transpilation, physical layout/depth, calibration, QPU execution or application-specific QSVT certificate.",
+      "next_cycle": "Persist the parse artifact, add a second parser or grammar check, and define provider-transpile fields that default null without credentials."
+    }
+  ],
+  "source_register": [
+    {
+      "id": "cycle004-integrated-packet",
+      "ref": "benchmarks/results/cycle004-delta01-er6-classical-io-and-gates.json",
+      "sha256": "6f3e5181ebf55c772f4991ef1a68c4943b1cc7e32108ed052fe603c698895126",
+      "generator_commit": "88887e9365affdb8e904b99ff7fdd0525c160d73"
+    },
+    {
+      "id": "cycle004-scm-public-handoff",
+      "ref": "benchmarks/experiments/cycle004-delta01-scm-cal001-public-handoff.json",
+      "sha256": "5c60c842ef2d7d15e51791ce4023e69d7757832a9e8e77946c72abdcb802fdbc"
+    },
+    {
+      "id": "cycle004-scm-custodian-truth",
+      "ref": "benchmarks/results/cycle004-delta01-scm-cal001-custodian-truth.json",
+      "sha256": "1e3fe0b2f8ac86fcff45ac889153013c06b89133c773b3cebf9cb71ef97804c7"
+    },
+    {
+      "id": "batch039-ai-classical-baseline",
+      "ref": "benchmarks/results/batch039-ai-cost-002-classical-baseline.json",
+      "sha256": "db774891882d82d5c4d477ffb6c1239cb0a7bf4dd2d3d18292e20f67fbae11f4"
+    },
+    {
+      "id": "nature-bosonic-qec",
+      "url": "https://www.nature.com/articles/s41586-025-08642-7",
+      "publication_date": "2025-02-26",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_PUBLISHED_EXPERIMENT_USED_ONLY_AS_SOURCE_ANCHOR"
+    },
+    {
+      "id": "zenodo-bosonic-qec-data",
+      "url": "https://zenodo.org/records/14257632",
+      "publication_date": "2024-12-03",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_DATA_RECORD_METADATA_ARCHIVE_NOT_INGESTED"
+    },
+    {
+      "id": "aws-braket-pricing",
+      "url": "https://aws.amazon.com/braket/pricing/",
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_TARIFF_ARITHMETIC_NOT_QUOTE_OR_BILL"
+    },
+    {
+      "id": "astm-d4935-catalog",
+      "url": "https://store.astm.org/standards/d4935",
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_CATALOG_METADATA_NO_PROJECT_METHOD_ACCESS"
+    }
+  ],
+  "verification": {
+    "workflow": ".github/workflows/uqpu-tests.yml",
+    "local_cycle004_core_assertions_passed": 10,
+    "local_optional_qiskit_skipped": 1,
+    "all_runs_success": false,
+    "runs": [
+      {
+        "run_number": 488,
+        "run_id": 36361808666,
+        "commit_sha": "88887e9365affdb8e904b99ff7fdd0525c160d73",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36361808666"
+      }
+    ],
+    "coverage_note": "Run 488 succeeded across the Python 3.10/3.11/3.12 matrix and all configured jobs, including the pinned independent Qiskit parse gate. Artifact-inclusive mandatory CI is pending."
+  },
+  "closure": {
+    "cycle_closed": false,
+    "closure_basis": [
+      "all 12 portfolio lane progress events recorded",
+      "local measurement, protocol, source and synthetic handoff artifacts generated and content hashed",
+      "Cycle 004 report and Cycle 005 handoff drafted",
+      "artifact-inclusive mandatory GitHub Actions success is still required"
+    ],
+    "evidence_promotion": "none"
+  }
+}

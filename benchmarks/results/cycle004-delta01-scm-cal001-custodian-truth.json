@@ -1,0 +1,1037 @@
+{
+  "cycle": "004",
+  "evidence_class": "SYNTHETIC_TRUTH_CUSTODY_SCHEMA_NOT_OPERATIONAL_BLINDING",
+  "handoff_role": "CUSTODIAN_PACKAGE",
+  "independent_site_status": "NOT_EXECUTED_NO_SECOND_SITE",
+  "operational_status": "DEMONSTRATION_ONLY_BOTH_PACKAGES_COMMITTED_IN_SAME_REPOSITORY",
+  "public_package_sha256": "537f8e16a46c8cbe0cfb80e02e144116e37b84d948759a00d2f6d3eec1acf2b3",
+  "salt": "cycle004-synthetic-custodian-demo-v1",
+  "schema": "uqpu-scm-cal001-custodian-truth-v1",
+  "truth": [
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0001"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0002"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0003"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0004"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0005"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0006"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0007"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0008"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0009"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0010"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0011"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0012"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0013"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0014"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0015"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0016"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0017"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0018"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0019"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0020"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0021"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0022"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0023"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0024"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0025"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0026"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0027"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0028"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0029"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0030"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0031"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0032"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0033"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0034"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0035"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0036"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0037"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0038"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0039"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0040"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0041"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0042"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0043"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0044"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0045"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0046"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0047"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0048"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0049"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0050"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0051"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0052"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0053"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0054"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0055"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0056"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0057"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0058"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0059"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0060"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0061"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0062"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0063"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0064"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0065"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0066"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0067"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0068"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0069"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0070"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0071"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0072"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0073"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0074"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0075"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0076"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0077"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0078"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0079"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0080"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0081"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0082"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0083"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0084"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0085"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0086"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0087"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0088"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0089"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0090"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0091"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0092"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0093"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0094"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0095"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0096"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0097"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0098"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0099"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0100"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0101"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0102"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0103"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0104"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0105"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0106"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0107"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0108"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0109"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0110"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0111"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0112"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0113"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0114"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0115"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0116"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0117"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0118"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0119"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0120"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0121"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0122"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0123"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0124"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0125"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0126"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0127"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0128"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0129"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0130"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0131"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0132"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0133"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0134"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0135"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0136"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0137"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0138"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0139"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0140"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0141"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0142"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0143"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0144"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0145"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0146"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0147"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0148"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0149"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0150"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0151"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0152"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0153"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0154"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0155"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0156"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0157"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0158"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0159"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0160"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0161"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0162"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0163"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0164"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0165"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0166"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0167"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0168"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0169"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0170"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0171"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0172"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0173"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0174"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0175"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0176"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0177"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0178"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0179"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0180"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0181"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0182"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0183"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0184"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0185"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0186"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0187"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0188"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0189"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0190"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0191"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0192"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0193"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0194"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0195"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0196"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0197"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0198"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0199"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0200"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0201"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0202"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0203"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0204"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0205"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0206"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0207"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0208"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0209"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0210"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0211"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0212"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0213"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0214"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0215"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0216"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0217"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0218"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0219"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0220"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0221"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0222"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0223"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0224"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0225"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0226"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0227"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0228"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0229"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0230"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0231"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0232"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0233"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0234"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0235"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0236"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0237"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0238"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0239"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0240"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0241"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0242"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0243"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0244"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0245"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0246"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0247"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0248"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0249"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0250"
+    },
+    {
+      "condition": "control",
+      "trial_id": "CAL001-SYN-0251"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0252"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0253"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0254"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0255"
+    },
+    {
+      "condition": "known-interference",
+      "trial_id": "CAL001-SYN-0256"
+    }
+  ],
+  "truth_commitment_sha256": "094432c695f1c19956538788e38e2d1a75bc0cade3b90b029c7d69207ae5c1da"
+}

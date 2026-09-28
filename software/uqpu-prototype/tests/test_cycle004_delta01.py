@@ -123,8 +123,9 @@ class Cycle004Delta01Tests(unittest.TestCase):
         self.assertFalse(packet["lanes"]["QOS/QSVT"]["hardware_executed"])
 
     def test_committed_cycle004_artifacts_have_valid_cross_links(self):
-        if not PACKET.exists() or not PUBLIC.exists() or not TRUTH.exists():
-            self.skipTest("Cycle 004 generated artifacts are committed after generator SHA is known.")
+        self.assertTrue(PACKET.exists(), "Cycle 004 integrated packet must be committed")
+        self.assertTrue(PUBLIC.exists(), "Cycle 004 public SCM handoff must be committed")
+        self.assertTrue(TRUTH.exists(), "Cycle 004 custodian truth must be committed")
         packet = _load(PACKET)
         public = _load(PUBLIC)
         truth = _load(TRUTH)

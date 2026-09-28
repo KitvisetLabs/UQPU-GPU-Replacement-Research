@@ -1,0 +1,412 @@
+{
+  "cycle": "004",
+  "delta": "01",
+  "evidence_boundary": [
+    "A/C timings are local software measurements on the recorded host only.",
+    "Provider values are tariffs, not a quote, bill or provider-matched result.",
+    "Logical-memory calculations are screening models, not measured retention.",
+    "Materials entries are readiness gates; no coupon was fabricated or measured.",
+    "SCM is emitted as separate synthetic demonstration packages and carries no source claim.",
+    "AI-COST freezes a toy XOR equivalence contract, not frontier-AI economics.",
+    "Independent SDK parsing is not provider acceptance, physical compilation or QPU execution."
+  ],
+  "generator_code_commit": "88887e9365affdb8e904b99ff7fdd0525c160d73",
+  "lanes": {
+    "A": {
+      "clock": "time.perf_counter_ns",
+      "contract_id": "8efaa94bb3306d25",
+      "environment": {
+        "logical_cpu_count": 9,
+        "machine": "x86_64",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "python": "3.12.14"
+      },
+      "evidence_class": "LOCAL_HOST_WALL_CLOCK_MEASUREMENT_EXACT_TOY_BASELINE",
+      "instance_sha256": "bc3fb615b6fd2530694b097fde804e62f165fd7d0953bf66aff4602cd77fa201",
+      "limitations": [
+        "ER6 is a toy with only 64 states and is not a competitive large-instance benchmark.",
+        "Timing includes Python interpreter and function-call overhead.",
+        "No energy, power, memory-residency or hardware-neutral performance was measured.",
+        "This classical result does not establish quantum disadvantage or advantage."
+      ],
+      "result": {
+        "accepted_bitstrings_v5_to_v0": [
+          "001011",
+          "001110",
+          "110001",
+          "110100"
+        ],
+        "best_objective": -7.0,
+        "method": "complete_binary_enumeration",
+        "states_evaluated": 64,
+        "variables": 6
+      },
+      "schema": "uqpu-er6-classical-baseline-measurement-v1",
+      "timing": {
+        "maximum_ns": 551314,
+        "median_ns": 225371,
+        "minimum_ns": 208876,
+        "repetitions": 101
+      }
+    },
+    "AI-COST": {
+      "baseline_provenance": {
+        "epochs": 800,
+        "model": "dense MLP 2-16-1 with tanh hidden and sigmoid output",
+        "operation_ledger": {
+          "add_subtract": 26676000,
+          "division": 204800,
+          "exp": 204800,
+          "multiply": 29595200,
+          "tanh": 3276800,
+          "training_samples_processed": 204800
+        },
+        "reference_held_out_accuracy": 0.98046875,
+        "reference_held_out_binary_cross_entropy": 0.17734677266198473,
+        "seed": 1234,
+        "tensor_payload_ledger": {
+          "gradient_payload_bytes": 520,
+          "logical_peak_payload_bytes_streaming": 7320,
+          "minimum_dataset_read_bytes_over_training": 4915200,
+          "optimizer_parameter_traffic_bytes": 832000,
+          "parameter_payload_bytes": 520,
+          "streaming_activation_payload_bytes_per_example": 136,
+          "train_dataset_payload_bytes": 6144
+        }
+      },
+      "contract_id": "AI-COST-XOR-MLP-2-16-1-V1",
+      "end_to_end_residual_cost_fraction": null,
+      "evidence_class": "REPOSITORY_CLASSICAL_TOY_AI_BASELINE_CONTRACT_NOT_FRONTIER_AI_ECONOMICS",
+      "frontier_ai_baseline": false,
+      "functionally_equivalent_task": {
+        "dataset_generation": "same deterministic train/test generator and seeds",
+        "failed_or_slower_candidate_is_publishable": true,
+        "held_out_accuracy_minimum": 0.98,
+        "held_out_binary_cross_entropy_maximum": 0.19,
+        "held_out_examples": 256,
+        "target_label": "1 iff x1*x2 >= 0 else 0",
+        "train_examples": 256
+      },
+      "quantum_or_uqpu_candidate_measured_cost": null,
+      "source_artifact": "benchmarks/results/batch039-ai-cost-002-classical-baseline.json",
+      "source_artifact_sha256": "db774891882d82d5c4d477ffb6c1239cb0a7bf4dd2d3d18292e20f67fbae11f4",
+      "status": "FUNCTIONAL_EQUIVALENCE_CONTRACT_FROZEN_COST_COMPARISON_BLOCKED"
+    },
+    "B": {
+      "access_date": "2026-09-28",
+      "authorization_status": "NOT_AUTHORIZED",
+      "backend_selected": null,
+      "complete_cost_ledger": {
+        "capital_amortization": null,
+        "classical_host_orchestration": null,
+        "cost_per_accepted_output_usd": null,
+        "energy_cooling": null,
+        "labor": null,
+        "mitigation_decoder": null,
+        "network_transfer": null,
+        "observed_accepted_outputs": null,
+        "provider_actual_bill": null,
+        "provider_qpu_task_and_shot_tariff": "7.563200",
+        "queue": null,
+        "retry_failure": null,
+        "storage": null,
+        "total_cost_usd": null
+      },
+      "credentials_used": false,
+      "evidence_class": "OFFICIAL_TARIFF_SNAPSHOT_AND_COMPLETENESS_GATE_NOT_QUOTE_OR_BILL",
+      "paid_job_submitted": false,
+      "pricing_source": "https://aws.amazon.com/braket/pricing/",
+      "provider": "AWS Braket",
+      "provider_selected": null,
+      "qpu_family": "Rigetti Cepheus",
+      "quote_obtained": false,
+      "region_in_official_example": "US West (N. California)",
+      "reservation_price_usd_per_hour": "4100.00",
+      "rg028_status": "OPEN_DATA_CREDENTIAL_AND_AUTHORIZATION_BLOCKED",
+      "separately_billed_services_noted_by_source": [
+        "Amazon S3",
+        "managed notebooks",
+        "hybrid-job classical resources"
+      ],
+      "shot_price_usd": "0.000425",
+      "shots_per_task": 8192,
+      "task_plus_shot_tariff_usd": "7.563200",
+      "task_price_usd": "0.30",
+      "tasks": 2
+    },
+    "C": {
+      "environment": {
+        "filesystem_path_kind": "temporary_local_path",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "python": "3.12.14"
+      },
+      "evidence_class": "LOCAL_HOST_SOFTWARE_IO_MEASUREMENT_NOT_PROVIDER_IO",
+      "limitations": [
+        "File writes are not followed by fsync and do not prove durable media persistence.",
+        "Operating-system caching is uncontrolled.",
+        "No cloud transfer, QPU readout, provider serialization, network or energy is measured."
+      ],
+      "payload": {
+        "canonical_json_sha256": "fb140f933a1d2e60873d9570c1ce490b4af6c9ee93737ad32d84968067978fb1",
+        "canonical_json_utf8_bytes": 10152
+      },
+      "schema": "uqpu-cycle004-local-manifest-io-measurement-v1",
+      "timing": {
+        "file_read": {
+          "maximum_ns": 90197,
+          "median_ns": 9735,
+          "minimum_ns": 8193,
+          "repetitions": 101
+        },
+        "file_write": {
+          "maximum_ns": 568214,
+          "median_ns": 70707,
+          "minimum_ns": 39640,
+          "repetitions": 101
+        },
+        "json_decode": {
+          "maximum_ns": 349398,
+          "median_ns": 49475,
+          "minimum_ns": 43916,
+          "repetitions": 101
+        },
+        "serialize": {
+          "maximum_ns": 246122,
+          "median_ns": 53952,
+          "minimum_ns": 47172,
+          "repetitions": 101
+        }
+      }
+    },
+    "D": {
+      "assumptions": [
+        "The independent projection assumes identical stationary and independent per-cycle failures.",
+        "The union bound does not assume independence but can be loose.",
+        "The reported overall per-cycle error is used only at its central value.",
+        "The project screening target is a chosen falsification gate, not a published threshold."
+      ],
+      "conclusion": "SOURCE_CENTRAL_VALUE_DOES_NOT_MEET_PROJECT_SCREEN_UNDER_EITHER_SIMPLE_BOUND",
+      "model_only_translation": {
+        "required_per_cycle_error_if_stationary_independent": 0.0005128014162623096,
+        "source_central_value_independent_100_cycle_failure_projection": 0.8105753796333892,
+        "source_central_value_over_independent_limit_ratio": 32.176198186550785,
+        "sufficient_per_cycle_error_by_union_bound": 0.0005,
+        "union_bound_at_source_central_value": 1.0
+      },
+      "project_chosen_service_contract": {
+        "basis_scope": "logical memory survival; basis-resolved acceptance must be reported",
+        "classification": "PROJECT_SCREENING_REQUIREMENT_NOT_A_SOURCE_CLAIM",
+        "decoder_and_erasure_policy_must_be_frozen": true,
+        "logical_qubits": 1,
+        "maximum_total_logical_failure_probability": 0.05,
+        "syndrome_cycles": 100
+      },
+      "project_reproduction": false,
+      "schema": "uqpu-logical-memory-screening-contract-v1",
+      "source_anchor": {
+        "doi": "10.1038/s41586-025-08642-7",
+        "paper": "Putterman et al., Nature 638, 927-934 (2025)",
+        "reported_cycle_microseconds": 2.8,
+        "reported_error_bar_percentage_points": 0.03,
+        "reported_overall_logical_error_per_cycle_central": 0.0165
+      }
+    },
+    "E": {
+      "capital_at_risk_thb": null,
+      "evidence_class": "DOCUMENT_AND_METROLOGY_READINESS_GATE_NO_MATERIAL_MEASUREMENT",
+      "readiness_status": "NOT_READY_NO_FABRICATION_AUTHORIZED",
+      "required_count": 9,
+      "requirements": [
+        {
+          "evidence": "Only official catalog metadata is available.",
+          "requirement": "current_full_method_text",
+          "satisfied": false
+        },
+        {
+          "evidence": "No chain-of-custody or lot record.",
+          "requirement": "authenticated_pangola_species_and_lot",
+          "satisfied": false
+        },
+        {
+          "evidence": "No same-lot measurements.",
+          "requirement": "feedstock_moisture_and_ash",
+          "satisfied": false
+        },
+        {
+          "evidence": "No exact resin system frozen.",
+          "requirement": "resin_hardener_sku_and_ratio",
+          "satisfied": false
+        },
+        {
+          "evidence": "No resin-specific cure schedule.",
+          "requirement": "cure_schedule",
+          "satisfied": false
+        },
+        {
+          "evidence": "No verified fixture/metrology capability.",
+          "requirement": "coupon_dimensions_and_uncertainty",
+          "satisfied": false
+        },
+        {
+          "evidence": "No instrument or calibration booking.",
+          "requirement": "vna_fixture_calibration_and_dynamic_range",
+          "satisfied": false
+        },
+        {
+          "evidence": "No matched comparator fabrication or run.",
+          "requirement": "same_protocol_incumbent_coupon",
+          "satisfied": false
+        },
+        {
+          "evidence": "No authorized fabrication review.",
+          "requirement": "safety_and_waste_review",
+          "satisfied": false
+        }
+      ],
+      "satisfied_count": 0,
+      "standard_catalog": {
+        "access_date": "2026-09-28",
+        "catalog_designation": "D4935-18R26",
+        "compliance_claim_allowed": false,
+        "displayed_edition": "ASTM D4935-18(2026)",
+        "full_text_available_to_project": false,
+        "source_url": "https://store.astm.org/standards/d4935"
+      },
+      "study_id": "DMF-BIOCARBON-EMI-001"
+    },
+    "F": {
+      "capital_amortization": null,
+      "classical_host_orchestration": null,
+      "cost_per_accepted_output_usd": null,
+      "energy_cooling": null,
+      "labor": null,
+      "mitigation_decoder": null,
+      "network_transfer": null,
+      "observed_accepted_outputs": null,
+      "provider_actual_bill": null,
+      "provider_qpu_task_and_shot_tariff": "7.563200",
+      "queue": null,
+      "retry_failure": null,
+      "storage": null,
+      "total_cost_usd": null
+    },
+    "FND/EQN": {
+      "access_date": "2026-09-28",
+      "access_result": "RECORD_METADATA_RESOLVED_PREVIEW_RATE_LIMITED_ARCHIVE_NOT_INGESTED",
+      "description_scope": "bit-flip and logical phase-flip rates of the logical memory",
+      "doi": "10.5281/zenodo.14257632",
+      "evidence_class": "PRIMARY_DATA_RECORD_METADATA_NOT_RAW_DATA_REANALYSIS",
+      "file": {
+        "displayed_size": "145.5 MB",
+        "md5": "d4f051ba40bf3d1940f90f9da4e9953c",
+        "name": "data_upload.zip"
+      },
+      "non_claims": [
+        "No source data point was re-fit or reproduced.",
+        "The MD5 is publisher-displayed metadata, not a locally recomputed digest.",
+        "No project logical-memory result or confidence interval is created by this record lookup."
+      ],
+      "published_date": "2024-12-03",
+      "raw_archive_downloaded": false,
+      "raw_archive_inspected": false,
+      "record_url": "https://zenodo.org/records/14257632",
+      "resource_type": "Dataset",
+      "version": "v1"
+    },
+    "G": {
+      "capital_at_risk_thb": null,
+      "evidence_class": "DOCUMENT_AND_METROLOGY_READINESS_GATE_NO_MATERIAL_MEASUREMENT",
+      "readiness_status": "NOT_READY_NO_FABRICATION_AUTHORIZED",
+      "required_count": 9,
+      "requirements": [
+        {
+          "evidence": "Only official catalog metadata is available.",
+          "requirement": "current_full_method_text",
+          "satisfied": false
+        },
+        {
+          "evidence": "No chain-of-custody or lot record.",
+          "requirement": "authenticated_pangola_species_and_lot",
+          "satisfied": false
+        },
+        {
+          "evidence": "No same-lot measurements.",
+          "requirement": "feedstock_moisture_and_ash",
+          "satisfied": false
+        },
+        {
+          "evidence": "No exact resin system frozen.",
+          "requirement": "resin_hardener_sku_and_ratio",
+          "satisfied": false
+        },
+        {
+          "evidence": "No resin-specific cure schedule.",
+          "requirement": "cure_schedule",
+          "satisfied": false
+        },
+        {
+          "evidence": "No verified fixture/metrology capability.",
+          "requirement": "coupon_dimensions_and_uncertainty",
+          "satisfied": false
+        },
+        {
+          "evidence": "No instrument or calibration booking.",
+          "requirement": "vna_fixture_calibration_and_dynamic_range",
+          "satisfied": false
+        },
+        {
+          "evidence": "No matched comparator fabrication or run.",
+          "requirement": "same_protocol_incumbent_coupon",
+          "satisfied": false
+        },
+        {
+          "evidence": "No authorized fabrication review.",
+          "requirement": "safety_and_waste_review",
+          "satisfied": false
+        }
+      ],
+      "satisfied_count": 0,
+      "standard_catalog": {
+        "access_date": "2026-09-28",
+        "catalog_designation": "D4935-18R26",
+        "compliance_claim_allowed": false,
+        "displayed_edition": "ASTM D4935-18(2026)",
+        "full_text_available_to_project": false,
+        "source_url": "https://store.astm.org/standards/d4935"
+      },
+      "study_id": "DMF-BIOCARBON-EMI-001"
+    },
+    "H": {
+      "capital_gates": [
+        {
+          "capital_at_risk_thb": null,
+          "gate_id": "CAP-DMF-EMI-001",
+          "status": "NOT_AUTHORIZED"
+        },
+        {
+          "capital_at_risk_thb": null,
+          "gate_id": "CAP-BOSONIC-001",
+          "status": "NOT_AUTHORIZED"
+        }
+      ],
+      "funding_or_purchase_authorized": false
+    },
+    "QOS/QSVT": {
+      "candidate_count": 2,
+      "hardware_executed": false,
+      "independent_sdk": "qiskit==2.5.2",
+      "input_manifest": "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-manifest.json",
+      "provider_transpilation": null,
+      "required_checks": [
+        "QASM 3 parse",
+        "register widths",
+        "operation counts",
+        "terminal measurement map"
+      ],
+      "status": "PINNED_INDEPENDENT_SDK_PARSE_GATE_ATTACHED_TO_CI"
+    }
+  },
+  "schema": "uqpu-cycle004-delta01-integrated-baseline-and-gates-v1",
+  "status": "LOCAL_SOFTWARE_MEASUREMENT_AND_PROTOCOL_GATES_NO_NEW_HARDWARE_EVIDENCE"
+}
