@@ -206,6 +206,7 @@ class Cycle015Tests(unittest.TestCase):
         self.assertEqual(out["parent_certificate_v4_sha256"], parent["certificate_sha256"])
         self.assertEqual(out["basis_states_checked"], 64)
         self.assertEqual(out["maximum_integer_residual"], 0)
+        self.assertEqual(len(out["permutation_matrix_sha256"]), 64)
         self.assertIsNone(out["hardware"])
 
 

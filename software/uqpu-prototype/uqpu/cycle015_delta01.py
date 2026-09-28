@@ -612,12 +612,23 @@ def _apply_gate_word(state, gate):
 
 def _permutation_matrix(width, gates):
     size = 1 << width
-    matrix = [[0] * size for _ in range(size)]
-    for column in range(size):
-        row = column
-        for gate in gates:
-            row = _apply_gate_word(row, gate)
-        matrix[row][column] = 1
+    matrix = [[int(row == column) for column in range(size)] for row in range(size)]
+    for gate in gates:
+        elementary = [[0] * size for _ in range(size)]
+        for column in range(size):
+            if gate["op"] == "x":
+                row = column ^ (1 << gate["target"])
+            elif gate["op"] == "cx":
+                row = column ^ (1 << gate["target"] if (column & (1 << gate["control"])) else 0)
+            else:
+                raise ValueError("gate operation")
+            elementary[row][column] = 1
+        # Compose explicit 64x64 gate matrices independently of the direct
+        # bit-word simulator used for the basis-state comparison.
+        matrix = [
+            [sum(elementary[row][k] * matrix[k][column] for k in range(size)) for column in range(size)]
+            for row in range(size)
+        ]
     return matrix
 
 
@@ -661,6 +672,7 @@ def qos_er6_reconstruction_v5(parent_certificate_v4, gates):
         "certificate_v4": current,
         "reconstruction": "independent basis-permutation matrix versus gate-word simulation",
         "basis_states_checked": 64,
+        "permutation_matrix_sha256": canonical_hash(matrix),
         "maximum_integer_residual": residual,
         "hardware": None,
         "evidence_class": "ER6_SYNTHETIC_RECONSTRUCTION",

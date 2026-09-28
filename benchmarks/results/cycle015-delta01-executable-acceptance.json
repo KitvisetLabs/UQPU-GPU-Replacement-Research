@@ -139,7 +139,7 @@
         23
       ],
       "visible_complete": true,
-      "visible_sha256": "73c118ec3ea38171d2d4a6a58adfa93375c59745ab9a9ae94007e6ecbf349e23",
+      "visible_sha256": "74c70d565841a949393be062208b55fcbdfef826b1bb0afb8ab776e62d0c106d",
       "writer_count": 3
     },
     "D": {
@@ -444,8 +444,9 @@
       "hardware": null,
       "maximum_integer_residual": 0,
       "parent_certificate_v4_sha256": "fe6fa1b4e203e7a51060c99718765769365a26d69403a197db99fadc2afeef5a",
+      "permutation_matrix_sha256": "dcc7dcb47e6e643719625ad33176de2871af362f029157b7d21c87595e097adf",
       "reconstruction": "independent basis-permutation matrix versus gate-word simulation",
-      "reconstruction_sha256": "cdebf6f38f36eb3643a0d136b039945febf7372da5d466ce7bff641dae688e21",
+      "reconstruction_sha256": "a7de10759846eea5b32f7100d797494b74e2dfb3e38d46006be6a079b131d521",
       "version": 5
     },
     "SCM": {
@@ -469,7 +470,7 @@
   ],
   "schema": "uqpu-cycle015-delta01-executable-acceptance-v1",
   "source_hashes": {
-    "cycle015_module": "4e3cb96592f971913090d460fb2249603fb3b6e440bacc4f3ca27c51ff98e066",
+    "cycle015_module": "9230a3b45154f38786a78449eb8e1ec94bb3a0ceb84f3e3eb59d3eb264d40ded",
     "cycle015_tests": "407b23ba576725e945d076cdebaa33bb7c9346f65f331f328b0ddcad0a9274af",
     "preregistered_gates": "9c8095a79b282e1d99a049fae0d9dd8dd0baba17726e1a8126227089d77e039c",
     "umrl": "d9461bda152fa3bf3f8389edd675b868982a0e0c7f26548a839a966bc70b40b2"
