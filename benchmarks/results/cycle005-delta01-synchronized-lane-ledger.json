@@ -1,0 +1,209 @@
+{
+  "schema": "uqpu-synchronized-cycle-lane-ledger-v1",
+  "cycle": "005",
+  "delta": "01",
+  "date": "2026-09-28",
+  "status": "CLOSED_SYNCHRONIZED_RESEARCH_CYCLE_NO_EVIDENCE_PROMOTION",
+  "policy": "All 12 canonical portfolio lanes have a concrete progress event; evidence is lane-local and no result is promoted across lanes.",
+  "evidence_summary": {
+    "new_local_software_measurements": true,
+    "new_empirical_hardware_or_material_claims": false,
+    "live_qpu_executed": false,
+    "paid_job_submitted": false,
+    "pangola_coupons_fabricated": false,
+    "human_participant_study_started": false,
+    "capital_authorized": false,
+    "evidence_promotion": "none"
+  },
+  "lane_count": 12,
+  "lanes": [
+    {
+      "lane": "A",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Measured deterministic fresh-process 6/10/14-node MaxCut screens with complete 64/1024/16384-state enumeration, 16-restart seeded greedy comparison, explicit state/time caps, wall time and Linux ru_maxrss high-water marks. Exact objectives were -7/-15/-36 and the heuristic gaps were zero on these three small generated fixtures.",
+      "evidence_class": "LOCAL_HOST_CLASSICAL_SOFTWARE_MEASUREMENT_NOT_COMPETITIVE_BENCHMARK",
+      "dependency": "No established benchmark-suite instance, competitive solver, power/energy measurement, incremental memory isolation, hardware-neutral timing, provider run or scaling inference.",
+      "next_cycle": "Add an n=18 complete case and an intentionally cap-terminated larger case in fresh processes; report repeated-run distributions and no scaling extrapolation."
+    },
+    {
+      "lane": "B",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Built a local AWS Braket CreateQuantumTask dry-run body and validated the six official required fields. The frozen action and shots are present, while clientToken, deviceArn, outputS3Bucket and outputS3KeyPrefix remain null; no submit method exists.",
+      "evidence_class": "OFFICIAL_API_SCHEMA_DRY_RUN_NOT_PROVIDER_VALIDATION_OR_EXECUTION",
+      "dependency": "No credentials, provider/backend selection, output location, authorization, submission, task ARN, observation, result, timing or billing record.",
+      "next_cycle": "Add a provider-neutral execution-receipt schema and negative request-validation corpus while retaining null identifiers and no submit surface."
+    },
+    {
+      "lane": "C",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Measured 21 local repetitions of write+flush+file-fsync, first read, immediate repeat read, JSON decode, and incremental Python-allocation peaks for the 10152-byte canonical Cycle 003 manifest, with explicit cache and durability labels.",
+      "evidence_class": "LOCAL_HOST_FILE_FSYNC_AND_SOFTWARE_MEMORY_MEASUREMENT_NOT_CLOUD_IO",
+      "dependency": "Kernel cache state, directory durability, storage-device flush, power-loss survival, provider transfer, cloud latency, energy and process/device memory remain uncontrolled or unmeasured.",
+      "next_cycle": "Add a platform-declared cache-control protocol, directory-fsync option and fresh-process RSS measurements; skip unsupported controls instead of relabeling them."
+    },
+    {
+      "lane": "D",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Mapped primary-record preview families for distance-5 and two distance-3 bit/phase datasets into the frozen service interface while explicitly keeping basis-resolved values, uncertainty and project reproduction false.",
+      "evidence_class": "PRIMARY_RECORD_PREVIEW_ROUTING_NOT_RAW_DATA_ANALYSIS",
+      "dependency": "The 145469232-byte archive was not downloaded, checksummed locally, parsed or analyzed; formats, columns, units, values and uncertainty remain unknown.",
+      "next_cycle": "Test a checksum-preserving byte-range or central-directory metadata retrieval protocol if supported; keep analysis and reproduction false until full provenance validates."
+    },
+    {
+      "lane": "E",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Created nine stable materials prerequisite IDs with immutable evidence slots requiring an artifact URI, SHA-256, issuer/operator, date and reviewer. All slots fail closed when empty.",
+      "evidence_class": "IMMUTABLE_EVIDENCE_SLOT_SCHEMA_NO_MATERIAL_MEASUREMENT",
+      "dependency": "All 9 evidence slots remain empty; authorized method, authenticated lot, same-lot characterization, exact resin/cure, metrology, matched control and safety review are absent.",
+      "next_cycle": "Add a registry validator rejecting mutable references, malformed digests, missing authority/reviewer, expired evidence and cross-lot substitutions; do not fabricate."
+    },
+    {
+      "lane": "F",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Implemented a machine-checkable completeness gate for ten lifecycle cost components, a positive accepted-output denominator, same-provider execution/bill and a matched classical baseline. Thirteen absent/invalid prerequisites force total and cost per accepted output to remain null.",
+      "evidence_class": "FAIL_CLOSED_COMPLETE_COST_VALIDATOR_NO_COMMERCIAL_ECONOMICS",
+      "dependency": "RG028 remains data, credential, authorization and completeness blocked; no actual bill, lifecycle ledger, same-provider acceptance count or matched baseline exists.",
+      "next_cycle": "Add adversarial/property tests for missing, negative, non-finite, mixed-currency, cross-provider and unmatched-acceptance ledgers."
+    },
+    {
+      "lane": "G",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Defined a six-stage hash-linked material custody contract plus explicit uncertainty-budget, calibration-validity, fixture-dynamic-range and same-session matched-control fields.",
+      "evidence_class": "CHAIN_OF_CUSTODY_AND_UNCERTAINTY_SCHEMA_NO_PHYSICAL_SAMPLE",
+      "dependency": "No custody event, lot, sample, valid calibration, uncertainty component, matched control or physical measurement exists.",
+      "next_cycle": "Implement custody-DAG and dimensional-uncertainty validation with synthetic broken-chain, expired-calibration and unmatched-control fixtures only."
+    },
+    {
+      "lane": "H",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Linked CAP-DMF-EMI-001 to DMF-PR-01 through DMF-PR-09 and CAP-BOSONIC-001 to six explicit data/device prerequisites, preserving machine-resolvable IDs, null amounts and no decision.",
+      "evidence_class": "CAPITAL_GATE_DEPENDENCY_SCHEMA_NO_FINANCIAL_DECISION",
+      "dependency": "Prerequisites remain unresolved and this research process cannot authorize funding, purchases or capital deployment.",
+      "next_cycle": "Derive blocker lists automatically from E/G/FND-EQN/F prerequisite IDs and prove any unresolved input keeps both gates unauthorized."
+    },
+    {
+      "lane": "FND/EQN",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Inventoried the Zenodo server preview top-level README, distance-5 and two distance-3 bit/phase families and sampled phase-flip nbar groups; retained exact failed-response length and publisher-displayed MD5 without interpreting values.",
+      "evidence_class": "PRIMARY_RECORD_AND_SERVER_PREVIEW_INVENTORY_NOT_RAW_DATA_ANALYSIS",
+      "dependency": "Archive/local checksum, explicit license, README contents, formats, columns, units and semantic provenance remain unavailable.",
+      "next_cycle": "Record authoritative response headers/range support and inventory the ZIP central directory only if reproducibly accessible; keep license and semantics null unless explicitly sourced."
+    },
+    {
+      "lane": "SCM",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Rehearsed the Cycle 004 synthetic handoff with separate logical scorer/custodian access logs, per-role hash chains, a frozen-score commitment and a pre-registered reveal-after-score-commit rule.",
+      "evidence_class": "SYNTHETIC_CHAINED_ACCESS_LOG_REHEARSAL_NOT_OPERATIONAL_BLINDING",
+      "dependency": "Logical actors share one process and repository; no independently authenticated accounts, site, human data, physical detector or source evidence exists.",
+      "next_cycle": "Emit separate synthetic role packages with append-only chain validation and a reveal-order adversarial test while retaining same-site/non-operational labels."
+    },
+    {
+      "lane": "AI-COST",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Added a machine-checkable candidate schema bound to the exact toy baseline file, seed 1234, 256 train/256 held-out examples, accuracy at least 0.98 and BCE at most 0.19; mismatches and quality failures reject while failed/slower candidates remain publishable.",
+      "evidence_class": "MACHINE_CHECKABLE_TOY_AI_COMPARISON_SCHEMA_NO_CANDIDATE_RESULT",
+      "dependency": "No immutable generated sample hashes, functionally equivalent candidate, candidate metrics, measured energy or end-to-end cost; this is not frontier-AI economics.",
+      "next_cycle": "Freeze canonical train/test sample hashes and add rejected mismatch/failing-quality fixtures; keep measured candidate cost and energy null."
+    },
+    {
+      "lane": "QOS/QSVT",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "progress": "Persisted the successful Cycle 004 Qiskit 2.5.2 parse with Actions provenance, cross-checked hashes/widths/counts/depth/terminal maps using a second limited grammar checker, and added a live pinned-SDK replay in CI. Provider-transpile fields default null.",
+      "evidence_class": "PERSISTED_PINNED_SDK_PARSE_PLUS_LIMITED_GRAMMAR_CHECK_NOT_PROVIDER_VALIDATION",
+      "dependency": "No provider acceptance, physical transpilation, layout, physical depth, calibration, hardware execution or application-specific QSVT certificate.",
+      "next_cycle": "Add canonical parse-dump-parse round-trip/hash checks and a provider-transpile receipt schema that remains null without credentials."
+    }
+  ],
+  "source_register": [
+    {
+      "id": "cycle005-integrated-packet",
+      "ref": "benchmarks/results/cycle005-delta01-integrated-gates.json",
+      "sha256": "8565b48b474790755ac9f5ba97312f20d13bfd2167ab8ea4ad2abcb4a0818825",
+      "generator_commit": "6b71722d7e19649b5b54b6a1a7105b9795881f0f"
+    },
+    {
+      "id": "cycle005-scm-rehearsal",
+      "ref": "benchmarks/results/cycle005-delta01-scm-cal001-synthetic-rehearsal.json",
+      "sha256": "be21951766c637047bb5b73267dd164f638e2de85c42749cb00603a572555c6f"
+    },
+    {
+      "id": "cycle005-persisted-cycle004-qiskit-parse",
+      "ref": "benchmarks/results/cycle005-delta01-cycle004-qiskit-ci-parse.json",
+      "sha256": "a97fd4dfe313843381e03ae12cd994798b9e29020de0a73d02e9461f93344668",
+      "source_run_number": 490,
+      "source_job_id": 108741564430
+    },
+    {
+      "id": "cycle003-er6-provider-neutral-manifest",
+      "ref": "benchmarks/experiments/cycle003-delta01-er6-provider-neutral-manifest.json",
+      "sha256": "6e2df63eb26f38b7ba1c6da26df5f31622c16b32f1349b5ded20b1f09fffe511"
+    },
+    {
+      "id": "batch039-ai-classical-baseline-repository-bytes",
+      "ref": "benchmarks/results/batch039-ai-cost-002-classical-baseline.json",
+      "sha256": "76ec0c685223fbe63935701626e178577563a38498da0b54008ce5160680e4fe"
+    },
+    {
+      "id": "aws-braket-create-task-api",
+      "url": "https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQuantumTask.html",
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_API_SCHEMA_NOT_PROVIDER_VALIDATION"
+    },
+    {
+      "id": "python-resource-getrusage",
+      "url": "https://docs.python.org/3/library/resource.html",
+      "access_date": "2026-09-28",
+      "evidence_class": "OFFICIAL_RUNTIME_API_SEMANTICS"
+    },
+    {
+      "id": "zenodo-bosonic-qec-data",
+      "url": "https://zenodo.org/records/14257632",
+      "publication_date": "2024-12-03",
+      "access_date": "2026-09-28",
+      "evidence_class": "PRIMARY_DATA_RECORD_AND_SERVER_PREVIEW_ARCHIVE_NOT_INGESTED"
+    }
+  ],
+  "verification": {
+    "workflow": ".github/workflows/uqpu-tests.yml",
+    "local_full_suite_passed": 425,
+    "local_optional_environment_skipped": 8,
+    "all_attempts_success": true,
+    "latest_required_run_success": true,
+    "runs": [
+      {
+        "run_number": 491,
+        "run_id": 36374044931,
+        "commit_sha": "9eb20cd7faf9ee16f32eec3fdb5a375155e81e49",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36374044931"
+      },
+      {
+        "run_number": 492,
+        "run_id": 36374127513,
+        "commit_sha": "6b71722d7e19649b5b54b6a1a7105b9795881f0f",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36374127513"
+      },
+      {
+        "run_number": 493,
+        "run_id": 36374192285,
+        "commit_sha": "b8c29075c6b22005a43e210dab974062cbfd04fb",
+        "conclusion": "success",
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36374192285"
+      }
+    ],
+    "coverage_note": "Run 491 validated the initial twelve-lane code and persisted Qiskit record; run 492 validated corrected byte-labelled allocation summaries; run 493 passed all eight jobs with mandatory committed Cycle 005 artifact hashes and cross-links, live pinned-Qiskit versus persisted-output comparison, limited grammar check, Python 3.10/3.11/3.12 matrix, reference benchmark, QSP and target-snapshot jobs."
+  },
+  "closure": {
+    "cycle_closed": true,
+    "closure_basis": [
+      "all 12 canonical portfolio lane progress events recorded with no NO_UPDATE",
+      "local measurement, source inventory, validation and synthetic-rehearsal artifacts committed and content hashed",
+      "Cycle 005 report and all-lane Cycle 006 handoff recorded",
+      "425 local tests passed with only eight declared optional-environment skips",
+      "mandatory artifact hashes, all-lane coverage and cross-links passed in GitHub Actions run 493",
+      "all eight configured jobs passed on the artifact-inclusive commit"
+    ],
+    "evidence_promotion": "none"
+  }
+}
