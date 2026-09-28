@@ -1010,9 +1010,14 @@ toy-data hashes and the ER6 QASM subset round-trip.
 
 Local prototype validation passed 439 tests with 8 optional-environment skips; all 14 Cycle 006 focused tests passed.
 GitHub Actions #497 (run ID `36377715615`) passed all eight jobs on integrated
-artifact commit `1a37cdd968f8bf9ebadd343f53a4f78996939d4a`. The report, lane-ledger
-and Cycle 007 handoff assertions are being added to the closeout commit and
-must pass the workflow for that exact pushed state before Cycle 006 is closed.
+artifact commit `1a37cdd968f8bf9ebadd343f53a4f78996939d4a`. Report-inclusive
+Actions #498 (run ID `36406238185`) then passed all eight jobs on commit
+`caabf3ec0aeaf9eab0e2952d3b665d3753aea348`, including the ledger/report/handoff
+assertions. A GitHub API transfer truncated only the large root `DECISIONS.md`
+and `WORKLOG.md` files in that commit; correction commit
+`53bc1eb29c44615134406d8b395a8c99d41c75d6` restored them, and its complete tree
+SHA matches the locally tested tree. These root paths do not trigger the CI
+workflow. Cycle 006 is closed after report-inclusive run #498 passed.
 
 No paid QPU job, material purchase/fabrication, human study, funding decision,
 physical-law or spiritual-channel claim, quantum advantage, project hardware

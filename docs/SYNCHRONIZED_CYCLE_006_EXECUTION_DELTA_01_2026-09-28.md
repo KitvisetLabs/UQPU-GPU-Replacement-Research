@@ -1,7 +1,7 @@
 # Synchronized Multi-Lane Cycle 006 — Delta 01
 
 **Date:** 2026-09-28
-**Status:** CLOSEOUT PENDING REPORT-INCLUSIVE CI
+**Status:** CYCLE 006 CLOSED AFTER REPORT-INCLUSIVE CI #498
 **Branch:** `research/cycle-006-delta-01-2026-09-28`
 **Cycle base:** Cycle 005 closed at `87ad99f87c12fc406252b5360cea774e38322318`
 **Implementation commit:** `f336b6ddbda555aaba212b5c05bd0a818e9c6368`
@@ -103,7 +103,8 @@ record's published date (2024-12-03) is not a project experiment date.
 
 - The local full prototype suite passed **439 tests** with **8 optional-environment skips**; the Cycle 006 focused suite passed **14/14 tests**.
 - GitHub Actions **#497**, run ID `36377715615`, on integrated artifact commit `1a37cdd968f8bf9ebadd343f53a4f78996939d4a`, passed all **8 jobs**, including Python 3.10/3.11/3.12, reference benchmark, Qiskit verification, both QSP jobs and target-snapshot checks.
-- The new report, lane-ledger and Cycle 007 handoff assertions are included in this closeout commit. The workflow run for this commit is the final cycle closeout gate; Cycle 006 will be marked closed only after that run succeeds.
+- GitHub Actions **#498**, run ID `36406238185`, on report/ledger/handoff-and-test commit `caabf3ec0aeaf9eab0e2952d3b665d3753aea348`, passed all **8 jobs**; the Cycle 006 artifact tests, all three Python versions, reference benchmark, Qiskit, QSP and target-snapshot jobs succeeded.
+- Commit `53bc1eb29c44615134406d8b395a8c99d41c75d6` repaired a truncated transfer of the two large root log files. Its tree SHA `e9866eb641ac30a4c0353f1a045023f026825b4e` matches the locally tested tree; its only changed paths are `DECISIONS.md` and `WORKLOG.md`, which are excluded from the workflow path filter. The report, lane ledger, handoff, test and integrated artifacts are unchanged from the report-inclusive CI commit. Cycle 006 is closed after #498 succeeded.
 
 No paid QPU job, purchase, material fabrication, human study, funding decision,
 capital authorization, real-world spiritual-source result, new physical law,
