@@ -1,0 +1,35 @@
+{
+  "schema": "uqpu-cycle035-delta01-preregistered-gates-v1",
+  "cycle": "035",
+  "delta": "01",
+  "date": "2026-10-01",
+  "branch": "research/cycle-035-delta-01-2026-09-30",
+  "base_cycle034_closeout_sha": "b7d10027569ccc5bbd198a2617b886f31f759890",
+  "cycle034_code_evidence_sha": "5a2c7ae05f4cdd8af931240699496d304e3ba35d",
+  "cycle034_actions": {"run_id": 36722413260, "jobs_passed": 8, "jobs_failed": 0, "status": "PASS"},
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {"status": "BLOCKED_WITH_PROGRESS", "unmeasured_values": null, "fiction_empirical_cast": "prohibited", "lane_count": 12, "no_update_status": "prohibited"},
+  "lanes": {
+    "A": {"action": "Fifteenth weighted graph fixture with action-conjugacy aggregation and an independent orbit checksum.", "acceptance": "Exact enumeration, direct/Burnside/checksum equality and deterministic hashes pass; scaling remains null."},
+    "B": {"action": "Typed canonicalization over deeper heterogeneous arrays, exponent edges and Unicode-surrogate rejection.", "acceptance": "Equivalent objects bind; tag/key/depth/token/precision/exponent/Unicode controls reject; provider evidence null."},
+    "C": {"action": "Nine readers, five replacement stages and explicit fsync-order negative controls.", "acceptance": "Complete bytes/descriptors, successful calls and order-gate rejection bind; crash/power-loss durability null."},
+    "D": {"action": "Bind ZIP64 locator placement, EOCD trailing-byte policy and comment boundary lengths.", "acceptance": "Placement, trailing, comment, CRC, count, disk, offset and size mutations reject; real corpus open."},
+    "E": {"action": "Fifteenth issuer with policy rollback/fork rejection and policy-chain hashes.", "acceptance": "Policy continuity, quorum, signer set, freshness, head, scope, ancestry and time fail closed; physical sample null."},
+    "F": {"action": "Nineteen sparse components with permutation roundtrip and block-label inverse maps.", "acceptance": "Exact double-permutation recovery; invalid, missing, non-finite and zero outputs remain null; model only."},
+    "G": {"action": "Compose six signed transforms and bind selected Cayley closure/inverse rows.", "acceptance": "Exact closure, inverse, associativity and covariance invariants pass; calibration null."},
+    "H": {"action": "Nineteenth scenario with exhaustive leave-one through leave-eleven subset intervals.", "acceptance": "Exact grid counts/range only; no probability or capital claim."},
+    "FND/EQN": {"action": "Compose twelve affine maps and bind exact Lipschitz and inverse-Lipschitz bounds.", "acceptance": "Endpoint, derivative and inverse equality; source/order/dimension/nonmonotone controls reject; no new-law claim."},
+    "SCM": {"action": "Eight observers with quorum-six intersection and membership epochs.", "acceptance": "Split, stale, fork, replay, downgrade, audience, revocation and membership controls reject; empirical coupling null."},
+    "AI-COST": {"action": "Manifest v25 with padding-exclusion proofs over twelve real leaves.", "acceptance": "Root, padding, exclusion, minimality, order, index, source, schema, config and metric mutations reject; equivalence null."},
+    "QOS/QSVT": {"action": "Compose thirteen inverse pairs and bind a dependency DAG for sequential/parallel depth bounds.", "acceptance": "Exact reconstruction, DAG, proof, tree, order and resource mutations with explicit bounds pass; hardware evidence null."}
+  },
+  "primary_sources": [
+    {"title": "PKWARE APPNOTE v6.3.10 FINAL", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "source_date": "2022-11-01", "access_date": "2026-10-01", "locator": "sections 4.3.6, 4.3.7, 4.3.9, 4.3.12 and 4.3.14–4.3.16", "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"},
+    {"title": "Python os.fsync documentation", "url": "https://docs.python.org/3/library/os.html#os.fsync", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"}
+  ],
+  "assumptions": ["All inputs are bounded fixtures or models.", "Successful fsync calls and ordering validation do not establish crash/power-loss durability.", "Custody receipt hashes are synthetic fixtures, not cryptographic signatures.", "SCM records are fiction-only."],
+  "uncertainty": ["Provider authorization/billing, crash durability, archive interoperability, operational custody, measured covariance/calibration, owner priorities, independent derivation, real held-out equivalence and target hardware evidence remain open."],
+  "nonclaims": ["No measured QPU/GPU performance, scaling or quantum advantage.", "No provider execution/invoice, commercial economics or capital result.", "No crash durability, cryptographic signature, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."],
+  "next_falsifiable_gate": "Implement all twelve bounded packets, publish source-hashed acceptance evidence, run focused and regression tests, and verify exact-SHA GitHub Actions."
+}
