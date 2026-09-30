@@ -1,0 +1,2319 @@
+{
+  "assumptions": [
+    "All graph, receipt, archive, custody, covariance, ranking, lineage and operator inputs are bounded fixtures or models.",
+    "Partial-write, fsync, rename and cleanup failure paths do not establish crash or power-loss durability.",
+    "Custody receipt signatures are synthetic hashes, not cryptographic signatures or authority evidence.",
+    "SCM records are fiction-only and cannot be cast to empirical evidence."
+  ],
+  "base_cycle037_closeout_sha": "0f932fa74c86267a25f3cf6e8b095bfd1144ce68",
+  "branch": "research/cycle-038-delta-01-2026-10-01",
+  "cycle": "038",
+  "focused_tests_commit_sha": "102580b25d9320fff1ca7499d3f78e137f401a38",
+  "implementation_commit_sha": "2eae04ec95be04c0bb9259d54c7677989d7626c3",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "action_count": 56,
+      "burnside_matches_direct": true,
+      "burnside_numerator": 56,
+      "burnside_orbit_count": 1,
+      "canonical_orbit_representatives": [
+        5461
+      ],
+      "class_vector_sha256": "662913e1b485628b7d8f3fd161df36c9edc5149534a1377ad67ae40bbb52b744",
+      "conjugacy_class_count": 20,
+      "conjugacy_class_fixed_vector": [
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            -1,
+            0,
+            false
+          ],
+          "size": 7
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            -1,
+            0,
+            true
+          ],
+          "size": 7
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            -1,
+            1,
+            false
+          ],
+          "size": 7
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            -1,
+            1,
+            true
+          ],
+          "size": 7
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            0,
+            false
+          ],
+          "size": 1
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            0,
+            true
+          ],
+          "size": 1
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            1,
+            false
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            1,
+            true
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            2,
+            false
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            2,
+            true
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            3,
+            false
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            3,
+            true
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            4,
+            false
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            4,
+            true
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            5,
+            false
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            5,
+            true
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            6,
+            false
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            6,
+            true
+          ],
+          "size": 2
+        },
+        {
+          "fixed": 0,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            7,
+            false
+          ],
+          "size": 1
+        },
+        {
+          "fixed": 2,
+          "fixed_constant": true,
+          "representative": [
+            1,
+            7,
+            true
+          ],
+          "size": 1
+        }
+      ],
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "fixed_counts_constant_within_classes": true,
+      "objective": 14,
+      "representative_reconstruction_matches": true,
+      "scaling_claim": null,
+      "set_orbit_encoding": [
+        [
+          5461,
+          10922
+        ]
+      ],
+      "states": 16384,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "task_sha256": "053592079a97a05de7eb4c4610d4d315e448d5f2e68330a2f180e832a447c73c",
+      "two_orbit_encodings_match": true,
+      "union_find_orbit_encoding": [
+        [
+          5461,
+          10922
+        ]
+      ],
+      "witness_count": 2,
+      "witness_sha256": "7a0fef4dd7c7e595fd5cba5201b6c09f41f2d0d747cef298a063f8aabfd84f7c"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "compressed_multiproof_node_count": 7,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "functional_equivalence": null,
+      "individual_proof_node_count": 24,
+      "manifest": {
+        "config_sha256": "7bf493c4c3d09ed3e437df4f7608bc0daba5f18bdbfa2323ad324cc308b652ad",
+        "metric_sha256": "8cc3916ab1dc76f7b5b6198cd0a30ad44b4a434cec90147783636d9b51919f65",
+        "multiproof_sha256": "d42c94ea9e786e17fff52bab530409521c660caeecf761b80cdc3de27f19530c",
+        "padding_exclusion_indices": [
+          15
+        ],
+        "real_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "root_sha256": "2ab7792a4635a9f8c951b17425bae95922c382081f4e64bfb3bff3f16b468c8d",
+        "selected_indices": [
+          0,
+          4,
+          8,
+          12,
+          14
+        ],
+        "source_sha256": "4815f4b6d31063bbbf55cc686b4114b6551833321f176b2ce01eaebaa375d510",
+        "version": 28
+      },
+      "multiproof_is_smaller": true,
+      "multiproof_target_count": 6,
+      "mutation_rejections": {
+        "config": true,
+        "index": true,
+        "metric": true,
+        "order": true,
+        "padding_domain": true,
+        "padding_exclusion": true,
+        "proof_minimality": true,
+        "proof_order": true,
+        "proof_path": true,
+        "proof_value": true,
+        "root": true,
+        "schema": true,
+        "source": true
+      },
+      "padded_leaf_count": 16,
+      "padding_exclusion_count": 1,
+      "padding_leaf_count": 1,
+      "real_leaf_count": 15,
+      "selected_leaf_count": 5,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "valid_manifest": true
+    },
+    "B": {
+      "canonical_sha256": "881c34430f5615f283e19d5df7fbe83697b0a9b75494b18eb18d72840e8b3f6f",
+      "caps": {
+        "depth": 11,
+        "max_exact_integer": 9007199254740991,
+        "maximum_exponent": 40,
+        "minimum_exponent": -40,
+        "tokens": 72
+      },
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "inserted_default": {
+        "mode": "strict",
+        "retry": 0
+      },
+      "negative_controls": {
+        "depth": true,
+        "duplicate_value": true,
+        "exponent_high": true,
+        "exponent_low": true,
+        "integer": true,
+        "missing_default": true,
+        "normalized_key": true,
+        "path": true,
+        "surrogate": true,
+        "tag": true,
+        "tokens": true,
+        "version_high": true,
+        "version_low": true,
+        "wrong_default": true
+      },
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "upgrade_matches_v3": true
+    },
+    "C": {
+      "all_fsync_orders_valid": true,
+      "all_reader_observations_complete": true,
+      "all_retained_descriptors_complete": true,
+      "all_temporary_cleanup_complete": true,
+      "crash_durability": null,
+      "directory_fsync_call_count": 16,
+      "evidence_class": "LOCAL_TWELVE_READER_RENAME_CLEANUP_FIXTURE",
+      "failure_controls": {
+        "directory_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true,
+          "replace_occurred": true,
+          "temporary_cleanup_complete": true,
+          "trace": [
+            "write",
+            "file_fsync",
+            "replace",
+            "directory_fsync_error"
+          ]
+        },
+        "file_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true,
+          "replace_occurred": false,
+          "temporary_cleanup_complete": true,
+          "trace": [
+            "write",
+            "cleanup"
+          ]
+        },
+        "partial_write": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true,
+          "replace_occurred": false,
+          "temporary_cleanup_complete": true,
+          "trace": [
+            "partial_write",
+            "cleanup"
+          ]
+        },
+        "rename": {
+          "evidence_promoted": false,
+          "injected_failure_observed": true,
+          "rejected_as_durable": true,
+          "replace_occurred": false,
+          "temporary_cleanup_complete": true,
+          "trace": [
+            "write",
+            "file_fsync",
+            "rename_error",
+            "cleanup"
+          ]
+        },
+        "temporary_cleanup": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true,
+          "replace_occurred": false,
+          "temporary_cleanup_complete": true,
+          "temporary_removed": true,
+          "trace": [
+            "write",
+            "cleanup"
+          ]
+        }
+      },
+      "file_fsync_call_count": 16,
+      "power_loss_durability": null,
+      "reader_count": 12,
+      "replacement_stages": 8,
+      "runs": [
+        {
+          "all_stage_orders_valid": true,
+          "reader_complete": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "reader_counts": [
+            46,
+            47,
+            44,
+            46,
+            45,
+            46,
+            44,
+            44,
+            44,
+            46,
+            46,
+            47
+          ],
+          "retained_descriptors_complete": true,
+          "run": 0,
+          "stage_orders": [
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ]
+          ],
+          "temporary_cleanup_complete": true
+        },
+        {
+          "all_stage_orders_valid": true,
+          "reader_complete": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "reader_counts": [
+            46,
+            47,
+            47,
+            47,
+            47,
+            46,
+            48,
+            47,
+            45,
+            45,
+            47,
+            47
+          ],
+          "retained_descriptors_complete": true,
+          "run": 1,
+          "stage_orders": [
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ],
+            [
+              "write",
+              "file_fsync",
+              "replace",
+              "directory_fsync"
+            ]
+          ],
+          "temporary_cleanup_complete": true
+        }
+      ],
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "canonical_extra_identifiers": [
+        1,
+        28789
+      ],
+      "evidence_class": "SYNTHETIC_ZIP64_UNICODE_METADATA",
+      "extra_field_count": 2,
+      "local_central_parity": true,
+      "negative_controls": {
+        "comment": true,
+        "count": true,
+        "crc": true,
+        "declared_length": true,
+        "duplicate_extra": true,
+        "encoding": true,
+        "extra_order": true,
+        "multi_disk": true,
+        "name": true,
+        "offset": true,
+        "parity": true,
+        "signature": true,
+        "size": true,
+        "trailing": true,
+        "unicode_crc": true,
+        "unknown_extra": true
+      },
+      "payload_read": false,
+      "real_producer_corpus": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "unicode_path": "caf\u00e9.txt",
+      "valid_metadata": true
+    },
+    "E": {
+      "boundary_rejections": {
+        "ancestry": true,
+        "cross_policy_replay": true,
+        "epoch": true,
+        "fork": true,
+        "head": true,
+        "inactive_signer": true,
+        "nonce_high": true,
+        "nonce_low": true,
+        "nonce_replay": true,
+        "path": true,
+        "quorum": true,
+        "replay_cache": true,
+        "rollback": true,
+        "scope": true,
+        "stale": true,
+        "watermark_rollback": true
+      },
+      "event_count": 18,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "initial_watermark": 2007,
+      "new_watermark": 2010,
+      "nonce_window": [
+        2000,
+        2011
+      ],
+      "physical_sample": null,
+      "policy_chain_terminal_sha256": "5987ed6abcb6e2b33b8373e1076a3a34ed6b9d617437cab3fc22e1607a74dab0",
+      "policy_versions": [
+        36,
+        37,
+        38
+      ],
+      "receipt_threshold": 2,
+      "replay_cache_size": 5,
+      "revocation_epochs": [
+        9,
+        10,
+        11
+      ],
+      "signature_kind": "SYNTHETIC_HASH_FIXTURE_NOT_CRYPTOGRAPHIC_SIGNATURE",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "7dfe930186f526a05a13e436386255f4ca67498a1bef955995402e4ae56d275c"
+    },
+    "F": {
+      "all_parenthesizations_equal": true,
+      "binding_mutation_rejections": {
+        "inverse": true,
+        "labels": true,
+        "order": true,
+        "parenthesization": true,
+        "source": true
+      },
+      "block_labels": [
+        "compute",
+        "compute",
+        "compute",
+        "compute",
+        "compute",
+        "compute",
+        "memory",
+        "memory",
+        "memory",
+        "memory",
+        "memory",
+        "memory",
+        "network",
+        "network",
+        "network",
+        "network",
+        "network",
+        "control",
+        "control",
+        "control",
+        "control",
+        "control"
+      ],
+      "commercial_interpretation": null,
+      "component_order": [
+        "component-00",
+        "component-01",
+        "component-02",
+        "component-03",
+        "component-04",
+        "component-05",
+        "component-06",
+        "component-07",
+        "component-08",
+        "component-09",
+        "component-10",
+        "component-11",
+        "component-12",
+        "component-13",
+        "component-14",
+        "component-15",
+        "component-16",
+        "component-17",
+        "component-18",
+        "component-19",
+        "component-20",
+        "component-21"
+      ],
+      "components": 22,
+      "composed_permutation": [
+        15,
+        13,
+        11,
+        9,
+        7,
+        5,
+        3,
+        1,
+        21,
+        19,
+        17,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2,
+        0,
+        20,
+        18,
+        16
+      ],
+      "composition_matches_sequential_intervals": true,
+      "composition_matches_sequential_matrices": true,
+      "covariance_grid_sha256": "30aadf13ef2d8857d1199cc081e737305fb4baa95ab4f4288748532ff63ce4ab",
+      "evidence_class": "MODEL_ONLY",
+      "four_permutation_recovers_intervals": true,
+      "four_permutation_recovers_matrices": true,
+      "inverse_map_valid": true,
+      "inverse_permutation": [
+        18,
+        7,
+        17,
+        6,
+        16,
+        5,
+        15,
+        4,
+        14,
+        3,
+        13,
+        2,
+        12,
+        1,
+        11,
+        0,
+        21,
+        10,
+        20,
+        9,
+        19,
+        8
+      ],
+      "parenthesization_count": 4,
+      "permutation_equivalence": true,
+      "permutations": [
+        [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21
+        ]
+      ],
+      "sigma_values": [
+        0.0,
+        2.0,
+        8.0,
+        22.0
+      ],
+      "source_sha256": "4815f4b6d31063bbbf55cc686b4114b6551833321f176b2ce01eaebaa375d510",
+      "sparse_nonzero_count": 58,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "sweeps": {
+        "0.0": {
+          "commercial_interpretation": null,
+          "components": 22,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    319.0,
+                    517.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    29.0,
+                    47.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.5,
+                    23.5
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                319.0,
+                517.0
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    319.0,
+                    517.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    29.0,
+                    47.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.5,
+                    23.5
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                319.0,
+                517.0
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    319.0,
+                    517.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    29.0,
+                    47.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.5,
+                    23.5
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                319.0,
+                517.0
+              ]
+            }
+          },
+          "sigma_multiplier": 0.0
+        },
+        "2.0": {
+          "commercial_interpretation": null,
+          "components": 22,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    316.5209679308246,
+                    519.4790320691753
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    28.774633448256782,
+                    47.225366551743214
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.387316724128391,
+                    23.612683275871607
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                316.5209679308246,
+                519.4790320691753
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    316.5151660015204,
+                    519.4848339984795
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    28.774106000138218,
+                    47.225893999861775
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.387053000069109,
+                    23.612946999930887
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                316.5151660015204,
+                519.4848339984795
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    316.51806527080186,
+                    519.4819347291982
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    28.774369570072896,
+                    47.22563042992711
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.387184785036448,
+                    23.612815214963554
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                316.51806527080186,
+                519.4819347291982
+              ]
+            }
+          },
+          "sigma_multiplier": 2.0
+        },
+        "22.0": {
+          "commercial_interpretation": null,
+          "components": 22,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    291.7306472390707,
+                    544.2693527609292
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    26.52096793082461,
+                    49.47903206917538
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    13.260483965412305,
+                    24.73951603458769
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                291.7306472390707,
+                544.2693527609292
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    291.66682601672466,
+                    544.3331739832753
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    26.515166001520424,
+                    49.48483399847957
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    13.257583000760212,
+                    24.742416999239786
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                291.66682601672466,
+                544.3331739832753
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    291.6987179788201,
+                    544.3012820211799
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    26.51806527080183,
+                    49.48193472919817
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    13.259032635400915,
+                    24.740967364599086
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                291.6987179788201,
+                544.3012820211799
+              ]
+            }
+          },
+          "sigma_multiplier": 22.0
+        },
+        "8.0": {
+          "commercial_interpretation": null,
+          "components": 22,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    309.08387172329844,
+                    526.9161282767016
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    28.09853379302713,
+                    47.90146620697287
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.049266896513565,
+                    23.950733103486435
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                309.08387172329844,
+                526.9161282767016
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    309.0606640060817,
+                    526.9393359939183
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    28.096424000552883,
+                    47.90357599944712
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.048212000276441,
+                    23.95178799972356
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                309.0606640060817,
+                526.9393359939183
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    309.0722610832073,
+                    526.9277389167927
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 11,
+                  "per_output_usd": [
+                    28.097478280291572,
+                    47.902521719708425
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 22,
+                  "per_output_usd": [
+                    14.048739140145786,
+                    23.951260859854212
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                309.0722610832073,
+                526.9277389167927
+              ]
+            }
+          },
+          "sigma_multiplier": 8.0
+        }
+      }
+    },
+    "FND/EQN": {
+      "all_split_compositions_match": true,
+      "all_tree_parenthesizations_match": true,
+      "composed_interval": [
+        [
+          398341,
+          84
+        ],
+        [
+          559621,
+          84
+        ]
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_roundtrip": true,
+      "inverse_lipschitz_bound": [
+        1,
+        1920
+      ],
+      "lipschitz_bound": [
+        1920,
+        1
+      ],
+      "lipschitz_product": [
+        1,
+        1
+      ],
+      "map_count": 15,
+      "negative_controls": {
+        "dimension": true,
+        "nonmonotone": true,
+        "source_order": true,
+        "unit": true
+      },
+      "new_law_claim": null,
+      "roundtrip_interval": [
+        [
+          3,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "sort": [
+        "RealModel",
+        "Model"
+      ],
+      "source_sha256": [
+        "4815f4b6d31063bbbf55cc686b4114b6551833321f176b2ce01eaebaa375d510",
+        "d962f29e161b00bb458e0d8209f0bc6a9b9846b45696e82b6da1906b25e11d7c",
+        "cad2447d8b3ac69e7c165d4774970759cc8a9ef9f547b141fff863edb5abcc44",
+        "f7a3f48677a838d4c634a0349a7e1a20430eac1537042bdc851d0d945edc5c2f",
+        "a2df1e666252363949e98de1297022054e1e1f8f11bc81230f61d2bef15ddb19",
+        "caca624e6d3fe49e6d7cc7736f8082e71102490b1bdd828a0c1fa4c53c990254",
+        "dbaf47c4fe63976c9b06bb8a7b3d19602fb2a9a4dc178f788dcb3546aecf3ecc",
+        "1ff104cc595ef95fe02717d5a63a3ba79da313490b146fc106b055ee7415e3f6",
+        "8b942bda1da197b6608cc6f38b901aadbdefbfd2eb5a23a89814ba79bdb52836",
+        "402c23fd266a036e3be4745e065eaa9604677ee238b67da3a64cf4d3ea5b0458",
+        "c57f72d49650b3c8db10791be05d887e1731eb8c2cd810de022b10e983e7e227",
+        "934756f2a2626ed4b81938b5427e5e24dc18d1d0f3678afe47b5b8d32874c36d",
+        "f44c5a1881f63796c3c3cc09858affe01fa5cbfb6e82d5d67e18f7c3da6afba1",
+        "a4c6778a27eedea96ae813b2adb50ac360b7c726e16b7cfaa75f983d2304b38b",
+        "2707378b0b066a8e911e18f54870d11e3f73510f25537414c55c764b657d5816"
+      ],
+      "split_composition_rows": [
+        {
+          "condition_product": [
+            1,
+            1
+          ],
+          "matches": true,
+          "split": 1
+        },
+        {
+          "condition_product": [
+            1,
+            1
+          ],
+          "matches": true,
+          "split": 3
+        },
+        {
+          "condition_product": [
+            1,
+            1
+          ],
+          "matches": true,
+          "split": 7
+        },
+        {
+          "condition_product": [
+            1,
+            1
+          ],
+          "matches": true,
+          "split": 11
+        },
+        {
+          "condition_product": [
+            1,
+            1
+          ],
+          "matches": true,
+          "split": 14
+        }
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_unit": "u15",
+      "tree_parenthesizations": [
+        "left_fold",
+        "right_fold",
+        "balanced"
+      ],
+      "unit_chain": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ]
+    },
+    "G": {
+      "all_cayley_rows_valid": true,
+      "all_principal_minors_positive": true,
+      "associative_composition": true,
+      "calibration": null,
+      "cayley_hamilton_zero": true,
+      "cayley_rows": [
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 0,
+          "right": 1
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 1,
+          "right": 2
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 2,
+          "right": 3
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 3,
+          "right": 4
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 4,
+          "right": 5
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 5,
+          "right": 6
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 6,
+          "right": 7
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 7,
+          "right": 8
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 8,
+          "right": 0
+        }
+      ],
+      "characteristic_coefficients": [
+        [
+          1,
+          1
+        ],
+        [
+          -191,
+          1
+        ],
+        [
+          12787,
+          1
+        ],
+        [
+          -357979,
+          1
+        ],
+        [
+          3547642,
+          1
+        ]
+      ],
+      "characteristic_polynomial_invariant": true,
+      "closure_is_signed_permutation": true,
+      "composition_sha256": "e64c1c38821050b73b5e51a16517f9d12baf50fc632309f0bd6820658cbf24bd",
+      "determinant_invariant": true,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "exact_reverse_order_roundtrip": true,
+      "matrix_product_count": 144,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "symmetric": true,
+      "trace_power_invariant": true,
+      "trace_powers": [
+        [
+          191,
+          1
+        ],
+        [
+          10907,
+          1
+        ],
+        [
+          714857,
+          1
+        ],
+        [
+          51253299,
+          1
+        ]
+      ],
+      "transform_count": 9
+    },
+    "H": {
+      "all_grid_interval": [
+        [
+          0,
+          1
+        ],
+        [
+          13,
+          16
+        ]
+      ],
+      "capital": null,
+      "counts_match_binomial": true,
+      "deletion_grid_counts": {
+        "1": 22,
+        "10": 646646,
+        "11": 705432,
+        "12": 646646,
+        "13": 497420,
+        "14": 319770,
+        "2": 231,
+        "3": 1540,
+        "4": 7315,
+        "5": 26334,
+        "6": 74613,
+        "7": 170544,
+        "8": 319770,
+        "9": 497420
+      },
+      "dynamic_program_state_counts": {
+        "1": 10,
+        "10": 1418,
+        "11": 1464,
+        "12": 1418,
+        "13": 1287,
+        "14": 1091,
+        "2": 42,
+        "3": 113,
+        "4": 233,
+        "5": 404,
+        "6": 619,
+        "7": 858,
+        "8": 1091,
+        "9": 1287
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 528,
+      "orders_each": 24,
+      "probability_claim": null,
+      "recurrence_total_sha256": "7a18220b0d831f4e4eabaae352f1acffd5bca932e26cd92e987883ef4966b21b",
+      "scenario_count": 22,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "winner_counts": [
+        150,
+        126,
+        162,
+        90
+      ]
+    },
+    "QOS/QSVT": {
+      "all_inclusion_proofs_valid": true,
+      "antichain_mutation_rejected": true,
+      "antichain_valid": true,
+      "antichain_width": 4,
+      "basis_states_checked": 64,
+      "dependency_dag": [
+        {
+          "depends_on": [],
+          "node": 0
+        },
+        {
+          "depends_on": [],
+          "node": 1
+        },
+        {
+          "depends_on": [
+            0
+          ],
+          "node": 2
+        },
+        {
+          "depends_on": [
+            0
+          ],
+          "node": 3
+        },
+        {
+          "depends_on": [
+            1
+          ],
+          "node": 4
+        },
+        {
+          "depends_on": [
+            1
+          ],
+          "node": 5
+        },
+        {
+          "depends_on": [
+            2,
+            4
+          ],
+          "node": 6
+        },
+        {
+          "depends_on": [
+            3,
+            5
+          ],
+          "node": 7
+        },
+        {
+          "depends_on": [
+            6
+          ],
+          "node": 8
+        },
+        {
+          "depends_on": [
+            6
+          ],
+          "node": 9
+        },
+        {
+          "depends_on": [
+            7
+          ],
+          "node": 10
+        },
+        {
+          "depends_on": [
+            7
+          ],
+          "node": 11
+        },
+        {
+          "depends_on": [
+            8,
+            10
+          ],
+          "node": 12
+        },
+        {
+          "depends_on": [
+            9,
+            11
+          ],
+          "node": 13
+        },
+        {
+          "depends_on": [
+            12,
+            13
+          ],
+          "node": 14
+        },
+        {
+          "depends_on": [
+            14
+          ],
+          "node": 15
+        }
+      ],
+      "dependency_dag_mutation_rejected": true,
+      "dependency_dag_valid": true,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "hardware": null,
+      "inverse_pair_names": [
+        "add-01",
+        "xor-03",
+        "rotl-01",
+        "add-05",
+        "xor-12",
+        "rotl-02",
+        "add-07",
+        "xor-21",
+        "rotl-03",
+        "add-09",
+        "xor-42",
+        "rotl-04",
+        "add-11",
+        "xor-33",
+        "rotl-05",
+        "xor-17"
+      ],
+      "leaf_resource_mutation_rejected": true,
+      "level_schedule": [
+        {
+          "gates": 15,
+          "level": 0,
+          "nodes": [
+            0,
+            1
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 1,
+          "nodes": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "gates": 32,
+          "level": 2,
+          "nodes": [
+            6,
+            7
+          ]
+        },
+        {
+          "gates": 88,
+          "level": 3,
+          "nodes": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gates": 56,
+          "level": 4,
+          "nodes": [
+            12,
+            13
+          ]
+        },
+        {
+          "gates": 31,
+          "level": 5,
+          "nodes": [
+            14
+          ]
+        },
+        {
+          "gates": 33,
+          "level": 6,
+          "nodes": [
+            15
+          ]
+        }
+      ],
+      "level_schedule_mutation_rejected": true,
+      "level_schedule_valid": true,
+      "maximum_antichain": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "order_mutation_witness_count": 64,
+      "parallel_bounds_are_model_only": true,
+      "proof_count": 16,
+      "proof_resource_mutation_rejected": true,
+      "residual": 0,
+      "resource_bound": {
+        "antichain_width": 4,
+        "dag_critical_depth": 50,
+        "gates": 300,
+        "level_count": 7,
+        "level_width": 4,
+        "max_qubits": 6,
+        "serial_depth": 96,
+        "unconstrained_parallel_lower_bound": 10
+      },
+      "resource_merkle_root_sha256": "c7e8d83786973f92da5f7380f090f2dd65ba7c32c55b14a0a99f201b1a5e55c6",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "work_conservation": true,
+      "work_mutation_rejected": true
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "certificate_intersection_size": 7,
+      "control_table": [
+        {
+          "accepted": true,
+          "case": "valid",
+          "expected": true
+        },
+        {
+          "accepted": false,
+          "case": "split",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "stale",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "fork",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "replay",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "downgrade",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "audience",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "membership_hash",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "transition_chain",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "revocation",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "missing_member",
+          "expected": false
+        }
+      ],
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "membership_epoch": 22,
+      "minimum_quorum_intersection": 7,
+      "observer_count": 11,
+      "quorum": 9,
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transition_chain_sha256": "b35769986a85fd3345d888a83f5f7eccfba4f73e46466f9506a1f4d663bc4ac1",
+      "transition_count": 3
+    }
+  },
+  "nonclaims": [
+    "No measured QPU or GPU performance, scaling or quantum advantage.",
+    "No provider execution, invoice, commercial economics or capital result.",
+    "No crash durability, cryptographic signature claim, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "payload_sha256": "fd363f753ce2a7d2af12120806a4ea80e01f96889d369865edbecce0372cb5ce",
+  "preregistration_commit_sha": "b88a3ad966c5d3226a1fe81a4e9bcbe6cfc9c298",
+  "schema": "uqpu-cycle038-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "locator": "sections 4.3.6, 4.3.7, 4.3.9, 4.3.11, 4.3.12 and 4.3.14\u20134.3.16",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_git_blob_sha": "39640d2169fbd4c60d6a82c1bd8e88209f9cf3de",
+    "focused_tests_sha256": "237d8d5a7d978e9bdc5c15f9488d885916a021aad1df36b1a7f398e98ff8b8e8",
+    "implementation_git_blob_sha": "9ab85f0a197e78d93f0ab4f6600449d36e8a8b41",
+    "implementation_sha256": "1435116d26f21b7026319cb15ab15c1ff1fb661d3ec0ccb1b48204ce589390f6",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "b3614259491da9e8d0e3fc4a258c5f9b3b843f36",
+    "runner_sha256": "a5c77f4decd660ea61423f11c2bbe00734e70c4984e536daf0c260172ebb940f",
+    "typed_source_sha256": "4815f4b6d31063bbbf55cc686b4114b6551833321f176b2ce01eaebaa375d510"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "Provider authorization and billing, crash durability, independent archive interoperability, operational custody, measured covariance and calibration, owner priorities, independent equation derivation, real held-out equivalence and target hardware evidence remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
