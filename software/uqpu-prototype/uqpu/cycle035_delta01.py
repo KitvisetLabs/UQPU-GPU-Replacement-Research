@@ -269,18 +269,23 @@ def zip64_locator_trailing_comment_gate():
     comment_max = b"x" * 65535
     locator_offset, locator_position = 4096, 8192
 
-    def classic(comment=comment_small, trailing=b"", disk=0):
+    def classic(comment=comment_small, trailing=b"", disk=0, entries=0xFFFF,
+                central_size=0xFFFFFFFF, central_offset=0xFFFFFFFF):
         if len(comment) > 65535:
             raise ValueError("comment overflow")
-        body = struct.pack("<IHHHHIIH", 0x06054B50, disk, 0, 0xFFFF, 0xFFFF,
-                           0xFFFFFFFF, 0xFFFFFFFF, len(comment)) + comment
+        body = struct.pack("<IHHHHIIH", 0x06054B50, disk, 0, entries, entries,
+                           central_size, central_offset, len(comment)) + comment
         return body + trailing
 
     def locator(offset=locator_offset, position=locator_position):
         return {"bytes": struct.pack("<IIQI", 0x07064B50, 0, offset, 1),
                 "position": position}
 
-    def verify(raw_classic, raw_locator, expected_comment):
+    def descriptor(crc=0x12345678, compressed=1234, uncompressed=5678):
+        return struct.pack("<IIQQ", 0x08074B50, crc, compressed, uncompressed)
+
+    def verify(raw_classic, raw_locator, expected_comment, raw_descriptor=None):
+        raw_descriptor = descriptor() if raw_descriptor is None else raw_descriptor
         if len(raw_classic) < 22:
             raise ValueError("truncated")
         fields = struct.unpack_from("<IHHHHIIH", raw_classic)
@@ -294,6 +299,9 @@ def zip64_locator_trailing_comment_gate():
             raise ValueError("locator")
         if raw_locator["position"] <= offset:
             raise ValueError("placement")
+        if struct.unpack("<IIQQ", raw_descriptor) != (
+                0x08074B50, 0x12345678, 1234, 5678):
+            raise ValueError("descriptor")
         return True
 
     valid_small = verify(classic(), locator(), comment_small)
@@ -302,9 +310,12 @@ def zip64_locator_trailing_comment_gate():
     cases = {
         "trailing": (classic(trailing=b"x"), locator(), comment_small),
         "comment_bytes": (classic(b"other"), locator(), comment_small),
+        "crc": (classic(), locator(), comment_small, descriptor(crc=0)),
+        "count": (classic(entries=1), locator(), comment_small),
         "disk": (classic(disk=1), locator(), comment_small),
         "locator_offset": (classic(), locator(offset=locator_offset - 1), comment_small),
         "locator_position": (classic(), locator(position=locator_offset), comment_small),
+        "size": (classic(), locator(), comment_small, descriptor(compressed=1235)),
     }
     for name, args in cases.items():
         try:
