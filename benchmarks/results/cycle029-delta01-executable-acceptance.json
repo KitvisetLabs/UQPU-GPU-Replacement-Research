@@ -1,0 +1,1798 @@
+{
+  "assumptions": [
+    "All graph, receipt, archive, custody, covariance, ranking, lineage and operator inputs are bounded fixtures or models.",
+    "Process evidence covers local process termination and concurrent reading only; it does not establish crash or power-loss durability.",
+    "SCM records are fiction-only and cannot be cast to empirical evidence."
+  ],
+  "base_cycle028_closeout_sha": "4a67003f9af5f518bef2955efa555d3adbcf65d5",
+  "branch": "research/cycle-029-delta-01-2026-09-30",
+  "cycle": "029",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "all_dihedral_transforms_match": true,
+      "changed_edge_indices": [
+        7
+      ],
+      "complete_witness_sha256": "95c8e7f607a6d3dad76805241b5a0809a6847edec233c7ec20620c88632780f8",
+      "deterministic": true,
+      "dihedral_transform_count": 22,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "objectives": [
+        25,
+        31
+      ],
+      "partition_sha256": "9fdc8417ea2a3de6014ac84493c5c12035579e0b3764f77bdb7eba75ea107864",
+      "scaling_claim": null,
+      "stabilizer": [
+        [
+          1,
+          0
+        ]
+      ],
+      "stabilizer_orbit_partition": [
+        [
+          341
+        ],
+        [
+          683
+        ],
+        [
+          685
+        ],
+        [
+          693
+        ],
+        [
+          725
+        ],
+        [
+          1322
+        ],
+        [
+          1354
+        ],
+        [
+          1362
+        ],
+        [
+          1364
+        ],
+        [
+          1706
+        ]
+      ],
+      "states_each": [
+        2048,
+        2048
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "unchanged_edges_identical": true,
+      "witness_counts": [
+        12,
+        10
+      ]
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "functional_equivalence": null,
+      "heldout_path_count": 3,
+      "leaf_count": 8,
+      "manifest": {
+        "config_sha256": "e4766f51a9ce5371d3fae306765046ea756ff26fa01356ba8f25db3992e440d2",
+        "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+        "heldout_inclusion_paths": {
+          "h1": {
+            "leaf": "6cbc4c5e5e5339b0ede52aa346a31a43dd5191344bd1a21a894846c92a15ee60",
+            "path": [
+              {
+                "sha256": "6f02924722ef1c7ce94c99e5d3b7e518d945e2f79a34943bf438abb4886055a7",
+                "side": "left"
+              },
+              {
+                "sha256": "63165bcae5ea3bfd2b10a19a2903e98c00b1b4cbdceaa12b56441204f5781cc6",
+                "side": "right"
+              },
+              {
+                "sha256": "4d8e113378092e5e0382568077392cbbad4078505fcfdd01196aba09011bc9d6",
+                "side": "left"
+              }
+            ]
+          },
+          "h2": {
+            "leaf": "1cbe4a3a586d6257ca21c3e803efe59b7cc3b3d173b58d94fc535d50074a1571",
+            "path": [
+              {
+                "sha256": "6272da35f664deccfe1bb584f38ed2c7bb756863534748675402da7c387e8f39",
+                "side": "right"
+              },
+              {
+                "sha256": "ce899174485ac0380500690d62d52b7a90b6c360be12e62a2a40342e62f977b1",
+                "side": "left"
+              },
+              {
+                "sha256": "4d8e113378092e5e0382568077392cbbad4078505fcfdd01196aba09011bc9d6",
+                "side": "left"
+              }
+            ]
+          },
+          "h3": {
+            "leaf": "6272da35f664deccfe1bb584f38ed2c7bb756863534748675402da7c387e8f39",
+            "path": [
+              {
+                "sha256": "1cbe4a3a586d6257ca21c3e803efe59b7cc3b3d173b58d94fc535d50074a1571",
+                "side": "left"
+              },
+              {
+                "sha256": "ce899174485ac0380500690d62d52b7a90b6c360be12e62a2a40342e62f977b1",
+                "side": "left"
+              },
+              {
+                "sha256": "4d8e113378092e5e0382568077392cbbad4078505fcfdd01196aba09011bc9d6",
+                "side": "left"
+              }
+            ]
+          }
+        },
+        "heldout_metric": {
+          "name": "fixture_loss",
+          "split": "test",
+          "unit": "1",
+          "value": 0.19
+        },
+        "manifest_sha256": "9f8495294d7c588ed056e9bf73d249ff91682e672ccbaebc8be702141ded674a",
+        "parent_manifest_sha256": "49514cb8064d7cb454155063e0f2f557fadc0a3c625316cde3afa6d8066d0b2d",
+        "provenance_merkle_root": "79733e87c30fd23dc6a921fe354a3630474d07b85146ce7c0923206a616793c2",
+        "schema_version": 19,
+        "source_sha256": "2110cd0550ca77c8ef8b1cf089b30dfe4eb044a419ddba1d5a9ab55a5f91aa65"
+      },
+      "parent_mutation_rejected": true,
+      "path_mutation_rejected": true,
+      "schema_mutation_rejected": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "valid_manifest": true
+    },
+    "B": {
+      "accepted_lexical_equivalence": true,
+      "canonical_sha256": "f18adfe41c8961d4e2a3e850b67617d8d0be94951ea7acee598c2a50ee20e34a",
+      "caps": {
+        "bytes": 256,
+        "depth": 5,
+        "exponent_abs": 12,
+        "fraction_digits": 6,
+        "magnitude": 1000000000000,
+        "tokens": 24
+      },
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "negative_controls": {
+        "duplicate_key": true,
+        "exponent_cap": true,
+        "fraction_cap": true,
+        "magnitude_cap": true,
+        "nonfinite": true,
+        "token_cap": true
+      },
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "C": {
+      "all_reader_parent_observations_complete": true,
+      "crash_durability": null,
+      "evidence_class": "LOCAL_TRIPLE_READER_FIXTURE",
+      "power_loss_durability": null,
+      "reader_count": 3,
+      "runs": [
+        {
+          "exit_codes": [
+            0,
+            23,
+            23
+          ],
+          "inode_sets": [
+            [
+              1966167,
+              1966170,
+              1966173
+            ],
+            [
+              1966167,
+              1966173
+            ],
+            [
+              1966167,
+              1966173
+            ]
+          ],
+          "parent_complete": true,
+          "parent_sha256": "a6ddd48f28d9568a089b2a2d4ad4a533629d0aabf8362d741101871ce235191c",
+          "reader_complete": [
+            true,
+            true,
+            true
+          ],
+          "reader_counts": [
+            78,
+            75,
+            78
+          ],
+          "run": 0
+        },
+        {
+          "exit_codes": [
+            0,
+            23,
+            23
+          ],
+          "inode_sets": [
+            [
+              1966167,
+              1966169,
+              1966175
+            ],
+            [
+              1966167,
+              1966169,
+              1966175
+            ],
+            [
+              1966167,
+              1966169,
+              1966175
+            ]
+          ],
+          "parent_complete": true,
+          "parent_sha256": "d3714dcd306bfad50708b207da1584c6cdb7847fc42d5378dd98d9cc256cef8e",
+          "reader_complete": [
+            true,
+            true,
+            true
+          ],
+          "reader_counts": [
+            76,
+            76,
+            74
+          ],
+          "run": 1
+        },
+        {
+          "exit_codes": [
+            0,
+            23,
+            23
+          ],
+          "inode_sets": [
+            [
+              1966167,
+              1966173,
+              1966176
+            ],
+            [
+              1966167,
+              1966173,
+              1966176
+            ],
+            [
+              1966167,
+              1966173,
+              1966176
+            ]
+          ],
+          "parent_complete": true,
+          "parent_sha256": "2e291ce6e41106b1ea2df8a856f0a77d09a7bc5364d61bcbd7cfb895c4b7138d",
+          "reader_complete": [
+            true,
+            true,
+            true
+          ],
+          "reader_counts": [
+            71,
+            68,
+            71
+          ],
+          "run": 2
+        },
+        {
+          "exit_codes": [
+            0,
+            23,
+            23
+          ],
+          "inode_sets": [
+            [
+              1966167,
+              1966174,
+              1966175
+            ],
+            [
+              1966167,
+              1966174,
+              1966175
+            ],
+            [
+              1966167,
+              1966174,
+              1966175
+            ]
+          ],
+          "parent_complete": true,
+          "parent_sha256": "07bfd3da2c96b59fb9c49f1eb499b612a6772eaa94d2fb3ed899c809b493551b",
+          "reader_complete": [
+            true,
+            true,
+            true
+          ],
+          "reader_counts": [
+            62,
+            61,
+            60
+          ],
+          "run": 3
+        }
+      ],
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "descriptor_forms_valid": [
+        true,
+        true
+      ],
+      "evidence_class": "SYNTHETIC_ZIP64_METADATA",
+      "negative_controls": {
+        "crc": true,
+        "flags": true,
+        "signature_like_prefix": true,
+        "size": true,
+        "version": true
+      },
+      "payload_read": false,
+      "real_producer_corpus": null,
+      "reordered_extra_maps_equal": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "unknown_extra_preserved": true
+    },
+    "E": {
+      "boundary_rejections": {
+        "ancestry_changed": true,
+        "cross_path": true,
+        "revoked_sequence": true,
+        "scope_removed": true
+      },
+      "event_count": 9,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "physical_sample": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "88c0d17920888d5047006bfdfc0d200d05a54179e7cdde646e13a5bb8e23a718"
+    },
+    "F": {
+      "commercial_interpretation": null,
+      "components": 13,
+      "evidence_class": "MODEL_ONLY",
+      "sigma_values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        8.0
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "sweeps": {
+        "0.0": {
+          "commercial_interpretation": null,
+          "components": 13,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    91.0,
+                    130.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    13.0,
+                    18.571428571428573
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    7.0,
+                    10.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                91.0,
+                130.0
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    91.0,
+                    130.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    13.0,
+                    18.571428571428573
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    7.0,
+                    10.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                91.0,
+                130.0
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    91.0,
+                    130.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    13.0,
+                    18.571428571428573
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    7.0,
+                    10.0
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                91.0,
+                130.0
+              ]
+            }
+          },
+          "sigma_multiplier": 0.0
+        },
+        "1.0": {
+          "commercial_interpretation": null,
+          "components": 13,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    90.61167024322104,
+                    130.38832975677894
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.944524320460149,
+                    18.62690425096842
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.970128480247772,
+                    10.029871519752227
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                90.61167024322104,
+                130.38832975677894
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    90.46037049747072,
+                    130.5396295025293
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.922910071067246,
+                    18.648518500361327
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.958490038266978,
+                    10.041509961733023
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                90.46037049747072,
+                130.5396295025293
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    90.49009804864072,
+                    130.50990195135927
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.92715686409153,
+                    18.644271707337037
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.960776772972363,
+                    10.039223227027636
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                90.49009804864072,
+                130.50990195135927
+              ]
+            }
+          },
+          "sigma_multiplier": 1.0
+        },
+        "2.0": {
+          "commercial_interpretation": null,
+          "components": 13,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    90.2233404864421,
+                    130.77665951355792
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.889048640920299,
+                    18.682379930508272
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.940256960495546,
+                    10.059743039504456
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                90.2233404864421,
+                130.77665951355792
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    89.92074099494144,
+                    131.07925900505856
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.84582014213449,
+                    18.72560842929408
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.916980076533957,
+                    10.083019923466043
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                89.92074099494144,
+                131.07925900505856
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    89.98019609728145,
+                    131.01980390271856
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.854313728183064,
+                    18.717114843245508
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.921553545944727,
+                    10.078446454055275
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                89.98019609728145,
+                131.01980390271856
+              ]
+            }
+          },
+          "sigma_multiplier": 2.0
+        },
+        "3.0": {
+          "commercial_interpretation": null,
+          "components": 13,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    89.83501072966314,
+                    131.16498927033686
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.83357296138045,
+                    18.737855610048122
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.910385440743318,
+                    10.089614559256681
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                89.83501072966314,
+                131.16498927033686
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    89.38111149241216,
+                    131.61888850758785
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.768730213201737,
+                    18.802698358226838
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.875470114800935,
+                    10.124529885199065
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                89.38111149241216,
+                131.61888850758785
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    89.47029414592217,
+                    131.52970585407783
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.781470592274596,
+                    18.789957979153975
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.88233031891709,
+                    10.11766968108291
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                89.47029414592217,
+                131.52970585407783
+              ]
+            }
+          },
+          "sigma_multiplier": 3.0
+        },
+        "5.0": {
+          "commercial_interpretation": null,
+          "components": 13,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    89.05835121610524,
+                    131.94164878389475
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.722621602300748,
+                    18.84880696912782
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.850642401238864,
+                    10.149357598761135
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                89.05835121610524,
+                131.94164878389475
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    88.30185248735359,
+                    132.69814751264641
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.614550355336226,
+                    18.956878216092345
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.792450191334892,
+                    10.207549808665108
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                88.30185248735359,
+                132.69814751264641
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    88.4504902432036,
+                    132.5495097567964
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.635784320457658,
+                    18.935644250970913
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.803883864861816,
+                    10.196116135138185
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                88.4504902432036,
+                132.5495097567964
+              ]
+            }
+          },
+          "sigma_multiplier": 5.0
+        },
+        "8.0": {
+          "commercial_interpretation": null,
+          "components": 13,
+          "evidence_class": "MODEL_ONLY",
+          "scenarios": {
+            "indefinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "missing": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "negative": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    87.89336194576839,
+                    133.1066380542316
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.5561945636812,
+                    19.015234007747374
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.761027841982184,
+                    10.238972158017816
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                87.89336194576839,
+                133.1066380542316
+              ]
+            },
+            "nonfinite": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_INVALID_COVARIANCE"
+                }
+              ],
+              "total_usd": null
+            },
+            "positive": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    86.68296397976574,
+                    134.31703602023424
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.383280568537964,
+                    19.188148002890607
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.6679203061358265,
+                    10.332079693864172
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                86.68296397976574,
+                134.31703602023424
+              ]
+            },
+            "zero": {
+              "outputs": [
+                {
+                  "accepted_outputs": 1,
+                  "per_output_usd": [
+                    86.92078438912577,
+                    134.07921561087423
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 7,
+                  "per_output_usd": [
+                    12.417254912732252,
+                    19.15417365869632
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 13,
+                  "per_output_usd": [
+                    6.6862141837789055,
+                    10.313785816221095
+                  ],
+                  "status": "MODEL_ONLY_COVARIANCE_STRESS"
+                },
+                {
+                  "accepted_outputs": 0,
+                  "per_output_usd": null,
+                  "status": "NULL_NONPOSITIVE_DENOMINATOR"
+                }
+              ],
+              "total_usd": [
+                86.92078438912577,
+                134.07921561087423
+              ]
+            }
+          },
+          "sigma_multiplier": 8.0
+        }
+      }
+    },
+    "FND/EQN": {
+      "composed_interval": [
+        [
+          4322007,
+          1601600
+        ],
+        [
+          144302187,
+          25625600
+        ]
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_roundtrip": true,
+      "map_count": 6,
+      "negative_controls": {
+        "dimension": true,
+        "nonmonotone": true,
+        "source_order": true
+      },
+      "new_law_claim": null,
+      "roundtrip_interval": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "sort": [
+        "RealModel",
+        "Model"
+      ],
+      "source_sha256": [
+        "2110cd0550ca77c8ef8b1cf089b30dfe4eb044a419ddba1d5a9ab55a5f91aa65",
+        "e5c696b4b67a1fe4ef13a9216fbed6b2a56aaef3bba16f8a63907fd7256b13b4",
+        "9b752b6f62980535ddaf2de9407561cfba3f57bdb43ba97b88aae9953c41f35a",
+        "ecab61420b47e10ae1e4f9bae7eeb855c9c5019aa56019ed3f4eecbbc8a170a5",
+        "8aef3db7cc01299febeb2de46a7a4601a2a8a9c74f90d18e8ffe6c38faa9c657",
+        "81045a8e63091f8df3b4dcf7d7f22af0365b4f2a4f33cf8b75b18aeb37e02d08"
+      ],
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "G": {
+      "block_permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "calibration": null,
+      "correlation_permutation_invariant": true,
+      "determinant_invariant": true,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "exact_roundtrip": true,
+      "matrix_product_count": 16,
+      "psd_by_permutation_congruence": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "symmetric": true,
+      "trace_invariant": true
+    },
+    "H": {
+      "all_grid_interval": [
+        [
+          0,
+          1
+        ],
+        [
+          17,
+          32
+        ]
+      ],
+      "capital": null,
+      "deletion_grid_counts": {
+        "1": 13,
+        "2": 78,
+        "3": 286,
+        "4": 715,
+        "5": 1287
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 312,
+      "orders_each": 24,
+      "probability_claim": null,
+      "scenario_count": 13,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "winner_counts": [
+        102,
+        78,
+        66,
+        66
+      ]
+    },
+    "QOS/QSVT": {
+      "basis_states_checked": 64,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "hardware": null,
+      "inverse_pair_names": [
+        "xor",
+        "rotate",
+        "pair-swap",
+        "bit-reverse",
+        "add-nine",
+        "multiply-five",
+        "multiply-twenty-one"
+      ],
+      "order_mutation_witness_count": 64,
+      "prefix_program_sha256": [
+        "4941bfc9de364bdb2788220bc834b33a57036a7869d0fec0b350f86e9b8c72c1",
+        "160876c2c9d15af69a98af0ed1fca7477b5d0533bf3707696b9a3e72cd677f2e",
+        "cb49c2127fc46caa67143576b4e9f83aae4455602647421f763e27264afd849b",
+        "ed183bf69cedeef26aac36041b2cc1d7da2e570f051aa5197f3497c7c1cb2a63",
+        "447d6c0eec14272634a63acbcb79f7be162e6ec1380e2972717c922281de7ff6",
+        "dc2c106c53bb1395b38e319ae7f5dbc17e6f38ed7ed306aa92141ced8b32601d",
+        "dccdcf17cb81734b1812e72d89986853a2155f3c7a4821f46dfe443017204649"
+      ],
+      "program_sha256": "78d1804ff3cbd4e6177778c1212b21af755c35e8aff29bf5c55c5ceecee7ace1",
+      "residual": 0,
+      "resource_accounting_valid": true,
+      "resource_bound": {
+        "gates": 123,
+        "max_qubits": 6
+      },
+      "resource_mutation_rejected": true,
+      "segment_resources": [
+        {
+          "gates": 6,
+          "name": "xor"
+        },
+        {
+          "gates": 10,
+          "name": "rotate"
+        },
+        {
+          "gates": 6,
+          "name": "pair-swap"
+        },
+        {
+          "gates": 15,
+          "name": "bit-reverse"
+        },
+        {
+          "gates": 21,
+          "name": "add-nine"
+        },
+        {
+          "gates": 30,
+          "name": "multiply-five"
+        },
+        {
+          "gates": 35,
+          "name": "multiply-twenty-one"
+        }
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "suffix_program_sha256": [
+        "dccdcf17cb81734b1812e72d89986853a2155f3c7a4821f46dfe443017204649",
+        "dd45d533652ab2525db03c446dd7ad43ed0fed8d6e521e3362216f5d2ec9e896",
+        "faffdb169246933f715873a938529ae306f0070f8957b7fc95e99e68d725912b",
+        "b9b34bfd989ce9c5f20ae2da5584c9c44ba72102966c1e1c471f3777718e4d0b",
+        "08ad70f1b9eeafc12309fc424575e394af734b05b062ae17d45dd968da464f19",
+        "d1a1247d45a1c4f9e50deaec76a330acf7b31c0c4e49269ad0c80edc1112dab2",
+        "06e492467ef0e51f7aa61164e5da1976d183d279d9e9e505e7e8a32f7c8b3279"
+      ]
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "control_table": [
+        {
+          "accepted": true,
+          "case": "valid",
+          "expected": true
+        },
+        {
+          "accepted": false,
+          "case": "replay",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "skip",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "epoch_downgrade",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "audience",
+          "expected": false
+        },
+        {
+          "accepted": false,
+          "case": "revoked",
+          "expected": false
+        }
+      ],
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "aa415261f702b7d6ceb59cf6096bf8c707f192dfdf1423a0c080a3725fa56c00"
+    }
+  },
+  "nonclaims": [
+    "No measured QPU or GPU performance, scaling or quantum advantage.",
+    "No provider execution, invoice, commercial economics or capital result.",
+    "No crash durability, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "payload_sha256": "6532db08b8fa0cd49407ef25ecab7ee030daa3ca916de5432fc4b5edefd02bdc",
+  "preregistration_commit_sha": "27dd829c6d7485d9689b10f6ea6f6599202e3243",
+  "schema": "uqpu-cycle029-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-09-30",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "locator": "sections 4.3.7, 4.3.9 and 4.3.12",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-09-30",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_sha256": "a8bb6b2a9966d6d517b771253ec6c3fb3fc314943060b905562935823133e8bc",
+    "implementation_sha256": "c14d3f94c7d1f9383a332b2cc008d7758bcb55583a703958ac15a7f8ea3add34",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "af285a95ea1824ed64e336018503e7c09c4b1000",
+    "runner_sha256": "37c4c207b0c84f80481d16c1bdda68f048507f39477b79cd45b37bfa256b6804",
+    "typed_source_sha256": "2110cd0550ca77c8ef8b1cf089b30dfe4eb044a419ddba1d5a9ab55a5f91aa65"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "Provider authorization and billing, crash durability, independent archive interoperability, operational custody, measured covariance and calibration, owner priorities, independent equation derivation, real held-out equivalence and target hardware evidence remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
