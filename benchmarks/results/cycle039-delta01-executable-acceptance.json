@@ -1,0 +1,792 @@
+{
+  "assumptions": [
+    "All graph, receipt, archive, custody, covariance, ranking, lineage and operator inputs are bounded fixtures or models.",
+    "Injected cross-device rename and journal failures do not establish crash or power-loss durability.",
+    "Custody receipt signatures are synthetic hashes, not cryptographic signatures or authority evidence.",
+    "SCM records are fiction-only and cannot be cast to empirical evidence."
+  ],
+  "base_cycle038_closeout_sha": "cec07614c17b4b43fe23a29b9f0e2422590c964f",
+  "branch": "research/cycle-039-delta-01-2026-10-01",
+  "cycle": "039",
+  "focused_tests_commit_sha": "625cc874d785e3ab3337e12a3e5788b2a082086b",
+  "implementation_commit_sha": "37b6b64cd4c980fa49392385d49eb4f597dda97b",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "action_count": 20,
+      "burnside_matches_direct": true,
+      "burnside_numerator": 20,
+      "burnside_orbit_count": 1,
+      "canonical_label_reconstruction": true,
+      "canonical_label_sha256": "e43667a1869c870103da34f64420eb3de37dd1262aaf40d853937cd45b7416b7",
+      "canonical_representatives": [
+        5461
+      ],
+      "class_character_rows": [
+        {
+          "character": 0,
+          "constant": true,
+          "size": 5
+        },
+        {
+          "character": 0,
+          "constant": true,
+          "size": 5
+        },
+        {
+          "character": 20,
+          "constant": true,
+          "size": 1
+        },
+        {
+          "character": 0,
+          "constant": true,
+          "size": 1
+        },
+        {
+          "character": 0,
+          "constant": true,
+          "size": 2
+        },
+        {
+          "character": 0,
+          "constant": true,
+          "size": 2
+        },
+        {
+          "character": 0,
+          "constant": true,
+          "size": 2
+        },
+        {
+          "character": 0,
+          "constant": true,
+          "size": 2
+        }
+      ],
+      "class_characters_constant": true,
+      "conjugacy_class_count": 8,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "objective": 19,
+      "scaling_claim": null,
+      "stabilizer_size": 10,
+      "states": 32768,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "task_sha256": "3c18233ed3827cfad8f560263e9292b26293fef5bdec299d11e8da6357646a1b",
+      "witness_count": 20,
+      "witness_sha256": "46f126ca4facad08571eb84c68e4cf56c0e8c5fdedaf93cf5dc6afae40928a30"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "frontier_is_smaller": true,
+      "frontier_node_count": 8,
+      "functional_equivalence": null,
+      "individual_proof_node_count": 24,
+      "manifest": {
+        "config_sha256": "5405c49332015fc4046ce004045cf9fa54f91c47f0159666661091edbec35e85",
+        "frontier_sha256": "709c8cee83a5e774457bf40270d6e3e01505a0cc4d70e0b71a2bfda15d84a81f",
+        "metric_sha256": "477141cc7d02407fd2701b1f482e66748f4cc44546cf1a312bbee3b56a874667",
+        "real_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "root": "352cd009a4e7bbd797ab3f81554b6dfdcfb6b7c632d6b9435a0e0c633cc14e91",
+        "selected": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15
+        ],
+        "source": "60a8223f12193a4d55ea13da6d7f25a2ca6bf16db1c2df26c28a1c0d1cf0fb53",
+        "version": 29
+      },
+      "mutation_rejections": {
+        "config": true,
+        "frontier": true,
+        "index": true,
+        "metric": true,
+        "order": true,
+        "root": true,
+        "schema": true,
+        "source": true
+      },
+      "padding_leaf_count": 0,
+      "real_leaf_count": 16,
+      "selected_leaf_count": 6,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "valid_manifest": true
+    },
+    "B": {
+      "canonical_sha256": "d2b0c6f808489119608db2d42143b18e80c052c7f15caa70d284d44b7d9e51e6",
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "negative_controls": {
+        "default_change": true,
+        "default_elision": true,
+        "key": true,
+        "missing_provenance": true,
+        "path": true,
+        "provenance_migration": true,
+        "provenance_source": true,
+        "tag": true,
+        "unicode": true,
+        "value": true,
+        "version_high": true,
+        "version_low": true
+      },
+      "prior_caps": {
+        "depth": 11,
+        "max_exact_integer": 9007199254740991,
+        "maximum_exponent": 40,
+        "minimum_exponent": -40,
+        "tokens": 72
+      },
+      "provenance": {
+        "default_origin": "schema-v3",
+        "migration": "v3-to-v4",
+        "source_schema": 3
+      },
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "upgrade_matches_v4": true
+    },
+    "C": {
+      "all_reader_observations_complete": true,
+      "all_stage_orders_valid": true,
+      "cleanup_journal_empty": true,
+      "crash_durability": null,
+      "directory_fsync_call_count": 9,
+      "evidence_class": "LOCAL_THIRTEEN_READER_EXDEV_JOURNAL_FIXTURE",
+      "exdev_failure_observed": true,
+      "failure_controls": {
+        "cross_device_rename": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "directory_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "file_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_cleanup": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_replay": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "partial_write": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        }
+      },
+      "file_fsync_call_count": 9,
+      "power_loss_durability": null,
+      "reader_count": 13,
+      "reader_counts": [
+        27,
+        28,
+        28,
+        27,
+        28,
+        30,
+        27,
+        29,
+        29,
+        29,
+        30,
+        29,
+        30
+      ],
+      "replacement_stages": 9,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "descriptor": {
+        "compressed": 1234,
+        "crc32": 2712847316,
+        "uncompressed": 5678
+      },
+      "evidence_class": "SYNTHETIC_ZIP64_NORMALIZATION_METADATA",
+      "local_central_descriptor_parity": true,
+      "negative_controls": {
+        "comment": true,
+        "count": true,
+        "crc": true,
+        "declared_length": true,
+        "descriptor_parity": true,
+        "duplicate_extra": true,
+        "encoding": true,
+        "extra_order": true,
+        "local_central_crc": true,
+        "local_central_name": true,
+        "multi_disk": true,
+        "name": true,
+        "normalization_collision": true,
+        "offset": true,
+        "parity": true,
+        "signature": true,
+        "size": true,
+        "trailing": true,
+        "unicode_crc": true,
+        "unknown_extra": true
+      },
+      "normalization_collision_rejected": true,
+      "normalized_name": "\u00e9.txt",
+      "payload_read": false,
+      "real_producer_corpus": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "valid_metadata": true
+    },
+    "E": {
+      "batch_commit_sha256": "f39866266bdf953e3298555b2f1dd2e8ea14996ae760ee016c2f29682332a1f8",
+      "boundary_rejections": {
+        "batch_duplicate": true,
+        "batch_order": true,
+        "cache_epoch": true,
+        "cache_replay": true,
+        "policy": true,
+        "prior_ancestry": true,
+        "prior_cross_policy_replay": true,
+        "prior_epoch": true,
+        "prior_fork": true,
+        "prior_head": true,
+        "prior_inactive_signer": true,
+        "prior_nonce_high": true,
+        "prior_nonce_low": true,
+        "prior_nonce_replay": true,
+        "prior_path": true,
+        "prior_quorum": true,
+        "prior_replay_cache": true,
+        "prior_rollback": true,
+        "prior_scope": true,
+        "prior_stale": true,
+        "prior_watermark_rollback": true,
+        "watermark": true
+      },
+      "cache_epoch": 12,
+      "event_count": 19,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "initial_watermark": 3007,
+      "new_watermark": 3011,
+      "physical_sample": null,
+      "policy_versions": [
+        37,
+        38,
+        39
+      ],
+      "revocation_epochs": [
+        10,
+        11,
+        12
+      ],
+      "rotated_cache_size": 3,
+      "signature_kind": "SYNTHETIC_HASH_FIXTURE_NOT_CRYPTOGRAPHIC_SIGNATURE",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "3994ddf23d48701560fff6f1b2939099f9335d34fec40eb7ec819eec94e128e5"
+    },
+    "F": {
+      "all_parenthesizations_equal": true,
+      "binding_mutation_rejections": {
+        "composition": true,
+        "inverse": true,
+        "source": true
+      },
+      "binding_sha256": "c3518f5df35bb2390404f78f8b7b154621db3477c6acb4d406f474d59c74b81e",
+      "commercial_interpretation": null,
+      "components": 23,
+      "composition_matches_sequential_intervals": true,
+      "composition_matches_sequential_matrices": true,
+      "evidence_class": "MODEL_ONLY",
+      "invalid_outputs_null": true,
+      "inverse_map_valid": true,
+      "parenthesization_count": 5,
+      "recovers_intervals": true,
+      "recovers_matrices": true,
+      "sparse_nonzero_count": 67,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "all_tree_shapes_match": true,
+      "composed_interval": [
+        [
+          56973,
+          512
+        ],
+        [
+          69473,
+          512
+        ]
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_roundtrip": true,
+      "inverse_lipschitz_bound": [
+        128,
+        3125
+      ],
+      "lipschitz_bound": [
+        3125,
+        128
+      ],
+      "map_count": 16,
+      "negative_controls": {
+        "dimension": true,
+        "nonmonotone": true,
+        "source_order": true,
+        "unit": true
+      },
+      "new_law_claim": null,
+      "source_sha256": [
+        "60a8223f12193a4d55ea13da6d7f25a2ca6bf16db1c2df26c28a1c0d1cf0fb53",
+        "8aca087ebae25fca8e6e6e6eb61f6113bf1d6c9916b2551ee3f625f81bd56274",
+        "88aebd1ad8570218e5b114e11109657fa2a1014b8b632e6f16a77b5bdd59811a",
+        "936aca7d1b059b1946b40eba2f6dabda3d94f5637560c9ed3121e4912c8d8189",
+        "d7bb1c3e3b31d09aacf47690e0402147377d5ea9a97d7e92ea18dbe5853970d3",
+        "fdf985a0c760b1712b89fc4b9bbc31108fc29ce2f8634452c3404deef5fccaa7",
+        "57e3f21ae8bc56eaa315e0f7267b12fa71c670f4cf4cac68268d57444b924d99",
+        "c682120b58b26f4608e4d0aae3e036f746a353dc4712c3ecf0c27a3434887006",
+        "678fcf45e52b68da0376b983993615a45f0118bc6c5bde1336a7480263b0a8d0",
+        "ecff9e6d2ff2d19593ad3b623e7d628373a42a8f7117b093c125ca043ffcec89",
+        "19885b25c5d70d0d6bd1e0a6a74e020ced4d61b11686c2ce6d7f7e42d7d42c50",
+        "ec2f2e6aa9f69b9530b0e88ad55309a63c6a7c9d135aa95c9adfe672beb75f91",
+        "4262f69bc2d9e641d4f11744990a9841f19a89e4a54cf1f959e924365247a441",
+        "23c90d420b5e5b3b48ab3678e3c291f667812c1c60798d7f5f9769ae949b1efb",
+        "af6de8def4a720483a565b15e6fe3bd0a23d2ccb32c6310aa1688beca2aab6d7",
+        "67f7045ab90cea4c681ed4763dd95ba4aa7b3a29a2f8450d785660c404789e53"
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_unit": "u16",
+      "tree_shape_count": 4,
+      "unit_chain": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15",
+        "u16"
+      ]
+    },
+    "G": {
+      "adjugate_identity_left": true,
+      "adjugate_identity_right": true,
+      "adjugate_mutation_rejected": true,
+      "all_cayley_rows_valid": true,
+      "all_principal_minors_positive": true,
+      "associative_composition": true,
+      "calibration": null,
+      "cayley_hamilton_zero": true,
+      "cayley_rows": [
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 0,
+          "right": 1
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 1,
+          "right": 2
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 2,
+          "right": 3
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 3,
+          "right": 4
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 4,
+          "right": 5
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 5,
+          "right": 6
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 6,
+          "right": 7
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 7,
+          "right": 8
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 8,
+          "right": 0
+        }
+      ],
+      "characteristic_coefficients": [
+        [
+          1,
+          1
+        ],
+        [
+          -191,
+          1
+        ],
+        [
+          12787,
+          1
+        ],
+        [
+          -357979,
+          1
+        ],
+        [
+          3547642,
+          1
+        ]
+      ],
+      "characteristic_polynomial_invariant": true,
+      "closure_is_signed_permutation": true,
+      "composition_sha256": "e64c1c38821050b73b5e51a16517f9d12baf50fc632309f0bd6820658cbf24bd",
+      "determinant_invariant": true,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "exact_reverse_order_roundtrip": true,
+      "matrix_product_count": 160,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "symmetric": true,
+      "tenth_transform_sha256": "2db705361f18dcb065b286e5944f5cd2fa4874550c102c650a5974c68d1ee712",
+      "trace_power_invariant": true,
+      "trace_powers": [
+        [
+          191,
+          1
+        ],
+        [
+          10907,
+          1
+        ],
+        [
+          714857,
+          1
+        ],
+        [
+          51253299,
+          1
+        ]
+      ],
+      "transform_count": 10
+    },
+    "H": {
+      "all_grid_interval": [
+        [
+          0,
+          1
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "capital": null,
+      "counts_match_binomial": true,
+      "deletion_grid_counts": {
+        "1": 23,
+        "10": 1144066,
+        "11": 1352078,
+        "12": 1352078,
+        "13": 1144066,
+        "14": 817190,
+        "15": 490314,
+        "2": 253,
+        "3": 1771,
+        "4": 8855,
+        "5": 33649,
+        "6": 100947,
+        "7": 245157,
+        "8": 490314,
+        "9": 817190
+      },
+      "dynamic_program_state_counts": {
+        "1": 4,
+        "10": 162,
+        "11": 170,
+        "12": 170,
+        "13": 162,
+        "14": 146,
+        "15": 124,
+        "2": 10,
+        "3": 20,
+        "4": 34,
+        "5": 52,
+        "6": 74,
+        "7": 99,
+        "8": 124,
+        "9": 146
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 552,
+      "orders_each": 24,
+      "probability_claim": null,
+      "recurrence_total_sha256": "d52483d0a41d90fd997febf56cbff6d50c0ed0481c32811e1f721b19cc16eb14",
+      "scenario_count": 23,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "winner_counts": [
+        72,
+        168,
+        168,
+        144
+      ]
+    },
+    "QOS/QSVT": {
+      "all_inclusion_proofs_valid": true,
+      "antichain_width": 4,
+      "basis_states_checked": 64,
+      "dependency_dag_valid": true,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "extension_proof_valid": true,
+      "hardware": null,
+      "inverse_pair_names": [
+        "add-01",
+        "xor-03",
+        "rotl-01",
+        "add-05",
+        "xor-12",
+        "rotl-02",
+        "add-07",
+        "xor-21",
+        "rotl-03",
+        "add-09",
+        "xor-42",
+        "rotl-04",
+        "add-11",
+        "xor-33",
+        "rotl-05",
+        "xor-17",
+        "xor-29"
+      ],
+      "level_schedule": [
+        {
+          "gates": 15,
+          "level": 0,
+          "nodes": [
+            0,
+            1
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 1,
+          "nodes": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "gates": 32,
+          "level": 2,
+          "nodes": [
+            6,
+            7
+          ]
+        },
+        {
+          "gates": 88,
+          "level": 3,
+          "nodes": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gates": 56,
+          "level": 4,
+          "nodes": [
+            12,
+            13
+          ]
+        },
+        {
+          "gates": 31,
+          "level": 5,
+          "nodes": [
+            14
+          ]
+        },
+        {
+          "gates": 33,
+          "level": 6,
+          "nodes": [
+            15
+          ]
+        },
+        {
+          "gates": 35,
+          "level": 7,
+          "nodes": [
+            16
+          ]
+        }
+      ],
+      "level_schedule_valid": true,
+      "maximum_antichain": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "mutation_rejections": {
+        "dag": true,
+        "extension_proof": true,
+        "level": true,
+        "proof": true,
+        "resource": true,
+        "slack": true,
+        "width": true,
+        "work": true
+      },
+      "parallel_bounds_are_model_only": true,
+      "proof_count": 17,
+      "residual": 0,
+      "resource_bound": {
+        "antichain_width": 4,
+        "dag_critical_depth": 61,
+        "gates": 335,
+        "level_count": 8,
+        "level_width": 4,
+        "max_qubits": 6,
+        "serial_depth": 107,
+        "unconstrained_parallel_lower_bound": 11
+      },
+      "resource_merkle_root_sha256": "04528eb9020925855fbcfcaba576fd1a38f505f3ea56dcdafe29f0666239d34d",
+      "schedule_slack": 0,
+      "scheduled_depth": 61,
+      "slack_certificate_valid": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "work_conservation": true
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "certificate_intersection_size": 8,
+      "control_table": {
+        "audience": true,
+        "downgrade": true,
+        "fork": true,
+        "fourth_transition": true,
+        "membership_hash": true,
+        "missing_member": true,
+        "quorum_intersection": true,
+        "replay": true,
+        "revocation": true,
+        "split": true,
+        "stale": true,
+        "transition_chain": true,
+        "valid": true
+      },
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "membership_epoch": 26,
+      "minimum_quorum_intersection": 8,
+      "observer_count": 12,
+      "quorum": 10,
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transition_chain_sha256": "e0662349c3e3606100d2d0660e2779920c5e070bdd00b9695da6f10083cea3a6",
+      "transition_count": 4
+    }
+  },
+  "nonclaims": [
+    "No measured QPU or GPU performance, scaling or quantum advantage.",
+    "No provider execution, invoice, commercial economics or capital result.",
+    "No crash durability, cryptographic signature claim, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "payload_sha256": "9568119a0111b724319a4e8882872f298084293edad7fe882168a5e6d7f63be8",
+  "preregistration_commit_sha": "8f5e0c9e34b843b6e809c39b668ea5b6016576d2",
+  "schema": "uqpu-cycle039-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "locator": "sections 4.3.6, 4.3.7, 4.3.9, 4.3.11, 4.3.12 and 4.3.14\u20134.3.16",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_git_blob_sha": "8742ff2b370bc745a408d76ad502f7f8660b7b38",
+    "focused_tests_sha256": "822dad75ef37b6a040bf38a2d261035ad990c29776b4f254c1bb7266d32ca104",
+    "implementation_git_blob_sha": "85009290d2f940865b401132f98bae88d70d3c80",
+    "implementation_sha256": "0a367d0ad8f9a172604e7df27b50eeb9fc8f309aa352273f7c39c710bf290217",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "4949c9d0ea61e90995d687f9f616deaf86dba0f1",
+    "runner_sha256": "c024ff696f0e1f4991c1f3fd086790ac202693660f3d59837c5efeaa2017e0ab",
+    "typed_source_sha256": "60a8223f12193a4d55ea13da6d7f25a2ca6bf16db1c2df26c28a1c0d1cf0fb53"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "Provider authorization and billing, crash durability, independent archive interoperability, operational custody, measured covariance and calibration, owner priorities, independent equation derivation, real held-out equivalence and target hardware evidence remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
