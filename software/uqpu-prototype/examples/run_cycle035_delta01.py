@@ -56,7 +56,7 @@ def main():
         "branch": "research/cycle-035-delta-01-2026-09-30",
         "base_cycle034_closeout_sha": "b7d10027569ccc5bbd198a2617b886f31f759890",
         "preregistration_commit_sha": "bb5c9023c849ca6f686bec9cf3b7bd1f23b4ae9d",
-        "implementation_commit_sha": "ebf0bff9cc5d8ec20d668cc2556a79d25d02265f",
+        "implementation_commit_sha": "09a3d14dae009551e52cc12a5c24d474533fe51f",
         "focused_tests_commit_sha": "79abe7cd9bdc7ab31f28659d1fd77e7f4be4d961",
         "source_identity": {
             "preregistered_gates_git_blob_sha": "c34ee63210e1ad84db239a071afc74c13ca74613",
