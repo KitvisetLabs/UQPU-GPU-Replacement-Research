@@ -9,7 +9,7 @@
   "branch": "research/cycle-035-delta-01-2026-09-30",
   "cycle": "035",
   "focused_tests_commit_sha": "79abe7cd9bdc7ab31f28659d1fd77e7f4be4d961",
-  "implementation_commit_sha": "ebf0bff9cc5d8ec20d668cc2556a79d25d02265f",
+  "implementation_commit_sha": "09a3d14dae009551e52cc12a5c24d474533fe51f",
   "lane_count": 12,
   "lanes": {
     "A": {
@@ -219,15 +219,15 @@
             true
           ],
           "reader_counts": [
-            7,
-            6,
-            6,
-            5,
+            9,
+            10,
+            10,
             8,
-            4,
-            7,
-            5,
-            5
+            8,
+            9,
+            8,
+            10,
+            9
           ],
           "retained_descriptors_complete": true,
           "run": 0,
@@ -278,15 +278,15 @@
             true
           ],
           "reader_counts": [
+            9,
+            8,
             7,
             8,
             6,
-            5,
+            6,
+            7,
             8,
-            7,
-            7,
-            7,
-            9
+            7
           ],
           "retained_descriptors_complete": true,
           "run": 1,
@@ -2385,7 +2385,7 @@
     "No provider execution, invoice, commercial economics or capital result.",
     "No crash durability, cryptographic signature claim, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
   ],
-  "payload_sha256": "18c06f268347d17791a212cd649bcc883c63a8b78c6e21df7dd60013e8edb1a8",
+  "payload_sha256": "4acf8d319bfe5e805d01fafd4e3e1399a84e82fc72350b8db020001186c4cb18",
   "preregistration_commit_sha": "bb5c9023c849ca6f686bec9cf3b7bd1f23b4ae9d",
   "schema": "uqpu-cycle035-delta01-executable-acceptance-v1",
   "source_evidence": [
@@ -2412,10 +2412,10 @@
   ],
   "source_identity": {
     "focused_tests_sha256": "4f3a6ae88ae72ace74332b731f0e3a53a9915f42eafa6e832e62a8bf661d0db0",
-    "implementation_sha256": "c73a4f69922c4e550961b89088c54ae272b4af4523eedfd0cf22f4b2032e84dd",
+    "implementation_sha256": "af69295ad32c94a411d53304d347fceac2369235f270db1220c68b708e72c59c",
     "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
     "preregistered_gates_git_blob_sha": "c34ee63210e1ad84db239a071afc74c13ca74613",
-    "runner_sha256": "15afca057ecaf28a3785eed74b8e54130ecb7b75f000f7b2dc27cddb6926b2f2",
+    "runner_sha256": "bfa27e7214cb990ca268d4ced736c970a7dc6e732065127cd219075dcf0dd99d",
     "typed_source_sha256": "102dc0448921b168c888e15ae538d141d626921db1cce28a4445caff5be93f80"
   },
   "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
