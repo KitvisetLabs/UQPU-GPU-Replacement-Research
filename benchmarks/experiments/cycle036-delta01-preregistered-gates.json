@@ -1,0 +1,35 @@
+{
+  "schema": "uqpu-cycle036-delta01-preregistered-gates-v1",
+  "cycle": "036",
+  "delta": "01",
+  "date": "2026-10-01",
+  "branch": "research/cycle-036-delta-01-2026-10-01",
+  "base_cycle035_closeout_sha": "0e11b76d25aa2639386223c1108d5d3916635391",
+  "cycle035_code_evidence_sha": "6b73cb5728c70c030149d9c4040f4a87461cc1d6",
+  "cycle035_actions": {"run_id": 36753956315, "jobs_passed": 8, "jobs_failed": 0, "status": "PASS"},
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {"status": "BLOCKED_WITH_PROGRESS", "unmeasured_values": null, "fiction_empirical_cast": "prohibited", "lane_count": 12, "no_update_status": "prohibited"},
+  "lanes": {
+    "A": {"action": "Sixteenth weighted graph fixture with canonical orbit representatives and a second independent orbit-partition digest.", "acceptance": "Exact enumeration and direct/Burnside/representative/digest agreement pass with deterministic hashes; scaling remains null."},
+    "B": {"action": "Bind mixed numeric arrays to explicit schema paths, normalized-key uniqueness and exponent-threshold transitions.", "acceptance": "Equivalent objects bind; path/tag/key/depth/token/integer/exponent/Unicode collision controls reject; provider evidence remains null."},
+    "C": {"action": "Add ten readers, six replacement stages and injected file/directory-fsync failure controls.", "acceptance": "Complete bytes/descriptors and successful-order traces bind; injected failures stop before promotion; crash/power-loss durability remains null."},
+    "D": {"action": "Bind ZIP64 EOCD/locator adjacency, classic sentinel fields and multi-disk rejection alongside comment/trailing policy.", "acceptance": "Ordering, signature, sentinel, disk, count, CRC, offset, size, comment and trailing mutations reject; real corpus remains open."},
+    "E": {"action": "Add a sixteenth issuer with revocation-epoch transitions and cross-policy receipt replay controls.", "acceptance": "Policy continuity, revocation epoch, quorum, signer set, freshness, head, scope, ancestry and replay fail closed; physical sample remains null."},
+    "F": {"action": "Extend to twenty sparse components and compose two block permutations with independently derived inverses.", "acceptance": "Exact permutation composition and double recovery pass; invalid/missing/non-finite and zero outputs remain null; result remains model only."},
+    "G": {"action": "Compose seven signed transforms and bind additional Cayley closure/inverse rows plus exact principal-minor certificates.", "acceptance": "Exact closure/inverse/associativity, determinant and positive-definiteness calculations pass; calibration remains null."},
+    "H": {"action": "Add a twentieth scenario and exhaustive leave-one through leave-twelve intervals.", "acceptance": "Exact subset counts and finite range only; probability and capital claims remain null."},
+    "FND/EQN": {"action": "Compose thirteen unit-tagged affine maps and bind exact bi-Lipschitz and inverse-roundtrip certificates.", "acceptance": "Endpoint/derivative/unit/inverse equality passes; source/order/dimension/unit/nonmonotone controls reject; no new-law claim."},
+    "SCM": {"action": "Add nine observers with quorum-seven intersection and a hash-chained membership transition.", "acceptance": "Split/stale/fork/replay/downgrade/audience/revocation/membership-transition controls reject; empirical coupling remains null."},
+    "AI-COST": {"action": "Prepare manifest v26 with thirteen real leaves, three padding leaves and simultaneous inclusion/exclusion proofs.", "acceptance": "Root/padding/exclusion/minimality/order/index/source/schema/config/metric mutations reject; equivalence remains null."},
+    "QOS/QSVT": {"action": "Compose fourteen inverse pairs on a branched dependency DAG and bind critical-path plus serial resource bounds.", "acceptance": "Exact reconstruction and DAG/proof/tree/order/resource mutations with independently recomputed depth bounds pass; hardware evidence remains null."}
+  },
+  "primary_sources": [
+    {"title": "PKWARE APPNOTE v6.3.10 FINAL", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "source_date": "2022-11-01", "access_date": "2026-10-01", "locator": "sections 4.3.6, 4.3.7, 4.3.9, 4.3.12 and 4.3.14–4.3.16", "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"},
+    {"title": "Python os.fsync documentation", "url": "https://docs.python.org/3/library/os.html#os.fsync", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"}
+  ],
+  "assumptions": ["All inputs are bounded fixtures or models.", "Injected and successful fsync paths do not establish crash/power-loss durability.", "Custody receipt hashes are synthetic fixtures, not cryptographic signatures.", "SCM records are fiction-only."],
+  "uncertainty": ["Provider authorization/billing, crash durability, archive interoperability, operational custody, measured covariance/calibration, owner priorities, independent derivation, real held-out equivalence and target-hardware evidence remain open."],
+  "nonclaims": ["No measured QPU/GPU performance, scaling or quantum advantage.", "No provider execution/invoice, commercial economics or capital result.", "No crash durability, cryptographic signature, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."],
+  "next_falsifiable_gate": "Implement all twelve bounded packets, publish source-hashed acceptance evidence, run focused and selected regression tests, and verify exact-SHA GitHub Actions."
+}
