@@ -1,0 +1,49 @@
+{
+  "schema": "uqpu-cycle033-delta01-preregistered-gates-v1",
+  "cycle": "033",
+  "delta": "01",
+  "date": "2026-09-30",
+  "branch": "research/cycle-033-delta-01-2026-09-30",
+  "base_cycle032_closeout_sha": "e27f3aa545972057db983ef2431e9599e4269b16",
+  "cycle032_code_evidence_sha": "5d08c2532c3fb89aa5e7c66e4bb48f48a5cd1cf6",
+  "cycle032_actions": {"run_id": 36715680133, "jobs_passed": 8, "jobs_failed": 0, "status": "PASS"},
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "work_item_contract": {
+    "status": "BLOCKED_WITH_PROGRESS",
+    "unmeasured_values": null,
+    "fiction_empirical_cast": "prohibited",
+    "lane_count": 12,
+    "no_update_status": "prohibited"
+  },
+  "lanes": {
+    "A": {"action": "Thirteenth 11-node fixture with intentionally nontrivial stabilizer and Burnside orbit certificate.", "acceptance": "Enumerate 2,048 states; declared symmetry and direct/Burnside quotient counts agree with deterministic hashes; scaling remains null."},
+    "B": {"action": "Canonical decimal tuples and recursive Unicode values with typed-scalar collision diagnostics.", "acceptance": "Equivalent accepted objects bind; normalized-key, type-tag, depth, token, precision and non-finite controls reject; provider evidence null."},
+    "C": {"action": "Seven synchronized readers, three chained replacements and retained descriptors with a directory-fsync protocol model.", "acceptance": "Complete declared payloads only; modelled protocol is separated from observation; crash/power-loss durability null."},
+    "D": {"action": "Cross-bind classic EOCD sentinel fields and explicit single-disk policy to ZIP64 EOCD/locator metadata.", "acceptance": "Sentinel, disk, count, offset, size, descriptor and extra-field mutations reject before payload access; real corpus open."},
+    "E": {"action": "Thirteenth synthetic issuer with receipt freshness windows and signer rotation.", "acceptance": "Quorum, signer set, freshness, head, scope, ancestry, time and substitution controls fail closed; physical sample null."},
+    "F": {"action": "Seventeen model components with sparse block covariance and explicit label permutation maps.", "acceptance": "Invalid/missing/non-finite, sparse-layout/order mutations and zero outputs remain null; model only."},
+    "G": {"action": "Compose four signed block permutations and test closure, associativity and reverse-order inverses.", "acceptance": "Exact closure/roundtrip, typed axes, trace/determinant, symmetry and PSD; calibration null."},
+    "H": {"action": "Seventeenth scenario with exhaustive leave-one through leave-nine exact subset intervals.", "acceptance": "Exact grid counts/range only; no distribution, probability or capital claim."},
+    "FND/EQN": {"action": "Ten source-bound affine maps with exact derivative-interval propagation.", "acceptance": "Associative endpoints/derivatives and inverse; source/order/dimension/nonmonotone mutations reject; no new-law claim."},
+    "SCM": {"action": "Six observers with intersecting quorum-four certificates in the fiction-only transcript.", "acceptance": "Disjoint/split quorum, equivocation, stale/forked head, replay, downgrade, audience and revocation reject; empirical coupling null."},
+    "AI-COST": {"action": "Manifest v23 with minimal compressed multiproof and boundary/adjacency non-membership fixtures.", "acceptance": "Root/path/minimality/order/index/source/schema/config/metric mutations reject; equivalence remains null."},
+    "QOS/QSVT": {"action": "Eleven inverse pairs with proof-level aggregate gate/depth/qubit resources.", "acceptance": "Exact 64-state reconstruction, proof/tree/order/resource mutation witnesses and explicit caps; hardware evidence null."}
+  },
+  "primary_sources": [
+    {"title": "PKWARE APPNOTE v6.3.10 FINAL", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "source_date": "2022-11-01", "access_date": "2026-09-30", "locator": "sections 4.3.6, 4.3.7, 4.3.9, 4.3.12, 4.3.14, 4.3.15 and 4.3.16", "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-09-30", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"}
+  ],
+  "assumptions": [
+    "All inputs are bounded fixtures or models.",
+    "Custody receipt hashes are synthetic fixtures, not cryptographic signatures.",
+    "The directory-fsync sequence is a protocol model and not observed crash-durability evidence.",
+    "SCM records are fiction-only and cannot satisfy an empirical evidence gate."
+  ],
+  "uncertainty": ["Provider authorization/billing, crash durability, archive interoperability, operational custody, measured covariance/calibration, owner priorities, independent derivation, real held-out equivalence and target hardware evidence remain open."],
+  "nonclaims": [
+    "No measured QPU/GPU performance, scaling or quantum advantage.",
+    "No provider execution/invoice, commercial economics or capital result.",
+    "No crash durability, cryptographic signature, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "next_falsifiable_gate": "Implement all twelve bounded packets, publish source-hashed acceptance evidence, run focused and regression tests, and verify exact-SHA GitHub Actions."
+}
