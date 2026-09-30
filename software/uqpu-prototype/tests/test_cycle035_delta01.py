@@ -70,6 +70,10 @@ class Cycle035Tests(unittest.TestCase):
         self.assertEqual(result["maximum_comment_length"], 65535)
         self.assertEqual(result["locator_target_offset"], 4096)
         self.assertEqual(result["locator_position"], 8192)
+        self.assertEqual(set(result["negative_controls"]), {
+            "trailing", "comment_bytes", "crc", "count", "disk",
+            "locator_offset", "locator_position", "size", "comment_overflow",
+        })
         self.assertTrue(all(result["negative_controls"].values()))
         self.assertFalse(result["payload_read"])
         self.assertIsNone(result["real_producer_corpus"])
