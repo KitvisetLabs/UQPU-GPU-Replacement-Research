@@ -528,6 +528,21 @@ def six_signed_transform_cayley_rows():
         return [[item[1][i] * item[1][j] * value[item[0][i]][item[0][j]]
                  for j in range(4)] for i in range(4)]
 
+    def determinant(value):
+        total, size = Fraction(0), len(value)
+        for order in itertools.permutations(range(size)):
+            inversions = sum(order[i] > order[j]
+                             for i in range(size) for j in range(i + 1, size))
+            term = Fraction(-1 if inversions % 2 else 1)
+            for row, column in enumerate(order):
+                term *= value[row][column]
+            total += term
+        return total
+
+    def positive_definite(value):
+        return all(determinant([row[:size] for row in value[:size]]) > 0
+                   for size in range(1, len(value) + 1))
+
     composed, sequential = identity, matrix
     for item in transforms:
         composed, sequential = combine(composed, item), apply(sequential, item)
@@ -549,9 +564,10 @@ def six_signed_transform_cayley_rows():
             "associative_composition": sequential == apply(matrix, composed),
             "exact_reverse_order_roundtrip": restored == matrix,
             "trace_invariant": sum(sequential[i][i] for i in range(4)) == sum(matrix[i][i] for i in range(4)),
-            "determinant_absolute_invariant": True,
+            "determinant_absolute_invariant": abs(determinant(sequential)) == abs(determinant(matrix)),
             "symmetric": all(sequential[i][j] == sequential[j][i] for i in range(4) for j in range(4)),
-            "psd_by_signed_permutation_congruence": True,
+            "psd_by_signed_permutation_congruence": positive_definite(matrix)
+            and positive_definite(sequential),
             "composition_sha256": canonical_hash({"permutations": [item[0] for item in transforms],
                                                     "signs": [item[1] for item in transforms]}),
             "calibration": None, "evidence_class": "SYNTHETIC_TYPED_COVARIANCE"}
