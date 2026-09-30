@@ -8,8 +8,8 @@
   "base_cycle034_closeout_sha": "b7d10027569ccc5bbd198a2617b886f31f759890",
   "branch": "research/cycle-035-delta-01-2026-09-30",
   "cycle": "035",
-  "focused_tests_commit_sha": "9aac1425dec37846e71b5e567839169356e9e460",
-  "implementation_commit_sha": "14008398438062bbea0bef13a687ab74a266759f",
+  "focused_tests_commit_sha": "79abe7cd9bdc7ab31f28659d1fd77e7f4be4d961",
+  "implementation_commit_sha": "ebf0bff9cc5d8ec20d668cc2556a79d25d02265f",
   "lane_count": 12,
   "lanes": {
     "A": {
@@ -219,15 +219,15 @@
             true
           ],
           "reader_counts": [
-            12,
-            11,
-            11,
-            10,
-            10,
-            11,
-            11,
-            11,
-            9
+            7,
+            6,
+            6,
+            5,
+            8,
+            4,
+            7,
+            5,
+            5
           ],
           "retained_descriptors_complete": true,
           "run": 0,
@@ -280,13 +280,13 @@
           "reader_counts": [
             7,
             8,
-            9,
+            6,
+            5,
             8,
-            8,
-            9,
-            10,
-            8,
-            8
+            7,
+            7,
+            7,
+            9
           ],
           "retained_descriptors_complete": true,
           "run": 1,
@@ -335,9 +335,12 @@
       "negative_controls": {
         "comment_bytes": true,
         "comment_overflow": true,
+        "count": true,
+        "crc": true,
         "disk": true,
         "locator_offset": true,
         "locator_position": true,
+        "size": true,
         "trailing": true
       },
       "payload_read": false,
@@ -2382,7 +2385,7 @@
     "No provider execution, invoice, commercial economics or capital result.",
     "No crash durability, cryptographic signature claim, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
   ],
-  "payload_sha256": "229adf558533ddafc2641a7bbd3d9d9483363b147f44ed2030e78d25214caa13",
+  "payload_sha256": "18c06f268347d17791a212cd649bcc883c63a8b78c6e21df7dd60013e8edb1a8",
   "preregistration_commit_sha": "bb5c9023c849ca6f686bec9cf3b7bd1f23b4ae9d",
   "schema": "uqpu-cycle035-delta01-executable-acceptance-v1",
   "source_evidence": [
@@ -2408,11 +2411,11 @@
     }
   ],
   "source_identity": {
-    "focused_tests_sha256": "34bb1a65aab3e606e99237d2cf32d871d4aacb86a9444bfb0517bb74e0d14692",
-    "implementation_sha256": "66de18d6495f64ef2a02b06f5e4bbf4ccc14b979e476c61bf49c7cae6147b351",
+    "focused_tests_sha256": "4f3a6ae88ae72ace74332b731f0e3a53a9915f42eafa6e832e62a8bf661d0db0",
+    "implementation_sha256": "c73a4f69922c4e550961b89088c54ae272b4af4523eedfd0cf22f4b2032e84dd",
     "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
     "preregistered_gates_git_blob_sha": "c34ee63210e1ad84db239a071afc74c13ca74613",
-    "runner_sha256": "185c88b914d5493a6c53c4882b4f505a9c88e6a833c82af6294368ebdef4b1b4",
+    "runner_sha256": "15afca057ecaf28a3785eed74b8e54130ecb7b75f000f7b2dc27cddb6926b2f2",
     "typed_source_sha256": "102dc0448921b168c888e15ae538d141d626921db1cce28a4445caff5be93f80"
   },
   "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
