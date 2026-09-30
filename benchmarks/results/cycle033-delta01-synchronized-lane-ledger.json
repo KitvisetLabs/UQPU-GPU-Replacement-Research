@@ -1,0 +1,59 @@
+{
+  "schema": "uqpu-cycle033-delta01-synchronized-lane-ledger-v1",
+  "cycle": "033",
+  "delta": "01",
+  "date": "2026-09-30",
+  "branch": "research/cycle-033-delta-01-2026-09-30",
+  "base_closeout_commit": "e27f3aa545972057db983ef2431e9599e4269b16",
+  "preregistration_commit": "4f4abc6f5299fb6e264ebf37df9b7e2ffdaaaa87",
+  "code_evidence_commit": "73d49aacc197fad0486af63e41e2143bbe9a7a99",
+  "acceptance_artifact_commit": "71475d27b7ae0e0b03175f597e31ac7419a5b4f9",
+  "status": "CLOSED_CYCLE_033_CI_PASS_EXTERNAL_GATES_OPEN",
+  "full_cycle_closeout_pending": false,
+  "lane_count": 12,
+  "all_lane_acceptance_passed": true,
+  "all_lane_external_gates_closed": false,
+  "lanes": {
+    "A": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE", "progress": "Reflection-symmetric thirteenth 11-node fixture enumerated 2,048 states with objective 35 and four witnesses; its size-two stabilizer induced four complement actions, and the one direct quotient class exactly matched Burnside fixed points [4,0,0,0].", "remaining_gate": "Matched QPU/GPU workload, accepted-output contract and independent classical baseline."},
+    "B": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION", "progress": "Four decimal spellings bound to one sign/digit/exponent tuple; boolean, integer, decimal and string scalars had distinct typed hashes, reserved-tag controls rejected, and prior recursive Unicode/resource controls remained passing.", "remaining_gate": "Externally authorized provider key plus independently verifiable job and billing evidence."},
+    "C": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "LOCAL_SEVEN_READER_FIXTURE_AND_PROTOCOL_MODEL", "progress": "Two runs used seven synchronized readers across three chained replacements; all reader/parent bytes and old/intermediate descriptors remained complete. A four-step directory-fsync protocol was recorded as a model, not an observation.", "remaining_gate": "Executed fsync protocol under crash injection, cache/flush characterization and power-loss durability."},
+    "D": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "SYNTHETIC_ZIP64_METADATA", "progress": "Classic 22-byte EOCD single-disk and ZIP64 sentinel fields were bound to the prior ZIP64 EOCD/locator gate; seven classic and eleven ZIP64 metadata mutations rejected before payload access.", "remaining_gate": "Independent real-producer archive corpus and full interoperability."},
+    "E": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "SYNTHETIC_CUSTODY", "progress": "Thirteen-issuer synthetic chain bound fresh 2-of-3 active receipts after a four-authority signer rotation and rejected nine rotated/stale/future/epoch/head/quorum/scope/ancestry/path controls; hashes are not cryptographic signatures.", "remaining_gate": "Operational issuer keys, real cryptographic signatures, independent custody review and a physical sample."},
+    "F": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "MODEL_ONLY", "progress": "Seventeen-component sparse block covariance grid bound 43 nonzero positions, labels, a complete permutation and source identity across eight sigma values; four binding mutations rejected and invalid/zero-output cases remained null.", "remaining_gate": "Sourced measured components/covariance and an accepted-output definition."},
+    "G": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "SYNTHETIC_TYPED_COVARIANCE", "progress": "Four signed block permutations across 64 covariance products closed as a signed permutation, associated exactly, inverted in reverse order and preserved trace, absolute determinant, symmetry and PSD.", "remaining_gate": "Traceable calibration and measured covariance for declared measurands."},
+    "H": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO", "progress": "Seventeen scenarios produced 408 full outcomes and exhaustive leave-one through leave-nine subsets (up to 24,310 grids per depth); the exact finite interval was 0–21/32.", "remaining_gate": "Owner-approved priorities, sourced distributions and a validated outcome model."},
+    "FND/EQN": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL", "progress": "Ten source-bound positive affine maps associated exactly, propagated the exact positive derivative interval [2800733/786432,2800733/786432], inverted to [2/3,5/3], and rejected source, dimension and monotonicity controls.", "remaining_gate": "Independent derivation, registered-unit coverage and source-backed falsifiers."},
+    "SCM": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "FICTION_ONLY", "progress": "Six-observer quorum-four fiction-only certificates had the exact minimum intersection of two and matched eight valid/split/stale/fork/downgrade/audience/revocation/missing-observer outcomes.", "remaining_gate": "No empirical inference without separate authorization and external evidence."},
+    "AI-COST": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "SYNTHETIC_DATA_LINEAGE", "progress": "Synthetic manifest v23 compressed four individual three-step paths from 12 sibling nodes to a minimal three-node multiproof, bound three boundary/adjacency non-membership fixtures, and rejected ten mutation classes.", "remaining_gate": "Real source lineage, held-out evaluation, independent baseline and equivalence test."},
+    "QOS/QSVT": {"status": "BLOCKED_WITH_PROGRESS", "acceptance": "PASS_LOCAL", "evidence_class": "SYNTHETIC_INVERSE_OPERATOR", "progress": "Eleven inverse pairs reconstructed all 64 states at residual 0; eleven Merkle proofs bound aggregate 200-gate/35-depth/6-qubit resources and rejected proof-aggregate, resource and order mutations.", "remaining_gate": "Independent synthesis/reconstruction and target-specific resource/error evidence."}
+  },
+  "validation": {
+    "local": {
+      "focused_cycle_tests": {"passed": 13, "failed": 0},
+      "selected_regression_cycles_018_020_024_025_026_027_028_029_030_031_032_033": {"passed": 156, "failed": 0},
+      "py_compile": "PASS",
+      "twelve_lane_acceptance_runner": "PASS_LOCAL",
+      "artifact_file_sha256": "40d639eae24c623858408ab74cb3b91ddee2439ed315ffefeb96650ef9c05ec5"
+    },
+    "executable_acceptance_artifact": {"path": "benchmarks/results/cycle033-delta01-executable-acceptance.json", "payload_sha256": "95f5762ac93239d72a0fa19153e79bf45c30039fddf7bcfa4cc348a11354b444"},
+    "github_actions": {
+      "commit": "73d49aacc197fad0486af63e41e2143bbe9a7a99",
+      "run_id": 36718809852,
+      "status": "completed",
+      "conclusion": "success",
+      "jobs_passed": 8,
+      "jobs_failed": 0,
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/36718809852",
+      "job_names": ["test (3.10)", "test (3.11)", "test (3.12)", "qiskit-verification", "reference-benchmark", "qsp-phase-reconstruction-v040", "qsp-phase-synthesis", "target-snapshot-noise"]
+    },
+    "primary_source_review": "benchmarks/experiments/cycle033-delta01-preregistered-gates.json"
+  },
+  "source_evidence": [
+    {"title": "PKWARE APPNOTE v6.3.10 FINAL", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "source_date": "2022-11-01", "locator": "§§4.3.6, 4.3.7, 4.3.9, 4.3.12, 4.3.14–4.3.16", "access_date": "2026-09-30", "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-09-30", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"}
+  ],
+  "assumptions": ["All inputs are bounded fixtures or models.", "Custody receipt hashes are synthetic fixtures, not cryptographic signatures.", "The fsync sequence is a protocol model, not observed durability evidence.", "SCM records are fiction-only and cannot be cast to empirical evidence."],
+  "uncertainty": "Provider authority/billing, crash durability, archive interoperability, operational custody, measured covariance/calibration, decision priorities, independent derivation, AI equivalence and target-hardware gates remain open.",
+  "nonclaims": ["No measured QPU/GPU performance, scaling or quantum advantage claim.", "No provider authorization, invoice, commercial economics or capital result.", "No crash durability, cryptographic signature, physical sample, calibration, new physical law or empirical SCM evidence."],
+  "next_falsifiable_gate": "Execute and test all twelve Cycle 034 packets, preserve source/evidence typing, and verify exact-SHA GitHub Actions before closeout."
+}
