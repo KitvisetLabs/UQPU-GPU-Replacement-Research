@@ -1,0 +1,919 @@
+{
+  "assumptions": [
+    "All graph, receipt, archive, custody, covariance, ranking, lineage and operator inputs are bounded fixtures or models.",
+    "Injected stale/interrupted journal cases do not establish crash or power-loss durability.",
+    "Custody hashes are synthetic fixtures, not cryptographic signatures or authority evidence.",
+    "SCM records are fiction-only and cannot be cast to empirical evidence."
+  ],
+  "base_cycle040_closeout_sha": "db5523b831e4b5a53643ca317af185658ae882b9",
+  "branch": "research/cycle-041-delta-01-2026-10-01",
+  "cycle": "041",
+  "focused_tests_commit_sha": "62f1ddaf326054ce7f3eeb55692264addf87bfa2",
+  "implementation_commit_sha": "204c5f97147aee32148e3804e7a5fdc2c660c70c",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "action_count": 4,
+      "burnside_matches_direct": true,
+      "burnside_numerator": 16,
+      "burnside_orbit_count": 4,
+      "canonical_label_reconstruction": true,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "graph_stabilizer_size": 2,
+      "integer_canonical_labels": [
+        43605,
+        43685,
+        44453,
+        53925
+      ],
+      "objective": 27,
+      "orbit_count": 4,
+      "orbit_sizes": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "orbit_stabilizer_double_count_valid": true,
+      "orbit_stabilizer_products": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "prior_incidence_valid": true,
+      "representative_stabilizer_sizes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "scaling_claim": null,
+      "states": 131072,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "string_canonical_labels": [
+        43605,
+        43685,
+        44453,
+        53925
+      ],
+      "task_sha256": "d2a226e03be85d54ce4e8df1180aec496fe9b354456d34c35a8b2b317069dd5d",
+      "three_canonical_algorithms_agree": true,
+      "tuple_canonical_labels": [
+        43605,
+        43685,
+        44453,
+        53925
+      ],
+      "witness_count": 16,
+      "witness_sha256": "e93f560b09099b07a10e1270408afdbbd73c324f08bb16917aa512d8401d0499"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "functional_equivalence": null,
+      "independent_new_root_valid": true,
+      "manifest": {
+        "config_sha256": "72287193141272384ad99ff3c55cab714fa7cb5ae4cf3c6c2a9088a4dc146527",
+        "metric_sha256": "02af007c365dad39b0f67a8ad8ca57bf3de55a3c551101af86bb533390409142",
+        "new_root": "418862e775f8178cfcc8d61659a2bc8f0d194d18984e68ecf6322da802c6e40f",
+        "old_root": "a0542e5aee0dbdbb1fe73cb3ca7cb962dec5e8cd65a3e033fd0f16879dfaa92b",
+        "source": "7e6254a9cb65356ad5a5ebf8b5b09e6532a2dc27b90d5840c0ef69514d60105e",
+        "update_path_sha256": "71774650d24cf028bef669160aaf27403ed18d596d315cd211c98807cc71f6df",
+        "updated_index": 6,
+        "version": 31
+      },
+      "mutation_rejections": {
+        "config": true,
+        "index": true,
+        "metric": true,
+        "new_root": true,
+        "old_root": true,
+        "path": true,
+        "schema": true,
+        "source": true
+      },
+      "new_root_reconstruction_valid": true,
+      "old_root_reconstruction_valid": true,
+      "padding_leaf_count": 0,
+      "prior_frontier_valid": true,
+      "real_leaf_count": 16,
+      "root_changed": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "update_path_node_count": 4,
+      "valid_manifest": true
+    },
+    "B": {
+      "canonical_sha256": "a1a1c5a3c2d590fe35a206c4cec8934347e5e6940aadfbc46210852469f0cca2",
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "journal_record_count": 3,
+      "journal_terminal_sha256": "5cfa8df7b9b4ac31399bf6e92d7e89be3007a1927c02f5e6e995a672d836a3d7",
+      "migration_journal_sha256": "032d345de238c112a7b4af555bb11ab6bbf719201e720d1fd53d6d1b53a64a65",
+      "migration_matches_v6": true,
+      "negative_controls": {
+        "default": true,
+        "journal_binding": true,
+        "journal_hash": true,
+        "journal_order": true,
+        "journal_previous": true,
+        "key": true,
+        "missing_hash": true,
+        "missing_journal": true,
+        "path": true,
+        "rollback": true,
+        "unicode": true,
+        "value": true,
+        "version_high": true,
+        "version_low": true
+      },
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "C": {
+      "all_reader_observations_complete": true,
+      "cleanup_journal_empty": true,
+      "crash_durability": null,
+      "evidence_class": "LOCAL_FIFTEEN_READER_GENERATION_RECOVERY_FIXTURE",
+      "failure_controls": {
+        "cross_device_rename": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "directory_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "file_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_checksum": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_cleanup": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_replay": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "partial_write": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "stale_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        }
+      },
+      "generation_sequence": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "generation_sequence_valid": true,
+      "interrupted_recovery_completed": true,
+      "power_loss_durability": null,
+      "reader_count": 15,
+      "recovery_checksum_valid": true,
+      "recovery_generation": 12,
+      "replacement_directory_fsync_call_count": 11,
+      "replacement_file_fsync_call_count": 11,
+      "replacement_stages": 11,
+      "stale_recovery_rejected": true,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "corpus_sha256": "adcbf6b3e58db55fc76351aa3f7f2daa8faab092b525fe65bd8ef8ebbceb4776",
+      "corpus_size": 2,
+      "eocd64_signature": 101075792,
+      "evidence_class": "SYNTHETIC_ZIP64_UNICODE_COMMENT_LOCATOR_CORPUS",
+      "local_central_end_record_parity": true,
+      "locator_signature": 117853008,
+      "negative_controls": {
+        "comment": true,
+        "comment_crc": true,
+        "comment_normalization": true,
+        "corpus_binding": true,
+        "count": true,
+        "crc": true,
+        "declared_length": true,
+        "descriptor_crc": true,
+        "descriptor_parity": true,
+        "descriptor_signature": true,
+        "descriptor_size": true,
+        "disk_parity": true,
+        "duplicate_extra": true,
+        "encoding": true,
+        "eocd64_signature": true,
+        "extra_order": true,
+        "local_central_crc": true,
+        "local_central_name": true,
+        "locator_signature": true,
+        "multi_disk": true,
+        "name": true,
+        "normalization_collision": true,
+        "normalization_parity": true,
+        "offset": true,
+        "parity": true,
+        "signature": true,
+        "size": true,
+        "trailing": true,
+        "unicode_crc": true,
+        "unicode_path_crc": true,
+        "unknown_extra": true
+      },
+      "payload_read": false,
+      "real_producer_corpus": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "unicode_comment_crc32": [
+        3264108343,
+        3357751120
+      ],
+      "valid_metadata": true
+    },
+    "E": {
+      "batch_commit_sha256": [
+        "64a7a297fb799ab9f8c856337b56c119b0a072539bc9f6e4be3f2666d554f3ba",
+        "da13a60c6e92572f2ebb8c95da55fea44523318328bd46185841a9f5ca11c2a5",
+        "c4322333bcd70cee483e29a44d9ae438a2dccd2cb6a2f32dd12873ebef09a2b4"
+      ],
+      "batch_watermarks": [
+        5002,
+        5005,
+        5008
+      ],
+      "boundary_rejections": {
+        "cache_overlap": true,
+        "commit_chain": true,
+        "epoch": true,
+        "handoff_one": true,
+        "handoff_two": true,
+        "order": true,
+        "prior_cache_disjoint": true,
+        "prior_commit_chain": true,
+        "prior_epoch_handoff": true,
+        "prior_first_order": true,
+        "prior_first_replay": true,
+        "prior_prior_batch_duplicate": true,
+        "prior_prior_batch_order": true,
+        "prior_prior_cache_epoch": true,
+        "prior_prior_cache_replay": true,
+        "prior_prior_policy": true,
+        "prior_prior_prior_ancestry": true,
+        "prior_prior_prior_cross_policy_replay": true,
+        "prior_prior_prior_epoch": true,
+        "prior_prior_prior_fork": true,
+        "prior_prior_prior_head": true,
+        "prior_prior_prior_inactive_signer": true,
+        "prior_prior_prior_nonce_high": true,
+        "prior_prior_prior_nonce_low": true,
+        "prior_prior_prior_nonce_replay": true,
+        "prior_prior_prior_path": true,
+        "prior_prior_prior_quorum": true,
+        "prior_prior_prior_replay_cache": true,
+        "prior_prior_prior_rollback": true,
+        "prior_prior_prior_scope": true,
+        "prior_prior_prior_stale": true,
+        "prior_prior_prior_watermark_rollback": true,
+        "prior_prior_watermark": true,
+        "prior_second_replay": true,
+        "watermark_replay": true
+      },
+      "cache_epochs": [
+        15,
+        16,
+        17
+      ],
+      "cache_epochs_pairwise_disjoint": true,
+      "cache_sizes": [
+        2,
+        2,
+        2
+      ],
+      "commit_chain_bound": true,
+      "event_count": 21,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "handoff_sha256": [
+        "7dd66ea4bb7db7027630d6c300589aa8976e6f711bab3ddb48e013b4e91981dc",
+        "90926a7026393f11a83273bd2c8bf90f87f73944d2e10b4885727e0e55c7f9f7"
+      ],
+      "initial_watermark": 5000,
+      "physical_sample": null,
+      "policy_versions": [
+        39,
+        40,
+        41
+      ],
+      "revocation_epochs": [
+        15,
+        16,
+        17
+      ],
+      "signature_kind": "SYNTHETIC_HASH_FIXTURE_NOT_CRYPTOGRAPHIC_SIGNATURE",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "c80770e36796f0c639101d2707b5dacc2e487068152475690ed7c14a31977368"
+    },
+    "F": {
+      "all_parenthesizations_equal": true,
+      "binding_mutation_rejections": {
+        "composition": true,
+        "inverse": true,
+        "permutation": true,
+        "source": true
+      },
+      "binding_sha256": "39811e04a7277ebca8cc37c9a236e41f0baca9a76535f86205ebd016ccb3b961",
+      "commercial_interpretation": null,
+      "components": 25,
+      "composition_matches_sequential_intervals": true,
+      "composition_matches_sequential_matrices": true,
+      "evidence_class": "MODEL_ONLY",
+      "invalid_outputs_null": true,
+      "inverse_map_valid": true,
+      "parenthesization_count": 7,
+      "permutation_count": 7,
+      "recovers_intervals": true,
+      "recovers_matrices": true,
+      "sparse_nonzero_count": 73,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "all_tree_shapes_match": true,
+      "composed_interval": [
+        [
+          876203,
+          768
+        ],
+        [
+          1581203,
+          768
+        ]
+      ],
+      "endpoint_certificate_valid": true,
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_derivative": [
+        9375,
+        16
+      ],
+      "exact_roundtrip": true,
+      "map_count": 18,
+      "negative_controls": {
+        "dimension": true,
+        "endpoint_order": true,
+        "nonmonotone": true,
+        "prior_controls": true,
+        "source_order": true,
+        "unit": true
+      },
+      "new_law_claim": null,
+      "source_sha256": [
+        "7e6254a9cb65356ad5a5ebf8b5b09e6532a2dc27b90d5840c0ef69514d60105e",
+        "760aacd1ecf2bc50db762fe187860a70624381ba3465a90801ea901d11d55e67",
+        "09ccf12c132115dbea864c3631d4f67f59e0faf86e00218af9fa861c90105fae",
+        "0652e3fb5d05c2a838f6d8113f2b17a8d5ea4cf62d2ee4d88e1d3a29fc5188f6",
+        "299bc2c57ab40a5df676721a3827006393287d498e7f8c0a5fabe90816ea5229",
+        "0f46226a25f849f79bbeaa633d8e1dd5562e71ca60211e75535728c803b069ce",
+        "49367c35cb3c8076448480e9c48d8994539b025b448f5f11b32f71f116d1d574",
+        "87c812488a2a457709f934c20bfa95268e67cc41ba07a4cd5011bb4031f05211",
+        "407e43b4108f219f7ca9b3dfab94f21ee659b933e9320e79609faa492575ad34",
+        "1193363757d8291e4f21962295be4386484277b6fbea46af7987c3f615e76e83",
+        "8064dd30b6d88a90b9e34013c437bbb388e35d9bfbd698518317eef5adcef247",
+        "56d79423edbb4ab544f6afba094574a1578233afc372ece379d9c4a458351c2e",
+        "5a23918305621d45aa16b38f48e9f6d611a352668ceaca2c3a84da13c2764139",
+        "eea771621c9672c8b3c07b05881d4bf1540e02d9f71db17e787d9ec14dbea96a",
+        "289119b8ad737a2f7bed97201489becaa41c0787b026c53e9be52322e8a72657",
+        "94916b0f22fb0f713a36d9bec9fb220aebbbfb62114e3691abf7efd83e32b4d1",
+        "d6af23f239fb62dcb9b4ec0e27e1553a8dfbe7807496a331ab576625bd7a54ae",
+        "48d5fe3244661979c692a6084976a88fd53a3f29090638cf24b5f926977fea7c"
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_unit": "u18",
+      "tree_shape_count": 6,
+      "unit_chain": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15",
+        "u16",
+        "u17",
+        "u18"
+      ]
+    },
+    "G": {
+      "adjugate_identity_left": true,
+      "adjugate_identity_right": true,
+      "adjugate_mutation_rejected": true,
+      "all_cayley_rows_valid": true,
+      "all_principal_minors_positive": true,
+      "associative_composition": true,
+      "calibration": null,
+      "cayley_hamilton_zero": true,
+      "cayley_rows": [
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 0,
+          "right": 1
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 1,
+          "right": 2
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 2,
+          "right": 3
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 3,
+          "right": 4
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 4,
+          "right": 5
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 5,
+          "right": 6
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 6,
+          "right": 7
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 7,
+          "right": 8
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 8,
+          "right": 0
+        }
+      ],
+      "characteristic_coefficients": [
+        [
+          1,
+          1
+        ],
+        [
+          -191,
+          1
+        ],
+        [
+          12787,
+          1
+        ],
+        [
+          -357979,
+          1
+        ],
+        [
+          3547642,
+          1
+        ]
+      ],
+      "characteristic_polynomial_invariant": true,
+      "closure_is_signed_permutation": true,
+      "composition_sha256": "e64c1c38821050b73b5e51a16517f9d12baf50fc632309f0bd6820658cbf24bd",
+      "denominator": [
+        17,
+        10
+      ],
+      "determinant_consistency": true,
+      "determinant_invariant": true,
+      "determinant_lemma_left": [
+        7,
+        1
+      ],
+      "determinant_lemma_right": [
+        7,
+        1
+      ],
+      "determinant_lemma_valid": true,
+      "determinant_mutation_rejected": true,
+      "determinant_mutation_rejected_v12": true,
+      "eleventh_transform_sha256": "fd609cc65ab696d1f0b11f77dd6dec428a7c592ed0480d8800c25b4823a251cf",
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "exact_reverse_order_roundtrip": true,
+      "inverse_mutation_rejected": true,
+      "left_inverse_valid": true,
+      "matrix_product_count": 192,
+      "power_sum_mutation_rejected": true,
+      "power_sum_recurrence_valid": true,
+      "power_sums": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          133,
+          1
+        ],
+        [
+          641,
+          1
+        ],
+        [
+          3157,
+          1
+        ],
+        [
+          15689,
+          1
+        ]
+      ],
+      "right_inverse_valid": true,
+      "sherman_morrison_inverse": [
+        [
+          5,
+          17
+        ],
+        [
+          -2,
+          17
+        ],
+        [
+          -4,
+          17
+        ],
+        [
+          5,
+          17
+        ]
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "symmetric": true,
+      "tenth_transform_sha256": "2db705361f18dcb065b286e5944f5cd2fa4874550c102c650a5974c68d1ee712",
+      "trace_power_invariant": true,
+      "trace_powers": [
+        [
+          191,
+          1
+        ],
+        [
+          10907,
+          1
+        ],
+        [
+          714857,
+          1
+        ],
+        [
+          51253299,
+          1
+        ]
+      ],
+      "transform_count": 12,
+      "twelfth_transform_sha256": "65da70e43f7f996af68e0140e30eb22fd838a9b9d97a1dace9ca3568a1a69d0b",
+      "updated_determinant": [
+        17,
+        1
+      ]
+    },
+    "H": {
+      "all_grid_interval": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "capital": null,
+      "counts_match_binomial": true,
+      "deletion_grid_counts": {
+        "1": 25,
+        "10": 3268760,
+        "11": 4457400,
+        "12": 5200300,
+        "13": 5200300,
+        "14": 4457400,
+        "15": 3268760,
+        "16": 2042975,
+        "17": 1081575,
+        "2": 300,
+        "3": 2300,
+        "4": 12650,
+        "5": 53130,
+        "6": 177100,
+        "7": 480700,
+        "8": 1081575,
+        "9": 2042975
+      },
+      "dynamic_program_state_counts": {
+        "1": 3,
+        "10": 59,
+        "11": 63,
+        "12": 65,
+        "13": 65,
+        "14": 63,
+        "15": 59,
+        "16": 53,
+        "17": 45,
+        "2": 6,
+        "3": 10,
+        "4": 15,
+        "5": 21,
+        "6": 28,
+        "7": 36,
+        "8": 45,
+        "9": 53
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 600,
+      "orders_each": 24,
+      "probability_claim": null,
+      "recurrence_total_sha256": "709441df150a4a5b02b2276a75358ddf528e057b3be332ca2502b5267ae74864",
+      "scenario_count": 25,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "winner_counts": [
+        108,
+        192,
+        192,
+        108
+      ]
+    },
+    "QOS/QSVT": {
+      "all_inclusion_proofs_valid": true,
+      "antichain_width": 4,
+      "basis_states_checked": 64,
+      "critical_path_recomputed": true,
+      "dependency_dag_valid": true,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "extension_proof_valid": true,
+      "hardware": null,
+      "inverse_pair_names": [
+        "add-01",
+        "xor-03",
+        "rotl-01",
+        "add-05",
+        "xor-12",
+        "rotl-02",
+        "add-07",
+        "xor-21",
+        "rotl-03",
+        "add-09",
+        "xor-42",
+        "rotl-04",
+        "add-11",
+        "xor-33",
+        "rotl-05",
+        "xor-17",
+        "xor-29",
+        "xor-43",
+        "xor-53"
+      ],
+      "level_schedule": [
+        {
+          "gates": 15,
+          "level": 0,
+          "nodes": [
+            0,
+            1
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 1,
+          "nodes": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "gates": 32,
+          "level": 2,
+          "nodes": [
+            6,
+            7
+          ]
+        },
+        {
+          "gates": 88,
+          "level": 3,
+          "nodes": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gates": 56,
+          "level": 4,
+          "nodes": [
+            12,
+            13
+          ]
+        },
+        {
+          "gates": 31,
+          "level": 5,
+          "nodes": [
+            14
+          ]
+        },
+        {
+          "gates": 33,
+          "level": 6,
+          "nodes": [
+            15
+          ]
+        },
+        {
+          "gates": 35,
+          "level": 7,
+          "nodes": [
+            16
+          ]
+        },
+        {
+          "gates": 37,
+          "level": 8,
+          "nodes": [
+            17
+          ]
+        },
+        {
+          "gates": 39,
+          "level": 9,
+          "nodes": [
+            18
+          ]
+        }
+      ],
+      "level_schedule_valid": true,
+      "maximum_antichain": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "mutation_rejections": {
+        "critical_path": true,
+        "dag": true,
+        "extension_proof": true,
+        "level": true,
+        "proof": true,
+        "resource": true,
+        "slack": true,
+        "width": true,
+        "width_recomputed": true,
+        "work": true
+      },
+      "parallel_bounds_are_model_only": true,
+      "proof_count": 19,
+      "residual": 0,
+      "resource_bound": {
+        "antichain_width": 4,
+        "dag_critical_depth": 86,
+        "gates": 411,
+        "level_count": 10,
+        "level_width": 4,
+        "max_qubits": 6,
+        "serial_depth": 132,
+        "unconstrained_parallel_lower_bound": 13
+      },
+      "resource_merkle_root_sha256": "1222e1a5ccbbd6980acbfa865d477957bfec4cbf5adc91770b8fcfed65805aab",
+      "schedule_slack": 0,
+      "scheduled_depth": 86,
+      "slack_certificate_valid": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "width_recomputed": true,
+      "work_conservation": true
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "certificate_intersection_size": 10,
+      "control_table": {
+        "audience": true,
+        "chain_mutation": true,
+        "downgrade": true,
+        "fifth_transition": true,
+        "fork": true,
+        "fourth_transition": true,
+        "membership_hash": true,
+        "minimum_intersection_formula": true,
+        "missing_member": true,
+        "quorum_intersection": true,
+        "replay": true,
+        "revocation": true,
+        "sixth_transition": true,
+        "split": true,
+        "stale": true,
+        "transition_chain": true,
+        "valid": true
+      },
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "membership_epoch": 39,
+      "minimum_quorum_intersection": 10,
+      "observer_count": 14,
+      "quorum": 12,
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transition_chain_sha256": "34183da2de2ad7af5fa19314be442c2b782d569d27c61acc15cbff2848aa9f27",
+      "transition_count": 6
+    }
+  },
+  "nonclaims": [
+    "No measured QPU or GPU performance, scaling or quantum advantage.",
+    "No provider execution, invoice, commercial economics or capital result.",
+    "No crash durability, signature claim, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "payload_sha256": "9bc7d1a7459693a2095d7dae3dca2757daf331fa0495f6242d3c2160ddb601a8",
+  "preregistration_commit_sha": "b9fe1af37de73c069bfba82f8bf4d380d47c5b87",
+  "schema": "uqpu-cycle041-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "locator": "sections 4.3.7, 4.3.9, 4.3.11, 4.3.12, 4.3.15 and 4.3.16",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_git_blob_sha": "ea0e8c5bc8fd695a3e1efd52313cc06d396dbf6a",
+    "focused_tests_sha256": "db970831e54598c86499b9d27b06c7047c406f9f6172583f4c3715ef8e765aea",
+    "implementation_git_blob_sha": "1a3ef6d080cab8834ab6bb2152e799951c6d3ce2",
+    "implementation_sha256": "39885040af1489e6758ae57373ad7d0f794a6f275f16eb17e569e9208e739f57",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "ab6af9e55819873e7fd73e4225a8524cbf3d2c81",
+    "runner_sha256": "e10b2c6edb4b64664b695d1fc05c4779275de50b031741bd78db7d830228953a",
+    "typed_source_sha256": "7e6254a9cb65356ad5a5ebf8b5b09e6532a2dc27b90d5840c0ef69514d60105e"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "Provider authorization and billing, crash durability, independent archive interoperability, operational custody, measured covariance and calibration, owner priorities, independent equation derivation, real held-out equivalence and target hardware evidence remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
