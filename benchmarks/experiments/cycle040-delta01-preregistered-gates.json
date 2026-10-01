@@ -1,0 +1,36 @@
+{
+  "schema": "uqpu-cycle040-delta01-preregistered-gates-v1",
+  "cycle": "040",
+  "delta": "01",
+  "date": "2026-10-01",
+  "branch": "research/cycle-040-delta-01-2026-10-01",
+  "base_cycle039_closeout_sha": "24c1d2957410bf42be3549780b6058e780c67ce5",
+  "cycle039_code_evidence_sha": "e239ac27a9d5d9c9948a270179f644985ecf7ceb",
+  "cycle039_actions": {"run_id": 36791373254, "jobs_passed": 8, "jobs_failed": 0, "status": "PASS"},
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "portfolio_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+  "work_item_contract": {"status": "BLOCKED_WITH_PROGRESS", "unmeasured_values": null, "fiction_empirical_cast": "prohibited", "lane_count": 12, "no_update_status": "prohibited"},
+  "lanes": {
+    "A": {"action": "Twentieth weighted graph fixture with orbit-incidence accounting and two independent canonical-label algorithms.", "acceptance": "Exact enumeration, Burnside/direct orbit count, incidence row sums and both label algorithms agree; scaling remains null."},
+    "B": {"action": "Schema v4→v5 migration with provenance-chain hashing and explicit downgrade controls.", "acceptance": "Exact chain/hash/version/path/value/default controls reject mutations and downgrade; provider evidence remains null."},
+    "C": {"action": "Fourteen readers, ten replacement stages, journal checksums and interrupted-cleanup recovery.", "acceptance": "Readers observe complete bytes, stage/checksum/recovery traces bind, and injected failures cannot promote durability; crash/power-loss durability remains null."},
+    "D": {"action": "ZIP64 Unicode-path CRC, descriptor signature and local/central normalization-parity corpus.", "acceptance": "Synthetic corpus validates exact CRC/signature/NFC parity and rejects name/CRC/signature/size/normalization mutations; real producer corpus remains open."},
+    "E": {"action": "Twentieth issuer with two batch commits and receipt-cache epoch handoff.", "acceptance": "Event continuity, both commits, monotone watermarks, disjoint cache epochs and handoff binding pass; replay/ordering/epoch mutations reject; physical sample remains null."},
+    "F": {"action": "Twenty-four components and six permutation parenthesizations with exact inverse proof.", "acceptance": "All parenthesizations and sequential interval/matrix paths agree, inverse recovery passes and binding mutations reject; commercial interpretation remains null."},
+    "G": {"action": "Eleven transforms with exact determinant lemma and power-sum recurrence.", "acceptance": "Prior invariants plus determinant-lemma and recurrence identities pass over rationals; mutation rejects and calibration remains null."},
+    "H": {"action": "Twenty-four scenarios with exact dynamic programming through leave-sixteen.", "acceptance": "Subset counts equal binomial coefficients, recurrence hashes bind and only finite illustrative intervals are reported; probability/capital claims remain null."},
+    "FND/EQN": {"action": "Seventeen unit-tagged affine maps across five tree shapes and exact interval endpoints.", "acceptance": "All tree shapes, endpoint propagation and inverse roundtrip agree; source/unit/order/nonmonotone controls reject; no new-law claim."},
+    "SCM": {"action": "Thirteen observers, quorum eleven, minimum intersection nine and five chained transitions.", "acceptance": "Exact quorum-intersection/chain controls and inherited split/stale/fork/replay/downgrade controls pass; empirical coupling remains null."},
+    "AI-COST": {"action": "Manifest v30 with frontier-proof reconstruction and independent full-root recomputation.", "acceptance": "Selected leaves plus frontier reconstruct the same root as all leaves and root/frontier/order/index/source/schema/config/metric mutations reject; equivalence remains null."},
+    "QOS/QSVT": {"action": "Eighteen inverse pairs with exact schedule work, critical-path and slack certificates.", "acceptance": "Full basis reconstruction, extension proof, work/critical path/slack recomputation and inherited proof/resource controls pass; hardware evidence remains null."}
+  },
+  "primary_sources": [
+    {"title": "PKWARE APPNOTE v6.3.10 FINAL", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "source_date": "2022-11-01", "access_date": "2026-10-01", "locator": "sections 4.3.7, 4.3.9, 4.3.12 and 4.3.16", "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"},
+    {"title": "Python os.fsync documentation", "url": "https://docs.python.org/3/library/os.html#os.fsync", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"}
+  ],
+  "assumptions": ["All inputs are bounded fixtures or models.", "Injected journal interruption and recovery do not establish crash or power-loss durability.", "Custody hashes are synthetic fixtures, not signatures.", "SCM records are fiction-only."],
+  "uncertainty": ["Provider authorization/billing, crash durability, archive interoperability, operational custody, measured covariance/calibration, owner priorities, independent derivation, real held-out equivalence and target-hardware evidence remain open."],
+  "nonclaims": ["No measured QPU/GPU performance, scaling or quantum advantage.", "No provider execution/invoice, commercial economics or capital result.", "No crash durability, cryptographic signature, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."],
+  "next_falsifiable_gate": "Implement all twelve bounded packets, publish source-hashed acceptance evidence, run focused and selected regression tests, and verify exact-SHA GitHub Actions."
+}
