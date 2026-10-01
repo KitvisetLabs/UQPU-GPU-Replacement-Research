@@ -1,0 +1,916 @@
+{
+  "assumptions": [
+    "All graph, receipt, archive, custody, covariance, ranking, lineage and operator inputs are bounded fixtures or models.",
+    "Injected journal interruption and recovery do not establish crash or power-loss durability.",
+    "Custody hashes are synthetic fixtures, not cryptographic signatures or authority evidence.",
+    "SCM records are fiction-only and cannot be cast to empirical evidence."
+  ],
+  "base_cycle039_closeout_sha": "24c1d2957410bf42be3549780b6058e780c67ce5",
+  "branch": "research/cycle-040-delta-01-2026-10-01",
+  "cycle": "040",
+  "focused_tests_commit_sha": "51cd4cf6c3f3fd89f302c4cc30b148f5e1d55996",
+  "implementation_commit_sha": "553259dded9c268ee2d24b088bb9e03952dc0fef",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "action_count": 8,
+      "burnside_matches_direct": true,
+      "burnside_numerator": 32,
+      "burnside_orbit_count": 4,
+      "canonical_algorithms_agree": true,
+      "canonical_label_reconstruction": true,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "incidence_row_sums": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "incidence_rows_bind_actions": true,
+      "incidence_sha256": "e2ea18d981d91d8dea181ba887bfe7de450e4d4df0480102e58329651695ed53",
+      "integer_canonical_labels": [
+        21845,
+        21850,
+        21930,
+        23130
+      ],
+      "objective": 24,
+      "orbit_count": 4,
+      "orbit_incidence": [
+        [
+          4,
+          4
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "orbit_sizes": [
+        2,
+        8,
+        4,
+        2
+      ],
+      "scaling_claim": null,
+      "stabilizer_size": 4,
+      "states": 65536,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "task_sha256": "3755578c39d6586205f886cd9b4d3fac29a0ae38d60c1e949fca254409076d5f",
+      "tuple_canonical_labels": [
+        21845,
+        21850,
+        21930,
+        23130
+      ],
+      "witness_count": 16,
+      "witness_sha256": "8bdce96aa2109365f2616d54e3567d8b21f95f07fbb296e15f96c88fbab0c217"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "frontier_is_smaller": true,
+      "frontier_node_count": 8,
+      "frontier_reconstructed_root": "0a43dd56cffc684b8dfdc15a9ba80ff6c4b9ab55eefad0be097d24a2cdae4878",
+      "frontier_reconstruction_valid": true,
+      "functional_equivalence": null,
+      "independent_root_valid": true,
+      "independently_recomputed_root": "0a43dd56cffc684b8dfdc15a9ba80ff6c4b9ab55eefad0be097d24a2cdae4878",
+      "individual_proof_node_count": 20,
+      "manifest": {
+        "config_sha256": "3bcb8a97ef5f1f27ed6d25a75fdc2915dce73e145387f91ddba001838c0192a8",
+        "frontier_sha256": "b99db4006d58f6c69d19bc59153be95fba2e8af0f023a8b1e08836546f87ba17",
+        "metric_sha256": "02af007c365dad39b0f67a8ad8ca57bf3de55a3c551101af86bb533390409142",
+        "real_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "root": "0a43dd56cffc684b8dfdc15a9ba80ff6c4b9ab55eefad0be097d24a2cdae4878",
+        "selected": [
+          1,
+          4,
+          7,
+          10,
+          13
+        ],
+        "source": "6c4044fbf0c54a80daa47b538ab236630d6ec3d4d22d7a47530803fdeb478f89",
+        "version": 30
+      },
+      "mutation_rejections": {
+        "config": true,
+        "frontier": true,
+        "index": true,
+        "metric": true,
+        "order": true,
+        "root": true,
+        "schema": true,
+        "source": true
+      },
+      "padding_leaf_count": 0,
+      "prior_frontier_valid": true,
+      "real_leaf_count": 16,
+      "selected_leaf_count": 5,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "valid_manifest": true
+    },
+    "B": {
+      "canonical_sha256": "6934ead54e26fddac58ac11970b04199d918622a3830b61aa3f28e819c5b9a38",
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "negative_controls": {
+        "chain_from": true,
+        "chain_hash": true,
+        "chain_record": true,
+        "chain_to": true,
+        "default_change": true,
+        "downgrade": true,
+        "key": true,
+        "missing_chain": true,
+        "missing_chain_hash": true,
+        "path": true,
+        "unicode": true,
+        "value": true,
+        "version_high": true,
+        "version_low": true
+      },
+      "provenance_chain": [
+        {
+          "from": 3,
+          "record_sha256": "d2b0c6f808489119608db2d42143b18e80c052c7f15caa70d284d44b7d9e51e6",
+          "to": 4
+        },
+        {
+          "from": 4,
+          "record_sha256": "d2b0c6f808489119608db2d42143b18e80c052c7f15caa70d284d44b7d9e51e6",
+          "to": 5
+        }
+      ],
+      "provenance_chain_sha256": "05162199cdaf34af2f83a99ab9895528b2e0009eefb7a41d0636f3063944c88c",
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "upgrade_matches_v5": true
+    },
+    "C": {
+      "all_reader_observations_complete": true,
+      "all_stage_orders_valid": true,
+      "cleanup_journal_empty": true,
+      "crash_durability": null,
+      "evidence_class": "LOCAL_FOURTEEN_READER_JOURNAL_RECOVERY_FIXTURE",
+      "failure_controls": {
+        "cross_device_rename": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "directory_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "file_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_checksum": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_cleanup": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "journal_replay": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "partial_write": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        }
+      },
+      "interrupted_cleanup_recovered": true,
+      "journal_checksums_unique": true,
+      "power_loss_durability": null,
+      "reader_count": 14,
+      "reader_counts": [
+        35,
+        37,
+        39,
+        36,
+        34,
+        34,
+        39,
+        36,
+        37,
+        37,
+        35,
+        36,
+        37,
+        32
+      ],
+      "recovery_checksum_valid": true,
+      "recovery_directory_fsync_call_count": 1,
+      "recovery_file_fsync_call_count": 1,
+      "replacement_directory_fsync_call_count": 10,
+      "replacement_file_fsync_call_count": 10,
+      "replacement_stages": 10,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "corpus_sha256": "70de4ea536c896161083a3f7329403fc6e67a341379576848c8debab73b44fb3",
+      "corpus_size": 2,
+      "descriptor_signature": 134695760,
+      "evidence_class": "SYNTHETIC_ZIP64_UNICODE_DESCRIPTOR_CORPUS",
+      "local_central_normalization_parity": true,
+      "negative_controls": {
+        "comment": true,
+        "corpus_binding": true,
+        "count": true,
+        "crc": true,
+        "declared_length": true,
+        "descriptor_crc": true,
+        "descriptor_parity": true,
+        "descriptor_signature": true,
+        "descriptor_size": true,
+        "duplicate_extra": true,
+        "encoding": true,
+        "extra_order": true,
+        "local_central_crc": true,
+        "local_central_name": true,
+        "multi_disk": true,
+        "name": true,
+        "normalization_collision": true,
+        "normalization_parity": true,
+        "offset": true,
+        "parity": true,
+        "signature": true,
+        "size": true,
+        "trailing": true,
+        "unicode_crc": true,
+        "unicode_path_crc": true,
+        "unknown_extra": true
+      },
+      "payload_read": false,
+      "real_producer_corpus": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "unicode_path_crc32": [
+        917302607,
+        692385489
+      ],
+      "valid_metadata": true
+    },
+    "E": {
+      "boundary_rejections": {
+        "cache_disjoint": true,
+        "commit_chain": true,
+        "epoch_handoff": true,
+        "first_order": true,
+        "first_replay": true,
+        "prior_batch_duplicate": true,
+        "prior_batch_order": true,
+        "prior_cache_epoch": true,
+        "prior_cache_replay": true,
+        "prior_policy": true,
+        "prior_prior_ancestry": true,
+        "prior_prior_cross_policy_replay": true,
+        "prior_prior_epoch": true,
+        "prior_prior_fork": true,
+        "prior_prior_head": true,
+        "prior_prior_inactive_signer": true,
+        "prior_prior_nonce_high": true,
+        "prior_prior_nonce_low": true,
+        "prior_prior_nonce_replay": true,
+        "prior_prior_path": true,
+        "prior_prior_quorum": true,
+        "prior_prior_replay_cache": true,
+        "prior_prior_rollback": true,
+        "prior_prior_scope": true,
+        "prior_prior_stale": true,
+        "prior_prior_watermark_rollback": true,
+        "prior_watermark": true,
+        "second_replay": true
+      },
+      "cache_epochs": [
+        13,
+        14
+      ],
+      "cache_epochs_disjoint": true,
+      "cache_sizes": [
+        2,
+        2
+      ],
+      "commit_chain_bound": true,
+      "event_count": 20,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "first_batch_commit_sha256": "68af846e07fc777f6cef64ba141f02972929dfc6b62b2def417b011888c2a6db",
+      "first_watermark": 4002,
+      "handoff_sha256": "98e11300193c0334cadeae1ca74cd8b4df39e84542a1ea5d5e209b803edd87d7",
+      "initial_watermark": 4000,
+      "physical_sample": null,
+      "policy_versions": [
+        38,
+        39,
+        40
+      ],
+      "revocation_epochs": [
+        12,
+        13,
+        14
+      ],
+      "second_batch_commit_sha256": "8eba2eb5198763744d377e7afe815f75bcb43341d840592f9907bad8ddce5c24",
+      "second_watermark": 4005,
+      "signature_kind": "SYNTHETIC_HASH_FIXTURE_NOT_CRYPTOGRAPHIC_SIGNATURE",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "c5b2a47887f03a5da1487ef23460f190bd800c9fcf0bddbe2fca226a82dc4113"
+    },
+    "F": {
+      "all_parenthesizations_equal": true,
+      "binding_mutation_rejections": {
+        "composition": true,
+        "inverse": true,
+        "permutation": true,
+        "source": true
+      },
+      "binding_sha256": "c0bc9847e95a288316dbe1df0f5ee6fa4e789f43364f7bd0cd8315b912574b3e",
+      "commercial_interpretation": null,
+      "components": 24,
+      "composition_matches_sequential_intervals": true,
+      "composition_matches_sequential_matrices": true,
+      "evidence_class": "MODEL_ONLY",
+      "invalid_outputs_null": true,
+      "inverse_map_valid": true,
+      "parenthesization_count": 6,
+      "permutation_count": 6,
+      "recovers_intervals": true,
+      "recovers_matrices": true,
+      "sparse_nonzero_count": 70,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "all_tree_shapes_match": true,
+      "composed_interval": [
+        [
+          18437,
+          144
+        ],
+        [
+          7729,
+          48
+        ]
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_roundtrip": true,
+      "inverse_lipschitz_bound": [
+        6,
+        125
+      ],
+      "lipschitz_bound": [
+        125,
+        6
+      ],
+      "map_count": 17,
+      "negative_controls": {
+        "dimension": true,
+        "endpoint_order": true,
+        "nonmonotone": true,
+        "prior_controls": true,
+        "source_order": true,
+        "unit": true
+      },
+      "new_law_claim": null,
+      "source_sha256": [
+        "6c4044fbf0c54a80daa47b538ab236630d6ec3d4d22d7a47530803fdeb478f89",
+        "7dca4136d4452414d99968b1f6bd3c3fa5ecfd3a06cf003d8d2824f0bd8f3e73",
+        "d745c564272f3d5b612ba8f13b9647113169b451da3dd69837ff0bbacaa3bee4",
+        "f3d327ce01dddff178fe95e66350aa60c29c3c0c9beefb98280e0a5a51853ea0",
+        "618f0f15394900d9f2c56735a7f80941202a672b6b860751d85637dcef337e58",
+        "a4961e92bece835033bf567ef9f2c35e95db02adbbe34b3f830b59714d660d57",
+        "a54791c0d2f80b4a7833a6e1685037f556ffcd57936d58111a7bea05488f99e0",
+        "ca070ed4c6c5ba391e33b5b188b41f2e84498952e920139b6fb16fc7325b58c1",
+        "ba19dad040dc8f5d1532bb5179b11d8a6cdd13d4bf8a88f930e6548c2efb07ab",
+        "e842234ffbb1e16b5a73c3441902798beff6e6d2882f9b802a6ccbedc3af0696",
+        "b43e04738063e00356055543243019ca32a7055ce52157f1a97f8e52ae46cedb",
+        "006dff84a281b5ed6e9302201809a4a9370938e1d4049fcf828aa1a010fc7315",
+        "3ebe126fd01bf3f5657bd2177bc593497b82dca0728cff1f2c64db776c016128",
+        "4c6ff6b0746045b739342e5cc226c4e96f04ff7e402c5fbf115afdcbcf0ed9fd",
+        "0b26d421ee21ea37b84f6d4cc0cb0bb62e8dd46b673d6b906a88e37a66aa74de",
+        "bd99c7cf588e43dc93d6b6937d882c3190741b752b94a9991e663a3f5c1df4cf",
+        "0807da93d3090b171016783dbf6cb67b6413f9a200d1260f94e48ed32e68fa56"
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_unit": "u17",
+      "tree_shape_count": 5,
+      "tree_shape_names": [
+        "left",
+        "right",
+        "balanced",
+        "thirds",
+        "quarters"
+      ],
+      "unit_chain": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15",
+        "u16",
+        "u17"
+      ]
+    },
+    "G": {
+      "adjugate_identity_left": true,
+      "adjugate_identity_right": true,
+      "adjugate_mutation_rejected": true,
+      "all_cayley_rows_valid": true,
+      "all_principal_minors_positive": true,
+      "associative_composition": true,
+      "calibration": null,
+      "cayley_hamilton_zero": true,
+      "cayley_rows": [
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 0,
+          "right": 1
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 1,
+          "right": 2
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 2,
+          "right": 3
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 3,
+          "right": 4
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 4,
+          "right": 5
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 5,
+          "right": 6
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 6,
+          "right": 7
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 7,
+          "right": 8
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 8,
+          "right": 0
+        }
+      ],
+      "characteristic_coefficients": [
+        [
+          1,
+          1
+        ],
+        [
+          -191,
+          1
+        ],
+        [
+          12787,
+          1
+        ],
+        [
+          -357979,
+          1
+        ],
+        [
+          3547642,
+          1
+        ]
+      ],
+      "characteristic_polynomial_invariant": true,
+      "closure_is_signed_permutation": true,
+      "composition_sha256": "e64c1c38821050b73b5e51a16517f9d12baf50fc632309f0bd6820658cbf24bd",
+      "determinant_invariant": true,
+      "determinant_lemma_left": [
+        7,
+        1
+      ],
+      "determinant_lemma_right": [
+        7,
+        1
+      ],
+      "determinant_lemma_valid": true,
+      "determinant_mutation_rejected": true,
+      "eleventh_transform_sha256": "fd609cc65ab696d1f0b11f77dd6dec428a7c592ed0480d8800c25b4823a251cf",
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "exact_reverse_order_roundtrip": true,
+      "matrix_product_count": 176,
+      "power_sum_mutation_rejected": true,
+      "power_sum_recurrence_valid": true,
+      "power_sums": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          133,
+          1
+        ],
+        [
+          641,
+          1
+        ],
+        [
+          3157,
+          1
+        ],
+        [
+          15689,
+          1
+        ]
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "symmetric": true,
+      "tenth_transform_sha256": "2db705361f18dcb065b286e5944f5cd2fa4874550c102c650a5974c68d1ee712",
+      "trace_power_invariant": true,
+      "trace_powers": [
+        [
+          191,
+          1
+        ],
+        [
+          10907,
+          1
+        ],
+        [
+          714857,
+          1
+        ],
+        [
+          51253299,
+          1
+        ]
+      ],
+      "transform_count": 11
+    },
+    "H": {
+      "all_grid_interval": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "capital": null,
+      "counts_match_binomial": true,
+      "deletion_grid_counts": {
+        "1": 24,
+        "10": 1961256,
+        "11": 2496144,
+        "12": 2704156,
+        "13": 2496144,
+        "14": 1961256,
+        "15": 1307504,
+        "16": 735471,
+        "2": 276,
+        "3": 2024,
+        "4": 10626,
+        "5": 42504,
+        "6": 134596,
+        "7": 346104,
+        "8": 735471,
+        "9": 1307504
+      },
+      "dynamic_program_state_counts": {
+        "1": 4,
+        "10": 161,
+        "11": 172,
+        "12": 176,
+        "13": 172,
+        "14": 161,
+        "15": 144,
+        "16": 122,
+        "2": 10,
+        "3": 20,
+        "4": 34,
+        "5": 52,
+        "6": 74,
+        "7": 98,
+        "8": 122,
+        "9": 144
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 576,
+      "orders_each": 24,
+      "probability_claim": null,
+      "recurrence_total_sha256": "5f1d0fbd9909d0a7b42143a71c40a476a12b34becaebbcc960cefb11081f69c8",
+      "scenario_count": 24,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "winner_counts": [
+        72,
+        216,
+        144,
+        144
+      ]
+    },
+    "QOS/QSVT": {
+      "all_inclusion_proofs_valid": true,
+      "antichain_width": 4,
+      "basis_states_checked": 64,
+      "critical_path_certificate": {
+        "critical_path": [
+          16,
+          17
+        ],
+        "extension_depth": 12,
+        "prior_critical_depth": 61
+      },
+      "critical_path_recomputed": true,
+      "dependency_dag_valid": true,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "extension_proof_valid": true,
+      "hardware": null,
+      "inverse_pair_names": [
+        "add-01",
+        "xor-03",
+        "rotl-01",
+        "add-05",
+        "xor-12",
+        "rotl-02",
+        "add-07",
+        "xor-21",
+        "rotl-03",
+        "add-09",
+        "xor-42",
+        "rotl-04",
+        "add-11",
+        "xor-33",
+        "rotl-05",
+        "xor-17",
+        "xor-29",
+        "xor-43"
+      ],
+      "level_schedule": [
+        {
+          "gates": 15,
+          "level": 0,
+          "nodes": [
+            0,
+            1
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 1,
+          "nodes": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "gates": 32,
+          "level": 2,
+          "nodes": [
+            6,
+            7
+          ]
+        },
+        {
+          "gates": 88,
+          "level": 3,
+          "nodes": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gates": 56,
+          "level": 4,
+          "nodes": [
+            12,
+            13
+          ]
+        },
+        {
+          "gates": 31,
+          "level": 5,
+          "nodes": [
+            14
+          ]
+        },
+        {
+          "gates": 33,
+          "level": 6,
+          "nodes": [
+            15
+          ]
+        },
+        {
+          "gates": 35,
+          "level": 7,
+          "nodes": [
+            16
+          ]
+        },
+        {
+          "gates": 37,
+          "level": 8,
+          "nodes": [
+            17
+          ]
+        }
+      ],
+      "level_schedule_valid": true,
+      "maximum_antichain": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "mutation_rejections": {
+        "critical_path": true,
+        "dag": true,
+        "extension_proof": true,
+        "level": true,
+        "proof": true,
+        "resource": true,
+        "slack": true,
+        "width": true,
+        "work": true
+      },
+      "parallel_bounds_are_model_only": true,
+      "proof_count": 18,
+      "residual": 0,
+      "resource_bound": {
+        "antichain_width": 4,
+        "dag_critical_depth": 73,
+        "gates": 372,
+        "level_count": 9,
+        "level_width": 4,
+        "max_qubits": 6,
+        "serial_depth": 119,
+        "unconstrained_parallel_lower_bound": 12
+      },
+      "resource_merkle_root_sha256": "5035778f8324781b637583565bfaae5540ea90dea6e9a1c1902aa0c7d65e1e31",
+      "schedule_slack": 0,
+      "scheduled_depth": 73,
+      "slack_certificate_valid": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "work_conservation": true
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "certificate_intersection_size": 9,
+      "control_table": {
+        "audience": true,
+        "chain_mutation": true,
+        "downgrade": true,
+        "fifth_transition": true,
+        "fork": true,
+        "fourth_transition": true,
+        "membership_hash": true,
+        "minimum_intersection_formula": true,
+        "missing_member": true,
+        "quorum_intersection": true,
+        "replay": true,
+        "revocation": true,
+        "split": true,
+        "stale": true,
+        "transition_chain": true,
+        "valid": true
+      },
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "membership_epoch": 32,
+      "minimum_quorum_intersection": 9,
+      "observer_count": 13,
+      "quorum": 11,
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transition_chain_sha256": "cfcde040476a10dc4ac5781b78c848825921254daf439667d68d4b0198794e36",
+      "transition_count": 5
+    }
+  },
+  "nonclaims": [
+    "No measured QPU or GPU performance, scaling or quantum advantage.",
+    "No provider execution, invoice, commercial economics or capital result.",
+    "No crash durability, cryptographic signature claim, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "payload_sha256": "b787f6f6177c8ebb9d84b31439dff2eba0bb949b5495200eada20a9986a23004",
+  "preregistration_commit_sha": "9850d4fd29cc72bfe9f2fb22b79ce4d461510e4d",
+  "schema": "uqpu-cycle040-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "locator": "sections 4.3.7, 4.3.9, 4.3.12 and 4.3.16",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_git_blob_sha": "2c228d012d54270e58f7faa2e0f09fc40e61e90a",
+    "focused_tests_sha256": "3d74101b00062a50a2572a66de1e6cd68b85587f7b28a7d827d4446c330f3ebd",
+    "implementation_git_blob_sha": "a08e863e7c7b8c28a8f74870ae3caf985472f7e4",
+    "implementation_sha256": "1ec39c592a9c437b320f4649928bd30b3522c08b0aadeae363166c260a6e280c",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "233ebaf3ea2c409391d38740e5fe25b55594c63b",
+    "runner_sha256": "0182af64c74958c9ed22cde61ac0a45ef89548b3427c47129b55d075f5f536b4",
+    "typed_source_sha256": "6c4044fbf0c54a80daa47b538ab236630d6ec3d4d22d7a47530803fdeb478f89"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "Provider authorization and billing, crash durability, independent archive interoperability, operational custody, measured covariance and calibration, owner priorities, independent equation derivation, real held-out equivalence and target hardware evidence remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
