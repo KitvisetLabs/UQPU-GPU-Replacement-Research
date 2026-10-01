@@ -461,8 +461,9 @@ def eleven_transform_determinant_recurrence_gate():
         recurrence.append(trace * recurrence[-1] - determinant * recurrence[-2])
     return {
         **prior, "transform_count": 11, "matrix_product_count": 176,
-        "determinant_lemma_left": updated_determinant,
-        "determinant_lemma_right": determinant * factor,
+        "determinant_lemma_left": [updated_determinant.numerator, updated_determinant.denominator],
+        "determinant_lemma_right": [(determinant * factor).numerator,
+                                    (determinant * factor).denominator],
         "determinant_lemma_valid": updated_determinant == determinant * factor,
         "power_sums": [[item.numerator, item.denominator] for item in power_sums],
         "power_sum_recurrence_valid": power_sums == recurrence,
