@@ -1,0 +1,34 @@
+{
+  "schema": "uqpu-cycle042-delta01-preregistered-gates-v1",
+  "cycle": "042", "delta": "01", "date": "2026-10-01",
+  "branch": "research/cycle-042-delta-01-2026-10-01",
+  "base_cycle041_closeout_sha": "332bffbc4e032bc1a009adfd90fe71487edec860",
+  "cycle041_code_evidence_sha": "5d368600712b95757ac92f1a1e17f9f1edb6de72",
+  "cycle041_actions": {"run_id": 36796630945, "jobs_passed": 8, "jobs_failed": 0, "status": "PASS"},
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "portfolio_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+  "work_item_contract": {"status": "BLOCKED_WITH_PROGRESS", "unmeasured_values": null, "fiction_empirical_cast": "prohibited", "lane_count": 12, "no_update_status": "prohibited"},
+  "lanes": {
+    "A": {"action": "Twenty-second weighted graph fixture with stabilizer-coset accounting and a fourth canonical-label reconstruction.", "acceptance": "Exact enumeration, coset partition, orbit–stabilizer/Burnside/direct counts and four labels agree; scaling remains null."},
+    "B": {"action": "Schema v6→v7 migration with journal checkpoint compaction, replay controls and rollback denial.", "acceptance": "Checkpoint/root/count/order/link/version/path/default/replay/rollback controls reject; provider evidence remains null."},
+    "C": {"action": "Sixteen readers, twelve stages and ordered recovery of two pending generation journals.", "acceptance": "Complete reads, generation/checksum/fsync order and ordered dual recovery pass; stale/reordered recovery rejects without durability promotion."},
+    "D": {"action": "ZIP64 split-archive disk-start, Unicode-comment length and EOCD/locator parity corpus.", "acceptance": "Synthetic disk/comment-length/end-record parity passes and mutations reject; real producer corpus remains open."},
+    "E": {"action": "Twenty-second issuer with four batch commits and three cache-epoch handoffs.", "acceptance": "Four monotone commits, three linked handoffs and disjoint caches pass; replay/order/epoch/chain mutations reject; physical sample remains null."},
+    "F": {"action": "Twenty-six components and eight permutation parenthesizations with exact inverse proof.", "acceptance": "All eight groupings and sequential interval/matrix paths agree; inverse/binding controls pass and economics remain null."},
+    "G": {"action": "Thirteen transforms with exact rank-two Woodbury inverse and determinant identity.", "acceptance": "Exact rational Woodbury left/right inverse and determinant identities pass with mutation rejection; calibration remains null."},
+    "H": {"action": "Twenty-six scenarios with leave-one through leave-eighteen exact DP.", "acceptance": "Exact subset totals equal binomial coefficients with deterministic recurrence hash; probability/capital remain null."},
+    "FND/EQN": {"action": "Nineteen unit maps across seven tree shapes with derivative-composition certificates.", "acceptance": "All trees and independently multiplied derivative/endpoints/inverse agree; unit/order/nonmonotone controls reject."},
+    "SCM": {"action": "Fifteen observers, quorum thirteen, minimum intersection eleven and seven transitions.", "acceptance": "Exact quorum intersection/chain plus inherited split/stale/fork/replay controls pass; empirical coupling remains null."},
+    "AI-COST": {"action": "Manifest v32 with two-leaf update multiproof and independent old/new root recomputation.", "acceptance": "Multiproof reconstructs both roots and full-tree recomputation agrees; root/path/order/index/source/schema mutations reject."},
+    "QOS/QSVT": {"action": "Twenty inverse pairs with recomputed work, critical-path, width and schedule-slack certificates.", "acceptance": "Basis reconstruction, extension/work/path/width/slack and inherited proof/resource controls pass; hardware evidence remains null."}
+  },
+  "primary_sources": [
+    {"title": "PKWARE APPNOTE v6.3.10 FINAL", "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT", "source_date": "2022-11-01", "access_date": "2026-10-01", "locator": "sections 4.3.7, 4.3.9, 4.3.11, 4.3.15 and 4.3.16", "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"},
+    {"title": "Python os.replace documentation", "url": "https://docs.python.org/3/library/os.html#os.replace", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"},
+    {"title": "Python os.fsync documentation", "url": "https://docs.python.org/3/library/os.html#os.fsync", "access_date": "2026-10-01", "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"}
+  ],
+  "assumptions": ["All inputs are bounded fixtures or models.", "Injected recovery cases do not establish crash/power-loss durability.", "Custody hashes are synthetic, not signatures.", "SCM is fiction-only."],
+  "uncertainty": ["Provider, hardware, durability, interoperability, custody, calibration, decision, lineage and equivalence gates remain open."],
+  "nonclaims": ["No measured performance, scaling or quantum advantage.", "No provider invoice, commercial result or capital decision.", "No crash durability, signature, calibration, physical sample, new law, AI equivalence or empirical SCM result."],
+  "next_falsifiable_gate": "Implement all twelve bounded packets, publish source-hashed acceptance evidence, run focused and selected regression tests, and verify exact-SHA GitHub Actions."
+}
