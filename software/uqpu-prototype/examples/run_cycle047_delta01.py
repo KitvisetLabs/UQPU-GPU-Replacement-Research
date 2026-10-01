@@ -1,4 +1,6 @@
 """Generate Cycle 047 source-bound acceptance evidence."""
+# Exact-SHA retry checkpoint: run 36841862770 retained an in-progress Python 3.12
+# unit-test step after the 3.10 and 3.11 matrix legs had completed successfully.
 import hashlib
 import json
 import os
