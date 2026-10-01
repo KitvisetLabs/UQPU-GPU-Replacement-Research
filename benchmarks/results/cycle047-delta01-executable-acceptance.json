@@ -1135,7 +1135,7 @@
   "nonclaims": [
     "No measured performance, commercial result, physical-law discovery or empirical SCM result."
   ],
-  "payload_sha256": "9f0e9b4bd152cb5d7b7bc734cd2bc6eb12a544733504e8d0bfd260be0bdccc69",
+  "payload_sha256": "2318f680e15156b8c6485c11dd1c61a22df55e651a9e8cc9471a29307dea0ef8",
   "preregistration_commit_sha": "e3a0ad38e8f81847fb5fdef5d5a11400172f2480",
   "schema": "uqpu-cycle047-delta01-executable-acceptance-v1",
   "source_evidence": [
@@ -1167,7 +1167,7 @@
     "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
     "preregistered_gates_git_blob_sha": "06f96aba0d288ebe619a69cb2394687e113b81aa",
     "preregistered_gates_sha256": "272cceeeac9b8ed7e30dfa2336ba7b6c3497fd817cde569f035b77008e2d1de0",
-    "runner_sha256": "11bf144c821db28975b04cb0205de475c1e56a6ad3e644da42d04f41fe9551bd",
+    "runner_sha256": "a6ad55f4d2ab10e2d2a623d4c6d06b65aebbcc0363cbd281d8c90b38551137e1",
     "typed_source_sha256": "4a82ca1bd5aae5aa29bc8512028b1b96c3e13a36fec94edd626e6341e3beb856"
   },
   "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
