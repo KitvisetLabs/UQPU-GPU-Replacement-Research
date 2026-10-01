@@ -1,0 +1,1013 @@
+{
+  "assumptions": [
+    "All inputs are bounded fixtures or models.",
+    "Injected four-journal recovery does not establish crash or power-loss durability.",
+    "Custody hashes are synthetic, not signatures.",
+    "SCM records are fiction-only."
+  ],
+  "base_cycle043_closeout_sha": "9fc66217d1e2131c71162631a316e35b760f8389",
+  "branch": "research/cycle-044-delta-01-2026-10-01",
+  "cycle": "044",
+  "focused_tests_commit_sha": "1122365f40fd9445fc9ecaef4b87b47856707677",
+  "implementation_commit_sha": "c3aefd082be096b9311b31fd6e179fe8128c18b8",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "action_count": 12,
+      "burnside_matches_direct": true,
+      "burnside_orbit_count": 2,
+      "canonical_label_reconstruction": true,
+      "coset_count": 4,
+      "coset_sha256": "3dcf7665a2279895f6de09e3ddd58c40a20bb973f697272f277769b0f706066c",
+      "cosets_partition_actions": true,
+      "double_coset_count": 4,
+      "double_coset_representatives": [
+        [
+          -1,
+          1,
+          false
+        ],
+        [
+          -1,
+          1,
+          true
+        ],
+        [
+          1,
+          0,
+          false
+        ],
+        [
+          1,
+          0,
+          true
+        ]
+      ],
+      "double_coset_sha256": "3dcf7665a2279895f6de09e3ddd58c40a20bb973f697272f277769b0f706066c",
+      "double_coset_sizes": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "double_cosets_partition_actions": true,
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "fifth_canonical_algorithm": "fixed-width-big-endian",
+      "fifth_canonical_label_reconstruction": true,
+      "five_canonical_algorithms_agree": true,
+      "fixture_ordinal": 24,
+      "four_canonical_algorithms_agree": true,
+      "graph_stabilizer_size": 6,
+      "objective": 27,
+      "orbit_count": 2,
+      "orbit_sizes": [
+        2,
+        6
+      ],
+      "orbit_stabilizer_valid": true,
+      "representative_count": 4,
+      "representatives_reconstruct_group": true,
+      "representatives_sha256": "a2536262867cbab44968db89314188497b5ee267ce514d9109a5139863a9bf6e",
+      "rotation_subgroup_size": 3,
+      "scaling_claim": null,
+      "six_canonical_algorithms_agree": true,
+      "sixth_canonical_algorithm": "zero-padded-binary-vector",
+      "sixth_canonical_label_reconstruction": true,
+      "sixth_canonical_label_sha256": "77617b7a27ac0f3bacd9dde4ffeab434659cabdefadf10335be52c9d6dcfb8cd",
+      "states": 262144,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "task_sha256": "16721ea71db8ef3d16303cf1e6547e78021ed1bc8384d96208cbe1cd271576e8",
+      "witness_count": 8,
+      "witness_sha256": "f063bfb0136f11eec0bc1a5bf1faf181a0afd691fe7da633c46a730b798b5eb3"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "frontier_node_count": 8,
+      "functional_equivalence": null,
+      "independent_new_root_valid": true,
+      "independent_old_root_valid": true,
+      "manifest": {
+        "frontier_sha256": "65ae2167c4760afa64533f25352decdb5df5031ce17eb95ade2cbac6e5c5aea9",
+        "new_root": "395ba3090b0c48368ec352cb23e522ee139541245db2f2a68ed1dab39881fc6b",
+        "old_root": "e9f029043458b9a1df7724185f4ea8637d6bc4db19f9d0b367edc209d8571613",
+        "source": "23bc0ed9a84479818d0cebb9ed881d4c6b3d4fd46bd0fda8ad3bd45d7c2b0c8d",
+        "updated_indices": [
+          1,
+          4,
+          10,
+          15
+        ],
+        "version": 34
+      },
+      "mutation_rejections": {
+        "frontier": true,
+        "index": true,
+        "new_root": true,
+        "old_root": true,
+        "order": true,
+        "schema": true,
+        "source": true
+      },
+      "new_root_reconstruction_valid": true,
+      "old_root_reconstruction_valid": true,
+      "padding_leaf_count": 0,
+      "prior_update_valid": true,
+      "real_leaf_count": 16,
+      "root_changed": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "updated_leaf_count": 4,
+      "valid_manifest": true
+    },
+    "B": {
+      "canonical_sha256": "65aadf2afa8041381a3d1829054c6b14352c88ff6a1752afb93e81de4b2aa92b",
+      "checkpoint_lineage_sha256": "e3af52be184099163be2750c841dc750789db979baa86479ac93eb3adb6e805f",
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "lineage_record_count": 4,
+      "migration_matches_v9": true,
+      "negative_controls": {
+        "ancestry_dag": true,
+        "checkpoint": true,
+        "fork_allow": true,
+        "fork_ancestry": true,
+        "lineage_hash": true,
+        "no_parent": true,
+        "payload_path": true,
+        "record_count": true,
+        "retry_default": true,
+        "rollback": true,
+        "terminal": true,
+        "unicode": true,
+        "unknown_key": true,
+        "version_high": true,
+        "version_low": true
+      },
+      "parent_count": 1,
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "C": {
+      "all_reader_observations_complete": true,
+      "cleanup_journal_empty": true,
+      "crash_durability": null,
+      "duplicate_generation_rejected": true,
+      "evidence_class": "LOCAL_EIGHTEEN_READER_FOUR_RECOVERY_FIXTURE",
+      "failure_controls": {
+        "checksum": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "cleanup": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "directory_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "duplicate_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "file_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "generation_gap": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "partial_write": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "reordered_recovery": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "stale_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        }
+      },
+      "generation_gap_rejected": true,
+      "ordered_four_recovery": true,
+      "pending_recovery_count": 4,
+      "power_loss_durability": null,
+      "reader_count": 18,
+      "recovery_generations": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "reordered_recovery_rejected": true,
+      "replacement_directory_fsync_call_count": 14,
+      "replacement_file_fsync_call_count": 14,
+      "replacement_stages": 14,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "D": {
+      "corpus_sha256": "37f1d56873d8794f7bab1854b9e8661de190a584047adef1277e0cd708c929ae",
+      "corpus_size": 4,
+      "evidence_class": "SYNTHETIC_ZIP64_EXTENSIBLE_SECTOR_CORPUS",
+      "extensible_sector_lengths": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "local_central_end_record_parity": true,
+      "negative_controls": {
+        "corpus_binding": true,
+        "disk_sequence": true,
+        "locator_parity": true,
+        "prior_controls": true,
+        "record_size": true,
+        "sector_length": true
+      },
+      "payload_read": false,
+      "real_producer_corpus": null,
+      "split_disk_sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "valid_metadata": true,
+      "zip64_record_sizes": [
+        52,
+        60,
+        68,
+        76
+      ]
+    },
+    "E": {
+      "batch_commit_sha256": [
+        "a851850403f9d2e20469980c640184f314ff5d6655c6051fd48030e6483c8969",
+        "2f96d95fab22af5ac5ee507416e986e0c7e93f8c4fb2f04160d1b625d77b0fa2",
+        "deac40d2987ec01bcd4c3b91fe7484129f1607f146225f7d887b9e574fe4c395",
+        "14a16976b27ae134ffdc089218737669c92ec9a3fb0cea8df53c97b9595c2865",
+        "7acf3d403166c85baf9b63f22866d3e8569b4c5a890055d0a3f14067f10ef241",
+        "05a1bd939953ee4fd825d01fc42b28a4d66c44a05e7e88d8f7ca61154cd308e4"
+      ],
+      "batch_watermarks": [
+        8002,
+        8005,
+        8008,
+        8011,
+        8014,
+        8017
+      ],
+      "boundary_rejections": {
+        "cache_overlap": true,
+        "commit_chain": true,
+        "epoch": true,
+        "handoff_count": true,
+        "order": true,
+        "prior_controls": true,
+        "replay": true
+      },
+      "cache_epochs": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "cache_epochs_pairwise_disjoint": true,
+      "cache_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "commit_chain_bound": true,
+      "event_count": 24,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "handoff_sha256": [
+        "fa522f19b18022cd971a0f5298007a7d7a7bad3c49d631dd9a84f8792f7ac204",
+        "394af26c6cde8876f9d910bfae9b694bcb26d86aa090c7a9f8f403ff7a050cf1",
+        "a16f5ce716568ba505e322fae85f7fc358dc7ddfc3ecdba5bdbc26d5ee536c86",
+        "78580261f5414c50aac37c666225736f22bcd62dea0f0812c3fded87e54e14ef",
+        "b7513f479609799cba5087cdd1b1221ec7bf10fa1a0d17a2c4b2c25b15afd1da"
+      ],
+      "initial_watermark": 8000,
+      "physical_sample": null,
+      "signature_kind": "SYNTHETIC_HASH_FIXTURE_NOT_CRYPTOGRAPHIC_SIGNATURE",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "79c3b9cfca696bed7a2cc5e56698f78589eb880e7edfb97b4124af7d99f2138f"
+    },
+    "F": {
+      "all_parenthesizations_equal": true,
+      "binding_mutation_rejections": {
+        "composition": true,
+        "inverse": true,
+        "permutation": true,
+        "source": true
+      },
+      "binding_sha256": "ee73df9aca3c7ae8c337de7a36e5ace5a30f4b749448016ee9e6eb14a703c441",
+      "commercial_interpretation": null,
+      "components": 28,
+      "composition_matches_sequential_intervals": true,
+      "composition_matches_sequential_matrices": true,
+      "evidence_class": "MODEL_ONLY",
+      "invalid_outputs_null": true,
+      "inverse_map_valid": true,
+      "parenthesization_count": 10,
+      "permutation_count": 10,
+      "recovers_intervals": true,
+      "recovers_matrices": true,
+      "sparse_nonzero_count": 82,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "all_tree_shapes_match": true,
+      "composed_interval": [
+        [
+          10609841513,
+          3840
+        ],
+        [
+          4827753347,
+          960
+        ]
+      ],
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_first_derivative": [
+        158203125,
+        128
+      ],
+      "exact_roundtrip": true,
+      "exact_second_derivative": [
+        0,
+        1
+      ],
+      "independent_first_derivative_valid": true,
+      "independent_second_derivative_valid": true,
+      "map_count": 21,
+      "negative_controls": {
+        "dimension": true,
+        "endpoint_order": true,
+        "nonmonotone": true,
+        "prior_controls": true,
+        "source_order": true,
+        "unit": true
+      },
+      "new_law_claim": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_unit": "u21",
+      "tree_shape_count": 9,
+      "unit_chain": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15",
+        "u16",
+        "u17",
+        "u18",
+        "u19",
+        "u20",
+        "u21"
+      ]
+    },
+    "G": {
+      "adjugate_identity_left": true,
+      "adjugate_identity_right": true,
+      "adjugate_mutation_rejected": true,
+      "all_cayley_rows_valid": true,
+      "all_principal_minors_positive": true,
+      "associative_composition": true,
+      "block_ldu_determinant_identity_valid": true,
+      "block_ldu_factorization_valid": true,
+      "block_ldu_left_inverse_valid": true,
+      "block_ldu_right_inverse_valid": true,
+      "calibration": null,
+      "cayley_hamilton_zero": true,
+      "cayley_rows": [
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 0,
+          "right": 1
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 1,
+          "right": 2
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 2,
+          "right": 3
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 3,
+          "right": 4
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 4,
+          "right": 5
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 5,
+          "right": 6
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 6,
+          "right": 7
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 7,
+          "right": 8
+        },
+        {
+          "closure": true,
+          "inverse_roundtrip": true,
+          "left": 8,
+          "right": 0
+        }
+      ],
+      "characteristic_coefficients": [
+        [
+          1,
+          1
+        ],
+        [
+          -191,
+          1
+        ],
+        [
+          12787,
+          1
+        ],
+        [
+          -357979,
+          1
+        ],
+        [
+          3547642,
+          1
+        ]
+      ],
+      "characteristic_polynomial_invariant": true,
+      "closure_is_signed_permutation": true,
+      "composition_sha256": "e64c1c38821050b73b5e51a16517f9d12baf50fc632309f0bd6820658cbf24bd",
+      "denominator": [
+        17,
+        10
+      ],
+      "determinant_consistency": true,
+      "determinant_identity_valid_v13": true,
+      "determinant_identity_valid_v14": true,
+      "determinant_invariant": true,
+      "determinant_lemma_left": [
+        7,
+        1
+      ],
+      "determinant_lemma_right": [
+        7,
+        1
+      ],
+      "determinant_lemma_valid": true,
+      "determinant_mutation_rejected": true,
+      "determinant_mutation_rejected_v12": true,
+      "determinant_mutation_rejected_v13": true,
+      "determinant_mutation_rejected_v14": true,
+      "eleventh_transform_sha256": "fd609cc65ab696d1f0b11f77dd6dec428a7c592ed0480d8800c25b4823a251cf",
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "exact_reverse_order_roundtrip": true,
+      "factor_mutation_rejected_v15": true,
+      "inverse_mutation_rejected": true,
+      "inverse_mutation_rejected_v13": true,
+      "inverse_mutation_rejected_v14": true,
+      "inverse_mutation_rejected_v15": true,
+      "left_inverse_valid": true,
+      "left_inverse_valid_v13": true,
+      "left_inverse_valid_v14": true,
+      "matrix_product_count": 240,
+      "power_sum_mutation_rejected": true,
+      "power_sum_recurrence_valid": true,
+      "power_sums": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          133,
+          1
+        ],
+        [
+          641,
+          1
+        ],
+        [
+          3157,
+          1
+        ],
+        [
+          15689,
+          1
+        ]
+      ],
+      "right_inverse_valid": true,
+      "right_inverse_valid_v13": true,
+      "right_inverse_valid_v14": true,
+      "schur_complement": [
+        119,
+        20
+      ],
+      "schur_dimension": 1,
+      "schur_inverse": [
+        [
+          [
+            31,
+            119
+          ],
+          [
+            2,
+            119
+          ],
+          [
+            -5,
+            119
+          ]
+        ],
+        [
+          [
+            2,
+            119
+          ],
+          [
+            27,
+            119
+          ],
+          [
+            -8,
+            119
+          ]
+        ],
+        [
+          [
+            -5,
+            119
+          ],
+          [
+            -8,
+            119
+          ],
+          [
+            20,
+            119
+          ]
+        ]
+      ],
+      "sherman_morrison_inverse": [
+        [
+          5,
+          17
+        ],
+        [
+          -2,
+          17
+        ],
+        [
+          -4,
+          17
+        ],
+        [
+          5,
+          17
+        ]
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "symmetric": true,
+      "tenth_transform_sha256": "2db705361f18dcb065b286e5944f5cd2fa4874550c102c650a5974c68d1ee712",
+      "trace_power_invariant": true,
+      "trace_powers": [
+        [
+          191,
+          1
+        ],
+        [
+          10907,
+          1
+        ],
+        [
+          714857,
+          1
+        ],
+        [
+          51253299,
+          1
+        ]
+      ],
+      "transform_count": 15,
+      "twelfth_transform_sha256": "65da70e43f7f996af68e0140e30eb22fd838a9b9d97a1dace9ca3568a1a69d0b",
+      "updated_determinant": [
+        17,
+        1
+      ],
+      "updated_determinant_v13": [
+        35,
+        1
+      ],
+      "updated_determinant_v14": [
+        119,
+        1
+      ],
+      "updated_determinant_v15": [
+        119,
+        1
+      ],
+      "woodbury_inverse": [
+        [
+          [
+            1,
+            5
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      ],
+      "woodbury_rank": 2
+    },
+    "H": {
+      "all_grid_interval": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "capital": null,
+      "counts_match_binomial": true,
+      "deletion_grid_counts": {
+        "1": 28,
+        "10": 13123110,
+        "11": 21474180,
+        "12": 30421755,
+        "13": 37442160,
+        "14": 40116600,
+        "15": 37442160,
+        "16": 30421755,
+        "17": 21474180,
+        "18": 13123110,
+        "19": 6906900,
+        "2": 378,
+        "20": 3108105,
+        "3": 3276,
+        "4": 20475,
+        "5": 98280,
+        "6": 376740,
+        "7": 1184040,
+        "8": 3108105,
+        "9": 6906900
+      },
+      "dynamic_program_state_counts": {
+        "1": 2,
+        "10": 11,
+        "11": 12,
+        "12": 13,
+        "13": 14,
+        "14": 15,
+        "15": 14,
+        "16": 13,
+        "17": 12,
+        "18": 11,
+        "19": 10,
+        "2": 3,
+        "20": 9,
+        "3": 4,
+        "4": 5,
+        "5": 6,
+        "6": 7,
+        "7": 8,
+        "8": 9,
+        "9": 10
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 672,
+      "orders_each": 24,
+      "prior_leave_nineteen_valid": true,
+      "probability_claim": null,
+      "recurrence_total_sha256": "ef0cecbf01adcbe84f0038855108b394dd60aff9fcd65f4a69724701eb3a0347",
+      "scenario_count": 28,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "winner_counts": [
+        168,
+        168,
+        168,
+        168
+      ]
+    },
+    "QOS/QSVT": {
+      "all_inclusion_proofs_valid": true,
+      "antichain_width": 4,
+      "basis_states_checked": 64,
+      "critical_path_recomputed": true,
+      "dependency_dag_valid": true,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "extension_proof_valid": true,
+      "hardware": null,
+      "inverse_pair_names": [
+        "add-01",
+        "xor-03",
+        "rotl-01",
+        "add-05",
+        "xor-12",
+        "rotl-02",
+        "add-07",
+        "xor-21",
+        "rotl-03",
+        "add-09",
+        "xor-42",
+        "rotl-04",
+        "add-11",
+        "xor-33",
+        "rotl-05",
+        "xor-17",
+        "xor-29",
+        "xor-43",
+        "xor-53",
+        "xor-61",
+        "xor-62",
+        "xor-63"
+      ],
+      "level_schedule": [
+        {
+          "gates": 15,
+          "level": 0,
+          "nodes": [
+            0,
+            1
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 1,
+          "nodes": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "gates": 32,
+          "level": 2,
+          "nodes": [
+            6,
+            7
+          ]
+        },
+        {
+          "gates": 88,
+          "level": 3,
+          "nodes": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gates": 56,
+          "level": 4,
+          "nodes": [
+            12,
+            13
+          ]
+        },
+        {
+          "gates": 31,
+          "level": 5,
+          "nodes": [
+            14
+          ]
+        },
+        {
+          "gates": 33,
+          "level": 6,
+          "nodes": [
+            15
+          ]
+        },
+        {
+          "gates": 35,
+          "level": 7,
+          "nodes": [
+            16
+          ]
+        },
+        {
+          "gates": 37,
+          "level": 8,
+          "nodes": [
+            17
+          ]
+        },
+        {
+          "gates": 39,
+          "level": 9,
+          "nodes": [
+            18
+          ]
+        },
+        {
+          "gates": 41,
+          "level": 10,
+          "nodes": [
+            19
+          ]
+        },
+        {
+          "gates": 43,
+          "level": 11,
+          "nodes": [
+            20
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 12,
+          "nodes": [
+            21
+          ]
+        }
+      ],
+      "level_schedule_valid": true,
+      "mutation_rejections": {
+        "critical_path": true,
+        "dag": true,
+        "extension_proof": true,
+        "level": true,
+        "proof": true,
+        "resource": true,
+        "slack": true,
+        "width": true,
+        "width_recomputed": true,
+        "work": true
+      },
+      "parallel_bounds_are_model_only": true,
+      "proof_count": 22,
+      "residual": 0,
+      "resource_bound": {
+        "antichain_width": 4,
+        "dag_critical_depth": 131,
+        "gates": 540,
+        "level_count": 13,
+        "level_width": 4,
+        "max_qubits": 6,
+        "serial_depth": 177,
+        "unconstrained_parallel_lower_bound": 16
+      },
+      "resource_merkle_root_sha256": "6f7f7049b24186aa37d5a51a140b6c568ee2610ecc171419133dca3e3c011807",
+      "schedule_slack": 0,
+      "scheduled_depth": 131,
+      "slack_certificate_valid": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "width_recomputed": true,
+      "work_conservation": true
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "certificate_intersection_size": 13,
+      "control_table": {
+        "audience": true,
+        "chain_mutation": true,
+        "downgrade": true,
+        "eighth_transition": true,
+        "fifth_transition": true,
+        "fork": true,
+        "fourth_transition": true,
+        "membership_hash": true,
+        "minimum_intersection_formula": true,
+        "missing_member": true,
+        "ninth_transition": true,
+        "quorum_intersection": true,
+        "replay": true,
+        "revocation": true,
+        "seventh_transition": true,
+        "sixth_transition": true,
+        "split": true,
+        "stale": true,
+        "transition_chain": true,
+        "valid": true
+      },
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "membership_epoch": 66,
+      "minimum_quorum_intersection": 13,
+      "observer_count": 17,
+      "quorum": 15,
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transition_chain_sha256": "385d94de33fcb9175b4b5b1271edf03e9a4adbce985da06087376c00315cfb4c",
+      "transition_count": 9
+    }
+  },
+  "nonclaims": [
+    "No measured QPU/GPU performance, scaling or quantum advantage.",
+    "No provider execution, invoice, commercial economics or capital result.",
+    "No crash durability, signature claim, calibration, physical sample, new physical law, AI equivalence or empirical SCM result."
+  ],
+  "payload_sha256": "1d569a13e9df44ba83468fa302ed2e7931639fd6cb03b309deb95dd7a2e10e53",
+  "preregistration_commit_sha": "8d34ab0ffb056c8283ce1ada0c8533d40e1622bb",
+  "schema": "uqpu-cycle044-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "locator": "sections 4.3.7, 4.3.9, 4.3.11, 4.3.15 and 4.3.16",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    },
+    {
+      "access_date": "2026-10-01",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_git_blob_sha": "e5335cf450e583df418932ddbaeaa1a63012701a",
+    "focused_tests_sha256": "e566104eff8285e41a469737efde4c24dfb831d2dfc3fc8889fc8491b80e37b7",
+    "implementation_git_blob_sha": "da96947b215c308b5973a3c2f4458e8d62563934",
+    "implementation_sha256": "a68e348eee65948880c4b33d9a2d66258c7f8074fc050d0d6aafe39d2c794547",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "9e965299e841f028a3ce14da36460013eddbca3f",
+    "runner_sha256": "57f47142b0f968cd8e6fa4380aa79dd484e063a1b902cc92894b20e3f778cc0c",
+    "typed_source_sha256": "23bc0ed9a84479818d0cebb9ed881d4c6b3d4fd46bd0fda8ad3bd45d7c2b0c8d"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "Provider, hardware, durability, interoperability, custody, calibration, decision, lineage and equivalence gates remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
