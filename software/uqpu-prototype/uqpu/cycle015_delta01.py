@@ -184,11 +184,22 @@ if action == "replace_then_exit":
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
             ))
         deadline = time.monotonic() + timeout
-        while not all((root / name).is_file() for name in marker_names):
+        staged_records = None
+        while staged_records is None:
+            if all((root / name).is_file() for name in marker_names):
+                try:
+                    candidate = [json.loads((root / name).read_text(encoding="utf-8"))
+                                 for name in marker_names]
+                    if all(set(record) == {"staged", "sha256"} for record in candidate):
+                        staged_records = candidate
+                        break
+                except (OSError, json.JSONDecodeError):
+                    # A pathname can become visible before write_text closes the
+                    # marker. Treat only a complete JSON record as barrier-ready.
+                    pass
             if time.monotonic() >= deadline:
                 raise TimeoutError("subprocess writers did not reach the barrier")
             time.sleep(0.005)
-        staged_records = [json.loads((root / name).read_text(encoding="utf-8")) for name in marker_names]
         active_names = [record["staged"] for record in staged_records]
         before = []
         for record in staged_records:
