@@ -1,0 +1,1438 @@
+{
+  "assumptions": [
+    "Bounded fixtures and models only.",
+    "Recovery is not crash durability.",
+    "Custody hashes are synthetic.",
+    "SCM is fiction-only."
+  ],
+  "base_cycle059_closeout_sha": "952c5d78e5bdd2516220c15b8284827abb9d5ebb",
+  "branch": "research/cycle-060-delta-01-2026-10-03",
+  "cycle": "060",
+  "focused_tests_commit_sha": "e922bd21d9716adcb9b941406a3d1adfe00afbfa",
+  "implementation_commit_sha": "132fc1d19b022bce43aac5ac8c509e80ed78d991",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "action_count": 12,
+      "burnside_matches_direct": true,
+      "burnside_orbit_count": 2,
+      "canonical_label_reconstruction": true,
+      "coset_count": 4,
+      "coset_sha256": "3dcf7665a2279895f6de09e3ddd58c40a20bb973f697272f277769b0f706066c",
+      "cosets_partition_actions": true,
+      "double_coset_count": 4,
+      "double_coset_representatives": [
+        [
+          -1,
+          1,
+          false
+        ],
+        [
+          -1,
+          1,
+          true
+        ],
+        [
+          1,
+          0,
+          false
+        ],
+        [
+          1,
+          0,
+          true
+        ]
+      ],
+      "double_coset_sha256": "3dcf7665a2279895f6de09e3ddd58c40a20bb973f697272f277769b0f706066c",
+      "double_coset_sizes": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "double_cosets_partition_actions": true,
+      "eight_canonical_algorithms_agree": true,
+      "eighteen_canonical_algorithms_agree": true,
+      "eighteenth_canonical_algorithm": "memoized-recurrence-versus-adjacency-eleventh-power",
+      "eighteenth_canonical_label_reconstruction": true,
+      "eighteenth_canonical_label_sha256": "2d2497ebadf78eb7cd3b8f7d5a997e261b2b2f240d18fb498261a9279c64c7b8",
+      "eighth_canonical_algorithm": "quotient-edge-multiplicity",
+      "eighth_canonical_label_reconstruction": true,
+      "eighth_canonical_label_sha256": "85a64e715c20f1dd059b30a6fdce86cadae9bb2b26225be23fe664614db867cb",
+      "eleven_canonical_algorithms_agree": true,
+      "eleventh_canonical_algorithm": "quotient-weighted-adjacency-fourth-power",
+      "eleventh_canonical_label_reconstruction": true,
+      "eleventh_canonical_label_sha256": "83a49047634cdeee5c17a9f1fc47c85a0d3e4b76d1453446baf020421d14379e",
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "fifteen_canonical_algorithms_agree": true,
+      "fifteenth_canonical_algorithm": "quotient-weighted-adjacency-eighth-power",
+      "fifteenth_canonical_label_reconstruction": true,
+      "fifteenth_canonical_label_sha256": "493de462ece08f03b09a43f773769e104f5357f7be056727beeac0095a407269",
+      "fifth_canonical_algorithm": "fixed-width-big-endian",
+      "fifth_canonical_label_reconstruction": true,
+      "five_canonical_algorithms_agree": true,
+      "fixture_ordinal": 40,
+      "four_canonical_algorithms_agree": true,
+      "fourteen_canonical_algorithms_agree": true,
+      "fourteenth_canonical_algorithm": "quotient-weighted-adjacency-seventh-power",
+      "fourteenth_canonical_label_reconstruction": true,
+      "fourteenth_canonical_label_sha256": "74c5e54f169f63e5a4bd7bd87c9695b0b9802a846ed8b4e4fb08aa6e774747a6",
+      "graph_stabilizer_size": 6,
+      "length_eight_walk_multiplicities": {
+        "0-1": 436224,
+        "0-2": 403584,
+        "0-3": 403456,
+        "1-2": 403456,
+        "1-3": 403584,
+        "2-3": 436224
+      },
+      "length_eight_walk_sha256": "493de462ece08f03b09a43f773769e104f5357f7be056727beeac0095a407269",
+      "length_eight_walk_total": 2486528,
+      "length_eight_walks_match_matrix_power": true,
+      "length_eleven_walk_multiplicities": {
+        "0-1": 89651200,
+        "0-2": 91747328,
+        "0-3": 91748352,
+        "1-2": 91748352,
+        "1-3": 91747328,
+        "2-3": 89651200
+      },
+      "length_eleven_walk_sha256": "2d2497ebadf78eb7cd3b8f7d5a997e261b2b2f240d18fb498261a9279c64c7b8",
+      "length_eleven_walk_total": 546293760,
+      "length_eleven_walks_match_matrix_power": true,
+      "length_fifteen_walk_multiplicities": {
+        "0-1": 117277818880,
+        "0-2": 117814673408,
+        "0-3": 117814689792,
+        "1-2": 117814689792,
+        "1-3": 117814673408,
+        "2-3": 117277818880
+      },
+      "length_fifteen_walk_sha256": "447fabcf3849b27d61c91574c561a02cd85555d8362e7d2ccdaaa10a27eaa3e6",
+      "length_fifteen_walk_total": 705814364160,
+      "length_fifteen_walks_match_matrix_power": true,
+      "length_five_walk_multiplicities": {
+        "0-1": 1696,
+        "0-2": 2192,
+        "0-3": 2208,
+        "1-2": 2208,
+        "1-3": 2192,
+        "2-3": 1696
+      },
+      "length_five_walk_sha256": "e0340f1b92516591c194ffab5f8be48ea1012a518dc78ae1da5472cd745fc3b2",
+      "length_five_walk_total": 12192,
+      "length_five_walks_match_matrix_power": true,
+      "length_four_walk_multiplicities": {
+        "0-1": 384,
+        "0-2": 264,
+        "0-3": 256,
+        "1-2": 256,
+        "1-3": 264,
+        "2-3": 384
+      },
+      "length_four_walk_sha256": "83a49047634cdeee5c17a9f1fc47c85a0d3e4b76d1453446baf020421d14379e",
+      "length_four_walk_total": 1808,
+      "length_four_walks_match_matrix_power": true,
+      "length_fourteen_walk_multiplicities": {
+        "0-1": 19658145792,
+        "0-2": 19523936256,
+        "0-3": 19523928064,
+        "1-2": 19523928064,
+        "1-3": 19523936256,
+        "2-3": 19658145792
+      },
+      "length_fourteen_walk_sha256": "c9189d5e67d70c9afe2db99f3cf06704253c7479351ab3410cdd27d31fa6f592",
+      "length_fourteen_walk_total": 117412020224,
+      "length_fourteen_walks_match_matrix_power": true,
+      "length_nine_walk_multiplicities": {
+        "0-1": 2454016,
+        "0-2": 2584832,
+        "0-3": 2585088,
+        "1-2": 2585088,
+        "1-3": 2584832,
+        "2-3": 2454016
+      },
+      "length_nine_walk_sha256": "f15a1759a43c08e962bec110f95c23ea6b447f7b29ef9ccd6c3aeceb5cc1da02",
+      "length_nine_walk_total": 15247872,
+      "length_nine_walks_match_matrix_power": true,
+      "length_seven_walk_multiplicities": {
+        "0-1": 65920,
+        "0-2": 74048,
+        "0-3": 74112,
+        "1-2": 74112,
+        "1-3": 74048,
+        "2-3": 65920
+      },
+      "length_seven_walk_sha256": "74c5e54f169f63e5a4bd7bd87c9695b0b9802a846ed8b4e4fb08aa6e774747a6",
+      "length_seven_walk_total": 428160,
+      "length_seven_walks_match_matrix_power": true,
+      "length_six_walk_multiplicities": {
+        "0-1": 12672,
+        "0-2": 10656,
+        "0-3": 10624,
+        "1-2": 10624,
+        "1-3": 10656,
+        "2-3": 12672
+      },
+      "length_six_walk_sha256": "2a4ca5c4f92d27dc5721f27fc2d22bb181a930eb7d2d6c12eae02e26a1480649",
+      "length_six_walk_total": 67904,
+      "length_six_walks_match_matrix_power": true,
+      "length_ten_walk_multiplicities": {
+        "0-1": 15378432,
+        "0-2": 14854656,
+        "0-3": 14854144,
+        "1-2": 14854144,
+        "1-3": 14854656,
+        "2-3": 15378432
+      },
+      "length_ten_walk_sha256": "b999decd963e27ce931c61bb6a39d5924a21fcc33caf5fc785fdb47c9fdede70",
+      "length_ten_walk_total": 90174464,
+      "length_ten_walks_match_matrix_power": true,
+      "length_thirteen_walk_multiplicities": {
+        "0-1": 3248398336,
+        "0-2": 3281948672,
+        "0-3": 3281952768,
+        "1-2": 3281952768,
+        "1-3": 3281948672,
+        "2-3": 3248398336
+      },
+      "length_thirteen_walk_sha256": "0534bb874ebc9f0f123345396f6a0f5c2bfbda3955aed3309c6f3f7b69286a94",
+      "length_thirteen_walk_total": 19624599552,
+      "length_thirteen_walks_match_matrix_power": true,
+      "length_three_path_multiplicities": {
+        "0-1-2-3": 3,
+        "0-1-3-2": 2,
+        "0-2-1-3": 12,
+        "0-2-3-1": 4,
+        "0-3-1-2": 18,
+        "0-3-2-1": 9,
+        "1-0-2-3": 2,
+        "1-0-3-2": 3,
+        "1-2-0-3": 18,
+        "1-3-0-2": 12,
+        "2-0-1-3": 4,
+        "2-1-0-3": 9
+      },
+      "length_three_path_sha256": "5c22ca18dd3410b139d7f1ee89c9430bb17d215afe11517a7fb4871f2bb7515b",
+      "length_three_path_total": 96,
+      "length_three_paths_match_incidence": true,
+      "length_twelve_walk_multiplicities": {
+        "0-1": 548388864,
+        "0-2": 540002304,
+        "0-3": 540000256,
+        "1-2": 540000256,
+        "1-3": 540002304,
+        "2-3": 548388864
+      },
+      "length_twelve_walk_sha256": "229f8ede5010b940592537b9c645a6d5b5af22c97ad736ed8098272b5cccd0ee",
+      "length_twelve_walk_total": 3256782848,
+      "length_twelve_walks_match_matrix_power": true,
+      "multiplicities_match_incidence": true,
+      "nine_canonical_algorithms_agree": true,
+      "nineteen_canonical_algorithms_agree": true,
+      "nineteenth_canonical_algorithm": "memoized-recurrence-versus-adjacency-twelfth-power",
+      "nineteenth_canonical_label_reconstruction": true,
+      "nineteenth_canonical_label_sha256": "229f8ede5010b940592537b9c645a6d5b5af22c97ad736ed8098272b5cccd0ee",
+      "ninth_canonical_algorithm": "quotient-two-edge-path-multiplicity",
+      "ninth_canonical_label_reconstruction": true,
+      "ninth_canonical_label_sha256": "15ee60cac8172b138b119da39c202cf7b9eb6e4fc43e9984b6e4482530f9c9a5",
+      "objective": 27,
+      "orbit_count": 2,
+      "orbit_sizes": [
+        2,
+        6
+      ],
+      "orbit_stabilizer_valid": true,
+      "path_multiplicities_match_incidence": true,
+      "quotient_edge_multiplicities": {
+        "0-1": 1,
+        "0-2": 2,
+        "0-3": 3,
+        "1-2": 3,
+        "1-3": 2,
+        "2-3": 1
+      },
+      "quotient_edge_total": 12,
+      "quotient_incidence": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "quotient_incidence_diagonal_zero": true,
+      "quotient_incidence_sha256": "7694ae86f8664cd8154d543b82ac8417c582d45aefb09b9574d0c879cf7081d3",
+      "quotient_incidence_symmetric": true,
+      "quotient_multiplicity_sha256": "4c5ee1441787ab805cdfd279ee54b57c069f7d4c3262bccf3cd7479b177ca1e5",
+      "quotient_path_multiplicities": {
+        "0-1-2": 3,
+        "0-1-3": 2,
+        "0-2-1": 6,
+        "0-2-3": 2,
+        "0-3-1": 6,
+        "0-3-2": 3,
+        "1-0-2": 2,
+        "1-0-3": 3,
+        "1-2-3": 3,
+        "1-3-2": 2,
+        "2-0-3": 6,
+        "2-1-3": 6
+      },
+      "quotient_path_sha256": "15ee60cac8172b138b119da39c202cf7b9eb6e4fc43e9984b6e4482530f9c9a5",
+      "quotient_path_total": 44,
+      "quotient_vertex_count": 4,
+      "representative_count": 4,
+      "representatives_reconstruct_group": true,
+      "representatives_sha256": "a2536262867cbab44968db89314188497b5ee267ce514d9109a5139863a9bf6e",
+      "rotation_subgroup_size": 3,
+      "scaling_claim": null,
+      "seven_canonical_algorithms_agree": true,
+      "seventeen_canonical_algorithms_agree": true,
+      "seventeenth_canonical_algorithm": "quotient-weighted-adjacency-tenth-power",
+      "seventeenth_canonical_label_reconstruction": true,
+      "seventeenth_canonical_label_sha256": "b999decd963e27ce931c61bb6a39d5924a21fcc33caf5fc785fdb47c9fdede70",
+      "seventh_canonical_algorithm": "quotient-incidence-row",
+      "seventh_canonical_label_reconstruction": true,
+      "seventh_canonical_label_sha256": "3cc4ea231875cb1d9579cff27efb1056fe3b79e7db3ca9bb328f76d9a59d8249",
+      "six_canonical_algorithms_agree": true,
+      "sixteen_canonical_algorithms_agree": true,
+      "sixteenth_canonical_algorithm": "quotient-weighted-adjacency-ninth-power",
+      "sixteenth_canonical_label_reconstruction": true,
+      "sixteenth_canonical_label_sha256": "f15a1759a43c08e962bec110f95c23ea6b447f7b29ef9ccd6c3aeceb5cc1da02",
+      "sixth_canonical_algorithm": "zero-padded-binary-vector",
+      "sixth_canonical_label_reconstruction": true,
+      "sixth_canonical_label_sha256": "77617b7a27ac0f3bacd9dde4ffeab434659cabdefadf10335be52c9d6dcfb8cd",
+      "states": 262144,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "task_sha256": "16721ea71db8ef3d16303cf1e6547e78021ed1bc8384d96208cbe1cd271576e8",
+      "ten_canonical_algorithms_agree": true,
+      "tenth_canonical_algorithm": "quotient-three-edge-simple-path-multiplicity",
+      "tenth_canonical_label_reconstruction": true,
+      "tenth_canonical_label_sha256": "5c22ca18dd3410b139d7f1ee89c9430bb17d215afe11517a7fb4871f2bb7515b",
+      "thirteen_canonical_algorithms_agree": true,
+      "thirteenth_canonical_algorithm": "quotient-weighted-adjacency-sixth-power",
+      "thirteenth_canonical_label_reconstruction": true,
+      "thirteenth_canonical_label_sha256": "2a4ca5c4f92d27dc5721f27fc2d22bb181a930eb7d2d6c12eae02e26a1480649",
+      "twelfth_canonical_algorithm": "quotient-weighted-adjacency-fifth-power",
+      "twelfth_canonical_label_reconstruction": true,
+      "twelfth_canonical_label_sha256": "e0340f1b92516591c194ffab5f8be48ea1012a518dc78ae1da5472cd745fc3b2",
+      "twelve_canonical_algorithms_agree": true,
+      "twentieth_canonical_algorithm": "memoized-recurrence-versus-adjacency-thirteenth-power",
+      "twentieth_canonical_label_reconstruction": true,
+      "twentieth_canonical_label_sha256": "0534bb874ebc9f0f123345396f6a0f5c2bfbda3955aed3309c6f3f7b69286a94",
+      "twenty_canonical_algorithms_agree": true,
+      "twenty_first_canonical_algorithm": "memoized-recurrence-versus-adjacency-fourteenth-power",
+      "twenty_first_canonical_label_reconstruction": true,
+      "twenty_first_canonical_label_sha256": "c9189d5e67d70c9afe2db99f3cf06704253c7479351ab3410cdd27d31fa6f592",
+      "twenty_one_canonical_algorithms_agree": true,
+      "twenty_second_canonical_algorithm": "memoized-recurrence-versus-adjacency-fifteenth-power",
+      "twenty_second_canonical_label_reconstruction": true,
+      "twenty_second_canonical_label_sha256": "447fabcf3849b27d61c91574c561a02cd85555d8362e7d2ccdaaa10a27eaa3e6",
+      "twenty_two_canonical_algorithms_agree": true,
+      "witness_count": 8,
+      "witness_sha256": "f063bfb0136f11eec0bc1a5bf1faf181a0afd691fe7da633c46a730b798b5eb3"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "frontier_node_count": 2,
+      "functional_equivalence": null,
+      "independent_new_root_valid": true,
+      "independent_old_root_valid": true,
+      "manifest": {
+        "frontier_sha256": "a5e651bd3f560084f2b4f30da4de393e53ac3b3b468932f1b59645f20575eaa9",
+        "new_root": "e1f7daa11249be10375bab8b87f52adffbdf2f2eb25540b2946c8d7ddd120b18",
+        "old_root": "1242ada86d79c4afac878053a1e438dbf1587e0d0eb198b674ef2c655c3decd1",
+        "source": "24310b8cea2af2480669912d74cbc386eac8835ef1ceed222a271893c516e117",
+        "updated_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "version": 50
+      },
+      "mutation_rejections": {
+        "cardinality": true,
+        "frontier": true,
+        "new": true,
+        "old": true,
+        "order": true,
+        "schema": true,
+        "source": true
+      },
+      "new_root_reconstruction_valid": true,
+      "old_root_reconstruction_valid": true,
+      "padding_leaf_count": 0,
+      "prior_update_valid": true,
+      "real_leaf_count": 32,
+      "root_changed": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "updated_leaf_count": 20,
+      "valid_manifest": true
+    },
+    "B": {
+      "canonical_sha256": "ea8c980c2759a6c42bfbf4db57203193ff14834c74f9cf03ff1fbea85eaa5742",
+      "checkpoint_count": 14,
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "migration_matches_v25": true,
+      "negative_controls": {
+        "eighth_checkpoint_sha256": true,
+        "eighth_from": true,
+        "eighth_nonce": true,
+        "eighth_position": true,
+        "eighth_previous": true,
+        "eighth_to": true,
+        "eleventh_checkpoint_sha256": true,
+        "eleventh_from": true,
+        "eleventh_nonce": true,
+        "eleventh_position": true,
+        "eleventh_previous": true,
+        "eleventh_to": true,
+        "fifth_checkpoint_sha256": true,
+        "fifth_from": true,
+        "fifth_nonce": true,
+        "fifth_position": true,
+        "fifth_previous": true,
+        "fifth_to": true,
+        "first_checkpoint_sha256": true,
+        "first_from": true,
+        "first_nonce": true,
+        "first_position": true,
+        "first_previous": true,
+        "first_to": true,
+        "fork": true,
+        "fourteenth_checkpoint_sha256": true,
+        "fourteenth_from": true,
+        "fourteenth_nonce": true,
+        "fourteenth_position": true,
+        "fourteenth_previous": true,
+        "fourteenth_schema": true,
+        "fourteenth_to": true,
+        "fourth_checkpoint_sha256": true,
+        "fourth_from": true,
+        "fourth_nonce": true,
+        "fourth_position": true,
+        "fourth_previous": true,
+        "fourth_to": true,
+        "high": true,
+        "key": true,
+        "low": true,
+        "ninth_checkpoint_sha256": true,
+        "ninth_from": true,
+        "ninth_nonce": true,
+        "ninth_position": true,
+        "ninth_previous": true,
+        "ninth_to": true,
+        "path": true,
+        "reorder": true,
+        "replay": true,
+        "retry": true,
+        "rollback": true,
+        "rollback_policy": true,
+        "second_checkpoint_sha256": true,
+        "second_from": true,
+        "second_nonce": true,
+        "second_position": true,
+        "second_previous": true,
+        "second_to": true,
+        "seventh_checkpoint_sha256": true,
+        "seventh_from": true,
+        "seventh_nonce": true,
+        "seventh_position": true,
+        "seventh_previous": true,
+        "seventh_to": true,
+        "sixth_checkpoint_sha256": true,
+        "sixth_from": true,
+        "sixth_nonce": true,
+        "sixth_position": true,
+        "sixth_previous": true,
+        "sixth_to": true,
+        "tenth_checkpoint_sha256": true,
+        "tenth_from": true,
+        "tenth_nonce": true,
+        "tenth_position": true,
+        "tenth_previous": true,
+        "tenth_to": true,
+        "terminal": true,
+        "third_checkpoint_sha256": true,
+        "third_from": true,
+        "third_nonce": true,
+        "third_position": true,
+        "third_previous": true,
+        "third_to": true,
+        "thirteenth_checkpoint_sha256": true,
+        "thirteenth_from": true,
+        "thirteenth_nonce": true,
+        "thirteenth_position": true,
+        "thirteenth_previous": true,
+        "thirteenth_to": true,
+        "twelfth_checkpoint_sha256": true,
+        "twelfth_from": true,
+        "twelfth_nonce": true,
+        "twelfth_position": true,
+        "twelfth_previous": true,
+        "twelfth_to": true,
+        "unicode": true
+      },
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_checkpoint_sha256": "c4ac708246c29fa78eff9782892fc5106bce86293853d03e5347fb0164209e01"
+    },
+    "C": {
+      "all_reader_observations_complete": true,
+      "cleanup_journal_empty": true,
+      "complete_marker_barrier_preserved": true,
+      "complete_marker_fsync_count": 50,
+      "crash_durability": null,
+      "duplicate_generation_rejected": true,
+      "evidence_class": "LOCAL_THIRTY_FOUR_READER_TWENTY_RECOVERY_FIXTURE",
+      "failure_controls": {
+        "checksum": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "cleanup": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "directory_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "duplicate_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "file_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "generation_gap": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_completeness": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_digest": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_order": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_terminal": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "partial_write": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "reordered_recovery": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "stale_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "terminal_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        }
+      },
+      "generation_gap_rejected": true,
+      "ordered_twenty_recovery": true,
+      "pending_recovery_count": 20,
+      "power_loss_durability": null,
+      "reader_count": 34,
+      "recovery_generations": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "reordered_recovery_rejected": true,
+      "replacement_directory_fsync_call_count": 30,
+      "replacement_file_fsync_call_count": 30,
+      "replacement_stages": 30,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_generation_bound": true
+    },
+    "D": {
+      "archive_envelope_sha256": "5b3cf04cfcc44efc0facc36e85042749a3c3f4b686230853ee4756cb1e987ce1",
+      "audit_envelope_sha256": "14b521270a75bfc672642e2edf65a2db0216a09c66d20289f4ec942b08fb6f6d",
+      "central_directory_digest_sha256": "4ea9f4b8f235ffb48a549d3d71f9b4b8a20c05ec88e0099a474c68cc5be48633",
+      "central_directory_segment_count": 14,
+      "central_directory_total_length": 458752,
+      "corpus_size": 15,
+      "evidence_class": "SYNTHETIC_ZIP64_EXTENSIBLE_SECTOR_CORPUS",
+      "local_central_end_record_parity": true,
+      "negative_controls": {
+        "archive_binding": true,
+        "audit_binding": true,
+        "directory_binding": true,
+        "directory_mutation": true,
+        "disk_order": true,
+        "parity": true,
+        "preservation_binding": true,
+        "preservation_mutation": true,
+        "primary_binding": true,
+        "prior": true,
+        "quorum_binding": true,
+        "retention_binding": true,
+        "span_length": true,
+        "span_order": true,
+        "terminal_binding": true,
+        "terminal_mutation": true,
+        "volume_chain": true,
+        "witness_binding": true
+      },
+      "payload_read": false,
+      "preservation_envelope_sha256": "a8c7b8c549e11ab5dac3b5bc9a8e7786a4c386702c4ceeb309b1dbd215b8f9ee",
+      "primary_envelope_sha256": "f1c9d9ccf850177eb572c0ecaddccd4892fcb346dcf50f0cb7940116ce8a037b",
+      "quorum_envelope_sha256": "3bb51d1d76aff4735163c0e21e6f15dcccdac474f44ce10be7b94c258f5d71d5",
+      "real_producer_corpus": null,
+      "retention_envelope_sha256": "e1e1c15202240ea0e3a0bfb6b1cf4f816f69ab56a25c38ece0c5f7810f9569bf",
+      "split_disk_sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_record_binding_sha256": "d405614baef3ede35e407770ab71b487189c97fb5cfe07e36dd4932b2b3d7e6f",
+      "terminal_volume_sha256": "dbc446e1c1d5118f1a9c3f4dae1558cdaa8c25f2348c952be79b01df6c8eca09",
+      "valid_metadata": true,
+      "witness_envelope_sha256": "00a9a9807f2799f8d095c8d9043947067dba86dcde3d7d035460faa7aff17878"
+    },
+    "E": {
+      "batch_commit_sha256": [
+        "b1e44375142fa236ec8c817de8740108768aba68114b0a37e594761849b2e985",
+        "078714a3f69d091775ab554f4c4aa51424984ce4231fa9292313da1f2d550016",
+        "7c27c71002f3e8ff533f5c60b9e94b82fd0e39d47d78d16e389f8b7eaba641d9",
+        "af1aa26e28f2989449473394db2f214364b6ac4ba351c1c21a5ba601faf22363",
+        "b6313c3b7e4632f2ea6c52544532ad94dcbb8ba3f754d9dae5bdf0614cb8a700",
+        "77698a8b6758bba314824097e954139f687fd2c9533c901687127ddbb8a8c084",
+        "7936c045edc71c66eda9f03c10cd1de06f2fbfcc37d0265ac68c1b06668ceb75",
+        "be970f7073fa9332d86ae3b20d68624585dfbd3c070704e71d867fbc63511d99",
+        "260304991977ce7ddb2df30b3318d7d7cf1a037a68da1f47e2d4d2cb9f40d8b6",
+        "8522fbab955fe5646b84d01ba383e3621d0c0aa1c79900e675d61d34218152b7",
+        "6eeeeb59cc5c25a4f69a9ff3c4f089e9c81e224525392b92ca66b9383ffb7014",
+        "ce95b17e9734c7e9f3120a151a5f7c67ed833adf65bcf12ca2d49a84638d8d6b",
+        "9a9d4882903acd7bb69a048cd13cb5bf0639c18a83692e09bc1857339b4c077c",
+        "b145a83b8264d5352643abcfc6d2f053f2c9394a85fd732f918a99b58c34d2be",
+        "c2db43731b27b1c4a3c03c5dbe4710573d33e7353fdd95903409e6983026f608",
+        "1137c29f0dc510a1b3c9f5e9196753b24f8a4f4e3051c85898a69a4f141aa78f",
+        "24131f424bf5344f159586e88cace02c55299e1abee9653018a48e811156c4bc",
+        "26f640f3c8b852a2d2b1f065708cc1d81b35e344ef89c080ec667c63168ad8ba",
+        "67ec10b4d0a15c83e3a06bcbf81ec7adac27517308bdde1ead5e281df06d2bab",
+        "d3c75067084ff5ff1a674815abde49f1b3ef27c02d4ef9194bff2e5fe22def05",
+        "09cfa9bf4dd49b566cece2d0b0d36d7501bead34e995c92a777d55943db9e13f",
+        "1aa8daf923e69c95cb52db719ad78ad388b98ca94a4a6f5b93162411c0b20b5b"
+      ],
+      "batch_watermarks": [
+        20192,
+        20194,
+        20196,
+        20198,
+        20200,
+        20202,
+        20204,
+        20206,
+        20208,
+        20210,
+        20212,
+        20214,
+        20216,
+        20218,
+        20220,
+        20222,
+        20224,
+        20226,
+        20228,
+        20230,
+        20232,
+        20234
+      ],
+      "boundary_rejections": {
+        "chain": true,
+        "handoff_count": true,
+        "order": true,
+        "overlap": true,
+        "prior": true,
+        "replay": true,
+        "terminal": true
+      },
+      "cache_epochs": [
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264
+      ],
+      "cache_epochs_pairwise_disjoint": true,
+      "commit_chain_bound": true,
+      "event_count": 40,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "handoff_sha256": [
+        "ac5c92f1498944cbea45c31dd2af3ac061d5404320c92f8c27f5b74645614f61",
+        "80d83de716acad29fe8cd7bab63ce6beebde03bb2bcc7f51f6f57bfa5205b2c9",
+        "761dcabfa89fd6be445aba88e940a523f6c031e7aee386d26e97261cc56409a9",
+        "e3618e23b6dbb76f6b39c7be80c2761f4a83e9665fb047369bd07db5a9c03b5a",
+        "1b13ff12d1fc02be51ec2e91ffd96218ec064665b6c609d19501a47c7abe28bd",
+        "b81bb7aff2713894542a6399ca00c5404e16697145383d124e673af660faacbc",
+        "bcccbf408239fe8a834200ab464fcfb42b008e347cf79f0337c3faf34e8b42bf",
+        "b54f5ad59d36d3dbcf611bb8191b2c2c5c1e8962c7a1f6a9a3c80548a73cd882",
+        "1d7943a0602c36c64d35386865883474bcc7aa775122f9bae3cde77248e3c725",
+        "528550f08e4421d5014a51647e0ccb35b8a776a7b389157fd129728e59d6b36a",
+        "8c17845eb3c809e980165bbff188940380ee6bb7946dcb42f96263f62ff95fe2",
+        "07aff976ae1d0c16f793f6ac400fc6695bb9a27d89835905d30333bf3e8ab228",
+        "c8a59313b7f5e7dddeb97306aabf7342f2fdc4b0e1258852125b4404ce7d8a4f",
+        "4931be51ae7f1432435410ba4304587f2b78a0c3c2d91001f9469b743b1baedf",
+        "188a41305b23de2e95dcefcf59ca5d641172d2455ce3f1708cb6f8125054d1b2",
+        "1e33106b58b52fdfa2605e42d9b0c83246867a99f51d49b41ac2562788d01e29",
+        "81eac06fe9d7963f460f97fefc8e2a24db63ebd3b127fecdace4e863b7b96101",
+        "80bf20b332fcc14a8bfd051e06e10ca305ff33aadb24bf8a69b6e78e2704afcb",
+        "94ca648e47e4daa11a35980f79701c083ae5358b2dd06e15395d82372d0be97e",
+        "2f54313e67e60b6b6f1abcee481335c0fd1f3c00d78660ccff264497b201ba79",
+        "027c9a8641a43a95a3f60167d1f2d214812450cd32b3f09e984ba37d94deb953"
+      ],
+      "initial_watermark": 20190,
+      "physical_sample": null,
+      "signature_kind": "SYNTHETIC_HASH_FIXTURE_NOT_CRYPTOGRAPHIC_SIGNATURE",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "bf1d5b204c695a39375d7138617e1f74a4215f43e716b38c4934b6b022a6a057"
+    },
+    "F": {
+      "all_parenthesizations_equal": true,
+      "binding_mutation_rejections": {
+        "composition": true,
+        "dimension": true,
+        "inverse": true,
+        "permutation": true,
+        "source": true
+      },
+      "binding_sha256": "4769abe5fcf406eb735f08986af6ccf579c5f24e7457c848fa517f5232c680bb",
+      "commercial_interpretation": null,
+      "components": 44,
+      "composition_matches_sequential_intervals": true,
+      "composition_matches_sequential_matrices": true,
+      "evidence_class": "MODEL_ONLY",
+      "invalid_outputs_null": true,
+      "inverse_map_valid": true,
+      "parenthesization_count": 26,
+      "permutation_count": 26,
+      "recovers_intervals": true,
+      "recovers_matrices": true,
+      "sparse_nonzero_count": 132,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "all_tree_shapes_match": true,
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_first_derivative": [
+        4084101,
+        2
+      ],
+      "exact_second_derivative": [
+        0,
+        1
+      ],
+      "independent_first_derivative_valid": true,
+      "independent_second_derivative_valid": true,
+      "map_count": 37,
+      "negative_controls": {
+        "prior": true,
+        "second": true,
+        "slope": true,
+        "source": true
+      },
+      "new_law_claim": null,
+      "source_binding_sha256": "111eb8c5a58f0573ab11b31039ec7e04fe318b8f3abacf1dfdbd0eaff1f43337",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_unit": "u37",
+      "tree_shape_count": 25
+    },
+    "G": {
+      "calibration": null,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "matrix_product_count": 573,
+      "stage_order_mutation_rejected": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "three_stage_certificate_sha256": "f27b3f713e69de733567e8f7aa4e846dac16a8c1437338be1d839088529a0671",
+      "three_stage_determinant_left": [
+        -3135,
+        16
+      ],
+      "three_stage_determinant_right": [
+        -3135,
+        16
+      ],
+      "three_stage_determinant_valid": true,
+      "three_stage_direct_matrix_equal": true,
+      "three_stage_matches_prior_certificate": true,
+      "three_stage_residual": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "three_stage_solution": [
+        [
+          4,
+          19
+        ],
+        [
+          -2,
+          5
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      "three_stage_solve_valid": true,
+      "transform_count": 31
+    },
+    "H": {
+      "capital_decision": null,
+      "counts_match_binomial": true,
+      "deletion_grid_counts": {
+        "1": 44,
+        "10": 2481256778,
+        "11": 7669339132,
+        "12": 21090682613,
+        "13": 51915526432,
+        "14": 114955808528,
+        "15": 229911617056,
+        "16": 416714805914,
+        "17": 686353797976,
+        "18": 1029530696964,
+        "19": 1408831480056,
+        "2": 946,
+        "20": 1761039350070,
+        "21": 2012616400080,
+        "22": 2104098963720,
+        "23": 2012616400080,
+        "24": 1761039350070,
+        "25": 1408831480056,
+        "26": 1029530696964,
+        "27": 686353797976,
+        "28": 416714805914,
+        "29": 229911617056,
+        "3": 13244,
+        "30": 114955808528,
+        "31": 51915526432,
+        "32": 21090682613,
+        "33": 7669339132,
+        "34": 2481256778,
+        "35": 708930508,
+        "36": 177232627,
+        "4": 135751,
+        "5": 1086008,
+        "6": 7059052,
+        "7": 38320568,
+        "8": 177232627,
+        "9": 708930508
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 1188,
+      "independent_grid_counts": {
+        "1": 44,
+        "10": 2481256778,
+        "11": 7669339132,
+        "12": 21090682613,
+        "13": 51915526432,
+        "14": 114955808528,
+        "15": 229911617056,
+        "16": 416714805914,
+        "17": 686353797976,
+        "18": 1029530696964,
+        "19": 1408831480056,
+        "2": 946,
+        "20": 1761039350070,
+        "21": 2012616400080,
+        "22": 2104098963720,
+        "23": 2012616400080,
+        "24": 1761039350070,
+        "25": 1408831480056,
+        "26": 1029530696964,
+        "27": 686353797976,
+        "28": 416714805914,
+        "29": 229911617056,
+        "3": 13244,
+        "30": 114955808528,
+        "31": 51915526432,
+        "32": 21090682613,
+        "33": 7669339132,
+        "34": 2481256778,
+        "35": 708930508,
+        "36": 177232627,
+        "4": 135751,
+        "5": 1086008,
+        "6": 7059052,
+        "7": 38320568,
+        "8": 177232627,
+        "9": 708930508
+      },
+      "prior_leave_thirty_five_valid": true,
+      "probability_claim": null,
+      "scenario_count": 44,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "QOS/QSVT": {
+      "all_inclusion_proofs_valid": true,
+      "antichain_width": 4,
+      "basis_states_checked": 64,
+      "critical_path_recomputed": true,
+      "dependency_dag_valid": true,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "extension_proof_valid": true,
+      "hardware": null,
+      "inverse_pair_names": [
+        "add-01",
+        "xor-03",
+        "rotl-01",
+        "add-05",
+        "xor-12",
+        "rotl-02",
+        "add-07",
+        "xor-21",
+        "rotl-03",
+        "add-09",
+        "xor-42",
+        "rotl-04",
+        "add-11",
+        "xor-33",
+        "rotl-05",
+        "xor-17",
+        "xor-29",
+        "xor-43",
+        "xor-53",
+        "xor-61",
+        "xor-62",
+        "xor-63",
+        "add-17",
+        "add-19",
+        "add-21",
+        "add-23",
+        "add-25",
+        "add-27",
+        "add-29",
+        "add-30",
+        "add-31",
+        "add-32",
+        "add-33",
+        "add-34",
+        "add-35",
+        "add-36",
+        "add-37",
+        "add-38"
+      ],
+      "level_schedule": [
+        {
+          "gates": 15,
+          "level": 0,
+          "nodes": [
+            0,
+            1
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 1,
+          "nodes": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "gates": 32,
+          "level": 2,
+          "nodes": [
+            6,
+            7
+          ]
+        },
+        {
+          "gates": 88,
+          "level": 3,
+          "nodes": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gates": 56,
+          "level": 4,
+          "nodes": [
+            12,
+            13
+          ]
+        },
+        {
+          "gates": 31,
+          "level": 5,
+          "nodes": [
+            14
+          ]
+        },
+        {
+          "gates": 33,
+          "level": 6,
+          "nodes": [
+            15
+          ]
+        },
+        {
+          "gates": 35,
+          "level": 7,
+          "nodes": [
+            16
+          ]
+        },
+        {
+          "gates": 37,
+          "level": 8,
+          "nodes": [
+            17
+          ]
+        },
+        {
+          "gates": 39,
+          "level": 9,
+          "nodes": [
+            18
+          ]
+        },
+        {
+          "gates": 41,
+          "level": 10,
+          "nodes": [
+            19
+          ]
+        },
+        {
+          "gates": 43,
+          "level": 11,
+          "nodes": [
+            20
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 12,
+          "nodes": [
+            21
+          ]
+        },
+        {
+          "gates": 47,
+          "level": 13,
+          "nodes": [
+            22
+          ]
+        },
+        {
+          "gates": 49,
+          "level": 14,
+          "nodes": [
+            23
+          ]
+        },
+        {
+          "gates": 51,
+          "level": 15,
+          "nodes": [
+            24
+          ]
+        },
+        {
+          "gates": 53,
+          "level": 16,
+          "nodes": [
+            25
+          ]
+        },
+        {
+          "gates": 55,
+          "level": 17,
+          "nodes": [
+            26
+          ]
+        },
+        {
+          "gates": 57,
+          "level": 18,
+          "nodes": [
+            27
+          ]
+        },
+        {
+          "gates": 59,
+          "level": 19,
+          "nodes": [
+            28
+          ]
+        },
+        {
+          "gates": 61,
+          "level": 20,
+          "nodes": [
+            29
+          ]
+        },
+        {
+          "gates": 63,
+          "level": 21,
+          "nodes": [
+            30
+          ]
+        },
+        {
+          "gates": 65,
+          "level": 22,
+          "nodes": [
+            31
+          ]
+        },
+        {
+          "gates": 67,
+          "level": 23,
+          "nodes": [
+            32
+          ]
+        },
+        {
+          "gates": 69,
+          "level": 24,
+          "nodes": [
+            33
+          ]
+        },
+        {
+          "gates": 71,
+          "level": 25,
+          "nodes": [
+            34
+          ]
+        },
+        {
+          "gates": 73,
+          "level": 26,
+          "nodes": [
+            35
+          ]
+        },
+        {
+          "gates": 79,
+          "level": 27,
+          "nodes": [
+            36
+          ]
+        },
+        {
+          "gates": 83,
+          "level": 28,
+          "nodes": [
+            37
+          ]
+        }
+      ],
+      "level_schedule_valid": true,
+      "mutation_rejections": {
+        "critical": true,
+        "critical_path": true,
+        "critical_v56": true,
+        "critical_v57": true,
+        "critical_v58": true,
+        "critical_v59": true,
+        "critical_v60": true,
+        "dag": true,
+        "extension": true,
+        "extension_proof": true,
+        "extension_v56": true,
+        "extension_v57": true,
+        "extension_v58": true,
+        "extension_v59": true,
+        "extension_v60": true,
+        "level": true,
+        "proof": true,
+        "resource": true,
+        "serial": true,
+        "serial_v56": true,
+        "serial_v57": true,
+        "serial_v58": true,
+        "serial_v59": true,
+        "serial_v60": true,
+        "slack": true,
+        "width": true,
+        "width_recomputed": true,
+        "work": true,
+        "work_v56": true,
+        "work_v57": true,
+        "work_v58": true,
+        "work_v59": true,
+        "work_v60": true
+      },
+      "parallel_bounds_are_model_only": true,
+      "proof_count": 38,
+      "residual": 0,
+      "resource_bound": {
+        "antichain_width": 4,
+        "dag_critical_depth": 529,
+        "gates": 1542,
+        "level_count": 29,
+        "level_width": 4,
+        "max_qubits": 6,
+        "serial_depth": 948,
+        "unconstrained_parallel_lower_bound": 35
+      },
+      "resource_merkle_root_sha256": "db505ec29f75378d0557321a09ec47d1d8a8ae725804bd2e281f7b3df25b37f7",
+      "schedule_slack": 0,
+      "scheduled_depth": 529,
+      "slack_certificate_valid": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "width_recomputed": true,
+      "work_conservation": true
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "certificate_intersection_size": 29,
+      "control_table": {
+        "audience": true,
+        "chain_mutation": true,
+        "downgrade": true,
+        "eighteenth_transition": true,
+        "eighth_transition": true,
+        "eleventh_transition": true,
+        "fifteenth_transition": true,
+        "fifth_transition": true,
+        "fork": true,
+        "formula": true,
+        "formula_v50": true,
+        "formula_v51": true,
+        "formula_v52": true,
+        "formula_v53": true,
+        "formula_v54": true,
+        "formula_v55": true,
+        "formula_v56": true,
+        "formula_v57": true,
+        "formula_v58": true,
+        "formula_v59": true,
+        "formula_v60": true,
+        "fourteenth_transition": true,
+        "fourth_transition": true,
+        "intersection": true,
+        "intersection_v50": true,
+        "intersection_v51": true,
+        "intersection_v52": true,
+        "intersection_v53": true,
+        "intersection_v54": true,
+        "intersection_v55": true,
+        "intersection_v56": true,
+        "intersection_v57": true,
+        "intersection_v58": true,
+        "intersection_v59": true,
+        "intersection_v60": true,
+        "membership_hash": true,
+        "minimum_intersection_formula": true,
+        "missing_member": true,
+        "mutation": true,
+        "mutation_v50": true,
+        "mutation_v51": true,
+        "mutation_v52": true,
+        "mutation_v53": true,
+        "mutation_v54": true,
+        "mutation_v55": true,
+        "mutation_v56": true,
+        "mutation_v57": true,
+        "mutation_v58": true,
+        "mutation_v59": true,
+        "mutation_v60": true,
+        "nineteenth_transition": true,
+        "ninth_transition": true,
+        "quorum_intersection": true,
+        "replay": true,
+        "revocation": true,
+        "seventeenth_transition": true,
+        "seventh_transition": true,
+        "sixteenth_transition": true,
+        "sixth_transition": true,
+        "split": true,
+        "stale": true,
+        "tenth_transition": true,
+        "thirteenth_transition": true,
+        "transition_chain": true,
+        "twelfth_transition": true,
+        "twentieth_transition": true,
+        "twenty_fifth_transition": true,
+        "twenty_first_transition": true,
+        "twenty_fourth_transition": true,
+        "twenty_second_transition": true,
+        "twenty_third_transition": true,
+        "valid": true
+      },
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "membership_epoch": 362,
+      "minimum_quorum_intersection": 29,
+      "observer_count": 33,
+      "quorum": 31,
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transition_chain_sha256": "bb87f90ef20b5b4c0d3f342a6d4f2e7841b302df8ac4699860409b336510d243",
+      "transition_count": 25
+    }
+  },
+  "nonclaims": [
+    "No measured performance, commercial result, physical-law discovery or empirical SCM result."
+  ],
+  "payload_sha256": "012c2ac1ad3c3d896b37ce93b55d7fbce802c96b2d8eeefd558959ba0f457a4e",
+  "preregistration_commit_sha": "0fa62a97bbedb0e10c25ba04a3d9b5e8bcbc329e",
+  "schema": "uqpu-cycle060-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-10-03",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-10-03",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    },
+    {
+      "access_date": "2026-10-03",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_git_blob_sha": "07c2130955c7dbe457fb5ecac466914bd80a0e7c",
+    "focused_tests_sha256": "f42aee2a0ae430086fe65149c473d9d03eb413de5df692f5a1768d07d2223414",
+    "implementation_git_blob_sha": "978635b76d9bcac19baa6f553fb8727b72a3a1ba",
+    "implementation_sha256": "54ea63fa08aeb85cb0b095361397556f36793c3731feeea35398d888291a4861",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "65cb25b50d0eb90c40185835025941f3c65b273f",
+    "preregistered_gates_sha256": "f36270b10cc7b4946590e6155617b7a3dc86abcad03a893d99799fe9334ce52a",
+    "runner_sha256": "e38425b51248f5b2ba61ee56747b7af25a0f3c7306e109f5fbd0293d984306c8",
+    "typed_source_sha256": "24310b8cea2af2480669912d74cbc386eac8835ef1ceed222a271893c516e117"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "External provider, hardware, durability, interoperability, custody, calibration, decision, economics, lineage and equivalence gates remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
