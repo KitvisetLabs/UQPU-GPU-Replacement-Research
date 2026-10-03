@@ -1,0 +1,1625 @@
+{
+  "assumptions": [
+    "Bounded fixtures and models only.",
+    "Recovery is not crash durability.",
+    "Custody hashes are synthetic.",
+    "SCM is fiction-only."
+  ],
+  "base_cycle063_closeout_sha": "cf54e02d81b30e412f6d5d319f70a037a2ac5d4b",
+  "branch": "research/cycle-064-delta-01-2026-10-04",
+  "cycle": "064",
+  "focused_tests_commit_sha": "0c0ac335a9957a7d0f1446be4eefb6334e847e8e",
+  "implementation_commit_sha": "4efd5b0cfc6b7fea3167258a57e683ccf7f7d24f",
+  "lane_count": 12,
+  "lanes": {
+    "A": {
+      "action_count": 12,
+      "burnside_matches_direct": true,
+      "burnside_orbit_count": 2,
+      "canonical_label_reconstruction": true,
+      "coset_count": 4,
+      "coset_sha256": "3dcf7665a2279895f6de09e3ddd58c40a20bb973f697272f277769b0f706066c",
+      "cosets_partition_actions": true,
+      "double_coset_count": 4,
+      "double_coset_representatives": [
+        [
+          -1,
+          1,
+          false
+        ],
+        [
+          -1,
+          1,
+          true
+        ],
+        [
+          1,
+          0,
+          false
+        ],
+        [
+          1,
+          0,
+          true
+        ]
+      ],
+      "double_coset_sha256": "3dcf7665a2279895f6de09e3ddd58c40a20bb973f697272f277769b0f706066c",
+      "double_coset_sizes": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "double_cosets_partition_actions": true,
+      "eight_canonical_algorithms_agree": true,
+      "eighteen_canonical_algorithms_agree": true,
+      "eighteenth_canonical_algorithm": "memoized-recurrence-versus-adjacency-eleventh-power",
+      "eighteenth_canonical_label_reconstruction": true,
+      "eighteenth_canonical_label_sha256": "2d2497ebadf78eb7cd3b8f7d5a997e261b2b2f240d18fb498261a9279c64c7b8",
+      "eighth_canonical_algorithm": "quotient-edge-multiplicity",
+      "eighth_canonical_label_reconstruction": true,
+      "eighth_canonical_label_sha256": "85a64e715c20f1dd059b30a6fdce86cadae9bb2b26225be23fe664614db867cb",
+      "eleven_canonical_algorithms_agree": true,
+      "eleventh_canonical_algorithm": "quotient-weighted-adjacency-fourth-power",
+      "eleventh_canonical_label_reconstruction": true,
+      "eleventh_canonical_label_sha256": "83a49047634cdeee5c17a9f1fc47c85a0d3e4b76d1453446baf020421d14379e",
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "fifteen_canonical_algorithms_agree": true,
+      "fifteenth_canonical_algorithm": "quotient-weighted-adjacency-eighth-power",
+      "fifteenth_canonical_label_reconstruction": true,
+      "fifteenth_canonical_label_sha256": "493de462ece08f03b09a43f773769e104f5357f7be056727beeac0095a407269",
+      "fifth_canonical_algorithm": "fixed-width-big-endian",
+      "fifth_canonical_label_reconstruction": true,
+      "five_canonical_algorithms_agree": true,
+      "fixture_ordinal": 44,
+      "four_canonical_algorithms_agree": true,
+      "fourteen_canonical_algorithms_agree": true,
+      "fourteenth_canonical_algorithm": "quotient-weighted-adjacency-seventh-power",
+      "fourteenth_canonical_label_reconstruction": true,
+      "fourteenth_canonical_label_sha256": "74c5e54f169f63e5a4bd7bd87c9695b0b9802a846ed8b4e4fb08aa6e774747a6",
+      "graph_stabilizer_size": 6,
+      "length_eight_walk_multiplicities": {
+        "0-1": 436224,
+        "0-2": 403584,
+        "0-3": 403456,
+        "1-2": 403456,
+        "1-3": 403584,
+        "2-3": 436224
+      },
+      "length_eight_walk_sha256": "493de462ece08f03b09a43f773769e104f5357f7be056727beeac0095a407269",
+      "length_eight_walk_total": 2486528,
+      "length_eight_walks_match_matrix_power": true,
+      "length_eighteen_walk_multiplicities": {
+        "0-1": 25407168970752,
+        "0-2": 25372809363456,
+        "0-3": 25372809232384,
+        "1-2": 25372809232384,
+        "1-3": 25372809363456,
+        "2-3": 25407168970752
+      },
+      "length_eighteen_walk_sha256": "6f09ec12dfa7dcac65ac8eacef21bd9b6f68797dba7ff9fb2bf88551324b404b",
+      "length_eighteen_walk_total": 152305575133184,
+      "length_eighteen_walks_match_matrix_power": true,
+      "length_eleven_walk_multiplicities": {
+        "0-1": 89651200,
+        "0-2": 91747328,
+        "0-3": 91748352,
+        "1-2": 91748352,
+        "1-3": 91747328,
+        "2-3": 89651200
+      },
+      "length_eleven_walk_sha256": "2d2497ebadf78eb7cd3b8f7d5a997e261b2b2f240d18fb498261a9279c64c7b8",
+      "length_eleven_walk_total": 546293760,
+      "length_eleven_walks_match_matrix_power": true,
+      "length_fifteen_walk_multiplicities": {
+        "0-1": 117277818880,
+        "0-2": 117814673408,
+        "0-3": 117814689792,
+        "1-2": 117814689792,
+        "1-3": 117814673408,
+        "2-3": 117277818880
+      },
+      "length_fifteen_walk_sha256": "447fabcf3849b27d61c91574c561a02cd85555d8362e7d2ccdaaa10a27eaa3e6",
+      "length_fifteen_walk_total": 705814364160,
+      "length_fifteen_walks_match_matrix_power": true,
+      "length_five_walk_multiplicities": {
+        "0-1": 1696,
+        "0-2": 2192,
+        "0-3": 2208,
+        "1-2": 2208,
+        "1-3": 2192,
+        "2-3": 1696
+      },
+      "length_five_walk_sha256": "e0340f1b92516591c194ffab5f8be48ea1012a518dc78ae1da5472cd745fc3b2",
+      "length_five_walk_total": 12192,
+      "length_five_walks_match_matrix_power": true,
+      "length_four_walk_multiplicities": {
+        "0-1": 384,
+        "0-2": 264,
+        "0-3": 256,
+        "1-2": 256,
+        "1-3": 264,
+        "2-3": 384
+      },
+      "length_four_walk_sha256": "83a49047634cdeee5c17a9f1fc47c85a0d3e4b76d1453446baf020421d14379e",
+      "length_four_walk_total": 1808,
+      "length_four_walks_match_matrix_power": true,
+      "length_fourteen_walk_multiplicities": {
+        "0-1": 19658145792,
+        "0-2": 19523936256,
+        "0-3": 19523928064,
+        "1-2": 19523928064,
+        "1-3": 19523936256,
+        "2-3": 19658145792
+      },
+      "length_fourteen_walk_sha256": "c9189d5e67d70c9afe2db99f3cf06704253c7479351ab3410cdd27d31fa6f592",
+      "length_fourteen_walk_total": 117412020224,
+      "length_fourteen_walks_match_matrix_power": true,
+      "length_nine_walk_multiplicities": {
+        "0-1": 2454016,
+        "0-2": 2584832,
+        "0-3": 2585088,
+        "1-2": 2585088,
+        "1-3": 2584832,
+        "2-3": 2454016
+      },
+      "length_nine_walk_sha256": "f15a1759a43c08e962bec110f95c23ea6b447f7b29ef9ccd6c3aeceb5cc1da02",
+      "length_nine_walk_total": 15247872,
+      "length_nine_walks_match_matrix_power": true,
+      "length_nineteen_walk_multiplicities": {
+        "0-1": 152271215656960,
+        "0-2": 152408654348288,
+        "0-3": 152408654610432,
+        "1-2": 152408654610432,
+        "1-3": 152408654348288,
+        "2-3": 152271215656960
+      },
+      "length_nineteen_walk_sha256": "e879ca29e721537a39c536e997d63e1ab83879c0c0a630c241553c9faa1f98f4",
+      "length_nineteen_walk_total": 914177049231360,
+      "length_nineteen_walks_match_matrix_power": true,
+      "length_seven_walk_multiplicities": {
+        "0-1": 65920,
+        "0-2": 74048,
+        "0-3": 74112,
+        "1-2": 74112,
+        "1-3": 74048,
+        "2-3": 65920
+      },
+      "length_seven_walk_sha256": "74c5e54f169f63e5a4bd7bd87c9695b0b9802a846ed8b4e4fb08aa6e774747a6",
+      "length_seven_walk_total": 428160,
+      "length_seven_walks_match_matrix_power": true,
+      "length_seventeen_walk_multiplicities": {
+        "0-1": 4227369926656,
+        "0-2": 4235959795712,
+        "0-3": 4235959861248,
+        "1-2": 4235959861248,
+        "1-3": 4235959795712,
+        "2-3": 4227369926656
+      },
+      "length_seventeen_walk_sha256": "e056fedbd0ee42918e6442d5c79ca19024ce7964a8d1c3c727c6a7d16a5d4244",
+      "length_seventeen_walk_total": 25398579167232,
+      "length_seventeen_walks_match_matrix_power": true,
+      "length_six_walk_multiplicities": {
+        "0-1": 12672,
+        "0-2": 10656,
+        "0-3": 10624,
+        "1-2": 10624,
+        "1-3": 10656,
+        "2-3": 12672
+      },
+      "length_six_walk_sha256": "2a4ca5c4f92d27dc5721f27fc2d22bb181a930eb7d2d6c12eae02e26a1480649",
+      "length_six_walk_total": 67904,
+      "length_six_walks_match_matrix_power": true,
+      "length_sixteen_walk_multiplicities": {
+        "0-1": 706351202304,
+        "0-2": 704203751424,
+        "0-3": 704203718656,
+        "1-2": 704203718656,
+        "1-3": 704203751424,
+        "2-3": 706351202304
+      },
+      "length_sixteen_walk_sha256": "2958b4049320f10167e337ab92747ffefc213c19173245a95cf50419cb9cdfce",
+      "length_sixteen_walk_total": 4229517344768,
+      "length_sixteen_walks_match_matrix_power": true,
+      "length_ten_walk_multiplicities": {
+        "0-1": 15378432,
+        "0-2": 14854656,
+        "0-3": 14854144,
+        "1-2": 14854144,
+        "1-3": 14854656,
+        "2-3": 15378432
+      },
+      "length_ten_walk_sha256": "b999decd963e27ce931c61bb6a39d5924a21fcc33caf5fc785fdb47c9fdede70",
+      "length_ten_walk_total": 90174464,
+      "length_ten_walks_match_matrix_power": true,
+      "length_thirteen_walk_multiplicities": {
+        "0-1": 3248398336,
+        "0-2": 3281948672,
+        "0-3": 3281952768,
+        "1-2": 3281952768,
+        "1-3": 3281948672,
+        "2-3": 3248398336
+      },
+      "length_thirteen_walk_sha256": "0534bb874ebc9f0f123345396f6a0f5c2bfbda3955aed3309c6f3f7b69286a94",
+      "length_thirteen_walk_total": 19624599552,
+      "length_thirteen_walks_match_matrix_power": true,
+      "length_three_path_multiplicities": {
+        "0-1-2-3": 3,
+        "0-1-3-2": 2,
+        "0-2-1-3": 12,
+        "0-2-3-1": 4,
+        "0-3-1-2": 18,
+        "0-3-2-1": 9,
+        "1-0-2-3": 2,
+        "1-0-3-2": 3,
+        "1-2-0-3": 18,
+        "1-3-0-2": 12,
+        "2-0-1-3": 4,
+        "2-1-0-3": 9
+      },
+      "length_three_path_sha256": "5c22ca18dd3410b139d7f1ee89c9430bb17d215afe11517a7fb4871f2bb7515b",
+      "length_three_path_total": 96,
+      "length_three_paths_match_incidence": true,
+      "length_twelve_walk_multiplicities": {
+        "0-1": 548388864,
+        "0-2": 540002304,
+        "0-3": 540000256,
+        "1-2": 540000256,
+        "1-3": 540002304,
+        "2-3": 548388864
+      },
+      "length_twelve_walk_sha256": "229f8ede5010b940592537b9c645a6d5b5af22c97ad736ed8098272b5cccd0ee",
+      "length_twelve_walk_total": 3256782848,
+      "length_twelve_walks_match_matrix_power": true,
+      "multiplicities_match_incidence": true,
+      "nine_canonical_algorithms_agree": true,
+      "nineteen_canonical_algorithms_agree": true,
+      "nineteenth_canonical_algorithm": "memoized-recurrence-versus-adjacency-twelfth-power",
+      "nineteenth_canonical_label_reconstruction": true,
+      "nineteenth_canonical_label_sha256": "229f8ede5010b940592537b9c645a6d5b5af22c97ad736ed8098272b5cccd0ee",
+      "ninth_canonical_algorithm": "quotient-two-edge-path-multiplicity",
+      "ninth_canonical_label_reconstruction": true,
+      "ninth_canonical_label_sha256": "15ee60cac8172b138b119da39c202cf7b9eb6e4fc43e9984b6e4482530f9c9a5",
+      "objective": 27,
+      "orbit_count": 2,
+      "orbit_sizes": [
+        2,
+        6
+      ],
+      "orbit_stabilizer_valid": true,
+      "path_multiplicities_match_incidence": true,
+      "quotient_edge_multiplicities": {
+        "0-1": 1,
+        "0-2": 2,
+        "0-3": 3,
+        "1-2": 3,
+        "1-3": 2,
+        "2-3": 1
+      },
+      "quotient_edge_total": 12,
+      "quotient_incidence": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "quotient_incidence_diagonal_zero": true,
+      "quotient_incidence_sha256": "7694ae86f8664cd8154d543b82ac8417c582d45aefb09b9574d0c879cf7081d3",
+      "quotient_incidence_symmetric": true,
+      "quotient_multiplicity_sha256": "4c5ee1441787ab805cdfd279ee54b57c069f7d4c3262bccf3cd7479b177ca1e5",
+      "quotient_path_multiplicities": {
+        "0-1-2": 3,
+        "0-1-3": 2,
+        "0-2-1": 6,
+        "0-2-3": 2,
+        "0-3-1": 6,
+        "0-3-2": 3,
+        "1-0-2": 2,
+        "1-0-3": 3,
+        "1-2-3": 3,
+        "1-3-2": 2,
+        "2-0-3": 6,
+        "2-1-3": 6
+      },
+      "quotient_path_sha256": "15ee60cac8172b138b119da39c202cf7b9eb6e4fc43e9984b6e4482530f9c9a5",
+      "quotient_path_total": 44,
+      "quotient_vertex_count": 4,
+      "representative_count": 4,
+      "representatives_reconstruct_group": true,
+      "representatives_sha256": "a2536262867cbab44968db89314188497b5ee267ce514d9109a5139863a9bf6e",
+      "rotation_subgroup_size": 3,
+      "scaling_claim": null,
+      "seven_canonical_algorithms_agree": true,
+      "seventeen_canonical_algorithms_agree": true,
+      "seventeenth_canonical_algorithm": "quotient-weighted-adjacency-tenth-power",
+      "seventeenth_canonical_label_reconstruction": true,
+      "seventeenth_canonical_label_sha256": "b999decd963e27ce931c61bb6a39d5924a21fcc33caf5fc785fdb47c9fdede70",
+      "seventh_canonical_algorithm": "quotient-incidence-row",
+      "seventh_canonical_label_reconstruction": true,
+      "seventh_canonical_label_sha256": "3cc4ea231875cb1d9579cff27efb1056fe3b79e7db3ca9bb328f76d9a59d8249",
+      "six_canonical_algorithms_agree": true,
+      "sixteen_canonical_algorithms_agree": true,
+      "sixteenth_canonical_algorithm": "quotient-weighted-adjacency-ninth-power",
+      "sixteenth_canonical_label_reconstruction": true,
+      "sixteenth_canonical_label_sha256": "f15a1759a43c08e962bec110f95c23ea6b447f7b29ef9ccd6c3aeceb5cc1da02",
+      "sixth_canonical_algorithm": "zero-padded-binary-vector",
+      "sixth_canonical_label_reconstruction": true,
+      "sixth_canonical_label_sha256": "77617b7a27ac0f3bacd9dde4ffeab434659cabdefadf10335be52c9d6dcfb8cd",
+      "states": 262144,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "task_sha256": "16721ea71db8ef3d16303cf1e6547e78021ed1bc8384d96208cbe1cd271576e8",
+      "ten_canonical_algorithms_agree": true,
+      "tenth_canonical_algorithm": "quotient-three-edge-simple-path-multiplicity",
+      "tenth_canonical_label_reconstruction": true,
+      "tenth_canonical_label_sha256": "5c22ca18dd3410b139d7f1ee89c9430bb17d215afe11517a7fb4871f2bb7515b",
+      "thirteen_canonical_algorithms_agree": true,
+      "thirteenth_canonical_algorithm": "quotient-weighted-adjacency-sixth-power",
+      "thirteenth_canonical_label_reconstruction": true,
+      "thirteenth_canonical_label_sha256": "2a4ca5c4f92d27dc5721f27fc2d22bb181a930eb7d2d6c12eae02e26a1480649",
+      "twelfth_canonical_algorithm": "quotient-weighted-adjacency-fifth-power",
+      "twelfth_canonical_label_reconstruction": true,
+      "twelfth_canonical_label_sha256": "e0340f1b92516591c194ffab5f8be48ea1012a518dc78ae1da5472cd745fc3b2",
+      "twelve_canonical_algorithms_agree": true,
+      "twentieth_canonical_algorithm": "memoized-recurrence-versus-adjacency-thirteenth-power",
+      "twentieth_canonical_label_reconstruction": true,
+      "twentieth_canonical_label_sha256": "0534bb874ebc9f0f123345396f6a0f5c2bfbda3955aed3309c6f3f7b69286a94",
+      "twenty_canonical_algorithms_agree": true,
+      "twenty_fifth_canonical_algorithm": "memoized-recurrence-versus-adjacency-eighteenth-power",
+      "twenty_fifth_canonical_label_reconstruction": true,
+      "twenty_fifth_canonical_label_sha256": "6f09ec12dfa7dcac65ac8eacef21bd9b6f68797dba7ff9fb2bf88551324b404b",
+      "twenty_first_canonical_algorithm": "memoized-recurrence-versus-adjacency-fourteenth-power",
+      "twenty_first_canonical_label_reconstruction": true,
+      "twenty_first_canonical_label_sha256": "c9189d5e67d70c9afe2db99f3cf06704253c7479351ab3410cdd27d31fa6f592",
+      "twenty_five_canonical_algorithms_agree": true,
+      "twenty_four_canonical_algorithms_agree": true,
+      "twenty_fourth_canonical_algorithm": "memoized-recurrence-versus-adjacency-seventeenth-power",
+      "twenty_fourth_canonical_label_reconstruction": true,
+      "twenty_fourth_canonical_label_sha256": "e056fedbd0ee42918e6442d5c79ca19024ce7964a8d1c3c727c6a7d16a5d4244",
+      "twenty_one_canonical_algorithms_agree": true,
+      "twenty_second_canonical_algorithm": "memoized-recurrence-versus-adjacency-fifteenth-power",
+      "twenty_second_canonical_label_reconstruction": true,
+      "twenty_second_canonical_label_sha256": "447fabcf3849b27d61c91574c561a02cd85555d8362e7d2ccdaaa10a27eaa3e6",
+      "twenty_six_canonical_algorithms_agree": true,
+      "twenty_sixth_canonical_algorithm": "memoized-recurrence-versus-adjacency-nineteenth-power",
+      "twenty_sixth_canonical_label_reconstruction": true,
+      "twenty_sixth_canonical_label_sha256": "e879ca29e721537a39c536e997d63e1ab83879c0c0a630c241553c9faa1f98f4",
+      "twenty_third_canonical_algorithm": "memoized-recurrence-versus-adjacency-sixteenth-power",
+      "twenty_third_canonical_label_reconstruction": true,
+      "twenty_third_canonical_label_sha256": "2958b4049320f10167e337ab92747ffefc213c19173245a95cf50419cb9cdfce",
+      "twenty_three_canonical_algorithms_agree": true,
+      "twenty_two_canonical_algorithms_agree": true,
+      "witness_count": 8,
+      "witness_sha256": "f063bfb0136f11eec0bc1a5bf1faf181a0afd691fe7da633c46a730b798b5eb3"
+    },
+    "AI-COST": {
+      "candidate_result": null,
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "frontier_node_count": 1,
+      "functional_equivalence": null,
+      "independent_new_root_valid": true,
+      "independent_old_root_valid": true,
+      "manifest": {
+        "frontier_sha256": "00161a4aa4c5ed6d43ee8a54350effa94390aa78453aa4e087951e871e7a2437",
+        "new_root": "02ea9caa3cafaca8677e63b2707815a53e34a6b2c6f2a12d84ac0fbd0401bbde",
+        "old_root": "d08c2aade84b71e1081c329c45b4d9eaa60aaec5875e1cbb40c951a788ad5d2a",
+        "source": "95c647aa177af88336541948b99b6d65ca297bbae1f2aeee616a5186f4c0dd78",
+        "updated_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "version": 54
+      },
+      "mutation_rejections": {
+        "cardinality": true,
+        "frontier": true,
+        "new": true,
+        "old": true,
+        "order": true,
+        "schema": true,
+        "source": true
+      },
+      "new_root_reconstruction_valid": true,
+      "old_root_reconstruction_valid": true,
+      "padding_leaf_count": 0,
+      "prior_update_valid": true,
+      "real_leaf_count": 32,
+      "root_changed": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "updated_leaf_count": 24,
+      "valid_manifest": true
+    },
+    "B": {
+      "canonical_sha256": "2a58215c4ebda5ebf47850f42d0896f4376f296aeff6eae9b61f8568f5156e11",
+      "checkpoint_count": 18,
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "external_authority": null,
+      "migration_matches_v29": true,
+      "negative_controls": {
+        "eighteenth_checkpoint_sha256": true,
+        "eighteenth_from": true,
+        "eighteenth_nonce": true,
+        "eighteenth_position": true,
+        "eighteenth_previous": true,
+        "eighteenth_schema": true,
+        "eighteenth_to": true,
+        "eighth_checkpoint_sha256": true,
+        "eighth_from": true,
+        "eighth_nonce": true,
+        "eighth_position": true,
+        "eighth_previous": true,
+        "eighth_to": true,
+        "eleventh_checkpoint_sha256": true,
+        "eleventh_from": true,
+        "eleventh_nonce": true,
+        "eleventh_position": true,
+        "eleventh_previous": true,
+        "eleventh_to": true,
+        "fifteenth_checkpoint_sha256": true,
+        "fifteenth_from": true,
+        "fifteenth_nonce": true,
+        "fifteenth_position": true,
+        "fifteenth_previous": true,
+        "fifteenth_to": true,
+        "fifth_checkpoint_sha256": true,
+        "fifth_from": true,
+        "fifth_nonce": true,
+        "fifth_position": true,
+        "fifth_previous": true,
+        "fifth_to": true,
+        "first_checkpoint_sha256": true,
+        "first_from": true,
+        "first_nonce": true,
+        "first_position": true,
+        "first_previous": true,
+        "first_to": true,
+        "fork": true,
+        "fourteenth_checkpoint_sha256": true,
+        "fourteenth_from": true,
+        "fourteenth_nonce": true,
+        "fourteenth_position": true,
+        "fourteenth_previous": true,
+        "fourteenth_to": true,
+        "fourth_checkpoint_sha256": true,
+        "fourth_from": true,
+        "fourth_nonce": true,
+        "fourth_position": true,
+        "fourth_previous": true,
+        "fourth_to": true,
+        "high": true,
+        "key": true,
+        "low": true,
+        "ninth_checkpoint_sha256": true,
+        "ninth_from": true,
+        "ninth_nonce": true,
+        "ninth_position": true,
+        "ninth_previous": true,
+        "ninth_to": true,
+        "path": true,
+        "reorder": true,
+        "replay": true,
+        "retry": true,
+        "rollback": true,
+        "rollback_policy": true,
+        "second_checkpoint_sha256": true,
+        "second_from": true,
+        "second_nonce": true,
+        "second_position": true,
+        "second_previous": true,
+        "second_to": true,
+        "seventeenth_checkpoint_sha256": true,
+        "seventeenth_from": true,
+        "seventeenth_nonce": true,
+        "seventeenth_position": true,
+        "seventeenth_previous": true,
+        "seventeenth_to": true,
+        "seventh_checkpoint_sha256": true,
+        "seventh_from": true,
+        "seventh_nonce": true,
+        "seventh_position": true,
+        "seventh_previous": true,
+        "seventh_to": true,
+        "sixteenth_checkpoint_sha256": true,
+        "sixteenth_from": true,
+        "sixteenth_nonce": true,
+        "sixteenth_position": true,
+        "sixteenth_previous": true,
+        "sixteenth_to": true,
+        "sixth_checkpoint_sha256": true,
+        "sixth_from": true,
+        "sixth_nonce": true,
+        "sixth_position": true,
+        "sixth_previous": true,
+        "sixth_to": true,
+        "tenth_checkpoint_sha256": true,
+        "tenth_from": true,
+        "tenth_nonce": true,
+        "tenth_position": true,
+        "tenth_previous": true,
+        "tenth_to": true,
+        "terminal": true,
+        "third_checkpoint_sha256": true,
+        "third_from": true,
+        "third_nonce": true,
+        "third_position": true,
+        "third_previous": true,
+        "third_to": true,
+        "thirteenth_checkpoint_sha256": true,
+        "thirteenth_from": true,
+        "thirteenth_nonce": true,
+        "thirteenth_position": true,
+        "thirteenth_previous": true,
+        "thirteenth_to": true,
+        "twelfth_checkpoint_sha256": true,
+        "twelfth_from": true,
+        "twelfth_nonce": true,
+        "twelfth_position": true,
+        "twelfth_previous": true,
+        "twelfth_to": true,
+        "unicode": true
+      },
+      "provider_job_invoice": null,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_checkpoint_sha256": "eefd7c699954eedd4af3be8259eb5029636299aff6c3825bba79ff003b772602"
+    },
+    "C": {
+      "all_reader_observations_complete": true,
+      "cleanup_journal_empty": true,
+      "complete_marker_barrier_preserved": true,
+      "complete_marker_fsync_count": 58,
+      "crash_durability": null,
+      "duplicate_generation_rejected": true,
+      "evidence_class": "LOCAL_THIRTY_EIGHT_READER_TWENTY_FOUR_RECOVERY_FIXTURE",
+      "failure_controls": {
+        "checksum": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "cleanup": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "directory_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "duplicate_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "file_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "generation_gap": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_completeness": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_digest": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_fsync": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_order": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "marker_terminal": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "partial_write": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "reordered_recovery": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "stale_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        },
+        "terminal_generation": {
+          "evidence_promoted": false,
+          "rejected_as_durable": true
+        }
+      },
+      "generation_gap_rejected": true,
+      "ordered_twenty_four_recovery": true,
+      "pending_recovery_count": 24,
+      "power_loss_durability": null,
+      "reader_count": 38,
+      "recovery_generations": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "reordered_recovery_rejected": true,
+      "replacement_directory_fsync_call_count": 34,
+      "replacement_file_fsync_call_count": 34,
+      "replacement_stages": 34,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_generation_bound": true
+    },
+    "D": {
+      "central_directory_digest_sha256": "dcef6f5b672361fad7e7190d6c7af57450874bb786a0ca6033a717a3700cbf29",
+      "central_directory_segment_count": 18,
+      "central_directory_total_length": 589824,
+      "corpus_size": 19,
+      "envelope_count": 11,
+      "envelope_sha256": [
+        "bd0a04311b69149a008332ca0bd87c1f5e44c83bd9654ae8eb44445afa8448ad",
+        "dffb91c766b2e026f89ded050a4e9cfc4b51ca65c45ddd6cea44dd0272b0f562",
+        "e90a4962313bcefe74453d9e88c1c20e7f38e0b128a812dc5edafb273e15af16",
+        "405c70f8959463259f1f6922c96d84048776c31806d737e5b4739289f3990a88",
+        "0fd8573987226ea79a354d405397c670530d713f2b76ffbaf823d044318ab683",
+        "d6055bd7ed8b32355db4f8b38d4d07662d82b98b670a45e9fee79614d925e462",
+        "2a725259fad2649d8f2d0a1a2c4d9acdf763ea0a1ef5815286f2794370d746e5",
+        "eaa525f36064791a7b15ad27a16293ed1cfe1ee101451c435994206170170145",
+        "6bae8e28dd6ed4a7c7287f7b132ecf0a05f013a06fabb2a3e8cf45a872c180cc",
+        "41cbc99de6c2e59b6b02067fa6dda958817c94dab276142f076c02a2e85e87d1",
+        "cbcb2e0ad1d12860430dc9c600703cab5bb7681ff847d901a23a59617043a547"
+      ],
+      "evidence_class": "SYNTHETIC_ZIP64_EXTENSIBLE_SECTOR_CORPUS",
+      "local_central_end_record_parity": true,
+      "negative_controls": {
+        "directory_binding": true,
+        "directory_mutation": true,
+        "disk_order": true,
+        "envelope_count": true,
+        "envelope_unique": true,
+        "parity": true,
+        "prior": true,
+        "renewal_mutation": true,
+        "span_length": true,
+        "span_order": true,
+        "terminal_binding": true,
+        "terminal_mutation": true,
+        "volume_chain": true
+      },
+      "payload_read": false,
+      "real_producer_corpus": null,
+      "renewal_envelope_sha256": "cbcb2e0ad1d12860430dc9c600703cab5bb7681ff847d901a23a59617043a547",
+      "split_disk_sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_record_binding_sha256": "839b1bfb226e44807aead98e396d89293a218dc5e26f75e951ddc462dcc4a491",
+      "terminal_volume_sha256": "ab2265e042e5357828c0a4a5054650d8555f92f0c81b4605de052658511c06a2",
+      "valid_metadata": true
+    },
+    "E": {
+      "batch_commit_sha256": [
+        "a09d88561a39989e49cc1fedf35fb6e97eb4fa476a2457a2fc242a61c3d0fccc",
+        "75d9ccf47e46a1809911879b0ba6619cc5423e0d01ee6f5807b86810c6ec76a6",
+        "7f2ac31cf8f592c54b638d0098659d66a56b79699f17ef143512281fd598174e",
+        "ffb3548df9a491ed926a3868dd2e5ce929958ea1cbc43a9b03351ef7c10d9613",
+        "d361d8e4e81242cb09c88e0abc47828075f9da4f22000e007ea92288cdf670c6",
+        "959b2068c1cbb61bb84990c5f31383d26d2c8c6c451b4dfe07bfd1d11aa0cc0f",
+        "68b6934373822ba98e782421dc86431f56cb5bddf9371e6617c2c812ae7ba381",
+        "7f93fb7ecb33de160c01a3445c208a29e721d038ca0a44f67233f2186b973a82",
+        "b734700f0578d59fd47169b938c72b1bffc74c9c809aad9fafaced4d75ac2889",
+        "a319ce46e69417b6fd70c7cb7ab09218da43f9bb4c789b964a144a79e15a62d3",
+        "a3399e2a33e6c5103b9790cf8bcac4c456be4dd1105cb268ae656c5692e3508f",
+        "c00189c1b3f293cc8695f596f120fa5f660f2c3ad878922c51bd6dfaddd2e6bd",
+        "6935771cf680f3bc81b8990b6fedbad82dfa5729ecf3b44467cec11b615a914d",
+        "b3ecb04d33d7389ada308a943f05aac46a3c54f716f107ac65723f8d95353616",
+        "06fc43424dee2cedb6af0c08d11ed5cd63144811ce0d3f8930d9222addfdcffc",
+        "bc5efd6db279f8f9cd1dc2334515f6739a32127b38c7ddab2a6d52922781f290",
+        "0e502c4b6a6e4467e0624efcf8ee0f6b72169b3aa5fd9f413fd61a5ebe45162d",
+        "fca75a65f27651d250d10b283245711752efb852c8213b603999bebc00121110",
+        "b1010630df6c565481761c64fdb32513dac808dfaf074696994e2dafa25a4d5b",
+        "1149b05ddf756351b0938a4bafca5d5097b81faf01eb7116eea916bd308326ba",
+        "2056e28b8c1163856c90ec4203a49ef895f833a44887678c63e4c7e47f6a8584",
+        "1f5140204e141ab5a5f78fdf91b301c4948b3fc2cadaac627e880c5391667b7e",
+        "b736f1c9be446233b38fa3bea8a2dfc0a85ee01c948aa31824d3e0895136ea12",
+        "acdfe71993ce475a2d04ed7de0adcbcd7b4d6c2685e8ac23ca83273972815953",
+        "c59d6bc0171a6ef52edd6c5c871de91b72927cc9b82026a1960d132930dcff31",
+        "c0b3c771543d64b9a104f7010dce34008b38709c2ff2320f511207f56d538020"
+      ],
+      "batch_watermarks": [
+        20380,
+        20382,
+        20384,
+        20386,
+        20388,
+        20390,
+        20392,
+        20394,
+        20396,
+        20398,
+        20400,
+        20402,
+        20404,
+        20406,
+        20408,
+        20410,
+        20412,
+        20414,
+        20416,
+        20418,
+        20420,
+        20422,
+        20424,
+        20426,
+        20428,
+        20430
+      ],
+      "boundary_rejections": {
+        "chain": true,
+        "handoff_count": true,
+        "order": true,
+        "overlap": true,
+        "prior": true,
+        "replay": true,
+        "terminal": true
+      },
+      "cache_epochs": [
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362
+      ],
+      "cache_epochs_pairwise_disjoint": true,
+      "commit_chain_bound": true,
+      "event_count": 44,
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "handoff_sha256": [
+        "457e2d383f19c0dcdf315983dfdeca36ca7060a8982a54693f5e94af22f4d46e",
+        "c4f42628018bf197e340e265829423faed4e15ab3ea60049ecc235515c934fe4",
+        "7e40bc40d9d9934e953ef4d268f9722c69f35bd8d0d2c4fbeb53033898cf52f1",
+        "ec199e710c484d0d81fc49927e258fb73149d72d9c86488b757ab580181d5cee",
+        "e03967eab6ef2c67b4f475030b60d19c391464c87b313bd5e6047f7f5f312706",
+        "da1e84b9adea105697224f49f4d064324e50d3a8e4d80907609133820a54124d",
+        "ea0ea28ee7403f9e6d03bcdd66df58b6e4cd009e10e4dedf4998c78f731c4551",
+        "77c4bc5c89ce07976d0bb9f423af35ea9ce80e7be1842c2bc8d1fbac036c025c",
+        "68c88b4a0e77c4c060ee1618f97c131b45a3b668c31eae298d510afdb9659e94",
+        "914a52b860ac184ebadc0a0e2eea148d47a359e45c0222cb4eda0c04fd04994b",
+        "aa63e2b8bac5405728ecc07c8fe488a6e1f65cfca6a489cba6c0dd08b7c7d40a",
+        "46188d10ce64d0c6a8dc79065742112193cd195cec9ee96ca5e94098994c8386",
+        "5cbf70d10e8c1fe7ad3f3f75c4bbe212cce2143c42de4e9d3c29f0833db97c94",
+        "e4fd2e796575ac34e20177080c1d9525bb22551ae56376e722bb5fd5f60c3af5",
+        "05755cf405a3a4af2c8e0e0ad5b140331aecd10e0359a892779ac393952f7608",
+        "e6f7f7d0a236f92da9121c1edda6fac56a8dbc84026c071911178b8f712c96c6",
+        "7d8acc94d0fda924c997f04f013a04d47d60638ae30a9f034611a429cadc6207",
+        "34813e79a605912d960c37db5e30c137703268b722f21e3148fe791bc7c6ebbb",
+        "4ef09d6156a5fe72bd0f2cef7a5cec907b968fb5d4b482cf2de7bdf919b0584e",
+        "7a430b817a55af753b2c9d6b8b09266a488173e86067dbcf236dbd409d8ec01e",
+        "c6009e9c7866c6a11d91c8cc9c235bb0a34abe7fee612069cf1cc47f3178c5d1",
+        "32fd470ee3558fc3f7519581344eeff56c653fa196e73b1383dbdb491831432c",
+        "1b6c90b578c3121b666ce49ca8752201fe71fd4a8e880be866bca9655014a381",
+        "7be742003d097cd5591aaabef199a52355457e7270081c7d48b4c04f7364c2e9",
+        "6e09532e3ef30d29832ce8b482a95d29e824c9d183531be79b161b82dc363ed9"
+      ],
+      "initial_watermark": 20378,
+      "physical_sample": null,
+      "signature_kind": "SYNTHETIC_HASH_FIXTURE_NOT_CRYPTOGRAPHIC_SIGNATURE",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_sha256": "44015a70a5220235ec8e922d895d11dff9a72d089a68d3f59e921d2e8f4f211c"
+    },
+    "F": {
+      "all_parenthesizations_equal": true,
+      "binding_mutation_rejections": {
+        "composition": true,
+        "dimension": true,
+        "inverse": true,
+        "permutation": true,
+        "source": true
+      },
+      "binding_sha256": "8715bb767aa73c9cea1df0c621e96b34d30a4bbabccdd9b76c65054b5f83e013",
+      "commercial_interpretation": null,
+      "components": 48,
+      "composition_matches_sequential_intervals": true,
+      "composition_matches_sequential_matrices": true,
+      "evidence_class": "MODEL_ONLY",
+      "invalid_outputs_null": true,
+      "inverse_map_valid": true,
+      "parenthesization_count": 30,
+      "permutation_count": 30,
+      "recovers_intervals": true,
+      "recovers_matrices": true,
+      "sparse_nonzero_count": 144,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "FND/EQN": {
+      "all_tree_shapes_match": true,
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "exact_first_derivative": [
+        200120949,
+        20
+      ],
+      "exact_second_derivative": [
+        0,
+        1
+      ],
+      "independent_first_derivative_valid": true,
+      "independent_second_derivative_valid": true,
+      "map_count": 41,
+      "negative_controls": {
+        "prior": true,
+        "second": true,
+        "slope": true,
+        "source": true
+      },
+      "new_law_claim": null,
+      "source_binding_sha256": "9cb55713c6cf4908bde1b38378c1ab0492f82c7de20e47517c889e4945e38850",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "terminal_unit": "u41",
+      "tree_shape_count": 29
+    },
+    "G": {
+      "calibration": null,
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "matrix_product_count": 707,
+      "seven_stage_certificate_sha256": "e09c1e3db4460de80fbf1376deea9d0ffafa37f9610c92b7542d3d83b8427def",
+      "seven_stage_determinant_left": [
+        -1520987,
+        2112
+      ],
+      "seven_stage_determinant_right": [
+        -1520987,
+        2112
+      ],
+      "seven_stage_determinant_valid": true,
+      "seven_stage_direct_matrix_equal": true,
+      "seven_stage_matches_prior_certificate": true,
+      "seven_stage_residual": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "seven_stage_solution": [
+        [
+          8,
+          65
+        ],
+        [
+          -20,
+          79
+        ],
+        [
+          396,
+          1481
+        ]
+      ],
+      "seven_stage_solve_valid": true,
+      "stage_order_mutation_rejected": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transform_count": 35
+    },
+    "H": {
+      "capital_decision": null,
+      "counts_match_binomial": true,
+      "deletion_grid_counts": {
+        "1": 48,
+        "10": 6540715896,
+        "11": 22595200368,
+        "12": 69668534468,
+        "13": 192928249296,
+        "14": 482320623240,
+        "15": 1093260079344,
+        "16": 2254848913647,
+        "17": 4244421484512,
+        "18": 7309837001104,
+        "19": 11541847896480,
+        "2": 1128,
+        "20": 16735679449896,
+        "21": 22314239266528,
+        "22": 27385657281648,
+        "23": 30957699535776,
+        "24": 32247603683100,
+        "25": 30957699535776,
+        "26": 27385657281648,
+        "27": 22314239266528,
+        "28": 16735679449896,
+        "29": 11541847896480,
+        "3": 17296,
+        "30": 7309837001104,
+        "31": 4244421484512,
+        "32": 2254848913647,
+        "33": 1093260079344,
+        "34": 482320623240,
+        "35": 192928249296,
+        "36": 69668534468,
+        "37": 22595200368,
+        "38": 6540715896,
+        "39": 1677106640,
+        "4": 194580,
+        "40": 377348994,
+        "5": 1712304,
+        "6": 12271512,
+        "7": 73629072,
+        "8": 377348994,
+        "9": 1677106640
+      },
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "full_grid_size": 1488,
+      "independent_grid_counts": {
+        "1": 48,
+        "10": 6540715896,
+        "11": 22595200368,
+        "12": 69668534468,
+        "13": 192928249296,
+        "14": 482320623240,
+        "15": 1093260079344,
+        "16": 2254848913647,
+        "17": 4244421484512,
+        "18": 7309837001104,
+        "19": 11541847896480,
+        "2": 1128,
+        "20": 16735679449896,
+        "21": 22314239266528,
+        "22": 27385657281648,
+        "23": 30957699535776,
+        "24": 32247603683100,
+        "25": 30957699535776,
+        "26": 27385657281648,
+        "27": 22314239266528,
+        "28": 16735679449896,
+        "29": 11541847896480,
+        "3": 17296,
+        "30": 7309837001104,
+        "31": 4244421484512,
+        "32": 2254848913647,
+        "33": 1093260079344,
+        "34": 482320623240,
+        "35": 192928249296,
+        "36": 69668534468,
+        "37": 22595200368,
+        "38": 6540715896,
+        "39": 1677106640,
+        "4": 194580,
+        "40": 377348994,
+        "5": 1712304,
+        "6": 12271512,
+        "7": 73629072,
+        "8": 377348994,
+        "9": 1677106640
+      },
+      "prior_leave_thirty_nine_valid": true,
+      "probability_claim": null,
+      "scenario_count": 48,
+      "status": "BLOCKED_WITH_PROGRESS"
+    },
+    "QOS/QSVT": {
+      "all_inclusion_proofs_valid": true,
+      "antichain_width": 4,
+      "basis_states_checked": 64,
+      "critical_path_recomputed": true,
+      "dependency_dag_valid": true,
+      "distinct_outputs": 64,
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "extension_proof_valid": true,
+      "hardware": null,
+      "inverse_pair_names": [
+        "add-01",
+        "xor-03",
+        "rotl-01",
+        "add-05",
+        "xor-12",
+        "rotl-02",
+        "add-07",
+        "xor-21",
+        "rotl-03",
+        "add-09",
+        "xor-42",
+        "rotl-04",
+        "add-11",
+        "xor-33",
+        "rotl-05",
+        "xor-17",
+        "xor-29",
+        "xor-43",
+        "xor-53",
+        "xor-61",
+        "xor-62",
+        "xor-63",
+        "add-17",
+        "add-19",
+        "add-21",
+        "add-23",
+        "add-25",
+        "add-27",
+        "add-29",
+        "add-30",
+        "add-31",
+        "add-32",
+        "add-33",
+        "add-34",
+        "add-35",
+        "add-36",
+        "add-37",
+        "add-38",
+        "add-39",
+        "add-40",
+        "add-41",
+        "add-42"
+      ],
+      "level_schedule": [
+        {
+          "gates": 15,
+          "level": 0,
+          "nodes": [
+            0,
+            1
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 1,
+          "nodes": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "gates": 32,
+          "level": 2,
+          "nodes": [
+            6,
+            7
+          ]
+        },
+        {
+          "gates": 88,
+          "level": 3,
+          "nodes": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gates": 56,
+          "level": 4,
+          "nodes": [
+            12,
+            13
+          ]
+        },
+        {
+          "gates": 31,
+          "level": 5,
+          "nodes": [
+            14
+          ]
+        },
+        {
+          "gates": 33,
+          "level": 6,
+          "nodes": [
+            15
+          ]
+        },
+        {
+          "gates": 35,
+          "level": 7,
+          "nodes": [
+            16
+          ]
+        },
+        {
+          "gates": 37,
+          "level": 8,
+          "nodes": [
+            17
+          ]
+        },
+        {
+          "gates": 39,
+          "level": 9,
+          "nodes": [
+            18
+          ]
+        },
+        {
+          "gates": 41,
+          "level": 10,
+          "nodes": [
+            19
+          ]
+        },
+        {
+          "gates": 43,
+          "level": 11,
+          "nodes": [
+            20
+          ]
+        },
+        {
+          "gates": 45,
+          "level": 12,
+          "nodes": [
+            21
+          ]
+        },
+        {
+          "gates": 47,
+          "level": 13,
+          "nodes": [
+            22
+          ]
+        },
+        {
+          "gates": 49,
+          "level": 14,
+          "nodes": [
+            23
+          ]
+        },
+        {
+          "gates": 51,
+          "level": 15,
+          "nodes": [
+            24
+          ]
+        },
+        {
+          "gates": 53,
+          "level": 16,
+          "nodes": [
+            25
+          ]
+        },
+        {
+          "gates": 55,
+          "level": 17,
+          "nodes": [
+            26
+          ]
+        },
+        {
+          "gates": 57,
+          "level": 18,
+          "nodes": [
+            27
+          ]
+        },
+        {
+          "gates": 59,
+          "level": 19,
+          "nodes": [
+            28
+          ]
+        },
+        {
+          "gates": 61,
+          "level": 20,
+          "nodes": [
+            29
+          ]
+        },
+        {
+          "gates": 63,
+          "level": 21,
+          "nodes": [
+            30
+          ]
+        },
+        {
+          "gates": 65,
+          "level": 22,
+          "nodes": [
+            31
+          ]
+        },
+        {
+          "gates": 67,
+          "level": 23,
+          "nodes": [
+            32
+          ]
+        },
+        {
+          "gates": 69,
+          "level": 24,
+          "nodes": [
+            33
+          ]
+        },
+        {
+          "gates": 71,
+          "level": 25,
+          "nodes": [
+            34
+          ]
+        },
+        {
+          "gates": 73,
+          "level": 26,
+          "nodes": [
+            35
+          ]
+        },
+        {
+          "gates": 79,
+          "level": 27,
+          "nodes": [
+            36
+          ]
+        },
+        {
+          "gates": 83,
+          "level": 28,
+          "nodes": [
+            37
+          ]
+        },
+        {
+          "gates": 89,
+          "level": 29,
+          "nodes": [
+            38
+          ]
+        },
+        {
+          "gates": 97,
+          "level": 30,
+          "nodes": [
+            39
+          ]
+        },
+        {
+          "gates": 107,
+          "level": 31,
+          "nodes": [
+            40
+          ]
+        },
+        {
+          "gates": 119,
+          "level": 32,
+          "nodes": [
+            41
+          ]
+        }
+      ],
+      "level_schedule_valid": true,
+      "mutation_rejections": {
+        "critical": true,
+        "critical_path": true,
+        "critical_v56": true,
+        "critical_v57": true,
+        "critical_v58": true,
+        "critical_v59": true,
+        "critical_v60": true,
+        "critical_v61": true,
+        "critical_v62": true,
+        "critical_v63": true,
+        "critical_v64": true,
+        "dag": true,
+        "extension": true,
+        "extension_proof": true,
+        "extension_v56": true,
+        "extension_v57": true,
+        "extension_v58": true,
+        "extension_v59": true,
+        "extension_v60": true,
+        "extension_v61": true,
+        "extension_v62": true,
+        "extension_v63": true,
+        "extension_v64": true,
+        "level": true,
+        "proof": true,
+        "resource": true,
+        "serial": true,
+        "serial_v56": true,
+        "serial_v57": true,
+        "serial_v58": true,
+        "serial_v59": true,
+        "serial_v60": true,
+        "serial_v61": true,
+        "serial_v62": true,
+        "serial_v63": true,
+        "serial_v64": true,
+        "slack": true,
+        "width": true,
+        "width_recomputed": true,
+        "work": true,
+        "work_v56": true,
+        "work_v57": true,
+        "work_v58": true,
+        "work_v59": true,
+        "work_v60": true,
+        "work_v61": true,
+        "work_v62": true,
+        "work_v63": true,
+        "work_v64": true
+      },
+      "parallel_bounds_are_model_only": true,
+      "proof_count": 42,
+      "residual": 0,
+      "resource_bound": {
+        "antichain_width": 4,
+        "dag_critical_depth": 689,
+        "gates": 1954,
+        "level_count": 33,
+        "level_width": 4,
+        "max_qubits": 6,
+        "serial_depth": 1108,
+        "unconstrained_parallel_lower_bound": 43
+      },
+      "resource_merkle_root_sha256": "d4865cef9e95d291880fe0058d9799fd70873950204cb14cf14c39384e16445f",
+      "schedule_slack": 0,
+      "scheduled_depth": 689,
+      "slack_certificate_valid": true,
+      "status": "BLOCKED_WITH_PROGRESS",
+      "width_recomputed": true,
+      "work_conservation": true
+    },
+    "SCM": {
+      "all_controls_match": true,
+      "certificate_intersection_size": 33,
+      "control_table": {
+        "audience": true,
+        "chain_mutation": true,
+        "downgrade": true,
+        "eighteenth_transition": true,
+        "eighth_transition": true,
+        "eleventh_transition": true,
+        "fifteenth_transition": true,
+        "fifth_transition": true,
+        "fork": true,
+        "formula": true,
+        "formula_v50": true,
+        "formula_v51": true,
+        "formula_v52": true,
+        "formula_v53": true,
+        "formula_v54": true,
+        "formula_v55": true,
+        "formula_v56": true,
+        "formula_v57": true,
+        "formula_v58": true,
+        "formula_v59": true,
+        "formula_v60": true,
+        "formula_v61": true,
+        "formula_v62": true,
+        "formula_v63": true,
+        "formula_v64": true,
+        "fourteenth_transition": true,
+        "fourth_transition": true,
+        "intersection": true,
+        "intersection_v50": true,
+        "intersection_v51": true,
+        "intersection_v52": true,
+        "intersection_v53": true,
+        "intersection_v54": true,
+        "intersection_v55": true,
+        "intersection_v56": true,
+        "intersection_v57": true,
+        "intersection_v58": true,
+        "intersection_v59": true,
+        "intersection_v60": true,
+        "intersection_v61": true,
+        "intersection_v62": true,
+        "intersection_v63": true,
+        "intersection_v64": true,
+        "membership_hash": true,
+        "minimum_intersection_formula": true,
+        "missing_member": true,
+        "mutation": true,
+        "mutation_v50": true,
+        "mutation_v51": true,
+        "mutation_v52": true,
+        "mutation_v53": true,
+        "mutation_v54": true,
+        "mutation_v55": true,
+        "mutation_v56": true,
+        "mutation_v57": true,
+        "mutation_v58": true,
+        "mutation_v59": true,
+        "mutation_v60": true,
+        "mutation_v61": true,
+        "mutation_v62": true,
+        "mutation_v63": true,
+        "mutation_v64": true,
+        "nineteenth_transition": true,
+        "ninth_transition": true,
+        "quorum_intersection": true,
+        "replay": true,
+        "revocation": true,
+        "seventeenth_transition": true,
+        "seventh_transition": true,
+        "sixteenth_transition": true,
+        "sixth_transition": true,
+        "split": true,
+        "stale": true,
+        "tenth_transition": true,
+        "thirteenth_transition": true,
+        "transition_chain": true,
+        "twelfth_transition": true,
+        "twentieth_transition": true,
+        "twenty_eighth_transition": true,
+        "twenty_fifth_transition": true,
+        "twenty_first_transition": true,
+        "twenty_fourth_transition": true,
+        "twenty_ninth_transition": true,
+        "twenty_second_transition": true,
+        "twenty_seventh_transition": true,
+        "twenty_sixth_transition": true,
+        "twenty_third_transition": true,
+        "valid": true
+      },
+      "empirical_coupling": null,
+      "evidence_class": "FICTION_ONLY",
+      "membership_epoch": 476,
+      "minimum_quorum_intersection": 33,
+      "observer_count": 37,
+      "quorum": 35,
+      "sort": "Fiction",
+      "status": "BLOCKED_WITH_PROGRESS",
+      "transition_chain_sha256": "ef000e4a54877ace77429ffecda7754db936bf0811a6862e0d6c47c0758e6391",
+      "transition_count": 29
+    }
+  },
+  "nonclaims": [
+    "No measured performance, commercial result, physical-law discovery or empirical SCM result."
+  ],
+  "payload_sha256": "a5c44a6eaf80a86b70386f6209460164edb539c06a0cc5b696af5bdda4b98cdb",
+  "preregistration_commit_sha": "76d9876cf27eef889bda81fa57b7929ed1af1c65",
+  "schema": "uqpu-cycle064-delta01-executable-acceptance-v1",
+  "source_evidence": [
+    {
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION",
+      "source_date": "2022-11-01",
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT"
+    },
+    {
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace"
+    },
+    {
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION",
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync"
+    }
+  ],
+  "source_identity": {
+    "focused_tests_git_blob_sha": "f3ea518d3f4873e7045a68188c4681cb9c10e197",
+    "focused_tests_sha256": "e63cbe5f5120cef0350422bf86979cd1ba982aef4a64e6d5ccaa11cd874b404f",
+    "implementation_git_blob_sha": "3e17adc3392bf55f320a26306d65f6c5489d6f1e",
+    "implementation_sha256": "803904ce155cb951fb12e2f51c6805d4c5b7b85df98f8bec3f598c514747bfac",
+    "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+    "preregistered_gates_git_blob_sha": "b0fa119e521d6bc4ee0630b596f8538df1f03c91",
+    "preregistered_gates_sha256": "c72e3ad5467d4fbd9755188dbfbb745cbc51c4782fa73c232f4eb9859212fc85",
+    "runner_sha256": "f182fc50ee7170da607c3b12a0c46a858ab10d6719bb0390e1bfab75895abc4c",
+    "typed_source_sha256": "95c647aa177af88336541948b99b6d65ca297bbae1f2aeee616a5186f4c0dd78"
+  },
+  "status": "PASS_LOCAL_FIXTURES_EXTERNAL_GATES_OPEN",
+  "uncertainty": [
+    "External provider, hardware, durability, interoperability, custody, calibration, decision, economics, lineage and equivalence gates remain open."
+  ],
+  "validation": {
+    "acceptance_runner": "PASS",
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 13,
+    "py_compile": "PASS"
+  }
+}
