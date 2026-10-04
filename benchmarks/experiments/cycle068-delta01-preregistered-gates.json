@@ -1,0 +1,110 @@
+{
+  "schema": "uqpu-cycle068-delta01-preregistered-gates-v1",
+  "cycle": "068",
+  "delta": "01",
+  "date": "2026-10-04",
+  "branch": "research/cycle-068-delta-01-2026-10-04",
+  "portfolio": "docs/PARALLEL_RESEARCH_PORTFOLIO_2026-09-28.md",
+  "portfolio_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+  "work_item_contract": {
+    "status": "BLOCKED_WITH_PROGRESS",
+    "unmeasured_values": null,
+    "fiction_empirical_cast": "prohibited",
+    "lane_count": 12,
+    "no_update_status": "prohibited"
+  },
+  "lanes": {
+    "A": {
+      "action": "Forty-eighth weighted graph fixture with length-twenty-three quotient walks and a thirtieth canonical reconstruction.",
+      "acceptance": "Independent recurrence and matrix power agree for every length-twenty-three multiplicity; all thirty labels agree; scaling remains null."
+    },
+    "B": {
+      "action": "Schema v32 to v33 migration with a twenty-two-checkpoint seal chain and rollback/fork/replay controls.",
+      "acceptance": "Checkpoint ancestry, order, version, path, replay, fork and rollback mutations reject; provider evidence remains null."
+    },
+    "C": {
+      "action": "Forty-two readers, thirty-eight replacement stages and ordered recovery of twenty-eight generation journals.",
+      "acceptance": "Deterministic-barrier reads, checksum/fsync/marker order and twenty-eight-journal recovery pass; failure controls reject without durability promotion."
+    },
+    "D": {
+      "action": "ZIP64 twenty-three-volume fifteen-envelope directory and terminal binding.",
+      "acceptance": "Synthetic twenty-three-volume chain and fifteen nested envelopes pass parity and mutation controls; real producer corpus remains open."
+    },
+    "E": {
+      "action": "Forty-eighth issuer with thirty batch commits and twenty-nine cache handoffs.",
+      "acceptance": "Thirty monotone commits, twenty-nine linked handoffs and disjoint caches pass; physical sample remains null."
+    },
+    "F": {
+      "action": "Fifty-two components and thirty-four permutation parenthesizations.",
+      "acceptance": "All groupings, sequential paths and inverse proofs agree; economics remain null."
+    },
+    "G": {
+      "action": "Thirty-nine transforms with an exact eleven-stage rational update certificate.",
+      "acceptance": "Eleven update orders equal the direct certificate with exact zero residual; calibration remains null."
+    },
+    "H": {
+      "action": "Fifty-two scenarios with leave-one through leave-forty-four exact dynamic programming.",
+      "acceptance": "Exact subset totals equal binomial coefficients; probability and capital remain null."
+    },
+    "FND/EQN": {
+      "action": "Forty-five unit maps across thirty-three tree shapes with derivative certificates.",
+      "acceptance": "All trees and independent first and second derivatives agree; controls reject."
+    },
+    "SCM": {
+      "action": "Forty-one observers, quorum thirty-nine, minimum intersection thirty-seven and thirty-three transitions.",
+      "acceptance": "Exact quorum intersection and chain controls pass; empirical coupling remains null."
+    },
+    "AI-COST": {
+      "action": "Manifest v58 with a twenty-eight-leaf update multiproof.",
+      "acceptance": "Multiproof reconstructs both roots and independent full-tree recomputation agrees; mutations reject."
+    },
+    "QOS/QSVT": {
+      "action": "Forty-six inverse pairs with recomputed resource certificates.",
+      "acceptance": "Basis reconstruction, extension, work, path, width and slack controls pass; hardware evidence remains null."
+    }
+  },
+  "primary_sources": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    },
+    {
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync",
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "All inputs are bounded fixtures or models.",
+    "Injected recovery cases do not establish crash or power-loss durability.",
+    "Custody hashes are synthetic and are not signatures.",
+    "SCM remains fiction-only."
+  ],
+  "uncertainty": [
+    "Provider, hardware, durability, interoperability, custody, calibration, decision, economics, lineage and equivalence gates remain open."
+  ],
+  "nonclaims": [
+    "No measured performance, scaling or quantum advantage.",
+    "No provider invoice, commercial result or capital decision.",
+    "No crash durability, signature, calibration, physical sample, new law, AI equivalence or empirical SCM result."
+  ],
+  "next_falsifiable_gate": "Implement all twelve bounded packets, publish source-hashed acceptance evidence, run focused and selected regression tests, and verify exact-SHA GitHub Actions.",
+  "base_cycle067_closeout_sha": "2b1ed9f2342a6c31ae2f4ed297230bae227580c7",
+  "cycle067_code_evidence_sha": "1d2564ec101c662b66435cfe290d92ae0b9f0b7b",
+  "cycle067_actions": {
+    "run_id": 37173315521,
+    "jobs_passed": 8,
+    "jobs_failed": 0,
+    "status": "PASS"
+  }
+}
