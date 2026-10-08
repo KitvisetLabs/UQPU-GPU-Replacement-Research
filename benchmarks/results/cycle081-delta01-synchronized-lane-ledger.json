@@ -1,0 +1,172 @@
+{
+  "schema": "uqpu-synchronized-cycle-ledger-v1",
+  "cycle": "081",
+  "delta": "01",
+  "date": "2026-10-08",
+  "status": "CLOSED_LOCAL_AND_CI_ACCEPTANCE_EXTERNAL_GATES_OPEN",
+  "branch": "research/cycle-081-delta-01-2026-10-08",
+  "base_closeout_commit": "acfb3a2be38187276f2c061fa2362b47cedcdff2",
+  "preregistration_commit": "0379b4d63653456db449c194521528761ebc8366",
+  "implementation_commit": "33e345e7c430f02220e380a8286d8692e49482a4",
+  "focused_tests_commit": "d4f56cf19179b3a39d83bb481ee1d8bce216b34a",
+  "code_evidence_commit": "b044d21264f2d81dbdb616d2f52d30c500115ca4",
+  "acceptance_artifact_commit": "f4fa1d6406723f0dffee5c87be9f7cadcae36897",
+  "lane_count": 12,
+  "all_lane_acceptance_passed": true,
+  "all_lane_external_gates_closed": false,
+  "full_cycle_closeout_pending": false,
+  "lanes": {
+    "A": {
+      "delta": "Sixty-first fixture length-thirty-six quotient-walk recurrence, total 15,471,634,836,552,561,850,075,578,368, and forty-third canonical certificate.",
+      "acceptance": "PASS",
+      "evidence_class": "LOCAL_EXACT_CLASSICAL_FIXTURE",
+      "remaining_dependency": "No scaling or hardware evidence."
+    },
+    "B": {
+      "delta": "v46 thirty-five-checkpoint seal chain with 223 replay, fork, rollback and mutation controls.",
+      "acceptance": "PASS",
+      "evidence_class": "SYNTHETIC_RECEIPT_CANONICALIZATION",
+      "remaining_dependency": "No provider evidence."
+    },
+    "C": {
+      "delta": "55 deterministic-barrier readers, 51 replacements, forty-one-journal recovery and 92 fsynced complete markers.",
+      "acceptance": "PASS",
+      "evidence_class": "LOCAL_FIFTY_FIVE_READER_FORTY_ONE_RECOVERY_FIXTURE",
+      "remaining_dependency": "No crash or power-loss measurement."
+    },
+    "D": {
+      "delta": "ZIP64 thirty-six-volume directory/terminal/twenty-eight-envelope binding, 35 segments and 1,146,880-byte synthetic directory span.",
+      "acceptance": "PASS",
+      "evidence_class": "SYNTHETIC_ZIP64_EXTENSIBLE_SECTOR_CORPUS",
+      "remaining_dependency": "No real producer corpus."
+    },
+    "E": {
+      "delta": "61-event custody chain, forty-three commits and forty-two handoffs.",
+      "acceptance": "PASS",
+      "evidence_class": "SYNTHETIC_CUSTODY",
+      "remaining_dependency": "No signature or physical sample."
+    },
+    "F": {
+      "delta": "65-component composition across forty-seven permutations and parenthesizations with 195 synthetic sparse nonzeros.",
+      "acceptance": "PASS",
+      "evidence_class": "MODEL_ONLY",
+      "remaining_dependency": "No commercial measurement."
+    },
+    "G": {
+      "delta": "Exact twenty-four-stage rational update certificate matching 1,459 ordered matrix products and direct solve; determinant -4232268837486355492262285951885221/5116459515267167863097702400000.",
+      "acceptance": "PASS",
+      "evidence_class": "SYNTHETIC_TYPED_COVARIANCE",
+      "remaining_dependency": "No calibration."
+    },
+    "H": {
+      "delta": "65-scenario leave-through-57 dynamic program over a 2,210-cell bounded grid with binomial totals.",
+      "acceptance": "PASS",
+      "evidence_class": "FINITE_ILLUSTRATIVE_SCENARIO",
+      "remaining_dependency": "No probability or capital claim."
+    },
+    "FND/EQN": {
+      "delta": "58 affine maps across forty-six trees through u58 with exact first- and second-derivative certificates.",
+      "acceptance": "PASS",
+      "evidence_class": "SOURCE_TYPED_RATIONAL_MODEL",
+      "remaining_dependency": "No physical-law claim."
+    },
+    "SCM": {
+      "delta": "54 observers, quorum 52, intersection 50 and forty-six fiction-only transitions through epoch 1139.",
+      "acceptance": "PASS",
+      "evidence_class": "FICTION_ONLY",
+      "remaining_dependency": "No empirical coupling."
+    },
+    "AI-COST": {
+      "delta": "Manifest v71 forty-one-leaf multiproof over a 64-leaf tree with four frontier nodes and independent roots.",
+      "acceptance": "PASS",
+      "evidence_class": "SYNTHETIC_DATA_LINEAGE",
+      "remaining_dependency": "No equivalence result."
+    },
+    "QOS/QSVT": {
+      "delta": "59 inverse pairs with 6,119-gate, critical-depth-1,726, serial-depth-2,145, width-4 and zero-slack certificates.",
+      "acceptance": "PASS",
+      "evidence_class": "SYNTHETIC_INVERSE_OPERATOR",
+      "remaining_dependency": "No hardware execution."
+    }
+  },
+  "validation": {
+    "local": {
+      "focused_cycle_tests": {
+        "passed": 13,
+        "failed": 0,
+        "consecutive_runs": 2
+      },
+      "py_compile": "PASS",
+      "twelve_lane_acceptance_runner": "PASS_LOCAL",
+      "artifact_file_sha256": "282a130823ca9df72a4765f980d10e964c936de2f8f709d0070e995928814c47",
+      "selected_regression_cycles_018_020_024_through_081": {
+        "passed": 780,
+        "failed": 0,
+        "duration_seconds": 439.538
+      }
+    },
+    "cross_cycle_invariant": {
+      "complete_marker_barrier_repair_preserved": true,
+      "deterministic_reader_barrier_preserved": true,
+      "regression_result": "PASS_780_OF_780"
+    },
+    "executable_acceptance_artifact": {
+      "path": "benchmarks/results/cycle081-delta01-executable-acceptance.json",
+      "git_blob_sha": "8d0e3065f082bb27a3a414915b95d75ddee1f8e1",
+      "payload_sha256": "1d91586dc85c364e445dcd74193a7dfea218e2bd32576ac218d4c9b8d3c1f220"
+    },
+    "source_identity": {
+      "preregistered_gates_git_blob_sha": "7a9019cb048bfa68898c921fc69da0aeb463a420",
+      "portfolio_git_blob_sha": "27a8da9b68c6e896c67b38e9e6a49525c181dc73",
+      "implementation_git_blob_sha": "c98d6fad98d55da400006ec940affc7ddf77f6d8",
+      "focused_tests_git_blob_sha": "e893a56c41e9b83db84200bc78993d091943d11d",
+      "runner_git_blob_sha": "394c693635be80b7a997eaa6f0758eabeb913052",
+      "runner_sha256": "482e9228c6f5c464271dada66759c4fc02d389df897e0a997571bad6b7828376"
+    },
+    "github_actions": {
+      "commit": "b044d21264f2d81dbdb616d2f52d30c500115ca4",
+      "run_id": 37726161902,
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "jobs_passed": 8,
+      "jobs_failed": 0,
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/37726161902"
+    },
+    "primary_source_review": "benchmarks/experiments/cycle081-delta01-preregistered-gates.json"
+  },
+  "source_evidence": [
+    {
+      "title": "PKWARE APPNOTE v6.3.10 FINAL",
+      "url": "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+      "source_date": "2022-11-01",
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_FORMAT_SPECIFICATION"
+    },
+    {
+      "title": "Python os.replace documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.replace",
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    },
+    {
+      "title": "Python os.fsync documentation",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync",
+      "access_date": "2026-10-04",
+      "evidence_class": "PRIMARY_RUNTIME_DOCUMENTATION"
+    }
+  ],
+  "assumptions": [
+    "Bounded fixtures and models only.",
+    "Recovery is protocol evidence only.",
+    "Custody hashes are synthetic.",
+    "SCM is fiction-only."
+  ],
+  "uncertainty": [
+    "External provider, hardware, durability, interoperability, custody, calibration, decision, economics, lineage and equivalence gates remain open."
+  ],
+  "nonclaims": [
+    "No measured performance, commercial result, physical-law discovery or empirical SCM result."
+  ],
+  "next_falsifiable_gate": "Start Cycle 082 only from verified Cycle 081 closeout."
+}
