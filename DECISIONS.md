@@ -517,3 +517,11 @@ objects that are not physical quantities.
 **Decision:** Accept a primary-source archive range only when HTTP status is 206, the returned `Content-Range` exactly matches the requested byte interval and total size, and the bounded body length is exact. Keep publisher checksum metadata distinct from a locally recomputed whole-file digest.
 
 **Reason:** The Cycle 007 Zenodo check verified a 65,557-byte ZIP tail and a 4,096-byte README range with a matching local/central CRC, while the archive is 145,469,232 bytes. Those observations support the bounded metadata/readme claim but do not prove the publisher MD5 for every archive byte.
+
+## 2026-10-15 — D105: Passing a schema gate is not passing an evidence gate
+
+Cycle 008's twelve validators can prove that a synthetic record is internally complete and that declared negative mutations fail. They cannot create provider execution, physical measurements, commercial economics, a new physical law or owner authorization. Every integrated artifact must state this boundary and keep provider submission, capital and real-world SCM coupling fail-closed.
+
+## 2026-10-15 — D106: Separate equation generation, identifiability and untouched evaluation
+
+Equation discovery must version the generator/harness separately from the candidate, use distinct fit/selection/test commitments, and compute identifiability or exhaustion with deterministic mathematics outside the language model. A test set may score the frozen candidate but may not select it. A lower bound transfers only when the project's workload satisfies the theorem's explicit model and assumptions.

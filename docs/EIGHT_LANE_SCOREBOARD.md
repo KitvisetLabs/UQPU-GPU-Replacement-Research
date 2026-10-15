@@ -264,3 +264,18 @@ FND-001–006, EQN-001–006 and INV-029–035 remain active. No real-QPU execut
 Data-Center-to-Phone compression, memory replacement, commercial material/fuel/
 fusion result, WACC reduction, new physical law, quantum advantage, >=100x or
 100,000,000x replacement is demonstrated.
+
+## Synchronized Cycle 008 Delta 02 — 2026-10-15
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | complete/objective/runtime/state-count solver schema | SYNTHETIC TEST | measured competitive frozen fixtures |
+| B | request/receipt/idempotency hash-chain gate | DRY_RUN_ONLY | authorized receipt/target/bill |
+| C | platform/filesystem/process labels; no invented cold cache | LOCAL SCHEMA TEST | controlled cache/flush/power-loss evidence |
+| D | download decision separated from checksum verification | PROVENANCE GATE | guarded full payload checksum/analysis |
+| E | lot/control/function/unit/calibration/uncertainty record | SYNTHETIC TEST | qualified physical measurement |
+| F | currency interval and accepted-output provenance | SYNTHETIC TEST | real lifecycle cost ledger |
+| G | scoped, dated, independent calibration certificate gate | SYNTHETIC TEST | operational metrology certificate |
+| H | sensitivity-ranked decisive gates; null capital | STRATEGIC MODEL | owner decision after evidence/budget |
+
+FND/EQN now rejects missing/mismatched exact dimension vectors; SCM remains fictional and non-human; AI-COST rejects leakage/incomplete accounting; QOS/QSVT rejects semantic mismatch and provider-evidence mixing. All remain blocked from real-world promotion. The full local suite passed 470 tests with 8 optional-environment skips.

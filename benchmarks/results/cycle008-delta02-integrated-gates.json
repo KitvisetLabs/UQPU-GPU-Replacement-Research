@@ -1,0 +1,29 @@
+{
+  "schema": "uqpu-cycle008-delta02-integrated-gates-v1",
+  "date": "2026-10-15",
+  "evidence_class": "SYNTHETIC_SCHEMA_AND_NEGATIVE_TEST_EVIDENCE",
+  "lane_count": 12,
+  "lanes": {
+    "A": {"passing": true, "errors": []},
+    "B": {"passing": true, "errors": []},
+    "C": {"passing": true, "errors": []},
+    "D": {"passing": true, "errors": []},
+    "E": {"passing": true, "errors": []},
+    "F": {"passing": true, "errors": []},
+    "G": {"passing": true, "errors": []},
+    "H": {"passing": true, "errors": []},
+    "FND/EQN": {"passing": true, "errors": []},
+    "SCM": {"passing": true, "errors": []},
+    "AI-COST": {"passing": true, "errors": []},
+    "QOS/QSVT": {"passing": true, "errors": []}
+  },
+  "all_synthetic_gates_pass": true,
+  "capital_amount": null,
+  "owner_authorization": false,
+  "provider_submission_authorized": false,
+  "nonclaims": [
+    "No real-QPU, provider, material, fuel, fusion, factory, or economic result.",
+    "No quantum advantage, GPU replacement, physical law, or Data-Center-to-Phone result.",
+    "SCM remains a fictional protocol domain with no human study or real-world coupling."
+  ]
+}

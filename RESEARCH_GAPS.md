@@ -350,3 +350,15 @@ agreement within `2e-12`, explicit circuit and reproducible resource provenance.
 **Next experiment:** QOS-AUDIT-010B5 pinned SDK reconstruction and serialization.
 **Review trigger:** independently executable circuit artifact or a documented SDK
 convention blocker.
+
+## RG-034 — Identifiability-certified equation-discovery fixture
+**Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
+**Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.
+**Current evidence:** Cycle 008 requires explicit quantity kind/unit/dimension vectors and separate train/held-out hashes. The 2026-10-15 literature watch identifies deterministic sensitivity-rank/null-space and experiment-class exhaustion as the next bounded control.
+**Missing:** frozen confounded ODE, two observation protocols, known null direction, exact split commitments, counterexample search and independently checked rank/exhaustion result.
+**Best current alternative:** keep all generated equations at `MODEL_ONLY` and reject test leakage or dimension imbalance.
+**Unlock criteria:** repository code recovers the known null direction under the non-identifiable protocol, removes it under the discriminating protocol, rejects test-set selection, and issues exhaustion only after enumerating the declared bounded design class.
+**Required tool/data:** synthetic ODE generator, deterministic automatic differentiation or verified finite differences, exact protocol manifest, fit/selection/test hashes and numerical-rank sensitivity analysis.
+**Dependencies:** FND-006, EQN-001–006, INV-035, Lane F.
+**Next experiment:** implement the two-protocol confounded-parameter fixture and perturbation/counterexample tests.
+**Review trigger:** reproducible local certificate plus exact-commit CI.
