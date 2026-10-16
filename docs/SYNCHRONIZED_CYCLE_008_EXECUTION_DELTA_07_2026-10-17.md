@@ -65,9 +65,19 @@ multivariate-QSP source is retained as `LITERATURE_ONLY`, not project evidence.
 
 - Core suite: 489 tests passed; 12 optional-dependency skips.
 - Isolated local Qiskit 2.5.2: four focused tests passed.
-- Hosted exact-commit CI: pending at this pre-publication checkpoint.
+- Hosted exact-commit pinned-Qiskit job: passed in run #735; full workflow target-noise job pending at certificate-preparation time.
 - No provider job, shot, execution ID, bill or energy measurement exists.
 
 Next: publish and require exact-commit pinned-Qiskit CI. If raw residuals pass,
 persist a provenance-bearing certificate; then verify a two-query recurrence
 against an independently assembled matrix before attempting all 81 queries.
+
+## Hosted verification checkpoint
+
+Commit `9d7e5d761fc8ddf18a0fec4a9564ce836e617e96` passed the pinned-Qiskit job in
+project run #735. Hosted residuals were `5.4646887015828417e-14` logical
+projected, `3.6424960685225636e-14` decomposed projected and
+`7.593998529073269e-14` full decomposed-vs-logical. Artifact `12072606869`
+records 1,034 CX, depth 2,390 and zero jobs/shots with null cost/energy.
+Cold-start run #11 and all eight jobs in project run #735 passed, including
+target-snapshot-noise. This is exact-commit CI and still not provider execution.

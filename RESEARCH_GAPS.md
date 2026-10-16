@@ -410,6 +410,13 @@ independently assembled matrix. Only after recurrence agreement should the full
 81-query circuit be synthesized. Never substitute count multiplication for
 end-to-end verification.
 
+**Hosted gate passed:** commit `9d7e5d761fc8ddf18a0fec4a9564ce836e617e96`,
+project run #735, Qiskit job `117173121884`. Raw logical projected, decomposed
+projected and full-operator residuals were `5.4646887015828417e-14`,
+`3.6424960685225636e-14` and `7.593998529073269e-14`. The certificate is bound
+to artifact `12072606869`; provider jobs/shots are zero and cost/energy null.
+RG-033 remains open at the two-query recurrence and full composed transform.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

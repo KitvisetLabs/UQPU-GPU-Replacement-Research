@@ -1,0 +1,62 @@
+{
+  "contract_sha256": "1c82a49d979ae5da5a58b02ebddd9512d78663fc372a76bfa7e925243c415ddf",
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.12.15"
+  },
+  "evidence_class": "SIMULATION_INDEPENDENT_SDK_ONE_QUERY_CHECK",
+  "limitations": [
+    "not a full degree-81 QSVT circuit",
+    "not proof that the frozen scalar convention transfers beyond this bounded fragment",
+    "not target-aware transpilation or provider execution",
+    "not fault-tolerant, energy, cost, advantage, or replacement evidence",
+    "Generic basis decomposition is not a backend target, schedule, calibration, or bill.",
+    "Host runtime and traced memory are CI-environment measurements only."
+  ],
+  "operator_agreement": {
+    "decomposed_projected_fragment_max_abs_residual": 3.6424960685225636e-14,
+    "decomposed_vs_logical_full_operator_max_abs_residual": 7.593998529073269e-14,
+    "projected_fragment_max_abs_residual": 5.4646887015828417e-14,
+    "tolerance": 2e-12
+  },
+  "passed": true,
+  "provenance": {
+    "commit": "9d7e5d761fc8ddf18a0fec4a9564ce836e617e96",
+    "github_actions_artifact_id": 12072606869,
+    "github_actions_job_id": 117173121884,
+    "github_actions_run_id": 38960114128,
+    "github_actions_run_number": 735,
+    "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38960114128"
+  },
+  "resources": {
+    "decomposed_depth": 2390,
+    "decomposed_operation_counts": {
+      "cx": 1034,
+      "rz": 1911,
+      "sx": 320,
+      "x": 58
+    },
+    "decomposed_size": 3323,
+    "energy_j": null,
+    "host_peak_traced_bytes": 85082614,
+    "host_runtime_ns": 67525448854,
+    "logical_block_queries": 1,
+    "logical_depth": 52,
+    "logical_projector_phases": 2,
+    "logical_qubits": 10,
+    "logical_size": 89,
+    "provider_cost": null,
+    "provider_execution_id": null,
+    "provider_jobs": 0,
+    "serialized_openqasm2_bytes": 48037,
+    "shots": 0
+  },
+  "schema": "uqpu-er6-lcu-qsvt-one-query-qiskit-v1",
+  "sdk": {
+    "name": "qiskit",
+    "requirement": "qiskit==2.5.2",
+    "version": "2.5.2"
+  },
+  "work_id": "QOS-AUDIT-010B8"
+}

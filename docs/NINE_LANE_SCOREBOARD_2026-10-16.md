@@ -47,3 +47,8 @@ capital or WACC evidence, and I remains `MODEL_ONLY` with I-012 open.
 All FND/EQN programs and INV-029–035 were reviewed without claim promotion.
 The next gate is hosted confirmation and a two-query recurrence—not provider
 submission and not a multiplication of one-query resources by 81.
+
+**Delta 07 hosted Qiskit gate passed:** commit `9d7e5d761fc8ddf18a0fec4a9564ce836e617e96`,
+run #735. Raw projected/full residuals passed; generic resources are 1,034 CX
+and depth 2,390. This changes Lane A's next gate to the two-query recurrence;
+it does not change B–I evidence boundaries or establish end-to-end QSVT.

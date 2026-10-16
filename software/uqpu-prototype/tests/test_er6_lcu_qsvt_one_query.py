@@ -15,6 +15,7 @@ from uqpu.er6_lcu_qsvt_one_query import (
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = ROOT / "benchmarks/experiments/cycle002-delta01-er6-frozen-contract.json"
 ARTIFACT = ROOT / "benchmarks/results/cycle008-delta07-er6-lcu-qsvt-one-query-contract.json"
+SDK_ARTIFACT = ROOT / "benchmarks/results/cycle008-delta07-er6-lcu-qsvt-one-query-qiskit.json"
 qiskit_available = importlib.util.find_spec("qiskit") is not None
 
 
@@ -43,6 +44,19 @@ class ER6QSVTOneQueryContractTests(unittest.TestCase):
         mutated["authorization"]["provider_submission"] = True
         self.assertIn("authorization_must_fail_closed", validate_one_query_contract(mutated))
         self.assertIn("contract_digest_mismatch", validate_one_query_contract(mutated))
+
+    def test_persisted_sdk_certificate_is_provenance_bound_and_fail_closed(self):
+        result = json.loads(SDK_ARTIFACT.read_text(encoding="utf-8"))
+        self.assertTrue(result["passed"])
+        self.assertEqual(result["contract_sha256"], build_one_query_contract(self.source)["contract_sha256"])
+        self.assertEqual(result["provenance"]["commit"], "9d7e5d761fc8ddf18a0fec4a9564ce836e617e96")
+        self.assertLessEqual(
+            result["operator_agreement"]["decomposed_vs_logical_full_operator_max_abs_residual"],
+            result["operator_agreement"]["tolerance"],
+        )
+        self.assertEqual(result["resources"]["provider_jobs"], 0)
+        self.assertIsNone(result["resources"]["provider_cost"])
+        self.assertIsNone(result["resources"]["energy_j"])
 
 
 @unittest.skipUnless(qiskit_available, "optional pinned Qiskit dependency")
