@@ -1083,3 +1083,5 @@ Priority #1, all permanent lanes A–H, FND/EQN, SCM, AI-COST and QOS/QSVT were 
 Next gate: explicit scalable workload block encoding plus target-aware no-submit transpilation; in parallel, RG-034's identifiability-certified ODE fixture.
 
 **Synchronization result:** GitHub Actions run #721 (run ID `38837122230`) completed `success` on 2026-10-16 with all eight jobs passing. The implementation tree at `6611cddb54ac6b423c05f9f9d2be77ff9007be52` is therefore the verified measurement source for the persisted QOS-AUDIT-010B5 certificate.
+
+The report/artifact commit `7e13aeb21ded8af8d707a592d78ed89adab2fb69` was then revalidated by GitHub Actions run #722 (run ID `38837571825`), which also completed `success` with all eight jobs passing. This is the report-inclusive synchronized checkpoint.
