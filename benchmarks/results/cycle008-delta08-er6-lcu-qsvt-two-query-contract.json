@@ -1,0 +1,50 @@
+{
+  "authorization": {
+    "paid_execution": false,
+    "provider_submission": false
+  },
+  "composition": {
+    "block_queries": 2,
+    "independent_reference": "dense diagonal row/column scaling and two matrix products",
+    "mathematical_order": [
+      "P(phi_0)",
+      "U_ER6",
+      "P(phi_1)",
+      "U_ER6",
+      "P(phi_2)"
+    ],
+    "projector_phases": 3
+  },
+  "contract_sha256": "11466d1f06cb4a860bc16fa75fde7efc9326a6c599b60c575a23d2c922daff17",
+  "evidence_class": "SIMULATION_PROVIDER_NEUTRAL_TWO_QUERY_CONTRACT",
+  "nonclaims": [
+    "not a full degree-81 QSVT circuit or transformed-workload result",
+    "not target-aware transpilation or provider execution",
+    "not fault-tolerant, energy, cost, advantage, or replacement evidence"
+  ],
+  "phase_source": {
+    "phase_count": 82,
+    "phase_fingerprint": "268d1809a8d88309df001d2c63b1f78ba5101d2b9e254c304b014ba4e8397445",
+    "selected_indices": [
+      0,
+      1,
+      2
+    ],
+    "selected_values": [
+      0.6982494260684668,
+      0.14719190625316722,
+      0.5961603783867676
+    ],
+    "work_id": "QOS-AUDIT-010B3"
+  },
+  "projector_phase": {
+    "definition": "P(phi)=exp(i*phi*(2*Pi-I))",
+    "projector": "Pi=|0000><0000| tensor I_system",
+    "select_qubits": 4
+  },
+  "schema": "uqpu-er6-lcu-qsvt-two-query-v1",
+  "upstream_prep_select_sha256": "c7fe6274c6ce939af7620b3501abb9082d3c51c3fcd2116265f976e860ce1dd7",
+  "upstream_work_id": "QOS-AUDIT-010B8",
+  "work_id": "QOS-AUDIT-010B9"
+}
+

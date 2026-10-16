@@ -417,6 +417,26 @@ projected and full-operator residuals were `5.4646887015828417e-14`,
 to artifact `12072606869`; provider jobs/shots are zero and cost/energy null.
 RG-033 remains open at the two-query recurrence and full composed transform.
 
+### RG-033 update — two-query recurrence implemented
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_PROVIDER_NEUTRAL_TWO_QUERY_CONTRACT
+**Date:** 2026-10-17
+
+QOS-AUDIT-010B9 implements `P0 U_ER6 P1 U_ER6 P2` and compares it with an
+independently assembled 1024x1024 operator. Local Qiskit 2.5.2 passed logical
+full/projected residuals `1.487709209519727e-14`/`6.4373790806034785e-15` and
+decomposed full/projected residuals `1.555229087579905e-13`/
+`1.4686258498911463e-13` against `2e-12`.
+
+**Why still open:** hosted provenance is pending. The independent reference
+reuses the already verified ER6 block primitive, and two-query ordering does not
+yet prove that the projected recurrence equals the intended scalar QSP response
+for every workload eigenvalue. It is not full degree-81 synthesis.
+
+**Next experiment / unlock:** hosted raw-matrix reproduction, followed by an
+independent 2x2 spectral-sector recurrence over all 64 ER6 eigenvalues. Only
+after that passes should a bounded prefix ladder (for example 3 and 5 queries)
+be used to test recurrence scaling and memory limits.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

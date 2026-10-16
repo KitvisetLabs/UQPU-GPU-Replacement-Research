@@ -575,3 +575,14 @@ then a recurrence, before full-sequence synthesis.
 **Reason:** Applying an RZ to an arbitrary select qubit would phase a different
 subspace. The explicit projector exposes the convention and prevents a passing
 serialization from being mistaken for the intended singular-value transform.
+
+## 2026-10-17 — D117: Recurrence order must pass before prefix scaling
+
+**Decision:** Accept a multi-query prefix only when its logical circuit and raw
+generic decomposition agree with an independently assembled full operator and
+projected block. After ordering passes, require a separate spectral-sector
+check against the intended QSP response; neither gate substitutes for the other.
+
+**Reason:** Reusing the same builder can make an order error self-consistent,
+while full-matrix agreement alone does not prove that the chosen recurrence is
+the intended polynomial transform on each singular/eigenvalue sector.

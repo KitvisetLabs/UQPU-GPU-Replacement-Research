@@ -52,3 +52,13 @@ submission and not a multiplication of one-query resources by 81.
 run #735. Raw projected/full residuals passed; generic resources are 1,034 CX
 and depth 2,390. This changes Lane A's next gate to the two-query recurrence;
 it does not change B–I evidence boundaries or establish end-to-end QSVT.
+
+## Cycle 008 Delta 08
+
+Lane A now has a two-query QSVT prefix checked against a separately assembled
+1024x1024 operator. Local raw residuals pass below `2e-12`; hosted provenance is
+pending. Generic resources are 2,048 CX and depth 4,733, but remain circuit-only
+evidence. B–I boundaries remain unchanged: no submission, memory replacement,
+device/factory requirement, commercial energy/material result, cost advantage,
+capital/WACC result or vehicle demonstration. The next Lane A gate is a 2x2
+spectral-sector recurrence across all 64 workload eigenvalues.

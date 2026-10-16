@@ -1151,3 +1151,17 @@ Priority #1, all nine lanes A–I, INV-025–035, multilingual Thai/English/Chin
 Next gate: publish the exact implementation commit, require pinned-Qiskit hosted raw-matrix agreement, persist its provenance-bearing certificate if successful, then verify a two-query recurrence before full degree-81 synthesis. Do not multiply one-query resources into a claimed end-to-end circuit.
 
 **Hosted one-query checkpoint:** implementation commit `9d7e5d761fc8ddf18a0fec4a9564ce836e617e96` passed cold-start run #11 and all eight jobs in project run #735. Hosted raw residuals were `5.4646887015828417e-14` logical projected, `3.6424960685225636e-14` decomposed projected and `7.593998529073269e-14` full operator. Artifact `12072606869` is now persisted with commit/run/job provenance. The next gate is an independently assembled two-query recurrence, not provider execution.
+
+### 2026-10-17 — Cycle 008 Delta 08 two-query QSVT recurrence
+
+Started from verified canonical `main` commit `7b36280809d89416822e68e0de6a952bb4855dca`, cold-start run #12 and project run #736. Implemented QOS-AUDIT-010B9, the bounded recurrence `P0 U_ER6 P1 U_ER6 P2`. The expected operator is assembled separately with explicit projector-phase diagonals, row/column scaling and dense matrix products; circuit order is then checked at full and projected levels before and after generic decomposition.
+
+Local pinned Qiskit 2.5.2 passed logical full/projected residuals `1.487709209519727e-14`/`6.4373790806034785e-15` and decomposed full/projected residuals `1.555229087579905e-13`/`1.4686258498911463e-13` against `2e-12`. Generic resources are ten qubits, two block queries, three projector phases, 2,048 CX, 3,789 RZ, 636 SX, 108 X, depth 4,733, size 6,581 and 94,965 OpenQASM 2 bytes. Jobs/shots are zero; cost/energy null. Full core validation passed 494 tests with 13 optional skips.
+
+Fresh literature surveillance found no primary result newer than the prior multivariate-QSP watch that changes this experiment. No duplicate watch article was created and no external claim was converted into project evidence. RG-034 retains its identifiability fixture gate.
+
+Lane A advanced recurrence ordering. B remains provider-neutral/no-submit; C exposes logical/serialization/host accounting without RAM/VRAM/storage equivalence; D/G remain downstream of target scheduling/calibration and process windows; E reviewed Pangola, BIO-001, FUS-001, materials, cooling and infrastructure without new qualified measurement; F enforces independent/raw residual and accepted-task economics; H updates the cold-start publication trail without capital/WACC authority; I remains `MODEL_ONLY` with I-012 open. FND-001–006, EQN-001–006 and FIN-001 were inspected without evidence promotion.
+
+Priority #1, A–I, INV-025–035, Thai/English/Chinese/Japanese/Korean/German master references, strategic AI/funding references, autonomous handoff and evidence boundaries were preserved. No paid QPU, provider execution, fabrication, hazardous vehicle test, quantum advantage, subsystem replacement, >=100x/100,000,000x result, commercial bio-oil/fusion result, lower WACC, new physical law or Data-Center-to-Phone achievement is claimed.
+
+Next gate: exact-commit hosted reproduction, then an independently derived 2x2 spectral-sector recurrence over all 64 workload eigenvalues before any longer prefix or degree-81 synthesis.
