@@ -1,4 +1,7 @@
 # Autonomous Research Agent Entry Point (MANDATORY)
+
+> **HIGHEST-PRIORITY WORKING CULTURE:** Read [00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md](00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md) first. Every research result must pass the cold-start handoff test: a new chatbot with no previous conversation can independently resume from GitHub main. This rule governs all lanes, commits and integrations; preserve evidence, safety and access controls.
+
 Repository: KitvisetLabs/UQPU-GPU-Replacement-Research | Canonical branch: **main**
 
 ## Non-negotiable: every commit must be reflected on main
