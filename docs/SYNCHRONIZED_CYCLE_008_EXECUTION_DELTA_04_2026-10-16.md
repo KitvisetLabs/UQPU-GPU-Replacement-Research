@@ -4,7 +4,7 @@
 **Canonical starting point:** `4904258a94256dde2cdbadc2bec042c16e95ede5`  
 **Work ID:** `HANDOFF-AUDIT-001`  
 **Evidence:** `MODEL_ONLY / PROCESS_VERIFICATION`  
-**Status:** implementation locally validated; exact-commit hosted CI pending
+**Status:** exact implementation commit and hosted CI verified
 
 ## Result
 
@@ -42,7 +42,9 @@ INV-025–027, >=100x, 100,000,000x, GPU/CPU/NPU/RAM/VRAM/storage replacement an
 
 ## Validation and remaining blocker
 
-Focused tests: `3/3` pass. The audit reports `READY_FOR_COLD_START`, lanes A–I and 36 integration pairs with zero errors. Full-suite and exact-commit hosted CI results must be added after execution.
+Focused tests: `3/3` pass and the full local suite passed `476` tests with `10` optional-environment skips. The audit reports `READY_FOR_COLD_START`, lanes A–I and 36 integration pairs with zero errors.
+
+Implementation commit `b62f8d7747d7e6e1d960490e8ec68b4ef6fea9bf` is on canonical `main`. The new cold-start workflow run #1 (`38914365120`) completed successfully. Project-invariants run #728 (`38914365123`) also completed successfully with all eight jobs passing: Python 3.10/3.11/3.12, pinned Qiskit verification, controlled reference benchmark, QSPPACK 0.3.0 negative control, QSPPACK 0.4.0 reconstruction and target-snapshot noise.
 
 **New gap RG-035:** automatic detection is implemented, but branch/fork enumeration, source-SHA-to-main reconciliation and safe debt reporting remain incomplete. Inaccessible repositories cannot be claimed as audited.
 

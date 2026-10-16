@@ -2,7 +2,7 @@
 
 **Canonical start:** `4904258a94256dde2cdbadc2bec042c16e95ede5`  
 **Date:** 2026-10-16  
-**Status:** local validation complete; exact GitHub commit/CI pending at publication time
+**Status:** implementation commit `b62f8d7747d7e6e1d960490e8ec68b4ef6fea9bf`; cold-start run #1 and project run #728 successful
 
 | Lane | Status | Evidence boundary | Next gate |
 |---|---|---|---|
