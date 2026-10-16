@@ -361,6 +361,16 @@ Pinned Qiskit 2.5.2 independently reproduced QOS-AUDIT-010B4 with repository-vs-
 
 **Next experiment / unlock:** construct the signal unitary from an explicit frozen workload oracle, demonstrate resource scaling, then transpile against a dated backend target/snapshot while keeping paid submission disabled.
 
+### RG-033 update — workload-derived algebraic LCU contract passed; circuit remains open
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_ALGEBRAIC_BLOCK_ENCODING_CONTRACT
+**Date:** 2026-10-16
+
+QOS-AUDIT-010B6 replaces the supplied dense signal unitary at the operator-contract layer with an explicit ER6 MaxCut LCU: one identity plus nine signed `ZZ` terms, `alpha=9`, six system qubits, four select qubits and 16 padded select states. Exhaustive comparison over all 64 basis states passed with maximum projected-diagonal residual `1.1102230246251565e-16`; provenance and mutation checks are executable.
+
+**Why still open:** PREP and SELECT have not been synthesized. Gate count, depth, QROM realization, precision dependence, serialized bytes, target mapping, runtime, energy and cost therefore remain unknown. Published sparse-QROM bounds are not applied as measured resources. This result is neither a scalability proof nor QSVT/provider execution.
+
+**Next experiment / unlock:** QOS-AUDIT-010B7 provider-neutral PREP/SELECT synthesis, pinned independent-SDK projected-operator reconstruction and measured decomposition scaling, followed by dated target-aware no-submit transpilation.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

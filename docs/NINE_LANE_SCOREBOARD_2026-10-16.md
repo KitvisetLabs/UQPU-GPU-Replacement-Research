@@ -19,3 +19,9 @@
 All 36 A–I pairs are now enumerated in `integration/eight_lane_manifest.json`; the legacy filename is retained for compatibility, while its schema is upgraded to nine lanes. The audit checks paths, lane coverage, evidence boundaries, master-reference languages and authorization flags. It cannot verify scientific truth or inaccessible branches/forks.
 
 FND-001..006, EQN-001..006, BIO-001, FUS-001 and FIN-001 remain visible in the machine-readable handoff. INV-029–035 remain goals/principles rather than achieved outcomes.
+
+## Cycle 008 Delta 05
+
+Lane A now owns an explicit ER6 workload-derived LCU operator contract: 10 active terms, six system qubits, four select qubits, `alpha=9`, and exhaustive 64-state agreement at `1.1102230246251565e-16`. This advances RG-033 beyond a supplied dense signal unitary but remains `SIMULATION_ALGEBRAIC_BLOCK_ENCODING_CONTRACT`: PREP/SELECT circuit synthesis, independent SDK reconstruction, decomposition scaling and target-aware no-submit transpilation remain open.
+
+Lanes B–I were explicitly reviewed. B has no submission; C makes no memory/storage replacement claim; D/G have no target or fabrication response; E has no new BIO-001/FUS-001/material measurement; F keeps resources and economics fail-closed; H records the handoff without capital authorization; I remains `MODEL_ONLY`. FND/EQN and INV-029–035 retain their evidence gates.

@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "4904258a94256dde2cdbadc2bec042c16e95ede5",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 03: QSVT independent SDK gate passed; scalable workload oracle remains open",
+  "current_frontier": "Cycle 008 Delta 05: ER6 workload-derived algebraic LCU contract passed; PREP/SELECT circuit remains open",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -19,11 +19,11 @@
     "STRATEGIC_PLAN_REFERENCES.md",
     "integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md",
     "integration/PERMANENT_CROSS_LANE_CONTINUOUS_INTEGRATION_PROTOCOL_2026-10-16.md",
-    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_03_2026-10-16.md",
+    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_05_2026-10-16.md",
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_CHECK", "next_gate": "RG-033 explicit scalable workload oracle/block encoding"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_ALGEBRAIC_BLOCK_ENCODING_CONTRACT", "next_gate": "QOS-AUDIT-010B7 provider-neutral PREP/SELECT synthesis and independent SDK reconstruction"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -56,6 +56,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Implement RG-033 with an explicit sparse workload oracle and compare measured circuit resources to the published sparse-QROM/block-encoding bounds; keep provider submission disabled.",
+  "next_independent_action": "Implement QOS-AUDIT-010B7 by synthesizing ER6 PREP/SELECT, independently reconstructing the projected operator, and recording measured circuit scaling; keep provider submission disabled.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

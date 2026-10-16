@@ -539,3 +539,7 @@ Pinned-SDK agreement and basis decomposition may close convention, ordering, ser
 ## 2026-10-16 — D109: Sparse-oracle assumptions become part of RG-033 acceptance
 
 **Decision:** The next scalable QSVT artifact must expose matrix dimension, row/column sparsity, encoding error, normalization, QROM representation and measured circuit resources. Published sparse-QROM/block-encoding bounds are comparison envelopes only and transfer to UQPU economics only after the workload meets their access assumptions and accepted-output contract.
+
+## 2026-10-16 — D110: An algebraic LCU contract is not an executable block encoding
+
+**Decision:** A workload-derived Pauli/LCU decomposition may close operator definition, normalization, term-access and exhaustive basis-agreement questions. It does not close PREP/SELECT synthesis, QROM precision, decomposed resources, target feasibility or economics. Until an independently reconstructed circuit exists, concrete gate/T-count/byte/energy/cost fields remain null and sparse-QROM theorems remain comparison bounds rather than project measurements.

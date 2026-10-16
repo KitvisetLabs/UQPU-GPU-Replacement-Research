@@ -1,0 +1,69 @@
+{
+  "contract_sha256": "a83c5830d67090cb79a75a3e9f7dc5ed39f28ef31cac9d2fed7a5136be7c7aac",
+  "evidence_class": "SIMULATION_ALGEBRAIC_BLOCK_ENCODING_CONTRACT",
+  "nonclaims": ["not a decomposed circuit", "not a provider execution", "not a scalability proof", "not a competitive workload", "not a cost or energy advantage"],
+  "operator": {
+    "active_lcu_terms": 10,
+    "alpha": 9.0,
+    "definition": "A=H_cut/alpha; H_cut=sum_(u,v) (I-Z_u Z_v)/2",
+    "edges": [[0, 2], [0, 3], [0, 4], [1, 4], [1, 5], [2, 3], [2, 4], [3, 4], [3, 5]],
+    "matrix_dimension": 64,
+    "padded_select_terms": 16,
+    "prep_probabilities": [0.5, 0.05555555555555555, 0.05555555555555555, 0.05555555555555555, 0.05555555555555555, 0.05555555555555555, 0.05555555555555555, 0.05555555555555555, 0.05555555555555555, 0.05555555555555555],
+    "select_qubits": 4,
+    "spectral_interval": [0.0, 0.7777777777777778],
+    "system_qubits": 6,
+    "terms": [
+      {"coefficient": 4.5, "pauli_z_qubits": [], "term_id": "I"},
+      {"coefficient": -0.5, "pauli_z_qubits": [0, 2], "term_id": "ZZ_0_2"},
+      {"coefficient": -0.5, "pauli_z_qubits": [0, 3], "term_id": "ZZ_0_3"},
+      {"coefficient": -0.5, "pauli_z_qubits": [0, 4], "term_id": "ZZ_0_4"},
+      {"coefficient": -0.5, "pauli_z_qubits": [1, 4], "term_id": "ZZ_1_4"},
+      {"coefficient": -0.5, "pauli_z_qubits": [1, 5], "term_id": "ZZ_1_5"},
+      {"coefficient": -0.5, "pauli_z_qubits": [2, 3], "term_id": "ZZ_2_3"},
+      {"coefficient": -0.5, "pauli_z_qubits": [2, 4], "term_id": "ZZ_2_4"},
+      {"coefficient": -0.5, "pauli_z_qubits": [3, 4], "term_id": "ZZ_3_4"},
+      {"coefficient": -0.5, "pauli_z_qubits": [3, 5], "term_id": "ZZ_3_5"}
+    ]
+  },
+  "resource_contract": {
+    "block_encoding_queries_if_used_by_degree_81_sequence": 81,
+    "energy_j": null,
+    "fault_tolerant_t_count": null,
+    "logical_qubits_before_work_registers": 10,
+    "logical_select_qubits": 4,
+    "logical_system_qubits": 6,
+    "prep_calls_per_block_encoding_query": 2,
+    "prep_gate_count": null,
+    "provider_cost": null,
+    "provider_jobs": 0,
+    "qsvt_polynomial_degree": 81,
+    "select_decomposed_gate_count": null,
+    "select_pauli_zz_branches_per_query": 9,
+    "serialized_circuit_bytes": null,
+    "shots": 0
+  },
+  "scaling_and_access_boundary": {
+    "general_sparse_qrom_bound_applied": false,
+    "lcu_term_growth": "1+|E|",
+    "reason": "No fault-tolerant precision or concrete PREP/QROM implementation is fixed; asymptotic sparse-QROM bounds are not measured resources.",
+    "remaining_gate": "provider-neutral PREP/SELECT circuit synthesis, independent SDK operator check, and measured decomposition scaling",
+    "select_branch_growth": "|E|"
+  },
+  "schema": "uqpu-er6-sparse-lcu-block-encoding-v1",
+  "source": {
+    "fixture": "benchmarks/experiments/cycle002-delta01-er6-frozen-contract.json",
+    "ising_instance_sha256": "bc3fb615b6fd2530694b097fde804e62f165fd7d0953bf66aff4602cd77fa201",
+    "output_contract_id": "8efaa94bb3306d25",
+    "variable_order": "variable_0_is_lsb"
+  },
+  "verification": {
+    "accepted_assignment_indices": [11, 14, 49, 52],
+    "accepted_normalized_cut_values": [0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778],
+    "basis_states_exhaustively_checked": 64,
+    "max_projected_diagonal_residual": 1.1102230246251565e-16,
+    "passed": true,
+    "prep_probability_sum_residual": 0.0
+  },
+  "work_id": "QOS-AUDIT-010B6"
+}
