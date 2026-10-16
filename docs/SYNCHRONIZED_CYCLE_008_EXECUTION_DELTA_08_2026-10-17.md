@@ -3,7 +3,7 @@
 **Work ID:** `QOS-AUDIT-010B9`  
 **Canonical start:** `7b36280809d89416822e68e0de6a952bb4855dca`  
 **Primary owner:** Lane A; integration owners B/C/F/H; downstream D/G  
-**Evidence:** `SIMULATION_PROVIDER_NEUTRAL_TWO_QUERY_CONTRACT`; local pinned-SDK result pending hosted exact-commit confirmation
+**Evidence:** `SIMULATION_INDEPENDENT_SDK_TWO_QUERY_CHECK`; hosted exact-commit raw-matrix certificate persisted
 
 ## Result
 
@@ -27,7 +27,13 @@ Local pinned Qiskit 2.5.2 passed:
 The generic circuit has ten logical qubits, two block queries, three projector
 phases, 2,048 CX, 3,789 RZ, 636 SX and 108 X gates, depth 4,733, size 6,581 and
 94,965 OpenQASM 2 bytes. Provider jobs/shots remain zero; cost and energy remain
-null. These local numbers require exact-commit hosted reproduction.
+null. Exact-commit hosted Qiskit 2.5.2 reproduced the result in run #737.
+Hosted logical full/projected residuals were `1.5372480116112342e-14`/
+`9.031103035004427e-15`; decomposed full/projected residuals were
+`1.5525801392484516e-13`/`1.4696065413280135e-13`. Artifact `12075997394`
+is bound to commit `2bf019cf21efd43ec7ae9f8196ec03e5734e7945` and job
+`117198147300`. Hosted serialization was 94,969 bytes; jobs/shots remain zero
+and cost/energy null.
 
 ## A–I status
 
@@ -64,12 +70,12 @@ The tested A/F edge is circuit order versus an independently assembled operator.
 A/B/C shares the stable query/register/serialization contract. D/G receive
 generic requirements only and remain blocked from fabrication conclusions.
 
-- Full core suite: 494 passed, 13 optional-dependency skips.
+- Full core suite after certificate persistence: 495 passed, 13 optional-dependency skips.
 - Isolated local Qiskit 2.5.2: recurrence passed.
-- Cold-start audit: pending after documentation integration.
-- Hosted exact-commit CI: pending.
+- Cold-start audit run #13: passed.
+- Hosted project run #737: all eight jobs passed, including pinned Qiskit and
+  downstream target-snapshot-noise.
 
-Next: reproduce this exact commit in hosted Qiskit and persist provenance if it
-passes. Then compare the projected 64-state block against independently derived
+Next: compare the projected 64-state block against independently derived
 2x2 spectral-sector recurrences. Do not jump from two queries to an 81-query
 resource or performance claim.

@@ -418,7 +418,7 @@ to artifact `12072606869`; provider jobs/shots are zero and cost/energy null.
 RG-033 remains open at the two-query recurrence and full composed transform.
 
 ### RG-033 update — two-query recurrence implemented
-**Status:** PARTIALLY_UNLOCKED / SIMULATION_PROVIDER_NEUTRAL_TWO_QUERY_CONTRACT
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_INDEPENDENT_SDK_TWO_QUERY_CHECK
 **Date:** 2026-10-17
 
 QOS-AUDIT-010B9 implements `P0 U_ER6 P1 U_ER6 P2` and compares it with an
@@ -427,13 +427,18 @@ full/projected residuals `1.487709209519727e-14`/`6.4373790806034785e-15` and
 decomposed full/projected residuals `1.555229087579905e-13`/
 `1.4686258498911463e-13` against `2e-12`.
 
-**Why still open:** hosted provenance is pending. The independent reference
-reuses the already verified ER6 block primitive, and two-query ordering does not
+**Hosted checkpoint:** commit `2bf019cf21efd43ec7ae9f8196ec03e5734e7945`,
+project run #737 and Qiskit job `117198147300` reproduced all four raw residuals
+below `2e-12`; certificate artifact `12075997394` is persisted. Provider
+jobs/shots are zero and cost/energy null.
+
+**Why still open:** the independent reference reuses the already verified ER6
+block primitive, and two-query ordering does not
 yet prove that the projected recurrence equals the intended scalar QSP response
 for every workload eigenvalue. It is not full degree-81 synthesis.
 
-**Next experiment / unlock:** hosted raw-matrix reproduction, followed by an
-independent 2x2 spectral-sector recurrence over all 64 ER6 eigenvalues. Only
+**Next experiment / unlock:** an independent 2x2 spectral-sector recurrence
+over all 64 ER6 eigenvalues. Only
 after that passes should a bounded prefix ladder (for example 3 and 5 queries)
 be used to test recurrence scaling and memory limits.
 

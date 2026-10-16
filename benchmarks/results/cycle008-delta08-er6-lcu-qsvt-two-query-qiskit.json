@@ -1,0 +1,54 @@
+{
+  "contract_sha256": "11466d1f06cb4a860bc16fa75fde7efc9326a6c599b60c575a23d2c922daff17",
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.12.15"
+  },
+  "evidence_class": "SIMULATION_INDEPENDENT_SDK_TWO_QUERY_CHECK",
+  "limitations": [
+    "not a full degree-81 QSVT circuit or transformed-workload result",
+    "not target-aware transpilation or provider execution",
+    "not fault-tolerant, energy, cost, advantage, or replacement evidence",
+    "The independently assembled reference reuses the already verified U_ER6 primitive.",
+    "Generic basis decomposition is not a backend target, schedule, calibration, or bill.",
+    "Host runtime and traced memory are CI-environment measurements only."
+  ],
+  "operator_agreement": {
+    "decomposed_vs_independent_full_max_abs_residual": 1.5525801392484516e-13,
+    "decomposed_vs_independent_projected_max_abs_residual": 1.4696065413280135e-13,
+    "logical_vs_independent_full_max_abs_residual": 1.5372480116112342e-14,
+    "logical_vs_independent_projected_max_abs_residual": 9.031103035004427e-15,
+    "tolerance": 2e-12
+  },
+  "passed": true,
+  "provenance": {
+    "commit": "2bf019cf21efd43ec7ae9f8196ec03e5734e7945",
+    "github_actions_artifact_id": 12075997394,
+    "github_actions_job_id": 117198147300,
+    "github_actions_run_id": 38967584171,
+    "github_actions_run_number": 737,
+    "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38967584171"
+  },
+  "resources": {
+    "decomposed_depth": 4733,
+    "decomposed_operation_counts": {"cx": 2048, "rz": 3789, "sx": 636, "x": 108},
+    "decomposed_size": 6581,
+    "energy_j": null,
+    "host_peak_traced_bytes": 119094814,
+    "host_runtime_ns": 158430453559,
+    "logical_block_queries": 2,
+    "logical_depth": 101,
+    "logical_projector_phases": 3,
+    "logical_qubits": 10,
+    "logical_size": 169,
+    "provider_cost": null,
+    "provider_execution_id": null,
+    "provider_jobs": 0,
+    "serialized_openqasm2_bytes": 94969,
+    "shots": 0
+  },
+  "schema": "uqpu-er6-lcu-qsvt-two-query-qiskit-v1",
+  "sdk": {"name": "qiskit", "requirement": "qiskit==2.5.2", "version": "2.5.2"},
+  "work_id": "QOS-AUDIT-010B9"
+}

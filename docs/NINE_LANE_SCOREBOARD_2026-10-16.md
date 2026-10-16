@@ -56,8 +56,9 @@ it does not change B–I evidence boundaries or establish end-to-end QSVT.
 ## Cycle 008 Delta 08
 
 Lane A now has a two-query QSVT prefix checked against a separately assembled
-1024x1024 operator. Local raw residuals pass below `2e-12`; hosted provenance is
-pending. Generic resources are 2,048 CX and depth 4,733, but remain circuit-only
+1024x1024 operator. Hosted exact-commit raw residuals pass below `2e-12` in run
+#737 and are bound to artifact `12075997394`. Generic resources are 2,048 CX
+and depth 4,733, but remain circuit-only
 evidence. B–I boundaries remain unchanged: no submission, memory replacement,
 device/factory requirement, commercial energy/material result, cost advantage,
 capital/WACC result or vehicle demonstration. The next Lane A gate is a 2x2

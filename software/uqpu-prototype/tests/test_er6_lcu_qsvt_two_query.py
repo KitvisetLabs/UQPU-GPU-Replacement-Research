@@ -15,6 +15,7 @@ from uqpu.er6_lcu_qsvt_two_query import (
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = ROOT / "benchmarks/experiments/cycle002-delta01-er6-frozen-contract.json"
 ARTIFACT = ROOT / "benchmarks/results/cycle008-delta08-er6-lcu-qsvt-two-query-contract.json"
+SDK_ARTIFACT = ROOT / "benchmarks/results/cycle008-delta08-er6-lcu-qsvt-two-query-qiskit.json"
 qiskit_available = importlib.util.find_spec("qiskit") is not None
 
 
@@ -42,6 +43,19 @@ class ER6QSVTTwoQueryContractTests(unittest.TestCase):
         mutated["composition"]["block_queries"] = 81
         self.assertIn("recurrence_count_mismatch", validate_two_query_contract(mutated))
         self.assertIn("contract_digest_mismatch", validate_two_query_contract(mutated))
+
+    def test_persisted_sdk_certificate_is_provenance_bound_and_fail_closed(self):
+        result = json.loads(SDK_ARTIFACT.read_text(encoding="utf-8"))
+        self.assertTrue(result["passed"])
+        self.assertEqual(result["contract_sha256"], build_two_query_contract(self.source)["contract_sha256"])
+        self.assertEqual(result["provenance"]["commit"], "2bf019cf21efd43ec7ae9f8196ec03e5734e7945")
+        for key, value in result["operator_agreement"].items():
+            if key.endswith("residual"):
+                self.assertLessEqual(value, result["operator_agreement"]["tolerance"])
+        self.assertEqual(result["resources"]["provider_jobs"], 0)
+        self.assertEqual(result["resources"]["shots"], 0)
+        self.assertIsNone(result["resources"]["provider_cost"])
+        self.assertIsNone(result["resources"]["energy_j"])
 
 
 @unittest.skipUnless(qiskit_available, "optional pinned Qiskit dependency")
