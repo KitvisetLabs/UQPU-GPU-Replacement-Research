@@ -86,3 +86,7 @@ by the version-dependent accuracy of built-in floating-point `sum`. PREP
 normalization now uses deterministic `math.fsum`, and the zero-residual value is
 covered by regression testing. This repairs cross-version certificate
 reproducibility without changing the operator or promoting its evidence class.
+
+Repair commit `081089398779a6439f0a8edd70c35ecffb068bf0` passed cold-start
+audit run #5 and project-invariants run #730. All eight hosted jobs succeeded,
+including Python 3.10–3.12, Qiskit, reference, QSP and target-noise checks.
