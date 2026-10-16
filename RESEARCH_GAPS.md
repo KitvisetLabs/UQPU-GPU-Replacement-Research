@@ -381,6 +381,8 @@ QOS-AUDIT-010B7 fixes a ten-qubit `PREP -> SELECT -> PREP_DAGGER` circuit for th
 
 **Next experiment / unlock:** run Qiskit 2.5.2 on the exact commit, require projected and decomposed residuals <= `2e-12`, persist the provenance-bound result, then integrate one verified block-encoding query with the frozen QSVT sequence. Target-aware no-submit transpilation follows only after that composition.
 
+**First hosted result:** run #731 reproduced the logical projected block (`5.397791942558855e-14`) but the generic decomposition differed by an apparent global phase near pi: raw projected residual `1.5555555555555465` and raw full-operator residual `1.9444444444443676`. This is a failed raw matrix-equivalence gate, not provider/hardware failure. The repair records raw and phase-aligned residuals separately; controlled/QSVT composition remains blocked until the relative-phase convention is explicit.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

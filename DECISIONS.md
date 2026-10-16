@@ -551,3 +551,7 @@ Pinned-SDK agreement and basis decomposition may close convention, ordering, ser
 ## 2026-10-16 — D112: Dense-QROM leading factors require a matched workspace contract
 
 **Decision:** The dense-QROM result in arXiv:2610.02321 is `LITERATURE_ONLY`. Its leading Toffoli factors may be compared only after freezing the same table, precision, dirty-qubit/workspace budget and restoration, and counting complete resources. It cannot be recorded as a 2x/4x UQPU improvement from the paper alone.
+
+## 2026-10-16 — D113: Global-phase alignment does not close controlled composition
+
+**Decision:** Independent SDK decomposition must publish both raw and phase-aligned operator residuals. Equivalence up to a global phase can validate the un-controlled quantum operation and generic resource count, but cannot silently certify a future controlled block encoding or QSVT convention. Controlled composition stays blocked until a test proves the phase is handled as a relative phase where required.

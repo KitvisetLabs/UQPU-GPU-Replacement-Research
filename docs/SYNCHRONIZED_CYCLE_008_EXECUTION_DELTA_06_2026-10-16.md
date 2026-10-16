@@ -71,3 +71,13 @@ First require exact-commit hosted Qiskit agreement and measured generic-basis
 resources. If it passes, persist the provenance-bound SDK certificate and then
 compose one block-encoding query into the frozen QSVT sequence before any dated
 target-aware no-submit transpilation.
+
+## First hosted negative result
+
+Run #731 found that the logical projected block agrees at
+`5.397791942558855e-14`, while the decomposed raw projected and full-operator
+residuals are `1.5555555555555465` and `1.9444444444443676`. The pattern is
+consistent with a global phase near pi. The follow-up records raw and
+phase-aligned comparisons separately. Phase-aligned equivalence may validate an
+un-controlled quantum operation and its generic resource count; it does not
+authorize controlled/QSVT composition until a relative-phase test passes.

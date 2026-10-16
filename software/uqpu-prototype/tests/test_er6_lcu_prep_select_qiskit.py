@@ -52,7 +52,14 @@ class ER6PinnedQiskitPrepSelectTests(unittest.TestCase):
         result = reproduce_with_qiskit()
         self.assertTrue(result["passed"], result)
         self.assertLessEqual(result["operator_agreement"]["projected_block_max_abs_residual"], 2e-12)
-        self.assertLessEqual(result["operator_agreement"]["decomposed_projected_block_max_abs_residual"], 2e-12)
+        self.assertLessEqual(
+            result["operator_agreement"]["decomposed_projected_block_phase_aligned_max_abs_residual"],
+            2e-12,
+        )
+        self.assertGreater(
+            result["operator_agreement"]["decomposed_projected_block_raw_max_abs_residual"],
+            1.0,
+        )
         self.assertTrue(set(result["resources"]["decomposed_operation_counts"]).issubset(BASIS_GATES))
         self.assertEqual(result["resources"]["provider_jobs"], 0)
         self.assertIsNone(result["resources"]["provider_cost"])

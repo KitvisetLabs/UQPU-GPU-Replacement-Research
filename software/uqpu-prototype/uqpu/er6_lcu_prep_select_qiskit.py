@@ -131,7 +131,7 @@ def build_qiskit_block_encoding(frozen: dict[str, Any] | None = None):
     circuit.append(prep, select)
 
     branch_phase = MCPhaseGate(math.pi, num_ctrl_qubits=select_count - 1)
-    controlled_z = ZGate().control(select_count)
+    controlled_z = ZGate().control(select_count, annotated=False)
     for branch in contract["select"]["branches"]:
         if branch["coefficient_sign"] > 0 and not branch["pauli_z_system_qubits"]:
             continue
@@ -178,8 +178,18 @@ def reproduce_with_qiskit() -> dict[str, Any]:
     )
     decomposed_operator = Operator(decomposed).data
     decomposed_projected = decomposed_operator[np.ix_(indices, indices)]
-    decomposed_residual = float(np.max(np.abs(decomposed_projected - expected)))
-    full_operator_residual = float(np.max(np.abs(decomposed_operator - operator)))
+    decomposed_raw_residual = float(np.max(np.abs(decomposed_projected - expected)))
+    full_operator_raw_residual = float(np.max(np.abs(decomposed_operator - operator)))
+    overlap = np.vdot(operator.ravel(), decomposed_operator.ravel())
+    global_phase_offset = float(np.angle(overlap))
+    phase_aligned_operator = decomposed_operator * np.exp(-1j * global_phase_offset)
+    phase_aligned_projected = phase_aligned_operator[np.ix_(indices, indices)]
+    decomposed_phase_aligned_residual = float(
+        np.max(np.abs(phase_aligned_projected - expected))
+    )
+    full_operator_phase_aligned_residual = float(
+        np.max(np.abs(phase_aligned_operator - operator))
+    )
     qasm = qasm2.dumps(decomposed)
     runtime_ns = perf_counter_ns() - started
     _, peak_bytes = tracemalloc.get_traced_memory()
@@ -187,8 +197,8 @@ def reproduce_with_qiskit() -> dict[str, Any]:
     counts = {str(key): int(value) for key, value in decomposed.count_ops().items()}
     passed = (
         projected_residual <= TOLERANCE
-        and decomposed_residual <= TOLERANCE
-        and full_operator_residual <= TOLERANCE
+        and decomposed_phase_aligned_residual <= TOLERANCE
+        and full_operator_phase_aligned_residual <= TOLERANCE
         and set(counts).issubset(BASIS_GATES)
     )
     return {
@@ -203,8 +213,11 @@ def reproduce_with_qiskit() -> dict[str, Any]:
         },
         "operator_agreement": {
             "projected_block_max_abs_residual": projected_residual,
-            "decomposed_projected_block_max_abs_residual": decomposed_residual,
-            "decomposed_vs_logical_full_operator_max_abs_residual": full_operator_residual,
+            "decomposed_projected_block_raw_max_abs_residual": decomposed_raw_residual,
+            "decomposed_vs_logical_full_operator_raw_max_abs_residual": full_operator_raw_residual,
+            "decomposition_global_phase_offset_rad": global_phase_offset,
+            "decomposed_projected_block_phase_aligned_max_abs_residual": decomposed_phase_aligned_residual,
+            "decomposed_vs_logical_full_operator_phase_aligned_max_abs_residual": full_operator_phase_aligned_residual,
             "tolerance": TOLERANCE,
         },
         "resources": {
@@ -227,6 +240,7 @@ def reproduce_with_qiskit() -> dict[str, Any]:
         "evidence_class": "SIMULATION_INDEPENDENT_SDK_CIRCUIT_CHECK",
         "limitations": contract["nonclaims"] + [
             "Generic basis decomposition is not a backend target, schedule, calibration, or bill.",
+            "Raw and phase-aligned residuals are separate; controlled/QSVT composition remains blocked until the relative-phase convention is fixed.",
             "Host runtime and traced memory are CI-environment measurements only.",
         ],
     }
