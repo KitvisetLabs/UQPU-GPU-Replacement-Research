@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "4904258a94256dde2cdbadc2bec042c16e95ede5",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 06: ER6 PREP/SELECT one-query SDK gate passed; composed QSVT operator remains open",
+  "current_frontier": "Cycle 008 Delta 07: one ER6 block query is composed with frozen multi-ancilla QSVT projector phases; hosted exact-commit gate pending",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -19,11 +19,11 @@
     "STRATEGIC_PLAN_REFERENCES.md",
     "integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md",
     "integration/PERMANENT_CROSS_LANE_CONTINUOUS_INTEGRATION_PROTOCOL_2026-10-16.md",
-    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_06_2026-10-16.md",
+    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_07_2026-10-17.md",
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_CIRCUIT_CHECK", "next_gate": "compose one verified PREP/SELECT query with frozen QSVT convention"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_PROVIDER_NEUTRAL_ONE_QUERY_CONTRACT", "next_gate": "hosted exact-commit one-query reproduction, then two-query recurrence"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -37,10 +37,10 @@
   "open_gates": ["RG-033", "RG-034", "I-012"],
   "master_reference_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
   "latest_verified_ci": {
-    "run_number": 727,
-    "run_id": 38858105141,
+    "run_number": 734,
+    "run_id": 38931311515,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38858105141"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38931311515"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -56,6 +56,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Compose one verified ER6 PREP/SELECT block-encoding query with the frozen QSVT convention and test the projected transformed operator before any degree-81 resource extrapolation; keep provider submission disabled.",
+  "next_independent_action": "Run the exact commit in pinned Qiskit, persist a provenance-bound one-query certificate if raw residuals pass, then verify a two-query recurrence before full degree-81 synthesis; keep provider submission disabled.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

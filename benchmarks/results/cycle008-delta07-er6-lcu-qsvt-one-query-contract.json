@@ -1,0 +1,118 @@
+{
+  "authorization": {
+    "paid_execution": false,
+    "provider_submission": false
+  },
+  "composition": {
+    "block_queries": 1,
+    "expected_projected_diagonal": [
+      0.0,
+      0.3333333333333333,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.7777777777777778,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.7777777777777778,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.2222222222222222,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.7777777777777778,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.7777777777777778,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.3333333333333333,
+      0.5555555555555556,
+      0.2222222222222222,
+      0.3333333333333333,
+      0.0
+    ],
+    "expected_projected_scalar": {
+      "imag": 0.7482639653905887,
+      "real": 0.6634011140312863
+    },
+    "mathematical_order": [
+      "P(phi_0)",
+      "U_ER6",
+      "P(phi_1)"
+    ],
+    "projector_phases": 2
+  },
+  "contract_sha256": "1c82a49d979ae5da5a58b02ebddd9512d78663fc372a76bfa7e925243c415ddf",
+  "evidence_class": "SIMULATION_PROVIDER_NEUTRAL_ONE_QUERY_CONTRACT",
+  "nonclaims": [
+    "not a full degree-81 QSVT circuit",
+    "not proof that the frozen scalar convention transfers beyond this bounded fragment",
+    "not target-aware transpilation or provider execution",
+    "not fault-tolerant, energy, cost, advantage, or replacement evidence"
+  ],
+  "phase_source": {
+    "phase_count": 82,
+    "phase_fingerprint": "268d1809a8d88309df001d2c63b1f78ba5101d2b9e254c304b014ba4e8397445",
+    "selected_indices": [
+      0,
+      1
+    ],
+    "selected_values": [
+      0.6982494260684668,
+      0.14719190625316722
+    ],
+    "work_id": "QOS-AUDIT-010B3"
+  },
+  "projector_phase": {
+    "complement_eigenvalue": "exp(-i*phi)",
+    "definition": "P(phi)=exp(i*phi*(2*Pi-I))",
+    "projected_eigenvalue": "exp(+i*phi)",
+    "projector": "Pi=|0000><0000| tensor I_system",
+    "select_qubits": 4
+  },
+  "schema": "uqpu-er6-lcu-qsvt-one-query-v1",
+  "upstream_contract_sha256": "c7fe6274c6ce939af7620b3501abb9082d3c51c3fcd2116265f976e860ce1dd7",
+  "upstream_work_id": "QOS-AUDIT-010B7",
+  "work_id": "QOS-AUDIT-010B8"
+}
+

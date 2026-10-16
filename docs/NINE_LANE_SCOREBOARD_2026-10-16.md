@@ -33,3 +33,17 @@ Lanes B–I were explicitly reviewed. B has no submission; C makes no memory/sto
 Lane A now has a deterministic provider-neutral PREP/SELECT circuit contract for the ER6 LCU: four select qubits, six system qubits, 16 amplitudes, ten active SELECT branches and six padded identity addresses. The pinned-Qiskit exact-commit gate is pending; no decomposed resources or independent residual are predeclared. B–I and FND/EQN were reviewed with unchanged no-submit, no-memory-equivalence, no-device/factory, no-commercial-energy, no-cost-advantage, no-capital-authorization and no-vehicle-demonstration boundaries.
 
 **Delta 06 verified:** commit `6a7af8a94929ff5eae786144b2dbd6ad1cc88a4b`, project run #733. The independent one-query circuit gate passed after two preserved negative decomposition results. Lane A's next gate is composed QSVT operator verification, not provider execution. The measured generic circuit resources are not target/fault-tolerant/economic evidence.
+
+## Cycle 008 Delta 07
+
+Lane A now owns an explicit one-query multi-ancilla QSVT projector-phase
+contract, `P(phi_0) U_ER6 P(phi_1)`, bound to the unchanged phase and ER6
+contract fingerprints. Local pinned-Qiskit raw residuals passed below `2e-12`;
+hosted exact-commit provenance is pending. A/B/C/F integration now has an
+executable phase/query/phase serialization boundary. D/G remain blocked on a
+dated target, E has no new qualified material/fuel/electricity result, H has no
+capital or WACC evidence, and I remains `MODEL_ONLY` with I-012 open.
+
+All FND/EQN programs and INV-029–035 were reviewed without claim promotion.
+The next gate is hosted confirmation and a two-query recurrence—not provider
+submission and not a multiplication of one-query resources by 81.

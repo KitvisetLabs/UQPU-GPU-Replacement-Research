@@ -389,6 +389,27 @@ QOS-AUDIT-010B7 fixes a ten-qubit `PREP -> SELECT -> PREP_DAGGER` circuit for th
 
 **Next experiment:** integrate one verified PREP/SELECT query into the frozen QSVT phase convention and test the composed projected transform before multiplying generic resources by 81. A simple multiplication is a bound/proxy, not a synthesized end-to-end circuit.
 
+### RG-033 update — bounded one-query projector-phase composition implemented
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_PROVIDER_NEUTRAL_ONE_QUERY_CONTRACT
+**Date:** 2026-10-17
+
+QOS-AUDIT-010B8 fixes `P(phi_0) U_ER6 P(phi_1)` using the frozen phase fingerprint
+and the four-select-qubit projector `Pi=|0000><0000| tensor I`. Local pinned
+Qiskit 2.5.2 passed the projected fragment at `5.6158631957729706e-14`, the
+decomposed projected fragment at `3.6061746050468526e-14`, and the raw full
+operator at `7.75091532099517e-14` against `2e-12`.
+
+**Why still open:** exact-commit hosted reproduction and provenance persistence
+are pending. One query does not establish the alternating recurrence or final
+degree-81 transformed block. The local 1,034 CX/depth-2,390 generic result is
+not target, fault-tolerant, QPU, energy or economic evidence.
+
+**Next experiment / unlock:** require hosted raw-matrix agreement; persist its
+certificate; then verify two queries and three projector phases against an
+independently assembled matrix. Only after recurrence agreement should the full
+81-query circuit be synthesized. Never substitute count multiplication for
+end-to-end verification.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

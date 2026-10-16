@@ -563,3 +563,15 @@ Pinned-SDK agreement and basis decomposition may close convention, ordering, ser
 ## 2026-10-16 — D115: Do not extrapolate one-query resources into an end-to-end QSVT result
 
 **Decision:** Run #733 closes the independent generic PREP/SELECT circuit gate for one block-encoding query. Its 994 CX and depth 2,300 are measured generic-basis resources for that circuit only. Multiplication by the degree-81 query count may be retained as a planning proxy, but cannot replace synthesis and operator verification of the composed QSVT circuit.
+
+## 2026-10-17 — D116: Multi-ancilla QSVT phases require an explicit projector contract
+
+**Decision:** Transfer the frozen single-signal-qubit phase convention to the
+four-select-qubit ER6 block encoding only through
+`P(phi)=exp(i phi (2 Pi-I))`, with `Pi=|0000><0000| tensor I`, and require raw
+projected plus full-operator agreement after decomposition. Validate one query,
+then a recurrence, before full-sequence synthesis.
+
+**Reason:** Applying an RZ to an arbitrary select qubit would phase a different
+subspace. The explicit projector exposes the convention and prevents a passing
+serialization from being mistaken for the intended singular-value transform.

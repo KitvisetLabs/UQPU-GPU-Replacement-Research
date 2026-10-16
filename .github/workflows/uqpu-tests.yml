@@ -148,6 +148,19 @@ jobs:
           name: er6-lcu-prep-select-qiskit-${{ github.sha }}
           path: /tmp/uqpu-er6-lcu-prep-select-qiskit.json
 
+      - name: Verify one ER6 block query with frozen QSVT projector phases
+        working-directory: software/uqpu-prototype
+        run: |
+          python -m unittest tests.test_er6_lcu_qsvt_one_query -v
+          python examples/run_er6_lcu_qsvt_one_query.py --output /tmp/uqpu-er6-lcu-qsvt-one-query.json
+          cat /tmp/uqpu-er6-lcu-qsvt-one-query.json
+
+      - name: Upload ER6 QSVT one-query certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: er6-lcu-qsvt-one-query-${{ github.sha }}
+          path: /tmp/uqpu-er6-lcu-qsvt-one-query.json
+
   qsp-phase-synthesis:
     runs-on: ubuntu-latest
     needs: test
