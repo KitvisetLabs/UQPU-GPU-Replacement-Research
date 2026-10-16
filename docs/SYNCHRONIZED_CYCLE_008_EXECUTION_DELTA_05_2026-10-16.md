@@ -80,3 +80,9 @@ is `QOS-AUDIT-010B7`: synthesize PREP and SELECT in a provider-neutral circuit,
 reconstruct the projected operator with a pinned independent SDK, record actual
 decomposition/serialization scaling, and only then attempt dated target-aware
 no-submit transpilation. Paid/provider execution remains disabled.
+
+The first hosted matrix run detected a Python 3.11/3.12 digest mismatch caused
+by the version-dependent accuracy of built-in floating-point `sum`. PREP
+normalization now uses deterministic `math.fsum`, and the zero-residual value is
+covered by regression testing. This repairs cross-version certificate
+reproducibility without changing the operator or promoting its evidence class.

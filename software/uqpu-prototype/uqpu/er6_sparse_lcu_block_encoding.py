@@ -70,6 +70,7 @@ def build_lcu_contract(frozen: dict[str, Any]) -> dict[str, Any]:
 
     accepted = [int(row["index"]) for row in output["accepted_outputs"]]
     accepted_values = [diagonal[index] for index in accepted]
+    probability_sum_residual = abs(math.fsum(probabilities) - 1.0)
     contract = {
         "schema": "uqpu-er6-sparse-lcu-block-encoding-v1",
         "work_id": CONTRACT_ID,
@@ -95,10 +96,10 @@ def build_lcu_contract(frozen: dict[str, Any]) -> dict[str, Any]:
         "verification": {
             "basis_states_exhaustively_checked": 1 << node_count,
             "max_projected_diagonal_residual": max(residuals),
-            "prep_probability_sum_residual": abs(sum(probabilities) - 1.0),
+            "prep_probability_sum_residual": probability_sum_residual,
             "accepted_assignment_indices": accepted,
             "accepted_normalized_cut_values": accepted_values,
-            "passed": max(residuals) <= 1e-15 and abs(sum(probabilities) - 1.0) <= 1e-15,
+            "passed": max(residuals) <= 1e-15 and probability_sum_residual <= 1e-15,
         },
         "resource_contract": {
             "qsvt_polynomial_degree": POLYNOMIAL_DEGREE,

@@ -24,6 +24,7 @@ class ER6SparseLCUBlockEncodingTests(unittest.TestCase):
     def test_resource_fields_fail_closed(self):
         contract = build_lcu_contract(self.source)
         self.assertEqual(validate_lcu_contract(contract), [])
+        self.assertEqual(contract["verification"]["prep_probability_sum_residual"], 0.0)
         self.assertIsNone(contract["resource_contract"]["prep_gate_count"])
         self.assertIsNone(contract["resource_contract"]["provider_cost"])
         self.assertFalse(contract["scaling_and_access_boundary"]["general_sparse_qrom_bound_applied"])
