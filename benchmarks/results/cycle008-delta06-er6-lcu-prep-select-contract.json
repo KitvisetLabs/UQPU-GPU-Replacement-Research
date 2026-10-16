@@ -1,0 +1,77 @@
+{
+  "authorization": {
+    "paid_execution": false,
+    "provider_submission": false
+  },
+  "block_encoding": {
+    "expected_projected_diagonal": [
+      0.0, 0.3333333333333333, 0.2222222222222222, 0.5555555555555556,
+      0.3333333333333333, 0.4444444444444444, 0.5555555555555556, 0.6666666666666666,
+      0.4444444444444444, 0.5555555555555556, 0.6666666666666666, 0.7777777777777778,
+      0.5555555555555556, 0.4444444444444444, 0.7777777777777778, 0.6666666666666666,
+      0.4444444444444444, 0.5555555555555556, 0.4444444444444444, 0.5555555555555556,
+      0.5555555555555556, 0.4444444444444444, 0.5555555555555556, 0.4444444444444444,
+      0.6666666666666666, 0.5555555555555556, 0.6666666666666666, 0.5555555555555556,
+      0.5555555555555556, 0.2222222222222222, 0.5555555555555556, 0.2222222222222222,
+      0.2222222222222222, 0.5555555555555556, 0.2222222222222222, 0.5555555555555556,
+      0.5555555555555556, 0.6666666666666666, 0.5555555555555556, 0.6666666666666666,
+      0.4444444444444444, 0.5555555555555556, 0.4444444444444444, 0.5555555555555556,
+      0.5555555555555556, 0.4444444444444444, 0.5555555555555556, 0.4444444444444444,
+      0.6666666666666666, 0.7777777777777778, 0.4444444444444444, 0.5555555555555556,
+      0.7777777777777778, 0.6666666666666666, 0.5555555555555556, 0.4444444444444444,
+      0.6666666666666666, 0.5555555555555556, 0.4444444444444444, 0.3333333333333333,
+      0.5555555555555556, 0.2222222222222222, 0.3333333333333333, 0.0
+    ],
+    "normalization_alpha": 9.0,
+    "projected_select_state": 0,
+    "sequence": ["PREP", "SELECT", "PREP_DAGGER"]
+  },
+  "contract_sha256": "c7fe6274c6ce939af7620b3501abb9082d3c51c3fcd2116265f976e860ce1dd7",
+  "evidence_class": "SIMULATION_PROVIDER_NEUTRAL_CIRCUIT_CONTRACT",
+  "nonclaims": [
+    "not target-aware transpilation",
+    "not provider execution",
+    "not fault-tolerant resource evidence",
+    "not QSVT end-to-end execution",
+    "not quantum advantage or replacement evidence"
+  ],
+  "prep": {
+    "amplitude_norm_residual": 0.0,
+    "amplitudes": [
+      0.7071067811865476,
+      0.23570226039551584, 0.23570226039551584, 0.23570226039551584,
+      0.23570226039551584, 0.23570226039551584, 0.23570226039551584,
+      0.23570226039551584, 0.23570226039551584, 0.23570226039551584,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+    ],
+    "definition": "PREP|0^4>=sum_l sqrt(|c_l|/alpha)|l>",
+    "inverse_required_after_select": true
+  },
+  "registers": {
+    "select_is_little_endian": true,
+    "select_qubits": 4,
+    "system_is_little_endian": true,
+    "system_qubits": 6,
+    "total_logical_qubits": 10
+  },
+  "schema": "uqpu-er6-lcu-prep-select-circuit-v1",
+  "select": {
+    "branches": [
+      {"coefficient_sign": 1, "pauli_z_system_qubits": [], "select_index": 0},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [0, 2], "select_index": 1},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [0, 3], "select_index": 2},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [0, 4], "select_index": 3},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [1, 4], "select_index": 4},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [1, 5], "select_index": 5},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [2, 3], "select_index": 6},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [2, 4], "select_index": 7},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [3, 4], "select_index": 8},
+      {"coefficient_sign": -1, "pauli_z_system_qubits": [3, 5], "select_index": 9}
+    ],
+    "definition": "sum_l |l><l| tensor sign(c_l)P_l",
+    "padded_identity_indices": [10, 11, 12, 13, 14, 15]
+  },
+  "upstream_contract_sha256": "a83c5830d67090cb79a75a3e9f7dc5ed39f28ef31cac9d2fed7a5136be7c7aac",
+  "upstream_work_id": "QOS-AUDIT-010B6",
+  "work_id": "QOS-AUDIT-010B7"
+}

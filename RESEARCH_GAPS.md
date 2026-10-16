@@ -371,6 +371,16 @@ QOS-AUDIT-010B6 replaces the supplied dense signal unitary at the operator-contr
 
 **Next experiment / unlock:** QOS-AUDIT-010B7 provider-neutral PREP/SELECT synthesis, pinned independent-SDK projected-operator reconstruction and measured decomposition scaling, followed by dated target-aware no-submit transpilation.
 
+### RG-033 update — PREP/SELECT circuit contract implemented; hosted SDK gate pending
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_PROVIDER_NEUTRAL_CIRCUIT_CONTRACT
+**Date:** 2026-10-16
+
+QOS-AUDIT-010B7 fixes a ten-qubit `PREP -> SELECT -> PREP_DAGGER` circuit for the unchanged ER6 LCU. It commits all 16 PREP amplitudes, ten SELECT branches, six padded identity addresses, register endianness, the expected 64-state projected diagonal and fail-closed provider authorization. Core construction, artifact and mutation tests pass.
+
+**Why still open:** the optional pinned SDK has not yet executed on this commit. No decomposed counts, depth, bytes or independent projected-operator residual may be accepted until hosted Qiskit produces them. The circuit remains generic, not target-aware, fault-tolerant, executed or economic evidence.
+
+**Next experiment / unlock:** run Qiskit 2.5.2 on the exact commit, require projected and decomposed residuals <= `2e-12`, persist the provenance-bound result, then integrate one verified block-encoding query with the frozen QSVT sequence. Target-aware no-submit transpilation follows only after that composition.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

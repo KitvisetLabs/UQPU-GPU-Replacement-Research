@@ -27,3 +27,7 @@ Lane A now owns an explicit ER6 workload-derived LCU operator contract: 10 activ
 Lanes B–I were explicitly reviewed. B has no submission; C makes no memory/storage replacement claim; D/G have no target or fabrication response; E has no new BIO-001/FUS-001/material measurement; F keeps resources and economics fail-closed; H records the handoff without capital authorization; I remains `MODEL_ONLY`. FND/EQN and INV-029–035 retain their evidence gates.
 
 **Verified checkpoint:** repair commit `081089398779a6439f0a8edd70c35ecffb068bf0`; cold-start run #5 and project run #730 succeeded. The initial cross-version digest failure in run #729 was repaired with deterministic floating-point summation and retained as a negative reproducibility result.
+
+## Cycle 008 Delta 06
+
+Lane A now has a deterministic provider-neutral PREP/SELECT circuit contract for the ER6 LCU: four select qubits, six system qubits, 16 amplitudes, ten active SELECT branches and six padded identity addresses. The pinned-Qiskit exact-commit gate is pending; no decomposed resources or independent residual are predeclared. B–I and FND/EQN were reviewed with unchanged no-submit, no-memory-equivalence, no-device/factory, no-commercial-energy, no-cost-advantage, no-capital-authorization and no-vehicle-demonstration boundaries.

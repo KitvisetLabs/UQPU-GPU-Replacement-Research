@@ -543,3 +543,11 @@ Pinned-SDK agreement and basis decomposition may close convention, ordering, ser
 ## 2026-10-16 — D110: An algebraic LCU contract is not an executable block encoding
 
 **Decision:** A workload-derived Pauli/LCU decomposition may close operator definition, normalization, term-access and exhaustive basis-agreement questions. It does not close PREP/SELECT synthesis, QROM precision, decomposed resources, target feasibility or economics. Until an independently reconstructed circuit exists, concrete gate/T-count/byte/energy/cost fields remain null and sparse-QROM theorems remain comparison bounds rather than project measurements.
+
+## 2026-10-16 — D111: Separate provider-neutral circuit, SDK reproduction and target evidence
+
+**Decision:** A deterministic PREP/SELECT gate contract may advance RG-033 to SDK testing, but it is not accepted as independently reproduced until the pinned SDK reconstructs the projected operator and its decomposition on the exact commit. Generic `rz/sx/x/cx` counts are logical compilation evidence only; target routing, calibration, QPU execution, energy and economics remain separate gates.
+
+## 2026-10-16 — D112: Dense-QROM leading factors require a matched workspace contract
+
+**Decision:** The dense-QROM result in arXiv:2610.02321 is `LITERATURE_ONLY`. Its leading Toffoli factors may be compared only after freezing the same table, precision, dirty-qubit/workspace budget and restoration, and counting complete resources. It cannot be recorded as a 2x/4x UQPU improvement from the paper alone.
