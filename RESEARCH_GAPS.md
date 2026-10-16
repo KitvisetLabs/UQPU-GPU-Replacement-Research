@@ -351,6 +351,16 @@ agreement within `2e-12`, explicit circuit and reproducible resource provenance.
 **Review trigger:** independently executable circuit artifact or a documented SDK
 convention blocker.
 
+### RG-033 update — independent SDK circuit gate passed, scalable oracle remains open
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_INDEPENDENT_SDK_CHECK
+**Date:** 2026-10-16
+
+Pinned Qiskit 2.5.2 independently reproduced QOS-AUDIT-010B4 with repository-vs-SDK residual `1.3429224847042392e-15`, decomposed-vs-repository residual `9.147089449167083e-14`, depth 811, 162 CX gates and 25,234 serialized OpenQASM 2 bytes. GitHub Actions provenance is bound in `benchmarks/results/cycle008-delta03-qos-audit-010b5-qiskit.json`.
+
+**Why still open:** the 4x4 signal unitary is supplied as a dense two-qubit instruction. This proves the bounded convention/decomposition, not a scalable workload oracle or block encoding. No target, layout, routing, schedule, calibration, shots, execution ID, energy or bill exists.
+
+**Next experiment / unlock:** construct the signal unitary from an explicit frozen workload oracle, demonstrate resource scaling, then transpile against a dated backend target/snapshot while keeping paid submission disabled.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

@@ -1,0 +1,54 @@
+{
+  "schema": "uqpu-qos-audit-010b5-qiskit-reproduction-v1",
+  "contract_id": "QOS-AUDIT-010B5",
+  "upstream_contract_id": "QOS-AUDIT-010B4",
+  "provenance": {
+    "commit": "6611cddb54ac6b423c05f9f9d2be77ff9007be52",
+    "github_actions_run_id": 38837122230,
+    "github_actions_run_number": 721,
+    "github_actions_job_id": 116768863152,
+    "captured_from": "successful qiskit-verification job log",
+    "date": "2026-10-16"
+  },
+  "sdk": {
+    "name": "qiskit",
+    "version": "2.5.2",
+    "requirement": "qiskit==2.5.2"
+  },
+  "environment": {
+    "python": "3.12.15",
+    "implementation": "CPython",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39"
+  },
+  "operator_agreement": {
+    "repository_vs_qiskit_max_abs_residual": 1.3429224847042392e-15,
+    "projected_real_block_vs_target_max_abs_residual": 5.440092820663267e-15,
+    "decomposed_vs_repository_max_abs_residual": 9.147089449167083e-14,
+    "tolerance": 2e-12
+  },
+  "resources": {
+    "logical_qubits": 2,
+    "dense_signal_instructions": 81,
+    "phase_rotations": 82,
+    "basis_gates": ["rz", "sx", "x", "cx"],
+    "decomposed_operation_counts": {"cx": 162, "rz": 730, "sx": 486, "x": 81},
+    "decomposed_depth": 811,
+    "decomposed_size": 1459,
+    "serialized_openqasm2_bytes": 25234,
+    "host_runtime_ns": 434993141,
+    "host_peak_traced_bytes": 849122,
+    "shots": 0,
+    "provider_jobs": 0,
+    "provider_execution_id": null,
+    "provider_cost": null,
+    "energy_j": null
+  },
+  "passed": true,
+  "evidence_label": "SIMULATION_INDEPENDENT_SDK_CHECK",
+  "limitations": [
+    "The dense two-qubit signal unitary is an input instruction, not a scalable block-encoding construction.",
+    "Generic-basis decomposition is not target-aware routing, scheduling, calibration, or execution.",
+    "Host runtime and traced Python memory are workflow-environment measurements, not QPU resources.",
+    "No provider job, shot, bill, energy measurement, quantum advantage, or replacement claim."
+  ]
+}

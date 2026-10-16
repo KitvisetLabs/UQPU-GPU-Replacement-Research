@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 import unittest
 
 try:
@@ -10,6 +12,22 @@ from uqpu.qos_d23_qsvt_qiskit_reproduction import (
     build_qiskit_fixture_circuit,
     reproduce_with_qiskit,
 )
+
+
+ARTIFACT = Path(__file__).resolve().parents[3] / "benchmarks/results/cycle008-delta03-qos-audit-010b5-qiskit.json"
+
+
+class QOSD23QSVTPersistedQiskitCertificateTests(unittest.TestCase):
+    def test_persisted_certificate_is_provenance_bound_and_fail_closed(self):
+        result = json.loads(ARTIFACT.read_text(encoding="utf-8"))
+        self.assertTrue(result["passed"])
+        self.assertEqual(result["sdk"]["requirement"], "qiskit==2.5.2")
+        self.assertEqual(result["provenance"]["commit"], "6611cddb54ac6b423c05f9f9d2be77ff9007be52")
+        self.assertEqual(result["provenance"]["github_actions_run_id"], 38837122230)
+        self.assertEqual(result["resources"]["provider_jobs"], 0)
+        self.assertIsNone(result["resources"]["provider_cost"])
+        self.assertIsNone(result["resources"]["energy_j"])
+        self.assertLessEqual(result["operator_agreement"]["decomposed_vs_repository_max_abs_residual"], 2e-12)
 
 
 @unittest.skipUnless(qiskit is not None, "optional pinned Qiskit dependency")

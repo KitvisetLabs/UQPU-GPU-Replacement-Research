@@ -1071,3 +1071,15 @@ Priority #1 quantum programming, all eight permanent lanes A–H, FND/EQN, SCM, 
 Next gate: RG-033 independent pinned-SDK ER6/QSVT circuit/resource reproduction, alongside RG-034's bounded identifiability-certified ODE fixture. Exact-commit GitHub CI remains required before this checkpoint can be called synchronized.
 
 **Synchronization result:** GitHub commit `2bc69923b40ebe55ef1ace476477770e0540514c` has tree `80eb1cb49bb549173d1b371ed3ea94020c5a9855`, exactly matching the locally tested tree. GitHub Actions run #720 (run ID `38664868703`) completed `success` on 2026-10-15 with all eight jobs passing. Cycle 008 remains active because RG-033 and RG-034 are open; this records a verified checkpoint, not a cycle closeout.
+
+### 2026-10-16 — Synchronized Cycle 008 Delta 03 independent QSVT SDK checkpoint
+
+Started from canonical `main` commit `13dcf00282594ad44bf323c57604fb91b62613e9` and verified prior run #720 success. Implemented QOS-AUDIT-010B5 in pinned Qiskit 2.5.2. GitHub Actions run #721's `qiskit-verification` job passed both new tests and emitted a provenance-bound certificate: repository-vs-Qiskit residual `1.3429224847042392e-15`, decomposed-vs-repository residual `9.147089449167083e-14`, generic-basis depth 811, 162 CX, 730 RZ, 486 SX, 81 X, and 25,234 serialized bytes. The dense signal unitary remains an input instruction, so RG-033 is partially unlocked rather than closed.
+
+Fresh surveillance on 2026-10-16 found a measurement-efficient differentiable quantum architecture-search result reporting 39–41% fewer requested gradient measurements on named combinatorial benchmarks. The project records it as `LITERATURE_ONLY` and adds matched-objective fields separating requested measurements, executed shots, host work and total cost per accepted task. Official Qiskit documentation was checked for `UnitaryGate`, basis synthesis and target distinctions.
+
+Priority #1, all permanent lanes A–H, FND/EQN, SCM, AI-COST and QOS/QSVT were explicitly inspected. INV-025–035, multilingual Thai/English/Chinese/Japanese/Korean/German master references, strategic AI/funding references and evidence boundaries were preserved. BIO-001, FUS-001 and FIN-001 gained no new physical or commercial evidence. No paid job, provider execution, material purchase/fabrication, human study, funding authorization, new physical law, quantum advantage, subsystem replacement, 100×/100,000,000× result or Data-Center-to-Phone achievement is claimed.
+
+Next gate: explicit scalable workload block encoding plus target-aware no-submit transpilation; in parallel, RG-034's identifiability-certified ODE fixture.
+
+**Synchronization result:** GitHub Actions run #721 (run ID `38837122230`) completed `success` on 2026-10-16 with all eight jobs passing. The implementation tree at `6611cddb54ac6b423c05f9f9d2be77ff9007be52` is therefore the verified measurement source for the persisted QOS-AUDIT-010B5 certificate.

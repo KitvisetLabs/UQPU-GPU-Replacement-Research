@@ -525,3 +525,7 @@ Cycle 008's twelve validators can prove that a synthetic record is internally co
 ## 2026-10-15 — D106: Separate equation generation, identifiability and untouched evaluation
 
 Equation discovery must version the generator/harness separately from the candidate, use distinct fit/selection/test commitments, and compute identifiability or exhaustion with deterministic mathematics outside the language model. A test set may score the frozen candidate but may not select it. A lower bound transfers only when the project's workload satisfies the theorem's explicit model and assumptions.
+
+## 2026-10-16 — D107: A decomposed dense unitary is a circuit certificate, not a scalable oracle
+
+Pinned-SDK agreement and basis decomposition may close convention, ordering, serialization and bounded-resource questions for the declared fixture. They do not establish that the dense signal unitary can be constructed efficiently for a useful workload, nor do generic basis gates establish target routing, scheduling, calibration, execution, energy or cost. RG-033 remains partially open until an explicit scalable block encoding and target-aware artifact exist.

@@ -279,3 +279,18 @@ fusion result, WACC reduction, new physical law, quantum advantage, >=100x or
 | H | sensitivity-ranked decisive gates; null capital | STRATEGIC MODEL | owner decision after evidence/budget |
 
 FND/EQN now rejects missing/mismatched exact dimension vectors; SCM remains fictional and non-human; AI-COST rejects leakage/incomplete accounting; QOS/QSVT rejects semantic mismatch and provider-evidence mixing. All remain blocked from real-world promotion. The full local suite passed 470 tests with 8 optional-environment skips.
+
+## Synchronized Cycle 008 Delta 03 — 2026-10-16
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | pinned-SDK QSVT circuit/operator reproduction | SIMULATION | scalable workload block encoding |
+| B | provider-neutral QASM; execution fields null | DRY_RUN_ONLY | target-aware no-submit transpilation |
+| C | 25,234 serialized bytes; runner host runtime/memory | CI MEASUREMENT | controlled I/O/transfer accounting |
+| D | depth 811 and 162 generic CX demand exposed | MODEL_ONLY | physical schedule/calibration |
+| E | BIO/FUS/material gates reviewed; no new measurement | DATA_BLOCKED | functional-unit evidence |
+| F | exact provenance, tolerance and resource certificate | REPRODUCIBLE SIMULATION | baseline plus accepted-task cost |
+| G | generic gate demand retained upstream | GOVERNED DOWNSTREAM | target/device response contract |
+| H | software-first uncertainty reduction; null capital | STRATEGIC GATE | owner-authorized decisive experiment |
+
+FND/EQN and RG-034 remain open without a promoted equation. SCM remains fictional with no human study. AI-COST now separates requested measurements from executed shots and end-to-end accepted-task cost. QOS-AUDIT-010B5 passes the bounded SDK gate but not scalability, target execution or economics.
