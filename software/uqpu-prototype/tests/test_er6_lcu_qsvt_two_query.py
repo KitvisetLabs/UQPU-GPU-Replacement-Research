@@ -68,6 +68,10 @@ class ER6QSVTTwoQueryPinnedQiskitTests(unittest.TestCase):
                 self.assertLessEqual(value, result["operator_agreement"]["tolerance"])
         self.assertTrue(set(result["resources"]["decomposed_operation_counts"]).issubset(BASIS_GATES))
         self.assertEqual(result["resources"]["provider_jobs"], 0)
+        self.assertEqual(result["spectral_sector_agreement"]["workload_sectors_checked"], 64)
+        for key, value in result["spectral_sector_agreement"].items():
+            if key.endswith("residual"):
+                self.assertLessEqual(value, result["spectral_sector_agreement"]["tolerance"])
 
 
 if __name__ == "__main__":

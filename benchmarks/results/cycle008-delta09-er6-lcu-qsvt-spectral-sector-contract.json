@@ -1,0 +1,1014 @@
+{
+  "authorization": {
+    "paid_execution": false,
+    "provider_submission": false
+  },
+  "contract_sha256": "fb796c3192526eefa8e2411c9d08c338701d8262888f3b1b2b77d075be66de5d",
+  "evidence_class": "SIMULATION_SPECTRAL_SECTOR_CHECK",
+  "nonclaims": [
+    "not full degree-81 synthesis",
+    "not target-aware transpilation or provider execution",
+    "not hardware, energy, cost, advantage, or replacement evidence"
+  ],
+  "phase_source": {
+    "phase_fingerprint": "268d1809a8d88309df001d2c63b1f78ba5101d2b9e254c304b014ba4e8397445",
+    "selected_indices": [
+      0,
+      1,
+      2
+    ],
+    "selected_values": [
+      0.6982494260684668,
+      0.14719190625316722,
+      0.5961603783867676
+    ]
+  },
+  "schema": "uqpu-er6-lcu-qsvt-spectral-sector-v1",
+  "spectral_contract": {
+    "projector_phase": "diag(exp(i*phi),exp(-i*phi))",
+    "recurrence": "P(phi_0) U_a P(phi_1) U_a P(phi_2)",
+    "rows": [
+      {
+        "closed_form_amplitude": [
+          0.4110252589437355,
+          0.9116239556474124
+        ],
+        "cut_value": 0,
+        "explicit_2x2_amplitude": [
+          0.41102525894373537,
+          0.9116239556474124
+        ],
+        "max_abs_residual": 1.1102230246251565e-16,
+        "normalized_eigenvalue": 0.0,
+        "signal_complement": 1.0,
+        "system_index": 0
+      },
+      {
+        "closed_form_amplitude": [
+          0.37967084269047957,
+          0.9205175136167733
+        ],
+        "cut_value": 3,
+        "explicit_2x2_amplitude": [
+          0.37967084269047935,
+          0.9205175136167734
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.3333333333333333,
+        "signal_complement": 0.9428090415820634,
+        "system_index": 1
+      },
+      {
+        "closed_form_amplitude": [
+          0.39708996283117726,
+          0.9155766480782395
+        ],
+        "cut_value": 2,
+        "explicit_2x2_amplitude": [
+          0.39708996283117715,
+          0.9155766480782397
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.2222222222222222,
+        "signal_complement": 0.9749960430435691,
+        "system_index": 2
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 3
+      },
+      {
+        "closed_form_amplitude": [
+          0.37967084269047957,
+          0.9205175136167733
+        ],
+        "cut_value": 3,
+        "explicit_2x2_amplitude": [
+          0.37967084269047935,
+          0.9205175136167734
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.3333333333333333,
+        "signal_complement": 0.9428090415820634,
+        "system_index": 4
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 5
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 6
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 7
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 8
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 9
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 10
+      },
+      {
+        "closed_form_amplitude": [
+          0.2403178815648977,
+          0.9600444379250447
+        ],
+        "cut_value": 7,
+        "explicit_2x2_amplitude": [
+          0.24031788156489753,
+          0.9600444379250448
+        ],
+        "max_abs_residual": 2.0014830212433605e-16,
+        "normalized_eigenvalue": 0.7777777777777778,
+        "signal_complement": 0.6285393610547089,
+        "system_index": 11
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 12
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 13
+      },
+      {
+        "closed_form_amplitude": [
+          0.2403178815648977,
+          0.9600444379250447
+        ],
+        "cut_value": 7,
+        "explicit_2x2_amplitude": [
+          0.24031788156489753,
+          0.9600444379250448
+        ],
+        "max_abs_residual": 2.0014830212433605e-16,
+        "normalized_eigenvalue": 0.7777777777777778,
+        "signal_complement": 0.6285393610547089,
+        "system_index": 14
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 15
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 16
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 17
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 18
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 19
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 20
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 21
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 22
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 23
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 24
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 25
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 26
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 27
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 28
+      },
+      {
+        "closed_form_amplitude": [
+          0.39708996283117726,
+          0.9155766480782395
+        ],
+        "cut_value": 2,
+        "explicit_2x2_amplitude": [
+          0.39708996283117715,
+          0.9155766480782397
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.2222222222222222,
+        "signal_complement": 0.9749960430435691,
+        "system_index": 29
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 30
+      },
+      {
+        "closed_form_amplitude": [
+          0.39708996283117726,
+          0.9155766480782395
+        ],
+        "cut_value": 2,
+        "explicit_2x2_amplitude": [
+          0.39708996283117715,
+          0.9155766480782397
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.2222222222222222,
+        "signal_complement": 0.9749960430435691,
+        "system_index": 31
+      },
+      {
+        "closed_form_amplitude": [
+          0.39708996283117726,
+          0.9155766480782395
+        ],
+        "cut_value": 2,
+        "explicit_2x2_amplitude": [
+          0.39708996283117715,
+          0.9155766480782397
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.2222222222222222,
+        "signal_complement": 0.9749960430435691,
+        "system_index": 32
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 33
+      },
+      {
+        "closed_form_amplitude": [
+          0.39708996283117726,
+          0.9155766480782395
+        ],
+        "cut_value": 2,
+        "explicit_2x2_amplitude": [
+          0.39708996283117715,
+          0.9155766480782397
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.2222222222222222,
+        "signal_complement": 0.9749960430435691,
+        "system_index": 34
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 35
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 36
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 37
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 38
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 39
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 40
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 41
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 42
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 43
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 44
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 45
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 46
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 47
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 48
+      },
+      {
+        "closed_form_amplitude": [
+          0.2403178815648977,
+          0.9600444379250447
+        ],
+        "cut_value": 7,
+        "explicit_2x2_amplitude": [
+          0.24031788156489753,
+          0.9600444379250448
+        ],
+        "max_abs_residual": 2.0014830212433605e-16,
+        "normalized_eigenvalue": 0.7777777777777778,
+        "signal_complement": 0.6285393610547089,
+        "system_index": 49
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 50
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 51
+      },
+      {
+        "closed_form_amplitude": [
+          0.2403178815648977,
+          0.9600444379250447
+        ],
+        "cut_value": 7,
+        "explicit_2x2_amplitude": [
+          0.24031788156489753,
+          0.9600444379250448
+        ],
+        "max_abs_residual": 2.0014830212433605e-16,
+        "normalized_eigenvalue": 0.7777777777777778,
+        "signal_complement": 0.6285393610547089,
+        "system_index": 52
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 53
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 54
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 55
+      },
+      {
+        "closed_form_amplitude": [
+          0.2856075939307118,
+          0.9471981875248565
+        ],
+        "cut_value": 6,
+        "explicit_2x2_amplitude": [
+          0.2856075939307115,
+          0.9471981875248565
+        ],
+        "max_abs_residual": 2.7755575615628914e-16,
+        "normalized_eigenvalue": 0.6666666666666666,
+        "signal_complement": 0.7453559924999299,
+        "system_index": 56
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 57
+      },
+      {
+        "closed_form_amplitude": [
+          0.35528407449350274,
+          0.9274347253707209
+        ],
+        "cut_value": 4,
+        "explicit_2x2_amplitude": [
+          0.3552840744935025,
+          0.927434725370721
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.4444444444444444,
+        "signal_complement": 0.8958064164776166,
+        "system_index": 58
+      },
+      {
+        "closed_form_amplitude": [
+          0.37967084269047957,
+          0.9205175136167733
+        ],
+        "cut_value": 3,
+        "explicit_2x2_amplitude": [
+          0.37967084269047935,
+          0.9205175136167734
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.3333333333333333,
+        "signal_complement": 0.9428090415820634,
+        "system_index": 59
+      },
+      {
+        "closed_form_amplitude": [
+          0.32392965824024683,
+          0.9363282833400819
+        ],
+        "cut_value": 5,
+        "explicit_2x2_amplitude": [
+          0.3239296582402467,
+          0.936328283340082
+        ],
+        "max_abs_residual": 1.5700924586837752e-16,
+        "normalized_eigenvalue": 0.5555555555555556,
+        "signal_complement": 0.8314794192830981,
+        "system_index": 60
+      },
+      {
+        "closed_form_amplitude": [
+          0.39708996283117726,
+          0.9155766480782395
+        ],
+        "cut_value": 2,
+        "explicit_2x2_amplitude": [
+          0.39708996283117715,
+          0.9155766480782397
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.2222222222222222,
+        "signal_complement": 0.9749960430435691,
+        "system_index": 61
+      },
+      {
+        "closed_form_amplitude": [
+          0.37967084269047957,
+          0.9205175136167733
+        ],
+        "cut_value": 3,
+        "explicit_2x2_amplitude": [
+          0.37967084269047935,
+          0.9205175136167734
+        ],
+        "max_abs_residual": 2.482534153247273e-16,
+        "normalized_eigenvalue": 0.3333333333333333,
+        "signal_complement": 0.9428090415820634,
+        "system_index": 62
+      },
+      {
+        "closed_form_amplitude": [
+          0.4110252589437355,
+          0.9116239556474124
+        ],
+        "cut_value": 0,
+        "explicit_2x2_amplitude": [
+          0.41102525894373537,
+          0.9116239556474124
+        ],
+        "max_abs_residual": 1.1102230246251565e-16,
+        "normalized_eigenvalue": 0.0,
+        "signal_complement": 1.0,
+        "system_index": 63
+      }
+    ],
+    "sector_dimension": 2,
+    "signal_operator": "[[a,sqrt(1-a^2)],[sqrt(1-a^2),-a]]",
+    "unique_normalized_eigenvalues": [
+      0.0,
+      0.2222222222222222,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.7777777777777778
+    ],
+    "workload_sectors": 64
+  },
+  "upstream_two_query_sha256": "11466d1f06cb4a860bc16fa75fde7efc9326a6c599b60c575a23d2c922daff17",
+  "upstream_work_id": "QOS-AUDIT-010B9",
+  "verification": {
+    "all_64_sectors_checked": true,
+    "explicit_vs_closed_form_max_abs_residual": 2.7755575615628914e-16,
+    "passed": true,
+    "tolerance": 2e-12
+  },
+  "work_id": "QOS-AUDIT-010B10"
+}

@@ -159,6 +159,12 @@ def reproduce_with_qiskit() -> dict[str, Any]:
     if qiskit.__version__ != "2.5.2":
         raise RuntimeError(f"expected {SDK_REQUIREMENT}, got qiskit=={qiskit.__version__}")
     contract = build_two_query_contract(_load_source())
+    from .er6_lcu_qsvt_spectral_sector import (
+        CONTRACT_ID as SPECTRAL_CONTRACT_ID,
+        build_spectral_sector_contract,
+        spectral_sector_amplitudes,
+    )
+    spectral_contract = build_spectral_sector_contract(_load_source())
     tracemalloc.start()
     started = perf_counter_ns()
 
@@ -168,8 +174,16 @@ def reproduce_with_qiskit() -> dict[str, Any]:
     logical = Operator(circuit).data
     full_logical_residual = _max_residual(logical, expected)
     indices = np.asarray([system_index << 4 for system_index in range(64)])
+    logical_projected = logical[np.ix_(indices, indices)]
     projected_residual = _max_residual(
-        logical[np.ix_(indices, indices)], expected[np.ix_(indices, indices)]
+        logical_projected, expected[np.ix_(indices, indices)]
+    )
+    sector_amplitudes = np.asarray(spectral_sector_amplitudes(_load_source()))
+    logical_sector_diagonal_residual = _max_residual(
+        np.diag(logical_projected), sector_amplitudes
+    )
+    logical_sector_offdiagonal_residual = _max_residual(
+        logical_projected, np.diag(np.diag(logical_projected))
     )
 
     decomposed = transpile(
@@ -183,6 +197,13 @@ def reproduce_with_qiskit() -> dict[str, Any]:
     decomposed_projected_residual = _max_residual(
         decomposed_operator[np.ix_(indices, indices)], expected[np.ix_(indices, indices)]
     )
+    decomposed_projected = decomposed_operator[np.ix_(indices, indices)]
+    decomposed_sector_diagonal_residual = _max_residual(
+        np.diag(decomposed_projected), sector_amplitudes
+    )
+    decomposed_sector_offdiagonal_residual = _max_residual(
+        decomposed_projected, np.diag(np.diag(decomposed_projected))
+    )
     qasm = qasm2.dumps(decomposed)
     runtime_ns = perf_counter_ns() - started
     _, peak_bytes = tracemalloc.get_traced_memory()
@@ -193,6 +214,10 @@ def reproduce_with_qiskit() -> dict[str, Any]:
         and projected_residual <= TOLERANCE
         and decomposed_full_residual <= TOLERANCE
         and decomposed_projected_residual <= TOLERANCE
+        and logical_sector_diagonal_residual <= TOLERANCE
+        and logical_sector_offdiagonal_residual <= TOLERANCE
+        and decomposed_sector_diagonal_residual <= TOLERANCE
+        and decomposed_sector_offdiagonal_residual <= TOLERANCE
         and set(counts).issubset(BASIS_GATES)
     )
     return {
@@ -210,6 +235,16 @@ def reproduce_with_qiskit() -> dict[str, Any]:
             "logical_vs_independent_projected_max_abs_residual": projected_residual,
             "decomposed_vs_independent_full_max_abs_residual": decomposed_full_residual,
             "decomposed_vs_independent_projected_max_abs_residual": decomposed_projected_residual,
+            "tolerance": TOLERANCE,
+        },
+        "spectral_sector_agreement": {
+            "work_id": SPECTRAL_CONTRACT_ID,
+            "contract_sha256": spectral_contract["contract_sha256"],
+            "workload_sectors_checked": 64,
+            "logical_projected_diagonal_vs_2x2_max_abs_residual": logical_sector_diagonal_residual,
+            "logical_projected_offdiagonal_max_abs_residual": logical_sector_offdiagonal_residual,
+            "decomposed_projected_diagonal_vs_2x2_max_abs_residual": decomposed_sector_diagonal_residual,
+            "decomposed_projected_offdiagonal_max_abs_residual": decomposed_sector_offdiagonal_residual,
             "tolerance": TOLERANCE,
         },
         "resources": {
@@ -231,7 +266,7 @@ def reproduce_with_qiskit() -> dict[str, Any]:
             "energy_j": None,
         },
         "passed": passed,
-        "evidence_class": "SIMULATION_INDEPENDENT_SDK_TWO_QUERY_CHECK",
+        "evidence_class": "SIMULATION_INDEPENDENT_SDK_SPECTRAL_SECTOR_CHECK",
         "limitations": contract["nonclaims"] + [
             "The independently assembled reference reuses the already verified U_ER6 primitive.",
             "Generic basis decomposition is not a backend target, schedule, calibration, or bill.",

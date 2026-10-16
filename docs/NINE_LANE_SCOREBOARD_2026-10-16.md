@@ -63,3 +63,18 @@ evidence. B–I boundaries remain unchanged: no submission, memory replacement,
 device/factory requirement, commercial energy/material result, cost advantage,
 capital/WACC result or vehicle demonstration. The next Lane A gate is a 2x2
 spectral-sector recurrence across all 64 workload eigenvalues.
+
+## Cycle 008 Delta 09
+
+Lane A now has an independent 2x2 recurrence for every one of the 64 ER6
+workload sectors. Explicit and closed-form amplitudes agree to
+`2.7755575615628914e-16`; local pinned-Qiskit logical/decomposed projected
+diagonal residuals are `1.4004310501204187e-13`/`1.06356642317011e-13` against
+`2e-12`, with off-diagonal leakage also below threshold. This is
+`SIMULATION_SPECTRAL_SECTOR_CHECK`, not degree-81, target or hardware evidence.
+
+B–I were explicitly reviewed with unchanged no-submit, no-memory-equivalence,
+no-device/factory, no-commercial-energy/material, no-cost-advantage,
+no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN now records
+AI-generated mathematical instruments below `THEORY`; INV-029–035 remain gated.
+Next is exact-commit hosted reproduction, then bounded 3/5-query prefixes.

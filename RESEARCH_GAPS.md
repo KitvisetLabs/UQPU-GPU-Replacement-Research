@@ -442,10 +442,35 @@ over all 64 ER6 eigenvalues. Only
 after that passes should a bounded prefix ladder (for example 3 and 5 queries)
 be used to test recurrence scaling and memory limits.
 
+### RG-033 update — all 64 spectral sectors checked
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_SPECTRAL_SECTOR_CHECK
+**Date:** 2026-10-17
+
+QOS-AUDIT-010B10 reduces every ER6 workload eigenvalue to an independent 2x2
+Hermitian-involution recurrence. All 64 sectors and seven unique normalized
+eigenvalues were checked. Explicit matrix multiplication agrees with the closed
+form to `2.7755575615628914e-16`; local pinned Qiskit projected logical and
+decomposed diagonal residuals are `1.4004310501204187e-13` and
+`1.06356642317011e-13`, below `2e-12`. Projected off-diagonal leakage is also
+below threshold.
+
+**Why still open:** this is a two-query bounded fixture. It does not establish
+degree-81 synthesis, stable scaling, target feasibility, accepted workload
+quality, energy, cost or advantage. Hosted exact-commit provenance is pending.
+
+**Next experiment / unlock:** hosted reproduction followed by 3- and 5-query
+prefixes using the same sector contract. Record measured runtime, peak host
+memory, serialized bytes and raw residuals; stop on tolerance or resource
+failure instead of extrapolating to 81 queries.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.
 **Current evidence:** Cycle 008 requires explicit quantity kind/unit/dimension vectors and separate train/held-out hashes. The 2026-10-15 literature watch identifies deterministic sensitivity-rank/null-space and experiment-class exhaustion as the next bounded control.
+The 2026-10-17 AI-generated-mathematics watch adds a
+`MATHEMATICAL_INSTRUMENT_CANDIDATE` intake stage: extracted tools remain below
+`THEORY` until assumptions, antecedents, counterexamples and independent proof
+or proof-assistant checks pass.
 **Missing:** frozen confounded ODE, two observation protocols, known null direction, exact split commitments, counterexample search and independently checked rank/exhaustion result.
 **Best current alternative:** keep all generated equations at `MODEL_ONLY` and reject test leakage or dimension imbalance.
 **Unlock criteria:** repository code recovers the known null direction under the non-identifiable protocol, removes it under the discriminating protocol, rejects test-set selection, and issues exhaustion only after enumerating the declared bounded design class.

@@ -161,17 +161,17 @@ jobs:
           name: er6-lcu-qsvt-one-query-${{ github.sha }}
           path: /tmp/uqpu-er6-lcu-qsvt-one-query.json
 
-      - name: Verify ER6 two-query QSVT recurrence against independent matrix assembly
+      - name: Verify ER6 two-query QSVT recurrence and all 64 spectral sectors
         working-directory: software/uqpu-prototype
         run: |
-          python examples/run_er6_lcu_qsvt_two_query.py --output /tmp/uqpu-er6-lcu-qsvt-two-query.json
-          cat /tmp/uqpu-er6-lcu-qsvt-two-query.json
+          python examples/run_er6_lcu_qsvt_two_query.py --output /tmp/uqpu-er6-lcu-qsvt-spectral-sector.json
+          cat /tmp/uqpu-er6-lcu-qsvt-spectral-sector.json
 
-      - name: Upload ER6 QSVT two-query certificate
+      - name: Upload ER6 QSVT spectral-sector certificate
         uses: actions/upload-artifact@v4
         with:
-          name: er6-lcu-qsvt-two-query-${{ github.sha }}
-          path: /tmp/uqpu-er6-lcu-qsvt-two-query.json
+          name: er6-lcu-qsvt-spectral-sector-${{ github.sha }}
+          path: /tmp/uqpu-er6-lcu-qsvt-spectral-sector.json
 
   qsp-phase-synthesis:
     runs-on: ubuntu-latest

@@ -586,3 +586,27 @@ check against the intended QSP response; neither gate substitutes for the other.
 **Reason:** Reusing the same builder can make an order error self-consistent,
 while full-matrix agreement alone does not prove that the chosen recurrence is
 the intended polynomial transform on each singular/eigenvalue sector.
+
+## 2026-10-17 — D118: Spectral-sector agreement is a separate acceptance gate
+
+**Decision:** For the diagonal ER6 workload, require the projected multi-query
+prefix to agree across all 64 workload sectors with an independently derived
+2x2 Hermitian-involution recurrence. Check both projected diagonal amplitudes
+and leakage/off-diagonal residuals before increasing prefix length.
+
+**Reason:** Full 1024x1024 order agreement can reuse the same block primitive
+without proving the intended scalar response. The 2x2 reduction uses only each
+normalized eigenvalue and the frozen phase convention, so it is a distinct
+falsifier. It remains simulation, not hardware or advantage evidence.
+
+## 2026-10-17 — D119: AI-generated mathematical instruments enter below theory
+
+**Decision:** Extracted AI-generated lemmas, constructions or inequalities are
+recorded as `MATHEMATICAL_INSTRUMENT_CANDIDATE`, beneath `THEORY`. Promotion
+requires frozen assumptions, antecedent comparison, counterexample search,
+independent proof or proof-assistant checking where practical, and a held-out
+consequence. A mathematical candidate cannot by itself change an engineering
+limit, physical law or economics claim.
+
+**Reason:** arXiv:2610.17090 offers a useful extraction workflow but explicitly
+reports provisional novelty and no compiled Lean verification for its survey.
