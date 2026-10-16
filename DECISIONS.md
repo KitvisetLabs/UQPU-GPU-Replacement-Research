@@ -555,3 +555,7 @@ Pinned-SDK agreement and basis decomposition may close convention, ordering, ser
 ## 2026-10-16 — D113: Global-phase alignment does not close controlled composition
 
 **Decision:** Independent SDK decomposition must publish both raw and phase-aligned operator residuals. Equivalence up to a global phase can validate the un-controlled quantum operation and generic resource count, but cannot silently certify a future controlled block encoding or QSVT convention. Controlled composition stays blocked until a test proves the phase is handled as a relative phase where required.
+
+## 2026-10-16 — D114: Use explicit multi-controlled phase semantics for diagonal SELECT
+
+**Decision:** ER6 SELECT is diagonal, so a branch-conditioned Pauli-Z is represented directly as an `MCPhase(pi)` over the four address qubits and affected system qubit. Acceptance requires raw projected and full-operator agreement after decomposition; phase alignment remains diagnostic only. Run #732's near-zero phase offset records that the prior failure was not a single global phase.

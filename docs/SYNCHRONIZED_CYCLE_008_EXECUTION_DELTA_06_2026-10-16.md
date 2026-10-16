@@ -81,3 +81,9 @@ consistent with a global phase near pi. The follow-up records raw and
 phase-aligned comparisons separately. Phase-aligned equivalence may validate an
 un-controlled quantum operation and its generic resource count; it does not
 authorize controlled/QSVT composition until a relative-phase test passes.
+
+Run #732 then measured a phase offset of only
+`-9.726339682289133e-14` radians and found no phase-aligned improvement, so the
+single-global-phase hypothesis was rejected. The next implementation expresses
+each branch-conditioned system Z directly as a five-qubit `MCPhase(pi)` and
+returns raw projected/full matrix equality to the acceptance gate.

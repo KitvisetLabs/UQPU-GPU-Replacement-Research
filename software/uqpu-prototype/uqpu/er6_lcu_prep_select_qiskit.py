@@ -121,7 +121,7 @@ def validate_provider_neutral_contract(contract: dict[str, Any]) -> list[str]:
 def build_qiskit_block_encoding(frozen: dict[str, Any] | None = None):
     """Build PREP SELECT PREP† without provider or backend surfaces."""
     from qiskit import QuantumCircuit
-    from qiskit.circuit.library import MCPhaseGate, StatePreparation, ZGate
+    from qiskit.circuit.library import MCPhaseGate, StatePreparation
 
     contract = build_provider_neutral_contract(frozen or _load_source())
     select_count = contract["registers"]["select_qubits"]
@@ -131,7 +131,7 @@ def build_qiskit_block_encoding(frozen: dict[str, Any] | None = None):
     circuit.append(prep, select)
 
     branch_phase = MCPhaseGate(math.pi, num_ctrl_qubits=select_count - 1)
-    controlled_z = ZGate().control(select_count, annotated=False)
+    controlled_z = MCPhaseGate(math.pi, num_ctrl_qubits=select_count)
     for branch in contract["select"]["branches"]:
         if branch["coefficient_sign"] > 0 and not branch["pauli_z_system_qubits"]:
             continue
@@ -197,8 +197,8 @@ def reproduce_with_qiskit() -> dict[str, Any]:
     counts = {str(key): int(value) for key, value in decomposed.count_ops().items()}
     passed = (
         projected_residual <= TOLERANCE
-        and decomposed_phase_aligned_residual <= TOLERANCE
-        and full_operator_phase_aligned_residual <= TOLERANCE
+        and decomposed_raw_residual <= TOLERANCE
+        and full_operator_raw_residual <= TOLERANCE
         and set(counts).issubset(BASIS_GATES)
     )
     return {
@@ -240,7 +240,7 @@ def reproduce_with_qiskit() -> dict[str, Any]:
         "evidence_class": "SIMULATION_INDEPENDENT_SDK_CIRCUIT_CHECK",
         "limitations": contract["nonclaims"] + [
             "Generic basis decomposition is not a backend target, schedule, calibration, or bill.",
-            "Raw and phase-aligned residuals are separate; controlled/QSVT composition remains blocked until the relative-phase convention is fixed.",
+            "Raw and phase-aligned residuals are separate; controlled/QSVT composition requires raw matrix agreement.",
             "Host runtime and traced memory are CI-environment measurements only.",
         ],
     }
