@@ -1,0 +1,65 @@
+{
+  "contract_sha256": "c7fe6274c6ce939af7620b3501abb9082d3c51c3fcd2116265f976e860ce1dd7",
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.12.15"
+  },
+  "evidence_class": "SIMULATION_INDEPENDENT_SDK_CIRCUIT_CHECK",
+  "limitations": [
+    "not target-aware transpilation",
+    "not provider execution",
+    "not fault-tolerant resource evidence",
+    "not QSVT end-to-end execution",
+    "not quantum advantage or replacement evidence",
+    "Generic basis decomposition is not a backend target, schedule, calibration, or bill.",
+    "Raw and phase-aligned residuals are separate; controlled/QSVT composition requires raw matrix agreement.",
+    "Host runtime and traced memory are CI-environment measurements only."
+  ],
+  "operator_agreement": {
+    "decomposed_projected_block_phase_aligned_max_abs_residual": 1.0489639891505853e-14,
+    "decomposed_projected_block_raw_max_abs_residual": 2.870763895486062e-14,
+    "decomposed_vs_logical_full_operator_phase_aligned_max_abs_residual": 5.6594158506632485e-14,
+    "decomposed_vs_logical_full_operator_raw_max_abs_residual": 7.031200573645607e-14,
+    "decomposition_global_phase_offset_rad": -3.732944307575964e-14,
+    "projected_block_max_abs_residual": 5.219141708366291e-14,
+    "tolerance": 2e-12
+  },
+  "passed": true,
+  "provenance": {
+    "commit": "6a7af8a94929ff5eae786144b2dbd6ad1cc88a4b",
+    "github_actions_artifact_id": 12059370354,
+    "github_actions_job_id": 117073392679,
+    "github_actions_run_id": 38930503397,
+    "github_actions_run_number": 733,
+    "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38930503397"
+  },
+  "resources": {
+    "decomposed_depth": 2300,
+    "decomposed_operation_counts": {
+      "cx": 994,
+      "rz": 1845,
+      "sx": 312,
+      "x": 42
+    },
+    "decomposed_size": 3193,
+    "energy_j": null,
+    "host_peak_traced_bytes": 85041183,
+    "host_runtime_ns": 31836811415,
+    "logical_depth": 46,
+    "logical_qubits": 10,
+    "logical_size": 71,
+    "provider_cost": null,
+    "provider_execution_id": null,
+    "provider_jobs": 0,
+    "serialized_openqasm2_bytes": 45937,
+    "shots": 0
+  },
+  "schema": "uqpu-er6-lcu-prep-select-qiskit-v1",
+  "sdk": {
+    "name": "qiskit",
+    "requirement": "qiskit==2.5.2",
+    "version": "2.5.2"
+  },
+  "work_id": "QOS-AUDIT-010B7"
+}

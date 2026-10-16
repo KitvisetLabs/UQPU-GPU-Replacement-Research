@@ -31,3 +31,5 @@ Lanes B–I were explicitly reviewed. B has no submission; C makes no memory/sto
 ## Cycle 008 Delta 06
 
 Lane A now has a deterministic provider-neutral PREP/SELECT circuit contract for the ER6 LCU: four select qubits, six system qubits, 16 amplitudes, ten active SELECT branches and six padded identity addresses. The pinned-Qiskit exact-commit gate is pending; no decomposed resources or independent residual are predeclared. B–I and FND/EQN were reviewed with unchanged no-submit, no-memory-equivalence, no-device/factory, no-commercial-energy, no-cost-advantage, no-capital-authorization and no-vehicle-demonstration boundaries.
+
+**Delta 06 verified:** commit `6a7af8a94929ff5eae786144b2dbd6ad1cc88a4b`, project run #733. The independent one-query circuit gate passed after two preserved negative decomposition results. Lane A's next gate is composed QSVT operator verification, not provider execution. The measured generic circuit resources are not target/fault-tolerant/economic evidence.

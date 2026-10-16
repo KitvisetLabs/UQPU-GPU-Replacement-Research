@@ -385,6 +385,10 @@ QOS-AUDIT-010B7 fixes a ten-qubit `PREP -> SELECT -> PREP_DAGGER` circuit for th
 
 **Second hosted result:** run #732 measured phase offset `-9.726339682289133e-14` rad while the same large raw residuals remained, disproving the single-global-phase diagnosis. The next repair replaces synthesized `Z.control(4)` with an explicit five-qubit `MCPhase(pi)` for each conditional Pauli-Z phase and restores raw matrix equality as the acceptance gate.
 
+**Third hosted result / circuit gate passed:** commit `6a7af8a94929ff5eae786144b2dbd6ad1cc88a4b`, run #733. Explicit `MCPhase(pi)` SELECT passed raw projected/full residuals `2.870763895486062e-14`/`7.031200573645607e-14`. Generic decomposition measured 994 CX, 1,845 RZ, 312 SX, 42 X, depth 2,300 and 45,937 OpenQASM 2 bytes on ten logical qubits. RG-033 remains open because the 81-query QSVT composition, target-aware mapping, shots, provider execution, energy and accepted-task economics are absent.
+
+**Next experiment:** integrate one verified PREP/SELECT query into the frozen QSVT phase convention and test the composed projected transform before multiplying generic resources by 81. A simple multiplication is a bound/proxy, not a synthesized end-to-end circuit.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

@@ -87,3 +87,20 @@ Run #732 then measured a phase offset of only
 single-global-phase hypothesis was rejected. The next implementation expresses
 each branch-conditioned system Z directly as a five-qubit `MCPhase(pi)` and
 returns raw projected/full matrix equality to the acceptance gate.
+
+## Verified hosted checkpoint
+
+Commit `6a7af8a94929ff5eae786144b2dbd6ad1cc88a4b` and project run #733 passed all
+eight jobs. Pinned Qiskit 2.5.2 measured raw projected and full-operator
+decomposition residuals `2.870763895486062e-14` and
+`7.031200573645607e-14`, below the `2e-12` threshold. The generic one-query
+circuit uses ten logical qubits and decomposes to 994 CX, 1,845 RZ, 312 SX and
+42 X gates, depth 2,300, size 3,193 and 45,937 OpenQASM 2 bytes. These are CI
+logical-compilation measurements, not target, fault-tolerant or provider
+resources. Jobs/shots are zero; cost and energy remain null.
+
+The two preceding decomposition failures remain recorded. The successful fix
+used explicit five-qubit `MCPhase(pi)` gates for conditional system-Z phases.
+The next gate is one-query integration with the frozen QSVT convention; the
+project will not multiply this resource ledger by 81 and call it a synthesized
+end-to-end result.

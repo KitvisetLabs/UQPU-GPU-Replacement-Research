@@ -559,3 +559,7 @@ Pinned-SDK agreement and basis decomposition may close convention, ordering, ser
 ## 2026-10-16 — D114: Use explicit multi-controlled phase semantics for diagonal SELECT
 
 **Decision:** ER6 SELECT is diagonal, so a branch-conditioned Pauli-Z is represented directly as an `MCPhase(pi)` over the four address qubits and affected system qubit. Acceptance requires raw projected and full-operator agreement after decomposition; phase alignment remains diagnostic only. Run #732's near-zero phase offset records that the prior failure was not a single global phase.
+
+## 2026-10-16 — D115: Do not extrapolate one-query resources into an end-to-end QSVT result
+
+**Decision:** Run #733 closes the independent generic PREP/SELECT circuit gate for one block-encoding query. Its 994 CX and depth 2,300 are measured generic-basis resources for that circuit only. Multiplication by the degree-81 query count may be retained as a planning proxy, but cannot replace synthesis and operator verification of the composed QSVT circuit.
