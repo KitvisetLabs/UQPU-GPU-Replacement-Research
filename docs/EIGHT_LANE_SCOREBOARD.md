@@ -294,3 +294,7 @@ FND/EQN now rejects missing/mismatched exact dimension vectors; SCM remains fict
 | H | software-first uncertainty reduction; null capital | STRATEGIC GATE | owner-authorized decisive experiment |
 
 FND/EQN and RG-034 remain open without a promoted equation. SCM remains fictional with no human study. AI-COST now separates requested measurements from executed shots and end-to-end accepted-task cost. QOS-AUDIT-010B5 passes the bounded SDK gate but not scalability, target execution or economics.
+
+## A–I migration checkpoint — 2026-10-16
+
+Lane I is now permanent. This legacy filename remains for inbound links, but the current A–I scoreboard is `docs/NINE_LANE_SCOREBOARD_2026-10-16.md`. The machine manifest now enumerates all nine lanes and 36 pairs; CI cold-start validation prevents silent regression to A–H-only coverage.

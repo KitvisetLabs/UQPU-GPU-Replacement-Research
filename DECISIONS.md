@@ -529,3 +529,13 @@ Equation discovery must version the generator/harness separately from the candid
 ## 2026-10-16 — D107: A decomposed dense unitary is a circuit certificate, not a scalable oracle
 
 Pinned-SDK agreement and basis decomposition may close convention, ordering, serialization and bounded-resource questions for the declared fixture. They do not establish that the dense signal unitary can be constructed efficiently for a useful workload, nor do generic basis gates establish target routing, scheduling, calibration, execution, energy or cost. RG-033 remains partially open until an explicit scalable block encoding and target-aware artifact exist.
+
+## 2026-10-16 — D108: Cold-start completeness and commit synchronization are executable gates
+
+**Decision:** A research result is operationally complete only when the repository-owned cold-start audit can recover lanes A–I, evidence boundaries, required entrypoints, next gates, authorization locks and multilingual master-reference coverage. Every new commit uses an explicit branch-specific `Research-Sync` trailer. Missing metadata fails CI.
+
+**Boundary:** This proves discoverability and process conformance, not scientific truth, branch merging or exhaustive fork coverage. Registered/accessibile branch reconciliation remains RG-035; an inaccessible fork is reported, never presumed synchronized.
+
+## 2026-10-16 — D109: Sparse-oracle assumptions become part of RG-033 acceptance
+
+**Decision:** The next scalable QSVT artifact must expose matrix dimension, row/column sparsity, encoding error, normalization, QROM representation and measured circuit resources. Published sparse-QROM/block-encoding bounds are comparison envelopes only and transfer to UQPU economics only after the workload meets their access assumptions and accepted-output contract.

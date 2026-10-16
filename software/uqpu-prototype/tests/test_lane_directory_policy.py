@@ -13,9 +13,9 @@ VERSION_INVARIANTS = REPO_ROOT / "VERSION_INVARIANTS.md"
 
 
 class LaneDirectoryPolicyTests(unittest.TestCase):
-    def test_all_eight_lane_directories_exist(self) -> None:
+    def test_all_nine_lane_directories_exist(self) -> None:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-        self.assertEqual(set(manifest["lanes"]), set("ABCDEFGH"))
+        self.assertEqual(set(manifest["lanes"]), set("ABCDEFGHI"))
         for lane_id, lane in manifest["lanes"].items():
             folder = REPO_ROOT / lane["folder"]
             self.assertTrue(folder.is_dir(), f"Lane {lane_id} folder is missing: {folder}")
@@ -37,9 +37,9 @@ class LaneDirectoryPolicyTests(unittest.TestCase):
 
     def test_all_lane_pairs_are_reviewed_for_possible_integration(self) -> None:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-        expected = {f"{a}<->{b}" for a, b in combinations("ABCDEFGH", 2)}
+        expected = {f"{a}<->{b}" for a, b in combinations("ABCDEFGHI", 2)}
         actual = set(manifest["integration_review_pairs"])
-        self.assertEqual(len(expected), 28)
+        self.assertEqual(len(expected), 36)
         self.assertEqual(actual, expected)
         self.assertIn("D<->G", set(manifest["mandatory_high_leverage_links"]))
 

@@ -1,0 +1,46 @@
+name: Autonomous Cold-Start Handoff Audit
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cold-start-handoff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install prototype
+        working-directory: software/uqpu-prototype
+        run: python -m pip install -e .
+
+      - name: Capture commit message without shell interpolation
+        run: git log -1 --pretty=%B > /tmp/uqpu-commit-message.txt
+
+      - name: Audit cold-start handoff and commit-to-main trailer
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        run: >-
+          python -m uqpu.cold_start_handoff
+          --repository-root .
+          --branch "$BRANCH_NAME"
+          --commit-message-file /tmp/uqpu-commit-message.txt
+          --output cold-start-handoff-audit.json
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cold-start-handoff-audit-${{ github.sha }}
+          path: cold-start-handoff-audit.json

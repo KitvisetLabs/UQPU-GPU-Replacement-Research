@@ -1,8 +1,8 @@
 {
-  "schema": "uqpu-eight-lane-manifest-v1",
+  "schema": "uqpu-nine-lane-manifest-v2",
   "max_directory_depth_from_repo_root": 16,
   "priority_lane": "A",
-  "integration_goal": "maximize defensible integration across A-H around the same useful-output and total-cost mission without forcing scientifically meaningless coupling",
+  "integration_goal": "maximize defensible integration across A-I around the same useful-output and total-cost mission without forcing scientifically meaningless coupling",
   "lanes": {
     "A": {"folder": "research_lanes/A_quantum_programming_runtime", "primary": "quantum programming, workloads, compiler, runtime"},
     "B": {"folder": "research_lanes/B_cloud_qpu_provider_integration", "primary": "cloud QPU and provider integration"},
@@ -11,18 +11,20 @@
     "E": {"folder": "research_lanes/E_materials_energy_cooling_infrastructure", "primary": "materials, biomass, energy, cooling and infrastructure"},
     "F": {"folder": "research_lanes/F_economics_benchmarks_evidence_integration", "primary": "economics, benchmarks, evidence and integration accounting"},
     "G": {"folder": "research_lanes/G_manufacturing_equipment_factory_software", "primary": "manufacturing equipment, factory software and production systems"},
-    "H": {"folder": "research_lanes/H_strategy_finance_future_industries", "primary": "strategy, finance and future industries"}
+    "H": {"folder": "research_lanes/H_strategy_finance_future_industries", "primary": "strategy, finance and future industries"},
+    "I": {"folder": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION", "primary": "field-agnostic contactless vehicle lift, propulsion and matched mission energy/noise contracts"}
   },
   "integration_review_pairs": [
-    "A<->B", "A<->C", "A<->D", "A<->E", "A<->F", "A<->G", "A<->H",
-    "B<->C", "B<->D", "B<->E", "B<->F", "B<->G", "B<->H",
-    "C<->D", "C<->E", "C<->F", "C<->G", "C<->H",
-    "D<->E", "D<->F", "D<->G", "D<->H",
-    "E<->F", "E<->G", "E<->H",
-    "F<->G", "F<->H",
-    "G<->H"
+    "A<->B", "A<->C", "A<->D", "A<->E", "A<->F", "A<->G", "A<->H", "A<->I",
+    "B<->C", "B<->D", "B<->E", "B<->F", "B<->G", "B<->H", "B<->I",
+    "C<->D", "C<->E", "C<->F", "C<->G", "C<->H", "C<->I",
+    "D<->E", "D<->F", "D<->G", "D<->H", "D<->I",
+    "E<->F", "E<->G", "E<->H", "E<->I",
+    "F<->G", "F<->H", "F<->I",
+    "G<->H", "G<->I",
+    "H<->I"
   ],
-  "mandatory_high_leverage_links": ["A<->B", "A<->C", "A<->F", "B<->F", "C<->F", "D<->G", "D<->E", "D<->F", "E<->G", "E<->F", "G<->F"],
-  "pair_review_rule": "Every integrated batch reviews all 28 lane pairs for meaningful coupling. A pair may be marked N/A with rationale; artificial integration is not required.",
+  "mandatory_high_leverage_links": ["A<->B", "A<->C", "A<->F", "A<->I", "B<->F", "C<->F", "C<->I", "D<->G", "D<->E", "D<->F", "D<->I", "E<->G", "E<->F", "E<->I", "F<->I", "G<->I", "H<->I"],
+  "pair_review_rule": "Every integrated batch reviews all 36 lane pairs for meaningful coupling. A pair may be marked N/A with rationale; artificial integration is not required.",
   "evidence_rule": "cross-lane synthesis may not promote weaker evidence to a stronger evidence class"
 }

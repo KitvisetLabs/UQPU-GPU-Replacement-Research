@@ -372,3 +372,15 @@ Pinned Qiskit 2.5.2 independently reproduced QOS-AUDIT-010B4 with repository-vs-
 **Dependencies:** FND-006, EQN-001–006, INV-035, Lane F.
 **Next experiment:** implement the two-protocol confounded-parameter fixture and perturbation/counterexample tests.
 **Review trigger:** reproducible local certificate plus exact-commit CI.
+
+## RG-035 — Autonomous handoff and commit-to-main reconciliation coverage
+**Status:** PARTIALLY_UNLOCKED / PROCESS_VERIFICATION
+**Date:** 2026-10-16
+**Objective:** Make a memoryless agent able to resume from canonical `main`, and detect substantive commits whose research details are not synchronized to main.
+**Current evidence:** machine-readable A–I handoff manifest; deterministic cold-start validator; all-push GitHub Actions workflow; branch-specific `Research-Sync` commit trailer contract; focused positive/negative tests.
+**Evidence boundary:** the audit validates repository structure and declared boundaries. It does not verify scientific claims, automatically merge branches, enumerate inaccessible forks, or prove that historical commits are all reconciled.
+**Missing:** registered-branch inventory, source-SHA-to-main mapping ledger, safe GitHub API reconciliation, deduplicated sync-debt reporting and protected-branch review of any automated write.
+**Unlock criteria:** exact-commit CI passes; a read-only reconciler enumerates accessible registered branches/PRs, matches every substantive source SHA to a detailed main record, emits deterministic debt, and passes fixtures for squash/rebase, force-push, inaccessible fork and ledger-recursion cases.
+**Next experiment:** implement a read-only branch/PR snapshot artifact and offline reconciliation fixtures; keep automatic main writes disabled until permissions, conflict handling and review are proven.
+**Dependencies:** H/F governance, A–I manifest, GitHub read permissions.
+**Review trigger:** first exact-commit cold-start CI plus reconciler fixture.
