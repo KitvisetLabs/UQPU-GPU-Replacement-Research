@@ -128,6 +128,13 @@ jobs:
           python examples/run_cycle005_qiskit_validation.py --output /tmp/uqpu-cycle005-qiskit.json
           cat /tmp/uqpu-cycle005-qiskit.json
 
+      - name: Reproduce Cycle 008 ER6 QSVT fixture in pinned Qiskit
+        working-directory: software/uqpu-prototype
+        run: |
+          python -m unittest tests.test_qos_d23_qsvt_qiskit_reproduction -v
+          python examples/run_qos_d23_qsvt_qiskit_reproduction.py --output /tmp/uqpu-qsvt-qiskit.json
+          cat /tmp/uqpu-qsvt-qiskit.json
+
   qsp-phase-synthesis:
     runs-on: ubuntu-latest
     needs: test
