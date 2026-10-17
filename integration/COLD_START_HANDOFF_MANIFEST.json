@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "5486c8048530f256187ccbd7ba99db086a131f54",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 14: immutable ten-query runner implemented; pinned-SDK result pending",
+  "current_frontier": "Cycle 008 Delta 14: ten-query bounded SDK checkpoint accepted; prefix ladder stopped",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -29,7 +29,7 @@
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "TEN_QUERY_RUNNER_IMPLEMENTED", "evidence_class": "TOOL_BLOCKED", "next_gate": "execute exact-commit ten-query runner in pinned Qiskit; keep eleven queries blocked"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "TEN_QUERY_BOUNDARY_ACCEPTED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK", "next_gate": "stop prefix scaling; design a separately preregistered representation or target-aware gate without authorizing eleven queries"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -62,6 +62,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Run QOS-AUDIT-010B15 on the exact commit in pinned Qiskit, persist raw success-or-failure provenance, and keep eleven queries blocked.",
+  "next_independent_action": "Close the bounded prefix ladder at ten and select a separately preregistered target-aware or representation-change gate; eleven queries remains blocked.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

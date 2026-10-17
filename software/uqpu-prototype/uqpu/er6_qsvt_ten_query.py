@@ -28,6 +28,9 @@ QUERY_COUNT = 10
 PREREGISTRATION = (
     ROOT / "benchmarks/results/cycle008-delta13-er6-qsvt-next-boundary-preregistration.json"
 )
+PERSISTED_CERTIFICATE = (
+    ROOT / "benchmarks/results/cycle008-delta14-er6-qsvt-ten-query-qiskit.json"
+)
 
 
 def explicit_ten_query_matrix(eigenvalue: float):

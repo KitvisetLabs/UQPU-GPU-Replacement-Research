@@ -3,7 +3,7 @@
 **Work ID:** `QOS-AUDIT-010B15`  
 **Canonical start:** `5486c8048530f256187ccbd7ba99db086a131f54`  
 **Primary owner:** Lane A; integration owners F/H; downstream B/C/D/G  
-**Evidence before hosted execution:** `TOOL_BLOCKED` locally; no result claimed
+**Evidence:** `SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK`
 
 ## Implementation
 
@@ -55,7 +55,22 @@ bio-oil/fusion, lower WACC, demonstrated vehicle or new physical law is claimed.
 
 Five pure tests cover exact contract binding, recurrence agreement, domain
 rejection, distinct model/absolute failures, residual mutation and provider
-authorization. The complete local suite passes 528 tests with 16 optional
+authorization. The complete local suite passes 529 tests with 16 optional
 skips. Next: exact-commit PR CI in pinned Qiskit; retain and publish the raw
 certificate whether it passes or falsifies a frozen gate. Eleven queries remain
 blocked under the current representation and ceilings.
+
+## Hosted checkpoint
+
+Source commit `7d095b1fa573590bf498f2953a0e89b922bdc409` passed all eleven
+jobs in PR run #754. Job `117404874404` measured maximum raw residual
+`6.798833937237839e-13`, 10,160 CX, depth 23,477, size 32,645 and
+470,529 OpenQASM bytes. Host runtime was `668.503379153 s` and traced peak
+memory 86,352,015 bytes. Every deterministic-model, absolute-resource,
+residual, basis and authorization gate passed. Artifact `12102800531` is bound
+to source commit, PR merge-ref commit, run, job and archive/raw digests.
+Provider jobs/shots are zero and cost/energy remain null.
+
+This accepts only the ten-query bounded SDK prefix. It does not establish
+degree-81 feasibility, target execution, useful-output advantage or physical
+replacement. Eleven queries remains blocked by its preregistered QASM envelope.

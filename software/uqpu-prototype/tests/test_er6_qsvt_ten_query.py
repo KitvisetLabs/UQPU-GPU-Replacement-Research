@@ -4,6 +4,7 @@ import unittest
 
 from uqpu.er6_qsvt_ten_query import (
     PREREGISTRATION,
+    PERSISTED_CERTIFICATE,
     QUERY_COUNT,
     evaluate_result,
     explicit_ten_query_matrix,
@@ -72,6 +73,20 @@ class TenQueryContractTests(unittest.TestCase):
         result = self._nominal_result()
         result["provider_jobs"] = 1
         self.assertFalse(evaluate_result(self.contract, result)["experiment_accepted"])
+
+    def test_persisted_certificate_is_provenance_bound(self):
+        certificate = json.loads(PERSISTED_CERTIFICATE.read_text(encoding="utf-8"))
+        self.assertTrue(certificate["passed"])
+        self.assertEqual(certificate["preregistration_sha256"], self.contract["contract_sha256"])
+        self.assertEqual(certificate["resources"]["queries"], QUERY_COUNT)
+        self.assertEqual(certificate["resources"]["provider_jobs"], 0)
+        self.assertEqual(certificate["resources"]["shots"], 0)
+        self.assertIsNone(certificate["resources"]["provider_cost"])
+        self.assertIsNone(certificate["resources"]["energy_j"])
+        self.assertEqual(certificate["provenance"]["source_commit"], "7d095b1fa573590bf498f2953a0e89b922bdc409")
+        self.assertEqual(certificate["provenance"]["workflow_run_id"], 39035622369)
+        self.assertEqual(certificate["provenance"]["workflow_job_id"], 117404874404)
+        self.assertEqual(certificate["provenance"]["artifact_id"], 12102800531)
 
 
 @unittest.skipUnless(qiskit_available, "optional pinned Qiskit dependency")

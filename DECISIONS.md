@@ -699,3 +699,15 @@ queries blocked independently of the ten-query result.
 numerically correct circuit that exceeds that model is useful negative evidence,
 while a hard-stop failure is a distinct capacity result. Conflating them would
 permit post-result threshold movement or unsupported degree-81 inference.
+
+## 2026-10-17 — D127: Accept the ten-query checkpoint and stop the prefix ladder
+
+**Decision:** Accept QOS-AUDIT-010B15 as a bounded independent-SDK checkpoint
+because every frozen model, absolute-resource, residual, basis and authorization
+gate passed. Persist exact source/run/job/artifact provenance. Do not execute
+eleven queries under this contract and do not infer degree-81 feasibility.
+
+**Reason:** Ten queries is the last preregistered point below current ceilings;
+the next integer is already blocked by its QASM envelope. Passing the boundary
+validates this local prefix only and supplies no target, hardware, useful-task
+or economic advantage evidence.

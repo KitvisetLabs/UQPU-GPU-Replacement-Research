@@ -1377,8 +1377,9 @@ QOS-AUDIT-010B15 against the unchanged B14 digest: ten block queries, eleven
 projector phases, independent 2x2 recurrence, all-64-sector logical/decomposed
 checks, frozen deterministic limits, absolute stops and zero-provider gates.
 The isolated CI job uploads its certificate on success or failure. Local
-Qiskit is absent, so execution remains `TOOL_BLOCKED`; the full suite passes
-528 tests with 16 optional skips.
+Qiskit is absent, so execution remains `TOOL_BLOCKED`; the implementation-stage
+full suite passed 528 tests with 16 optional skips. After binding the hosted
+certificate, the suite passes 529 tests with the same 16 optional skips.
 
 Fresh surveillance found no material primary result newer than the existing
 same-day watches that changes this test, so no duplicate article was created.
@@ -1396,3 +1397,15 @@ test, quantum advantage, subsystem replacement, >=100x/100,000,000x result,
 commercial bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone
 achievement is claimed. Next: exact-commit pinned-Qiskit CI and a
 provenance-bearing ten-query certificate; eleven queries remains blocked.
+
+**Hosted ten-query checkpoint:** source commit
+`7d095b1fa573590bf498f2953a0e89b922bdc409` passed all eleven jobs in project
+run #754. Job `117404874404` measured maximum raw residual
+`6.798833937237839e-13`, 10,160 CX, depth 23,477, size 32,645, 470,529 QASM
+bytes, `668.503379153 s` runtime and 86,352,015 traced bytes. All frozen model,
+absolute, basis, residual and authorization gates passed. Artifact
+`12102800531` carries source/merge-ref/run/job/digest provenance. Provider
+jobs/shots are zero and cost/energy null. Priority #1, A–I, INV-025–035,
+multilingual master references, autonomous handoff and evidence boundaries
+remain preserved. The bounded prefix ladder stops at ten; eleven queries stays
+blocked and degree-81 feasibility is not inferred.

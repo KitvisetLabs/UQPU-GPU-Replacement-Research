@@ -604,6 +604,13 @@ the pinned SDK, so the result remains `TOOL_BLOCKED` until exact-commit CI runs
 counts, depth, size, QASM bytes, runtime, traced memory and exact
 commit/run/job/artifact provenance. Eleven queries remains blocked regardless.
 
+**Hosted result:** PR run #754 job `117404874404` passed. Maximum raw residual
+was `6.798833937237839e-13`; resources were 10,160 CX, depth 23,477, size
+32,645, 470,529 QASM bytes, `668.503379153 s` runtime and 86,352,015 traced
+bytes. Artifact `12102800531` is provenance-bound. RG-033 remains open for
+degree-81 feasibility, target-aware execution, accepted useful output,
+energy/cost and advantage. The bounded prefix ladder now stops at ten.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.
