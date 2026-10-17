@@ -26,9 +26,9 @@ schedule, noisy simulation, QPU execution or useful-task evidence.
 | Lane | Advance or reviewed blocker |
 |---|---|
 | A | ten-query semantics frozen; no eleven-query expansion |
-| B | saved-target identity path added without provider service or submission |
+| B | hosted saved-target identity persisted without provider service or submission |
 | C | no memory/storage equivalence; later routing must report transfer separately |
-| D | target topology awaits hosted fingerprint; no device requirement yet |
+| D | saved topology fingerprinted; no routed schedule or device requirement yet |
 | E | Pangola, BIO-001, FUS-001 and cooling reviewed; no new measurement |
 | F | source/package/target/authorization mutation gates added; economics null |
 | G | inventory may later feed process-window response; no factory conclusion |
@@ -46,6 +46,16 @@ INV-034–035 retain incumbent-physics, dimensional, symmetry, conservation,
 causality, falsifier, held-out, proof/experiment and independent-validation
 gates. INV-025–027 remain unverified goals.
 
-Next: persist the exact-commit hosted identity, then preregister bounded
-no-submit target transpilation against its digest. Do not infer live
+Exact-commit job `117468829435` in [run #762](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39057589567)
+persisted artifact `12109234748`. The saved FakeKingston snapshot has 156
+qubits, 352 directed CZ declarations and one variable-width IfElseOp class
+declaration. Its canonical identity digest is
+`88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e`;
+the artifact archive digest is
+`sha256:7f9809738f9bca0f34f6199022122ab9f54d91027aad4458091bff08a176e420`.
+Two preceding hosted failures exposed `qargs=None` and class-level property
+descriptor edge cases; both are retained as negative reproducibility results.
+
+Next: preregister bounded no-submit target transpilation against the persisted
+identity digest. Do not infer live
 calibration, fidelity, advantage or authorize paid execution.

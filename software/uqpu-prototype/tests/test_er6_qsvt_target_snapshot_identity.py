@@ -1,8 +1,10 @@
 import copy
 import importlib.util
+import json
 import unittest
 
 from uqpu.er6_qsvt_target_snapshot_identity import (
+    PERSISTED_CERTIFICATE,
     SDK_REQUIREMENTS,
     build_target_identity,
     reproduce_target_identity,
@@ -96,6 +98,17 @@ class PinnedTargetSnapshotIdentityTests(unittest.TestCase):
         self.assertEqual(validate_identity(identity), [])
         self.assertEqual(identity["target"]["class"], "FakeKingston")
         self.assertEqual(identity["authorization"]["provider_jobs"], 0)
+
+    def test_persisted_hosted_identity_matches_reproduction(self):
+        persisted = json.loads(PERSISTED_CERTIFICATE.read_text(encoding="utf-8"))
+        self.assertEqual(validate_identity(persisted), [])
+        provenance = persisted.pop("provenance")
+        self.assertEqual(
+            provenance["source_commit"],
+            "c63ee9d5251e23f50b210ee9d25333b91e63c80e",
+        )
+        self.assertEqual(provenance["workflow_job_id"], 117468829435)
+        self.assertEqual(persisted, reproduce_target_identity())
 
 
 if __name__ == "__main__":

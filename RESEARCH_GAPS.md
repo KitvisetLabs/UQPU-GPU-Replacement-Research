@@ -590,7 +590,7 @@ blocked unless a separately evidenced representation change reduces measured
 serialization without relaxing useful-output or evidence contracts.
 
 ### RG-033 update — ten-query execution path implemented
-**Status:** TOOL_BLOCKED / PINNED_SDK_CI_PENDING
+**Status:** HOSTED_IDENTITY_ACCEPTED / TRANSPILATION_NOT_STARTED
 **Date:** 2026-10-17
 
 QOS-AUDIT-010B15 consumes the immutable B14 digest and implements ten block
@@ -647,11 +647,15 @@ QOS-AUDIT-010B16 binds the accepted ten-query certificate digest to a
 deterministic structural fingerprint of pinned `FakeKingston`. It records SDK
 versions, target identity, qubit count, operation names, directed coupling
 edges and instruction-signature counts while enforcing zero credentials, live
-service, network submission, jobs, shots and paid authority. The local base
-environment lacks the optional SDK, so the actual identity digest remains
-`TOOL_BLOCKED` until exact-commit CI publishes it.
+service, network submission, jobs, shots and paid authority. Exact-commit CI
+job `117468829435` persisted artifact `12109234748`: 156 qubits, 352 directed
+CZ declarations, one variable-width IfElseOp declaration and canonical digest
+`88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e`.
+Two failed hosted attempts are retained as tooling negatives: Qiskit uses both
+`qargs=None` and class-level property descriptors for variable-width control
+flow. Neither failure was evidence of target infeasibility.
 
-**Unlock criteria:** persist a hosted identity artifact and bind its digest in
-a separate preregistration for bounded no-submit target transpilation. A saved
+**Unlock criteria:** bind the persisted digest in a separate preregistration
+for bounded no-submit target transpilation. A saved
 target is not live calibration; routed resources, schedule, fidelity, accepted
 output, energy, cost and advantage remain open.

@@ -1452,3 +1452,14 @@ directed CZ instances, one variable-width IfElseOp declaration and identity
 digest `88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e`.
 This remains saved-snapshot identity evidence only, not transpilation or QPU
 performance evidence.
+
+**Hosted identity checkpoint:** exact source commit
+`c63ee9d5251e23f50b210ee9d25333b91e63c80e` passed job `117468829435` in
+project run #762 (`39057589567`). Artifact `12109234748` has archive digest
+`sha256:7f9809738f9bca0f34f6199022122ab9f54d91027aad4458091bff08a176e420`;
+the raw JSON digest is
+`223a3ea95b86d99d98fc29592148341f91897f7fad9a024391c7acdf1aed7afa`.
+The certificate is persisted with provenance. Credentials, live service,
+network submission, provider jobs and shots remained zero/false; cost and
+energy were not measured. Next is a separate preregistered no-submit
+transpilation gate against this digest, not live calibration or paid QPU use.

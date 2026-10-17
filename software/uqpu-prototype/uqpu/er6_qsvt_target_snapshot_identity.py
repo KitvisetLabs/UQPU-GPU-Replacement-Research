@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[3]
 WORK_ID = "QOS-AUDIT-010B16"
 UPSTREAM_WORK_ID = "QOS-AUDIT-010B15"
 SOURCE_CERTIFICATE = ROOT / "benchmarks/results/cycle008-delta14-er6-qsvt-ten-query-qiskit.json"
+PERSISTED_CERTIFICATE = ROOT / "benchmarks/results/cycle008-delta15-er6-qsvt-target-snapshot-identity.json"
 SOURCE_CERTIFICATE_SHA256 = "edcf6e7606336ab55095df44ae03a72e999f863f341033b402a8fbf327f1c899"
 SDK_REQUIREMENTS = {
     "qiskit": "2.5.2",
@@ -107,6 +108,7 @@ def build_target_identity(backend: Any, package_versions: dict[str, str]) -> dic
 def validate_identity(identity: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     payload = dict(identity)
+    payload.pop("provenance", None)
     observed_digest = payload.pop("target_identity_sha256", None)
     if observed_digest != _canonical_sha256(payload):
         errors.append("target_identity_sha256")
