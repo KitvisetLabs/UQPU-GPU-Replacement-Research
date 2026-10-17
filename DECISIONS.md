@@ -610,3 +610,15 @@ limit, physical law or economics claim.
 
 **Reason:** arXiv:2610.17090 offers a useful extraction workflow but explicitly
 reports provisional novelty and no compiled Lean verification for its survey.
+
+## 2026-10-17 — D120: Hosted spectral certificates must bind both contracts
+
+**Decision:** A persisted hosted spectral-sector certificate must bind the
+unchanged full-circuit contract and the independent 64-sector contract, carry
+commit/run/job/artifact provenance, record raw residuals and host resources,
+and retain null provider jobs, shots, cost and energy. Passing it authorizes
+only the next bounded prefix experiment.
+
+**Reason:** A circuit can reproduce its own composition while disagreeing with
+the intended scalar recurrence, and a provenance-free artifact cannot establish
+which code was executed. Neither risk is removed by an overall `passed` flag.

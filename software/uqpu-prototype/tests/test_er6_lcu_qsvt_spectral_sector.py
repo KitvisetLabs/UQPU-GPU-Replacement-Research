@@ -15,6 +15,7 @@ from uqpu.er6_lcu_qsvt_spectral_sector import (
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = ROOT / "benchmarks/experiments/cycle002-delta01-er6-frozen-contract.json"
 ARTIFACT = ROOT / "benchmarks/results/cycle008-delta09-er6-lcu-qsvt-spectral-sector-contract.json"
+SDK_ARTIFACT = ROOT / "benchmarks/results/cycle008-delta09-er6-lcu-qsvt-spectral-sector-qiskit.json"
 
 
 class ER6QSVTSpectralSectorTests(unittest.TestCase):
@@ -55,6 +56,23 @@ class ER6QSVTSpectralSectorTests(unittest.TestCase):
     def test_out_of_domain_eigenvalue_rejected(self):
         with self.assertRaises(ValueError):
             explicit_two_query_amplitude(1.0001)
+
+    def test_persisted_sdk_certificate_is_provenance_bound_and_fail_closed(self):
+        result = json.loads(SDK_ARTIFACT.read_text(encoding="utf-8"))
+        spectral = result["spectral_sector_agreement"]
+        contract = json.loads(ARTIFACT.read_text(encoding="utf-8"))
+        self.assertTrue(result["passed"])
+        self.assertEqual(result["evidence_class"], "SIMULATION_INDEPENDENT_SDK_SPECTRAL_SECTOR_CHECK")
+        self.assertEqual(spectral["contract_sha256"], contract["contract_sha256"])
+        self.assertEqual(spectral["workload_sectors_checked"], 64)
+        self.assertEqual(result["provenance"]["commit"], "14970dc30e5764799ec8aa962aa72eff6fd81a18")
+        for key, value in spectral.items():
+            if key.endswith("residual"):
+                self.assertLessEqual(value, spectral["tolerance"])
+        self.assertEqual(result["resources"]["provider_jobs"], 0)
+        self.assertEqual(result["resources"]["shots"], 0)
+        self.assertIsNone(result["resources"]["provider_cost"])
+        self.assertIsNone(result["resources"]["energy_j"])
 
 
 if __name__ == "__main__":

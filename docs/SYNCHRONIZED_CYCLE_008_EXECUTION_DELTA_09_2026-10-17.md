@@ -3,7 +3,7 @@
 **Work ID:** `QOS-AUDIT-010B10`  
 **Canonical start:** `07fb3cd7f0397718240deb474bcb2bb4c30f6df7`  
 **Primary owner:** Lane A; integration owners F/H; downstream B/C/D/G  
-**Evidence:** `SIMULATION_SPECTRAL_SECTOR_CHECK`; hosted exact-commit SDK gate pending
+**Evidence:** `SIMULATION_INDEPENDENT_SDK_SPECTRAL_SECTOR_CHECK`; hosted exact-commit SDK gate passed
 
 ## Result
 
@@ -23,11 +23,21 @@ Local pinned Qiskit 2.5.2 then compared the sector amplitudes with the projected
 `1.4004310501204187e-13`/`1.092939203318566e-15`; decomposed residuals were
 `1.06356642317011e-13`/`3.724235273035647e-15`. All pass `2e-12`.
 
+The exact implementation commit `14970dc30e5764799ec8aa962aa72eff6fd81a18`
+then passed all eight jobs in project run #739. Hosted logical
+diagonal/off-diagonal residuals were `1.4004310501204187e-13`/
+`1.092939203318566e-15`; decomposed residuals were
+`1.06356642317011e-13`/`3.724235273035647e-15`. Artifact `12078412811` is
+persisted with run `38974624659`, Qiskit job `117221194290` and commit
+provenance. Hosted runtime was `81.849786336 s`, traced peak host memory
+`119178303 bytes`, and serialized OpenQASM 2 was `94965 bytes`; these are CI
+host/circuit measurements, not target-QPU or economic results.
+
 ## A–I and integration status
 
 | Lane | Advance or reviewed blocker |
 |---|---|
-| A | all 64 ER6 spectral sectors checked; next gate is bounded 3/5-query prefix scaling |
+| A | all 64 ER6 spectral sectors independently reproduced in hosted Qiskit; next gate is bounded 3/5-query prefix scaling |
 | B | provider-neutral only; no target submission or bill |
 | C | sector data and host resources are not RAM/VRAM/storage capacity evidence |
 | D | no calibrated control schedule or device response inferred from generic gates |
@@ -61,11 +71,11 @@ law is claimed.
 
 ## Validation and next gate
 
-- Full core suite: 500 passed, 13 optional-dependency skips.
+- Full core suite: 501 passed, 13 optional-dependency skips.
 - Local pinned Qiskit 2.5.2 spectral comparison: passed.
-- Cold-start audit: `READY_FOR_COLD_START` locally.
-- Hosted exact-commit CI: pending at this pre-publication checkpoint.
+- Cold-start audit: `READY_FOR_COLD_START` locally; implementation cold-start run #15 passed.
+- Hosted exact-commit project CI: run #739 passed all eight jobs.
 
-Next: verify this exact commit in hosted Qiskit and persist its certificate.
-Then implement bounded 3- and 5-query sector/full-circuit prefixes with measured
-memory/runtime before any degree-81 synthesis.
+Next: implement bounded 3- and 5-query sector/full-circuit prefixes with
+measured memory, runtime and serialized bytes before any degree-81 synthesis;
+stop and record the blocker if tolerance or resource limits fail.

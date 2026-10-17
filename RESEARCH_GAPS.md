@@ -443,7 +443,7 @@ after that passes should a bounded prefix ladder (for example 3 and 5 queries)
 be used to test recurrence scaling and memory limits.
 
 ### RG-033 update — all 64 spectral sectors checked
-**Status:** PARTIALLY_UNLOCKED / SIMULATION_SPECTRAL_SECTOR_CHECK
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_INDEPENDENT_SDK_SPECTRAL_SECTOR_CHECK
 **Date:** 2026-10-17
 
 QOS-AUDIT-010B10 reduces every ER6 workload eigenvalue to an independent 2x2
@@ -454,12 +454,19 @@ decomposed diagonal residuals are `1.4004310501204187e-13` and
 `1.06356642317011e-13`, below `2e-12`. Projected off-diagonal leakage is also
 below threshold.
 
+**Hosted checkpoint:** implementation commit
+`14970dc30e5764799ec8aa962aa72eff6fd81a18`, project run #739 and Qiskit job
+`117221194290` reproduced all 64 sectors below `2e-12`. Artifact `12078412811`
+is persisted with commit/run/job provenance. It records `81.849786336 s` host
+runtime, `119178303 bytes` traced peak host memory and `94965 bytes` serialized
+OpenQASM 2; provider jobs/shots remain zero and cost/energy null.
+
 **Why still open:** this is a two-query bounded fixture. It does not establish
 degree-81 synthesis, stable scaling, target feasibility, accepted workload
-quality, energy, cost or advantage. Hosted exact-commit provenance is pending.
+quality, energy, cost or advantage.
 
-**Next experiment / unlock:** hosted reproduction followed by 3- and 5-query
-prefixes using the same sector contract. Record measured runtime, peak host
+**Next experiment / unlock:** 3- and 5-query prefixes using the same sector
+contract. Record measured runtime, peak host
 memory, serialized bytes and raw residuals; stop on tolerance or resource
 failure instead of extrapolating to 81 queries.
 

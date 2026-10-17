@@ -70,11 +70,15 @@ Lane A now has an independent 2x2 recurrence for every one of the 64 ER6
 workload sectors. Explicit and closed-form amplitudes agree to
 `2.7755575615628914e-16`; local pinned-Qiskit logical/decomposed projected
 diagonal residuals are `1.4004310501204187e-13`/`1.06356642317011e-13` against
-`2e-12`, with off-diagonal leakage also below threshold. This is
-`SIMULATION_SPECTRAL_SECTOR_CHECK`, not degree-81, target or hardware evidence.
+`2e-12`, with off-diagonal leakage also below threshold. Exact implementation
+commit `14970dc30e5764799ec8aa962aa72eff6fd81a18` reproduced the result in
+project run #739; artifact `12078412811` is persisted with provenance. This is
+`SIMULATION_INDEPENDENT_SDK_SPECTRAL_SECTOR_CHECK`, not degree-81, target or
+hardware evidence.
 
 B–I were explicitly reviewed with unchanged no-submit, no-memory-equivalence,
 no-device/factory, no-commercial-energy/material, no-cost-advantage,
 no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN now records
 AI-generated mathematical instruments below `THEORY`; INV-029–035 remain gated.
-Next is exact-commit hosted reproduction, then bounded 3/5-query prefixes.
+Next is bounded 3/5-query prefixes with measured runtime, memory and serialized
+bytes, stopping on tolerance or resource failure.
