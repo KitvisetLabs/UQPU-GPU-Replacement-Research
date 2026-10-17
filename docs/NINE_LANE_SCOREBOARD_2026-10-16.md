@@ -101,3 +101,18 @@ no-device/factory, no-commercial-energy/material, no-cost-advantage,
 no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN and
 INV-029–035 remain gated. Next is a preregistered bounded resource-growth
 falsifier using the measured 1/2/3/5-query series, not degree-81 extrapolation.
+
+## Cycle 008 Delta 11
+
+Lane A now owns a frozen eight-query resource-growth preregistration derived
+from the persisted 1/2/3/5-query certificates. Deterministic model-rejection
+limits are 8,132 CX, depth 18,791, size 26,129 and 376,658 QASM bytes. Separate
+absolute residual/runtime/memory/QASM stops remain active. Hosted runtime and
+memory are diagnostic-only because runner noise is uncontrolled. This is
+`MODEL_ONLY`, not an executed prefix or degree-81 forecast.
+
+B–I were reviewed with unchanged no-submit, no-memory-equivalence,
+no-device/factory, no-commercial-energy/material, no-cost-advantage,
+no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN and
+INV-029–035 remain gated. Next is the unchanged pinned-Qiskit eight-query run;
+passing it will not by itself authorize degree 81 or provider execution.

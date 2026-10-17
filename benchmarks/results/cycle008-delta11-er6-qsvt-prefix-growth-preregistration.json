@@ -1,0 +1,226 @@
+{
+  "acceptance": {
+    "absolute_safety_ceilings": {
+      "host_peak_traced_bytes": 750000000,
+      "host_runtime_ns": 900000000000,
+      "serialized_openqasm2_bytes": 500000
+    },
+    "deterministic_metric_model_limits": {
+      "cx": 8132,
+      "decomposed_depth": 18791,
+      "decomposed_size": 26129,
+      "rz": 15057,
+      "serialized_openqasm2_bytes": 376658,
+      "sx": 2532,
+      "x": 408
+    },
+    "matrix_and_state_recurrences_required": true,
+    "model_rejection_does_not_retroactively_change_thresholds": true,
+    "raw_residual_tolerance": 2e-12,
+    "stop_on_any_residual_or_absolute_safety_failure": true,
+    "unique_eigenvalues_required": 7,
+    "workload_sectors_required": 64
+  },
+  "authorization": {
+    "paid_execution": false,
+    "provider_submission": false
+  },
+  "contract_sha256": "b4982d043a2cdd0beae0d3be3be83cfd56a7754003de7b4646ff26b4af5a8009",
+  "date": "2026-10-17",
+  "evidence_class": "MODEL_ONLY",
+  "interpretation": {
+    "experiment_stopped_if": "residual or any absolute safety ceiling fails",
+    "model_accepted_if": "all deterministic metrics are at or below their frozen model limits",
+    "model_rejected_if": "any deterministic metric exceeds its frozen model limit",
+    "runtime_and_memory": "recorded but excluded from model acceptance because shared-runner noise is not controlled"
+  },
+  "measured_query_counts": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "measured_series": {
+    "1": {
+      "cx": 1034,
+      "decomposed_depth": 2390,
+      "decomposed_size": 3323,
+      "host_peak_traced_bytes": 85082614,
+      "host_runtime_ns": 67525448854,
+      "rz": 1911,
+      "serialized_openqasm2_bytes": 48037,
+      "sx": 320,
+      "x": 58
+    },
+    "2": {
+      "cx": 2048,
+      "decomposed_depth": 4733,
+      "decomposed_size": 6581,
+      "host_peak_traced_bytes": 119094814,
+      "host_runtime_ns": 158430453559,
+      "rz": 3789,
+      "serialized_openqasm2_bytes": 94969,
+      "sx": 636,
+      "x": 108
+    },
+    "3": {
+      "cx": 3062,
+      "decomposed_depth": 7076,
+      "decomposed_size": 9839,
+      "host_peak_traced_bytes": 84791827,
+      "host_runtime_ns": 203655504116,
+      "rz": 5667,
+      "serialized_openqasm2_bytes": 141919,
+      "sx": 952,
+      "x": 158
+    },
+    "5": {
+      "cx": 5090,
+      "decomposed_depth": 11762,
+      "decomposed_size": 16355,
+      "host_peak_traced_bytes": 85003559,
+      "host_runtime_ns": 342837898385,
+      "rz": 9423,
+      "serialized_openqasm2_bytes": 235806,
+      "sx": 1584,
+      "x": 258
+    }
+  },
+  "models": {
+    "cx": {
+      "gate_role": "model_growth_falsifier",
+      "intercept": 20.0,
+      "max_observed_abs_residual": 0.0,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 8132.0,
+      "prediction_at_next_query": 8132.0,
+      "slope_per_query": 1014.0
+    },
+    "decomposed_depth": {
+      "gate_role": "model_growth_falsifier",
+      "intercept": 47.0,
+      "max_observed_abs_residual": 0.0,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 18791.0,
+      "prediction_at_next_query": 18791.0,
+      "slope_per_query": 2343.0
+    },
+    "decomposed_size": {
+      "gate_role": "model_growth_falsifier",
+      "intercept": 65.0,
+      "max_observed_abs_residual": 0.0,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 26129.0,
+      "prediction_at_next_query": 26129.0,
+      "slope_per_query": 3258.0
+    },
+    "host_peak_traced_bytes": {
+      "gate_role": "diagnostic_only_due_to_shared_runner_variance",
+      "intercept": 85290822.375,
+      "max_observed_abs_residual": 33969148.875,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 186537640.0,
+      "prediction_at_next_query": 84630193.375,
+      "slope_per_query": -82578.625
+    },
+    "host_runtime_ns": {
+      "gate_role": "diagnostic_only_due_to_shared_runner_variance",
+      "intercept": -158036401.125,
+      "max_observed_abs_residual": 21695349946.375,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 612500573493.0,
+      "prediction_at_next_query": 547414523653.875,
+      "slope_per_query": 68446570006.875
+    },
+    "rz": {
+      "gate_role": "model_growth_falsifier",
+      "intercept": 33.0,
+      "max_observed_abs_residual": 0.0,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 15057.0,
+      "prediction_at_next_query": 15057.0,
+      "slope_per_query": 1878.0
+    },
+    "serialized_openqasm2_bytes": {
+      "gate_role": "model_growth_falsifier",
+      "intercept": 1091.0,
+      "max_observed_abs_residual": 7.75,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 376658.0,
+      "prediction_at_next_query": 376634.0,
+      "slope_per_query": 46942.875
+    },
+    "sx": {
+      "gate_role": "model_growth_falsifier",
+      "intercept": 4.0,
+      "max_observed_abs_residual": 0.0,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 2532.0,
+      "prediction_at_next_query": 2532.0,
+      "slope_per_query": 316.0
+    },
+    "x": {
+      "gate_role": "model_growth_falsifier",
+      "intercept": 8.0,
+      "max_observed_abs_residual": 0.0,
+      "method": "Theil-Sen median pairwise slope with median intercept",
+      "model_rejection_upper": 408.0,
+      "prediction_at_next_query": 408.0,
+      "slope_per_query": 50.0
+    }
+  },
+  "next_query_count": 8,
+  "nonclaims": [
+    "not an executed eight-query circuit",
+    "not degree-81 synthesis or a degree-81 feasibility estimate",
+    "not target-aware, real-QPU, energy, cost, advantage, or replacement evidence"
+  ],
+  "schema": "uqpu-er6-qsvt-prefix-growth-preregistration-v1",
+  "source_certificates": [
+    {
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_ONE_QUERY_CHECK",
+      "path": "benchmarks/results/cycle008-delta07-er6-lcu-qsvt-one-query-qiskit.json",
+      "provenance": {
+        "commit": "9d7e5d761fc8ddf18a0fec4a9564ce836e617e96",
+        "github_actions_artifact_id": 12072606869,
+        "github_actions_job_id": 117173121884,
+        "github_actions_run_id": 38960114128,
+        "github_actions_run_number": 735,
+        "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38960114128"
+      },
+      "sha256": "de7b4da0a1856cbfc3604c1a397739b6fa7e19bddb60439d461704040c8b4d91",
+      "work_id": "QOS-AUDIT-010B8"
+    },
+    {
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_TWO_QUERY_CHECK",
+      "path": "benchmarks/results/cycle008-delta08-er6-lcu-qsvt-two-query-qiskit.json",
+      "provenance": {
+        "commit": "2bf019cf21efd43ec7ae9f8196ec03e5734e7945",
+        "github_actions_artifact_id": 12075997394,
+        "github_actions_job_id": 117198147300,
+        "github_actions_run_id": 38967584171,
+        "github_actions_run_number": 737,
+        "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38967584171"
+      },
+      "sha256": "a2b2304514bd4c707e6c3bd7bc957a1ecc33b2f5b14874b1be1f5298baa03b6c",
+      "work_id": "QOS-AUDIT-010B9"
+    },
+    {
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK",
+      "path": "benchmarks/results/cycle008-delta10-er6-lcu-qsvt-bounded-prefix-qiskit.json",
+      "provenance": {
+        "commit": "39fa6f99d6cc512555e5613deb182ed79d054f34",
+        "github_actions_artifact_digest": "sha256:b6e1d75495d17df3e3c2d8a389fc3dc6832a8447848c11a6bf568fc878ddb6f2",
+        "github_actions_artifact_id": 12087010676,
+        "github_actions_job_id": 117282789535,
+        "github_actions_run_id": 38994084771,
+        "github_actions_run_number": 741,
+        "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38994084771"
+      },
+      "sha256": "01c56704877e4ac20af7e1a0128fbf402e1138c5f7e378b263cd33366ade6a41",
+      "work_id": "QOS-AUDIT-010B11"
+    }
+  ],
+  "upstream_work_id": "QOS-AUDIT-010B11",
+  "work_id": "QOS-AUDIT-010B12"
+}

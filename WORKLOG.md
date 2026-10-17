@@ -1252,3 +1252,36 @@ references, autonomous handoff and evidence boundaries remain preserved.
 
 Next gate: preregister a further bounded-prefix resource-growth falsifier from
 the measured 1/2/3/5-query series; no degree-81, target or provider inference.
+
+### 2026-10-17 — Cycle 008 Delta 11 eight-query growth preregistration
+
+Started from canonical `main` commit
+`643b35bb3e3c54cb5bb5822dbe293308ea81f054`, cold-start run #18 and project
+run #742. Implemented QOS-AUDIT-010B12 as a repository-owned preregistration
+over the provenance-bearing 1/2/3/5-query certificates. The next prefix is
+frozen at eight queries. The deterministic model limits are 8,132 CX, depth
+18,791, size 26,129 and 376,658 QASM bytes; absolute stops remain `2e-12`,
+900 s, 750,000,000 traced bytes and 500,000 QASM bytes. Runtime and memory are
+diagnostic-only because shared runner variance is uncontrolled. Six targeted
+tests cover source binding, mutation rejection, model rejection, absolute
+stops and no-provider authorization.
+
+Fresh surveillance found no primary result newer than the existing same-day
+QSP/equation-discovery watches that changes the experiment, so no duplicate
+article was created. A advanced the falsifier; B remains no-submit; C retains
+host-only resource evidence; D/G remain target/process-window blocked; E
+reviewed Pangola, BIO-001, FUS-001 and cooling without new measurement; F
+separates growth-model rejection from hard experiment stop; H updates the
+cold-start/publication trail without capital/WACC authority; I remains
+`MODEL_ONLY` with I-012 open. FND-001–006, EQN-001–006 and FIN-001 were
+reviewed without evidence promotion.
+
+Priority #1, all nine lanes A–I, INV-025–035, Thai/English/Chinese/Japanese/
+Korean/German master references, strategic AI/funding references, autonomous
+handoff and evidence boundaries were preserved. No paid QPU, provider
+execution, fabrication, hazardous vehicle test, quantum advantage, subsystem
+replacement, >=100x/100,000,000x result, commercial bio-oil/fusion, lower
+WACC, new physical law or Data-Center-to-Phone achievement is claimed.
+
+Next gate: execute the unchanged eight-query prefix in isolated pinned Qiskit,
+persist provenance-bearing raw results, and compare with the frozen limits.

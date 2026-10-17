@@ -634,3 +634,16 @@ or substitute for a longer prefix or degree-81 synthesis.
 **Reason:** Gate-count multiplication hides compiler, serialization, memory and
 numerical behavior. A bounded ladder exposes the first actual failure without
 converting an extrapolation into evidence.
+
+## 2026-10-17 — D122: Freeze the eight-query growth falsifier before execution
+
+**Decision:** Select eight queries as the next bounded prefix and bind it to the
+persisted 1/2/3/5-query certificates. Use robust affine limits for deterministic
+generic-circuit metrics, but treat hosted runtime and traced memory as
+diagnostic-only because runner variance is uncontrolled. Keep separate absolute
+residual/runtime/memory/QASM stops and prohibit post-result threshold changes.
+
+**Reason:** Near-linear generic gate counts are a falsifiable local observation,
+not a degree-81 scaling law. Separating model rejection from experiment safety
+preserves a useful negative result without promoting noisy host measurements or
+moving acceptance criteria after seeing the next circuit.
