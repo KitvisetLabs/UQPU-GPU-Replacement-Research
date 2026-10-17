@@ -139,3 +139,17 @@ not degree-81, target, hardware, useful-output or advantage evidence.
 B–I, FND/EQN and INV-029–035 retain their prior gates. Next is a separately
 preregistered boundary experiment below unchanged absolute stops, not provider
 execution or extrapolation.
+
+## Cycle 008 Delta 13
+
+Lane A now owns an immutable ten-query boundary preregistration derived from
+the measured 1/2/3/5/8-query certificates. Ten queries is the largest prefix
+whose conservative QASM/runtime/memory envelopes remain under the unchanged
+500,000-byte/900-second/750-MB stops. Eleven queries is blocked by a
+517,495-byte QASM envelope. This is `MODEL_ONLY`, not ten-query execution or
+degree-81 feasibility.
+
+B–I retain no-submit, no-memory-equivalence, no-device/factory,
+no-commercial-energy/material, no-cost-advantage, no-capital/WACC and
+no-vehicle-demonstration boundaries. FND/EQN and INV-025–035 remain gated.
+Next is exact-commit validation followed by the unchanged ten-query runner.

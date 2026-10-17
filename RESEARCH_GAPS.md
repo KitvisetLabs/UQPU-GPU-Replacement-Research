@@ -568,6 +568,27 @@ bounded boundary test below the unchanged 900-second, 750,000,000-byte and
 500,000-QASM-byte absolute stops. Preserve any model failure; do not infer
 degree-81 feasibility or submit to a provider.
 
+### RG-033 update — ten-query boundary preregistered
+**Status:** PARTIALLY_UNLOCKED / MODEL_ONLY PREREGISTRATION
+**Date:** 2026-10-17
+
+QOS-AUDIT-010B14 binds the provenance-bearing 1/2/3/5/8-query measurements and
+scans 9–81 queries without changing absolute stops. Ten queries is the largest
+planning-eligible prefix: conservative upper envelopes are 470,551 QASM bytes,
+716.865 seconds and 187,377,521 traced bytes. Eleven queries is blocked by a
+517,495-byte QASM envelope. The contract digest is
+`47ad5e62cbae93fb613fd3d3a1a3a464f09c06b6eb3e54b2a5e3fabcc39795aa`.
+
+**Why still open:** this is a frozen planning contract, not a ten-query run,
+target mapping, accepted transformed workload, degree-81 synthesis, real-QPU,
+energy, cost or advantage evidence.
+
+**Next experiment / unlock:** implement and run the unchanged ten-query prefix
+in the isolated pinned-Qiskit job. Persist success or failure with raw
+residual/resource and commit/run/job/artifact provenance. Eleven queries stays
+blocked unless a separately evidenced representation change reduces measured
+serialization without relaxing useful-output or evidence contracts.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.
