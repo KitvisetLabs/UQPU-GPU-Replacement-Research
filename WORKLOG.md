@@ -1293,3 +1293,32 @@ Fetch-plus-tree comparison detected the mismatch before any CI-success claim.
 The commit is retained as a failed publication attempt; the next fast-forward
 commit restores the complete locally tested tree. Do not use token-limited
 combined tool output to transport large canonical file bodies.
+
+### 2026-10-17 — Cycle 008 Delta 12 eight-query execution implementation
+
+Started from repaired canonical `main` commit
+`b1ed8b6da28d04fa3bfc97348f50d9000ccd4db0`. Implemented QOS-AUDIT-010B13:
+an exact eight-query ER6 QSVT builder, independent 2x2 recurrence check,
+64-sector logical/decomposed comparison, frozen growth-model evaluation,
+absolute stop gates and zero-provider authorization. Added a dedicated
+25-minute pinned-Qiskit CI job that uploads its certificate on success or
+failure. Pure local tests passed; optional pinned-Qiskit execution remains
+`TOOL_BLOCKED` locally.
+
+Fresh surveillance found no material primary result newer than the same-day
+QSP/equation-discovery watches, so no duplicate article was created. A advanced
+the executable gate; B remains no-submit; C remains host-resource-only; D/G
+remain target/process-window blocked; E reviewed Pangola, BIO-001, FUS-001 and
+cooling without new measurement; F preserves model-rejection versus hard-stop
+semantics; H records pending PR/CI without capital authority; I remains
+`MODEL_ONLY` with I-012 open. FND-001–006, EQN-001–006 and FIN-001 were
+reviewed without evidence promotion.
+
+Priority #1, A–I, INV-025–035, Thai/English/Chinese/Japanese/Korean/German
+master references, strategic AI/funding references, autonomous handoff and
+evidence boundaries were preserved. No paid QPU, provider execution,
+fabrication, hazardous vehicle test, quantum advantage, subsystem replacement,
+>=100x/100,000,000x result, commercial bio-oil/fusion, lower WACC, new physical
+law or Data-Center-to-Phone achievement is claimed.
+
+Next gate: exact-commit PR CI and provenance-bearing eight-query certificate.

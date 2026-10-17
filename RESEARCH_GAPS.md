@@ -526,6 +526,25 @@ commit/run/job/artifact provenance. A deterministic-limit exceedance rejects
 the growth model; a residual or absolute-limit exceedance stops the ladder.
 Neither outcome may be repaired by changing thresholds after execution.
 
+### RG-033 update — eight-query execution path implemented
+**Status:** IMPLEMENTED / HOSTED_EXECUTION_PENDING
+**Date:** 2026-10-17
+
+QOS-AUDIT-010B13 validates the preregistration before constructing the exact
+eight-query prefix, checks independent 2x2 recurrence order, evaluates all 64
+projected sectors in pinned Qiskit and records the frozen deterministic and
+absolute gates separately. The dedicated CI job uploads an artifact even on
+failure and has a 25-minute timeout.
+
+**Why still open:** no hosted certificate exists yet. Local absence of pinned
+Qiskit makes execution `TOOL_BLOCKED`; pure recurrence/contract tests pass.
+There is still no target-aware schedule, real-QPU run, energy/cost measurement,
+accepted transformed workload or degree-81 evidence.
+
+**Next experiment / unlock:** execute the exact PR commit, preserve either
+model acceptance or rejection, bind the raw artifact to commit/run/job/digest,
+and stop on residual, absolute-resource, basis or authorization failure.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

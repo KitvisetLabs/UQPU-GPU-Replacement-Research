@@ -116,3 +116,16 @@ no-device/factory, no-commercial-energy/material, no-cost-advantage,
 no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN and
 INV-029–035 remain gated. Next is the unchanged pinned-Qiskit eight-query run;
 passing it will not by itself authorize degree 81 or provider execution.
+
+## Cycle 008 Delta 12
+
+Lane A now has the executable eight-query runner bound to the immutable Delta
+11 preregistration. It performs independent recurrence, all-sector logical and
+generic-basis checks, records host/circuit resources, and classifies growth
+model rejection separately from absolute experiment failure. Hosted execution
+is pending; no eight-query result is yet claimed.
+
+B–I retain no-submit, no-memory-equivalence, no-device/factory,
+no-commercial-energy/material, no-cost-advantage, no-capital/WACC and
+no-vehicle-demonstration boundaries. FND/EQN and INV-029–035 remain gated.
+Next is exact-commit PR CI and a provenance-bearing raw certificate.

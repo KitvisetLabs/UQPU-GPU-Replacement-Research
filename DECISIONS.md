@@ -647,3 +647,15 @@ residual/runtime/memory/QASM stops and prohibit post-result threshold changes.
 not a degree-81 scaling law. Separating model rejection from experiment safety
 preserves a useful negative result without promoting noisy host measurements or
 moving acceptance criteria after seeing the next circuit.
+
+## 2026-10-17 — D123: Eight-query model rejection is not an experiment failure
+
+**Decision:** The eight-query job must always publish its certificate when
+possible. Exceeding a frozen deterministic growth limit rejects the local
+near-linear resource model but does not erase a numerically valid bounded
+circuit. Residual, absolute runtime/memory/QASM, basis-gate or authorization
+failure stops experiment acceptance. Neither result authorizes degree 81.
+
+**Reason:** A falsifier is useful only if an adverse observation is retained.
+Conflating model fit with numerical/safety acceptance would encourage hiding a
+growth-model failure or moving its threshold after execution.
