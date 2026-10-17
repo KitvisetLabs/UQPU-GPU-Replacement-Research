@@ -711,3 +711,15 @@ eleven queries under this contract and do not infer degree-81 feasibility.
 the next integer is already blocked by its QASM envelope. Passing the boundary
 validates this local prefix only and supplies no target, hardware, useful-task
 or economic advantage evidence.
+
+## 2026-10-18 — D128: Fingerprint the saved target before target transpilation
+
+**Decision:** Bind the accepted ten-query certificate to one pinned, local
+`FakeKingston` saved-target identity before any new target-aware transpilation.
+Hash backend structure and SDK versions deterministically and fail closed on
+source/package/target drift or any credential, live-service, submission, shot,
+provider-job or paid-authority signal. Identity is not calibration or routing.
+
+**Reason:** Selecting a snapshot after routed resources are known permits
+target cherry-picking. Separating identity from transpilation also prevents a
+stored fake backend from being mislabeled as current hardware evidence.

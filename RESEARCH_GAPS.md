@@ -638,3 +638,20 @@ or proof-assistant checks pass.
 **Next experiment:** implement a read-only branch/PR snapshot artifact and offline reconciliation fixtures; keep automatic main writes disabled until permissions, conflict handling and review are proven.
 **Dependencies:** H/F governance, A–I manifest, GitHub read permissions.
 **Review trigger:** first exact-commit cold-start CI plus reconciler fixture.
+
+### RG-033 update — saved-target identity gate implemented
+**Status:** TOOL_BLOCKED / PINNED_SDK_CI_PENDING
+**Date:** 2026-10-18
+
+QOS-AUDIT-010B16 binds the accepted ten-query certificate digest to a
+deterministic structural fingerprint of pinned `FakeKingston`. It records SDK
+versions, target identity, qubit count, operation names, directed coupling
+edges and instruction-signature counts while enforcing zero credentials, live
+service, network submission, jobs, shots and paid authority. The local base
+environment lacks the optional SDK, so the actual identity digest remains
+`TOOL_BLOCKED` until exact-commit CI publishes it.
+
+**Unlock criteria:** persist a hosted identity artifact and bind its digest in
+a separate preregistration for bounded no-submit target transpilation. A saved
+target is not live calibration; routed resources, schedule, fidelity, accepted
+output, energy, cost and advantage remain open.

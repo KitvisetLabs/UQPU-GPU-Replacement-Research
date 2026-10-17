@@ -1409,3 +1409,26 @@ jobs/shots are zero and cost/energy null. Priority #1, A–I, INV-025–035,
 multilingual master references, autonomous handoff and evidence boundaries
 remain preserved. The bounded prefix ladder stops at ten; eleven queries stays
 blocked and degree-81 feasibility is not inferred.
+
+### 2026-10-18 — Cycle 008 Delta 15 saved-target identity implementation
+
+Started from canonical `main` commit
+`9b5c7e677c56fe501fbddae7f9300b8488b2962a`. Implemented
+QOS-AUDIT-010B16 as a pre-transpilation identity gate for pinned local
+`FakeKingston`. It binds the Delta-14 certificate digest and canonical-hashes
+target structure plus package versions. Mutation tests cover target, package
+and authorization drift; isolated CI uploads success or failure. The local
+optional SDK is absent, so hosted identity remains `TOOL_BLOCKED`. No service,
+credentials, provider job, shots or cost occurred.
+
+Fresh surveillance found no material new primary result that changes this
+gate. A stays frozen at ten queries; B advances the no-submit target input; C
+remains host-only; D/G await identity and routing; E reviewed Pangola, BIO-001,
+FUS-001 and cooling; F adds provenance gates; H retains software-first capital
+discipline; I remains `MODEL_ONLY`. FND/EQN/FIN were not promoted.
+
+INV-025–035, six-language master references, AI/funding references, autonomous
+handoff and evidence boundaries remain preserved. No target transpilation,
+live calibration, paid QPU, advantage, subsystem replacement, commercial
+bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone result is
+claimed. Next: hosted identity, then separately preregistered no-submit routing.
