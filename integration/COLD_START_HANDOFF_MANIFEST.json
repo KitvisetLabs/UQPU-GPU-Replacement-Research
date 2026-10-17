@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-17T02:40:55Z",
+  "prepared_utc": "2026-10-17T07:01:28Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "643b35bb3e3c54cb5bb5822dbe293308ea81f054",
+  "canonical_start_sha": "b1ed8b6da28d04fa3bfc97348f50d9000ccd4db0",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 11: eight-query resource-growth falsifier is preregistered from measured 1/2/3/5-query certificates; execution pending",
+  "current_frontier": "Cycle 008 Delta 12: preregistered eight-query prefix passed exact-commit hosted SDK/resource gates",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -22,11 +22,12 @@
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_09_2026-10-17.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_10_2026-10-17.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_11_2026-10-17.md",
+    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_12_2026-10-17.md",
     "docs/LITERATURE_WATCH_2026-10-17_AI_GENERATED_MATHEMATICAL_INSTRUMENTS.md",
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PREREGISTERED_EXECUTION_PENDING", "evidence_class": "MODEL_ONLY", "next_gate": "execute unchanged eight-query prefix against frozen model and absolute limits"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "EIGHT_QUERY_HOSTED_PREFIX_ACCEPTED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK", "next_gate": "preregister next bounded boundary test below unchanged absolute stops"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -40,10 +41,10 @@
   "open_gates": ["RG-033", "RG-034", "I-012"],
   "master_reference_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
   "latest_verified_ci": {
-    "run_number": 741,
-    "run_id": 38994084771,
+    "run_number": 745,
+    "run_id": 39012562978,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38994084771"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39012562978"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -59,6 +60,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Execute the unchanged eight-query prefix in isolated pinned Qiskit; persist raw residuals/resources and exact provenance; stop on absolute failure and do not alter preregistered limits.",
+  "next_independent_action": "Use the persisted eight-query result to preregister the next bounded boundary test below unchanged absolute stops; retain any model failure and do not infer degree-81 or provider feasibility.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

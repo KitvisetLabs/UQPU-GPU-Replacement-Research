@@ -116,3 +116,26 @@ no-device/factory, no-commercial-energy/material, no-cost-advantage,
 no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN and
 INV-029–035 remain gated. Next is the unchanged pinned-Qiskit eight-query run;
 passing it will not by itself authorize degree 81 or provider execution.
+
+## Cycle 008 Delta 12
+
+Lane A now has the executable eight-query runner bound to the immutable Delta
+11 preregistration. It performs independent recurrence, all-sector logical and
+generic-basis checks, records host/circuit resources, and classifies growth
+model rejection separately from absolute experiment failure. Hosted execution
+is pending; no eight-query result is yet claimed.
+
+B–I retain no-submit, no-memory-equivalence, no-device/factory,
+no-commercial-energy/material, no-cost-advantage, no-capital/WACC and
+no-vehicle-demonstration boundaries. FND/EQN and INV-029–035 remain gated.
+Exact source commit `b1ffc1de9c2a0b02d80886e548d1d4fe6be17213`
+passed all ten jobs in run #745. The persisted certificate records maximum raw
+residual `5.491292372342266e-13`, 8,132 CX, depth 18,791, size 26,129 and
+376,644 QASM bytes. The frozen local growth model and absolute stops passed;
+the QASM growth ceiling retained only 14 bytes of headroom. Provider jobs and
+shots remain zero, and cost/energy remain null. This is bounded SDK evidence,
+not degree-81, target, hardware, useful-output or advantage evidence.
+
+B–I, FND/EQN and INV-029–035 retain their prior gates. Next is a separately
+preregistered boundary experiment below unchanged absolute stops, not provider
+execution or extrapolation.
