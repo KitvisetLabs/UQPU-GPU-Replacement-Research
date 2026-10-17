@@ -659,3 +659,17 @@ failure stops experiment acceptance. Neither result authorizes degree 81.
 **Reason:** A falsifier is useful only if an adverse observation is retained.
 Conflating model fit with numerical/safety acceptance would encourage hiding a
 growth-model failure or moving its threshold after execution.
+
+## 2026-10-17 — D124: Accept the bounded prefix, not the extrapolation
+
+**Decision:** Accept QOS-AUDIT-010B13 as an eight-query independent-SDK
+bounded-prefix checkpoint because every frozen residual, deterministic-growth,
+absolute-resource, basis and authorization gate passed. Persist the result with
+source commit, PR merge commit, run, job, artifact and digest provenance.
+Treat the 14-byte QASM model headroom as a warning that the next prefix must be
+separately preregistered against the unchanged absolute stop.
+
+**Reason:** Exact agreement at one further prefix validates the local
+preregistration, not degree-81 scalability. Keeping prefix acceptance separate
+from target, hardware, useful-output and economic evidence prevents a passing
+SDK experiment from being promoted into feasibility or advantage.

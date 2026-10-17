@@ -545,6 +545,29 @@ accepted transformed workload or degree-81 evidence.
 model acceptance or rejection, bind the raw artifact to commit/run/job/digest,
 and stop on residual, absolute-resource, basis or authorization failure.
 
+### RG-033 update — eight-query hosted checkpoint accepted
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK
+**Date:** 2026-10-17
+
+Exact source commit `b1ffc1de9c2a0b02d80886e548d1d4fe6be17213`
+passed all ten jobs in project run #745. The eight-query certificate records a
+maximum raw residual of `5.491292372342266e-13` against `2e-12`, 8,132 CX,
+depth 18,791, size 26,129, 376,644 QASM bytes, `525.450692110 s` host runtime
+and 85,858,826 traced bytes. The preregistered deterministic model and absolute
+stops both passed; the QASM model had only 14 bytes of headroom. Artifact
+`12094185194` is bound to run/job/source/merge/digest provenance. Provider
+jobs/shots remain zero and cost/energy null.
+
+**Why still open:** this is generic SDK simulation and serialization, not a
+dated target schedule, real-QPU execution, accepted transformed workload,
+degree-81 synthesis, energy/cost evidence or advantage. Host runtime/memory are
+shared-runner diagnostics.
+
+**Next experiment / unlock:** use the measured point to preregister the next
+bounded boundary test below the unchanged 900-second, 750,000,000-byte and
+500,000-QASM-byte absolute stops. Preserve any model failure; do not infer
+degree-81 feasibility or submit to a provider.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.

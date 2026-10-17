@@ -1322,3 +1322,19 @@ fabrication, hazardous vehicle test, quantum advantage, subsystem replacement,
 law or Data-Center-to-Phone achievement is claimed.
 
 Next gate: exact-commit PR CI and provenance-bearing eight-query certificate.
+
+**Hosted eight-query checkpoint:** source commit
+`b1ffc1de9c2a0b02d80886e548d1d4fe6be17213` passed all ten jobs in project
+run #745. Job `117338184551` measured maximum raw residual
+`5.491292372342266e-13`, 8,132 CX, depth 18,791, size 26,129, 376,644 QASM
+bytes, `525.450692110 s` host runtime and 85,858,826 traced bytes. Both the
+frozen growth model and absolute stops passed; artifact `12094185194` is
+persisted with source/merge/run/job/digest provenance. Provider jobs/shots are
+zero and cost/energy null. This remains SDK simulation, not an executed QPU
+circuit, target schedule, useful-output acceptance or advantage.
+
+Priority #1, all nine lanes A–I, INV-025–035, multilingual
+Thai/English/Chinese/Japanese/Korean/German master references, strategic
+AI/funding references, autonomous handoff and evidence boundaries were
+preserved. Next: preregister a further bounded boundary test below unchanged
+absolute stops; do not infer degree 81 or authorize provider execution.

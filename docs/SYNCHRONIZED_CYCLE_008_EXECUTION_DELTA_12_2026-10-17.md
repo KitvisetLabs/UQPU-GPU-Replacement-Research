@@ -3,7 +3,7 @@
 **Work ID:** `QOS-AUDIT-010B13`  
 **Canonical start:** `b1ed8b6da28d04fa3bfc97348f50d9000ccd4db0`  
 **Primary owner:** Lane A; integration owners F/H; downstream B/C/D/G  
-**Evidence:** execution implementation prepared; hosted result pending
+**Evidence:** hosted `SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK`
 
 ## Implemented experiment
 
@@ -59,15 +59,26 @@ No real-QPU execution, quantum advantage, subsystem replacement,
 `>=100x`/`100,000,000x` result, commercial bio-oil/fusion, lower WACC, vehicle
 demonstration or new physical law is claimed.
 
-## Validation and next gate
+## Hosted result and next gate
 
-- Pure preregistration/eight-query tests: 9 passed; pinned-Qiskit test skipped
-  locally because the optional SDK is absent.
-- Full project and cold-start validation must run on the exact PR commit.
+- Exact source commit `b1ffc1de9c2a0b02d80886e548d1d4fe6be17213`
+  passed all ten jobs in project run #745. The PR merge test commit was
+  `00401e0a2d2fa223b16bca50f88853c87dc0f875`.
+- Across 64 sectors, the maximum raw residual was
+  `5.491292372342266e-13`, below the frozen `2e-12` tolerance. Independent
+  matrix/state recurrence disagreement was `4.440892098500626e-16`.
+- Generic decomposition measured 8,132 CX, depth 18,791, size 26,129 and
+  376,644 QASM bytes. All deterministic growth limits passed; QASM was only
+  14 bytes below its frozen model ceiling.
+- Host runtime was `525.450692110 s` and traced peak memory was 85,858,826
+  bytes. These are runner diagnostics, not portable performance evidence.
+- Artifact `12094185194` and digest
+  `sha256:6ea35e9525a49dd1838ae8662b591a8ee470c77c306c1f740f5b6713951b53c7`
+  are persisted with run/job/source/merge provenance.
 - Paid/provider execution remains disabled.
 
-Next: run the exact PR commit in the isolated hosted job, persist the raw
-certificate with commit/run/job/artifact provenance, then classify the frozen
-growth model as accepted or rejected without changing its limits. A passing
-eight-query result does not authorize degree 81.
+Next: preregister the next bounded boundary test only after using the measured
+eight-query result to prove it remains below the unchanged absolute runtime,
+memory and 500,000-byte QASM stops. Do not authorize degree 81, target/provider
+execution or economics from this passing prefix.
 

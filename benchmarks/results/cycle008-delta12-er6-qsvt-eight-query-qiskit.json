@@ -1,0 +1,60 @@
+{
+  "agreement": {
+    "decomposed_projected_diagonal_max_abs_residual": 3.7536737331955325e-13,
+    "decomposed_projected_offdiagonal_max_abs_residual": 1.2874089678443156e-14,
+    "logical_projected_diagonal_max_abs_residual": 5.491292372342266e-13,
+    "logical_projected_offdiagonal_max_abs_residual": 3.811330185194993e-15,
+    "matrix_vs_state_max_abs_residual": 4.440892098500626e-16,
+    "tolerance": 2e-12
+  },
+  "basis_gate_check_passed": true,
+  "environment": {"implementation": "CPython", "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39", "python": "3.12.15"},
+  "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK",
+  "growth_evaluation": {"absolute_safety_failures": [], "authorization_failed": false, "deterministic_metric_failures": [], "experiment_accepted": true, "model_growth_accepted": true, "residual_failed": false},
+  "limitations": [
+    "not an executed eight-query circuit",
+    "not degree-81 synthesis or a degree-81 feasibility estimate",
+    "not target-aware, real-QPU, energy, cost, advantage, or replacement evidence",
+    "generic basis decomposition is not a dated backend target or calibrated schedule",
+    "a passing eight-query prefix does not authorize degree-81 synthesis or provider execution"
+  ],
+  "passed": true,
+  "preregistration_sha256": "b4982d043a2cdd0beae0d3be3be83cfd56a7754003de7b4646ff26b4af5a8009",
+  "provenance": {
+    "commit": "b1ffc1de9c2a0b02d80886e548d1d4fe6be17213",
+    "github_actions_artifact_digest": "sha256:6ea35e9525a49dd1838ae8662b591a8ee470c77c306c1f740f5b6713951b53c7",
+    "github_actions_artifact_id": 12094185194,
+    "github_actions_job_id": 117338184551,
+    "github_actions_merge_commit": "00401e0a2d2fa223b16bca50f88853c87dc0f875",
+    "github_actions_run_id": 39012562978,
+    "github_actions_run_number": 745,
+    "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39012562978"
+  },
+  "resources": {
+    "cx": 8132,
+    "decomposed_depth": 18791,
+    "decomposed_operation_counts": {"cx": 8132, "rz": 15057, "sx": 2532, "x": 408},
+    "decomposed_size": 26129,
+    "energy_j": null,
+    "host_peak_traced_bytes": 85858826,
+    "host_runtime_ns": 525450692110,
+    "logical_depth": 395,
+    "logical_projector_phases": 9,
+    "logical_qubits": 10,
+    "logical_size": 649,
+    "max_raw_residual": 5.491292372342266e-13,
+    "provider_cost": null,
+    "provider_execution_id": null,
+    "provider_jobs": 0,
+    "queries": 8,
+    "rz": 15057,
+    "serialized_openqasm2_bytes": 376644,
+    "shots": 0,
+    "sx": 2532,
+    "x": 408
+  },
+  "schema": "uqpu-er6-qsvt-eight-query-qiskit-v1",
+  "sdk": {"name": "qiskit", "requirement": "qiskit==2.5.2", "version": "2.5.2"},
+  "upstream_work_id": "QOS-AUDIT-010B12",
+  "work_id": "QOS-AUDIT-010B13"
+}
