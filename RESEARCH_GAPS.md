@@ -659,3 +659,27 @@ flow. Neither failure was evidence of target infeasibility.
 for bounded no-submit target transpilation. A saved
 target is not live calibration; routed resources, schedule, fidelity, accepted
 output, energy, cost and advantage remain open.
+
+### RG-033 update — saved-target no-submit routing resource gate accepted
+**Status:** HOSTED_RESOURCE_ACCEPTED / USEFUL_OUTPUT_QUALITY_OPEN
+**Date:** 2026-10-18
+
+QOS-AUDIT-010B17 froze the ten-query source certificate, FakeKingston identity,
+Qiskit pins, layout 0–9, basic router, seed and hard stops before execution.
+QOS-AUDIT-010B18 then measured 41,798 CZ, depth 86,783, size 187,979,
+2,267,976 QASM2 bytes, 9.489 s host runtime and 51,277,778 traced bytes with
+ten active physical qubits. Every emitted instruction conforms to the saved
+target. Job `117517795643`, run #770 and artifact `12116198038` are bound to
+source commit `b69f8772ac7db23e6fdcd2f4571e7308a10c56b8`. Provider jobs/shots are
+zero and energy/cost null.
+
+**Why still open:** the saved snapshot is not live calibration, and instruction
+conformance does not independently establish routed logical equivalence,
+accepted workload quality, physical fidelity, schedule, energy, cost or
+advantage. Dense 156-qubit operator construction is not an acceptable verifier.
+
+**Next experiment / unlock:** construct a scalable independent semantics check
+using logical-token/layout tracking, tensor-network/light-cone comparison or
+another preregistered method on the same useful-output contract. Preserve a
+counterexample or capacity failure; only afterward consider saved-snapshot
+noise/schedule diagnostics. No live service or provider submission.

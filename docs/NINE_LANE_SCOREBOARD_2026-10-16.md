@@ -167,3 +167,18 @@ Hosted run #754 accepts the ten-query SDK checkpoint: residual
 `6.798833937237839e-13`, 10,160 CX, depth 23,477, size 32,645, 470,529 QASM
 bytes, 668.50 s and 86.35 MB traced peak. All frozen gates pass. The prefix
 ladder stops here; eleven queries and degree 81 remain blocked/non-inferred.
+
+## Cycle 008 Delta 15–16
+
+Delta 15 accepted only the deterministic identity of the pinned FakeKingston
+snapshot. Delta 16 froze the ten-query routing experiment before execution and
+then measured 41,798 CZ, depth 86,783, size 187,979, 2,267,976 QASM2 bytes,
+9.489 s runtime and 51.28 MB traced peak on ten active physical qubits. All
+instructions conformed to the saved target and all no-submit/resource gates
+passed. Useful-output quality remains false by design.
+
+A/B/C/D/F now share a target-bound compilation-resource artifact. This does
+not create live calibration, a physical schedule, fidelity, memory replacement,
+energy/cost or advantage evidence. E/G/H/I, FND/EQN and INV-025–035 retain
+their existing evidence gates. Next is a scalable independent routed-semantics
+check; live service and paid execution remain unauthorized.

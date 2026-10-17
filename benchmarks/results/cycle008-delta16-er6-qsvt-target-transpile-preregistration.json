@@ -1,0 +1,88 @@
+{
+  "acceptance": {
+    "all_routed_instructions_supported_by_saved_target": true,
+    "maximum_host_peak_traced_bytes": 1500000000,
+    "maximum_host_runtime_seconds": 1200,
+    "maximum_routed_depth": 300000,
+    "maximum_routed_size": 600000,
+    "maximum_serialized_qasm2_bytes": 8000000,
+    "maximum_two_qubit_operations": 150000,
+    "minimum_logical_qubits_preserved": 10,
+    "no_threshold_change_after_execution": true,
+    "source_certificate_must_match": true,
+    "stop_on_any_failure": true,
+    "target_identity_must_match": true
+  },
+  "authorization": {
+    "credentials_used": false,
+    "live_service_initialized": false,
+    "network_submission_attempted": false,
+    "paid_execution_authorized": false,
+    "provider_jobs": 0,
+    "shots": 0
+  },
+  "contract_sha256": "d6b6378e3eac09653b2e8a6e74bfa7545ca023138f2bc08e88c05cda5ca71bb7",
+  "date": "2026-10-18",
+  "evidence_class": "MODEL_ONLY_PREREGISTRATION",
+  "inputs": {
+    "logical_source": {
+      "logical_qubits": 10,
+      "max_raw_residual": 6.798833937237839e-13,
+      "path": "benchmarks/results/cycle008-delta14-er6-qsvt-ten-query-qiskit.json",
+      "queries": 10,
+      "sha256": "edcf6e7606336ab55095df44ae03a72e999f863f341033b402a8fbf327f1c899",
+      "work_id": "QOS-AUDIT-010B15"
+    },
+    "saved_target_identity": {
+      "class": "FakeKingston",
+      "num_qubits": 156,
+      "path": "benchmarks/results/cycle008-delta15-er6-qsvt-target-snapshot-identity.json",
+      "sha256": "06fa59ffd50202a3b6846ae1beb0fdacf6a81fcf129af01765e5ade3ad685612",
+      "target_identity_sha256": "88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e"
+    }
+  },
+  "nonclaims": [
+    "not live calibration or a live backend selection",
+    "not circuit execution, sampling, fidelity, or accepted useful-output evidence",
+    "not provider cost or energy evidence",
+    "not eleven-query or degree-81 feasibility",
+    "not quantum advantage or GPU, CPU, NPU, RAM, VRAM, or storage replacement"
+  ],
+  "required_outputs": [
+    "routed_operation_counts",
+    "routed_depth",
+    "routed_size",
+    "two_qubit_operations",
+    "active_physical_qubits",
+    "serialized_qasm2_bytes",
+    "host_runtime_ns",
+    "host_peak_traced_bytes",
+    "layout_fingerprint",
+    "target_conformance_failures"
+  ],
+  "schema": "uqpu-er6-qsvt-target-transpile-preregistration-v1",
+  "transpiler": {
+    "backend_package": "qiskit-ibm-runtime==0.48.0",
+    "initial_layout": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "layout_method": null,
+    "optimization_level": 0,
+    "routing_method": "basic",
+    "saved_target_only": true,
+    "scheduling_method": null,
+    "sdk": "qiskit==2.5.2",
+    "seed_transpiler": 1017
+  },
+  "upstream_work_id": "QOS-AUDIT-010B16",
+  "work_id": "QOS-AUDIT-010B17"
+}
