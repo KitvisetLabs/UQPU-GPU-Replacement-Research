@@ -1,0 +1,94 @@
+{
+  "contract_sha256": "cc34737286ac69dc9eba53d40831cad0e7a299ba96c01c829854e6d2108e1685",
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.12.15"
+  },
+  "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK",
+  "limitations": [
+    "not full degree-81 synthesis or accepted transformed-workload output",
+    "not target-aware transpilation or provider execution",
+    "not fault-tolerant, energy, cost, advantage, or replacement evidence",
+    "The sector reference reuses the verified ER6 eigenvalue contract.",
+    "Generic basis decomposition is not a backend target, schedule, calibration, or bill.",
+    "Host runtime and traced memory are CI-environment measurements only."
+  ],
+  "passed": true,
+  "prefix_results": [
+    {
+      "agreement": {
+        "decomposed_projected_diagonal_vs_2x2_max_abs_residual": 9.640217861921085e-14,
+        "decomposed_projected_offdiagonal_max_abs_residual": 4.629969629774433e-15,
+        "logical_projected_diagonal_vs_2x2_max_abs_residual": 1.7456727791002127e-13,
+        "logical_projected_offdiagonal_max_abs_residual": 1.2698844751890663e-15,
+        "tolerance": 2e-12
+      },
+      "passed": true,
+      "queries": 3,
+      "resource_gate_passed": true,
+      "resources": {
+        "decomposed_depth": 7076,
+        "decomposed_operation_counts": {"cx": 3062, "rz": 5667, "sx": 952, "x": 158},
+        "decomposed_size": 9839,
+        "energy_j": null,
+        "host_peak_traced_bytes": 84791827,
+        "host_runtime_ns": 203655504116,
+        "logical_block_queries": 3,
+        "logical_depth": 150,
+        "logical_projector_phases": 4,
+        "logical_qubits": 10,
+        "logical_size": 249,
+        "provider_cost": null,
+        "provider_execution_id": null,
+        "provider_jobs": 0,
+        "serialized_openqasm2_bytes": 141919,
+        "shots": 0
+      },
+      "workload_sectors_checked": 64
+    },
+    {
+      "agreement": {
+        "decomposed_projected_diagonal_vs_2x2_max_abs_residual": 1.6898608396974926e-13,
+        "decomposed_projected_offdiagonal_max_abs_residual": 7.085223527315096e-15,
+        "logical_projected_diagonal_vs_2x2_max_abs_residual": 2.7613238692498116e-13,
+        "logical_projected_offdiagonal_max_abs_residual": 1.991143299179549e-15,
+        "tolerance": 2e-12
+      },
+      "passed": true,
+      "queries": 5,
+      "resource_gate_passed": true,
+      "resources": {
+        "decomposed_depth": 11762,
+        "decomposed_operation_counts": {"cx": 5090, "rz": 9423, "sx": 1584, "x": 258},
+        "decomposed_size": 16355,
+        "energy_j": null,
+        "host_peak_traced_bytes": 85003559,
+        "host_runtime_ns": 342837898385,
+        "logical_block_queries": 5,
+        "logical_depth": 248,
+        "logical_projector_phases": 6,
+        "logical_qubits": 10,
+        "logical_size": 409,
+        "provider_cost": null,
+        "provider_execution_id": null,
+        "provider_jobs": 0,
+        "serialized_openqasm2_bytes": 235806,
+        "shots": 0
+      },
+      "workload_sectors_checked": 64
+    }
+  ],
+  "provenance": {
+    "commit": "39fa6f99d6cc512555e5613deb182ed79d054f34",
+    "github_actions_artifact_digest": "sha256:b6e1d75495d17df3e3c2d8a389fc3dc6832a8447848c11a6bf568fc878ddb6f2",
+    "github_actions_artifact_id": 12087010676,
+    "github_actions_job_id": 117282789535,
+    "github_actions_run_id": 38994084771,
+    "github_actions_run_number": 741,
+    "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38994084771"
+  },
+  "schema": "uqpu-er6-lcu-qsvt-bounded-prefix-qiskit-v1",
+  "sdk": {"name": "qiskit", "requirement": "qiskit==2.5.2", "version": "2.5.2"},
+  "work_id": "QOS-AUDIT-010B11"
+}

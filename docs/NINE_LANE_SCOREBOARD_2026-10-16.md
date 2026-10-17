@@ -89,10 +89,15 @@ Lane A now owns explicit three- and five-query ER6 prefix contracts. Two
 independent 2x2 recurrences cover all 64 sectors and agree to
 `3.0436364816617974e-16`. Per-prefix hosted gates freeze residual, runtime,
 traced-memory and serialization ceilings and stop after the first failure.
-This is `SIMULATION_BOUNDED_PREFIX_CONTRACT`; pinned-SDK execution is pending.
+Exact implementation commit `39fa6f99d6cc512555e5613deb182ed79d054f34`
+passed the isolated hosted SDK/resource job. Three queries measured 3,062 CX,
+depth 7,076 and 141,919 QASM bytes; five measured 5,090 CX, depth 11,762 and
+235,806 bytes. Both raw spectral residuals passed `2e-12`. This is
+`SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK`, not target or hardware
+evidence.
 
 B–I were reviewed with unchanged no-submit, no-memory-equivalence,
 no-device/factory, no-commercial-energy/material, no-cost-advantage,
 no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN and
-INV-029–035 remain gated. Next is exact-commit hosted reproduction and
-certificate persistence, not degree-81 extrapolation.
+INV-029–035 remain gated. Next is a preregistered bounded resource-growth
+falsifier using the measured 1/2/3/5-query series, not degree-81 extrapolation.

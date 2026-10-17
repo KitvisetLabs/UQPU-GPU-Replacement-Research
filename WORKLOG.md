@@ -1237,3 +1237,18 @@ achievement is claimed.
 
 Next gate: exact-commit hosted 3/5-query SDK/resource reproduction and a
 provenance-bearing certificate; do not advance after any failed prefix.
+
+**Hosted bounded-prefix checkpoint:** implementation commit
+`39fa6f99d6cc512555e5613deb182ed79d054f34` passed cold-start run #17 and all
+nine jobs in project run #741. The isolated Qiskit job measured three-query
+runtime/peak/QASM at `203.655504116 s`/`84,791,827 bytes`/`141,919 bytes`, with
+3,062 CX and depth 7,076. Five queries measured `342.837898385 s`/
+`85,003,559 bytes`/`235,806 bytes`, with 5,090 CX and depth 11,762. Maximum raw
+spectral residuals were `1.7456727791002127e-13` and
+`2.7613238692498116e-13`, both below `2e-12`. Artifact `12087010676` is bound
+to commit/run/job and digest provenance; provider jobs/shots are zero and
+cost/energy null. Priority #1, A–I, INV-025–035, multilingual master
+references, autonomous handoff and evidence boundaries remain preserved.
+
+Next gate: preregister a further bounded-prefix resource-growth falsifier from
+the measured 1/2/3/5-query series; no degree-81, target or provider inference.

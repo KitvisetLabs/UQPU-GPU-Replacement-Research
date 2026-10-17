@@ -3,7 +3,7 @@
 **Work ID:** `QOS-AUDIT-010B11`  
 **Canonical start:** `614de82718888563760b6e1d99de7e7d5a27494c`  
 **Primary owner:** Lane A; integration owners F/H; downstream B/C/D/G  
-**Evidence:** `SIMULATION_BOUNDED_PREFIX_CONTRACT`; hosted SDK/resource gate pending
+**Evidence:** `SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK`; hosted SDK/resource gate passed
 
 ## Result
 
@@ -25,11 +25,23 @@ prefix. It fails closed above `900 s`, `750,000,000 bytes`, `500,000 bytes`, or
 the residual tolerance. It stops after the first failing prefix rather than
 silently promoting the five-query result.
 
+Exact implementation commit `39fa6f99d6cc512555e5613deb182ed79d054f34`
+passed the isolated hosted gate in project run #741:
+
+| Prefix | Max raw sector residual | Runtime | Peak traced host memory | OpenQASM 2 | CX | Depth |
+|---|---:|---:|---:|---:|---:|---:|
+| 3 queries | `1.7456727791002127e-13` | `203.655504116 s` | `84,791,827 bytes` | `141,919 bytes` | 3,062 | 7,076 |
+| 5 queries | `2.7613238692498116e-13` | `342.837898385 s` | `85,003,559 bytes` | `235,806 bytes` | 5,090 | 11,762 |
+
+Both prefixes passed all frozen limits. Artifact `12087010676` is persisted
+with commit, run, job and artifact-digest provenance. These remain generic CI
+host/circuit measurements, not target-QPU resources or economics.
+
 ## A–I and integration status
 
 | Lane | Advance or reviewed blocker |
 |---|---|
-| A | 3/5-query spectral contract passes locally; exact hosted Qiskit resources pending |
+| A | 3/5-query spectral prefixes pass exact-commit hosted Qiskit and resource gates |
 | B | provider-neutral circuit only; submission and paid execution remain disabled |
 | C | host memory/serialization limits are explicit but are not RAM/VRAM/storage equivalence |
 | D | no calibrated device schedule or error response follows from generic decomposition |
@@ -67,15 +79,16 @@ claimed.
 ## Validation and next gate
 
 - Targeted contract suite: 4 passed; optional pinned-Qiskit test skipped locally.
-- Full core suite: 506 passed, 14 optional-dependency skips.
+- Full core suite after certificate persistence: 507 passed, 14 optional-dependency skips.
 - Cold-start audit: `READY_FOR_COLD_START`, 36 A–I integration pairs.
-- Hosted exact-commit 3/5-query Qiskit job: pending.
+- Hosted exact-commit project CI #741: passed all nine jobs.
+- Cold-start run #17: passed.
 
 The first full audit failed closed because the new
 `SIMULATION_BOUNDED_PREFIX_CONTRACT` label was absent from the executable
 evidence allowlist. The taxonomy was updated explicitly and the full suite then
 passed; the initial failure is retained as a handoff-schema negative result.
 
-Next: publish this contract, run the isolated hosted SDK/resource gate and
-persist the provenance-bearing certificate. Only if both prefixes pass may the
-project design the next bounded ladder; degree-81 synthesis remains separate.
+Next: use the measured 1/2/3/5-query series to define a preregistered next
+prefix and resource-growth falsifier before execution. Degree-81 synthesis,
+target-aware mapping and provider execution remain separate gates.

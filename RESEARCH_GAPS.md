@@ -471,7 +471,7 @@ memory, serialized bytes and raw residuals; stop on tolerance or resource
 failure instead of extrapolating to 81 queries.
 
 ### RG-033 update — bounded 3/5-query contract implemented
-**Status:** PARTIALLY_UNLOCKED / SIMULATION_BOUNDED_PREFIX_CONTRACT
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK
 **Date:** 2026-10-17
 
 QOS-AUDIT-010B11 evaluates three- and five-query prefixes across all 64 ER6
@@ -488,6 +488,21 @@ target, provider, energy, cost or advantage evidence.
 **Next experiment / unlock:** reproduce the unchanged contract in the isolated
 hosted Qiskit job, persist raw per-prefix residual/runtime/memory/bytes with
 commit/run/job/artifact provenance, and do not advance if either prefix fails.
+
+**Hosted checkpoint:** implementation commit
+`39fa6f99d6cc512555e5613deb182ed79d054f34` passed both prefixes in project
+run #741. Three queries measured `203.655504116 s`, `84,791,827` traced bytes,
+`141,919` QASM bytes, 3,062 CX and depth 7,076; five queries measured
+`342.837898385 s`, `85,003,559` traced bytes, `235,806` QASM bytes, 5,090 CX
+and depth 11,762. Maximum raw spectral residuals were
+`1.7456727791002127e-13` and `2.7613238692498116e-13`, below `2e-12`.
+Artifact `12087010676` is provenance-bound. Jobs/shots are zero and cost/energy
+null.
+
+**Revised next experiment / unlock:** preregister the next bounded prefix from
+the measured 1/2/3/5-query series, including a resource-growth falsifier and
+hard stop. Do not infer degree-81 feasibility from the observed near-linear
+generic gate counts.
 
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING

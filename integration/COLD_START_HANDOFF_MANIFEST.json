@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "614de82718888563760b6e1d99de7e7d5a27494c",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 10: bounded 3/5-query sector recurrences pass locally with frozen fail-closed resource ceilings; hosted SDK gate pending",
+  "current_frontier": "Cycle 008 Delta 10: bounded 3/5-query prefixes pass exact-commit hosted SDK/resource gates; next prefix requires a preregistered growth falsifier",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -25,7 +25,7 @@
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_BOUNDED_PREFIX_CONTRACT", "next_gate": "hosted 3/5-query SDK and resource reproduction with provenance"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK", "next_gate": "preregister next bounded prefix and resource-growth falsifier"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -39,10 +39,10 @@
   "open_gates": ["RG-033", "RG-034", "I-012"],
   "master_reference_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
   "latest_verified_ci": {
-    "run_number": 739,
-    "run_id": 38974624659,
+    "run_number": 741,
+    "run_id": 38994084771,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38974624659"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38994084771"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -58,6 +58,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Run the isolated hosted 3/5-query SDK/resource gate, persist provenance, and stop after any failed prefix; keep provider submission disabled.",
+  "next_independent_action": "Fit and preregister a falsifiable resource-growth envelope from measured 1/2/3/5-query prefixes before selecting the next bounded prefix; keep provider submission disabled.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }
