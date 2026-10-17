@@ -1432,3 +1432,10 @@ handoff and evidence boundaries remain preserved. No target transpilation,
 live calibration, paid QPU, advantage, subsystem replacement, commercial
 bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone result is
 claimed. Next: hosted identity, then separately preregistered no-submit routing.
+
+**Hosted negative result:** the first exact-commit identity job failed because
+Qiskit represents globally defined target instructions with `qargs=None`.
+The original dummy fixture covered only concrete tuples. This is classified as
+a reproducibility-tooling defect, not target infeasibility. The collector now
+uses the operation's declared arity for global instructions and the regression
+fixture includes that representation before CI retry.

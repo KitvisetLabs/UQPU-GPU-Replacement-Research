@@ -11,15 +11,21 @@ from uqpu.er6_qsvt_target_snapshot_identity import (
 
 
 class _Operation:
-    def __init__(self, name):
+    def __init__(self, name, num_qubits=1):
         self.name = name
+        self.num_qubits = num_qubits
 
 
 class _Target:
     operation_names = {"rz", "cx", "x"}
 
     def __init__(self, reverse=False):
-        rows = [(_Operation("rz"), (0,)), (_Operation("cx"), (0, 1)), (_Operation("x"), (1,))]
+        rows = [
+            (_Operation("rz"), (0,)),
+            (_Operation("cx", 2), (0, 1)),
+            (_Operation("x"), (1,)),
+            (_Operation("delay"), None),
+        ]
         self.instructions = list(reversed(rows)) if reverse else rows
 
 

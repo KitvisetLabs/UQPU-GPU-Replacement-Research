@@ -45,7 +45,11 @@ def build_target_identity(backend: Any, package_versions: dict[str, str]) -> dic
     target = backend.target
     instruction_signatures: Counter[tuple[str, int]] = Counter()
     for operation, qargs in target.instructions:
-        instruction_signatures[(str(operation.name), len(qargs))] += 1
+        # Qiskit Target uses qargs=None for globally defined instructions.
+        # Preserve their declared arity without pretending they are bound to a
+        # concrete physical tuple.
+        arity = int(operation.num_qubits) if qargs is None else len(qargs)
+        instruction_signatures[(str(operation.name), arity)] += 1
     identity = {
         "schema": "uqpu-er6-target-snapshot-identity-v1",
         "work_id": WORK_ID,
