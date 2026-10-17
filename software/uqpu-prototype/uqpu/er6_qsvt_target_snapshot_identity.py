@@ -40,16 +40,28 @@ def _coupling_edges(backend: Any) -> list[list[int]]:
     return sorted([int(a), int(b)] for a, b in coupling.get_edges())
 
 
+def _instruction_signature(operation: Any, qargs: Any) -> tuple[str, int | str]:
+    """Normalize fixed- and variable-width Target instruction declarations."""
+    if qargs is not None:
+        return str(operation.name), len(qargs)
+    if isinstance(operation, type):
+        # Qiskit represents variable-width control-flow operations such as
+        # IfElseOp by their class.  Accessing name/num_qubits on that class
+        # returns property descriptors, whose repr contains process-local
+        # addresses and therefore cannot be part of a reproducible digest.
+        return f"class:{operation.__module__}.{operation.__qualname__}", "variable"
+    num_qubits = getattr(operation, "num_qubits", None)
+    if not isinstance(num_qubits, int):
+        raise TypeError("global Target instruction has no stable declared arity")
+    return str(operation.name), num_qubits
+
+
 def build_target_identity(backend: Any, package_versions: dict[str, str]) -> dict[str, Any]:
     """Return an order-stable structural fingerprint for a saved backend target."""
     target = backend.target
-    instruction_signatures: Counter[tuple[str, int]] = Counter()
+    instruction_signatures: Counter[tuple[str, int | str]] = Counter()
     for operation, qargs in target.instructions:
-        # Qiskit Target uses qargs=None for globally defined instructions.
-        # Preserve their declared arity without pretending they are bound to a
-        # concrete physical tuple.
-        arity = int(operation.num_qubits) if qargs is None else len(qargs)
-        instruction_signatures[(str(operation.name), arity)] += 1
+        instruction_signatures[_instruction_signature(operation, qargs)] += 1
     identity = {
         "schema": "uqpu-er6-target-snapshot-identity-v1",
         "work_id": WORK_ID,
@@ -65,7 +77,9 @@ def build_target_identity(backend: Any, package_versions: dict[str, str]) -> dic
             "coupling_edges": _coupling_edges(backend),
             "instruction_signature_counts": [
                 {"operation": name, "arity": arity, "instances": count}
-                for (name, arity), count in sorted(instruction_signatures.items())
+                for (name, arity), count in sorted(
+                    instruction_signatures.items(), key=lambda item: (item[0][0], str(item[0][1]))
+                )
             ],
         },
         "environment": {"packages": dict(sorted(package_versions.items()))},

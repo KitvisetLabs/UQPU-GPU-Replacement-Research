@@ -1439,3 +1439,16 @@ The original dummy fixture covered only concrete tuples. This is classified as
 a reproducibility-tooling defect, not target infeasibility. The collector now
 uses the operation's declared arity for global instructions and the regression
 fixture includes that representation before CI retry.
+
+**Hosted negative result 2:** the retry exposed that Qiskit 2.5.2 represents
+the variable-width `IfElseOp` entry as a class with `qargs=None`; its
+`name`/`num_qubits` attributes are property descriptors rather than stable
+values. The collector must not stringify those descriptors because their
+representations contain process-local addresses. It now records the fully
+qualified class name with `arity="variable"`, keeps concrete entries numeric,
+and rejects any other global instruction without a stable integer arity. The
+pinned local stack reproduced FakeKingston successfully: 156 qubits, 352
+directed CZ instances, one variable-width IfElseOp declaration and identity
+digest `88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e`.
+This remains saved-snapshot identity evidence only, not transpilation or QPU
+performance evidence.

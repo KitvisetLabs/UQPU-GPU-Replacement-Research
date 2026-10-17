@@ -16,6 +16,16 @@ class _Operation:
         self.num_qubits = num_qubits
 
 
+class _VariableOperation:
+    @property
+    def name(self):
+        raise AssertionError("class-level property must not be read")
+
+    @property
+    def num_qubits(self):
+        raise AssertionError("class-level property must not be read")
+
+
 class _Target:
     operation_names = {"rz", "cx", "x"}
 
@@ -25,6 +35,7 @@ class _Target:
             (_Operation("cx", 2), (0, 1)),
             (_Operation("x"), (1,)),
             (_Operation("delay"), None),
+            (_VariableOperation, None),
         ]
         self.instructions = list(reversed(rows)) if reverse else rows
 
@@ -53,6 +64,15 @@ class TargetSnapshotIdentityTests(unittest.TestCase):
         right = build_target_identity(DummyBackend(True), SDK_REQUIREMENTS)
         self.assertEqual(left, right)
         self.assertEqual(validate_identity(left), [])
+        signatures = left["target"]["instruction_signature_counts"]
+        self.assertIn(
+            {
+                "operation": f"class:{_VariableOperation.__module__}.{_VariableOperation.__qualname__}",
+                "arity": "variable",
+                "instances": 1,
+            },
+            signatures,
+        )
 
     def test_mutations_fail_closed(self):
         identity = build_target_identity(DummyBackend(), SDK_REQUIREMENTS)
