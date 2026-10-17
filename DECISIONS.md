@@ -673,3 +673,16 @@ separately preregistered against the unchanged absolute stop.
 preregistration, not degree-81 scalability. Keeping prefix acceptance separate
 from target, hardware, useful-output and economic evidence prevents a passing
 SDK experiment from being promoted into feasibility or advantage.
+
+## 2026-10-17 — D125: Ten queries is the next and last preregistered prefix under current ceilings
+
+**Decision:** Bind the measured 1/2/3/5/8-query certificates, scan query counts
+9 through 81, and freeze ten queries as QOS-AUDIT-010B14. Keep the existing
+900-second, 750 MB, 500,000-QASM-byte and `2e-12` residual stops unchanged.
+Eleven queries are blocked before execution because its conservative QASM
+envelope is 517,495 bytes.
+
+**Reason:** The ten-query envelope remains below every current absolute stop,
+while eleven queries crosses the first deterministic capacity boundary.
+Selecting the boundary before execution prevents threshold movement and turns
+serialization capacity into a falsifiable gate rather than a degree-81 claim.

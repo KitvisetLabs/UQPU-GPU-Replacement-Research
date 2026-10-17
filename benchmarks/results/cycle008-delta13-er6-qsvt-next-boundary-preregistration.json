@@ -1,0 +1,186 @@
+{
+  "acceptance": {
+    "absolute_safety_ceilings": {
+      "host_peak_traced_bytes": 750000000,
+      "host_runtime_ns": 900000000000,
+      "serialized_openqasm2_bytes": 500000
+    },
+    "deterministic_metric_model_limits": {
+      "cx": 10160,
+      "decomposed_depth": 23477,
+      "decomposed_size": 32645,
+      "rz": 18813,
+      "serialized_openqasm2_bytes": 470551,
+      "sx": 3164,
+      "x": 508
+    },
+    "matrix_and_state_recurrences_required": true,
+    "no_threshold_change_after_execution": true,
+    "raw_residual_tolerance": 2e-12,
+    "stop_on_any_residual_or_absolute_safety_failure": true,
+    "unique_eigenvalues_required": 7,
+    "workload_sectors_required": 64
+  },
+  "authorization": {
+    "paid_execution": false,
+    "provider_submission": false
+  },
+  "contract_sha256": "47ad5e62cbae93fb613fd3d3a1a3a464f09c06b6eb3e54b2a5e3fabcc39795aa",
+  "date": "2026-10-17",
+  "evidence_class": "MODEL_ONLY",
+  "measured_query_counts": [
+    1,
+    2,
+    3,
+    5,
+    8
+  ],
+  "measured_series": {
+    "1": {
+      "cx": 1034,
+      "decomposed_depth": 2390,
+      "decomposed_size": 3323,
+      "host_peak_traced_bytes": 85082614,
+      "host_runtime_ns": 67525448854,
+      "rz": 1911,
+      "serialized_openqasm2_bytes": 48037,
+      "sx": 320,
+      "x": 58
+    },
+    "2": {
+      "cx": 2048,
+      "decomposed_depth": 4733,
+      "decomposed_size": 6581,
+      "host_peak_traced_bytes": 119094814,
+      "host_runtime_ns": 158430453559,
+      "rz": 3789,
+      "serialized_openqasm2_bytes": 94969,
+      "sx": 636,
+      "x": 108
+    },
+    "3": {
+      "cx": 3062,
+      "decomposed_depth": 7076,
+      "decomposed_size": 9839,
+      "host_peak_traced_bytes": 84791827,
+      "host_runtime_ns": 203655504116,
+      "rz": 5667,
+      "serialized_openqasm2_bytes": 141919,
+      "sx": 952,
+      "x": 158
+    },
+    "5": {
+      "cx": 5090,
+      "decomposed_depth": 11762,
+      "decomposed_size": 16355,
+      "host_peak_traced_bytes": 85003559,
+      "host_runtime_ns": 342837898385,
+      "rz": 9423,
+      "serialized_openqasm2_bytes": 235806,
+      "sx": 1584,
+      "x": 258
+    },
+    "8": {
+      "cx": 8132,
+      "decomposed_depth": 18791,
+      "decomposed_size": 26129,
+      "host_peak_traced_bytes": 85858826,
+      "host_runtime_ns": 525450692110,
+      "rz": 15057,
+      "serialized_openqasm2_bytes": 376644,
+      "sx": 2532,
+      "x": 408
+    }
+  },
+  "nonclaims": [
+    "not an executed ten-query circuit",
+    "not degree-81 synthesis or feasibility evidence",
+    "not target-aware, real-QPU, energy, cost, advantage, or replacement evidence",
+    "host runtime and memory are shared-runner planning diagnostics"
+  ],
+  "schema": "uqpu-er6-qsvt-next-boundary-preregistration-v1",
+  "selection": {
+    "first_blocked_metrics": [
+      "serialized_openqasm2_bytes"
+    ],
+    "first_blocked_query_count": 11,
+    "method": "largest integer query count whose conservative envelopes remain below every unchanged absolute ceiling",
+    "scan_upper_query_count": 81,
+    "selected_conservative_upper": {
+      "cx": 10160,
+      "decomposed_depth": 23477,
+      "decomposed_size": 32645,
+      "host_peak_traced_bytes": 187377521,
+      "host_runtime_ns": 716864999908,
+      "rz": 18813,
+      "serialized_openqasm2_bytes": 470551,
+      "sx": 3164,
+      "x": 508
+    },
+    "selected_query_count": 10
+  },
+  "source_certificates": [
+    {
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_ONE_QUERY_CHECK",
+      "path": "benchmarks/results/cycle008-delta07-er6-lcu-qsvt-one-query-qiskit.json",
+      "provenance": {
+        "commit": "9d7e5d761fc8ddf18a0fec4a9564ce836e617e96",
+        "github_actions_artifact_id": 12072606869,
+        "github_actions_job_id": 117173121884,
+        "github_actions_run_id": 38960114128,
+        "github_actions_run_number": 735,
+        "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38960114128"
+      },
+      "sha256": "de7b4da0a1856cbfc3604c1a397739b6fa7e19bddb60439d461704040c8b4d91",
+      "work_id": "QOS-AUDIT-010B8"
+    },
+    {
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_TWO_QUERY_CHECK",
+      "path": "benchmarks/results/cycle008-delta08-er6-lcu-qsvt-two-query-qiskit.json",
+      "provenance": {
+        "commit": "2bf019cf21efd43ec7ae9f8196ec03e5734e7945",
+        "github_actions_artifact_id": 12075997394,
+        "github_actions_job_id": 117198147300,
+        "github_actions_run_id": 38967584171,
+        "github_actions_run_number": 737,
+        "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38967584171"
+      },
+      "sha256": "a2b2304514bd4c707e6c3bd7bc957a1ecc33b2f5b14874b1be1f5298baa03b6c",
+      "work_id": "QOS-AUDIT-010B9"
+    },
+    {
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK",
+      "path": "benchmarks/results/cycle008-delta10-er6-lcu-qsvt-bounded-prefix-qiskit.json",
+      "provenance": {
+        "commit": "39fa6f99d6cc512555e5613deb182ed79d054f34",
+        "github_actions_artifact_digest": "sha256:b6e1d75495d17df3e3c2d8a389fc3dc6832a8447848c11a6bf568fc878ddb6f2",
+        "github_actions_artifact_id": 12087010676,
+        "github_actions_job_id": 117282789535,
+        "github_actions_run_id": 38994084771,
+        "github_actions_run_number": 741,
+        "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/38994084771"
+      },
+      "sha256": "01c56704877e4ac20af7e1a0128fbf402e1138c5f7e378b263cd33366ade6a41",
+      "work_id": "QOS-AUDIT-010B11"
+    },
+    {
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK",
+      "path": "benchmarks/results/cycle008-delta12-er6-qsvt-eight-query-qiskit.json",
+      "provenance": {
+        "commit": "b1ffc1de9c2a0b02d80886e548d1d4fe6be17213",
+        "github_actions_artifact_digest": "sha256:6ea35e9525a49dd1838ae8662b591a8ee470c77c306c1f740f5b6713951b53c7",
+        "github_actions_artifact_id": 12094185194,
+        "github_actions_job_id": 117338184551,
+        "github_actions_merge_commit": "00401e0a2d2fa223b16bca50f88853c87dc0f875",
+        "github_actions_run_id": 39012562978,
+        "github_actions_run_number": 745,
+        "github_actions_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39012562978"
+      },
+      "sha256": "730eaf1865e47fd5ffdf5d2f3e056363ffe2646ce0b3e9ce9ca52ee3b5037415",
+      "work_id": "QOS-AUDIT-010B13"
+    }
+  ],
+  "upstream_work_id": "QOS-AUDIT-010B13",
+  "work_id": "QOS-AUDIT-010B14"
+}
+

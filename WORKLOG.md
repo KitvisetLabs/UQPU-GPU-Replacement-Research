@@ -1338,3 +1338,33 @@ Thai/English/Chinese/Japanese/Korean/German master references, strategic
 AI/funding references, autonomous handoff and evidence boundaries were
 preserved. Next: preregister a further bounded boundary test below unchanged
 absolute stops; do not infer degree 81 or authorize provider execution.
+
+### 2026-10-17 — Cycle 008 Delta 13 ten-query boundary preregistration
+
+Started from canonical `main` commit
+`d8dfd72cd3b8e5dc78a63809170663f74fa03b04`. Implemented
+QOS-AUDIT-010B14, binding the measured 1/2/3/5/8-query certificates and scanning
+integer query counts 9–81 against unchanged absolute stops. Ten queries is the
+largest planning-eligible prefix: 470,551 QASM bytes, 716.865 seconds and
+187,377,521 traced bytes on conservative envelopes. Eleven queries is blocked
+before execution by a 517,495-byte QASM envelope above the 500,000-byte stop.
+Four focused tests cover provenance-bound inputs, boundary selection, frozen
+limits and mutation rejection.
+
+Fresh surveillance found no material primary result newer than the existing
+same-day QSP/equation-discovery watches, so no duplicate article was created.
+A advanced the immutable boundary; B remains no-submit; C retains host-only
+planning evidence; D/G remain target/process-window blocked; E reviewed
+Pangola, BIO-001, FUS-001 and cooling without new measurement; F preserves
+unchanged stops; H updates autonomous handoff without capital authority; I
+remains `MODEL_ONLY` with I-012 open. FND-001–006, EQN-001–006 and FIN-001
+were reviewed without evidence promotion.
+
+Priority #1, all nine lanes A–I, INV-025–035, multilingual
+Thai/English/Chinese/Japanese/Korean/German master references, strategic
+AI/funding references, autonomous handoff and evidence boundaries were
+preserved. No paid QPU, provider execution, fabrication, hazardous vehicle
+test, quantum advantage, subsystem replacement, >=100x/100,000,000x result,
+commercial bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone
+achievement is claimed. Next: exact-commit CI, then implement the unchanged
+ten-query runner; eleven queries remains blocked under the current contract.
