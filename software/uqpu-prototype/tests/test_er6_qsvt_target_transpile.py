@@ -3,7 +3,11 @@ import importlib.util
 import json
 import unittest
 
-from uqpu.er6_qsvt_target_transpile import evaluate_result, reproduce_with_qiskit
+from uqpu.er6_qsvt_target_transpile import (
+    PERSISTED_CERTIFICATE,
+    evaluate_result,
+    reproduce_with_qiskit,
+)
 from uqpu.er6_qsvt_target_transpile_preregistration import PERSISTED_PREREGISTRATION
 
 
@@ -40,6 +44,15 @@ class TargetTranspileEvaluationTests(unittest.TestCase):
         changed = copy.deepcopy(self.resources)
         changed["authorization"]["shots"] = 1
         self.assertIn("authorization", evaluate_result(self.contract, changed)["failures"])
+
+    def test_persisted_hosted_certificate_keeps_quality_unaccepted(self):
+        certificate = json.loads(PERSISTED_CERTIFICATE.read_text(encoding="utf-8"))
+        self.assertTrue(certificate["passed"])
+        self.assertFalse(certificate["evaluation"]["useful_output_quality_accepted"])
+        self.assertEqual(certificate["resources"]["authorization"]["provider_jobs"], 0)
+        self.assertEqual(certificate["resources"]["target_conformance_failures"], [])
+        self.assertEqual(certificate["resources"]["routed_operation_counts"]["cz"], 41798)
+        self.assertEqual(certificate["provenance"]["workflow_job_id"], 117517795643)
 
 
 @unittest.skipUnless(importlib.util.find_spec("qiskit_ibm_runtime"), "optional saved-target SDK")

@@ -18,6 +18,7 @@ from typing import Any
 from .er6_qsvt_target_snapshot_identity import reproduce_target_identity
 from .er6_qsvt_target_transpile_preregistration import (
     PERSISTED_PREREGISTRATION,
+    ROOT,
     TARGET_IDENTITY_SHA256,
     validate_preregistration,
 )
@@ -26,6 +27,7 @@ from .er6_qsvt_ten_query import build_ten_query_circuit
 
 WORK_ID = "QOS-AUDIT-010B18"
 UPSTREAM_WORK_ID = "QOS-AUDIT-010B17"
+PERSISTED_CERTIFICATE = ROOT / "benchmarks/results/cycle008-delta16-er6-qsvt-target-transpile.json"
 
 
 def _canonical_sha256(value: Any) -> str:

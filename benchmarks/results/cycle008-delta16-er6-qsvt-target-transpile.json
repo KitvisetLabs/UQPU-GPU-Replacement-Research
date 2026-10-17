@@ -1,0 +1,72 @@
+{
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.12.15",
+    "qiskit": "2.5.2"
+  },
+  "evaluation": {
+    "failures": [],
+    "resource_and_authorization_gate_passed": true,
+    "useful_output_quality_accepted": false
+  },
+  "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK",
+  "limitations": [
+    "not live calibration or a live backend selection",
+    "not circuit execution, sampling, fidelity, or accepted useful-output evidence",
+    "not provider cost or energy evidence",
+    "not eleven-query or degree-81 feasibility",
+    "not quantum advantage or GPU, CPU, NPU, RAM, VRAM, or storage replacement",
+    "routed instruction conformance does not verify logical equivalence after routing",
+    "saved instruction properties are not converted into a circuit-fidelity estimate"
+  ],
+  "passed": true,
+  "preregistration_sha256": "d6b6378e3eac09653b2e8a6e74bfa7545ca023138f2bc08e88c05cda5ca71bb7",
+  "provenance": {
+    "artifact_archive_digest": "sha256:b5debaf7c76dd03cf97a7f35a5ee26821e2cb0d3f92953c2b77258ad6c9fa12e",
+    "artifact_id": 12116198038,
+    "artifact_raw_json_sha256": "fedb55cf84ece75dde554f2cbcfa400904841f82e6933f91b74a6d1467453ab7",
+    "execution_ref_sha": "03c991cb74a9b0c2d03d44efcae79ba517ad2faf",
+    "pr_number": 37,
+    "preregistration_source_commit": "8f8e90b1729c4fb3a8f0e75bd62696038de6c811",
+    "source_branch": "research/cycle008-delta16-2026-10-18",
+    "source_commit": "b69f8772ac7db23e6fdcd2f4571e7308a10c56b8",
+    "workflow_job_id": 117517795643,
+    "workflow_run_id": 39074120526,
+    "workflow_run_number": 770
+  },
+  "resources": {
+    "active_physical_qubits": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "authorization": {
+      "credentials_used": false,
+      "live_service_initialized": false,
+      "network_submission_attempted": false,
+      "paid_execution_authorized": false,
+      "provider_jobs": 0,
+      "shots": 0
+    },
+    "energy_j": null,
+    "host_peak_traced_bytes": 51277778,
+    "host_runtime_ns": 9489215595,
+    "host_runtime_seconds": 9.489215595,
+    "layout_fingerprint": "ec0e1ea78e37085895cb473258d3a7fcbe29fa6264c24ddff93b7d22f677163a",
+    "logical_qubits": 10,
+    "provider_cost": null,
+    "routed_depth": 86783,
+    "routed_operation_counts": {
+      "cz": 41798,
+      "rz": 59153,
+      "sx": 86520,
+      "x": 508
+    },
+    "routed_size": 187979,
+    "serialized_qasm2_bytes": 2267976,
+    "target_conformance_failures": [],
+    "target_width_qubits": 156,
+    "two_qubit_operations": 41798
+  },
+  "schema": "uqpu-er6-qsvt-target-transpile-v1",
+  "target_identity_sha256": "88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e",
+  "upstream_work_id": "QOS-AUDIT-010B17",
+  "work_id": "QOS-AUDIT-010B18"
+}

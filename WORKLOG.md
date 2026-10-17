@@ -1463,3 +1463,26 @@ The certificate is persisted with provenance. Credentials, live service,
 network submission, provider jobs and shots remained zero/false; cost and
 energy were not measured. Next is a separate preregistered no-submit
 transpilation gate against this digest, not live calibration or paid QPU use.
+
+### 2026-10-18 — Cycle 008 Delta 16 saved-target no-submit routing
+
+Started from canonical `main` commit
+`c30d43402540d75d90bdd8a5adce51601a9af330`. Commit
+`8f8e90b1729c4fb3a8f0e75bd62696038de6c811` froze QOS-AUDIT-010B17 before
+routing. Source commit `b69f8772ac7db23e6fdcd2f4571e7308a10c56b8`
+implemented QOS-AUDIT-010B18 and passed hosted job `117517795643` in run #770.
+Measured resources: 41,798 CZ, depth 86,783, size 187,979, 2,267,976 QASM2
+bytes, 9.489 s runtime and 51,277,778 traced bytes. Target conformance and all
+frozen resource/authorization gates passed. Artifact `12116198038` is retained.
+
+Useful-output quality remains explicitly unaccepted; this is saved-target
+compilation evidence, not live calibration, QPU execution, fidelity, energy,
+cost or advantage. A advanced its target-bound resource interface; B stayed
+no-submit; C gained measured serialization/host boundaries without memory
+equivalence; D/G gained no physical/process conclusion; E reviewed BIO-001,
+FUS-001, Pangola and cooling without new measurement; F preserved null
+economics; H preserved the software-first capital gate; I remains `MODEL_ONLY`.
+FND/EQN/FIN and INV-025–035 were reviewed without promotion. Fresh literature
+surveillance found no gate-changing primary delta, so no duplicate watch was
+created. Next: independently verify routed semantics without a dense
+156-qubit operator, then preregister any snapshot noise/schedule diagnostic.

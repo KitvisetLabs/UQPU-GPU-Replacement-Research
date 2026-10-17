@@ -723,3 +723,16 @@ provider-job or paid-authority signal. Identity is not calibration or routing.
 **Reason:** Selecting a snapshot after routed resources are known permits
 target cherry-picking. Separating identity from transpilation also prevents a
 stored fake backend from being mislabeled as current hardware evidence.
+
+## 2026-10-18 — D129: Accept routed resources without accepting routed quality
+
+**Decision:** Freeze the ten-query source, saved-target identity, layout,
+routing method, seed and resource ceilings before target compilation. Accept
+QOS-AUDIT-010B18 only as a saved-snapshot no-submit resource/conformance gate.
+Keep useful-output quality false until a scalable independent routed-semantics
+check exists; do not convert saved instruction properties into fidelity.
+
+**Reason:** Target instruction support and a passing compiler do not prove that
+the routed circuit preserves the accepted workload output or predicts a live
+device. Separating resource acceptance from quality acceptance prevents a
+successful transpilation from becoming unsupported hardware evidence.
