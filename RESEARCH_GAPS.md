@@ -590,7 +590,7 @@ blocked unless a separately evidenced representation change reduces measured
 serialization without relaxing useful-output or evidence contracts.
 
 ### RG-033 update — ten-query execution path implemented
-**Status:** HOSTED_IDENTITY_ACCEPTED / TRANSPILATION_NOT_STARTED
+**Status:** HOSTED_ACCEPTED / ELEVEN_QUERY_BLOCKED
 **Date:** 2026-10-17
 
 QOS-AUDIT-010B15 consumes the immutable B14 digest and implements ten block
@@ -640,7 +640,7 @@ or proof-assistant checks pass.
 **Review trigger:** first exact-commit cold-start CI plus reconciler fixture.
 
 ### RG-033 update — saved-target identity gate implemented
-**Status:** TOOL_BLOCKED / PINNED_SDK_CI_PENDING
+**Status:** HOSTED_IDENTITY_ACCEPTED / TRANSPILATION_NOT_STARTED
 **Date:** 2026-10-18
 
 QOS-AUDIT-010B16 binds the accepted ten-query certificate digest to a
