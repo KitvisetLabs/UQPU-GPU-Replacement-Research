@@ -76,10 +76,20 @@ demonstration or new physical law is claimed.
 ## Validation and next gate
 
 - New targeted tests: 6 passed.
+- Full local suite: 513 passed with 14 optional-environment skips.
+- Cold-start audit: `READY_FOR_COLD_START`, 36 A–I pairs, no warnings.
 - Contract digest: `b4982d043a2cdd0beae0d3be3be83cfd56a7754003de7b4646ff26b4af5a8009`.
 - Provider submission and paid execution are explicitly false.
 - Negative-result interpretation is predeclared: a model rejection is a useful
   result and cannot be hidden by the absolute experiment gate.
+
+**Publication negative result:** the first Git-data API commit `cd263d73748f31e3df8d76364465a1123b230e48`
+was created from a multi-file base64 collection whose tool-output payload was
+truncated for large canonical files. A post-publish fetch/tree comparison
+detected the mismatch before any CI claim. The commit remains in history as a
+failed publication attempt; the immediately following fast-forward repair uses
+the complete tested Git tree. Future publication must not transport large file
+contents through a token-limited combined output.
 
 Next: implement the unchanged eight-query prefix in the isolated pinned-Qiskit
 job, stop on residual/absolute-limit failure, persist the raw result with

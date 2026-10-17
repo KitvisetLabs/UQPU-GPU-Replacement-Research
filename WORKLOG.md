@@ -1285,3 +1285,11 @@ WACC, new physical law or Data-Center-to-Phone achievement is claimed.
 
 Next gate: execute the unchanged eight-query prefix in isolated pinned Qiskit,
 persist provenance-bearing raw results, and compare with the frozen limits.
+
+**Sync negative result and repair:** initial publication commit
+`cd263d73748f31e3df8d76364465a1123b230e48` used a combined base64 blob
+collection whose returned payload was truncated for large canonical files.
+Fetch-plus-tree comparison detected the mismatch before any CI-success claim.
+The commit is retained as a failed publication attempt; the next fast-forward
+commit restores the complete locally tested tree. Do not use token-limited
+combined tool output to transport large canonical file bodies.
