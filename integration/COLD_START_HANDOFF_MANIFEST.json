@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-17T07:01:28Z",
+  "prepared_utc": "2026-10-17T13:20:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "b1ed8b6da28d04fa3bfc97348f50d9000ccd4db0",
+  "canonical_start_sha": "5486c8048530f256187ccbd7ba99db086a131f54",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 13: ten-query boundary preregistered from measured 1/2/3/5/8-query certificates",
+  "current_frontier": "Cycle 008 Delta 14: immutable ten-query runner implemented; pinned-SDK result pending",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -24,11 +24,12 @@
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_11_2026-10-17.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_12_2026-10-17.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_13_2026-10-17.md",
+    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_14_2026-10-17.md",
     "docs/LITERATURE_WATCH_2026-10-17_AI_GENERATED_MATHEMATICAL_INSTRUMENTS.md",
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "TEN_QUERY_BOUNDARY_PREREGISTERED", "evidence_class": "MODEL_ONLY", "next_gate": "implement unchanged ten-query pinned-Qiskit runner; keep eleven queries blocked"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "TEN_QUERY_RUNNER_IMPLEMENTED", "evidence_class": "TOOL_BLOCKED", "next_gate": "execute exact-commit ten-query runner in pinned Qiskit; keep eleven queries blocked"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -42,10 +43,10 @@
   "open_gates": ["RG-033", "RG-034", "I-012"],
   "master_reference_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
   "latest_verified_ci": {
-    "run_number": 745,
-    "run_id": 39012562978,
+    "run_number": 752,
+    "run_id": 39031171641,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39012562978"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39031171641"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -61,6 +62,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Validate QOS-AUDIT-010B14 on the exact commit, then implement the unchanged ten-query pinned-Qiskit runner; eleven queries remains blocked under current ceilings.",
+  "next_independent_action": "Run QOS-AUDIT-010B15 on the exact commit in pinned Qiskit, persist raw success-or-failure provenance, and keep eleven queries blocked.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

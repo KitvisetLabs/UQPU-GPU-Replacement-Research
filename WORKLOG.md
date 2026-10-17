@@ -1368,3 +1368,31 @@ test, quantum advantage, subsystem replacement, >=100x/100,000,000x result,
 commercial bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone
 achievement is claimed. Next: exact-commit CI, then implement the unchanged
 ten-query runner; eleven queries remains blocked under the current contract.
+
+### 2026-10-17 — Cycle 008 Delta 14 ten-query runner implementation
+
+Started from canonical `main` commit
+`5486c8048530f256187ccbd7ba99db086a131f54`. Implemented
+QOS-AUDIT-010B15 against the unchanged B14 digest: ten block queries, eleven
+projector phases, independent 2x2 recurrence, all-64-sector logical/decomposed
+checks, frozen deterministic limits, absolute stops and zero-provider gates.
+The isolated CI job uploads its certificate on success or failure. Local
+Qiskit is absent, so execution remains `TOOL_BLOCKED`; the full suite passes
+528 tests with 16 optional skips.
+
+Fresh surveillance found no material primary result newer than the existing
+same-day watches that changes this test, so no duplicate article was created.
+A advanced the executable boundary; B remains no-submit; C host-resource-only;
+D/G target/process-window blocked; E reviewed Pangola, BIO-001, FUS-001 and
+cooling without new measurement; F keeps model and absolute failures distinct;
+H updates handoff without capital authority; I remains `MODEL_ONLY` with I-012
+open. FND-001–006, EQN-001–006 and FIN-001 were reviewed without promotion.
+
+Priority #1, all nine lanes A–I, INV-025–035, multilingual
+Thai/English/Chinese/Japanese/Korean/German master references, strategic
+AI/funding references, autonomous handoff and evidence boundaries were
+preserved. No paid QPU, provider execution, fabrication, hazardous vehicle
+test, quantum advantage, subsystem replacement, >=100x/100,000,000x result,
+commercial bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone
+achievement is claimed. Next: exact-commit pinned-Qiskit CI and a
+provenance-bearing ten-query certificate; eleven queries remains blocked.

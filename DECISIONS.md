@@ -686,3 +686,16 @@ envelope is 517,495 bytes.
 while eleven queries crosses the first deterministic capacity boundary.
 Selecting the boundary before execution prevents threshold movement and turns
 serialization capacity into a falsifiable gate rather than a degree-81 claim.
+
+## 2026-10-17 — D126: Ten-query acceptance requires planning and hard-stop gates
+
+**Decision:** Execute QOS-AUDIT-010B15 only against the immutable B14 digest.
+Require measured deterministic metrics to stay within their preregistered
+envelopes as well as the absolute runtime, traced-memory, QASM, residual, basis
+and zero-provider gates. Preserve the certificate on failure and keep eleven
+queries blocked independently of the ten-query result.
+
+**Reason:** The boundary was selected with a falsifiable resource model. A
+numerically correct circuit that exceeds that model is useful negative evidence,
+while a hard-stop failure is a distinct capacity result. Conflating them would
+permit post-result threshold movement or unsupported degree-81 inference.

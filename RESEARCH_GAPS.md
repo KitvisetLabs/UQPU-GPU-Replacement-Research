@@ -589,6 +589,21 @@ residual/resource and commit/run/job/artifact provenance. Eleven queries stays
 blocked unless a separately evidenced representation change reduces measured
 serialization without relaxing useful-output or evidence contracts.
 
+### RG-033 update — ten-query execution path implemented
+**Status:** TOOL_BLOCKED / PINNED_SDK_CI_PENDING
+**Date:** 2026-10-17
+
+QOS-AUDIT-010B15 consumes the immutable B14 digest and implements ten block
+queries, eleven projector phases, independent 2x2 recurrence, all-64-sector
+logical/decomposed comparisons, generic-basis accounting and separate
+model/absolute/residual/authorization gates. The local base environment lacks
+the pinned SDK, so the result remains `TOOL_BLOCKED` until exact-commit CI runs
+`qiskit==2.5.2`.
+
+**Unlock criteria:** persist a success-or-failure artifact with raw residuals,
+counts, depth, size, QASM bytes, runtime, traced memory and exact
+commit/run/job/artifact provenance. Eleven queries remains blocked regardless.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.
