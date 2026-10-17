@@ -153,3 +153,17 @@ B–I retain no-submit, no-memory-equivalence, no-device/factory,
 no-commercial-energy/material, no-cost-advantage, no-capital/WACC and
 no-vehicle-demonstration boundaries. FND/EQN and INV-025–035 remain gated.
 Next is exact-commit validation followed by the unchanged ten-query runner.
+
+## Cycle 008 Delta 14
+
+Lane A implements the immutable ten-query runner with independent recurrence,
+64-sector checks and success-or-failure artifact retention. Pure tests pass;
+numerical execution remains `TOOL_BLOCKED` until pinned-Qiskit CI. B remains
+no-submit; C host-resource-only; D/G target/process-window blocked; E has no
+new BIO/FUS/material measurement; F separates model and hard stops; H preserves
+autonomous handoff; I remains `MODEL_ONLY` with I-012 open.
+
+Hosted run #754 accepts the ten-query SDK checkpoint: residual
+`6.798833937237839e-13`, 10,160 CX, depth 23,477, size 32,645, 470,529 QASM
+bytes, 668.50 s and 86.35 MB traced peak. All frozen gates pass. The prefix
+ladder stops here; eleven queries and degree 81 remain blocked/non-inferred.

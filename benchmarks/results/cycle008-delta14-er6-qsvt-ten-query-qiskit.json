@@ -1,0 +1,82 @@
+{
+  "agreement": {
+    "decomposed_projected_diagonal_max_abs_residual": 4.636789541967633e-13,
+    "decomposed_projected_offdiagonal_max_abs_residual": 1.5732272870118196e-14,
+    "logical_projected_diagonal_max_abs_residual": 6.798833937237839e-13,
+    "logical_projected_offdiagonal_max_abs_residual": 4.374924990999292e-15,
+    "matrix_vs_state_max_abs_residual": 4.710277376051325e-16,
+    "tolerance": 2e-12
+  },
+  "basis_gate_check_passed": true,
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.12.15"
+  },
+  "evaluation": {
+    "absolute_safety_failures": [],
+    "authorization_passed": true,
+    "deterministic_model_failures": [],
+    "experiment_accepted": true,
+    "residual_passed": true
+  },
+  "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK",
+  "limitations": [
+    "not an executed ten-query circuit",
+    "not degree-81 synthesis or feasibility evidence",
+    "not target-aware, real-QPU, energy, cost, advantage, or replacement evidence",
+    "host runtime and memory are shared-runner planning diagnostics",
+    "generic basis decomposition is not a dated backend target or calibrated schedule",
+    "a passing ten-query prefix does not authorize degree-81 synthesis, eleven queries, or provider execution"
+  ],
+  "passed": true,
+  "preregistration_sha256": "47ad5e62cbae93fb613fd3d3a1a3a464f09c06b6eb3e54b2a5e3fabcc39795aa",
+  "resources": {
+    "cx": 10160,
+    "decomposed_depth": 23477,
+    "decomposed_operation_counts": {
+      "cx": 10160,
+      "rz": 18813,
+      "sx": 3164,
+      "x": 508
+    },
+    "decomposed_size": 32645,
+    "energy_j": null,
+    "host_peak_traced_bytes": 86352015,
+    "host_runtime_ns": 668503379153,
+    "logical_depth": 493,
+    "logical_projector_phases": 11,
+    "logical_qubits": 10,
+    "logical_size": 809,
+    "max_raw_residual": 6.798833937237839e-13,
+    "provider_cost": null,
+    "provider_execution_id": null,
+    "provider_jobs": 0,
+    "queries": 10,
+    "rz": 18813,
+    "serialized_openqasm2_bytes": 470529,
+    "shots": 0,
+    "sx": 3164,
+    "x": 508
+  },
+  "schema": "uqpu-er6-qsvt-ten-query-qiskit-v1",
+  "sdk": {
+    "name": "qiskit",
+    "requirement": "qiskit==2.5.2",
+    "version": "2.5.2"
+  },
+  "upstream_work_id": "QOS-AUDIT-010B14",
+  "work_id": "QOS-AUDIT-010B15",
+  "provenance": {
+    "source_commit": "7d095b1fa573590bf498f2953a0e89b922bdc409",
+    "pull_request": 35,
+    "workflow_checkout_commit": "62b66a96d80abd46e99055793d43891cd110444f",
+    "workflow_run_id": 39035622369,
+    "workflow_run_number": 754,
+    "workflow_job_id": 117404874404,
+    "artifact_id": 12102800531,
+    "artifact_name": "er6-qsvt-ten-query-62b66a96d80abd46e99055793d43891cd110444f",
+    "artifact_archive_digest": "sha256:4b136fddadc8a98806f7fba832bb20b91304de65bbf9dbe298d97c152a9a34eb",
+    "raw_certificate_sha256": "aa54c686c0c9729e792703d8be14490a9643f27e206b0ee46d23e8ebc87776f1"
+  }
+}
