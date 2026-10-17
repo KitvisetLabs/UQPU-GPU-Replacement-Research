@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-17T01:08:32Z",
+  "prepared_utc": "2026-10-17T02:08:18Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "14970dc30e5764799ec8aa962aa72eff6fd81a18",
+  "canonical_start_sha": "614de82718888563760b6e1d99de7e7d5a27494c",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 09: all 64 ER6 spectral sectors pass independent 2x2 and hosted pinned-Qiskit checks; bounded 3/5-query scaling is next",
+  "current_frontier": "Cycle 008 Delta 10: bounded 3/5-query sector recurrences pass locally with frozen fail-closed resource ceilings; hosted SDK gate pending",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -20,11 +20,12 @@
     "integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md",
     "integration/PERMANENT_CROSS_LANE_CONTINUOUS_INTEGRATION_PROTOCOL_2026-10-16.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_09_2026-10-17.md",
+    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_10_2026-10-17.md",
     "docs/LITERATURE_WATCH_2026-10-17_AI_GENERATED_MATHEMATICAL_INSTRUMENTS.md",
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_SPECTRAL_SECTOR_CHECK", "next_gate": "bounded 3- and 5-query prefixes with fail-closed resource limits"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "PARTIALLY_UNLOCKED", "evidence_class": "SIMULATION_BOUNDED_PREFIX_CONTRACT", "next_gate": "hosted 3/5-query SDK and resource reproduction with provenance"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -57,6 +58,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Test bounded 3- and 5-query prefixes with measured runtime/memory/bytes and stop on tolerance/resource failure; keep provider submission disabled.",
+  "next_independent_action": "Run the isolated hosted 3/5-query SDK/resource gate, persist provenance, and stop after any failed prefix; keep provider submission disabled.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

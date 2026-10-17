@@ -1,0 +1,61 @@
+{
+  "acceptance": {
+    "matrix_vs_state_max_abs_residual": 3.0436364816617974e-16,
+    "max_host_peak_traced_bytes_per_prefix": 750000000,
+    "max_host_runtime_ns_per_prefix": 900000000000,
+    "max_serialized_openqasm2_bytes_per_prefix": 500000,
+    "passed": true,
+    "stop_on_failure": true,
+    "tolerance": 2e-12
+  },
+  "authorization": {"paid_execution": false, "provider_submission": false},
+  "contract_sha256": "cc34737286ac69dc9eba53d40831cad0e7a299ba96c01c829854e6d2108e1685",
+  "evidence_class": "SIMULATION_BOUNDED_PREFIX_CONTRACT",
+  "nonclaims": [
+    "not full degree-81 synthesis or accepted transformed-workload output",
+    "not target-aware transpilation or provider execution",
+    "not fault-tolerant, energy, cost, advantage, or replacement evidence"
+  ],
+  "phase_source": {
+    "phase_count": 82,
+    "phase_fingerprint": "268d1809a8d88309df001d2c63b1f78ba5101d2b9e254c304b014ba4e8397445"
+  },
+  "prefixes": [
+    {
+      "projector_phases": 4,
+      "queries": 3,
+      "rows": [
+        {"leakage_amplitude": [0.5597341659007421, -0.8286722292459188], "matrix_vs_state_max_abs_residual": 1.1102230246251565e-16, "normalized_eigenvalue": 0.0, "projected_amplitude": [0.0, 0.0]},
+        {"leakage_amplitude": [0.5320373542924178, -0.7999654733209518], "matrix_vs_state_max_abs_residual": 2.482534153247273e-16, "normalized_eigenvalue": 0.2222222222222222, "projected_amplitude": [0.035761816083487774, 0.2751592041751847]},
+        {"leakage_amplitude": [0.4979123374649532, -0.7639028940382592], "matrix_vs_state_max_abs_residual": 6.206335383118183e-17, "normalized_eigenvalue": 0.3333333333333333, "projected_amplitude": [0.04926591969340724, 0.4075641567126841]},
+        {"leakage_amplitude": [0.45105977174815104, -0.712977939828147], "matrix_vs_state_max_abs_residual": 1.5700924586837752e-16, "normalized_eigenvalue": 0.4444444444444444, "projected_amplitude": [0.05751785798513748, 0.533759529790072]},
+        {"leakage_amplitude": [0.39237957069287316, -0.6464548035600555], "matrix_vs_state_max_abs_residual": 1.2412670766236366e-16, "normalized_eigenvalue": 0.5555555555555556, "projected_amplitude": [0.05876690918594879, 0.6516754635873114]},
+        {"leakage_amplitude": [0.32293341720443663, -0.5627056206949962], "matrix_vs_state_max_abs_residual": 2.220446049250313e-16, "normalized_eigenvalue": 0.6666666666666666, "projected_amplitude": [0.05126235152311098, 0.7592420982843648]},
+        {"leakage_amplitude": [0.2436153508176398, -0.45778185172104], "matrix_vs_state_max_abs_residual": 1.1443916996305594e-16, "normalized_eigenvalue": 0.7777777777777778, "projected_amplitude": [0.033253463223894913, 0.8543895740611956]}
+      ],
+      "selected_phase_indices": [0, 1, 2, 3],
+      "unique_eigenvalues_checked": 7
+    },
+    {
+      "projector_phases": 6,
+      "queries": 5,
+      "rows": [
+        {"leakage_amplitude": [0.7951945975296091, -0.6063543123123005], "matrix_vs_state_max_abs_residual": 0.0, "normalized_eigenvalue": 0.0, "projected_amplitude": [0.0, 0.0]},
+        {"leakage_amplitude": [0.7675116107499809, -0.5931838909211267], "matrix_vs_state_max_abs_residual": 1.5700924586837752e-16, "normalized_eigenvalue": 0.2222222222222222, "projected_amplitude": [0.014958020144771496, 0.24255938767442395]},
+        {"leakage_amplitude": [0.732535544161997, -0.5758804717025628], "matrix_vs_state_max_abs_residual": 2.482534153247273e-16, "normalized_eigenvalue": 0.3333333333333333, "projected_amplitude": [0.02090930393804078, 0.3623757164321954]},
+        {"leakage_amplitude": [0.6828210947680042, -0.549976322307154], "matrix_vs_state_max_abs_residual": 2.482534153247273e-16, "normalized_eigenvalue": 0.4444444444444444, "projected_amplitude": [0.024884814645189518, 0.48027298845697747]},
+        {"leakage_amplitude": [0.617447739397631, -0.5134718953614844], "matrix_vs_state_max_abs_residual": 2.482534153247273e-16, "normalized_eigenvalue": 0.5555555555555556, "projected_amplitude": [0.02598845865220953, 0.5953398204416723]},
+        {"leakage_amplitude": [0.5347764636873258, -0.4630696274136579], "matrix_vs_state_max_abs_residual": 2.2247786310271853e-16, "normalized_eigenvalue": 0.6666666666666666, "projected_amplitude": [0.023120568700548114, 0.7064319453110945]},
+        {"leakage_amplitude": [0.4313367367781157, -0.3926788370044962], "matrix_vs_state_max_abs_residual": 3.0436364816617974e-16, "normalized_eigenvalue": 0.7777777777777778, "projected_amplitude": [0.014927010475973682, 0.8121139912799517]}
+      ],
+      "selected_phase_indices": [0, 1, 2, 3, 4, 5],
+      "unique_eigenvalues_checked": 7
+    }
+  ],
+  "schema": "uqpu-er6-lcu-qsvt-bounded-prefix-v1",
+  "upstream_prep_select_sha256": "c7fe6274c6ce939af7620b3501abb9082d3c51c3fcd2116265f976e860ce1dd7",
+  "upstream_work_id": "QOS-AUDIT-010B10",
+  "work_id": "QOS-AUDIT-010B11",
+  "workload_eigenvalues": [0.0, 0.3333333333333333, 0.2222222222222222, 0.5555555555555556, 0.3333333333333333, 0.4444444444444444, 0.5555555555555556, 0.6666666666666666, 0.4444444444444444, 0.5555555555555556, 0.6666666666666666, 0.7777777777777778, 0.5555555555555556, 0.4444444444444444, 0.7777777777777778, 0.6666666666666666, 0.4444444444444444, 0.5555555555555556, 0.4444444444444444, 0.5555555555555556, 0.5555555555555556, 0.4444444444444444, 0.5555555555555556, 0.4444444444444444, 0.6666666666666666, 0.5555555555555556, 0.6666666666666666, 0.5555555555555556, 0.5555555555555556, 0.2222222222222222, 0.5555555555555556, 0.2222222222222222, 0.2222222222222222, 0.5555555555555556, 0.2222222222222222, 0.5555555555555556, 0.5555555555555556, 0.6666666666666666, 0.5555555555555556, 0.6666666666666666, 0.4444444444444444, 0.5555555555555556, 0.4444444444444444, 0.5555555555555556, 0.5555555555555556, 0.4444444444444444, 0.5555555555555556, 0.4444444444444444, 0.6666666666666666, 0.7777777777777778, 0.4444444444444444, 0.5555555555555556, 0.7777777777777778, 0.6666666666666666, 0.5555555555555556, 0.4444444444444444, 0.6666666666666666, 0.5555555555555556, 0.4444444444444444, 0.3333333333333333, 0.5555555555555556, 0.2222222222222222, 0.3333333333333333, 0.0],
+  "workload_sectors": 64
+}

@@ -82,3 +82,17 @@ no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN now records
 AI-generated mathematical instruments below `THEORY`; INV-029–035 remain gated.
 Next is bounded 3/5-query prefixes with measured runtime, memory and serialized
 bytes, stopping on tolerance or resource failure.
+
+## Cycle 008 Delta 10
+
+Lane A now owns explicit three- and five-query ER6 prefix contracts. Two
+independent 2x2 recurrences cover all 64 sectors and agree to
+`3.0436364816617974e-16`. Per-prefix hosted gates freeze residual, runtime,
+traced-memory and serialization ceilings and stop after the first failure.
+This is `SIMULATION_BOUNDED_PREFIX_CONTRACT`; pinned-SDK execution is pending.
+
+B–I were reviewed with unchanged no-submit, no-memory-equivalence,
+no-device/factory, no-commercial-energy/material, no-cost-advantage,
+no-capital/WACC and no-vehicle-demonstration boundaries. FND/EQN and
+INV-029–035 remain gated. Next is exact-commit hosted reproduction and
+certificate persistence, not degree-81 extrapolation.

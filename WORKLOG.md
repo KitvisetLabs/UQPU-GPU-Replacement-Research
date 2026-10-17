@@ -1194,3 +1194,46 @@ references, strategic AI/funding references, autonomous handoff and evidence
 boundaries were preserved. The next gate is bounded 3- and 5-query prefix
 scaling with fail-closed resource/tolerance limits, not degree-81 extrapolation
 or provider execution.
+
+### 2026-10-17 — Cycle 008 Delta 10 bounded 3/5-query prefix contract
+
+Started from canonical `main` commit
+`614de82718888563760b6e1d99de7e7d5a27494c`, cold-start run #16 and project
+run #740. Implemented QOS-AUDIT-010B11 with separate three- and five-query ER6
+prefixes. Across all 64 workload sectors and seven unique eigenvalues, an
+explicit 2x2 matrix recurrence agrees with independently coded right-to-left
+state propagation to `3.0436364816617974e-16`, below `2e-12`.
+
+Frozen hosted limits are `900 s`, `750,000,000` traced bytes and `500,000`
+OpenQASM 2 bytes per prefix. The runner records logical/decomposed residuals,
+depth, size and gate counts, keeps provider jobs/shots at zero and cost/energy
+null, and stops after the first failed prefix. Local Qiskit execution is
+`TOOL_BLOCKED` because the optional pinned SDK is absent; the isolated CI job
+is the registered unlock path.
+
+The first full cold-start test rejected the new bounded-prefix evidence label.
+This was a schema synchronization failure, not a numerical result. The label
+was added to the executable evidence allowlist; the repeated suite passed 506
+tests with 14 optional skips, and the cold-start audit returned
+`READY_FOR_COLD_START` across 36 A–I pairs. The negative result is preserved to
+prevent future evidence labels from bypassing handoff validation.
+
+Fresh surveillance found no primary result newer than the existing 2026-10-17
+watches that changes this experiment, so no duplicate article was created.
+Lane A advanced the bounded recurrence; B remains no-submit; C adds only host
+resource ceilings; D/G remain target/process-window blocked; E reviewed
+Pangola, BIO-001, FUS-001, materials/cooling without new measurement; F adds
+fail-closed resource gates; H updates the autonomous handoff without capital
+authority; I remains `MODEL_ONLY` with I-012 open. FND-001–006, EQN-001–006 and
+FIN-001 were inspected without evidence promotion.
+
+Priority #1, all nine lanes A–I, INV-025–035, multilingual
+Thai/English/Chinese/Japanese/Korean/German master references, strategic
+AI/funding references, autonomous handoff and evidence boundaries were
+preserved. No paid QPU, provider execution, fabrication, hazardous vehicle
+test, quantum advantage, subsystem replacement, >=100x/100,000,000x result,
+commercial bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone
+achievement is claimed.
+
+Next gate: exact-commit hosted 3/5-query SDK/resource reproduction and a
+provenance-bearing certificate; do not advance after any failed prefix.

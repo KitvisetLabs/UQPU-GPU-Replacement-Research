@@ -622,3 +622,15 @@ only the next bounded prefix experiment.
 **Reason:** A circuit can reproduce its own composition while disagreeing with
 the intended scalar recurrence, and a provenance-free artifact cannot establish
 which code was executed. Neither risk is removed by an overall `passed` flag.
+
+## 2026-10-17 — D121: Prefix scaling is an executable stop-on-failure ladder
+
+**Decision:** Test the frozen ER6 sequence at three and five queries as separate
+circuits with separate measured runtime, traced host memory, serialization and
+raw spectral residuals. Freeze resource ceilings before hosted execution and
+stop after a failed prefix. A passing shorter prefix cannot authorize, estimate
+or substitute for a longer prefix or degree-81 synthesis.
+
+**Reason:** Gate-count multiplication hides compiler, serialization, memory and
+numerical behavior. A bounded ladder exposes the first actual failure without
+converting an extrapolation into evidence.

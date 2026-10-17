@@ -470,6 +470,25 @@ contract. Record measured runtime, peak host
 memory, serialized bytes and raw residuals; stop on tolerance or resource
 failure instead of extrapolating to 81 queries.
 
+### RG-033 update — bounded 3/5-query contract implemented
+**Status:** PARTIALLY_UNLOCKED / SIMULATION_BOUNDED_PREFIX_CONTRACT
+**Date:** 2026-10-17
+
+QOS-AUDIT-010B11 evaluates three- and five-query prefixes across all 64 ER6
+workload sectors with independent matrix and right-to-left state recurrences.
+The maximum residual is `3.0436364816617974e-16` against `2e-12`. Per-prefix
+hosted ceilings are frozen at `900 s`, `750,000,000` traced bytes and `500,000`
+serialized OpenQASM 2 bytes, with stop-on-first-failure semantics.
+
+**Why still open:** the local environment lacks the pinned optional Qiskit
+stack, and the contract alone does not measure logical/decomposed circuit
+resources. It remains neither degree-81 synthesis nor accepted workload,
+target, provider, energy, cost or advantage evidence.
+
+**Next experiment / unlock:** reproduce the unchanged contract in the isolated
+hosted Qiskit job, persist raw per-prefix residual/runtime/memory/bytes with
+commit/run/job/artifact provenance, and do not advance if either prefix fails.
+
 ## RG-034 — Identifiability-certified equation-discovery fixture
 **Status:** OPEN / SYNTHETIC_FIXTURE_PENDING
 **Objective:** Distinguish `NOT_YET_SOLVED` from `LOCALLY_NON_IDENTIFIABLE` and `EXPERIMENT_CLASS_EXHAUSTED` before an AI-generated equation can advance.
