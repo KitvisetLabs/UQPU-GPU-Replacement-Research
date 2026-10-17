@@ -1409,3 +1409,57 @@ jobs/shots are zero and cost/energy null. Priority #1, A–I, INV-025–035,
 multilingual master references, autonomous handoff and evidence boundaries
 remain preserved. The bounded prefix ladder stops at ten; eleven queries stays
 blocked and degree-81 feasibility is not inferred.
+
+### 2026-10-18 — Cycle 008 Delta 15 saved-target identity implementation
+
+Started from canonical `main` commit
+`9b5c7e677c56fe501fbddae7f9300b8488b2962a`. Implemented
+QOS-AUDIT-010B16 as a pre-transpilation identity gate for pinned local
+`FakeKingston`. It binds the Delta-14 certificate digest and canonical-hashes
+target structure plus package versions. Mutation tests cover target, package
+and authorization drift; isolated CI uploads success or failure. The local
+optional SDK is absent, so hosted identity remains `TOOL_BLOCKED`. No service,
+credentials, provider job, shots or cost occurred.
+
+Fresh surveillance found no material new primary result that changes this
+gate. A stays frozen at ten queries; B advances the no-submit target input; C
+remains host-only; D/G await identity and routing; E reviewed Pangola, BIO-001,
+FUS-001 and cooling; F adds provenance gates; H retains software-first capital
+discipline; I remains `MODEL_ONLY`. FND/EQN/FIN were not promoted.
+
+INV-025–035, six-language master references, AI/funding references, autonomous
+handoff and evidence boundaries remain preserved. No target transpilation,
+live calibration, paid QPU, advantage, subsystem replacement, commercial
+bio-oil/fusion, lower WACC, new physical law or Data-Center-to-Phone result is
+claimed. Next: hosted identity, then separately preregistered no-submit routing.
+
+**Hosted negative result:** the first exact-commit identity job failed because
+Qiskit represents globally defined target instructions with `qargs=None`.
+The original dummy fixture covered only concrete tuples. This is classified as
+a reproducibility-tooling defect, not target infeasibility. The collector now
+uses the operation's declared arity for global instructions and the regression
+fixture includes that representation before CI retry.
+
+**Hosted negative result 2:** the retry exposed that Qiskit 2.5.2 represents
+the variable-width `IfElseOp` entry as a class with `qargs=None`; its
+`name`/`num_qubits` attributes are property descriptors rather than stable
+values. The collector must not stringify those descriptors because their
+representations contain process-local addresses. It now records the fully
+qualified class name with `arity="variable"`, keeps concrete entries numeric,
+and rejects any other global instruction without a stable integer arity. The
+pinned local stack reproduced FakeKingston successfully: 156 qubits, 352
+directed CZ instances, one variable-width IfElseOp declaration and identity
+digest `88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e`.
+This remains saved-snapshot identity evidence only, not transpilation or QPU
+performance evidence.
+
+**Hosted identity checkpoint:** exact source commit
+`c63ee9d5251e23f50b210ee9d25333b91e63c80e` passed job `117468829435` in
+project run #762 (`39057589567`). Artifact `12109234748` has archive digest
+`sha256:7f9809738f9bca0f34f6199022122ab9f54d91027aad4458091bff08a176e420`;
+the raw JSON digest is
+`223a3ea95b86d99d98fc29592148341f91897f7fad9a024391c7acdf1aed7afa`.
+The certificate is persisted with provenance. Credentials, live service,
+network submission, provider jobs and shots remained zero/false; cost and
+energy were not measured. Next is a separate preregistered no-submit
+transpilation gate against this digest, not live calibration or paid QPU use.

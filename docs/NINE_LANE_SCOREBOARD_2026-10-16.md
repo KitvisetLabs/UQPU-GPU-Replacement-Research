@@ -7,7 +7,7 @@
 | Lane | Status | Evidence boundary | Next gate |
 |---|---|---|---|
 | A | QSVT independent SDK gate retained | `SIMULATION_INDEPENDENT_SDK_CHECK`; dense signal unitary is not a scalable oracle | RG-033 explicit sparse workload oracle/block encoding |
-| B | provider-neutral serialization retained | `DRY_RUN_ONLY`; no submission, receipt or bill | target-aware no-submit transpilation |
+| B | hosted saved-target identity accepted and persisted | `CALIBRATION_SNAPSHOT_IDENTITY_ONLY`; no live service, submission, receipt or bill | preregister target-aware no-submit transpilation against digest `88419f3c…ca4e` |
 | C | host serialization/runtime/memory retained | no RAM/VRAM/storage equivalence | controlled transfer/I/O accounting |
 | D | logical demands visible | no calibrated device requirement | target schedule/calibration |
 | E | BIO-001/FUS-001/material tracks reviewed | no new sample, fuel or net-electric measurement | qualified functional-unit evidence |

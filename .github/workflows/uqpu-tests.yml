@@ -296,6 +296,42 @@ jobs:
           name: er6-qsvt-ten-query-${{ github.sha }}
           path: /tmp/uqpu-er6-qsvt-ten-query.json
 
+  qsvt-target-snapshot-identity:
+    runs-on: ubuntu-latest
+    needs: test
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install prototype and pinned saved-target SDKs
+        working-directory: software/uqpu-prototype
+        run: |
+          python -m pip install -e .
+          python -m pip install -r target-noise-optional-requirements.txt
+
+      - name: Fingerprint saved target without submission
+        working-directory: software/uqpu-prototype
+        run: |
+          set +e
+          python examples/run_er6_qsvt_target_snapshot_identity.py --output /tmp/uqpu-er6-target-snapshot-identity.json
+          status=$?
+          set -e
+          test -f /tmp/uqpu-er6-target-snapshot-identity.json && cat /tmp/uqpu-er6-target-snapshot-identity.json
+          exit "$status"
+
+      - name: Upload saved-target identity
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: er6-target-snapshot-identity-${{ github.sha }}
+          path: /tmp/uqpu-er6-target-snapshot-identity.json
+
   qsp-phase-reconstruction-v040:
     runs-on: ubuntu-latest
     needs: test

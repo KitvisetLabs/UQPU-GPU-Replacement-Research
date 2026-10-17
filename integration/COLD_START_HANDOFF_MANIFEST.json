@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-17T13:20:00Z",
+  "prepared_utc": "2026-10-17T17:05:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "5486c8048530f256187ccbd7ba99db086a131f54",
+  "canonical_start_sha": "9b5c7e677c56fe501fbddae7f9300b8488b2962a",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 14: ten-query bounded SDK checkpoint accepted; prefix ladder stopped",
+  "current_frontier": "Cycle 008 Delta 15: hosted saved-target identity accepted; no-submit transpilation pending",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -25,12 +25,13 @@
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_12_2026-10-17.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_13_2026-10-17.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_14_2026-10-17.md",
+    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_15_2026-10-18.md",
     "docs/LITERATURE_WATCH_2026-10-17_AI_GENERATED_MATHEMATICAL_INSTRUMENTS.md",
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "TEN_QUERY_BOUNDARY_ACCEPTED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK", "next_gate": "stop prefix scaling; design a separately preregistered representation or target-aware gate without authorizing eleven queries"},
-    "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "NO_SUBMISSION", "evidence_class": "DRY_RUN_ONLY", "next_gate": "dated target-aware no-submit transpilation"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "TEN_QUERY_BOUNDARY_ACCEPTED", "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_PREFIX_CHECK", "next_gate": "retain frozen ten-query semantics through saved-target preregistration; eleven queries remains blocked"},
+    "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "SAVED_TARGET_IDENTITY_ACCEPTED", "evidence_class": "CALIBRATION_SNAPSHOT_IDENTITY_ONLY", "next_gate": "preregister bounded target-aware no-submit transpilation against identity digest 88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
     "E": {"owner_path": "research_lanes/E_materials_energy_cooling_infrastructure", "status": "REVIEWED_NO_NEW_MEASUREMENT", "evidence_class": "MODEL_ONLY", "next_gate": "qualified BIO-001/FUS-001 functional-unit evidence"},
@@ -62,6 +63,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Close the bounded prefix ladder at ten and select a separately preregistered target-aware or representation-change gate; eleven queries remains blocked.",
+  "next_independent_action": "Preregister bounded no-submit target transpilation against the persisted saved-target identity digest without authorizing eleven queries or provider execution.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

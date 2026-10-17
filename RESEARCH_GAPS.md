@@ -590,7 +590,7 @@ blocked unless a separately evidenced representation change reduces measured
 serialization without relaxing useful-output or evidence contracts.
 
 ### RG-033 update — ten-query execution path implemented
-**Status:** TOOL_BLOCKED / PINNED_SDK_CI_PENDING
+**Status:** HOSTED_ACCEPTED / ELEVEN_QUERY_BLOCKED
 **Date:** 2026-10-17
 
 QOS-AUDIT-010B15 consumes the immutable B14 digest and implements ten block
@@ -638,3 +638,24 @@ or proof-assistant checks pass.
 **Next experiment:** implement a read-only branch/PR snapshot artifact and offline reconciliation fixtures; keep automatic main writes disabled until permissions, conflict handling and review are proven.
 **Dependencies:** H/F governance, A–I manifest, GitHub read permissions.
 **Review trigger:** first exact-commit cold-start CI plus reconciler fixture.
+
+### RG-033 update — saved-target identity gate implemented
+**Status:** HOSTED_IDENTITY_ACCEPTED / TRANSPILATION_NOT_STARTED
+**Date:** 2026-10-18
+
+QOS-AUDIT-010B16 binds the accepted ten-query certificate digest to a
+deterministic structural fingerprint of pinned `FakeKingston`. It records SDK
+versions, target identity, qubit count, operation names, directed coupling
+edges and instruction-signature counts while enforcing zero credentials, live
+service, network submission, jobs, shots and paid authority. Exact-commit CI
+job `117468829435` persisted artifact `12109234748`: 156 qubits, 352 directed
+CZ declarations, one variable-width IfElseOp declaration and canonical digest
+`88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e`.
+Two failed hosted attempts are retained as tooling negatives: Qiskit uses both
+`qargs=None` and class-level property descriptors for variable-width control
+flow. Neither failure was evidence of target infeasibility.
+
+**Unlock criteria:** bind the persisted digest in a separate preregistration
+for bounded no-submit target transpilation. A saved
+target is not live calibration; routed resources, schedule, fidelity, accepted
+output, energy, cost and advantage remain open.
