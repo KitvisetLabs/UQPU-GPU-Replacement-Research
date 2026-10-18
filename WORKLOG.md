@@ -1531,3 +1531,18 @@ Hosted job `117572935487` passed all four frozen probes with residuals from
 Artifact `12123870315` is retained. This accepts only the bounded same-SDK
 probe gate; full operator equivalence, independent-SDK equivalence and useful
 output quality remain false.
+
+### 2026-10-18 — Cycle 008 Delta 19 independent routed-probe preregistration
+
+Started from canonical `main` commit
+`ce2c3b8e5ea0edd1087392e03bf378949b9614d2`. Froze QOS-AUDIT-010B21 before
+manual gate translation or residual observation. The contract binds the Delta
+18 certificate, Qiskit/Qulacs versions, explicit `X/SX/RZ/CZ` matrices, layout
+inversion, the same four probes, resource limits and four negative controls.
+
+A advances toward independent simulation; B remains saved-target/no-submit; C
+retains bounded state and host accounting without memory-equivalence claims;
+D/G/E receive no new physical, manufacturing, material, fuel or energy
+evidence; F gains convention/counterexample gates; H retains software-first
+capital discipline; I remains `MODEL_ONLY`. FND/EQN/FIN and INV-025–035 remain
+unpromoted. No live service, paid job, advantage or new physical law is claimed.

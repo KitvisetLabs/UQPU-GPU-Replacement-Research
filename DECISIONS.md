@@ -764,3 +764,16 @@ create false failures, while silently accepting a non-bijective layout or an
 operation on an omitted wire can create false passes. Explicit bit-index
 movement is small and auditable at ten qubits, but four same-SDK probes still
 do not span the operator.
+
+## 2026-10-18 — D132: Freeze an independent simulator path before translation
+
+**Decision:** Bind the accepted Delta 18 certificate and use Qulacs 0.6.14 as
+the second simulator. Translate `X`, `SX`, `RZ` and `CZ` through explicit
+complex matrices rather than SDK aliases, invert the final layout, retain the
+four frozen probes, and require four seeded defects to be detected. Keep full
+operator equivalence false even if all probes pass.
+
+**Reason:** A second simulator reduces correlated state-evolution risk, but
+rotation-sign and basis-order conventions can themselves create false results.
+Explicit matrices and negative controls make those conventions falsifiable
+without pretending that four states span a 10-qubit operator.
