@@ -1564,3 +1564,22 @@ resources only; D/G/E gain no physical, manufacturing, material, fuel or
 energy evidence; F preserves the evidence/nonclaim gates; H keeps the
 software-first capital gate; I remains `MODEL_ONLY`. FND/EQN/FIN and
 INV-025–035 remain unpromoted. Exact-commit hosted CI is the next confirmation.
+
+### 2026-10-19 — Cycle 008 Delta 21 real-QPU pilot preregistration
+
+Started from canonical `main` commit
+`db03596478ceaaeeba2deed9ef5a2c1847d8873e`. Added QOS-AUDIT-010B23 as a
+fail-closed transition contract from independent simulation to a future
+bounded hardware pilot. The no-submit phase binds a fresh target snapshot,
+exact circuit, conformance, ideal reference, shot/quality plan and price/cost
+ceiling. The execution phase remains disabled pending explicit consent,
+credentials and bounded jobs, shots and cost.
+
+A advances its hardware-transition interface; B preserves provider-neutral
+preflight; C gains required host/data-movement fields; D/G require fresh target
+identity without physical or factory claims; E gains only an energy-status
+field; F gains same-provider cost/quality accounting; H preserves the
+software-first finance and six-language context; I remains `MODEL_ONLY`.
+FND/EQN/FIN and INV-025–035 remain unpromoted. No live service, submission,
+job, shot, payment, advantage, Data-Center-to-Phone result or new physical law
+is claimed.

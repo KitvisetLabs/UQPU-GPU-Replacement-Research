@@ -792,3 +792,18 @@ the evidence policy. The observable mapping mutation still verifies that the
 negative-control path can expose a two-qubit wiring defect, while the null
 endpoint-order result documents a limitation in the conditional preregistered
 wording.
+
+## 2026-10-19 — D134: Separate no-submit preflight from QPU authorization
+
+**Decision:** Bind Delta 20 before any provider contact and require a fresh
+target/circuit digest, target-specific conformance, ideal reference, frozen
+quality threshold, jobs, shots, cost ceiling and same-provider pricing
+provenance. Keep the execution phase disabled until explicit user consent and
+every bounded field are present. Record execution success separately from
+accepted useful-output quality and forbid probability/price joins across
+providers or targets.
+
+**Reason:** A simulator pass cannot authorize or predict a live target, and a
+job completion alone cannot establish useful quality or economics. Separating
+preflight from execution prevents accidental paid submission, post-result
+threshold changes and mixed-provenance cost claims.

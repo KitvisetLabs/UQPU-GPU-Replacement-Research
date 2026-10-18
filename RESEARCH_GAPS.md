@@ -751,3 +751,18 @@ symmetric. This is retained as a negative result, not hidden or converted to a
 false signal. Exact-commit hosted confirmation and a stronger scalable
 equivalence verifier remain open. Four finite probes are not full operator
 equivalence, hardware fidelity or accepted workload advantage.
+
+### RG-034 — Real-QPU transition lacks explicit authorization and accounting
+**Status:** PREREGISTERED / EXECUTION_DISABLED
+**Date:** 2026-10-19
+
+QOS-AUDIT-010B23 binds the Delta 20 certificate and separates no-submit
+preflight from later authorized execution. The contract requires a fresh
+target snapshot and exact-circuit digest, target conformance, frozen shots,
+quality and cost ceilings, same-provider pricing/result provenance, full
+latency/host/data-movement accounting and cost per accepted useful output.
+
+**Still missing:** one specified provider/target, completed no-submit preflight,
+explicit user consent, credentials, bounded jobs/shots/cost and an execution
+record. The execution phase is disabled; this artifact is not QPU evidence or
+permission to submit a free or paid job.
