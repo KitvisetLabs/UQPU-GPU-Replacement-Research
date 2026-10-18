@@ -749,3 +749,18 @@ full operator equivalence and below independent-SDK evidence.
 only ten physical wires are active. A preregistered compact statevector probe
 test can expose routing or permutation errors without pretending that four
 states span the operator or that same-SDK comparison is independent.
+
+## 2026-10-18 — D131: Make routed-probe execution fail closed on layout semantics
+
+**Decision:** Implement QOS-AUDIT-010B20 by reproducing the frozen routing,
+rejecting any instruction outside physical wires 0–9, requiring a bijective
+final-index layout, explicitly moving physical amplitudes back to logical bit
+positions, and removing only one global phase before evaluating the four
+frozen residuals. Persist tooling failures and keep all full-equivalence,
+independent-SDK and useful-output acceptance flags false even if probes pass.
+
+**Reason:** Comparing raw statevectors without undoing routing permutations can
+create false failures, while silently accepting a non-bijective layout or an
+operation on an omitted wire can create false passes. Explicit bit-index
+movement is small and auditable at ten qubits, but four same-SDK probes still
+do not span the operator.

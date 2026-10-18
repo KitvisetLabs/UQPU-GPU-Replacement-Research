@@ -1,0 +1,33 @@
+{
+  "environment": {"implementation": "CPython", "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39", "python": "3.12.15", "qiskit": "2.5.2"},
+  "evaluation": {"bounded_probe_gate_passed": true, "failures": [], "full_operator_equivalence_accepted": false, "independent_sdk_equivalence_accepted": false, "useful_output_quality_accepted": false},
+  "evidence_class": "SAME_SDK_BOUNDED_STATEVECTOR_PROBE_CHECK",
+  "limitations": ["finite probes do not prove full operator equivalence", "same-SDK statevector comparison is not an independent-SDK proof", "not live calibration, hardware execution, sampling, or fidelity evidence", "not eleven-query or degree-81 feasibility", "not provider cost, energy, quantum advantage, or subsystem replacement evidence", "four passing product-state probes cannot exclude defects on unprobed states", "logical and routed paths share the same SDK implementation"],
+  "passed": true,
+  "preregistration_sha256": "329483f3e19d24c765c71ce8e36e0074088e77f2c23a92b2f497d29881b952a8",
+  "provenance": {"artifact_archive_sha256": "956f727a580a58207adfd414c14cd719d7e603034b7a8abb90f328260bb4a1e6", "artifact_id": 12123870315, "source_commit": "0eacfeeb712e41a204beb7d7e107fb8d08619b03", "workflow_job_id": 117572935487, "workflow_run_id": 39092755802, "workflow_run_number": 780},
+  "resources": {
+    "authorization": {"credentials_used": false, "live_service_initialized": false, "network_submission_attempted": false, "paid_execution_authorized": false, "provider_jobs": 0, "shots": 0},
+    "compact_routed_qubits": 10,
+    "compact_routed_size": 187979,
+    "completed_probe_count": 4,
+    "energy_j": null,
+    "host_peak_traced_bytes": 48643558,
+    "host_runtime_ns": 83694489104,
+    "host_runtime_seconds": 83.694489104,
+    "logical_qubits": 10,
+    "observed_active_physical_qubits": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "observed_final_index_layout": [8, 7, 6, 5, 0, 1, 2, 3, 4, 9],
+    "probes": [
+      {"id": "computational_zero", "logical_state_norm": 0.9999999999993122, "phase_aligned_l2_residual": 2.2335689691121654e-13, "routed_state_norm": 0.9999999999994567},
+      {"id": "computational_one", "logical_state_norm": 0.9999999999993714, "phase_aligned_l2_residual": 3.1630454114587667e-13, "routed_state_norm": 0.9999999999994642},
+      {"id": "alternating_odd", "logical_state_norm": 0.9999999999993482, "phase_aligned_l2_residual": 3.9219485097989443e-13, "routed_state_norm": 0.9999999999994652},
+      {"id": "complex_product", "logical_state_norm": 0.9999999999993557, "phase_aligned_l2_residual": 3.287988221888256e-13, "routed_state_norm": 0.9999999999994548}
+    ],
+    "provider_cost": null
+  },
+  "schema": "uqpu-er6-qsvt-routed-probe-v1",
+  "target_identity_sha256": "88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e",
+  "upstream_work_id": "QOS-AUDIT-010B19",
+  "work_id": "QOS-AUDIT-010B20"
+}
