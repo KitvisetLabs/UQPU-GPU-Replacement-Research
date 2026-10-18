@@ -35,15 +35,13 @@ def inverse_layout_state(data: Any, final_index_layout: list[int]) -> Any:
     ``i``.  Explicit bit-index movement avoids relying on SDK permutation
     conventions and is bounded here to ten qubits.
     """
-    import numpy as np
-
-    values = np.asarray(data, dtype=complex)
+    values = [complex(value) for value in data]
     qubits = len(final_index_layout)
     if sorted(final_index_layout) != list(range(qubits)):
         raise ValueError("final index layout is not a bijection")
-    if values.shape != (1 << qubits,):
+    if len(values) != 1 << qubits:
         raise ValueError("statevector width does not match final index layout")
-    logical = np.empty_like(values)
+    logical = [0j] * len(values)
     for logical_index in range(1 << qubits):
         physical_index = 0
         for logical_qubit, physical_qubit in enumerate(final_index_layout):
@@ -54,15 +52,17 @@ def inverse_layout_state(data: Any, final_index_layout: list[int]) -> Any:
 
 def phase_aligned_l2(reference: Any, candidate: Any) -> float:
     """Compute L2 residual after removing one global phase."""
-    import numpy as np
+    import math
 
-    reference_array = np.asarray(reference, dtype=complex)
-    candidate_array = np.asarray(candidate, dtype=complex)
-    overlap = np.vdot(reference_array, candidate_array)
+    reference_array = [complex(value) for value in reference]
+    candidate_array = [complex(value) for value in candidate]
+    if len(reference_array) != len(candidate_array):
+        raise ValueError("statevector lengths differ")
+    overlap = sum(left.conjugate() * right for left, right in zip(reference_array, candidate_array))
     if abs(overlap) == 0:
-        return float(np.linalg.norm(reference_array - candidate_array))
+        return math.sqrt(sum(abs(left - right) ** 2 for left, right in zip(reference_array, candidate_array)))
     phase = overlap / abs(overlap)
-    return float(np.linalg.norm(reference_array - candidate_array / phase))
+    return math.sqrt(sum(abs(left - right / phase) ** 2 for left, right in zip(reference_array, candidate_array)))
 
 
 def evaluate_result(contract: dict[str, Any], resources: dict[str, Any]) -> dict[str, Any]:

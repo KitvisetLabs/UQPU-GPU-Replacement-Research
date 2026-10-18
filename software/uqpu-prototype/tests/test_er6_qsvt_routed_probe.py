@@ -1,9 +1,9 @@
 import copy
 import importlib.util
 import json
+import cmath
+import math
 import unittest
-
-import numpy as np
 
 from uqpu.er6_qsvt_routed_probe import (
     evaluate_result,
@@ -20,18 +20,18 @@ class RoutedProbeUnitTests(unittest.TestCase):
         cls.contract = json.loads(PERSISTED_PREREGISTRATION.read_text(encoding="utf-8"))
 
     def test_inverse_layout_moves_bit_positions(self):
-        physical = np.zeros(8, dtype=complex)
+        physical = [0j] * 8
         physical[4] = 1.0  # physical q2=1
         logical = inverse_layout_state(physical, [2, 0, 1])
-        self.assertEqual(int(np.argmax(abs(logical))), 1)  # logical q0=1
+        self.assertEqual(max(range(len(logical)), key=lambda index: abs(logical[index])), 1)
 
     def test_inverse_layout_rejects_non_bijection(self):
         with self.assertRaises(ValueError):
-            inverse_layout_state(np.zeros(8), [0, 0, 2])
+            inverse_layout_state([0j] * 8, [0, 0, 2])
 
     def test_global_phase_is_removed(self):
-        reference = np.array([1, 1j]) / np.sqrt(2)
-        candidate = reference * np.exp(0.37j)
+        reference = [1 / math.sqrt(2), 1j / math.sqrt(2)]
+        candidate = [value * cmath.exp(0.37j) for value in reference]
         self.assertLess(phase_aligned_l2(reference, candidate), 1e-12)
 
     def test_evaluator_passes_bounded_gate_but_not_full_equivalence(self):
