@@ -734,3 +734,20 @@ fail closed.
 **Still missing:** implementation and exact-commit execution. A future pass is
 independent-simulator bounded-probe evidence, not full operator equivalence,
 hardware fidelity, cost, energy or advantage.
+
+### RG-033 update — independent routed probes passed locally
+**Status:** BOUNDED_INDEPENDENT_SIMULATION_ACCEPTED / HOSTED_CONFIRMATION_PENDING / FULL_EQUIVALENCE_OPEN
+**Date:** 2026-10-18
+
+QOS-AUDIT-010B22 translated all 187,979 routed operations through explicit
+matrices into Qulacs 0.6.14. The four phase-aligned residuals were between
+`2.218e-13` and `3.945e-13`, below the frozen `1e-9` limit. Runtime was
+48.289 s and traced peak memory 101,543,937 bytes. Reversed RZ, perturbed SX,
+altered CZ mapping and omitted layout inversion were rejected with residuals
+from `6.995e-4` to `1.414`; jobs/shots remained zero.
+
+The exact reversal of CZ endpoint order was correctly null because CZ is
+symmetric. This is retained as a negative result, not hidden or converted to a
+false signal. Exact-commit hosted confirmation and a stronger scalable
+equivalence verifier remain open. Four finite probes are not full operator
+equivalence, hardware fidelity or accepted workload advantage.

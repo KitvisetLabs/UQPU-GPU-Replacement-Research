@@ -1,0 +1,38 @@
+{
+  "environment": {"implementation": "CPython", "platform": "Linux-6.18.55-x86_64-with-glibc2.39", "python": "3.12.14", "qiskit": "2.5.2", "qulacs": "0.6.14"},
+  "evaluation": {"failures": [], "full_operator_equivalence_accepted": false, "hardware_fidelity_accepted": false, "independent_sdk_bounded_probe_gate_passed": true, "useful_output_quality_accepted": false},
+  "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_ROUTED_PROBE_CHECK",
+  "limitations": ["four probes do not prove full operator equivalence", "independent simulation is not hardware fidelity evidence", "not live calibration, provider execution, energy, cost, or advantage evidence", "not eleven-query or degree-81 feasibility", "not GPU, CPU, NPU, RAM, VRAM, or storage replacement evidence", "finite independent-simulator probes cannot exclude defects on unprobed states", "Qiskit still reconstructs the frozen source and route", "tracemalloc excludes some native-library allocations"],
+  "passed": true,
+  "preregistration_sha256": "abb97c748fba9dfcabf44fe5e637ee3fc995380036c30f0c4fa76ccad8d9d71b",
+  "resources": {
+    "authorization": {"credentials_used": false, "live_service_initialized": false, "network_submission_attempted": false, "paid_execution_authorized": false, "provider_jobs": 0, "shots": 0},
+    "compact_routed_qubits": 10,
+    "compact_routed_size": 187979,
+    "completed_probe_count": 4,
+    "counterexamples": [
+      {"contract_requirement_satisfied": true, "id": "rz_sign", "outcome": "REJECTED", "phase_aligned_l2_residual": 1.4142135623722338, "probe": "complex_product"},
+      {"contract_requirement_satisfied": true, "id": "sx_entry", "outcome": "REJECTED", "phase_aligned_l2_residual": 0.0006994850788726235, "probe": "complex_product"},
+      {"contract_requirement_satisfied": true, "id": "cz_mapping", "outcome": "REJECTED", "phase_aligned_l2_residual": 0.7653668647296996, "probe": "complex_product"},
+      {"contract_requirement_satisfied": true, "id": "omit_layout_inversion", "outcome": "REJECTED", "phase_aligned_l2_residual": 1.010027328525339, "probe": "complex_product"},
+      {"algebraic_reason": "CZ(q0,q1) = CZ(q1,q0)", "contract_requirement_satisfied": true, "id": "cz_endpoint_order", "observable": false, "outcome": "NOT_OBSERVABLE_BY_CZ_SYMMETRY", "phase_aligned_l2_residual": 3.3330698665740517e-13, "probe": "complex_product"}
+    ],
+    "energy_j": null,
+    "host_peak_traced_bytes": 101543937,
+    "host_runtime_ns": 48289494480,
+    "host_runtime_seconds": 48.28949448,
+    "observed_final_index_layout": [8, 7, 6, 5, 0, 1, 2, 3, 4, 9],
+    "observed_gate_set": ["cz", "rz", "sx", "x"],
+    "probes": [
+      {"candidate_state_norm": 0.9999999999994571, "id": "computational_zero", "phase_aligned_l2_residual": 2.2176627567223878e-13, "reference_state_norm": 0.9999999999993122},
+      {"candidate_state_norm": 0.9999999999994612, "id": "computational_one", "phase_aligned_l2_residual": 3.2048030603805677e-13, "reference_state_norm": 0.9999999999993714},
+      {"candidate_state_norm": 0.9999999999994592, "id": "alternating_odd", "phase_aligned_l2_residual": 3.9445972637264873e-13, "reference_state_norm": 0.9999999999993482},
+      {"candidate_state_norm": 0.9999999999994514, "id": "complex_product", "phase_aligned_l2_residual": 3.3330698665740517e-13, "reference_state_norm": 0.9999999999993557}
+    ],
+    "provider_cost": null
+  },
+  "schema": "uqpu-er6-qsvt-independent-routed-probe-v1",
+  "target_identity_sha256": "88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e",
+  "upstream_work_id": "QOS-AUDIT-010B21",
+  "work_id": "QOS-AUDIT-010B22"
+}

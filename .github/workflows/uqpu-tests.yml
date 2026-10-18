@@ -404,6 +404,42 @@ jobs:
           name: er6-routed-statevector-probe-${{ github.sha }}
           path: /tmp/uqpu-er6-routed-probe.json
 
+  qsvt-independent-routed-probes:
+    runs-on: ubuntu-latest
+    needs: test
+    timeout-minutes: 35
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install prototype and pinned Qiskit/Qulacs stacks
+        working-directory: software/uqpu-prototype
+        run: |
+          python -m pip install -e .
+          python -m pip install -r independent-routed-optional-requirements.txt
+
+      - name: Execute preregistered independent routed-statevector probes
+        working-directory: software/uqpu-prototype
+        run: |
+          set +e
+          python examples/run_er6_qsvt_independent_routed_probe.py --output /tmp/uqpu-er6-independent-routed-probe.json
+          status=$?
+          set -e
+          test -f /tmp/uqpu-er6-independent-routed-probe.json && cat /tmp/uqpu-er6-independent-routed-probe.json
+          exit "$status"
+
+      - name: Upload independent routed-statevector probe certificate
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: er6-independent-routed-statevector-probe-${{ github.sha }}
+          path: /tmp/uqpu-er6-independent-routed-probe.json
+
   qsp-phase-reconstruction-v040:
     runs-on: ubuntu-latest
     needs: test
