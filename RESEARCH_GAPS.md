@@ -699,3 +699,18 @@ The unlock remains incomplete until the runner executes and, if needed, a
 stronger tensor-network, light-cone or independently implemented verifier
 covers residual risk. Eleven queries, live calibration and provider execution
 remain blocked.
+
+### RG-033 update — routed-semantics runner implemented
+**Status:** IMPLEMENTED / HOSTED_EXECUTION_PENDING / FULL_EQUIVALENCE_OPEN
+**Date:** 2026-10-18
+
+QOS-AUDIT-010B20 now reproduces the frozen saved-target route, rejects active
+wire drift, compacts only physical wires 0–9, checks the final-layout
+bijection, explicitly restores logical amplitude ordering and computes the
+four phase-aligned residuals with the preregistered norms, runtime, memory and
+zero-provider stops. Unit tests cover bit permutation, non-bijection rejection,
+global phase and fail-closed residual evaluation.
+
+**Still missing:** exact-commit hosted execution with the pinned Qiskit stack,
+then an independent implementation or stronger equivalence method. A future
+passing certificate remains a finite same-SDK probe result only.

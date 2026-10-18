@@ -1505,3 +1505,22 @@ discipline; I remains `MODEL_ONLY`. FND/EQN/FIN and INV-025–035 were reviewed
 without promotion. Six-language master references remain intact. Next is exact
 implementation and hosted execution; eleven queries and paid/live QPU use stay
 blocked.
+
+### 2026-10-18 — Cycle 008 Delta 18 routed-semantics runner
+
+Started from canonical `main` commit
+`bc0d883250387e0141efbc0f221e3bc1e56d0695`. Implemented QOS-AUDIT-010B20
+exactly against the Delta 17 contract: deterministic routing reproduction,
+active-wire rejection, ten-wire compaction, explicit inverse final-layout
+state permutation, global-phase alignment, four frozen statevector probes and
+fail-closed certificate retention. Added a dedicated 35-minute CI job and
+artifact upload. Local unit tests pass; the optional pinned-SDK execution is
+intentionally deferred to exact-commit hosted CI.
+
+A advances the priority verification path; B remains local/no-submit; C gains
+bounded state and traced-memory accounting without memory equivalence; D/G/E
+gain no new device, fabrication, material, energy or fuel evidence; F preserves
+full-equivalence, useful-output and economics as false; H retains software-first
+capital discipline; I remains `MODEL_ONLY`. FND/EQN/FIN and INV-025–035 were
+reviewed without promotion. No provider service, shots, paid job, advantage,
+new physical law or Data-Center-to-Phone achievement is claimed.

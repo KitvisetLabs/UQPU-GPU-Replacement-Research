@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-18T00:05:00Z",
+  "prepared_utc": "2026-10-18T03:20:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "ab7a933aaa52648a794c110874784ee739bd7de0",
+  "canonical_start_sha": "bc0d883250387e0141efbc0f221e3bc1e56d0695",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 17: bounded routed-semantics probes preregistered; execution and full equivalence pending",
+  "current_frontier": "Cycle 008 Delta 18: frozen bounded routed-semantics runner implemented; hosted execution and full equivalence pending",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -28,11 +28,12 @@
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_15_2026-10-18.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_16_2026-10-18.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_17_2026-10-18.md",
+    "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_18_2026-10-18.md",
     "docs/LITERATURE_WATCH_2026-10-17_AI_GENERATED_MATHEMATICAL_INSTRUMENTS.md",
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "ROUTED_PROBE_PREREGISTERED_EXECUTION_PENDING", "evidence_class": "MODEL_ONLY_PREREGISTRATION", "next_gate": "implement the frozen four-probe ten-query check; full equivalence and eleven queries remain blocked"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "ROUTED_PROBE_RUNNER_IMPLEMENTED_HOSTED_EXECUTION_PENDING", "evidence_class": "MODEL_ONLY_PREREGISTRATION", "next_gate": "execute the frozen four-probe ten-query check in exact-commit CI; full equivalence and eleven queries remain blocked"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "SAVED_TARGET_NO_SUBMIT_ROUTING_ACCEPTED", "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK", "next_gate": "retain zero-provider boundary while validating routed semantics before any saved-snapshot noise or schedule diagnostic"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -46,10 +47,10 @@
   "open_gates": ["RG-033", "RG-034", "I-012"],
   "master_reference_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
   "latest_verified_ci": {
-    "run_number": 773,
-    "run_id": 39075514347,
+    "run_number": 776,
+    "run_id": 39089089799,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39075514347"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39089089799"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -65,6 +66,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Implement QOS-AUDIT-010B19 exactly, persist every probe residual or failure, and do not treat finite same-SDK probes as full equivalence.",
+  "next_independent_action": "Execute QOS-AUDIT-010B20 in exact-commit hosted CI, persist every probe residual or failure, and do not treat finite same-SDK probes as full equivalence.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }
