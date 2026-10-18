@@ -1,0 +1,112 @@
+{
+  "authorization": {
+    "credentials_used": false,
+    "currency": null,
+    "explicit_user_consent_recorded": false,
+    "live_service_initialized": false,
+    "maximum_authorized_cost": null,
+    "maximum_jobs": 0,
+    "maximum_shots": 0,
+    "network_submission_attempted": false,
+    "paid_execution_authorized": false
+  },
+  "contract_sha256": "7d1dc4cdd4e1e1c0e112becc76ffbd56c34ecb2695ef959c87f313ece20cf1ff",
+  "date": "2026-10-19",
+  "evidence_class": "MODEL_ONLY_PREREGISTRATION",
+  "measurement_contract": {
+    "accepted_useful_output_denominator": "accepted_output_count",
+    "cost_per_accepted_useful_output_formula": "actual_billable_cost / accepted_output_count",
+    "cross_provider_probability_price_join_forbidden": true,
+    "execution_success_is_not_quality_acceptance": true,
+    "quality_threshold_change_after_submission_forbidden": true,
+    "required_execution_fields": [
+      "provider",
+      "target_id",
+      "target_snapshot_timestamp_utc",
+      "target_snapshot_sha256",
+      "pricing_source_url",
+      "pricing_observed_at_utc",
+      "currency",
+      "maximum_authorized_cost",
+      "estimated_cost_before_submission",
+      "actual_billable_cost",
+      "job_ids",
+      "shots_requested",
+      "shots_completed",
+      "queue_latency_seconds",
+      "execution_latency_seconds",
+      "end_to_end_latency_seconds",
+      "host_preprocess_seconds",
+      "host_postprocess_seconds",
+      "host_peak_memory_bytes",
+      "payload_bytes_sent",
+      "result_bytes_received",
+      "retry_count",
+      "accepted_output_count",
+      "quality_metric_name",
+      "quality_metric_value",
+      "quality_threshold",
+      "quality_gate_passed",
+      "energy_measurement_status"
+    ],
+    "same_provider_target_pricing_and_result_record_required": true,
+    "zero_accepted_output_result": "REJECT_AND_REPORT_UNDEFINED_COST_PER_ACCEPTED_OUTPUT"
+  },
+  "nonclaims": [
+    "not real-QPU execution or hardware-quality evidence",
+    "not authorization to initialize a live provider service",
+    "not authorization to submit a free or paid provider job",
+    "not quantum advantage, GPU replacement, or Data-Center-to-Phone evidence",
+    "not RAM, VRAM, storage, material, bio-oil, fusion, WACC, or new-law evidence",
+    "Delta 20 saved-target simulation cannot substitute for a fresh live target snapshot"
+  ],
+  "phases": [
+    {
+      "id": "NO_SUBMIT_PREFLIGHT",
+      "network_submission": false,
+      "paid_execution": false,
+      "provider_service_initialization": false,
+      "required_outputs": [
+        "provider_and_target_selected",
+        "fresh_target_snapshot_captured_and_hashed",
+        "target_specific_route_rebuilt",
+        "native_gate_and_topology_conformance_passed",
+        "ideal_reference_recomputed_for_exact_submitted_circuit",
+        "shot_plan_and_quality_threshold_frozen",
+        "pricing_source_and_cost_ceiling_frozen"
+      ]
+    },
+    {
+      "enabled": false,
+      "enablement_requires_all": [
+        "explicit_user_consent_recorded",
+        "credentials_available_without_secret_capture",
+        "provider_target_and_region_fixed",
+        "maximum_jobs_fixed",
+        "maximum_shots_fixed",
+        "maximum_authorized_cost_fixed",
+        "estimated_cost_not_above_authorized_cost",
+        "NO_SUBMIT_PREFLIGHT_passed"
+      ],
+      "id": "AUTHORIZED_EXECUTION"
+    }
+  ],
+  "schema": "uqpu-er6-qsvt-real-qpu-preregistration-v1",
+  "stop_conditions": [
+    "missing explicit consent or bounded budget",
+    "estimated cost exceeds the authorized ceiling",
+    "target snapshot or exact submitted circuit lacks a digest",
+    "target-specific conformance failure",
+    "pricing provenance missing or from another provider/target",
+    "requested jobs or shots exceed the frozen ceilings",
+    "any required execution field cannot be recorded"
+  ],
+  "upstream": {
+    "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_ROUTED_PROBE_CHECK",
+    "path": "benchmarks/results/cycle008-delta20-er6-qsvt-independent-routed-probe.json",
+    "sha256": "601d551079b223ed42cd21ad77d74972ee6b5bdb2e727890280b8b617ede17c1",
+    "target_identity_sha256": "88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e"
+  },
+  "upstream_work_id": "QOS-AUDIT-010B22",
+  "work_id": "QOS-AUDIT-010B23"
+}
