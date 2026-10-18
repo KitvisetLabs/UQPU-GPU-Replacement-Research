@@ -7,8 +7,10 @@ reproduces the accepted ten-query circuit and saved-target route, rejects any
 routed instruction outside physical wires 0–9, compacts those ten wires,
 requires a bijective final-index layout, explicitly restores logical amplitude
 ordering, removes one global phase and evaluates the four preregistered product
-states. The exact-commit hosted execution is pending; no residual has yet been
-accepted in this delta.
+states. Exact-commit job `117572935487` passed: the four residuals range from
+`2.234e-13` to `3.922e-13`, below the frozen `1e-9` stop. The observed final
+layout was `[8,7,6,5,0,1,2,3,4,9]`, runtime 83.694 s and traced peak memory
+48,643,558 bytes. Artifact `12123870315` preserves the certificate.
 
 The runner always retains a JSON certificate or a tooling/capacity failure.
 It enforces the frozen `1e-9` residual threshold, state norms, 1,800-second
@@ -44,7 +46,7 @@ article was created.
 
 ## Next gate
 
-Run QOS-AUDIT-010B20 in exact-commit CI with the pinned SDKs and persist every
-residual or failure. If it passes, design an independently implemented or
-stronger scalable equivalence check before any saved-snapshot noise/schedule
-diagnostic. Eleven queries and live/paid QPU execution remain blocked.
+Preregister an independently implemented or stronger scalable equivalence
+check before any saved-snapshot noise/schedule diagnostic. Four passing
+same-SDK probes do not prove the operator. Eleven queries and live/paid QPU
+execution remain blocked.

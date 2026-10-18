@@ -701,7 +701,7 @@ covers residual risk. Eleven queries, live calibration and provider execution
 remain blocked.
 
 ### RG-033 update — routed-semantics runner implemented
-**Status:** IMPLEMENTED / HOSTED_EXECUTION_PENDING / FULL_EQUIVALENCE_OPEN
+**Status:** BOUNDED_PROBES_ACCEPTED / FULL_EQUIVALENCE_OPEN
 **Date:** 2026-10-18
 
 QOS-AUDIT-010B20 now reproduces the frozen saved-target route, rejects active
@@ -711,6 +711,12 @@ four phase-aligned residuals with the preregistered norms, runtime, memory and
 zero-provider stops. Unit tests cover bit permutation, non-bijection rejection,
 global phase and fail-closed residual evaluation.
 
-**Still missing:** exact-commit hosted execution with the pinned Qiskit stack,
-then an independent implementation or stronger equivalence method. A future
-passing certificate remains a finite same-SDK probe result only.
+Exact-commit job `117572935487` passed all four probes. Phase-aligned L2
+residuals were `2.234e-13`, `3.163e-13`, `3.922e-13` and `3.288e-13`; final
+layout `[8,7,6,5,0,1,2,3,4,9]` was explicitly inverted. Runtime was 83.694 s
+and traced peak memory 48,643,558 bytes. Artifact `12123870315` retained the
+certificate; jobs/shots remained zero and cost/energy null.
+
+**Still missing:** an independent implementation or stronger scalable
+equivalence method. This passing certificate is a finite same-SDK probe result
+only; full operator and independent-SDK equivalence remain false.

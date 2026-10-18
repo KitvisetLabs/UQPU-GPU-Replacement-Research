@@ -1524,3 +1524,10 @@ full-equivalence, useful-output and economics as false; H retains software-first
 capital discipline; I remains `MODEL_ONLY`. FND/EQN/FIN and INV-025–035 were
 reviewed without promotion. No provider service, shots, paid job, advantage,
 new physical law or Data-Center-to-Phone achievement is claimed.
+
+Hosted job `117572935487` passed all four frozen probes with residuals from
+`2.234e-13` through `3.922e-13`, runtime 83.694 s and traced peak memory
+48,643,558 bytes. The non-identity final layout was explicitly inverted.
+Artifact `12123870315` is retained. This accepts only the bounded same-SDK
+probe gate; full operator equivalence, independent-SDK equivalence and useful
+output quality remain false.

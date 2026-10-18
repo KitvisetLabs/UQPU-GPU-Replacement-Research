@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "bc0d883250387e0141efbc0f221e3bc1e56d0695",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 18: frozen bounded routed-semantics runner implemented; hosted execution and full equivalence pending",
+  "current_frontier": "Cycle 008 Delta 18: four frozen same-SDK routed probes passed; full and independent equivalence remain open",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -33,7 +33,7 @@
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "ROUTED_PROBE_RUNNER_IMPLEMENTED_HOSTED_EXECUTION_PENDING", "evidence_class": "MODEL_ONLY_PREREGISTRATION", "next_gate": "execute the frozen four-probe ten-query check in exact-commit CI; full equivalence and eleven queries remain blocked"},
+    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "BOUNDED_ROUTED_PROBES_ACCEPTED_FULL_EQUIVALENCE_OPEN", "evidence_class": "SAME_SDK_BOUNDED_STATEVECTOR_PROBE_CHECK", "next_gate": "design an independent or stronger scalable equivalence check; eleven queries remain blocked"},
     "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "SAVED_TARGET_NO_SUBMIT_ROUTING_ACCEPTED", "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK", "next_gate": "retain zero-provider boundary while validating routed semantics before any saved-snapshot noise or schedule diagnostic"},
     "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
     "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
@@ -66,6 +66,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Execute QOS-AUDIT-010B20 in exact-commit hosted CI, persist every probe residual or failure, and do not treat finite same-SDK probes as full equivalence.",
+  "next_independent_action": "Preregister an independently implemented or stronger scalable routed-equivalence check; keep finite same-SDK probes below full equivalence.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }

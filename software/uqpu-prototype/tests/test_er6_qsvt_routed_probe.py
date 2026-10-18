@@ -6,6 +6,7 @@ import math
 import unittest
 
 from uqpu.er6_qsvt_routed_probe import (
+    PERSISTED_CERTIFICATE,
     evaluate_result,
     inverse_layout_state,
     phase_aligned_l2,
@@ -57,6 +58,14 @@ class RoutedProbeUnitTests(unittest.TestCase):
         changed = copy.deepcopy(resources)
         changed["probes"][0]["phase_aligned_l2_residual"] = 1e-8
         self.assertIn("probe:computational_zero:residual", evaluate_result(self.contract, changed)["failures"])
+
+    def test_persisted_certificate_keeps_stronger_claims_closed(self):
+        certificate = json.loads(PERSISTED_CERTIFICATE.read_text(encoding="utf-8"))
+        self.assertTrue(certificate["passed"])
+        self.assertFalse(certificate["evaluation"]["full_operator_equivalence_accepted"])
+        self.assertFalse(certificate["evaluation"]["useful_output_quality_accepted"])
+        self.assertEqual(certificate["resources"]["authorization"]["provider_jobs"], 0)
+        self.assertEqual(certificate["provenance"]["workflow_job_id"], 117572935487)
 
 
 @unittest.skipUnless(importlib.util.find_spec("qiskit_ibm_runtime"), "optional saved-target SDK")
