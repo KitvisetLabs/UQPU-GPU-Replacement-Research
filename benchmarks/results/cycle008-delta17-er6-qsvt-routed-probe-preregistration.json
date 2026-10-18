@@ -1,0 +1,172 @@
+{
+  "acceptance": {
+    "active_wire_set_must_match": true,
+    "all_probes_must_complete": true,
+    "layout_must_be_bijective": true,
+    "maximum_host_peak_traced_bytes": 1500000000,
+    "maximum_host_runtime_seconds": 1800,
+    "maximum_phase_aligned_l2_residual_per_probe": 1e-09,
+    "maximum_state_norm": 1.000000001,
+    "minimum_state_norm": 0.999999999,
+    "no_threshold_change_after_execution": true,
+    "stop_on_any_failure": true
+  },
+  "authorization": {
+    "credentials_used": false,
+    "live_service_initialized": false,
+    "network_submission_attempted": false,
+    "paid_execution_authorized": false,
+    "provider_jobs": 0,
+    "shots": 0
+  },
+  "contract_sha256": "329483f3e19d24c765c71ce8e36e0074088e77f2c23a92b2f497d29881b952a8",
+  "date": "2026-10-18",
+  "evidence_class": "MODEL_ONLY_PREREGISTRATION",
+  "inputs": {
+    "logical_source": {
+      "logical_qubits": 10,
+      "path": "benchmarks/results/cycle008-delta14-er6-qsvt-ten-query-qiskit.json",
+      "queries": 10,
+      "sha256": "edcf6e7606336ab55095df44ae03a72e999f863f341033b402a8fbf327f1c899",
+      "work_id": "QOS-AUDIT-010B15"
+    },
+    "saved_target_routing": {
+      "active_physical_qubits": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "layout_fingerprint": "ec0e1ea78e37085895cb473258d3a7fcbe29fa6264c24ddff93b7d22f677163a",
+      "path": "benchmarks/results/cycle008-delta16-er6-qsvt-target-transpile.json",
+      "sha256": "5e3612dc420b3763655e26aac7f1388073f7228a913179d605c66895601332ff",
+      "target_identity_sha256": "88419f3cb82b6d2bf21cb40ef59ae3ac9fbca0c37b0425bd0d8f561cb905ca4e",
+      "work_id": "QOS-AUDIT-010B18"
+    }
+  },
+  "method": {
+    "apply_inverse_final_layout_before_comparison": true,
+    "backend_package": "qiskit-ibm-runtime==0.48.0",
+    "compact_only_frozen_active_physical_qubits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "global_phase_alignment": "inner_product",
+    "probes": [
+      {
+        "id": "computational_zero",
+        "preparation": []
+      },
+      {
+        "id": "computational_one",
+        "preparation": [
+          {
+            "gate": "x",
+            "qubits": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "id": "alternating_odd",
+        "preparation": [
+          {
+            "gate": "x",
+            "qubits": [
+              1,
+              3,
+              5,
+              7,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "id": "complex_product",
+        "preparation": [
+          {
+            "gate": "h",
+            "qubits": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "gate": "s",
+            "qubits": [
+              1,
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "gate": "t",
+            "qubits": [
+              0,
+              3,
+              6,
+              9
+            ]
+          }
+        ]
+      }
+    ],
+    "reproduce_routing_from_frozen_b17_contract": true,
+    "require_final_index_layout_bijection": true,
+    "sdk": "qiskit==2.5.2",
+    "statevector_qubits": 10
+  },
+  "nonclaims": [
+    "finite probes do not prove full operator equivalence",
+    "same-SDK statevector comparison is not an independent-SDK proof",
+    "not live calibration, hardware execution, sampling, or fidelity evidence",
+    "not eleven-query or degree-81 feasibility",
+    "not provider cost, energy, quantum advantage, or subsystem replacement evidence"
+  ],
+  "required_outputs": [
+    "observed_final_index_layout",
+    "observed_active_physical_qubits",
+    "per_probe_phase_aligned_l2_residual",
+    "per_probe_logical_state_norm",
+    "per_probe_routed_state_norm",
+    "host_runtime_ns",
+    "host_peak_traced_bytes"
+  ],
+  "schema": "uqpu-er6-qsvt-routed-probe-preregistration-v1",
+  "upstream_work_id": "QOS-AUDIT-010B18",
+  "work_id": "QOS-AUDIT-010B19"
+}

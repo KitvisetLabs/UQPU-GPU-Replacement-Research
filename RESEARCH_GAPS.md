@@ -683,3 +683,19 @@ using logical-token/layout tracking, tensor-network/light-cone comparison or
 another preregistered method on the same useful-output contract. Preserve a
 counterexample or capacity failure; only afterward consider saved-snapshot
 noise/schedule diagnostics. No live service or provider submission.
+
+### RG-033 update — bounded routed-semantics probes preregistered
+**Status:** PREREGISTERED / EXECUTION_PENDING / FULL_EQUIVALENCE_OPEN
+**Date:** 2026-10-18
+
+QOS-AUDIT-010B19 binds the accepted logical and routing certificate digests,
+the exact active wire set, final-layout inversion rule, four deterministic
+product-state probes, `1e-9` phase-aligned residual threshold, state-norm and
+host-resource stops, and zero-provider authorization before execution.
+
+**Evidence boundary:** passing all probes would be a bounded same-SDK dynamic
+check, not a proof of full operator equivalence or an independent-SDK result.
+The unlock remains incomplete until the runner executes and, if needed, a
+stronger tensor-network, light-cone or independently implemented verifier
+covers residual risk. Eleven queries, live calibration and provider execution
+remain blocked.

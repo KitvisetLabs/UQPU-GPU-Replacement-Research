@@ -736,3 +736,16 @@ check exists; do not convert saved instruction properties into fidelity.
 the routed circuit preserves the accepted workload output or predicts a live
 device. Separating resource acceptance from quality acceptance prevents a
 successful transpilation from becoming unsupported hardware evidence.
+
+## 2026-10-18 — D130: Freeze finite routed probes without calling them a proof
+
+**Decision:** Bind the accepted ten-query source and routed-resource
+certificates before observing semantics residuals. Require a bijective final
+layout, inverse-layout correction and four fixed 10-qubit product-state probes
+under a `1e-9` phase-aligned L2 threshold. Keep finite-probe acceptance below
+full operator equivalence and below independent-SDK evidence.
+
+**Reason:** A dense 156-qubit operator is infeasible and unnecessary because
+only ten physical wires are active. A preregistered compact statevector probe
+test can expose routing or permutation errors without pretending that four
+states span the operator or that same-SDK comparison is independent.
