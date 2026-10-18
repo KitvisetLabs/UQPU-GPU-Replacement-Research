@@ -1546,3 +1546,21 @@ D/G/E receive no new physical, manufacturing, material, fuel or energy
 evidence; F gains convention/counterexample gates; H retains software-first
 capital discipline; I remains `MODEL_ONLY`. FND/EQN/FIN and INV-025–035 remain
 unpromoted. No live service, paid job, advantage or new physical law is claimed.
+
+### 2026-10-18 — Cycle 008 Delta 20 independent routed-probe execution
+
+Started from canonical `main` commit
+`588500f647bb42a43549a5ce38072198f61071ab`. Implemented QOS-AUDIT-010B22
+against the immutable Delta 19 digest using Qiskit only to reproduce the frozen
+source/route and Qulacs 0.6.14 to apply explicit complex matrices. All four
+bounded probes passed locally with maximum residual `3.945e-13`; runtime was
+48.289 s and traced peak memory 101,543,937 bytes.
+
+Observable counterexamples were rejected without changing the threshold.
+The exact CZ endpoint-order reversal was non-observable by symmetry and is
+recorded alongside the detected altered-mapping mutation. A advances its
+independent-simulator boundary; B remains no-submit; C records bounded host
+resources only; D/G/E gain no physical, manufacturing, material, fuel or
+energy evidence; F preserves the evidence/nonclaim gates; H keeps the
+software-first capital gate; I remains `MODEL_ONLY`. FND/EQN/FIN and
+INV-025–035 remain unpromoted. Exact-commit hosted CI is the next confirmation.

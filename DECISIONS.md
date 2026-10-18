@@ -777,3 +777,18 @@ operator equivalence false even if all probes pass.
 rotation-sign and basis-order conventions can themselves create false results.
 Explicit matrices and negative controls make those conventions falsifiable
 without pretending that four states span a 10-qubit operator.
+
+## 2026-10-18 — D133: Accept bounded independent simulation, not full equivalence
+
+**Decision:** Execute the frozen route with explicit `X`, `SX`, `RZ` and `CZ`
+matrices in Qulacs 0.6.14, retain the four probes and reject observable seeded
+defects at the unchanged `1e-9` threshold. Treat a reversed CZ endpoint order
+as algebraically non-observable because CZ is symmetric; retain that null
+result and separately test an altered CZ mapping. Keep full-operator,
+hardware-fidelity and useful-output acceptance false.
+
+**Reason:** Fabricating a residual for `CZ(q0,q1) = CZ(q1,q0)` would violate
+the evidence policy. The observable mapping mutation still verifies that the
+negative-control path can expose a two-qubit wiring defect, while the null
+endpoint-order result documents a limitation in the conditional preregistered
+wording.
