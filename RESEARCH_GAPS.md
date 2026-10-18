@@ -720,3 +720,17 @@ certificate; jobs/shots remained zero and cost/energy null.
 **Still missing:** an independent implementation or stronger scalable
 equivalence method. This passing certificate is a finite same-SDK probe result
 only; full operator and independent-SDK equivalence remain false.
+
+### RG-033 update — independent routed-probe experiment preregistered
+**Status:** PREREGISTERED / EXECUTION_PENDING / FULL_EQUIVALENCE_OPEN
+**Date:** 2026-10-18
+
+QOS-AUDIT-010B21 binds the Delta 18 certificate digest, Qiskit 2.5.2,
+Qulacs 0.6.14, the observed layout, active wires, four probes, explicit gate
+matrices, `1e-9` residual stop and four mandatory counterexamples. Unknown
+operations, gate-set drift, missed counterexamples or authorization signals
+fail closed.
+
+**Still missing:** implementation and exact-commit execution. A future pass is
+independent-simulator bounded-probe evidence, not full operator equivalence,
+hardware fidelity, cost, energy or advantage.
