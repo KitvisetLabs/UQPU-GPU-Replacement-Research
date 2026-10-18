@@ -1486,3 +1486,22 @@ FND/EQN/FIN and INV-025–035 were reviewed without promotion. Fresh literature
 surveillance found no gate-changing primary delta, so no duplicate watch was
 created. Next: independently verify routed semantics without a dense
 156-qubit operator, then preregister any snapshot noise/schedule diagnostic.
+
+### 2026-10-18 — Cycle 008 Delta 17 routed-semantics probe preregistration
+
+Started from canonical `main` commit
+`ab7a933aaa52648a794c110874784ee739bd7de0`. Froze QOS-AUDIT-010B19 before
+observing any routed state residual. The contract binds the accepted logical
+and routing artifacts, active physical wires 0–9, a bijective final-layout
+rule, four deterministic product-state probes, `1e-9` phase-aligned L2 stop,
+state norms, runtime, traced memory and zero-provider authorization.
+
+This is preregistration only. Finite same-SDK probes are not full operator or
+independent-SDK proof, and no useful-output quality is accepted yet. A advances
+the verification design; B remains no-submit; C gains a bounded 10-qubit state
+contract; D/G/E receive no new physical, fabrication, material, fuel or energy
+evidence; F freezes evidence/nonclaim gates; H retains software-first capital
+discipline; I remains `MODEL_ONLY`. FND/EQN/FIN and INV-025–035 were reviewed
+without promotion. Six-language master references remain intact. Next is exact
+implementation and hosted execution; eleven queries and paid/live QPU use stay
+blocked.
