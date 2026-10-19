@@ -1,0 +1,70 @@
+{
+  "schema": "uqpu-er6-real-qpu-no-submit-preflight-candidate-v1",
+  "work_id": "QOS-AUDIT-010B24",
+  "date": "2026-10-20",
+  "evidence_class": "MODEL_ONLY_NO_SUBMIT_PREFLIGHT_CANDIDATE",
+  "upstream": {
+    "work_id": "QOS-AUDIT-010B23",
+    "path": "benchmarks/results/cycle008-delta21-er6-qsvt-real-qpu-preregistration.json",
+    "contract_sha256": "7d1dc4cdd4e1e1c0e112becc76ffbd56c34ecb2695ef959c87f313ece20cf1ff"
+  },
+  "provider_candidate": {
+    "provider": "IBM Quantum Compute",
+    "target_id": "ibm_kingston",
+    "processor_family": "Heron",
+    "processor_revision": "r2",
+    "selection_basis": "Official IBM changelog states ibm_kingston is available to Open Plan users.",
+    "source_url": "https://quantum.cloud.ibm.com/docs/guides/latest-updates",
+    "source_observed_date": "2026-10-20",
+    "selection_is_execution_authorization": false
+  },
+  "sdk_observation": {
+    "source_url": "https://quantum.cloud.ibm.com/docs/api/qiskit-ibm-runtime/release-notes",
+    "latest_observed_release": "0.50.0",
+    "release_date": "2026-09-24",
+    "material_change": "EstimatorV2 and SamplerV2 are deprecated in favor of client-side Estimator and Sampler interfaces.",
+    "implementation_consequence": "Any later preflight must pin the actually installed client and avoid assuming Delta 20/21 primitive interfaces remain current."
+  },
+  "no_submit_preflight": {
+    "provider_and_target_selected": true,
+    "fresh_authenticated_target_snapshot_captured_and_hashed": false,
+    "target_specific_route_rebuilt": false,
+    "native_gate_and_topology_conformance_passed": false,
+    "ideal_reference_recomputed_for_exact_submitted_circuit": false,
+    "shot_plan_and_quality_threshold_frozen": false,
+    "pricing_source_and_cost_ceiling_frozen": false,
+    "preflight_passed": false
+  },
+  "authorization": {
+    "explicit_user_consent_recorded": false,
+    "credentials_used": false,
+    "live_service_initialized": false,
+    "network_submission_attempted": false,
+    "paid_execution_authorized": false,
+    "provider_jobs": 0,
+    "shots": 0,
+    "maximum_authorized_cost": null,
+    "currency": null
+  },
+  "stop_conditions_triggered": [
+    "fresh target snapshot unavailable without an authenticated provider session",
+    "exact target-specific route and native conformance not established",
+    "provider-native pricing or quota provenance and bounded cost ceiling not frozen",
+    "explicit consent, job ceiling, shot ceiling and budget are absent"
+  ],
+  "required_next_outputs": [
+    "authenticated read-only target snapshot with timestamp and SHA-256",
+    "exact circuit digest and target-specific transpilation",
+    "native instruction and coupling-map conformance certificate",
+    "held-fixed ideal reference and accepted-output quality threshold",
+    "same-provider pricing or quota source with observation timestamp",
+    "bounded jobs, shots and cost proposal for explicit user approval"
+  ],
+  "nonclaims": [
+    "not a completed NO_SUBMIT_PREFLIGHT",
+    "not real-QPU execution or hardware-quality evidence",
+    "not authorization to initialize a service or submit a job",
+    "not quantum advantage, GPU replacement, Data-Center-to-Phone, RAM, VRAM or storage replacement evidence",
+    "not material, bio-oil, fusion, WACC or new-physical-law evidence"
+  ]
+}
