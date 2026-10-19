@@ -30,6 +30,13 @@ INV-025–035 remain binding. In particular:
 
 Artifacts have single ownership: Lane B owns the provider-candidate preflight record; the literature-watch article owns the EQN/FND surveillance delta; this report is the cross-lane integration handoff.
 
+## Source anchors
+
+- IBM Quantum Compute updates: https://quantum.cloud.ibm.com/docs/guides/latest-updates
+- IBM Quantum Compute client release notes: https://quantum.cloud.ibm.com/docs/api/qiskit-ibm-runtime/release-notes
+- HarnessSR: https://arxiv.org/abs/2610.16966
+- AI-assisted physics formalization: https://arxiv.org/abs/2610.14059
+
 ## Evidence boundary and next gate
 
 Evidence class is `MODEL_ONLY_NO_SUBMIT_PREFLIGHT_CANDIDATE`. Credentials, live service, jobs, shots and authorized cost remain zero/false/null. The next gate is an authenticated **read-only** snapshot of `ibm_kingston`, followed by exact transpilation and conformance checks. Any execution still requires a separate explicit user consent record with bounded jobs, shots and cost.
