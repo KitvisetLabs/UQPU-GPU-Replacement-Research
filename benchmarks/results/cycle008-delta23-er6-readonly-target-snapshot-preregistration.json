@@ -1,0 +1,147 @@
+{
+  "schema": "uqpu-er6-authenticated-readonly-target-snapshot-preregistration-v1",
+  "work_id": "QOS-AUDIT-010B25",
+  "date": "2026-10-21",
+  "evidence_class": "MODEL_ONLY_PREREGISTRATION",
+  "upstream": {
+    "work_id": "QOS-AUDIT-010B24",
+    "path": "benchmarks/results/cycle008-delta22-er6-real-qpu-no-submit-preflight-candidate.json",
+    "git_blob_sha": "91f8db989553c87aa3dd865fdea74c6a8fcd5996",
+    "canonical_main_commit": "1c43d5c9244ca50ac2d848a4f04594ee0be6d84f"
+  },
+  "scope": {
+    "provider": "IBM Quantum Compute",
+    "target_id": "ibm_kingston",
+    "operation": "authenticated metadata read only",
+    "service_initialization_permitted_for_execution": false,
+    "job_submission_permitted": false,
+    "session_or_batch_creation_permitted": false,
+    "sampler_or_estimator_invocation_permitted": false
+  },
+  "snapshot_capture_contract": {
+    "capture_clock": "UTC",
+    "freshness_max_age_seconds_at_route_build": 900,
+    "canonical_serialization": "UTF-8 JSON; recursively sorted object keys; arrays preserve provider order unless a field-specific normalization below applies; finite decimal numbers only; no NaN or Infinity; newline terminated",
+    "digest_algorithm": "SHA-256",
+    "required_top_level_fields": [
+      "schema",
+      "provider",
+      "target_id",
+      "captured_at_utc",
+      "client_package_versions",
+      "backend_status",
+      "target_structure",
+      "timing_constraints",
+      "calibration_provenance",
+      "redaction_report"
+    ],
+    "field_normalization": {
+      "basis_gates": "sorted unique strings",
+      "coupling_edges": "sorted unique directed integer pairs; preserve direction",
+      "instruction_names": "sorted unique strings",
+      "qubit_indices": "ascending integers",
+      "timestamps": "RFC3339 UTC with Z suffix"
+    }
+  },
+  "required_allowlisted_metadata": {
+    "client_package_versions": [
+      "qiskit",
+      "qiskit_ibm_runtime"
+    ],
+    "backend_status": [
+      "operational",
+      "status_message",
+      "pending_jobs",
+      "status_observed_at_utc"
+    ],
+    "target_structure": [
+      "num_qubits",
+      "basis_gates",
+      "instruction_names",
+      "coupling_edges",
+      "measurement_map",
+      "dynamic_circuit_capability_if_exposed"
+    ],
+    "timing_constraints": [
+      "dt_seconds_if_exposed",
+      "granularity_if_exposed",
+      "minimum_length_if_exposed",
+      "pulse_alignment_if_exposed",
+      "acquire_alignment_if_exposed"
+    ],
+    "calibration_provenance": [
+      "properties_last_update_utc_if_exposed",
+      "target_last_update_utc_if_exposed",
+      "per_instruction_error_and_duration_if_exposed",
+      "per_qubit_readout_error_and_t1_t2_frequency_if_exposed"
+    ]
+  },
+  "forbidden_or_redacted_fields": [
+    "API tokens",
+    "credentials",
+    "authorization headers",
+    "account identifiers",
+    "email addresses",
+    "hub/group/project identifiers",
+    "instance CRNs",
+    "private endpoints",
+    "user-specific quota identifiers",
+    "raw exception payloads that may contain secrets"
+  ],
+  "validation_gates": {
+    "target_id_exact_match": true,
+    "provider_exact_match": true,
+    "required_fields_present_or_explicitly_null_with_reason": true,
+    "no_forbidden_field_detected": true,
+    "qubit_indices_within_range": true,
+    "coupling_edges_within_range": true,
+    "basis_and_instruction_sets_nonempty": true,
+    "capture_timestamp_parseable": true,
+    "calibration_timestamp_not_after_capture": true,
+    "snapshot_digest_recomputed_matches": true,
+    "freshness_gate_passed": false,
+    "snapshot_gate_passed": false
+  },
+  "failure_and_counterexample_tests": [
+    "reject target_id differing by case, suffix or alias",
+    "reject any coupling endpoint outside [0, num_qubits)",
+    "reject duplicate or malformed directed coupling edges",
+    "reject calibration timestamps later than capture time",
+    "reject a snapshot older than 900 seconds at route build",
+    "reject missing required metadata without an explicit null reason",
+    "reject digest mismatch after one-byte mutation",
+    "reject any forbidden credential or account field before persistence"
+  ],
+  "required_output_artifacts": [
+    "redacted canonical snapshot JSON",
+    "SHA-256 digest record",
+    "capture and route-build timestamps",
+    "package-version record",
+    "schema-validation and counterexample-test report",
+    "explicit pass/fail decision with failure reasons"
+  ],
+  "authorization": {
+    "explicit_user_consent_for_job_submission_recorded": false,
+    "credentials_used_in_this_preregistration": false,
+    "live_service_initialized_in_this_preregistration": false,
+    "network_submission_attempted": false,
+    "paid_execution_authorized": false,
+    "provider_jobs": 0,
+    "shots": 0,
+    "maximum_authorized_cost": null,
+    "currency": null
+  },
+  "preflight_effect": {
+    "passing_snapshot_gate_authorizes_target_specific_route_build": true,
+    "passing_snapshot_gate_authorizes_job_submission": false,
+    "real_qpu_preflight_passed": false
+  },
+  "nonclaims": [
+    "not an authenticated target snapshot",
+    "not current calibration or accessibility evidence",
+    "not target-specific transpilation or native-conformance evidence",
+    "not authorization to submit a provider job",
+    "not real-QPU quality, cost, energy or advantage evidence",
+    "not Data-Center-to-Phone, subsystem replacement, material, bio-oil, fusion, WACC or new-physical-law evidence"
+  ]
+}
