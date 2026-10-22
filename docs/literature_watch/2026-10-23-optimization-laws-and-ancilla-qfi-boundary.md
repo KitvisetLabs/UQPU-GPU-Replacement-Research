@@ -141,6 +141,13 @@ INV-025/026/027 and the 100x/100,000,000x moonshots remain unproven. No
 Hilbert-space dimension is equated with readable memory, and no NPU comparison
 is inferred from TOPS or QFI.
 
+## Surveillance boundary
+
+The fresh scan also screened agentic domain-specific symbolic-regression work,
+but found no additional result that changed UQPU evidence gates for materials,
+bio-oil, fusion electricity, financing, manufacturing or provider execution.
+Absence from this watch is not evidence that those fields are static.
+
 ## Next highest-value gate
 
 The project execution gate remains the authorized read-only `ibm_kingston`
