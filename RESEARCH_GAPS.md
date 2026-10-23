@@ -766,15 +766,3 @@ latency/host/data-movement accounting and cost per accepted useful output.
 explicit user consent, credentials, bounded jobs/shots/cost and an execution
 record. The execution phase is disabled; this artifact is not QPU evidence or
 permission to submit a free or paid job.
-
-
-## RG-036 — Formal theorem-discovery provenance and independent replay
-**Status:** IMPLEMENTED_METADATA_GATE / EXACT_COMMIT_CI_PENDING / THEOREM_BENCHMARK_OPEN
-**Date:** 2026-10-23
-**Objective:** prevent AI-assisted theorem discovery from being treated as verified mathematics or physical law without reproducible proof-check provenance.
-**Current evidence:** `software/uqpu-prototype/uqpu/formal_proof_gate.py` and nine focused local unit tests reject incomplete primary-check metadata, same-checker “independent” replay, mismatched theorem/axiom/proof digests, malformed digests, inconsistent exit status, and explicitly rejected candidates.
-**Evidence boundary:** the module validates metadata consistency only. It does not parse proof objects, invoke a proof assistant, authenticate logs, establish theorem truth, or connect axioms to nature. Local focused tests are not full-suite or hosted CI.
-**Missing:** exact-commit CI; a bounded theorem-discovery benchmark with false claims and inconsistent premises; two genuinely independent proof-checker backends; held-out theorem families; measured proof-search runtime, memory, artifact size and energy/cost where available.
-**Unlock criteria:** exact-commit CI passes; altered theorem/axiom/proof digests and false claims are rejected; the same proof object is accepted only with matching inputs and distinct checker identity/build; the result is independently reviewed; no metadata result is promoted to a physical law.
-**Dependencies:** FND-006, EQN-001–006, INV-034/035, Lane A software, Lane F evidence governance, Lane H literature/publication.
-**Next experiment:** implement `FND6-PROOF-001` with known theorems, false claims, altered proof bytes, changed axioms, and two independent checkers. Keep physical-law and technology promotion gates separate.
