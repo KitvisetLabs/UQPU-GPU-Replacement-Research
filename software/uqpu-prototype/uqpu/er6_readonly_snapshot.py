@@ -43,7 +43,7 @@ REQUIRED_NESTED_FIELDS = {
 }
 FORBIDDEN_KEY_FRAGMENTS = (
     "token", "credential", "authorization", "accountid", "email", "hub",
-    "group", "project", "instancecrn", "privateendpoint", "quotaidentifier",
+    "group", "project", "accountidentifier", "instancecrn", "privateendpoint", "quota",
     "rawexception", "apikey", "accesskey",
 )
 SECRET_VALUE_PATTERNS = (

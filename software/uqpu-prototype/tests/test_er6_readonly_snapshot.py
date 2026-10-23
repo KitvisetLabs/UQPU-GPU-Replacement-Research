@@ -119,6 +119,9 @@ class ReadonlyTargetSnapshotTests(unittest.TestCase):
         payload["account_identifier"] = "REDACTED"
         self.assertTrue(any(x.startswith("forbidden_key") for x in validate(payload)))
         payload = valid_snapshot()
+        payload["quota_identifier"] = "REDACTED"
+        self.assertTrue(any(x.startswith("forbidden_key") for x in validate(payload)))
+        payload = valid_snapshot()
         payload["backend_status"]["status_message"] = "Bearer secret-value"
         self.assertTrue(any(x.startswith("secret_like_value") for x in validate(payload)))
 
