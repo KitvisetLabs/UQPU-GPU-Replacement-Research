@@ -826,3 +826,19 @@ The permanent charter, VERSION_INVARIANTS.md, and research_lanes/LANE_DIRECTORY_
 **Falsifier / stop rule:** if target semantics cannot express the same branch behavior, if output quality misses the frozen threshold, or if full-stack cost/latency fails the benchmark, reject the route for that workload. A passing metadata gate is not permission to submit a job and is not an advantage claim.
 
 **Dependencies:** INV-001/004/007/019/022, INV-025–027, INV-029/034/035, Lane A/B integration, Lane F evidence governance. No material, fuel, fusion, finance, new-law or Data-Center-to-One-Phone claim follows from this experiment.
+
+
+## RG-040 — Physics-informed scaling-exponent discovery benchmark
+**Status:** LITERATURE_ONLY / BENCHMARK_NOT_RUN  
+**Date:** 2026-10-23  
+**Work item:** EQN-SCALE-001 (subtask under EQN-001/002/006; permanent EQN-001..006 IDs unchanged)
+
+**Primary source:** N'Guessan and Kim, “Discovering Scaling Exponents with Physics-Informed Müntz-Szász Networks,” Proceedings of the 43rd International Conference on Machine Learning, PMLR 306:91419–91445 (conference 2026-07-06 to 2026-07-11). Official proceedings: https://proceedings.mlr.press/v306/n-guessan26a.html.
+
+**Third-party result:** the authors parameterize power-law exponents in a physics-informed basis and report identifiability conditions, recovery on noisy/sparse benchmark data, and results on Laplace/Poisson singularity and wedge configurations. These are paper-reported results on the paper's stated domains, not UQPU measurements or evidence for a new physical law.
+
+**UQPU relevance:** adds a candidate method family for FND-006/EQN-001/002/006 when the unknown is a scaling exponent or asymptotic structure rather than a full unconstrained equation. Possible later applications to resource scaling, biomass conversion, fusion engineering, or lifecycle-cost models require domain-specific data and must not be inferred from this PDE benchmark.
+
+**Limits:** identifiability is conditional; benchmark success does not establish causality, universal validity, a new constitutive law, commercial bio-oil/fusion economics, material substitution, lower WACC, or Data-Center-to-Phone capability. No independent UQPU reproduction has been run.
+
+**Next falsifiable gate:** preregister train/validation/test splits by geometry and parameter regime; compare a Müntz-Szász-style exponent model, generic PINN, and symbolic-regression baseline under matched data/noise/compute budgets; test dimensional consistency, boundary conditions, known limiting cases, identifiability, held-out geometries and adversarial counterexamples; report false discoveries and total runtime/energy where measurable. Reject promotion if gains disappear under held-out geometry or matched-budget baselines.

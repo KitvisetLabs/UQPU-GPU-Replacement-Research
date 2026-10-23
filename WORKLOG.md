@@ -1620,3 +1620,12 @@ A–H review: A gained the interface and tests; B gained target-specific capabil
 ### Governance alignment addendum — INV-034 / INV-035
 
 A cross-file audit verified that INV-025–027 and INV-029–035 remain in `VERSION_INVARIANTS.md`. It found INV-035 absent from `GOALS.md` and both INV-034/035 absent from `PROJECT_CHARTER.md` and the operating-system/frontier directive text. Added explicit permanent statements and links to `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`, `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` and `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`. The update is governance synchronization, not a new scientific result. Hosted Python 3.10–3.12 CI remains queued for the updated PR head.
+
+
+## 2026-10-23 — Cycle 008 Delta 25: scaling-exponent literature and handoff CI repair
+
+Fresh surveillance checked the official PMLR proceedings for N'Guessan and Kim, “Discovering Scaling Exponents with Physics-Informed Müntz-Szász Networks” (ICML 2026, PMLR 306). The result adds a candidate, assumption-scoped method for discovering power-law exponents with physics constraints and identifiability conditions. Published a dated literature-watch note and RG-040; proposed EQN-SCALE-001 is a benchmark subtask, not a replacement for permanent EQN-001..006. No new physical law or project advantage is claimed.
+
+Reviewed the current PR #48 head `2daa12a72ccebeee21a6087cfe5be9f1355ffaab`. The UQPU Prototype and Project Invariants workflow passed (run 839), while Autonomous Cold-Start Handoff Audit run 119 failed only because the commit message lacked the required `Research-Sync: pending-main` trailer. The audit reported 36 integration pairs and no other errors. The follow-up commit carries the required trailer; new-head CI must be checked before declaring closure. Main remains unchanged and the PR remains open.
+
+A–H remain the permanent architecture. A/B retain the adaptive-circuit and read-only snapshot gates; C retains classical-state/I/O accounting and no quantum-state-to-readable-memory equivalence; D/G remain co-designed but lack new device/factory evidence; E has no qualified material, saleable-fuel or net-fusion-electricity data; F records the literature and CI boundary; H maintains strategic and multilingual master-plan context. Lane I remains auxiliary MODEL_ONLY under RG-037. FND-001..006, EQN-001..006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. No credentials, provider job, shot, billable usage, accepted-task economics, financing-rate effect, or paid execution was used. Research-Sync: pending-main
