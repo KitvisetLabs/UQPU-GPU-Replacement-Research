@@ -85,9 +85,10 @@ INV-025/026/027, the 100× and 100,000,000× targets, the 100,000,000-GPU and un
 
 Artifacts added:
 - `docs/literature_watch/2026-10-23-formal-theorem-discovery-gate.md`
-- `software/uqpu-prototype/uqpu/formal_proof_gate.py`
-- `software/uqpu-prototype/tests/test_formal_proof_gate.py`
-- `benchmarks/results/formal-theorem-proof-metadata-gate-2026-10-23.json`
+- `software/uqpu-prototype/uqpu/formal_proof_gate.py` and `software/uqpu-prototype/tests/test_formal_proof_gate.py`
+- `benchmarks/results/formal-theorem-proof-metadata-gate-2026-10-23.json` (initial 9-test run) and `benchmarks/results/formal-theorem-proof-metadata-gate-hardening-2026-10-23.json` (14-case mirrored harness)
+- `docs/FORMAL_PROOF_GATE_TYPE_GUARD_DELTA_2026-10-23.md`
+- `docs/RESEARCH_GAP_RG041_FORMAL_PROOF_GATE.md`
 - `integration/INT-20261023-005-formal-theorem-verification.md`
 
 Canonical append-only synchronization was deliberately deferred after a cross-PR collision audit:
