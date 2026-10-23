@@ -809,3 +809,20 @@ The permanent charter, VERSION_INVARIANTS.md, and research_lanes/LANE_DIRECTORY_
 **Falsifier / stop rule:** if the formalization fails, independent solver residuals fail to converge, or stability/realizability requirements fail, stop the engineering promotion while preserving the mathematical result and its exact assumptions.
 
 **Dependencies:** INV-032, FUS-001, INV-034/035, Lane D/G co-design and FND-006. No claim of new physical law, fusion gain, commercial electricity or cost reduction is permitted from the preprint alone.
+
+## RG-039 — Adaptive-circuit capability vs. accepted useful workload
+**Status:** NOT_YET_DEMONSTRATED / DATA_BLOCKED  
+**Date:** 2026-10-23  
+**Objective:** Compile and execute an adaptive workload with identical useful-output semantics across the provider-neutral runtime and one authorized target.
+
+**Evidence:** Pokharel et al., *Order from chaos with adaptive circuits on quantum hardware*, Nature Physics, published 2026-10-09 (https://www.nature.com/articles/s41567-026-03470-6; preprint https://arxiv.org/abs/2509.18259), reports mid-circuit measurements, resets and conditional feedback on up to 100 qubits in a designed chaos-control protocol. The new UQPU capability contract and 15 focused tests validate metadata semantics only.
+
+**Blockers:** no current target-specific official source record with digest/API version and all required dynamic-circuit capabilities; no UQPU simulator/dry-run certificate for the frozen feedback workload; no accepted-output comparison with a competitive classical control baseline; no authorized hardware execution.
+
+**Best current alternative:** explicit provider-neutral capability metadata and simulator/dry-run testing. Unknown target capability must fail closed.
+
+**Unlock criteria:** exact workload and useful-output contract hash; current target/API source URL, UTC checked timestamp and source digest; affirmative target-specific support for mid-circuit measurement, reset and classical conditionals; deterministic positive/negative branch tests; competitive baseline; and, only if separately authorized, same-target measurement of quality, latency, throughput, shots, billing, host compute, data movement, retries, energy where measurable and cost per accepted useful task.
+
+**Falsifier / stop rule:** if target semantics cannot express the same branch behavior, if output quality misses the frozen threshold, or if full-stack cost/latency fails the benchmark, reject the route for that workload. A passing metadata gate is not permission to submit a job and is not an advantage claim.
+
+**Dependencies:** INV-001/004/007/019/022, INV-025–027, INV-029/034/035, Lane A/B integration, Lane F evidence governance. No material, fuel, fusion, finance, new-law or Data-Center-to-One-Phone claim follows from this experiment.
