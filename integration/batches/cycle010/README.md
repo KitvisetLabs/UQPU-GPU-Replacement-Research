@@ -40,6 +40,7 @@ Supplementary Lane I remains preserved; permanent A–H coverage is explicit and
 
 - **Peer-reviewed:** Tsoukalas et al., Science (2026-10-08), DOI 10.1126/science.aej2213, report formal proof-search results on attempted Erdős and OEIS conjecture sets. UQPU follow-up is a narrow formalization of score grouping; formal proof is not physical-model validation.
 - **Official preprint:** Issan et al., arXiv:2610.07304 (submitted 2026-10-05), derive two non-stellarator-symmetric ideal-MHD equilibrium families. UQPU follow-up is symbolic/numeric residual verification and symmetry-limit tests, not reactor or cost evidence.
+- **Official resource-bound preprint:** Bharti et al., arXiv:2608.26272 (submitted 2026-08-26), derive a logarithmic spacetime-overhead contribution under stated fault-tolerance assumptions. UQPU must check applicability before using it in QEC resource budgets; it is not a universal no-go or measured cost result.
 - LLM-guided quantum-circuit discovery (arXiv:2610.22367, submitted 2026-10-15) reports circuit-resource reductions on seven of eight task benchmarks with an independent evaluator. UQPU has not reproduced the result; gate count alone is not end-to-end advantage.
 - Existing LLM-PySR and GOLLuM watches remain distinct: symbolic equation search and uncertainty-calibrated experiment selection are not the same method.
 
@@ -62,5 +63,6 @@ BIO-001, FUS-001 and FIN-001 receive no measurement-based promotion. No paid exe
 2. Independently reproduce FND-QFI-001 including q = 0; keep QOS-AUDIT-010B25 separate.
 3. Formalize EQN-PROOF-001 under exact hypotheses and compare the proof with rational fixtures.
 4. Run QALG-CTRL-001 on frozen held-out task families with exact/justified circuit equivalence and matched total search budgets.
-5. Run FUS-MHD-BENCH-001 residual/limiting-case checks before any solver or FUS-001 implication.
-6. Keep append-only canonical logs untouched until a safe append/merge path is available; record synchronization debt explicitly.
+5. Reconstruct the assumptions of QEC-SPACE-BOUND-001 before using it in a target-specific QEC resource model.
+6. Run FUS-MHD-BENCH-001 residual/limiting-case checks before any solver or FUS-001 implication.
+7. Keep append-only canonical logs untouched until a safe append/merge path is available; record synchronization debt explicitly.

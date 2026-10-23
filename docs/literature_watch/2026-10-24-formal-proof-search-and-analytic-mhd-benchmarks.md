@@ -2,7 +2,7 @@
 
 **Primary owner:** Lane H — foundational-method and strategic research publication  
 **Integration owner:** Lane F — evidence, reproducibility and cross-lane gates  
-**Evidence class:** PEER-REVIEWED FORMAL-METHOD RESULT + THIRD-PARTY ANALYTIC MODEL + THIRD-PARTY QUANTUM-CIRCUIT SEARCH PREPRINT  
+**Evidence class:** PEER-REVIEWED FORMAL-METHOD RESULT + THIRD-PARTY ANALYTIC MODEL + THIRD-PARTY QUANTUM-CIRCUIT SEARCH PREPRINT + THIRD-PARTY RESOURCE LOWER-BOUND PREPRINT  
 **UQPU evidence promotion:** none
 
 ## Executive delta
@@ -69,14 +69,31 @@ This is directly relevant to Lane A because it treats the model as a candidate g
 - Report accepted output quality, exactness/tolerance, logical and physical qubits, ancillas, T/Toffoli count, depth, two-qubit gates, routing overhead, transpilation, shots if any, reconstruction, latency, host compute, memory, energy where measurable, failed candidates and total cost per accepted useful task.
 - Retain invalid and failed circuits. Held-out improvement is a method result only; real-QPU advantage requires the separate provider/target, authorization, quality and cost gates.
 
+## Source D — lower bound on fault-tolerant quantum spacetime overhead
+
+Kishor Bharti, Tobias Haug and Andrew Tanggara, “Fault-tolerant quantum computation cannot be achieved with constant spacetime overhead,” arXiv:2608.26272, submitted 2026-08-26: https://arxiv.org/abs/2608.26272.
+
+Under the paper's stated noise model and assumptions, the authors derive an unavoidable logarithmic contribution to cumulative spacetime overhead even for quantum-memory preservation, and identify conditions for extending the scaling to fault-tolerant circuits. The work also describes a positive-rate CSS construction that attains the memory bound.
+
+### Genuine novelty and limitations
+
+This is a theoretical resource lower bound, not a hardware measurement. Its scope is determined by the noise model, operational definitions and assumptions in the proof. It does not say that quantum advantage is impossible, nor does it determine the practical overhead of every code, architecture, workload or provider.
+
+### Proposed falsifiable follow-up: QEC-SPACE-BOUND-001
+
+- Independently reconstruct the theorem statement, noise assumptions, resource metric and proof dependencies before mapping it to UQPU.
+- Check whether the exact assumptions apply to the error model and workload under study; if not, record the mismatch rather than extrapolating the bound.
+- For any applicable workload, translate the bound into a logical-memory or circuit spacetime budget, then account for physical qubits, time, decoding, control, routing, retries and host/I/O costs.
+- Compare with a matched classical accepted-output baseline and retain the full uncertainty/resource ledger. A proof-level bound may rule out a constant-overhead assumption in its scope, but it does not itself yield a measured cost ratio or a universal quantum-computing no-go.
+
 ## Cross-lane relevance
 
 - **A:** proof-carrying algebraic checks and independently evaluated LLM-proposed circuits are candidate-generation methods; no accepted workload win follows.
-- **B:** offline gates only; no provider integration or QPU job.
+- **B:** offline gates only; no provider integration or QPU job. QEC-SPACE-BOUND-001 is applicable only if its noise/resource assumptions match the target.
 - **C:** no conversion from mathematical state-space dimension to readable classical memory.
 - **D/G:** exact MHD fixtures may eventually validate modeling tools; no chip or factory requirement is inferred.
 - **E:** FUS-MHD-BENCH-001 is solver verification, not fusion-energy evidence. BIO-001 and Pangola-material gates are unchanged.
-- **F:** retain assumptions, source versions, independent implementations, failed cases and full resource accounting.
+- **F:** retain assumptions, source versions, independent implementations, failed cases and full resource accounting; do not assume constant QEC spacetime overhead where the lower-bound assumptions apply.
 - **H:** strengthen proof and exact-reference-model research while preserving the multilingual strategic plan.
 - **INV-029–035:** methodological contribution only; none of their end-to-end evidence gates passes because of these publications.
 

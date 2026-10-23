@@ -36,6 +36,16 @@
 
 **Falsifiers and acceptance.** A candidate that fails equivalence, held-out tasks, target constraints or matched-budget acceptance is rejected. Accept only if the controller improves the preregistered held-out metric over the strongest baseline without worsening correctness or constraint violations. Passing promotes the search method only; hardware advantage requires separately authorized, target-matched execution and complete economics.
 
+## QEC-SPACE-BOUND-001 — scope-check a fault-tolerant spacetime lower bound
+
+**Question.** Does the published lower bound on cumulative spacetime overhead apply to the exact noise model, logical-memory/circuit task and resource metric used in a proposed UQPU estimate?
+
+**Incumbent result.** The official preprint arXiv:2608.26272 derives a logarithmic contribution under its stated assumptions, even for quantum-memory preservation, and gives conditions for extending the scaling to circuits.
+
+**Protocol.** Independently reconstruct the theorem's definitions and proof dependencies; enumerate its noise and protocol assumptions; map a candidate UQPU workload to the same resource metric only when assumptions match; then count physical qubits, circuit/memory duration, decoding, control, routing, retries, host/I/O and energy where measurable.
+
+**Falsifiers and acceptance.** A proof gap, incorrect theorem transcription, mismatched assumptions, or an invalid mapping from the theorem's resource measure to the workload blocks promotion. A valid bound can reject a constant-overhead assumption within its scope; it does not establish universal quantum-computing impossibility or a measured economic ratio.
+
 ## Cross-cutting constraints
 
 - No paid QPU or provider job is required or authorized.
