@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-23T16:05:21Z",
+  "prepared_utc": "2026-10-23T16:42:06Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 23 remains the Priority-1 provider-execution frontier; FND-QFI-001 exact-rational theorem-scope fixture and EXP-DESIGN-001 literature-motivated offline experiment-selection gate are recorded, with exact-commit CI and independent reproduction still open.",
+  "current_frontier": "Cycle 008 Delta 23 remains the separate Priority-1 provider-execution frontier. PR #51 adds FND-QFI-001 exact-rational theorem-scope fixtures and EXP-DESIGN-001; Cycle 009 adds an LLM-PySR search-control watch and EQN-CTRL-001 frozen offline benchmark gap. Exact-final-commit CI and independent reproduction remain open.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -39,7 +39,10 @@
     "software/uqpu-prototype/uqpu/fnd_qfi_001.py",
     "software/uqpu-prototype/tests/test_fnd_qfi_001.py",
     "docs/literature_watch/2026-10-23-gollum-uncertainty-calibrated-experiment-design.md",
-    "integration/EXP-DESIGN-001_INTEGRATION_CONTRACT_2026-10-23.md"
+    "integration/EXP-DESIGN-001_INTEGRATION_CONTRACT_2026-10-23.md",
+    "docs/literature_watch/2026-10-23-llm-pysr-search-control.md",
+    "integration/batches/cycle009/EQN-CTRL-001_GAP.md",
+    "integration/batches/cycle009/README.md"
   ],
   "lanes": {
     "A": {
@@ -74,9 +77,9 @@
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "EXACT_RATIONAL_QFI_FIXTURE_ADDED_CI_PENDING",
+      "status": "FND_QFI_EXACT_RATIONAL_FIXTURE_AND_CYCLE009_ARTIFACTS_ADDED_CI_PENDING",
       "evidence_class": "MODEL_ONLY",
-      "next_gate": "pass exact-commit CI and independently reproduce the controlled-unitary condition including q=0"
+      "next_gate": "recheck exact-final-commit CI; independently reproduce the controlled-unitary condition including q=0; reconcile dated EQN-CTRL-001 gap into RESEARCH_GAPS.md only through a safe append"
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -86,9 +89,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "LITERATURE_WATCH_AND_EXP_DESIGN_FOLLOWUP_RECORDED",
-      "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "run frozen EXP-DESIGN-001 offline benchmark; keep GOLLuM results as third-party method evidence until independently reproduced"
+      "status": "LLM_PYSR_WATCH_AND_EQN_CTRL_001_GAP_RECORDED_CI_PENDING",
+      "evidence_class": "THIRD_PARTY_PREPRINT_PLUS_PROJECT_PROTOCOL_MODEL_ONLY",
+      "next_gate": "run EQN-CTRL-001 on frozen known-law families with matched budgets after exact-final-commit CI; keep EXP-DESIGN-001/GOLLuM separate"
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
@@ -108,7 +111,8 @@
     "QOS/QSVT",
     "FND-QFI-001",
     "EQN-OPT-001",
-    "EXP-DESIGN-001"
+    "EXP-DESIGN-001",
+    "EQN-CTRL-001"
   ],
   "open_gates": [
     "RG-033",
@@ -116,7 +120,8 @@
     "I-012",
     "FND-QFI-001",
     "EQN-OPT-001",
-    "EXP-DESIGN-001"
+    "EXP-DESIGN-001",
+    "EQN-CTRL-001"
   ],
   "master_reference_languages": [
     "Thai",
@@ -148,16 +153,16 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "FND-QFI-001 commits are on research/fnd-qfi-001-20261023 until reviewed/merged; source-to-main mapping must be reconciled after merge. Historical and inaccessible branches/forks have not been exhaustively reconciled.",
-  "next_independent_action": "Recheck exact-commit CI on the final PR #51 head; independently reproduce FND-QFI-001 including q=0, and run EXP-DESIGN-001 only on a frozen offline fixture with matched budgets. Keep QOS-AUDIT-010B25 as the separate read-only Priority-1 gate; no QPU jobs without explicit authorization.",
+  "known_sync_debt": "FND-QFI-001 and Cycle 009 commits are on research/fnd-qfi-001-20261023 until PR #51 is reviewed/merged; source-to-main mapping remains pending. EQN-CTRL-001 is in a dated gap artifact but has not been appended to the large canonical RESEARCH_GAPS.md. The cold-start audit failed on commit 662a8a50 due to a missing Research-Sync: pending-main trailer; that commit is not rewritten, and later commits carry the trailer. Historical/inaccessible branch/fork coverage is not claimed.",
+  "next_independent_action": "Check exact-final-commit CI on PR #51 after the latest manifest update; verify the trailer audit on the latest commit, independently reproduce FND-QFI-001 including q=0, and preregister/run EQN-CTRL-001 only on a frozen offline known-law benchmark with matched budgets. Keep QOS-AUDIT-010B25 as the separate Priority-1 gate. No QPU jobs without explicit authorization.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
   "current_commit_ci_status": {
     "baseline_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
-    "combined_status_endpoint": "no statuses reported for baseline main commit",
+    "combined_status_endpoint": "no individual statuses reported for baseline main commit",
     "active_pull_request": 51,
-    "last_observed_workflow_run": 39985510956,
-    "last_observed_workflow_run_number": 893,
-    "last_observed_workflow_state": "queued before the latest literature-watch commits",
-    "note": "The current final branch head must be rechecked; run 786 is the last manifest-recorded successful CI and does not certify the current branch head."
+    "last_observed_workflow_run": 39988827966,
+    "last_observed_workflow_run_number": 194,
+    "last_observed_workflow_state": "queued on commit 0b66c89e before this manifest update; final-head runs must be rechecked",
+    "note": "Cold-start audit run 192 failed on commit 662a8a50 solely because its commit message lacked Research-Sync: pending-main. Later cycle commits use the required trailer. Prototype workflow runs were queued at last observation; no current-head test pass is claimed."
   }
 }
