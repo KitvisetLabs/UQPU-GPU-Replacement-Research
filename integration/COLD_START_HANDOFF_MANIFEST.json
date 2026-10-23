@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-23T22:16:00Z",
+  "prepared_utc": "2026-10-23T23:05:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "Cycle 010 / 2026-10-24: strict equation-metric and offline experiment-plan schema guards are on the research branch; 8 scratch tests passed and exact-head unit/invariant jobs passed on Python 3.10/3.11/3.12, while long QSVT/reference jobs remain in progress. LLM-PySR search-control and the 2026-10-23 Gaussian quantum-repeater no-go theorem have dated literature watches. EXP-DESIGN-002/EQN-002B and QNET-GAUSS-001 remain NOT EXECUTED. No provider/instrument job is authorized. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e.",
+  "current_frontier": "Cycle 010 / 2026-10-24: equation-metric and offline experiment-plan guards remain on the research branch; the 68a41 exact-head CI run completed successfully across Python 3.10-3.12 and the QSVT/reference jobs. New PISR particle-interface literature watch, integration record and DATA_BLOCKED source-reproduction gap were added after that run; exact-head CI for the new tree is pending. EXP-DESIGN-002, EQN-002B, QNET-GAUSS-001 and PISR-AUDIT-001 remain NOT EXECUTED. No provider/instrument job is authorized. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -53,14 +53,18 @@
     "integration/INT-20261024-005-llm-pysr-search-control.md",
     "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_GAUSSIAN_REPEATER_NO_GO.md",
     "docs/literature_watch/2026-10-24-gaussian-repeater-no-go.md",
-    "integration/INT-20261024-006-gaussian-repeater-no-go.md"
+    "integration/INT-20261024-006-gaussian-repeater-no-go.md",
+    "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_PISR_PARTICLE_INTERFACE.md",
+    "docs/literature_watch/2026-10-24-pisr-particle-interface.md",
+    "integration/INT-20261024-007-pisr-particle-interface.md",
+    "research_lanes/H_strategy_finance_future_industries/gaps/PISR-AUDIT-001_DATA_AND_GENERALIZATION.md"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
       "status": "OFFLINE_EXPERIMENT_PLAN_SCHEMA_GUARD_IMPLEMENTED; 8_SCRATCH_TESTS_PASS; EXP-DESIGN-002_NOT_EXECUTED",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Pass exact-head CI, then freeze and execute the offline human/information-gain/AI-planner comparison under identical resource caps; no provider or instrument access."
+      "next_gate": "Pass exact-head CI after the new literature/gap additions, then implement and run the frozen synthetic PISR-AUDIT-001 benchmark and EXP-DESIGN-002 under matched offline budgets."
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -100,9 +104,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "LLM_PYSR_SEARCH_CONTROLLER_LITERATURE_WATCH_ADDED; NO_PROJECT_EVIDENCE_PROMOTION; GAUSSIAN_REPEATER_NO_GO_WATCH_ADDED",
+      "status": "LITERATURE_WATCHES_UPDATED; PISR_AUDIT_001_DATA_BLOCKED; NO_PROJECT_EVIDENCE_PROMOTION",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "Review full-text theorem assumptions and build QNET-GAUSS-001 as a model-scoped consistency test; no hardware inference."
+      "next_gate": "Request source data/artifacts for independent PISR reproduction; until then execute only the clearly labeled synthetic audit with held-out parameter groups and false-discovery controls."
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
@@ -123,12 +127,14 @@
     "EXP-DESIGN-002",
     "FORMAL-PROOF-001",
     "CONSTITUTIVE-LAW-001",
-    "QEC-MEAS-001"
+    "QEC-MEAS-001",
+    "PISR-AUDIT-001"
   ],
   "open_gates": [
     "RG-033",
     "RG-034",
-    "I-012"
+    "I-012",
+    "PISR-AUDIT-001"
   ],
   "master_reference_languages": [
     "Thai",
@@ -139,13 +145,13 @@
     "German"
   ],
   "latest_verified_ci": {
-    "run_number": 231,
-    "run_id": 40024631749,
+    "run_number": 974,
+    "run_id": 40032373569,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40024631749",
-    "head_sha": "c2ad67819321ce8f8613ce453745d3a70d4ceaa6",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40032373569",
+    "head_sha": "68a41c762d51fa790179241b1a489bdca1dab2d3",
     "branch": "research/2026-10-24-equation-discovery-audit-v2",
-    "scope": "cold-start handoff audit passed on prior head; full prototype/invariant workflow was still in progress"
+    "scope": "All reported prototype/invariant jobs, including Python 3.10/3.11/3.12, QSVT and reference-benchmark jobs, succeeded on the pre-PISR head. New PISR literature/gap docs and manifest refresh are later commits; exact-head CI for the new tree is pending."
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -161,6 +167,6 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Active PR #53 overlaps PR #51 on software/uqpu-prototype/uqpu/equation_discovery.py, software/uqpu-prototype/tests/test_equation_discovery.py, and integration/COLD_START_HANDOFF_MANIFEST.json; PRs #48-#51 share canonical base main c7b5958af58fad04a101ef5c6abf6a29293c867e and remain unmerged. Require conflict-aware reconciliation and rerun exact-head CI before merge. WORKLOG.md, DECISIONS.md and RESEARCH_GAPS.md append-only suffixes are deferred rather than overwritten. Historical and inaccessible branches/forks are not exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Run exact-head CI after this manifest refresh; reconcile PR #53 with PR #51 without overwriting the equation_discovery.py/tests/handoff manifest changes, and reconcile PR #48-#51 before any merge. Then implement EXP-DESIGN-002 offline and reproduce GraphED/PISR on published data. Keep QOS-AUDIT-010B25 read-only pending its authorized authenticated environment; no paid QPU job is authorized.",
+  "next_independent_action": "Run exact-head CI for the PISR watch/gap additions; implement a frozen synthetic PISR-AUDIT-001 fixture with whole-trajectory and held-out parameter-group splits, operator ablations and shuffled/no-signal controls; execute EXP-DESIGN-002 only under identical offline resource caps. Request source data before claiming reproduction. Reconcile PR #53 with PR #51 and PR #48 without overwriting shared equation_discovery.py/tests/manifest or append-only history. No paid QPU job is authorized.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }
