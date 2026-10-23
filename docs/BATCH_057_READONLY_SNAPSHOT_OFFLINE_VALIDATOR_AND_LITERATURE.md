@@ -15,7 +15,7 @@ The latest main state still has no authorized authenticated metadata snapshot fo
 
 The validator checks the exact provider/target/schema, required metadata and explicit null reasons, canonical UTF-8 JSON/SHA-256, a 900-second freshness limit, strict RFC3339 UTC timestamps (T separator, seconds, optional fractional seconds, terminal Z), UTC timestamp order (including status-observation time), qubit-index and directed-coupling bounds, duplicate/malformed edges, secret-bearing field names/values including account identifiers, redaction-report status, and non-finite numeric values. It performs no network access and does not import provider SDKs.
 
-**Local validation:** 12 focused unit tests passed under Python 3.13. The supported Python 3.10–3.12 GitHub Actions matrix is the authoritative compatibility gate and was pending when this artifact was prepared.
+**Local validation before timestamp hardening:** 12 focused unit tests passed under Python 3.13. A 13th regression test and strict parser were added afterward; a small parser smoke check passed, but the updated full suite has not been rerun locally. The supported Python 3.10–3.12 GitHub Actions matrix is the authoritative pending compatibility gate.
 
 **Evidence boundary:** MODEL_ONLY_OFFLINE_VALIDATOR_TESTS. No credentials, live service, session, provider job, shot, billable usage, calibration capture, energy, cost, or useful-output quality measurement was used. The snapshot gate remains open. This implementation does not authorize paid or unpaid QPU submission.
 
