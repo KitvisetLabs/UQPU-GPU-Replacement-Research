@@ -30,3 +30,7 @@ Rejecting non-finite held-out errors and non-integer validation counts prevents 
 ## Current result
 
 Implementation and regression tests are staged on the research branch. CI and merge state must be updated from GitHub after the PR runs; this record must not be read as merged or validated until then.
+
+## Append-only synchronization debt
+
+The inspected `WORKLOG.md` currently ends at the 2026-10-19 Cycle 008 Delta 21 entry, while later Delta 22/23 and the 2026-10-23 literature watch exist as separate artifacts. Because `WORKLOG.md` is a large append-only canonical file and this run did not obtain a safe full-history editing workflow, it was not replaced or partially rewritten. **Sync debt:** append a dated summary to `WORKLOG.md` only after the reviewed research change is merged; until then this record itself is branch-only and `main` remains the canonical state at `c7b5958af58fad04a101ef5c6abf6a29293c867e`.
