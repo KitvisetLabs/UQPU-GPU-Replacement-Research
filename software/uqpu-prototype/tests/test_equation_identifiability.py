@@ -12,12 +12,13 @@ class EquationIdentifiabilityTests(unittest.TestCase):
             design_id=design_id,
             dimensionless_sensitivity_matrix=tuple(tuple(row) for row in matrix),
             normalization_provenance=tuple(
-                provenance
-                or (
+                (
                     "unitless synthetic observation scale = 1",
                     "theta_a parameter scale = 1",
                     "theta_b parameter scale = 1",
                 )
+                if provenance is None
+                else provenance
             ),
         )
 
