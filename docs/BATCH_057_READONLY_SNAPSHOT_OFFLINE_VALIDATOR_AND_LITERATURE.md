@@ -71,6 +71,6 @@ The eight permanent root directives 00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.
 
 ## Canonical sync and next gate
 
-This batch appends RG-036 and RG-037 to RESEARCH_GAPS.md and a dated summary to WORKLOG.md without replacing or truncating their prior history. Main was not modified directly; changes are proposed from the branch based on the newest observed main commit.
+This batch appends RG-036 through RG-038 to RESEARCH_GAPS.md and dated summaries to WORKLOG.md without replacing or truncating prior history. Main was not modified directly; changes are proposed from the branch based on the newest observed main commit.
 
 **Next highest-value gate:** in an owner-authorized environment, capture a redacted authenticated read-only ibm_kingston snapshot, run the validator and all preregistered counterexamples, and retain a digest-bound pass/fail certificate. A passing metadata snapshot may unlock target-specific route construction only; paid QPU execution still requires separate explicit consent, credentials, bounded jobs/shots, and a cost ceiling.
