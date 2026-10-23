@@ -83,3 +83,16 @@ These papers support the generator → explicit constraints → evaluator → he
 ## Non-claims
 
 No UQPU real-QPU run, quantum advantage, accepted useful-task cost reduction, Data-Center-to-Phone result, RAM/VRAM/storage replacement, qualified biomass/material substitution, commercial bio-oil, commercial fusion electricity, lower financing rate/WACC, confirmed topological superconductivity, or new fundamental law is established by these external sources.
+
+
+## Additional foundational result integrated 2026-10-23 — counterexamples to Grad's conjecture
+
+**Source:** Javier Gómez-Serrano, Lukas Liehr and Mitchell A. Taylor, *Counterexamples to Grad's conjecture*, official arXiv preprint posted 2026-09-21: https://arxiv.org/abs/2609.24739. This was newly surfaced by the current targeted literature pass; it is not described as a paper published this week.
+
+**Evidence class:** external mathematical result with a Lean 4 certification supplied by the authors; not independently reproduced by UQPU.
+
+**Genuine result:** the authors construct, for sufficiently large integer N, smooth one-parameter families of solutions to the unforced ideal magnetohydrostatic equations on embedded solid tori, with nested toroidal pressure surfaces and an exact cyclic symmetry group C_N, but without the plane-reflection, axial or helical symmetries in a precise formulation of Grad's conjecture. The governing equations remain the established MHS equations: B × curl(B) + grad(P) = 0, div(B) = 0, and B·n = 0 on the boundary. The result is a counterexample to a mathematical conjecture under its stated assumptions, not a new physical law.
+
+**Limitations and relevance:** it matters to INV-032/FUS-001 and Lane D/G because an equilibrium workflow must not silently impose a symmetry theorem that the counterexample invalidates. It does not establish stability under perturbations, finite resistivity, realizability in an operating fusion plasma, lower coil complexity, net-electric output, commercial fusion, or lower cost. A formal proof and an exact ideal equilibrium are not a plant-level demonstration.
+
+**Falsifiable follow-up:** independently inspect/re-run the supplied Lean 4 formalization; reconstruct representative solutions with an independent 3-D equilibrium solver and publish residual/convergence certificates; then test perturbation and resistive-MHD robustness before deriving any coil, device, manufacturing, or economic consequence. If proof checking fails, solver residuals do not converge, or the solutions fail required stability/realizability checks, do not promote this result to an engineering route.
