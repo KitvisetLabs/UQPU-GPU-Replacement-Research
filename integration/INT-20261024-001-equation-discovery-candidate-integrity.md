@@ -1,9 +1,9 @@
 # INT-20261024-001 — equation-discovery candidate integrity
 
-**Status:** TESTING on branch; merge/CI pending  
+**Status:** TESTING on PR branch; exact-current-head CI pending  
 **Owner:** Lane A for code contract; Lane H for literature watch  
 **Source main SHA:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`  
-**Source branch:** `research/2026-10-24-equation-discovery-audit`  
+**Source branch:** `research/2026-10-24-equation-discovery-audit-v2`  
 **Evidence class:** SOFTWARE_CONTRACT / LITERATURE_ONLY; no physical/economic promotion
 
 ## Hypothesis and mechanism
