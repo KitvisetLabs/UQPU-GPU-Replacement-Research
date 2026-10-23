@@ -1583,3 +1583,49 @@ software-first finance and six-language context; I remains `MODEL_ONLY`.
 FND/EQN/FIN and INV-025–035 remain unpromoted. No live service, submission,
 job, shot, payment, advantage, Data-Center-to-Phone result or new physical law
 is claimed.
+
+
+## 2026-10-23 — Cycle 008 Delta 24: offline snapshot validator and fresh literature watch
+
+Started from canonical main commit c7b5958af58fad04a101ef5c6abf6a29293c867e. Added the offline QOS-AUDIT-010B25 target-snapshot validator and 12 adversarial unit tests. Local focused tests passed under Python 3.13; hosted Python 3.10–3.12 CI was pending at the time of this entry. The validator checks target/schema identity, canonical digest, 900-second freshness, timestamp order, topology bounds, explained nulls, secret redaction and non-finite numeric values without contacting IBM Quantum.
+
+No authenticated snapshot, credentials, live service/session, provider job, shot, billable usage, energy, cost, or accepted-output quality was obtained. QOS-AUDIT-010B25 remains open. Lane A has no new circuit result because target-specific route/native-conformance still depends on the authorized snapshot; this is not filled with saved fake-backend data.
+
+Fresh literature watch added for the 2026-10-22 Nature Physics surface-code teleportation experiment, the 2026-10-21 interpretable nuclear-mass AI study, and the 2026-10-22 q-deformed Thomas–Fermi numerical method. All are external evidence; no new physical law, UQPU advantage, material/fuel/fusion result, or financing/WACC result is claimed.
+
+A–H were explicitly reviewed. E/F/G receive no new qualified material, fuel, net-electricity, factory or cost evidence; H preserves the Kanusanan Pongpanna Model and all six language master-plan references. Lane I remains an auxiliary MODEL_ONLY stream while RG-037 records the permanent A–H versus nine-lane manifest discrepancy. FND-001–006, EQN-001–006, BIO-001, FUS-001, FIN-001 and INV-025–035 remain evidence-gated. Research-Sync: main
+
+
+### Same-day literature addendum — 2026-10-23
+
+A second surveillance pass found two additional material-physics sources published on 2026-10-22/23 and incorporated them into the Batch 057 literature watch: a DFT/orbital-Hamiltonian proposal for vacancy-induced topological phases in 2D semiconductors (Communications Materials, 2026-10-23), and a Physical Review X experiment reporting edge-sensitive conductance plateaus in FeTe0.55Se0.45 (2026-10-22). The first is computational and requires experimental realization; the second is an unresolved topological interpretation and needs direction/chirality-sensitive transport. Neither is promoted to a UQPU device, material, or new-law claim.
+
+
+### Same-cycle validator and foundational-physics addendum — 2026-10-23
+
+Independent review of the pending Batch 057 validator found that Python's fromisoformat parser accepts some non-RFC3339 separators even when the string ends in Z. The validator now requires an explicit RFC3339 UTC shape (T separator, seconds, optional fractional seconds, terminal Z), and the adversarial suite includes a regression case for capture and route-build timestamps. The focused suite is now expected to contain 13 tests; hosted Python 3.10–3.12 CI remains the authoritative gate.
+
+Targeted literature surveillance also integrated Gómez-Serrano, Liehr and Taylor's official arXiv preprint *Counterexamples to Grad's conjecture* (2609.24739, posted 2026-09-21). It is a mathematical counterexample to a precise ideal-MHD symmetry conjecture with supplied Lean 4 certification, not a new physical law or an operating-fusion result. RG-038 records independent proof/solver/stability/engineering gates. The source does not change FUS-001's MODEL_ONLY economics or authorize plant-capital claims. Research-Sync: pending-main
+
+## 2026-10-23 — Cycle 008 Delta 25: adaptive-circuit capability contract
+
+Starting state: canonical main commit `c7b5958af58fad04a101ef5c6abf6a29293c867e`; active PR #48 head `719332433d7457fc99c009edc777db2817f5fdb2`. The work extends the existing PR branch; main was not changed directly.
+
+Added `AdaptiveCircuitCapability` with fail-closed target/API provenance, strict UTC timestamp syntax, SHA-256 source digest, explicit mid-circuit measurement/reset/conditional fields, contradiction checks for target limits and finite non-negative latency validation. Added 15 adversarial tests; all 15 passed in an isolated Python 3.13 harness using the same module and test sources. Full repository CI remains pending for the updated PR head.
+
+Fresh primary-source surveillance reviewed Pokharel et al., *Order from chaos with adaptive circuits on quantum hardware*, Nature Physics, published 2026-10-09 (arXiv:2509.18259). The experiment reports up to 100 qubits, nearly 5,000 entangling gates and nearly 5,000 mid-circuit operations. The research delta is runtime/provider semantics, not fault tolerance or UQPU advantage. RG-039 records the missing target-specific evidence and useful-task gate.
+
+A–H review: A gained the interface and tests; B gained target-specific capability/provenance requirements; C retains classical measurement-record/data-movement accounting and no memory equivalence; D/G retain target-timing/calibration dependencies; E has no new material/fuel/fusion/cooling evidence; F separates capability metadata from accepted-task quality/economics; H published the literature limits and preserved strategy context. FND-001–006 and EQN-001–006 remain evidence-gated; EQN-001/004 receive a concrete runtime falsification path. INV-029–035 and INV-025–027 remain unpromoted. No credentials, service/session, QPU job, shot, billable execution, WACC reduction or new physical law is claimed.
+
+### Governance alignment addendum — INV-034 / INV-035
+
+A cross-file audit verified that INV-025–027 and INV-029–035 remain in `VERSION_INVARIANTS.md`. It found INV-035 absent from `GOALS.md` and both INV-034/035 absent from `PROJECT_CHARTER.md` and the operating-system/frontier directive text. Added explicit permanent statements and links to `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`, `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` and `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`. The update is governance synchronization, not a new scientific result. Hosted Python 3.10–3.12 CI remains queued for the updated PR head.
+
+
+## 2026-10-23 — Cycle 008 Delta 25: scaling-exponent literature and handoff CI repair
+
+Fresh surveillance checked the official PMLR proceedings for N'Guessan and Kim, “Discovering Scaling Exponents with Physics-Informed Müntz-Szász Networks” (ICML 2026, PMLR 306). The result adds a candidate, assumption-scoped method for discovering power-law exponents with physics constraints and identifiability conditions. Published a dated literature-watch note and RG-040; proposed EQN-SCALE-001 is a benchmark subtask, not a replacement for permanent EQN-001..006. No new physical law or project advantage is claimed.
+
+Reviewed the current PR #48 head `2daa12a72ccebeee21a6087cfe5be9f1355ffaab`. The UQPU Prototype and Project Invariants workflow passed (run 839), while Autonomous Cold-Start Handoff Audit run 119 failed only because the commit message lacked the required `Research-Sync: pending-main` trailer. The audit reported 36 integration pairs and no other errors. The follow-up commit carries the required trailer; new-head CI must be checked before declaring closure. Main remains unchanged and the PR remains open.
+
+A–H remain the permanent architecture. A/B retain the adaptive-circuit and read-only snapshot gates; C retains classical-state/I/O accounting and no quantum-state-to-readable-memory equivalence; D/G remain co-designed but lack new device/factory evidence; E has no qualified material, saleable-fuel or net-fusion-electricity data; F records the literature and CI boundary; H maintains strategic and multilingual master-plan context. Lane I remains auxiliary MODEL_ONLY under RG-037. FND-001..006, EQN-001..006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. No credentials, provider job, shot, billable usage, accepted-task economics, financing-rate effect, or paid execution was used. Research-Sync: pending-main

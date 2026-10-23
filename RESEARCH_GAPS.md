@@ -766,3 +766,79 @@ latency/host/data-movement accounting and cost per accepted useful output.
 explicit user consent, credentials, bounded jobs/shots/cost and an execution
 record. The execution phase is disabled; this artifact is not QPU evidence or
 permission to submit a free or paid job.
+
+
+## RG-036 — Offline validator for authenticated read-only target snapshot
+**Status:** OFFLINE_VALIDATOR_IMPLEMENTED / AUTHENTICATED_SNAPSHOT_BLOCKED  
+**Date:** 2026-10-23  
+**Work item:** QOS-AUDIT-010B25
+
+**Objective:** make the preregistered redacted IBM Quantum ibm_kingston snapshot contract executable without contacting a provider or relying on saved fake-backend metadata.
+
+**Implementation:** software/uqpu-prototype/uqpu/er6_readonly_snapshot.py with focused adversarial tests in software/uqpu-prototype/tests/test_er6_readonly_snapshot.py. The validator checks exact provider/target/schema, required fields and explained nulls, canonical JSON and SHA-256, freshness <=900 seconds, timestamp order including status observation versus capture, topology/index bounds, malformed or duplicate directed edges, secret-bearing fields/values including account identifiers and quota fields, redaction-report status, and non-finite numbers.
+
+**Evidence:** 12 focused local unit tests passed under Python 3.13. Hosted Python 3.10–3.12 CI is the compatibility gate. Evidence class is MODEL_ONLY_OFFLINE_VALIDATOR_TESTS; this is not an authenticated snapshot, target calibration, route/native-conformance result, useful-output quality result, or economic measurement.
+
+**Blocker:** no owner-authorized read-only credentialed environment or actual target snapshot was available to this cycle. No credentials, live service, session, provider job, shot, or billable execution was used.
+
+**Next experiment:** validate a fresh, redacted snapshot captured in the authorized environment, retain canonical bytes and digest, run all preregistered counterexamples, and only after a pass build the exact target-specific route/native-conformance certificate. Paid QPU execution remains a separate consent-and-budget gate.
+
+## RG-037 — Permanent A–H architecture versus auxiliary Lane I manifest drift
+**Status:** DOCUMENTATION_DRIFT / DECISION_REQUIRED  
+**Date:** 2026-10-23
+
+The permanent charter, VERSION_INVARIANTS.md, and research_lanes/LANE_DIRECTORY_POLICY.md define eight permanent lanes A–H. The current integration/eight_lane_manifest.json and docs/NINE_LANE_SCOREBOARD_2026-10-16.md track A–I, with Lane I describing field-agnostic contactless vehicle lift/propulsion and MODEL_ONLY hypotheses.
+
+**Decision boundary:** this cycle preserves and reviews every permanent A–H lane and also retains Lane I as an auxiliary research stream. It does not delete Lane I or silently redefine the permanent architecture. A future explicit decision should clarify whether I is an auxiliary program outside A–H or a formally approved architecture change, then align schema names, policy tests and scoreboard labels. Until then, report A–H as the permanent architecture and I separately.
+
+
+## RG-038 — Independent reproduction and engineering relevance of nonsymmetric ideal-MHD equilibria
+**Status:** EXTERNAL_THEOREM_REPRODUCTION_PENDING / MODEL_ONLY  
+**Date:** 2026-10-23
+
+**Objective:** determine whether FUS-001 or downstream fusion-equilibrium models rely on symmetry restrictions that are not mathematically necessary under their stated ideal magnetohydrostatic assumptions.
+
+**Evidence:** Gómez-Serrano, Liehr and Taylor, *Counterexamples to Grad's conjecture*, official arXiv preprint 2609.24739 posted 2026-09-21. The authors report smooth one-parameter families of unforced ideal-MHD equilibria on embedded solid tori with nested pressure surfaces and cyclic symmetry C_N, without the plane-reflection, axial or helical symmetries in a precise formulation of Grad's conjecture; a Lean 4 certification is supplied. This is external mathematical evidence, not a UQPU reproduction or fusion-plant result.
+
+**Blockers:** independent formal-proof review, numerical reconstruction, residual/convergence certificates, perturbation and resistive-MHD robustness, plasma stability, experimental observables, coil complexity, manufacturability and net-electric economics remain untested.
+
+**Current alternative:** retain established MHD equations; do not impose the disproved conjecture as a universal theorem, but do not treat the counterexample as a stable or economically useful fusion configuration.
+
+**Unlock criteria:** independent Lean check; independent 3-D solver reproduces representative solutions with convergent residuals; stability/realizability tests pass; only then quantify coil, process, maintenance, net-electricity and lifecycle-cost consequences.
+
+**Falsifier / stop rule:** if the formalization fails, independent solver residuals fail to converge, or stability/realizability requirements fail, stop the engineering promotion while preserving the mathematical result and its exact assumptions.
+
+**Dependencies:** INV-032, FUS-001, INV-034/035, Lane D/G co-design and FND-006. No claim of new physical law, fusion gain, commercial electricity or cost reduction is permitted from the preprint alone.
+
+## RG-039 — Adaptive-circuit capability vs. accepted useful workload
+**Status:** NOT_YET_DEMONSTRATED / DATA_BLOCKED  
+**Date:** 2026-10-23  
+**Objective:** Compile and execute an adaptive workload with identical useful-output semantics across the provider-neutral runtime and one authorized target.
+
+**Evidence:** Pokharel et al., *Order from chaos with adaptive circuits on quantum hardware*, Nature Physics, published 2026-10-09 (https://www.nature.com/articles/s41567-026-03470-6; preprint https://arxiv.org/abs/2509.18259), reports mid-circuit measurements, resets and conditional feedback on up to 100 qubits in a designed chaos-control protocol. The new UQPU capability contract and 15 focused tests validate metadata semantics only.
+
+**Blockers:** no current target-specific official source record with digest/API version and all required dynamic-circuit capabilities; no UQPU simulator/dry-run certificate for the frozen feedback workload; no accepted-output comparison with a competitive classical control baseline; no authorized hardware execution.
+
+**Best current alternative:** explicit provider-neutral capability metadata and simulator/dry-run testing. Unknown target capability must fail closed.
+
+**Unlock criteria:** exact workload and useful-output contract hash; current target/API source URL, UTC checked timestamp and source digest; affirmative target-specific support for mid-circuit measurement, reset and classical conditionals; deterministic positive/negative branch tests; competitive baseline; and, only if separately authorized, same-target measurement of quality, latency, throughput, shots, billing, host compute, data movement, retries, energy where measurable and cost per accepted useful task.
+
+**Falsifier / stop rule:** if target semantics cannot express the same branch behavior, if output quality misses the frozen threshold, or if full-stack cost/latency fails the benchmark, reject the route for that workload. A passing metadata gate is not permission to submit a job and is not an advantage claim.
+
+**Dependencies:** INV-001/004/007/019/022, INV-025–027, INV-029/034/035, Lane A/B integration, Lane F evidence governance. No material, fuel, fusion, finance, new-law or Data-Center-to-One-Phone claim follows from this experiment.
+
+
+## RG-040 — Physics-informed scaling-exponent discovery benchmark
+**Status:** LITERATURE_ONLY / BENCHMARK_NOT_RUN  
+**Date:** 2026-10-23  
+**Work item:** EQN-SCALE-001 (subtask under EQN-001/002/006; permanent EQN-001..006 IDs unchanged)
+
+**Primary source:** N'Guessan and Kim, “Discovering Scaling Exponents with Physics-Informed Müntz-Szász Networks,” Proceedings of the 43rd International Conference on Machine Learning, PMLR 306:91419–91445 (conference 2026-07-06 to 2026-07-11). Official proceedings: https://proceedings.mlr.press/v306/n-guessan26a.html.
+
+**Third-party result:** the authors parameterize power-law exponents in a physics-informed basis and report identifiability conditions, recovery on noisy/sparse benchmark data, and results on Laplace/Poisson singularity and wedge configurations. These are paper-reported results on the paper's stated domains, not UQPU measurements or evidence for a new physical law.
+
+**UQPU relevance:** adds a candidate method family for FND-006/EQN-001/002/006 when the unknown is a scaling exponent or asymptotic structure rather than a full unconstrained equation. Possible later applications to resource scaling, biomass conversion, fusion engineering, or lifecycle-cost models require domain-specific data and must not be inferred from this PDE benchmark.
+
+**Limits:** identifiability is conditional; benchmark success does not establish causality, universal validity, a new constitutive law, commercial bio-oil/fusion economics, material substitution, lower WACC, or Data-Center-to-Phone capability. No independent UQPU reproduction has been run.
+
+**Next falsifiable gate:** preregister train/validation/test splits by geometry and parameter regime; compare a Müntz-Szász-style exponent model, generic PINN, and symbolic-regression baseline under matched data/noise/compute budgets; test dimensional consistency, boundary conditions, known limiting cases, identifiability, held-out geometries and adversarial counterexamples; report false discoveries and total runtime/energy where measurable. Reject promotion if gains disappear under held-out geometry or matched-budget baselines.

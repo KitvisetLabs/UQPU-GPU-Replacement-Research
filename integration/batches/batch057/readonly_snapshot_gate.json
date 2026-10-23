@@ -1,0 +1,160 @@
+{
+  "schema": "uqpu-integrated-research-batch-v1",
+  "batch_id": "BATCH-057",
+  "date": "2026-10-23",
+  "canonical_start_commit": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "primary_owner": "B",
+  "integration_owner": "F",
+  "work_item": "QOS-AUDIT-010B25",
+  "status": "OFFLINE_VALIDATOR_IMPLEMENTED_AUTHENTICATED_SNAPSHOT_BLOCKED",
+  "evidence_class": "MODEL_ONLY_OFFLINE_VALIDATOR_TESTS",
+  "validator": {
+    "module": "software/uqpu-prototype/uqpu/er6_readonly_snapshot.py",
+    "tests": "software/uqpu-prototype/tests/test_er6_readonly_snapshot.py",
+    "snapshot_schema": "uqpu-er6-authenticated-readonly-target-snapshot-v1",
+    "local_tests_passed": 12,
+    "local_python": "3.13",
+    "hosted_ci": "PENDING_AT_ARTIFACT_CREATION",
+    "checks": [
+      "exact provider and target",
+      "required fields and explained nulls",
+      "canonical UTF-8 JSON and SHA-256",
+      "900-second freshness",
+      "UTC timestamp ordering",
+      "directed coupling/index bounds",
+      "duplicate and malformed edge rejection",
+      "secret-bearing key/value scan",
+      "redaction report",
+      "finite numeric values",
+      "status observation timestamp not after snapshot capture",
+      "account identifier/quota secret-key rejection"
+    ],
+    "no_credentials": true,
+    "live_service_initialized": false,
+    "provider_jobs": 0,
+    "shots": 0,
+    "billable_usage": null,
+    "energy": null,
+    "cost": null
+  },
+  "lanes": {
+    "A": {
+      "status": "BLOCKED_ON_VALIDATED_FRESH_TARGET_SNAPSHOT",
+      "next": "target-specific route/native-conformance certificate"
+    },
+    "B": {
+      "status": "OFFLINE_VALIDATOR_IMPLEMENTED",
+      "next": "owner-authorized read-only snapshot"
+    },
+    "C": {
+      "status": "TOPOLOGY_AND_INDEX_CONTRACT",
+      "nonclaim": "no classical memory/storage equivalence"
+    },
+    "D": {
+      "status": "TARGET_METADATA_INTERFACE_PREPARED",
+      "nonclaim": "no device-quality or fabrication evidence"
+    },
+    "E": {
+      "status": "NO_NEW_QUALIFIED_MATERIAL_FUEL_OR_ELECTRICITY_EVIDENCE",
+      "BIO_001": "MODEL_ONLY/DATA_BLOCKED",
+      "FUS_001": "MODEL_ONLY/DATA_BLOCKED"
+    },
+    "F": {
+      "status": "EVIDENCE_AND_DIGEST_GATES_RETAINED",
+      "FIN_001": "MODEL_ONLY/DATA_BLOCKED"
+    },
+    "G": {
+      "status": "D_G_INTERFACE_RETAINED",
+      "nonclaim": "no process-window/yield/factory result"
+    },
+    "H": {
+      "status": "LITERATURE_WATCH_PUBLISHED",
+      "master_plan_preserved": true
+    },
+    "I": {
+      "status": "AUXILIARY_MODEL_ONLY_STREAM",
+      "permanent_architecture": false
+    }
+  },
+  "literature": [
+    {
+      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+      "published": "2026-10-22",
+      "evidence_class": "PUBLISHED_EXPERIMENT_EXTERNAL",
+      "url": "https://www.nature.com/articles/s41567-026-03484-0"
+    },
+    {
+      "title": "Interpretable AI reveals hidden structure in nuclear masses",
+      "published": "2026-10-21",
+      "evidence_class": "PUBLISHED_COMPUTATIONAL_METHOD_EXTERNAL",
+      "url": "https://www.nature.com/articles/s44488-026-00017-9"
+    },
+    {
+      "title": "Reducing boundary conditions for the Thomas–Fermi equation using a hybrid q-deformation and neural network method",
+      "published": "2026-10-22",
+      "evidence_class": "PUBLISHED_NUMERICAL_METHOD_EXTERNAL",
+      "url": "https://www.nature.com/articles/s41598-026-74682-2"
+    },
+    {
+      "title": "Engineering quantum phases in two dimensions via vacancy-induced electronic reconstruction",
+      "published": "2026-10-23",
+      "evidence_class": "PUBLISHED_THEORETICAL_COMPUTATIONAL_EXTERNAL",
+      "url": "https://www.nature.com/articles/s43246-026-01365-w"
+    },
+    {
+      "title": "Nontrivial boundary-mediated superconducting transport in a TRSB topological iron-based superconductor",
+      "published": "2026-10-22",
+      "evidence_class": "PUBLISHED_EXPERIMENT_EXTERNAL_INTERPRETATION_UNRESOLVED",
+      "url": "https://doi.org/10.1103/8vgt-twh5"
+    }
+  ],
+  "foundational": {
+    "FND_001_to_006": "REVIEWED_NO_EVIDENCE_PROMOTION",
+    "EQN_001_to_006": "NO_EQUATION_PROMOTED"
+  },
+  "invariants": {
+    "INV_025_to_027": "PRESERVED",
+    "INV_029_to_035": "PRESERVED_GOALS_NOT_ACHIEVEMENTS"
+  },
+  "governance_gaps": [
+    "RG-036 offline validator implemented; authenticated snapshot remains blocked",
+    "RG-037 permanent A-H architecture vs auxiliary Lane I manifest drift"
+  ],
+  "root_directives_preserved": [
+    "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md",
+    "00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md",
+    "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md",
+    "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+    "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+    "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+    "05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md",
+    "06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md"
+  ],
+  "strategic_context": {
+    "model": "docs/KANUSANAN_PONGPANNA_MODEL.md",
+    "references": "STRATEGIC_PLAN_REFERENCES.md",
+    "languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ]
+  },
+  "next_highest_value_gate": "Capture and validate a fresh redacted authenticated read-only ibm_kingston snapshot in an owner-authorized environment; then issue exact route/native-conformance certificate. Paid execution remains separately consent-and-budget gated.",
+  "literature_count": 5,
+  "validation_policy": {
+    "timestamp_format": "Strict RFC3339 UTC: T separator, seconds, optional fractional seconds, terminal Z",
+    "max_snapshot_age_seconds": 900,
+    "digest": "SHA-256 of deterministic canonical UTF-8 JSON with one trailing newline"
+  },
+  "hosted_ci_gate": "Python 3.10-3.12 required; queued exact-commit workflow run",
+  "focused_test_count": 13,
+  "last_full_local_suite": {
+    "test_count": 12,
+    "status": "passed_before_strict_timestamp_regression_test"
+  },
+  "strict_timestamp_regression_test": "added; full-suite execution pending",
+  "parser_smoke_check": "passed for two valid and three invalid timestamp forms"
+}

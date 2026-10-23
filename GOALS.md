@@ -259,3 +259,9 @@ For RAM/VRAM/storage, "replacement" does not mean that qubits are automatically 
 For compute, the comparison must define workload, accepted output quality, throughput and latency. For every subsystem, all classical support, state preparation, QEC/error mitigation, repetitions, I/O, networking, energy/cooling, provider charges/hardware amortization and reconstruction must be included.
 
 The 10^8-unit and >=10^8-cost factors are falsifiable research targets, not demonstrated present-day capabilities.
+
+## Permanent equation-discovery goal — INV-035
+
+The project continuously uses mathematics and AI to generate candidate equations, effective laws and theoretical structures, while retaining established physics as the binding baseline for present engineering claims. Every challenge must state the incumbent assumption, mathematical alternative, dimensional/symmetry/conservation/causality checks, scaling and limiting cases, falsifier, discriminating observable, held-out prediction, proof or experiment, and independent validation path. AI-generated equations, fit improvements and simulations are not physical laws or demonstrated technology by themselves.
+
+This goal is the permanent companion to the **INV-034 Foundational Physics & Mathematics Deep Frontier** and is governed by `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md` and `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`. Both principles feed every lane A–H.

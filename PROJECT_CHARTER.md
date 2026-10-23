@@ -222,3 +222,11 @@ not turn religious/philosophical or fictional objects into physical evidence.
 Any real-world claim still requires ordinary-cause controls, falsification,
 ethics/consent where applicable, and independent replication. Canonical detail:
 `00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md`.
+
+## Permanent foundational research invariants — INV-034 and INV-035
+
+**INV-034 — Foundational Physics & Mathematics Deep Frontier:** UQPU must pursue mathematics, information/computational complexity, quantum-information foundations, thermodynamics, QFT/particle physics and other relevant layers whenever a falsifiable causal path connects them to a mission bottleneck. Deep theory is not engineering evidence until it passes through proof/simulation or experiment, device/system consequence, and full economics.
+
+**INV-035 — Permanent AI-Assisted Physics Equation Discovery:** established equations and experimentally supported physical limits remain binding for present engineering claims. AI and mathematics may generate alternative equations, effective laws and theoretical structures, but none becomes a physical law by declaration. A challenge must name the incumbent assumption and alternative, check units/dimensions, symmetry, conservation and causality, state scaling/limiting cases, provide a falsifier and discriminating observable, predict held-out behavior, and specify proof/experiment plus independent validation.
+
+These are upstream cross-cutting principles feeding all eight permanent lanes A–H. Preserve the high-visibility directives `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`, `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` and `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`. Hypotheses, symbolic-regression fits, simulations and roadmaps retain their governed evidence labels.

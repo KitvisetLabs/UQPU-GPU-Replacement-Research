@@ -216,3 +216,10 @@ Lane H must continually deepen the plan with evidence, feasibility gates, econom
 
 ### A–H daily invariant
 Every research cycle explicitly inspects A, B, C, D, E, F, G and H. Lane A receives Priority #1 emphasis. B–H continue in parallel. Lane H must create or advance strategic-plan research/publication work rather than serving only as a static archive.
+
+## Upstream cross-cutting layers — INV-034 / INV-035
+
+- **INV-034 — Foundational Physics & Mathematics Deep Frontier:** search from formal mathematics and information theory through quantum information, thermodynamics, QFT/particles, devices and engineering when a causal, falsifiable mission link exists.
+- **INV-035 — AI-Assisted Physics Equation Discovery:** use generator → explicit constraints → evaluator → held-out/generalization test → counterexample search → proof/simulation → discriminating experiment → independent replication → device/system consequence → economics.
+
+Current established physics remains binding for current engineering claims. Any alternative must specify the incumbent assumption, mathematical replacement, dimensions/units, symmetry/conservation/causality checks, scaling/limits, falsifier, observable, held-out prediction and independent validation. These upstream layers feed A–H; they are not a license to treat MODEL_ONLY or speculative equations as evidence.

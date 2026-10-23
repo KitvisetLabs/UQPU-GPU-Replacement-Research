@@ -1,12 +1,39 @@
 # UQPU: Universal Quantum Processing Unit
 ## Extreme Data-Center-to-Phone Computing Research Program
 
+## Latest research-cycle checkpoint — 2026-10-23 (Cycle 008 Delta 25)
+
+Batch 058 adds a provider-neutral adaptive-circuit capability contract for target-specific mid-circuit measurement, reset and classical conditional/feed-forward semantics. Fifteen focused adversarial tests passed in an isolated Python 3.13 harness using the same module/test sources; this is not a full repository test run. The exact-head hosted Python 3.10–3.12 workflow must complete before merge.
+
+- Batch report: [Batch 058 — adaptive-circuit capability contract](docs/BATCH_058_ADAPTIVE_CIRCUIT_CAPABILITY_CONTRACT.md)
+- Integration contract: [adaptive-circuit capability interface](integration/adaptive_circuit_capability_contract.md)
+- Literature watch: [adaptive monitored circuits and mid-circuit feedback](docs/literature_watch/2026-10-23-adaptive-circuits-and-mid-circuit-feedback.md)
+- Implementation: `software/uqpu-prototype/uqpu/adaptive_circuit_contract.py`
+- Focused tests: `software/uqpu-prototype/tests/test_adaptive_circuit_contract.py`
+
+The source experiment was published in Nature Physics on 2026-10-09 and reports up to 100 qubits with nearly 5,000 entangling gates and 5,000 mid-circuit operations. It does not demonstrate general fault tolerance, a UQPU useful workload, target support across providers, accepted-task economics or any INV-029 result. The existing PR #48 remains open; no direct write to `main`, provider credential use, QPU submission, shots or billable execution occurred.
+
+A–H remain the permanent architecture. INV-025–027 and INV-029–035 remain evidence-gated. Lane I is auxiliary MODEL_ONLY only.
+
+
+## Latest research-cycle checkpoint — 2026-10-23 (Cycle 008 Delta 24)
+
+Batch 057 adds an offline, fail-closed validator for the QOS-AUDIT-010B25 redacted IBM Quantum target-snapshot contract, with 13 focused adversarial tests. The original 12-test suite passed under Python 3.13 before the strict-timestamp regression test was added; the updated 13-test suite awaits exact-commit hosted Python 3.10–3.12 CI. A small parser smoke check passed, but no full-suite rerun is claimed. This work does **not** capture an authenticated target snapshot, use credentials, initialize a provider service/session, submit a job, or measure shots, cost, energy, quality or advantage.
+
+- Integrated batch: [Batch 057 — offline snapshot validator and literature delta](docs/BATCH_057_READONLY_SNAPSHOT_OFFLINE_VALIDATOR_AND_LITERATURE.md)
+- Literature watch: [surface-code teleportation, topological materials and interpretable equation discovery](docs/literature_watch/2026-10-23-surface-code-and-interpretable-equation-discovery.md)
+- Machine-readable gate: [Batch 057 snapshot contract](integration/batches/batch057/readonly_snapshot_gate.json)
+- Current implementation PR: [#48](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/48)
+
+The highest-value next gate remains a fresh, redacted, authenticated **read-only** ibm_kingston metadata snapshot captured in an owner-authorized environment. A passing snapshot may unlock target-specific route/native-conformance work only; paid QPU execution remains separately gated by explicit consent, credentials, bounded jobs/shots and a cost ceiling. A–H remain the permanent architecture; Lane I is retained as an auxiliary MODEL_ONLY stream while RG-037 records the manifest/scoreboard mismatch. INV-025–027 and INV-029–035 remain evidence-gated goals, not achievements.
+
+
 **Status:** Active research / executable prototype / long-horizon architecture  
 **Lead Researcher:** Kanutsanan Pongpanna  
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest verified implementation checkpoint — 2026-10-15
+## Previous verified implementation checkpoint — 2026-10-15
 
 Cycle 008 Delta 02 converts the twelve-lane start packet into executable, fail-closed schema and negative-test gates. The local full suite passes **470 tests** with **8 optional-environment skips**. This is synthetic validation only: no provider submission, real-QPU result, material/fuel/fusion measurement, funding authorization, physical-law discovery, quantum advantage or Data-Center-to-Phone result is claimed. See [the execution checkpoint](docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_02_2026-10-15.md), [integrated artifact](benchmarks/results/cycle008-delta02-integrated-gates.json) and [dated literature watch](docs/LITERATURE_WATCH_2026-10-15_EQUATION_DISCOVERY_IDENTIFIABILITY.md).
 
