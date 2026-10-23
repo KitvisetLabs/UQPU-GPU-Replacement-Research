@@ -36,13 +36,15 @@ The validator checks the exact provider/target/schema, required metadata and exp
 
 ## Fresh literature delta — 2026-10-23
 
-The companion literature watch records three primary sources newly surfaced in this cycle:
+The companion literature watch records five primary sources newly surfaced in this cycle:
 
 - Nature Physics (published 2026-10-22): experimental surface-code teleportation up to distance 7 on a 125-qubit superconducting processor. This is external finite-size QEC evidence, not a UQPU run or cost result.
 - Communications AI & Computing (published 2026-10-21): interpretable AI recovers liquid-drop structure and localized Jaffe factorization in nuclear-mass predictions. The factorization is historical, and neutron-rich extrapolation remains open.
 - Scientific Reports (published 2026-10-22): q-deformed neural solution of the Thomas–Fermi boundary problem. Reported RMSE differences are not a statistically established general advantage, and the pointwise method is reported as about 102x slower than the vectorized PINN.
+- Communications Materials (published 2026-10-23): DFT and an interpretable orbital Hamiltonian propose vacancy-induced topological phases in 2D semiconductors; experimental realization is not established.
+- Physical Review X (published 2026-10-22): an edge-sensitive conductance plateau in FeTe0.55Se0.45 is a replicated experimental signature with unresolved topological interpretation, not proof of topological superconductivity.
 
-All three are external literature, not UQPU evidence. No new no-go theorem, project-relevant physical law, material/fuel/fusion result, or financing result was promoted.
+All five are external literature, not UQPU evidence. The two newest materials results are hypotheses/observations with explicit experimental discriminators, not qualified UQPU materials or confirmed new phases. No new no-go theorem, project-relevant physical law, fuel/fusion result, or financing result was promoted.
 
 ## FND-001 through FND-006 and EQN-001 through EQN-006
 

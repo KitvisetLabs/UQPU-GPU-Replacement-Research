@@ -92,6 +92,18 @@
       "published": "2026-10-22",
       "evidence_class": "PUBLISHED_NUMERICAL_METHOD_EXTERNAL",
       "url": "https://www.nature.com/articles/s41598-026-74682-2"
+    },
+    {
+      "title": "Engineering quantum phases in two dimensions via vacancy-induced electronic reconstruction",
+      "published": "2026-10-23",
+      "evidence_class": "PUBLISHED_THEORETICAL_COMPUTATIONAL_EXTERNAL",
+      "url": "https://www.nature.com/articles/s43246-026-01365-w"
+    },
+    {
+      "title": "Nontrivial boundary-mediated superconducting transport in a TRSB topological iron-based superconductor",
+      "published": "2026-10-22",
+      "evidence_class": "PUBLISHED_EXPERIMENT_EXTERNAL_INTERPRETATION_UNRESOLVED",
+      "url": "https://doi.org/10.1103/8vgt-twh5"
     }
   ],
   "foundational": {
@@ -128,5 +140,6 @@
       "German"
     ]
   },
-  "next_highest_value_gate": "Capture and validate a fresh redacted authenticated read-only ibm_kingston snapshot in an owner-authorized environment; then issue exact route/native-conformance certificate. Paid execution remains separately consent-and-budget gated."
+  "next_highest_value_gate": "Capture and validate a fresh redacted authenticated read-only ibm_kingston snapshot in an owner-authorized environment; then issue exact route/native-conformance certificate. Paid execution remains separately consent-and-budget gated.",
+  "literature_count": 5
 }

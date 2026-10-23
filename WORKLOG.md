@@ -1594,3 +1594,8 @@ No authenticated snapshot, credentials, live service/session, provider job, shot
 Fresh literature watch added for the 2026-10-22 Nature Physics surface-code teleportation experiment, the 2026-10-21 interpretable nuclear-mass AI study, and the 2026-10-22 q-deformed Thomas–Fermi numerical method. All are external evidence; no new physical law, UQPU advantage, material/fuel/fusion result, or financing/WACC result is claimed.
 
 A–H were explicitly reviewed. E/F/G receive no new qualified material, fuel, net-electricity, factory or cost evidence; H preserves the Kanusanan Pongpanna Model and all six language master-plan references. Lane I remains an auxiliary MODEL_ONLY stream while RG-037 records the permanent A–H versus nine-lane manifest discrepancy. FND-001–006, EQN-001–006, BIO-001, FUS-001, FIN-001 and INV-025–035 remain evidence-gated. Research-Sync: main
+
+
+### Same-day literature addendum — 2026-10-23
+
+A second surveillance pass found two additional material-physics sources published on 2026-10-22/23 and incorporated them into the Batch 057 literature watch: a DFT/orbital-Hamiltonian proposal for vacancy-induced topological phases in 2D semiconductors (Communications Materials, 2026-10-23), and a Physical Review X experiment reporting edge-sensitive conductance plateaus in FeTe0.55Se0.45 (2026-10-22). The first is computational and requires experimental realization; the second is an unresolved topological interpretation and needs direction/chirality-sensitive transport. Neither is promoted to a UQPU device, material, or new-law claim.
