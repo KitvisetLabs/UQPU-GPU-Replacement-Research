@@ -149,6 +149,12 @@
     "max_snapshot_age_seconds": 900,
     "digest": "SHA-256 of deterministic canonical UTF-8 JSON with one trailing newline"
   },
-  "local_focused_test_count": 13,
-  "hosted_ci_gate": "Python 3.10-3.12 required; pending until exact commit passes"
+  "hosted_ci_gate": "Python 3.10-3.12 required; queued exact-commit workflow run",
+  "focused_test_count": 13,
+  "last_full_local_suite": {
+    "test_count": 12,
+    "status": "passed_before_strict_timestamp_regression_test"
+  },
+  "strict_timestamp_regression_test": "added; full-suite execution pending",
+  "parser_smoke_check": "passed for two valid and three invalid timestamp forms"
 }
