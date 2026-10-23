@@ -807,3 +807,9 @@ providers or targets.
 job completion alone cannot establish useful quality or economics. Separating
 preflight from execution prevents accidental paid submission, post-result
 threshold changes and mixed-provenance cost claims.
+## 2026-10-23 — D135: Keep the ancilla-QFI score-count no-go condition one-way
+
+**Decision:** Preserve the preprint’s stated Theorem-2 condition that m distinct nonzero local scores exceeding ancilla dimension n rules out a perfect protocol within the stated assumptions. Do not infer that m_nonzero <= n is sufficient without resolving q=0 outcomes. The exact-rational FND-QFI-001 fixture shows that q values {-1, 0, +1} give m_nonzero=2 but three distinct score classes; the paper’s pairwise orthogonality condition requires unequal-score conditional states to be orthogonal. Record this as a theorem-scope/statement-clarification issue, not a refutation of Theorem 2.
+
+**Reason:** A no-go implication is not a sufficiency theorem. Exact score counting must match the theorem’s actual assumptions and pairwise condition before the result can constrain UQPU state-service or compression architecture. The fixture is MODEL_ONLY and does not establish quantum transfer, readable memory, hardware behavior, or a new physical law.
+
