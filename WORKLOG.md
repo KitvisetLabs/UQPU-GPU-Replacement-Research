@@ -1583,16 +1583,3 @@ software-first finance and six-language context; I remains `MODEL_ONLY`.
 FND/EQN/FIN and INV-025–035 remain unpromoted. No live service, submission,
 job, shot, payment, advantage, Data-Center-to-Phone result or new physical law
 is claimed.
-
-
-### 2026-10-23 — Eight-lane research cycle and formal theorem-discovery gate
-
-Started from canonical `main` SHA `c7b5958af58fad04a101ef5c6abf6a29293c867e`. Read the required charter, invariants, goals, README, operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root 00–06 directives, handoff/CI policies, current QOS-AUDIT-010B25 preregistration, Batch 056 and related negative-result batches, current gaps and latest dated literature watch.
-
-Fresh surveillance added a literature-only watch for self-supervised theorem discovery (arXiv:2606.28747) and complex-domain symbolic regression (arXiv:2605.03841). Official IBM/AWS/Microsoft provider documentation was rechecked; the IBM `ibm_phoenix` Nighthawk r2 and Rigetti Cepheus provider changes were already recorded in the September market snapshot. No provider calls or QPU jobs occurred.
-
-Implemented `software/uqpu-prototype/uqpu/formal_proof_gate.py` plus nine focused tests and a machine-readable result. Local isolated tests passed 9/9 on Python 3.13.5. This is metadata-contract testing only, not proof-assistant execution, full repository testing, or GitHub Actions CI. Added RG-036, D135 and `INT-20261023-001`; updated the nine-lane scoreboard and daily cycle report.
-
-A remains Priority #1; the QOS-AUDIT-010B25 read-only `ibm_kingston` snapshot still awaits an authorized environment. B remains no-submit; C receives no memory-equivalence claim; D/G receive no device/factory result; E's Pangola/BIO-001/FUS-001/cooling work remains unmeasured; F records the metadata gate and new gap; H publishes the source-scoped watch. Lane I was reviewed as supplemental repository scope and remains `MODEL_ONLY`. FND-001–006, EQN-001–006 and INV-029–035 are not promoted by this result.
-
-At cycle start the combined status endpoint returned no status contexts for the newest main commit, and the available workflow-run endpoint returned no runs for that merge commit. Therefore no green CI claim is made. Source branch work remains pending main synchronization until the PR is reviewed, CI is checked and a merge SHA is observed. The pre-existing RG-035 branch/fork reconciliation gap remains open.
