@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "588500f647bb42a43549a5ce38072198f61071ab",
   "priority_lane": "A",
-  "current_frontier": "Cycle 010 / 2026-10-24 follow-up: equation-candidate errors now require finite nonnegative real numeric values; numeric strings and malformed objects fail closed. EXP-DESIGN-002 remains specified but not executed. Prior PR head 6ebc1591bd5b859251a8cca91d2a1c9c8df188fb passed exact-head CI (run 960); current follow-up commit requires a new exact-head run. QOS-AUDIT-010B25 remains read-only target metadata only; no provider job is authorized.",
+  "current_frontier": "Cycle 010 / 2026-10-24 follow-up: equation-candidate errors require finite nonnegative real numeric values; numeric strings and malformed objects fail closed. A cold-start audit exposed that SOFTWARE_CONTRACT was not yet a permitted single evidence class; the validator taxonomy and regression test now support SOFTWARE_CONTRACT/UNIT_TEST. EXP-DESIGN-002 remains specified but not executed. Exact-head CI for this follow-up is pending; QOS-AUDIT-010B25 remains read-only metadata only.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -47,7 +47,7 @@
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
       "status": "EQUATION_METRIC_GUARD_STRICT_TYPES; EXP-DESIGN-002_SPECIFIED_NOT_EXECUTED",
-      "evidence_class": "SOFTWARE_CONTRACT / UNIT_TEST; EXP-DESIGN-002 MODEL_ONLY PROTOCOL",
+      "evidence_class": "SOFTWARE_CONTRACT",
       "next_gate": "Pass exact-head CI for strict real-number validation; then implement the frozen offline EXP-DESIGN-002 matched-budget benchmark. Keep QOS-AUDIT-010B25 read-only and separately authorized."
     },
     "B": {
