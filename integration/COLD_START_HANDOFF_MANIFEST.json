@@ -1,6 +1,6 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-23T16:42:06Z",
+  "prepared_utc": "2026-10-23T16:43:44Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
@@ -153,16 +153,19 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "FND-QFI-001 and Cycle 009 commits are on research/fnd-qfi-001-20261023 until PR #51 is reviewed/merged; source-to-main mapping remains pending. EQN-CTRL-001 is in a dated gap artifact but has not been appended to the large canonical RESEARCH_GAPS.md. The cold-start audit failed on commit 662a8a50 due to a missing Research-Sync: pending-main trailer; that commit is not rewritten, and later commits carry the trailer. Historical/inaccessible branch/fork coverage is not claimed.",
+  "known_sync_debt": "FND-QFI-001 and Cycle 009 commits are on research/fnd-qfi-001-20261023 until PR #51 is reviewed/merged; source-to-main mapping remains pending. WORKLOG.md (~120 KB), DECISIONS.md (~65 KB) and RESEARCH_GAPS.md (~62 KB) were not rewritten/appended due truncation/history risk; the dated Cycle 009 report and EQN-CTRL-001 gap preserve this run until a safe append/merge. Cold-start audit failed on commit 662a8a50 because its message omitted Research-Sync: pending-main; that commit is not rewritten and later commits carry the trailer. Historical/inaccessible branch/fork coverage is not claimed.",
   "next_independent_action": "Check exact-final-commit CI on PR #51 after the latest manifest update; verify the trailer audit on the latest commit, independently reproduce FND-QFI-001 including q=0, and preregister/run EQN-CTRL-001 only on a frozen offline known-law benchmark with matched budgets. Keep QOS-AUDIT-010B25 as the separate Priority-1 gate. No QPU jobs without explicit authorization.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
   "current_commit_ci_status": {
     "baseline_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
     "combined_status_endpoint": "no individual statuses reported for baseline main commit",
     "active_pull_request": 51,
-    "last_observed_workflow_run": 39988827966,
-    "last_observed_workflow_run_number": 194,
-    "last_observed_workflow_state": "queued on commit 0b66c89e before this manifest update; final-head runs must be rechecked",
-    "note": "Cold-start audit run 192 failed on commit 662a8a50 solely because its commit message lacked Research-Sync: pending-main. Later cycle commits use the required trailer. Prototype workflow runs were queued at last observation; no current-head test pass is claimed."
+    "last_observed_workflow_run": 39989158406,
+    "last_observed_workflow_run_number": 197,
+    "last_observed_workflow_state": "queued on commit 9bd21146dc2fb8b4e6a797c1509c48bdb807348f before this manifest refresh",
+    "last_observed_prototype_run": 39989165197,
+    "last_observed_prototype_run_number": 917,
+    "last_observed_prototype_state": "queued on commit 9bd21146dc2fb8b4e6a797c1509c48bdb807348f",
+    "note": "Cold-start audit run 192 failed on commit 662a8a50 solely because its commit message lacked Research-Sync: pending-main. Later cycle commits use the required trailer. Current-head audit and prototype checks are queued; no current-head pass is claimed."
   }
 }
