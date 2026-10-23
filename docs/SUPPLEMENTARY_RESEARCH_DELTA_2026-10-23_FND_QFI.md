@@ -45,3 +45,15 @@ The root 00–06 directives, Kanusanan Pongpanna Model, strategic AI/funding ref
 Local focused validation: 6/6 tests passed on CPython 3.13.5. Hosted workflow run 39959157460 on this PR had the Python 3.10, 3.11 and 3.12 test jobs complete successfully; the remaining QSVT/Qiskit/reference jobs were still running at the latest poll. Main synchronization is pending PR review/merge; no source-branch change is described as merged.
 
 Next highest-value scientific gate: implement an independent reduced-ancilla density-matrix/QFI reference, optimize admissible controlled unitaries for small frozen probability families, and search counterexamples for m <= n and m > n under the exact stated assumptions. Next process gate: recheck all hosted CI jobs and reconcile this supplemental PR against PR #48 before merge. No paid QPU jobs, purchases, or funding actions are authorized.
+
+## Additional Lane B/E/F surveillance and integration
+
+A further targeted search found three material sources not indexed in the main-branch literature search:
+
+- IonQ's official 2026-09-08 Superion 256 announcement: vendor-reported integrated electronic control, first chips fabricated at SkyWater and first ions trapped in prototypes. It is a provider/manufacturing roadmap, not independent performance or cost evidence. Lane B watch added; D/G manufacturing and A target-conformance follow-up remains conditional on verified target metadata.
+- Hegazy et al., Biomass and Bioenergy 211 (2026) 109142, DOI 10.1016/j.biombioe.2026.109142: peer-reviewed spruce-bark-derived carbon graphitization study reports 14→30 S/cm conductivity across its tested route and changed O/C ratio. This is not Pangola and not a component substitution result. Lane E watch added with a matched-function, mass/energy/catalyst-recovery experiment plan.
+- Woodruff's official preprints arXiv:2601.21724 and arXiv:2602.19389: auditable fusion plant cost accounts, physics-to-economics mapping, architecture-specific cost drivers, uncertainty and finance/value metrics. Lane E/F watch added; next step is a version/license-checked schema crosswalk to FUS-001/FIN-001, not a commercial cost claim.
+
+Integration edge INT-20261023-002 records the three cross-lane hypotheses, falsifiers and required evidence. No new result changes the MODEL_ONLY status of the project, and all vendor/preprint/third-party claims remain externally sourced rather than UQPU measurements.
+
+The current PR head changed after the earlier hosted run 39959826835 was queued; hosted CI must be checked again on the latest head before merge.
