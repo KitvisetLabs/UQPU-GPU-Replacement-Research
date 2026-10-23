@@ -8,6 +8,7 @@ considered testable within the UQPU foundational-research program.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+import math
 from typing import Iterable
 
 
@@ -71,10 +72,24 @@ class EquationHypothesis:
             raise ValueError("discriminating_observables is required")
         if self.evidence_level not in _ALLOWED_EVIDENCE:
             raise ValueError(f"unknown evidence level: {self.evidence_level}")
-        if self.independent_validation_count < 0:
-            raise ValueError("independent_validation_count cannot be negative")
+        if (
+            isinstance(self.independent_validation_count, bool)
+            or not isinstance(self.independent_validation_count, int)
+            or self.independent_validation_count < 0
+        ):
+            raise ValueError("independent_validation_count must be a nonnegative integer")
         for value in (self.heldout_baseline_error, self.heldout_candidate_error):
-            if value is not None and value < 0:
+            if value is None:
+                continue
+            if isinstance(value, bool):
+                raise ValueError("held-out errors must be finite nonnegative numbers")
+            try:
+                numeric_value = float(value)
+            except (TypeError, ValueError, OverflowError) as exc:
+                raise ValueError("held-out errors must be finite nonnegative numbers") from exc
+            if not math.isfinite(numeric_value):
+                raise ValueError("held-out errors must be finite")
+            if numeric_value < 0:
                 raise ValueError("held-out errors cannot be negative")
 
     @property
