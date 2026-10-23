@@ -7,6 +7,7 @@ considered testable within the UQPU foundational-research program.
 
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass, field
 from typing import Iterable
 
@@ -73,9 +74,26 @@ class EquationHypothesis:
             raise ValueError(f"unknown evidence level: {self.evidence_level}")
         if self.independent_validation_count < 0:
             raise ValueError("independent_validation_count cannot be negative")
-        for value in (self.heldout_baseline_error, self.heldout_candidate_error):
-            if value is not None and value < 0:
+        baseline_error = self.heldout_baseline_error
+        candidate_error = self.heldout_candidate_error
+        for name, value in (
+            ("heldout_baseline_error", baseline_error),
+            ("heldout_candidate_error", candidate_error),
+        ):
+            if value is None:
+                continue
+            if isinstance(value, bool) or not isinstance(value, (int, float)):
+                raise ValueError(f"{name} must be a finite numeric value or None")
+            try:
+                finite = math.isfinite(value)
+            except (OverflowError, TypeError):
+                finite = False
+            if not finite:
+                raise ValueError(f"{name} must be a finite numeric value or None")
+            if value < 0:
                 raise ValueError("held-out errors cannot be negative")
+        if (baseline_error is None) != (candidate_error is None):
+            raise ValueError("held-out baseline and candidate errors must be supplied together")
 
     @property
     def has_heldout_improvement(self) -> bool:
