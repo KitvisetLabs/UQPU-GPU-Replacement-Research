@@ -766,3 +766,27 @@ latency/host/data-movement accounting and cost per accepted useful output.
 explicit user consent, credentials, bounded jobs/shots/cost and an execution
 record. The execution phase is disabled; this artifact is not QPU evidence or
 permission to submit a free or paid job.
+
+
+## RG-036 — Offline validator for authenticated read-only target snapshot
+**Status:** OFFLINE_VALIDATOR_IMPLEMENTED / AUTHENTICATED_SNAPSHOT_BLOCKED  
+**Date:** 2026-10-23  
+**Work item:** QOS-AUDIT-010B25
+
+**Objective:** make the preregistered redacted IBM Quantum ibm_kingston snapshot contract executable without contacting a provider or relying on saved fake-backend metadata.
+
+**Implementation:** software/uqpu-prototype/uqpu/er6_readonly_snapshot.py with focused adversarial tests in software/uqpu-prototype/tests/test_er6_readonly_snapshot.py. The validator checks exact provider/target/schema, required fields and explained nulls, canonical JSON and SHA-256, freshness <=900 seconds, timestamp order, topology/index bounds, malformed or duplicate directed edges, secret-bearing fields/values, redaction-report status, and non-finite numbers.
+
+**Evidence:** 11 focused local unit tests passed under Python 3.13. Hosted Python 3.10–3.12 CI is the compatibility gate. Evidence class is MODEL_ONLY_OFFLINE_VALIDATOR_TESTS; this is not an authenticated snapshot, target calibration, route/native-conformance result, useful-output quality result, or economic measurement.
+
+**Blocker:** no owner-authorized read-only credentialed environment or actual target snapshot was available to this cycle. No credentials, live service, session, provider job, shot, or billable execution was used.
+
+**Next experiment:** validate a fresh, redacted snapshot captured in the authorized environment, retain canonical bytes and digest, run all preregistered counterexamples, and only after a pass build the exact target-specific route/native-conformance certificate. Paid QPU execution remains a separate consent-and-budget gate.
+
+## RG-037 — Permanent A–H architecture versus auxiliary Lane I manifest drift
+**Status:** DOCUMENTATION_DRIFT / DECISION_REQUIRED  
+**Date:** 2026-10-23
+
+The permanent charter, VERSION_INVARIANTS.md, and research_lanes/LANE_DIRECTORY_POLICY.md define eight permanent lanes A–H. The current integration/eight_lane_manifest.json and docs/NINE_LANE_SCOREBOARD_2026-10-16.md track A–I, with Lane I describing field-agnostic contactless vehicle lift/propulsion and MODEL_ONLY hypotheses.
+
+**Decision boundary:** this cycle preserves and reviews every permanent A–H lane and also retains Lane I as an auxiliary research stream. It does not delete Lane I or silently redefine the permanent architecture. A future explicit decision should clarify whether I is an auxiliary program outside A–H or a formally approved architecture change, then align schema names, policy tests and scoreboard labels. Until then, report A–H as the permanent architecture and I separately.

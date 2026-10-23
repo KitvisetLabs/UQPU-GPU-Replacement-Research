@@ -1583,3 +1583,14 @@ software-first finance and six-language context; I remains `MODEL_ONLY`.
 FND/EQN/FIN and INV-025–035 remain unpromoted. No live service, submission,
 job, shot, payment, advantage, Data-Center-to-Phone result or new physical law
 is claimed.
+
+
+## 2026-10-23 — Cycle 008 Delta 24: offline snapshot validator and fresh literature watch
+
+Started from canonical main commit c7b5958af58fad04a101ef5c6abf6a29293c867e. Added the offline QOS-AUDIT-010B25 target-snapshot validator and 11 adversarial unit tests. Local focused tests passed under Python 3.13; hosted Python 3.10–3.12 CI was pending at the time of this entry. The validator checks target/schema identity, canonical digest, 900-second freshness, timestamp order, topology bounds, explained nulls, secret redaction and non-finite numeric values without contacting IBM Quantum.
+
+No authenticated snapshot, credentials, live service/session, provider job, shot, billable usage, energy, cost, or accepted-output quality was obtained. QOS-AUDIT-010B25 remains open. Lane A has no new circuit result because target-specific route/native-conformance still depends on the authorized snapshot; this is not filled with saved fake-backend data.
+
+Fresh literature watch added for the 2026-10-22 Nature Physics surface-code teleportation experiment, the 2026-10-21 interpretable nuclear-mass AI study, and the 2026-10-22 q-deformed Thomas–Fermi numerical method. All are external evidence; no new physical law, UQPU advantage, material/fuel/fusion result, or financing/WACC result is claimed.
+
+A–H were explicitly reviewed. E/F/G receive no new qualified material, fuel, net-electricity, factory or cost evidence; H preserves the Kanusanan Pongpanna Model and all six language master-plan references. Lane I remains an auxiliary MODEL_ONLY stream while RG-037 records the permanent A–H versus nine-lane manifest discrepancy. FND-001–006, EQN-001–006, BIO-001, FUS-001, FIN-001 and INV-025–035 remain evidence-gated. Research-Sync: main
