@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "588500f647bb42a43549a5ce38072198f61071ab",
   "priority_lane": "A",
-  "current_frontier": "Cycle 010 / 2026-10-24: equation-discovery candidate-metric integrity guard plus EXP-DESIGN-002 offline experiment-design protocol proposed; exact-head CI pending. QOS-AUDIT-010B25 remains authenticated read-only target metadata only; no provider job authorization.",
+  "current_frontier": "Cycle 010 / 2026-10-24: equation-candidate metric integrity guard; EXP-DESIGN-002 offline matched-budget experiment-planning benchmark specified but not executed. Exact-current-head CI pending. QOS-AUDIT-010B25 remains authenticated read-only target metadata only; no provider job authorization.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -36,7 +36,8 @@
     "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_AI_EXPERIMENT_DESIGN.md",
     "integration/INT-20261024-002-ai-experiment-design.md",
     "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_TRANSFORMER_FORMULAE_AND_QFT_METHODS.md",
-    "integration/INT-20261024-001-equation-discovery-candidate-integrity.md"
+    "integration/INT-20261024-001-equation-discovery-candidate-integrity.md",
+    "research_lanes/A_quantum_programming_runtime/batches/2026-10-24-exp-design-002.md"
   ],
   "lanes": {
     "A": {
