@@ -31,7 +31,7 @@ The machine-readable result is benchmarks/results/fnd-qfi-001-exact-fixture-2026
 
 ## Fresh literature surveillance
 
-The primary source is the official arXiv record and full v1 HTML: https://arxiv.org/abs/2610.29146v1. It was submitted 2026-10-21 and remains an unrefereed preprint in this review. The 2026-10-23 repository literature watch already records OptScientist (arXiv:2610.28562, submitted 2026-10-20) as a distinct optimization-law generator and preserves its limitations. The 2026-10-15 equation-discovery watch already includes Coupled Harness–Model Evolution (arXiv:2610.17740, submitted 2026-10-13); this cycle did not create a duplicate article. The latest fresh scan found no further primary result that changes the present UQPU hardware, material, bio-oil, fusion, finance or provider-execution gates.
+The primary source is the official arXiv record and full v1 HTML: https://arxiv.org/abs/2610.29146v1. It was submitted 2026-10-21 and remains an unrefereed preprint in this review. The 2026-10-23 repository literature watch already records OptScientist (arXiv:2610.28562, submitted 2026-10-20) as a distinct optimization-law generator and preserves its limitations. The 2026-10-15 equation-discovery watch already includes Coupled Harness–Model Evolution (arXiv:2610.17740, submitted 2026-10-13); this cycle did not create a duplicate article. A separate 2026-10-23 GOLLuM literature watch adds a peer-reviewed uncertainty-calibrated experiment-selection hypothesis. It changes the method backlog, not any current UQPU hardware, material, bio-oil, fusion, finance or provider-execution evidence gate.
 
 ## A–I status
 
