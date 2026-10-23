@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "588500f647bb42a43549a5ce38072198f61071ab",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 20: local Qulacs independent-SDK routed probes passed; exact-commit hosted confirmation and full equivalence remain open",
+  "current_frontier": "Cycle 010 / 2026-10-24: equation-discovery candidate-metric integrity guard plus EXP-DESIGN-002 offline experiment-design protocol proposed; exact-head CI pending. QOS-AUDIT-010B25 remains authenticated read-only target metadata only; no provider job authorization.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -32,22 +32,92 @@
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_19_2026-10-18.md",
     "docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_20_2026-10-18.md",
     "docs/LITERATURE_WATCH_2026-10-17_AI_GENERATED_MATHEMATICAL_INSTRUMENTS.md",
-    "RESEARCH_GAPS.md"
+    "RESEARCH_GAPS.md",
+    "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_AI_EXPERIMENT_DESIGN.md",
+    "integration/INT-20261024-002-ai-experiment-design.md",
+    "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_TRANSFORMER_FORMULAE_AND_QFT_METHODS.md",
+    "integration/INT-20261024-001-equation-discovery-candidate-integrity.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "INDEPENDENT_ROUTED_PROBES_LOCAL_PASS_HOSTED_PENDING", "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_ROUTED_PROBE_CHECK", "next_gate": "obtain exact-commit hosted confirmation, then preregister a scalable stronger equivalence method; eleven queries remain blocked"},
-    "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "SAVED_TARGET_NO_SUBMIT_ROUTING_ACCEPTED", "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK", "next_gate": "retain zero-provider boundary while validating routed semantics before any saved-snapshot noise or schedule diagnostic"},
-    "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
-    "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
-    "E": {"owner_path": "research_lanes/E_materials_energy_cooling_infrastructure", "status": "REVIEWED_NO_NEW_MEASUREMENT", "evidence_class": "MODEL_ONLY", "next_gate": "qualified BIO-001/FUS-001 functional-unit evidence"},
-    "F": {"owner_path": "research_lanes/F_economics_benchmarks_evidence_integration", "status": "EVIDENCE_GATE_ACTIVE", "evidence_class": "MODEL_ONLY", "next_gate": "competitive baseline and total cost per accepted task"},
-    "G": {"owner_path": "research_lanes/G_manufacturing_equipment_factory_software", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "FABRICATION_PROPOSAL", "next_gate": "target-specific process-window response contract"},
-    "H": {"owner_path": "research_lanes/H_strategy_finance_future_industries", "status": "SOFTWARE_FIRST_CAPITAL_GATE", "evidence_class": "ROADMAP", "next_gate": "decisive target-aware test before expenditure"},
-    "I": {"owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION", "status": "PLAN_AND_CONTRACT_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "I-012 deterministic matched-mission hover/noise/energy model"}
+    "A": {
+      "owner_path": "research_lanes/A_quantum_programming_runtime",
+      "status": "INDEPENDENT_ROUTED_PROBES_LOCAL_PASS_HOSTED_PENDING",
+      "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_ROUTED_PROBE_CHECK",
+      "next_gate": "obtain exact-commit hosted confirmation, then preregister a scalable stronger equivalence method; eleven queries remain blocked"
+    },
+    "B": {
+      "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
+      "status": "SAVED_TARGET_NO_SUBMIT_ROUTING_ACCEPTED",
+      "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK",
+      "next_gate": "retain zero-provider boundary while validating routed semantics before any saved-snapshot noise or schedule diagnostic"
+    },
+    "C": {
+      "owner_path": "research_lanes/C_state_memory_storage_data_movement",
+      "status": "MEASURED_HOST_ONLY",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "controlled I/O, transfer and target accounting"
+    },
+    "D": {
+      "owner_path": "research_lanes/D_device_chip_fabrication_packaging",
+      "status": "DOWNSTREAM_BLOCKED",
+      "evidence_class": "DEVICE_MODEL",
+      "next_gate": "target schedule and calibration before device requirements"
+    },
+    "E": {
+      "owner_path": "research_lanes/E_materials_energy_cooling_infrastructure",
+      "status": "REVIEWED_NO_NEW_MEASUREMENT",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "qualified BIO-001/FUS-001 functional-unit evidence"
+    },
+    "F": {
+      "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
+      "status": "EVIDENCE_GATE_ACTIVE",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "competitive baseline and total cost per accepted task"
+    },
+    "G": {
+      "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
+      "status": "DOWNSTREAM_BLOCKED",
+      "evidence_class": "FABRICATION_PROPOSAL",
+      "next_gate": "target-specific process-window response contract"
+    },
+    "H": {
+      "owner_path": "research_lanes/H_strategy_finance_future_industries",
+      "status": "SOFTWARE_FIRST_CAPITAL_GATE",
+      "evidence_class": "ROADMAP",
+      "next_gate": "decisive target-aware test before expenditure"
+    },
+    "I": {
+      "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
+      "status": "PLAN_AND_CONTRACT_ONLY",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "I-012 deterministic matched-mission hover/noise/energy model"
+    }
   },
-  "cross_cutting_programs": ["FND-001..006", "EQN-001..006", "BIO-001", "FUS-001", "FIN-001", "SCM", "AI-COST", "QOS/QSVT"],
-  "open_gates": ["RG-033", "RG-034", "I-012"],
-  "master_reference_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
+  "cross_cutting_programs": [
+    "FND-001..006",
+    "EQN-001..006",
+    "BIO-001",
+    "FUS-001",
+    "FIN-001",
+    "SCM",
+    "AI-COST",
+    "QOS/QSVT",
+    "EXP-DESIGN-002"
+  ],
+  "open_gates": [
+    "RG-033",
+    "RG-034",
+    "I-012"
+  ],
+  "master_reference_languages": [
+    "Thai",
+    "English",
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "German"
+  ],
   "latest_verified_ci": {
     "run_number": 786,
     "run_id": 39100104157,
