@@ -1,0 +1,87 @@
+{
+  "schema": "uqpu-fnd-qfi-001-ghz-analytic-audit-v1",
+  "run_date": "2026-10-23",
+  "source": "arXiv:2610.29146v1",
+  "phase_radians": 0.173,
+  "evidence_class": "MODEL_ONLY",
+  "all_formula_checks_passed": true,
+  "results": [
+    {
+      "system_qubits": 1,
+      "ancilla_dimension": 2,
+      "theoretical_system_qfi": 1,
+      "direct_measurement_cfi": 1.0000000000000007,
+      "distinct_nonzero_score_classes": 2,
+      "theorem_2_precondition_m_gt_n": false,
+      "ghz_formula_check_passed": true
+    },
+    {
+      "system_qubits": 2,
+      "ancilla_dimension": 2,
+      "theoretical_system_qfi": 4,
+      "direct_measurement_cfi": 4.000000000000002,
+      "distinct_nonzero_score_classes": 2,
+      "theorem_2_precondition_m_gt_n": false,
+      "ghz_formula_check_passed": true
+    },
+    {
+      "system_qubits": 3,
+      "ancilla_dimension": 2,
+      "theoretical_system_qfi": 9,
+      "direct_measurement_cfi": 8.999999999999996,
+      "distinct_nonzero_score_classes": 2,
+      "theorem_2_precondition_m_gt_n": false,
+      "ghz_formula_check_passed": true
+    },
+    {
+      "system_qubits": 5,
+      "ancilla_dimension": 2,
+      "theoretical_system_qfi": 25,
+      "direct_measurement_cfi": 25,
+      "distinct_nonzero_score_classes": 2,
+      "theorem_2_precondition_m_gt_n": false,
+      "ghz_formula_check_passed": true
+    },
+    {
+      "system_qubits": 8,
+      "ancilla_dimension": 2,
+      "theoretical_system_qfi": 64,
+      "direct_measurement_cfi": 63.99999999999999,
+      "distinct_nonzero_score_classes": 2,
+      "theorem_2_precondition_m_gt_n": false,
+      "ghz_formula_check_passed": true
+    },
+    {
+      "system_qubits": 6,
+      "ancilla_dimension": 1,
+      "theoretical_system_qfi": 36,
+      "direct_measurement_cfi": 36,
+      "distinct_nonzero_score_classes": 2,
+      "theorem_2_precondition_m_gt_n": true,
+      "ghz_formula_check_passed": true
+    },
+    {
+      "system_qubits": 6,
+      "ancilla_dimension": 2,
+      "theoretical_system_qfi": 36,
+      "direct_measurement_cfi": 36,
+      "distinct_nonzero_score_classes": 2,
+      "theorem_2_precondition_m_gt_n": false,
+      "ghz_formula_check_passed": true
+    }
+  ],
+  "accounting": {
+    "provider_jobs": 0,
+    "shots": 0,
+    "measured_energy_j": null,
+    "measured_cost": null
+  },
+  "nonclaims": [
+    "not independent theorem proof",
+    "not physical experiment",
+    "not QPU execution",
+    "not memory/storage equivalence",
+    "not economic advantage",
+    "not a new physical law"
+  ]
+}
