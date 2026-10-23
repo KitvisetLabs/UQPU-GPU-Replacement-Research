@@ -6,7 +6,7 @@
 **Source branch:** `research/2026-10-24-equation-discovery-audit-v2`  
 **Source head at this record:** `76f6f5957e280893e713f1983f0390a4995675a9`  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/53  
-**Sync PR:** pending creation from this branch.
+**Sync PR:** [#54 — Record pending Oct 24 equation-discovery research sync](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/54) — open/unmerged.
 
 ## Purpose and delta
 
