@@ -1,12 +1,25 @@
 # UQPU: Universal Quantum Processing Unit
 ## Extreme Data-Center-to-Phone Computing Research Program
 
+
+## Latest research-cycle checkpoint — 2026-10-23 (Cycle 008 Delta 24)
+
+Batch 057 adds an offline, fail-closed validator for the QOS-AUDIT-010B25 redacted IBM Quantum target-snapshot contract, plus 12 focused adversarial unit tests. Local tests pass under Python 3.13; the required hosted Python 3.10–3.12 CI matrix is the merge gate. This work does **not** capture an authenticated target snapshot, use credentials, initialize a provider service/session, submit a job, or measure shots, cost, energy, quality or advantage.
+
+- Integrated batch: [Batch 057 — offline snapshot validator and literature delta](docs/BATCH_057_READONLY_SNAPSHOT_OFFLINE_VALIDATOR_AND_LITERATURE.md)
+- Literature watch: [surface-code teleportation, topological materials and interpretable equation discovery](docs/literature_watch/2026-10-23-surface-code-and-interpretable-equation-discovery.md)
+- Machine-readable gate: [Batch 057 snapshot contract](integration/batches/batch057/readonly_snapshot_gate.json)
+- Current implementation PR: [#48](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/48)
+
+The highest-value next gate remains a fresh, redacted, authenticated **read-only** ibm_kingston metadata snapshot captured in an owner-authorized environment. A passing snapshot may unlock target-specific route/native-conformance work only; paid QPU execution remains separately gated by explicit consent, credentials, bounded jobs/shots and a cost ceiling. A–H remain the permanent architecture; Lane I is retained as an auxiliary MODEL_ONLY stream while RG-037 records the manifest/scoreboard mismatch. INV-025–027 and INV-029–035 remain evidence-gated goals, not achievements.
+
+
 **Status:** Active research / executable prototype / long-horizon architecture  
 **Lead Researcher:** Kanutsanan Pongpanna  
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest verified implementation checkpoint — 2026-10-15
+## Previous verified implementation checkpoint — 2026-10-15
 
 Cycle 008 Delta 02 converts the twelve-lane start packet into executable, fail-closed schema and negative-test gates. The local full suite passes **470 tests** with **8 optional-environment skips**. This is synthetic validation only: no provider submission, real-QPU result, material/fuel/fusion measurement, funding authorization, physical-law discovery, quantum advantage or Data-Center-to-Phone result is claimed. See [the execution checkpoint](docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_02_2026-10-15.md), [integrated artifact](benchmarks/results/cycle008-delta02-integrated-gates.json) and [dated literature watch](docs/LITERATURE_WATCH_2026-10-15_EQUATION_DISCOVERY_IDENTIFIABILITY.md).
 
