@@ -4,7 +4,7 @@
 
 ## Latest research-cycle checkpoint — 2026-10-23 (Cycle 008 Delta 24)
 
-Batch 057 adds an offline, fail-closed validator for the QOS-AUDIT-010B25 redacted IBM Quantum target-snapshot contract, plus 12 focused adversarial unit tests. Local tests pass under Python 3.13; the required hosted Python 3.10–3.12 CI matrix is the merge gate. This work does **not** capture an authenticated target snapshot, use credentials, initialize a provider service/session, submit a job, or measure shots, cost, energy, quality or advantage.
+Batch 057 adds an offline, fail-closed validator for the QOS-AUDIT-010B25 redacted IBM Quantum target-snapshot contract, plus 13 focused adversarial unit tests. Local tests pass under Python 3.13; the required hosted Python 3.10–3.12 CI matrix is the merge gate. This work does **not** capture an authenticated target snapshot, use credentials, initialize a provider service/session, submit a job, or measure shots, cost, energy, quality or advantage.
 
 - Integrated batch: [Batch 057 — offline snapshot validator and literature delta](docs/BATCH_057_READONLY_SNAPSHOT_OFFLINE_VALIDATOR_AND_LITERATURE.md)
 - Literature watch: [surface-code teleportation, topological materials and interpretable equation discovery](docs/literature_watch/2026-10-23-surface-code-and-interpretable-equation-discovery.md)
