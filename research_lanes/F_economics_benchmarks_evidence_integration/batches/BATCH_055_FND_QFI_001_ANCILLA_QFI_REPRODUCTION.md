@@ -27,7 +27,7 @@ The implementation accepts exact rational inputs only. It rejects floating-point
 - Near-degenerate scores: exact rationals keep 1 and 1+10^-12 distinct. The case has three nonzero score classes and n=2; the stated no-go condition is triggered.
 - Zero probabilities are rejected, not patched by an arbitrary epsilon.
 
-The machine-readable result is benchmarks/results/fnd-qfi-001-exact-fixture-2026-10-23.json. Seven unit tests cover the exact-match, no-go, zero-score, near-degenerate, support-boundary, float-input and artifact-consistency cases.
+The machine-readable result is benchmarks/results/fnd-qfi-001-exact-fixture-2026-10-23.json. Nine unit tests cover exact-match, no-go, zero-score, near-degenerate, support-boundary, float-input, artifact consistency, the frontier-hypothesis contract, and the equation-discovery no-promotion gate.
 
 ## Fresh literature surveillance
 
