@@ -13,9 +13,9 @@ The latest main state still has no authorized authenticated metadata snapshot fo
 - software/uqpu-prototype/uqpu/er6_readonly_snapshot.py
 - software/uqpu-prototype/tests/test_er6_readonly_snapshot.py
 
-The validator checks the exact provider/target/schema, required metadata and explicit null reasons, canonical UTF-8 JSON/SHA-256, a 900-second freshness limit, UTC timestamp order, qubit-index and directed-coupling bounds, duplicate/malformed edges, secret-bearing field names/values, redaction-report status, and non-finite numeric values. It performs no network access and does not import provider SDKs.
+The validator checks the exact provider/target/schema, required metadata and explicit null reasons, canonical UTF-8 JSON/SHA-256, a 900-second freshness limit, UTC timestamp order (including status-observation time), qubit-index and directed-coupling bounds, duplicate/malformed edges, secret-bearing field names/values including account identifiers, redaction-report status, and non-finite numeric values. It performs no network access and does not import provider SDKs.
 
-**Local validation:** 11 focused unit tests passed under Python 3.13. The supported Python 3.10–3.12 GitHub Actions matrix is the authoritative compatibility gate and was pending when this artifact was prepared.
+**Local validation:** 12 focused unit tests passed under Python 3.13. The supported Python 3.10–3.12 GitHub Actions matrix is the authoritative compatibility gate and was pending when this artifact was prepared.
 
 **Evidence boundary:** MODEL_ONLY_OFFLINE_VALIDATOR_TESTS. No credentials, live service, session, provider job, shot, billable usage, calibration capture, energy, cost, or useful-output quality measurement was used. The snapshot gate remains open. This implementation does not authorize paid or unpaid QPU submission.
 

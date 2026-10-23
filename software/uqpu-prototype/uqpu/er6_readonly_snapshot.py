@@ -255,7 +255,9 @@ def validate_snapshot(
     status = snapshot.get("backend_status")
     if isinstance(status, dict) and status.get("status_observed_at_utc") is not None:
         try:
-            _parse_utc(status["status_observed_at_utc"])
+            status_stamp = _parse_utc(status["status_observed_at_utc"])
+            if captured is not None and status_stamp > captured:
+                errors.append("status_observed_after_capture")
         except ValueError:
             errors.append("invalid_status_observed_timestamp")
 

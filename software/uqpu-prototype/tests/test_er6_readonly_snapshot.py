@@ -92,6 +92,11 @@ class ReadonlyTargetSnapshotTests(unittest.TestCase):
         payload["calibration_provenance"]["target_last_update_utc_if_exposed"] = "2026-10-23T10:01:00Z"
         self.assertIn("calibration_after_capture:target_last_update_utc_if_exposed", validate(payload))
 
+    def test_status_observation_after_capture_fails(self):
+        payload = valid_snapshot()
+        payload["backend_status"]["status_observed_at_utc"] = "2026-10-23T10:01:00Z"
+        self.assertIn("status_observed_after_capture", validate(payload))
+
     def test_out_of_range_and_duplicate_directed_edges_fail(self):
         payload = valid_snapshot()
         payload["target_structure"]["coupling_edges"].append([0, 3])
@@ -109,6 +114,9 @@ class ReadonlyTargetSnapshotTests(unittest.TestCase):
     def test_forbidden_secret_field_and_secret_like_value_fail(self):
         payload = valid_snapshot()
         payload["api_token"] = "REDACTED"
+        self.assertTrue(any(x.startswith("forbidden_key") for x in validate(payload)))
+        payload = valid_snapshot()
+        payload["account_identifier"] = "REDACTED"
         self.assertTrue(any(x.startswith("forbidden_key") for x in validate(payload)))
         payload = valid_snapshot()
         payload["backend_status"]["status_message"] = "Bearer secret-value"

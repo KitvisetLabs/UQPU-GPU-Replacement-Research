@@ -12,7 +12,7 @@
     "module": "software/uqpu-prototype/uqpu/er6_readonly_snapshot.py",
     "tests": "software/uqpu-prototype/tests/test_er6_readonly_snapshot.py",
     "snapshot_schema": "uqpu-er6-authenticated-readonly-target-snapshot-v1",
-    "local_tests_passed": 11,
+    "local_tests_passed": 12,
     "local_python": "3.13",
     "hosted_ci": "PENDING_AT_ARTIFACT_CREATION",
     "checks": [
@@ -25,7 +25,9 @@
       "duplicate and malformed edge rejection",
       "secret-bearing key/value scan",
       "redaction report",
-      "finite numeric values"
+      "finite numeric values",
+      "status observation timestamp not after snapshot capture",
+      "account identifier/quota secret-key rejection"
     ],
     "no_credentials": true,
     "live_service_initialized": false,

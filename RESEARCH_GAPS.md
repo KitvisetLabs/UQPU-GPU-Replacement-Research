@@ -775,9 +775,9 @@ permission to submit a free or paid job.
 
 **Objective:** make the preregistered redacted IBM Quantum ibm_kingston snapshot contract executable without contacting a provider or relying on saved fake-backend metadata.
 
-**Implementation:** software/uqpu-prototype/uqpu/er6_readonly_snapshot.py with focused adversarial tests in software/uqpu-prototype/tests/test_er6_readonly_snapshot.py. The validator checks exact provider/target/schema, required fields and explained nulls, canonical JSON and SHA-256, freshness <=900 seconds, timestamp order, topology/index bounds, malformed or duplicate directed edges, secret-bearing fields/values, redaction-report status, and non-finite numbers.
+**Implementation:** software/uqpu-prototype/uqpu/er6_readonly_snapshot.py with focused adversarial tests in software/uqpu-prototype/tests/test_er6_readonly_snapshot.py. The validator checks exact provider/target/schema, required fields and explained nulls, canonical JSON and SHA-256, freshness <=900 seconds, timestamp order including status observation versus capture, topology/index bounds, malformed or duplicate directed edges, secret-bearing fields/values including account identifiers and quota fields, redaction-report status, and non-finite numbers.
 
-**Evidence:** 11 focused local unit tests passed under Python 3.13. Hosted Python 3.10–3.12 CI is the compatibility gate. Evidence class is MODEL_ONLY_OFFLINE_VALIDATOR_TESTS; this is not an authenticated snapshot, target calibration, route/native-conformance result, useful-output quality result, or economic measurement.
+**Evidence:** 12 focused local unit tests passed under Python 3.13. Hosted Python 3.10–3.12 CI is the compatibility gate. Evidence class is MODEL_ONLY_OFFLINE_VALIDATOR_TESTS; this is not an authenticated snapshot, target calibration, route/native-conformance result, useful-output quality result, or economic measurement.
 
 **Blocker:** no owner-authorized read-only credentialed environment or actual target snapshot was available to this cycle. No credentials, live service, session, provider job, shot, or billable execution was used.
 
