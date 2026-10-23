@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-23T21:06:00Z",
+  "prepared_utc": "2026-10-23T21:15:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "588500f647bb42a43549a5ce38072198f61071ab",
+  "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "Cycle 010 / 2026-10-24: strict equation-metric type guard and FORMAL-PROOF-001 literature gate added; new watch covers GraphED constitutive-law discovery, physics-informed symbolic regression, and assumption-scoped continuous-QEC limitations. EXP-DESIGN-002 remains specified but not executed. Prior head 352cabc13c66d27e09920e9ef25b2fe0e93948a6 passed cold-start audit and Python 3.10-3.12 jobs; remaining full-suite jobs were still running. Current follow-up requires exact-head CI. No provider job is authorized.",
+  "current_frontier": "Cycle 010 / 2026-10-24: strict equation-metric type guard; EXP-DESIGN-002 remains specified but not executed; formal-proof, constitutive-law, physics-informed symbolic-regression and continuous-QEC literature watches are published on the research branch. Prior head c2ad67819321ce8f8613ce453745d3a70d4ceaa6 passed cold-start audit run 231 and Python 3.10/3.11/3.12 jobs; remaining full prototype/invariant jobs were still running. This manifest refresh requires a new exact-head CI run. No provider job is authorized.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -130,13 +130,13 @@
     "German"
   ],
   "latest_verified_ci": {
-    "run_number": 230,
-    "run_id": 40024017859,
+    "run_number": 231,
+    "run_id": 40024631749,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40024017859",
-    "head_sha": "352cabc13c66d27e09920e9ef25b2fe0e93948a6",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40024631749",
+    "head_sha": "c2ad67819321ce8f8613ce453745d3a70d4ceaa6",
     "branch": "research/2026-10-24-equation-discovery-audit-v2",
-    "scope": "cold-start handoff audit passed; full prototype/invariant workflow was still in progress on this prior head"
+    "scope": "cold-start handoff audit passed on prior head; full prototype/invariant workflow was still in progress"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -151,7 +151,7 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "After exact-head CI closes, implement EXP-DESIGN-002 offline; independently reproduce the GraphED/PISR methods on their own published datasets before considering transfer to Pangola or device work. Keep QOS-AUDIT-010B25 read-only and no-submit pending the authorized authenticated environment. No paid QPU job is authorized.",
+  "known_sync_debt": "Active PR #53 overlaps PR #51 on software/uqpu-prototype/uqpu/equation_discovery.py, software/uqpu-prototype/tests/test_equation_discovery.py, and integration/COLD_START_HANDOFF_MANIFEST.json; PRs #48-#51 share canonical base main c7b5958af58fad04a101ef5c6abf6a29293c867e and remain unmerged. Require conflict-aware reconciliation and rerun exact-head CI before merge. WORKLOG.md, DECISIONS.md and RESEARCH_GAPS.md append-only suffixes are deferred rather than overwritten. Historical and inaccessible branches/forks are not exhaustively reconciled; do not claim full coverage.",
+  "next_independent_action": "Run exact-head CI after this manifest refresh; reconcile PR #53 with PR #51 without overwriting the equation_discovery.py/tests/handoff manifest changes, and reconcile PR #48-#51 before any merge. Then implement EXP-DESIGN-002 offline and reproduce GraphED/PISR on published data. Keep QOS-AUDIT-010B25 read-only pending its authorized authenticated environment; no paid QPU job is authorized.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }
