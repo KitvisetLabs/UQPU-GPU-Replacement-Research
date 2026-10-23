@@ -4,7 +4,7 @@
 **Work ID:** FND6-PROOF-001-METADATA-HARDENING  
 **Owner:** Lane A; evidence governance Lane F  
 **Canonical start SHA:** c7b5958af58fad04a101ef5c6abf6a29293c867e  
-**Branch head containing this delta:** d33b3fb68e9c3da01e0dd35b239acf0a24de3519  
+**Regression-test commit:** d33b3fb68e9c3da01e0dd35b239acf0a24de3519  
 **Evidence class:** LOCAL_FOCUSED_UNIT_TESTS_ONLY  
 **Main synchronization:** pending PR #50; no merge claim
 
@@ -32,3 +32,8 @@ This is not the full repository suite or hosted GitHub Actions CI. The exact-hea
 ## Remaining limitations / next gate
 
 The module still validates metadata only. It does not parse proof objects, run a trusted proof assistant, authenticate logs, establish mathematical truth, or connect formal axioms to physical nature. Next, add bounded known-theorem/false-claim fixtures and two genuinely independent proof-checker backends; keep theorem verification, physical-law promotion and technology/economic evidence as separate gates.
+
+
+## Cross-PR reconciliation addendum
+
+The formal-gate backlog item is RG-041 and its integration ID is INT-20261023-005. The canonical RESEARCH_GAPS.md, WORKLOG.md and scoreboard files on this branch were restored to their exact main blobs to avoid colliding with PR #48's pending RG-036–040 / Delta 24–25 suffixes. The full gap and cycle record remain in standalone dated artifacts until a conflict-aware canonical append is possible. The latest branch-head CI status must be checked separately; no main synchronization is claimed.
