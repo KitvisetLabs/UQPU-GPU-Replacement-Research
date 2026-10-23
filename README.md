@@ -1,6 +1,20 @@
 # UQPU: Universal Quantum Processing Unit
 ## Extreme Data-Center-to-Phone Computing Research Program
 
+## Latest research-cycle checkpoint — 2026-10-23 (Cycle 008 Delta 25)
+
+Batch 058 adds a provider-neutral adaptive-circuit capability contract for target-specific mid-circuit measurement, reset and classical conditional/feed-forward semantics. Fifteen focused adversarial tests passed in an isolated Python 3.13 harness using the same module/test sources; this is not a full repository test run. The exact-head hosted Python 3.10–3.12 workflow must complete before merge.
+
+- Batch report: [Batch 058 — adaptive-circuit capability contract](docs/BATCH_058_ADAPTIVE_CIRCUIT_CAPABILITY_CONTRACT.md)
+- Integration contract: [adaptive-circuit capability interface](integration/adaptive_circuit_capability_contract.md)
+- Literature watch: [adaptive monitored circuits and mid-circuit feedback](docs/literature_watch/2026-10-23-adaptive-circuits-and-mid-circuit-feedback.md)
+- Implementation: `software/uqpu-prototype/uqpu/adaptive_circuit_contract.py`
+- Focused tests: `software/uqpu-prototype/tests/test_adaptive_circuit_contract.py`
+
+The source experiment was published in Nature Physics on 2026-10-09 and reports up to 100 qubits with nearly 5,000 entangling gates and 5,000 mid-circuit operations. It does not demonstrate general fault tolerance, a UQPU useful workload, target support across providers, accepted-task economics or any INV-029 result. The existing PR #48 remains open; no direct write to `main`, provider credential use, QPU submission, shots or billable execution occurred.
+
+A–H remain the permanent architecture. INV-025–027 and INV-029–035 remain evidence-gated. Lane I is auxiliary MODEL_ONLY only.
+
 
 ## Latest research-cycle checkpoint — 2026-10-23 (Cycle 008 Delta 24)
 
