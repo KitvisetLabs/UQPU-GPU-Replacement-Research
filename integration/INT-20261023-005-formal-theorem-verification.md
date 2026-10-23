@@ -31,7 +31,7 @@ The interface validates record consistency only. It does not parse proof objects
 
 Command: `PYTHONPATH=software/uqpu-prototype python -m unittest discover -s software/uqpu-prototype/tests -p 'test_formal_proof_gate.py'`
 
-Result: **14 passed, 0 failed** in an isolated Python 3.13.5 environment using the staged module/test contents. This is not the full repository test suite and not exact-commit GitHub Actions CI.
+Result: **14 passed, 0 failed** in an isolated Python 3.13.5 package-shaped harness mirroring the revised implementation and test cases; it was not a byte-for-byte checkout of the GitHub branch files. This is not the full repository test suite and not exact-commit GitHub Actions CI. See benchmarks/results/formal-theorem-proof-metadata-gate-hardening-2026-10-23.json.
 
 Negative controls include missing checker data, a same-checker “independent” replay, mismatched axiom/proof/statement digests, malformed digest, nonzero exit under `PASS`, and an explicitly rejected candidate.
 
