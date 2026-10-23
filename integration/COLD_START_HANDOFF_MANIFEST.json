@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-23T22:06:52Z",
+  "prepared_utc": "2026-10-23T22:16:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "Cycle 010 / 2026-10-24: equation-metric type guard and offline experiment-plan schema guard are on the research branch; the new plan contract has 8/8 isolated scratch unit tests but requires exact-head CI. LLM-PySR search-control literature watch added. EXP-DESIGN-002 and EQN-002B remain NOT EXECUTED. No provider or instrument job is authorized. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e; branch-only work and overlapping PR sync debt remain explicit.",
+  "current_frontier": "Cycle 010 / 2026-10-24: strict equation-metric and offline experiment-plan schema guards are on the research branch; 8 scratch tests passed and exact-head unit/invariant jobs passed on Python 3.10/3.11/3.12, while long QSVT/reference jobs remain in progress. LLM-PySR search-control and the 2026-10-23 Gaussian quantum-repeater no-go theorem have dated literature watches. EXP-DESIGN-002/EQN-002B and QNET-GAUSS-001 remain NOT EXECUTED. No provider/instrument job is authorized. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -50,7 +50,10 @@
     "research_lanes/A_quantum_programming_runtime/batches/2026-10-24-exp-design-002-validator.md",
     "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_LLM_PYSR_SEARCH_CONTROL.md",
     "docs/literature_watch/2026-10-24-llm-pysr-search-control.md",
-    "integration/INT-20261024-005-llm-pysr-search-control.md"
+    "integration/INT-20261024-005-llm-pysr-search-control.md",
+    "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_GAUSSIAN_REPEATER_NO_GO.md",
+    "docs/literature_watch/2026-10-24-gaussian-repeater-no-go.md",
+    "integration/INT-20261024-006-gaussian-repeater-no-go.md"
   ],
   "lanes": {
     "A": {
@@ -61,15 +64,15 @@
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
-      "status": "SAVED_TARGET_NO_SUBMIT; CONTINUOUS_QEC_SCOPE_REVIEWED",
+      "status": "SAVED_TARGET_NO_SUBMIT; CONTINUOUS_QEC_SCOPE_REVIEWED; GAUSSIAN_REPEATER_NO_GO_SCOPE_REVIEWED",
       "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK",
-      "next_gate": "Keep provider-neutral read-only capability preflight; distinguish mid-circuit measurement/reset/conditional operations from continuous syndrome-measurement support. No live provider call or job without its separate authorization gate."
+      "next_gate": "Preserve provider-neutral no-submit capability checks; audit the full theorem assumptions before claiming any Gaussian-repeater capacity benefit."
     },
     "C": {
       "owner_path": "research_lanes/C_state_memory_storage_data_movement",
-      "status": "MEASURED_HOST_ONLY",
+      "status": "MEASURED_HOST_ONLY; GAUSSIAN_REPEATER_CAPACITY_BOUND_REVIEWED",
       "evidence_class": "MODEL_ONLY",
-      "next_gate": "controlled I/O, transfer and target accounting"
+      "next_gate": "Keep channel capacity, readable classical output, state/readout, data movement and reconstruction as separate contracts."
     },
     "D": {
       "owner_path": "research_lanes/D_device_chip_fabrication_packaging",
@@ -97,9 +100,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "LLM_PYSR_SEARCH_CONTROLLER_LITERATURE_WATCH_ADDED; NO_PROJECT_EVIDENCE_PROMOTION",
+      "status": "LLM_PYSR_SEARCH_CONTROLLER_LITERATURE_WATCH_ADDED; NO_PROJECT_EVIDENCE_PROMOTION; GAUSSIAN_REPEATER_NO_GO_WATCH_ADDED",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "Reproduce on frozen held-out equation families with deterministic evaluator and independent replay; preserve limitations and failed candidates."
+      "next_gate": "Review full-text theorem assumptions and build QNET-GAUSS-001 as a model-scoped consistency test; no hardware inference."
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
