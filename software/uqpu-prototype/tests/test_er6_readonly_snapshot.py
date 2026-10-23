@@ -86,6 +86,12 @@ class ReadonlyTargetSnapshotTests(unittest.TestCase):
     def test_stale_snapshot_fails(self):
         self.assertIn("snapshot_stale", validate(valid_snapshot(), "2026-10-23T10:16:00Z"))
 
+    def test_non_rfc3339_timestamp_separator_fails(self):
+        payload = valid_snapshot()
+        payload["captured_at_utc"] = "2026-10-23 10:00:00Z"
+        self.assertIn("invalid_capture_timestamp", validate(payload))
+        self.assertIn("invalid_route_build_timestamp", validate(valid_snapshot(), "2026-10-23 10:10:00Z"))
+
     def test_future_capture_and_future_calibration_fail(self):
         self.assertIn("capture_after_route_build", validate(valid_snapshot(), "2026-10-23T09:59:00Z"))
         payload = valid_snapshot()
