@@ -766,3 +766,23 @@ latency/host/data-movement accounting and cost per accepted useful output.
 explicit user consent, credentials, bounded jobs/shots/cost and an execution
 record. The execution phase is disabled; this artifact is not QPU evidence or
 permission to submit a free or paid job.
+## FND-QFI-001 — Ancilla-QFI score-class dimension reproduction
+**Status:** OPEN / EXACT_RATIONAL_FIXTURE_PASS / NUMERICAL_PROTOCOL_REPRODUCTION_PENDING  
+**Date:** 2026-10-23  
+**Primary artifact:** research_lanes/F_economics_benchmarks_evidence_integration/batches/BATCH_055_FND_QFI_001_ANCILLA_QFI_REPRODUCTION.md  
+**Objective:** Reproduce the stated ancilla-QFI score-class dimension condition on exact small cases and audit the zero-score boundary before applying it to any UQPU state-service or compression claim.
+
+**Current evidence:** Exact-rational Python fixtures validate normalization, classical Fisher-information grouping, the stated m_nonzero > n no-go trigger, and the requirement that distinct local scores q_i = p_i'/p_i map to orthogonal conditional ancilla states in the stated protocol. A two-score n=2 case matches exactly; a three-nonzero-score n=2 case triggers the stated no-go condition; a q={-1,0,+1}, n=2 case shows that counting only nonzero scores does not itself certify the orthogonality construction when q=0 is present. The last case is a theorem-scope clarification target, not a refutation of Theorem 2.
+
+**Evidence boundary:** MODEL_ONLY exact arithmetic. The fixture does not optimize arbitrary controlled unitaries, prove the complete theorem, execute a quantum circuit, or establish readable memory, compute advantage, or physical compression.
+
+**Missing:** Independent numerical optimization of allowed controlled-unitary states; proof-level review of the q=0 condition; rank-change and support-boundary cases; independent reproduction and exact-commit CI.
+
+**Unlock criteria:** Reproduce the exact cases in a separate implementation, test m_nonzero <= n, m_nonzero > n and q=0 cases, independently derive the orthogonality requirement, and retain counterexamples and residuals. Any sufficiency claim must state whether m counts nonzero scores or all distinct scores.
+
+**Dependencies:** FND-002/FND-003/FND-006, EQN-001–006, INV-034/INV-035, Lane A/C/F/H.
+
+**Next experiment:** Build a small numerical QFI evaluator and optimize the allowed conditional ancilla states under frozen assumptions; compare system QFI, ancilla QFI and the exact rational certificate. Keep zero probabilities and rank changes as separate support-aware tests.
+
+**Review trigger:** Exact-commit CI pass plus independent numerical/theorem-scope reproduction.
+
