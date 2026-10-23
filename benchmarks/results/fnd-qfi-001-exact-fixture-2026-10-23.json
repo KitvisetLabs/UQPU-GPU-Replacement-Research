@@ -1,0 +1,100 @@
+{
+  "schema": "fnd-qfi-001-exact-rational-fixture-v1",
+  "source": {
+    "title": "Evaluation of the quantum Fisher information for large systems via an ancilla",
+    "arxiv": "2610.29146v1",
+    "submitted": "2026-10-21",
+    "url": "https://arxiv.org/abs/2610.29146v1"
+  },
+  "source_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "created": "2026-10-23",
+  "evidence_class": "MODEL_ONLY",
+  "method": "Exact rational local-score/classical Fisher-information arithmetic; no arbitrary-unitary optimizer and no QPU execution.",
+  "provider_jobs": 0,
+  "shots": 0,
+  "energy_joule": null,
+  "cost_usd": null,
+  "physical_law_claim_allowed": false,
+  "results": [
+    {
+      "case_id": "two_score_classes_n2",
+      "ancilla_dimension": 2,
+      "probability_normalization": "1",
+      "derivative_normalization": "0",
+      "system_classical_fisher_information": "1",
+      "distinct_nonzero_score_values": ["-1", "1"],
+      "distinct_all_score_values_including_zero": ["-1", "1"],
+      "m_nonzero": 2,
+      "m_all": 2,
+      "theorem_2_no_go_condition_triggered": false,
+      "orthogonal_score_encoding_dimension_sufficient": true,
+      "grouped_fisher_information_if_feasible": "1",
+      "perfect_transfer_constructed_in_exact_classical_model": true,
+      "status": "EXACT_ORTHOGONAL_SCORE_ENCODING_MATCH",
+      "evidence_level": "MODEL_ONLY",
+      "physical_law_claim_allowed": false
+    },
+    {
+      "case_id": "three_nonzero_score_classes_n2",
+      "ancilla_dimension": 2,
+      "probability_normalization": "1",
+      "derivative_normalization": "0",
+      "system_classical_fisher_information": "37/50",
+      "distinct_nonzero_score_values": ["-11/10", "1/10", "1"],
+      "distinct_all_score_values_including_zero": ["-11/10", "1/10", "1"],
+      "m_nonzero": 3,
+      "m_all": 3,
+      "theorem_2_no_go_condition_triggered": true,
+      "orthogonal_score_encoding_dimension_sufficient": false,
+      "grouped_fisher_information_if_feasible": null,
+      "perfect_transfer_constructed_in_exact_classical_model": false,
+      "status": "THEOREM_2_NO_GO_CONDITION_TRIGGERED",
+      "evidence_level": "MODEL_ONLY",
+      "physical_law_claim_allowed": false
+    },
+    {
+      "case_id": "zero_score_class_n2",
+      "ancilla_dimension": 2,
+      "probability_normalization": "1",
+      "derivative_normalization": "0",
+      "system_classical_fisher_information": "2/3",
+      "distinct_nonzero_score_values": ["-1", "1"],
+      "distinct_all_score_values_including_zero": ["-1", "0", "1"],
+      "m_nonzero": 2,
+      "m_all": 3,
+      "theorem_2_no_go_condition_triggered": false,
+      "orthogonal_score_encoding_dimension_sufficient": false,
+      "grouped_fisher_information_if_feasible": null,
+      "perfect_transfer_constructed_in_exact_classical_model": false,
+      "status": "ZERO_SCORE_CLASS_DIMENSION_GAP",
+      "evidence_level": "MODEL_ONLY",
+      "physical_law_claim_allowed": false
+    },
+    {
+      "case_id": "near_degenerate_scores_n2",
+      "ancilla_dimension": 2,
+      "probability_normalization": "1",
+      "derivative_normalization": "0",
+      "system_classical_fisher_information": "3000000000003000000000001/1500000000000000000000000",
+      "distinct_nonzero_score_values": [
+        "-2000000000001/1000000000000",
+        "1",
+        "1000000000001/1000000000000"
+      ],
+      "distinct_all_score_values_including_zero": [
+        "-2000000000001/1000000000000",
+        "1",
+        "1000000000001/1000000000000"
+      ],
+      "m_nonzero": 3,
+      "m_all": 3,
+      "theorem_2_no_go_condition_triggered": true,
+      "orthogonal_score_encoding_dimension_sufficient": false,
+      "grouped_fisher_information_if_feasible": null,
+      "perfect_transfer_constructed_in_exact_classical_model": false,
+      "status": "THEOREM_2_NO_GO_CONDITION_TRIGGERED",
+      "evidence_level": "MODEL_ONLY",
+      "physical_law_claim_allowed": false
+    }
+  ]
+}
