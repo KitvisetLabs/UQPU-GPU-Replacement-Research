@@ -19,6 +19,7 @@ EXPECTED_SCHEMA = "uqpu-er6-authenticated-readonly-target-snapshot-v1"
 EXPECTED_PROVIDER = "IBM Quantum Compute"
 EXPECTED_TARGET_ID = "ibm_kingston"
 MAX_AGE_SECONDS = 900
+RFC3339_UTC_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$")
 REQUIRED_TOP_LEVEL_FIELDS = (
     "schema", "provider", "target_id", "captured_at_utc",
     "client_package_versions", "backend_status", "target_structure",
@@ -59,7 +60,7 @@ def _normal_key(value: str) -> str:
 
 
 def _parse_utc(value: Any) -> datetime:
-    if not isinstance(value, str) or not value.endswith("Z"):
+    if not isinstance(value, str) or RFC3339_UTC_PATTERN.fullmatch(value) is None:
         raise ValueError("timestamp must be an RFC3339 UTC string ending in Z")
     try:
         parsed = datetime.fromisoformat(value[:-1] + "+00:00")
