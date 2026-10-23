@@ -2,7 +2,7 @@
 
 **Primary owner:** Lane H — foundational-method and strategic research publication  
 **Integration owner:** Lane F — evidence, reproducibility and cross-lane gates  
-**Evidence class:** PEER-REVIEWED FORMAL-METHOD RESULT + THIRD-PARTY ANALYTIC MODEL  
+**Evidence class:** PEER-REVIEWED FORMAL-METHOD RESULT + THIRD-PARTY ANALYTIC MODEL + THIRD-PARTY QUANTUM-CIRCUIT SEARCH PREPRINT  
 **UQPU evidence promotion:** none
 
 ## Executive delta
@@ -51,9 +51,27 @@ The result broadens the available analytic test fixtures for solver validation. 
 - Compare a solver with the relevant symmetry restriction against a representation that permits symmetry-breaking terms. Report residual norms, convergence, failure cases, runtime and resources. Make no solver-advantage claim before executing this test.
 - A passing benchmark is solver-validation evidence only. Any reactor or FUS-001 cost consequence requires separate stability, engineering, net-electricity and economic evidence.
 
+## Source C — LLM-guided quantum-circuit discovery
+
+Andi Gu, Alek H. Kemeny, Susanne F. Yelin and Mikhail D. Lukin, “Discovering state-of-the-art quantum circuits with large language models,” arXiv:2610.22367, submitted 2026-10-15: https://arxiv.org/abs/2610.22367.
+
+The authors describe an evolutionary workflow in which LLMs propose quantum-circuit designs and an independent evaluator verifies and scores them. They report reductions in Toffoli and qubit counts relative to their selected state-of-the-art baselines on seven of eight tasks, and a reversible architecture for prime-field modular inversion.
+
+### Genuine novelty and limitations
+
+This is directly relevant to Lane A because it treats the model as a candidate generator while an independent evaluator decides whether circuits satisfy the task and how they score. However, the results are third-party preprint claims on the authors' task set. They are not an independent UQPU reproduction, target-aware transpilation result, real-QPU run, accepted-useful-task advantage or full end-to-end cost comparison. Lower Toffoli/qubit counts alone omit ancilla constraints, routing, measurement, classical control, compiler/search overhead, energy and total lifecycle cost.
+
+### Proposed falsifiable follow-up: QALG-CTRL-001
+
+- Freeze a task-family split, circuit semantics, gate set, target constraints, random seeds, baseline versions and total search budget before evaluating candidates.
+- Require exact semantic equivalence or a mathematically justified approximate-equivalence tolerance against a trusted reference; independently evaluate every candidate rather than trusting LLM ranking.
+- Compare the strongest conventional synthesis baseline, LLM-author and LLM-controller arms under matched compute/token budgets.
+- Report accepted output quality, exactness/tolerance, logical and physical qubits, ancillas, T/Toffoli count, depth, two-qubit gates, routing overhead, transpilation, shots if any, reconstruction, latency, host compute, memory, energy where measurable, failed candidates and total cost per accepted useful task.
+- Retain invalid and failed circuits. Held-out improvement is a method result only; real-QPU advantage requires the separate provider/target, authorization, quality and cost gates.
+
 ## Cross-lane relevance
 
-- **A:** proof-carrying algebraic checks can guard equation promotion; no accepted workload win follows.
+- **A:** proof-carrying algebraic checks and independently evaluated LLM-proposed circuits are candidate-generation methods; no accepted workload win follows.
 - **B:** offline gates only; no provider integration or QPU job.
 - **C:** no conversion from mathematical state-space dimension to readable classical memory.
 - **D/G:** exact MHD fixtures may eventually validate modeling tools; no chip or factory requirement is inferred.

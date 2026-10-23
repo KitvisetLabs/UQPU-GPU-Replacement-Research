@@ -26,6 +26,16 @@
 
 **Falsifiers and acceptance.** Any nonzero symbolic residual, reproducible numerical residual beyond a preregistered tolerance, invalid flux-surface domain, failed limiting case or disagreement between independent implementations blocks acceptance. A pass is a solver-validation result only—not experimental plasma validation, stability proof, reactor feasibility, net electricity or commercial cost.
 
+## QALG-CTRL-001 — LLM-guided circuit search under equivalent-output contracts
+
+**Question.** Does an LLM-controlled quantum-circuit search improve valid, target-feasible circuits beyond the strongest preregistered synthesis baseline under matched total search budgets?
+
+**Incumbent requirement.** Every candidate must implement the same accepted task as a trusted reference, with exact equivalence or a justified approximation tolerance. Lower Toffoli or qubit count alone is not sufficient.
+
+**Protocol.** Freeze held-out task families, reference semantics, gate set, target constraints, baseline versions, seeds and total compute/token budget. Compare conventional synthesis, LLM-author and LLM-controller arms. Independently verify each candidate; report logical/physical qubits, ancillas, T/Toffoli count, depth, two-qubit gates, routing/transpilation, output quality, host compute, memory, energy where measurable, failures, latency and total cost per accepted task.
+
+**Falsifiers and acceptance.** A candidate that fails equivalence, held-out tasks, target constraints or matched-budget acceptance is rejected. Accept only if the controller improves the preregistered held-out metric over the strongest baseline without worsening correctness or constraint violations. Passing promotes the search method only; hardware advantage requires separately authorized, target-matched execution and complete economics.
+
 ## Cross-cutting constraints
 
 - No paid QPU or provider job is required or authorized.
