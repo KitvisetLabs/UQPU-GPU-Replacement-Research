@@ -1,8 +1,8 @@
 # EXP-DESIGN-001 integration contract — 2026-10-23
 
 **Literature source:** Ranković, Griffiths & Schwaller, Nature Machine Intelligence (2026-08-28), DOI 10.1038/s42256-026-01283-z  
-**Primary owner:** Lane H  
-**Shared integration owner:** Lane F  
+**Primary owner:** Lane H — literature and experiment-design protocol  
+**Lane F interface:** economics/evidence acceptance and resource accounting  
 **Evidence class:** literature only; project evidence promotion = none
 
 ## Stable interface
