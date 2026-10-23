@@ -111,6 +111,6 @@ No root directive, strategic master-plan link, language edition, or recorded AI-
 
 ## Post-review hardening and branch-collision reconciliation — 2026-10-23
 
-A review found malformed runtime values could escape the formal-proof metadata gate via attribute errors, and uppercase digest strings were accepted despite the canonical-lowercase contract. The gate now validates runtime types and fails closed; five regression tests were added. The isolated focused suite passes 14/14; hosted CI for the final branch head is still pending.
+A review found malformed runtime values could escape the formal-proof metadata gate via attribute errors, and uppercase digest strings were accepted despite the canonical-lowercase contract. The gate now validates runtime types and fails closed; five regression tests were added. The mirrored isolated harness passes 14/14; it was not a byte-for-byte checkout of the GitHub branch files. Hosted CI for the final branch head is still pending.
 
 A parallel-PR audit found RG-036 and INT-20261023-001 collisions with PR #48/#49. The formal theorem record is now INT-20261023-005 and its gap is RG-041. Shared append-only files were restored to the exact main blobs rather than rewriting another branch's pending history. The new gap artifact explicitly records the deferred canonical backlog/worklog/scoreboard sync. No PR has been merged by this run.
