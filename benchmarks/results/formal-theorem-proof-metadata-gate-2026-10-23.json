@@ -1,0 +1,49 @@
+{
+  "schema": "uqpu-formal-proof-metadata-gate-result-v1",
+  "date": "2026-10-23",
+  "work_id": "FND-006-EQN-006-FORMAL-PROOF-GATE-001",
+  "canonical_start_commit": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "evidence_class": "LOCAL_UNIT_TESTS_ONLY",
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/formal_proof_gate.py",
+    "tests": "software/uqpu-prototype/tests/test_formal_proof_gate.py",
+    "purpose": "Validate completeness and consistency of external proof-check metadata without claiming to check proof objects or establish physical truth."
+  },
+  "test_run": {
+    "python": "3.13.5",
+    "command": "PYTHONPATH=software/uqpu-prototype python -m unittest discover -s software/uqpu-prototype/tests -p 'test_formal_proof_gate.py'",
+    "passed": 9,
+    "failed": 0,
+    "scope": "Isolated local run of the exact staged module and test contents; not the full repository suite and not GitHub Actions."
+  },
+  "gates": {
+    "primary_checker_requires": [
+      "theorem statement",
+      "axiom-set SHA-256",
+      "proof-object SHA-256",
+      "checker identity and version",
+      "checker image SHA-256",
+      "checker log SHA-256",
+      "PASS result and zero exit code"
+    ],
+    "independent_replay_requires": [
+      "different checker identity",
+      "different checker image digest",
+      "same theorem statement digest",
+      "same axiom-set digest",
+      "same proof-object digest",
+      "independent log digest",
+      "PASS result and zero exit code"
+    ],
+    "metadata_gate_is_not_a_proof_checker": true,
+    "physical_law_promoted": false,
+    "technology_claim_promoted": false
+  },
+  "provider_calls": 0,
+  "qpu_jobs": 0,
+  "shots": 0,
+  "billable_usage": null,
+  "energy_joule": null,
+  "cost_usd": null,
+  "next_gate": "Run the exact commit in the supported CI matrix, then build a bounded theorem-discovery fixture with false-claim controls and two genuinely independent proof-checker backends."
+}
