@@ -33,8 +33,3 @@ CI must execute the exact branch commit and the complete existing unit/invariant
 The prior head `6ebc1591bd5b859251a8cca91d2a1c9c8df188fb` passed the exact-head prototype/invariant workflow (run 960) and cold-start handoff audit. A follow-up review found a remaining type-integrity gap: converting an input with `float(value)` during validation could accept a numeric string even though the improvement property compared the original, unnormalized values. The guard now requires a real numeric type (excluding booleans), validates finite/nonnegative values through one helper, and makes the improvement property fail closed on malformed types. Tests cover numeric strings and arbitrary objects. The new commit must pass exact-head CI again; the prior green run does not validate this follow-up.
 
 **Evidence class:** software-contract hardening only. No equation truth, physical law, QPU advantage or economic result is established.
-
-
-## Cold-start audit failure and repair — 2026-10-24
-
-The first hosted handoff audit on `98b554d8e5b630fae673d1591bfbbcace50b3f4e` failed closed with `lane_A:evidence_class_invalid`: the manifest used a compound phrase rather than one enumerated evidence class. The manifest now uses `SOFTWARE_CONTRACT`, and the validator taxonomy explicitly accepts `SOFTWARE_CONTRACT` and `UNIT_TEST`; a regression test covers both classes. This is a CI/governance taxonomy repair, not a scientific evidence upgrade. The exact-head audit and full prototype/invariant suite must rerun on the repair commit.

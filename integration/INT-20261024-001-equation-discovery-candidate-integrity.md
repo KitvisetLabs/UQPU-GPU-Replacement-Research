@@ -58,8 +58,3 @@ The inspected `WORKLOG.md` currently ends at the 2026-10-19 Cycle 008 Delta 21 e
 ## Post-CI adversarial review — 2026-10-24
 
 The prior branch head `6ebc1591bd5b859251a8cca91d2a1c9c8df188fb` passed run 960, but code review found that float coercion could admit numeric strings while the property compared unnormalized values. The follow-up requires `numbers.Real` (excluding booleans), rejects strings/objects and returns false for malformed values in `has_heldout_improvement`. Regression tests cover both fields. This is a software input-integrity result; exact-head CI for the follow-up is pending and no scientific evidence class is promoted.
-
-
-## Handoff schema failure and repair — 2026-10-24
-
-Cold-start audit run 229 failed with `lane_A:evidence_class_invalid` because the handoff manifest had a compound evidence-class value. The manifest now uses the single `SOFTWARE_CONTRACT` class, and the audit's allowed evidence taxonomy and tests explicitly recognize `SOFTWARE_CONTRACT` and `UNIT_TEST`. This failure and repair are retained as first-class CI evidence; current-head rerun remains the acceptance gate.

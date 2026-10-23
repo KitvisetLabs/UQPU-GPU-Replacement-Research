@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-23T21:15:00Z",
+  "prepared_utc": "2026-10-23T22:06:52Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "Cycle 010 / 2026-10-24: strict equation-metric type guard; EXP-DESIGN-002 remains specified but not executed; formal-proof, constitutive-law, physics-informed symbolic-regression and continuous-QEC literature watches are published on the research branch. Prior head c2ad67819321ce8f8613ce453745d3a70d4ceaa6 passed cold-start audit run 231 and Python 3.10/3.11/3.12 jobs; remaining full prototype/invariant jobs were still running. This manifest refresh requires a new exact-head CI run. No provider job is authorized.",
+  "current_frontier": "Cycle 010 / 2026-10-24: equation-metric type guard and offline experiment-plan schema guard are on the research branch; the new plan contract has 8/8 isolated scratch unit tests but requires exact-head CI. LLM-PySR search-control literature watch added. EXP-DESIGN-002 and EQN-002B remain NOT EXECUTED. No provider or instrument job is authorized. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e; branch-only work and overlapping PR sync debt remain explicit.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -44,14 +44,20 @@
     "integration/INT-20261024-003-formal-proof-search.md",
     "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_CONSTITUTIVE_LAWS_AND_QEC.md",
     "docs/literature_watch/2026-10-24-constitutive-laws-qec.md",
-    "integration/INT-20261024-004-constitutive-laws-qec-boundary.md"
+    "integration/INT-20261024-004-constitutive-laws-qec-boundary.md",
+    "software/uqpu-prototype/uqpu/experiment_design.py",
+    "software/uqpu-prototype/tests/test_experiment_design.py",
+    "research_lanes/A_quantum_programming_runtime/batches/2026-10-24-exp-design-002-validator.md",
+    "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_LLM_PYSR_SEARCH_CONTROL.md",
+    "docs/literature_watch/2026-10-24-llm-pysr-search-control.md",
+    "integration/INT-20261024-005-llm-pysr-search-control.md"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "EQUATION_METRIC_GUARD_STRICT_TYPES; EXP-DESIGN-002_SPECIFIED_NOT_EXECUTED",
+      "status": "OFFLINE_EXPERIMENT_PLAN_SCHEMA_GUARD_IMPLEMENTED; 8_SCRATCH_TESTS_PASS; EXP-DESIGN-002_NOT_EXECUTED",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Pass exact-head CI; then implement frozen offline EXP-DESIGN-002. Keep candidate generation separate from deterministic evaluation and proof/experiment gates."
+      "next_gate": "Pass exact-head CI, then freeze and execute the offline human/information-gain/AI-planner comparison under identical resource caps; no provider or instrument access."
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -79,9 +85,9 @@
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "EVIDENCE_GATE_ACTIVE",
+      "status": "MATCHED_BUDGET_SCHEMA_DEFINED; ACCEPTED_RESULT_ECONOMICS_NOT_MEASURED",
       "evidence_class": "MODEL_ONLY",
-      "next_gate": "competitive baseline and total cost per accepted task"
+      "next_gate": "Count generation/controller/search/evaluation/retries/transfer/reconstruction/independent replay on one budget; energy remains unknown unless measured."
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -91,9 +97,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "LITERATURE_WATCH_UPDATED; FORMAL_PROOF_AND_CONSTITUTIVE_LAW_METHODS",
+      "status": "LLM_PYSR_SEARCH_CONTROLLER_LITERATURE_WATCH_ADDED; NO_PROJECT_EVIDENCE_PROMOTION",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "Keep proof checking, empirical model validity, and system economics separate; pursue one bounded reproducible formal lemma and one held-out constitutive-law reproduction."
+      "next_gate": "Reproduce on frozen held-out equation families with deterministic evaluator and independent replay; preserve limitations and failed candidates."
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
