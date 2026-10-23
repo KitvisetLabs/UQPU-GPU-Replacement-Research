@@ -14,7 +14,7 @@ A continuous-variable optimization workload may be a useful candidate only when 
 ## Source evidence and assumptions
 
 - CV-QAOA: arXiv:2610.06815, submitted 2026-10-05. The paper reports theoretical query bounds for specified function families, explicitly dequantizes its RDW example, and gives a separate RSW result under a stated hidden-rotation/oracle model.
-- Surface-code algorithm-to-execution framework: arXiv:2609.10965, submitted 2026-09-10; page text updated 2026-10-14. Its resource reductions are model-derived and depend on the authors' calibration and scheduling assumptions.
+- Surface-code algorithm-to-execution framework: arXiv:2609.10965, submitted 2026-09-10; manuscript text dated 2026-10-14. Its resource reductions are model-derived and depend on the authors' calibration and scheduling assumptions.
 - Both inputs are `LITERATURE_ONLY / THIRD_PARTY_PREPRINTS`. They are not project measurements.
 
 ## Shared interface and matched useful-output contract
