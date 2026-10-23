@@ -94,6 +94,15 @@ class EquationDiscoveryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             candidate.validate()
 
+    def test_heldout_errors_reject_non_real_values_without_coercion(self):
+        for invalid in ("0.2", object()):
+            for field_name in ("heldout_baseline_error", "heldout_candidate_error"):
+                with self.subTest(field_name=field_name, invalid_type=type(invalid).__name__):
+                    candidate = self._candidate(**{field_name: invalid})
+                    with self.assertRaises(ValueError):
+                        candidate.validate()
+                    self.assertFalse(candidate.has_heldout_improvement)
+
     def test_independent_validation_count_must_be_a_nonnegative_integer(self):
         for invalid in (-1, 1.5, True):
             with self.subTest(invalid=invalid):

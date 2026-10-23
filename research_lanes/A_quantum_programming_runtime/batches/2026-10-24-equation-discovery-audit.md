@@ -26,3 +26,10 @@ CI must execute the exact branch commit and the complete existing unit/invariant
 - Lane F must include generator + evaluator compute, retries and accepted-result denominator in any cost/task comparison.
 - FND-006 / EQN-004 require held-out tests and counterexample search before promotion.
 - Lane C must not treat mathematical state-space size or formula compression as readable classical memory.
+
+
+## Post-CI adversarial review — 2026-10-24
+
+The prior head `6ebc1591bd5b859251a8cca91d2a1c9c8df188fb` passed the exact-head prototype/invariant workflow (run 960) and cold-start handoff audit. A follow-up review found a remaining type-integrity gap: converting an input with `float(value)` during validation could accept a numeric string even though the improvement property compared the original, unnormalized values. The guard now requires a real numeric type (excluding booleans), validates finite/nonnegative values through one helper, and makes the improvement property fail closed on malformed types. Tests cover numeric strings and arbitrary objects. The new commit must pass exact-head CI again; the prior green run does not validate this follow-up.
+
+**Evidence class:** software-contract hardening only. No equation truth, physical law, QPU advantage or economic result is established.

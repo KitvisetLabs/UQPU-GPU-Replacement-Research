@@ -1,6 +1,6 @@
 # INT-20261024-001 — equation-discovery candidate integrity
 
-**Status:** TESTING on PR branch; exact-current-head CI pending  
+**Status:** FOLLOW-UP HARDENING on PR branch; previous exact-head CI passed; new exact-head CI pending  
 **Owner:** Lane A for code contract; Lane H for literature watch  
 **Source main SHA:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`  
 **Source branch:** `research/2026-10-24-equation-discovery-audit-v2`  
@@ -53,3 +53,8 @@ The inspected `WORKLOG.md` currently ends at the 2026-10-19 Cycle 008 Delta 21 e
 | EQN-006 equation-to-technology traceability | Integration record maps generator results to Lane A/F and mission gates without asserting a technology consequence. | Require an accepted useful-output, device/system, lifecycle-resource and economics chain before promotion. |
 
 **BIO-001 / FUS-001 / FIN-001:** inspected as permanent cross-cutting tracks; no new Pangola-to-saleable-liquid mass/energy/cost evidence, net-delivered fusion-electricity evidence, or financed-principal/interest/time-to-evidence measurement was added. Their evidence classes remain unchanged.
+
+
+## Post-CI adversarial review — 2026-10-24
+
+The prior branch head `6ebc1591bd5b859251a8cca91d2a1c9c8df188fb` passed run 960, but code review found that float coercion could admit numeric strings while the property compared unnormalized values. The follow-up requires `numbers.Real` (excluding booleans), rejects strings/objects and returns false for malformed values in `has_heldout_improvement`. Regression tests cover both fields. This is a software input-integrity result; exact-head CI for the follow-up is pending and no scientific evidence class is promoted.
