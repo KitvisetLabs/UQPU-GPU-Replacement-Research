@@ -60,3 +60,9 @@ All eight lanes A–H continue. Lane A remains Priority #1. Deep-physics/new-the
 
 ## Publication rule
 Meaningful frontier findings, negative results, proofs/bounds, experiments and changes in research direction should be committed to GitHub with evidence classification. Unverified hypotheses must remain visibly labeled. No target multiplier or North-Star claim may be presented as achieved without the project's end-to-end equivalence and measurement gates.
+
+## INV-035 — Permanent AI-assisted equation-discovery gate
+
+The open frontier includes AI-assisted generation of alternative equations and effective laws, but established physics remains binding for present engineering claims. Each challenge to an incumbent model must specify: (1) the exact incumbent assumption and mathematical alternative; (2) dimensional/unit, symmetry, conservation and causality checks; (3) scaling and limiting cases; (4) a falsifier and discriminating observable; (5) a held-out prediction; and (6) a proof or experiment plus independent validation path.
+
+The required path is generator → constraints → evaluator → held-out test → counterexample search → proof/simulation → discriminating experiment → independent replication → device/system consequence → economics. Symbolic-regression fit, AI-generated mathematics, ideal lower bounds and simulation results remain their appropriate evidence classes and cannot be declared new physical laws. The permanent high-visibility directives are `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md` and `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`; INV-034 remains the upstream foundational agenda.
