@@ -182,3 +182,25 @@ not create live calibration, a physical schedule, fidelity, memory replacement,
 energy/cost or advantage evidence. E/G/H/I, FND/EQN and INV-025–035 retain
 their existing evidence gates. Next is a scalable independent routed-semantics
 check; live service and paid execution remain unauthorized.
+
+
+## Cycle 008 Delta 24 — 2026-10-23: formal theorem-discovery provenance gate
+
+**Starting main SHA:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`  
+**Evidence:** `LOCAL_UNIT_TESTS_ONLY`; 9 focused tests passed locally; exact-commit CI pending.
+
+| Lane | Current advance or reviewed blocker | Evidence boundary / next gate |
+|---|---|---|
+| A | Added formal theorem metadata gate and negative tests as an offline software task. | No compiler/useful-task advantage; QOS-AUDIT-010B25 still awaits authorized read-only target snapshot. |
+| B | Rechecked official IBM, AWS Braket and Azure Quantum provider documentation. | No credentials, provider call, snapshot, job, shot or billing; preserve provider-neutral adapters. |
+| C | Explicitly separated QFI/theorem metadata from readable classical memory/storage. | No RAM/VRAM/HBM/storage or Hilbert-space equivalence. |
+| D | Reviewed device implications only downstream of a validated mathematical/physical requirement. | No device/process/packaging/calibration/yield evidence. |
+| E | Rechecked Pangola material function, BIO-001, FUS-001 and cooling. | No qualified material, accepted liquid fuel, net electricity or infrastructure measurement. |
+| F | Added RG-036, a machine-readable test result and integration record. | No accepted-task economics, energy, financed principal, interest or WACC evidence. |
+| G | Preserved continuous D/G co-design. | No equipment, process window, factory or manufacturing-economics result. |
+| H | Published formal theorem-discovery literature watch and falsifiable follow-up. | No funding/commercial claim; six-language strategic references retained. |
+| I | Reviewed existing contactless-vehicle/levitation program as supplemental repository scope. | Remains `MODEL_ONLY`; no vehicle demonstration and no replacement of A–H. |
+
+FND-001–006 and EQN-001–006 were reviewed. FND-006 gains a metadata gate; no new bound, theorem, physical equation or law is promoted. INV-029–035 and INV-025–027 remain unpromoted. No QPU job, shot, payment, material purchase, fabrication, or capital deployment occurred.
+
+The current main-commit status endpoint returned no status contexts; do not infer green CI. The branch's exact-commit CI and main synchronization are pending PR outcome. The pre-existing RG-035 branch/fork reconciliation gap remains open.
