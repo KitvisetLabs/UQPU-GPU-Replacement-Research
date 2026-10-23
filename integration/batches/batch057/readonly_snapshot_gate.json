@@ -143,5 +143,12 @@
     ]
   },
   "next_highest_value_gate": "Capture and validate a fresh redacted authenticated read-only ibm_kingston snapshot in an owner-authorized environment; then issue exact route/native-conformance certificate. Paid execution remains separately consent-and-budget gated.",
-  "literature_count": 5
+  "literature_count": 5,
+  "validation_policy": {
+    "timestamp_format": "Strict RFC3339 UTC: T separator, seconds, optional fractional seconds, terminal Z",
+    "max_snapshot_age_seconds": 900,
+    "digest": "SHA-256 of deterministic canonical UTF-8 JSON with one trailing newline"
+  },
+  "local_focused_test_count": 13,
+  "hosted_ci_gate": "Python 3.10-3.12 required; pending until exact commit passes"
 }
