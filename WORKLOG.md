@@ -1593,3 +1593,12 @@ Added uqpu.fnd_qfi_001, seven unittest cases, a frozen JSON result, Batch 055 un
 
 Lane A remains Priority #1 with QOS-AUDIT-010B25 as the separate read-only target gate. B remains zero-provider; C keeps QFI distinct from readable memory; D/G remain blocked on a verified device requirement; E remains without new material/fuel/electricity measurements; F adds the exact fixture; H publishes a literature-to-falsifier path; I remains MODEL_ONLY and unrelated. The branch commits use Research-Sync: pending-main. PR, exact-commit CI and source-to-main mapping remain pending; inaccessible branches/forks are not claimed audited.
 
+
+### 2026-10-23 — EXP-DESIGN-001 uncertainty-calibrated experiment-design literature watch
+
+A fresh primary-source surveillance pass added Ranković, Griffiths and Schwaller, “Large language models as uncertainty-calibrated optimizers for experimental discovery,” Nature Machine Intelligence 8, 1466–1477, published 2026-08-28 (DOI 10.1038/s42256-026-01283-z; preprint arXiv:2504.06265v3). The paper reports GOLLuM, which couples a Gaussian-process surrogate to an LLM representation through the GP marginal-likelihood objective, evaluated across 23 chemistry/materials/process/molecular-design tasks. The project records this as third-party method evidence, not UQPU evidence.
+
+Published a dated literature watch and integration contract, and added EXP-DESIGN-001 to RESEARCH_GAPS. The follow-up is an offline frozen known-optimum benchmark comparing classical GP Bayesian optimization, fixed LLM embeddings plus GP, uncertainty-calibrated representation optimization where reproducible, and direct prompting as a negative control. Acceptance requires matched budgets, precommitted data splits, held-out improvement, calibration, invalid/duplicate proposal rates, and resource accounting. No real material, fuel, fusion, QPU, financing or physical-law claim follows from the paper.
+
+FND-QFI-001 remains a separate exact-rational MODEL_ONLY branch artifact. Both literature findings are pending PR #51 review/merge and exact-commit CI; no source-to-main sync is claimed yet.
+
