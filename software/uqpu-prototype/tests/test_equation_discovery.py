@@ -74,5 +74,32 @@ class EquationDiscoveryTests(unittest.TestCase):
             self.assertIn(name, fields)
 
 
+    def test_heldout_errors_reject_nan_and_infinities(self):
+        for invalid in (float("nan"), float("inf"), float("-inf")):
+            for field_name in ("heldout_baseline_error", "heldout_candidate_error"):
+                with self.subTest(invalid=invalid, field_name=field_name):
+                    with self.assertRaises(ValueError):
+                        self._candidate(**{field_name: invalid}).validate()
+
+    def test_infinite_baseline_cannot_enable_physical_candidate_promotion(self):
+        candidate = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT",
+            data_or_proof_provenance=("independent source record",),
+            independent_validation_plan=("blind replication",),
+            independent_validation_count=1,
+            heldout_baseline_error=float("inf"),
+            heldout_candidate_error=0.1,
+        )
+        self.assertFalse(candidate.ready_for_physical_candidate_claim)
+        with self.assertRaises(ValueError):
+            candidate.validate()
+
+    def test_independent_validation_count_must_be_a_nonnegative_integer(self):
+        for invalid in (-1, 1.5, True):
+            with self.subTest(invalid=invalid):
+                with self.assertRaises(ValueError):
+                    self._candidate(independent_validation_count=invalid).validate()
+
+
 if __name__ == "__main__":
     unittest.main()
