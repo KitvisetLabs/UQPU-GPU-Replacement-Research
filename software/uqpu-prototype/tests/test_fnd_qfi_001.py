@@ -4,6 +4,8 @@ from pathlib import Path
 import unittest
 
 from uqpu.fnd_qfi_001 import AncillaQfiCase, case_from_scores, run_reference_cases
+from uqpu.equation_discovery import EquationHypothesis
+from uqpu.frontier_hypothesis import FrontierHypothesis
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -58,6 +60,85 @@ class FndQfi001Tests(unittest.TestCase):
         self.assertEqual(artifact["results"], run_reference_cases())
         self.assertEqual(artifact["evidence_class"], "MODEL_ONLY")
         self.assertIs(artifact["physical_law_claim_allowed"], False)
+
+
+    def test_frontier_hypothesis_contract_keeps_fixture_model_only(self):
+        hypothesis = FrontierHypothesis(
+            name="FND-QFI-001 exact score-class transfer",
+            layer="quantum metrology and mathematical information",
+            evidence_level="MODEL_ONLY",
+            mathematical_formulation="q_i = p_i'/p_i; I = sum_i p_i q_i^2",
+            causal_mechanism=(
+                "Unequal local score values require orthogonal conditional ancilla states "
+                "under the stated protocol."
+            ),
+            target_bottleneck="Ancilla dimension may be insufficient to preserve Fisher information.",
+            known_constraints=(
+                "p_i > 0",
+                "sum_i p_i = 1",
+                "sum_i p_i' = 0",
+                "q_i = 0 is reviewed separately",
+            ),
+            scaling_law=(
+                "The tested orthogonal score-class encoding requires one dimension per "
+                "distinct score class."
+            ),
+            falsifier=(
+                "An independently derived protocol satisfying the same assumptions transfers "
+                "the exact information with fewer dimensions."
+            ),
+            observable="System-versus-ancilla Fisher-information gap under matched assumptions",
+            baseline="Classical Fisher information in the already-optimal measurement basis",
+            resource_accounting=("exact rational arithmetic", "zero provider jobs and shots"),
+        )
+        hypothesis.validate()
+        self.assertTrue(hypothesis.testable)
+
+    def test_equation_discovery_gate_forbids_physical_promotion(self):
+        candidate = EquationHypothesis(
+            equation_id="FND-QFI-001",
+            baseline_model="Classical Fisher information in the optimal projective basis",
+            proposed_equation="q_i = p_i'/p_i; I = sum_i (p_i')^2/p_i",
+            variables_and_units=(
+                "p_i: dimensionless probability",
+                "p_i': derivative with respect to dimensionless local parameter x",
+                "q_i: inverse units of x",
+            ),
+            domain_and_assumptions=(
+                "finite strictly-positive probability distribution",
+                "already-optimal system measurement",
+                "parameter-independent conditional ancilla states",
+            ),
+            known_constraints_checked=(
+                "probability normalization",
+                "derivative normalization",
+                "pairwise score-class orthogonality",
+            ),
+            scaling_or_limiting_cases=(
+                "m_nonzero > n",
+                "m_nonzero <= n with q = 0 present",
+                "near-degenerate exact rational scores",
+            ),
+            falsifier="Independent exact/numerical counterexample under the same assumptions",
+            discriminating_observables=(
+                "distinct score-class count",
+                "system classical Fisher information",
+                "ancilla quantum Fisher information",
+            ),
+            evidence_level="MODEL_ONLY",
+            data_or_proof_provenance=(
+                "benchmarks/results/fnd-qfi-001-exact-fixture-2026-10-23.json",
+            ),
+            independent_validation_plan=(
+                "independent implementation",
+                "numerical controlled-unitary optimization",
+            ),
+            claimed_mechanism="orthogonality-limited information transfer in the stated protocol",
+            independent_validation_count=0,
+        )
+        candidate.validate()
+        self.assertTrue(candidate.testable)
+        self.assertFalse(candidate.ready_for_physical_candidate_claim)
 
 
 if __name__ == "__main__":
