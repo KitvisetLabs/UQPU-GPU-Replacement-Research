@@ -813,3 +813,10 @@ threshold changes and mixed-provenance cost claims.
 
 **Reason:** A no-go implication is not a sufficiency theorem. Exact score counting must match the theorem’s actual assumptions and pairwise condition before the result can constrain UQPU state-service or compression architecture. The fixture is MODEL_ONLY and does not establish quantum transfer, readable memory, hardware behavior, or a new physical law.
 
+
+## 2026-10-23 — D136: Treat uncertainty-calibrated LLM optimization as an offline experiment-design candidate
+
+**Decision:** Record GOLLuM as a literature-motivated method candidate for EXP-DESIGN-001 only. Require a frozen candidate space, matched evaluation/compute budgets, held-out splits, calibration metrics, invalid/duplicate proposal accounting, and comparison with the strongest classical GP baseline plus direct-prompting negative control. Do not import its published chemistry/material benchmark results as UQPU, Pangola, bio-oil, fusion, QPU, commercial-economics or physical-law evidence.
+
+**Reason:** The peer-reviewed paper provides a potentially useful sample-efficiency mechanism, but its task set, representations, budgets and objectives do not establish transfer to UQPU workloads or high-cost physical systems. Uncertainty calibration is a testable hypothesis; it must survive the project's own held-out and resource-accounting gates.
+
