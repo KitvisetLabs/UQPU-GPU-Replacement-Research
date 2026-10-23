@@ -71,3 +71,9 @@ INV-025/026/027 remain preserved. The 100,000,000-GPU and universal 100,000,000-
 The active branch is the existing PR branch, not \`main\`. No direct write to \`main\`, provider credentials, cloud session, QPU job, shot or billable execution occurred. The previous exact-head workflow run \`39940917215\` was queued when inspected; the new branch head must be checked for its own completed matrix before merge.
 
 **Next highest-value gate:** wire the capability contract into semantic lowering, freeze a deterministic adaptive workload and exact useful-output contract, then run simulator/dry-run positive and negative branch tests. Only after official target metadata passes may an owner-authorized, bounded hardware attempt be considered.
+
+## Governance alignment addendum — INV-034 / INV-035
+
+A canonical-doc audit found that the permanent invariant table preserved INV-034/INV-035, but `PROJECT_CHARTER.md`, `GOALS.md`, `docs/RESEARCH_OPERATING_SYSTEM.md` and `docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md` did not all explicitly carry the equation-discovery principle. This cycle added concise permanent statements and links to the high-visibility `00A`, `05` and `06` directives. The statements preserve the rule that current physics remains binding for current engineering claims and that every proposed alternative needs constraints, limiting cases, falsifiers, held-out predictions and independent validation.
+
+This is governance/documentation alignment only; no scientific evidence level changed.
