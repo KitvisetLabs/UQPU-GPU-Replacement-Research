@@ -786,3 +786,23 @@ permission to submit a free or paid job.
 
 **Review trigger:** Exact-commit CI pass plus independent numerical/theorem-scope reproduction.
 
+
+## EXP-DESIGN-001 — Uncertainty-calibrated experiment selection under matched budgets
+**Status:** OPEN / LITERATURE_MOTIVATED / OFFLINE_FIXTURE_PENDING  
+**Date:** 2026-10-23  
+**Primary artifact:** docs/literature_watch/2026-10-23-gollum-uncertainty-calibrated-experiment-design.md  
+**Integration contract:** integration/EXP-DESIGN-001_INTEGRATION_CONTRACT_2026-10-23.md  
+**Objective:** Test whether an uncertainty-calibrated LLM representation can improve experiment/candidate selection on a frozen UQPU-relevant objective, without treating published cross-domain chemistry results as project evidence.
+
+**Current evidence:** Ranković, Griffiths and Schwaller, Nature Machine Intelligence 8, 1466–1477 (published 2026-08-28), report GOLLuM, which jointly trains an LLM representation and Gaussian-process optimizer through the GP marginal likelihood. The published evaluation covers 23 chemistry/materials/process/molecular-design tasks and reports improved sample efficiency on those benchmarks. This is third-party method evidence only.
+
+**Missing:** UQPU-owned implementation or reproducible equivalent, frozen known-optimum fixture, matched budgets, held-out split hashes, calibration and invalid/duplicate proposal metrics, compute/energy accounting, and independent reproduction.
+
+**Unlock criteria:** Compare classical GP Bayesian optimization, fixed-LLM-embedding plus GP, uncertainty-calibrated representation optimization where reproducible, and direct prompting as a negative control. Use identical candidate spaces, initial observations, budgets and stop rules; require held-out improvement over the strongest baseline without degraded calibration or unacceptable invalid proposals.
+
+**Evidence boundary:** MODEL_ONLY until a project-owned offline benchmark passes. Even a pass does not demonstrate a material, fuel, fusion, QPU, commercial-economic or new-physics advantage.
+
+**Next experiment:** Freeze a small synthetic equation-discovery or process-surrogate task with a known optimum, commit train/validation/test hashes and baseline versions, then compare top-5% coverage, negative log regret, calibration, invalid/duplicate rates, time, tokens and energy where measurable.
+
+**Dependencies:** EQN-001–006, FND-006, INV-035, Lane A/F/H; later optional MODEL_ONLY links to BIO-001, FUS-001 and FIN-001.
+
