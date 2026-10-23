@@ -1,0 +1,64 @@
+{
+  "checked_on": "2026-09-13",
+  "sources": [
+    {
+      "role": "particle baseline",
+      "title": "Particle Data Group 2025 Review of Particle Physics / Particle Properties",
+      "url": "https://pdg.lbl.gov/2025/listings/particle_properties.html",
+      "scope_used": "established quark, lepton, neutrino, gauge-boson and Higgs particle taxonomy; hypothetical-particle searches kept separate"
+    },
+    {
+      "role": "gauge-simulator hardware evidence",
+      "title": "Simulating two-dimensional lattice gauge theories on a qudit quantum computer",
+      "venue": "Nature Physics 21, 570-576 (2025)",
+      "url": "https://www.nature.com/articles/s41567-025-02797-w",
+      "scope_used": "trapped-ion qudit hardware can encode gauge fields/matter and experimentally study lattice-gauge dynamics; this is simulator evidence, not a direct quark/gluon device"
+    },
+    {
+      "role": "non-Abelian particle/gauge bridge",
+      "title": "Digital Quantum Simulation of a (1+1)D SU(2) Lattice Gauge Theory with Ion Qudits",
+      "venue": "PRX Quantum 5, 040309 (2024)",
+      "url": "https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.5.040309",
+      "scope_used": "qudit encoding and experimentally motivated gate construction for non-Abelian SU(2) dynamics; not direct color-charge hardware"
+    },
+    {
+      "role": "confinement/string-breaking analogue",
+      "title": "Observation of string breaking on a (2+1)D Rydberg quantum simulator",
+      "venue": "Nature 642, 321-326 (2025)",
+      "url": "https://www.nature.com/articles/s41586-025-09051-6",
+      "scope_used": "experimental simulator analogue of confinement/string breaking; not manipulation of isolated QCD quarks"
+    },
+    {
+      "role": "neutrino particle-dynamics hardware bridge",
+      "title": "Qutrit and qubit circuits for three-flavor collective neutrino oscillations",
+      "venue": "Physical Review D 111, 043038 (2025)",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.043038",
+      "scope_used": "three-flavor neutrino dynamics mapped to qubit/qutrit circuits with small-system demonstrations on IBM and Quantinuum hardware; simulator evidence, not direct neutrino-device control"
+    },
+    {
+      "role": "additional neutrino hardware evidence",
+      "title": "Collective neutrino oscillations in three flavors on qubit and qutrit processors",
+      "venue": "Physical Review D 111, 103054 (2025)",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/gjr1-lf8s",
+      "scope_used": "two-neutrino hardware experiment on superconducting qubit/qutrit platforms and resource-mapping evidence"
+    },
+    {
+      "role": "hypothetical-particle sensor technology",
+      "title": "Constraints on axion dark matter by distributed intercity quantum sensors",
+      "venue": "Nature 650, 314-319 (2026)",
+      "url": "https://www.nature.com/articles/s41586-025-10034-w",
+      "scope_used": "real distributed nuclear-spin sensor network constrains axion scenarios; technology evidence for the sensor, not axion discovery"
+    }
+  ],
+  "string_theory_scope": {
+    "status": "MODEL_GENERATOR_ONLY_IN_THIS_GATE",
+    "rule": "string/M-theory/holography may motivate candidate particles or information structures, but are not elementary-particle device evidence unless tied to a concrete observable and experimentally controllable bridge"
+  },
+  "research_attribution": {
+    "research_owner_principal_investigator_research_direction": "Kanutsanan Pongpanna",
+    "facebook": "https://www.facebook.com/LoveMoneyTH",
+    "youtube": "https://www.youtube.com/@LoveMoneyTHOfficial",
+    "ai_research_agent": "OpenAI GPT-5.6 Sol",
+    "ai_assisted_contribution": "current public-literature triage and evidence-boundary mapping for elementary-particle technology bridges"
+  }
+}
