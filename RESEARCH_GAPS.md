@@ -790,3 +790,22 @@ permission to submit a free or paid job.
 The permanent charter, VERSION_INVARIANTS.md, and research_lanes/LANE_DIRECTORY_POLICY.md define eight permanent lanes A–H. The current integration/eight_lane_manifest.json and docs/NINE_LANE_SCOREBOARD_2026-10-16.md track A–I, with Lane I describing field-agnostic contactless vehicle lift/propulsion and MODEL_ONLY hypotheses.
 
 **Decision boundary:** this cycle preserves and reviews every permanent A–H lane and also retains Lane I as an auxiliary research stream. It does not delete Lane I or silently redefine the permanent architecture. A future explicit decision should clarify whether I is an auxiliary program outside A–H or a formally approved architecture change, then align schema names, policy tests and scoreboard labels. Until then, report A–H as the permanent architecture and I separately.
+
+
+## RG-038 — Independent reproduction and engineering relevance of nonsymmetric ideal-MHD equilibria
+**Status:** EXTERNAL_THEOREM_REPRODUCTION_PENDING / MODEL_ONLY  
+**Date:** 2026-10-23
+
+**Objective:** determine whether FUS-001 or downstream fusion-equilibrium models rely on symmetry restrictions that are not mathematically necessary under their stated ideal magnetohydrostatic assumptions.
+
+**Evidence:** Gómez-Serrano, Liehr and Taylor, *Counterexamples to Grad's conjecture*, official arXiv preprint 2609.24739 posted 2026-09-21. The authors report smooth one-parameter families of unforced ideal-MHD equilibria on embedded solid tori with nested pressure surfaces and cyclic symmetry C_N, without the plane-reflection, axial or helical symmetries in a precise formulation of Grad's conjecture; a Lean 4 certification is supplied. This is external mathematical evidence, not a UQPU reproduction or fusion-plant result.
+
+**Blockers:** independent formal-proof review, numerical reconstruction, residual/convergence certificates, perturbation and resistive-MHD robustness, plasma stability, experimental observables, coil complexity, manufacturability and net-electric economics remain untested.
+
+**Current alternative:** retain established MHD equations; do not impose the disproved conjecture as a universal theorem, but do not treat the counterexample as a stable or economically useful fusion configuration.
+
+**Unlock criteria:** independent Lean check; independent 3-D solver reproduces representative solutions with convergent residuals; stability/realizability tests pass; only then quantify coil, process, maintenance, net-electricity and lifecycle-cost consequences.
+
+**Falsifier / stop rule:** if the formalization fails, independent solver residuals fail to converge, or stability/realizability requirements fail, stop the engineering promotion while preserving the mathematical result and its exact assumptions.
+
+**Dependencies:** INV-032, FUS-001, INV-034/035, Lane D/G co-design and FND-006. No claim of new physical law, fusion gain, commercial electricity or cost reduction is permitted from the preprint alone.
