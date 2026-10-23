@@ -101,6 +101,31 @@ class FormalProofGateTests(unittest.TestCase):
         self.assertEqual(candidate.audit_status, "FAILED_OR_COUNTEREXAMPLE")
         self.assertFalse(candidate.has_complete_primary_check_record)
 
+    def test_non_string_statement_fails_closed(self):
+        candidate = _record(statement=None)
+        self.assertEqual(candidate.audit_status, "INVALID_METADATA")
+        self.assertFalse(candidate.has_complete_primary_check_record)
+
+    def test_non_string_digest_fails_closed(self):
+        candidate = _record(proof_object_sha256=None)
+        self.assertEqual(candidate.audit_status, "INVALID_METADATA")
+        self.assertFalse(candidate.has_complete_primary_check_record)
+
+    def test_uppercase_digest_is_rejected_as_noncanonical(self):
+        candidate = _record(axiom_set_sha256="A" * 64)
+        self.assertEqual(candidate.audit_status, "INVALID_METADATA")
+        self.assertFalse(candidate.has_complete_primary_check_record)
+
+    def test_non_string_checker_identity_fails_closed(self):
+        candidate = _record(checker_id=None)
+        self.assertEqual(candidate.audit_status, "INVALID_METADATA")
+        self.assertFalse(candidate.has_complete_primary_check_record)
+
+    def test_non_string_result_fails_closed(self):
+        candidate = _record(checker_result=None)
+        self.assertEqual(candidate.audit_status, "INVALID_METADATA")
+        self.assertFalse(candidate.has_complete_primary_check_record)
+
 
 if __name__ == "__main__":
     unittest.main()
