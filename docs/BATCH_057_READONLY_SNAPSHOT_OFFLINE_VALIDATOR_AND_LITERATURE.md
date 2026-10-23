@@ -13,7 +13,7 @@ The latest main state still has no authorized authenticated metadata snapshot fo
 - software/uqpu-prototype/uqpu/er6_readonly_snapshot.py
 - software/uqpu-prototype/tests/test_er6_readonly_snapshot.py
 
-The validator checks the exact provider/target/schema, required metadata and explicit null reasons, canonical UTF-8 JSON/SHA-256, a 900-second freshness limit, UTC timestamp order (including status-observation time), qubit-index and directed-coupling bounds, duplicate/malformed edges, secret-bearing field names/values including account identifiers, redaction-report status, and non-finite numeric values. It performs no network access and does not import provider SDKs.
+The validator checks the exact provider/target/schema, required metadata and explicit null reasons, canonical UTF-8 JSON/SHA-256, a 900-second freshness limit, strict RFC3339 UTC timestamps (T separator, seconds, optional fractional seconds, terminal Z), UTC timestamp order (including status-observation time), qubit-index and directed-coupling bounds, duplicate/malformed edges, secret-bearing field names/values including account identifiers, redaction-report status, and non-finite numeric values. It performs no network access and does not import provider SDKs.
 
 **Local validation:** 12 focused unit tests passed under Python 3.13. The supported Python 3.10–3.12 GitHub Actions matrix is the authoritative compatibility gate and was pending when this artifact was prepared.
 
@@ -36,7 +36,7 @@ The validator checks the exact provider/target/schema, required metadata and exp
 
 ## Fresh literature delta — 2026-10-23
 
-The companion literature watch records five primary sources newly surfaced in this cycle:
+The companion literature watch records five primary sources published 2026-10-21–23 and one foundational MHD preprint newly integrated after targeted surveillance:
 
 - Nature Physics (published 2026-10-22): experimental surface-code teleportation up to distance 7 on a 125-qubit superconducting processor. This is external finite-size QEC evidence, not a UQPU run or cost result.
 - Communications AI & Computing (published 2026-10-21): interpretable AI recovers liquid-drop structure and localized Jaffe factorization in nuclear-mass predictions. The factorization is historical, and neutron-rich extrapolation remains open.
@@ -44,7 +44,9 @@ The companion literature watch records five primary sources newly surfaced in th
 - Communications Materials (published 2026-10-23): DFT and an interpretable orbital Hamiltonian propose vacancy-induced topological phases in 2D semiconductors; experimental realization is not established.
 - Physical Review X (published 2026-10-22): an edge-sensitive conductance plateau in FeTe0.55Se0.45 is a replicated experimental signature with unresolved topological interpretation, not proof of topological superconductivity.
 
-All five are external literature, not UQPU evidence. The two newest materials results are hypotheses/observations with explicit experimental discriminators, not qualified UQPU materials or confirmed new phases. No new no-go theorem, project-relevant physical law, fuel/fusion result, or financing result was promoted.
+The additional preprint, Gómez-Serrano, Liehr and Taylor, *Counterexamples to Grad's conjecture* (arXiv:2609.24739, posted 2026-09-21), constructs smooth non-axisymmetric ideal magnetohydrostatic equilibria that contradict a precise symmetry conjecture and supplies a Lean 4 certification. This is a mathematical counterexample under stated assumptions, not new physics or evidence of stable/cheap fusion. The follow-up is independent formal checking, 3-D solver residual/convergence, and stability/realizability tests.
+
+All five are external literature, not UQPU evidence. The two newest materials results are hypotheses/observations with explicit experimental discriminators, not qualified UQPU materials or confirmed new phases. No new UQPU no-go theorem, project-relevant physical law, measured fuel/fusion result, or financing result was promoted. The Grad preprint changes the status of one mathematical symmetry conjecture only.
 
 ## FND-001 through FND-006 and EQN-001 through EQN-006
 
@@ -52,7 +54,7 @@ All five are external literature, not UQPU evidence. The two newest materials re
 - FND-002 output-information lower bounds: unchanged; state-space dimension is not readable classical storage.
 - FND-003 matched control-vs-quantum-speed-limit measurement: no new matched energy/timing data.
 - FND-004 alternative physical primitives: no new UQPU primitive or device result.
-- FND-005 QFT/elementary-particle mechanism scans: nuclear-model interpretability is a method delta, not evidence for a new particle mechanism.
+- FND-005 QFT/elementary-particle mechanism scans: nuclear-model interpretability is a method delta, not evidence for a new particle mechanism. The Grad result is a mathematical counterexample within established ideal MHD equations, not a new physical law.
 - FND-006 mathematics-first invention: equation discovery remains hypothesis generation plus falsification.
 - EQN-001 through EQN-006: no candidate equation promoted; preserve dimensional, symmetry, conservation, causality, limiting-case, held-out, counterexample and independent-validation requirements.
 
