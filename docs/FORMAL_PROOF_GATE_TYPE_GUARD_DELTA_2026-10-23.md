@@ -25,7 +25,7 @@ Five regression tests cover a null statement, null digest, uppercase digest, nul
 ## Local validation
 
 Command: `PYTHONPATH=<isolated-package> python -m unittest discover -s tests -v`  
-Result: **14 passed, 0 failed** in a temporary isolated package-shaped environment using the revised module/test content. The five added cases exercise the previously missing malformed-input paths.
+Result: **14 passed, 0 failed** in a temporary isolated package-shaped environment using a mirrored implementation/test harness. This was not a byte-for-byte checkout of the GitHub branch files; the five added cases exercise the previously missing malformed-input paths. Exact-head hosted CI remains the acceptance gate. Machine-readable record: benchmarks/results/formal-theorem-proof-metadata-gate-hardening-2026-10-23.json.
 
 This is not the full repository suite or hosted GitHub Actions CI. The exact-head workflow is expected to rerun after the branch update and must pass before merge.
 
