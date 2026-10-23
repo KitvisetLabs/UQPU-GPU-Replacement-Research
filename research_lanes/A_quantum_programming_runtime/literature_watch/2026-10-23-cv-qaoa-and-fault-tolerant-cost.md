@@ -10,7 +10,7 @@
 ## Primary sources and genuine delta
 
 1. Sriram Bharadwaj, Di Luo and Leo Zhou, “CV-QAOA: Efficient Low-Depth Quantum Optimization of Continuous Variables,” arXiv:2610.06815, submitted 2026-10-05: https://arxiv.org/abs/2610.06815
-2. Yunxin Tang et al., “Low-cost algorithm-to-execution framework for surface-code quantum computing,” arXiv:2609.10965, submitted 2026-09-10 (page text updated 2026-10-14): https://arxiv.org/abs/2609.10965
+2. Yunxin Tang et al., “Low-cost algorithm-to-execution framework for surface-code quantum computing,” arXiv:2609.10965, submitted 2026-09-10; manuscript text dated 2026-10-14: https://arxiv.org/abs/2609.10965
 
 Both are external theory/resource-model evidence, not UQPU execution measurements. The first supplies query-complexity results for continuous-variable optimization; the second connects logical algorithms to scheduling, non-Clifford supply, surface-code organization and physical-resource estimates.
 
