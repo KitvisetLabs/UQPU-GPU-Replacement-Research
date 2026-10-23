@@ -1599,3 +1599,10 @@ A–H were explicitly reviewed. E/F/G receive no new qualified material, fuel, n
 ### Same-day literature addendum — 2026-10-23
 
 A second surveillance pass found two additional material-physics sources published on 2026-10-22/23 and incorporated them into the Batch 057 literature watch: a DFT/orbital-Hamiltonian proposal for vacancy-induced topological phases in 2D semiconductors (Communications Materials, 2026-10-23), and a Physical Review X experiment reporting edge-sensitive conductance plateaus in FeTe0.55Se0.45 (2026-10-22). The first is computational and requires experimental realization; the second is an unresolved topological interpretation and needs direction/chirality-sensitive transport. Neither is promoted to a UQPU device, material, or new-law claim.
+
+
+### Same-cycle validator and foundational-physics addendum — 2026-10-23
+
+Independent review of the pending Batch 057 validator found that Python's fromisoformat parser accepts some non-RFC3339 separators even when the string ends in Z. The validator now requires an explicit RFC3339 UTC shape (T separator, seconds, optional fractional seconds, terminal Z), and the adversarial suite includes a regression case for capture and route-build timestamps. The focused suite is now expected to contain 13 tests; hosted Python 3.10–3.12 CI remains the authoritative gate.
+
+Targeted literature surveillance also integrated Gómez-Serrano, Liehr and Taylor's official arXiv preprint *Counterexamples to Grad's conjecture* (2609.24739, posted 2026-09-21). It is a mathematical counterexample to a precise ideal-MHD symmetry conjecture with supplied Lean 4 certification, not a new physical law or an operating-fusion result. RG-038 records independent proof/solver/stability/engineering gates. The source does not change FUS-001's MODEL_ONLY economics or authorize plant-capital claims. Research-Sync: pending-main
