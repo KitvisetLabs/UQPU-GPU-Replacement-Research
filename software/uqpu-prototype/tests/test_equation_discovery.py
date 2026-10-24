@@ -78,6 +78,14 @@ class EquationDiscoveryTests(unittest.TestCase):
                     with self.assertRaises(ValueError):
                         candidate.validate()
 
+    def test_nonnumeric_heldout_errors_are_rejected(self):
+        for field_name in ("heldout_baseline_error", "heldout_candidate_error"):
+            for value in ("0.1", True):
+                with self.subTest(field_name=field_name, value=value):
+                    candidate = self._candidate(**{field_name: value})
+                    with self.assertRaises(ValueError):
+                        candidate.validate()
+
     def test_negative_heldout_errors_are_rejected(self):
         for field_name in ("heldout_baseline_error", "heldout_candidate_error"):
             with self.subTest(field_name=field_name):
