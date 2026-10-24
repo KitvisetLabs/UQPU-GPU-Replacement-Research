@@ -7,13 +7,15 @@
   "consumer_lanes": ["A", "B", "C", "D", "E", "F", "H"],
   "base_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "source_branch": "research/2026-10-24-dg-resource-cost-bridge",
-  "latest_source_head_before_this_record": "f7e91291f31ca0ad6733163680df7b8c3cb6ec3d",
+  "latest_source_head_before_this_record": "20f6af72c282a9b4c0acce3e152968461d917f4e",
   "source_commits": [
     "f5b051ce219c33f5d35145d35cdf44e32b53bef9",
     "20e8001e4a091c2f66fc33b770ae8c45690627e1",
     "30f9834ddae395287240e94421c301badcf25d3e",
     "dc64078741306f8a1bb411c407e9e518a17e578b",
-    "f7e91291f31ca0ad6733163680df7b8c3cb6ec3d"
+    "f7e91291f31ca0ad6733163680df7b8c3cb6ec3d",
+    "b0a2af716b5c302fd2e814546135140a7094eba5",
+    "20f6af72c282a9b4c0acce3e152968461d917f4e"
   ],
   "artifacts": {
     "implementation": "software/uqpu-prototype/uqpu/circuit_fab_bridge.py",
@@ -47,8 +49,8 @@
   ],
   "local_validation": {
     "method": "python -m unittest discover -s tests -v on an isolated mirror of the exact module/test logic",
-    "tests": 11,
-    "passed": 11,
+    "tests": 12,
+    "passed": 12,
     "failed": 0,
     "evidence_class": "SOFTWARE_CONTRACT_ONLY"
   },
