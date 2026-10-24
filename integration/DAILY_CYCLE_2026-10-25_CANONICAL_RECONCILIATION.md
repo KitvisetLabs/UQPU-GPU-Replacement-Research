@@ -37,6 +37,58 @@
 | G — quantum-chip manufacturing equipment/software/factory systems | PR #80 bridges logical circuit resources to device/fab gates and its CI passed on its branch; it is not on main. | Consume validated Lane D requirements; do not infer a process window, yield or factory cost from logical gate counts alone. D/G co-design remains continuous. |
 | H — Ketskaew Chulamani / Kanusanan Pongpanna strategic, finance and future-industry research | Master plan and all six multilingual public-link sets are preserved. New proof-search and QSP/QSVT watches remain in open PRs. | Continue publication and financing/material/energy integration; no investment, WACC or macro-rate claim without independent evidence. Lane I is auxiliary and does not replace A–H. |
 
+## 3A. All-pairs integration scan (A–I; Lane I is auxiliary)
+
+The operating protocol calls for all 36 unordered pairs across A–I. This scan records interfaces and blockers, not evidence of a combined-system gain. A–H remain the permanent architecture; I is auxiliary.
+
+| Pair | Candidate interface | Status | Unblock / next measurable gate |
+|---|---|---|---|
+| A-B | Provider-neutral lowering after QSP/QSVT feasibility and oracle contracts | BLOCKED | QOS-QSVT-FEAS-001 then provider-neutral IR; no job submission. |
+| A-C | Accepted workload semantics to state/I/O/host-memory ledger | PARTIAL | Add a scalable workload with reconstruction, transfer and readable-output accounting. |
+| A-D | Logical queries/phases to target-native device resources | BLOCKED | Native decomposition, target calibration, gate/depth/control uncertainty. |
+| A-E | Workload execution to cooling/material/energy functional units | PROPOSED | Use accepted-task boundary; no current energy/material measurements. |
+| A-F | Quantum vs CPU/GPU/NPU accepted-task benchmark and economics | BLOCKED | Same useful output, quality gate, competitive baselines and same-target prices. |
+| A-G | Circuit resources to manufacturing equipment/factory requirements | IN_REVIEW | PR #80 bridge; requires validated Lane D native resources and process/yield evidence. |
+| A-H | Service contract and physical-compression strategy | PROPOSED | Map measured service capability to phone-boundary and lifecycle-cost contract. |
+| A-I | Auxiliary field-agnostic vehicle/levitation interface | AUXILIARY | Keep separate; no effect on permanent A-H priorities. |
+| B-C | Provider transport and state/data movement accounting | BLOCKED | Capture provider-specific input/output, transfer and reconstruction costs. |
+| B-D | Target/provider identity to device calibration and physical constraints | BLOCKED | Exact target snapshot and calibration provenance; no generic target inference. |
+| B-E | Provider workload to cooling/energy infrastructure | BLOCKED | No authorized hardware energy or cooling measurements. |
+| B-F | Provider results and billing to cost per accepted task | BLOCKED | RG-028 DATA/CREDENTIAL_BLOCKED; never mix target probability and another target's price. |
+| B-G | Provider target constraints to manufacturable test/control systems | BLOCKED | Validated target-native circuit/control contract required first. |
+| B-H | Provider procurement and capital planning | NO_ACTION | No purchasing/funding action authorized; evidence gates first. |
+| B-I | Provider services and auxiliary vehicle controls | AUXILIARY | No integrated test or relevant measured benefit. |
+| C-D | Memory, packaging, thermal and device co-design | BLOCKED | Need target-aware transfer, heat and package budgets. |
+| C-E | Storage/data movement to cooling and energy infrastructure | PROPOSED | Model energy boundary; retain MODEL_ONLY until calibrated measurements. |
+| C-F | Wall-plug energy and output-information lower bounds | IN_REVIEW | PR #81 FND-001 helper; erased-bit count must be independently justified. |
+| C-G | Data movement and memory limits to factory/test equipment | PROPOSED | Define measured I/O and test-data throughput interfaces. |
+| C-H | Phone form factor, service capacity and lifecycle costs | PROPOSED | Use measurable capability contracts, not dollar valuation as compute equivalence. |
+| C-I | Memory and telemetry for auxiliary vehicle systems | AUXILIARY | No accepted workload or mission integration. |
+| D-E | Device materials and cooling/energy environment | BLOCKED | No qualified material, neutron-damage or cooling measurement for target system. |
+| D-F | Device lifetime/yield to lifecycle economics | BLOCKED | Need target-specific reliability, replacement and calibrated CAPEX/OPEX. |
+| D-G | Device/process requirements to manufacturing equipment | IN_REVIEW | PR #80; no fab process window, yield or cost claim yet. |
+| D-H | Device materials/manufacturing to future-industry finance | PROPOSED | No capital escalation until target and process evidence passes. |
+| D-I | Device and auxiliary vehicle physical integration | AUXILIARY | No common measurable mission contract. |
+| E-F | BIO-001/FUS-001 functional-unit economics | BLOCKED | BIO accepted liquid-energy cost and FUS net delivered-electricity data absent. |
+| E-G | Catalyst/reactor/fusion components to manufacturing equipment | PROPOSED | Convert literature/design parameters into equipment specs only after validated process models. |
+| E-H | Biomass/fusion evidence to strategy, finance and publication | PROPOSED | Separate research options from commercial or investment claims. |
+| E-I | Energy/materials and auxiliary vehicle power/cooling | AUXILIARY | No measured common boundary or mission contract. |
+| F-G | Manufacturing yield, process cost and lifecycle economics | BLOCKED | Need process-window/yield evidence and non-overlapping cost accounts. |
+| F-H | Principal, time-to-evidence and strategic capital exposure | BLOCKED | FIN-001 must quantify principal/time; no WACC or macro-rate effect demonstrated. |
+| F-I | Auxiliary vehicle mission economics | AUXILIARY | No measured mission-level energy/cost comparison. |
+| G-H | Factory systems to future-industry capital planning | BLOCKED | Require validated device requirements, yield and cost evidence before financing. |
+| G-I | Factory systems for auxiliary vehicle components | AUXILIARY | No validated shared process or economic contract. |
+| H-I | Strategic plan cross-reference to auxiliary lane | AUXILIARY | Lane I remains auxiliary and cannot displace A-H. |
+
+### Selected three-or-more-lane combinations
+
+- **A+B+C — workload → provider-neutral lowering → data/state/I/O:** BLOCKED at scalable oracle/block encoding and an accepted useful-output contract. Unlock with frozen workload semantics, target-independent lowering checks, then target-aware simulation; no provider job before consent and bounded budget.
+- **A+D+G — compiler resources → device requirements → manufacturing systems:** PR #80 is the proposed bridge, but the combined chain remains IN_REVIEW until native-gate decomposition, calibration uncertainty, process window and yield/cost evidence exist.
+- **C+E+F — state/data movement → energy/cooling → accepted-task economics:** BLOCKED until full-system energy and data-movement boundaries are measured against the same accepted output.
+- **E+F+H — Pangola/biomass, fusion and finance:** BLOCKED for commercial claims; BIO-001 and FUS-001 need accepted functional units, lifecycle cost and provenance before FIN-001 can estimate financed principal/time-to-evidence.
+- **FND/EQN + A–H — formal proof/symbolic candidates → falsification → device/system/economics:** the current Batch-056 A↔F numerical fixture is the tested narrow integration. It remains SIMULATION; the wider proof-to-physical chain is not tested.
+- **A+C+D+F+G — QSP/QSVT → state/resource ledger → target/device/fab → cost:** next high-value technical chain after the QOS-QSVT-FEAS-001 decision gate; keep query/oracle assumptions, ancillas, native gates, host/I/O and accepted output distinct.
+
 ## 4. Foundational and equation-discovery status
 
 - FND-001 thermodynamic-gap accounting: open PR #81 proposes a fail-closed helper. It treats wall-plug energy per accepted task divided by an independently justified Landauer erasure floor as a diagnostic only; missing erased-bit accounting, zero accepted outputs and unsupported evidence must block promotion. Its branch tests passed, but the helper is not yet on main and no physical energy was measured.
