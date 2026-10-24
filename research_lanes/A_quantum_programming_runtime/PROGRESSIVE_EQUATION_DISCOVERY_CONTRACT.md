@@ -64,3 +64,11 @@ A pass validates at most this equation-search workflow on the tested datasets. I
 `software/uqpu-prototype/uqpu/progressive_equation_discovery.py` provides a dependency-free preregistration guard. `software/uqpu-prototype/tests/test_progressive_equation_discovery.py` covers malformed splits, unequal budgets, incorrect stage accounting, dependency errors, held-out leakage, incomplete physics checks, evidence promotion and provider/QPU execution attempts.
 
 The validator is a schema gate, not the search algorithm, a paper reproduction, or evidence that progressive discovery performs better. The first full benchmark should begin with deterministic synthetic known-law fixtures and only then expand to version-pinned public datasets with documented license and provenance.
+
+## RG-045 split-membership certificate
+
+The plan now carries a versioned DataSplits membership manifest with a frozen source-dataset SHA-256, an explicit sample-ID namespace, stable train/validation/held-out IDs, pinned schema and canonicalization versions, per-split manifest digests, and a full certificate digest. Canonical JSON uses sorted keys, UTF-8, compact separators, and sorted sample IDs.
+
+Validation fails closed on pairwise split overlap, duplicate IDs within a split, empty splits, non-string or non-normalized IDs, unsupported schema/canonicalization versions, malformed digests, and manifest/data digest mismatch. The adversarial case with different declared digests but an overlapping record ID is explicitly tested.
+
+**Evidence boundary:** this is an offline structural protocol guard (MODEL_ONLY), not proof that IDs were honestly extracted from raw dataset bytes. The actual dataset loader must independently verify the frozen source-byte digest and derive IDs from that exact dataset before a benchmark may consume the certificate. No QPU/provider calls are made.
