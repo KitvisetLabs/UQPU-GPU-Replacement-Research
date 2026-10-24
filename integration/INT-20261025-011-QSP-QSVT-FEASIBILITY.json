@@ -1,0 +1,150 @@
+{
+  "schema": "uqpu-literature-integration-v1",
+  "integration_id": "INT-20261025-011",
+  "work_id": "QOS-QSVT-FEAS-001",
+  "date": "2026-10-25",
+  "primary_owner_lane": "A",
+  "integration_owner_lane": "F",
+  "canonical_main_base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "source_branch": "research/2026-10-25-qsp-qsvt-feasibility-watch",
+  "source_commit": "67edab607a02ffc45c770a19a0bdfdab59b79f07",
+  "primary_artifact": "docs/literature_watch/2026-10-25-qsp-qsvt-feasibility-boundaries.md",
+  "evidence_class": "LITERATURE_ONLY",
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "objective": "Use published QSP/M-QSP feasibility characterizations to gate future synthesis requests and keep unknown-channel QSVT oracle costs separate from static-matrix fixtures.",
+  "sources": [
+    {
+      "id": "LIT-QSP-MQSP-DECISION-2026-05-12",
+      "title": "Polynomial time constructive decision algorithm for multivariable quantum signal processing",
+      "authors": [
+        "Yuki Ito",
+        "Hitomi Mori",
+        "Kazuki Sakamoto",
+        "Keisuke Fujii"
+      ],
+      "publication_date": "2026-05-12",
+      "venue": "Quantum 10, 2102",
+      "evidence_class": "PEER_REVIEWED_THEORY",
+      "url": "https://quantum-journal.org/papers/q-2026-05-12-2102/",
+      "scope": "Necessary-and-sufficient decision for the paper's specified pair of multivariable Laurent polynomials, with constructive parameters.",
+      "non_claim": "Does not certify arbitrary algorithms, hardware implementation, application semantics, energy, cost, or quantum advantage."
+    },
+    {
+      "id": "LIT-QSP-ADVERSARY-2026-03-13",
+      "title": "An adversary bound for quantum signal processing",
+      "authors": [
+        "Lorenzo Laneve"
+      ],
+      "publication_date": "2026-03-13",
+      "venue": "Quantum 10, article 2025",
+      "evidence_class": "PEER_REVIEWED_THEORY",
+      "url": "https://doi.org/10.22331/q-2026-03-13-2025",
+      "scope": "Characterizes univariate QSP protocols in the stated state-conversion setting; multivariate feasibility implications are theorem-scoped.",
+      "non_claim": "Do not describe a multivariate feasibility implication as a complete necessary-and-sufficient test unless the theorem establishes that."
+    },
+    {
+      "id": "LIT-UNKNOWN-CHANNEL-QSVT-2026-09-01",
+      "title": "Singular value transformation for unknown quantum channels",
+      "authors": [
+        "Ryotaro Niwa",
+        "Zane Marius Rossi",
+        "Philip Taranto",
+        "Mio Murao"
+      ],
+      "publication_date": "2026-09-01",
+      "venue": "Physical Review A 114, L030401",
+      "evidence_class": "PEER_REVIEWED_THEORY",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/321q-k5dh",
+      "scope": "Specified black-box channel model and approximate block encoding of a Hermitized Liouville representation; reported query bounds O(d^3/delta) and Omega(d/delta).",
+      "non_claim": "Bounds do not establish practical speedup, cheap hardware, readable classical memory, or universal applicability to all QSVT workloads."
+    }
+  ],
+  "canonical_control": {
+    "artifact": "docs/BATCH_056_BOUNDED_QSVT_MATRIX_FIXTURE.md",
+    "result_artifact": "benchmarks/results/batch056-qos-qsvt-matrix-fixture.json",
+    "contract_id": "QOS-AUDIT-010B4",
+    "evidence_label": "SIMULATION",
+    "polynomial_degree": 81,
+    "signal_or_block_encoding_queries": 81,
+    "phase_rotations": 82,
+    "signal_ancillas": 1,
+    "provider_jobs": 0,
+    "shots": 0,
+    "gate_decomposition": "NOT_PERFORMED",
+    "energy_and_cost": "NOT_MEASURED",
+    "interpretation": "Existing univariate fixture remains unchanged; M-QSP and unknown-channel results do not retroactively upgrade its evidence."
+  },
+  "lane_review": {
+    "A": "Proposed pre-synthesis feasibility gate; current univariate fixture remains regression control.",
+    "B": "No provider calls; future unknown-channel path must freeze oracle/query and target assumptions.",
+    "C": "Keep Hilbert-space dimension separate from readable classical memory; add host/state/I/O accounting after lowering.",
+    "D": "No device requirements until native decomposition and target-aware resources are available.",
+    "E": "BIO-001 and FUS-001 remain evidence-gated; no new material, fuel, net-electricity, or cooling measurements.",
+    "F": "Separate feasibility, synthesis, query, compile, and accepted-task cost; no cost advantage measured.",
+    "G": "D/G co-design receives validated native-gate/control requirements only after A/B/D gates.",
+    "H": "Strategic and financial interpretation remains downstream of measured engineering/economic evidence.",
+    "I": "Auxiliary manifest lane; does not replace or suppress permanent A-H architecture."
+  },
+  "foundational_programs": {
+    "FND-001": "No wall-plug energy or erasure measurement added.",
+    "FND-002": "No output-information lower-bound change; dimension is not readable storage.",
+    "FND-003": "No matched control-versus-quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No QFT/particle mechanism or anomaly established.",
+    "FND-006": "Mathematical feasibility tools only; no new physical law.",
+    "EQN-001_to_EQN-006": "No new physical equation proposed or promoted."
+  },
+  "invariants": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "mission_effects": {
+    "INV-029": "No Data-Center-to-One-Phone closure.",
+    "INV-030": "No Pangola material substitution or elemental transmutation claim.",
+    "INV-031": "No accepted liquid-energy product or full-cost result.",
+    "INV-032": "No net reliable fusion-electricity or lifecycle-cost result.",
+    "INV-033": "No measured principal, interest, WACC, or time-to-evidence effect.",
+    "INV-034": "Adds theorem-scoped mathematical feasibility checks.",
+    "INV-035": "Preserves proof/algorithm feasibility as distinct from empirical physical-law validation."
+  },
+  "next_gate": {
+    "id": "QOS-QSVT-FEAS-001",
+    "required_steps": [
+      "Freeze polynomial fixtures, domains, variables, operator counts, and expected classifications before implementation.",
+      "Retain Batch-056 univariate regression and its existing numerical certificate.",
+      "Implement the published M-QSP decision algorithm from the full mathematical specification with pinned dependencies.",
+      "Cross-check feasible/infeasible cases and constructed parameters against an independent theorem-scoped check.",
+      "Record counterexamples, deterministic replay, wall time, host resources, and all failed attempts.",
+      "For unknown-channel QSVT, separately record d, delta, oracle assumptions, query count and diamond-norm criterion.",
+      "Only then lower to provider-neutral IR and collect target-aware native-gate, memory/I/O, accepted-output, energy and same-target cost evidence."
+    ],
+    "falsifier": "The gate fails a known feasible/infeasible fixture, is not deterministic, or provides no measurable reduction in wasted synthesis/compile resources under a frozen matched set.",
+    "acceptance_rule": "A feasibility pass permits only the next software gate; it does not imply physical execution, useful-output acceptance, advantage, or a new physical law."
+  },
+  "safety_and_authorization": {
+    "paid_qpu_jobs_authorized": false,
+    "provider_credentials_used": false,
+    "real_hardware_submissions": 0
+  },
+  "preservation": {
+    "root_directives_00_through_06": "preserved",
+    "kanusanan_pongpanna_model": "preserved",
+    "strategic_plan_references_and_thai_english_chinese_japanese_korean_german_links": "preserved",
+    "directory_depth_limit": 16,
+    "large_append_only_history_rewritten": false,
+    "canonical_main_sync": "PENDING_REVIEW_IN_PULL_REQUEST",
+    "sync_debt": [
+      "This source commit is not on main until the PR is merged.",
+      "README still labels 2026-10-15 as the latest verified implementation checkpoint.",
+      "RESEARCH_GAPS.md, WORKLOG.md and scoreboards remain append-only reconciliation debt; they were not rewritten from partial history."
+    ]
+  }
+}
