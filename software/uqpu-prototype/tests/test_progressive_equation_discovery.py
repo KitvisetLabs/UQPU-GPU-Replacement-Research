@@ -1,4 +1,5 @@
 import unittest
+from dataclasses import replace
 
 from uqpu.progressive_equation_discovery import (
     DataSplits,
@@ -33,6 +34,18 @@ def stage(stage_id, parents=(), evaluations=5, **overrides):
     return DiscoveryStage(**values)
 
 
+def split_data(**overrides):
+    values = dict(
+        source_dataset_sha256="e" * 64,
+        sample_id_namespace="synthetic-row-id-v1",
+        train_ids=("train-001", "train-002"),
+        validation_ids=("validation-001", "validation-002"),
+        heldout_ids=("heldout-001", "heldout-002"),
+    )
+    values.update(overrides)
+    return DataSplits.from_ids(**values)
+
+
 def plan(**overrides):
     budget = ResourceBudget(10, 60, 12, 100)
     values = dict(
@@ -44,7 +57,7 @@ def plan(**overrides):
         evaluator_version="evaluator-v1",
         evaluation_metric="normalized held-out error",
         optimization_direction="minimize",
-        data_splits=DataSplits("b" * 64, "c" * 64, "d" * 64),
+        data_splits=split_data(),
         one_shot_budget=budget,
         progressive_budget=budget,
         stages=(stage("S1", evaluations=4), stage("S2", parents=("S1",), evaluations=6)),
@@ -59,15 +72,65 @@ class ProgressiveEquationDiscoveryTests(unittest.TestCase):
         candidate.validate()
         self.assertFalse(candidate.physical_law_promotion_allowed)
 
-    def test_train_validation_and_heldout_hashes_must_be_distinct(self):
-        candidate = plan(data_splits=DataSplits("b" * 64, "b" * 64, "d" * 64))
-        with self.assertRaisesRegex(ValueError, "distinct"):
+    def test_distinct_hashes_do_not_hide_overlapping_record_ids(self):
+        splits = split_data()
+        candidate = plan(data_splits=replace(splits, validation_ids=("train-001", "validation-002")))
+        with self.assertRaisesRegex(ValueError, "pairwise disjoint"):
             candidate.validate()
 
-    def test_malformed_split_digest_fails_closed(self):
-        candidate = plan(data_splits=DataSplits("NOT_A_HASH", "c" * 64, "d" * 64))
-        with self.assertRaisesRegex(ValueError, "SHA-256"):
+    def test_duplicate_ids_within_one_split_fail_closed(self):
+        splits = replace(split_data(), train_ids=("train-001", "train-001"))
+        candidate = plan(data_splits=splits)
+        with self.assertRaisesRegex(ValueError, "duplicate"):
             candidate.validate()
+
+    def test_empty_split_fails_closed(self):
+        splits = replace(split_data(), heldout_ids=())
+        candidate = plan(data_splits=splits)
+        with self.assertRaisesRegex(ValueError, "nonempty tuple"):
+            candidate.validate()
+
+    def test_malformed_source_dataset_digest_fails_closed(self):
+        splits = replace(split_data(), source_dataset_sha256="NOT_A_HASH")
+        candidate = plan(data_splits=splits)
+        with self.assertRaisesRegex(ValueError, "source_dataset_sha256"):
+            candidate.validate()
+
+    def test_nonstring_or_type_colliding_identifiers_fail_closed(self):
+        splits = replace(split_data(), train_ids=("train-001", 1))
+        candidate = plan(data_splits=splits)
+        with self.assertRaisesRegex(ValueError, "string identifiers"):
+            candidate.validate()
+
+    def test_manifest_digest_must_match_canonical_membership(self):
+        splits = replace(split_data(), train_manifest_sha256="f" * 64)
+        candidate = plan(data_splits=splits)
+        with self.assertRaisesRegex(ValueError, "manifest/data digest mismatch"):
+            candidate.validate()
+
+    def test_schema_and_canonicalization_versions_are_pinned(self):
+        with self.assertRaisesRegex(ValueError, "schema_version"):
+            plan(data_splits=replace(split_data(), schema_version="future-schema")).validate()
+        with self.assertRaisesRegex(ValueError, "canonicalization_version"):
+            plan(data_splits=replace(split_data(), canonicalization_version="unsorted-json")).validate()
+
+    def test_manifest_digest_is_order_independent_and_reproducible(self):
+        first = split_data()
+        second = DataSplits.from_ids(
+            source_dataset_sha256="e" * 64,
+            sample_id_namespace="synthetic-row-id-v1",
+            train_ids=("train-002", "train-001"),
+            validation_ids=("validation-002", "validation-001"),
+            heldout_ids=("heldout-002", "heldout-001"),
+        )
+        self.assertEqual(first.train_manifest_sha256, second.train_manifest_sha256)
+        self.assertEqual(first.manifest_sha256, second.manifest_sha256)
+
+    def test_source_dataset_digest_is_bound_into_each_manifest(self):
+        first = split_data()
+        second = split_data(source_dataset_sha256="f" * 64)
+        self.assertNotEqual(first.train_manifest_sha256, second.train_manifest_sha256)
+        self.assertNotEqual(first.manifest_sha256, second.manifest_sha256)
 
     def test_comparison_arms_must_have_equal_resource_caps(self):
         candidate = plan(progressive_budget=ResourceBudget(10, 61, 12, 100))
@@ -145,7 +208,6 @@ class ProgressiveEquationDiscoveryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "must be a tuple"):
             candidate.validate()
 
-
     def test_non_boolean_heldout_unblinding_flag_fails_closed(self):
         candidate = plan(heldout_unblinded_before_freeze=None)
         with self.assertRaisesRegex(ValueError, "must be boolean false"):
@@ -173,7 +235,7 @@ class ProgressiveEquationDiscoveryTests(unittest.TestCase):
             "conservation: not_applicable: static toy relation has no exchange process",
             "causality: not_applicable: static scalar mapping has no propagation model",
         )
-        candidate = plan(stages=(stage("S1", evaluations=4, constraint_audit=bad), stage("S2", parents=("S1",), evaluations=6)))
+        candidate = plan(stages=(stage("S1", evaluations=4), stage("S2", parents=("S1",), evaluations=6, constraint_audit=bad)))
         with self.assertRaisesRegex(ValueError, "must not include an extra reason"):
             candidate.validate()
 
