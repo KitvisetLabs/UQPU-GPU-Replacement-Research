@@ -39,7 +39,7 @@ Only a complete, measured full-system record is eligible for FND-001 gap analysi
 
 ## Validation and evidence
 
-Fourteen focused unit-test methods cover the accepted-task denominator, absent erasure accounting, no accepted outputs, zero-erasure floor, below-floor boundary audit, provenance gates, MODEL_ONLY and subsystem exclusions, malformed counts/temperature/energy/erasure inputs, and the explicit no-inference rule. They are committed for hosted execution; no local repository checkout was possible in this environment. Exact-head GitHub Actions remains authoritative and is not presumed to pass.
+Fifteen focused unit-test methods cover the accepted-task denominator, absent erasure accounting, no accepted outputs, zero-erasure floor, below-floor boundary audit, provenance gates, MODEL_ONLY and subsystem exclusions, malformed counts/temperature/energy/erasure inputs, and the explicit no-inference rule. They are committed for hosted execution; no local repository checkout was possible in this environment. Exact-head GitHub Actions remains authoritative and is not presumed to pass.
 
 This is a software-contract result, not a measured FND-001 result. No workload energy, erased-bit count, heat, cooling, quantum device, provider, QPU job, shot, cost or energy advantage was measured by this cycle.
 
