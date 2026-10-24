@@ -483,15 +483,15 @@
   "stale_canonical_artifacts": [
     {
       "path": "README.md",
-      "issue": "Latest checkpoint still says 2026-10-15/16."
+      "issue": "Latest verified implementation checkpoint remains 2026-10-15/16; this is still the last merged implementation, so update only after a newer implementation merges."
     },
     {
       "path": "integration/COLD_START_HANDOFF_MANIFEST.json",
-      "issue": "Prepared 2026-10-18 and canonical_start_sha predates current main."
+      "issue": "Prepared 2026-10-18 and canonical_start_sha 588500f647bb42a43549a5ce38072198f61071ab predates current main c7b5958af58fad04a101ef5c6abf6a29293c867e."
     },
     {
       "path": "RESEARCH_GAPS.md",
-      "issue": "Latest visible dated gap update is 2026-10-19; active Oct-24/25 work remains pending PRs."
+      "issue": "Latest visible dated update is RG-034 on 2026-10-19; pending Oct-24/25 branch blockers are not yet integrated into the canonical living gap ledger."
     }
   ],
   "sync_status": "PENDING_REVIEW_NOT_MERGED",
