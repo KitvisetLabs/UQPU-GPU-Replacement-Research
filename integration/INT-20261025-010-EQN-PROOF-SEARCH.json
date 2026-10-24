@@ -4,7 +4,7 @@
   "primary_owner": "H",
   "integration_owner": "F",
   "canonical_main_base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
-  "status": "LITERATURE_WATCH_PUBLISHED_ON_RESEARCH_BRANCH",
+  "status": "PULL_REQUEST_OPEN_CI_PENDING",
   "evidence_label": "LITERATURE_ONLY",
   "primary_artifact": "docs/literature_watch/2026-10-25-formal-proof-search-and-physics-constrained-equation-discovery.md",
   "objective": "Add formal-proof feedback as an optional verifier for mathematical claims in the equation-discovery pipeline without promoting proof, fit, simulation, or third-party results into physical-law evidence.",
@@ -110,6 +110,17 @@
       "RESEARCH_GAPS.md not rewritten; dated literature artifact and this integration contract carry the new gap until safe append-only synchronization.",
       "WORKLOG.md not rewritten; sync debt remains for a later complete-history append.",
       "docs/EIGHT_LANE_SCOREBOARD.md and the newer A-I scoreboard were not rewritten in this focused literature cycle."
+    ],
+    "documentation_sync_debt": [
+      "README.md still labels 2026-10-15 as the latest verified implementation checkpoint while main has later literature commits and the FND-001 work remains in an open PR. Refresh only after exact-head CI and merge; do not present pending work as verified.",
+      "RESEARCH_GAPS.md not rewritten; dated literature artifact and this integration contract carry the new gap until safe append-only synchronization.",
+      "WORKLOG.md not rewritten; sync debt remains for a later complete-history append.",
+      "docs/EIGHT_LANE_SCOREBOARD.md and the newer A-I scoreboard were not rewritten in this focused literature cycle."
     ]
+  },
+  "pull_request": {
+    "number": 82,
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/82",
+    "head_sha": "5ff28eb3a60d0b098d61432a47a97f8486d97aa9"
   }
 }
