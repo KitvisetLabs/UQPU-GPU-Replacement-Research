@@ -87,12 +87,10 @@ class EquationHypothesis:
         ):
             if value is None:
                 continue
-            try:
-                error = float(value)
-            except (TypeError, ValueError) as exc:
-                raise ValueError(f"{name} must be finite and >= 0") from exc
-            if not math.isfinite(error) or error < 0:
-                raise ValueError(f"{name} must be finite and >= 0")
+            if isinstance(value, bool) or not isinstance(value, (int, float)):
+                raise ValueError(f"{name} must be a finite numeric value >= 0")
+            if not math.isfinite(float(value)) or value < 0:
+                raise ValueError(f"{name} must be a finite numeric value >= 0")
 
     @property
     def has_heldout_improvement(self) -> bool:
