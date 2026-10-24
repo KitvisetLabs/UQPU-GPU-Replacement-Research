@@ -766,3 +766,26 @@ latency/host/data-movement accounting and cost per accepted useful output.
 explicit user consent, credentials, bounded jobs/shots/cost and an execution
 record. The execution phase is disabled; this artifact is not QPU evidence or
 permission to submit a free or paid job.
+
+## RG-046 — FND-ERG-001 finite-information ergotropy certificate and system-energy separation
+**Status:** PROPOSED / LITERATURE_ONLY / IMPLEMENTATION_NOT_STARTED  
+**Date:** 2026-10-25  
+**Owner:** Lane F; Lane A remains Priority #1
+
+**Objective:** Reproduce and adversarially test the finite-shot SDP lower certificate for ergotropy under partial information, then determine whether it can serve as a separate state-resource field in FND-001 thermodynamic-gap accounting.
+
+**Source:** Pagliaro et al., “Certifying ergotropy under partial information,” Physical Review Letters 137, 130401 (published 2026-09-21), DOI 10.1103/pl26-g6vy; arXiv v2 revised 2026-09-28, https://arxiv.org/abs/2603.18828. The authors assume a known Hamiltonian and use finite-shot confidence regions for a limited set of observable expectations. Their IBM processor example is third-party literature evidence, not a UQPU result.
+
+**Current evidence:** literature review and a preregistered follow-up specification only. No UQPU code implementation, local reproduction, provider call, system-energy measurement, or economic comparison has been performed.
+
+**Missing:** paper-level derivation; frozen small-state fixtures with exact density matrices and Hamiltonians; independently calculated exact ergotropy; SDP solver/version/residuals; finite-shot confidence-coverage tests; calibration/model-mismatch counterexamples; independent reproduction; and a separate metered energy-per-accepted-task ledger.
+
+**Next experiment:** (1) reproduce the paper's two-SDP method and known-Hamiltonian assumption; (2) freeze passive, rank-deficient, noisy and information-poor fixtures; (3) compare every certificate against exact ergotropy and test preregistered confidence coverage across repeated shot draws; (4) retain failures for bound violations, coverage failures, invalid observable definitions, solver tolerance and failed monotonicity; (5) only after independent reproduction, design a separately authorized target experiment.
+
+**Acceptance:** the certified lower bound never exceeds exact ergotropy beyond declared numerical tolerance; the confidence procedure passes a preregistered coverage criterion; the paper's retained-unitary safeguard is required for any monotonicity claim; independent reproduction succeeds. A zero bound for information-poor data is an acceptable negative result.
+
+**Boundary:** ergotropy is extractable average work for a specified state and Hamiltonian, not processor/facility electricity consumption. Do not subtract it from metered system energy or claim energy efficiency without compatible physical boundaries and a matched CPU/GPU/NPU useful-output baseline. No paid QPU job is authorized; credentials, a bounded budget and explicit consent remain mandatory.
+
+**Artifacts:** research_lanes/F_economics_benchmarks_evidence_integration/FND-ERG-001_2026-10-25.md; docs/literature_watch/2026-10-25-fnd001-ergotropy-certification.md; integration/INT-20261025-013-FND001-ERGOTROPY-CERTIFICATION.md; integration/INT-20261025-013-FND001-ERGOTROPY-CERTIFICATION.json.
+
+**Related invariants:** INV-029–035 and INV-025–027 remain unchanged and evidence-gated. This gap does not imply a new physical law, quantum advantage, biomass/material/fuel/fusion result, financial improvement, or Data-Center-to-One-Phone achievement.
