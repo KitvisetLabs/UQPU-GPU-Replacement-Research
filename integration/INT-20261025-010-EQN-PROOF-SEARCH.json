@@ -36,14 +36,30 @@
       "evidence_class": "PREPRINT",
       "url": "https://arxiv.org/abs/2605.23754",
       "non_claim": "Sampled numerical constraint checks are not global proof or independent material qualification."
+    },
+    {
+      "id": "LIT-2026-09-11-GRAPH-BASED-CONSTITUTIVE-DISCOVERY",
+      "title": "Beyond empirical models: Discovering new constitutive laws in solids with graph-based equation discovery",
+      "authors": [
+        "Hao Xu",
+        "Yuntian Chen",
+        "Dongxiao Zhang"
+      ],
+      "publication_date": "2026-09-11",
+      "venue": "Science Advances 12(37), eaec0989",
+      "evidence_class": "PEER_REVIEWED_METHOD",
+      "url": "https://doi.org/10.1126/sciadv.aec0989",
+      "supplementary_source_commit": "0324ea06e699039850589f53618842d1e7603fbc",
+      "scope": "Graph-based equation discovery of material-specific constitutive models from multisource experimental data, reported for alloy-steel strain-rate effects and lithium-metal deformation.",
+      "non_claim": "Improved dataset fit is not a universal/fundamental law, Pangola material substitution, fusion-material qualification, or UQPU advantage."
     }
   ],
   "lane_review": {
     "A": "Proof-check exact compiler/workload transformations where applicable; implement EQN-PROOF-001 fixture only after frozen acceptance criteria.",
     "B": "Provider-neutral path unchanged; no credentials, target calls, QPU jobs, shots, or billing.",
     "C": "Preserve output-information/readable-memory distinction; no memory equivalence claim.",
-    "D": "Constraint inspection may filter device/material models; no device or fabrication result.",
-    "E": "BIO-001 and FUS-001 accounting can benefit from verified identities; no accepted fuel or net-electricity evidence.",
+    "D": "Graph-based constitutive discovery may generate material-model candidates; no device/fabrication or qualified material result.",
+    "E": "Candidate method only; no Pangola substitution, accepted bio-oil, fusion-material, or energy result.",
     "F": "Matched total-resource and failed-search accounting; no measured cost advantage or finance effect.",
     "G": "D/G co-design continues; manufacturing consequences require validated device requirements.",
     "H": "Primary owner of literature synthesis and publication; strategic plan remains context, not scientific proof.",
@@ -89,7 +105,7 @@
   },
   "mission_effects": {
     "INV-029": "No Data-Center-to-Phone closure; only a proposed correctness-verification method.",
-    "INV-030": "No elemental transmutation or qualified Pangola-derived material substitution.",
+    "INV-030": "Method-level constitutive discovery can guide candidate screening; no Pangola-derived critical-material substitution or elemental transmutation.",
     "INV-031": "No saleable bio-oil yield or full-cost result.",
     "INV-032": "No net reliable fusion-electricity or lifecycle-cost result.",
     "INV-033": "No measured principal, interest, WACC, or time-to-evidence effect.",
@@ -128,5 +144,17 @@
     "manifest_observed": "integration/eight_lane_manifest.json currently declares schema uqpu-nine-lane-manifest-v2, lists Lane I as a lane, and enumerates 36 A-I pairs.",
     "cycle_treatment": "This run reviews A-H as the permanent mission architecture and treats I as auxiliary per the current run directive; no lane was deleted or silently reclassified.",
     "governance_sync_debt": "Reconcile manifest, README, and scoreboard wording in a dedicated governance change. Do not silently demote/delete I or allow it to replace A-H."
+  },
+  "supplemental_source_commit": "0324ea06e699039850589f53618842d1e7603fbc",
+  "supplemental_follow_up": {
+    "id": "EQN-CONST-001",
+    "status": "PROPOSED_NOT_IMPLEMENTED",
+    "required_steps": [
+      "Freeze dataset hashes, units, train/validation/held-out splits, allowed variables/operators, physical constraints and incumbent baselines.",
+      "Compare graph-based search with deterministic symbolic regression under matched wall-clock and host-resource budgets.",
+      "Search counterexamples and out-of-domain loading paths; record complexity, uncertainty, false discoveries and failed candidates.",
+      "Require independent data or experiment before any material-law promotion."
+    ],
+    "acceptance_rule": "A held-out fit must also satisfy explicit physical constraints; no automatic physical-law or technology promotion."
   }
 }
