@@ -4,7 +4,7 @@
 **Canonical main base SHA:** c7b5958af58fad04a101ef5c6abf6a29293c867e  
 **Source branch:** research/2026-10-24-eqn-opt-001  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/76  
-**Source head SHA at this record:** f5733f76f5351b2296d6b7563797ed1aeb2c80b2  
+**Source head SHA at this record:** 49cba110efe43e7b10ad9f51fe2e6566f3cd4081  
 **Evidence class:** MODEL_ONLY synthetic candidate screening + LITERATURE_ONLY source audit
 
 ## Pending files
@@ -13,6 +13,7 @@
 - software/uqpu-prototype/tests/test_optimization_law_benchmark.py
 - research_lanes/A_quantum_programming_runtime/EQN-OPT-001_OPTIMIZATION_LAW_BENCHMARK.md
 - docs/literature_watch/2026-10-24-equation-discovery-source-status-audit.md
+- research_lanes/E_materials_energy_cooling_infrastructure/LITERATURE_WATCH_2026-10-24_SYMBOLIC_REGRESSION_MATERIAL_INVERSE_DESIGN.md
 - integration/2026-10-24-cycle-handoff.md
 
 ## Source commit mapping (pending)
@@ -28,6 +29,9 @@
 - 0609a2f75cad2bb394fa5bdfeb23056af9ef55be — extend literature watch with adaptive equation search and materials inverse design
 - a217326299cc94c0a1d33f8c85f1a95d2653bc4c — correct CoSR provenance after official arXiv HTML audit
 - f5733f76f5351b2296d6b7563797ed1aeb2c80b2 — correct CoSR provenance wording in cycle handoff
+- e5e0d492d253e1cdf54fb63ffaa12b2d30f389a4 — narrow source-status audit and cross-reference pending watches
+- 257a00ae78e3f20353e99c9d1b5576d5590c28e0 — add primary-owned Lane E materials inverse-design watch
+- 49cba110efe43e7b10ad9f51fe2e6566f3cd4081 — separate Lane E materials watch from Lane H audit
 
 ## CI state at handoff
 
@@ -39,7 +43,7 @@ The latest updated source head `dd8d692da0432972ee4bfa510ec79c73b698a434` has fr
 2. If merged, reconcile every source SHA to its resulting main SHA and update the cold-start manifest to include the merged artifacts.
 3. Keep EQN-OPT-001 at MODEL_ONLY; the finite-grid evaluator is not an equation-discovery system or physical-law validation.
 4. Numeric-grid fingerprints do not bind source-data provenance, split-generation timing, callable code, or search-budget parity.
-5. Resolve the CoSR PDF/version provenance question: the current official arXiv HTML displays CoSR content and no withdrawal notice, while a third-party review reports a PDF/body mismatch. Do not call this an official withdrawal; compare the actual v2 PDF, final journal version, code/data and any official correction notice before scoring CoSR.
+5. Resolve the CoSR PDF/version provenance question: current official arXiv HTML displays CoSR content and no withdrawal notice, while a third-party review reports a PDF/body mismatch; do not call this an official withdrawal. Separately review the new Lane E alloy-inverse-design article as a method lead only, with a carbon functional-unit test required before any substitution claim.
 6. Reproduce the thermodynamic speed-limit bound on an analytic small system before using it in FND-001/FND-003.
 7. Preserve INV-029 through INV-035, INV-025/026/027, root directives 00–06, all six-language strategic-plan links, and the no-paid-QPU authorization boundary.
 
