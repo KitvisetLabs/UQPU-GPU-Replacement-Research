@@ -56,6 +56,16 @@ The method represents candidate equations as directed graphs and searches/optimi
 
 **Falsifiable follow-up — EQN-CONST-001:** select one published constitutive dataset and freeze train/validation/held-out splits, units, allowed variables/operators, dimensional constraints, symmetry/objectivity rules, conservation/thermodynamic constraints, and baseline empirical laws before search. Compare graph-based search with deterministic symbolic regression and the current equation-discovery baseline under matched wall-clock/host-resource budgets. Search counterexamples and out-of-domain loading paths; record false discoveries, complexity, uncertainty and all failed candidates. Require independent data or experiments before material-law promotion. Failure to beat the incumbent on held-out prediction while satisfying physical constraints rejects the candidate, regardless of training fit.
 
+### 5. ProofEvolve — reuse of kernel-checked proof subgraphs
+
+Wenqian Ye et al., “ProofEvolve: Neuro-Symbolic Evolution for Formal Automated Theorem Proving,” [arXiv:2608.26334](https://arxiv.org/abs/2608.26334), submitted 2026-08-26; preprint at access time.
+
+The distinct method idea is to retain explicit partial proof directed-acyclic graphs (DAGs), evolve them through decompositions/repairs/schema recombinations, and let the Lean kernel check each proof transition. The authors report the highest average solve rate among the systems they evaluate on three competition-level Lean benchmarks. This suggests a candidate way to reuse verified mathematical substructures instead of treating each failed proof attempt as disposable.
+
+**Limitations:** the result is scoped to the paper's benchmarks, formalization choices, Lean environment and compute/search budget. Kernel verification certifies proof terms relative to the formal statement and axioms; it does not validate a physical model, prove that an equation describes nature, or establish UQPU performance. The preprint is not independent evidence for any UQPU, biomass, fusion or finance claim.
+
+**Falsifiable follow-up:** in a pinned Lean environment, select one small EQN/FND algebraic obligation, freeze its statement and assumptions, and record baseline proof-search budget. Extract a kernel-checked proof subgraph, reuse it on a second held-out obligation with a changed context, and compare proof acceptance, residual subgoals, search tokens/compute and failure rate against a no-reuse baseline. Reject the reuse claim if the kernel check fails, hidden axioms differ, the held-out statement is not equivalent to the preregistered target, or total search cost does not improve. Keep physical validation and experiment as separate later gates.
+
 ## Synthesis: the missing boundary is typed verification, not another “AI discovered physics” label
 
 These four method signals support a layered pipeline:
@@ -129,6 +139,6 @@ INV-025/026/027 remain evidence-gated. Lane I in the current repository manifest
 
 ## Other surveillance lanes and non-claims
 
-The targeted review also checked symbolic-regression control, physics-informed/constitutive modeling, automated discovery, optimization-law work, QFI/no-go literature, and relevant energy/material/fusion/finance terms. This cycle added the peer-reviewed graph-based constitutive-discovery paper above as a method lead; it does not change BIO-001, FUS-001, FIN-001, provider-execution, or Data-Center-to-Phone evidence because the reported datasets are not Pangola/fusion/UQPU measurements. No directly relevant source dated 2026-10-24 or 2026-10-25 changed those project evidence gates. This is a literature-search boundary, not proof that no such source exists.
+The targeted review also checked symbolic-regression control, physics-informed/constitutive modeling, automated discovery, optimization-law work, QFI/no-go literature, and relevant energy/material/fusion/finance terms. This cycle records the peer-reviewed graph-based constitutive-discovery paper and the ProofEvolve preprint above as method leads; it does not change BIO-001, FUS-001, FIN-001, provider-execution, or Data-Center-to-Phone evidence because the reported datasets are not Pangola/fusion/UQPU measurements. No directly relevant source dated 2026-10-24 or 2026-10-25 changed those project evidence gates. This is a literature-search boundary, not proof that no such source exists.
 
 No real-QPU, material, fuel, net-electricity, financing, physical-law, or quantum-advantage result is claimed. No paid provider job was submitted. No credentials were used. No new physical law is proposed by this watch.
