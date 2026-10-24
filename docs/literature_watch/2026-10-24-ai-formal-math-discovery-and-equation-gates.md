@@ -23,9 +23,11 @@ The material delta for UQPU is not that AI has discovered a new physical law. It
 - The public mathematical corpus has version/correction history. Any future UQPU reuse must pin the exact paper, repository revision, theorem statement, Lean environment and dependency hashes; a catalogue count is not a truth certificate.
 - No source above supplies a UQPU workload result, target execution, material/fuel/electricity measurement, net-cost advantage, or independent physical replication.
 
-## Proposed follow-up: EQN-FORMAL-001 (proposal only; not yet implemented)
+## EQN-FORMAL-001 — schema-level gate implemented on this review branch
 
 **Question:** Can a proof-carrying candidate format reduce false acceptance of algebraic equation-discovery outputs without hiding empirically false or non-identifiable models?
+
+**Implemented in this PR branch:** `software/uqpu-prototype/uqpu/equation_discovery.py` now records formal-verification status, formal-system/statement/assumption/proof provenance, a pinned held-out split hash, counterexample-search status/provenance, a discriminating experiment protocol, and independent-replication status/provenance. Validation rejects missing or malformed proof/split hashes and incomplete completed-stage records. The physical-candidate gate now requires held-out improvement, a completed counterexample search with no counterexample found, and independent replication; a formal proof by itself cannot promote a concept. Focused tests were added in `software/uqpu-prototype/tests/test_equation_discovery.py`. The proof assistant itself is not invoked by this schema, and hosted CI is still pending.
 
 **Candidate pipeline:**
 
@@ -88,4 +90,4 @@ INV-025/026/027 and the 100× / 100,000,000× moonshots remain unproven. Existin
 3. Reproduce the Oct-23 ancilla-QFI theorem separately on exactly solvable parameterized states before using it to constrain any UQPU architecture claim; resolve the paper's notation/assumption boundaries first.
 4. Keep BIO-001, FUS-001 and FIN-001 at their current evidence class until measured inputs and complete functional-unit economics exist.
 
-**Run conclusion:** methodological research delta only. No project code was executed, no formal proof was run in this cycle, and no project scientific or economic evidence was promoted.
+**Run conclusion:** literature delta plus schema-level validation code/tests on a review branch. No Lean proof, simulation, physical experiment, or provider execution was run by this cycle; hosted CI is pending. No project scientific or economic evidence was promoted.
