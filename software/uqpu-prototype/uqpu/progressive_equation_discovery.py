@@ -7,6 +7,8 @@ not implement CoSR, validate a paper's claims, or determine physical truth.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import hashlib
+import json
 import re
 
 
@@ -48,22 +50,189 @@ class ResourceBudget:
             _positive_int(getattr(self, field_name), field_name)
 
 
+_SPLIT_SCHEMA_VERSION = "uqpu-split-membership-v1"
+_SPLIT_CANONICALIZATION_VERSION = "sorted-json-utf8-v1"
+
+
+def _json_sha256(payload: object) -> str:
+    canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
+def _validated_sample_ids(values: object, split_name: str) -> set[str]:
+    if not isinstance(values, tuple) or not values:
+        raise ValueError(f"{split_name}_ids must be a nonempty tuple")
+    if any(
+        not isinstance(value, str)
+        or not value
+        or value != value.strip()
+        or any(character in value for character in ("\n", "\r", "\0"))
+        for value in values
+    ):
+        raise ValueError(f"{split_name}_ids must contain normalized, nonempty string identifiers")
+    if len(set(values)) != len(values):
+        raise ValueError(f"{split_name}_ids must not contain duplicate identifiers")
+    return set(values)
+
+
+def _split_manifest_digest(
+    source_dataset_sha256: str,
+    sample_id_namespace: str,
+    split_name: str,
+    sample_ids: tuple[str, ...],
+    schema_version: str,
+    canonicalization_version: str,
+) -> str:
+    return _json_sha256(
+        {
+            "canonicalization_version": canonicalization_version,
+            "sample_id_namespace": sample_id_namespace,
+            "sample_ids": sorted(sample_ids),
+            "schema_version": schema_version,
+            "source_dataset_sha256": source_dataset_sha256,
+            "split_name": split_name,
+        }
+    )
+
+
 @dataclass(frozen=True)
 class DataSplits:
-    """Committed hashes for non-overlapping train, validation and held-out data."""
+    """Versioned record-membership certificate bound to a frozen dataset digest.
 
-    train_sha256: str
-    validation_sha256: str
-    heldout_sha256: str
+    This validates identifier-level disjointness and deterministic manifest
+    hashes. The data loader must still independently hash the raw dataset bytes
+    and derive these stable IDs from that exact dataset before accepting a run.
+    """
+
+    source_dataset_sha256: str
+    sample_id_namespace: str
+    train_ids: tuple[str, ...]
+    validation_ids: tuple[str, ...]
+    heldout_ids: tuple[str, ...]
+    train_manifest_sha256: str
+    validation_manifest_sha256: str
+    heldout_manifest_sha256: str
+    schema_version: str = _SPLIT_SCHEMA_VERSION
+    canonicalization_version: str = _SPLIT_CANONICALIZATION_VERSION
+
+    @classmethod
+    def from_ids(
+        cls,
+        *,
+        source_dataset_sha256: str,
+        sample_id_namespace: str,
+        train_ids: tuple[str, ...],
+        validation_ids: tuple[str, ...],
+        heldout_ids: tuple[str, ...],
+    ) -> "DataSplits":
+        _nonempty(sample_id_namespace, "sample_id_namespace")
+        if not isinstance(source_dataset_sha256, str) or not _SHA256.fullmatch(source_dataset_sha256):
+            raise ValueError("source_dataset_sha256 must be a lowercase SHA-256 digest")
+        for name, values in (
+            ("train", train_ids),
+            ("validation", validation_ids),
+            ("heldout", heldout_ids),
+        ):
+            _validated_sample_ids(values, name)
+        train_set, validation_set, heldout_set = map(
+            set, (train_ids, validation_ids, heldout_ids)
+        )
+        if (
+            train_set & validation_set
+            or train_set & heldout_set
+            or validation_set & heldout_set
+        ):
+            raise ValueError("train, validation and held-out sample IDs must be pairwise disjoint")
+        schema_version = _SPLIT_SCHEMA_VERSION
+        canonicalization_version = _SPLIT_CANONICALIZATION_VERSION
+        candidate = cls(
+            source_dataset_sha256=source_dataset_sha256,
+            sample_id_namespace=sample_id_namespace,
+            train_ids=train_ids,
+            validation_ids=validation_ids,
+            heldout_ids=heldout_ids,
+            train_manifest_sha256=_split_manifest_digest(
+                source_dataset_sha256, sample_id_namespace, "train", train_ids,
+                schema_version, canonicalization_version
+            ),
+            validation_manifest_sha256=_split_manifest_digest(
+                source_dataset_sha256, sample_id_namespace, "validation", validation_ids,
+                schema_version, canonicalization_version
+            ),
+            heldout_manifest_sha256=_split_manifest_digest(
+                source_dataset_sha256, sample_id_namespace, "heldout", heldout_ids,
+                schema_version, canonicalization_version
+            ),
+            schema_version=schema_version,
+            canonicalization_version=canonicalization_version,
+        )
+        candidate.validate()
+        return candidate
 
     def validate(self) -> None:
-        values = (self.train_sha256, self.validation_sha256, self.heldout_sha256)
-        names = ("train_sha256", "validation_sha256", "heldout_sha256")
-        for name, value in zip(names, values):
-            if not isinstance(value, str) or not _SHA256.fullmatch(value):
-                raise ValueError(f"{name} must be a lowercase SHA-256 digest")
-        if len(set(values)) != len(values):
-            raise ValueError("train, validation and held-out data hashes must be distinct")
+        if not isinstance(self.source_dataset_sha256, str) or not _SHA256.fullmatch(self.source_dataset_sha256):
+            raise ValueError("source_dataset_sha256 must be a lowercase SHA-256 digest")
+        _nonempty(self.sample_id_namespace, "sample_id_namespace")
+        if self.schema_version != _SPLIT_SCHEMA_VERSION:
+            raise ValueError("unsupported split manifest schema_version")
+        if self.canonicalization_version != _SPLIT_CANONICALIZATION_VERSION:
+            raise ValueError("unsupported split manifest canonicalization_version")
+
+        train_set = _validated_sample_ids(self.train_ids, "train")
+        validation_set = _validated_sample_ids(self.validation_ids, "validation")
+        heldout_set = _validated_sample_ids(self.heldout_ids, "heldout")
+        if (
+            train_set & validation_set
+            or train_set & heldout_set
+            or validation_set & heldout_set
+        ):
+            raise ValueError("train, validation and held-out sample IDs must be pairwise disjoint")
+
+        for name, declared, ids in (
+            ("train", self.train_manifest_sha256, self.train_ids),
+            ("validation", self.validation_manifest_sha256, self.validation_ids),
+            ("heldout", self.heldout_manifest_sha256, self.heldout_ids),
+        ):
+            if not isinstance(declared, str) or not _SHA256.fullmatch(declared):
+                raise ValueError(f"{name}_manifest_sha256 must be a lowercase SHA-256 digest")
+            expected = _split_manifest_digest(
+                self.source_dataset_sha256,
+                self.sample_id_namespace,
+                name,
+                ids,
+                self.schema_version,
+                self.canonicalization_version,
+            )
+            if declared != expected:
+                raise ValueError(f"{name} manifest/data digest mismatch")
+
+    def to_manifest(self) -> dict[str, object]:
+        self.validate()
+        return {
+            "schema_version": self.schema_version,
+            "canonicalization_version": self.canonicalization_version,
+            "source_dataset_sha256": self.source_dataset_sha256,
+            "sample_id_namespace": self.sample_id_namespace,
+            "splits": {
+                "train": {
+                    "sample_ids": sorted(self.train_ids),
+                    "manifest_sha256": self.train_manifest_sha256,
+                },
+                "validation": {
+                    "sample_ids": sorted(self.validation_ids),
+                    "manifest_sha256": self.validation_manifest_sha256,
+                },
+                "heldout": {
+                    "sample_ids": sorted(self.heldout_ids),
+                    "manifest_sha256": self.heldout_manifest_sha256,
+                },
+            },
+        }
+
+    @property
+    def manifest_sha256(self) -> str:
+        """Stable digest of the full split certificate."""
+        return _json_sha256(self.to_manifest())
 
 
 @dataclass(frozen=True)
