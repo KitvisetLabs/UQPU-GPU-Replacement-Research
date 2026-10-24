@@ -93,3 +93,9 @@ The source branch appends **RG-046** to RESEARCH_GAPS.md after fetching the full
 - The eight high-visibility root directives 00–06, docs/KANUSANAN_PONGPANNA_MODEL.md, STRATEGIC_PLAN_REFERENCES.md and all six public master-plan language editions remain unmodified.
 
 **Next highest-value gate:** keep Lane A's QSP/QSVT feasibility test as Priority #1. In parallel, independently reproduce FND-ERG-001 Stage 0 and freeze exact small-state fixtures, solver tolerances, shot budgets and coverage criteria before any implementation or provider use.
+
+## Cold-start CI metadata correction — 2026-10-25
+
+The cold-start audit on the prior source head `ecdaad1f9134f87fb9f3f73881aaebcc2d42dd09` failed closed for exactly one governance reason: `missing_commit_trailer:Research-Sync: pending-main`. The audit reported the lane/pair scan but marked the handoff incomplete. This is not evidence against the ergotropy mathematics and must not be recorded as a scientific negative result.
+
+This follow-up source commit carries the required exact trailer `Research-Sync: pending-main`. The audit must be rerun on the resulting exact HEAD; until its conclusion is observed, the source PR remains CI-PENDING and not merge-ready. The separate pending-main record in PR #90 must be refreshed to the resulting source SHA before review. No code, physical-energy measurement, QPU job or evidence-class promotion is implied.
