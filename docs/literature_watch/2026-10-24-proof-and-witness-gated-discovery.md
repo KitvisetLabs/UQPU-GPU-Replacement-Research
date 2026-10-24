@@ -1,4 +1,4 @@
-# Literature watch — 2026-10-24: proof- and witness-gated scientific discovery
+# Literature watch — 2026-10-24: verifiable PDE modeling for equation discovery
 
 **Accessed:** 2026-10-24  
 **Primary owner:** Lane H — strategy, finance and future-industry research  
@@ -7,73 +7,68 @@
 **Project evidence promotion:** none  
 **Canonical starting main SHA:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`
 
-## Why this surveillance delta matters
+## Why this delta is distinct
 
-The 2026-10-23 watch already covered optimization-law discovery and an assumption-scoped ancilla-QFI boundary. This follow-up addresses a complementary bottleneck: how to keep AI-generated mathematical, physical-model and engineering candidates from being accepted merely because they fit data or look plausible. The useful new connection is the explicit proof-/witness-gated workflow demonstrated in recent formal-verification research, combined with feedback-trained equation generation.
+The main-branch literature watch dated 2026-10-23 covers optimization-law discovery and an assumption-scoped ancilla-QFI boundary. Parallel PR #65 covers AI-mathematics candidate ranking, proof verification, novelty assessment and physical validation. This note is deliberately narrower: it tracks an applied-mathematics route that can turn informal partial differential equation (PDE) tasks into machine-checkable specifications and solver-ready code.
 
-These papers do not establish a new physical law, UQPU advantage, new quantum capability, material substitution, cheap fuel, fusion economics or lower financing rate. Their transferable contribution is a validation architecture.
+The result is a method lead for EQN/FND workflow design, not a newly discovered physical law or a UQPU result.
 
-## Sources reviewed
+## Primary source reviewed
 
-1. Romy Peled, Daniel Kroening, Michael Tautschnig and Yakir Vizel, **“Large Lemma Miners: Can LLMs Do Induction Proofs for Hardware?”**, IJCAI 2026, pp. 3988–3998, DOI: 10.24963/ijcai.2026/444. Official proceedings: https://www.ijcai.org/proceedings/2026/444. The paper reports LLM-generated candidate inductive arguments checked by a symbolic tool; at least one prompting setup succeeded on 90% of its problem set after sufficient reprompting.
-2. Mingkai Miao, Guangyu Hu, Ziyi Yang and Hongce Zhang, **“IC3-Evolve: Proof-/Witness-Gated Offline LLM-Driven Heuristic Evolution for IC3 Hardware Model Checking”**, IJCAI 2026, pp. 271–278, DOI: 10.24963/ijcai.2026/31. Official proceedings: https://ijcai.org/proceedings/2026/31. The workflow accepts a SAFE result only with an independently checked certificate and requires replayable counterexample traces for UNSAFE results; proposed heuristic patches are offline and slot-restricted.
-3. Boxiao Wang et al., **“LLM-Based Scientific Equation Discovery via Physics-Informed Token-Regularized Policy Optimization”**, arXiv:2602.10576, submitted 2026-02-11. Official preprint: https://arxiv.org/abs/2602.10576. PiT-PO combines physics-informed constraints with token-level penalties and feedback-based policy optimization for candidate equation generation; reported results include benchmark tasks and turbulence-model discovery.
-4. Eric Jiang et al., **“From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier”**, arXiv:2607.07779, submitted 2026-07-08. Official preprint: https://arxiv.org/abs/2607.07779. This position paper distinguishes success on well-defined formal problems from the much harder, open-ended task of discovering new mathematics.
-5. Wuyang Chen, **“Verifiable PDE Reasoning and Modeling with Neurosymbolics,”** IJCAI 2026 Early Career Spotlight, pp. 8144–8149, DOI: 10.24963/ijcai.2026/903. Official proceedings: https://ijcai.org/proceedings/2026/903. It describes a semantics-first pipeline that formalizes informal PDE tasks, synthesizes solver-ready code, delegates subgoals to external solvers and retrieves formal theorems through Lean/Mathlib-aware search.
+Wuyang Chen, **“Verifiable PDE Reasoning and Modeling with Neurosymbolics,”** Proceedings of IJCAI 2026, Early Career Spotlight, pp. 8144–8149, DOI 10.24963/ijcai.2026/903. Official proceedings: https://ijcai.org/proceedings/2026/903.
 
-## Genuine novelty and limits
+The paper describes a semantics-first approach that formalizes informal PDE problems, synthesizes solver-ready code, decomposes control tasks for external solvers, and uses semantics-aware Lean/Mathlib theorem retrieval to assist formalization. The proposed connection is important for physical modeling because PDEs appear in plasma, fluid, heat-transfer, materials and device models.
 
-The material synthesis is **not** that AI can declare equations true. It is that candidate generation and candidate acceptance can be separated operationally:
+## Genuine novelty, evidence class and limitations
 
-- generate candidate equation, lemma, algorithm or implementation change;
-- encode applicable dimensional, domain, symmetry, conservation and causality constraints;
-- use the right checker for the claim: algebra/proof checker for formal identities, counterexample witness for violated properties, and reference solver/experiment for empirical models;
-- freeze held-out regimes before ranking candidates;
-- retain rejected candidates, counterexamples and failed proofs;
-- promote only the specific claim that passed its own gate.
+The useful delta is the explicit interface between natural-language model requirements, formal specifications, solver execution and theorem retrieval. UQPU can adapt that interface to make assumptions and domains machine-readable before an equation or constitutive model is evaluated.
 
-The PDE paper extends the method toward applied mathematics: informal problem statements, solver code and proof-search can be connected through explicit semantics. Its stated systems are research methods, not a blanket proof that arbitrary generated PDEs are well-posed, numerically stable or empirically faithful. The formal-verification papers concern hardware transition systems and discrete properties, not general empirical physics. A proof of a model's internal property does not prove that the model describes nature. PiT-PO's reported equation fit and benchmark results are third-party results; they are not independent replication, not a UQPU result and not evidence that a discovered turbulence model generalizes to new materials, fusion plasmas or quantum devices. The research-frontier survey itself cautions that open-ended discovery is harder than solving preformalized problems.
+The source is a methods/position-style research contribution in an IJCAI Early Career Spotlight track. It is not a universal certificate for generated PDEs. A formal proof establishes a statement under encoded assumptions; numerical solver convergence establishes a property of a computation; neither alone establishes that the selected PDE is an empirically adequate model of a real device, material, plasma or fuel process. Solver residuals, boundary conditions, stability assumptions, uncertainty and physical validation remain separate gates.
 
-## Proposed falsifiable UQPU follow-up
+No post-2026-10-23 result found in this expanded scan changes UQPU's current physical, provider, or economic acceptance criteria. This is a newly connected method signal, not a claim that the source paper was published today.
 
-Create a small, offline equation-discovery audit suite before attempting a broader generator:
+## Falsifiable UQPU follow-up — EQN-PDE-001
 
-1. **Known-answer set:** generate synthetic data from a preregistered family of equations with known dimensions, symmetries and (where applicable) conserved quantities. Include degenerate, noisy and underdetermined cases.
-2. **Hard constraints:** reject dimensionally inconsistent candidates and violations of explicitly required symmetries/conservation laws before predictive ranking. Do not impose a conservation law where the modeled system does not support it.
-3. **Held-out tests:** reserve parameter ranges, initial conditions and boundary conditions that the generator never sees. Report interpolation and extrapolation separately.
-4. **Counterexample gate:** search the declared domain for a counterexample to each claimed identity or invariant. Store the smallest found counterexample and its seed. A failed search is not a proof of absence.
-5. **Claim-appropriate verification:** use symbolic or proof-assistant checks for mathematical identities; reference numerical solvers for approximate constitutive models; and identify a discriminating physical measurement for any claim that changes established physics.
-6. **PDE subtrack:** use manufactured solutions for a small, preregistered PDE family. Compare generated formal specifications and solver code against a hand-checked oracle; measure residuals, convergence and boundary-condition compliance on held-out parameter/boundary regimes. Where a formal theorem is claimed, verify its assumptions and proof separately from numerical agreement.
-7. **Baselines:** compare against a simple symbolic-regression baseline and a fixed-generator baseline under equal data, search budget and compute budget. Record false discoveries, rejected candidates, runtime and held-out error.
-8. **Stop rule:** no candidate is promoted to a physical law or engineering input based on fit, internal consistency or AI confidence alone. A changed physical claim requires a distinct observable, uncertainty budget, preregistered falsifier and independent validation path.
+Build a small offline manufactured-solution benchmark before connecting generated PDE models to real engineering decisions:
 
-**Acceptance condition:** every candidate marked “verified” must carry a machine-readable claim type, assumptions, constraint results, held-out metrics, counterexample-search status and artifact hashes. Any invalid candidate accepted by the hard gates is a test failure. Passing this suite would validate only the audit machinery on the tested cases, not establish a new physical law or a technology advantage.
+1. Freeze a set of PDEs with known analytic/manufactured solutions, units, domain, boundary/initial conditions and any justified conservation or symmetry properties.
+2. Have the candidate pipeline translate each verbal task into a formal specification and solver input. Keep a hand-checked oracle hidden from the generator.
+3. Evaluate dimensional consistency, boundary-condition compliance, residual norms, convergence under mesh/time-step refinement and theorem-assumption coverage.
+4. Hold out parameter ranges, boundary-condition combinations and at least one equation family. Report interpolation and extrapolation separately.
+5. Search for counterexamples, malformed domains, unstable discretizations and candidates that satisfy a formalized statement but not the intended physical specification. Preserve the smallest failing fixture and seed.
+6. Compare with a conventional hand-authored solver and a fixed-generator baseline under matched data, wall-clock, host-compute and validation budgets.
+7. Record false discoveries, solver failures, proof failures and the full cost of validation. A successful synthetic benchmark remains computational evidence only; a physical claim requires a discriminating observable and independent measurement.
 
-## A–H relevance and status
+**Falsifier:** the pipeline accepts an incorrect formalization, violates a declared boundary/constraint, fails a preregistered convergence or held-out gate, or cannot distinguish an intentionally incorrect model from the oracle. Any such event blocks promotion.
 
-- **A — Workloads/compiler/runtime (Priority #1):** make the same proof/witness pattern part of compiler-lowering and workload-contract validation. Next gate remains exact-commit hosted confirmation of the independently routed probes, then a stronger scalable equivalence verifier.
-- **B — Cloud/QPU integration:** provider-neutral lowering and read-only target snapshots remain separate from paid execution. A provider snapshot or successful submission is not quality acceptance.
-- **C — Memory/state/data movement:** record state size, serialization, host/device transfers and output reconstruction; a formal state-space count is not readable classical-memory capacity.
-- **D — Devices/chips/process/packaging:** require device-model assumptions and measurable observables before turning a candidate relation into a process or device requirement.
-- **E — Biomass/materials/bio-oil/fusion/cooling:** apply the same gate to mass/energy balances and constitutive models; keep Pangola/material hypotheses, bio-oil TEA and fusion envelopes as models until measured accepted-function evidence exists.
-- **F — Economics/evidence/integration:** charge candidate search, validation, host compute, repeats and time-to-evidence to the total workflow. Do not label a faster search as lower WACC; shorter capital lock-up and reduced financed principal are separate, measurable channels.
-- **G — Manufacturing equipment/factory systems:** use certificate/witness-gated process-window and yield-model changes, co-designed with Lane D; no manufacturing benefit follows from a mathematical fit alone.
-- **H — Strategic/financial publication:** publish reproducible gates, negative results, uncertainty and capital-per-validated-milestone implications; preserve the multilingual Kanusanan Pongpanna Model references.
+**Acceptance artifact:** machine-readable claim type, assumptions, units, source/specification hashes, solver and checker versions, held-out metrics, counterexample status, proof status, resource ledger and explicit non-claims. A green result must not silently promote a PDE model to physical truth.
 
-## Invariant contribution
+## Cross-lane relevance
 
-- **INV-029:** improves the validation route toward a measurable useful-service contract; no physical compression result is claimed.
-- **INV-030:** strengthens candidate screening for material-function models; no carbon-derived material substitution is demonstrated.
-- **INV-031:** requires complete accepted-liquid mass/energy and upgrading boundaries; no commercial bio-oil cost result is claimed.
-- **INV-032:** protects net-delivered-electricity models from being promoted on plasma-gain or fit alone; no commercial fusion claim is made.
-- **INV-033:** makes time-to-evidence and validation cost auditable; no reduction in WACC is inferred.
-- **INV-034:** links mathematics-first invention to explicit proof, counterexample and experiment gates.
-- **INV-035:** permits broad equation generation while requiring physical constraints, held-out predictions, falsifiers and independent validation.
+- **A — Quantum programming/compiler/runtime (Priority #1):** use claim-aware formal contracts for compiler and workload transformations; PDE work is an offline discovery subtrack, not a replacement for the QOS/QSVT acceptance gate.
+- **B — Cloud/QPU:** formal model or solver success does not authorize provider submission; preserve provider/target provenance and the no-paid-job boundary.
+- **C — Memory/state/data movement:** include state, serialization, input/output, transfers and reconstruction when a PDE workflow is mapped to compute; state-space size is not readable classical storage.
+- **D — Device/chip/process/packaging:** use verified assumptions and measurable observables before translating a PDE-derived requirement into device constraints.
+- **E — Biomass/materials/bio-oil/fusion/cooling:** potential future uses include heat/mass transport, reactor/plasma, upgrading and material-process models; none of BIO-001, FUS-001 or material qualification advances without validated inputs and measurements.
+- **F — Economics/evidence/integration:** count generation, proof attempts, solver runs, host compute and validation delay in cost-per-accepted-output and time-to-evidence accounting.
+- **G — Manufacturing equipment/factory systems:** pair any device/process model with Lane D; formal consistency alone does not establish process-window, yield or factory economics.
+- **H — Strategy/finance/publication:** preserve reproducible artifacts, negative results and the multilingual Kanusanan Pongpanna Model context; do not treat AI-agent/funding references as proof.
+- **Lane I — additional canonical field-agnostic vehicle research:** retained as a separate contract-only lane; this PDE result gives it no lift, propulsion or energy evidence and does not replace any A–H lane.
 
-## Negative evidence and surveillance boundary
+## INV-029–035 and foundational status
 
-No new UQPU workload result, real-QPU run, independently reproduced physical anomaly, material characterization, accepted bio-oil/fuel measurement, net fusion-electricity measurement or project-finance outcome was obtained in this literature pass. No provider pricing or performance figures were mixed across targets. Paid QPU execution remains unauthorized absent credentials, an explicit bounded budget and user consent.
+- **INV-029:** offers a route to more auditable service/device models; no data-center-to-phone physical compression is demonstrated.
+- **INV-030:** could later structure carbon-material process models; no elemental transmutation or functional material substitution is claimed.
+- **INV-031:** may inform future reaction/transport models only after qualified feedstock and accepted-liquid mass/energy/cost data exist.
+- **INV-032:** may inform plasma/heat/blanket models only with assumption-scoped validation; no net delivered fusion electricity or commercial cost is established.
+- **INV-033:** charge validation compute and time-to-evidence; no WACC or economy-wide interest-rate reduction is inferred.
+- **INV-034:** adds a testable applied-mathematics route from formal specification to solver and device/system consequence.
+- **INV-035:** permits AI-generated alternative equations while preserving dimensional, symmetry, conservation, causality, held-out, falsification and independent-validation gates.
 
-## Next highest-value gate
+FND-001 thermodynamic-gap accounting, FND-002 output-information lower bounds, FND-003 matched control-vs-speed-limit measurement, FND-004 alternative physical primitives, FND-005 QFT/particle scans and FND-006 mathematics-first invention remain separate work items. EQN-001–006 still require generator → constraints → evaluator → held-out/generalization → counterexample → proof/simulation → discriminating experiment → independent replication → system consequence → economics. This literature item creates no new result for those programs by itself.
 
-Implement and test the small known-answer/counterexample audit suite offline, including the PDE manufactured-solution subtrack, then attach its machine-readable output to the existing EQN/FND ledger. In parallel, resolve the Lane A exact-commit hosted-CI/equivalence gate. Do not widen to physical experiments until the offline acceptance and provenance contract is reproducible.
+## Negative evidence and next gate
+
+No UQPU workload, real-QPU, material, accepted bio-oil, net-fusion-electricity, or project-finance measurement was produced. No physical law is promoted. No provider probability is combined with another target's price. Paid QPU execution remains unauthorized without credentials, a bounded budget and explicit user consent.
+
+**Next highest-value gate:** implement EQN-PDE-001 as a deterministic offline manufactured-solution test harness, connect its result schema to the existing equation-discovery ledger without duplicating PR #65's general AI-mathematics audit, and require exact-head hosted CI before integration.
