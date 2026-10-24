@@ -111,6 +111,8 @@ class DiscoveryStage:
             if key not in _REQUIRED_CONSTRAINTS or key in seen:
                 raise ValueError("constraint audit must cover each required constraint exactly once")
             if status == "checked":
+                if len(parts) != 2:
+                    raise ValueError(f"{key} checked audit must not include an extra reason field")
                 seen[key] = status
             elif status == "not_applicable":
                 if len(parts) != 3 or not parts[2].strip():
@@ -163,6 +165,12 @@ class ProgressiveDiscoveryPlan:
             raise ValueError("grammar_sha256 must be a lowercase SHA-256 digest")
         if not isinstance(self.optimization_direction, str) or self.optimization_direction not in {"minimize", "maximize"}:
             raise ValueError("optimization_direction must be minimize or maximize")
+        if not isinstance(self.data_splits, DataSplits):
+            raise ValueError("data_splits must be a DataSplits instance")
+        if not isinstance(self.one_shot_budget, ResourceBudget):
+            raise ValueError("one_shot_budget must be a ResourceBudget instance")
+        if not isinstance(self.progressive_budget, ResourceBudget):
+            raise ValueError("progressive_budget must be a ResourceBudget instance")
         self.data_splits.validate()
         self.one_shot_budget.validate()
         self.progressive_budget.validate()
@@ -170,8 +178,8 @@ class ProgressiveDiscoveryPlan:
             raise ValueError("one-shot and progressive arms must have identical resource budgets")
         if not isinstance(self.pre_registered, bool) or not self.pre_registered:
             raise ValueError("the experiment must be preregistered before held-out evaluation")
-        if self.heldout_unblinded_before_freeze:
-            raise ValueError("held-out data was unblinded before the plan was frozen")
+        if not isinstance(self.heldout_unblinded_before_freeze, bool) or self.heldout_unblinded_before_freeze:
+            raise ValueError("heldout_unblinded_before_freeze must be boolean false; held-out data cannot be unblinded before the plan is frozen")
         if not isinstance(self.counterexample_search_required, bool) or not self.counterexample_search_required or not isinstance(self.failed_candidates_retained, bool) or not self.failed_candidates_retained:
             raise ValueError("counterexample search and failed-candidate retention are mandatory")
         if self.evidence_class != "MODEL_ONLY":
@@ -186,6 +194,8 @@ class ProgressiveDiscoveryPlan:
         seen: set[str] = set()
         total_evaluations = 0
         for index, stage in enumerate(self.stages):
+            if not isinstance(stage, DiscoveryStage):
+                raise ValueError("each stages entry must be a DiscoveryStage instance")
             stage.validate()
             if stage.stage_id in seen:
                 raise ValueError("stage_id values must be unique")
