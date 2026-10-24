@@ -59,3 +59,15 @@ The paper's two-SDP certificate and finite-shot confidence construction are a li
 - Review PR #89, inspect exact-head cold-start and relevant documentation checks, then merge only through normal repository review/branch protections. If merged, record source-SHA-to-main-SHA mapping and rerun the cold-start audit. If blocked, keep this pending record and update the blocker rather than claiming synchronization.
 
 This is a separate pending-main summary PR created to preserve discoverability of the source work. It does not itself merge or synchronize the source artifact.
+
+## Cycle follow-up — 2026-10-25 CI and handoff audit
+
+Observed after source-head refresh:
+
+- Source PR #89 cold-start run 40137453753 failed with the single explicit error `missing_commit_trailer:Research-Sync: pending-main`; its generated audit also records all 36 integration pairs and lanes A–I as inspected, and does not claim inaccessible branch/fork coverage.
+- The pending-main sync branch had the same trailer failure on run 40133374780. This is a governance/commit-metadata failure, not a scientific or unit-test failure. Do not suppress the audit or relabel it as a science failure.
+- On sync branch head `ca6b690f55fae51e8d18c09609b315197996b7f6`, Python 3.10/3.11/3.12 unit/invariant/CLI jobs passed. Qiskit verification, reference benchmark, bounded routed probes, no-submit target transpilation, QSP phase reconstruction and routed statevector probes were observed passing; several QSP/QSVT long-running/queued jobs had not yet completed at inspection.
+- The immediate repair is a follow-up commit whose message includes the exact required trailer `Research-Sync: pending-main`, preserving this audit and rerunning cold-start. This record remains PENDING REVIEW; it does not merge PR #89 or claim that source files are on main.
+- The handoff manifest `integration/COLD_START_HANDOFF_MANIFEST.json` still points to older canonical SHA `588500f647bb42a43549a5ce38072198f61071ab`. Update it only in a separately reviewed change after reconciling the current lane/gap state; do not silently rewrite the large append-only gap ledger.
+
+**Next gate:** confirm the trailer-qualified follow-up passes cold-start, then obtain completed exact-head CI for PR #89 and review its source-to-main mapping. No provider job or paid QPU execution is authorized.
