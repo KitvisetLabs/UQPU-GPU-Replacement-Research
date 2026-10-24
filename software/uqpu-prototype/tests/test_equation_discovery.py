@@ -73,6 +73,31 @@ class EquationDiscoveryTests(unittest.TestCase):
         ):
             self.assertIn(name, fields)
 
+    def test_non_finite_heldout_errors_are_rejected(self):
+        for field, value in (
+            ("heldout_baseline_error", float("inf")),
+            ("heldout_baseline_error", float("nan")),
+            ("heldout_candidate_error", float("inf")),
+            ("heldout_candidate_error", float("nan")),
+        ):
+            with self.subTest(field=field, value=value):
+                with self.assertRaisesRegex(ValueError, "finite non-negative"):
+                    self._candidate(**{field: value}).validate()
+
+    def test_invalid_independent_validation_counts_are_rejected(self):
+        for value in (-1, 0.5, 1.5, True, False):
+            with self.subTest(value=value):
+                with self.assertRaisesRegex(ValueError, "non-negative integer"):
+                    self._candidate(independent_validation_count=value).validate()
+
+    def test_invalid_baseline_cannot_unlock_physical_candidate_gate(self):
+        candidate = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT",
+            independent_validation_count=1,
+            heldout_baseline_error=float("inf"),
+        )
+        self.assertFalse(candidate.ready_for_physical_candidate_claim)
+
 
 if __name__ == "__main__":
     unittest.main()
