@@ -1,4 +1,4 @@
-# Research Batch 057 — multi-oracle M-QSP boundary and physics-informed equation discovery
+# Research Batch 057 — equation-discovery validation gate and QSP/QSVT cross-watch reconciliation
 
 **Date:** 2026-10-25  
 **Primary owner:** Lane A  
@@ -9,7 +9,7 @@
 
 ## Objective
 
-Advance Lane A from the newest canonical Batch 056 state without confusing a static single-matrix QSVT numerical fixture with a multi-oracle algorithm. Add a typed preflight contract for the recently found M-QSP transfer-function paper, while cross-linking a peer-reviewed physics-informed symbolic-regression result to INV-035/FND-006.
+Advance Lane A from the newest canonical Batch 056 state without confusing a static single-matrix QSVT numerical fixture with a multi-oracle algorithm. The M-QSP preprint was already documented in `docs/LITERATURE_WATCH_2026-10-17_MULTIVARIATE_QSP.md`; this batch refines that existing follow-up into a typed per-oracle preflight contract. The newly added literature delta is a peer-reviewed physics-informed symbolic-regression result, cross-linked to INV-035/FND-006.
 
 Primary literature article: `docs/literature_watch/2026-10-25-mqsp-and-physics-informed-symbolic-regression.md`.
 
@@ -19,7 +19,9 @@ Batch 056 remains the latest merged bounded QSVT matrix fixture found on main. I
 
 This batch does not replace Batch 056, and the new multi-oracle paper is not required to validate the existing univariate fixture.
 
-## New work contract: QOS-MQSP-001
+## Refined follow-up contract: QOS-MQSP-001
+
+This identifier refines the existing October 17 follow-up; it does not claim a newly discovered paper or a new algorithm implementation.
 
 **Purpose:** determine whether a small multi-oracle workload has a valid M-QSP transfer-function construction and whether its weighted oracle cost can be measured fairly against matched alternatives.
 
@@ -49,7 +51,7 @@ Reject or defer the M-QSP path if the theorem assumptions do not hold, the indep
 
 ## Equation-discovery cross-link: EQN-PISR-001
 
-The September 8 peer-reviewed particle-interface study is retained as a method example only. Its delayed damped oscillatory force closure is specific to the reported fluid-interface experiments. A future transfer to material/energy modeling must freeze the incumbent, units, allowed operators, physical constraints, held-out conditions, resource budget and counterexamples before search. Independent material/energy data are mandatory.
+The September 8 peer-reviewed particle-interface study is the new-to-this-watch literature item and is retained as a method example only. Its delayed damped oscillatory force closure is specific to the reported fluid-interface experiments. A future transfer to material/energy modeling must freeze the incumbent, units, allowed operators, physical constraints, held-out conditions, resource budget and counterexamples before search. Independent material/energy data are mandatory.
 
 ## A–H lane status for this batch
 
