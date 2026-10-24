@@ -64,6 +64,44 @@ class OptimizationLawBenchmarkTests(unittest.TestCase):
         self.assertEqual(result.heldout.optimum_set_match_rate, 1.0)
         self.assertEqual(result.heldout.ordering.agreement, 1.0)
 
+    def test_grid_fingerprints_are_stable_and_sensitive_to_contract(self):
+        first = evaluate_objective_candidate(
+            self.reference, self.reference, [0, 1], [2, 3], self.decisions
+        )
+        repeat = evaluate_objective_candidate(
+            self.reference, self.reference, [0, 1], [2, 3], self.decisions
+        )
+        changed = evaluate_objective_candidate(
+            self.reference, self.reference, [0, 1], [2, 3], self.decisions,
+            tolerance=1e-8,
+        )
+        self.assertEqual(first.grid_contract_sha256, repeat.grid_contract_sha256)
+        self.assertNotEqual(first.grid_contract_sha256, changed.grid_contract_sha256)
+        for fingerprint in (
+            first.train_contexts_sha256,
+            first.heldout_contexts_sha256,
+            first.decision_grid_sha256,
+            first.grid_contract_sha256,
+        ):
+            self.assertEqual(len(fingerprint), 64)
+        self.assertNotEqual(
+            first.train_contexts_sha256, first.heldout_contexts_sha256
+        )
+
+    def test_overlapping_or_duplicate_contexts_and_decisions_are_rejected(self):
+        with self.assertRaisesRegex(ValueError, "disjoint"):
+            evaluate_objective_candidate(
+                self.reference, self.reference, [0, 1], [1, 2], self.decisions
+            )
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            evaluate_objective_candidate(
+                self.reference, self.reference, [0, 0], [1], self.decisions
+            )
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            evaluate_objective_candidate(
+                self.reference, self.reference, [0], [1], (-2, -2, 0)
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
