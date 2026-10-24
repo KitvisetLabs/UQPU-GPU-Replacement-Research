@@ -55,10 +55,10 @@ The persisted arXiv resource-count fixture contains only the source-reported Tof
 - independent-equivalence requirement;
 - missing target snapshot and process-window blockers;
 - target/workload/quality/measurement-window mismatch rejection;
-- malformed hashes, impossible yield fractions, negative/non-finite costs and invalid gate counts;
+- malformed hashes, impossible yield fractions, negative/non-finite costs, invalid gate counts and physical-qubit counts below logical-qubit counts;
 - the rule that a complete contract is only READY_FOR_INTEGRATION_REVIEW.
 
-Local isolated validation on the exact module/test logic: 11 unittest methods pass. This is software-contract evidence only; full repository CI on the exact PR head remains authoritative.
+Local isolated validation on the exact module/test logic: 12 unittest methods pass. This is software-contract evidence only; full repository CI on the exact PR head remains authoritative.
 
 ## Eight-lane integration status
 
