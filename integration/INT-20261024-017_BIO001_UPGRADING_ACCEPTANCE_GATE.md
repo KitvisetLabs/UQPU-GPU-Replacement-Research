@@ -6,10 +6,18 @@
 **Canonical main at cycle start:** c7b5958af58fad04a101ef5c6abf6a29293c867e  
 **Evidence class:** external peer-reviewed experiment + external TEA model; no UQPU project evidence promotion  
 **Status:** PROPOSED / PR REVIEW REQUIRED
+**Supplementary surveillance update:** 2026-10-25
+**Supplementary source commit:** 5b08f0293d3651ec6abcbc8a1d1568e863a02135
 
 ## Integrated delta
 
 The two primary studies reinforce a measurable boundary for BIO-001: optimize the final accepted liquid-energy function, not crude bio-oil yield. The straw study supplies process variables and quality hazards for hydrotreating; the microalgae HTL study shows that cost-optimal settings can differ from yield-optimal settings and change with scale. Their numerical results are feedstock- and route-specific and must not be applied to Pangola without new measurements.
+
+## 2026-10-25 supplementary coproduct delta
+
+A peer-reviewed *Biomass and Bioenergy* 2026 study (DOI: https://doi.org/10.1016/j.biombioe.2026.109296) reports catalytic co-pyrolysis of a 1:1 microalgae–hardwood blend, bio-oil yields of 22.1 wt% without catalysis, 23.9 wt% in-situ and 23.5 wt% ex-situ at 500 °C, and a catalyst-loaded biochar tested for methylene-blue adsorption. This is a **candidate coproduct function only**: it does not establish Pangola fuel economics, a commercial adsorbent market, safe reuse, or an incremental net credit.
+
+Before any BIO-001 credit is allowed, require a frozen functional unit, verified off-take or avoided-treatment cost, regeneration and disposal costs, leaching/contaminant qualification, uncertainty, and an explicit allocation rule. Do not assign the same char mass full credits for fuel, adsorption, soil amendment, carbon storage and material precursor simultaneously. Evidence class remains external literature; no project evidence is promoted.
 
 ## Shared interface
 
