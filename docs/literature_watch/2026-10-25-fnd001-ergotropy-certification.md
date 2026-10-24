@@ -5,6 +5,7 @@
 **Priority execution lane:** A — quantum programming, workloads, compiler and runtime  
 **Feeds:** A, B, C, E, F, H; FND-001, FND-002, FND-003; EQN-001, EQN-004, EQN-006; INV-025–027 and INV-029–035  
 **Evidence class:** LITERATURE_ONLY — peer-reviewed theory/method with a third-party quantum-processor demonstration  
+**Lane F primary work item:** research_lanes/F_economics_benchmarks_evidence_integration/FND-ERG-001_2026-10-25.md  
 **UQPU evidence promotion:** none
 
 ## Primary source and dated evidence
