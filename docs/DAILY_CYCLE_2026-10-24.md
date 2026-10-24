@@ -14,9 +14,9 @@ The root mission, Pangola/carbon, bio-oil, fusion-electricity, interest/R&D-fina
 ## Work completed in this cycle
 
 1. **Lane A gate review:** confirmed `QOS-AUDIT-010B25` is still only a read-only target-snapshot preregistration. No credentialed environment, live snapshot, native-conformance certificate or owner authorization was available. A dated Lane A gate artifact now states the exact unblock path and retains the no-submit boundary.
-2. **Equation-discovery guard:** strengthened `EquationHypothesis.validate()` so non-finite held-out errors and invalid replication counts (fractional values or booleans) fail closed. Added adversarial regression tests. This prevents an infinite baseline or “1.5 independent replications” from satisfying a candidate-promotion gate.
+2. **Equation-discovery guard:** identified the fail-open path where non-finite held-out errors or fractional/boolean replication counts could satisfy a promotion gate. The same code fix and adversarial tests are already present in existing PR #61 (`research/2026-10-24-eqn-metric-finite-gate`, head SHA `1ecddc30e0073f61f71e4ea638db5e4fcd88a31a`). This documentation PR deliberately removes its duplicate code/test diff; PR #61's exact-head CI remains pending.
 3. **Literature surveillance:** added a dated Lane H literature watch connecting AI-mathematics candidate ranking and formal verification to EQN-001–006. Sources remain third-party preprints / literature-only; no physical law or engineering result is promoted.
-4. **Cross-lane integration:** created `INT-20261024-001` with source SHAs, unchanged interface, expected effect, falsifier, rollback and explicit cost/evidence boundaries.
+4. **Cross-lane integration:** reviewed the existing metric-finite-gate integration contract in PR #61 (`INT-20261024-013`). A duplicate `INT-20261024-001` artifact was removed from this documentation branch; this cycle ledger records the all-pairs scan and evidence boundaries.
 5. **Handoff and historical sync:** the large canonical `WORKLOG.md` and `RESEARCH_GAPS.md` were not overwritten from a partial view. This dated artifact carries the cycle record; synchronization debt remains until a safe append/reconciliation path updates the canonical append-only histories.
 
 ## Lane status ledger
@@ -28,7 +28,7 @@ The root mission, Pangola/carbon, bio-oil, fusion-electricity, interest/R&D-fina
 | **C — RAM/VRAM/HBM/storage/state/data movement** | MODEL_ONLY / HOST-ONLY ACCOUNTING | MODEL_ONLY | Measure input/output, state materialization, transfer, reconstruction and energy under the same accepted-output contract; do not map Hilbert dimension directly to readable classical storage. |
 | **D — devices/chips/process/fabrication/packaging** | DOWNSTREAM_BLOCKED | DEVICE_MODEL | Derive target-specific device requirements only after live target constraints; no fabrication or material result this cycle. |
 | **E — biomass/materials/bio-oil/fusion/power/cooling** | NO_NEW_MEASUREMENT | MODEL_ONLY | BIO-001: accepted saleable-liquid mass/energy/cost balance; FUS-001: architecture-neutral net-delivered-electric cost-driver envelope; qualify Pangola material functional units. |
-| **F — economics/benchmarks/evidence/integration** | TESTING — validation guard and integration record prepared | MODEL_ONLY / CODE-VALIDATION-PENDING-CI | Pass exact PR CI, then benchmark total cost per accepted useful task with matched competitive CPU/GPU/NPU baselines. |
+| **F — economics/benchmarks/evidence/integration** | CODE GUARD PENDING IN PR #61; this branch is documentation/handoff only | MODEL_ONLY / CODE-VALIDATION-PENDING-CI | Pass exact PR #61 CI, then benchmark total cost per accepted useful task with matched competitive CPU/GPU/NPU baselines. |
 | **G — chip-manufacturing equipment/software/factory systems** | DOWNSTREAM_BLOCKED | FABRICATION_PROPOSAL | Specify target/process-window response, yield, metrology and factory-cost evidence; keep D/G co-design active. |
 | **H — Kanusanan Pongpanna Model / strategy / finance / future industries** | LITERATURE_WATCH_UPDATED | LITERATURE_ONLY / ROADMAP | Use uncertainty reduction per fully accounted cost to prioritize experiments; preserve six-language plan and AI-agent/funding references without treating them as proof. |
 | **I — canonical repository's additional field-agnostic levitation lane** | PLAN_AND_CONTRACT_ONLY | MODEL_ONLY | Quantify force/energy bounds and null controls; no anti-gravity, vehicle-lift or hazardous testing claim. Lane I is preserved as an additional canonical lane and does not replace any A–H lane. |
@@ -44,7 +44,7 @@ The root mission, Pangola/carbon, bio-oil, fusion-electricity, interest/R&D-fina
 - **EQN-001 literature watch:** updated at `docs/literature_watch/2026-10-24-ai-math-verification-pipeline.md`.
 - **EQN-002 symbolic-regression benchmark:** still needs noisy fixtures, unit-consistent distractors, ODE/PDE fixtures, conventional baseline, repeated seeds, false-discovery statistics and extrapolation tests.
 - **EQN-003 constraint-aware generator:** dimensional/symmetry/conservation/causality and limiting cases remain required; no new generator result.
-- **EQN-004 counterexample/falsification engine:** new finite-metric/count regression tests are a software gate only; broader counterexample search remains open.
+- **EQN-004 counterexample/falsification engine:** finite-metric/count regression tests are proposed in PR #61 and pending exact-head CI; broader counterexample search remains open.
 - **EQN-005 new-physics escalation:** no incumbent assumption has been displaced by evidence.
 - **EQN-006 equation-to-technology traceability:** no equation candidate reached independent physical replication or an engineering/economic consequence.
 - **Proposed next offline work item:** `EQN-OPT-001`, compare direct equation search and optimization-law search with frozen train/validation/test hashes, matched wall-clock/host-energy/token budgets, non-optimization negative controls and identifiability checks.
@@ -116,10 +116,11 @@ The canonical repository also preserves INV-036 and INV-037, including the diffe
 ## GitHub, CI and synchronization
 
 - **Start main SHA:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`.
-- **Source branch:** `research/2026-10-24-equation-metric-validation`.
-- **Source commits:** code guard `aba0b3c16fd666d52cf83895b0c1024ccc36babd`; tests `48cbfec10b5d5c97e7ee9de8ad5738b6190db349`; literature watch `91ff69db0fce29b2b68897891c6f950989ebf465`; Lane A gate `26f64608835f8fc41e19e8bac0aba3702bd753d7`; integration record `86382aac3c0abc49efd703cf1618c3b8b0d22c92`.
-- **CI at authoring time:** the combined-status query returned no status records for the start main SHA; the available commit-workflow endpoint returned no PR-triggered runs for that main commit. The prior handoff manifest records success for run #786 / ID `39100104157`, but that older success does **not** establish that the current main SHA or this source branch passes.
-- **Sync status:** branch work is pending main synchronization. The large append-only `WORKLOG.md` and `RESEARCH_GAPS.md` were not rewritten from partial reads; this dated cycle is the safe current record. Historical/inaccessible branches and forks remain outside verified audit scope.
+- **Documentation branch:** `research/2026-10-24-equation-metric-validation`; this branch carries the literature watch, Lane A gate, dated cycle ledger and refreshed handoff manifest. Code/test changes were reverted here to avoid duplicating existing PR #61.
+- **Existing code-fix PR:** #61, branch `research/2026-10-24-eqn-metric-finite-gate`, head SHA `1ecddc30e0073f61f71e4ea638db5e4fcd88a31a`; its RG-045, regression tests and integration contract remain pending-main.
+- **Unique documentation source commits:** literature watch `91ff69db0fce29b2b68897891c6f950989ebf465`; Lane A gate `26f64608835f8fc41e19e8bac0aba3702bd753d7`; cycle ledger `afe3b9177d0dc1981a6737369ffbdaf52c94ed75`; handoff manifest `16d76b1a297c38c3ac2a8b6af26f3d73e837f325` (followed by explicit de-duplication/revert commits on this docs branch).
+- **CI observation:** the combined-status query returned no status records for the start main SHA, and the PR-triggered run query returned no runs for that main commit. Existing code-fix PR #61 run #1069 / ID `40077098577` was queued/in progress when inspected (Python 3.10 unit/invariant tests were running; Python 3.11/3.12 jobs were queued). The prior manifest's success for run #786 / ID `39100104157` is an older result and does **not** establish current-main or PR-head success. This documentation PR also requires exact-head handoff validation.
+- **Sync status:** documentation branch PR #65 and code-fix PR #61 are both pending main synchronization. The large append-only `WORKLOG.md` and `RESEARCH_GAPS.md` were not rewritten from partial reads; this dated cycle is the safe current record. Historical/inaccessible branches and forks remain outside verified audit scope.
 - **No paid QPU jobs, provider sessions, purchases, material/fusion experiments, or hazardous vehicle tests were initiated.**
 
 ## Next highest-value gates
