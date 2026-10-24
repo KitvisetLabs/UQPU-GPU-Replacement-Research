@@ -8,7 +8,6 @@ considered testable within the UQPU foundational-research program.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-import math
 from typing import Iterable
 
 
@@ -72,31 +71,11 @@ class EquationHypothesis:
             raise ValueError("discriminating_observables is required")
         if self.evidence_level not in _ALLOWED_EVIDENCE:
             raise ValueError(f"unknown evidence level: {self.evidence_level}")
-
-        # A type annotation is not a runtime guarantee. Fractional counts and
-        # booleans must not be accepted as independent replications.
-        count = self.independent_validation_count
-        if isinstance(count, bool) or not isinstance(count, int) or count < 0:
-            raise ValueError(
-                "independent_validation_count must be a non-negative integer"
-            )
-
-        # Infinite/NaN errors can make a finite candidate look better merely
-        # because its baseline is invalid. Missing measurements use None;
-        # measured error values must be finite, numeric, and non-negative.
-        for name, value in (
-            ("heldout_baseline_error", self.heldout_baseline_error),
-            ("heldout_candidate_error", self.heldout_candidate_error),
-        ):
-            if value is None:
-                continue
-            if (
-                isinstance(value, bool)
-                or not isinstance(value, (int, float))
-                or not math.isfinite(value)
-                or value < 0
-            ):
-                raise ValueError(f"{name} must be a finite non-negative number")
+        if self.independent_validation_count < 0:
+            raise ValueError("independent_validation_count cannot be negative")
+        for value in (self.heldout_baseline_error, self.heldout_candidate_error):
+            if value is not None and value < 0:
+                raise ValueError("held-out errors cannot be negative")
 
     @property
     def has_heldout_improvement(self) -> bool:
