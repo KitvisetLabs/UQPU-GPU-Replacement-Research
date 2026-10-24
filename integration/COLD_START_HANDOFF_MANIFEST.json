@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-24T14:09:12Z",
+  "prepared_utc": "2026-10-24T15:08:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "588500f647bb42a43549a5ce38072198f61071ab",
+  "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "2026-10-24: PR #76 pending review for EQN-OPT-001 finite-grid objective screening and literature-source audit; source head 136ccaed8d91c7cc0d14b7e18ded3fe42d5ea8f5 is not on main; exact-head CI pending.",
+  "current_frontier": "2026-10-24: PR #76 updated with EQN-OPT-001 disjoint split validation, numeric-grid SHA-256 fingerprints, and expanded equation/material literature watch; source head dd8d692da0432972ee4bfa510ec79c73b698a434 is not on main; exact-head CI queued.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -38,9 +38,9 @@
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "INDEPENDENT_ROUTED_PROBES_LOCAL_PASS_HOSTED_PENDING",
-      "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_ROUTED_PROBE_CHECK",
-      "next_gate": "obtain exact-commit hosted confirmation, then preregister a scalable stronger equivalence method; eleven queries remain blocked"
+      "status": "MODEL_ONLY_FINITE_GRID_SCREEN_WITH_NUMERIC_FINGERPRINTS; EXACT_HEAD_CI_PENDING",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "pass exact-head CI, then preregister source-data/split-generation provenance and matched generator/search-budget comparison; no equation-law claim"
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -62,9 +62,9 @@
     },
     "E": {
       "owner_path": "research_lanes/E_materials_energy_cooling_infrastructure",
-      "status": "REVIEWED_NO_NEW_MEASUREMENT",
-      "evidence_class": "MODEL_ONLY",
-      "next_gate": "qualified BIO-001/FUS-001 functional-unit evidence"
+      "status": "LITERATURE_METHOD_LEAD_ONLY",
+      "evidence_class": "LITERATURE_ONLY",
+      "next_gate": "test materials inverse-design methodology only against a declared functional unit; obtain qualified Pangola/material and BIO-001/FUS-001 inputs"
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
@@ -80,9 +80,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "SOFTWARE_FIRST_CAPITAL_GATE",
-      "evidence_class": "ROADMAP",
-      "next_gate": "decisive target-aware test before expenditure"
+      "status": "LITERATURE_WATCH_UPDATED_PENDING_MAIN",
+      "evidence_class": "LITERATURE_ONLY",
+      "next_gate": "resolve CoSR source-status conflict; audit full AI-Newton/PiT-PO/LLM-PySR methods and preserve six-language master-plan links"
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
@@ -115,10 +115,12 @@
     "German"
   ],
   "latest_verified_ci": {
-    "run_number": 786,
-    "run_id": 39100104157,
+    "run_number": 82,
+    "run_id": 39819829144,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39100104157"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39819829144",
+    "verified_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+    "scope": "main branch run; later main cold-start audits failed and updated EQN-OPT-001 source-head CI is pending"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -140,7 +142,7 @@
     "status": "PENDING_REVIEW_AND_EXACT_HEAD_CI",
     "canonical_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
     "source_branch": "research/2026-10-24-eqn-opt-001",
-    "source_head_sha": "136ccaed8d91c7cc0d14b7e18ded3fe42d5ea8f5",
+    "source_head_sha": "dd8d692da0432972ee4bfa510ec79c73b698a434",
     "pull_request": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/76",
     "handoff_path": "integration/PENDING_MAIN_SYNC_2026-10-24_EQN_OPT_001.md",
     "evidence_class": "MODEL_ONLY_SYNTHETIC_PLUS_LITERATURE_ONLY",
