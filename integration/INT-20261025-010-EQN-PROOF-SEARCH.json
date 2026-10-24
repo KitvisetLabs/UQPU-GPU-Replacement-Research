@@ -1,0 +1,160 @@
+{
+  "contract_id": "INT-20261025-010-EQN-PROOF-SEARCH",
+  "date": "2026-10-25",
+  "primary_owner": "H",
+  "integration_owner": "F",
+  "canonical_main_base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "status": "PULL_REQUEST_OPEN_CI_PENDING",
+  "evidence_label": "LITERATURE_ONLY",
+  "primary_artifact": "docs/literature_watch/2026-10-25-formal-proof-search-and-physics-constrained-equation-discovery.md",
+  "objective": "Add formal-proof feedback as an optional verifier for mathematical claims in the equation-discovery pipeline without promoting proof, fit, simulation, or third-party results into physical-law evidence.",
+  "sources": [
+    {
+      "id": "LIT-2026-10-08-FORMAL-PROOF-SEARCH",
+      "title": "Advancing mathematics research with AI-driven formal proof search",
+      "publication_date": "2026-10-08",
+      "venue": "Science",
+      "evidence_class": "PEER_REVIEWED_RESEARCH",
+      "url": "https://doi.org/10.1126/science.aej2213",
+      "reported_results": "9 of 353 attempted Erdős problems and 44 of 492 attempted OEIS conjectures",
+      "non_claim": "Does not establish any UQPU physical equation, QPU advantage, or mission outcome."
+    },
+    {
+      "id": "LIT-2026-07-05-LLM-PYSR-SEARCH-CONTROL",
+      "title": "Language models guide symbolic equation discovery by controlling search",
+      "publication_date": "2026-07-05",
+      "venue": "arXiv preprint",
+      "evidence_class": "PREPRINT",
+      "url": "https://arxiv.org/abs/2607.04156",
+      "non_claim": "Equation-recovery benchmark performance is not new-law evidence."
+    },
+    {
+      "id": "LIT-2026-09-01-PHYSICS-CONSTRAINED-CONSTITUTIVE-MODELS",
+      "title": "LLM-driven design of physics-constrained constitutive models: two agents are better than one",
+      "publication_date": "2026-09-01",
+      "venue": "arXiv preprint v2",
+      "evidence_class": "PREPRINT",
+      "url": "https://arxiv.org/abs/2605.23754",
+      "non_claim": "Sampled numerical constraint checks are not global proof or independent material qualification."
+    },
+    {
+      "id": "LIT-2026-09-11-GRAPH-BASED-CONSTITUTIVE-DISCOVERY",
+      "title": "Beyond empirical models: Discovering new constitutive laws in solids with graph-based equation discovery",
+      "authors": [
+        "Hao Xu",
+        "Yuntian Chen",
+        "Dongxiao Zhang"
+      ],
+      "publication_date": "2026-09-11",
+      "venue": "Science Advances 12(37), eaec0989",
+      "evidence_class": "PEER_REVIEWED_METHOD",
+      "url": "https://doi.org/10.1126/sciadv.aec0989",
+      "supplementary_source_commit": "0324ea06e699039850589f53618842d1e7603fbc",
+      "scope": "Graph-based equation discovery of material-specific constitutive models from multisource experimental data, reported for alloy-steel strain-rate effects and lithium-metal deformation.",
+      "non_claim": "Improved dataset fit is not a universal/fundamental law, Pangola material substitution, fusion-material qualification, or UQPU advantage."
+    }
+  ],
+  "lane_review": {
+    "A": "Proof-check exact compiler/workload transformations where applicable; implement EQN-PROOF-001 fixture only after frozen acceptance criteria.",
+    "B": "Provider-neutral path unchanged; no credentials, target calls, QPU jobs, shots, or billing.",
+    "C": "Preserve output-information/readable-memory distinction; no memory equivalence claim.",
+    "D": "Graph-based constitutive discovery may generate material-model candidates; no device/fabrication or qualified material result.",
+    "E": "Candidate method only; no Pangola substitution, accepted bio-oil, fusion-material, or energy result.",
+    "F": "Matched total-resource and failed-search accounting; no measured cost advantage or finance effect.",
+    "G": "D/G co-design continues; manufacturing consequences require validated device requirements.",
+    "H": "Primary owner of literature synthesis and publication; strategic plan remains context, not scientific proof.",
+    "I": "Auxiliary in this cycle; does not replace or suppress A-H."
+  },
+  "foundational_links": [
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "invariants": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "next_gate": {
+    "id": "EQN-PROOF-001",
+    "status": "SPECIFIED_NOT_IMPLEMENTED",
+    "required_steps": [
+      "Freeze benchmark statement/data/code hashes and pin proof-assistant/kernel/library versions.",
+      "Reject unapproved axioms and proof placeholders; archive imports and exact formal statement.",
+      "Compare deterministic evaluator, symbolic regression, LLM-guided search, and proof-feedback arms under matched total resource budgets.",
+      "Record held-out error, counterexamples, proof validity, false discoveries, wall time, tokens, host compute, energy where measurable, and total cost including failures.",
+      "For physical candidates, require a predeclared discriminating experiment and independent replication after all mathematical gates."
+    ],
+    "acceptance_rule": "A checked proof validates only the frozen formal statement under its explicit assumptions. No automatic promotion to a physical law or technology claim."
+  },
+  "mission_effects": {
+    "INV-029": "No Data-Center-to-Phone closure; only a proposed correctness-verification method.",
+    "INV-030": "Method-level constitutive discovery can guide candidate screening; no Pangola-derived critical-material substitution or elemental transmutation.",
+    "INV-031": "No saleable bio-oil yield or full-cost result.",
+    "INV-032": "No net reliable fusion-electricity or lifecycle-cost result.",
+    "INV-033": "No measured principal, interest, WACC, or time-to-evidence effect.",
+    "INV-034": "Supports mathematics-first hypothesis/proof workflow without changing physical limits.",
+    "INV-035": "Adds a possible formal verifier while retaining dimensional, symmetry, conservation, causality, held-out, falsification, experiment, replication, and economics gates."
+  },
+  "safety_and_authorization": {
+    "paid_qpu_jobs_authorized": false,
+    "provider_credentials_used": false,
+    "real_hardware_submissions": 0
+  },
+  "preservation": {
+    "root_directives_00_through_06": "preserved",
+    "kanusanan_pongpanna_model": "preserved",
+    "strategic_plan_references_and_thai_english_chinese_japanese_korean_german_links": "preserved",
+    "research_lanes_and_integration_directory_depth_rule": "preserved",
+    "large_append_only_sync_debt": [
+      "RESEARCH_GAPS.md not rewritten; dated literature artifact and this integration contract carry the new gap until safe append-only synchronization.",
+      "WORKLOG.md not rewritten; sync debt remains for a later complete-history append.",
+      "docs/EIGHT_LANE_SCOREBOARD.md and the newer A-I scoreboard were not rewritten in this focused literature cycle."
+    ],
+    "documentation_sync_debt": [
+      "README.md still labels 2026-10-15 as the latest verified implementation checkpoint while main has later literature commits and the FND-001 work remains in an open PR. Refresh only after exact-head CI and merge; do not present pending work as verified.",
+      "RESEARCH_GAPS.md not rewritten; dated literature artifact and this integration contract carry the new gap until safe append-only synchronization.",
+      "WORKLOG.md not rewritten; sync debt remains for a later complete-history append.",
+      "docs/EIGHT_LANE_SCOREBOARD.md and the newer A-I scoreboard were not rewritten in this focused literature cycle."
+    ]
+  },
+  "pull_request": {
+    "number": 82,
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/82",
+    "head_sha": "5ff28eb3a60d0b098d61432a47a97f8486d97aa9"
+  },
+  "architecture_audit": {
+    "operating_system_contract": "docs/RESEARCH_OPERATING_SYSTEM.md explicitly requires permanent A-H review, with A as Priority #1 and D/G co-design.",
+    "manifest_observed": "integration/eight_lane_manifest.json currently declares schema uqpu-nine-lane-manifest-v2, lists Lane I as a lane, and enumerates 36 A-I pairs.",
+    "cycle_treatment": "This run reviews A-H as the permanent mission architecture and treats I as auxiliary per the current run directive; no lane was deleted or silently reclassified.",
+    "governance_sync_debt": "Reconcile manifest, README, and scoreboard wording in a dedicated governance change. Do not silently demote/delete I or allow it to replace A-H."
+  },
+  "supplemental_source_commit": "0324ea06e699039850589f53618842d1e7603fbc",
+  "supplemental_follow_up": {
+    "id": "EQN-CONST-001",
+    "status": "PROPOSED_NOT_IMPLEMENTED",
+    "required_steps": [
+      "Freeze dataset hashes, units, train/validation/held-out splits, allowed variables/operators, physical constraints and incumbent baselines.",
+      "Compare graph-based search with deterministic symbolic regression under matched wall-clock and host-resource budgets.",
+      "Search counterexamples and out-of-domain loading paths; record complexity, uncertainty, false discoveries and failed candidates.",
+      "Require independent data or experiment before any material-law promotion."
+    ],
+    "acceptance_rule": "A held-out fit must also satisfy explicit physical constraints; no automatic physical-law or technology promotion."
+  }
+}
