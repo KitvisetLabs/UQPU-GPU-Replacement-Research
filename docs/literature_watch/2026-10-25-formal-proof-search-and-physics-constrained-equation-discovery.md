@@ -44,9 +44,21 @@ A Creator proposes constitutive models and an Inspector numerically probes state
 
 **Limitations:** sampled numerical checks do not prove constraints globally; results are scoped to the studied constitutive-model families and datasets. A physically constrained fit still requires identifiability, held-out loading paths, uncertainty, experiments, and independent replication before being used as a material law.
 
+### 4. Peer-reviewed graph-based constitutive-law discovery
+
+Hao Xu, Yuntian Chen and Dongxiao Zhang, “Beyond empirical models: Discovering new constitutive laws in solids with graph-based equation discovery,” *Science Advances* 12(37), eaec0989, published 2026-09-11. DOI: https://doi.org/10.1126/sciadv.aec0989. Bibliographic record: https://pubmed.ncbi.nlm.nih.gov/42726844/ ; public full-text record: https://pmc.ncbi.nlm.nih.gov/articles/PMC13564832/.
+
+The method represents candidate equations as directed graphs and searches/optimizes expressions from multisource experimental data. The paper reports constitutive models for strain-rate effects in alloy steel and deformation of lithium metal, with compact structures and improved accuracy against the studied empirical baselines.
+
+**Genuine method delta:** this is a peer-reviewed, material-specific example of graph-based equation discovery, complementary to LLM-guided symbolic search and the two-agent constitutive-model inspection preprint. It suggests a candidate generator for Lane D/E model discovery, but only within a stated data/model domain.
+
+**Limitations:** better fit on the reported datasets is not proof of a universal or fundamental law. Candidate structure and parameters remain dependent on data coverage, model search space, regularization, identifiability and test-domain choice. The reported alloy-steel and lithium-metal results do not establish a Pangola-derived material, carbon substitution for a critical mineral, fusion-material performance, or any UQPU engineering/economic advantage.
+
+**Falsifiable follow-up — EQN-CONST-001:** select one published constitutive dataset and freeze train/validation/held-out splits, units, allowed variables/operators, dimensional constraints, symmetry/objectivity rules, conservation/thermodynamic constraints, and baseline empirical laws before search. Compare graph-based search with deterministic symbolic regression and the current equation-discovery baseline under matched wall-clock/host-resource budgets. Search counterexamples and out-of-domain loading paths; record false discoveries, complexity, uncertainty and all failed candidates. Require independent data or experiments before material-law promotion. Failure to beat the incumbent on held-out prediction while satisfying physical constraints rejects the candidate, regardless of training fit.
+
 ## Synthesis: the missing boundary is typed verification, not another “AI discovered physics” label
 
-The three methods support a layered pipeline:
+These four method signals support a layered pipeline:
 
 1. **Generator/controller:** produce candidate equations, theorem statements, transformations, or search configurations.
 2. **Explicit constraints:** dimensional consistency; domain; symmetry; conservation; thermodynamic admissibility; causality; known limiting cases; and the incumbent theorem/model.
@@ -83,7 +95,7 @@ The three methods support a layered pipeline:
 ### Mission relevance
 
 - **INV-029 / A:** proof-checkable workload transformations may improve compiler correctness and auditable service contracts, but they do not compress remote infrastructure into a phone.
-- **INV-030 / D–G:** independent constitutive-constraint inspection can inform carbon-material candidates; no Pangola-derived material substitution is demonstrated.
+- **INV-030 / D–G:** graph-based constitutive discovery and independent constraint inspection can inform D/E candidate screening; no Pangola-derived material substitution is demonstrated.
 - **INV-031 / E:** formal mass/energy-balance identities may help audit BIO-001 accounting; no saleable bio-oil, yield, or cost result is added.
 - **INV-032 / E:** proof can check model algebra, not net fusion electricity, availability, lifetime, or commercial cost.
 - **INV-033 / F–H:** resource accounting may shorten time-to-evidence or reduce wasted search principal; no financing-rate/WACC effect is measured.
@@ -117,6 +129,6 @@ INV-025/026/027 remain evidence-gated. Lane I in the current repository manifest
 
 ## Other surveillance lanes and non-claims
 
-The targeted review also checked symbolic-regression control, physics-informed/constitutive modeling, automated discovery, optimization-law work, QFI/no-go literature, and relevant energy/material/fusion/finance terms. No new source found in this pass changes the project's current BIO-001, FUS-001, FIN-001, provider-execution, or Data-Center-to-Phone evidence. This is a literature-search boundary, not proof that no such source exists.
+The targeted review also checked symbolic-regression control, physics-informed/constitutive modeling, automated discovery, optimization-law work, QFI/no-go literature, and relevant energy/material/fusion/finance terms. This cycle added the peer-reviewed graph-based constitutive-discovery paper above as a method lead; it does not change BIO-001, FUS-001, FIN-001, provider-execution, or Data-Center-to-Phone evidence because the reported datasets are not Pangola/fusion/UQPU measurements. No directly relevant source dated 2026-10-24 or 2026-10-25 changed those project evidence gates. This is a literature-search boundary, not proof that no such source exists.
 
 No real-QPU, material, fuel, net-electricity, financing, physical-law, or quantum-advantage result is claimed. No paid provider job was submitted. No credentials were used. No new physical law is proposed by this watch.
