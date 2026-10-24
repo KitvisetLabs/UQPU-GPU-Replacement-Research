@@ -71,3 +71,7 @@ Because `RESEARCH_GAPS.md`, `WORKLOG.md`, `00D_NEW_DISCOVERY_ARTICLES.md` and th
 The progressive-discovery branch now implements a versioned, deterministic record-membership certificate in DataSplits. It binds train/validation/held-out ID manifests to a source-dataset SHA-256 and fails closed on pairwise overlap, within-split duplicates, empty splits, invalid identifier types, unsupported schema/canonicalization versions, and digest mismatches. Added tests cover the overlap adversary, canonical ordering, source-digest binding, and manifest mismatch.
 
 **Status:** CODE IMPLEMENTED / HOSTED CI PENDING. The protocol remains MODEL_ONLY; the raw-data loader must independently verify the source bytes and ID extraction. RG-045 is not considered closed until exact-commit CI passes and the loader-level provenance gate is separately satisfied. No provider calls or QPU jobs were submitted.
+
+## Literature-surveillance delta — LLM-guided search control (2026-10-24)
+
+Added `docs/literature_watch/2026-10-24-llm-pysr-search-control.md` for Xie et al., arXiv:2607.04156 (submitted 2026-07-05). The method separates LLM search configuration from numerical symbolic-regression fitting and deterministic candidate retention. It is recorded as an official preprint/method claim only; no UQPU result or physical-law claim is promoted. The proposed EQN-CTRL-001 follow-up uses matched budgets, sealed held-out/OOD data, counterexamples and full search-cost accounting.
