@@ -38,9 +38,9 @@ https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40043
 
 Latest source head 8d717d64688a713fb3c8799c26a9b02e9d8fab6b has cold-start audit run 40048819369 green:
 https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40048819369
-The exact-head prototype/invariant run 40048822792 is still IN_PROGRESS at this snapshot:
+The exact-head prototype/invariant run 40048822792 completed successfully (run #991):
 https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40048822792
-Python 3.10, 3.11 and 3.12 test jobs passed; QSVT ten-query/bounded-prefix/eight-query, Qiskit verification and routed-statevector probes were still running. Do not claim full exact-head CI until every required job completes. The source tree change after 992 is documentation/manifest only; no QPU or provider execution occurred.
+All 15 jobs passed, including the Python 3.10/3.11/3.12 matrix, QSVT prefix and ten-query checks, Qiskit verification, routed-statevector probes, reference benchmark, phase synthesis/reconstruction and target-snapshot noise simulation. This validates the exact source tree and configured model/simulator checks only; no QPU or provider execution occurred.
 
 ## A-H and INV-029..035
 
@@ -62,7 +62,7 @@ The permanent eight root directives, docs/KANUSANAN_PONGPANNA_MODEL.md, STRATEGI
 
 ## Next gate
 
-Finish all jobs on source head 8d717d64688a713fb3c8799c26a9b02e9d8fab6b, then run the frozen synthetic pilot under the declared matched budgets if suitable local compute is available. QAOA-SPARSE-001 is a separate proposed offline gate, NOT EXECUTED. Preserve this pending-sync state until PR review/merge; reconcile overlapping PRs #48-#53 without force-pushing main.
+Exact-head CI is complete and green for source head 8d717d64688a713fb3c8799c26a9b02e9d8fab6b. Next, run the frozen synthetic PiT-PO / EXP-DESIGN-003 pilot under declared matched budgets, retaining false-discovery and failed-run counts; QAOA-SPARSE-001 remains a separate proposed offline gate and has NOT EXECUTED. Preserve pending-sync state until PR review/merge; reconcile overlapping PRs #48–#53 without force-pushing main.
 
 ## Parallel Lane F update — 2026-10-24
 
@@ -73,9 +73,14 @@ PR #49 was extended on branch head b15a25ab47f497a4883f58a892acda0211e26197 with
 - PR #48 exact-head prototype/invariant and cold-start workflows: success.
 - PR #50 exact-head prototype/invariant and cold-start workflows: success.
 - PR #51 exact-head prototype/invariant and cold-start workflows: success.
-- PR #49 and PR #53: latest full prototype/invariant workflows still in progress; cold-start audits green.
+- PR #49 and PR #53: latest full prototype/invariant workflows now completed successfully; all 15 jobs passed on each exact head.
 - PR #54: pending-sync summary only; keep unmerged until the source deltas and overlap/conflict plan are reviewed.
 
 PR #53 overlaps PR #51 on equation-discovery implementation/tests and the handoff manifest; PR #49 is a supplement to PR #48. Do not force-push main or assume branch-only work is canonical.
 
 Research-Sync: pending-main
+
+
+## Current-run reconciliation — 2026-10-24 02:05 UTC
+
+Run `40049030466` for PR #49, `40048822792` for PR #53 and `40049459569` for this sync PR #54 each completed with all 15 jobs successful. Main remains `c7b5958af58fad04a101ef5c6abf6a29293c867e`; all three source/sync PRs remain unmerged. No paid QPU jobs, shots, provider calls, purchases or instrument work occurred. CoSR is already covered in PR #51's `2026-10-24-progressive-symbolic-law-discovery.md` and `INT-20261024-001`, so this run intentionally avoids duplicate publication.
