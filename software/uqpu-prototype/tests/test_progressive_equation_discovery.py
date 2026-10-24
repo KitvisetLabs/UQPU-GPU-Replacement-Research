@@ -146,5 +146,37 @@ class ProgressiveEquationDiscoveryTests(unittest.TestCase):
             candidate.validate()
 
 
+    def test_non_boolean_heldout_unblinding_flag_fails_closed(self):
+        candidate = plan(heldout_unblinded_before_freeze=None)
+        with self.assertRaisesRegex(ValueError, "must be boolean false"):
+            candidate.validate()
+
+    def test_data_splits_wrong_type_fails_with_contract_error(self):
+        candidate = plan(data_splits=None)
+        with self.assertRaisesRegex(ValueError, "data_splits must be a DataSplits"):
+            candidate.validate()
+
+    def test_resource_budget_wrong_type_fails_with_contract_error(self):
+        candidate = plan(one_shot_budget=None)
+        with self.assertRaisesRegex(ValueError, "one_shot_budget must be a ResourceBudget"):
+            candidate.validate()
+
+    def test_non_stage_entry_fails_with_contract_error(self):
+        candidate = plan(stages=(stage("S1", evaluations=4), "not-a-stage"))
+        with self.assertRaisesRegex(ValueError, "each stages entry must be a DiscoveryStage"):
+            candidate.validate()
+
+    def test_checked_constraint_cannot_include_unparsed_extra_reason(self):
+        bad = (
+            "dimensional_consistency: checked: hidden override",
+            "symmetry: checked",
+            "conservation: not_applicable: static toy relation has no exchange process",
+            "causality: not_applicable: static scalar mapping has no propagation model",
+        )
+        candidate = plan(stages=(stage("S1", evaluations=4, constraint_audit=bad), stage("S2", parents=("S1",), evaluations=6)))
+        with self.assertRaisesRegex(ValueError, "must not include an extra reason"):
+            candidate.validate()
+
+
 if __name__ == "__main__":
     unittest.main()
