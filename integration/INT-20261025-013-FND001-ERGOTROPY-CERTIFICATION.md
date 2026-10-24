@@ -80,6 +80,10 @@ INV-025/026/027 are preserved: no 100,000,000x or universal subsystem-replacemen
 
 No cross-lane edge changes an evidence class automatically. Literature and MODEL_ONLY outputs cannot be promoted to hardware, material, fuel, electricity or economic evidence by documentation alone.
 
+## Canonical gap-ledger update and sync debt
+
+The source branch appends **RG-046** to RESEARCH_GAPS.md after fetching the full existing file (60,538 characters after append); the existing RG-033 history and RG-034 real-QPU authorization gate are retained. The append is pending review with this PR and is not yet present on canonical main. No partial-history overwrite was used. If the source PR is blocked, keep RG-046's dated artifacts and this explicit sync debt; do not claim the canonical gap ledger is updated until merge.
+
 ## Validation, sync and next gate
 
 - This is a documentation/protocol-only change. No code tests are claimed as run or passed by this branch.
