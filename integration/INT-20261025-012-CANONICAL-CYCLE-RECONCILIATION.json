@@ -1,0 +1,499 @@
+{
+  "schema": "uqpu-cycle-reconciliation-v1",
+  "integration_id": "CYCLE-2026-10-25-01",
+  "audit_date": "2026-10-25",
+  "timezone": "Asia/Bangkok",
+  "primary_owner_lane": "F",
+  "priority_lane": "A",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_main_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "latest_main_commit_utc": "2026-10-22T17:06:54Z",
+  "root_directives_00_to_06_present": true,
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "public_master_plan_languages": [
+    "Thai",
+    "English",
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "German"
+  ],
+  "max_directory_depth_observed": 5,
+  "latest_main_cold_start_ci": {
+    "run_id": 39819829144,
+    "conclusion": "success",
+    "head_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e"
+  },
+  "latest_main_full_suite_observed": {
+    "run_id": 39176574534,
+    "conclusion": "success",
+    "head_sha": "a03b7289129a980c2e6f76db0bb07959660a1935",
+    "note": "Older main commit; no full-suite result observed on current main SHA during this audit."
+  },
+  "priority_pr_ci": {
+    "70": {
+      "head_sha": "e722c69b3ee4aa143cf86f9c9c9f6b80c4dc551e",
+      "tests": "python_matrix_success",
+      "workflow_run_id": 40120893305,
+      "additional_qsvt_jobs": "in_progress_or_queued_at_audit",
+      "merged": false
+    },
+    "76": {
+      "head_sha": "49cba110efe43e7b10ad9f51fe2e6566f3cd4081",
+      "tests": "success",
+      "test_run_id": 40106693207,
+      "cold_start": "success",
+      "cold_start_run_id": 40106688577,
+      "merged": false
+    },
+    "80": {
+      "head_sha": "57ded4050df779f28c4c5544380048188bda1a97",
+      "tests": "success",
+      "test_run_id": 40111651964,
+      "cold_start": "success",
+      "cold_start_run_id": 40111647567,
+      "merged": false
+    },
+    "81": {
+      "head_sha": "92c0622236ee4f13d28df91448e006e83b3fba90",
+      "tests": "success",
+      "test_run_id": 40112946567,
+      "cold_start": "success",
+      "cold_start_run_id": 40112943345,
+      "merged": false
+    },
+    "82": {
+      "head_sha": "e346f9739b712ff16e15285075861e9972f5c7de",
+      "tests": "queued_at_audit",
+      "test_run_ids": [
+        40121142420,
+        40121139983
+      ],
+      "cold_start": "success",
+      "cold_start_run_id": 40121139986,
+      "merged": false
+    },
+    "83": {
+      "head_sha": "543c735090822f3b4b69e9366ed86c00cb6bd980",
+      "tests": "success",
+      "test_run_id": 40119797490,
+      "cold_start": "success",
+      "cold_start_run_id": 40119793034,
+      "merged": false
+    }
+  },
+  "open_pr_count_at_audit": 37,
+  "open_pull_requests": [
+    {
+      "number": 82,
+      "title": "Add Oct 25 literature watch: formal proof search and equation discovery",
+      "head_branch": "research/2026-10-25-eqn-proof-search-literature-watch",
+      "head_sha": "e346f9739b712ff16e15285075861e9972f5c7de",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T18:32:10Z",
+      "merged": false
+    },
+    {
+      "number": 64,
+      "title": "Sync record: BIO-001 cost ledger and EQN-SCOPE pending-main handoff",
+      "head_branch": "sync/2026-10-24-bio001-scope-pending-main",
+      "head_sha": "e25ddd755351d31b144ab7a7a012430144439693",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T18:30:40Z",
+      "merged": false
+    },
+    {
+      "number": 70,
+      "title": "Add BIO-001 accepted-fuel upgrading literature watch",
+      "head_branch": "research/2026-10-24-bio-oil-upgrading-watch",
+      "head_sha": "e722c69b3ee4aa143cf86f9c9c9f6b80c4dc551e",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T18:30:05Z",
+      "merged": false
+    },
+    {
+      "number": 84,
+      "title": "Sync pending Oct 25 QSP/QSVT research details to main",
+      "head_branch": "sync/pending-2026-10-25-qsp-qsvt-feasibility-watch",
+      "head_sha": "c2d54b5f7505ac3553c0d05ce5721e76a1f2716e",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T18:15:04Z",
+      "merged": false
+    },
+    {
+      "number": 83,
+      "title": "Oct 25 literature watch: QSP/QSVT feasibility and oracle-cost boundaries",
+      "head_branch": "research/2026-10-25-qsp-qsvt-feasibility-watch",
+      "head_sha": "543c735090822f3b4b69e9366ed86c00cb6bd980",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T18:14:31Z",
+      "merged": false
+    },
+    {
+      "number": 81,
+      "title": "FND-001: accepted-task thermodynamic gap accounting contract",
+      "head_branch": "research/2026-10-24-fnd001-thermodynamic-gap",
+      "head_sha": "92c0622236ee4f13d28df91448e006e83b3fba90",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T16:44:32Z",
+      "merged": false
+    },
+    {
+      "number": 80,
+      "title": "QALG-FAB-001: bridge circuit resources to device and fab gates",
+      "head_branch": "research/2026-10-24-dg-resource-cost-bridge",
+      "head_sha": "57ded4050df779f28c4c5544380048188bda1a97",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T16:28:04Z",
+      "merged": false
+    },
+    {
+      "number": 79,
+      "title": "Record pending main-sync details for QFI reservoir watch",
+      "head_branch": "sync/pending-2026-10-24-qfi-reservoir-watch",
+      "head_sha": "2ae14d8d63fd4c6b5d52835ee3064fc783924f3b",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T15:33:41Z",
+      "merged": false
+    },
+    {
+      "number": 78,
+      "title": "Add QFI-aware reservoir optimization literature watch",
+      "head_branch": "research/2026-10-24-qfi-reservoir-optimization-watch",
+      "head_sha": "0da703fc495b1d1f8bbd1e46738781ae11e6b439",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T15:32:42Z",
+      "merged": false
+    },
+    {
+      "number": 77,
+      "title": "Record pending Oct 24 EQN-OPT-001 main sync",
+      "head_branch": "sync/pending-2026-10-24-eqn-opt-001",
+      "head_sha": "33133b0b36fb00c9f9f19201042dc67942817a6e",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T15:26:19Z",
+      "merged": false
+    },
+    {
+      "number": 76,
+      "title": "EQN-OPT-001 candidate screening and Oct 24 literature audit",
+      "head_branch": "research/2026-10-24-eqn-opt-001",
+      "head_sha": "49cba110efe43e7b10ad9f51fe2e6566f3cd4081",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T15:24:37Z",
+      "merged": false
+    },
+    {
+      "number": 75,
+      "title": "Cycle 008 Delta 24: formal math verification and cross-lane handoff",
+      "head_branch": "research/2026-10-24-formal-math-equation-gates",
+      "head_sha": "9d2aafc833795b9a8db2dd3c919be929e9483dba",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T13:18:06Z",
+      "merged": false
+    },
+    {
+      "number": 73,
+      "title": "Sync record: Oct 24 Eight-Lane research cycle pending-main work",
+      "head_branch": "sync/2026-10-24-eight-lane-cycle-pending-main",
+      "head_sha": "82fc89041b7db5072c8faa24f442b93cab4b7e44",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T12:05:09Z",
+      "merged": false
+    },
+    {
+      "number": 74,
+      "title": "EQN-007: fail-closed equation provenance and formal-proof evidence gates",
+      "head_branch": "research/2026-10-24-eqn-proof-provenance-gate",
+      "head_sha": "4ab2da06c20e6a5ab8f5de690bba422c87d34f5b",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T12:05:07Z",
+      "merged": false
+    },
+    {
+      "number": 56,
+      "title": "EQN-COSR-001: progressive symbolic discovery comparison contract",
+      "head_branch": "research/2026-10-24-cosr-progressive-discovery",
+      "head_sha": "cd80215d05b51a8b405bd501c2e75811a2b4280b",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T11:10:23Z",
+      "merged": false
+    },
+    {
+      "number": 69,
+      "title": "Document RG-045 split-disjointness certificate gap",
+      "head_branch": "research/2026-10-24-rg045-split-disjointness",
+      "head_sha": "e59b8c80436387cabb0450efd9502db3e430ca83",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T11:06:05Z",
+      "merged": false
+    },
+    {
+      "number": 72,
+      "title": "Add FUS-001 fusion cost-account literature watch",
+      "head_branch": "research/2026-10-24-fusion-cost-estimation-watch",
+      "head_sha": "6aa4a3061be4bf8518fe478124df9e8bd29707f5",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T10:21:10Z",
+      "merged": false
+    },
+    {
+      "number": 71,
+      "title": "Add agentic scientific discovery literature watch",
+      "head_branch": "research/2026-10-24-agentic-discovery-watch",
+      "head_sha": "6813819080dabb2a18f68db8113423edcb546a18",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T10:17:57Z",
+      "merged": false
+    },
+    {
+      "number": 67,
+      "title": "Sync record: Oct 24 PDE-watch pending-main handoff",
+      "head_branch": "sync/2026-10-24-pde-watch-pending-main",
+      "head_sha": "e14ac03dcd4b10a39b2c215c6ada4d0dd0a7840b",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T09:18:31Z",
+      "merged": false
+    },
+    {
+      "number": 66,
+      "title": "Research cycle: proof- and witness-gated equation discovery (2026-10-24)",
+      "head_branch": "research/2026-10-24-formal-discovery-gates",
+      "head_sha": "3b1136deba60eeb43ed665fc13f1ae10498928f7",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T09:17:54Z",
+      "merged": false
+    },
+    {
+      "number": 60,
+      "title": "Fix cold-start audit false failures on branch creation",
+      "head_branch": "fix/2026-10-24-cold-start-branch-create",
+      "head_sha": "0f4e0c656d215d1fbdb75b09c2f20a757394eab7",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T09:17:05Z",
+      "merged": false
+    },
+    {
+      "number": 65,
+      "title": "Oct 24 literature watch, Lane A gate, and handoff cycle ledger",
+      "head_branch": "research/2026-10-24-equation-metric-validation",
+      "head_sha": "96be3f056855eb8c44f4d5fc35e44e38848e2f59",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T08:18:50Z",
+      "merged": false
+    },
+    {
+      "number": 63,
+      "title": "BIO-001 detailed accepted-liquid cost ledger + EQN-SCOPE literature watch",
+      "head_branch": "research/2026-10-24-bio-oil-cost-ledger-scope-watch",
+      "head_sha": "53f4a1e08e4351caf56fc6731e3d70dd6fde4bb6",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T07:14:21Z",
+      "merged": false
+    },
+    {
+      "number": 62,
+      "title": "Literature watches: quantum compiler configuration and symmetry-based VQA testing",
+      "head_branch": "research/2026-10-24-top-down-quantum-compiler-watch",
+      "head_sha": "b894972394d9548610b39745d7183bf70e8d4db4",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T06:15:38Z",
+      "merged": false
+    },
+    {
+      "number": 61,
+      "title": "Fail closed on non-finite equation-discovery metrics",
+      "head_branch": "research/2026-10-24-eqn-metric-finite-gate",
+      "head_sha": "1ecddc30e0073f61f71e4ea638db5e4fcd88a31a",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T06:12:28Z",
+      "merged": false
+    },
+    {
+      "number": 59,
+      "title": "Sync record: RG-044 pending-main research handoff",
+      "head_branch": "sync/2026-10-24-rg044-pending-main",
+      "head_sha": "cb52efaa1e83f34647d2b50cfc668faacc481b39",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T05:15:42Z",
+      "merged": false
+    },
+    {
+      "number": 58,
+      "title": "RG-044: task-resolved Fisher information and finite-shot feature budget",
+      "head_branch": "research/2026-10-24-task-resolved-fisher-ledger",
+      "head_sha": "ae4663b305c13dca61bd1a7c80fd41921b6014a3",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T05:12:07Z",
+      "merged": false
+    },
+    {
+      "number": 57,
+      "title": "QFI-aware reservoir optimization: literature watch and end-to-end cost gate",
+      "head_branch": "research/2026-10-24-qfi-reservoir-task-cost",
+      "head_sha": "d8813d3ae7d74c33172ef7eae98a7f81b5b15ba7",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T04:12:47Z",
+      "merged": false
+    },
+    {
+      "number": 55,
+      "title": "FND-003: thermodynamic speed-limit literature and falsifiable test contract",
+      "head_branch": "research/2026-10-24-fnd003-thermodynamic-speed-limits",
+      "head_sha": "180ce23207a57b3bd91bb39eaf9461f7df3646f9",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T02:15:35Z",
+      "merged": false
+    },
+    {
+      "number": 54,
+      "title": "Record pending Oct 24 equation-discovery research sync",
+      "head_branch": "sync/2026-10-24-pr53-pending-summary",
+      "head_sha": "206de662220383fbe8105afe886a87193be20314",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T02:09:58Z",
+      "merged": false
+    },
+    {
+      "number": 49,
+      "title": "Supplementary Eight-Lane research: FND-QFI, PiEvo, biomass carbon, fusion costing",
+      "head_branch": "research/cycle-20261023-fnd-qfi-audit",
+      "head_sha": "b15a25ab47f497a4883f58a892acda0211e26197",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T01:16:31Z",
+      "merged": false
+    },
+    {
+      "number": 53,
+      "title": "Cycle 011: equation-search integrity and QAOA sparsification gate",
+      "head_branch": "research/2026-10-24-equation-discovery-audit-v2",
+      "head_sha": "8d717d64688a713fb3c8799c26a9b02e9d8fab6b",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-24T01:14:19Z",
+      "merged": false
+    },
+    {
+      "number": 51,
+      "title": "FND-QFI-001: exact-rational ancilla-QFI scope audit",
+      "head_branch": "research/fnd-qfi-001-20261023",
+      "head_sha": "589f3d9dd1dcb30dfd254d86d73c7751b93f85cd",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-23T18:17:42Z",
+      "merged": false
+    },
+    {
+      "number": 50,
+      "title": "Add formal theorem-discovery gate and 2026-10-23 research cycle",
+      "head_branch": "research/2026-10-23-formal-theorem-gate",
+      "head_sha": "aa28530e8c2ef3ec68c2593aafde5298f881c5e0",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-23T15:53:55Z",
+      "merged": false
+    },
+    {
+      "number": 48,
+      "title": "Cycle 008 Delta 24–25: target snapshot and adaptive-circuit contracts",
+      "head_branch": "research/cycle-008-delta-24-readonly-snapshot-validator-2026-10-23",
+      "head_sha": "f01af99e3bd19c83c83a9ce8bad6cf6619f5eef4",
+      "base_branch": "main",
+      "base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "updated_at": "2026-10-23T15:52:44Z",
+      "merged": false
+    },
+    {
+      "number": 30,
+      "title": "Batch 053: execute pinned QOS phase synthesis in CI",
+      "head_branch": "research/batch-053-qos-synthesis-execution-gate",
+      "head_sha": "17621b5b39d4f520a181f964af00458d4f177692",
+      "base_branch": "main",
+      "base_sha": "97bcd5130f94bfe88f0b4f28d14370cb8fd5f974",
+      "updated_at": "2026-09-19T06:36:50Z",
+      "merged": false
+    },
+    {
+      "number": 17,
+      "title": "Batch 041: establish elementary-particle technology bridge matrix",
+      "head_branch": "research/batch-041-fund-particle-001-matrix",
+      "head_sha": "cc7373d2c9ffa0ab9d3b890c313a2e2ec0914548",
+      "base_branch": "main",
+      "base_sha": "41f8ef241ba10abe4973cfde872f2c6523dca56b",
+      "updated_at": "2026-09-13T16:39:52Z",
+      "merged": false
+    }
+  ],
+  "active_work_evidence_boundary": {
+    "qsvt_batch_056": "SIMULATION",
+    "qsp_qsvt_watch": "LITERATURE_ONLY_PENDING_PR_83",
+    "formal_proof_watch": "LITERATURE_ONLY_PENDING_PR_82",
+    "fnd001_helper": "BRANCH_TESTED_PENDING_PR_81",
+    "qalg_fab_bridge": "BRANCH_TESTED_PENDING_PR_80",
+    "eqn_opt001": "MODEL_ONLY_PENDING_PR_76",
+    "bio001": "MODEL_ONLY_DATA_BLOCKED",
+    "fus001": "MODEL_ONLY_DATA_BLOCKED",
+    "fin001": "NO_FINANCING_EFFECT_MEASURED",
+    "real_qpu_jobs": 0,
+    "paid_qpu_authorized": false,
+    "new_physical_law_claimed": false
+  },
+  "stale_canonical_artifacts": [
+    {
+      "path": "README.md",
+      "issue": "Latest checkpoint still says 2026-10-15/16."
+    },
+    {
+      "path": "integration/COLD_START_HANDOFF_MANIFEST.json",
+      "issue": "Prepared 2026-10-18 and canonical_start_sha predates current main."
+    },
+    {
+      "path": "RESEARCH_GAPS.md",
+      "issue": "Latest visible dated gap update is 2026-10-19; active Oct-24/25 work remains pending PRs."
+    }
+  ],
+  "sync_status": "PENDING_REVIEW_NOT_MERGED",
+  "next_gate": "Reconcile open PRs with exact source-SHA to main-SHA mapping; then implement QOS-QSVT-FEAS-001 and workload-derived scalable oracle/resource accounting."
+}
