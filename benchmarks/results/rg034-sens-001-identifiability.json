@@ -1,0 +1,73 @@
+{
+  "artifact_id": "RG034-SENS-001",
+  "date": "2026-10-23",
+  "primary_owner": "Lane A",
+  "integration_owner": "Lane F",
+  "source_commit": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "evidence_class": "MODEL_ONLY_SYNTHETIC_FIXTURE",
+  "promotion": "NOT_PROJECT_EVIDENCE",
+  "tolerance": 1e-10,
+  "parameter_basis": ["theta_a", "theta_b"],
+  "scenarios": [
+    {
+      "scenario_id": "SENS-EXHAUSTED-001",
+      "description": "Two declared linear protocols share the same local null direction.",
+      "solver_converged": true,
+      "experiment_class_complete": true,
+      "designs": [
+        {"design_id": "linear-1", "dimensionless_sensitivity_matrix": [[1.0, 1.0], [2.0, 2.0]]},
+        {"design_id": "linear-2", "dimensionless_sensitivity_matrix": [[3.0, 3.0], [4.0, 4.0]]}
+      ],
+      "expected_primary_rank": 1,
+      "expected_parameter_count": 2,
+      "expected_nullspace_dimension": 1,
+      "expected_verdict": "EXPERIMENT_CLASS_EXHAUSTED"
+    },
+    {
+      "scenario_id": "SENS-BREAK-001",
+      "description": "A quadratic design removes the primary design's null direction, so the declared class is not exhausted.",
+      "solver_converged": true,
+      "experiment_class_complete": true,
+      "designs": [
+        {"design_id": "linear", "dimensionless_sensitivity_matrix": [[1.0, 1.0], [2.0, 2.0]]},
+        {"design_id": "quadratic", "dimensionless_sensitivity_matrix": [[1.0, 1.0], [2.0, 4.0]]}
+      ],
+      "expected_primary_rank": 1,
+      "expected_parameter_count": 2,
+      "expected_nullspace_dimension": 1,
+      "expected_verdict": "LOCALLY_NON_IDENTIFIABLE"
+    },
+    {
+      "scenario_id": "SENS-UNSOLVED-001",
+      "description": "A full-rank matrix cannot override a failed fit/convergence gate.",
+      "solver_converged": false,
+      "experiment_class_complete": false,
+      "designs": [
+        {"design_id": "quadratic", "dimensionless_sensitivity_matrix": [[1.0, 1.0], [2.0, 4.0]]}
+      ],
+      "expected_primary_rank": 2,
+      "expected_parameter_count": 2,
+      "expected_nullspace_dimension": 0,
+      "expected_verdict": "NOT_YET_SOLVED"
+    },
+    {
+      "scenario_id": "SENS-IDENTIFIABLE-001",
+      "description": "A converged, full-column-rank local sensitivity matrix passes the local rank gate.",
+      "solver_converged": true,
+      "experiment_class_complete": false,
+      "designs": [
+        {"design_id": "quadratic", "dimensionless_sensitivity_matrix": [[1.0, 1.0], [2.0, 4.0]]}
+      ],
+      "expected_primary_rank": 2,
+      "expected_parameter_count": 2,
+      "expected_nullspace_dimension": 0,
+      "expected_verdict": "IDENTIFIABLE"
+    }
+  ],
+  "limitations": [
+    "Synthetic dimensionless matrices only; no physical dataset or ODE solver was used.",
+    "Rank is a local, tolerance-dependent diagnostic at one parameter point, not global identifiability.",
+    "EXPERIMENT_CLASS_EXHAUSTED applies only to the explicitly enumerated bounded design class.",
+    "No equation, physical law, QPU advantage, material substitution, fuel/electricity outcome, cost reduction, or WACC reduction is established."
+  ]
+}
