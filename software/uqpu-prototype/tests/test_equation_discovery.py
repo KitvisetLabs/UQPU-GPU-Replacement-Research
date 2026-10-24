@@ -86,6 +86,21 @@ class EquationDiscoveryTests(unittest.TestCase):
                     with self.assertRaises(ValueError):
                         candidate.validate()
 
+    def test_heldout_improvement_predicate_fails_closed_on_invalid_metrics(self):
+        malformed_pairs = (
+            ("0.2", "0.1"),
+            (float("nan"), 0.1),
+            (0.2, float("inf")),
+            (True, 0.1),
+        )
+        for baseline, candidate_error in malformed_pairs:
+            with self.subTest(baseline=baseline, candidate_error=candidate_error):
+                candidate = self._candidate(
+                    heldout_baseline_error=baseline,
+                    heldout_candidate_error=candidate_error,
+                )
+                self.assertFalse(candidate.has_heldout_improvement)
+
     def test_negative_heldout_errors_are_rejected(self):
         for field_name in ("heldout_baseline_error", "heldout_candidate_error"):
             with self.subTest(field_name=field_name):
