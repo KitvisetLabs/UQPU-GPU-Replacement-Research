@@ -23,7 +23,7 @@ Updated artifacts:
 
 The dated equation-discovery/source-status watch now includes:
 - AI-Newton's concept-driven law-discovery family;
-- CoSR's unresolved accepted-journal/preprint status conflict;
+- CoSR manuscript-content provenance warning: a third-party review flags a PDF/body mismatch, while the current official arXiv HTML displays CoSR content and no withdrawal notice; PDF/version reconciliation remains pending;
 - a bounded thermodynamic speed-limit reproduction target for FND-001/FND-003;
 - PiT-PO adaptive physics-informed equation generation;
 - LLM-PySR search-controller separation;
