@@ -10,7 +10,7 @@
 
 ## What changed
 
-- `software/uqpu-prototype/uqpu/equation_discovery.py`: required data/proof provenance and an independent-validation plan to be present and nonblank; validate all required tuple entries; reject nonnumeric, non-finite or negative held-out errors; require a nonnegative integer independent-validation count.
+- `software/uqpu-prototype/uqpu/equation_discovery.py`: require nonempty data/proof provenance and an independent-validation plan; validate all required tuple entries; reject nonnumeric, non-finite or negative held-out errors; require a nonnegative integer independent-validation count.
 - `software/uqpu-prototype/tests/test_equation_discovery.py`: add fail-closed tests for missing provenance/validation, blank tuple entries, NaN/infinities, negative/nonnumeric errors and invalid replication counts.
 - `docs/literature_watch/2026-10-24-formal-proof-search-and-ai-math-revision-boundary.md`: record the *Science* formal-proof-search result, the official AI-mathematics release's correction/withdrawal history, limitations and falsifiable UQPU follow-up.
 
@@ -20,7 +20,7 @@ This patch closes a metadata-validation inconsistency: `required_discovery_field
 
 | Lane | Current result / next gate |
 |---|---|
-| A — quantum programming/workloads/compiler/runtime | Validator hardening and adversarial unit tests added; exact-commit hosted CI is pending. Priority remains unchanged. |
+| A — quantum programming/workloads/compiler/runtime | Validator hardening and adversarial unit tests added; exact-commit hosted CI is the acceptance gate. Priority remains unchanged. |
 | B — cloud/QPU/provider integration | No credentials, target query, provider call or QPU job; dry-run boundary unchanged. |
 | C — RAM/VRAM/HBM/storage/state/data movement | Output-information and explicit classical I/O contracts remain binding; proof artifacts are not readable-state or storage advantage. |
 | D — device/chip/process/fabrication/packaging | No device evidence; D/G co-design continues without promotion. |
@@ -53,3 +53,7 @@ The repository currently also has an experimental Lane I program; this A–H int
 ## Next highest-value gate
 
 Obtain exact-commit CI for the validator tests. If green, review the diff for compatibility and merge only through the repository's normal review/synchronization policy. Then design EQN-002's sealed-split benchmark with record-level disjointness certificates; a formal proof or a symbolic-regression fit alone is not physical evidence.
+
+## Synchronization checkpoint
+
+This branch's latest source commit records `Research-Sync: pending-main` to make its unmerged status machine-readable. The trailer is a handoff marker, not evidence that this branch has been merged into canonical `main`.
