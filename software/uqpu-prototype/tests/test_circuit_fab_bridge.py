@@ -120,6 +120,12 @@ class CircuitFabBridgeTests(unittest.TestCase):
             result.context_mismatches,
         )
 
+    def test_physical_qubits_cannot_be_below_logical_qubits(self):
+        payload = complete_payload()
+        payload["physical_qubits"] = payload["logical_qubits"] - 1
+        with self.assertRaisesRegex(ValueError, "physical_qubits"):
+            assess_circuit_fab_bridge(payload)
+
     def test_invalid_hash_and_yield_are_rejected(self):
         payload = complete_payload()
         payload["candidate_circuit_sha256"] = "not-a-hash"
