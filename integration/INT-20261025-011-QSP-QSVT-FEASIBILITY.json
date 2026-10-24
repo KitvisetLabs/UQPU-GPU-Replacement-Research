@@ -7,7 +7,7 @@
   "integration_owner_lane": "F",
   "canonical_main_base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "source_branch": "research/2026-10-25-qsp-qsvt-feasibility-watch",
-  "source_commit": "PENDING_FIRST_COMMIT_SHA",
+  "source_commit": "67edab607a02ffc45c770a19a0bdfdab59b79f07",
   "primary_artifact": "docs/literature_watch/2026-10-25-qsp-qsvt-feasibility-boundaries.md",
   "evidence_class": "LITERATURE_ONLY",
   "status": "PROPOSED_NOT_IMPLEMENTED",
