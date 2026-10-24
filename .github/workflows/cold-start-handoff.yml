@@ -9,6 +9,11 @@ permissions:
 
 jobs:
   cold-start-handoff:
+    # A newly-created branch initially points at its base commit. Skip that
+    # synthetic push event: the base commit cannot carry the new branch's
+    # required pending-main trailer. The subsequent commit push and manual
+    # workflow_dispatch still run the complete audit.
+    if: github.event_name != 'push' || github.event.created != true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout exact commit
