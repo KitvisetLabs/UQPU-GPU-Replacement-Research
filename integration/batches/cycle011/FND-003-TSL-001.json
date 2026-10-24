@@ -1,0 +1,89 @@
+{
+  "schema": "uqpu-fnd003-thermodynamic-speed-limit-protocol-v1",
+  "work_id": "FND-003-TSL-001",
+  "date": "2026-10-24",
+  "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "primary_owner": "Lane H",
+  "integration_owner": "Lane F",
+  "source": {
+    "title": "Thermodynamic speed limits in isolated quantum systems",
+    "author": "Rikuya Kobashi",
+    "venue": "Physical Review Research",
+    "accepted_date": "2026-10-06",
+    "doi": "10.1103/k16k-nx74",
+    "preprint": "arXiv:2609.12520",
+    "evidence_class": "THIRD_PARTY_ACCEPTED_THEORY",
+    "project_evidence_promotion": false
+  },
+  "status": "PROPOSED_NOT_EXECUTED",
+  "incumbent_bounds": [
+    "Margolus-Levitin under explicitly stated assumptions",
+    "Mandelstam-Tamm under explicitly stated assumptions"
+  ],
+  "candidate_bound_family": [
+    "tau >= ln(2) * (W_q^G)^2 / average_gibbs_entropy_production_rate",
+    "tau >= ln(d/(d-1)) * W_q^G / average_gibbs_entropy_production_rate for finite d"
+  ],
+  "mandatory_inputs": [
+    "finite Hilbert-space dimension",
+    "Hamiltonian family H(t) and protocol duration",
+    "initial and final density operators",
+    "initial/final coarse-graining projectors",
+    "selected entropy functional",
+    "theorem assumptions such as passivity/macroscopic-state conditions",
+    "energy convention and units",
+    "definition and calculation of Vu-Saito quantum Wasserstein pseudo-distance",
+    "entropy production and average rate with explicit units",
+    "solver/version, numeric precision, seeds and artifact hashes"
+  ],
+  "frozen_case_families": [
+    "analytically solvable two-level unitary protocols",
+    "analytically solvable three-level unitary protocols",
+    "independent small-matrix calculations",
+    "held-out Hamiltonian families not used to tune any estimator"
+  ],
+  "mandatory_counterexamples": [
+    "non-passive initial state outside the stated theorem domain",
+    "changed coarse-graining",
+    "degenerate spectra",
+    "rank/support changes",
+    "zero or ill-conditioned entropy-production rate",
+    "unitarily equivalent states with zero pseudo-distance but unequal density operators",
+    "numeric precision or eigenvalue-ordering instability"
+  ],
+  "acceptance_predicates": [
+    "all in-domain inequalities verified from the paper's definitions",
+    "dimensional consistency and assumptions explicitly checked",
+    "no untracked counterexample or numerical failure",
+    "comparison against incumbent bounds uses identical state-transition and energy conventions",
+    "independent derivation and independently implemented calculation agree",
+    "held-out Hamiltonian family remains untouched until final evaluation"
+  ],
+  "rejection_predicates": [
+    "any valid in-domain counterexample",
+    "untracked assumption change",
+    "non-reproducible numerical result",
+    "silent conversion of unknown or zero entropy-production rate",
+    "no tighter bound on any declared mission-relevant case"
+  ],
+  "resource_accounting": {
+    "wall_time_seconds": null,
+    "peak_memory_bytes": null,
+    "energy_joules": null,
+    "provider_jobs": 0,
+    "shots": 0,
+    "billable_usage": null,
+    "cost_per_accepted_result": null,
+    "note": "Null means unmeasured, not zero; this protocol has not been executed."
+  },
+  "evidence_class": "PROPOSED_MODEL_ONLY_PROTOCOL",
+  "promotion": {
+    "new_physical_law": false,
+    "device_performance": false,
+    "quantum_advantage": false,
+    "memory_storage_equivalence": false,
+    "commercial_economics": false,
+    "data_center_to_phone": false
+  },
+  "next_gate": "Implement deterministic exact-small-system fixture; freeze expected values and hashes; compare candidate and incumbent bounds; retain positive and negative cases."
+}
