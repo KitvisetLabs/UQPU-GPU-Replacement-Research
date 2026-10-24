@@ -122,5 +122,11 @@
     "number": 82,
     "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/82",
     "head_sha": "5ff28eb3a60d0b098d61432a47a97f8486d97aa9"
+  },
+  "architecture_audit": {
+    "operating_system_contract": "docs/RESEARCH_OPERATING_SYSTEM.md explicitly requires permanent A-H review, with A as Priority #1 and D/G co-design.",
+    "manifest_observed": "integration/eight_lane_manifest.json currently declares schema uqpu-nine-lane-manifest-v2, lists Lane I as a lane, and enumerates 36 A-I pairs.",
+    "cycle_treatment": "This run reviews A-H as the permanent mission architecture and treats I as auxiliary per the current run directive; no lane was deleted or silently reclassified.",
+    "governance_sync_debt": "Reconcile manifest, README, and scoreboard wording in a dedicated governance change. Do not silently demote/delete I or allow it to replace A-H."
   }
 }
