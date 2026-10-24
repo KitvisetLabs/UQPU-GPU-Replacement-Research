@@ -7,6 +7,8 @@ or establish a physical law or engineering advantage.
 """
 from __future__ import annotations
 
+import hashlib
+import json
 import math
 from dataclasses import dataclass
 from typing import Callable, Sequence
@@ -48,6 +50,23 @@ class BenchmarkResult:
     direction: str
     train: SplitMetrics
     heldout: SplitMetrics
+    train_contexts_sha256: str
+    heldout_contexts_sha256: str
+    decision_grid_sha256: str
+    grid_contract_sha256: str
+
+
+def _sha256_json(value: object) -> str:
+    """Hash canonical JSON for numeric-grid reproducibility, not data provenance."""
+    encoded = json.dumps(
+        value, sort_keys=True, separators=(",", ":"), allow_nan=False
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def _require_unique(name: str, values: Sequence[float]) -> None:
+    if len(set(values)) != len(values):
+        raise ValueError(f"{name} must not contain duplicate values")
 
 
 def _values(
@@ -134,13 +153,18 @@ def evaluate_objective_candidate(
 ) -> BenchmarkResult:
     """Score objective-order and optimum-set agreement on frozen finite grids.
 
-    The same decision grid is used for every context. Contexts must be split
-    before candidate selection. This utility does not itself freeze/hash splits,
-    inspect symbolic structure, or check physical constraints.
+    Contexts must be split before candidate selection. Duplicate context values,
+    train/held-out overlap, and duplicate decisions are rejected so repeated
+    entries cannot silently overweight the score. Returned SHA-256 fingerprints
+    bind the numeric grids and scoring settings only; they do not bind objective
+    callable code, source data, split-generation provenance, or search budgets.
+    This utility does not itself freeze the upstream dataset or inspect symbolic
+    structure and physical constraints.
     """
     if direction not in {"min", "max"}:
         raise ValueError("direction must be 'min' or 'max'")
-    if not math.isfinite(float(tolerance)) or tolerance < 0:
+    tolerance = float(tolerance)
+    if not math.isfinite(tolerance) or tolerance < 0:
         raise ValueError("tolerance must be finite and >= 0")
 
     train = tuple(float(value) for value in train_contexts)
@@ -153,10 +177,33 @@ def evaluate_objective_candidate(
     if not all(math.isfinite(value) for value in (*train, *heldout, *choices)):
         raise ValueError("contexts and decisions must be finite")
 
+    _require_unique("train contexts", train)
+    _require_unique("held-out contexts", heldout)
+    _require_unique("decision grid", choices)
+    if set(train).intersection(heldout):
+        raise ValueError("train and held-out contexts must be disjoint")
+
+    train_hash = _sha256_json(train)
+    heldout_hash = _sha256_json(heldout)
+    decision_hash = _sha256_json(choices)
+    grid_contract_hash = _sha256_json(
+        {
+            "train_contexts": train,
+            "heldout_contexts": heldout,
+            "decisions": choices,
+            "direction": direction,
+            "tolerance": tolerance,
+        }
+    )
+
     return BenchmarkResult(
         direction=direction,
         train=_score_split(reference, candidate, train, choices, direction, tolerance),
         heldout=_score_split(
             reference, candidate, heldout, choices, direction, tolerance
         ),
+        train_contexts_sha256=train_hash,
+        heldout_contexts_sha256=heldout_hash,
+        decision_grid_sha256=decision_hash,
+        grid_contract_sha256=grid_contract_hash,
     )
