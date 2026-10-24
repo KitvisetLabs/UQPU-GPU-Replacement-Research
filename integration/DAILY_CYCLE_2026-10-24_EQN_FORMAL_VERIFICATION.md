@@ -5,7 +5,7 @@
 **Canonical repository:** `KitvisetLabs/UQPU-GPU-Replacement-Research`  
 **Canonical main SHA at start:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`  
 **Source branch:** `research/2026-10-24-formal-math-equation-gates`  
-**Source article commit:** `3a899d3e49341ffd74eb6e17afbbe0a8c809781c`  
+**Source commits:** article `3a899d3e49341ffd74eb6e17afbbe0a8c809781c`; initial cycle record `4b802c79b0984349b1302690660ddd2b3b73d34b`; schema `3e5501f3cf0c015483b0f37fa91049eeee5d24c2`; focused tests `662cc7ba70b1ec63a603040d6e95151113d4e96e`; article clarification `105f55f0ec861d549abfa8b997ae3f0fd02c9d35`. This record's own bookkeeping update is captured in Git history and reconciled after review.  
 **Main synchronization:** PENDING PR/review; not merged and not claimed to be on main  
 **Evidence class:** literature synthesis + proposed methodology; no project physics/economics evidence promotion
 
@@ -26,13 +26,9 @@ The canonical operating instructions now explicitly enumerate **A–I**. The use
 
 Added `docs/literature_watch/2026-10-24-ai-formal-math-discovery-and-equation-gates.md`.
 
-The article records:
-- the 2026-10-08 *Science* result on AI-assisted Lean formal proof search;
-- the 2026-10-06 official public AI-mathematics release and its partial formalization/correction boundaries;
-- the 2026-10-12 unrefereed survey of mathematical instruments and its explicit non-kernel-checked status;
-- a proposed, not yet implemented, `EQN-FORMAL-001` gate that separates symbolic generation, explicit constraints, proof obligations, held-out tests, counterexamples, experiments, independent validation and economics.
+The article records the 2026-10-08 *Science* formal-proof-search result, the official 2026-10-06 AI-mathematics release and its verification limits, and the 2026-10-12 unrefereed non-kernel-checked survey. The cycle also **implemented a schema-level `EQN-FORMAL-001` gate** in `software/uqpu-prototype/uqpu/equation_discovery.py` and focused tests in `software/uqpu-prototype/tests/test_equation_discovery.py`. The contract now records formal status/system/statement hash/assumptions/provenance, held-out split hash, counterexample-search status, experiment protocol and independent replication. The physical-candidate gate requires held-out improvement, a completed negative counterexample search and independent replication; formal proof alone cannot promote a concept.
 
-**No Lean proof, simulation, project code test, physical experiment or provider execution was performed in this cycle.** The article is literature-only and a method proposal, not a claim of new physics or demonstrated engineering benefit.
+**No Lean proof, simulation or physical experiment was run by this cycle.** This is a schema/test implementation on a review branch, not a new law or demonstrated engineering benefit. Hosted CI is pending.
 
 ## A–I status and next independent gate
 
@@ -55,8 +51,8 @@ The article records:
 - **FND-003:** no matched control-vs-quantum-speed-limit measurement was performed.
 - **FND-004:** no alternative physical primitive is promoted.
 - **FND-005:** no QFT/particle mechanism or credible anomaly is promoted.
-- **FND-006:** mathematics-first invention gains a proposed formal-verification stage, with proof obligations scoped to explicit assumptions.
-- **EQN-001–006:** all remain open/evidence-gated. `EQN-FORMAL-001` is proposed, not implemented; no AI-generated equation is treated as a law.
+- **FND-006:** mathematics-first invention now has a schema-level formal-verification/provenance stage; the proof assistant adapter and actual proof runs remain unimplemented.
+- **EQN-001–006:** all remain open/evidence-gated. `EQN-FORMAL-001` metadata/validation code and tests are implemented on this PR branch; no candidate equation or physical law is promoted.
 - **BIO-001 / INV-030–031:** no Pangola-derived material substitution, elemental change, accepted liquid fuel or commercial bio-oil result.
 - **FUS-001 / INV-032:** no reliable net delivered fusion electricity or commercial cost result.
 - **FIN-001 / INV-033:** no new principal, interest, time-to-evidence, WACC or macro-rate measurement.
@@ -78,16 +74,17 @@ The 100× and 100,000,000× targets, universal 100,000,000-unit replacement, GPU
 - **Latest main SHA at startup:** `c7b5958af58fad04a101ef5c6abf6a29293c867e` (merge of the 2026-10-23 optimization-law/ancilla-QFI literature watch).
 - **Exact-commit status:** GitHub combined status returned no status entries for that SHA; the connector's commit-workflow lookup also returned no PR-triggered runs. This means exact-commit CI is **unverified**, not that CI failed.
 - **Last CI recorded in the repository handoff manifest:** run #786 / ID `39100104157`, recorded as successful with 14 jobs including Python 3.10/3.11/3.12, Qiskit, QSVT and reference checks. The manifest itself is dated 2026-10-18, so this is historical context and cannot certify the 2026-10-22 main commit.
-- **New work:** source branch only; source article commit above is not on main. A PR must pass required checks and human review before the work can be called synchronized.
+- **New work:** PR #75 source branch only; not on main. After the latest schema/test/docs pushes, hosted workflow run state must be checked against the final head SHA; earlier runs are superseded. A PR must pass required checks and human review before the work can be called synchronized.
 - **Known sync debt:** historical/inaccessible branches and forks have not been exhaustively reconciled. The current repo policy covers registered/accessibly visible branches only.
 - **Safety:** no credentials, paid QPU submission, purchases, fabrication, funding/capital deployment or hazardous testing occurred.
 
 ## Next highest-value gates (ordered)
 
-1. Implement the smallest offline `EQN-FORMAL-001` adversarial test harness and pin its formal environment; score false acceptance/rejection, unresolved proof obligations and counterexamples at a matched budget.
+1. Finish hosted CI for the new equation-discovery contract/tests; repair any actual failures before review.
 2. Keep Lane A Priority #1: complete QOS-AUDIT-010B25 only after authorized read-only credentials are explicitly available; then independently validate the target snapshot and route/native conformance. Do not infer execution authorization.
-3. Reproduce the Oct-23 ancilla-QFI theorem on exactly solvable states, including zero probabilities, near-degenerate log-derivatives, and the theorem's stated definition of `m`, before any architecture inference.
-4. Continue BIO-001, FUS-001 and FIN-001 through measured functional-unit inputs; do not promote MODEL_ONLY scenarios.
-5. After the PR is reviewed/merged, update the main-branch source-to-main sync record and re-check exact-commit CI.
+3. Add a pinned Lean/proof-assistant adapter only after the schema tests pass; test proved/disproved/unresolved obligations and confirm formal proof alone cannot promote a physical claim.
+4. Reproduce the Oct-23 ancilla-QFI theorem on exactly solvable states, including zero probabilities, near-degenerate log-derivatives, and the theorem's stated definition of `m`, before any architecture inference.
+5. Continue BIO-001, FUS-001 and FIN-001 through measured functional-unit inputs; do not promote MODEL_ONLY scenarios.
+6. After the PR is reviewed/merged, update the main-branch source-to-main sync record and re-check exact-commit CI.
 
 **Cold-start handoff:** another agent can resume from the PR branch, this file, the linked literature-watch article, the canonical latest main SHA and the listed open gates without this conversation.
