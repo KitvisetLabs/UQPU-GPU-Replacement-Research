@@ -61,6 +61,39 @@ class EquationDiscoveryTests(unittest.TestCase):
         )
         self.assertFalse(no_gain.ready_for_physical_candidate_claim)
 
+    def test_non_finite_heldout_metrics_are_rejected(self):
+        invalid_values = (float("nan"), float("inf"), -float("inf"))
+        for field_name in ("heldout_baseline_error", "heldout_candidate_error"):
+            for value in invalid_values:
+                with self.subTest(field=field_name, value=value):
+                    candidate = self._candidate(**{field_name: value})
+                    with self.assertRaisesRegex(ValueError, "must be finite"):
+                        candidate.validate()
+
+    def test_non_finite_baseline_cannot_create_false_candidate_promotion(self):
+        candidate = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT",
+            independent_validation_count=1,
+            heldout_baseline_error=float("inf"),
+            heldout_candidate_error=0.1,
+        )
+        self.assertFalse(candidate.has_heldout_improvement)
+        self.assertFalse(candidate.ready_for_physical_candidate_claim)
+
+    def test_heldout_metrics_reject_booleans_and_non_numeric_values(self):
+        for value in (True, "0.1", object()):
+            with self.subTest(value=repr(value)):
+                candidate = self._candidate(heldout_candidate_error=value)
+                with self.assertRaises(ValueError):
+                    candidate.validate()
+
+    def test_independent_validation_count_must_be_a_non_boolean_integer(self):
+        for value in (True, 1.5, "1", -1):
+            with self.subTest(value=repr(value)):
+                candidate = self._candidate(independent_validation_count=value)
+                with self.assertRaisesRegex(ValueError, "non-negative integer"):
+                    candidate.validate()
+
     def test_contract_keeps_equation_baseline_constraints_and_falsifier(self):
         fields = required_discovery_fields()
         for name in (
