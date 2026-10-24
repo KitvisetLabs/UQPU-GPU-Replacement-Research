@@ -18,10 +18,11 @@
     "20f6af72c282a9b4c0acce3e152968461d917f4e",
     "09e60c88f76f0a542844c1af7af444934115cc0d"
   ],
-  "ledger_bookkeeping_commits_excluded": [
+  "sampled_ledger_bookkeeping_commits_excluded": [
     "7d8bc6b078e5cb6d6bae12f83c7ec04d41c0643f",
     "bc61d86245e58c1c7dc1ff1012898fcb28df0f48"
   ],
+  "ledger_note": "The initial ledger commit and sampled updates are listed for traceability; later ledger-only updates are intentionally not self-listed to avoid recursive bookkeeping. Git history remains authoritative.",
   "pull_request": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/80",
   "artifacts": {
     "implementation": "software/uqpu-prototype/uqpu/circuit_fab_bridge.py",
