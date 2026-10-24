@@ -7,6 +7,7 @@ considered testable within the UQPU foundational-research program.
 
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass, field
 from typing import Iterable
 
@@ -57,39 +58,68 @@ class EquationHypothesis:
             raise ValueError("baseline_model is required")
         if not self.proposed_equation.strip():
             raise ValueError("proposed_equation is required")
-        if not self.variables_and_units:
-            raise ValueError("variables_and_units is required")
-        if not self.domain_and_assumptions:
-            raise ValueError("domain_and_assumptions is required")
-        if not self.known_constraints_checked:
-            raise ValueError("known_constraints_checked is required")
-        if not self.scaling_or_limiting_cases:
-            raise ValueError("scaling_or_limiting_cases is required")
+
+        for field_name, values in (
+            ("variables_and_units", self.variables_and_units),
+            ("domain_and_assumptions", self.domain_and_assumptions),
+            ("known_constraints_checked", self.known_constraints_checked),
+            ("scaling_or_limiting_cases", self.scaling_or_limiting_cases),
+            ("discriminating_observables", self.discriminating_observables),
+            ("data_or_proof_provenance", self.data_or_proof_provenance),
+            ("independent_validation_plan", self.independent_validation_plan),
+        ):
+            _require_nonempty_strings(field_name, values)
+
         if not self.falsifier.strip():
             raise ValueError("falsifier is required")
-        if not self.discriminating_observables:
-            raise ValueError("discriminating_observables is required")
         if self.evidence_level not in _ALLOWED_EVIDENCE:
             raise ValueError(f"unknown evidence level: {self.evidence_level}")
-        if self.independent_validation_count < 0:
-            raise ValueError("independent_validation_count cannot be negative")
-        for value in (self.heldout_baseline_error, self.heldout_candidate_error):
-            if value is not None and value < 0:
-                raise ValueError("held-out errors cannot be negative")
+        if (
+            isinstance(self.independent_validation_count, bool)
+            or not isinstance(self.independent_validation_count, int)
+            or self.independent_validation_count < 0
+        ):
+            raise ValueError("independent_validation_count must be an integer >= 0")
+
+        for name, value in (
+            ("heldout_baseline_error", self.heldout_baseline_error),
+            ("heldout_candidate_error", self.heldout_candidate_error),
+        ):
+            if value is None:
+                continue
+            if isinstance(value, bool) or not isinstance(value, (int, float)):
+                raise ValueError(f"{name} must be a finite numeric value >= 0")
+            if not math.isfinite(float(value)) or value < 0:
+                raise ValueError(f"{name} must be a finite numeric value >= 0")
 
     @property
     def has_heldout_improvement(self) -> bool:
-        if self.heldout_baseline_error is None or self.heldout_candidate_error is None:
+        baseline = self.heldout_baseline_error
+        candidate = self.heldout_candidate_error
+        if baseline is None or candidate is None:
             return False
-        return self.heldout_candidate_error < self.heldout_baseline_error
+        if (
+            isinstance(baseline, bool)
+            or isinstance(candidate, bool)
+            or not isinstance(baseline, (int, float))
+            or not isinstance(candidate, (int, float))
+        ):
+            return False
+        if not math.isfinite(float(baseline)) or not math.isfinite(float(candidate)):
+            return False
+        return candidate < baseline
 
     @property
     def testable(self) -> bool:
+        """True only when all required provenance and validation fields exist.
+
+        This is a testability contract, not evidence that a candidate is correct.
+        """
         try:
             self.validate()
         except ValueError:
             return False
-        return bool(self.independent_validation_plan or self.data_or_proof_provenance)
+        return True
 
     @property
     def ready_for_physical_candidate_claim(self) -> bool:
@@ -132,3 +162,10 @@ def required_discovery_fields() -> tuple[str, ...]:
 def missing_required_text(items: Iterable[str]) -> bool:
     """Small helper used by research ingestion tools."""
     return any(not str(item).strip() for item in items)
+
+
+def _require_nonempty_strings(field_name: str, values: Iterable[str]) -> None:
+    """Reject absent, blank, or non-text entries in a required tuple field."""
+    items = tuple(values)
+    if not items or any(not isinstance(item, str) or not item.strip() for item in items):
+        raise ValueError(f"{field_name} must contain non-empty strings")
