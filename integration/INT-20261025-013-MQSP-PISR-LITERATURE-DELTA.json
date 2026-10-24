@@ -27,7 +27,9 @@
         "Theoretical result under stated oracle/block-encoding assumptions",
         "No UQPU implementation or target execution",
         "Asymptotic query costs omit unspecified application-specific preparation, readout, host, target, energy and billing costs"
-      ]
+      ],
+      "canonical_prior_record": "docs/LITERATURE_WATCH_2026-10-17_MULTIVARIATE_QSP.md",
+      "status": "PREVIOUSLY_RECORDED_CROSS_WATCH_RECONCILIATION"
     },
     {
       "id": "LIT-PISR-PARTICLE-INTERFACE-2026-09-08",
@@ -47,7 +49,8 @@
         "Domain-specific effective closure, not a universal/fundamental law",
         "Generalization and independent replication remain separate gates",
         "No Pangola, semiconductor, fusion, UQPU or finance evidence"
-      ]
+      ],
+      "status": "NEW_TO_CURRENT_WATCH"
     }
   ],
   "canonical_control": {
@@ -87,7 +90,7 @@
   "sync_debt": {
     "canonical_gap_ledger": "RESEARCH_GAPS.md",
     "reason": "Large living append-only gap ledger not overwritten; current RG-035 concerns autonomous handoff reconciliation.",
-    "required_followup": "Append QOS-MQSP-001 and EQN-PISR-001 with existing IDs preserved during the next safe canonical gap-ledger sync.",
+    "required_followup": "Append QOS-MQSP-001 and EQN-PISR-001 with existing IDs preserved during the next safe canonical gap-ledger sync; M-QSP is a refined existing follow-up, not a new source.",
     "ci_at_base": "No status entries and no workflow runs returned for base SHA at audit time; CI not observed, not pass/failure."
   },
   "authorization": {
@@ -97,5 +100,9 @@
     "material_experiments": 0,
     "fuel_production_runs": 0,
     "fusion_tests": 0
+  },
+  "source_disposition": {
+    "LIT-MQSP-2026-10-01": "Previously recorded in docs/LITERATURE_WATCH_2026-10-17_MULTIVARIATE_QSP.md; this cycle reconciles its multi-oracle boundary with Batch 056 and the current QSP/QSVT feasibility watch.",
+    "LIT-PISR-PARTICLE-INTERFACE-2026-09-08": "New-to-this-watch peer-reviewed, experiment-informed effective-model result."
   }
 }
