@@ -22,7 +22,7 @@ The code and tests are committed on the research branch. Hosted CI has not yet c
 
 At inspection time, `main` pointed to `c7b5958af58fad04a101ef5c6abf6a29293c867e` (merge commit dated 2026-10-22 17:06:54 UTC). Its combined commit-status response contained no status entries. Recent open PRs #56–#60 carried newer research and CI runs; those branches are not main content. PR #56 (CoSR preregistration) and PR #58 (task-resolved Fisher ledger) had successful exact-head prototype/invariant and cold-start checks in the inspected runs. PR #60 had an earlier cold-start failure followed by a successful fix-branch run. These facts are snapshots, not substitutes for this branch's CI.
 
-The root append-oriented `RESEARCH_GAPS.md`, `WORKLOG.md`, discovery registry and cold-start manifest were not overwritten because several open branches are concurrently adding to them. The canonical multilingual strategic-plan links and directives 00–06 remain untouched.
+A supplemental scan later in this cycle identified a separate Lane-A/Lane-H compiler-configuration preprint; its literature watch and benchmark contract are recorded on PR #62, not duplicated here. The root append-oriented `RESEARCH_GAPS.md`, `WORKLOG.md`, discovery registry and cold-start manifest were not overwritten because several open branches are concurrently adding to them. The canonical multilingual strategic-plan links and directives 00–06 remain untouched.
 
 ## A–H and permanent invariant status
 
