@@ -56,3 +56,8 @@ The base main head reviewed for this branch was c7b5958af58fad04a101ef5c6abf6a29
 ## Cold-start handoff reconciliation
 
 The first hosted cold-start audit reported only a missing Research-Sync commit trailer; it did not report a lane-contract or evidence-boundary failure. This follow-up commit carries the required pending-main trailer. The branch remains unmerged until review and successful CI.
+
+
+## Related pending cost-driver research
+
+PR #49 separately proposes BIO-TEA-001 and FUS-ECON-001 from peer-reviewed biomass pyrolysis TEA and a normalized fusion economic-gain framework. That work is literature/model crosswalk only and remains unmerged at the time of this branch. This PR does not duplicate those source reviews or claim their proposed follow-ups were executed; the detailed BIO-001 API is a component-ledger interface that can later consume traceable source inputs under the same accepted-product and net-electric boundaries.
