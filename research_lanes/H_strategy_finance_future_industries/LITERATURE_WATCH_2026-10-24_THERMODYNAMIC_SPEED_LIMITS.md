@@ -19,8 +19,8 @@ The paper derives thermodynamic speed-limit inequalities for finite-time unitary
 
 For the paper's Gibbs-entropy setting, the stated results include a quadratic distance bound and a finite-dimensional linear bound. In the paper's units and definitions, their time-limit forms are:
 
-- `tau >= ln(2) * W_q^2 / <sigma_G>`;
-- `tau >= ln(d/(d-1)) * W_q / <sigma_G>` for finite dimension `d`.
+- `tau >= ln(2) * (W_q^G)^2 / <sigma_G>`;
+- `tau >= ln(d/(d-1)) * W_q^G / <sigma_G>` for finite dimension `d`.
 
 These are not universal gate-time constants: `W_q`, the entropy-production quantity, coarse-graining, initial-state conditions and Hamiltonian protocol must match the theorem. The paper also treats observational-entropy coarse-grainings for system–bath, local-energy and energy-basis/diagonal-entropy settings. Its quantum Wasserstein quantity is a pseudo-metric depending on state spectra; zero distance can mean unitary equivalence rather than identical density operators.
 
