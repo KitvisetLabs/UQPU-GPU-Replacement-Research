@@ -209,6 +209,10 @@ def _validate_present_values(payload: Mapping[str, Any]) -> None:
         if not math.isfinite(value) or not 0 < value <= 1:
             raise ValueError("yield_fraction must be finite and in (0, 1]")
 
+    if payload.get("logical_qubits") is not None and payload.get("physical_qubits") is not None:
+        if payload["physical_qubits"] < payload["logical_qubits"]:
+            raise ValueError("physical_qubits must be >= logical_qubits")
+
 
 def _context_mismatches(payload: Mapping[str, Any]) -> tuple[str, ...]:
     checks = (
