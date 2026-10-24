@@ -102,6 +102,12 @@ class ProgressiveEquationDiscoveryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "string identifiers"):
             candidate.validate()
 
+    def test_source_dataset_digest_mismatch_invalidates_split_manifest(self):
+        splits = replace(split_data(), source_dataset_sha256="f" * 64)
+        candidate = plan(data_splits=splits)
+        with self.assertRaisesRegex(ValueError, "manifest/data digest mismatch"):
+            candidate.validate()
+
     def test_manifest_digest_must_match_canonical_membership(self):
         splits = replace(split_data(), train_manifest_sha256="f" * 64)
         candidate = plan(data_splits=splits)
