@@ -31,6 +31,12 @@ The dated equation-discovery/source-status watch now includes:
 
 The materials paper is a method lead for Lane E and D/G co-design, not evidence for Pangola-derived materials or critical-material substitution. All cited findings remain literature-only.
 
+### Lane E — materials inverse-design literature delta
+
+A new primary-owner Lane E watch records the 2026-10-23 symbolic-regression inverse-design article on high-hardness multi-principal-element alloys. It contributes a method pattern only: interpretable descriptors -> surrogate -> constrained search -> physical screen -> independent material test. It does not demonstrate Pangola carbon substitution, any UQPU electronics function, or a reduction in critical-material use.
+
+Primary artifact: `research_lanes/E_materials_energy_cooling_infrastructure/LITERATURE_WATCH_2026-10-24_SYMBOLIC_REGRESSION_MATERIAL_INVERSE_DESIGN.md`.
+
 ### Lanes B–G — reviewed dependencies
 
 | Lane | Status this cycle | Evidence boundary / next gate |
