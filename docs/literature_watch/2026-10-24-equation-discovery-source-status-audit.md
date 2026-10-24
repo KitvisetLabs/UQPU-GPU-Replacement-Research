@@ -24,10 +24,19 @@ However, the official arXiv record for arXiv:2603.13727 explicitly marks the pap
 
 **Decision:** do not use CoSR's performance claims as evidence or as a trusted baseline until the final journal version, withdrawal note, and any correction/retraction status are reconciled. Preserve the conflict as a first-class literature-audit result rather than silently selecting the more favorable status.
 
+### 3. Thermodynamic speed limits in isolated quantum systems
+
+The Physical Review Research accepted-paper page lists Rikuya Kobashi's “Thermodynamic speed limits in isolated quantum systems,” accepted 2026-10-06, DOI 10.1103/k16k-nx74. The official arXiv record is arXiv:2609.12520, submitted 2026-09-11. The paper derives generalized second-law inequalities for Gibbs and selected observational entropies using the Vu–Saito quantum Wasserstein distance between coarse-grained states, then obtains lower bounds on operation time through average entropy-production rates. The stated applications include system–bath, local-energy, and energy-basis/diagonal-entropy coarse-grainings.
+
+Relevance: this is a candidate mathematical input to FND-001 and FND-003, because it links a declared state-transformation distance, a coarse-graining choice, entropy production, and a time lower bound. It is not a universal circuit-latency bound: applicability depends on the isolated unitary protocol, the chosen coarse-graining/entropy definition, the initial-state assumptions, and the paper's distance convention. The quantum Wasserstein quantity is a pseudo-metric depending on state spectra, so zero distance need not mean identical density matrices.
+
+Falsifiable follow-up: reproduce one analytically solvable two-level case from the paper, record the exact initial/final states and coarse-graining projectors, compute the bound independently, verify units and assumptions, and compare it with the corresponding Margolus–Levitin/Mandelstam–Tamm bound and a matched control-time measurement. Any discrepancy remains a reproduction issue; no speedup or new physical law is inferred.
+
 ## What is genuinely new for this repository
 
 - The existing 2026-10-23 watch already covers OptScientist optimization-law discovery and the ancilla-QFI theorem preprint. Those two sources were not counted as new this cycle.
 - The new method-family candidate is concept-driven, multi-experiment law discovery (AI-Newton).
+- A recently accepted thermodynamic speed-limit paper adds a coarse-graining-dependent candidate for FND-001/FND-003, subject to exact assumption and bound reproduction.
 - The key negative result is a source-status conflict around CoSR, showing why an accepted-page abstract cannot replace version/provenance review.
 - Targeted searches on 2026-10-24 found no additional primary source that changed the current evidence gates for Pangola materials, saleable bio-oil, net fusion electricity, manufacturing, or project financing. This is a bounded search, not an exhaustive systematic review.
 
@@ -38,7 +47,8 @@ However, the official arXiv record for arXiv:2603.13727 explicitly marks the pap
 3. Compare direct symbolic regression, concept-driven generation, progressive composition, optimization-law discovery, and a non-physics-aware negative control under identical search-wall-clock and host-resource budgets.
 4. Score exact structure recovery separately from held-out prediction, unit/dimension validity, symmetry/conservation/causality, limiting cases, counterexamples, identifiability, false-discovery rate, expression complexity, and data-selection leakage.
 5. Resolve CoSR's status conflict from the journal version and correction/retraction record before including it as a scored baseline.
-6. Any passing synthetic benchmark remains MODEL_ONLY; a physical claim still needs a discriminating observation, proof/experiment where appropriate, independent replication, device/system consequence, and full economics.
+6. Reproduce the accepted thermodynamic speed-limit bound on a small analytic state before comparing it with existing quantum-speed-limit bounds or any measured control time.
+7. Any passing synthetic benchmark remains MODEL_ONLY; a physical claim still needs a discriminating observation, proof/experiment where appropriate, independent replication, device/system consequence, and full economics.
 
 ## Invariant contribution and non-claims
 
@@ -47,7 +57,7 @@ However, the official arXiv record for arXiv:2603.13727 explicitly marks the pap
 - **INV-031:** no commercial bio-oil/fuel evidence.
 - **INV-032:** no net delivered fusion-electricity evidence.
 - **INV-033:** no interest-rate, WACC, or project-finance evidence.
-- **INV-034:** strengthens source-status discipline and a falsifiable mathematics-first comparison path.
+- **INV-034:** strengthens source-status discipline and adds a bounded FND-001/FND-003 reproduction candidate; no new physical result.
 - **INV-035:** expands candidate-generator coverage while preserving incumbent equations, dimensions, symmetry, conservation, causality, held-out predictions, falsifiers, and independent validation as binding gates.
 
 No item in this note is a verified UQPU discovery. It belongs in the literature-watch area, not the root-level INV-037 verified-discovery registry.
