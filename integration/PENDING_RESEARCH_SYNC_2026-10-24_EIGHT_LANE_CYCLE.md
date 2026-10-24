@@ -7,14 +7,15 @@
 
 ## Source-to-main mapping
 
-| Work item | Source branch / commit | PR | Contents | Evidence class | CI state at 2026-10-24 ~10:21 UTC |
+| Work item | Source branch / commit | PR | Contents | Evidence class | CI state at 2026-10-24 ~10:40 UTC |
 |---|---|---|---|---|---|
-| RG-045 split-disjointness certificate | research/2026-10-24-rg045-split-disjointness / e59b8c80436387cabb0450efd9502db3e430ca83 | #69 | Gap artifact and pending handoff. Finds that distinct split-file hashes do not prove record-level disjointness; requests manifest-bound stable IDs and adversarial tests. Issue #68. | SOFTWARE_PROTOCOL_GAP | Head cold-start audit success; Python 3.10/3.11/3.12 invariant suite and one extended workflow success; a duplicate extended run still in progress. |
-| BIO-001 accepted-fuel upgrading watch | research/2026-10-24-bio-oil-upgrading-watch / 237aa65ebbd81eb4be7d02605c888756eb25b0d6 | #70 | Lane E literature watch for 2026 straw-oil hydrotreating experiment and microalgae HTL cost optimization; integration gate BIO-001-UPGRADE-ACCEPTANCE-001. | EXTERNAL EXPERIMENT + TEA / NO UQPU RESULT | Head cold-start audit success; Python 3.10/3.11/3.12 tests passed; extended reference/QSVT jobs in progress. |
-| Agentic scientific discovery watch | research/2026-10-24-agentic-discovery-watch / 6813819080dabb2a18f68db8113423edcb546a18 | #71 | Lane H watch for the 2026-10-22 methods primer and proposed HANDOFF-AGENT-001 cold-start reproducibility benchmark. | LITERATURE_ONLY | Head cold-start audit success; invariant/test workflows in progress. |
-| FUS-001 fusion cost-account watch | research/2026-10-24-fusion-cost-estimation-watch / 6aa4a3061be4bf8518fe478124df9e8bd29707f5 | #72 | Lane E watch for the 2026-09-08 ACCERT/COA fusion cost-model adaptation; proposes FUS-001-COA-ADAPTER-001. | EXTERNAL COST-MODEL METHODOLOGY / NO UQPU RESULT | Head cold-start audit success; invariant/test workflows queued at last check. |
+| RG-045 split-disjointness certificate | research/2026-10-24-rg045-split-disjointness / e59b8c80436387cabb0450efd9502db3e430ca83 | #69 | Gap artifact and pending handoff. Finds that distinct split-file hashes do not prove record-level disjointness; requests manifest-bound stable IDs and adversarial tests. Issue #68. | SOFTWARE_PROTOCOL_GAP | Head cold-start audit success; Python 3.10/3.11/3.12 invariant suite and one extended workflow success; a duplicate extended run was in progress at last check. |
+| BIO-001 accepted-fuel upgrading watch | research/2026-10-24-bio-oil-upgrading-watch / 237aa65ebbd81eb4be7d02605c888756eb25b0d6 | #70 | Lane E literature watch for 2026 straw-oil hydrotreating experiment and microalgae HTL cost optimization; integration gate BIO-001-UPGRADE-ACCEPTANCE-001. | EXTERNAL EXPERIMENT + TEA / NO UQPU RESULT | Head cold-start audit success; Python 3.10/3.11/3.12 tests passed; extended reference/QSVT jobs in progress at last check. |
+| Agentic scientific discovery watch | research/2026-10-24-agentic-discovery-watch / 6813819080dabb2a18f68db8113423edcb546a18 | #71 | Lane H watch for the 2026-10-22 methods primer and proposed HANDOFF-AGENT-001 cold-start reproducibility benchmark. | LITERATURE_ONLY | Head cold-start audit success; invariant/test workflows were in progress at last check. |
+| FUS-001 fusion cost-account watch | research/2026-10-24-fusion-cost-estimation-watch / 6aa4a3061be4bf8518fe478124df9e8bd29707f5 | #72 | Lane E watch for the 2026-09-08 ACCERT/COA fusion cost-model adaptation; proposes FUS-001-COA-ADAPTER-001. | EXTERNAL COST-MODEL METHODOLOGY / NO UQPU RESULT | Head cold-start audit success; invariant/test workflows queued or in progress at last check. |
+| EQN-007 equation proof/provenance gate | research/2026-10-24-eqn-proof-provenance-gate / 093bd40f975d3e15544643c9463124e7dd8d8768 | #74 | Hardens `EquationHypothesis.validate()` to require both provenance and an independent-validation plan, rejects blank required fields and invalid held-out errors, adds adversarial tests, and records formal-proof-search literature with its correction/withdrawal boundary. | SOFTWARE_CONTRACT_CHANGE + LITERATURE_ONLY / CI PENDING | PR opened 2026-10-24 10:38 UTC; exact-commit hosted CI and review pending. |
 
-All four PRs target main and remain unmerged. The source commits are not canonical-main commits. The table is a pending-work record, not an endorsement of any scientific or commercial claim.
+All five PRs target main and remain unmerged. The source commits are not canonical-main commits. The table is a pending-work record, not an endorsement of any scientific or commercial claim.
 
 ## Research context inspected
 
@@ -26,6 +27,7 @@ Canonical main remains at c7b5958af58fad04a101ef5c6abf6a29293c867e. The cycle in
 - E/F/H: BIO-001 now has an explicit accepted-fuel function gate, with external feedstock-specific results kept separate from Pangola evidence.
 - E/D/G/F/H: FUS-001 has a traceable cost-account adapter proposal while keeping net-electric output, lifecycle scope and finance as separate acceptance requirements.
 - H/A–H: HANDOFF-AGENT-001 proposes a reproducibility benchmark for a memoryless agent; the existing cold-start audit remains structural and does not validate scientific claims.
+- A/H/FND/EQN: EQN-007 closes a validator metadata/numeric-input inconsistency in a reviewable branch and records the formal-proof-versus-empirical-model distinction. The software result remains unvalidated until hosted CI passes.
 
 ## Evidence and authorization boundary
 
@@ -44,3 +46,4 @@ This ledger itself is pending review and is not yet on main. After this PR and s
 3. Run BIO-001 only with a characterized feedstock lot, frozen product specification, mass/energy closure and accepted-liquid measurements.
 4. Implement FUS-001 cost-account completeness and net-electric/lifecycle accounting before any LCOE claim.
 5. Run HANDOFF-AGENT-001 only after its task set and scoring rubric are preregistered.
+6. Validate EQN-007 on the exact source commit; if green, review the contract change and then design EQN-002's sealed-split benchmark with record-level disjointness certificates.
