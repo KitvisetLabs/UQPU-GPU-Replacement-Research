@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-24T15:08:00Z",
+  "prepared_utc": "2026-10-24T15:14:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "2026-10-24: PR #76 updated with EQN-OPT-001 disjoint split validation, numeric-grid SHA-256 fingerprints, and expanded equation/material literature watch; source head dd8d692da0432972ee4bfa510ec79c73b698a434 is not on main; exact-head CI queued.",
+  "current_frontier": "2026-10-24: PR #76 updated with EQN-OPT-001 disjoint split validation, numeric-grid SHA-256 fingerprints, and literature updates; CoSR is now correctly described as an unresolved PDF/version provenance question, not a verified withdrawal. Source head f5733f76f5351b2296d6b7563797ed1aeb2c80b2 is not on main; exact-head prototype CI remains pending.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -82,7 +82,7 @@
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
       "status": "LITERATURE_WATCH_UPDATED_PENDING_MAIN",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "resolve CoSR source-status conflict; audit full AI-Newton/PiT-PO/LLM-PySR methods and preserve six-language master-plan links"
+      "next_gate": "retrieve/compare CoSR v2 PDF and final journal version, audit code/data and official correction status; continue AI-Newton/PiT-PO/LLM-PySR methods review while preserving six-language master-plan links"
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
@@ -142,7 +142,7 @@
     "status": "PENDING_REVIEW_AND_EXACT_HEAD_CI",
     "canonical_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
     "source_branch": "research/2026-10-24-eqn-opt-001",
-    "source_head_sha": "dd8d692da0432972ee4bfa510ec79c73b698a434",
+    "source_head_sha": "f5733f76f5351b2296d6b7563797ed1aeb2c80b2",
     "pull_request": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/76",
     "handoff_path": "integration/PENDING_MAIN_SYNC_2026-10-24_EQN_OPT_001.md",
     "evidence_class": "MODEL_ONLY_SYNTHETIC_PLUS_LITERATURE_ONLY",
