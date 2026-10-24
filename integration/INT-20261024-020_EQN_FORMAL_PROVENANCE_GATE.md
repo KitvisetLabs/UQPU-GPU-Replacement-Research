@@ -57,3 +57,8 @@ Obtain exact-commit CI for the validator tests. If green, review the diff for co
 ## Synchronization checkpoint
 
 This branch's latest source commit records `Research-Sync: pending-main` to make its unmerged status machine-readable. The trailer is a handoff marker, not evidence that this branch has been merged into canonical `main`.
+
+
+## Held-out metric guard refinement
+
+The direct `has_heldout_improvement` predicate now also returns false for booleans, nonnumeric values and non-finite metrics even if a caller bypasses `validate()`. An adversarial unit test covers that direct-call path. Hosted CI on the updated source head remains the acceptance gate.
