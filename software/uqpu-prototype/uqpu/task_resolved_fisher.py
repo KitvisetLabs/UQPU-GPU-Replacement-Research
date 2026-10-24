@@ -235,15 +235,20 @@ class TaskResolvedFisherRecord:
         violations: list[str] = []
         if not _matrix_is_psd(_subtract(self.qfi_matrix, self.complete_record_fi_matrix)):
             violations.append("QFI does not dominate complete-record Fisher information")
-        previous = self.complete_record_fi_matrix
-        previous_label = "complete measurement record"
         for feature in self.retained_features:
-            if not _matrix_is_psd(_subtract(feature.information_matrix, previous)):
+            if not _matrix_is_psd(
+                _subtract(self.complete_record_fi_matrix, feature.information_matrix)
+            ):
                 violations.append(
-                    f"feature order {feature.order} does not dominate {previous_label}"
+                    f"complete measurement record does not dominate feature order {feature.order}"
                 )
-            previous = feature.information_matrix
-            previous_label = f"feature order {feature.order}"
+        for lower, higher in zip(self.retained_features, self.retained_features[1:]):
+            if not _matrix_is_psd(
+                _subtract(higher.information_matrix, lower.information_matrix)
+            ):
+                violations.append(
+                    f"feature order {higher.order} does not dominate feature order {lower.order}"
+                )
         return tuple(violations)
 
     @property
