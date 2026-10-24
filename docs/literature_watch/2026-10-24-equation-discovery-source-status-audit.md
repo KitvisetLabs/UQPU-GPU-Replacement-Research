@@ -3,7 +3,7 @@
 **Accessed:** 2026-10-24  
 **Primary owner:** Lane H — strategy / future-industry research and publication  
 **Feeds:** Lanes A, C, D, E, F, G, H; FND-001–006; EQN-001–006; INV-029, INV-030, INV-034, INV-035  
-**Evidence class:** `LITERATURE_ONLY`; accepted-journal records and official preprints, with one unresolved version-status conflict  
+**Evidence class:** `LITERATURE_ONLY`; accepted-journal records and official preprints, with an unresolved CoSR manuscript-content provenance question  
 **Project evidence promotion:** none
 
 ## Fresh sources and status
@@ -16,11 +16,13 @@ The accepted-paper date is a publication-status update, not a newly discovered p
 
 **UQPU relevance:** a candidate generator family for EQN-003 and a staged-generalization pattern for EQN-006. Test whether concept generation improves out-of-domain structure recovery over direct symbolic regression under the same search, compute, and data budgets. No reported law is treated as a UQPU result.
 
-### 2. CoSR: progressive symbolic-law discovery — unresolved version/status conflict
+### 2. CoSR: accepted journal page, unresolved manuscript-content provenance
 
-The Physical Review Research accepted-paper page lists Mingkun Xia and Weiwei Zhang, “Data-driven progressive discovery of physical laws,” accepted 2026-10-06, DOI [10.1103/f2kp-pp4q](https://doi.org/10.1103/f2kp-pp4q). It describes Chain of Symbolic Regression (CoSR), which builds a law through a sequence of physically meaningful symbolic units instead of one-step expression search. The associated [arXiv record](https://arxiv.org/abs/2603.13727) has been reported as withdrawn with a methodological-flaw notice involving the Rayleigh–Bénard-convection case, while the APS accepted page remains visible.
+The Physical Review Research accepted-paper page lists Mingkun Xia and Weiwei Zhang, “Data-driven progressive discovery of physical laws,” accepted 2026-10-06, DOI [10.1103/f2kp-pp4q](https://doi.org/10.1103/f2kp-pp4q). The [official arXiv HTML record](https://arxiv.org/abs/2603.13727), dated 2026-03-14, currently displays the CoSR abstract and a full HTML methods/results body that match the paper title.
 
-**Decision:** this cycle has not reconciled the accepted-page record, the current arXiv version/status, and any correction/retraction notice. Do not score CoSR performance or use it as a trusted baseline until the final journal version and status are resolved. Preserve the conflict as a first-class provenance result rather than silently selecting the more favorable source.
+A third-party [Pith review of arXiv:2603.13727](https://pith.science/paper/2603.13727) reports that the supplied PDF/full text for version 2 appears to be an unrelated CHI paper, “It Became My Buddy, But I'm Not Afraid to Disagree” (arXiv:2603.13717), and therefore treats the empirical claims as uncheckable. This is a credible artifact/provenance warning, but it is **not** an official arXiv withdrawal notice. During this cycle the PDF bytes and final journal version were not independently retrieved, and the current arXiv HTML page shows no withdrawal notice.
+
+**Decision:** classify this as an unresolved manuscript-content/version provenance question, not as a verified withdrawal or retraction. Do not score CoSR performance or treat it as a trusted baseline until the actual version-of-record, PDF content, code/data version, and any correction/editorial status are reconciled. The HTML body alone does not settle whether the distributable PDF artifact is correct.
 
 ### 3. Thermodynamic speed limits in isolated quantum systems
 
@@ -52,22 +54,22 @@ Peiyi Li's [Scientific Reports article, “Machine learning-driven inverse desig
 
 **Genuine novelty for this cycle:** a newly published, materials-specific example of interpretable feature construction feeding inverse composition search, relevant to the Lane D/G device/manufacturing co-design and Lane E materials-search method stack.
 
-**Limitations:** agreement among search algorithms using the same surrogate is not a proof of global optimality. The abstract says processing and microstructure variables are future work; it does not establish that these 22 candidates were experimentally fabricated and validated. Refractory W/Mo are reported as primary strengthening elements, so this is not evidence of carbon replacing critical elements. No Pangola-derived material or electronics function was tested.
+**Limitations:** agreement among search algorithms using the same surrogate is not a proof of global optimality. The article says processing and microstructure variables are future work; it does not establish that these 22 candidates were experimentally fabricated and validated. Refractory W/Mo are reported as primary strengthening elements, so this is not evidence of carbon replacing critical elements. No Pangola-derived material or electronics function was tested.
 
-**UQPU/INV-030 follow-up:** adapt the *methodology*, not its hardness predictions, to a functional-unit benchmark for candidate carbon composites/coatings, recovery media, hybrid contacts, and reduced-metal architectures. Compare the exact function required against the incumbent using relevant electrical/thermal conductivity, contact resistance, strength, stability, lifetime, process energy, yield, recyclability and cost. Record direct substitution as unsuitable wherever the function cannot be met; never infer elemental transmutation or universal material replacement.
+**UQPU/INV-030 follow-up:** adapt the methodology, not its hardness predictions, to a functional-unit benchmark for candidate carbon composites/coatings, recovery media, hybrid contacts, and reduced-metal architectures. Compare the exact function required against the incumbent using relevant electrical/thermal conductivity, contact resistance, strength, stability, lifetime, process energy, yield, recyclability and cost. Record direct substitution as unsuitable wherever the function cannot be met; never infer elemental transmutation or universal material replacement.
 
 ## What changed for this repository
 
 - The newly surfaced PiT-PO and LLM-PySR papers support testing adaptive-generator and search-controller roles as separate candidate families, not merging generation with acceptance.
 - The 2026-10-23 alloy inverse-design paper adds a current Lane E/D/G methods lead, but only for a carefully scoped materials-screening protocol.
-- The CoSR status conflict remains unresolved and is a negative provenance result.
+- CoSR has a manuscript-content provenance warning from a third-party review, while the current official arXiv HTML page shows CoSR content and no withdrawal notice. The PDF/version discrepancy remains unresolved; the earlier cycle must not label this a verified withdrawal.
 - The thermodynamic-speed-limit paper adds a bounded FND-001/FND-003 reproduction candidate; it does not supersede existing limits.
 - Targeted searches on 2026-10-24 did not establish new project evidence for Pangola carbon substitution, accepted bio-oil/fuel, net fusion electricity, quantum advantage, or project financing. This is a bounded surveillance pass, not an exhaustive systematic review.
 
 ## Falsifiable follow-up plan
 
-1. Retrieve and compare the full accepted AI-Newton version against its preprint; freeze source and dataset versions.
-2. Resolve CoSR status from the final journal version and any correction/retraction record before using it as a scored baseline.
+1. Retrieve the actual CoSR version-2 PDF and final journal version; compare title, body, equations, code, dataset and version metadata. Seek an official correction/editorial notice if a mismatch remains. Until resolved, exclude CoSR from scored baselines.
+2. Retrieve and compare the full accepted AI-Newton version against its preprint; freeze source and dataset versions.
 3. Reproduce the thermodynamic-speed-limit result on an analytically solvable two-level state before comparing bounds or control times.
 4. Compare direct symbolic regression, concept-driven generation, PiT-PO-style adaptive generation, LLM-controlled symbolic-regression search, progressive composition (only after provenance resolution), and a non-physics-aware negative control under equal data, wall-clock, host-resource, candidate-evaluation, and search budgets.
 5. Freeze train/held-out split provenance and numeric-grid fingerprints before candidate selection; test known laws, multiple equally predictive laws, confounding, noise, out-of-distribution contexts, dimensional distractors, symmetry/conservation violations, counterexamples, and false-discovery rates.
