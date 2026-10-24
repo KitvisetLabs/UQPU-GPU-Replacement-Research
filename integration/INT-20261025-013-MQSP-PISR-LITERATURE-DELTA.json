@@ -91,7 +91,14 @@
     "canonical_gap_ledger": "RESEARCH_GAPS.md",
     "reason": "Large living append-only gap ledger not overwritten; current RG-035 concerns autonomous handoff reconciliation.",
     "required_followup": "Append QOS-MQSP-001 and EQN-PISR-001 with existing IDs preserved during the next safe canonical gap-ledger sync; M-QSP is a refined existing follow-up, not a new source.",
-    "ci_at_base": "No status entries and no workflow runs returned for base SHA at audit time; CI not observed, not pass/failure."
+    "ci_at_base": "No status entries and no workflow runs returned for base SHA at audit time; CI not observed, not pass/failure.",
+    "stale_reconciliation_snapshot": {
+      "artifact": "integration/DAILY_CYCLE_2026-10-25_CANONICAL_RECONCILIATION.md",
+      "recorded_base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "current_main_sha_at_this_run": "6af8ce896368ed993fe2b8278afa6082e1ecc916",
+      "reason": "The snapshot says main was last observed on Oct 22 and treats the Oct 25 proof-search/QSP-QSVT watches as pending PRs, but the current main contains later Oct 24 commits integrating those watches.",
+      "required_followup": "Create a new reconciliation snapshot from the then-current main SHA; do not rewrite historical evidence or assume the older snapshot is current."
+    }
   },
   "authorization": {
     "paid_qpu_jobs": 0,
