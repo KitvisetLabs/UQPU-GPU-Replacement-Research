@@ -6,7 +6,7 @@
 **Canonical main base SHA:** 6af8ce896368ed993fe2b8278afa6082e1ecc916  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/89  
 **Source branch:** research/2026-10-25-fnd001-ergotropy-certification  
-**Source head SHA:** 401b718b49371b4380a70d659b05428bf4f94a20  
+**Source head SHA:** ecdaad1f9134f87fb9f3f73881aaebcc2d42dd09  
 **Source author/agent:** GitHub connector commit under KitvisetLabs; autonomous research cycle  
 **Primary owner:** Lane F; priority lane A remains unchanged  
 **Evidence class:** LITERATURE_ONLY + proposed test protocol  
@@ -20,7 +20,7 @@
 | 5664aaef15ede2335b61bde6b65d3e67fe76ae18 | Add docs/literature_watch/2026-10-25-fnd001-ergotropy-certification.md | Peer-reviewed PRL paper and arXiv v2 reviewed; literature-only; no UQPU result |
 | 611bdbce0539b4c41d31c9f26b052a4baae3bb26 | Add integration/INT-20261025-013-FND001-ERGOTROPY-CERTIFICATION.md | Initial A–H handoff, FND-001 test plan and evidence boundaries |
 
-The source PR now contains four documentation files and no source-code change: the literature watch, Lane F primary work item, human integration handoff and machine-readable integration contract. Later source commits added the primary Lane F work item, linked it from the literature/integration artifacts, added the 36-pair integration scan JSON and linked that contract. The final source head SHA above is the commit containing those links; intermediate source SHAs remain visible in Git history. It records Pagliaro et al., “Certifying ergotropy under partial information,” *Physical Review Letters* 137, 130401 (2026-09-21), arXiv v2 2026-09-28, and proposes FND-ERG-001. It distinguishes a lower bound on extractable work from metered electricity consumed per accepted useful task.
+The source PR now contains five changed files and no source-code change: the literature watch, Lane F primary work item, human integration handoff, machine-readable integration contract, and an append-only RG-046 entry in RESEARCH_GAPS.md. Later source commits linked the artifacts, added the 36-pair A–I integration scan, corrected snapshot wording, appended the gap after fetching the full 57,215-character prior gap file, and marked the gap-ledger update as pending review. The final source head SHA above is authoritative; intermediate source SHAs remain visible in Git history. It records Pagliaro et al., “Certifying ergotropy under partial information,” *Physical Review Letters* 137, 130401 (2026-09-21), arXiv v2 2026-09-28, and proposes FND-ERG-001. It distinguishes a lower bound on extractable work from metered electricity consumed per accepted useful task.
 
 Additional source commits after the initial integration handoff:
 
@@ -33,6 +33,9 @@ Additional source commits after the initial integration handoff:
 | 61730de1dae12a123b446da198f784cd945ca4dd | Link the human integration handoff to the machine-readable contract |
 | aee52da80207b5819537b724fa509ac087dc8b50 | Clarify non-self-referential source-head and CI fields in the JSON contract |
 | 401b718b49371b4380a70d659b05428bf4f94a20 | Label CI run as a prior-head snapshot to avoid stale status |
+| 0a7636b5acd321085305b2d016e9e879e59a9e90 | Append RG-046 to RESEARCH_GAPS.md while preserving existing history |
+| e76f3d0921a54a5b86a2a669b68775a136a7f2e8 | Record RG-046 append and canonical gap-ledger sync debt |
+| ecdaad1f9134f87fb9f3f73881aaebcc2d42dd09 | Add RG-046 gap-ledger state to machine-readable integration contract |
 
 ## Method and assumptions
 
@@ -51,7 +54,7 @@ The paper's two-SDP certificate and finite-shot confidence construction are a li
 
 ## CI, blockers and next action
 
-- Source PR #89: exact-head hosted CI has not yet been verified in this record. The latest-main status endpoint returned no checks for base SHA 6af8ce896368ed993fe2b8278afa6082e1ecc916; an older successful cold-start result on c7b5958af58fad04a101ef5c6abf6a29293c867e must not be presented as current-head green.
+- Source PR #89: exact-head hosted CI has not yet been verified in this record. Run 40137378018 was queued for the prior source head; the latest RG-046 commit changes the head and requires checking the new run. The latest-main status endpoint returned no checks for base SHA 6af8ce896368ed993fe2b8278afa6082e1ecc916; an older successful cold-start result on c7b5958af58fad04a101ef5c6abf6a29293c867e must not be presented as current-head green.
 - No paid QPU job, provider credential use, purchase, fabrication action, material/fuel/fusion experiment or funding action was performed or authorized.
 - Review PR #89, inspect exact-head cold-start and relevant documentation checks, then merge only through normal repository review/branch protections. If merged, record source-SHA-to-main-SHA mapping and rerun the cold-start audit. If blocked, keep this pending record and update the blocker rather than claiming synchronization.
 
