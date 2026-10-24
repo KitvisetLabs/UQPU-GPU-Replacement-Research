@@ -12,7 +12,7 @@
 
 - `software/uqpu-prototype/uqpu/equation_discovery.py`: require nonempty data/proof provenance and an independent-validation plan; validate all required tuple entries; reject nonnumeric, non-finite or negative held-out errors; require a nonnegative integer independent-validation count.
 - `software/uqpu-prototype/tests/test_equation_discovery.py`: add fail-closed tests for missing provenance/validation, blank tuple entries, NaN/infinities, negative/nonnumeric errors and invalid replication counts.
-- `docs/literature_watch/2026-10-24-formal-proof-search-and-ai-math-revision-boundary.md`: record the *Science* formal-proof-search result, the official AI-mathematics release's correction/withdrawal history, limitations and falsifiable UQPU follow-up.
+- `docs/literature_watch/2026-10-24-formal-proof-search-and-ai-math-revision-boundary.md`: record the *Science* formal-proof-search result, the official AI-mathematics release's correction/withdrawal history, PiT-PO adaptive symbolic regression, PINNA intermediate-physics supervision, hidden-irreversibility regularization, limitations and falsifiable UQPU follow-up.
 
 This patch closes a metadata-validation inconsistency: `required_discovery_fields()` listed both provenance and independent validation, but `validate()` did not enforce them, and `testable` accepted either field. It also prevents NaN/infinite values from slipping past a simple negative-error check. It does **not** evaluate whether an equation is true or whether a mathematical formalization faithfully models nature.
 
@@ -62,3 +62,8 @@ This branch's latest source commit records `Research-Sync: pending-main` to make
 ## Held-out metric guard refinement
 
 The direct `has_heldout_improvement` predicate now also returns false for booleans, nonnumeric values and non-finite metrics even if a caller bypasses `validate()`. An adversarial unit test covers that direct-call path. Hosted CI on the updated source head remains the acceptance gate.
+
+
+## Literature-surveillance completion
+
+The dated watch now records the three distinct method layers found in this pass: adaptive symbolic search (PiT-PO), physics-informed surrogate structure (PINNA / irreversibility regularization), and formal theorem checking plus revision history. All are third-party method evidence only; the project still requires its own held-out, counterexample, experiment and replication gates.
