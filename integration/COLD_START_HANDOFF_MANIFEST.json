@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-24T00:00:00Z",
+  "prepared_utc": "2026-10-24T01:08:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "Cycle 011 / 2026-10-24: added a fail-closed matched-search comparison contract and 13 scratch unit tests, plus a PiT-PO literature/theorem-scope watch and EXP-DESIGN-003. The benchmark is NOT EXECUTED; the new source tree requires exact-head CI. No model API, provider, instrument or QPU job was used. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e.",
+  "current_frontier": "Cycle 011 / 2026-10-24: matched equation-search contract and PiT-PO audit remain NOT EXECUTED; added a peer-reviewed QAOA graph-sparsification/decomposition watch and QAOA-SPARSE-001 accepted-task benchmark contract. This is literature/experiment-plan evidence only; no provider or QPU job was used. Canonical main at source start remains c7b5958af58fad04a101ef5c6abf6a29293c867e. Exact-head CI must run on the new source head.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -62,14 +62,18 @@
     "software/uqpu-prototype/tests/test_search_comparison.py",
     "research_lanes/A_quantum_programming_runtime/EXP-DESIGN-003_PITPO_MATCHED_SEARCH_BENCHMARK.md",
     "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_PITPO_ADAPTIVE_EQUATION_SEARCH.md",
-    "integration/INT-20261024-008-PITPO-ADAPTIVE-EQUATION-SEARCH.md"
+    "integration/INT-20261024-008-PITPO-ADAPTIVE-EQUATION-SEARCH.md",
+    "research_lanes/A_quantum_programming_runtime/LITERATURE_WATCH_2026-10-24_QAOA_GRAPH_SPARSIFICATION.md",
+    "research_lanes/A_quantum_programming_runtime/QAOA-SPARSE-001_MATCHED_ACCEPTED_TASK_BENCHMARK.md",
+    "docs/literature_watch/2026-10-24-qaoa-graph-sparsification.md",
+    "integration/INT-20261024-009-QAOA-GRAPH-SPARSIFICATION.md"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "MATCHED_SEARCH_COMPARISON_CONTRACT_ADDED; 13_SCRATCH_TESTS_PASS; BENCHMARK_NOT_EXECUTED",
+      "status": "MATCHED_SEARCH_COMPARISON_CONTRACT_ADDED; 13_SCRATCH_TESTS_PASS; BENCHMARK_NOT_EXECUTED; QAOA_GRAPH_SPARSIFICATION_WATCH_ADDED; QAOA-SPARSE-001_NOT_EXECUTED",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Pass exact-head CI, then execute EQN-002C / EXP-DESIGN-003 under matched resource caps with frozen splits, false-discovery controls and independent replay."
+      "next_gate": "Run QAOA-SPARSE-001 as a deterministic offline fixture with frozen graph splits, exact/known-bound certificates and matched accepted-output contracts; then target-aware simulation and independent SDK lowering. No paid QPU without explicit consent and budget."
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -99,7 +103,7 @@
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
       "status": "COST_PER_ACCEPTED_MODEL_CONTRACT_DEFINED; COST_AND_ENERGY_UNMEASURED",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Record full search, evaluation, retry, storage and independent-replay cost; compare energy only when every method has measured energy."
+      "next_gate": "Measure total cost per accepted useful task including classical preprocessing, optimization, compile, shots, retries, reconstruction and actual same-target billing; comparative energy remains unavailable unless every method has measured energy."
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -136,13 +140,15 @@
     "PISR-AUDIT-001",
     "PITPO-AUDIT-001",
     "EQN-002C",
-    "EXP-DESIGN-003"
+    "EXP-DESIGN-003",
+    "QAOA-SPARSE-001"
   ],
   "open_gates": [
     "RG-033",
     "RG-034",
     "I-012",
-    "PISR-AUDIT-001"
+    "PISR-AUDIT-001",
+    "QAOA-SPARSE-001"
   ],
   "master_reference_languages": [
     "Thai",
@@ -153,13 +159,13 @@
     "German"
   ],
   "latest_verified_ci": {
-    "run_number": 980,
-    "run_id": 40037638198,
+    "run_number": 986,
+    "run_id": 40043329775,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40037638198",
-    "head_sha": "76f6f5957e280893e713f1983f0390a4995675a9",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40043329775",
+    "head_sha": "992d07fd70f0ffc57e484b43a8f70f0a3f375694",
     "branch": "research/2026-10-24-equation-discovery-audit-v2",
-    "scope": "All 15 reported prototype/invariant, QSVT, independent-SDK and reference-benchmark jobs passed on the pre-change head. The new comparison module/tests and dated literature/integration artifacts are later changes and require their own exact-head CI."
+    "scope": "All reported prototype/invariant, QSVT, independent-SDK and reference-benchmark jobs passed on exact source head 992d07fd70f0ffc57e484b43a8f70f0a3f375694. New QAOA watch/contract/integration files are added after this run and require exact-head CI."
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -174,7 +180,7 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Active PR #53 overlaps PR #51 on software/uqpu-prototype/uqpu/equation_discovery.py, software/uqpu-prototype/tests/test_equation_discovery.py, and integration/COLD_START_HANDOFF_MANIFEST.json; PRs #48-#51 share canonical base main c7b5958af58fad04a101ef5c6abf6a29293c867e and remain unmerged. Require conflict-aware reconciliation and rerun exact-head CI before merge. WORKLOG.md, DECISIONS.md and RESEARCH_GAPS.md append-only suffixes are deferred rather than overwritten. Historical and inaccessible branches/forks are not exhaustively reconciled; do not claim full coverage.",
+  "known_sync_debt": "Active PR #53 now includes the QAOA graph-sparsification watch and QAOA-SPARSE-001 contract; its new head requires exact-head CI and PR #54's pending-sync summary must be refreshed afterward. PR #53 overlaps PR #51 on software/uqpu-prototype/uqpu/equation_discovery.py, software/uqpu-prototype/tests/test_equation_discovery.py, and integration/COLD_START_HANDOFF_MANIFEST.json; PRs #48-#51 share canonical base main c7b5958af58fad04a101ef5c6abf6a29293c867e and remain unmerged. Reconcile conflicts and rerun exact-head CI before merging. WORKLOG.md, DECISIONS.md and RESEARCH_GAPS.md remain append-only; do not truncate them.",
   "next_independent_action": "Run exact-head CI for the PISR watch/gap additions; implement a frozen synthetic PISR-AUDIT-001 fixture with whole-trajectory and held-out parameter-group splits, operator ablations and shuffled/no-signal controls; execute EXP-DESIGN-002 only under identical offline resource caps. Request source data before claiming reproduction. Reconcile PR #53 with PR #51 and PR #48 without overwriting shared equation_discovery.py/tests/manifest or append-only history. No paid QPU job is authorized.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
 }
