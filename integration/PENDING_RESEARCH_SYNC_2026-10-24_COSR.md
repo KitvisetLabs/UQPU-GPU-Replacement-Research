@@ -65,3 +65,9 @@ The exact-head prototype/invariant and cold-start workflows are being rerun. The
 Because `RESEARCH_GAPS.md`, `WORKLOG.md`, `00D_NEW_DISCOVERY_ARTICLES.md` and the handoff manifest are shared/append-oriented canonical files with concurrent open PRs, this work adds a standalone RG-042 artifact and this pending-sync note rather than replacing large files or editing a stale suffix. A conflict-aware merge should later reconcile the gap, worklog, registry and manifest references after open PRs are reviewed and their exact-head CI states are final.
 
 **Next highest-value gate:** exact-head GitHub Actions on this branch; then run the frozen synthetic benchmark with matched budgets, blind held-out data and mandatory counterexamples. No QPU submission is required or authorized.
+
+## RG-045 split-membership implementation delta — 2026-10-24
+
+The progressive-discovery branch now implements a versioned, deterministic record-membership certificate in DataSplits. It binds train/validation/held-out ID manifests to a source-dataset SHA-256 and fails closed on pairwise overlap, within-split duplicates, empty splits, invalid identifier types, unsupported schema/canonicalization versions, and digest mismatches. Added tests cover the overlap adversary, canonical ordering, source-digest binding, and manifest mismatch.
+
+**Status:** CODE IMPLEMENTED / HOSTED CI PENDING. The protocol remains MODEL_ONLY; the raw-data loader must independently verify the source bytes and ID extraction. RG-045 is not considered closed until exact-commit CI passes and the loader-level provenance gate is separately satisfied. No provider calls or QPU jobs were submitted.
