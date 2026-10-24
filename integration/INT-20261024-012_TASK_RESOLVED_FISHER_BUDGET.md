@@ -65,3 +65,56 @@ Audit the source artifacts and licensing, reproduce the five-spin numerical exam
 ## Sync debt and rollback
 
 This work is not on `main` until merged. The root-level append-only directives, `VERSION_INVARIANTS.md`, `RESEARCH_GAPS.md`, `integration/COLD_START_HANDOFF_MANIFEST.json` and other canonical ledgers are not overwritten in this branch. If the branch is not merged, a separate pending-main summary PR must record its source SHA, changed files, tests, evidence class, limitations and next gate. Rollback consists of reverting this branch/PR; no provider, data or hardware state was changed.
+
+
+## Required 36-pair A–I opportunity scan
+
+| Pair | Result for this cycle |
+|---|---|
+| A–B | **PROPOSED:** keep workload semantics independent of provider; no provider call in this cycle. |
+| A–C | **TESTING:** same task-score basis, finite-shot records and retained-feature bytes. |
+| A–D | **BLOCKED:** no target-specific device effect or control requirement measured. |
+| A–E | **NO DIRECT EDGE:** forecasting-information diagnostics do not establish a bio-oil/fusion/material mechanism. |
+| A–F | **TESTING:** accepted-output quality and cost per accepted prediction must share one contract. |
+| A–G | **BLOCKED:** no validated logical/device requirement to translate into manufacturing equipment. |
+| A–H | **INFORMATION HANDOFF:** literature and falsifier published; no technology claim. |
+| A–I | **NO DIRECT EDGE:** no causal link to the specialist vehicle-lift lane. |
+| B–C | **PROPOSED:** any future target record must bind target identity to measurement/I/O metadata. |
+| B–D | **BLOCKED:** no authorized target execution or target-specific hardware evidence. |
+| B–E | **NO DIRECT EDGE:** no provider-backed fuel, material or energy measurement. |
+| B–F | **PROPOSED:** future price must be bound to the same provider/target as its result. |
+| B–G | **BLOCKED:** no target-dependent process or yield evidence. |
+| B–H | **INFORMATION HANDOFF:** preserve provider-neutral strategy; no procurement or funding decision. |
+| B–I | **NO DIRECT EDGE:** no provider/propulsion connection established. |
+| C–D | **BLOCKED:** feature-byte accounting does not establish physical RAM/device equivalence. |
+| C–E | **NO DIRECT EDGE:** no materials or plant-energy effect follows from this paper. |
+| C–F | **TESTING:** representation bytes, shots, reconstruction and accepted-task cost share one ledger. |
+| C–G | **BLOCKED:** no validated storage/device specification for fab tooling. |
+| C–H | **INFORMATION HANDOFF:** publish reusable measurement-accounting method. |
+| C–I | **NO DIRECT EDGE:** no contactless-vehicle memory/control consequence established. |
+| D–E | **BLOCKED:** no carbon/material property or energy-system result from this workload. |
+| D–F | **BLOCKED:** no device-level performance or cost measurement. |
+| D–G | **CONTINUOUS CO-DESIGN / NO NEW REQUIREMENT:** preserve device-to-manufacturing coupling; await target-specific validated effect. |
+| D–H | **INFORMATIONAL:** no strategic capital decision supported by current evidence. |
+| D–I | **NO DIRECT EDGE:** no device/field mechanism link established. |
+| E–F | **NO NEW EVIDENCE:** BIO-001 and FUS-001 full functional-unit and lifecycle boundaries remain unchanged. |
+| E–G | **BLOCKED:** no biomass/material process-window or manufacturing-yield consequence. |
+| E–H | **STRATEGIC CONTEXT ONLY:** INV-030–033 remain active; no material, fuel, electricity or WACC result. |
+| E–I | **NO DIRECT EDGE:** no validated energy/material coupling to vehicle lift. |
+| F–G | **BLOCKED:** no validated device requirement to cost a factory process. |
+| F–H | **PROPOSED:** stage spending only after reproducible quality/cost evidence; no lower-WACC claim. |
+| F–I | **NO DIRECT EDGE:** no measured common system boundary. |
+| G–H | **INFORMATIONAL:** no factory CAPEX, yield or capital-allocation decision supported. |
+| G–I | **NO DIRECT EDGE:** no shared manufacturing/vehicle-lift result. |
+| H–I | **NO DIRECT EDGE:** strategic publication preserves the specialist lane without claiming a mechanism. |
+
+### Selected multi-lane combinations
+
+1. **A+C+F (TESTING):** task-specific information -> feature/shot budget -> accepted prediction quality and full cost.
+2. **A+C+F+H (PROPOSED):** add literature provenance, preregistered falsifiers and reusable publication.
+3. **A+B+C+F (BLOCKED BEFORE PROVIDER):** retain the same provider/target and cost provenance if a later authorized run is justified.
+4. **A+D+G (DOWNSTREAM BLOCKED):** no hardware or fab requirements until a repeatable device-level effect is shown.
+5. **E+F+H (NO NEW MEASUREMENT):** BIO-001/FUS-001/FIN-001 remain active but receive no numerical update from this literature.
+6. **C+D+E+I (NO SUPPORTED CAUSAL EDGE):** no demonstrated link from feature compression to materials, cooling or contactless lift.
+
+The scan records candidate and negative edges rather than silently treating every lane as causally improved.
