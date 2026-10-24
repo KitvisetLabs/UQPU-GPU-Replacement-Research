@@ -14,34 +14,16 @@ from typing import Any
 from .fundamental_limits import landauer_minimum_joule
 
 _ALLOWED_EVIDENCE_LEVELS = {
-    "CONCEPT",
-    "THEORY",
-    "MODEL_ONLY",
-    "SIMULATION",
-    "DEVICE_MODEL",
-    "FABRICATION_PROPOSAL",
-    "LAB_RESULT",
-    "PUBLISHED_EXPERIMENT",
-    "PROTOTYPE",
-    "PRODUCTION_DATA",
-    "ROADMAP",
-    "DRY_RUN_ONLY",
-    "RESOURCE_BLOCKED",
-    "TOOL_BLOCKED",
-    "DATA_BLOCKED",
-    "CURRENTLY_INFEASIBLE",
+    "CONCEPT", "THEORY", "MODEL_ONLY", "SIMULATION", "DEVICE_MODEL",
+    "FABRICATION_PROPOSAL", "LAB_RESULT", "PUBLISHED_EXPERIMENT", "PROTOTYPE",
+    "PRODUCTION_DATA", "ROADMAP", "DRY_RUN_ONLY", "RESOURCE_BLOCKED",
+    "TOOL_BLOCKED", "DATA_BLOCKED", "CURRENTLY_INFEASIBLE",
 }
 _MEASURED_EVIDENCE_LEVELS = {
-    "LAB_RESULT",
-    "PUBLISHED_EXPERIMENT",
-    "PROTOTYPE",
-    "PRODUCTION_DATA",
+    "LAB_RESULT", "PUBLISHED_EXPERIMENT", "PROTOTYPE", "PRODUCTION_DATA",
 }
 _ALLOWED_ENERGY_SCOPES = {
-    "FULL_SYSTEM_WALL_PLUG",
-    "QPU_SUBSYSTEM",
-    "HOST_SUBSYSTEM",
-    "OTHER_SUBSYSTEM",
+    "FULL_SYSTEM_WALL_PLUG", "QPU_SUBSYSTEM", "HOST_SUBSYSTEM", "OTHER_SUBSYSTEM",
 }
 
 
@@ -65,11 +47,10 @@ def _finite_positive(name: str, value: float) -> float:
 class ThermodynamicGapObservation:
     """Inputs for a workload-level FND-001 diagnostic.
 
-    total_wall_plug_joules must cover attempt_count attempts, including
-    failed/retried work inside the declared energy boundary. Dividing by
-    accepted_count therefore charges failed work to accepted outputs.
-    irreversible_erased_bits_per_accepted_task is optional because output
-    bits, state-space size and qubit count do not establish an erasure count.
+    total_wall_plug_joules covers all attempts, including failed/retried work
+    inside the declared energy boundary. Dividing by accepted_count therefore
+    charges failed work to accepted outputs. The erased-bit count is optional
+    because output bits, state-space size and qubit count do not establish it.
     """
 
     workload_contract_id: str
@@ -88,6 +69,14 @@ class ThermodynamicGapObservation:
     erasure_provenance: str = ""
 
     def validate(self) -> None:
+        text_fields = (
+            "workload_contract_id", "energy_scope", "temperature_basis",
+            "evidence_level", "energy_provenance", "accepted_output_provenance",
+            "measurement_window", "erasure_accounting_basis", "erasure_provenance",
+        )
+        for field_name in text_fields:
+            if not isinstance(getattr(self, field_name), str):
+                raise ValueError(f"{field_name} must be a string")
         if not self.workload_contract_id.strip():
             raise ValueError("workload_contract_id is required")
         if isinstance(self.attempt_count, bool) or not isinstance(self.attempt_count, int):
@@ -109,9 +98,7 @@ class ThermodynamicGapObservation:
 
         if self.evidence_level in _MEASURED_EVIDENCE_LEVELS:
             for field_name in (
-                "energy_provenance",
-                "accepted_output_provenance",
-                "measurement_window",
+                "energy_provenance", "accepted_output_provenance", "measurement_window",
             ):
                 if not getattr(self, field_name).strip():
                     raise ValueError(
@@ -132,13 +119,12 @@ def evaluate_thermodynamic_gap(
 ) -> dict[str, Any]:
     """Return a fail-closed FND-001 report without promoting evidence.
 
-    wall-plug energy per accepted task divided by the ideal Landauer heat floor
-    is a diagnostic only. The quantities have different physical meanings. A
+    Wall-plug energy per accepted task divided by the ideal Landauer heat floor
+    is diagnostic only. The quantities have different physical meanings. A
     ratio below one requests a boundary/accounting audit and is not declared a
     violation of thermodynamics.
     """
     observation.validate()
-
     accepted = observation.accepted_count
     erased_bits = observation.irreversible_erased_bits_per_accepted_task
     report: dict[str, Any] = {
@@ -182,7 +168,6 @@ def evaluate_thermodynamic_gap(
 
     energy_per_accepted = float(observation.total_wall_plug_joules) / accepted
     report["wall_plug_joules_per_accepted_task"] = energy_per_accepted
-
     if erased_bits is None:
         report["status"] = "BLOCKED_ERASURE_ACCOUNTING"
         return report
@@ -195,11 +180,7 @@ def evaluate_thermodynamic_gap(
 
     ratio = energy_per_accepted / floor
     report["wall_plug_to_landauer_floor_ratio"] = ratio
-    if ratio < 1.0:
-        report["status"] = "BOUNDARY_AUDIT_REQUIRED"
-    else:
-        report["status"] = "DIAGNOSTIC_ONLY"
-
+    report["status"] = "BOUNDARY_AUDIT_REQUIRED" if ratio < 1.0 else "DIAGNOSTIC_ONLY"
     report["eligible_for_fnd001_gap_analysis"] = (
         observation.energy_scope == "FULL_SYSTEM_WALL_PLUG"
         and observation.evidence_level in _MEASURED_EVIDENCE_LEVELS
