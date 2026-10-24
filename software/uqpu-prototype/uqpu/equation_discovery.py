@@ -8,6 +8,8 @@ considered testable within the UQPU foundational-research program.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+import math
+from numbers import Real
 from typing import Iterable
 
 
@@ -29,6 +31,23 @@ _ALLOWED_EVIDENCE = {
     "DATA_BLOCKED",
     "CURRENTLY_INFEASIBLE",
 }
+
+
+def _validated_heldout_error(value: object) -> float | None:
+    """Validate a held-out error without coercing strings or other objects."""
+    if value is None:
+        return None
+    if isinstance(value, bool) or not isinstance(value, Real):
+        raise ValueError("held-out errors must be real finite nonnegative numbers")
+    try:
+        numeric_value = float(value)
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise ValueError("held-out errors must be finite nonnegative numbers") from exc
+    if not math.isfinite(numeric_value):
+        raise ValueError("held-out errors must be finite")
+    if numeric_value < 0:
+        raise ValueError("held-out errors cannot be negative")
+    return numeric_value
 
 
 @dataclass(frozen=True)
@@ -71,17 +90,25 @@ class EquationHypothesis:
             raise ValueError("discriminating_observables is required")
         if self.evidence_level not in _ALLOWED_EVIDENCE:
             raise ValueError(f"unknown evidence level: {self.evidence_level}")
-        if self.independent_validation_count < 0:
-            raise ValueError("independent_validation_count cannot be negative")
-        for value in (self.heldout_baseline_error, self.heldout_candidate_error):
-            if value is not None and value < 0:
-                raise ValueError("held-out errors cannot be negative")
+        if (
+            isinstance(self.independent_validation_count, bool)
+            or not isinstance(self.independent_validation_count, int)
+            or self.independent_validation_count < 0
+        ):
+            raise ValueError("independent_validation_count must be a nonnegative integer")
+        _validated_heldout_error(self.heldout_baseline_error)
+        _validated_heldout_error(self.heldout_candidate_error)
 
     @property
     def has_heldout_improvement(self) -> bool:
-        if self.heldout_baseline_error is None or self.heldout_candidate_error is None:
+        try:
+            baseline = _validated_heldout_error(self.heldout_baseline_error)
+            candidate = _validated_heldout_error(self.heldout_candidate_error)
+        except ValueError:
             return False
-        return self.heldout_candidate_error < self.heldout_baseline_error
+        if baseline is None or candidate is None:
+            return False
+        return candidate < baseline
 
     @property
     def testable(self) -> bool:
