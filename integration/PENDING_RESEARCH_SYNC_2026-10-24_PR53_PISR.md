@@ -4,15 +4,16 @@
 **Status:** PENDING_MAIN_REVIEW — this record is a discoverability summary, not a claim that source-branch work is merged.  
 **Canonical main at source start:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`  
 **Source branch:** `research/2026-10-24-equation-discovery-audit-v2`  
-**Source head at this record:** `76f6f5957e280893e713f1983f0390a4995675a9`  
+**Initial PISR-delta head:** `76f6f5957e280893e713f1983f0390a4995675a9`  
+**Latest PR #53 source head:** `8d717d64688a713fb3c8799c26a9b02e9d8fab6b`  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/53  
 **Sync PR:** [#54 — Record pending Oct 24 equation-discovery research sync](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/54) — open/unmerged.
 
 ## Purpose and delta
 
-PR #53 continues the 2026-10-24 equation-discovery / offline experiment-design cycle. Its branch is 21 commits ahead of main at the time of this audit. The earlier branch work hardens held-out equation metrics, adds the dependency-free offline experiment-plan contract and adversarial tests, and publishes dated watches/integration contracts for transformer formula synthesis, experiment design, formal proof search, constitutive-law discovery, continuous-QEC limits, LLM-guided symbolic-search control and a model-scoped Gaussian quantum-repeater no-go theorem.
+PR #53 continues the 2026-10-24 equation-discovery / offline experiment-design cycle. Its branch was 21 commits ahead at the initial PISR audit; the current branch comparison reports 23 commits ahead of main. The earlier branch work hardens held-out equation metrics, adds the dependency-free offline experiment-plan contract and adversarial tests, and publishes dated watches/integration contracts for transformer formula synthesis, experiment design, formal proof search, constitutive-law discovery, continuous-QEC limits, LLM-guided symbolic-search control and a model-scoped Gaussian quantum-repeater no-go theorem.
 
-This sync delta adds a new peer-reviewed-method literature watch for physics-informed symbolic regression (PISR) on particle/interface dynamics, integration record INT-20261024-007, a literature-watch index entry, and the standalone PISR-AUDIT-001 data/generalization gap.
+This sync delta adds a peer-reviewed-method literature watch for physics-informed symbolic regression (PISR) on particle/interface dynamics, integration record INT-20261024-007, a literature-watch index entry, and the standalone PISR-AUDIT-001 data/generalization gap. The same source branch now also includes the Lane-A QAOA graph-sparsification watch and proposed QAOA-SPARSE-001 matched accepted-task benchmark.
 
 ## New PISR-AUDIT-001 result
 
@@ -22,11 +23,10 @@ The source states that its commercially sensitive underlying data are not public
 
 ## Current evidence and CI
 
-- Current source PR head: `76f6f5957e280893e713f1983f0390a4995675a9`.
-- Exact-head workflow run 980: https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40037638198.
-- At the latest poll, Python 3.10, 3.11 and 3.12 jobs passed; 11 QSVT/reference jobs remained queued. Full exact-head CI is not closed.
-- The preceding source head `68a41c762d51fa790179241b1a489bdca1dab2d3` had workflow run 974 succeed across the reported prototype/invariant, QSVT and reference-benchmark jobs. That pass does not replace the current-head check.
-- Open PR #48 and PR #51 also have successful workflow runs on their inspected heads (#840 and #936 respectively), but they remain unmerged and overlap with PR #53's shared equation-discovery/handoff files. Reconcile conflicts and rerun CI before merging.
+- Current source PR head: `8d717d64688a713fb3c8799c26a9b02e9d8fab6b`.
+- Exact-head cold-start audit run 40048819369 passed: https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40048819369.
+- Exact-head prototype/invariant run 40048822792 is still IN_PROGRESS at this snapshot: https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40048822792. Python 3.10, 3.11 and 3.12 tests passed; QSVT ten-query/bounded-prefix and Qiskit-verification jobs remained in progress. No full exact-head CI pass is claimed.
+- PR #48 exact-head prototype/invariant run 39950864332 and cold-start run 39950856592 passed. PR #50 runs 39982147419 and 39982140295 passed. PR #51 runs 40002045575 and 40002041990 passed. PR #49 cold-start run 40049026771 passed; its full prototype/invariant workflow remains in progress on the latest head. These PRs remain unmerged and require conflict-aware reconciliation.
 - The append-only `WORKLOG.md`, `DECISIONS.md` and `RESEARCH_GAPS.md` were not overwritten from partial content.
 
 ## A–H and cross-cutting implications
@@ -50,10 +50,14 @@ The eight permanent root directives, `docs/KANUSANAN_PONGPANNA_MODEL.md`, `STRAT
 - `integration/INT-20261024-007-pisr-particle-interface.md`
 - `research_lanes/H_strategy_finance_future_industries/gaps/PISR-AUDIT-001_DATA_AND_GENERALIZATION.md`
 - `integration/COLD_START_HANDOFF_MANIFEST.json` updated with required-reading, gap and next-action state.
+- `research_lanes/A_quantum_programming_runtime/LITERATURE_WATCH_2026-10-24_QAOA_GRAPH_SPARSIFICATION.md`
+- `research_lanes/A_quantum_programming_runtime/QAOA-SPARSE-001_MATCHED_ACCEPTED_TASK_BENCHMARK.md`
+- `docs/literature_watch/2026-10-24-qaoa-graph-sparsification.md`
+- `integration/INT-20261024-009-QAOA-GRAPH-SPARSIFICATION.md`
 
 ## Next highest-value gate
 
-Finish workflow run 980 on the exact source head; then implement the synthetic PISR-AUDIT-001 fixture and deterministic scorer with held-out parameter groups and false-discovery controls. Request the original source data before claiming reproduction. Reconcile PRs #48–#53 conflict-aware; no merge or main synchronization is claimed here.
+Finish workflow run 40048822792 on exact source head 8d717d64688a713fb3c8799c26a9b02e9d8fab6b. Then implement the synthetic PISR-AUDIT-001 fixture and deterministic scorer with held-out parameter groups and false-discovery controls; request the original source data before claiming reproduction. QAOA-SPARSE-001 remains proposed and not executed. Reconcile PRs #48–#53 conflict-aware; no merge or main synchronization is claimed here.
 
 **Authorization boundary:** no paid QPU job, provider contact, instrument experiment, purchase, hazardous test or external funding action was authorized or performed.
 
