@@ -94,9 +94,20 @@ class EquationHypothesis:
 
     @property
     def has_heldout_improvement(self) -> bool:
-        if self.heldout_baseline_error is None or self.heldout_candidate_error is None:
+        baseline = self.heldout_baseline_error
+        candidate = self.heldout_candidate_error
+        if baseline is None or candidate is None:
             return False
-        return self.heldout_candidate_error < self.heldout_baseline_error
+        if (
+            isinstance(baseline, bool)
+            or isinstance(candidate, bool)
+            or not isinstance(baseline, (int, float))
+            or not isinstance(candidate, (int, float))
+        ):
+            return False
+        if not math.isfinite(float(baseline)) or not math.isfinite(float(candidate)):
+            return False
+        return candidate < baseline
 
     @property
     def testable(self) -> bool:
