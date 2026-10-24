@@ -25,7 +25,7 @@ The source states that its commercially sensitive underlying data are not public
 
 - Current source PR head: `8d717d64688a713fb3c8799c26a9b02e9d8fab6b`.
 - Exact-head cold-start audit run 40048819369 passed: https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40048819369.
-- Exact-head prototype/invariant run 40048822792 is still IN_PROGRESS at this snapshot: https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40048822792. Python 3.10, 3.11 and 3.12 tests passed; QSVT ten-query/bounded-prefix and Qiskit-verification jobs remained in progress. No full exact-head CI pass is claimed.
+- Exact-head prototype/invariant run 40048822792 completed successfully (run #991): https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40048822792. All 15 jobs passed, including Python 3.10/3.11/3.12, bounded and ten-query QSVT, saved-target identity, no-submit transpilation, routed probes, phase synthesis/reconstruction, reference benchmark, Qiskit verification and snapshot-noise simulation. This is code/CI and model/simulation evidence only; no provider job or scientific claim promotion.
 - PR #48 exact-head prototype/invariant run 39950864332 and cold-start run 39950856592 passed. PR #50 runs 39982147419 and 39982140295 passed. PR #51 runs 40002045575 and 40002041990 passed. PR #49 cold-start run 40049026771 passed; its full prototype/invariant workflow remains in progress on the latest head. These PRs remain unmerged and require conflict-aware reconciliation.
 - The append-only `WORKLOG.md`, `DECISIONS.md` and `RESEARCH_GAPS.md` were not overwritten from partial content.
 
@@ -57,8 +57,13 @@ The eight permanent root directives, `docs/KANUSANAN_PONGPANNA_MODEL.md`, `STRAT
 
 ## Next highest-value gate
 
-Finish workflow run 40048822792 on exact source head 8d717d64688a713fb3c8799c26a9b02e9d8fab6b. Then implement the synthetic PISR-AUDIT-001 fixture and deterministic scorer with held-out parameter groups and false-discovery controls; request the original source data before claiming reproduction. QAOA-SPARSE-001 remains proposed and not executed. Reconcile PRs #48–#53 conflict-aware; no merge or main synchronization is claimed here.
+Exact-head CI is now green on source head 8d717d64688a713fb3c8799c26a9b02e9d8fab6b. Next, implement and execute the synthetic PISR-AUDIT-001 scorer with frozen held-out parameter groups and false-discovery controls; request original source data before claiming source-paper reproduction. Run EXP-DESIGN-003 under matched budgets and execute the separately preregistered QAOA-SPARSE-001 only after its baseline/output contract is frozen. Reconcile PRs #48–#53 without force-pushing main; branch work remains pending until merged.
 
 **Authorization boundary:** no paid QPU job, provider contact, instrument experiment, purchase, hazardous test or external funding action was authorized or performed.
 
 Research-Sync: pending-main
+
+
+## Current-run reconciliation — 2026-10-24 02:05 UTC
+
+The latest connector check confirms all 15 required prototype/invariant jobs passed for PR #53 run `40048822792` and PR #49 run `40049030466`; PR #54's own run `40049459569` also passed all 15 jobs. The canonical `main` SHA remains `c7b5958af58fad04a101ef5c6abf6a29293c867e`; no branch-only change is described as merged. The newly surveyed APS accepted paper on Chain of Symbolic Regression (CoSR; accepted 2026-10-06) is already covered by the progressive-symbolic-law watch and `INT-20261024-001` in PR #51, so no duplicate literature article is added here. CoSR remains third-party method evidence, not UQPU validation or a new physical law.
