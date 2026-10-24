@@ -61,3 +61,8 @@ The first hosted cold-start audit reported only a missing Research-Sync commit t
 ## Related pending cost-driver research
 
 PR #49 separately proposes BIO-TEA-001 and FUS-ECON-001 from peer-reviewed biomass pyrolysis TEA and a normalized fusion economic-gain framework. That work is literature/model crosswalk only and remains unmerged at the time of this branch. This PR does not duplicate those source reviews or claim their proposed follow-ups were executed; the detailed BIO-001 API is a component-ledger interface that can later consume traceable source inputs under the same accepted-product and net-electric boundaries.
+
+
+## Additional invariant preservation
+
+The current repository also records INV-036 (difference-to-technology particle/spacetime research) and INV-037 (unified mathematical language). This change leaves both intact and promotes neither a particle/spacetime mechanism nor a new canonical physical law. The root directives, unified mathematical ledger and all multilingual master-plan links remain unchanged.
