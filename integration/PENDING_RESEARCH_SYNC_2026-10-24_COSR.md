@@ -75,3 +75,7 @@ The progressive-discovery branch now implements a versioned, deterministic recor
 ## Literature-surveillance delta — LLM-guided search control (2026-10-24)
 
 Added `docs/literature_watch/2026-10-24-llm-pysr-search-control.md` for Xie et al., arXiv:2607.04156 (submitted 2026-07-05). The method separates LLM search configuration from numerical symbolic-regression fitting and deterministic candidate retention. It is recorded as an official preprint/method claim only; no UQPU result or physical-law claim is promoted. The proposed EQN-CTRL-001 follow-up uses matched budgets, sealed held-out/OOD data, counterexamples and full search-cost accounting.
+
+## Canonical-file sync debt — 2026-10-24
+
+`RESEARCH_GAPS.md` is a large append-only canonical ledger; it was read but not rewritten from a partial excerpt. The current main copy does not yet contain RG-045, which remains in the separate open gap PR #69. The dated RG-045 implementation note and this handoff preserve the current status without claiming that either pending PR is canonical main. Clear this sync debt only after reviewed merge and a safe, complete append/update to the canonical gap ledger.
