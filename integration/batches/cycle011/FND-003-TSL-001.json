@@ -21,8 +21,8 @@
     "Mandelstam-Tamm under explicitly stated assumptions"
   ],
   "candidate_bound_family": [
-    "tau >= ln(2) * W_q^2 / average_gibbs_entropy_production_rate",
-    "tau >= ln(d/(d-1)) * W_q / average_gibbs_entropy_production_rate for finite d"
+    "tau >= ln(2) * (W_q^G)^2 / average_gibbs_entropy_production_rate",
+    "tau >= ln(d/(d-1)) * W_q^G / average_gibbs_entropy_production_rate for finite d"
   ],
   "mandatory_inputs": [
     "finite Hilbert-space dimension",
