@@ -53,6 +53,13 @@
 - Root directives `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`, `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`, `01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md`, `02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md`, `03_FUSION_ELECTRICITY_COST_STRATEGY.md`, `04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md`, `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md` and `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md` are unchanged.
 - `docs/KANUSANAN_PONGPANNA_MODEL.md` and `STRATEGIC_PLAN_REFERENCES.md` are unchanged. Thai, English, Chinese, Japanese, Korean and German public master-plan links and recorded strategic AI-agent/funding references remain preserved.
 
+
+## Follow-up validation hardening — 2026-10-24
+
+Five additional fail-closed regression tests were added to the progressive-equation preregistration branch after review of malformed runtime inputs. The validator now rejects a non-boolean held-out-unblinding flag, wrong data-split/budget object types, non-stage objects inside the stage tuple, and an extra reason field on a constraint marked `checked`. These are contract-validation changes only; they do not execute CoSR or promote scientific evidence.
+
+The exact-head prototype/invariant and cold-start workflows are being rerun. The cold-start audit initially failed because the latest branch commit lacked the required `Research-Sync: pending-main` trailer; this follow-up commit restores that trailer. Do not describe the additional tests as passing until the exact-head CI run completes.
+
 ## Sync debt and next gate
 
 Because `RESEARCH_GAPS.md`, `WORKLOG.md`, `00D_NEW_DISCOVERY_ARTICLES.md` and the handoff manifest are shared/append-oriented canonical files with concurrent open PRs, this work adds a standalone RG-042 artifact and this pending-sync note rather than replacing large files or editing a stale suffix. A conflict-aware merge should later reconcile the gap, worklog, registry and manifest references after open PRs are reviewed and their exact-head CI states are final.
