@@ -15,6 +15,13 @@ Started from the newest commit found by descending commit search, not from a fix
 
 The canonical operating instructions now explicitly enumerate **A–I**. The user-requested A–H architecture remains mandatory and is reported below; Lane I is also retained because the repository's current AGENTS.md and handoff manifest make it permanent. No lane was dropped. INV-025–035 remain protected, and the repository's later invariants were not weakened. Root directives 00–06, the Kanusanan Pongpanna Model, Thai/English/Chinese/Japanese/Korean/German public master-plan links, and recorded AI-agent/funding references were preserved without edits.
 
+## Latest batch and living-gap review
+
+- **Newest batch artifact located:** `research_lanes/D_device_chip_fabrication/batches/BATCH_048_FND_008C_PARTICLE_TECHNOLOGY_PRIORITIZATION.md` (2026-09-14). Its ordinal source-grounded prioritization is research bookkeeping, not a probability, TRL certificate, material/device advantage, or new physical law. Its SiC spin-defect route remains a candidate technology path; no Pangola-derived diamond or UQPU device result is established.
+- **Foundational anchor reviewed:** `docs/BATCH_022_FOUNDATIONAL_PHYSICS_MATHEMATICS_FRONTIER.md`. Landauer and Margolus–Levitin implementations are ideal lower-bound models, not achievable device performance; the FND-001–006 ladder remains applicable.
+- **Latest execution records reviewed:** `docs/SYNCHRONIZED_CYCLE_008_EXECUTION_DELTA_23_2026-10-21.md` and `docs/CYCLE_008_DELTA_23_CI_CLOSURE_2026-10-21.md`. QOS-AUDIT-010B25 remains a preregistered, read-only target-snapshot gate; it is not authorization to submit.
+- **Living gaps:** RG-033 remains partially unlocked at bounded ER6/QSVT mathematical/SDK checks, with scalable sparse workload oracle/block encoding and target-aware evidence still open. RG-034 remains open for the bounded identifiability-certified ODE fixture. RG-035 branch/fork synchronization remains incomplete for historical/inaccessible sources. I-012 remains open and MODEL_ONLY. General workload replacement, total cost advantage, 100,000,000× economics, memory/storage equivalence, material substitution and commercial energy remain unproven.
+
 ## Research delta
 
 Added `docs/literature_watch/2026-10-24-ai-formal-math-discovery-and-equation-gates.md`.
