@@ -5,7 +5,7 @@
 **Canonical base checked:** main at c7b5958af58fad04a101ef5c6abf6a29293c867e  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/63  
 **Source branch:** research/2026-10-24-bio-oil-cost-ledger-scope-watch  
-**Latest source SHA:** 63080d1f11f6e38112baa84130f614b91c4c89eb
+**Latest source SHA:** 53f4a1e08e4351caf56fc6731e3d70dd6fde4bb6
 
 ## Source commits covered
 
@@ -17,6 +17,7 @@
 - 11da6a7d0f21516a6f2dd087b683990b422df009 — add A-H / INV-029–035 integration handoff.
 - 3346c270ccac03849a52976ca93fbdedcadbede2 — add required pending-main commit trailer and record initial cold-start audit failure.
 - 63080d1f11f6e38112baa84130f614b91c4c89eb — cross-link the separately pending PR #49 BIO-TEA-001 / FUS-ECON-001 cost-driver work.
+- 53f4a1e08e4351caf56fc6731e3d70dd6fde4bb6 — explicitly record preservation of INV-036/037 and the unchanged root directives/master-plan links.
 
 ## Objective and method
 
