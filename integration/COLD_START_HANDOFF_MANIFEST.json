@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-23T23:05:00Z",
+  "prepared_utc": "2026-10-24T00:00:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
   "priority_lane": "A",
-  "current_frontier": "Cycle 010 / 2026-10-24: equation-metric and offline experiment-plan guards remain on the research branch; the 68a41 exact-head CI run completed successfully across Python 3.10-3.12 and the QSVT/reference jobs. New PISR particle-interface literature watch, integration record and DATA_BLOCKED source-reproduction gap were added after that run; exact-head CI for the new tree is pending. EXP-DESIGN-002, EQN-002B, QNET-GAUSS-001 and PISR-AUDIT-001 remain NOT EXECUTED. No provider/instrument job is authorized. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e.",
+  "current_frontier": "Cycle 011 / 2026-10-24: added a fail-closed matched-search comparison contract and 13 scratch unit tests, plus a PiT-PO literature/theorem-scope watch and EXP-DESIGN-003. The benchmark is NOT EXECUTED; the new source tree requires exact-head CI. No model API, provider, instrument or QPU job was used. Canonical main remains c7b5958af58fad04a101ef5c6abf6a29293c867e.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -57,14 +57,19 @@
     "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_PISR_PARTICLE_INTERFACE.md",
     "docs/literature_watch/2026-10-24-pisr-particle-interface.md",
     "integration/INT-20261024-007-pisr-particle-interface.md",
-    "research_lanes/H_strategy_finance_future_industries/gaps/PISR-AUDIT-001_DATA_AND_GENERALIZATION.md"
+    "research_lanes/H_strategy_finance_future_industries/gaps/PISR-AUDIT-001_DATA_AND_GENERALIZATION.md",
+    "software/uqpu-prototype/uqpu/search_comparison.py",
+    "software/uqpu-prototype/tests/test_search_comparison.py",
+    "research_lanes/A_quantum_programming_runtime/EXP-DESIGN-003_PITPO_MATCHED_SEARCH_BENCHMARK.md",
+    "research_lanes/H_strategy_finance_future_industries/LITERATURE_WATCH_2026-10-24_PITPO_ADAPTIVE_EQUATION_SEARCH.md",
+    "integration/INT-20261024-008-PITPO-ADAPTIVE-EQUATION-SEARCH.md"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "OFFLINE_EXPERIMENT_PLAN_SCHEMA_GUARD_IMPLEMENTED; 8_SCRATCH_TESTS_PASS; EXP-DESIGN-002_NOT_EXECUTED",
+      "status": "MATCHED_SEARCH_COMPARISON_CONTRACT_ADDED; 13_SCRATCH_TESTS_PASS; BENCHMARK_NOT_EXECUTED",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Pass exact-head CI after the new literature/gap additions, then implement and run the frozen synthetic PISR-AUDIT-001 benchmark and EXP-DESIGN-002 under matched offline budgets."
+      "next_gate": "Pass exact-head CI, then execute EQN-002C / EXP-DESIGN-003 under matched resource caps with frozen splits, false-discovery controls and independent replay."
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -92,9 +97,9 @@
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "MATCHED_BUDGET_SCHEMA_DEFINED; ACCEPTED_RESULT_ECONOMICS_NOT_MEASURED",
-      "evidence_class": "MODEL_ONLY",
-      "next_gate": "Count generation/controller/search/evaluation/retries/transfer/reconstruction/independent replay on one budget; energy remains unknown unless measured."
+      "status": "COST_PER_ACCEPTED_MODEL_CONTRACT_DEFINED; COST_AND_ENERGY_UNMEASURED",
+      "evidence_class": "SOFTWARE_CONTRACT",
+      "next_gate": "Record full search, evaluation, retry, storage and independent-replay cost; compare energy only when every method has measured energy."
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -104,9 +109,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "LITERATURE_WATCHES_UPDATED; PISR_AUDIT_001_DATA_BLOCKED; NO_PROJECT_EVIDENCE_PROMOTION",
+      "status": "PITPO_LITERATURE_WATCH_ADDED; EXTERNAL_METHOD_EVIDENCE_ONLY",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "Request source data/artifacts for independent PISR reproduction; until then execute only the clearly labeled synthetic audit with held-out parameter groups and false-discovery controls."
+      "next_gate": "Audit theorem assumptions and unit/basis-rescaling invariance; pin source code and environment before any independent reproduction."
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
@@ -128,7 +133,10 @@
     "FORMAL-PROOF-001",
     "CONSTITUTIVE-LAW-001",
     "QEC-MEAS-001",
-    "PISR-AUDIT-001"
+    "PISR-AUDIT-001",
+    "PITPO-AUDIT-001",
+    "EQN-002C",
+    "EXP-DESIGN-003"
   ],
   "open_gates": [
     "RG-033",
@@ -145,13 +153,13 @@
     "German"
   ],
   "latest_verified_ci": {
-    "run_number": 974,
-    "run_id": 40032373569,
+    "run_number": 980,
+    "run_id": 40037638198,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40032373569",
-    "head_sha": "68a41c762d51fa790179241b1a489bdca1dab2d3",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40037638198",
+    "head_sha": "76f6f5957e280893e713f1983f0390a4995675a9",
     "branch": "research/2026-10-24-equation-discovery-audit-v2",
-    "scope": "All reported prototype/invariant jobs, including Python 3.10/3.11/3.12, QSVT and reference-benchmark jobs, succeeded on the pre-PISR head. New PISR literature/gap docs and manifest refresh are later commits; exact-head CI for the new tree is pending."
+    "scope": "All 15 reported prototype/invariant, QSVT, independent-SDK and reference-benchmark jobs passed on the pre-change head. The new comparison module/tests and dated literature/integration artifacts are later changes and require their own exact-head CI."
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
