@@ -43,6 +43,23 @@ class EquationDiscoveryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             candidate.validate()
 
+    def test_nonfinite_heldout_errors_are_rejected(self):
+        for field in ("heldout_baseline_error", "heldout_candidate_error"):
+            for value in (float("nan"), float("inf"), float("-inf")):
+                with self.subTest(field=field, value=value):
+                    with self.assertRaises(ValueError):
+                        self._candidate(**{field: value}).validate()
+
+    def test_boolean_heldout_error_is_rejected(self):
+        with self.assertRaises(ValueError):
+            self._candidate(heldout_candidate_error=True).validate()
+
+    def test_heldout_errors_must_be_supplied_as_a_pair(self):
+        with self.assertRaises(ValueError):
+            self._candidate(heldout_candidate_error=None).validate()
+        with self.assertRaises(ValueError):
+            self._candidate(heldout_baseline_error=None).validate()
+
     def test_physical_candidate_gate_requires_independent_validation_and_heldout_gain(self):
         candidate = self._candidate(
             evidence_level="PUBLISHED_EXPERIMENT",

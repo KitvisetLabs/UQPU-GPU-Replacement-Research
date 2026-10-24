@@ -1583,3 +1583,22 @@ software-first finance and six-language context; I remains `MODEL_ONLY`.
 FND/EQN/FIN and INV-025–035 remain unpromoted. No live service, submission,
 job, shot, payment, advantage, Data-Center-to-Phone result or new physical law
 is claimed.
+### 2026-10-23 — FND-QFI-001 exact-rational ancilla-QFI scope fixture
+
+Started from canonical main SHA c7b5958af58fad04a101ef5c6abf6a29293c867e and read the current charter, invariants, goals, README, research operating system, open-frontier directive, master plan, strategic links, root 00–06 directives, A–I manifests, current QOS gaps, latest Batch 052–054 records, Cycle 008 Delta 23 CI closure, commit-sync policy and continuous-integration protocol.
+
+Fresh public surveillance rechecked the official arXiv v1 paper “Evaluation of the quantum Fisher information for large systems via an ancilla” (submitted 2026-10-21) and the already-recorded OptScientist and Coupled Harness–Model Evolution results. The new exact-rational fixture computes local scores q_i=p_i'/p_i and classical Fisher information without floating-point score merging. It passes the two-score n=2 equality case, triggers the stated m_nonzero>n condition for three nonzero score classes, and flags a q=0 scope gap where m_nonzero=2 but the full score set has three classes for n=2. This is not a refutation of the paper’s one-way no-go theorem; it prevents an unsupported sufficiency inference and sets an independent numerical/theorem-review gate.
+
+Added uqpu.fnd_qfi_001, nine unittest cases (including frontier_hypothesis and equation_discovery promotion guards), a frozen JSON result, Batch 055 under Lane F, and an integration contract reviewing all 36 A–I pairs. FND-QFI-001 remains MODEL_ONLY. No QPU job, provider call, shot, cost, energy, material test, fuel result, fusion result, WACC result, new physical law or mission-level advantage was produced. INV-029–035 and INV-025–027 remain unachieved goals/evidence gates. BIO-001, FUS-001 and FIN-001 received no evidence promotion.
+
+Lane A remains Priority #1 with QOS-AUDIT-010B25 as the separate read-only target gate. B remains zero-provider; C keeps QFI distinct from readable memory; D/G remain blocked on a verified device requirement; E remains without new material/fuel/electricity measurements; F adds the exact fixture; H publishes a literature-to-falsifier path; I remains MODEL_ONLY and unrelated. The branch commits use Research-Sync: pending-main. PR, exact-commit CI and source-to-main mapping remain pending; inaccessible branches/forks are not claimed audited.
+
+
+### 2026-10-23 — EXP-DESIGN-001 uncertainty-calibrated experiment-design literature watch
+
+A fresh primary-source surveillance pass added Ranković, Griffiths and Schwaller, “Large language models as uncertainty-calibrated optimizers for experimental discovery,” Nature Machine Intelligence 8, 1466–1477, published 2026-08-28 (DOI 10.1038/s42256-026-01283-z; preprint arXiv:2504.06265v3). The paper reports GOLLuM, which couples a Gaussian-process surrogate to an LLM representation through the GP marginal-likelihood objective, evaluated across 23 chemistry/materials/process/molecular-design tasks. The project records this as third-party method evidence, not UQPU evidence.
+
+Published a dated literature watch and integration contract, and added EXP-DESIGN-001 to RESEARCH_GAPS. The follow-up is an offline frozen known-optimum benchmark comparing classical GP Bayesian optimization, fixed LLM embeddings plus GP, uncertainty-calibrated representation optimization where reproducible, and direct prompting as a negative control. Acceptance requires matched budgets, precommitted data splits, held-out improvement, calibration, invalid/duplicate proposal rates, and resource accounting. No real material, fuel, fusion, QPU, financing or physical-law claim follows from the paper.
+
+FND-QFI-001 remains a separate exact-rational MODEL_ONLY branch artifact. Both literature findings are pending PR #51 review/merge and exact-commit CI; no source-to-main sync is claimed yet.
+

@@ -1,0 +1,268 @@
+{
+  "schema": "uqpu-eqn-progressive-001-prereg-v1",
+  "work_id": "EQN-PROGRESSIVE-001",
+  "integration_id": "INT-20261024-001",
+  "date": "2026-10-24",
+  "canonical_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "source_branch": "research/fnd-qfi-001-20261023",
+  "status": "PROPOSED_NOT_EXECUTED",
+  "primary_owner": "Lane A",
+  "integration_owner": "Lane F",
+  "literature_owner": "Lane H",
+  "evidence_class": "PEER_REVIEWED_ACCEPTED_PAPER_PLUS_PROJECT_PREREGISTRATION",
+  "project_evidence_promotion": "NONE",
+  "source": {
+    "title": "Data-driven progressive discovery of physical laws",
+    "authors": [
+      "Mingkun Xia",
+      "Weiwei Zhang"
+    ],
+    "venue": "Physical Review Research",
+    "accepted_date": "2026-10-06",
+    "doi": "10.1103/f2kp-pp4q",
+    "official_url": "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q"
+  },
+  "hypothesis": "A progressive chain improves held-out recovery only when intermediate structure is identifiable, under matched observations and search budgets.",
+  "alternatives": [
+    "One-step symbolic regression matches or beats the chain under matched resources.",
+    "Apparent gain is caused by extra observations, compute, leakage or post-hoc chain selection.",
+    "Multiple structures are observationally equivalent and no unique mechanism is identified."
+  ],
+  "baseline_contract": {
+    "method": "one-step symbolic regression",
+    "same_raw_observations": true,
+    "same_operator_grammar": true,
+    "matched_wall_clock": true,
+    "matched_candidate_evaluations": true,
+    "matched_coefficient_fit_budget": true,
+    "heldout_family_split": true
+  },
+  "progressive_contract": {
+    "method": "chain of interpretable intermediate relations",
+    "same_raw_observations": true,
+    "intermediate_measurements_exposed_to_baseline": true,
+    "stage_order_frozen_before_test": true,
+    "heldout_family_split": true
+  },
+  "preregistration_requirements": [
+    "Commit dataset generator, seed list, train/validation/test hashes and candidate grammar before execution.",
+    "Split by complete law family and parameter regime; do not use random rows alone.",
+    "Include noise, correlated distractors, dimensionally invalid candidates, a misspecified chain and an observational-equivalence negative control.",
+    "Freeze evaluation budgets and stop rules before opening the held-out set.",
+    "Retain all failed candidates, invalid proposals and seeds."
+  ],
+  "metrics": [
+    "heldout_residual_and_uncertainty",
+    "exact_structure_recovery_when_identifiable",
+    "expression_complexity",
+    "dimensional_validity",
+    "declared_symmetry_and_conservation_checks",
+    "counterexample_survival",
+    "parameter_identifiability",
+    "false_discovery_count",
+    "runtime",
+    "peak_memory",
+    "candidate_evaluations",
+    "token_usage_if_applicable",
+    "energy_only_if_measured"
+  ],
+  "acceptance": "Accept only a preregistered held-out or identifiable-structure improvement over the strongest baseline under matched budgets without worse constraint violations; ties and ambiguity are valid null outcomes.",
+  "stop_conditions": [
+    "Missing or mutable data/split hashes",
+    "Held-out leakage",
+    "Unequal observations or unaccounted search budget",
+    "Candidate family violates declared dimensional or domain constraints",
+    "Apparent win only on training fit",
+    "Identifiability control incorrectly forces a unique mechanism"
+  ],
+  "downstream_claims_allowed": false,
+  "provider_jobs": 0,
+  "shots": 0,
+  "billable_usage_usd": null,
+  "energy_joule": null,
+  "physical_law_claim_allowed": false,
+  "commercial_material_fuel_fusion_claim_allowed": false,
+  "financing_rate_or_wacc_claim_allowed": false,
+  "pair_decisions": [
+    {
+      "pair": "A<->B",
+      "status": "N/A_THIS_CYCLE",
+      "rationale": "No provider execution; software candidate-generation only."
+    },
+    {
+      "pair": "A<->C",
+      "status": "CANDIDATE",
+      "rationale": "Benchmark complexity and memory/I/O, without equating expression or Hilbert-space size to readable memory."
+    },
+    {
+      "pair": "A<->D",
+      "status": "BLOCKED",
+      "rationale": "No validated equation currently changes a target-derived device requirement."
+    },
+    {
+      "pair": "A<->E",
+      "status": "CANDIDATE",
+      "rationale": "Future process/modeling transfer only after independent domain-specific validation."
+    },
+    {
+      "pair": "A<->F",
+      "status": "ACTIVE",
+      "rationale": "Matched budgets, finite held-out metrics, counterexamples and full resource accounting."
+    },
+    {
+      "pair": "A<->G",
+      "status": "BLOCKED",
+      "rationale": "No validated control/process specification for manufacturing co-design."
+    },
+    {
+      "pair": "A<->H",
+      "status": "ACTIVE",
+      "rationale": "APS accepted-paper delta becomes a falsifiable Lane A benchmark."
+    },
+    {
+      "pair": "A<->I",
+      "status": "N/A",
+      "rationale": "No causal relation to contactless vehicle-lift research."
+    },
+    {
+      "pair": "B<->C",
+      "status": "UNCHANGED",
+      "rationale": "No provider job or new target/state-transfer observation."
+    },
+    {
+      "pair": "B<->D",
+      "status": "BLOCKED",
+      "rationale": "No target-specific hardware execution or calibration update."
+    },
+    {
+      "pair": "B<->E",
+      "status": "N/A",
+      "rationale": "No provider/energy/material coupling introduced."
+    },
+    {
+      "pair": "B<->F",
+      "status": "UNCHANGED",
+      "rationale": "No billable usage or accepted-task economics."
+    },
+    {
+      "pair": "B<->G",
+      "status": "BLOCKED",
+      "rationale": "No target-derived process or equipment requirement."
+    },
+    {
+      "pair": "B<->H",
+      "status": "UNCHANGED",
+      "rationale": "Provider and strategic finance evidence unchanged."
+    },
+    {
+      "pair": "B<->I",
+      "status": "N/A",
+      "rationale": "No provider route relevant to the auxiliary lane."
+    },
+    {
+      "pair": "C<->D",
+      "status": "BLOCKED",
+      "rationale": "No measured memory-to-device interface consequence."
+    },
+    {
+      "pair": "C<->E",
+      "status": "N/A",
+      "rationale": "No new material/thermal/state interface evidence."
+    },
+    {
+      "pair": "C<->F",
+      "status": "ACTIVE",
+      "rationale": "Candidate memory, runtime and resource costs belong in the future matched-budget ledger."
+    },
+    {
+      "pair": "C<->G",
+      "status": "N/A",
+      "rationale": "No storage or interconnect manufacturing specification changed."
+    },
+    {
+      "pair": "C<->H",
+      "status": "UNCHANGED",
+      "rationale": "No strategic claim of memory/storage equivalence."
+    },
+    {
+      "pair": "C<->I",
+      "status": "N/A",
+      "rationale": "No cross-lane state-service requirement."
+    },
+    {
+      "pair": "D<->E",
+      "status": "CANDIDATE",
+      "rationale": "Future materials/device link only if measured functional requirements are derived."
+    },
+    {
+      "pair": "D<->F",
+      "status": "UNCHANGED",
+      "rationale": "No device, process or lifecycle cost measurement."
+    },
+    {
+      "pair": "D<->G",
+      "status": "ACTIVE_CONTINUOUS_CODESIGN",
+      "rationale": "Continuous co-design preserved; no new device requirement this cycle."
+    },
+    {
+      "pair": "D<->H",
+      "status": "UNCHANGED",
+      "rationale": "Strategic context preserved, no device/factory result."
+    },
+    {
+      "pair": "D<->I",
+      "status": "N/A",
+      "rationale": "No relevant physical mechanism in this cycle."
+    },
+    {
+      "pair": "E<->F",
+      "status": "ACTIVE_ACCOUNTING_ONLY",
+      "rationale": "BIO-001/FUS-001 cost boundaries retained; no new qualified samples or electricity data."
+    },
+    {
+      "pair": "E<->G",
+      "status": "CANDIDATE",
+      "rationale": "Future materials/process integration requires qualified component-level evidence."
+    },
+    {
+      "pair": "E<->H",
+      "status": "ACTIVE",
+      "rationale": "Pangola, accepted-liquid-fuel and net-fusion pillars remain in strategic scope."
+    },
+    {
+      "pair": "E<->I",
+      "status": "N/A",
+      "rationale": "No validated material/energy link to the auxiliary lane."
+    },
+    {
+      "pair": "F<->G",
+      "status": "CANDIDATE",
+      "rationale": "Factory economics can be linked only after a validated process window and throughput/yield data."
+    },
+    {
+      "pair": "F<->H",
+      "status": "ACTIVE",
+      "rationale": "Principal/interest/time-to-evidence accounting remains distinct from WACC claims."
+    },
+    {
+      "pair": "F<->I",
+      "status": "N/A",
+      "rationale": "No project finance or vehicle-energy result from this method."
+    },
+    {
+      "pair": "G<->H",
+      "status": "UNCHANGED",
+      "rationale": "No manufacturing equipment or factory system evidence."
+    },
+    {
+      "pair": "G<->I",
+      "status": "N/A",
+      "rationale": "No shared validated manufacturing interface."
+    },
+    {
+      "pair": "H<->I",
+      "status": "N/A",
+      "rationale": "No causal connection; Lane I remains auxiliary MODEL_ONLY."
+    }
+  ]
+}
