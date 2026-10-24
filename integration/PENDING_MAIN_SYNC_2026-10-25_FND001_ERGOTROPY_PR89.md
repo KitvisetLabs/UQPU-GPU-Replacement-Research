@@ -6,7 +6,7 @@
 **Canonical main base SHA:** 6af8ce896368ed993fe2b8278afa6082e1ecc916  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/89  
 **Source branch:** research/2026-10-25-fnd001-ergotropy-certification  
-**Source head SHA:** ecdaad1f9134f87fb9f3f73881aaebcc2d42dd09  
+**Source head SHA:** cf645940f178806392b869594e40c7ec06ada903  
 **Source author/agent:** GitHub connector commit under KitvisetLabs; autonomous research cycle  
 **Primary owner:** Lane F; priority lane A remains unchanged  
 **Evidence class:** LITERATURE_ONLY + proposed test protocol  
@@ -71,3 +71,10 @@ Observed after source-head refresh:
 - The handoff manifest `integration/COLD_START_HANDOFF_MANIFEST.json` still points to older canonical SHA `588500f647bb42a43549a5ce38072198f61071ab`. Update it only in a separately reviewed change after reconciling the current lane/gap state; do not silently rewrite the large append-only gap ledger.
 
 **Next gate:** confirm the trailer-qualified follow-up passes cold-start, then obtain completed exact-head CI for PR #89 and review its source-to-main mapping. No provider job or paid QPU execution is authorized.
+
+
+## Source-head refresh after cold-start metadata repair — 2026-10-25
+
+Source PR #89 now points to `cf645940f178806392b869594e40c7ec06ada903`. Its follow-up commit appends the CI boundary to the integration handoff and carries the exact `Research-Sync: pending-main` trailer, addressing the single failure observed on prior head `ecdaad1f9134f87fb9f3f73881aaebcc2d42dd09`. The updated source-head cold-start and test runs were queued at the time of this record refresh; their outcome is not assumed. Historical intermediate SHAs remain preserved in the source branch history.
+
+The current sync-record commit also carries `Research-Sync: pending-main`. Review only after both exact-head CI outcomes are available and the source-to-main mapping is reconciled. This PR remains pending review and does not claim source work is merged.
