@@ -67,10 +67,10 @@
     "current_head_green_claim": false
   },
   "source_pr_ci": {
-    "exact_head_sha": "76547a919aaf2ed05e5d32cd340121e52127cf30",
-    "run_id": 40137232932,
+    "latest_observed_run_id": 40137304781,
     "status": "QUEUED_AT_LAST_CHECK",
-    "conclusion": null
+    "conclusion": null,
+    "note": "The run was queued after the branch's prior head. Re-check the latest workflow run on PR #89 before merge; this contract intentionally does not encode a self-referential current-head SHA."
   },
   "pending_sync_pr": {
     "number": 90,
@@ -346,5 +346,8 @@
       }
     ]
   },
-  "next_highest_value_gate": "Keep Lane A QSP/QSVT feasibility as Priority #1; independently reproduce FND-ERG-001 on frozen exact-state fixtures before implementation or any authorized provider use."
+  "next_highest_value_gate": "Keep Lane A QSP/QSVT feasibility as Priority #1; independently reproduce FND-ERG-001 on frozen exact-state fixtures before implementation or any authorized provider use.",
+  "source_head_sha_at_contract_creation": "76547a919aaf2ed05e5d32cd340121e52127cf30",
+  "current_source_head_sha": null,
+  "current_source_head_note": "Current source head is authoritative in PR #89 metadata and the separate pending-main sync record; any change to this file changes the branch head."
 }
