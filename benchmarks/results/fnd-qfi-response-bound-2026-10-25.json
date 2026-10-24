@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "work_item_id": "FND-QFI-002",
+  "date": "2026-10-25",
+  "source": {
+    "title": "Quantum-Fisher-information-aware optimization yields a quantum reservoir advantage over tuned classical reservoirs",
+    "authors": ["Phi Hung Nguyen", "Daniel Soh"],
+    "url": "https://arxiv.org/abs/2610.14454",
+    "submitted": "2026-10-10",
+    "evidence_class": "LITERATURE_ONLY / THIRD_PARTY_PREPRINT"
+  },
+  "project_evidence_class": "MODEL_ONLY",
+  "method": "Audit |d<O>/dtheta|^2 <= F_Q(theta) * Var(O) on the analytic pure-qubit family cos(theta)|0> + sin(theta)|1>, with X and Z observables.",
+  "analytic_contract": {
+    "state": "|psi(theta)> = cos(theta)|0> + sin(theta)|1>",
+    "qfi_theta": 4,
+    "z_observable": {
+      "expectation": "cos(2 theta)",
+      "slope": "-2 sin(2 theta)",
+      "variance": "sin(2 theta)^2",
+      "bound_saturated": true
+    },
+    "x_observable": {
+      "expectation": "sin(2 theta)",
+      "slope": "2 cos(2 theta)",
+      "variance": "cos(2 theta)^2",
+      "bound_saturated": true
+    },
+    "theta_values": [0.1, 0.25, 0.7, 1.1]
+  },
+  "test_summary": {
+    "test_methods": 6,
+    "passed": 6,
+    "failed": 0,
+    "analytic_saturation_cases": 8,
+    "negative_controls": [
+      "zero-QFI direction with nonzero slope is rejected",
+      "slope above the QFI envelope is rejected",
+      "negative/nonfinite/nonnumeric inputs are rejected"
+    ],
+    "command": "python -m unittest discover -s tests -v",
+    "environment": "isolated local harness; not the full repository checkout or CI"
+  },
+  "limitations": [
+    "The helper audits supplied scalar QFI, variance and slope; it does not calculate QFI from arbitrary density matrices.",
+    "The test checks the single-observable response inequality, not the full retrained-loss gradient decomposition in the preprint.",
+    "The model is analytic and does not represent a hardware or provider measurement.",
+    "No quantum advantage, accepted-task economics, memory/storage replacement or physical-law discovery is established."
+  ],
+  "real_qpu_execution": false,
+  "paid_qpu_job": false,
+  "promotion_to_physical_law": false,
+  "promotion_to_project_advantage": false
+}
