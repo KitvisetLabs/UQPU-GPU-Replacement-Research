@@ -29,7 +29,7 @@ Four focused regression-test methods cover NaN/infinity in either metric, the in
 
 ## Literature surveillance (2026-10-24)
 
-The fresh public-source scan found no additional primary result that changes the current UQPU evidence gates beyond the results already represented by the 2026-10-23 main-branch optimization-law/ancilla-QFI watch and current pending research branches. Relevant sources screened:
+The initial public-source scan found no additional primary result that changed the current UQPU evidence gates beyond the results already represented by the 2026-10-23 main-branch optimization-law/ancilla-QFI watch and current pending research branches. A subsequent expanded arXiv scan in this same cycle identified Zhong et al., arXiv:2610.29170 (submitted 2026-10-21), on top-down joint quantum target/compiler configuration selection. It was absent from main and the inspected PR #53/#56–#58 changed-file patches; a separate Lane-H watch and Lane-A benchmark contract were published on PR #62. This literature delta does not change the software defect finding or promote any scientific evidence. Relevant sources screened:
 
 - AI-Newton, APS accepted-paper record dated 2026-10-09: https://journals.aps.org/prresearch/accepted/10.1103/dvvc-4rsr
 - Data-driven progressive discovery of physical laws / CoSR, APS accepted-paper record dated 2026-10-06: https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q
