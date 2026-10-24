@@ -1,4 +1,6 @@
+import json
 import unittest
+from pathlib import Path
 
 from uqpu.circuit_fab_bridge import assess_circuit_fab_bridge
 
@@ -67,6 +69,15 @@ class CircuitFabBridgeTests(unittest.TestCase):
         self.assertEqual(result.status, "BLOCKED_CIRCUIT_CERTIFICATE")
         self.assertIn("workload_contract_id", result.missing_fields)
         self.assertEqual(result.evidence_class, "LITERATURE_ONLY")
+
+    def test_persisted_literature_fixture_is_fail_closed(self):
+        root = Path(__file__).resolve().parents[3]
+        path = root / "benchmarks/experiments/cycle010/qalg-fab-interface-001-literature-fixture.json"
+        fixture = json.loads(path.read_text(encoding="utf-8"))
+        result = assess_circuit_fab_bridge(fixture["bridge_payload"])
+        self.assertEqual(result.status, fixture["expected_assessment"])
+        self.assertEqual(result.first_blocked_stage, fixture["missing_stage"])
+        self.assertEqual(fixture["evidence_class"], "LITERATURE_ONLY")
 
     def test_same_implementation_equivalence_is_not_independent_acceptance(self):
         payload = complete_payload()
