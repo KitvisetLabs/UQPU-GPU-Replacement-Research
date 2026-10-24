@@ -495,5 +495,281 @@
     }
   ],
   "sync_status": "PENDING_REVIEW_NOT_MERGED",
-  "next_gate": "Reconcile open PRs with exact source-SHA to main-SHA mapping; then implement QOS-QSVT-FEAS-001 and workload-derived scalable oracle/resource accounting."
+  "next_gate": "Reconcile open PRs with exact source-SHA to main-SHA mapping; then implement QOS-QSVT-FEAS-001 and workload-derived scalable oracle/resource accounting.",
+  "integration_pairs_checked": 36,
+  "integration_pairs": [
+    {
+      "pair": "A-B",
+      "interface": "Provider-neutral lowering after QSP/QSVT feasibility and oracle contracts",
+      "status": "BLOCKED",
+      "next_gate": "QOS-QSVT-FEAS-001 then provider-neutral IR; no job submission."
+    },
+    {
+      "pair": "A-C",
+      "interface": "Accepted workload semantics to state/I/O/host-memory ledger",
+      "status": "PARTIAL",
+      "next_gate": "Add a scalable workload with reconstruction, transfer and readable-output accounting."
+    },
+    {
+      "pair": "A-D",
+      "interface": "Logical queries/phases to target-native device resources",
+      "status": "BLOCKED",
+      "next_gate": "Native decomposition, target calibration, gate/depth/control uncertainty."
+    },
+    {
+      "pair": "A-E",
+      "interface": "Workload execution to cooling/material/energy functional units",
+      "status": "PROPOSED",
+      "next_gate": "Use accepted-task boundary; no current energy/material measurements."
+    },
+    {
+      "pair": "A-F",
+      "interface": "Quantum vs CPU/GPU/NPU accepted-task benchmark and economics",
+      "status": "BLOCKED",
+      "next_gate": "Same useful output, quality gate, competitive baselines and same-target prices."
+    },
+    {
+      "pair": "A-G",
+      "interface": "Circuit resources to manufacturing equipment/factory requirements",
+      "status": "IN_REVIEW",
+      "next_gate": "PR #80 bridge; requires validated Lane D native resources and process/yield evidence."
+    },
+    {
+      "pair": "A-H",
+      "interface": "Service contract and physical-compression strategy",
+      "status": "PROPOSED",
+      "next_gate": "Map measured service capability to phone-boundary and lifecycle-cost contract."
+    },
+    {
+      "pair": "A-I",
+      "interface": "Auxiliary field-agnostic vehicle/levitation interface",
+      "status": "AUXILIARY",
+      "next_gate": "Keep separate; no effect on permanent A-H priorities."
+    },
+    {
+      "pair": "B-C",
+      "interface": "Provider transport and state/data movement accounting",
+      "status": "BLOCKED",
+      "next_gate": "Capture provider-specific input/output, transfer and reconstruction costs."
+    },
+    {
+      "pair": "B-D",
+      "interface": "Target/provider identity to device calibration and physical constraints",
+      "status": "BLOCKED",
+      "next_gate": "Exact target snapshot and calibration provenance; no generic target inference."
+    },
+    {
+      "pair": "B-E",
+      "interface": "Provider workload to cooling/energy infrastructure",
+      "status": "BLOCKED",
+      "next_gate": "No authorized hardware energy or cooling measurements."
+    },
+    {
+      "pair": "B-F",
+      "interface": "Provider results and billing to cost per accepted task",
+      "status": "BLOCKED",
+      "next_gate": "RG-028 DATA/CREDENTIAL_BLOCKED; never mix target probability and another target's price."
+    },
+    {
+      "pair": "B-G",
+      "interface": "Provider target constraints to manufacturable test/control systems",
+      "status": "BLOCKED",
+      "next_gate": "Validated target-native circuit/control contract required first."
+    },
+    {
+      "pair": "B-H",
+      "interface": "Provider procurement and capital planning",
+      "status": "NO_ACTION",
+      "next_gate": "No purchasing/funding action authorized; evidence gates first."
+    },
+    {
+      "pair": "B-I",
+      "interface": "Provider services and auxiliary vehicle controls",
+      "status": "AUXILIARY",
+      "next_gate": "No integrated test or relevant measured benefit."
+    },
+    {
+      "pair": "C-D",
+      "interface": "Memory, packaging, thermal and device co-design",
+      "status": "BLOCKED",
+      "next_gate": "Need target-aware transfer, heat and package budgets."
+    },
+    {
+      "pair": "C-E",
+      "interface": "Storage/data movement to cooling and energy infrastructure",
+      "status": "PROPOSED",
+      "next_gate": "Model energy boundary; retain MODEL_ONLY until calibrated measurements."
+    },
+    {
+      "pair": "C-F",
+      "interface": "Wall-plug energy and output-information lower bounds",
+      "status": "IN_REVIEW",
+      "next_gate": "PR #81 FND-001 helper; erased-bit count must be independently justified."
+    },
+    {
+      "pair": "C-G",
+      "interface": "Data movement and memory limits to factory/test equipment",
+      "status": "PROPOSED",
+      "next_gate": "Define measured I/O and test-data throughput interfaces."
+    },
+    {
+      "pair": "C-H",
+      "interface": "Phone form factor, service capacity and lifecycle costs",
+      "status": "PROPOSED",
+      "next_gate": "Use measurable capability contracts, not dollar valuation as compute equivalence."
+    },
+    {
+      "pair": "C-I",
+      "interface": "Memory and telemetry for auxiliary vehicle systems",
+      "status": "AUXILIARY",
+      "next_gate": "No accepted workload or mission integration."
+    },
+    {
+      "pair": "D-E",
+      "interface": "Device materials and cooling/energy environment",
+      "status": "BLOCKED",
+      "next_gate": "No qualified material, neutron-damage or cooling measurement for target system."
+    },
+    {
+      "pair": "D-F",
+      "interface": "Device lifetime/yield to lifecycle economics",
+      "status": "BLOCKED",
+      "next_gate": "Need target-specific reliability, replacement and calibrated CAPEX/OPEX."
+    },
+    {
+      "pair": "D-G",
+      "interface": "Device/process requirements to manufacturing equipment",
+      "status": "IN_REVIEW",
+      "next_gate": "PR #80; no fab process window, yield or cost claim yet."
+    },
+    {
+      "pair": "D-H",
+      "interface": "Device materials/manufacturing to future-industry finance",
+      "status": "PROPOSED",
+      "next_gate": "No capital escalation until target and process evidence passes."
+    },
+    {
+      "pair": "D-I",
+      "interface": "Device and auxiliary vehicle physical integration",
+      "status": "AUXILIARY",
+      "next_gate": "No common measurable mission contract."
+    },
+    {
+      "pair": "E-F",
+      "interface": "BIO-001/FUS-001 functional-unit economics",
+      "status": "BLOCKED",
+      "next_gate": "BIO accepted liquid-energy cost and FUS net delivered-electricity data absent."
+    },
+    {
+      "pair": "E-G",
+      "interface": "Catalyst/reactor/fusion components to manufacturing equipment",
+      "status": "PROPOSED",
+      "next_gate": "Convert literature/design parameters into equipment specs only after validated process models."
+    },
+    {
+      "pair": "E-H",
+      "interface": "Biomass/fusion evidence to strategy, finance and publication",
+      "status": "PROPOSED",
+      "next_gate": "Separate research options from commercial or investment claims."
+    },
+    {
+      "pair": "E-I",
+      "interface": "Energy/materials and auxiliary vehicle power/cooling",
+      "status": "AUXILIARY",
+      "next_gate": "No measured common boundary or mission contract."
+    },
+    {
+      "pair": "F-G",
+      "interface": "Manufacturing yield, process cost and lifecycle economics",
+      "status": "BLOCKED",
+      "next_gate": "Need process-window/yield evidence and non-overlapping cost accounts."
+    },
+    {
+      "pair": "F-H",
+      "interface": "Principal, time-to-evidence and strategic capital exposure",
+      "status": "BLOCKED",
+      "next_gate": "FIN-001 must quantify principal/time; no WACC or macro-rate effect demonstrated."
+    },
+    {
+      "pair": "F-I",
+      "interface": "Auxiliary vehicle mission economics",
+      "status": "AUXILIARY",
+      "next_gate": "No measured mission-level energy/cost comparison."
+    },
+    {
+      "pair": "G-H",
+      "interface": "Factory systems to future-industry capital planning",
+      "status": "BLOCKED",
+      "next_gate": "Require validated device requirements, yield and cost evidence before financing."
+    },
+    {
+      "pair": "G-I",
+      "interface": "Factory systems for auxiliary vehicle components",
+      "status": "AUXILIARY",
+      "next_gate": "No validated shared process or economic contract."
+    },
+    {
+      "pair": "H-I",
+      "interface": "Strategic plan cross-reference to auxiliary lane",
+      "status": "AUXILIARY",
+      "next_gate": "Lane I remains auxiliary and cannot displace A-H."
+    }
+  ],
+  "selected_multilane_combinations": [
+    {
+      "lanes": [
+        "A",
+        "B",
+        "C"
+      ],
+      "status": "BLOCKED",
+      "next_gate": "Frozen workload contract, scalable oracle/block encoding, provider-neutral lowering and target-aware simulation."
+    },
+    {
+      "lanes": [
+        "A",
+        "D",
+        "G"
+      ],
+      "status": "IN_REVIEW",
+      "next_gate": "PR #80 bridge plus native decomposition, calibration, process-window and yield/cost evidence."
+    },
+    {
+      "lanes": [
+        "C",
+        "E",
+        "F"
+      ],
+      "status": "BLOCKED",
+      "next_gate": "Measured full-system energy and data movement for the same accepted output."
+    },
+    {
+      "lanes": [
+        "E",
+        "F",
+        "H"
+      ],
+      "status": "BLOCKED",
+      "next_gate": "Accepted BIO-001 and net-electric FUS-001 functional-unit evidence before FIN-001 financing analysis."
+    },
+    {
+      "lanes": [
+        "FND/EQN",
+        "A-H"
+      ],
+      "status": "PARTIAL_SIMULATION_ONLY",
+      "next_gate": "Formal proof and candidate screening followed by falsification, experiment, independent replication, device/system and economic evidence."
+    },
+    {
+      "lanes": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G"
+      ],
+      "status": "PROPOSED",
+      "next_gate": "QOS-QSVT-FEAS-001 then workload-derived scalable oracle/resource ledger."
+    }
+  ]
 }
