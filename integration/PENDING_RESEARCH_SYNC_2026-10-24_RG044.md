@@ -58,7 +58,8 @@ The code validates record comparability and resource metadata. Analytic matrices
 
 - PR #58 is open; none of its source commits is on `main` yet.
 - This file is a separate pending-main summary PR, not a claim that source code is already canonical.
-- `integration/COLD_START_HANDOFF_MANIFEST.json` still contains its older 2026-10-18 checkpoint and should be reconciled in a dedicated reviewed update rather than overwritten concurrently.
+- `README.md` still labels 2026-10-15 as its latest verified implementation checkpoint despite Batch 056 and newer open research branches; refresh that checkpoint in a dedicated reviewed change rather than rewriting the large README during concurrent work.
+- `integration/COLD_START_HANDOFF_MANIFEST.json` still contains its older 2026-10-18 checkpoint and an older verified-CI reference; reconcile it in a dedicated reviewed update rather than overwriting it concurrently.
 - This bookkeeping commit itself is recorded by Git history and should be included in the next reconciliation checkpoint.
 
 Research-Sync: pending-main
