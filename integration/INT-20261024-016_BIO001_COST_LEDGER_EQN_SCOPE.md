@@ -51,3 +51,8 @@ The base main head reviewed for this branch was c7b5958af58fad04a101ef5c6abf6a29
 3. Collect a traceable Pangola dataset with accepted-product assay/LHV and full mass/energy balance.
 4. Use that dataset to populate BIO-001 uncertainty ranges; separately run FUS-001 sensitivity and FIN-001 financing/time-to-evidence accounting.
 5. Reconcile this branch and all active research branches against canonical main after review. Do not claim synchronization before merge.
+
+
+## Cold-start handoff reconciliation
+
+The first hosted cold-start audit reported only a missing Research-Sync commit trailer; it did not report a lane-contract or evidence-boundary failure. This follow-up commit carries the required pending-main trailer. The branch remains unmerged until review and successful CI.
