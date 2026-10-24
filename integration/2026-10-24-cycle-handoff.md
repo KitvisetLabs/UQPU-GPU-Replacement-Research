@@ -10,7 +10,8 @@
 - Candidate-screen module: 036b1f849b8dae31e2d40b44c21802b88cf1ff59
 - Six-test suite: 7387700a54b863b5d450dfa5db6c81f895712257
 - Lane A benchmark contract: 078a83f170832fce9a49feb7ddae74d3b66b4442
-- Literature watch: 505dbe9448cf748eaff9ca551e62ac39d249a144
+- Literature watch initial commit: 505dbe9448cf748eaff9ca551e62ac39d249a144
+- Literature watch update (thermodynamic speed-limit source): 6b47b64c00a3a464d9f042c7ece97974dde9c34f
 
 Each source commit carries the required Research-Sync: pending-main trailer. This handoff is a source-branch record; it does not claim that these files are already on main.
 
@@ -38,7 +39,7 @@ Each source commit carries the required Research-Sync: pending-main trailer. Thi
 
 ## Foundational and equation-discovery review
 
-- FND-001 thermodynamic-gap accounting, FND-002 output-information lower bounds, FND-003 matched control-time/quantum-speed-limit measurement, FND-004 alternative physical primitives, FND-005 QFT/particle mechanism scans, and FND-006 mathematics-first invention remain active.
+- FND-001 thermodynamic-gap accounting, FND-002 output-information lower bounds, FND-003 matched control-time/quantum-speed-limit measurement, FND-004 alternative physical primitives, FND-005 QFT/particle mechanism scans, and FND-006 mathematics-first invention remain active. A 2026-10-06 accepted thermodynamic-speed-limit paper is now a bounded FND-001/FND-003 reproduction candidate, not a replacement for existing limits.
 - EQN-001–006 remain active. EQN-OPT-001 adds only a pre-screen for objective ordering and finite-grid optimum sets; it does not close RG-034, identify a physical law, or replace the existing equation-discovery contract.
 - FND-QFI-001 remains a proposed offline theorem-reproduction gate. The ancilla-QFI theorem is not generalized to arbitrary computation, readable memory, or physical compression.
 - BIO-001, FUS-001 and FIN-001 were reviewed without evidence promotion.
