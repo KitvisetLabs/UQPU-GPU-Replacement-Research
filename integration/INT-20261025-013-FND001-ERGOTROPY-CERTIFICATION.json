@@ -67,10 +67,10 @@
     "current_head_green_claim": false
   },
   "source_pr_ci": {
-    "latest_observed_run_id": 40137304781,
-    "status": "QUEUED_AT_LAST_CHECK",
-    "conclusion": null,
-    "note": "The run was queued after the branch's prior head. Re-check the latest workflow run on PR #89 before merge; this contract intentionally does not encode a self-referential current-head SHA."
+    "prior_head_run_id": 40137304781,
+    "prior_head_status": "QUEUED_AT_LAST_CHECK",
+    "prior_head_conclusion": null,
+    "note": "This run was observed before the latest source-head metadata correction. Exact-head CI is dynamic; check the latest Actions run attached to PR #89 and do not infer green status from this snapshot."
   },
   "pending_sync_pr": {
     "number": 90,
