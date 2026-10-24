@@ -1,0 +1,115 @@
+{
+  "contract_id": "INT-20261025-010-EQN-PROOF-SEARCH",
+  "date": "2026-10-25",
+  "primary_owner": "H",
+  "integration_owner": "F",
+  "canonical_main_base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "status": "LITERATURE_WATCH_PUBLISHED_ON_RESEARCH_BRANCH",
+  "evidence_label": "LITERATURE_ONLY",
+  "primary_artifact": "docs/literature_watch/2026-10-25-formal-proof-search-and-physics-constrained-equation-discovery.md",
+  "objective": "Add formal-proof feedback as an optional verifier for mathematical claims in the equation-discovery pipeline without promoting proof, fit, simulation, or third-party results into physical-law evidence.",
+  "sources": [
+    {
+      "id": "LIT-2026-10-08-FORMAL-PROOF-SEARCH",
+      "title": "Advancing mathematics research with AI-driven formal proof search",
+      "publication_date": "2026-10-08",
+      "venue": "Science",
+      "evidence_class": "PEER_REVIEWED_RESEARCH",
+      "url": "https://doi.org/10.1126/science.aej2213",
+      "reported_results": "9 of 353 attempted Erdős problems and 44 of 492 attempted OEIS conjectures",
+      "non_claim": "Does not establish any UQPU physical equation, QPU advantage, or mission outcome."
+    },
+    {
+      "id": "LIT-2026-07-05-LLM-PYSR-SEARCH-CONTROL",
+      "title": "Language models guide symbolic equation discovery by controlling search",
+      "publication_date": "2026-07-05",
+      "venue": "arXiv preprint",
+      "evidence_class": "PREPRINT",
+      "url": "https://arxiv.org/abs/2607.04156",
+      "non_claim": "Equation-recovery benchmark performance is not new-law evidence."
+    },
+    {
+      "id": "LIT-2026-09-01-PHYSICS-CONSTRAINED-CONSTITUTIVE-MODELS",
+      "title": "LLM-driven design of physics-constrained constitutive models: two agents are better than one",
+      "publication_date": "2026-09-01",
+      "venue": "arXiv preprint v2",
+      "evidence_class": "PREPRINT",
+      "url": "https://arxiv.org/abs/2605.23754",
+      "non_claim": "Sampled numerical constraint checks are not global proof or independent material qualification."
+    }
+  ],
+  "lane_review": {
+    "A": "Proof-check exact compiler/workload transformations where applicable; implement EQN-PROOF-001 fixture only after frozen acceptance criteria.",
+    "B": "Provider-neutral path unchanged; no credentials, target calls, QPU jobs, shots, or billing.",
+    "C": "Preserve output-information/readable-memory distinction; no memory equivalence claim.",
+    "D": "Constraint inspection may filter device/material models; no device or fabrication result.",
+    "E": "BIO-001 and FUS-001 accounting can benefit from verified identities; no accepted fuel or net-electricity evidence.",
+    "F": "Matched total-resource and failed-search accounting; no measured cost advantage or finance effect.",
+    "G": "D/G co-design continues; manufacturing consequences require validated device requirements.",
+    "H": "Primary owner of literature synthesis and publication; strategic plan remains context, not scientific proof.",
+    "I": "Auxiliary in this cycle; does not replace or suppress A-H."
+  },
+  "foundational_links": [
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "invariants": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "next_gate": {
+    "id": "EQN-PROOF-001",
+    "status": "SPECIFIED_NOT_IMPLEMENTED",
+    "required_steps": [
+      "Freeze benchmark statement/data/code hashes and pin proof-assistant/kernel/library versions.",
+      "Reject unapproved axioms and proof placeholders; archive imports and exact formal statement.",
+      "Compare deterministic evaluator, symbolic regression, LLM-guided search, and proof-feedback arms under matched total resource budgets.",
+      "Record held-out error, counterexamples, proof validity, false discoveries, wall time, tokens, host compute, energy where measurable, and total cost including failures.",
+      "For physical candidates, require a predeclared discriminating experiment and independent replication after all mathematical gates."
+    ],
+    "acceptance_rule": "A checked proof validates only the frozen formal statement under its explicit assumptions. No automatic promotion to a physical law or technology claim."
+  },
+  "mission_effects": {
+    "INV-029": "No Data-Center-to-Phone closure; only a proposed correctness-verification method.",
+    "INV-030": "No elemental transmutation or qualified Pangola-derived material substitution.",
+    "INV-031": "No saleable bio-oil yield or full-cost result.",
+    "INV-032": "No net reliable fusion-electricity or lifecycle-cost result.",
+    "INV-033": "No measured principal, interest, WACC, or time-to-evidence effect.",
+    "INV-034": "Supports mathematics-first hypothesis/proof workflow without changing physical limits.",
+    "INV-035": "Adds a possible formal verifier while retaining dimensional, symmetry, conservation, causality, held-out, falsification, experiment, replication, and economics gates."
+  },
+  "safety_and_authorization": {
+    "paid_qpu_jobs_authorized": false,
+    "provider_credentials_used": false,
+    "real_hardware_submissions": 0
+  },
+  "preservation": {
+    "root_directives_00_through_06": "preserved",
+    "kanusanan_pongpanna_model": "preserved",
+    "strategic_plan_references_and_thai_english_chinese_japanese_korean_german_links": "preserved",
+    "research_lanes_and_integration_directory_depth_rule": "preserved",
+    "large_append_only_sync_debt": [
+      "RESEARCH_GAPS.md not rewritten; dated literature artifact and this integration contract carry the new gap until safe append-only synchronization.",
+      "WORKLOG.md not rewritten; sync debt remains for a later complete-history append.",
+      "docs/EIGHT_LANE_SCOREBOARD.md and the newer A-I scoreboard were not rewritten in this focused literature cycle."
+    ]
+  }
+}
