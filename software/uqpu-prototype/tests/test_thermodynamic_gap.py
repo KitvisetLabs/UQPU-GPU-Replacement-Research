@@ -1,4 +1,3 @@
-import math
 import unittest
 
 from uqpu.thermodynamic_gap import (
@@ -51,9 +50,7 @@ class ThermodynamicGapTests(unittest.TestCase):
         self.assertFalse(report["eligible_for_fnd001_gap_analysis"])
 
     def test_no_accepted_outputs_has_no_per_task_ratio(self):
-        report = evaluate_thermodynamic_gap(
-            self.observation(accepted_count=0)
-        )
+        report = evaluate_thermodynamic_gap(self.observation(accepted_count=0))
         self.assertEqual(report["status"], "NO_ACCEPTED_OUTPUTS")
         self.assertIsNone(report["wall_plug_joules_per_accepted_task"])
         self.assertIsNone(report["wall_plug_to_landauer_floor_ratio"])
@@ -70,9 +67,7 @@ class ThermodynamicGapTests(unittest.TestCase):
         self.assertIsNone(report["wall_plug_to_landauer_floor_ratio"])
 
     def test_below_floor_requests_boundary_audit_not_physics_claim(self):
-        report = evaluate_thermodynamic_gap(
-            self.observation(total_wall_plug_joules=1e-30)
-        )
+        report = evaluate_thermodynamic_gap(self.observation(total_wall_plug_joules=1e-30))
         self.assertEqual(report["status"], "BOUNDARY_AUDIT_REQUIRED")
         self.assertFalse(report["project_advantage_claim_allowed"])
 
@@ -94,40 +89,28 @@ class ThermodynamicGapTests(unittest.TestCase):
         self.assertEqual(report["evidence_level"], "MODEL_ONLY")
 
     def test_subsystem_energy_is_not_full_system_eligible(self):
-        report = evaluate_thermodynamic_gap(
-            self.observation(energy_scope="QPU_SUBSYSTEM")
-        )
+        report = evaluate_thermodynamic_gap(self.observation(energy_scope="QPU_SUBSYSTEM"))
         self.assertFalse(report["eligible_for_fnd001_gap_analysis"])
 
     def test_measured_level_requires_provenance(self):
         with self.assertRaisesRegex(ValueError, "energy_provenance"):
-            evaluate_thermodynamic_gap(
-                self.observation(energy_provenance="")
-            )
+            evaluate_thermodynamic_gap(self.observation(energy_provenance=""))
 
     def test_erasure_count_requires_basis_and_provenance(self):
         with self.assertRaisesRegex(ValueError, "erasure_accounting_basis"):
-            evaluate_thermodynamic_gap(
-                self.observation(erasure_accounting_basis="")
-            )
+            evaluate_thermodynamic_gap(self.observation(erasure_accounting_basis=""))
         with self.assertRaisesRegex(ValueError, "erasure_provenance"):
-            evaluate_thermodynamic_gap(
-                self.observation(erasure_provenance="")
-            )
+            evaluate_thermodynamic_gap(self.observation(erasure_provenance=""))
 
     def test_nonfinite_or_negative_energy_is_rejected(self):
         for value in (float("nan"), float("inf"), -1.0):
             with self.subTest(value=value), self.assertRaises(ValueError):
-                evaluate_thermodynamic_gap(
-                    self.observation(total_wall_plug_joules=value)
-                )
+                evaluate_thermodynamic_gap(self.observation(total_wall_plug_joules=value))
 
     def test_invalid_temperature_and_erasure_bits_are_rejected(self):
         for value in (0.0, -1.0, float("nan"), float("inf")):
             with self.subTest(temperature=value), self.assertRaises(ValueError):
-                evaluate_thermodynamic_gap(
-                    self.observation(temperature_kelvin=value)
-                )
+                evaluate_thermodynamic_gap(self.observation(temperature_kelvin=value))
         with self.assertRaises(ValueError):
             evaluate_thermodynamic_gap(
                 self.observation(irreversible_erased_bits_per_accepted_task=-1.0)
@@ -154,6 +137,17 @@ class ThermodynamicGapTests(unittest.TestCase):
             "erased bits are not inferred from output bits, qubit count, or Hilbert-space dimension",
             report["nonclaims"],
         )
+
+    def test_non_string_metadata_is_rejected_as_value_error(self):
+        for changes in (
+            {"workload_contract_id": None},
+            {"temperature_basis": None},
+            {"energy_scope": []},
+            {"evidence_level": []},
+            {"energy_provenance": None},
+        ):
+            with self.subTest(changes=changes), self.assertRaises(ValueError):
+                evaluate_thermodynamic_gap(self.observation(**changes))
 
 
 if __name__ == "__main__":
