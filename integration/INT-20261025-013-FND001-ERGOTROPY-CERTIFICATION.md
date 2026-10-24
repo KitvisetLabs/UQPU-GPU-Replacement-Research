@@ -7,6 +7,7 @@
 **Canonical main base:** 6af8ce896368ed993fe2b8278afa6082e1ecc916  
 **Source branch:** research/2026-10-25-fnd001-ergotropy-certification  
 **Initial source commit:** 5664aaef15ede2335b61bde6b65d3e67fe76ae18  
+**Machine-readable contract:** integration/INT-20261025-013-FND001-ERGOTROPY-CERTIFICATION.json  
 **Primary Lane F work item:** research_lanes/F_economics_benchmarks_evidence_integration/FND-ERG-001_2026-10-25.md  
 **Literature artifact:** docs/literature_watch/2026-10-25-fnd001-ergotropy-certification.md  
 **Evidence class:** LITERATURE_ONLY + preregistered test protocol  
