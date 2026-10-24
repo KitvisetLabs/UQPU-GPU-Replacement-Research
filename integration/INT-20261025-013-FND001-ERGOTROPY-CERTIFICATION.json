@@ -1,0 +1,360 @@
+{
+  "schema": "uqpu-integration-contract-v1",
+  "integration_id": "INT-20261025-013",
+  "date": "2026-10-25",
+  "timezone": "Asia/Bangkok",
+  "primary_owner_lane": "F",
+  "priority_lane": "A",
+  "status": "PROPOSED_PR_REVIEW_REQUIRED",
+  "canonical_main_base_sha": "6af8ce896368ed993fe2b8278afa6082e1ecc916",
+  "source_branch": "research/2026-10-25-fnd001-ergotropy-certification",
+  "source_pr": 89,
+  "primary_work_item": "research_lanes/F_economics_benchmarks_evidence_integration/FND-ERG-001_2026-10-25.md",
+  "literature_artifact": "docs/literature_watch/2026-10-25-fnd001-ergotropy-certification.md",
+  "human_integration_artifact": "integration/INT-20261025-013-FND001-ERGOTROPY-CERTIFICATION.md",
+  "source_reference": {
+    "title": "Certifying ergotropy under partial information",
+    "authors": [
+      "Egle Pagliaro",
+      "Leonardo Zambrano",
+      "Mir Alimuddin",
+      "Alioscia Hamma",
+      "Antonio Acín",
+      "Donato Farina"
+    ],
+    "journal": "Physical Review Letters",
+    "volume": 137,
+    "article": 130401,
+    "publication_date": "2026-09-21",
+    "arxiv_version": "2603.18828v2",
+    "arxiv_revision_date": "2026-09-28",
+    "doi": "10.1103/pl26-g6vy",
+    "evidence_class": "LITERATURE_ONLY"
+  },
+  "hypothesis": "A finite-shot ergotropy lower certificate can be reproduced as a state-resource metric while remaining strictly separate from metered energy per accepted useful computing task.",
+  "assumptions": [
+    "Hamiltonian known and correctly specified",
+    "Observable definitions and normalization are correct",
+    "Finite-shot confidence intervals satisfy their declared assumptions",
+    "Density-matrix positivity and trace-one constraints are enforced",
+    "SDP numerical tolerances and solver status are recorded"
+  ],
+  "acceptance_gates": [
+    "Paper-level derivation reproduced",
+    "Small frozen exact-state references established",
+    "Certified lower bound does not exceed exact ergotropy beyond tolerance",
+    "Preregistered finite-shot confidence coverage test passes",
+    "Adversarial cases and failed candidates are retained",
+    "Independent implementation/reviewer reproduces the certificate",
+    "Any computing-energy claim uses separate metering and matched useful-output baseline"
+  ],
+  "falsifiers": [
+    "Certificate exceeds exact reference beyond preregistered tolerance",
+    "Empirical confidence coverage fails preregistered criterion",
+    "Invalid observables or model mismatch are accepted as valid",
+    "Monotonicity claim fails when the stated retained-unitary safeguard is applied"
+  ],
+  "evidence_class": "LITERATURE_ONLY_PLUS_PROPOSED_TEST_PROTOCOL",
+  "project_evidence_promotion": false,
+  "no_paid_qpu_authorized": true,
+  "no_qpu_job_submitted": true,
+  "no_material_fuel_fusion_experiment_performed": true,
+  "no_financing_or_wacc_claim": true,
+  "main_ci": {
+    "sha": "6af8ce896368ed993fe2b8278afa6082e1ecc916",
+    "combined_status": "NO_STATUS_CHECKS_RETURNED",
+    "previous_known_cold_start_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+    "current_head_green_claim": false
+  },
+  "source_pr_ci": {
+    "prior_head_run_id": 40137304781,
+    "prior_head_status": "QUEUED_AT_LAST_CHECK",
+    "prior_head_conclusion": null,
+    "note": "This run was observed before the latest source-head metadata correction. Exact-head CI is dynamic; check the latest Actions run attached to PR #89 and do not infer green status from this snapshot."
+  },
+  "pending_sync_pr": {
+    "number": 90,
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/90",
+    "status": "OPEN_NOT_MERGED"
+  },
+  "lane_status": {
+    "A": "PRIORITY_1_QSP_QSVT_FEASIBILITY_GATE_UNCHANGED",
+    "B": "NO_PROVIDER_CALL_OR_QPU_JOB",
+    "C": "NO_CLASSICAL_MEMORY_OR_STORAGE_EQUIVALENCE_EVIDENCE",
+    "D": "NO_DEVICE_OR_FABRICATION_EVIDENCE",
+    "E": "BIO_001_FUS_001_AND_COOLING_EVIDENCE_BLOCKED",
+    "F": "FND_ERG_001_PROPOSED_CERTIFICATE_AND_TEST_PROTOCOL",
+    "G": "D_G_CO_DESIGN_CONTINUES_NO_MANUFACTURING_RESULT",
+    "H": "LITERATURE_ONLY_STRATEGIC_PUBLICATION",
+    "I": "SCANNED_NO_DEFENSIBLE_COUPLING_TO_CONTACTLESS_VEHICLE_LIFT"
+  },
+  "foundation_status": {
+    "FND-001": "PROPOSED_FND_ERG_001_FOLLOW_UP",
+    "FND-002": "UNCHANGED",
+    "FND-003": "UNCHANGED_NO_MATCHED_SPEED_LIMIT_MEASUREMENT",
+    "FND-004": "UNCHANGED_NO_ALTERNATIVE_PRIMITIVE_EVIDENCE",
+    "FND-005": "UNCHANGED_NO_NEW_PARTICLE_OR_QFT_MECHANISM",
+    "FND-006": "FALSIFIABLE_EXACT_REFERENCE_AND_INDEPENDENT_REPLICATION_PATH",
+    "EQN-001": "LITERATURE_WATCH_ADDED",
+    "EQN-002": "NO_BENCHMARK_EXECUTION",
+    "EQN-003": "NO_GENERATOR_CHANGE",
+    "EQN-004": "CERTIFICATE_AND_COVERAGE_COUNTEREXAMPLES_SPECIFIED",
+    "EQN-005": "NOT_TRIGGERED",
+    "EQN-006": "TRACEABILITY_RECORDED"
+  },
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "root_directives_00_to_06_preserved": true,
+  "multilingual_master_plan_links_preserved": [
+    "Thai",
+    "English",
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "German"
+  ],
+  "directory_depth_policy_respected": true,
+  "integration_pair_scan": {
+    "pairs_scanned": 36,
+    "expected_pairs": 36,
+    "pairs": [
+      {
+        "left": "A",
+        "right": "B",
+        "status": "CONDITIONAL",
+        "rationale": "Provider/target identity and shot provenance can feed the future certificate ledger; no provider call in this run."
+      },
+      {
+        "left": "A",
+        "right": "C",
+        "status": "CANDIDATE",
+        "rationale": "Measurement shots and classical SDP/post-processing must enter workload I/O and resource accounting."
+      },
+      {
+        "left": "A",
+        "right": "D",
+        "status": "CONDITIONAL",
+        "rationale": "Only after reproduction, target-native gates/readout/control may constrain the measurement protocol."
+      },
+      {
+        "left": "A",
+        "right": "E",
+        "status": "CONDITIONAL",
+        "rationale": "Accepted-task energy boundaries must include host and cooling, but ergotropy itself is not task energy."
+      },
+      {
+        "left": "A",
+        "right": "F",
+        "status": "ACTIVE",
+        "rationale": "FND-ERG-001 defines a separate certificate interface; QSP/QSVT remains Lane A Priority #1."
+      },
+      {
+        "left": "A",
+        "right": "G",
+        "status": "CONDITIONAL",
+        "rationale": "Logical-to-device resource mapping is downstream of independently reproduced method."
+      },
+      {
+        "left": "A",
+        "right": "H",
+        "status": "CANDIDATE",
+        "rationale": "Validated results may be published; this literature lead makes no strategic-capital claim."
+      },
+      {
+        "left": "A",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "No causal mechanism connects this state-resource certificate to the separate contactless vehicle-lift lane."
+      },
+      {
+        "left": "B",
+        "right": "C",
+        "status": "CANDIDATE",
+        "rationale": "If hardware is later authorized, target shots, data transfer and classical post-processing need provenance."
+      },
+      {
+        "left": "B",
+        "right": "D",
+        "status": "CONDITIONAL",
+        "rationale": "Provider target constraints may inform device requirements only after target-specific evidence."
+      },
+      {
+        "left": "B",
+        "right": "E",
+        "status": "N_A",
+        "rationale": "No provider or hardware result was obtained that changes biomass/fusion/cooling research."
+      },
+      {
+        "left": "B",
+        "right": "F",
+        "status": "CANDIDATE",
+        "rationale": "Actual provider billing must be kept separate from the ergotropy resource certificate."
+      },
+      {
+        "left": "B",
+        "right": "G",
+        "status": "N_A",
+        "rationale": "No provider execution or manufacturing-equipment implication."
+      },
+      {
+        "left": "B",
+        "right": "H",
+        "status": "CANDIDATE",
+        "rationale": "A later authorized result may support publication; none exists now."
+      },
+      {
+        "left": "B",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "No provider path in this work connects to contactless vehicle lift."
+      },
+      {
+        "left": "C",
+        "right": "D",
+        "status": "CONDITIONAL",
+        "rationale": "Measurement and readout requirements may eventually constrain hardware, but no device evidence exists."
+      },
+      {
+        "left": "C",
+        "right": "E",
+        "status": "CANDIDATE",
+        "rationale": "Classical post-processing and facility energy belong in separate system boundaries."
+      },
+      {
+        "left": "C",
+        "right": "F",
+        "status": "ACTIVE",
+        "rationale": "Keep observable count, shots, classical solve cost and task energy in distinct ledger fields."
+      },
+      {
+        "left": "C",
+        "right": "G",
+        "status": "N_A",
+        "rationale": "No manufacturing-equipment requirement can be inferred from the paper."
+      },
+      {
+        "left": "C",
+        "right": "H",
+        "status": "CANDIDATE",
+        "rationale": "Only evidence-gated publication; no readable-memory/storage equivalence claim."
+      },
+      {
+        "left": "C",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "No common output or physical mechanism identified."
+      },
+      {
+        "left": "D",
+        "right": "E",
+        "status": "CONDITIONAL",
+        "rationale": "A future physical experiment must include device control and facility/cooling energy, not just state resource."
+      },
+      {
+        "left": "D",
+        "right": "F",
+        "status": "CANDIDATE",
+        "rationale": "If device evidence exists later, record calibration uncertainty and cost boundary."
+      },
+      {
+        "left": "D",
+        "right": "G",
+        "status": "CONTINUOUS_CO_DESIGN_UNCHANGED",
+        "rationale": "D/G co-design remains permanent; this literature watch adds no device/process result."
+      },
+      {
+        "left": "D",
+        "right": "H",
+        "status": "CANDIDATE",
+        "rationale": "Strategic publication only after device claims pass evidence gates."
+      },
+      {
+        "left": "D",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "No shared device mechanism or test contract identified."
+      },
+      {
+        "left": "E",
+        "right": "F",
+        "status": "ACTIVE",
+        "rationale": "FND-001 requires separating metered facility energy from state ergotropy; BIO-001/FUS-001 remain blocked."
+      },
+      {
+        "left": "E",
+        "right": "G",
+        "status": "N_A",
+        "rationale": "No biomass, fusion or manufacturing equipment result."
+      },
+      {
+        "left": "E",
+        "right": "H",
+        "status": "CANDIDATE",
+        "rationale": "Preserve strategic master-plan context; no fuel/electricity or funding claim."
+      },
+      {
+        "left": "E",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "No common physical subsystem or mission-relevant mechanism."
+      },
+      {
+        "left": "F",
+        "right": "G",
+        "status": "CONDITIONAL",
+        "rationale": "Manufacturing cost/yield may enter a future lifecycle model only with qualified device inputs."
+      },
+      {
+        "left": "F",
+        "right": "H",
+        "status": "CANDIDATE",
+        "rationale": "This is literature-only publication; no principal, interest or WACC evidence."
+      },
+      {
+        "left": "F",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "No common accepted-output contract or cost boundary identified."
+      },
+      {
+        "left": "G",
+        "right": "H",
+        "status": "CANDIDATE",
+        "rationale": "Strategic implications only after process/yield evidence; none in this run."
+      },
+      {
+        "left": "G",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "No manufacturing/propulsion mechanism established."
+      },
+      {
+        "left": "H",
+        "right": "I",
+        "status": "N_A",
+        "rationale": "Separate research scope; no defensible coupling from this thermodynamic certificate."
+      }
+    ]
+  },
+  "next_highest_value_gate": "Keep Lane A QSP/QSVT feasibility as Priority #1; independently reproduce FND-ERG-001 on frozen exact-state fixtures before implementation or any authorized provider use.",
+  "source_head_sha_at_contract_creation": "76547a919aaf2ed05e5d32cd340121e52127cf30",
+  "current_source_head_sha": null,
+  "current_source_head_note": "Current source head is authoritative in PR #89 metadata and the separate pending-main sync record; any change to this file changes the branch head.",
+  "gap_ledger": {
+    "id": "RG-046",
+    "path": "RESEARCH_GAPS.md",
+    "status": "APPENDED_ON_SOURCE_BRANCH_PENDING_PR_REVIEW_NOT_ON_CANONICAL_MAIN",
+    "history_preserved": true,
+    "append_method": "Fetched full canonical file and appended the dated gap without truncating prior content."
+  }
+}
