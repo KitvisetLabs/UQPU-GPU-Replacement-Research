@@ -54,6 +54,11 @@ The eight permanent root directives, `docs/KANUSANAN_PONGPANNA_MODEL.md`, `STRAT
 
 This branch adds a standalone literature watch, gap artifact and integration contract. It does not edit the append-only `RESEARCH_GAPS.md`, `WORKLOG.md`, root discovery registry, README or cold-start manifest because multiple open PRs own pending suffixes. After exact-head CI and review, reconcile the stable `RG-043` and `INT-20261024-011` references into those canonical indexes without overwriting concurrent history.
 
+
+## Research handoff and CI status
+
+This artifact is a pending-main proposal based on canonical main SHA `c7b5958af58fad04a101ef5c6abf6a29293c867e`. The first cold-start handoff audit identified a governance failure, not a scientific failure: the commit message lacked the required `Research-Sync: pending-main` trailer. A follow-up commit restores the trailer and requests a fresh exact-head audit. The paper reproduction and matched-budget benchmark remain NOT EXECUTED.
+
 ## Next gate
 
 Hash and audit the cited public reproduction deposit, then run the frozen source-reproduction check. Only after it passes should the matched-budget UQPU benchmark execute. No paid QPU job is requested or authorized.
