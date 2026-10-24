@@ -10,7 +10,9 @@
 
 - `docs/literature_watch/2026-10-24-top-down-quantum-compiler-configuration.md` — source/date, novelty, limitations, lane relevance and falsifiable follow-up.
 - `research_lanes/A_quantum_programming_runtime/COMPILER_CONFIG_SELECTION_BENCHMARK_CONTRACT.md` — Lane-A matched-policy contract.
-- `integration/INT-20261024-014_TOP_DOWN_COMPILER_CONFIG.md` — A–H integration and invariant traceability.
+- `docs/literature_watch/2026-10-24-symmetry-oriented-vqa-testing.md` — distinct Oct 21 preprint accepted to QCE26, with limits and a falsifiable acceptance-testing follow-up.
+- `research_lanes/A_quantum_programming_runtime/VQA_SYMMETRY_ACCEPTANCE_CONTRACT.md` — symmetry health-check/false-positive contract for VQA outputs.
+- `integration/INT-20261024-014_TOP_DOWN_COMPILER_CONFIG.md` and `integration/INT-20261024-015_SYMMETRY_VQA_ACCEPTANCE.md` — separate A–H integration traces.
 - This note records the sync boundary.
 
 ## Validation and limits
