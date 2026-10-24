@@ -6,7 +6,7 @@
 **Canonical main base SHA:** 6af8ce896368ed993fe2b8278afa6082e1ecc916  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/89  
 **Source branch:** research/2026-10-25-fnd001-ergotropy-certification  
-**Source head SHA:** 61730de1dae12a123b446da198f784cd945ca4dd  
+**Source head SHA:** aee52da80207b5819537b724fa509ac087dc8b50  
 **Source author/agent:** GitHub connector commit under KitvisetLabs; autonomous research cycle  
 **Primary owner:** Lane F; priority lane A remains unchanged  
 **Evidence class:** LITERATURE_ONLY + proposed test protocol  
@@ -31,6 +31,7 @@ Additional source commits after the initial integration handoff:
 | 76547a919aaf2ed05e5d32cd340121e52127cf30 | Link the cross-lane integration handoff to the Lane F work item |
 | 114acd6b8424a343e6c77307b32e8eb15f56be55 | Add machine-readable FND-001 integration contract and 36-pair A–I scan |
 | 61730de1dae12a123b446da198f784cd945ca4dd | Link the human integration handoff to the machine-readable contract |
+| aee52da80207b5819537b724fa509ac087dc8b50 | Clarify non-self-referential source-head and CI fields in the JSON contract |
 
 ## Method and assumptions
 
