@@ -35,7 +35,7 @@ The repository also carries specialist Lane I in its current manifest. It remain
 - **FND-003:** no matched control/quantum-speed-limit experiment.
 - **FND-004 / FND-005:** no new physical primitive or particle/QFT mechanism.
 - **FND-006:** improves the integrity of a mathematics-first discovery gate.
-- **EQN-001:** fresh literature surveillance completed; no additional material primary result beyond the current main watch and pending branches.
+- **EQN-001:** the initial scan matched the current main watch and pending branches; a subsequent expanded scan found arXiv:2610.29170 on joint target/compiler configuration selection, recorded separately in pending PR #62. This is a literature-only delta and not a new equation or physical-law claim.
 - **EQN-002:** protects held-out error accounting from NaN/infinity.
 - **EQN-003:** no new generator or physical constraints; current constraints remain binding.
 - **EQN-004:** invalid metrics cannot appear to pass the falsification gate.
