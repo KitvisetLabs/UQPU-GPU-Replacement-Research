@@ -771,5 +771,43 @@
       "status": "PROPOSED",
       "next_gate": "QOS-QSVT-FEAS-001 then workload-derived scalable oracle/resource ledger."
     }
+  ],
+  "literature_deltas": [
+    {
+      "source": "Science 394(6820), 234-239; DOI 10.1126/science.aej2213; published 2026-10-08",
+      "status": "PEER_REVIEWED_METHOD",
+      "delta": "Lean-checked formal proof search at research-problem scale; proof validity is relative to formal statement and assumptions, not physical truth.",
+      "project_status": "Pending PR #82; literature-only."
+    },
+    {
+      "source": "Quantum 10, 2102; DOI 10.22331/q-2026-05-12-2102; published 2026-05-12",
+      "status": "PEER_REVIEWED_THEORY",
+      "delta": "Constructive decision/parameter method for specified multivariable QSP polynomial pairs.",
+      "project_status": "Pending PR #83; feasibility gate proposed, not implemented."
+    },
+    {
+      "source": "Phys. Rev. A 114, L030401; DOI 10.1103/321q-k5dh; published 2026-09-01",
+      "status": "PEER_REVIEWED_THEORY",
+      "delta": "Unknown-channel QSVT has explicit oracle assumptions and dimension/error-dependent query bounds.",
+      "project_status": "Pending PR #83; do not mix with static-matrix Batch-056 resource counts."
+    },
+    {
+      "source": "Scientific Reports; DOI 10.1038/s41598-026-74491-7; published 2026-10-23",
+      "status": "PEER_REVIEWED_SURROGATE_INVERSE_DESIGN",
+      "delta": "Symbolic-regression descriptors feed a hardness surrogate and constrained alloy search; screened candidates are not UQPU or Pangola material evidence.",
+      "project_status": "Pending PR #76; MODEL_ONLY for UQPU transfer."
+    },
+    {
+      "source": "Energy & Fuels 40(16), 8910-8927; DOI 10.1021/acs.energyfuels.6c00722; published online 2026-04-08",
+      "status": "PEER_REVIEWED_EXTERNAL_EXPERIMENT",
+      "delta": "Straw updraft oil hydrotreating demonstrates process-sensitive miscibility but the upgraded oil still misses neat-fuel flashpoint/acid-number criteria; yield differs strongly by pyrolysis route.",
+      "project_status": "Pending PR #70; no Pangola or commercial-cost promotion."
+    },
+    {
+      "source": "Fusion Science and Technology; DOI 10.1080/15361055.2026.2726713; published online 2026-09-08",
+      "status": "PEER_REVIEWED_COST_MODEL_METHOD",
+      "delta": "Common Code-of-Accounts/ACCERT adaptation supports relative fusion cost sensitivities; magnets and breeding blankets are major drivers.",
+      "project_status": "Pending PR #72; MODEL_ONLY, no absolute net-electric cost evidence."
+    }
   ]
 }
