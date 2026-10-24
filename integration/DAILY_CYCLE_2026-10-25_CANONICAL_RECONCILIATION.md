@@ -24,6 +24,10 @@
 - Fresh targeted searches did not identify a directly relevant primary paper dated 2026-10-24 or 2026-10-25 that changes the project's physical, real-QPU, biomass, fusion or financing evidence. The relevant advances found are method/theory leads and are recorded as literature-only in the pending PRs, not promoted to project evidence.
 - Falsifiable next work: (1) freeze feasible/infeasible multivariable-QSP fixtures and theorem-scope checks; (2) keep unknown-channel query/dimension/error metrics separate from static-matrix results; (3) use pinned formal proof checking only for applicable mathematical obligations; (4) hold out contexts, search counterexamples, and count failed candidates and compute budgets.
 
+- Pending PR #76 also carries the 2026-10-23 Scientific Reports symbolic-regression inverse-design study for high-hardness multi-principal-element alloys. Its reported surrogate metrics and 22 screened compositions are a method lead, not fabricated/validated candidates; the study does not test Pangola carbon or any UQPU critical-material substitution.
+- Pending PR #70 records a useful negative fuel-acceptance result: wheat-straw updraft-pyrolysis oil became miscible with ultralow-sulfur fuel oil only under high hydrogen availability and sufficient mixing/reaction time, yet the upgraded oil still missed ISO 8217 flashpoint and total-acid-number limits as a neat fuel. Reported oil yield was about 6 wt% of dry straw for that updraft route versus 18 wt% for the fast-pyrolysis comparison. Treat this as feedstock/process-specific external evidence, not a Pangola result or proof of low-cost saleable fuel.
+- Pending PR #72 records a peer-reviewed fusion cost-account framework adapted from fission tools. Its comparative sensitivities identify magnets and breeding blankets as important cost drivers across the studied concepts, but the analysis focuses on relative sensitivities rather than absolute costs across differently scaled designs; it does not establish cheap, reliable net delivered fusion electricity.
+
 ## 3. A–H lane status
 
 | Lane | Current status at canonical main | Cross-lane interface / next gate |
