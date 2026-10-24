@@ -54,7 +54,7 @@ The paper's two-SDP certificate and finite-shot confidence construction are a li
 
 ## CI, blockers and next action
 
-- Source PR #89: exact-head hosted CI has not yet been verified in this record. Run 40137378018 was queued for the prior source head; the latest RG-046 commit changes the head and requires checking the new run. The latest-main status endpoint returned no checks for base SHA 6af8ce896368ed993fe2b8278afa6082e1ecc916; an older successful cold-start result on c7b5958af58fad04a101ef5c6abf6a29293c867e must not be presented as current-head green.
+- Source PR #89: exact-head hosted CI has not yet completed. The latest observed run, 40137456733, was queued on source head ecdaad1f9134f87fb9f3f73881aaebcc2d42dd09; its conclusion is pending. The latest-main status endpoint returned no checks for base SHA 6af8ce896368ed993fe2b8278afa6082e1ecc916; an older successful cold-start result on c7b5958af58fad04a101ef5c6abf6a29293c867e must not be presented as current-head green.
 - No paid QPU job, provider credential use, purchase, fabrication action, material/fuel/fusion experiment or funding action was performed or authorized.
 - Review PR #89, inspect exact-head cold-start and relevant documentation checks, then merge only through normal repository review/branch protections. If merged, record source-SHA-to-main-SHA mapping and rerun the cold-start audit. If blocked, keep this pending record and update the blocker rather than claiming synchronization.
 
