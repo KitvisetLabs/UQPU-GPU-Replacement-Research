@@ -223,3 +223,193 @@ def interest_savings_from_lower_principal(
         reduced, annual_rate, years, payments_per_year=payments_per_year
     )
     return before - after
+
+
+
+@dataclass(frozen=True)
+class BioOilDetailedCostInputs:
+    """Component-resolved cost inputs for accepted biomass-derived liquid.
+
+    All currency units must match. Per-dry-tonne costs are divided by final
+    saleable yield; per-saleable-litre costs are already normalized to accepted
+    product. working_capital_carry_cost_per_saleable_liter is an explicit
+    carrying-cost input, not a financing-rate estimate. Record principal and
+    lock-up duration separately under FIN-001.
+
+    coproduct_credit_per_dry_t must be quality-qualified, net of its own
+    handling/sale costs, and assigned to exactly one product ledger. This
+    detailed API is separate from BioOilCostInputs: do not combine its
+    aggregate variable-cost field with these component totals.
+    """
+
+    dry_feedstock_t_per_year: float
+    saleable_liters_per_dry_t: float
+    lower_heating_value_mj_per_liter: float
+    feedstock_cost_per_dry_t: float
+    collection_transport_cost_per_dry_t: float
+    preprocessing_cost_per_dry_t: float
+    capex: float
+    fixed_om_per_year: float
+    conversion_cost_per_saleable_liter: float
+    upgrading_cost_per_saleable_liter: float
+    hydrogen_cost_per_saleable_liter: float
+    catalyst_cost_per_saleable_liter: float
+    utilities_cost_per_saleable_liter: float
+    logistics_cost_per_saleable_liter: float
+    compliance_storage_cost_per_saleable_liter: float
+    working_capital_carry_cost_per_saleable_liter: float
+    coproduct_credit_per_dry_t: float
+    annual_discount_rate: float
+    plant_life_years: float
+
+
+@dataclass(frozen=True)
+class BioOilDetailedCostBreakdown:
+    """Transparent modeled costs per accepted litre and per GJ of LHV."""
+
+    annual_saleable_liters: float
+    annualized_capex_per_liter: float
+    feedstock_per_liter: float
+    collection_transport_per_liter: float
+    preprocessing_per_liter: float
+    fixed_om_per_liter: float
+    conversion_per_liter: float
+    upgrading_per_liter: float
+    hydrogen_per_liter: float
+    catalyst_per_liter: float
+    utilities_per_liter: float
+    logistics_per_liter: float
+    compliance_storage_per_liter: float
+    working_capital_carry_per_liter: float
+    gross_cost_per_liter: float
+    coproduct_credit_per_liter: float
+    net_cost_per_liter: float
+    gross_cost_per_gj: float
+    net_cost_per_gj: float
+
+
+def bio_oil_detailed_cost_breakdown(
+    inputs: BioOilDetailedCostInputs,
+) -> BioOilDetailedCostBreakdown:
+    """Return a component-resolved, MODEL_ONLY cost ledger.
+
+    saleable_liters_per_dry_t is final accepted liquid after required
+    stabilization/upgrading, not crude condensate. A negative net cost is
+    mathematically possible only when credited coproduct revenue exceeds gross
+    cost; it is not evidence that the liquid's energy is physically free. The
+    gross cost and credit remain separately visible for audit.
+    """
+
+    feedstock_t = _require_positive(
+        "dry_feedstock_t_per_year", inputs.dry_feedstock_t_per_year
+    )
+    yield_lpt = _require_positive(
+        "saleable_liters_per_dry_t", inputs.saleable_liters_per_dry_t
+    )
+    lhv = _require_positive(
+        "lower_heating_value_mj_per_liter",
+        inputs.lower_heating_value_mj_per_liter,
+    )
+
+    feedstock = _require_nonnegative(
+        "feedstock_cost_per_dry_t", inputs.feedstock_cost_per_dry_t
+    )
+    collection = _require_nonnegative(
+        "collection_transport_cost_per_dry_t",
+        inputs.collection_transport_cost_per_dry_t,
+    )
+    preprocessing = _require_nonnegative(
+        "preprocessing_cost_per_dry_t", inputs.preprocessing_cost_per_dry_t
+    )
+    capex = _require_nonnegative("capex", inputs.capex)
+    fixed_om = _require_nonnegative("fixed_om_per_year", inputs.fixed_om_per_year)
+
+    conversion = _require_nonnegative(
+        "conversion_cost_per_saleable_liter",
+        inputs.conversion_cost_per_saleable_liter,
+    )
+    upgrading = _require_nonnegative(
+        "upgrading_cost_per_saleable_liter",
+        inputs.upgrading_cost_per_saleable_liter,
+    )
+    hydrogen = _require_nonnegative(
+        "hydrogen_cost_per_saleable_liter", inputs.hydrogen_cost_per_saleable_liter
+    )
+    catalyst = _require_nonnegative(
+        "catalyst_cost_per_saleable_liter", inputs.catalyst_cost_per_saleable_liter
+    )
+    utilities = _require_nonnegative(
+        "utilities_cost_per_saleable_liter",
+        inputs.utilities_cost_per_saleable_liter,
+    )
+    logistics = _require_nonnegative(
+        "logistics_cost_per_saleable_liter",
+        inputs.logistics_cost_per_saleable_liter,
+    )
+    compliance_storage = _require_nonnegative(
+        "compliance_storage_cost_per_saleable_liter",
+        inputs.compliance_storage_cost_per_saleable_liter,
+    )
+    working_capital = _require_nonnegative(
+        "working_capital_carry_cost_per_saleable_liter",
+        inputs.working_capital_carry_cost_per_saleable_liter,
+    )
+    coproduct_credit = _require_nonnegative(
+        "coproduct_credit_per_dry_t", inputs.coproduct_credit_per_dry_t
+    )
+
+    annual_output_l = feedstock_t * yield_lpt
+    annualized_capex_per_liter = (
+        capex
+        * capital_recovery_factor(
+            inputs.annual_discount_rate, inputs.plant_life_years
+        )
+        / annual_output_l
+    )
+    feedstock_per_liter = feedstock / yield_lpt
+    collection_per_liter = collection / yield_lpt
+    preprocessing_per_liter = preprocessing / yield_lpt
+    fixed_om_per_liter = fixed_om / annual_output_l
+    coproduct_credit_per_liter = coproduct_credit / yield_lpt
+
+    gross_cost = sum(
+        (
+            annualized_capex_per_liter,
+            feedstock_per_liter,
+            collection_per_liter,
+            preprocessing_per_liter,
+            fixed_om_per_liter,
+            conversion,
+            upgrading,
+            hydrogen,
+            catalyst,
+            utilities,
+            logistics,
+            compliance_storage,
+            working_capital,
+        )
+    )
+    net_cost = gross_cost - coproduct_credit_per_liter
+    per_gj = 1000.0 / lhv
+
+    return BioOilDetailedCostBreakdown(
+        annual_saleable_liters=annual_output_l,
+        annualized_capex_per_liter=annualized_capex_per_liter,
+        feedstock_per_liter=feedstock_per_liter,
+        collection_transport_per_liter=collection_per_liter,
+        preprocessing_per_liter=preprocessing_per_liter,
+        fixed_om_per_liter=fixed_om_per_liter,
+        conversion_per_liter=conversion,
+        upgrading_per_liter=upgrading,
+        hydrogen_per_liter=hydrogen,
+        catalyst_per_liter=catalyst,
+        utilities_per_liter=utilities,
+        logistics_per_liter=logistics,
+        compliance_storage_per_liter=compliance_storage,
+        working_capital_carry_per_liter=working_capital,
+        gross_cost_per_liter=gross_cost,
+        coproduct_credit_per_liter=coproduct_credit_per_liter,
+        net_cost_per_liter=net_cost,
+        gross_cost_per_gj=gross_cost * per_gj,
+        net_cost_per_gj=net_cost * per_gj,
+    )
