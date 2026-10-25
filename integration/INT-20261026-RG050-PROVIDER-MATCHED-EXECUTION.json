@@ -29,7 +29,7 @@
     "passed": 14,
     "failed": 0,
     "evidence_class": "SOFTWARE_TESTS_ONLY",
-    "exact_head_github_ci": "PENDING"
+    "exact_head_github_ci": "PENDING; final source head queued at latest check. Previous head passed Python 3.10/3.11/3.12 unit jobs; extended QSVT jobs were still queued/in progress."
   },
   "current_main_ci_observation": {
     "combined_status_entries": 0,
@@ -232,9 +232,9 @@
     "The main append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial connector excerpts; RG-050 is recorded as a dedicated gap artifact.",
     "Current main combined-status and commit-workflow endpoints returned no entries for the latest main SHA; exact latest main Actions state could not be independently verified from those endpoints.",
     "A separate pending-main sync PR is required by integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md.",
-    "Provider-watch article was added after the initial PR head; pending-main summary must be refreshed to the final source SHA and updated changed-file count."
+    "Pending-main summary is a separately reviewed discoverability record; source-SHA mapping is maintained there, and exact-head CI remains pending."
   ],
   "no_paid_qpu_submission": true,
   "no_external_physical_experiment": true,
-  "next_highest_value_gate": "Obtain exact-head CI for this branch; then run a no-submit Qiskit 2.5.2/2.6 QPY round-trip and logical-semantics test. After review, any live provider pilot still requires explicit consent, credentials and a bounded budget."
+  "next_highest_value_gate": "Obtain exact-head CI for the final source head; then run a no-submit Qiskit 2.5.2/2.6 QPY round-trip and logical-semantics test. After review, any live provider pilot still requires explicit consent, credentials and a bounded budget."
 }
