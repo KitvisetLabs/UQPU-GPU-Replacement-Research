@@ -1,6 +1,10 @@
 import unittest
 
-from uqpu.equation_discovery import EquationHypothesis, required_discovery_fields
+from uqpu.equation_discovery import (
+    EquationHypothesis,
+    required_discovery_fields,
+    select_bic_candidate_count,
+)
 
 
 class EquationDiscoveryTests(unittest.TestCase):
@@ -72,6 +76,41 @@ class EquationDiscoveryTests(unittest.TestCase):
             "independent_validation_plan",
         ):
             self.assertIn(name, fields)
+
+
+    def test_bic_prefers_one_candidate_when_extra_fit_is_too_small(self):
+        result = select_bic_candidate_count(
+            residual_sums_squares={1: 100.0, 2: 95.0},
+            parameter_counts={1: 2, 2: 4},
+            sample_count=100,
+        )
+        self.assertEqual(result.selected_count, 1)
+        self.assertLess(result.scores[0][1], result.scores[1][1])
+
+    def test_bic_selects_two_candidate_models_for_large_fit_improvement(self):
+        result = select_bic_candidate_count(
+            residual_sums_squares={1: 100.0, 2: 30.0},
+            parameter_counts={1: 2, 2: 4},
+            sample_count=100,
+        )
+        self.assertEqual(result.selected_count, 2)
+        self.assertEqual(tuple(count for count, _ in result.scores), (1, 2))
+
+    def test_bic_rejects_mismatched_counts_and_nonpositive_rss(self):
+        with self.assertRaises(ValueError):
+            select_bic_candidate_count({1: 10.0}, {2: 1}, sample_count=20)
+        with self.assertRaises(ValueError):
+            select_bic_candidate_count({1: 0.0}, {1: 1}, sample_count=20)
+        with self.assertRaises(ValueError):
+            select_bic_candidate_count({1: float("nan")}, {1: 1}, sample_count=20)
+
+    def test_bic_rejects_invalid_sample_and_parameter_contracts(self):
+        for sample_count in (True, 1, 10.0):
+            with self.subTest(sample_count=sample_count):
+                with self.assertRaises(ValueError):
+                    select_bic_candidate_count({1: 10.0}, {1: 1}, sample_count=sample_count)
+        with self.assertRaises(ValueError):
+            select_bic_candidate_count({1: 10.0}, {1: 10}, sample_count=10)
 
 
 if __name__ == "__main__":

@@ -12,6 +12,34 @@ def _single_signal_pair(phi0, phi1):
             {(1,): q_lead, (-1,): -q_lead})
 
 
+def _published_nonconstructible_pair():
+    # Ito et al., arXiv:2410.02332v3, Sec. 4, Eqs. (16)-(17).
+    # c = (6/25)*sqrt(37/493). The pair is not constructible by M-QSP.
+    c = (6.0 / 25.0) * math.sqrt(37.0 / 493.0)
+    p = {
+        (2, 2): c,
+        (-2, -2): c,
+        (0, 2): -c * complex(122 / 37, 8 / 37),
+        (0, -2): -c * complex(122 / 37, 8 / 37),
+        (-2, 2): c * complex(114 / 37, 56 / 37),
+        (2, -2): c * complex(114 / 37, 56 / 37),
+        (2, 0): c * complex(362 / 111, -248 / 111),
+        (-2, 0): c * complex(362 / 111, -248 / 111),
+        (0, 0): c * complex(692 / 111, -719 / 222),
+    }
+    q = {
+        (2, 2): c,
+        (-2, -2): -c,
+        (0, 2): -c * complex(122 / 37, 66 / 37),
+        (0, -2): c * complex(122 / 37, 66 / 37),
+        (-2, 2): c * complex(56 / 37, 114 / 37),
+        (2, -2): -c * complex(56 / 37, 114 / 37),
+        (2, 0): c * complex(362 / 111, -418 / 111),
+        (-2, 0): -c * complex(362 / 111, -418 / 111),
+    }
+    return p, q
+
+
 def _poly_add_scaled(*terms):
     result = {}
     for poly, scale in terms:
@@ -114,6 +142,30 @@ class MQSPConstructivityDecisionTests(unittest.TestCase):
             mqsp_constructivity_decision({(0,): complex(float("inf"), 0)}, {}, 1, 0)
         with self.assertRaises(ValueError):
             mqsp_constructivity_decision({}, {}, 1, 0, tolerance=0)
+
+
+    def test_published_nonconstructible_pair_rejected_across_tolerances(self):
+        p, q = _published_nonconstructible_pair()
+        for tolerance in (1e-12, 1e-9, 1e-6):
+            with self.subTest(tolerance=tolerance):
+                result = mqsp_constructivity_decision(
+                    p, q, variable_count=2, n_steps=4, tolerance=tolerance
+                )
+                self.assertFalse(result.candidate_feasible, result.reason)
+                self.assertEqual(result.signal_indices, ())
+                self.assertEqual(result.phase_angles, ())
+
+    def test_feasible_one_signal_pair_reconstructs_across_tolerances(self):
+        for tolerance in (1e-12, 1e-9, 1e-6):
+            with self.subTest(tolerance=tolerance):
+                p, q = _single_signal_pair(0.2, -0.4)
+                result = mqsp_constructivity_decision(
+                    p, q, variable_count=1, n_steps=1, tolerance=tolerance
+                )
+                self.assertTrue(result.candidate_feasible, result.reason)
+                reconstructed_p, reconstructed_q = _single_signal_pair(*result.phase_angles)
+                _assert_polynomials_close(self, p, reconstructed_p, tolerance=1e-8)
+                _assert_polynomials_close(self, q, reconstructed_q, tolerance=1e-8)
 
 
 if __name__ == "__main__":

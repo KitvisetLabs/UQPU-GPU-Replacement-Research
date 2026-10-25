@@ -8,6 +8,8 @@ considered testable within the UQPU foundational-research program.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from collections.abc import Mapping
+import math
 from typing import Iterable
 
 
@@ -132,3 +134,78 @@ def required_discovery_fields() -> tuple[str, ...]:
 def missing_required_text(items: Iterable[str]) -> bool:
     """Small helper used by research ingestion tools."""
     return any(not str(item).strip() for item in items)
+
+
+
+@dataclass(frozen=True)
+class BICModelCountSelection:
+    """BIC comparison over candidate model counts; not a claim about physical mechanisms.
+
+    Scores use the standard Gaussian-residual expression
+    n*log(RSS/n) + p*log(n). All candidates must use the same in-sample
+    observations and compatible residual definitions. A lower score is preferred.
+    """
+    selected_count: int
+    scores: tuple[tuple[int, float], ...]
+
+
+def select_bic_candidate_count(
+    residual_sums_squares: Mapping[int, float],
+    parameter_counts: Mapping[int, int],
+    sample_count: int,
+) -> BICModelCountSelection:
+    """Select the candidate count with minimum Gaussian BIC.
+
+    This is a generic statistical baseline for equation-discovery experiments,
+    not a reproduction of the Physical Law Ecology paper's bespoke score and
+    not proof that a selected count equals nature's true mechanism count.
+    RSS values must be in-sample sums of squared residuals over the same
+    observations; do not mix training and held-out residuals.
+    """
+    if (
+        not isinstance(sample_count, int)
+        or isinstance(sample_count, bool)
+        or sample_count <= 1
+    ):
+        raise ValueError("sample_count must be an integer greater than one")
+    if not isinstance(residual_sums_squares, Mapping) or not residual_sums_squares:
+        raise ValueError("residual_sums_squares must be a nonempty mapping")
+    if not isinstance(parameter_counts, Mapping):
+        raise ValueError("parameter_counts must be a mapping")
+
+    candidate_counts = set(residual_sums_squares)
+    if candidate_counts != set(parameter_counts):
+        raise ValueError("residual and parameter mappings must have identical candidate counts")
+    if any(
+        not isinstance(count, int) or isinstance(count, bool) or count <= 0
+        for count in candidate_counts
+    ):
+        raise ValueError("candidate counts must be positive integers")
+
+    scored: list[tuple[int, float]] = []
+    for count in sorted(candidate_counts):
+        raw_rss = residual_sums_squares[count]
+        if isinstance(raw_rss, bool):
+            raise ValueError("residual sums of squares must be finite positive numbers")
+        try:
+            rss = float(raw_rss)
+        except (TypeError, ValueError) as exc:
+            raise ValueError("residual sums of squares must be finite positive numbers") from exc
+        if not math.isfinite(rss) or rss <= 0:
+            raise ValueError("residual sums of squares must be finite and positive")
+
+        parameters = parameter_counts[count]
+        if (
+            not isinstance(parameters, int)
+            or isinstance(parameters, bool)
+            or parameters < 0
+        ):
+            raise ValueError("parameter counts must be nonnegative integers")
+        if parameters >= sample_count:
+            raise ValueError("sample_count must exceed every candidate's free-parameter count")
+
+        score = sample_count * math.log(rss / sample_count) + parameters * math.log(sample_count)
+        scored.append((count, score))
+
+    selected_count = min(scored, key=lambda item: (item[1], item[0]))[0]
+    return BICModelCountSelection(selected_count=selected_count, scores=tuple(scored))

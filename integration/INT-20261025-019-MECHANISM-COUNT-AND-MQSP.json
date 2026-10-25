@@ -1,0 +1,83 @@
+{
+  "schema": "uqpu-mechanism-count-mqsp-integration-v1",
+  "integration_id": "INT-20261025-019",
+  "date": "2026-10-25",
+  "starting_main_sha": "dbf85770baf6ec71689eda3e8b2eeaaa716705df",
+  "primary_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "cross_cutting_owners": [
+    "FND-006",
+    "EQN-001_to_EQN-006",
+    "F_economics_benchmarks_evidence"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "status_at_creation": "CODE_AND_TESTS_COMMITTED_CI_PENDING",
+  "starting_head_ci": {
+    "prototype_workflow_run": 40165065031,
+    "prototype_workflow_conclusion": "success",
+    "cold_start_audit_run": 40165064989,
+    "cold_start_audit_conclusion": "success",
+    "python_matrix": [
+      "3.10:success",
+      "3.11:success",
+      "3.12:success"
+    ],
+    "qsp_qsvt_reference_target_checks": "success"
+  },
+  "artifacts": {
+    "batch": "docs/BATCH_063_MECHANISM_COUNT_AND_MQSP_NEGATIVE_FIXTURE.md",
+    "gap": "docs/RESEARCH_GAP_RG039_MECHANISM_COUNT_CALIBRATION.md",
+    "literature_physical_law_ecology": "docs/literature_watch/2026-10-25-physical-law-ecology-mechanism-count.md",
+    "literature_trajectoryflownet": "docs/literature_watch/2026-10-25-trajectoryflownet-lagrangian-eulerian.md",
+    "equation_discovery_module": "software/uqpu-prototype/uqpu/equation_discovery.py",
+    "equation_discovery_tests": "software/uqpu-prototype/tests/test_equation_discovery.py",
+    "mqsp_tests": "software/uqpu-prototype/tests/test_mqsp_constructivity.py",
+    "mqsp_fixture": "benchmarks/results/mqsp-published-counterexample-fixture-2026-10-25.json"
+  },
+  "code_delta": {
+    "bic_helper": "select_bic_candidate_count",
+    "bic_formula": "n*log(RSS/n)+p*log(n)",
+    "bic_assumption": "same in-sample observations and compatible residual definitions; Gaussian residual baseline",
+    "mqsp_fixture_source": "Ito et al., arXiv:2410.02332v3, Section 4, Eqs. (16)-(17)",
+    "mqsp_tolerances": [
+      1e-12,
+      1e-9,
+      0.000001
+    ],
+    "local_execution": "not available in the isolated connector runtime; new-head Actions is authoritative"
+  },
+  "evidence_class": [
+    "SOFTWARE_REGRESSION_TESTS",
+    "STATISTICAL_MODEL_SELECTION_HELPER",
+    "LITERATURE_ONLY"
+  ],
+  "project_evidence_promoted": false,
+  "lanes": {
+    "A": "Published M-QSP negative fixture plus feasible/infeasible tolerance sweeps; independent implementation remains open.",
+    "B": "No provider change or job submission.",
+    "C": "Trajectory/field reconstruction literature reviewed; no project data or memory/energy measurement.",
+    "D": "No device or fabrication result.",
+    "E": "BIO-001/FUS-001 remain unclosed; no accepted fuel/material/net-electricity result.",
+    "F": "Generic BIC comparator, model-count calibration gap RG-039 and evidence boundaries added.",
+    "G": "No manufacturing equipment or yield evidence.",
+    "H": "Batch 063 and two dated literature watches published; multilingual strategic references retained."
+  },
+  "invariant_evaluation": {
+    "INV-029": "no physical-compression/service/energy/lifecycle-cost closure",
+    "INV-030": "no Pangola-carbon functional substitution evidence",
+    "INV-031": "no accepted bio-oil/fuel economics",
+    "INV-032": "no reliable net delivered fusion electricity",
+    "INV-033": "no measured principal/interest/WACC change",
+    "INV-034": "mathematics-first model-count and counterexample gates strengthened; no new physical result",
+    "INV-035": "hypothesis, statistical fit, proof, physical validation and technology promotion remain separate"
+  },
+  "sync_debt": [
+    "Large append-only WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial reads.",
+    "New dated batch and gap artifacts preserve this cycle's record without risking canonical-history truncation."
+  ],
+  "next_gates": [
+    "Independent M-QSP implementation and exact/algebraic cross-check.",
+    "Boundary perturbation sweep for the published nonconstructible pair.",
+    "Known-truth K=1/2/3 model-count calibration with blocked holdouts and false-positive reporting.",
+    "Independent reproduction of Physical Law Ecology public examples."
+  ]
+}

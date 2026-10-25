@@ -1,0 +1,61 @@
+{
+  "schema": "uqpu-mqsp-published-nonconstructible-fixture-v1",
+  "date": "2026-10-25",
+  "evidence_class": "PREREGISTERED_NUMERICAL_REGRESSION_FIXTURE",
+  "source": {
+    "title": "Polynomial time constructive decision algorithm for multivariable quantum signal processing",
+    "authors": [
+      "Yuki Ito",
+      "Hitomi Mori",
+      "Kazuki Sakamoto",
+      "Keisuke Fujii"
+    ],
+    "venue": "Quantum 10, 2102 (2026)",
+    "arxiv": "2410.02332v3",
+    "section": "4",
+    "equations": [
+      "16",
+      "17"
+    ],
+    "url": "https://arxiv.org/html/2410.02332v3"
+  },
+  "definition": {
+    "scale": "(6/25)*sqrt(37/493)",
+    "variable_count": 2,
+    "n_steps": 4,
+    "p_terms": {
+      "(2,2)": "c",
+      "(-2,-2)": "c",
+      "(0,2)": "-c*(122/37 + 8i/37)",
+      "(0,-2)": "-c*(122/37 + 8i/37)",
+      "(-2,2)": "c*(114/37 + 56i/37)",
+      "(2,-2)": "c*(114/37 + 56i/37)",
+      "(2,0)": "c*(362/111 - 248i/111)",
+      "(-2,0)": "c*(362/111 - 248i/111)",
+      "(0,0)": "c*(692/111 - 719i/222)"
+    },
+    "q_terms": {
+      "(2,2)": "c",
+      "(-2,-2)": "-c",
+      "(0,2)": "-c*(122/37 + 66i/37)",
+      "(0,-2)": "c*(122/37 + 66i/37)",
+      "(-2,2)": "c*(56/37 + 114i/37)",
+      "(2,-2)": "-c*(56/37 + 114i/37)",
+      "(2,0)": "c*(362/111 - 418i/111)",
+      "(-2,0)": "-c*(362/111 - 418i/111)"
+    }
+  },
+  "expected_classification": "candidate_feasible=false",
+  "tolerance_sweep": [
+    1e-12,
+    1e-9,
+    0.000001
+  ],
+  "rationale": "The published source reports that the pair is not constructible by M-QSP; its degree sum is four, and the source applies M-QSP-CDA at four steps to reject it.",
+  "observed_classification": "to_be_recorded_from_new_head_ci",
+  "limitations": [
+    "This fixture records the source's expected result; it is not itself an independent theorem proof.",
+    "The project implementation uses floating-point complex arithmetic, so numerical tolerance sensitivity remains under test.",
+    "No provider lowering, real-QPU execution, physical-law claim, energy result or economic advantage follows."
+  ]
+}
