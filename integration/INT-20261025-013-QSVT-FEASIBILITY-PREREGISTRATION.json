@@ -1,0 +1,92 @@
+{
+  "schema": "uqpu-qsvt-feasibility-preregistration-v1",
+  "integration_id": "INT-20261025-013",
+  "work_id": "QOS-QSVT-FEAS-001",
+  "date": "2026-10-25",
+  "primary_owner_lane": "A",
+  "integration_owner_lane": "F",
+  "publication_owner_lane": "H",
+  "canonical_start_main_sha": "6af8ce896368ed993fe2b8278afa6082e1ecc916",
+  "implementation_commit": "dbe2e656f9f47fb763f173c5eb17375225e05145",
+  "status": "PREREGISTRATION_CONTRACT_IMPLEMENTED_ALGORITHM_PENDING",
+  "evidence_class": "SOFTWARE_CONTRACT_TESTS + LITERATURE_ONLY",
+  "artifacts": [
+    "software/uqpu-prototype/uqpu/qos_qsvt_feasibility_contract.py",
+    "software/uqpu-prototype/tests/test_qos_qsvt_feasibility_contract.py",
+    "docs/literature_watch/2026-10-25-qsp-qsvt-feasibility-boundaries.md",
+    "docs/literature_watch/2026-10-25-uncertainty-calibrated-experiment-selection-and-constraint-aware-equation-discovery.md",
+    "docs/BATCH_057_QOS_QSVT_FEASIBILITY_CONTRACT_AND_EQN_EXPERIMENT_SELECTION.md"
+  ],
+  "implementation_boundary": {
+    "implemented": [
+      "fixture class, scope, specification and SHA-256 provenance validation",
+      "univariate/multivariate QSP metadata distinction",
+      "unknown-channel dimension, delta, diamond-norm, oracle-access and query-bound-reference requirements",
+      "fail-closed TOOL_BLOCKED handling for solver/tool exceptions",
+      "theorem-labelled records require independent audit"
+    ],
+    "not_implemented": [
+      "published multivariate QSP constructive decision algorithm",
+      "independently sourced feasible/infeasible fixture corpus",
+      "independent adversary-bound cross-check",
+      "provider-neutral lowering or target-specific accepted-workload execution"
+    ]
+  },
+  "ci_observation": {
+    "first_commit": "80d9381079d213e4d1bfe43c1e78436230c0ea7f",
+    "first_test_run_id": 40145226103,
+    "first_test_run_conclusion": "failure",
+    "failure_cause": "Two test cases initially omitted validate() on constructed invalid fixtures; the test helper calls were corrected.",
+    "repair_commit": "dbe2e656f9f47fb763f173c5eb17375225e05145",
+    "repair_test_run_id": 40145313014,
+    "python_matrix": {"3.10": "success", "3.11": "success", "3.12": "success"},
+    "extended_jobs_at_snapshot": "in_progress",
+    "cold_start_handoff_run_id": 40145313029,
+    "cold_start_handoff_conclusion": "success"
+  },
+  "cross_lane_status": {
+    "A": "metadata contract/tests added; theorem algorithm pending",
+    "B": "provider-neutral path retained; no target jobs or credentials used",
+    "C": "readable output and classical memory/state/I/O equivalence remain unproven",
+    "D": "no device/process result; D/G co-design remains required",
+    "E": "BIO-001/FUS-001 remain evidence gaps; no commercial fuel or net-electricity result",
+    "F": "no measured accepted-task cost, plant TEA, interest saving or WACC change",
+    "G": "no manufacturing/factory result",
+    "H": "dated literature watch and Batch 057 published; multilingual strategic context preserved"
+  },
+  "foundational_status": {
+    "FND-001_to_FND-006": "retained; no new physical measurement or validated primitive",
+    "EQN-001_to_EQN-006": "retained; constraint filtering and false-discovery accounting only",
+    "invariants_preserved": ["INV-025", "INV-026", "INV-027", "INV-029", "INV-030", "INV-031", "INV-032", "INV-033", "INV-034", "INV-035"]
+  },
+  "non_claims": [
+    "No QSP/M-QSP theorem is implemented or independently proven by this metadata contract.",
+    "No real-QPU job, quantum advantage, classical memory replacement, or accepted useful-workload advantage.",
+    "No material substitution, Pangola fuel, fusion electricity, commercial cost, interest-rate/WACC, or Data-Center-to-One-Phone result.",
+    "No AI-generated equation is promoted to a physical law."
+  ],
+  "preservation": {
+    "root_directives_00_00A_01_through_06": "preserved",
+    "kanusanan_pongpananna_model": "preserved",
+    "strategic_plan_references": "preserved",
+    "public_master_plan_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
+    "large_append_only_worklog_rewritten": false,
+    "sync_debt": [
+      "WORKLOG.md cross-reference awaits a safe append-only update.",
+      "Verified-discovery index unchanged because this is LITERATURE_ONLY, not a verified new discovery."
+    ]
+  },
+  "next_gate": {
+    "id": "QOS-QSVT-FEAS-001",
+    "required": [
+      "implement the complete published M-QSP decision algorithm from its exact specification",
+      "freeze source and fixture hashes",
+      "add independently sourced feasible and infeasible fixtures",
+      "cross-check theorem scope against the adversary-bound formulation where valid",
+      "test deterministic replay and semantically irrelevant input reordering",
+      "retain Batch-056 as the univariate regression control",
+      "then lower to provider-neutral IR and record target-aware resources before any authorized hardware pilot"
+    ],
+    "paid_qpu_jobs_authorized": false
+  }
+}
