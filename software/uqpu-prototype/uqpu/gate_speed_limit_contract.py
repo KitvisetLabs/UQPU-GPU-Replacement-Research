@@ -68,9 +68,9 @@ class GateSpeedLimitRecord:
             if not isinstance(value, str) or not _SHA256.fullmatch(value):
                 raise ValueError(f"{name} must be a lowercase SHA-256 hex digest")
 
-        if self.target_kind not in _TARGET_KINDS:
+        if not isinstance(self.target_kind, str) or not self.target_kind.strip() or self.target_kind not in _TARGET_KINDS:
             raise ValueError(f"unsupported target_kind: {self.target_kind}")
-        if self.evidence_level not in _EVIDENCE_LEVELS:
+        if not isinstance(self.evidence_level, str) or not self.evidence_level.strip() or self.evidence_level not in _EVIDENCE_LEVELS:
             raise ValueError(f"unsupported evidence_level: {self.evidence_level}")
         if not isinstance(self.scope_checks, tuple) or not self.scope_checks:
             raise ValueError("scope_checks must be a nonempty tuple")
