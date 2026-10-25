@@ -147,6 +147,35 @@ class MultiOracleQueryContractTests(unittest.TestCase):
         self.assertFalse(decision.comparable)
         self.assertIn("polynomial_sha256", decision.reason)
 
+    def test_contracts_with_different_symbolic_bounds_are_incomparable(self):
+        decision = compare_query_contracts(
+            contract(),
+            contract(symbolic_query_bound="O(2D/sqrt(tau))"),
+        )
+        self.assertFalse(decision.comparable)
+        self.assertEqual(decision.status, "INCOMPARABLE")
+        self.assertIn("symbolic_query_bound", decision.reason)
+
+    def test_contracts_with_different_declared_degrees_are_incomparable(self):
+        left = contract(
+            oracle_model="ROW_BLOCK_ACCESS",
+            bound_class="EXACT_QUERY_COUNT",
+            symbolic_query_bound="D",
+            normalization_tau=None,
+            declared_degree=5,
+        )
+        right = contract(
+            oracle_model="ROW_BLOCK_ACCESS",
+            bound_class="EXACT_QUERY_COUNT",
+            symbolic_query_bound="D",
+            normalization_tau=None,
+            declared_degree=6,
+        )
+        decision = compare_query_contracts(left, right)
+        self.assertFalse(decision.comparable)
+        self.assertEqual(decision.status, "INCOMPARABLE")
+        self.assertIn("declared_degree", decision.reason)
+
     def test_matched_contracts_are_comparable_even_when_source_ids_differ(self):
         decision = compare_query_contracts(contract(), contract(source_id="independent-check"))
         self.assertTrue(decision.comparable)
