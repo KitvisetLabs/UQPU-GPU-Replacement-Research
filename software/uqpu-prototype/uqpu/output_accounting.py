@@ -58,7 +58,7 @@ class OutputInformationContract:
                 raise ValueError("side_information_description is required when side information is available")
         elif self.side_information_description is not None:
             raise ValueError("side_information_description requires side_information_available=True")
-        if self.encoding_mode not in _ENCODING_MODES:
+        if not isinstance(self.encoding_mode, str) or self.encoding_mode not in _ENCODING_MODES:
             raise ValueError(f"encoding_mode must be one of {sorted(_ENCODING_MODES)}")
 
         p = self.allowed_error_probability
