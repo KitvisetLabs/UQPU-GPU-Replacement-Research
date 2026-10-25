@@ -34,6 +34,10 @@ class WorkloadContract:
             raise ValueError("contract semantics and quality metric are required")
         if self.output_information is not None:
             self.output_information.validate()
+            if self.exactness_required != self.output_information.exactness_required:
+                raise ValueError(
+                    "workload exactness_required must match output_information.exactness_required"
+                )
 
 
 def first_verified_win_candidates() -> tuple[WorkloadContract, ...]:
