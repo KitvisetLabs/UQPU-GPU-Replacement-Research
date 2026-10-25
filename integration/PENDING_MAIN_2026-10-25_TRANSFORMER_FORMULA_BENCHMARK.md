@@ -25,7 +25,7 @@ The work responds to the official arXiv v1 preprint arXiv:2610.03947, submitted 
 
 - Local synthetic contract tests: 15/15 pass under Python 3.13.
 - Main starting SHA 70796ef8b918fe2e95382bc49cd7016a825db7e1: Prototype/Invariants workflow and Cold-Start Handoff Audit passed.
-- The earlier PR head fa8069ccde2ebcb794da7282d2b5c727728b258e passed the Python 3.10/3.11/3.12 matrix, while its extended QSP/QSVT workflows were still running. Updated PR head f7ff45e4bc0164c7a842d20ab1833096b4cc1a6e has fresh workflow runs in progress; no current-head matrix or full-workflow pass is claimed yet.
+- Updated PR head f7ff45e4bc0164c7a842d20ab1833096b4cc1a6e passed the Python 3.10/3.11/3.12 test matrix. Extended QSP/QSVT, reference-benchmark and Qiskit workflows remain in progress, so no full-workflow pass is claimed yet.
 - No model weights downloaded, external benchmark reproduced, paid QPU job submitted, physical experiment performed, fabrication/purchase/funding action authorized, or physical law promoted.
 
 ## A–H and invariant effects
