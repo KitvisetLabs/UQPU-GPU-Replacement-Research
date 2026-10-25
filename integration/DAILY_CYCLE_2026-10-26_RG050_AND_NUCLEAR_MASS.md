@@ -6,13 +6,13 @@
 **Primary execution lane:** A  
 **Primary integration owner:** F  
 **Publication owner:** H  
-**Cycle status:** research branch prepared; exact-head CI and main synchronization pending
+**Cycle status:** research PR #118 and pending-main summary PR #119 are open; neither is merged. Exact-head CI remains pending.
 
 ## 1. Canonical-state and governance audit
 
 The cycle started from the current default branch, not a remembered batch number. Read and reviewed: PROJECT_CHARTER.md, VERSION_INVARIANTS.md, GOALS.md, README.md, docs/RESEARCH_OPERATING_SYSTEM.md, docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md, docs/KANUSANAN_PONGPANNA_MODEL.md, STRATEGIC_PLAN_REFERENCES.md, the root 00/00A/01–06 mission directives plus the related 00B/00C/00E programs, AGENTS.md, the autonomous handoff principle, the continuous cross-lane integration protocol, the main-commit synchronization policy, the current parallel-PR collision audit, Batch 063, the late reconciliation, RG-036–RG-039, the current equation-discovery/fundamental-limit code, and relevant open-PR records.
 
-The newest merged main batch remains Batch 063. Newer work is pending on open branches, including competing Batch-064 labels, Batch 065–067, and several 2026-10-26 physics, equation-discovery, provider and accounting PRs. The late-reconciliation record documents reused integration ordinals; those branches must not be merged blindly. This cycle uses the stable work item RG-050 and a unique integration record ID rather than relying on a batch number.
+The newest merged main batch remains Batch 063. The active branch audit found three competing Batch-064 labels (PR #93 M-QSP/WEST reliability, PR #96 reversible-circuit co-design, and PR #98 transformer formula generalization), plus Batch 065 on PR #95 and Batch 066 on PR #97. No Batch-067 artifact was found in the current repository search; additional 2026-10-26 physics, equation-discovery, provider and accounting work uses separate work-item IDs. The late-reconciliation record documents reused integration ordinals; those branches must not be merged blindly. This cycle uses the stable work item RG-050 and a unique integration record ID rather than relying on a batch number.
 
 The eight high-visibility root directives remain present in canonical main. The Kanusanan Pongpanna Model and STRATEGIC_PLAN_REFERENCES.md remain present, including Thai, English, Chinese, Japanese, Korean and German public PDF/editable links and recorded strategic AI-agent/funding references. INV-025/026/027 and INV-029–035 remain explicit. INV-036/037 and the auxiliary Lane I project also remain in the current repository; Lane I is not allowed to replace or redefine A–H.
 
@@ -113,7 +113,7 @@ INV-025/026/027 remain preserved and unproven at their extreme targets. The 100�
 - **Local test result:** 14 passed / 0 failed in the isolated environment.
 - **Current main combined status:** connector returned zero status entries for the starting SHA.
 - **Current main commit-workflow endpoint:** returned zero workflow runs. The latest reconciliation's older main-head success is not sufficient to claim the newer main head passed. Exact current main CI remains unverified.
-- **Source-branch GitHub Actions:** must be checked on the exact PR head after PR creation; local tests do not substitute for CI.
+- **Source-branch GitHub Actions:** PR #118's latest exact-head workflow was queued at the last check; the earlier head's Python 3.10/3.11/3.12 matrix passed, while extended QSVT jobs were still queued/in progress. PR #119's pending-main summary workflow was also queued. Do not claim final-head CI passed until those runs complete.
 - **Sync policy:** all source commits use the pending-main trailer. The research branch is not canonical main until reviewed and merged. A separate pending-main sync PR is required to make the branch's research details discoverable on main without falsely claiming its code has merged.
 - **No live provider, QPU job, external physical experiment, purchase or funding action was performed.**
 
