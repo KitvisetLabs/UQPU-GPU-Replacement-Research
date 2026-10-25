@@ -105,6 +105,42 @@ class GateSpeedLimitContractTests(unittest.TestCase):
             with self.subTest(changes=changes), self.assertRaises(ValueError):
                 record(**changes).validate()
 
+    def test_compiler_schedule_must_match_gate_target_hamiltonian_and_calibration(self):
+        candidate = record()
+        candidate.assert_matches_schedule(
+            gate_name="test-unitary", target_id="synthetic-target-v1",
+            target_kind="SIMULATOR", unitary_sha256="c" * 64,
+            hamiltonian_model_sha256="d" * 64, calibration_sha256="e" * 64,
+        )
+        with self.assertRaisesRegex(ValueError, "unitary_sha256 mismatch"):
+            candidate.assert_matches_schedule(
+                gate_name="test-unitary", target_id="synthetic-target-v1",
+                target_kind="SIMULATOR", unitary_sha256="f" * 64,
+                hamiltonian_model_sha256="d" * 64, calibration_sha256="e" * 64,
+            )
+        with self.assertRaisesRegex(ValueError, "calibration_sha256 mismatch"):
+            candidate.assert_matches_schedule(
+                gate_name="test-unitary", target_id="synthetic-target-v1",
+                target_kind="SIMULATOR", unitary_sha256="c" * 64,
+                hamiltonian_model_sha256="d" * 64, calibration_sha256="f" * 64,
+            )
+
+    def test_simulator_qsl_record_cannot_be_reused_for_hardware_schedule(self):
+        with self.assertRaisesRegex(ValueError, "target_kind mismatch"):
+            record().assert_matches_schedule(
+                gate_name="test-unitary", target_id="synthetic-target-v1",
+                target_kind="HARDWARE_TARGET", unitary_sha256="c" * 64,
+                hamiltonian_model_sha256="d" * 64, calibration_sha256="e" * 64,
+            )
+
+    def test_empty_schedule_identity_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "schedule gate_name is required"):
+            record().assert_matches_schedule(
+                gate_name="", target_id="synthetic-target-v1",
+                target_kind="SIMULATOR", unitary_sha256="c" * 64,
+                hamiltonian_model_sha256="d" * 64, calibration_sha256="e" * 64,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
