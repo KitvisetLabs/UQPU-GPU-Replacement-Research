@@ -100,6 +100,11 @@ class GateSpeedLimitContractTests(unittest.TestCase):
         candidate = record()
         self.assertEqual(candidate.consistency_classification(), candidate.consistency_classification())
 
+    def test_nonstring_target_and_evidence_labels_fail_closed(self):
+        for changes in ({"target_kind": []}, {"evidence_level": []}, {"target_kind": ""}, {"evidence_level": ""}):
+            with self.subTest(changes=changes), self.assertRaises(ValueError):
+                record(**changes).validate()
+
 
 if __name__ == "__main__":
     unittest.main()
