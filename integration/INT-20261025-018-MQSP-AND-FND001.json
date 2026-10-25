@@ -25,8 +25,9 @@
     "memory_order_result": "benchmarks/results/fnd001-memory-order-cmi-synthetic-2026-10-25.json",
     "primary_batch": "docs/BATCH_062_MQSP_CONSTRUCTIVITY_AND_MEMORY_ORDER_DIAGNOSTIC.md",
     "literature_watch": "docs/literature_watch/2026-10-25-ai-generated-math-instruments-verification.md",
-    "lane_f_artifact": "research_lanes/F_economics_benchmark_evidence/FND_001_MEMORY_ORDER_DIAGNOSTIC_2026-10-25.md",
-    "open_gap": "docs/RESEARCH_GAP_RG038_MEMORY_ORDER_ENTROPY_INFERENCE_VALIDATION.md"
+    "lane_f_artifact": "research_lanes/F_economics_benchmarks_evidence_integration/FND_001_MEMORY_ORDER_DIAGNOSTIC_2026-10-25.md",
+    "open_gap": "docs/RESEARCH_GAP_RG038_MEMORY_ORDER_ENTROPY_INFERENCE_VALIDATION.md",
+    "formalization_faithfulness_watch": "docs/literature_watch/2026-10-25-navier-stokes-formalization-faithfulness-effective-theory.md"
   },
   "validation": {
     "local_mqsp_tests": {
@@ -100,6 +101,7 @@
   "next_gate": [
     "Add a theorem-derived nontrivial M-QSP infeasible fixture including the published counterexample; independently cross-check the recursion and sweep tolerances.",
     "Calibrate CMI finite-sample bias and uncertainty on frozen known-truth process families.",
-    "Only after the algorithm gate, proceed to provider-neutral lowering and same-target accepted-useful-task resource/cost accounting."
+    "Only after the algorithm gate, proceed to provider-neutral lowering and same-target accepted-useful-task resource/cost accounting.",
+    "EQN-AUTOFORMAL-002: freeze intended theorem and formal statement, audit semantic faithfulness and domain assumptions, and keep physical interpretation behind an independent experiment gate."
   ]
 }

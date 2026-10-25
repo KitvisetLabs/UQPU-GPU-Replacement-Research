@@ -50,7 +50,9 @@ The contrast validates only that this statistic separates these selected known-t
 
 A fresh search incorporated Ying Xie's arXiv preprint “What the Machine Invented” (arXiv:2610.17090, submitted 2026-10-12). It describes an instrument-level review of selected AI-generated mathematical manuscripts and explicitly notes provisional novelty judgments and that no Lean development was compiled or kernel-checked for that survey. The new literature watch records why instrument extraction, prior-art checks, formal statement faithfulness and kernel verification should be separate gates. It does not certify the underlying AI-generated claims.
 
-The peer-reviewed M-QSP-CDA paper remains the direct algorithm source. Related October M-QSP preprints already recorded in the repository are not treated as new project evidence. No new physical equation or credible mission-relevant anomaly was established this cycle.
+The peer-reviewed M-QSP-CDA paper remains the direct algorithm source. Related October M-QSP preprints already recorded in the repository are not treated as new project evidence.
+
+A second material method result was recorded in the new formalization-faithfulness watch: Bastounis, Circelli and Hansen (arXiv:2610.08144, submitted 2026-10-06) argue that the Lean formalization accompanying the September 8 Navier–Stokes announcement does not semantically match its natural-language proof; they do not claim the natural-language proof is false. A Communications Physics editorial published 2026-10-14 separately explains why a continuum singularity does not imply an observed infinite velocity in real fluid outside the continuum model's validity range. This is a verification/effective-theory boundary, not a new physical anomaly. No new physical equation or credible mission-relevant anomaly was established this cycle.
 
 ## A–H status
 
