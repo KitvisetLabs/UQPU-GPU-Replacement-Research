@@ -62,7 +62,6 @@ class OutputAccountingTests(unittest.TestCase):
         measurement = OutputMeasurement(
             measured_output_bytes_per_accepted_result=1,
             reconstruction_seconds_per_accepted_result=0.002,
-            side_information_bytes_per_accepted_result=2,
             measured_accepted_results_per_second=10,
             measured_error_probability=0.0,
         )
@@ -70,8 +69,8 @@ class OutputAccountingTests(unittest.TestCase):
         self.assertEqual(audit.fixed_width_label_floor_bits, 6)
         self.assertEqual(audit.fixed_width_label_status, "PASS")
         self.assertEqual(audit.error_budget_status, "PASS")
-        self.assertEqual(audit.measured_egress_bits_per_accepted_result, 24)
-        self.assertEqual(audit.measured_egress_bitrate_bps, 240.0)
+        self.assertEqual(audit.measured_egress_bits_per_accepted_result, 8)
+        self.assertEqual(audit.measured_egress_bitrate_bps, 80.0)
         self.assertAlmostEqual(audit.reconstruction_seconds_per_accepted_result, 0.002)
 
     def test_below_floor_is_flagged_not_silently_accepted(self):
@@ -87,15 +86,47 @@ class OutputAccountingTests(unittest.TestCase):
             OutputInformationContract(
                 distinguishable_outcomes=64,
                 side_information_available=True,
+                side_information_description="receiver has a shared immutable lookup table",
             ),
             OutputInformationContract(
                 distinguishable_outcomes=64,
                 encoding_mode="variable_length",
             ),
         ):
-            audit = audit_output_accounting(contract, OutputMeasurement(0, 0.0))
+            audit = audit_output_accounting(
+                contract,
+                OutputMeasurement(0, 0.0),
+            )
             self.assertEqual(audit.fixed_width_label_status, "NOT_COMPARABLE")
             self.assertIsNone(audit.fixed_width_label_floor_bits)
+
+    def test_side_information_bytes_require_declared_side_information(self):
+        contract = OutputInformationContract(distinguishable_outcomes=8)
+        with self.assertRaisesRegex(ValueError, "side-information bytes require"):
+            audit_output_accounting(
+                contract,
+                OutputMeasurement(
+                    1, 0.0, side_information_bytes_per_accepted_result=2
+                ),
+            )
+
+    def test_side_information_is_counted_in_egress_rate(self):
+        contract = OutputInformationContract(
+            distinguishable_outcomes=64,
+            side_information_available=True,
+            side_information_description="receiver has a shared immutable lookup table",
+            required_results_per_second=10,
+        )
+        audit = audit_output_accounting(
+            contract,
+            OutputMeasurement(
+                1, 0.002,
+                side_information_bytes_per_accepted_result=2,
+                measured_accepted_results_per_second=10,
+            ),
+        )
+        self.assertEqual(audit.fixed_width_label_status, "NOT_COMPARABLE")
+        self.assertEqual(audit.measured_egress_bitrate_bps, 240.0)
 
     def test_error_budget_failure_is_explicit(self):
         contract = OutputInformationContract(
@@ -159,6 +190,14 @@ class OutputAccountingTests(unittest.TestCase):
             ).validate()
         with self.assertRaises(ValueError):
             OutputInformationContract(4, encoding_mode="unknown").validate()
+        with self.assertRaises(ValueError):
+            OutputInformationContract(
+                4, side_information_available=True
+            ).validate()
+        with self.assertRaises(ValueError):
+            OutputInformationContract(
+                4, side_information_description="orphaned description"
+            ).validate()
         with self.assertRaises(ValueError):
             OutputMeasurement(-1, 0.0).validate()
         with self.assertRaises(ValueError):
