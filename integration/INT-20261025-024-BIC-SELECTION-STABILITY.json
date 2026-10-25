@@ -1,7 +1,7 @@
 {
   "record_id": "INT-20261025-024-BIC-SELECTION-STABILITY",
   "date": "2026-10-25",
-  "status": "BRANCH_CI_PENDING",
+  "status": "VALIDATION_PENDING",
   "primary_owner": "Lane A — equation-discovery tooling",
   "integration_owner": "Lane F — evidence and benchmark accounting",
   "publication_owner": "Lane H — literature watch",
@@ -68,10 +68,11 @@
   "validation": {
     "starting_main_prototype_run": "40188356586",
     "starting_main_cold_start_run": "40188356599",
-    "this_branch_full_ci": "PENDING_AT_RECORD_CREATION",
+    "this_branch_full_ci": "IN_PROGRESS",
     "paid_qpu_jobs": 0,
     "provider_credentials_used": false,
-    "physical_experiments": 0
+    "physical_experiments": 0,
+    "cold_start_note": "Intermediate branch commits lacked the required Research-Sync: pending-main commit trailer; a final sync commit is being added and must pass the audit before PR readiness."
   },
   "next_gate": "Exact branch CI, then preregistered known-law/noise/scale-shift replication with matched compute and energy budgets."
 }
