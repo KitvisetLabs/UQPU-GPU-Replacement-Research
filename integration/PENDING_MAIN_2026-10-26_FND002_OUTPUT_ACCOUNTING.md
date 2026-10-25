@@ -4,7 +4,7 @@
 **Canonical main base SHA:** 5fbe3d295ad6ca5b7c701f05c64899829910cbe8  
 **Source PR:** #112 — FND-002: integrate output-information and reconstruction accounting  
 **Source branch:** research/2026-10-26-fnd002-output-accounting  
-**Source head at sync-record creation:** e603bb417429b33475e2da2f8f0bdf1c0f20afd4  
+**Source head at sync-record creation:** f50d99310a0563565fe30476cc36e651b022840f  
 **Work item:** FND002-OUT-001  
 **Integration record:** INT-FND002-OUTPUT-ACCOUNTING-20261026-001  
 **Status:** PENDING_MAIN_REVIEW; source implementation is not merged and must not be treated as canonical main.
