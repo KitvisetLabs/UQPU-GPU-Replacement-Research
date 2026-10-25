@@ -6,7 +6,7 @@
   "primary_owner": "A_quantum_programming_runtime",
   "integration_owner": "F_economics_benchmark_evidence",
   "publication_owner": "H_strategy_finance_future_industries",
-  "status": "IMPLEMENTED_CI_PENDING",
+  "status": "UNIT_MATRIX_PASS_BROADER_WORKFLOW_IN_PROGRESS",
   "evidence_class": [
     "SOFTWARE_CONTRACT",
     "LOCAL_UNIT_TESTS_PENDING_CI",
@@ -104,5 +104,19 @@
     "Add frozen, independently reconstructed feasible and infeasible fixtures.",
     "Test deterministic replay and irrelevant-input-reordering invariance.",
     "Only then proceed to provider-neutral lowering and target-aware resource accounting."
-  ]
+  ],
+  "code_commit_sha": "c838410cf09b512604f406534a86ddbf4d2590d2",
+  "ci_snapshot_for_code_commit": {
+    "recorded_at": "2026-10-25T03:06:02Z",
+    "prototype_workflow_run_id": 40156881103,
+    "prototype_workflow_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40156881103",
+    "unit_matrix": {
+      "Python 3.10": "PASS",
+      "Python 3.11": "PASS",
+      "Python 3.12": "PASS"
+    },
+    "cold_start_audit_run_id": 40156881150,
+    "cold_start_audit": "PASS",
+    "broader_jobs": "IN_PROGRESS at snapshot; do not report the full workflow as passed"
+  }
 }
