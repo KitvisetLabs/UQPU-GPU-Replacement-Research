@@ -19,7 +19,6 @@ class FusionEvidenceTests(unittest.TestCase):
             "https://arxiv.org/abs/2610.11890",
             electron_temperature_kev=1.180,
             ion_temperature_kev=0.459,
-            fusion_power_w=1.0,
         )
         self.assertEqual(
             classify_fusion_evidence(record),
