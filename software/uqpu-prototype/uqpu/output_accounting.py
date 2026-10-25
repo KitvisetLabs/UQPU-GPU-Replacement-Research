@@ -177,12 +177,20 @@ def audit_output_accounting(
     else:
         fixed_status = "NOT_COMPARABLE"
 
-    allowed_error = 0.0 if contract.exactness_required else contract.allowed_error_probability
+    allowed_error = (
+        0.0
+        if contract.exactness_required
+        else (
+            float(contract.allowed_error_probability)
+            if contract.allowed_error_probability is not None
+            else None
+        )
+    )
     if measurement.measured_error_probability is None:
         error_status = "UNMEASURED"
     elif allowed_error is None:
         error_status = "NO_ERROR_BUDGET"
-    elif measurement.measured_error_probability <= allowed_error:
+    elif float(measurement.measured_error_probability) <= allowed_error:
         error_status = "PASS"
     else:
         error_status = "FAIL"
