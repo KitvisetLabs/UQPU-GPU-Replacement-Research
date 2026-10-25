@@ -79,3 +79,8 @@ Added `docs/literature_watch/2026-10-24-llm-pysr-search-control.md` for Xie et a
 ## Canonical-file sync debt — 2026-10-24
 
 `RESEARCH_GAPS.md` is a large append-only canonical ledger; it was read but not rewritten from a partial excerpt. The current main copy does not yet contain RG-045, which remains in the separate open gap PR #69. The dated RG-045 implementation note and this handoff preserve the current status without claiming that either pending PR is canonical main. Clear this sync debt only after reviewed merge and a safe, complete append/update to the canonical gap ledger.
+
+
+## CI handoff repair — 2026-10-25
+
+The current branch commit previously failed the cold-start handoff audit because its commit message lacked the required `Research-Sync: pending-main` trailer. This metadata-only follow-up adds that trailer. It does not alter the CoSR method contract or claim the branch is merged. The original base SHA in this older sync note is historical; current canonical main is `b5aac63f295c2b586f044bcbb228ad0ffb0660ef`, so the branch must be reconciled against the current base before merge. Recheck exact-head prototype/invariant and cold-start workflows before review.
