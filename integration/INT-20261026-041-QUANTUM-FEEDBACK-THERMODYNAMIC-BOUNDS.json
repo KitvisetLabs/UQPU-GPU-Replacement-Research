@@ -1,0 +1,117 @@
+{
+  "schema": "uqpu-cross-lane-integration-v1",
+  "integration_id": "INT-20261026-041",
+  "date": "2026-10-26",
+  "canonical_branch": "main",
+  "canonical_start_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+  "source_branch": "research/2026-10-26-quantum-feedback-thermodynamic-bounds",
+  "source_commits_before_integration_record": [
+    "7cc426bb32127e5f44ada8f669fdf5aa09ca954f",
+    "ddb56c0807a29614262a6c2b5eb6c05c95a6e813"
+  ],
+  "primary_owner_lane": "F_economics_benchmark_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "implementation_consumer_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "cross_cutting_programs": [
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "EQN-001",
+    "EQN-006"
+  ],
+  "status": "PROPOSED",
+  "evidence_class": "LITERATURE_ONLY",
+  "project_evidence_promoted": false,
+  "source": {
+    "title": "Fundamental limits for thermodynamic control with quantum feedback",
+    "authors": [
+      "Kaiyuan Ji",
+      "Gilad Gour",
+      "Mark M. Wilde"
+    ],
+    "journal_status": "Physical Review Letters accepted 2026-10-06",
+    "doi": "10.1103/x67n-33gr",
+    "official_publisher": "https://journals.aps.org/prl/accepted/10.1103/x67n-33gr",
+    "author_manuscript": "https://arxiv.org/abs/2503.09012",
+    "manuscript_revision": "v4 revised 2026-10-09"
+  },
+  "hypothesis": "A source-exact, independently reproduced quantum-feedback work-bound model can expose missing controller-side information resources in future UQPU workload accounting; it does not by itself predict lower wall-plug energy or lower cost.",
+  "incumbent_assumption_to_audit": "Quantum side information may be treated as if it were a free classical controller record or omitted from the system boundary.",
+  "proposed_alternative": "Use the source theorem's single-shot work bounds and asymptotic conditional-free-energy result while explicitly declaring side-information acquisition, preparation, retention, processing, transfer, measurement and reset/disposal resources.",
+  "method": [
+    "Transcribe exact theorem and assumptions from the public manuscript; do not infer equations from the abstract.",
+    "Freeze matched finite-dimensional quantum-side-information, classical/dephased-record and no-side-information fixtures.",
+    "Independently implement the single-shot work-of-formation and extractable-work bounds and the asymptotic limit.",
+    "Test held-out parameter combinations, source-consistent limiting cases and independent algebraic/numerical checks.",
+    "Fail closed if resource fields are missing or system boundaries differ.",
+    "Keep thermodynamic work, wall-plug energy, provider charges and cost per accepted useful task as separate quantities."
+  ],
+  "integration_edges": [
+    {
+      "lanes": ["A", "FND-001", "F"],
+      "interface": "accepted-useful-task resource ledger",
+      "hypothesis": "explicit controller-side information resources reduce hidden-boundary accounting errors",
+      "status": "PROPOSED",
+      "falsifier": "independent implementation disagrees with the source theorem or the result changes only because the comparison boundary changes"
+    },
+    {
+      "lanes": ["C", "FND-002", "F"],
+      "interface": "state, memory, transfer and output-information contract",
+      "hypothesis": "side information and its readout/retention are explicit resources rather than readable classical storage by assumption",
+      "status": "PROPOSED",
+      "falsifier": "the resource ledger cannot identify required classical output, state retention and data movement separately"
+    },
+    {
+      "lanes": ["A", "B", "C"],
+      "interface": "provider/target-matched workload record",
+      "hypothesis": "future execution records can bind state-transition quality to the same target's calibration, price, control and I/O",
+      "status": "BLOCKED_UNTIL_MODEL_VALIDATION",
+      "falsifier": "cross-target or cross-provider quantities are mixed, or no accepted useful output is measured"
+    },
+    {
+      "lanes": ["D", "G"],
+      "interface": "validated control/memory requirement to device/factory requirements",
+      "hypothesis": "only after a validated algorithmic requirement, control/retention needs can inform device and manufacturing design",
+      "status": "DOWNSTREAM",
+      "falsifier": "device requirements are inferred from literature alone without a validated workload"
+    },
+    {
+      "lanes": ["E", "F", "H"],
+      "interface": "lifecycle accounting discipline",
+      "hypothesis": "resource-boundary discipline can be reused for bio-oil, fusion and financing ledgers without transferring quantum-work claims to those domains",
+      "status": "METHOD_ONLY",
+      "falsifier": "coproduct credits, net-electricity boundaries or financing effects are double-counted or asserted without evidence"
+    }
+  ],
+  "lane_status": {
+    "A": "ACTIVE_BUT_NO_CODE_CHANGE_THIS_RECORD; current highest-value gate remains independent M-QSP constructivity and matched-budget equation-discovery tests on open PRs",
+    "B": "PROVIDER_NEUTRAL_NO_SUBMIT; no credentials or paid jobs used",
+    "C": "MEMORY_AND_OUTPUT_BOUNDARY_REVIEWED; no readable-storage or transfer advantage measured",
+    "D": "DEVICE_AND_PROCESS_REQUIREMENTS_DOWNSTREAM; no device/fabrication result",
+    "E": "BIO-001 and FUS-001 remain open; no accepted fuel, Pangola substitution or net-electricity evidence",
+    "F": "new RG-040 records missing quantum-feedback resource accounting and proposed validation gates",
+    "G": "D/G co-design preserved; no manufacturing or yield result",
+    "H": "dated literature watch and strategic-context integration prepared; no funding or WACC result"
+  },
+  "invariant_disposition": {
+    "INV-025": "preserved; no 100M-GPU useful-work or cost gate closed",
+    "INV-026": "preserved; no universal subsystem equivalence and no qubit-count-to-readable-memory inference",
+    "INV-027": "preserved; hypothesis generation remains open but falsifiable",
+    "INV-029": "not closed; no phone-class physical compression result",
+    "INV-030": "not closed; no Pangola-derived material substitution result",
+    "INV-031": "not closed; no accepted low-cost liquid fuel result",
+    "INV-032": "not closed; no reliable net delivered fusion-electricity result",
+    "INV-033": "not closed; no project principal, absolute-interest or WACC effect measured",
+    "INV-034": "advanced as a literature/theorem-accounting question only; no new physical result",
+    "INV-035": "preserved; theorem/model interpretation remains evidence-gated"
+  },
+  "related_artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-26-quantum-feedback-thermodynamic-work-bounds.md",
+    "research_gap": "docs/RESEARCH_GAP_RG040_QUANTUM_FEEDBACK_SIDE_INFORMATION_ACCOUNTING.md"
+  },
+  "measured_gain": null,
+  "model_only_result": null,
+  "paid_qpu_jobs_submitted": 0,
+  "paid_qpu_jobs_authorized": false,
+  "next_gate": "FND-QFB-001: source-exact independent reproduction with matched quantum/classical/no-side-information controls and complete controller-side resource accounting before any experiment is proposed."
+}
