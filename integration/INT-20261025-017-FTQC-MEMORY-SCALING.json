@@ -9,7 +9,7 @@
     "F_economics_benchmark_evidence"
   ],
   "publication_owner": "H_strategy_finance_future_industries",
-  "status": "MODEL_ONLY_SCALING_HELPER_ADDED_TESTS_PENDING_NEW_COMMIT_CI",
+  "status": "TRAILER_REPAIR_COMMITTED_PYTHON_MATRIX_PENDING",
   "evidence_class": [
     "SOFTWARE_UNIT_TESTS",
     "MODEL_ONLY_SCALING_DIAGNOSTIC",
@@ -103,5 +103,15 @@
   "next_gate": [
     "Implement and independently audit the published M-QSP constructive decision algorithm on frozen feasible/infeasible fixtures.",
     "Build a synthetic known-truth memory-order coverage benchmark for FND-001."
-  ]
+  ],
+  "ci_snapshot": {
+    "first_commit": "71a0f222c12d5842dda7baf3dee3a037c612f867",
+    "prototype_workflow_run_id": 40160666363,
+    "prototype_workflow_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40160666363",
+    "prototype_matrix": "in progress at repair snapshot",
+    "cold_start_handoff_run_id": 40160666360,
+    "cold_start_handoff_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40160666360",
+    "cold_start_handoff": "FAIL: missing required commit trailer Research-Sync: main",
+    "repair": "follow-up commit includes required trailer; cold-start audit must be checked on the follow-up head"
+  }
 }
