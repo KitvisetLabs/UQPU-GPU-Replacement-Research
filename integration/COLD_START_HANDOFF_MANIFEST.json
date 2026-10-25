@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-18T07:25:00Z",
+  "prepared_utc": "2026-10-25T17:27:07Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "588500f647bb42a43549a5ce38072198f61071ab",
+  "canonical_start_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
   "priority_lane": "A",
-  "current_frontier": "Cycle 008 Delta 20: local Qulacs independent-SDK routed probes passed; exact-commit hosted confirmation and full equivalence remain open",
+  "current_frontier": "Canonical main contains Batch 063 mechanism-count preflight, the published M-QSP negative fixture and FND-001 synthetic memory-order calibration; latest main commits are reconciliation-only. FND-003 gate-level QSL contract and Lane-A schedule identity guard are pending in PR #55 at source head 0d1eb258d62b06255cab900c4b679560fd8498f7; 14 focused local tests pass, while exact-head hosted CI is queued.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -35,24 +35,94 @@
     "RESEARCH_GAPS.md"
   ],
   "lanes": {
-    "A": {"owner_path": "research_lanes/A_quantum_programming_runtime", "status": "INDEPENDENT_ROUTED_PROBES_LOCAL_PASS_HOSTED_PENDING", "evidence_class": "SIMULATION_INDEPENDENT_SDK_BOUNDED_ROUTED_PROBE_CHECK", "next_gate": "obtain exact-commit hosted confirmation, then preregister a scalable stronger equivalence method; eleven queries remain blocked"},
-    "B": {"owner_path": "research_lanes/B_cloud_qpu_provider_integration", "status": "SAVED_TARGET_NO_SUBMIT_ROUTING_ACCEPTED", "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK", "next_gate": "retain zero-provider boundary while validating routed semantics before any saved-snapshot noise or schedule diagnostic"},
-    "C": {"owner_path": "research_lanes/C_state_memory_storage_data_movement", "status": "MEASURED_HOST_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "controlled I/O, transfer and target accounting"},
-    "D": {"owner_path": "research_lanes/D_device_chip_fabrication_packaging", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "DEVICE_MODEL", "next_gate": "target schedule and calibration before device requirements"},
-    "E": {"owner_path": "research_lanes/E_materials_energy_cooling_infrastructure", "status": "REVIEWED_NO_NEW_MEASUREMENT", "evidence_class": "MODEL_ONLY", "next_gate": "qualified BIO-001/FUS-001 functional-unit evidence"},
-    "F": {"owner_path": "research_lanes/F_economics_benchmarks_evidence_integration", "status": "EVIDENCE_GATE_ACTIVE", "evidence_class": "MODEL_ONLY", "next_gate": "competitive baseline and total cost per accepted task"},
-    "G": {"owner_path": "research_lanes/G_manufacturing_equipment_factory_software", "status": "DOWNSTREAM_BLOCKED", "evidence_class": "FABRICATION_PROPOSAL", "next_gate": "target-specific process-window response contract"},
-    "H": {"owner_path": "research_lanes/H_strategy_finance_future_industries", "status": "SOFTWARE_FIRST_CAPITAL_GATE", "evidence_class": "ROADMAP", "next_gate": "decisive target-aware test before expenditure"},
-    "I": {"owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION", "status": "PLAN_AND_CONTRACT_ONLY", "evidence_class": "MODEL_ONLY", "next_gate": "I-012 deterministic matched-mission hover/noise/energy model"}
+    "A": {
+      "owner_path": "research_lanes/A_quantum_programming_runtime",
+      "status": "BATCH_063_MQSP_NEGATIVE_FIXTURE_AND_BIC_MODEL_COUNT; FND-003 gate-QSL extension pending PR #55",
+      "evidence_class": "SOFTWARE_TESTS + MODEL_ONLY + LITERATURE_ONLY",
+      "next_gate": "independent M-QSP-CDA and boundary tests; calibrated model-count stability; review FND-003 PR #55 exact-head CI"
+    },
+    "B": {
+      "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
+      "status": "PROVIDER_NEUTRAL_NO_SUBMIT",
+      "evidence_class": "NO_PROVIDER_CALL / DRY_RUN_ONLY",
+      "next_gate": "target-aware no-submit checks; credentials, bounded budget and explicit consent before paid execution"
+    },
+    "C": {
+      "owner_path": "research_lanes/C_state_memory_storage_data_movement",
+      "status": "NO_CLASSICAL_MEMORY_EQUIVALENCE_CLAIM",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "same-useful-output state/I-O/transfer/host-memory accounting"
+    },
+    "D": {
+      "owner_path": "research_lanes/D_device_chip_fabrication_packaging",
+      "status": "FND-003 CONTROL-BOUNDARY RESEARCH; DEVICE DOWNSTREAM BLOCKED",
+      "evidence_class": "LITERATURE_ONLY + MODEL_ONLY",
+      "next_gate": "full theorem and derivation review; target identity, Hamiltonian spectral width and calibration before physical timing claims"
+    },
+    "E": {
+      "owner_path": "research_lanes/E_materials_energy_cooling_infrastructure",
+      "status": "REVIEWED_NO_NEW_MEASUREMENT",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "BIO-001 accepted liquid-energy evidence; FUS-001 net delivered electricity; qualified material-function comparisons"
+    },
+    "F": {
+      "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
+      "status": "BIC SELECTOR AND EVIDENCE GATES ACTIVE",
+      "evidence_class": "SOFTWARE_TESTS + MODEL_ONLY",
+      "next_gate": "matched accepted-task lifecycle economics, model-count calibration and measured FIN-001 inputs"
+    },
+    "G": {
+      "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
+      "status": "D_G_CODESIGN_DOWNSTREAM_BLOCKED",
+      "evidence_class": "FABRICATION_PROPOSAL",
+      "next_gate": "validated target-native gate/control requirements before process-window or factory-cost work"
+    },
+    "H": {
+      "owner_path": "research_lanes/H_strategy_finance_future_industries",
+      "status": "STRATEGIC_PLAN_PRESERVED; LITERATURE_AND_PENDING_SYNC_PUBLICATION",
+      "evidence_class": "LITERATURE_ONLY + STRATEGIC_RESEARCH",
+      "next_gate": "review PR #55 and pending-main handoff; preserve all six language references and recorded AI/funding references"
+    },
+    "I": {
+      "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
+      "status": "PLAN_AND_CONTRACT_ONLY",
+      "evidence_class": "MODEL_ONLY",
+      "next_gate": "I-012 deterministic matched-mission hover/noise/energy model"
+    }
   },
-  "cross_cutting_programs": ["FND-001..006", "EQN-001..006", "BIO-001", "FUS-001", "FIN-001", "SCM", "AI-COST", "QOS/QSVT"],
-  "open_gates": ["RG-033", "RG-034", "I-012"],
-  "master_reference_languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
+  "cross_cutting_programs": [
+    "FND-001..006",
+    "EQN-001..006",
+    "BIO-001",
+    "FUS-001",
+    "FIN-001",
+    "SCM",
+    "AI-COST",
+    "QOS/QSVT"
+  ],
+  "open_gates": [
+    "RG-033",
+    "RG-034",
+    "I-012",
+    "RG-029",
+    "FND003-GATE-QSL-001",
+    "M-QSP-CDA-INDEPENDENT-IMPLEMENTATION",
+    "BIC-K1-K3-CALIBRATION"
+  ],
+  "master_reference_languages": [
+    "Thai",
+    "English",
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "German"
+  ],
   "latest_verified_ci": {
     "run_number": 786,
     "run_id": 39100104157,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39100104157"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/39100104157",
+    "note": "The recorded run 786 is an older successful checkpoint, not evidence for current main SHA 5fbe3d295ad6ca5b7c701f05c64899829910cbe8."
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -62,12 +132,29 @@
     "commercial_bio_oil": false,
     "commercial_fusion": false,
     "new_physical_law": false,
-    "lane_i_vehicle_demonstrated": false
+    "lane_i_vehicle_demonstrated": false,
+    "accepted_bio_oil": false,
+    "net_fusion_electricity": false,
+    "lower_wacc_demonstrated": false
   },
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage.",
-  "next_independent_action": "Confirm QOS-AUDIT-010B22 on exact-commit hosted CI, then preregister a scalable stronger equivalence verifier; preserve the CZ endpoint-symmetry negative result and keep full equivalence closed.",
-  "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../.."
+  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Pending source PR #55 contains the 2026-10-26 FND-003 gate-QSL contract/watch/integration; it is not on main. Historical/inaccessible branches and forks are not exhaustively reconciled. Pending source PR #55 now at ce8ed3d9aa3cc3dcbff4836fc37cb35d3dec0fac contains the 2026-10-26 FND-003 gate-QSL contract/watch/integration; it is not on main. The last polled workflow for code/test head 29b70492dc28ccfc4f47c9dfb31dec73e1f7d792 was queued; exact-head full validation remains pending. Historical/inaccessible branches and forks are not exhaustively reconciled. Pending source PR #55 now at 0d1eb258d62b06255cab900c4b679560fd8498f7 contains the 2026-10-26 FND-003 gate-QSL contract, Lane-A schedule guard, literature watch and integration; it is not on main. Exact-head workflow run 40216532962 was queued at last poll. Historical/inaccessible branches and forks are not exhaustively reconciled.",
+  "next_independent_action": "Wait for exact-head CI on PR #55, refresh/rebase against current main, independently implement and reproduce the full gate-QSL theorem when the accepted-paper derivation is available, and continue Lane A's same-useful-output QPU-versus-classical path while preserving A-H, FND-001..006, EQN-001..006, BIO-001, FUS-001 and FIN-001.",
+  "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
+  "latest_observed_ci": {
+    "canonical_main_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+    "combined_status_endpoint": "returned no status records",
+    "interpretation": "current main success cannot be inferred from an empty status response",
+    "pending_source_pr": 55,
+    "source_head": "0d1eb258d62b06255cab900c4b679560fd8498f7",
+    "latest_code_test_head": "834bd439c69358d39be52d27d27bd68c13455b88",
+    "latest_code_test_run_id": 40216457136,
+    "latest_code_test_run_status": "queued at last poll",
+    "latest_source_head_workflow_run_id": 40216532962,
+    "latest_source_head_workflow_run_status": "queued at last poll",
+    "latest_source_head_workflow_conclusion": null,
+    "checked_scope": "UQPU Prototype and Project Invariants workflow; exact-head full validation pending"
+  }
 }
