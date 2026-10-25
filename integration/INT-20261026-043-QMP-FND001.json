@@ -16,7 +16,8 @@
     "literature_watch": "docs/literature_watch/2026-10-26-quantum-strong-mpemba-coherence-relaxation.md",
     "integration_record": "integration/INT-20261026-043-QMP-FND001.json",
     "primary_source": "https://journals.aps.org/prl/abstract/10.1103/z9t9-mwgv",
-    "workflow_fix": ".github/workflows/cold-start-handoff.yml"
+    "workflow_fix": ".github/workflows/cold-start-handoff.yml",
+    "provider_watch": "docs/literature_watch/2026-10-26-provider-watch-qiskit26-braket-ising-decoding.md"
   },
   "source": {
     "title": "Genuine Quantum Strong Mpemba Effect by Eliminating Coherence",
@@ -74,8 +75,8 @@
     "EQN-001_to_EQN-006": "No equation promoted; generator/constraints/held-out/counterexample/proof/experiment/replication/economics separation retained."
   },
   "lanes": {
-    "A": "Priority lane reviewed; possible use only if a concrete initialization/reset/runtime bottleneck is specified. No workload result.",
-    "B": "Provider-neutral path unchanged; no credentials used and no QPU job submitted.",
+    "A": "Priority lane reviewed; FND-001 Mpemba and Qiskit 2.6 compatibility gates documented; no workload result.",
+    "B": "Fresh IBM/AWS provider updates recorded; provider-neutral adapter architecture unchanged; no credentials used and no QPU job submitted.",
     "C": "Preparation, readout, reset, persistence, and reconstruction boundary highlighted; no classical-memory replacement result.",
     "D": "No device/process result; any optical-to-device translation requires a new control/stability/readout contract.",
     "E": "No Pangola-carbon, accepted bio-oil, fusion net-electricity, or cooling result.",
@@ -110,17 +111,25 @@
       "Large append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial reads.",
       "README latest-verified checkpoint remains behind canonical Batch 063; reconcile without truncating history.",
       "Many independent PRs remain open; review exact-head CI and stable integration IDs before merging. No branch was merged in this cycle.",
-      "One branch-creation-triggered cold-start run failed on the base SHA before the guard fix; it is a workflow event/branch-name mismatch, not a research-test failure. The corrected exact-head run is pending."
+      "One branch-creation-triggered cold-start run failed on the base SHA before the guard fix; it is a workflow event/branch-name mismatch, not a research-test failure. The corrected exact-head run is pending.",
+      "Provider watch now records IBM Qiskit 2.6 (2026-10-22), AWS/NVIDIA Ising Decoding (2026-10-21), and Braket FedRAMP Class C (2026-10-16); no provider-path change is accepted before reproducible compatibility and matched-cost checks."
     ],
     "branch_head": "9bf1719822e60f1b344329004542dfc39bb88807",
     "branch_ci": {
-      "prototype_workflow_run": 40229572638,
+      "prototype_workflow_runs": [
+        40229599103,
+        40229595680
+      ],
       "prototype_workflow_status": "queued",
-      "cold_start_workflow_run": 40229569386,
-      "cold_start_workflow_status": "queued"
-    }
+      "cold_start_workflow_runs": [
+        40229595673
+      ],
+      "cold_start_workflow_status": "queued",
+      "note": "Run 40229472461 completed successfully on prior commit c4c482484fbb083d030ce5367d60007f36b4f641; exact latest-head validation remains pending."
+    },
+    "branch_head_before_record_update": "3c0f658280b97804b0d669e1de8a5f66d6d83102"
   },
-  "next_highest_value_gate": "Run the source-exact, independently implemented single-qubit reproduction with preregistered held-out parameters, null controls, and matched accepted-output plus preparation/control/readout/reset/retry accounting. No paid QPU or physical experiment is authorized by this record.",
+  "next_highest_value_gate": "Finish exact-head CI; review the open FND-002 output-information/reconstruction contract against the same accepted-output workload; then run the preregistered FND-001-QMP-001 independent reproduction with full preparation/control/readout/reset accounting and add a pinned Qiskit 2.6/QPY compatibility matrix.",
   "project_evidence_promoted": false,
   "workflow_repair": {
     "observed_failure_run_id": 40229432417,
@@ -129,5 +138,32 @@
     "change": "Skip only the cold-start job for push events where github.event.created is true; audit resumes on the first actual branch commit and remains available for workflow_dispatch.",
     "fix_commit_sha": "9bf1719822e60f1b344329004542dfc39bb88807",
     "validation": "Exact-head Actions queued/in progress at record update; do not treat as passed until completed."
+  },
+  "provider_surveillance": {
+    "evidence_class": "OFFICIAL_PROVIDER_RELEASES_AND_VENDOR_REPORTED_BENCHMARKS",
+    "sources": [
+      {
+        "name": "Qiskit SDK v2.6 release summary",
+        "publisher": "IBM Quantum",
+        "date": "2026-10-22",
+        "url": "https://www.ibm.com/quantum/blog/qiskit-2-6-release-summary",
+        "delta": "C API pass-manager framework, typed multi-IR lowering, C API QPY serialization, custom operations, QPY v18."
+      },
+      {
+        "name": "Decoding quantum errors with NVIDIA Ising Decoding on AWS",
+        "publisher": "AWS Quantum Technologies Blog",
+        "date": "2026-10-21",
+        "url": "https://aws.amazon.com/blogs/quantum-computing/decoding-quantum-errors-with-nvidia-ising-decoding-on-aws/",
+        "delta": "Vendor-reported GPU training and QEC pre-decoder benchmark with a specified surface-code/noise configuration; requires independent matched-cost reproduction."
+      },
+      {
+        "name": "Amazon Braket now in scope for FedRAMP Class C",
+        "publisher": "AWS",
+        "date": "2026-10-16",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/braket-fedramp-class-c/",
+        "delta": "AWS-managed control-plane scope clarified; third-party QPU execution remains outside the stated certified boundary."
+      }
+    ],
+    "decision": "Provider-neutral architecture remains unchanged until pinned SDK, QPY round-trip, decoder quality/latency and matched total-cost gates pass. No new QPU target authorization or paid execution."
   }
 }
