@@ -209,3 +209,99 @@ def select_bic_candidate_count(
 
     selected_count = min(scored, key=lambda item: (item[1], item[0]))[0]
     return BICModelCountSelection(selected_count=selected_count, scores=tuple(scored))
+
+@dataclass(frozen=True)
+class BICSelectionStability:
+    """Replicate-level stability summary for Gaussian-BIC candidate-count selection.
+
+    This diagnostic reports how often each candidate count wins across explicitly
+    supplied replicates. It is not a mechanism-count estimator independent of the
+    data-generation design, and it does not replace held-out prediction, residual
+    diagnostics, identifiability analysis, or independent physical validation.
+    """
+    replicate_count: int
+    selections: tuple[tuple[str, int], ...]
+    selection_frequencies: tuple[tuple[int, int, float], ...]
+    stable_selection: int | None
+    minimum_selection_fraction: float
+    stable: bool
+
+
+def evaluate_bic_selection_stability(
+    replicate_residual_sums_squares: Mapping[str, Mapping[int, float]],
+    parameter_counts: Mapping[int, int],
+    sample_counts: Mapping[str, int],
+    minimum_selection_fraction: float = 0.8,
+) -> BICSelectionStability:
+    """Evaluate BIC candidate-count stability over named, matched replicates.
+
+    Each replicate must supply in-sample RSS values for the same candidate-count
+    set and its own sample count. The parameter-count map is shared across
+    replicates. The function fails closed on missing replicates or candidates.
+    A stable selection requires a unique plurality meeting the requested
+    fraction; ties are explicitly unstable.
+
+    The replicates must be designed by the caller (for example, preregistered
+    seeds or resampled datasets). Repeatedly scoring one dataset does not create
+    independent evidence, and this statistic is not a physical-law validation.
+    """
+    if (
+        not isinstance(replicate_residual_sums_squares, Mapping)
+        or len(replicate_residual_sums_squares) < 2
+    ):
+        raise ValueError("at least two named replicate RSS mappings are required")
+    if any(
+        not isinstance(replicate_id, str) or not replicate_id.strip()
+        for replicate_id in replicate_residual_sums_squares
+    ):
+        raise ValueError("replicate IDs must be nonempty strings")
+    if not isinstance(sample_counts, Mapping):
+        raise ValueError("sample_counts must be a mapping")
+    if set(sample_counts) != set(replicate_residual_sums_squares):
+        raise ValueError("sample-count IDs must exactly match replicate IDs")
+    if not isinstance(parameter_counts, Mapping) or not parameter_counts:
+        raise ValueError("parameter_counts must be a nonempty mapping")
+    if (
+        isinstance(minimum_selection_fraction, bool)
+        or not isinstance(minimum_selection_fraction, (int, float))
+        or not math.isfinite(float(minimum_selection_fraction))
+        or not 0.0 < float(minimum_selection_fraction) <= 1.0
+    ):
+        raise ValueError("minimum_selection_fraction must be finite and in (0, 1]")
+
+    candidate_ids = set(parameter_counts)
+    selections: list[tuple[str, int]] = []
+    for replicate_id in sorted(replicate_residual_sums_squares):
+        rss_by_count = replicate_residual_sums_squares[replicate_id]
+        if not isinstance(rss_by_count, Mapping) or set(rss_by_count) != candidate_ids:
+            raise ValueError("every replicate must provide the same candidate-count set")
+        selected = select_bic_candidate_count(
+            residual_sums_squares=rss_by_count,
+            parameter_counts=parameter_counts,
+            sample_count=sample_counts[replicate_id],
+        )
+        selections.append((replicate_id, selected.selected_count))
+
+    wins = {candidate_id: 0 for candidate_id in sorted(candidate_ids)}
+    for _, selected_count in selections:
+        wins[selected_count] += 1
+    total = len(selections)
+    frequencies = tuple(
+        (candidate_id, wins[candidate_id], wins[candidate_id] / total)
+        for candidate_id in sorted(wins)
+    )
+    highest_wins = max(wins.values())
+    leaders = [candidate_id for candidate_id, count in wins.items() if count == highest_wins]
+    is_stable = (
+        len(leaders) == 1
+        and highest_wins / total >= float(minimum_selection_fraction)
+    )
+    return BICSelectionStability(
+        replicate_count=total,
+        selections=tuple(selections),
+        selection_frequencies=frequencies,
+        stable_selection=leaders[0] if is_stable else None,
+        minimum_selection_fraction=float(minimum_selection_fraction),
+        stable=is_stable,
+    )
+
