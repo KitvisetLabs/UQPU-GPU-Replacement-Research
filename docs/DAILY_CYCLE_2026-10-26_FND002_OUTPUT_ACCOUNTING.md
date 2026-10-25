@@ -18,6 +18,7 @@ Read from the exact starting SHA: PROJECT_CHARTER.md, VERSION_INVARIANTS.md, GOA
 - Thai, English, Chinese, Japanese, Korean and German master-plan references remain present. Their strategic content remains context, not empirical proof.
 - The canonical lane policy requires A–H. An auxiliary Lane I portfolio exists in repository history but does not replace A–H.
 - The latest merged batch found by repository search was Batch 063. Batch 064 and later work is present on open branches with overlapping batch ordinals; no fixed batch number was assumed.
+- **README checkpoint sync debt:** the top “Latest verified implementation checkpoint” still lists Batch 062, while a later appended README entry and the canonical Batch file identify Batch 063. The 46-KB README was not rewritten from a partial read; reconcile this top pointer with a focused, hash-checked edit after review.
 - RESEARCH_GAPS.md is a large append-only ledger and was not rewritten from partial excerpts.
 - The combined status endpoint returned no status entries for the exact starting main SHA; the latest-main CI result is therefore **UNKNOWN / NOT REPORTED**, not a pass. The prior reconciliation's successful run was on an earlier main SHA and is not substituted for exact-head validation.
 
