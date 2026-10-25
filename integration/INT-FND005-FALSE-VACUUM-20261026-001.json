@@ -1,0 +1,65 @@
+{
+  "schema": "uqpu-integration-record-v1",
+  "record_id": "INT-FND005-FALSE-VACUUM-20261026-001",
+  "date": "2026-10-26",
+  "canonical_start_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+  "canonical_branch": "main",
+  "source_branch": "research/2026-10-26-fnd005-false-vacuum-watch",
+  "primary_owner_lane": "H_strategy_finance_future_industries",
+  "foundational_work_item": "FND005-FVD-001",
+  "cross_lane_integration_owner": "F_economics_benchmark_evidence_integration",
+  "evidence_class": [
+    "LITERATURE_ONLY",
+    "PUBLISHED_EXPERIMENT_SOURCE"
+  ],
+  "status": "PENDING_REVIEW_AND_MAIN_SYNC",
+  "source": {
+    "title": "Probing False Vacuum Decay on a Cold-Atom Gauge-Theory Quantum Simulator",
+    "authors": "Zi-Hang Zhu et al.",
+    "journal": "Physical Review Letters",
+    "volume": 137,
+    "article": 141601,
+    "publication_date": "2026-10-01",
+    "issue_date": "2026-10-02",
+    "doi": "10.1103/vhnm-j9bw",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/vhnm-j9bw"
+  },
+  "genuine_novelty": "Published cold-atom analog-simulator investigation of out-of-equilibrium pair production in a 1+1D U(1) lattice-gauge quantum-link model with tunable background field and reported excitation peaks.",
+  "limitations": [
+    "Not a direct cosmological false-vacuum decay observation or direct pair production in empty space.",
+    "Finite lattice/model truncation, preparation, boundary, control/readout and mapping-to-continuum assumptions remain.",
+    "No independent UQPU reproduction, real-QPU run, cost comparison or new physical law is claimed."
+  ],
+  "falsifiable_follow_up": {
+    "id": "FND005-FVD-001",
+    "method": "Freeze source model and hashes; compare independent exact-diagonalization and MPS references; reproduce pair-density and excitation observables across preregistered parameter and lattice-size splits; use null/background-field/boundary controls; report errors, uncertainty and full resources.",
+    "falsifier": "Failure to reproduce within preregistered tolerance, disappearance on held-out parameters/finite sizes, or equal explanation by a null/control model.",
+    "evidence_gate": "LITERATURE_ONLY until independent reproduction; no mission promotion from simulator execution alone."
+  },
+  "lane_review": {
+    "A": "future accepted-observable contract and classical reference comparison proposed; no code changed",
+    "B": "provider-neutral no-submit path preserved",
+    "C": "measurement/output/reconstruction must be explicit",
+    "D": "no device/fabrication consequence",
+    "E": "no material/fuel/fusion consequence",
+    "F": "evidence and economics gates specified",
+    "G": "no calibrated manufacturing evidence",
+    "H": "dated primary-source watch"
+  },
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "real_qpu_jobs": 0,
+  "paid_qpu_jobs_authorized": false,
+  "project_evidence_promoted": false,
+  "next_gate": "Independent source-exact small-lattice reproduction with held-out parameter regimes and counterexample controls."
+}
