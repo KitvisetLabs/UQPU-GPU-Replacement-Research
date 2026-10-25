@@ -1,0 +1,207 @@
+{
+  "schema": "uqpu-parallel-pr-reconciliation-v1",
+  "record_id": "INT-20261025-PARALLEL-PR-COLLISION-AUDIT",
+  "date": "2026-10-25",
+  "canonical_branch": "main",
+  "canonical_start_sha": "b5aac63f295c2b586f044bcbb228ad0ffb0660ef",
+  "primary_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "implementation_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "evidence_class": [
+    "REPOSITORY_AUDIT",
+    "LITERATURE_ONLY",
+    "CI_STATUS_SNAPSHOT"
+  ],
+  "status": "PUBLISHED_CANONICAL_RECONCILIATION; PENDING_PR_COLLISION_RESOLUTION",
+  "root_directives_00_to_06_present": true,
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "master_plan_languages": [
+    "Thai",
+    "English",
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "German"
+  ],
+  "tree_entries": 866,
+  "observed_max_directory_depth": 4,
+  "auxiliary_lane_i_note": "Lane I exists as an auxiliary special-project track; it does not replace mandatory A-H.",
+  "collision_groups": [
+    {
+      "id": "INT-20261025-013",
+      "records": [
+        {
+          "location": "main",
+          "path": "integration/INT-20261025-013-QSVT-FEASIBILITY-PREREGISTRATION.json"
+        },
+        {
+          "location": "PR #87",
+          "path": "integration/INT-20261025-013-MQSP-PISR-LITERATURE-DELTA.json"
+        },
+        {
+          "location": "PR #89",
+          "path": "integration/INT-20261025-013-FND001-ERGOTROPY-CERTIFICATION.json"
+        }
+      ]
+    },
+    {
+      "id": "INT-20261025-014",
+      "records": [
+        {
+          "location": "main",
+          "path": "integration/INT-20261025-014-FUS-001-LITHIUM-RETENTION.json"
+        },
+        {
+          "location": "PR #88",
+          "path": "integration/INT-20261025-014-FUSION-EXPERIENCE-RATE.json"
+        }
+      ]
+    },
+    {
+      "id": "INT-20261025-021",
+      "records": [
+        {
+          "location": "PR #93",
+          "path": "integration/INT-20261025-021-MQSP-ORDER-INVARIANCE-WEST-RELIABILITY.json"
+        },
+        {
+          "location": "PR #98",
+          "path": "integration/INT-20261025-021-TRANSFORMER-FORMULA-GENERALIZATION.json"
+        },
+        {
+          "location": "PR #99",
+          "path": "integration/INT-20261025-021-FUS001-LM26-HEATING-EVIDENCE.json"
+        }
+      ]
+    },
+    {
+      "id": "INT-20261025-022",
+      "records": [
+        {
+          "location": "PR #95",
+          "path": "integration/INT-20261025-022-FORMAL-INVARIANT-BIC-SCALING.json"
+        },
+        {
+          "location": "PR #99",
+          "path": "integration/INT-20261025-022-GAUSSIAN-REPEATER-NOGO.json"
+        }
+      ]
+    },
+    {
+      "id": "INT-20261025-023",
+      "records": [
+        {
+          "location": "PR #96",
+          "path": "integration/INT-20261025-023-LLM-CIRCUIT-CO-DESIGN.json"
+        },
+        {
+          "location": "PR #99",
+          "path": "integration/INT-20261025-023-QUBO-SERIALIZATION-GUARD.json"
+        }
+      ]
+    },
+    {
+      "id": "INT-20261025-024",
+      "records": [
+        {
+          "location": "PR #97",
+          "path": "integration/INT-20261025-024-TRIPARTITE-HAAR-NO-GO.json"
+        },
+        {
+          "location": "PR #100",
+          "path": "integration/INT-20261025-024-BIC-SELECTION-STABILITY.json"
+        }
+      ]
+    }
+  ],
+  "batch_ordinal_collisions": [
+    {
+      "batch": "064",
+      "prs": [
+        93,
+        96,
+        98
+      ],
+      "note": "Distinct artifacts reuse a root-level batch ordinal; use source SHA and work-item IDs as the ordering key."
+    }
+  ],
+  "ci_repairs": [
+    {
+      "pr": 105,
+      "commit": "47377af17234c6960beb2c38826491c61a0b3b40",
+      "cold_start_run": 40210925135,
+      "cold_start": "success",
+      "prototype_runs": [
+        40210925133,
+        40210928791
+      ],
+      "prototype_status": "in_progress_at_snapshot"
+    },
+    {
+      "pr": 102,
+      "commit": "d5b9604a2bbb113166066d83982b2422e5a7770c",
+      "cold_start_run": 40211035734,
+      "cold_start": "success",
+      "prototype_runs": [
+        40211037181,
+        40211038481
+      ],
+      "prototype_status": "in_progress_or_queued_at_snapshot"
+    },
+    {
+      "pr": 56,
+      "commit": "5d1225a243917a5056303f3e7474a986f7041530",
+      "cold_start_run": 40211105892,
+      "cold_start": "success",
+      "prototype_runs": [
+        40211105880,
+        40211109785
+      ],
+      "prototype_status": "queued_at_snapshot"
+    }
+  ],
+  "literature_records_pending_or_existing": [
+    {
+      "source": "CoSR",
+      "date": "2026-10-06",
+      "status": "covered_on_open_PR_56_not_merged",
+      "url": "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q"
+    },
+    {
+      "source": "Synthesizing Physics Formulae with Transformers",
+      "date": "2026-10-02",
+      "status": "covered_on_open_PR_98_not_merged",
+      "url": "https://arxiv.org/abs/2610.03947"
+    },
+    {
+      "source": "L2G-SR",
+      "date": "2026-10-14",
+      "status": "covered_on_open_PR_104_not_merged",
+      "url": "https://arxiv.org/abs/2610.20685"
+    },
+    {
+      "source": "What the Machine Invented",
+      "date": "2026-10-12",
+      "status": "already_recorded_on_main",
+      "url": "https://arxiv.org/abs/2610.17090"
+    }
+  ],
+  "mission_evidence_promoted": false,
+  "real_qpu_jobs_submitted": 0,
+  "paid_qpu_jobs_authorized": false,
+  "bio_001_status": "NO_NEW_ACCEPTED_LIQUID_OR_FULL_COST_EVIDENCE",
+  "fus_001_status": "NO_NEW_RELIABLE_NET_ELECTRICITY_OR_LIFECYCLE_COST_EVIDENCE",
+  "fin_001_status": "NO_NEW_PROJECT_PRINCIPAL_INTEREST_OR_WACC_EVIDENCE",
+  "next_gate": "Resolve duplicate integration IDs and standardize integration record schema before merging overlapping PRs; then finish exact-head CI and run blinded matched-budget law-family-disjoint equation-discovery evaluation."
+}
