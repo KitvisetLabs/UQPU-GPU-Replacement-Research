@@ -17,7 +17,7 @@ Canonical main at start: `b5aac63f295c2b586f044bcbb228ad0ffb0660ef`. The current
 
 | Lane | Status this cycle | Evidence boundary / next gate |
 |---|---|---|
-| A — Quantum programming/workloads/compiler/runtime | ACTIVE, still Priority #1 | Preserve identical useful-output contracts, QUBO/QAOA or other algorithms, reference/bound certificates, competitive CPU/GPU/NPU baselines, provider-neutral lowering and independent SDK checks. No new workload advantage. |
+| A — Quantum programming/workloads/compiler/runtime | ACTIVE, still Priority #1 | Added finite-coefficient rejection and exhaustive three-variable assignment checks for portable/D-Wave QUBO serialization. This is provider-neutral lowering correctness only; identical useful-output comparisons and quantum advantage remain open. |
 | B — Cloud/QPU/provider integration | ACTIVE / conditional network theorem guardrail | New peer-reviewed Gaussian-repeater no-go watch; no provider job submitted and no paid execution authorized. |
 | C — RAM/VRAM/HBM/storage/state/data movement | ACTIVE / no replacement result | Direct-transmission baseline and state/network costs remain explicit; no classical-memory or storage replacement demonstrated. |
 | D — Quantum/photonic/semiconductor devices, process, fabrication and packaging | CONTINUOUS PARALLEL | No new device/fab evidence. Continue D/G co-design; keep the 16-level path-depth invariant. |
@@ -42,15 +42,18 @@ FND-001 through FND-006 remain active; no new thermodynamic gap, output-informat
 
 - `software/uqpu-prototype/uqpu/fusion_evidence.py`
 - `software/uqpu-prototype/tests/test_fusion_evidence.py`
+- `software/uqpu-prototype/uqpu/qubo_serialization.py` (finite coefficient guard)
+- `software/uqpu-prototype/tests/test_qubo_serialization_equivalence.py`
 - `docs/literature_watch/2026-10-25-lm26-compressional-heating-to-net-electricity.md`
 - `docs/literature_watch/2026-10-25-gaussian-repeater-no-go-scope.md`
 - `docs/RESEARCH_GAP_RG047_LM26_PLASMA_TO_NET_ELECTRICITY.md`
 - `docs/RESEARCH_GAP_RG048_GAUSSIAN_REPEATER_APPLICABILITY.md`
 - `integration/INT-20261025-021-FUS001-LM26-HEATING-EVIDENCE.json`
 - `integration/INT-20261025-022-GAUSSIAN-REPEATER-NOGO.json`
+- `integration/INT-20261025-023-QUBO-SERIALIZATION-GUARD.json`
 
 ## CI, synchronization and safety
 
-The new branch starts from canonical main. The 12-test fusion-evidence suite passed in local smoke execution. On head 8d5976868cac4970bbc2e814e17c4cd5e6b8d094, the repository Python 3.10/3.11/3.12 test matrix and cold-start handoff audit passed. Extended reference-benchmark, QSP/QSVT, Qiskit and target-snapshot jobs remained queued at the last check, so no full-workflow pass is claimed. The pending-main synchronization ledger is provided separately. No large append-only canonical file was overwritten.
+The new branch starts from canonical main. The 12-test fusion-evidence suite and 8-test QUBO serialization equivalence suite passed in local smoke execution. On code-bearing head 8d5976868cac4970bbc2e814e17c4cd5e6b8d094, the Python 3.10/3.11/3.12 matrix and cold-start handoff audit passed before the Lane A QUBO change. The new QUBO code therefore still requires its own exact-head matrix; extended reference-benchmark, QSP/QSVT, Qiskit and target-snapshot jobs remain pending, and no full-workflow pass is claimed. The pending-main synchronization ledger is provided separately. No large append-only canonical file was overwritten.
 
 No paid QPU jobs, material experiments, fusion experiments, funding, or external spending were authorized.
