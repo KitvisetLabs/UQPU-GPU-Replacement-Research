@@ -22,7 +22,7 @@ Each record binds:
 - observed duration and uncertainty, lower bound and uncertainty (all in seconds);
 - repeat count, observation method and explicit scope checks for bounded spectral width, gate identity, initial/final operator, control boundary, noise/environment and calibration validity.
 
-The module validates record completeness and compares the two uncertainty intervals. It deliberately does **not** calculate a theorem bound from incomplete literature, assert that a bound is physically correct, or promote a result to new physics.
+The module validates record completeness, compares uncertainty intervals and exposes `assert_matches_schedule()` so Lane A cannot reuse a record with a different gate/unitary, target kind, Hamiltonian model or calibration. It deliberately does **not** calculate a theorem bound from incomplete literature, assert that a bound is physically correct, or promote a result to new physics.
 
 ### Result semantics
 
@@ -40,7 +40,7 @@ From `software/uqpu-prototype/`:
 PYTHONPATH=. python -m unittest discover -s tests -p 'test_gate_speed_limit_contract.py' -v
 ```
 
-The isolated local harness passed 10/10 focused tests on 2026-10-26. Hosted CI on the updated PR head is required before this is considered repository-validated.
+The isolated local harness passed 14/14 focused tests on 2026-10-26, including exact compiler-schedule identity matching and mismatched-target rejection. Hosted CI on the latest source head is required before this is considered repository-validated.
 
 ## Cross-lane interfaces
 
