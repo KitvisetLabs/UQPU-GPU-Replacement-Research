@@ -4,7 +4,7 @@
 **Canonical base SHA:** 5fbe3d295ad6ca5b7c701f05c64899829910cbe8  
 **Source PR:** #118 — Oct 26 cycle: provider-matched execution record guard and nuclear-mass literature watch  
 **Source branch:** automation/2026-10-26-rg050-provider-matched-cost  
-**Source head SHA:** b67e68378b148a6a51b877e530f354449d8d2b18  
+**Source head SHA:** ab4fee9018a89ee42819dfc7fb30aafa034823e0  
 **Source PR URL:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/118  
 **Work item:** RG-050  
 **Primary owner:** Lane F; implementation owner Lane A; integration B/C/H
@@ -14,6 +14,8 @@
 The main-commit synchronization policy requires pending branch work to be discoverable from main without falsely claiming that code, tests or results have merged. This file is a separately reviewed summary only. It does not copy the implementation into main and does not close RG-050.
 
 ## Source commits and changed files
+
+The source PR now contains 12 commits and 8 changed files. The full source-to-main mapping remains pending until review/merge.
 
 All source commits carry the required Research-Sync: pending-main trailer.
 
@@ -28,18 +30,21 @@ All source commits carry the required Research-Sync: pending-main trailer.
 | 305fd47e25ac59a8f3324db4e4a1c761938646c8 | Link the Lane F owner contract in the integration JSON |
 | 1296a92a5570eaf6d7ee6ef5137d43e30737ed4b | Add integration/DAILY_CYCLE_2026-10-26_RG050_AND_NUCLEAR_MASS.md |
 | b67e68378b148a6a51b877e530f354449d8d2b18 | Correct the Kanusanan Pongpanna Model name in the cycle report |
+| 7485aff4b3375e8e2abd15afd3cbca865934e5a5 | Add docs/literature_watch/2026-10-26-provider-sdk-cloud-security-and-target-deployment.md |
+| 4f597d9bc260748b147b995b27ea60b1dff2eaf9 | Integrate provider surveillance into the RG-050 JSON record |
+| ab4fee9018a89ee42819dfc7fb30aafa034823e0 | Add provider surveillance deltas to the daily cycle report |
 
 ## Objective and method
 
 RG-050 adds a dependency-free, fail-closed validator that requires execution, quality/probability and billing records to agree on provider, target, region, route, workload contract, circuit digest, target snapshot and snapshot time. It checks calibration identity, billed/executed job IDs, pricing provenance, cost arithmetic, accepted-output quality, shot counts, latencies, host memory, bytes transferred, retries and energy-measurement status.
 
-The related literature watch covers Richardson, Trifinopoulos and Williams, “Interpretable AI reveals hidden structure in nuclear masses,” Communications AI & Computing, published 2026-10-21. The article motivates a blocked extrapolation test but is not a UQPU reproduction or new physical law.
+The related literature watches cover Richardson, Trifinopoulos and Williams, “Interpretable AI reveals hidden structure in nuclear masses,” Communications AI & Computing, published 2026-10-21, and official provider notices for Qiskit v2.6, Amazon Braket FedRAMP Class C, D-Wave Advantage2 deployment and IonQ's October announcements. These are method/SDK/compliance/deployment leads, not a UQPU reproduction or performance/economic result.
 
 ## Test and CI status
 
 - Local isolated unit tests: **14 passed, 0 failed**.
 - Current-main combined-status endpoint for the base SHA returned zero status entries.
-- The commit-workflow endpoint for the source head returned zero workflow runs. Therefore exact-head GitHub Actions are **UNVERIFIED**, not passed.
+- The previous source head b67e68378b148a6a51b877e530f354449d8d2b18 passed the Python 3.10, 3.11 and 3.12 unit-test matrix; extended QSVT jobs were still queued/in progress at that check. Three later commits added the provider watch and updated the report/integration JSON, making ab4fee9018a89ee42819dfc7fb30aafa034823e0 the current source head. The workflow endpoint has not yet exposed runs for this final head, so exact-head GitHub Actions remain **UNVERIFIED**, not passed.
 - No provider credentials were used, no provider service was initialized, and no free or paid QPU job was submitted.
 - No physical experiment, purchase or funding action occurred.
 
