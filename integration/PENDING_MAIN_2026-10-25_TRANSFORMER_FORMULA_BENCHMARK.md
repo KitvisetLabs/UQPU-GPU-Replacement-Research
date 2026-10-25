@@ -4,7 +4,7 @@
 **Canonical starting main SHA:** 70796ef8b918fe2e95382bc49cd7016a825db7e1  
 **Source repository:** KitvisetLabs/UQPU-GPU-Replacement-Research  
 **Source branch:** research/2026-10-25-transformer-formula-benchmark  
-**Source branch head SHA:** f7ff45e4bc0164c7a842d20ab1833096b4cc1a6e  
+**Source implementation commit SHA:** f7ff45e4bc0164c7a842d20ab1833096b4cc1a6e  
 **PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/98  
 **Status:** PENDING_REVIEW / NOT_MERGED_TO_MAIN
 
