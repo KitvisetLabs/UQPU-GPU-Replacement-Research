@@ -40,9 +40,14 @@ The large append-only `RESEARCH_GAPS.md` and `WORKLOG.md` were not replaced from
 - Exact-head Python test matrix on `8d5976868cac4970bbc2e814e17c4cd5e6b8d094`: Python 3.10, 3.11 and 3.12 jobs passed.
 - Exact-head Autonomous Cold-Start Handoff Audit on the same commit passed.
 - Extended reference-benchmark, QSP/QSVT, Qiskit and target-snapshot jobs were queued at the last poll; full extended-workflow acceptance remains pending.
-- The final branch head changed only by a documentation/status commit after that tested code tree. The new source/test files are unchanged; CI should confirm the latest tree before merge.
+- The Lane A QUBO serializer guard was added after that earlier matrix pass. Current head at this update is `38930b534c607006fba8bc7ce89b911d191ecbf9`; its exact-head matrix and extended checks were queued at the last poll. The cold-start audit for this head was also queued at that poll. Do not treat the earlier matrix pass as validation of the newer QUBO code.
 
 
 ## Lane A update — 2026-10-25
 
 The provider-neutral QUBO serializer now rejects non-finite coefficients before creating either the portable or D-Wave payload. Eight local exhaustive/negative tests passed on a three-variable fixture, including all binary assignments, reversed pair terms, diagonal terms, objective offset and NaN/Infinity rejection. Because this code change followed the earlier Python matrix pass, the current head's exact-head matrix is still required; no QPU/provider job was run.
+
+
+## Latest CI queue observation — 2026-10-25
+
+The current-head workflow queue is backed up. Local smoke tests passed for 12 fusion-evidence tests and 8 QUBO serialization tests; this does not replace exact-head CI. Preserve the current branch and wait for the queued matrix/extended jobs rather than rerunning or promoting intermediate commits.
