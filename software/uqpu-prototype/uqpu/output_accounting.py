@@ -30,8 +30,10 @@ class OutputInformationContract:
 
     distinguishable_outcomes counts accepted output classes under the
     workload's equivalence/quality rule, not internal states or amplitudes.
-    A Fano bound is available only when the target is uniform over those
-    classes and allowed_error_probability describes decoder error.
+    If side information is available, the count is conditional on that
+    explicitly described information. A Fano bound is available only when the
+    target is uniform over those classes and allowed_error_probability describes
+    decoder error.
     """
 
     distinguishable_outcomes: int
@@ -39,6 +41,7 @@ class OutputInformationContract:
     allowed_error_probability: float | None = None
     uniform_prior_assumed: bool = False
     side_information_available: bool = False
+    side_information_description: str | None = None
     encoding_mode: str = "fixed_width"
     required_results_per_second: float | None = None
 
@@ -50,6 +53,11 @@ class OutputInformationContract:
             raise ValueError("uniform_prior_assumed must be a bool")
         if type(self.side_information_available) is not bool:
             raise ValueError("side_information_available must be a bool")
+        if self.side_information_available:
+            if not isinstance(self.side_information_description, str) or not self.side_information_description.strip():
+                raise ValueError("side_information_description is required when side information is available")
+        elif self.side_information_description is not None:
+            raise ValueError("side_information_description requires side_information_available=True")
         if self.encoding_mode not in _ENCODING_MODES:
             raise ValueError(f"encoding_mode must be one of {sorted(_ENCODING_MODES)}")
 
@@ -161,6 +169,10 @@ def audit_output_accounting(
     """
     contract.validate()
     measurement.validate()
+    if measurement.side_information_bytes_per_accepted_result > 0 and not contract.side_information_available:
+        raise ValueError(
+            "measured side-information bytes require side_information_available=True"
+        )
 
     output_bits = measurement.measured_output_bytes_per_accepted_result * 8
     egress_bits = (
