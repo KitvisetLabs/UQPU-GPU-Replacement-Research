@@ -1,0 +1,85 @@
+{
+  "schema": "uqpu-subkev-solid-state-fusion-literature-integration-v1",
+  "integration_id": "INT-20261026-SUBKEV-FUSION-PLATEAU",
+  "work_id": "FUS-SOLID-001",
+  "date": "2026-10-26",
+  "primary_owner_lane": "E_materials_energy_cooling_infrastructure",
+  "integration_owner_lane": "F_economics_benchmarks_evidence",
+  "co_design_lanes": [
+    "D_device_chip_process_fabrication_packaging",
+    "G_quantum_chip_manufacturing_equipment_software_factory"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "feeds": [
+    "FUS-001",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006",
+    "INV-032",
+    "INV-034",
+    "INV-035"
+  ],
+  "status": "LITERATURE_ONLY_MECHANISM_REPLICATION_REQUIRED",
+  "source": {
+    "id": "NCOMMS-SUBKEV-DD-2026-8845",
+    "title": "Enhanced nuclear fusion in the sub-keV energy regime",
+    "authors": "Micah E. Karahadian et al.",
+    "journal": "Nature Communications",
+    "source_date": "2026-07-18",
+    "version_of_record_date": "2026-08-24",
+    "doi": "10.1038/s41467-026-74421-1",
+    "url": "https://www.nature.com/articles/s41467-026-74421-1",
+    "evidence_class": "PEER_REVIEWED_PRIMARY_EXPERIMENT",
+    "reported_observation": "Relative D-D fusion yield plateau below approximately 2 keV center-of-mass energy in Pd/PdD and Ti/TiD targets; constant homogeneous screening-potential model does not describe the full curve.",
+    "critical_boundary": "The quoted enhancement approaching or exceeding 1e18 is relative to an unscreened bare-nucleus yield model. It is not net energy gain, useful electric output, a commercial fusion result, or a UQPU replication."
+  },
+  "candidate_model": {
+    "incumbent_assumption": "A spatially homogeneous target with a constant effective screening potential adequately describes the measured energy-dependent yield.",
+    "alternative_hypothesis": "Depth-weighted heterogeneous reaction environments with independently measured deuterium occupancy and defect state may contribute to the low-energy plateau.",
+    "promotion_status": "HYPOTHESIS_ONLY",
+    "required_checks": [
+      "dimensional consistency and consistent energy frames",
+      "D-D reaction-channel, charge, baryon-number and energy conservation",
+      "causal ordering of loading, irradiation, defect evolution and yield",
+      "homogeneous and single-environment limiting cases",
+      "held-out energy and material predictions",
+      "counterexample search and independent replication"
+    ]
+  },
+  "project_effect": "Add a source-bounded mechanism question to FUS-001/FND-005; do not change any fusion electricity, biomass material, bio-oil, finance or UQPU performance estimate.",
+  "next_gate": "Preregister blinded independent replication with calibrated beam energy/current, matched detector and background controls, absolute yield per delivered charge, depth-resolved deuterium and defect measurements, matched-complexity incumbent/alternative models, held-out low-energy points and an independent lab.",
+  "evidence_promoted_to_project": "none",
+  "lanes": {
+    "A": "No computing workload, compiler/runtime or quantum-advantage result.",
+    "B": "No provider integration or QPU job.",
+    "C": "No memory, state-storage or data-movement result.",
+    "D": "Potential metrology lead for target surface, defect and material-state measurements; no device advantage.",
+    "E": "Reaction-physics literature lead only; no useful power or accepted fuel is demonstrated.",
+    "F": "No net MWh, lifecycle-cost, financing or uncertainty-bounded commercial model.",
+    "G": "No manufacturing yield, target lifetime or scale-up evidence.",
+    "H": "Dated literature watch and cross-lane integration record published."
+  },
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "evidence_boundary": "No new physical law, quantum advantage, biomass-carbon substitution, accepted bio-oil, commercial fusion electricity, interest-rate reduction or Data-Center-to-Phone result is claimed."
+}
