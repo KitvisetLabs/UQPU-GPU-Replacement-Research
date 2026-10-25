@@ -9,14 +9,19 @@
   "canonical_status": "PENDING_REVIEW_NOT_YET_ON_MAIN",
   "primary_owner": "Lane F",
   "implementation_owner": "Lane A",
-  "cross_lane_owners": ["B", "C", "H"],
+  "cross_lane_owners": [
+    "B",
+    "C",
+    "H"
+  ],
   "artifacts": {
     "validator": "software/uqpu-prototype/uqpu/provider_matched_execution_record.py",
     "tests": "software/uqpu-prototype/tests/test_provider_matched_execution_record.py",
     "gap": "docs/RESEARCH_GAP_RG050_PROVIDER_MATCHED_EXECUTION_RECORD.md",
     "lane_owner_contract": "research_lanes/F_economics_benchmarks_evidence_integration/PROVIDER_MATCHED_EXECUTION_RECORD_CONTRACT_RG050.md",
     "literature_watch": "docs/literature_watch/2026-10-26-interpretable-nuclear-mass-structure-and-extrapolation.md",
-    "integration_record": "integration/INT-20261026-RG050-PROVIDER-MATCHED-EXECUTION.json"
+    "integration_record": "integration/INT-20261026-RG050-PROVIDER-MATCHED-EXECUTION.json",
+    "provider_watch": "docs/literature_watch/2026-10-26-provider-sdk-cloud-security-and-target-deployment.md"
   },
   "local_validation": {
     "method": "isolated dependency-free Python unittest suite",
@@ -34,13 +39,13 @@
   "lane_status": {
     "A": {
       "status": "IMPLEMENTED_SOFTWARE_CONTRACT",
-      "delta": "Added a fail-closed record validator for execution, quality, circuit/workload/target identity, job IDs, pricing provenance, cost per accepted output and zero-output semantics.",
-      "next_gate": "Exact-head CI; then continue the existing QSVT/M-QSP and QUBO/QAOA path against competitive baselines under identical useful-output contracts."
+      "delta": "Added fail-closed provider-matched execution-record validation and reviewed Qiskit SDK v2.6's C-API/QPY v18 compatibility implications; no SDK baseline change.",
+      "next_gate": "Exact-head CI, then pinned-v2.5.2/v2.6 no-submit QPY round-trip and logical-semantics check before continuing the same-contract QUBO/QAOA/QSVT path."
     },
     "B": {
       "status": "PROVIDER_NEUTRAL_NO_SUBMIT",
-      "delta": "Provider, target, region, route and billing identity must match; no credentials or live provider access used.",
-      "next_gate": "Official current provider/target pricing and target snapshot plus explicit consent and bounded budget before any live run."
+      "delta": "Provider/target/region/route and billing identity must match; official Braket FedRAMP scope, D-Wave Advantage2 installation and IonQ October announcements were screened. No live provider access.",
+      "next_gate": "Verify target availability, current official pricing and calibration provenance; keep AWS control-plane compliance distinct from third-party QPU boundaries."
     },
     "C": {
       "status": "ACCOUNTING_FIELDS_ENFORCED",
@@ -49,7 +54,7 @@
     },
     "D": {
       "status": "REVIEWED_NO_DEVICE_CHANGE",
-      "delta": "Nuclear-mass interpretability article is a method lead only; no new particle, device or process claim.",
+      "delta": "Nuclear-mass interpretability and provider deployment/manufacturing announcements are method/deployment leads only; no new particle, device or process claim.",
       "next_gate": "Only translate validated workload/device requirements into process-window and package constraints."
     },
     "E": {
@@ -64,7 +69,7 @@
     },
     "G": {
       "status": "REVIEWED_DG_CODESIGN_CONTINUES",
-      "delta": "No equipment, yield, throughput, process-window or factory-cost evidence added.",
+      "delta": "Reviewed D-Wave Advantage2 installation and IonQ manufacturing announcements; no calibrated equipment, process-window, yield, throughput, energy or factory-cost result added.",
       "next_gate": "Co-design manufacturing only from validated device and control/readout resource requirements."
     },
     "H": {
@@ -117,7 +122,14 @@
   "strategic_context": {
     "kanusanan_pongpanna_model_preserved": true,
     "strategic_plan_references_preserved": true,
-    "languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
+    "languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ],
     "recorded_ai_agent_and_funding_references_preserved": true
   },
   "literature_delta": [
@@ -148,24 +160,81 @@
       "url": "https://www.nature.com/articles/s42005-026-02930-y",
       "evidence_class": "JOURNAL_EDITORIAL",
       "project_relevance": "Already covered by a canonical 2026-10-25 watch; effective-theory validity remains explicit."
+    },
+    {
+      "source": "IBM Qiskit SDK v2.6 release summary",
+      "date": "2026-10-22",
+      "url": "https://www.ibm.com/quantum/blog/qiskit-2-6-release-summary",
+      "evidence_class": "OFFICIAL_PROVIDER_RELEASE",
+      "project_relevance": "C API pass-manager/multi-IR lowering and QPY v18 motivate a pinned v2.5.2-v2.6 semantic round-trip test; no performance gain inferred."
+    },
+    {
+      "source": "Amazon Braket FedRAMP Class C scope announcement",
+      "date": "2026-10-16",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/braket-fedramp-class-c/",
+      "evidence_class": "OFFICIAL_CLOUD_COMPLIANCE_ANNOUNCEMENT",
+      "project_relevance": "Security boundary only; third-party QPU execution remains outside the stated AWS-operated boundary."
+    },
+    {
+      "source": "D-Wave Advantage2 deployment announcement for Italy",
+      "date": "2026-10-15",
+      "url": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-delivers-italy-s-first-annealing-quantum-computer/",
+      "evidence_class": "OFFICIAL_PROVIDER_DEPLOYMENT_ANNOUNCEMENT",
+      "project_relevance": "Target-discovery lead after installation and verified Leap availability; not a UQPU performance/cost result."
+    },
+    {
+      "source": "IonQ official newsroom October announcements",
+      "date": "2026-10-07/09/15",
+      "url": "https://www.ionq.com/news",
+      "evidence_class": "OFFICIAL_PROVIDER_ANNOUNCEMENTS",
+      "project_relevance": "Cambridge centre, quantum-memory interconnect and DARPA benchmark-program updates remain vendor-reported; no UQPU target-matched result."
     }
   ],
   "integration_edges": [
-    {"from": "A", "to": "B", "contract": "Execution records bind provider/target/route identity."},
-    {"from": "A", "to": "F", "contract": "Accepted-output cost requires the same workload and quality contract."},
-    {"from": "B", "to": "F", "contract": "Probability, target and billing provenance cannot be cross-provider joined."},
-    {"from": "C", "to": "F", "contract": "Memory, transfer, latency and retries are part of total cost."},
-    {"from": "D", "to": "G", "contract": "Device/process co-design continues without unsupported fabrication claims."},
-    {"from": "H", "to": "D", "contract": "Nuclear-mass interpretability is a literature lead, not a device primitive."},
-    {"from": "H", "to": "F", "contract": "Evidence class, uncertainty and blocked extrapolation are explicit."}
+    {
+      "from": "A",
+      "to": "B",
+      "contract": "Execution records bind provider/target/route identity."
+    },
+    {
+      "from": "A",
+      "to": "F",
+      "contract": "Accepted-output cost requires the same workload and quality contract."
+    },
+    {
+      "from": "B",
+      "to": "F",
+      "contract": "Probability, target and billing provenance cannot be cross-provider joined."
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "contract": "Memory, transfer, latency and retries are part of total cost."
+    },
+    {
+      "from": "D",
+      "to": "G",
+      "contract": "Device/process co-design continues without unsupported fabrication claims."
+    },
+    {
+      "from": "H",
+      "to": "D",
+      "contract": "Nuclear-mass interpretability is a literature lead, not a device primitive."
+    },
+    {
+      "from": "H",
+      "to": "F",
+      "contract": "Evidence class, uncertainty and blocked extrapolation are explicit."
+    }
   ],
   "sync_debt": [
     "The source branch and research artifacts are not canonical main until reviewed and merged.",
     "The main append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial connector excerpts; RG-050 is recorded as a dedicated gap artifact.",
     "Current main combined-status and commit-workflow endpoints returned no entries for the latest main SHA; exact latest main Actions state could not be independently verified from those endpoints.",
-    "A separate pending-main sync PR is required by integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md."
+    "A separate pending-main sync PR is required by integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md.",
+    "Provider-watch article was added after the initial PR head; pending-main summary must be refreshed to the final source SHA and updated changed-file count."
   ],
   "no_paid_qpu_submission": true,
   "no_external_physical_experiment": true,
-  "next_highest_value_gate": "Obtain exact-head CI for this branch; review and merge only after checks; then, if the owner separately supplies credentials, bounded budget and explicit consent, execute one provider-matched pilot with the same useful-output contract and competitive classical baseline."
+  "next_highest_value_gate": "Obtain exact-head CI for this branch; then run a no-submit Qiskit 2.5.2/2.6 QPY round-trip and logical-semantics test. After review, any live provider pilot still requires explicit consent, credentials and a bounded budget."
 }
