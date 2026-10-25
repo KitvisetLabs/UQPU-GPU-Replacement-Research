@@ -126,6 +126,13 @@
       "status": "covered on open PR #87/#53; source-data reproduction remains DATA_BLOCKED",
       "evidence_class": "LITERATURE_ONLY",
       "source_url": "https://doi.org/10.1088/2632-2153/ae9c8b"
+    },
+    {
+      "source": "Probing False Vacuum Decay on a Cold-Atom Gauge-Theory Quantum Simulator",
+      "date": "2026-10-01",
+      "status": "new dated watch and falsifiable FND-005 follow-up on open PR #114; not canonical main at cycle start",
+      "evidence_class": "PUBLISHED_EXPERIMENT_SOURCE / LITERATURE_ONLY_FOR_UQPU",
+      "source_url": "https://journals.aps.org/prl/abstract/10.1103/vhnm-j9bw"
     }
   ],
   "next_gate": "Run exact-head Python 3.10/3.11/3.12 and focused tests; integrate output accounting into a matched useful-output CPU/GPU/UQPU benchmark before any economics claim.",
