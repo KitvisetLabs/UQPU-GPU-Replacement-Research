@@ -13,7 +13,7 @@
     "EQN-001_to_EQN-006"
   ],
   "publication_owner_lane": "H_kanusanan_pongpanna_model_strategy_finance_future_industries",
-  "status": "CODE_AND_LITERATURE_ARTIFACTS_PENDING_EXACT_HEAD_CI_AND_REVIEW",
+  "status": "PYTHON_MATRIX_PASS_EXTENDED_QSP_QSVT_PENDING_REVIEW",
   "evidence_class": [
     "SOFTWARE_REGRESSION_TEST",
     "LITERATURE_ONLY",
@@ -34,7 +34,7 @@
   },
   "expected_vs_measured": {
     "lane_a_expected": "All four orderings remain numerically rejected with no constructive witness at each frozen tolerance.",
-    "lane_a_measured": null,
+    "lane_a_measured": "Unit/invariant tests and CLI smoke passed on source head 06fdac2af2286fbc081492ad708aef6f8f3b13f8 in workflow run 40171773729 across Python 3.10/3.11/3.12; extended QSP/QSVT jobs were still in progress or queued at last observation.",
     "lane_e_expected": "Held-out event-detection metrics may inform availability/maintenance uncertainty if source data are obtained.",
     "lane_e_measured": null
   },
@@ -85,7 +85,7 @@
     "starting_head_workflow_lookup": "NO_RUNS_RETURNED_BY_PR_FILTERED_CONNECTOR",
     "latest_recorded_code_test_commit": "25b5a6b03fe527760d84cbdc51388b4d34ff18ba",
     "latest_recorded_code_test_status": "Python 3.10/3.11/3.12, cold-start and QSP/QSVT reference-target checks passed; extended workflow was still in progress in the recorded snapshot",
-    "this_branch_exact_head_status": "PENDING"
+    "this_branch_exact_head_status": "Python 3.10/3.11/3.12 unit/invariant and CLI smoke success on 06fdac2af2286fbc081492ad708aef6f8f3b13f8; extended QSP/QSVT jobs in progress/queued; documentation-only follow-up head requires its own run"
   },
   "sync": {
     "canonical_main": "70796ef8b918fe2e95382bc49cd7016a825db7e1",
