@@ -8,6 +8,7 @@ from uqpu.fundamental_limits import (
     landauer_minimum_joule,
     landauer_minimum_joule_per_bit,
     margolus_levitin_min_seconds,
+    fault_tolerance_memory_log_overhead_term,
 )
 
 
@@ -44,6 +45,45 @@ class FundamentalLimitTests(unittest.TestCase):
                 margolus_levitin_min_seconds(bad)
         with self.assertRaises(ValueError):
             landauer_minimum_joule(-1.0, 300.0)
+
+
+class FaultToleranceMemoryScalingTests(unittest.TestCase):
+    def test_published_width_duration_examples(self):
+        expected_term = math.log(1e12)
+        self.assertAlmostEqual(
+            fault_tolerance_memory_log_overhead_term(1, 10**9, 1e-3),
+            expected_term,
+        )
+        self.assertAlmostEqual(
+            fault_tolerance_memory_log_overhead_term(1024, 10**9, 1e-3),
+            expected_term / 1024,
+        )
+
+    def test_reliability_term_increases_with_duration_and_tighter_error(self):
+        baseline = fault_tolerance_memory_log_overhead_term(32, 10**6, 1e-3)
+        self.assertGreater(
+            fault_tolerance_memory_log_overhead_term(32, 10**9, 1e-3),
+            baseline,
+        )
+        self.assertGreater(
+            fault_tolerance_memory_log_overhead_term(32, 10**6, 1e-6),
+            baseline,
+        )
+        self.assertLess(
+            fault_tolerance_memory_log_overhead_term(64, 10**6, 1e-3),
+            baseline,
+        )
+
+    def test_invalid_width_duration_and_error_are_rejected(self):
+        for width in (0, -1, True, 1.0):
+            with self.assertRaises(ValueError):
+                fault_tolerance_memory_log_overhead_term(width, 10, 1e-3)
+        for steps in (0, -1, True, 1.0):
+            with self.assertRaises(ValueError):
+                fault_tolerance_memory_log_overhead_term(1, steps, 1e-3)
+        for epsilon in (0.0, 1.0, -1.0, float("nan"), float("inf")):
+            with self.assertRaises(ValueError):
+                fault_tolerance_memory_log_overhead_term(1, 10, epsilon)
 
 
 class FrontierContractTests(unittest.TestCase):

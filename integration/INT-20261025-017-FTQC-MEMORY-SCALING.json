@@ -1,0 +1,107 @@
+{
+  "schema": "uqpu-daily-cycle-integration-v1",
+  "cycle_date": "2026-10-25",
+  "work_id": "FND-FTQC-001",
+  "starting_main_sha": "6667def60af2d426e16f6aaa6bc5b9461fc70071",
+  "primary_owner": "A_quantum_programming_runtime",
+  "integration_owners": [
+    "C_state_memory_storage_data_movement",
+    "F_economics_benchmark_evidence"
+  ],
+  "publication_owner": "H_strategy_finance_future_industries",
+  "status": "MODEL_ONLY_SCALING_HELPER_ADDED_TESTS_PENDING_NEW_COMMIT_CI",
+  "evidence_class": [
+    "SOFTWARE_UNIT_TESTS",
+    "MODEL_ONLY_SCALING_DIAGNOSTIC",
+    "LITERATURE_ONLY"
+  ],
+  "project_evidence_promoted": false,
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "function": "fault_tolerance_memory_log_overhead_term(logical_qubits,time_steps,target_error)",
+    "expression": "log(S/epsilon)/K",
+    "tests_added": 3,
+    "scope": "dimensionless asymptotic width-duration term only; source theorem assumptions must be checked"
+  },
+  "sources": [
+    {
+      "id": "LIT-FTQC-2608.26272",
+      "title": "Fault-tolerant quantum computation cannot be achieved with constant spacetime overhead",
+      "date": "2026-08-26",
+      "class": "ARXIV_THEORY_PREPRINT",
+      "url": "https://arxiv.org/abs/2608.26272"
+    },
+    {
+      "id": "LIT-THERMO-MEMORY-2026-09-25",
+      "title": "Consistent time reversal and reliable and accurate inference in the presence of memory",
+      "date": "2026-09-25",
+      "class": "PRL_ACCEPTED_PAPER",
+      "url": "https://journals.aps.org/prl/accepted/10.1103/gwf7-6kvr"
+    }
+  ],
+  "lane_status": {
+    "A": "scaling diagnostic added; M-QSP algorithm and independent fixtures still open",
+    "B": "provider capabilities/pricing unchanged; no QPU job",
+    "C": "width-duration diagnostic added; readable memory, state, I/O and transfer remain unmeasured",
+    "D": "no device/fabrication result; target-native requirements remain downstream",
+    "E": "BIO-001 and FUS-001 remain open; no material/fuel/net-electric evidence",
+    "F": "scope caveats and tests added; no accepted-task cost, energy or financing result",
+    "G": "no manufacturing result; D/G co-design retained",
+    "H": "dated literature watch, batch and gap artifact published; multilingual strategic references preserved"
+  },
+  "foundational": {
+    "FND_001": "memory-aware thermodynamic inference is a methodological follow-up; no project energy measurement",
+    "FND_002": "scoped fault-tolerance width-duration term recorded; no classical output/storage replacement result",
+    "FND_003": "no matched control-vs-QSL measurement",
+    "FND_004": "no alternative physical primitive demonstrated",
+    "FND_005": "no new particle/QFT mechanism",
+    "FND_006": "no theorem proved by this change",
+    "EQN_001_to_006": "no physical equation proposed or promoted"
+  },
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035",
+    "INV-036",
+    "INV-037"
+  ],
+  "root_directives_preserved": [
+    "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md",
+    "00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md",
+    "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md",
+    "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+    "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+    "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+    "05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md",
+    "06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md"
+  ],
+  "multilingual_plan_languages": [
+    "Thai",
+    "English",
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "German"
+  ],
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "fabrication_authorized": false,
+    "funding_authorized": false
+  },
+  "sync_debt": [
+    "Large append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial reads; new gap is recorded as a dated artifact.",
+    "New commit CI must complete before this change can be called validated."
+  ],
+  "next_gate": [
+    "Implement and independently audit the published M-QSP constructive decision algorithm on frozen feasible/infeasible fixtures.",
+    "Build a synthetic known-truth memory-order coverage benchmark for FND-001."
+  ]
+}

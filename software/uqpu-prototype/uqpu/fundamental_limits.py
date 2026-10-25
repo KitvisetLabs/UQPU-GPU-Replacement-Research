@@ -101,3 +101,40 @@ def margolus_levitin_observed_to_bound_ratio(
     """
     observed = _positive_finite("observed_duration_seconds", observed_duration_seconds)
     return observed / margolus_levitin_min_seconds(mean_energy_above_ground_joule)
+
+
+def fault_tolerance_memory_log_overhead_term(
+    logical_qubits: int,
+    time_steps: int,
+    target_error: float,
+) -> float:
+    """Return log(S / epsilon) / K for a scoped fault-tolerant memory model.
+
+    Bharti, Haug and Tanggara (arXiv:2608.26272) show
+    C_min(K,S,epsilon) = Theta(S * (K + log(S/epsilon))) for their
+    independent-erasure memory model with the stated noise/error assumptions
+    and ideal recovery. This helper returns only the dimensionless
+    log(S/epsilon)/K term that controls the width-duration crossover.
+
+    This is an asymptotic scaling diagnostic, not an exact overhead, a
+    hardware-resource prediction, a bound for arbitrary noise models, or
+    evidence of a physical or economic advantage. Applying the paper's
+    theorem still requires checking its full assumptions.
+    """
+    if (
+        not isinstance(logical_qubits, int)
+        or isinstance(logical_qubits, bool)
+        or logical_qubits <= 0
+    ):
+        raise ValueError("logical_qubits must be a positive integer")
+    if (
+        not isinstance(time_steps, int)
+        or isinstance(time_steps, bool)
+        or time_steps <= 0
+    ):
+        raise ValueError("time_steps must be a positive integer")
+    epsilon = float(target_error)
+    if not math.isfinite(epsilon) or not 0.0 < epsilon < 1.0:
+        raise ValueError("target_error must be finite and strictly between 0 and 1")
+    # Difference of logs avoids overflow in time_steps / epsilon.
+    return (math.log(time_steps) - math.log(epsilon)) / logical_qubits
