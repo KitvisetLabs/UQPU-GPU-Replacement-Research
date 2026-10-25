@@ -4,7 +4,7 @@
 **Canonical repository:** `KitvisetLabs/UQPU-GPU-Replacement-Research`  
 **Main base SHA at audit:** `5fbe3d295ad6ca5b7c701f05c64899829910cbe8`  
 **Source PR:** [#55 — FND-003 thermodynamic speed-limit literature and falsifiable test contract](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/55)  
-**Source branch/head at this handoff:** `research/2026-10-24-fnd003-thermodynamic-speed-limits` @ `ce8ed3d9aa3cc3dcbff4836fc37cb35d3dec0fac`  
+**Source branch/head at this handoff:** `research/2026-10-24-fnd003-thermodynamic-speed-limits` @ `0d1eb258d62b06255cab900c4b679560fd8498f7`  
 **Source commit:** [6179dc52c6f350048d119e0897c760705c7e1b87](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/6179dc52c6f350048d119e0897c760705c7e1b87)  
 **Research-Sync:** pending-main until reviewed/merged.
 
