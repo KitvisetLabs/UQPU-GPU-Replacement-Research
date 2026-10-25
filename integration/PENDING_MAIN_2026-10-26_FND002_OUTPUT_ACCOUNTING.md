@@ -4,7 +4,7 @@
 **Canonical main base SHA:** 5fbe3d295ad6ca5b7c701f05c64899829910cbe8  
 **Source PR:** #112 — FND-002: integrate output-information and reconstruction accounting  
 **Source branch:** research/2026-10-26-fnd002-output-accounting  
-**Source head at sync-record creation:** b1c996ecd1e87bf3a49530d6c79fc58f7c314fd2  
+**Source head at sync-record creation:** e603bb417429b33475e2da2f8f0bdf1c0f20afd4  
 **Work item:** FND002-OUT-001  
 **Integration record:** INT-FND002-OUTPUT-ACCOUNTING-20261026-001  
 **Status:** PENDING_MAIN_REVIEW; source implementation is not merged and must not be treated as canonical main.
@@ -14,7 +14,7 @@
 - Add output-information contract semantics for distinguishable accepted outcomes, exactness/error budget, uniform-prior assumption, side-information provenance, encoding mode and output rate.
 - Add per-accepted-result output bytes, reconstruction time, side-information bytes, measured result rate and measured error.
 - Integrate the contract into WorkloadContract and BenchmarkRunPlan with fail-closed validation.
-- Add 14 focused tests and a dated A–H cycle report plus a machine-readable integration record.
+- Add 15 focused tests and a dated A–H cycle report plus a machine-readable integration record.
 
 ## Files on the source branch
 
