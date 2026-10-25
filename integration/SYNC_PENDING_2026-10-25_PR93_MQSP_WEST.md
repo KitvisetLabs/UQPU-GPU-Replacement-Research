@@ -39,3 +39,8 @@ The starting-main combined-status endpoint returned no status contexts. The comm
 - Do not overwrite large append-only `WORKLOG.md`, `RESEARCH_GAPS.md` or historical scoreboards from partial reads.
 - Review PR #93 under normal branch protection; verify its latest head and all required checks. If merged, record the exact source-head-to-main-SHA mapping in the next reconciliation checkpoint.
 - Continue the independent M-QSP-CDA/exact-algebraic gate and FUS-001 source-data/held-out wall-event reliability gate.
+
+
+## Cold-start audit repair — 2026-10-25
+
+The exact-head cold-start audit for the initial pending-main sync commit failed closed with `missing_commit_trailer:Research-Sync: pending-main`. The audit also confirmed all nine registered lane records and 36 pairwise integration checks; it did not report a missing lane or artifact. This follow-up commit is intentionally stamped with the required `Research-Sync: pending-main` trailer so the audit can validate the sync branch's current HEAD. The source PR #93 remains open and unmerged; this metadata repair does not imply its research changes are canonical on main. Recheck the new exact-head Actions run before claiming the repair passed.
