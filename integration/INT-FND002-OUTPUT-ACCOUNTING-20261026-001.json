@@ -112,6 +112,20 @@
       "status": "covered on open PR #104; not canonical main at cycle start",
       "evidence_class": "LITERATURE_ONLY",
       "source_url": "https://arxiv.org/abs/2610.20685"
+    },
+    {
+      "source": "Beyond empirical models: Discovering constitutive laws in solids with graph-based equation discovery (GraphED)",
+      "date": "2026-09-11",
+      "status": "covered on open PR #53; older base and overlapping changes require conflict-aware review; not canonical main",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://doi.org/10.1126/sciadv.aec0989"
+    },
+    {
+      "source": "Physics-informed symbolic regression for particle-interface dynamics",
+      "date": "2026-09-08",
+      "status": "covered on open PR #87/#53; source-data reproduction remains DATA_BLOCKED",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://doi.org/10.1088/2632-2153/ae9c8b"
     }
   ],
   "next_gate": "Run exact-head Python 3.10/3.11/3.12 and focused tests; integrate output accounting into a matched useful-output CPU/GPU/UQPU benchmark before any economics claim.",
