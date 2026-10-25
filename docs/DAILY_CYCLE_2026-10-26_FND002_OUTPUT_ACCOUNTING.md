@@ -40,7 +40,7 @@ Fail-closed checks:
 5. Approximate non-uniform tasks do not receive a fabricated Fano bound; the Fano expression is returned only when the uniform-prior assumption and error probability are explicit.
 6. Output bytes, side-information bytes, reconstruction time and result rate are kept separate. No bit count is converted directly into joules, physical memory capacity, channel capacity, quantum advantage or cost advantage.
 
-The new test file contains 12 focused tests covering exact and approximate bounds, output rate, reconstruction, side-information/non-fixed encoding, malformed inputs, and benchmark-boundary enforcement. These tests have been committed to the research branch but **have not yet been confirmed by GitHub Actions** at the time of this record.
+The new test file contains 14 focused tests covering exact and approximate bounds, output rate, reconstruction, side-information/non-fixed encoding, malformed inputs, and benchmark-boundary enforcement. These tests have been committed to the research branch but **have not yet been confirmed by GitHub Actions** at the time of this record.
 
 ## 3. Fresh literature surveillance — 2026-10-26
 
@@ -97,6 +97,6 @@ INV-025/026/027 and the A–H architecture remain preserved. The 100M-unit targe
 - Added a Lane-C-owned FND-002 output-information contract, Lane-A benchmark integration and focused regression tests on branch `research/2026-10-26-fnd002-output-accounting`.
 - No large append-only canonical file was overwritten. No paid QPU job, external spend, material experiment or fusion plant measurement occurred.
 - Source branch is pending review. Its source SHA → main SHA mapping does not exist until the branch is reviewed/merged or explicitly synchronized.
-- **Next highest-value gate:** verify exact-head Actions and all 12 focused tests; then connect the contract to one real workload's accepted-output semantics and matched CPU/GPU reference, collecting measured output bytes, reconstruction time, state/I/O/transfer, error/quality, latency and total cost per accepted useful task. Simulator/dry-run first.
+- **Next highest-value gate:** verify exact-head Actions and all 14 focused tests; then connect the contract to one real workload's accepted-output semantics and matched CPU/GPU reference, collecting measured output bytes, reconstruction time, state/I/O/transfer, error/quality, latency and total cost per accepted useful task. Simulator/dry-run first.
 
 This record is a research/software update, not evidence of quantum advantage, new physical law, material/fuel/electricity advantage, financing savings or Data-Center-to-Phone feasibility.
