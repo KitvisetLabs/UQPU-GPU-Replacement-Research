@@ -1,0 +1,150 @@
+{
+  "schema": "uqpu-mqsp-constructivity-prototype-v1",
+  "date": "2026-10-25",
+  "evidence_class": [
+    "SOFTWARE_UNIT_TESTS",
+    "NUMERICAL_PROTOTYPE_ONLY"
+  ],
+  "source": {
+    "title": "Polynomial time constructive decision algorithm for multivariable quantum signal processing",
+    "authors": [
+      "Yuki Ito",
+      "Hitomi Mori",
+      "Kazuki Sakamoto",
+      "Keisuke Fujii"
+    ],
+    "venue": "Quantum 10, 2102 (2026)",
+    "doi": "10.22331/q-2026-05-12-2102",
+    "arxiv": "2410.02332v3",
+    "algorithm": "Algorithm 1 M-QSP-CDA"
+  },
+  "implementation": {
+    "path": "software/uqpu-prototype/uqpu/mqsp_constructivity.py",
+    "arithmetic": "IEEE floating-point complex",
+    "tolerance": 1e-9,
+    "exact_arithmetic": false,
+    "formal_proof": false,
+    "provider_jobs": 0,
+    "shots": 0,
+    "hardware_execution": false
+  },
+  "fixtures": [
+    {
+      "id": "MQSP-FEAS-001",
+      "variables": 1,
+      "steps": 1,
+      "expected": "candidate feasible",
+      "signal_indices": [
+        0
+      ],
+      "phase_angles": [
+        0.2,
+        -0.4
+      ],
+      "P": {
+        "1": [
+          0.490033288921,
+          -0.099334665398
+        ],
+        "-1": [
+          0.490033288921,
+          -0.099334665398
+        ]
+      },
+      "Q": {
+        "1": [
+          0.412667807455,
+          0.282321236698
+        ],
+        "-1": [
+          -0.412667807455,
+          -0.282321236698
+        ]
+      },
+      "independent_reconstruction_residual_max_lt": 1e-8
+    },
+    {
+      "id": "MQSP-FEAS-002",
+      "variables": 2,
+      "steps": 2,
+      "expected": "candidate feasible",
+      "signal_indices": [
+        1,
+        0
+      ],
+      "phase_angles": [
+        0.15,
+        -0.35,
+        0.25
+      ],
+      "P": {
+        "-1,-1": [
+          0.432609782317,
+          0.182904482324
+        ],
+        "-1,1": [
+          0.06676534788,
+          -0.157914897688
+        ],
+        "1,-1": [
+          0.06676534788,
+          -0.157914897688
+        ],
+        "1,1": [
+          0.432609782317,
+          0.182904482324
+        ]
+      },
+      "Q": {
+        "-1,-1": [
+          -0.467339881016,
+          0.046890393714
+        ],
+        "-1,1": [
+          0.017116329839,
+          0.170592373341
+        ],
+        "1,-1": [
+          -0.017116329839,
+          -0.170592373341
+        ],
+        "1,1": [
+          0.467339881016,
+          -0.046890393714
+        ]
+      },
+      "independent_reconstruction_residual_max_lt": 1e-7
+    },
+    {
+      "id": "MQSP-INF-001",
+      "variables": 1,
+      "steps": 0,
+      "expected": "rejected by zero-step base condition",
+      "P": {
+        "0": [
+          0.5,
+          0
+        ]
+      },
+      "Q": {},
+      "reason": "zero-step definition requires P to be unit-modulus constant and Q=0"
+    }
+  ],
+  "tests": {
+    "count": 5,
+    "passed": 5,
+    "failed": 0,
+    "method": "python -m unittest -v test_mqsp_constructivity"
+  },
+  "limitations": [
+    "Numerical tolerance can create false positives or negatives near boundaries.",
+    "This is not an exact-arithmetic or formally verified theorem implementation.",
+    "The negative fixture is a zero-step definition control, not a broad adversarial infeasibility suite.",
+    "No provider lowering, native-gate cost, energy, accepted application output, or economic advantage measured."
+  ],
+  "next_gate": [
+    "Add theorem-derived nontrivial infeasible fixtures including the published M-QSP counterexample.",
+    "Cross-check recursion and witness reconstruction with an independent implementation.",
+    "Add tolerance sweeps and randomized feasible circuits before any broader algorithmic claim."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "uqpu-fnd001-synthetic-memory-order-cmi-v1",
+  "date": "2026-10-25",
+  "evidence_class": [
+    "MODEL_ONLY",
+    "SYNTHETIC_KNOWN_TRUTH"
+  ],
+  "estimator": "plug-in adjacent-lag conditional mutual information in bits",
+  "definition": "I(X_t; X_{t-k-1} | X_{t-k},...,X_{t-1}) for conditioning order k",
+  "processes": [
+    {
+      "id": "FND001-MEM-ORDER-1",
+      "truth": "first-order binary Markov chain",
+      "seed": 1729,
+      "length": 30000,
+      "transition": "P(X_t=X_{t-1})=0.9",
+      "profile_bits": {
+        "0": 0.5147233798084161,
+        "1": 0.00014049726657894626,
+        "2": 0.00020681067002031165
+      }
+    },
+    {
+      "id": "FND001-MEM-ORDER-2",
+      "truth": "second-order noisy XOR chain",
+      "seed": 2718,
+      "length": 30000,
+      "transition": "X_t = X_{t-1} XOR X_{t-2} XOR Bernoulli(0.03)",
+      "profile_bits": {
+        "0": 0.00002508702911040682,
+        "1": 0.8084538681253943,
+        "2": 0.0001004978150622991
+      }
+    }
+  ],
+  "validation": {
+    "tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "random_seeded": true,
+    "local_command": "python -m unittest -v test_thermodynamic_memory_order"
+  },
+  "limitations": [
+    "Adjacent-lag CMI is not a proof of Markov order.",
+    "Plug-in estimates have finite-sample bias and no confidence interval here.",
+    "No entropy production, heat, wall-plug energy, or real-system estimate was calculated.",
+    "No physical or commercial evidence promoted."
+  ],
+  "next_gate": [
+    "Calibrate sample-length and alphabet-dependent bias on frozen known-truth processes.",
+    "Compare a preregistered estimator against known-truth entropy production with uncertainty coverage.",
+    "Keep all real-system claims blocked until observation and estimator assumptions are validated."
+  ]
+}
