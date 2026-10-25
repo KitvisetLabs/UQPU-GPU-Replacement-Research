@@ -168,5 +168,30 @@ class MQSPConstructivityDecisionTests(unittest.TestCase):
                 _assert_polynomials_close(self, q, reconstructed_q, tolerance=1e-8)
 
 
+    def test_published_nonconstructible_pair_is_invariant_to_term_order(self):
+        p, q = _published_nonconstructible_pair()
+        variants = (
+            (p, q),
+            (dict(sorted(p.items())), dict(sorted(q.items()))),
+            (dict(reversed(sorted(p.items()))), dict(reversed(sorted(q.items())))),
+            (dict(reversed(list(p.items()))), dict(reversed(list(q.items())))),
+        )
+        for tolerance in (1e-12, 1e-9, 1e-6):
+            with self.subTest(tolerance=tolerance):
+                decisions = [
+                    mqsp_constructivity_decision(
+                        p_variant, q_variant, variable_count=2,
+                        n_steps=4, tolerance=tolerance
+                    )
+                    for p_variant, q_variant in variants
+                ]
+                self.assertEqual(
+                    [decision.candidate_feasible for decision in decisions],
+                    [False] * len(variants),
+                )
+                for decision in decisions:
+                    self.assertEqual(decision.signal_indices, ())
+                    self.assertEqual(decision.phase_angles, ())
+
 if __name__ == "__main__":
     unittest.main()

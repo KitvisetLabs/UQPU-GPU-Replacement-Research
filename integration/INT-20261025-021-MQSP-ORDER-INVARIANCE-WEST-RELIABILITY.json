@@ -1,0 +1,119 @@
+{
+  "schema": "uqpu-integration-v1",
+  "integration_id": "INT-20261025-021",
+  "date": "2026-10-25",
+  "starting_main_sha": "70796ef8b918fe2e95382bc49cd7016a825db7e1",
+  "source_branch": "research/2026-10-25-mqsp-order-invariance-west-wall-watch",
+  "primary_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "cross_lane_owners": [
+    "E_materials_energy_cooling_infrastructure",
+    "F_economics_benchmarks_evidence",
+    "FND-001",
+    "FND-006",
+    "EQN-001_to_EQN-006"
+  ],
+  "publication_owner_lane": "H_kanusanan_pongpanna_model_strategy_finance_future_industries",
+  "status": "PYTHON_MATRIX_PASS_EXTENDED_QSP_QSVT_PENDING_REVIEW",
+  "evidence_class": [
+    "SOFTWARE_REGRESSION_TEST",
+    "LITERATURE_ONLY",
+    "MODEL_ONLY_BOUNDARY_RETAINED"
+  ],
+  "artifacts": {
+    "batch": "docs/BATCH_064_MQSP_ORDER_INVARIANCE_AND_WEST_RELIABILITY_WATCH.md",
+    "lane_a_test": "software/uqpu-prototype/tests/test_mqsp_constructivity.py",
+    "literature_watch": "docs/literature_watch/2026-10-25-west-wall-protection-long-pulse-reliability.md",
+    "fnd001_calibration": "benchmarks/results/fnd001-cmi-bias-calibration-2026-10-25.json",
+    "prior_integration": "integration/INT-20261025-019-MECHANISM-COUNT-AND-MQSP.json"
+  },
+  "hypothesis": "A numerical feasibility decision for a published M-QSP polynomial pair should be invariant to semantically irrelevant dictionary insertion order; independently measured wall-protection reliability could later constrain fusion availability and maintenance assumptions.",
+  "method": {
+    "lane_a": "Re-run the published two-variable nonconstructible pair under four deterministic coefficient-map orderings and tolerances 1e-12, 1e-9, 1e-6.",
+    "lane_e": "Source-bounded analysis of WEST long-pulse wall-protection preprint; no project data or commercial assumptions imported.",
+    "lane_f": "Keep cost, availability and financing inputs null unless supported by traceable measurement."
+  },
+  "expected_vs_measured": {
+    "lane_a_expected": "All four orderings remain numerically rejected with no constructive witness at each frozen tolerance.",
+    "lane_a_measured": "Unit/invariant tests and CLI smoke passed on source head 06fdac2af2286fbc081492ad708aef6f8f3b13f8 in workflow run 40171773729 across Python 3.10/3.11/3.12; extended QSP/QSVT jobs were still in progress or queued at last observation.",
+    "lane_e_expected": "Held-out event-detection metrics may inform availability/maintenance uncertainty if source data are obtained.",
+    "lane_e_measured": null
+  },
+  "physical_units_and_contracts": {
+    "lane_a": "dimensionless Laurent-polynomial coefficients; numerical tolerance is not a physical uncertainty model",
+    "lane_e": "wall temperature/power, warning lead time, event rates, maintenance hours and net delivered MWh must retain source units and uncertainty"
+  },
+  "negative_evidence": [
+    "No exact/algebraic M-QSP proof or independent implementation was added.",
+    "No UQPU target execution, provider price, shots, accepted-task quality, host/I/O/energy or total cost was measured.",
+    "No WEST raw data, causal wall-lifetime effect, plant availability, net electricity, CAPEX/OPEX or financing effect was established.",
+    "No new physical law, Pangola material substitution, accepted bio-oil or commercial fusion result was established."
+  ],
+  "mission_invariants": {
+    "INV-029": "open; no phone-class service/physical/energy/lifecycle contract closed",
+    "INV-030": "open; no biomass-carbon functional substitution evidence",
+    "INV-031": "open; no accepted liquid-energy/fuel economics",
+    "INV-032": "open; wall-protection is a literature lead, not net-electricity evidence",
+    "INV-033": "open; no principal/interest/WACC effect measured",
+    "INV-034": "open; numerical robustness check only, no new physical result",
+    "INV-035": "preserved; numerical candidate classification cannot establish a physical law"
+  },
+  "cross_lane_edges": [
+    {
+      "from": "A",
+      "to": "F",
+      "interface": "numerical decision stability -> reproducibility/evidence label",
+      "status": "TESTING",
+      "falsifier": "classification or witness changes under order-only permutations"
+    },
+    {
+      "from": "E",
+      "to": "D/G",
+      "interface": "wall event detection -> component/process qualification and maintenance intervals",
+      "status": "PROPOSED",
+      "falsifier": "no held-out improvement over baseline or no causal/traceable link to damage/maintenance"
+    },
+    {
+      "from": "E",
+      "to": "F/H",
+      "interface": "uncertainty-bounded availability and maintenance -> FUS-001/FIN-001 scenario inputs",
+      "status": "BLOCKED",
+      "falsifier": "unbounded auxiliary loads, replacement intervals or financing assumptions erase any proposed net-electric/economic benefit"
+    }
+  ],
+  "ci": {
+    "starting_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
+    "starting_head_workflow_lookup": "NO_RUNS_RETURNED_BY_PR_FILTERED_CONNECTOR",
+    "latest_recorded_code_test_commit": "25b5a6b03fe527760d84cbdc51388b4d34ff18ba",
+    "latest_recorded_code_test_status": "Python 3.10/3.11/3.12, cold-start and QSP/QSVT reference-target checks passed; extended workflow was still in progress in the recorded snapshot",
+    "this_branch_exact_head_status": "Python 3.10/3.11/3.12 unit/invariant and CLI smoke success on 06fdac2af2286fbc081492ad708aef6f8f3b13f8; extended QSP/QSVT jobs in progress/queued; documentation-only follow-up head requires its own run"
+  },
+  "sync": {
+    "canonical_main": "70796ef8b918fe2e95382bc49cd7016a825db7e1",
+    "main_merge_sha": null,
+    "sync_status": "PENDING_REVIEW_NOT_MERGED",
+    "sync_debt": [
+      "WORKLOG.md append-only update deferred",
+      "RESEARCH_GAPS.md append-only update deferred",
+      "EIGHT_LANE_SCOREBOARD.md append-only update deferred",
+      "current open PRs and source-SHA-to-main mappings require normal review/reconciliation"
+    ]
+  },
+  "non_claims": [
+    "No exact M-QSP theorem proof or complete independent algorithm reproduction.",
+    "No real-QPU job or quantum advantage.",
+    "No readable classical memory/storage replacement.",
+    "No Pangola functional material substitution, accepted bio-oil or commercial fusion electricity.",
+    "No lower principal, absolute interest, WACC or economy-wide interest-rate result.",
+    "No AI-generated equation promoted to a physical law.",
+    "No Data-Center-to-One-Phone physical compression result."
+  ],
+  "next_gate": "Run exact-head Actions for the M-QSP order-invariance test; independently reproduce M-QSP-CDA; obtain WEST source data and pre-register held-out wall-protection metrics before any FUS-001/FIN-001 integration.",
+  "cold_start_audit_trailer_repair": {
+    "date": "2026-10-25",
+    "diagnosis": "Exact-head cold-start audit failed with missing_commit_trailer:Research-Sync: pending-main; the audit otherwise checked nine registered lane records and 36 pairwise integration edges.",
+    "repair": "This follow-up commit carries the required Research-Sync: pending-main trailer. It changes only the integration record and does not alter the source research/test code.",
+    "previous_failed_run": 40171957706,
+    "status": "REPAIR_COMMIT_CREATED_AWAITING_EXACT_HEAD_AUDIT",
+    "source_pr_remains_open": true
+  }
+}
