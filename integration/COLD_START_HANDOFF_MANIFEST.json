@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-25T17:24:01Z",
+  "prepared_utc": "2026-10-25T17:27:07Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
   "priority_lane": "A",
-  "current_frontier": "Canonical main contains Batch 063 mechanism-count preflight, the published M-QSP negative fixture and FND-001 synthetic memory-order calibration; latest main commits are reconciliation-only. FND-003 gate-level QSL tooling is pending in PR #55 at source head ce8ed3d9aa3cc3dcbff4836fc37cb35d3dec0fac; 11 focused local tests pass, while exact-head hosted CI is not yet observed.",
+  "current_frontier": "Canonical main contains Batch 063 mechanism-count preflight, the published M-QSP negative fixture and FND-001 synthetic memory-order calibration; latest main commits are reconciliation-only. FND-003 gate-level QSL contract and Lane-A schedule identity guard are pending in PR #55 at source head 0d1eb258d62b06255cab900c4b679560fd8498f7; 14 focused local tests pass, while exact-head hosted CI is queued.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -140,7 +140,7 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Pending source PR #55 contains the 2026-10-26 FND-003 gate-QSL contract/watch/integration; it is not on main. Historical/inaccessible branches and forks are not exhaustively reconciled. Pending source PR #55 now at ce8ed3d9aa3cc3dcbff4836fc37cb35d3dec0fac contains the 2026-10-26 FND-003 gate-QSL contract/watch/integration; it is not on main. The last polled workflow for code/test head 29b70492dc28ccfc4f47c9dfb31dec73e1f7d792 was queued; exact-head full validation remains pending. Historical/inaccessible branches and forks are not exhaustively reconciled.",
+  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Pending source PR #55 contains the 2026-10-26 FND-003 gate-QSL contract/watch/integration; it is not on main. Historical/inaccessible branches and forks are not exhaustively reconciled. Pending source PR #55 now at ce8ed3d9aa3cc3dcbff4836fc37cb35d3dec0fac contains the 2026-10-26 FND-003 gate-QSL contract/watch/integration; it is not on main. The last polled workflow for code/test head 29b70492dc28ccfc4f47c9dfb31dec73e1f7d792 was queued; exact-head full validation remains pending. Historical/inaccessible branches and forks are not exhaustively reconciled. Pending source PR #55 now at 0d1eb258d62b06255cab900c4b679560fd8498f7 contains the 2026-10-26 FND-003 gate-QSL contract, Lane-A schedule guard, literature watch and integration; it is not on main. Exact-head workflow run 40216532962 was queued at last poll. Historical/inaccessible branches and forks are not exhaustively reconciled.",
   "next_independent_action": "Wait for exact-head CI on PR #55, refresh/rebase against current main, independently implement and reproduce the full gate-QSL theorem when the accepted-paper derivation is available, and continue Lane A's same-useful-output QPU-versus-classical path while preserving A-H, FND-001..006, EQN-001..006, BIO-001, FUS-001 and FIN-001.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
   "latest_observed_ci": {
@@ -148,11 +148,13 @@
     "combined_status_endpoint": "returned no status records",
     "interpretation": "current main success cannot be inferred from an empty status response",
     "pending_source_pr": 55,
-    "source_head": "ce8ed3d9aa3cc3dcbff4836fc37cb35d3dec0fac",
-    "latest_code_test_head": "29b70492dc28ccfc4f47c9dfb31dec73e1f7d792",
-    "latest_code_test_run_id": 40216155188,
+    "source_head": "0d1eb258d62b06255cab900c4b679560fd8498f7",
+    "latest_code_test_head": "834bd439c69358d39be52d27d27bd68c13455b88",
+    "latest_code_test_run_id": 40216457136,
     "latest_code_test_run_status": "queued at last poll",
-    "latest_source_head_ci_status": "no exact-head run returned at last poll",
+    "latest_source_head_workflow_run_id": 40216532962,
+    "latest_source_head_workflow_run_status": "queued at last poll",
+    "latest_source_head_workflow_conclusion": null,
     "checked_scope": "UQPU Prototype and Project Invariants workflow; exact-head full validation pending"
   }
 }
