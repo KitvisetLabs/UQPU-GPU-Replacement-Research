@@ -50,14 +50,15 @@
     "lane_d_contract": "research_lanes/D_device_chip_fabrication_packaging/FND_003_GATE_LEVEL_SPEED_LIMIT_CONTRACT_2026-10-26.md",
     "literature_watch": "docs/literature_watch/2026-10-26-gate-level-quantum-speed-limits.md",
     "primary_existing_contract": "research_lanes/D_device_chip_fabrication_packaging/FND_003_CONTROL_ENERGY_MEASUREMENT_CONTRACT.md",
-    "existing_gap_reference": "docs/BATCH_024_GOVERNANCE_SYNC_NOTE.md#rg-029"
+    "existing_gap_reference": "docs/BATCH_024_GOVERNANCE_SYNC_NOTE.md#rg-029",
+    "compiler_guard": "GateSpeedLimitRecord.assert_matches_schedule()"
   },
   "validation": {
     "focused_unit_tests": {
-      "passed": 11,
+      "passed": 14,
       "failed": 0,
       "environment": "isolated Python stdlib unittest harness using the committed module/test content",
-      "scope": "record validation, provenance hashes, scope checks, evidence labels, invalid target/evidence types, numeric validity, uncertainty intervals and deterministic classification"
+      "scope": "record validation, provenance hashes, scope checks, evidence labels, invalid target/evidence types, numeric validity, interval classification, and exact compiler schedule identity binding"
     },
     "hosted_ci": {
       "previous_source_head": "180ce23207a57b3bd91bb39eaf9461f7df3646f9",
@@ -75,15 +76,18 @@
     "energy_measured": false,
     "cost_measured": false,
     "hardware_timing_measured": false,
-    "latest_code_test_head": "29b70492dc28ccfc4f47c9dfb31dec73e1f7d792",
+    "latest_code_test_head": "834bd439c69358d39be52d27d27bd68c13455b88",
     "prior_extended_workflow_run": {
       "run_id": 40215812473,
       "head_sha": "6179dc52c6f350048d119e0897c760705c7e1b87",
       "conclusion": "test matrix success; extended QSP/QSVT/reference jobs were queued at last poll"
-    }
+    },
+    "latest_code_test_run_id": 40216457136,
+    "latest_code_test_run_status": "queued at last poll",
+    "latest_source_head_status": "must be checked after final documentation/integration commits"
   },
   "lane_status": {
-    "A": "Gate/unitary identity can be bound before any QSL-based scheduling claim; no workload speedup or accepted-task advantage.",
+    "A": "assert_matches_schedule() prevents reuse of a QSL record across different gate/unitary, target kind, Hamiltonian model or calibration; no workload speedup or accepted-task advantage.",
     "B": "Provider-neutral; no credentials, target call, paid job or provider price was used.",
     "C": "Gate timing remains separate from classical output, memory, host and transfer requirements; no storage-equivalence claim.",
     "D": "Added gate-level QSL record/uncertainty contract; no device timing or calibration measurement.",
@@ -95,7 +99,7 @@
   "foundational_status": {
     "FND-001": "No irreversible-erasure, heat or wall-plug energy measurement.",
     "FND-002": "No new readable-output-information lower bound; quantum dimension is not readable classical storage.",
-    "FND-003": "Matched gate-level contract improved; no project physical timing or energy measurement.",
+    "FND-003": "Matched gate-level interval and compiler-context contract improved; no project physical timing or energy measurement.",
     "FND-004": "No alternative physical primitive demonstrated.",
     "FND-005": "No new QFT/particle mechanism or credible anomaly.",
     "FND-006": "Mathematics-first control optimization method lead; no new theorem proved by UQPU.",
@@ -109,7 +113,7 @@
   "integration_edges": [
     {
       "id": "A-D-F",
-      "hypothesis": "A frozen compiler gate/unitary plus D's theorem-scoped lower bound and calibration record can distinguish control overhead from a physical minimum.",
+      "hypothesis": "A frozen compiler gate/unitary plus D's theorem-scoped lower bound and calibration record can distinguish control overhead from a physical minimum; assert_matches_schedule() rejects mismatched contexts.",
       "status": "PROPOSED",
       "next_test": "Independently implement the full theorem and compare repeated matched-gate timing intervals."
     },
