@@ -4,7 +4,7 @@
 **Canonical base SHA:** 5fbe3d295ad6ca5b7c701f05c64899829910cbe8  
 **Source PR:** #118 — Oct 26 cycle: provider-matched execution record guard and nuclear-mass literature watch  
 **Source branch:** automation/2026-10-26-rg050-provider-matched-cost  
-**Source head SHA:** af04876bb9689bbd423b7ef43b1a9f779dd9c17c  
+**Source head SHA:** 45361c0ff8f3f5965a3750df0c9f408318157b2f  
 **Source PR URL:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/118  
 **Work item:** RG-050  
 **Primary owner:** Lane F; implementation owner Lane A; integration B/C/H
@@ -15,7 +15,7 @@ The main-commit synchronization policy requires pending branch work to be discov
 
 ## Source commits and changed files
 
-The source PR now contains 13 commits and 8 changed files. The full source-to-main mapping remains pending until review/merge.
+The source PR now contains 14 commits and 8 changed files. The full source-to-main mapping remains pending until review/merge.
 
 All source commits carry the required Research-Sync: pending-main trailer.
 
@@ -34,6 +34,7 @@ All source commits carry the required Research-Sync: pending-main trailer.
 | 4f597d9bc260748b147b995b27ea60b1dff2eaf9 | Integrate provider surveillance into the RG-050 JSON record |
 | ab4fee9018a89ee42819dfc7fb30aafa034823e0 | Add provider surveillance deltas to the daily cycle report |
 | af04876bb9689bbd423b7ef43b1a9f779dd9c17c | Finalize RG-050 CI and sync status fields in the integration record |
+| 45361c0ff8f3f5965a3750df0c9f408318157b2f | Record newest RG-039 and cross-lane gap state |
 
 ## Objective and method
 
