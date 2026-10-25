@@ -1,0 +1,181 @@
+{
+  "schema": "uqpu-fnd003-gate-qsl-integration-v1",
+  "integration_id": "INT-20261026-001",
+  "date": "2026-10-26",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_main_start_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+  "source_pr_number": 55,
+  "source_branch": "research/2026-10-24-fnd003-thermodynamic-speed-limits",
+  "source_head_before_integration_record": "a53d288d092c1a598b9be0b3a6f3732c51e385b0",
+  "main_sync_status": "PENDING_REVIEW_AND_MERGE",
+  "primary_owner_lane": "D_device_chip_fabrication_packaging",
+  "integration_owner_lane": "F_economics_benchmark_evidence",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "evidence_class": [
+    "LITERATURE_ONLY",
+    "SOFTWARE_UNIT_TESTS",
+    "MODEL_ONLY_RECORD_CONTRACT"
+  ],
+  "literature": [
+    {
+      "title": "Exact quantum speed limits for quantum gates from space curve geometry",
+      "authors": [
+        "Hunter Nelson",
+        "Edwin Barnes"
+      ],
+      "official_status": "APS accepted paper",
+      "accepted_date": "2026-10-15",
+      "doi": "10.1103/28zn-ch8y",
+      "source_url": "https://journals.aps.org/pra/accepted/10.1103/28zn-ch8y",
+      "scope": "Gate-specific unitary QSL under a bounded Hamiltonian spectral-width assumption; no UQPU reproduction."
+    },
+    {
+      "title": "Efficient computation of quantum time-optimal control",
+      "authors": [
+        "Andrei A. Stepanenko",
+        "Kseniia S. Chernova",
+        "Maxim Mazanov",
+        "Maxim A. Gorlach"
+      ],
+      "official_status": "APS accepted paper",
+      "accepted_date": "2026-10-21",
+      "doi": "10.1103/rsjw-pk53",
+      "source_url": "https://journals.aps.org/pra/accepted/10.1103/rsjw-pk53",
+      "scope": "Brachistochrone/Lax-pair control method for specified lattice-transfer settings; no UQPU reproduction."
+    }
+  ],
+  "artifacts": {
+    "contract_module": "software/uqpu-prototype/uqpu/gate_speed_limit_contract.py",
+    "focused_tests": "software/uqpu-prototype/tests/test_gate_speed_limit_contract.py",
+    "lane_d_contract": "research_lanes/D_device_chip_fabrication_packaging/FND_003_GATE_LEVEL_SPEED_LIMIT_CONTRACT_2026-10-26.md",
+    "literature_watch": "docs/literature_watch/2026-10-26-gate-level-quantum-speed-limits.md",
+    "primary_existing_contract": "research_lanes/D_device_chip_fabrication_packaging/FND_003_CONTROL_ENERGY_MEASUREMENT_CONTRACT.md",
+    "existing_gap_reference": "docs/BATCH_024_GOVERNANCE_SYNC_NOTE.md#rg-029",
+    "compiler_guard": "GateSpeedLimitRecord.assert_matches_schedule()"
+  },
+  "validation": {
+    "focused_unit_tests": {
+      "passed": 14,
+      "failed": 0,
+      "environment": "isolated Python stdlib unittest harness using the committed module/test content",
+      "scope": "record validation, provenance hashes, scope checks, evidence labels, invalid target/evidence types, numeric validity, interval classification, and exact compiler schedule identity binding"
+    },
+    "hosted_ci": {
+      "previous_source_head": "180ce23207a57b3bd91bb39eaf9461f7df3646f9",
+      "previous_run_id": 40053421690,
+      "previous_conclusion": "success",
+      "latest_code_test_head": "29b70492dc28ccfc4f47c9dfb31dec73e1f7d792",
+      "latest_code_test_run_id": 40216155188,
+      "latest_code_test_run_status": "queued",
+      "updated_integration_commit_status": "must be checked after commit",
+      "claim": "No exact-head full-suite pass is claimed until all required jobs complete."
+    },
+    "real_qpu_jobs": 0,
+    "provider_calls": 0,
+    "shots": 0,
+    "energy_measured": false,
+    "cost_measured": false,
+    "hardware_timing_measured": false,
+    "latest_code_test_head": "834bd439c69358d39be52d27d27bd68c13455b88",
+    "prior_extended_workflow_run": {
+      "run_id": 40215812473,
+      "head_sha": "6179dc52c6f350048d119e0897c760705c7e1b87",
+      "conclusion": "test matrix success; extended QSP/QSVT/reference jobs were queued at last poll"
+    },
+    "latest_code_test_run_id": 40216457136,
+    "latest_code_test_run_status": "queued at last poll",
+    "latest_source_head_status": "must be checked after final documentation/integration commits"
+  },
+  "lane_status": {
+    "A": "assert_matches_schedule() prevents reuse of a QSL record across different gate/unitary, target kind, Hamiltonian model or calibration; no workload speedup or accepted-task advantage.",
+    "B": "Provider-neutral; no credentials, target call, paid job or provider price was used.",
+    "C": "Gate timing remains separate from classical output, memory, host and transfer requirements; no storage-equivalence claim.",
+    "D": "Added gate-level QSL record/uncertainty contract; no device timing or calibration measurement.",
+    "E": "No Pangola material, accepted bio-oil, net fusion electricity or cooling measurement.",
+    "F": "Added provenance-bound uncertainty-interval classification; no energy, lifecycle-cost or financing result.",
+    "G": "D/G co-design receives only a future control-requirement interface; no fabrication/process/yield result.",
+    "H": "Published a literature watch and cold-start handoff; no capital or WACC authorization."
+  },
+  "foundational_status": {
+    "FND-001": "No irreversible-erasure, heat or wall-plug energy measurement.",
+    "FND-002": "No new readable-output-information lower bound; quantum dimension is not readable classical storage.",
+    "FND-003": "Matched gate-level interval and compiler-context contract improved; no project physical timing or energy measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No new QFT/particle mechanism or credible anomaly.",
+    "FND-006": "Mathematics-first control optimization method lead; no new theorem proved by UQPU.",
+    "EQN-001": "Two fresh official APS accepted-paper records added.",
+    "EQN-002": "Next gate requires frozen gates, held-out regimes and independent implementation.",
+    "EQN-003": "Source/derivation hashes and explicit theorem-scope checks required.",
+    "EQN-004": "Uncertainty overlap and below-bound cases fail closed to audit.",
+    "EQN-005": "No new-physics escalation justified without a replicated discriminating discrepancy.",
+    "EQN-006": "No device/system/economic consequence promoted."
+  },
+  "integration_edges": [
+    {
+      "id": "A-D-F",
+      "hypothesis": "A frozen compiler gate/unitary plus D's theorem-scoped lower bound and calibration record can distinguish control overhead from a physical minimum; assert_matches_schedule() rejects mismatched contexts.",
+      "status": "PROPOSED",
+      "next_test": "Independently implement the full theorem and compare repeated matched-gate timing intervals."
+    },
+    {
+      "id": "A-B-C",
+      "hypothesis": "Target-bound timing records may later feed provider-neutral scheduling while retaining host, state and I/O costs.",
+      "status": "BLOCKED",
+      "next_test": "No-submit target lowering after theorem and target-snapshot provenance are verified."
+    },
+    {
+      "id": "D-G",
+      "hypothesis": "Validated gate/control envelopes may inform device and fabrication co-design.",
+      "status": "BLOCKED",
+      "next_test": "Require target-aware native schedule, calibration and process constraints; no asymptotic-only fabrication inference."
+    },
+    {
+      "id": "E-F-H",
+      "hypothesis": "Any eventual timing/energy improvement could affect infrastructure economics only after accepted useful-task measurement.",
+      "status": "NOT_TESTED",
+      "next_test": "Use same-useful-output lifecycle accounting only after the computing gate is validated."
+    },
+    {
+      "id": "FND-EQN-AH",
+      "hypothesis": "Assumption-scoped QSL results can improve all-lane resource accounting without rewriting physical law by declaration.",
+      "status": "PROPOSED",
+      "next_test": "Independent theorem reproduction, falsifier and target-level resource ledger."
+    }
+  ],
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "mission_effects": {
+    "INV-029": "No Data-Center-to-One-Phone service/physical/lifecycle contract passed.",
+    "INV-030": "No Pangola carbon substitution, recovery or critical-material reduction measured; no transmutation claim.",
+    "INV-031": "No accepted liquid fuel, yield/upgrading or cost-per-delivered-energy result.",
+    "INV-032": "No net reliable delivered fusion electricity or lifecycle-cost result.",
+    "INV-033": "No principal, interest, time-to-evidence or WACC effect measured.",
+    "INV-034": "A new falsifiable gate-level control-bound path is specified; present physical limits remain binding.",
+    "INV-035": "AI/theory candidates remain behind theorem, units, scope, uncertainty, falsification and independent-validation gates."
+  },
+  "safety_and_authorization": {
+    "paid_qpu_jobs_authorized": false,
+    "provider_credentials_used": false,
+    "physical_experiments_authorized": false,
+    "funding_or_purchase_authorized": false
+  },
+  "next_highest_value_gate": [
+    "Obtain the full accepted-paper theorem and independently reproduce the stated small-gate examples.",
+    "Keep exact theorem source and bound-derivation hashes separate; test theorem assumptions and limiting cases.",
+    "Freeze matched target gate, Hamiltonian spectral width, control boundary, calibration, noise scope and uncertainty budget.",
+    "Do not interpret a below-bound record as new physics until an independent metrology/theorem audit and replication pass.",
+    "After the FND-003 gate, continue Lane A's same-useful-output, provider-neutral QPU-vs-classical path."
+  ],
+  "sync_debt": "Source changes are on PR #55 and are not yet canonical main content. A separate pending-main handoff is required until review/merge.",
+  "source_head_at_latest_contract_test": "29b70492dc28ccfc4f47c9dfb31dec73e1f7d792"
+}
