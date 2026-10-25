@@ -4,7 +4,7 @@
 **Primary owner:** Lane H — strategy, foundational research publication and future-industry integration  
 **Integration owner:** Lane F — evidence, benchmark and cross-lane accounting  
 **Feeds:** A–H; FND-001–006; EQN-001–006; INV-025–027; INV-029–035  
-**Evidence class:** `LITERATURE_ONLY` (one peer-reviewed paper; related arXiv preprints)  
+**Evidence class:** `LITERATURE_ONLY` (three peer-reviewed method papers; related arXiv preprints)  
 **Project evidence promotion:** none  
 **Canonical starting main:** `c7b5958af58fad04a101ef5c6abf6a29293c867e`
 
@@ -14,7 +14,7 @@ The 2026-10-23 repository watch already covers optimization-law discovery and a 
 
 The practical UQPU implication is methodological, not a new physical capability: use a proof assistant to check mathematical statements and derivations when they can be formalized; use numerical symbolic regression to search candidate equations; and use independent constraint tests and held-out evidence to reject false candidates. A proof of a formal statement is only as relevant as the correctness and completeness of the formalization. It is not an experiment and cannot establish that a candidate equation describes nature.
 
-Targeted searches on 2026-10-25 did not identify a directly relevant paper dated 2026-10-24 or 2026-10-25 that changes the project's current physical, QPU, biomass, fusion, or finance evidence. The peer-reviewed result below is dated 2026-10-08 and was missing from the repository's latest 2026-10-23 literature watch; the other sources are complementary preprints, not fresh project evidence.
+Targeted searches on 2026-10-25 did not identify a directly relevant paper dated 2026-10-24 or 2026-10-25 that changes the project's current physical, QPU, biomass, fusion, or finance evidence. The formal-proof result below is dated 2026-10-08 and was missing from the repository's latest 2026-10-23 literature watch. The constitutive-model paper now has a peer-reviewed version of record dated 2026-10-01; the remaining complementary sources include preprints. These publication updates are literature metadata, not fresh project evidence.
 
 ## Sources and evidence classes
 
@@ -38,9 +38,11 @@ The authors assign the language model control over variables, operators, transfo
 
 ### 3. Independent physical-constraint inspection for constitutive models
 
-Marius Tacke et al., “LLM-driven design of physics-constrained constitutive models: two agents are better than one,” [arXiv:2605.23754](https://arxiv.org/abs/2605.23754), v2 revised 2026-09-01; preprint at access time.
+Marius Tacke et al., “LLM-driven design of physics-constrained constitutive models: two agents are better than one,” *Machine Learning for Computational Science and Engineering* 2, article 51 (2026), version of record published 2026-10-01; accepted 2026-09-16. DOI: [10.1007/s44379-026-00099-3](https://doi.org/10.1007/s44379-026-00099-3). Preprint history: [arXiv:2605.23754](https://arxiv.org/abs/2605.23754), v2 revised 2026-09-01.
 
 A Creator proposes constitutive models and an Inspector numerically probes stated physical constraints across deformation states, rotations, and perturbations. The reported pass-rate improvements differ by model backbone; the paper's result supports independent adversarial inspection as a useful filter, not a guarantee of physical validity.
+
+**Publication-status correction checked 2026-10-25:** the official journal page lists receipt on 2026-05-22, acceptance on 2026-09-16, and version of record on 2026-10-01. This upgrades the source classification from preprint to peer-reviewed method paper, not its evidential scope.
 
 **Limitations:** sampled numerical checks do not prove constraints globally; results are scoped to the studied constitutive-model families and datasets. A physically constrained fit still requires identifiability, held-out loading paths, uncertainty, experiments, and independent replication before being used as a material law.
 
