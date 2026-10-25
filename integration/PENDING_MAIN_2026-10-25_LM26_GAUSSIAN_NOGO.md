@@ -8,6 +8,9 @@
 ## Files to synchronize after review
 
 - `software/uqpu-prototype/uqpu/fusion_evidence.py`
+- `software/uqpu-prototype/uqpu/qubo_serialization.py`
+- `software/uqpu-prototype/tests/test_qubo_serialization_equivalence.py`
+- `integration/INT-20261025-023-QUBO-SERIALIZATION-GUARD.json`
 - `software/uqpu-prototype/tests/test_fusion_evidence.py`
 - `docs/literature_watch/2026-10-25-lm26-compressional-heating-to-net-electricity.md`
 - `docs/literature_watch/2026-10-25-gaussian-repeater-no-go-scope.md`
@@ -38,3 +41,8 @@ The large append-only `RESEARCH_GAPS.md` and `WORKLOG.md` were not replaced from
 - Exact-head Autonomous Cold-Start Handoff Audit on the same commit passed.
 - Extended reference-benchmark, QSP/QSVT, Qiskit and target-snapshot jobs were queued at the last poll; full extended-workflow acceptance remains pending.
 - The final branch head changed only by a documentation/status commit after that tested code tree. The new source/test files are unchanged; CI should confirm the latest tree before merge.
+
+
+## Lane A update — 2026-10-25
+
+The provider-neutral QUBO serializer now rejects non-finite coefficients before creating either the portable or D-Wave payload. Eight local exhaustive/negative tests passed on a three-variable fixture, including all binary assignments, reversed pair terms, diagonal terms, objective offset and NaN/Infinity rejection. Because this code change followed the earlier Python matrix pass, the current head's exact-head matrix is still required; no QPU/provider job was run.
