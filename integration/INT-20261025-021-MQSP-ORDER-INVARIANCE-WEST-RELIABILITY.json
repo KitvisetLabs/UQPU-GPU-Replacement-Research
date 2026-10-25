@@ -107,5 +107,13 @@
     "No AI-generated equation promoted to a physical law.",
     "No Data-Center-to-One-Phone physical compression result."
   ],
-  "next_gate": "Run exact-head Actions for the M-QSP order-invariance test; independently reproduce M-QSP-CDA; obtain WEST source data and pre-register held-out wall-protection metrics before any FUS-001/FIN-001 integration."
+  "next_gate": "Run exact-head Actions for the M-QSP order-invariance test; independently reproduce M-QSP-CDA; obtain WEST source data and pre-register held-out wall-protection metrics before any FUS-001/FIN-001 integration.",
+  "cold_start_audit_trailer_repair": {
+    "date": "2026-10-25",
+    "diagnosis": "Exact-head cold-start audit failed with missing_commit_trailer:Research-Sync: pending-main; the audit otherwise checked nine registered lane records and 36 pairwise integration edges.",
+    "repair": "This follow-up commit carries the required Research-Sync: pending-main trailer. It changes only the integration record and does not alter the source research/test code.",
+    "previous_failed_run": 40171957706,
+    "status": "REPAIR_COMMIT_CREATED_AWAITING_EXACT_HEAD_AUDIT",
+    "source_pr_remains_open": true
+  }
 }
