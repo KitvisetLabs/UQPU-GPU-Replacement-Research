@@ -4,13 +4,13 @@
 **Canonical starting main SHA:** 70796ef8b918fe2e95382bc49cd7016a825db7e1  
 **Source repository:** KitvisetLabs/UQPU-GPU-Replacement-Research  
 **Source branch:** research/2026-10-25-transformer-formula-benchmark  
-**Source commit SHA:** fa8069ccde2ebcb794da7282d2b5c727728b258e  
+**Source branch head SHA:** f7ff45e4bc0164c7a842d20ab1833096b4cc1a6e  
 **PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/98  
 **Status:** PENDING_REVIEW / NOT_MERGED_TO_MAIN
 
 ## Objective and change summary
 
-The source commit adds:
+The two source-branch commits add:
 - software/uqpu-prototype/uqpu/formula_discovery_benchmark.py
 - software/uqpu-prototype/tests/test_formula_discovery_benchmark.py
 - docs/literature_watch/2026-10-25-transformer-physics-formula-synthesis.md
@@ -23,9 +23,9 @@ The work responds to the official arXiv v1 preprint arXiv:2610.03947, submitted 
 
 ## Validation and current CI state
 
-- Local synthetic contract tests: 12/12 pass under Python 3.13.
+- Local synthetic contract tests: 15/15 pass under Python 3.13.
 - Main starting SHA 70796ef8b918fe2e95382bc49cd7016a825db7e1: Prototype/Invariants workflow and Cold-Start Handoff Audit passed.
-- Source PR #98 current-head workflow runs were still in progress at sync time; no PR-head CI pass is claimed here.
+- The earlier PR head fa8069ccde2ebcb794da7282d2b5c727728b258e passed the Python 3.10/3.11/3.12 matrix, while its extended QSP/QSVT workflows were still running. Updated PR head f7ff45e4bc0164c7a842d20ab1833096b4cc1a6e has fresh workflow runs in progress; no current-head matrix or full-workflow pass is claimed yet.
 - No model weights downloaded, external benchmark reproduced, paid QPU job submitted, physical experiment performed, fabrication/purchase/funding action authorized, or physical law promoted.
 
 ## A–H and invariant effects
