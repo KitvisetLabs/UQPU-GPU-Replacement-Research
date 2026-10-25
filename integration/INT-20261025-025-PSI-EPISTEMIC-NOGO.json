@@ -1,0 +1,104 @@
+{
+  "contract_id": "INT-20261025-025-PSI-EPISTEMIC-NOGO",
+  "date": "2026-10-25",
+  "primary_owner": "H",
+  "integration_owner": "F",
+  "canonical_main_base_sha": "b5aac63f295c2b586f044bcbb228ad0ffb0660ef",
+  "status": "PULL_REQUEST_OPEN_CI_PENDING",
+  "evidence_label": "LITERATURE_ONLY",
+  "primary_artifact": "research_lanes/H_strategy_finance_future_industries/literature_watch/2026-10-25-psi-epistemic-no-go-watch.md",
+  "objective": "Record a newly surfaced accepted-paper no-go theorem with exact model-class and measurement-scope boundaries, and define an independent falsifiable reproduction gate without promoting quantum-foundations theory into technology evidence.",
+  "sources": [
+    {
+      "id": "LIT-2026-10-15-PSI-EPISTEMIC-NOGO",
+      "title": "No-go theorem for maximally ψ-epistemic models using two pure states of a qubit",
+      "authors": [
+        "Sagnik Ray",
+        "Anubhav Chaturvedi",
+        "Debashis Saha"
+      ],
+      "acceptance_date": "2026-10-15",
+      "venue": "Physical Review A — APS accepted-paper record",
+      "evidence_class": "APS_ACCEPTED_PAPER",
+      "doi": "10.1103/x382-1cwk",
+      "url": "https://journals.aps.org/pra/accepted/10.1103/x382-1cwk",
+      "reported_result": "Under the stated assumptions, maximally ψ-epistemic models cannot reproduce the relevant non-projective-measurement statistics for a pair of pure single-qubit states; the construction uses a two-input, three-output RAD game and the equal mixture.",
+      "limitations": "Accepted-paper record, not independently reproduced by UQPU; scoped model class and measurement assumptions; no technology, energy, material, fusion, finance, or new-physical-law result."
+    }
+  ],
+  "lane_review": {
+    "A": "No compiler/workload change; possible future formal measurement-semantics fixture only after assumptions and source are pinned.",
+    "B": "No provider credentials, calls, jobs, shots, or billing.",
+    "C": "No readable-memory or output-information implication.",
+    "D": "No device, chip, fabrication, or packaging consequence.",
+    "E": "No Pangola substitution, bio-oil, fusion, cooling, or energy result.",
+    "F": "Preserve source provenance, reproduction failures, uncertainty, and non-promotion; no cost or financing effect.",
+    "G": "No manufacturing or factory consequence; D/G co-design remains active for actual validated device requirements.",
+    "H": "Primary owner of literature synthesis and publication; strategic references remain context rather than proof."
+  },
+  "foundational_links": [
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "invariants": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "next_gate": {
+    "id": "FND-005-PSI-EPISTEMIC-001",
+    "status": "SPECIFIED_NOT_IMPLEMENTED",
+    "required_steps": [
+      "Freeze accepted-paper version, definitions, state vectors, allowed non-projective measurement, RAD payoff, assumptions, and source hash.",
+      "Independently derive the overlap inequality and RAD score bound; prefer exact arithmetic or preregistered interval tolerances.",
+      "Test projective and stated non-projective controls, state-label exchange, and mixture-probability perturbations; retain counterexamples.",
+      "Compare against an independent implementation and reviewer; optimizer agreement alone is not proof.",
+      "If an experiment is justified, preregister calibration, finite-shot confidence intervals, leakage, drift, and a discriminating RAD-score observable.",
+      "Keep proof, simulation, and laboratory evidence separate; require matched useful-output/economics contracts for any technology claim."
+    ],
+    "falsifier": "Independent derivation or counterexample contradicts the source inequality under its stated assumptions, or a frozen numerical fixture violates the derived bound beyond the declared error budget.",
+    "acceptance_rule": "A reproduced theorem validates only the frozen mathematical statement under explicit assumptions; no automatic promotion to physical law, QPU advantage, or economic result."
+  },
+  "mission_effects": {
+    "INV-029": "No Data-Center-to-One-Phone closure.",
+    "INV-030": "No elemental transmutation or critical-material substitution.",
+    "INV-031": "No accepted-liquid yield or full bio-oil cost.",
+    "INV-032": "No reliable net-electric fusion or lifecycle-cost result.",
+    "INV-033": "No financed-principal, interest, WACC, or time-to-evidence change.",
+    "INV-034": "Adds a scoped foundational-theorem lead without changing current physical limits.",
+    "INV-035": "Reinforces assumption-explicit mathematics and falsification; no new physical equation is proposed."
+  },
+  "safety_and_authorization": {
+    "paid_qpu_jobs_authorized": false,
+    "provider_credentials_used": false,
+    "real_hardware_submissions": 0,
+    "external_spending_authorized": false
+  },
+  "preservation": {
+    "root_directives_00_through_06": "preserved",
+    "kanusanan_pongpanna_model": "preserved",
+    "strategic_plan_references_and_thai_english_chinese_japanese_korean_german_links": "preserved",
+    "research_lanes_and_integration_directory_depth_rule": "preserved",
+    "large_append_only_sync_debt": [
+      "RESEARCH_GAPS.md and WORKLOG.md not rewritten from partial excerpts.",
+      "This dated lane-owned article and integration contract carry the new literature delta pending normal review and canonical synchronization."
+    ]
+  }
+}
