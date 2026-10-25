@@ -40,7 +40,7 @@
     "measured_accepted_results_per_second",
     "measured_error_probability"
   ],
-  "test_count": 12,
+  "test_count": 14,
   "tests_locally_run": false,
   "exact_head_ci": "PENDING",
   "real_qpu_jobs": 0,
