@@ -1,0 +1,69 @@
+{
+  "schema": "uqpu-fusion-literature-integration-v1",
+  "integration_id": "INT-20261025-014",
+  "work_id": "FUS-LI-001",
+  "date": "2026-10-25",
+  "primary_owner_lane": "E",
+  "integration_owner_lane": "F",
+  "co_design_lanes": [
+    "D",
+    "G"
+  ],
+  "publication_owner_lane": "H",
+  "status": "LITERATURE_ONLY_NEW_GAP_RECORDED",
+  "sources": [
+    {
+      "id": "FUS-LI-DOE-2026-10-15",
+      "title": "Limiting Fuel Retention by Lithium in Future Fusion Devices",
+      "source_date": "2026-10-15",
+      "evidence_class": "OFFICIAL_RESEARCH_SUMMARY",
+      "url": "https://science.osti.gov/fes/Highlights/2026/10a",
+      "non_claim": "DOE summary of a peer-reviewed study; not a new experiment or plant performance result."
+    },
+    {
+      "id": "FUS-LI-MORBEY-2025",
+      "title": "Deuterium retention in pre-lithiated samples and Li–D co-deposits in the DIII-D tokamak",
+      "source_date": "2025-06",
+      "venue": "Nuclear Materials and Energy 43, 101915",
+      "doi": "10.1016/j.nme.2025.101915",
+      "evidence_class": "PEER_REVIEWED_EXPERIMENT",
+      "url": "https://doi.org/10.1016/j.nme.2025.101915",
+      "non_claim": "DIII-D deuterium-retention conditions do not establish commercial-reactor tritium recovery, net electricity or LCOE."
+    }
+  ],
+  "delta": "Pre-lithiated samples retained similar deuterium across tested coating thicknesses below lithium's melting point; in-situ lithium powder injection produced substantial Li–D co-deposition. Liquid-lithium behavior remains a planned follow-up.",
+  "project_effect": "Add fuel retention/recovery, cold-wall co-deposition, inventory, maintenance and availability as FUS-001 candidate variables; no plant-level impact yet.",
+  "next_gate": "FUS-LI-001: source-hash-bound data reconstruction, matched tests, fuel mass balance, independent replication, and validated propagation to net saleable electricity/lifecycle cost.",
+  "evidence_promoted_to_project": "none",
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "lanes": {
+    "A": "unchanged; no computing advantage implied",
+    "B": "no QPU/cloud jobs",
+    "C": "no memory/state equivalence result",
+    "D": "material/process-window data required",
+    "E": "fuel-retention evidence lead recorded",
+    "F": "lifecycle cost propagation remains blocked",
+    "G": "manufacturing/deposition process window remains open; D/G co-design retained",
+    "H": "dated literature watch and gap artifact published"
+  },
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "sync_debt": [
+    "RESEARCH_GAPS.md and WORKLOG.md remain append-only sync debt; RG-036 is preserved in a dedicated gap artifact until safe append-only update."
+  ],
+  "evidence_boundary": "No commercial fusion, net-electricity, cost, fuel-cycle closure, WACC or new-physical-law claim."
+}
