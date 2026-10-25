@@ -54,11 +54,11 @@ class QSVTFeasibilityContractTests(unittest.TestCase):
             univariate_fixture(
                 model_class="MULTIVARIATE_QSP",
                 signal_variables=("x",),
-            )
+            ).validate()
 
     def test_univariate_fixture_rejects_extra_signal_variable(self):
         with self.assertRaises(ValueError):
-            univariate_fixture(signal_variables=("x", "y"))
+            univariate_fixture(signal_variables=("x", "y")).validate()
 
     def test_unknown_channel_requires_dimension_error_metric_and_oracle_model(self):
         fixture = QSVTFeasibilityFixture(

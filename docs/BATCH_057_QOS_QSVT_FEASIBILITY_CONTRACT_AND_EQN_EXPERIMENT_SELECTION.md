@@ -80,3 +80,7 @@ Negative / not yet established:
 Shared interfaces are fixture IDs, immutable SHA-256 statement hashes, model-class labels, theorem scope, auditable certificate references, and fail-closed statuses. The next highest-value gate is to implement the published M-QSP decision algorithm from its complete specification, freeze source and fixture hashes, add independent feasible/infeasible controls, and test deterministic replay plus semantically irrelevant input reordering. Keep Batch-056 as the univariate regression control. Unknown-channel QSVT needs its own dimension/delta/oracle-access/diamond-norm/query-bound ledger; do not copy static-matrix fixture resource counts.
 
 Root directives 00, 00A and 01–06; docs/KANUSANAN_PONGPANNA_MODEL.md; STRATEGIC_PLAN_REFERENCES.md; the multilingual master-plan links; and strategic AI-agent/funding references were inspected and preserved without replacement. No paid provider job was submitted.
+
+## Canonical append-only sync debt
+
+This batch is the dated canonical record for the cycle. WORKLOG.md was not rewritten because it is a large append-only history; its cross-reference remains a small sync debt to resolve through a safe append-only update. 00D_NEW_DISCOVERY_ARTICLES.md was intentionally not updated because its permanent gate reserves that index for verified new discoveries, while this new literature watch is LITERATURE_ONLY. README's verified-discovery list was likewise left unchanged. No verified-discovery status is implied.
