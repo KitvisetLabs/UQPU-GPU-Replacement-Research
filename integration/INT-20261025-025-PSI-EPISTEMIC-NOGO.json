@@ -100,5 +100,12 @@
       "RESEARCH_GAPS.md and WORKLOG.md not rewritten from partial excerpts.",
       "This dated lane-owned article and integration contract carry the new literature delta pending normal review and canonical synchronization."
     ]
+  },
+  "ci_handoff_refresh": {
+    "checked_at_utc": "2026-10-25T16:18:00Z",
+    "prior_failure": "cold-start-handoff run 40205642701 failed only because the latest branch commit lacked the required Research-Sync: pending-main trailer",
+    "source_head_before_refresh": "0ab61905eba2a76e8040d3c2ee050ad1916daf6b",
+    "correction": "This metadata-only commit carries the required trailer; it does not change the scoped theorem, evidence class, or promotion boundary.",
+    "next_status": "WAIT_FOR_EXACT_HEAD_CI"
   }
 }
