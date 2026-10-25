@@ -9,6 +9,11 @@ permissions:
 
 jobs:
   cold-start-handoff:
+    # A branch-creation push points at the existing base commit, whose trailer
+    # correctly describes its original branch rather than the newly created ref.
+    # Audit the first actual commit on the branch instead; otherwise this event
+    # creates a false failure before any research commit exists.
+    if: ${{ github.event_name != 'push' || github.event.created != true }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout exact commit
