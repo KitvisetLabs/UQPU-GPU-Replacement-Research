@@ -807,3 +807,12 @@ providers or targets.
 job completion alone cannot establish useful quality or economics. Separating
 preflight from execution prevents accidental paid submission, post-result
 threshold changes and mixed-provenance cost claims.
+
+
+## 2026-10-23 — D135: Separate theorem proof metadata from proof validity and physical truth
+
+**Decision:** AI-assisted theorem discovery may enter the project evidence pipeline only with explicit theorem-statement, axiom-set, proof-object, checker identity/version/build, result/exit-code, and log provenance. An independent replay record must use a different checker identity and build while matching the theorem statement, axiom set, and proof object. Metadata-complete status is not equivalent to a proof checker having been run, mathematical truth, or physical truth.
+
+**Reason:** Self-supervised theorem discovery can generate reusable mathematical structures, but theorem count or a self-reported PASS is not enough to support a bound or technology claim. The gate records completeness and rejects common provenance mismatches; actual proof verification must be performed by the named trusted checker and independently reviewed. Any physical-law challenge still requires the full INV-035 chain: incumbent assumptions, alternative equation, dimensions, symmetry, conservation, causality, limiting cases, falsifier, discriminating observable, held-out prediction, experiment/proof and independent validation.
+
+**Evidence boundary:** this decision is a project governance rule, not a mathematical theorem or a claim that the new gate verifies proof objects. The focused unit tests are local only; exact-commit CI remains pending.

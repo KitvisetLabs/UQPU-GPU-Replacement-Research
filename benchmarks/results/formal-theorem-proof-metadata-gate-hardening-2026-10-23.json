@@ -1,0 +1,40 @@
+{
+  "schema": "uqpu-formal-proof-metadata-gate-result-v1",
+  "date": "2026-10-23",
+  "work_id": "FND6-PROOF-001-METADATA-HARDENING",
+  "canonical_start_commit": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "branch": "research/2026-10-23-formal-theorem-gate",
+  "code_review_commit": "d33b3fb68e9c3da01e0dd35b239acf0a24de3519",
+  "evidence_class": "LOCAL_MIRRORED_HARNESS_ONLY",
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/formal_proof_gate.py",
+    "tests": "software/uqpu-prototype/tests/test_formal_proof_gate.py",
+    "purpose": "Fail-closed validation of runtime metadata types, canonical lowercase digests, checker results, exit codes, and independent-replay consistency."
+  },
+  "test_run": {
+    "python": "3.13.5",
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 14,
+    "failed": 0,
+    "harness": "temporary isolated package-shaped environment",
+    "source_fidelity": "The revised implementation and test cases were reproduced in the isolated harness; this was not a byte-for-byte checkout of the GitHub branch files.",
+    "scope": "Not the full repository suite and not GitHub Actions. Exact branch-head CI remains the acceptance gate."
+  },
+  "added_negative_controls": [
+    "non-string theorem statement",
+    "non-string proof digest",
+    "uppercase noncanonical SHA-256 digest",
+    "non-string checker identity",
+    "non-string checker result"
+  ],
+  "metadata_gate_is_not_a_proof_checker": true,
+  "physical_law_promoted": false,
+  "technology_claim_promoted": false,
+  "provider_calls": 0,
+  "qpu_jobs": 0,
+  "shots": 0,
+  "billable_usage": null,
+  "energy_joule": null,
+  "cost_usd": null,
+  "next_gate": "Pass exact-head CI, then add a bounded known-theorem/false-claim benchmark and two genuinely independent proof-checker backends."
+}
