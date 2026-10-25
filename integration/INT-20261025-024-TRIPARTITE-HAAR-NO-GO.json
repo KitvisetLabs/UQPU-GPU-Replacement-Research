@@ -1,0 +1,140 @@
+{
+  "schema": "uqpu-tripartite-haar-no-go-integration-v1",
+  "integration_id": "INT-20261025-024",
+  "date": "2026-10-25",
+  "canonical_main_sha": "70796ef8b918fe2e95382bc49cd7016a825db7e1",
+  "branch": "research/2026-10-25-tripartite-haar-no-go-scope-gate",
+  "source_head_before_integration": "a247cb812c1e51e58c4799b71ec9c1c5a61bd9c0",
+  "primary_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "cross_cutting_owners": [
+    "B_quantum_cloud",
+    "C_state_memory_data_movement",
+    "F_economics_evidence_integration",
+    "FND-006",
+    "EQN-001_to_EQN-006"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "evidence_class": "PEER_REVIEWED_LITERATURE_PLUS_SOFTWARE_SCOPE_GUARD",
+  "status_at_creation": "BRANCH_PUBLISHED_EXACT_HEAD_CI_PENDING",
+  "main_ci_observation": {
+    "combined_status_rows": 0,
+    "commit_workflow_runs_returned": 0,
+    "interpretation": "The connector view does not establish exact-head CI success for main. Baseline checks on older commits are not substituted."
+  },
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/quantum_state_scope.py",
+    "function": "tripartite_haar_no_go_size_condition_applies(n_a,n_b,n_c)",
+    "semantics": "Checks only the strict integer size condition 2*n_i < n_total for all three subsystems.",
+    "test_file": "software/uqpu-prototype/tests/test_quantum_state_scope.py",
+    "test_cases": 5,
+    "local_smoke_test": "5 predicate cases passed before publication; repository unittest and GitHub Actions remain pending.",
+    "non_claims": [
+      "does not verify Haar-randomness",
+      "does not verify operation/fidelity assumptions",
+      "does not reproduce the theorem",
+      "does not imply distillability when size condition is false",
+      "does not establish hardware or economic advantage"
+    ]
+  },
+  "literature": {
+    "title": "Tripartite Haar Random State Has No Bipartite Entanglement",
+    "authors": [
+      "Zhi Li",
+      "Takato Mori",
+      "Beni Yoshida"
+    ],
+    "journal": "Physical Review X",
+    "volume": 16,
+    "article": "041013",
+    "published": "2026-10-13",
+    "doi": "10.1103/d7b9-ctw2",
+    "url": "https://journals.aps.org/prx/abstract/10.1103/d7b9-ctw2",
+    "status": "PEER_REVIEWED_PRIMARY_THEOREM",
+    "project_replication": "NOT_PERFORMED"
+  },
+  "artifacts": {
+    "lane_a": "research_lanes/A_quantum_programming_runtime/TRIPARTITE_HAAR_SCOPE_GUARD.md",
+    "module": "software/uqpu-prototype/uqpu/quantum_state_scope.py",
+    "tests": "software/uqpu-prototype/tests/test_quantum_state_scope.py",
+    "literature_watch": "docs/literature_watch/2026-10-25-tripartite-haar-entanglement-no-go.md",
+    "gap": "docs/RESEARCH_GAP_RG042_HAAR_STATE_ENTANGLEMENT_SCOPE.md",
+    "batch": "docs/BATCH_066_TRIPARTITE_HAAR_NO_GO_SCOPE_GUARD.md"
+  },
+  "reviewed_lanes": {
+    "A": "ADVANCED_SCOPE_GUARD_ADDED",
+    "B": "NO_GO_APPLICABILITY_BOUNDARY_RECORDED",
+    "C": "OUTPUT_INFORMATION_AND_STATE_CORRELATION_BOUNDARY_REAFFIRMED",
+    "D": "REVIEWED_NO_NEW_DEVICE_RESULT",
+    "E": "FRESH_SURVEILLANCE_NO_NEW_PROJECT_SPECIFIC_EMPIRICAL_RESULT",
+    "F": "RG042_AND_INTEGRATION_RECORD_ADDED",
+    "G": "D_G_CO_DESIGN_PRESERVED_NO_MANUFACTURING_RESULT",
+    "H": "DATED_PEER_REVIEWED_LITERATURE_WATCH_PUBLISHED"
+  },
+  "pairwise_reviewed_lane_edges": [
+    "A-B",
+    "A-C",
+    "A-D",
+    "A-E",
+    "A-F",
+    "A-G",
+    "A-H",
+    "B-C",
+    "B-D",
+    "B-E",
+    "B-F",
+    "B-G",
+    "B-H",
+    "C-D",
+    "C-E",
+    "C-F",
+    "C-G",
+    "C-H",
+    "D-E",
+    "D-F",
+    "D-G",
+    "D-H",
+    "E-F",
+    "E-G",
+    "E-H",
+    "F-G",
+    "F-H",
+    "G-H"
+  ],
+  "foundational": {
+    "FND-001": "No new matched wall-plug/erasure measurement; existing calibration remains MODEL_ONLY.",
+    "FND-002": "No new information bound; preserve separation between quantum correlations and readable output/storage.",
+    "FND-003": "No matched control-versus-quantum-speed-limit experiment.",
+    "FND-004": "No alternative physical primitive validated.",
+    "FND-005": "No particle/QFT mechanism or credible anomaly established by this source.",
+    "FND-006": "Explicit theorem assumptions and fail-closed scope checking advanced; no new theorem proved by UQPU.",
+    "EQN-001_to_EQN-006": "No AI-generated equation promoted; full falsification and independent-validation gates remain binding."
+  },
+  "invariant_impact": {
+    "INV-029": "No physical-compression or end-to-end service/energy/cost gate passed.",
+    "INV-030": "No Pangola-derived functional material substitution measured; no transmutation claim.",
+    "INV-031": "No accepted saleable-liquid or full delivered-energy cost result.",
+    "INV-032": "No reliable net-delivered fusion electricity or lifecycle cost result.",
+    "INV-033": "No financed-principal, absolute-interest, time-to-evidence or WACC result.",
+    "INV-034": "Conditional peer-reviewed theorem catalogued with assumptions; no new UQPU physics result.",
+    "INV-035": "Scope predicate does not promote a hypothesis to physical law.",
+    "INV-036": "Untouched and preserved.",
+    "INV-037": "Untouched and preserved."
+  },
+  "synchronization": {
+    "status": "PENDING_MAIN",
+    "policy": "Each commit uses Research-Sync: pending-main. Merge only after exact-head CI and normal review.",
+    "append_only_files_not_rewritten": [
+      "README.md",
+      "WORKLOG.md",
+      "RESEARCH_GAPS.md"
+    ],
+    "open_pr_collision_check": "Main RG-039; open PR #95 proposes RG-040 and #96 proposes RG-041, so RG-042 is unique to this work."
+  },
+  "next_gate": [
+    "Run exact-head Python 3.10/3.11/3.12, invariant and cold-start audit workflows.",
+    "Review theorem assumptions and independently check the source derivation before any theorem-level replication claim.",
+    "Attach state-family, operation, fidelity, decoder, and resource metadata to a concrete distributed-QPU workload.",
+    "Compare held-out Haar-random controls with a specified structured-state family; treat small-system simulation as MODEL_ONLY.",
+    "Measure preparation, communication, decoding/reconstruction, accepted-task quality and total cost before architecture or economic claims."
+  ]
+}
