@@ -10,7 +10,7 @@
 
 ## 1. Canonical-state and governance audit
 
-The cycle started from the current default branch, not a remembered batch number. Read and reviewed: PROJECT_CHARTER.md, VERSION_INVARIANTS.md, GOALS.md, README.md, docs/RESEARCH_OPERATING_SYSTEM.md, docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md, docs/KANUSANAN_PONGPANNA_MODEL.md, STRATEGIC_PLAN_REFERENCES.md, the root 00/00A/01–06 mission directives plus the related 00B/00C/00E programs, AGENTS.md, the autonomous handoff principle, the continuous cross-lane integration protocol, the main-commit synchronization policy, the current parallel-PR collision audit, Batch 063, the late reconciliation, RG-036–RG-038, the current equation-discovery/fundamental-limit code, and relevant open-PR records.
+The cycle started from the current default branch, not a remembered batch number. Read and reviewed: PROJECT_CHARTER.md, VERSION_INVARIANTS.md, GOALS.md, README.md, docs/RESEARCH_OPERATING_SYSTEM.md, docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md, docs/KANUSANAN_PONGPANNA_MODEL.md, STRATEGIC_PLAN_REFERENCES.md, the root 00/00A/01–06 mission directives plus the related 00B/00C/00E programs, AGENTS.md, the autonomous handoff principle, the continuous cross-lane integration protocol, the main-commit synchronization policy, the current parallel-PR collision audit, Batch 063, the late reconciliation, RG-036–RG-039, the current equation-discovery/fundamental-limit code, and relevant open-PR records.
 
 The newest merged main batch remains Batch 063. Newer work is pending on open branches, including competing Batch-064 labels, Batch 065–067, and several 2026-10-26 physics, equation-discovery, provider and accounting PRs. The late-reconciliation record documents reused integration ordinals; those branches must not be merged blindly. This cycle uses the stable work item RG-050 and a unique integration record ID rather than relying on a batch number.
 
@@ -79,7 +79,7 @@ The literature watch is evidence-classed as PEER_REVIEWED_PRIMARY_ARTICLE, not p
 - **FND-003 — matched control-vs-quantum-speed-limit measurement:** no matched measurement was performed; the gate remains pending.
 - **FND-004 — alternative physical primitives:** none has passed a causal device/system/economic validation gate.
 - **FND-005 — QFT/elementary-particle mechanism scans:** the nuclear-mass paper is not a new particle/QFT mechanism. Current false-vacuum/cold-atom research remains pending on branches.
-- **FND-006 — mathematics-first invention:** the article proposes a falsifiable blocked-extrapolation study. Existing formal-proof, CoSR, AI-Newton, transformer and structural-verifier work remains subject to branch review, independent reproduction and exact-head CI.
+- **FND-006 — mathematics-first invention:** the canonical RG-039 gap records a generic Gaussian-residual BIC model-count comparator and synthetic tests, while explicitly noting that the preprint's bespoke score and independent reproduction are still missing. The new nuclear-mass article proposes a falsifiable blocked-extrapolation study. Existing formal-proof, CoSR, AI-Newton, transformer and structural-verifier work remains subject to branch review, independent reproduction and exact-head CI.
 - **EQN-001–EQN-006:** the discovery chain remains generator -> physics/math constraints -> evaluator -> held-out/generalization -> counterexample search -> proof/simulation -> discriminating experiment -> independent replication -> device/system consequence -> economics. No candidate from this cycle is promoted to a physical law.
 - **BIO-001 / FUS-001 / FIN-001:** remain open; no MODEL_ONLY result is described as commercial evidence.
 
@@ -95,7 +95,17 @@ The literature watch is evidence-classed as PEER_REVIEWED_PRIMARY_ARTICLE, not p
 
 INV-025/026/027 remain preserved and unproven at their extreme targets. The 100×/100,000,000× goals, universal subsystem/material replacement, commercial ultra-low-cost bio-oil, commercial ultra-low-cost fusion and physical data-center-to-phone compression remain goals until their end-to-end gates pass.
 
-## 7. GitHub, synchronization and CI
+## 7. Newest evidence and open gaps
+
+- **RG-028:** provider-matched accepted-task economics remains blocked on real same-target probability, official pricing, credentials/consent and an identical useful-output baseline. RG-050 adds a software guard; it does not close RG-028.
+- **RG-036:** fusion lithium/fuel-retention-to-net-electricity accounting remains open; no reliable NET delivered electricity or lifecycle-cost result.
+- **RG-037:** QEC spacetime/memory-aware thermodynamic inference remains open; no new physical energy measurement.
+- **RG-038:** memory-order/entropy inference validation remains open; no thermodynamic interpretation is promoted.
+- **RG-039:** calibrated equation model-count selection remains open. The current BIC comparator is a generic baseline; false-K calibration, blocked held-out generalization and independent reproduction of the cited preprint are still required.
+- **RG-050:** software schema and local tests added; exact-head CI and real-QPU provenance remain pending.
+- **Canonical latest batch:** Batch 063 on main. Batch 064–067 and newer PR work remain pending and must be reconciled by unique work-item/commit mapping rather than ordinal assumptions.
+
+## 8. GitHub, synchronization and CI
 
 - **Starting main SHA:** 5fbe3d295ad6ca5b7c701f05c64899829910cbe8.
 - **Source branch:** automation/2026-10-26-rg050-provider-matched-cost.
@@ -107,6 +117,6 @@ INV-025/026/027 remain preserved and unproven at their extreme targets. The 100�
 - **Sync policy:** all source commits use the pending-main trailer. The research branch is not canonical main until reviewed and merged. A separate pending-main sync PR is required to make the branch's research details discoverable on main without falsely claiming its code has merged.
 - **No live provider, QPU job, external physical experiment, purchase or funding action was performed.**
 
-## 8. Next highest-value gate
+## 9. Next highest-value gate
 
 First obtain exact-head prototype/invariant/cold-start CI for this branch and resolve any failures. Review RG-050 for provenance completeness. Then, only after credentials, bounded budget and explicit user consent are available, run one provider-matched pilot with frozen target/calibration/pricing identity, accepted-output quality, shots, retries, state/I/O/transfer/memory, latency, host compute, energy where measurable and actual billable cost. Compare against a competitive classical baseline on the identical useful-output contract. If no accepted output is produced, report the cost denominator as undefined and retain the negative result.
