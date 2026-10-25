@@ -113,5 +113,28 @@ class EquationDiscoveryTests(unittest.TestCase):
             select_bic_candidate_count({1: 10.0}, {1: 10}, sample_count=10)
 
 
+    def test_bic_candidate_count_is_invariant_to_common_residual_unit_scaling(self):
+        baseline = select_bic_candidate_count(
+            residual_sums_squares={1: 100.0, 2: 30.0},
+            parameter_counts={1: 2, 2: 4},
+            sample_count=100,
+        )
+        baseline_delta = baseline.scores[1][1] - baseline.scores[0][1]
+
+        # Changing the measurement unit multiplies every RSS by the same
+        # positive squared scale. The Gaussian BIC score shifts by a common
+        # additive constant, so candidate ranking must not change.
+        for rss_scale in (1e-12, 1e12):
+            with self.subTest(rss_scale=rss_scale):
+                scaled = select_bic_candidate_count(
+                    residual_sums_squares={2: 30.0 * rss_scale, 1: 100.0 * rss_scale},
+                    parameter_counts={2: 4, 1: 2},
+                    sample_count=100,
+                )
+                scaled_delta = scaled.scores[1][1] - scaled.scores[0][1]
+                self.assertEqual(scaled.selected_count, baseline.selected_count)
+                self.assertAlmostEqual(scaled_delta, baseline_delta, places=9)
+
+
 if __name__ == "__main__":
     unittest.main()
