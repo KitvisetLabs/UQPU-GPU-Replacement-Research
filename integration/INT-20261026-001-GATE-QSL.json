@@ -19,7 +19,10 @@
   "literature": [
     {
       "title": "Exact quantum speed limits for quantum gates from space curve geometry",
-      "authors": ["Hunter Nelson", "Edwin Barnes"],
+      "authors": [
+        "Hunter Nelson",
+        "Edwin Barnes"
+      ],
       "official_status": "APS accepted paper",
       "accepted_date": "2026-10-15",
       "doi": "10.1103/28zn-ch8y",
@@ -28,7 +31,12 @@
     },
     {
       "title": "Efficient computation of quantum time-optimal control",
-      "authors": ["Andrei A. Stepanenko", "Kseniia S. Chernova", "Maxim Mazanov", "Maxim A. Gorlach"],
+      "authors": [
+        "Andrei A. Stepanenko",
+        "Kseniia S. Chernova",
+        "Maxim Mazanov",
+        "Maxim A. Gorlach"
+      ],
       "official_status": "APS accepted paper",
       "accepted_date": "2026-10-21",
       "doi": "10.1103/rsjw-pk53",
@@ -46,24 +54,33 @@
   },
   "validation": {
     "focused_unit_tests": {
-      "passed": 10,
+      "passed": 11,
       "failed": 0,
       "environment": "isolated Python stdlib unittest harness using the committed module/test content",
-      "scope": "record validation, provenance hashes, scope checks, evidence labels, uncertainty intervals and deterministic classification"
+      "scope": "record validation, provenance hashes, scope checks, evidence labels, invalid target/evidence types, numeric validity, uncertainty intervals and deterministic classification"
     },
     "hosted_ci": {
       "previous_source_head": "180ce23207a57b3bd91bb39eaf9461f7df3646f9",
       "previous_run_id": 40053421690,
       "previous_conclusion": "success",
-      "updated_head_status": "NOT_YET_OBSERVED",
-      "claim": "Do not treat the new head as fully validated until exact-head CI completes."
+      "latest_code_test_head": "29b70492dc28ccfc4f47c9dfb31dec73e1f7d792",
+      "latest_code_test_run_id": 40216155188,
+      "latest_code_test_run_status": "queued",
+      "updated_integration_commit_status": "must be checked after commit",
+      "claim": "No exact-head full-suite pass is claimed until all required jobs complete."
     },
     "real_qpu_jobs": 0,
     "provider_calls": 0,
     "shots": 0,
     "energy_measured": false,
     "cost_measured": false,
-    "hardware_timing_measured": false
+    "hardware_timing_measured": false,
+    "latest_code_test_head": "29b70492dc28ccfc4f47c9dfb31dec73e1f7d792",
+    "prior_extended_workflow_run": {
+      "run_id": 40215812473,
+      "head_sha": "6179dc52c6f350048d119e0897c760705c7e1b87",
+      "conclusion": "test matrix success; extended QSP/QSVT/reference jobs were queued at last poll"
+    }
   },
   "lane_status": {
     "A": "Gate/unitary identity can be bound before any QSL-based scheduling claim; no workload speedup or accepted-task advantage.",
@@ -155,5 +172,6 @@
     "Do not interpret a below-bound record as new physics until an independent metrology/theorem audit and replication pass.",
     "After the FND-003 gate, continue Lane A's same-useful-output, provider-neutral QPU-vs-classical path."
   ],
-  "sync_debt": "Source changes are on PR #55 and are not yet canonical main content. A separate pending-main handoff is required until review/merge."
+  "sync_debt": "Source changes are on PR #55 and are not yet canonical main content. A separate pending-main handoff is required until review/merge.",
+  "source_head_at_latest_contract_test": "29b70492dc28ccfc4f47c9dfb31dec73e1f7d792"
 }
