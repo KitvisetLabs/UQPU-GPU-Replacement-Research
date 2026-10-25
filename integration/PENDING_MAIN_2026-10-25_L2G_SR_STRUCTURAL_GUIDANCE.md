@@ -32,16 +32,17 @@ The source work records the official L2G-SR preprint (arXiv:2610.20685, submitte
 
 The helper is not a reproduction of L2G-SR's learned verifier or exact tree-edit metric. It does not establish physical truth, QPU advantage, accepted fuel, net-electric fusion, critical-material substitution, financing effects or Data-Center-to-Phone compression.
 
-## CI and sync status
+## CI and sync status — refreshed 2026-10-25 16:14 UTC
 
-- The source PR has been opened as #104 against the exact base SHA above.
-- At the last source-head check, `fetch_commit_workflow_runs` returned no associated PR workflow runs and the combined-status endpoint returned no status entries. This is **unknown/pending**, not a CI pass.
-- Historical successful CI runs from earlier commits do not validate this new source head.
+- Source PR #104 exact-head UQPU Prototype and Project Invariants workflow #1412 is **in progress**; its exact-head cold-start handoff audit #618 completed **successfully**.
+- The sync-branch cold-start audit #619 failed solely because the commit message lacked the required `Research-Sync: pending-main` trailer. This update corrects the commit-level handoff metadata; it does not change PR #104 source code or promote its evidence.
+- No combined commit-status entries are exposed by the status endpoint. Do not infer a pass from an empty status list.
+- Historical successful CI runs from earlier commits do not validate a new source head.
 - `RESEARCH_GAPS.md` and `WORKLOG.md` remain untouched to avoid rewriting large append-only history from partial content.
 - INV-025/026/027, INV-029–035, root directives 00/00A/01–06, the Kanusanan Pongpanna Model, and Thai/English/Chinese/Japanese/Korean/German master-plan references remain preserved.
 
 ## Required next action
 
-Wait for exact-head Python 3.10/3.11/3.12 prototype/invariant CI and the cold-start handoff audit for PR #104. Review the restricted parser and tests, then run the blinded, law-family-disjoint calibration under matched total budgets. Merge only through normal review and branch protection. If PR #104 merges, record every source-SHA to main-SHA mapping in the next reconciliation checkpoint.
+Wait for exact-head Python 3.10/3.11/3.12 prototype/invariant CI for PR #104. Review the restricted parser and tests, then run the blinded, law-family-disjoint calibration under matched total budgets. Merge only through normal review and branch protection. If PR #104 merges, record every source-SHA to main-SHA mapping in the next reconciliation checkpoint.
 
 **Research-Sync:** pending-main
