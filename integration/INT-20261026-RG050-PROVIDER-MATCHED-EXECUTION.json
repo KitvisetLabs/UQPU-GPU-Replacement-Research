@@ -14,6 +14,7 @@
     "validator": "software/uqpu-prototype/uqpu/provider_matched_execution_record.py",
     "tests": "software/uqpu-prototype/tests/test_provider_matched_execution_record.py",
     "gap": "docs/RESEARCH_GAP_RG050_PROVIDER_MATCHED_EXECUTION_RECORD.md",
+    "lane_owner_contract": "research_lanes/F_economics_benchmarks_evidence_integration/PROVIDER_MATCHED_EXECUTION_RECORD_CONTRACT_RG050.md",
     "literature_watch": "docs/literature_watch/2026-10-26-interpretable-nuclear-mass-structure-and-extrapolation.md",
     "integration_record": "integration/INT-20261026-RG050-PROVIDER-MATCHED-EXECUTION.json"
   },
