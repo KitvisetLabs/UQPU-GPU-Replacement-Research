@@ -136,5 +136,9 @@
     }
   ],
   "next_gate": "Run exact-head Python 3.10/3.11/3.12 and focused tests; integrate output accounting into a matched useful-output CPU/GPU/UQPU benchmark before any economics claim.",
+  "canonical_readme_checkpoint_sync_debt": {
+    "observed": "Top latest-verified checkpoint names Batch 062 while canonical Batch 063 exists and is referenced later in the README.",
+    "action": "Do not rewrite the large README from partial content; reconcile the top pointer with a focused, hash-checked edit after review."
+  },
   "sync_debt": "Branch-only code and report are not canonical main until reviewed and merged; source-SHA-to-main-SHA mapping pending."
 }
