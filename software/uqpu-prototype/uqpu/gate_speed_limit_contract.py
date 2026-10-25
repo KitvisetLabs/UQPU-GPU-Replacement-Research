@@ -111,6 +111,40 @@ class GateSpeedLimitRecord:
             if not isinstance(self.provider_job_id, str) or not self.provider_job_id.strip():
                 raise ValueError("provider_job_id must be omitted or nonempty")
 
+    def assert_matches_schedule(
+        self,
+        *,
+        gate_name: str,
+        target_id: str,
+        target_kind: str,
+        unitary_sha256: str,
+        hamiltonian_model_sha256: str,
+        calibration_sha256: str,
+    ) -> None:
+        """Fail closed if a compiler schedule tries to reuse a mismatched record."""
+        self.validate()
+        requested = {
+            "gate_name": gate_name,
+            "target_id": target_id,
+            "target_kind": target_kind,
+            "unitary_sha256": unitary_sha256,
+            "hamiltonian_model_sha256": hamiltonian_model_sha256,
+            "calibration_sha256": calibration_sha256,
+        }
+        stored = {
+            "gate_name": self.gate_name,
+            "target_id": self.target_id,
+            "target_kind": self.target_kind,
+            "unitary_sha256": self.unitary_sha256,
+            "hamiltonian_model_sha256": self.hamiltonian_model_sha256,
+            "calibration_sha256": self.calibration_sha256,
+        }
+        for name, value in requested.items():
+            if not isinstance(value, str) or not value.strip():
+                raise ValueError(f"schedule {name} is required")
+            if stored[name] != value:
+                raise ValueError(f"schedule {name} mismatch")
+
     def consistency_classification(self) -> str:
         """Compare uncertainty intervals; never labels a result a law violation."""
         self.validate()
