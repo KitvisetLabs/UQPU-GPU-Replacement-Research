@@ -21,9 +21,9 @@ The current repository already contains a symbolic-ensemble interatomic-potentia
 
 ## Implementation and test result
 
-Added a dependency-free matched-budget audit helper and synthetic tests. It rejects inconsistent dataset/split identities, non-distinct train/held-out/extrapolation split hashes, unmatched declared budgets, non-finite errors, duplicate seeds, invalid resource values and inconsistent training accounting for a reused model hash. It reports mean held-out/extrapolation errors by method while retaining constraint failures, counterexamples, false discoveries and failed searches. Training resources are aggregated once per model hash rather than once per seed.
+Added a dependency-free matched-budget audit helper and synthetic tests. It rejects inconsistent dataset/split identities, non-distinct train/held-out/extrapolation split hashes, unmatched declared budgets, non-finite errors, duplicate seeds, invalid resource values and inconsistent training accounting for a reused model hash. It reports mean held-out/extrapolation errors by method while retaining constraint failures, counterexamples, false discoveries and failed searches. Training resources are aggregated once per model hash rather than once per seed. Optional cost per accepted formula requires one shared cost-basis identifier and includes costs from rejected/failed runs in the numerator.
 
-Local smoke suite: 12/12 passed under Python 3.13. This does not establish compatibility with the project's Python 3.10/3.11/3.12 CI matrix; those workflow results are required on the new head. No model was downloaded, no external benchmark was reproduced, no QPU job was submitted, and no physical experiment was performed.
+Local smoke suite: 15/15 passed under Python 3.13. This does not establish compatibility with the project's Python 3.10/3.11/3.12 CI matrix; those workflow results are required on the new head. No model was downloaded, no external benchmark was reproduced, no QPU job was submitted, and no physical experiment was performed.
 
 ## Explicit A–H status
 

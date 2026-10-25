@@ -12,9 +12,9 @@ Test whether transformer-based symbolic formula generation generalizes beyond tr
 
 ## Current implementation
 
-The dependency-free helper at software/uqpu-prototype/uqpu/formula_discovery_benchmark.py validates a run record and a matched-method comparison. It requires frozen dataset and split hashes, a shared split-disjointness certificate hash, finite train/held-out/extrapolation errors, positive candidate complexity/count, unique seeds, a minimum seed count per method, a matched wall-clock budget within tolerance, and explicit dimensional/symmetry/conservation/causality outcomes. It preserves false discoveries, failed searches and counterexamples. Model-training GPU-hours/energy are associated with a model hash and are not double-counted across seeds.
+The dependency-free helper at software/uqpu-prototype/uqpu/formula_discovery_benchmark.py validates a run record and a matched-method comparison. It requires frozen dataset and split hashes, a shared split-disjointness certificate hash, finite train/held-out/extrapolation errors, positive candidate complexity/count, unique seeds, a minimum seed count per method, a matched wall-clock budget within tolerance, and explicit dimensional/symmetry/conservation/causality outcomes. It preserves false discoveries, failed searches and counterexamples. Optional total cost per accepted formula requires a common cost-basis identifier and includes failed runs in the numerator. Model-training GPU-hours/energy are associated with a model hash and are not double-counted across seeds.
 
-The twelve local tests use synthetic fixtures only. The default three-seed minimum is a CI contract smoke threshold, not sufficient scientific replication. A confirmatory study should use at least 30 independent seeds.
+The fifteen local tests use synthetic fixtures only. The default three-seed minimum is a CI contract smoke threshold, not sufficient scientific replication. A confirmatory study should use at least 30 independent seeds.
 
 ## Blockers
 

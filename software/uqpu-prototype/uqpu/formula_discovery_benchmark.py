@@ -63,6 +63,9 @@ class FormulaDiscoveryRun:
     symmetry_passed: bool
     conservation_passed: bool
     causality_passed: bool
+    accepted_candidate: bool
+    total_cost_usd: float | None = None
+    cost_basis_id: str | None = None
     energy_joules: float | None = None
     token_count: int | None = None
     model_sha256: str | None = None
@@ -123,10 +126,23 @@ class FormulaDiscoveryRun:
             "symmetry_passed",
             "conservation_passed",
             "causality_passed",
+            "accepted_candidate",
             "false_discovery",
         ):
             if not isinstance(getattr(self, name), bool):
                 raise ValueError(f"{name} must be a boolean")
+        if self.total_cost_usd is not None:
+            if (
+                isinstance(self.total_cost_usd, bool)
+                or not isinstance(self.total_cost_usd, (int, float))
+                or not math.isfinite(float(self.total_cost_usd))
+                or self.total_cost_usd < 0
+            ):
+                raise ValueError("total_cost_usd must be finite and nonnegative when supplied")
+            if not isinstance(self.cost_basis_id, str) or not self.cost_basis_id.strip():
+                raise ValueError("cost_basis_id is required when total_cost_usd is supplied")
+        elif self.cost_basis_id is not None:
+            raise ValueError("cost_basis_id cannot be supplied without total_cost_usd")
         if self.energy_joules is not None:
             if (
                 isinstance(self.energy_joules, bool)
@@ -175,6 +191,8 @@ class FormulaDiscoveryAudit:
     runs_per_method: tuple[tuple[str, int], ...]
     mean_heldout_error: tuple[tuple[str, float], ...]
     mean_extrapolation_error: tuple[tuple[str, float], ...]
+    accepted_candidates_by_method: tuple[tuple[str, int], ...]
+    cost_per_accepted_formula_usd_by_method: tuple[tuple[str, float | None], ...]
     false_discovery_runs: int
     failed_search_count: int
     counterexample_count: int
@@ -281,6 +299,28 @@ def audit_formula_discovery_comparison(
         training_gpu_hours_by_method.append((method, gpu_total))
         training_energy_joules_by_method.append((method, energy_total))
 
+    cost_rows = [row for row in rows if row.total_cost_usd is not None]
+    if cost_rows and len(cost_rows) != len(rows):
+        raise ValueError("total cost accounting must be present for every run or none")
+    if cost_rows and len({row.cost_basis_id for row in cost_rows}) != 1:
+        raise ValueError("all methods must use the same cost_basis_id")
+
+    accepted_candidates_by_method = tuple(
+        (method, sum(row.accepted_candidate for row in by_method[method]))
+        for method in methods
+    )
+    cost_per_accepted = []
+    for method in methods:
+        group = by_method[method]
+        accepted_count = sum(row.accepted_candidate for row in group)
+        if not cost_rows or accepted_count == 0:
+            cost_per_accepted.append((method, None))
+        else:
+            cost_per_accepted.append((
+                method,
+                sum(float(row.total_cost_usd) for row in group) / accepted_count,
+            ))
+
     return FormulaDiscoveryAudit(
         evidence_class="MODEL_ONLY",
         methods=methods,
@@ -288,6 +328,8 @@ def audit_formula_discovery_comparison(
         runs_per_method=tuple((m, len(by_method[m])) for m in methods),
         mean_heldout_error=tuple((m, fmean(r.heldout_error for r in by_method[m])) for m in methods),
         mean_extrapolation_error=tuple((m, fmean(r.extrapolation_error for r in by_method[m])) for m in methods),
+        accepted_candidates_by_method=accepted_candidates_by_method,
+        cost_per_accepted_formula_usd_by_method=tuple(cost_per_accepted),
         false_discovery_runs=sum(row.false_discovery for row in rows),
         failed_search_count=sum(row.failed_search_count for row in rows),
         counterexample_count=sum(row.counterexample_count for row in rows),

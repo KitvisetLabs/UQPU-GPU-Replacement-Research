@@ -35,6 +35,9 @@ def run(method, seed, **overrides):
         symmetry_passed=True,
         conservation_passed=True,
         causality_passed=True,
+        accepted_candidate=True,
+        total_cost_usd=0.05 if method == "symbolic_search" else 0.02,
+        cost_basis_id="synthetic-cost-basis-v1",
         energy_joules=None,
         token_count=200 if method == "transformer_generator" else None,
         model_sha256=digest("transformer-model-v1") if method == "transformer_generator" else None,
@@ -73,6 +76,8 @@ class FormulaDiscoveryBenchmarkTests(unittest.TestCase):
         self.assertEqual(dict(audit.training_gpu_hours_by_method)["transformer_generator"], 12.0)
         self.assertIsNone(dict(audit.training_gpu_hours_by_method)["symbolic_search"])
         self.assertEqual(dict(audit.training_energy_joules_by_method)["transformer_generator"], 2400.0)
+        self.assertAlmostEqual(dict(audit.cost_per_accepted_formula_usd_by_method)["symbolic_search"], 0.05)
+        self.assertAlmostEqual(dict(audit.cost_per_accepted_formula_usd_by_method)["transformer_generator"], 0.02)
 
     def test_rejects_non_disjoint_split_hashes(self):
         rows = matched_runs()
@@ -130,6 +135,25 @@ class FormulaDiscoveryBenchmarkTests(unittest.TestCase):
         rows = matched_runs()
         rows[0] = replace(rows[0], method="magic_law_generator")
         with self.assertRaisesRegex(ValueError, "unsupported discovery method"):
+            audit_formula_discovery_comparison(rows)
+
+    def test_cost_per_accepted_formula_counts_failed_runs_in_the_numerator(self):
+        rows = matched_runs()
+        rows[0] = replace(rows[0], accepted_candidate=False)
+        audit = audit_formula_discovery_comparison(rows)
+        self.assertEqual(dict(audit.accepted_candidates_by_method)["symbolic_search"], 2)
+        self.assertAlmostEqual(dict(audit.cost_per_accepted_formula_usd_by_method)["symbolic_search"], 0.075)
+
+    def test_rejects_inconsistent_cost_basis(self):
+        rows = matched_runs()
+        rows[-1] = replace(rows[-1], cost_basis_id="different-cost-basis")
+        with self.assertRaisesRegex(ValueError, "same cost_basis_id"):
+            audit_formula_discovery_comparison(rows)
+
+    def test_rejects_partial_cost_accounting(self):
+        rows = matched_runs()
+        rows[-1] = replace(rows[-1], total_cost_usd=None, cost_basis_id=None)
+        with self.assertRaisesRegex(ValueError, "present for every run or none"):
             audit_formula_discovery_comparison(rows)
 
     def test_rejects_inconsistent_training_cost_for_same_model_hash(self):
