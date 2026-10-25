@@ -28,6 +28,12 @@ This is only a finite-sample diagnostic. A small adjacent-lag CMI is not a proof
 - No project observation record, time-reversal support audit, transition-kernel estimate or independently validated entropy-production estimator is connected to this helper.
 - No energy, device, bio-oil or fusion data were measured.
 
+## Repeated-seed calibration update — 2026-10-25
+
+The fixed-seed summary in benchmarks/results/fnd001-cmi-bias-calibration-2026-10-25.json evaluates the existing plug-in adjacent-lag CMI estimator over 30 seeds for each of two known-truth binary processes at n=500, 2,000 and 10,000. At n=500, null-order empirical p95 values reach about 0.017 bits for the first-order chain at k=2 and 0.0081 bits for the noisy-XOR chain at k=2; by n=10,000 they fall to about 0.00071 and 0.00096 bits, respectively. The true second-order XOR signal at k=1 has mean 0.7686 bits at n=500 and 0.8018 bits at n=10,000 versus analytic truth 0.8056 bits.
+
+This is a narrow synthetic calibration, not a universal threshold. Thirty-replicate empirical percentiles are not confidence intervals, and sparse contexts, correlated observations and other alphabets/processes remain untested. No entropy-production, heat or wall-plug-energy value is inferred. The reproducibility module is software/uqpu-prototype/uqpu/fnd001_cmi_bias_calibration.py; its small deterministic smoke test is added to the unit suite.
+
 ## Unlock criteria
 
 1. Freeze a suite of known-truth first-, second- and higher-order processes across sample lengths, alphabet sizes, transition sparsity and noise levels.

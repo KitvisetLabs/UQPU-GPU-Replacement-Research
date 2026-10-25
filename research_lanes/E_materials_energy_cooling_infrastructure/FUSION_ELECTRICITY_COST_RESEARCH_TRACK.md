@@ -39,6 +39,12 @@ A high plasma gain or target gain is not equivalent to a low electricity cost.
 
 Build wide, source-bounded parameter envelopes for tokamak, stellarator, inertial and pulsed/magneto-inertial families. Run sensitivity analysis with `uqpu.energy_finance.fusion_lcoe_per_mwh` to identify which uncertain parameter most changes modeled cost. The result remains MODEL_ONLY until populated with measured project/component evidence.
 
+## Fresh operational/design evidence lead — 2026-10-25
+
+The IAEA long-pulse meeting (20–23 October 2026) provides source-bound leads on EAST dynamic lithium wall conditioning (contribution 42923), EAST LH/EC current drive (42922), and CFEDR baseline design (42919). See docs/literature_watch/2026-10-25-iaea-long-pulse-fusion-net-electricity.md and gap RG-036.
+
+Use the EAST 1066-second pulse and reported auxiliary RF inputs only as operating-envelope data. Do not equate pulse duration or plasma Q with plant net electric output. The CFEDR prediction of >500 MWe is an integrated-model projection with unresolved fuel/material/maintenance issues, not a measured plant result. FUS-LPO-001 must reconstruct the power balance and availability boundary before any cost propagation.
+
 ## Competitive rule
 
 Compare against the best available generation/system option at the date of analysis. Do not freeze an old high-cost fossil baseline and declare victory later.

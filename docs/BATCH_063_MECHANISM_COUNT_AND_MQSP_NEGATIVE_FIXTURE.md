@@ -72,3 +72,23 @@ The 100× and 100,000,000× targets, universal subsystem replacement and all ene
 5. Continue BIO-001, FUS-001 and FIN-001 only with measured mass/energy, net delivered electricity and financing inputs.
 
 No paid QPU jobs or external physical experiments were submitted. This batch is a reproducible software/literature checkpoint; the new head's CI must pass before this change is treated as validated.
+
+
+---
+
+## Post-commit addendum — FND-001 calibration and additional literature surveillance (2026-10-25)
+
+### FND-001 finite-sample calibration
+
+A repeated-seed calibration now evaluates the plug-in adjacent-lag CMI statistic for a first-order binary Markov chain and a second-order noisy-XOR chain, at n=500, 2,000 and 10,000 with 30 seeds per case. The calibration shows positive finite-sample CMI at null orders, particularly for shorter samples and higher conditioning order; null-order empirical p95 values fall with increasing n in these two selected fixtures. The committed module and summary JSON provide deterministic replay. The empirical p95 values are descriptive, not confidence intervals or thresholds. No entropy production, heat or energy is inferred.
+
+### Additional literature deltas
+
+- **Fusion operations/design:** the 20–23 October IAEA long-pulse meeting reported EAST dynamic lithium-powder wall conditioning, a 1066-second fully non-inductive H-mode operating point with LH/EC input, and a CFEDR integrated-model projection of >500 MWe net output at duty factor 0.5. The first is an operating-envelope report; the latter is a design projection. Neither establishes commercial net electricity or lifecycle cost. See the dated watch, RG-036 and INT-20261025-020.
+- **Foundational no-go result:** Baghbani's 9 October arXiv preprint derives a scope-bounded phantom-crossing obstruction for a class of scale-invariant scalar–tensor models. The action/stability result is conditional on the stated model; the swampland-related arguments depend on conjectures. It is not a new observation or a universal exclusion of alternative gravity.
+- **Bio-oil/biomass:** the fresh search did not establish a new primary result that closes accepted-fuel yield/upgrading or full cost per delivered energy. BIO-001 remains open.
+- **No-go/anomaly discipline:** no credible anomaly or new physical law was established by this search. All new findings remain literature-only or MODEL_ONLY.
+
+### Validation history
+
+The code/test commit 25b5a6b03fe527760d84cbdc51388b4d34ff18ba passed the Python 3.10, 3.11 and 3.12 test matrix and the cold-start handoff audit. Its extended QSP/QSVT jobs were still in progress when this addendum was prepared. The FND-001 calibration module and this addendum are a follow-up commit and require their own current-head CI check. Do not report the full workflow as passed until the latest Actions run completes.

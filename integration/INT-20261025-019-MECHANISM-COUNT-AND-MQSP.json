@@ -31,7 +31,11 @@
     "equation_discovery_module": "software/uqpu-prototype/uqpu/equation_discovery.py",
     "equation_discovery_tests": "software/uqpu-prototype/tests/test_equation_discovery.py",
     "mqsp_tests": "software/uqpu-prototype/tests/test_mqsp_constructivity.py",
-    "mqsp_fixture": "benchmarks/results/mqsp-published-counterexample-fixture-2026-10-25.json"
+    "mqsp_fixture": "benchmarks/results/mqsp-published-counterexample-fixture-2026-10-25.json",
+    "fnd001_calibration_module": "software/uqpu-prototype/uqpu/fnd001_cmi_bias_calibration.py",
+    "fnd001_calibration_result": "benchmarks/results/fnd001-cmi-bias-calibration-2026-10-25.json",
+    "literature_fusion": "docs/literature_watch/2026-10-25-iaea-long-pulse-fusion-net-electricity.md",
+    "literature_no_go": "docs/literature_watch/2026-10-25-no-go-phantom-crossing-scalar-tensor.md"
   },
   "code_delta": {
     "bic_helper": "select_bic_candidate_count",
@@ -54,9 +58,9 @@
   "lanes": {
     "A": "Published M-QSP negative fixture plus feasible/infeasible tolerance sweeps; independent implementation remains open.",
     "B": "No provider change or job submission.",
-    "C": "Trajectory/field reconstruction literature reviewed; no project data or memory/energy measurement.",
+    "C": "TrajectoryFlowNet literature and FND-001 finite-sample calibration recorded; no project data or physical energy measurement.",
     "D": "No device or fabrication result.",
-    "E": "BIO-001/FUS-001 remain unclosed; no accepted fuel/material/net-electricity result.",
+    "E": "IAEA long-pulse fusion evidence lead recorded; no net-electricity or lifecycle-cost result.",
     "F": "Generic BIC comparator, model-count calibration gap RG-039 and evidence boundaries added.",
     "G": "No manufacturing equipment or yield evidence.",
     "H": "Batch 063 and two dated literature watches published; multilingual strategic references retained."
@@ -78,6 +82,22 @@
     "Independent M-QSP implementation and exact/algebraic cross-check.",
     "Boundary perturbation sweep for the published nonconstructible pair.",
     "Known-truth K=1/2/3 model-count calibration with blocked holdouts and false-positive reporting.",
-    "Independent reproduction of Physical Law Ecology public examples."
+    "Independent reproduction of Physical Law Ecology public examples.",
+    "Run and archive FND-001 repeated-seed calibration from the committed module; expand null families and dependence-aware uncertainty."
+  ],
+  "validation_history": [
+    {
+      "commit_sha": "25b5a6b03fe527760d84cbdc51388b4d34ff18ba",
+      "prototype_workflow_run": 40168385809,
+      "python_matrix": [
+        "3.10:success",
+        "3.11:success",
+        "3.12:success"
+      ],
+      "cold_start_audit_run": 40168385781,
+      "cold_start_audit": "success",
+      "extended_qsp_qsvt_checks": "in_progress at 2026-10-25T06:19:24Z",
+      "note": "Validation history refers to the code/test commit before the FND-001 calibration module and follow-up literature/docs commit."
+    }
   ]
 }

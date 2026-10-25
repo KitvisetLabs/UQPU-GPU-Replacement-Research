@@ -1,0 +1,71 @@
+{
+  "schema": "uqpu-fusion-long-pulse-net-electric-integration-v1",
+  "integration_id": "INT-20261025-020",
+  "work_id": "FUS-LPO-001",
+  "date": "2026-10-25",
+  "primary_owner_lane": "E_materials_energy_cooling_infrastructure",
+  "integration_owner_lane": "F_economics_benchmarks_evidence",
+  "co_design_lanes": [
+    "D_device_chip_process_fabrication_packaging",
+    "G_quantum_chip_manufacturing_equipment_software_factory"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "status": "LITERATURE_ONLY_POWER_BALANCE_GAP_OPEN",
+  "sources": [
+    {
+      "id": "IAEA-LPO-EAST-LI-2026-10-20",
+      "title": "Dynamic wall conditioning for long-pulse steady-state H-mode plasma on EAST with full metal wall",
+      "source_date": "2026-10-20",
+      "evidence_class": "OFFICIAL_CONFERENCE_ABSTRACT_WITH_OPERATIONAL_REPORT",
+      "url": "https://conferences.iaea.org/event/452/contributions/42923/",
+      "non_claim": "Not an independently replicated plant power or cost measurement."
+    },
+    {
+      "id": "IAEA-LPO-EAST-LHEC-2026-10-21",
+      "title": "Heating and current drive in long-pulse plasmas with combined lower hybrid and electron cyclotron waves on EAST",
+      "source_date": "2026-10-21",
+      "evidence_class": "OFFICIAL_CONFERENCE_ABSTRACT_WITH_OPERATIONAL_REPORT",
+      "url": "https://conferences.iaea.org/event/452/contributions/42922/",
+      "non_claim": "1066-second plasma duration and injected RF energy are not net saleable electricity or annual capacity factor."
+    },
+    {
+      "id": "IAEA-LPO-CFEDR-2026-10-22",
+      "title": "Progress on the Baseline Physics Design of China Fusion Engineering Demo Reactor",
+      "source_date": "2026-10-22",
+      "evidence_class": "OFFICIAL_CONFERENCE_ABSTRACT_INTEGRATED_MODEL_PROJECTION",
+      "url": "https://conferences.iaea.org/event/452/contributions/42919/",
+      "non_claim": "Predicted >500 MWe net output is a design-model claim, not measured plant electricity or lifecycle economics."
+    }
+  ],
+  "project_effect": "Add pulse duration, LH/EC input, wall conditioning, recycling, tungsten impurity, fuel retention and unresolved damage as source-bounded FUS-001 variables; do not promote net-electricity or cost claims.",
+  "next_gate": "Pin source/data hashes, reconstruct the EAST operating ledger, obtain the CFEDR full power balance, propagate uncertainty through recirculating power/availability/maintenance/fuel cycle/conversion/cooling/grid/finance/decommissioning, and independently review.",
+  "evidence_promoted_to_project": "none",
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "lanes": {
+    "A": "No computing or quantum-advantage implication.",
+    "B": "No provider or QPU job.",
+    "C": "No memory/data-movement measurement.",
+    "D": "Plasma-facing material/process windows and heat-load qualification remain open.",
+    "E": "Long-pulse operating and design-model leads recorded; net electricity not closed.",
+    "F": "No net-MWh or lifecycle-cost model populated with complete measured inputs.",
+    "G": "No manufacturing yield, component lifetime or replacement evidence added.",
+    "H": "Dated literature watch and integration record published."
+  },
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "evidence_boundary": "No commercial fusion, measured net electricity, cost advantage, WACC reduction or new-physical-law claim."
+}

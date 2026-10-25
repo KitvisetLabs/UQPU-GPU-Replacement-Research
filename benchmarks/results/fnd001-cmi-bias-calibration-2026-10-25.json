@@ -1,0 +1,251 @@
+{
+  "schema": "uqpu-fnd001-cmi-bias-calibration-v1",
+  "date": "2026-10-25",
+  "evidence_class": [
+    "MODEL_ONLY",
+    "SYNTHETIC_KNOWN_TRUTH",
+    "REPEATED_SEED_CALIBRATION"
+  ],
+  "method": {
+    "statistic": "plug-in adjacent-lag conditional mutual information in bits",
+    "replicates_per_family_length": 30,
+    "lengths": [
+      500,
+      2000,
+      10000
+    ],
+    "orders": [
+      0,
+      1,
+      2
+    ],
+    "seed_rule": "first_order seed=40000+length*10+replicate_index; second_order_xor seed=50000+length*10+replicate_index; replicate_index starts at 0",
+    "p95": "empirical nearest-rank 95th percentile over 30 replicates; not a confidence interval",
+    "sample_sd": "sample standard deviation across independent seeded replicates"
+  },
+  "families": {
+    "first_order": {
+      "generator": "binary Markov chain with P(stay)=0.9",
+      "analytic_true_cmi_bits": {
+        "0": 0.5310044064107188,
+        "1": 0,
+        "2": 0
+      }
+    },
+    "second_order_xor": {
+      "generator": "X_t=X_(t-1) XOR X_(t-2) XOR Bernoulli(0.03)",
+      "analytic_true_cmi_bits": {
+        "0": 0,
+        "1": 0.8056081421684238,
+        "2": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "family": "first_order",
+      "length": 500,
+      "replicates": 30,
+      "conditioning_order": 0,
+      "analytic_truth_bits": 0.5310044064107188,
+      "mean_bits": 0.5204343316287477,
+      "mean_bias_bits": -0.010570074781971028,
+      "sample_sd_bits": 0.045859684900910504,
+      "p95_empirical_nearest_rank_bits": 0.5958568291533415
+    },
+    {
+      "family": "first_order",
+      "length": 500,
+      "replicates": 30,
+      "conditioning_order": 1,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.0027728518757735828,
+      "mean_bias_bits": 0.0027728518757735828,
+      "sample_sd_bits": 0.0027072299863443675,
+      "p95_empirical_nearest_rank_bits": 0.009020231880467867
+    },
+    {
+      "family": "first_order",
+      "length": 500,
+      "replicates": 30,
+      "conditioning_order": 2,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.005730392591713114,
+      "mean_bias_bits": 0.005730392591713114,
+      "sample_sd_bits": 0.0052626668544737245,
+      "p95_empirical_nearest_rank_bits": 0.0169534813463322
+    },
+    {
+      "family": "first_order",
+      "length": 2000,
+      "replicates": 30,
+      "conditioning_order": 0,
+      "analytic_truth_bits": 0.5310044064107188,
+      "mean_bits": 0.5287089656842725,
+      "mean_bias_bits": -0.002295440726446274,
+      "sample_sd_bits": 0.01909749883192961,
+      "p95_empirical_nearest_rank_bits": 0.5607753513173009
+    },
+    {
+      "family": "first_order",
+      "length": 2000,
+      "replicates": 30,
+      "conditioning_order": 1,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.0009601918083482814,
+      "mean_bias_bits": 0.0009601918083482814,
+      "sample_sd_bits": 0.0008481353760864498,
+      "p95_empirical_nearest_rank_bits": 0.0027115923264943117
+    },
+    {
+      "family": "first_order",
+      "length": 2000,
+      "replicates": 30,
+      "conditioning_order": 2,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.0017142064270061763,
+      "mean_bias_bits": 0.0017142064270061763,
+      "sample_sd_bits": 0.0009116333724386433,
+      "p95_empirical_nearest_rank_bits": 0.00391121241893407
+    },
+    {
+      "family": "first_order",
+      "length": 10000,
+      "replicates": 30,
+      "conditioning_order": 0,
+      "analytic_truth_bits": 0.5310044064107188,
+      "mean_bits": 0.5284374693649505,
+      "mean_bias_bits": -0.0025669370457682694,
+      "sample_sd_bits": 0.008976140545464794,
+      "p95_empirical_nearest_rank_bits": 0.5405552222308201
+    },
+    {
+      "family": "first_order",
+      "length": 10000,
+      "replicates": 30,
+      "conditioning_order": 1,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.00012849504356068846,
+      "mean_bias_bits": 0.00012849504356068846,
+      "sample_sd_bits": 0.00015442768893112908,
+      "p95_empirical_nearest_rank_bits": 0.0003187703382402391
+    },
+    {
+      "family": "first_order",
+      "length": 10000,
+      "replicates": 30,
+      "conditioning_order": 2,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.0003266406905927704,
+      "mean_bias_bits": 0.0003266406905927704,
+      "sample_sd_bits": 0.00019940015373627962,
+      "p95_empirical_nearest_rank_bits": 0.0007096910152790142
+    },
+    {
+      "family": "second_order_xor",
+      "length": 500,
+      "replicates": 30,
+      "conditioning_order": 0,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.025759275316160037,
+      "mean_bias_bits": 0.025759275316160037,
+      "sample_sd_bits": 0.03757557257700773,
+      "p95_empirical_nearest_rank_bits": 0.11589627648920678
+    },
+    {
+      "family": "second_order_xor",
+      "length": 500,
+      "replicates": 30,
+      "conditioning_order": 1,
+      "analytic_truth_bits": 0.8056081421684238,
+      "mean_bits": 0.7685833942226143,
+      "mean_bias_bits": -0.037024747945809455,
+      "sample_sd_bits": 0.06530627534511721,
+      "p95_empirical_nearest_rank_bits": 0.8595028643200271
+    },
+    {
+      "family": "second_order_xor",
+      "length": 500,
+      "replicates": 30,
+      "conditioning_order": 2,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.002437146247154367,
+      "mean_bias_bits": 0.002437146247154367,
+      "sample_sd_bits": 0.0026659535994421426,
+      "p95_empirical_nearest_rank_bits": 0.008129892212532224
+    },
+    {
+      "family": "second_order_xor",
+      "length": 2000,
+      "replicates": 30,
+      "conditioning_order": 0,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.003476295274946557,
+      "mean_bias_bits": 0.003476295274946557,
+      "sample_sd_bits": 0.0065778260055176395,
+      "p95_empirical_nearest_rank_bits": 0.018599600166020504
+    },
+    {
+      "family": "second_order_xor",
+      "length": 2000,
+      "replicates": 30,
+      "conditioning_order": 1,
+      "analytic_truth_bits": 0.8056081421684238,
+      "mean_bits": 0.794071075153872,
+      "mean_bias_bits": -0.011537067014551816,
+      "sample_sd_bits": 0.02563341506378597,
+      "p95_empirical_nearest_rank_bits": 0.8427082718198293
+    },
+    {
+      "family": "second_order_xor",
+      "length": 2000,
+      "replicates": 30,
+      "conditioning_order": 2,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.0014108769871638718,
+      "mean_bias_bits": 0.0014108769871638718,
+      "sample_sd_bits": 0.00042520531169290207,
+      "p95_empirical_nearest_rank_bits": 0.002173176370715817
+    },
+    {
+      "family": "second_order_xor",
+      "length": 10000,
+      "replicates": 30,
+      "conditioning_order": 0,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.0010549156077611127,
+      "mean_bias_bits": 0.0010549156077611127,
+      "sample_sd_bits": 0.0015848581217518104,
+      "p95_empirical_nearest_rank_bits": 0.00519012373018124
+    },
+    {
+      "family": "second_order_xor",
+      "length": 10000,
+      "replicates": 30,
+      "conditioning_order": 1,
+      "analytic_truth_bits": 0.8056081421684238,
+      "mean_bits": 0.8017789076618445,
+      "mean_bias_bits": -0.0038292345065793487,
+      "sample_sd_bits": 0.010266775482155578,
+      "p95_empirical_nearest_rank_bits": 0.8181536451294311
+    },
+    {
+      "family": "second_order_xor",
+      "length": 10000,
+      "replicates": 30,
+      "conditioning_order": 2,
+      "analytic_truth_bits": 0,
+      "mean_bits": 0.00039548054635037274,
+      "mean_bias_bits": 0.00039548054635037274,
+      "sample_sd_bits": 0.00028598019416714576,
+      "p95_empirical_nearest_rank_bits": 0.0009644147990849564
+    }
+  ],
+  "limitations": [
+    "Only two synthetic binary generators and three sample lengths are covered.",
+    "The plug-in CMI estimator has finite-sample bias, especially when conditioning contexts are sparse.",
+    "The empirical percentile from 30 replicates is descriptive and is not a calibrated decision threshold.",
+    "No thermodynamic entropy production, heat, wall-plug energy, real data or physical-system parameter was measured.",
+    "Do not infer Markov order without preregistered thresholds, broader null families, dependence-aware uncertainty and independent validation."
+  ]
+}

@@ -29,6 +29,18 @@ FUS-LI-001 must freeze the primary paper/supplementary-data hashes; record plasm
 
 The proposed plant-level route is falsified if the retention effect does not reproduce under matched conditions, is not distinguishable from measurement uncertainty, or is too small relative to other validated lifecycle losses to change the net-electricity/cost envelope.
 
+## New official IAEA conference leads — 2026-10-25
+
+The IAEA Third Technical Meeting on Long-Pulse Operation of Fusion Devices (20–23 October 2026) adds three source-bound leads:
+
+- EAST dynamic wall conditioning with feedforward/feedback lithium-powder injection and Li-II emission control; contribution 42923 (20 October): https://conferences.iaea.org/event/452/contributions/42923/
+- EAST combined lower-hybrid/electron-cyclotron heating and current drive; contribution 42922 (21 October) reports a 1066-second fully non-inductive H-mode with about 0.92 MW LH and 1.9 MW EC input and about 3.05 GJ cumulative injected RF energy: https://conferences.iaea.org/event/452/contributions/42922/
+- CFEDR baseline physics design; contribution 42919 (22 October) reports integrated-model predictions of 2.9 GW fusion power, Q=30 and net output above 500 MWe at duty factor 0.5, while identifying unresolved helium/tritium, tungsten-erosion and runaway-electron-damage issues: https://conferences.iaea.org/event/452/contributions/42919/
+
+Evidence boundary: conference abstracts and an integrated-design projection. The EAST pulse duration is an operational plasma milestone, not annual plant availability or net electricity; injected RF energy is not saleable output; Q is not electric gain. The CFEDR net-power value is predicted, not measured. No lifecycle cost, CAPEX, recirculating-power ledger or finance result is supplied.
+
+Follow-up FUS-LPO-001: pin sources/data; reconstruct the EAST operational and wall-conditioning ledger; obtain the CFEDR plant power balance and uncertainty; then propagate only traceable values into FUS-001 with recirculating power, capacity factor, maintenance, fuel cycle, component replacement, conversion/cooling, grid, financing and decommissioning included. Keep results literature-only until independently checked.
+
 ## Unlock criteria
 
 1. Independently reconstructed source-data table and analysis.

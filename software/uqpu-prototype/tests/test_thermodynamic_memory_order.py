@@ -1,6 +1,7 @@
 import random
 import unittest
 
+from uqpu.fnd001_cmi_bias_calibration import run_calibration
 from uqpu.thermodynamic_memory_order import (
     adjacent_lag_cmi_profile_bits,
     conditional_mutual_information_bits,
@@ -52,6 +53,15 @@ class AdjacentLagCMITests(unittest.TestCase):
             adjacent_lag_cmi_profile_bits([0, 1, 0], 2)
         with self.assertRaises(ValueError):
             conditional_mutual_information_bits([[0], [1], [0]], 0)
+
+
+    def test_repeated_seed_calibration_is_deterministic_and_model_only(self):
+        first = run_calibration(lengths=(100,), replicates=3)
+        second = run_calibration(lengths=(100,), replicates=3)
+        self.assertEqual(first, second)
+        self.assertEqual(len(first["results"]), 6)
+        self.assertIn("MODEL_ONLY", first["evidence_class"])
+        self.assertIn("not a confidence interval", first["method"]["p95"])
 
 
 if __name__ == "__main__":
