@@ -35,6 +35,10 @@ The new contract treats information-theoretic bounds as output-semantics constra
 
 INV-025/026/027 and INV-029–035 remain preserved. Lane C owns the FND-002 contract; Lane A implements the workload/benchmark integration; Lane F owns evidence and cross-lane integration; Lane H owns publication. Lanes B, D, E and G were explicitly reviewed in the dated cycle report and remain active.
 
+## Canonical README pointer sync debt
+
+The top README checkpoint still names Batch 062 while Batch 063 is the latest canonical batch and is referenced later in the README. Do not overwrite the large README from a partial read; reconcile its top pointer with a focused, hash-checked edit after review.
+
 ## Required next action
 
 Review and merge the source PR only after exact-head Python 3.10/3.11/3.12, invariant and cold-start checks pass. After any merge, record all source-SHA-to-main-SHA mappings and update the canonical handoff without overwriting the append-only RESEARCH_GAPS.md or WORKLOG.md.
