@@ -30,3 +30,11 @@ The large append-only `RESEARCH_GAPS.md` and `WORKLOG.md` were not replaced from
 5. Merge only through the repository's normal review process; then append the canonical worklog/gap history using complete current contents and update README or the lane track only if the resulting merged state warrants it.
 
 **Evidence boundary:** this synchronization record is process metadata, not scientific or economic evidence.
+
+
+## Validation update — 2026-10-25
+
+- Exact-head Python test matrix on `8d5976868cac4970bbc2e814e17c4cd5e6b8d094`: Python 3.10, 3.11 and 3.12 jobs passed.
+- Exact-head Autonomous Cold-Start Handoff Audit on the same commit passed.
+- Extended reference-benchmark, QSP/QSVT, Qiskit and target-snapshot jobs were queued at the last poll; full extended-workflow acceptance remains pending.
+- The final branch head changed only by a documentation/status commit after that tested code tree. The new source/test files are unchanged; CI should confirm the latest tree before merge.
