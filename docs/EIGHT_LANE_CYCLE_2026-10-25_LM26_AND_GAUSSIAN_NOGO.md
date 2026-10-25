@@ -51,6 +51,6 @@ FND-001 through FND-006 remain active; no new thermodynamic gap, output-informat
 
 ## CI, synchronization and safety
 
-The new branch starts from canonical main. The local smoke checks exercised the fusion-evidence classification logic; the repository's exact-commit CI must still run before this work is considered validated. The pending-main synchronization ledger is provided separately. No large append-only canonical file was overwritten.
+The new branch starts from canonical main. The 12-test fusion-evidence suite passed in local smoke execution. On head 8d5976868cac4970bbc2e814e17c4cd5e6b8d094, the repository Python 3.10/3.11/3.12 test matrix and cold-start handoff audit passed. Extended reference-benchmark, QSP/QSVT, Qiskit and target-snapshot jobs remained queued at the last check, so no full-workflow pass is claimed. The pending-main synchronization ledger is provided separately. No large append-only canonical file was overwritten.
 
 No paid QPU jobs, material experiments, fusion experiments, funding, or external spending were authorized.
