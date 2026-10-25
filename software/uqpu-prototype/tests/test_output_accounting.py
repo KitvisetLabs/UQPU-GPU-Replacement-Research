@@ -21,6 +21,7 @@ def _workload(output: OutputInformationContract | None) -> WorkloadContract:
         input_semantics="seeded accepted-outcome source",
         output_semantics="one accepted outcome label",
         quality_metric="accepted-outcome identity",
+        exactness_required=output.exactness_required if output is not None else False,
         output_information=output,
     )
 
@@ -149,6 +150,22 @@ class OutputAccountingTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "output_measurement is required"):
             plan.validate()
 
+    def test_workload_exactness_must_match_output_contract(self):
+        contract = WorkloadContract(
+            workload_id="fnd002-mismatch",
+            roles=(ClassicalRole.CPU,),
+            input_semantics="seeded accepted-outcome source",
+            output_semantics="one accepted outcome label",
+            quality_metric="accepted-outcome identity",
+            exactness_required=False,
+            output_information=OutputInformationContract(
+                distinguishable_outcomes=8,
+                exactness_required=True,
+            ),
+        )
+        with self.assertRaisesRegex(ValueError, "must match output_information"):
+            contract.validate()
+
     def test_benchmark_rejects_output_measurement_without_contract(self):
         plan = BenchmarkRunPlan(
             _workload(None), "local", "deterministic-reference", 1, _state(), _state(),
@@ -190,6 +207,8 @@ class OutputAccountingTests(unittest.TestCase):
             ).validate()
         with self.assertRaises(ValueError):
             OutputInformationContract(4, encoding_mode="unknown").validate()
+        with self.assertRaises(ValueError):
+            OutputInformationContract(4, encoding_mode=[]).validate()
         with self.assertRaises(ValueError):
             OutputInformationContract(
                 4, side_information_available=True
