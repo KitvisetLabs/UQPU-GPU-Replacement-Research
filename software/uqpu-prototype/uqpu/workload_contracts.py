@@ -2,6 +2,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum
 
+from .output_accounting import OutputInformationContract
+
 
 class ClassicalRole(str, Enum):
     CPU = "CPU"
@@ -21,6 +23,7 @@ class WorkloadContract:
     latency_budget_seconds: float | None = None
     persistence_required: bool = False
     exactness_required: bool = False
+    output_information: OutputInformationContract | None = None
 
     def validate(self) -> None:
         if not self.workload_id:
@@ -29,6 +32,8 @@ class WorkloadContract:
             raise ValueError("at least one classical role is required")
         if not self.input_semantics or not self.output_semantics or not self.quality_metric:
             raise ValueError("contract semantics and quality metric are required")
+        if self.output_information is not None:
+            self.output_information.validate()
 
 
 def first_verified_win_candidates() -> tuple[WorkloadContract, ...]:
