@@ -15,7 +15,8 @@
   "artifacts": {
     "literature_watch": "docs/literature_watch/2026-10-26-quantum-strong-mpemba-coherence-relaxation.md",
     "integration_record": "integration/INT-20261026-043-QMP-FND001.json",
-    "primary_source": "https://journals.aps.org/prl/abstract/10.1103/z9t9-mwgv"
+    "primary_source": "https://journals.aps.org/prl/abstract/10.1103/z9t9-mwgv",
+    "workflow_fix": ".github/workflows/cold-start-handoff.yml"
   },
   "source": {
     "title": "Genuine Quantum Strong Mpemba Effect by Eliminating Coherence",
@@ -108,9 +109,25 @@
     "sync_debt": [
       "Large append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial reads.",
       "README latest-verified checkpoint remains behind canonical Batch 063; reconcile without truncating history.",
-      "Many independent PRs remain open; review exact-head CI and stable integration IDs before merging. No branch was merged in this cycle."
-    ]
+      "Many independent PRs remain open; review exact-head CI and stable integration IDs before merging. No branch was merged in this cycle.",
+      "One branch-creation-triggered cold-start run failed on the base SHA before the guard fix; it is a workflow event/branch-name mismatch, not a research-test failure. The corrected exact-head run is pending."
+    ],
+    "branch_head": "9bf1719822e60f1b344329004542dfc39bb88807",
+    "branch_ci": {
+      "prototype_workflow_run": 40229572638,
+      "prototype_workflow_status": "queued",
+      "cold_start_workflow_run": 40229569386,
+      "cold_start_workflow_status": "queued"
+    }
   },
   "next_highest_value_gate": "Run the source-exact, independently implemented single-qubit reproduction with preregistered held-out parameters, null controls, and matched accepted-output plus preparation/control/readout/reset/retry accounting. No paid QPU or physical experiment is authorized by this record.",
-  "project_evidence_promoted": false
+  "project_evidence_promoted": false,
+  "workflow_repair": {
+    "observed_failure_run_id": 40229432417,
+    "observed_failure_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+    "diagnosis": "Branch-creation push event evaluated the existing main commit under the newly created research branch name, so the validator expected Research-Sync: pending-main while the main commit correctly had Research-Sync: main.",
+    "change": "Skip only the cold-start job for push events where github.event.created is true; audit resumes on the first actual branch commit and remains available for workflow_dispatch.",
+    "fix_commit_sha": "9bf1719822e60f1b344329004542dfc39bb88807",
+    "validation": "Exact-head Actions queued/in progress at record update; do not treat as passed until completed."
+  }
 }
