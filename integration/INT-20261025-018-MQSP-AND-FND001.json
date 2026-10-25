@@ -27,7 +27,8 @@
     "literature_watch": "docs/literature_watch/2026-10-25-ai-generated-math-instruments-verification.md",
     "lane_f_artifact": "research_lanes/F_economics_benchmarks_evidence_integration/FND_001_MEMORY_ORDER_DIAGNOSTIC_2026-10-25.md",
     "open_gap": "docs/RESEARCH_GAP_RG038_MEMORY_ORDER_ENTROPY_INFERENCE_VALIDATION.md",
-    "formalization_faithfulness_watch": "docs/literature_watch/2026-10-25-navier-stokes-formalization-faithfulness-effective-theory.md"
+    "formalization_faithfulness_watch": "docs/literature_watch/2026-10-25-navier-stokes-formalization-faithfulness-effective-theory.md",
+    "symbolic_ensemble_materials_watch": "docs/literature_watch/2026-10-25-symbolic-ensemble-interatomic-potentials.md"
   },
   "validation": {
     "local_mqsp_tests": {
@@ -57,7 +58,7 @@
     "B": "No provider changes or submissions; target identity/pricing remains separate.",
     "C": "Temporal memory statistic added; no readable-storage, state-I/O or energy measurement.",
     "D": "No device/fabrication result; D/G co-design retained.",
-    "E": "BIO-001 and FUS-001 remain open; no accepted fuel/material/net-electricity result.",
+    "E": "BIO-001/FUS-001 remain open; the symbolic-ensemble aluminum-potential preprint is a model-method lead only, not Pangola-carbon substitution, accepted fuel or net-electricity evidence.",
     "F": "Synthetic CMI profile and RG-038 added; no thermodynamic or economic advantage claim.",
     "G": "No manufacturing evidence; equipment requirements remain downstream.",
     "H": "Batch 062, literature watch and gap published; multilingual plan references retained."
@@ -102,6 +103,7 @@
     "Add a theorem-derived nontrivial M-QSP infeasible fixture including the published counterexample; independently cross-check the recursion and sweep tolerances.",
     "Calibrate CMI finite-sample bias and uncertainty on frozen known-truth process families.",
     "Only after the algorithm gate, proceed to provider-neutral lowering and same-target accepted-useful-task resource/cost accounting.",
-    "EQN-AUTOFORMAL-002: freeze intended theorem and formal statement, audit semantic faithfulness and domain assumptions, and keep physical interpretation behind an independent experiment gate."
+    "EQN-AUTOFORMAL-002: freeze intended theorem and formal statement, audit semantic faithfulness and domain assumptions, and keep physical interpretation behind an independent experiment gate.",
+    "MAT-EQN-001: if a specific carbonaceous material candidate and reference data are selected, compare single symbolic potentials and an ensemble on held-out physical properties and independent experimental data."
   ]
 }
