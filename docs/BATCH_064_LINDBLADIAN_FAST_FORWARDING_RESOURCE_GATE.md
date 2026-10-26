@@ -76,3 +76,8 @@ INV-025/026/027 and the 100,000,000-GPU/universal subsystem moonshots remain goa
 ## Next highest-value gate
 
 Implement and independently audit the bounded Gaussian-dephasing and compound-Poisson fixtures against the paper's assumptions. Compare with a competitive classical solver under a frozen output/error contract; retain raw outputs, held-out points, failed cases, host/state/I/O, energy where measurable and total cost per accepted task. Only after this passes should target-aware simulation be considered. Paid QPU execution still requires credentials, a bounded budget and explicit user consent.
+
+
+## Branch synchronization provenance
+
+This artifact is proposed from the current canonical main and remains pending review/merge. The branch's latest synchronization commit uses the required branch-specific trailer; no canonical-main merge is implied.
