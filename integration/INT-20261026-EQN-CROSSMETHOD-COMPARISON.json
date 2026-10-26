@@ -1,0 +1,129 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-EQN-CROSSMETHOD-COMPARISON",
+  "work_item_id": "EQN-CROSSMETHOD-001",
+  "date": "2026-10-26",
+  "canonical_start_sha": "b37d3cbe8992b9e6278943ffc6979b1f998eb86c",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "cross_lane_owners": [
+    "F_economics_benchmark_evidence",
+    "H_strategy_finance_future_industries"
+  ],
+  "publication_owner": "H_strategy_finance_future_industries",
+  "evidence_class": "LITERATURE_ONLY + PROTOCOL_ONLY",
+  "artifacts": [
+    "docs/literature_watch/2026-10-26-progressive-equation-discovery-comparison.md",
+    "docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md",
+    "docs/RESEARCH_OPERATING_SYSTEM.md"
+  ],
+  "source_deltas": [
+    {
+      "source": "Data-driven progressive discovery of physical laws",
+      "date": "2026-10-06",
+      "class": "APS accepted paper",
+      "url": "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q",
+      "novelty": "Progressive composition of interpretable symbolic knowledge units."
+    },
+    {
+      "source": "Synthesizing Physics Formulae with Transformers",
+      "date": "2026-10-02",
+      "class": "official arXiv preprint 2610.03947",
+      "url": "https://arxiv.org/abs/2610.03947",
+      "novelty": "Formula-generation training distribution aimed at improved extrapolation."
+    },
+    {
+      "source": "Language models guide symbolic equation discovery by controlling search",
+      "date": "2026-07-05",
+      "class": "official arXiv preprint 2607.04156",
+      "url": "https://arxiv.org/abs/2607.04156",
+      "novelty": "LLM controls search-space design while numerical regression and deterministic metrics retain candidates."
+    },
+    {
+      "source": "L2G-SR: Learning to Guide LLM-based Symbolic Regression",
+      "date": "2026-10-14",
+      "class": "official arXiv preprint 2610.20685",
+      "url": "https://arxiv.org/abs/2610.20685",
+      "novelty": "Learned structural verifier supplements numerical error during search."
+    }
+  ],
+  "lane_status": {
+    "A": "Cross-method comparison protocol and RG-EQN-008 recorded; no reproduction run. Priority next: consolidate pending PRs, freeze common interface and run exact-head CI.",
+    "B": "No provider changes or QPU calls; provider-neutral and simulator-first policy unchanged.",
+    "C": "Keep logical state/entropy distinct from physical memory bytes, movement, reconstruction and energy.",
+    "D": "No device/process result; any equation candidate needs process-specific independent measurements.",
+    "E": "No Pangola material, accepted bio-oil or net fusion-electricity result; literature remains a candidate-method input only.",
+    "F": "Matched total-resource accounting, accepted-formula cost, failed searches and false discoveries are preregistered requirements.",
+    "G": "Continuous D/G co-design preserved; no manufacturing-equipment or factory result.",
+    "H": "Dated synthesis published while preserving strategic master-plan references and multilingual links."
+  },
+  "foundational": {
+    "FND-001": "RG040 remains open; finite-state results remain MODEL_ONLY without accepted-task quality and physical energy.",
+    "FND-002": "Output-information lower bounds unchanged.",
+    "FND-003": "No matched control-versus-quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No experimentally validated new QFT/particle mechanism.",
+    "FND-006": "Cross-method equation discovery is now a falsifiable benchmark question, not a physical-law claim.",
+    "EQN-001_to_EQN-006": "Require constraints, held-out/generalization, counterexamples, proof/experiment, independent replication and economic accounting."
+  },
+  "invariant_status": {
+    "INV-029": "No phone-class physical compression or lifecycle-cost evidence.",
+    "INV-030": "No elemental transmutation or Pangola-carbon functional-substitution claim.",
+    "INV-031": "No accepted bio-oil yield/cost evidence.",
+    "INV-032": "No reliable net delivered fusion-electricity evidence.",
+    "INV-033": "No measured principal, interest or WACC change.",
+    "INV-034": "Deep-frontier mathematical search remains evidence-gated.",
+    "INV-035": "AI-generated equations remain hypotheses until independent physical validation.",
+    "INV-025_026_027": "100,000,000x and universal subsystem moonshots remain falsifiable, evidence-gated goals."
+  },
+  "pending_pull_requests": [
+    {
+      "number": 56,
+      "topic": "CoSR/progressive symbolic discovery",
+      "state": "open",
+      "mergeable": false,
+      "action": "Do not merge until rebase/conflict resolution and exact-head checks."
+    },
+    {
+      "number": 98,
+      "topic": "Transformer formula discovery benchmark",
+      "state": "open",
+      "mergeable": false,
+      "action": "Do not merge until rebase/conflict resolution and exact-head checks."
+    },
+    {
+      "number": 104,
+      "topic": "L2G-SR structural guidance",
+      "state": "open",
+      "mergeable": false,
+      "action": "Do not merge until rebase/conflict resolution and exact-head checks."
+    }
+  ],
+  "prechange_ci": {
+    "main_sha": "b37d3cbe8992b9e6278943ffc6979b1f998eb86c",
+    "prototype_and_invariants": "success on Python 3.10, 3.11, 3.12; QSP/QSVT and QAOA jobs successful",
+    "cold_start_handoff_audit": "success",
+    "note": "These checks validate the inspected pre-change commit only; the new commit requires its own Actions run."
+  },
+  "sync_debt": [
+    "RG-EQN-008 is standalone and not yet appended to the large RESEARCH_GAPS.md.",
+    "Pending PRs #56, #98 and #104 remain unmerged and reported mergeable=false at inspection."
+  ],
+  "next_highest_value_gate": "Resolve pending-main conflicts and merge/reuse one canonical Lane A comparison interface only after exact-head CI; then run a frozen law-family-disjoint, held-out-scale benchmark with matched total resource budgets and independent review.",
+  "non_claims": [
+    "No equation is promoted to a physical law.",
+    "No QPU, material, bio-oil, fusion, energy, financing or Data-Center-to-Phone advantage is demonstrated.",
+    "No paid provider or QPU execution was submitted."
+  ],
+  "preserved_context": [
+    "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md",
+    "00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md",
+    "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md",
+    "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+    "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+    "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+    "05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md",
+    "06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md",
+    "docs/KANUSANAN_PONGPANNA_MODEL.md",
+    "STRATEGIC_PLAN_REFERENCES.md"
+  ]
+}

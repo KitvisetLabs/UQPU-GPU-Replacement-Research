@@ -26,6 +26,15 @@ Owns Pangola/agricultural-residue feedstocks, functional material substitution/m
 ### Lane F — Economics, evidence & integration
 Owns GPU/full-stack baselines, inverse cost budgets, financing/commercialization context, evidence labels, research gaps, cross-lane dependency resolution and release gating.
 
+### Lane G — Quantum-chip manufacturing equipment & factory systems — continuous D/G co-design
+Owns quantum/photonic/semiconductor process equipment and software, metrology, defectivity, yield, packaging tools, process control, factory automation, and cost per good die/device/package. Lane G co-designs continuously with Lane D; equipment or factory claims remain evidence-gated and are not inferred from device roadmaps alone.
+
+### Lane H — Strategy, finance & future industries
+Owns the Ketskaew Chulamani / Kanusanan Pongpanna Model, strategic-finance and future-industry research, public master-plan publication, and preservation of Thai/English/Chinese/Japanese/Korean/German references and recorded strategic AI-agent/funding leads. Strategic intent is preserved as context, not treated as scientific, legal, market, or financing evidence.
+
+### Cross-cutting foundation — INV-034 and INV-035 feed A–H
+INV-034 keeps mathematics-first foundational research active from information theory and quantum foundations through QFT/particle physics and other plausible frontiers. INV-035 governs AI-assisted equation discovery across every lane: name the incumbent assumption and alternative; check units, symmetries, conservation and causality; test limits and held-out predictions; search counterexamples; specify proof or discriminating experiment and independent validation; retain false discoveries. These foundations are not substitutes for present physical constraints or measured engineering evidence.
+
 ## Single work-item contract
 Every task in every lane uses exactly this compact record:
 
@@ -59,12 +68,13 @@ no implicit promotion path.
                     PRIORITY / SCOREBOARD
                             |
        +---------+----------+----------+----------+----------+
-       |         |          |          |          |          |
-       A         B          C          D          E          F
-   Software   Quantum    Memory     Fab/Pack   Materials  Economics/
-  Workloads    Cloud    Photonics              Energy    Integration
-       |         |          |          |          |          |
-       +---------+----------+----------+----------+----------+
+       |        |         |          |         |          |             |             |
+       A        B         C          D         E          F             G             H
+   Software  Quantum   Memory     Devices  Materials  Economics/   Manufacturing  Strategy/
+   Workloads  & Cloud   & Data     & Fab    & Energy  Evidence      Equipment     Finance/
+   Compiler   Providers Movement  Packaging Cooling   Integration   & Factory     Future
+       |        |         |          |         |          |             |             |
+       +--------+---------+----------+---------+----------+-------------+-------------+
                             |
                      INTEGRATION GATE
                             |
