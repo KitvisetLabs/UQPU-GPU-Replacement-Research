@@ -15,6 +15,14 @@
     {
       "sha": "5f4109ed1491ebceb565a4cd7d35049bb3ba0a7c",
       "role": "regression_tests"
+    },
+    {
+      "sha": "75246a00e221a7c5b481e4a27aab8a9ec21b7705",
+      "role": "exact_statement_binding"
+    },
+    {
+      "sha": "8c87e33346df45659d7747d0a440494d432e62a7",
+      "role": "exact_statement_and_status_only_tests"
     }
   ],
   "status": "PR_PREPARATION_EXACT_HEAD_CI_PENDING",
@@ -54,12 +62,22 @@
     "batch": "docs/BATCH_071_FORMAL_PROOF_EQUATION_BINDING.md",
     "module": "software/uqpu-prototype/uqpu/equation_discovery.py",
     "tests": "software/uqpu-prototype/tests/test_equation_discovery.py",
-    "report": "integration/DAILY_CYCLE_2026-10-27_FORMAL_PROOF_BINDING.md"
+    "report": "integration/DAILY_CYCLE_2026-10-27_FORMAL_PROOF_BINDING.md",
+    "statement_binding": "software/uqpu-prototype/uqpu/equation_discovery.py::EquationHypothesis.formal_proof_statement"
   },
   "tests": {
     "added": true,
     "executed_locally": false,
-    "exact_head_ci": "PENDING"
+    "exact_head_ci": "PENDING",
+    "cases_added": [
+      "missing proof record",
+      "claim ID mismatch",
+      "status mismatch",
+      "exact theorem statement mismatch",
+      "legacy CHECKED alias",
+      "independent reproduction record",
+      "status-only fail-closed"
+    ]
   },
   "evidence_class": "SOFTWARE_CONTRACT_AND_LITERATURE_SURVEILLANCE",
   "claims_not_established": [
