@@ -84,9 +84,10 @@ class EquationHypothesis:
     proof_or_discriminating_experiment_plan: tuple[str, ...] = field(default_factory=tuple)
     formal_proof_status: str = "NOT_RUN"
     formal_proof_notes: tuple[str, ...] = field(default_factory=tuple)
-    formal_proof_evidence: FormalProofEvidence | None = None
     false_discovery_status: str = "NOT_ASSESSED"
     false_discovery_notes: tuple[str, ...] = field(default_factory=tuple)
+    # Appended to preserve positional compatibility for existing dataclass callers.
+    formal_proof_evidence: FormalProofEvidence | None = None
 
     def validate(self) -> None:
         if not self.equation_id.strip():
