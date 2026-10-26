@@ -24,6 +24,25 @@ class EquationDiscoveryTests(unittest.TestCase):
             independent_validation_plan=("blind held-out dataset",),
             heldout_baseline_error=0.2,
             heldout_candidate_error=0.1,
+            incumbent_assumption="linear baseline assumes no quadratic curvature",
+            dimensional_symmetry_conservation_causality_checks=(
+                "units agree for every term",
+                "declared symmetry is preserved",
+                "conservation constraints are unchanged",
+                "causal domain excludes future-to-past dependence",
+            ),
+            counterexample_search_plan="probe domain boundaries, singular limits, symmetry transforms and adversarial points",
+            counterexample_search_status="NO_COUNTEREXAMPLE_FOUND",
+            counterexample_notes=(),
+            heldout_prediction="positive curvature persists on the preregistered blind domain",
+            proof_or_discriminating_experiment_plan=(
+                "verify the b->0 limiting case algebraically",
+                "measure y(x) on a blind held-out dataset",
+            ),
+            formal_proof_status="NOT_RUN",
+            formal_proof_notes=(),
+            false_discovery_status="NO_FALSE_DISCOVERY_FOUND",
+            false_discovery_notes=(),
         )
         data.update(overrides)
         return EquationHypothesis(**data)
@@ -65,6 +84,48 @@ class EquationDiscoveryTests(unittest.TestCase):
         )
         self.assertFalse(no_gain.ready_for_physical_candidate_claim)
 
+    def test_explicit_incumbent_and_physics_gates_are_required(self):
+        with self.assertRaises(ValueError):
+            self._candidate(incumbent_assumption="").validate()
+        with self.assertRaises(ValueError):
+            self._candidate(dimensional_symmetry_conservation_causality_checks=()).validate()
+        with self.assertRaises(ValueError):
+            self._candidate(counterexample_search_plan="").validate()
+        with self.assertRaises(ValueError):
+            self._candidate(heldout_prediction="").validate()
+        with self.assertRaises(ValueError):
+            self._candidate(proof_or_discriminating_experiment_plan=()).validate()
+
+    def test_formal_proof_status_is_explicit_and_auditable(self):
+        with self.assertRaises(ValueError):
+            self._candidate(formal_proof_status="KERNEL_CHECKED").validate()
+        with self.assertRaises(ValueError):
+            self._candidate(formal_proof_status="CHECKED", formal_proof_notes=()).validate()
+        checked = self._candidate(
+            formal_proof_status="CHECKED",
+            formal_proof_notes=("synthetic unit-test theorem; pinned checker and statement hash recorded",),
+        )
+        checked.validate()
+
+    def test_counterexamples_and_false_discoveries_block_candidate_promotion(self):
+        unsearched = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT", independent_validation_count=1,
+            counterexample_search_status="NOT_RUN",
+        )
+        self.assertFalse(unsearched.ready_for_physical_candidate_claim)
+        counterexample = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT", independent_validation_count=1,
+            counterexample_search_status="COUNTEREXAMPLE_FOUND",
+            counterexample_notes=("candidate fails at x=0.9",),
+        )
+        self.assertFalse(counterexample.ready_for_physical_candidate_claim)
+        false_discovery = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT", independent_validation_count=1,
+            false_discovery_status="FALSE_DISCOVERY_FOUND",
+            false_discovery_notes=("apparent gain disappears under a unit-consistent holdout",),
+        )
+        self.assertFalse(false_discovery.ready_for_physical_candidate_claim)
+
     def test_contract_keeps_equation_baseline_constraints_and_falsifier(self):
         fields = required_discovery_fields()
         for name in (
@@ -74,6 +135,16 @@ class EquationDiscoveryTests(unittest.TestCase):
             "falsifier",
             "discriminating_observables",
             "independent_validation_plan",
+            "incumbent_assumption",
+            "dimensional_symmetry_conservation_causality_checks",
+            "counterexample_search_plan",
+            "counterexample_search_status",
+            "heldout_prediction",
+            "proof_or_discriminating_experiment_plan",
+            "formal_proof_status",
+            "formal_proof_notes",
+            "false_discovery_status",
+            "false_discovery_notes",
         ):
             self.assertIn(name, fields)
 

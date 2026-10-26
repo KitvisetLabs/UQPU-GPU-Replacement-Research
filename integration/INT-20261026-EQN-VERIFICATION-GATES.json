@@ -1,0 +1,82 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-EQN-VERIFICATION-GATES",
+  "work_item_id": "EQN-GATE-001",
+  "date": "2026-10-26",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "cross_lane_owners": [
+    "B_cloud_qpu_provider_integration",
+    "C_state_memory_storage_data_movement",
+    "D_device_chip_fabrication_packaging",
+    "E_materials_energy_cooling_infrastructure",
+    "F_economics_benchmarks_evidence_integration",
+    "G_manufacturing_equipment_factory_software"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "artifacts": {
+    "batch": "docs/BATCH_066_AI_MATH_FORMAL_VERIFICATION_AND_EQUATION_GATES.md",
+    "literature_watch": "docs/literature_watch/2026-10-26-ai-math-discovery-proof-gates-and-physics-equations.md",
+    "research_gap": "docs/RESEARCH_GAP_EQN007_FORMAL_VERIFICATION_AND_PHYSICAL_PREDICTION.md",
+    "module": "software/uqpu-prototype/uqpu/equation_discovery.py",
+    "tests": "software/uqpu-prototype/tests/test_equation_discovery.py"
+  },
+  "sources": [
+    {
+      "title": "What the Machine Invented: Mining New Mathematical Instruments from OpenAI's October 2026 Release of AI-Generated Mathematics",
+      "url": "https://arxiv.org/abs/2610.17090",
+      "published": "2026-10-12",
+      "evidence_class": "LITERATURE_ONLY"
+    },
+    {
+      "title": "NanoProof: Open and Efficient Automated Theorem Proving in Lean 4",
+      "url": "https://arxiv.org/abs/2610.11605",
+      "published": "2026-10-08",
+      "evidence_class": "OFFICIAL_PREPRINT"
+    },
+    {
+      "title": "Research on peak shaving of grid capacity for BESS PCS energy storage topology in long-pulse operation of nuclear fusion",
+      "url": "https://conferences.iaea.org/event/452/contributions/42958/",
+      "published": "2026-10-21",
+      "evidence_class": "OFFICIAL_CONFERENCE_ABSTRACT_MODEL"
+    }
+  ],
+  "evidence_state": "SCHEMA_CHANGE_AND_TESTS_COMMITTED; CI_PENDING; NO_PHYSICAL_CLAIM_PROMOTED",
+  "validation": {
+    "unit_tests": "PENDING_GITHUB_ACTIONS",
+    "formal_proof_checker": "NOT_RUN",
+    "real_qpu": "NOT_RUN",
+    "paid_jobs": "NONE",
+    "physical_energy_or_cost": "NOT_MEASURED"
+  },
+  "lanes": {
+    "A": "Typed equation-candidate gates extended; test suite expanded.",
+    "B": "Provider-neutral architecture preserved; no credentials, provider calls, or QPU job.",
+    "C": "Classical readable-memory and physical data-movement accounting remain separate from state-space size.",
+    "D": "No device/fabrication evidence; D/G co-design remains active.",
+    "E": "Fusion grid peak-shaving literature is a model-only driver lead; no bio-oil, Pangola substitution, or net-electricity evidence.",
+    "F": "Proof, held-out prediction, counterexample, false-discovery and cost evidence are separated.",
+    "G": "No manufacturing-equipment/factory result; device requirements remain evidence-gated.",
+    "H": "New dated literature watch preserves strategic master-plan context."
+  },
+  "foundational": {
+    "FND-001": "RG040 remains open: no physical energy or accepted-task quality bridge.",
+    "FND-002": "Output-information lower bounds unchanged.",
+    "FND-003": "No matched control-versus-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No new experimentally validated QFT/particle mechanism.",
+    "FND-006": "Formal-proof metadata separated from empirical physical validation.",
+    "EQN-001_to_EQN-006": "Candidate schema now explicitly records constraints, held-out prediction, counterexamples, proof/experiment path and false discoveries."
+  },
+  "mission": {
+    "INV-029": "No phone-class physical compression or lifecycle-cost evidence.",
+    "INV-030": "No elemental transmutation or critical-material substitution claim.",
+    "INV-031": "No saleable bio-oil yield or cost evidence.",
+    "INV-032": "No net reliable delivered fusion-electricity result.",
+    "INV-033": "No measured principal, interest or WACC change.",
+    "INV-034": "Mathematics-first falsification workflow advanced.",
+    "INV-035": "Equation candidates remain hypotheses; no physical law promoted."
+  },
+  "sync_debt": [
+    "RG-EQN-007 is standalone and not yet merged into append-heavy RESEARCH_GAPS.md."
+  ]
+}

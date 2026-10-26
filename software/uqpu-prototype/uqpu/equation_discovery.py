@@ -32,6 +32,28 @@ _ALLOWED_EVIDENCE = {
     "CURRENTLY_INFEASIBLE",
 }
 
+_COUNTEREXAMPLE_SEARCH_STATUSES = {
+    "NOT_RUN",
+    "NO_COUNTEREXAMPLE_FOUND",
+    "COUNTEREXAMPLE_FOUND",
+    "INCONCLUSIVE",
+}
+
+_FALSE_DISCOVERY_STATUSES = {
+    "NOT_ASSESSED",
+    "NO_FALSE_DISCOVERY_FOUND",
+    "FALSE_DISCOVERY_FOUND",
+    "INCONCLUSIVE",
+}
+
+_FORMAL_PROOF_STATUSES = {
+    "NOT_APPLICABLE",
+    "NOT_RUN",
+    "CHECKED",
+    "FAILED",
+    "INCONCLUSIVE",
+}
+
 
 @dataclass(frozen=True)
 class EquationHypothesis:
@@ -51,6 +73,17 @@ class EquationHypothesis:
     heldout_baseline_error: float | None = None
     heldout_candidate_error: float | None = None
     independent_validation_count: int = 0
+    incumbent_assumption: str = ""
+    dimensional_symmetry_conservation_causality_checks: tuple[str, ...] = field(default_factory=tuple)
+    counterexample_search_plan: str = ""
+    counterexample_search_status: str = "NOT_RUN"
+    counterexample_notes: tuple[str, ...] = field(default_factory=tuple)
+    heldout_prediction: str = ""
+    proof_or_discriminating_experiment_plan: tuple[str, ...] = field(default_factory=tuple)
+    formal_proof_status: str = "NOT_RUN"
+    formal_proof_notes: tuple[str, ...] = field(default_factory=tuple)
+    false_discovery_status: str = "NOT_ASSESSED"
+    false_discovery_notes: tuple[str, ...] = field(default_factory=tuple)
 
     def validate(self) -> None:
         if not self.equation_id.strip():
@@ -71,6 +104,35 @@ class EquationHypothesis:
             raise ValueError("falsifier is required")
         if not self.discriminating_observables:
             raise ValueError("discriminating_observables is required")
+        if not self.incumbent_assumption.strip():
+            raise ValueError("incumbent_assumption is required")
+        if not self.dimensional_symmetry_conservation_causality_checks:
+            raise ValueError("dimensional/symmetry/conservation/causality checks are required")
+        if any(not isinstance(item, str) or not item.strip() for item in self.dimensional_symmetry_conservation_causality_checks):
+            raise ValueError("physics constraint checks must be nonempty strings")
+        if not self.counterexample_search_plan.strip():
+            raise ValueError("counterexample_search_plan is required")
+        if self.counterexample_search_status not in _COUNTEREXAMPLE_SEARCH_STATUSES:
+            raise ValueError("unknown counterexample_search_status")
+        if self.counterexample_search_status == "COUNTEREXAMPLE_FOUND" and not self.counterexample_notes:
+            raise ValueError("counterexample_notes are required when a counterexample is found")
+        if not self.heldout_prediction.strip():
+            raise ValueError("heldout_prediction is required")
+        if not self.proof_or_discriminating_experiment_plan:
+            raise ValueError("proof_or_discriminating_experiment_plan is required")
+        if any(not isinstance(item, str) or not item.strip() for item in self.proof_or_discriminating_experiment_plan):
+            raise ValueError("proof/experiment plan entries must be nonempty strings")
+        if self.formal_proof_status not in _FORMAL_PROOF_STATUSES:
+            raise ValueError("unknown formal_proof_status")
+        if self.formal_proof_status in {"CHECKED", "FAILED"} and not self.formal_proof_notes:
+            raise ValueError("formal_proof_notes are required for checked or failed proof attempts")
+        if self.false_discovery_status not in _FALSE_DISCOVERY_STATUSES:
+            raise ValueError("unknown false_discovery_status")
+        if self.false_discovery_status == "FALSE_DISCOVERY_FOUND" and not self.false_discovery_notes:
+            raise ValueError("false_discovery_notes are required when a false discovery is found")
+        note_groups = (self.counterexample_notes, self.formal_proof_notes, self.false_discovery_notes)
+        if any(not isinstance(item, str) or not item.strip() for group in note_groups for item in group):
+            raise ValueError("counterexample, proof and false-discovery notes must be nonempty strings")
         if self.evidence_level not in _ALLOWED_EVIDENCE:
             raise ValueError(f"unknown evidence level: {self.evidence_level}")
         if self.independent_validation_count < 0:
@@ -110,6 +172,10 @@ class EquationHypothesis:
             return False
         if not self.has_heldout_improvement:
             return False
+        if self.counterexample_search_status != "NO_COUNTEREXAMPLE_FOUND":
+            return False
+        if self.false_discovery_status != "NO_FALSE_DISCOVERY_FOUND":
+            return False
         return bool(self.data_or_proof_provenance and self.independent_validation_plan)
 
 
@@ -128,6 +194,17 @@ def required_discovery_fields() -> tuple[str, ...]:
         "evidence_level",
         "data_or_proof_provenance",
         "independent_validation_plan",
+        "incumbent_assumption",
+        "dimensional_symmetry_conservation_causality_checks",
+        "counterexample_search_plan",
+        "counterexample_search_status",
+        "counterexample_notes",
+        "heldout_prediction",
+        "proof_or_discriminating_experiment_plan",
+        "formal_proof_status",
+        "formal_proof_notes",
+        "false_discovery_status",
+        "false_discovery_notes",
     )
 
 
