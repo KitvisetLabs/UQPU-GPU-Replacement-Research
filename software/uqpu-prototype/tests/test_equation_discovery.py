@@ -130,19 +130,26 @@ class EquationDiscoveryTests(unittest.TestCase):
 
     def test_formal_proof_status_is_explicit_and_auditable(self):
         with self.assertRaises(ValueError):
-            self._candidate(formal_proof_status="KERNEL_CHECKED").validate()
+            self._candidate(
+                formal_proof_status="KERNEL_CHECKED",
+                formal_proof_notes=("status-only record must fail",),
+            ).validate()
+        with self.assertRaises(ValueError):
+            self._candidate(formal_proof_status="PROOF_TEXT_ONLY").validate()
         with self.assertRaises(ValueError):
             self._candidate(formal_proof_status="CHECKED", formal_proof_notes=()).validate()
         proof = self._bound_proof_record()
         checked = self._candidate(
             formal_proof_status="KERNEL_CHECKED",
             formal_proof_notes=("synthetic unit-test theorem; pinned checker and statement hash recorded",),
+            formal_proof_statement=proof.statement,
             formal_proof_evidence=proof,
         )
         checked.validate()
         legacy_checked = self._candidate(
             formal_proof_status="CHECKED",
             formal_proof_notes=("legacy status maps only to a bound kernel-checked record",),
+            formal_proof_statement=proof.statement,
             formal_proof_evidence=proof,
         )
         legacy_checked.validate()
@@ -154,6 +161,7 @@ class EquationDiscoveryTests(unittest.TestCase):
             equation_id="EQN-other-001",
             formal_proof_status="KERNEL_CHECKED",
             formal_proof_notes=("test identity mismatch",),
+            formal_proof_statement=proof.statement,
             formal_proof_evidence=proof,
         )
         with self.assertRaisesRegex(ValueError, "claim_id must match equation_id"):
@@ -162,16 +170,27 @@ class EquationDiscoveryTests(unittest.TestCase):
         wrong_status = self._candidate(
             formal_proof_status="FAILED",
             formal_proof_notes=("test status mismatch",),
+            formal_proof_statement=proof.statement,
             formal_proof_evidence=proof,
         )
         with self.assertRaisesRegex(ValueError, "does not match bound"):
             wrong_status.validate()
+
+        wrong_statement = self._candidate(
+            formal_proof_status="KERNEL_CHECKED",
+            formal_proof_notes=("test statement mismatch",),
+            formal_proof_statement="a different theorem statement",
+            formal_proof_evidence=proof,
+        )
+        with self.assertRaisesRegex(ValueError, "must match formal_proof_statement exactly"):
+            wrong_statement.validate()
 
     def test_independent_reproduction_status_requires_a_bound_reproduction_record(self):
         proof = self._bound_proof_record(status="INDEPENDENTLY_REPRODUCED")
         candidate = self._candidate(
             formal_proof_status="INDEPENDENTLY_REPRODUCED",
             formal_proof_notes=("synthetic reproduction fixture",),
+            formal_proof_statement=proof.statement,
             formal_proof_evidence=proof,
         )
         candidate.validate()
@@ -211,6 +230,7 @@ class EquationDiscoveryTests(unittest.TestCase):
             "counterexample_search_status",
             "heldout_prediction",
             "proof_or_discriminating_experiment_plan",
+            "formal_proof_statement",
             "formal_proof_status",
             "formal_proof_notes",
             "formal_proof_evidence",
