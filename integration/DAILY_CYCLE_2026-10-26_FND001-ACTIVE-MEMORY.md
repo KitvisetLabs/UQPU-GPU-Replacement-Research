@@ -12,7 +12,7 @@ Inspected the current canonical copies of `PROJECT_CHARTER.md`, `VERSION_INVARIA
 
 The latest main commit at cycle start was `412403efebabd7186dcbfca286d8481308dab176`, “Integrate sub-keV fusion literature gate,” created 2026-10-25 23:05:02 UTC. Its only changed file is `integration/INT-20261026-SUBKEV-FUSION-PLATEAU.json`. The latest merged research artifact remains literature/integration-oriented; it does not update the last verified software implementation checkpoint.
 
-Permanent root directives 00, 00A and 01–06 remain present. `docs/KANUSANAN_PONGPANNA_MODEL.md` and `STRATEGIC_PLAN_REFERENCES.md` remain present, including the Thai, English, Chinese, Japanese, Korean and German master-plan links and strategic AI-agent/funding references. INV-025/026/027 and INV-029–035 remain preserved. The canonical A–H architecture and the D/G device–manufacturing co-design rule remain active. No large append-only README, WORKLOG or RESEARCH_GAPS file was replaced from a partial read.
+Permanent root directives 00, 00A and 01–06 remain present. `docs/KANUSANAN_PONGPANNA_MODEL.md` and `STRATEGIC_PLAN_REFERENCES.md` remain present, including the Thai, English, Chinese, Japanese, Korean and German master-plan links and strategic AI-agent/funding references. INV-025/026/027 and INV-029–035 remain preserved. The canonical A–H architecture and the D/G device–manufacturing co-design rule remain active. The integration manifest also lists an auxiliary Lane I special-project track; it must not replace, silently suppress, or redefine any A–H lane. No large append-only README, WORKLOG or RESEARCH_GAPS file was replaced from a partial read.
 
 ## 2. Literature-surveillance delta
 
