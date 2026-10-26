@@ -20,6 +20,7 @@ PR #130 proposes:
 - research_lanes/E_materials_energy_cooling_infrastructure/NEURAL_MATERIAL_HYPERREDUCTION_REPRO_001.md
 - docs/RESEARCH_GAP_RG-NEURAL-MATERIAL-001.md
 - integration/INT-20261027-NEURAL-MATERIAL-HYPERREDUCTION.json
+- software/uqpu-prototype/tests/test_20261027_research_integration_records.py
 
 The proposed simulator work covers Osama, Thanos and Laarman, “GPU-Accelerated Quantum Simulation of Stabilizer Circuits,” Quantum 10, 2225 (published 2026-10-01; DOI 10.22331/q-2026-10-01-2225; arXiv:2603.14641v2), with a matched accepted-output benchmark contract. A second source watch covers Holthusen, Knipper and Linka, arXiv:2610.31322v1 (submitted 2026-10-22), on POD/ECSW/adjoint hyperreduction for polyconvex neural hyperelastic material discovery. Its application boundary is mechanical constitutive modelling, not direct electronic, thermal, electrochemical or diamond-defect properties.
 
