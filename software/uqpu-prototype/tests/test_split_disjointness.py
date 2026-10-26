@@ -1,11 +1,14 @@
+import copy
 import hashlib
 import unittest
 from dataclasses import replace
 
 from uqpu.equation_discovery_comparison import DiscoveryBudget, DiscoveryRun
 from uqpu.split_disjointness import (
+    build_split_manifest,
     validate_comparison_manifest,
     validate_split_manifest,
+    verify_split_manifest_records,
 )
 
 
@@ -33,6 +36,19 @@ def _manifest():
         },
     }
 
+
+
+def _raw_records():
+    return [
+        {"record_id": "train-1", "group_id": "law-a", "split": "train",
+         "payload": {"x": 1.0, "y": 2.0}},
+        {"record_id": "validation-1", "group_id": "law-b", "split": "validation",
+         "payload": {"x": 2.0, "y": 4.0}},
+        {"record_id": "test-1", "group_id": "law-c", "split": "test",
+         "payload": {"x": 3.0, "y": 6.0}},
+        {"record_id": "test-2", "group_id": "law-d", "split": "test",
+         "payload": {"x": 4.0, "y": 8.0}},
+    ]
 
 def _comparison_runs(manifest, certificate):
     budget = DiscoveryBudget(
@@ -76,6 +92,42 @@ def _comparison_runs(manifest, certificate):
 
 
 class SplitDisjointnessTests(unittest.TestCase):
+
+    def test_builder_binds_manifest_to_canonical_raw_records(self):
+        records = _raw_records()
+        manifest = build_split_manifest(records, holdout_unit="LAW_FAMILY")
+        certificate = verify_split_manifest_records(manifest, records)
+        reordered = build_split_manifest(list(reversed(records)), holdout_unit="LAW_FAMILY")
+        self.assertEqual(manifest, reordered)
+        self.assertTrue(certificate["raw_record_binding_verified"])
+        self.assertEqual(certificate["status"], "PASS")
+
+    def test_raw_payload_change_invalidates_manifest_binding(self):
+        records = _raw_records()
+        manifest = build_split_manifest(records, holdout_unit="LAW_FAMILY")
+        changed = copy.deepcopy(records)
+        changed[0]["payload"]["y"] = 999.0
+        with self.assertRaisesRegex(ValueError, "does not match canonical raw records"):
+            verify_split_manifest_records(manifest, changed)
+
+    def test_forged_record_hash_invalidates_raw_binding(self):
+        records = _raw_records()
+        manifest = build_split_manifest(records, holdout_unit="LAW_FAMILY")
+        forged = copy.deepcopy(manifest)
+        forged["splits"]["train"][0]["record_sha256"] = _digest("forged-record")
+        with self.assertRaisesRegex(ValueError, "does not match canonical raw records"):
+            verify_split_manifest_records(forged, records)
+
+    def test_builder_rejects_duplicate_ids_and_unknown_splits(self):
+        duplicate = _raw_records()
+        duplicate[1]["record_id"] = duplicate[0]["record_id"]
+        with self.assertRaisesRegex(ValueError, "duplicated in raw records"):
+            build_split_manifest(duplicate, holdout_unit="LAW_FAMILY")
+        unknown = _raw_records()
+        unknown[0]["split"] = "test-set"
+        with self.assertRaisesRegex(ValueError, "split must be one of"):
+            build_split_manifest(unknown, holdout_unit="LAW_FAMILY")
+
     def test_valid_manifest_returns_reproducible_certificate(self):
         manifest = _manifest()
         certificate = validate_split_manifest(manifest, expected_group_count=2)

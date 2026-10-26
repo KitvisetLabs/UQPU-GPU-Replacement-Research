@@ -1,0 +1,78 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-EQN-RAW-RECORD-BINDING",
+  "date": "2026-10-26",
+  "canonical_start_sha": "2a89ca51d50f2904d260ef7ffafa0db84c4a0871",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "evidence_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "cross_lane_consumers": [
+    "B_cloud_qpu_provider_integration",
+    "C_state_memory_storage_data_movement",
+    "D_device_chip_fabrication_packaging",
+    "E_materials_energy_cooling_infrastructure",
+    "G_manufacturing_equipment_factory_software"
+  ],
+  "evidence_class": [
+    "SOFTWARE_CONTRACT",
+    "REGRESSION_TESTS",
+    "LITERATURE_ONLY"
+  ],
+  "artifacts": {
+    "builder_and_verifier": "software/uqpu-prototype/uqpu/split_disjointness.py",
+    "tests": "software/uqpu-prototype/tests/test_split_disjointness.py",
+    "batch": "docs/BATCH_067_RAW_RECORD_BOUND_SPLIT_MANIFESTS.md",
+    "research_gap": "docs/RESEARCH_GAP_RG046_RAW_RECORD_PROVENANCE.md",
+    "literature_watch": "docs/literature_watch/2026-10-26-ai-proof-compression-metrics.md",
+    "daily_cycle": "integration/DAILY_CYCLE_2026-10-26_RAW_RECORD_BINDING.md"
+  },
+  "validation": {
+    "exact_head_ci": "PENDING_AT_PUBLICATION; inspect GitHub Actions for this commit",
+    "real_public_dataset": "NOT_PINNED_OR_RUN",
+    "independent_raw_source_audit": "NOT_RUN",
+    "matched_cross_method_benchmark": "NOT_RUN",
+    "formal_proof_checker": "NOT_RUN",
+    "real_qpu": "NOT_AUTHORIZED_OR_SUBMITTED",
+    "paid_jobs": "NONE"
+  },
+  "lanes": {
+    "A": "Raw-record-bound manifest builder/verifier and regression tests added; real dataset gate remains open.",
+    "B": "Provider-neutral and simulator/dry-run-first; no credentials or provider job.",
+    "C": "Data record identity is not physical memory or readable quantum-state storage.",
+    "D": "No new device/fabrication evidence; D/G co-design retained.",
+    "E": "No Pangola substitution, accepted fuel, or net fusion-electricity evidence.",
+    "F": "Manifest content binding improved; no accepted-task cost or energy measurement.",
+    "G": "No fabrication equipment, yield, process-window or factory result.",
+    "H": "Proof-structure literature watch published; multilingual strategic references preserved."
+  },
+  "foundational": {
+    "FND-001": "MODEL_ONLY; physical work, heat and accepted-task quality unmeasured.",
+    "FND-002": "Output-information lower bound and reconstruction contract unchanged.",
+    "FND-003": "No matched control-vs-quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No experimentally validated new QFT/particle mechanism.",
+    "FND-006": "Raw-record binding and proof provenance strengthened.",
+    "EQN-001-006": "No equation promoted to physical law."
+  },
+  "invariant_disposition": {
+    "INV-029": "No physical Data-Center-to-Phone compression evidence.",
+    "INV-030": "No critical-material functional substitution qualification or transmutation claim.",
+    "INV-031": "No accepted liquid fuel or full-cost bio-oil evidence.",
+    "INV-032": "No reliable net delivered fusion electricity or lifecycle cost evidence.",
+    "INV-033": "No measured principal/interest/WACC reduction.",
+    "INV-034": "Falsifiability and mathematics-first reproducibility improved at method level.",
+    "INV-035": "AI-generated equations remain hypotheses; present physics remains binding for engineering."
+  },
+  "preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "root directives 00/00A/01–06",
+    "Thai/English/Chinese/Japanese/Korean/German master-plan links",
+    "strategic AI-agent and funding references"
+  ],
+  "sync_debt": [
+    "RESEARCH_GAPS.md and WORKLOG.md remain append-heavy; RG-046 is canonical until safe reconciliation."
+  ],
+  "next_highest_value_gate": "Pin an immutable, licensed public equation-discovery dataset, independently rebuild its manifest from raw records, then run the preregistered >=30-seed equal-resource comparison."
+}

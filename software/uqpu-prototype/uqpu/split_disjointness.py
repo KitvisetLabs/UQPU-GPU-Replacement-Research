@@ -66,6 +66,97 @@ def _normalize_records(split_name: str, records: Any) -> list[dict[str, str]]:
     return sorted(normalized, key=lambda row: row["record_id"])
 
 
+
+def build_split_manifest(
+    records: Iterable[Mapping[str, Any]], *, holdout_unit: str,
+) -> dict[str, Any]:
+    """Build a split manifest whose hashes are derived from canonical raw records.
+
+    Each input record must contain exactly record_id, group_id, split, and payload.
+    The dataset digest covers sorted record IDs, group IDs, and payloads; split
+    assignments are separately represented by canonical split hashes. A record
+    digest binds its ID, group, and payload, rather than trusting a caller-supplied
+    hexadecimal digest. External source provenance must still be pinned separately.
+    """
+    if holdout_unit not in _HOLDOUT_UNITS:
+        raise ValueError("holdout_unit must declare a supported group-disjoint unit")
+    source_rows: list[dict[str, Any]] = []
+    split_records: dict[str, list[dict[str, str]]] = {name: [] for name in _SPLITS}
+    seen_ids: set[str] = set()
+    for index, record in enumerate(records):
+        if not isinstance(record, Mapping) or set(record) != {
+            "record_id", "group_id", "split", "payload",
+        }:
+            raise ValueError(
+                f"records[{index}] must contain exactly record_id, group_id, split, and payload"
+            )
+        record_id = _nonempty_text("record_id", record["record_id"])
+        group_id = _nonempty_text("group_id", record["group_id"])
+        split_name = record["split"]
+        if split_name not in _SPLITS:
+            raise ValueError("split must be one of train, validation, or test")
+        if record_id in seen_ids:
+            raise ValueError(f"record_id {record_id!r} is duplicated in raw records")
+        seen_ids.add(record_id)
+        payload = record["payload"]
+        _canonical_bytes(payload)  # Reject non-JSON or non-finite payload values.
+        source_row = {
+            "record_id": record_id,
+            "group_id": group_id,
+            "payload": payload,
+        }
+        source_rows.append(source_row)
+        split_records[split_name].append({
+            "record_id": record_id,
+            "group_id": group_id,
+            "record_sha256": _sha256(source_row),
+        })
+    if not source_rows:
+        raise ValueError("raw records must be nonempty")
+    for split_name in _SPLITS:
+        split_records[split_name].sort(key=lambda row: row["record_id"])
+    dataset_sha256 = _sha256(sorted(source_rows, key=lambda row: row["record_id"]))
+    manifest = {
+        "schema": _SCHEMA,
+        "dataset_sha256": dataset_sha256,
+        "holdout_unit": holdout_unit,
+        "splits": split_records,
+    }
+    validate_split_manifest(manifest)
+    return manifest
+
+
+def verify_split_manifest_records(
+    manifest: Mapping[str, Any], records: Iterable[Mapping[str, Any]],
+) -> dict[str, Any]:
+    """Verify that a manifest is reproducible from the supplied raw records.
+
+    This verifies canonical content binding and partition declarations. It does
+    not authenticate the external source, license, acquisition history, or
+    scientific representativeness of those records.
+    """
+    certificate = validate_split_manifest(manifest)
+    expected = build_split_manifest(records, holdout_unit=manifest["holdout_unit"])
+    normalized_manifest = {
+        "schema": manifest["schema"],
+        "dataset_sha256": manifest["dataset_sha256"],
+        "holdout_unit": manifest["holdout_unit"],
+        "splits": {
+            name: _normalize_records(name, manifest["splits"][name])
+            for name in _SPLITS
+        },
+    }
+    if _canonical_bytes(expected) != _canonical_bytes(normalized_manifest):
+        raise ValueError(
+            "manifest does not match canonical raw records, group assignments, and split assignments"
+        )
+    certificate["raw_record_binding_verified"] = True
+    certificate["limitations"].append(
+        "Raw-record binding is not external source authentication; source revision, license, and acquisition provenance must be pinned separately."
+    )
+    return certificate
+
+
 def validate_split_manifest(
     manifest: Mapping[str, Any], *,
     expected_dataset_sha256: str | None = None,
