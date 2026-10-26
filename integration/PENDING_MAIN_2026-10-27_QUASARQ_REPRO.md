@@ -3,7 +3,7 @@
 **Status:** PENDING REVIEW — summary only; source PR #130 is not merged.  
 **Canonical main base SHA:** 421f213ac9b7dd3754d28567f9efb70f0e175d5c  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/130  
-**Source branch/head:** research/2026-10-27-quasarq-stabilizer-gpu-watch @ 74454dcf3b144183005e501412b3e8033abf4f42  
+**Source branch/head:** research/2026-10-27-quasarq-stabilizer-gpu-watch @ c9f7fec3ae79124ed11cec556c3eaea5836f37f7  
 **Work item:** QUASARQ-REPRO-001  
 **Integration ID:** INT-20261027-QUASARQ-SIMULATOR  
 **Evidence class:** LITERATURE_ONLY + PREREGISTERED_BENCHMARK_DESIGN
@@ -24,7 +24,7 @@ The proposed literature watch covers Osama, Thanos and Laarman, “GPU-Accelerat
 - The integration JSON was parsed successfully after publication.
 - No QuaSARQ build, simulator run, repository test, source-license audit, independent benchmark or energy measurement was performed.
 - The paper’s author-reported runtime and energy improvements remain external literature, not UQPU results. The domain is classical Clifford/stabilizer simulation, not general quantum hardware advantage.
-- The combined-status endpoint returned no rows for source commit 74454dcf3b144183005e501412b3e8033abf4f42. Exact-head CI is UNKNOWN, not PASS; review and Actions checks remain required.
+- At the last inspected workflow snapshot, run 40376218665 for the prior source head 74454dcf3b144183005e501412b3e8033abf4f42 had Python 3.10/3.11/3.12 matrix jobs passing while extended QSVT/QSP/reference/SDK jobs remained queued or in progress. The source branch was then updated to c9f7fec3ae79124ed11cec556c3eaea5836f37f7 to record the CI snapshot; exact-head CI for this updated source head is not yet confirmed and must be checked before merge.
 - No QPU job, provider credential, purchase, physical experiment or external expenditure was used or authorized.
 
 ## Invariants and mission boundary
