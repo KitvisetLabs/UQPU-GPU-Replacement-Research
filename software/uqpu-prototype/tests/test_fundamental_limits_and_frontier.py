@@ -3,7 +3,11 @@ import unittest
 
 from uqpu.frontier_hypothesis import FrontierHypothesis
 from uqpu.fundamental_limits import (
+    BOLTZMANN_CONSTANT_J_PER_K,
+    HBAR_J_S,
     PLANCK_CONSTANT_J_S,
+    low_temperature_gap_thermalization_min_seconds,
+    planckian_thermalization_min_seconds,
     landauer_max_bit_erasures_per_joule,
     landauer_minimum_joule,
     landauer_minimum_joule_per_bit,
@@ -37,12 +41,33 @@ class FundamentalLimitTests(unittest.TestCase):
             margolus_levitin_min_seconds(2.0), PLANCK_CONSTANT_J_S / 8.0
         )
 
+    def test_planckian_thermalization_bound_is_conditional_and_scales_as_inverse_temperature(self):
+        at_300_k = planckian_thermalization_min_seconds(300.0)
+        self.assertAlmostEqual(
+            at_300_k,
+            HBAR_J_S / (2.0 * BOLTZMANN_CONSTANT_J_PER_K * 300.0),
+        )
+        self.assertAlmostEqual(
+            planckian_thermalization_min_seconds(600.0),
+            at_300_k / 2.0,
+        )
+
+    def test_low_temperature_gap_bound(self):
+        self.assertAlmostEqual(
+            low_temperature_gap_thermalization_min_seconds(2.0),
+            HBAR_J_S / 2.0,
+        )
+
     def test_invalid_physical_inputs(self):
         for bad in (0.0, -1.0, float("nan"), float("inf")):
             with self.assertRaises(ValueError):
                 landauer_minimum_joule_per_bit(bad)
             with self.assertRaises(ValueError):
                 margolus_levitin_min_seconds(bad)
+            with self.assertRaises(ValueError):
+                planckian_thermalization_min_seconds(bad)
+            with self.assertRaises(ValueError):
+                low_temperature_gap_thermalization_min_seconds(bad)
         with self.assertRaises(ValueError):
             landauer_minimum_joule(-1.0, 300.0)
 
