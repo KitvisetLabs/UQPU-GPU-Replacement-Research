@@ -1,0 +1,108 @@
+{
+  "schema": "uqpu-daily-cycle-integration-v1",
+  "integration_id": "INT-20261026-EQN-GRAPHED-GROUP-HOLDOUT",
+  "date": "2026-10-26",
+  "canonical_branch": "main",
+  "starting_main_sha": "6bc5b29b846c29c2c3fabd729c1bc62362b24e3e",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "evidence_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "cross_lane_consumers": [
+    "B_cloud_qpu_provider_integration",
+    "C_state_memory_storage_data_movement",
+    "D_device_chip_fabrication_packaging",
+    "E_materials_energy_cooling_infrastructure",
+    "G_manufacturing_equipment_factory_software"
+  ],
+  "evidence_class": [
+    "PEER_REVIEWED_LITERATURE_ONLY",
+    "SOFTWARE_CONTRACT",
+    "REGRESSION_TESTS"
+  ],
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-26-graph-based-constitutive-law-discovery.md",
+    "comparator": "software/uqpu-prototype/uqpu/equation_discovery_comparison.py",
+    "tests": "software/uqpu-prototype/tests/test_equation_discovery_comparison.py",
+    "research_gap": "docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md",
+    "partition_gap": "docs/RESEARCH_GAP_RG045_SPLIT_DISJOINTNESS_CERTIFICATE.md (open PR #69; not canonical main)",
+    "daily_cycle": "integration/DAILY_CYCLE_2026-10-26_GRAPHED_GROUP_HOLDOUT.md"
+  },
+  "source": {
+    "title": "Beyond empirical models: Discovering constitutive laws in solids with graph-based equation discovery",
+    "authors": [
+      "Hao Xu",
+      "Yuntian Chen",
+      "Dongxiao Zhang"
+    ],
+    "publication_date": "2026-09-11",
+    "journal": "Science Advances",
+    "volume": "12(37)",
+    "article": "eaec0989",
+    "doi": "10.1126/sciadv.aec0989",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13564832/",
+    "evidence_class": "PEER_REVIEWED_EXPERIMENTAL_DATA_CONSTRAINED_METHOD",
+    "uqpu_reproduction": false
+  },
+  "implementation": {
+    "schema": "uqpu-equation-discovery-matched-comparison-v3",
+    "new_fields": [
+      "split_policy_sha256",
+      "heldout_group_manifest_sha256",
+      "holdout_unit",
+      "heldout_group_count"
+    ],
+    "rejects": [
+      "random-point-only holdout label",
+      "mismatched holdout unit/count",
+      "mismatched split-policy/manifest hashes",
+      "nonpositive held-out group count"
+    ],
+    "limitation": "Metadata/hash agreement only; no manifest parsing or proof of record-level disjointness."
+  },
+  "related_open_work": [
+    {
+      "pr": 69,
+      "topic": "RG-045 actual split-disjointness certificate",
+      "canonical": false
+    },
+    {
+      "pr": 117,
+      "topic": "MorphingNet matched comparison",
+      "canonical": false
+    },
+    {
+      "pr": 56,
+      "topic": "CoSR/progressive discovery",
+      "canonical": false
+    },
+    {
+      "pr": 98,
+      "topic": "Transformer formula discovery",
+      "canonical": false
+    },
+    {
+      "pr": 104,
+      "topic": "L2G-SR structural guidance",
+      "canonical": false
+    }
+  ],
+  "invariant_disposition": {
+    "INV-029": "No physical data-center-to-phone compression evidence.",
+    "INV-030": "No Pangola-carbon functional substitution or elemental transmutation.",
+    "INV-031": "No accepted liquid-fuel yield or full process-cost evidence.",
+    "INV-032": "No reliable net delivered fusion-electricity result.",
+    "INV-033": "No measured financed-principal, absolute-interest, WACC or rate effect.",
+    "INV-034": "Falsifiable equation-discovery method comparison improved.",
+    "INV-035": "No candidate equation promoted to physical law."
+  },
+  "sync_debt": [
+    "RESEARCH_GAPS.md and WORKLOG.md remain append-only synchronization debt.",
+    "RG-045 partition manifest implementation remains open and is not replaced by comparator metadata."
+  ],
+  "non_claims": [
+    "No real-QPU advantage or provider bill",
+    "No material qualification or Pangola substitution",
+    "No saleable bio-oil or net fusion electricity",
+    "No new physical law or mission-level economic advantage"
+  ]
+}

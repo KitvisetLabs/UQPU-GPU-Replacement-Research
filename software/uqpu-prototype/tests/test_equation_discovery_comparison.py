@@ -42,6 +42,10 @@ class EquationDiscoveryComparisonTests(unittest.TestCase):
                         grammar_sha256=_digest("grammar-v1"),
                         unit_schema_sha256=_digest("units-v1"),
                         acceptance_rule_sha256=_digest("acceptance-v1"),
+                        split_policy_sha256=_digest("group-disjoint-law-family-v1"),
+                        heldout_group_manifest_sha256=_digest("heldout-law-family-manifest-v1"),
+                        holdout_unit="LAW_FAMILY",
+                        heldout_group_count=6,
                         budget=budget,
                         wall_clock_seconds=5.0 + seed / 10.0,
                         cpu_core_seconds=10.0,
@@ -74,7 +78,10 @@ class EquationDiscoveryComparisonTests(unittest.TestCase):
 
     def test_uncertainty_and_paired_acceptance_counts_are_reported(self):
         summary = compare_methods(self._runs())
-        self.assertEqual(summary["schema"], "uqpu-equation-discovery-matched-comparison-v2")
+        self.assertEqual(summary["schema"], "uqpu-equation-discovery-matched-comparison-v3")
+        self.assertEqual(summary["shared_holdout"]["unit"], "LAW_FAMILY")
+        self.assertEqual(summary["shared_holdout"]["group_count"], 6)
+        self.assertFalse(summary["shared_holdout"]["manifest_content_verified_by_this_module"])
         for method in summary["method_ids"]:
             values = summary["methods"][method]
             low, high = values["acceptance_rate_95pct_wilson_ci"]
@@ -135,6 +142,35 @@ class EquationDiscoveryComparisonTests(unittest.TestCase):
         records = self._runs()
         records[-1] = replace(records[-1], cost_basis_id="different-price-boundary")
         with self.assertRaises(ValueError):
+            validate_matched_comparison(records)
+
+    def test_random_point_only_holdout_is_rejected(self):
+        records = self._runs()
+        records[0] = replace(records[0], holdout_unit="RANDOM_POINT")
+        with self.assertRaisesRegex(ValueError, "group-disjoint"):
+            validate_matched_comparison(records)
+
+    def test_holdout_manifest_and_policy_must_match(self):
+        for field in ("heldout_group_manifest_sha256", "split_policy_sha256"):
+            records = self._runs()
+            records[-1] = replace(records[-1], **{field: _digest("different-" + field)})
+            with self.assertRaises(ValueError):
+                validate_matched_comparison(records)
+
+    def test_holdout_unit_and_group_count_must_match(self):
+        records = self._runs()
+        records[-1] = replace(records[-1], holdout_unit="SCALE")
+        with self.assertRaisesRegex(ValueError, "grouped holdout"):
+            validate_matched_comparison(records)
+        records = self._runs()
+        records[-1] = replace(records[-1], heldout_group_count=5)
+        with self.assertRaisesRegex(ValueError, "grouped holdout"):
+            validate_matched_comparison(records)
+
+    def test_heldout_group_count_must_be_positive(self):
+        records = self._runs()
+        records[0] = replace(records[0], heldout_group_count=0)
+        with self.assertRaisesRegex(ValueError, "heldout_group_count"):
             validate_matched_comparison(records)
 
     def test_invalid_hash_is_rejected(self):

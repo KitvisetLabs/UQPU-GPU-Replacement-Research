@@ -22,7 +22,19 @@ _COMMON_HASH_FIELDS = (
     "grammar_sha256",
     "unit_schema_sha256",
     "acceptance_rule_sha256",
+    "split_policy_sha256",
+    "heldout_group_manifest_sha256",
 )
+_ALLOWED_HOLDOUT_UNITS = {
+    "LAW_FAMILY",
+    "MATERIAL_FAMILY",
+    "FLUID_PAIR",
+    "SCALE",
+    "GEOMETRY",
+    "TIME_BLOCK",
+    "DEVICE_FAMILY",
+    "COMPOSITE_GROUP",
+}
 
 
 def _require_sha256(name: str, value: str) -> None:
@@ -82,6 +94,10 @@ class DiscoveryRun:
     grammar_sha256: str
     unit_schema_sha256: str
     acceptance_rule_sha256: str
+    split_policy_sha256: str
+    heldout_group_manifest_sha256: str
+    holdout_unit: str
+    heldout_group_count: int
     budget: DiscoveryBudget
     wall_clock_seconds: float
     cpu_core_seconds: float
@@ -105,6 +121,12 @@ class DiscoveryRun:
         for name in _COMMON_HASH_FIELDS:
             _require_sha256(name, getattr(self, name))
         self.budget.validate()
+        if self.holdout_unit not in _ALLOWED_HOLDOUT_UNITS:
+            raise ValueError(
+                "holdout_unit must declare a group-disjoint unit; random-point-only "
+                "holdouts are not accepted"
+            )
+        _nonnegative_int("heldout_group_count", self.heldout_group_count, positive=True)
 
         for name in ("wall_clock_seconds", "cpu_core_seconds", "accelerator_seconds"):
             _finite_nonnegative(name, getattr(self, name))
@@ -157,8 +179,10 @@ def validate_matched_comparison(runs: Iterable[DiscoveryRun]) -> tuple[str, ...]
     """Validate a matched comparison and return sorted method identifiers.
 
     The protocol requires >=30 shared preregistered seeds per method. It rejects
-    dataset/split/grammar/unit/acceptance mismatches, duplicate method-seed pairs,
-    unequal budgets, resource overruns, and mixed cost bases.
+    dataset/split/grammar/unit/acceptance mismatches, mismatched declared group-holdout
+    metadata, duplicate method-seed pairs, unequal budgets, resource overruns, and
+    mixed cost bases. The hashed holdout manifest is not parsed here; a separate
+    partition validator must establish actual record-level disjointness.
     """
     records = tuple(runs)
     if not records:
@@ -177,6 +201,11 @@ def validate_matched_comparison(runs: Iterable[DiscoveryRun]) -> tuple[str, ...]
                 raise ValueError(f"comparison mismatch in {name}")
         if record.budget != reference.budget:
             raise ValueError("all methods must use the identical preregistered budget envelope")
+        if (
+            record.holdout_unit != reference.holdout_unit
+            or record.heldout_group_count != reference.heldout_group_count
+        ):
+            raise ValueError("all methods must use the identical grouped holdout unit and group count")
 
     by_method: dict[str, dict[int, DiscoveryRun]] = defaultdict(dict)
     for record in records:
@@ -292,18 +321,27 @@ def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
             }
 
     return {
-        "schema": "uqpu-equation-discovery-matched-comparison-v2",
+        "schema": "uqpu-equation-discovery-matched-comparison-v3",
         "method_ids": list(methods),
         "preregistered_seed_count": len({record.seed for record in records}),
         "shared_budget": asdict(records[0].budget),
+        "shared_holdout": {
+            "unit": records[0].holdout_unit,
+            "group_count": records[0].heldout_group_count,
+            "split_policy_sha256": records[0].split_policy_sha256,
+            "heldout_group_manifest_sha256": records[0].heldout_group_manifest_sha256,
+            "manifest_content_verified_by_this_module": False,
+        },
         "methods": summaries,
         "pairwise_acceptance": pairwise_acceptance,
         "interpretation": (
             "Descriptive benchmark summary only. Marginal 95% Wilson intervals treat seed runs as "
             "an exchangeable Bernoulli sample for this fixed benchmark and do not account for tuning "
             "or multiple comparisons. Pairwise seed counts are descriptive; no p-values or winner are "
-            "produced. Acceptance is defined by the frozen benchmark rule and does not establish a "
-            "physical law, independent replication, device benefit, or economic advantage outside the "
-            "measured resource boundary."
+            "produced. All methods share a declared group-holdout policy and manifest digest, but "
+            "the manifest contents and actual record-level disjointness require a separate validator. "
+            "Acceptance is defined by the frozen benchmark rule and does not establish a physical law, "
+            "independent replication, device benefit, or economic advantage outside the measured "
+            "resource boundary."
         ),
     }

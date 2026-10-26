@@ -3,7 +3,7 @@
 **Date opened:** 2026-10-26  
 **Primary owner:** Lane A — quantum programming/runtime equation-discovery contract  
 **Cross-lane owners:** Lane F — evidence and benchmark policy; Lane H — literature publication  
-**Status:** OPEN — schema/test change is not yet CI-verified and no candidate equation has been physically validated  
+**Status:** OPEN — schema/test gate CI-verified on main commit 6bc5b29b846c29c2c3fabd729c1bc62362b24e3e; no candidate equation has been physically validated and no proof checker was run  
 **Related:** INV-034/035, FND-006, EQN-001–006, RG039, RG040
 
 ## Observed gap
