@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "RG-BELL-QSL-001",
+  "title": "Bell quantum signal learning: matched property-vector benchmark",
+  "created_date": "2026-10-26",
+  "primary_owner": "Lane A — Quantum programming/workloads/compiler/runtime",
+  "integration_owners": [
+    "Lane B — cloud/QPU/provider integration",
+    "Lane C — memory/state/data movement",
+    "Lane D — devices/photonic controls",
+    "Lane F — economics/evidence/integration",
+    "Lane G — manufacturing systems"
+  ],
+  "publication_owner": "Lane H — strategic research/publication",
+  "source": {
+    "authors": [
+      "Jordan Cotler",
+      "Daine L. Danielson",
+      "Ishaan Kannan"
+    ],
+    "title": "Quantum Advantage for Sensing Properties of Classical Fields",
+    "venue": "Physical Review X",
+    "volume": 16,
+    "article": 41025,
+    "published_date": "2026-10-23",
+    "doi": "10.1103/6ps1-mw9l",
+    "url": "https://journals.aps.org/prx/abstract/10.1103/6ps1-mw9l",
+    "preprint_url": "https://arxiv.org/abs/2602.17591",
+    "evidence_class": "PEER_REVIEWED_THEORY_AND_INFORMATION_THEORETIC_ANALYSIS"
+  },
+  "project_execution_status": "PROPOSED_NOT_EXECUTED",
+  "promotion_status": "EXTERNAL_THEORY_ONLY",
+  "workload": {
+    "family": "Bell quantum signal learning",
+    "task": "Estimate a preregistered vector of properties of an unknown classical signal from the same acquired dataset",
+    "candidate_properties": [
+      "electromagnetic correlation features",
+      "Fourier-domain matched-filter outputs",
+      "predeclared feedback-control features"
+    ],
+    "output_contract": {
+      "property_vector_schema": "FROZEN_BEFORE_TEST",
+      "estimator_and_loss": "SPECIFY_BEFORE_TEST",
+      "per_property_error_tolerance": "NUMERIC_VALUE_REQUIRED",
+      "confidence_or_credible_interval": "REQUIRED",
+      "maximum_failure_probability": "NUMERIC_VALUE_REQUIRED",
+      "held_out_signal_distribution": "REQUIRED",
+      "accepted_output_definition": "ALL_REQUIRED_PROPERTIES_MEET_PREDECLARED_TOLERANCES"
+    }
+  },
+  "baselines": [
+    {
+      "name": "homodyne",
+      "eligibility": "SAME_SIGNAL_ACCESS_AND_OUTPUT_CONTRACT"
+    },
+    {
+      "name": "heterodyne",
+      "eligibility": "SAME_SIGNAL_ACCESS_AND_OUTPUT_CONTRACT"
+    },
+    {
+      "name": "best_eligible_entanglement_free_strategy",
+      "eligibility": "COMPARATOR_CLASS_MUST_MATCH_SOURCE_THEOREM"
+    }
+  ],
+  "resource_normalization": {
+    "must_separate_result_classes": [
+      "Bell-QSL entanglement-enabled claims under the source's stated probe-energy convention",
+      "squeezing-only claims that treat squeezing as a distinct resource"
+    ],
+    "single_mode_squeezed_vacuum_mean_photon_number": "nbar = sinh(r)^2",
+    "source_caveat": "The source's Appendix E.4 gives a squeezing-only example with r = 0.5*log(n), implying nbar = Theta(n); that exponential separation is not a fixed-probe-energy claim. Do not transfer it to the entanglement-enabled Bell-QSL result or to UQPU without matching the exact theorem assumptions.",
+    "required_ledgers": [
+      "resource-explicit probe-state budget, including squeezing and displacement",
+      "all modes and retained idler resources under the protocol's stated convention",
+      "source/pump wall-plug energy when measurable, reported separately from probe photon number",
+      "loss, detector efficiency, bandwidth, calibration and acquisition duration",
+      "classical estimation, reconstruction, memory/I-O and persistence"
+    ],
+    "fixed_energy_rule": "Report equal-total-probe-energy comparisons separately from any comparison that treats squeezing as a separately budgeted resource."
+  },
+  "fairness_controls": {
+    "freeze_signal_prior_and_distribution": true,
+    "match_acquisition_duration_and_bandwidth": true,
+    "match_task_quality_and_failure_probability": true,
+    "declare_squeezing_entanglement_resource_convention": true,
+    "report_resource_explicit_and_end_to_end_ledgers_separately": true,
+    "include_source_generation_and_pump_energy_when_measurable": true,
+    "include_detector_efficiency_loss_and_calibration": true,
+    "include_classical_estimation_and_reconstruction": true,
+    "include_memory_io_transfer_and_persistence": true,
+    "keep_probability_price_and_billing_on_same_provider_target": true,
+    "no_paid_qpu_without_credentials_budget_and_explicit_consent": true
+  },
+  "required_metrics": [
+    "property_vector_error_and_confidence",
+    "accepted_tasks_per_second",
+    "end_to_end_latency",
+    "signal_acquisition_duration",
+    "measurement_samples_or_shots",
+    "source_and_squeezing_resources",
+    "probe_energy_budget_and_resource_convention",
+    "detector_efficiency_and_loss",
+    "bandwidth_and_calibration_state",
+    "classical_compute_and_reconstruction_time",
+    "memory_io_transfer_and_persistence",
+    "energy_when_measurable",
+    "total_cost_per_accepted_property_vector"
+  ],
+  "falsifiers": [
+    "advantage disappears after resource normalization",
+    "required output quality or failure-rate gate fails",
+    "result fails on preregistered held-out signal families",
+    "detector loss, finite squeezing, bandwidth or calibration erases the advantage",
+    "classical reconstruction or acquisition dominates total latency/cost",
+    "a claimed exponential separation depends on instance-scaled squeezing energy that is not charged under the declared comparison"
+  ],
+  "gate_sequence": [
+    "source_and_supplement_assumption_audit",
+    "analytic_small_instance",
+    "independent_simulator_reproduction",
+    "held_out_signal_generalization",
+    "matched_classical_baselines",
+    "noise_and_resource_sensitivity",
+    "independent_review",
+    "target_specific_simulation_or_dry_run",
+    "authorized_hardware_only_if_explicitly_approved"
+  ],
+  "limits": {
+    "no_hardware_result_claimed": true,
+    "no_general_purpose_quantum_advantage_claimed": true,
+    "no_physical_law_discovery_claimed": true,
+    "no_material_fuel_fusion_or_finance_advantage_claimed": true,
+    "no_hilbert_dimension_as_classical_storage_proxy": true
+  },
+  "resource_helper": {
+    "module": "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "functions": [
+      "squeezed_vacuum_mean_photon_number",
+      "squeezed_vacuum_squeezing_for_mean_photon_number"
+    ],
+    "tests": "software/uqpu-prototype/tests/test_squeezing_probe_resources.py",
+    "evidence_class": "MODEL_ONLY_ANALYTIC_RESOURCE_IDENTITY_NOT_PROTOCOL_REPRODUCTION"
+  }
+}

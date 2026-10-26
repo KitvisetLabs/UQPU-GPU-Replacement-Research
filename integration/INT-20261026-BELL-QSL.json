@@ -1,0 +1,99 @@
+{
+  "integration_id": "INT-20261026-BELL-QSL",
+  "created_date": "2026-10-26",
+  "source_main_sha": "412403efebabd7186dcbfca286d8481308dab176",
+  "primary_owner": "Lane A",
+  "cross_lane_owner": "Lane F",
+  "publication_owner": "Lane H",
+  "work_item_id": "RG-BELL-QSL-001",
+  "status": "PROPOSED_REVIEW_BRANCH_NOT_CANONICAL",
+  "source": {
+    "doi": "10.1103/6ps1-mw9l",
+    "published_date": "2026-10-23",
+    "url": "https://journals.aps.org/prx/abstract/10.1103/6ps1-mw9l",
+    "preprint_url": "https://arxiv.org/abs/2602.17591",
+    "evidence_class": "EXTERNAL_PEER_REVIEWED_THEORY"
+  },
+  "resource_normalization_update": {
+    "status": "SOURCE_CAVEAT_RECORDED_NOT_INDEPENDENTLY_REPRODUCED",
+    "location": "arXiv:2602.17591 Appendix E.4",
+    "finding": "A separate squeezing-only example uses r = 0.5*log(n), so nbar = sinh(r)^2 = Theta(n); this is instance-scaled probe energy, not a fixed-energy claim.",
+    "boundary": "Do not conflate that squeezing-only construction with the distinct entanglement-enabled Bell-QSL results. Report probe photon budget and source/pump wall-plug energy separately.",
+    "benchmark_contract_updated": true,
+    "literature_watch_updated": true,
+    "research_gap_updated": true
+  },
+  "artifact_paths": [
+    "docs/literature_watch/2026-10-26-bell-quantum-signal-learning.md",
+    "docs/RESEARCH_GAP_RG-BELL-QSL-001.md",
+    "research_lanes/lane_a/quantum_signal_learning/benchmark_contract.json",
+    "integration/INT-20261026-BELL-QSL.json",
+    "integration/DAILY_CYCLE_2026-10-26_BELL-QSL.md",
+    "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "software/uqpu-prototype/tests/test_squeezing_probe_resources.py"
+  ],
+  "lanes": {
+    "A": {
+      "status": "SCOPED",
+      "delta": "Property-vector useful-output contract proposed; no implementation or reproduction yet. Resource convention now distinguishes instance-scaled squeezing from fixed-energy comparison."
+    },
+    "B": {
+      "status": "PRESERVED",
+      "delta": "Modality-aware target eligibility; no provider or price claim."
+    },
+    "C": {
+      "status": "SCOPED",
+      "delta": "Acquisition, output reconstruction, memory/I-O and persistence required."
+    },
+    "D": {
+      "status": "SCOPED",
+      "delta": "Squeezing source, detector, loss, bandwidth and calibration are explicit device gates."
+    },
+    "E": {
+      "status": "PRESERVED",
+      "delta": "Energy and infrastructure costs required; no material/fuel/fusion result."
+    },
+    "F": {
+      "status": "SCOPED",
+      "delta": "Matched baseline, probe-energy convention, wall-plug source energy and total cost per accepted output are separately required."
+    },
+    "G": {
+      "status": "DOWNSTREAM",
+      "delta": "Manufacturing/yield implications wait for validated control requirements."
+    },
+    "H": {
+      "status": "RECORDED",
+      "delta": "Dated literature watch and integration record added on review branch."
+    }
+  },
+  "foundation": {
+    "FND_001": "Energy accounting required; no measured thermodynamic gap.",
+    "FND_002": "Count classical output values, precision and reconstruction.",
+    "FND_003": "No quantum-speed-limit violation inferred from query complexity.",
+    "FND_004": "Known-physics bosonic/entanglement protocol candidate; no new primitive demonstrated.",
+    "FND_005": "No QFT or particle mechanism inferred.",
+    "FND_006": "Source assumptions, independent reproduction and explicit resource conventions required.",
+    "EQN_001_to_006": "No candidate equation or physical law promoted."
+  },
+  "invariants": {
+    "INV_029": "No data-center-to-phone gate passed.",
+    "INV_030": "No biomass-carbon material substitution evidence.",
+    "INV_031": "No accepted bio-oil/fuel evidence.",
+    "INV_032": "No reliable net fusion electricity evidence.",
+    "INV_033": "No principal/interest/WACC effect measured.",
+    "INV_034": "Foundational resource-accounting question added; no new physics result.",
+    "INV_035": "Equation discovery and evidence gates preserved."
+  },
+  "evidence_boundary": "Theoretical source only. No UQPU execution, hardware, material, energy, commercial or economic advantage is established.",
+  "canonical_ledger_sync_debt": "RESEARCH_GAPS.md and README.md are large/append-only or integration-sensitive canonical files; do not replace from partial reads. Sync only after review, collision reconciliation and exact-head CI.",
+  "resource_model_implementation": {
+    "module": "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "functions": [
+      "squeezed_vacuum_mean_photon_number",
+      "squeezed_vacuum_squeezing_for_mean_photon_number"
+    ],
+    "test_file": "software/uqpu-prototype/tests/test_squeezing_probe_resources.py",
+    "scope": "Analytic single-mode squeezed-vacuum resource identity and inverse only; not Bell-QSL protocol simulation or wall-plug energy model.",
+    "status": "CODE_ADDED_EXACT_HEAD_CI_PENDING"
+  }
+}
