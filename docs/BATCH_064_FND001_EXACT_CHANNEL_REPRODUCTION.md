@@ -24,6 +24,8 @@ It complements but does not merge with:
 
 Source-bounded watches and falsifiable follow-ups: `docs/literature_watch/2026-10-26-experimental-environmental-memory.md` and `docs/literature_watch/2026-10-26-chiral-anomaly-thermodynamic-transport.md`.
 
+The full surveillance pass also rechecked symbolic regression/neural-symbolic equation discovery (GOLLuM, ASP-assisted symbolic regression and symbolic-ensemble interatomic potentials), AI theorem/proof discovery (including the October AI-generated-mathematics release and its formalization caveats), differentiable/physics-informed modeling, automated experiment design, new constitutive/effective-law proposals, no-go/lower-bound work, physical anomalies, fusion and biomass/bio-oil. Existing 2026-10-25 watches already index the principal leads in these categories. The 2026-10-26 searches did not identify another fresh result that changes BIO-001 accepted-liquid evidence, FUS-001 net-electricity/lifecycle economics, or FIN-001 measured principal/interest. The existing sub-keV fusion-yield watch remains a relative-yield literature result, not a net-power result.
+
 ## 3. Lane A implementation
 
 Added `software/uqpu-prototype/uqpu/active_memory.py` and `tests/test_active_memory.py`. The evaluator:
