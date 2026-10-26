@@ -17,6 +17,8 @@
 
 ## What changed
 
+The standalone RG-047 gap now records the proposed EquationHypothesis integration and explicitly remains partially open until exact-head CI, a pinned theorem run and independent reproduction are complete. The update is on this branch only and is not canonical main yet.
+
 The equation-discovery record now carries a typed `FormalProofEvidence` object. Any nontrivial proof status requires a bound record, validates its metadata, requires exact statement equality against `formal_proof_statement`, requires the proof claim ID to equal the equation ID, restricts the claim kind to `PHYSICAL_EQUATION_HYPOTHESIS`, and checks status agreement. The legacy `CHECKED` value is only an alias for a bound kernel-checked or independently reproduced record.
 
 Regression tests cover missing evidence, mismatched equation identity, mismatched status, the legacy alias, and the non-promotion boundary. Tests have been added to the branch but have not been executed in this connector-only environment; no local or hosted pass is claimed.
