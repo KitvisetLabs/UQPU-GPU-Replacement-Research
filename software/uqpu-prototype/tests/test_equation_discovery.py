@@ -4,6 +4,7 @@ from uqpu.equation_discovery import (
     EquationHypothesis,
     required_discovery_fields,
     select_bic_candidate_count,
+    evaluate_bic_selection_stability,
 )
 
 
@@ -111,6 +112,73 @@ class EquationDiscoveryTests(unittest.TestCase):
                     select_bic_candidate_count({1: 10.0}, {1: 1}, sample_count=sample_count)
         with self.assertRaises(ValueError):
             select_bic_candidate_count({1: 10.0}, {1: 10}, sample_count=10)
+
+
+    def test_bic_stability_reports_unique_selection_at_preregistered_threshold(self):
+        weak_gain = {1: 100.0, 2: 95.0}
+        strong_gain = {1: 100.0, 2: 30.0}
+        rss = {
+            "seed-01": weak_gain,
+            "seed-02": weak_gain,
+            "seed-03": weak_gain,
+            "seed-04": weak_gain,
+            "seed-05": strong_gain,
+        }
+        result = evaluate_bic_selection_stability(
+            replicate_residual_sums_squares=rss,
+            parameter_counts={1: 2, 2: 4},
+            sample_counts={seed: 100 for seed in rss},
+            minimum_selection_fraction=0.8,
+        )
+        self.assertTrue(result.stable)
+        self.assertEqual(result.stable_selection, 1)
+        self.assertEqual(result.replicate_count, 5)
+        self.assertEqual(result.selection_frequencies, ((1, 4, 0.8), (2, 1, 0.2)))
+        self.assertEqual(tuple(seed for seed, _ in result.selections), tuple(sorted(rss)))
+
+    def test_bic_stability_tie_is_unstable_even_at_half_threshold(self):
+        result = evaluate_bic_selection_stability(
+            replicate_residual_sums_squares={
+                "weak-fit-gain": {1: 100.0, 2: 95.0},
+                "large-fit-gain": {1: 100.0, 2: 30.0},
+            },
+            parameter_counts={1: 2, 2: 4},
+            sample_counts={"weak-fit-gain": 100, "large-fit-gain": 100},
+            minimum_selection_fraction=0.5,
+        )
+        self.assertFalse(result.stable)
+        self.assertIsNone(result.stable_selection)
+
+    def test_bic_stability_fails_closed_on_missing_or_mismatched_replicates(self):
+        with self.assertRaises(ValueError):
+            evaluate_bic_selection_stability(
+                {"only-one": {1: 10.0}},
+                {1: 1},
+                {"only-one": 20},
+            )
+        with self.assertRaises(ValueError):
+            evaluate_bic_selection_stability(
+                {"a": {1: 10.0}, "b": {1: 11.0}},
+                {1: 1},
+                {"a": 20},
+            )
+        with self.assertRaises(ValueError):
+            evaluate_bic_selection_stability(
+                {"a": {1: 10.0}, "b": {1: 11.0, 2: 9.0}},
+                {1: 1, 2: 2},
+                {"a": 20, "b": 20},
+            )
+
+    def test_bic_stability_rejects_invalid_thresholds(self):
+        for threshold in (True, 0.0, 1.1, float("nan"), float("inf")):
+            with self.subTest(threshold=threshold):
+                with self.assertRaises(ValueError):
+                    evaluate_bic_selection_stability(
+                        {"a": {1: 10.0}, "b": {1: 11.0}},
+                        {1: 1},
+                        {"a": 20, "b": 20},
+                        minimum_selection_fraction=threshold,
+                    )
 
 
 if __name__ == "__main__":
