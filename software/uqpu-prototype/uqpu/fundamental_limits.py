@@ -19,6 +19,34 @@ def _positive_finite(name: str, value: float) -> float:
     return x
 
 
+def planckian_thermalization_min_seconds(temperature_kelvin: float) -> float:
+    """Conditional lower bound for a universal thermalization machine.
+
+    In the framework of Abiuso et al., a fixed machine that must thermalize
+    multiple possible Hamiltonians to their corresponding Gibbs states has
+    tau >= hbar/(2*k_B*T) in the sufficiently mixed finite-temperature regime
+    (beta*Delta less than or of order one), with sufficiently small output
+    error. This is not a generic computation/gate-time bound and does not
+    apply to preparing one known thermal state by an arbitrary task-specific
+    routine. It is a theoretical lower bound, not a device prediction.
+    """
+    t = _positive_finite("temperature_kelvin", temperature_kelvin)
+    return HBAR_J_S / (2.0 * BOLTZMANN_CONSTANT_J_PER_K * t)
+
+
+def low_temperature_gap_thermalization_min_seconds(
+    spectral_gap_joule: float,
+) -> float:
+    """Conditional low-temperature thermalization bound, tau >= hbar/Delta.
+
+    This asymptotic regime applies to the same universal thermalization-machine
+    task when beta*Delta is much greater than one. It is not a general lower
+    bound for arbitrary computation or a claim about measured device latency.
+    """
+    gap = _positive_finite("spectral_gap_joule", spectral_gap_joule)
+    return HBAR_J_S / gap
+
+
 def landauer_minimum_joule_per_bit(temperature_kelvin: float) -> float:
     """Ideal minimum heat for erasing one classical bit at temperature T.
 
