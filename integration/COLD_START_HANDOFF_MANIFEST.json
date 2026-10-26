@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-26T20:23:56.883Z",
+  "prepared_utc": "2026-10-26T20:27:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c60594ad8a02f20e2908c53640b66f9062479002",
   "priority_lane": "A",
-  "current_frontier": "2026-10-27 canonical main snapshot c60594ad8a02f20e2908c53640b66f9062479002: Batch 070 and latest literature/gap records are present. PR #132 proposes EquationHypothesis-to-FormalProofEvidence binding plus a fresh equation/material literature watch; PR #133 carries this pending-main handoff/manifest refresh. Neither source PR is merged. Code-bearing run #1681 passed Python 3.10/3.11/3.12 unit/invariant and CLI smoke steps; extended QSP/QSVT/Qiskit/reference jobs were still running or queued. Exact latest source head d7e04470f3267fbb6bc5de323d915ddb30958b96 has run #1697 queued. Current main combined-status endpoint has no rows, so main CI is UNKNOWN rather than PASS.",
+  "current_frontier": "Canonical main advanced after this pending-main branch was prepared: main now includes INV-034/035 alignment in PROJECT_CHARTER.md and GOALS.md through 48146bf2ad560db3a034763d40da338193856f40. This branch remains based on the historical starting SHA c60594ad8a02f20e2908c53640b66f9062479002; do not treat it as containing later main changes. PR #132 proposes EquationHypothesis-to-FormalProofEvidence binding and a literature watch; neither PR #132 nor #133 is merged. Exact-head Actions must be rechecked after this manifest/commit-trailer repair; main CI remains UNKNOWN until a current exact-head run is confirmed.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -41,7 +41,7 @@
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
       "status": "FORMAL_PROOF_BINDING_PR_PENDING_EXACT_HEAD_CI",
-      "evidence_class": "SOFTWARE_CONTRACT_PENDING_MAIN",
+      "evidence_class": "PROTOTYPE",
       "next_gate": "check run #1697 on source head d7e04470f3267fbb6bc5de323d915ddb30958b96; close extended CI, then pin one real theorem artifact/toolchain and obtain independent reproduction; RG-046 raw-source provenance remains open"
     },
     "B": {
@@ -71,7 +71,7 @@
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
       "status": "EVIDENCE_GATE_ACTIVE; EXACT_HEAD_CI_PENDING",
-      "evidence_class": "SOFTWARE_CONTRACT_PENDING_MAIN",
+      "evidence_class": "PROTOTYPE",
       "next_gate": "competitive baseline and cost per accepted task; FIN-001 principal/interest/time-to-evidence ledger"
     },
     "G": {
@@ -146,28 +146,28 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Open PR backlog includes source and pending-main pairs #98/#99/#102–#133, plus earlier branches; historical/inaccessible forks are not exhaustively reconciled. PR #132 and #133 are open, not merged. README and append-heavy WORKLOG/RESEARCH_GAPS remain main state; update discoverability after reviewed merges. Do not claim full branch coverage.",
-  "next_independent_action": "Poll exact-head Actions run #1697 for PR #132 and #1699 for PR #133; inspect any failures and fix only reproducible issues. After review/merge, map all source SHAs to the resulting main SHA, refresh README and this handoff manifest, and rerun cold-start audit. Then run a pinned formal theorem with exact statement/proof/environment/log hashes and independent reproduction; acquire/hash raw SRSD-Feynman data and reconstruct group splits for RG-046.",
+  "next_independent_action": "Poll the newest exact-head Actions runs for PR #132 and PR #133 after the sync-trailer/evidence-class repair; inspect failures and fix only reproducible issues. Rebase/synchronize pending-main records against the current canonical main only after preserving the historical start SHA. Then run one pinned formal theorem with exact statement/proof/environment/log hashes and independent reproduction; acquire/hash raw SRSD-Feynman data and reconstruct group splits for RG-046.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
-  "current_main_ci_status": "UNKNOWN_NO_COMBINED_STATUS_ROWS",
-  "current_main_sha": "c60594ad8a02f20e2908c53640b66f9062479002",
+  "current_main_ci_status": "UNKNOWN_NEW_MAIN_COMMITS_REQUIRE_EXACT_HEAD_ACTIONS",
+  "current_main_sha": "48146bf2ad560db3a034763d40da338193856f40",
   "pending_source_work": [
     {
       "pr": 132,
       "branch": "research/2026-10-27-rg047-equation-proof-binding",
-      "head": "d7e04470f3267fbb6bc5de323d915ddb30958b96",
-      "status": "OPEN_NOT_MERGED",
+      "head": "a7fac69f1f8afd4dc0b7ccdee1a360d45667c446",
+      "status": "OPEN_NOT_MERGED_CI_RECHECK_REQUIRED",
       "ci_run": 40394917936,
       "ci_status": "QUEUED",
-      "summary": "EquationHypothesis binds exact theorem statement, equation ID, claim kind and proof status to FormalProofEvidence; adds regression tests, RG-047 update and literature watch."
+      "summary": "EquationHypothesis binds exact theorem statement, equation ID, claim kind and proof status to FormalProofEvidence; source branch re-review commit added the required pending-main trailer and records canonical charter alignment. Exact-head CI must be rechecked."
     },
     {
       "pr": 133,
       "branch": "sync/2026-10-27-formal-proof-binding-pending-main",
       "head": "d5c90915195ee8a3f6f9593b91f6179fab7912eb",
-      "status": "OPEN_NOT_MERGED",
+      "status": "OPEN_NOT_MERGED_SYNC_AUDIT_REPAIR_IN_PROGRESS",
       "ci_run": 40394981478,
       "ci_status": "QUEUED",
-      "summary": "Pending-main source-to-main sync record and cold-start manifest refresh; documentation only."
+      "summary": "Pending-main source-to-main sync record and cold-start manifest refresh; evidence labels normalized to the accepted prototype class and branch-head trailer repaired in this update."
     },
     {
       "pr": 111,
