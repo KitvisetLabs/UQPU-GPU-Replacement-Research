@@ -6,9 +6,13 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest research-cycle governance update — 2026-10-27
+## Latest governance reconciliation — 2026-10-27
 
-The current research-cycle record is [the Eight-Lane charter-alignment and CI reconciliation](integration/DAILY_CYCLE_2026-10-27_CHARTER_ALIGNMENT_AND_CI.md). Commits [cea99e1](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/cea99e19d4e163e334ced6f85abb3364f4e84416) and [48146bf](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/48146bf2ad560db3a034763d40da338193856f40) explicitly preserve INV-034/035 in the charter and goals. This is a governance/documentation improvement, not a new implementation or scientific result. Exact-head Actions for the latest main report commit are pending; open PRs #132 and #133 remain unmerged. No pinned proof run, paid/live QPU job, qualified material/fuel/fusion measurement, financing result or Data-Center-to-Phone result is claimed.
+The governance-only record is [the Eight-Lane charter-alignment and CI reconciliation](integration/DAILY_CYCLE_2026-10-27_CHARTER_ALIGNMENT_AND_CI.md). Commits [cea99e1](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/cea99e19d4e163e334ced6f85abb3364f4e84416) and [48146bf](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/48146bf2ad560db3a034763d40da338193856f40) explicitly preserve INV-034/035 in the charter and goals. This is a governance/documentation improvement, not a new implementation or scientific result. Exact-head Actions for the latest main report commit are pending; open PRs #132 and #133 remain unmerged. No pinned proof run, paid/live QPU job, qualified material/fuel/fusion measurement, financing result or Data-Center-to-Phone result is claimed.
+
+## Latest Eight-Lane research cycle — 2026-10-27
+
+The current research cycle is [the parity-QAOA evidence contract and literature watch](integration/DAILY_CYCLE_2026-10-27_PARITY_QAOA_EVIDENCE_CONTRACT.md). It records a fail-closed matched-comparison contract, a fresh higher-order parity-QAOA hardware preprint watch, and a sparse-QROM circuit lower-bound watch relevant to Lane C/FND-002. The changes are measurement/evidence infrastructure and literature integration only; UQPU has not reproduced the external hardware result, no new physical law is claimed, and no paid QPU job was submitted. PR [#138](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/138) requires exact-head CI before merge.
 
 ## Latest verified implementation checkpoint — 2026-10-25
 

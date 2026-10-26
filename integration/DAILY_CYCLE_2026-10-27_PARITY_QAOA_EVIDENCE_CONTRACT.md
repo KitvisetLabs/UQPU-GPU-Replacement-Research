@@ -19,6 +19,8 @@ Weidinger, Mbeng, ter Hoeven and Lechner, Higher-order Parity Constraints for Qu
 
 The repository had no dedicated dated watch for this result in the inspected docs/literature_watch listing. The new watch classifies it as external preprint/hardware evidence, not an independent UQPU reproduction. Its limitations and falsifiable follow-up are recorded in docs/literature_watch/2026-10-27-higher-order-parity-qaoa-equal-budget-evidence.md.
 
+A second material delta is Li et al., Optimal T Counts under Sparsity: from QROM to State Preparation and Block Encoding, arXiv:2607.28260v2, revised 2026-10-01. It gives tight sparse-QROM T-count bounds in a fixed Clifford+T circuit model and matching applications to sparse state preparation/block encoding. This is relevant to Lane C and FND-002 as an external circuit-cost lower bound, not a physical memory bound or a measured UQPU result. See docs/literature_watch/2026-10-27-sparse-qrom-state-preparation-lower-bounds.md and the standalone gap RG-QROM-SPARSE-001.
+
 ## Lane A implementation and validation
 
 Added software/uqpu-prototype/uqpu/qaoa_comparison_contract.py and focused tests. The contract binds workload/test/acceptance/reference/target hashes, provider and target identity, evidence class, equal total shots, optimizer-evaluation budget and repetitions. It rejects test-optimum leakage, cross-provider/target mismatches, mismatched saved-calibration snapshots and mismatched REAL_QPU pricing/calibration epochs. It only computes cost per accepted task when every cost component is priced and the shared quality gate passes; model/simulation records cannot become economic evidence.
@@ -31,7 +33,7 @@ Local isolated validation: **15 focused tests passed**. The contract is measurem
 |---|---|---|
 | A — quantum programming/workloads/compiler/runtime | ACTIVE, Priority #1. Added a fail-closed paired QAOA comparison contract and tests; direct QUBO-to-Ising path unchanged. | Implement/independently verify parity mapping; exact small-graph checks; frozen held-out comparison. |
 | B — cloud/QPU/provider integration | ACTIVE, NO-SUBMIT. Provider identity, target configuration, pricing snapshot and calibration epoch are explicit comparison keys. | Target-aware simulator/dry-run first; paid hardware only with explicit authorization, credentials and bounded budget. |
-| C — RAM/VRAM/HBM/storage/state/data movement | ACTIVE, BOUNDARY-ONLY. Record physical qubits, input/output bytes, peak memory and reconstruction; no quantum-state/classical-memory equivalence is claimed. | Add transfer/billable-usage measurements to the eventual parity experiment. |
+| C — RAM/VRAM/HBM/storage/state/data movement | ACTIVE, BOUNDARY-ONLY. Records memory/I/O fields and now has an external sparse-QROM T-count bound for coherent data access; no quantum-state/classical-memory equivalence is claimed. | Map a frozen workload's n/m/s and address promise to dense-versus-sparse QROM resource accounting. |
 | D — quantum/photonic/semiconductor device/process/packaging | ACTIVE, EVIDENCE-GATED. External parity encoding has extra qubit and entangling-depth costs. | Target topology, native-gate and calibration-aware resource audit. |
 | E — Pangola/materials/bio-oil/fusion/cooling/infrastructure | ACTIVE, DATA-GAPPED. No material, accepted liquid-fuel, net-fusion-electricity or cooling evidence was generated. | Continue BIO-001/FUS-001 under measured mass/energy/net-electric boundaries. |
 | F — economics/benchmarks/evidence/integration | ACTIVE. Added a matched evidence schema; unknown cost stays unknown, and simulation cannot pass the real-QPU economic gate. | Reproduce with complete accepted-task cost and uncertainty. |
@@ -42,7 +44,7 @@ INV-034 and INV-035 remain upstream of A–H. The literature's QAOA optimization
 
 ## Foundational and equation-discovery status
 
-FND-001 remains MODEL_ONLY; FND-002 remains an information/output lower-bound track; FND-003 still lacks a matched control-versus-quantum-speed-limit measurement; FND-004 has no demonstrated alternative physical primitive; FND-005 has no validated new QFT/particle mechanism; FND-006 continues through formal constraints, held-out tests, counterexamples and proof/experiment gates. EQN-001–006 were not advanced by this QAOA paper. RG-EQN-007 and RG-EQN-008 remain open; the new parity gap is separate and does not replace either one.
+FND-001 remains MODEL_ONLY; FND-002 remains an information/output lower-bound track with a new external sparse-QROM circuit-cost reference, not a project-derived physical memory bound; FND-003 still lacks a matched control-versus-quantum-speed-limit measurement; FND-004 has no demonstrated alternative physical primitive; FND-005 has no validated new QFT/particle mechanism; FND-006 continues through formal constraints, held-out tests, counterexamples and proof/experiment gates. EQN-001–006 were not advanced by this QAOA paper. RG-EQN-007 and RG-EQN-008 remain open; the new parity gap is separate and does not replace either one.
 
 ## INV-029 through INV-035 mission traceability
 
@@ -60,6 +62,6 @@ INV-025/026's 100,000,000-GPU and universal 100,000,000-unit goals remain falsif
 
 At starting main SHA aa444f3291f964d1e27b3f9d6c0580f11f8bd642, hosted workflow runs UQPU Prototype and Project Invariants #1734 and Autonomous Cold-Start Handoff Audit #929 completed successfully on 2026-10-26 22:13:28Z. The earlier branch run is not a substitute for this branch's exact-head CI; current publication-branch Actions must be checked before merge.
 
-The new dated gap is not appended to RESEARCH_GAPS.md because its full append-only history should not be reconstructed from partial snippets. This creates explicit aggregate sync debt; preserve the standalone gap until a safe reconciliation is possible. No numbered Batch was assigned because an open PR already proposes the next numbered proof-evidence batch.
+The new dated parity-QAOA and sparse-QROM gaps are not appended to RESEARCH_GAPS.md because its full append-only history should not be reconstructed from partial snippets. This creates explicit aggregate sync debt; preserve the standalone gaps until a safe reconciliation is possible. No numbered Batch was assigned because an open PR already proposes the next numbered proof-evidence batch.
 
-**Next highest-value gate:** implement the parity mapping behind the existing provider-neutral workload contract, independently verify decoding and exact small-instance objectives, then compare on a frozen held-out graph manifest with equal shots/optimizer budget and complete target-matched accepted-task economics. No real-QPU submission without explicit consent.
+**Next highest-value gate:** implement and independently verify parity mapping on exact small graphs, while mapping a frozen sparse-data workload to the new QROM bound and testing dense-versus-sparse resource parity. Then compare accepted-task economics on a held-out graph manifest. No real-QPU submission without explicit consent.
