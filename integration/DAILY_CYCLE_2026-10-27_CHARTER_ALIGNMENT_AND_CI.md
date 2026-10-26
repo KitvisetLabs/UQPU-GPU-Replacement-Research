@@ -82,3 +82,8 @@ INV-025/026/027 and the 100,000,000-GPU and universal 100,000,000-unit GPU/CPU/N
 5. Continue the highest-value Lane A accepted-useful-output baseline while keeping B–H active, then close BIO-001, FUS-001 and FIN-001 only with the relevant end-to-end measurements.
 
 No paid QPU job was submitted. No physical, material, fuel, electricity, economic or Data-Center-to-Phone advantage is claimed.
+
+
+## Post-publication addendum — literature watch promoted to canonical main
+
+After this report's initial checkpoint, the dated watch [`2026-10-27-concept-driven-equation-discovery-and-symbolic-material-potentials.md`](../docs/literature_watch/2026-10-27-concept-driven-equation-discovery-and-symbolic-material-potentials.md) was published directly to canonical main in commit [`85fbd29`](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/85fbd29ff4d99b7c1820d3579111c9901c898098). It records the symbolic-ensemble interatomic-potential paper, AIProver preprint and Duffing symbolic-rediscovery negative control with provenance, evidence classes, limitations and falsifiable follow-ups. The identical article is present on pending PR #132's branch; its later merge should reconcile the identical path without duplicating the article. The PR's code/tests remain unmerged and their exact-head CI remains pending.
