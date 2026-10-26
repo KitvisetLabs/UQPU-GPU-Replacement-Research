@@ -64,7 +64,7 @@ No mission-level gate passed. No Pangola material substitution, accepted bio-oil
 
 The JSON benchmark manifest and integration record were parsed before publication and rechecked after the resource-normalization amendment. No scientific simulation, provider SDK run, physical experiment or paid QPU job was executed.
 
-GitHub Actions run 40262334339 passed on the pre-amendment PR head across the listed Python, reference-benchmark and QSVT/QSP-related jobs. Three subsequent commits amended the benchmark, literature watch, gap and integration record; that earlier green run is **not** validation of the new exact head. The latest amended head must be checked for its own Actions run before merge or promotion. The combined commit-status endpoint may return no entries even when workflow runs exist, so inspect the workflow run/jobs directly.
+An earlier Actions run (40262334339) passed on a superseded PR head, but that commit is no longer part of the current branch history after the commit-trailer repair and resource-helper/test additions. It is **not** validation of the current head. The exact current head's own workflow run must complete before merge or promotion. The combined commit-status endpoint may return no entries even when workflow runs exist, so inspect the workflow run/jobs directly.
 
 Canonical main remains unchanged. README and append-only ledgers are intentionally untouched until review, collision reconciliation and exact-head CI.
 
