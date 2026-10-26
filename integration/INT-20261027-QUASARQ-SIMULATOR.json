@@ -1,0 +1,111 @@
+{
+  "id": "INT-20261027-QUASARQ-SIMULATOR",
+  "date": "2026-10-27",
+  "canonical_start_main_sha": "421f213ac9b7dd3754d28567f9efb70f0e175d5c",
+  "status": "PROPOSED",
+  "evidence_class": "LITERATURE_ONLY + PREREGISTERED_BENCHMARK_DESIGN",
+  "primary_owner": "A_quantum_programming_workloads_compiler_runtime",
+  "publication_owner": "H_strategy_finance_future_industries",
+  "integration_owner": "F_economics_benchmarks_evidence",
+  "work_item": "QUASARQ-REPRO-001",
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-27-quasarq-stabilizer-gpu-simulation.md",
+    "lane_contract": "research_lanes/A_quantum_programming_runtime/QUASARQ_REPRO_001_BENCHMARK_CONTRACT.md",
+    "research_gap": "docs/RESEARCH_GAP_RG-QUASARQ-001.md",
+    "daily_cycle": "integration/DAILY_CYCLE_2026-10-27_QUASARQ.md"
+  },
+  "sources": [
+    {
+      "kind": "peer_reviewed_paper",
+      "title": "GPU-Accelerated Quantum Simulation of Stabilizer Circuits",
+      "date": "2026-10-01",
+      "doi": "10.22331/q-2026-10-01-2225",
+      "url": "https://quantum-journal.org/papers/q-2026-10-01-2225/",
+      "version": "arXiv:2603.14641v2"
+    },
+    {
+      "kind": "official_preprint",
+      "date": "2026-09-23",
+      "url": "https://arxiv.org/abs/2603.14641",
+      "version": "v2"
+    },
+    {
+      "kind": "public_source_repository",
+      "url": "https://github.com/System-Verification-Lab/QuaSARQ",
+      "license_claim": "GPL-3.0 per repository README; exact commit and dependency license audit still required"
+    }
+  ],
+  "method": {
+    "question": "Independent reproduction of a published GPU stabilizer simulator result under identical useful-output and full-system energy contracts.",
+    "baseline_methods": [
+      "Stim (primary specialized CPU baseline)",
+      "Qiskit-Aer CPU (secondary)",
+      "Qiskit-Aer GPU (secondary where available)"
+    ],
+    "workload_domain": "Clifford/stabilizer circuits only",
+    "acceptance": "Correctness/distributional acceptance before performance; identical circuit bytes, semantics, shots, seed policy and timeout; retain all failed runs.",
+    "metrics": [
+      "end-to-end latency",
+      "phase timings",
+      "throughput per accepted output",
+      "shots/seeds",
+      "host RAM",
+      "VRAM",
+      "transfer bytes/time",
+      "output/reconstruction",
+      "retries/timeouts",
+      "device energy",
+      "whole-system wall-plug energy",
+      "cost per accepted output when supported"
+    ],
+    "repetition_policy": "At least 5 timed repeats per feasible deterministic case and at least 30 paired sampling seeds where budget permits; underpowered tiers disclosed.",
+    "falsifiers": [
+      "output mismatch",
+      "gain vanishes on matched baseline",
+      "gain disappears with repeated trials",
+      "energy advantage vanishes under common system boundary",
+      "selective timeout exclusion",
+      "held-out supported-circuit failure"
+    ]
+  },
+  "cross_lane_edges": {
+    "A_B_C": "Simulator-only baseline now explicitly precedes any QPU economic comparison; no provider path or QPU job is changed.",
+    "A_C_F": "Accepted-output contract binds output semantics, memory/I/O/transfer, repeated trials, energy and cost ledger.",
+    "D_G": "Dual tableau layout and parallel prefix operations inform architecture questions only; no chip/process/factory claim.",
+    "E_F_H": "Simulator energy is not biomass fuel or fusion-electricity evidence; preserve full industrial-finance context without cost claims."
+  },
+  "fnd_eqn_status": {
+    "FND-001": "No thermodynamic work/heat or memory-resource measurement; no change.",
+    "FND-002": "No readable classical output-information bound or storage equivalence change.",
+    "FND-003": "No matched control-versus-quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No QFT/particle mechanism validated.",
+    "FND-006": "No equation candidate; only software-baseline methodology strengthened.",
+    "EQN-001_to_006": "No equation-discovery method benchmark executed; existing generator/constraints/evaluator/held-out/counterexample/proof-or-simulation/experiment/replication/economics gates remain unchanged."
+  },
+  "invariant_disposition": {
+    "INV-029": "Not advanced empirically; no physical phone-compression gate closed.",
+    "INV-030": "No biomass-carbon material result.",
+    "INV-031": "No accepted bio-oil result.",
+    "INV-032": "No net reliable fusion-electricity result.",
+    "INV-033": "No measured financing/interest/WACC effect.",
+    "INV-034": "No new physics result; open-frontier remains evidence-gated.",
+    "INV-035": "No new equation/law; current physics remains binding.",
+    "INV-025_026_027": "Moonshots/open-frontier retained as falsifiable goals."
+  },
+  "non_claims": [
+    "No UQPU reproduction executed",
+    "No QPU job or provider credential used",
+    "No real quantum advantage",
+    "No GPU/CPU/NPU/RAM/VRAM/storage replacement",
+    "No physical law or new equation",
+    "No material/fuel/fusion/finance outcome",
+    "No Data-Center-to-One-Phone result"
+  ],
+  "sync_debt": [
+    "README latest verified checkpoint remains stale relative to Batch 068 and this proposed record",
+    "RESEARCH_GAPS.md and WORKLOG.md append-heavy aggregate indexes not rewritten",
+    "Exact-head Actions status unavailable from the combined-status endpoint; branch CI must be checked before any merge"
+  ],
+  "next_gate": "Pin source/dependency/circuit hashes, run the correctness tier first, then paired timing and measured energy with a common system boundary."
+}
