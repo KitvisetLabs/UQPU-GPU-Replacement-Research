@@ -83,5 +83,15 @@
     "INV_035": "Equation discovery and evidence gates preserved."
   },
   "evidence_boundary": "Theoretical source only. No UQPU execution, hardware, material, energy, commercial or economic advantage is established.",
-  "canonical_ledger_sync_debt": "RESEARCH_GAPS.md and README.md are large/append-only or integration-sensitive canonical files; do not replace from partial reads. Sync only after review, collision reconciliation and exact-head CI."
+  "canonical_ledger_sync_debt": "RESEARCH_GAPS.md and README.md are large/append-only or integration-sensitive canonical files; do not replace from partial reads. Sync only after review, collision reconciliation and exact-head CI.",
+  "resource_model_implementation": {
+    "module": "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "functions": [
+      "squeezed_vacuum_mean_photon_number",
+      "squeezed_vacuum_squeezing_for_mean_photon_number"
+    ],
+    "test_file": "software/uqpu-prototype/tests/test_squeezing_probe_resources.py",
+    "scope": "Analytic single-mode squeezed-vacuum resource identity and inverse only; not Bell-QSL protocol simulation or wall-plug energy model.",
+    "status": "CODE_ADDED_EXACT_HEAD_CI_PENDING"
+  }
 }
