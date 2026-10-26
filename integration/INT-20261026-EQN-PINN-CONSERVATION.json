@@ -1,0 +1,126 @@
+{
+  "id": "INT-20261026-EQN-PINN-CONSERVATION",
+  "date": "2026-10-26",
+  "status": "PROPOSED",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "integration_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "work_item": "EQN-PINN-CONSERVATION-001",
+  "canonical_base_sha": "c9880f2bcca274ed36fe19f83b91e7c91e41b400",
+  "evidence_class": "LITERATURE_ONLY",
+  "uqpu_project_evidence_promoted": false,
+  "sources": [
+    {
+      "citation": "Chomali-Castro et al., Solving Bemfica-Disconzi-Noronha-Kovtun diffusion using physics-informed neural networks",
+      "venue": "Physical Review D 114, 076013",
+      "published": "2026-10-07",
+      "doi": "10.1103/shpm-ksq9",
+      "url": "https://doi.org/10.1103/shpm-ksq9",
+      "scope": "Flux-conservative BDNK reformulation; finite-volume vs SA-PINN-ACTO comparison; smooth and discontinuous profiles",
+      "limitation": "Publisher states accepted manuscript becomes available 2027-10-07; this cycle did not reproduce the method"
+    },
+    {
+      "citation": "Zhang, Reconstruction of Reynolds-averaged Navier-Stokes solutions from boundary data with partial Reynolds stress transport constraints",
+      "venue": "Physical Review Fluids 11, 104602",
+      "published": "2026-10-06",
+      "doi": "10.1103/rn1j-32n4",
+      "url": "https://doi.org/10.1103/rn1j-32n4",
+      "scope": "Exact advection/production terms, explicit inadequacy term and realizability-constrained boundary reconstruction",
+      "limitation": "One fluid-model domain; method result is not a universal equation-discovery result"
+    }
+  ],
+  "artifacts": {
+    "literature_watch": {
+      "path": "docs/literature_watch/2026-10-26-conservative-pinns-model-discrepancy.md",
+      "source_commit": "70fb839a94d8ad8031e22f8721967eeb9bd7f33e"
+    },
+    "research_gap": {
+      "path": "docs/RESEARCH_GAP_EQN_PINN_CONSERVATION_001.md",
+      "source_commit": "06f344e3b07be57c5e77a7db01c34d2e93e0db2b"
+    },
+    "lane_a_contract": {
+      "path": "research_lanes/A_quantum_programming_runtime/EQN_PINN_CONSERVATION_BENCHMARK_CONTRACT.md",
+      "source_commit": "1ae902b437ae5cbbb923514e8f93019176a433a9"
+    }
+  },
+  "hypothesis": "For a source-pinned PDE task, justified hard conservation/admissibility constraints plus explicit model-discrepancy representation may improve held-out accepted-output reliability versus an unconstrained PINN under a matched budget.",
+  "integration_edges": [
+    {
+      "lanes": [
+        "A",
+        "FND",
+        "EQN",
+        "F"
+      ],
+      "interface": "source-pinned equation + typed units + constraint predicates + held-out acceptance + counterexample log",
+      "status": "PROPOSED",
+      "falsifier": "No held-out acceptance/reliability improvement under matched compute budget, or failed independent replay"
+    },
+    {
+      "lanes": [
+        "A",
+        "C",
+        "F"
+      ],
+      "interface": "accepted output + physical memory bytes + state I/O/transfer + host work + measured energy if available",
+      "status": "PROPOSED",
+      "falsifier": "Logical state/residual metrics cannot be mapped to measured resource changes"
+    },
+    {
+      "lanes": [
+        "D",
+        "G"
+      ],
+      "interface": "validated model consequence -> device/process requirement only after target-aware evidence",
+      "status": "BLOCKED",
+      "falsifier": "No validated device-relevant consequence"
+    },
+    {
+      "lanes": [
+        "E",
+        "F",
+        "H"
+      ],
+      "interface": "mass/energy balance, accepted liquid or net-electric output, lifecycle cost and financing",
+      "status": "PROPOSED",
+      "falsifier": "No same-boundary physical/economic evidence; no mission claim promoted"
+    },
+    {
+      "lanes": [
+        "B",
+        "A",
+        "F"
+      ],
+      "interface": "provider-neutral simulation/dry-run only until accepted workload and cost contract exist",
+      "status": "REVIEWED_NO_CHANGE",
+      "falsifier": "Target/API/billing semantics are not verified or no user-authorized budget exists"
+    }
+  ],
+  "lane_status": {
+    "A": "CONTRACT_ADDED; implementation/reproduction not started",
+    "B": "REVIEWED; no provider adapter/job",
+    "C": "REVIEWED; no physical memory/energy measurement",
+    "D": "REVIEWED; no device change",
+    "E": "REVIEWED; BIO-001/FUS-001 remain open",
+    "F": "GAP + integration record added; no cost/finance claim",
+    "G": "REVIEWED; D/G co-design preserved; no process/yield result",
+    "H": "Literature watch and strategic publication context added",
+    "I": "Auxiliary special-project lane not advanced here and does not replace A-H"
+  },
+  "mission_disposition": {
+    "INV-029": "No physical data-center-to-phone compression evidence",
+    "INV-030": "No Pangola carbon substitution or elemental transmutation claim",
+    "INV-031": "No accepted biomass liquid-fuel evidence",
+    "INV-032": "No reliable net delivered fusion electricity evidence",
+    "INV-033": "No measured principal, interest, WACC or risk-premium change",
+    "INV-034": "Falsifiable mathematics-first model-evaluation question added",
+    "INV-035": "Current physics remains binding; no equation promoted as a physical law"
+  },
+  "next_gate": "Pin a reproducible source dataset/equation and compare finite-volume reference, unconstrained PINN and constraint-aware/discrepancy arm on matched smooth/discontinuous/held-out cases; require independent replay before any physical or economic interpretation.",
+  "safety": {
+    "paid_qpu_jobs": 0,
+    "physical_experiments": 0,
+    "purchases_or_funding_actions": 0
+  },
+  "sync_status": "SOURCE_BRANCH_PENDING_REVIEW; not yet canonical main"
+}
