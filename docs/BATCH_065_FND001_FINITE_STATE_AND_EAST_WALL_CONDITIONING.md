@@ -55,3 +55,7 @@ The EAST paper reports experimental plasma results (including a reported 1066-se
 ## Next highest-value gate
 
 Attach a matched useful-task acceptance contract to a provider-neutral runtime workload, then independently verify reference/bound certificates, quality, latency, throughput, shots, billable usage, memory/I/O/transfer, retries, reconstruction, host compute, measurable energy and total cost per accepted task. In parallel, obtain matched EAST discharge data and a Li/B/tritium/maintenance material balance before changing any FUS-001 net-electricity scenario.
+
+## Supplemental repository lane
+
+The repository also contains an auxiliary Lane I on field-agnostic contactless vehicle levitation/propulsion. It was inspected and left intact; its existing artifacts remain MODEL_ONLY/research plans and do not replace or reorder the mandatory A-H architecture. No levitation, occupied-vehicle, arbitrary-terrain or onboard-fusion performance is claimed in this cycle.
