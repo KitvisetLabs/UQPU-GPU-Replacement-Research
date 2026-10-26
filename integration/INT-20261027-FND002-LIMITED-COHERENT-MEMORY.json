@@ -1,0 +1,105 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261027-FND002-LIMITED-COHERENT-MEMORY",
+  "work_item_id": "FND002-COHERENT-MEMORY-001",
+  "date": "2026-10-27",
+  "canonical_start_main_sha": "fbb5ab05dcddbe476095b14ce75758dd35da7ac3",
+  "primary_owner_lane": "C_state_memory_storage_data_movement",
+  "cross_lane_owners": [
+    "A_quantum_programming_workloads_compiler_runtime",
+    "F_economics_benchmarks_evidence_integration",
+    "H_strategy_finance_future_industries"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "status": "PROPOSED",
+  "evidence_class": "OFFICIAL_PREPRINT + LITERATURE_DERIVED_RESOURCE_CONTRACT",
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-27-limited-coherent-memory-stabilizer-testing.md",
+    "lane_contract": "research_lanes/C_state_memory_storage_data_movement/FND002_LIMITED_COHERENT_MEMORY_STABILIZER_BOUND.md",
+    "daily_cycle": "integration/DAILY_CYCLE_2026-10-27_LIMITED_COHERENT_MEMORY.md"
+  },
+  "sources": [
+    {
+      "kind": "official_preprint",
+      "title": "Optimal Stabilizer Testing and Learning with Limited Quantum Memory",
+      "authors": [
+        "Srinivasan Arunachalam",
+        "Louis Schatzki"
+      ],
+      "submitted": "2026-07-02",
+      "url": "https://arxiv.org/abs/2607.02444",
+      "version": "arXiv:2607.02444",
+      "evidence_class": "OFFICIAL_ARXIV_PREPRINT"
+    }
+  ],
+  "method": {
+    "question": "How should coherent-memory width and copy/sample complexity be kept explicit in equivalent-useful-output quantum workload contracts?",
+    "source_reported_results": [
+      "stabilizer testing sample complexity Θ(n-k) in the specified k-qubit coherent-memory model",
+      "non-adaptive stabilizer learning sample complexity Θ(n²/k) in the specified model",
+      "exponential lower bound for purity testing in a stated coherent-memory protocol"
+    ],
+    "acceptance": "Pin source theorem and assumptions; independently reconstruct the theorem; keep testing and learning distinct; only then run a preregistered small-n diagnostic with matched output quality.",
+    "metrics": [
+      "n state qubits",
+      "k coherent-memory qubits",
+      "copies/samples",
+      "measurement/reset count",
+      "classical working memory",
+      "output bits and reconstruction",
+      "accepted-output quality/error",
+      "latency",
+      "transfer bytes",
+      "energy when measured",
+      "billable usage",
+      "total cost per accepted task"
+    ],
+    "falsifiers": [
+      "source assumptions do not match the claimed task",
+      "independent proof reconstruction fails",
+      "small-n diagnostic contradicts the implementation of the stated theorem or reveals a model mismatch",
+      "apparent gain disappears under matched output quality and full resource accounting"
+    ]
+  },
+  "cross_lane_edges": {
+    "A_C": "Represent testing and learning as separate workload IDs; expose coherent-memory and sample budgets before lowering or comparing algorithms.",
+    "C_F": "Keep quantum memory, classical memory, sample count, transfer, output/reconstruction, latency, energy and cost in separate fields.",
+    "C_H": "Publish a scoped resource-bound interpretation while preserving the phone-class physical system boundary.",
+    "FND_EQN": "Treat the result as a literature theorem to reproduce, not as an equation-discovery result or new physical law."
+  },
+  "fnd_eqn_status": {
+    "FND-001": "No work/heat/joule measurement; unchanged.",
+    "FND-002": "Adds a distinct literature lead on coherent-memory/sample tradeoffs; the existing output-information bound is unchanged and no device result is established.",
+    "FND-003": "No matched control-versus-quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No QFT/particle mechanism validated.",
+    "FND-006": "No new equation generated or proved.",
+    "EQN-001_to_006": "No equation-discovery benchmark executed; source theorem and assumptions require independent audit."
+  },
+  "invariant_disposition": {
+    "INV-029": "No physical phone-compression result; identifies resource fields that must remain inside the eventual boundary.",
+    "INV-030": "No Pangola carbon or material substitution result.",
+    "INV-031": "No accepted bio-oil/fuel result.",
+    "INV-032": "No net reliable fusion-electricity result.",
+    "INV-033": "No measured principal, absolute-interest, WACC or rate effect.",
+    "INV-034": "Adds a scoped mathematical resource-bound lead; no new foundational physics result.",
+    "INV-035": "Keeps a source-reported theorem separate from verified proof and physical-law claims.",
+    "INV-025_026_027": "100,000,000-GPU and universal 100,000,000-unit moonshots remain falsifiable goals."
+  },
+  "non_claims": [
+    "No UQPU theorem reproduction",
+    "No formal proof-assistant run",
+    "No quantum advantage",
+    "No readable classical-memory equivalence",
+    "No real-QPU job",
+    "No measured energy/cost result",
+    "No material/fuel/fusion/finance result",
+    "No Data-Center-to-One-Phone result"
+  ],
+  "sync_debt": [
+    "This work is on a proposal branch and is not canonical main until reviewed and merged.",
+    "RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial reads.",
+    "Main exact-head hosted Actions is UNKNOWN from the available status endpoint."
+  ],
+  "next_gate": "Pin and independently audit the source theorem and assumptions; then run a small-n MODEL_ONLY diagnostic and a matched-output workload test only if an executable reference is available."
+}
