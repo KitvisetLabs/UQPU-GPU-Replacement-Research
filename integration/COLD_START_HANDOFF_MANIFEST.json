@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-26T20:27:00Z",
+  "prepared_utc": "2026-10-26T20:35:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "c60594ad8a02f20e2908c53640b66f9062479002",
   "priority_lane": "A",
-  "current_frontier": "Canonical main advanced after this pending-main branch was prepared: main now includes INV-034/035 alignment in PROJECT_CHARTER.md and GOALS.md through 48146bf2ad560db3a034763d40da338193856f40. This branch remains based on the historical starting SHA c60594ad8a02f20e2908c53640b66f9062479002; do not treat it as containing later main changes. PR #132 proposes EquationHypothesis-to-FormalProofEvidence binding and a literature watch; neither PR #132 nor #133 is merged. Exact-head Actions must be rechecked after this manifest/commit-trailer repair; main CI remains UNKNOWN until a current exact-head run is confirmed.",
+  "current_frontier": "Canonical main currently points to 2b05485e720da49e12146bd1280d0abc6a6583fa. Since the pending-main branch was prepared from historical main SHA c60594ad8a02f20e2908c53640b66f9062479002, it does not contain subsequent main-only charter/goal alignment, the daily-cycle report, or README discoverability commit. PR #132 proposes EquationHypothesis-to-FormalProofEvidence binding and a literature watch; PR #133 is a sync record only. Neither is merged. Exact-head Actions for both updated branches and latest main remain pending; do not promote queued runs to passing CI.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -148,8 +148,8 @@
   "known_sync_debt": "Open PR backlog includes source and pending-main pairs #98/#99/#102–#133, plus earlier branches; historical/inaccessible forks are not exhaustively reconciled. PR #132 and #133 are open, not merged. README and append-heavy WORKLOG/RESEARCH_GAPS remain main state; update discoverability after reviewed merges. Do not claim full branch coverage.",
   "next_independent_action": "Poll the newest exact-head Actions runs for PR #132 and PR #133 after the sync-trailer/evidence-class repair; inspect failures and fix only reproducible issues. Rebase/synchronize pending-main records against the current canonical main only after preserving the historical start SHA. Then run one pinned formal theorem with exact statement/proof/environment/log hashes and independent reproduction; acquire/hash raw SRSD-Feynman data and reconstruct group splits for RG-046.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
-  "current_main_ci_status": "UNKNOWN_NEW_MAIN_COMMITS_REQUIRE_EXACT_HEAD_ACTIONS",
-  "current_main_sha": "48146bf2ad560db3a034763d40da338193856f40",
+  "current_main_ci_status": "UNKNOWN_LATEST_MAIN_ACTIONS_QUEUED",
+  "current_main_sha": "2b05485e720da49e12146bd1280d0abc6a6583fa",
   "pending_source_work": [
     {
       "pr": 132,
@@ -163,8 +163,8 @@
     {
       "pr": 133,
       "branch": "sync/2026-10-27-formal-proof-binding-pending-main",
-      "head": "d5c90915195ee8a3f6f9593b91f6179fab7912eb",
-      "status": "OPEN_NOT_MERGED_SYNC_AUDIT_REPAIR_IN_PROGRESS",
+      "head": "ba2a6e0025d65240d4c1321e99182240b64c84bd",
+      "status": "OPEN_NOT_MERGED_SYNC_AUDIT_REPAIR_COMMITTED_CI_QUEUED",
       "ci_run": 40394981478,
       "ci_status": "QUEUED",
       "summary": "Pending-main source-to-main sync record and cold-start manifest refresh; evidence labels normalized to the accepted prototype class and branch-head trailer repaired in this update."
