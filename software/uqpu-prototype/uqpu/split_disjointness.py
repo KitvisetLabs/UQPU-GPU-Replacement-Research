@@ -14,7 +14,7 @@ from typing import Any, Iterable
 
 _SCHEMA = "uqpu-split-manifest-v1"
 _CERTIFICATE_SCHEMA = "uqpu-split-disjointness-certificate-v1"
-_SHA256 = re.compile(r"[0-9a-f]{64}\\Z")
+_SHA256 = re.compile(r"[0-9a-f]{64}\Z")
 _SPLITS = ("train", "validation", "test")
 _HOLDOUT_UNITS = {
     "LAW_FAMILY", "MATERIAL_FAMILY", "FLUID_PAIR", "SCALE", "GEOMETRY",
