@@ -57,7 +57,7 @@ FND-001 remains MODEL_ONLY; FND-002 remains an output-information bound; FND-003
 
 ## Literature surveillance
 
-The fresh pass found no new primary result absent from the current-main literature record that would change the project's evidence state. The Oct-12 arXiv survey `2610.17090v1` is explicitly limited because it did not compile/kernel-check the surveyed Lean developments; the CoSR accepted paper and Nature AI-experiment-design review are already recorded. No duplicate watch was published. Literature claims remain third-party context, not UQPU evidence.
+Fresh surveillance identified four sources absent from current main and published `docs/literature_watch/2026-10-27-concept-driven-equation-discovery-and-symbolic-material-potentials.md`: AI-Newton (APS accepted 2026-10-09), symbolic ensemble interatomic potentials (Phys. Rev. Materials, published 2026-10-09), AIProver (arXiv:2610.05367, 2026-10-04), and Duffing symbolic rediscovery (APS Open Science, published 2026-10-13). The last is a useful negative control because much of its exact recovery uses labels generated from known formulas. The Gaussian-repeater no-go and CoSR are already recorded on main and were not duplicated. Xie's arXiv survey `2610.17090v1` still does not kernel-check the surveyed Lean developments. All external findings remain literature-only.
 
 ## CI and canonical synchronization
 
