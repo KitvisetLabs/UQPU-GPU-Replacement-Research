@@ -28,7 +28,9 @@
     "docs/RESEARCH_GAP_RG-BELL-QSL-001.md",
     "research_lanes/lane_a/quantum_signal_learning/benchmark_contract.json",
     "integration/INT-20261026-BELL-QSL.json",
-    "integration/DAILY_CYCLE_2026-10-26_BELL-QSL.md"
+    "integration/DAILY_CYCLE_2026-10-26_BELL-QSL.md",
+    "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "software/uqpu-prototype/tests/test_squeezing_probe_resources.py"
   ],
   "lanes": {
     "A": {
