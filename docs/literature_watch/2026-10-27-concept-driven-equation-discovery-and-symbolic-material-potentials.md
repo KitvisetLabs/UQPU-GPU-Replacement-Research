@@ -1,4 +1,4 @@
-# Literature watch — 2026-10-27: concept-driven equation discovery and symbolic material potentials
+# Literature watch — 2026-10-27: formal-proof automation, symbolic materials and negative controls
 
 **Accessed:** 2026-10-27  
 **Primary publication owner:** Lane H — strategy and public research  
@@ -10,22 +10,13 @@
 
 ## Executive delta
 
-A fresh source scan found four method results not yet represented in the current main-branch literature watch: concept-driven multi-experiment law discovery, symbolic ensembles for interatomic potentials, certificate-driven proof auto-formalization, and symbolic rediscovery on nonlinear oscillator equations. They occupy different points in the generator → constraints → evaluator → proof → experiment pipeline. None is evidence of a UQPU advantage or a new physical law. The oscillator study is especially useful as a negative-control reminder: exact symbolic recovery can simply reproduce the formulas used to create synthetic labels.
+A fresh source scan found three method results not yet represented in the current main-branch literature watch: symbolic ensembles for interatomic potentials, certificate-driven proof auto-formalization, and symbolic rediscovery on nonlinear oscillator equations. The AI-Newton cross-experiment law-discovery watch is already proposed in [PR #111](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/111), so this article deliberately does not duplicate it; that PR remains unmerged and is not canonical main evidence. The three sources here occupy different points in the generator → constraints → evaluator → proof → experiment pipeline. None is evidence of a UQPU advantage or a new physical law. The oscillator study is especially useful as a negative-control reminder: exact symbolic recovery can simply reproduce the formulas used to create synthetic labels.
 
-## 1. AI-Newton — concept-driven physical-law discovery
+## Scope note: AI-Newton is tracked in a pending source PR
 
-**Source/date:** You-Le Fang, Dong-Shan Jian, Xiang Li and Yan-Qing Ma, “AI-Newton: A concept-driven physical law discovery system without prior physical knowledge,” *Physical Review Research*, accepted 2026-10-09. [Official APS accepted-paper record; DOI 10.1103/dvvc-4rsr](https://journals.aps.org/prresearch/accepted/10.1103/dvvc-4rsr).  
-**Evidence class:** peer-reviewed accepted-paper record.
+The APS-accepted AI-Newton source and its proposed EQN-AINEWTON-001 matched comparison are covered by [PR #111](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/111). That work is not merged into main yet. This watch avoids duplicating its source summary and focuses on additional sources that are not present in the current-main literature watch.
 
-**Reported novelty:** the framework proposes interpretable physical concepts from raw multi-experiment data, then progressively generalizes candidate laws. The authors report rediscovery of Newton's second law, energy conservation and universal gravitation from a large, noisy mechanics dataset.
-
-**Limitations:** these are rediscoveries of known laws in the paper's evaluated domain, not a new physical law. The accepted-paper page indicates supplementary material will accompany the version of record; this cycle did not obtain or independently reproduce the data/code. “Without prior physical knowledge” is a method description, not proof that the result is assumption-free.
-
-**Exact UQPU relevance:** FND-006/EQN-001–006 can test concept generation plus cross-experiment generalization as a separate benchmark arm. For INV-035, candidate concepts must still expose incumbent assumptions, dimensions, symmetries, conservation, causality, limits, falsifiers and discriminating observables.
-
-**Falsifiable follow-up:** freeze at least two law families as held-out groups; compare concept-driven staged discovery against deterministic symbolic regression and a single-shot neural-symbolic generator under identical grammar, data, preprocessing, CPU/accelerator, wall-clock and search budgets. Fail the method if gains disappear on held-out law families, violate constraints, or depend on leakage from the test family.
-
-## 2. Symbolic ensemble learning for interatomic potentials
+## 1. Symbolic ensemble learning for interatomic potentials
 
 **Source/date:** Bilvin Varughese et al., “Symbolic ensemble learning enables discovery of fast accurate physics-based interatomic potentials,” *Physical Review Materials* 10, 103802, published 2026-10-09. [Official APS article; DOI 10.1103/gkpd-gtzp](https://journals.aps.org/prmaterials/abstract/10.1103/gkpd-gtzp).  
 **Evidence class:** peer-reviewed primary paper.
@@ -38,7 +29,7 @@ A fresh source scan found four method results not yet represented in the current
 
 **Falsifiable follow-up:** pin the source data, DFT settings, model code and structure hashes. Train on declared structures, then hold out entire surfaces, defects, strain regimes, temperatures and phases. Compare a single symbolic model, symbolic ensemble and established baseline with matched data/search budgets. Report force/energy error, stability, uncertainty, failure rate, runtime and energy. Only after held-out simulation passes should an experimental validation plan be considered; no material substitution is claimed here.
 
-## 3. AIProver — certificate-driven auto-formalization
+## 2. AIProver — certificate-driven auto-formalization
 
 **Source/date:** Prithwish Jana et al., “AIProver: Agentic Auto-Formalization of Mathematical Research via Certificate-Driven Evolving Harness,” arXiv:2610.05367, submitted 2026-10-04. [Official arXiv record](https://arxiv.org/abs/2610.05367).  
 **Evidence class:** official preprint.
@@ -51,7 +42,7 @@ A fresh source scan found four method results not yet represented in the current
 
 **Falsifiable follow-up:** on a frozen theorem-family holdout, compare proof-only generation, certificate-guided harness evolution and an established prover baseline under matched wall-clock/compute/token budgets. Separately score kernel acceptance, statement/semantic fidelity, dependency/axiom audit, independent reproduction, failures/timeouts and cost. Do not treat proof search success as a physics result.
 
-## 4. Duffing symbolic rediscovery — useful negative control
+## 3. Duffing symbolic rediscovery — useful negative control
 
 **Source/date:** Itzel Luviano-Soto, Juan Pablo Pérez Aguilar and Alfredo Raya, “Symbolic rediscovery of amplitude-frequency relations in nonlinear Duffing oscillators via machine learning,” *APS Open Science* 1, 000169, published 2026-10-13. [Official APS article; DOI 10.1103/4vc6-mhnh](https://journals.aps.org/apsos/abstract/10.1103/4vc6-mhnh).  
 **Evidence class:** peer-reviewed open-access primary paper.
