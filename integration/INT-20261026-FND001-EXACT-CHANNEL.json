@@ -9,6 +9,7 @@
   "publication_owner_lane": "H_strategy_finance_future_industries",
   "artifacts": {
     "literature_watch": "docs/literature_watch/2026-10-26-experimental-environmental-memory.md",
+    "qft_literature_watch": "docs/literature_watch/2026-10-26-chiral-anomaly-thermodynamic-transport.md",
     "lane_contract": "research_lanes/A_quantum_programming_runtime/FND001_ACTIVE_MEMORY_WORK_CAPACITY_CONTRACT.md",
     "evaluator": "software/uqpu-prototype/uqpu/active_memory.py",
     "tests": "software/uqpu-prototype/tests/test_active_memory.py",
@@ -33,7 +34,7 @@
     "A": "Adds exact binary memoryless active-channel evaluator and analytic reference regression tests.",
     "B": "No provider adapter, credentials, pricing or QPU job.",
     "C": "Logical entropy and source marginals remain distinct from physical memory, transfer and energy.",
-    "D": "No device or fabrication result.",
+    "D": "New QFT/anomaly literature watch only; no device or fabrication result.",
     "E": "New thermodynamic-memory literature relevance only; no material, accepted bio-oil or net-fusion-electricity result.",
     "F": "Records model-only normalized work rates and keeps physical cost/energy null.",
     "G": "No manufacturing-tool or factory result; D/G co-design remains active.",
@@ -44,7 +45,7 @@
     "FND-002": "No new output-information lower bound.",
     "FND-003": "No matched control-vs-quantum-speed-limit measurement.",
     "FND-004": "No alternative physical primitive demonstrated.",
-    "FND-005": "No QFT/elementary-particle mechanism result.",
+    "FND-005": "New theoretical QFT literature watch recorded; no UQPU particle/device mechanism demonstrated.",
     "FND-006": "Adds source equation, explicit assumptions, analytic reference and invalid-input tests.",
     "EQN-001_to_EQN-006": "No physical equation promoted; all evidence gates remain binding."
   },

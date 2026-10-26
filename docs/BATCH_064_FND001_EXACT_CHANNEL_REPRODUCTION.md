@@ -16,13 +16,13 @@ The permanent A–H architecture and Lane D/G co-design remain in force. The aux
 
 ## 2. Fresh literature-surveillance delta
 
-A new primary experimental result is relevant to FND-001: Muruga et al., *Nature Physics*, published 2026-10-16, experimentally extract work from environmental memory in an optically trapped Brownian-particle system using a delayed measurement protocol. This is an empirical result in a specific physical system, not evidence of computing-system energy savings.
+A new primary experimental result is relevant to FND-001: Muruga et al., *Nature Physics*, published 2026-10-16, experimentally extract work from environmental memory in an optically trapped Brownian-particle system using a delayed measurement protocol. This is an empirical result in a specific physical system, not evidence of computing-system energy savings. A second new-to-this-cycle publisher result is Larue, Quevillon and Saviot, *Physical Review D* 114, 085017, published 2026-10-20, on chiral-anomaly contributions with local thermodynamic fields on electromagnetic and curved backgrounds. This is theoretical QFT work, not a new physical law or UQPU device result; see `docs/literature_watch/2026-10-26-chiral-anomaly-thermodynamic-transport.md`.
 
 It complements but does not merge with:
 - Fiderer et al., *Physical Review X* 16, 041004 (2026-10-05), a theoretical work-capacity framework for percept–action loops;
 - Schwarz, Kolomeisky and Godec, *Physical Review Letters* accepted 2026-09-25, on memory-order requirements for reliable entropy-production inference.
 
-Full source-bounded analysis and falsifiable follow-up: `docs/literature_watch/2026-10-26-experimental-environmental-memory.md`.
+Source-bounded watches and falsifiable follow-ups: `docs/literature_watch/2026-10-26-experimental-environmental-memory.md` and `docs/literature_watch/2026-10-26-chiral-anomaly-thermodynamic-transport.md`.
 
 ## 3. Lane A implementation
 
@@ -68,7 +68,7 @@ The new unit tests cover the analytic reference, entropy edge cases, invalid dis
 - **FND-002:** no new output-information lower bound; accepted output, side information and reconstruction accounting remain separate.
 - **FND-003:** no matched control-versus-quantum-speed-limit measurement.
 - **FND-004:** no alternative physical primitive demonstrated.
-- **FND-005:** no QFT/elementary-particle mechanism result.
+- **FND-005:** a newly published QFT/anomaly paper is indexed for follow-up; no UQPU particle mechanism or device consequence is demonstrated.
 - **FND-006:** mathematics-first workflow now includes a source formula, explicit transition matrix, analytic reference, invalid-input tests and non-claims.
 - **EQN-001–EQN-006:** no equation promoted as a physical law; dimensional, symmetry, conservation, causality, limiting-case, held-out, falsification, proof/experiment and independent-validation gates remain binding.
 

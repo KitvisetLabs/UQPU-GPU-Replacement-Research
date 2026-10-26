@@ -14,7 +14,7 @@ The prior daily report began from an older commit, so this cycle used the curren
 
 ## Fresh literature surveillance
 
-Added `docs/literature_watch/2026-10-26-experimental-environmental-memory.md` based on the 2026-10-16 *Nature Physics* experiment extracting work from environmental memory in an optically trapped Brownian particle. The result motivates controlled investigation of memory as a thermodynamic resource but is specific to its physical system and protocol. It does not demonstrate software-memory or UQPU energy savings.
+Added `docs/literature_watch/2026-10-26-experimental-environmental-memory.md` based on the 2026-10-16 *Nature Physics* experiment extracting work from environmental memory in an optically trapped Brownian particle. The result motivates controlled investigation of memory as a thermodynamic resource but is specific to its physical system and protocol. It does not demonstrate software-memory or UQPU energy savings. A second watch records the 2026-10-20 *Physical Review D* calculation of chiral-anomaly contributions with local thermodynamic fields on electromagnetic/curved backgrounds; this is theoretical QFT literature, not a new law or device result.
 
 The literature watch triangulates this experiment with the 2026-10-05 PRX work-capacity theory and the 2026-09-25 PRL-accepted memory-order entropy-production inference result. The existing 2026-10-25 fusion, equation-discovery and QSP/QSVT watches remain unchanged; no fresh evidence justified a new commercial fuel, fusion-cost or finance claim.
 
@@ -29,7 +29,7 @@ The result remains `MODEL_ONLY_ANALYTIC_REFERENCE_REPRODUCTION`. It has no accep
 - **A:** exact channel evaluator and regression tests added; finite-memory policy comparison remains next.
 - **B:** provider-neutral paths unchanged; simulator/dry-run only; no paid jobs.
 - **C:** logical entropy, physical bytes, transfers, resets and joules remain distinct; no physical memory/energy evidence.
-- **D:** no device/chip/process/fabrication result.
+- **D:** QFT/anomaly literature added to the frontier scan; no device/chip/process/fabrication result.
 - **E:** new thermodynamic-memory literature relevance only; Pangola, accepted bio-oil and fusion net-electricity evidence unchanged.
 - **F:** analytic formula and null economics recorded; no cost per accepted useful task.
 - **G:** no manufacturing-tool/factory result; D/G co-design remains active.
@@ -41,7 +41,7 @@ The result remains `MODEL_ONLY_ANALYTIC_REFERENCE_REPRODUCTION`. It has no accep
 - **FND-002:** no new output-information lower bound.
 - **FND-003:** no matched quantum-speed-limit experiment.
 - **FND-004:** no alternative physical primitive demonstrated.
-- **FND-005:** no QFT/particle mechanism result.
+- **FND-005:** a new theoretical QFT watch is recorded; no UQPU particle/device mechanism result.
 - **FND-006:** adds explicit source formula, channel assumptions, analytic reference and invalid-input tests.
 - **EQN-001–006:** no equation promoted as a physical law; dimensional, symmetry, conservation, causality, limiting-case, held-out, falsification and independent-validation gates remain mandatory.
 
