@@ -1,0 +1,85 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261027-NEURAL-MATERIAL-HYPERREDUCTION",
+  "work_item_id": "MAT-HYPERREDUCE-001",
+  "date": "2026-10-27",
+  "canonical_start_sha": "421f213ac9b7dd3754d28567f9efb70f0e175d5c",
+  "primary_owner_lane": "E_materials_energy_cooling_infrastructure",
+  "cross_lane_owners": [
+    "D_device_chip_fabrication_packaging",
+    "G_manufacturing_equipment_factory_software",
+    "F_economics_benchmarks_evidence_integration"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-27-hyperreduction-neural-material-discovery.md",
+    "lane_contract": "research_lanes/E_materials_energy_cooling_infrastructure/NEURAL_MATERIAL_HYPERREDUCTION_REPRO_001.md",
+    "research_gap": "docs/RESEARCH_GAP_RG-NEURAL-MATERIAL-001.md"
+  },
+  "source": {
+    "title": "Hyperreduction accelerates finite element model updating for the discovery of neural materials",
+    "authors": [
+      "Hagen Holthusen",
+      "Matthias Knipper",
+      "Kevin Linka"
+    ],
+    "submitted": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.31322",
+    "version": "v1",
+    "evidence_class": "OFFICIAL_PREPRINT"
+  },
+  "method": {
+    "approach": [
+      "proper orthogonal decomposition",
+      "energy-conserving sampling and weighting",
+      "adjoint sensitivities",
+      "adaptive reduced basis and sampled elements",
+      "polyconvex neural hyperelastic model"
+    ],
+    "claim_scope": "quasi-static hyperelastic constitutive identification from structural force/displacement data",
+    "acceptance": "matched full-order comparison, held-out specimens/load paths, localization stress test, independent full-order verification, physical admissibility and complete cost boundary",
+    "falsifiers": [
+      "held-out full-order error above frozen tolerance",
+      "localized deformation invalidates reduction",
+      "admissibility/equilibrium failure",
+      "non-identifiable constitutive response",
+      "speedup disappears after basis/full-order checks"
+    ]
+  },
+  "cross_lane_edges": {
+    "A_F": "Inverse-model training becomes a compute workload only under matched accepted-output, failed-run and cost accounting.",
+    "D_G": "Mechanical constitutive model may inform package/fixture/process design only after material-specific validation; no chip/factory claim.",
+    "E_F": "Possible method for structural-material iteration cost; no Pangola chemistry, fuel, fusion or lifecycle-cost outcome.",
+    "H": "Preserve strategic materials and future-industry context while keeping preprint claims external."
+  },
+  "fnd_eqn_status": {
+    "FND-001": "No physical work/heat or memory measurement.",
+    "FND-002": "No output-information lower bound.",
+    "FND-003": "No matched quantum-speed-limit experiment.",
+    "FND-004": "No alternative physical primitive.",
+    "FND-005": "No particle/QFT mechanism.",
+    "FND-006": "No new equation candidate; constrained model method only.",
+    "EQN-001_to_006": "No UQPU equation-discovery benchmark or physical-law promotion."
+  },
+  "invariant_disposition": {
+    "INV-029": "No phone-class physical compression result.",
+    "INV-030": "No Pangola carbon functional substitution result; future mechanical-composite use would need its own data.",
+    "INV-031": "No accepted bio-oil/fuel result.",
+    "INV-032": "No net reliable fusion-electricity result.",
+    "INV-033": "No measured financing/interest/WACC effect.",
+    "INV-034": "No new foundational physics result.",
+    "INV-035": "No new physical law; known constraints remain binding.",
+    "INV-025_026_027": "Moonshots and open-frontier requirements remain preserved."
+  },
+  "evidence_class": "LITERATURE_ONLY + PREREGISTERED_DESIGN",
+  "status": "PROPOSED",
+  "non_claims": [
+    "No UQPU reproduction",
+    "No material qualification or substitution",
+    "No device/process/factory result",
+    "No energy/economic/financing benefit",
+    "No new physical law",
+    "No Data-Center-to-One-Phone result"
+  ],
+  "next_gate": "Pin source/data/solver revisions and licenses; reproduce a small full-order reference; then compare hyperreduction with held-out localization and full-order checks."
+}
