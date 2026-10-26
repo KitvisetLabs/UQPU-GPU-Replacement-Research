@@ -31,6 +31,10 @@
     {
       "sha": "151d0288eb08fd1d16f1fe6a4f70b2af026932b6",
       "role": "rg047_gap_status_update"
+    },
+    {
+      "sha": "c1f814a387921263490b0a2143b661afa5ff260f",
+      "role": "avoid_duplicate_pending_ai_newton_watch"
     }
   ],
   "status": "PR_PREPARATION_EXACT_HEAD_CI_PENDING",
@@ -113,9 +117,9 @@
   },
   "next_gate": "Exact-head CI; pinned proof run; independent reproduction; RG-046 raw-source/split reconstruction",
   "literature_delta": [
-    "AI-Newton APS accepted 2026-10-09: concept-driven multi-experiment law rediscovery; method lead, not new physical law.",
     "Symbolic ensemble interatomic potentials, Phys. Rev. Materials 2026-10-09: DFT-referenced aluminum models; no material substitution or experimental qualification.",
     "AIProver arXiv:2610.05367, 2026-10-04: certificate-driven auto-formalization; preprint metrics not independently reproduced.",
-    "Duffing symbolic rediscovery, APS Open Science 2026-10-13: exact recovery from formula-generated labels is not new physics; held-out/noise/generalization gates remain."
+    "Duffing symbolic rediscovery, APS Open Science 2026-10-13: exact recovery from formula-generated labels is not new physics; held-out/noise/generalization gates remain.",
+    "AI-Newton is already proposed in open PR #111; no duplicate article was made, and PR #111 remains unmerged."
   ]
 }
