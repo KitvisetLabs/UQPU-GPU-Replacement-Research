@@ -13,7 +13,11 @@
   ],
   "publication_owner": "Lane H — strategic research/publication",
   "source": {
-    "authors": ["Jordan Cotler", "Daine L. Danielson", "Ishaan Kannan"],
+    "authors": [
+      "Jordan Cotler",
+      "Daine L. Danielson",
+      "Ishaan Kannan"
+    ],
     "title": "Quantum Advantage for Sensing Properties of Classical Fields",
     "venue": "Physical Review X",
     "volume": 16,
@@ -45,9 +49,18 @@
     }
   },
   "baselines": [
-    {"name": "homodyne", "eligibility": "SAME_SIGNAL_ACCESS_AND_OUTPUT_CONTRACT"},
-    {"name": "heterodyne", "eligibility": "SAME_SIGNAL_ACCESS_AND_OUTPUT_CONTRACT"},
-    {"name": "best_eligible_entanglement_free_strategy", "eligibility": "COMPARATOR_CLASS_MUST_MATCH_SOURCE_THEOREM"}
+    {
+      "name": "homodyne",
+      "eligibility": "SAME_SIGNAL_ACCESS_AND_OUTPUT_CONTRACT"
+    },
+    {
+      "name": "heterodyne",
+      "eligibility": "SAME_SIGNAL_ACCESS_AND_OUTPUT_CONTRACT"
+    },
+    {
+      "name": "best_eligible_entanglement_free_strategy",
+      "eligibility": "COMPARATOR_CLASS_MUST_MATCH_SOURCE_THEOREM"
+    }
   ],
   "resource_normalization": {
     "must_separate_result_classes": [
@@ -118,5 +131,14 @@
     "no_physical_law_discovery_claimed": true,
     "no_material_fuel_fusion_or_finance_advantage_claimed": true,
     "no_hilbert_dimension_as_classical_storage_proxy": true
+  },
+  "resource_helper": {
+    "module": "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "functions": [
+      "squeezed_vacuum_mean_photon_number",
+      "squeezed_vacuum_squeezing_for_mean_photon_number"
+    ],
+    "tests": "software/uqpu-prototype/tests/test_squeezing_probe_resources.py",
+    "evidence_class": "MODEL_ONLY_ANALYTIC_RESOURCE_IDENTITY_NOT_PROTOCOL_REPRODUCTION"
   }
 }
