@@ -1,0 +1,90 @@
+{
+  "schema": "uqpu-fnd001-active-memory-contract-smoke-v1",
+  "work_item_id": "FND001-ACTIVE-MEMORY-001",
+  "date": "2026-10-26",
+  "evidence_class": "MODEL_ONLY_SYNTHETIC_SCHEMA_SMOKE",
+  "validation_scope": "contract structure and fail-closed metadata only",
+  "source": {
+    "title": "Information Thermodynamics of Agents: The Work Capacity of Channels with Memory",
+    "authors": [
+      "Lukas J. Fiderer",
+      "Paul C. Barth",
+      "Isaac D. Smith",
+      "Hans J. Briegel"
+    ],
+    "publication": "Physical Review X 16, 041004",
+    "published": "2026-10-05",
+    "doi": "10.1103/7nds-tjr8"
+  },
+  "contract": {
+    "environment_modes": [
+      "PASSIVE_TAPE",
+      "ACTIVE_FEEDBACK",
+      "CONTROL_DETERMINISTIC_FEEDBACK",
+      "CONTROL_NOISY_FEEDBACK"
+    ],
+    "policy_classes": [
+      "MEMORYLESS",
+      "PREDICTIVE",
+      "BOUNDED_MEMORY"
+    ],
+    "matched_fields": [
+      "workload_contract_id",
+      "environment_model_hash",
+      "seed",
+      "horizon",
+      "quality_threshold",
+      "resource_budget"
+    ],
+    "required_resource_fields": [
+      "logical_state_count",
+      "host_device_memory_bytes",
+      "state_io_bytes",
+      "transfer_bytes",
+      "memory_updates",
+      "reset_count",
+      "wall_time_seconds",
+      "host_compute_seconds",
+      "energy_joules_or_null",
+      "cost_usd_or_null",
+      "failed_attempts",
+      "retries"
+    ],
+    "acceptance_rule": "count only outputs passing the frozen quality predicate",
+    "undefined_metrics": [
+      "cost_per_accepted_output when accepted count is zero or billing basis is missing",
+      "energy_per_accepted_output when accepted count is zero or energy is unmeasured"
+    ]
+  },
+  "checks": {
+    "source_provenance_present": true,
+    "environment_modes_are_distinct": true,
+    "policy_classes_are_distinct": true,
+    "matched_contract_fields_present": true,
+    "physical_memory_separated_from_logical_state": true,
+    "energy_and_cost_can_remain_unmeasured": true,
+    "zero_accepted_output_metrics_fail_closed": true,
+    "no_qpu_job_or_physical_experiment": true
+  },
+  "outcome": {
+    "status": "PASS_SCHEMA_ONLY",
+    "quantitative_benchmark_results": [],
+    "measured_energy_joules": null,
+    "measured_cost_usd": null,
+    "provider_jobs": 0,
+    "qpu_shots": 0,
+    "physical_experiments": 0,
+    "independent_replications": 0,
+    "claims_promoted": [],
+    "non_claims": [
+      "new physical law",
+      "real-QPU advantage",
+      "measured energy advantage",
+      "material substitution",
+      "accepted bio-oil",
+      "net fusion electricity",
+      "financing-rate reduction",
+      "Data-Center-to-One-Phone"
+    ]
+  }
+}
