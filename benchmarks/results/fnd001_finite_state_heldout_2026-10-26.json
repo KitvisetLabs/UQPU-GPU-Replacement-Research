@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-26",
+  "evidence_class": "MODEL_ONLY_FINITE_STATE_STATIONARY_ANALYSIS",
+  "source": {
+    "title": "Information Thermodynamics of Agents: The Work Capacity of Channels with Memory",
+    "authors": "Lukas J. Fiderer, Paul C. Barth, Isaac D. Smith, Hans J. Briegel",
+    "journal": "Physical Review X 16, 041004",
+    "published": "2026-10-05",
+    "doi": "10.1103/7nds-tjr8"
+  },
+  "preregistration": "research_lanes/F_economics_benchmarks_evidence_integration/FND001_FINITE_STATE_POLICY_PREREGISTRATION_2026-10-26.md",
+  "training_p": 0.8,
+  "held_out_p": [
+    0.65,
+    0.75,
+    0.85,
+    0.95
+  ],
+  "fixed_q": 0.7,
+  "monte_carlo": {
+    "burn_in": 10000,
+    "samples_per_policy_parameter": 250000,
+    "base_seed": 20261026,
+    "acceptance_tolerance_bits_per_round": 0.02,
+    "all_12_checks_pass": true
+  },
+  "results": [
+    {
+      "p_stay_action0": 0.65,
+      "policy": "MEMORYLESS",
+      "h_action_given_memory_bits": 0.8724293398564682,
+      "h_percept_given_memory_bits": 0.9995767297216676,
+      "exact_work_rate_kbt_ln2_per_round": -0.12714738986519936,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.12585952828952773,
+      "mc_minus_exact_bits_per_round": 0.0012878615756716227,
+      "stationary_residual": 0,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.65,
+      "policy": "PREDICTIVE",
+      "h_action_given_memory_bits": 1,
+      "h_percept_given_memory_bits": 1,
+      "exact_work_rate_kbt_ln2_per_round": 0,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.00001026019730510086,
+      "mc_minus_exact_bits_per_round": -0.00001026019730510086,
+      "stationary_residual": 1.3877787807814457e-16,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.65,
+      "policy": "BOUNDED_MEMORY",
+      "h_action_given_memory_bits": 0.46899559358928133,
+      "h_percept_given_memory_bits": 0.9976080265568833,
+      "exact_work_rate_kbt_ln2_per_round": -0.528612432967602,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.5300619251459228,
+      "mc_minus_exact_bits_per_round": -0.0014494921783207992,
+      "stationary_residual": 5.551115123125783e-17,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.75,
+      "policy": "MEMORYLESS",
+      "h_action_given_memory_bits": 0.8724293398564682,
+      "h_percept_given_memory_bits": 0.9995325296683704,
+      "exact_work_rate_kbt_ln2_per_round": -0.12710318981190216,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.12883788691679143,
+      "mc_minus_exact_bits_per_round": -0.0017346971048892712,
+      "stationary_residual": 0,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.75,
+      "policy": "PREDICTIVE",
+      "h_action_given_memory_bits": 1,
+      "h_percept_given_memory_bits": 1,
+      "exact_work_rate_kbt_ln2_per_round": 0,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -5.009982162462734e-8,
+      "mc_minus_exact_bits_per_round": -5.009982162462734e-8,
+      "stationary_residual": 1.1102230246251565e-16,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.75,
+      "policy": "BOUNDED_MEMORY",
+      "h_action_given_memory_bits": 0.46899559358928133,
+      "h_percept_given_memory_bits": 0.9970964361414244,
+      "exact_work_rate_kbt_ln2_per_round": -0.5281008425521431,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.526861355323135,
+      "mc_minus_exact_bits_per_round": 0.0012394872290080183,
+      "stationary_residual": 5.551115123125783e-17,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.85,
+      "policy": "MEMORYLESS",
+      "h_action_given_memory_bits": 0.8724293398564682,
+      "h_percept_given_memory_bits": 0.995324744793019,
+      "exact_work_rate_kbt_ln2_per_round": -0.12289540493655082,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.12430813291626908,
+      "mc_minus_exact_bits_per_round": -0.0014127279797182535,
+      "stationary_residual": 5.551115123125783e-17,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.85,
+      "policy": "PREDICTIVE",
+      "h_action_given_memory_bits": 1,
+      "h_percept_given_memory_bits": 1,
+      "exact_work_rate_kbt_ln2_per_round": 0,
+      "monte_carlo_work_rate_kbt_ln2_per_round": 0.00001729312327258814,
+      "mc_minus_exact_bits_per_round": 0.00001729312327258814,
+      "stationary_residual": 8.326672684688674e-17,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.85,
+      "policy": "BOUNDED_MEMORY",
+      "h_action_given_memory_bits": 0.4689955935892812,
+      "h_percept_given_memory_bits": 0.9658641680456042,
+      "exact_work_rate_kbt_ln2_per_round": -0.49686857445632293,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.49777458612165393,
+      "mc_minus_exact_bits_per_round": -0.0009060116653309969,
+      "stationary_residual": 1.1102230246251565e-16,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.95,
+      "policy": "MEMORYLESS",
+      "h_action_given_memory_bits": 0.8724293398564682,
+      "h_percept_given_memory_bits": 0.985466002901299,
+      "exact_work_rate_kbt_ln2_per_round": -0.11303666304483084,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.11347390851203287,
+      "mc_minus_exact_bits_per_round": -0.00043724546720202984,
+      "stationary_residual": 5.551115123125783e-17,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.95,
+      "policy": "PREDICTIVE",
+      "h_action_given_memory_bits": 1,
+      "h_percept_given_memory_bits": 1,
+      "exact_work_rate_kbt_ln2_per_round": 0,
+      "monte_carlo_work_rate_kbt_ln2_per_round": 0.00001037718063767734,
+      "mc_minus_exact_bits_per_round": 0.00001037718063767734,
+      "stationary_residual": 0,
+      "mc_check_pass": true
+    },
+    {
+      "p_stay_action0": 0.95,
+      "policy": "BOUNDED_MEMORY",
+      "h_action_given_memory_bits": 0.46899559358928117,
+      "h_percept_given_memory_bits": 0.8616635861203548,
+      "exact_work_rate_kbt_ln2_per_round": -0.3926679925310736,
+      "monte_carlo_work_rate_kbt_ln2_per_round": -0.39142738002137667,
+      "mc_minus_exact_bits_per_round": 0.0012406125096969256,
+      "stationary_residual": 1.1102230246251565e-16,
+      "mc_check_pass": true
+    }
+  ],
+  "conclusion": {
+    "objective_ranking": "PREDICTIVE (0) > MEMORYLESS (negative) > BOUNDED_MEMORY (more negative) at all four frozen held-out points",
+    "falsification_note": "No ranking reversal appeared in this selected toy family; that is not evidence of a universal ordering.",
+    "limitations": [
+      "Toy controlled Markov channel only",
+      "No matched useful-task semantics or quality gate",
+      "No physical memory bytes or implementation energy",
+      "No device, real-QPU, accepted-task cost, or commercial claim"
+    ],
+    "physical_memory_bytes": null,
+    "measured_energy_joules": null,
+    "accepted_useful_task_quality": null,
+    "measured_cost_usd": null,
+    "paid_qpu_jobs": 0
+  }
+}
