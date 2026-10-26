@@ -66,7 +66,7 @@ Regression tests were added for random-point rejection, metadata mismatches, pos
 
 At the starting main SHA, the prototype workflow run `40329247542` completed successfully across Python 3.10, 3.11 and 3.12 plus the listed QSP/QSVT/reference/target-snapshot jobs; the cold-start handoff audit `40329247325` also passed. The optional synthetic finite-shot sensitivity and equal-budget QAOA objective-selection steps were skipped by their workflow conditions. These runs validate the starting commit, not this cycle's new v3 changes. Exact-head Actions must validate the resulting commit before v3 is described as CI-passing.
 
-The previous FND-003 cycle's cold-start failure on commit `e3d57957e83114c9efdf1862cf331bef33425c3c` is no longer the current-head result; the latest starting-head cold-start run passed. No paid QPU jobs, funding actions or physical experiments were authorized or executed.
+The starting-head cold-start run passed on `6bc5b29b846c29c2c3fabd729c1bc62362b24e3e`. The first commit from this cycle (`ad848e75313cd60145edff462ba85de41c0b2f57`) then failed the handoff audit solely because its commit message omitted the required `Research-Sync: main` trailer; the prototype workflow was still running when that failure was inspected. This follow-up records the governance repair with the required trailer; it does not alter the research claims or code. The new head's own Actions must be checked before reporting final CI status. No paid QPU jobs, funding actions or physical experiments were authorized or executed.
 
 ## 8. Next highest-value gate
 
