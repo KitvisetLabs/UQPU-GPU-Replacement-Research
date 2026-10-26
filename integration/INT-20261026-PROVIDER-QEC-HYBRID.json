@@ -1,0 +1,65 @@
+{
+  "integration_id": "INT-20261026-PROVIDER-QEC-HYBRID",
+  "date": "2026-10-26",
+  "primary_owner_lane": "B_cloud_qpu_provider_integration",
+  "implementation_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "integration_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "status": "LITERATURE_ONLY_UQPU_REPRODUCTION_PENDING",
+  "sources": [
+    {
+      "title": "Decoding quantum errors with NVIDIA Ising Decoding on AWS",
+      "publisher": "AWS Quantum Technologies Blog",
+      "date": "2026-10-21",
+      "url": "https://aws.amazon.com/blogs/quantum-computing/decoding-quantum-errors-with-nvidia-ising-decoding-on-aws/",
+      "evidence_class": "OFFICIAL_PROVIDER_TECHNICAL_REPORT",
+      "boundary": "Stim-generated syndrome training and simulated surface-code inference; not UQPU reproduction or real-QPU end-to-end evidence."
+    },
+    {
+      "title": "Quandela demonstrates its GPU–QPU integration architecture using NVIDIA NVQLink",
+      "publisher": "Quandela",
+      "date": "2026-10-13",
+      "url": "https://www.quandela.com/about-us/newsroom/gpu-qpu-integration-nvidia-nvqlink/",
+      "evidence_class": "OFFICIAL_PROVIDER_ANNOUNCEMENT",
+      "boundary": "The GTC Berlin demonstrator's QPU is simulated; the post separately refers to earlier physical-QPU integration validation without a complete independently audited cost/latency ledger."
+    },
+    {
+      "title": "Quandela and Quanova partner to deploy Vietnam’s first quantum computer",
+      "publisher": "Quandela",
+      "date": "2026-10-22",
+      "url": "https://www.quandela.com/about-us/newsroom/",
+      "evidence_class": "OFFICIAL_PROVIDER_DEPLOYMENT_ANNOUNCEMENT",
+      "boundary": "Planned deployment and education/research program; no verified operational endpoint, UQPU access, or price."
+    }
+  ],
+  "lanes": {
+    "A": "QEC decoder latency and accepted logical operation become explicit workload-level metrics; no quantum advantage claimed.",
+    "B": "Provider surveillance updated; no new adapter or access claim.",
+    "C": "Syndrome payload, host/controller/GPU transfers, buffering and reconstruction must be counted.",
+    "D": "Photonic QPU/controller interface co-design remains downstream of measured latency and control requirements.",
+    "E": "No direct biomass, bio-oil, fusion or energy result.",
+    "F": "Total cost must include classical decoder, accelerator, host, network, retries and provider charges.",
+    "G": "Manufacturing/packaging questions identified, no yield or equipment result.",
+    "H": "Regional provider development recorded as market context, not scientific or commercial proof."
+  },
+  "next_gate": "Pin and independently reproduce the simulated AWS Ising Decoding workload, then measure full per-round latency and cost at a frozen logical-error target; separately verify any photonic provider endpoint, modality, API, pricing and authorization.",
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "evidence_promoted": "none",
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "physical_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "evidence_boundary": "No UQPU advantage, new physical law, material substitution, accepted fuel, net fusion electricity, financing benefit or Data-Center-to-One-Phone result is established."
+}
