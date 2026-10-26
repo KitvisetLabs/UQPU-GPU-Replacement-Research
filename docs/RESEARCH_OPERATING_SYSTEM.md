@@ -67,7 +67,7 @@ no implicit promotion path.
                             |
                     PRIORITY / SCOREBOARD
                             |
-       +---------+----------+----------+----------+----------+
+       +--------+---------+----------+---------+----------+-------------+-------------+
        |        |         |          |         |          |             |             |
        A        B         C          D         E          F             G             H
    Software  Quantum   Memory     Devices  Materials  Economics/   Manufacturing  Strategy/
