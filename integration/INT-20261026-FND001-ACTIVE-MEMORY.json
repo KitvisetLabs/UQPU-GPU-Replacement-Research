@@ -1,0 +1,105 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-FND001-ACTIVE-MEMORY",
+  "work_item_id": "FND001-ACTIVE-MEMORY-001",
+  "date": "2026-10-26",
+  "canonical_start_sha": "412403efebabd7186dcbfca286d8481308dab176",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "cross_lane_owners": [
+    "C_state_memory_storage_data_movement",
+    "F_economics_benchmarks_evidence"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-26-information-thermodynamics-active-memory-work-capacity.md",
+    "lane_contract": "research_lanes/A_quantum_programming_runtime/FND001_ACTIVE_MEMORY_WORK_CAPACITY_CONTRACT.md",
+    "research_gap": "docs/RESEARCH_GAP_FND001_ACTIVE_MEMORY_WORK_CAPACITY.md",
+    "smoke_fixture": "benchmarks/results/fnd001-active-memory-work-capacity-smoke-2026-10-26.json"
+  },
+  "source": {
+    "doi": "10.1103/7nds-tjr8",
+    "publisher_url": "https://journals.aps.org/prx/abstract/10.1103/7nds-tjr8",
+    "published": "2026-10-05",
+    "evidence_class": "PEER_REVIEWED_THEORETICAL_FRAMEWORK"
+  },
+  "evidence_state": "LITERATURE_ONLY_CONTRACT_ONLY_MODEL_ONLY_SCHEMA_SMOKE",
+  "validation": {
+    "json_smoke": "PASS_SCHEMA_ONLY",
+    "repository_unit_tests": "NOT_RUN_FOR_THIS_ARTIFACT_SET",
+    "github_actions_at_start": {
+      "commit_sha": "412403efebabd7186dcbfca286d8481308dab176",
+      "combined_status_entries": 0,
+      "workflow_run_lookup": "NO_RUNS_RETURNED_BY_PR_ONLY_CONNECTOR_QUERY",
+      "interpretation": "CI UNKNOWN; absence of returned status entries is not a pass"
+    }
+  },
+  "lanes": {
+    "A": "Adds a frozen accepted-output contract for memory-policy comparisons; no executable runtime comparison yet.",
+    "B": "No provider adapter, credentials, target selection or QPU job.",
+    "C": "Requires separate logical-state, physical-memory, state-I/O, transfer, update and reset accounting.",
+    "D": "No device result; metrology enters only if a later physical implementation is justified.",
+    "E": "No biomass-carbon, accepted bio-oil, net-electric fusion or infrastructure result.",
+    "F": "Separates measured energy/cost from theoretical work capacity; no financing or WACC effect.",
+    "G": "No chip-fabrication or factory-system result; future involvement is blocker-driven.",
+    "H": "Publishes the source-bounded literature watch and cross-lane record."
+  },
+  "foundational": {
+    "FND-001": "Adds an active-feedback versus passive-tape research question; no independent source reproduction yet.",
+    "FND-002": "Keeps accepted output and side-information/reconstruction accounting explicit; no new lower bound.",
+    "FND-003": "No matched quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No QFT or elementary-particle mechanism result.",
+    "FND-006": "Adds a falsifiable model-first test sequence and counterexample plan.",
+    "EQN-001_to_EQN-006": "No new equation promoted; source equations remain literature/theory until independently checked and physically tested."
+  },
+  "mission": {
+    "INV-029": "Indirect benchmark design only; no phone-class physical compression evidence.",
+    "INV-030": "No elemental transmutation or critical-material substitution claim.",
+    "INV-031": "No saleable-liquid yield or cost evidence.",
+    "INV-032": "No net-electricity or commercial fusion claim.",
+    "INV-033": "No measured principal, interest, WACC or finance result.",
+    "INV-034": "Advances a bounded foundational research question with explicit assumptions and falsifiers.",
+    "INV-035": "AI/mathematical hypothesis generation remains separate from physical-law promotion."
+  },
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "root_directives_preserved": [
+    "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md",
+    "00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md",
+    "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md",
+    "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+    "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+    "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+    "05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md",
+    "06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md"
+  ],
+  "strategic_context": {
+    "model_document": "docs/KANUSANAN_PONGPANNA_MODEL.md",
+    "references": "STRATEGIC_PLAN_REFERENCES.md",
+    "languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ],
+    "ai_agent_and_funding_context": "preserved; not treated as scientific evidence"
+  },
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "next_gate": "Implement an independent exact-channel evaluator and held-out policy comparison; run focused tests and exact-head hosted CI before promoting any benchmark result."
+}
