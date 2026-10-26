@@ -108,5 +108,6 @@
   "schema": "uqpu-eight-lane-integration-v1",
   "work_item_id": "QUASARQ-REPRO-001",
   "publication_owner_lane": "H_strategy_finance_future_industries",
-  "integration_owner_lane": "F_economics_benchmarks_evidence"
+  "integration_owner_lane": "F_economics_benchmarks_evidence",
+  "integration_id": "INT-20261027-QUASARQ-SIMULATOR"
 }
