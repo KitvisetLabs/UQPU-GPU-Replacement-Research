@@ -30,6 +30,10 @@
 - Physical energy, physical memory, accepted useful-task quality, cost per accepted task, real-QPU execution and commercial fusion economics: **not measured**.
 - New physical law: **none**.
 
-## Remaining sync work
+## Sync debt and safe-history handling
 
-The large canonical invariant and strategy files were not rewritten. This integration record and Batch 065 are the dated append-only-safe record for the cycle. Reconcile any dashboard or aggregate gap index only after confirming its full current contents; do not replace a large file with a partial excerpt.
+`RESEARCH_GAPS.md` is an append-heavy canonical file (57,215 characters / 769 lines at inspection). To avoid overwriting its history from a partial excerpt, RG040 is preserved in the dated standalone gap artifact and linked from this integration record, but it has **not yet been merged into the aggregate index**. This is explicit sync debt for a later safe append-only reconciliation. No permanent invariant, root directive, multilingual master-plan link or strategic reference was deleted or overwritten.
+
+## Remaining gate
+
+The next highest-value Lane A gate is a matched useful-task acceptance contract on a provider-neutral runtime workload, followed by independent reference/bound certificates and CPU/GPU/NPU baselines. Record quality, latency, throughput, shots, billable usage, memory/I/O/transfer, retries, reconstruction, host compute, measurable energy and total cost per accepted task. In parallel, obtain matched EAST discharge data and a Li/B/tritium/maintenance material balance before changing any FUS-001 net-electricity scenario.
