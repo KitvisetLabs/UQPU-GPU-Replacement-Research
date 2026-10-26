@@ -23,9 +23,9 @@ A second material delta is Li et al., Optimal T Counts under Sparsity: from QROM
 
 ## Lane A implementation and validation
 
-Added software/uqpu-prototype/uqpu/qaoa_comparison_contract.py and focused tests. The contract binds workload/test/acceptance/reference/target hashes, provider and target identity, evidence class, equal total shots, optimizer-evaluation budget and repetitions. It rejects test-optimum leakage, cross-provider/target mismatches, mismatched saved-calibration snapshots and mismatched REAL_QPU pricing/calibration epochs. It only computes cost per accepted task when every cost component is priced and the shared quality gate passes; model/simulation records cannot become economic evidence.
+Added software/uqpu-prototype/uqpu/qaoa_comparison_contract.py and focused tests. The contract binds workload/test/acceptance/reference/target hashes, provider and target identity, evidence class, equal total shots, optimizer-evaluation budget and repetitions. It records latency, accepted-task throughput, provider billable units, input/output/transfer bytes, state-representation metadata, memory, reconstruction, retries and energy where measured. It rejects test-optimum leakage, cross-provider/target mismatches, mismatched saved-calibration snapshots and mismatched REAL_QPU pricing/calibration epochs. It only computes cost per accepted task when every cost component is priced and the shared quality gate passes; model/simulation records cannot become economic evidence.
 
-Local isolated validation: **15 focused tests passed**. The contract is measurement governance only: no parity circuit, provider job, physical experiment, commercial result or new law was produced. Exact-head GitHub Actions on the publication branch remain the merge gate.
+Local isolated validation: **16 focused tests passed**. The contract is measurement governance only: no parity circuit, provider job, physical experiment, commercial result or new law was produced. Exact-head GitHub Actions on the publication branch remain the merge gate.
 
 ## A–H status
 

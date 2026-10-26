@@ -59,15 +59,21 @@ class QAOARunRecord:
     two_qubit_gates: int
     circuit_depth: int
     host_compute_seconds: float
+    latency_seconds: float
     input_bytes: int
     output_bytes: int
+    transfer_bytes: int
     peak_memory_bytes: int
+    state_representation_kind: str
+    state_representation_bytes: int | None
     reconstruction_seconds: float
     retries: int = 0
     selection_used_test_optimum: bool = False
     calibration_snapshot_sha256: str | None = None
     calibration_epoch_id: str | None = None
     pricing_snapshot_sha256: str | None = None
+    provider_billable_units: float | None = None
+    provider_billable_unit_kind: str | None = None
     job_id: str | None = None
     run_log_sha256: str | None = None
     energy_joules: float | None = None
@@ -87,10 +93,12 @@ class QAOARunRecord:
             value = getattr(self, name)
             if not isinstance(value, str) or not value.strip():
                 raise ValueError(f"{name} must be a non-empty string")
-        for name in ("calibration_epoch_id", "job_id"):
+        for name in ("calibration_epoch_id", "job_id", "provider_billable_unit_kind"):
             value = getattr(self, name)
             if value is not None and (not isinstance(value, str) or not value.strip()):
                 raise ValueError(f"{name} must be a non-empty string when supplied")
+        if not isinstance(self.state_representation_kind, str) or not self.state_representation_kind.strip():
+            raise ValueError("state_representation_kind must be a non-empty string")
         for name in (
             "workload_contract_sha256", "test_manifest_sha256",
             "acceptance_contract_sha256", "reference_certificate_sha256",
@@ -109,16 +117,18 @@ class QAOARunRecord:
             value = getattr(self, name)
             if type(value) is not int or value <= 0:
                 raise ValueError(f"{name} must be a positive integer")
-        for name in ("accepted_tasks", "two_qubit_gates", "circuit_depth", "input_bytes", "output_bytes", "peak_memory_bytes", "retries"):
+        for name in ("accepted_tasks", "two_qubit_gates", "circuit_depth", "input_bytes", "output_bytes", "transfer_bytes", "peak_memory_bytes", "retries"):
             value = getattr(self, name)
             if type(value) is not int or value < 0:
                 raise ValueError(f"{name} must be a non-negative integer")
+        if self.state_representation_bytes is not None and (type(self.state_representation_bytes) is not int or self.state_representation_bytes < 0):
+            raise ValueError("state_representation_bytes must be a non-negative integer when supplied")
         if self.accepted_tasks > self.total_shots:
             raise ValueError("accepted_tasks cannot exceed total_shots")
         for name in ("quality_pass", "selection_used_test_optimum"):
             if type(getattr(self, name)) is not bool:
                 raise ValueError(f"{name} must be boolean")
-        for name in ("host_compute_seconds", "reconstruction_seconds"):
+        for name in ("host_compute_seconds", "latency_seconds", "reconstruction_seconds"):
             value = float(getattr(self, name))
             if not math.isfinite(value) or value < 0:
                 raise ValueError(f"{name} must be finite and non-negative")
@@ -131,12 +141,22 @@ class QAOARunRecord:
             value = getattr(self, name)
             if value is not None and (not math.isfinite(float(value)) or value < 0):
                 raise ValueError(f"{name} must be finite and non-negative when supplied")
+        if self.provider_billable_units is not None:
+            if not math.isfinite(float(self.provider_billable_units)) or self.provider_billable_units < 0:
+                raise ValueError("provider_billable_units must be finite and non-negative")
+            if not self.provider_billable_unit_kind:
+                raise ValueError("provider_billable_unit_kind is required with billable units")
+        elif self.provider_billable_unit_kind is not None:
+            raise ValueError("provider_billable_units is required with a billable unit kind")
         if any(not isinstance(x, str) or not x.strip() for x in self.unpriced_cost_components):
             raise ValueError("unpriced_cost_components must contain non-empty strings")
         if self.evidence_class == QAOAEvidenceClass.SAVED_CALIBRATION_SIMULATION and not self.calibration_snapshot_sha256:
             raise ValueError("saved-calibration simulation requires calibration_snapshot_sha256")
         if self.evidence_class == QAOAEvidenceClass.REAL_QPU:
-            required = ("pricing_snapshot_sha256", "calibration_epoch_id", "job_id", "run_log_sha256")
+            required = (
+                "pricing_snapshot_sha256", "calibration_epoch_id", "job_id",
+                "run_log_sha256", "provider_billable_units", "provider_billable_unit_kind",
+            )
             missing = [name for name in required if not getattr(self, name)]
             if missing:
                 raise ValueError("REAL_QPU records require: " + ", ".join(missing))
@@ -145,6 +165,13 @@ class QAOARunRecord:
     def accepted_task_probability(self) -> float:
         self.validate()
         return self.accepted_tasks / self.total_shots
+
+    @property
+    def throughput_accepted_tasks_per_second(self) -> float | None:
+        self.validate()
+        if not self.quality_pass or self.accepted_tasks == 0 or self.latency_seconds <= 0:
+            return None
+        return self.accepted_tasks / self.latency_seconds
 
     @property
     def all_in_cost_usd(self) -> float | None:
@@ -176,6 +203,12 @@ class QAOAComparisonAudit:
     baseline_cost_per_accepted_task_usd: float | None
     candidate_cost_per_accepted_task_usd: float | None
     baseline_to_candidate_cost_ratio: float | None
+    baseline_latency_seconds: float
+    candidate_latency_seconds: float
+    baseline_throughput_accepted_tasks_per_second: float | None
+    candidate_throughput_accepted_tasks_per_second: float | None
+    baseline_provider_billable_units: float | None
+    candidate_provider_billable_units: float | None
 
 
 def compare_matched_qaoa_runs(
@@ -229,4 +262,10 @@ def compare_matched_qaoa_runs(
         baseline_cost_per_accepted_task_usd=baseline_cost,
         candidate_cost_per_accepted_task_usd=candidate_cost,
         baseline_to_candidate_cost_ratio=ratio,
+        baseline_latency_seconds=baseline.latency_seconds,
+        candidate_latency_seconds=candidate.latency_seconds,
+        baseline_throughput_accepted_tasks_per_second=baseline.throughput_accepted_tasks_per_second,
+        candidate_throughput_accepted_tasks_per_second=candidate.throughput_accepted_tasks_per_second,
+        baseline_provider_billable_units=baseline.provider_billable_units,
+        candidate_provider_billable_units=candidate.provider_billable_units,
     )

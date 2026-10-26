@@ -32,9 +32,13 @@ def record(method="direct", *, evidence=QAOAEvidenceClass.SIMULATION_ONLY, **ove
         two_qubit_gates=800,
         circuit_depth=120,
         host_compute_seconds=18.5,
+        latency_seconds=22.0,
         input_bytes=1024,
         output_bytes=512,
+        transfer_bytes=1536,
         peak_memory_bytes=1024 * 1024,
+        state_representation_kind="classical_statevector_fixture",
+        state_representation_bytes=1024 * 1024,
         reconstruction_seconds=0.4,
     )
     if evidence == QAOAEvidenceClass.SAVED_CALIBRATION_SIMULATION:
@@ -43,6 +47,8 @@ def record(method="direct", *, evidence=QAOAEvidenceClass.SIMULATION_ONLY, **ove
         values.update(
             calibration_epoch_id="ibm-heron-cal-2026-10-27T01",
             pricing_snapshot_sha256=digest("9"),
+            provider_billable_units=1.0,
+            provider_billable_unit_kind="job",
             job_id="job-123",
             run_log_sha256=digest("8"),
             provider_cost_usd=2.0,
@@ -65,6 +71,8 @@ class QAOAComparisonContractTests(unittest.TestCase):
         self.assertFalse(result.economic_claim_eligible)
         self.assertIsNone(result.baseline_to_candidate_cost_ratio)
         self.assertEqual(result.baseline_acceptance_probability, 1200 / 8192)
+        self.assertAlmostEqual(result.baseline_throughput_accepted_tasks_per_second, 1200 / 22.0)
+        self.assertIsNone(result.baseline_provider_billable_units)
 
     def test_provider_mismatch_is_rejected(self):
         with self.assertRaisesRegex(ValueError, "provider_id"):
@@ -118,6 +126,10 @@ class QAOAComparisonContractTests(unittest.TestCase):
     def test_real_qpu_requires_job_and_run_provenance(self):
         with self.assertRaisesRegex(ValueError, "run_log_sha256"):
             record(evidence=QAOAEvidenceClass.REAL_QPU, run_log_sha256=None).validate()
+
+    def test_real_qpu_requires_billable_usage_metadata(self):
+        with self.assertRaisesRegex(ValueError, "provider_billable_units"):
+            record(evidence=QAOAEvidenceClass.REAL_QPU, provider_billable_units=None).validate()
 
     def test_accepted_tasks_cannot_exceed_shots(self):
         with self.assertRaisesRegex(ValueError, "cannot exceed"):
