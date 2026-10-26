@@ -68,3 +68,10 @@ The current main status endpoint returned no combined-status rows, and the avail
 ## Next highest-value gate
 
 Run exact-head CI, fix any reproducible failures, then use one frozen theorem artifact with pinned checker/toolchain/source revision and exact statement/proof/environment/log hashes; independently reproduce it. In parallel, acquire and hash the raw SRSD-Feynman source and independently reconstruct its split before closing RG-046. No paid QPU job or external physical experiment was authorized.
+
+
+## 2026-10-27 re-review — canonical charter alignment and CI boundary
+
+A subsequent canonical-main audit found that `VERSION_INVARIANTS.md` already defined INV-034/035 but `PROJECT_CHARTER.md` omitted both and `GOALS.md` omitted an explicit INV-035 goal. Main now records that alignment in commits [cea99e1](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/cea99e19d4e163e334ced6f85abb3364f4e84416) and [48146bf](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/48146bf2ad560db3a034763d40da338193856f40). This source branch still has base `c60594ad8a02f20e2908c53640b66f9062479002`; it must not be described as containing those main changes until synchronized.
+
+At the last observed poll, PR #132 head `d7e04470f3267fbb6bc5de323d915ddb30958b96` had the main unit/invariant workflow queued and its cold-start audit failed solely because the branch-head commit lacked the required `Research-Sync: pending-main` trailer. The code-bearing run's extended QSP/QSVT, Qiskit and reference jobs were not confirmed complete. This report update uses the required trailer; the resulting new exact-head Actions runs must be checked before claiming closure. No real proof checker was run and no theorem or physical-law claim is promoted.
