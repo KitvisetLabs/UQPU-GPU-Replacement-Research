@@ -1,0 +1,75 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-FND003-PLANCKIAN-BOUND",
+  "date": "2026-10-26",
+  "canonical_start_sha": "916314015ae27761b4a276e5235b213bdcb3f397",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "integration_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "shared_ids": ["FND-001", "FND-003", "FND-006", "EQN-001", "EQN-002", "EQN-003", "EQN-004", "EQN-005", "EQN-006", "INV-034", "INV-035"],
+  "artifacts": {
+    "fundamental_limits": "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "tests": "software/uqpu-prototype/tests/test_fundamental_limits_and_frontier.py",
+    "literature_watch": "docs/literature_watch/2026-10-26-planckian-thermalization-bound-fnd003.md",
+    "research_gap": "docs/RESEARCH_GAP_FND003_PLANCKIAN_THERMALIZATION_BOUND_MAPPING.md",
+    "integration_record": "integration/INT-20261026-FND003-PLANCKIAN-BOUND.json",
+    "daily_cycle": "integration/DAILY_CYCLE_2026-10-26_FND003_PLANCKIAN_BOUND.md"
+  },
+  "source": {
+    "title": "An information-theoretic proof of the Planckian bound for thermalization",
+    "authors": ["Paolo Abiuso", "Alberto Rolandi", "John Calsamiglia", "Pavel Sekatski", "Marti Perarnau-Llobet"],
+    "published": "2026-09-24",
+    "journal": "Nature Physics",
+    "doi": "10.1038/s41567-026-03397-y",
+    "url": "https://www.nature.com/articles/s41567-026-03397-y",
+    "evidence_class": "PEER_REVIEWED_THEORETICAL_LOWER_BOUND"
+  },
+  "implementation": {
+    "mixed_regime_helper": "planckian_thermalization_min_seconds(T) = hbar/(2*k_B*T), only for the sufficiently mixed universal-thermalizer regime and stated error conditions",
+    "low_temperature_helper": "low_temperature_gap_thermalization_min_seconds(Delta) = hbar/Delta, only for the low-temperature gap-dominated universal-thermalizer regime",
+    "unit_tests_added": true,
+    "repository_tests_run_locally": false,
+    "exact_head_ci": "UNKNOWN: current commit-status endpoint returned no entries and available workflow-run query is PR-triggered only"
+  },
+  "lanes": {
+    "A": "Added scoped theoretical thermalization lower-bound helpers and tests; no accepted-useful-task benchmark.",
+    "B": "Provider-neutral adapters preserved; no provider credentials, target execution or paid QPU job.",
+    "C": "No readable-memory or storage capacity inferred from quantum state-space size; no memory/transfer measurement.",
+    "D": "No new device, chip, process, packaging or fabrication result.",
+    "E": "No Pangola-carbon substitution, accepted bio-oil or net reliable fusion-electricity result.",
+    "F": "Opened an applicability gap; theory, timing, energy and economics remain separate evidence classes.",
+    "G": "Continuous D/G co-design retained; no manufacturing-equipment or factory-yield result.",
+    "H": "Published source-bounded literature watch; multilingual strategic plan and AI-agent/funding references preserved."
+  },
+  "foundational": {
+    "FND-001": "No work/heat or physical energy inferred from entropy or the time bound.",
+    "FND-002": "Output-information lower-bound work unchanged.",
+    "FND-003": "Adds a scoped theoretical reference bound; matched control-vs-bound experiment remains OPEN.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No new particle/QFT mechanism or physical law.",
+    "FND-006": "Formal/source-to-code traceability improved; no independent proof reconstruction.",
+    "EQN-001_to_006": "No generated equation promoted; assumptions, regime, falsifier and independent-validation requirements retained."
+  },
+  "invariants": {
+    "INV-025_026_027": "100-million-unit and open-frontier targets remain falsifiable, evidence-gated goals.",
+    "INV-029": "No phone-class physical compression evidence.",
+    "INV-030": "No elemental transmutation or measured critical-material substitution.",
+    "INV-031": "No accepted liquid-energy/fuel or commercial low-cost bio-oil evidence.",
+    "INV-032": "No net-electricity or commercial low-cost fusion evidence.",
+    "INV-033": "No project principal, interest, WACC or financing-rate measurement.",
+    "INV-034": "Foundational physics/mathematics agenda remains active and constraint-bound.",
+    "INV-035": "AI/mathematical hypotheses remain separate from established physical law and engineering claims."
+  },
+  "sync_debt": {
+    "aggregate_gap_index": "RESEARCH_GAPS.md was not rewritten from a partial read; this gap remains standalone until a safe append-only reconciliation.",
+    "worklog": "WORKLOG.md was not rewritten from a partial read.",
+    "batch_numbering": "No numbered Batch was created because an unmerged PR already proposes Batch 067; dated artifacts avoid collision."
+  },
+  "non_claims": [
+    "No UQPU speedup or gate-time improvement",
+    "No real-QPU result or provider bill",
+    "No measured physical energy saving",
+    "No new physical law",
+    "No material, fuel, fusion, financing or Data-Center-to-Phone advantage"
+  ]
+}
