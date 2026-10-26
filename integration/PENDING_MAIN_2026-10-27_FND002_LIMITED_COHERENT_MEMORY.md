@@ -4,7 +4,7 @@
 **Canonical main SHA observed:** fbb5ab05dcddbe476095b14ce75758dd35da7ac3  
 **Source PR:** [#134 — FND-002: record coherent-memory-limited stabilizer resource bounds](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/134)  
 **Source branch:** research/2026-10-27-fnd002-limited-coherent-memory  
-**Source head:** c864d9c410f08532bb8d0de0a0ff4db80e03df68  
+**Source head:** 71819b2969172493ed4f11779a5ce9dcf068a6ad  
 **Work item:** FND002-COHERENT-MEMORY-001  
 **Integration ID:** INT-20261027-FND002-LIMITED-COHERENT-MEMORY  
 **Primary owner:** Lane C — state/memory/storage/data movement
