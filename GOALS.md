@@ -36,6 +36,12 @@ This agenda explicitly includes fundamental-particle and QFT research but does *
 
 Canonical detail: `05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md`, INV-034 and the broader INV-027 open-frontier mandate.
 
+## Permanent AI-Assisted Physics Equation Discovery Goal
+
+AI and mathematics must continuously search for alternative equations, effective constitutive laws, mathematical instruments and theoretical structures under INV-035. Present validated physics remains binding for current engineering claims. Each candidate must specify its incumbent assumption, units and domain, symmetry/conservation/causality checks, limiting cases, falsifier, discriminating observable, held-out prediction, counterexample search, proof or simulation plan, discriminating experiment, independent validation and downstream system/economic test. Preserve failed hypotheses and false discoveries. Proof-checking or a better fit does not by itself establish physical truth or technology advantage.
+
+Canonical detail: `06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md`, with INV-034 as the upstream foundational agenda and EQN-001–006 as the evidence-gated discovery program.
+
 ## Permanent Unified Mathematical Language Goal
 
 Every canonical project goal must have a versioned mathematical specification:
