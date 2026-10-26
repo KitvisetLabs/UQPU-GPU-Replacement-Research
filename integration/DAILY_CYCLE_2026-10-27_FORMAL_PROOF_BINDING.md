@@ -5,7 +5,9 @@
 **Source commits:**  
 - `ff00d14da856437eccc0c249de1c2180e9b1dbcb` — Batch 071 research/change record  
 - `4aa9f5e92a95834d4daa8dfb3253f6e1009034e8` — bind `EquationHypothesis` to `FormalProofEvidence`  
-- `5f4109ed1491ebceb565a4cd7d35049bb3ba0a7c` — regression tests for proof identity/status binding  
+- `5f4109ed1491ebceb565a4cd7d35049bb3ba0a7c` — initial regression tests for proof identity/status binding
+- `75246a00e221a7c5b481e4a27aab8a9ec21b7705` — bind exact theorem statement to hypothesis metadata
+- `8c87e33346df45659d7747d0a440494d432e62a7` — test statement/status-only fail-closed paths  
 
 **Primary owner:** Lane A  
 **Evidence/integration owner:** Lane F  
@@ -15,7 +17,7 @@
 
 ## What changed
 
-The equation-discovery record now carries a typed `FormalProofEvidence` object. Any nontrivial proof status requires a bound record, validates its metadata, requires the proof claim ID to equal the equation ID, restricts the claim kind to `PHYSICAL_EQUATION_HYPOTHESIS`, and checks status agreement. The legacy `CHECKED` value is only an alias for a bound kernel-checked or independently reproduced record.
+The equation-discovery record now carries a typed `FormalProofEvidence` object. Any nontrivial proof status requires a bound record, validates its metadata, requires exact statement equality against `formal_proof_statement`, requires the proof claim ID to equal the equation ID, restricts the claim kind to `PHYSICAL_EQUATION_HYPOTHESIS`, and checks status agreement. The legacy `CHECKED` value is only an alias for a bound kernel-checked or independently reproduced record.
 
 Regression tests cover missing evidence, mismatched equation identity, mismatched status, the legacy alias, and the non-promotion boundary. Tests have been added to the branch but have not been executed in this connector-only environment; no local or hosted pass is claimed.
 
