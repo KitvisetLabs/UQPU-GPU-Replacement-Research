@@ -4,7 +4,7 @@
 **Integration owners:** Lane C — state/memory/data movement; Lane F — evidence/economics  
 **Publication owner:** Lane H  
 **Date:** 2026-10-26  
-**Status:** DESIGN_CONTRACT_ONLY; no implementation or physical result promoted  
+**Status:** MODEL_ONLY_EXACT_CHANNEL_REPRODUCTION; no finite-memory policy comparison or physical result promoted  
 **Source:** Fiderer et al., *Physical Review X* 16, 041004 (2026-10-05), DOI 10.1103/7nds-tjr8.
 
 ## Question
@@ -64,6 +64,12 @@ Logical state count, entropy and reset count are not substitutes for measured by
 5. Treat the paper's work-capacity objective as a theoretical model quantity. Report it separately from software wall time, measured hardware energy and economic cost.
 6. Use independent scoring and an independent evaluator for the small exact-channel fixture.
 7. Keep all negative and null results. No model fit or policy ranking is a physical law.
+
+## Implementation note — 2026-10-26
+
+The pure-Python evaluator in `software/uqpu-prototype/uqpu/active_memory.py` computes Shannon entropy and the memoryless-agent special case `W = H(A) - H(S)` for finite action-to-percept channels. It reproduces the published binary invariant channel and its analytic reference, then evaluates a separate passive IID-tape control with the same output marginal at one selected operating point. The regression tests are in `software/uqpu-prototype/tests/test_active_memory.py`; the machine-readable result is `benchmarks/results/fnd001-active-memory-exact-channel-2026-10-26.json`.
+
+This is a model-level analytic reproduction only. It does not compare predictive and bounded-memory agents, implement the paper's general finite-memory theorem, measure accepted task quality, map logical entropy to physical memory bytes, or measure physical/software energy or cost.
 
 ## Test sequence
 

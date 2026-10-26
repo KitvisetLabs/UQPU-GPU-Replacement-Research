@@ -1,0 +1,60 @@
+{
+  "schema": "uqpu-fnd001-exact-channel-reference-v1",
+  "work_item_id": "FND001-ACTIVE-MEMORY-001",
+  "date": "2026-10-26",
+  "evidence_class": "MODEL_ONLY_ANALYTIC_REFERENCE_REPRODUCTION",
+  "source": {
+    "title": "Information Thermodynamics of Agents: The Work Capacity of Channels with Memory",
+    "publication": "Physical Review X 16, 041004",
+    "published": "2026-10-05",
+    "doi": "10.1103/7nds-tjr8",
+    "equation": "Eq. (17), memoryless-agent special case; binary channel in Eq. (22) and capacity in Eq. (23)"
+  },
+  "units": "normalized work capacity in k_B T ln(2) per round; not joules",
+  "active_feedback": {
+    "action_probabilities": [0.7071067811865475, 0.29289321881345254],
+    "percept_probabilities": [0.8535533905932737, 0.14644660940672627],
+    "action_entropy_bits": 0.8724293398564682,
+    "percept_entropy_bits": 0.6008760366928562,
+    "work_rate_kbt_ln2_per_round": 0.27155330316361204,
+    "published_analytic_capacity_kbt_ln2_per_round": 0.2715533031636119,
+    "absolute_reference_error": 1.1102230246251565e-16,
+    "tolerance": 1e-12
+  },
+  "passive_iid_tape_control": {
+    "action_probabilities": [0.5, 0.5],
+    "percept_probabilities": [0.8535533905932737, 0.14644660940672627],
+    "action_entropy_bits": 1.0,
+    "percept_entropy_bits": 0.6008760366928562,
+    "work_rate_kbt_ln2_per_round": 0.39912396330714384,
+    "capacity_for_this_iid_source_kbt_ln2_per_round": 0.39912396330714384,
+    "same_output_marginal_as_active_operating_point": true
+  },
+  "comparison": {
+    "passive_minus_active_normalized_work_rate": 0.1275706601435318,
+    "interpretation": "A mathematical contrast between different environment assumptions; not a matched physical implementation, accepted-task benefit, or energy saving."
+  },
+  "validation": {
+    "active_channel_matches_published_analytic_reference": true,
+    "passive_control_uses_fixed_action_independent_source": true,
+    "output_marginals_match_at_the_selected_operating_point": true,
+    "physical_memory_bytes": null,
+    "measured_energy_joules": null,
+    "measured_cost_usd": null,
+    "provider_jobs": 0,
+    "qpu_shots": 0,
+    "physical_experiments": 0,
+    "accepted_useful_task_comparison": false
+  },
+  "claims_promoted": [],
+  "non_claims": [
+    "physical work extraction measured by UQPU",
+    "software or hardware energy advantage",
+    "predictive-versus-bounded-memory policy ranking",
+    "real-QPU advantage",
+    "new physical law",
+    "material substitution, saleable bio-oil, fusion net electricity, financing-rate change",
+    "Data-Center-to-One-Phone or 100,000,000x achievement"
+  ],
+  "next_gate": "Extend to a finite-state memoryful agent/environment with frozen transition matrices; independently check the stationary/asymptotic objective; then run held-out policy comparisons and preserve null/counterexample cases."
+}

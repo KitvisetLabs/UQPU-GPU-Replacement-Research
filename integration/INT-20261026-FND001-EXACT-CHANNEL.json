@@ -1,0 +1,83 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-FND001-EXACT-CHANNEL",
+  "work_item_id": "FND001-ACTIVE-MEMORY-001",
+  "date": "2026-10-26",
+  "canonical_start_sha": "c9880f2bcca274ed36fe19f83b91e7c91e41b400",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "cross_lane_owners": ["C_state_memory_storage_data_movement", "F_economics_benchmarks_evidence"],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-26-experimental-environmental-memory.md",
+    "lane_contract": "research_lanes/A_quantum_programming_runtime/FND001_ACTIVE_MEMORY_WORK_CAPACITY_CONTRACT.md",
+    "evaluator": "software/uqpu-prototype/uqpu/active_memory.py",
+    "tests": "software/uqpu-prototype/tests/test_active_memory.py",
+    "result": "benchmarks/results/fnd001-active-memory-exact-channel-2026-10-26.json",
+    "batch": "docs/BATCH_064_FND001_EXACT_CHANNEL_REPRODUCTION.md",
+    "gap": "docs/RESEARCH_GAP_FND001_ACTIVE_MEMORY_WORK_CAPACITY.md"
+  },
+  "evidence_state": "MODEL_ONLY_ANALYTIC_REFERENCE_REPRODUCTION",
+  "validation": {
+    "analytic_reference_error": 1.1102230246251565e-16,
+    "tolerance": 1e-12,
+    "repository_unit_tests": "PENDING_HOSTED_CI",
+    "physical_memory_bytes": null,
+    "measured_energy_joules": null,
+    "measured_cost_usd": null,
+    "provider_jobs": 0,
+    "qpu_shots": 0,
+    "physical_experiments": 0,
+    "claims_promoted": []
+  },
+  "lanes": {
+    "A": "Adds exact binary memoryless active-channel evaluator and analytic reference regression tests.",
+    "B": "No provider adapter, credentials, pricing or QPU job.",
+    "C": "Logical entropy and source marginals remain distinct from physical memory, transfer and energy.",
+    "D": "No device or fabrication result.",
+    "E": "New thermodynamic-memory literature relevance only; no material, accepted bio-oil or net-fusion-electricity result.",
+    "F": "Records model-only normalized work rates and keeps physical cost/energy null.",
+    "G": "No manufacturing-tool or factory result; D/G co-design remains active.",
+    "H": "Publishes the source-bounded watch, batch and integration record."
+  },
+  "foundational": {
+    "FND-001": "One published memoryless invariant channel is analytically reproduced; general finite-memory and physical measurement remain open.",
+    "FND-002": "No new output-information lower bound.",
+    "FND-003": "No matched control-vs-quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "No QFT/elementary-particle mechanism result.",
+    "FND-006": "Adds source equation, explicit assumptions, analytic reference and invalid-input tests.",
+    "EQN-001_to_EQN-006": "No physical equation promoted; all evidence gates remain binding."
+  },
+  "mission": {
+    "INV-029": "Indirect state/resource-accounting method only; no physical compression evidence.",
+    "INV-030": "No material substitution or elemental transmutation.",
+    "INV-031": "No accepted liquid fuel or cost evidence.",
+    "INV-032": "No net-electric fusion evidence.",
+    "INV-033": "No principal, interest or WACC result.",
+    "INV-034": "Falsifiable mathematics-first reproduction only.",
+    "INV-035": "Mathematical reproduction is not physical-law promotion."
+  },
+  "invariants_preserved": ["INV-025", "INV-026", "INV-027", "INV-029", "INV-030", "INV-031", "INV-032", "INV-033", "INV-034", "INV-035"],
+  "root_directives_preserved": [
+    "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md",
+    "00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md",
+    "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md",
+    "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+    "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+    "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+    "05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md",
+    "06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md"
+  ],
+  "strategic_context": {
+    "model_document": "docs/KANUSANAN_PONGPANNA_MODEL.md",
+    "references": "STRATEGIC_PLAN_REFERENCES.md",
+    "languages": ["Thai", "English", "Chinese", "Japanese", "Korean", "German"],
+    "ai_agent_and_funding_references": "preserved; strategic context only"
+  },
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "next_gate": "Extend to a finite-state memoryful agent/environment and independently verify the stationary/asymptotic work-rate objective before held-out policy comparison."
+}

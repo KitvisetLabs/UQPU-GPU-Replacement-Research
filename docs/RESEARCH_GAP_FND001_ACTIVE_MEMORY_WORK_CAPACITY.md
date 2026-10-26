@@ -5,7 +5,7 @@
 **Primary owner:** Lane A — workload/runtime benchmark contract  
 **Integration owners:** Lane C and Lane F  
 **Publication owner:** Lane H  
-**Evidence state:** LITERATURE_ONLY + CONTRACT_ONLY  
+**Evidence state:** MODEL_ONLY_ANALYTIC_REFERENCE_REPRODUCTION + LITERATURE_ONLY  
 **UQPU project evidence promoted:** none
 
 ## Objective
@@ -16,14 +16,15 @@ Test whether the distinction between passive input tapes and action-coupled perc
 
 The source is a peer-reviewed theoretical framework using hidden Markov channels and a model-defined work-capacity objective. It identifies regimes where maximally predictive policies need not maximize that objective when the agent's actions affect future observations. This is not a measured energy result for software or hardware.
 
-The repository's FND-001 adjacent-lag conditional-mutual-information diagnostics and synthetic calibrations remain MODEL_ONLY. They do not independently reproduce the source paper, establish a general memory/thermodynamic law, or show that a runtime policy lowers joules.
+The repository now independently evaluates the paper's tractable binary memoryless invariant channel. With `P(A=0)=1/sqrt(2)`, the computed normalized work rate is `0.27155330316361204 k_B T ln(2)` per round, agreeing with the published analytic expression `0.2715533031636119` within `1.11e-16`. A passive IID-tape control with the same output marginal at this operating point gives `0.39912396330714384 k_B T ln(2)` per round. This is a contrast between different environment assumptions, not a matched physical experiment or an energy-saving claim.
 
-A lane-A benchmark contract and a dated literature watch now specify the test boundary. No executable runtime comparison or independent mathematical reproduction has yet been completed.
+A new *Nature Physics* experiment published 2026-10-16 reports work extraction from environmental memory in an optically trapped Brownian-particle system. It is an empirical thermodynamic result for that system/protocol, not validation of UQPU's software model or energy savings.
+
+The repository's adjacent-lag conditional-mutual-information diagnostics and synthetic calibrations remain MODEL_ONLY. No general finite-memory policy comparison, physical memory measurement, calibrated energy measurement or independent replication has been completed.
 
 ## Missing evidence
 
-- An exact small-channel fixture with source-faithful transition and thermodynamic assumptions.
-- An independent implementation of the source objective and a reference value for at least one tractable channel.
+- A finite-state memoryful agent/environment evaluator with a separately calculated stationary/asymptotic reference.
 - Held-out comparisons across passive and active environments, matched on useful-output semantics, quality, horizon and total budget.
 - Calibration for finite-horizon estimates and policy-selection uncertainty.
 - Actual physical memory and energy measurements, if a model-level effect survives.
@@ -31,7 +32,7 @@ A lane-A benchmark contract and a dated literature watch now specify the test bo
 
 ## Next gate
 
-Freeze one finite-state active-feedback channel and its passive-tape control. Preregister `MEMORYLESS`, `PREDICTIVE` and `BOUNDED_MEMORY` policies, exact task quality, seeds, horizon, metrics and counterexamples before generating results. Verify the analytic/model objective independently before any hardware run. Preserve cases where the effect disappears or predictive policy wins.
+Extend the evaluator to a finite-state memoryful channel and verify its stationary/asymptotic work rate with an independent calculation. Then preregister `MEMORYLESS`, `PREDICTIVE` and `BOUNDED_MEMORY` policies, exact task quality, seeds, horizon, metrics and counterexamples before generating held-out results. Preserve cases where the effect disappears or predictive policy wins.
 
 ## Stop rules
 
