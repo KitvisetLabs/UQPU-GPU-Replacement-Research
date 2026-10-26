@@ -68,3 +68,10 @@ The 100×/100,000,000× targets, INV-025/026 moonshots, universal subsystem subs
 ## Next highest-value gate
 
 Implement and independently validate a finite-state memoryful agent/environment reference without inventing a thermodynamic objective: freeze the paper-derived equations and transition matrices first; verify stationary/asymptotic calculations independently; test memoryless, predictive and bounded-memory policies on held-out parameters and counterexamples; record accepted-output quality and all state/I/O/reset/host costs; then decide whether any physical measurement is justified. In parallel, Lane B stays simulator/dry-run only, Lane C defines physical-resource observables, D/G continue device/manufacturing co-design, E retains the full BIO-001/FUS-001 boundaries, and F keeps FIN-001 and cost-per-accepted-task evidence separate from theory.
+
+
+## Post-publication CI recovery
+
+The first literature-watch commit `b175878162c238c884ed775ddcafc573c57dc872` failed the cold-start audit because its commit message omitted the required `Research-Sync: main` trailer. The subsequent report commit was also created before that requirement was caught. The failure log identifies only `missing_commit_trailer:Research-Sync: main`; the audit still checked the A–H/I integration pairs and did not report a scientific validation failure. This is a repository handoff/commit-metadata failure, not evidence against the literature or Lane A evaluator.
+
+This corrective report update is committed with the required trailer. Recheck the newest main SHA's cold-start audit and prototype/invariant workflow; report their final conclusions separately rather than assuming a queued run has passed.
