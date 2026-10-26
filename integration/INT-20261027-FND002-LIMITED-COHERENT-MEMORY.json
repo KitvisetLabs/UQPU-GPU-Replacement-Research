@@ -74,7 +74,12 @@
     "FND-004": "No alternative physical primitive demonstrated.",
     "FND-005": "No QFT/particle mechanism validated.",
     "FND-006": "No new equation generated or proved.",
-    "EQN-001_to_006": "No equation-discovery benchmark executed; source theorem and assumptions require independent audit."
+    "EQN-001": "Literature watch adds a source lead; no new physical law.",
+    "EQN-002": "No symbolic-regression benchmark run.",
+    "EQN-003": "No equation candidate generated/evaluated.",
+    "EQN-004": "No held-out/generalization test run.",
+    "EQN-005": "No source theorem proof reconstruction or proof-assistant run.",
+    "EQN-006": "No device/system/economics translation or measured consequence."
   },
   "invariant_disposition": {
     "INV-029": "No physical phone-compression result; identifies resource fields that must remain inside the eventual boundary.",
