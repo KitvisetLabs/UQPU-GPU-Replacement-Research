@@ -1,0 +1,65 @@
+{
+  "schema": "uqpu-source-candidate-record-v1",
+  "candidate_id": "SRC-EQN-SRSD-FEYNMAN-EASY-001",
+  "recorded_date": "2026-10-27",
+  "status": "CANDIDATE_METADATA_PINNED_RAW_HASHES_PENDING",
+  "source": {
+    "platform": "Hugging Face Datasets",
+    "dataset_id": "yoshitomo-matsubara/srsd-feynman_easy",
+    "revision": "78a2026e61eaa000fb7ed5e30f0639329e912f9d",
+    "revision_url": "https://huggingface.co/datasets/yoshitomo-matsubara/srsd-feynman_easy/tree/78a2026e61eaa000fb7ed5e30f0639329e912f9d",
+    "dataset_card_url": "https://huggingface.co/datasets/yoshitomo-matsubara/srsd-feynman_easy",
+    "declared_data_license": "CC-BY-4.0",
+    "dataset_doi": "10.57967/hf/0763",
+    "associated_paper": "Rethinking Symbolic Regression Datasets and Benchmarks for Scientific Discovery",
+    "code_repository": "https://github.com/omron-sinicx/srsd-benchmark",
+    "code_repository_revision": "7d00b45d56250717ac08a256dc9f79b836d61027",
+    "code_repository_license": "MIT",
+    "license_note": "Data license and code license are separate declarations; retain dataset attribution."
+  },
+  "dataset_scope": {
+    "formula_count": 30,
+    "reported_total_rows": 300000,
+    "train_rows_per_formula": 8000,
+    "validation_rows_per_formula": 1000,
+    "test_rows_per_formula": 1000,
+    "split_semantics": "Row splits within each formula; not a held-out-law-family evaluation."
+  },
+  "selected_case": "feynman-i.12.1",
+  "required_files": [
+    {
+      "path": "train/feynman-i.12.1.txt",
+      "sha256": null,
+      "acquisition_status": "NOT_ACQUIRED"
+    },
+    {
+      "path": "val/feynman-i.12.1.txt",
+      "sha256": null,
+      "acquisition_status": "NOT_ACQUIRED"
+    },
+    {
+      "path": "test/feynman-i.12.1.txt",
+      "sha256": null,
+      "acquisition_status": "NOT_ACQUIRED"
+    },
+    {
+      "path": "true_eq/feynman-i.12.1.pkl",
+      "sha256": null,
+      "acquisition_status": "NOT_ACQUIRED; NEVER UNPICKLE AS ROUTINE PREFLIGHT"
+    }
+  ],
+  "acceptance_gates": [
+    "Acquire exact bytes from the pinned revision and compute SHA-256 for every required raw file.",
+    "Verify CC-BY-4.0 attribution, schema, row counts and deterministic preprocessing.",
+    "Inspect the truth equation through a reviewed safe representation; do not execute untrusted pickle content.",
+    "Define inclusion, exclusion and group-holdout policies and hash each policy.",
+    "Independently rebuild source-provenance and raw-record split manifests.",
+    "Preregister at least 30 matched seeds and identical resource budgets before comparison."
+  ],
+  "nonclaims": [
+    "Not an accepted provenance manifest.",
+    "No raw file hashes have been measured.",
+    "No equation-discovery comparison has been run.",
+    "No cross-law generalization, new physical law, QPU advantage or economic advantage is established."
+  ]
+}
