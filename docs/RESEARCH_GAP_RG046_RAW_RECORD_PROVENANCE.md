@@ -40,3 +40,10 @@ Reject the benchmark run if any raw record or group assignment cannot be reconst
 ## Sync debt
 
 This standalone gap remains canonical until an append-only reconciliation can safely update RESEARCH_GAPS.md and WORKLOG.md without truncation. Keep the root directives, VERSION_INVARIANTS.md, multilingual strategic references and existing gap history intact.
+
+
+## Provenance preflight implementation — 2026-10-26
+
+A companion contract now exists at software/uqpu-prototype/uqpu/dataset_provenance.py with regression coverage in software/uqpu-prototype/tests/test_dataset_provenance.py. It binds source URL, source revision, license identifier, acquisition date, raw-file path/digests, dataset row count and dataset digest to the existing split manifest, and hashes the schema, preprocessing, inclusion/exclusion and group-holdout policies. Its benchmark-bundle preflight composes this with raw-record binding and split-disjointness verification.
+
+This reduces provenance-schema drift but does not close RG-046. The verifier does not fetch or authenticate external bytes, decide legal license compliance, establish dataset representativeness, or validate scientific conclusions. No public benchmark source is pinned yet, and no independent audit or matched >=30-seed comparison has run. Keep RG-046 OPEN until all source, license, raw-file, split, held-out and resource-parity criteria above pass.
