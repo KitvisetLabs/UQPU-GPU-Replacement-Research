@@ -1,0 +1,72 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-EQN-SPLIT-DISJOINTNESS",
+  "date": "2026-10-26",
+  "canonical_start_sha": "a0b800d172fb2c150c124e1b2046aa72df489fa5",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "evidence_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "cross_lane_consumers": [
+    "B_cloud_qpu_provider_integration",
+    "C_state_memory_storage_data_movement",
+    "D_device_chip_fabrication_packaging",
+    "E_materials_energy_cooling_infrastructure",
+    "G_manufacturing_equipment_factory_software"
+  ],
+  "evidence_class": [
+    "SOFTWARE_CONTRACT",
+    "REGRESSION_TESTS",
+    "LITERATURE_ONLY"
+  ],
+  "artifacts": {
+    "validator": "software/uqpu-prototype/uqpu/split_disjointness.py",
+    "tests": "software/uqpu-prototype/tests/test_split_disjointness.py",
+    "gap": "docs/RESEARCH_GAP_RG045_SPLIT_DISJOINTNESS_CERTIFICATE.md",
+    "literature_watch": "docs/literature_watch/2026-10-26-optimization-law-discovery.md",
+    "daily_cycle": "integration/DAILY_CYCLE_2026-10-26_SPLIT_DISJOINTNESS.md"
+  },
+  "validation": {
+    "local_smoke": "PASS before publication: valid manifest, record-overlap rejection, group-leakage rejection",
+    "repository_ci": "PENDING exact-head GitHub Actions after commit; pre-change Prototype/Invariant and Cold-Start Handoff workflows passed",
+    "real_dataset": "NOT_RUN",
+    "cross_method_benchmark": "NOT_RUN",
+    "real_qpu": "NOT_AUTHORIZED_OR_SUBMITTED"
+  },
+  "manifest_contract": {
+    "schema": "uqpu-split-manifest-v1",
+    "required_splits": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "record_fields": [
+      "record_id",
+      "group_id",
+      "record_sha256"
+    ],
+    "checks": [
+      "nonempty partitions",
+      "unique record IDs",
+      "unique record-content hashes",
+      "group disjointness across partitions",
+      "canonical per-split hashes",
+      "held-out group hash",
+      "binding to matched-comparison fields"
+    ],
+    "limitation": "The certificate checks supplied manifest declarations and hashes; it does not authenticate raw data or prove physical truth."
+  },
+  "invariant_disposition": {
+    "INV-029": "No physical data-center-to-phone compression evidence.",
+    "INV-030": "No Pangola-carbon functional substitution or elemental transmutation.",
+    "INV-031": "No accepted liquid-fuel yield/full-cost evidence.",
+    "INV-032": "No reliable net delivered fusion-electricity evidence.",
+    "INV-033": "No measured principal/interest/WACC change.",
+    "INV-034": "Executable falsifiability and mathematics-first search improved.",
+    "INV-035": "No equation promoted to physical law.",
+    "INV-025_026_027": "100,000,000-unit and universal subsystem goals remain evidence-gated."
+  },
+  "sync_debt": [
+    "RESEARCH_GAPS.md and WORKLOG.md remain append-heavy and unchanged; standalone RG-045 record is canonical until safe index synchronization."
+  ],
+  "next_highest_value_gate": "Generate a manifest from a pinned real dataset and independently audit its records/groups before a matched >=30-seed, equal-resource cross-method benchmark."
+}
