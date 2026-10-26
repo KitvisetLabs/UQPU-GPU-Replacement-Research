@@ -5,9 +5,29 @@ from uqpu.equation_discovery import (
     required_discovery_fields,
     select_bic_candidate_count,
 )
+from uqpu.formal_proof_evidence import build_formal_proof_evidence
 
 
 class EquationDiscoveryTests(unittest.TestCase):
+    def _typed_proof(self, **overrides):
+        data = dict(
+            claim_id="EQN-test-001",
+            claim_kind="MATHEMATICAL_THEOREM",
+            statement="theorem demo : True",
+            assumptions=("Lean kernel with declared imports",),
+            status="KERNEL_CHECKED",
+            source_revision="a" * 40,
+            proof_artifact=b"theorem demo : True := by trivial\\n",
+            checker_name="Lean",
+            checker_version="4.19.0",
+            checker_command="lake env lean Demo.lean",
+            environment_bytes=b"lean-toolchain pinned\\n",
+            run_log=b"exit_code=0\\n",
+            checker_exit_code=0,
+        )
+        data.update(overrides)
+        return build_formal_proof_evidence(**data)
+
     def _candidate(self, **overrides):
         data = dict(
             equation_id="EQN-test-001",
@@ -96,16 +116,47 @@ class EquationDiscoveryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self._candidate(proof_or_discriminating_experiment_plan=()).validate()
 
-    def test_formal_proof_status_is_explicit_and_auditable(self):
+    def test_formal_proof_status_is_explicit_and_typed(self):
         with self.assertRaises(ValueError):
             self._candidate(formal_proof_status="KERNEL_CHECKED").validate()
         with self.assertRaises(ValueError):
             self._candidate(formal_proof_status="CHECKED", formal_proof_notes=()).validate()
+        with self.assertRaisesRegex(ValueError, "requires typed formal_proof_evidence"):
+            self._candidate(
+                formal_proof_status="CHECKED",
+                formal_proof_notes=("unbound legacy status",),
+            ).validate()
         checked = self._candidate(
             formal_proof_status="CHECKED",
-            formal_proof_notes=("synthetic unit-test theorem; pinned checker and statement hash recorded",),
+            formal_proof_notes=("synthetic unit-test theorem; exact proof metadata bound",),
+            formal_proof_evidence=self._typed_proof(),
         )
         checked.validate()
+
+    def test_typed_proof_must_bind_same_equation_id_and_status(self):
+        with self.assertRaisesRegex(ValueError, "claim_id must match equation_id"):
+            self._candidate(formal_proof_evidence=self._typed_proof(claim_id="OTHER-ID")).validate()
+        with self.assertRaisesRegex(ValueError, "must agree with the typed"):
+            self._candidate(formal_proof_evidence=self._typed_proof()).validate()
+
+    def test_failed_proof_requires_typed_failure_record(self):
+        failed = self._typed_proof(
+            status="FAILED",
+            run_log=b"exit_code=1\\n",
+            checker_exit_code=1,
+            notes=("negative fixture: kernel rejected proof term",),
+        )
+        candidate = self._candidate(
+            formal_proof_status="FAILED",
+            formal_proof_notes=("failed proof retained as negative evidence",),
+            formal_proof_evidence=failed,
+        )
+        candidate.validate()
+        with self.assertRaisesRegex(ValueError, "requires typed formal_proof_evidence"):
+            self._candidate(
+                formal_proof_status="FAILED",
+                formal_proof_notes=("legacy unbound failure",),
+            ).validate()
 
     def test_counterexamples_and_false_discoveries_block_candidate_promotion(self):
         unsearched = self._candidate(
@@ -143,6 +194,7 @@ class EquationDiscoveryTests(unittest.TestCase):
             "proof_or_discriminating_experiment_plan",
             "formal_proof_status",
             "formal_proof_notes",
+            "formal_proof_evidence",
             "false_discovery_status",
             "false_discovery_notes",
         ):
