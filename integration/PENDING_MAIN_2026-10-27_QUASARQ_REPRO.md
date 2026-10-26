@@ -16,15 +16,19 @@ PR #130 proposes:
 - docs/RESEARCH_GAP_RG-QUASARQ-001.md
 - integration/INT-20261027-QUASARQ-SIMULATOR.json
 - integration/DAILY_CYCLE_2026-10-27_QUASARQ.md
+- docs/literature_watch/2026-10-27-hyperreduction-neural-material-discovery.md
+- research_lanes/E_materials_energy_cooling_infrastructure/NEURAL_MATERIAL_HYPERREDUCTION_REPRO_001.md
+- docs/RESEARCH_GAP_RG-NEURAL-MATERIAL-001.md
+- integration/INT-20261027-NEURAL-MATERIAL-HYPERREDUCTION.json
 
-The proposed literature watch covers Osama, Thanos and Laarman, “GPU-Accelerated Quantum Simulation of Stabilizer Circuits,” Quantum 10, 2225 (published 2026-10-01; DOI 10.22331/q-2026-10-01-2225; arXiv:2603.14641v2). The proposed benchmark contract requires pinned source/dependency/license hashes, identical Clifford circuit semantics, correctness/distributional acceptance before timing, a competitive Stim baseline, repeated trials, full failure/timeout retention, RAM/VRAM/transfer accounting, and separate device versus whole-system energy boundaries.
+The proposed simulator work covers Osama, Thanos and Laarman, “GPU-Accelerated Quantum Simulation of Stabilizer Circuits,” Quantum 10, 2225 (published 2026-10-01; DOI 10.22331/q-2026-10-01-2225; arXiv:2603.14641v2), with a matched accepted-output benchmark contract. A second source watch covers Holthusen, Knipper and Linka, arXiv:2610.31322v1 (submitted 2026-10-22), on POD/ECSW/adjoint hyperreduction for polyconvex neural hyperelastic material discovery. Its application boundary is mechanical constitutive modelling, not direct electronic, thermal, electrochemical or diamond-defect properties.
 
 ## Validation and limitations
 
 - The integration JSON was parsed successfully after publication.
 - No QuaSARQ build, simulator run, repository test, source-license audit, independent benchmark or energy measurement was performed.
 - The paper’s author-reported runtime and energy improvements remain external literature, not UQPU results. The domain is classical Clifford/stabilizer simulation, not general quantum hardware advantage.
-- At the last inspected workflow snapshot, run 40376218665 for the prior source head 74454dcf3b144183005e501412b3e8033abf4f42 had Python 3.10/3.11/3.12 matrix jobs passing while extended QSVT/QSP/reference/SDK jobs remained queued or in progress. The source branch was then updated to c9f7fec3ae79124ed11cec556c3eaea5836f37f7 to record the CI snapshot; exact-head CI for this updated source head is not yet confirmed and must be checked before merge.
+- Prior source-head run 40376218665 passed the Python 3.10/3.11/3.12 matrix, while extended QSVT/QSP/reference/SDK jobs remained queued or in progress. The source branch now points to fc209706748d29ad5283b0fca3ccee9ef225aa7c and its exact-head workflow run 40377055814 is queued; no exact-head pass is claimed. This PR’s previous summary-head run 40376509430 was also queued before this update; its new exact-head CI must complete.
 - No QPU job, provider credential, purchase, physical experiment or external expenditure was used or authorized.
 
 ## Invariants and mission boundary
