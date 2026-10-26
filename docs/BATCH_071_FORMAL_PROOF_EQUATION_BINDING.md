@@ -14,7 +14,7 @@ Close the integration portion of RG-047 by making the formal-proof record an act
 ## Change made on this research branch
 
 - `EquationHypothesis.formal_proof_evidence` accepts a `FormalProofEvidence` record from the canonical evidence module.
-- A recorded proof attempt requires the record; it is validated for statement hash and proof metadata, claim identity, claim kind and matching status.
+- A recorded proof attempt requires the record; the exact theorem statement must match a dedicated `formal_proof_statement` field, and the record is validated for statement hash and proof metadata, claim identity, claim kind and matching status.
 - The legacy `CHECKED` spelling is retained only as an alias for a bound `KERNEL_CHECKED` or `INDEPENDENTLY_REPRODUCED` record. It cannot stand alone.
 - `KERNEL_CHECKED`, `INDEPENDENTLY_REPRODUCED`, `FAILED`, `INCONCLUSIVE`, `FORMAL_STATEMENT` and `PROOF_TEXT_ONLY` remain distinct. A proof status cannot promote an equation to a physical law.
 - Regression tests cover missing records, identity/status mismatches, the legacy alias and the separation between proof status and physical-candidate readiness.
