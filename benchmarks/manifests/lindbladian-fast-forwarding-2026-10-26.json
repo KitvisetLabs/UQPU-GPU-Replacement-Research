@@ -1,0 +1,75 @@
+{
+  "schema": "uqpu-lindbladian-fast-forwarding-benchmark-v1",
+  "manifest_id": "LIND-FF-001",
+  "date": "2026-10-26",
+  "canonical_starting_main_sha": "412403efebabd7186dcbfca286d8481308dab176",
+  "status": "PROPOSED_NOT_EXECUTED",
+  "evidence_class": "LITERATURE_ONLY_PROTOCOL",
+  "source": {
+    "authors": "Minbo Gao; Zhengfeng Ji; Chenghua Liu",
+    "title": "Lévy-Khintchine Structure Enables Fast-Forwardable Lindbladian Simulation",
+    "venue": "Physical Review Letters 137, 160405 (2026)",
+    "publication_date": "2026-10-16",
+    "doi": "10.1103/qy4b-gzlq",
+    "arxiv": "2511.10253",
+    "journal_url": "https://journals.aps.org/prl/abstract/10.1103/qy4b-gzlq",
+    "preprint_url": "https://arxiv.org/abs/2511.10253"
+  },
+  "families": [
+    {
+      "family_id": "gaussian_dephasing",
+      "reported_expected_hamiltonian_simulation_time": "Theta(sqrt(t))",
+      "exponent": 0.5,
+      "scope": "paper-defined Gaussian dephasing family; constants and error dependence must be sourced from full theorem"
+    },
+    {
+      "family_id": "compound_poisson_jumps",
+      "reported_expected_hamiltonian_simulation_time": "Theta(t)",
+      "exponent": 1,
+      "scope": "paper-defined compound-Poisson family; constants and error dependence must be sourced from full theorem"
+    },
+    {
+      "family_id": "symmetric_alpha_stable",
+      "reported_expected_hamiltonian_simulation_time": "Theta(t^(1/alpha))",
+      "alpha_domain": "1 < alpha <= 2",
+      "scope": "paper-defined symmetric stable family; constants and error dependence must be sourced from full theorem"
+    }
+  ],
+  "required_frozen_fields": [
+    "exact_lindblad_generator_and_units",
+    "initial_state_and_state_preparation_cost",
+    "dimensionless_or_physical_time_normalization",
+    "twirling_distribution_and_sampling_rule",
+    "target_channel_error_metric_and_tolerance",
+    "accepted_output_observable_and_reconstruction",
+    "held_out_parameter_grid",
+    "competitive_classical_master_equation_baseline",
+    "host_compute_and_memory_io",
+    "controls_oracle_access_measurements_retries",
+    "energy_where_measurable",
+    "total_cost_per_accepted_useful_output"
+  ],
+  "acceptance_gates": [
+    "source-exact theorem assumptions are written down before implementation",
+    "independent channel and twirling implementations agree within the frozen tolerance on bounded fixtures",
+    "held-out time/parameter points are reported with raw data and uncertainty",
+    "negative controls and numerical-tolerance sensitivity are retained",
+    "the same output, accuracy, and resource-accounting contract is used for classical and quantum routes",
+    "any scaling fit is labelled MODEL_ONLY and is not treated as proof of the theorem",
+    "independent reproduction is required before algorithmic promotion"
+  ],
+  "non_claims": {
+    "universal_lindbladian_fast_forwarding": false,
+    "quantum_advantage_demonstrated": false,
+    "new_physical_law": false,
+    "real_qpu_execution": false,
+    "measured_energy_or_cost_advantage": false,
+    "memory_storage_replacement": false,
+    "fusion_or_biofuel_result": false
+  },
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "physical_experiments_authorized": false,
+    "funding_authorized": false
+  }
+}
