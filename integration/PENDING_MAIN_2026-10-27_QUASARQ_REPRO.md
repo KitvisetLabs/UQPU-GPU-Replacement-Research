@@ -3,7 +3,7 @@
 **Status:** PENDING REVIEW — summary only; source PR #130 is not merged.  
 **Canonical main base SHA:** 421f213ac9b7dd3754d28567f9efb70f0e175d5c  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/130  
-**Source branch/head:** research/2026-10-27-quasarq-stabilizer-gpu-watch @ c9f7fec3ae79124ed11cec556c3eaea5836f37f7  
+**Source branch/head:** research/2026-10-27-quasarq-stabilizer-gpu-watch @ 9375316d9586117e9593ad3445e62d2da31d8b2c  
 **Work item:** QUASARQ-REPRO-001  
 **Integration ID:** INT-20261027-QUASARQ-SIMULATOR  
 **Evidence class:** LITERATURE_ONLY + PREREGISTERED_BENCHMARK_DESIGN
@@ -29,7 +29,7 @@ The proposed simulator work covers Osama, Thanos and Laarman, “GPU-Accelerated
 - The integration JSON was parsed successfully after publication.
 - No QuaSARQ build, simulator run, repository test, source-license audit, independent benchmark or energy measurement was performed.
 - The paper’s author-reported runtime and energy improvements remain external literature, not UQPU results. The domain is classical Clifford/stabilizer simulation, not general quantum hardware advantage.
-- Prior source-head run 40376218665 passed the Python 3.10/3.11/3.12 matrix, while extended QSVT/QSP/reference/SDK jobs remained queued or in progress. The source branch now points to fc209706748d29ad5283b0fca3ccee9ef225aa7c and its exact-head workflow run 40377055814 is queued; no exact-head pass is claimed. This PR’s previous summary-head run 40376509430 was also queued before this update; its new exact-head CI must complete.
+- Prior source-head run 40376218665 passed the Python 3.10/3.11/3.12 matrix, while extended QSVT/QSP/reference/SDK jobs remained queued or in progress. The later source head fc841fa327670990c3d152b7c5cc4bd0b693b6b7 had run 40377771663 queued. The current source head is 9375316d9586117e9593ad3445e62d2da31d8b2c after aligning the simulator integration JSON with the shared schema; exact-head CI for this head is not yet confirmed. The summary branch's prior run 40377835621 was queued before this update; the new summary head requires its own Actions result.
 - No QPU job, provider credential, purchase, physical experiment or external expenditure was used or authorized.
 
 ## Invariants and mission boundary
