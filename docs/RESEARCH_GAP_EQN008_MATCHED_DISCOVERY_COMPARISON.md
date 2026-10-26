@@ -42,3 +42,12 @@ The claimed method advantage fails if it vanishes on law-family-disjoint or scal
 ## Synchronization debt
 
 This standalone gap is not yet merged into the append-heavy RESEARCH_GAPS.md. Keep the dated record intact until a safe reconciliation can append it without truncating existing history.
+
+
+## 2026-10-26 matched-interface implementation update
+
+A shared implementation now exists at software/uqpu-prototype/uqpu/equation_discovery_comparison.py, with regression tests at software/uqpu-prototype/tests/test_equation_discovery_comparison.py. The validator requires matching dataset, train/validation/test split, preprocessing, expression grammar, unit schema and acceptance-rule hashes; identical per-run resource ceilings; the same set of at least 30 preregistered seeds for each method; unique method/seed records; resource-budget compliance; and a single declared cost basis if costs are reported.
+
+This is a reusable contract only. No CoSR, transformer, search-control or structural-guidance benchmark was executed, and no method is ranked. Exact-head GitHub Actions must pass before the interface is treated as CI-verified. PRs #56, #98 and #104 remain unmerged and must be reconciled rather than copied blindly.
+
+The standalone gap remains OPEN. RESEARCH_GAPS.md remains unsynchronized because its large append-only history was not rewritten.

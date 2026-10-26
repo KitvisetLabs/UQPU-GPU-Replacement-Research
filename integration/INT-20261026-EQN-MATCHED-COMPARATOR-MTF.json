@@ -1,0 +1,93 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-EQN-MATCHED-COMPARATOR-MTF",
+  "date": "2026-10-26",
+  "canonical_start_sha": "d5091dcf7301fa7b0a0586288a2969a441b8cab2",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "integration_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "energy_owner_lane": "E_materials_energy_cooling_infrastructure",
+  "artifacts": [
+    "software/uqpu-prototype/uqpu/equation_discovery_comparison.py",
+    "software/uqpu-prototype/tests/test_equation_discovery_comparison.py",
+    "docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md",
+    "docs/RESEARCH_GAP_RG050_MTF_THERMAL_TO_NET_ELECTRICITY.md",
+    "docs/literature_watch/2026-10-26-general-fusion-mtf-1kev-net-electric-boundary.md",
+    "integration/DAILY_CYCLE_2026-10-26_EQUATION-DISCOVERY-COMPARATOR_AND_MTF.md"
+  ],
+  "sources": [
+    {
+      "title": "UKAEA, General Fusion announce Magnetised Target Fusion milestone",
+      "date": "2026-10-08",
+      "url": "https://www.gov.uk/government/news/ukaea-general-fusion-announce-magnetised-target-fusion-milestone",
+      "evidence_class": "OFFICIAL_GOVERNMENT_SUMMARY_OF_EXPERIMENTAL_DIAGNOSTIC"
+    },
+    {
+      "title": "Thomson Scattering Measurement of 1 keV Electron Temperature on Lawson Machine 26",
+      "date": "2026-10-08",
+      "url": "https://generalfusion.com/post/thomson-scattering-measurement-of-1-kev-electron-temperature-on-lawson-machine-26/",
+      "evidence_class": "COMPANY_HOSTED_TECHNICAL_PAPER_SUBMITTED_FOR_PEER_REVIEW"
+    }
+  ],
+  "observation": {
+    "electron_temperature_ev": 1090,
+    "uncertainty_ev": 40,
+    "shot": "LMC-12",
+    "diagnostic": "Thomson scattering",
+    "sampling": "eight times and two spatial points",
+    "status": "EXTERNAL_EXPERIMENTAL_DIAGNOSTIC_ONLY"
+  },
+  "lanes": {
+    "A": "Shared matched-resource equation-discovery comparator and regression tests added; no external method benchmark executed.",
+    "B": "Provider-neutral path preserved; no provider credentials or paid QPU jobs.",
+    "C": "Resource ceilings include memory and accelerator/time usage; readable classical memory remains distinct from quantum state-space size.",
+    "D": "Diagnostic-access and liner configuration are evidence leads; no device/fabrication claim promoted.",
+    "E": "MTF electron-temperature milestone recorded; no Lawson criterion, net electricity or low-cost fusion result.",
+    "F": "Matched-budget comparison and net-electric evidence boundaries made explicit; no accepted-task cost, LCOE or WACC measured.",
+    "G": "Metrology, diagnostic maintenance and component/consumable lifetime remain required cost drivers; no factory result.",
+    "H": "Dated literature watch and integration summary preserve strategic context and non-claim boundaries."
+  },
+  "foundational": {
+    "FND_001": "MODEL_ONLY finite-state work remains without accepted-task quality or calibrated physical work/heat.",
+    "FND_002": "Output-information lower bounds unchanged.",
+    "FND_003": "No matched control-versus-quantum-speed-limit measurement.",
+    "FND_004": "No alternative physical primitive demonstrated.",
+    "FND_005": "No new validated particle/QFT mechanism; MTF temperature is not net energy.",
+    "FND_006": "Matched-resource equation-discovery comparison contract added; no external method reproduced.",
+    "EQN_001_to_006": "Frozen hashes, held-out split, common budget, counterexample and false-discovery counts, and consistent cost basis required."
+  },
+  "invariants": {
+    "INV_029": "No phone-class physical compression evidence.",
+    "INV_030": "No elemental transmutation or Pangola material substitution claim.",
+    "INV_031": "No accepted biomass liquid-energy/fuel yield or cost evidence.",
+    "INV_032": "External MTF diagnostic only; net delivered electricity remains unproven.",
+    "INV_033": "No principal, interest or WACC change measured.",
+    "INV_034": "Foundational mathematics remains evidence-gated.",
+    "INV_035": "No AI-generated equation promoted to physical law.",
+    "INV_025_026_027": "100,000,000-unit moonshots remain falsifiable and evidence-gated."
+  },
+  "prechange_ci": {
+    "commit": "d5091dcf7301fa7b0a0586288a2969a441b8cab2",
+    "prototype_and_invariants": "success",
+    "python_matrix": [
+      "3.10",
+      "3.11",
+      "3.12"
+    ],
+    "qiskit_verification": "success",
+    "qsp_qsvt_jobs": "success",
+    "reference_benchmark": "success",
+    "cold_start_handoff_audit": "success"
+  },
+  "validation_after_change": "PENDING_EXACT_HEAD_GITHUB_ACTIONS",
+  "paid_qpu_jobs": 0,
+  "sync_debt": [
+    "RG-EQN-008 and RG050 remain standalone; RESEARCH_GAPS.md was not rewritten.",
+    "Open PRs #56, #98 and #104 are not canonical main evidence and require conflict resolution/exact-head CI."
+  ],
+  "next_highest_value_gate": "Run exact-head CI; then consolidate pending equation-discovery methods behind this shared contract and execute the preregistered matched 30-seed benchmark. Independently retrieve LM26 source data before propagating parameters into FUS-001.",
+  "non_claims": [
+    "No equation-discovery method advantage demonstrated.",
+    "No new physical law, real-QPU advantage, material substitution, saleable fuel, net fusion electricity, financing-rate change or Data-Center-to-Phone result."
+  ]
+}
