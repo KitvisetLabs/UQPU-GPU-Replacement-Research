@@ -5,7 +5,7 @@
 **Canonical main SHA at start:** `c60594ad8a02f20e2908c53640b66f9062479002`  
 **Source PR:** [#132 — Bind formal proof artifacts and add fresh equation-discovery watch (RG-047)](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/132)  
 **Source branch:** `research/2026-10-27-rg047-equation-proof-binding`  
-**Source branch head:** `3ca85ac284278fe770136ac6a348bea5b8fe5c8c`  
+**Source branch head:** `d7e04470f3267fbb6bc5de323d915ddb30958b96`  
 **Owner lanes:** A (primary), F (evidence/integration), H (publication), with D/E consumers for symbolic material-potential literature
 
 ## Pending source commits
@@ -31,13 +31,17 @@ All of these commits are on the source branch and **are not yet merged into main
 | `151d0288eb08fd1d16f1fe6a4f70b2af026932b6` | Update RG-047 gap with pending EquationHypothesis binding |
 | `483fe362765d102b1c0511b18827e86da19f7f5b` | Update daily report with RG-047 gap status |
 | `3ca85ac284278fe770136ac6a348bea5b8fe5c8c` | Link RG-047 gap update in integration manifest |
+| `c1f814a387921263490b0a2143b661afa5ff260f` | Remove duplicated AI-Newton source summary; cross-link pending PR #111 |
+| `e52120fd1d4cdc64240098b56c884610dfa00bca` | Update Batch 071 literature deduplication note |
+| `ffd114ab189ab475df18e1589fac439917a869e5` | Update daily report with pending AI-Newton source PR |
+| `d7e04470f3267fbb6bc5de323d915ddb30958b96` | Update integration manifest literature provenance |
 
 ## What the pending work changes
 
 - Equation hypotheses with a recorded formal-proof attempt must carry a typed `FormalProofEvidence` record, bind the exact theorem statement to `formal_proof_statement`, and match equation ID, claim kind and status.
 - The legacy `CHECKED` spelling cannot stand alone; it aliases only a bound kernel-checked or independently reproduced record.
 - Regression tests cover status-only records, identity/status/statement mismatches, independent-reproduction metadata and non-promotion to physical-candidate readiness.
-- A new literature watch records AI-Newton, symbolic ensemble interatomic potentials, AIProver and Duffing symbolic rediscovery with limitations and falsifiable follow-ups.
+- A new literature watch records symbolic ensemble interatomic potentials, AIProver and Duffing symbolic rediscovery with limitations and falsifiable follow-ups. AI-Newton is already covered by open PR #111 and is linked rather than duplicated.
 - The standalone RG-047 gap now explicitly records the proposed equation-record binding and remains partially open until exact-head CI, a pinned theorem run and independent reproduction.
 
 ## Exact-head CI status at this checkpoint
