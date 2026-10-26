@@ -59,7 +59,7 @@ The cross-method equation-discovery benchmark remains open. The shared interface
 
 ## GitHub and CI
 
-Before this change, the latest main commit d5091dcf7301fa7b0a0586288a2969a441b8cab2 had successful Python 3.10/3.11/3.12 tests, Qiskit verification, QSP/QSVT checks, reference benchmark and cold-start handoff audit. The new code and docs require a fresh exact-head Actions run; do not infer their CI status from the parent commit. Paid QPU jobs: 0. No external credentials or budget were used.
+Before this change, the latest main commit d5091dcf7301fa7b0a0586288a2969a441b8cab2 had successful Python 3.10/3.11/3.12 tests, Qiskit verification, QSP/QSVT checks, reference benchmark and cold-start handoff audit. The Python 3.10, 3.11 and 3.12 unit/invariant jobs passed on code commit 8196de0f563d395ffe78030b692dab84d5e1555f. The final main head b3584b6eee135027b8d8893af0071dbc1bcddd52 has the identical tree (3fd2019e8899e76b7f9288084e7be0d12981a296), and its cold-start handoff audit passed after a missing Research-Sync trailer was repaired. At final inspection, the extended reference benchmark, Qiskit verification and remaining QSP/QSVT jobs were still running; no failure was observed in those pending jobs. Paid QPU jobs: 0. No external credentials or budget were used.
 
 ## Next highest-value gate
 

@@ -79,7 +79,7 @@
     "reference_benchmark": "success",
     "cold_start_handoff_audit": "success"
   },
-  "validation_after_change": "PENDING_EXACT_HEAD_GITHUB_ACTIONS",
+  "validation_after_change": "PYTHON_3_10_3_11_3_12_UNIT_AND_INVARIANT_JOBS_PASSED_ON_IDENTICAL_TREE; COLD_START_AUDIT_SUCCESS_ON_FINAL_MAIN_HEAD; EXTENDED_REFERENCE_QISKIT_QSP_QSVT_JOBS_IN_PROGRESS",
   "paid_qpu_jobs": 0,
   "sync_debt": [
     "RG-EQN-008 and RG050 remain standalone; RESEARCH_GAPS.md was not rewritten.",
@@ -89,5 +89,22 @@
   "non_claims": [
     "No equation-discovery method advantage demonstrated.",
     "No new physical law, real-QPU advantage, material substitution, saleable fuel, net fusion electricity, financing-rate change or Data-Center-to-Phone result."
+  ],
+  "tested_code_commit": "8196de0f563d395ffe78030b692dab84d5e1555f",
+  "tested_tree_sha": "3fd2019e8899e76b7f9288084e7be0d12981a296",
+  "final_main_head_at_status_check": "b3584b6eee135027b8d8893af0071dbc1bcddd52",
+  "ci_runs": [
+    {
+      "name": "UQPU Prototype and Project Invariants",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40304735761",
+      "status": "IN_PROGRESS",
+      "matrix": "Python 3.10/3.11/3.12 passed; extended reference/Qiskit/QSP/QSVT jobs pending"
+    },
+    {
+      "name": "Autonomous Cold-Start Handoff Audit",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40304843079",
+      "status": "SUCCESS",
+      "note": "Passes on final main head after adding required Research-Sync: main trailer"
+    }
   ]
 }
