@@ -5,8 +5,8 @@
 **Source PR:** #120 — Oct 26 cycle: nonstabilizerness purification resource-law watch  
 **Source PR URL:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/120  
 **Source branch:** automation/2026-10-26-nonstabilizer-purification-watch  
-**Latest source head at synchronization:** 979c5ac0f72d429a28d00aadbb54f96ef1b2910a  
-**Source commits observed:** 209a26f46f739a240079a4be200d4127d1761535; 9fb9b405d798b409659817a1b36bbff9aac9dc26; 0ce2ae30d56a18429a88fab1fa8b04a8cf7e12b8; 8126eab90a2666b41d48ac9ac7a461b58adf41c9; b62e3429992d665aeae914adb952e4416442e260; 979c5ac0f72d429a28d00aadbb54f96ef1b2910a  
+**Latest source head at synchronization:** 4ec590ab017eda71e4b8b62addbca44d3ebdfaa2  
+**Source commits observed:** 209a26f46f739a240079a4be200d4127d1761535; 9fb9b405d798b409659817a1b36bbff9aac9dc26; 0ce2ae30d56a18429a88fab1fa8b04a8cf7e12b8; 8126eab90a2666b41d48ac9ac7a461b58adf41c9; b62e3429992d665aeae914adb952e4416442e260; 979c5ac0f72d429a28d00aadbb54f96ef1b2910a; ecc8b41dff5239f77344488e91174dc7c16f21bc; 4ec590ab017eda71e4b8b62addbca44d3ebdfaa2  
 **Work item:** EQN-PURIFY-001 / RG-051  
 **Primary owner:** Lane A — quantum programming/workloads/compiler/runtime  
 **Integration owner:** Lane F — economics/benchmarks/evidence  
@@ -35,7 +35,7 @@ The proposed follow-up freezes the exact source version and theorem assumptions;
 - No UQPU implementation, formal proof assistant run, SDP solve, simulator run, provider call or QPU job was executed in the documentation/specification source PR.
 - No new physical law, quantum advantage, memory/storage equivalence, material/fuel/fusion result, financing effect or Data-Center-to-Phone closure is claimed.
 - No paid/free QPU job, physical experiment, material purchase or funding action is authorized.
-- Latest source PR #120 workflow run 40248049073 is queued at the latest check. An earlier source head passed the Python 3.10/3.11/3.12 unit/invariant/CLI jobs; extended QSVT/QSP/independent-SDK jobs were still queued/in progress. Do not call the latest workflow passed until all required jobs complete.
+- Latest source PR #120 exact-head CI is being re-triggered after a provenance-only update. An earlier source head passed the Python 3.10/3.11/3.12 unit/invariant/CLI jobs; extended QSVT/QSP/independent-SDK jobs were still queued/in progress. Do not call the latest workflow passed until all required jobs complete.
 
 ## Canonical gap-ledger sync debt
 
