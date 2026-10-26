@@ -5,9 +5,9 @@
 **Source PR:** #120 — Oct 26 cycle: nonstabilizerness purification resource-law watch  
 **Source PR URL:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/120  
 **Source branch:** automation/2026-10-26-nonstabilizer-purification-watch  
-**Source head SHA at synchronization:** 0ce2ae30d56a18429a88fab1fa8b04a8cf7e12b8  
-**Source commits:** 209a26f46f739a240079a4be200d4127d1761535; 9fb9b405d798b409659817a1b36bbff9aac9dc26; 0ce2ae30d56a18429a88fab1fa8b04a8cf7e12b8  
-**Work item:** EQN-PURIFY-001  
+**Source head SHA at synchronization:** b62e3429992d665aeae914adb952e4416442e260  
+**Source commits:** 209a26f46f739a240079a4be200d4127d1761535; 9fb9b405d798b409659817a1b36bbff9aac9dc26; 0ce2ae30d56a18429a88fab1fa8b04a8cf7e12b8; 8126eab90a2666b41d48ac9ac7a461b58adf41c9; b62e3429992d665aeae914adb952e4416442e260  
+**Work item:** EQN-PURIFY-001 / RG-051  
 **Primary owner:** Lane A — quantum programming/workloads/compiler/runtime  
 **Integration owner:** Lane F — economics/benchmarks/evidence  
 **Publication support:** Lane H
@@ -20,6 +20,7 @@ The main-commit synchronization policy requires pending branch research to be di
 
 - `docs/literature_watch/2026-10-26-nonstabilizerness-resource-law-purification.md`
 - `research_lanes/A_quantum_programming_runtime/EQN-PURIFY-001.md`
+- `docs/RESEARCH_GAP_RG051_PURIFICATION_RESOURCE_LAW.md`
 - `integration/INT-20261026-052-NONSTABILIZER-PURIFICATION.json`
 
 ## Research summary
@@ -31,11 +32,15 @@ The proposed follow-up freezes the exact source version and theorem assumptions;
 ## Evidence and boundaries
 
 - Source evidence: ARXIV_PREPRINT plus a related PEER_REVIEWED_THEOREM; LITERATURE_ONLY for UQPU.
-- No UQPU implementation, formal proof assistant run, SDP solve, simulator run, provider call or QPU job was executed in this documentation-only source PR.
+- No UQPU implementation, formal proof assistant run, SDP solve, simulator run, provider call or QPU job was executed in the documentation/specification source PR.
 - No new physical law, quantum advantage, memory/storage equivalence, material/fuel/fusion result, financing effect or Data-Center-to-Phone closure is claimed.
 - No paid/free QPU job, physical experiment, material purchase or funding action is authorized.
-- Source PR #120's exact-head GitHub Actions workflow run 40247855501 was queued/in progress at the latest check; Python 3.10/3.12 jobs were in progress and Python 3.11 queued. Do not call this a CI pass until the exact head finishes successfully.
+- Source PR #120's exact-head GitHub Actions workflow run 40247855501 has passed Python 3.10/3.11/3.12 unit/invariant/CLI jobs; extended QSVT/QSP/independent-SDK jobs remain queued or in progress at the latest check. Do not call the full workflow passed until all required jobs complete.
+
+## Canonical gap-ledger sync debt
+
+The large append-only `RESEARCH_GAPS.md` history was inspected but not replaced from a partial/stale extract. RG-051 is a dated supplemental gap artifact in the source PR; this pending-main record makes the gap discoverable without asserting that it is already in the canonical living ledger.
 
 ## Next reconciliation gate
 
-Review/merge source PR #120 after exact-head CI and scientific-scope review. If merged, record the full source-to-main SHA mapping and final CI result. Until then, this summary must remain clearly marked pending and must not be treated as canonical implementation or evidence.
+Review/merge source PR #120 after all exact-head CI jobs and scientific-scope review. If merged, record the full source-to-main SHA mapping and final CI result. Until then, this summary must remain clearly marked pending and must not be treated as canonical implementation or evidence.
