@@ -5,6 +5,7 @@ from uqpu.equation_discovery import (
     required_discovery_fields,
     select_bic_candidate_count,
 )
+from uqpu.formal_proof_evidence import build_formal_proof_evidence
 
 
 class EquationDiscoveryTests(unittest.TestCase):
@@ -96,16 +97,85 @@ class EquationDiscoveryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self._candidate(proof_or_discriminating_experiment_plan=()).validate()
 
+    def _bound_proof_record(self, *, status="KERNEL_CHECKED", claim_id="EQN-test-001", **overrides):
+        proof_bytes = b"theorem candidate : True := by trivial\\n"
+        log_bytes = b"Lean 4.19.0; exit_code=0\\n"
+        environment_bytes = b"lean-toolchain=leanprover/lean4:v4.19.0\\n"
+        values = dict(
+            claim_id=claim_id,
+            claim_kind="PHYSICAL_EQUATION_HYPOTHESIS",
+            statement="candidate equation y = a*x + b*x**2",
+            assumptions=("synthetic contract fixture; no physical claim",),
+            status=status,
+            source_revision="a" * 40,
+            proof_artifact=proof_bytes,
+            checker_name="Lean",
+            checker_version="4.19.0",
+            checker_command="lake env lean Candidate.lean",
+            environment_bytes=environment_bytes,
+            run_log=log_bytes,
+            checker_exit_code=0,
+            independent_reproduction_count=0,
+            notes=(),
+        )
+        if status == "FAILED":
+            values["checker_exit_code"] = 1
+            values["notes"] = ("synthetic negative-path fixture",)
+        if status == "INCONCLUSIVE":
+            values["notes"] = ("synthetic inconclusive fixture",)
+        if status == "INDEPENDENTLY_REPRODUCED":
+            values["independent_reproduction_count"] = 1
+        values.update(overrides)
+        return build_formal_proof_evidence(**values)
+
     def test_formal_proof_status_is_explicit_and_auditable(self):
         with self.assertRaises(ValueError):
             self._candidate(formal_proof_status="KERNEL_CHECKED").validate()
         with self.assertRaises(ValueError):
             self._candidate(formal_proof_status="CHECKED", formal_proof_notes=()).validate()
+        proof = self._bound_proof_record()
         checked = self._candidate(
-            formal_proof_status="CHECKED",
+            formal_proof_status="KERNEL_CHECKED",
             formal_proof_notes=("synthetic unit-test theorem; pinned checker and statement hash recorded",),
+            formal_proof_evidence=proof,
         )
         checked.validate()
+        legacy_checked = self._candidate(
+            formal_proof_status="CHECKED",
+            formal_proof_notes=("legacy status maps only to a bound kernel-checked record",),
+            formal_proof_evidence=proof,
+        )
+        legacy_checked.validate()
+        self.assertFalse(checked.ready_for_physical_candidate_claim)
+
+    def test_formal_proof_record_is_bound_to_equation_identity_and_status(self):
+        proof = self._bound_proof_record()
+        wrong_id = self._candidate(
+            equation_id="EQN-other-001",
+            formal_proof_status="KERNEL_CHECKED",
+            formal_proof_notes=("test identity mismatch",),
+            formal_proof_evidence=proof,
+        )
+        with self.assertRaisesRegex(ValueError, "claim_id must match equation_id"):
+            wrong_id.validate()
+
+        wrong_status = self._candidate(
+            formal_proof_status="FAILED",
+            formal_proof_notes=("test status mismatch",),
+            formal_proof_evidence=proof,
+        )
+        with self.assertRaisesRegex(ValueError, "does not match bound"):
+            wrong_status.validate()
+
+    def test_independent_reproduction_status_requires_a_bound_reproduction_record(self):
+        proof = self._bound_proof_record(status="INDEPENDENTLY_REPRODUCED")
+        candidate = self._candidate(
+            formal_proof_status="INDEPENDENTLY_REPRODUCED",
+            formal_proof_notes=("synthetic reproduction fixture",),
+            formal_proof_evidence=proof,
+        )
+        candidate.validate()
+        self.assertFalse(candidate.ready_for_physical_candidate_claim)
 
     def test_counterexamples_and_false_discoveries_block_candidate_promotion(self):
         unsearched = self._candidate(
@@ -143,6 +213,7 @@ class EquationDiscoveryTests(unittest.TestCase):
             "proof_or_discriminating_experiment_plan",
             "formal_proof_status",
             "formal_proof_notes",
+            "formal_proof_evidence",
             "false_discovery_status",
             "false_discovery_notes",
         ):
