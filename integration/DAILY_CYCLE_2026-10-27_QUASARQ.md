@@ -39,10 +39,10 @@ No source build, circuit download, simulator run, repository test, GPU/CPU energ
 - **B — Cloud/QPU/provider integration:** reviewed; no adapter or target change. No provider credentials, simulator service, paid job or live QPU execution.
 - **C — RAM/VRAM/HBM/storage/state/data movement:** advanced the metric contract for tableau memory, host RAM/VRAM, transfers, output reconstruction and many-shot buffers. No memory replacement or readable quantum-state storage claim.
 - **D — Device/chip/process/fabrication/packaging:** reviewed; GPU algorithm layout is not quantum-device evidence. No new device or process result.
-- **E — Biomass/materials/bio-oil/fusion/cooling/infrastructure:** reviewed; no causal path from this simulator paper to biomass substitution, accepted fuel or net fusion electricity. No material or energy claim promoted.
-- **F — Economics/benchmarks/evidence/integration:** advanced matched-output, repeated-run, timeouts, measured-energy boundary and cost-per-accepted-output preregistration. No cost result measured.
-- **G — Chip manufacturing equipment/software/factory systems:** reviewed jointly with D; memory layout and prefix operations create questions for architecture/tooling, but no equipment, yield, throughput or cost evidence.
-- **H — Kanusanan Pongpanna Model/strategy/finance/publication:** published a dated external literature interpretation on the branch while preserving the master-plan references and all six language editions. The strategy remains context, not empirical evidence.
+- **E — Biomass/materials/bio-oil/fusion/cooling/infrastructure:** reviewed against the simulator paper and added a separate method watch for hyperreduced neural-material constitutive discovery (arXiv:2610.31322). Its relevance is limited to mechanically validated constitutive models; no Pangola-derived material qualification, accepted fuel or net fusion electricity result.
+- **F — Economics/benchmarks/evidence/integration:** advanced matched-output, repeated-run, timeout, measured-energy and cost-per-accepted-output preregistration; the material-model watch separately requires full-order verification and failed-run accounting. No cost result measured.
+- **G — Chip manufacturing equipment/software/factory systems:** reviewed jointly with D; memory layout/prefix operations and reduced-order mechanical-model workflows motivate architecture/tooling questions, but no equipment, yield, throughput or cost evidence.
+- **H — Kanusanan Pongpanna Model/strategy/finance/publication:** published dated external literature interpretations for the simulator and hyperreduced material-model method on the branch while preserving the master-plan references and all six language editions. The strategy remains context, not empirical evidence.
 
 The repository’s additional **Lane I** (no-contact vehicle lift) was reviewed as out of scope for this simulator result; no magnetic-field/gravity manipulation claim is made and no hazardous test is proposed. The user-required A–H architecture remains fully represented.
 
@@ -77,3 +77,13 @@ The repository’s additional **Lane I** (no-contact vehicle lift) was reviewed 
 - **Sync:** both PRs remain unmerged. Exact source-to-main mapping is pending review/merge; no branch work is described as canonical main.
 - **Append-heavy synchronization debt:** README still labels 2026-10-15/16 as the latest verified implementation checkpoint; RESEARCH_GAPS.md and WORKLOG.md were not rewritten. Keep the standalone gap until a safe complete-file reconciliation.
 - **Next highest-value gate:** pin exact QuaSARQ/Stim/Qiskit-Aer revisions and licenses; pass small-circuit correctness with an intentional negative control; then run paired repeated timing, host/VRAM/transfer measurement and calibrated device plus wall-plug energy accounting. Stop if correctness or fair-baseline gates fail. No paid QPU job or external expenditure is authorized.
+
+
+## Second literature delta — constrained neural-material model discovery
+
+A second material result was located in the fresh surveillance pass and added to this cycle:
+- Official preprint: Holthusen, Knipper and Linka, arXiv:2610.31322v1, submitted 2026-10-22, “Hyperreduction accelerates finite element model updating for the discovery of neural materials.”
+- New artifacts: docs/literature_watch/2026-10-27-hyperreduction-neural-material-discovery.md; research_lanes/E_materials_energy_cooling_infrastructure/NEURAL_MATERIAL_HYPERREDUCTION_REPRO_001.md; docs/RESEARCH_GAP_RG-NEURAL-MATERIAL-001.md; integration/INT-20261027-NEURAL-MATERIAL-HYPERREDUCTION.json.
+- Method delta: POD + energy-conserving sampling/weighting + adjoint sensitivities + adaptive basis/sample updates reduce inverse hyperelastic-model training cost while retaining the finite-element formulation. The source reports 9 hours to 41 minutes for a two-phase specimen and a 6-mode/116-element reduction in a synthetic 3D case.
+- Limitations: this is a preprint and remains unreplicated by UQPU. Localized deformation reduces efficiency, full-order checks bound the gain, and reaction-force data do not uniquely determine the constitutive law. The method is for mechanical hyperelasticity, not directly for electronic, optical, thermal, electrochemical or diamond-defect properties.
+- Lane E receives a concrete method-level research gate; D/G receive a conditional package/fixture mechanics interface; F receives the matched full-order, uncertainty and full-cost contract. No Pangola material, device yield, fuel, fusion, finance or physical-law result is promoted.
