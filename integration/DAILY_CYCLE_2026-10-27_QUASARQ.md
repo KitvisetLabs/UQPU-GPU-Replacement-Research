@@ -12,7 +12,7 @@ The cycle began from the newest committed main found in GitHub: 421f213ac9b7dd37
 
 Read the current project charter, version invariants (including INV-025–037), goals, README, Research Operating System, Open Frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, AGENTS.md, the main-commit synchronization policy, continuous cross-lane integration protocol, Batch 067/068, RG-046, RG-EQN-007/008, and current literature/integration records. The six public master-plan editions (Thai, English, Chinese, Japanese, Korean and German) and recorded AI-agent/startup/funding references remain present. No append-heavy aggregate file was rewritten.
 
-The combined-status endpoint returned no legacy status rows for the current main head, and the connector’s commit-workflow lookup returned no runs because that lookup is limited to pull-request-triggered runs. Therefore **current exact-head Actions status is UNKNOWN here**, not PASS. The previous cold-start audit failure is known; the repair commit’s own exact-head result still requires an Actions check. No PR is treated as merged merely because it exists.
+At the start-of-cycle main head, the combined-status endpoint returned no legacy status rows and the commit-workflow lookup returned no PR-triggered runs. After PR #130 was opened, source-head workflow run 40376218665 became visible: Python 3.10, 3.11 and 3.12 matrix jobs passed, while QSVT/QSP/reference/SDK jobs were still queued or in progress at the latest inspection. Therefore the full source-head workflow is **NOT YET GREEN**. Pending-main summary PR #131 run 40376296769 was also in progress; its exact-head completion is required. No PR is treated as merged merely because it exists.
 
 ## Literature surveillance and delta
 
@@ -72,7 +72,8 @@ The repository’s additional **Lane I** (no-contact vehicle lift) was reviewed 
 
 - **Canonical main at start:** 421f213ac9b7dd3754d28567f9efb70f0e175d5c.
 - **Prior research commit:** 29f4d40d00d7352193a3b7177f213030b2cc055d; cold-start audit failed on missing Research-Sync: main trailer. The follow-up 421f213... adds the required trailer and repair record.
-- **Current exact-head CI:** UNKNOWN from the available combined-status/workflow lookup; check GitHub Actions directly before merge or any claim of a pass.
-- **Branch commit/PR/main sync:** pending creation and review; do not treat these artifacts as canonical main until merged. A separate pending-main summary PR is required by repository policy if the source PR remains blocked.
+- **Source PR #130:** open at source head 74454dcf3b144183005e501412b3e8033abf4f42 when run 40376218665 was inspected. Python 3.10/3.11/3.12 matrix jobs passed; extended QSVT/QSP/reference/SDK jobs remained queued/in progress. Full exact-head CI is not green yet.
+- **Pending-main PR #131:** open at summary head 845087564183b1cebb1e26e5b477236e06ad6c58; workflow run 40376296769 was still in progress at inspection. This is summary-only and does not make source artifacts canonical.
+- **Sync:** both PRs remain unmerged. Exact source-to-main mapping is pending review/merge; no branch work is described as canonical main.
 - **Append-heavy synchronization debt:** README still labels 2026-10-15/16 as the latest verified implementation checkpoint; RESEARCH_GAPS.md and WORKLOG.md were not rewritten. Keep the standalone gap until a safe complete-file reconciliation.
 - **Next highest-value gate:** pin exact QuaSARQ/Stim/Qiskit-Aer revisions and licenses; pass small-circuit correctness with an intentional negative control; then run paired repeated timing, host/VRAM/transfer measurement and calibrated device plus wall-plug energy accounting. Stop if correctness or fair-baseline gates fail. No paid QPU job or external expenditure is authorized.
