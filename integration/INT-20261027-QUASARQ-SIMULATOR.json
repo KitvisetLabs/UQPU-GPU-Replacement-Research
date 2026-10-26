@@ -5,9 +5,6 @@
   "status": "PROPOSED",
   "evidence_class": "LITERATURE_ONLY + PREREGISTERED_BENCHMARK_DESIGN",
   "primary_owner": "A_quantum_programming_workloads_compiler_runtime",
-  "publication_owner": "H_strategy_finance_future_industries",
-  "integration_owner": "F_economics_benchmarks_evidence",
-  "work_item": "QUASARQ-REPRO-001",
   "artifacts": {
     "literature_watch": "docs/literature_watch/2026-10-27-quasarq-stabilizer-gpu-simulation.md",
     "lane_contract": "research_lanes/A_quantum_programming_runtime/QUASARQ_REPRO_001_BENCHMARK_CONTRACT.md",
@@ -107,5 +104,9 @@
     "RESEARCH_GAPS.md and WORKLOG.md append-heavy aggregate indexes not rewritten",
     "Exact-head Actions status unavailable from the combined-status endpoint; branch CI must be checked before any merge"
   ],
-  "next_gate": "Pin source/dependency/circuit hashes, run the correctness tier first, then paired timing and measured energy with a common system boundary."
+  "next_gate": "Pin source/dependency/circuit hashes, run the correctness tier first, then paired timing and measured energy with a common system boundary.",
+  "schema": "uqpu-eight-lane-integration-v1",
+  "work_item_id": "QUASARQ-REPRO-001",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "integration_owner_lane": "F_economics_benchmarks_evidence"
 }
