@@ -39,7 +39,14 @@ The already-published CoSR comparison (Xia & Zhang, Physical Review Research, ac
 - **FND-004:** no alternative physical primitive demonstrated.
 - **FND-005:** no validated QFT/elementary-particle mechanism.
 - **FND-006:** no new equation candidate or formal proof run.
-- **EQN-001–006:** no discovery benchmark executed. The source theorem must be pinned and independently checked before a small-n diagnostic; generated fits or asymptotic notation do not establish a physical law.
+- **EQN-001 — literature watch:** adds one source lead for limited coherent-memory bounds; no new physical law.
+- **EQN-002 — symbolic-regression benchmark:** not run; no equations fitted or scored.
+- **EQN-003 — constrained candidate evaluation:** no candidate generated or evaluated in this cycle.
+- **EQN-004 — held-out/generalization testing:** no dataset split or held-out prediction executed.
+- **EQN-005 — counterexample/proof/experiment path:** no source theorem proof reconstruction or proof-assistant run; the source assumptions remain to be audited.
+- **EQN-006 — device/system/economics translation:** no device, energy, cost or economic result; do not infer one from sample-complexity notation.
+
+The source theorem must be pinned and independently checked before a small-n diagnostic; generated fits or asymptotic notation do not establish a physical law.
 
 ## INV-029–035 disposition
 
