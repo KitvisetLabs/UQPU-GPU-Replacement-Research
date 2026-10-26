@@ -27,7 +27,7 @@ The current-main literature search rechecked symbolic regression, neural-symboli
 - Xia & Zhang's Chain of Symbolic Regression accepted-paper record (Physical Review Research, accepted 2026-10-06; [DOI 10.1103/f2kp-pp4q](https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q)) is already covered by the main-branch progressive-discovery watch. It remains a method lead, not a UQPU reproduction.
 - Klimesch et al.'s peer-reviewed review on AI-designed physics experiments (Nature, published 2026-09-02; [DOI 10.1038/s41586-026-10898-6](https://www.nature.com/articles/s41586-026-10898-6)) is already referenced by the permanent equation-discovery directive. It reinforces explicit objective functions, simulator reliability and experimental constraints; it does not validate any UQPU hypothesis.
 
-No newly found source in this surveillance pass supersedes those existing main-branch records, so no duplicate literature-watch article was created. No source claim is imported as project evidence.
+Additional primary/preprint sources absent from main were found and recorded in `docs/literature_watch/2026-10-27-concept-driven-equation-discovery-and-symbolic-material-potentials.md`: AI-Newton (APS accepted 2026-10-09), symbolic ensemble interatomic potentials (Phys. Rev. Materials, published 2026-10-09), AIProver (arXiv:2610.05367, 2026-10-04), and Duffing symbolic rediscovery (APS Open Science, published 2026-10-13). The Gaussian-repeater no-go and CoSR results are already covered by the current-main watch, so they were not duplicated. All four new sources remain literature-only; the Duffing study is explicitly treated as a negative control against claiming known-formula recovery as new physics.
 
 ## Eight-lane review
 
