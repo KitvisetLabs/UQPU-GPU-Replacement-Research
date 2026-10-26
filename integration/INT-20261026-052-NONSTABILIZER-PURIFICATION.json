@@ -159,7 +159,8 @@
     "209a26f46f739a240079a4be200d4127d1761535",
     "9fb9b405d798b409659817a1b36bbff9aac9dc26",
     "0ce2ae30d56a18429a88fab1fa8b04a8cf7e12b8",
-    "8126eab90a2666b41d48ac9ac7a461b58adf41c9"
+    "8126eab90a2666b41d48ac9ac7a461b58adf41c9",
+    "b62e3429992d665aeae914adb952e4416442e260"
   ],
   "gap_artifact": "docs/RESEARCH_GAP_RG051_PURIFICATION_RESOURCE_LAW.md",
   "canonical_gap_ledger_sync_debt": "RESEARCH_GAPS.md was inspected but not replaced from a partial/stale extract; RG-051 is a dated supplemental gap record pending PR review/merge."
