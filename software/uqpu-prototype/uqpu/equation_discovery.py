@@ -86,6 +86,7 @@ class EquationHypothesis:
     counterexample_notes: tuple[str, ...] = field(default_factory=tuple)
     heldout_prediction: str = ""
     proof_or_discriminating_experiment_plan: tuple[str, ...] = field(default_factory=tuple)
+    formal_proof_statement: str = ""
     formal_proof_status: str = "NOT_RUN"
     formal_proof_notes: tuple[str, ...] = field(default_factory=tuple)
     formal_proof_evidence: FormalProofEvidence | None = None
@@ -143,6 +144,10 @@ class EquationHypothesis:
             if not isinstance(proof_record, FormalProofEvidence):
                 raise ValueError("formal_proof_evidence must be a FormalProofEvidence record")
             proof_record.validate_metadata()
+            if not self.formal_proof_statement.strip():
+                raise ValueError("formal_proof_statement is required when a proof record is attached")
+            if proof_record.statement != self.formal_proof_statement:
+                raise ValueError("formal proof statement must match formal_proof_statement exactly")
             if proof_record.claim_id != self.equation_id:
                 raise ValueError("formal proof claim_id must match equation_id")
             if proof_record.claim_kind != "PHYSICAL_EQUATION_HYPOTHESIS":
@@ -229,6 +234,7 @@ def required_discovery_fields() -> tuple[str, ...]:
         "counterexample_notes",
         "heldout_prediction",
         "proof_or_discriminating_experiment_plan",
+        "formal_proof_statement",
         "formal_proof_status",
         "formal_proof_notes",
         "formal_proof_evidence",
