@@ -36,3 +36,12 @@ Reject a KERNEL_CHECKED or INDEPENDENTLY_REPRODUCED record if required checker/e
 ## Synchronization debt
 
 Keep this standalone gap as the canonical focused record until the append-heavy RESEARCH_GAPS.md and WORKLOG.md can be reconciled without truncating prior history. Root directives, INV-025/026/027 and INV-029–035, and the multilingual strategic-plan references remain unchanged.
+
+## Typed EquationHypothesis binding — 2026-10-27
+
+The Lane A implementation now adds an optional typed `formal_proof_evidence` field to `EquationHypothesis`. When the legacy status is `CHECKED` or `FAILED`, validation now requires the typed record. If present, the record validates its exact statement digest and proof/environment/log metadata, binds `claim_id` to `equation_id`, and requires the legacy status to agree with the typed state. `KERNEL_CHECKED` and `INDEPENDENTLY_REPRODUCED` map to `CHECKED`; `FAILED` remains a first-class negative result; proof text/formal statement alone do not map to checked.
+
+Regression tests cover missing typed binding, mismatched claim IDs, status disagreement and retained failed-check records. These are software contract tests only. The schema still cannot run or authenticate a checker, and no pinned theorem was checked in this cycle. RG-047 remains OPEN for a real pinned checker run, independent reproduction and empirical-physics separation. Hosted exact-head CI must pass before this implementation is considered validated.
+
+The append-heavy `RESEARCH_GAPS.md` and `WORKLOG.md` remain untouched to avoid truncating canonical history; synchronization debt is retained.
+
