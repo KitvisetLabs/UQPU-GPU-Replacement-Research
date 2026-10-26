@@ -23,6 +23,10 @@
     {
       "sha": "8c87e33346df45659d7747d0a440494d432e62a7",
       "role": "exact_statement_and_status_only_tests"
+    },
+    {
+      "sha": "f7847782e86e6a929b9917852f15e32cf7f70ac8",
+      "role": "fresh_literature_watch"
     }
   ],
   "status": "PR_PREPARATION_EXACT_HEAD_CI_PENDING",
@@ -63,7 +67,8 @@
     "module": "software/uqpu-prototype/uqpu/equation_discovery.py",
     "tests": "software/uqpu-prototype/tests/test_equation_discovery.py",
     "report": "integration/DAILY_CYCLE_2026-10-27_FORMAL_PROOF_BINDING.md",
-    "statement_binding": "software/uqpu-prototype/uqpu/equation_discovery.py::EquationHypothesis.formal_proof_statement"
+    "statement_binding": "software/uqpu-prototype/uqpu/equation_discovery.py::EquationHypothesis.formal_proof_statement",
+    "literature_watch": "docs/literature_watch/2026-10-27-concept-driven-equation-discovery-and-symbolic-material-potentials.md"
   },
   "tests": {
     "added": true,
@@ -101,5 +106,11 @@
     "G": "ACTIVE_DG_CODESIGN_NO_MANUFACTURING_RESULT",
     "H": "ACTIVE_STRATEGIC_CONTEXT_PRESERVED"
   },
-  "next_gate": "Exact-head CI; pinned proof run; independent reproduction; RG-046 raw-source/split reconstruction"
+  "next_gate": "Exact-head CI; pinned proof run; independent reproduction; RG-046 raw-source/split reconstruction",
+  "literature_delta": [
+    "AI-Newton APS accepted 2026-10-09: concept-driven multi-experiment law rediscovery; method lead, not new physical law.",
+    "Symbolic ensemble interatomic potentials, Phys. Rev. Materials 2026-10-09: DFT-referenced aluminum models; no material substitution or experimental qualification.",
+    "AIProver arXiv:2610.05367, 2026-10-04: certificate-driven auto-formalization; preprint metrics not independently reproduced.",
+    "Duffing symbolic rediscovery, APS Open Science 2026-10-13: exact recovery from formula-generated labels is not new physics; held-out/noise/generalization gates remain."
+  ]
 }
