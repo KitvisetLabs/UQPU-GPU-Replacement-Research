@@ -5,7 +5,7 @@
 **Canonical main SHA at start:** `c60594ad8a02f20e2908c53640b66f9062479002`  
 **Source PR:** [#132 — Bind formal proof artifacts and add fresh equation-discovery watch (RG-047)](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/132)  
 **Source branch:** `research/2026-10-27-rg047-equation-proof-binding`  
-**Source branch head:** `02379ad33f9f705ca1ad1983f3601d0e69255dc6`  
+**Source branch head:** `3ca85ac284278fe770136ac6a348bea5b8fe5c8c`  
 **Owner lanes:** A (primary), F (evidence/integration), H (publication), with D/E consumers for symbolic material-potential literature
 
 ## Pending source commits
@@ -28,6 +28,9 @@ All of these commits are on the source branch and **are not yet merged into main
 | `38a0e73e097e72311c7cb9af2605efb554165658` | Batch 071 updated with new watch |
 | `73130a63763c67088a892a2572e806d556a57d13` | Daily report updated with new watch |
 | `02379ad33f9f705ca1ad1983f3601d0e69255dc6` | Final source branch integration-manifest update |
+| `151d0288eb08fd1d16f1fe6a4f70b2af026932b6` | Update RG-047 gap with pending EquationHypothesis binding |
+| `483fe362765d102b1c0511b18827e86da19f7f5b` | Update daily report with RG-047 gap status |
+| `3ca85ac284278fe770136ac6a348bea5b8fe5c8c` | Link RG-047 gap update in integration manifest |
 
 ## What the pending work changes
 
@@ -35,6 +38,7 @@ All of these commits are on the source branch and **are not yet merged into main
 - The legacy `CHECKED` spelling cannot stand alone; it aliases only a bound kernel-checked or independently reproduced record.
 - Regression tests cover status-only records, identity/status/statement mismatches, independent-reproduction metadata and non-promotion to physical-candidate readiness.
 - A new literature watch records AI-Newton, symbolic ensemble interatomic potentials, AIProver and Duffing symbolic rediscovery with limitations and falsifiable follow-ups.
+- The standalone RG-047 gap now explicitly records the proposed equation-record binding and remains partially open until exact-head CI, a pinned theorem run and independent reproduction.
 
 ## Exact-head CI status at this checkpoint
 
