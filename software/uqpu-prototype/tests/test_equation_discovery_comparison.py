@@ -72,6 +72,25 @@ class EquationDiscoveryComparisonTests(unittest.TestCase):
         )
         self.assertIn("does not establish a physical law", summary["interpretation"])
 
+    def test_uncertainty_and_paired_acceptance_counts_are_reported(self):
+        summary = compare_methods(self._runs())
+        self.assertEqual(summary["schema"], "uqpu-equation-discovery-matched-comparison-v2")
+        for method in summary["method_ids"]:
+            values = summary["methods"][method]
+            low, high = values["acceptance_rate_95pct_wilson_ci"]
+            self.assertLessEqual(low, values["acceptance_rate"])
+            self.assertGreaterEqual(high, values["acceptance_rate"])
+            self.assertLess(low, high)
+
+        pair = summary["pairwise_acceptance"]["one-shot__vs__progressive"]
+        self.assertEqual(pair["shared_seed_count"], 30)
+        self.assertEqual(pair["both_accepted"], 10)
+        self.assertEqual(pair["left_only_accepted"], 5)
+        self.assertEqual(pair["right_only_accepted"], 10)
+        self.assertEqual(pair["neither_accepted"], 5)
+        self.assertAlmostEqual(pair["acceptance_rate_difference_left_minus_right"], -1 / 6)
+        self.assertIn("no p-values or winner", summary["interpretation"])
+
     def test_different_dataset_or_split_is_rejected(self):
         records = self._runs()
         records[-1] = replace(records[-1], test_split_sha256=_digest("different-test-split"))

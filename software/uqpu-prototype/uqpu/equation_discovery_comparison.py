@@ -200,6 +200,26 @@ def validate_matched_comparison(runs: Iterable[DiscoveryRun]) -> tuple[str, ...]
     return tuple(methods)
 
 
+def _wilson_interval(successes: int, trials: int) -> tuple[float, float]:
+    """Return a marginal 95% Wilson interval for a Bernoulli acceptance rate."""
+    if trials <= 0:
+        raise ValueError("trials must be > 0")
+    z = 1.959963984540054
+    rate = successes / trials
+    z_squared = z * z
+    denominator = 1.0 + z_squared / trials
+    center = (rate + z_squared / (2.0 * trials)) / denominator
+    half_width = (
+        z
+        * math.sqrt(
+            rate * (1.0 - rate) / trials
+            + z_squared / (4.0 * trials * trials)
+        )
+        / denominator
+    )
+    return max(0.0, center - half_width), min(1.0, center + half_width)
+
+
 def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
     """Return descriptive summaries only; do not infer a winner or physical law."""
     records = tuple(runs)
@@ -208,7 +228,7 @@ def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
     for record in records:
         by_method[record.method_id].append(record)
 
-    summaries: dict[str, dict[str, float | int | None]] = {}
+    summaries: dict[str, dict[str, object]] = {}
     for method in methods:
         group = by_method[method]
         accepted = [record for record in group if record.accepted]
@@ -218,10 +238,13 @@ def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
             if costs_measured else None
         )
         accepted_errors = [record.heldout_error for record in accepted if record.heldout_error is not None]
+        acceptance_rate = len(accepted) / len(group)
+        acceptance_interval = _wilson_interval(len(accepted), len(group))
         summaries[method] = {
             "runs": len(group),
             "accepted_candidates": len(accepted),
-            "acceptance_rate": len(accepted) / len(group),
+            "acceptance_rate": acceptance_rate,
+            "acceptance_rate_95pct_wilson_ci": [acceptance_interval[0], acceptance_interval[1]],
             "mean_heldout_error_of_accepted": (
                 math.fsum(accepted_errors) / len(accepted_errors) if accepted_errors else None
             ),
@@ -232,15 +255,55 @@ def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
             ),
         }
 
+    by_method_seed = {
+        method: {record.seed: record for record in by_method[method]}
+        for method in methods
+    }
+    pairwise_acceptance: dict[str, dict[str, object]] = {}
+    for index, left in enumerate(methods):
+        for right in methods[index + 1:]:
+            seeds = sorted(by_method_seed[left])
+            left_only = sum(
+                by_method_seed[left][seed].accepted and not by_method_seed[right][seed].accepted
+                for seed in seeds
+            )
+            right_only = sum(
+                by_method_seed[right][seed].accepted and not by_method_seed[left][seed].accepted
+                for seed in seeds
+            )
+            both = sum(
+                by_method_seed[left][seed].accepted and by_method_seed[right][seed].accepted
+                for seed in seeds
+            )
+            neither = len(seeds) - left_only - right_only - both
+            pairwise_acceptance[f"{left}__vs__{right}"] = {
+                "left_method": left,
+                "right_method": right,
+                "shared_seed_count": len(seeds),
+                "both_accepted": both,
+                "left_only_accepted": left_only,
+                "right_only_accepted": right_only,
+                "neither_accepted": neither,
+                "acceptance_rate_difference_left_minus_right": (
+                    float(summaries[left]["acceptance_rate"])
+                    - float(summaries[right]["acceptance_rate"])
+                ),
+                "interpretation": "Descriptive paired counts only; no significance test or winner is inferred.",
+            }
+
     return {
-        "schema": "uqpu-equation-discovery-matched-comparison-v1",
+        "schema": "uqpu-equation-discovery-matched-comparison-v2",
         "method_ids": list(methods),
         "preregistered_seed_count": len({record.seed for record in records}),
         "shared_budget": asdict(records[0].budget),
         "methods": summaries,
+        "pairwise_acceptance": pairwise_acceptance,
         "interpretation": (
-            "Descriptive benchmark summary only. Acceptance is defined by the frozen benchmark "
-            "rule; it does not establish a physical law, independent replication, device benefit, "
-            "or economic advantage outside the measured resource boundary."
+            "Descriptive benchmark summary only. Marginal 95% Wilson intervals treat seed runs as "
+            "an exchangeable Bernoulli sample for this fixed benchmark and do not account for tuning "
+            "or multiple comparisons. Pairwise seed counts are descriptive; no p-values or winner are "
+            "produced. Acceptance is defined by the frozen benchmark rule and does not establish a "
+            "physical law, independent replication, device benefit, or economic advantage outside the "
+            "measured resource boundary."
         ),
     }
