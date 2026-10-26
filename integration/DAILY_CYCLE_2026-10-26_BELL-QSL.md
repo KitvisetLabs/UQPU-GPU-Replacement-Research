@@ -24,6 +24,10 @@ The official arXiv preprint (arXiv:2602.17591), Appendix E.4, distinguishes a se
 
 This caveat is not a refutation of the paper's distinct Bell-QSL theorem. It prevents accidentally transferring a resource convention from one theorem/result class to another.
 
+### Small executable resource-model check
+
+Added `squeezed_vacuum_mean_photon_number` and its inverse to `software/uqpu-prototype/uqpu/fundamental_limits.py`, plus `test_squeezing_probe_resources.py`. The test checks the analytic identity for a single-mode squeezed vacuum and the source example `r = 0.5*log(n)`, where the photon count grows as `(n + 1/n - 2)/4 = Theta(n)`. This is **MODEL_ONLY analytic resource accounting**; it does not simulate Bell-QSL, prove a quantum advantage, or estimate wall-plug energy. Exact-head CI remains the acceptance gate.
+
 Other surveillance deltas were checked against current repository coverage:
 - MorphingNet symbolic regression has pending-branch coverage (PR #117); it was not duplicated as merged evidence.
 - AI-generated mathematical instruments are covered by canonical Batch 062.
