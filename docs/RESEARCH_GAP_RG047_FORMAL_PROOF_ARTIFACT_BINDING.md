@@ -1,7 +1,7 @@
 # Research gap RG-047 — formal-proof artifact binding and verification state
 
 **Date opened:** 2026-10-27  
-**Status:** PARTIALLY ADDRESSED — standalone byte-binding contract and tests added; integration into equation-discovery records and a real pinned proof run remain OPEN  
+**Status:** PARTIALLY ADDRESSED — standalone byte binding is on main; EquationHypothesis binding is proposed in PR #132 with exact-head CI still incomplete; a real pinned proof run and independent reproduction remain OPEN  
 **Primary owner:** Lane A — equation-discovery/formal evidence tooling  
 **Evidence owner:** Lane F — reproducibility and evidence classification  
 **Publication owner:** Lane H  
@@ -36,3 +36,12 @@ Reject a KERNEL_CHECKED or INDEPENDENTLY_REPRODUCED record if required checker/e
 ## Synchronization debt
 
 Keep this standalone gap as the canonical focused record until the append-heavy RESEARCH_GAPS.md and WORKLOG.md can be reconciled without truncating prior history. Root directives, INV-025/026/027 and INV-029–035, and the multilingual strategic-plan references remain unchanged.
+
+
+## 2026-10-27 integration delta — pending PR #132
+
+The source branch `research/2026-10-27-rg047-equation-proof-binding` now attaches a typed `FormalProofEvidence` record to `EquationHypothesis`. It requires exact equality between `FormalProofEvidence.statement` and `formal_proof_statement`, matching `claim_id == equation_id`, the `PHYSICAL_EQUATION_HYPOTHESIS` claim kind, and status agreement. The legacy `CHECKED` status is accepted only as an alias for a bound `KERNEL_CHECKED` or `INDEPENDENTLY_REPRODUCED` record.
+
+Regression tests cover status-only rejection, missing evidence, equation-ID mismatch, theorem-statement mismatch, status mismatch, the legacy alias, and the independent-reproduction count. The Python 3.10/3.11/3.12 unit/invariant jobs and CLI smoke step passed on code-bearing Actions run #1681; extended QSP/QSVT, Qiskit and reference-benchmark jobs were still in progress/queued at the last poll. The final documentation head's run #1685 was queued. These results do not establish a pinned theorem check or independent reproduction.
+
+**Canonical status:** proposed, not merged. Main remains at `c60594ad8a02f20e2908c53640b66f9062479002` until PR #132 is reviewed and merged. The next gate is exact-head CI closure followed by one real theorem artifact with pinned checker/toolchain and independent reproduction.

@@ -12,6 +12,8 @@ from collections.abc import Mapping
 import math
 from typing import Iterable
 
+from .formal_proof_evidence import FormalProofEvidence
+
 
 _ALLOWED_EVIDENCE = {
     "CONCEPT",
@@ -49,7 +51,11 @@ _FALSE_DISCOVERY_STATUSES = {
 _FORMAL_PROOF_STATUSES = {
     "NOT_APPLICABLE",
     "NOT_RUN",
-    "CHECKED",
+    "PROOF_TEXT_ONLY",
+    "FORMAL_STATEMENT",
+    "CHECKED",  # Legacy spelling; accepted only with a bound proof-evidence record.
+    "KERNEL_CHECKED",
+    "INDEPENDENTLY_REPRODUCED",
     "FAILED",
     "INCONCLUSIVE",
 }
@@ -80,8 +86,10 @@ class EquationHypothesis:
     counterexample_notes: tuple[str, ...] = field(default_factory=tuple)
     heldout_prediction: str = ""
     proof_or_discriminating_experiment_plan: tuple[str, ...] = field(default_factory=tuple)
+    formal_proof_statement: str = ""
     formal_proof_status: str = "NOT_RUN"
     formal_proof_notes: tuple[str, ...] = field(default_factory=tuple)
+    formal_proof_evidence: FormalProofEvidence | None = None
     false_discovery_status: str = "NOT_ASSESSED"
     false_discovery_notes: tuple[str, ...] = field(default_factory=tuple)
 
@@ -124,8 +132,33 @@ class EquationHypothesis:
             raise ValueError("proof/experiment plan entries must be nonempty strings")
         if self.formal_proof_status not in _FORMAL_PROOF_STATUSES:
             raise ValueError("unknown formal_proof_status")
-        if self.formal_proof_status in {"CHECKED", "FAILED"} and not self.formal_proof_notes:
-            raise ValueError("formal_proof_notes are required for checked or failed proof attempts")
+        if self.formal_proof_status in {
+            "CHECKED", "KERNEL_CHECKED", "INDEPENDENTLY_REPRODUCED", "FAILED", "INCONCLUSIVE"
+        } and not self.formal_proof_notes:
+            raise ValueError("formal_proof_notes are required for checked, failed or inconclusive proof attempts")
+
+        proof_record = self.formal_proof_evidence
+        if self.formal_proof_status not in {"NOT_APPLICABLE", "NOT_RUN"} and proof_record is None:
+            raise ValueError("formal_proof_evidence is required when formal_proof_status records an attempt")
+        if proof_record is not None:
+            if not isinstance(proof_record, FormalProofEvidence):
+                raise ValueError("formal_proof_evidence must be a FormalProofEvidence record")
+            proof_record.validate_metadata()
+            if not self.formal_proof_statement.strip():
+                raise ValueError("formal_proof_statement is required when a proof record is attached")
+            if proof_record.statement != self.formal_proof_statement:
+                raise ValueError("formal proof statement must match formal_proof_statement exactly")
+            if proof_record.claim_id != self.equation_id:
+                raise ValueError("formal proof claim_id must match equation_id")
+            if proof_record.claim_kind != "PHYSICAL_EQUATION_HYPOTHESIS":
+                raise ValueError("equation hypotheses require PHYSICAL_EQUATION_HYPOTHESIS proof records")
+            allowed_record_statuses = (
+                {"KERNEL_CHECKED", "INDEPENDENTLY_REPRODUCED"}
+                if self.formal_proof_status == "CHECKED"
+                else {self.formal_proof_status}
+            )
+            if proof_record.status not in allowed_record_statuses:
+                raise ValueError("formal_proof_status does not match bound formal_proof_evidence status")
         if self.false_discovery_status not in _FALSE_DISCOVERY_STATUSES:
             raise ValueError("unknown false_discovery_status")
         if self.false_discovery_status == "FALSE_DISCOVERY_FOUND" and not self.false_discovery_notes:
@@ -201,8 +234,10 @@ def required_discovery_fields() -> tuple[str, ...]:
         "counterexample_notes",
         "heldout_prediction",
         "proof_or_discriminating_experiment_plan",
+        "formal_proof_statement",
         "formal_proof_status",
         "formal_proof_notes",
+        "formal_proof_evidence",
         "false_discovery_status",
         "false_discovery_notes",
     )

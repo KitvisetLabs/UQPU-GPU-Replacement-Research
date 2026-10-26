@@ -1,0 +1,125 @@
+{
+  "integration_id": "INT-20261027-RG047-PROOF-BINDING",
+  "date": "2026-10-27",
+  "source_branch": "research/2026-10-27-rg047-equation-proof-binding",
+  "starting_main_sha": "c60594ad8a02f20e2908c53640b66f9062479002",
+  "source_commits": [
+    {
+      "sha": "ff00d14da856437eccc0c249de1c2180e9b1dbcb",
+      "role": "batch_record"
+    },
+    {
+      "sha": "4aa9f5e92a95834d4daa8dfb3253f6e1009034e8",
+      "role": "equation_hypothesis_proof_binding"
+    },
+    {
+      "sha": "5f4109ed1491ebceb565a4cd7d35049bb3ba0a7c",
+      "role": "regression_tests"
+    },
+    {
+      "sha": "75246a00e221a7c5b481e4a27aab8a9ec21b7705",
+      "role": "exact_statement_binding"
+    },
+    {
+      "sha": "8c87e33346df45659d7747d0a440494d432e62a7",
+      "role": "exact_statement_and_status_only_tests"
+    },
+    {
+      "sha": "f7847782e86e6a929b9917852f15e32cf7f70ac8",
+      "role": "fresh_literature_watch"
+    },
+    {
+      "sha": "151d0288eb08fd1d16f1fe6a4f70b2af026932b6",
+      "role": "rg047_gap_status_update"
+    },
+    {
+      "sha": "c1f814a387921263490b0a2143b661afa5ff260f",
+      "role": "avoid_duplicate_pending_ai_newton_watch"
+    }
+  ],
+  "status": "PR_PREPARATION_EXACT_HEAD_CI_PENDING",
+  "primary_owner_lane": "A",
+  "evidence_owner_lane": "F",
+  "publication_owner_lane": "H",
+  "shared_ids": [
+    "RG-047",
+    "RG-046",
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006",
+    "BIO-001",
+    "FUS-001",
+    "FIN-001",
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "artifacts": {
+    "batch": "docs/BATCH_071_FORMAL_PROOF_EQUATION_BINDING.md",
+    "module": "software/uqpu-prototype/uqpu/equation_discovery.py",
+    "tests": "software/uqpu-prototype/tests/test_equation_discovery.py",
+    "report": "integration/DAILY_CYCLE_2026-10-27_FORMAL_PROOF_BINDING.md",
+    "statement_binding": "software/uqpu-prototype/uqpu/equation_discovery.py::EquationHypothesis.formal_proof_statement",
+    "literature_watch": "docs/literature_watch/2026-10-27-concept-driven-equation-discovery-and-symbolic-material-potentials.md",
+    "gap": "docs/RESEARCH_GAP_RG047_FORMAL_PROOF_ARTIFACT_BINDING.md"
+  },
+  "tests": {
+    "added": true,
+    "executed_locally": false,
+    "exact_head_ci": "PENDING",
+    "cases_added": [
+      "missing proof record",
+      "claim ID mismatch",
+      "status mismatch",
+      "exact theorem statement mismatch",
+      "legacy CHECKED alias",
+      "independent reproduction record",
+      "status-only fail-closed"
+    ]
+  },
+  "evidence_class": "SOFTWARE_CONTRACT_AND_LITERATURE_SURVEILLANCE",
+  "claims_not_established": [
+    "new physical law",
+    "real-QPU advantage",
+    "100x or 100000000x advantage",
+    "memory/storage replacement",
+    "Pangola material substitution",
+    "accepted biomass fuel",
+    "net delivered fusion electricity",
+    "lower project WACC",
+    "Data-Center-to-Phone"
+  ],
+  "lane_status": {
+    "A": "ACTIVE_PROOF_BINDING_CI_PENDING",
+    "B": "ACTIVE_PROVIDER_NEUTRAL_NO_SUBMIT",
+    "C": "ACTIVE_INFORMATION_BOUND_NO_REPLACEMENT_EVIDENCE",
+    "D": "ACTIVE_DEVICE_PROCESS_EVIDENCE_GAP",
+    "E": "ACTIVE_BIO_FUSION_MATERIAL_EVIDENCE_GAPS",
+    "F": "ACTIVE_REPRODUCIBILITY_CI_PENDING",
+    "G": "ACTIVE_DG_CODESIGN_NO_MANUFACTURING_RESULT",
+    "H": "ACTIVE_STRATEGIC_CONTEXT_PRESERVED"
+  },
+  "next_gate": "Exact-head CI; pinned proof run; independent reproduction; RG-046 raw-source/split reconstruction",
+  "literature_delta": [
+    "Symbolic ensemble interatomic potentials, Phys. Rev. Materials 2026-10-09: DFT-referenced aluminum models; no material substitution or experimental qualification.",
+    "AIProver arXiv:2610.05367, 2026-10-04: certificate-driven auto-formalization; preprint metrics not independently reproduced.",
+    "Duffing symbolic rediscovery, APS Open Science 2026-10-13: exact recovery from formula-generated labels is not new physics; held-out/noise/generalization gates remain.",
+    "AI-Newton is already proposed in open PR #111; no duplicate article was made, and PR #111 remains unmerged."
+  ]
+}
