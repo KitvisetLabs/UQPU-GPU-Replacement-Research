@@ -87,3 +87,8 @@ A second material result was located in the fresh surveillance pass and added to
 - Method delta: POD + energy-conserving sampling/weighting + adjoint sensitivities + adaptive basis/sample updates reduce inverse hyperelastic-model training cost while retaining the finite-element formulation. The source reports 9 hours to 41 minutes for a two-phase specimen and a 6-mode/116-element reduction in a synthetic 3D case.
 - Limitations: this is a preprint and remains unreplicated by UQPU. Localized deformation reduces efficiency, full-order checks bound the gain, and reaction-force data do not uniquely determine the constitutive law. The method is for mechanical hyperelasticity, not directly for electronic, optical, thermal, electrochemical or diamond-defect properties.
 - Lane E receives a concrete method-level research gate; D/G receive a conditional package/fixture mechanics interface; F receives the matched full-order, uncertainty and full-cost contract. No Pangola material, device yield, fuel, fusion, finance or physical-law result is promoted.
+
+
+## Artifact-integrity regression guard
+
+Added software/uqpu-prototype/tests/test_20261027_research_integration_records.py. It checks that both machine-readable integration records parse, have unique stable IDs and evidence-bounded status, all declared artifact paths exist, the eight permanent root directives plus the Kanusanan Pongpanna Model and strategic-reference index remain present, and the daily report explicitly covers A–H, FND-001/006, EQN-001 and INV-029/035. The test was not run locally in this cycle; the exact-head GitHub Actions run is the pending execution gate. It does not reproduce either external scientific result.
