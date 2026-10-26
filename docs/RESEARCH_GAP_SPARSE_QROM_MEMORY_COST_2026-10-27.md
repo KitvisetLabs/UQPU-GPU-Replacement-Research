@@ -31,6 +31,6 @@ This is external mathematical evidence. The theorem is not an implementation res
 4. Integrate the result into a workload-level cost model with a clear MODEL_ONLY or SIMULATION_ONLY label until validated end-to-end measurements exist.
 5. Retain a no-promise fallback and fail closed when the input contract does not guarantee sparse support.
 
-## Sync debt
+## Aggregate tracking
 
-This dated gap is intentionally not appended to the large RESEARCH_GAPS.md from a partial snapshot. Preserve it until safe full-history reconciliation can update the aggregate backlog without truncation.
+A concise summary is appended to RESEARCH_GAPS.md after fetching and preserving the full prior file as an exact prefix. This standalone document remains the detailed owner record.
