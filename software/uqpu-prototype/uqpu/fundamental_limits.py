@@ -138,3 +138,35 @@ def fault_tolerance_memory_log_overhead_term(
         raise ValueError("target_error must be finite and strictly between 0 and 1")
     # Difference of logs avoids overflow in time_steps / epsilon.
     return (math.log(time_steps) - math.log(epsilon)) / logical_qubits
+
+def squeezed_vacuum_mean_photon_number(squeezing_parameter: float) -> float:
+    """Mean photon number nbar = sinh(r)^2 for a single-mode squeezed vacuum.
+
+    This is a probe-state resource count, not wall-plug energy for generating,
+    stabilizing or detecting the squeezed field. The helper does not model a
+    two-mode protocol's total photon budget or any device inefficiency.
+    """
+    r = float(squeezing_parameter)
+    if not math.isfinite(r) or r < 0.0:
+        raise ValueError("squeezing_parameter must be finite and >= 0")
+    try:
+        value = math.sinh(r) ** 2
+    except OverflowError as exc:
+        raise ValueError("squeezing_parameter exceeds floating-point range") from exc
+    if not math.isfinite(value):
+        raise ValueError("squeezing_parameter exceeds floating-point range")
+    return value
+
+
+def squeezed_vacuum_squeezing_for_mean_photon_number(
+    mean_photon_number: float,
+) -> float:
+    """Invert nbar = sinh(r)^2 for a single-mode squeezed vacuum.
+
+    The inverse is r = asinh(sqrt(nbar)); it is a state-resource relation,
+    not an estimate of source/pump electricity or practical hardware cost.
+    """
+    nbar = float(mean_photon_number)
+    if not math.isfinite(nbar) or nbar < 0.0:
+        raise ValueError("mean_photon_number must be finite and >= 0")
+    return math.asinh(math.sqrt(nbar))
