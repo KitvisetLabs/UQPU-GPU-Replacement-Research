@@ -51,11 +51,19 @@ class BioOilBatchCostContractTests(unittest.TestCase):
         self.assertAlmostEqual(result.accepted_liquid_mass_yield_kg_per_dry_kg, 180 / 800)
         self.assertAlmostEqual(result.feedstock_cost_usd, 100.0)
         self.assertAlmostEqual(result.preprocessing_cost_usd, 50.0)
+        self.assertAlmostEqual(result.logistics_cost_usd, 25.0)
         self.assertAlmostEqual(result.hydrogen_cost_usd, 100.0)
+        self.assertAlmostEqual(result.catalyst_cost_usd, 40.0)
+        self.assertAlmostEqual(result.utility_cost_usd, 30.0)
+        self.assertAlmostEqual(result.other_opex_usd, 20.0)
         self.assertAlmostEqual(result.accepted_fuel_energy_mj, 6300.0)
         self.assertAlmostEqual(
             result.cost_usd_per_accepted_mj,
             result.net_batch_cost_usd / result.accepted_fuel_energy_mj,
+        )
+        self.assertAlmostEqual(
+            result.cost_usd_per_accepted_gj,
+            result.cost_usd_per_accepted_mj * 1000.0,
         )
         self.assertEqual(result.result_evidence_class, "MODEL_ONLY")
 
