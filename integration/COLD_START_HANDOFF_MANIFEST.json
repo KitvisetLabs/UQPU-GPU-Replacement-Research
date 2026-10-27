@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T13:02:05Z",
+  "prepared_utc": "2026-10-27T13:18:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
+  "canonical_start_sha": "e698c4fc6064d6e9faadf8388ae791b8d90af6f5",
   "priority_lane": "A",
-  "current_frontier": "Batch 078 adds a bounded-observable Hoeffding confidence-radius helper for the finite-shot confidence region used in partial-information ergotropy certification. The full two-stage SDP remains unreproduced; ergotropy is not total device energy. Batch 077 MOSAIC-SR remains literature-only; Batch 076 BIO-001 remains MODEL_ONLY and Pangola data remain missing. Prior head 20dd5cab has successful prototype/invariant and cold-start workflows; exact-head CI for Batch 078 is required.",
+  "current_frontier": "Batch 079 records official preprint arXiv:2610.24077 on Quantinuum Helios color-code QEC. The reported logical-memory and logical-gate error metrics are target-specific external experimental results; UQPU has not independently reproduced them or verified cloud access/pricing. Batch 078 added a bounded-observable Hoeffding confidence-radius helper; its Python 3.10/3.11/3.12 unit/invariant jobs passed but extended QSP/QSVT/Qiskit/reference jobs were still in progress at last check. Batch 078 cold-start audit passed. Exact-head CI for the newest commit is required.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -92,30 +92,35 @@
     "docs/literature_watch/2026-10-27-ergotropy-partial-information-certification.md",
     "docs/RESEARCH_GAP_FND001_ERGOTROPY_PARTIAL_INFORMATION_2026-10-27.md",
     "integration/DAILY_CYCLE_2026-10-27_ERGOTROPY_PARTIAL_INFORMATION.md",
-    "integration/INT-20261027-ERGOTROPY-PARTIAL-INFORMATION.json"
+    "integration/INT-20261027-ERGOTROPY-PARTIAL-INFORMATION.json",
+    "docs/BATCH_079_QUANTINUUM_HELIOS_QEC_PROVIDER_SURVEILLANCE.md",
+    "docs/literature_watch/2026-10-27-quantinuum-helios-color-code-below-threshold.md",
+    "docs/RESEARCH_GAP_QEC_HELIOS_COLORCODE_REPRODUCTION_2026-10-27.md",
+    "integration/DAILY_CYCLE_2026-10-27_QUANTINUUM_HELIOS_PROVIDER_SURVEILLANCE.md",
+    "integration/INT-20261027-QUANTINUUM-HELIOS-COLORCODE-QEC.json"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "FINITE_SHOT_CONFIDENCE_RADIUS_HELPER_ADDED; ERGOTROPY_SDP_REPRODUCTION_OPEN",
+      "status": "FINITE_SHOT_CONFIDENCE_RADIUS_HELPER_ADDED; EXTENDED_CI_PENDING; TARGET_SPECIFIC_QEC_METRICS_RECORDED",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Confirm exact-head Python 3.10/3.11/3.12 CI; then pin the paper's two-stage SDP and compare small-system certificates against exact spectral ergotropy. The helper is not an ergotropy solver."
+      "next_gate": "Finish exact-head extended CI for Batch 078 code; keep logical memory, logical gate, decoder latency and application accepted-output quality as separate metrics."
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
-      "status": "PROVIDER_NEUTRAL_NO_SUBMIT",
-      "evidence_class": "SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK",
-      "next_gate": "keep simulator/dry-run first; paid QPU requires credentials, bounded budget and explicit consent"
+      "status": "HELIOS_COLORCODE_PREPRINT_WATCH; PROVIDER_ACCESS_AND_PRICING_UNVERIFIED",
+      "evidence_class": "LITERATURE_ONLY",
+      "next_gate": "Pin and independently reproduce arXiv:2610.24077 error rates/suppression factors; verify supported cloud access, SDK/lowering path and pricing before any bounded, explicitly consented hardware experiment."
     },
     "C": {
       "owner_path": "research_lanes/C_state_memory_storage_data_movement",
-      "status": "MEMORY_AWARE_THERMODYNAMIC_INFERENCE_AND_PARTIAL_INFORMATION_CERTIFICATE_WATCH",
+      "status": "SYNDROME_AND_DECODER_MEMORY_IO_COSTS_OPEN; PARTIAL_INFORMATION_CERTIFICATE_WATCH",
       "evidence_class": "LITERATURE_ONLY",
       "next_gate": "reproduce memory-order estimator on known finite-state processes; keep active/hidden memory distinct from readable storage and map QROM/state-preparation costs"
     },
     "D": {
       "owner_path": "research_lanes/D_device_chip_fabrication_packaging",
-      "status": "SYMBOLIC_ENSEMBLE_MATERIALS_LITERATURE_ONLY",
+      "status": "HELIOS_COLORCODE_QEC_EXTERNAL_EXPERIMENT; TARGET_SPECIFIC_REPRODUCTION_OPEN",
       "evidence_class": "LITERATURE_ONLY",
       "next_gate": "pin source/code/data and preregister aluminum-first held-out reproduction; keep carbon-specific transfer separate"
     },
@@ -127,19 +132,19 @@
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "BATCH_078_SYNCED; STATISTICAL_HELPER_ADDED; SDP_REPRODUCTION_OPEN",
+      "status": "BATCH_079_SYNCED; ERGOTROPY_HELPER_UNIT_MATRIX_PASSED; EXTENDED_CI_PENDING",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Keep ergotropy lower bounds separate from total device energy and accepted-task economics; reconcile focused gap into RESEARCH_GAPS.md only through safe append-only synchronization."
+      "next_gate": "Inspect exact-head extended CI; maintain full accepted-task cost boundaries and keep QEC/logical-memory metrics separate from application and economic claims."
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
-      "status": "D_G_CODSIGN_ACTIVE_NO_FABRICATION_RESULT",
+      "status": "D_G_CODESPACE_DEVICE_AND_DECODER_CODSIGN_OPEN; NO_FACTORY_YIELD_RESULT",
       "evidence_class": "FABRICATION_PROPOSAL",
       "next_gate": "translate target-specific routed workload and device requirements into metrology/process-window contracts"
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "DATED_ERGOTROPY_PARTIAL_INFORMATION_PRL_WATCH_ADDED",
+      "status": "DATED_QUANTINUUM_HELIOS_PROVIDER_WATCH_ADDED",
       "evidence_class": "LITERATURE_ONLY",
       "next_gate": "preserve all six multilingual master-plan links and strategic AI-agent/funding context; no claim promotion"
     },
@@ -169,7 +174,9 @@
     "MOSAIC-SR matched equation-discovery surveillance",
     "RG-FND001-ERGOTROPY-PARTIAL-INFO-001",
     "partial-information ergotropy certificate",
-    "bounded-observable Hoeffding confidence radii"
+    "bounded-observable Hoeffding confidence radii",
+    "RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001",
+    "Quantinuum Helios color-code below-threshold QEC preprint"
   ],
   "open_gates": [
     "RG-033",
@@ -186,7 +193,10 @@
     "RG-EQN-009 (under RG-EQN-008)",
     "exact-head CI for commit 3774fe187f69d553a639be018dbd59df3451ae64",
     "RG-FND001-ERGOTROPY-PARTIAL-INFO-001",
-    "exact-head CI for Batch 078"
+    "exact-head CI for Batch 078",
+    "RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001",
+    "exact-head extended CI for Batch 078 confidence helper",
+    "exact-head CI for Batch 079 provider surveillance"
   ],
   "master_reference_languages": [
     "Thai",
@@ -215,11 +225,11 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review. Batch 078: RESEARCH_GAPS.md aggregate not rewritten because it is a large append-only canonical file; focused RG-FND001-ERGOTROPY-PARTIAL-INFO-001 and integration record are published. Reconcile the aggregate only through safe append-only synchronization.",
-  "next_independent_action": "Inspect exact-head prototype/invariant CI and cold-start audit triggered by Batch 078; repair any failure at the first failing step. If green, pin the ergotropy paper's two-stage SDP and compare small-system certificates against exact spectral ergotropy, including finite-shot confidence coverage. Continue the RG-EQN-008 matched discovery comparison, BIO-001 Pangola batch-data gate and FUS-001 net-electricity cost-driver work.",
+  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review. Batch 078: RESEARCH_GAPS.md aggregate not rewritten because it is a large append-only canonical file; focused RG-FND001-ERGOTROPY-PARTIAL-INFO-001 and integration record are published. Reconcile the aggregate only through safe append-only synchronization. Batch 079: RESEARCH_GAPS.md aggregate remains unchanged to avoid unsafe replacement of large append-only history; focused RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001 is canonical. Batch 078's focused ergotropy gap is also awaiting aggregate reconciliation.",
+  "next_independent_action": "Inspect the latest exact-head prototype/invariant and cold-start workflows. Confirm the Batch 078 Python matrix and extended QSP/QSVT/Qiskit/reference jobs complete; repair the first failing step if needed. Then pin and independently reproduce the Helios color-code preprint and verify target access/pricing. Continue the RG-EQN-008 matched equation-discovery comparison, BIO-001 Pangola batch-data gate and FUS-001 net-electricity cost-driver work.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
-  "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-27_ERGOTROPY_PARTIAL_INFORMATION.md",
-  "latest_literature_watch": "docs/literature_watch/2026-10-27-ergotropy-partial-information-certification.md",
+  "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-27_QUANTINUUM_HELIOS_PROVIDER_SURVEILLANCE.md",
+  "latest_literature_watch": "docs/literature_watch/2026-10-27-quantinuum-helios-color-code-below-threshold.md",
   "last_cycle_ci_observation": {
     "initial_commit": "6742ac1b9bf68b5d0a726f582efa0b5de7bda001",
     "initial_cold_start_run": 40454588726,
@@ -240,10 +250,10 @@
     "repair_commit_pending": false
   },
   "latest_handoff_audit": {
-    "run_number": 1020,
-    "run_id": 40501063980,
+    "run_number": 1021,
+    "run_id": 40510347157,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40501063980"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40510347157"
   },
   "latest_core_run_observation": {
     "run_number": 1775,
@@ -254,25 +264,28 @@
     "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40455182752"
   },
   "current_head_validation": {
-    "commit": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
-    "core_run_number": 1812,
-    "core_run_id": 40501063911,
-    "core_conclusion": "success",
-    "cold_start_run_number": 1020,
-    "cold_start_run_id": 40501063980,
+    "commit": "e698c4fc6064d6e9faadf8388ae791b8d90af6f5",
+    "core_run_number": 1813,
+    "core_run_id": 40510347104,
+    "core_conclusion": "in_progress",
+    "python_matrix": "success",
+    "extended_jobs": "in_progress",
+    "cold_start_run_number": 1021,
+    "cold_start_run_id": 40510347157,
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-27T13:02:05Z"
+    "observed_at_utc": "2026-10-27T13:18:00Z"
   },
   "latest_cycle_ci_observation": {
-    "prior_head": "3774fe187f69d553a639be018dbd59df3451ae64",
-    "prior_core_run": 1811,
+    "prior_head": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
+    "prior_core_run": 1812,
     "prior_core_conclusion": "success",
-    "repair_head": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
-    "repair_cold_start_run": 1020,
+    "repair_head": "e698c4fc6064d6e9faadf8388ae791b8d90af6f5",
+    "repair_cold_start_run": 1021,
     "repair_cold_start_conclusion": "success",
-    "repair_core_run": 1812,
-    "repair_core_status": "success",
-    "observed_at_utc": "2026-10-27T13:02:05Z"
+    "repair_core_run": 1813,
+    "repair_core_status": "in_progress_extended_jobs",
+    "unit_matrix_python_3_10_3_11_3_12": "success",
+    "observed_at_utc": "2026-10-27T13:18:00Z"
   },
-  "latest_batch": "Batch 078 — FND-001 partial-information ergotropy certificate; see docs/BATCH_078_FND001_ERGOTROPY_PARTIAL_INFORMATION.md"
+  "latest_batch": "Batch 079 — Quantinuum Helios color-code QEC provider surveillance; see docs/BATCH_079_QUANTINUUM_HELIOS_QEC_PROVIDER_SURVEILLANCE.md"
 }

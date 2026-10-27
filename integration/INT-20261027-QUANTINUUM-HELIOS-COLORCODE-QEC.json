@@ -1,0 +1,63 @@
+{
+  "schema": "uqpu-integration-record-v1",
+  "id": "INT-20261027-QUANTINUUM-HELIOS-COLORCODE-QEC",
+  "date": "2026-10-27",
+  "starting_main_sha": "e698c4fc6064d6e9faadf8388ae791b8d90af6f5",
+  "primary_lane": "B",
+  "co_owners": [
+    "A",
+    "D",
+    "F",
+    "G",
+    "H"
+  ],
+  "evidence_class": "LITERATURE_ONLY",
+  "source": {
+    "title": "Quantum error correction well below the color code threshold",
+    "authors": [
+      "Ali Lavasani",
+      "Adam P. Reed",
+      "Joan M. Dreiling",
+      "Annie J. Park",
+      "Michael Mills",
+      "Matteo Puviani",
+      "Gabriel Matos",
+      "M. S. Allman",
+      "Noah Berthusen",
+      "Natalie C. Brown",
+      "Victor E. Colussi",
+      "Cameron Foltz",
+      "Daniel Gresh",
+      "Reza Haghshenas",
+      "Akhil Isanaka",
+      "Nikhil Kotibhaskar",
+      "Anthony R. Potter",
+      "Ciarán Ryan-Anderson",
+      "Brian Neyenhuis",
+      "David Hayes",
+      "Tzvetan S. Metodi"
+    ],
+    "arxiv": "2610.24077",
+    "submitted": "2026-10-16",
+    "updated": "2026-10-20",
+    "url": "https://arxiv.org/abs/2610.24077",
+    "scope": "Triangular color-code memory experiments at distances 3, 5, and 7 on Quantinuum Helios; author-reported experimental results"
+  },
+  "reported_metrics": {
+    "logical_memory_error_per_round_low": "5e-6",
+    "memory_suppression_factor_per_tested_distance_step": "12 with reported uncertainty -2/+3",
+    "logical_two_qubit_clifford_error_distance_5": "approximately 7e-5",
+    "logical_gate_suppression_factor": "9 with reported uncertainty -3/+8",
+    "decoder_claim": "CNN and Transformer decoders reported faster than syndrome-extraction cadence in the evaluated setup"
+  },
+  "evidence_boundary": {
+    "independently_reproduced_by_uqpu": false,
+    "provider_access_verified": false,
+    "paid_qpu_job_submitted": false,
+    "application_advantage_demonstrated": false,
+    "end_to_end_economics_demonstrated": false,
+    "universal_fault_tolerance_demonstrated": false
+  },
+  "open_gap": "docs/RESEARCH_GAP_QEC_HELIOS_COLORCODE_REPRODUCTION_2026-10-27.md",
+  "next_gate": "Pin and reproduce published error rates and suppression factors, then verify target access and pricing; only then propose an identical-useful-output workload test"
+}

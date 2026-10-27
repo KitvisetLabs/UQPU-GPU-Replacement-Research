@@ -6,6 +6,10 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-27 — Quantinuum Helios QEC provider surveillance
+
+Batch 079 records the official preprint [arXiv:2610.24077](https://arxiv.org/abs/2610.24077), reporting triangular color-code logical-memory error suppression on Quantinuum Helios at code distances 3, 5 and 7. The reported memory and logical-gate metrics remain distinct from full algorithm success, provider-independent performance, and cost per accepted task. UQPU has not reproduced the result or verified the target's access/pricing for a new experiment. The dated watch, source-pinned reproduction gap and A–H integration record are linked in [Batch 079](docs/BATCH_079_QUANTINUUM_HELIOS_QEC_PROVIDER_SURVEILLANCE.md). Batch 078's finite-shot confidence helper remains subject to exact-head extended CI. No paid QPU job or mission-level advantage is claimed.
+
 ## Latest Eight-Lane research cycle — 2026-10-27 — FND-001 partial-information ergotropy certificate
 
 Batch 078 adds the bounded-observable Hoeffding confidence-radius helper and tests, plus a dated watch and reproduction gap for Pagliaro et al., *Physical Review Letters* 137, 130401 (DOI [10.1103/pl26-g6vy](https://doi.org/10.1103/pl26-g6vy)). The paper's certificate concerns maximum extractable work from a partially characterized state with a known Hamiltonian; the code addition implements only its finite-shot confidence-radius formula, not the SDP or ergotropy itself. The authors' IBM-processor result is external evidence and has not been reproduced by UQPU. Exact-head CI is required for this code change. No net energy gain, QPU advantage, new physical law, Pangola substitution, accepted fuel, fusion electricity, WACC reduction or Data-Center-to-Phone milestone is claimed. All INV-029–035 and INV-025–027 evidence boundaries remain binding.
