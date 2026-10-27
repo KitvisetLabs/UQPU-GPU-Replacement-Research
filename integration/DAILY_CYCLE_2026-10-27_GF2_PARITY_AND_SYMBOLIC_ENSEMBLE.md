@@ -58,3 +58,8 @@ INV-025/026/027 and their 100,000,000-GPU/universal-subsystem moonshots remain p
 Exact-head core workflow #1788 and cold-start audit #992 passed on the starting main SHA; those runs do not validate the new PR branch. The new reference tests must pass the branch's own hosted matrix before their status is promoted. No paid/live QPU job was attempted. No commercial material/fuel/fusion or financing evidence was added.
 
 Next: inspect the PR's exact-head Actions; if green, update the parity gap with the independent-rank and objective-preservation result. If any test fails, preserve the failing counterexample and fix the test/contract before implementing a QAOA circuit. In parallel, pin the symbolic-ensemble code/data and preregister the aluminum reproduction. Only after independent replication should a carbon-specific study be considered.
+
+
+## CI handoff correction — 2026-10-27
+
+The first exact-head cold-start audit for source head `b3fb93b7f8b1d6edfb4e24baecfd15825293862d` failed closed only because the latest commit message lacked the required `Research-Sync: pending-main` trailer. This is a handoff-governance failure, not a scientific-test result. The current follow-up commit carries the required trailer and triggers a new exact-head audit; the new run must pass before the handoff is marked complete. The earlier failure remains part of the audit history.
