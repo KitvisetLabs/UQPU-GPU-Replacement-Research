@@ -3,7 +3,7 @@
 **Opened:** 2026-10-28  
 **Primary owner:** Lane B — cloud/QPU/provider integration and target evidence  
 **Co-owners:** Lane A — workload quality/reference certificates; Lane C — decoder memory/I/O; Lane F — benchmark/economics; Lane H — literature publication  
-**Status:** OPEN / LITERATURE_ONLY / REPRODUCTION_NOT_RUN  
+**Status:** OPEN / SOFTWARE_CONTRACT_ONLY + LITERATURE_ONLY / SOURCE_REPRODUCTION_NOT_RUN  
 **Related:** INV-001/002/004/007/010/019/022/024, FND-003, INV-029/034/035  
 **Primary source:** Banfi et al., [arXiv:2610.28008v1](https://arxiv.org/abs/2610.28008), submitted 2026-10-20  
 **Literature watch:** `docs/literature_watch/2026-10-28-certified-qldpc-decoder-benchmark.md`
@@ -54,3 +54,11 @@ Fail the implementation if a certified interval excludes the exhaustive result, 
 - **FND/EQN:** a statistical/computational reference is not a physical-speed-limit measurement or a new physical law.
 
 **Evidence class:** `LITERATURE_ONLY` until independent bounds, controls and source-level reproduction pass. Any synthetic tiny-instance test is a software contract, not hardware or commercial evidence.
+
+
+## Batch 085 software-contract scaffold — not source reproduction
+
+A generic, dependency-free interval checker was added at `software/uqpu-prototype/uqpu/qec_ml_certificate.py`, with tests in `software/uqpu-prototype/tests/test_qec_ml_certificate.py`. It enumerates a supplied finite list of abstract TRUE/COMPETING candidates to obtain exact minima, verifies that declared intervals contain those minima, classifies only strict interval separation as SUCCESS or FAILURE, leaves ties/overlap UNDECIDED, and checks the aggregate identity
+`error interval = [failure/N, (failure + undecided)/N]`, whose width is `undecided/N`.
+
+Seven focused tests cover positive/negative classification, ties, loose intervals, interval exclusion, malformed candidates and aggregate accounting. These tests validate the generic contract only. The helper does **not** model Pauli errors, syndromes, code/check matrices, circuit-level noise or the paper's branch-and-bound search. No bivariate-bicycle example has been reproduced. Full repository acceptance depends on exact-head CI.

@@ -63,3 +63,12 @@ Xie, “What the Machine Invented: Mining New Mathematical Instruments from Open
 This is a complementary source for provenance-aware triage, not a second proof-compression metric. The follow-up must pin the exact corpus commit, source/manuscript hashes, license, Lean/Mathlib revision, compiler/options and extraction code; independently reconstruct three records from one family; and report kernel-check, antecedents, dependencies, counterexamples, failed parses and resource measurements separately. Use a known theorem as a positive control and false/redundant claims plus benign tactic changes as negative/adversarial controls. If claim/dependency reconstruction is not stable or proof status cannot be reproduced, reject the record as a decision signal. No source claim is promoted to a checked theorem, new physical law or technology advantage from the survey alone.
 
 Source watch: `docs/literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md`. Batch/integration: `docs/BATCH_084_AI_MATH_CORPUS_PROVENANCE.md` and `integration/DAILY_CYCLE_2026-10-28_AI_MATH_CORPUS_PROVENANCE.md`.
+
+
+## Supplementary source audit — long-horizon formalization (2026-10-28)
+
+Lu, Deng, Zhu and Ji, “Long-horizon autoformalization of a core theorem underlying MIP* = RE,” arXiv:2609.19814v3 (revised 2026-10-21), describe FormalFlow: a shared blueprint and nested planning/proving/review loops for a large human-supervised AI formalization. The authors report a kernel-checked Lean 4 development of the low individual-degree test's quantum soundness theorem and report correcting side conditions and intermediate error bounds. UQPU has not independently reproduced these claims.
+
+The associated public repository was inspected at `LionSR/MIPStarRE@95ccdf5a7591d6eb98b4c9c425f1e2d8408d8610`; its Lean and Mathlib declarations request `v4.35.0-rc2`. That commit predates the manuscript's v3 revision by one day, so source-to-version alignment is unresolved. The next gate is a pinned paper/Lean/blueprint mapping for three claims, exact statement and dependency comparison, a complete pinned build, and independent source-faithfulness review. Formal kernel checking, novelty, paper fidelity and physical adequacy remain distinct predicates.
+
+Source watch: `docs/literature_watch/2026-10-28-formalflow-long-horizon-autoformalization.md`.
