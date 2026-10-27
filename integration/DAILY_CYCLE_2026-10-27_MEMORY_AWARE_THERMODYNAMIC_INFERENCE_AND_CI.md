@@ -71,7 +71,11 @@ A reproducible handoff defect was found in the cold-start audit: it selected the
 
 ## Integration, synchronization and CI
 
-This commit adds Batch 072, the focused FND-001 gap, the literature watch, this integration record, a README latest-cycle entry, aggregate gap/worklog append records, the updated cold-start manifest, ancestry-aware trailer validation, and unit tests. The two Poincare PR trailer-repair commits are recorded above but are not treated as merged. Main-start core workflow #1776 and cold-start audit #979 passed on SHA 0dadabfb41d18f51e43a8722e6bd938d73961dfe. The new main commit's exact-head CI must be read after publication. No local test-pass claim is made because the runtime cannot clone GitHub via DNS.
+This commit adds Batch 072, the focused FND-001 gap, the literature watch, this integration record, a README latest-cycle entry, aggregate gap/worklog append records, the updated cold-start manifest, ancestry-aware trailer validation, and unit tests. The two Poincare PR trailer-repair commits are recorded above but are not treated as merged. Main-start core workflow #1776 and cold-start audit #979 passed on SHA 0dadabfb41d18f51e43a8722e6bd938d73961dfe. Exact-head cold-start audit #988 passed. Core workflow #1784 ran 741 tests and reported one failure plus 21 skips: the new trailer regression test supplied literal backslash-n characters rather than line breaks, so the message parser correctly rejected the fixture. This is a test-fixture defect, not a production audit or scientific failure. The follow-up commit replaces the fixture with a multiline string; its exact-head core CI is pending. No local test-pass claim is made because the runtime cannot clone GitHub via DNS.
+
+## CI follow-up after publication
+
+On commit 16a02848d5d3e7da148250d119e6111945ce461b, cold-start audit run #988 passed and core workflow #1784 failed only at test_commit_trailer_uses_canonical_main_ancestry because the fixture escaped the newline twice. The production ancestry logic passed the hosted handoff audit. The next main commit corrects the fixture with a literal multiline string; exact-head CI for that repair must be checked separately. Branch trailer-repair commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc have cold-start audit successes #986 and #987; their core workflows remain in progress.
 
 ## Highest-value next gates
 

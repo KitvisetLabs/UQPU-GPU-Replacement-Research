@@ -170,7 +170,7 @@
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
   "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review.",
-  "next_independent_action": "Verify exact-head main CI after the ancestry-aware handoff fix; review/merge the Poincare watch only after its corrected branch passes core CI; then pin and independently rebuild the formal proof bundle and reproduce the FND-001 memory-aware estimator on held-out finite-state processes.",
+  "next_independent_action": "Rerun exact-head core CI after the test-fixture correction; if green, update the verified CI snapshot, then review the Poincare watch and independently reproduce the FND-001 memory-aware estimator.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
   "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-27_MEMORY_AWARE_THERMODYNAMIC_INFERENCE_AND_CI.md",
   "latest_literature_watch": "docs/literature_watch/2026-10-27-memory-aware-thermodynamic-inference.md",
@@ -194,10 +194,10 @@
     "repair_commit_pending": false
   },
   "latest_handoff_audit": {
-    "run_number": 979,
-    "run_id": 40460198350,
+    "run_number": 988,
+    "run_id": 40472453792,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40460198350"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40472453792"
   },
   "latest_core_run_observation": {
     "run_number": 1775,
@@ -208,13 +208,13 @@
     "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40455182752"
   },
   "current_head_validation": {
-    "commit": "0dadabfb41d18f51e43a8722e6bd938d73961dfe",
-    "core_run_number": 1776,
-    "core_run_id": 40460198276,
-    "core_conclusion": "success",
-    "cold_start_run_number": 979,
-    "cold_start_run_id": 40460198350,
+    "commit": "16a02848d5d3e7da148250d119e6111945ce461b",
+    "core_run_number": 1784,
+    "core_run_id": 40472453714,
+    "core_conclusion": "failure",
+    "cold_start_run_number": 988,
+    "cold_start_run_id": 40472453792,
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-27T06:17:14Z"
+    "observed_at_utc": "2026-10-27T08:18:08Z"
   }
 }
