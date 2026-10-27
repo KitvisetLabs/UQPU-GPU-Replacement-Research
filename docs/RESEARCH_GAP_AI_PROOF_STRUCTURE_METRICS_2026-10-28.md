@@ -54,3 +54,12 @@ Reject a metric as a decision signal if it changes materially under benign compi
 - **H:** publish methods and negative results while preserving the six-language master-plan and strategic AI-agent/funding references.
 
 **Evidence class:** `LITERATURE_ONLY` until pinned data and reproducible local results exist. Any future synthetic metric test is a software contract, not evidence of a new physical law.
+
+
+## Supplementary source audit — AI mathematical-instrument corpus
+
+Xie, “What the Machine Invented: Mining New Mathematical Instruments from OpenAI's October 2026 Release of AI-Generated Mathematics,” arXiv:2610.17090 (posted 2026-10-12), surveys 38 problem families from a public collection described as 722 AI-written manuscripts / 372 families. Its instrument records connect claims to lemmas/constructions/inequalities/proof mechanisms, antecedents, caveats, formalization status and dependencies. The source explicitly characterizes novelty judgments as provisional and reports no Lean development compiled or kernel-checked for the survey.
+
+This is a complementary source for provenance-aware triage, not a second proof-compression metric. The follow-up must pin the exact corpus commit, source/manuscript hashes, license, Lean/Mathlib revision, compiler/options and extraction code; independently reconstruct three records from one family; and report kernel-check, antecedents, dependencies, counterexamples, failed parses and resource measurements separately. Use a known theorem as a positive control and false/redundant claims plus benign tactic changes as negative/adversarial controls. If claim/dependency reconstruction is not stable or proof status cannot be reproduced, reject the record as a decision signal. No source claim is promoted to a checked theorem, new physical law or technology advantage from the survey alone.
+
+Source watch: `docs/literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md`. Batch/integration: `docs/BATCH_084_AI_MATH_CORPUS_PROVENANCE.md` and `integration/DAILY_CYCLE_2026-10-28_AI_MATH_CORPUS_PROVENANCE.md`.

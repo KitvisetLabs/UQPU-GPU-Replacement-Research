@@ -6,7 +6,15 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest Eight-Lane research cycle — 2026-10-28 — AI proof-structure metrics
+## Latest Eight-Lane research cycle — 2026-10-28 — AI mathematics corpus provenance
+
+[Batch 084](docs/BATCH_084_AI_MATH_CORPUS_PROVENANCE.md) adds a source watch for Ying Xie's [arXiv:2610.17090](https://arxiv.org/abs/2610.17090), a survey of AI-generated mathematical “instruments” with claim, antecedent, caveat, formalization and dependency records. The survey's novelty assessments are provisional and it reports no Lean development compiled or kernel-checked. The [literature watch](docs/literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md) supplements, but does not replace, [RG-048](docs/RESEARCH_GAP_AI_PROOF_STRUCTURE_METRICS_2026-10-28.md) or Batch 083. No new score, theorem, equation or physical-law status was introduced. The follow-up is a pinned three-record reconstruction with positive/negative controls and independent checking.
+
+All A–H lanes remain active; Lane A remains Priority #1. FND-001–006 and EQN-001–006 are still evidence-gated. INV-029–033 remain unachieved goals; INV-034/035 are advanced only at the method/provenance level. No real-QPU, device, Pangola-carbon substitution, accepted bio-oil, commercial fusion, WACC or Data-Center-to-One-Phone result is claimed. All high-visibility root directives, INV-025–027, the six-language strategic master-plan links and strategic AI-agent/funding references remain preserved.
+
+**Starting-head CI:** prototype/invariant run [#1819](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40547643401) passed 15/15 jobs and cold-start audit [#1034](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40547643503) passed on `272f2a59ce0053c5f4b518edfacd5531b69eb5d1`. The new Batch 084 documentation commit requires its own exact-head Actions checks.
+
+## Previous Eight-Lane research cycle — 2026-10-28 — AI proof-structure metrics
 
 [Batch 083](docs/BATCH_083_AI_PROOF_STRUCTURE_METRICS.md) records a new literature delta from Aryal's [arXiv:2610.25357](https://arxiv.org/abs/2610.25357) preprint on proof-term structure, redundancy and logical compression in selected AI-generated mathematics corpora. The source is not reproduced by UQPU. The [dated literature watch](docs/literature_watch/2026-10-28-ai-proof-structure-compression-audit.md), [focused RG-048 gap](docs/RESEARCH_GAP_AI_PROOF_STRUCTURE_METRICS_2026-10-28.md), and [A–H integration record](integration/DAILY_CYCLE_2026-10-28_PROOF_STRUCTURE_METRICS.md) propose a pinned-toolchain reconstruction with shared-lemma and redundant-claim controls. No code metric was added because source definitions/corpus/toolchain are not yet reproduced; formal proof efficiency remains distinct from proof correctness, mathematical novelty and physical truth.
 
