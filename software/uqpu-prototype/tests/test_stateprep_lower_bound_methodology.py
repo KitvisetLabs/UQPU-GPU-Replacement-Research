@@ -1,3 +1,5 @@
+import hashlib
+import json
 import unittest
 
 from uqpu.stateprep_lower_bound_methodology import (
@@ -67,6 +69,15 @@ class StateprepLowerBoundMethodologyTests(unittest.TestCase):
     def test_non_natural_label_requires_a_failed_criterion(self):
         with self.assertRaisesRegex(ValueError, "NON_NATURAL requires"):
             self._build(naturalness_status="NON_NATURAL")
+
+    def test_validator_rejects_inconsistent_naturalness_even_with_rehashed_record(self):
+        record = self._build()
+        record["holds_for_sufficient_fraction_of_haar_random_states"] = False
+        body = {key: value for key, value in record.items() if key != "record_sha256"}
+        encoded = json.dumps(body, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+        record["record_sha256"] = hashlib.sha256(encoded).hexdigest()
+        with self.assertRaisesRegex(ValueError, "NATURAL requires both"):
+            validate_stateprep_lower_bound_methodology(record)
 
     def test_tampered_record_is_rejected(self):
         record = self._build()

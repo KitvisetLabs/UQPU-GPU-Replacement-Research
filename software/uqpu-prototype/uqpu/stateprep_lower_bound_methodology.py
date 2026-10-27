@@ -140,6 +140,37 @@ def validate_stateprep_lower_bound_methodology(record: dict[str, Any]) -> bool:
     """Validate metadata and digest; this does not validate a proof or theorem."""
     if not isinstance(record, dict) or record.get("schema") != SCHEMA:
         raise ValueError("unknown or missing schema")
+    for name in (
+        "claim_id",
+        "claim_statement",
+        "proof_method",
+        "cryptographic_assumption_statement",
+        "assessment_basis",
+    ):
+        value = record.get(name)
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError(f"{name} is required")
+    if record.get("naturalness_status") not in _NATURALNESS:
+        raise ValueError("unknown naturalness_status")
+    for name in (
+        "holds_for_sufficient_fraction_of_haar_random_states",
+        "efficiently_testable_given_all_amplitudes",
+        "target_is_superpolynomial_lower_bound",
+        "against_fixed_magic_hierarchy_level",
+        "standard_cryptographic_assumption_adopted",
+    ):
+        if not _is_bool_or_none(record.get(name)):
+            raise ValueError(f"{name} must be True, False, or None")
+    if record["naturalness_status"] == "NATURAL" and (
+        record["holds_for_sufficient_fraction_of_haar_random_states"] is not True
+        or record["efficiently_testable_given_all_amplitudes"] is not True
+    ):
+        raise ValueError("NATURAL requires both the largeness and constructivity criteria to be True")
+    if record["naturalness_status"] == "NON_NATURAL" and (
+        record["holds_for_sufficient_fraction_of_haar_random_states"] is not False
+        and record["efficiently_testable_given_all_amplitudes"] is not False
+    ):
+        raise ValueError("NON_NATURAL requires at least one naturalness criterion to be False")
     if record.get("scope_classification") not in _SCOPE:
         raise ValueError("unknown scope_classification")
     if record.get("scope_classification") != _scope_classification(record):
