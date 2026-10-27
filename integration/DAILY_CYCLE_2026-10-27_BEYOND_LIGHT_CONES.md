@@ -15,13 +15,13 @@ The result is useful for proof-method and workload-boundary surveillance. It is 
 | Lane | Cycle delta | Evidence boundary / next gate |
 |---|---|---|
 | A — workloads/software/runtime | Added a source-scoped state-preparation theorem candidate and explicit hypothesis-mapping gap. | Independently reconstruct the proof and map one workload field-by-field before any resource claim. |
-| B — cloud/QPU providers | Reviewed target relevance only; no provider execution. | Keep provider-neutral dry-run path; no paid jobs without explicit authorization. |
-| C — memory/state/data movement | Reinforced separation of Pauli-profile complexity, amplitude access and readable classical storage. | Record state loading, preprocessing, memory/I/O and reconstruction separately. |
-| D — devices/chips/fabrication | Reviewed implications without changing device claims. | No new device or process evidence. |
-| E — biomass/materials/fusion/energy | Preserved BIO-001/FUS-001 and accepted-liquid/net-electricity evidence boundaries. | No new qualified material, fuel or net-electricity evidence. |
-| F — economics/evidence/integration | Added explicit literature-only status, assumptions and a falsifiable unlock gate. | No cost-per-useful-task or energy advantage until matched measurement exists. |
-| G — manufacturing equipment/factory | Kept D/G co-design active; no inference from a theorem to manufacturing yield or cost. | Revisit only if a measured workload/device bottleneck makes the theorem relevant. |
-| H — strategy/publication/finance | Published dated source watch, gap and machine-readable integration record. | Preserve multilingual strategic context; keep mission ambitions separate from evidence. |
+| Lane B — cloud/QPU providers | Reviewed target relevance only; no provider execution. | Keep provider-neutral dry-run path; no paid jobs without explicit authorization. |
+| Lane C — memory/state/data movement | Reinforced separation of Pauli-profile complexity, amplitude access and readable classical storage. | Record state loading, preprocessing, memory/I/O and reconstruction separately. |
+| Lane D — devices/chips/fabrication | Reviewed implications without changing device claims. | No new device or process evidence. |
+| Lane E — biomass/materials/fusion/energy | Preserved BIO-001/FUS-001 and accepted-liquid/net-electricity evidence boundaries. | No new qualified material, fuel or net-electricity evidence. |
+| Lane F — economics/evidence/integration | Added explicit literature-only status, assumptions and a falsifiable unlock gate. | No cost-per-useful-task or energy advantage until matched measurement exists. |
+| Lane G — manufacturing equipment/factory | Kept D/G co-design active; no inference from a theorem to manufacturing yield or cost. | Revisit only if a measured workload/device bottleneck makes the theorem relevant. |
+| Lane H — strategy/publication/finance | Published dated source watch, gap and machine-readable integration record. | Preserve multilingual strategic context; keep mission ambitions separate from evidence. |
 
 ## Foundational and equation-discovery status
 
