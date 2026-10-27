@@ -6,6 +6,12 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## PENDING MAIN SYNC — Batch 087 research PR #144 (not merged)
+
+**Status:** IN REVIEW / NOT ON MAIN. Canonical main remains `7734020a3f48cfcd12c1eb198e8ca43dbafc1ca2`; source work is on [PR #144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144), branch `research/2026-10-28-sdc-thermodynamic-computing-parity-rank`. Source commits: `ea0b4426b96b38a645316be0d939584754e3401b`, `b448d3b0d4071e72f9cfc1a179d978f57a6f274d`, `c08ebcfbf987838672870706c0b8642fc5fd9e60`, `ad64bffca1cc697cf09a5597be3960aa5a1da639`. This is a discoverability summary only: the code/docs in PR #144 are **not** asserted to exist on main until that PR merges.
+
+Pending work adds independent GF(2) parity-rank tests, a scoped Landauer accepted-task diagnostic, and three literature watches/gates (Scaffolded DNA Computer, physics-constrained symbolic regression, quantum-estimation “true value” no-go). The latest source-head cold-start audit passed; exact-head Python 3.10/3.11/3.12 checks remain queued/in progress, so no merge is claimed. Full source mapping and blocker are in [the pending sync ledger](integration/MAIN_SYNC_LEDGER_2026-10-28.md). Expected next gate: exact-head CI green, then merge PR #144 and record the resulting main SHA.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — physics-informed LBE surrogate and decoder edge cases
 
 [Batch 086](docs/BATCH_086_LBE_PINO_BREAK_EVEN_AND_QEC_EDGE_CASES.md) adds a new, source-pinned watch for Xue et al.'s peer-reviewed *Nature Communications* study of physics-informed neural operators for long-horizon lattice-Boltzmann prediction ([DOI 10.1038/s41467-026-75730-1](https://doi.org/10.1038/s41467-026-75730-1)). The paper reports large speedups on its own simulation cases, but also describes a bounded per-case reuse window; UQPU has not reproduced its data, training, predictions, memory use or break-even economics. The [literature watch](docs/literature_watch/2026-10-28-physics-informed-lattice-boltzmann-neural-operator.md) and [open reproduction gap](docs/RESEARCH_GAP_LBE_PINO_REPRODUCTION_2026-10-28.md) require pinned data/code, trajectory/configuration holdouts, physical-invariant checks and full training-plus-inference cost accounting.
