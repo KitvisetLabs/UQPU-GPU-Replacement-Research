@@ -766,3 +766,28 @@ latency/host/data-movement accounting and cost per accepted useful output.
 explicit user consent, credentials, bounded jobs/shots/cost and an execution
 record. The execution phase is disabled; this artifact is not QPU evidence or
 permission to submit a free or paid job.
+
+
+### RG-QAOA-PARITY-001 — matched higher-order parity QAOA evidence
+**Status:** OPEN / NOT_YET_DEMONSTRATED FOR UQPU  
+**Date:** 2026-10-27  
+**Primary owner:** Lane A; evidence/integration owner Lane F  
+**Source:** Weidinger et al., Higher-order Parity Constraints for Quantum Approximate Optimization, arXiv:2610.26381, submitted 2026-10-19; manuscript dated 2026-10-21.  
+**Detailed record:** docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md  
+**Literature watch:** docs/literature_watch/2026-10-27-higher-order-parity-qaoa-equal-budget-evidence.md
+
+The external preprint reports signed-Max-Cut simulations and IBM Heron experiments on selected sparse graphs. Higher-order parity constraints improved reported optimum hits under the paper's conditions but increase two-qubit depth and physical-qubit demand. UQPU has not independently reproduced the result. A new matched-comparison contract records workload/test/acceptance/reference hashes, provider/target/configuration, equal shots and optimizer budget, billable usage, latency/throughput, state/I/O/transfer/memory, retries, reconstruction, energy where measured and full accepted-task cost. No paid QPU job or advantage claim is accepted.
+
+**Unlock:** independent parity mapping and decoder verification on exact small instances; frozen disjoint train/test graph manifest; equal-budget target-aware simulation; then only authorized hardware, with same-provider pricing/calibration provenance and complete cost per accepted useful output.
+
+### RG-QROM-SPARSE-001 — sparse coherent data-access cost
+**Status:** OPEN / EXTERNAL THEOREM NOT YET MAPPED TO A UQPU WORKLOAD  
+**Date:** 2026-10-27  
+**Primary owner:** Lane C; Lane A compiler and Lane F evidence integration  
+**Source:** Li et al., Optimal T Counts under Sparsity: from QROM to State Preparation and Block Encoding, arXiv:2607.28260v2, revised 2026-10-01.  
+**Detailed record:** docs/RESEARCH_GAP_SPARSE_QROM_MEMORY_COST_2026-10-27.md  
+**Literature watch:** docs/literature_watch/2026-10-27-sparse-qrom-state-preparation-lower-bounds.md
+
+The paper proves tight worst-case T-count bounds for sparse QROM in a fixed Clifford+T circuit model and derives sparse state-preparation/block-encoding bounds. This is a circuit-resource lower-bound reference, not a physical memory, wall-clock, energy or dollar-cost theorem. The UQPU gap is to freeze a workload's address width, data width, sparsity, precision and address-promise semantics, then compare dense/direct and sparse routes with preprocessing, ancillas, depth, storage, I/O and output costs included.
+
+**Unlock:** exact small-instance verification, held-out sparsity patterns, explicit MODEL_ONLY/SIMULATION_ONLY evidence labels and end-to-end resource accounting. A promised-address bound may not be used unless the workload contract guarantees the promise.
