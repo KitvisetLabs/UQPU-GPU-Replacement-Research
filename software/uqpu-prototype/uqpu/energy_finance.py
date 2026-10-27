@@ -201,7 +201,11 @@ class BioOilBatchCostResult:
     accepted_liquid_mass_yield_kg_per_dry_kg: float | None
     feedstock_cost_usd: float
     preprocessing_cost_usd: float
+    logistics_cost_usd: float
     hydrogen_cost_usd: float
+    catalyst_cost_usd: float
+    utility_cost_usd: float
+    other_opex_usd: float
     operating_cost_usd: float
     annualized_capex_usd: float
     allocated_capital_recovery_usd: float
@@ -213,6 +217,7 @@ class BioOilBatchCostResult:
     accepted_fuel_energy_mj: float
     accepted_liters: float | None
     cost_usd_per_accepted_mj: float | None
+    cost_usd_per_accepted_gj: float | None
     cost_usd_per_accepted_liter: float | None
     feedstock_energy_mj: float | None
     utility_energy_mj: float | None
@@ -388,6 +393,7 @@ def bio_oil_batch_cost(inputs: BioOilBatchCostInputs) -> BioOilBatchCostResult:
         else None
     )
     cost_per_mj = net_cost / accepted_energy if accepted_energy > 0 else None
+    cost_per_gj = cost_per_mj * 1000.0 if cost_per_mj is not None else None
     cost_per_liter = (
         net_cost / accepted_liters if accepted_liters is not None else None
     )
@@ -409,7 +415,11 @@ def bio_oil_batch_cost(inputs: BioOilBatchCostInputs) -> BioOilBatchCostResult:
         ),
         feedstock_cost_usd=feedstock_cost,
         preprocessing_cost_usd=preprocessing_cost,
+        logistics_cost_usd=logistics,
         hydrogen_cost_usd=hydrogen_cost,
+        catalyst_cost_usd=catalyst,
+        utility_cost_usd=utilities,
+        other_opex_usd=other_opex,
         operating_cost_usd=operating_cost,
         annualized_capex_usd=annualized_capex,
         allocated_capital_recovery_usd=allocated_capital_recovery,
@@ -421,6 +431,7 @@ def bio_oil_batch_cost(inputs: BioOilBatchCostInputs) -> BioOilBatchCostResult:
         accepted_fuel_energy_mj=accepted_energy,
         accepted_liters=accepted_liters,
         cost_usd_per_accepted_mj=cost_per_mj,
+        cost_usd_per_accepted_gj=cost_per_gj,
         cost_usd_per_accepted_liter=cost_per_liter,
         feedstock_energy_mj=feedstock_energy,
         utility_energy_mj=utility_energy,
