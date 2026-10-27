@@ -21,9 +21,11 @@ The canonical current tree already contains the 2026-10-27 QAOA parity compariso
 - **Sparse QROM/state preparation/block encoding:** Li et al., arXiv:2607.28260v2, revised 2026-10-01. The theorem supplies asymptotic T-count bounds in a stated Clifford+T model. The existing watch and RG-QROM-SPARSE-001 already record the source. It is not a physical memory, energy, wall-clock or cost theorem.
 - **Progressive symbolic discovery:** Xia and Zhang, “Data-driven progressive discovery of physical laws,” Physical Review Research accepted 2026-10-06, DOI 10.1103/f2kp-pp4q. The CoSR method is already covered by the 2026-10-26 cross-method literature watch; it motivates staged interpretable hypotheses, but not equation promotion without held-out and physical validation.
 - **Fusion/materials:** the 2026-10-21 accepted EAST low-Z wall-conditioning result is already covered by the existing 2026-10-26 watch. It concerns plasma-wall conditioning and availability, not a commercial net-electricity cost demonstration.
-- **AI-assisted theorem/equation discovery:** the current 2026-10-27 watches and open proof-evidence work already cover the located sources. No additional unrecorded material source was identified in this pass; no duplicate literature article was created.
+- **AI-assisted theorem/equation discovery:** the current 2026-10-27 watches and open proof-evidence work already cover the located sources. A follow-on search then identified a distinct thermodynamic speed-limit paper not yet in the repository; it is recorded in the new FND-003 literature watch below.
 
-Primary links: https://arxiv.org/abs/2610.26381 ; https://arxiv.org/abs/2607.28260 ; https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q ; https://doi.org/10.1088/1741-4326/aeb707
+A follow-on search found Rikuya Kobashi, Thermodynamic speed limits in isolated quantum systems, arXiv:2609.12520 (submitted 2026-09-11), accepted by Physical Review Research on 2026-10-06, DOI 10.1103/k16k-nx74. The paper bounds operation time for finite-time unitary driving using generalized second-law inequalities and the Vu–Saito quantum Wasserstein distance between coarse-grained states. It is a theoretical FND-003/FND-001 reference only; coarse-graining, entropy definitions and driving assumptions must be matched before comparison. No measured wall-clock, energy or QPU speedup follows. See docs/literature_watch/2026-10-27-thermodynamic-speed-limits-isolated-systems-fnd003.md.
+
+Primary links: https://arxiv.org/abs/2610.26381 ; https://arxiv.org/abs/2607.28260 ; https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q ; https://doi.org/10.1088/1741-4326/aeb707 ; https://arxiv.org/abs/2609.12520 ; https://journals.aps.org/prresearch/accepted/10.1103/k16k-nx74
 
 ## Work completed: fail-closed sparse-QROM scale proxy
 
@@ -50,7 +52,7 @@ This helper deliberately does **not** modify the existing ER6 LCU contract's gen
 
 - **FND-001:** unchanged; thermodynamic-gap/work-capacity estimates remain MODEL_ONLY without matched physical work, heat, reset, state-I/O and accepted-task measurements.
 - **FND-002:** advanced by translating the sparse-QROM theorem into a fail-closed asymptotic proxy. This is a circuit-complexity resource reference, not a classical-output-information bound replacement or memory-device result.
-- **FND-003:** no matched control-versus-quantum-speed-limit measurement.
+- **FND-003:** added a literature-only thermodynamic speed-limit reference; a matched control-versus-bound measurement remains open.
 - **FND-004:** no alternative physical primitive demonstrated.
 - **FND-005:** no experimentally validated new QFT/particle mechanism.
 - **FND-006:** staged hypothesis generation, explicit constraints, held-out tests, counterexample search, proof/experiment and independent replication remain mandatory.
