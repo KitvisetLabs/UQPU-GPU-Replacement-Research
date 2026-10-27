@@ -508,3 +508,10 @@ The current cycle is [the matched control / quantum-speed-limit contract](integr
 
 
 **FND-003 surveillance delta:** the new [OTOC quantum-speed-limit watch](docs/literature_watch/2026-10-28-otoc-quantum-speed-limit-fnd003.md) treats the published bound as a candidate theorem family for matched-observable analysis, not as an algorithm-runtime or useful-output speedup. The associated FND-003 gap now records the reproduction gate. This follow-up commit requires exact-head CI.
+
+## PENDING MAIN SYNC — Batch 087 research PR #144 (not merged)
+
+**Status:** IN REVIEW / NOT ON MAIN. Canonical main remains `7734020a3f48cfcd12c1eb198e8ca43dbafc1ca2`; source work is on [PR #144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144), branch `research/2026-10-28-sdc-thermodynamic-computing-parity-rank`. Source commits: `ea0b4426b96b38a645316be0d939584754e3401b`, `b448d3b0d4071e72f9cfc1a179d978f57a6f274d`, `c08ebcfbf987838672870706c0b8642fc5fd9e60`, `ad64bffca1cc697cf09a5597be3960aa5a1da639`. This is a discoverability summary only: the code/docs in PR #144 are **not** asserted to exist on main until that PR merges.
+
+Pending work adds independent GF(2) parity-rank tests, a scoped Landauer accepted-task diagnostic, and three literature watches/gates (Scaffolded DNA Computer, physics-constrained symbolic regression, quantum-estimation “true value” no-go). The latest source-head cold-start audit passed; exact-head Python 3.10/3.11/3.12 checks remain queued/in progress, so no merge is claimed. Full source mapping and blocker are in [the pending sync ledger](integration/MAIN_SYNC_LEDGER_2026-10-28.md). Expected next gate: exact-head CI green, then merge PR #144 and record the resulting main SHA.
+
