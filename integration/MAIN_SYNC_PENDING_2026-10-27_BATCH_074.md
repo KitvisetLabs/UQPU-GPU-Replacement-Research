@@ -4,7 +4,7 @@
 **Canonical main SHA at work start:** `3ffe242d25be42c5a4ac3c23fe5375bd3c8ac2df`  
 **Research PR:** [#142 — Batch 074: independent parity references and symbolic-ensemble materials watch](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/142)  
 **Source branch:** `research/2026-10-27-gf2-parity-symbolic-ensemble`  
-**Source head:** `b3fb93b7f8b1d6edfb4e24baecfd15825293862d`  
+**Source head:** `67e41a885f27892b9d383956d8db40675293fd46`  
 **Sync status:** `PENDING_REVIEW` — no claim that source work has merged to main.
 
 ## Source commits
@@ -22,6 +22,7 @@ The source branch contains these commits, all reachable from source head `b3fb93
 9. `fb8cea2921d362b62ea90d9fb8cae6312e031484` — append Batch 074 to WORKLOG.
 10. `4b5f659d8c7cf96d63bbc9eade743c88201b2151` — append material and parity gaps from complete fetched snapshot.
 11. `b3fb93b7f8b1d6edfb4e24baecfd15825293862d` — refresh the cold-start handoff manifest.
+12. `67e41a885f27892b9d383956d8db40675293fd46` — record the cold-start trailer correction; the commit message includes `Research-Sync: pending-main`.
 
 ## Files and substantive delta
 
@@ -32,6 +33,6 @@ The source branch contains these commits, all reachable from source head `b3fb93
 
 ## CI and evidence boundary
 
-At record creation, PR #142 exact-head Actions for source SHA `b3fb93b7f8b1d6edfb4e24baecfd15825293862d` were queued: core workflow run [40486846841](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40486846841) and cold-start audit [40486846870](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40486846870). Read their final status before promoting the test evidence. The literature item remains `LITERATURE_ONLY`; no parity-QAOA circuit, QPU execution, material substitution, new physical law, fuel/fusion/electricity/finance result, or Data-Center-to-Phone achievement is claimed.
+At record creation, PR #142 exact-head Actions for source SHA `b3fb93b7f8b1d6edfb4e24baecfd15825293862d` were queued. Cold-start audit [40486846870](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40486846870) then failed closed because that commit message lacked the required `Research-Sync: pending-main` trailer; this was a handoff-governance failure, not a scientific test. Follow-up source head `67e41a885f27892b9d383956d8db40675293fd46` adds the required trailer and triggers new exact-head checks. Core workflow for the new head is still pending at this record update; inspect the new run before promoting test evidence. The literature item remains `LITERATURE_ONLY`; no parity-QAOA circuit, QPU execution, material substitution, new physical law, fuel/fusion/electricity/finance result, or Data-Center-to-Phone achievement is claimed.
 
 This record is intentionally a separate PR so the canonical main branch can review and account for the source work without bypassing the project's synchronization policy. Once PR #142 is merged or closed, update this record with the exact disposition and reconcile any remaining sync debt.
