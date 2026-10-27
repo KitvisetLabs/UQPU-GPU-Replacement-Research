@@ -12,7 +12,7 @@
   "source_branch": "research/2026-10-27-gf2-parity-symbolic-ensemble",
   "input_artifact": {
     "path": "software/uqpu-prototype/tests/test_parity_encoding_reference.py",
-    "source_commit": "67e41a885f27892b9d383956d8db40675293fd46"
+    "source_commit": "4bec529b16cb5b8fad7ccfc7bcd65083de6b2539"
   },
   "hypothesis": "An independent GF(2) rank oracle and exhaustive signed-edge objective checks will catch parity-cycle or decode/objective mismatches before a parity-QAOA circuit is implemented.",
   "baseline_contract": "Existing deterministic classical logical-to-edge parity encoder/decoder and seven-test suite in Batch 073.",
