@@ -68,3 +68,8 @@ Next highest-value gates:
 3. pin and independently reconstruct the thermodynamic logic-gate model with full energy accounting;
 4. reconcile PR #144's legacy nine-lane scoreboard against the permanent A–H architecture before merging;
 5. keep real-QPU execution disabled until credentials, bounded budget and explicit user consent exist.
+
+
+## Provider/device surveillance delta
+
+Fresh provider-market surveillance also pinned IonQ's 2026-09-08 Superion 256/SkyWater manufacturing announcement and Pasqal's 2026-08-10 photonic-integrated atom-trapping announcement. Both are COMPANY_ANNOUNCEMENT/ROADMAP_ONLY. They are relevant to Lane B discovery and Lane D/G co-design, but their production, cost-per-qubit and scalability statements were not independently verified. The new dated watch records the follow-up evidence required. No provider pricing or target availability change is asserted.

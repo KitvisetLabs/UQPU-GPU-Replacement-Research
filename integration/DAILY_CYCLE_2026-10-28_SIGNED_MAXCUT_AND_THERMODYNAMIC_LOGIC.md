@@ -52,3 +52,11 @@ Whitelam's peer-reviewed *Physical Review E* paper on evolutionary thermodynamic
 ## Next highest-value gate
 
 Pass exact-head Actions, then independently reconstruct the signed Max-Cut lowering in a pinned SDK and compare with the exhaustive reference before target-aware simulation. In parallel, pin/reconstruct the thermodynamic logic-gate model and account for controller, measurement, feedback, actuation, reset, readout and cooling. Reconcile the A–H/A–I governance discrepancy and pending append-only sync before claiming full synchronization.
+
+
+## Provider/device market surveillance
+
+- **Lane B:** IonQ's announced Superion 256 product is a discovery lead for future cloud availability, not a currently verified target or price schedule.
+- **Lanes D/G:** IonQ/SkyWater electronic-control manufacturing and Pasqal/Aeponyx photonic-integrated control are complementary company-announcement leads for device/process co-design. No yield, cost-per-good-device or lifecycle reduction was independently measured.
+- **Lane F:** cost-per-qubit roadmaps are not accepted-useful-task economics. Preserve per-target pricing/calibration and total-system accounting.
+- **Lane H:** dated source watch preserves the official announcements and falsifiable follow-up. No roadmap claim is promoted to project evidence.
