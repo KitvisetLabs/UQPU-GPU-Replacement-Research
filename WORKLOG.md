@@ -1674,3 +1674,10 @@ Exact-head cold-start audit #40454588726 for commit 6742ac1b9bf68b5d0a726f582efa
 ## Repair validation observed on 2026-10-27
 
 Follow-up commit 30fc7883809c7e7f094bbf4927a06ec360e568ef corrected the cold-start manifest's evidence_class enum values. Cold-start audit #977 / run 40454730770 completed successfully. The Python unit/invariant matrix in core run #1774 / 40454730849 passed on Python 3.10, 3.11 and 3.12. At this observation, extended jobs qsvt-bounded-prefix, qiskit-verification, qsvt-ten-query and qsvt-eight-query remained in progress; therefore the full core workflow is not yet called green. The initial commit's audit failure remains in history and is recorded as repaired, not hidden. No scientific result is inferred from CI.
+
+
+## 2026-10-27 — Batch 071: formal-proof binding into equation hypotheses
+
+Starting main SHA: 9858c84a4971e46d484d1507668493d4a357a3f4. Read the required charter, invariants, goals, README, operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, Batch 070, current proof/equation/QAOA gaps, implementation modules, evidence fixtures and Actions state. Starting-head core run #1775 / 40455182752 passed all 15 jobs; cold-start audit #978 / 40455182875 passed. Those checks predate this change.
+
+Integrated FormalProofEvidence into EquationHypothesis. A non-NOT_RUN proof status now requires a bound record with matching equation ID, physical-equation claim kind and matching status; CHECKED is only a compatibility alias for KERNEL_CHECKED. Added tests for missing records, mismatched claim/status, formal-statement non-promotion, retained failure and separation of formal-proof reproduction from empirical validation. Updated RG-047, README, the handoff manifest and Batch 071/integration record. Exact-head CI after publication is required; no local test result is claimed because github.com DNS resolution was unavailable in the runtime. No physical law, QPU advantage, material substitution, accepted bio-oil, net fusion electricity, WACC reduction or Data-Center-to-Phone result is claimed.

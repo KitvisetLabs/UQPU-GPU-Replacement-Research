@@ -12,6 +12,8 @@ from collections.abc import Mapping
 import math
 from typing import Iterable
 
+from .formal_proof_evidence import FormalProofEvidence
+
 
 _ALLOWED_EVIDENCE = {
     "CONCEPT",
@@ -49,7 +51,21 @@ _FALSE_DISCOVERY_STATUSES = {
 _FORMAL_PROOF_STATUSES = {
     "NOT_APPLICABLE",
     "NOT_RUN",
+    "PROOF_TEXT_ONLY",
+    "FORMAL_STATEMENT",
+    "CHECKED",  # Backward-compatible alias for a bound KERNEL_CHECKED record.
+    "KERNEL_CHECKED",
+    "INDEPENDENTLY_REPRODUCED",
+    "FAILED",
+    "INCONCLUSIVE",
+}
+
+_BOUND_FORMAL_PROOF_STATUSES = {
+    "PROOF_TEXT_ONLY",
+    "FORMAL_STATEMENT",
     "CHECKED",
+    "KERNEL_CHECKED",
+    "INDEPENDENTLY_REPRODUCED",
     "FAILED",
     "INCONCLUSIVE",
 }
@@ -82,6 +98,7 @@ class EquationHypothesis:
     proof_or_discriminating_experiment_plan: tuple[str, ...] = field(default_factory=tuple)
     formal_proof_status: str = "NOT_RUN"
     formal_proof_notes: tuple[str, ...] = field(default_factory=tuple)
+    formal_proof_evidence: FormalProofEvidence | None = None
     false_discovery_status: str = "NOT_ASSESSED"
     false_discovery_notes: tuple[str, ...] = field(default_factory=tuple)
 
@@ -124,8 +141,24 @@ class EquationHypothesis:
             raise ValueError("proof/experiment plan entries must be nonempty strings")
         if self.formal_proof_status not in _FORMAL_PROOF_STATUSES:
             raise ValueError("unknown formal_proof_status")
-        if self.formal_proof_status in {"CHECKED", "FAILED"} and not self.formal_proof_notes:
-            raise ValueError("formal_proof_notes are required for checked or failed proof attempts")
+        if self.formal_proof_status in {
+            "CHECKED", "KERNEL_CHECKED", "INDEPENDENTLY_REPRODUCED", "FAILED", "INCONCLUSIVE"
+        } and not self.formal_proof_notes:
+            raise ValueError("formal_proof_notes are required for checked, failed or inconclusive proof attempts")
+        if self.formal_proof_status in _BOUND_FORMAL_PROOF_STATUSES and self.formal_proof_evidence is None:
+            raise ValueError("formal_proof_evidence is required for non-NOT_RUN proof status")
+        if self.formal_proof_evidence is not None:
+            proof_evidence = self.formal_proof_evidence
+            proof_evidence.validate_metadata()
+            if proof_evidence.claim_id != self.equation_id:
+                raise ValueError("formal_proof_evidence claim_id must match equation_id")
+            if proof_evidence.claim_kind != "PHYSICAL_EQUATION_HYPOTHESIS":
+                raise ValueError("formal_proof_evidence claim_kind must be PHYSICAL_EQUATION_HYPOTHESIS")
+            expected_proof_status = (
+                "KERNEL_CHECKED" if self.formal_proof_status == "CHECKED" else self.formal_proof_status
+            )
+            if proof_evidence.status != expected_proof_status:
+                raise ValueError("formal_proof_evidence status does not match formal_proof_status")
         if self.false_discovery_status not in _FALSE_DISCOVERY_STATUSES:
             raise ValueError("unknown false_discovery_status")
         if self.false_discovery_status == "FALSE_DISCOVERY_FOUND" and not self.false_discovery_notes:
@@ -203,6 +236,7 @@ def required_discovery_fields() -> tuple[str, ...]:
         "proof_or_discriminating_experiment_plan",
         "formal_proof_status",
         "formal_proof_notes",
+        "formal_proof_evidence",
         "false_discovery_status",
         "false_discovery_notes",
     )

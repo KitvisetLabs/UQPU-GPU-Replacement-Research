@@ -1,7 +1,7 @@
 # Research gap RG-047 — formal-proof artifact binding and verification state
 
 **Date opened:** 2026-10-27  
-**Status:** PARTIALLY ADDRESSED — standalone byte-binding contract and tests added; integration into equation-discovery records and a real pinned proof run remain OPEN  
+**Status:** PARTIALLY ADDRESSED — exact proof records are now bound to EquationHypothesis; a real pinned proof run and independent rebuild remain OPEN  
 **Primary owner:** Lane A — equation-discovery/formal evidence tooling  
 **Evidence owner:** Lane F — reproducibility and evidence classification  
 **Publication owner:** Lane H  
@@ -13,7 +13,9 @@ An equation candidate can carry a formal proof status, but a status string alone
 
 ## Change made
 
-Added software/uqpu-prototype/uqpu/formal_proof_evidence.py with an explicit proof-state taxonomy: NOT_RUN, PROOF_TEXT_ONLY, FORMAL_STATEMENT, KERNEL_CHECKED, INDEPENDENTLY_REPRODUCED, FAILED and INCONCLUSIVE. Checked/failed attempts require an immutable source revision, statement digest, proof-artifact digest, checker name/version/command, environment digest, run-log digest and exit code. The exact-byte verifier rejects a changed proof or log. A kernel-checked record and an independently reproduced record remain distinct; failed attempts are retained.
+Added software/uqpu-prototype/uqpu/formal_proof_evidence.py with an explicit proof-state taxonomy: NOT_RUN, PROOF_TEXT_ONLY, FORMAL_STATEMENT, KERNEL_CHECKED, INDEPENDENTLY_REPRODUCED, FAILED and INCONCLUSIVE. Checked/failed attempts require an immutable source revision, statement digest, proof-artifact digest, checker name/version/command, environment digest, run-log digest and exit code. The exact-byte verifier rejects a changed proof or log.
+
+Batch 071 integrates this record into EquationHypothesis. A non-NOT_RUN proof state now requires the exact FormalProofEvidence object; its claim_id must equal equation_id, its claim_kind must identify a physical-equation hypothesis, and its status must match the hypothesis status (with CHECKED retained only as a backward-compatible alias for KERNEL_CHECKED). This closes the schema-integration blocker without claiming that a hash check executes a prover or establishes physical truth.
 
 Nine focused unit tests pass locally, including byte tampering, missing checker identity, statement-hash mismatch, and false promotion of a formal statement to a kernel-checked result.
 
@@ -23,11 +25,10 @@ This is a metadata and byte-integrity preflight, not a prover. It does not execu
 
 ## Remaining blockers
 
-1. Wire this record into the existing EquationHypothesis/discovery manifest without weakening current validation.
-2. Pin a real checker and toolchain, immutable repository revision, theorem statement, imports/axioms, proof artifact and reproducible command.
-3. Run the checker and independently rebuild the result; preserve failed, timeout and inconclusive states.
+1. Pin a real checker and toolchain, immutable repository revision, theorem statement, imports/axioms, proof artifact and reproducible command.
+2. Run the checker and independently rebuild the result; preserve failed, timeout and inconclusive states.
+3. Acquire and hash the pinned SRSD-Feynman raw files for RG-046, then run the preregistered >=30-seed matched comparison.
 4. Keep mathematical theorem verification separate from physical-equation acceptance, which still needs dimensional/symmetry/conservation/causality checks, held-out prediction, falsification, experiment and independent replication.
-5. RG-046 remains open: the pinned SRSD-Feynman candidate still lacks acquired raw files and computed SHA-256 values; no preregistered 30-seed matched comparison has run.
 
 ## Falsification and stop rules
 
@@ -35,4 +36,4 @@ Reject a KERNEL_CHECKED or INDEPENDENTLY_REPRODUCED record if required checker/e
 
 ## Synchronization debt
 
-Synchronization debt was resolved on 2026-10-27: the RG-047 summary and cycle update were appended to RESEARCH_GAPS.md and WORKLOG.md using complete fetched files as exact prefixes. This focused file remains the canonical detailed record. Root directives, INV-025/026/027 and INV-029–035, and the multilingual strategic-plan references remain unchanged.
+The aggregate RG-047 status and WORKLOG were appended from complete fetched files on 2026-10-27. This focused file remains the canonical detailed record. Batch 071 closes only the schema-integration item; pinned proof execution, independent rebuild and RG-046 raw-data acquisition remain open. Root directives, INV-025/026/027 and INV-029–035, and the multilingual strategic-plan references remain unchanged.

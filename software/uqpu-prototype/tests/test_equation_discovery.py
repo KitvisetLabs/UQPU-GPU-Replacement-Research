@@ -5,6 +5,7 @@ from uqpu.equation_discovery import (
     required_discovery_fields,
     select_bic_candidate_count,
 )
+from uqpu.formal_proof_evidence import build_formal_proof_evidence
 
 
 class EquationDiscoveryTests(unittest.TestCase):
@@ -46,6 +47,27 @@ class EquationDiscoveryTests(unittest.TestCase):
         )
         data.update(overrides)
         return EquationHypothesis(**data)
+
+    def _formal_proof_evidence(self, status="KERNEL_CHECKED", **overrides):
+        values = dict(
+            claim_id="EQN-test-001",
+            claim_kind="PHYSICAL_EQUATION_HYPOTHESIS",
+            statement="y = a*x + b*x**2",
+            assumptions=("x >= 0", "declared unit contract"),
+            status=status,
+            source_revision="a" * 40,
+            proof_artifact=b"theorem proof bytes\\n",
+            checker_name="Lean",
+            checker_version="4.19.0",
+            checker_command="lake env lean Candidate.lean",
+            environment_bytes=b"pinned toolchain manifest\\n",
+            run_log=b"exit_code=1\\n" if status == "FAILED" else b"exit_code=0\\n",
+            checker_exit_code=1 if status == "FAILED" else 0,
+            independent_reproduction_count=1 if status == "INDEPENDENTLY_REPRODUCED" else 0,
+            notes=("checker rejected candidate",) if status == "FAILED" else (("independent reproduction inconclusive",) if status == "INCONCLUSIVE" else ()),
+        )
+        values.update(overrides)
+        return build_formal_proof_evidence(**values)
 
     def test_complete_candidate_is_testable(self):
         candidate = self._candidate()
@@ -96,16 +118,58 @@ class EquationDiscoveryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self._candidate(proof_or_discriminating_experiment_plan=()).validate()
 
-    def test_formal_proof_status_is_explicit_and_auditable(self):
-        with self.assertRaises(ValueError):
-            self._candidate(formal_proof_status="KERNEL_CHECKED").validate()
-        with self.assertRaises(ValueError):
-            self._candidate(formal_proof_status="CHECKED", formal_proof_notes=()).validate()
+    def test_formal_proof_status_requires_exact_bound_evidence(self):
+        notes = ("synthetic unit-test theorem; pinned checker and statement hash recorded",)
+        with self.assertRaisesRegex(ValueError, "formal_proof_evidence is required"):
+            self._candidate(formal_proof_status="CHECKED", formal_proof_notes=notes).validate()
+
         checked = self._candidate(
             formal_proof_status="CHECKED",
-            formal_proof_notes=("synthetic unit-test theorem; pinned checker and statement hash recorded",),
+            formal_proof_notes=notes,
+            formal_proof_evidence=self._formal_proof_evidence(),
         )
         checked.validate()
+
+        with self.assertRaisesRegex(ValueError, "claim_id must match equation_id"):
+            self._candidate(
+                formal_proof_status="CHECKED",
+                formal_proof_notes=notes,
+                formal_proof_evidence=self._formal_proof_evidence(claim_id="EQN-other-001"),
+            ).validate()
+
+        with self.assertRaisesRegex(ValueError, "status does not match formal_proof_status"):
+            self._candidate(
+                formal_proof_status="FAILED",
+                formal_proof_notes=("failed attempt retained",),
+                formal_proof_evidence=self._formal_proof_evidence(),
+            ).validate()
+
+    def test_formal_statement_and_failure_states_remain_distinct(self):
+        statement_only = self._candidate(
+            formal_proof_status="FORMAL_STATEMENT",
+            formal_proof_evidence=self._formal_proof_evidence("FORMAL_STATEMENT"),
+        )
+        statement_only.validate()
+        self.assertFalse(statement_only.ready_for_physical_candidate_claim)
+
+        failed = self._candidate(
+            formal_proof_status="FAILED",
+            formal_proof_notes=("checker rejected candidate",),
+            formal_proof_evidence=self._formal_proof_evidence("FAILED"),
+        )
+        failed.validate()
+        self.assertFalse(failed.ready_for_physical_candidate_claim)
+
+    def test_proof_reproduction_does_not_replace_physical_replication(self):
+        candidate = self._candidate(
+            formal_proof_status="INDEPENDENTLY_REPRODUCED",
+            formal_proof_notes=("formal proof independently rebuilt",),
+            formal_proof_evidence=self._formal_proof_evidence("INDEPENDENTLY_REPRODUCED"),
+            evidence_level="PUBLISHED_EXPERIMENT",
+            independent_validation_count=0,
+        )
+        candidate.validate()
+        self.assertFalse(candidate.ready_for_physical_candidate_claim)
 
     def test_counterexamples_and_false_discoveries_block_candidate_promotion(self):
         unsearched = self._candidate(
@@ -143,6 +207,7 @@ class EquationDiscoveryTests(unittest.TestCase):
             "proof_or_discriminating_experiment_plan",
             "formal_proof_status",
             "formal_proof_notes",
+            "formal_proof_evidence",
             "false_discovery_status",
             "false_discovery_notes",
         ):

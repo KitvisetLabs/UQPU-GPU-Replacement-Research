@@ -6,7 +6,11 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest Eight-Lane research cycle — 2026-10-27 — STRIDE equation-discovery literature delta
+## Latest Eight-Lane research cycle — 2026-10-27 — formal-proof binding in equation hypotheses
+
+The current cycle is [Batch 071](docs/BATCH_071_EQUATION_HYPOTHESIS_PROOF_BINDING.md) and [its Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_FORMAL_PROOF_BINDING.md). It binds `FormalProofEvidence` to `EquationHypothesis`, requiring matching claim ID, claim kind and proof status for any non-`NOT_RUN` proof state. The schema gap in RG-047 is reduced, but no real checker run, independent proof rebuild, new physical law, QPU advantage, materials/fuel/fusion result, financing result or Data-Center-to-Phone achievement is claimed. The starting main SHA was 9858c84a4971e46d484d1507668493d4a357a3f4; core workflow [#1775](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40455182752) and cold-start audit [#978](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40455182875) passed on that starting head. Exact-head validation for this commit must be checked in live Actions.
+
+## Previous Eight-Lane research cycle — 2026-10-27 — STRIDE equation-discovery literature delta
 
 The current cycle is [the STRIDE equation-discovery literature watch](docs/literature_watch/2026-10-27-stride-self-reflective-equation-discovery.md) and [Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_STRIDE_EQUATION_DISCOVERY.md). It adds STRIDE's reflective-repair/mixed-fitting/semantic-memory method to the existing matched equation-discovery gap RG-EQN-008, reconciles focused RG-EQN-008, RG-047 and QAOA parity gaps into the aggregate backlog, and refreshes the cold-start handoff manifest. This is literature and reproducibility governance only: no STRIDE reproduction, new physical law, QPU advantage, material/fuel/fusion result, financing result or Data-Center-to-Phone achievement is claimed. The starting main SHA was e7949b6572d0bd503a75246e3ea07b1995ffcea4; its core workflow [#40448580117](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40448580117) and cold-start audit [#40448580108](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40448580108) passed. Consult live Actions for the exact-head checks on this update.
 

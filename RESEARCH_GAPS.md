@@ -855,3 +855,7 @@ Unlock by reconstructing the source mass balance and uncertainty, then independe
 
 ## 2026-10-27 — RG-QAOA-PARITY-001: matched higher-order parity QAOA evidence
 **Status:** OPEN / NOT_YET_DEMONSTRATED. Canonical detail: docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md. The existing paired-comparison contract is not a parity encoder or a reproduced algorithm. Exact small-graph mapping/reference checks, a frozen held-out manifest, equal shots/optimizer evaluations, target-aware simulation and full accepted-task resource accounting remain prerequisites. No paid QPU execution is authorized by this record.
+
+
+## 2026-10-27 — RG-047 update: formal-proof evidence bound into EquationHypothesis
+**Status:** SCHEMA INTEGRATION ADDRESSED; REAL PINNED PROOF RUN AND INDEPENDENT REBUILD OPEN. Canonical detail: docs/RESEARCH_GAP_RG047_FORMAL_PROOF_ARTIFACT_BINDING.md; implementation: software/uqpu-prototype/uqpu/equation_discovery.py. Non-NOT_RUN proof states now require an exact FormalProofEvidence record whose claim ID, claim kind and status agree with the equation hypothesis. This is metadata validation, not proof execution or empirical physics. RG-046 raw-data acquisition and its preregistered >=30-seed comparison remain open. Batch 071 and the integration record preserve the detailed evidence boundary.
