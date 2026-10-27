@@ -8,6 +8,10 @@
 
 ## Latest Eight-Lane research cycle — 2026-10-27 — BIO-001 accepted-liquid cost contract
 
+**CI repair note — 2026-10-27:** exact-head main test run #1808 exposed one porting omission: the accepted-input evidence-class constant was not copied with the BIO-001 calculator, causing 14 related NameErrors in Python 3.11. The constant is added in the follow-up repair commit; run its exact-head matrix before treating Batch 076 as validated.
+
+
+
 This cycle is [Batch 076](docs/BATCH_076_BIO001_ACCEPTED_LIQUID_COST.md), [the HTL/hydrotreatment literature watch](docs/literature_watch/2026-10-27-htl-biocrude-upgrading-cost-boundary.md), [RG-BIO-001](docs/RESEARCH_GAP_BIO001_ACCEPTED_LIQUID_COST_2026-10-27.md), and [the Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_BIO001_ACCEPTED_LIQUID_COST.md). It adds a fail-closed MODEL_ONLY calculator for final accepted-liquid MJ/litre cost with upgrading, CAPEX, separate R&D lock-up interest and disjoint coproduct accounting. Pangola mass/energy/product data remain missing; no commercial fuel-cost, fusion-electricity, WACC or Data-Center-to-Phone result is claimed. Exact-head CI is required after the port.
 
 ## Latest Eight-Lane research cycle — 2026-10-27 — SISSO materials-gene sensitivity and identifiability

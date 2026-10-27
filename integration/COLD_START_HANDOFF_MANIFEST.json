@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T11:17:51.573Z",
+  "prepared_utc": "2026-10-27T11:19:59.642Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "bc6140d667168d4d210961bea5c9122777b0c744",
+  "canonical_start_sha": "f4ec05ad8de936a5baf0b8303e65512357cda212",
   "priority_lane": "A",
-  "current_frontier": "Batch 076 adds a MODEL_ONLY accepted-liquid BIO-001 mass/energy/cost contract and FIN-001 principal-lockup interest accounting; Pangola batch data remain missing. Batch 075 SISSO sensitivity and Batch 074 GF(2) parity references remain preserved.",
+  "current_frontier": "Batch 076 adds the BIO-001 accepted-liquid MODEL_ONLY cost contract. Exact-head CI exposed and recorded a porting omission (missing _BIO_OIL_INPUT_EVIDENCE_CLASSES); the next commit repairs it. Do not promote the calculator until the repaired head's Python matrix and cold-start audit pass.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",

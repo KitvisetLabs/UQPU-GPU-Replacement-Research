@@ -109,6 +109,15 @@ def liquid_cost_per_gj(cost_per_liter: float, lower_heating_value_mj_per_liter: 
     return cost * 1000.0 / lhv
 
 
+_BIO_OIL_INPUT_EVIDENCE_CLASSES = {
+    "MODEL_ONLY",
+    "LITERATURE_ONLY",
+    "LAB_MEASURED",
+    "PUBLISHED_EXPERIMENT",
+    "PRODUCTION_DATA",
+}
+
+
 def simple_interest_for_capital_lockup(
     principal: float, annual_rate: float, lockup_days: int
 ) -> float:
