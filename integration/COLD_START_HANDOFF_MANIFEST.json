@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T11:19:59.642Z",
+  "prepared_utc": "2026-10-27T11:23:41.162Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "f4ec05ad8de936a5baf0b8303e65512357cda212",
+  "canonical_start_sha": "890ec20616a90ee763e50d28bf79a449fcec7fd4",
   "priority_lane": "A",
-  "current_frontier": "Batch 076 adds the BIO-001 accepted-liquid MODEL_ONLY cost contract. Exact-head CI exposed and recorded a porting omission (missing _BIO_OIL_INPUT_EVIDENCE_CLASSES); the next commit repairs it. Do not promote the calculator until the repaired head's Python matrix and cold-start audit pass.",
+  "current_frontier": "Batch 076 BIO-001 accepted-liquid contract is integrated; repair commit 890ec passed the Python 3.10/3.11/3.12 matrix and cold-start audit. Extended QSP/QSVT/Qiskit/reference checks were still running at last inspection. Pangola batch data remain missing; outputs are MODEL_ONLY.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -79,7 +79,8 @@
     "research_lanes/E_materials_energy_cooling_infrastructure/BIO001_ACCEPTED_LIQUID_COST_CONTRACT.md",
     "software/uqpu-prototype/tests/test_bio_oil_batch_cost_contract.py",
     "integration/DAILY_CYCLE_2026-10-27_BIO001_ACCEPTED_LIQUID_COST.md",
-    "integration/INT-20261027-BIO001-ACCEPTED-LIQUID-COST.json"
+    "integration/INT-20261027-BIO001-ACCEPTED-LIQUID-COST.json",
+    "research_lanes/E_materials_energy_cooling_infrastructure/ULTRA_LOW_COST_BIO_OIL_RESEARCH_TRACK.md"
   ],
   "lanes": {
     "A": {

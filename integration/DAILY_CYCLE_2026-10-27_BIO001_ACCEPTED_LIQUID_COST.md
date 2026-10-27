@@ -37,9 +37,14 @@ FND-001 remains MODEL_ONLY; FND-002 remains a lower-bound path; FND-003 lacks a 
 
 ## CI, sync and next gate
 
-The source branch's Python 3.10/3.11/3.12 matrix and cold-start handoff audit passed before porting. The new main commit requires its own exact-head CI; do not infer its result from the old branch. The original stale PR remains unmerged until this main-branch integration is validated. Next highest-value gate: collect a traceable Pangola batch with calibrated mass/energy/product acceptance records, then run independent repeat and cost uncertainty analysis. In parallel, FUS-001 remains an architecture-neutral model with no commercial net-electric evidence and FIN-001 must separate principal reduction from rate/WACC claims.
+The source branch's Python 3.10/3.11/3.12 matrix and cold-start handoff audit passed before porting. The original PR #139 was closed as superseded after its additive work was ported onto current main; it is not canonical. Next highest-value gate: collect a traceable Pangola batch with calibrated mass/energy/product acceptance records, then run independent repeat and cost uncertainty analysis. In parallel, FUS-001 remains an architecture-neutral model with no commercial net-electric evidence and FIN-001 must separate principal reduction from rate/WACC claims.
 
 
 ## Exact-head CI failure and repair — 2026-10-27
 
 Main run [#1808](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40495180708) caught a porting omission: the new calculator referenced the accepted-input evidence-class set, but the constant was omitted from the extracted code section. Python 3.11 reported 14 NameErrors with the same root cause; Python 3.10 was cancelled during workflow concurrency and Python 3.12 had not finished at inspection. The constant is added in the follow-up repair commit. The failed run remains in the audit trail; only the repaired head's own exact CI can validate the port. The original PR #139 was closed as superseded after the code/docs were ported onto current main.
+
+
+## Repair validation update — 2026-10-27
+
+Repair commit [890ec206](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/890ec20616a90ee763e50d28bf79a449fcec7fd4) restores the omitted `_BIO_OIL_INPUT_EVIDENCE_CLASSES` constant. Its Python 3.10, 3.11 and 3.12 matrix jobs passed; autonomous cold-start audit [#1017](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40495417570) passed. Extended QSP/QSVT/Qiskit/reference jobs in core run [#1809](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40495417564) remained in progress at last inspection. The prior run #1808 failure remains in the audit trail. Do not call the full workflow green until those extended jobs conclude.

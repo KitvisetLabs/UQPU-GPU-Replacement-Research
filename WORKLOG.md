@@ -1735,3 +1735,8 @@ Starting main SHA: bc6140d667168d4d210961bea5c9122777b0c744. Ported the additive
 ## 2026-10-27 — BIO-001 porting defect found and repaired
 
 Exact-head main workflow #1808 on commit f4ec05ad8de936a5baf0b8303e65512357cda212 failed in Python 3.11 with 14 NameErrors because the ported calculator referenced _BIO_OIL_INPUT_EVIDENCE_CLASSES but the constant itself was omitted when extracting the additive section from the stale branch. The error is a porting omission, not a scientific failure. This repair adds the explicit allowed input evidence-class set before simple_interest_for_capital_lockup. Python 3.10 was cancelled by newer workflow concurrency while Python 3.12 was still running at inspection; the repaired head's exact matrix and cold-start audit must be read before closure. The failed run remains preserved as negative evidence.
+
+
+## 2026-10-27 — BIO-001 CI repair validation and Lane E handoff
+
+Repair commit 890ec20616a90ee763e50d28bf79a449fcec7fd4 passed the Python 3.10/3.11/3.12 test matrix and autonomous cold-start audit #1017. The earlier #1808 NameError failure from the omitted evidence-class constant remains preserved as negative history. Extended QSP/QSVT/Qiskit/reference jobs in run #1809 were still in progress at the last check, so full-workflow green status is not claimed. The Lane E research track now links the accepted-liquid contract. The wheat-straw hydrotreatment source reports that upgraded samples still missed cited ISO 8217 flashpoint/TAN limits, underscoring that the final product acceptance gate is binding. No Pangola batch, commercial fuel, fusion, WACC or phone-compression result is claimed.

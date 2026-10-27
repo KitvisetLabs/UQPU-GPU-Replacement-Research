@@ -34,3 +34,7 @@ The new batch-level calculator is in `software/uqpu-prototype/uqpu/energy_financ
 5. Credit coproducts only with distinct stream IDs and verified net incremental revenue/costs, with no double counting.
 
 **Stop rule:** any claim based only on crude-liquid volume, missing upgrading inputs, failed product acceptance, unknown costs treated as zero, or overlapping coproduct credits is rejected. No commercial ultra-low-cost bio-oil result is established.
+
+## Product-acceptance caution from the primary batch study
+
+The wheat-straw hydrotreatment paper reports that, although hydrotreatment improved oxygen content and miscibility, the tested upgraded oils still did **not** meet the cited ISO 8217 marine-fuel requirements for flashpoint and total acid number. Additional distillation/hydrotreatment or a qualifying blend was needed. Its supplementary information includes batch mass, carbon and oxygen balances. The reported operating conditions, hydrogen demand and product properties are evidence for that wheat-straw batch system only; they are not Pangola yields or a commercial minimum-fuel-selling-price result. This strengthens the project's requirement to cost only product that passes a frozen, application-specific acceptance specification.

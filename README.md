@@ -8,7 +8,7 @@
 
 ## Latest Eight-Lane research cycle — 2026-10-27 — BIO-001 accepted-liquid cost contract
 
-**CI repair note — 2026-10-27:** exact-head main test run #1808 exposed one porting omission: the accepted-input evidence-class constant was not copied with the BIO-001 calculator, causing 14 related NameErrors in Python 3.11. The constant is added in the follow-up repair commit; run its exact-head matrix before treating Batch 076 as validated.
+**CI repair note — 2026-10-27:** exact-head run [#1808](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40495180708) caught a porting omission (missing accepted-input evidence-class constant), producing 14 related NameErrors in Python 3.11. Repair commit [890ec20](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/890ec20616a90ee763e50d28bf79a449fcec7fd4) restores the constant; its Python 3.10/3.11/3.12 matrix and cold-start audit [#1017](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40495417570) passed. Extended QSP/QSVT/Qiskit/reference jobs were still in progress at the last check, so the full workflow is not yet declared green.
 
 
 

@@ -26,7 +26,7 @@ These sources justify including the upgrading boundary; they do not supply Pango
 ## Blocking unknowns
 
 - No traceable Pangola lot has been measured through a complete feedstock-to-accepted-liquid batch balance in this project.
-- No raw liquid/aqueous/solid/gas mass closure, final product assay, density and LHV record is attached.
+- No raw liquid/aqueous/solid/gas mass closure, final product assay, density and LHV record is attached. The cited wheat-straw batch study itself reports that upgraded samples still missed the cited ISO 8217 flashpoint and total-acid-number requirements, reinforcing that hydrotreatment alone cannot be assumed to pass the chosen acceptance gate.
 - Hydrogen consumption, catalyst lifetime/replacement, utility energy, uptime and rejected-product rates are unmeasured for a project-specific route.
 - Local delivered feedstock/preprocessing/logistics prices and validated plant CAPEX/OPEX remain missing.
 - No independently verified coproduct revenue or commercial financing terms exist for a commercial Pangola plant.
