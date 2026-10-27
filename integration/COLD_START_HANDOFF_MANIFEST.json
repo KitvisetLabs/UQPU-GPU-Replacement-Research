@@ -1,6 +1,6 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T17:02:43Z",
+  "prepared_utc": "2026-10-27T17:07:26Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "8e69b805c7c99c0baff9db8ba5543023823e2343",
@@ -301,7 +301,7 @@
     "commit": "2a44518c2738070dbf72eec6f29179b7f3bfbad1"
   },
   "current_head_validation": {
-    "commit": "aa35c5908ff412971f8a7f52b78fb596f45f4d8f",
+    "commit": "2eb8b36f9f891c4e3bcae99addf378fb5cb52db6",
     "core_run_number": null,
     "core_run_id": null,
     "core_conclusion": "not_observed",
@@ -310,8 +310,8 @@
     "cold_start_run_number": null,
     "cold_start_run_id": null,
     "cold_start_conclusion": "not_observed",
-    "observed_at_utc": "2026-10-27T17:02:43Z",
-    "note": "No combined status entries were returned for this handoff-sync head. Core #1818 and cold-start #1026 validated parent 2a445 only; exact-head validation remains open."
+    "observed_at_utc": "2026-10-27T17:07:26Z",
+    "note": "The final README synchronization commit has no combined status entries observed. Core #1818 and cold-start #1026 passed on parent 2a44518c2738070dbf72eec6f29179b7f3bfbad1 only; exact-head CI for the documentation-only cycle remains unconfirmed."
   },
   "latest_cycle_ci_observation": {
     "starting_commit": "aa35c5908ff412971f8a7f52b78fb596f45f4d8f",
