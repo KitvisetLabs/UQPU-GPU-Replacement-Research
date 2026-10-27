@@ -79,3 +79,8 @@ FND-001–006 and EQN-001–006 remain active/evidence-gated. No physical equati
 Large append-only `RESEARCH_GAPS.md` and `WORKLOG.md` were left intact to avoid replacing partial history. Focused gaps, the handoff manifest and README were updated. Historical/inaccessible branch reconciliation remains unresolved.
 
 Next gate: run exact-head CI; then extend the toy checker to a real finite binary/correction model only after the source conventions and code/noise inputs are pinned. In parallel, conduct the three-claim FormalFlow source-to-Lean audit, one source-PDE MPNO reproduction, and continue RG-EQN-008, FND-001/FND-003, BIO-001, FUS-001 and FIN-001. Paid QPU execution remains unauthorized.
+
+
+## Post-publication CI finding and repair
+
+The exact-head cold-start audit `#1037` failed because the handoff manifest used combined/descriptive evidence labels outside the fixed `VALID_EVIDENCE` enum for lanes A/B and `OPEN_GAP` for C/F. The follow-up commit changes only those metadata values to the schema-approved `SOFTWARE_UNIT_TESTS`, `LITERATURE_ONLY` and `SOFTWARE_CONTRACT` classes and records the failure explicitly. This is a governance metadata failure, not evidence that the decoder interval tests failed. The repair commit must pass its own exact-head audit and core matrix before the cycle can be called CI-green.

@@ -72,3 +72,8 @@ Next:
 3. Pin FormalFlow's v3 source/Lean/blueprint mapping and independently audit three claims.
 4. Reproduce one MPNO PDE result before considering a held-out, conservation-aware thermal/transport application.
 5. Continue in parallel with RG-EQN-008, FND-001/FND-003, BIO-001, FUS-001 and FIN-001. Never submit a paid QPU job without credentials, bounded budget and explicit user consent.
+
+
+## CI repair note
+
+Exact-head cold-start audit [#1037](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567389772) failed on handoff-manifest evidence labels outside the audit enum for lanes A/B/C/F. The repair normalizes the labels to supported classes without changing scientific claims or code. The core matrix was still in progress at the last observation; the repair commit requires fresh exact-head checks.
