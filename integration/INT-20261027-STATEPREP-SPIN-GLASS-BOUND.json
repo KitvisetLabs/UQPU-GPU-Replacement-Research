@@ -1,0 +1,52 @@
+{
+  "schema": "uqpu-literature-integration-v1",
+  "id": "INT-20261027-STATEPREP-SPIN-GLASS-BOUND",
+  "date": "2026-10-27",
+  "source": {
+    "title": "Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses",
+    "authors": [
+      "Omar Al-Ghattas",
+      "David Gamarnik",
+      "Bobak T. Kiani"
+    ],
+    "url": "https://arxiv.org/abs/2610.02166",
+    "version": "2610.02166v1",
+    "submitted": "2026-10-01",
+    "evidence_class": "OFFICIAL_PREPRINT_MATHEMATICAL_COMPLEXITY_RESULT"
+  },
+  "status": "LITERATURE_ONLY_PROOF_RECONSTRUCTION_PENDING",
+  "novelty": "Effective profile-complexity bounds based on metric entropy of p-local Pauli profiles; combines a nonsymmetric quantum de Finetti argument with Gaussian-process entropy bounds.",
+  "scope": {
+    "ensemble": "dense random quantum p-spin Hamiltonian",
+    "required_care": [
+      "fixed interaction-order qualifications",
+      "stated state class",
+      "energy objective and normalization",
+      "ancilla/discard model",
+      "asymptotic regime",
+      "probability qualifiers"
+    ],
+    "reported_results": [
+      "Omega(n^2/log n) one- and two-qubit gate requirement in the stated near-ground-state setting",
+      "depth-width and representation-complexity bounds",
+      "leading-order product-stabilizer benchmark for Clifford+T with o(n) T gates"
+    ]
+  },
+  "limitations": [
+    "not a universal lower bound for arbitrary workloads or QUBO/QAOA instances",
+    "not an independent UQPU proof reconstruction",
+    "not measured latency, energy, QPU success, provider charges, or cost per accepted task",
+    "not a classical memory-capacity result or physical law"
+  ],
+  "project_links": [
+    "INV-029",
+    "INV-034",
+    "INV-035",
+    "FND-002",
+    "FND-006",
+    "EQN-004",
+    "RG-STATEPREP-SPIN-GLASS-001"
+  ],
+  "next_gate": "Pin exact theorem text, reconstruct proof assumptions, fail-closed map one candidate workload to all hypotheses, then compare resource implications with matched CPU/GPU useful-output baselines.",
+  "paid_qpu_execution": "NOT_AUTHORIZED_NOT_ATTEMPTED"
+}
