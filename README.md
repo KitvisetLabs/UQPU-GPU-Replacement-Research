@@ -6,6 +6,12 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-28 — gate-specific quantum speed limits
+
+[Batch 089](docs/BATCH_089_GATE_SPECIFIC_QSL_AND_MATCHED_RUNTIME.md) adds Lane A contract [A-GATE-QSL-001](research_lanes/A_quantum_programming_runtime/GATE_QSL_TO_ACCEPTED_TASK_CONTRACT.md) to keep theoretical gate-time lower bounds separate from physical pulse duration, compiled critical path, fault-tolerant runtime and end-to-end accepted-task latency. A fresh source watch covers Nelson & Barnes' *Physical Review A* accepted paper on exact gate quantum speed limits (accepted 2026-10-15; [DOI 10.1103/28zn-ch8y](https://doi.org/10.1103/28zn-ch8y)). The focused [FND-003 gap](docs/RESEARCH_GAP_FND003_GATE_QSL_RECONSTRUCTION_2026-10-28.md) requires full theorem/proof reconstruction and independent optimal-control checks before implementation. No new numerical bound, hardware experiment, quantum advantage, physical law or economic result is claimed.
+
+Starting-head exact CI passed on `52f68f50cb60cba3152ec3323575c7b8baab6fc8`: [prototype/invariant run #1848](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40592732419) and [cold-start audit #1055](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40592732421). Batch 089's new commit requires its own exact-head checks. A–H, INV-025–035, FND-001–006, EQN-001–006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. The A–H/A–I manifest discrepancy, append-only WORKLOG/RESEARCH_GAPS sync debt, and open PRs #144/#145 remain unresolved. No paid QPU execution was attempted.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — signed Max-Cut lowering and thermodynamic logic-gate energy boundary
 
 [Batch 088](docs/BATCH_088_SIGNED_MAXCUT_QUBO_ISING_AND_THERMODYNAMIC_LOGIC.md) adds a classical signed-Max-Cut lowering that preserves one exact objective across direct binary, QUBO and Ising forms. Six focused tests exhaustively compare objective values and maximizers for small signed-weight cases. This is SOFTWARE_CONTRACT_ONLY, not QAOA execution or quantum advantage. A new [literature watch](docs/literature_watch/2026-10-28-thermodynamic-logic-gate-total-energy.md) and [open reproduction gap](docs/RESEARCH_GAP_THERMODYNAMIC_LOGIC_GATE_TOTAL_ENERGY_2026-10-28.md) track Whitelam's peer-reviewed, simulation-level thermodynamic logic-gate result and require full controller/measurement/reset/cooling energy accounting.
