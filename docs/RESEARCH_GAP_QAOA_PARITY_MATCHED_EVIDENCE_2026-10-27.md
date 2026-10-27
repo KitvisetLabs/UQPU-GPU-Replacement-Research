@@ -35,4 +35,4 @@ Weidinger et al., arXiv:2610.26381 (2026-10-19 submission; manuscript dated 2026
 
 ## Sync debt
 
-This dated gap is intentionally not appended to the large, append-heavy RESEARCH_GAPS.md from a partial snapshot. Preserve both records until a safe full-history reconciliation can update the aggregate backlog without truncation.
+Synchronization debt was resolved on 2026-10-27 by appending the RG-QAOA-PARITY-001 summary to RESEARCH_GAPS.md from a complete fetched snapshot; prior aggregate content was preserved as an exact prefix.

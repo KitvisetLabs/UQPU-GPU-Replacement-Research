@@ -35,4 +35,4 @@ Reject a KERNEL_CHECKED or INDEPENDENTLY_REPRODUCED record if required checker/e
 
 ## Synchronization debt
 
-Keep this standalone gap as the canonical focused record until the append-heavy RESEARCH_GAPS.md and WORKLOG.md can be reconciled without truncating prior history. Root directives, INV-025/026/027 and INV-029–035, and the multilingual strategic-plan references remain unchanged.
+Synchronization debt was resolved on 2026-10-27: the RG-047 summary and cycle update were appended to RESEARCH_GAPS.md and WORKLOG.md using complete fetched files as exact prefixes. This focused file remains the canonical detailed record. Root directives, INV-025/026/027 and INV-029–035, and the multilingual strategic-plan references remain unchanged.

@@ -41,7 +41,7 @@ The claimed method advantage fails if it vanishes on law-family-disjoint or scal
 
 ## Synchronization debt
 
-This standalone gap is not yet merged into the append-heavy RESEARCH_GAPS.md. Keep the dated record intact until a safe reconciliation can append it without truncating existing history.
+Synchronization debt was resolved on 2026-10-27: a concise RG-EQN-008 entry was appended to RESEARCH_GAPS.md using the complete fetched file as an exact prefix. This focused record remains the canonical detail for acceptance criteria.
 
 
 ## 2026-10-26 matched-interface implementation update
@@ -67,3 +67,10 @@ The peer-reviewed Science Advances paper by Xu, Chen and Zhang, “Beyond empiri
 For the next matched comparison, GraphED may enter only after its exact source/code/data revisions and licenses are pinned. Hold out whole material families and, where data permit, geometry and loading regimes; keep the held-out manifest sealed; match method seeds and total resource budgets; and audit units, objectivity/frame indifference, material symmetries, admissible domains and thermodynamic consistency. A model-fit gain is falsified if it vanishes on held-out material/regime groups, requires unequal resources, violates constraints, or cannot be independently reproduced. The new v3 metadata reduces ambiguity about intended holdout structure but is not itself a disjointness certificate.
 
 Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC13564832/
+
+
+## 2026-10-27 STRIDE literature delta
+
+STRIDE (Su et al., arXiv:2605.17790v1) adds reflective repair, mixed parameter fitting and diversity-preserving semantic memory to the existing method set. It is now included as a candidate method in this same RG-EQN-008 contract; no second comparison interface is created. The reported benchmark improvements are external preprint claims and have not been reproduced by UQPU.
+
+Required follow-up: pin code/data/license and the actual holdout manifest; match total candidate evaluations, model/token use, wall/CPU time, memory and costs; use law-family-disjoint data and at least 30 preregistered seeds where compute permits; include component ablations, counterexamples, false discoveries and physical-constraint checks. A score improvement that vanishes under holdout, unequal resources, or constraint checks falsifies the claimed method advantage.

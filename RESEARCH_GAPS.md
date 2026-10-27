@@ -845,3 +845,13 @@ Unlock by reconstructing the source mass balance and uncertainty, then independe
 
 ## 2026-10-27 — FND-003 matched comparison contract
 **Status:** OPEN / SOFTWARE CONTRACT ONLY. **Primary record:** docs/RESEARCH_GAP_FND003_MATCHED_COMPARISON_2026-10-27.md. The new contract binds control and quantum runs to the same task/output-quality hash, binds a candidate speed limit to a hashed quantum-evolution record, suppresses ratios when quality or measurement gates fail, and keeps wall-plug energy separate. It does not derive a theorem or establish measured advantage. No matched physical experiment, independent theorem reconstruction, or cost-per-accepted-task result exists yet.
+
+
+## 2026-10-27 — RG-EQN-008: matched cross-method equation-discovery comparison
+**Status:** OPEN / NO METHOD INDEPENDENTLY REPRODUCED. The focused record now includes STRIDE (data-aware generation, mixed fitting, critic–executor repair and semantic memory) alongside progressive composition, transformer generation, search control, structural guidance and constrained symbolic regression. Canonical detail: docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md. The existing comparison contract is metadata/record validation, not proof of actual group disjointness or physical truth. Unlock with pinned source/data/code, law-family-disjoint holdouts, at least 30 preregistered seeds where compute permits, common total resources, counterexample/false-discovery accounting and independent reproduction.
+
+## 2026-10-27 — RG-047: formal-proof artifact binding
+**Status:** PARTIALLY ADDRESSED / INTEGRATION AND PINNED PROOF RUN OPEN. Canonical detail: docs/RESEARCH_GAP_RG047_FORMAL_PROOF_ARTIFACT_BINDING.md. The byte-binding contract exists, but integration into equation-discovery records and a real pinned checker run remain open; PR #132 and its sync record PR #133 remain unmerged. Proof metadata does not establish empirical physics. Synchronization debt was reconciled in this cycle by appending this entry and the corresponding WORKLOG record from complete fetched file contents.
+
+## 2026-10-27 — RG-QAOA-PARITY-001: matched higher-order parity QAOA evidence
+**Status:** OPEN / NOT_YET_DEMONSTRATED. Canonical detail: docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md. The existing paired-comparison contract is not a parity encoder or a reproduced algorithm. Exact small-graph mapping/reference checks, a frozen held-out manifest, equal shots/optimizer evaluations, target-aware simulation and full accepted-task resource accounting remain prerequisites. No paid QPU execution is authorized by this record.
