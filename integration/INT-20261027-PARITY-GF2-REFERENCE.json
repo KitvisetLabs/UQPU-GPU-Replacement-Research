@@ -1,0 +1,49 @@
+{
+  "id": "INT-20261027-PARITY-GF2-REFERENCE",
+  "date": "2026-10-27",
+  "primary_owner": "research_lanes/A_quantum_programming_runtime",
+  "integration_owner": "research_lanes/F_economics_benchmarks_evidence_integration",
+  "consumers": [
+    "research_lanes/C_state_memory_storage_data_movement",
+    "research_lanes/H_kanusanan_pongpanna_model"
+  ],
+  "status": "TESTING",
+  "base_main_sha": "3ffe242d25be42c5a4ac3c23fe5375bd3c8ac2df",
+  "source_branch": "research/2026-10-27-gf2-parity-symbolic-ensemble",
+  "input_artifact": {
+    "path": "software/uqpu-prototype/tests/test_parity_encoding_reference.py",
+    "source_commit": "67e41a885f27892b9d383956d8db40675293fd46"
+  },
+  "hypothesis": "An independent GF(2) rank oracle and exhaustive signed-edge objective checks will catch parity-cycle or decode/objective mismatches before a parity-QAOA circuit is implemented.",
+  "baseline_contract": "Existing deterministic classical logical-to-edge parity encoder/decoder and seven-test suite in Batch 073.",
+  "combined_contract": {
+    "graph_family": "all labelled simple graphs with 1-5 vertices",
+    "cycle_rank": "independent GF(2) row rank equals m - n + c",
+    "cycle_validity": "every declared cycle constraint has even incidence at every vertex",
+    "objective": "signed-edge preference score agrees for logical assignments, encoded physical assignments and decoded valid physical assignments",
+    "degeneracy": "component-wise global flips preserve edge parities and objective"
+  },
+  "dimensions": "dimensionless binary variables; graph edge/vertex counts",
+  "expected_gain": "reduce the risk of implementing a circuit over an incorrect classical mapping contract",
+  "measured_gain": null,
+  "evidence_class": "SOFTWARE_CONTRACT",
+  "ci_status": "PENDING_EXACT_HEAD",
+  "falsifiers": [
+    "independent GF(2) rank differs from the cycle rank or m-n+c",
+    "a declared cycle has odd vertex incidence",
+    "logical and physical signed-edge objective values differ",
+    "a valid physical assignment fails round-trip decoding",
+    "component-wise global flip changes encoded parity or objective"
+  ],
+  "resource_boundary": "test runtime and host compute will be reported from CI where available; no QPU, energy or cost-per-accepted-task measurement is inferred",
+  "rollback": "preserve the smallest counterexample and correct the mapping/test before any QAOA circuit implementation",
+  "next_gate": "pass exact-head Python unit/invariant CI; then implement the higher-order parity-QAOA circuit behind this contract and compare against direct QAOA on frozen held-out graphs with equal shots and optimizer evaluations",
+  "non_claims": [
+    "no quantum advantage",
+    "no QPU execution",
+    "no readable RAM/VRAM/storage equivalence",
+    "no physical-energy or economic result",
+    "no new physical law",
+    "no Data-Center-to-Phone achievement"
+  ]
+}
