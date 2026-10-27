@@ -1768,3 +1768,14 @@ Fresh provider/literature surveillance found the official arXiv preprint “Quan
 Added a dated source watch, RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001, Batch 079, a cross-lane integration record and a machine-readable evidence record. The integration maps the result to B provider surveillance, A target-specific compiler/workload contracts, C syndrome/decoder memory and data movement, D/G code-distance/device/factory co-design, and F full-stack economics. README and the cold-start manifest were synchronized in the same commit. No live QPU job was submitted.
 
 At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant jobs had passed, while extended QSP/QSVT/Qiskit/reference jobs remained in progress; its cold-start handoff audit passed. Exact-head CI for the latest commit remains the final gate. Aggregate RESEARCH_GAPS.md is left unchanged because it is a large append-only canonical file; the focused gap is the canonical detail and aggregate sync debt remains explicit.
+
+
+## 2026-10-27 — Batch 080: quantum-feedback thermodynamic bounds
+
+- **Source:** Ji, Gour and Wilde, “Fundamental limits for thermodynamic control with quantum feedback,” accepted by *Physical Review Letters* 2026-10-06, DOI 10.1103/x67n-33gr; official arXiv v4 posted 2026-10-09.
+- **Work completed:** published a source-bounded literature watch, RG-FND001-QUANTUM-FEEDBACK-WORK-BOUNDARY-001, an A–H integration record, and a machine-readable cross-lane contract. README, WORKLOG and the cold-start manifest were synchronized in the same commit.
+- **Lane A decision:** no guessed net-work formula was implemented. Exact source equations, operational definitions and limiting cases must be reconstructed first to avoid sign errors and double-counting of side-information acquisition, processing, control and reset.
+- **Evidence:** accepted theory / official preprint only; no independent proof reconstruction, simulation, experiment, paid QPU execution, device-energy result or accepted-task economics.
+- **Starting-head validation:** main SHA 140f9d788aae2230b8c50c79ec2cdae8fdf8adeb; prototype/invariant workflow #1814 passed all 15 jobs and cold-start audit #1022 passed. These validate the starting head, not the Batch 080 commit; exact-head CI for the new commit remains required.
+- **Mission boundary:** INV-029–033 have no new measured outcome; INV-034/035 gain a falsifiable thermodynamic follow-up. INV-025–027 and all permanent root directives remain preserved.
+- **Next gate:** pin the source equations, derive finite-dimensional reference cases, check no-side-information/classical limits and units/signs, then implement the smallest validated fixture. Keep ergotropy SDP reproduction, Helios QEC reproduction, EQN-008, BIO-001 and FUS-001 active.

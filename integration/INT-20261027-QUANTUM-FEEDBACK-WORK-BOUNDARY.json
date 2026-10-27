@@ -1,0 +1,69 @@
+{
+  "schema": "uqpu-integration-edge-v1",
+  "id": "INT-20261027-QUANTUM-FEEDBACK-WORK-BOUNDARY",
+  "date": "2026-10-27",
+  "starting_main_sha": "140f9d788aae2230b8c50c79ec2cdae8fdf8adeb",
+  "primary_owner": "Lane A",
+  "evidence_owner": "Lane F",
+  "publication_owner": "Lane H",
+  "evidence_class": "ACCEPTED_THEORY_OFFICIAL_PREPRINT",
+  "source": {
+    "title": "Fundamental limits for thermodynamic control with quantum feedback",
+    "authors": [
+      "Kaiyuan Ji",
+      "Gilad Gour",
+      "Mark M. Wilde"
+    ],
+    "accepted_date": "2026-10-06",
+    "doi": "10.1103/x67n-33gr",
+    "aps_url": "https://journals.aps.org/prl/accepted/10.1103/x67n-33gr",
+    "arxiv_url": "https://arxiv.org/abs/2503.09012v4",
+    "arxiv_version_date": "2026-10-09"
+  },
+  "hypothesis": "The theorem can inform a UQPU work-bound contract only after source equations, operational assumptions, sign conventions and side-information costs are independently reconstructed.",
+  "status": "LITERATURE_ONLY_REPRODUCTION_NOT_RUN",
+  "interface": {
+    "work_unit": "joule",
+    "required_boundary": "explicit controller/system boundary and one consistent work convention",
+    "required_terms": [
+      "side-information acquisition",
+      "controller preparation",
+      "processing",
+      "feedback/control",
+      "reset",
+      "measurement and data movement"
+    ],
+    "guardrail": "Do not substitute wall-plug energy or monetary cost for extractable work; do not double-count costs."
+  },
+  "lanes": {
+    "A": "Equation reconstruction and finite-dimensional reference fixture; implementation deferred",
+    "B": "No provider capability or job evidence",
+    "C": "Represent controller state and data movement without equating Hilbert dimension to readable classical storage",
+    "D": "No device result",
+    "E": "No biomass, material, bio-oil or fusion result",
+    "F": "Separate work, heat, wall-plug energy and cost",
+    "G": "No manufacturing/yield result; future control overhead requires measurement",
+    "H": "Source watch and reproducibility publication",
+    "I": "Reviewed as specialized lane; no material causal coupling identified"
+  },
+  "invariants": {
+    "INV_029": "No Data-Center-to-Phone milestone",
+    "INV_030": "No material substitution claim",
+    "INV_031": "No accepted bio-oil cost result",
+    "INV_032": "No net fusion electricity result",
+    "INV_033": "No interest/WACC result",
+    "INV_034": "Foundational thermodynamics follow-up opened",
+    "INV_035": "No equation or law promoted; source assumptions remain binding",
+    "INV_025_027": "Moonshots and open-frontier rules unchanged"
+  },
+  "falsifiers": [
+    "Any source-valid finite-dimensional case violates the claimed inequality beyond numerical tolerance",
+    "Declared no-side-information/classical limits fail",
+    "Sign conventions or units are inconsistent",
+    "Apparent benefit depends on omitted or double-counted information acquisition, processing or reset"
+  ],
+  "next_gate": "Pin source equations and assumptions, independently derive small-system references, freeze limiting-case fixtures, then implement and test.",
+  "large_append_only_gap_file_updated": false,
+  "sync_debt": "Focused gap published; RESEARCH_GAPS.md aggregate not rewritten to avoid unsafe replacement.",
+  "paid_qpu_execution_authorized": false
+}

@@ -6,6 +6,10 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-27 — quantum-feedback thermodynamic limits
+
+Batch 080 records the 2026-10-06 *Physical Review Letters* acceptance of Ji, Gour and Wilde's [quantum-feedback thermodynamic bounds](https://doi.org/10.1103/x67n-33gr), with [official preprint arXiv:2503.09012v4](https://arxiv.org/abs/2503.09012v4). The result is a theoretical bound conditioned on quantum side information, not a UQPU energy or cost advantage. The new [literature watch](docs/literature_watch/2026-10-27-quantum-feedback-thermodynamic-limits.md), [focused FND-001 gap](docs/RESEARCH_GAP_FND001_QUANTUM_FEEDBACK_WORK_BOUNDARY_2026-10-27.md), [Batch 080](docs/BATCH_080_FND001_QUANTUM_FEEDBACK_THERMODYNAMIC_LIMITS.md), and [integration record](integration/DAILY_CYCLE_2026-10-27_QUANTUM_FEEDBACK_THERMODYNAMIC_LIMITS.md) require equation reconstruction and finite-dimensional reference cases before implementation. The starting head's exact-head CI passed; the new commit's own workflows remain the immediate validation gate. No paid QPU job, new physical law, biomass/fuel/fusion result, WACC reduction or Data-Center-to-Phone milestone is claimed.
+
 ## Latest Eight-Lane research cycle — 2026-10-27 — Quantinuum Helios QEC provider surveillance
 
 Batch 079 records the official preprint [arXiv:2610.24077](https://arxiv.org/abs/2610.24077), reporting triangular color-code logical-memory error suppression on Quantinuum Helios at code distances 3, 5 and 7. The reported memory and logical-gate metrics remain distinct from full algorithm success, provider-independent performance, and cost per accepted task. UQPU has not reproduced the result or verified the target's access/pricing for a new experiment. The dated watch, source-pinned reproduction gap and A–H integration record are linked in [Batch 079](docs/BATCH_079_QUANTINUUM_HELIOS_QEC_PROVIDER_SURVEILLANCE.md). Batch 078's finite-shot confidence helper remains subject to exact-head extended CI. No paid QPU job or mission-level advantage is claimed.
