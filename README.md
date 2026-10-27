@@ -6,6 +6,13 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-28 — signed Max-Cut lowering and thermodynamic logic-gate energy boundary
+
+[Batch 088](docs/BATCH_088_SIGNED_MAXCUT_QUBO_ISING_AND_THERMODYNAMIC_LOGIC.md) adds a classical signed-Max-Cut lowering that preserves one exact objective across direct binary, QUBO and Ising forms. Six focused tests exhaustively compare objective values and maximizers for small signed-weight cases. This is SOFTWARE_CONTRACT_ONLY, not QAOA execution or quantum advantage. A new [literature watch](docs/literature_watch/2026-10-28-thermodynamic-logic-gate-total-energy.md) and [open reproduction gap](docs/RESEARCH_GAP_THERMODYNAMIC_LOGIC_GATE_TOTAL_ENERGY_2026-10-28.md) track Whitelam's peer-reviewed, simulation-level thermodynamic logic-gate result and require full controller/measurement/reset/cooling energy accounting.
+
+A–H, INV-025–035, FND-001–006, EQN-001–006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. No real QPU, device, Pangola material, accepted bio-oil, net fusion electricity, WACC reduction, new physical law or Data-Center-to-One-Phone milestone is claimed. Main's starting-head CI passed; exact-head CI for this cycle is pending. Batch 087 remains in open PR [#144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144), not on main; its A–I scoreboard update must be reconciled with the permanent A–H architecture before merge.
+
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — physics-informed LBE surrogate and decoder edge cases
 
 [Batch 086](docs/BATCH_086_LBE_PINO_BREAK_EVEN_AND_QEC_EDGE_CASES.md) adds a new, source-pinned watch for Xue et al.'s peer-reviewed *Nature Communications* study of physics-informed neural operators for long-horizon lattice-Boltzmann prediction ([DOI 10.1038/s41467-026-75730-1](https://doi.org/10.1038/s41467-026-75730-1)). The paper reports large speedups on its own simulation cases, but also describes a bounded per-case reuse window; UQPU has not reproduced its data, training, predictions, memory use or break-even economics. The [literature watch](docs/literature_watch/2026-10-28-physics-informed-lattice-boltzmann-neural-operator.md) and [open reproduction gap](docs/RESEARCH_GAP_LBE_PINO_REPRODUCTION_2026-10-28.md) require pinned data/code, trajectory/configuration holdouts, physical-invariant checks and full training-plus-inference cost accounting.
