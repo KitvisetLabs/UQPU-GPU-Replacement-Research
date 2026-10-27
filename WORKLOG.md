@@ -1779,3 +1779,15 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 - **Starting-head validation:** main SHA 140f9d788aae2230b8c50c79ec2cdae8fdf8adeb; prototype/invariant workflow #1814 passed all 15 jobs and cold-start audit #1022 passed. These validate the starting head, not the Batch 080 commit; exact-head CI for the new commit remains required.
 - **Mission boundary:** INV-029–033 have no new measured outcome; INV-034/035 gain a falsifiable thermodynamic follow-up. INV-025–027 and all permanent root directives remain preserved.
 - **Next gate:** pin the source equations, derive finite-dimensional reference cases, check no-side-information/classical limits and units/signs, then implement the smallest validated fixture. Keep ergotropy SDP reproduction, Helios QEC reproduction, EQN-008, BIO-001 and FUS-001 active.
+
+
+## 2026-10-27 — Batch 081: quantum-feedback TUR precision-cost boundary
+
+- **Source:** Honma and Vu, “Thermodynamic Uncertainty Relation with Quantum Feedback,” *Physical Review Letters* 137, 160406, published 2026-10-16, DOI 10.1103/6d8l-94pv; official arXiv:2602.22651v2 revised 2026-10-22.
+- **Delta:** distinguished a finite-time current-precision TUR using entropy production and exploited quantum mutual information from Batch 080's conditional work bounds. Recorded the source's finite-dimensional, weak-coupling, monitored-jump, Markovian-feedback, local-detailed-balance and unital-map assumptions.
+- **Artifacts:** published a dated source watch, RG-FND003-QUANTUM-FEEDBACK-TUR-REPRODUCTION-001, Batch 081, A–I integration record and machine-readable 36-pair review. README and cold-start manifest were synchronized in the same commit.
+- **Lane A decision:** no formula-only helper was implemented. Eqs. 1–18 and the three-level clock must be independently reconstructed, including the auxiliary correction term, units and limiting cases.
+- **Evidence boundary:** peer-reviewed theory / official preprint only; no independent UQPU reproduction, QPU job, wall-plug energy result, compute-speed claim, cost/task advantage or new physical law.
+- **Starting-head CI:** main SHA 74c7bad129a662e844d959ff3f7b86331a2261b4; prototype/invariant run #1815 passed all 15 jobs and cold-start audit #1023 passed. The Batch 081 commit requires its own exact-head CI.
+- **Mission boundary:** no new measured result for INV-029–033; the work advances the falsifiable foundational agenda INV-034/035. INV-025–027, all eight high-visibility root directives, multilingual strategic references and strategic AI-agent/funding references remain preserved.
+- **Next gate:** independently reproduce the three-level clock with tilted-Liouvillian and trajectory estimators; test Eq. 15, Eq. 17, no-feedback/classical limits, \(\Sigma\geq0\), convergence and uncertainty before implementation. Leave aggregate RESEARCH_GAPS.md unchanged and retain sync debt.
