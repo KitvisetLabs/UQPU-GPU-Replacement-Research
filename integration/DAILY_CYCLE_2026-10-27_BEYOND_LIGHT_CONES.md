@@ -6,7 +6,7 @@ Started from canonical main at `f66b303ad555767529c609a4971c3940f8be4248`. Inspe
 
 ## Fresh literature delta
 
-Added a new-to-main literature watch for Al-Ghattas, Gamarnik and Kiani, “Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses,” arXiv:2610.02166v1 (submitted 2026-10-01). Its effective-profile-complexity method combines a nonsymmetric quantum de Finetti argument with Gaussian-process entropy bounds for specific dense random p-spin Hamiltonians and restricted state classes.
+Added a new-to-main literature watch for Al-Ghattas, Gamarnik and Kiani, “Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses,” arXiv:2610.02166v1 (submitted 2026-10-01). Its effective-profile-complexity method combines a nonsymmetric quantum de Finetti argument with Gaussian-process entropy bounds for specific dense random p-spin Hamiltonians and restricted state classes. Also added a peer-reviewed fusion-materials watch for Rizkallah et al. (Journal of Fusion Energy, published 2026-06-10): HIDRA experiments report high effective lithium net-loss suppression but also rapid lithium-driven plasma contamination under the tested conditions. This is a material-level trade-off, not a reactor-level fusion result.
 
 The result is useful for proof-method and workload-boundary surveillance. It is not a universal QPU/QUBO bound, not an independent project proof, and not measured runtime, energy or economics. The already-canonical natural-proofs barrier (arXiv:2610.06826v1) is not duplicated.
 
@@ -40,6 +40,10 @@ INV-029 remains a long-horizon physical-compression mission, not a remote-termin
 ## Synchronization and CI
 
 The preceding exact-main-head cold-start and prototype/invariant workflows had passed before this cycle's new commits. The new commits will trigger hosted Actions; their exact final statuses must be re-read after publication. RESEARCH_GAPS.md and WORKLOG.md are append-only: the new gap/watch/integration delta is appended to their complete fetched contents, preserving the fetched files as exact prefixes. No paid QPU job was submitted.
+
+## Additional fusion-literature gate
+
+For RG-FUS001-HIDRA-LI-VAPOR-001, reconstruct the HIDRA lithium mass balance and uncertainty, then design a matched capture/control test that measures both net surface loss and plasma contamination. Do not use apparent retention as a proxy for stable plasma operation or net electricity.
 
 ## Next highest-value gate
 
