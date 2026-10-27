@@ -40,6 +40,10 @@ No Pangola route is currently certified as lowest cost. Measure seasonal deliver
 
 Char/carbon coproducts may enter the advanced-material program, but coproduct credits must be market- and quality-qualified and never double counted between fuel and materials economics.
 
+## 2026-10-27 — accepted-liquid cost contract
+
+The shared cost helper now has a batch-level evidence contract in [BIO-001 accepted-liquid cost contract](BIO001_ACCEPTED_LIQUID_COST_CONTRACT.md), implemented in `software/uqpu-prototype/uqpu/energy_finance.py` and tested in `software/uqpu-prototype/tests/test_bio_oil_batch_cost_contract.py`. It distinguishes crude-oil yield from final accepted liquid, includes moisture/preprocessing, hydrogen/catalyst/utilities, plant CAPEX recovery, separate R&D capital-lockup interest and disjoint net coproduct credits. Outputs remain MODEL_ONLY. The literature boundary is recorded in [the HTL/hydrotreatment watch](../../docs/literature_watch/2026-10-27-htl-biocrude-upgrading-cost-boundary.md); Pangola measurements remain missing under [RG-BIO-001](../../docs/RESEARCH_GAP_BIO001_ACCEPTED_LIQUID_COST_2026-10-27.md).
+
 ## Next gate
 
 **BIO-001:** produce the first closed Pangola conversion mass/energy balance and a saleable-product-equivalent cost model with uncertainty ranges.
