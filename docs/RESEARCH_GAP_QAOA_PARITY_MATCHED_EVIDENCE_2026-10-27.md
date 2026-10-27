@@ -33,6 +33,10 @@ Weidinger et al., arXiv:2610.26381 (2026-10-19 submission; manuscript dated 2026
 6. Start with target-aware simulation and dry-run. Any paid/live job requires explicit user authorization, credentials and a bounded budget.
 7. Require independent replication and a preregistered threshold for a useful quality/cost improvement before closing this gap.
 
+## 2026-10-27 update — exact graph-parity mapping baseline
+
+The provider-neutral classical mapping oracle in software/uqpu-prototype/uqpu/parity_encoding.py now implements the logical-to-edge XOR map, a deterministic fundamental-cycle basis, validity checking and canonical decode. Seven focused tests passed locally, including exhaustive connected/disconnected graph enumeration and exact valid-assignment counts. The hosted Python unit/invariant matrix also passed on Python 3.10, 3.11 and 3.12 for code commit 717e580db4800e14b913038255a263b453d05844. This validates the mapping contract only; it does not implement the higher-order parity-QAOA circuit or close this gap. Signed-Max-Cut objective preservation, independent GF(2) rank cross-check, held-out equal-budget comparison and any QPU/economic claim remain open.
+
 ## Sync debt
 
 Synchronization debt was resolved on 2026-10-27 by appending the RG-QAOA-PARITY-001 summary to RESEARCH_GAPS.md from a complete fetched snapshot; prior aggregate content was preserved as an exact prefix.

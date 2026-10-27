@@ -1698,3 +1698,14 @@ The new main commit 16a02848d5d3e7da148250d119e6111945ce461b passed cold-start a
 ## 2026-10-27 — Exact-head CI snapshot after trailer-test fixture repair
 
 Main head feac152e709b0c0a3909a399b8d77f65e80b0e96 corrects the new ancestry regression test to use actual multiline strings. Its cold-start audit #989 passed. Core workflow #1785 was still in progress at the time of this update. The prior main head 16a02848d5d3e7da148250d119e6111945ce461b had core run #1784 fail only on the malformed test fixture; that negative result is retained. Do not mark the core matrix green until #1785 finishes.
+
+
+## 2026-10-27 — Batch 073: exact graph-parity baseline and learning-to-erase literature watch
+
+Main code commit: 717e580db4800e14b913038255a263b453d05844. Added a deterministic graph-parity mapping oracle under software/uqpu-prototype/uqpu/parity_encoding.py and seven focused tests. The tests cover canonical logical-to-edge XOR mapping, fundamental-cycle constraints, decode/round-trip behavior, connected/disconnected graphs, exact valid-assignment counts and invalid-input rejection. An isolated Python run passed 7/7 tests; the initial draft's two test-fixture errors were corrected before commit and documented in Batch 073. The mapping is a classical correctness oracle, not a QAOA circuit or hardware result.
+
+Added docs/literature_watch/2026-10-27-learning-to-erase-quantum-states.md and RG-FND001-LEARNING-TO-ERASE-001. Zhao, Zhang and Preskill's peer-reviewed npj Quantum Information paper (published 2026-05-27; version of record 2026-08-20) is recorded as a scoped theorem about reversible learning-to-erase protocols and computational hardness under explicit assumptions. UQPU has not reproduced the theorem or measured device energy.
+
+The README first-page cycle index, Batch 073 and integration record were updated in the code commit. A follow-up synchronization appended the new parity progress and thermodynamic literature gap to RESEARCH_GAPS.md and this work log from complete fetched snapshots; prior content was preserved as an exact prefix. The existing RG-QAOA-PARITY-001 record was updated in place with the baseline mapping result.
+
+Hosted validation on code commit 717e580db4800e14b913038255a263b453d05844: core unit/invariant test jobs passed on Python 3.10, 3.11 and 3.12; autonomous cold-start audit #991 passed. Extended QSP/QSVT, Qiskit and reference-benchmark jobs were still running at the time of this work-log update. Do not describe the entire workflow as green until the final run conclusion is observed. No paid/live QPU job was submitted; no new physical law, QPU advantage, readable-memory equivalence, material/fuel/fusion result, lower financing cost or Data-Center-to-Phone result is claimed.
