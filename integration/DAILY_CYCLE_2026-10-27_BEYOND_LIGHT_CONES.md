@@ -14,7 +14,7 @@ The result is useful for proof-method and workload-boundary surveillance. It is 
 
 | Lane | Cycle delta | Evidence boundary / next gate |
 |---|---|---|
-| A — workloads/software/runtime | Added a source-scoped state-preparation theorem candidate and explicit hypothesis-mapping gap. | Independently reconstruct the proof and map one workload field-by-field before any resource claim. |
+| Lane A — workloads/software/runtime | Added a source-scoped state-preparation theorem candidate and explicit hypothesis-mapping gap. | Independently reconstruct the proof and map one workload field-by-field before any resource claim. |
 | Lane B — cloud/QPU providers | Reviewed target relevance only; no provider execution. | Keep provider-neutral dry-run path; no paid jobs without explicit authorization. |
 | Lane C — memory/state/data movement | Reinforced separation of Pauli-profile complexity, amplitude access and readable classical storage. | Record state loading, preprocessing, memory/I/O and reconstruction separately. |
 | Lane D — devices/chips/fabrication | Reviewed implications without changing device claims. | No new device or process evidence. |
