@@ -1,0 +1,48 @@
+{
+  "id": "INT-20261027-SISSO-SENSITIVITY",
+  "date": "2026-10-27",
+  "primary_owner": "research_lanes/D_device_chip_fabrication",
+  "literature_owner": "research_lanes/H_strategy_finance_future_industries",
+  "integration_owner": "research_lanes/F_economics_benchmarks_evidence_integration",
+  "status": "LITERATURE_ONLY",
+  "base_main_sha": "83e5ba81ea32d739ae5d191b48e78e8bb2e4fc42",
+  "source": {
+    "title": "How SISSO-derived materials genes shape materials properties: An analytical sensitivity analysis",
+    "journal": "Physical Review Materials",
+    "volume": 10,
+    "article": "093601",
+    "published": "2026-09-08",
+    "doi": "10.1103/gk23-cfh1",
+    "official_url": "https://journals.aps.org/prmaterials/abstract/10.1103/gk23-cfh1",
+    "code_url": "https://github.com/lfoppa/sensitivity_analysis_sisso"
+  },
+  "feeds": [
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-006",
+    "INV-030",
+    "INV-034",
+    "INV-035"
+  ],
+  "hypothesis": "Analytical sensitivity and equivalent-descriptor analysis may reveal whether symbolic materials models are robust or non-identifiable under equivalent feature representations.",
+  "acceptance_gates": [
+    "pin code, data, supplements, versions, feature grammar and domain",
+    "freeze held-out material/property families before tuning",
+    "independently reproduce the perovskite example",
+    "cross-check analytical derivatives with finite differences",
+    "match seeds, candidate evaluations, runtime, memory and data budgets",
+    "test equivalent reparameterizations, correlated-feature perturbations and held-out predictions",
+    "retain false discoveries and require independent evidence for causal or physical-law claims"
+  ],
+  "non_claims": [
+    "no UQPU reproduction",
+    "no new physical law",
+    "no Pangola-carbon substitution",
+    "no chip/device/manufacturing advantage",
+    "no bio-oil or fusion-electricity result",
+    "no financing or Data-Center-to-Phone result"
+  ]
+}

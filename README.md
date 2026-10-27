@@ -6,6 +6,10 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-27 — SISSO materials-gene sensitivity and identifiability
+
+This literature-only cycle is [Batch 075](docs/BATCH_075_SISSO_MATERIALS_GENE_SENSITIVITY.md), [the APS literature watch](docs/literature_watch/2026-10-27-sisso-materials-gene-sensitivity.md), [the open reproduction gap](docs/RESEARCH_GAP_SISSO_MATERIALS_GENE_IDENTIFIABILITY_2026-10-27.md), and [the Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_SISSO_MATERIALS_GENE_SENSITIVITY.md). It adds sensitivity-stability and equivalent-descriptor checks to the equation-discovery research method. The cited SISSO work concerns perovskite materials descriptors; UQPU has not reproduced it, and no new physical law, Pangola substitution, QPU advantage, fuel/fusion, financing or Data-Center-to-Phone result is claimed. The documentation commit's exact-head CI must be read from Actions.
+
 ## Latest Eight-Lane research cycle — 2026-10-27 — GF(2) parity references and symbolic-ensemble materials
 
 This cycle is [Batch 074](docs/BATCH_074_GF2_PARITY_AND_SYMBOLIC_ENSEMBLE.md), [the symbolic-ensemble materials literature watch](docs/literature_watch/2026-10-27-symbolic-ensemble-interatomic-potentials.md), [the materials reproduction gap](docs/RESEARCH_GAP_PANGOLA_SYMBOLIC_POTENTIAL_TRANSFER_2026-10-27.md), and [the Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_GF2_PARITY_AND_SYMBOLIC_ENSEMBLE.md). It adds independent GF(2) rank and signed-edge objective reference tests for the existing classical parity map; hosted exact-head validation is pending. The new peer-reviewed *Physical Review Materials* article (published 2026-10-09) motivates a bounded, aluminum-first symbolic-potential reproduction, not a Pangola-carbon result. No QAOA circuit, live/paid QPU job, quantum advantage, new physical law, material/fuel/fusion/financing result, readable-memory equivalence, or Data-Center-to-Phone achievement is claimed.

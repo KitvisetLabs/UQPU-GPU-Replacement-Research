@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T10:08:41Z",
+  "prepared_utc": "2026-10-27T11:13:23.646Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "3ffe242d25be42c5a4ac3c23fe5375bd3c8ac2df",
+  "canonical_start_sha": "83e5ba81ea32d739ae5d191b48e78e8bb2e4fc42",
   "priority_lane": "A",
-  "current_frontier": "Batch 074 adds independent GF(2) rank/cycle-space and signed-edge objective reference tests for the classical graph-parity mapping, plus a literature-only symbolic-ensemble materials reproduction gate. The source head's cold-start handoff audit passed after adding the required Research-Sync trailer; exact-head unit/invariant CI remains pending.",
+  "current_frontier": "Batch 075 adds a literature-only SISSO materials-gene sensitivity/identifiability gate to EQN-002/003/004/006 while preserving Batch 074's independently tested GF(2) parity references. No physical law or technology claim is promoted.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -67,7 +67,12 @@
     "software/uqpu-prototype/uqpu/parity_encoding.py",
     "software/uqpu-prototype/tests/test_parity_encoding.py",
     "software/uqpu-prototype/tests/test_parity_encoding_reference.py",
-    "integration/INT-20261027-PARITY-GF2-REFERENCE.json"
+    "integration/INT-20261027-PARITY-GF2-REFERENCE.json",
+    "docs/BATCH_075_SISSO_MATERIALS_GENE_SENSITIVITY.md",
+    "docs/RESEARCH_GAP_SISSO_MATERIALS_GENE_IDENTIFIABILITY_2026-10-27.md",
+    "docs/literature_watch/2026-10-27-sisso-materials-gene-sensitivity.md",
+    "integration/DAILY_CYCLE_2026-10-27_SISSO_MATERIALS_GENE_SENSITIVITY.md",
+    "integration/INT-20261027-SISSO-SENSITIVITY.json"
   ],
   "lanes": {
     "A": {

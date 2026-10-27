@@ -882,3 +882,8 @@ Unlock by reconstructing the source mass balance and uncertainty, then independe
 ## 2026-10-27 — RG-QAOA-PARITY-001 pending independent reference-suite validation
 
 The feature branch adds an independent GF(2) rank implementation and exhaustive signed-edge objective-preservation tests. Status remains OPEN until exact-head hosted CI passes and the counterexamples, if any, are resolved. This is a classical mapping contract only; no parity-QAOA circuit, real-QPU result or cost/energy advantage is claimed.
+
+
+## 2026-10-27 — RG-MAT-SISSO-SENSITIVITY-001: symbolic materials-gene sensitivity and identifiability
+
+**Status:** OPEN / LITERATURE_ONLY / REPRODUCTION_NOT_RUN. **Primary detail:** docs/RESEARCH_GAP_SISSO_MATERIALS_GENE_IDENTIFIABILITY_2026-10-27.md; source watch: docs/literature_watch/2026-10-27-sisso-materials-gene-sensitivity.md. Foppa and Scheffler, *Physical Review Materials* 10, 093601 (published 2026-09-08), DOI 10.1103/gk23-cfh1, present derivative-based sensitivity analysis for SISSO materials genes and discuss equivalent descriptor combinations in a perovskite example. UQPU has not reproduced the code/data. Unlock requires source pinning, independent perovskite reproduction, finite-difference checks, frozen held-out material/property families, matched budgets and reparameterization/correlation stress tests. No causal-law, Pangola-carbon, device, fuel, fusion or economic claim is promoted.
