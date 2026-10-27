@@ -1,0 +1,74 @@
+{
+  "schema": "uqpu-bio001-accepted-liquid-cost-integration-v1",
+  "integration_id": "INT-20261027-BIO001-ACCEPTED-LIQUID-COST",
+  "date": "2026-10-27",
+  "starting_main_sha": "458842f095b7157c477d106766da7d6d7d61ceb3",
+  "source_branch": "research/2026-10-27-bio001-accepted-liquid-cost",
+  "primary_owner_lane": "E_materials_energy_cooling_infrastructure",
+  "integration_owner_lane": "F_economics_benchmark_evidence",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "co_design_lanes": [
+    "A_quantum_programming_workloads_compiler_runtime",
+    "B_cloud_qpu_provider_integration",
+    "C_memory_state_data_movement",
+    "D_device_chip_process_fabrication_packaging",
+    "G_quantum_chip_manufacturing_equipment_factory_systems"
+  ],
+  "work_ids": ["BIO-001", "FIN-001", "RG-BIO-001", "INV-030", "INV-031", "INV-033", "INV-034", "INV-035"],
+  "status": "MODEL_ONLY_CONTRACT_TESTING_DATA_BLOCKED",
+  "hypothesis": "A batch-level accepted-liquid contract that includes upstream mass, upgrading, capital recovery and separately allocated R&D lock-up interest will expose cost/yield bottlenecks hidden by raw bio-oil yield alone.",
+  "equations": {
+    "dry_feedstock_kg": "wet_feedstock_kg * (1 - moisture_fraction)",
+    "accepted_fuel_energy_mj": "accepted_liquid_kg * accepted_liquid_lhv_mj_per_kg if acceptance_passed else 0",
+    "capital_recovery_factor": "r*(1+r)^n / ((1+r)^n - 1), or 1/n when r=0",
+    "allocated_capital_recovery_usd": "plant_capex_usd * capital_recovery_factor * batch_wet_feedstock_kg / (annual_nameplate_feedstock_kg * capacity_factor)",
+    "rnd_lockup_interest_usd": "rnd_principal_usd * annual_interest_rate * lockup_days / 365",
+    "cost_per_accepted_mj": "(operating_cost + allocated_capital_recovery + allocated_rnd_interest - verified_net_coproduct_credit) / accepted_fuel_energy_mj"
+  },
+  "interface": {
+    "inputs": "BioOilBatchCostInputs",
+    "function": "uqpu.energy_finance.bio_oil_batch_cost",
+    "outputs": "BioOilBatchCostResult",
+    "evidence_rule": "calculated output is always MODEL_ONLY; no input label can promote it automatically"
+  },
+  "cross_lane_edges": [
+    {"from": "E/BIO-001", "to": "F/FIN-001", "interface": "separate plant capital recovery and R&D principal/lock-up interest"},
+    {"from": "E/BIO-001", "to": "INV-030", "interface": "unique stream IDs and net incremental-cost coproduct credits"},
+    {"from": "E/BIO-001", "to": "INV-029", "interface": "accepted liquid MJ and lifecycle cost may later enter energy-supply scenarios; no phone-compression claim"},
+    {"from": "C/FND-002", "to": "A", "interface": "sparse coherent data access remains an algorithmic resource bound, not readable classical memory"},
+    {"from": "D", "to": "G", "interface": "continuous device/process/manufacturing co-design remains active"}
+  ],
+  "literature": [
+    {
+      "source": "Dimitriadis, Tuler and Bezergianni, ACS Omega",
+      "date": "2026-10-01",
+      "doi": "10.1021/acsomega.6c05037",
+      "url": "https://doi.org/10.1021/acsomega.6c05037",
+      "class": "PEER_REVIEWED_REVIEW"
+    },
+    {
+      "source": "Jensen et al., Energy & Fuels",
+      "date": "2026-04-08",
+      "doi": "10.1021/acs.energyfuels.6c00722",
+      "url": "https://doi.org/10.1021/acs.energyfuels.6c00722",
+      "class": "PEER_REVIEWED_BATCH_EXPERIMENT"
+    }
+  ],
+  "measured_project_result": "none",
+  "open_gaps": [
+    "No traceable Pangola batch mass/energy closure",
+    "No accepted-fuel assay/density/LHV record",
+    "No local feedstock/preprocessing/logistics quote bundle",
+    "No catalyst lifetime, hydrogen or utility-energy dataset",
+    "No verified coproduct market or commercial financing terms"
+  ],
+  "falsifier": "Reject any accepted-fuel cost claim if the product fails the frozen acceptance specification, the mass balance misses its preregistered tolerance, upgrading inputs are omitted, cost/provenance fields are unknown, or coproduct streams overlap.",
+  "next_gate": "Run independent, provenance-pinned Pangola batch trials and compare HTL/pyrolysis only under the same accepted-product and lifecycle-cost boundary; in parallel, Lane A must independently implement parity mapping/decoding and compare matched small graph workloads under the merged QAOA contract.",
+  "evidence_promoted_to_project": "none",
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "invariants_preserved": ["INV-025", "INV-026", "INV-027", "INV-029", "INV-030", "INV-031", "INV-032", "INV-033", "INV-034", "INV-035"]
+}
