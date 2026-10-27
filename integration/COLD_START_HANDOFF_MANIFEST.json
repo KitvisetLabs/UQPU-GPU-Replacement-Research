@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T15:06:49Z",
+  "prepared_utc": "2026-10-27T15:12:30Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "74c7bad129a662e844d959ff3f7b86331a2261b4",
+  "canonical_start_sha": "8e69b805c7c99c0baff9db8ba5543023823e2343",
   "priority_lane": "A",
-  "current_frontier": "Batch 081 records Honma and Vu's peer-reviewed finite-time quantum-feedback TUR (PRL 137, 160406; DOI 10.1103/6d8l-94pv; arXiv:2602.22651v2). The starting head 74c7bad129a662e844d959ff3f7b86331a2261b4 passed prototype/invariant run #1815 (15/15 jobs) and cold-start audit #1023. No equation helper is implemented before independent reconstruction of Eqs. 1-18, three-level-clock reproduction, units, correction term and limiting cases. The Batch 081 commit's own exact-head CI is the immediate gate.",
+  "current_frontier": "Batch 081 records Honma and Vu's peer-reviewed finite-time quantum-feedback TUR (PRL 137, 160406; DOI 10.1103/6d8l-94pv; arXiv:2602.22651v2). Starting head 8e69b805c7c99c0baff9db8ba5543023823e2343 has a successful cold-start audit #1024; core workflow #1816 is still in progress. A Markdown escaping cleanup preserves the same research scope. No equation helper is implemented before independent reconstruction of Eqs. 1-18, three-level-clock reproduction, units, correction term and limiting cases. Exact-head CI for the new follow-up commit is the immediate gate.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -220,7 +220,7 @@
     "run_id": 40517537998,
     "conclusion": "success",
     "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40517537998",
-    "note": "Validates starting head 74c7bad129a662e844d959ff3f7b86331a2261b4, not the new Batch 081 commit."
+    "note": "Validated starting head 74c7bad129a662e844d959ff3f7b86331a2261b4; later Batch 081 core workflow #1816 is in progress."
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -269,42 +269,42 @@
     "note": "Starting-head CI passed; exact-head CI for Batch 081 is pending."
   },
   "latest_handoff_audit": {
-    "run_number": 1023,
-    "run_id": 40517538004,
+    "run_number": 1024,
+    "run_id": 40528492550,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40517538004"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40528492550"
   },
   "latest_core_run_observation": {
-    "run_number": 1815,
-    "run_id": 40517537998,
-    "status": "success",
-    "python_matrix": "success",
-    "all_15_jobs": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40517537998"
+    "run_number": 1816,
+    "run_id": 40528492463,
+    "status": "in_progress",
+    "python_matrix": "in_progress",
+    "all_15_jobs": "pending",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40528492463"
   },
   "current_head_validation": {
-    "commit": "74c7bad129a662e844d959ff3f7b86331a2261b4",
-    "core_run_number": 1815,
-    "core_run_id": 40517537998,
-    "core_conclusion": "success",
-    "python_matrix": "success",
-    "extended_jobs": "success (15/15)",
-    "cold_start_run_number": 1023,
-    "cold_start_run_id": 40517538004,
+    "commit": "8e69b805c7c99c0baff9db8ba5543023823e2343",
+    "core_run_number": 1816,
+    "core_run_id": 40528492463,
+    "core_conclusion": "in_progress",
+    "python_matrix": "in_progress",
+    "extended_jobs": "pending",
+    "cold_start_run_number": 1024,
+    "cold_start_run_id": 40528492550,
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-27T14:08:00Z",
-    "note": "Validated starting head for Batch 081. The Batch 081 commit created by this cycle needs its own exact-head CI."
+    "observed_at_utc": "2026-10-27T15:11:38Z",
+    "note": "Batch 081 commit has passed cold-start audit; prototype/invariant workflow remains in progress. The follow-up formatting-cleanup commit requires exact-head CI."
   },
   "latest_cycle_ci_observation": {
-    "starting_commit": "74c7bad129a662e844d959ff3f7b86331a2261b4",
-    "core_run_number": 1815,
-    "core_run_id": 40517537998,
-    "core_conclusion": "success",
-    "cold_start_run_number": 1023,
-    "cold_start_run_id": 40517538004,
+    "starting_commit": "8e69b805c7c99c0baff9db8ba5543023823e2343",
+    "core_run_number": 1816,
+    "core_run_id": 40528492463,
+    "core_conclusion": "in_progress",
+    "cold_start_run_number": 1024,
+    "cold_start_run_id": 40528492550,
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-27T14:08:00Z",
-    "note": "Starting-head CI passed. Exact-head CI for the new Batch 081 commit is the immediate open gate."
+    "observed_at_utc": "2026-10-27T15:11:38Z",
+    "note": "Cold-start handoff passed. Core workflow #1816 remains in progress; exact-head CI for the follow-up commit is the next gate."
   },
   "latest_batch": "Batch 081 — FND-003 quantum-feedback TUR and precision-cost accounting; see docs/BATCH_081_FND001_FND003_QUANTUM_FEEDBACK_TUR.md"
 }

@@ -16,7 +16,7 @@ Reproduce the finite-time thermodynamic uncertainty relation for monitored quant
 
 - Honma and Vu, *Physical Review Letters* 137, 160406 (published 2026-10-16), DOI 10.1103/6d8l-94pv.
 - Official preprint: arXiv:2602.22651v2 (revised 2026-10-22; PDF dated 2026-10-23).
-- Primary-source watch: \`docs/literature_watch/2026-10-27-quantum-feedback-tur-precision-cost.md\`.
+- Primary-source watch: `docs/literature_watch/2026-10-27-quantum-feedback-tur-precision-cost.md`.
 - The paper's model includes a finite-dimensional system weakly coupled to a thermal environment, monitored quantum jumps, instantaneous Markovian feedback, local detailed balance, and unital feedback maps. The derivation sets \(\hbar=k_B=1\).
 - Main result: \(\operatorname{Var}[J]/\langle J\rangle^2 \geq 2(1+\delta_J)^2/\Sigma\), with \(\Sigma=S_{\mathrm{tot}}-I\geq0\) and a nontrivial auxiliary-dynamics correction \(\delta_J\). The short-time rate bound and activity-refined bound are separate checks.
 

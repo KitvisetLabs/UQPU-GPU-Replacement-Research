@@ -1,8 +1,8 @@
 # Eight-Lane integration — 2026-10-27 — quantum-feedback TUR
 
 **Integration ID:** INT-20261027-FND003-QUANTUM-FEEDBACK-TUR  
-**Starting main SHA:** \`74c7bad129a662e844d959ff3f7b86331a2261b4\`  
-**Primary artifact:** \`docs/BATCH_081_FND001_FND003_QUANTUM_FEEDBACK_TUR.md\`  
+**Starting main SHA:** `74c7bad129a662e844d959ff3f7b86331a2261b4`  
+**Primary artifact:** `docs/BATCH_081_FND001_FND003_QUANTUM_FEEDBACK_TUR.md`  
 **Primary owner:** Lane A; evidence/economics owner Lane F; publication owner Lane H  
 **Evidence class:** peer-reviewed theory / official preprint; no independent UQPU reproduction
 
@@ -31,4 +31,4 @@ Acceptance requires an independent implementation of the paper's three-level clo
 
 ## Evidence and mission boundary
 
-No paid QPU job was submitted. No contribution to INV-029–033 is measured; INV-034/035 advance through a testable, assumption-explicit research question. INV-025–027 and the permanent root directives remain unchanged. \`RESEARCH_GAPS.md\` is not rewritten; focused gap \`docs/RESEARCH_GAP_FND003_QUANTUM_FEEDBACK_TUR_2026-10-27.md\` is canonical.
+No paid QPU job was submitted. No contribution to INV-029–033 is measured; INV-034/035 advance through a testable, assumption-explicit research question. INV-025–027 and the permanent root directives remain unchanged. `RESEARCH_GAPS.md` is not rewritten; focused gap `docs/RESEARCH_GAP_FND003_QUANTUM_FEEDBACK_TUR_2026-10-27.md` is canonical.

@@ -1,7 +1,7 @@
 # Batch 081 — FND-003 quantum-feedback TUR and precision-cost accounting
 
 **Date:** 2026-10-27  
-**Starting main SHA:** \`74c7bad129a662e844d959ff3f7b86331a2261b4\`  
+**Starting main SHA:** `74c7bad129a662e844d959ff3f7b86331a2261b4`  
 **Primary technical owner:** Lane A — equation reconstruction and reference contract  
 **Evidence/economics owner:** Lane F  
 **Publication owner:** Lane H  
@@ -21,10 +21,10 @@ The source's central bound and correction term are recorded in the dated literat
 ## Work completed
 
 - Added a primary-source literature watch that captures the paper's genuine novelty, model assumptions, equation boundary, limitations and exact UQPU relevance.
-- Opened \`RG-FND003-QUANTUM-FEEDBACK-TUR-REPRODUCTION-001\` with a preregistered reproduction protocol and falsification conditions.
+- Opened `RG-FND003-QUANTUM-FEEDBACK-TUR-REPRODUCTION-001` with a preregistered reproduction protocol and falsification conditions.
 - Added a machine-readable A–I integration contract and a human-readable integration record, including all 36 lane-pair reviews.
 - Updated README, WORKLOG and the cold-start handoff manifest in the same commit.
-- Left the large append-only \`RESEARCH_GAPS.md\` unchanged; the focused gap is canonical and aggregate synchronization debt remains explicit.
+- Left the large append-only `RESEARCH_GAPS.md` unchanged; the focused gap is canonical and aggregate synchronization debt remains explicit.
 
 ## A–H lane status
 
@@ -52,7 +52,7 @@ INV-034/035 are upstream cross-cutting gates for A–H. Specialized Lane I was r
 
 ## CI and synchronization
 
-At the validated starting head \`74c7bad129a662e844d959ff3f7b86331a2261b4\`, prototype/invariant workflow [#1815](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40517537998) passed all 15 jobs and cold-start audit [#1023](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40517538004) passed. These validate the starting head only. Exact-head CI for the Batch 081 commit is the immediate gate. No paid QPU job was submitted.
+At the validated starting head `74c7bad129a662e844d959ff3f7b86331a2261b4`, prototype/invariant workflow [#1815](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40517537998) passed all 15 jobs and cold-start audit [#1023](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40517538004) passed. These validate the starting head only. Exact-head CI for the Batch 081 commit is the immediate gate. No paid QPU job was submitted.
 
 ## Next highest-value gate
 
