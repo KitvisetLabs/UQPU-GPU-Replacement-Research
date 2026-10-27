@@ -31,6 +31,10 @@ Stérin et al., “A thermodynamically favoured molecular computer,” *Nature* 
 
 Shan & Zhang's official preprint arXiv:2610.35276 (submitted 2026-10-26) reports physics-constrained symbolic regression for mean velocity and effective mixing length in incompressible smooth-wall ZPG turbulent boundary layers. It preserves classical asymptotic structure and fits transition/outer corrections. The mean-velocity comparison spans 35 DNS/LES/experimental profiles, but the authors explicitly state that out-of-fit profiles are not a statistically independent validation set; some high-Re limits are modelling priors. The [dated watch](docs/literature_watch/2026-10-28-physics-constrained-symbolic-regression-turbulence.md), [RG-PCSR-TURB-001](docs/RESEARCH_GAP_PCSR_TURBULENCE_REPRODUCTION_2026-10-28.md), and [Lane A gate](research_lanes/A_quantum_programming_runtime/PCSR_TURBULENCE_REPRODUCTION_GATE.md) require exact formula/asymptotic reconstruction and sealed independent holdouts. No source equation is promoted, and no direct cooling/fusion transfer is claimed.
 
+## Fresh no-go scan — quantum estimation and “true value” assumptions
+
+Pienaar, Tal & Ciftci, arXiv:2610.31632 (submitted 2026-10-22), prove a conditional incompatibility between a set of realist-estimation assumptions and both probe-target entanglement and state completeness when the target is modeled as a quantum variable. This is a foundational preprint, not an engineering lower bound and not a ban on operational metrology. The [dated watch](docs/literature_watch/2026-10-28-quantum-estimation-true-value-no-go.md) and [Lane F scope gate](research_lanes/F_economics_benchmarks_evidence_integration/FND003_QMETROLOGY_ASSUMPTIONS_GATE.md) require FND-003 benchmarks to label the target as a classical parameter or quantum variable, document calibration/uncertainty, and name a discriminating observable if a different model is claimed. No physical-law change is made.
+
 ## A–H ledger
 
 - **A:** exhaustive GF(2) rank and parity-image tests; parity-QAOA, objective preservation and matched economics remain open.
@@ -46,7 +50,7 @@ Shan & Zhang's official preprint arXiv:2610.35276 (submitted 2026-10-26) reports
 
 - **FND-001:** helper added; no measured energy input, hence no empirical gap.
 - **FND-002:** no new output-information/readable-storage bound.
-- **FND-003:** no matched control-versus-quantum-speed-limit experiment.
+- **FND-003:** no matched control-versus-quantum-speed-limit experiment; the new no-go preprint adds a target-type/calibration scope guard only.
 - **FND-004:** new published alternative-primitive lead with falsifiable reproduction gate; not reproduced by UQPU.
 - **FND-005:** no validated QFT/particle mechanism.
 - **FND-006 / EQN-001–006:** the PCSR preprint adds a candidate constrained-discovery method; source pinning, exact semantics, independent holdouts, counterexamples and replication remain required. No equation/law is promoted.

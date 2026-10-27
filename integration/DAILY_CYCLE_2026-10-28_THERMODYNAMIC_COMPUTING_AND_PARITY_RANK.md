@@ -56,3 +56,8 @@ The starting head passed the prototype/invariant workflow (16/16 jobs) and cold-
 ## Additional fresh literature delta — EQN-PCSR-TURB-001
 
 Shan & Zhang, arXiv:2610.35276 (submitted 2026-10-26), use staged physics-constrained symbolic regression for ZPG turbulent-boundary-layer mean velocity/effective mixing length. The preprint retains classical asymptotic structure but says its out-of-fit comparisons are not a statistically independent validation set. Added the dated watch, Lane A gate and RESEARCH_GAPS entry. This advances the candidate-audit method only: exact formula reconstruction, units/limits, sealed independent profile holdouts, classical baselines, counterexamples and search-budget accounting are required. No equation is promoted and no direct cooling/fusion transfer is claimed.
+
+
+## Additional fresh literature delta — FND-003 measurement scope
+
+Pienaar, Tal & Ciftci, arXiv:2610.31632 (2026-10-22), present a conditional no-go result for realist “true value” assumptions when the target is modeled as a quantum variable with entanglement and state completeness. It is not a ban on operational metrology or an engineering lower bound. Added the dated watch, Lane F scope gate and RESEARCH_GAPS entry. FND-003 now requires the benchmark to label classical parameter vs quantum variable, document calibration/uncertainty and state a discriminating observable if an alternative model is claimed. No law/device result is promoted.

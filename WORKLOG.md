@@ -1818,3 +1818,11 @@ Source commit `ea0b4426b96b38a645316be0d939584754e3401b` is carried by [PR #144]
 - **Key limitation:** 35 profiles are compared for mean velocity, but the preprint states out-of-fit profiles are not a statistically independent validation set; some high-Re targets are imposed modelling priors.
 - **Artifacts:** dated literature watch, RG-PCSR-TURB-001, Lane A reproduction gate, Batch 087 and integration record updated. No source equation is promoted to a new physical law.
 - **Next gate:** pin code/data/version, reconstruct formulas and limiting cases, seal independent profile holdouts, compare with classical baselines and preserve counterexamples/failed seeds. No transfer to cooling/fusion until domain-matched validation.
+
+
+## 2026-10-28 — FND-003 literature screen: quantum estimation “true value” no-go
+
+- **Source:** Pienaar, Tal & Ciftci, arXiv:2610.31632 (2026-10-22), official preprint.
+- **Finding:** conditional incompatibility of uniqueness/pre-existing-value/independence with probe-target entanglement and state completeness when the target is modeled as a quantum variable.
+- **Scope decision:** not a ban on operational metrology and not an engineering lower bound. Added a Lane F scope gate to distinguish classical benchmark parameters from quantum observables and require calibration/uncertainty and a discriminating observable for alternative models.
+- **Artifacts:** dated watch, RG-FND003-QMETROLOGY-001, Lane F gate, Batch 087 and integration record. No physical law or engineering result is promoted.

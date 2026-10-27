@@ -216,3 +216,20 @@ The SDC paper is external evidence, not UQPU reproduction or low all-in energy/c
 | I | architecture discrepancy remains open; no physical test | GOVERNANCE SYNC DEBT | reconcile A–H/A–I docs separately |
 
 The arXiv preprint is a candidate model, not a universal law. A fit and imposed asymptotic priors are not independent validation. EQN-001/006 gain a reproducible audit gate only; no technology advantage is demonstrated.
+
+
+## Cycle 009 Delta 19 — 2026-10-28 — FND-003 estimation-target scope guard
+
+| Lane | Advance / blocker | Evidence | Next gate |
+|---|---|---|---|
+| A | no algorithm or circuit consequence from the interpretational preprint | PREPRINT_METHOD_SCOPE | retain operational workload/quality contracts |
+| B | no QPU/provider change | NO_SUBMIT | matched target/calibration identities remain required |
+| C | no new storage or output-information bound | NONE | keep readable output and state/data movement distinct |
+| D | no device/measurement hardware result | NONE | require a discriminating device observable before escalation |
+| E | no material, bio-oil, fusion or cooling consequence | NONE | do not transfer the theorem to energy technology |
+| F | target-type/calibration/uncertainty scope gate added | METHOD_ONLY | label parameter vs quantum variable; define discriminating observable if claimed |
+| G | no manufacturing consequence | NONE | no process change from interpretation alone |
+| H | foundational watch recorded with caveats | PUBLICATION ONLY | integrate only if an operational prediction changes |
+| I | A–H/A–I documentation drift remains open | GOVERNANCE SYNC DEBT | reconcile lane manifest separately |
+
+The theorem is conditional on formalized assumptions; it does not invalidate practical parameter estimation or create a physical lower bound. FND-003 gains a measurement-scope gate only.
