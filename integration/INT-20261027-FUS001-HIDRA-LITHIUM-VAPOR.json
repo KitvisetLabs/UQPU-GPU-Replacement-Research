@@ -1,0 +1,55 @@
+{
+  "schema": "uqpu-fusion-literature-integration-v1",
+  "integration_id": "INT-20261027-FUS001-HIDRA-LITHIUM-VAPOR",
+  "work_id": "RG-FUS001-HIDRA-LI-VAPOR-001",
+  "date": "2026-10-27",
+  "source": {
+    "title": "Rapid Vapor-Driven Plasma Contamination and Suppressed Net Lithium Surface Loss in the HIDRA Stellarator",
+    "authors": [
+      "Rabel Rizkallah",
+      "Andrew Shone",
+      "Daniel O'Dea",
+      "Davide Curreli",
+      "Daniel Andruczyk"
+    ],
+    "venue": "Journal of Fusion Energy",
+    "volume": 45,
+    "article_number": 39,
+    "published": "2026-06-10",
+    "url": "https://link.springer.com/article/10.1007/s10894-026-00582-y",
+    "evidence_class": "PEER_REVIEWED_EXPERIMENT_MODEL_REFERENCED_MASS_BALANCE"
+  },
+  "observed_or_inferred": {
+    "effective_net_loss_suppression_factor": "approximately 0.91 to unity in reported HIDRA hydrogen/helium cases",
+    "plasma_behavior": "high-temperature lithium release rapidly made the plasma lithium-dominated; stable vapor-shielding-relevant operation was not sustained",
+    "qualification": "R_eff is an effective model-referenced mass-balance estimate absorbing redeposition/recycling and possible surface-conditioning effects"
+  },
+  "limitations": [
+    "HIDRA modeled heat fluxes in this campaign were orders of magnitude below reactor-relevant divertor conditions",
+    "initial Li inventory uncertainty estimated at roughly 15 percent",
+    "not direct tritium retention/recovery evidence",
+    "not a reactor-level availability, net-electricity, or cost measurement"
+  ],
+  "project_effect": "Add gross evaporation, net loss, redeposition, plasma impurity, capture/recovery, stability, cleanup, downtime and component lifetime as distinct FUS-001 variables; propagate only after independent replication.",
+  "invariants": [
+    "INV-029",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "lanes": {
+    "A": "no computing advantage implied",
+    "B": "no QPU job",
+    "C": "no memory result",
+    "D": "plasma-facing material and diagnostic process windows remain open",
+    "E": "fusion material/lithium retention evidence lead",
+    "F": "lifecycle and net-electricity propagation blocked",
+    "G": "capture/deposition/metrology co-design needed",
+    "H": "dated literature watch and strategic integration"
+  },
+  "next_gate": "Pin source/supplementary data, reconstruct uncertainty, preregister matched capture/control test, independently replicate and propagate to net delivered electricity.",
+  "paid_qpu_jobs_authorized": false,
+  "material_experiments_authorized": false,
+  "evidence_promoted_to_project": "none"
+}
