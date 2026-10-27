@@ -1,7 +1,7 @@
 # Eight-Lane integration — 2026-10-27 — GF(2) parity references and symbolic-ensemble materials
 
 **Starting main:** `3ffe242d25be42c5a4ac3c23fe5375bd3c8ac2df`  
-**Primary records:** [Batch 074](../docs/BATCH_074_GF2_PARITY_AND_SYMBOLIC_ENSEMBLE.md), [parity reference tests](../software/uqpu-prototype/tests/test_parity_encoding_reference.py), [symbolic-ensemble literature watch](../docs/literature_watch/2026-10-27-symbolic-ensemble-interatomic-potentials.md), [materials gap](../docs/RESEARCH_GAP_PANGOLA_SYMBOLIC_POTENTIAL_TRANSFER_2026-10-27.md)  
+**Primary records:** [Batch 074](../docs/BATCH_074_GF2_PARITY_AND_SYMBOLIC_ENSEMBLE.md), [parity reference tests](../software/uqpu-prototype/tests/test_parity_encoding_reference.py), [stable parity integration contract](INT-20261027-PARITY-GF2-REFERENCE.json), [symbolic-ensemble literature watch](../docs/literature_watch/2026-10-27-symbolic-ensemble-interatomic-potentials.md), [materials gap](../docs/RESEARCH_GAP_PANGOLA_SYMBOLIC_POTENTIAL_TRANSFER_2026-10-27.md)  
 **Status:** implementation tests awaiting hosted validation; external materials paper is LITERATURE_ONLY.
 
 ## Canonical starting-state inspection
@@ -63,3 +63,8 @@ Next: inspect the PR's exact-head Actions; if green, update the parity gap with 
 ## CI handoff correction — 2026-10-27
 
 The first exact-head cold-start audit for source head `b3fb93b7f8b1d6edfb4e24baecfd15825293862d` failed closed only because the latest commit message lacked the required `Research-Sync: pending-main` trailer. This is a handoff-governance failure, not a scientific-test result. The current follow-up commit carries the required trailer and triggers a new exact-head audit; the new run must pass before the handoff is marked complete. The earlier failure remains part of the audit history.
+
+
+## Follow-up provenance and CI status — 2026-10-27
+
+Added stable integration edge `INT-20261027-PARITY-GF2-REFERENCE`, pinned to the test artifact's source commit `4bec529b16cb5b8fad7ccfc7bcd65083de6b2539`. The cold-start audit on source head `67e41a885f27892b9d383956d8db40675293fd46` passed after the required `Research-Sync: pending-main` trailer was added. The current source head after adding the stable integration edge and refreshing the handoff manifest is `7dadaca6b7f1bd0eb5956e6b266950711857f0b9`; its exact-head CI is pending. The earlier missing-trailer failure remains recorded and is not treated as a scientific failure or hidden from the audit trail.
