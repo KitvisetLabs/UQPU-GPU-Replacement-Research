@@ -72,3 +72,10 @@ The dated source watch is literature-only. The software changes in this commit a
 ## Next highest-value gate
 
 Run the existing matched equation-discovery benchmark on a pinned STRIDE revision only after source/data/license and the exact holdout manifest are frozen. Use at least 30 preregistered seeds, common total token/candidate/compute budgets, law-family-disjoint test data, component ablations, unit/constraint checks, counterexample and false-discovery counts, and complete cost/resource accounting. In parallel, resolve the open PRs by review/rebase rather than copying duplicate code. The next QAOA gate remains an independently checked parity mapping on exact small graphs before target-aware simulation. No paid QPU job is authorized.
+
+
+## Exact-head CI repair follow-up — 2026-10-27
+
+The first publication commit, 6742ac1b9bf68b5d0a726f582efa0b5de7bda001, triggered core workflow #1773 and cold-start audit #976. The audit failed closed on five invalid lane evidence_class values: the manifest used explanatory compound labels, while the validator permits only the fixed taxonomy in software/uqpu-prototype/uqpu/cold_start_handoff.py. The failed audit reported lane_A, lane_B, lane_D, lane_E and lane_H only; it did not report missing required-reading paths, language-order failures, or evidence-boundary promotion.
+
+Repair: normalize A/B/C/D/E/F/G/H evidence_class fields to allowed categories (LITERATURE_ONLY, SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK, MODEL_ONLY, and FABRICATION_PROPOSAL as applicable), preserving each lane's explanatory status and next_gate. This is a handoff-schema repair, not a scientific or benchmark result. Exact-head Actions for the repair commit are the acceptance gate; no test pass is claimed until those runs complete.
