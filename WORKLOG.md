@@ -1693,3 +1693,8 @@ Repaired the cold-start audit's ref-name-only trailer rule by fetching full hist
 ## 2026-10-27 — CI follow-up for ancestry-aware trailer test
 
 The new main commit 16a02848d5d3e7da148250d119e6111945ce461b passed cold-start audit #988 but core workflow #1784 failed in the newly added test_commit_trailer_uses_canonical_main_ancestry: the fixture contained literal backslash-n characters instead of actual newlines. The production audit itself passed the hosted handoff audit. A follow-up corrects the fixture using a multiline string; exact-head core validation of that repair remains pending. No scientific evidence classification changes.
+
+
+## 2026-10-27 — Exact-head CI snapshot after trailer-test fixture repair
+
+Main head feac152e709b0c0a3909a399b8d77f65e80b0e96 corrects the new ancestry regression test to use actual multiline strings. Its cold-start audit #989 passed. Core workflow #1785 was still in progress at the time of this update. The prior main head 16a02848d5d3e7da148250d119e6111945ce461b had core run #1784 fail only on the malformed test fixture; that negative result is retained. Do not mark the core matrix green until #1785 finishes.
