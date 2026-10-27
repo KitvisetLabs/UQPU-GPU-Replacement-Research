@@ -1633,3 +1633,10 @@ A further scope audit made the conditional theorem's prerequisites explicit in t
 ### Test-count correction — 2026-10-27
 
 The four theorem-scope tests were added to the 12-test hardened set, yielding 16 total tests (not 15 as stated in the immediately preceding scope-note). The current isolated Python unittest run passes 16/16. This correction changes only the count; the evidence boundary and methodology-only status are unchanged.
+
+
+## 2026-10-27 — state-preparation profile-complexity literature delta
+
+Started from main f66b303ad555767529c609a4971c3940f8be4248 after inspecting the project charter, version invariants, goals, README, research operating system, open-frontier directive, Kanusanan Pongpan Model, strategic references, permanent root directives, latest Batch 070/069, foundational/equation-discovery code, gaps and Actions state. Fresh surveillance found a new-to-main official preprint: Al-Ghattas, Gamarnik and Kiani, arXiv:2610.02166v1, “Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses,” submitted 2026-10-01. The result uses effective profile complexity for specific dense random p-spin Hamiltonians and restricted state classes; it is not a universal workload lower bound or measured engineering advantage.
+
+Published docs/literature_watch/2026-10-27-beyond-light-cones-spin-glass-stateprep.md, docs/RESEARCH_GAP_STATEPREP_SPIN_GLASS_PROFILE_2026-10-27.md, integration/INT-20261027-STATEPREP-SPIN-GLASS-BOUND.json, and integration/DAILY_CYCLE_2026-10-27_BEYOND_LIGHT_CONES.md. Appended this record to WORKLOG and the new gap to RESEARCH_GAPS using the complete fetched contents as exact prefixes. The pre-existing natural-proofs literature watch was not duplicated. All A–H lanes were reviewed; no paid QPU job or empirical physics claim was made. Hosted Actions must be checked on the final resulting main head.
