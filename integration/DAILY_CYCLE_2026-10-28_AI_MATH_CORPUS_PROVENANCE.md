@@ -29,3 +29,10 @@ FND-001–006 and EQN-001–006 remain open/evidence-gated. INV-029–033 remain
 ## Next gate
 
 Reconstruct three source records from one pinned family, including a positive theorem control, a false/redundant negative control, exact source/toolchain hashes, Lean kernel-check status and an independent second reconstruction. Retain all failures and compare resource costs only on the same accepted-output contract.
+
+
+## Additional Lane B/C/F literature delta — certified QLDPC decoder reference
+
+Banfi et al. [arXiv:2610.28008v1](https://arxiv.org/abs/2610.28008) propose per-shot bounds for non-degenerate ML decoding under circuit-level noise, with explicit success/failure/undecided classes. This is a useful candidate reference method for quality acceptance, but it remains external preprint evidence and has not been reproduced by UQPU. The new watch is `docs/literature_watch/2026-10-28-certified-qldpc-decoder-benchmark.md`; the focused gap is `docs/RESEARCH_GAP_QEC_ML_DECODER_CERTIFICATION_2026-10-28.md`.
+
+This gap is separate from the Helios color-code reproduction gap. Its first gate is a tiny independent instance where exhaustive enumeration can certify the correction cost. Each reported interval must contain the exhaustive result, and undecided outcomes must remain visible. Only after that may source-level bivariate-bicycle reproduction be attempted. Provider-specific probabilities, prices and calibration snapshots must not be mixed; no paid QPU run is authorized.

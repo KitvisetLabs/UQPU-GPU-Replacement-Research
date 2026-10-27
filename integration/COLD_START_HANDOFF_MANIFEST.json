@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "272f2a59ce0053c5f4b518edfacd5531b69eb5d1",
   "priority_lane": "A",
-  "current_frontier": "Batch 084 (2026-10-28): source-provenance triage for AI-generated mathematical instruments, supplementary to RG-048. arXiv:2610.17090 is a survey with provisional novelty assessments and no Lean kernel-check; no code metric or theorem status promoted. Starting head 272f2a59ce0053c5f4b518edfacd5531b69eb5d1 passed core run #1819 (15/15) and cold-start audit #1034; the new Batch 084 documentation commit requires its own exact-head checks.",
+  "current_frontier": "Batch 084 (2026-10-28): AI-mathematical-instrument corpus provenance plus certified non-degenerate ML decoder reference. arXiv:2610.17090 is an uncompiled/un-kernel-checked survey; arXiv:2610.28008 is an external QLDPC decoder-benchmark preprint. Both are LITERATURE_ONLY. Starting head 0fe6670c5934478cfd67fdefdb1be3cfe7a6fd99 passed cold-start audit #1035; core run #1824 had its Python matrix successful and extended jobs still in progress at last observation. This follow-up documentation sync requires exact-head CI.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -114,7 +114,9 @@
     "integration/DAILY_CYCLE_2026-10-28_PROOF_STRUCTURE_METRICS.md",
     "docs/BATCH_084_AI_MATH_CORPUS_PROVENANCE.md",
     "docs/literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md",
-    "integration/DAILY_CYCLE_2026-10-28_AI_MATH_CORPUS_PROVENANCE.md"
+    "integration/DAILY_CYCLE_2026-10-28_AI_MATH_CORPUS_PROVENANCE.md",
+    "docs/literature_watch/2026-10-28-certified-qldpc-decoder-benchmark.md",
+    "docs/RESEARCH_GAP_QEC_ML_DECODER_CERTIFICATION_2026-10-28.md"
   ],
   "lanes": {
     "A": {
@@ -125,15 +127,15 @@
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
-      "status": "HELIOS_COLORCODE_PREPRINT_WATCH; PROVIDER_ACCESS_AND_PRICING_UNVERIFIED",
+      "status": "HELIOS_COLORCODE_REPRODUCTION OPEN; NON-DEGENERATE ML DECODER REFERENCE CERTIFICATION OPEN; NO PROVIDER JOB",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "Pin and independently reproduce arXiv:2610.24077 error rates/suppression factors; verify supported cloud access, SDK/lowering path and pricing before any bounded, explicitly consented hardware experiment."
+      "next_gate": "Reconstruct the non-degenerate ML correction-cost intervals on a tiny instance with exhaustive ground truth; independently reproduce source-level QLDPC decoder comparisons if exact circuit/noise/shot inputs are recoverable; separately pin Helios source/data and provider access/pricing."
     },
     "C": {
       "owner_path": "research_lanes/C_state_memory_storage_data_movement",
-      "status": "SYNDROME_AND_DECODER_MEMORY_IO_COSTS_OPEN; PARTIAL_INFORMATION_CERTIFICATE_WATCH",
+      "status": "SYNDROME/DECODER MEMORY-IO COSTS OPEN; PARTIAL-INFORMATION CERTIFICATE WATCH; NO MEMORY REPLACEMENT RESULT",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "reproduce memory-order estimator on known finite-state processes; keep active/hidden memory distinct from readable storage and map QROM/state-preparation costs"
+      "next_gate": "Record decoder working memory, syndrome I/O, latency and reconstruction cost on identical shots; keep readable classical storage distinct from quantum state and proof corpus size."
     },
     "D": {
       "owner_path": "research_lanes/D_device_chip_fabrication_packaging",
@@ -149,9 +151,9 @@
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "PROOF/CORPUS RESOURCE METRICS PROPOSED; NO NEW MEASURED COST; BIO-001/FUS-001 GAPS OPEN",
+      "status": "PROOF/CORPUS RESOURCE METRICS AND CERTIFIED DECODER REFERENCE PROPOSED; NO NEW MEASURED COST; BIO-001/FUS-001 GAPS OPEN",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "Measure indexing, formalization/checking, retries, host compute, memory and energy only on pinned runs; continue accepted-liquid closure and net-delivered-fusion-electricity accounting."
+      "next_gate": "Measure certificate-search nodes, undecided fraction, decoder/host runtime, memory and energy where available; retain cost per accepted task only for matched quality/target/billing boundaries."
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -161,7 +163,7 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "2026-10-28 AI-MATH CORPUS PROVENANCE WATCH AND BATCH 084 PUBLISHED",
+      "status": "2026-10-28 AI-MATH PROVENANCE AND QLDPC DECODER-CERTIFICATE LITERATURE WATCHES PUBLISHED",
       "evidence_class": "LITERATURE_ONLY",
       "next_gate": "Preserve six-language master-plan links and strategic AI-agent/funding references; publish evidence-linked milestones without claiming reduced WACC or mission closure."
     },
@@ -196,7 +198,8 @@
     "Quantinuum Helios color-code below-threshold QEC preprint",
     "RG-048 AI proof-structure metric reconstruction",
     "formal proof correctness-versus-efficiency separation",
-    "AI mathematical-instrument corpus provenance (arXiv:2610.17090)"
+    "AI mathematical-instrument corpus provenance (arXiv:2610.17090)",
+    "Certified non-degenerate ML decoder reference (arXiv:2610.28008)"
   ],
   "open_gates": [
     "RG-033",
@@ -218,7 +221,9 @@
     "exact-head CI for Batch 081",
     "RG-048 AI proof-structure metric reconstruction",
     "RG-048 AI mathematical-instrument corpus reconstruction",
-    "exact-head CI for Batch 084 documentation sync"
+    "exact-head CI for Batch 084 documentation sync",
+    "RG-QEC-ML-DECODER-CERTIFICATION-2026-10-28",
+    "exact-head CI for Batch 084 handoff-sync commit"
   ],
   "master_reference_languages": [
     "Thai",
@@ -253,11 +258,11 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review. Batch 078: RESEARCH_GAPS.md aggregate not rewritten because it is a large append-only canonical file; focused RG-FND001-ERGOTROPY-PARTIAL-INFO-001 and integration record are published. Reconcile the aggregate only through safe append-only synchronization. Batch 079: RESEARCH_GAPS.md aggregate remains unchanged to avoid unsafe replacement of large append-only history; focused RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001 is canonical. Batch 078's focused ergotropy gap is also awaiting aggregate reconciliation. Batch 080: RESEARCH_GAPS.md remains unchanged because it is a large append-only canonical file; RG-FND001-QUANTUM-FEEDBACK-WORK-BOUNDARY-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 081: RESEARCH_GAPS.md remains unchanged to protect large append-only history; RG-FND003-QUANTUM-FEEDBACK-TUR-REPRODUCTION-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 083 (2026-10-28): focused RG-048 and integration record are published; WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots. Exact-head CI for the documentation sync is not observed; prior parent CI is not inherited. Batch 084 (2026-10-28): added a supplementary corpus-provenance source to focused RG-048, Batch 084, a literature watch and integration record. Aggregate RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. Starting-head exact CI passed; exact-head CI for the new documentation commit is pending observation.",
-  "next_independent_action": "Pin arXiv:2610.17090 and the public corpus commit; reconstruct three claim/instrument records from one family with exact hashes, dependency audit, Lean kernel-check where feasible, positive and negative controls, and independent second reconstruction. Keep proof correctness, novelty, physical adequacy and economics separate. In parallel, continue RG-EQN-008, FND-001/FND-003, BIO-001, FUS-001 and FIN-001. No paid QPU job without credentials, bounded budget and explicit consent.",
+  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review. Batch 078: RESEARCH_GAPS.md aggregate not rewritten because it is a large append-only canonical file; focused RG-FND001-ERGOTROPY-PARTIAL-INFO-001 and integration record are published. Reconcile the aggregate only through safe append-only synchronization. Batch 079: RESEARCH_GAPS.md aggregate remains unchanged to avoid unsafe replacement of large append-only history; focused RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001 is canonical. Batch 078's focused ergotropy gap is also awaiting aggregate reconciliation. Batch 080: RESEARCH_GAPS.md remains unchanged because it is a large append-only canonical file; RG-FND001-QUANTUM-FEEDBACK-WORK-BOUNDARY-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 081: RESEARCH_GAPS.md remains unchanged to protect large append-only history; RG-FND003-QUANTUM-FEEDBACK-TUR-REPRODUCTION-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 083 (2026-10-28): focused RG-048 and integration record are published; WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots. Exact-head CI for the documentation sync is not observed; prior parent CI is not inherited. Batch 084 (2026-10-28): added a supplementary corpus-provenance source to focused RG-048, Batch 084, a literature watch and integration record. Aggregate RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. Starting-head exact CI passed; exact-head CI for the new documentation commit is pending observation. Batch 084 follow-up (2026-10-28): added the certified non-degenerate ML decoder-reference watch and focused gap; retained the AI-mathematical-instrument source under RG-048. The aggregate RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. Exact-head CI for this follow-up sync is pending.",
+  "next_independent_action": "Pin the AI-mathematics corpus and reconstruct three claim/instrument records with controls; independently implement the non-degenerate ML decoder interval certificate on a tiny exhaustive instance and verify undecided accounting; then attempt source-level QLDPC reproduction only if exact circuits/noise/shots are recoverable. Continue RG-EQN-008, FND-001/FND-003, BIO-001, FUS-001 and FIN-001. No paid QPU job without credentials, bounded budget and explicit consent.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
   "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-28_AI_MATH_CORPUS_PROVENANCE.md",
-  "latest_literature_watch": "docs/literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md",
+  "latest_literature_watch": "docs/literature_watch/2026-10-28-certified-qldpc-decoder-benchmark.md",
   "last_cycle_ci_observation": {
     "initial_commit": "6742ac1b9bf68b5d0a726f582efa0b5de7bda001",
     "initial_cold_start_run": 40454588726,
@@ -306,28 +311,32 @@
     "commit": "272f2a59ce0053c5f4b518edfacd5531b69eb5d1"
   },
   "current_head_validation": {
-    "commit": "PENDING_BATCH_084_COMMIT_SHA",
-    "core_run_number": null,
-    "core_run_id": null,
-    "core_conclusion": "not_observed",
-    "python_matrix": "not_observed",
-    "extended_jobs": "not_observed",
-    "cold_start_run_number": null,
-    "cold_start_run_id": null,
-    "cold_start_conclusion": "not_observed",
-    "observed_at_utc": "2026-10-27T18:03:22Z",
-    "note": "Starting head 272f2a59 passed core run #1819 (15/15) and cold-start audit #1034. The new Batch 084 commit must be checked on its exact head; do not inherit the starting-head result."
+    "commit": "0fe6670c5934478cfd67fdefdb1be3cfe7a6fd99",
+    "core_run_number": 1824,
+    "core_run_id": 40556780483,
+    "core_conclusion": "in_progress",
+    "python_matrix": "success",
+    "extended_jobs": "in_progress",
+    "cold_start_run_number": 1035,
+    "cold_start_run_id": 40556780521,
+    "cold_start_conclusion": "success",
+    "observed_at_utc": "2026-10-27T18:06:05Z",
+    "note": "Exact-head cold-start audit passed. Core Python 3.10/3.11/3.12 matrix passed; extended reference/QSVT jobs were still running at last observation. The current handoff-sync commit is newer and requires its own exact-head checks."
   },
   "latest_cycle_ci_observation": {
     "starting_commit": "272f2a59ce0053c5f4b518edfacd5531b69eb5d1",
-    "core_run_number": 1819,
+    "core_run_number": 1823,
     "core_run_id": 40547643401,
     "core_conclusion": "success",
     "cold_start_run_number": 1034,
     "cold_start_run_id": 40547643503,
     "cold_start_conclusion": "success",
     "observed_at_utc": "2026-10-27T17:08:11Z",
-    "note": "Exact starting-head checks passed. Batch 084 documentation changes are new and require exact-head CI."
+    "note": "Starting head passed exact-head checks. First Batch 084 commit cold-start passed; its extended core jobs were in progress at the last observation. This follow-up sync commit requires exact-head CI."
   },
-  "latest_batch": "Batch 084 — AI mathematics corpus provenance and formal-check gate; see docs/BATCH_084_AI_MATH_CORPUS_PROVENANCE.md"
+  "latest_batch": "Batch 084 — AI mathematics corpus provenance and certified QLDPC decoder benchmarks; see docs/BATCH_084_AI_MATH_CORPUS_PROVENANCE.md",
+  "latest_literature_watches": [
+    "docs/literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md",
+    "docs/literature_watch/2026-10-28-certified-qldpc-decoder-benchmark.md"
+  ]
 }

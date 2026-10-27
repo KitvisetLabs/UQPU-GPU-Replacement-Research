@@ -23,6 +23,10 @@ Ying Xie's arXiv preprint [2610.17090](https://arxiv.org/abs/2610.17090), posted
 
 The new [dated literature watch](literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md) distinguishes this provenance/triage layer from Batch 083's proof-structure metric work. Both remain external literature, not reproduced UQPU evidence.
 
+## Additional fresh literature delta — certified QLDPC decoder reference
+
+Banfi et al., [arXiv:2610.28008v1](https://arxiv.org/abs/2610.28008), submitted 2026-10-20, propose per-shot bounds for a non-degenerate maximum-likelihood decoding reference under circuit-level noise, with success/failure/undecided labels and branch-and-bound refinement. Their reported tests on two bivariate-bicycle QLDPC codes are external preprint results; UQPU has not reproduced them. The source watch is [here](literature_watch/2026-10-28-certified-qldpc-decoder-benchmark.md), and the focused [RG-QEC-ML-DECODER-CERTIFICATION-2026-10-28 gap](RESEARCH_GAP_QEC_ML_DECODER_CERTIFICATION_2026-10-28.md) requires tiny-instance exhaustive controls before any broader reproduction. The Helios hardware gap remains separate.
+
 ## Research decision
 
 Extend the existing **RG-048** gate rather than create a duplicative gap. The survey suggests a useful candidate-triage record—claim, instrument, antecedents/dependencies, caveats, exact source version and formalization status—but does not justify a new score or acceptance rule.
@@ -34,11 +38,11 @@ The [RG-048 supplementary source section](RESEARCH_GAP_AI_PROOF_STRUCTURE_METRIC
 | Lane | Status / advancement this cycle |
 |---|---|
 | **A — Quantum programming/workloads/compiler/runtime** | Added a source-provenance triage gate downstream of RG-EQN-008 and RG-048. No equation-discovery method is promoted as a winner; no proof metric is implemented. |
-| **B — Cloud/QPU/provider integration** | Provider-neutral paths preserved. No provider credentials/pricing were newly verified and no job was submitted. |
-| **C — RAM/VRAM/HBM/storage/state/data movement** | Formal corpus size, proof bytes, quantum state and readable classical storage remain distinct quantities. No memory/storage replacement result. |
+| **B — Cloud/QPU/provider integration** | Added a certified non-degenerate ML decoder-reference gap; provider-neutral paths preserved. No provider credentials/pricing were newly verified and no job was submitted. |
+| **C — RAM/VRAM/HBM/storage/state/data movement** | Formal corpus size, proof bytes, quantum state and readable classical storage remain distinct; decoder memory/I/O are future measured costs. No memory/storage replacement result. |
 | **D — Devices/chips/process/packaging** | No device or fabrication evidence changed. |
 | **E — Biomass/materials/bio-oil/fusion/cooling** | BIO-001 and FUS-001 remain open. No Pangola material substitution, accepted-liquid cost or net-electricity result. |
-| **F — Economics/benchmarks/evidence/integration** | Future accounting includes corpus indexing, formalization/checking, independent review, retries, host compute, memory and measured energy. No accepted-task cost advantage measured. |
+| **F — Economics/benchmarks/evidence/integration** | Future accounting includes corpus indexing/formal checks and certified decoder search, undecided fractions, retries, host compute, memory and measured energy. No accepted-task cost advantage measured. |
 | **G — Manufacturing equipment/software/factory systems** | D/G co-design preserved; no yield, process-window or cost-per-good-device result. |
 | **H — Kanusanan Pongpanna Model, strategic finance and publication** | Published the new source watch and updated README/handoff context; all six language editions and strategic AI-agent/funding references remain preserved. |
 
@@ -63,8 +67,8 @@ INV-025/026/027, the 100,000,000-unit and 100,000,000x cost moonshots, subsystem
 
 The README points to this Batch, the literature watch and RG-048. The handoff manifest records the latest frontier, lane owners, exact starting-head CI and next independent action. The permanent root directives `00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md`, `00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md`, `01`–`06` strategy/foundation files, `docs/KANUSANAN_PONGPANNA_MODEL.md`, `STRATEGIC_PLAN_REFERENCES.md` and the Thai/English/Chinese/Japanese/Korean/German public master-plan links are preserved.
 
-The large append-only `RESEARCH_GAPS.md` and `WORKLOG.md` were not rewritten from partial snapshots. RG-048 remains the focused canonical gap; aggregate append-only synchronization debt remains explicit.
+The large append-only `RESEARCH_GAPS.md` and `WORKLOG.md` were not rewritten from partial snapshots. The focused decoder gap is separate from the Helios hardware-reproduction gap. RG-048 remains the focused canonical gap; aggregate append-only synchronization debt remains explicit.
 
 ## Next highest-value gate
 
-Pin the corpus and toolchain, reconstruct three claim/instrument records with positive/negative controls, obtain kernel-check and independent-rebuild outcomes, then decide whether any normalized proof-structure diagnostic is robust enough to implement. Continue in parallel with RG-EQN-008, FND-001/FND-003, BIO-001, FUS-001 and FIN-001. No paid QPU job without credentials, bounded budget and explicit user consent.
+Pin the corpus/toolchain and reconstruct three claim/instrument records with positive/negative controls; independently verify the QLDPC ML-reference intervals against exhaustive tiny-instance results; then decide whether either diagnostic merits implementation. Continue in parallel with RG-EQN-008, FND-001/FND-003, BIO-001, FUS-001 and FIN-001. No paid QPU job without credentials, bounded budget and explicit user consent.
