@@ -1791,3 +1791,17 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 - **Starting-head CI:** main SHA 74c7bad129a662e844d959ff3f7b86331a2261b4; prototype/invariant run #1815 passed all 15 jobs and cold-start audit #1023 passed. The Batch 081 commit requires its own exact-head CI.
 - **Mission boundary:** no new measured result for INV-029–033; the work advances the falsifiable foundational agenda INV-034/035. INV-025–027, all eight high-visibility root directives, multilingual strategic references and strategic AI-agent/funding references remain preserved.
 - **Next gate:** independently reproduce the three-level clock with tilted-Liouvillian and trajectory estimators; test Eq. 15, Eq. 17, no-feedback/classical limits, \(\Sigma\geq0\), convergence and uncertainty before implementation. Leave aggregate RESEARCH_GAPS.md unchanged and retain sync debt.
+
+
+## 2026-10-28 — Batch 087: molecular physical primitive and parity-rank verification
+
+- Starting main: 7734020a3f48cfcd12c1eb198e8ca43dbafc1ca2. Prototype/invariant workflow passed 16/16 jobs (run 40575874945) and cold-start audit passed (run 40575874829). These validate starting main only; source-branch exact-head CI remains required.
+- Literature: Stérin et al., *Nature* 657, 646–652 (2026-09-16), DOI 10.1038/s41586-026-10996-5. External experiment; UQPU reproduction not run. Added source watch and Lane E reproduction gate.
+- Lane A: added test-only GF(2) rank cross-check over 75 simple graphs on 1–4 vertices; no parity-QAOA, signed-Max-Cut objective preservation or QPU execution.
+- FND-001: added landauer_gap_ratio_for_accepted_task and tests; diagnostic only, no measured energy input.
+- Local sanity check: independent rank arithmetic over 75 graph masks and a 128-erasure/300 K Landauer ratio example passed. This is not the full repository suite.
+- Evidence boundary: software-contract + literature only. No new law, quantum advantage, Pangola substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone milestone.
+- A–H: A mapping test/diagnostic; B no-submit; C inventory/readout boundary; D alternative primitive only; E SDC gap; F cost gate; G D/G co-design; H watch/master references.
+- Architecture sync debt: AGENTS/sync policy and nine-lane scoreboard enumerate I, while operating-system/lane README remain A–H and the Lane I directory README is missing. I remains MODEL_ONLY/no physical test.
+- INV-025–035 and root directives 00/00A/01–06 remain preserved; INV-029–033 are unachieved targets, INV-034/035 evidence-gated. INV-036/037 untouched.
+- Next: exact-head CI, signed-Max-Cut objective-preservation fixture, and independent small SDC reproduction with measured wall-plug energy/full lifecycle cost.

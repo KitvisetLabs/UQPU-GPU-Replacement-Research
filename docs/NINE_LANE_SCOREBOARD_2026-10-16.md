@@ -182,3 +182,20 @@ not create live calibration, a physical schedule, fidelity, memory replacement,
 energy/cost or advantage evidence. E/G/H/I, FND/EQN and INV-025–035 retain
 their existing evidence gates. Next is a scalable independent routed-semantics
 check; live service and paid execution remain unauthorized.
+
+
+## Cycle 009 Delta 17 — 2026-10-28 — molecular-computing and parity-rank gate
+
+| Lane | Advance / blocker | Evidence | Next gate |
+|---|---|---|---|
+| A | exhaustive GF(2) rank/parity-image test; Landauer diagnostic | SOFTWARE_CONTRACT_ONLY | CI; signed-Max-Cut objective preservation |
+| B | provider-neutral targets retained; no job | NO_SUBMIT | same target/price/calibration identity |
+| C | molecular inventory/readout boundary | CONTRACT_ONLY | measure bytes, persistence and transfer |
+| D | alternative molecular primitive reviewed | LITERATURE_ONLY | reproduce and characterize conditions |
+| E | SDC-REPRO-001 opened; BIO-001/FUS-001 unchanged | LITERATURE_ONLY / DATA_BLOCKED | pin source, repeat program, measure full cost |
+| F | ideal Landauer floor separated from measured task energy | SOFTWARE_CONTRACT_ONLY | wall-plug/lifecycle-cost ledger |
+| G | D/G co-design retained | NO FABRICATION EVIDENCE | assembly/metrology/yield after repeatability |
+| H | watch and strategic references preserved | PUBLICATION ONLY | integrate validated outcomes only |
+| I | reviewed per AGENTS/sync policy; expected folder README missing | GOVERNANCE_SYNC_DEBT / MODEL_ONLY | reconcile A–H/A–I without erasing a track |
+
+The SDC paper is external evidence, not UQPU reproduction or low all-in energy/cost proof. FND-001 gained a diagnostic but no measured input; FND-004 gained a falsifiable alternative-primitive gate. INV-029–035 and moonshots remain unachieved. Legacy eight-lane history is unchanged.

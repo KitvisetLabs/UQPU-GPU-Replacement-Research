@@ -6,6 +6,14 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-28 — thermodynamic molecular computing and parity-rank verification
+
+[Batch 087](docs/BATCH_087_THERMODYNAMIC_MOLECULAR_COMPUTING_AND_PARITY_RANK.md) adds an independent GF(2) rank/cut-space test across all simple graphs on 1–4 vertices and a scoped `landauer_gap_ratio_for_accepted_task` diagnostic. The peer-reviewed Scaffolded DNA Computer result ([Nature DOI 10.1038/s41586-026-10996-5](https://doi.org/10.1038/s41586-026-10996-5)) is external evidence only; UQPU has not reproduced it or measured molecular energy/cost. The [literature watch](docs/literature_watch/2026-10-28-thermodynamically-favoured-molecular-computing.md), [Lane E reproduction gate](research_lanes/E_materials_energy_cooling_infrastructure/SDC_THERMODYNAMIC_COMPUTING_RESEARCH_GATE.md), and [integration record](integration/DAILY_CYCLE_2026-10-28_THERMODYNAMIC_COMPUTING_AND_PARITY_RANK.md) preserve falsifiers and full accepted-task cost accounting.
+
+A–H, INV-025–035, FND-001–006, EQN-001–006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. The repository also has an A–I versus A–H documentation discrepancy; Lane I remains MODEL_ONLY/no physical test rather than silently deleted. No paid QPU, new physical law, quantum advantage, Pangola substitution, accepted bio-oil, net fusion electricity, WACC reduction or Data-Center-to-One-Phone result is claimed.
+
+**Starting-head CI:** [prototype/invariant workflow](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40575874945) and [cold-start audit](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40575874829) passed on `7734020a3f48cfcd12c1eb198e8ca43dbafc1ca2`. The source branch requires its own exact-head checks.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — physics-informed LBE surrogate and decoder edge cases
 
 [Batch 086](docs/BATCH_086_LBE_PINO_BREAK_EVEN_AND_QEC_EDGE_CASES.md) adds a new, source-pinned watch for Xue et al.'s peer-reviewed *Nature Communications* study of physics-informed neural operators for long-horizon lattice-Boltzmann prediction ([DOI 10.1038/s41467-026-75730-1](https://doi.org/10.1038/s41467-026-75730-1)). The paper reports large speedups on its own simulation cases, but also describes a bounded per-case reuse window; UQPU has not reproduced its data, training, predictions, memory use or break-even economics. The [literature watch](docs/literature_watch/2026-10-28-physics-informed-lattice-boltzmann-neural-operator.md) and [open reproduction gap](docs/RESEARCH_GAP_LBE_PINO_REPRODUCTION_2026-10-28.md) require pinned data/code, trajectory/configuration holdouts, physical-invariant checks and full training-plus-inference cost accounting.
