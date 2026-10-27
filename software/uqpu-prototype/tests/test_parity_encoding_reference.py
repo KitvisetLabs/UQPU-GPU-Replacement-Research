@@ -28,7 +28,7 @@ def _independent_gf2_rank(cycle_constraints):
 
 class ParityEncodingIndependentReferenceTests(unittest.TestCase):
     def test_all_simple_graphs_through_five_vertices_match_independent_gf2_rank(self):
-        # All 1,098 labelled simple graphs with 1..5 vertices are covered.
+        # All 1,099 labelled simple graphs with 1..5 vertices are covered.
         # The rank implementation is independent of the encoder's union-find
         # and spanning-forest construction.
         for vertex_count in range(1, 6):
