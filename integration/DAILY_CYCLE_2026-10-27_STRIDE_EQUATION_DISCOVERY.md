@@ -79,3 +79,8 @@ Run the existing matched equation-discovery benchmark on a pinned STRIDE revisio
 The first publication commit, 6742ac1b9bf68b5d0a726f582efa0b5de7bda001, triggered core workflow #1773 and cold-start audit #976. The audit failed closed on five invalid lane evidence_class values: the manifest used explanatory compound labels, while the validator permits only the fixed taxonomy in software/uqpu-prototype/uqpu/cold_start_handoff.py. The failed audit reported lane_A, lane_B, lane_D, lane_E and lane_H only; it did not report missing required-reading paths, language-order failures, or evidence-boundary promotion.
 
 Repair: normalize A/B/C/D/E/F/G/H evidence_class fields to allowed categories (LITERATURE_ONLY, SAVED_TARGET_NO_SUBMIT_TRANSPILATION_RESOURCE_CHECK, MODEL_ONLY, and FABRICATION_PROPOSAL as applicable), preserving each lane's explanatory status and next_gate. This is a handoff-schema repair, not a scientific or benchmark result. Exact-head Actions for the repair commit are the acceptance gate; no test pass is claimed until those runs complete.
+
+
+## Observed repair validation — 2026-10-27
+
+Commit 30fc7883809c7e7f094bbf4927a06ec360e568ef passes the cold-start audit: [run #977](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40454730770). Its Python unit/invariant matrix passed on 3.10, 3.11 and 3.12 within [core run #1774](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40454730849). The remaining extended QSP/QSVT/Qiskit checks were still running at the latest observation, so this is a partial validation state, not a full core-workflow pass. The enum mismatch from commit 6742ac1 was repaired and the failure remains visible in the run history.

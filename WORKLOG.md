@@ -1669,3 +1669,8 @@ No live/paid QPU job was submitted. No new executable benchmark or local test wa
 ## 2026-10-27 — CI repair after STRIDE cycle publication
 
 Exact-head cold-start audit #40454588726 for commit 6742ac1b9bf68b5d0a726f582efa0b5de7bda001 failed with lane_A, lane_B, lane_D, lane_E and lane_H evidence_class_invalid. The handoff validator uses a closed evidence-class enum; descriptive combined labels are not accepted. Corrected those lane metadata values to the validator's existing categories without changing scientific claims, budgets or authorization boundaries. Core Python 3.10–3.12 tests were still running when this repair record was prepared; rerun both workflows on the repair commit and report exact-head results. No test pass is claimed from the failed audit.
+
+
+## Repair validation observed on 2026-10-27
+
+Follow-up commit 30fc7883809c7e7f094bbf4927a06ec360e568ef corrected the cold-start manifest's evidence_class enum values. Cold-start audit #977 / run 40454730770 completed successfully. The Python unit/invariant matrix in core run #1774 / 40454730849 passed on Python 3.10, 3.11 and 3.12. At this observation, extended jobs qsvt-bounded-prefix, qiskit-verification, qsvt-ten-query and qsvt-eight-query remained in progress; therefore the full core workflow is not yet called green. The initial commit's audit failure remains in history and is recorded as repaired, not hidden. No scientific result is inferred from CI.

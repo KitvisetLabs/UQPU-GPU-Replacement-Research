@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T05:08:00Z",
+  "prepared_utc": "2026-10-27T05:22:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "e7949b6572d0bd503a75246e3ea07b1995ffcea4",
   "priority_lane": "A",
-  "current_frontier": "STRIDE literature watch integrated; repairing exact-head cold-start audit evidence-class enum mismatch from commit 6742ac1b9bf68b5d0a726f582efa0b5de7bda001; no scientific claim promoted",
+  "current_frontier": "STRIDE watch and gap sync committed; evidence-class taxonomy repair validated by cold-start audit #977 and Python 3.10-3.12 unit matrix; extended QSP/QSVT/Qiskit checks still pending on repair commit",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -164,10 +164,35 @@
   "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-27_STRIDE_EQUATION_DISCOVERY.md",
   "latest_literature_watch": "docs/literature_watch/2026-10-27-stride-self-reflective-equation-discovery.md",
   "last_cycle_ci_observation": {
-    "commit": "6742ac1b9bf68b5d0a726f582efa0b5de7bda001",
-    "cold_start_run": 40454588726,
-    "conclusion": "failure",
-    "reason": "lane_A/B/D/E/H evidence_class_invalid; descriptive values were outside the fixed enum",
-    "repair_commit_pending": true
+    "initial_commit": "6742ac1b9bf68b5d0a726f582efa0b5de7bda001",
+    "initial_cold_start_run": 40454588726,
+    "initial_conclusion": "failure",
+    "initial_reason": "lane_A/B/D/E/H evidence_class_invalid: descriptive labels were outside the fixed audit enum",
+    "repair_commit": "30fc7883809c7e7f094bbf4927a06ec360e568ef",
+    "repair_cold_start_run": 40454730770,
+    "repair_cold_start_conclusion": "success",
+    "repair_core_run": 40454730849,
+    "repair_core_status": "in_progress_at_last_observation",
+    "unit_matrix_python_3_10_3_11_3_12": "success",
+    "extended_jobs_pending": [
+      "qsvt-bounded-prefix",
+      "qiskit-verification",
+      "qsvt-ten-query",
+      "qsvt-eight-query"
+    ],
+    "repair_commit_pending": false
+  },
+  "latest_handoff_audit": {
+    "run_number": 977,
+    "run_id": 40454730770,
+    "conclusion": "success",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40454730770"
+  },
+  "latest_core_run_observation": {
+    "run_number": 1774,
+    "run_id": 40454730849,
+    "status": "in_progress_at_last_observation",
+    "python_matrix": "success",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40454730849"
   }
 }
