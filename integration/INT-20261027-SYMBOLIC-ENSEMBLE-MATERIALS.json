@@ -1,0 +1,36 @@
+{
+  "id": "INT-20261027-SYMBOLIC-ENSEMBLE-MATERIALS",
+  "date": "2026-10-27",
+  "primary_owner": "research_lanes/D_quantum_photonic_semiconductor_device",
+  "integration_owner": "research_lanes/F_economics_benchmarks_evidence_integration",
+  "literature_owner": "research_lanes/H_kanusanan_pongpanna_model",
+  "status": "LITERATURE_ONLY",
+  "source": {
+    "title": "Symbolic ensemble learning enables discovery of fast accurate physics-based interatomic potentials",
+    "journal": "Physical Review Materials",
+    "volume": 10,
+    "article": 103802,
+    "published": "2026-10-09",
+    "doi": "10.1103/gkpd-gtzp",
+    "preprint": "https://arxiv.org/abs/2609.16526"
+  },
+  "feeds": ["INV-030", "INV-034", "INV-035", "EQN-001", "EQN-002", "EQN-003", "EQN-004", "EQN-006"],
+  "relevance": "Physically structured symbolic-ensemble methods may be evaluated as a candidate screening workflow for material-specific effective models. The cited study is aluminum-only and is not a Pangola-carbon or UQPU result.",
+  "promotion_gates": [
+    "pin source revision, code/data and supplementary artifacts; record unavailable artifacts",
+    "freeze train/validation/held-out partitions and resource budget",
+    "compare incumbent EAM, individual symbolic candidates, ensemble and declared ML potential",
+    "report energy and force errors separately with property-specific held-out metrics",
+    "check units, invariance, stability, cutoff and domain; preserve counterexamples and failed seeds",
+    "independent rebuild before claiming reproduction",
+    "separate carbon-specific dataset and independent material qualification before any INV-030 substitution claim",
+    "lifecycle functional-equivalence and economics before technology promotion"
+  ],
+  "non_claims": [
+    "no new physical law",
+    "no Pangola-derived material substitution",
+    "no chip/device/fabrication performance result",
+    "no bio-oil, fusion-electricity or financing result",
+    "no Data-Center-to-Phone compression or UQPU advantage"
+  ]
+}

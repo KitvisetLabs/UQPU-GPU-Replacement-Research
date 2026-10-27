@@ -873,3 +873,12 @@ Unlock by reconstructing the source mass balance and uncertainty, then independe
 ## 2026-10-27 — RG-FND001-LEARNING-TO-ERASE-001: reversible learning and thermodynamic work
 
 **Status:** OPEN / THEORY_ONLY / REPRODUCTION_NOT_RUN. **Primary record:** docs/RESEARCH_GAP_FND001_LEARNING_TO_ERASE_2026-10-27.md; source watch: docs/literature_watch/2026-10-27-learning-to-erase-quantum-states.md. Zhao, Zhang and Preskill, npj Quantum Information 12, 137 (2026), DOI 10.1038/s41534-026-01273-4, present a scoped theoretical learning-to-erase construction and a computational no-go result under explicit cryptographic assumptions. UQPU has not independently reconstructed the proof or measured any physical energy. Unlock requires source/supplement pinning, theorem-assumption extraction, independent proof reconstruction, a preregistered finite state family, reversible-uncomputation tests, explicit sample/runtime/workspace accounting and separate boundary-valid energy measurement before any device claim.
+
+
+## 2026-10-27 — RG-MAT-SYMBOLIC-ENSEMBLE-001: symbolic interatomic-potential ensemble reproduction
+
+**Status:** OPEN / LITERATURE_ONLY / REPRODUCTION_NOT_RUN. **Primary detail:** docs/RESEARCH_GAP_PANGOLA_SYMBOLIC_POTENTIAL_TRANSFER_2026-10-27.md. Varughese et al., *Physical Review Materials* 10, 103802 (published 2026-10-09), DOI 10.1103/gkpd-gtzp, report an EAM-structured EqNN/symbolic ensemble for DFT-referenced aluminum. UQPU has not reproduced the source artifacts or qualified any material. First gate: pin code/data and freeze held-out data; compare incumbent EAM, single symbolic candidates, ensemble and a declared ML potential with matched budgets; report energy and force errors separately, stability/invariance and failed seeds. Carbon-specific/Pangola work is a distinct later gate. No physical law, material substitution or technology/economic benefit is promoted.
+
+## 2026-10-27 — RG-QAOA-PARITY-001 pending independent reference-suite validation
+
+The feature branch adds an independent GF(2) rank implementation and exhaustive signed-edge objective-preservation tests. Status remains OPEN until exact-head hosted CI passes and the counterexamples, if any, are resolved. This is a classical mapping contract only; no parity-QAOA circuit, real-QPU result or cost/energy advantage is claimed.
