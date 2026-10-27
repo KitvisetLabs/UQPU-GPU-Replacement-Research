@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T11:23:41.162Z",
+  "prepared_utc": "2026-10-27T12:05:13.201Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "890ec20616a90ee763e50d28bf79a449fcec7fd4",
+  "canonical_start_sha": "3774fe187f69d553a639be018dbd59df3451ae64",
   "priority_lane": "A",
-  "current_frontier": "Batch 076 BIO-001 accepted-liquid contract is integrated; repair commit 890ec passed the Python 3.10/3.11/3.12 matrix and cold-start audit. Extended QSP/QSVT/Qiskit/reference checks were still running at last inspection. Pangola batch data remain missing; outputs are MODEL_ONLY.",
+  "current_frontier": "Batch 077 MOSAIC-SR transformer-guided equation-discovery watch is on main. Treat it as LITERATURE_ONLY; no method reproduction or physical-law claim. Reuse the canonical RG-EQN-008 / equation_discovery_comparison.py matched comparator; RG-EQN-009 is a method-specific supplement. Batch 076 BIO-001 remains MODEL_ONLY and Pangola data remain missing. Exact-head prototype/invariant CI is in progress; cold-start audit passed for the Batch 077 commit.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -80,14 +80,21 @@
     "software/uqpu-prototype/tests/test_bio_oil_batch_cost_contract.py",
     "integration/DAILY_CYCLE_2026-10-27_BIO001_ACCEPTED_LIQUID_COST.md",
     "integration/INT-20261027-BIO001-ACCEPTED-LIQUID-COST.json",
-    "research_lanes/E_materials_energy_cooling_infrastructure/ULTRA_LOW_COST_BIO_OIL_RESEARCH_TRACK.md"
+    "research_lanes/E_materials_energy_cooling_infrastructure/ULTRA_LOW_COST_BIO_OIL_RESEARCH_TRACK.md",
+    "docs/BATCH_077_MOSAIC_SR_MATCHED_EQUATION_DISCOVERY.md",
+    "docs/literature_watch/2026-10-27-mosaic-sr-transformer-guided-equation-discovery.md",
+    "docs/RESEARCH_GAP_MOSAIC_SR_MATCHED_REPRODUCTION_2026-10-27.md",
+    "integration/DAILY_CYCLE_2026-10-27_MOSAIC_SR_MATCHED_DISCOVERY.md",
+    "software/uqpu-prototype/uqpu/equation_discovery_comparison.py",
+    "software/uqpu-prototype/tests/test_equation_discovery_comparison.py",
+    "integration/COLD_START_HANDOFF_MANIFEST.json"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "INDEPENDENT_GF2_REFERENCE_TESTS_PR_PENDING_CI",
-      "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "inspect exact-head Python unit/invariant CI for the exhaustive GF(2) rank and signed-objective reference suite; preserve counterexamples; only then implement parity-QAOA and equal-budget comparison"
+      "status": "MOSAIC_SR_LITERATURE_ONLY_MATCHED_COMPARISON_OPEN",
+      "evidence_class": "LITERATURE_ONLY",
+      "next_gate": "reuse canonical RG-EQN-008 / equation_discovery_comparison.py; pin source/data/code hashes and run equal-budget law-family-disjoint comparison with >=30 preregistered seeds where feasible; no method is ranked before hosted evidence"
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -115,9 +122,9 @@
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "PARITY_REFERENCE_AND_MATERIALS_GAP_INTEGRATION_PENDING_CI",
+      "status": "BATCH_077_SYNCED; BIO001_MODEL_ONLY; EXACT_HEAD_CI_PENDING",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "record exact-head test status and preserve full resource, lifecycle, energy and finance boundaries"
+      "next_gate": "inspect exact-head prototype/invariant CI; keep equal-resource and accepted-output cost boundaries, and reconcile standalone gap into aggregate RESEARCH_GAPS.md without truncation"
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -127,9 +134,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "DATED_SYMBOLIC_ENSEMBLE_LITERATURE_WATCH_ADDED",
+      "status": "DATED_MOSAIC_SR_LITERATURE_WATCH_ADDED",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "maintain six multilingual master-plan links and strategic AI-agent/funding context; no claim promotion"
+      "next_gate": "preserve all six multilingual master-plan links and strategic AI-agent/funding context; no claim promotion"
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
@@ -152,7 +159,9 @@
     "RG-047",
     "RG-QAOA-PARITY-001",
     "FND-003-MATCHED-COMPARISON",
-    "RG-FND001-MEMORY-AWARE-INFERENCE-001"
+    "RG-FND001-MEMORY-AWARE-INFERENCE-001",
+    "RG-EQN-009 (method-specific supplement to RG-EQN-008)",
+    "MOSAIC-SR matched equation-discovery surveillance"
   ],
   "open_gates": [
     "RG-033",
@@ -165,7 +174,9 @@
     "RG-QROM-SPARSE-001",
     "RG-STATEPREP-SPARSE-001",
     "RG-FUS001-HIDRA-LI-VAPOR-001",
-    "RG-FND001-MEMORY-AWARE-INFERENCE-001"
+    "RG-FND001-MEMORY-AWARE-INFERENCE-001",
+    "RG-EQN-009 (under RG-EQN-008)",
+    "exact-head CI for commit 3774fe187f69d553a639be018dbd59df3451ae64"
   ],
   "master_reference_languages": [
     "Thai",
@@ -253,5 +264,6 @@
     "repair_core_run": 1785,
     "repair_core_status": "in_progress",
     "observed_at_utc": "2026-10-27T08:20:30Z"
-  }
+  },
+  "latest_batch": "Batch 077 — MOSAIC-SR matched equation-discovery surveillance; see docs/BATCH_077_MOSAIC_SR_MATCHED_EQUATION_DISCOVERY.md"
 }
