@@ -791,3 +791,18 @@ The external preprint reports signed-Max-Cut simulations and IBM Heron experimen
 The paper proves tight worst-case T-count bounds for sparse QROM in a fixed Clifford+T circuit model and derives sparse state-preparation/block-encoding bounds. This is a circuit-resource lower-bound reference, not a physical memory, wall-clock, energy or dollar-cost theorem. The UQPU gap is to freeze a workload's address width, data width, sparsity, precision and address-promise semantics, then compare dense/direct and sparse routes with preprocessing, ancillas, depth, storage, I/O and output costs included.
 
 **Unlock:** exact small-instance verification, held-out sparsity patterns, explicit MODEL_ONLY/SIMULATION_ONLY evidence labels and end-to-end resource accounting. A promised-address bound may not be used unless the workload contract guarantees the promise.
+
+
+### RG-BIO-001 — accepted-liquid mass, energy and full-cost closure
+**Status:** OPEN / MODEL_ONLY CONTRACT IMPLEMENTED / PANGOLA DATA MISSING  
+**Date:** 2026-10-27  
+**Primary owner:** Lane E; evidence/integration owner Lane F  
+**Detailed record:** docs/RESEARCH_GAP_BIO001_ACCEPTED_LIQUID_COST_2026-10-27.md  
+**Literature watch:** docs/literature_watch/2026-10-27-htl-biocrude-upgrading-cost-boundary.md  
+**Implementation:** software/uqpu-prototype/uqpu/energy_finance.py (BioOilBatchCostInputs, bio_oil_batch_cost)
+
+The batch contract prices final accepted liquid energy rather than raw bio-oil mass. It records wet feedstock/moisture, dry-mass yield, feedstock and preprocessing, logistics, hydrogen, catalyst, utilities, other OPEX, plant CAPEX recovery, capacity factor/lifetime, separate R&D principal-lockup interest and disjoint net coproduct credits. A rejected batch has no accepted-fuel cost/MJ. Calculated output is always MODEL_ONLY.
+
+**Blocking data:** no traceable Pangola batch mass/energy closure, accepted-product assay/LHV/density, hydrogen/catalyst/utility dataset, local feedstock/logistics quotes, verified coproduct revenue or commercial financing terms.
+
+**Unlock:** pin one lot and acceptance-spec SHA-256; record all output streams and process inputs; close mass/energy ledgers within preregistered tolerances; independently repeat accepted yield; audit cost and coproduct provenance; compare routes under the same accepted-product contract. Failure of acceptance, closure, provenance or non-overlap rejects the cost claim.
