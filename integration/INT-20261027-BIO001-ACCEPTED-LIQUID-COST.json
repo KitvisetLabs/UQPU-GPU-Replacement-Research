@@ -1,0 +1,76 @@
+{
+  "schema": "uqpu-bio001-accepted-liquid-cost-integration-v1",
+  "integration_id": "INT-20261027-BIO001-ACCEPTED-LIQUID-COST",
+  "date": "2026-10-27",
+  "starting_main_sha": "bc6140d667168d4d210961bea5c9122777b0c744",
+  "source_branch": "main",
+  "primary_owner_lane": "E_materials_energy_cooling_infrastructure",
+  "integration_owner_lane": "F_economics_benchmark_evidence",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "co_design_lanes": [
+    "A_quantum_programming_workloads_compiler_runtime",
+    "B_cloud_qpu_provider_integration",
+    "C_memory_state_data_movement",
+    "D_device_chip_process_fabrication_packaging",
+    "G_quantum_chip_manufacturing_equipment_factory_systems"
+  ],
+  "work_ids": [
+    "BIO-001",
+    "FIN-001",
+    "RG-BIO-001",
+    "INV-030",
+    "INV-031",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "status": "MODEL_ONLY_CONTRACT_IMPLEMENTED_PANGOLA_DATA_BLOCKED",
+  "hypothesis": "A batch-level accepted-liquid contract that includes upstream mass, upgrading, capital recovery and separately allocated R&D lock-up interest exposes bottlenecks hidden by crude bio-oil yield alone.",
+  "interface": {
+    "inputs": "BioOilBatchCostInputs",
+    "function": "uqpu.energy_finance.bio_oil_batch_cost",
+    "outputs": "BioOilBatchCostResult",
+    "evidence_rule": "output always MODEL_ONLY; input labels never promote evidence automatically"
+  },
+  "literature": [
+    {
+      "source": "Dimitriadis, Tuler and Bezergianni, ACS Omega",
+      "date": "2026-10-01",
+      "doi": "10.1021/acsomega.6c05037",
+      "class": "PEER_REVIEWED_REVIEW"
+    },
+    {
+      "source": "Jensen et al., Energy & Fuels",
+      "date": "2026-04-08",
+      "doi": "10.1021/acs.energyfuels.6c00722",
+      "class": "PEER_REVIEWED_BATCH_EXPERIMENT"
+    }
+  ],
+  "open_gaps": [
+    "No traceable Pangola mass/energy closure",
+    "No accepted-product assay/density/LHV",
+    "No local feedstock/preprocessing/logistics quotes",
+    "No catalyst lifetime, hydrogen or utility-energy dataset",
+    "No verified coproduct market or commercial financing terms"
+  ],
+  "falsifier": "Reject accepted-fuel cost claims if product fails frozen acceptance, mass balance misses tolerance, upgrading inputs are omitted, required costs are unknown, or coproduct streams overlap.",
+  "next_gate": "Run provenance-pinned independent Pangola batch trials; keep FUS-001 net-electric costs and FIN-001 principal/rate effects separate.",
+  "evidence_promoted_to_project": "none",
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "funding_authorized": false
+  },
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ]
+}

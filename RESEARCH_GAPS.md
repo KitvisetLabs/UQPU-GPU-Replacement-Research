@@ -887,3 +887,17 @@ The feature branch adds an independent GF(2) rank implementation and exhaustive 
 ## 2026-10-27 — RG-MAT-SISSO-SENSITIVITY-001: symbolic materials-gene sensitivity and identifiability
 
 **Status:** OPEN / LITERATURE_ONLY / REPRODUCTION_NOT_RUN. **Primary detail:** docs/RESEARCH_GAP_SISSO_MATERIALS_GENE_IDENTIFIABILITY_2026-10-27.md; source watch: docs/literature_watch/2026-10-27-sisso-materials-gene-sensitivity.md. Foppa and Scheffler, *Physical Review Materials* 10, 093601 (published 2026-09-08), DOI 10.1103/gk23-cfh1, present derivative-based sensitivity analysis for SISSO materials genes and discuss equivalent descriptor combinations in a perovskite example. UQPU has not reproduced the code/data. Unlock requires source pinning, independent perovskite reproduction, finite-difference checks, frozen held-out material/property families, matched budgets and reparameterization/correlation stress tests. No causal-law, Pangola-carbon, device, fuel, fusion or economic claim is promoted.
+
+
+### RG-BIO-001 — accepted-liquid mass, energy and full-cost closure
+**Status:** OPEN / MODEL_ONLY CONTRACT IMPLEMENTED / PANGOLA DATA MISSING  
+**Date:** 2026-10-27  
+**Primary owner:** Lane E; evidence/integration owner Lane F  
+**Detailed record:** docs/RESEARCH_GAP_BIO001_ACCEPTED_LIQUID_COST_2026-10-27.md  
+**Implementation:** software/uqpu-prototype/uqpu/energy_finance.py (BioOilBatchCostInputs, bio_oil_batch_cost)
+
+The batch contract prices final accepted liquid energy rather than raw bio-oil mass. It records wet/dry feedstock, preprocessing/logistics, hydrogen, catalyst, utilities, other OPEX, plant CAPEX recovery, capacity factor/lifetime, separate R&D capital-lockup interest and disjoint net coproduct credits. A rejected batch has no accepted-fuel cost/MJ. Calculated output is always MODEL_ONLY.
+
+**Blocking data:** no traceable Pangola mass/energy closure, accepted-product assay/LHV/density, hydrogen/catalyst/utility dataset, local feedstock/logistics quotes, verified coproduct revenue or commercial financing terms.
+
+**Unlock:** pin one lot and acceptance-spec SHA-256; record all output streams and process inputs; close mass/energy ledgers within a preregistered tolerance; independently repeat the batch; then compare only on the same accepted-fuel function and financing boundary. Do not infer a lower WACC from reduced principal.

@@ -6,6 +6,10 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-27 — BIO-001 accepted-liquid cost contract
+
+This cycle is [Batch 076](docs/BATCH_076_BIO001_ACCEPTED_LIQUID_COST.md), [the HTL/hydrotreatment literature watch](docs/literature_watch/2026-10-27-htl-biocrude-upgrading-cost-boundary.md), [RG-BIO-001](docs/RESEARCH_GAP_BIO001_ACCEPTED_LIQUID_COST_2026-10-27.md), and [the Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_BIO001_ACCEPTED_LIQUID_COST.md). It adds a fail-closed MODEL_ONLY calculator for final accepted-liquid MJ/litre cost with upgrading, CAPEX, separate R&D lock-up interest and disjoint coproduct accounting. Pangola mass/energy/product data remain missing; no commercial fuel-cost, fusion-electricity, WACC or Data-Center-to-Phone result is claimed. Exact-head CI is required after the port.
+
 ## Latest Eight-Lane research cycle — 2026-10-27 — SISSO materials-gene sensitivity and identifiability
 
 This literature-only cycle is [Batch 075](docs/BATCH_075_SISSO_MATERIALS_GENE_SENSITIVITY.md), [the APS literature watch](docs/literature_watch/2026-10-27-sisso-materials-gene-sensitivity.md), [the open reproduction gap](docs/RESEARCH_GAP_SISSO_MATERIALS_GENE_IDENTIFIABILITY_2026-10-27.md), and [the Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_SISSO_MATERIALS_GENE_SENSITIVITY.md). It adds sensitivity-stability and equivalent-descriptor checks to the equation-discovery research method. The cited SISSO work concerns perovskite materials descriptors; UQPU has not reproduced it, and no new physical law, Pangola substitution, QPU advantage, fuel/fusion, financing or Data-Center-to-Phone result is claimed. The documentation commit's exact-head CI must be read from Actions.
