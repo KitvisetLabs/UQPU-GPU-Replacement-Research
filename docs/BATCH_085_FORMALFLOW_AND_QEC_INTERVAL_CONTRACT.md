@@ -1,4 +1,4 @@
-# Batch 085 — FormalFlow, decoder interval contract and physics-informed rollout stability
+# Batch 085 — FormalFlow, decoder interval contract, MPNO and SPARC
 
 **Date:** 2026-10-28  
 **Canonical starting head:** `a662ae4b4580f3878c5ca14e3fd093bd80f4ff4e`  

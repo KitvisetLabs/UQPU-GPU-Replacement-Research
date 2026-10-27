@@ -494,3 +494,6 @@ The current cycle is [the matched control / quantum-speed-limit contract](integr
 
 **Repair result observed — 2026-10-27:** follow-up commit 30fc7883809c7e7f094bbf4927a06ec360e568ef passed cold-start handoff audit [#40454730770](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40454730770). The Python unit/invariant matrix passed on 3.10, 3.11 and 3.12; extended QSP/QSVT and Qiskit checks were still running at the last status read. The first commit's enum failure remains documented as a repaired intermediate failure, not as the final handoff status.
 
+
+
+**Citation/metadata correction:** the MPNO watch now includes Yi Zhang in the author list, matching the official arXiv metadata, and the Batch 085 heading names all three literature-watch topics. This correction commit requires its own exact-head checks.

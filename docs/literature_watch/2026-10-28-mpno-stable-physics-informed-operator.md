@@ -1,7 +1,7 @@
 # Literature watch — structurally stable physics-informed neural operator
 
 **Watch date:** 2026-10-28  
-**Primary source:** Wenpu Du, Peng Zhou, Yunlong Xia, Sinuo Xin, Congcong Zhang, Boyang Zhang and Wenzheng Xu, “A Constitutive Markov Physics-Informed Neural Operator (MPNO) for Autoregressive Stability in Transient Dynamics,” arXiv:2608.25744, submitted 2026-08-26.  
+**Primary source:** Wenpu Du, Peng Zhou, Yunlong Xia, Sinuo Xin, Congcong Zhang, Boyang Zhang, Yi Zhang and Wenzheng Xu, “A Constitutive Markov Physics-Informed Neural Operator (MPNO) for Autoregressive Stability in Transient Dynamics,” arXiv:2608.25744, submitted 2026-08-26.  
 **Official record:** https://arxiv.org/abs/2608.25744  
 **Evidence class:** `LITERATURE_ONLY` for UQPU; the paper's reported results are not independently reproduced here.
 
