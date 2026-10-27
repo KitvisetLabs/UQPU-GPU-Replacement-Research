@@ -791,3 +791,16 @@ The external preprint reports signed-Max-Cut simulations and IBM Heron experimen
 The paper proves tight worst-case T-count bounds for sparse QROM in a fixed Clifford+T circuit model and derives sparse state-preparation/block-encoding bounds. This is a circuit-resource lower-bound reference, not a physical memory, wall-clock, energy or dollar-cost theorem. The UQPU gap is to freeze a workload's address width, data width, sparsity, precision and address-promise semantics, then compare dense/direct and sparse routes with preprocessing, ancillas, depth, storage, I/O and output costs included.
 
 **Unlock:** exact small-instance verification, held-out sparsity patterns, explicit MODEL_ONLY/SIMULATION_ONLY evidence labels and end-to-end resource accounting. A promised-address bound may not be used unless the workload contract guarantees the promise.
+
+
+### RG-STATEPREP-SPARSE-001 — sparse state-preparation theorem model alignment
+**Status:** OPEN / MODEL_ALIGNMENT_REQUIRED / MODEL_ONLY  
+**Date:** 2026-10-27  
+**Primary owner:** Lane A; Lane C state/memory; Lane F evidence; Lane H publication  
+**Source:** Luo and Li, Sparse Quantum State Preparation with Sublinear T-Count, arXiv:2608.00414, first posted 2026-08-01.  
+**Detailed record:** docs/RESEARCH_GAP_SPARSE_STATEPREP_MODEL_ALIGNMENT_2026-10-27.md  
+**Literature watch:** docs/literature_watch/2026-10-27-sparse-stateprep-sublinear-tcount-model-alignment.md
+
+The source abstract reports an O-tilde sparse-state-preparation synthesis upper expression and an Omega lower expression over a restricted support/precision regime. The existing sparse-QROM preprint arXiv:2607.28260v2 also states a sparse-state-preparation corollary. Full theorem assumptions, target-state representation, classical access/preprocessing, precision and synthesis models must be reconciled before comparing the claims. This is a model-alignment question, not a claimed contradiction or theorem improvement. The new helper records symbolic expressions only; exact counts, depth, ancillas, memory, I/O, energy and provider cost remain null.
+
+**Unlock:** full-text assumption matrix; independent small-instance derivation/synthesis; preregistered held-out (n,s,epsilon) tests; explicit counterexample search; workload-level resource and accepted-task cost accounting. No provider execution or evidence promotion is authorized by this gap.
