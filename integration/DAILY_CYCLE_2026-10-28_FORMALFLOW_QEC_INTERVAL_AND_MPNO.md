@@ -1,4 +1,4 @@
-# Eight-Lane cycle — Batch 085: FormalFlow, QEC interval contract and MPNO
+# Eight-Lane cycle — Batch 085: FormalFlow, QEC interval contract, MPNO and SPARC
 
 **Date:** 2026-10-28  
 **Canonical starting head:** `a662ae4b4580f3878c5ca14e3fd093bd80f4ff4e`  
@@ -86,4 +86,4 @@ Exact-head cold-start audit [#1037](https://github.com/KitvisetLabs/UQPU-GPU-Rep
 
 ## CI status sync
 
-Cold-start audit [#1038](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586577) passed on repair commit `d370e78f30def3cfa2a89cee812d4140c4e91f2d`; core run [#1827](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586481) was still in progress at the last observation. This literature-watch follow-up is a new commit and needs its own exact-head checks.
+Cold-start audit [#1038](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586577) passed on repair commit `d370e78f30def3cfa2a89cee812d4140c4e91f2d`; core run [#1827](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586481) passed the Python 3.10/3.11/3.12 matrix while extended QSVT/Qiskit jobs were still running. Cold-start audit [#1039](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567972009) passed on the SPARC-watch commit `b5ebf5b7ad9e04df03d5c831b7bda95362e1c530`; core run [#1828](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567972051) was still in progress. This count-correction commit requires its own exact-head checks.

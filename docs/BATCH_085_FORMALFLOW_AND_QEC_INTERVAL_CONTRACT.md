@@ -5,7 +5,7 @@
 **Primary owner:** Lane A — quantum programming/workloads/compiler/runtime  
 **Cross-lane owners:** Lane B, C, E, F and H  
 **Evidence:** `SOFTWARE_CONTRACT_ONLY` + `LITERATURE_ONLY`; no hardware or commercial evidence  
-**Scope:** small finite-candidate decoder-certificate scaffold, focused tests, two dated literature watches, README/handoff integration  
+**Scope:** small finite-candidate decoder-certificate scaffold, focused tests, three dated literature watches, README/handoff integration  
 **Paid QPU job:** no
 
 ## Starting-state and CI
