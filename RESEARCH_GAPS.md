@@ -841,3 +841,7 @@ Unlock by pinning exact theorem text and assumptions, independently reconstructi
 **Integration record:** integration/INT-20261027-FUS001-HIDRA-LITHIUM-VAPOR.json
 
 Unlock by reconstructing the source mass balance and uncertainty, then independently testing matched capture/control conditions that measure both net surface loss and plasma impurity/stability. Propagate only replicated evidence through the FUS-001 lifecycle and net-electricity model.
+
+
+## 2026-10-27 — FND-003 matched comparison contract
+**Status:** OPEN / SOFTWARE CONTRACT ONLY. **Primary record:** docs/RESEARCH_GAP_FND003_MATCHED_COMPARISON_2026-10-27.md. The new contract binds control and quantum runs to the same task/output-quality hash, binds a candidate speed limit to a hashed quantum-evolution record, suppresses ratios when quality or measurement gates fail, and keeps wall-plug energy separate. It does not derive a theorem or establish measured advantage. No matched physical experiment, independent theorem reconstruction, or cost-per-accepted-task result exists yet.
