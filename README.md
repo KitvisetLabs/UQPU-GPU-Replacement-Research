@@ -16,7 +16,7 @@ All A–H lanes remain active; Lane A remains Priority #1. FND-001–006, EQN-00
 
 **Starting-head CI:** [core run #1825](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40557306514) and [cold-start audit #1036](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40557306716) passed on `a662ae4b4580f3878c5ca14e3fd093bd80f4ff4e`. This new commit requires its own exact-head checks.
 
-**CI repair note:** cold-start audit [#1037](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567389772) caught unsupported combined/descriptive evidence labels in the handoff manifest (lanes A, B, C and F). The follow-up commit replaces them with schema-approved evidence classes. This is a handoff-schema failure, not a QEC helper test failure; the repair commit's exact-head CI must be checked independently.
+**CI repair result:** the schema-label correction commit [d370e78](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/d370e78f30def3cfa2a89cee812d4140c4e91f2d) passed [cold-start audit #1038](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586577); core run [#1827](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586481) was still running at the last check. This follow-up also records the SPARC experimental-design source; its exact-head CI must be checked separately.
 
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — AI mathematics corpus provenance

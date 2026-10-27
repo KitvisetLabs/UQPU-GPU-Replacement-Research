@@ -51,13 +51,18 @@ The [MPNO watch](literature_watch/2026-10-28-mpno-stable-physics-informed-operat
 
 The prior GraphED constitutive-law watch is already recorded in the repository and was checked as existing coverage, not mislabeled as a new delta.
 
+### 3. Human-agent experimental design with instrument-grounded memory
+
+The [SPARC literature watch](literature_watch/2026-10-28-sparc-agentic-experiment-design.md) records Liu et al., [arXiv:2609.06887](https://arxiv.org/abs/2609.06887), an external preprint reporting operator-supervised and agent-controlled scanning-probe experiments on a specific ferroelectric film. Its persistent `FINDINGS.md`/`PITFALLS.md` split and pre-write checks are relevant to experiment provenance and failure memory. UQPU has not reproduced the experiment; this does not establish Pangola-carbon substitution, semiconductor performance or transfer to fusion/material systems.
+
+
 ## A–H lane status
 
 - **A:** interval certificate contract and tests added; formalization provenance watch opened.
 - **B:** QLDPC decoder-reference gap remains open; no provider job, credentials/pricing check or hardware result.
 - **C:** decoder memory/I/O/reconstruction remain unmeasured; proof size and quantum state dimension are not readable classical storage.
-- **D:** no device/chip/process/packaging evidence changed.
-- **E:** MPNO is literature-only; BIO-001 and FUS-001 remain open, with no accepted-liquid or net-electric result.
+- **D:** SPARC is an external instrument-grounded experiment-design watch only; no UQPU device/chip/process/packaging evidence changed.
+- **E:** MPNO and SPARC are literature-only; BIO-001 and FUS-001 remain open, with no accepted-liquid or net-electric result.
 - **F:** no measured cost per accepted task; resource metrics are required after matched quality/source reproduction.
 - **G:** D/G co-design continues; no yield/process-window/cost-per-good-device result.
 - **H:** two source watches, batch and integration record published; six-language strategic master-plan links and strategic AI-agent/funding references preserved.

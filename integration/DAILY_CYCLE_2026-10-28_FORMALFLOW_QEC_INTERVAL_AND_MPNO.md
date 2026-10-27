@@ -35,6 +35,11 @@ Seven focused unit tests were exercised in an isolated Python harness before pub
 
 The previously published GraphED constitutive-law watch, AI-mathematical-instrument corpus audit and certified QLDPC decoder source remain in force; they were not recast as project results.
 
+### 3. Human-agent experimental design with instrument-grounded memory
+
+The [SPARC literature watch](literature_watch/2026-10-28-sparc-agentic-experiment-design.md) records Liu et al., [arXiv:2609.06887](https://arxiv.org/abs/2609.06887), an external preprint reporting operator-supervised and agent-controlled scanning-probe experiments on a specific ferroelectric film. Its persistent `FINDINGS.md`/`PITFALLS.md` split and pre-write checks are relevant to experiment provenance and failure memory. UQPU has not reproduced the experiment; this does not establish Pangola-carbon substitution, semiconductor performance or transfer to fusion/material systems.
+
+
 ## A–H status
 
 | Lane | Status this cycle | Next gate |
@@ -42,8 +47,8 @@ The previously published GraphED constitutive-law watch, AI-mathematical-instrum
 | **A — Quantum programming/workloads/compiler/runtime** | Added generic interval/certificate checks and seven tests; FormalFlow source audit extends RG-048. | Run exact-head CI; then build a code-matrix/bit-vector exhaustive oracle only after source conventions and inputs are pinned. |
 | **B — Cloud/QPU/provider integration** | Decoder benchmark remains a literature-derived quality-reference gap. No provider, SDK, calibration or price was newly validated; no QPU job. | Reproduce tiny reference semantics first; keep provider/target/probability/price boundaries separate. |
 | **C — RAM/VRAM/HBM/storage/state/data movement** | Decoder memory, syndrome I/O and reconstruction remain unmeasured; proof bytes, Hilbert dimension and readable storage remain distinct. | Measure peak memory, I/O and reconstruction on identical samples after source-level reproduction. |
-| **D — Device/chip/process/packaging** | No new device or fabrication evidence. | Keep connectivity/noise assumptions tied to a concrete device only after software gates pass. |
-| **E — Biomass/materials/bio-oil/fusion/cooling** | MPNO is a new literature watch only; BIO-001 and FUS-001 remain open. | Test a source PDE with held-out trajectories before any separate fusion-relevant adaptation; continue accepted-liquid and net-electric cost contracts. |
+| **D — Device/chip/process/packaging** | SPARC adds an external experiment-design watch only; no UQPU device or fabrication evidence. | Keep connectivity/noise assumptions tied to a concrete device only after software gates pass. |
+| **E — Biomass/materials/bio-oil/fusion/cooling** | MPNO and SPARC are literature watches only; BIO-001 and FUS-001 remain open. | Test a source PDE and an instrument-grounded protocol on held-out controls before any domain transfer; continue accepted-liquid and net-electric cost contracts. |
 | **F — Economics/benchmarks/evidence/integration** | No cost per accepted useful task measured; the interval helper is a correctness scaffold, not economic evidence. | Count search nodes, runtime, memory, retries and measured energy where available under matched quality. |
 | **G — Chip manufacturing equipment/software/factory systems** | D/G co-design retained; no process-window, yield or cost-per-good-device result. | Tie any future model to actual process constraints and reproducible data. |
 | **H — Kanusanan Pongpanna Model, finance and publication** | Published two source watches and an integration record; multilingual strategic references and agent/funding context preserved. | Convert evidence into staged milestones without implying lower WACC or mission closure. |
@@ -77,3 +82,8 @@ Next:
 ## CI repair note
 
 Exact-head cold-start audit [#1037](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567389772) failed on handoff-manifest evidence labels outside the audit enum for lanes A/B/C/F. The repair normalizes the labels to supported classes without changing scientific claims or code. The core matrix was still in progress at the last observation; the repair commit requires fresh exact-head checks.
+
+
+## CI status sync
+
+Cold-start audit [#1038](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586577) passed on repair commit `d370e78f30def3cfa2a89cee812d4140c4e91f2d`; core run [#1827](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40567586481) was still in progress at the last observation. This literature-watch follow-up is a new commit and needs its own exact-head checks.
