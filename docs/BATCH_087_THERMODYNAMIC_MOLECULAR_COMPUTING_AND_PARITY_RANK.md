@@ -1,4 +1,4 @@
-# Batch 087 — thermodynamically favoured molecular computing and independent parity-rank verification
+# Batch 087 — physics-constrained symbolic regression, molecular computing and parity-rank verification
 
 **Date:** 2026-10-28  
 **Canonical starting main SHA:** `7734020a3f48cfcd12c1eb198e8ca43dbafc1ca2`  
@@ -27,6 +27,10 @@ Added `landauer_gap_ratio_for_accepted_task` and tests. It compares caller-suppl
 
 Stérin et al., “A thermodynamically favoured molecular computer,” *Nature* 657, 646–652 (version of record 2026-09-16), DOI https://doi.org/10.1038/s41586-026-10996-5, was absent from the current literature-watch index. The paper reports ten programs and over 700 computations, including parity and arithmetic. The watch and Lane E gate treat this as external evidence only; strand inventory, preparation, heating/annealing, readout, failures, labour, equipment, reuse and scale must be counted. No UQPU reproduction, molecular energy/cost result, quantum advantage, new law or commercial claim is made.
 
+## Fresh literature delta — physics-constrained symbolic regression
+
+Shan & Zhang's official preprint arXiv:2610.35276 (submitted 2026-10-26) reports physics-constrained symbolic regression for mean velocity and effective mixing length in incompressible smooth-wall ZPG turbulent boundary layers. It preserves classical asymptotic structure and fits transition/outer corrections. The mean-velocity comparison spans 35 DNS/LES/experimental profiles, but the authors explicitly state that out-of-fit profiles are not a statistically independent validation set; some high-Re limits are modelling priors. The [dated watch](docs/literature_watch/2026-10-28-physics-constrained-symbolic-regression-turbulence.md), [RG-PCSR-TURB-001](docs/RESEARCH_GAP_PCSR_TURBULENCE_REPRODUCTION_2026-10-28.md), and [Lane A gate](research_lanes/A_quantum_programming_runtime/PCSR_TURBULENCE_REPRODUCTION_GATE.md) require exact formula/asymptotic reconstruction and sealed independent holdouts. No source equation is promoted, and no direct cooling/fusion transfer is claimed.
+
 ## A–H ledger
 
 - **A:** exhaustive GF(2) rank and parity-image tests; parity-QAOA, objective preservation and matched economics remain open.
@@ -45,7 +49,7 @@ Stérin et al., “A thermodynamically favoured molecular computer,” *Nature* 
 - **FND-003:** no matched control-versus-quantum-speed-limit experiment.
 - **FND-004:** new published alternative-primitive lead with falsifiable reproduction gate; not reproduced by UQPU.
 - **FND-005:** no validated QFT/particle mechanism.
-- **FND-006 / EQN-001–006:** source pinning, exact semantics, held-out tests, counterexamples and independent validation remain required; no equation/law promoted.
+- **FND-006 / EQN-001–006:** the PCSR preprint adds a candidate constrained-discovery method; source pinning, exact semantics, independent holdouts, counterexamples and replication remain required. No equation/law is promoted.
 
 ## INV-029–035 and moonshots
 
@@ -68,7 +72,7 @@ RESEARCH_GAPS.md and WORKLOG.md are extended from complete fetched contents, pre
 ## Next gates
 
 1. Exact-head CI on this branch; fix only reproducible failures.
-2. Lane A: use the rank test as a prerequisite, then freeze signed-Max-Cut objective-preservation before any QAOA comparison.
+2. Lane A: use the rank test as a prerequisite, freeze signed-Max-Cut objective-preservation before any QAOA comparison, and reconstruct PCSR formulas against sealed independent profile holdouts.
 3. Lane E: pin SDC source/protocol/data and reproduce one small program with blind inputs, controls and full wall-plug energy/cost.
 4. Keep BIO-001, FUS-001 and FIN-001 separate and evidence-gated.
 

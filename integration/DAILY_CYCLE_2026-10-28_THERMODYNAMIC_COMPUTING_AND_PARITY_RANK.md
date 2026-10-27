@@ -51,3 +51,8 @@ The starting head passed the prototype/invariant workflow (16/16 jobs) and cold-
 - Source commit: `ea0b4426b96b38a645316be0d939584754e3401b`
 - PR: [#144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144)
 - Main synchronization: governed by PR/commit metadata; the next reconciliation checkpoint must record the final main SHA and exact-head CI result.
+
+
+## Additional fresh literature delta — EQN-PCSR-TURB-001
+
+Shan & Zhang, arXiv:2610.35276 (submitted 2026-10-26), use staged physics-constrained symbolic regression for ZPG turbulent-boundary-layer mean velocity/effective mixing length. The preprint retains classical asymptotic structure but says its out-of-fit comparisons are not a statistically independent validation set. Added the dated watch, Lane A gate and RESEARCH_GAPS entry. This advances the candidate-audit method only: exact formula reconstruction, units/limits, sealed independent profile holdouts, classical baselines, counterexamples and search-budget accounting are required. No equation is promoted and no direct cooling/fusion transfer is claimed.

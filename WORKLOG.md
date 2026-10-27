@@ -1810,3 +1810,11 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 ## 2026-10-28 — source-to-main trace for Batch 087
 
 Source commit `ea0b4426b96b38a645316be0d939584754e3401b` is carried by [PR #144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144). This follow-up synchronization commit updates the README and integration record with the source SHA. The resulting main SHA and final exact-head CI must be captured from GitHub merge metadata at the next reconciliation checkpoint.
+
+
+## 2026-10-28 — fresh EQN-001/006 literature delta: physics-constrained symbolic regression
+
+- **Source:** Shan & Zhang, arXiv:2610.35276, submitted 2026-10-26. The PCSR method preserves classical asymptotic structure and fits transition/outer corrections for ZPG turbulent-boundary-layer mean velocity and effective mixing length.
+- **Key limitation:** 35 profiles are compared for mean velocity, but the preprint states out-of-fit profiles are not a statistically independent validation set; some high-Re targets are imposed modelling priors.
+- **Artifacts:** dated literature watch, RG-PCSR-TURB-001, Lane A reproduction gate, Batch 087 and integration record updated. No source equation is promoted to a new physical law.
+- **Next gate:** pin code/data/version, reconstruct formulas and limiting cases, seal independent profile holdouts, compare with classical baselines and preserve counterexamples/failed seeds. No transfer to cooling/fusion until domain-matched validation.

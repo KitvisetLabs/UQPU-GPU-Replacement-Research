@@ -199,3 +199,20 @@ check; live service and paid execution remain unauthorized.
 | I | reviewed per AGENTS/sync policy; expected folder README missing | GOVERNANCE_SYNC_DEBT / MODEL_ONLY | reconcile A–H/A–I without erasing a track |
 
 The SDC paper is external evidence, not UQPU reproduction or low all-in energy/cost proof. FND-001 gained a diagnostic but no measured input; FND-004 gained a falsifiable alternative-primitive gate. INV-029–035 and moonshots remain unachieved. Legacy eight-lane history is unchanged.
+
+
+## Cycle 009 Delta 18 — 2026-10-28 — physics-constrained symbolic-regression surveillance
+
+| Lane | Advance / blocker | Evidence | Next gate |
+|---|---|---|---|
+| A | PCSR preprint watch and exact formula/holdout gate added | OFFICIAL_PREPRINT | pin data/code and independently reconstruct equations |
+| B | no provider/QPU job | NO_SUBMIT | provider-neutral path unchanged |
+| C | profile arrays and model complexity must remain distinct from hardware memory equivalence | CONTRACT ONLY | record dataset/array bytes and peak memory during reproduction |
+| D | no device or fabrication evidence | NONE | no device escalation without a measured bottleneck |
+| E | potential thermal-fluid relevance only; no transfer claimed | DOMAIN TRANSFER OPEN | validate on domain-matched cooling data before application |
+| F | sealed holdout, baseline and search-budget accounting specified | REPRODUCTION NOT RUN | independent metrics, uncertainty and search cost |
+| G | D/G co-design unchanged | NO FABRICATION EVIDENCE | no factory claim from a turbulence fit |
+| H | new dated source watch; strategic references preserved | PUBLICATION ONLY | integrate only independently validated models |
+| I | architecture discrepancy remains open; no physical test | GOVERNANCE SYNC DEBT | reconcile A–H/A–I docs separately |
+
+The arXiv preprint is a candidate model, not a universal law. A fit and imposed asymptotic priors are not independent validation. EQN-001/006 gain a reproducible audit gate only; no technology advantage is demonstrated.
