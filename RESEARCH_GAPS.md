@@ -819,3 +819,14 @@ The paper gives a conditional natural-proofs barrier for state-preparation lower
 This gap asks whether the actual proof strategies in the existing sparse-state-preparation/QROM theorem comparison satisfy both criteria and the remaining scope conditions. The answer remains unresolved until the full theorem/proof text is reviewed. The barrier restricts a class of proof methods; it does not automatically invalidate a lower-bound claim, prove a replacement bound, or establish physical truth. The new contract records declared scope and digest integrity only.
 
 **Unlock:** pin source versions; classify naturalness criteria separately; record exact cryptographic assumption, circuit hierarchy and approximation regime; reject inconsistent/tampered metadata; independently review theorem assumptions and small-instance/counterexample checks. Keep all unmeasured resources null and all physical/economic claims unpromoted.
+
+
+## 2026-10-27 — RG-STATEPREP-SPIN-GLASS-001: profile-complexity lower-bound mapping
+
+**Status:** ACTIVE / LITERATURE_ONLY / PROOF_RECONSTRUCTION_PENDING. New-to-main official preprint: Al-Ghattas, Gamarnik and Kiani, “Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses,” https://arxiv.org/abs/2610.02166 (v1 submitted 2026-10-01). The paper develops effective profile-complexity bounds for specified dense random p-spin Hamiltonians and state classes. It is not a universal workload/QUBO lower bound and is not a measured hardware/economic result.
+
+**Detailed gap:** docs/RESEARCH_GAP_STATEPREP_SPIN_GLASS_PROFILE_2026-10-27.md  
+**Literature watch:** docs/literature_watch/2026-10-27-beyond-light-cones-spin-glass-stateprep.md  
+**Integration record:** integration/INT-20261027-STATEPREP-SPIN-GLASS-BOUND.json
+
+Unlock by pinning exact theorem text and assumptions, independently reconstructing the proof, and mapping a specific workload to the stated Hamiltonian/state-class/energy/ancilla/asymptotic hypotheses with PASS/FAIL/UNKNOWN. Missing conditions fail closed. Only then compare resource implications against a matched CPU/GPU useful-output baseline. No paid QPU job is authorized by this gap.
