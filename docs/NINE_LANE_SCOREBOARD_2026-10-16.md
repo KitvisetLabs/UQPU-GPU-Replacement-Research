@@ -182,3 +182,54 @@ not create live calibration, a physical schedule, fidelity, memory replacement,
 energy/cost or advantage evidence. E/G/H/I, FND/EQN and INV-025–035 retain
 their existing evidence gates. Next is a scalable independent routed-semantics
 check; live service and paid execution remain unauthorized.
+
+
+## Cycle 009 Delta 17 — 2026-10-28 — molecular-computing and parity-rank gate
+
+| Lane | Advance / blocker | Evidence | Next gate |
+|---|---|---|---|
+| A | exhaustive GF(2) rank/parity-image test; Landauer diagnostic | SOFTWARE_CONTRACT_ONLY | CI; signed-Max-Cut objective preservation |
+| B | provider-neutral targets retained; no job | NO_SUBMIT | same target/price/calibration identity |
+| C | molecular inventory/readout boundary | CONTRACT_ONLY | measure bytes, persistence and transfer |
+| D | alternative molecular primitive reviewed | LITERATURE_ONLY | reproduce and characterize conditions |
+| E | SDC-REPRO-001 opened; BIO-001/FUS-001 unchanged | LITERATURE_ONLY / DATA_BLOCKED | pin source, repeat program, measure full cost |
+| F | ideal Landauer floor separated from measured task energy | SOFTWARE_CONTRACT_ONLY | wall-plug/lifecycle-cost ledger |
+| G | D/G co-design retained | NO FABRICATION EVIDENCE | assembly/metrology/yield after repeatability |
+| H | watch and strategic references preserved | PUBLICATION ONLY | integrate validated outcomes only |
+| I | reviewed per AGENTS/sync policy; expected folder README missing | GOVERNANCE_SYNC_DEBT / MODEL_ONLY | reconcile A–H/A–I without erasing a track |
+
+The SDC paper is external evidence, not UQPU reproduction or low all-in energy/cost proof. FND-001 gained a diagnostic but no measured input; FND-004 gained a falsifiable alternative-primitive gate. INV-029–035 and moonshots remain unachieved. Legacy eight-lane history is unchanged.
+
+
+## Cycle 009 Delta 18 — 2026-10-28 — physics-constrained symbolic-regression surveillance
+
+| Lane | Advance / blocker | Evidence | Next gate |
+|---|---|---|---|
+| A | PCSR preprint watch and exact formula/holdout gate added | OFFICIAL_PREPRINT | pin data/code and independently reconstruct equations |
+| B | no provider/QPU job | NO_SUBMIT | provider-neutral path unchanged |
+| C | profile arrays and model complexity must remain distinct from hardware memory equivalence | CONTRACT ONLY | record dataset/array bytes and peak memory during reproduction |
+| D | no device or fabrication evidence | NONE | no device escalation without a measured bottleneck |
+| E | potential thermal-fluid relevance only; no transfer claimed | DOMAIN TRANSFER OPEN | validate on domain-matched cooling data before application |
+| F | sealed holdout, baseline and search-budget accounting specified | REPRODUCTION NOT RUN | independent metrics, uncertainty and search cost |
+| G | D/G co-design unchanged | NO FABRICATION EVIDENCE | no factory claim from a turbulence fit |
+| H | new dated source watch; strategic references preserved | PUBLICATION ONLY | integrate only independently validated models |
+| I | architecture discrepancy remains open; no physical test | GOVERNANCE SYNC DEBT | reconcile A–H/A–I docs separately |
+
+The arXiv preprint is a candidate model, not a universal law. A fit and imposed asymptotic priors are not independent validation. EQN-001/006 gain a reproducible audit gate only; no technology advantage is demonstrated.
+
+
+## Cycle 009 Delta 19 — 2026-10-28 — FND-003 estimation-target scope guard
+
+| Lane | Advance / blocker | Evidence | Next gate |
+|---|---|---|---|
+| A | no algorithm or circuit consequence from the interpretational preprint | PREPRINT_METHOD_SCOPE | retain operational workload/quality contracts |
+| B | no QPU/provider change | NO_SUBMIT | matched target/calibration identities remain required |
+| C | no new storage or output-information bound | NONE | keep readable output and state/data movement distinct |
+| D | no device/measurement hardware result | NONE | require a discriminating device observable before escalation |
+| E | no material, bio-oil, fusion or cooling consequence | NONE | do not transfer the theorem to energy technology |
+| F | target-type/calibration/uncertainty scope gate added | METHOD_ONLY | label parameter vs quantum variable; define discriminating observable if claimed |
+| G | no manufacturing consequence | NONE | no process change from interpretation alone |
+| H | foundational watch recorded with caveats | PUBLICATION ONLY | integrate only if an operational prediction changes |
+| I | A–H/A–I documentation drift remains open | GOVERNANCE SYNC DEBT | reconcile lane manifest separately |
+
+The theorem is conditional on formalized assumptions; it does not invalidate practical parameter estimation or create a physical lower bound. FND-003 gains a measurement-scope gate only.

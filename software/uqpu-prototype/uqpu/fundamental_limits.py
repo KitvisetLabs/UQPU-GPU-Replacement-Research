@@ -68,6 +68,40 @@ def landauer_minimum_joule(erased_bits: float, temperature_kelvin: float) -> flo
     return bits * landauer_minimum_joule_per_bit(temperature_kelvin)
 
 
+
+def landauer_gap_ratio_for_accepted_task(
+    measured_joule_per_accepted_task: float,
+    irreversible_erased_bits_per_accepted_task: float,
+    temperature_kelvin: float,
+) -> float:
+    """Compare measured task energy with a matched Landauer erasure floor.
+
+    Inputs must share one accepted-task boundary. The erasure count is the
+    average logically irreversible bit erasures per accepted result; include
+    failed attempts/retries only when their energy is in the numerator. The
+    single temperature must fit the counted erasures; multiple temperatures
+    require a stage-resolved sum.
+
+    This diagnostic does not claim the floor is reachable or equals total
+    device energy. A ratio below one triggers a boundary/measurement/uncertainty
+    audit, not a new-physics conclusion.
+    """
+    if isinstance(measured_joule_per_accepted_task, bool):
+        raise ValueError("measured_joule_per_accepted_task must not be boolean")
+    if isinstance(irreversible_erased_bits_per_accepted_task, bool):
+        raise ValueError("irreversible_erased_bits_per_accepted_task must not be boolean")
+    measured = _positive_finite(
+        "measured_joule_per_accepted_task", measured_joule_per_accepted_task
+    )
+    erased_bits = _positive_finite(
+        "irreversible_erased_bits_per_accepted_task",
+        irreversible_erased_bits_per_accepted_task,
+    )
+    temperature = _positive_finite("temperature_kelvin", temperature_kelvin)
+    floor = landauer_minimum_joule(erased_bits, temperature)
+    return measured / floor
+
+
 def landauer_max_bit_erasures_per_joule(temperature_kelvin: float) -> float:
     """Reciprocal of the Landauer per-bit floor; an ideal bound only."""
     return 1.0 / landauer_minimum_joule_per_bit(temperature_kelvin)

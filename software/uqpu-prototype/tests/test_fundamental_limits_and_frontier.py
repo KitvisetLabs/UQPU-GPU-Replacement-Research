@@ -11,11 +11,43 @@ from uqpu.fundamental_limits import (
     landauer_max_bit_erasures_per_joule,
     landauer_minimum_joule,
     landauer_minimum_joule_per_bit,
+    landauer_gap_ratio_for_accepted_task,
     margolus_levitin_min_seconds,
     fault_tolerance_memory_log_overhead_term,
     bounded_observable_hoeffding_radii,
 )
 
+
+
+
+class LandauerAcceptedTaskGapTests(unittest.TestCase):
+    def test_ratio_uses_matched_energy_erasure_count_and_temperature(self):
+        floor = landauer_minimum_joule(128.0, 300.0)
+        self.assertAlmostEqual(
+            landauer_gap_ratio_for_accepted_task(12.0 * floor, 128.0, 300.0),
+            12.0,
+        )
+
+    def test_ratio_scales_with_energy_and_erasure_count(self):
+        floor = landauer_minimum_joule(128.0, 300.0)
+        self.assertAlmostEqual(
+            landauer_gap_ratio_for_accepted_task(24.0 * floor, 128.0, 300.0),
+            24.0,
+        )
+        self.assertAlmostEqual(
+            landauer_gap_ratio_for_accepted_task(12.0 * floor, 256.0, 300.0),
+            6.0,
+        )
+
+    def test_invalid_inputs_fail_closed(self):
+        for value in (0.0, -1.0, float("nan"), float("inf"), True):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                landauer_gap_ratio_for_accepted_task(value, 10.0, 300.0)
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                landauer_gap_ratio_for_accepted_task(1.0, value, 300.0)
+        for value in (0.0, -1.0, float("nan"), float("inf")):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                landauer_gap_ratio_for_accepted_task(1.0, 10.0, value)
 
 
 class BoundedObservableConfidenceTests(unittest.TestCase):

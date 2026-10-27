@@ -4,6 +4,29 @@ import unittest
 from uqpu.parity_encoding import build_parity_encoding
 
 
+def _gf2_rank(rows):
+    """Independent integer-bitmask Gaussian elimination over GF(2)."""
+    pivots = {}
+    for row in rows:
+        value = row
+        while value:
+            pivot = value.bit_length() - 1
+            if pivot in pivots:
+                value ^= pivots[pivot]
+            else:
+                pivots[pivot] = value
+                break
+    return len(pivots)
+
+
+def _incidence_rows(vertex_count, edges):
+    rows = [0] * vertex_count
+    for edge_index, (u, v) in enumerate(edges):
+        rows[u] |= 1 << edge_index
+        rows[v] |= 1 << edge_index
+    return rows
+
+
 class ParityEncodingTests(unittest.TestCase):
     def test_triangle_cycle_and_logical_mapping(self):
         encoding = build_parity_encoding(3, [(0, 1), (1, 2), (0, 2)])
@@ -95,6 +118,36 @@ class ParityEncodingTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             encoding.decode_physical((0, 1))
 
+
+
+    def test_exhaustive_small_graphs_match_independent_gf2_rank_and_cut_space(self):
+        # All simple graphs on 1–4 vertices: 1 + 2 + 8 + 64 = 75 masks.
+        for vertex_count in range(1, 5):
+            possible_edges = list(itertools.combinations(range(vertex_count), 2))
+            for edge_mask in range(1 << len(possible_edges)):
+                edges = tuple(
+                    edge for index, edge in enumerate(possible_edges)
+                    if edge_mask & (1 << index)
+                )
+                with self.subTest(vertex_count=vertex_count, edges=edges):
+                    encoding = build_parity_encoding(vertex_count, edges)
+                    rank = _gf2_rank(_incidence_rows(vertex_count, encoding.edges))
+                    self.assertEqual(
+                        encoding.cycle_rank, len(encoding.edges) - rank
+                    )
+                    encoded = {
+                        encoding.encode_logical(bits)
+                        for bits in itertools.product((0, 1), repeat=vertex_count)
+                    }
+                    valid = {
+                        bits
+                        for bits in itertools.product(
+                            (0, 1), repeat=encoding.physical_qubit_count
+                        )
+                        if encoding.is_valid_physical(bits)
+                    }
+                    self.assertEqual(encoded, valid)
+                    self.assertEqual(len(valid), 2 ** rank)
 
 if __name__ == "__main__":
     unittest.main()
