@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "3ffe242d25be42c5a4ac3c23fe5375bd3c8ac2df",
   "priority_lane": "A",
-  "current_frontier": "Batch 074 adds an independent GF(2) cycle-rank and signed-edge objective reference suite for the classical graph-parity mapping, plus a literature-only symbolic-ensemble materials reproduction gate. Feature-branch exact-head CI is pending; no QAOA circuit, QPU, material substitution or economic claim is promoted.",
+  "current_frontier": "Batch 074 adds independent GF(2) rank/cycle-space and signed-edge objective reference tests for the classical graph-parity mapping, plus a literature-only symbolic-ensemble materials reproduction gate. The source head's cold-start handoff audit passed after adding the required Research-Sync trailer; exact-head unit/invariant CI remains pending.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -66,14 +66,15 @@
     "integration/INT-20261027-SYMBOLIC-ENSEMBLE-MATERIALS.json",
     "software/uqpu-prototype/uqpu/parity_encoding.py",
     "software/uqpu-prototype/tests/test_parity_encoding.py",
-    "software/uqpu-prototype/tests/test_parity_encoding_reference.py"
+    "software/uqpu-prototype/tests/test_parity_encoding_reference.py",
+    "integration/INT-20261027-PARITY-GF2-REFERENCE.json"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
       "status": "INDEPENDENT_GF2_REFERENCE_TESTS_PR_PENDING_CI",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "inspect exact-head PR CI for the exhaustive GF(2) rank and signed-objective reference suite; preserve counterexamples; only then implement the parity-QAOA circuit and equal-budget comparison"
+      "next_gate": "inspect exact-head Python unit/invariant CI for the exhaustive GF(2) rank and signed-objective reference suite; preserve counterexamples; only then implement parity-QAOA and equal-budget comparison"
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
