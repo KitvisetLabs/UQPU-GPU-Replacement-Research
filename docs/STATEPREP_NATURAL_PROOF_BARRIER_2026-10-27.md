@@ -1,4 +1,4 @@
-# Batch 071 — state-preparation natural-proof barrier and lower-bound method audit
+# State-preparation natural-proof barrier research record — 2026-10-27
 
 **Date:** 2026-10-27  
 **Canonical starting main SHA:** 698ffea904db1ccc35c168d23ccb9edb57a1915b  

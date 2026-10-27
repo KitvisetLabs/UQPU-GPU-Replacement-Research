@@ -68,6 +68,6 @@ INV-036/037 remain preserved as newer cross-cutting invariants. No 100x/100,000,
 
 ## CI, synchronization and next gate
 
-Starting-head CI was green. This commit triggers exact-head Actions validation; its conclusion must be read from GitHub before this cycle is called fully CI-validated. If a workflow fails, inspect the failing job and repair only a reproducible issue. The append-heavy canonical logs were not overwritten, and the commit records the Research-Sync: main trailer.
+A date-keyed research record is used instead of a numbered Batch filename because open PR #132 independently carries a different pending Batch 071; this avoids a parallel-branch numbering collision. Starting-head CI was green. This commit triggers exact-head Actions validation; its conclusion must be read from GitHub before this cycle is called fully CI-validated. If a workflow fails, inspect the failing job and repair only a reproducible issue. The append-heavy canonical logs were not overwritten, and the commit records the Research-Sync: main trailer.
 
 Next highest-value gate: read the full theorem/proof sections of arXiv:2608.00414 and arXiv:2607.28260v2, independently map their assumptions, and use the new methodology contract only after the actual lower-bound proof strategy is identified. Freeze small-instance and held-out boundary checks; no paid provider execution without explicit authorization.
