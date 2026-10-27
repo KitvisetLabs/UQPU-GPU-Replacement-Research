@@ -1,6 +1,6 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T15:03:03+07:00",
+  "prepared_utc": "2026-10-27T16:08:19Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "8e69b805c7c99c0baff9db8ba5543023823e2343",
@@ -273,43 +273,43 @@
     "note": "Starting-head CI passed; exact-head CI for Batch 081 is pending."
   },
   "latest_handoff_audit": {
-    "run_number": 1025,
-    "run_id": 40528822561,
+    "run_number": 1026,
+    "run_id": 40537896262,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40528822561"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40537896262"
   },
   "latest_core_run_observation": {
-    "run_number": 1817,
-    "run_id": 40528822507,
-    "status": "completed",
-    "conclusion": "success",
-    "python_matrix": "success",
-    "all_jobs": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40528822507"
+    "run_number": 1818,
+    "run_id": 40537896927,
+    "status": "in_progress",
+    "conclusion": null,
+    "python_matrix": "in_progress",
+    "all_jobs": "in_progress",
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40537896927"
   },
   "current_head_validation": {
-    "commit": "39b2c9589cc837679900f7ebd48d93f42fb5c8b9",
-    "core_run_number": 1817,
-    "core_run_id": 40528822507,
-    "core_conclusion": "success",
-    "python_matrix": "success",
-    "extended_jobs": "success",
-    "cold_start_run_number": 1025,
-    "cold_start_run_id": 40528822561,
+    "commit": "2a44518c2738070dbf72eec6f29179b7f3bfbad1",
+    "core_run_number": 1818,
+    "core_run_id": 40537896927,
+    "core_conclusion": "in_progress",
+    "python_matrix": "in_progress",
+    "extended_jobs": "pending",
+    "cold_start_run_number": 1026,
+    "cold_start_run_id": 40537896262,
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-27T15:13:24Z",
-    "note": "This is the validated starting head for Batch 082. The newly created artifact commit must receive exact-head CI; do not inherit this success as proof for the new commit."
+    "observed_at_utc": "2026-10-27T16:08:19Z",
+    "note": "Batch 082 commit passed cold-start audit; prototype/invariant workflow remains in progress. This handoff-sync commit requires its own exact-head CI."
   },
   "latest_cycle_ci_observation": {
-    "starting_commit": "39b2c9589cc837679900f7ebd48d93f42fb5c8b9",
-    "core_run_number": 1817,
-    "core_run_id": 40528822507,
-    "core_conclusion": "success",
-    "cold_start_run_number": 1025,
-    "cold_start_run_id": 40528822561,
+    "starting_commit": "2a44518c2738070dbf72eec6f29179b7f3bfbad1",
+    "core_run_number": 1818,
+    "core_run_id": 40537896927,
+    "core_conclusion": "in_progress",
+    "cold_start_run_number": 1026,
+    "cold_start_run_id": 40537896262,
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-27T15:13:24Z",
-    "note": "Both workflows passed on the starting head. Exact-head validation for the Batch 082 commit remains pending."
+    "observed_at_utc": "2026-10-27T16:08:19Z",
+    "note": "Batch 082 cold-start audit passed; core workflow remains in progress. Exact-head CI for the manifest-sync commit will be required."
   },
   "latest_batch": "Batch 082 — DIGEST symbolic-regression candidate and fusion-economic evidence gates; see docs/BATCH_082_EQN008_DIGEST_AND_FUS001_ECONOMIC_GATES.md"
 }
