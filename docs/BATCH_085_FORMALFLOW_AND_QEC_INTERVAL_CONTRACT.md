@@ -65,7 +65,7 @@ The [SPARC literature watch](literature_watch/2026-10-28-sparc-agentic-experimen
 - **E:** MPNO and SPARC are literature-only; BIO-001 and FUS-001 remain open, with no accepted-liquid or net-electric result.
 - **F:** no measured cost per accepted task; resource metrics are required after matched quality/source reproduction.
 - **G:** D/G co-design continues; no yield/process-window/cost-per-good-device result.
-- **H:** two source watches, batch and integration record published; six-language strategic master-plan links and strategic AI-agent/funding references preserved.
+- **H:** three source watches, batch and integration record published; six-language strategic master-plan links and strategic AI-agent/funding references preserved.
 
 ## INV-029–035
 
@@ -88,4 +88,4 @@ Next gate: run exact-head CI; then extend the toy checker to a real finite binar
 
 ## Post-publication CI finding and repair
 
-The exact-head cold-start audit `#1037` failed because the handoff manifest used combined/descriptive evidence labels outside the fixed `VALID_EVIDENCE` enum for lanes A/B and `OPEN_GAP` for C/F. The follow-up commit changes only those metadata values to the schema-approved `SOFTWARE_UNIT_TESTS`, `LITERATURE_ONLY` and `SOFTWARE_CONTRACT` classes and records the failure explicitly. This is a governance metadata failure, not evidence that the decoder interval tests failed. The repair commit must pass its own exact-head audit and core matrix before the cycle can be called CI-green.
+The exact-head cold-start audit `#1037` failed because the handoff manifest used combined/descriptive evidence labels outside the fixed `VALID_EVIDENCE` enum for lanes A/B and `OPEN_GAP` for C/F. The follow-up commit changes only those metadata values to the schema-approved `SOFTWARE_UNIT_TESTS`, `LITERATURE_ONLY` and `SOFTWARE_CONTRACT` classes and records the failure explicitly. This is a governance metadata failure, not evidence that the decoder interval tests failed. The schema repair commit's cold-start audit #1038 passed and its Python matrix passed, while extended QSVT/Qiskit checks remained in progress. The SPARC-watch commit's cold-start audit #1039 and Python matrix passed; extended checks were still running. The current wording/manifest reconciliation needs its own exact-head checks.
