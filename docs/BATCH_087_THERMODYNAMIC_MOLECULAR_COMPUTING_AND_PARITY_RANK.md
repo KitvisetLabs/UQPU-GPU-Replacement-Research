@@ -71,3 +71,6 @@ RESEARCH_GAPS.md and WORKLOG.md are extended from complete fetched contents, pre
 2. Lane A: use the rank test as a prerequisite, then freeze signed-Max-Cut objective-preservation before any QAOA comparison.
 3. Lane E: pin SDC source/protocol/data and reproduce one small program with blind inputs, controls and full wall-plug energy/cost.
 4. Keep BIO-001, FUS-001 and FIN-001 separate and evidence-gated.
+
+
+**Source-to-main trace:** source commit `ea0b4426b96b38a645316be0d939584754e3401b`; [PR #144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144). GitHub PR/commit metadata is authoritative for current review, CI, merge state and resulting main SHA; the next reconciliation checkpoint must record the final main mapping.

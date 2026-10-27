@@ -12,7 +12,7 @@
 
 A–H, INV-025–035, FND-001–006, EQN-001–006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. The repository also has an A–I versus A–H documentation discrepancy; Lane I remains MODEL_ONLY/no physical test rather than silently deleted. No paid QPU, new physical law, quantum advantage, Pangola substitution, accepted bio-oil, net fusion electricity, WACC reduction or Data-Center-to-One-Phone result is claimed.
 
-**Starting-head CI:** [prototype/invariant workflow](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40575874945) and [cold-start audit](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40575874829) passed on `7734020a3f48cfcd12c1eb198e8ca43dbafc1ca2`. The source branch requires its own exact-head checks.
+**Starting-head CI:** [prototype/invariant workflow](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40575874945) and [cold-start audit](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40575874829) passed on `7734020a3f48cfcd12c1eb198e8ca43dbafc1ca2`. Source commit `ea0b4426b96b38a645316be0d939584754e3401b` is tracked by [PR #144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144); PR and commit metadata remain authoritative for exact-head CI and main synchronization.
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — physics-informed LBE surrogate and decoder edge cases
 

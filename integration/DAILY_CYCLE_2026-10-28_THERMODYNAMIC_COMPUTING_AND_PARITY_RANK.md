@@ -44,3 +44,10 @@ AGENTS.md and sync policy enumerate I; operating-system/lane README define A–H
 FND-001 has a diagnostic but no empirical input. FND-002/003 remain open. FND-004 gains a literature lead, not a UQPU reproduction. FND-005 has no validated QFT/particle mechanism. FND-006 and EQN-001–006 remain evidence-gated. INV-029–035 and INV-025–027 remain goals/principles, not achievements. Root directives 00/00A/01–06 and multilingual strategic references are unchanged.
 
 The starting head passed the prototype/invariant workflow (16/16 jobs) and cold-start audit. The source branch requires exact-head CI; main is not updated until merged.
+
+
+## Source-to-main trace
+
+- Source commit: `ea0b4426b96b38a645316be0d939584754e3401b`
+- PR: [#144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144)
+- Main synchronization: governed by PR/commit metadata; the next reconciliation checkpoint must record the final main SHA and exact-head CI result.

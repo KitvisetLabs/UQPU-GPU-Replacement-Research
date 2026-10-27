@@ -1805,3 +1805,8 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 - Architecture sync debt: AGENTS/sync policy and nine-lane scoreboard enumerate I, while operating-system/lane README remain A–H and the Lane I directory README is missing. I remains MODEL_ONLY/no physical test.
 - INV-025–035 and root directives 00/00A/01–06 remain preserved; INV-029–033 are unachieved targets, INV-034/035 evidence-gated. INV-036/037 untouched.
 - Next: exact-head CI, signed-Max-Cut objective-preservation fixture, and independent small SDC reproduction with measured wall-plug energy/full lifecycle cost.
+
+
+## 2026-10-28 — source-to-main trace for Batch 087
+
+Source commit `ea0b4426b96b38a645316be0d939584754e3401b` is carried by [PR #144](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/144). This follow-up synchronization commit updates the README and integration record with the source SHA. The resulting main SHA and final exact-head CI must be captured from GitHub merge metadata at the next reconciliation checkpoint.
