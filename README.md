@@ -6,9 +6,9 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest Eight-Lane research cycle — 2026-10-27 — formal-proof binding in equation hypotheses
+## Latest Eight-Lane research cycle — 2026-10-27 — AI-assisted proof formalization methodology
 
-The current cycle is [Batch 071](docs/BATCH_071_EQUATION_HYPOTHESIS_PROOF_BINDING.md) and [its Eight-Lane integration record](integration/DAILY_CYCLE_2026-10-27_FORMAL_PROOF_BINDING.md). It binds `FormalProofEvidence` to `EquationHypothesis`, requiring matching claim ID, claim kind and proof status for any non-`NOT_RUN` proof state. The schema gap in RG-047 is reduced, but no real checker run, independent proof rebuild, new physical law, QPU advantage, materials/fuel/fusion result, financing result or Data-Center-to-Phone achievement is claimed. The starting main SHA was 9858c84a4971e46d484d1507668493d4a357a3f4; core workflow [#1775](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40455182752) and cold-start audit [#978](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40455182875) passed on that starting head. Exact-head validation for this commit must be checked in live Actions.
+The current source-branch cycle is [the Poincaré formalization literature watch](docs/literature_watch/2026-10-27-ai-assisted-poincare-formalization-methodology.md) and [its A–I integration record](integration/DAILY_CYCLE_2026-10-27_POINCARE_FORMALIZATION_WATCH.md). The official preprint reports milestone-based Lean formalization, statement review and independent checker workflows for an already-established theorem. UQPU has not independently reproduced it; this is methodology evidence only, not a new theorem, physical law, QPU advantage, material/fuel/fusion result, financing result or Data-Center-to-Phone achievement. Starting main SHA: 0dadabfb41d18f51e43a8722e6bd938d73961dfe. Source branch research/2026-10-27-poincare-formalization-watch; exact-head CI and main synchronization remain pending.
 
 ## Previous Eight-Lane research cycle — 2026-10-27 — STRIDE equation-discovery literature delta
 
