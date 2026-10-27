@@ -40,13 +40,16 @@ def _scope_classification(record: dict[str, Any]) -> str:
         return "UNRESOLVED"
     if naturalness == "NON_NATURAL":
         return "OUTSIDE_STATED_SCOPE"
-    if record["target_is_superpolynomial_lower_bound"] is False:
+    scope_flags = (
+        "target_is_superpolynomial_lower_bound",
+        "against_fixed_magic_hierarchy_level",
+        "approximation_regime_matches_source",
+        "target_uses_polynomial_size_circuits",
+        "cryptographic_assumption_matches_source",
+    )
+    if any(record[name] is False for name in scope_flags):
         return "OUTSIDE_STATED_SCOPE"
-    if record["against_fixed_magic_hierarchy_level"] is False:
-        return "OUTSIDE_STATED_SCOPE"
-    if record["target_is_superpolynomial_lower_bound"] is None:
-        return "UNRESOLVED"
-    if record["against_fixed_magic_hierarchy_level"] is None:
+    if any(record[name] is None for name in scope_flags):
         return "UNRESOLVED"
     if record["standard_cryptographic_assumption_adopted"] is None:
         return "UNRESOLVED"
@@ -65,7 +68,10 @@ def build_stateprep_lower_bound_methodology(
     efficiently_testable_given_all_amplitudes: bool | None,
     target_is_superpolynomial_lower_bound: bool | None,
     against_fixed_magic_hierarchy_level: bool | None,
+    approximation_regime_matches_source: bool | None,
+    target_uses_polynomial_size_circuits: bool | None,
     cryptographic_assumption_statement: str,
+    cryptographic_assumption_matches_source: bool | None,
     standard_cryptographic_assumption_adopted: bool | None,
     assessment_basis: str,
     source_url: str = SOURCE_URL,
@@ -95,6 +101,9 @@ def build_stateprep_lower_bound_methodology(
         "efficiently_testable_given_all_amplitudes": efficiently_testable_given_all_amplitudes,
         "target_is_superpolynomial_lower_bound": target_is_superpolynomial_lower_bound,
         "against_fixed_magic_hierarchy_level": against_fixed_magic_hierarchy_level,
+        "approximation_regime_matches_source": approximation_regime_matches_source,
+        "target_uses_polynomial_size_circuits": target_uses_polynomial_size_circuits,
+        "cryptographic_assumption_matches_source": cryptographic_assumption_matches_source,
         "standard_cryptographic_assumption_adopted": standard_cryptographic_assumption_adopted,
     }
     for name, value in flags.items():
@@ -121,7 +130,10 @@ def build_stateprep_lower_bound_methodology(
         "efficiently_testable_given_all_amplitudes": efficiently_testable_given_all_amplitudes,
         "target_is_superpolynomial_lower_bound": target_is_superpolynomial_lower_bound,
         "against_fixed_magic_hierarchy_level": against_fixed_magic_hierarchy_level,
+        "approximation_regime_matches_source": approximation_regime_matches_source,
+        "target_uses_polynomial_size_circuits": target_uses_polynomial_size_circuits,
         "cryptographic_assumption_statement": cryptographic_assumption_statement,
+        "cryptographic_assumption_matches_source": cryptographic_assumption_matches_source,
         "standard_cryptographic_assumption_adopted": standard_cryptographic_assumption_adopted,
         "scope_classification": "UNRESOLVED",
         "claim_rejected_by_barrier": False,
@@ -157,6 +169,9 @@ def validate_stateprep_lower_bound_methodology(record: dict[str, Any]) -> bool:
         "efficiently_testable_given_all_amplitudes",
         "target_is_superpolynomial_lower_bound",
         "against_fixed_magic_hierarchy_level",
+        "approximation_regime_matches_source",
+        "target_uses_polynomial_size_circuits",
+        "cryptographic_assumption_matches_source",
         "standard_cryptographic_assumption_adopted",
     ):
         if not _is_bool_or_none(record.get(name)):

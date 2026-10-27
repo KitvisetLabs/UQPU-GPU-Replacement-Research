@@ -1623,3 +1623,8 @@ A advances a proof-method scope contract; B remains no-submit; C keeps full ampl
 ### Post-publication validator hardening — 2026-10-27
 
 A review of the state-preparation natural-proof scope contract found that the builder rejected inconsistent NATURAL/NON_NATURAL labels, but the standalone validator did not independently re-check those two criteria if a record was edited and re-digested. Hardened validate_stateprep_lower_bound_methodology to validate required text fields, all tri-state flags and the naturalness-label consistency before checking scope and digest. Added a twelfth regression test that deliberately re-hashes inconsistent metadata and confirms validation still fails. The prior worklog statement of 11 passing tests refers to the first implementation revision; the hardened revision has 12 isolated tests passing. This is a metadata-integrity repair, not a proof, theorem or physics result.
+
+
+### Natural-proof theorem-scope fields — 2026-10-27
+
+A further scope audit made the conditional theorem's prerequisites explicit in the state-preparation methodology contract: the claimed approximation regime must match the source, the target must be polynomial-size circuits at a fixed Magic-Hierarchy level, and the declared cryptographic assumption must be reviewed as matching the source assumption. A mismatch classifies the method as outside the stated scope; unknown fields remain unresolved; adopting no assumption is not the same as proving it. Added four scope tests, bringing the isolated regression set to 15 tests. The contract remains metadata-only and cannot prove or refute a theorem or establish physical truth.

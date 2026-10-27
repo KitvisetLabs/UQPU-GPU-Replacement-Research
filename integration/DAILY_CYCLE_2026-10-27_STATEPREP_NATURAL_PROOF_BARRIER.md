@@ -23,9 +23,9 @@ The Chain of Symbolic Regression (CoSR) accepted-paper status from Physical Revi
 
 ## Implementation and tests
 
-Added software/uqpu-prototype/uqpu/stateprep_lower_bound_methodology.py. It records naturalness criteria separately, pins the official source version, preserves the declared cryptographic assumption and target circuit class, computes a canonical record digest, and classifies only the scope of the proof-method barrier. It explicitly forbids automatic theorem rejection and empirical-physics promotion.
+Added software/uqpu-prototype/uqpu/stateprep_lower_bound_methodology.py. It records naturalness criteria separately, pins the official source version, preserves the declared cryptographic assumption, whether it matches the source, the approximation regime, polynomial-size circuit condition and target hierarchy, computes a canonical record digest, and classifies only the scope of the proof-method barrier. It explicitly forbids automatic theorem rejection and empirical-physics promotion.
 
-Added software/uqpu-prototype/tests/test_stateprep_lower_bound_methodology.py. Eleven isolated unit tests passed locally. They cover in-scope method classification, non-natural and unresolved methods, unadopted cryptographic assumptions, circuit/complexity scope exclusions, inconsistent labels, empty claim IDs and tamper detection. The contract is not a theorem checker and does not classify either sparse-state-preparation paper until its full proof method is reviewed.
+Added software/uqpu-prototype/tests/test_stateprep_lower_bound_methodology.py. Eleven isolated unit tests passed locally. They cover in-scope method classification, non-natural and unresolved methods, unadopted cryptographic assumptions, circuit/complexity/approximation/assumption scope exclusions, inconsistent labels, empty claim IDs and tamper detection. The contract is not a theorem checker and does not classify either sparse-state-preparation paper until its full proof method is reviewed.
 
 Added the dated literature watch, standalone gap RG-STATEPREP-NATURAL-001, and this integration report. The root RESEARCH_GAPS.md and WORKLOG.md were appended using their exact full fetched contents as prefixes. README.md now points to this cycle while retaining the prior sparse-state-preparation cycle as a previous-cycle record.
 

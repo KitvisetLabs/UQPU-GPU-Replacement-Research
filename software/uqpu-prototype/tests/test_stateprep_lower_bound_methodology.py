@@ -19,6 +19,9 @@ class StateprepLowerBoundMethodologyTests(unittest.TestCase):
             efficiently_testable_given_all_amplitudes=True,
             target_is_superpolynomial_lower_bound=True,
             against_fixed_magic_hierarchy_level=True,
+            approximation_regime_matches_source=True,
+            target_uses_polynomial_size_circuits=True,
+            cryptographic_assumption_matches_source=True,
             cryptographic_assumption_statement=(
                 "Classically subexponentially secure PRF with polynomial-size depth-d threshold-circuit implementation."
             ),
@@ -61,6 +64,22 @@ class StateprepLowerBoundMethodologyTests(unittest.TestCase):
     def test_non_superpolynomial_target_is_outside_scope(self):
         record = self._build(target_is_superpolynomial_lower_bound=False)
         self.assertEqual(record["scope_classification"], "OUTSIDE_STATED_SCOPE")
+
+    def test_approximation_regime_mismatch_is_outside_scope(self):
+        record = self._build(approximation_regime_matches_source=False)
+        self.assertEqual(record["scope_classification"], "OUTSIDE_STATED_SCOPE")
+
+    def test_non_polynomial_size_target_is_outside_scope(self):
+        record = self._build(target_uses_polynomial_size_circuits=False)
+        self.assertEqual(record["scope_classification"], "OUTSIDE_STATED_SCOPE")
+
+    def test_cryptographic_assumption_mismatch_is_outside_scope(self):
+        record = self._build(cryptographic_assumption_matches_source=False)
+        self.assertEqual(record["scope_classification"], "OUTSIDE_STATED_SCOPE")
+
+    def test_unknown_cryptographic_scope_stays_unresolved(self):
+        record = self._build(cryptographic_assumption_matches_source=None)
+        self.assertEqual(record["scope_classification"], "UNRESOLVED")
 
     def test_natural_label_requires_both_naturalness_criteria(self):
         with self.assertRaisesRegex(ValueError, "NATURAL requires both"):
