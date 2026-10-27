@@ -830,3 +830,14 @@ This gap asks whether the actual proof strategies in the existing sparse-state-p
 **Integration record:** integration/INT-20261027-STATEPREP-SPIN-GLASS-BOUND.json
 
 Unlock by pinning exact theorem text and assumptions, independently reconstructing the proof, and mapping a specific workload to the stated Hamiltonian/state-class/energy/ancilla/asymptotic hypotheses with PASS/FAIL/UNKNOWN. Missing conditions fail closed. Only then compare resource implications against a matched CPU/GPU useful-output baseline. No paid QPU job is authorized by this gap.
+
+
+## 2026-10-27 — RG-FUS001-HIDRA-LI-VAPOR-001: lithium net retention versus plasma contamination
+
+**Status:** ACTIVE / PEER-REVIEWED EXPERIMENT / REACTOR-TRANSFER-UNVALIDATED. Rizkallah et al., “Rapid Vapor-Driven Plasma Contamination and Suppressed Net Lithium Surface Loss in the HIDRA Stellarator,” *Journal of Fusion Energy* 45, article 39 (published 2026-06-10): https://link.springer.com/article/10.1007/s10894-026-00582-y. HIDRA reports effective lithium net-loss suppression around 0.91 to unity in tested hydrogen/helium cases, while high-temperature lithium release rapidly contaminates the plasma. The paper does not establish reactor-relevant vapor shielding, tritium recovery, net electricity or lifecycle cost.
+
+**Detailed gap:** docs/RESEARCH_GAP_FUS001_HIDRA_LITHIUM_VAPOR_CONTROL_2026-10-27.md  
+**Literature watch:** docs/literature_watch/2026-10-27-hidra-lithium-vapor-plasma-contamination.md  
+**Integration record:** integration/INT-20261027-FUS001-HIDRA-LITHIUM-VAPOR.json
+
+Unlock by reconstructing the source mass balance and uncertainty, then independently testing matched capture/control conditions that measure both net surface loss and plasma impurity/stability. Propagate only replicated evidence through the FUS-001 lifecycle and net-electricity model.
