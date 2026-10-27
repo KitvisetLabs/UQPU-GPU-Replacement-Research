@@ -6,6 +6,14 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-28 — physics-informed LBE surrogate and decoder edge cases
+
+[Batch 086](docs/BATCH_086_LBE_PINO_BREAK_EVEN_AND_QEC_EDGE_CASES.md) adds a new, source-pinned watch for Xue et al.'s peer-reviewed *Nature Communications* study of physics-informed neural operators for long-horizon lattice-Boltzmann prediction ([DOI 10.1038/s41467-026-75730-1](https://doi.org/10.1038/s41467-026-75730-1)). The paper reports large speedups on its own simulation cases, but also describes a bounded per-case reuse window; UQPU has not reproduced its data, training, predictions, memory use or break-even economics. The [literature watch](docs/literature_watch/2026-10-28-physics-informed-lattice-boltzmann-neural-operator.md) and [open reproduction gap](docs/RESEARCH_GAP_LBE_PINO_REPRODUCTION_2026-10-28.md) require pinned data/code, trajectory/configuration holdouts, physical-invariant checks and full training-plus-inference cost accounting.
+
+Lane A also gains adversarial tests for touching (non-strictly separated) decoder-cost intervals and malformed/non-finite inputs. They test the existing conservative software contract only; no QLDPC source algorithm or real QPU run is claimed. A–H, INV-025–027, INV-029–035, FND-001–006, EQN-001–006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. The [integration record](integration/DAILY_CYCLE_2026-10-28_LBE_PINO_AND_QEC_EDGE_CASES.md) records the cross-lane status and next gates.
+
+**Starting-head exact-head CI:** [prototype/invariant workflow](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40568854150) and [cold-start audit](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40568854240) passed on `4374cdcea951178b048cebdfb87234d933c7eacd`. The new commit requires its own exact-head Actions checks.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — formalization provenance and decoder interval contract
 
 [Batch 085](docs/BATCH_085_FORMALFLOW_AND_QEC_INTERVAL_CONTRACT.md) adds a generic finite-candidate decoder interval checker and seven focused tests, without claiming reproduction of Banfi et al.'s QLDPC algorithm. Four literature watches record FormalFlow's long-horizon Lean autoformalization workflow ([arXiv:2609.19814v3](https://arxiv.org/abs/2609.19814)), the MPNO stability-by-construction operator ([arXiv:2608.25744](https://arxiv.org/abs/2608.25744)), SPARC's instrument-grounded human-agent experiment workflow ([arXiv:2609.06887](https://arxiv.org/abs/2609.06887)), and an open-system OTOC quantum-speed-limit result ([arXiv:2509.13519](https://arxiv.org/abs/2509.13519)). All remain external-source evidence; source alignment, domain transfer and independent reproduction remain open.

@@ -901,3 +901,14 @@ The batch contract prices final accepted liquid energy rather than raw bio-oil m
 **Blocking data:** no traceable Pangola mass/energy closure, accepted-product assay/LHV/density, hydrogen/catalyst/utility dataset, local feedstock/logistics quotes, verified coproduct revenue or commercial financing terms.
 
 **Unlock:** pin one lot and acceptance-spec SHA-256; record all output streams and process inputs; close mass/energy ledgers within a preregistered tolerance; independently repeat the batch; then compare only on the same accepted-fuel function and financing boundary. Do not infer a lower WACC from reduced principal.
+
+
+## 2026-10-28 — RG-LBE-PINO-REPRO-001: physics-informed lattice-Boltzmann surrogate reproduction
+
+**Status:** OPEN / LITERATURE_ONLY / SOURCE-DATA-AND-CODE-PINNING-PENDING.  
+**Primary owner:** Lane E; cross-lane owners A, C, D/G, F and H.  
+**Source:** Xue et al., *Nature Communications* 17, 9243 (2026), https://doi.org/10.1038/s41467-026-75730-1.  
+**Objective:** reproduce one declared lattice-Boltzmann trajectory using the paper's physics-informed neural operator, then test long-horizon error, moment constraints, lattice equivariance, held-out configurations, peak memory, data/training/inference cost and break-even query count.  
+**Blockers:** source data/code revision and license must be pinned; no UQPU reproduction or domain-transfer evidence exists. The paper's per-case speedups are external simulation results and its own discussion describes narrow training geometry/parameter bands.  
+**Unlock:** independently reproduce a pinned reference case; pass predeclared quality/invariant thresholds on held-out trajectories/configurations; report all failed seeds, uncertainty, memory/I/O, data generation, training, validation, inference and energy where measurable.  
+**Nonclaims:** no Pangola process, accepted bio-oil, fusion, cooling-device, QPU or Data-Center-to-One-Phone result; no new physical law. See `docs/RESEARCH_GAP_LBE_PINO_REPRODUCTION_2026-10-28.md`.
