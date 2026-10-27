@@ -6,6 +6,10 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-27 — MOSAIC-SR matched equation-discovery gate
+
+This cycle is **Batch 077**: [MOSAIC-SR literature watch](docs/literature_watch/2026-10-27-mosaic-sr-transformer-guided-equation-discovery.md), [matched-reproduction gap](docs/RESEARCH_GAP_MOSAIC_SR_MATCHED_REPRODUCTION_2026-10-27.md), and [A–H integration record](integration/DAILY_CYCLE_2026-10-27_MOSAIC_SR_MATCHED_DISCOVERY.md). Fresh surveillance found the official arXiv preprint *MOSAIC-SR: Transformer-Guided Symbolic Regression for Scientific Equation Recovery* (submitted 2026-09-17; https://arxiv.org/abs/2609.20997). It proposes transformer-generated multi-start equation sketches followed by scale-aware constant fitting and symbolic repair. UQPU has not reproduced it; this is a method-comparison lead only. The next gate is a frozen, law-family-disjoint, equal-budget comparison against one-shot symbolic regression, progressive composition, and LLM-guided search control, including held-out scales, counterexamples, false discoveries and full compute cost. No physical law, QPU advantage, Pangola material substitution, accepted fuel, fusion electricity, lower WACC or Data-Center-to-Phone result is claimed. All INV-029–035 and INV-025–027 boundaries remain binding.
+
 ## Latest Eight-Lane research cycle — 2026-10-27 — BIO-001 accepted-liquid cost contract
 
 **CI repair note — 2026-10-27:** exact-head run [#1808](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40495180708) caught a porting omission (missing accepted-input evidence-class constant), producing 14 related NameErrors in Python 3.11. Repair commit [890ec20](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/890ec20616a90ee763e50d28bf79a449fcec7fd4) restores the constant; its Python 3.10/3.11/3.12 matrix and cold-start audit [#1017](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40495417570) passed. Extended QSP/QSVT/Qiskit/reference jobs were still in progress at the last check, so the full workflow is not yet declared green.
