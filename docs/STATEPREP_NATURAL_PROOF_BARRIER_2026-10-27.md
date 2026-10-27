@@ -25,7 +25,7 @@ The CoSR accepted-paper record was already captured in the 2026-10-26 cross-meth
 
 ## Lane A implementation
 
-Added the dependency-free module software/uqpu-prototype/uqpu/stateprep_lower_bound_methodology.py and tests in software/uqpu-prototype/tests/test_stateprep_lower_bound_methodology.py. Fifteen local tests passed. The tests exercise in-scope, out-of-scope and unresolved cases, assumption handling, invalid naturalness labels and digest tampering. The record is explicitly metadata-only and pins arXiv:2610.06826v1.
+Added the dependency-free module software/uqpu-prototype/uqpu/stateprep_lower_bound_methodology.py and tests in software/uqpu-prototype/tests/test_stateprep_lower_bound_methodology.py. Sixteen local tests passed. The tests exercise in-scope, out-of-scope and unresolved cases, assumption handling, invalid naturalness labels and digest tampering. The record is explicitly metadata-only and pins arXiv:2610.06826v1.
 
 Added docs/literature_watch/2026-10-27-stateprep-natural-proof-barrier.md, docs/RESEARCH_GAP_STATEPREP_NATURAL_PROOF_BARRIER_2026-10-27.md, and the integration report. RESEARCH_GAPS.md and WORKLOG.md were appended without replacing their previous contents; README.md was updated to point to this cycle and retain the sparse-state-preparation cycle as historical context.
 

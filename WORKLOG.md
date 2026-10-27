@@ -1628,3 +1628,8 @@ A review of the state-preparation natural-proof scope contract found that the bu
 ### Natural-proof theorem-scope fields — 2026-10-27
 
 A further scope audit made the conditional theorem's prerequisites explicit in the state-preparation methodology contract: the claimed approximation regime must match the source, the target must be polynomial-size circuits at a fixed Magic-Hierarchy level, and the declared cryptographic assumption must be reviewed as matching the source assumption. A mismatch classifies the method as outside the stated scope; unknown fields remain unresolved; adopting no assumption is not the same as proving it. Added four scope tests, bringing the isolated regression set to 15 tests. The contract remains metadata-only and cannot prove or refute a theorem or establish physical truth.
+
+
+### Test-count correction — 2026-10-27
+
+The four theorem-scope tests were added to the 12-test hardened set, yielding 16 total tests (not 15 as stated in the immediately preceding scope-note). The current isolated Python unittest run passes 16/16. This correction changes only the count; the evidence boundary and methodology-only status are unchanged.
