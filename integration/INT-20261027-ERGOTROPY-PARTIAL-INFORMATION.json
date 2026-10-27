@@ -1,0 +1,56 @@
+{
+  "schema": "uqpu-integration-record-v1",
+  "id": "INT-20261027-ERGOTROPY-PARTIAL-INFORMATION",
+  "date": "2026-10-27",
+  "starting_main_sha": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
+  "primary_lane": "A",
+  "cross_lane_owners": [
+    "F",
+    "H"
+  ],
+  "evidence_class": [
+    "PEER_REVIEWED_THEORY",
+    "SOFTWARE_CONTRACT"
+  ],
+  "source": {
+    "title": "Certifying Ergotropy under Partial Information",
+    "authors": [
+      "Egle Pagliaro",
+      "Leonardo Zambrano",
+      "Mir Alimuddin",
+      "Alioscia Hamma",
+      "Antonio Acín",
+      "Donato Farina"
+    ],
+    "journal": "Physical Review Letters",
+    "volume": 137,
+    "article": "130401",
+    "published_online": "2026-09-21",
+    "doi": "10.1103/pl26-g6vy",
+    "preprint": "https://arxiv.org/abs/2603.18828",
+    "evidence_boundary": "Peer-reviewed method and author-reported IBM processor experiment; not reproduced by UQPU"
+  },
+  "implementation": {
+    "path": "software/uqpu-prototype/uqpu/fundamental_limits.py",
+    "function": "bounded_observable_hoeffding_radii",
+    "formula": "epsilon_i = sqrt(2 * ln(2*K/delta) / N_i)",
+    "assumptions": [
+      "K >= 1 measured observables",
+      "each observable has spectrum in [-1,1]",
+      "N_i independent shots for observable i",
+      "0 < delta < 1",
+      "union-bound confidence allocation"
+    ],
+    "scope": "Statistical confidence radii only; not an ergotropy solver or physical-energy measurement"
+  },
+  "open_gap": "docs/RESEARCH_GAP_FND001_ERGOTROPY_PARTIAL_INFORMATION_2026-10-27.md",
+  "next_gate": "Reconstruct and test the two-stage SDP on small systems against exact spectral ergotropy; verify confidence coverage and keep total energy costs separate",
+  "claims": {
+    "new_physical_law": false,
+    "uqpu_ergotropy_reproduced": false,
+    "real_qpu_job_submitted": false,
+    "net_energy_gain_demonstrated": false,
+    "quantum_advantage_demonstrated": false,
+    "commercial_energy_or_fuel_result": false
+  }
+}

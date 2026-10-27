@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T12:05:13.201Z",
+  "prepared_utc": "2026-10-27T13:02:05Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "3774fe187f69d553a639be018dbd59df3451ae64",
+  "canonical_start_sha": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
   "priority_lane": "A",
-  "current_frontier": "Batch 077 MOSAIC-SR transformer-guided equation-discovery watch is on main. Treat it as LITERATURE_ONLY; no method reproduction or physical-law claim. Reuse the canonical RG-EQN-008 / equation_discovery_comparison.py matched comparator; RG-EQN-009 is a method-specific supplement. Batch 076 BIO-001 remains MODEL_ONLY and Pangola data remain missing. Exact-head prototype/invariant CI is in progress; cold-start audit passed for the Batch 077 commit.",
+  "current_frontier": "Batch 078 adds a bounded-observable Hoeffding confidence-radius helper for the finite-shot confidence region used in partial-information ergotropy certification. The full two-stage SDP remains unreproduced; ergotropy is not total device energy. Batch 077 MOSAIC-SR remains literature-only; Batch 076 BIO-001 remains MODEL_ONLY and Pangola data remain missing. Prior head 20dd5cab has successful prototype/invariant and cold-start workflows; exact-head CI for Batch 078 is required.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -87,14 +87,19 @@
     "integration/DAILY_CYCLE_2026-10-27_MOSAIC_SR_MATCHED_DISCOVERY.md",
     "software/uqpu-prototype/uqpu/equation_discovery_comparison.py",
     "software/uqpu-prototype/tests/test_equation_discovery_comparison.py",
-    "integration/COLD_START_HANDOFF_MANIFEST.json"
+    "integration/COLD_START_HANDOFF_MANIFEST.json",
+    "docs/BATCH_078_FND001_ERGOTROPY_PARTIAL_INFORMATION.md",
+    "docs/literature_watch/2026-10-27-ergotropy-partial-information-certification.md",
+    "docs/RESEARCH_GAP_FND001_ERGOTROPY_PARTIAL_INFORMATION_2026-10-27.md",
+    "integration/DAILY_CYCLE_2026-10-27_ERGOTROPY_PARTIAL_INFORMATION.md",
+    "integration/INT-20261027-ERGOTROPY-PARTIAL-INFORMATION.json"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "MOSAIC_SR_LITERATURE_ONLY_MATCHED_COMPARISON_OPEN",
-      "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "reuse canonical RG-EQN-008 / equation_discovery_comparison.py; pin source/data/code hashes and run equal-budget law-family-disjoint comparison with >=30 preregistered seeds where feasible; no method is ranked before hosted evidence"
+      "status": "FINITE_SHOT_CONFIDENCE_RADIUS_HELPER_ADDED; ERGOTROPY_SDP_REPRODUCTION_OPEN",
+      "evidence_class": "SOFTWARE_CONTRACT",
+      "next_gate": "Confirm exact-head Python 3.10/3.11/3.12 CI; then pin the paper's two-stage SDP and compare small-system certificates against exact spectral ergotropy. The helper is not an ergotropy solver."
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -104,7 +109,7 @@
     },
     "C": {
       "owner_path": "research_lanes/C_state_memory_storage_data_movement",
-      "status": "MEMORY_AWARE_THERMODYNAMIC_INFERENCE_WATCH_AND_STATEPREP_BOUNDS",
+      "status": "MEMORY_AWARE_THERMODYNAMIC_INFERENCE_AND_PARTIAL_INFORMATION_CERTIFICATE_WATCH",
       "evidence_class": "LITERATURE_ONLY",
       "next_gate": "reproduce memory-order estimator on known finite-state processes; keep active/hidden memory distinct from readable storage and map QROM/state-preparation costs"
     },
@@ -122,9 +127,9 @@
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "BATCH_077_SYNCED; BIO001_MODEL_ONLY; EXACT_HEAD_CI_PENDING",
+      "status": "BATCH_078_SYNCED; STATISTICAL_HELPER_ADDED; SDP_REPRODUCTION_OPEN",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "inspect exact-head prototype/invariant CI; keep equal-resource and accepted-output cost boundaries, and reconcile standalone gap into aggregate RESEARCH_GAPS.md without truncation"
+      "next_gate": "Keep ergotropy lower bounds separate from total device energy and accepted-task economics; reconcile focused gap into RESEARCH_GAPS.md only through safe append-only synchronization."
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -134,7 +139,7 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "DATED_MOSAIC_SR_LITERATURE_WATCH_ADDED",
+      "status": "DATED_ERGOTROPY_PARTIAL_INFORMATION_PRL_WATCH_ADDED",
       "evidence_class": "LITERATURE_ONLY",
       "next_gate": "preserve all six multilingual master-plan links and strategic AI-agent/funding context; no claim promotion"
     },
@@ -161,7 +166,10 @@
     "FND-003-MATCHED-COMPARISON",
     "RG-FND001-MEMORY-AWARE-INFERENCE-001",
     "RG-EQN-009 (method-specific supplement to RG-EQN-008)",
-    "MOSAIC-SR matched equation-discovery surveillance"
+    "MOSAIC-SR matched equation-discovery surveillance",
+    "RG-FND001-ERGOTROPY-PARTIAL-INFO-001",
+    "partial-information ergotropy certificate",
+    "bounded-observable Hoeffding confidence radii"
   ],
   "open_gates": [
     "RG-033",
@@ -176,7 +184,9 @@
     "RG-FUS001-HIDRA-LI-VAPOR-001",
     "RG-FND001-MEMORY-AWARE-INFERENCE-001",
     "RG-EQN-009 (under RG-EQN-008)",
-    "exact-head CI for commit 3774fe187f69d553a639be018dbd59df3451ae64"
+    "exact-head CI for commit 3774fe187f69d553a639be018dbd59df3451ae64",
+    "RG-FND001-ERGOTROPY-PARTIAL-INFO-001",
+    "exact-head CI for Batch 078"
   ],
   "master_reference_languages": [
     "Thai",
@@ -187,10 +197,10 @@
     "German"
   ],
   "latest_verified_ci": {
-    "run_number": 1776,
-    "run_id": 40460198276,
+    "run_number": 1812,
+    "run_id": 40501063911,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40460198276"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40501063911"
   },
   "evidence_boundaries": {
     "real_qpu_execution": false,
@@ -205,11 +215,11 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review.",
-  "next_independent_action": "Poll exact-head core workflow #1785 on feac152e709b0c0a3909a399b8d77f65e80b0e96. If green, update the verified CI snapshot; if it fails, inspect the first failing step. Then review the Poincare watch PR and continue the pinned proof and FND-001 estimator gates.",
+  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review. Batch 078: RESEARCH_GAPS.md aggregate not rewritten because it is a large append-only canonical file; focused RG-FND001-ERGOTROPY-PARTIAL-INFO-001 and integration record are published. Reconcile the aggregate only through safe append-only synchronization.",
+  "next_independent_action": "Inspect exact-head prototype/invariant CI and cold-start audit triggered by Batch 078; repair any failure at the first failing step. If green, pin the ergotropy paper's two-stage SDP and compare small-system certificates against exact spectral ergotropy, including finite-shot confidence coverage. Continue the RG-EQN-008 matched discovery comparison, BIO-001 Pangola batch-data gate and FUS-001 net-electricity cost-driver work.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
-  "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-27_MEMORY_AWARE_THERMODYNAMIC_INFERENCE_AND_CI.md",
-  "latest_literature_watch": "docs/literature_watch/2026-10-27-memory-aware-thermodynamic-inference.md",
+  "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-27_ERGOTROPY_PARTIAL_INFORMATION.md",
+  "latest_literature_watch": "docs/literature_watch/2026-10-27-ergotropy-partial-information-certification.md",
   "last_cycle_ci_observation": {
     "initial_commit": "6742ac1b9bf68b5d0a726f582efa0b5de7bda001",
     "initial_cold_start_run": 40454588726,
@@ -230,10 +240,10 @@
     "repair_commit_pending": false
   },
   "latest_handoff_audit": {
-    "run_number": 989,
-    "run_id": 40472690897,
+    "run_number": 1020,
+    "run_id": 40501063980,
     "conclusion": "success",
-    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40472690897"
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40501063980"
   },
   "latest_core_run_observation": {
     "run_number": 1775,
@@ -244,26 +254,25 @@
     "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40455182752"
   },
   "current_head_validation": {
-    "commit": "feac152e709b0c0a3909a399b8d77f65e80b0e96",
-    "core_run_number": 1785,
-    "core_run_id": 40472690938,
-    "core_conclusion": "in_progress",
-    "cold_start_run_number": 989,
-    "cold_start_run_id": 40472690897,
+    "commit": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
+    "core_run_number": 1812,
+    "core_run_id": 40501063911,
+    "core_conclusion": "success",
+    "cold_start_run_number": 1020,
+    "cold_start_run_id": 40501063980,
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-27T08:20:30Z"
+    "observed_at_utc": "2026-10-27T13:02:05Z"
   },
   "latest_cycle_ci_observation": {
-    "prior_head": "16a02848d5d3e7da148250d119e6111945ce461b",
-    "prior_core_run": 1784,
-    "prior_core_conclusion": "failure",
-    "prior_failure": "test_commit_trailer_uses_canonical_main_ancestry fixture used literal escaped newlines",
-    "repair_head": "feac152e709b0c0a3909a399b8d77f65e80b0e96",
-    "repair_cold_start_run": 989,
+    "prior_head": "3774fe187f69d553a639be018dbd59df3451ae64",
+    "prior_core_run": 1811,
+    "prior_core_conclusion": "success",
+    "repair_head": "20dd5cab2272e204465889d3f77c377a41fa8cd9",
+    "repair_cold_start_run": 1020,
     "repair_cold_start_conclusion": "success",
-    "repair_core_run": 1785,
-    "repair_core_status": "in_progress",
-    "observed_at_utc": "2026-10-27T08:20:30Z"
+    "repair_core_run": 1812,
+    "repair_core_status": "success",
+    "observed_at_utc": "2026-10-27T13:02:05Z"
   },
-  "latest_batch": "Batch 077 — MOSAIC-SR matched equation-discovery surveillance; see docs/BATCH_077_MOSAIC_SR_MATCHED_EQUATION_DISCOVERY.md"
+  "latest_batch": "Batch 078 — FND-001 partial-information ergotropy certificate; see docs/BATCH_078_FND001_ERGOTROPY_PARTIAL_INFORMATION.md"
 }

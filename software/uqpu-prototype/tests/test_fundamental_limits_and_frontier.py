@@ -13,7 +13,41 @@ from uqpu.fundamental_limits import (
     landauer_minimum_joule_per_bit,
     margolus_levitin_min_seconds,
     fault_tolerance_memory_log_overhead_term,
+    bounded_observable_hoeffding_radii,
 )
+
+
+
+class BoundedObservableConfidenceTests(unittest.TestCase):
+    def test_hoeffding_radius_matches_published_formula(self):
+        radii = bounded_observable_hoeffding_radii([10000, 20000, 5000], 0.01)
+        expected = math.sqrt(2.0 * math.log(2.0 * 3 / 0.01) / 10000)
+        self.assertAlmostEqual(radii[0], expected)
+        self.assertAlmostEqual(
+            radii[1],
+            math.sqrt(2.0 * math.log(2.0 * 3 / 0.01) / 20000),
+        )
+        self.assertAlmostEqual(
+            radii[2],
+            math.sqrt(2.0 * math.log(2.0 * 3 / 0.01) / 5000),
+        )
+
+    def test_radius_respects_shots_observable_count_and_confidence(self):
+        base = bounded_observable_hoeffding_radii([1000, 1000], 0.05)
+        more_shots = bounded_observable_hoeffding_radii([4000, 4000], 0.05)
+        more_observables = bounded_observable_hoeffding_radii([1000] * 4, 0.05)
+        tighter_confidence = bounded_observable_hoeffding_radii([1000, 1000], 0.001)
+        self.assertAlmostEqual(more_shots[0], base[0] / 2.0)
+        self.assertGreater(more_observables[0], base[0])
+        self.assertGreater(tighter_confidence[0], base[0])
+
+    def test_invalid_shot_counts_and_failure_probabilities_are_rejected(self):
+        for shots in ([], [0], [-1], [True], [1.0], "100"):
+            with self.assertRaises(ValueError):
+                bounded_observable_hoeffding_radii(shots, 0.05)
+        for delta in (0.0, 1.0, -0.1, float("nan"), float("inf")):
+            with self.assertRaises(ValueError):
+                bounded_observable_hoeffding_radii([100], delta)
 
 
 class FundamentalLimitTests(unittest.TestCase):

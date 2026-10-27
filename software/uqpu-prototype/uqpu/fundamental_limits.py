@@ -1,11 +1,13 @@
-"""Small executable physical-limit helpers for deep-frontier research.
+"""Executable physical-limit and statistical-certificate helpers.
 
-These functions expose ideal lower bounds, not engineering performance predictions.
-They are intended for evidence-gated comparison against measured systems.
+Physical-limit functions expose scoped ideal lower bounds, not engineering
+predictions. Statistical helpers encode explicit sampling assumptions and do
+not replace physical-energy measurement or accepted-task cost accounting.
 """
 from __future__ import annotations
 
 import math
+from collections.abc import Sequence
 
 BOLTZMANN_CONSTANT_J_PER_K = 1.380649e-23  # exact SI value
 PLANCK_CONSTANT_J_S = 6.62607015e-34       # exact SI value
@@ -166,3 +168,43 @@ def fault_tolerance_memory_log_overhead_term(
         raise ValueError("target_error must be finite and strictly between 0 and 1")
     # Difference of logs avoids overflow in time_steps / epsilon.
     return (math.log(time_steps) - math.log(epsilon)) / logical_qubits
+
+
+
+def bounded_observable_hoeffding_radii(
+    shots_per_observable: "Sequence[int]",
+    failure_probability: float,
+) -> tuple[float, ...]:
+    """Return union-bound Hoeffding radii for bounded observable estimates.
+
+    Implements epsilon_i = sqrt(2 * ln(2*K/delta) / N_i), as used by
+    Pagliaro et al., "Certifying Ergotropy under Partial Information"
+    (Phys. Rev. Lett. 137, 130401 (2026), arXiv:2603.18828).
+
+    Assumptions: K >= 1 observables, each observable has spectrum in [-1, 1],
+    each estimate uses N_i independent shots, and 0 < delta < 1 is the total
+    failure-probability allocation. The union bound gives simultaneous
+    coverage of at least 1-delta under these assumptions.
+
+    This is only a statistical confidence-radius helper. It does not solve the
+    paper's semidefinite programs, calculate ergotropy, validate a Hamiltonian,
+    or measure total device energy.
+    """
+    if not isinstance(shots_per_observable, Sequence) or isinstance(
+        shots_per_observable, (str, bytes)
+    ):
+        raise ValueError("shots_per_observable must be a nonempty sequence of positive integers")
+    shots = tuple(shots_per_observable)
+    if not shots:
+        raise ValueError("shots_per_observable must not be empty")
+    if any(
+        not isinstance(n, int) or isinstance(n, bool) or n <= 0
+        for n in shots
+    ):
+        raise ValueError("each shot count must be a positive integer")
+    delta = float(failure_probability)
+    if not math.isfinite(delta) or not 0.0 < delta < 1.0:
+        raise ValueError("failure_probability must be finite and strictly between 0 and 1")
+    observable_count = len(shots)
+    log_term = math.log(2.0 * observable_count / delta)
+    return tuple(math.sqrt(2.0 * log_term / n) for n in shots)
