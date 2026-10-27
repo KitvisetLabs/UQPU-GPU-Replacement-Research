@@ -1,4 +1,4 @@
-# Eight-Lane cycle — Batch 085: FormalFlow, QEC interval contract, MPNO and SPARC
+# Eight-Lane cycle — Batch 085: FormalFlow, QEC interval contract, MPNO, SPARC and OTOC speed limits
 
 **Date:** 2026-10-28  
 **Canonical starting head:** `a662ae4b4580f3878c5ca14e3fd093bd80f4ff4e`  
@@ -35,6 +35,13 @@ Seven focused unit tests were exercised in an isolated Python harness before pub
 
 The previously published GraphED constitutive-law watch, AI-mathematical-instrument corpus audit and certified QLDPC decoder source remain in force; they were not recast as project results.
 
+### 4. Open-system OTOC quantum-speed-limit bound
+
+Tripathy, Thingna and Deffner, *Quantum speed limit for the out-of-time-ordered correlator from an open-system perspective*, Phys. Rev. A 113, L010402 (2026), [arXiv:2509.13519](https://arxiv.org/abs/2509.13519), DOI [10.1103/6fsj-6nc5](https://doi.org/10.1103/6fsj-6nc5), derive a bound on OTOC/scrambling dynamics from an open-system perspective and report numerical validation on a transverse-field Ising model. This is an external theoretical/numerical result, not an experiment, a general useful-output speed limit or UQPU evidence.
+
+**FND-003 follow-up:** reproduce the exact model and theorem assumptions, sweep environment coupling/correlation parameters, test held-out regimes and counterexamples, and compare with incumbent bounds. A later matched comparison must hold the task, observable, initial/final coarse-grained states, accuracy and timing boundary fixed. Do not equate OTOC decay with end-to-end algorithm runtime.
+
+
 ### 3. Human-agent experimental design with instrument-grounded memory
 
 The [SPARC literature watch](literature_watch/2026-10-28-sparc-agentic-experiment-design.md) records Liu et al., [arXiv:2609.06887](https://arxiv.org/abs/2609.06887), an external preprint reporting operator-supervised and agent-controlled scanning-probe experiments on a specific ferroelectric film. Its persistent `FINDINGS.md`/`PITFALLS.md` split and pre-write checks are relevant to experiment provenance and failure memory. UQPU has not reproduced the experiment; this does not establish Pangola-carbon substitution, semiconductor performance or transfer to fusion/material systems.
@@ -63,7 +70,7 @@ The [SPARC literature watch](literature_watch/2026-10-28-sparc-agentic-experimen
 - **INV-034:** strengthened the formal-method and source-to-proof audit path; no new physical mechanism or theorem accepted by UQPU.
 - **INV-035:** proof/equation provenance, held-out tests, counterexamples, independent validation and explicit non-claims remain mandatory; no AI-generated equation is promoted to a law.
 
-FND-001 thermodynamic-gap accounting, FND-002 output-information lower bounds, FND-003 matched control/quantum-speed-limit measurement, FND-004 alternative primitives, FND-005 QFT/particle mechanism scans and FND-006 mathematics-first invention remain active. The two new sources change methods to investigate, not the accepted physical constraints. EQN-001–006 remain evidence-gated; no equation passes to physical-law status.
+FND-001 thermodynamic-gap accounting, FND-002 output-information lower bounds, FND-003 matched control/quantum-speed-limit measurement (now including an OTOC theorem candidate pending independent reproduction), FND-004 alternative primitives, FND-005 QFT/particle mechanism scans and FND-006 mathematics-first invention remain active. The two new sources change methods to investigate, not the accepted physical constraints. EQN-001–006 remain evidence-gated; no equation passes to physical-law status.
 
 BIO-001, FUS-001 and FIN-001 are unchanged/open. The MPNO source offers a possible stability constraint for later reduced-order-model testing, not evidence of fusion performance or lower energy cost. Finance still requires measured principal, rate/tenor, construction or evidence time, cash flows and risk; lower principal can reduce absolute interest at unchanged terms, but WACC reduction needs separate evidence.
 

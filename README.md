@@ -8,7 +8,7 @@
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — formalization provenance and decoder interval contract
 
-[Batch 085](docs/BATCH_085_FORMALFLOW_AND_QEC_INTERVAL_CONTRACT.md) adds a generic finite-candidate decoder interval checker and seven focused tests, without claiming reproduction of Banfi et al.'s QLDPC algorithm. Three literature watches record FormalFlow's long-horizon Lean autoformalization workflow ([arXiv:2609.19814v3](https://arxiv.org/abs/2609.19814)), the MPNO stability-by-construction operator ([arXiv:2608.25744](https://arxiv.org/abs/2608.25744)), and SPARC's instrument-grounded human-agent experiment workflow ([arXiv:2609.06887](https://arxiv.org/abs/2609.06887)). All are external-source evidence; FormalFlow's v3/source alignment, MPNO's transfer beyond tested PDEs, and SPARC's instrument-specific protocol transfer remain open.
+[Batch 085](docs/BATCH_085_FORMALFLOW_AND_QEC_INTERVAL_CONTRACT.md) adds a generic finite-candidate decoder interval checker and seven focused tests, without claiming reproduction of Banfi et al.'s QLDPC algorithm. Four literature watches record FormalFlow's long-horizon Lean autoformalization workflow ([arXiv:2609.19814v3](https://arxiv.org/abs/2609.19814)), the MPNO stability-by-construction operator ([arXiv:2608.25744](https://arxiv.org/abs/2608.25744)), SPARC's instrument-grounded human-agent experiment workflow ([arXiv:2609.06887](https://arxiv.org/abs/2609.06887)), and an open-system OTOC quantum-speed-limit result ([arXiv:2509.13519](https://arxiv.org/abs/2509.13519)). All remain external-source evidence; source alignment, domain transfer and independent reproduction remain open.
 
 The decoder helper checks strict interval separation, keeps ties/overlap UNDECIDED, validates intervals against an abstract exhaustive finite-candidate oracle, and enforces the aggregate undecided-width identity. It is not a syndrome/Pauli enumerator, QLDPC decoder, or source-paper reproduction. A formal proof is not a physical law; a stable surrogate is not a fusion/material result. No new equation or theorem is promoted.
 
@@ -497,3 +497,6 @@ The current cycle is [the matched control / quantum-speed-limit contract](integr
 
 
 **Citation/metadata correction:** the MPNO watch now includes Yi Zhang in the author list, matching the official arXiv metadata, and the Batch 085 heading names all three literature-watch topics. This correction commit requires its own exact-head checks.
+
+
+**FND-003 surveillance delta:** the new [OTOC quantum-speed-limit watch](docs/literature_watch/2026-10-28-otoc-quantum-speed-limit-fnd003.md) treats the published bound as a candidate theorem family for matched-observable analysis, not as an algorithm-runtime or useful-output speedup. The associated FND-003 gap now records the reproduction gate. This follow-up commit requires exact-head CI.

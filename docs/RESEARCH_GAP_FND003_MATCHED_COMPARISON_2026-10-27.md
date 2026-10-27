@@ -47,3 +47,12 @@ The new contract binds one useful-output task to control and quantum records, ch
 ## Explicit nonclaims
 
 No quantum advantage, phone-class physical compression, readable-memory equivalence, critical-material substitution, accepted bio-oil, net fusion electricity, lower absolute interest, lower WACC or new physical law is established by this gap or its contract tests.
+
+
+## Supplementary bound family — OTOC open-system quantum speed limit (2026-10-28)
+
+Tripathy, Thingna and Deffner, *Quantum speed limit for the out-of-time-ordered correlator from an open-system perspective*, Phys. Rev. A 113, L010402 (2026), arXiv:2509.13519, DOI 10.1103/6fsj-6nc5, derive an assumption-scoped bound on OTOC decay/scrambling dynamics using an open-system description and report numerical validation in a transverse-field Ising model. This is an external theoretical result, not a new UQPU bound and not a general useful-output runtime limit.
+
+**Required gate before use in FND-003:** recover the exact theorem assumptions and normalization; reproduce the paper's numerical example; sweep coupling/environment-correlation parameters and system size; compare with applicable incumbent bounds; record numerical residuals and counterexamples. Any matched control comparison must hold the observable, initial/final coarse-grained states, accuracy criterion and timing boundary fixed. OTOC scrambling speed cannot be substituted for task throughput or end-to-end algorithm runtime.
+
+Watch: `docs/literature_watch/2026-10-28-otoc-quantum-speed-limit-fnd003.md`.

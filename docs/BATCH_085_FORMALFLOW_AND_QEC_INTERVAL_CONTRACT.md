@@ -1,11 +1,11 @@
-# Batch 085 — FormalFlow, decoder interval contract, MPNO and SPARC
+# Batch 085 — FormalFlow, decoder interval contract, MPNO, SPARC and OTOC speed limits
 
 **Date:** 2026-10-28  
 **Canonical starting head:** `a662ae4b4580f3878c5ca14e3fd093bd80f4ff4e`  
 **Primary owner:** Lane A — quantum programming/workloads/compiler/runtime  
 **Cross-lane owners:** Lane B, C, E, F and H  
 **Evidence:** `SOFTWARE_CONTRACT_ONLY` + `LITERATURE_ONLY`; no hardware or commercial evidence  
-**Scope:** small finite-candidate decoder-certificate scaffold, focused tests, three dated literature watches, README/handoff integration  
+**Scope:** small finite-candidate decoder-certificate scaffold, focused tests, four dated literature watches, README/handoff integration  
 **Paid QPU job:** no
 
 ## Starting-state and CI
@@ -56,9 +56,15 @@ The prior GraphED constitutive-law watch is already recorded in the repository a
 The [SPARC literature watch](literature_watch/2026-10-28-sparc-agentic-experiment-design.md) records Liu et al., [arXiv:2609.06887](https://arxiv.org/abs/2609.06887), an external preprint reporting operator-supervised and agent-controlled scanning-probe experiments on a specific ferroelectric film. Its persistent `FINDINGS.md`/`PITFALLS.md` split and pre-write checks are relevant to experiment provenance and failure memory. UQPU has not reproduced the experiment; this does not establish Pangola-carbon substitution, semiconductor performance or transfer to fusion/material systems.
 
 
+
+
+### 4. Open-system OTOC quantum-speed-limit bound
+
+The [FND-003 watch](literature_watch/2026-10-28-otoc-quantum-speed-limit-fnd003.md) records Tripathy, Thingna and Deffner, *Quantum speed limit for the out-of-time-ordered correlator from an open-system perspective*, Phys. Rev. A 113, L010402 (2026), [arXiv:2509.13519](https://arxiv.org/abs/2509.13519), DOI [10.1103/6fsj-6nc5](https://doi.org/10.1103/6fsj-6nc5). The authors derive an assumption-scoped bound on OTOC/scrambling dynamics from an open-system description and report numerical validation on a transverse-field Ising model. It is a theoretical/numerical external result, not an experimental quantum-computing speedup or a bound on arbitrary useful-output tasks. Reproduction and mapping to the matched FND-003 contract remain open.
+
 ## A–H lane status
 
-- **A:** interval certificate contract and tests added; formalization provenance watch opened.
+- **A:** interval certificate contract and tests added; FormalFlow and OTOC-QSL source audits opened.
 - **B:** QLDPC decoder-reference gap remains open; no provider job, credentials/pricing check or hardware result.
 - **C:** decoder memory/I/O/reconstruction remain unmeasured; proof size and quantum state dimension are not readable classical storage.
 - **D:** SPARC is an external instrument-grounded experiment-design watch only; no UQPU device/chip/process/packaging evidence changed.
@@ -77,7 +83,7 @@ The [SPARC literature watch](literature_watch/2026-10-28-sparc-agentic-experimen
 - **INV-034:** formal proof/source audit is a method-level advancement only.
 - **INV-035:** candidate methods remain subordinate to dimensional, symmetry, conservation, causality, held-out, counterexample, proof/experiment and independent-validation gates.
 
-FND-001–006 and EQN-001–006 remain active/evidence-gated. No physical equation, lower bound, anomaly, particle mechanism or physical law is promoted. The two watches inform methods and future falsifiers only.
+FND-001–006 and EQN-001–006 remain active/evidence-gated. The OTOC bound is an external theorem candidate whose assumptions and numerical example must be independently reproduced; it is not a new UQPU lower bound. No physical equation, anomaly, particle mechanism or physical law is promoted. All four new watches inform methods and future falsifiers only.
 
 ## Sync debt and next gate
 
