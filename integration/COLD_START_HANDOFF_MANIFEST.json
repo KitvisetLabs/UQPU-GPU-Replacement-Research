@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-27T08:20:30Z",
+  "prepared_utc": "2026-10-27T10:08:41Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "0dadabfb41d18f51e43a8722e6bd938d73961dfe",
+  "canonical_start_sha": "3ffe242d25be42c5a4ac3c23fe5375bd3c8ac2df",
   "priority_lane": "A",
-  "current_frontier": "Batch 072 records a literature-only memory-aware thermodynamic-inference gate for FND-001 and repairs the cold-start commit-trailer audit using canonical-main ancestry. Batch 071 proof-evidence binding remains current software state. No physical/economic claim is promoted.",
+  "current_frontier": "Batch 074 adds an independent GF(2) cycle-rank and signed-edge objective reference suite for the classical graph-parity mapping, plus a literature-only symbolic-ensemble materials reproduction gate. Feature-branch exact-head CI is pending; no QAOA circuit, QPU, material substitution or economic claim is promoted.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -55,14 +55,25 @@
     "docs/BATCH_072_MEMORY_AWARE_THERMODYNAMIC_INFERENCE.md",
     "docs/RESEARCH_GAP_FND001_MEMORY_AWARE_THERMODYNAMIC_INFERENCE_2026-10-27.md",
     "docs/literature_watch/2026-10-27-memory-aware-thermodynamic-inference.md",
-    "integration/DAILY_CYCLE_2026-10-27_MEMORY_AWARE_THERMODYNAMIC_INFERENCE_AND_CI.md"
+    "integration/DAILY_CYCLE_2026-10-27_MEMORY_AWARE_THERMODYNAMIC_INFERENCE_AND_CI.md",
+    "docs/BATCH_073_PARITY_ENCODING_BASELINE.md",
+    "docs/BATCH_074_GF2_PARITY_AND_SYMBOLIC_ENSEMBLE.md",
+    "docs/RESEARCH_GAP_PANGOLA_SYMBOLIC_POTENTIAL_TRANSFER_2026-10-27.md",
+    "docs/literature_watch/2026-10-27-learning-to-erase-quantum-states.md",
+    "docs/literature_watch/2026-10-27-symbolic-ensemble-interatomic-potentials.md",
+    "integration/DAILY_CYCLE_2026-10-27_PARITY_ENCODING_BASELINE.md",
+    "integration/DAILY_CYCLE_2026-10-27_GF2_PARITY_AND_SYMBOLIC_ENSEMBLE.md",
+    "integration/INT-20261027-SYMBOLIC-ENSEMBLE-MATERIALS.json",
+    "software/uqpu-prototype/uqpu/parity_encoding.py",
+    "software/uqpu-prototype/tests/test_parity_encoding.py",
+    "software/uqpu-prototype/tests/test_parity_encoding_reference.py"
   ],
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "PRIORITY_1_PROOF_BINDING_AND_ANCESTRY_AWARE_HANDOFF_AUDIT",
+      "status": "INDEPENDENT_GF2_REFERENCE_TESTS_PR_PENDING_CI",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "verify exact-head CI; pin a real checker and immutable proof bundle; independently rebuild; keep QAOA parity and >=30-seed equation-discovery gates separate"
+      "next_gate": "inspect exact-head PR CI for the exhaustive GF(2) rank and signed-objective reference suite; preserve counterexamples; only then implement the parity-QAOA circuit and equal-budget comparison"
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -78,21 +89,21 @@
     },
     "D": {
       "owner_path": "research_lanes/D_device_chip_fabrication_packaging",
-      "status": "FND003_MATCHED_COMPARISON_CONTRACT_NO_PHYSICAL_MEASUREMENT",
-      "evidence_class": "MODEL_ONLY",
-      "next_gate": "pin evolution/Hamiltonian provenance and independently audit theorem assumptions before any physical ratio"
+      "status": "SYMBOLIC_ENSEMBLE_MATERIALS_LITERATURE_ONLY",
+      "evidence_class": "LITERATURE_ONLY",
+      "next_gate": "pin source/code/data and preregister aluminum-first held-out reproduction; keep carbon-specific transfer separate"
     },
     "E": {
       "owner_path": "research_lanes/E_materials_energy_cooling_infrastructure",
-      "status": "BIO001_FUS001_DATA_GAPS_ACTIVE",
-      "evidence_class": "MODEL_ONLY",
-      "next_gate": "accepted-liquid mass/energy/cost balance for BIO-001; net reliable delivered electricity and lifecycle boundary for FUS-001"
+      "status": "PANGOLA_BIO_OIL_FUSION_EVIDENCE_GATES_UNCHANGED",
+      "evidence_class": "LITERATURE_ONLY",
+      "next_gate": "continue BIO-001 accepted-liquid mass/energy/cost and FUS-001 net-delivered-electricity accounting; no new commercial claim"
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "FND001_MEMORY_AWARE_INFERENCE_GAP_RECORDED",
-      "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "pin the source equations; reproduce with known entropy-production references, preregistered holdouts and >=30 fixed seeds; preserve failures and uncertainty"
+      "status": "PARITY_REFERENCE_AND_MATERIALS_GAP_INTEGRATION_PENDING_CI",
+      "evidence_class": "SOFTWARE_CONTRACT",
+      "next_gate": "record exact-head test status and preserve full resource, lifecycle, energy and finance boundaries"
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -102,9 +113,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "MEMORY_AWARE_THERMODYNAMIC_INFERENCE_WATCH_PUBLISHED",
+      "status": "DATED_SYMBOLIC_ENSEMBLE_LITERATURE_WATCH_ADDED",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "publish only source-grounded findings and preserve the six-language master-plan links and strategic AI-agent/funding references"
+      "next_gate": "maintain six multilingual master-plan links and strategic AI-agent/funding context; no claim promotion"
     },
     "I": {
       "owner_path": "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION",
