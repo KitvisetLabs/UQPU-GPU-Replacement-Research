@@ -804,3 +804,18 @@ The paper proves tight worst-case T-count bounds for sparse QROM in a fixed Clif
 The source abstract reports an O-tilde sparse-state-preparation synthesis upper expression and an Omega lower expression over a restricted support/precision regime. The existing sparse-QROM preprint arXiv:2607.28260v2 also states a sparse-state-preparation corollary. Full theorem assumptions, target-state representation, classical access/preprocessing, precision and synthesis models must be reconciled before comparing the claims. This is a model-alignment question, not a claimed contradiction or theorem improvement. The new helper records symbolic expressions only; exact counts, depth, ancillas, memory, I/O, energy and provider cost remain null.
 
 **Unlock:** full-text assumption matrix; independent small-instance derivation/synthesis; preregistered held-out (n,s,epsilon) tests; explicit counterexample search; workload-level resource and accepted-task cost accounting. No provider execution or evidence promotion is authorized by this gap.
+
+
+### RG-STATEPREP-NATURAL-001 — natural-proof barrier scope for state-preparation lower bounds
+**Status:** OPEN / METHODOLOGY_ONLY / CONDITIONAL_THEOREM_SCOPE  
+**Date:** 2026-10-27  
+**Primary owner:** Lane A; Lane C memory/state; Lane F evidence; Lane H publication  
+**Source:** Li and Parham, arXiv:2610.06826v1, submitted 2026-10-05.  
+**Detailed record:** docs/RESEARCH_GAP_STATEPREP_NATURAL_PROOF_BARRIER_2026-10-27.md  
+**Literature watch:** docs/literature_watch/2026-10-27-stateprep-natural-proof-barrier.md
+
+The paper gives a conditional natural-proofs barrier for state-preparation lower-bound proof strategies. Its naturalness criteria are largeness over Haar-random states and constructivity from a complete finite-precision amplitude list. The theorem depends on a classically subexponentially secure pseudorandom-function assumption with polynomial-size, depth-d threshold-circuit implementations and applies to a fixed Magic-Hierarchy level in the stated superpolynomial lower-bound regime.
+
+This gap asks whether the actual proof strategies in the existing sparse-state-preparation/QROM theorem comparison satisfy both criteria and the remaining scope conditions. The answer remains unresolved until the full theorem/proof text is reviewed. The barrier restricts a class of proof methods; it does not automatically invalidate a lower-bound claim, prove a replacement bound, or establish physical truth. The new contract records declared scope and digest integrity only.
+
+**Unlock:** pin source versions; classify naturalness criteria separately; record exact cryptographic assumption, circuit hierarchy and approximation regime; reject inconsistent/tampered metadata; independently review theorem assumptions and small-instance/counterexample checks. Keep all unmeasured resources null and all physical/economic claims unpromoted.
