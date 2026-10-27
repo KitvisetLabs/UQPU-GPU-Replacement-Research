@@ -27,6 +27,24 @@ class ColdStartHandoffTests(unittest.TestCase):
             validate_commit_message("Research-Sync: pending-main", "main"),
         )
 
+    def test_commit_trailer_uses_canonical_main_ancestry(self):
+        # A stale sync ref can point to a commit already canonical on main.
+        self.assertEqual(
+            validate_commit_message(
+                "x\\n\\nResearch-Sync: main", "sync/stale-ref", commit_is_on_main=True
+            ),
+            [],
+        )
+        # An unmerged branch must still declare pending-main.
+        self.assertEqual(
+            validate_commit_message("x\\n\\nResearch-Sync: pending-main", "sync/new-work"),
+            [],
+        )
+        self.assertIn(
+            "missing_commit_trailer:Research-Sync: pending-main",
+            validate_commit_message("x\\n\\nResearch-Sync: main", "sync/new-work"),
+        )
+
     def test_missing_lane_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

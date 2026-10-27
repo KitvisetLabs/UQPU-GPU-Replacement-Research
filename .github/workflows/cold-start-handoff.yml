@@ -14,7 +14,17 @@ jobs:
       - name: Checkout exact commit
         uses: actions/checkout@v5
         with:
-          fetch-depth: 2
+          fetch-depth: 0
+
+      - name: Determine whether commit is already on canonical main
+        id: canonical-main
+        run: |
+          git fetch --no-tags origin +refs/heads/main:refs/remotes/origin/main
+          if git merge-base --is-ancestor HEAD refs/remotes/origin/main; then
+            echo "commit_is_on_main=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "commit_is_on_main=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -31,10 +41,12 @@ jobs:
       - name: Audit cold-start handoff and commit-to-main trailer
         env:
           BRANCH_NAME: ${{ github.ref_name }}
+          COMMIT_IS_ON_MAIN: ${{ steps.canonical-main.outputs.commit_is_on_main }}
         run: >-
           python -m uqpu.cold_start_handoff
           --repository-root .
           --branch "$BRANCH_NAME"
+          --commit-is-on-main "$COMMIT_IS_ON_MAIN"
           --commit-message-file /tmp/uqpu-commit-message.txt
           --output cold-start-handoff-audit.json
 

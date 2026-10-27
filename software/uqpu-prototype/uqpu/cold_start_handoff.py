@@ -40,6 +40,9 @@ VALID_EVIDENCE = {
     "SAME_SDK_BOUNDED_STATEVECTOR_PROBE_CHECK",
     "SIMULATION_INDEPENDENT_SDK_BOUNDED_ROUTED_PROBE_CHECK",
     "LITERATURE_ONLY",
+    "SOFTWARE_CONTRACT",
+    "SOFTWARE_UNIT_TESTS",
+    "CI_VALIDATION",
 }
 
 
@@ -47,9 +50,17 @@ def _load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def validate_commit_message(message: str, branch: str) -> list[str]:
-    """Validate the repository's explicit source-to-main synchronization trailer."""
-    expected = "Research-Sync: main" if branch == "main" else "Research-Sync: pending-main"
+def validate_commit_message(
+    message: str, branch: str, commit_is_on_main: bool = False
+) -> list[str]:
+    """Validate the trailer against canonical ancestry, not a possibly stale ref name.
+
+    A non-main ref can temporarily point at a commit already reachable from main.
+    Such a commit must retain the main trailer; an unmerged branch commit must use
+    the pending-main trailer until its detail record is synchronized.
+    """
+    canonical = branch == "main" or commit_is_on_main
+    expected = "Research-Sync: main" if canonical else "Research-Sync: pending-main"
     return [] if expected in message.splitlines() else [f"missing_commit_trailer:{expected}"]
 
 
@@ -142,6 +153,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repository-root", type=Path, required=True)
     parser.add_argument("--branch")
+    parser.add_argument(
+        "--commit-is-on-main", choices=("true", "false"), default="false",
+        help="Whether HEAD is an ancestor of the fetched canonical main ref.",
+    )
     parser.add_argument("--commit-message-file", type=Path)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
@@ -149,7 +164,8 @@ def main() -> int:
     report = audit_repository(args.repository_root.resolve())
     if args.branch and args.commit_message_file:
         report["errors"].extend(validate_commit_message(
-            args.commit_message_file.read_text(encoding="utf-8"), args.branch
+            args.commit_message_file.read_text(encoding="utf-8"), args.branch,
+            commit_is_on_main=args.commit_is_on_main == "true",
         ))
         report["errors"] = sorted(set(report["errors"]))
         report["status"] = "READY_FOR_COLD_START" if not report["errors"] else "HANDOFF_INCOMPLETE"
