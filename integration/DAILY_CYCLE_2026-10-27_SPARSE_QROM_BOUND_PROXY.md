@@ -13,7 +13,7 @@ Started from the newest observed main commit, not a remembered batch number. Rea
 
 All eight high-visibility root directives (00, 00A and 01–06), the Kanusanan Pongpanna Model, public Thai/English/Chinese/Japanese/Korean/German plan references, and recorded strategic AI-agent/funding references remain preserved. INV-025/026/027 and INV-029–035 remain binding. Existing Lane I artifacts were not deleted; the required operational architecture A–H remains explicitly reviewed. The top-level evidence/ directory is absent on main; evidence remains represented by benchmark artifacts, dated gaps, integration records and RESEARCH_GAPS.md.
 
-The canonical current tree already contains the 2026-10-27 QAOA parity comparison contract, the sparse-QROM gap, the Batch-070 proof-evidence contract and dated literature watches. The aggregate RESEARCH_GAPS.md and WORKLOG.md are append-heavy; this cycle does not replace either file from a partial snapshot.
+The canonical current tree already contains the 2026-10-27 QAOA parity comparison contract, the sparse-QROM gap, the Batch-070 proof-evidence contract and dated literature watches. The aggregate RESEARCH_GAPS.md and WORKLOG.md are append-heavy; this cycle does not replace either file from a partial snapshot. **Sync debt:** the new FND-003 literature-watch summary has not yet been appended to RESEARCH_GAPS.md or WORKLOG.md; this dated watch and cycle report carry the delta until a full prefix-preserving reconciliation can be made.
 
 ## Fresh literature surveillance — 2026-10-27
 
