@@ -4,7 +4,7 @@
 **Source branch:** research/2026-10-28-physics-formalization-and-qaoa-contract-v2  
 **Primary owner:** Lane F — integration/evidence; Lane A owns the workload integration test; Lane H owns literature watches  
 **Evidence class:** software-contract change + tests pending exact-head CI + external literature only  
-**Source-to-main sync:** pending clean v2 PR creation; PR #148 is superseded after a cold-start metadata failure and incorrect unmerged-branch trailer. No merge is claimed.
+**Source-to-main sync:** [pending mapping record](SOURCE_TO_MAIN_SYNC_PENDING_2026-10-28_BATCH097.md); clean PR [#149](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/149) is open, initial head f04dbe1c1b354569cd465f7ad895fb5c217151fa. PR #148 is superseded and must not be merged. The final v2 head requires its own exact-head CI.
 
 ## Canonical state and CI
 
