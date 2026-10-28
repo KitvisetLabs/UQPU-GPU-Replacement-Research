@@ -6,6 +6,10 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Pending-main research handoff — 2026-10-28 — FND003 exceptional-point QSL
+
+Source work is under review in [PR #146](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/146) from `research/2026-10-28-nonhermitian-ep-qsl` at `fbd797fc5e25922da0b55e84aa947599a4d6eadb`. This summary is **pending-main only**; the literature watch, focused gap, Batch 095 and integration artifacts are not yet canonical until the source PR is reviewed and merged. At record creation, exact-head workflow [40630888102](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40630888102) was in progress. See [the full pending-main synchronization record](integration/PENDING_MAIN_SYNC_2026-10-28_NONHERMITIAN_EP_QSL.md).
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — pinned Qiskit signed-Max-Cut reconstruction and proof-failure feedback
 
 [Batch 094](docs/BATCH_094_PINNED_QISKIT_SIGNED_MAXCUT_AND_PROOF_FAILURE_CLASSIFICATION.md) adds a pinned-Qiskit 2.5.2 signed-Max-Cut operator check. The first exact-head CI run caught a test-ordering mismatch; the second run confirmed that all four new Qiskit unit tests pass after assignments were aligned to the SDK's little-endian basis-index convention. That run then exposed a syntax error in the JSON certificate runner's newline literal. The runner is being corrected and the exact-head workflow must complete before the SDK gate is marked fully green.
