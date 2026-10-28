@@ -75,3 +75,14 @@ Next highest-value gate:
 5. Continue the higher-priority signed-Max-Cut provider-neutral lowering/reference/target-aware simulator gate; do not let this literature protocol displace Lane A's primary computing path.
 
 **CI/synchronization:** the latest observed starting head is `28de5409eeac3e0244ee9231652eecec4c059da`. Starting-head combined status had no entries and the available workflow-run query had no applicable runs; this is not a green result. Every created commit carries the repository-required `Research-Sync: main` trailer. The final README/worklog/gap synchronization must be checked on the resulting head.
+
+
+## 7. Additional Lane D/G/E literature delta — VortexOp physics-guided metamaterial design
+
+Fresh surveillance also identified the peer-reviewed *Journal of Computational Design and Engineering* article by Moeinnia, Islam and Kim, “VortexOp: Autonomous Physics-Guided Discovery of Functionally Graded Metamaterials,” published 2026-09-21 and corrected/typeset 2026-10-21: https://doi.org/10.1093/jcde/qwag085. Repository search had no prior VortexOp entry.
+
+The paper combines TPMS geometry generation, an in-loop finite-element solver, Gaussian-process surrogates and constrained Bayesian optimization. Its reported failure-index reductions are specific to the tested meshes and designs. The authors note one specimen per architecture/volume-fraction configuration, no systematic mesh-refinement stability result, a linear-static/small-strain solver that does not fully model nonlinear collapse, and code/data not publicly accessible at submission. The dated [literature watch](literature_watch/2026-10-28-vortexop-physics-guided-metamaterial-design.md) records these limitations and a falsifiable follow-up.
+
+**Lane D/G co-design decision:** preserve solver-in-the-loop active design as a candidate methodology for mechanically constrained chip/package/fixture structures only after exact source/data access, mesh convergence, independent-solver comparison, replicated specimens, held-out geometry/load/scale and process-aware printability/yield accounting. Lane E may consider biomass-derived carbon only as a future characterized material candidate; VortexOp did not test Pangola or biomass carbon. No material substitution or manufacturing advantage is claimed.
+
+This is an additional external literature delta in the same cycle, not a second project benchmark. The cycle remains literature/protocol work only; no project code suite or physical experiment was run.
