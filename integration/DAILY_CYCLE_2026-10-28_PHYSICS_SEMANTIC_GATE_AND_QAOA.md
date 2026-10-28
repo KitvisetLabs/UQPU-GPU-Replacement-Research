@@ -4,7 +4,7 @@
 **Source branch:** research/2026-10-28-physics-formalization-and-qaoa-contract  
 **Primary owner:** Lane F — integration/evidence; Lane A owns the workload integration test; Lane H owns literature watches  
 **Evidence class:** software-contract change + tests pending exact-head CI + external literature only  
-**Main mapping:** pending PR creation/review; not merged
+**Source-to-main sync:** [pending mapping record](SOURCE_TO_MAIN_SYNC_PENDING_2026-10-28_BATCH097.md); PR [#148](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/148) is open and not merged. Initial PR head: 54a375a021cbab2606a4563db62c623ab336ae7e.
 
 ## Canonical state and CI
 
