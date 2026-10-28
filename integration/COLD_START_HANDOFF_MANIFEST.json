@@ -1,9 +1,9 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T01:17:00Z",
+  "prepared_utc": "2026-10-28T01:18:30Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "3c2ff3283bc8c70ed411fcc76f83e280bb54101a",
+  "canonical_start_sha": "0970a70b0045ca79291550ef619cbfa850716996",
   "priority_lane": "A",
   "current_frontier": "Batch 091 plus operational-document reconciliation (2026-10-28): AI-assisted integral literature watch and reproduction gap added; Lane A signed-Max-Cut pinned-SDK gate specified; permanent A-H manifest/validator/tests and active operating docs reconciled; historical Lane I preserved as legacy workstream. Exact-head CI remains unobserved.",
   "required_reading": [
@@ -345,18 +345,18 @@
     "commit": "52f68f50cb60cba3152ec3323575c7b8baab6fc8"
   },
   "current_head_validation": {
-    "commit": "3c2ff3283bc8c70ed411fcc76f83e280bb54101a",
+    "commit": "c36cd6a4ef3bc8af199b22278a793deff699b9c8",
     "core_conclusion": "NOT_OBSERVED",
     "cold_start_conclusion": "NOT_OBSERVED",
-    "observed_at_utc": "2026-10-28T01:17:00Z",
-    "note": "Combined status returned no status contexts and commit-associated workflow lookup returned no runs for this head. Parent CI is not inherited. The handoff manifest refresh and later README sync are new commits and also require exact-head checks."
+    "observed_at_utc": "2026-10-28T01:18:30Z",
+    "note": "The exact pre-refresh head had no combined-status contexts and no commit-associated workflow runs exposed by the connector. The manifest refresh itself is a new commit and also requires exact-head core/invariant and cold-start checks."
   },
   "latest_cycle_ci_observation": {
     "starting_commit": "0970a70b0045ca79291550ef619cbfa850716996",
     "core_status": "NOT_OBSERVED",
     "cold_start_status": "NOT_OBSERVED",
-    "observed_at_utc": "2026-10-28T01:17:00Z",
-    "note": "The static structural audit passes A-H/28-pair manifest consistency and legacy-I preservation, but the repository Python test suite was not executed. No exact-head Actions status contexts or commit-associated runs were exposed."
+    "observed_at_utc": "2026-10-28T01:18:30Z",
+    "note": "Structural manifest/validator consistency checks pass A-H/28 pairs and preserve Lane I as a legacy workstream; the repository Python test suite was not executed. No exact-head Actions status contexts or commit-associated runs were exposed."
   },
   "latest_batch": "Batch 091 — AI-assisted mathematical discovery reproduction gate and A–H handoff repair; see docs/BATCH_091_AI_DISCOVERY_REPRODUCTION_AND_AH_HANDOFF_REPAIR.md",
   "latest_literature_watches": [
