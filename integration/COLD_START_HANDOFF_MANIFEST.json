@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T13:08:30Z",
+  "prepared_utc": "2026-10-28T14:00:04Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "f3ca3c12b20b4fa28adfb276ae5804427f9ca2a8",
+  "canonical_start_sha": "42e6614db390db7b3e248bc6b383d67e9d00dd3b",
   "priority_lane": "A",
-  "current_frontier": "Batch 101 (2026-10-28): predictive-interval scoring helper and deterministic known-function/null fixtures added under RG-EQN-010. The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 failed core/invariant run #1946 and cold-start audit #1205 because required_reading referenced docs/RESEARCH_GAPS.md instead of root RESEARCH_GAPS.md. All new interval-metric tests passed in Python 3.12; the overall suite failed on the handoff-manifest assertion. This follow-up corrects the path; exact-head Actions must pass on the repair commit. Lane A Priority #1 signed-Max-Cut pinned-SDK reconstruction remains the next execution gate. No paid QPU execution authorized.",
+  "current_frontier": "Batch 102 (2026-10-28): main 42e6614db390db7b3e248bc6b383d67e9d00dd3b passed pinned Qiskit 2.5.2 signed-Max-Cut semantic checks (6 fixtures, 74 assignments, max error 0.0 at 1e-12, complete argmax agreement); root RESEARCH_GAPS.md now reflects this subgate and points to the persisted certificate. The initial PR head failed cold-start due to an incorrect Research-Sync trailer; corrected head 92bee3adfdc94a97e13ae332722d8d14f87d5c2b passed cold-start audit 40703184211. The newest branch commit will require its own exact-head core/invariant and handoff audits. Target-aware simulation remains open; no paid QPU execution authorized.",
   "required_reading": [
     "docs/BATCH_099_RESIDUAL_CONJECTURE_CONTINUOUS_EQUATION_DISCOVERY.md",
     "docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md",
@@ -156,7 +156,10 @@
     "docs/BATCH_101_PREDICTIVE_INTERVAL_METRICS.md",
     "integration/DAILY_CYCLE_2026-10-28_PREDICTIVE_INTERVAL_METRICS.md",
     "software/uqpu-prototype/uqpu/predictive_interval_metrics.py",
-    "software/uqpu-prototype/tests/test_predictive_interval_metrics.py"
+    "software/uqpu-prototype/tests/test_predictive_interval_metrics.py",
+    "docs/BATCH_102_SIGNED_MAXCUT_CI_CERTIFICATE_AND_TARGET_SIMULATION_GATE.md",
+    "integration/DAILY_CYCLE_2026-10-28_SIGNED_MAXCUT_SDK_CI_CERTIFICATE.md",
+    "benchmarks/results/2026-10-28-signed-maxcut-qiskit-crosscheck-42e6614.json"
   ],
   "lanes": {
     "A": {

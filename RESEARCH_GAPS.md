@@ -916,7 +916,8 @@ The batch contract prices final accepted liquid energy rather than raw bio-oil m
 
 ## 2026-10-28 — RG-A-SIGNED-MAXCUT-NUMERIC-RANGE-001: finite arithmetic and fail-closed score contract
 
-**Status:** CODE FIX COMMITTED; exact-head CI verification follows the commit.  
+**Status:** CODE FIX AND PINNED-SDK SEMANTIC SUBGATE VERIFIED ON main `42e6614db390db7b3e248bc6b383d67e9d00dd3b`; TARGET-AWARE SIMULATION OPEN.
+**Certificate:** [Batch 102](docs/BATCH_102_SIGNED_MAXCUT_CI_CERTIFICATE_AND_TARGET_SIMULATION_GATE.md) · [machine-readable result](benchmarks/results/2026-10-28-signed-maxcut-qiskit-crosscheck-42e6614.json).  
 **Primary owner:** Lane A — objective/compiler/runtime semantics.  
 **Cross-lane owners:** B (SDK/target identity), C (output/state accounting), D/G (later Hamiltonian/device mapping), F (reference/evidence/economics), H (handoff/publication).  
 **Related:** Batch 088–090; INV-025–027 and INV-029–035; FND-006.
@@ -925,9 +926,9 @@ A static counterexample audit found that individually finite signed edge weights
 
 **Resolution in Batch 090:** the compiler checks derived coefficients and accumulated coefficients; all three objective-score paths use a finite-sum guard; conversion overflow is normalized to a clear `ValueError`. Added regression tests cover derived-coefficient overflow, linear-coefficient overflow, huge-integer conversion and direct/QUBO/Ising score overflow.
 
-**Acceptance:** exact-head core workflow and cold-start audit must pass. The focused tests are necessary but do not validate QAOA, SDK sign conventions, provider execution or quantum advantage. The next still-open Lane A gate is independent pinned-SDK Hamiltonian reconstruction against exhaustive references, including the full argmax set.
+**Acceptance:** exact-head core/invariant workflow and cold-start audit passed on main `42e6614db390db7b3e248bc6b383d67e9d00dd3b`. The pinned Qiskit 2.5.2 subgate checked 6 fixtures and 74 assignments, with maximum absolute score error 0.0 at tolerance `1e-12`; complete argmax sets and minimize-negative-score convention agreed. The next open Lane A gate is provider-neutral lowering plus target-aware simulation on a frozen workload/target snapshot.
 
-**Evidence boundary:** software numeric-range robustness only; no new physical law, QPU, material, fuel, electricity, financing/WACC or Data-Center-to-One-Phone result.
+**Evidence boundary:** finite software/SDK semantic equivalence and numeric-range robustness only; no QAOA quality, target-aware performance, real QPU, new physical law, material, fuel, electricity, financing/WACC or Data-Center-to-One-Phone result.
 
 
 ## 2026-10-28 — RG-EQN-AI-COSMIC-STRING-INTEGRAL-001

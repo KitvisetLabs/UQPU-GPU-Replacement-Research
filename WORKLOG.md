@@ -1917,3 +1917,33 @@ A–H were reviewed. Lane A advanced the EQN-008 scoring utility, but Priority-1
 ## 2026-10-28 — Batch 101 cold-start manifest repair
 
 The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered core/invariant run #1946 and cold-start audit #1205, both of which failed on the same handoff-manifest path typo: required_reading listed docs/RESEARCH_GAPS.md while the canonical file is root RESEARCH_GAPS.md. The new predictive-interval tests all passed in Python 3.12, but the overall suite failed on the existing cold-start audit assertion. Corrected the path in the handoff manifest and synchronized README, Batch 101, integration report, WORKLOG and RESEARCH_GAPS in this follow-up commit. The failure remains recorded; exact-head Actions on the repair commit must pass before the cycle is marked green.
+
+## 2026-10-28 — Batch 102: pinned-Qiskit signed-Max-Cut certificate and target-simulation handoff
+
+- **Starting main:** `42e6614db390db7b3e248bc6b383d67e9d00dd3b`; **proposed branch:** `research/2026-10-28-batch102-signed-maxcut-ci-certificate`; **main synchronization:** PENDING until the PR is reviewed/merged.
+- **Primary owner:** Lane A; cross-lane review B/C/D/E/F/G/H and FND/EQN.
+- **Objective:** preserve exact-head SDK evidence and make the next provider-neutral/target-aware simulation gate discoverable without promoting a software contract into physical or economic advantage.
+- **Observed parent-head results:** Actions run [40693966482](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40693966482) and cold-start audit [40693966594](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40693966594) passed on `42e6614db390db7b3e248bc6b383d67e9d00dd3b`. Pinned Qiskit 2.5.2 / Python 3.12.15 checked 6 fixtures and 74 assignments; maximum absolute score error 0.0 at (10^{-12}); all four SDK-specific tests passed and complete argmax sets agreed.
+- **Files proposed:** Batch 102, integration report, machine-readable CI certificate, refreshed Lane A gate, README front-page summary, integration hub index, cold-start manifest, and this WORKLOG append.
+- **Evidence class:** PINNED_SDK_ALGEBRAIC_CROSSCHECK + GITHUB_ACTIONS_EXACT_HEAD_CI. No real QPU, paid job, target calibration, wall-plug energy or economics measured.
+- **Literature:** fresh searches found current material sources already indexed in repository watches; no duplicate article added. November-dated SymBOL metadata was excluded as future-dated for this run.
+- **Cross-lane integration:** A+B+C+F for target-matched accepted-task records; A+D+G+F for compiler/device/factory constraints; E+F+H for BIO-001/FUS-001/FIN-001 stage gates; INV-034/035 remain upstream for A–H.
+- **Open gates:** provider-neutral lowering and target-aware simulation; SymbolFit byte/license verification and synthetic multi-seed calibration; BIO-001 accepted-liquid full-cost evidence; FUS-001 net delivered electricity; FIN-001 principal/interest/time-to-evidence. INV-029–035 and INV-025/026/027 preserved.
+- **Sync and CI:** this branch's source SHA and exact-head Actions are pending at authoring; do not treat the parent-head pass as the PR-head result. Existing open PRs #149/#148, #147/#146, #141/#140, #135/#134 and #133/#132 remain separate and unmerged. Inaccessible historical branches/forks are not fully reconciled.
+- **Next action:** run exact-head Actions for this PR; if checks pass, merge through the PR path and reconcile the resulting main SHA in the next sync checkpoint. Then execute provider-neutral lowering and target-aware simulation without paid submission.
+ 
+## 2026-10-28 — Batch 102 PR-head cold-start trailer failure and correction
+
+The initial Batch 102 PR commit `78599f2b0d30ee45311fdb34e23e38563933ff49` triggered [cold-start audit run 40702910397](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40702910397), which failed with `missing_commit_trailer:Research-Sync: pending-main`. The commit incorrectly declared `Research-Sync: main` while it remained on a feature branch. This is a process/provenance failure, not a scientific or SDK failure. The follow-up commit corrects the head trailer to `Research-Sync: pending-main`; exact-head core and cold-start Actions must pass before PR #150 can merge. The failed run is retained as negative evidence.
+
+- Base main at authoring: `42e6614db390db7b3e248bc6b383d67e9d00dd3b`
+- PR: [#150](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/150)
+- No source branch is considered synchronized to main until the PR is actually merged.
+
+## 2026-10-28 — Batch 102 aggregate gap-register sync
+
+Updated the existing RG-A signed-Max-Cut numeric-range status in root `RESEARCH_GAPS.md` to record the pinned Qiskit 2.5.2 semantic subgate result from exact main `42e6614db390db7b3e248bc6b383d67e9d00dd3b` and link the persisted certificate through Batch 102. The full 96 KB gap file was fetched and length/tail checked before a narrow replacement; no earlier history was truncated. Target-aware simulation remains open. This branch commit uses `Research-Sync: pending-main`; its exact-head CI is required before merge.
+
+## 2026-10-28 — RG-A gap acceptance text reconciled after SDK CI
+
+The initial root `RESEARCH_GAPS.md` status-line update left the adjacent acceptance paragraph describing pinned-SDK reconstruction as still pending. This follow-up corrects that stale paragraph and adds direct links to Batch 102 and the persisted certificate. Exact-head main CI on `42e6614db390db7b3e248bc6b383d67e9d00dd3b` passed; only the finite SDK/operator subgate is closed. Provider-neutral lowering and target-aware simulation remain open. This branch commit remains `Research-Sync: pending-main` until PR #150 is merged.

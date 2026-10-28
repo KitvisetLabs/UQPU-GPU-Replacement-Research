@@ -1,0 +1,863 @@
+{
+  "assignment_count": 74,
+  "created_utc": "2026-10-28T13:11:28.955118+00:00",
+  "environment": {
+    "pinned_qiskit_expected": "2.5.2",
+    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+    "python": "3.12.15",
+    "qiskit": "2.5.2"
+  },
+  "evidence_level": "PINNED_SDK_ALGEBRAIC_CROSSCHECK",
+  "fixture_count": 6,
+  "fixtures": [
+    {
+      "assignments": [
+        {
+          "basis_index_lsb_qubit0": 0,
+          "bits_q0_to_qn": "0",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 1,
+          "bits_q0_to_qn": "1",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        }
+      ],
+      "complete_argmax": [
+        "0",
+        "1"
+      ],
+      "edge_count": 0,
+      "enumerated_assignments": 2,
+      "max_abs_score_error": 0,
+      "maximum_score": 0,
+      "minimize_negative_score_argmin": [
+        "0",
+        "1"
+      ],
+      "name": "empty_one_vertex",
+      "qiskit_argmax": [
+        "0",
+        "1"
+      ],
+      "vertex_count": 1
+    },
+    {
+      "assignments": [
+        {
+          "basis_index_lsb_qubit0": 0,
+          "bits_q0_to_qn": "000",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 1,
+          "bits_q0_to_qn": "100",
+          "direct_score": 2.5,
+          "ising_score": 2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2.5,
+          "qubo_score": 2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 2,
+          "bits_q0_to_qn": "010",
+          "direct_score": -1,
+          "ising_score": -1,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -1,
+          "qubo_score": -1
+        },
+        {
+          "basis_index_lsb_qubit0": 3,
+          "bits_q0_to_qn": "110",
+          "direct_score": -2.5,
+          "ising_score": -2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -2.5,
+          "qubo_score": -2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 4,
+          "bits_q0_to_qn": "001",
+          "direct_score": -2.5,
+          "ising_score": -2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -2.5,
+          "qubo_score": -2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 5,
+          "bits_q0_to_qn": "101",
+          "direct_score": -1,
+          "ising_score": -1,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -1,
+          "qubo_score": -1
+        },
+        {
+          "basis_index_lsb_qubit0": 6,
+          "bits_q0_to_qn": "011",
+          "direct_score": 2.5,
+          "ising_score": 2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2.5,
+          "qubo_score": 2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 7,
+          "bits_q0_to_qn": "111",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        }
+      ],
+      "complete_argmax": [
+        "011",
+        "100"
+      ],
+      "edge_count": 3,
+      "enumerated_assignments": 8,
+      "max_abs_score_error": 0,
+      "maximum_score": 2.5,
+      "minimize_negative_score_argmin": [
+        "011",
+        "100"
+      ],
+      "name": "signed_triangle",
+      "qiskit_argmax": [
+        "011",
+        "100"
+      ],
+      "vertex_count": 3
+    },
+    {
+      "assignments": [
+        {
+          "basis_index_lsb_qubit0": 0,
+          "bits_q0_to_qn": "000",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 1,
+          "bits_q0_to_qn": "100",
+          "direct_score": -2,
+          "ising_score": -2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -2,
+          "qubo_score": -2
+        },
+        {
+          "basis_index_lsb_qubit0": 2,
+          "bits_q0_to_qn": "010",
+          "direct_score": -3,
+          "ising_score": -3,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -3,
+          "qubo_score": -3
+        },
+        {
+          "basis_index_lsb_qubit0": 3,
+          "bits_q0_to_qn": "110",
+          "direct_score": -1,
+          "ising_score": -1,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -1,
+          "qubo_score": -1
+        },
+        {
+          "basis_index_lsb_qubit0": 4,
+          "bits_q0_to_qn": "001",
+          "direct_score": -1,
+          "ising_score": -1,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -1,
+          "qubo_score": -1
+        },
+        {
+          "basis_index_lsb_qubit0": 5,
+          "bits_q0_to_qn": "101",
+          "direct_score": -3,
+          "ising_score": -3,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -3,
+          "qubo_score": -3
+        },
+        {
+          "basis_index_lsb_qubit0": 6,
+          "bits_q0_to_qn": "011",
+          "direct_score": -2,
+          "ising_score": -2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -2,
+          "qubo_score": -2
+        },
+        {
+          "basis_index_lsb_qubit0": 7,
+          "bits_q0_to_qn": "111",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        }
+      ],
+      "complete_argmax": [
+        "000",
+        "111"
+      ],
+      "edge_count": 2,
+      "enumerated_assignments": 8,
+      "max_abs_score_error": 0,
+      "maximum_score": 0,
+      "minimize_negative_score_argmin": [
+        "000",
+        "111"
+      ],
+      "name": "negative_only",
+      "qiskit_argmax": [
+        "000",
+        "111"
+      ],
+      "vertex_count": 3
+    },
+    {
+      "assignments": [
+        {
+          "basis_index_lsb_qubit0": 0,
+          "bits_q0_to_qn": "0000",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 1,
+          "bits_q0_to_qn": "1000",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 2,
+          "bits_q0_to_qn": "0100",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 3,
+          "bits_q0_to_qn": "1100",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 4,
+          "bits_q0_to_qn": "0010",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 5,
+          "bits_q0_to_qn": "1010",
+          "direct_score": 4,
+          "ising_score": 4,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 4,
+          "qubo_score": 4
+        },
+        {
+          "basis_index_lsb_qubit0": 6,
+          "bits_q0_to_qn": "0110",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 7,
+          "bits_q0_to_qn": "1110",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 8,
+          "bits_q0_to_qn": "0001",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 9,
+          "bits_q0_to_qn": "1001",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 10,
+          "bits_q0_to_qn": "0101",
+          "direct_score": 4,
+          "ising_score": 4,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 4,
+          "qubo_score": 4
+        },
+        {
+          "basis_index_lsb_qubit0": 11,
+          "bits_q0_to_qn": "1101",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 12,
+          "bits_q0_to_qn": "0011",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 13,
+          "bits_q0_to_qn": "1011",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 14,
+          "bits_q0_to_qn": "0111",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 15,
+          "bits_q0_to_qn": "1111",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        }
+      ],
+      "complete_argmax": [
+        "0101",
+        "1010"
+      ],
+      "edge_count": 4,
+      "enumerated_assignments": 16,
+      "max_abs_score_error": 0,
+      "maximum_score": 4,
+      "minimize_negative_score_argmin": [
+        "0101",
+        "1010"
+      ],
+      "name": "tied_positive_cycle",
+      "qiskit_argmax": [
+        "0101",
+        "1010"
+      ],
+      "vertex_count": 4
+    },
+    {
+      "assignments": [
+        {
+          "basis_index_lsb_qubit0": 0,
+          "bits_q0_to_qn": "00000",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 1,
+          "bits_q0_to_qn": "10000",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 2,
+          "bits_q0_to_qn": "01000",
+          "direct_score": 0.5,
+          "ising_score": 0.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0.5,
+          "qubo_score": 0.5
+        },
+        {
+          "basis_index_lsb_qubit0": 3,
+          "bits_q0_to_qn": "11000",
+          "direct_score": -0.75,
+          "ising_score": -0.75,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -0.75,
+          "qubo_score": -0.75
+        },
+        {
+          "basis_index_lsb_qubit0": 4,
+          "bits_q0_to_qn": "00100",
+          "direct_score": -0.75,
+          "ising_score": -0.75,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -0.75,
+          "qubo_score": -0.75
+        },
+        {
+          "basis_index_lsb_qubit0": 5,
+          "bits_q0_to_qn": "10100",
+          "direct_score": 0.5,
+          "ising_score": 0.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0.5,
+          "qubo_score": 0.5
+        },
+        {
+          "basis_index_lsb_qubit0": 6,
+          "bits_q0_to_qn": "01100",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 7,
+          "bits_q0_to_qn": "11100",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 8,
+          "bits_q0_to_qn": "00010",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 9,
+          "bits_q0_to_qn": "10010",
+          "direct_score": 3.25,
+          "ising_score": 3.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 3.25,
+          "qubo_score": 3.25
+        },
+        {
+          "basis_index_lsb_qubit0": 10,
+          "bits_q0_to_qn": "01010",
+          "direct_score": 2.5,
+          "ising_score": 2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2.5,
+          "qubo_score": 2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 11,
+          "bits_q0_to_qn": "11010",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 12,
+          "bits_q0_to_qn": "00110",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 13,
+          "bits_q0_to_qn": "10110",
+          "direct_score": 2.5,
+          "ising_score": 2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2.5,
+          "qubo_score": 2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 14,
+          "bits_q0_to_qn": "01110",
+          "direct_score": 3.25,
+          "ising_score": 3.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 3.25,
+          "qubo_score": 3.25
+        },
+        {
+          "basis_index_lsb_qubit0": 15,
+          "bits_q0_to_qn": "11110",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 16,
+          "bits_q0_to_qn": "00001",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 17,
+          "bits_q0_to_qn": "10001",
+          "direct_score": 3.25,
+          "ising_score": 3.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 3.25,
+          "qubo_score": 3.25
+        },
+        {
+          "basis_index_lsb_qubit0": 18,
+          "bits_q0_to_qn": "01001",
+          "direct_score": 2.5,
+          "ising_score": 2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2.5,
+          "qubo_score": 2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 19,
+          "bits_q0_to_qn": "11001",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 20,
+          "bits_q0_to_qn": "00101",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 21,
+          "bits_q0_to_qn": "10101",
+          "direct_score": 2.5,
+          "ising_score": 2.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2.5,
+          "qubo_score": 2.5
+        },
+        {
+          "basis_index_lsb_qubit0": 22,
+          "bits_q0_to_qn": "01101",
+          "direct_score": 3.25,
+          "ising_score": 3.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 3.25,
+          "qubo_score": 3.25
+        },
+        {
+          "basis_index_lsb_qubit0": 23,
+          "bits_q0_to_qn": "11101",
+          "direct_score": 2,
+          "ising_score": 2,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 2,
+          "qubo_score": 2
+        },
+        {
+          "basis_index_lsb_qubit0": 24,
+          "bits_q0_to_qn": "00011",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 25,
+          "bits_q0_to_qn": "10011",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 26,
+          "bits_q0_to_qn": "01011",
+          "direct_score": 0.5,
+          "ising_score": 0.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0.5,
+          "qubo_score": 0.5
+        },
+        {
+          "basis_index_lsb_qubit0": 27,
+          "bits_q0_to_qn": "11011",
+          "direct_score": -0.75,
+          "ising_score": -0.75,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -0.75,
+          "qubo_score": -0.75
+        },
+        {
+          "basis_index_lsb_qubit0": 28,
+          "bits_q0_to_qn": "00111",
+          "direct_score": -0.75,
+          "ising_score": -0.75,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": -0.75,
+          "qubo_score": -0.75
+        },
+        {
+          "basis_index_lsb_qubit0": 29,
+          "bits_q0_to_qn": "10111",
+          "direct_score": 0.5,
+          "ising_score": 0.5,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0.5,
+          "qubo_score": 0.5
+        },
+        {
+          "basis_index_lsb_qubit0": 30,
+          "bits_q0_to_qn": "01111",
+          "direct_score": 1.25,
+          "ising_score": 1.25,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 1.25,
+          "qubo_score": 1.25
+        },
+        {
+          "basis_index_lsb_qubit0": 31,
+          "bits_q0_to_qn": "11111",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        }
+      ],
+      "complete_argmax": [
+        "01101",
+        "01110",
+        "10001",
+        "10010"
+      ],
+      "edge_count": 4,
+      "enumerated_assignments": 32,
+      "max_abs_score_error": 0,
+      "maximum_score": 3.25,
+      "minimize_negative_score_argmin": [
+        "01101",
+        "01110",
+        "10001",
+        "10010"
+      ],
+      "name": "disconnected_mixed",
+      "qiskit_argmax": [
+        "01101",
+        "01110",
+        "10001",
+        "10010"
+      ],
+      "vertex_count": 5
+    },
+    {
+      "assignments": [
+        {
+          "basis_index_lsb_qubit0": 0,
+          "bits_q0_to_qn": "000",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 1,
+          "bits_q0_to_qn": "100",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 2,
+          "bits_q0_to_qn": "010",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 3,
+          "bits_q0_to_qn": "110",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 4,
+          "bits_q0_to_qn": "001",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 5,
+          "bits_q0_to_qn": "101",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 6,
+          "bits_q0_to_qn": "011",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        },
+        {
+          "basis_index_lsb_qubit0": 7,
+          "bits_q0_to_qn": "111",
+          "direct_score": 0,
+          "ising_score": 0,
+          "max_abs_error": 0,
+          "qiskit_operator_diagonal": 0,
+          "qubo_score": 0
+        }
+      ],
+      "complete_argmax": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110",
+        "111"
+      ],
+      "edge_count": 3,
+      "enumerated_assignments": 8,
+      "max_abs_score_error": 0,
+      "maximum_score": 0,
+      "minimize_negative_score_argmin": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110",
+        "111"
+      ],
+      "name": "all_zero_triangle",
+      "qiskit_argmax": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110",
+        "111"
+      ],
+      "vertex_count": 3
+    }
+  ],
+  "limitations": [
+    "This is finite tiny-instance semantic equivalence, not QAOA solution quality.",
+    "The matrix diagonal and classical oracle share the declared objective contract; this is not independent physics validation.",
+    "No provider target, calibration, real-QPU execution, task latency, wall-plug energy or cost was measured.",
+    "A passing check does not establish quantum advantage or the 100,000,000-unit moonshots."
+  ],
+  "maximum_absolute_score_error": 0,
+  "paid_job_submitted": false,
+  "qpu_executed": false,
+  "schema": "uqpu-signed-maxcut-qiskit-crosscheck-v1",
+  "source_sha256": {
+    "examples/run_signed_maxcut_qiskit_crosscheck.py": "b8b7a5effd3eea86e935c2d1f9ec68d649b5e41abf19e04a1f96840ec27d87b4",
+    "uqpu/sdk_signed_maxcut.py": "70036f6eb939960ffb37c759b85bdbd556ac364993696a6031c87e3eeba4f528",
+    "uqpu/signed_maxcut_objective.py": "853642ec1a2e84079eaf0197f9dbe81f1c5632206238b9bd5af41fab45d8847a"
+  },
+  "tolerance": 1e-12,
+  "ci_provenance": {
+    "repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+    "base_head_sha": "42e6614db390db7b3e248bc6b383d67e9d00dd3b",
+    "workflow_run_id": 40693966482,
+    "workflow_run_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40693966482",
+    "job_id": 122836265874,
+    "job_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40693966482/job/122836265874",
+    "conclusion": "success",
+    "source": "Parsed from the exact-head GitHub Actions qiskit-verification job log",
+    "interpretation": "Pinned SDK algebraic cross-check on tiny classical fixtures only; not QAOA quality, target performance, physical advantage, energy, or economics."
+  }
+}
