@@ -10,7 +10,7 @@
 
 **Next highest-value gate:** verify exact-head prototype/invariant CI and cold-start audit; then freeze dataset/source/license/model/runtime hashes and group-disjoint split certificates before any matched comparison. Preserve the multilingual Thai/English/Chinese/Japanese/Korean/German strategic-plan links and recorded AI-agent/funding context.
 
-## Previous Eight-Lane research cycle — 2026-10-28 — quantum dynamical entropy bound Research Program
+## Previous Eight-Lane research cycle — 2026-10-28 — quantum dynamical entropy bound
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — quantum dynamical entropy bound
 
