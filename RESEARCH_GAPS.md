@@ -916,7 +916,7 @@ The batch contract prices final accepted liquid energy rather than raw bio-oil m
 
 ## 2026-10-28 — RG-A-SIGNED-MAXCUT-NUMERIC-RANGE-001: finite arithmetic and fail-closed score contract
 
-**Status:** CODE FIX COMMITTED; exact-head CI verification follows the commit.  
+**Status:** CODE FIX AND PINNED-SDK SEMANTIC SUBGATE VERIFIED ON main `42e6614db390db7b3e248bc6b383d67e9d00dd3b`; TARGET-AWARE SIMULATION OPEN.  
 **Primary owner:** Lane A — objective/compiler/runtime semantics.  
 **Cross-lane owners:** B (SDK/target identity), C (output/state accounting), D/G (later Hamiltonian/device mapping), F (reference/evidence/economics), H (handoff/publication).  
 **Related:** Batch 088–090; INV-025–027 and INV-029–035; FND-006.

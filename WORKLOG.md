@@ -1939,3 +1939,7 @@ The initial Batch 102 PR commit `78599f2b0d30ee45311fdb34e23e38563933ff49` trigg
 - Base main at authoring: `42e6614db390db7b3e248bc6b383d67e9d00dd3b`
 - PR: [#150](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/150)
 - No source branch is considered synchronized to main until the PR is actually merged.
+
+## 2026-10-28 — Batch 102 aggregate gap-register sync
+
+Updated the existing RG-A signed-Max-Cut numeric-range status in root `RESEARCH_GAPS.md` to record the pinned Qiskit 2.5.2 semantic subgate result from exact main `42e6614db390db7b3e248bc6b383d67e9d00dd3b` and link the persisted certificate through Batch 102. The full 96 KB gap file was fetched and length/tail checked before a narrow replacement; no earlier history was truncated. Target-aware simulation remains open. This branch commit uses `Research-Sync: pending-main`; its exact-head CI is required before merge.

@@ -53,3 +53,8 @@ This PR branch is based on `42e6614db390db7b3e248bc6b383d67e9d00dd3b`; source-to
 ### PR handoff correction — 2026-10-28
 
 The first PR head `78599f2b0d30ee45311fdb34e23e38563933ff49` failed the cold-start handoff audit [run 40702910397](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40702910397) because its commit trailer said `Research-Sync: main` while the commit was still on a PR branch. This was a process/provenance failure, not a scientific test failure. The follow-up commit corrects the head trailer to `Research-Sync: pending-main`; the PR-head audit and full test matrix must be rerun before merge. The failure is retained as negative evidence.
+
+
+### Aggregate gap-register synchronization — 2026-10-28
+
+The root `RESEARCH_GAPS.md` RG-A signed-Max-Cut status now records the exact-main pinned-SDK semantic subgate and links the persisted certificate through Batch 102. This narrows sync debt for that gap only; target-aware simulation and all physical/economic gates remain open. The latest PR head must pass its own exact-head Actions.
