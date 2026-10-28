@@ -1,5 +1,14 @@
 # UQPU: Universal Quantum Processing Unit
 
+## Latest Eight-Lane research cycle — 2026-10-28 — external AI theorem-claim verification
+
+The new [literature watch](docs/literature_watch/2026-10-28-openai-math-complexity-qft-claims-verification-boundary.md) records the 2026-10-26 OpenAI announcement of high-impact mathematics, ETH and constructive-QFT claims. Public math/complexity proof artifacts are available for independent audit; the QFT artifacts remain withheld pending external review. The new [RG-EQN-009 gap](docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md) separates source claims, formal artifacts, kernel checks, expert review, physical validation and engineering advantage. No external theorem or physics claim is accepted as UQPU evidence.
+
+The [cross-lane integration report](integration/DAILY_CYCLE_2026-10-28_EXTERNAL_AI_THEOREM_CLAIMS.md) records A–H, FND-001–006, EQN-001–008, INV-029–035, BIO-001/FUS-001/FIN-001, the preserved root directives and multilingual strategy references. The cycle began at 5fba3742aae0e7c1246bac4b29302a6cf3816174; core/invariant run #1943 and cold-start handoff audit #1202 both passed on that starting head. No proof compilation, local test run, paid QPU job or physical experiment was performed in this documentation-only cycle.
+
+**Next gate:** pin and independently compile/review the public math and ETH artifacts; keep the QFT claim artifact-blocked until sources are released. Continue the Priority-1 signed-Max-Cut reference-certificate, provider-neutral lowering and target-aware simulation path in parallel.
+
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — equation-discovery uncertainty + physics-guided materials design
 
 [Batch 100](docs/BATCH_100_SYMBOLFIT_UNCERTAINTY_AWARE_EQUATION_DISCOVERY.md) adds the new-to-repository [SymbolFit source](https://arxiv.org/abs/2607.19750) (v2 revised 2026-10-19) as a separate HEP binned-fit task class under [RG-EQN-008](docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md). The [literature watch](docs/literature_watch/2026-10-28-symbolfit-uncertainty-aware-equation-discovery.md) distinguishes the paper's author-reported results from UQPU evidence. The [Lane A machine-readable preregistration](research_lanes/A_quantum_programming_runtime/SYMBOLFIT_UNCERTAINTY_PROTOCOL_V1.json) was parsed and checked for required fields in cycle tooling; no matched benchmark or project test suite ran. HEP fit scores must not be pooled with general equation-recovery or active-experiment-design tasks.
