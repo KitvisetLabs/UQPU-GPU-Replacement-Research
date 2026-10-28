@@ -963,3 +963,8 @@ The matched equation-discovery comparator now uses schema v4. `dataset_provenanc
 
 **Nonclaims:** no physical equation/law promotion, QPU advantage, material/fuel/electricity result, lower WACC, or Data-Center-to-One-Phone result. No paid QPU execution is authorized. The 100×/100,000,000× targets and INV-025–035 remain evidence-gated.
 
+
+
+## 2026-10-28 — RG-FND003-QUANTUM-DYNAMICAL-ENTROPY-001
+
+**Status:** OPEN / LITERATURE_ONLY / FULL_TEXT_AND_REPRODUCTION_PENDING. The new source-bounded watch is `docs/literature_watch/2026-10-28-planckian-quantum-dynamical-entropy-fnd003.md`. Cao, *Phys. Rev. Lett.* 137, 030402 (2026-07-13), DOI 10.1103/wd91-v58h, reports an entropy rate for continuous monitoring in terms of two-point correlations and conjectures a universal Planckian bound. The full paper/supplement was not independently reconstructed in this cycle. Do not implement the conjecture as a universal limit or conflate it with the separate thermalization-machine theorem. Next gate: retrieve full derivation; check units, assumptions and classical/large-N/finite-size limits; reproduce one exactly solvable model; preregister held-out regimes and counterexample search; separate system entropy from measurement/controller/reset/cooling energy. This source does not establish generic gate-time, accepted-task, wall-plug-energy or UQPU-advantage claims.
