@@ -13,6 +13,9 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — photonic in-situ training
+- [Batch 106](../docs/BATCH_106_PHOTONIC_INSPIRE_AND_AH_INTEGRATION.md) and [daily integration report](DAILY_CYCLE_2026-10-29_PHOTONIC_IN_SITU_TRAINING.md) add a source-specific INSPIRE photonic training watch and a falsifiable end-to-end acceptance gap. The source reports task-specific physical-training metrics; UQPU has not reproduced them. No energy/cost advantage or new physical law is claimed.
+
 ## Latest integrated cycle — 2026-10-28 — parity-rank oracle and catalytic biomass
 
 - [Batch 105 integration](DAILY_CYCLE_2026-10-28_GF2_PARITY_AND_CATALYTIC_BIOMASS.md) — independent GF(2) graph-parity test plus a source-specific catalytic co-pyrolysis / catalyst-loaded-biochar watch. Exact-head CI is required; no physical or economic advantage is claimed.

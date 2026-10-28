@@ -1949,3 +1949,12 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - Added a literature watch and focused gap for DOI https://doi.org/10.1016/j.biombioe.2026.109296, keeping source-reported microalgae/hardwood results separate from Pangola claims.
 - Updated Batch 105, integration report, README, RESEARCH_GAPS.md, scoreboard and cold-start handoff manifest in one synchronized main commit.
 - A–H remain active; INV-029–035, FND-001–006 and EQN-001–010 remain evidence-gated. No QPU, biomass, fusion or finance experiment was performed; no commercial, physical-law or economic advantage is claimed.
+
+## 2026-10-29 — Batch 106: photonic in-situ training evidence gate
+
+- Started from main `c9c55b275d60798cb7a2428693fee39e251ab30e`; read the required charter, goals, invariants, operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, Batch 105, recent gaps, integration artifacts and exact-head CI.
+- Confirmed Batch 105's independent GF(2) graph-parity test is covered by successful exact-head UQPU Prototype and Project Invariants run 1970; cold-start handoff audit run 1231 also passed. New commit requires its own exact-head Actions.
+- Added a 2026-10-05 *Nature Computational Science* INSPIRE photonic in-situ physical-gradient-descent literature watch and a Lane D acceptance gap. Source reports 0.26% matrix relative error, 251-fold model compression and 136-fold task-specific training acceleration; UQPU has not reproduced these results.
+- Defined matched workload/acceptance, held-out device/topology/wavelength, optical/control/readout/ADC-DAC/host energy, data movement, fabrication yield, drift, lifecycle-cost and independent-replication gates.
+- A–H and D/G co-design remain active. INV-025/026/027 and INV-029–035, FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated. No paid QPU job, photonic experiment, Pangola experiment or fusion experiment occurred; no commercial, economic or new-physics advantage is claimed.
+- Next gate: Lane A parity-QAOA circuit against exact objective/decoder certificates; in parallel, pin and reproduce INSPIRE source data/code and test held-out hardware under end-to-end cost/energy accounting.

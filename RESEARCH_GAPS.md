@@ -1094,3 +1094,14 @@ The official preprints describe standardized account-based fusion costing, archi
 **Source:** https://doi.org/10.1016/j.biombioe.2026.109296
 
 A 2026 *Biomass and Bioenergy* study reports catalytic microalgae/hardwood co-pyrolysis, 23.9/23.5 wt% oil yields, 25.27 MJ/kg reported in-situ-oil HHV and 96.6% methylene-blue removal by catalyst-loaded biochar under its tested conditions. UQPU has not reproduced it. Transfer to Pangola is blocked pending source/data pinning, feedstock characterization, dry-basis mass/energy closure, accepted-fuel/upgrading analysis, catalyst recovery/regeneration/lifetime/leaching tests, repeat-cycle solid-service validation and full lifecycle costing. Coproduct and carbon credits must not be double counted. This gap is not commercial-fuel, material-substitution or physical-law evidence.
+
+## RG-D-PHOTONIC-INSPIRE-END-TO-END-001 — physical photonic training acceptance
+**Opened:** 2026-10-29  
+**Status:** OPEN / THIRD_PARTY_EXPERIMENT / UQPU_REPRODUCTION_NOT_STARTED  
+**Primary owner:** Lane D; interfaces A/C/F/G  
+**Canonical detail:** `docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO END_2026-10-29.md`  
+**Source:** https://doi.org/10.1038/s43588-026-01057-y
+
+The 2026-10-05 *Nature Computational Science* INSPIRE paper reports in-situ physical-gradient training on photonic integrated circuits, 0.26% relative error for trained matrices, training through scattering media beyond the native tunable-element count, 251-fold model compression and 136-fold task-specific training acceleration. These are source-reported, task-specific experimental results, not UQPU reproduction or end-to-end energy/cost evidence.
+
+Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; reproduce the stated matrix metric; freeze a shared useful-workload/quality predicate for digital, in-silico photonic and in-situ training; test a second device plus held-out topology/wavelength/temperature; count optical source/loss, tuning/control, detector/readout, ADC/DAC, host, calibration, data movement, yield, packaging, drift, service life and capital allocation. Compare energy and total cost per accepted task; reject the advantage hypothesis if overheads or held-out failures erase it. No new physical law, universal accelerator replacement, phone-compression, bio-oil, fusion, WACC or paid-QPU claim follows.

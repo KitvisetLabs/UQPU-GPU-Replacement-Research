@@ -10,7 +10,13 @@
 - [Pangola/biomass carbon](01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md) · [Ultra-low-cost bio-oil](02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md) · [Fusion electricity](03_FUSION_ELECTRICITY_COST_STRATEGY.md) · [Interest/R&D finance](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md)
 - [Foundational physics and mathematics](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) · [AI-assisted equation discovery](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md)
 - [Kanusanan Pongpanna Model](docs/KANUSANAN_PONGPANNA_MODEL.md) · [Multilingual strategic references](STRATEGIC_PLAN_REFERENCES.md)
-- [Batch 105 — GF(2) parity rank and catalytic biomass](docs/BATCH_105_GF2_PARITY_RANK_AND_BIOMASS_CATALYST_SURVEILLANCE.md) · [Catalyst-biochar research gap](docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md)
+- [Batch 106 — photonic in-situ training](docs/BATCH_106_PHOTONIC_INSPIRE_AND_AH_INTEGRATION.md) · [INSPIRE acceptance gap](docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md) · [Batch 105 — GF(2) parity rank and catalytic biomass](docs/BATCH_105_GF2_PARITY_RANK_AND_BIOMASS_CATALYST_SURVEILLANCE.md) · [Catalyst-biochar research gap](docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md)
+
+## Latest Eight-Lane research cycle — 2026-10-29 — photonic in-situ training evidence gate
+
+[Batch 106](docs/BATCH_106_PHOTONIC_INSPIRE_AND_AH_INTEGRATION.md) adds a primary-source watch on INSPIRE photonic in-situ physical gradient descent and a falsifiable end-to-end acceptance gap ([literature watch](docs/literature_watch/2026-10-29-photonic-in-situ-physical-gradient-descent.md), [Lane D gap](docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md)). The paper reports 0.26% matrix relative error, 251-fold model compression and 136-fold task-specific training acceleration in its study setting; UQPU has not reproduced these results. They are not full-system energy/cost, universal replacement, or new-physics evidence.
+
+At the starting head, exact-head GitHub Actions passed: UQPU Prototype and Project Invariants run 1970 and Autonomous Cold-Start Handoff Audit run 1231. The new commit requires its own exact-head validation. Lane A remains Priority #1; no paid QPU job was authorized or attempted.
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — independent parity-rank verification and catalytic biomass surveillance
 
