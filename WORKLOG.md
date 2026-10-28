@@ -1931,3 +1931,11 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - **Open gates:** provider-neutral lowering and target-aware simulation; SymbolFit byte/license verification and synthetic multi-seed calibration; BIO-001 accepted-liquid full-cost evidence; FUS-001 net delivered electricity; FIN-001 principal/interest/time-to-evidence. INV-029–035 and INV-025/026/027 preserved.
 - **Sync and CI:** this branch's source SHA and exact-head Actions are pending at authoring; do not treat the parent-head pass as the PR-head result. Existing open PRs #149/#148, #147/#146, #141/#140, #135/#134 and #133/#132 remain separate and unmerged. Inaccessible historical branches/forks are not fully reconciled.
 - **Next action:** run exact-head Actions for this PR; if checks pass, merge through the PR path and reconcile the resulting main SHA in the next sync checkpoint. Then execute provider-neutral lowering and target-aware simulation without paid submission.
+ 
+## 2026-10-28 — Batch 102 PR-head cold-start trailer failure and correction
+
+The initial Batch 102 PR commit `78599f2b0d30ee45311fdb34e23e38563933ff49` triggered [cold-start audit run 40702910397](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40702910397), which failed with `missing_commit_trailer:Research-Sync: pending-main`. The commit incorrectly declared `Research-Sync: main` while it remained on a feature branch. This is a process/provenance failure, not a scientific or SDK failure. The follow-up commit corrects the head trailer to `Research-Sync: pending-main`; exact-head core and cold-start Actions must pass before PR #150 can merge. The failed run is retained as negative evidence.
+
+- Base main at authoring: `42e6614db390db7b3e248bc6b383d67e9d00dd3b`
+- PR: [#150](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/150)
+- No source branch is considered synchronized to main until the PR is actually merged.

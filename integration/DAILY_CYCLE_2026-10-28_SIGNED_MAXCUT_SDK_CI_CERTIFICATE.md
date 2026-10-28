@@ -48,3 +48,8 @@ INV-025/026/027 remain intact. The 100,000,000-GPU and universal 100,000,000-uni
 This PR branch is based on `42e6614db390db7b3e248bc6b383d67e9d00dd3b`; source-to-main synchronization remains **PENDING** until the PR is reviewed/merged. Existing open PRs #149/#148, #147/#146, #141/#140, #135/#134 and #133/#132 remain distinct and are not silently treated as merged. Inaccessible historical branches/forks remain outside verified coverage.
 
 **Next highest-value gate:** complete provider-neutral lowering and target-aware simulation for the frozen signed-Max-Cut workload; preserve exact reference/argmax, SDK/target/circuit/transpiler provenance, and full useful-task resource accounting. No real QPU job without credentials, bounded budget and explicit consent.
+
+
+### PR handoff correction — 2026-10-28
+
+The first PR head `78599f2b0d30ee45311fdb34e23e38563933ff49` failed the cold-start handoff audit [run 40702910397](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40702910397) because its commit trailer said `Research-Sync: main` while the commit was still on a PR branch. This was a process/provenance failure, not a scientific test failure. The follow-up commit corrects the head trailer to `Research-Sync: pending-main`; the PR-head audit and full test matrix must be rerun before merge. The failure is retained as negative evidence.

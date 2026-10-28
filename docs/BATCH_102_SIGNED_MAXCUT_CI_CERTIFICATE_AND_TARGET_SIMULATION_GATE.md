@@ -122,3 +122,8 @@ This work is proposed on branch `research/2026-10-28-batch102-signed-maxcut-ci-c
 5. Keep BIO-001, FUS-001 and FIN-001 as explicit parallel gates; do not infer commercial fuel/electricity, lower WACC or physical compression from this software result.
 
 The resulting PR head requires its own exact-head Actions. The parent-head pass above is evidence for `42e6614db390db7b3e248bc6b383d67e9d00dd3b` only.
+
+
+### PR handoff correction — 2026-10-28
+
+The first PR head `78599f2b0d30ee45311fdb34e23e38563933ff49` failed the cold-start handoff audit [run 40702910397](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40702910397) because its commit trailer said `Research-Sync: main` while the commit was still on a PR branch. This was a process/provenance failure, not a scientific test failure. The follow-up commit corrects the head trailer to `Research-Sync: pending-main`; the PR-head audit and full test matrix must be rerun before merge. The failure is retained as negative evidence.

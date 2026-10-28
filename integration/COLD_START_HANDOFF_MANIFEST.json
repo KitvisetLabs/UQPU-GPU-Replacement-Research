@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "42e6614db390db7b3e248bc6b383d67e9d00dd3b",
   "priority_lane": "A",
-  "current_frontier": "Batch 102 (2026-10-28): pinned Qiskit 2.5.2 signed-Max-Cut semantic subgate passed on exact main head 42e6614db390db7b3e248bc6b383d67e9d00dd3b (6 fixtures, 74 assignments, max absolute score error 0.0 at 1e-12, complete argmax agreement). Core/invariant run 40693966482 and cold-start audit 40693966594 passed on that head. Machine-readable certificate and integration report are in benchmarks/results/2026-10-28-signed-maxcut-qiskit-crosscheck-42e6614.json and integration/DAILY_CYCLE_2026-10-28_SIGNED_MAXCUT_SDK_CI_CERTIFICATE.md. This PR branch's exact-head Actions are pending. Next gate is provider-neutral lowering and target-aware simulation; no paid QPU execution authorized.",
+  "current_frontier": "Batch 102 (2026-10-28): pinned Qiskit 2.5.2 signed-Max-Cut semantic subgate passed on main 42e6614db390db7b3e248bc6b383d67e9d00dd3b (6 fixtures, 74 assignments, max absolute score error 0.0 at 1e-12, complete argmax agreement). Parent main core/invariant run 40693966482 and cold-start audit 40693966594 passed. PR #150 head 78599f2b0d30ee45311fdb34e23e38563933ff49 then failed cold-start audit 40702910397 because its commit trailer said Research-Sync: main while still on a branch; a follow-up commit corrects the trailer to pending-main. Exact-head Actions must pass before merge. Next gate is provider-neutral lowering and target-aware simulation; no paid QPU execution authorized.",
   "required_reading": [
     "docs/BATCH_099_RESIDUAL_CONJECTURE_CONTINUOUS_EQUATION_DISCOVERY.md",
     "docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md",
