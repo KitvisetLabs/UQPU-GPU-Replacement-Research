@@ -35,3 +35,8 @@ These are external sources. UQPU has not reconstructed their proofs, reproduced 
 ## Closure rule
 
 Close only after independent theorem reconstruction and counterexample search. Any claim about device performance requires a matched hardware/control experiment and accepted-useful-task accounting. No current source supports a UQPU speedup, lower total energy, cost/task advantage, new physical law or mission-level success.
+
+
+## Related exceptional-point accepted-output branch — 2026-10-28
+
+The complementary gap [RG-FND003-NH-EP-001](RESEARCH_GAP_FND003_NONHERMITIAN_EP_2026-10-28.md) covers the published trapped-ion exceptional-point result and transition-rate bounds for open processes. It separates the Hermitian incumbent from the non-Hermitian effective model and requires a complete open-system description, matched target quality/control budgets, held-out perturbations and total resources per accepted output. No universal QSL violation or UQPU performance result is inferred. See the [dated literature watch](literature_watch/2026-10-28-nonhermitian-ep-speedup-and-transition-rate-qsl.md).
