@@ -6,7 +6,15 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest Eight-Lane research cycle — 2026-10-28 — literature provenance and A–H CI repair
+## Latest Eight-Lane research cycle — 2026-10-28 — quantum-control and thermodynamic-bound surveillance
+
+[Batch 093](docs/BATCH_093_QSL_AND_THERMODYNAMIC_NO_GO_SURVEILLANCE.md) records fresh official APS sources accepted/published through 2026-10-26: quantum time-optimal control under a declared lattice control budget; a scoped no-go theorem for measurement-only steady-cycle work extraction; quantum-feedback thermodynamic accounting; and a published single-qubit optical strong-Mpemba demonstration. A separate [literature watch](docs/literature_watch/2026-10-28-quantum-time-optimal-control-and-thermodynamic-limits.md) and [FND-003 gap](docs/RESEARCH_GAP_FND003_QSL_CONTROL_BUDGET_AND_MEASUREMENT_NO_GO_2026-10-28.md) distinguish theorem assumptions, source-reported experiment and UQPU evidence. No UQPU speedup or energy advantage is inferred.
+
+The prior [Batch 092](docs/BATCH_092_COSR_STATUS_CONFLICT_AND_CI_REPAIR.md) fixed the stale A–I lane-policy tests and documented the Chain of Symbolic Regression publication-status conflict. A–H/28 pair reviews remain canonical; Lane I remains a preserved legacy workstream. Exact-head CI must be checked on the newest commit before any green status is reported.
+
+INV-025–035, FND-001–006, EQN-001–EQN-006, BIO-001, FUS-001, FIN-001 and all six-language strategic references remain preserved. No physical law, real-QPU advantage, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-Phone milestone is claimed. See [the integration report](integration/DAILY_CYCLE_2026-10-28_QSL_AND_MEASUREMENT_NO_GO_WATCH.md).
+
+## Earlier same-day cycle — 2026-10-28 — literature provenance and A–H CI repair
 
 [Batch 092](docs/BATCH_092_COSR_STATUS_CONFLICT_AND_CI_REPAIR.md) fixes two stale lane-policy tests that still expected the superseded nine-lane A–I map after the canonical manifest had moved to A–H/28 pair reviews. The revised tests require A–H, preserve Lane I explicitly as a legacy workstream, and retain the 16-level depth/D–G co-design checks. The prior core run failed on those two assertions; the post-fix exact-head GitHub Actions result must pass before the architecture gap is closed.
 
