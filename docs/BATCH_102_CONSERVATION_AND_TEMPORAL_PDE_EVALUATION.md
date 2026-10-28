@@ -93,7 +93,8 @@ The large append-only root RESEARCH_GAPS.md and WORKLOG.md were not rewritten wh
 - **INV-031:** no accepted liquid-fuel yield/full-cost claim.
 - **INV-032:** no reliable net-delivered fusion-electricity or lifecycle-cost claim.
 - **INV-033:** no measured reduction in financed principal, absolute interest, project WACC or economy-wide rates.
-- **INV-034/035:** current physics remains binding; AI/model candidates require dimensional, symmetry, conservation, causality, held-out, counterexample, experiment/proof and independent-validation gates.
+- **INV-034:** the foundational physics/mathematics deep-frontier agenda remains active through explicit theorem/bound and model-validation gates; this metric utility does not establish a foundational result.
+- **INV-035:** AI-assisted equation discovery remains hypothesis generation under evidence. No equation is promoted to physical law; any challenge must state the incumbent assumption, alternative, units, symmetry/conservation/causality checks, limits, falsifier, observable, held-out prediction, experiment/proof and independent validation.
 
 The 100×/100,000,000× targets and INV-025/026 universal 100,000,000-unit GPU/CPU/NPU/RAM/VRAM/storage moonshots remain falsifiable goals, not results. No Hilbert-space-to-classical-memory equivalence or NPU-TOPS-only claim is introduced.
 
