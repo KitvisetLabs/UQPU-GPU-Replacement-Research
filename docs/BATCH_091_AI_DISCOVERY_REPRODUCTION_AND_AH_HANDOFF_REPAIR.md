@@ -82,7 +82,7 @@ Starting main was 0970a70b0045ca79291550ef619cbfa850716996. Relevant main commit
 - Cold-start regression tests: bc11974bdd940d6b1d837173b15a62734ce21b16
 - Handoff manifest alignment: ad32b8e770455c87d0b9ba54a2eb8439dd38fbd6
 
-The pre-existing core/invariant workflow and cold-start audit passed on the older parent recorded in Batch 090, but this does not validate the above commits. The combined-status endpoint returned no status contexts for the starting head; current exact-head Actions results have not yet been observed. Do not claim CI success or infer success from the parent. The large append-only WORKLOG.md and RESEARCH_GAPS.md require safe full-content append-only synchronization; the dated Batch and focused gap preserve this cycle if aggregate synchronization cannot be safely completed.
+The pre-existing core/invariant workflow and cold-start audit passed on the older parent recorded in Batch 090, but this does not validate the above commits. The combined-status endpoint returned no status contexts for the starting head; current exact-head Actions results have not yet been observed. Do not claim CI success or infer success from the parent. WORKLOG.md and RESEARCH_GAPS.md were fetched as complete substantial documents and appended without truncating prior history (commits 3801001ed40e0e46a82a6afac2e4b355c3fa5285 and ec471a991b67ec2ea56cb4676d49b230ecf5f9a8). The cold-start manifest was refreshed in 3084b45d767f861def02bcfc7809831bb023c4de and README.md was updated in 3f1b948dab83e0a7b8084fcbf8755d4ab20c0486. These synchronization commits also require exact-head CI; the parent pass is not inherited.
 
 ## Next highest-value gate
 
@@ -91,3 +91,10 @@ The pre-existing core/invariant workflow and cold-start audit passed on the olde
 3. Reproduce the cosmic-string integral independently only if the required source/code/precision budget is available; preserve failed and undecided cases.
 4. Continue FND-001–006, EQN-001–006, BIO-001, FUS-001 and FIN-001 with source-pinned evidence and no cross-provider price/probability mixing.
 5. Keep the permanent A–H architecture, INV-025–027, INV-029–035, all root directives, multilingual master-plan references and evidence boundaries visible to the next cold-start agent.
+
+
+## Post-write synchronization audit
+
+The focused gap, Lane A gate, literature watch, A–H manifest/validator/tests, handoff manifest, integration record, README and both append-only aggregate files are now present on main. Additional main synchronization commits: integration record c205d4ca96698b90801ef6db0370fa29e8db2622; architecture-gap resolution note 5b7a8c05fdd27838612d7a19abfc7dda3fa37c11; WORKLOG append 3801001ed40e0e46a82a6afac2e4b355c3fa5285; RESEARCH_GAPS append ec471a991b67ec2ea56cb4676d49b230ecf5f9a8; handoff manifest refresh 3084b45d767f861def02bcfc7809831bb023c4de; README sync 3f1b948dab83e0a7b8084fcbf8755d4ab20c0486.
+
+A structural consistency check of the current manifests, validator and test expectations passed: operational lanes A–H, 28 unique pairs, preserved legacy I workstream, six language references, required FND/EQN/BIO/FUS/FIN programs, and paid execution disabled. This was not a run of the repository's Python test suite. Exact-head GitHub Actions results remain unobserved.
