@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "d04eb7987b2e3b0c82840b77e263cf2ae8e41285",
   "priority_lane": "A",
-  "current_frontier": "Batch 098 (2026-10-28): EMNLP 2026 test-time-scaling paper adds a preregistered search-width factor to RG-EQN-008's schema-v4 matched equation-discovery protocol. New literature watch, Batch 098, cross-lane integration report, canonical gap/work-log entries are on main. No UQPU benchmark ran; exact-head prototype/invariant and cold-start CI remain unverified until queried for the final main SHA. Lane A provider-neutral lowering and exact reference/target-aware simulation on the frozen signed-Max-Cut contract remain Priority #1. INV-025–035, FND-001–006, EQN-001–008, BIO-001, FUS-001, FIN-001 and A–H remain active; no paid QPU execution authorized.",
+  "current_frontier": "Batch 098 (2026-10-28): EMNLP 2026 test-time-scaling paper adds a preregistered search-width factor to RG-EQN-008 schema v4. Lane A now has a dedicated reproducible experiment track. Literature watch, Batch 098, integration report, focused gap, canonical gaps/worklog, README and handoff are on main. No UQPU benchmark ran; exact-head prototype/invariant and cold-start CI remain unverified. Lane A provider-neutral lowering and exact reference/target-aware simulation on the frozen signed-Max-Cut contract remain Priority #1. INV-025–035, FND-001–006, EQN-001–008, BIO-001, FUS-001, FIN-001 and A–H remain active; no paid QPU execution authorized.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -148,7 +148,8 @@
     "software/uqpu-prototype/tests/test_split_disjointness.py",
     "docs/BATCH_098_TEST_TIME_SCALING_EQUATION_DISCOVERY.md",
     "docs/literature_watch/2026-10-28-test-time-scaling-equation-discovery.md",
-    "integration/DAILY_CYCLE_2026-10-28_TEST_TIME_SCALING_EQUATION_DISCOVERY.md"
+    "integration/DAILY_CYCLE_2026-10-28_TEST_TIME_SCALING_EQUATION_DISCOVERY.md",
+    "research_lanes/A_quantum_programming_runtime/TEST_TIME_SCALING_EQUATION_DISCOVERY_TRACK.md"
   ],
   "lanes": {
     "A": {
