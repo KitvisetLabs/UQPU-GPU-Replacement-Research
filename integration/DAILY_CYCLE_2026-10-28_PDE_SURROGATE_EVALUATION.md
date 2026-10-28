@@ -62,7 +62,8 @@ The Lane A contract is the primary interface; the Batch 102 document owns the fo
 - **INV-031:** no accepted liquid fuel, yield or full-cost result.
 - **INV-032:** no reliable net delivered fusion-electricity or lifecycle-cost result.
 - **INV-033:** no measured change to financed principal, absolute interest, project WACC or economy-wide rates.
-- **INV-034/035:** current physical equations remain binding; any new candidate still needs dimensional, symmetry, conservation, causality, limiting-case, held-out, counterexample, experiment/proof and independent-validation gates.
+- **INV-034:** the foundational physics/mathematics deep-frontier agenda remains active; this cycle adds no new foundational theorem or physical result.
+- **INV-035:** AI-assisted equation discovery remains hypothesis generation, not authority. Any challenge must specify the incumbent assumption, alternative equation, units, symmetry/conservation/causality checks, limits, falsifier, observable, held-out prediction, experiment/proof and independent validation.
 
 INV-025/026/027 remain preserved. The 100× and 100,000,000× goals, 100,000,000-GPU moonshot, universal 100,000,000-unit GPU/CPU/NPU/RAM/VRAM/storage moonshots and the physical-compression North Star remain unachieved goals pending their end-to-end gates.
 
