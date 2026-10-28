@@ -120,3 +120,18 @@ The sources add distinct candidate method families: pointwise residual-condition
 **Next experiment:** first verify code/license and retrievable artifact bytes; then use a static, law-family/scale-held-out dataset with fixed provenance, common acceptance rules, at least 30 shared preregistered seeds, equal hard per-run resource ceilings and one cost basis to compare available static methods. Keep active experiment design in a separate track with equal simulation/experiment-call budgets and blind tasks. Report held-out error, structural recovery where a known target exists, complexity, constraints, counterexamples, false discoveries, failed runs, retries, memory, I/O, tokens, training+inference cost and energy where measurable.
 
 **Falsifier:** reject method advantage if it disappears under held-out law families/scales, depends on leakage or unequal budgets, or increases counterexamples/constraint failures/false discoveries. Hashes do not authenticate artifact bytes; independently verify the source, dataset and held-out records. No candidate equation or physical law is promoted.
+
+
+## 2026-10-28 literature delta — uncertainty-aware binned HEP fitting (SymbolFit)
+
+**Status:** OPEN; external method result only; no independent UQPU reproduction.  
+**Source:** Tsoi et al., “Machine Can Automatically Discover Parametric Functions to Model HEP Data,” arXiv:2607.19750; v1 submitted 2026-07-22, v2 revised 2026-10-19: https://arxiv.org/abs/2607.19750.  
+**New-to-repository check:** repository search for “SymbolFit” and “2607.19750” returned no earlier project entry.
+
+The paper pairs symbolic regression with uncertainty modeling for binned HEP spectra and reports 560 seeded runs across seven configurations, more than 1,000 candidate functions, chi-squared/NDF near one, and rediscovery of known dijet/UA2 functions in 111 runs. This is not evidence of a new law, general equation-discovery superiority, calibrated uncertainty outside the paper's setup, or a UQPU benefit.
+
+**Task separation:** add a distinct `HEP_BINNED_PARAMETRIC_FIT` class. Do not pool its metrics with general LLM-SRBench law recovery, ClosureBench active-experiment results or QPU workloads. The machine-readable preregistration is `research_lanes/A_quantum_programming_runtime/SYMBOLFIT_UNCERTAINTY_PROTOCOL_V1.json`; the source synthesis is `docs/literature_watch/2026-10-28-symbolfit-uncertainty-aware-equation-discovery.md`.
+
+**Next gate:** verify code/data/license and actual artifact bytes; freeze source, model/config/runtime, uncertainty model, split, acceptance rules, endpoint, calibration tolerance, shared seeds and equal resource ceilings. Run synthetic known-function and null controls before real HEP data. Report nominal interval coverage jointly with interval width and proper predictive score, held-out predictive score, function/parameter stability, residual diagnostics, false positives, false discoveries, failures and full training-plus-inference resources/cost. Use at least 30 shared preregistered seeds where feasible and one cost basis.
+
+**Falsifier:** reject any advantage that depends on leakage, unequal resources, post-hoc endpoint selection, uninformatively wide intervals, under-coverage, degraded predictive score or increased false positives on null controls. No physical-law or technology promotion follows from this task without the full INV-035 proof/experiment and independent-validation gates.
