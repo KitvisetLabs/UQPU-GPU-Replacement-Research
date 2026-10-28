@@ -23,7 +23,7 @@ All five artifact commits include the Research-Sync: main trailer. README front-
 
 The metric helper evaluates a supplied sequence of discrete fields against a caller-declared conservation contract. It calculates weighted totals, absolute and dimensionless normalized drift, lower/upper bound violation count/rate/maximum, and fail-closed tolerance decisions. It rejects malformed, boolean, non-finite, inconsistent-shape and overflow inputs. The caller must justify the physical invariant and bounds; the helper does not infer them.
 
-Nine isolated tests passed locally in Python 3.12. The fixtures test the metric contract only; they do not solve a PDE, validate an external model, establish calibration or prove a physical law. No full repository suite or scientific benchmark was run locally in this cycle.
+Nine isolated tests passed locally in Python 3.13. The fixtures test the metric contract only; they do not solve a PDE, validate an external model, establish calibration or prove a physical law. No full repository suite or scientific benchmark was run locally in this cycle.
 
 ## Literature delta
 
