@@ -48,6 +48,13 @@ _FALSE_DISCOVERY_STATUSES = {
     "INCONCLUSIVE",
 }
 
+_PHYSICAL_INTERPRETATION_REVIEW_STATUSES = {
+    "NOT_REVIEWED",
+    "INDEPENDENTLY_REVIEWED",
+    "FAILED",
+    "INCONCLUSIVE",
+}
+
 _FORMAL_PROOF_STATUSES = {
     "NOT_APPLICABLE",
     "NOT_RUN",
@@ -101,6 +108,8 @@ class EquationHypothesis:
     formal_proof_evidence: FormalProofEvidence | None = None
     false_discovery_status: str = "NOT_ASSESSED"
     false_discovery_notes: tuple[str, ...] = field(default_factory=tuple)
+    physical_interpretation_review_status: str = "NOT_REVIEWED"
+    physical_interpretation_review_notes: tuple[str, ...] = field(default_factory=tuple)
 
     def validate(self) -> None:
         if not self.equation_id.strip():
@@ -163,7 +172,22 @@ class EquationHypothesis:
             raise ValueError("unknown false_discovery_status")
         if self.false_discovery_status == "FALSE_DISCOVERY_FOUND" and not self.false_discovery_notes:
             raise ValueError("false_discovery_notes are required when a false discovery is found")
-        note_groups = (self.counterexample_notes, self.formal_proof_notes, self.false_discovery_notes)
+        if self.physical_interpretation_review_status not in _PHYSICAL_INTERPRETATION_REVIEW_STATUSES:
+            raise ValueError("unknown physical_interpretation_review_status")
+        if (
+            self.physical_interpretation_review_status
+            in {"INDEPENDENTLY_REVIEWED", "FAILED", "INCONCLUSIVE"}
+            and not self.physical_interpretation_review_notes
+        ):
+            raise ValueError(
+                "physical_interpretation_review_notes are required for reviewed, failed or inconclusive status"
+            )
+        note_groups = (
+            self.counterexample_notes,
+            self.formal_proof_notes,
+            self.false_discovery_notes,
+            self.physical_interpretation_review_notes,
+        )
         if any(not isinstance(item, str) or not item.strip() for group in note_groups for item in group):
             raise ValueError("counterexample, proof and false-discovery notes must be nonempty strings")
         if self.evidence_level not in _ALLOWED_EVIDENCE:
@@ -209,6 +233,13 @@ class EquationHypothesis:
             return False
         if self.false_discovery_status != "NO_FALSE_DISCOVERY_FOUND":
             return False
+        # A checked proof verifies the formal statement, not that its definitions
+        # faithfully encode the intended physical system. Keep this review gate
+        # separate from proof status and empirical replication.
+        if self.physical_interpretation_review_status != "INDEPENDENTLY_REVIEWED":
+            return False
+        if not self.physical_interpretation_review_notes:
+            return False
         return bool(self.data_or_proof_provenance and self.independent_validation_plan)
 
 
@@ -239,6 +270,8 @@ def required_discovery_fields() -> tuple[str, ...]:
         "formal_proof_evidence",
         "false_discovery_status",
         "false_discovery_notes",
+        "physical_interpretation_review_status",
+        "physical_interpretation_review_notes",
     )
 
 
