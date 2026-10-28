@@ -1997,3 +1997,13 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - Reasserted INV-035: formal proof can establish a statement under formal assumptions but does not prove that the formal model faithfully describes nature. Any physical candidate still requires constraints, held-out predictions, counterexample search, discriminating experiment and independent replication.
 - A–H remain active; Lane A parity-QAOA exact certificates remain Priority #1. BIO-001, FUS-001 and FIN-001 remain independent evidence gates. No new physical law, real-QPU advantage, accepted commercial fuel, net fusion electricity, material substitution, WACC reduction or phone-compression result is claimed.
 - The multilingual Thai, English, Chinese, Japanese, Korean and German master-plan links and strategic AI-agent/funding references remain preserved. No paid QPU job or physical experiment was authorized.
+
+
+## 2026-10-29 — Batch 110: higher-order parity-QAOA prototype
+
+- Added software/uqpu-prototype/uqpu/parity_qaoa.py: edge-cost objective with fundamental-cycle parity penalties, higher-order Z-string Hamiltonian, provider-neutral CNOT/RZ phase-gadget lowering, RX mixer, objective metadata and bounded exact certificates.
+- The penalty contract requires penalty_weight > 2 times the sum of absolute edge costs when cycle constraints exist, preventing an infeasible assignment from beating every feasible assignment under the declared objective. The standard RX mixer is explicitly not feasibility-preserving; output acceptance requires cycle-parity validation and decoding.
+- Added software/uqpu-prototype/tests/test_parity_qaoa.py: triangle exact optimum/argmin certificate, canonical decode/re-encode, independent dense-statevector comparison for a two-layer circuit, cycle-penalty checks and fail-closed input tests.
+- This is prototype code and an exact small-instance classical certificate, not a QPU result or performance advantage. CI is the acceptance gate; the starting head's core workflow was still running and its cold-start audit passed. The new commit needs its own exact-head checks.
+- A–H remain active; B provider portability, C state/I/O accounting, D/G co-design, E BIO-001/FUS-001, F matched economics and H strategic publication remain separate interfaces. INV-029–035, INV-025/026/027, FND-001–006, EQN-001–EQN-010, BIO-001, FUS-001 and FIN-001 remain preserved.
+- Next gate: pass tests, independently verify provider lowering, and compare direct versus parity QAOA under frozen workload/reference hashes, equal shots and optimizer budgets, held-out graphs and full accepted-task cost accounting. No paid QPU job was authorized.

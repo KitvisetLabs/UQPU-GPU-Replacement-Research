@@ -40,3 +40,10 @@ The provider-neutral classical mapping oracle in software/uqpu-prototype/uqpu/pa
 ## Sync debt
 
 Synchronization debt was resolved on 2026-10-27 by appending the RG-QAOA-PARITY-001 summary to RESEARCH_GAPS.md from a complete fetched snapshot; prior aggregate content was preserved as an exact prefix.
+
+
+## 2026-10-29 update — higher-order parity circuit prototype
+
+Added software/uqpu-prototype/uqpu/parity_qaoa.py and a focused regression suite. The implementation compiles each fundamental-cycle even-parity penalty as a higher-order Z string using CNOT/RZ phase gadgets, adds an RX mixer, and provides exact enumeration for bounded physical registers. A fail-closed penalty threshold is required when cycles exist. The mixer is not feasibility-preserving, so sampled outputs still need cycle validation and decoding.
+
+The new dense-statevector test compares the compiled two-layer circuit with an independent direct objective definition. Exact-head CI remains required. The matched direct-versus-parity benchmark is still OPEN: no provider SDK has independently checked this new circuit, no real QPU was run, and no end-to-end advantage or cost result is established.

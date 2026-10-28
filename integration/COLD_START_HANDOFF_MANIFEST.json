@@ -1,12 +1,16 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T19:12:45Z",
+  "prepared_utc": "2026-10-28T19:16:10Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "a6202f4543a878080b44c37e1988ae254f8e7d41",
+  "canonical_start_sha": "6eafdd40f73c4db40fc78ec553bb8eb426c156ff",
   "priority_lane": "A",
-  "current_frontier": "Batch 109 (2026-10-29): AI-assisted open-ended theorem-discovery and physics-formalization literature watch plus FND-006 reproducibility gap. Formal proof remains separate from physical validity. Lane A parity-QAOA exact certificates and quEStab source reproduction remain open. Core/invariant CI on the starting SHA was in progress at update; cold-start audit passed. No paid QPU job, new physical law, accepted fuel, net fusion electricity or financing-rate claim.",
+  "current_frontier": "Batch 110 (2026-10-29): higher-order parity-QAOA prototype and exact small-instance certificate added; dense-statevector regression test included. Matched direct-versus-parity benchmark and independent SDK/target checks remain open. Batch 109 AI formal-discovery and Batch 108 quEStab audits are preserved. No paid QPU job, real-QPU advantage, new physical law, accepted fuel, net fusion electricity or financing-rate claim.",
   "required_reading": [
+    "integration/DAILY_CYCLE_2026-10-29_PARITY_QAOA_IMPLEMENTATION.md",
+    "software/uqpu-prototype/tests/test_parity_qaoa.py",
+    "software/uqpu-prototype/uqpu/parity_qaoa.py",
+    "docs/BATCH_110_PARITY_QAOA_CIRCUIT_AND_REFERENCE_CERTIFICATE.md",
     "integration/DAILY_CYCLE_2026-10-29_FND006_AI_FORMAL_DISCOVERY.md",
     "docs/literature_watch/2026-10-29-ai-open-ended-theorem-discovery-and-physics-formalization.md",
     "docs/RESEARCH_GAP_FND006_AI_FORMAL_DISCOVERY_REPRO_2026-10-29.md",
@@ -419,22 +423,22 @@
     "note": "Core/invariant workflow passed on the Batch 107 starting head; the new Batch 107 commit requires exact-head validation."
   },
   "current_head_validation": {
-    "commit": "a6202f4543a878080b44c37e1988ae254f8e7d41",
+    "commit": "6eafdd40f73c4db40fc78ec553bb8eb426c156ff",
     "core_conclusion": "in_progress",
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-28T19:12:45Z",
-    "note": "The Batch 108 starting-head core/invariant workflow was still running at this observation; its cold-start audit passed. Batch 109 requires its own exact-head checks."
+    "observed_at_utc": "2026-10-28T19:16:10Z",
+    "note": "The Batch 110 starting-head core/invariant workflow was still running at this observation; its cold-start audit passed. The new prototype commit requires its own exact-head checks."
   },
   "latest_cycle_ci_observation": {
-    "starting_commit": "a6202f4543a878080b44c37e1988ae254f8e7d41",
+    "starting_commit": "6eafdd40f73c4db40fc78ec553bb8eb426c156ff",
     "core_status": "in_progress",
-    "core_run_id": 40752065542,
+    "core_run_id": 40752450559,
     "cold_start_status": "success",
-    "cold_start_run_id": 40752065429,
-    "observed_at_utc": "2026-10-28T19:12:45Z",
-    "note": "Core/invariant run was still in progress on the Batch 109 starting SHA; handoff audit passed. Validate the new commit separately."
+    "cold_start_run_id": 40752450453,
+    "observed_at_utc": "2026-10-28T19:16:10Z",
+    "note": "Core/invariant run was still in progress on the Batch 110 starting SHA; handoff audit passed. Validate the new commit separately."
   },
-  "latest_batch": "Batch 109 — AI theorem-discovery literature and FND-006 integration; see docs/BATCH_109_AI_FORMAL_DISCOVERY_AND_FOUNDATIONAL_INTEGRATION.md",
+  "latest_batch": "Batch 110 — higher-order parity-QAOA prototype and exact reference certificate; see docs/BATCH_110_PARITY_QAOA_CIRCUIT_AND_REFERENCE_CERTIFICATE.md",
   "latest_literature_watches": [
     "docs/literature_watch/2026-10-29-ai-open-ended-theorem-discovery-and-physics-formalization.md",
     "docs/literature_watch/2026-10-29-questab-extended-tableau-multigpu-audit.md",

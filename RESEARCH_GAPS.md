@@ -1138,3 +1138,13 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Evidence:** the Busy Beaver preprint reports Lean-checked execution-acceleration rules for eleven BB(6) machines, with novel, rediscovered and proof-only cases; the Poincaré preprint formalizes an established theorem using milestone-driven human/AI work; a physics-formalization perspective warns that proof checking does not validate physical semantics. UQPU has not reproduced these workflows.  
 **Gate:** compare unconstrained and staged physics-constrained candidate search on a synthetic known-law dataset under matched compute budgets and a frozen held-out regime; bind proof results to exact source/theorem hashes and proof-assistant versions; retain false discoveries and failed/undecided proofs; require a discriminating observable and independent experiment before any physical claim.  
 **Nonclaims:** no new physical law, material/fuel/electricity result, QPU advantage, lower WACC or Data-Center-to-One-Phone closure. Canonical detail: docs/RESEARCH_GAP_FND006_AI_FORMAL_DISCOVERY_REPRO_2026-10-29.md.
+
+
+## 2026-10-29 — RG-QAOA-PARITY-001 implementation update
+
+**Status:** OPEN / PROTOTYPE-ADDED / MATCHED-BENCHMARK-NOT-RUN.  
+**Primary owner:** Lane A; evidence/integration owner Lane F.  
+**New artifacts:** software/uqpu-prototype/uqpu/parity_qaoa.py and software/uqpu-prototype/tests/test_parity_qaoa.py; canonical detail in docs/BATCH_110_PARITY_QAOA_CIRCUIT_AND_REFERENCE_CERTIFICATE.md.  
+**Advance:** a higher-order cycle-parity objective, CNOT/RZ phase-gadget lowering, fail-closed penalty threshold, exact small-instance certificate and dense-statevector regression test have been added. The product-RX mixer is not feasibility-preserving; outputs must be parity-checked and decoded.  
+**Remaining blockers:** exact-head CI for this commit, independent SDK/lowering checks, target-aware simulation, matched direct-vs-parity tests on held-out graph families, quality acceptance, and complete resource/energy/cost accounting.  
+**Nonclaims:** no real-QPU advantage, scalable resource reduction, 100x/100,000,000x economics or mission-level replacement result.
