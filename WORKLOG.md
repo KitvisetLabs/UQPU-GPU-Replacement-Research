@@ -1823,3 +1823,36 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 - Main commits: bacc23849e1f806d545b466d9586b657888ce69b; 8dda30decc2c7a9378036c38789fe44ed37cc07d; 82a71ea353f1bf70ec016f1fae07016c82f51a14; e13c186a9f8fe0ccdf6c2d9366006288d1d87004; 451794e2535d82bf7c8a2d35bd63c47d6010b3ac; 62085211979308d2d72a90486872825c6a6b1732; 8a980bc22b47c54606071052f4032c44753fe67e; 3f3a3d7e764305affe9bf90e64c556ac6a402b31; integration follow-up 88ac99c63b550d77182628b07ad346e1b08273f4.
 - Structural consistency checks pass for A–H, 28 pairs, legacy-I preservation, language/program markers and authorization boundaries. Repository Python tests and exact-head Actions remain unverified.
 - Next gate: obtain exact-head cold-start and prototype/invariant CI; repair any validator/schema failure before closing the governance gap.
+
+
+## 2026-10-28 — Batch 097: physical-semantic gate and portable signed-Max-Cut QAOA integration
+
+- Starting main SHA: d04eb7987b2e3b0c82840b77e263cf2ae8e41285.
+- Source branch: research/2026-10-28-physics-formalization-and-qaoa-contract-v2. Main mapping is pending PR creation/review; no merge is claimed.
+- Lane A: added an integrated test across the six frozen signed-Max-Cut fixtures, negative-score QUBO, Ising energy, provider-neutral PortableProgram QAOA, independent dense reference statevector and IBM/Braket/Azure dry-run adapters. The test is added but not yet executed on exact-head CI.
+- Lane F / INV-035: EquationHypothesis now has separate physical_interpretation_review_status and auditable notes. Formal proof alone cannot satisfy the candidate promotion gate. Added positive, negative and invalid-state tests.
+- Lane H: added official-preprint watches for AI-assisted physics formalization/AxQM (arXiv:2610.14059, arXiv:2609.05157) and a peer-reviewed Planckian quantum dynamical entropy rate result (PRL 137, 030402; DOI 10.1103/wd91-v58h). The latter's general bound remains explicitly conjectural.
+- Focused gaps: RG-EQN-PHYSICS-SEMANTIC-FAITHFULNESS-001 and RG-FND001-PLANCKIAN-ENTROPY-RATE-REPRO-001. Both remain open; no new physical law or UQPU reproduction is claimed.
+- A–H: A/B test integration; C output-order/probability contract only; D/G no device/fabrication evidence; E no biomass/material/fuel/fusion result; F evidence gate strengthened; H literature/publication updated. D/G co-design and the 28 unordered A–H reviews remain mandatory.
+- Foundations: FND-001 gets a bounded literature-only reproduction lead; FND-002 remains an output-information contract; FND-003 is not replaced by the CNT rate; FND-004/005 show no new validated primitive/QFT mechanism; FND-006 and EQN-001–006 remain evidence-gated. BIO-001, FUS-001 and FIN-001 remain open with no commercial or financing claim.
+- CI: local repository clone/test was blocked by DNS resolution failure. The exact starting main head had no status contexts or commit-associated workflow runs exposed; new source-head CI remains pending. Parent checks do not carry forward.
+- Mission: INV-029–035 and INV-025/026/027 remain intact; the US$10T–US$100T figure remains an ambition proxy, not a measured service/cost contract. No paid QPU job was submitted.
+- Next gate: inspect exact-head core/invariant and cold-start checks, repair failures, then proceed to target-aware simulation under the same frozen useful-output acceptance contract.
+
+
+## 2026-10-28 — Batch 097 process-validation repair
+
+- Initial source attempt: PR #148, branch research/2026-10-28-physics-formalization-and-qaoa-contract, head 013c0b10c33bf71a0d61da54870dc78df0f8466d.
+- Observed workflow: UQPU Prototype and Project Invariants #1896, run 40649592251, completed FAILURE. Python 3.11 ran 796 tests, 25 skipped; the new signed-Max-Cut portable-QAOA tests and new equation-discovery tests passed. The only reported assertion failure was test_canonical_repository_passes_cold_start_audit because evidence_class was invalid for lanes A, B, C, D, F and G. Python 3.10 and 3.12 jobs were cancelled after the matrix failed. No cold-start workflow run was exposed.
+- Process issue: the initial unmerged branch commits used Research-Sync: main rather than the required Research-Sync: pending-main. Do not merge that attempt.
+- Corrective action: recreate the same 16 changed paths from main SHA d04eb7987b2e3b0c82840b77e263cf2ae8e41285 on research/2026-10-28-physics-formalization-and-qaoa-contract-v2, use only accepted evidence-class enum values, and put the pending-main trailer on each new source commit. PR #148 is superseded and will be closed without merge once the clean PR is opened.
+- No scientific result changed. The workflow failure is a governance/metadata failure, not evidence against the equation gate or QAOA objective.
+- Next gate: exact-head core/invariant and cold-start CI on the clean v2 PR head.
+
+
+## 2026-10-28 — Clean Batch 097 PR #149 opened
+
+- Clean branch: research/2026-10-28-physics-formalization-and-qaoa-contract-v2.
+- Initial PR head: f04dbe1c1b354569cd465f7ad895fb5c217151fa; PR #149 is open and not merged.
+- The initial PR #148 attempt is superseded because its cold-start manifest used evidence_class labels outside the closed enum for lanes A/B/C/D/F/G and its unmerged commits used the wrong main trailer. Workflow #1896 failed on metadata; the new Lane A and equation-discovery tests passed in Python 3.11. The clean replay uses accepted evidence classes and pending-main trailers.
+- A follow-up sync commit records PR #149 and the initial source head; the final branch head must be rechecked for exact-head core/invariant and cold-start CI. No main merge SHA exists.

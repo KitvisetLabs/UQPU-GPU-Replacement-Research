@@ -317,3 +317,24 @@ FND-001–006 and EQN-001–008 remain evidence-gated. INV-029–035 are preserv
 
 
 **Post-publication synchronization note (2026-10-28):** initial Batch 095 commit 1f1346724019fe9d7cd850ba2a00fb98deea5c89 failed only the cold-start handoff audit because its commit message omitted the required Research-Sync: main trailer. The audit checked A–H and all 28 integration pairs; a follow-up commit with the trailer is being published. This is a governance metadata failure, not scientific or unit-test evidence.
+
+
+## Batch 097 — physical-semantic gate and portable signed-Max-Cut QAOA integration (2026-10-28)
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Added signed-Max-Cut -> negative-score QUBO -> portable QAOA -> independent ideal statevector integration test across frozen fixtures | TEST_ADDED / EXACT_HEAD_CI_PENDING | Run exact-head CI; then target-aware simulator and accepted-output quality contract |
+| B | Same signed workload lowered through IBM/Braket/Azure inspection adapters in dry-run only | DRY_RUN_ONLY | Target-specific capability, calibration and billing provenance; no paid job |
+| C | Test checks LSB bit order and normalized ideal output probabilities; no readable-memory equivalence | SOFTWARE_CONTRACT_ONLY | Measure state/I-O, bytes, transfer, reconstruction and host compute on a matched run |
+| D | Signed Hamiltonian semantics remain separate from physical device mapping | NO_DEVICE_MEASUREMENT | Target-native schedule, fidelity, leakage and control envelope |
+| E | Planckian entropy-rate paper is a source-pinned theoretical lead; no material/fuel/fusion result | LITERATURE_ONLY | Reproduce exact rate formula and maintain full biomass/fusion process boundaries |
+| F | Equation candidate promotion now requires separate physical-interpretation review notes | CODE_CHANGE / TEST_PENDING | Validate on exact-head CI and preserve empirical evidence gates |
+| G | D/G co-design preserved; no factory, yield or cost-per-good-device result | NO_MANUFACTURING_EVIDENCE | Derive measurable device/process requirements only after a validated target mapping |
+| H | AI-physics formalization/AxQM and Planckian entropy-rate watches plus two focused gaps added | LITERATURE_ONLY | Reproduce source-bounded claims and keep main/branch sync explicit |
+
+No new physical law, quantum advantage, commercial bio-oil, net fusion electricity, lower WACC, material substitution or physical Data-Center-to-Phone milestone is claimed. Source branch is pending PR review; exact-head CI is not yet observed.
+
+
+### Batch 097 process-validation note
+
+The initial source attempt's workflow #1896 failed the cold-start evidence-class audit for lanes A/B/C/D/F/G; the new Lane A and equation-discovery tests passed in Python 3.11. The clean v2 replay changes only metadata/trailer correctness and retains the same scientific nonclaims. Exact-head CI on v2 is still required.

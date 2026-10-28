@@ -949,3 +949,24 @@ The operational lane manifest and cold-start validator now define exactly A–H 
 
 **Status:** IMPLEMENTED / EXACT-HEAD CI UNVERIFIED.  
 Batch 091 reconciles AGENTS.md, the prime handoff principle, commit-sync policy, continuous cross-lane protocol, active scoreboard and DECISIONS.md to the permanent A–H operational architecture. D109 supersedes D108 only on the question of whether Lane I is a permanent operational lane. Lane I records remain preserved as a legacy workstream, and the historical nine-lane scoreboard is archived rather than deleted. Exact-head cold-start and prototype/invariant workflows remain the acceptance gate.
+
+
+## 2026-10-28 — Batch 097 focused-gap index
+
+### RG-EQN-PHYSICS-SEMANTIC-FAITHFULNESS-001
+**Status:** OPEN / CONTRACT_HARDENED_ON_BRANCH / EXACT_HEAD_CI_PENDING. A formal proof verifies its encoded statement but does not establish that the definitions, assumptions and observables faithfully represent the intended physical system. Batch 097 adds physical_interpretation_review_status and auditable notes to EquationHypothesis; the gate requires independent review in addition to the existing empirical, held-out, counterexample and replication requirements. Canonical detail: docs/RESEARCH_GAP_EQN_PHYSICS_SEMANTIC_FAITHFULNESS_2026-10-28.md. Source watch: docs/literature_watch/2026-10-28-ai-assisted-physics-formalization-axqm.md.
+
+### RG-FND001-PLANCKIAN-ENTROPY-RATE-REPRO-001
+**Status:** OPEN / LITERATURE_ONLY / NO_UQPU_REPRODUCTION. Cao, PRL 137, 030402 (2026), DOI 10.1103/wd91-v58h, derives an entropy-rate formula for a specified continuous-monitoring scheme and conjectures a broader Planckian bound. Independently reproduce the rate integral and finite-size/time-step scaling; keep the conjecture, entropy rate, computation runtime, Landauer heat and wall-plug energy separate. Canonical detail: docs/RESEARCH_GAP_FND001_PLANCKIAN_ENTROPY_RATE_REPRO_2026-10-28.md. Source watch: docs/literature_watch/2026-10-28-planckian-quantum-dynamical-entropy-bound.md.
+
+**Source/main synchronization:** the two gaps, watches, Batch 097, A/B integration test, equation-discovery code/tests, README, WORKLOG, scoreboard and cold-start manifest are on branch research/2026-10-28-physics-formalization-and-qaoa-contract-v2. They are pending PR review and are not yet main-merged. Exact-head CI is unobserved. Older historical branch/fork reconciliation debt remains open.
+
+
+## 2026-10-28 — Batch 097 process validation / source-branch repair
+
+The first source attempt (PR #148, head 013c0b10c33bf71a0d61da54870dc78df0f8466d) failed workflow #1896 because cold-start evidence_class metadata for lanes A/B/C/D/F/G was outside the validator's fixed enum. The new Lane A and equation-discovery tests passed in Python 3.11, but the full workflow failed and 3.10/3.12 were cancelled. The attempt also used Research-Sync: main on unmerged commits, contrary to the pending-main rule. The clean v2 branch recreates the same content with accepted evidence classes and Research-Sync: pending-main; PR #148 is superseded and must not be merged. This process failure does not promote or refute any scientific claim.
+
+
+## 2026-10-28 — Clean Batch 097 source mapping
+
+PR #149 is open from research/2026-10-28-physics-formalization-and-qaoa-contract-v2, with initial source head f04dbe1c1b354569cd465f7ad895fb5c217151fa and base main SHA d04eb7987b2e3b0c82840b77e263cf2ae8e41285. PR #148 is superseded after the cold-start metadata enum failure and incorrect unmerged-branch trailer; do not merge it. The v2 replay corrects both issues and uses pending-main trailers. Exact-head CI for the final PR head remains required; no main merge is claimed.
