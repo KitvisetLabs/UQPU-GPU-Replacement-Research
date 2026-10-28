@@ -973,3 +973,13 @@ The matched equation-discovery comparator now uses schema v4. `dataset_provenanc
 ### Source-access correction — 2026-10-28
 
 The official full manuscript was subsequently opened at https://arxiv.org/abs/2507.20914. The gap is therefore not blocked on access to the main manuscript; it remains open for faithful supplementary-derivation review and independent reproduction. Preserve the scope distinction: rate formula for the stated mesoscopic Gaussian-monitoring/noncritical thermal regime and ordered limits; \(\beta s_{CNT}\lesssim0.57\) when FDT is ignored; numerically optimized FDT-constrained value near 0.375; broad universality remains conjectural. The original abstract-only note is retained as history, but this correction supersedes its access limitation. No UQPU reproduction or physical-law promotion is implied.
+
+
+## 2026-10-28 — RG-EQN-008 test-time scaling / search-width factor
+**Status:** OPEN; literature-informed protocol update only.  
+**Primary owner:** Lane A; Lane F evidence/cost contract; Lane H publication.  
+**Source:** Lin et al., “Test-Time Scaling for Scientific Equation Discovery,” EMNLP 2026, https://aclanthology.org/2026.emnlp-main.354/ ; related preprint https://arxiv.org/abs/2608.28660.  
+**New information:** the paper reports search width as the dominant compute-allocation parameter on its tested LLM-SRBench tasks under fixed budgets. UQPU has not reproduced the result.  
+**Next gate:** preregister width arms under matched data provenance, whole-law-family/scale holdouts, shared seeds, pinned per-arm source/config/runtime hashes and equal total wall-clock/CPU/memory/accelerator/candidate/token/cost ceilings. Report accepted candidates, held-out error, uncertainty, constraints, counterexamples, false discoveries, failed searches/retries and total cost.  
+**Falsifier:** the width effect disappears on held-out families/scales, is caused by leakage/unequal resources, raises false discoveries, or improves wall-clock without improving accepted equations per total resource/cost. Hash declarations alone do not authenticate source bytes; manifest content validation remains open.  
+**Non-claims:** no UQPU benchmark, new physical law, quantum advantage, energy/material/fuel/fusion/finance result, or Data-Center-to-Phone result.
