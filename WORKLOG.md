@@ -2030,3 +2030,9 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - A–H remain active. Lane A is advanced at the reproducible calculation/test layer; B/C/D/G target/resource checks remain open; E retains BIO-001/FUS-001; F requires complete accepted-task economics; H preserves multilingual strategic and AI-agent/funding context. FND-002 is advanced at the proxy-calculation layer only; FND-001/003–006 and EQN-001–EQN-010 remain active.
 - No paid QPU job, new physical law, 100x/100,000,000x advantage, universal subsystem replacement, Pangola-carbon substitution, commercial low-cost bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone milestone is claimed.
 - Next gate: exact-head Actions; then independent theorem review and a bounded matched algorithm comparison with exact references, held-out coefficient profile and full resource/cost accounting.
+
+
+## 2026-10-29 — README index formatting repair
+
+- Normalized adjacent Batch entries in the README contents list onto separate Markdown bullets after Batch 112 was added. This is an index-formatting correction only; no research result or evidence classification changed.
+- The correction is published with the README and worklog in one main-branch commit; its exact-head CI must be checked separately.
