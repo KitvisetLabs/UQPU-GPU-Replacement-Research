@@ -1,8 +1,10 @@
-# Nine-Lane Scoreboard — Cold-Start Audit Checkpoint
+# Archived Historical Nine-Lane Scoreboard — Cold-Start Audit Checkpoint
 
 **Canonical start:** `4904258a94256dde2cdbadc2bec042c16e95ede5`  
 **Date:** 2026-10-16  
 **Status:** implementation commit `b62f8d7747d7e6e1d960490e8ec68b4ef6fea9bf`; cold-start run #1 and project run #728 successful
+
+> **Historical snapshot only:** this file preserves the 2026-10-16 A–I checkpoint. The permanent operational architecture is now A–H with 28 pairs. Lane I remains preserved as a legacy workstream; do not use this archived table as the current manifest.
 
 | Lane | Status | Evidence boundary | Next gate |
 |---|---|---|---|
@@ -16,7 +18,7 @@
 | H | cold-start manifest and literature decisions published | strategy/process only; no funding/WACC result | reconcile registered branches and freeze EQN harness |
 | I | vehicle/EHD/fusion plans incorporated into manifest | `MODEL_ONLY`; no levitation/propulsion demonstration | I-012 deterministic matched-mission model |
 
-All 36 A–I pairs are now enumerated in `integration/eight_lane_manifest.json`; the legacy filename is retained for compatibility, while its schema is upgraded to nine lanes. The audit checks paths, lane coverage, evidence boundaries, master-reference languages and authorization flags. It cannot verify scientific truth or inaccessible branches/forks.
+Historical 2026-10-16 statement retained for provenance only: at that checkpoint the manifest enumerated A–I/36 pairs. It is superseded operationally by the 2026-10-28 A–H manifest and validator migration. The Lane I directory and its records remain preserved as a legacy workstream. The audit checks discoverability and evidence boundaries, not scientific truth or inaccessible branches/forks.
 
 FND-001..006, EQN-001..006, BIO-001, FUS-001 and FIN-001 remain visible in the machine-readable handoff. INV-029–035 remain goals/principles rather than achieved outcomes.
 
