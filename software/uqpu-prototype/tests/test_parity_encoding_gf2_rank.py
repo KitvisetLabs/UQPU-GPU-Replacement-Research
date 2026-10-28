@@ -4,7 +4,7 @@ These bounded exhaustive tests validate cycle-space dimension independently of
 the spanning-forest implementation. They do not implement a parity-QAOA circuit
 or imply a quantum advantage.
 """
-from itertools import combinations
+from itertools import combinations, product
 import unittest
 
 from uqpu.parity_encoding import build_parity_encoding
@@ -89,6 +89,38 @@ class ParityEncodingGF2RankTests(unittest.TestCase):
                     self.assertEqual(len(encoding.cycle_constraints), expected_cycle_rank)
                     self.assertEqual(_gf2_rank(cycle_vectors), expected_cycle_rank)
 
+
+    def test_all_simple_graphs_through_five_vertices_have_exact_encode_decode_bijection(self):
+        # Exhaustively verify the logical-to-edge-parity map for all 1,099
+        # labelled simple graphs with 1..5 vertices. The physical feasible
+        # set must equal the image of logical assignments, with one canonical
+        # representative per component-wise global-flip equivalence class.
+        for vertex_count in range(1, 6):
+            possible_edges = list(combinations(range(vertex_count), 2))
+            for edge_mask in range(1 << len(possible_edges)):
+                edges = [
+                    edge for index, edge in enumerate(possible_edges)
+                    if (edge_mask >> index) & 1
+                ]
+                with self.subTest(vertex_count=vertex_count, edge_mask=edge_mask):
+                    encoding = build_parity_encoding(vertex_count, edges)
+                    encoded = {
+                        encoding.encode_logical(bits)
+                        for bits in product((0, 1), repeat=vertex_count)
+                    }
+                    valid = {
+                        bits for bits in product((0, 1), repeat=len(encoding.edges))
+                        if encoding.is_valid_physical(bits)
+                    }
+                    expected_count = 2 ** (vertex_count - len(encoding.components))
+                    self.assertEqual(len(encoded), expected_count)
+                    self.assertEqual(len(valid), expected_count)
+                    self.assertEqual(encoded, valid)
+                    for physical in valid:
+                        logical = encoding.decode_physical(physical)
+                        self.assertEqual(encoding.encode_logical(logical), physical)
+                        for component in encoding.components:
+                            self.assertEqual(logical[min(component)], 0)
 
 if __name__ == "__main__":
     unittest.main()

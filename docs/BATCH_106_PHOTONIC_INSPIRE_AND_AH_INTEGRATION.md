@@ -33,7 +33,7 @@ Added a focused Lane D gap that freezes the workload and acceptance predicate, r
 
 | Lane | This cycle | Next gate |
 |---|---|---|
-| A — programming/workloads/compiler/runtime | Confirmed exact-head CI acceptance of the independent parity-rank test; preserved the same-useful-output contract. | Parity-QAOA circuit + exact objective/decode oracle + matched simulator. |
+| A — programming/workloads/compiler/runtime | Exact-head CI passed the independent GF(2) rank test; a follow-up adds exhaustive encode/decode-bijection checks for every simple graph through five vertices (follow-up CI pending). | Parity-QAOA circuit + exact objective/decode oracle + matched simulator. |
 | B — cloud/QPU/provider integration | Provider-neutral adapters retained; no SDK target or paid QPU job used. | Simulator/dry-run first; preserve target-specific calibration, probability and price pairing. |
 | C — RAM/VRAM/HBM/storage/state/data movement | Added explicit optical-electronic conversion, readout, calibration-data, transfer and reconstruction accounting to the photonic acceptance gate. | Measure bytes, peak memory, conversion latency and full-system energy per accepted task. |
 | D — devices/chips/process/packaging | Added a peer-reviewed INSPIRE literature watch and falsifiable reproduction gap. | Pin code/data; replicate on held-out device/topology/wavelength. |
@@ -57,7 +57,7 @@ All 28 unordered A–H pairs were reviewed conceptually through the shared integ
 
 ## 6. Integration and CI
 
-Added `docs/literature_watch/2026-10-29-photonic-in-situ-physical-gradient-descent.md`, `docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md`, and an integration report. Updated README, WORKLOG, RESEARCH_GAPS and integration navigation in the same main commit so the project landing page records the change. Root strategy files and multilingual links were not overwritten.
+Added `docs/literature_watch/2026-10-29-photonic-in-situ-physical-gradient-descent.md`, `docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md`, and an integration report. A follow-up also adds an exhaustive encode/decode-bijection test over all simple graphs through five vertices and corrects the research-gap index path. Updated README, WORKLOG, RESEARCH_GAPS and integration navigation in the same main commit so the project landing page records the change. Root strategy files and multilingual links were not overwritten.
 
 Base-head CI was green: `uqpu-tests.yml` run 1970 and `cold-start-handoff.yml` run 1231. The new commit still requires its own exact-head runs. No local reproduction, photonic lab work, biomass/fusion experiment, or paid QPU execution occurred.
 

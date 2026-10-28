@@ -1099,7 +1099,7 @@ A 2026 *Biomass and Bioenergy* study reports catalytic microalgae/hardwood co-py
 **Opened:** 2026-10-29  
 **Status:** OPEN / THIRD_PARTY_EXPERIMENT / UQPU_REPRODUCTION_NOT_STARTED  
 **Primary owner:** Lane D; interfaces A/C/F/G  
-**Canonical detail:** `docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO END_2026-10-29.md`  
+**Canonical detail:** `docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md`  
 **Source:** https://doi.org/10.1038/s43588-026-01057-y
 
 The 2026-10-05 *Nature Computational Science* INSPIRE paper reports in-situ physical-gradient training on photonic integrated circuits, 0.26% relative error for trained matrices, training through scattering media beyond the native tunable-element count, 251-fold model compression and 136-fold task-specific training acceleration. These are source-reported, task-specific experimental results, not UQPU reproduction or end-to-end energy/cost evidence.

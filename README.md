@@ -16,7 +16,7 @@
 
 [Batch 106](docs/BATCH_106_PHOTONIC_INSPIRE_AND_AH_INTEGRATION.md) adds a primary-source watch on INSPIRE photonic in-situ physical gradient descent and a falsifiable end-to-end acceptance gap ([literature watch](docs/literature_watch/2026-10-29-photonic-in-situ-physical-gradient-descent.md), [Lane D gap](docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md)). The paper reports 0.26% matrix relative error, 251-fold model compression and 136-fold task-specific training acceleration in its study setting; UQPU has not reproduced these results. They are not full-system energy/cost, universal replacement, or new-physics evidence.
 
-At the starting head, exact-head GitHub Actions passed: UQPU Prototype and Project Invariants run 1970 and Autonomous Cold-Start Handoff Audit run 1231. The new commit requires its own exact-head validation. Lane A remains Priority #1; no paid QPU job was authorized or attempted.
+At the starting head, exact-head GitHub Actions passed: UQPU Prototype and Project Invariants run 1970 and Autonomous Cold-Start Handoff Audit run 1231. The new commit requires its own exact-head validation. Lane A remains Priority #1; no paid QPU job was authorized or attempted. A follow-up adds exhaustive encode/decode-bijection checks for every simple graph through five vertices and corrects the canonical gap index; this follow-up commit also requires exact-head CI.
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — independent parity-rank verification and catalytic biomass surveillance
 

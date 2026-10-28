@@ -1958,3 +1958,9 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - Defined matched workload/acceptance, held-out device/topology/wavelength, optical/control/readout/ADC-DAC/host energy, data movement, fabrication yield, drift, lifecycle-cost and independent-replication gates.
 - A–H and D/G co-design remain active. INV-025/026/027 and INV-029–035, FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated. No paid QPU job, photonic experiment, Pangola experiment or fusion experiment occurred; no commercial, economic or new-physics advantage is claimed.
 - Next gate: Lane A parity-QAOA circuit against exact objective/decoder certificates; in parallel, pin and reproduce INSPIRE source data/code and test held-out hardware under end-to-end cost/energy accounting.
+
+## 2026-10-29 — Lane A parity-map follow-up
+
+- Added exhaustive encode/decode-bijection checks across all 1,099 labelled simple graphs with one through five vertices. For each graph, the test verifies that valid physical edge assignments exactly equal the image of logical assignments and that decoding returns the canonical representative for each connected component.
+- This is a classical mapping correctness gate only; it is not a parity-QAOA circuit, quantum-advantage, or hardware-resource result. Exact-head CI is pending for this follow-up.
+- Corrected the new INSPIRE gap path in RESEARCH_GAPS.md to match the canonical filename. README records this follow-up in the same commit.
