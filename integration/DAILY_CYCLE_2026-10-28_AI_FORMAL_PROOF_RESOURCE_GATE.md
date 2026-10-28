@@ -7,7 +7,7 @@
 
 ## What was inspected
 
-The current main state was resolved dynamically. This run read the project charter, version invariants, goals, README, research operating system, open-frontier directive, Kanusanan Pongpan­na Model, strategic references, Batch 094/093, the signed-Max-Cut SDK source/tests/runner, equation-discovery and fundamental-limit contracts, the current A–H scoreboard, relevant open gaps and GitHub Actions.
+The current main state was resolved dynamically. This run read the project charter, version invariants, goals, README, research operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, Batch 094/093, the signed-Max-Cut SDK source/tests/runner, equation-discovery and fundamental-limit contracts, the current A–H scoreboard, relevant open gaps and GitHub Actions.
 
 The eight permanent root directives remain in the root. The six-language public plan links and strategic AI-agent/funding context remain preserved. INV-025/026/027 and the A–H architecture remain active; legacy Lane I is preserved as historical work, not a ninth operational lane.
 
@@ -57,3 +57,8 @@ This report, Batch 095, the source-specific literature watch, scoreboard update 
 Open PR #146 (FND-003 non-Hermitian exceptional-point QSL) and PR #147 (pending-main sync) remain open/unmerged; their branch-only artifacts are not described as main results. Other open historical PRs were not exhaustively reconciled in this cycle. The new commit's exact-head CI must be checked after publication; the parent-head green status is not inherited.
 
 **Next highest-value gate:** provider-neutral lowering plus exact/classical-reference comparison for signed Max-Cut, followed by target-aware simulation. In parallel, reconstruct a gate-specific FND-003 theorem under a frozen control budget and keep BIO-001/FUS-001/FIN-001 active. No paid QPU job without credentials, bounded budget and explicit owner consent.
+
+
+## CI reconciliation — first publication commit and metadata repair — 2026-10-28
+
+The first Batch 095 documentation commit, 1f1346724019fe9d7cd850ba2a00fb98deea5c89, triggered the cold-start handoff audit but failed because the commit message omitted the required “Research-Sync: main” trailer. The audit still confirmed all eight lanes and 28 integration pairs; the single error was missing_commit_trailer. No source code or scientific test failed in that audit. A follow-up commit adds the required trailer, removes a stray soft hyphen from the project-model name in this batch, and updates README/scoreboard synchronization notes. The new exact-head audit remains pending at authoring and must be checked independently.

@@ -314,3 +314,6 @@ This entry preserves the historical decision and is not the current operational 
 | H | Formal-proof literature watch and cross-lane synthesis published | OFFICIAL_PREPRINT_SURVEILLANCE | Independent reproduction and multilingual master-plan continuity |
 
 FND-001–006 and EQN-001–008 remain evidence-gated. INV-029–035 are preserved. No new physical law, real-QPU advantage, critical-material substitution, accepted bio-oil, net fusion electricity, lower financed principal/interest/WACC, or phone-class physical-compression milestone is claimed.
+
+
+**Post-publication synchronization note (2026-10-28):** initial Batch 095 commit 1f1346724019fe9d7cd850ba2a00fb98deea5c89 failed only the cold-start handoff audit because its commit message omitted the required Research-Sync: main trailer. The audit checked A–H and all 28 integration pairs; a follow-up commit with the trailer is being published. This is a governance metadata failure, not scientific or unit-test evidence.

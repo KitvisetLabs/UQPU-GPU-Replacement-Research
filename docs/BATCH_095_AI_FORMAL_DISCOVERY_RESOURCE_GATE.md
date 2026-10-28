@@ -68,7 +68,7 @@ Proposed falsifiable method benchmark:
 | E — Biomass/materials/bio-oil/fusion/cooling/infrastructure | MAINTAINED / OPEN EVIDENCE GATES | BIO-001 accepted-liquid cost and FUS-001 net-electric economics remain unresolved; no material, fuel or electricity result added. |
 | F — Economics/benchmarks/evidence/integration | ADVANCED / EVIDENCE CLASSIFICATION | Add cost-per-accepted-proof methodology; do not convert model tokens to dollars without the actual model/pricing basis. No accepted-task cost or wall-plug energy measured. |
 | G — Chip-manufacturing equipment/software/factory systems | MAINTAINED / D–G CO-DESIGN | Keep device requirements linked to process-window, metrology, packaging and test; no factory capability claim. |
-| H — Kanusanan Pongpan­na Model strategy/finance/publication | ADVANCED / LITERATURE WATCH | Publish the dated source-specific article; preserve the six-language master-plan links and separate strategic ambition from evidence. |
+| H — Kanusanan Pongpanna Model strategy/finance/publication | ADVANCED / LITERATURE WATCH | Publish the dated source-specific article; preserve the six-language master-plan links and separate strategic ambition from evidence. |
 
 ## 6. Foundational and equation-discovery ledger
 
@@ -100,3 +100,8 @@ The current main-head prototype/invariant workflow and cold-start audit were gre
 Open synchronization debt is explicitly retained: PR #146 (FND-003 non-Hermitian exceptional-point QSL) and PR #147 (pending-main sync) are still open and unmerged. Their branch-only artifacts must not be described as present on main. Other open historical PRs were not exhaustively reconciled in this cycle; the repository's sync ledger remains the canonical tracker.
 
 **Next highest-value gate:** Priority #1, provider-neutral lowering and exact/classical-reference acceptance for a frozen signed-Max-Cut workload, followed by target-aware simulation. In parallel, reconstruct one gate-specific FND-003 theorem under a frozen control budget, and keep BIO-001/FUS-001/FIN-001 evidence gates active. No paid QPU job without credentials, bounded budget and explicit owner consent.
+
+
+## CI reconciliation — first publication commit and metadata repair — 2026-10-28
+
+The first Batch 095 documentation commit, 1f1346724019fe9d7cd850ba2a00fb98deea5c89, triggered the cold-start handoff audit but failed because the commit message omitted the required “Research-Sync: main” trailer. The audit still confirmed all eight lanes and 28 integration pairs; the single error was missing_commit_trailer. No source code or scientific test failed in that audit. A follow-up commit adds the required trailer, removes a stray soft hyphen from the project-model name in this batch, and updates README/scoreboard synchronization notes. The new exact-head audit remains pending at authoring and must be checked independently.
