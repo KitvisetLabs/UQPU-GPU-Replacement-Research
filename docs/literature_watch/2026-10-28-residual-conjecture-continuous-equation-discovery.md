@@ -5,6 +5,8 @@
 **Project invariants:** INV-034 / INV-035  
 **Primary owner:** Lane H for literature synthesis; Lane A owns the matched-comparison protocol; Lane F owns acceptance/economic accounting.
 
+**Prior-art and metadata check:** RISR was already cited in [the 2026-10-15 equation-discovery identifiability watch](../LITERATURE_WATCH_2026-10-15_EQUATION_DISCOVERY_IDENTIFIABILITY.md); it is not counted here as a new-to-repository discovery. The official arXiv record dates it 2026-10-08, correcting that older watch's erroneous “submitted 2026-10-15” wording. The new-to-repository source additions in this cycle are SCOPE/ClosureBench and MorphingNet; RISR is integrated into the matched-comparison gap as prior art.
+
 ## Primary sources and the actual delta
 
 1. **RISR — Residual-Informed Scientific Equation Discovery with Large Language Models** (Haobo Li et al., arXiv, posted 2026-10-08): https://arxiv.org/abs/2610.11387. The method encodes aligned inputs, observations, predictions and pointwise residuals to guide formula proposals, then estimates the utility of candidate corrections. The authors report ID/OOD equation-recovery metrics on LLM-SRBench and comparisons with reported baselines using the same backbone. The genuine methodological delta is richer, input-dependent feedback rather than only a scalar aggregate fit score. These are author-reported results, not UQPU replication.

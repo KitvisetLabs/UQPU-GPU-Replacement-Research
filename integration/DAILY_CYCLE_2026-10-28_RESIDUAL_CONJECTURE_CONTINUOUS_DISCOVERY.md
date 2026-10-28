@@ -55,3 +55,8 @@ INV-034/035 feed every lane. FND-001–006 and EQN-001–008 remain active. INV-
 ## CI repair record
 
 On starting SHA 87d3d332478fac15cf1b1dc76de54de2ff6f284d, core/invariant run #1933 passed while cold-start audit #1183 failed solely for the missing `Research-Sync: main` commit trailer. This integration commit includes that trailer. The new exact-head core and cold-start runs are the acceptance gate; the failure is not marked repaired until the resulting Actions runs confirm it.
+
+
+## Literature provenance correction
+
+RISR (arXiv:2610.11387) was already recorded in the repository's 2026-10-15 identifiability watch, so it is prior art newly integrated into RG-EQN-008 rather than a new-to-repository discovery. Official arXiv metadata dates it 2026-10-08; the older watch's erroneous “submitted 2026-10-15” label has been corrected. SCOPE/ClosureBench and MorphingNet are the new-to-repository source additions.

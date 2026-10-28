@@ -9,7 +9,7 @@
 Three October 2026 equation-discovery preprints materially reinforce the repository's fail-closed method.
 
 1. **LLM-IDEA** ([arXiv:2610.11253](https://arxiv.org/abs/2610.11253), submitted 2026-10-15) places an identifiability diagnostic outside the language model and distinguishes a model that is not yet solved from one that the available experiment class cannot identify. Its reported limitations include a protocol/prompt confound and shared memory across seeds, so its p-values are not imported as project evidence.
-2. **RISR** ([arXiv:2610.11387](https://arxiv.org/abs/2610.11387), submitted 2026-10-15) ranks residual-informed correction actions and evaluates them on held-out observation clouds, unseen product actions and higher-dimensional inputs. Its held-out utility rows are separate from coefficient fitting but not from every synthetic-problem construction step. This is useful methodology, not proof of law recovery on physical data.
+2. **RISR** ([arXiv:2610.11387](https://arxiv.org/abs/2610.11387), posted 2026-10-08 per the official arXiv record; incorporated into this 2026-10-15 watch) ranks residual-informed correction actions and evaluates them on held-out observation clouds, unseen product actions and higher-dimensional inputs. Its held-out utility rows are separate from coefficient fitting but not from every synthetic-problem construction step. This is useful methodology, not proof of law recovery on physical data.
 3. **Coupled Harness–Model Evolution** ([arXiv:2610.17740](https://arxiv.org/abs/2610.17740), submitted 2026-10-15) separates fit, selection and externally scored test data and evolves executable tools before policy training. It motivates treating the harness and the candidate equation as separately versioned experimental factors.
 
 A new quantum-complexity result, **Lower Bounds for Preprocessing Attacks on Quantum Cryptography** ([arXiv:2610.02101v2](https://arxiv.org/abs/2610.02101), 2026-10-03), proves time–space–success bounds in a quantum random-oracle setting. It is relevant to FND-002 and resource accounting, but its cryptographic oracle model does not lower-bound the project's optimization, AI, memory or storage workloads and is not evidence for or against GPU replacement.
@@ -29,3 +29,8 @@ Use a synthetic ODE fixture with a deliberately confounded parameter pair. Freez
 ## Provider-documentation check
 
 Official Amazon Braket `CreateQuantumTask` documentation accessed 2026-10-15 still exposes `clientToken`, supporting the repository's explicit idempotency field. Official Azure Quantum documentation still requires an active subscription, workspace, provider and compatible target before submission. Therefore Cycle 008 keeps all submission paths disabled and records no receipt, target execution or provider cost.
+
+
+## Metadata correction — 2026-10-28
+
+The official arXiv record dates RISR (arXiv:2610.11387) to 2026-10-08. The earlier phrase “submitted 2026-10-15” in this watch was a metadata error; 2026-10-15 is the date of this literature-watch document, not the preprint's posting date. The corrected source date does not change the paper's evidence class or imply UQPU reproduction.

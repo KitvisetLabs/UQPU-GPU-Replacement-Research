@@ -1868,3 +1868,10 @@ Fresh official arXiv surveillance found RISR (2026-10-08; https://arxiv.org/abs/
 Lane A's focused track and RG-EQN-008 now specify code/license/source verification, actual artifact-byte verification, group-disjoint law-family/scale holdouts, at least 30 shared preregistered seeds, equal per-run ceilings, one cost basis, training+inference accounting, false-discovery/counterexample reporting, and a separate equal-budget active-experiment protocol. A–H and all 28 interfaces were reviewed. FND-001–006, EQN-001–008, BIO-001, FUS-001 and FIN-001 remain open and evidence-gated. INV-025/026/027 and INV-029–035 remain preserved. No paid QPU execution, accepted commercial bio-oil, net fusion-electricity, material substitution, lower WACC, extreme compute advantage or Data-Center-to-One-Phone result is claimed.
 
 CI repair: starting-head core/invariant run #1933 (40662975073) passed on `87d3d332478fac15cf1b1dc76de54de2ff6f284d`; cold-start audit #1183 (40662975151) failed solely with `missing_commit_trailer:Research-Sync: main`. This commit includes the required trailer. Exact-head results for this commit must be observed before declaring the repair verified.
+
+
+### Batch 099 provenance follow-up — 2026-10-28
+
+Repository search confirmed RISR (arXiv:2610.11387) was already cited in `docs/LITERATURE_WATCH_2026-10-15_EQUATION_DISCOVERY_IDENTIFIABILITY.md`; it is prior art integrated into RG-EQN-008, not a newly discovered source this cycle. The official arXiv record dates the preprint 2026-10-08. The prior watch's “submitted 2026-10-15” wording was corrected to distinguish preprint posting date from literature-watch date. New-to-repository source additions are SCOPE/ClosureBench (2026-10-13) and MorphingNet (2026-10-14). No evidence class or scientific claim was promoted.
+
+CI follow-up: cold-start audit run #1184 passed on commit `b25c5fac504295fbede3a83d044203081fa10514`; core/invariant run #1934 was still in progress at last observation. The metadata correction commit carries `Research-Sync: main` and requires its own exact-head CI.

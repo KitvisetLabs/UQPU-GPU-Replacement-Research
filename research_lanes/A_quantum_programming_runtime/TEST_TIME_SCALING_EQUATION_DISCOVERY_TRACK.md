@@ -56,3 +56,8 @@ The Batch 099 watch adds three distinct families to the future candidate set:
 These are external preprint results, not UQPU measurements. Do not pool their headline metrics. Keep the existing width sweep as a separate preregistered factor: first establish a matched width/resource baseline, then compare static method families under the same whole-law-family/scale-held-out contract and fixed total budgets. Active-experiment methods need a separate task suite and equal experiment-call budgets.
 
 Before any run, verify code/data/model/license availability, hash actual artifacts and certify record-level disjointness. The existing schema-v4 contract already checks declared provenance fields and shared budgets, but declared hashes alone do not authenticate source bytes. Include training plus inference costs and preserve failures, counterexamples and false discoveries. The immediate CI gate remains exact-head prototype/invariant and cold-start audit; no paid QPU job is authorized.
+
+
+### Source provenance correction — 2026-10-28
+
+RISR was already cited in the repository's 2026-10-15 identifiability watch; it is prior art for this integration, not a new-to-repository discovery. The official arXiv page dates it 2026-10-08, and the earlier watch's mistaken “submitted 2026-10-15” metadata is corrected. New source additions are SCOPE/ClosureBench and MorphingNet. Keep these method families distinct and do not pool their reported metrics.

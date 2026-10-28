@@ -20,7 +20,7 @@ The cold-start validator's scope is structural handoff/readability and commit-to
 
 ## 2. Fresh literature surveillance delta
 
-Three official arXiv records posted in October 2026 add distinct method families not represented by the previous cycle's width-only emphasis:
+The prior-art search found that RISR had already been cited in the repository's 2026-10-15 equation-discovery identifiability watch, so it is integrated as existing prior art rather than claimed as a new discovery. The official arXiv record dates RISR to 2026-10-08; the older watch's “submitted 2026-10-15” wording was a metadata error and is corrected in this commit. The new-to-repository source additions are SCOPE/ClosureBench and MorphingNet. Together, the three families extend RG-EQN-008 beyond the previous cycle's width-only emphasis:
 
 - Li et al., **RISR**, posted 2026-10-08: https://arxiv.org/abs/2610.11387 — pointwise residual representations guide formula proposals and correction selection.
 - Hu et al., **SCOPE / ClosureBench**, posted 2026-10-13: https://arxiv.org/abs/2610.18938 — multiple explicit conjectures and active experiments are evaluated with evidence/mechanism/experiment metrics.
@@ -71,3 +71,8 @@ BIO-001, FUS-001 and FIN-001 remain open. No accepted fuel, reliable net electri
 5. Continue Lane A's Priority-1 signed-Max-Cut provider-neutral lowering/reference/simulator path in parallel.
 
 **Negative evidence / stop rules:** no result is accepted if its advantage vanishes under held-out law-family or scale shifts, relies on leakage/unequal budgets, or increases constraint failures, counterexamples or false discoveries. A fit, formal proof or AI-generated expression alone is not a physical-law or technology claim.
+
+
+## 7. Literature provenance correction
+
+The repository search found RISR already cited in the 2026-10-15 identifiability watch. Batch 099 does not count RISR as newly discovered; it integrates the existing source into the current matched-comparison protocol alongside the new-to-repository SCOPE/ClosureBench and MorphingNet sources. Official arXiv metadata gives RISR's posting date as 2026-10-08. The older watch's contrary date label has been corrected. Evidence classification remains LITERATURE_ONLY.
