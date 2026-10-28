@@ -106,6 +106,13 @@ jobs:
           python -m pip install -e .
           python -m pip install -r verification-optional-requirements.txt
 
+      - name: Verify signed Max-Cut objective in pinned Qiskit
+        working-directory: software/uqpu-prototype
+        run: |
+          python -m unittest tests.test_signed_maxcut_qiskit_verification -v
+          python examples/run_signed_maxcut_qiskit_crosscheck.py --output /tmp/uqpu-signed-maxcut-qiskit-crosscheck.json
+          cat /tmp/uqpu-signed-maxcut-qiskit-crosscheck.json
+
       - name: Test SDK readout decoding
         working-directory: software/uqpu-prototype
         run: python -m unittest discover -s tests -p test_sdk_verification.py -v

@@ -6,6 +6,14 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-28 — pinned Qiskit signed-Max-Cut reconstruction and proof-failure feedback
+
+[Batch 094](docs/BATCH_094_PINNED_QISKIT_SIGNED_MAXCUT_AND_PROOF_FAILURE_CLASSIFICATION.md) adds a pinned-Qiskit 2.5.2 operator-level cross-check for the signed-Max-Cut contract. It compares direct, QUBO, Ising and every computational-basis operator-diagonal score on small signed graphs, checks the complete tied argmax set, and verifies that minimizing the negative score preserves maximizing assignments. The test is wired into the existing Qiskit verification job; it does not submit a QPU job or demonstrate QAOA quality, speedup, energy savings or cost advantage.
+
+Fresh literature surveillance also records the 2026-10-27 v2 update of Maestro: Agentic Formal Proof Development by Coordination (arXiv:2610.25920). Its failure-classification/replanning idea is a candidate method for EQN-007/008 workflow design, not UQPU reproduction or physics evidence. The follow-up requires pinned source/toolchains, equal-resource comparison, checked counterexamples and explicit false-discovery accounting.
+
+All A–H lanes, INV-025–035, FND-001–006, EQN-001–006, BIO-001, FUS-001, FIN-001, the eight permanent root directives and the six-language strategic-plan references remain preserved. No real-QPU result, new physical law, Pangola material substitution, accepted low-cost bio-oil, net fusion electricity, lower WACC or Data-Center-to-Phone milestone is claimed. The exact-head Actions run is the authority for the newly added SDK test; no paid hardware job is authorized. See [the integration report](integration/DAILY_CYCLE_2026-10-28_SIGNED_MAXCUT_AND_PROOF_FAILURE_CLASSIFICATION.md).
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — quantum-control and thermodynamic-bound surveillance
 
 [Batch 093](docs/BATCH_093_QSL_AND_THERMODYNAMIC_NO_GO_SURVEILLANCE.md) records fresh official APS sources accepted/published through 2026-10-26: quantum time-optimal control under a declared lattice control budget; a scoped no-go theorem for measurement-only steady-cycle work extraction; quantum-feedback thermodynamic accounting; and a published single-qubit optical strong-Mpemba demonstration. A separate [literature watch](docs/literature_watch/2026-10-28-quantum-time-optimal-control-and-thermodynamic-limits.md) and [FND-003 gap](docs/RESEARCH_GAP_FND003_QSL_CONTROL_BUDGET_AND_MEASUREMENT_NO_GO_2026-10-28.md) distinguish theorem assumptions, source-reported experiment and UQPU evidence. No UQPU speedup or energy advantage is inferred.
