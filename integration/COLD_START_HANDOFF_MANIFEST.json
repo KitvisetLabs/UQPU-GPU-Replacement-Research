@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T15:35:28.844Z",
+  "prepared_utc": "2026-10-28T15:40:48.465Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "3ee200dcd9c7c4b34d2d73474964648281b1cca2",
+  "canonical_start_sha": "10ba9ec2ffa6d37ac09b65092d09e70b798cd2db",
   "priority_lane": "A",
-  "current_frontier": "Batch 103 (2026-10-28): strict chronological train/validation/test holdout certificate added over the existing TIME_BLOCK split manifest; 11 synthetic tests added, exact-head CI pending. Official PMLR watch covers test-time neural-operator splitting for unseen physics regimes. Main start SHA 3ee200dcd9c7c4b34d2d73474964648281b1cca2; at cycle start core/invariant run #1967 was queued and cold-start audit #1228 passed. Signed-Max-Cut QAOA PR #149 and SDK-certificate PR #150 remain open/unmerged. Large append-only histories were fetched in full and extended, not reconstructed from excerpts. No paid QPU job authorized.",
+  "current_frontier": "Batch 104 (2026-10-28): two new BIO-001 literature leads (pilot-scale pine-sawdust char-recovery pyrolysis and ANN bagasse yield modeling) and two official pyFECONs fusion-costing preprints added as source-specific watches. No Pangola or fusion plant reproduction; no commercial cost/WACC claim. Starting main SHA 10ba9ec2ffa6d37ac09b65092d09e70b798cd2db. Batch 103's 821-test matrix passed on Python 3.10/3.11/3.12; its full core workflow was in progress at this observation, and its cold-start audit passed. This addendum's exact-head Actions must be checked. No paid QPU job authorized.",
   "required_reading": [
     "docs/BATCH_099_RESIDUAL_CONJECTURE_CONTINUOUS_EQUATION_DISCOVERY.md",
     "docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md",
@@ -169,7 +169,13 @@
     "research_lanes/A_quantum_programming_runtime/TEMPORAL_HOLDOUT_ACCEPTANCE_CONTRACT.md",
     "software/uqpu-prototype/uqpu/temporal_holdout.py",
     "software/uqpu-prototype/tests/test_temporal_holdout.py",
-    "integration/DAILY_CYCLE_2026-10-28_TEMPORAL_HOLDOUT_AND_OPERATOR_SPLITTING.md"
+    "integration/DAILY_CYCLE_2026-10-28_TEMPORAL_HOLDOUT_AND_OPERATOR_SPLITTING.md",
+    "docs/literature_watch/2026-10-28-biomass-pyrolysis-pilot-and-ann-models.md",
+    "docs/literature_watch/2026-10-28-pyfecons-fusion-costing-and-uncertainty.md",
+    "docs/RESEARCH_GAP_BIO001_PILOT_YIELD_BASIS_2026-10-28.md",
+    "docs/RESEARCH_GAP_FUS001_PYFECONS_ACCOUNT_MAPPING_2026-10-28.md",
+    "docs/BATCH_104_BIOMASS_FUSION_COSTING_LITERATURE_DELTA.md",
+    "integration/DAILY_CYCLE_2026-10-28_BIOMASS_FUSION_COSTING.md"
   ],
   "lanes": {
     "A": {

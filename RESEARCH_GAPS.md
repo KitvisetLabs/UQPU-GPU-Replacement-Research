@@ -1069,3 +1069,18 @@ The sources add distinct candidate method families: pointwise residual-condition
 The existing group-disjoint TIME_BLOCK manifest did not itself require chronological ordering. The new helper binds raw records to the canonical manifest, normalizes timezone-aware timestamps to UTC, requires strictly ordered train/validation/test windows and enforces a declared embargo. Eleven synthetic tests cover positive, reordered, malformed, overlapping, leaking and insufficient-embargo cases. The local clone failed due DNS resolution, so no local test pass is claimed; exact-head Actions remain the acceptance gate. A PASS certifies the supplied split metadata only, not source authenticity or scientific generalization.
 
 **Next gate:** pass exact-head CI; pin a real dataset/license/loader; preregister future-time plus relevant coefficient/geometry holdouts; compare methods against an independent numerical reference under matched resource ceilings. No equation, physical law, QPU advantage, material/fuel/electricity advantage or financing-rate effect is promoted.
+
+
+## 2026-10-28 — BIO-001 literature update: pilot char recovery and ANN yield basis
+
+**Status:** LITERATURE LEADS / PANGOLA ACCEPTED-LIQUID COST OPEN.  
+**Details:** [BIO-001 focused gap](docs/RESEARCH_GAP_BIO001_PILOT_YIELD_BASIS_2026-10-28.md) · [literature watch](docs/literature_watch/2026-10-28-biomass-pyrolysis-pilot-and-ann-models.md) · [Batch 104](docs/BATCH_104_BIOMASS_FUSION_COSTING_LITERATURE_DELTA.md).
+
+The pilot-scale pine-sawdust study reports char recovery and a scenario-specific minimum selling price; the bagasse ANN reports in-range yield prediction. Neither is a Pangola experiment or accepted finished-fuel cost. Reconcile dry-feed/moisture basis, mass versus volumetric yield, product quality/upgrading, energy balance, finance and non-double-counted coproduct credits; require chronological/feedstock/scale holdouts before using ANN predictions.
+
+## 2026-10-28 — FUS-001 literature update: pyFECONs cost-account reference
+
+**Status:** PUBLIC REFERENCE IDENTIFIED / PINNED REPRODUCTION OPEN.  
+**Details:** [FUS-001 focused gap](docs/RESEARCH_GAP_FUS001_PYFECONS_ACCOUNT_MAPPING_2026-10-28.md) · [literature watch](docs/literature_watch/2026-10-28-pyfecons-fusion-costing-and-uncertainty.md) · [Batch 104](docs/BATCH_104_BIOMASS_FUSION_COSTING_LITERATURE_DELTA.md).
+
+The official preprints describe standardized account-based fusion costing, architecture-specific driver tracks, uncertainty and finance/value metrics. Pin the exact code/data/license and reproduce a public case before adoption. Preserve net-electric normalization, recirculating power, component lifetime/replacement, fuel cycle, remote handling, cooling, grid, construction, decommissioning and financing. WACC/risk-premium changes remain scenarios until separately evidenced.

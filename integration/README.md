@@ -19,3 +19,7 @@ Maximize scientifically defensible coupling among A-H so that software, provider
 
 ## Latest integrated cycle — 2026-10-28 — temporal holdout
 - [Chronological temporal-holdout certificate and neural-operator splitting](DAILY_CYCLE_2026-10-28_TEMPORAL_HOLDOUT_AND_OPERATOR_SPLITTING.md) — timestamp/group split validation, 11 synthetic tests, source-specific PMLR watch and explicit non-claims.
+
+
+## Latest integrated cycle — 2026-10-28 — biomass and fusion cost accounts
+- [BIO-001 / FUS-001 literature delta](DAILY_CYCLE_2026-10-28_BIOMASS_FUSION_COSTING.md) — pilot-scale biomass yield/char recovery and pyFECONs cost-account references with source-specific evidence limits.

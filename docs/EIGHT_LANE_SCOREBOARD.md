@@ -333,3 +333,19 @@ FND-001–006 and EQN-001–008 remain evidence-gated. INV-029–035 are preserv
 | H | New official PMLR watch, batch, gap and handoff published. | LITERATURE_ONLY + PUBLICATION | Continue multilingual-preserving surveillance and independent evidence checks. |
 
 No change to INV-029–035 or INV-025/026/027 acceptance status. FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated. Main-start SHA: `3ee200dcd9c7c4b34d2d73474964648281b1cca2`; exact-head CI for the new commit must be checked.
+
+
+## Batch 104 — BIO-001 and FUS-001 literature-to-cost-account integration (2026-10-28)
+
+| Lane | Advance this cycle | Evidence | Next gate |
+|---|---|---|---|
+| A | Reuse Batch 103 temporal holdout contract for ANN/thermal-fluid model evaluation; signed-Max-Cut QAOA/SDK PRs #149/#150 remain open. | Prior 821-test matrix passed in Python 3.10/3.11/3.12; full workflow was still running at observation | Finish exact-head CI; freeze future-time/feedstock/scale holdouts. |
+| B | No cloud/provider or target execution. | NO TARGET JOB | Preserve provider/target identity and dry-run-first policy. |
+| C | No new state/data-movement evidence. | NO NEW MEASUREMENT | Record bytes, transfers, memory and reconstruction in matched model comparisons. |
+| D | No device/material/process validation. | LITERATURE ONLY | Tie component/material cost inputs to measured designs and lifetimes. |
+| E | Added pilot-scale pyrolysis/char-recovery and bagasse ANN sources; added pyFECONs fusion-cost references. | PEER-REVIEWED LITERATURE + OFFICIAL PREPRINTS | Close Pangola mass/energy/product-quality balance; reproduce a fusion costing case. |
+| F | New source-specific BIO-001 and FUS-001/FIN-001 acceptance gaps. | ACCOUNTING PROTOCOL | Map all net-electric cost drivers and full accepted-liquid cost; propagate uncertainty without double counting. |
+| G | Fusion costing literature exposes driver-specific manufacturing/learning assumptions. | MODEL/LITERATURE ONLY | Validate learning with actual factory throughput, yield and cost-per-good-unit data. |
+| H | Two dated literature watches, two focused gaps, batch/integration records. | PUBLICATION | Preserve strategic references and distinguish scenario from evidence. |
+
+INV-029–035 and INV-025/026/027 remain unchanged. FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated.

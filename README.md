@@ -11,6 +11,14 @@
 - [Foundational physics and mathematics](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) · [AI-assisted equation discovery](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md)
 - [Kanusanan Pongpanna Model](docs/KANUSANAN_PONGPANNA_MODEL.md) · [Multilingual strategic references](STRATEGIC_PLAN_REFERENCES.md)
 
+## Latest Eight-Lane research cycle — 2026-10-28 — biomass and fusion cost-account literature
+
+[Batch 104](docs/BATCH_104_BIOMASS_FUSION_COSTING_LITERATURE_DELTA.md) adds two source-specific watches: a pilot-scale pine-sawdust pyrolysis/char-recovery study plus an ANN-assisted bagasse model for BIO-001, and the public pyFECONs fusion cost-accounting framework/uncertainty extension for FUS-001/FIN-001. These are peer-reviewed literature leads and official preprints—not Pangola measurements, commercial fuel-price evidence, net fusion electricity or a WACC reduction.
+
+Focused gaps: [BIO-001 yield-basis reconciliation](docs/RESEARCH_GAP_BIO001_PILOT_YIELD_BASIS_2026-10-28.md) and [FUS-001 pyFECONs account mapping](docs/RESEARCH_GAP_FUS001_PYFECONS_ACCOUNT_MAPPING_2026-10-28.md). The [integration report](integration/DAILY_CYCLE_2026-10-28_BIOMASS_FUSION_COSTING.md) preserves A–H, D/G co-design, FND-001–006, EQN-001–010 and INV-029–035. Batch 103's 821-test Python matrix passed on 3.10/3.11/3.12; its full core workflow was still running at the time of this addendum. This new head requires its own exact-head Actions.
+
+Starting main SHA: `10ba9ec2ffa6d37ac09b65092d09e70b798cd2db`. No external model/code reproduction, Pangola experiment, fusion plant experiment, QPU job, commercial bio-oil/fusion claim or lower-WACC claim is made.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — strict temporal holdout and neural-operator splitting
 
 [Batch 103](docs/BATCH_103_TEMPORAL_HOLDOUT_CERTIFICATE_AND_OPERATOR_SPLITTING.md) adds a strict chronological train/validation/test certificate on top of the existing group-disjoint split manifest, with 11 deterministic synthetic tests. The new [official PMLR literature watch](docs/literature_watch/2026-10-28-neural-operator-splitting-heldout-regimes.md) covers test-time neural-operator composition for unseen physics regimes. This is a split-integrity contract and literature-only method lead, not a PDE reproduction or physical-law claim.
