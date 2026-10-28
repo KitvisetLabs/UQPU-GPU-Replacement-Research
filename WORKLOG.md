@@ -1848,3 +1848,11 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 - Corrective action: recreate the same 16 changed paths from main SHA d04eb7987b2e3b0c82840b77e263cf2ae8e41285 on research/2026-10-28-physics-formalization-and-qaoa-contract-v2, use only accepted evidence-class enum values, and put the pending-main trailer on each new source commit. PR #148 is superseded and will be closed without merge once the clean PR is opened.
 - No scientific result changed. The workflow failure is a governance/metadata failure, not evidence against the equation gate or QAOA objective.
 - Next gate: exact-head core/invariant and cold-start CI on the clean v2 PR head.
+
+
+## 2026-10-28 — Clean Batch 097 PR #149 opened
+
+- Clean branch: research/2026-10-28-physics-formalization-and-qaoa-contract-v2.
+- Initial PR head: f04dbe1c1b354569cd465f7ad895fb5c217151fa; PR #149 is open and not merged.
+- The initial PR #148 attempt is superseded because its cold-start manifest used evidence_class labels outside the closed enum for lanes A/B/C/D/F/G and its unmerged commits used the wrong main trailer. Workflow #1896 failed on metadata; the new Lane A and equation-discovery tests passed in Python 3.11. The clean replay uses accepted evidence classes and pending-main trailers.
+- A follow-up sync commit records PR #149 and the initial source head; the final branch head must be rechecked for exact-head core/invariant and cold-start CI. No main merge SHA exists.
