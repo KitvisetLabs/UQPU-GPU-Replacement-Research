@@ -1,0 +1,60 @@
+{
+  "integration_id": "INT-20261028-FND003-NH-EP-001",
+  "date": "2026-10-28",
+  "status": "PROPOSED",
+  "primary_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "cross_lane_owners": [
+    "B_cloud_qpu_provider_integration",
+    "C_memory_state_data_movement",
+    "D_device_chip_fabrication_packaging",
+    "E_materials_energy_fuel_fusion_cooling",
+    "F_evidence_benchmarks_economics",
+    "G_manufacturing_equipment_factory_systems"
+  ],
+  "source_main_sha": "b3252a556b61b7e566d5e057606c1f2e917d79e8",
+  "source_artifacts": [
+    "docs/literature_watch/2026-10-28-nonhermitian-ep-speedup-and-transition-rate-qsl.md",
+    "docs/RESEARCH_GAP_FND003_NONHERMITIAN_EP_2026-10-28.md"
+  ],
+  "hypothesis": "Under a matched initial state, target fidelity, control/coupling budget and physical accounting boundary, an exceptional-point route may reduce total time, energy or cost per accepted target-subspace output relative to a Hermitian baseline.",
+  "incumbent_assumption": "Hermitian/unitary evolution under a declared interaction or spectral-width bound.",
+  "alternative_model": "Non-Hermitian/PT-symmetric effective trajectory near an exceptional point, embedded in a complete open-system or dilation model that includes unsuccessful outcomes.",
+  "mandatory_checks": [
+    "units",
+    "normalization",
+    "trace preservation of complete channel",
+    "complete positivity where applicable",
+    "causality/no-signalling",
+    "Hermitian limiting case",
+    "control/coupling budget parity",
+    "energy accounting for controller/reservoir/reset/cooling"
+  ],
+  "heldout_dimensions": [
+    "coupling strength",
+    "exceptional-point detuning",
+    "noise level",
+    "initial-state family"
+  ],
+  "outputs": [
+    "target fidelity",
+    "theoretical QSL",
+    "optimized model time",
+    "conditional success time",
+    "success probability",
+    "accepted-output wall-clock time",
+    "measured energy if available",
+    "total cost per accepted output",
+    "failed attempts and uncertainty"
+  ],
+  "falsifier": "No robust accepted-output improvement under matched quality/control assumptions, or any apparent gain is erased by retries, failed outputs, control, reset, dissipation, measurement or cooling.",
+  "evidence_class": [
+    "LITERATURE_ONLY",
+    "PREREGISTERED_GAP"
+  ],
+  "real_qpu_executed": false,
+  "paid_job_submitted": false,
+  "physical_law_claim": false,
+  "mission_claim": false,
+  "next_gate": "Verify exact-head CI for signed-Max-Cut certificate runner, then run two independent offline open-system evaluators with frozen inputs."
+}
