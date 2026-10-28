@@ -7,7 +7,7 @@
 
 Focused gaps: [formalization faithfulness](docs/RESEARCH_GAP_EQN_PHYSICS_SEMANTIC_FAITHFULNESS_2026-10-28.md) and [Planckian entropy-rate reproduction](docs/RESEARCH_GAP_FND001_PLANCKIAN_ENTROPY_RATE_REPRO_2026-10-28.md). The [integration report](integration/DAILY_CYCLE_2026-10-28_PHYSICS_SEMANTIC_GATE_AND_QAOA.md) records all 28 A–H pair reviews and mission/evidence boundaries. The [Lane A gate](research_lanes/A_quantum_programming_runtime/SIGNED_MAXCUT_PINNED_SDK_RECONSTRUCTION_GATE.md) now distinguishes the previously CI-passed pinned-SDK semantic check from the new pending portable-QAOA integration test.
 
-Starting main SHA: d04eb7987b2e3b0c82840b77e263cf2ae8e41285. No combined-status contexts or commit-associated workflow runs were exposed for that exact head; the source branch requires its own exact-head CI before acceptance. Main synchronization is pending PR review. No paid QPU job was submitted, and no real-QPU, physical-law, material/fuel/fusion-economics, lower-WACC or physical Data-Center-to-Phone claim is made.
+Starting main SHA: d04eb7987b2e3b0c82840b77e263cf2ae8e41285. No combined-status contexts or commit-associated workflow runs were exposed for that exact head; the source branch requires its own exact-head CI before acceptance. Source-to-main status is recorded in [the pending sync note](integration/SOURCE_TO_MAIN_SYNC_PENDING_2026-10-28_BATCH097.md); PR [#148](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/148) is open and not merged. No paid QPU job was submitted, and no real-QPU, physical-law, material/fuel/fusion-economics, lower-WACC or physical Data-Center-to-Phone claim is made.
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — dimensionality-aware equation-discovery gate
 
