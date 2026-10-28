@@ -1,5 +1,4 @@
 import importlib.util
-import itertools
 import math
 import unittest
 
@@ -19,7 +18,10 @@ class SignedMaxCutQiskitVerificationTests(unittest.TestCase):
             with self.subTest(fixture=name):
                 lowering = compile_signed_maxcut(vertex_count, edges)
                 sdk_scores = qiskit_signed_maxcut_scores(lowering)
-                assignments = list(itertools.product((0, 1), repeat=vertex_count))
+                assignments = [
+                    tuple((basis_index >> qubit) & 1 for qubit in range(vertex_count))
+                    for basis_index in range(1 << vertex_count)
+                ]
                 direct_scores = [lowering.direct_score(bits) for bits in assignments]
                 qubo_scores = [lowering.qubo_score(bits) for bits in assignments]
                 ising_scores = [lowering.ising_score(bits) for bits in assignments]

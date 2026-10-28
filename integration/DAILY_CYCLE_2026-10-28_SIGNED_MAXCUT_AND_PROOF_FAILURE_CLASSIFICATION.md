@@ -30,3 +30,8 @@ A receives the executable priority gate. B remains provider-neutral and no-submi
 The core/invariant workflow and cold-start audit passed on the starting SHA. The new Qiskit job must be read from the new commit's exact-head Actions run. No result is inferred from the parent. README.md was updated without deleting historical sections. The large append-only WORKLOG.md and RESEARCH_GAPS.md remain unsynchronized by this commit; this report is the durable, dated handoff artifact.
 
 **Next gate:** exact-head Qiskit verification, then inspect every assignment-level certificate row before enabling target-aware simulation. Real QPU execution remains unapproved.
+
+
+## CI failure diagnosis and correction — 2026-10-28
+
+The first exact-head run passed all three core Python matrices and failed only in the new Qiskit test's assignment ordering. Qiskit's operator diagonal is indexed by computational-basis integer with q0 as the least-significant bit; itertools.product yields a different order when zipped against the diagonal. The SDK helper's internal per-index direct-score assertion passed, and the separate nonadjacent-edge/constant check passed. The test now generates tuples from each basis index explicitly. A new exact-head Actions run is required; the original failure remains preserved as a regression finding, not silently overwritten.

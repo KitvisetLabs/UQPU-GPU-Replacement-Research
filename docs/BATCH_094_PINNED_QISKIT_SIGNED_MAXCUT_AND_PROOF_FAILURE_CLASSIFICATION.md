@@ -68,3 +68,10 @@ INV-025/026/027 and both 100,000,000-unit moonshots remain falsifiable, unachiev
 The full README.md was fetched and updated by inserting this cycle at the top, preserving its prior contents. The large append-only WORKLOG.md and RESEARCH_GAPS.md were not rewritten; this Batch 094 is the dated handoff/gap record and their aggregate synchronization remains tracked debt until a safe full-file append is made.
 
 **Next highest-value gate:** read the new exact-head Actions result. If the Qiskit test fails, retain the failing assignment/operator as a minimal counterexample and repair the mapping. If it passes, preserve the JSON certificate and proceed to the next independent SDK/objective gate; do not skip directly to target simulation or QPU submission. Paid hardware remains prohibited without credentials, bounded budget and explicit user consent.
+
+
+## Exact-head CI observation and correction — 2026-10-28
+
+The first post-write core/invariant workflow (run 40625399359) completed the Python 3.10, 3.11 and 3.12 unit/invariant jobs successfully. The pinned Qiskit verification job then failed in the new test's fixture zip: itertools.product enumerates the last tuple element fastest, while Qiskit matrix diagonal index k corresponds to q0 as the least-significant bit. The SDK helper's own basis-index-by-basis-index direct-score assertion did not fail, and the nonadjacent-edge/constant test passed. This isolates the observed failure to the test harness's assignment ordering, not a demonstrated operator mismatch.
+
+The test now constructs each assignment directly from basis index k with bit q = (k >> q) & 1, matching the helper's documented convention. The correction is committed separately with this README update. **Status after correction: exact-head CI rerun required; no passing SDK result is claimed yet.** Preserve the initial failed run as a useful regression record.
