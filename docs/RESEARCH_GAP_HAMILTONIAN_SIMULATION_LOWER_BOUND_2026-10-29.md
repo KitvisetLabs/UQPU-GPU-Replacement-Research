@@ -47,3 +47,8 @@ Freeze a small bounded-degree Hamiltonian family, exact reference, three coeffic
 ## Non-claims
 
 No UQPU reproduction, real-QPU execution, new physical law, QPU advantage, 100x/100,000,000x cost advantage, GPU/CPU/NPU/RAM/VRAM/storage replacement, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone result is established.
+
+
+## Implementation delta — 2026-10-29 (Batch 112)
+
+Added `software/uqpu-prototype/uqpu/hamiltonian_lower_bound.py` to calculate the coefficient-tail trade-off proxy for each cut \(K=0,\ldots,L\), with fail-closed checks for positive finite normalized non-increasing coefficients, positive finite time, and \(0<\epsilon<1\). Regression tests cover a hand-calculated uniform profile, a non-uniform profile, malformed inputs and the MODEL_ONLY/non-finite-instance claim boundary. This advances the reproducible calculation step only; it does not independently validate the theorem, prove the hard-instance/access assumptions for a UQPU workload, or establish finite-size gates, physical runtime, energy or economics. Exact-head CI remains required.

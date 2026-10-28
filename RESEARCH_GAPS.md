@@ -1159,3 +1159,12 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Gate:** pin the source version, independently review theorem assumptions, freeze uniform/power-law/exponential coefficient profiles plus a held-out profile, compare direct product-formula/qDRIFT/composite-qDRIFT under a common trace-distance target, and include oracle construction, state preparation, compilation, host work, memory/I/O and output verification.  
 **Scope:** the classical-query result does not directly bound coherent block-encoding access; specialized Hamiltonian or input-state structure may be outside the generic theorem. Gate/query complexity is not physical pulse time, energy or cost.  
 **Nonclaims:** no UQPU reproduction, new physical law, QPU advantage, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone result. Canonical detail: docs/RESEARCH_GAP_HAMILTONIAN_SIMULATION_LOWER_BOUND_2026-10-29.md.
+
+
+## 2026-10-29 — RG-A-FND002-HAMILTONIAN-SIM-LOWER-BOUND-001 — Batch 112 implementation update
+
+**Advance:** `software/uqpu-prototype/uqpu/hamiltonian_lower_bound.py` now evaluates the coefficient-tail trade-off expression across all cuts with input validation; `software/uqpu-prototype/tests/test_hamiltonian_lower_bound.py` adds four regression tests. The focused gap document records the exact acceptance contract.
+
+**Remaining blockers:** exact-head CI, independent theorem-assumption review, exact small-instance evolution, matched direct-product-formula/qDRIFT/composite-qDRIFT comparisons, held-out coefficient profile, and complete oracle/state/I/O/host/energy/accepted-task cost accounting.
+
+**Nonclaims:** the helper is an asymptotic expression proxy only. No finite-size lower-bound proof, physical runtime/energy bound, UQPU reproduction, real-QPU advantage, mission-level replacement, material/fuel/electricity benefit or financing-rate result is established.
