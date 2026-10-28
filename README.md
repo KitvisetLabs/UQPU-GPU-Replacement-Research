@@ -1,6 +1,13 @@
 # UQPU: Universal Quantum Processing Unit
 ## Extreme Data-Center-to-Phone Computing Research Program
 
+## Latest Eight-Lane research cycle — 2026-10-28 — quantum dynamical entropy bound
+
+The new [FND-003 literature watch](docs/literature_watch/2026-10-28-planckian-quantum-dynamical-entropy-fnd003.md) records Xiangyu Cao's *Physical Review Letters* paper (published 2026-07-13) on a continuous-monitoring quantum dynamical-entropy rate and a **conjectured**, not proven universal Planckian bound. This is distinct from the existing thermalization-machine theorem and is not a generic gate-time, accepted-task, or wall-plug-energy bound. The [focused gap](docs/RESEARCH_GAP_FND003_QUANTUM_DYNAMICAL_ENTROPY_2026-10-28.md) requires full-text reconstruction, dimensional/limit checks, held-out finite-size tests and counterexample search before any implementation.
+
+The [integration report](integration/DAILY_CYCLE_2026-10-28_QUANTUM_DYNAMICAL_ENTROPY_BOUND.md) records A–H status and the current CI boundary. At the starting head, Python 3.10/3.11/3.12 and several SDK/reference jobs passed, but bounded-prefix/eight-query/ten-query QSVT jobs were still in progress. Exact-head CI for this update remains to be checked. No physical law, real-QPU advantage, accepted bio-oil, net fusion electricity, material substitution, lower WACC, or Data-Center-to-One-Phone milestone is claimed.
+
+---
 ## Latest Eight-Lane research cycle — 2026-10-28 — equation-discovery provenance v4
 
 [Batch 097](docs/BATCH_097_METHOD_PROVENANCE_BOUNDARY.md) hardens the canonical [matched equation-discovery comparator](software/uqpu-prototype/uqpu/equation_discovery_comparison.py) to schema v4. It now binds dataset source/license/acquisition provenance and requires each method's source revision, configuration/model/prompt bundle and runtime/dependency environment hashes to remain fixed across its preregistered seeds. Regression tests cover provenance drift and mismatched dataset provenance; [RG-EQN-008](docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md) and the [cross-lane integration report](integration/DAILY_CYCLE_2026-10-28_METHOD_PROVENANCE_GATE.md) record the acceptance boundary. No 30-seed method benchmark ran and no equation or physical law is promoted.
