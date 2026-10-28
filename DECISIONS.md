@@ -807,3 +807,14 @@ providers or targets.
 job completion alone cannot establish useful quality or economics. Separating
 preflight from execution prevents accidental paid submission, post-result
 threshold changes and mixed-provenance cost claims.
+
+
+## 2026-10-28 — D109: Reaffirm A–H as the only permanent operational lane map
+
+**Decision:** Under INV-024/028 and the canonical Research Operating System, the permanent operational architecture is exactly lanes A–H, with 28 unordered integration-pair reviews and Lane A Priority #1. The historical Lane I vehicle/levitation directory and its I-012 research are preserved as a legacy workstream, not deleted or silently merged into another lane. Every new substantive legacy-workstream artifact must have one primary A–H owner, stable cross-lane interfaces and the same evidence/commit-sync controls as all other work.
+
+**Reason:** The canonical operating system, lane-directory policy and interface contract have long defined A–H, while the legacy manifest and cold-start validator had drifted to A–I. The drift made the cold-start contract contradict the permanent architecture and could silently redefine project scope. The 2026-10-28 manifest/validator/test migration restores consistency without discarding historical work.
+
+**Supersession boundary:** D108 remains a historical decision about the 2026-10-16 nine-lane checkpoint and commit synchronization. D109 supersedes D108 only where it labels Lane I a permanent operational lane. Commit-level synchronization, evidence discipline, multilingual master-plan preservation, paid-execution authorization and all INV-025–035 remain in force.
+
+**Evidence/CI:** governance/documentation change only. Exact-head GitHub Actions status has not been observed; do not treat the migration as CI-verified until the cold-start audit and prototype/invariant workflow pass on the exact head.
