@@ -13,13 +13,25 @@ VERSION_INVARIANTS = REPO_ROOT / "VERSION_INVARIANTS.md"
 
 
 class LaneDirectoryPolicyTests(unittest.TestCase):
-    def test_all_nine_lane_directories_exist(self) -> None:
+    def test_all_eight_operational_lane_directories_exist(self) -> None:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-        self.assertEqual(set(manifest["lanes"]), set("ABCDEFGHI"))
+        self.assertEqual(set(manifest["lanes"]), set("ABCDEFGH"))
         for lane_id, lane in manifest["lanes"].items():
             folder = REPO_ROOT / lane["folder"]
             self.assertTrue(folder.is_dir(), f"Lane {lane_id} folder is missing: {folder}")
             self.assertTrue((folder / "README.md").is_file())
+
+    def test_legacy_lane_i_is_preserved_outside_operational_map(self) -> None:
+        manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        self.assertNotIn("I", manifest["lanes"])
+        legacy = manifest["legacy_workstreams"]["I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION"]
+        self.assertEqual(
+            legacy["status"],
+            "PRESERVED_LEGACY_WORKSTREAM_NOT_A_PERMANENT_OPERATIONAL_LANE",
+        )
+        folder = REPO_ROOT / legacy["folder"]
+        self.assertTrue(folder.is_dir(), f"Legacy workstream folder is missing: {folder}")
+        self.assertTrue((folder / "README.md").is_file())
 
     def test_directory_depth_never_exceeds_policy(self) -> None:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
@@ -37,9 +49,9 @@ class LaneDirectoryPolicyTests(unittest.TestCase):
 
     def test_all_lane_pairs_are_reviewed_for_possible_integration(self) -> None:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-        expected = {f"{a}<->{b}" for a, b in combinations("ABCDEFGHI", 2)}
+        expected = {f"{a}<->{b}" for a, b in combinations("ABCDEFGH", 2)}
         actual = set(manifest["integration_review_pairs"])
-        self.assertEqual(len(expected), 36)
+        self.assertEqual(len(expected), 28)
         self.assertEqual(actual, expected)
         self.assertIn("D<->G", set(manifest["mandatory_high_leverage_links"]))
 

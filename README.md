@@ -6,7 +6,15 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
-## Latest Eight-Lane research cycle — 2026-10-28 — AI discovery reproduction and A–H handoff repair
+## Latest Eight-Lane research cycle — 2026-10-28 — literature provenance and A–H CI repair
+
+[Batch 092](docs/BATCH_092_COSR_STATUS_CONFLICT_AND_CI_REPAIR.md) fixes two stale lane-policy tests that still expected the superseded nine-lane A–I map after the canonical manifest had moved to A–H/28 pair reviews. The revised tests require A–H, preserve Lane I explicitly as a legacy workstream, and retain the 16-level depth/D–G co-design checks. The prior core run failed on those two assertions; the post-fix exact-head GitHub Actions result must pass before the architecture gap is closed.
+
+The new [literature watch](docs/literature_watch/2026-10-28-progressive-symbolic-regression-status-and-formal-theorem-discovery.md) records a material provenance conflict: the APS accepted-paper record for Chain of Symbolic Regression is dated 2026-10-06, while the same-title arXiv record currently says withdrawn because of methodological flaws in its Rayleigh–Bénard convection case. This is treated as a source-status warning, not a validated discovery. A [focused gap](docs/RESEARCH_GAP_COSR_WITHDRAWAL_STATUS_CONFLICT_2026-10-28.md) blocks adoption pending exact-version reconciliation. A formal theorem-search preprint is also logged strictly as a propositional-logic method lead, not physics evidence.
+
+The permanent A–H architecture, INV-025–035, FND-001–006, EQN-001–006, BIO-001, FUS-001, FIN-001 and six-language strategic references remain preserved. No real-QPU, new physical law, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-Phone milestone is claimed. See [the integration report](integration/DAILY_CYCLE_2026-10-28_COSR_STATUS_AND_AH_CI_REPAIR.md).
+
+## Previous Eight-Lane research cycle — 2026-10-28 — AI discovery reproduction and A–H handoff repair
 
 [Batch 091](docs/BATCH_091_AI_DISCOVERY_REPRODUCTION_AND_AH_HANDOFF_REPAIR.md) records a new-to-main official preprint watch for Brenner, Cohen-Addad & Woodruff, arXiv:2603.04735, on LLM-guided tree search with executable numerical feedback for a cosmic-string radiation integral. The [focused reproduction gap](docs/RESEARCH_GAP_AI_COSMIC_STRING_INTEGRAL_REPRODUCTION_2026-10-28.md) requires independent high-precision evaluators, held-out parameter tests, endpoint/large-harmonic counterexamples, explicit failed/undecided candidate accounting and independent symbolic review. This is an external preprint, not a UQPU reproduction or a new physical law.
 
