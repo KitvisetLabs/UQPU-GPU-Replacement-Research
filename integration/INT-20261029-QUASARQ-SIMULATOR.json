@@ -1,0 +1,54 @@
+{
+  "schema": "uqpu-integrated-evidence-v1",
+  "id": "INT-20261029-QUASARQ-SIMULATOR",
+  "created_date": "2026-10-29",
+  "primary_owner": "Lane A — quantum programming/workloads/compiler/runtime",
+  "interfaces": [
+    "B",
+    "C",
+    "F",
+    "H"
+  ],
+  "source": {
+    "id": "LIT-2026-10-01-QUASARQ",
+    "title": "GPU-Accelerated Quantum Simulation of Stabilizer Circuits",
+    "authors": [
+      "Muhammad Osama",
+      "Dimitrios Thanos",
+      "Alfons Laarman"
+    ],
+    "venue": "Quantum",
+    "volume": 10,
+    "article": 2225,
+    "publication_date": "2026-10-01",
+    "doi": "10.22331/q-2026-10-01-2225",
+    "official_url": "https://quantum-journal.org/papers/q-2026-10-01-2225/",
+    "preprint_url": "https://arxiv.org/abs/2603.14641",
+    "code_url": "https://github.com/muhos/QuaSARQ"
+  },
+  "evidence_class": "PEER_REVIEWED_COMPUTATIONAL_BENCHMARK",
+  "project_status": "LITERATURE_ONLY / UQPU_REPRODUCTION_NOT_STARTED",
+  "source_reported_results": {
+    "scope": "stabilizer/Clifford circuit simulation",
+    "largest_reported_benchmark": "up to 180,000 qubits, depth 1,000, approximately 130 million gates",
+    "reported_runtime_speedup": "up to 105x on selected benchmark instances",
+    "reported_energy_reduction": "over 80% on selected demanding instances",
+    "verification_note": "Source-reported results; UQPU has not reproduced them."
+  },
+  "applicability_boundary": "Not a generic simulator for arbitrary non-Clifford QAOA rotations. Do not substitute for the parity-QAOA simulation gate except for genuinely Clifford subcircuits or separate stabilizer/QEC workloads.",
+  "acceptance_contract": [
+    "Pin source commit, dependencies, hardware, drivers, benchmark suite, seeds and manifests.",
+    "Verify exact output/syndrome correctness before timing.",
+    "Separate warm-up/setup, steady-state and end-to-end runtime.",
+    "Record throughput, peak host/device memory, transfer bytes/time, host work, retries and energy where measurable.",
+    "Compare matched baseline versions/configurations and test a held-out circuit family.",
+    "Preserve failed cases and label unmeasured energy components UNKNOWN."
+  ],
+  "nonclaims": [
+    "No real-QPU execution or quantum advantage.",
+    "No generic QAOA simulation or parity-QAOA result.",
+    "No GPU/CPU/NPU/RAM/VRAM/storage replacement.",
+    "No Data-Center-to-One-Phone, material, bio-oil, fusion, finance or new-physics result."
+  ],
+  "next_gate": "Implement parity-QAOA against exact small-graph objective/decoder certificates; in parallel reproduce a bounded QuaSARQ stabilizer workload with full task-boundary accounting."
+}

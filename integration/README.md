@@ -13,6 +13,10 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — GPU stabilizer simulation and parity-QAOA
+
+- [Batch 107](../docs/BATCH_107_GPU_STABILIZER_SIMULATOR_AND_AH_INTEGRATION.md), [literature watch](../docs/literature_watch/2026-10-29-gpu-accelerated-stabilizer-simulation.md), [reproduction gap](../docs/RESEARCH_GAP_QUASARQ_STABILIZER_REPRODUCTION_2026-10-29.md) and [integration record](DAILY_CYCLE_2026-10-29_GPU_STABILIZER_SIMULATION_AND_PARITY_QAOA.md) document the new-to-repository QuaSARQ benchmark. Its scope is classical Clifford/stabilizer simulation; no QPU or general QAOA advantage is claimed.
+
 ## Latest integrated cycle — 2026-10-29 — photonic in-situ training
 - [Batch 106](../docs/BATCH_106_PHOTONIC_INSPIRE_AND_AH_INTEGRATION.md) and [daily integration report](DAILY_CYCLE_2026-10-29_PHOTONIC_IN_SITU_TRAINING.md) add a source-specific INSPIRE photonic training watch and a falsifiable end-to-end acceptance gap. The source reports task-specific physical-training metrics; UQPU has not reproduced them. No energy/cost advantage or new physical law is claimed.
 

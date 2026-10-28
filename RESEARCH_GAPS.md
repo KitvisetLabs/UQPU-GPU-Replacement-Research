@@ -1105,3 +1105,14 @@ A 2026 *Biomass and Bioenergy* study reports catalytic microalgae/hardwood co-py
 The 2026-10-05 *Nature Computational Science* INSPIRE paper reports in-situ physical-gradient training on photonic integrated circuits, 0.26% relative error for trained matrices, training through scattering media beyond the native tunable-element count, 251-fold model compression and 136-fold task-specific training acceleration. These are source-reported, task-specific experimental results, not UQPU reproduction or end-to-end energy/cost evidence.
 
 Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; reproduce the stated matrix metric; freeze a shared useful-workload/quality predicate for digital, in-silico photonic and in-situ training; test a second device plus held-out topology/wavelength/temperature; count optical source/loss, tuning/control, detector/readout, ADC/DAC, host, calibration, data movement, yield, packaging, drift, service life and capital allocation. Compare energy and total cost per accepted task; reject the advantage hypothesis if overheads or held-out failures erase it. No new physical law, universal accelerator replacement, phone-compression, bio-oil, fusion, WACC or paid-QPU claim follows.
+
+## 2026-10-29 — RG-A-QUASARQ-STABILIZER-REPRO-001 — GPU stabilizer simulation
+
+**Status:** OPEN / LITERATURE_ONLY / UQPU_REPRODUCTION_NOT_STARTED.  
+**Primary owner:** Lane A; interfaces B/C/F/H.  
+**Source:** Osama, Thanos and Laarman, *Quantum* 10, 2225 (2026-10-01), https://doi.org/10.22331/q-2026-10-01-2225.  
+**Objective:** reproduce a bounded QuaSARQ stabilizer/Clifford workload with pinned source/environment, exact output or syndrome checks, matched Stim/other baseline versions, held-out circuits, runtime/throughput, peak host/device memory, transfer bytes/time, host work, retries and energy where measurable.  
+**Blockers:** UQPU has not pinned or reproduced the source code, environment, hardware or benchmark suite. Reported up-to-105x runtime speedup and over-80% energy reduction are source-reported on selected cases only.  
+**Scope boundary:** classical stabilizer simulation, not real-QPU execution and not a generic simulator for arbitrary non-Clifford QAOA rotations. Do not substitute for the parity-QAOA simulation gate.  
+**Unlock:** exact correctness on a frozen subset, reproducible measurements, a held-out circuit family, complete task-boundary accounting and independent review. Unknown energy components remain unknown, not zero.  
+**Nonclaims:** no QPU advantage, GPU replacement, readable classical-memory equivalence, new physical law, commercial fuel/fusion, lower WACC or Data-Center-to-One-Phone result. See `docs/RESEARCH_GAP_QUASARQ_STABILIZER_REPRODUCTION_2026-10-29.md`.

@@ -365,3 +365,19 @@ INV-029–035 and INV-025/026/027 remain unchanged. FND-001–006, EQN-001–010
 | H | Published Batch 105 and preserved six-language strategic references | RESEARCH_PUBLICATION | Independent replication and multilingual continuity |
 
 Batch 105 does not close RG-QAOA-PARITY-001, BIO-001, FUS-001 or FIN-001 and does not promote any mission-level claim.
+
+
+## Batch 107 — GPU stabilizer simulation and parity-QAOA gates (2026-10-29)
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Starting-head exhaustive graph-parity encode/decode test passed CI; QuaSARQ source watch and reproduction gap added. | SOFTWARE_CONTRACT + LITERATURE_ONLY | Implement parity-QAOA with exact objective/decoder certificates; separately reproduce stabilizer simulator. |
+| B | Provider-neutral cloud paths retained; no new SDK or paid target run. | LITERATURE_ONLY | Simulator/dry-run first; keep target-specific calibration and price paired. |
+| C | Tableau memory, transfer, reconstruction and peak-memory requirements made explicit. | ACCEPTANCE_CONTRACT | Measure host/device I/O and memory on a frozen workload. |
+| D | No device/fabrication result; classical GPU simulation is not physical QPU evidence. | LITERATURE_ONLY | Target-native device/circuit resource gate after Lane A correctness. |
+| E | BIO-001/FUS-001 unchanged; no new Pangola or fusion experiment. | OPEN_GAPS | Accepted-liquid mass/energy/cost and net reliable fusion electricity remain separate gates. |
+| F | Matched simulator reproduction and total task-cost boundary added. | ACCEPTANCE_CONTRACT | Reproduce pinned baseline and report energy/cost per accepted correct sample. |
+| G | D/G co-design preserved; no manufacturing/yield data. | NO_NEW_MANUFACTURING_EVIDENCE | Cost per good device, process window, packaging and lifetime. |
+| H | New primary-source watch, batch and integration report published; six-language strategic context preserved. | RESEARCH_PUBLICATION | Continue handoff-ready publication; no strategic ambition treated as scientific/financial evidence. |
+
+Batch 107 adds no new physical law, real-QPU result, material substitution, accepted fuel, net fusion electricity, lower WACC or mission-level economic advantage.
