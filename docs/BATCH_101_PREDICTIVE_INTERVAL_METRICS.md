@@ -78,3 +78,8 @@ This commit updates the README front page, integration hub index, cold-start han
 **Starting-head CI:** core/invariant run #1945 and cold-start audit #1204 passed on f3ca3c12b20b4fa28adfb276ae5804427f9ca2a8. **Resulting-head CI:** pending until Actions runs on the new commit complete; a parent pass does not transfer.
 
 Next highest-value gate is A-GATE-SIGNED-MAXCUT-SDK-001: pin a specific SDK/environment, independently compare operator eigenvalues and optimizer-sign convention against the frozen signed-Max-Cut contract and exhaustive references, preserve the complete maximizer set, then move to target-aware simulation. In parallel, verify SymbolFit source/code/data/license bytes and use the new scoring utility in a preregistered synthetic calibration harness before any real HEP data. No paid QPU execution is authorized.
+
+
+## CI repair note — 2026-10-28
+
+The first Batch 101 commit's core/invariant run #1946 and cold-start audit #1205 failed only because required_reading in the handoff manifest named docs/RESEARCH_GAPS.md although the canonical living register is at repository root as RESEARCH_GAPS.md. All seven new predictive-interval unit tests passed in Python 3.12; the overall suite failed on the cold-start audit assertion. The follow-up sync commit corrects the path and records the failure. Exact-head Actions on the repair commit remain the acceptance gate.

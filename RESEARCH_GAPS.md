@@ -1055,3 +1055,6 @@ The sources add distinct candidate method families: pointwise residual-condition
 **Unlock criteria:** (1) exact-head prototype/invariant and cold-start Actions pass; (2) verify exact SymbolFit source/code/data/license bytes; (3) predeclare coverage tolerance, proper-score endpoint, multiplicity and grouped holdout; (4) test 0.68 and 0.95 levels on synthetic known-function, null and blinded-signal controls across preregistered seeds; (5) retain every failed seed and false discovery; (6) only then consider a blind real-data comparison with matched total resources and one cost basis.
 
 **Non-claims:** no equation-discovery method winner, new physical law, real-QPU advantage, material/fuel/electricity benefit, lower financing rate or Data-Center-to-One-Phone progress is established. Priority-1 signed-Max-Cut SDK reconstruction remains the higher execution gate.
+
+
+**CI correction update — 2026-10-28:** Batch 101's first commit failed core/invariant run #1946 and cold-start audit #1205 because the handoff manifest referenced docs/RESEARCH_GAPS.md instead of root RESEARCH_GAPS.md. The new predictive-interval unit tests passed in Python 3.12; the overall suite failed on the cold-start manifest assertion. The follow-up commit corrects the path. Exact-head CI remains required, and the failure is retained as negative evidence.

@@ -34,3 +34,8 @@ Fresh searches covered equation discovery, formal proof search, physics-informed
 Starting-head Actions passed: [core/invariant run #1945](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40685876900) and [cold-start audit #1204](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40685876946). The new commit requires its own exact-head checks.
 
 **Next gate:** pinned-SDK signed-Max-Cut reconstruction and exact objective/argmax agreement; then provider-neutral lowering and target-aware simulation. The secondary EQN-008 gate is source-byte/license verification plus synthetic multi-seed interval calibration. No paid QPU job is authorized.
+
+
+## CI repair note — 2026-10-28
+
+Core/invariant run #1946 and cold-start audit #1205 failed on the first Batch 101 commit because required_reading referenced docs/RESEARCH_GAPS.md instead of root RESEARCH_GAPS.md. All new predictive-interval tests passed in Python 3.12; the suite failure was the manifest assertion. The follow-up commit fixes the path. Verify both workflows on the repair commit.
