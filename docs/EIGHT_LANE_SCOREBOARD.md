@@ -295,6 +295,6 @@ FND/EQN now rejects missing/mismatched exact dimension vectors; SCM remains fict
 
 FND/EQN and RG-034 remain open without a promoted equation. SCM remains fictional with no human study. AI-COST now separates requested measurements from executed shots and end-to-end accepted-task cost. QOS-AUDIT-010B5 passes the bounded SDK gate but not scalability, target execution or economics.
 
-## A–I migration checkpoint — 2026-10-16
+## Historical A–I migration checkpoint — 2026-10-16 (operational scope superseded 2026-10-28)
 
-Lane I is now permanent. This legacy filename remains for inbound links, but the current A–I scoreboard is `docs/NINE_LANE_SCOREBOARD_2026-10-16.md`. The machine manifest now enumerates all nine lanes and 36 pairs; CI cold-start validation prevents silent regression to A–H-only coverage.
+This entry preserves the historical decision and is not the current operational lane map. The permanent architecture is A–H with 28 unordered pair reviews. The historical Lane I vehicle/levitation directory and I-012 artifacts remain preserved as a legacy workstream, not a ninth permanent lane. Current authority: `integration/eight_lane_manifest.json` schema `uqpu-eight-lane-manifest-v3`, `integration/COLD_START_HANDOFF_MANIFEST.json`, INV-024/028, and Batch 091. The legacy nine-lane scoreboard remains archived for provenance only.
