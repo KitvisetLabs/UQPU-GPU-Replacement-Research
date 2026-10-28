@@ -1987,3 +1987,13 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - INV-029–035, INV-025/026/027, FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain active. No new physical law, real-QPU advantage, accepted commercial fuel, net fusion electricity, material substitution, WACC reduction or phone-compression result is claimed.
 - The multilingual Thai, English, Chinese, Japanese, Korean and German master-plan links and recorded strategic AI-agent/funding references remain preserved. No paid QPU job was authorized or attempted.
 - Next gate: implement the parity-QAOA circuit with exact reference certificates; in parallel, pin quEStab and reconcile the coverage denominators before bounded reproduction.
+
+
+## 2026-10-29 — Batch 109: AI theorem discovery and FND-006 formalization boundary
+
+- Fresh surveillance identified three official arXiv sources not yet in the project watch set: the Busy Beaver autonomous-discovery preprint (2610.22603, submitted 2026-10-15), the Poincaré formalization preprint (2610.08329, submitted 2026-10-06), and the physics-formalization perspective (2610.14059, updated 2026-10-15).
+- Recorded the distinction between open-ended candidate discovery and formalization of an already established theorem. The Busy Beaver paper separates new, rediscovered and proof-only cases; its provisional “Cryptid” labels are not treated as proof of non-halting. The Poincaré paper's reported resource cost is project-specific, not a general R&D cost curve.
+- Added a focused FND-006 gap: first compare unconstrained and staged physics-constrained candidate search on a synthetic known-law problem with units, symmetry, limiting behavior and a frozen held-out regime; record false discoveries, failed/undecided proofs and compute cost.
+- Reasserted INV-035: formal proof can establish a statement under formal assumptions but does not prove that the formal model faithfully describes nature. Any physical candidate still requires constraints, held-out predictions, counterexample search, discriminating experiment and independent replication.
+- A–H remain active; Lane A parity-QAOA exact certificates remain Priority #1. BIO-001, FUS-001 and FIN-001 remain independent evidence gates. No new physical law, real-QPU advantage, accepted commercial fuel, net fusion electricity, material substitution, WACC reduction or phone-compression result is claimed.
+- The multilingual Thai, English, Chinese, Japanese, Korean and German master-plan links and strategic AI-agent/funding references remain preserved. No paid QPU job or physical experiment was authorized.

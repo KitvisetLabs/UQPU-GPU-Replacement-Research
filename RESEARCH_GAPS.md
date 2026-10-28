@@ -1127,3 +1127,14 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Source-audit item:** the publisher-indexed text reports 69/97 (71.1%) and 100/128 (78.1%) coverage in separate passages. They may describe different subsets/stages; reconcile each numerator/denominator, preprocessing stage, timeout and success predicate before comparison.  
 **Gate:** pin source/dependencies/build/hardware; compare Clifford, T-gate, parameterized-rotation and small parity-QAOA circuits against independent exact references; measure active rows, peak host/device memory, transfer, setup, latency, throughput, failures/retries and energy where measurable; hold out circuit families. Unknown costs/energy remain unknown, not zero.  
 **Nonclaims:** no real-QPU advantage, general QAOA scaling, readable classical-memory equivalence, 100x/100,000,000x economics, new physical law, material substitution, commercial bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. Canonical detail: docs/RESEARCH_GAP_QUESTAB_EXTENDED_TABLEAU_REPRODUCTION_2026-10-29.md.
+
+
+## 2026-10-29 — RG-FND006-AI-FORMAL-DISCOVERY-REPRO-001
+
+**Status:** OPEN / PREPRINTS-ONLY / UQPU-REPRODUCTION-NOT-STARTED.  
+**Primary owner:** Lane H; interfaces A/F and all lanes through INV-034/035.  
+**Sources:** https://arxiv.org/abs/2610.22603 ; https://arxiv.org/abs/2610.08329 ; https://arxiv.org/abs/2610.14059.  
+**Objective:** separate candidate novelty, formal correctness, physical validity, engineering consequence and mission economics in a reproducible AI-assisted discovery protocol.  
+**Evidence:** the Busy Beaver preprint reports Lean-checked execution-acceleration rules for eleven BB(6) machines, with novel, rediscovered and proof-only cases; the Poincaré preprint formalizes an established theorem using milestone-driven human/AI work; a physics-formalization perspective warns that proof checking does not validate physical semantics. UQPU has not reproduced these workflows.  
+**Gate:** compare unconstrained and staged physics-constrained candidate search on a synthetic known-law dataset under matched compute budgets and a frozen held-out regime; bind proof results to exact source/theorem hashes and proof-assistant versions; retain false discoveries and failed/undecided proofs; require a discriminating observable and independent experiment before any physical claim.  
+**Nonclaims:** no new physical law, material/fuel/electricity result, QPU advantage, lower WACC or Data-Center-to-One-Phone closure. Canonical detail: docs/RESEARCH_GAP_FND006_AI_FORMAL_DISCOVERY_REPRO_2026-10-29.md.
