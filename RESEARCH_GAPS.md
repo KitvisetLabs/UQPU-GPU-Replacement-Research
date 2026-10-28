@@ -965,3 +965,8 @@ Batch 091 reconciles AGENTS.md, the prime handoff principle, commit-sync policy,
 ## 2026-10-28 — Batch 097 process validation / source-branch repair
 
 The first source attempt (PR #148, head 013c0b10c33bf71a0d61da54870dc78df0f8466d) failed workflow #1896 because cold-start evidence_class metadata for lanes A/B/C/D/F/G was outside the validator's fixed enum. The new Lane A and equation-discovery tests passed in Python 3.11, but the full workflow failed and 3.10/3.12 were cancelled. The attempt also used Research-Sync: main on unmerged commits, contrary to the pending-main rule. The clean v2 branch recreates the same content with accepted evidence classes and Research-Sync: pending-main; PR #148 is superseded and must not be merged. This process failure does not promote or refute any scientific claim.
+
+
+## 2026-10-28 — Clean Batch 097 source mapping
+
+PR #149 is open from research/2026-10-28-physics-formalization-and-qaoa-contract-v2, with initial source head f04dbe1c1b354569cd465f7ad895fb5c217151fa and base main SHA d04eb7987b2e3b0c82840b77e263cf2ae8e41285. PR #148 is superseded after the cold-start metadata enum failure and incorrect unmerged-branch trailer; do not merge it. The v2 replay corrects both issues and uses pending-main trailers. Exact-head CI for the final PR head remains required; no main merge is claimed.
