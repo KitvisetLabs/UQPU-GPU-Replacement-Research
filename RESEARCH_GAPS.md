@@ -1034,3 +1034,24 @@ The sources add distinct candidate method families: pointwise residual-condition
 
 **Unlock criteria:** pin exact source bytes, revisions, toolchains and dependencies; independently compile the public math/ETH developments; audit imported axioms, admissions, dependencies and statement fidelity; obtain independent expert review; keep QFT blocked until reviewable public artifacts exist; require separate physical and end-to-end engineering evidence before any mission claim changes.
 
+
+
+## RG-EQN-010 — predictive interval scoring and synthetic control gate
+
+**Status:** OPEN / METRIC_IMPLEMENTED / BENCHMARK_NOT_RUN  
+**Opened:** 2026-10-28  
+**Primary owner:** Lane A — equation-discovery metrics  
+**Cross-lane owners:** Lane F — matched resources and evidence acceptance; Lane H — source provenance  
+**Canonical detail:** docs/BATCH_101_PREDICTIVE_INTERVAL_METRICS.md  
+**Integration:** integration/DAILY_CYCLE_2026-10-28_PREDICTIVE_INTERVAL_METRICS.md  
+**Related:** INV-034–035, EQN-008, SymbolFit preregistration
+
+**Objective:** evaluate predictive intervals with empirical coverage, coverage error, mean width and a proper interval score, without allowing arbitrarily wide intervals to win solely on coverage.
+
+**Implementation:** software/uqpu-prototype/uqpu/predictive_interval_metrics.py provides a fail-closed central-interval scorer. Deterministic tests cover a known-function positive control, a null/no-signal interval fixture, width penalties, out-of-interval penalties and invalid numeric inputs.
+
+**Evidence boundary:** source code and synthetic unit fixtures only. No project test suite is claimed passed until exact-head CI completes. The fixtures do not fit or calibrate a model, estimate false-discovery rate, authenticate source/data/license bytes, or establish a physical law.
+
+**Unlock criteria:** (1) exact-head prototype/invariant and cold-start Actions pass; (2) verify exact SymbolFit source/code/data/license bytes; (3) predeclare coverage tolerance, proper-score endpoint, multiplicity and grouped holdout; (4) test 0.68 and 0.95 levels on synthetic known-function, null and blinded-signal controls across preregistered seeds; (5) retain every failed seed and false discovery; (6) only then consider a blind real-data comparison with matched total resources and one cost basis.
+
+**Non-claims:** no equation-discovery method winner, new physical law, real-QPU advantage, material/fuel/electricity benefit, lower financing rate or Data-Center-to-One-Phone progress is established. Priority-1 signed-Max-Cut SDK reconstruction remains the higher execution gate.

@@ -1,6 +1,25 @@
 # UQPU: Universal Quantum Processing Unit
 
-## Latest Eight-Lane research cycle — 2026-10-28 — external AI theorem-claim verification
+## Contents
+
+- [Project charter](PROJECT_CHARTER.md) · [Version invariants](VERSION_INVARIANTS.md) · [Project goals](GOALS.md)
+- [Eight-lane research operating system](docs/RESEARCH_OPERATING_SYSTEM.md) · [Open-frontier directive](docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md)
+- [Research lanes A–H](research_lanes/README.md) · [Cross-lane integration hub](integration/README.md)
+- [Living research gaps](RESEARCH_GAPS.md) · [Worklog](WORKLOG.md)
+- [Data-Center-to-One-Phone north star](00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md) · [Permanent AI equation-discovery principle](00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md)
+- [Pangola/biomass carbon](01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md) · [Ultra-low-cost bio-oil](02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md) · [Fusion electricity](03_FUSION_ELECTRICITY_COST_STRATEGY.md) · [Interest/R&D finance](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md)
+- [Foundational physics and mathematics](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) · [AI-assisted equation discovery](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md)
+- [Kanusanan Pongpanna Model](docs/KANUSANAN_PONGPANNA_MODEL.md) · [Multilingual strategic references](STRATEGIC_PLAN_REFERENCES.md)
+
+## Latest Eight-Lane research cycle — 2026-10-28 — predictive interval metrics and current-head audit
+
+[Batch 101](docs/BATCH_101_PREDICTIVE_INTERVAL_METRICS.md) adds a reusable held-out prediction-interval scorer and synthetic positive/null unit fixtures under RG-EQN-010. It reports empirical coverage, coverage error, mean width and proper interval score; it does not establish calibration or a physical law. The [integration report](integration/DAILY_CYCLE_2026-10-28_PREDICTIVE_INTERVAL_METRICS.md) records A–H, INV-029–035, FND-001–006, EQN-001–008, BIO-001/FUS-001/FIN-001, evidence boundaries and next gates.
+
+Fresh public searches found the relevant SymbolFit (v2 revised 2026-10-19), PiT-PO, MPNO and formal-proof-search sources already represented in the repository. No duplicate literature article was created. The README contents map now appears near the top for cold-start navigation; the six-language master-plan links and recorded strategic AI-agent/funding references remain preserved.
+
+Starting main was f3ca3c12b20b4fa28adfb276ae5804427f9ca2a8. Core/invariant run #1945 and cold-start audit #1204 passed on that exact starting head; the new commit requires its own Actions results. Lane A Priority-1 remains the pinned-SDK signed-Max-Cut reconstruction gate, followed by provider-neutral lowering and target-aware simulation. No real HEP benchmark, paid QPU job, new physical law, material/fuel/electricity advantage, lower WACC or Data-Center-to-One-Phone physical compression is claimed.
+
+## Previous Eight-Lane research cycle — 2026-10-28 — external AI theorem-claim verification
 
 The new [literature watch](docs/literature_watch/2026-10-28-openai-math-complexity-qft-claims-verification-boundary.md) records the 2026-10-26 OpenAI announcement of high-impact mathematics, ETH and constructive-QFT claims. Public math/complexity proof artifacts are available for independent audit; the QFT artifacts remain withheld pending external review. The new [RG-EQN-009 gap](docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md) is indexed in the living [RESEARCH_GAPS](RESEARCH_GAPS.md) register and separates source claims, formal artifacts, kernel checks, expert review, physical validation and engineering advantage. No external theorem or physics claim is accepted as UQPU evidence.
 
@@ -9,7 +28,7 @@ The [cross-lane integration report](integration/DAILY_CYCLE_2026-10-28_EXTERNAL_
 **Next gate:** pin and independently compile/review the public math and ETH artifacts; keep the QFT claim artifact-blocked until sources are released. Continue the Priority-1 signed-Max-Cut reference-certificate, provider-neutral lowering and target-aware simulation path in parallel.
 
 
-## Latest Eight-Lane research cycle — 2026-10-28 — equation-discovery uncertainty + physics-guided materials design
+## Previous Eight-Lane research cycle — 2026-10-28 — equation-discovery uncertainty + physics-guided materials design
 
 [Batch 100](docs/BATCH_100_SYMBOLFIT_UNCERTAINTY_AWARE_EQUATION_DISCOVERY.md) adds the new-to-repository [SymbolFit source](https://arxiv.org/abs/2607.19750) (v2 revised 2026-10-19) as a separate HEP binned-fit task class under [RG-EQN-008](docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md). The [literature watch](docs/literature_watch/2026-10-28-symbolfit-uncertainty-aware-equation-discovery.md) distinguishes the paper's author-reported results from UQPU evidence. The [Lane A machine-readable preregistration](research_lanes/A_quantum_programming_runtime/SYMBOLFIT_UNCERTAINTY_PROTOCOL_V1.json) was parsed and checked for required fields in cycle tooling; no matched benchmark or project test suite ran. HEP fit scores must not be pooled with general equation-recovery or active-experiment-design tasks.
 
