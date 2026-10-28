@@ -65,8 +65,11 @@ def _comparison_runs(manifest, certificate):
             records.append(DiscoveryRun(
                 method_id=method,
                 method_revision_sha256=_digest(method + "-revision"),
+                method_config_sha256=_digest(method + "-config-v1"),
+                runtime_environment_sha256=_digest(method + "-environment-v1"),
                 seed=seed,
                 dataset_sha256=manifest["dataset_sha256"],
+                dataset_provenance_sha256=_digest("fixture-source-license-v1"),
                 train_split_sha256=certificate["split_sha256"]["train"],
                 validation_split_sha256=certificate["split_sha256"]["validation"],
                 test_split_sha256=certificate["split_sha256"]["test"],
