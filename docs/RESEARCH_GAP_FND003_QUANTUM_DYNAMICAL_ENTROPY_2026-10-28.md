@@ -4,35 +4,36 @@
 **Opened:** 2026-10-28  
 **Primary owner:** Lane H — source provenance / literature  
 **Cross-lane owners:** Lane A (matched control protocol), Lane B (provider/readout interface), Lane C (measurement/state/I/O), Lane F (evidence and cost gate)  
-**Status:** OPEN / LITERATURE_ONLY / FULL_TEXT_AND_REPRODUCTION_PENDING  
-**Source:** Cao, *Phys. Rev. Lett.* 137, 030402 (2026-07-13), DOI https://doi.org/10.1103/wd91-v58h  
-**Evidence boundary:** peer-reviewed theory; the universal Planckian entropy-rate bound is presented as a conjecture in the accessible abstract.
+**Status:** OPEN / LITERATURE_ONLY / REPRODUCTION_PENDING  
+**Sources:** arXiv:2507.20914; *Phys. Rev. Lett.* 137, 030402 (2026-07-13), DOI https://doi.org/10.1103/wd91-v58h
 
 ## Question
 
-Can the observable-specific dynamical-entropy rate for continuous monitoring of thermal fluctuations be independently reconstructed and tested in a finite, controlled many-body model, with its assumptions separated from generic gate-time and end-to-end useful-task claims?
+Can the source's CNT entropy-rate formula and its ordered thermodynamic/long-time/continuous-measurement limits be independently reproduced, and can the broad Planckian conjecture survive held-out regimes and counterexample search?
 
-## Known from the official abstract
+## Source-bounded baseline
 
-The work defines a simplified quantum dynamical entropy associated with continuously monitoring an observable, calculates a thermodynamic/long-time entropy rate in terms of two-point correlation functions, and conjectures a universal Planckian rate bound. It also discusses purification rate. This source is not the same theorem as the separate Planckian thermalization-machine bound already tracked under FND-003.
+The paper defines a simplified CNT dynamical entropy for continuous monitoring, including a measurement-back-action entropy defect. For a mesoscopic observable (Q=V^{-1/2}sum_x Q_x), a noncritical thermal many-body system and a specified Gaussian weak-measurement scheme, the author derives a rate formula in terms of Keldysh/retarded two-point functions under an emergent-Gaussianity argument. It reports (eta s_{mathrm{CNT}}lesssim0.57) when maximizing the formula without FDT and a numerically optimized FDT-constrained value near 0.375. It reports finite-size mixed-field Ising-chain calculations at (L=6,8,10).
+
+The formula and bounds are scoped to these assumptions and limits. The extension to a broad class of systems/operators/measurement schemes is explicitly conjectural. The source is not the separate Planckian thermalization-machine theorem already tracked in FND-003.
 
 ## Missing evidence
 
-1. Full-text and supplement access sufficient to verify definitions, constants, assumptions, and the exact conjecture.
-2. Independent symbolic derivation and dimensional checks.
-3. Finite-size/finite-time numerical reproduction with uncertainty and held-out parameter regimes.
-4. Counterexample search, including classical and large-system limits and changes in observation bandwidth.
-5. A discriminating observable and experimental protocol before any hardware claim.
-6. Separate accounting for measurement/control, state preparation, reset, cooling, host processing, I/O, and accepted-output reconstruction.
+1. Faithful reproduction of the supplementary derivation and exact conventions.
+2. Pinned implementation of the full entropy rate, including outcome Shannon entropy and the entropy-defect/back-action term.
+3. Reproduction of the reported finite-size scaling plus an independent model or independent implementation.
+4. Held-out finite-size, time-step, temperature, measurement-strength and observable regimes.
+5. Counterexample search near criticality, in classical/large-(N) limits, and where higher-order correlations do not satisfy the assumed Gaussian scaling.
+6. Clear separation of system entropy-rate quantities from measurement/controller/reset/cooling energy and from accepted workload output.
 
 ## Acceptance contract
 
-- Do not encode the conjecture as a universal lower-bound function in `fundamental_limits.py` until the exact expression and scope are reconstructed.
-- Keep entropy rate, thermodynamic heat/work, detector energy, wall-plug energy, gate duration, and accepted-task latency as distinct quantities.
-- Use a matched null/control model, preregistered held-out regimes, and an independent implementation.
-- A fit or simulation is MODEL_ONLY/SIMULATION, not a new physical law or UQPU advantage.
-- Failure to reproduce the formula or any counterexample must be retained as a negative result.
+- Do not encode the broad conjecture as a universal lower-bound or gate-time helper in `fundamental_limits.py`.
+- Preserve the source's ordered limits and regime assumptions in any implementation.
+- Label source-reported results as external literature; a successful numerical reproduction remains SIMULATION until independently validated.
+- A fitted constant or finite-size agreement is not proof of universal validity.
+- Record nulls, failed formula reconstruction and counterexamples as first-class outputs.
 
 ## Next cheapest decisive action
 
-Obtain and review the full paper/supplement, reconstruct one exactly solvable model, then run a deterministic finite-size/finite-time test with unit, limit, and counterexample checks. No QPU submission is required or authorized for this gate.
+Implement the paper's full rate formula from the manuscript/supplement in an isolated test harness, reproduce the published (L=6,8,10) comparison, then run preregistered held-out and adversarial regimes. No QPU submission is needed for this gate.
