@@ -44,6 +44,8 @@ class EquationDiscoveryTests(unittest.TestCase):
             formal_proof_notes=(),
             false_discovery_status="NO_FALSE_DISCOVERY_FOUND",
             false_discovery_notes=(),
+            physical_interpretation_review_status="NOT_REVIEWED",
+            physical_interpretation_review_notes=(),
         )
         data.update(overrides)
         return EquationHypothesis(**data)
@@ -89,20 +91,29 @@ class EquationDiscoveryTests(unittest.TestCase):
             candidate.validate()
 
     def test_physical_candidate_gate_requires_independent_validation_and_heldout_gain(self):
+        review = {
+            "physical_interpretation_review_status": "INDEPENDENTLY_REVIEWED",
+            "physical_interpretation_review_notes": (
+                "independent reviewer checked the physical meaning of variables, assumptions and observables",
+            ),
+        }
         candidate = self._candidate(
             evidence_level="PUBLISHED_EXPERIMENT",
             independent_validation_count=1,
+            **review,
         )
         self.assertTrue(candidate.ready_for_physical_candidate_claim)
         no_replication = self._candidate(
             evidence_level="PUBLISHED_EXPERIMENT",
             independent_validation_count=0,
+            **review,
         )
         self.assertFalse(no_replication.ready_for_physical_candidate_claim)
         no_gain = self._candidate(
             evidence_level="PUBLISHED_EXPERIMENT",
             independent_validation_count=1,
             heldout_candidate_error=0.3,
+            **review,
         )
         self.assertFalse(no_gain.ready_for_physical_candidate_claim)
 
@@ -190,6 +201,45 @@ class EquationDiscoveryTests(unittest.TestCase):
         )
         self.assertFalse(false_discovery.ready_for_physical_candidate_claim)
 
+    def test_formal_proof_does_not_replace_physical_interpretation_review(self):
+        proof_notes = ("kernel-checked formal statement; semantics remain a separate question",)
+        checked_without_review = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT",
+            independent_validation_count=1,
+            formal_proof_status="CHECKED",
+            formal_proof_notes=proof_notes,
+            formal_proof_evidence=self._formal_proof_evidence(),
+        )
+        checked_without_review.validate()
+        self.assertFalse(checked_without_review.ready_for_physical_candidate_claim)
+
+        reviewed = self._candidate(
+            evidence_level="PUBLISHED_EXPERIMENT",
+            independent_validation_count=1,
+            formal_proof_status="CHECKED",
+            formal_proof_notes=proof_notes,
+            formal_proof_evidence=self._formal_proof_evidence(),
+            physical_interpretation_review_status="INDEPENDENTLY_REVIEWED",
+            physical_interpretation_review_notes=(
+                "independent reviewer verified that formal variables and assumptions map to the intended observable",
+            ),
+        )
+        self.assertTrue(reviewed.ready_for_physical_candidate_claim)
+
+    def test_physical_interpretation_review_status_requires_auditable_notes(self):
+        with self.assertRaisesRegex(ValueError, "unknown physical_interpretation_review_status"):
+            self._candidate(physical_interpretation_review_status="AI_APPROVED").validate()
+        with self.assertRaisesRegex(ValueError, "physical_interpretation_review_notes are required"):
+            self._candidate(
+                physical_interpretation_review_status="INDEPENDENTLY_REVIEWED"
+            ).validate()
+        failed = self._candidate(
+            physical_interpretation_review_status="FAILED",
+            physical_interpretation_review_notes=("formal statement defines the conclusion instead of deriving it",),
+        )
+        failed.validate()
+        self.assertFalse(failed.ready_for_physical_candidate_claim)
+
     def test_contract_keeps_equation_baseline_constraints_and_falsifier(self):
         fields = required_discovery_fields()
         for name in (
@@ -210,6 +260,8 @@ class EquationDiscoveryTests(unittest.TestCase):
             "formal_proof_evidence",
             "false_discovery_status",
             "false_discovery_notes",
+            "physical_interpretation_review_status",
+            "physical_interpretation_review_notes",
         ):
             self.assertIn(name, fields)
 
