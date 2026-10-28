@@ -1,6 +1,16 @@
 # UQPU: Universal Quantum Processing Unit
 ## Extreme Data-Center-to-Phone Computing Research Program
 
+## Latest Eight-Lane research cycle — 2026-10-28 — dimensionality-aware equation-discovery gate
+
+[Batch 096](docs/BATCH_096_EQUATION_DISCOVERY_DIMENSIONALITY_GATE.md) records a fresh surveillance delta for SymFM's implemented partial-observation/active-subspace/symbolic pipeline and PiT-PO's adaptive physics-informed candidate generation. The [literature watch](docs/literature_watch/2026-10-28-symbolic-regression-symfm-pitpo.md) keeps author-reported results separate from UQPU evidence, notes SymFM's unimplemented Transformer encoder and negative SEIRD exact-recovery result, and proposes a matched-budget, group-held-out reproduction. [RG-EQN-SYMBOLIC-DIMENSIONALITY-REPRO-001](docs/RESEARCH_GAP_EQN_SYMBOLIC_DIMENSIONALITY_REPRO_2026-10-28.md) is open; no candidate equation is promoted.
+
+At cycle start, main was 0cdc1514a82716d6bfd171ca774344b17b13f4df; prototype/invariant CI [#1881](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40636346620) and cold-start audit [#1107](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40636346557) passed on that exact head. This new commit requires its own exact-head checks. Priority-1 remains Lane A provider-neutral lowering plus exact reference/simulator comparison on the frozen signed-Max-Cut contract. No paid QPU execution is authorized.
+
+A–H remain active: A workload/compiler/runtime; B provider integration; C state/memory/I/O; D device/fabrication; E biomass/materials/bio-oil/fusion/cooling; F economics/evidence/integration; G manufacturing equipment/factory systems with continuous D/G co-design; H strategic/finance/publication. INV-034/035 feed all lanes. INV-025/026/027 remain falsifiable moonshots. INV-029–035, FND-001–006, EQN-001–008, BIO-001, FUS-001, FIN-001, the eight root directives, Kanusanan Pongpanna Model and Thai/English/Chinese/Japanese/Korean/German master-plan links remain preserved. No quantum advantage, new physical law, material substitution, commercial fuel/electricity result, lower WACC or physical Data-Center-to-Phone compression is claimed. The focused gap is kept as a standalone artifact; RESEARCH_GAPS.md append synchronization debt is recorded rather than risking a whole-file rewrite.
+
+---
+
 **Status:** Active research / executable prototype / long-horizon architecture  
 **Lead Researcher:** Kanutsanan Pongpanna  
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
