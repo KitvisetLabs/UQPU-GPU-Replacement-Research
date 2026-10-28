@@ -1148,3 +1148,14 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Advance:** a higher-order cycle-parity objective, CNOT/RZ phase-gadget lowering, fail-closed penalty threshold, exact small-instance certificate and dense-statevector regression test have been added. The product-RX mixer is not feasibility-preserving; outputs must be parity-checked and decoded.  
 **Remaining blockers:** exact-head CI for this commit, independent SDK/lowering checks, target-aware simulation, matched direct-vs-parity tests on held-out graph families, quality acceptance, and complete resource/energy/cost accounting.  
 **Nonclaims:** no real-QPU advantage, scalable resource reduction, 100x/100,000,000x economics or mission-level replacement result.
+
+
+## 2026-10-29 — RG-A-FND002-HAMILTONIAN-SIM-LOWER-BOUND-001
+
+**Status:** OPEN / OFFICIAL-PREPRINT-THEOREM-CLAIM / UQPU-REPRODUCTION-NOT-STARTED.  
+**Primary owner:** Lane A; interfaces B/C/D/G/F/H.  
+**Source:** Zlokapa, Allen and Harrow, “Optimal Lower Bounds for Hamiltonian Simulation,” arXiv:2607.19852, submitted 2026-07-22, https://arxiv.org/abs/2607.19852.  
+**Objective:** determine whether the reported coefficient-tail trade-off for gate/classical-query complexity applies to a specific UQPU workload under the theorem's hard-instance and access-model assumptions.  
+**Gate:** pin the source version, independently review theorem assumptions, freeze uniform/power-law/exponential coefficient profiles plus a held-out profile, compare direct product-formula/qDRIFT/composite-qDRIFT under a common trace-distance target, and include oracle construction, state preparation, compilation, host work, memory/I/O and output verification.  
+**Scope:** the classical-query result does not directly bound coherent block-encoding access; specialized Hamiltonian or input-state structure may be outside the generic theorem. Gate/query complexity is not physical pulse time, energy or cost.  
+**Nonclaims:** no UQPU reproduction, new physical law, QPU advantage, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone result. Canonical detail: docs/RESEARCH_GAP_HAMILTONIAN_SIMULATION_LOWER_BOUND_2026-10-29.md.

@@ -61,6 +61,45 @@ class ParityQAOATests(unittest.TestCase):
         self.assertFalse(program.metadata["feasibility_preserving_mixer"])
         self.assertEqual(sum(inst.op == "cx" for inst in program.instructions), 8)
 
+    def test_overlapping_four_and_five_cycle_gadgets_match_direct_reference(self):
+        encoding = build_parity_encoding(
+            5, [(0, 1), (0, 3), (1, 2), (2, 3), (2, 4), (3, 4)]
+        )
+        self.assertEqual(sorted(len(cycle) for cycle in encoding.cycle_constraints), [4, 5])
+        objective = parity_qaoa_objective(
+            encoding, (-1.0, 0.6, -0.7, 0.9, -1.2, 0.4), penalty_weight=12.0
+        )
+        certificate = objective.exact_certificate()
+        self.assertEqual(certificate.states_evaluated, 1 << 6)
+        self.assertTrue(certificate.all_ground_states_feasible)
+        self.assertAlmostEqual(certificate.optimum_energy, certificate.feasible_optimum_energy)
+
+        gammas, betas = (0.17, -0.43), (0.29, 0.51)
+        program = parity_qaoa_program(objective, gammas, betas, shots=2048)
+        n = objective.physical_qubits
+        expected = [complex(1 / math.sqrt(1 << n))] * (1 << n)
+        for gamma, beta in zip(gammas, betas):
+            phased = [
+                amplitude * cmath.exp(-1j * gamma * objective.energy(
+                    tuple((basis >> q) & 1 for q in range(n))
+                ))
+                for basis, amplitude in enumerate(expected)
+            ]
+            expected = [
+                sum(
+                    amplitude
+                    * math.cos(beta) ** (n - bin(basis ^ other).count("1"))
+                    * (-1j * math.sin(beta)) ** bin(basis ^ other).count("1")
+                    for other, amplitude in enumerate(phased)
+                )
+                for basis in range(1 << n)
+            ]
+        actual = statevector(program)
+        global_phase = cmath.exp(-1j * sum(gammas) * objective.offset)
+        for got, want in zip(actual, expected):
+            self.assertAlmostEqual(abs(got * global_phase - want), 0.0, places=11)
+        self.assertEqual(sum(inst.op == "cx" for inst in program.instructions), 28)
+
     def test_invalid_penalty_and_malformed_inputs_fail_closed(self):
         with self.assertRaisesRegex(ValueError, "penalty_weight"):
             parity_qaoa_objective(self.encoding, (-1.0, -1.0, -1.0), penalty_weight=6.0)
