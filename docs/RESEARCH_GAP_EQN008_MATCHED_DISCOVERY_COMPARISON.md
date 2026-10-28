@@ -86,3 +86,16 @@ The official preprint Zheng et al., “MOSAIC-SR: Transformer-Guided Symbolic Re
 The official preprint Jin et al., “DIGEST: Discovery-Guided LLM Tuning for Symbolic Regression,” arXiv:2610.33880 (submitted 2026-10-24), is now a candidate arm in this RG-EQN-008 comparison. Its method uses an LLM-derived symbolic policy to seed genetic-programming populations and updates that policy online from high-quality expressions discovered during search. The paper's reported recovery/time improvements are external claims, not UQPU evidence. Do not create a parallel interface: use `software/uqpu-prototype/uqpu/equation_discovery_comparison.py` and preserve the same preregistered acceptance metrics, law-family-disjoint splits, held-out scales, source/model/data hashes, equal total compute and inference budgets, and failed-run/counterexample accounting.
 
 Required follow-up: pin exact code, model, datasets, metric definitions and baseline configurations; include LLM training/inference/token cost, GP candidate evaluations, CPU/GPU time, peak memory and wall time; use at least 30 preregistered seeds where feasible. Separate structural recovery from held-out prediction, dimensional/physical constraint satisfaction and independent validation. A reported advantage that vanishes under equal-resource or held-out tests is rejected. No method winner or physical law is established.
+
+## 2026-10-28 comparator provenance hardening — schema v4
+
+The canonical comparator at `software/uqpu-prototype/uqpu/equation_discovery_comparison.py` now requires three additional SHA-256 bindings:
+- `dataset_provenance_sha256` for source/version/license/acquisition metadata, shared across all methods;
+- `method_config_sha256` for each method's fixed configuration, including relevant prompts, operators, hyperparameters and model/checkpoint identifiers;
+- `runtime_environment_sha256` for the pinned runtime/dependency/container environment.
+
+For every method, source revision, method configuration and runtime-environment digests must remain constant across its preregistered seeds. Different methods may have different configuration/runtime digests, but the same declared dataset and dataset provenance must be used. The output schema is now `uqpu-equation-discovery-matched-comparison-v4` and reports the provenance digests. Hashes bind declared content only; they do not authenticate it or establish scientific validity.
+
+Regression fixtures were updated in `software/uqpu-prototype/tests/test_equation_discovery_comparison.py` and `software/uqpu-prototype/tests/test_split_disjointness.py`. Added cases reject per-method provenance drift and cross-method dataset-provenance mismatch. The exact-head CI result for these changes is **not yet verified**; the previous green run does not transfer to this head. No 30-seed method benchmark was executed, and no equation, physical law or method winner is promoted.
+
+This hardening closes a reproducibility-contract gap, not the scientific gap: independent method reproduction, held-out acceptance, false-discovery accounting and a downstream discriminating test remain open.
