@@ -15,3 +15,7 @@ Maximize scientifically defensible coupling among A-H so that software, provider
 
 ## Latest integrated cycle — 2026-10-28
 - [Predictive interval metrics / RG-EQN-010](DAILY_CYCLE_2026-10-28_PREDICTIVE_INTERVAL_METRICS.md) — held-out interval coverage/width/proper-score utility, synthetic fixtures, A–H review and exact-head CI gate.
+
+
+## Latest integrated cycle — 2026-10-28 — temporal holdout
+- [Chronological temporal-holdout certificate and neural-operator splitting](DAILY_CYCLE_2026-10-28_TEMPORAL_HOLDOUT_AND_OPERATOR_SPLITTING.md) — timestamp/group split validation, 11 synthetic tests, source-specific PMLR watch and explicit non-claims.

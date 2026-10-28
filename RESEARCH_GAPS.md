@@ -1058,3 +1058,14 @@ The sources add distinct candidate method families: pointwise residual-condition
 
 
 **CI correction update — 2026-10-28:** Batch 101's first commit failed core/invariant run #1946 and cold-start audit #1205 because the handoff manifest referenced docs/RESEARCH_GAPS.md instead of root RESEARCH_GAPS.md. The new predictive-interval unit tests passed in Python 3.12; the overall suite failed on the cold-start manifest assertion. The follow-up commit corrects the path. Exact-head CI remains required, and the failure is retained as negative evidence.
+
+
+## 2026-10-28 — RG-A-TEMPORAL-HOLDOUT-ORDERING-001: chronological split certificate
+
+**Status:** IMPLEMENTED CONTRACT / EXACT-HEAD CI PENDING / REAL-DATA GENERALIZATION OPEN.  
+**Primary owner:** Lane A — model-evaluation contract.  
+**Artifacts:** [Batch 103](docs/BATCH_103_TEMPORAL_HOLDOUT_CERTIFICATE_AND_OPERATOR_SPLITTING.md) · [focused gap](docs/RESEARCH_GAP_TEMPORAL_HOLDOUT_ORDERING_2026-10-28.md) · [Lane A contract](research_lanes/A_quantum_programming_runtime/TEMPORAL_HOLDOUT_ACCEPTANCE_CONTRACT.md) · [implementation](software/uqpu-prototype/uqpu/temporal_holdout.py) · [tests](software/uqpu-prototype/tests/test_temporal_holdout.py).
+
+The existing group-disjoint TIME_BLOCK manifest did not itself require chronological ordering. The new helper binds raw records to the canonical manifest, normalizes timezone-aware timestamps to UTC, requires strictly ordered train/validation/test windows and enforces a declared embargo. Eleven synthetic tests cover positive, reordered, malformed, overlapping, leaking and insufficient-embargo cases. The local clone failed due DNS resolution, so no local test pass is claimed; exact-head Actions remain the acceptance gate. A PASS certifies the supplied split metadata only, not source authenticity or scientific generalization.
+
+**Next gate:** pass exact-head CI; pin a real dataset/license/loader; preregister future-time plus relevant coefficient/geometry holdouts; compare methods against an independent numerical reference under matched resource ceilings. No equation, physical law, QPU advantage, material/fuel/electricity advantage or financing-rate effect is promoted.

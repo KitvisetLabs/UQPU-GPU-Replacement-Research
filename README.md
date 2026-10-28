@@ -11,6 +11,14 @@
 - [Foundational physics and mathematics](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) · [AI-assisted equation discovery](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md)
 - [Kanusanan Pongpanna Model](docs/KANUSANAN_PONGPANNA_MODEL.md) · [Multilingual strategic references](STRATEGIC_PLAN_REFERENCES.md)
 
+## Latest Eight-Lane research cycle — 2026-10-28 — strict temporal holdout and neural-operator splitting
+
+[Batch 103](docs/BATCH_103_TEMPORAL_HOLDOUT_CERTIFICATE_AND_OPERATOR_SPLITTING.md) adds a strict chronological train/validation/test certificate on top of the existing group-disjoint split manifest, with 11 deterministic synthetic tests. The new [official PMLR literature watch](docs/literature_watch/2026-10-28-neural-operator-splitting-heldout-regimes.md) covers test-time neural-operator composition for unseen physics regimes. This is a split-integrity contract and literature-only method lead, not a PDE reproduction or physical-law claim.
+
+The focused gap is [RG-A-TEMPORAL-HOLDOUT-ORDERING-001](docs/RESEARCH_GAP_TEMPORAL_HOLDOUT_ORDERING_2026-10-28.md); the [Lane A contract](research_lanes/A_quantum_programming_runtime/TEMPORAL_HOLDOUT_ACCEPTANCE_CONTRACT.md) and [integration report](integration/DAILY_CYCLE_2026-10-28_TEMPORAL_HOLDOUT_AND_OPERATOR_SPLITTING.md) record A–H, FND-001–006, EQN-001–010 and INV-029–035. Local execution was blocked by DNS failure during clone, so no local test pass is claimed. Exact-head core/invariant and cold-start Actions must be checked after this commit.
+
+Starting main SHA: `3ee200dcd9c7c4b34d2d73474964648281b1cca2`. At cycle start, cold-start audit [#1228](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40715091014) passed and core/invariant run [#1967](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40715091040) was queued. Signed-Max-Cut PRs [#149](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/149) and [#150](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/150) remain open and are not claimed as merged. No paid QPU job or mission-level advantage is claimed.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — conservative and time-aware PDE-surrogate evaluation
 
 [Batch 102](docs/BATCH_102_CONSERVATION_AND_TEMPORAL_PDE_EVALUATION.md) adds a reusable discrete-trajectory metric for conservation drift and optional lower/upper-bound violations, plus 9 deterministic synthetic unit tests. The Lane A interface is [PDE surrogate acceptance contract](research_lanes/A_quantum_programming_runtime/PDE_SURROGATE_ACCEPTANCE_CONTRACT.md); the cross-lane record is [the integration report](integration/DAILY_CYCLE_2026-10-28_PDE_SURROGATE_EVALUATION.md).

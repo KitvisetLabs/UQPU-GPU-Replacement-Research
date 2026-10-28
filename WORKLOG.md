@@ -1917,3 +1917,15 @@ A–H were reviewed. Lane A advanced the EQN-008 scoring utility, but Priority-1
 ## 2026-10-28 — Batch 101 cold-start manifest repair
 
 The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered core/invariant run #1946 and cold-start audit #1205, both of which failed on the same handoff-manifest path typo: required_reading listed docs/RESEARCH_GAPS.md while the canonical file is root RESEARCH_GAPS.md. The new predictive-interval tests all passed in Python 3.12, but the overall suite failed on the existing cold-start audit assertion. Corrected the path in the handoff manifest and synchronized README, Batch 101, integration report, WORKLOG and RESEARCH_GAPS in this follow-up commit. The failure remains recorded; exact-head Actions on the repair commit must pass before the cycle is marked green.
+
+
+## 2026-10-28 — Batch 103: chronological temporal-holdout certificate and neural-operator splitting
+
+- **Starting main:** `3ee200dcd9c7c4b34d2d73474964648281b1cca2`; newest merged batch was resolved from the current README as Batch 102.
+- **Lane A:** added `uqpu/temporal_holdout.py` and 11 deterministic synthetic tests. The helper composes the existing raw-record-bound TIME_BLOCK manifest with UTC-normalized ISO-8601 timestamps, strict train/validation/test ordering and a declared embargo. It rejects group leakage, missing/naive/invalid timestamps, overlapping/out-of-order windows, empty partitions and insufficient embargo.
+- **Lane H literature delta:** published the official PMLR watch for Serrano et al., “Test-time Generalization for Physics through Neural Operator Splitting” (PMLR 306, 2026). The method is a literature-only lead for test-time composition of pretrained operators; it is not a new physical law or a UQPU reproduction.
+- **A–H integration:** refreshed README, integration index, eight-lane scoreboard and cold-start manifest; appended the focused gap and this worklog entry. Root directives 00, 00A and 01–06, INV-025/026/027, INV-029–035 and all six strategic-plan language links remain preserved.
+- **Foundations:** FND-001–006 and EQN-001–010 remain evidence-gated. `fundamental_limits.py`, `frontier_hypothesis.py`, `equation_discovery.py` and `energy_finance.py` were inspected; no bound/equation/material/fuel/fusion/finance claim was promoted. BIO-001, FUS-001 and FIN-001 remain open.
+- **CI/evidence:** at the start, cold-start audit #1228 passed and core/invariant run #1967 was queued. The local clone failed because DNS resolution could not reach github.com, so no local test pass is claimed. The new exact-head Actions must be checked.
+- **Pending Lane A synchronization:** PR #149 (portable signed-Max-Cut QAOA) and PR #150 (pinned-SDK certificate/target-simulation handoff) remain open and are not claimed as merged. No real QPU, paid job, physical experiment, commercial bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone physical compression is claimed.
+- **Next gate:** exact-head core/invariant and cold-start Actions; then review pending signed-Max-Cut work and run a source-pinned, matched-budget future-time plus coefficient/geometry holdout benchmark.

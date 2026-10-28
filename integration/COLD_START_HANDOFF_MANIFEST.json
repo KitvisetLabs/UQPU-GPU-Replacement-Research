@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T15:20:43Z",
+  "prepared_utc": "2026-10-28T15:35:28.844Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "42e6614db390db7b3e248bc6b383d67e9d00dd3b",
+  "canonical_start_sha": "3ee200dcd9c7c4b34d2d73474964648281b1cca2",
   "priority_lane": "A",
-  "current_frontier": "Batch 102 (2026-10-28): conservative/bounded PDE-surrogate trajectory metrics and 9 synthetic unit tests added; official PMLR watch covers FluxNet, TINNs and Heavy-tailed PINNs. The metric is not a PDE solver or physical-law claim. Batch 102 is the focused RG-PDE-SURROGATE-001 gap while large RESEARCH_GAPS.md/WORKLOG.md remain append-only sync debt. Lane A Priority #1 signed-Max-Cut pinned-SDK reconstruction remains the next execution gate. At the last observation, exact-head core run #1965 was queued and cold-start audit #1226 passed on 928e911; refreshing this manifest creates a new head whose Actions must be checked. No paid QPU execution authorized.",
+  "current_frontier": "Batch 103 (2026-10-28): strict chronological train/validation/test holdout certificate added over the existing TIME_BLOCK split manifest; 11 synthetic tests added, exact-head CI pending. Official PMLR watch covers test-time neural-operator splitting for unseen physics regimes. Main start SHA 3ee200dcd9c7c4b34d2d73474964648281b1cca2; at cycle start core/invariant run #1967 was queued and cold-start audit #1228 passed. Signed-Max-Cut QAOA PR #149 and SDK-certificate PR #150 remain open/unmerged. Large append-only histories were fetched in full and extended, not reconstructed from excerpts. No paid QPU job authorized.",
   "required_reading": [
     "docs/BATCH_099_RESIDUAL_CONJECTURE_CONTINUOUS_EQUATION_DISCOVERY.md",
     "docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md",
@@ -162,7 +162,14 @@
     "research_lanes/A_quantum_programming_runtime/PDE_SURROGATE_ACCEPTANCE_CONTRACT.md",
     "software/uqpu-prototype/uqpu/pde_surrogate_metrics.py",
     "software/uqpu-prototype/tests/test_pde_surrogate_metrics.py",
-    "integration/DAILY_CYCLE_2026-10-28_PDE_SURROGATE_EVALUATION.md"
+    "integration/DAILY_CYCLE_2026-10-28_PDE_SURROGATE_EVALUATION.md",
+    "docs/BATCH_103_TEMPORAL_HOLDOUT_CERTIFICATE_AND_OPERATOR_SPLITTING.md",
+    "docs/literature_watch/2026-10-28-neural-operator-splitting-heldout-regimes.md",
+    "docs/RESEARCH_GAP_TEMPORAL_HOLDOUT_ORDERING_2026-10-28.md",
+    "research_lanes/A_quantum_programming_runtime/TEMPORAL_HOLDOUT_ACCEPTANCE_CONTRACT.md",
+    "software/uqpu-prototype/uqpu/temporal_holdout.py",
+    "software/uqpu-prototype/tests/test_temporal_holdout.py",
+    "integration/DAILY_CYCLE_2026-10-28_TEMPORAL_HOLDOUT_AND_OPERATOR_SPLITTING.md"
   ],
   "lanes": {
     "A": {

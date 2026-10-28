@@ -317,3 +317,19 @@ FND-001–006 and EQN-001–008 remain evidence-gated. INV-029–035 are preserv
 
 
 **Post-publication synchronization note (2026-10-28):** initial Batch 095 commit 1f1346724019fe9d7cd850ba2a00fb98deea5c89 failed only the cold-start handoff audit because its commit message omitted the required Research-Sync: main trailer. The audit checked A–H and all 28 integration pairs; a follow-up commit with the trailer is being published. This is a governance metadata failure, not scientific or unit-test evidence.
+
+
+## Batch 103 — chronological temporal-holdout certificate (2026-10-28)
+
+| Lane | Advance this cycle | Evidence | Next gate |
+|---|---|---|---|
+| A | Added strict UTC-normalized chronological split certificate and 11 synthetic tests. | SOFTWARE_IMPLEMENTATION; exact-head CI pending | Verify Actions; then source-pinned future-time/operator-splitting benchmark. |
+| B | Provider-neutral paths and no-submit rule preserved. | REVIEWED / NO TARGET JOB | Keep dry-run/simulator first. |
+| C | Record/group hashes and temporal windows now have a reusable certificate. | SOFTWARE_CONTRACT | Add bytes, transfers, peak memory and reconstruction to real comparisons. |
+| D | Device/process scope and D/G co-design retained. | NO NEW DEVICE EVIDENCE | Require measured process/device validation. |
+| E | Neural-operator method lead mapped to thermal/fluid and process-model screening. | LITERATURE_ONLY | Source-pinned data and physical validation; BIO-001/FUS-001 remain open. |
+| F | Temporal leakage and embargo acceptance made explicit. | SOFTWARE_CONTRACT | Matched resources and full cost per accepted output. |
+| G | Factory/process drift use case retained. | NO FABRICATION EVIDENCE | Bind future model to metrology, yield and cost per good die. |
+| H | New official PMLR watch, batch, gap and handoff published. | LITERATURE_ONLY + PUBLICATION | Continue multilingual-preserving surveillance and independent evidence checks. |
+
+No change to INV-029–035 or INV-025/026/027 acceptance status. FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated. Main-start SHA: `3ee200dcd9c7c4b34d2d73474964648281b1cca2`; exact-head CI for the new commit must be checked.
