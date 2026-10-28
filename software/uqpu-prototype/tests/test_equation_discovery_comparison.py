@@ -33,8 +33,11 @@ class EquationDiscoveryComparisonTests(unittest.TestCase):
                     DiscoveryRun(
                         method_id=method,
                         method_revision_sha256=_digest(method + "-revision"),
+                        method_config_sha256=_digest(method + "-config-v1"),
+                        runtime_environment_sha256=_digest(method + "-environment-v1"),
                         seed=seed,
                         dataset_sha256=_digest("dataset-v1"),
+                        dataset_provenance_sha256=_digest("dataset-source-license-v1"),
                         train_split_sha256=_digest("train-law-families-v1"),
                         validation_split_sha256=_digest("validation-law-families-v1"),
                         test_split_sha256=_digest("heldout-scale-law-families-v1"),
@@ -78,7 +81,9 @@ class EquationDiscoveryComparisonTests(unittest.TestCase):
 
     def test_uncertainty_and_paired_acceptance_counts_are_reported(self):
         summary = compare_methods(self._runs())
-        self.assertEqual(summary["schema"], "uqpu-equation-discovery-matched-comparison-v3")
+        self.assertEqual(summary["schema"], "uqpu-equation-discovery-matched-comparison-v4")
+        self.assertEqual(summary["shared_dataset"]["dataset_provenance_sha256"], _digest("dataset-source-license-v1"))
+        self.assertEqual(summary["methods"]["one-shot"]["provenance"]["method_config_sha256"], _digest("one-shot-config-v1"))
         self.assertEqual(summary["shared_holdout"]["unit"], "LAW_FAMILY")
         self.assertEqual(summary["shared_holdout"]["group_count"], 6)
         self.assertFalse(summary["shared_holdout"]["manifest_content_verified_by_this_module"])
@@ -174,9 +179,23 @@ class EquationDiscoveryComparisonTests(unittest.TestCase):
             validate_matched_comparison(records)
 
     def test_invalid_hash_is_rejected(self):
+        for field in ("dataset_sha256", "dataset_provenance_sha256", "method_config_sha256", "runtime_environment_sha256"):
+            records = self._runs()
+            records[0] = replace(records[0], **{field: "not-a-hash"})
+            with self.assertRaises(ValueError):
+                validate_matched_comparison(records)
+
+    def test_method_revision_config_and_environment_are_fixed_across_seeds(self):
+        for field in ("method_revision_sha256", "method_config_sha256", "runtime_environment_sha256"):
+            records = self._runs()
+            records[1] = replace(records[1], **{field: _digest("drifted-" + field)})
+            with self.assertRaisesRegex(ValueError, field + " must remain constant"):
+                validate_matched_comparison(records)
+
+    def test_dataset_source_provenance_must_match(self):
         records = self._runs()
-        records[0] = replace(records[0], dataset_sha256="not-a-hash")
-        with self.assertRaises(ValueError):
+        records[-1] = replace(records[-1], dataset_provenance_sha256=_digest("different-license-or-source"))
+        with self.assertRaisesRegex(ValueError, "dataset_provenance_sha256"):
             validate_matched_comparison(records)
 
 
