@@ -1,6 +1,14 @@
 # UQPU: Universal Quantum Processing Unit
 ## Extreme Data-Center-to-Phone Computing Research Program
 
+## Latest Eight-Lane research cycle — 2026-10-28 — physical-semantic gate and portable signed-Max-Cut QAOA
+
+[Batch 097](docs/BATCH_097_PHYSICS_SEMANTIC_GATE_AND_PORTABLE_QAOA_INTEGRATION.md) adds an independent physical-interpretation review gate to AI-assisted equation candidates and an integrated signed-Max-Cut -> provider-neutral QAOA -> ideal-statevector/reference test. The [AI-physics formalization/AxQM watch](docs/literature_watch/2026-10-28-ai-assisted-physics-formalization-axqm.md) separates proof discovery, kernel verification and physical faithfulness. The [Planckian entropy-rate watch](docs/literature_watch/2026-10-28-planckian-quantum-dynamical-entropy-bound.md) treats the general rate bound as conjectural and opens a source-pinned reproduction gap. No new equation is promoted.
+
+Focused gaps: [formalization faithfulness](docs/RESEARCH_GAP_EQN_PHYSICS_SEMANTIC_FAITHFULNESS_2026-10-28.md) and [Planckian entropy-rate reproduction](docs/RESEARCH_GAP_FND001_PLANCKIAN_ENTROPY_RATE_REPRO_2026-10-28.md). The [integration report](integration/DAILY_CYCLE_2026-10-28_PHYSICS_SEMANTIC_GATE_AND_QAOA.md) records all 28 A–H pair reviews and mission/evidence boundaries. The [Lane A gate](research_lanes/A_quantum_programming_runtime/SIGNED_MAXCUT_PINNED_SDK_RECONSTRUCTION_GATE.md) now distinguishes the previously CI-passed pinned-SDK semantic check from the new pending portable-QAOA integration test.
+
+Starting main SHA: d04eb7987b2e3b0c82840b77e263cf2ae8e41285. No combined-status contexts or commit-associated workflow runs were exposed for that exact head; the source branch requires its own exact-head CI before acceptance. Main synchronization is pending PR review. No paid QPU job was submitted, and no real-QPU, physical-law, material/fuel/fusion-economics, lower-WACC or physical Data-Center-to-Phone claim is made.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — dimensionality-aware equation-discovery gate
 
 [Batch 096](docs/BATCH_096_EQUATION_DISCOVERY_DIMENSIONALITY_GATE.md) records a fresh surveillance delta for SymFM's implemented partial-observation/active-subspace/symbolic pipeline and PiT-PO's adaptive physics-informed candidate generation. The [literature watch](docs/literature_watch/2026-10-28-symbolic-regression-symfm-pitpo.md) keeps author-reported results separate from UQPU evidence, notes SymFM's unimplemented Transformer encoder and negative SEIRD exact-recovery result, and proposes a matched-budget, group-held-out reproduction. [RG-EQN-SYMBOLIC-DIMENSIONALITY-REPRO-001](docs/RESEARCH_GAP_EQN_SYMBOLIC_DIMENSIONALITY_REPRO_2026-10-28.md) is open; no candidate equation is promoted.
