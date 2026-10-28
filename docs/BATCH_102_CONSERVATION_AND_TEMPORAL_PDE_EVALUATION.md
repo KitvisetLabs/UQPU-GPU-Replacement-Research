@@ -45,7 +45,7 @@ The function score_conservative_bounded_trajectory accepts an initial discrete f
 
 The scale is derived only from the initial weighted field unless explicitly provided. A zero-magnitude initial field requires an explicit positive scale. Boolean, malformed, non-finite, inconsistent-shape and overflow inputs fail closed. If the caller supplies no physical bounds, the result explicitly reports bounds as not applicable rather than implying acceptance.
 
-Nine isolated unit tests passed in Python 3.12. They cover exact conservation and bounds, detectable conservation drift, weighted discrete integrals, lower/upper bound violations, tolerance semantics, zero-scale behavior, malformed shapes, non-finite/boolean/overflow rejection and the no-bounds case. These are synthetic software fixtures; no PDE was solved and no scientific model was calibrated.
+Nine isolated unit tests passed in Python 3.13. They cover exact conservation and bounds, detectable conservation drift, weighted discrete integrals, lower/upper bound violations, tolerance semantics, zero-scale behavior, malformed shapes, non-finite/boolean/overflow rejection and the no-bounds case. These are synthetic software fixtures; no PDE was solved and no scientific model was calibrated.
 
 ## 4. New focused gap — RG-PDE-SURROGATE-001
 
