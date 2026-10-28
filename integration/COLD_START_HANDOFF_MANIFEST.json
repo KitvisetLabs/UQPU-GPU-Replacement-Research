@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T01:18:30Z",
+  "prepared_utc": "2026-10-28T07:35:27Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "0970a70b0045ca79291550ef619cbfa850716996",
+  "canonical_start_sha": "d04eb7987b2e3b0c82840b77e263cf2ae8e41285",
   "priority_lane": "A",
-  "current_frontier": "Batch 091 plus operational-document reconciliation (2026-10-28): AI-assisted integral literature watch and reproduction gap added; Lane A signed-Max-Cut pinned-SDK gate specified; permanent A-H manifest/validator/tests and active operating docs reconciled; historical Lane I preserved as legacy workstream. Exact-head CI remains unobserved.",
+  "current_frontier": "Batch 097 (2026-10-28): equation-discovery matched-comparison schema v4 adds dataset-source/license provenance plus fixed per-method source/config/runtime hashes across preregistered seeds. Code/test commits are on main; exact-head prototype/invariant and cold-start CI are unverified and must be checked. Batch 096 SymFM/PiT-PO reproduction remains literature-only; no method benchmark or physical-law promotion. Lane A provider-neutral lowering on the frozen signed-Max-Cut contract remains Priority #1. INV-025–035, FND-001–006, EQN-001–008, BIO-001, FUS-001, FIN-001 and A–H remain active; no paid QPU execution authorized.",
   "required_reading": [
     "00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md",
     "AGENTS.md",
@@ -142,7 +142,10 @@
     "integration/DAILY_CYCLE_2026-10-28_AI_DISCOVERY_AND_AH_REPAIR.md",
     "DECISIONS.md",
     "docs/EIGHT_LANE_SCOREBOARD.md",
-    "docs/NINE_LANE_SCOREBOARD_2026-10-16.md"
+    "docs/NINE_LANE_SCOREBOARD_2026-10-16.md",
+    "docs/BATCH_097_METHOD_PROVENANCE_BOUNDARY.md",
+    "integration/DAILY_CYCLE_2026-10-28_METHOD_PROVENANCE_GATE.md",
+    "software/uqpu-prototype/tests/test_split_disjointness.py"
   ],
   "lanes": {
     "A": {
