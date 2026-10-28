@@ -1,6 +1,15 @@
 # UQPU: Universal Quantum Processing Unit
 ## Extreme Data-Center-to-Phone Computing Research Program
 
+## Latest Eight-Lane research cycle — 2026-10-28 — equation-discovery provenance v4
+
+[Batch 097](docs/BATCH_097_METHOD_PROVENANCE_BOUNDARY.md) hardens the canonical [matched equation-discovery comparator](software/uqpu-prototype/uqpu/equation_discovery_comparison.py) to schema v4. It now binds dataset source/license/acquisition provenance and requires each method's source revision, configuration/model/prompt bundle and runtime/dependency environment hashes to remain fixed across its preregistered seeds. Regression tests cover provenance drift and mismatched dataset provenance; [RG-EQN-008](docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md) and the [cross-lane integration report](integration/DAILY_CYCLE_2026-10-28_METHOD_PROVENANCE_GATE.md) record the acceptance boundary. No 30-seed method benchmark ran and no equation or physical law is promoted.
+
+The code/test changes and handoff records are on main. **Exact-head prototype/invariant CI and cold-start audit are not yet verified**: the combined-status query returned no check entries for the new head, and the available workflow-run connector only exposes PR-triggered runs. Check [GitHub Actions](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions) for the current main SHA; the previous green parent result does not transfer. Lane A Priority #1 remains provider-neutral lowering plus exact classical/reference and target-aware simulator comparison for the frozen signed-Max-Cut contract. No paid QPU job is authorized.
+
+A–H remain active: A workload/compiler/runtime; B provider integration; C state/memory/I/O; D device/fabrication; E biomass/materials/bio-oil/fusion/cooling; F economics/evidence/integration; G manufacturing equipment/factory systems with continuous D/G co-design; H strategic/finance/publication. INV-034/035 feed all lanes. INV-025/026/027 and INV-029–035 remain preserved, along with FND-001–006, EQN-001–008, BIO-001, FUS-001, FIN-001, all eight root directives, the Kanusanan Pongpanna Model and Thai/English/Chinese/Japanese/Korean/German public master-plan links. No quantum advantage, new physical law, material substitution, commercial fuel/electricity result, lower WACC or physical Data-Center-to-Phone compression is claimed.
+
+---
 ## Latest Eight-Lane research cycle — 2026-10-28 — dimensionality-aware equation-discovery gate
 
 [Batch 096](docs/BATCH_096_EQUATION_DISCOVERY_DIMENSIONALITY_GATE.md) records a fresh surveillance delta for SymFM's implemented partial-observation/active-subspace/symbolic pipeline and PiT-PO's adaptive physics-informed candidate generation. The [literature watch](docs/literature_watch/2026-10-28-symbolic-regression-symfm-pitpo.md) keeps author-reported results separate from UQPU evidence, notes SymFM's unimplemented Transformer encoder and negative SEIRD exact-recovery result, and proposes a matched-budget, group-held-out reproduction. [RG-EQN-SYMBOLIC-DIMENSIONALITY-REPRO-001](docs/RESEARCH_GAP_EQN_SYMBOLIC_DIMENSIONALITY_REPRO_2026-10-28.md) is open; no candidate equation is promoted.
