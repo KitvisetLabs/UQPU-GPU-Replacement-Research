@@ -1875,3 +1875,22 @@ CI repair: starting-head core/invariant run #1933 (40662975073) passed on `87d3d
 Repository search confirmed RISR (arXiv:2610.11387) was already cited in `docs/LITERATURE_WATCH_2026-10-15_EQUATION_DISCOVERY_IDENTIFIABILITY.md`; it is prior art integrated into RG-EQN-008, not a newly discovered source this cycle. The official arXiv record dates the preprint 2026-10-08. The prior watch's “submitted 2026-10-15” wording was corrected to distinguish preprint posting date from literature-watch date. New-to-repository source additions are SCOPE/ClosureBench (2026-10-13) and MorphingNet (2026-10-14). No evidence class or scientific claim was promoted.
 
 CI follow-up: cold-start audit run #1184 passed on commit `b25c5fac504295fbede3a83d044203081fa10514`; core/invariant run #1934 was still in progress at last observation. The metadata correction commit carries `Research-Sync: main` and requires its own exact-head CI.
+
+
+## 2026-10-28 — Batch 100: SymbolFit uncertainty-aware equation discovery
+
+Started from newest observed main SHA `28de5409eeac3e0244ee9231652eecec4c059da`; inspected project charter, version invariants, goals, README, Research Operating System, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, Batch 099/098/097, RG-EQN-008, schema-v4 comparator/tests, Lane A track, handoff manifest, WORKLOG and RESEARCH_GAPS. The cycle-start combined-status query returned no entries; the available workflow-run wrapper returned no applicable runs, so exact-head CI was UNVERIFIED rather than green. Prior README records cold-start audit #1184 passed on Batch 099's `b25c5fa` head while core/invariant run #1934 was still in progress at last observation.
+
+Fresh public-source surveillance found Tsoi et al., SymbolFit, arXiv:2607.19750; official record v1 submitted 2026-07-22 and v2 revised 2026-10-19. Repository search for “SymbolFit” and “2607.19750” found no prior mention. The paper reports symbolic regression paired with uncertainty modeling for binned CMS/ATLAS Run-2 dijet spectra, 560 seeded runs, seven fit configurations, >1,000 candidate functions and rediscovery of known functions in 111 runs. This is an external author-reported method result, not a new physical law or UQPU result.
+
+Published:
+- `docs/literature_watch/2026-10-28-symbolfit-uncertainty-aware-equation-discovery.md`
+- `docs/BATCH_100_SYMBOLFIT_UNCERTAINTY_AWARE_EQUATION_DISCOVERY.md`
+- `research_lanes/A_quantum_programming_runtime/SYMBOLFIT_UNCERTAINTY_PROTOCOL_V1.json`
+- `integration/DAILY_CYCLE_2026-10-28_SYMBOLFIT_UNCERTAINTY_GATE.md`
+
+Updated the Lane A equation-discovery track, RG-EQN-008 and this append-only RESEARCH_GAPS ledger. The machine-readable manifest passed JSON parsing and required-field checks in cycle tooling. No project test suite or matched scientific benchmark ran; the next code gate is uncertainty calibration tests on synthetic known-function and null controls, followed by byte-level source/data/license verification before any real-data comparison. The current comparator remains canonical; HEP binned fitting is a separate task class and its scores must not be pooled with general SRBench or active-experiment-design results.
+
+A–H were reviewed explicitly. A advanced at protocol level; B/C/D/E/G maintained their provider, memory, device, materials/energy and D/G co-design gates; F advanced uncertainty/resource accounting; H published the source synthesis. FND-001–006 and EQN-001–008 remain active/evidence-gated. BIO-001, FUS-001 and FIN-001 remain open. INV-025/026/027 and INV-029–035 remain preserved. The Data-Center-to-One-Phone mission, 100x/100,000,000x targets, universal subsystem/material substitution, commercial low-cost bio-oil/fusion and lower WACC remain unachieved; no paid QPU job was authorized. The US$10T–US$100T figure remains an ambition-scale proxy; carbon processing is not elemental transmutation; lower financed principal can reduce absolute interest at unchanged terms, while WACC/rate reduction needs separate evidence.
+
+Every created commit carries the required `Research-Sync: main` trailer. The README front page is to be synchronized after the artifact/gap commits. Exact-head CI must be checked again on the final head; an empty status response is not a pass.
