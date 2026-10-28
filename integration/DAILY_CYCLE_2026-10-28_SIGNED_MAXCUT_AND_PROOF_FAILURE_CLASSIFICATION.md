@@ -35,3 +35,8 @@ The core/invariant workflow and cold-start audit passed on the starting SHA. The
 ## CI failure diagnosis and correction — 2026-10-28
 
 The first exact-head run passed all three core Python matrices and failed only in the new Qiskit test's assignment ordering. Qiskit's operator diagonal is indexed by computational-basis integer with q0 as the least-significant bit; itertools.product yields a different order when zipped against the diagonal. The SDK helper's internal per-index direct-score assertion passed, and the separate nonadjacent-edge/constant check passed. The test now generates tuples from each basis index explicitly. A new exact-head Actions run is required; the original failure remains preserved as a regression finding, not silently overwritten.
+
+
+## Second CI diagnosis — 2026-10-28
+
+The second exact-head run passed all four new Qiskit unit tests. It failed at the next step because the JSON certificate runner had an unterminated string caused by a newline escape during source generation. The runner is corrected to write a literal newline using an escaped source string. This is a reproducibility-runner syntax defect, not an SDK/operator mismatch; a third exact-head run is required before acceptance.

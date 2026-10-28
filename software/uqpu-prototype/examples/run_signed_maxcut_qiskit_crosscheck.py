@@ -120,8 +120,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     result = run()
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "
-")
+    args.output.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n")
     print(json.dumps({
         "fixture_count": result["fixture_count"],
         "assignment_count": result["assignment_count"],
