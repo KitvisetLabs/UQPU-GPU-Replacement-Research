@@ -1019,3 +1019,18 @@ The sources add distinct candidate method families: pointwise residual-condition
 **Unlock criteria:** (1) obtain and hash code, solver, material data, meshes, settings and raw traces or mark DATA_BLOCKED; (2) reproduce a simple geometry/load case against an independent trusted solver; (3) establish mesh convergence; (4) test multiple specimens and preregister the primary endpoint; (5) use blind held-out geometry/load/scale and process conditions; (6) include process-aware printability, metrology, failed-build/rework, yield, equipment/energy/time and lifecycle cost per accepted part; (7) only then test a separately characterized carbon-rich candidate against a functionally matched incumbent.
 
 **Falsifier / stop rule:** reject transfer if benefits vanish under mesh refinement, independent solver checks, replicated specimens or held-out conditions, or if a proxy failure index does not predict the real acceptance metric. Do not claim biomass-carbon substitution, lower cost per good part, a new constitutive law or a factory/device advantage from the external paper alone. Carbon processing is not elemental transmutation.
+
+## RG-EQN-009 — independent audit of high-impact external AI theorem claims
+
+**Status:** OPEN / EXTERNAL_CLAIMS_PENDING_INDEPENDENT_REVIEW  
+**Opened:** 2026-10-28  
+**Canonical detail:** [docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md](docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md)  
+**Literature watch:** [2026-10-28 external AI mathematics, complexity and QFT claims](docs/literature_watch/2026-10-28-openai-math-complexity-qft-claims-verification-boundary.md)  
+**Related:** INV-034–035, FND-006, EQN-007, RG-EQN-008, INV-029–033
+
+**Objective:** independently audit the high-impact mathematics, ETH and constructive-QFT claims announced 2026-10-26, keeping source claims, exact formal statements, proof artifacts, kernel checks, expert review, physical validation and engineering advantage as separate evidence stages.
+
+**Current evidence:** public Lean/math artifacts are linked for the mathematics and computational-complexity claims; UQPU has not cloned, hash-pinned, compiled or independently reviewed them. The QFT proof artifacts remain unavailable pending external review. This is literature triage, not a UQPU theorem or technology result.
+
+**Unlock criteria:** pin exact source bytes, revisions, toolchains and dependencies; independently compile the public math/ETH developments; audit imported axioms, admissions, dependencies and statement fidelity; obtain independent expert review; keep QFT blocked until reviewable public artifacts exist; require separate physical and end-to-end engineering evidence before any mission claim changes.
+

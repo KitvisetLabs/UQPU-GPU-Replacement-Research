@@ -62,6 +62,6 @@ INV-025/026/027 and the 100,000,000-GPU/universal 100,000,000-unit moonshots rem
 
 ## Sync and next gate
 
-This integration is published alongside the literature watch, focused gap and README main-page update in one commit so the main page points to the new work. The prior large append-only WORKLOG.md is not rewritten in this change; this dated integration artifact and README entry carry the cycle record without risking partial-history truncation.
+The literature watch, focused gap, living RESEARCH_GAPS.md index entry, integration report and README main-page update are synchronized on main. The prior large append-only WORKLOG.md is not rewritten; this dated integration artifact and README entry carry the cycle record without risking partial-history truncation.
 
 **Highest-value next gate:** freeze exact public math/ETH artifact bytes and Lean environments, independently compile and review them, then document any failures as first-class evidence. Keep the QFT claim blocked until artifacts are public. In parallel, continue Lane A's signed-Max-Cut reference/lowering/simulator path; do not substitute a theorem announcement for an accepted useful-task benchmark.
