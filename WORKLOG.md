@@ -1791,3 +1791,14 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 - **Starting-head CI:** main SHA 74c7bad129a662e844d959ff3f7b86331a2261b4; prototype/invariant run #1815 passed all 15 jobs and cold-start audit #1023 passed. The Batch 081 commit requires its own exact-head CI.
 - **Mission boundary:** no new measured result for INV-029–033; the work advances the falsifiable foundational agenda INV-034/035. INV-025–027, all eight high-visibility root directives, multilingual strategic references and strategic AI-agent/funding references remain preserved.
 - **Next gate:** independently reproduce the three-level clock with tilted-Liouvillian and trajectory estimators; test Eq. 15, Eq. 17, no-feedback/classical limits, \(\Sigma\geq0\), convergence and uncertainty before implementation. Leave aggregate RESEARCH_GAPS.md unchanged and retain sync debt.
+
+
+## 2026-10-28 — Batch 090: signed Max-Cut finite-range fail-closed guard
+
+- **Starting main:** `ac1a947cefcde185a9b4a41902dec1af9bdea3b7`; exact-head prototype/invariant run [#40600344171](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40600344171) and cold-start audit [#40600344313](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40600344313) passed before the change.
+- **Finding:** finite signed edge weights can overflow the derived QUBO coefficient, an accumulated linear coefficient, or a later direct/QUBO/Ising score; conversion of extremely large integers to float can raise `OverflowError` rather than the contract's documented validation error.
+- **Change:** added finite-sum validation and finite derived-coefficient checks, normalizing overflow to fail-closed `ValueError`; added regression tests for all cases.
+- **Evidence:** code-level counterexample/robustness fix only. Exact-head CI is required after this commit; no SDK check, QAOA, provider submission, real-QPU result or advantage claim.
+- **Cross-lane:** A protects objective semantics; B target/SDK identity and pricing remain provider-specific; C state/output-information constraints unchanged; D/G receive no device or manufacturing result; E receives no material/fuel/fusion result; F gains a stricter validity precondition for any later score/cost comparison; H publishes the reusable evidence/gap record.
+- **Foundation/invariants:** FND-006 gains a concrete counterexample-driven software-validation pattern; FND-001–005 and EQN-001–006 unchanged. INV-029–035 and INV-025–027 remain preserved and evidence-gated.
+- **Next gate:** pinned SDK Hamiltonian/sign reconstruction versus exhaustive tiny-instance references, then target-aware simulation only if accepted-output and bound certificates pass.

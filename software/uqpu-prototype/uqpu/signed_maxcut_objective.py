@@ -27,6 +27,17 @@ def _bits(values: Sequence[int] | str, expected: int) -> tuple[int, ...]:
     return result
 
 
+def _finite_fsum(values: Iterable[float], label: str) -> float:
+    """Sum finite numeric terms and fail closed if the result overflows."""
+    try:
+        result = math.fsum(values)
+    except OverflowError as exc:
+        raise ValueError(f"{label} is outside finite floating-point range") from exc
+    if not math.isfinite(result):
+        raise ValueError(f"{label} is outside finite floating-point range")
+    return result
+
+
 @dataclass(frozen=True)
 class SignedMaxCutLowering:
     """Canonical direct, QUBO and Ising forms of one signed Max-Cut objective.
@@ -51,22 +62,28 @@ class SignedMaxCutLowering:
 
     def direct_score(self, bits: Sequence[int] | str) -> float:
         x = _bits(bits, self.vertex_count)
-        return math.fsum(weight for u, v, weight in self.edges if x[u] ^ x[v])
+        return _finite_fsum(
+            (weight for u, v, weight in self.edges if x[u] ^ x[v]),
+            "direct objective score",
+        )
 
     def qubo_score(self, bits: Sequence[int] | str) -> float:
         x = _bits(bits, self.vertex_count)
-        return math.fsum(
+        return _finite_fsum(
             [self.qubo_linear[i] * x[i] for i in range(self.vertex_count)]
             + [coefficient * x[u] * x[v]
-               for u, v, coefficient in self.qubo_quadratic]
+               for u, v, coefficient in self.qubo_quadratic],
+            "QUBO objective score",
         )
 
     def ising_score(self, bits: Sequence[int] | str) -> float:
         x = _bits(bits, self.vertex_count)
         spins = tuple(1 - 2 * bit for bit in x)
-        return self.ising_constant + math.fsum(
-            coefficient * spins[u] * spins[v]
-            for u, v, coefficient in self.ising_couplings
+        return _finite_fsum(
+            [self.ising_constant]
+            + [coefficient * spins[u] * spins[v]
+               for u, v, coefficient in self.ising_couplings],
+            "Ising objective score",
         )
 
 
@@ -100,7 +117,10 @@ def compile_signed_maxcut(
             raise ValueError("self-loops are not accepted")
         if isinstance(raw_weight, bool) or not isinstance(raw_weight, (int, float)):
             raise ValueError("edge weight must be a finite real number")
-        weight = float(raw_weight)
+        try:
+            weight = float(raw_weight)
+        except (OverflowError, ValueError) as exc:
+            raise ValueError("edge weight must be a finite real number") from exc
         if not math.isfinite(weight):
             raise ValueError("edge weight must be a finite real number")
         pair = (min(u, v), max(u, v))
@@ -117,15 +137,23 @@ def compile_signed_maxcut(
     for u, v, weight in normalized:
         linear_terms[u].append(weight)
         linear_terms[v].append(weight)
-        quadratic.append((u, v, -2.0 * weight))
-        couplings.append((u, v, -0.5 * weight))
+        qubo_coefficient = -2.0 * weight
+        ising_coupling = -0.5 * weight
+        if not math.isfinite(qubo_coefficient) or not math.isfinite(ising_coupling):
+            raise ValueError("derived QUBO/Ising coefficient is outside finite floating-point range")
+        quadratic.append((u, v, qubo_coefficient))
+        couplings.append((u, v, ising_coupling))
         weights.append(weight)
 
     return SignedMaxCutLowering(
         vertex_count=vertex_count,
         edges=tuple(normalized),
-        qubo_linear=tuple(math.fsum(terms) for terms in linear_terms),
+        qubo_linear=tuple(
+            _finite_fsum(terms, "QUBO linear coefficient") for terms in linear_terms
+        ),
         qubo_quadratic=tuple(quadratic),
-        ising_constant=0.5 * math.fsum(weights),
+        ising_constant=_finite_fsum(
+            (0.5 * weight for weight in weights), "Ising constant"
+        ),
         ising_couplings=tuple(couplings),
     )

@@ -92,5 +92,31 @@ class SignedMaxCutObjectiveTests(unittest.TestCase):
                 lowering.direct_score(bits)
 
 
+    def test_finite_inputs_that_overflow_lowering_fail_closed(self):
+        with self.assertRaisesRegex(ValueError, "derived QUBO/Ising coefficient"):
+            compile_signed_maxcut(2, [(0, 1, 1e308)])
+
+        # Each pair coefficient remains finite, but the accumulated linear
+        # coefficient at vertex 0 cannot be represented as a finite float.
+        star = [(0, 1, 8e307), (0, 2, 8e307), (0, 3, 8e307)]
+        with self.assertRaisesRegex(ValueError, "QUBO linear coefficient"):
+            compile_signed_maxcut(4, star)
+
+        # Conversion of an integer outside the float range must use the same
+        # fail-closed public error contract as other invalid weights.
+        with self.assertRaisesRegex(ValueError, "finite real number"):
+            compile_signed_maxcut(2, [(0, 1, 10**1000)])
+
+    def test_finite_input_weights_that_overflow_scores_fail_closed(self):
+        edges = [(0, 1, 8e307), (2, 3, 8e307), (4, 5, 8e307)]
+        lowering = compile_signed_maxcut(6, edges)
+        bits = (0, 1, 0, 1, 0, 1)
+        for score in (lowering.direct_score, lowering.qubo_score, lowering.ising_score):
+            with self.subTest(score=score.__name__), self.assertRaisesRegex(
+                ValueError, "outside finite floating-point range"
+            ):
+                score(bits)
+
+
 if __name__ == "__main__":
     unittest.main()

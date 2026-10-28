@@ -912,3 +912,19 @@ The batch contract prices final accepted liquid energy rather than raw bio-oil m
 **Blockers:** source data/code revision and license must be pinned; no UQPU reproduction or domain-transfer evidence exists. The paper's per-case speedups are external simulation results and its own discussion describes narrow training geometry/parameter bands.  
 **Unlock:** independently reproduce a pinned reference case; pass predeclared quality/invariant thresholds on held-out trajectories/configurations; report all failed seeds, uncertainty, memory/I/O, data generation, training, validation, inference and energy where measurable.  
 **Nonclaims:** no Pangola process, accepted bio-oil, fusion, cooling-device, QPU or Data-Center-to-One-Phone result; no new physical law. See `docs/RESEARCH_GAP_LBE_PINO_REPRODUCTION_2026-10-28.md`.
+
+
+## 2026-10-28 — RG-A-SIGNED-MAXCUT-NUMERIC-RANGE-001: finite arithmetic and fail-closed score contract
+
+**Status:** CODE FIX COMMITTED; exact-head CI verification follows the commit.  
+**Primary owner:** Lane A — objective/compiler/runtime semantics.  
+**Cross-lane owners:** B (SDK/target identity), C (output/state accounting), D/G (later Hamiltonian/device mapping), F (reference/evidence/economics), H (handoff/publication).  
+**Related:** Batch 088–090; INV-025–027 and INV-029–035; FND-006.
+
+A static counterexample audit found that individually finite signed edge weights are not sufficient to guarantee finite derived QUBO/Ising coefficients or finite accumulated objective values. For example, weight magnitude (10^{308}) can make the QUBO pair coefficient overflow; several (8\times10^{307}) edges can overflow a vertex's linear term or a full score. A very large integer can also fail during float conversion before the existing finite-value check.
+
+**Resolution in Batch 090:** the compiler checks derived coefficients and accumulated coefficients; all three objective-score paths use a finite-sum guard; conversion overflow is normalized to a clear `ValueError`. Added regression tests cover derived-coefficient overflow, linear-coefficient overflow, huge-integer conversion and direct/QUBO/Ising score overflow.
+
+**Acceptance:** exact-head core workflow and cold-start audit must pass. The focused tests are necessary but do not validate QAOA, SDK sign conventions, provider execution or quantum advantage. The next still-open Lane A gate is independent pinned-SDK Hamiltonian reconstruction against exhaustive references, including the full argmax set.
+
+**Evidence boundary:** software numeric-range robustness only; no new physical law, QPU, material, fuel, electricity, financing/WACC or Data-Center-to-One-Phone result.
