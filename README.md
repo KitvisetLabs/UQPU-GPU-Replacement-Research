@@ -1,11 +1,3 @@
-## Latest Eight-Lane research cycle — 2026-10-28 — conservative and time-aware PDE-surrogate evaluation
-
-[Batch 102](docs/BATCH_102_CONSERVATION_AND_TEMPORAL_PDE_EVALUATION.md) adds a reusable discrete-trajectory metric for conservation drift and optional lower/upper-bound violations, plus 9 deterministic synthetic unit tests. The Lane A interface is [PDE surrogate acceptance contract](research_lanes/A_quantum_programming_runtime/PDE_SURROGATE_ACCEPTANCE_CONTRACT.md); the cross-lane record is [the integration report](integration/DAILY_CYCLE_2026-10-28_PDE_SURROGATE_EVALUATION.md).
-
-The new [literature watch](docs/literature_watch/2026-10-28-conservative-and-time-aware-pde-surrogates.md) covers three previously unindexed ICML 2026/PMLR methods: FluxNet (conservation/bounds), TINNs (time-conditioned PDE surrogates), and Heavy-tailed PINNs (residual modeling). Their reported results remain literature-only. Nine isolated tests passed locally in Python 3.12; no external PDE benchmark, upstream model reproduction, QPU job, physical experiment, material/fuel/electricity advantage, or economic advantage is claimed.
-
-A–H, INV-025/026/027 and INV-029–035 remain preserved. FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated. The previous exact-head cold-start path defect was corrected in commit 42e6614db390db7b3e248bc6b383d67e9d00dd3b, but exact-head CI for this cycle's final SHA remains **UNVERIFIED** until both required Actions workflows are checked directly. The large append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten; Batch 102 is the focused gap record and index synchronization remains explicit debt. No paid QPU job is authorized.
-
 # UQPU: Universal Quantum Processing Unit
 
 ## Contents
@@ -18,6 +10,14 @@ A–H, INV-025/026/027 and INV-029–035 remain preserved. FND-001–006, EQN-00
 - [Pangola/biomass carbon](01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md) · [Ultra-low-cost bio-oil](02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md) · [Fusion electricity](03_FUSION_ELECTRICITY_COST_STRATEGY.md) · [Interest/R&D finance](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md)
 - [Foundational physics and mathematics](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) · [AI-assisted equation discovery](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md)
 - [Kanusanan Pongpanna Model](docs/KANUSANAN_PONGPANNA_MODEL.md) · [Multilingual strategic references](STRATEGIC_PLAN_REFERENCES.md)
+
+## Latest Eight-Lane research cycle — 2026-10-28 — conservative and time-aware PDE-surrogate evaluation
+
+[Batch 102](docs/BATCH_102_CONSERVATION_AND_TEMPORAL_PDE_EVALUATION.md) adds a reusable discrete-trajectory metric for conservation drift and optional lower/upper-bound violations, plus 9 deterministic synthetic unit tests. The Lane A interface is [PDE surrogate acceptance contract](research_lanes/A_quantum_programming_runtime/PDE_SURROGATE_ACCEPTANCE_CONTRACT.md); the cross-lane record is [the integration report](integration/DAILY_CYCLE_2026-10-28_PDE_SURROGATE_EVALUATION.md).
+
+The new [literature watch](docs/literature_watch/2026-10-28-conservative-and-time-aware-pde-surrogates.md) covers three previously unindexed ICML 2026/PMLR methods: FluxNet (conservation/bounds), TINNs (time-conditioned PDE surrogates), and Heavy-tailed PINNs (residual modeling). Their reported results remain literature-only. Nine isolated tests passed locally in Python 3.12; no external PDE benchmark, upstream model reproduction, QPU job, physical experiment, material/fuel/electricity advantage, or economic advantage is claimed.
+
+A–H, INV-025/026/027 and INV-029–035 remain preserved. FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated. The previous exact-head cold-start path defect was corrected in commit 42e6614db390db7b3e248bc6b383d67e9d00dd3b, but exact-head CI for this cycle's final SHA remains **UNVERIFIED** until both required Actions workflows are checked directly. The large append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten; Batch 102 is the focused gap record and index synchronization remains explicit debt. No paid QPU job is authorized.
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — predictive interval metrics and current-head audit
 
