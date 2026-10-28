@@ -61,3 +61,17 @@ Before any run, verify code/data/model/license availability, hash actual artifac
 ### Source provenance correction — 2026-10-28
 
 RISR was already cited in the repository's 2026-10-15 identifiability watch; it is prior art for this integration, not a new-to-repository discovery. The official arXiv page dates it 2026-10-08, and the earlier watch's mistaken “submitted 2026-10-15” metadata is corrected. New source additions are SCOPE/ClosureBench and MorphingNet. Keep these method families distinct and do not pool their reported metrics.
+
+
+## 2026-10-28 supplemental task class — uncertainty-aware HEP binned fits
+
+A repository search found no earlier SymbolFit/arXiv:2607.19750 entry. The official arXiv record shows v1 submitted 2026-07-22 and v2 revised 2026-10-19: https://arxiv.org/abs/2607.19750. The paper reports symbolic regression paired with uncertainty modeling for CMS/ATLAS Run-2 binned dijet spectra. Treat this as a **separate `HEP_BINNED_PARAMETRIC_FIT` task class**, not a general equation-discovery winner and not a physical-law claim.
+
+- Literature watch: `docs/literature_watch/2026-10-28-symbolfit-uncertainty-aware-equation-discovery.md`
+- Batch: `docs/BATCH_100_SYMBOLFIT_UNCERTAINTY_AWARE_EQUATION_DISCOVERY.md`
+- Machine-readable protocol: `research_lanes/A_quantum_programming_runtime/SYMBOLFIT_UNCERTAINTY_PROTOCOL_V1.json`
+- Cross-lane integration: `integration/DAILY_CYCLE_2026-10-28_SYMBOLFIT_UNCERTAINTY_GATE.md`
+
+The existing schema-v4 comparator remains canonical. It already reports Wilson intervals for accepted-candidate rates and paired seed counts; it does not yet establish predictive-interval calibration. Next implementation gate: verify exact code/data/license bytes, then add tests for nominal interval coverage jointly with interval width and a proper predictive score, using synthetic known-function and null controls first. Freeze the primary endpoint, calibration tolerance, split manifests, configuration hashes, >=30 shared seeds where feasible, identical hard resource ceilings and one cost basis before unblinding. Include training + inference cost and retain all failed seeds, false positives, counterexamples and retries.
+
+**Current state:** PROTOCOL_ONLY. No benchmark ran, no uncertainty model was reproduced, no method winner is declared, and no physical equation/law is promoted. This task does not displace the Priority-1 signed-Max-Cut provider-neutral lowering/reference/target-aware simulation path.
