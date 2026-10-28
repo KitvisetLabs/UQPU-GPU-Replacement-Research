@@ -943,3 +943,9 @@ The official preprint arXiv:2603.04735 reports LLM-guided tree search and numeri
 
 **Status:** IMPLEMENTED / EXACT-HEAD CI UNVERIFIED.  
 The operational lane manifest and cold-start validator now define exactly A–H and 28 unordered review pairs. The historical Lane I vehicle/levitation directory remains preserved as a legacy workstream and is not deleted or silently merged into another lane. See docs/RESEARCH_GAP_AH_ARCHITECTURE_RECONCILIATION_2026-10-28.md and Batch 091. Close only after exact-head cold-start and prototype/invariant CI pass.
+
+
+## 2026-10-28 — A–H operating-document reconciliation follow-up
+
+**Status:** IMPLEMENTED / EXACT-HEAD CI UNVERIFIED.  
+Batch 091 reconciles AGENTS.md, the prime handoff principle, commit-sync policy, continuous cross-lane protocol, active scoreboard and DECISIONS.md to the permanent A–H operational architecture. D109 supersedes D108 only on the question of whether Lane I is a permanent operational lane. Lane I records remain preserved as a legacy workstream, and the historical nine-lane scoreboard is archived rather than deleted. Exact-head cold-start and prototype/invariant workflows remain the acceptance gate.
