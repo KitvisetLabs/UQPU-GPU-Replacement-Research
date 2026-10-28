@@ -29,7 +29,7 @@ The run started from the newest observed main SHA, not a fixed batch number. It 
 - ad32b8e770455c87d0b9ba54a2eb8439dd38fbd6 — cold-start handoff manifest
 - c958e5fc1760484a505b247e4b150b61af586f7c — Batch 091
 
-All commits were placed on canonical main with the Research-Sync: main trailer. The batch and this integration record provide the detail map; the README and cold-start manifest still need final synchronization to the finished cycle.
+All commits were placed on canonical main with the Research-Sync: main trailer. The batch and this integration record provide the detail map. The cold-start manifest was refreshed in 3084b45d767f861def02bcfc7809831bb023c4de; README.md was updated in 3f1b948dab83e0a7b8084fcbf8755d4ab20c0486. WORKLOG.md and RESEARCH_GAPS.md were appended from complete fetched content in 3801001ed40e0e46a82a6afac2e4b355c3fa5285 and ec471a991b67ec2ea56cb4676d49b230ecf5f9a8.
 
 ## A–H and mission impact
 
@@ -50,8 +50,15 @@ INV-029–033 remain unachieved strategic goals; INV-034/035 continue under expl
 
 The previous known passing core/invariant and cold-start checks were on an older parent, not these commits. No status contexts were returned for the inspected starting head and exact-head Actions results have not yet been observed. The run must not be marked CI-passing until the new exact-head core/invariant and cold-start audit are checked.
 
-The large append-only WORKLOG.md and RESEARCH_GAPS.md must be fetched completely before any append. This record and the focused gap are canonical dated artifacts in the meantime; aggregate sync debt remains visible until safe append-only updates are confirmed.
+The large append-only WORKLOG.md and RESEARCH_GAPS.md were fetched completely and appended without truncating prior history. Older historical branch/fork and open-PR synchronization debt remains visible; no claim of full historical reconciliation is made.
 
 ## Next gate
 
 First verify exact-head CI for the A–H manifest/validator changes. Then execute the pinned-SDK signed-Max-Cut test against exhaustive tiny-instance references. Keep the cosmic-string integral as a separate mathematical-reproduction task; do not let its reported numerical agreement be treated as new physics. No paid QPU job without credentials, bounded budget and explicit user consent.
+
+
+## Final sync delta
+
+Additional main commits after the first integration draft: 5b7a8c05fdd27838612d7a19abfc7dda3fa37c11 (architecture-gap resolution note), 3801001ed40e0e46a82a6afac2e4b355c3fa5285 (WORKLOG append), ec471a991b67ec2ea56cb4676d49b230ecf5f9a8 (RESEARCH_GAPS append), 3084b45d767f861def02bcfc7809831bb023c4de (handoff manifest refresh), 3f1b948dab83e0a7b8084fcbf8755d4ab20c0486 (README summary), and efc5842eb5dd2694ce21739d59dd875530a81328 (Batch 091 sync correction).
+
+The structural manifest/validator check passed in orchestration, but the repository's Python tests were not executed. GitHub combined status and commit-associated workflow lookup returned no contexts/runs for the inspected head. Exact-head core/invariant and cold-start CI remain UNVERIFIED.
