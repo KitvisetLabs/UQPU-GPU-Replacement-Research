@@ -1,5 +1,5 @@
 # Mandatory Main-Branch Commit Detail Synchronization Policy
-Date: 2026-10-16 | Owner directive | Applies to all agents, humans, branches, worktrees, forks and research lanes A–I, FND/EQN, and specialized frontiers.
+Date: 2026-10-16 | Owner directive | Applies to all agents, humans, branches, worktrees, forks, permanent operational lanes A–H, FND/EQN, and preserved legacy/specialized workstreams.
 ## Core requirement
 **Every substantive commit anywhere in the project must have its research/change details reflected in canonical `main`.** A commit on a feature branch, fork or detached worktree is NOT considered synchronized merely because it exists. `main` is the shared memory and discoverability source for all autonomous agents.
 ## Commit-level record contract
@@ -18,3 +18,8 @@ The ledger update itself is a commit. Avoid an infinite self-reporting loop: a s
 Report (a) latest `main` SHA, (b) source commits discovered, (c) merged/synchronized, (d) pending or inaccessible branches/forks, (e) sync debt, (f) CI and (g) next reconciliation action. Every agent bootstrap must read this policy and `integration/PERMANENT_CROSS_LANE_CONTINUOUS_INTEGRATION_PROTOCOL_2026-10-16.md`.
 ## Existing known checkpoint
 Prior to this policy, `main` included `f3ebcf54c395db52c363903d14f08e7f3c0a1d1c` (Lane I research charter) and `fa5a257ccc188546f58f2f616d3886e8d0fca1e5` (continuous cross-lane integration protocol). These are main commits, not unsynchronized branch work. No claim is made that all historical branches/forks have been audited.
+
+
+## Operational lane-scope clarification — 2026-10-28
+
+The permanent operational lane map is A–H under INV-024/028 and the Research Operating System. Historical Lane I vehicle/levitation artifacts remain preserved as a legacy workstream, not a ninth permanent lane. The commit-sync requirement still covers every legacy/specialized workstream: each new substantive artifact has one primary A–H owner, explicit interfaces, and a truthful main/pending-main record. This clarification does not claim that inaccessible historical branches/forks have been reconciled.
