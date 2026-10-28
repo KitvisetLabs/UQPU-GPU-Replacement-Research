@@ -1814,3 +1814,12 @@ At the time of this update, Batch 078's Python 3.10/3.11/3.12 unit/invariant job
 - **CI:** exact-head combined status returned no status contexts and no commit-associated workflow runs were exposed by the available connector. The older parent pass is not inherited. Exact-head CI remains UNVERIFIED.
 - **Evidence boundary:** FND-001–005, EQN-001–006, BIO-001, FUS-001 and FIN-001 remain evidence-gated. No real-QPU, physical-law, material, fuel, fusion-electricity, financing/WACC, cost/task advantage or Data-Center-to-One-Phone milestone is claimed.
 - **Next gate:** verify exact-head core/invariant and cold-start CI; then execute the pinned-SDK signed-Max-Cut reconstruction against exhaustive references. Paid QPU work remains disabled without credentials, bounded budget and explicit consent.
+
+
+## 2026-10-28 — Batch 091 follow-up: operational A–H documentation reconciliation
+
+- Reconciled the agent entrypoint, prime handoff principle, commit-sync policy, continuous cross-lane protocol, active scoreboard and decision log to the permanent A–H architecture.
+- D109 records the current decision and preserves D108 as historical; Lane I remains a legacy workstream and the archived nine-lane scoreboard remains available for provenance.
+- Main commits: bacc23849e1f806d545b466d9586b657888ce69b; 8dda30decc2c7a9378036c38789fe44ed37cc07d; 82a71ea353f1bf70ec016f1fae07016c82f51a14; e13c186a9f8fe0ccdf6c2d9366006288d1d87004; 451794e2535d82bf7c8a2d35bd63c47d6010b3ac; 62085211979308d2d72a90486872825c6a6b1732; 8a980bc22b47c54606071052f4032c44753fe67e; 3f3a3d7e764305affe9bf90e64c556ac6a402b31; integration follow-up 88ac99c63b550d77182628b07ad346e1b08273f4.
+- Structural consistency checks pass for A–H, 28 pairs, legacy-I preservation, language/program markers and authorization boundaries. Repository Python tests and exact-head Actions remain unverified.
+- Next gate: obtain exact-head cold-start and prototype/invariant CI; repair any validator/schema failure before closing the governance gap.
