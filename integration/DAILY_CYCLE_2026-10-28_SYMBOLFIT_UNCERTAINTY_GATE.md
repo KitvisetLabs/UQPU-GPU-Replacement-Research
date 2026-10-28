@@ -22,7 +22,7 @@ The existing schema-v4 comparator remains the canonical matched-resource interfa
 | A ↔ H | Source-date metadata distinguishes original v1 submission (2026-07-22) from v2 revision (2026-10-19); author-reported scores remain external. |
 | A ↔ C | Raw data bytes, memory, I/O, transfer and reconstruction are resources; state-space size is not readable classical storage. |
 | A ↔ B | No cloud/QPU execution is needed for the literature gate; provider-neutral paths remain dry-run-first. |
-| D ↔ G | Continuous device/process and manufacturing-equipment co-design preserved; no device or factory evidence follows from SymbolFit. |
+| D ↔ G | Continuous device/process and manufacturing-equipment co-design preserved; VortexOp supplies an external solver-in-the-loop methodology candidate, not device/factory evidence. |
 | E ↔ F/H | BIO-001 accepted-liquid cost and FUS-001 reliable net-electric lifecycle cost remain separate, open gates; no cross-pillar economic evidence is inferred. |
 | A–H ↔ INV-034/035 | New candidate methods still pass math/physics constraints, counterexample search, held-out tests and independent validation before any physical claim. |
 
@@ -31,10 +31,10 @@ The existing schema-v4 comparator remains the canonical matched-resource interfa
 - **A:** advanced the preregistration protocol; next add/test calibration metrics on synthetic known-function and null controls. Priority-1 signed-Max-Cut provider-neutral lowering/reference/simulator remains ahead of this secondary method study.
 - **B:** maintained provider-neutral cloud adapter inventory; no credentials, paid jobs or new provider evidence.
 - **C:** maintained memory/state/data-movement accounting; no classical memory/storage equivalence claim.
-- **D:** maintained device/chip/process/packaging track; no measured process-window result.
-- **E:** maintained Pangola/carbon, accepted-liquid bio-oil, fusion electricity, cooling and infrastructure tracks; no commercial evidence.
+- **D:** advanced literature surveillance for physics-guided active material/geometry design; no measured UQPU device/process result.
+- **E:** maintained Pangola/carbon, accepted-liquid bio-oil, fusion electricity, cooling and infrastructure tracks; VortexOp did not test biomass carbon and adds no material-substitution evidence.
 - **F:** advanced uncertainty/total-resource acceptance criteria; no measured economics or WACC effect.
-- **G:** maintained continuous D/G co-design for equipment, metrology, yield and cost per good die/package.
+- **G:** advanced the D/G literature gate: future solver-in-loop design must include process windows, metrology, yield, rework and cost per good part/package.
 - **H:** published the literature synthesis; multilingual Thai/English/Chinese/Japanese/Korean/German strategic-plan links and strategic AI-agent/funding references remain preserved as context.
 
 ## Foundations and permanent missions
@@ -48,3 +48,12 @@ BIO-001, FUS-001 and FIN-001 remain open. Carbon processing is not elemental tra
 The cycle-start combined-status query returned no status entries; the available workflow-run wrapper returned no applicable runs because it exposes PR-triggered runs only. Exact-head CI is **UNVERIFIED**, not green. The repository's required `Research-Sync: main` trailer is included in created commit messages. README, WORKLOG and RESEARCH_GAPS were synchronized on main by the final documentation commits; exact-head CI still must be verified on the resulting head.
 
 Next gate: source-byte/license verification -> synthetic positive/null controls -> uncertainty calibration tests -> blind matched comparison if controls pass. No paid QPU job is authorized.
+
+
+## Supplementary Lane D/G/E surveillance — VortexOp
+
+A new-to-repository peer-reviewed source, Moeinnia, Islam and Kim, “VortexOp: Autonomous Physics-Guided Discovery of Functionally Graded Metamaterials,” *Journal of Computational Design and Engineering*, published 2026-09-21 (corrected/typeset 2026-10-21), DOI https://doi.org/10.1093/jcde/qwag085, is recorded in `docs/literature_watch/2026-10-28-vortexop-physics-guided-metamaterial-design.md` and the Batch 100 addendum.
+
+The relevant method is finite-element-solver-in-the-loop active design with Gaussian-process surrogates and constrained Bayesian optimization. Transfer is blocked pending code/data access, mesh convergence, independent-solver verification, replicated specimens, held-out geometry/load/scale and process-aware printability/yield tests. The paper's one-specimen-per-configuration design and linear-static/small-strain solver prevent a broad material-performance claim. No Pangola/carbon material was tested.
+
+This addition advances the Lane D/G co-design research question while keeping INV-030 evidence-gated: measure the actual material function first, then compare a characterized carbon-rich candidate with a matched incumbent; never claim elemental transmutation. Lane F must include rework/yield and total lifecycle cost.
