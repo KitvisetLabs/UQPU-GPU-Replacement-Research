@@ -6,6 +6,12 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-28 — non-Hermitian exceptional-point speed limits and accepted-output accounting
+
+[Batch 095](docs/BATCH_095_NONHERMITIAN_EP_QSL_ACCEPTED_TASK_GATE.md) adds a source-bounded literature watch for a trapped-ion exceptional-point experiment and a transition-rate quantum-speed-limit framework for open processes. The focused gap [RG-FND003-NH-EP-001](docs/RESEARCH_GAP_FND003_NONHERMITIAN_EP_2026-10-28.md) specifies a matched Hermitian-versus-exceptional-point comparison that counts failures, retries, control, reset, dissipation and cooling per accepted output. This is literature and preregistration only: no UQPU reproduction, hardware job, new physical law, quantum advantage, material/fuel/fusion result, financing result or Data-Center-to-One-Phone milestone is claimed.
+
+The current canonical starting main SHA is `b3252a556b61b7e566d5e057606c1f2e917d79e8`. The exact-head combined-status query returned no status contexts and the available workflow-run query did not expose push-triggered runs; CI remains **UNVERIFIED**, not green. The signed-Max-Cut pinned-Qiskit certificate remains the immediate Lane A gate. See [the integration report](integration/DAILY_CYCLE_2026-10-28_NONHERMITIAN_EP_QSL.md).
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — pinned Qiskit signed-Max-Cut reconstruction and proof-failure feedback
 
 [Batch 094](docs/BATCH_094_PINNED_QISKIT_SIGNED_MAXCUT_AND_PROOF_FAILURE_CLASSIFICATION.md) adds a pinned-Qiskit 2.5.2 signed-Max-Cut operator check. The first exact-head CI run caught a test-ordering mismatch; the second run confirmed that all four new Qiskit unit tests pass after assignments were aligned to the SDK's little-endian basis-index convention. That run then exposed a syntax error in the JSON certificate runner's newline literal. The runner is being corrected and the exact-head workflow must complete before the SDK gate is marked fully green.
