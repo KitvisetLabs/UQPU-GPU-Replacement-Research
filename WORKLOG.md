@@ -2046,3 +2046,13 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - A–H reviewed: A advanced at proxy/test level; B adapters unchanged; C resource omissions explicit; D/E/G material/device/manufacturing claims remain evidence-gated; F has no measured accepted-task economics; H keeps the strategic model and multilingual links. D/G co-design remains mandatory.
 - FND-002/FND-004 advance only at mathematical-query-proxy level. FND-001/003/005/006 and EQN-001–EQN-006 remain active; INV-029–035 and INV-025/026/027 are preserved. BIO-001, FUS-001 and FIN-001 remain open. No paid QPU job, new physical law, 100x/100,000,000x advantage, commercial fuel/fusion, lower WACC or one-phone milestone is claimed.
 - README, RESEARCH_GAPS.md, WORKLOG.md, code/tests and dated artifacts are committed atomically to main. Exact-head GitHub Actions remain the acceptance gate.
+
+
+## 2026-10-29 — Batch 114: exact small-Hamiltonian reference and equation-discovery surveillance
+
+- Re-resolved `main` at `a813af8aa299de01506972ab6b32c5333898bf51`; reviewed the charter, invariants, goals, README, operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, current Batches 112–113, living gaps, foundational modules and current exact-head Actions.
+- Added a dependency-free analytic 2x2 Hermitian evolution reference, row/column Euclidean norm and sparsity metadata, and unitary-residual helper. Focused tests cover Pauli-X, degenerate diagonal and zero-time limits, semigroup composition and fail-closed inputs.
+- Published a dated watch for CoSR (publisher acceptance 2026-10-06), AI-Newton (2026-10-09) and the SymbolFit v2 arXiv revision (2026-10-19). The implication is a controlled benchmark of staged/concept-driven discovery under grouped holdouts; none of these sources is UQPU evidence or a new physical law.
+- A–H were explicitly reviewed. A advanced at analytic-reference level; B unchanged/no paid job; C state/I/O costs remain separate; D/G physical/process evidence remains open; E materials/bio-oil/fusion remain unproven; F has no measured accepted-task economics; H publication and multilingual strategic context preserved.
+- FND-002/FND-004 advanced only at MODEL_ONLY reference-fixture level. FND-001/003/005/006 and EQN-001–EQN-006 remain active. INV-025–027 and INV-029–035 remain intact. BIO-001, FUS-001 and FIN-001 remain open.
+- Exact-head GitHub Actions are the acceptance gate; no paid QPU execution, new physical law, commercial fuel/fusion result, lower-WACC claim or Data-Center-to-One-Phone milestone is claimed.

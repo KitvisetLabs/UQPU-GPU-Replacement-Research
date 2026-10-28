@@ -1177,3 +1177,12 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Remaining blockers:** exact-head CI; independent review of the sparse-access/norm assumptions; exact small-instance evolution; held-out sparsity/time/error profiles; separate accounting for oracle construction, state preparation, synthesis, host work, memory/I/O, reconstruction, verification and accepted-task cost.
 
 **Nonclaims:** the helper is asymptotic MODEL_ONLY arithmetic. No theorem reproduction, finite-instance gate lower bound, physical runtime/energy result, QPU advantage, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone milestone is established.
+
+
+## 2026-10-29 — RG-A-FND002-EXACT2X2-REF-001 — Batch 114
+
+**Advance:** added `software/uqpu-prototype/uqpu/small_hamiltonian_reference.py` with a closed-form 2x2 Hermitian evolution, row/column Euclidean norm and sparsity metadata, and unitarity-residual helper. Tests cover the Pauli-X form, degenerate diagonal limit, zero time, semigroup composition and fail-closed input handling.
+
+**Remaining blockers:** exact-head CI; a pinned sparse-entry access/oracle contract; candidate product-formula/qDRIFT-family algorithm; held-out matrices, times and tolerances; separate counts for oracle construction, state preparation, synthesis, host compute, memory/I/O, reconstruction, retries, verification and accepted-task cost.
+
+**Nonclaims:** this analytic fixture is not a theorem reproduction, scalable algorithm, physical runtime/energy result, real-QPU advantage, readable memory/storage replacement, material/fuel/electricity benefit, lower WACC or Data-Center-to-One-Phone milestone.

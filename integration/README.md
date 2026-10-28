@@ -13,6 +13,10 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — exact Hamiltonian reference and equation-discovery surveillance
+
+- [Batch 114](../docs/BATCH_114_EXACT_SMALL_HAMILTONIAN_REFERENCE_AND_EQUATION_DISCOVERY_WATCH.md), [Lane A contract](../research_lanes/A_quantum_programming_runtime/SMALL_HAMILTONIAN_REFERENCE_CONTRACT_2026-10-29.md), [literature watch](../docs/literature_watch/2026-10-29-progressive-concept-driven-physics-law-discovery.md) and [integration record](DAILY_CYCLE_2026-10-29_EXACT_HAMILTONIAN_REFERENCE_AND_AI_EQUATION_DISCOVERY.md) add a bounded analytic reference and a falsifiable staged-equation-discovery evaluation protocol. No theorem or physical/economic advantage is claimed.
+
 ## Latest integrated cycle — 2026-10-29 — GPU stabilizer simulation and parity-QAOA
 
 - [Batch 107](../docs/BATCH_107_GPU_STABILIZER_SIMULATOR_AND_AH_INTEGRATION.md), [literature watch](../docs/literature_watch/2026-10-29-gpu-accelerated-stabilizer-simulation.md), [reproduction gap](../docs/RESEARCH_GAP_QUASARQ_STABILIZER_REPRODUCTION_2026-10-29.md) and [integration record](DAILY_CYCLE_2026-10-29_GPU_STABILIZER_SIMULATION_AND_PARITY_QAOA.md) document the new-to-repository QuaSARQ benchmark. Its scope is classical Clifford/stabilizer simulation; no QPU or general QAOA advantage is claimed.
