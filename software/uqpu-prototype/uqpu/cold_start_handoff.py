@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 
-EXPECTED_LANES = tuple("ABCDEFGHI")
+EXPECTED_LANES = tuple("ABCDEFGH")
 EXPECTED_LANGUAGES = ("Thai", "English", "Chinese", "Japanese", "Korean", "German")
 REQUIRED_PROGRAMS = (
     "FND-001..006", "EQN-001..006", "BIO-001", "FUS-001", "FIN-001",
@@ -84,9 +84,9 @@ def audit_repository(repo_root: Path) -> dict[str, Any]:
     if handoff.get("priority_lane") != "A":
         errors.append("priority_lane_must_be_A")
     if tuple(sorted(handoff.get("lanes", {}))) != EXPECTED_LANES:
-        errors.append("handoff_lanes_must_equal_A_through_I")
+        errors.append("handoff_lanes_must_equal_A_through_H")
     if tuple(sorted(lanes.get("lanes", {}))) != EXPECTED_LANES:
-        errors.append("integration_lanes_must_equal_A_through_I")
+        errors.append("integration_lanes_must_equal_A_through_H")
 
     expected_pairs = len(EXPECTED_LANES) * (len(EXPECTED_LANES) - 1) // 2
     if len(lanes.get("integration_review_pairs", [])) != expected_pairs:
