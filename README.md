@@ -12,13 +12,13 @@
 
 ## Previous Eight-Lane research cycle — 2026-10-28 — quantum dynamical entropy bound
 
-## Latest Eight-Lane research cycle — 2026-10-28 — quantum dynamical entropy bound
+## Previous Eight-Lane research cycle — 2026-10-28 — quantum dynamical entropy bound
 
 The [FND-003 literature watch](docs/literature_watch/2026-10-28-planckian-quantum-dynamical-entropy-fnd003.md) now includes the full [arXiv manuscript](https://arxiv.org/abs/2507.20914) for Cao's *Physical Review Letters* paper. Under a specified Gaussian continuous-monitoring scheme for a mesoscopic observable in a noncritical thermal many-body system, the paper derives a CNT-inspired entropy-rate formula in terms of two-point Green functions; it reports a bound near 0.57 without FDT and a numerically optimized FDT-constrained value near 0.375. **The broad universal extension remains a conjecture**, not a generic gate-time or wall-plug-energy bound. The [focused gap](docs/RESEARCH_GAP_FND003_QUANTUM_DYNAMICAL_ENTROPY_2026-10-28.md) requires formula reconstruction, reproduction of the reported L=6,8,10 spin-chain results, held-out regimes and counterexample search.
 
 The [integration report](integration/DAILY_CYCLE_2026-10-28_QUANTUM_DYNAMICAL_ENTROPY_BOUND.md) records A–H status, the evidence boundary and current CI state. Exact-head prototype/invariant and cold-start runs for the prior commits were queued/in progress at the last check; this update needs its own exact-head checks. The append-only `WORKLOG.md` and `RESEARCH_GAPS.md` have been synchronized without replacing partial history. A follow-up source check retrieved the full [arXiv manuscript](https://arxiv.org/abs/2507.20914); the append-only records now explicitly supersede the initial abstract-only access note while retaining the conjecture/evidence boundary. No universal physical law, real-QPU advantage, accepted bio-oil, net fusion electricity, material substitution, lower WACC, or Data-Center-to-One-Phone milestone is claimed.
 ---
-## Latest Eight-Lane research cycle — 2026-10-28 — equation-discovery provenance v4
+## Previous Eight-Lane research cycle — 2026-10-28 — equation-discovery provenance v4
 
 [Batch 097](docs/BATCH_097_METHOD_PROVENANCE_BOUNDARY.md) hardens the canonical [matched equation-discovery comparator](software/uqpu-prototype/uqpu/equation_discovery_comparison.py) to schema v4. It now binds dataset source/license/acquisition provenance and requires each method's source revision, configuration/model/prompt bundle and runtime/dependency environment hashes to remain fixed across its preregistered seeds. Regression tests cover provenance drift and mismatched dataset provenance; [RG-EQN-008](docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md) and the [cross-lane integration report](integration/DAILY_CYCLE_2026-10-28_METHOD_PROVENANCE_GATE.md) record the acceptance boundary. No 30-seed method benchmark ran and no equation or physical law is promoted.
 
