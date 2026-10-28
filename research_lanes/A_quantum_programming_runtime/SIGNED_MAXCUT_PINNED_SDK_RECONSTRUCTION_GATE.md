@@ -3,9 +3,15 @@
 **Gate ID:** A-GATE-SIGNED-MAXCUT-SDK-001  
 **Primary owner:** Lane A — quantum programming/workloads/compiler/runtime  
 **Interfaces:** B (provider/SDK and target identity), C (state/output and reconstruction accounting), D/G (Hamiltonian/device mapping), F (reference certificates and economics), H (cold-start publication)  
-**Status:** SPECIFIED / NOT EXECUTED  
-**Evidence class:** TEST PLAN ONLY  
-**Starting main:** 0970a70b0045ca79291550ef619cbfa850716996
+**Status:** PINNED_QISKIT_OPERATOR_GATE_PREVIOUSLY_CI_PASSED / PORTABLE_QAOA_INTEGRATION_TEST_ADDED_ON_BRANCH / EXACT_HEAD_CI_PENDING  
+**Evidence class:** SOFTWARE_CONTRACT + EXACT_CLASSICAL_REFERENCE + IDEAL_SIMULATOR_TEST_PENDING  
+**Starting main:** d04eb7987b2e3b0c82840b77e263cf2ae8e41285
+
+## Current implementation status — 2026-10-28
+
+The pinned Qiskit 2.5.2 operator-semantic gate and its certificate runner are already committed on main; Batch 094/095 record the successful prior exact-head verification. The current main head d04eb7987b2e3b0c82840b77e263cf2ae8e41285 exposes no combined-status contexts or commit-associated workflow runs through the current connector, so that head is not independently certified green here.
+
+The proposed Batch 097 branch adds an integrated test that lowers the same six frozen signed graphs into the provider-neutral PortableProgram QAOA path, compares every tiny-instance objective against an independent direct-score oracle, compares ideal statevectors against a separate dense construction, and verifies IBM/Braket/Azure adapters remain DRY_RUN_ONLY. This test is pending exact-head CI; it is not a QPU job or a target-noise simulation.
 
 ## Frozen semantic objective
 
