@@ -928,3 +928,18 @@ A static counterexample audit found that individually finite signed edge weights
 **Acceptance:** exact-head core workflow and cold-start audit must pass. The focused tests are necessary but do not validate QAOA, SDK sign conventions, provider execution or quantum advantage. The next still-open Lane A gate is independent pinned-SDK Hamiltonian reconstruction against exhaustive references, including the full argmax set.
 
 **Evidence boundary:** software numeric-range robustness only; no new physical law, QPU, material, fuel, electricity, financing/WACC or Data-Center-to-One-Phone result.
+
+
+## 2026-10-28 — RG-EQN-AI-COSMIC-STRING-INTEGRAL-001
+
+**Status:** OPEN / NOT_REPRODUCED.  
+**Primary record:** docs/RESEARCH_GAP_AI_COSMIC_STRING_INTEGRAL_REPRODUCTION_2026-10-28.md.  
+**Source watch:** docs/literature_watch/2026-10-28-ai-assisted-cosmic-string-integral-discovery.md.  
+**Integration:** integration/DAILY_CYCLE_2026-10-28_AI_DISCOVERY_AND_AH_REPAIR.md.
+
+The official preprint arXiv:2603.04735 reports LLM-guided tree search and numerical verification for a cosmic-string radiation integral. UQPU has not reproduced the result. The gate requires independent high-precision evaluators, predeclared held-out N/angle points, parity and endpoint/large-harmonic stress cases, explicit failure/undecided accounting, and independent symbolic review. Numerical agreement alone is not proof and does not establish a new physical law.
+
+## 2026-10-28 — A–H operational manifest reconciliation
+
+**Status:** IMPLEMENTED / EXACT-HEAD CI UNVERIFIED.  
+The operational lane manifest and cold-start validator now define exactly A–H and 28 unordered review pairs. The historical Lane I vehicle/levitation directory remains preserved as a legacy workstream and is not deleted or silently merged into another lane. See docs/RESEARCH_GAP_AH_ARCHITECTURE_RECONCILIATION_2026-10-28.md and Batch 091. Close only after exact-head cold-start and prototype/invariant CI pass.
