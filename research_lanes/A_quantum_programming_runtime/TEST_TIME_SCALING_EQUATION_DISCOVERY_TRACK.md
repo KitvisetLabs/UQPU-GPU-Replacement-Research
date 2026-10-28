@@ -44,3 +44,15 @@ Do not accept a width advantage if it vanishes on held-out law families/scales, 
 ## Evidence boundary
 
 This track establishes a reproducible protocol only. It does not establish a new physical law, quantum advantage, energy saving, material/fuel/fusion outcome, financing improvement or Data-Center-to-Phone compression.
+
+
+## 2026-10-28 follow-up — additional equation-discovery method families
+
+The Batch 099 watch adds three distinct families to the future candidate set:
+- **RISR** (https://arxiv.org/abs/2610.11387): residual-conditioned formula proposal and correction utility;
+- **SCOPE/ClosureBench** (https://arxiv.org/abs/2610.18938): conjecture-level trajectories and interactive experiment design;
+- **MorphingNet** (https://arxiv.org/abs/2610.19942): continuous formula parameterization followed by structure recovery.
+
+These are external preprint results, not UQPU measurements. Do not pool their headline metrics. Keep the existing width sweep as a separate preregistered factor: first establish a matched width/resource baseline, then compare static method families under the same whole-law-family/scale-held-out contract and fixed total budgets. Active-experiment methods need a separate task suite and equal experiment-call budgets.
+
+Before any run, verify code/data/model/license availability, hash actual artifacts and certify record-level disjointness. The existing schema-v4 contract already checks declared provenance fields and shared budgets, but declared hashes alone do not authenticate source bytes. Include training plus inference costs and preserve failures, counterexamples and false discoveries. The immediate CI gate remains exact-head prototype/invariant and cold-start audit; no paid QPU job is authorized.

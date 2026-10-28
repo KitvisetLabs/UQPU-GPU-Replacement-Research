@@ -983,3 +983,15 @@ The official full manuscript was subsequently opened at https://arxiv.org/abs/25
 **Next gate:** preregister width arms under matched data provenance, whole-law-family/scale holdouts, shared seeds, pinned per-arm source/config/runtime hashes and equal total wall-clock/CPU/memory/accelerator/candidate/token/cost ceilings. Report accepted candidates, held-out error, uncertainty, constraints, counterexamples, false discoveries, failed searches/retries and total cost.  
 **Falsifier:** the width effect disappears on held-out families/scales, is caused by leakage/unequal resources, raises false discoveries, or improves wall-clock without improving accepted equations per total resource/cost. Hash declarations alone do not authenticate source bytes; manifest content validation remains open.  
 **Non-claims:** no UQPU benchmark, new physical law, quantum advantage, energy/material/fuel/fusion/finance result, or Data-Center-to-Phone result.
+
+
+## 2026-10-28 — RG-EQN-008 literature delta: residual feedback, conjecture discovery and continuous formulas
+
+**Status:** OPEN; literature-only, no independent UQPU reproduction.  
+**Sources:** RISR (2026-10-08, https://arxiv.org/abs/2610.11387), SCOPE/ClosureBench (2026-10-13, https://arxiv.org/abs/2610.18938), MorphingNet (2026-10-14, https://arxiv.org/abs/2610.19942). See `docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md` and Batch 099.
+
+The sources add distinct candidate method families: pointwise residual-conditioned proposals/corrections; explicit conjecture trajectories plus active experiments; and continuously parameterized formula units with post-fit structure recovery. Their reported metrics and task classes are not directly comparable. Do not create a cross-paper ranking or pool static LLM-SRBench outcomes with interactive ClosureBench outcomes.
+
+**Next experiment:** first verify code/license and retrievable artifact bytes; then use a static, law-family/scale-held-out dataset with fixed provenance, common acceptance rules, at least 30 shared preregistered seeds, equal hard per-run resource ceilings and one cost basis to compare available static methods. Keep active experiment design in a separate track with equal simulation/experiment-call budgets and blind tasks. Report held-out error, structural recovery where a known target exists, complexity, constraints, counterexamples, false discoveries, failed runs, retries, memory, I/O, tokens, training+inference cost and energy where measurable.
+
+**Falsifier:** reject method advantage if it disappears under held-out law families/scales, depends on leakage or unequal budgets, or increases counterexamples/constraint failures/false discoveries. Hashes do not authenticate artifact bytes; independently verify the source, dataset and held-out records. No candidate equation or physical law is promoted.
