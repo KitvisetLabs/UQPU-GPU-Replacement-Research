@@ -15,3 +15,4 @@ Maximize scientifically defensible coupling among A-H so that software, provider
 
 ## Latest integrated cycle — 2026-10-28
 - [Predictive interval metrics / RG-EQN-010](DAILY_CYCLE_2026-10-28_PREDICTIVE_INTERVAL_METRICS.md) — held-out interval coverage/width/proper-score utility, synthetic fixtures, A–H review and exact-head CI gate.
+- [Signed-Max-Cut pinned-SDK certificate / Batch 102](DAILY_CYCLE_2026-10-28_SIGNED_MAXCUT_SDK_CI_CERTIFICATE.md) — exact-head Qiskit 2.5.2 result, complete argmax agreement and next target-aware simulation gate.

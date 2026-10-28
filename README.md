@@ -11,6 +11,12 @@
 - [Foundational physics and mathematics](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) · [AI-assisted equation discovery](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md)
 - [Kanusanan Pongpanna Model](docs/KANUSANAN_PONGPANNA_MODEL.md) · [Multilingual strategic references](STRATEGIC_PLAN_REFERENCES.md)
 
+## Latest Eight-Lane research cycle — 2026-10-28 — signed-Max-Cut SDK CI certificate and target-simulation handoff
+
+[Batch 102](docs/BATCH_102_SIGNED_MAXCUT_CI_CERTIFICATE_AND_TARGET_SIMULATION_GATE.md) captures the exact-head pinned-Qiskit semantic result from main `42e6614db390db7b3e248bc6b383d67e9d00dd3b`: 6 fixtures, 74 assignments, maximum absolute score error 0.0 at tolerance (10^{-12}), and matching complete argmax sets. The [machine-readable certificate](benchmarks/results/2026-10-28-signed-maxcut-qiskit-crosscheck-42e6614.json) preserves fixture values, environment and source hashes. [The integration report](integration/DAILY_CYCLE_2026-10-28_SIGNED_MAXCUT_SDK_CI_CERTIFICATE.md) explicitly reviews A–H, FND-001–006, EQN-001–008, INV-029–035, BIO-001/FUS-001/FIN-001 and the 28 cross-lane interfaces.
+
+On the starting main head, [core/invariant Actions](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40693966482) and [cold-start audit](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40693966594) passed. The prior cold-start manifest failure remains documented as negative evidence and was corrected by commit `42e6614db390db7b3e248bc6b383d67e9d00dd3b`. The current PR branch requires its own exact-head Actions; a parent pass does not transfer. Next gate: provider-neutral lowering and target-aware simulation, still NO-SUBMIT. No real QPU, paid job, new physical law, material/fuel/electricity advantage, lower WACC or Data-Center-to-One-Phone physical compression is claimed.
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — predictive interval metrics and current-head audit
 
 [Batch 101](docs/BATCH_101_PREDICTIVE_INTERVAL_METRICS.md) adds a reusable held-out prediction-interval scorer and synthetic positive/null unit fixtures under RG-EQN-010. It reports empirical coverage, coverage error, mean width and proper interval score; it does not establish calibration or a physical law. The [integration report](integration/DAILY_CYCLE_2026-10-28_PREDICTIVE_INTERVAL_METRICS.md) records A–H, INV-029–035, FND-001–006, EQN-001–008, BIO-001/FUS-001/FIN-001, evidence boundaries and next gates.
