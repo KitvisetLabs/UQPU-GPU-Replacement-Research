@@ -62,3 +62,12 @@ First verify exact-head CI for the A–H manifest/validator changes. Then execut
 Additional main commits after the first integration draft: 5b7a8c05fdd27838612d7a19abfc7dda3fa37c11 (architecture-gap resolution note), 3801001ed40e0e46a82a6afac2e4b355c3fa5285 (WORKLOG append), ec471a991b67ec2ea56cb4676d49b230ecf5f9a8 (RESEARCH_GAPS append), 3084b45d767f861def02bcfc7809831bb023c4de (handoff manifest refresh), 3f1b948dab83e0a7b8084fcbf8755d4ab20c0486 (README summary), and efc5842eb5dd2694ce21739d59dd875530a81328 (Batch 091 sync correction).
 
 The structural manifest/validator check passed in orchestration, but the repository's Python tests were not executed. GitHub combined status and commit-associated workflow lookup returned no contexts/runs for the inspected head. Exact-head core/invariant and cold-start CI remain UNVERIFIED.
+
+
+## Operational-document reconciliation
+
+The A–H rule has now been propagated to AGENTS.md, 00_AUTONOMOUS_RESEARCH_HANDOFF_FIRST_PRINCIPLE.md, the main-commit sync policy, the continuous cross-lane protocol and the active scoreboard. DECISIONS.md adds D109, which preserves D108 as history while superseding its A–I operational-lane claim. docs/NINE_LANE_SCOREBOARD_2026-10-16.md is explicitly marked archived; its Lane I material remains preserved.
+
+Commits: bacc23849e1f806d545b466d9586b657888ce69b (AGENTS), 8dda30decc2c7a9378036c38789fe44ed37cc07d (prime handoff), 82a71ea353f1bf70ec016f1fae07016c82f51a14 (sync policy), e13c186a9f8fe0ccdf6c2d9366006288d1d87004 (cross-lane protocol), 451794e2535d82bf7c8a2d35bd63c47d6010b3ac (active scoreboard), 62085211979308d2d72a90486872825c6a6b1732 (archived scoreboard), 8a980bc22b47c54606071052f4032c44753fe67e (D109), and 3f3a3d7e764305affe9bf90e64c556ac6a402b31 (Batch 091 update).
+
+The migration remains **CI UNVERIFIED**. The combined-status endpoint and commit-associated workflow lookup expose no exact-head checks; structural consistency checks are not a substitute for the repository Python suite.
