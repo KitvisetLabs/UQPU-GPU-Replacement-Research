@@ -949,3 +949,17 @@ The operational lane manifest and cold-start validator now define exactly A–H 
 
 **Status:** IMPLEMENTED / EXACT-HEAD CI UNVERIFIED.  
 Batch 091 reconciles AGENTS.md, the prime handoff principle, commit-sync policy, continuous cross-lane protocol, active scoreboard and DECISIONS.md to the permanent A–H operational architecture. D109 supersedes D108 only on the question of whether Lane I is a permanent operational lane. Lane I records remain preserved as a legacy workstream, and the historical nine-lane scoreboard is archived rather than deleted. Exact-head cold-start and prototype/invariant workflows remain the acceptance gate.
+
+## 2026-10-28 — RG-EQN-METHOD-PROVENANCE-001 / RG-EQN-SYMBOLIC-DIMENSIONALITY-REPRO-001
+
+**Status:** OPEN / SOFTWARE_CONTRACT_HARDENED / EXACT_HEAD_CI_UNVERIFIED / METHOD_REPRODUCTION_NOT_RUN.  
+**Primary owner:** Lane F — reproducibility and evidence contract.  
+**Method/publication owner:** Lane H. **Execution owner:** Lane A.  
+**Canonical details:** `docs/RESEARCH_GAP_EQN008_MATCHED_DISCOVERY_COMPARISON.md`, `docs/BATCH_097_METHOD_PROVENANCE_BOUNDARY.md`, and `docs/RESEARCH_GAP_EQN_SYMBOLIC_DIMENSIONALITY_REPRO_2026-10-28.md`.
+
+The matched equation-discovery comparator now uses schema v4. `dataset_provenance_sha256` must match across methods; `method_revision_sha256`, `method_config_sha256` and `runtime_environment_sha256` must each remain fixed across all preregistered seeds within each method. Regression fixtures cover method source/config/environment drift, invalid hashes and mismatched dataset source/license provenance. The code and tests are on main, but exact-head prototype/invariant and cold-start CI have not been verified.
+
+**Still open:** no SymFM, PiT-PO, STRIDE, LLM-PySR, MOSAIC-SR or other external method has been independently reproduced by this project; no matched 30-seed benchmark has been executed. The v4 hashes bind declared artifacts but do not authenticate them. The next gate requires pinned source/config/model/runtime manifests, source/license/data hashes, a verified group-disjoint split certificate, equal hard resource budgets, held-out law-family/scale tests, counterexample and false-discovery accounting, independent review and exact-head CI.
+
+**Nonclaims:** no physical equation/law promotion, QPU advantage, material/fuel/electricity result, lower WACC, or Data-Center-to-One-Phone result. No paid QPU execution is authorized. The 100×/100,000,000× targets and INV-025–035 remain evidence-gated.
+
