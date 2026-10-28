@@ -98,3 +98,19 @@ The pre-existing core/invariant workflow and cold-start audit passed on the olde
 The focused gap, Lane A gate, literature watch, A–H manifest/validator/tests, handoff manifest, integration record, README and both append-only aggregate files are now present on main. Additional main synchronization commits: integration record c205d4ca96698b90801ef6db0370fa29e8db2622; architecture-gap resolution note 5b7a8c05fdd27838612d7a19abfc7dda3fa37c11; WORKLOG append 3801001ed40e0e46a82a6afac2e4b355c3fa5285; RESEARCH_GAPS append ec471a991b67ec2ea56cb4676d49b230ecf5f9a8; handoff manifest refresh 3084b45d767f861def02bcfc7809831bb023c4de; README sync 3f1b948dab83e0a7b8084fcbf8755d4ab20c0486.
 
 A structural consistency check of the current manifests, validator and test expectations passed: operational lanes A–H, 28 unique pairs, preserved legacy I workstream, six language references, required FND/EQN/BIO/FUS/FIN programs, and paid execution disabled. This was not a run of the repository's Python test suite. Exact-head GitHub Actions results remain unobserved.
+
+
+## Operational-entrypoint reconciliation follow-up — 2026-10-28
+
+The A–H correction was propagated beyond the manifest/validator into the active cold-start and integration instructions. The agent entrypoint, prime handoff principle, commit-sync policy, continuous cross-lane protocol, current eight-lane scoreboard and decision log now consistently define A–H as the permanent operational lanes. D109 explicitly supersedes D108 only where D108 described Lane I as a permanent operational lane; historical Lane I files remain preserved as a legacy workstream. The nine-lane scoreboard is now visibly archived for historical provenance rather than presented as current policy.
+
+Additional main commits:
+- AGENTS.md: bacc23849e1f806d545b466d9586b657888ce69b
+- prime handoff principle: 8dda30decc2c7a9378036c38789fe44ed37cc07d
+- commit-sync policy: 82a71ea353f1bf70ec016f1fae07016c82f51a14
+- cross-lane integration protocol: e13c186a9f8fe0ccdf6c2d9366006288d1d87004
+- current eight-lane scoreboard: 451794e2535d82bf7c8a2d35bd63c47d6010b3ac
+- archived nine-lane scoreboard: 62085211979308d2d72a90486872825c6a6b1732
+- decision D109: 8a980bc22b47c54606071052f4032c44753fe67e
+
+These are governance/documentation updates. The repository's Python test suite and exact-head Actions have still not been observed; the migration remains CI UNVERIFIED. The static structural check confirms A–H lane keys, 28 unique pairs, preserved legacy I records, six master-plan languages, all FND/EQN/BIO/FUS/FIN program markers and disabled paid execution.
