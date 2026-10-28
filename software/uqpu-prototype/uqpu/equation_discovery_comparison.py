@@ -15,6 +15,7 @@ _SHA256 = re.compile(r"[0-9a-f]{64}")
 MIN_PREREGISTERED_SEEDS = 30
 _COMMON_HASH_FIELDS = (
     "dataset_sha256",
+    "dataset_provenance_sha256",
     "train_split_sha256",
     "validation_split_sha256",
     "test_split_sha256",
@@ -85,8 +86,11 @@ class DiscoveryRun:
 
     method_id: str
     method_revision_sha256: str
+    method_config_sha256: str
+    runtime_environment_sha256: str
     seed: int
     dataset_sha256: str
+    dataset_provenance_sha256: str
     train_split_sha256: str
     validation_split_sha256: str
     test_split_sha256: str
@@ -117,6 +121,8 @@ class DiscoveryRun:
         if not isinstance(self.method_id, str) or not self.method_id.strip():
             raise ValueError("method_id is required")
         _require_sha256("method_revision_sha256", self.method_revision_sha256)
+        _require_sha256("method_config_sha256", self.method_config_sha256)
+        _require_sha256("runtime_environment_sha256", self.runtime_environment_sha256)
         _nonnegative_int("seed", self.seed)
         for name in _COMMON_HASH_FIELDS:
             _require_sha256(name, getattr(self, name))
@@ -219,6 +225,15 @@ def validate_matched_comparison(runs: Iterable[DiscoveryRun]) -> tuple[str, ...]
     if len(seed_sets[0]) < MIN_PREREGISTERED_SEEDS:
         raise ValueError(f"at least {MIN_PREREGISTERED_SEEDS} preregistered seeds are required")
 
+    # Prevent a nominally matched method from changing its source, configuration,
+    # model/prompt bundle, or runtime between seeds. Hashes are provenance bindings,
+    # not proof that the referenced artifacts are authentic or scientifically valid.
+    for method in methods:
+        method_records = tuple(by_method[method].values())
+        for name in ("method_revision_sha256", "method_config_sha256", "runtime_environment_sha256"):
+            if len({getattr(record, name) for record in method_records}) != 1:
+                raise ValueError(f"{name} must remain constant across all preregistered seeds for method {method}")
+
     cost_presence = [record.total_cost_usd is not None for record in records]
     if any(cost_presence) and not all(cost_presence):
         raise ValueError("cost must be measured for every run or omitted for every run")
@@ -271,6 +286,11 @@ def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
         acceptance_interval = _wilson_interval(len(accepted), len(group))
         summaries[method] = {
             "runs": len(group),
+            "provenance": {
+                "method_revision_sha256": group[0].method_revision_sha256,
+                "method_config_sha256": group[0].method_config_sha256,
+                "runtime_environment_sha256": group[0].runtime_environment_sha256,
+            },
             "accepted_candidates": len(accepted),
             "acceptance_rate": acceptance_rate,
             "acceptance_rate_95pct_wilson_ci": [acceptance_interval[0], acceptance_interval[1]],
@@ -321,7 +341,11 @@ def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
             }
 
     return {
-        "schema": "uqpu-equation-discovery-matched-comparison-v3",
+        "schema": "uqpu-equation-discovery-matched-comparison-v4",
+        "shared_dataset": {
+            "dataset_sha256": records[0].dataset_sha256,
+            "dataset_provenance_sha256": records[0].dataset_provenance_sha256,
+        },
         "method_ids": list(methods),
         "preregistered_seed_count": len({record.seed for record in records}),
         "shared_budget": asdict(records[0].budget),
@@ -340,6 +364,8 @@ def compare_methods(runs: Iterable[DiscoveryRun]) -> dict[str, object]:
             "or multiple comparisons. Pairwise seed counts are descriptive; no p-values or winner are "
             "produced. All methods share a declared group-holdout policy and manifest digest, but "
             "the manifest contents and actual record-level disjointness require a separate validator. "
+            "Per-method source, configuration/model/prompt bundle and runtime-environment digests must remain "
+            "constant across all preregistered seeds; hashes alone do not authenticate the referenced artifacts. "
             "Acceptance is defined by the frozen benchmark rule and does not establish a physical law, "
             "independent replication, device benefit, or economic advantage outside the measured "
             "resource boundary."
