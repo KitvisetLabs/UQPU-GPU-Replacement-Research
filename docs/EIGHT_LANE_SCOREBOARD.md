@@ -298,3 +298,19 @@ FND/EQN and RG-034 remain open without a promoted equation. SCM remains fictiona
 ## Historical A–I migration checkpoint — 2026-10-16 (operational scope superseded 2026-10-28)
 
 This entry preserves the historical decision and is not the current operational lane map. The permanent architecture is A–H with 28 unordered pair reviews. The historical Lane I vehicle/levitation directory and I-012 artifacts remain preserved as a legacy workstream, not a ninth permanent lane. Current authority: `integration/eight_lane_manifest.json` schema `uqpu-eight-lane-manifest-v3`, `integration/COLD_START_HANDOFF_MANIFEST.json`, INV-024/028, and Batch 091. The legacy nine-lane scoreboard remains archived for provenance only.
+
+
+## Batch 095 — formal-proof discovery and accepted-proof resource accounting (2026-10-28)
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Pinned Qiskit signed-Max-Cut algebraic gate reconciled after two recorded failures | EXACT_HEAD_CI_PASSED on parent main; no QPU execution | Provider-neutral lowering and exact/classical-reference accepted-output comparison |
+| B | Provider-neutral cloud path and provider roster preserved | DOCUMENTATION / NO TARGET JOB | Capability negotiation and target-aware simulation |
+| C | State preparation, output reconstruction, memory and I/O remain explicit costs | CONTRACT_ONLY; no classical-memory equivalence | Populate bytes/latency/transfer from a matched workload run |
+| D | Device/operator semantics remain tied to physical mapping constraints | NO DEVICE MEASUREMENT | Derive a target-specific schedule/control envelope |
+| E | BIO-001 and FUS-001 cost boundaries remain open; no new material/fuel/electricity result | LITERATURE_ONLY / DATA_GAP | Accepted-liquid mass/energy/cost data and net-electric fusion envelope |
+| F | Formal-proof cost and false-accept accounting added to the research plan | LITERATURE_ONLY; no cost result | Equal-budget proof-workflow benchmark and accepted-task economics |
+| G | D/G co-design preserved; no factory/process measurement | STRATEGIC / FABRICATION_PROPOSAL | Connect device needs to process-window, metrology and packaging contracts |
+| H | Formal-proof literature watch and cross-lane synthesis published | OFFICIAL_PREPRINT_SURVEILLANCE | Independent reproduction and multilingual master-plan continuity |
+
+FND-001–006 and EQN-001–008 remain evidence-gated. INV-029–035 are preserved. No new physical law, real-QPU advantage, critical-material substitution, accepted bio-oil, net fusion electricity, lower financed principal/interest/WACC, or phone-class physical-compression milestone is claimed.

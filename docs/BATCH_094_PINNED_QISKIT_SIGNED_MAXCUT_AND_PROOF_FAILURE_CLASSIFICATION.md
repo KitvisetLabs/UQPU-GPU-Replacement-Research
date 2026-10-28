@@ -80,3 +80,8 @@ The test now constructs each assignment directly from basis index k with bit q =
 ## Second exact-head CI observation and runner correction — 2026-10-28
 
 On the follow-up commit, all four new pinned-Qiskit unit tests passed, including complete argmax/sign equivalence and the nonadjacent-edge qubit-order/constant test. The workflow then failed when parsing the certificate runner because the generated source contained a literal line break inside the newline string passed to write_text. This is a runner-source syntax error, not an SDK score mismatch. The newline literal is corrected to the escaped source string; the next exact-head run must execute both the unit tests and the JSON certificate runner before the gate can be marked green. Keep both prior CI failures as recorded negative evidence.
+
+
+## Post-authoring CI reconciliation — 2026-10-28
+
+The runner correction landed on main as b3252a556b61b7e566d5e057606c1f2e917d79e8. The exact-head core/invariant workflow [#1872](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40625789742) and cold-start audit [#1094](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40625789684) completed successfully. The pinned Qiskit verification step passed. This closes the SDK syntax/fixture acceptance gate for the frozen tiny graphs only; it does not establish QAOA quality, target execution, a real-QPU advantage or economics. Preserve the prior failures as regression evidence.

@@ -40,3 +40,8 @@ The first exact-head run passed all three core Python matrices and failed only i
 ## Second CI diagnosis — 2026-10-28
 
 The second exact-head run passed all four new Qiskit unit tests. It failed at the next step because the JSON certificate runner had an unterminated string caused by a newline escape during source generation. The runner is corrected to write a literal newline using an escaped source string. This is a reproducibility-runner syntax defect, not an SDK/operator mismatch; a third exact-head run is required before acceptance.
+
+
+## Post-authoring CI reconciliation — 2026-10-28
+
+Main SHA b3252a556b61b7e566d5e057606c1f2e917d79e8 passed the exact-head prototype/invariant workflow [#1872](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40625789742) and cold-start audit [#1094](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40625789684). The pinned Qiskit verification step is green for the frozen tiny-instance algebraic contract. The result does not promote the workload to QAOA accepted-output quality, real-QPU execution, energy or economic evidence.
