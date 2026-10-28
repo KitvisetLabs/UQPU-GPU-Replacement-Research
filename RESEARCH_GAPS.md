@@ -1084,3 +1084,13 @@ The pilot-scale pine-sawdust study reports char recovery and a scenario-specific
 **Details:** [FUS-001 focused gap](docs/RESEARCH_GAP_FUS001_PYFECONS_ACCOUNT_MAPPING_2026-10-28.md) · [literature watch](docs/literature_watch/2026-10-28-pyfecons-fusion-costing-and-uncertainty.md) · [Batch 104](docs/BATCH_104_BIOMASS_FUSION_COSTING_LITERATURE_DELTA.md).
 
 The official preprints describe standardized account-based fusion costing, architecture-specific driver tracks, uncertainty and finance/value metrics. Pin the exact code/data/license and reproduce a public case before adoption. Preserve net-electric normalization, recirculating power, component lifetime/replacement, fuel cycle, remote handling, cooling, grid, construction, decommissioning and financing. WACC/risk-premium changes remain scenarios until separately evidenced.
+
+
+## RG-BIO001-CATALYST-BIOCHAR-001 — accepted liquid-energy and catalyst-loaded char functional gate
+**Opened:** 2026-10-28  
+**Status:** OPEN / LITERATURE_ONLY / NO PANGOLA TRANSFER  
+**Primary owner:** Lane E; evidence owner Lane F; method interface Lane A  
+**Canonical detail:** docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md  
+**Source:** https://doi.org/10.1016/j.biombioe.2026.109296
+
+A 2026 *Biomass and Bioenergy* study reports catalytic microalgae/hardwood co-pyrolysis, 23.9/23.5 wt% oil yields, 25.27 MJ/kg reported in-situ-oil HHV and 96.6% methylene-blue removal by catalyst-loaded biochar under its tested conditions. UQPU has not reproduced it. Transfer to Pangola is blocked pending source/data pinning, feedstock characterization, dry-basis mass/energy closure, accepted-fuel/upgrading analysis, catalyst recovery/regeneration/lifetime/leaching tests, repeat-cycle solid-service validation and full lifecycle costing. Coproduct and carbon credits must not be double counted. This gap is not commercial-fuel, material-substitution or physical-law evidence.

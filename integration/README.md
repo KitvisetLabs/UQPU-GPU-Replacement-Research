@@ -13,6 +13,10 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-28 — parity-rank oracle and catalytic biomass
+
+- [Batch 105 integration](DAILY_CYCLE_2026-10-28_GF2_PARITY_AND_CATALYTIC_BIOMASS.md) — independent GF(2) graph-parity test plus a source-specific catalytic co-pyrolysis / catalyst-loaded-biochar watch. Exact-head CI is required; no physical or economic advantage is claimed.
+
 ## Latest integrated cycle — 2026-10-28
 - [Predictive interval metrics / RG-EQN-010](DAILY_CYCLE_2026-10-28_PREDICTIVE_INTERVAL_METRICS.md) — held-out interval coverage/width/proper-score utility, synthetic fixtures, A–H review and exact-head CI gate.
 

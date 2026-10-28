@@ -10,6 +10,13 @@
 - [Pangola/biomass carbon](01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md) · [Ultra-low-cost bio-oil](02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md) · [Fusion electricity](03_FUSION_ELECTRICITY_COST_STRATEGY.md) · [Interest/R&D finance](04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md)
 - [Foundational physics and mathematics](05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md) · [AI-assisted equation discovery](06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md)
 - [Kanusanan Pongpanna Model](docs/KANUSANAN_PONGPANNA_MODEL.md) · [Multilingual strategic references](STRATEGIC_PLAN_REFERENCES.md)
+- [Batch 105 — GF(2) parity rank and catalytic biomass](docs/BATCH_105_GF2_PARITY_RANK_AND_BIOMASS_CATALYST_SURVEILLANCE.md) · [Catalyst-biochar research gap](docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md)
+
+## Latest Eight-Lane research cycle — 2026-10-28 — independent parity-rank verification and catalytic biomass surveillance
+
+[Batch 105](docs/BATCH_105_GF2_PARITY_RANK_AND_BIOMASS_CATALYST_SURVEILLANCE.md) adds an independent GF(2) rank test for graph-parity constraints across all simple graphs through five vertices, and a new source-specific watch on catalytic co-pyrolysis plus catalyst-loaded biochar reuse ([literature watch](docs/literature_watch/2026-10-28-catalytic-copyrolysis-char-valorization.md), [BIO-001 gap](docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md)). The new test has not been run in the authoring runtime; exact-head Actions are required. The article's results are third-party and use non-Pangola feedstock; no commercial fuel, material substitution, physical-law, fusion, WACC or Data-Center-to-One-Phone claim is made.
+
+Starting main SHA: `9da1dcf6aebb510a5554a7f0ae1a57ff68cbf753`. The starting-head combined-status query returned no status records, which is not a green CI result. The new commit requires its own exact-head validation. No QPU job was authorized or attempted.
 
 ## Latest Eight-Lane research cycle — 2026-10-28 — biomass and fusion cost-account literature
 

@@ -349,3 +349,19 @@ No change to INV-029–035 or INV-025/026/027 acceptance status. FND-001–006, 
 | H | Two dated literature watches, two focused gaps, batch/integration records. | PUBLICATION | Preserve strategic references and distinguish scenario from evidence. |
 
 INV-029–035 and INV-025/026/027 remain unchanged. FND-001–006, EQN-001–010, BIO-001, FUS-001 and FIN-001 remain evidence-gated.
+
+
+## Batch 105 — 2026-10-28 — independent parity rank and catalytic biomass
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Added independent GF(2) incidence/cycle-rank exhaustive test for graph parity | SOFTWARE_TEST_ADDED; not locally executed | Exact-head CI, then parity-QAOA circuit/oracle checks |
+| B | Provider-neutral routes preserved; no target action | NO_NEW_PROVIDER_EVIDENCE | Simulator/dry-run and per-target provenance |
+| C | No new memory/storage/transfer measurement; parity qubits are not classical memory | NO_NEW_RESOURCE_MEASUREMENT | Matched peak-memory, I/O and decoder accounting |
+| D | No device or packaging result | LITERATURE/CONTRACT_ONLY | Target-native connectivity, depth and reliability |
+| E | Added catalytic co-pyrolysis / catalyst-loaded-char literature watch and BIO-001 gap | PEER-REVIEWED_LITERATURE_ONLY | Pangola-specific mass/energy and product-acceptance closure |
+| F | Tightened accepted-liquid-MJ, catalyst lifecycle and non-double-counted coproduct cost gates | CONTRACT_ONLY | Source-pinned uncertainty-aware TEA |
+| G | D/G co-design retained; no factory/yield evidence | NO_NEW_MANUFACTURING_EVIDENCE | Cost per good unit, catalyst/process lifetime and replacement |
+| H | Published Batch 105 and preserved six-language strategic references | RESEARCH_PUBLICATION | Independent replication and multilingual continuity |
+
+Batch 105 does not close RG-QAOA-PARITY-001, BIO-001, FUS-001 or FIN-001 and does not promote any mission-level claim.

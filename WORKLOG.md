@@ -1940,3 +1940,12 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 - **Foundations/invariants:** FND-001–006, EQN-001–010 and INV-029–035 remain evidence-gated. BIO-001, FUS-001 and FIN-001 are more precisely scoped but still open. No elemental transmutation, new physical law, commercial fuel/fusion, reduced market rate or Data-Center-to-One-Phone claim is made.
 - **CI at observation:** Batch 103's Python 3.10/3.11/3.12 matrix passed 821 tests per job, including the 11 new temporal-holdout tests; the broader core/invariant workflow was still in progress, with no failure reported at the observation. The Batch 104 head requires its own exact-head Actions. No code/model reproduction, physical experiment or paid QPU job was performed.
 - **Next gate:** exact-head core/invariant and cold-start Actions; pin and reproduce one PyFECONs benchmark; close a Pangola mass/energy/product-quality balance with full accepted-liquid economics.
+
+
+## 2026-10-28 — Batch 105: independent parity-rank test and catalytic-biomass surveillance
+
+- Starting main SHA: `9da1dcf6aebb510a5554a7f0ae1a57ff68cbf753`.
+- Added `software/uqpu-prototype/tests/test_parity_encoding_gf2_rank.py`, an independent GF(2) incidence/cycle-rank oracle over all simple graphs through five vertices. It was not executed locally; exact-head Actions remain the gate.
+- Added a literature watch and focused gap for DOI https://doi.org/10.1016/j.biombioe.2026.109296, keeping source-reported microalgae/hardwood results separate from Pangola claims.
+- Updated Batch 105, integration report, README, RESEARCH_GAPS.md, scoreboard and cold-start handoff manifest in one synchronized main commit.
+- A–H remain active; INV-029–035, FND-001–006 and EQN-001–010 remain evidence-gated. No QPU, biomass, fusion or finance experiment was performed; no commercial, physical-law or economic advantage is claimed.

@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T15:40:48.465Z",
+  "prepared_utc": "2026-10-28T16:06:32Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "10ba9ec2ffa6d37ac09b65092d09e70b798cd2db",
+  "canonical_start_sha": "9da1dcf6aebb510a5554a7f0ae1a57ff68cbf753",
   "priority_lane": "A",
-  "current_frontier": "Batch 104 (2026-10-28): two new BIO-001 literature leads (pilot-scale pine-sawdust char-recovery pyrolysis and ANN bagasse yield modeling) and two official pyFECONs fusion-costing preprints added as source-specific watches. No Pangola or fusion plant reproduction; no commercial cost/WACC claim. Starting main SHA 10ba9ec2ffa6d37ac09b65092d09e70b798cd2db. Batch 103's 821-test matrix passed on Python 3.10/3.11/3.12; its full core workflow was in progress at this observation, and its cold-start audit passed. This addendum's exact-head Actions must be checked. No paid QPU job authorized.",
+  "current_frontier": "Batch 105 (2026-10-28): independent GF(2) rank test added for graph-parity constraints across all simple graphs through five vertices; catalytic co-pyrolysis/catalyst-loaded-biochar literature watch and BIO-001 acceptance gap added. Test not locally executed; exact-head Actions required. No Pangola transfer, commercial-fuel claim, physical-law claim, fusion/economic result or paid QPU job.",
   "required_reading": [
     "docs/BATCH_099_RESIDUAL_CONJECTURE_CONTINUOUS_EQUATION_DISCOVERY.md",
     "docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md",
@@ -175,7 +175,12 @@
     "docs/RESEARCH_GAP_BIO001_PILOT_YIELD_BASIS_2026-10-28.md",
     "docs/RESEARCH_GAP_FUS001_PYFECONS_ACCOUNT_MAPPING_2026-10-28.md",
     "docs/BATCH_104_BIOMASS_FUSION_COSTING_LITERATURE_DELTA.md",
-    "integration/DAILY_CYCLE_2026-10-28_BIOMASS_FUSION_COSTING.md"
+    "integration/DAILY_CYCLE_2026-10-28_BIOMASS_FUSION_COSTING.md",
+    "docs/BATCH_105_GF2_PARITY_RANK_AND_BIOMASS_CATALYST_SURVEILLANCE.md",
+    "integration/DAILY_CYCLE_2026-10-28_GF2_PARITY_AND_CATALYTIC_BIOMASS.md",
+    "docs/literature_watch/2026-10-28-catalytic-copyrolysis-char-valorization.md",
+    "docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md",
+    "software/uqpu-prototype/tests/test_parity_encoding_gf2_rank.py"
   ],
   "lanes": {
     "A": {
