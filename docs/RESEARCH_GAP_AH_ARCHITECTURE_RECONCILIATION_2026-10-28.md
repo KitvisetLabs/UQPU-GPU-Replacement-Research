@@ -35,3 +35,12 @@ This is a real documentation/governance inconsistency. It is not evidence that t
 This cycle did not rewrite the manifest, lane directories, legacy scoreboard, WORKLOG.md or RESEARCH_GAPS.md. Those changes require a coordinated migration and regression tests, not a broad text replacement. The dated Batch 088 and integration report record the sync debt; this gap is the canonical governance task.
 
 **Next gate:** resolve this discrepancy before merging any PR that changes the operational lane scoreboard or cold-start manifest. Do not silently upgrade A–H to A–I.
+
+
+## Resolution update — 2026-10-28 (Batch 091)
+
+The permanent operational architecture is now represented as A–H in integration/eight_lane_manifest.json (schema uqpu-eight-lane-manifest-v3) with 28 unordered pair reviews. The cold-start validator and its regression tests were updated to expect A–H/28 pairs, and integration/COLD_START_HANDOFF_MANIFEST.json now records A–H plus a separate legacy_workstreams entry for I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION.
+
+Historical Lane I files and I-012 research remain untouched and preserved. They are no longer a ninth permanent operational lane; future substantive artifacts must have one primary A–H owner and explicit cross-lane interfaces. The regression suite now asserts that Lane I is preserved outside the operational lane map and that a missing H lane fails closed.
+
+**Status:** DOCUMENTED MIGRATION IMPLEMENTED; EXACT-HEAD CI NOT YET OBSERVED. This gap is not closed until the cold-start audit and prototype/invariant workflow pass on the post-migration head. Any failure must be repaired before declaring A–H reconciliation complete.
