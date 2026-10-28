@@ -14,8 +14,21 @@ class ColdStartHandoffTests(unittest.TestCase):
         report = audit_repository(ROOT)
         self.assertEqual(report["errors"], [])
         self.assertEqual(report["status"], "READY_FOR_COLD_START")
-        self.assertEqual(report["lanes_checked"], list("ABCDEFGHI"))
-        self.assertEqual(report["integration_pairs_checked"], 36)
+        self.assertEqual(report["lanes_checked"], list("ABCDEFGH"))
+        self.assertEqual(report["integration_pairs_checked"], 28)
+
+
+    def test_legacy_lane_i_is_preserved_outside_operational_a_through_h(self):
+        lane_manifest = json.loads(
+            (ROOT / "integration/eight_lane_manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(tuple(sorted(lane_manifest["lanes"])), tuple("ABCDEFGH"))
+        legacy = lane_manifest["legacy_workstreams"]["I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION"]
+        self.assertEqual(legacy["folder"], "research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION")
+        self.assertEqual(
+            legacy["status"],
+            "PRESERVED_LEGACY_WORKSTREAM_NOT_A_PERMANENT_OPERATIONAL_LANE",
+        )
 
     def test_main_and_non_main_commit_trailers_are_distinct(self):
         self.assertEqual(validate_commit_message("x\n\nResearch-Sync: main", "main"), [])
@@ -60,7 +73,7 @@ Research-Sync: main""", "sync/new-work"
             root = Path(tmp)
             (root / "integration").mkdir()
             manifest = json.loads((ROOT / "integration/COLD_START_HANDOFF_MANIFEST.json").read_text())
-            manifest["lanes"].pop("I")
+            manifest["lanes"].pop("H")
             (root / "integration/COLD_START_HANDOFF_MANIFEST.json").write_text(json.dumps(manifest))
             (root / "integration/eight_lane_manifest.json").write_text(
                 (ROOT / "integration/eight_lane_manifest.json").read_text()
@@ -68,7 +81,7 @@ Research-Sync: main""", "sync/new-work"
             (root / "AGENTS.md").write_text("# empty")
             report = audit_repository(root)
             self.assertEqual(report["status"], "HANDOFF_INCOMPLETE")
-            self.assertIn("handoff_lanes_must_equal_A_through_I", report["errors"])
+            self.assertIn("handoff_lanes_must_equal_A_through_H", report["errors"])
 
 
 if __name__ == "__main__":
