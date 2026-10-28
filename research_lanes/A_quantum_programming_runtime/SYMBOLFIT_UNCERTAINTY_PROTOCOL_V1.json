@@ -1,0 +1,117 @@
+{
+  "schema": "uqpu-equation-discovery-task-preregistration-v1",
+  "protocol_id": "EQN008-SYMBOLFIT-UNCERTAINTY-HEP-BINNED-V1",
+  "date": "2026-10-28",
+  "primary_owner": "Lane A — quantum programming/workloads/compiler/runtime",
+  "cross_lane_owners": {
+    "F": "matched resources, uncertainty metrics, cost and evidence acceptance",
+    "H": "literature provenance and publication"
+  },
+  "evidence_class": "PROTOCOL_ONLY",
+  "source": {
+    "title": "Machine Can Automatically Discover Parametric Functions to Model HEP Data",
+    "package": "SymbolFit",
+    "arxiv_id": "2607.19750",
+    "v1_submitted": "2026-07-22",
+    "v2_revised": "2026-10-19",
+    "url": "https://arxiv.org/abs/2607.19750",
+    "external_results_reproduced_by_uqpu": false
+  },
+  "task_class": "HEP_BINNED_PARAMETRIC_FIT",
+  "do_not_pool_with": [
+    "general LLM-SRBench equation-recovery scores",
+    "interactive active-experiment-design task scores",
+    "real-QPU performance or cost results",
+    "physical-law acceptance registry"
+  ],
+  "preregistration": {
+    "freeze_before_tuning": [
+      "raw binned data bytes and source/version/license/acquisition provenance",
+      "code revision and candidate grammar",
+      "likelihood/fit configuration and uncertainty construction",
+      "preprocessing and analysis selection",
+      "model/checkpoint/prompt/operator/configuration hashes",
+      "runtime/dependency/container hashes",
+      "train/validation/test split and record-level disjointness certificate",
+      "known-function and null-control definitions",
+      "primary endpoint, coverage tolerance, proper score and multiplicity policy",
+      "shared seeds and hard resource ceilings"
+    ],
+    "minimum_shared_preregistered_seeds": 30,
+    "identical_hard_resource_ceilings_per_run": [
+      "wall_clock_seconds",
+      "cpu_core_seconds",
+      "peak_memory_bytes",
+      "accelerator_seconds",
+      "candidate_evaluations",
+      "generated_tokens",
+      "total_cost_usd_if_cost_is_reported"
+    ],
+    "cost_basis": "one identical declared cost basis for every arm; include training plus inference",
+    "holdout_units": [
+      "analysis_condition",
+      "spectrum_family",
+      "scale_or_bin_regime"
+    ],
+    "blind_test_labels_until_lock": true
+  },
+  "controls": [
+    {
+      "id": "KNOWN_FUNCTION_REDISCOVERY",
+      "purpose": "positive control for recovering a known function or declared equivalence class",
+      "acceptance": "predeclare equivalence tolerance and report failures"
+    },
+    {
+      "id": "NULL_NO_SIGNAL",
+      "purpose": "measure false-positive and false-discovery behavior",
+      "acceptance": "predeclare null distribution and false-positive decision rule"
+    },
+    {
+      "id": "BLIND_SIGNAL_INJECTION",
+      "purpose": "where scientifically appropriate, test recovery and uncertainty under blinded injected alternatives",
+      "acceptance": "freeze injection generator and parameters before running arms; report missed and false discoveries"
+    }
+  ],
+  "primary_metrics": [
+    "heldout_predictive_score",
+    "nominal_interval_coverage_at_preregistered_levels",
+    "interval_width",
+    "proper_predictive_score",
+    "parameter_and_function_stability_across_seeds",
+    "residual_diagnostics",
+    "false_positive_and_false_discovery_counts",
+    "counterexamples_and_constraint_violations",
+    "accepted_candidate_rate_with_uncertainty",
+    "wall_clock_cpu_memory_accelerator_candidates_tokens_and_total_cost"
+  ],
+  "uncertainty_levels": [
+    0.68,
+    0.95
+  ],
+  "acceptance_rules": [
+    "Coverage tolerance and primary endpoint must be fixed before unblinding.",
+    "Assess coverage jointly with interval width and a proper predictive score; arbitrarily wide intervals cannot win.",
+    "Use preregistered paired analysis; marginal confidence intervals alone do not establish a winner.",
+    "A candidate with a failed physical/math constraint, unresolved counterexample, or false-discovery flag is not accepted as a physical law.",
+    "Hash declarations do not authenticate artifacts; verify exact bytes and actual split disjointness."
+  ],
+  "falsifiers": [
+    "nominal intervals materially under-cover under the preregistered test",
+    "coverage depends on uninformatively wide intervals or degraded proper score",
+    "false positives or false discoveries worsen on null controls",
+    "claimed advantage vanishes on blind held-out spectra/conditions",
+    "claimed advantage depends on leakage, unequal resources, or post-hoc endpoint selection"
+  ],
+  "stop_rules": [
+    "Do not start a benchmark until code/data/license and byte-level provenance are verified.",
+    "Preserve all failed seeds, rejected functions, counterexamples and retries.",
+    "Do not infer a physical law, QPU advantage, energy saving or economic benefit from a fit result alone."
+  ],
+  "current_state": {
+    "benchmark_executed": false,
+    "code_data_bytes_verified": false,
+    "exact_head_ci_verified": false,
+    "paid_qpu_authorized": false
+  },
+  "next_gate": "Verify source/code/data/license bytes, then implement calibration metrics and tests against synthetic known-function and null controls before any real-data comparison."
+}
