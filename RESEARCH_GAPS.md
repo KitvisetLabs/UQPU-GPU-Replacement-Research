@@ -1116,3 +1116,14 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Scope boundary:** classical stabilizer simulation, not real-QPU execution and not a generic simulator for arbitrary non-Clifford QAOA rotations. Do not substitute for the parity-QAOA simulation gate.  
 **Unlock:** exact correctness on a frozen subset, reproducible measurements, a held-out circuit family, complete task-boundary accounting and independent review. Unknown energy components remain unknown, not zero.  
 **Nonclaims:** no QPU advantage, GPU replacement, readable classical-memory equivalence, new physical law, commercial fuel/fusion, lower WACC or Data-Center-to-One-Phone result. See `docs/RESEARCH_GAP_QUASARQ_STABILIZER_REPRODUCTION_2026-10-29.md`.
+
+
+## 2026-10-29 — RG-A-QUESTAB-EXTENDED-TABLEAU-REPRO-001
+
+**Status:** OPEN / LITERATURE_ONLY / SOURCE-PINNING-NOT-STARTED.  
+**Primary owner:** Lane A; interfaces B/C/F/D/G/H.  
+**Source:** ACM ICS '26, “quEStab: Towards Scalable Quantum Circuit Simulation on Multi-GPU using an Extended Stabilizer Formalism,” published 2026-07-05, https://doi.org/10.1145/3797905.3816723.  
+**Objective:** reproduce a bounded, exact circuit suite for the extended-tableau multi-GPU simulator and test whether active-row growth, memory/I/O and host overhead preserve any end-to-end benefit.  
+**Source-audit item:** the publisher-indexed text reports 69/97 (71.1%) and 100/128 (78.1%) coverage in separate passages. They may describe different subsets/stages; reconcile each numerator/denominator, preprocessing stage, timeout and success predicate before comparison.  
+**Gate:** pin source/dependencies/build/hardware; compare Clifford, T-gate, parameterized-rotation and small parity-QAOA circuits against independent exact references; measure active rows, peak host/device memory, transfer, setup, latency, throughput, failures/retries and energy where measurable; hold out circuit families. Unknown costs/energy remain unknown, not zero.  
+**Nonclaims:** no real-QPU advantage, general QAOA scaling, readable classical-memory equivalence, 100x/100,000,000x economics, new physical law, material substitution, commercial bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. Canonical detail: docs/RESEARCH_GAP_QUESTAB_EXTENDED_TABLEAU_REPRODUCTION_2026-10-29.md.

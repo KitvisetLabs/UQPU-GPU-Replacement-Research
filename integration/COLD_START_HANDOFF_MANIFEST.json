@@ -1,12 +1,16 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T18:00:29Z",
+  "prepared_utc": "2026-10-28T19:06:55Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "96485219b3dfc3911abc4ba695775296560318de",
+  "canonical_start_sha": "892ce892dfe2a82f53ff82a172dd9aa4125e99da",
   "priority_lane": "A",
-  "current_frontier": "Batch 107 (2026-10-29): source-specific QuaSARQ GPU stabilizer-simulator literature watch and reproduction gap added; starting-head exhaustive parity-map bijection tests passed exact-head CI. Parity-QAOA circuit/objective certification and QuaSARQ reproduction remain open. No paid QPU job, real-QPU advantage, new physical law, accepted fuel, net fusion electricity or financial-rate claim.",
+  "current_frontier": "Batch 108 (2026-10-29): quEStab extended-tableau multi-GPU source audit and reproduction gap; source text coverage denominators 69/97 and 100/128 require reconciliation. Batch 107 parity-map and QuaSARQ gates remain open. No paid QPU job, real-QPU advantage, new physical law, accepted fuel, net fusion electricity or financial-rate claim.",
   "required_reading": [
+    "integration/DAILY_CYCLE_2026-10-29_QUESTAB_AND_AH_INTEGRATION.md",
+    "docs/literature_watch/2026-10-29-questab-extended-tableau-multigpu-audit.md",
+    "docs/RESEARCH_GAP_QUESTAB_EXTENDED_TABLEAU_REPRODUCTION_2026-10-29.md",
+    "docs/BATCH_108_QUESTAB_EXTENDED_TABLEAU_AND_AH_INTEGRATION.md",
     "docs/BATCH_099_RESIDUAL_CONJECTURE_CONTINUOUS_EQUATION_DISCOVERY.md",
     "docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md",
     "integration/DAILY_CYCLE_2026-10-28_RESIDUAL_CONJECTURE_CONTINUOUS_DISCOVERY.md",
@@ -411,23 +415,24 @@
     "note": "Core/invariant workflow passed on the Batch 107 starting head; the new Batch 107 commit requires exact-head validation."
   },
   "current_head_validation": {
-    "commit": "96485219b3dfc3911abc4ba695775296560318de",
+    "commit": "892ce892dfe2a82f53ff82a172dd9aa4125e99da",
     "core_conclusion": "success",
     "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-28T17:25:32Z",
-    "note": "Both workflows are green on the starting head only. The Batch 107 commit must be checked separately."
+    "observed_at_utc": "2026-10-28T18:25:37Z",
+    "note": "Both exact-head workflows passed on the Batch 107 starting SHA; the Batch 108 commit must be checked separately."
   },
   "latest_cycle_ci_observation": {
-    "starting_commit": "96485219b3dfc3911abc4ba695775296560318de",
+    "starting_commit": "892ce892dfe2a82f53ff82a172dd9aa4125e99da",
     "core_status": "success",
-    "core_run_id": 40733947773,
+    "core_run_id": 40743197584,
     "cold_start_status": "success",
-    "cold_start_run_id": 40733947688,
-    "observed_at_utc": "2026-10-28T17:25:32Z",
-    "note": "Exact-head core and handoff checks passed on the starting SHA; exact-head CI for the new cycle commit remains pending."
+    "cold_start_run_id": 40743197582,
+    "observed_at_utc": "2026-10-28T18:25:37Z",
+    "note": "Exact-head core/invariant and handoff workflows passed on the Batch 108 starting SHA; validate the new cycle commit separately."
   },
-  "latest_batch": "Batch 107 — GPU stabilizer simulator literature gate and eight-lane integration; see docs/BATCH_107_GPU_STABILIZER_SIMULATOR_AND_AH_INTEGRATION.md",
+  "latest_batch": "Batch 108 — quEStab extended-tableau simulator audit and eight-lane integration; see docs/BATCH_108_QUESTAB_EXTENDED_TABLEAU_AND_AH_INTEGRATION.md",
   "latest_literature_watches": [
+    "docs/literature_watch/2026-10-29-questab-extended-tableau-multigpu-audit.md",
     "docs/literature_watch/2026-10-29-gpu-accelerated-stabilizer-simulation.md",
     "docs/literature_watch/2026-10-28-residual-conjecture-continuous-equation-discovery.md",
     "docs/literature_watch/2026-10-28-ai-mathematical-instruments-corpus-audit.md",
