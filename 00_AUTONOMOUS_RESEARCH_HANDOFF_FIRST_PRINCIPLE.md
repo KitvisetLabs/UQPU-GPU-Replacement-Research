@@ -7,7 +7,7 @@ Scope: every research lane, every agent, every commit, every integration and eve
 
 ## The cold-start test — mandatory before declaring a task complete
 Pretend a new agent has no memory, no chat transcript and no contact with you. Can it:
-1. Locate canonical entrypoints, strategic mission, active lanes A–I and research priorities?
+1. Locate canonical entrypoints, strategic mission, all permanent operational lanes A–H, preserved legacy workstreams and research priorities?
 2. Find exact source SHA, version, ownership, work IDs, hypotheses, baselines, equations, units, input data, environments, commands and expected outputs?
 3. Distinguish measured results from simulations, literature, assumptions, failures, and speculation?
 4. Reproduce the latest accepted result or understand exactly why reproduction is blocked?
@@ -29,7 +29,7 @@ Use concise machine-readable manifests alongside human-readable notes when usefu
 
 ## Standard new-agent startup
 1. Fetch latest `main`, read this prime directive, `AGENTS.md`, `PROJECT_CHARTER.md`, `VERSION_INVARIANTS.md`, `GOALS.md`, `README.md`, `docs/RESEARCH_OPERATING_SYSTEM.md`, root 00–06 directives, strategic references, and latest cycle/CI.
-2. Read `integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md` and `integration/PERMANENT_CROSS_LANE_CONTINUOUS_INTEGRATION_PROTOCOL_2026-10-16.md`. Enumerate active A–I, FND/EQN, specialist programs and unresolved integrations.
+2. Read `integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md` and `integration/PERMANENT_CROSS_LANE_CONTINUOUS_INTEGRATION_PROTOCOL_2026-10-16.md`. Enumerate A–H, FND/EQN, specialist programs, preserved legacy workstreams and unresolved integrations.
 3. Check actual source and tests; don't trust old narrative or fabricate execution. Select independent parallel work without disrupting other lanes (A remains Priority #1).
 4. Commit reproducible artifacts and explicit next-agent handoff to a PR/main; reconcile source-to-main mapping, tests, gaps, integration and status. If not merged, describe it as pending, not done.
 5. Apply the cold-start test and leave main discoverable for the next agent.
