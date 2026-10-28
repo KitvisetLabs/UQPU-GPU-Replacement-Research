@@ -45,6 +45,6 @@ BIO-001, FUS-001 and FIN-001 remain open. Carbon processing is not elemental tra
 
 ## CI, sync and next gate
 
-The cycle-start combined-status query returned no status entries; the available workflow-run wrapper returned no applicable runs because it exposes PR-triggered runs only. Exact-head CI is **UNVERIFIED**, not green. The repository's required `Research-Sync: main` trailer is included in created commit messages; README, WORKLOG and RESEARCH_GAPS still need final synchronization on the resulting main head.
+The cycle-start combined-status query returned no status entries; the available workflow-run wrapper returned no applicable runs because it exposes PR-triggered runs only. Exact-head CI is **UNVERIFIED**, not green. The repository's required `Research-Sync: main` trailer is included in created commit messages. README, WORKLOG and RESEARCH_GAPS were synchronized on main by the final documentation commits; exact-head CI still must be verified on the resulting head.
 
 Next gate: source-byte/license verification -> synthetic positive/null controls -> uncertainty calibration tests -> blind matched comparison if controls pass. No paid QPU job is authorized.
