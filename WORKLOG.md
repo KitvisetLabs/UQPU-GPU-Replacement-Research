@@ -2036,3 +2036,13 @@ The first Batch 101 commit 24dd8b8b33eea2f601701913b4893131ce8669b8 triggered co
 
 - Normalized adjacent Batch entries in the README contents list onto separate Markdown bullets after Batch 112 was added. This is an index-formatting correction only; no research result or evidence classification changed.
 - The correction is published with the README and worklog in one main-branch commit; its exact-head CI must be checked separately.
+
+
+## 2026-10-29 — Batch 113: root-sparsity query scaling and materials surveillance
+
+- Re-resolved main at `97ab729d102436a6bc2d584f9f7153e4ec327946`; starting-head core/invariant and cold-start Actions were successful. Added an explicitly MODEL_ONLY evaluator for the root-sparsity query expression in official arXiv preprint 2610.02939 and three regression tests covering the formula, monotonicity and fail-closed inputs.
+- Added a dated literature watch and focused reproduction gap for the root-sparsity Hamiltonian/ODE/linear-system result. The next gate is exact small-instance evolution with a frozen sparse-access contract and held-out sparsity/time/error profiles.
+- Fresh surveillance found a publisher-hosted early-access symbolic-regression inverse-design article on multi-principal-element alloy hardness (published 2026-10-23). Recorded its reported test metrics and limitations; this is a method analogue only and does not establish Pangola-carbon substitution, prospective material performance, manufacturing yield or cost.
+- A–H reviewed: A advanced at proxy/test level; B adapters unchanged; C resource omissions explicit; D/E/G material/device/manufacturing claims remain evidence-gated; F has no measured accepted-task economics; H keeps the strategic model and multilingual links. D/G co-design remains mandatory.
+- FND-002/FND-004 advance only at mathematical-query-proxy level. FND-001/003/005/006 and EQN-001–EQN-006 remain active; INV-029–035 and INV-025/026/027 are preserved. BIO-001, FUS-001 and FIN-001 remain open. No paid QPU job, new physical law, 100x/100,000,000x advantage, commercial fuel/fusion, lower WACC or one-phone milestone is claimed.
+- README, RESEARCH_GAPS.md, WORKLOG.md, code/tests and dated artifacts are committed atomically to main. Exact-head GitHub Actions remain the acceptance gate.

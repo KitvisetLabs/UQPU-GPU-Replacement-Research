@@ -1168,3 +1168,12 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Remaining blockers:** exact-head CI, independent theorem-assumption review, exact small-instance evolution, matched direct-product-formula/qDRIFT/composite-qDRIFT comparisons, held-out coefficient profile, and complete oracle/state/I/O/host/energy/accepted-task cost accounting.
 
 **Nonclaims:** the helper is an asymptotic expression proxy only. No finite-size lower-bound proof, physical runtime/energy bound, UQPU reproduction, real-QPU advantage, mission-level replacement, material/fuel/electricity benefit or financing-rate result is established.
+
+
+## 2026-10-29 — RG-A-ROOT-SPARSITY-REPRO-001 — Batch 113
+
+**Advance:** added `root_sparsity_hamiltonian_query_proxy` to `software/uqpu-prototype/uqpu/fundamental_limits.py`, with tests for the hand-calculated expression, monotonic scaling and invalid inputs. Added the official-preprint literature watch and the focused gap at `docs/RESEARCH_GAP_ROOT_SPARSITY_QUERY_SCALING_2026-10-29.md`.
+
+**Remaining blockers:** exact-head CI; independent review of the sparse-access/norm assumptions; exact small-instance evolution; held-out sparsity/time/error profiles; separate accounting for oracle construction, state preparation, synthesis, host work, memory/I/O, reconstruction, verification and accepted-task cost.
+
+**Nonclaims:** the helper is asymptotic MODEL_ONLY arithmetic. No theorem reproduction, finite-instance gate lower bound, physical runtime/energy result, QPU advantage, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone milestone is established.

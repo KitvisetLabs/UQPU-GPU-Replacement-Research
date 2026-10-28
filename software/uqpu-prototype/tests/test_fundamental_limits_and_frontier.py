@@ -14,6 +14,7 @@ from uqpu.fundamental_limits import (
     margolus_levitin_min_seconds,
     fault_tolerance_memory_log_overhead_term,
     bounded_observable_hoeffding_radii,
+    root_sparsity_hamiltonian_query_proxy,
 )
 
 
@@ -202,6 +203,43 @@ class FrontierInvariantTests(unittest.TestCase):
             "FND-006",
         ):
             self.assertIn(marker, text)
+
+
+
+class RootSparsityQueryProxyTests(unittest.TestCase):
+    def test_expression_matches_hand_calculation_and_keeps_model_only_label(self):
+        result = root_sparsity_hamiltonian_query_proxy(4, 2.0, 3.0, 0.1)
+        tau = 6.0
+        log_precision = math.log(10.0)
+        expected = math.sqrt(4) * tau + math.sqrt(4 * tau * log_precision) + log_precision
+        self.assertAlmostEqual(result["tau"], tau)
+        self.assertAlmostEqual(result["scaling_proxy"], expected)
+        self.assertEqual(result["evidence_level"], "MODEL_ONLY")
+        self.assertIn("not a measured", result["interpretation"])
+
+    def test_proxy_increases_with_sparsity_time_and_tighter_error(self):
+        baseline = root_sparsity_hamiltonian_query_proxy(4, 1.0, 2.0, 0.1)["scaling_proxy"]
+        more_sparse = root_sparsity_hamiltonian_query_proxy(9, 1.0, 2.0, 0.1)["scaling_proxy"]
+        longer_time = root_sparsity_hamiltonian_query_proxy(4, 1.0, 3.0, 0.1)["scaling_proxy"]
+        tighter_error = root_sparsity_hamiltonian_query_proxy(4, 1.0, 2.0, 0.01)["scaling_proxy"]
+        self.assertGreater(more_sparse, baseline)
+        self.assertGreater(longer_time, baseline)
+        self.assertGreater(tighter_error, baseline)
+
+    def test_invalid_inputs_fail_closed(self):
+        cases = [
+            (0, 1.0, 1.0, 0.1),
+            (True, 1.0, 1.0, 0.1),
+            (2, 0.0, 1.0, 0.1),
+            (2, 1.0, 0.0, 0.1),
+            (2, 1.0, 1.0, 0.0),
+            (2, 1.0, 1.0, 1.0),
+            (2, float("nan"), 1.0, 0.1),
+        ]
+        for args in cases:
+            with self.subTest(args=args):
+                with self.assertRaises(ValueError):
+                    root_sparsity_hamiltonian_query_proxy(*args)
 
 
 if __name__ == "__main__":

@@ -208,3 +208,51 @@ def bounded_observable_hoeffding_radii(
     observable_count = len(shots)
     log_term = math.log(2.0 * observable_count / delta)
     return tuple(math.sqrt(2.0 * log_term / n) for n in shots)
+
+
+def root_sparsity_hamiltonian_query_proxy(
+    sparsity: int,
+    row_column_norm_bound: float,
+    evolution_time: float,
+    trace_distance_error: float,
+) -> dict[str, float | int | str]:
+    """Evaluate an asymptotic sparse-Hamiltonian query-scaling expression.
+
+    Berry et al., official arXiv preprint 2610.02939, report a query expression
+    O(sqrt(s)*tau + sqrt(s*tau*log(1/epsilon)) + log(1/epsilon)) for an
+    s-sparse Hermitian matrix with row/column Euclidean norms bounded by eta,
+    where tau = eta*|t|. The paper's theorem depends on its sparse-access,
+    norm, precision and (for time-dependent cases) discretisation assumptions.
+
+    This helper evaluates the expression without hidden asymptotic constants.
+    It is MODEL_ONLY arithmetic, not a theorem checker, query count, gate count,
+    wall-clock prediction, physical speed limit, energy estimate or cost model.
+    Oracle construction, state preparation, arithmetic, host work, memory/I/O,
+    reconstruction and output verification are excluded.
+    """
+    if not isinstance(sparsity, int) or isinstance(sparsity, bool) or sparsity <= 0:
+        raise ValueError("sparsity must be a positive integer")
+    eta = _positive_finite("row_column_norm_bound", row_column_norm_bound)
+    time = _positive_finite("evolution_time", evolution_time)
+    epsilon = float(trace_distance_error)
+    if not math.isfinite(epsilon) or not 0.0 < epsilon < 1.0:
+        raise ValueError("trace_distance_error must be finite and strictly between 0 and 1")
+
+    tau = eta * time
+    log_precision = math.log(1.0 / epsilon)
+    sqrt_s_tau = math.sqrt(sparsity) * tau
+    mixed_time_precision = math.sqrt(sparsity * tau * log_precision)
+    scaling_proxy = sqrt_s_tau + mixed_time_precision + log_precision
+    return {
+        "sparsity": sparsity,
+        "tau": tau,
+        "sqrt_s_tau_term": sqrt_s_tau,
+        "mixed_time_precision_term": mixed_time_precision,
+        "log_precision_term": log_precision,
+        "scaling_proxy": scaling_proxy,
+        "evidence_level": "MODEL_ONLY",
+        "interpretation": (
+            "asymptotic query-scaling expression with hidden constants omitted; "
+            "not a measured query count, gate count, runtime, energy or cost"
+        ),
+    }

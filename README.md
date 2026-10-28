@@ -2,6 +2,7 @@
 
 ## Contents
 
+- [Batch 113 — root-sparsity scaling and materials surveillance](docs/BATCH_113_ROOT_SPARSITY_AND_MATERIALS_SURVEILLANCE.md) · [query-scaling helper](software/uqpu-prototype/uqpu/fundamental_limits.py) · [focused gap](docs/RESEARCH_GAP_ROOT_SPARSITY_QUERY_SCALING_2026-10-29.md) · [root-sparsity literature watch](docs/literature_watch/2026-10-29-root-sparsity-hamiltonian-ode-query-scaling.md) · [materials symbolic-regression watch](docs/literature_watch/2026-10-29-mpea-hardness-symbolic-regression-inverse-design.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_ROOT_SPARSITY_AND_MATERIALS_SURVEILLANCE.md)
 - [Project charter](PROJECT_CHARTER.md) · [Version invariants](VERSION_INVARIANTS.md) · [Project goals](GOALS.md)
 - [Eight-lane research operating system](docs/RESEARCH_OPERATING_SYSTEM.md) · [Open-frontier directive](docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md)
 - [Research lanes A–H](research_lanes/README.md) · [Cross-lane integration hub](integration/README.md)
@@ -15,6 +16,10 @@
 - [Batch 110 — higher-order parity-QAOA circuit and exact certificate](docs/BATCH_110_PARITY_QAOA_CIRCUIT_AND_REFERENCE_CERTIFICATE.md) · [parity-QAOA prototype](software/uqpu-prototype/uqpu/parity_qaoa.py) · [parity-QAOA tests](software/uqpu-prototype/tests/test_parity_qaoa.py)
 - [Batch 109 — AI formal discovery and FND-006](docs/BATCH_109_AI_FORMAL_DISCOVERY_AND_FOUNDATIONAL_INTEGRATION.md) · [FND-006 reproduction gap](docs/RESEARCH_GAP_FND006_AI_FORMAL_DISCOVERY_REPRO_2026-10-29.md) · [AI theorem-discovery literature watch](docs/literature_watch/2026-10-29-ai-open-ended-theorem-discovery-and-physics-formalization.md)
 - [Batch 108 — quEStab extended-tableau audit](docs/BATCH_108_QUESTAB_EXTENDED_TABLEAU_AND_AH_INTEGRATION.md) · [quEStab reproduction gap](docs/RESEARCH_GAP_QUESTAB_EXTENDED_TABLEAU_REPRODUCTION_2026-10-29.md) · [quEStab literature watch](docs/literature_watch/2026-10-29-questab-extended-tableau-multigpu-audit.md) · [Batch 107 — GPU stabilizer simulator](docs/BATCH_107_GPU_STABILIZER_SIMULATOR_AND_AH_INTEGRATION.md) · [QuaSARQ reproduction gap](docs/RESEARCH_GAP_QUASARQ_STABILIZER_REPRODUCTION_2026-10-29.md) · [GPU stabilizer literature watch](docs/literature_watch/2026-10-29-gpu-accelerated-stabilizer-simulation.md) · [Batch 106 — photonic in-situ training](docs/BATCH_106_PHOTONIC_INSPIRE_AND_AH_INTEGRATION.md) · [INSPIRE acceptance gap](docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md) · [Batch 105 — GF(2) parity rank and catalytic biomass](docs/BATCH_105_GF2_PARITY_RANK_AND_BIOMASS_CATALYST_SURVEILLANCE.md) · [Catalyst-biochar research gap](docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md)
+
+## Latest Eight-Lane research cycle — 2026-10-29 — root-sparsity and materials surveillance
+
+[Batch 113](docs/BATCH_113_ROOT_SPARSITY_AND_MATERIALS_SURVEILLANCE.md) adds a MODEL_ONLY evaluator for the root-sparsity query-scaling expression in an official Hamiltonian/ODE/linear-systems preprint, with regression tests and a focused exact-small-instance reproduction gap. It also records a new symbolic-regression materials-design paper as a method lead only. No theorem reproduction, real-QPU advantage, material substitution, fuel/electricity benefit or economic advantage is claimed. Starting-head Actions passed on the recorded SHA; exact-head CI for this commit remains the acceptance gate.
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — Hamiltonian coefficient-tail proxy
 
