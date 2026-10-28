@@ -6,6 +6,17 @@
 **AI Research Collaborator:** OpenAI GPT-5.6 Sol  
 **Date:** 2026-09-14
 
+## Latest Eight-Lane research cycle — 2026-10-28 — AI discovery reproduction and A–H handoff repair
+
+[Batch 091](docs/BATCH_091_AI_DISCOVERY_REPRODUCTION_AND_AH_HANDOFF_REPAIR.md) records a new-to-main official preprint watch for Brenner, Cohen-Addad & Woodruff, arXiv:2603.04735, on LLM-guided tree search with executable numerical feedback for a cosmic-string radiation integral. The [focused reproduction gap](docs/RESEARCH_GAP_AI_COSMIC_STRING_INTEGRAL_REPRODUCTION_2026-10-28.md) requires independent high-precision evaluators, held-out parameter tests, endpoint/large-harmonic counterexamples, explicit failed/undecided candidate accounting and independent symbolic review. This is an external preprint, not a UQPU reproduction or a new physical law.
+
+Lane A's next gate is now explicit in [A-GATE-SIGNED-MAXCUT-SDK-001](research_lanes/A_quantum_programming_runtime/SIGNED_MAXCUT_PINNED_SDK_RECONSTRUCTION_GATE.md): pin an SDK, reconstruct the signed-Max-Cut Ising operator and optimizer sign, and compare all tiny-instance energies plus complete argmax sets against the exhaustive oracle. The gate is specified but has not yet been executed.
+
+The permanent operational architecture is reconciled to **A–H** with 28 pair reviews in [integration/eight_lane_manifest.json](integration/eight_lane_manifest.json). The cold-start validator/tests and [handoff manifest](integration/COLD_START_HANDOFF_MANIFEST.json) now expect A–H; historical Lane I vehicle/levitation material is preserved as a legacy workstream, not deleted. See the [architecture reconciliation gap](docs/RESEARCH_GAP_AH_ARCHITECTURE_RECONCILIATION_2026-10-28.md) and [integration report](integration/DAILY_CYCLE_2026-10-28_AI_DISCOVERY_AND_AH_REPAIR.md).
+
+**CI boundary:** structural consistency checks on the manifests, validator and tests passed in the research orchestration, but this was not execution of the repository test suite. No exact-head GitHub Actions status contexts or commit-associated workflow runs were exposed for the inspected head; parent CI is not inherited. The A–H migration and Batch 091 remain **CI UNVERIFIED** until the exact-head core/invariant and cold-start workflows are observed. No paid QPU job, new physical law, material/fuel/fusion/economic advantage or Data-Center-to-One-Phone result is claimed.
+
+
 ## Latest Eight-Lane research cycle — 2026-10-28 — signed Max-Cut finite-range guard
 
 [Batch 090](docs/BATCH_090_SIGNED_MAXCUT_NUMERIC_RANGE_GUARD.md) hardens Lane A's signed Max-Cut reference against finite inputs that overflow derived QUBO/Ising coefficients, accumulated linear terms, or objective scores. The compiler now fails closed with a clear `ValueError` rather than emitting infinities or silently returning non-finite scores; regression tests cover coefficient overflow, huge integer conversion and all three scoring paths. This remains a classical software-contract result, not a QAOA circuit, SDK validation, QPU result or advantage claim. The focused [numeric-range gap](docs/RESEARCH_GAP_SIGNED_MAXCUT_NUMERIC_RANGE_2026-10-28.md) records the defect and the still-open pinned-SDK reconstruction gate.
