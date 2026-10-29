@@ -2289,3 +2289,5 @@ FND-001/003/005 have no new measurements; FND-002 lower bound unchanged; FND-004
 ### CI and next gate
 
 The combined-status endpoint returned no status contexts at the starting head. This is not a passing CI result. Check Actions for the latest `main` head, repair feasible failures and record actual run IDs. Then add a second analytically known generator and run the preregistered open-system benchmark with family/regime holdouts, >=30 seeds, negative controls, abstention and complete resources. Separately, freeze a matched-output qTPU/UQPU/classical-tensor-network manifest before any hardware run. No paid QPU job was submitted.
+
+Research-Sync: main
