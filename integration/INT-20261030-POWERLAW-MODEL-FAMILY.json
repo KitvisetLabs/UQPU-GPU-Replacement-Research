@@ -42,8 +42,8 @@
     "relative_error_approx": 0.2423648815883972
   },
   "test_path": "software/uqpu-prototype/tests/test_scaling_exponent_baseline.py",
-  "repository_test_suite": "NOT_RUN_IN_THIS_CYCLE",
-  "hosted_exact_head_ci": "UNVERIFIED_NO_STATUS_CONTEXTS_OR_RUNS_EXPOSED",
+  "repository_test_suite": "UNIT_AND_INVARIANT_JOBS_PASSED_ON_PRIOR_HEAD_816dae72; FULL_WORKFLOW_INCOMPLETE",
+  "hosted_exact_head_ci": "CURRENT_HEAD_UNVERIFIED_NO_RUN_EXPOSED; RUN_2057_ON_PRIOR_HEAD_HAS_UNIT_INVARIANT_AND_CLI_PASS; ADDITIONAL_JOBS_QUEUED",
   "paid_qpu_jobs": 0,
   "physical_law_claim": false,
   "mission_advantage_claim": false,
@@ -54,5 +54,27 @@
     "state": "OPEN_DRAFT",
     "head_branch": "research/2026-10-30-model-family-counterexample",
     "base_branch": "main"
+  },
+  "observed_ci": {
+    "workflow_run_id": 40936547317,
+    "run_number": 2057,
+    "tested_commit": "816dae72f2204d4c6624c22b58e618e49c9eea3a",
+    "unit_invariant_jobs": {
+      "python_3_10": "PASS",
+      "python_3_11": "PASS",
+      "python_3_12": "PASS"
+    },
+    "cli_smoke": {
+      "python_3_10": "PASS",
+      "python_3_11": "PASS",
+      "python_3_12": "PASS"
+    },
+    "extra_steps": {
+      "python_3_12_synthetic_finite_shot_sensitivity": "PASS",
+      "python_3_12_equal_budget_qaoa_objective_selection": "PASS"
+    },
+    "remaining_jobs": "qiskit/QSP/QSVT/reference jobs queued when last inspected",
+    "current_pr_head": "c6d7cd5141a67ba97f1e6046c14bd67867de149d",
+    "current_head_ci": "UNVERIFIED"
   }
 }
