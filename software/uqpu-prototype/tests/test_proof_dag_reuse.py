@@ -70,6 +70,20 @@ class ProofDagReuseTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "leakage"):
             validate_proof_dag([a, b])
 
+    def test_exact_statement_digest_cannot_cross_splits_across_families(self):
+        train = dict(
+            node_id="train-statement", claim_family="family-train", split="train",
+            status="CANDIDATE", statement_sha256=h("a"), parents=[],
+            residual_premises=[],
+        )
+        test = dict(
+            node_id="test-duplicate-statement", claim_family="family-test", split="test",
+            status="CANDIDATE", statement_sha256=h("a"), parents=[],
+            residual_premises=[],
+        )
+        with self.assertRaisesRegex(ValueError, "statement digest leakage across splits"):
+            validate_proof_dag([train, test])
+
     def test_unverified_schema_source_rejected(self):
         source = checked_node(status="CANDIDATE", proof_record_sha256="", checker_run_sha256="")
         target = dict(node_id="t", claim_family="ft", split="test", status="CANDIDATE",
