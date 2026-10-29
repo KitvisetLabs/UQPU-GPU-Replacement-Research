@@ -2187,3 +2187,22 @@ Research-Sync: main
 - No paid QPU job was authorized or submitted. Exact-head Actions must be checked after this commit; external reproduction and independent review remain the next gate.
 
 Research-Sync: main
+
+
+## 2026-10-29 — Batch 126 aggregate-log synchronization
+
+Batch 126 started from main SHA 93cc932683730308eec3bce4dcda7a1955f817c5 and added the equation-stability diagnostic, bounded symbolic-search protocol, and separate Lane D/G molecular spin–photon reproduction and manufacturing gates. The source watches and focused gaps were indexed in README and integration/README. Exact-head Prototype/Invariant workflow 40858117234 and Autonomous Cold-Start Handoff Audit 40858117248 both passed on commit 268a423add2a5960aa4b7efa9711c1311aeaa318. No local full-suite result, device reproduction, physical law or mission advantage was claimed.
+
+## 2026-10-29 — Batch 127: equation-stability fixture and EIC source-provenance gate
+
+- Starting main SHA: 268a423add2a5960aa4b7efa9711c1311aeaa318. Re-read the canonical charter, invariants, goals, README, operating system, open-frontier directive, Kanusanan Pongpan­na Model, strategic references, root directives 00/00A/01–06, latest Batch/gaps, living gap register, worklog, lane scoreboard and exact-head CI state.
+- Fresh public surveillance rechecked symbolic regression, neural-symbolic equation discovery, AI theorem discovery, physics-informed PDE modeling, automated experiment design, quantum thermodynamic limits, biomass conversion and fusion cost accounts. GOLLuM/ASP-assisted symbolic regression, EIC/search complexity, CoSR status, LegoSR/RISR, TINNs and current theorem/thermodynamic sources were already indexed; no duplicate literature article was created.
+- Source audit: the official EIC repository tree is pinned at 6e3abfcc308f2c71292abfa683ffb404412d022a (2026-03-31). Repository license metadata is null and no root-level license file exists; nested licenses are scoped to data/PMLB and third-party subprojects. The source README records corrections to prior PySR noise-call and CPU-time comparisons. No EIC code was copied, vendored or executed.
+- Lane A added a deterministic synthetic test comparing the stable rationalized form 1/(sqrt(1+x)+1) with the cancellation-prone form (sqrt(1+x)-1)/x near zero, using an 80-digit Decimal intermediate and the existing normalized perturbation proxy. The regression test is MODEL_ONLY and does not implement EIC or establish physical truth.
+- A–H: A gained the numeric fixture and preregistered benchmark; B provider-neutral routes maintained with no paid jobs; C output/readout/memory/transfer accounting maintained; D molecular spin–photon replication gate remains open; E Pangola/BIO-001/FUS-001 remain evidence gaps; F resource/evidence/provenance accounting tightened; G D/G co-design retained with no factory measurement; H source provenance and strategic continuity preserved. All 28 A–H interfaces were reviewed.
+- FND-006 advances at synthetic diagnostic level only. FND-001–005 and EQN-001–006 remain evidence-gated. INV-025/026/027 and INV-029–035 remain preserved; multilingual Thai/English/Chinese/Japanese/Korean/German references and strategic AI-agent/funding context are unchanged.
+- Starting-head core/invariant and cold-start workflows passed. Exact-head CI for Batch 127 is pending. No paid QPU job, external EIC reproduction, new physical law, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure is claimed.
+- Next gate: exact-head Actions, then grouped known-law tests under equal budgets. EIC remains blocked pending rights and source/data/environment review.
+
+Research-Sync: main
+

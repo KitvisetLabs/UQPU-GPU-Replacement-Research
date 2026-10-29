@@ -1290,3 +1290,15 @@ Four synthetic regression tests cover the rejection and allowed-edge cases. This
 **Next review:** after the first preregistered synthetic known-law benchmark or any material source/data/license change.
 
 **Non-claims:** no new equation, validated reactor/device model, biomass-carbon substitution, accepted bio-oil, net fusion electricity, QPU advantage, WACC change or mission-level compression is established.
+
+
+## 2026-10-29 — Batch 126 synchronization and RG-EQN-STRUCTURAL-STABILITY-001 preflight
+
+Batch 126 added a normalized finite-perturbation diagnostic and bounded symbolic-search protocol, plus separate Lane D/G molecular spin–photon gates. Its focused gaps and integration artifacts are indexed in README and the integration hub. The starting-head core/invariant and cold-start workflows passed; exact-head status was checked directly before the next cycle.
+
+The follow-up source audit pinned the public EIC implementation repository to commit 6e3abfcc308f2c71292abfa683ffb404412d022a (2026-03-31). The repository metadata reports no license and the tree has no root-level LICENSE/COPYING file; nested license files cover named data or subprojects only. UQPU therefore did not copy, vendor or execute EIC. See docs/BATCH_127_EIC_REPRODUCTION_PREFLIGHT.md and research_lanes/A_quantum_programming_runtime/EQUATION_STABILITY_KNOWN_LAW_BENCHMARK_V1.json.
+
+The synthetic EQN-STABILITY-CANCEL-001 fixture compares two algebraically equivalent forms around x=0 using an 80-digit Decimal intermediate and the UQPU normalized perturbation proxy. It is MODEL_ONLY numeric evidence, not EIC reproduction, a general stability theorem, physical-law evidence or a mission-level result. The EIC method arm remains blocked pending reuse-rights and source/data/environment review.
+
+**Next gate:** exact-head Actions for Batch 127, then grouped known-law tests under equal candidate/time/CPU/memory/precision budgets. Keep fit-plus-complexity and UQPU proxy results separate from EIC until the external source reuse and reproduction conditions are resolved. No paid QPU job is authorized.
+

@@ -13,6 +13,12 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — equation-stability source audit and known-law fixture
+
+- [Batch 127](../docs/BATCH_127_EIC_REPRODUCTION_PREFLIGHT.md), [Lane A benchmark preregistration](../research_lanes/A_quantum_programming_runtime/EQUATION_STABILITY_KNOWN_LAW_BENCHMARK_V1.json), [synthetic fixture](../software/uqpu-prototype/uqpu/equation_stability_benchmark.py), [tests](../software/uqpu-prototype/tests/test_equation_stability_benchmark.py) and [machine-readable record](INT-20261029-EIC-REPRODUCTION-PREFLIGHT.json) record a known cancellation failure and the source-reuse blocker for the external EIC implementation.
+- The official EIC repository is pinned for provenance, but its repository license metadata is null and no root license file was found. No EIC source was copied or executed; the EIC method arm remains blocked pending rights and environment/data review.
+- All 28 A–H pairs are reviewed. FND-006 advances only at synthetic diagnostic level; INV-029–035 remain evidence-gated. Starting-head CI passed; exact-head CI for Batch 127 is pending.
+
 ## Latest integrated cycle — 2026-10-29 — equation stability and molecular spin–photon device
 
 - [Batch 126](../docs/BATCH_126_STRUCTURAL_STABILITY_AND_SR_SEARCH_BUDGET.md) adds a normalized finite-perturbation diagnostic and bounded equation-search protocol, plus a peer-reviewed molecular spin–photon watch with separate Lane D/G replication and manufacturing gates.

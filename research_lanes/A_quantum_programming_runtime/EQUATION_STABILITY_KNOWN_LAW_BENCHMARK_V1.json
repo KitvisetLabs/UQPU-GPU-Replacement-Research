@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "contract_id": "UQPU-EQN-STABILITY-KNOWN-LAW-2026-10-29-v1",
+  "status": "PREREGISTERED_PARTIAL; EIC_ARM_BLOCKED_PENDING_SOURCE_REUSE_REVIEW",
+  "primary_owner": "Lane A",
+  "integration_owner": "Lane F",
+  "provenance_owner": "Lane H",
+  "mission_interfaces": [
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035",
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "source_audit": {
+    "paper_title": "Beyond Accuracy and Complexity: The Effective Information Criterion for Structurally Stable Symbolic Regression",
+    "paper_url": "https://proceedings.mlr.press/v306/yu26az.html",
+    "code_repository": "https://github.com/tsinghua-fib-lab/EIC",
+    "pinned_commit_sha": "6e3abfcc308f2c71292abfa683ffb404412d022a",
+    "pinned_commit_date": "2026-03-31",
+    "repository_is_fork": true,
+    "repository_license_metadata": null,
+    "root_license_file_found": false,
+    "nested_license_paths": [
+      "data/pmlb/LICENSE",
+      "src/generative/e2esr/LICENSE",
+      "src/nd2py/LICENSE"
+    ],
+    "reuse_status": "BLOCKED_PENDING_RIGHTS_REVIEW",
+    "execution_status": "NOT_RUN",
+    "note": "Nested third-party licenses do not establish reuse rights for EIC-specific code. No EIC code was copied, vendored or executed by UQPU."
+  },
+  "implemented_fixture": {
+    "fixture_id": "EQN-STABILITY-CANCEL-001",
+    "status": "IMPLEMENTED_SYNTHETIC_TEST",
+    "identity": "(sqrt(1+x)-1)/x = 1/(sqrt(1+x)+1), x > 0",
+    "input_points": [
+      1e-16,
+      4e-16
+    ],
+    "reference": "80-digit Decimal intermediate rounded to float64",
+    "methods": [
+      "stable_rationalized_float64",
+      "cancellation_prone_float64",
+      "UQPU_normalized_perturbation_proxy"
+    ],
+    "evidence_class": "MODEL_ONLY_SYNTHETIC_FLOATING_POINT",
+    "no_physical_claim": true
+  },
+  "future_benchmark": {
+    "status": "NOT_RUN",
+    "method_arms": [
+      {
+        "id": "fit_plus_complexity",
+        "status": "PLANNED_NOT_RUN"
+      },
+      {
+        "id": "uqpu_normalized_perturbation_proxy",
+        "status": "IMPLEMENTED_DIAGNOSTIC"
+      },
+      {
+        "id": "official_eic",
+        "status": "BLOCKED_PENDING_REUSE_RIGHTS_AND_ENVIRONMENT_PIN"
+      }
+    ],
+    "equation_families": [
+      {
+        "id": "FAMILY-ALG-001",
+        "description": "dimensionless cancellation identity with near-zero and ordinary-domain groups",
+        "status": "PARTIAL_FIXTURE_IMPLEMENTED"
+      },
+      {
+        "id": "FAMILY-ODE-001",
+        "description": "synthetic exponential decay y(t)=exp(-k t), k>0; positivity and monotonicity checks",
+        "status": "PLANNED"
+      },
+      {
+        "id": "FAMILY-OSC-001",
+        "description": "synthetic harmonic oscillator x''+omega^2 x=0; held-out frequency and energy-conservation checks",
+        "status": "PLANNED"
+      }
+    ],
+    "candidate_classes": [
+      "exact_stable",
+      "algebraically_equivalent_ill_conditioned",
+      "low_train_error_distractor",
+      "null_baseline",
+      "constraint_violating"
+    ],
+    "split_policy": "group-disjoint by equation family/system and held-out domain; no random-point-only split",
+    "minimum_preregistered_seeds": 30,
+    "equal_budget_per_method_seed": {
+      "max_candidate_evaluations": 1000,
+      "max_wall_clock_seconds": 300,
+      "max_cpu_core_seconds": 300,
+      "max_peak_memory_bytes": 2147483648,
+      "max_accelerator_seconds": 0,
+      "generated_tokens": 0
+    },
+    "required_metrics": [
+      "heldout_error",
+      "constraint_violations",
+      "numerical_failures",
+      "false_discoveries",
+      "normalized_perturbation_amplification",
+      "method_specific_EIC_score_when_legally_and_reproducibly_available",
+      "candidate_evaluations",
+      "wall_clock_seconds",
+      "cpu_core_seconds",
+      "peak_memory_bytes",
+      "energy_joules_if_instrumented",
+      "cost_per_accepted_candidate_if_cost_basis_available"
+    ],
+    "stop_conditions": [
+      "license_or_permission unresolved for official EIC arm",
+      "group split overlap",
+      "non-finite metric",
+      "invalid or unverified algebraic transformation",
+      "held-out gain disappears",
+      "budget mismatch",
+      "independent repeat fails"
+    ]
+  },
+  "acceptance_boundary": {
+    "passing_this_contract_means": "the benchmark is reproducibly specified and resource-bounded",
+    "does_not_mean": [
+      "EIC reproduced",
+      "new physical law",
+      "physical truth",
+      "real-QPU advantage",
+      "material substitution",
+      "accepted bio-oil",
+      "net fusion electricity",
+      "lower WACC",
+      "Data-Center-to-One-Phone closure"
+    ]
+  }
+}

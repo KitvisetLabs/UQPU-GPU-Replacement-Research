@@ -397,3 +397,20 @@ Batch 107 adds no new physical law, real-QPU result, material substitution, acce
 | H | Literature deduplication and strategic continuity recorded. | RESEARCH_PUBLICATION | Preserve six-language references and provenance |
 
 Batch 123 closes only a metadata-level split-edge path. It does not establish proof correctness, physical law, real-QPU advantage, material/fuel/electricity advantage, lower WACC or mission-level compression.
+
+
+## Batch 127 — equation-stability known-law fixture and EIC source-provenance gate (2026-10-29)
+
+| Lane | Current advance / reviewed blocker | Evidence | Main next gate |
+|---|---|---|---|
+| A | Known-equivalent-form cancellation fixture, Decimal reference and preregistered grouped known-law comparison added; Priority-1 QUBO/QAOA path remains active. | SOFTWARE_DIAGNOSTIC / MODEL_ONLY | Exact-head CI; equal-budget comparison of fit-plus-complexity and UQPU proxy; EIC arm only after rights/source pin. |
+| B | Provider-neutral routes maintained; no target job or paid submission. | MAINTAINED | Simulator/dry-run and provider-target-matched accepted-task economics. |
+| C | Output-information, classical readout, state, memory and transfer boundaries retained. | CONTRACT / NO NEW MEASUREMENT | Measure peak memory, I/O, transfer, reconstruction and host compute. |
+| D | Batch 126 molecular spin–photon gate remains external and unreproduced. | LITERATURE_ONLY | Independent device replication and substrate integration. |
+| E | Pangola carbon function, BIO-001 accepted liquid and FUS-001 net-electricity remain open. | OPEN_GAPS | Functional-material tests, mass/energy/product closure, net delivered electricity and lifecycle cost. |
+| F | EIC provenance blocker and matched-resource evidence contract recorded. | SOURCE AUDIT / MODEL_ONLY | Cost per accepted candidate, failures, false discoveries and uncertainty under equal budgets. |
+| G | D/G co-design maintained; no process-window, yield or cost-per-good-device data. | MAINTAINED / NO FACTORY MEASUREMENT | Device-to-process-window, repeatability, yield and capital-cost gate. |
+| H | Literature deduplication and source provenance recorded; six-language strategic context preserved. | RESEARCH GOVERNANCE | Resolve source-reuse rights; publish only genuine new literature deltas. |
+
+Batch 127 does not reproduce EIC, establish a physical law, demonstrate a QPU advantage, substitute critical materials, deliver low-cost bio-oil/fusion, reduce WACC, or close the Data-Center-to-One-Phone mission. INV-025/026/027 and INV-029–035 remain preserved.
+
