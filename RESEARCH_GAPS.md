@@ -1351,3 +1351,20 @@ Teretenkov, Kuznetsov & Pechen, *Physical Review A* 114, 043115 (published 2026-
 - **Lane A toy oracle:** [Batch 131](docs/BATCH_131_QTPU_HYBRID_RUNTIME_AND_OPEN_QSYS_FIXTURE.md) adds an exact one-qubit dephasing Pauli-basis check separating generator invariance from operator-algebra closure. Nine synthetic tests passed in an equivalent local reference harness; exact-head repository Actions remains unverified. The fixture is MODEL_ONLY and is not a measurement-identifiability benchmark or a decoherence-free proof.
 - **Unlock:** check exact-head Actions, add a second analytically known generator, then run family/regime-held-out structural inference with >=30 preregistered seeds, negative controls, abstention and total resources per accepted structure. No paid QPU job without explicit consent and bounded budget.
 - **Evidence boundary:** no new physical law, real-QPU advantage, memory/storage replacement, critical-material substitution, accepted fuel, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure.
+
+## RG-STATEPREP-TOFFOLI-001 — sparse state-preparation Toffoli model alignment (2026-10-29)
+
+**Status:** OPEN / LITERATURE-ONLY / INDEPENDENT REPRODUCTION REQUIRED  
+**Primary owner:** Lane A; interfaces with C, F, B, D/G and H.  
+**Source:** Rupprecht and Wölk, *Quantum* 10, 2208 (2026), DOI https://doi.org/10.22331/q-2026-09-10-2208.  
+**Detailed gap:** docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md  
+**Literature watch:** docs/literature_watch/2026-10-29-sparse-stateprep-improved-toffoli-cost.md
+
+**Objective:** Independently reproduce the reported sparse-isometry construction and determine whether it reduces complete state-preparation resources for a frozen UQPU workload after aligning support promises, amplitude representation, precision, preprocessing and gate model.
+
+**Current evidence:** The external publisher abstract reports approximately 2s worst-case Toffoli cost for sufficiently large n and author-reported numerical costs closer to s. UQPU has not reproduced the circuit. Toffoli count is not T-count, depth, energy or cost per accepted task.
+
+**Blockers / next gate:** Pin the exact paper/assets, reproduce small-n instances against a classical reference, align this Toffoli model with the existing Luo–Li T-count and sparse-QROM contracts, freeze disjoint held-out (n,s,epsilon) cases, and record ancillas, depth, preprocessing bytes, fidelity, transfer, reconstruction and total accepted-task cost. Paid QPU execution remains unauthorized without credentials, bounded budget and explicit consent.
+
+**Nonclaims:** No universal state-preparation bound, readable-memory equivalence, UQPU hardware/energy/cost advantage, 100,000,000-unit replacement or new physical law is established.
+
