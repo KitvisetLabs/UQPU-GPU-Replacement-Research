@@ -24,28 +24,37 @@
       "title": "Genesis Mission Hackathon recap",
       "date": "2026-10-21",
       "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/articles/genesis-mission-hackathon-brings-research"
+    },
+    {
+      "title": "Physics-informed neural networks for solving derivative-constrained partial differential equations",
+      "date": "2026-05-04",
+      "venue": "Physical Review E 113, 055301",
+      "url": "https://doi.org/10.1103/5bbf-p6zk",
+      "evidence_class": "PEER_REVIEWED_METHOD_PAPER_NOT_REPRODUCED"
     }
   ],
   "outputs": [
     "docs/literature_watch/2026-10-30-doe-qgpa-agent-workflow-surveillance.md",
     "research_lanes/A_quantum_programming_runtime/DOE_QGPA_DOMAIN_CONTRACT_MAP_2026-10-30.json",
     "docs/RESEARCH_GAP_QGPA_APPLICATION_CONTRACTS_2026-10-30.md",
-    "integration/DAILY_CYCLE_2026-10-30_QGPA_AGENT_WORKFLOW_SURVEILLANCE.md"
+    "integration/DAILY_CYCLE_2026-10-30_QGPA_AGENT_WORKFLOW_SURVEILLANCE.md",
+    "docs/literature_watch/2026-10-30-derivative-constrained-pinns-equation-discovery.md",
+    "docs/RESEARCH_GAP_DCPINN_REPRODUCTION_2026-10-30.md"
   ],
   "lanes": {
-    "A": "Domain-to-contract map added; complete QGPA specs and application-level reference baselines remain open.",
+    "A": "Domain-to-contract map added; complete QGPA specs and application-level reference baselines remain open. DC-PINN method watch and source/data reproduction gap added; no external code run.",
     "B": "Provider-neutral integration unchanged; no SDK/hardware run.",
     "C": "Output/readout bytes, classical reconstruction, memory and transfer metrics remain separate.",
     "D": "No device/process measurement; D/G co-design preserved.",
     "E": "BIO-001 and FUS-001 unchanged; no accepted fuel, material substitution, or net-electricity evidence.",
-    "F": "Full accepted-task resource/economic fields added to the contract template; no measured economic result.",
+    "F": "Full accepted-task resource/economic fields added to the contract template; no measured economic result. DC-PINN follow-up requires equal-resource training/inference and constraint-violation accounting.",
     "G": "No process window, yield, or cost-per-good-device result.",
     "H": "Official program/workflow watch published; multilingual strategic links and funding context preserved."
   },
   "foundations": {
     "FND_001_to_005": "No new measurement or physical mechanism.",
-    "FND_006": "Domain map may guide benchmark selection only.",
-    "EQN_001_to_006": "No equation promoted; full generator-to-independent-validation pipeline remains mandatory."
+    "FND_006": "Domain map and DC-PINN evaluator design inform benchmark selection only; no theorem or physical mechanism.",
+    "EQN_001_to_006": "No equation promoted; derivative constraints are evaluation fields, not proof of a governing law."
   },
   "invariants": {
     "INV_025_026_027": "Preserved; moonshots remain falsifiable and evidence-gated.",
@@ -66,15 +75,17 @@
       "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40937229540"
     },
     "combined_status_endpoint": "EMPTY_STATUS_CONTEXTS",
-    "new_commit_exact_head": "COLD_START_PASS; CORE_MATRIX_PASS; EXTENDED_QSVT_QSP_QISKIT_REFERENCE_JOBS_IN_PROGRESS_AT_FOLLOWUP"
+    "new_commit_exact_head": "COLD_START_PASS; CORE_MATRIX_PASS; EXTENDED_QSVT_QSP_QISKIT_REFERENCE_JOBS_IN_PROGRESS_AT_FOLLOWUP",
+    "latest_main_followup": "Current head and exact-head CI remain subject to the active GitHub Actions runs; no paid QPU execution."
   },
   "sync_debt": {
     "append_only": "RESEARCH_GAPS.md and WORKLOG.md not rewritten; focused gap and integration artifacts preserve this delta.",
     "pending_batch_138": "PR #152 is draft/open and not merged.",
-    "pending_sync_pr": "PR #153 initial cold-start audit #1346 failed for missing Research-Sync: pending-main trailer. Metadata-only repair commit 3910ef7e7eefb9997a19cbb916b031e20ec7dfaf was pushed; cold-start audit #1348 passed. PR #153 remains open pending review/merge and requires reconciliation of its older manifest snapshot with current main."
+    "pending_sync_pr": "PR #153 initial cold-start audit #1346 failed for missing Research-Sync: pending-main trailer. Metadata-only repair commit 3910ef7e7eefb9997a19cbb916b031e20ec7dfaf was pushed; cold-start audit #1348 passed. PR #153 remains open pending review/merge and requires reconciliation of its older manifest snapshot with current main.",
+    "dc_pinn": "New watch and focused reproduction gap added; source code/data/license audit and independent reproduction remain not done."
   },
   "paid_qpu_job_submitted": false,
   "external_code_imported": false,
   "mission_advantage_claimed": false,
-  "next_gate": "Obtain complete QGPA specs, define one exact/reference workload contract and classical baselines, then run simulator/dry-run and independent validation before any explicitly authorized paid QPU execution."
+  "next_gate": "Obtain complete QGPA specs; pin DC-PINN source/data/license and reproduce a bounded PDE case with held-out constraint counterexamples and equal-resource baselines; continue provider-neutral workload validation."
 }

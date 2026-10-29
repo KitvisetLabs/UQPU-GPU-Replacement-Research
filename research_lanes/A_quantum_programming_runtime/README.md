@@ -61,3 +61,10 @@ The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The 
 - [Reference baseline](../../software/uqpu-prototype/uqpu/scaling_exponent_baseline.py) and [seven synthetic tests](../../software/uqpu-prototype/tests/test_scaling_exponent_baseline.py) cover exact positive power-law recovery, held-out-scale prediction, unit rescaling and degenerate-design rejection.
 - [Acceptance contract](SCALING_EXPONENT_IDENTIFIABILITY_CONTRACT_2026-10-30.md), [focused gap](../../docs/RESEARCH_GAP_SCALING_EXPONENT_IDENTIFIABILITY_2026-10-30.md), and [literature watch](../../docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md) make the external-method and physical-law boundaries explicit.
 - The isolated synthetic harness passed 7/7 tests. The external MSN-PINN method remains unreproduced; exact-head CI must be observed.
+
+
+## Derivative-constrained PDE surrogate method watch — 2026-10-30
+
+- [DC-PINN literature watch](../../docs/literature_watch/2026-10-30-derivative-constrained-pinns-equation-discovery.md) records the peer-reviewed APS method as external and unreproduced.
+- [Focused reproduction gap](../../docs/RESEARCH_GAP_DCPINN_REPRODUCTION_2026-10-30.md) requires source/data/license pinning, equal-resource baselines, frozen spatiotemporal holdouts, derivative-constraint counterexamples, and full runtime/memory accounting.
+- No PDE surrogate, physical equation, or engineering benefit is promoted from the paper abstract alone.

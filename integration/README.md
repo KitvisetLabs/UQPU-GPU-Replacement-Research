@@ -3,12 +3,14 @@
 ## Latest integrated cycle — 2026-10-30 — Quantum Genesis application contracts and scientific-agent workflow surveillance
 
 - [Literature watch](../docs/literature_watch/2026-10-30-doe-qgpa-agent-workflow-surveillance.md)
+- [Derivative-constrained PINN method watch](../docs/literature_watch/2026-10-30-derivative-constrained-pinns-equation-discovery.md)
+- [Focused reproduction gap](../docs/RESEARCH_GAP_DCPINN_REPRODUCTION_2026-10-30.md)
 - [Lane A domain contract map](../research_lanes/A_quantum_programming_runtime/DOE_QGPA_DOMAIN_CONTRACT_MAP_2026-10-30.json)
 - [Focused gap](../docs/RESEARCH_GAP_QGPA_APPLICATION_CONTRACTS_2026-10-30.md)
 - [Cycle report](DAILY_CYCLE_2026-10-30_QGPA_AGENT_WORKFLOW_SURVEILLANCE.md)
 - [Machine-readable record](INT-20261030-QGPA-AGENT-WORKFLOW.json)
 
-The official DOE announcements provide domain and workflow context only. The contract map deliberately does not infer the eight application-level specifications that are absent from the announcement body. No UQPU result or physical/economic advantage is promoted.
+The official DOE announcements provide domain and workflow context only. The contract map deliberately does not infer the eight application-level specifications that are absent from the announcement body. A separate peer-reviewed DC-PINN method lead is also indexed with an explicit reproduction gap. No UQPU result or physical/economic advantage is promoted.
 
 ## Latest integrated cycle — 2026-10-30 — scaling-exponent identifiability gate
 

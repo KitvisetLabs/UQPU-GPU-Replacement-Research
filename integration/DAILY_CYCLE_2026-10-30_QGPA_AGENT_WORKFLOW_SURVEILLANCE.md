@@ -15,11 +15,12 @@ The repository root has no `evidence/` directory. Current evidence and blockers 
 
 ## Literature surveillance delta
 
-A source search found three DOE items not yet indexed on main: the 2026-10-08 Quantum Genesis Priority Applications announcement, the 2026-10-15 Genesis Agent Skills release, and the 2026-10-21 Genesis Mission hackathon recap. The official application announcement names four domains for eight QGPAs but its press-release body does not list all eight application specifications. The new watch therefore does not infer missing targets. The reported agent-skill categories and hackathon resource counts are treated as official program context, not validated performance or UQPU evidence.
+A source search found three DOE items not yet indexed on main: the 2026-10-08 Quantum Genesis Priority Applications announcement, the 2026-10-15 Genesis Agent Skills release, and the 2026-10-21 Genesis Mission hackathon recap. The official application announcement names four domains for eight QGPAs but its press-release body does not list all eight application specifications. The new watch therefore does not infer missing targets. The reported agent-skill categories and hackathon resource counts are treated as official program context, not validated performance or UQPU evidence. A second search found an unindexed peer-reviewed method paper: Hoshisashi, Phelan, and Barucca's DC-PINNs (Physical Review E, 2026-05-04; DOI 10.1103/5bbf-p6zk). The official abstract reports explicit derivative constraints and self-adaptive loss balancing on selected PDE benchmarks. It is recorded as a method lead only; source/data/license audit and independent reproduction remain undone.
 
 ## Integration accomplished
 
-- Added a dated Lane H literature watch with source dates, evidence class, novelty relative to main, limitations, lane-specific relevance, and falsifiable follow-up.
+- Added dated Lane H literature watches for the official DOE QGPA/agent-workflow delta and the peer-reviewed DC-PINN method, each with evidence class, limitations, lane-specific relevance, and falsifiable follow-up.
+- Added the Lane A DC-PINN source/data reproduction gap and indexed it in the Lane A README.
 - Added a Lane A machine-readable domain contract map. It records the four source-listed domains and common acceptance fields, while explicitly marking every domain as application-specification-incomplete.
 - Added focused gap `RG-A-QGPA-SPECS-001` rather than rewriting the large append-only research-gap ledger.
 - Updated the root README, integration hub, and cold-start manifest to make the work discoverable and handoff-ready.
@@ -27,12 +28,12 @@ A source search found three DOE items not yet indexed on main: the 2026-10-08 Qu
 
 ## A–H status
 
-- **A — Quantum programming/workloads/compiler/runtime (Priority #1):** new domain-to-contract map and explicit application-specification gap. The highest-value next step remains exact-output contracts and a pinned reference/baseline, not an unbounded quantum-advantage claim.
+- **A — Quantum programming/workloads/compiler/runtime (Priority #1):** new domain-to-contract map and explicit QGPA specification gap; DC-PINN is indexed as an unreproduced PDE-surrogate method with a falsifiable reproduction contract. The highest-value next step remains exact-output contracts and pinned references/baselines, not an unbounded quantum-advantage claim.
 - **B — Cloud/QPU/provider integration:** provider-neutral target list preserved; no SDK execution or target-specific economics added.
 - **C — RAM/VRAM/HBM/storage/state/data movement:** accepted-output bytes, classical readout, reconstruction, memory and transfer remain separate metrics; no memory replacement result.
 - **D — Device/chip/process/fabrication/packaging:** no device or fabrication measurement. D/G co-design remains mandatory.
 - **E — Biomass/materials/bio-oil/fusion/cooling/infrastructure:** BIO-001 and FUS-001 unchanged; no accepted-liquid fuel, Pangola material substitution, or reliable net-electric fusion evidence.
-- **F — Economics/benchmarks/evidence/integration:** new map requires same-target pricing provenance and cost per accepted task; no commercial, financing, WACC, or measured energy result.
+- **F — Economics/benchmarks/evidence/integration:** new map requires same-target pricing provenance and cost per accepted task; DC-PINN follow-up requires equal-resource training/inference accounting. No commercial, financing, WACC, or measured energy result.
 - **G — Manufacturing equipment/software/factory systems:** no process window, metrology, yield, lifetime, or cost-per-good-device result.
 - **H — Strategy/finance/future industries/publication:** official DOE workflow and application context indexed; multilingual Thai, English, Chinese, Japanese, Korean, and German plan links and strategic AI-agent/funding references preserved.
 
@@ -43,8 +44,8 @@ A source search found three DOE items not yet indexed on main: the 2026-10-08 Qu
 - **FND-003:** no matched control-versus-quantum-speed-limit measurement.
 - **FND-004:** no alternative physical primitive passed a discriminating test.
 - **FND-005:** no new QFT/particle mechanism or device consequence.
-- **FND-006:** application-domain mapping can guide selection of a mathematics-first benchmark, but adds no theorem or physical mechanism.
-- **EQN-001–EQN-006:** no equation is promoted. Generator → constraints → evaluator → held-out/generalization → counterexample → proof/simulation → discriminating experiment → independent replication → system consequence → economics remains mandatory.
+- **FND-006:** application-domain mapping can guide benchmark selection; DC-PINN adds a constraint-aware evaluator lead, but no theorem or physical mechanism.
+- **EQN-001–EQN-006:** no equation is promoted. DC-PINN motivates separately scoring governing-equation residuals and derivative constraints; it does not prove either the PDE or a learned constitutive law is correct. Generator → constraints → evaluator → held-out/generalization → counterexample → proof/simulation → discriminating experiment → independent replication → system consequence → economics remains mandatory.
 
 ## INV-029–INV-035 and preserved moonshots
 
@@ -66,8 +67,9 @@ PR #152's core/invariant workflow passed on its head, but the PR remains draft/o
 ## Next highest-value gate
 
 1. Retrieve the complete official QGPA application specifications and reference materials; do not guess the eight individual applications from the press-release summary.
-2. Select one bounded Lane A workload, define identical accepted-output contracts and an exact/reference certificate, then compare competitive CPU/GPU/NPU baselines before provider-neutral lowering and target-aware simulation.
-3. In parallel, preserve Batch 138's synthetic model-family counterexample as negative evidence and keep the MSN-PINN reproduction and sparse-state-preparation asset audit open.
-4. Continue BIO-001, FUS-001 and FIN-001 as separate evidence-gated tracks. Paid QPU execution remains unauthorized without credentials, bounded budget, and explicit user consent.
+2. Pin the DC-PINN source/data/license and reproduce one heat-diffusion-with-bounds case against conventional and hard-constraint baselines with frozen spatiotemporal holdouts, derivative-constraint counterexamples, and equal resource budgets.
+3. Select one bounded Lane A workload, define identical accepted-output contracts and an exact/reference certificate, then compare competitive CPU/GPU/NPU baselines before provider-neutral lowering and target-aware simulation.
+4. In parallel, preserve Batch 138's synthetic model-family counterexample as negative evidence and keep the MSN-PINN reproduction and sparse-state-preparation asset audit open.
+5. Continue BIO-001, FUS-001 and FIN-001 as separate evidence-gated tracks. Paid QPU execution remains unauthorized without credentials, bounded budget, and explicit user consent.
 
 Research-Sync: main
