@@ -27,6 +27,6 @@ The new validator checks declared metadata and graph structure only. It does not
 Starting-head Actions were green. Exact-head Actions for the new commit must pass before this batch is CI-green. Next gate: pinned theorem-family-disjoint equal-budget comparison and independent held-out kernel-check reproduction, with failures, residual premises, timeouts and resources retained.
 
 
-## Additional same-day literature delta — FND-001/FND-004
+## Literature-source deduplication correction — FND-001/FND-004
 
-The fresh APS accepted-paper surveillance found a 2026-10-26 no-go theorem for steady-regime quantum heat engines powered purely by bare measurements under finite-dimensional, no-feedback, no-thermal-contact assumptions. Added a source-specific watch and a focused gap. This is a candidate negative constraint to reconstruct, not a reproduced theorem. It does not imply a general quantum-computing no-go or a fusion-cost conclusion.
+The APS accepted paper on measurement-only steady-regime heat engines was already covered by the existing 2026-10-28 source watch. It is not counted as a new-to-repository source. The temporary duplicate article was removed; the focused RG-FND001-MEASUREMENT-ONLY-HEAT-ENGINE-001 gap remains as a new reconstruction task. No independent theorem reproduction is claimed.

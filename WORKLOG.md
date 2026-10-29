@@ -2139,3 +2139,11 @@ A repository-wide source search after publication found that RISR (arXiv:2610.11
 - The source's stated no-go scope is limited to a finite-dimensional working substance, bare measurements, no feedback/thermal contact and the steady regime. Independent proof reconstruction has not been run.
 - Updated README, Batch 121, integration report and machine-readable integration record from complete fetched snapshots in one main-branch commit.
 - FND-001/FND-004 gain a source-specific negative-evidence candidate; no general quantum-computing no-go, fusion-economic result, physical-law discovery or device-energy result is claimed.
+
+
+## 2026-10-29 — Literature-source deduplication correction
+
+- Repository inspection found that the APS measurement-only steady-regime heat-engine no-go paper was already covered in docs/literature_watch/2026-10-28-quantum-time-optimal-control-and-thermodynamic-limits.md. It is not a new-to-repository source.
+- Removed the temporary duplicate literature-watch article, redirected the README to the canonical existing watch, and corrected Batch 121, the integration report and machine-readable record.
+- Retained the focused FND-001 gap because its independent theorem-reconstruction and complete-cycle energy-boundary criteria are new project work.
+- No theorem reconstruction, physical experiment, QPU job or energy/economic advantage is claimed.
