@@ -2085,3 +2085,10 @@ The exact-head cold-start handoff audit for `9ca2f808499631699f3cb06bea929f6d25c
 - **Literature surveillance:** new dated watch for the official ICLR 2026 EvolProver proceedings paper; no UQPU reproduction. LLM-PySR (arXiv:2607.04156) and physics-constrained constitutive model inspection (arXiv:2605.23754) were rechecked and not duplicated because canonical watches already exist.
 - **Artifacts:** Batch 118, exact-QUBO gap, EvolProver literature watch, FND-006 robustness gap, integration report, README TOC and canonical RESEARCH_GAPS index.
 - **Evidence boundary:** no RAG application run, QAOA simulation, real-QPU job, new physical law, material substitution, accepted bio-oil, net fusion electricity, reduced WACC or Data-Center-to-One-Phone result. INV-029–035 and the six-language strategic links remain preserved.
+
+
+## 2026-10-29 — CI handoff trailer repair
+
+- The Batch 118 implementation commit `c073ad53f0efb773ba962c1da3abbc76fd7e1616` failed the autonomous cold-start audit because its message lacked the required `Research-Sync: main` trailer; the audit otherwise reached the exact main commit, installed the package and checked A–H/28 integration pairs.
+- This follow-up commit records the repair and carries the required trailer. The prototype/invariant workflow on the original Batch 118 head was still running at inspection time; verify both workflows on the new exact head before claiming CI green.
+- No source-code change is required for the trailer-only failure. The QUBO reference remains limited to exhaustive small-instance objective certificates; no RAG application or hardware result is claimed.

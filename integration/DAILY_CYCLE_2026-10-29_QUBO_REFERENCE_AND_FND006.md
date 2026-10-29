@@ -35,3 +35,6 @@ The helper's local self-tests passed. The repository's exact-head Actions status
 ## Next gate
 
 Freeze a versioned RAG workload/embedding/QUBO manifest and acceptance margins, verify certificates independently, and run matched CPU/GPU plus QAOA simulation. In parallel, pin the formal proof environment and test semantics-preserving theorem transformations against held-out families.
+
+
+**CI handoff repair (2026-10-29):** the first Batch 118 commit `c073ad53f0efb773ba962c1da3abbc76fd7e1616` triggered a cold-start audit failure solely because its commit message omitted the required `Research-Sync: main` trailer. A follow-up sync commit is being used to satisfy the handoff contract; the audit must be checked on that exact follow-up head before declaring CI green.
