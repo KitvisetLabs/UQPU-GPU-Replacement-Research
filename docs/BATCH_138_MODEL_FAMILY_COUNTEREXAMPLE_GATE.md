@@ -36,7 +36,7 @@ Fresh public searches covered symbolic/neural-symbolic equation discovery, physi
 - DOE Genesis Mission award update (2026-10-08): https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science
 - Xie, arXiv:2610.17090 (2026-10-12), mathematical-instrument triage: https://arxiv.org/abs/2610.17090
 
-Repository searches found these already represented by existing watches/batches, so this run does not duplicate them as “new-to-repository” discoveries. Their results remain external literature, not UQPU evidence. The new actionable delta is a falsification fixture showing why fit score must be separated from model-family validity.
+Repository searches confirmed that the PMLR MSN-PINN paper, the Science formal-proof-search paper, SymbolFit and the October 12 mathematical-instrument survey are already represented by existing watches/batches; they remain external literature, not UQPU evidence. A separate official DOE award announcement dated 2026-10-08 was not previously indexed and is recorded in [the Genesis award/funding watch](literature_watch/2026-10-30-doe-genesis-awards-ai-fusion-materials-quantum.md). It is program/funding context only, not a technical result. The new technical delta is the falsification fixture showing why fit score must be separated from model-family validity.
 
 ## 4. A–H status and integration edges
 
