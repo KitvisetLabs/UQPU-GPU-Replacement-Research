@@ -1,0 +1,75 @@
+{
+  "record_id": "INT-20261029-OPEN-QSYS-STRUCTURE",
+  "date": "2026-10-29",
+  "starting_main_sha": "3776b14d31619b30df1af5c6b3b89ab46d13825d",
+  "primary_owner": "Lane A",
+  "scientific_interface_owner": "Lane B",
+  "integration_owner": "Lane F",
+  "literature_owner": "Lane H",
+  "source": {
+    "title": "Learning hidden structures in open quantum dynamics",
+    "authors": [
+      "Alexander Teretenkov",
+      "Sergey Kuznetsov",
+      "Alexander Pechen"
+    ],
+    "journal": "Physical Review A",
+    "volume": 114,
+    "article": "043115",
+    "published": "2026-10-21",
+    "accepted": "2026-09-29",
+    "doi": "10.1103/lv26-srm2",
+    "publisher_url": "https://journals.aps.org/pra/abstract/10.1103/lv26-srm2",
+    "arxiv_url": "https://arxiv.org/abs/2604.00711",
+    "evidence_class": "PEER_REVIEWED_METADATA_AND_ABSTRACT_ONLY",
+    "full_text_code_data_audited": false,
+    "uQpu_reproduction": false
+  },
+  "artifacts": [
+    "docs/BATCH_130_OPEN_QUANTUM_INVARIANT_STRUCTURE_GATE.md",
+    "docs/literature_watch/2026-10-29-open-quantum-invariant-structure-learning.md",
+    "docs/RESEARCH_GAP_OPEN_QSYSTEM_INVARIANT_STRUCTURE_2026-10-29.md",
+    "research_lanes/A_quantum_programming_runtime/OPEN_QUANTUM_INVARIANT_STRUCTURE_BENCHMARK_V1.json",
+    "integration/DAILY_CYCLE_2026-10-29_OPEN_QUANTUM_STRUCTURE.md"
+  ],
+  "lane_status": {
+    "A": "PREREGISTERED_NOT_RUN; exact small-model fixtures and classical baseline next",
+    "B": "provider-neutral open-system/measurement interface; no QPU job",
+    "C": "observable algebra separated from readable memory/storage",
+    "D": "no device evidence; requirements downstream of replication",
+    "E": "Batch 129 biomass/fuel gaps unchanged",
+    "F": "false-discovery and total-resource metrics specified; no economic advantage measured",
+    "G": "D/G co-design retained; no manufacturing evidence",
+    "H": "new dated literature watch; multilingual strategy preserved"
+  },
+  "foundational_status": {
+    "FND_001": "no new thermodynamic-gap measurement",
+    "FND_002": "observable access modeled; no memory lower-bound change",
+    "FND_003": "no matched QSL measurement",
+    "FND_004": "model-identification route only; no alternative physical primitive demonstrated",
+    "FND_005": "no new QFT/particle mechanism",
+    "FND_006": "ground truth, counterexamples and independent checks required",
+    "EQN_001": "new-to-repository peer-reviewed source indexed",
+    "EQN_002": "family/regime holdouts and false-discovery metrics preregistered",
+    "EQN_003": "constraints/accessibility included before acceptance",
+    "EQN_004": "adversarial controls and abstention required",
+    "EQN_005": "no new-physics escalation",
+    "EQN_006": "technology/economics gate remains closed pending replication"
+  },
+  "invariants": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "evidence_boundary": "No UQPU reproduction, real-QPU advantage, new physical law, readable-memory replacement, device/material improvement, accepted low-cost fuel, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure.",
+  "starting_head_ci": "No combined status contexts returned for starting main SHA; Batch 129 recorded exact-head Actions pending.",
+  "new_head_ci": "PENDING",
+  "next_gate": "Implement exact small-model fixtures and deterministic classical baseline; run family-disjoint tests, negative controls and resource accounting."
+}

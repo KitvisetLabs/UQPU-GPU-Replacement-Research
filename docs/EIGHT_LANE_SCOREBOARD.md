@@ -444,3 +444,19 @@ Batch 128 does not establish a physical law, real-QPU advantage, critical-materi
 | H | Two literature watches and focused gaps published; multilingual strategy preserved. | LITERATURE SURVEILLANCE | Pin sources and add FIN-001 stage-gate evidence. |
 
 Batch 129 does not establish a physical law, Pangola material substitution, accepted low-cost bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. INV-025/026/027 and INV-029–037 remain preserved.
+
+
+## Batch 130 — open-quantum invariant-structure learning (2026-10-29)
+
+| Lane | Current advance / reviewed blocker | Evidence | Main next gate |
+|---|---|---|---|
+| A | Preregistered structural-identifiability benchmark contract; not executed. | PREREGISTERED / NOT_RUN | Exact small-model fixtures, classical baseline, family-disjoint holdouts. |
+| B | Peer-reviewed open-system structure-learning source indexed; no provider execution. | ABSTRACT_ONLY / NO_UQPU_REPRODUCTION | Validate against target-specific measurement/noise records only after simulation. |
+| C | Observable algebra separated from full state and readable classical memory. | CONTRACT_ONLY | Measure shots, settings, reconstruction, memory and transfer. |
+| D | No device result; measurement/control requirements downstream. | NO_NEW_DEVICE_EVIDENCE | Derive tolerances after replicated structure result. |
+| E | Batch 129 biomass/fuel gaps unchanged. | NO_NEW_MATERIAL_OR_FUEL_EVIDENCE | Primary data and matched mass/energy/product balance. |
+| F | False-discovery and total-resource accounting per accepted structure specified. | PREREGISTERED | Execute benchmark and calculate cost only from same target/run. |
+| G | D/G co-design retained; no process/yield evidence. | NO_NEW_MANUFACTURING_EVIDENCE | Convert validated measurement requirements into metrology specs. |
+| H | Dated literature watch published; multilingual strategic links preserved. | LITERATURE_SURVEILLANCE | Audit full text/code/data and update only on verified findings. |
+
+Batch 130 does not establish a new physical law, quantum advantage, readable-memory replacement, critical-material substitution, accepted low-cost bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. INV-025/026/027 and INV-029–035 remain preserved.

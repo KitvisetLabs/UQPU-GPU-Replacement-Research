@@ -1332,3 +1332,14 @@ Flash-Joule heating records in *Renewable Energy* 263 (2026), DOI 10.1016/j.rene
 The peer-reviewed *Review of Financial Studies* paper “Excess Commitment in R&D” (Guenzel & Liu, 2026; DOI 10.1093/rfs/hhag026) reports delay-associated continuation and crowd-out effects in pharmaceutical clinical-trial projects. It motivates a falsifiable governance hypothesis for UQPU research: when evidence is delayed, decisions may overweight sunk cost and underweight future opportunity cost. External validity to this project is unestablished; delay may also provide genuine information.
 
 **Unlock:** maintain a milestone ledger with initial hypothesis, remaining cost, time-to-evidence, uncertainty reduction, precommitted stop/continue rules, alternative use of capital, and documented exceptions when delay supplies new information. Evaluate project-level principal/interest/time-to-evidence separately from WACC or macro-rate claims.
+
+
+## 2026-10-29 — RG-OPEN-QSYS-INVARIANT-STRUCTURE-001
+
+**Status:** PREREGISTERED FOLLOW-UP / NOT RUN / EXTERNAL PAPER NOT REPRODUCED. **Owner:** Lane A with Lane B model interface, Lane F evidence and Lane H provenance.
+
+Teretenkov, Kuznetsov & Pechen, *Physical Review A* 114, 043115 (published 2026-10-21), DOI 10.1103/lv26-srm2, report inference of invariant observable subalgebras from multi-time measurements under restricted access. Only the official publisher abstract was audited in this cycle; full text, code, data and detailed likelihood/model-selection methods remain unverified.
+
+**Missing:** exact known-model ground truth; separate mathematical conditions for decoherence-free labels; family/regime-held-out performance; uncertainty calibration and false-discovery rate; abstention on unidentifiable access; robustness to symmetry breaking, non-Markovian mismatch, finite-shot noise and candidate multiplicity; full shots/settings/host compute/memory/transfer/retry/reconstruction/cost accounting; any measured resource or mission benefit.
+
+**Unlock:** implement `research_lanes/A_quantum_programming_runtime/OPEN_QUANTUM_INVARIANT_STRUCTURE_BENCHMARK_V1.json` using exact small models, deterministic classical baselines, >=30 preregistered seeds and adversarial negative controls. Check generator invariance and algebra closure; do not equate invariance alone with a decoherence-free algebra. No paid QPU execution without explicit consent and a bounded budget.

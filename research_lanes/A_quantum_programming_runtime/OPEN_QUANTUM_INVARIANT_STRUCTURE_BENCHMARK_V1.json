@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "contract_id": "UQPU-OPEN-QUANTUM-INVARIANT-STRUCTURE-2026-10-29-v1",
+  "status": "PREREGISTERED_NOT_RUN",
+  "primary_owner": "Lane A",
+  "scientific_interface_owner": "Lane B",
+  "integration_evidence_owner": "Lane F",
+  "literature_provenance_owner": "Lane H",
+  "date": "2026-10-29",
+  "source": {
+    "title": "Learning hidden structures in open quantum dynamics",
+    "authors": [
+      "Alexander Teretenkov",
+      "Sergey Kuznetsov",
+      "Alexander Pechen"
+    ],
+    "venue": "Physical Review A 114, 043115",
+    "published": "2026-10-21",
+    "accepted": "2026-09-29",
+    "doi": "10.1103/lv26-srm2",
+    "publisher_url": "https://journals.aps.org/pra/abstract/10.1103/lv26-srm2",
+    "preprint_url": "https://arxiv.org/abs/2604.00711",
+    "evidence_class": "PEER_REVIEWED_METADATA_AND_ABSTRACT_ONLY",
+    "full_text_code_data_audited": false,
+    "uQpu_reproduction": false
+  },
+  "mission_interfaces": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-034",
+    "INV-035",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "purpose": "Test whether invariant observable-structure hypotheses can be identified from restricted multi-time measurements in known finite-dimensional open-system models, and measure total resources per accepted structure without inferring advantage from state-space size.",
+  "model_scope": {
+    "incumbent_model": "Finite-dimensional Markovian open-system model with declared generator and accessible observables.",
+    "mathematical_check": "For declared Heisenberg-picture generator L_dagger and candidate observable subspace A, test L_dagger(A) subseteq A; separately test linear-subspace and algebra closure. Decoherence-free labels require additional declared conditions and are not inferred from invariance alone.",
+    "physical_limits_binding": true,
+    "non_markovian_models": "Negative-control / abstention arm; not silently fit as Markovian truth."
+  },
+  "benchmark_arms": [
+    "known invariant observable subalgebra",
+    "known non-invariant candidate",
+    "known decoherence-free structure with separately verified conditions",
+    "no-structure / constant baseline",
+    "conventional maximum-likelihood baseline",
+    "shuffled measurement/time-label negative control"
+  ],
+  "split_and_budget": {
+    "held_out_unit": "whole model family and parameter regime; no random row split alone",
+    "preregistered_seeds_minimum": 30,
+    "freeze_before_candidate_generation": [
+      "measurement operators",
+      "time points",
+      "shot budgets",
+      "candidate set",
+      "tolerances",
+      "split IDs",
+      "baseline configuration",
+      "abstention rule"
+    ],
+    "preserve_failed_candidates": true
+  },
+  "stress_tests": [
+    "symmetry-breaking perturbation",
+    "non-Markovian model mismatch",
+    "unidentifiable accessible-observable set",
+    "finite-shot noise sweep",
+    "measurement-label/time-label shuffle",
+    "candidate multiplicity / false-discovery stress"
+  ],
+  "metrics": [
+    "held-out multi-time log likelihood",
+    "invariant-structure classification accuracy",
+    "false-discovery rate and uncertainty interval",
+    "false-negative rate",
+    "calibration and abstention rate on unidentifiable cases",
+    "exact generator-invariance residual",
+    "algebra-closure residual",
+    "measurement settings and shots per accepted structure",
+    "wall time and host CPU/GPU time",
+    "peak memory and state/data movement",
+    "retries and reconstruction cost",
+    "target/provider billable usage and energy where measurable",
+    "total cost per accepted structure"
+  ],
+  "acceptance": {
+    "rule": "Freeze numerical thresholds before candidate generation; require held-out performance, exact/declared-tolerance mathematical checks, calibrated uncertainty, no hidden failures, and resource reporting. Any claimed decoherence-free structure must pass its separate mathematical conditions.",
+    "allow_abstain": true,
+    "failed_candidates_retained": true,
+    "external_paper_results_count_as_project_evidence": false,
+    "synthetic_acceptance_evidence_class": "MODEL_ONLY"
+  },
+  "execution_policy": {
+    "order": [
+      "deterministic synthetic tests",
+      "classical baseline",
+      "target-aware simulation/dry-run",
+      "independent SDK check",
+      "authorized real-QPU only after separate consent"
+    ],
+    "paid_qpu_allowed_without_explicit_consent": false,
+    "provider_price_may_not_be_combined_with_other_target_probability": true
+  },
+  "non_claims": [
+    "no new physical law",
+    "no demonstrated quantum advantage",
+    "no readable classical memory/storage replacement from algebra or Hilbert-space dimension",
+    "no measured energy or cost reduction",
+    "no device/factory improvement",
+    "no INV-029 mission closure"
+  ],
+  "next_gate": "Implement exact small-model fixtures and a deterministic classical baseline, then run blind family-disjoint tests and adversarial negative controls."
+}

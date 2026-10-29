@@ -2230,3 +2230,16 @@ Research-Sync: main
 - Exact-head Actions for this new commit are pending. Next gate: primary-source retrieval, matched flash-Joule/conventional mass-energy comparison, and a FIN-001 decision ledger with precommitted stop/continue rules.
 
 Research-Sync: main
+
+
+## 2026-10-29 — Batch 130: open-quantum invariant-structure benchmark gate
+
+- Starting main SHA: 3776b14d31619b30df1af5c6b3b89ab46d13825d. Resolved latest main dynamically and reviewed the charter, invariants, goals, README, research operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, latest Batch 129 and gaps, Batch 128 candidate gate/tests, equation-stability contract, scoreboard, and canonical worklog/gap histories.
+- Fresh source: Teretenkov, Kuznetsov & Pechen, *Physical Review A* 114, 043115, published 2026-10-21, DOI 10.1103/lv26-srm2, newly found by repository search. Only the official publisher abstract/bibliographic record was audited; full text/code/data and the authors' result were not independently reproduced.
+- Added a literature watch, focused gap and preregistered Lane A benchmark contract for invariant observable-structure identification under restricted multi-time measurement access. Contract includes exact small-model ground truth, separately verified decoherence-free labels, family/regime holdouts, >=30 seeds, no-structure and classical baselines, symmetry-breaking/non-Markovian/shuffled-label/unidentifiable controls, abstention, failed-candidate retention, and total resources per accepted structure.
+- A–H reviewed: A benchmark contract; B provider-neutral measurement interface; C observable-vs-memory distinction; D/G downstream requirements only; E existing BIO-001 gaps unchanged; F false-discovery/resource accounting; H source watch and strategic-reference preservation.
+- FND-001/003/005 unchanged; FND-002 strengthened only as an observable-access question; FND-004 remains model identification, not an alternative physical primitive; FND-006/EQN-001–006 retain evidence gates. No candidate physical law, QPU advantage, material substitution, accepted fuel, net fusion electricity, lower WACC or INV-029 closure claimed.
+- Validated the new machine-readable contract by JSON parsing during authoring. No numerical benchmark, local test suite, full source reproduction or full CI run is claimed. Starting-head combined-status returned no status contexts; exact-head Actions must be checked after commit. No paid QPU job submitted.
+- Main page, integration index, scoreboard, WORKLOG and RESEARCH_GAPS updated in the same commit. Next gate: implement exact small-model fixtures and a deterministic classical baseline, then run blind family-disjoint tests and adversarial controls.
+
+Research-Sync: main

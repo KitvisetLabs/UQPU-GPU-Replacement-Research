@@ -100,3 +100,9 @@ Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as
 ## Latest integrated cycle — 2026-10-29 — time-dependent PDE generalization
 - [Batch 125](../docs/BATCH_125_TIME_DEPENDENT_PDE_GENERALIZATION_GATE.md), [TINNs literature watch](../docs/literature_watch/2026-10-29-time-induced-neural-networks-pde-surrogate-acceptance.md), [Lane A acceptance contract](../research_lanes/A_quantum_programming_runtime/TINN_TIME_DEPENDENT_PDE_ACCEPTANCE_CONTRACT_2026-10-29.md), [focused gap](../docs/RESEARCH_GAP_TINN_TIME_DEPENDENT_PDE_GENERALIZATION_2026-10-29.md) and [integration report](DAILY_CYCLE_2026-10-29_TINN_PDE_GENERALIZATION.md) connect a time-conditioned PDE surrogate literature lead to grouped regime holdouts, physical constraints and total-resource accounting.
 - The paper is not reproduced; no physical-law, device, material, fuel, fusion, QPU or economic advantage is claimed.
+
+
+## Latest integrated cycle — 2026-10-29 — open-quantum invariant-structure learning
+
+- [Batch 130](../docs/BATCH_130_OPEN_QUANTUM_INVARIANT_STRUCTURE_GATE.md), [literature watch](../docs/literature_watch/2026-10-29-open-quantum-invariant-structure-learning.md), [Lane A benchmark contract](../research_lanes/A_quantum_programming_runtime/OPEN_QUANTUM_INVARIANT_STRUCTURE_BENCHMARK_V1.json), [focused gap](../docs/RESEARCH_GAP_OPEN_QSYSTEM_INVARIANT_STRUCTURE_2026-10-29.md), and [integration record](INT-20261029-OPEN-QSYS-STRUCTURE.json) connect the 21 October 2026 *Physical Review A* paper to a falsifiable structural-identifiability test.
+- The contract is preregistered, not run. Full text/code/data were not audited. No physical law, quantum advantage, readable-memory replacement, fuel/fusion result, lower WACC or Data-Center-to-One-Phone closure is claimed.
