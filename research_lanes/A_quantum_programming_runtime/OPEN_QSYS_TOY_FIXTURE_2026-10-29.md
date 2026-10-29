@@ -22,10 +22,10 @@ Both checks are required for `passes_exact_toy_checks`. Passing does not imply m
 
 | Candidate span | Expected invariance | Expected algebra closure | Expected result |
 |---|---:|---:|---|
-| span`{I,Z}` | Pass | Pass | Pass toy checks |
-| span`{I,X,Y}` | Pass | Fail | Reject |
-| span`{I,X+Z}` | Fail for gamma > 0 | Pass | Reject |
-| span`{I,X,Y,Z}`, gamma = 0 | Pass | Pass | Pass toy checks |
+| span(I,Z) | Pass | Pass | Pass toy checks |
+| span(I,X,Y) | Pass | Fail | Reject |
+| span(I,X+Z) | Fail for gamma > 0 | Pass | Reject |
+| span(I,X,Y,Z), gamma = 0 | Pass | Pass | Pass toy checks |
 
 The test suite also rejects dependent basis vectors, non-finite coefficients, invalid generator rates, invalid tolerance and malformed vectors. Failed cases remain part of the benchmark rather than being removed.
 
