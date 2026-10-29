@@ -13,6 +13,12 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — accuracy-plus-stability equation-candidate gate
+
+- [Batch 128](../docs/BATCH_128_EQN_CANDIDATE_ACCEPTANCE_GATE.md), [Lane A gate](../software/uqpu-prototype/uqpu/equation_candidate_gate.py), [tests](../software/uqpu-prototype/tests/test_equation_candidate_gate.py), [focused gap](../docs/RESEARCH_GAP_EQN_CANDIDATE_ACCEPTANCE_2026-10-29.md) and [machine-readable integration record](INT-20261029-EQN-CANDIDATE-ACCEPTANCE.json) add a joint accuracy/stability/constraint/failure acceptance rule.
+- A zero-sensitivity constant candidate is a mandatory negative control. The result is synthetic software infrastructure only; no physical law or EIC reproduction is claimed.
+- All 28 A–H interfaces were reviewed. INV-034/035 feed all lanes; exact-head CI remains the acceptance gate.
+
 ## Latest integrated cycle — 2026-10-29 — equation-stability source audit and known-law fixture
 
 - [Batch 127](../docs/BATCH_127_EIC_REPRODUCTION_PREFLIGHT.md), [Lane A benchmark preregistration](../research_lanes/A_quantum_programming_runtime/EQUATION_STABILITY_KNOWN_LAW_BENCHMARK_V1.json), [synthetic fixture](../software/uqpu-prototype/uqpu/equation_stability_benchmark.py), [tests](../software/uqpu-prototype/tests/test_equation_stability_benchmark.py) and [machine-readable record](INT-20261029-EIC-REPRODUCTION-PREFLIGHT.json) record a known cancellation failure and the source-reuse blocker for the external EIC implementation.

@@ -414,3 +414,18 @@ Batch 123 closes only a metadata-level split-edge path. It does not establish pr
 
 Batch 127 does not reproduce EIC, establish a physical law, demonstrate a QPU advantage, substitute critical materials, deliver low-cost bio-oil/fusion, reduce WACC, or close the Data-Center-to-One-Phone mission. INV-025/026/027 and INV-029–035 remain preserved.
 
+
+## Batch 128 — accuracy-plus-stability equation-candidate acceptance gate (2026-10-29)
+
+| Lane | Current advance / reviewed blocker | Evidence | Main next gate |
+|---|---|---|---|
+| A | Fail-closed evaluator requires held-out accuracy and perturbation stability together; constant zero-sensitivity candidate is a negative control. | SOFTWARE_DIAGNOSTIC / MODEL_ONLY | Exact-head CI, then grouped known-law benchmark under equal budgets. |
+| B | Provider-neutral routes preserved; no target job or paid submission. | MAINTAINED | Target-specific accepted-task economics only with consent and bounded budget. |
+| C | State, memory, I/O, transfer, reconstruction and classical output remain separate. | CONTRACT / NO NEW MEASUREMENT | Populate measured resource fields on accepted useful-task runs. |
+| D | Molecular spin–photon result remains external and unreproduced. | LITERATURE_ONLY | Independent device replication and integration gate. |
+| E | Pangola function, BIO-001 accepted liquid and FUS-001 net electricity remain open. | OPEN_GAPS | Functional, mass/energy and net-electric evidence. |
+| F | Joint accuracy/stability/constraint/failure acceptance and matched-budget policy added. | SOFTWARE_DIAGNOSTIC | False-discovery rate and cost per accepted candidate. |
+| G | D/G co-design maintained; no process-window/yield/factory-cost evidence. | MAINTAINED / NO FACTORY MEASUREMENT | Device-to-process and cost-per-good-device gate. |
+| H | Literature deduplicated; multilingual strategic references and AI-agent/funding context preserved. | RESEARCH GOVERNANCE | Record genuine source deltas and capital-stage evidence. |
+
+Batch 128 does not establish a physical law, real-QPU advantage, critical-material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. INV-025/026/027 and INV-029–037 remain preserved.

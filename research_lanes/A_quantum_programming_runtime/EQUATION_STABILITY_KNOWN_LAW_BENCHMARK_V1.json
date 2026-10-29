@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "contract_id": "UQPU-EQN-STABILITY-KNOWN-LAW-2026-10-29-v1",
-  "status": "PREREGISTERED_PARTIAL; EIC_ARM_BLOCKED_PENDING_SOURCE_REUSE_REVIEW",
+  "status": "PREREGISTERED_PARTIAL; CANDIDATE_ACCEPTANCE_GATE_IMPLEMENTED; EIC_ARM_BLOCKED_PENDING_SOURCE_REUSE_REVIEW",
   "primary_owner": "Lane A",
   "integration_owner": "Lane F",
   "provenance_owner": "Lane H",
@@ -148,5 +148,20 @@
       "lower WACC",
       "Data-Center-to-One-Phone closure"
     ]
+  },
+  "candidate_acceptance_gate": {
+    "gate_id": "EQN-CANDIDATE-ACCEPTANCE-001",
+    "implementation": "software/uqpu-prototype/uqpu/equation_candidate_gate.py",
+    "tests": "software/uqpu-prototype/tests/test_equation_candidate_gate.py",
+    "status": "IMPLEMENTED_UNIT_TESTED; GROUPED_DISCOVERY_BENCHMARK_NOT_RUN",
+    "acceptance_requires_all": [
+      "normalized held-out RMS error at or below a family-specific threshold frozen before candidate generation",
+      "finite perturbation-amplification diagnostic at or below a separately preregistered threshold",
+      "zero domain/physics constraint violations",
+      "zero numerical failures"
+    ],
+    "counterexample_control": "A constant candidate with zero perturbation amplification must fail if held-out accuracy is inadequate.",
+    "split_and_budget_policy": "Keep family/system-disjoint holdouts, at least 30 preregistered seeds, and equal candidate/time/CPU/memory/precision budgets; preserve every failed candidate.",
+    "evidence_boundary": "Synthetic acceptance is not equation equivalence, physical truth, EIC reproduction, or a technology/economic advantage."
   }
 }

@@ -1302,3 +1302,14 @@ The synthetic EQN-STABILITY-CANCEL-001 fixture compares two algebraically equiva
 
 **Next gate:** exact-head Actions for Batch 127, then grouped known-law tests under equal candidate/time/CPU/memory/precision budgets. Keep fit-plus-complexity and UQPU proxy results separate from EIC until the external source reuse and reproduction conditions are resolved. No paid QPU job is authorized.
 
+
+
+## 2026-10-29 — RG-EQN-CANDIDATE-ACCEPTANCE-001 — joint accuracy and stability gate
+
+**Status:** SOFTWARE GATE ADDED / GROUPED DISCOVERY BENCHMARK NOT RUN / MODEL_ONLY. **Owner:** Lane A; evidence/resource accounting Lane F; provenance Lane H.
+
+A perturbation-stability score alone can falsely favor a constant or uninformative candidate; zero output change is not proof of accurate prediction. Batch 128 adds `software/uqpu-prototype/uqpu/equation_candidate_gate.py` and six tests. Acceptance requires normalized held-out RMS error and separately measured perturbation amplification to pass thresholds frozen before evaluation, with zero constraint violations and zero numerical failures. The constant zero-sensitivity candidate is a required negative control.
+
+**Blockers:** the grouped known-law comparison has not run; family-disjoint splits, frozen thresholds, matched search budgets, at least 30 seeds and independent replication remain required. The official EIC arm remains blocked pending source-reuse rights and source/data/environment pinning.
+
+**Next gate:** exact-head Actions, then frozen synthetic grouped benchmark. This software gate is not EIC reproduction, semantic equation validation, a new physical law or a technology/economic advantage. No QPU job is authorized.

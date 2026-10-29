@@ -2206,3 +2206,15 @@ Batch 126 started from main SHA 93cc932683730308eec3bce4dcda7a1955f817c5 and add
 
 Research-Sync: main
 
+
+
+## 2026-10-29 — Batch 128: accuracy-plus-stability equation-candidate acceptance gate
+
+- Starting main SHA: 17e3c8ff96d4dc7a95001e39186387cf8ccca28d; starting-head Prototype/Invariant workflow #2008 and Cold-Start Handoff Audit #1271 both passed.
+- Fresh public surveillance covered symbolic regression/structural stability, neural-symbolic equation discovery, AI theorem discovery/formalization, physics-informed PDE models, experiment design, quantum thermodynamic limits, biomass and fusion cost accounting. No material primary source new to the repository was identified; no duplicate literature article was added.
+- Lane A added `equation_candidate_gate.py` and six tests. Candidate acceptance requires held-out normalized RMS error and separately measured perturbation amplification to pass preregistered thresholds, with zero constraint violations and numerical failures. A constant candidate with zero sensitivity must fail if its output is inaccurate.
+- Updated the Lane A benchmark preregistration, Batch 128, focused gap, integration record, README, integration index, scoreboard, RESEARCH_GAPS and this work log in one commit. All 28 A–H interfaces reviewed; multilingual Thai/English/Chinese/Japanese/Korean/German plan links, root directives and AI-agent/funding context preserved.
+- FND-006 and EQN-002/EQN-004 gain stronger evaluation controls only. FND-001–005 and all EQN-001–006 remain evidence-gated. INV-025/026/027 and INV-029–037 remain preserved. No physical law, real-QPU advantage, material substitution, accepted fuel, net fusion electricity, lower WACC or phone-class physical-compression result is claimed.
+- No paid QPU job was submitted. Exact-head CI is pending; no local full-suite result is claimed. Next gate: exact-head Actions, then frozen family-disjoint known-law comparison under equal budgets; EIC remains blocked pending rights and provenance review.
+
+Research-Sync: main
