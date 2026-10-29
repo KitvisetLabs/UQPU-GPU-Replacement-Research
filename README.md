@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Batch 122 — strict proof-DAG evidence metadata types](docs/BATCH_122_STRICT_PROOF_DAG_EVIDENCE_TYPES.md) · [validator](software/uqpu-prototype/uqpu/proof_dag_reuse.py) · [regression tests](software/uqpu-prototype/tests/test_proof_dag_reuse.py) · [focused gap](docs/RESEARCH_GAP_FND006_PROOFEVOLVE_SCHEMA_REUSE_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_STRICT_PROOF_DAG_TYPES.md)
+
 - [Batch 121 — ProofEvolve proof-DAG reuse gate](docs/BATCH_121_PROOFEVOLVE_VERIFIED_SCHEMA_REUSE_GATE.md) · [validator](software/uqpu-prototype/uqpu/proof_dag_reuse.py) · [tests](software/uqpu-prototype/tests/test_proof_dag_reuse.py) · [literature watch](docs/literature_watch/2026-10-29-prooffevolve-verified-proof-dag-reuse.md) · [focused gap](docs/RESEARCH_GAP_FND006_PROOFEVOLVE_SCHEMA_REUSE_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_PROOFEVOLVE_FORMAL_DISCOVERY.md) · [machine-readable record](integration/INT-20261029-FND006-PROOFEVOLVE.json) · [FND-001 thermodynamic no-go watch](docs/literature_watch/2026-10-28-quantum-time-optimal-control-and-thermodynamic-limits.md) · [focused gap](docs/RESEARCH_GAP_FND001_MEASUREMENT_ONLY_HEAT_ENGINE_2026-10-29.md)
 
 - [Batch 120 — finite equation-discovery metric validation and evidence boundaries](docs/BATCH_120_FINITE_EQUATION_METRICS_AND_EVIDENCE_GATE.md) · [integration record](integration/INT-20261029-EQN-FINITE-ERROR-VALIDATION.json) · [RG-EQN-009 external theorem review](docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md)

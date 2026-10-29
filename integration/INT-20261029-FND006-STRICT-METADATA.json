@@ -1,0 +1,60 @@
+{
+  "schema": "uqpu-cross-lane-integration-v1",
+  "date": "2026-10-29",
+  "batch": 122,
+  "starting_main_sha": "eae52617e5d3effa942b8f4653bb835a876cc355",
+  "primary_owner": "A",
+  "literature_owner": "H",
+  "change": {
+    "module": "software/uqpu-prototype/uqpu/proof_dag_reuse.py",
+    "tests": "software/uqpu-prototype/tests/test_proof_dag_reuse.py",
+    "regression_tests_added": 3,
+    "issue": "Python bool is a subclass of int; False/True could pass metadata checks for exit codes or reproduction count.",
+    "fix": "Require exact built-in int types for checker_exit_code and independent_reproduction_count.",
+    "evidence_class": "METADATA_ONLY_NOT_PROOF"
+  },
+  "literature_surveillance": {
+    "checked": [
+      "ProofEvolve arXiv:2608.26334",
+      "p-DCIM arXiv:2610.37033",
+      "SymbolFit arXiv:2607.19750v2",
+      "physics-informed equation discovery",
+      "quantum thermodynamic-control bounds"
+    ],
+    "result": "Relevant sources already indexed on main; no new-to-repository material source found.",
+    "independent_reproduction": "NOT_RUN"
+  },
+  "lanes": {
+    "A": "ADVANCED_STRICT_METADATA_GATE_AND_3_REGRESSION_TESTS",
+    "B": "MAINTAINED_NO_PROVIDER_EXECUTION",
+    "C": "MAINTAINED_NO_MEMORY_OR_STATE_EQUIVALENCE_CLAIM",
+    "D": "MAINTAINED_NO_DEVICE_OR_FABRICATION_EVIDENCE",
+    "E": "MAINTAINED_BIO001_FUS001_AND_MATERIAL_GATES_OPEN",
+    "F": "ADVANCED_EVIDENCE_CONTRACT_NO_MEASURED_ECONOMICS",
+    "G": "MAINTAINED_DG_CODESIGN_NO_FACTORY_MEASUREMENT",
+    "H": "ADVANCED_LITERATURE_DEDUPLICATION_AND_STRATEGIC_CONTEXT_PRESERVATION"
+  },
+  "foundational": {
+    "FND-001": "ACTIVE_COMPLETE_CYCLE_ENERGY_BOUNDARY_AND_THEOREM_RECONSTRUCTION_OPEN",
+    "FND-002": "ACTIVE_EXACT_SMALL_REFERENCES_NO_GENERAL_NEW_BOUND",
+    "FND-003": "ACTIVE_MATCHED_CONTROL_EXPERIMENT_OPEN",
+    "FND-004": "HYPOTHESIS_GATED",
+    "FND-005": "MECHANISM_GATED_NO_NEW_ANOMALY",
+    "FND-006": "METADATA_GATE_HARDENED_EXTERNAL_REPRODUCTION_OPEN",
+    "EQN-001_to_EQN-006": "NO_NEW_PHYSICAL_LAW_OR_TECHNOLOGY_CLAIM"
+  },
+  "invariants": {
+    "INV-025_026_027": "PRESERVED_EVIDENCE_GATED",
+    "INV-029": "NO_PHONE_PHYSICAL_COMPRESSION_MILESTONE",
+    "INV-030": "NO_ELEMENTAL_TRANSMUTATION_OR_UNIVERSAL_SUBSTITUTION",
+    "INV-031": "BIO001_OPEN_NOT_COMMERCIAL",
+    "INV-032": "FUS001_OPEN_NOT_COMMERCIAL",
+    "INV-033": "NO_MEASURED_WACC_CHANGE",
+    "INV-034": "ACTIVE_FOUNDATIONAL_RESEARCH",
+    "INV-035": "ACTIVE_AI_EQUATION_DISCOVERY_EVIDENCE_GATED",
+    "INV-036_037": "PRESERVED"
+  },
+  "local_test_status": "NOT_RUN_CONTAINER_NETWORK_DNS_BLOCKED",
+  "paid_qpu_job": false,
+  "next_gate": "Exact-head Actions, then pinned equal-budget theorem-family-disjoint proof-search comparison and independent held-out kernel-check reproduction."
+}

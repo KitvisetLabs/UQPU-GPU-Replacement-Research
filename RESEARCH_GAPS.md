@@ -1236,3 +1236,9 @@ The matched equation-discovery robustness helper and synthetic tests are committ
 ## Literature-source deduplication correction — 2026-10-29
 
 A repository-wide source search after publication found that RISR (arXiv:2610.11387) was already covered in the 2026-10-15 equation-discovery identifiability watch and the 2026-10-28 residual/conjecture watch. It is useful prior art in Batch 119, but it is **not** a new-to-repository literature delta. LegoSR (arXiv:2610.33465) is the genuinely new-to-repository source in this cycle. The literature-watch article and next-cycle summary have been corrected to distinguish new evidence from previously indexed work. No external result was reproduced or promoted.
+
+## 2026-10-29 addendum — RG-FND006 strict proof-DAG integer metadata
+
+**Status:** IMPLEMENTED / EXACT-HEAD CI PENDING AT COMMIT CREATION. The graph metadata validator now rejects Python booleans for `checker_exit_code` and `independent_reproduction_count`; booleans compare equal to integers in Python and could otherwise satisfy a fail-closed evidence contract. Three regression tests cover the checked-false, failed-true and reproduced-count-true cases.
+
+**Boundary:** this verifies metadata types only; it does not execute a proof kernel or authenticate checker provenance. The external ProofEvolve equal-budget, theorem-family-disjoint, held-out reproduction remains OPEN. See Batch 122 and the focused FND-006 gap.

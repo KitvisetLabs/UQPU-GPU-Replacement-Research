@@ -97,6 +97,28 @@ class ProofDagReuseTests(unittest.TestCase):
         result = validate_proof_dag([failed])
         self.assertEqual(result["failed_attempt_count"], 1)
 
+
+    def test_boolean_false_is_not_a_checked_exit_code(self):
+        with self.assertRaisesRegex(ValueError, "integer checker_exit_code=0"):
+            validate_proof_dag([checked_node(checker_exit_code=False)])
+
+    def test_boolean_true_is_not_a_failed_exit_code(self):
+        failed = dict(
+            node_id="bad-bool", claim_family="family-failed-bool", split="validation",
+            status="FAILED", statement_sha256=h("a"), parents=[], residual_premises=[],
+            proof_record_sha256=h("b"), checker_run_sha256=h("c"),
+            source_revision="d" * 40, checker_name="Lean", checker_version="4.19.0",
+            checker_exit_code=True, failure_reason="Boolean is not a process exit code",
+        )
+        with self.assertRaisesRegex(ValueError, "integer nonzero checker_exit_code"):
+            validate_proof_dag([failed])
+
+    def test_boolean_reproduction_count_is_not_an_integer_count(self):
+        with self.assertRaisesRegex(ValueError, "integer independent_reproduction_count"):
+            validate_proof_dag([checked_node(
+                status="INDEPENDENTLY_REPRODUCED", independent_reproduction_count=True
+            )])
+
     def test_reproduced_requires_positive_count(self):
         node = checked_node(status="INDEPENDENTLY_REPRODUCED", independent_reproduction_count=0)
         with self.assertRaisesRegex(ValueError, "independent_reproduction_count"):

@@ -38,3 +38,9 @@ No external ProofEvolve code, checkpoint, dataset or benchmark was independently
 ## Stop/falsification conditions
 
 The reuse hypothesis is weakened if gains vanish under equal budgets or theorem-family holdout, if generated transformations alter meaning, if proof fragments depend on hidden assumptions, if residual premises are omitted, or if independent runs fail to reproduce the claimed kernel-checked status.
+
+## 2026-10-29 validator-hardening addendum
+
+A Python-specific fail-closed gap was found during code inspection: `bool` subclasses `int`, so `False == 0` and `True` satisfies `isinstance(True, int)`. The graph validator now requires `type(value) is int` for checker exit codes and independent reproduction counts. Regression tests explicitly reject these booleans. This is metadata hardening only; it does not raise the evidence level beyond `METADATA_ONLY_NOT_PROOF`.
+
+The next gate remains external: pin ProofEvolve code/dependencies/corpus/kernel, preregister theorem-family-disjoint splits, compare baseline and schema reuse under equal compute/time budgets, and independently rerun held-out kernel-checked proofs while recording failures, residual premises, timeouts and resources.

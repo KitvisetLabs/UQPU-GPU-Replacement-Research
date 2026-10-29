@@ -136,17 +136,18 @@ def validate_proof_dag(nodes: Iterable[Mapping[str, object]]) -> dict[str, objec
                 if not isinstance(node.get(field), str) or not str(node[field]).strip():
                     raise ValueError(f"{node_id}.{field} is required")
             exit_code = node.get("checker_exit_code")
-            if status in {"KERNEL_CHECKED", "INDEPENDENTLY_REPRODUCED"} and exit_code != 0:
-                raise ValueError(f"{node_id} checked status requires checker_exit_code=0")
+            if status in {"KERNEL_CHECKED", "INDEPENDENTLY_REPRODUCED"}:
+                if type(exit_code) is not int or exit_code != 0:
+                    raise ValueError(f"{node_id} checked status requires integer checker_exit_code=0")
             if status == "FAILED":
-                if not isinstance(exit_code, int) or exit_code == 0:
-                    raise ValueError(f"{node_id} FAILED status requires nonzero checker_exit_code")
+                if type(exit_code) is not int or exit_code == 0:
+                    raise ValueError(f"{node_id} FAILED status requires integer nonzero checker_exit_code")
                 if not isinstance(node.get("failure_reason"), str) or not node["failure_reason"].strip():
                     raise ValueError(f"{node_id} FAILED status requires failure_reason")
         if status == "INDEPENDENTLY_REPRODUCED":
             count = node.get("independent_reproduction_count", 0)
-            if not isinstance(count, int) or count < 1:
-                raise ValueError(f"{node_id} requires independent_reproduction_count >= 1")
+            if type(count) is not int or count < 1:
+                raise ValueError(f"{node_id} requires integer independent_reproduction_count >= 1")
         if status == "INCONCLUSIVE" and not str(node.get("failure_reason", "")).strip():
             raise ValueError(f"{node_id} INCONCLUSIVE status requires failure_reason")
 
