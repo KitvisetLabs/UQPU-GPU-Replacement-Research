@@ -1,5 +1,15 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — agent baselines and equation frontier
+
+- [A–H cycle report](DAILY_CYCLE_2026-10-30_AGENT_BASELINE_AND_EQN_FRONTIER.md)
+- [Machine record](INT-20261030-AGENT-BASELINE-EQN-FRONTIER.json)
+- [JustGoal baseline watch](../docs/literature_watch/2026-10-30-justgoal-goal-only-gpu-kernel-baseline.md) and [Lane A contract](../research_lanes/A_quantum_programming_runtime/GOAL_ONLY_GPU_KERNEL_BASELINE_CONTRACT_2026-10-30.md)
+- [Exact pair GLE watch](../docs/literature_watch/2026-10-30-exact-pair-coordinate-generalized-langevin.md) and [contract](../research_lanes/A_quantum_programming_runtime/EXACT_GLE_PAIR_COORDINATE_ACCEPTANCE_CONTRACT_2026-10-30.md)
+- [Boson-star PINN watch](../docs/literature_watch/2026-10-30-boson-star-branch-family-pinn.md) and [contract](../research_lanes/A_quantum_programming_runtime/BOSON_STAR_BRANCH_SURROGATE_ACCEPTANCE_CONTRACT_2026-10-30.md)
+
+External literature and synthetic contract tests only. No GPU/QPU, new-law, material, fuel, fusion or finance result is promoted.
+
 ## Latest integrated delta — 2026-10-30 — Pangola carbon functional-transfer screening
 
 - [Literature watch](../docs/literature_watch/2026-10-30-pangola-carbon-thermochemical-transfer.md)

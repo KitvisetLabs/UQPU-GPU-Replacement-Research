@@ -1,5 +1,11 @@
 # Lane H — Ketskaew Chulamani / Kanusanan Pongpanna Model Strategy, Finance & Future Industries
 
+## 2026-10-30 — literature delta
+
+- [JustGoal GPU baseline](../../docs/literature_watch/2026-10-30-justgoal-goal-only-gpu-kernel-baseline.md) — external B200 result, not reproduced.
+- [Exact pair-coordinate GLE](../../docs/literature_watch/2026-10-30-exact-pair-coordinate-generalized-langevin.md) — restricted harmonic-network result, not independently derived.
+- [Boson-star branch PINN](../../docs/literature_watch/2026-10-30-boson-star-branch-family-pinn.md) — surrogate over known equations, not a new physical law.
+
 ## Scope
 Strategic development, finance, staged capital allocation, One Person Business Company, AI/deep-agent operating models, future-industry roadmaps, cities/infrastructure, global networks, space and longer-horizon speculative research.
 

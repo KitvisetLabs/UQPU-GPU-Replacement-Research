@@ -1,5 +1,11 @@
 # Lane A — Quantum Programming / Workloads / Compiler / Runtime
 
+## 2026-10-30 — goal-only baseline and equation-frontier gates
+
+- [Goal-only GPU baseline contract](GOAL_ONLY_GPU_KERNEL_BASELINE_CONTRACT_2026-10-30.md), validator and 10 synthetic tests; no hardware benchmark.
+- [Exact pair GLE contract](EXACT_GLE_PAIR_COORDINATE_ACCEPTANCE_CONTRACT_2026-10-30.md); full source still required.
+- [Boson-star branch PINN contract](BOSON_STAR_BRANCH_SURROGATE_ACCEPTANCE_CONTRACT_2026-10-30.md); branch-disjoint reproduction remains open.
+
 **Priority:** #1, while all eight lanes remain active.
 
 ## Scope
