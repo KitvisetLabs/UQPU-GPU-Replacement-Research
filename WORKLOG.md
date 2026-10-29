@@ -2360,3 +2360,10 @@ Research-Sync: main
 - Starting-head Actions run 40947650656 (UQPU prototype/invariants) and 40947650479 (cold-start handoff) both completed successfully on SHA 30ec2db2c64386b07e1e6a34bcb223499508e842. New-head Actions must be checked separately. No paid QPU job was submitted.
 
 Research-Sync: main
+
+
+## README index repair — 2026-10-30
+
+The QEC decoder cycle links were added to the README Contents in the preceding commit, but the full latest-cycle section was not inserted by the automated replacement. This follow-up corrects the README ordering, labels the scaling-exponent cycle as previous, and leaves all existing history intact. The complete QEC-TRANSFER-001 report and supporting gap/contract remain the source of detail.
+
+Research-Sync: main
