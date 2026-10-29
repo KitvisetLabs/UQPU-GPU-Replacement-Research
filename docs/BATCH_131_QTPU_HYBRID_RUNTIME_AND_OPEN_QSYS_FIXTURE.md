@@ -9,7 +9,7 @@
 
 ## 1. Canonical start and governance
 
-Resolved the latest `main` dynamically; did not infer state from a fixed batch number or prior conversation. Read the charter, version invariants, goals, README, A–H Research Operating System, open-frontier directive, Kanusanan Pongpan na Model, strategic references, root directives 00/00A/01–06, main-commit sync policy, cross-lane continuous-integration protocol, Batch 130/129/128, current invariant-structure and equation-stability gaps, lane scoreboard and work-log/research-gap context. The canonical multilingual Thai, English, Chinese, Japanese, Korean and German plan links and strategic AI-agent/funding references remain preserved.
+Resolved the latest `main` dynamically; did not infer state from a fixed batch number or prior conversation. Read the charter, version invariants, goals, README, A–H Research Operating System, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, main-commit sync policy, cross-lane continuous-integration protocol, Batch 130/129/128, current invariant-structure and equation-stability gaps, lane scoreboard and work-log/research-gap context. The canonical multilingual Thai, English, Chinese, Japanese, Korean and German plan links and strategic AI-agent/funding references remain preserved.
 
 The starting combined-status query returned no status contexts for `ff2fbb5ea3fad629666a4407fe59942b86015592`. The repository connector's status response remains the available CI signal; no green result is inferred from an empty response. The container could not resolve GitHub for a fresh clone, so the committed repository test suite has not been run locally in this session. No paid QPU job was submitted.
 
