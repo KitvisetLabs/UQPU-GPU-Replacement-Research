@@ -6,16 +6,33 @@
   "base_branch": "main",
   "base_sha": "b7e7c4014f6e4e20291c3294bf032b6b6c6e2437",
   "source_branch": "research/2026-10-30-model-family-counterexample",
-  "sync_status": "PENDING_PULL_REQUEST",
+  "sync_status": "PENDING_REVIEW_MERGE_AND_MAIN_SYNC",
   "primary_owner": "A",
   "evidence_owner": "F",
   "publication_owner": "H",
-  "work_ids": ["RG-A-EQN-POWERLAW-FAMILY-001", "FND-006", "EQN-001", "EQN-002", "EQN-003", "EQN-004", "EQN-005", "EQN-006", "INV-034", "INV-035"],
+  "work_ids": [
+    "RG-A-EQN-POWERLAW-FAMILY-001",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006",
+    "INV-034",
+    "INV-035"
+  ],
   "evidence_class": "SYNTHETIC_COUNTEREXAMPLE_AND_REGRESSION_TEST_MODEL_ONLY",
   "counterexample": {
     "data_generating_family": "y = 1 + x^2",
     "assumed_fit_family": "y = a*x^mu",
-    "training_x": [1, 2, 4, 8, 16],
+    "training_x": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
     "fit_amplitude_approx": 1.6761356325731185,
     "fit_exponent_approx": 1.771168881652885,
     "log_space_r_squared_approx": 0.9944534333386912,
@@ -30,5 +47,12 @@
   "paid_qpu_jobs": 0,
   "physical_law_claim": false,
   "mission_advantage_claim": false,
-  "next_gate": "Run full tests and exact-head Actions; extend misspecification matrix and matched-budget model-family comparison."
+  "next_gate": "Run full tests and exact-head Actions; extend misspecification matrix and matched-budget model-family comparison.",
+  "pull_request": {
+    "number": 152,
+    "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/152",
+    "state": "OPEN_DRAFT",
+    "head_branch": "research/2026-10-30-model-family-counterexample",
+    "base_branch": "main"
+  }
 }
