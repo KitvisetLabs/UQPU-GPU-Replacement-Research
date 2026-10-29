@@ -2131,3 +2131,11 @@ A repository-wide source search after publication found that RISR (arXiv:2610.11
 - FND-006 advances at metadata-contract level. FND-001–005 and EQN-001–006 remain active; no new physical law or QPU advantage is claimed. BIO-001, FUS-001 and FIN-001 remain open.
 - INV-025/026/027, INV-029–035 and INV-036/037 remain preserved. All permanent 00/00A/01–06 directives, Kanusanan Pongpanna Model and six-language strategic references remain intact.
 - Starting-head CI was green; exact-head Actions for this commit must pass before CI is reported green. No paid QPU job was authorized or submitted.
+
+
+## 2026-10-29 — FND-001 thermodynamic no-go surveillance follow-up
+
+- Added a source-specific literature watch for the APS accepted paper on steady-regime measurement-only quantum heat engines (accepted 2026-10-26) and a focused FND-001 gap.
+- The source's stated no-go scope is limited to a finite-dimensional working substance, bare measurements, no feedback/thermal contact and the steady regime. Independent proof reconstruction has not been run.
+- Updated README, Batch 121, integration report and machine-readable integration record from complete fetched snapshots in one main-branch commit.
+- FND-001/FND-004 gain a source-specific negative-evidence candidate; no general quantum-computing no-go, fusion-economic result, physical-law discovery or device-energy result is claimed.

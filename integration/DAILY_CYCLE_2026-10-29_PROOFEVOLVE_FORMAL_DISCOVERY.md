@@ -25,3 +25,8 @@ The new validator checks declared metadata and graph structure only. It does not
 ## Gate
 
 Starting-head Actions were green. Exact-head Actions for the new commit must pass before this batch is CI-green. Next gate: pinned theorem-family-disjoint equal-budget comparison and independent held-out kernel-check reproduction, with failures, residual premises, timeouts and resources retained.
+
+
+## Additional same-day literature delta — FND-001/FND-004
+
+The fresh APS accepted-paper surveillance found a 2026-10-26 no-go theorem for steady-regime quantum heat engines powered purely by bare measurements under finite-dimensional, no-feedback, no-thermal-contact assumptions. Added a source-specific watch and a focused gap. This is a candidate negative constraint to reconstruct, not a reproduced theorem. It does not imply a general quantum-computing no-go or a fusion-cost conclusion.

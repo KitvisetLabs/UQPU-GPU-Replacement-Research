@@ -86,3 +86,8 @@ Starting-head Actions:
 - New exact-head Actions must be checked before declaring this batch CI-green.
 
 **Next highest-value gate:** pin the ProofEvolve source/environment and a theorem-family-disjoint corpus; compare baseline versus schema reuse under equal budgets, bind exact proof/log/statement artifacts, and independently reproduce held-out kernel-checked results. For physics-facing use, continue to require an independent physical prediction/experiment path and end-to-end engineering economics.
+
+
+## 8. Additional same-day thermodynamic no-go surveillance
+
+A second fresh literature search found the publisher-hosted APS accepted paper “No-go theorem for quantum heat engines powered purely by quantum measurements in the steady regime,” accepted 2026-10-26 (Koshihara and Yuasa; DOI 10.1103/4kmf-nzsm). A source-specific watch and RG-FND001-MEASUREMENT-ONLY-HEAT-ENGINE-001 were added after the initial Batch 121 commit. The reported no-go scope is limited to a finite-dimensional working substance driven by bare measurements without feedback or thermal contact in the steady regime. UQPU has not reconstructed the proof. The result is a negative-evidence lead for FND-001/FND-004, not a general no-go for quantum computing or a fusion-economic result.

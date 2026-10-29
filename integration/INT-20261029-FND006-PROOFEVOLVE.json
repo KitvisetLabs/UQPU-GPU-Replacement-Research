@@ -51,5 +51,19 @@
   "paid_qpu_job": false,
   "starting_head_ci": "GREEN",
   "new_commit_ci": "PENDING",
-  "next_gate": "Pinned theorem-family-disjoint equal-budget proof search and independent held-out kernel-check reproduction."
+  "next_gate": "Pinned theorem-family-disjoint equal-budget proof search and independent held-out kernel-check reproduction.",
+  "additional_literature_delta": {
+    "title": "No-go theorem for quantum heat engines powered purely by quantum measurements in the steady regime",
+    "url": "https://journals.aps.org/pra/accepted/10.1103/4kmf-nzsm",
+    "accepted": "2026-10-26",
+    "evidence_class": "PUBLISHER_HOSTED_ACCEPTED_PAPER_THEOREM_CLAIM",
+    "project_status": "INDEPENDENT_RECONSTRUCTION_NOT_RUN",
+    "related": [
+      "FND-001",
+      "FND-004",
+      "INV-034",
+      "INV-035"
+    ],
+    "scope_boundary": "Finite-dimensional working substance, bare measurements, no feedback or thermal contact, steady regime; not a general quantum-computing no-go."
+  }
 }
