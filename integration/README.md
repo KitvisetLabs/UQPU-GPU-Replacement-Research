@@ -13,6 +13,13 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — equation stability and molecular spin–photon device
+
+- [Batch 126](../docs/BATCH_126_STRUCTURAL_STABILITY_AND_SR_SEARCH_BUDGET.md) adds a normalized finite-perturbation diagnostic and bounded equation-search protocol, plus a peer-reviewed molecular spin–photon watch with separate Lane D/G replication and manufacturing gates.
+- The UQPU diagnostic is not EIC and does not prove a physical law. The Nature result is an external cryogenic single-molecule experiment, not a production chip or cost advantage.
+- The TINN literature-watch file referenced by Batch 125 and README was missing from the tree; the exact path is restored.
+- All 28 A–H lane pairs are reviewed in [INT-20261029-EQN-STRUCTURAL-STABILITY](INT-20261029-EQN-STRUCTURAL-STABILITY.json). Exact-head CI remains the acceptance gate.
+
 ## Latest integrated cycle — 2026-10-29 — equation-discovery robustness
 
 - [Batch 119](../docs/BATCH_119_AGENT_GUIDED_RESIDUAL_EQUATION_DISCOVERY_ROBUSTNESS.md), [LegoSR/RISR literature watch](../docs/literature_watch/2026-10-29-legosr-risr-equation-discovery-robustness.md), [matched-error helper](../software/uqpu-prototype/uqpu/equation_discovery_benchmark.py), [focused gap](../docs/RESEARCH_GAP_EQN_DISCOVERY_MATCHED_ROBUSTNESS_2026-10-29.md) and [integration report](DAILY_CYCLE_2026-10-29_EQUATION_DISCOVERY_ROBUSTNESS.md) add a testable robustness metric contract. LegoSR is new-to-repository; RISR is reused prior art already covered by earlier watches. External reproduction and physical validity remain open.

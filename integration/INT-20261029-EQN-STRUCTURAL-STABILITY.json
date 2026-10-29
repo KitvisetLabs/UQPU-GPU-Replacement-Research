@@ -1,0 +1,237 @@
+{
+  "schema": "uqpu-cross-lane-integration-v1",
+  "integration_id": "INT-20261029-EQN-STRUCTURAL-STABILITY",
+  "date": "2026-10-29",
+  "batch": 126,
+  "starting_main_sha": "93cc932683730308eec3bce4dcda7a1955f817c5",
+  "primary_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "code_owner_lane": "A_quantum_programming_runtime",
+  "device_owner_lane": "D_device_chip_fabrication_packaging",
+  "manufacturing_owner_lane": "G_manufacturing_equipment_factory_software",
+  "literature_owner_lane": "H_strategy_finance_future_industries",
+  "artifacts": {
+    "module": "software/uqpu-prototype/uqpu/equation_stability.py",
+    "tests": "software/uqpu-prototype/tests/test_equation_stability.py",
+    "equation_watch": "docs/literature_watch/2026-10-29-equation-structural-stability-and-search-complexity.md",
+    "molecular_watch": "docs/literature_watch/2026-10-29-single-molecule-spin-photon-interface.md",
+    "tinn_watch_restored": "docs/literature_watch/2026-10-29-time-induced-neural-networks-pde-surrogate-acceptance.md",
+    "device_contract": "research_lanes/D_device_chip_fabrication_packaging/MOLECULAR_SPIN_PHOTON_DEVICE_GATE_2026-10-29.md",
+    "manufacturing_contract": "research_lanes/G_manufacturing_equipment_factory_software/MOLECULAR_SPIN_PHOTON_PROCESS_SCALEUP_GATE_2026-10-29.md",
+    "gap_equation": "docs/RESEARCH_GAP_EQN_STRUCTURAL_STABILITY_2026-10-29.md",
+    "gap_device": "docs/RESEARCH_GAP_DG_MOLECULAR_SPIN_PHOTON_SCALING_2026-10-29.md",
+    "batch": "docs/BATCH_126_STRUCTURAL_STABILITY_AND_SR_SEARCH_BUDGET.md",
+    "integration_report": "integration/DAILY_CYCLE_2026-10-29_STRUCTURAL_STABILITY_AND_SR_SEARCH_BUDGET.md"
+  },
+  "literature": [
+    {
+      "title": "Beyond Accuracy and Complexity: The Effective Information Criterion for Structurally Stable Symbolic Regression",
+      "url": "https://proceedings.mlr.press/v306/yu26az.html",
+      "evidence": "THIRD_PARTY_METHOD_RESULT",
+      "uqpu_reproduction": false
+    },
+    {
+      "title": "How Hard Is Science?",
+      "url": "https://proceedings.mlr.press/v306/soubki26a.html",
+      "evidence": "THIRD_PARTY_COMPLEXITY_RESULT",
+      "uqpu_reproduction": false
+    },
+    {
+      "title": "A single-molecule spin–photon interface",
+      "url": "https://doi.org/10.1038/s41586-026-11147-6",
+      "published": "2026-10-28",
+      "evidence": "PEER_REVIEWED_EXPERIMENT",
+      "uqpu_reproduction": false
+    },
+    {
+      "title": "TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs",
+      "url": "https://proceedings.mlr.press/v306/dai26a.html",
+      "evidence": "THIRD_PARTY_MODEL_RESULT",
+      "uqpu_reproduction": false,
+      "repository_action": "restored missing watch path; not a new delta"
+    }
+  ],
+  "lanes": {
+    "A": "Added normalized finite-perturbation helper and six synthetic test methods; exact-head CI pending.",
+    "B": "Provider-neutral routes preserved; no target execution or paid QPU job.",
+    "C": "Declared numeric scales and state/data accounting; no readable-memory equivalence claim.",
+    "D": "Added molecular spin–photon reproduction/integration gate; not reproduced by UQPU.",
+    "E": "BIO-001/FUS-001/material gates unchanged; no commercial result.",
+    "F": "Matched search/stability budgets and cost-per-accepted-candidate boundary added.",
+    "G": "Added process-window, batch-repeatability, substrate-integration and cost-per-good-device gate.",
+    "H": "Published source watches and repaired missing TINN watch path; strategic links preserved."
+  },
+  "pair_reviews": [
+    [
+      "A<->B",
+      "INTERFACE_RELEVANT",
+      "Backend-neutral diagnostic; no provider execution."
+    ],
+    [
+      "A<->C",
+      "INTERFACE_RELEVANT",
+      "Numeric scales and state/data accounting must be consistent."
+    ],
+    [
+      "A<->D",
+      "INTERFACE_RELEVANT",
+      "Device-model equations need numeric robustness; no device claim follows."
+    ],
+    [
+      "A<->E",
+      "INTERFACE_RELEVANT",
+      "Future thermal/material surrogates need validation; no current BIO/FUS coupling."
+    ],
+    [
+      "A<->F",
+      "INTERFACE_RELEVANT",
+      "Stability and bounded search use matched resources."
+    ],
+    [
+      "A<->G",
+      "INTERFACE_RELEVANT",
+      "Process models need numeric validation before manufacturing use."
+    ],
+    [
+      "A<->H",
+      "INTERFACE_RELEVANT",
+      "Source watches and contracts preserve continuity."
+    ],
+    [
+      "B<->C",
+      "NO_DIRECT_COUPLING",
+      "No QPU target or execution."
+    ],
+    [
+      "B<->D",
+      "NO_DIRECT_COUPLING",
+      "No provider-to-device mapping."
+    ],
+    [
+      "B<->E",
+      "NO_DIRECT_COUPLING",
+      "No provider-to-material or energy interface."
+    ],
+    [
+      "B<->F",
+      "INTERFACE_RELEVANT",
+      "Provider prices and availability cannot be inferred from literature."
+    ],
+    [
+      "B<->G",
+      "NO_DIRECT_COUPLING",
+      "No provider-specific manufacturing dependency measured."
+    ],
+    [
+      "B<->H",
+      "INTERFACE_RELEVANT",
+      "No newly dated official availability/pricing change verified."
+    ],
+    [
+      "C<->D",
+      "INTERFACE_RELEVANT",
+      "Numeric precision and state representation can affect model evaluation."
+    ],
+    [
+      "C<->E",
+      "INTERFACE_RELEVANT",
+      "Future material/fusion surrogates need data and memory accounting."
+    ],
+    [
+      "C<->F",
+      "INTERFACE_RELEVANT",
+      "Normalized scales and memory/I/O belong in matched cost accounting."
+    ],
+    [
+      "C<->G",
+      "NO_DIRECT_COUPLING",
+      "No storage or memory manufacturing claim."
+    ],
+    [
+      "C<->H",
+      "INTERFACE_RELEVANT",
+      "Provenance and data boundaries recorded."
+    ],
+    [
+      "D<->E",
+      "INTERFACE_RELEVANT",
+      "Molecular device result is not a biomass/fusion result."
+    ],
+    [
+      "D<->F",
+      "INTERFACE_RELEVANT",
+      "Device comparison includes cryogenic, optical, control and lifecycle costs."
+    ],
+    [
+      "D<->G",
+      "INTERFACE_RELEVANT",
+      "Co-design separates device acceptance from process/yield scale-up."
+    ],
+    [
+      "D<->H",
+      "INTERFACE_RELEVANT",
+      "Peer-reviewed source is published with evidence boundaries."
+    ],
+    [
+      "E<->F",
+      "INTERFACE_RELEVANT",
+      "BIO-001/FUS-001 economics remain separate."
+    ],
+    [
+      "E<->G",
+      "INTERFACE_RELEVANT",
+      "No process/plant evidence; manufacturing/material links remain gated."
+    ],
+    [
+      "E<->H",
+      "INTERFACE_RELEVANT",
+      "Permanent biomass, bio-oil and fusion pillars preserved."
+    ],
+    [
+      "F<->G",
+      "INTERFACE_RELEVANT",
+      "No cost-per-good-device result; yield and resource costs required."
+    ],
+    [
+      "F<->H",
+      "INTERFACE_RELEVANT",
+      "Evidence classes and finance non-claims recorded."
+    ],
+    [
+      "G<->H",
+      "INTERFACE_RELEVANT",
+      "Manufacturing strategy preserved without inferring readiness."
+    ]
+  ],
+  "foundational": {
+    "FND-001": "ACTIVE_NO_NEW_PHYSICAL_JOULE_MEASUREMENT",
+    "FND-002": "ACTIVE_NO_NEW_GENERAL_LOWER_BOUND",
+    "FND-003": "ACTIVE_MATCHED_CONTROL_EXPERIMENT_OPEN",
+    "FND-004": "ACTIVE_NO_NEW_DEVICE_RESULT",
+    "FND-005": "ACTIVE_NO_NEW_ANOMALY_OR_CAUSAL_PARTICLE_MECHANISM",
+    "FND-006": "ADVANCED_SOFTWARE_DIAGNOSTIC_AND_BOUNDED_SEARCH_PROTOCOL_ONLY",
+    "EQN-001_to_EQN-006": "EVIDENCE_GATED_NO_NEW_PHYSICAL_LAW"
+  },
+  "invariants": {
+    "INV-025_026_027": "PRESERVED",
+    "INV-029": "NO_PHONE_PHYSICAL_COMPRESSION_MILESTONE",
+    "INV-030": "NO_PANGOLA_SUBSTITUTION_OR_TRANSMUTATION_RESULT",
+    "INV-031": "BIO001_OPEN_NOT_COMMERCIAL",
+    "INV-032": "FUS001_OPEN_NOT_COMMERCIAL",
+    "INV-033": "FIN001_OPEN_NO_MEASURED_WACC_CHANGE",
+    "INV-034": "ACTIVE_CROSS_CUTTING_FOUNDATIONAL_RESEARCH",
+    "INV-035": "ACTIVE_EQUATION_DISCOVERY_EVIDENCE_GATED",
+    "INV-036_037": "PRESERVED"
+  },
+  "provider_market_delta": "No newly dated official availability/pricing change verified in this pass.",
+  "paid_qpu_execution_authorized": false,
+  "current_head_ci_before_change": {
+    "prototype_invariants": "success",
+    "cold_start_handoff": "success"
+  },
+  "new_commit_ci": "PENDING",
+  "append_only_sync_debt": {
+    "WORKLOG": "append Batch 126 summary next sync; not rewritten in this atomic commit",
+    "RESEARCH_GAPS": "append both focused gap summaries next sync; not rewritten in this atomic commit",
+    "reason": "Large append-only files were fully inspected; avoiding partial-history replacement in this atomic write"
+  }
+}
