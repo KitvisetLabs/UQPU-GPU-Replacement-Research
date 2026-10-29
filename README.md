@@ -25,7 +25,7 @@
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — equation-discovery robustness
 
-[Batch 119](docs/BATCH_119_AGENT_GUIDED_RESIDUAL_EQUATION_DISCOVERY_ROBUSTNESS.md) records fresh official preprints on LegoSR's shared equation representation/experiment memory and RISR's residual-informed formula refinement. A dependency-free helper validates grouped holdouts and compares matched baseline/candidate errors with a worst-case regression guard. This is a metric contract with synthetic tests only; external solvers/data, physical validity, application quality and economics remain untested. Exact-head Actions are the acceptance gate.
+[Batch 119](docs/BATCH_119_AGENT_GUIDED_RESIDUAL_EQUATION_DISCOVERY_ROBUSTNESS.md) records LegoSR's shared equation representation/experiment memory as the new-to-repository literature delta; RISR is relevant prior art already indexed in earlier watches. A dependency-free helper validates grouped holdouts and compares matched baseline/candidate errors with a worst-case regression guard. This is a metric contract with synthetic tests only; external solvers/data, physical validity, application quality and economics remain untested. Exact-head Actions are the acceptance gate.
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — near-memory QUBO/RAG baseline
 
