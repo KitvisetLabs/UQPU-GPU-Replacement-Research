@@ -62,7 +62,7 @@
 
 **Batch 136:** [provenance parser guard + all-lane status](docs/BATCH_136_JSON_PROVENANCE_GUARD_AND_GENESIS_WATCH.md) · [DOE literature watch](docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md) · [integration report](integration/DAILY_CYCLE_2026-10-30_JSON_PROVENANCE_GUARD.md) · [machine-readable record](integration/INT-20261030-JSON-PROVENANCE-GUARD.json).
 
-Lane A's sparse-state-preparation provenance test now rejects duplicate JSON keys instead of silently accepting conflicting evidence fields. The DOE Genesis Mission Frameworks report (2026-09-25) is recorded as an official strategy-level source for AI/HPC/quantum integration, fusion engineering, materials/recycling and bioeconomy—not as experimental or commercial proof. Exact-head CI is pending; no state-preparation reproduction or paid QPU job is claimed.
+Lane A's sparse-state-preparation provenance test now rejects duplicate JSON keys instead of silently accepting conflicting evidence fields. The DOE Genesis Mission Frameworks report (2026-09-25) is recorded as an official strategy-level source for AI/HPC/quantum integration, fusion engineering, materials/recycling and bioeconomy—not as experimental or commercial proof. Provider surveillance found no authoritative, dated access/pricing change to justify changing the provider matrix. Exact-head CI is pending; no state-preparation reproduction or paid QPU job is claimed.
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — open-system toy oracle and qTPU hybrid runtime
 
