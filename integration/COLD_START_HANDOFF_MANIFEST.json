@@ -1,12 +1,26 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-28T19:16:10Z",
+  "prepared_utc": "2026-10-29T18:09:35Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "6eafdd40f73c4db40fc78ec553bb8eb426c156ff",
+  "canonical_start_sha": "2ac2cb6e0e4df8551ddbd95edfcf864100bc82e0",
   "priority_lane": "A",
-  "current_frontier": "Batch 110 (2026-10-29): higher-order parity-QAOA prototype and exact small-instance certificate added; dense-statevector regression test included. Matched direct-versus-parity benchmark and independent SDK/target checks remain open. Batch 109 AI formal-discovery and Batch 108 quEStab audits are preserved. No paid QPU job, real-QPU advantage, new physical law, accepted fuel, net fusion electricity or financing-rate claim.",
+  "current_frontier": "Batch 137 (2026-10-30): add a guarded classical log-linear baseline for the restricted positive power-law model, seven synthetic tests, and an ICML 2026/PMLR scaling-exponent identifiability watch. The isolated harness passed 7/7. MSN-PINN is not reproduced, exact-head Actions are unverified, and no physical law or mission advantage is claimed. Batch 136's sparse-state provenance guard still requires exact-head CI and controlled archive/hash/dependency audit.",
   "required_reading": [
+    "docs/BATCH_137_SCALING_EXPONENT_IDENTIFIABILITY_GATE.md",
+    "docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md",
+    "research_lanes/A_quantum_programming_runtime/SCALING_EXPONENT_IDENTIFIABILITY_CONTRACT_2026-10-30.md",
+    "software/uqpu-prototype/uqpu/scaling_exponent_baseline.py",
+    "software/uqpu-prototype/tests/test_scaling_exponent_baseline.py",
+    "docs/RESEARCH_GAP_SCALING_EXPONENT_IDENTIFIABILITY_2026-10-30.md",
+    "integration/DAILY_CYCLE_2026-10-30_SCALING_EXPONENT_GATE.md",
+    "integration/INT-20261030-SCALING-EXPONENT-GATE.json",
+    "docs/BATCH_136_JSON_PROVENANCE_GUARD_AND_GENESIS_WATCH.md",
+    "docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md",
+    "integration/DAILY_CYCLE_2026-10-30_JSON_PROVENANCE_GUARD.md",
+    "docs/BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md",
+    "docs/BATCH_134_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT.md",
+    "docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md",
     "integration/DAILY_CYCLE_2026-10-29_PARITY_QAOA_IMPLEMENTATION.md",
     "software/uqpu-prototype/tests/test_parity_qaoa.py",
     "software/uqpu-prototype/uqpu/parity_qaoa.py",
@@ -208,9 +222,9 @@
   "lanes": {
     "A": {
       "owner_path": "research_lanes/A_quantum_programming_runtime",
-      "status": "EXHAUSTIVE PARITY ENCODE/DECODE TEST PASSED STARTING-HEAD CI #1972; PARITY-QAOA CIRCUIT NOT IMPLEMENTED; QUASARQ REPRODUCTION OPEN",
+      "status": "Batch 137 adds a classical log-linear power-law reference and seven synthetic tests (isolated harness 7/7); MSN-PINN reproduction and sparse-state-preparation asset reproduction remain open; exact-head CI unverified",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Implement higher-order parity-QAOA with exact small-graph objective/argmax and decoder certificates; then matched target-aware simulation. Separately pin and reproduce QuaSARQ only on Clifford/stabilizer workloads."
+      "next_gate": "Observe exact-head Actions; continue controlled sparse-state-preparation archive retrieval/hash/dependency audit and independent small-instance reproduction; then run a pinned, group-disjoint equal-budget scaling-exponent comparison."
     },
     "B": {
       "owner_path": "research_lanes/B_cloud_qpu_provider_integration",
@@ -232,15 +246,15 @@
     },
     "E": {
       "owner_path": "research_lanes/E_materials_energy_cooling_infrastructure",
-      "status": "BIO-001 AND FUS-001 REMAIN OPEN; NO ACCEPTED PANGOLA FUEL OR NET-RELIABLE FUSION ELECTRICITY RESULT",
+      "status": "BIO-001 and FUS-001 remain open; Batch 133 pyrolysis TEA and Batch 136 DOE Genesis are literature/strategy leads only; no accepted Pangola fuel or net-reliable fusion electricity result.",
       "evidence_class": "LITERATURE_ONLY",
       "next_gate": "Close dry-basis Pangola mass/energy and accepted-liquid cost; separately reproduce net-electric fusion lifecycle cost accounts."
     },
     "F": {
       "owner_path": "research_lanes/F_economics_benchmarks_evidence_integration",
-      "status": "MATCHED SIMULATOR REPRODUCTION AND TOTAL TASK-COST GATE ADDED; SOURCE MULTIPLIERS REMAIN EXTERNAL EVIDENCE",
+      "status": "Synthetic fit/reference checks and external evidence classes are separated from physical-law validity, accepted-task economics, commercial fuel/electricity and financing claims; exact-head CI is unverified.",
       "evidence_class": "SOFTWARE_CONTRACT",
-      "next_gate": "Report cost and energy per accepted correct sample with setup, host/device transfer, memory, retries, uncertainty and matched baselines."
+      "next_gate": "Verify exact-head CI, then require group-disjoint held-out comparisons and total CPU/memory/I/O/search-resource accounting before any model or economic promotion."
     },
     "G": {
       "owner_path": "research_lanes/G_manufacturing_equipment_factory_software",
@@ -250,9 +264,9 @@
     },
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
-      "status": "NEW LITERATURE WATCH AND INTEGRATION REPORT PUBLISHED; SIX-LANGUAGE MASTER-PLAN LINKS PRESERVED",
+      "status": "Batch 137 scaling-exponent watch and Batch 136 DOE Genesis strategy watch are linked from README/integration; Thai, English, Chinese, Japanese, Korean and German master-plan links and strategic AI-agent/funding references remain preserved.",
       "evidence_class": "LITERATURE_ONLY",
-      "next_gate": "Maintain handoff-ready public research; translate only independently reproduced capability/cost evidence into finance scenarios."
+      "next_gate": "Keep source-pinned publications handoff-ready; translate only independently reproduced capability/cost evidence into finance scenarios."
     }
   },
   "cross_cutting_programs": [
@@ -284,7 +298,10 @@
     "FND-003 gate-specific operator quantum-speed-limit theorem reconstruction (RG-FND003-GATE-QSL-RECONSTRUCTION-001)",
     "RG-EQN-010 predictive interval scoring and synthetic controls",
     "LIT-2026-10-01-QUASARQ",
-    "RG-A-QUASARQ-STABILIZER-REPRO-001"
+    "RG-A-QUASARQ-STABILIZER-REPRO-001",
+    "RG-A-EQN-SCALING-IDENTIFIABILITY-001",
+    "MSN-PINN source/data/license/environment reproduction",
+    "Batch 137 exact-head CI"
   ],
   "open_gates": [
     "RG-033",
@@ -327,7 +344,10 @@
     "RG-PDE-SURROGATE-001 synthetic known-solution and upstream-source reproduction gate",
     "exact-head CI for Batch 102 and cold-start handoff manifest refresh",
     "RG-A-QUASARQ-STABILIZER-REPRO-001",
-    "exact-head CI for Batch 107 and cold-start manifest refresh"
+    "exact-head CI for Batch 107 and cold-start manifest refresh",
+    "exact-head CI for Batch 137 and cold-start handoff manifest refresh",
+    "RG-A-EQN-SCALING-IDENTIFIABILITY-001: source pinning, group-disjoint matched comparison and false-discovery controls",
+    "Batch 136 sparse-state-preparation archive retrieval, MD5/SHA-256 verification, dependency audit and independent small-instance reproduction"
   ],
   "master_reference_languages": [
     "Thai",
@@ -362,11 +382,11 @@
   "paid_execution_authorized": false,
   "hazardous_testing_authorized": false,
   "branch_fork_audit_scope": "REGISTERED_AND_ACCESSIBLE_ONLY",
-  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review. Batch 078: RESEARCH_GAPS.md aggregate not rewritten because it is a large append-only canonical file; focused RG-FND001-ERGOTROPY-PARTIAL-INFO-001 and integration record are published. Reconcile the aggregate only through safe append-only synchronization. Batch 079: RESEARCH_GAPS.md aggregate remains unchanged to avoid unsafe replacement of large append-only history; focused RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001 is canonical. Batch 078's focused ergotropy gap is also awaiting aggregate reconciliation. Batch 080: RESEARCH_GAPS.md remains unchanged because it is a large append-only canonical file; RG-FND001-QUANTUM-FEEDBACK-WORK-BOUNDARY-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 081: RESEARCH_GAPS.md remains unchanged to protect large append-only history; RG-FND003-QUANTUM-FEEDBACK-TUR-REPRODUCTION-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 083 (2026-10-28): focused RG-048 and integration record are published; WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots. Exact-head CI for the documentation sync is not observed; prior parent CI is not inherited. Batch 084 (2026-10-28): added a supplementary corpus-provenance source to focused RG-048, Batch 084, a literature watch and integration record. Aggregate RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. Starting-head exact CI passed; exact-head CI for the new documentation commit is pending observation. Batch 084 follow-up (2026-10-28): added the certified non-degenerate ML decoder-reference watch and focused gap; retained the AI-mathematical-instrument source under RG-048. The aggregate RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. Exact-head CI for this follow-up sync is pending. Batch 085 (2026-10-28): generic decoder interval scaffold and two literature watches added; large append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial snapshots. Source-level QLDPC/Lean/MPNO reproduction remains open; exact-head CI for this commit must be observed. Batch 085 CI repair: cold-start audit #1037 failed because lane A/B/C/F evidence_class values were outside the fixed audit enum. Metadata correction is being published; exact-head CI for the repair commit remains pending. SPARC watch added as external experimental-method literature only; no UQPU lab replication, no material substitution claim. README watch-count correction and CI observation sync added after SPARC watch; exact-head CI for this latest sync commit remains pending. Final Batch 085 consistency sync corrected the Lane H watch count and recorded exact-head CI observations; extended QSVT/Qiskit jobs remain open. Final metadata correction aligns MPNO author list with arXiv and names SPARC in the Batch 085 title; exact-head CI for the correction commit remains pending. FND-003 OTOC speed-limit watch added as external theorem/numerical-result surveillance; no independent reproduction or useful-output speedup claim. Batch 089 (2026-10-28): focused gate-QSL gap and integration record are published; RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. The legacy A–I manifest/lane-I directory mismatch remains open pending coordinated manifest-validator-cold-start migration. PR #144 (Batch 087) and PR #145 (pending-main summary) remain unmerged; inaccessible historical branches/forks are not claimed reconciled. A-H architecture reconciliation: eight_lane_manifest.json, cold_start_handoff.py, its tests and this handoff manifest are being aligned to exactly eight operational lanes. Historical Lane I folder and I-012 artifacts remain preserved as a legacy workstream; no historical branch/fork audit is claimed complete. Batch 091 (2026-10-28): WORKLOG.md and RESEARCH_GAPS.md were fetched as complete substantial documents and appended without truncating history. Exact-head CI remains unverified. Open PRs #144/#145 and inaccessible historical branch/fork coverage remain unresolved; no claim of full branch/fork reconciliation. Final cycle synchronization: Batch 091, focused gap, literature watch, Lane A gate, integration report, architecture-gap resolution, full-content WORKLOG/RESEARCH_GAPS appends, README and handoff manifest are present on main. Latest inspected pre-manifest-refresh head c0e4689e03f42be3af77827c1d98b052c340199f had no status contexts/workflow runs exposed; the manifest refresh commit also needs exact-head CI. PRs #144/#145 and inaccessible historical branches/forks remain unresolved. Batch 091 follow-up: AGENTS.md, the prime handoff principle, commit-sync policy, cross-lane protocol, active scoreboard and DECISIONS.md were aligned to A-H; the nine-lane scoreboard is archived. WORKLOG.md and RESEARCH_GAPS.md were fetched completely and appended again for this follow-up. Historical PRs #144/#145 and inaccessible branch/fork coverage remain unresolved. Exact-head CI remains unverified. Batch 099: starting-head cold-start audit failed solely because commit 87d3d332478fac15cf1b1dc76de54de2ff6f284d lacked Research-Sync: main. Batch 099 commit includes the trailer; exact-head validation pending. Historical branches/forks remain unexhaustively reconciled. Batch 102 (2026-10-28): added software/uqpu-prototype/uqpu/pde_surrogate_metrics.py, nine synthetic unit tests, a Lane A acceptance contract, PMLR literature watch and integration report. Root RESEARCH_GAPS.md and WORKLOG.md were not rewritten wholesale; focused RG-PDE-SURROGATE-001 remains in docs/BATCH_102_CONSERVATION_AND_TEMPORAL_PDE_EVALUATION.md pending safe append-only aggregate synchronization. Exact-head CI for the manifest-refresh commit remains to be checked. Batch 107 (2026-10-29): full WORKLOG.md and RESEARCH_GAPS.md snapshots were fetched and appended without truncation; starting-head Actions #1972/#1233 passed. Exact-head checks for this new commit must be observed. Historical/inaccessible branches and forks remain not exhaustively reconciled.",
-  "next_independent_action": "Check exact-head Actions for the Batch 107 commit. Then implement higher-order parity-QAOA behind the provider-neutral contract and verify it against exact small-graph objective/argmax and decoder certificates before matched target-aware simulation. In parallel, pin and reproduce a bounded QuaSARQ Clifford/stabilizer workload with exact correctness, held-out circuits, memory/I/O, energy where measurable and full cost per accepted correct sample. Keep BIO-001, FUS-001 and FIN-001 open until their separate full evidence gates pass; no paid QPU job without credentials, bounded budget and explicit consent.",
+  "known_sync_debt": "Historical and inaccessible branches/forks have not been exhaustively reconciled; do not claim full coverage. Poincare watch PR #140 and pending sync record PR #141 have corrected pending-main trailer commits f5e2885934309de7829fb6cbac004e2766297be5 and d81385a7f77be918d37e47230904c2e8b71f13bc; they remain unmerged pending exact-head core CI and review. Batch 078: RESEARCH_GAPS.md aggregate not rewritten because it is a large append-only canonical file; focused RG-FND001-ERGOTROPY-PARTIAL-INFO-001 and integration record are published. Reconcile the aggregate only through safe append-only synchronization. Batch 079: RESEARCH_GAPS.md aggregate remains unchanged to avoid unsafe replacement of large append-only history; focused RG-QEC-HELIOS-COLORCODE-REPRODUCTION-001 is canonical. Batch 078's focused ergotropy gap is also awaiting aggregate reconciliation. Batch 080: RESEARCH_GAPS.md remains unchanged because it is a large append-only canonical file; RG-FND001-QUANTUM-FEEDBACK-WORK-BOUNDARY-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 081: RESEARCH_GAPS.md remains unchanged to protect large append-only history; RG-FND003-QUANTUM-FEEDBACK-TUR-REPRODUCTION-001 is the focused canonical gap. Aggregate synchronization debt remains open for a safe append-only reconciliation. Batch 083 (2026-10-28): focused RG-048 and integration record are published; WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots. Exact-head CI for the documentation sync is not observed; prior parent CI is not inherited. Batch 084 (2026-10-28): added a supplementary corpus-provenance source to focused RG-048, Batch 084, a literature watch and integration record. Aggregate RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. Starting-head exact CI passed; exact-head CI for the new documentation commit is pending observation. Batch 084 follow-up (2026-10-28): added the certified non-degenerate ML decoder-reference watch and focused gap; retained the AI-mathematical-instrument source under RG-048. The aggregate RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. Exact-head CI for this follow-up sync is pending. Batch 085 (2026-10-28): generic decoder interval scaffold and two literature watches added; large append-only RESEARCH_GAPS.md and WORKLOG.md were not rewritten from partial snapshots. Source-level QLDPC/Lean/MPNO reproduction remains open; exact-head CI for this commit must be observed. Batch 085 CI repair: cold-start audit #1037 failed because lane A/B/C/F evidence_class values were outside the fixed audit enum. Metadata correction is being published; exact-head CI for the repair commit remains pending. SPARC watch added as external experimental-method literature only; no UQPU lab replication, no material substitution claim. README watch-count correction and CI observation sync added after SPARC watch; exact-head CI for this latest sync commit remains pending. Final Batch 085 consistency sync corrected the Lane H watch count and recorded exact-head CI observations; extended QSVT/Qiskit jobs remain open. Final metadata correction aligns MPNO author list with arXiv and names SPARC in the Batch 085 title; exact-head CI for the correction commit remains pending. FND-003 OTOC speed-limit watch added as external theorem/numerical-result surveillance; no independent reproduction or useful-output speedup claim. Batch 089 (2026-10-28): focused gate-QSL gap and integration record are published; RESEARCH_GAPS.md and WORKLOG.md remain unchanged to protect append-only history. The legacy A–I manifest/lane-I directory mismatch remains open pending coordinated manifest-validator-cold-start migration. PR #144 (Batch 087) and PR #145 (pending-main summary) remain unmerged; inaccessible historical branches/forks are not claimed reconciled. A-H architecture reconciliation: eight_lane_manifest.json, cold_start_handoff.py, its tests and this handoff manifest are being aligned to exactly eight operational lanes. Historical Lane I folder and I-012 artifacts remain preserved as a legacy workstream; no historical branch/fork audit is claimed complete. Batch 091 (2026-10-28): WORKLOG.md and RESEARCH_GAPS.md were fetched as complete substantial documents and appended without truncating history. Exact-head CI remains unverified. Open PRs #144/#145 and inaccessible historical branch/fork coverage remain unresolved; no claim of full branch/fork reconciliation. Final cycle synchronization: Batch 091, focused gap, literature watch, Lane A gate, integration report, architecture-gap resolution, full-content WORKLOG/RESEARCH_GAPS appends, README and handoff manifest are present on main. Latest inspected pre-manifest-refresh head c0e4689e03f42be3af77827c1d98b052c340199f had no status contexts/workflow runs exposed; the manifest refresh commit also needs exact-head CI. PRs #144/#145 and inaccessible historical branches/forks remain unresolved. Batch 091 follow-up: AGENTS.md, the prime handoff principle, commit-sync policy, cross-lane protocol, active scoreboard and DECISIONS.md were aligned to A-H; the nine-lane scoreboard is archived. WORKLOG.md and RESEARCH_GAPS.md were fetched completely and appended again for this follow-up. Historical PRs #144/#145 and inaccessible branch/fork coverage remain unresolved. Exact-head CI remains unverified. Batch 099: starting-head cold-start audit failed solely because commit 87d3d332478fac15cf1b1dc76de54de2ff6f284d lacked Research-Sync: main. Batch 099 commit includes the trailer; exact-head validation pending. Historical branches/forks remain unexhaustively reconciled. Batch 102 (2026-10-28): added software/uqpu-prototype/uqpu/pde_surrogate_metrics.py, nine synthetic unit tests, a Lane A acceptance contract, PMLR literature watch and integration report. Root RESEARCH_GAPS.md and WORKLOG.md were not rewritten wholesale; focused RG-PDE-SURROGATE-001 remains in docs/BATCH_102_CONSERVATION_AND_TEMPORAL_PDE_EVALUATION.md pending safe append-only aggregate synchronization. Exact-head CI for the manifest-refresh commit remains to be checked. Batch 107 (2026-10-29): full WORKLOG.md and RESEARCH_GAPS.md snapshots were fetched and appended without truncation; starting-head Actions #1972/#1233 passed. Exact-head checks for this new commit must be observed. Historical/inaccessible branches and forks remain not exhaustively reconciled. Batch 137 (2026-10-30): focused scaling-exponent gap, Batch 137, source watch, Lane A contract, code/tests, integration report/record and README links are published; RESEARCH_GAPS.md and WORKLOG.md remain untouched to protect large append-only history pending safe aggregate reconciliation. Exact-head CI for the new cycle is unverified because the combined-status endpoint returned no contexts and the available workflow-run endpoint returned no runs.",
+  "next_independent_action": "Resolve main dynamically. First observe exact-head core/invariant and cold-start Actions for the latest main SHA; the last combined-status endpoint returned no status contexts, so do not infer green CI. Then continue the Lane A Priority-1 computing path: exact-output workload contracts, QUBO/QAOA or other algorithms, exact/reference certificates, competitive CPU/GPU/NPU baselines, provider-neutral lowering and SDK checks, target-aware simulation, and only explicitly authorized bounded real-QPU execution. In parallel, pin MSN-PINN source/data/license/environment and run a group-disjoint equal-budget scaling-exponent benchmark with model-misspecification, counterexample and false-discovery controls; continue the sparse-state-preparation asset audit. Keep BIO-001, FUS-001 and FIN-001 open until separate full evidence gates pass. No paid QPU job without credentials, bounded budget and explicit consent.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
-  "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-29_GPU_STABILIZER_SIMULATION_AND_PARITY_QAOA.md",
-  "latest_literature_watch": "docs/literature_watch/2026-10-29-gpu-accelerated-stabilizer-simulation.md",
+  "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-30_SCALING_EXPONENT_GATE.md",
+  "latest_literature_watch": "docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md",
   "last_cycle_ci_observation": {
     "initial_commit": "6742ac1b9bf68b5d0a726f582efa0b5de7bda001",
     "initial_cold_start_run": 40454588726,
@@ -423,23 +443,23 @@
     "note": "Core/invariant workflow passed on the Batch 107 starting head; the new Batch 107 commit requires exact-head validation."
   },
   "current_head_validation": {
-    "commit": "6eafdd40f73c4db40fc78ec553bb8eb426c156ff",
-    "core_conclusion": "in_progress",
-    "cold_start_conclusion": "success",
-    "observed_at_utc": "2026-10-28T19:16:10Z",
-    "note": "The Batch 110 starting-head core/invariant workflow was still running at this observation; its cold-start audit passed. The new prototype commit requires its own exact-head checks."
+    "commit": "2ac2cb6e0e4df8551ddbd95edfcf864100bc82e0",
+    "core_conclusion": "UNVERIFIED_NO_STATUS_CONTEXTS",
+    "cold_start_conclusion": "UNVERIFIED_NO_WORKFLOW_RUNS_EXPOSED",
+    "observed_at_utc": "2026-10-29T18:09:35Z",
+    "note": "Observation applies to the pre-manifest-refresh main head. The exact-head Actions state is not confirmed; the manifest-refresh commit creates a new head and must itself be checked."
   },
   "latest_cycle_ci_observation": {
-    "starting_commit": "6eafdd40f73c4db40fc78ec553bb8eb426c156ff",
-    "core_status": "in_progress",
-    "core_run_id": 40752450559,
-    "cold_start_status": "success",
-    "cold_start_run_id": 40752450453,
-    "observed_at_utc": "2026-10-28T19:16:10Z",
-    "note": "Core/invariant run was still in progress on the Batch 110 starting SHA; handoff audit passed. Validate the new commit separately."
+    "starting_commit": "2ac2cb6e0e4df8551ddbd95edfcf864100bc82e0",
+    "core_status": "UNVERIFIED_NO_STATUS_CONTEXTS",
+    "cold_start_status": "UNVERIFIED_NO_WORKFLOW_RUNS_EXPOSED",
+    "observed_at_utc": "2026-10-29T18:09:35Z",
+    "note": "The combined commit-status endpoint returned no status contexts for this head. The available workflow-run wrapper returned no runs and only exposes PR-triggered runs. This is not a green result. The handoff-manifest refresh commit itself requires exact-head validation."
   },
-  "latest_batch": "Batch 110 — higher-order parity-QAOA prototype and exact reference certificate; see docs/BATCH_110_PARITY_QAOA_CIRCUIT_AND_REFERENCE_CERTIFICATE.md",
+  "latest_batch": "Batch 137 — scaling-exponent identifiability and known-law reference gate; see docs/BATCH_137_SCALING_EXPONENT_IDENTIFIABILITY_GATE.md",
   "latest_literature_watches": [
+    "docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md",
+    "docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md",
     "docs/literature_watch/2026-10-29-ai-open-ended-theorem-discovery-and-physics-formalization.md",
     "docs/literature_watch/2026-10-29-questab-extended-tableau-multigpu-audit.md",
     "docs/literature_watch/2026-10-29-gpu-accelerated-stabilizer-simulation.md",
