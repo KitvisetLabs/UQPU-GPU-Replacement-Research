@@ -26,7 +26,7 @@
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — finite equation-discovery validation
 
-[Batch 120](docs/BATCH_120_FINITE_EQUATION_METRICS_AND_EVIDENCE_GATE.md) hardens the equation-hypothesis gate against NaN/infinite, boolean and non-numeric held-out errors, with regression tests for fail-closed behavior. The external AI theorem/complexity/QFT claims announced on 2026-10-26 were already indexed in the [2026-10-28 literature watch](docs/literature_watch/2026-10-28-openai-math-complexity-qft-claims-verification-boundary.md) and [RG-EQN-009](docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md); no duplicate literature delta is counted. This is a software-contract improvement, not physical-law evidence. Exact-head CI is pending.
+[Batch 120](docs/BATCH_120_FINITE_EQUATION_METRICS_AND_EVIDENCE_GATE.md) hardens the equation-hypothesis gate against NaN/infinite, boolean and non-numeric held-out errors, with regression tests for fail-closed behavior. The external AI theorem/complexity/QFT claims announced on 2026-10-26 were already indexed in the [2026-10-28 literature watch](docs/literature_watch/2026-10-28-openai-math-complexity-qft-claims-verification-boundary.md) and [RG-EQN-009](docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md); no duplicate literature delta is counted. This is a software-contract improvement, not physical-law evidence. Exact-head Actions: Python 3.10/3.11/3.12 tests pass and the cold-start audit passes; four QSVT/Qiskit/reference jobs remain in progress, with no failures observed at the last poll.
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — equation-discovery robustness
 

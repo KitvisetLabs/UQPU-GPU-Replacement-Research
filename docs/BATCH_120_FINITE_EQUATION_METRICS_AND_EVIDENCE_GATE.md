@@ -72,7 +72,7 @@ The 100× and 100,000,000× targets, universal subsystem replacement, material s
 
 - Integration record: `integration/INT-20261029-EQN-FINITE-ERROR-VALIDATION.json`.
 - Updated the root README, integration hub, Lane A index and Lane H literature index without overwriting the living research-gap ledger or changing permanent directives.
-- Exact-head Actions for this commit are **PENDING at publication** and must be checked after the commit lands.
+- Exact-head Actions for code commit [`e67d122cae3d`](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e67d122cae3de89cef62655ab7b134e0493baf6d): cold-start handoff audit **passed** (run [#1253](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40816096743)); Python 3.10, 3.11 and 3.12 test jobs **passed** in UQPU workflow [#1992](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40816096724). At this sync, four additional QSVT/Qiskit/reference jobs remained in progress and no failures were reported.
 - No paid QPU job, real-QPU result, new physical law or commercial energy/material/economic result is claimed.
 
 **Next highest-value gate:** inspect exact-head CI; then pin and independently build the public mathematics/complexity proof artifacts under RG-EQN-009, while Lane A continues from the exact small-Hamiltonian reference to a sparse-entry access contract and held-out product-formula/qDRIFT comparison with complete state, I/O, host-compute and accepted-task accounting.

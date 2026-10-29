@@ -11,7 +11,7 @@
     "INV-034/035"
   ],
   "evidence_class": "SOFTWARE_CONTRACT_AND_REGRESSION_TESTS",
-  "status": "CI_PENDING_EXACT_HEAD",
+  "status": "CI_IN_PROGRESS_TEST_MATRIX_GREEN",
   "change": {
     "target": "software/uqpu-prototype/uqpu/equation_discovery.py::EquationHypothesis.validate",
     "defect": "Held-out errors only checked for negativity; NaN/infinity and bool values could pass the check, while non-numeric values could raise an uncontrolled comparison error.",
@@ -37,5 +37,35 @@
     "evidence_boundary": "Input validation and unit tests do not prove semantic equivalence, physical truth, theorem correctness, hardware advantage or economics."
   },
   "next_gate": "Check exact-head GitHub Actions, then pin/build public external proof artifacts under RG-EQN-009 and continue the sparse-entry/product-formula Lane A comparison.",
-  "source_watch": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+  "source_watch": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+  "ci": {
+    "code_commit": "e67d122cae3de89cef62655ab7b134e0493baf6d",
+    "cold_start_handoff": {
+      "run_id": 40816096743,
+      "run_number": 1253,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40816096743"
+    },
+    "prototype_invariants": {
+      "run_id": 40816096724,
+      "run_number": 1992,
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40816096724"
+    },
+    "python_matrix": {
+      "3.10": "success",
+      "3.11": "success",
+      "3.12": "success"
+    },
+    "remaining_jobs_in_progress": [
+      "qsvt-ten-query",
+      "qsvt-bounded-prefix",
+      "qiskit-verification",
+      "qsvt-eight-query"
+    ],
+    "failures_observed": 0,
+    "note": "Status is a snapshot at documentation sync time; recheck the workflow before claiming the complete run is green."
+  }
 }
