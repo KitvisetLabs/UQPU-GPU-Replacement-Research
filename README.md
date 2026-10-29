@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Lane E — Pangola carbon functional-transfer watch](docs/literature_watch/2026-10-30-pangola-carbon-thermochemical-transfer.md) · [focused gap](docs/RESEARCH_GAP_PANGOLA_CARBON_THERMOCHEMICAL_TRANSFER_2026-10-30.md) · [Lane E contract](research_lanes/E_materials_energy_cooling_infrastructure/PANGOLA_CARBON_THERMOCHEMICAL_TRANSFER_CONTRACT_2026-10-30.md) · [integrated cycle](integration/DAILY_CYCLE_2026-10-30_QEC_DECODER_LATENCY_AND_CROSSLANE_GATES.md)
+
 - [Cold-start sync repair](integration/COLD_START_HANDOFF_MANIFEST.json) — the previous QEC latency commit's audit failed on a missing `Research-Sync: main` trailer; this follow-up includes the trailer, reconciles required-reading and lane status, and awaits its own exact-head CI.
 
 - [QEC decoder accuracy/latency/quantization watch](docs/literature_watch/2026-10-30-qec-decoder-accuracy-latency-quantization.md) · [cross-lane cycle report](integration/DAILY_CYCLE_2026-10-30_QEC_DECODER_LATENCY_AND_CROSSLANE_GATES.md) · [QEC transfer gap](docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md) · [machine-readable record](integration/INT-20261030-QEC-DECODER-LATENCY.json)

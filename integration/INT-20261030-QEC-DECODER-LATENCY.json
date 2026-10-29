@@ -24,7 +24,7 @@
     "B": "ACTIVE: primary owner; source watch and transfer-contract refinement",
     "C": "ACTIVE: checkpoint/syndrome bytes, buffering, memory and transfer accounting required",
     "D": "ACTIVE: device/noise provenance and end-to-end timing closure required; no new device measurement",
-    "E": "BLOCKED: BIO-001 accepted-liquid and FUS-001 net-electricity evidence unchanged",
+    "E": "ACTIVE: new biomass-carbon functional-transfer watch and preregistered Pangola screening contract; no sample tested",
     "F": "ACTIVE: matched shots/DEM, confidence intervals, cost per accepted correction",
     "G": "ACTIVE: D/G co-design; synthesis and manufacturing evidence remain separate",
     "H": "ACTIVE: publication and six-language strategy preservation"
@@ -40,7 +40,7 @@
   },
   "mission_invariants": {
     "INV-029": "No Data-Center-to-One-Phone capability claim",
-    "INV-030": "Functional substitution/minimization/recovery only; no elemental transmutation",
+    "INV-030": "New literature-informed functional-transfer gate; no Pangola material substitution or elemental transmutation claim",
     "INV-031": "No accepted bio-oil/fuel cost claim",
     "INV-032": "No net fusion electricity cost claim",
     "INV-033": "No new principal/interest/WACC result",
@@ -54,9 +54,38 @@
     "No cross-source or cross-provider probability/price mixing",
     "No paid hardware submission"
   ],
-  "next_gate": "Verify source/data/model bytes and licenses, rebuild the pinned environment, reproduce one decoder baseline, then run group-disjoint quality and per-shot latency/quantization tests.",
+  "next_gate": "QEC source Gate 0 and reproduction; in parallel, select one D/G component-level target and preregister the Pangola carbon sample/property/cost test.",
   "report_path": "integration/DAILY_CYCLE_2026-10-30_QEC_DECODER_LATENCY_AND_CROSSLANE_GATES.md",
   "literature_watch_path": "docs/literature_watch/2026-10-30-qec-decoder-accuracy-latency-quantization.md",
   "focused_gap_path": "docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md",
-  "lane_contract_path": "research_lanes/B_cloud_qpu_provider_integration/MODULAR_NEURAL_DECODER_TRANSFER_CONTRACT_2026-10-30.md"
+  "lane_contract_path": "research_lanes/B_cloud_qpu_provider_integration/MODULAR_NEURAL_DECODER_TRANSFER_CONTRACT_2026-10-30.md",
+  "secondary_literature_delta": {
+    "work_item": "MAT-PANGOLA-CARBON-001",
+    "primary_lane": "E",
+    "evidence_class": "PEER_REVIEWED_EXTERNAL_STUDIES_NOT_REPRODUCED_FOR_PANGOLA",
+    "sources": [
+      {
+        "title": "Enhancing woodchip utilization through resource circulation: environmental and economic trade-offs among thermochemical pathways",
+        "date": "2026-10-11",
+        "doi": "10.1016/j.biortech.2026.136053",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42860226/",
+        "relevance": "Woodchip pathway TEA/LCA reports carbon-black-like product value as an economic driver; source-specific scenario only."
+      },
+      {
+        "title": "Metal-carbide-assisted graphitization of biomass carbon and its impact on electrical and textural properties",
+        "date": "2026-03-02",
+        "doi": "10.1016/j.biombioe.2026.109142",
+        "url": "https://oulurepo.oulu.fi/handle/10024/61213",
+        "relevance": "Spruce-bark Fe/Mo-assisted graphitization reports source-specific conductivity/structure changes; not Pangola or device qualification."
+      }
+    ],
+    "nonclaims": [
+      "No Pangola sample or process tested",
+      "No material substitution or transmutation claim",
+      "No accepted bio-oil/fuel cost result",
+      "No fusion net-electricity result",
+      "No new physical law"
+    ],
+    "next_gate": "Freeze a component-level target and reference material with D/G; preregister a dry-basis matched Pangola process/property/cost test."
+  }
 }

@@ -1,5 +1,15 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — Pangola carbon functional-transfer screening
+
+- [Literature watch](../docs/literature_watch/2026-10-30-pangola-carbon-thermochemical-transfer.md)
+- [Focused Lane E gap](../docs/RESEARCH_GAP_PANGOLA_CARBON_THERMOCHEMICAL_TRANSFER_2026-10-30.md)
+- [Lane E contract](../research_lanes/E_materials_energy_cooling_infrastructure/PANGOLA_CARBON_THERMOCHEMICAL_TRANSFER_CONTRACT_2026-10-30.md)
+- [Cross-lane cycle report](DAILY_CYCLE_2026-10-30_QEC_DECODER_LATENCY_AND_CROSSLANE_GATES.md)
+- [Machine-readable integration record](INT-20261030-QEC-DECODER-LATENCY.json)
+
+Woodchip carbonization TEA/LCA and spruce-bark graphitization are source-specific external results. The Pangola route remains untested; the next gate is a named component-level function, matched reference, dry-basis sample, property/contamination/stability measurements and full cost per accepted function.
+
 ## Latest integrated cycle — 2026-10-30 — QEC decoder latency and cross-lane acceptance gates
 
 - [Literature watch](../docs/literature_watch/2026-10-30-qec-decoder-accuracy-latency-quantization.md)
