@@ -21,6 +21,6 @@ A and F advanced at software/evidence-contract level; H recorded the surveillanc
 
 ## Acceptance and non-claims
 
-The container could not resolve GitHub for a local clone, so no local full-suite result is claimed. The exact resulting GitHub Actions run is the acceptance gate. The validator remains metadata-only; no kernel execution, physical law, QPU advantage, material/fuel/electricity advantage, lower WACC or phone-class physical-compression result is established.
+The container could not resolve GitHub for a local clone, so no local full-suite result is claimed. The exact resulting GitHub Actions run is the acceptance gate. The first cold-start audit failed because the initial Batch 122 commit lacked the required `Research-Sync: main` trailer; the audit log reported only that missing trailer. A follow-up synchronization commit includes the trailer and triggers a new exact-head audit. The validator remains metadata-only; no kernel execution, physical law, QPU advantage, material/fuel/electricity advantage, lower WACC or phone-class physical-compression result is established.
 
 The permanent root directives 00/00A/01–06, INV-025/026/027 and INV-029–037, Kanusanan Pongpanna Model, and Thai/English/Chinese/Japanese/Korean/German public plan references remain preserved.

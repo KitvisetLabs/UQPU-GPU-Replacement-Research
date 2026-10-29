@@ -56,5 +56,13 @@
   },
   "local_test_status": "NOT_RUN_CONTAINER_NETWORK_DNS_BLOCKED",
   "paid_qpu_job": false,
-  "next_gate": "Exact-head Actions, then pinned equal-budget theorem-family-disjoint proof-search comparison and independent held-out kernel-check reproduction."
+  "next_gate": "Exact-head Actions, then pinned equal-budget theorem-family-disjoint proof-search comparison and independent held-out kernel-check reproduction.",
+  "ci_followup": {
+    "initial_commit": "ae4e24896a37bf1633cfa44179e31e1cce2ed542",
+    "initial_prototype_invariants": "IN_PROGRESS_AT_FIRST_POLL",
+    "initial_cold_start_handoff": "FAILED_MISSING_REQUIRED_COMMIT_TRAILER",
+    "failure": "missing_commit_trailer:Research-Sync: main",
+    "remediation": "Create a follow-up synchronization commit whose message includes the required Research-Sync: main trailer; rerun exact-head Actions.",
+    "followup_ci": "PENDING"
+  }
 }
