@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Batch 138 — power-law model-family counterexample](docs/BATCH_138_MODEL_FAMILY_COUNTEREXAMPLE_GATE.md) · [DOE Genesis award/funding watch](docs/literature_watch/2026-10-30-doe-genesis-awards-ai-fusion-materials-quantum.md) · [regression test](software/uqpu-prototype/tests/test_scaling_exponent_baseline.py) · [focused gap](docs/RESEARCH_GAP_POWERLAW_MODEL_FAMILY_2026-10-30.md) · [integration report](integration/DAILY_CYCLE_2026-10-30_MODEL_FAMILY_COUNTEREXAMPLE.md) · [integration record](integration/INT-20261030-POWERLAW-MODEL-FAMILY.json)
+
 - [Batch 137 — scaling-exponent identifiability gate](docs/BATCH_137_SCALING_EXPONENT_IDENTIFIABILITY_GATE.md) · [literature watch](docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md) · [Lane A baseline](software/uqpu-prototype/uqpu/scaling_exponent_baseline.py) · [tests](software/uqpu-prototype/tests/test_scaling_exponent_baseline.py) · [contract](research_lanes/A_quantum_programming_runtime/SCALING_EXPONENT_IDENTIFIABILITY_CONTRACT_2026-10-30.md) · [focused gap](docs/RESEARCH_GAP_SCALING_EXPONENT_IDENTIFIABILITY_2026-10-30.md) · [integration report](integration/DAILY_CYCLE_2026-10-30_SCALING_EXPONENT_GATE.md) · [integration record](integration/INT-20261030-SCALING-EXPONENT-GATE.json) · [cold-start handoff manifest](integration/COLD_START_HANDOFF_MANIFEST.json)
 
 - [Batch 136 — JSON provenance guard and DOE Genesis watch](docs/BATCH_136_JSON_PROVENANCE_GUARD_AND_GENESIS_WATCH.md) · [literature watch](docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md) · [integration report](integration/DAILY_CYCLE_2026-10-30_JSON_PROVENANCE_GUARD.md) · [integration record](integration/INT-20261030-JSON-PROVENANCE-GUARD.json)
