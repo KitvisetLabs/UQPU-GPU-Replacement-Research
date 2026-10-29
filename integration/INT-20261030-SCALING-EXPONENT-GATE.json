@@ -1,0 +1,51 @@
+{
+  "schema": "uqpu-daily-integration-v1",
+  "cycle_date": "2026-10-30",
+  "batch": 137,
+  "work_id": "RG-A-EQN-SCALING-IDENTIFIABILITY-001",
+  "starting_main_sha": "8a5bf642f5ffffb1ceb399a3090e7ffa2c04b35d",
+  "primary_owner": "A",
+  "integration_owner": "F",
+  "publication_owner": "H",
+  "evidence_class": [
+    "SYNTHETIC_SOFTWARE_BASELINE",
+    "PEER_REVIEWED_EXTERNAL_METHOD"
+  ],
+  "source": {
+    "title": "Discovering Scaling Exponents with Physics-Informed Müntz-Szász Networks",
+    "url": "https://proceedings.mlr.press/v306/n-guessan26a.html",
+    "venue": "ICML 2026 / PMLR 306:91419-91445",
+    "reviewed": "Official publisher page and abstract",
+    "reproduction": "NOT_PERFORMED"
+  },
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/scaling_exponent_baseline.py",
+    "tests": "software/uqpu-prototype/tests/test_scaling_exponent_baseline.py",
+    "model": "Positive pure power law y = a*x^mu, fitted by log-linear ordinary least squares",
+    "local_synthetic_tests": "7/7 PASS IN ISOLATED HARNESS",
+    "repository_full_suite": "NOT_RUN",
+    "exact_head_ci": "PENDING_OBSERVATION"
+  },
+  "lanes": {
+    "A": "Reference baseline and tests added; MSN-PINN reproduction remains open.",
+    "B": "No provider/QPU execution.",
+    "C": "Data and output bytes remain distinct from quantum-state dimension and persistent storage.",
+    "D": "No device/process result.",
+    "E": "BIO-001 and FUS-001 unchanged; no fuel or net-electricity evidence.",
+    "F": "Synthetic fit is not held-out physical validity or economics.",
+    "G": "D/G co-design retained; no manufacturing result.",
+    "H": "Dated literature watch and integration record published."
+  },
+  "foundations": {
+    "FND_001_to_006": "No new physical measurement or mechanism; FND-006 reference scaffolding only.",
+    "EQN_001_to_006": "No equation promoted to physical law."
+  },
+  "invariants": {
+    "INV_025_026_027": "Preserved and evidence-gated.",
+    "INV_029_to_035": "Preserved; no mission or technology claim promoted."
+  },
+  "sync_debt": "RESEARCH_GAPS.md and WORKLOG.md not rewritten because they are large append-only canonical files; focused gap and README/integration links preserve this cycle pending safe aggregate reconciliation.",
+  "paid_qpu_job_submitted": false,
+  "mission_advantage_claimed": false,
+  "next_gate": "Observe exact-head CI, pin source implementation/data/license, then run group-disjoint equal-budget comparison with model-misspecification and false-discovery controls."
+}
