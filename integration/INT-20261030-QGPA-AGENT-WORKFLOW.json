@@ -1,0 +1,80 @@
+{
+  "schema": "uqpu-integration-record-v1",
+  "integration_id": "INT-20261030-QGPA-AGENT-WORKFLOW",
+  "date": "2026-10-30",
+  "repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "base_branch": "main",
+  "base_sha": "b7e7c4014f6e4e20291c3294bf032b6b6c6e2437",
+  "primary_owner": "A",
+  "evidence_owner": "F",
+  "publication_owner": "H",
+  "evidence_class": "OFFICIAL_PROGRAM_ANNOUNCEMENTS_AND_CONTRACT_TEMPLATE_ONLY",
+  "sources": [
+    {
+      "title": "DOE Announces Science Applications for Quantum Computing",
+      "date": "2026-10-08",
+      "url": "https://www.energy.gov/science/articles/doe-announces-science-applications-quantum-computing"
+    },
+    {
+      "title": "Genesis Agent Skills release",
+      "date": "2026-10-15",
+      "url": "https://www.energy.gov/science/articles/genesis-agent-skills-release-support-innovation-across-genesis-mission"
+    },
+    {
+      "title": "Genesis Mission Hackathon recap",
+      "date": "2026-10-21",
+      "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/articles/genesis-mission-hackathon-brings-research"
+    }
+  ],
+  "outputs": [
+    "docs/literature_watch/2026-10-30-doe-qgpa-agent-workflow-surveillance.md",
+    "research_lanes/A_quantum_programming_runtime/DOE_QGPA_DOMAIN_CONTRACT_MAP_2026-10-30.json",
+    "docs/RESEARCH_GAP_QGPA_APPLICATION_CONTRACTS_2026-10-30.md",
+    "integration/DAILY_CYCLE_2026-10-30_QGPA_AGENT_WORKFLOW_SURVEILLANCE.md"
+  ],
+  "lanes": {
+    "A": "Domain-to-contract map added; complete QGPA specs and application-level reference baselines remain open.",
+    "B": "Provider-neutral integration unchanged; no SDK/hardware run.",
+    "C": "Output/readout bytes, classical reconstruction, memory and transfer metrics remain separate.",
+    "D": "No device/process measurement; D/G co-design preserved.",
+    "E": "BIO-001 and FUS-001 unchanged; no accepted fuel, material substitution, or net-electricity evidence.",
+    "F": "Full accepted-task resource/economic fields added to the contract template; no measured economic result.",
+    "G": "No process window, yield, or cost-per-good-device result.",
+    "H": "Official program/workflow watch published; multilingual strategic links and funding context preserved."
+  },
+  "foundations": {
+    "FND_001_to_005": "No new measurement or physical mechanism.",
+    "FND_006": "Domain map may guide benchmark selection only.",
+    "EQN_001_to_006": "No equation promoted; full generator-to-independent-validation pipeline remains mandatory."
+  },
+  "invariants": {
+    "INV_025_026_027": "Preserved; moonshots remain falsifiable and evidence-gated.",
+    "INV_029_to_035": "Preserved; no mission, physical-law, fuel, fusion, material, finance, or QPU-advantage claim promoted."
+  },
+  "ci": {
+    "starting_main_sha": "b7e7c4014f6e4e20291c3294bf032b6b6c6e2437",
+    "core_run": {
+      "id": 40928374378,
+      "number": 2047,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40928374378"
+    },
+    "cold_start_run": {
+      "id": 40937229540,
+      "number": 1344,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40937229540"
+    },
+    "combined_status_endpoint": "EMPTY_STATUS_CONTEXTS",
+    "new_commit_exact_head": "PENDING"
+  },
+  "sync_debt": {
+    "append_only": "RESEARCH_GAPS.md and WORKLOG.md not rewritten; focused gap and integration artifacts preserve this delta.",
+    "pending_batch_138": "PR #152 is draft/open and not merged.",
+    "pending_sync_pr": "PR #153 cold-start audit #1346 failed for missing Research-Sync: pending-main trailer; repair required before handoff audit can pass."
+  },
+  "paid_qpu_job_submitted": false,
+  "external_code_imported": false,
+  "mission_advantage_claimed": false,
+  "next_gate": "Obtain complete QGPA specs, define one exact/reference workload contract and classical baselines, then run simulator/dry-run and independent validation before any explicitly authorized paid QPU execution."
+}

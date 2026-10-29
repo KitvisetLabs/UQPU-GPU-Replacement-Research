@@ -1,0 +1,157 @@
+{
+  "schema": "uqpu-qgpa-domain-contract-map-v1",
+  "date": "2026-10-30",
+  "primary_owner": "A",
+  "integration_owner": "F",
+  "publication_owner": "H",
+  "evidence_class": "OFFICIAL_PROGRAM_ANNOUNCEMENT_DOMAIN_MAP_ONLY",
+  "source": {
+    "title": "DOE Announces Science Applications for Quantum Computing",
+    "date": "2026-10-08",
+    "url": "https://www.energy.gov/science/articles/doe-announces-science-applications-quantum-computing",
+    "source_scope": "Announcement says eight applications across four domains but does not enumerate the complete application-level specifications in the article body."
+  },
+  "companion_sources": [
+    {
+      "title": "Genesis Agent Skills release",
+      "date": "2026-10-15",
+      "url": "https://www.energy.gov/science/articles/genesis-agent-skills-release-support-innovation-across-genesis-mission"
+    },
+    {
+      "title": "Genesis Mission Hackathon recap",
+      "date": "2026-10-21",
+      "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/articles/genesis-mission-hackathon-brings-research"
+    }
+  ],
+  "scope_warning": "This is a contract template for four source-listed domains, not a complete list of the eight QGPAs. Do not infer missing application names or benchmark targets.",
+  "common_acceptance_fields": [
+    "application_spec_version_and_source_hash",
+    "input_dataset_source_license_and_hash",
+    "frozen_train_validation_test_group_manifest",
+    "accepted_scientific_output_and_tolerance",
+    "exact_reference_or_bound_certificate",
+    "competitive_cpu_gpu_npu_baseline_and_versions",
+    "algorithm_compiler_runtime_sdk_and_target",
+    "latency_throughput_and_quality",
+    "shots_billable_usage_retries_and_failures_when_applicable",
+    "peak_host_device_memory_state_representation_and_reconstruction",
+    "input_output_bytes_and_transfer_time",
+    "host_compute_and_energy_when_measurable",
+    "pricing_provenance_bound_to_the_same_provider_target",
+    "total_cost_per_accepted_useful_task",
+    "uncertainty_and_independent_replication_status"
+  ],
+  "domains": [
+    {
+      "id": "QGPA-DOMAIN-CHEMISTRY",
+      "name": "Chemistry",
+      "source_scope": "Reaction mechanisms and dynamics in complicated chemical systems, including light-sensitive processes.",
+      "status": "DOMAIN_MAP_ONLY_APPLICATION_SPEC_REQUIRED",
+      "relevant_lanes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "H"
+      ]
+    },
+    {
+      "id": "QGPA-DOMAIN-MATERIALS",
+      "name": "Materials",
+      "source_scope": "Ground states and dynamics of quantum materials and materials in extreme environments, including topological or superconducting systems.",
+      "status": "DOMAIN_MAP_ONLY_APPLICATION_SPEC_REQUIRED",
+      "relevant_lanes": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ]
+    },
+    {
+      "id": "QGPA-DOMAIN-SUBATOMIC-PHYSICS",
+      "name": "Subatomic physics",
+      "source_scope": "Interactions underlying protons and neutrons, nuclear structure, and matter at high density such as fusion reactions.",
+      "status": "DOMAIN_MAP_ONLY_APPLICATION_SPEC_REQUIRED",
+      "relevant_lanes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ]
+    },
+    {
+      "id": "QGPA-DOMAIN-APPLIED-MATHEMATICS",
+      "name": "Applied mathematics",
+      "source_scope": "Systems of linear and differential equations used across scientific disciplines.",
+      "status": "DOMAIN_MAP_ONLY_APPLICATION_SPEC_REQUIRED",
+      "relevant_lanes": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "H"
+      ]
+    }
+  ],
+  "provider_neutrality": {
+    "providers_to_keep_in_scope": [
+      "IBM Quantum",
+      "Amazon Braket",
+      "Azure Quantum/providers",
+      "IonQ",
+      "Rigetti QCS",
+      "D-Wave Leap",
+      "IQM",
+      "Quantinuum",
+      "Pasqal",
+      "QuEra",
+      "Quandela",
+      "OQC"
+    ],
+    "rule": "Provider inclusion is a compatibility target, not a statement that credentials, access, price, or a specific workload is available.",
+    "paid_qpu_execution_authorized": false
+  },
+  "cross_cutting": {
+    "invariants": [
+      "INV-025",
+      "INV-026",
+      "INV-027",
+      "INV-029",
+      "INV-030",
+      "INV-031",
+      "INV-032",
+      "INV-033",
+      "INV-034",
+      "INV-035"
+    ],
+    "foundations": [
+      "FND-001",
+      "FND-002",
+      "FND-003",
+      "FND-004",
+      "FND-005",
+      "FND-006",
+      "EQN-001",
+      "EQN-002",
+      "EQN-003",
+      "EQN-004",
+      "EQN-005",
+      "EQN-006"
+    ],
+    "energy_finance_tracks": [
+      "BIO-001",
+      "FUS-001",
+      "FIN-001"
+    ],
+    "rule": "Program announcements and external workflow tools cannot be promoted to UQPU experimental or commercial evidence."
+  },
+  "next_gate": "Obtain the complete official QGPA specifications; map each named application to an accepted-output contract and reference baseline; then select one bounded workload for exact/simulator validation."
+}

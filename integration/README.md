@@ -1,5 +1,15 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated cycle — 2026-10-30 — Quantum Genesis application contracts and scientific-agent workflow surveillance
+
+- [Literature watch](../docs/literature_watch/2026-10-30-doe-qgpa-agent-workflow-surveillance.md)
+- [Lane A domain contract map](../research_lanes/A_quantum_programming_runtime/DOE_QGPA_DOMAIN_CONTRACT_MAP_2026-10-30.json)
+- [Focused gap](../docs/RESEARCH_GAP_QGPA_APPLICATION_CONTRACTS_2026-10-30.md)
+- [Cycle report](DAILY_CYCLE_2026-10-30_QGPA_AGENT_WORKFLOW_SURVEILLANCE.md)
+- [Machine-readable record](INT-20261030-QGPA-AGENT-WORKFLOW.json)
+
+The official DOE announcements provide domain and workflow context only. The contract map deliberately does not infer the eight application-level specifications that are absent from the announcement body. No UQPU result or physical/economic advantage is promoted.
+
 ## Latest integrated cycle — 2026-10-30 — scaling-exponent identifiability gate
 
 - [Batch 137](../docs/BATCH_137_SCALING_EXPONENT_IDENTIFIABILITY_GATE.md)
