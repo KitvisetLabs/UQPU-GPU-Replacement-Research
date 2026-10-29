@@ -2347,3 +2347,16 @@ Research-Sync: main
 - Starting-head combined-status API returned no status records; exact-head CI is pending. The test change is on the research branch; no local full-suite run is claimed. No paid QPU job was submitted.
 
 Research-Sync: main
+
+
+## Daily Eight-Lane research cycle — 2026-10-30 — modular neural QEC decoder transfer gate
+
+- Starting canonical main SHA: 30ec2db2c64386b07e1e6a34bcb223499508e842; work item QEC-TRANSFER-001; the latest committed main batch was 137. Batch 138 is present only as draft PR #152, so this run used date-scoped artifacts instead of assuming a new canonical batch number.
+- Fresh surveillance reviewed equation discovery, formal theorem discovery, physics-informed modeling, experimental design, QEC workload research, biomass conversion, fusion and finance. AI-Newton, DC-PINN and SymbolFit were already represented in the repository's literature trail; the new-to-main result selected here is Lange et al., arXiv:2610.03869, a modular neural surface-code decoder spanning memory, stability and lattice-surgery tasks.
+- Pinned the observed upstream source repository head afd6e170feb72f7bc99f4fd14cf1495c2731cf5c and recorded its declared MIT code license, CC-BY-4.0 model/IBM-data license and public Zenodo data leads. The actual model/data bytes remain unverified and no source result was reproduced.
+- Added a literature watch, a focused QEC transfer gap, a Lane B contract, a daily A–H integration report and a machine-readable handoff. Updated README, WORKLOG and RESEARCH_GAPS in the same commit.
+- A–H: A logical-output acceptance; B provider/device provenance; C syndrome/checkpoint/transfer bytes and memory; D hardware/noise mapping; E BIO-001/FUS-001 gates rechecked with no new fuel/electricity/material evidence; F uncertainty and full cost per accepted logical correction; G future decoder timing/memory/power constraints; H publication and cold-start continuity.
+- FND-001–006 and EQN-001–006 remain preserved. No new theorem, equation, physical law, real-QPU advantage or physical-limit revision is claimed. INV-025/026/027 and INV-029–035 remain intact; all north-star, material, bio-oil, fusion and finance goals remain evidence-gated.
+- Starting-head Actions run 40947650656 (UQPU prototype/invariants) and 40947650479 (cold-start handoff) both completed successfully on SHA 30ec2db2c64386b07e1e6a34bcb223499508e842. New-head Actions must be checked separately. No paid QPU job was submitted.
+
+Research-Sync: main

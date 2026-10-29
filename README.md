@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Modular neural QEC decoder transfer gate](integration/DAILY_CYCLE_2026-10-30_MODULAR_NEURAL_QEC_DECODER.md) · [literature watch](docs/literature_watch/2026-10-30-modular-neural-qec-decoder-transfer.md) · [focused gap](docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md) · [Lane B contract](research_lanes/B_cloud_qpu_provider_integration/MODULAR_NEURAL_DECODER_TRANSFER_CONTRACT_2026-10-30.md) · [machine-readable handoff](integration/INT-20261030-NEURAL-QEC-DECODER.json)
+
 - [Derivative-constrained PINN literature watch](docs/literature_watch/2026-10-30-derivative-constrained-pinns-equation-discovery.md) · [focused reproduction gap](docs/RESEARCH_GAP_DCPINN_REPRODUCTION_2026-10-30.md) · [official APS source](https://doi.org/10.1103/5bbf-p6zk)
 - [Daily cycle — DOE Quantum Genesis application contracts and scientific-agent workflow surveillance](integration/DAILY_CYCLE_2026-10-30_QGPA_AGENT_WORKFLOW_SURVEILLANCE.md) · [literature watch](docs/literature_watch/2026-10-30-doe-qgpa-agent-workflow-surveillance.md) · [Lane A domain contract map](research_lanes/A_quantum_programming_runtime/DOE_QGPA_DOMAIN_CONTRACT_MAP_2026-10-30.json) · [focused gap](docs/RESEARCH_GAP_QGPA_APPLICATION_CONTRACTS_2026-10-30.md) · [machine-readable record](integration/INT-20261030-QGPA-AGENT-WORKFLOW.json) · [Batch 138 draft PR #152](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/152)
 

@@ -1389,3 +1389,18 @@ Teretenkov, Kuznetsov & Pechen, *Physical Review A* 114, 043115 (published 2026-
 ## Cycle update — 2026-10-29 — RG-STATEPREP-TOFFOLI-001 asset provenance
 
 The existing [sparse state-preparation Toffoli-model gap](docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md) now links a source-asset preflight manifest and regression test. The official Zenodo record metadata and publisher-reported MD5 are recorded, along with the Apache-2.0 code license and the upstream `nbconvert <= 7.16.6` dependency-security warning. The ZIP could not be retrieved in this run; the local checksum, dependency audit, upstream tests and independent small-instance reproduction remain NOT DONE. This is an update to the existing gap, not a duplicate research claim. See [Batch 135](docs/BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md).
+
+
+## Cycle update — 2026-10-30 — QEC-TRANSFER-001 modular neural decoder
+
+**Status:** SOURCE PINNED / DATA RETRIEVAL AND REPRODUCTION NOT RUN.  
+**Primary gap:** docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md  
+**Literature watch:** docs/literature_watch/2026-10-30-modular-neural-qec-decoder-transfer.md  
+**Lane contract:** research_lanes/B_cloud_qpu_provider_integration/MODULAR_NEURAL_DECODER_TRANSFER_CONTRACT_2026-10-30.md  
+**Integration report:** integration/DAILY_CYCLE_2026-10-30_MODULAR_NEURAL_QEC_DECODER.md
+
+Lange et al., arXiv:2610.03869, report a modular neural decoder evaluated on IBM/Google surface-code records for memory, X-stability and ZZ lattice surgery. The public code repository and data routes were inspected; the observed upstream commit is afd6e170feb72f7bc99f4fd14cf1495c2731cf5c. Asset bytes and hashes have not been verified and UQPU has not reproduced any metric. The source explicitly reports no latency or throughput benchmarks.
+
+**Next gate:** verify source/model/data licenses and SHA-256, reconstruct the pinned environment, reproduce released-model and MWPM metrics on identical shots, then preregister group-disjoint device/operation/noise holdouts and target-specific latency/throughput/cost measurement. No paid QPU job is needed or authorized.
+
+**Nonclaims:** no real-QPU advantage, universal decoder portability, new physical law, readable-memory equivalence, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone feasibility is established.

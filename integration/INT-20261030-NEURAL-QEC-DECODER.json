@@ -1,0 +1,95 @@
+{
+  "schema": "uqpu-daily-integration-record-v1",
+  "cycle_date": "2026-10-30",
+  "starting_main_sha": "30ec2db2c64386b07e1e6a34bcb223499508e842",
+  "starting_tree_sha": "a17c719832ad2c3cd43cdd715a1d352813bbd025",
+  "primary_work_item": {
+    "id": "QEC-TRANSFER-001",
+    "primary_lane": "B",
+    "interfaces": [
+      "A",
+      "C",
+      "D",
+      "F",
+      "G",
+      "H"
+    ],
+    "status": "READY_FOR_REPRODUCTION_PREFLIGHT",
+    "evidence_class": "EXTERNAL_PREPRINT_AND_PUBLIC_CODE_DATA_REFERENCES_PROJECT_CONTRACT_ONLY",
+    "reproduction_status": "NOT_RUN",
+    "paid_qpu_submitted": false
+  },
+  "external_source": {
+    "paper": "https://arxiv.org/abs/2610.03869",
+    "paper_submission_date": "2026-10-02",
+    "code_repository": "https://github.com/LangeMoritz/modular-gnn-rnn-decoder",
+    "observed_upstream_commit": "afd6e170feb72f7bc99f4fd14cf1495c2731cf5c",
+    "code_license": "MIT",
+    "model_and_ibm_data_license_as_declared_upstream": "CC-BY-4.0",
+    "google_data_doi": "10.5281/zenodo.13273331",
+    "model_ibm_data_doi": "10.5281/zenodo.23335425",
+    "asset_hashes_verified_by_uqpu": false
+  },
+  "acceptance": {
+    "identical_shots_for_neural_and_mwpm": true,
+    "task_specific_labels": [
+      "logical_memory",
+      "x_stability",
+      "zz_lattice_surgery_merge"
+    ],
+    "group_disjoint_holdouts": [
+      "device_or_patch",
+      "operation",
+      "noise_or_measurement_regime"
+    ],
+    "metrics": [
+      "logical_error_rate_with_uncertainty",
+      "task_specific_parity_or_correlation",
+      "latency_p50_p95_p99",
+      "sustained_throughput_vs_declared_syndrome_cadence",
+      "training_and_inference_wall_time",
+      "peak_ram_vram",
+      "syndrome_checkpoint_and_output_bytes",
+      "host_device_transfer",
+      "energy_if_measured",
+      "cost_per_accepted_logical_correction",
+      "failed_runs_retries_and_missing_shots"
+    ],
+    "stop_if": [
+      "source_results_not_reproduced",
+      "unequal_shots_or_decoder_information",
+      "held_out_gain_disappears",
+      "target_cadence_missed",
+      "uncertainty_or_resource_cost_erases_gain",
+      "asset_provenance_or_split_disjointness_unverified"
+    ]
+  },
+  "lane_status": {
+    "A": "ACTIVE: workload acceptance contract added; existing scaling-exponent baseline unchanged",
+    "B": "ACTIVE: primary owner; public-data source path and provider provenance contract added",
+    "C": "ACTIVE: syndrome/checkpoint/transfer/memory accounting required",
+    "D": "ACTIVE: device/noise provenance; no new hardware measurement",
+    "E": "REVIEWED: BIO-001/FUS-001 gates unchanged; no new fuel/electricity/material evidence",
+    "F": "ACTIVE: matched output/uncertainty/full-cost acceptance required",
+    "G": "ACTIVE: decoder timing/memory/power constraints remain future measured design inputs",
+    "H": "ACTIVE: literature watch and cold-start handoff recorded"
+  },
+  "foundations": {
+    "FND_001_to_006": "Preserved; no new foundational measurement or theorem promoted",
+    "EQN_001_to_006": "Preserved; literature surveillance updated; no new equation promoted",
+    "INV_029_to_035": "Preserved; all claims remain evidence-gated",
+    "INV_025_026_027": "Preserved"
+  },
+  "ci_before_commit": {
+    "prototype_workflow_run": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40947650656",
+    "cold_start_workflow_run": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40947650479",
+    "conclusion": "SUCCESS",
+    "combined_status_contexts": "EMPTY"
+  },
+  "ci_after_commit": "PENDING_CHECK",
+  "sync_debt": [
+    "External source/data/model asset retrieval and SHA-256 verification",
+    "QEC decoder reproduction and group-disjoint generalization",
+    "Exact-head Actions for this commit"
+  ]
+}
