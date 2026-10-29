@@ -54,3 +54,10 @@ Special projects may add `algorithms/`, `compiler/`, `runtime/`, `workloads/`, `
 ## Duplicate-key JSON provenance guard — 2026-10-30
 
 The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The associated regression test now parses with an `object_pairs_hook` that rejects repeated keys recursively and includes a synthetic conflicting-`evidence_class` test. This prevents silent last-key-wins ambiguity in future evidence manifests. It does not verify downloaded bytes, source checksums, dependencies, the external circuit, physical resources or economics. See [Batch 136](../../docs/BATCH_136_JSON_PROVENANCE_GUARD_AND_GENESIS_WATCH.md) and [integration report](../../integration/DAILY_CYCLE_2026-10-30_JSON_PROVENANCE_GUARD.md).
+
+
+## Scaling-exponent identifiability gate — 2026-10-30
+
+- [Reference baseline](../../software/uqpu-prototype/uqpu/scaling_exponent_baseline.py) and [seven synthetic tests](../../software/uqpu-prototype/tests/test_scaling_exponent_baseline.py) cover exact positive power-law recovery, held-out-scale prediction, unit rescaling and degenerate-design rejection.
+- [Acceptance contract](SCALING_EXPONENT_IDENTIFIABILITY_CONTRACT_2026-10-30.md), [focused gap](../../docs/RESEARCH_GAP_SCALING_EXPONENT_IDENTIFIABILITY_2026-10-30.md), and [literature watch](../../docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md) make the external-method and physical-law boundaries explicit.
+- The isolated synthetic harness passed 7/7 tests. The external MSN-PINN method remains unreproduced; exact-head CI must be observed.
