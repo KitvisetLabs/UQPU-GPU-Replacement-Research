@@ -1,0 +1,120 @@
+{
+  "record_id": "INT-20261029-BIO-FIN-LITERATURE",
+  "date": "2026-10-29",
+  "starting_main_sha": "f305578732c8bf977b24df8f4a531d9704a92e90",
+  "primary_owners": [
+    "Lane E",
+    "Lane H"
+  ],
+  "integration_owner": "Lane F",
+  "evidence_class": [
+    "PEER_REVIEWED_JOURNAL_METADATA",
+    "INDEXED_ABSTRACTS",
+    "LITERATURE_ONLY",
+    "NO_UQPU_REPRODUCTION"
+  ],
+  "literature_items": [
+    {
+      "id": "BIO-FJH-001",
+      "title": "Flash joule heating for enhanced biomass pyrolysis",
+      "doi": "10.1016/j.renene.2026.125516",
+      "status": "PROVISIONAL_METADATA; PUBLISHER_PAGE_NOT_ACCESSIBLE; NOT_REPRODUCED",
+      "relevance": [
+        "INV-030",
+        "INV-031",
+        "BIO-001",
+        "D/G process co-design"
+      ]
+    },
+    {
+      "id": "BIO-FJH-002",
+      "title": "Flash Joule heating-driven bamboo pyrolysis for nitrogen-doped porous biochar",
+      "doi": "10.1016/j.energy.2026.142520",
+      "status": "INDEXED_ABSTRACT; NOT_REPRODUCED",
+      "relevance": [
+        "INV-030",
+        "D/G process co-design"
+      ]
+    },
+    {
+      "id": "FIN-RD-001",
+      "title": "Excess Commitment in R&D",
+      "doi": "10.1093/rfs/hhag026",
+      "published": "2026-03-25",
+      "status": "PEER_REVIEWED_EXTERNAL_DOMAIN; NOT_UQPU_DATA",
+      "relevance": [
+        "INV-033",
+        "FIN-001",
+        "time-to-evidence",
+        "capital lock-up"
+      ]
+    }
+  ],
+  "lane_status": {
+    "A": "Batch 128 candidate gate retained; no new computing benchmark.",
+    "B": "Provider-neutral routes retained; no QPU job.",
+    "C": "Memory/readout/transfer boundaries retained.",
+    "D": "Device/process requirements remain unmeasured.",
+    "E": "Two flash-Joule biomass leads added; no Pangola-specific result.",
+    "F": "Accepted-fuel economics and capital-lock-up follow-up gates sharpened.",
+    "G": "Pulse-power/process/yield co-design remains requirements-level.",
+    "H": "Two literature watches and focused gaps published; multilingual context preserved."
+  },
+  "pairwise_interfaces_reviewed": [
+    "A-B",
+    "A-C",
+    "A-D",
+    "A-E",
+    "A-F",
+    "A-G",
+    "A-H",
+    "B-C",
+    "B-D",
+    "B-E",
+    "B-F",
+    "B-G",
+    "B-H",
+    "C-D",
+    "C-E",
+    "C-F",
+    "C-G",
+    "C-H",
+    "D-E",
+    "D-F",
+    "D-G",
+    "D-H",
+    "E-F",
+    "E-G",
+    "E-H",
+    "F-G",
+    "F-H",
+    "G-H"
+  ],
+  "cross_cutting": [
+    "INV-034",
+    "INV-035",
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "mission_pillars": [
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033"
+  ],
+  "evidence_boundary": "No UQPU reproduction, Pangola transfer, accepted low-cost fuel, net fusion electricity, lower WACC, new physical law or Data-Center-to-One-Phone closure.",
+  "ci_starting_head": "Batch 128 Python 3.10/3.11/3.12 matrix and cold-start handoff passed; extended jobs in progress at last poll.",
+  "ci_new_head": "PENDING",
+  "next_gate": "Pin primary biomass data and measure complete mass/energy/product balance; add FIN-001 stage-gate and capital-lock-up metrics."
+}

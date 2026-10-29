@@ -1313,3 +1313,22 @@ A perturbation-stability score alone can falsely favor a constant or uninformati
 **Blockers:** the grouped known-law comparison has not run; family-disjoint splits, frozen thresholds, matched search budgets, at least 30 seeds and independent replication remain required. The official EIC arm remains blocked pending source-reuse rights and source/data/environment pinning.
 
 **Next gate:** exact-head Actions, then frozen synthetic grouped benchmark. This software gate is not EIC reproduction, semantic equation validation, a new physical law or a technology/economic advantage. No QPU job is authorized.
+
+
+## 2026-10-29 — RG-BIO001-FLASH-JOULE-PANGOLA-TRANSFER-001
+
+**Status:** LITERATURE LEAD / PUBLISHER FULL TEXT NOT AUDITED / PANGOLA TRANSFER NOT DEMONSTRATED. **Owner:** Lane E with D/G process co-design and Lane F economics.
+
+Flash-Joule heating records in *Renewable Energy* 263 (2026), DOI 10.1016/j.renene.2026.125516, and *Energy* 364 (2026), DOI 10.1016/j.energy.2026.142520, suggest rapid electrical thermal pulses can alter biomass product distribution and produce candidate char/gas streams. Metadata and indexed abstracts were found, but primary publisher pages/full data were not accessible in this check; this remains a provisional literature lead.
+
+**Missing:** source-data provenance; measured wall-plug energy; complete dry-feed mass balance; liquid-water/oxygen/stability and accepted-fuel quality; upgrading/hydrogen/catalyst burden; continuous yield and uptime; scale-up CAPEX/OPEX; lifecycle boundaries; Pangola-specific feedstock properties; independent replication.
+
+**Unlock:** retrieve and pin primary articles/data, then compare against a matched conventional-pyrolysis baseline using the same feedstock and accepted liquid-energy specification. Include char and gas credits only once and only at defensible saleable value. No commercial bio-oil, low-cost energy, or universal carbon-material substitution claim is permitted.
+
+## 2026-10-29 — RG-FIN001-RD-DELAY-CAPITAL-LOCKIN-001
+
+**Status:** LITERATURE-INSPIRED PORTFOLIO GATE / NO UQPU FINANCIAL EFFECT MEASURED. **Owner:** Lane H and Lane F.
+
+The peer-reviewed *Review of Financial Studies* paper “Excess Commitment in R&D” (Guenzel & Liu, 2026; DOI 10.1093/rfs/hhag026) reports delay-associated continuation and crowd-out effects in pharmaceutical clinical-trial projects. It motivates a falsifiable governance hypothesis for UQPU research: when evidence is delayed, decisions may overweight sunk cost and underweight future opportunity cost. External validity to this project is unestablished; delay may also provide genuine information.
+
+**Unlock:** maintain a milestone ledger with initial hypothesis, remaining cost, time-to-evidence, uncertainty reduction, precommitted stop/continue rules, alternative use of capital, and documented exceptions when delay supplies new information. Evaluate project-level principal/interest/time-to-evidence separately from WACC or macro-rate claims.

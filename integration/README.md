@@ -13,6 +13,12 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — flash-Joule biomass and R&D capital-lock-in surveillance
+
+- [Batch 129](../docs/BATCH_129_BIOMASS_FJH_AND_RD_CAPITAL_SURVEILLANCE.md) adds [flash-Joule biomass](../docs/literature_watch/2026-10-29-flash-joule-biomass-conversion.md) and [R&D capital-lock-in](../docs/literature_watch/2026-10-29-rnd-capital-lock-in-stage-gates.md) watches with separate focused gaps.
+- Flash-Joule sources are provisional indexed-abstract leads because primary publisher pages/full text were not accessible; no Pangola transfer, accepted-fuel economics or carbon-material substitution is established. The peer-reviewed R&D paper informs a portfolio-governance hypothesis, not a measured UQPU financing effect or lower WACC.
+- All 28 A–H pairs were reviewed; INV-034/035 remain cross-cutting and the full A–H evidence gates remain active.
+
 ## Latest integrated cycle — 2026-10-29 — accuracy-plus-stability equation-candidate gate
 
 - [Batch 128](../docs/BATCH_128_EQN_CANDIDATE_ACCEPTANCE_GATE.md), [Lane A gate](../software/uqpu-prototype/uqpu/equation_candidate_gate.py), [tests](../software/uqpu-prototype/tests/test_equation_candidate_gate.py), [focused gap](../docs/RESEARCH_GAP_EQN_CANDIDATE_ACCEPTANCE_2026-10-29.md) and [machine-readable integration record](INT-20261029-EQN-CANDIDATE-ACCEPTANCE.json) add a joint accuracy/stability/constraint/failure acceptance rule.

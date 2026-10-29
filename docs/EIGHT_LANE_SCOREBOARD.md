@@ -429,3 +429,18 @@ Batch 127 does not reproduce EIC, establish a physical law, demonstrate a QPU ad
 | H | Literature deduplicated; multilingual strategic references and AI-agent/funding context preserved. | RESEARCH GOVERNANCE | Record genuine source deltas and capital-stage evidence. |
 
 Batch 128 does not establish a physical law, real-QPU advantage, critical-material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. INV-025/026/027 and INV-029–037 remain preserved.
+
+## Batch 129 — biomass flash-Joule and R&D capital-lock-in literature delta (2026-10-29)
+
+| Lane | Current advance / reviewed blocker | Evidence | Main next gate |
+|---|---|---|---|
+| A | Batch 128 accuracy-plus-stability gate retained; no new workload result. | SOFTWARE_DIAGNOSTIC | Exact-head CI and grouped known-law benchmark. |
+| B | Provider-neutral paths maintained; no QPU job. | MAINTAINED | Authorized target-specific accepted-task evidence. |
+| C | State/readout/memory/transfer boundaries maintained. | CONTRACT / NO NEW MEASUREMENT | Measured resource fields per accepted task. |
+| D | Flash-Joule reactor/pulse-power and molecular spin-photon paths remain requirements-level only. | LITERATURE_ONLY | Reproducible device/process requirements. |
+| E | New flash-Joule biomass leads; no Pangola-specific result or accepted liquid. | INDEXED ABSTRACTS / NOT REPRODUCED | Primary data, mass/energy balance and matched baseline. |
+| F | Added accepted-fuel cost and FIN-001 capital-lock-up questions. | LITERATURE-ONLY GOVERNANCE | Cost per accepted output and project decision ledger. |
+| G | Pulse-power equipment, process control and yield requirements identified, not measured. | DESIGN QUESTIONS | Process-window/throughput/cost-per-good-product. |
+| H | Two literature watches and focused gaps published; multilingual strategy preserved. | LITERATURE SURVEILLANCE | Pin sources and add FIN-001 stage-gate evidence. |
+
+Batch 129 does not establish a physical law, Pangola material substitution, accepted low-cost bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. INV-025/026/027 and INV-029–037 remain preserved.

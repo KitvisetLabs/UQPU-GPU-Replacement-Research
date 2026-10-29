@@ -2218,3 +2218,15 @@ Research-Sync: main
 - No paid QPU job was submitted. Exact-head CI is pending; no local full-suite result is claimed. Next gate: exact-head Actions, then frozen family-disjoint known-law comparison under equal budgets; EIC remains blocked pending rights and provenance review.
 
 Research-Sync: main
+
+
+## 2026-10-29 — Batch 129: biomass flash-Joule and R&D capital-lock-in literature delta
+
+- Starting main SHA: f305578732c8bf977b24df8f4a531d9704a92e90. Batch 128's Python test matrix passed on 3.10/3.11/3.12 and its cold-start handoff audit passed; extended reference/Qiskit/QSVT jobs were still running at the last poll.
+- A broader biomass/finance-specific surveillance pass found two source families not previously indexed: flash-Joule crop-straw/bamboo conversion records (DOIs 10.1016/j.renene.2026.125516 and 10.1016/j.energy.2026.142520) and the peer-reviewed R&D delay/continuation-bias paper by Guenzel & Liu (RFS 2026, DOI 10.1093/rfs/hhag026). The publisher pages/full text for the flash-Joule papers were not accessible in this check; their abstracts are provisional leads. Batch 128's earlier no-new-source statement is superseded for these two source families by this dated addendum.
+- Published two dated literature watches and focused gaps, plus Batch 129 and integration records. The follow-up is to obtain primary biomass data and measure complete mass/energy/accepted-product cost, and to add FIN-001 stage-gate/time-to-evidence/capital-lock-up fields.
+- A–H reviewed: A/B/C contracts maintained; D/G pulse-power/process co-design remains requirements-level; E adds literature leads only; F owns full accepted-output and portfolio cost; H owns provenance and strategy. All 28 A–H pairs reviewed; six-language strategic references, root directives and AI-agent/funding context preserved.
+- INV-029–035 and INV-025/026/027 remain evidence-gated. No Pangola transfer, accepted low-cost fuel, net fusion electricity, lower WACC, new physical law, real-QPU advantage or phone-class physical-compression result is claimed. No paid QPU job was submitted.
+- Exact-head Actions for this new commit are pending. Next gate: primary-source retrieval, matched flash-Joule/conventional mass-energy comparison, and a FIN-001 decision ledger with precommitted stop/continue rules.
+
+Research-Sync: main
