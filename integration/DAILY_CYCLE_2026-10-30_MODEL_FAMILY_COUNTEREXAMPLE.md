@@ -20,7 +20,7 @@ Added a regression test that deliberately fits a pure power law to synthetic (y=
 - **G:** D/G co-design continues, but no yield, process-window or cost-per-good-device evidence is added.
 - **H:** this dated report and linked gap are intended to support cold-start continuation; six-language strategic references remain preserved.
 
-The upstream FND-001–006 and EQN-001–006 pipeline remains mandatory. The official PMLR MSN-PINN watch and existing formal-proof-search, SymbolFit, DOE Genesis and AI-mathematics watches were rechecked; repository search found no new-to-repository primary source in this surveillance pass, so no duplicate watch was created.
+The upstream FND-001–006 and EQN-001–006 pipeline remains mandatory. The official PMLR MSN-PINN watch and existing formal-proof-search, SymbolFit and AI-mathematics watches were rechecked. A separate official DOE award announcement dated 2026-10-08 was new to the repository and is recorded in the [Genesis award/funding watch](../docs/literature_watch/2026-10-30-doe-genesis-awards-ai-fusion-materials-quantum.md); it is strategic program context, not a technical result. No new unindexed peer-reviewed equation-discovery method was found.
 
 ## Invariants and mission impact
 
