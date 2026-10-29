@@ -2076,3 +2076,12 @@ Fresh official-arXiv surveillance found p-DCIM (arXiv:2610.37033, posted 2026-10
 ## 2026-10-29 — Batch 117 handoff metadata repair
 
 The exact-head cold-start handoff audit for `9ca2f808499631699f3cb06bea929f6d25cedeb9` reported only `missing_commit_trailer:Research-Sync: main`; lane coverage was A–H and 28 integration pairs were checked, with no other warnings. This follow-up commit uses the required trailer and synchronizes this status to README and the Batch 117 integration artifacts. This is a repository handoff/governance repair, not a scientific result. Exact-head cold-start and prototype/invariant workflows must be checked again on the repaired head.
+
+
+## 2026-10-29 — Batch 118: exact QUBO reference and FND-006 proof robustness
+
+- **Starting head:** bdcecb4f0fc375e5020ee4dcf67c2a39a90de93c.
+- **Lane A implementation:** added `software/uqpu-prototype/uqpu/qubo_reference.py` and tests. The helper exhaustively enumerates small binary QUBOs under a single explicit coefficient convention, preserves tied minima, normalizes decimal inputs and hashes both problem and certificate. Local self-tests passed; repository Actions must be verified on the new commit.
+- **Literature surveillance:** new dated watch for the official ICLR 2026 EvolProver proceedings paper; no UQPU reproduction. LLM-PySR (arXiv:2607.04156) and physics-constrained constitutive model inspection (arXiv:2605.23754) were rechecked and not duplicated because canonical watches already exist.
+- **Artifacts:** Batch 118, exact-QUBO gap, EvolProver literature watch, FND-006 robustness gap, integration report, README TOC and canonical RESEARCH_GAPS index.
+- **Evidence boundary:** no RAG application run, QAOA simulation, real-QPU job, new physical law, material substitution, accepted bio-oil, net fusion electricity, reduced WACC or Data-Center-to-One-Phone result. INV-029–035 and the six-language strategic links remain preserved.

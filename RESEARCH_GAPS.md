@@ -1217,3 +1217,12 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Unlock criteria:** freeze and hash workload, QUBO, acceptance, reference and target manifests; validate small instances against brute force; preregister answer-quality margins; separate direct silicon from MODEL_ONLY; report data movement, host work, retries, reconstruction, measured energy boundary and cost per accepted answer. Unknown cost is not zero. Real QPU requires credentials, explicit consent and bounded budget.
 
 **Non-claims:** no quantum advantage, 100x/100000000x economics, universal memory/GPU replacement, material/fuel/fusion result, financing-rate result or phone-class physical-compression milestone.
+
+
+## RG-A-QUBO-EXACT-REFERENCE-001 — 2026-10-29
+
+The small-QUBO exhaustive objective helper and regression tests are now on main in Batch 118. It certifies only the declared QUBO minimum for at most 20 binary variables; constraints outside the objective remain separate. **Still open:** frozen RAG query/candidate/embedding/QUBO manifests, group-disjoint holdouts, downstream-answer thresholds, matched CPU/GPU/QAOA simulation, full-stack cost/energy accounting and independent reproduction. No hardware or quantum-advantage claim.
+
+## RG-FND006-EVOLPROVER-ROBUSTNESS-001 — 2026-10-29
+
+The official ICLR 2026 EvolProver paper is recorded as a literature-only robustness lead. **Still open:** pin the proof environment/data/configuration; test AST-equivalent transformations and checked domain translations; hold out theorem families/difficulty bands; classify invalid statements, counterexamples, failures and timeouts; require kernel-checked proofs and independent review. Formal proof remains distinct from physical truth. No new law or mission result.
