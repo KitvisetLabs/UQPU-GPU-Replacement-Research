@@ -2114,3 +2114,9 @@ A repository-wide source search after publication found that RISR (arXiv:2610.11
 
 - Corrected the latest-cycle summary after the repository-wide deduplication check: LegoSR is new-to-repository; RISR was already covered by earlier watches. The detailed correction remains recorded in Batch 119 and the integration/gap artifacts.
 - No scientific or software claim changed; this is a provenance/index accuracy repair.
+
+
+## 2026-10-29 — Batch 119 source-accounting synchronization
+
+- Updated Batch 119's main literature-delta paragraph so it no longer describes RISR as new-to-repository. LegoSR is the only newly indexed source; RISR remains a relevant comparator already covered in earlier watches.
+- README and WORKLOG both record this correction; the source-specific article, focused gap and integration note agree. No scientific claim or benchmark result changed.

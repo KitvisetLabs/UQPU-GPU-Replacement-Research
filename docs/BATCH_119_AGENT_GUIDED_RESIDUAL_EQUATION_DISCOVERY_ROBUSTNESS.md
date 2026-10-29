@@ -15,9 +15,9 @@ No permanent root directive or invariant was removed or weakened. INV-025/026/02
 
 ## 2. Fresh literature delta
 
-Official arXiv surveillance surfaced two recent method papers not yet represented by source-specific project watches:
+Official arXiv surveillance surfaced LegoSR as a new-to-repository source. RISR is relevant prior art already covered by the 2026-10-15 identifiability and 2026-10-28 residual/conjecture watches; it is included only as a comparator, not counted as a new literature delta:
 - LegoSR, posted 2026-10-24, uses a common Equation Intermediate Representation across seven solvers and an adaptive agent with experiment memory.
-- RISR, posted 2026-10-08, uses pointwise residual structure to guide equation proposals and correction ranking.
+- Previously indexed prior art: RISR, posted 2026-10-08, uses pointwise residual structure to guide equation proposals and correction ranking.
 
 Reported benchmark scores remain third-party claims. The method-level novelty is the combination of reusable candidate representation/experiment records and residual-informed search. Neither establishes physical truth, a new physical law or UQPU advantage. The new literature watch records sources, dates, limitations and a falsifiable follow-up.
 
