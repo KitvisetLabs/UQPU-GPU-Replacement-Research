@@ -460,3 +460,19 @@ Batch 129 does not establish a physical law, Pangola material substitution, acce
 | H | Dated literature watch published; multilingual strategic links preserved. | LITERATURE_SURVEILLANCE | Audit full text/code/data and update only on verified findings. |
 
 Batch 130 does not establish a new physical law, quantum advantage, readable-memory replacement, critical-material substitution, accepted low-cost bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure. INV-025/026/027 and INV-029–035 remain preserved.
+
+
+## Batch 131 — open-system toy oracle and qTPU hybrid runtime (2026-10-29)
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Exact one-qubit dephasing toy oracle; nine regression tests; qTPU hTN added as an optional research direction. | MODEL_ONLY; local equivalent reference harness 9/9; exact-head Actions unverified. | Extend known-generator fixtures; then matched useful-output benchmark. |
+| B | Provider-neutral target/measurement boundary preserved; qTPU's IBM Marrakesh arm is source-attributed only. | LITERATURE_ONLY; no QPU run. | Bind all noise/usage/pricing to the same target and run. |
+| C | Algebra/tensor dimensions explicitly separated from readable memory/storage. | CONTRACT / MODEL_ONLY. | Record intermediate memory, transfers, state and reconstruction. |
+| D | No device evidence; control/metrology requirements downstream. | NOT_REPRODUCED. | Derive target-specific tolerances after independent replication. |
+| E | BIO-001/FUS-001 gaps remain open; no new fuel, materials or net-electricity evidence. | LITERATURE/GAP ONLY. | Matched Pangola mass-energy/product balance; net-delivered fusion envelope. |
+| F | Matched-resource accounting and false-acceptance controls specified. | No economic advantage measured. | Cost per accepted useful output on identical target/run. |
+| G | D/G co-design retained; no equipment/yield/manufacturing result. | NOT_MEASURED. | Translate reproduced device constraints into process/metrology needs. |
+| H | qTPU source watch and focused gap published; strategic plan preserved. | PEER_REVIEWED SYSTEMS SOURCE / NO UQPU REPRODUCTION. | Audit pinned logs and reproduce a bounded subset. |
+
+Batch 131 does not establish a new physical law, quantum advantage, readable-memory replacement, critical-material substitution, accepted low-cost bio-oil, net fusion electricity, lower WACC or INV-029 closure. INV-025/026/027 and INV-029–035 remain evidence-gated.
