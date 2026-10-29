@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Daily Eight-Lane cycle — temporal-parallel QEC decoder](integration/DAILY_CYCLE_2026-10-30_TEMPORAL_PARALLEL_QEC_DECODER.md) · [literature watch](docs/literature_watch/2026-10-30-temporal-parallel-qec-decoder.md) · [focused gap](docs/RESEARCH_GAP_QEC_TEMPORAL_PARALLEL_DECODER_2026-10-30.md) · [comparison helper](software/uqpu-prototype/uqpu/qec_temporal_decoder.py) · [10 tests](software/uqpu-prototype/tests/test_qec_temporal_decoder.py) — external RTL/synthesis evidence only; exact-head CI must be verified.
+
 - [Temporal-parallel QEC decoder literature watch](docs/literature_watch/2026-10-30-temporal-parallel-qec-decoder.md) · [focused reproduction gap](docs/RESEARCH_GAP_QEC_TEMPORAL_PARALLEL_DECODER_2026-10-30.md) · [comparison contract](software/uqpu-prototype/uqpu/qec_temporal_decoder.py) · [10 fail-closed tests](software/uqpu-prototype/tests/test_qec_temporal_decoder.py) — external RTL/synthesis evidence only; no UQPU reproduction.
 
 - CI metadata repair: corrected Lane E evidence_class to the accepted LITERATURE_ONLY enum and Lane F owner_path to the existing eight-lane directory; exact-head validation of the repair commit is pending.
