@@ -1,0 +1,55 @@
+{
+  "schema": "uqpu-cross-lane-integration-v1",
+  "date": "2026-10-29",
+  "batch": 121,
+  "starting_main_sha": "97441bf2d420f05534fd54dd7b2f19fafa149410",
+  "primary_owner": "A",
+  "literature_owner": "H",
+  "source": {
+    "title": "ProofEvolve: Neuro-Symbolic Evolution for Formal Automated Theorem Proving",
+    "url": "https://arxiv.org/abs/2608.26334",
+    "submitted": "2026-08-26",
+    "evidence_class": "OFFICIAL_PREPRINT_THIRD_PARTY_METHOD_CLAIM",
+    "uqpu_reproduction": "NOT_RUN"
+  },
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/proof_dag_reuse.py",
+    "tests": "software/uqpu-prototype/tests/test_proof_dag_reuse.py",
+    "local_synthetic_tests_passed": 11,
+    "claim_boundary": "Metadata and graph bookkeeping only; no kernel execution or physical truth claim."
+  },
+  "lanes": {
+    "A": "ADVANCED_METADATA_GATE_AND_SYNTHETIC_TESTS",
+    "B": "MAINTAINED_NO_PROVIDER_EXECUTION",
+    "C": "MAINTAINED_NO_MEMORY_OR_STATE_EQUIVALENCE_CLAIM",
+    "D": "MAINTAINED_NO_DEVICE_EVIDENCE",
+    "E": "MAINTAINED_BIO001_FUS001_AND_MATERIAL_GATES_OPEN",
+    "F": "ADVANCED_EVIDENCE_BOOKKEEPING_NO_MEASURED_ECONOMICS",
+    "G": "MAINTAINED_DG_CODESIGN_NO_FACTORY_MEASUREMENT",
+    "H": "ADVANCED_LITERATURE_WATCH_AND_GAP"
+  },
+  "foundational": {
+    "FND-001": "ACTIVE_NO_PHYSICAL_JOULE_MEASUREMENT",
+    "FND-002": "ACTIVE_EXACT_REFERENCES_NO_GENERAL_NEW_BOUND",
+    "FND-003": "ACTIVE_MATCHED_CONTROL_EXPERIMENT_OPEN",
+    "FND-004": "HYPOTHESIS_GATED",
+    "FND-005": "MECHANISM_GATED_NO_NEW_ANOMALY",
+    "FND-006": "ADVANCED_GRAPH_GATE_EXTERNAL_REPRODUCTION_OPEN",
+    "EQN-001_to_EQN-006": "NO_NEW_PHYSICAL_LAW_OR_TECHNOLOGY_CLAIM"
+  },
+  "invariants": {
+    "INV-025_026_027": "PRESERVED_EVIDENCE_GATED",
+    "INV-029": "NO_PHONE_PHYSICAL_COMPRESSION_MILESTONE",
+    "INV-030": "NO_ELEMENTAL_TRANSMUTATION_OR_UNIVERSAL_SUBSTITUTION",
+    "INV-031": "BIO001_OPEN_NOT_COMMERCIAL",
+    "INV-032": "FUS001_OPEN_NOT_COMMERCIAL",
+    "INV-033": "FIN001_OPEN_NO_MEASURED_WACC_CHANGE",
+    "INV-034": "ACTIVE_FOUNDATIONAL_RESEARCH",
+    "INV-035": "ACTIVE_AI_EQUATION_DISCOVERY_EVIDENCE_GATED",
+    "INV-036_037": "PRESERVED"
+  },
+  "paid_qpu_job": false,
+  "starting_head_ci": "GREEN",
+  "new_commit_ci": "PENDING",
+  "next_gate": "Pinned theorem-family-disjoint equal-budget proof search and independent held-out kernel-check reproduction."
+}

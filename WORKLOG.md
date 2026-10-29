@@ -2120,3 +2120,14 @@ A repository-wide source search after publication found that RISR (arXiv:2610.11
 
 - Updated Batch 119's main literature-delta paragraph so it no longer describes RISR as new-to-repository. LegoSR is the only newly indexed source; RISR remains a relevant comparator already covered in earlier watches.
 - README and WORKLOG both record this correction; the source-specific article, focused gap and integration note agree. No scientific claim or benchmark result changed.
+
+
+## 2026-10-29 — Batch 121 ProofEvolve proof-DAG reuse gate
+
+- Added graph-level proof-DAG metadata validation and 11 synthetic unit tests; isolated local run passed 11/11. The helper does not execute a proof kernel or establish physical truth.
+- Reviewed official arXiv preprint 2608.26334 and published a source-specific literature watch plus a focused FND-006 gap. External benchmark claims remain unreproduced.
+- Updated README front-page contents, Batch 121, integration report and machine-readable integration record in the same main-branch commit.
+- A–H reviewed: A/F advanced at evidence-contract level; H advanced literature accounting; B/C/D/E/G maintained with explicit non-claims; D/G co-design remains active.
+- FND-006 advances at metadata-contract level. FND-001–005 and EQN-001–006 remain active; no new physical law or QPU advantage is claimed. BIO-001, FUS-001 and FIN-001 remain open.
+- INV-025/026/027, INV-029–035 and INV-036/037 remain preserved. All permanent 00/00A/01–06 directives, Kanusanan Pongpanna Model and six-language strategic references remain intact.
+- Starting-head CI was green; exact-head Actions for this commit must pass before CI is reported green. No paid QPU job was authorized or submitted.
