@@ -61,3 +61,8 @@ Create a frozen, versioned RAG test manifest and exact small-instance QUBO certi
 ## Non-claims
 
 This batch does not establish UQPU reproduction of the preprint, QAOA advantage, real-QPU performance, 100×/100,000,000× economics, general GPU/CPU/NPU or memory/storage replacement, Pangola-material substitution, commercial bio-oil, low-cost fusion, reduced WACC, a new physical law, or Data-Center-to-One-Phone completion.
+
+
+## Handoff / CI follow-up
+
+The first commit carrying this batch triggered the cold-start audit, which failed solely because its commit message omitted the required `Research-Sync: main` trailer. The next main commit repairs that metadata and records this follow-up. This does not change the literature evidence class, the preregistered comparison contract or any scientific claim. Recheck the exact repaired head before treating the handoff as complete.

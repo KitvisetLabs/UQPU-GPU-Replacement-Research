@@ -23,7 +23,7 @@
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — near-memory QUBO/RAG baseline
 
-[Batch 117](docs/BATCH_117_PDCIM_NEAR_MEMORY_QUBO_RAG_BASELINE.md) records the 2026-10-27 arXiv preprint on a fabricated 28-nm SRAM compute-in-memory Ising macro for RAG context selection. It separates direct-silicon small QUBOs from model-based larger workloads and the proposed (not fabricated) HBM/HBF package integration. A machine-readable matched-QUBO contract and regression test now define a falsifiable comparison against CPU/GPU baselines and QAOA simulation. This is a classical near-memory baseline and a research lead, not UQPU reproduction or quantum advantage; exact-head Actions remain the acceptance gate.
+[Batch 117](docs/BATCH_117_PDCIM_NEAR_MEMORY_QUBO_RAG_BASELINE.md) records the 2026-10-27 arXiv preprint on a fabricated 28-nm SRAM compute-in-memory Ising macro for RAG context selection. It separates direct-silicon small QUBOs from model-based larger workloads and the proposed (not fabricated) HBM/HBF package integration. A machine-readable matched-QUBO contract and regression test now define a falsifiable comparison against CPU/GPU baselines and QAOA simulation. This is a classical near-memory baseline and a research lead, not UQPU reproduction or quantum advantage; exact-head Actions remain the acceptance gate. This commit's cold-start handoff audit then identified one metadata-only defect: the commit message omitted the required `Research-Sync: main` trailer. The follow-up sync commit repairs that trailer; the scientific artifacts and evidence labels are unchanged.
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — provider route and compliance surveillance
 

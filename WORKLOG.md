@@ -2071,3 +2071,8 @@ Fresh official-source review found a new route/governance delta: Quantinuum/Orac
 ## 2026-10-29 — Batch 117: near-memory QUBO/RAG baseline
 
 Fresh official-arXiv surveillance found p-DCIM (arXiv:2610.37033, posted 2026-10-27), a third-party 28-nm SRAM compute-in-memory Ising macro for RAG context selection. Recorded the source's direct-silicon small-instance boundary, model-based larger-workload boundary, macro-normalized energy caveat and proposed HBM/HBF integration status. Added a Lane A machine-readable matched-QUBO contract and regression guard, plus a dated literature watch, focused research gap, Batch 117 and cross-lane integration report. README, Lane A index, integration index, living gaps and worklog are synchronized in one commit. A–H remain active; C and D/G interfaces are explicit. No QPU job, UQPU reproduction, quantum advantage, material/fuel/fusion benefit, financing effect, new physical law or Data-Center-to-One-Phone milestone is claimed. Exact-head GitHub Actions are the acceptance gate.
+
+
+## 2026-10-29 — Batch 117 handoff metadata repair
+
+The exact-head cold-start handoff audit for `9ca2f808499631699f3cb06bea929f6d25cedeb9` reported only `missing_commit_trailer:Research-Sync: main`; lane coverage was A–H and 28 integration pairs were checked, with no other warnings. This follow-up commit uses the required trailer and synchronizes this status to README and the Batch 117 integration artifacts. This is a repository handoff/governance repair, not a scientific result. Exact-head cold-start and prototype/invariant workflows must be checked again on the repaired head.

@@ -31,3 +31,8 @@ INV-029 gets a sharper subsystem data-movement experiment candidate, not a physi
 ## Evidence / CI / next gate
 
 Starting-head core/invariant and cold-start workflows passed at the recorded SHA. The new test and artifacts require exact-head Actions. Next gate: freeze the query/QUBO manifests and run exact small-instance CPU references, then matched CPU/GPU/QAOA-simulator comparisons. Keep source-model results separate from direct silicon and any later real-QPU result. No paid job without credentials, bounded budget and explicit consent.
+
+
+## Handoff repair
+
+The initial Batch 117 commit's cold-start audit identified `missing_commit_trailer:Research-Sync: main` and no other warnings. This follow-up commit repairs the trailer and synchronizes README/WORKLOG. The exact repaired-head cold-start and prototype/invariant Actions are the final acceptance gate; until they finish, this cycle's repository handoff remains pending.
