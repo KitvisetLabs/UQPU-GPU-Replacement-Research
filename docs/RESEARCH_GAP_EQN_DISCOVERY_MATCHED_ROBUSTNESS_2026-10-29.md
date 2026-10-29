@@ -9,13 +9,13 @@
 
 Test whether a discovered equation remains predictive across grouped held-out physical systems and semantics-preserving representations, rather than winning only on one split, one notation or one residual pattern.
 
-## New source leads
+## Source accounting
 
-- LegoSR (arXiv:2610.33465, posted 2026-10-24) proposes a shared Equation IR and traceable multi-solver experiment environment with an adaptive agent.
-- RISR (arXiv:2610.11387, posted 2026-10-08) uses pointwise residual structure to guide formula proposals and correction selection.
+- **New-to-repository:** LegoSR (arXiv:2610.33465, posted 2026-10-24) proposes a shared Equation IR and traceable multi-solver experiment environment with an adaptive agent.
+- **Previously indexed prior art:** RISR (arXiv:2610.11387, posted 2026-10-08) uses pointwise residual structure to guide formula proposals and correction selection. It was already covered by the 2026-10-15 and 2026-10-28 project watches and is not counted as a new literature delta.
 - UQPU has not reproduced either preprint. Their benchmark results are external evidence only; neither establishes a new physical law.
 
-See the source-specific article at docs/literature_watch/2026-10-29-legosr-risr-equation-discovery-robustness.md.
+See docs/literature_watch/2026-10-29-legosr-risr-equation-discovery-robustness.md.
 
 ## Implementation in this cycle
 

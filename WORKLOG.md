@@ -2103,3 +2103,8 @@ The exact-head cold-start handoff audit for `9ca2f808499631699f3cb06bea929f6d25c
 - A–H reviewed: A advanced at software-contract level; B maintained provider-neutral and paid-job boundaries; C retained memory/state/data-movement accounting; D/G co-design remains active without fabrication evidence; E has no new Pangola-carbon, bio-oil or fusion result; F has no measured accepted-task economics or financing change; H advanced the literature publication and preserved the six-language strategic references.
 - FND-006 advances only at method/metric-contract level. FND-001–005, EQN-001–006, BIO-001, FUS-001 and FIN-001 remain active. INV-025/026/027 and INV-029–035 remain preserved. No physical law, real-QPU advantage, material substitution, accepted fuel, net fusion electricity, lower WACC or Data-Center-to-One-Phone milestone is claimed.
 - Starting-head Actions were green; exact-head Actions for this new commit must be checked separately. No paid QPU job was authorized or submitted.
+
+
+## Literature-source deduplication correction — 2026-10-29
+
+A repository-wide source search after publication found that RISR (arXiv:2610.11387) was already covered in the 2026-10-15 equation-discovery identifiability watch and the 2026-10-28 residual/conjecture watch. It is useful prior art in Batch 119, but it is **not** a new-to-repository literature delta. LegoSR (arXiv:2610.33465) is the genuinely new-to-repository source in this cycle. The literature-watch article and next-cycle summary have been corrected to distinguish new evidence from previously indexed work. No external result was reproduced or promoted.

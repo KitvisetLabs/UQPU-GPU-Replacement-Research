@@ -52,3 +52,8 @@ FND-006 advances only at methodology/metric-contract level. FND-001–005 and EQ
 ## Evidence boundary and next gate
 
 The helper reports MODEL_ONLY_METRIC_SUMMARY. A valid hash is a provenance pointer, not proof of semantic equivalence. The next gate is exact-head CI, then a pinned external reproduction with known-equation ground truth, grouped holdouts, equal budgets and independent review. No paid QPU execution is authorized.
+
+
+## Literature-source deduplication correction — 2026-10-29
+
+The post-publication repository-wide source search found that RISR (arXiv:2610.11387) was already covered by the 2026-10-15 identifiability watch and 2026-10-28 residual/conjecture watch. It remains relevant prior art but is not new-to-repository. LegoSR (arXiv:2610.33465) is the genuinely new source this cycle. The source-specific article and gap were corrected; no benchmark or scientific claim was promoted.

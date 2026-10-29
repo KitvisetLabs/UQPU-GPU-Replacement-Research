@@ -18,3 +18,8 @@ Future articles/programs may use nested subfolders subject to the 16-level depth
 - Shared-representation and residual-guided methods are third-party preprint results, not UQPU reproductions or new physical laws.
 - Follow-up gate: pin source revisions, use grouped equation-family/system holdouts, compare equal budgets, check transformations independently, and retain counterexamples and false discoveries.
 - The Kanusanan Pongpanna Model and Thai/English/Chinese/Japanese/Korean/German strategic links remain canonical context, not scientific or financing evidence.
+
+
+## Source deduplication note — 2026-10-29
+
+LegoSR (arXiv:2610.33465) is new-to-repository. RISR (arXiv:2610.11387) is prior art already indexed in the 2026-10-15 and 2026-10-28 watches. The Batch 119 article now makes this distinction explicit.

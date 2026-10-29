@@ -15,7 +15,7 @@ Maximize scientifically defensible coupling among A-H so that software, provider
 
 ## Latest integrated cycle — 2026-10-29 — equation-discovery robustness
 
-- [Batch 119](../docs/BATCH_119_AGENT_GUIDED_RESIDUAL_EQUATION_DISCOVERY_ROBUSTNESS.md), [LegoSR/RISR literature watch](../docs/literature_watch/2026-10-29-legosr-risr-equation-discovery-robustness.md), [matched-error helper](../software/uqpu-prototype/uqpu/equation_discovery_benchmark.py), [focused gap](../docs/RESEARCH_GAP_EQN_DISCOVERY_MATCHED_ROBUSTNESS_2026-10-29.md) and [integration report](DAILY_CYCLE_2026-10-29_EQUATION_DISCOVERY_ROBUSTNESS.md) add a testable robustness metric contract. External reproduction and physical validity remain open.
+- [Batch 119](../docs/BATCH_119_AGENT_GUIDED_RESIDUAL_EQUATION_DISCOVERY_ROBUSTNESS.md), [LegoSR/RISR literature watch](../docs/literature_watch/2026-10-29-legosr-risr-equation-discovery-robustness.md), [matched-error helper](../software/uqpu-prototype/uqpu/equation_discovery_benchmark.py), [focused gap](../docs/RESEARCH_GAP_EQN_DISCOVERY_MATCHED_ROBUSTNESS_2026-10-29.md) and [integration report](DAILY_CYCLE_2026-10-29_EQUATION_DISCOVERY_ROBUSTNESS.md) add a testable robustness metric contract. LegoSR is new-to-repository; RISR is reused prior art already covered by earlier watches. External reproduction and physical validity remain open.
 
 ## Latest integrated cycle — 2026-10-29 — near-memory QUBO/RAG baseline
 
@@ -46,3 +46,8 @@ Maximize scientifically defensible coupling among A-H so that software, provider
 
 ## Latest integrated cycle — 2026-10-28 — biomass and fusion cost accounts
 - [BIO-001 / FUS-001 literature delta](DAILY_CYCLE_2026-10-28_BIOMASS_FUSION_COSTING.md) — pilot-scale biomass yield/char recovery and pyFECONs cost-account references with source-specific evidence limits.
+
+
+## Source deduplication note — 2026-10-29
+
+Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as previously indexed prior art. No duplicate RISR claim is counted as a fresh literature delta.

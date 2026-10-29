@@ -67,3 +67,8 @@ The 100x and 100,000,000x targets, universal subsystem replacement and Data-Cent
 Starting-head workflows were green. Exact-head Actions for the new commit must be inspected separately; the commit message includes the required Research-Sync: main trailer.
 
 Next highest-value gate: run the helper's synthetic tests in Actions, then pin the two source implementations and a known-equation benchmark. Preregister grouped splits, equal candidate/time/compute budgets, pointwise relative-error tolerances, equation complexity, interval calibration, counterexample handling and ID/OOD reporting before accepting external results.
+
+
+## Literature-source deduplication correction — 2026-10-29
+
+A repository-wide source search after publication found that RISR (arXiv:2610.11387) was already covered in the 2026-10-15 equation-discovery identifiability watch and the 2026-10-28 residual/conjecture watch. It is useful prior art in Batch 119, but it is **not** a new-to-repository literature delta. LegoSR (arXiv:2610.33465) is the genuinely new-to-repository source in this cycle. The literature-watch article and next-cycle summary have been corrected to distinguish new evidence from previously indexed work. No external result was reproduced or promoted.

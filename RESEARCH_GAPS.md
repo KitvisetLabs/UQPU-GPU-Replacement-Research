@@ -1231,3 +1231,8 @@ The official ICLR 2026 EvolProver paper is recorded as a literature-only robustn
 ## RG-EQN-DISCOVERY-MATCHED-ROBUSTNESS-001 — 2026-10-29
 
 The matched equation-discovery robustness helper and synthetic tests are committed in Batch 119. Fresh official preprints LegoSR (arXiv:2610.33465, posted 2026-10-24) and RISR (arXiv:2610.11387, posted 2026-10-08) motivate a common candidate/evaluation record and residual-informed search. **Still open:** pin/reproduce source implementations and datasets; freeze grouped equation-family/system holdouts; compare static, controller, residual-guided and multi-solver methods under equal budgets; verify semantic transformations independently; report ID/OOD errors, complexity, uncertainty, counterexamples, false discoveries and resource use. The helper is MODEL_ONLY metric logic and does not verify equation truth. No new physical law or mission result.
+
+
+## Literature-source deduplication correction — 2026-10-29
+
+A repository-wide source search after publication found that RISR (arXiv:2610.11387) was already covered in the 2026-10-15 equation-discovery identifiability watch and the 2026-10-28 residual/conjecture watch. It is useful prior art in Batch 119, but it is **not** a new-to-repository literature delta. LegoSR (arXiv:2610.33465) is the genuinely new-to-repository source in this cycle. The literature-watch article and next-cycle summary have been corrected to distinguish new evidence from previously indexed work. No external result was reproduced or promoted.
