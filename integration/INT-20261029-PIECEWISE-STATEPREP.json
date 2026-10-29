@@ -1,0 +1,39 @@
+{
+  "record_id": "INT-20261029-PIECEWISE-STATEPREP",
+  "date": "2026-10-29",
+  "primary_owner": "A",
+  "interfaces": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "source": {
+    "authors": [
+      "Nikita Guseynov",
+      "Nana Liu"
+    ],
+    "title": "Efficient explicit circuit for quantum state preparation of piecewise continuous functions",
+    "journal": "Physical Review A",
+    "volume": 113,
+    "article": "012604",
+    "publication_date": "2026-01-02",
+    "doi": "10.1103/plc3-2jyx",
+    "publisher_url": "https://journals.aps.org/pra/abstract/10.1103/plc3-2jyx",
+    "new_to_repository": true,
+    "project_reproduction": "NOT_PERFORMED"
+  },
+  "evidence_class": "PEER_REVIEWED_ALGORITHMIC_RESULT_ABSTRACT_REVIEWED",
+  "project_claims": {
+    "UQPU_hardware_advantage": false,
+    "cost_advantage": false,
+    "energy_advantage": false,
+    "arbitrary_stateprep_improvement": false,
+    "readable_classical_memory_equivalence": false,
+    "new_physical_law": false
+  },
+  "next_gate": "Reproduce small function-state circuits and test held-out function families, degree, piece count, localization and error regimes against matched classical and quantum-preparation baselines."
+}

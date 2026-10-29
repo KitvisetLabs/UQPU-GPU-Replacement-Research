@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Literature watch — piecewise-function state preparation](docs/literature_watch/2026-10-29-piecewise-function-state-preparation.md) · [focused gap](docs/RESEARCH_GAP_A_FUNCTION_STRUCTURED_STATEPREP_2026-10-29.md) · [integration record](integration/INT-20261029-PIECEWISE-STATEPREP.json)
+
 - [Batch 134 — sparse state-preparation Toffoli-cost model-alignment gate](docs/BATCH_134_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT.md) · [literature watch](docs/literature_watch/2026-10-29-sparse-stateprep-improved-toffoli-cost.md) · [focused gap](docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md) · [benchmark contract](research_lanes/A_quantum_programming_runtime/SPARSE_STATEPREP_TOFFOLI_BENCHMARK_V1.json) · [integration report](integration/DAILY_CYCLE_2026-10-29_SPARSE_STATEPREP_TOFFOLI.md) · [integration record](integration/INT-20261029-SPARSE-STATEPREP-TOFFOLI.json) · [root gap index](RESEARCH_GAPS.md)
 
 - [Batch 133 — BIO-001 waste-pyrolysis techno-economic surveillance](docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md) · [literature watch](docs/literature_watch/2026-10-29-waste-biomass-pyrolysis-tea-yadav-lamers.md) · [BIO-001 transfer gap](docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_BIO001_PYROLYSIS_TEA.md) · [integration record](integration/INT-20261029-BIO001-PYROLYSIS-TEA.json)

@@ -1368,3 +1368,19 @@ Teretenkov, Kuznetsov & Pechen, *Physical Review A* 114, 043115 (published 2026-
 
 **Nonclaims:** No universal state-preparation bound, readable-memory equivalence, UQPU hardware/energy/cost advantage, 100,000,000-unit replacement or new physical law is established.
 
+## RG-A-FUNCTION-STATEPREP-001 — function-structured amplitude preparation (2026-10-29)
+
+**Status:** OPEN / LITERATURE-ONLY / INDEPENDENT REPRODUCTION REQUIRED  
+**Primary owner:** Lane A; interfaces with C, F, B, D/G and H.  
+**Source:** Guseynov and Liu, *Physical Review A* 113, 012604 (2026), DOI https://doi.org/10.1103/plc3-2jyx.  
+**Detailed gap:** docs/RESEARCH_GAP_A_FUNCTION_STRUCTURED_STATEPREP_2026-10-29.md  
+**Literature watch:** docs/literature_watch/2026-10-29-piecewise-function-state-preparation.md
+
+**Objective:** Test whether polynomial/piecewise-polynomial amplitude structure yields reproducible state-preparation savings for a frozen UQPU workload after coefficient preparation, approximation, data movement, output reconstruction and classical baselines are included.
+
+**Current evidence:** The publisher abstract reports O(n log n) scaling in qubit count, linear scaling with polynomial degree, examples up to degree 10^4 and linear scaling in piece count under stated function/approximation conditions. UQPU has not independently reproduced the circuits. This is not arbitrary state preparation or a workload-level cost result.
+
+**Next gate:** Pin the paper and resource tables, reproduce small-register Gaussian/Kaiser/piecewise-polynomial cases, freeze held-out function families and negative controls, and record fidelity, gate metrics, ancillas, preprocessing, coefficient bytes, transfer, measurement/reconstruction and cost per accepted useful task.
+
+**Nonclaims:** No lower-bound bypass, readable-memory equivalence, real-QPU advantage, energy/cost saving or new physical law is established.
+
