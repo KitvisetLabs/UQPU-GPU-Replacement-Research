@@ -13,6 +13,17 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — amplitude-damping generator cross-check
+
+- [Batch 132](../docs/BATCH_132_AMPLITUDE_DAMPING_GENERATOR_CROSSCHECK.md), [Lane A contract](../research_lanes/A_quantum_programming_runtime/OPEN_QSYS_AMPLITUDE_DAMPING_FIXTURE_2026-10-29.md), [implementation/tests](../software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py) and [integration record](INT-20261029-AMPLITUDE-DAMPING.json) add a second analytically known open-system generator and separate invariance from algebra closure.
+- The result is MODEL_ONLY. Exact-head CI and the family/regime-held-out measurement-inference benchmark remain open.
+- The auxiliary root-level Lane I directory is tracked as an A–H placement-policy gap; no artifacts were moved without link/import inventory.
+
+## Latest integrated cycle — 2026-10-29 — qTPU hybrid runtime and open-system invariant fixture
+
+- [Batch 131](../docs/BATCH_131_QTPU_HYBRID_RUNTIME_AND_OPEN_QSYS_FIXTURE.md), [qTPU watch](../docs/literature_watch/2026-10-29-qtpu-hybrid-tensor-network-runtime.md), [Lane A toy contract](../research_lanes/A_quantum_programming_runtime/OPEN_QSYS_TOY_FIXTURE_2026-10-29.md), [focused qTPU gap](../docs/RESEARCH_GAP_QTPU_RESOURCE_MATCHED_REPRODUCTION_2026-10-29.md) and [integration report](DAILY_CYCLE_2026-10-29_QTPU_AND_OPEN_QSYS_FIXTURE.md) record the external systems lead and the deterministic pure-dephasing oracle.
+- qTPU results remain external; no qTPU code or paid QPU job was run. The toy oracle is software-only and does not establish measurement identifiability or physical advantage.
+
 ## Latest integrated cycle — 2026-10-29 — flash-Joule biomass and R&D capital-lock-in surveillance
 
 - [Batch 129](../docs/BATCH_129_BIOMASS_FJH_AND_RD_CAPITAL_SURVEILLANCE.md) adds [flash-Joule biomass](../docs/literature_watch/2026-10-29-flash-joule-biomass-conversion.md) and [R&D capital-lock-in](../docs/literature_watch/2026-10-29-rnd-capital-lock-in-stage-gates.md) watches with separate focused gaps.

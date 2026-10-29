@@ -1,6 +1,9 @@
 import unittest
 
-from uqpu.open_quantum_invariant_toy import evaluate_pure_dephasing_candidate
+from uqpu.open_quantum_invariant_toy import (
+    evaluate_amplitude_damping_candidate,
+    evaluate_pure_dephasing_candidate,
+)
 
 
 I = (1, 0, 0, 0)
@@ -56,6 +59,45 @@ class OpenQuantumInvariantToyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             evaluate_pure_dephasing_candidate(((1, 0, 0),))
 
+
+
+    def test_amplitude_damping_invariant_algebra_passes_with_certificate(self):
+        result = evaluate_amplitude_damping_candidate((I, Z), gamma=0.7)
+        self.assertTrue(result["invariant_under_declared_generator"])
+        self.assertTrue(result["closed_under_operator_product"])
+        self.assertTrue(result["passes_exact_toy_checks"])
+        self.assertEqual(
+            result["generator_invariance_certificate"]["basis_image_membership"],
+            [True, True],
+        )
+        self.assertEqual(result["evidence_class"], "MODEL_ONLY")
+
+    def test_amplitude_damping_invariant_subspace_not_algebra_is_rejected(self):
+        result = evaluate_amplitude_damping_candidate((I, X, Y), gamma=1.0)
+        self.assertTrue(result["invariant_under_declared_generator"])
+        self.assertFalse(result["closed_under_operator_product"])
+        self.assertFalse(result["passes_exact_toy_checks"])
+
+    def test_amplitude_damping_noninvariant_closed_span_is_rejected(self):
+        result = evaluate_amplitude_damping_candidate((I, (0, 1, 0, 1)), gamma=1.0)
+        self.assertFalse(result["invariant_under_declared_generator"])
+        self.assertTrue(result["closed_under_operator_product"])
+        self.assertEqual(
+            result["generator_invariance_certificate"]["basis_image_membership"],
+            [True, False],
+        )
+        self.assertFalse(result["passes_exact_toy_checks"])
+
+    def test_amplitude_damping_zero_rate_preserves_full_algebra(self):
+        result = evaluate_amplitude_damping_candidate((I, X, Y, Z), gamma=0)
+        self.assertTrue(result["invariant_under_declared_generator"])
+        self.assertTrue(result["closed_under_operator_product"])
+        self.assertTrue(result["passes_exact_toy_checks"])
+
+    def test_amplitude_damping_rejects_invalid_rate(self):
+        for gamma in (-1, float("nan"), float("inf"), True):
+            with self.subTest(gamma=gamma), self.assertRaises(ValueError):
+                evaluate_amplitude_damping_candidate((I, Z), gamma=gamma)
 
 if __name__ == "__main__":
     unittest.main()

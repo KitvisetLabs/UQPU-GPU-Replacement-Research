@@ -12,6 +12,12 @@ A supplies useful-output/workload contracts to B-H. It consumes provider constra
 Special projects may add `algorithms/`, `compiler/`, `runtime/`, `workloads/`, `experiments/`, `references/` or other subfolders as needed, subject to the repository-wide 16-level depth limit.
 
 
+## Open-system generator cross-check — 2026-10-29
+
+- [Amplitude-damping fixture contract](OPEN_QSYS_AMPLITUDE_DAMPING_FIXTURE_2026-10-29.md) adds a second analytically known generator beside the pure-dephasing fixture.
+- The evaluator returns per-basis-image invariance membership and separately checks operator-algebra closure; tests preserve both invariant/non-algebra and closed/non-invariant negative controls.
+- This is MODEL_ONLY. The full restricted-measurement benchmark, >=30-seed family/regime holdouts, uncertainty/abstention and resource accounting remain open.
+
 ## Current reproducibility gate — 2026-10-29
 
 - [Exact 2x2 Hermitian reference contract](SMALL_HAMILTONIAN_REFERENCE_CONTRACT_2026-10-29.md) defines the bounded analytic fixture, fail-closed tests and next sparse-oracle gate.

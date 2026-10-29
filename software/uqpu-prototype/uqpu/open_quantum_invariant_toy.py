@@ -143,3 +143,62 @@ def evaluate_pure_dephasing_candidate(
             "or UQPU mission-level result."
         ),
     }
+
+def evaluate_amplitude_damping_candidate(
+    basis: Iterable[Iterable[object]],
+    gamma: object = 1.0,
+    tolerance: object = 1e-10,
+) -> dict[str, object]:
+    """Check a candidate span under a one-qubit amplitude-damping generator.
+
+    Coefficients use the Pauli basis (I, X, Y, Z). For amplitude damping
+    toward the +1 eigenstate of Z, the Heisenberg-picture generator is
+    L†(I)=0, L†(X)=-(gamma/2)X, L†(Y)=-(gamma/2)Y, and
+    L†(Z)=gamma(I-Z). This is an analytic MODEL_ONLY fixture, not an
+    inference from measurements or a claim of decoherence-free behavior.
+    """
+    vectors, tol = _validated_basis(basis, tolerance)
+    if isinstance(gamma, bool) or not isinstance(gamma, (int, float)):
+        raise ValueError("gamma must be finite and nonnegative")
+    if not math.isfinite(gamma) or gamma < 0:
+        raise ValueError("gamma must be finite and nonnegative")
+
+    images = tuple(
+        (
+            gamma * vector[3],
+            -0.5 * gamma * vector[1],
+            -0.5 * gamma * vector[2],
+            -gamma * vector[3],
+        )
+        for vector in vectors
+    )
+    image_membership = tuple(_in_span(image, vectors, tol) for image in images)
+    invariant = all(image_membership)
+    algebra_closed = all(
+        _in_span(_pauli_product(left, right), vectors, tol)
+        for left in vectors
+        for right in vectors
+    )
+    return {
+        "model": "one-qubit amplitude-damping Heisenberg generator in the Pauli basis",
+        "generator_definition": (
+            "L†(I)=0; L†(X)=-(gamma/2)X; L†(Y)=-(gamma/2)Y; "
+            "L†(Z)=gamma(I-Z), with gamma >= 0"
+        ),
+        "evidence_class": "MODEL_ONLY",
+        "basis_dimension": len(vectors),
+        "invariant_under_declared_generator": invariant,
+        "generator_invariance_certificate": {
+            "method": "tolerance-based coefficient-span rank comparison",
+            "tolerance": tol,
+            "basis_image_membership": list(image_membership),
+        },
+        "closed_under_operator_product": algebra_closed,
+        "passes_exact_toy_checks": invariant and algebra_closed,
+        "claim_boundary": (
+            "Analytic finite-dimensional software fixture only; not a measurement-inference "
+            "result, new physical law, decoherence-free claim, quantum advantage, readable "
+            "memory/storage replacement, or UQPU mission-level result."
+        ),
+    }
+

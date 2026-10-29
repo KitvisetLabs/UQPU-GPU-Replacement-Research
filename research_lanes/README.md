@@ -12,6 +12,10 @@ This directory is the canonical lane-oriented workspace for the project.
 - `G_manufacturing_equipment_factory_software` — manufacturing equipment/software/factory systems
 - `H_strategy_finance_future_industries` — strategy/finance/future industries
 
+## Architecture placement audit — 2026-10-29
+
+The permanent architecture remains exactly eight top-level lane folders A–H. The tree currently also contains `I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION/`, which is an auxiliary research track and a placement-policy mismatch, not a ninth permanent lane. See [the focused migration gap](../docs/RESEARCH_GAP_AUXILIARY_LANE_I_PLACEMENT_2026-10-29.md). Preserve its files and safety/provenance notes until a controlled link/import/depth/CI audit can move each artifact under a canonical owner or `integration/`.
+
 ## Memory-taxonomy rule
 Lane C uses **role-based memory taxonomy** rather than treating `DRAM` as a separate peer subsystem. DRAM is a technology family that can implement multiple volatile-memory roles: system DDR/LPDDR/RDIMM/MRDIMM and accelerator-local HBM/GDDR are all DRAM-derived or DRAM-class technologies, while SRAM/cache is a distinct volatile-memory class. Replacement/economic claims must therefore name the memory role and the physical technology being compared.
 

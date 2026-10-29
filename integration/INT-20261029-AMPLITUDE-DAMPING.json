@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "record_id": "INT-20261029-AMPLITUDE-DAMPING",
+  "date": "2026-10-29",
+  "primary_owner": "A",
+  "integration_owner": "F",
+  "provenance_owner": "H",
+  "starting_main_sha": "49108f21ff23125c725d9847324d3a9798a24066",
+  "status": "COMMITTED_AWAITING_EXACT_HEAD_CI",
+  "evidence_class": "MODEL_ONLY",
+  "implementation": "software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py",
+  "tests": "software/uqpu-prototype/tests/test_open_quantum_invariant_toy.py",
+  "lane_contract": "research_lanes/A_quantum_programming_runtime/OPEN_QSYS_AMPLITUDE_DAMPING_FIXTURE_2026-10-29.md",
+  "batch": "docs/BATCH_132_AMPLITUDE_DAMPING_GENERATOR_CROSSCHECK.md",
+  "integration_report": "integration/DAILY_CYCLE_2026-10-29_AMPLITUDE_DAMPING_CROSSCHECK.md",
+  "architecture_gap": "docs/RESEARCH_GAP_AUXILIARY_LANE_I_PLACEMENT_2026-10-29.md",
+  "generator": {
+    "convention": "one-qubit amplitude damping toward the +1 eigenstate of Z",
+    "pauli_order": [
+      "I",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "action": {
+      "I": "0",
+      "X": "-(gamma/2) X",
+      "Y": "-(gamma/2) Y",
+      "Z": "gamma (I-Z)"
+    },
+    "domain": "finite gamma >= 0",
+    "invariance_and_algebra_closure_are_separate": true,
+    "per_basis_image_membership_certificate": true
+  },
+  "lanes": {
+    "A": "IMPLEMENTED_SECOND_ANALYTIC_GENERATOR",
+    "B": "PROVIDER_NEUTRAL_NO_EXECUTION",
+    "C": "NO_CLASSICAL_MEMORY_EQUIVALENCE_CLAIM",
+    "D": "NO_DEVICE_EVIDENCE",
+    "E": "BIO001_FUS001_GAPS_REMAIN_OPEN",
+    "F": "INTEGRATION_AND_ARCHITECTURE_GAP_RECORDED",
+    "G": "D_G_CO_DESIGN_NO_MANUFACTURING_RESULT",
+    "H": "STRATEGIC_LINKS_AND_PROVENANCE_PRESERVED"
+  },
+  "cross_cutting": {
+    "FND001": "NO_NEW_MEASUREMENT",
+    "FND002": "NO_BOUND_CHANGE",
+    "FND003": "NO_MATCHED_SPEED_LIMIT_MEASUREMENT",
+    "FND004": "KNOWN_MODEL_ONLY",
+    "FND005": "NO_NEW_PARTICLE_MECHANISM",
+    "FND006": "KNOWN_MODEL_COUNTEREXAMPLE_COVERAGE_ADVANCED",
+    "EQN001": "LITERATURE_RECHECKED_NO_DUPLICATE_ARTICLE",
+    "EQN002": "SECOND_KNOWN_GENERATOR_ADDED",
+    "EQN003": "ASSUMPTIONS_EXPLICIT",
+    "EQN004": "NEGATIVE_CONTROLS_RETAINED",
+    "EQN005": "NO_ANOMALY_OR_NEW_LAW",
+    "EQN006": "SYSTEM_AND_ECONOMICS_GATE_OPEN"
+  },
+  "mission_invariants": {
+    "INV029": "NO_PHONE_COMPRESSION_RESULT",
+    "INV030": "NO_MATERIAL_QUALIFICATION",
+    "INV031": "NO_ACCEPTED_BIO_OIL_RESULT",
+    "INV032": "NO_NET_FUSION_ELECTRICITY_RESULT",
+    "INV033": "NO_MEASURED_FINANCING_EFFECT",
+    "INV034": "MODEL_CHECK_ONLY",
+    "INV035": "NO_PHYSICAL_LAW_PROMOTION",
+    "INV025_026_027": "GOALS_REMAIN_FALSIFIABLE_AND_EVIDENCE_GATED"
+  },
+  "paid_qpu_submitted": false,
+  "exact_head_ci": "PENDING",
+  "literature_watch_created": false,
+  "literature_watch_reason": "Freshly checked material sources already have dated repository watches; no duplicate article created."
+}

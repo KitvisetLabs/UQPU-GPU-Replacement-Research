@@ -2291,3 +2291,20 @@ FND-001/003/005 have no new measurements; FND-002 lower bound unchanged; FND-004
 The combined-status endpoint returned no status contexts at the starting head. This is not a passing CI result. Check Actions for the latest `main` head, repair feasible failures and record actual run IDs. Then add a second analytically known generator and run the preregistered open-system benchmark with family/regime holdouts, >=30 seeds, negative controls, abstention and complete resources. Separately, freeze a matched-output qTPU/UQPU/classical-tensor-network manifest before any hardware run. No paid QPU job was submitted.
 
 Research-Sync: main
+
+## Daily Eight-Lane research cycle — 2026-10-29 — amplitude-damping cross-check
+
+**Canonical starting head:** `49108f21ff23125c725d9847324d3a9798a24066`  
+**Batch:** [Batch 132](docs/BATCH_132_AMPLITUDE_DAMPING_GENERATOR_CROSSCHECK.md)  
+**Integration:** [daily report](integration/DAILY_CYCLE_2026-10-29_AMPLITUDE_DAMPING_CROSSCHECK.md) · [machine-readable record](integration/INT-20261029-AMPLITUDE-DAMPING.json)
+
+- Re-read the current charter, invariants, goals, README, research operating system, open-frontier directive, strategic model/references, root directives 00/00A/01–06, Batch 131/130/129, current qTPU/open-system/equation-discovery gaps and all A–H lane readmes.
+- Added a second known-model evaluator for one-qubit amplitude damping. The Heisenberg action is L†(I)=0, L†(X)=-(gamma/2)X, L†(Y)=-(gamma/2)Y, L†(Z)=gamma(I-Z). Five regression methods exercise positive, negative, zero-rate and invalid-input cases; exact-head CI remains the acceptance gate.
+- Fresh public literature surveillance rechecked staged symbolic regression, formal theorem discovery/proof metrics, physics-informed modeling, quantum speed limits, biomass, fusion and finance. The relevant material sources were already covered by dated watches; no duplicate watch was created and no external claim was promoted to UQPU evidence.
+- Reviewed A–H in parallel. B has no provider execution; C retains the readable-memory boundary; D/G have no new device/factory evidence; E keeps BIO-001/FUS-001 open; F adds resource/evidence and architecture tracking; H preserves the Kanusanan Pongpanna Model, all six language links and strategic AI-agent/funding references.
+- FND-006 and EQN-002–004 advance only at deterministic known-model/counterexample level. FND-001/003 measurements and FND-002 bounds do not change; FND-004/005 provide no new physical mechanism; EQN-005/006 remain blocked on discriminating evidence and end-to-end economics.
+- Preserved INV-029–035 and INV-025/026/027. No phone-compression, material-substitution, accepted bio-oil, net fusion electricity, lower WACC, real-QPU advantage or new physical law is claimed.
+- Detected an auxiliary root-level `research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION/` directory inconsistent with the canonical eight-root-lane policy. It is preserved as auxiliary, not counted as lane I in A–H; the focused governance gap requires path/import/link/CI inventory before migration.
+- Literature/source and strategic context remain intact. No paid QPU job was submitted.
+
+Research-Sync: main

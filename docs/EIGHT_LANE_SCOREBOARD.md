@@ -476,3 +476,21 @@ Batch 130 does not establish a new physical law, quantum advantage, readable-mem
 | H | qTPU source watch and focused gap published; strategic plan preserved. | PEER_REVIEWED SYSTEMS SOURCE / NO UQPU REPRODUCTION. | Audit pinned logs and reproduce a bounded subset. |
 
 Batch 131 does not establish a new physical law, quantum advantage, readable-memory replacement, critical-material substitution, accepted low-cost bio-oil, net fusion electricity, lower WACC or INV-029 closure. INV-025/026/027 and INV-029–035 remain evidence-gated.
+
+## Batch 132 — amplitude-damping generator cross-check and architecture hygiene (2026-10-29)
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Second analytically known open-system generator, per-basis-image invariance certificate, and five regression methods | MODEL_ONLY / software checks | Exact-head CI, then family/regime-held-out inference benchmark |
+| B | Provider-neutral execution boundary preserved; no target run | NO_EXECUTION | Dry-run/simulator and target-matched usage/price provenance |
+| C | Observable-span dimension remains separate from readable classical memory | Contract clarification | Measure state/I/O/transfer/reconstruction on an accepted workload |
+| D | No device change claimed | No new device evidence | Derive tolerance requirements only after reproduced workload evidence |
+| E | BIO-001 and FUS-001 remain open | Literature/model gaps | Primary-source data, matched mass/energy/cost boundaries |
+| F | Integration record, full A–H review, and auxiliary root-level Lane I placement gap | Governance + MODEL_ONLY | Exact-head CI and controlled path/link/import audit |
+| G | D/G co-design retained; no fabrication result | No new manufacturing evidence | Device-to-process-window requirements with yield/cost provenance |
+| H | Strategic model and multilingual links preserved; existing literature watches rechecked | Literature-only / strategic context | Continue FIN-001 principal/time-to-evidence ledger |
+
+**Integration result:** invariance and algebra closure remain separate predicates. The amplitude-damping model is known physics used as a software fixture, not a new physical law. The 100,000,000× targets, Data-Center-to-Phone, material substitution, commercial bio-oil/fusion and financing-rate goals remain unachieved and evidence-gated.
+
+**Architecture note:** the current tree contains an auxiliary top-level `research_lanes/I_FIELD_AGNOSTIC_CONTACTLESS_VEHICLE_LEVITATION/` directory despite the canonical A–H policy. It is not silently counted as a ninth permanent lane; migration is blocked until every file, import, link, depth constraint and CI filter is inventoried.
+
