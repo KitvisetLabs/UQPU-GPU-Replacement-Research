@@ -12,10 +12,31 @@ MANIFEST_PATH = (
 )
 
 
+def _reject_duplicate_json_keys(pairs):
+    """Reject ambiguous JSON objects instead of silently keeping the last key."""
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate JSON key: {key!r}")
+        result[key] = value
+    return result
+
+
 class SparseStateprepAssetProvenanceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+        cls.manifest = json.loads(
+            MANIFEST_PATH.read_text(encoding="utf-8"),
+            object_pairs_hook=_reject_duplicate_json_keys,
+        )
+
+    def test_duplicate_json_key_guard_rejects_ambiguous_objects(self):
+        with self.assertRaisesRegex(ValueError, "duplicate JSON key"):
+            json.loads(
+                '{"evidence_class": "SOURCE_METADATA_ONLY", '
+                '"evidence_class": "REPRODUCED"}',
+                object_pairs_hook=_reject_duplicate_json_keys,
+            )
 
     def test_source_record_and_asset_are_pinned(self):
         self.assertEqual(
