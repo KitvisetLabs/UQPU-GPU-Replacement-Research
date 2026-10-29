@@ -106,3 +106,9 @@ Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as
 
 - [Batch 130](../docs/BATCH_130_OPEN_QUANTUM_INVARIANT_STRUCTURE_GATE.md), [literature watch](../docs/literature_watch/2026-10-29-open-quantum-invariant-structure-learning.md), [Lane A benchmark contract](../research_lanes/A_quantum_programming_runtime/OPEN_QUANTUM_INVARIANT_STRUCTURE_BENCHMARK_V1.json), [focused gap](../docs/RESEARCH_GAP_OPEN_QSYSTEM_INVARIANT_STRUCTURE_2026-10-29.md), and [integration record](INT-20261029-OPEN-QSYS-STRUCTURE.json) connect the 21 October 2026 *Physical Review A* paper to a falsifiable structural-identifiability test.
 - The contract is preregistered, not run. Full text/code/data were not audited. No physical law, quantum advantage, readable-memory replacement, fuel/fusion result, lower WACC or Data-Center-to-One-Phone closure is claimed.
+
+
+## Latest integrated cycle — 2026-10-29 — open-system toy oracle + qTPU
+
+- [Batch 131](../docs/BATCH_131_QTPU_HYBRID_RUNTIME_AND_OPEN_QSYS_FIXTURE.md), [Lane A toy contract](../research_lanes/A_quantum_programming_runtime/OPEN_QSYS_TOY_FIXTURE_2026-10-29.md), [qTPU literature watch](../docs/literature_watch/2026-10-29-qtpu-hybrid-tensor-network-runtime.md), [qTPU focused gap](../docs/RESEARCH_GAP_QTPU_RESOURCE_MATCHED_REPRODUCTION_2026-10-29.md), [daily report](DAILY_CYCLE_2026-10-29_QTPU_AND_OPEN_QSYS_FIXTURE.md), and [machine-readable record](INT-20261029-QTPU-OPEN-QSYS.json) record the exact toy-model checks and new systems literature.
+- The toy helper and nine tests are MODEL_ONLY; the equivalent local reference harness passed 9/9, but exact-head repository Actions remains unverified. qTPU's author-reported gains remain external claims pending matched-output/resource reproduction. No paid QPU job was submitted.
