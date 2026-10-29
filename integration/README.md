@@ -1,5 +1,17 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated cycle — 2026-10-30 — scaling-exponent identifiability gate
+
+- [Batch 137](../docs/BATCH_137_SCALING_EXPONENT_IDENTIFIABILITY_GATE.md)
+- [Literature watch](../docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md)
+- [Lane A contract](../research_lanes/A_quantum_programming_runtime/SCALING_EXPONENT_IDENTIFIABILITY_CONTRACT_2026-10-30.md)
+- [Focused gap](../docs/RESEARCH_GAP_SCALING_EXPONENT_IDENTIFIABILITY_2026-10-30.md)
+- [Cycle report](DAILY_CYCLE_2026-10-30_SCALING_EXPONENT_GATE.md)
+- [Machine-readable record](INT-20261030-SCALING-EXPONENT-GATE.json)
+
+A classical log-linear reference baseline and seven synthetic tests were added for the restricted positive power-law family. This is MODEL_ONLY and does not reproduce MSN-PINN or establish a physical law. Exact-head CI remains to be observed.
+
+
 This directory is the shared integration layer for all eight research lanes.
 
 It does **not** replace lane ownership. Each substantive artifact remains owned by one lane; this hub records interfaces, shared contracts, dependency maps, integrated experiments and system-level decisions.
