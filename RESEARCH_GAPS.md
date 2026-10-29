@@ -1202,3 +1202,18 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Evidence:** Quantinuum/Oracle announced selected-participant access to Helios through OCI Quantum AI Compute Beta on 2026-10-22; AWS announced Braket FedRAMP Class C scope on 2026-10-16 with third-party QPU hardware outside the stated AWS-operated service boundary.  
 **Unlock:** verify official SDK/API, target identity, region, eligibility, credentials, quotas, pricing/billing, result retrieval, data retention and compliance scope; dry-run before any authorized live job. Do not infer hardware availability or advantage from an access announcement.  
 **Details:** [literature watch](docs/literature_watch/2026-10-29-cloud-route-and-compliance-updates.md); [Batch 116](docs/BATCH_116_PROVIDER_ROUTE_AND_COMPLIANCE_SURVEILLANCE.md).
+
+
+## RG-A-RAG-PDCIM-MATCHED-001 — accepted-output QUBO comparison for near-memory RAG
+
+**Status:** PREREGISTERED CONTRACT / NOT YET RUN.  
+**Owner:** Lane A; interfaces B/C/D/E/F/G/H.  
+**Source:** official arXiv preprint 2610.37033, posted 2026-10-27; UQPU has not independently reproduced it. See `docs/RESEARCH_GAP_PDCIM_MATCHED_QUBO_RAG_COMPARISON_2026-10-29.md` and `docs/literature_watch/2026-10-29-pdcim-near-memory-isings-for-rag.md`.
+
+**Objective:** compare accepted downstream RAG answers produced by exact small-instance references, CPU/GPU QUBO baselines, p-DCIM and QAOA on the same frozen query/candidate/embedding/QUBO manifests.
+
+**Blockers:** no frozen dataset/held-out query manifest, no independent source-silicon reproduction, no matched CPU/GPU/QAOA results, and no calibrated all-in energy/cost boundary. The source's larger workloads are model-based and its HBM/HBF package integration is proposed, not fabricated.
+
+**Unlock criteria:** freeze and hash workload, QUBO, acceptance, reference and target manifests; validate small instances against brute force; preregister answer-quality margins; separate direct silicon from MODEL_ONLY; report data movement, host work, retries, reconstruction, measured energy boundary and cost per accepted answer. Unknown cost is not zero. Real QPU requires credentials, explicit consent and bounded budget.
+
+**Non-claims:** no quantum advantage, 100x/100000000x economics, universal memory/GPU replacement, material/fuel/fusion result, financing-rate result or phone-class physical-compression milestone.

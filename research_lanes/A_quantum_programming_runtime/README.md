@@ -17,3 +17,11 @@ Special projects may add `algorithms/`, `compiler/`, `runtime/`, `workloads/`, `
 - [Exact 2x2 Hermitian reference contract](SMALL_HAMILTONIAN_REFERENCE_CONTRACT_2026-10-29.md) defines the bounded analytic fixture, fail-closed tests and next sparse-oracle gate.
 - Canonical implementation: `software/uqpu-prototype/uqpu/small_hamiltonian_reference.py`.
 - Focused gap: `docs/RESEARCH_GAP_A_FND002_EXACT_2X2_REFERENCE_2026-10-29.md`.
+
+
+## Current RAG/QUBO comparison gate — 2026-10-29
+
+- [Machine-readable RAG context-selection contract](RAG_CONTEXT_SELECTION_CONTRACT_2026-10-29.json) freezes the task/manifest/acceptance boundary before any run.
+- Source watch: `docs/literature_watch/2026-10-29-pdcim-near-memory-isings-for-rag.md`; focused gap: `docs/RESEARCH_GAP_PDCIM_MATCHED_QUBO_RAG_COMPARISON_2026-10-29.md`.
+- Regression guard: `software/uqpu-prototype/tests/test_rag_context_selection_contract.py`.
+- p-DCIM is a classical near-memory baseline; larger source-paper workloads are model-based. No UQPU reproduction or quantum advantage is claimed.

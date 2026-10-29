@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "contract_id": "UQPU-RAG-QUBO-2026-10-29-v1",
+  "status": "PREREGISTERED_NOT_RUN",
+  "primary_owner": "Lane A",
+  "cross_lane_interfaces": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "source": {
+    "title": "p-DCIM: A 28nm Probabilistic SRAM DCIM based Ising Machine for Near-Memory Context Selection in LLM-RAG Pipeline",
+    "url": "https://arxiv.org/abs/2610.37033",
+    "posted_date": "2026-10-27",
+    "evidence_class": "OFFICIAL_ARXIV_PREPRINT_THIRD_PARTY_CLAIMS",
+    "independently_reproduced_by_uqpu": false
+  },
+  "workload": {
+    "task": "select a bounded, requirement-aware subset of retrieved passages for downstream RAG answer generation",
+    "inputs_to_freeze": [
+      "query and held-out query-group manifest",
+      "candidate passage IDs and source snapshot",
+      "embedding model/version/precision and embedding manifest",
+      "requirement-generation model/version/prompt/decoding",
+      "context token budget",
+      "QUBO coefficient matrix including slack/penalty encoding",
+      "objective sense and feasibility constraints",
+      "downstream answer-generation model/version/prompt/decoding"
+    ],
+    "required_hashes_before_run": [
+      "workload_manifest_sha256",
+      "query_split_manifest_sha256",
+      "embedding_manifest_sha256",
+      "qubo_manifest_sha256",
+      "acceptance_contract_sha256",
+      "reference_certificate_sha256",
+      "target_config_sha256"
+    ],
+    "hashes_state": "MUST_BE_COMPUTED_AND_FROZEN_BEFORE_RUN"
+  },
+  "acceptance": {
+    "status": "THRESHOLDS_MUST_BE_PREREGISTERED_BEFORE_RUN",
+    "constraints": [
+      "selected passages obey the same context token budget",
+      "selection is valid under the frozen objective/feasibility contract",
+      "downstream generation uses the same model, prompt, decoding and token limits for every solver",
+      "held-out query groups are disjoint from tuning/optimizer selection data"
+    ],
+    "quality_metrics": [
+      "exact_match",
+      "gold_contains",
+      "token_f1"
+    ],
+    "rule": "freeze absolute thresholds or non-inferiority margins before evaluation; do not borrow the source paper's scores as UQPU acceptance thresholds",
+    "accepted_task_definition": "one downstream answer satisfying all frozen task, feasibility and quality predicates"
+  },
+  "methods": {
+    "brute_force_exact_small": {
+      "evidence_class": "EXACT_REFERENCE",
+      "use": "small instances only; publish objective/feasibility certificate",
+      "claim_boundary": "no extrapolation from exact small instances to large instances"
+    },
+    "cpu_classical": {
+      "evidence_class": "MEASURED_OR_MODEL_ONLY_AS_RECORDED",
+      "use": "competitive exact/heuristic CPU QUBO baseline",
+      "require_same_qubo_hash": true
+    },
+    "gpu_classical": {
+      "evidence_class": "MEASURED_OR_MODEL_ONLY_AS_RECORDED",
+      "use": "competitive GPU QUBO or context-selection baseline",
+      "require_same_qubo_hash": true
+    },
+    "p_dcim_silicon": {
+      "evidence_class": "THIRD_PARTY_SILICON_MEASUREMENT_IF_DIRECTLY_RUN",
+      "use": "only instances actually executed on the fabricated macro",
+      "require_direct_on_chip_instance": true,
+      "source_reported_macro": {
+        "process_nm": 28,
+        "logical_array": "64x64",
+        "sram_capacity_bits": 32768,
+        "area_mm2": 0.16,
+        "clock_mhz": 500,
+        "probabilistic_active_power_mw_approx": 0.413
+      }
+    },
+    "p_dcim_behavioral_model": {
+      "evidence_class": "MODEL_ONLY",
+      "use": "larger source-paper workloads evaluated using measurement-parameterized behavioral model",
+      "never_promote_to_silicon_measurement": true
+    },
+    "qaoa_simulator": {
+      "evidence_class": "SIMULATION_ONLY",
+      "use": "same QUBO and accepted-answer contract before hardware escalation",
+      "require_same_qubo_hash": true
+    },
+    "real_qpu_or_dwave": {
+      "evidence_class": "REAL_HARDWARE_ONLY_AFTER_AUTHORIZATION",
+      "use": "optional later comparison after simulation and acceptance gates",
+      "requires_credentials": true,
+      "requires_explicit_user_consent": true,
+      "requires_bounded_budget": true,
+      "paid_submission_allowed_now": false
+    }
+  },
+  "source_reported_metrics_not_uqpu_results": {
+    "selection_latency_ms_approx": 2.2,
+    "selection_energy_microjoules_approx": 0.9,
+    "selection_energy_boundary": "macro-normalized estimate derived from measured macro power, not complete system energy",
+    "evaluated_total_query_energy_reduction_percent_reported": 67,
+    "larger_application_workloads": "measurement-parameterized behavioral model",
+    "hbm_hbf_package_integration": "proposed, not fabricated in this work",
+    "status": "SOURCE_REPORTED_ONLY_NOT_INDEPENDENTLY_REPRODUCED"
+  },
+  "required_resource_accounting": [
+    "retrieval and embedding generation",
+    "QUBO construction, coefficient quantization and programming",
+    "solver runtime, objective value, optimality gap and feasibility",
+    "input/output/state bytes, QUBO storage and transfer bytes",
+    "host orchestration and compute",
+    "shots, billable units, retries and mitigation where applicable",
+    "output reconstruction and downstream answer generation",
+    "energy measurement boundary and method",
+    "cooling and infrastructure allocation where material",
+    "CAPEX/lifetime/capital allocation where relevant",
+    "total cost and energy per accepted useful answer"
+  ],
+  "evidence_rules": {
+    "unknown_cost_or_energy_is_zero": false,
+    "model_results_are_silicon_measurements": false,
+    "successful_execution_implies_quality_acceptance": false,
+    "cross_provider_probability_price_mixing_allowed": false,
+    "hilbert_space_dimension_implies_readable_memory": false,
+    "external_infrastructure_must_be_counted_for_inv029": true
+  },
+  "stop_conditions": [
+    "exact small-instance reference disagrees with solver objective/feasibility",
+    "held-out answer quality misses the frozen acceptance margin",
+    "data leakage or mismatched QUBO/input hashes is detected",
+    "full-stack cost/energy removes the apparent benefit",
+    "source-model outputs cannot be distinguished from direct-silicon measurements"
+  ],
+  "non_claims": [
+    "no UQPU reproduction of the source paper",
+    "no quantum advantage or QPU result",
+    "no general GPU/CPU/NPU or RAM/VRAM/HBM/storage replacement",
+    "no 100x or 100000000x economic advantage",
+    "no new physical law",
+    "no Pangola material substitution, accepted bio-oil, net fusion electricity or financing-rate result",
+    "no Data-Center-to-One-Phone completion"
+  ]
+}
