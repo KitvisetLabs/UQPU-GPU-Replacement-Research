@@ -66,12 +66,12 @@
       "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40937229540"
     },
     "combined_status_endpoint": "EMPTY_STATUS_CONTEXTS",
-    "new_commit_exact_head": "PENDING"
+    "new_commit_exact_head": "COLD_START_PASS; CORE_MATRIX_PASS; EXTENDED_QSVT_QSP_QISKIT_REFERENCE_JOBS_IN_PROGRESS_AT_FOLLOWUP"
   },
   "sync_debt": {
     "append_only": "RESEARCH_GAPS.md and WORKLOG.md not rewritten; focused gap and integration artifacts preserve this delta.",
     "pending_batch_138": "PR #152 is draft/open and not merged.",
-    "pending_sync_pr": "PR #153 cold-start audit #1346 failed for missing Research-Sync: pending-main trailer; repair required before handoff audit can pass."
+    "pending_sync_pr": "PR #153 initial cold-start audit #1346 failed for missing Research-Sync: pending-main trailer. Metadata-only repair commit 3910ef7e7eefb9997a19cbb916b031e20ec7dfaf was pushed; cold-start audit #1348 passed. PR #153 remains open pending review/merge and requires reconciliation of its older manifest snapshot with current main."
   },
   "paid_qpu_job_submitted": false,
   "external_code_imported": false,
