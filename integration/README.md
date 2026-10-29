@@ -1,6 +1,14 @@
 # Cross-Lane Integration Hub
 
-## Latest integrated delta — 2026-10-30 — agent baselines and equation frontier
+## Latest integrated delta — 2026-10-30 — temporal-parallel QEC decoder
+
+- [Eight-lane cycle report](DAILY_CYCLE_2026-10-30_TEMPORAL_PARALLEL_QEC_DECODER.md)
+- [Literature watch](../docs/literature_watch/2026-10-30-temporal-parallel-qec-decoder.md) and [focused reproduction gap](../docs/RESEARCH_GAP_QEC_TEMPORAL_PARALLEL_DECODER_2026-10-30.md)
+- [Lane A comparison helper](../software/uqpu-prototype/uqpu/qec_temporal_decoder.py) and [10 unit tests](../software/uqpu-prototype/tests/test_qec_temporal_decoder.py)
+- Evidence boundary: source-reported RTL simulation and logic synthesis only; no UQPU reproduction, fabricated-silicon measurement, paid QPU job or economic advantage claim.
+- Exact-head GitHub Actions status must be checked after the final sync commit.
+
+## Previous integrated delta — 2026-10-30 — agent baselines and equation frontier
 
 - [A–H cycle report](DAILY_CYCLE_2026-10-30_AGENT_BASELINE_AND_EQN_FRONTIER.md)
 - [Machine record](INT-20261030-AGENT-BASELINE-EQN-FRONTIER.json)
