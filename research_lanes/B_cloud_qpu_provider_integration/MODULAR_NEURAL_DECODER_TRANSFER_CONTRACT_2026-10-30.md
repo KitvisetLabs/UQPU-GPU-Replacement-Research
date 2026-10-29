@@ -50,3 +50,17 @@ Reject transfer if gains vanish on held-out groups, if the target cadence is mis
 ## Execution boundary
 
 Use public data and local evaluation first. No provider calls or QPU submissions are needed. Paid hardware execution remains forbidden without credentials, bounded budget and explicit user consent.
+
+## Related source-specific latency comparator — 2026-10-30
+
+A separate external preprint, Yan, Li and Du, “Rethink the Role of Neural Decoders in Quantum Error Correction” (https://arxiv.org/abs/2605.12046), reports accuracy/latency co-design through surface-code distance 9 and a Vitis HLS-synthesized TCN result of 271 cycles (~0.77 microseconds at 350 MHz) on a Versal VP1902. UQPU has not reproduced this result. This is a separate source arm and must not be merged numerically with the modular GNN-RNN paper's metrics or data.
+
+For any streaming/active-feedback target, add these acceptance requirements after reproducing the source baseline:
+
+1. Record per-shot latency p50/p95/p99 and sustained throughput separately; an average throughput number cannot certify an immediate feedback deadline.
+2. State the actual target controller cycle and timing path. The source's approximately 1-microsecond superconducting-cycle premise is not universal across providers or modalities.
+3. Compare source-published precision/QAT with feasible precision alternatives under equal training/inference budgets. INT4/QAT passes only if the held-out logical-error criterion remains satisfied with uncertainty reported.
+4. Distinguish analytical FPGA resource estimates, HLS synthesis, board-level timing closure and end-to-end deployed latency. Record model/checkpoint bytes, syndrome buffering, memory, transfers, energy when measured and total cost per accepted correction.
+5. Preserve separate source/data/model identities and group-disjoint device/patch/noise holdouts. Do not combine source-reported probability with another target's pricing.
+
+**Evidence boundary:** this addition refines the test contract only. It does not establish a UQPU decoder result, a general real-time guarantee, or a quantum advantage.

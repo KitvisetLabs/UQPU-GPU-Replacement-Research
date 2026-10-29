@@ -1,0 +1,62 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-QEC-DECODER-LATENCY",
+  "date": "2026-10-30",
+  "starting_main_sha": "3b295242b42c8c26ecddaa697040c2bc7673fdd4",
+  "starting_tree_sha": "927e7655ec7715f98de04fd125953d667a1b643e",
+  "primary_work_item": "QEC-TRANSFER-001",
+  "primary_lane": "B",
+  "evidence_class": "EXTERNAL_PREPRINT_PLUS_PROJECT_ACCEPTANCE_CONTRACT; NOT_REPRODUCED",
+  "source": {
+    "title": "Rethink the Role of Neural Decoders in Quantum Error Correction",
+    "authors": [
+      "Ge Yan",
+      "Shanchuan Li",
+      "Yuxuan Du"
+    ],
+    "submitted": "2026-05-12",
+    "url": "https://arxiv.org/abs/2605.12046",
+    "source_reported_result": "A distance-9 TCN configuration is reported at 271 cycles (~0.77 microseconds at 350 MHz) from Vitis HLS synthesis for a Versal VP1902 in the paper's incremental streaming setup.",
+    "caveat": "External source-reported result; not independently reproduced by UQPU and not directly comparable to the separate modular GNN-RNN decoder."
+  },
+  "lanes": {
+    "A": "ACTIVE: accepted logical output plus per-shot deadline; retain model-family/held-out gate",
+    "B": "ACTIVE: primary owner; source watch and transfer-contract refinement",
+    "C": "ACTIVE: checkpoint/syndrome bytes, buffering, memory and transfer accounting required",
+    "D": "ACTIVE: device/noise provenance and end-to-end timing closure required; no new device measurement",
+    "E": "BLOCKED: BIO-001 accepted-liquid and FUS-001 net-electricity evidence unchanged",
+    "F": "ACTIVE: matched shots/DEM, confidence intervals, cost per accepted correction",
+    "G": "ACTIVE: D/G co-design; synthesis and manufacturing evidence remain separate",
+    "H": "ACTIVE: publication and six-language strategy preservation"
+  },
+  "foundation": {
+    "FND-001": "No new thermodynamic-gap measurement",
+    "FND-002": "No output-information bound change",
+    "FND-003": "Per-shot timing is a matched runtime requirement, not a QSL result",
+    "FND-004": "No alternative physical primitive demonstrated",
+    "FND-005": "No new QFT/particle mechanism",
+    "FND-006": "Stronger falsifiable experiment bridge; no theorem/physical law produced",
+    "EQN-001_to_EQN-006": "No equation promoted; constraints, holdouts and independent validation remain mandatory"
+  },
+  "mission_invariants": {
+    "INV-029": "No Data-Center-to-One-Phone capability claim",
+    "INV-030": "Functional substitution/minimization/recovery only; no elemental transmutation",
+    "INV-031": "No accepted bio-oil/fuel cost claim",
+    "INV-032": "No net fusion electricity cost claim",
+    "INV-033": "No new principal/interest/WACC result",
+    "INV-034": "Deep-frontier agenda preserved",
+    "INV-035": "Equation discovery remains evidence-gated"
+  },
+  "nonclaims": [
+    "No UQPU reproduction of the source",
+    "No real-QPU advantage",
+    "No new physical law",
+    "No cross-source or cross-provider probability/price mixing",
+    "No paid hardware submission"
+  ],
+  "next_gate": "Verify source/data/model bytes and licenses, rebuild the pinned environment, reproduce one decoder baseline, then run group-disjoint quality and per-shot latency/quantization tests.",
+  "report_path": "integration/DAILY_CYCLE_2026-10-30_QEC_DECODER_LATENCY_AND_CROSSLANE_GATES.md",
+  "literature_watch_path": "docs/literature_watch/2026-10-30-qec-decoder-accuracy-latency-quantization.md",
+  "focused_gap_path": "docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md",
+  "lane_contract_path": "research_lanes/B_cloud_qpu_provider_integration/MODULAR_NEURAL_DECODER_TRANSFER_CONTRACT_2026-10-30.md"
+}

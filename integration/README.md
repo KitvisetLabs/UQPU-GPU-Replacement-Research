@@ -1,5 +1,15 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated cycle — 2026-10-30 — QEC decoder latency and cross-lane acceptance gates
+
+- [Literature watch](../docs/literature_watch/2026-10-30-qec-decoder-accuracy-latency-quantization.md)
+- [Updated Lane B transfer contract](../research_lanes/B_cloud_qpu_provider_integration/MODULAR_NEURAL_DECODER_TRANSFER_CONTRACT_2026-10-30.md)
+- [Focused QEC transfer gap](../docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md)
+- [Cycle report](DAILY_CYCLE_2026-10-30_QEC_DECODER_LATENCY_AND_CROSSLANE_GATES.md)
+- [Machine-readable record](INT-20261030-QEC-DECODER-LATENCY.json)
+
+The source supplies a target-specific latency/quantization comparator, not UQPU evidence. Keep decoder sources and datasets separate; require matched shots, logical-output quality, per-shot latency, memory/I/O and cost accounting before transfer claims.
+
 ## Latest integrated cycle — 2026-10-30 — Quantum Genesis application contracts and scientific-agent workflow surveillance
 
 - [Literature watch](../docs/literature_watch/2026-10-30-doe-qgpa-agent-workflow-surveillance.md)

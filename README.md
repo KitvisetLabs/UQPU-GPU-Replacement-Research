@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [QEC decoder accuracy/latency/quantization watch](docs/literature_watch/2026-10-30-qec-decoder-accuracy-latency-quantization.md) · [cross-lane cycle report](integration/DAILY_CYCLE_2026-10-30_QEC_DECODER_LATENCY_AND_CROSSLANE_GATES.md) · [QEC transfer gap](docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md) · [machine-readable record](integration/INT-20261030-QEC-DECODER-LATENCY.json)
+
 - [Modular neural QEC decoder transfer gate](integration/DAILY_CYCLE_2026-10-30_MODULAR_NEURAL_QEC_DECODER.md) · [literature watch](docs/literature_watch/2026-10-30-modular-neural-qec-decoder-transfer.md) · [focused gap](docs/RESEARCH_GAP_QEC_NEURAL_DECODER_TRANSFER_2026-10-30.md) · [Lane B contract](research_lanes/B_cloud_qpu_provider_integration/MODULAR_NEURAL_DECODER_TRANSFER_CONTRACT_2026-10-30.md) · [machine-readable handoff](integration/INT-20261030-NEURAL-QEC-DECODER.json)
 
 - [Derivative-constrained PINN literature watch](docs/literature_watch/2026-10-30-derivative-constrained-pinns-equation-discovery.md) · [focused reproduction gap](docs/RESEARCH_GAP_DCPINN_REPRODUCTION_2026-10-30.md) · [official APS source](https://doi.org/10.1103/5bbf-p6zk)

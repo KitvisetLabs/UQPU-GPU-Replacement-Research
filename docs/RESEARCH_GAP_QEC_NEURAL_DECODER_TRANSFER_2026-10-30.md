@@ -96,3 +96,17 @@ Reject a portability or utility claim if any of the following holds:
 - INV-034/035: no new physical law is proposed. AI/software methods remain hypotheses and tools subject to falsification and independent validation.
 
 No paid QPU job is required or authorized for this gap.
+
+## Related evidence delta — accuracy/latency/quantization co-design (2026-10-30)
+
+A fresh public-source review found Yan, Li and Du, “Rethink the Role of Neural Decoders in Quantum Error Correction,” https://arxiv.org/abs/2605.12046 (submitted 2026-05-12). The paper reports surface-code neural-decoder studies through distance 9 and a Vitis HLS-synthesized TCN configuration at 271 cycles, approximately 0.77 microseconds at 350 MHz, on a Versal VP1902. It argues for hardware-aware QAT/INT4 under its own test conditions. This is an external source-reported result, not a UQPU reproduction, and is not numerically pooled with the separate modular GNN-RNN decoder paper.
+
+### Additional falsification gate for streaming targets
+
+- Reproduce the paper-specific baseline, source revision, model and data first; retain hashes and licenses.
+- Measure per-shot p50/p95/p99 latency separately from throughput, against the actual target controller deadline.
+- Compare precision/QAT arms under equal budgets; reject INT4 if accepted logical-output quality fails the predeclared threshold or uncertainty criterion.
+- Preserve the paper's source-specific task, data, noise model and code distance. Use group-disjoint device/patch/noise holdouts for transfer claims.
+- Separate analytical resource estimates, HLS synthesis, board timing closure and full end-to-end feedback latency. Include buffering, memory/I/O, energy where measured and cost per accepted logical correction.
+
+**Status remains:** SOURCE PINNED / DATA RETRIEVAL AND REPRODUCTION NOT RUN. This comparator does not remove Gate 0 or establish UQPU performance, quantum advantage or a physical law.
