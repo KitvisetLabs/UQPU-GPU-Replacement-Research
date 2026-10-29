@@ -1,0 +1,55 @@
+{
+  "schema": "uqpu-daily-integration-v1",
+  "cycle_date": "2026-10-30",
+  "batch": 136,
+  "work_id": "QA-PROV-DUPKEY-001",
+  "starting_main_sha": "7603db37e2e907e7d549a54916b129c7b093446f",
+  "primary_owner": "A",
+  "integration_owner": "F",
+  "strategic_publication_owner": "H",
+  "evidence_class": [
+    "SOFTWARE_TEST_GUARD",
+    "OFFICIAL_GOVERNMENT_STRATEGY_REPORT"
+  ],
+  "code_change": {
+    "path": "software/uqpu-prototype/tests/test_sparse_stateprep_asset_provenance.py",
+    "change": "Use object_pairs_hook to reject duplicate JSON keys recursively and add a conflicting-key regression test.",
+    "local_test_execution": "NOT_RUN",
+    "exact_head_ci": "PENDING"
+  },
+  "literature": {
+    "path": "docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md",
+    "source": "https://www.energy.gov/science/articles/genesis-mission-frameworks-advancing-frontiers-american-discovery",
+    "source_date": "2026-09-25",
+    "evidence_class": "OFFICIAL_GOVERNMENT_ADVISORY_REPORT",
+    "novelty": "New-to-repository strategic report on AI/HPC/quantum/experimental-facility integration, AI-assisted fusion engineering, critical-magnet search/recycling and bioeconomy ambitions.",
+    "limitations": [
+      "Not a peer-reviewed experiment",
+      "No UQPU benchmark",
+      "No net-electric fusion measurement",
+      "No accepted Pangola fuel measurement",
+      "No demonstrated material substitution or financing effect"
+    ]
+  },
+  "lanes": {
+    "A": "Duplicate-key provenance guard added; state-preparation reproduction still open.",
+    "B": "No provider execution.",
+    "C": "State dimension and readable classical bytes remain distinct.",
+    "D": "No device evidence.",
+    "E": "Strategy-level DOE report indexed; BIO-001 and FUS-001 unchanged.",
+    "F": "Evidence gate strengthened; exact-head CI pending.",
+    "G": "No manufacturing result; D/G co-design retained.",
+    "H": "Report watch added; multilingual strategic references preserved."
+  },
+  "foundational": {
+    "FND_001_to_006": "No new measurement or mechanism; active research remains.",
+    "EQN_001_to_006": "No new equation promoted; full discovery/falsification ladder retained."
+  },
+  "invariants": {
+    "INV_029_to_035": "Preserved; no mission or technology claim promoted.",
+    "INV_025_026_027": "Preserved and evidence-gated."
+  },
+  "next_gate": "Observe exact-head CI; then controlled asset retrieval, MD5/SHA-256 verification, dependency audit and independent small-instance state-vector reproduction.",
+  "paid_qpu_job_submitted": false,
+  "mission_advantage_claimed": false
+}
