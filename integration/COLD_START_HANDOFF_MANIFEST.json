@@ -1,12 +1,13 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-29T19:03:00Z",
+  "prepared_utc": "2026-10-29T19:05:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "b7e7c4014f6e4e20291c3294bf032b6b6c6e2437",
   "priority_lane": "A",
-  "current_frontier": "Batch 138 (2026-10-30): add a regression counterexample showing that a restricted pure-power fit to y=1+x^2 can attain log-space R²≈0.99445 yet miss a held-out point by ≈24.24%. The isolated arithmetic check passed; repository tests and exact-head hosted CI remain unverified. This is synthetic MODEL_ONLY evidence, not a physical law or mission advantage. Work is pending PR synchronization.",
+  "current_frontier": "Batch 138 (2026-10-30): add a regression counterexample showing that a restricted pure-power fit to y=1+x^2 can attain log-space R²≈0.99445 yet miss a held-out point by ≈24.24%. The isolated arithmetic check passed; repository tests and exact-head hosted CI remain unverified. This is synthetic MODEL_ONLY evidence, not a physical law or mission advantage. Work is pending PR synchronization. An additional official DOE Genesis award announcement (2026-10-08) was new to repository search and is recorded as program/funding context only; it supplies no technical result or UQPU funding eligibility.",
   "required_reading": [
+    "docs/literature_watch/2026-10-30-doe-genesis-awards-ai-fusion-materials-quantum.md",
     "docs/BATCH_138_MODEL_FAMILY_COUNTEREXAMPLE_GATE.md",
     "docs/RESEARCH_GAP_POWERLAW_MODEL_FAMILY_2026-10-30.md",
     "software/uqpu-prototype/tests/test_scaling_exponent_baseline.py",
@@ -394,7 +395,7 @@
   "next_independent_action": "For PR #152, run the full repository test suite and obtain exact-head GitHub Actions results; only then consider merge. After merge, verify the new main SHA and add the main-sync record. Next add noise/outlier/piecewise/multiscale model-family fixtures and matched-budget comparator protocol.",
   "audit_command": "cd software/uqpu-prototype && python -m uqpu.cold_start_handoff --repository-root ../..",
   "latest_cycle_artifact": "integration/DAILY_CYCLE_2026-10-30_MODEL_FAMILY_COUNTEREXAMPLE.md",
-  "latest_literature_watch": "docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md",
+  "latest_literature_watch": "docs/literature_watch/2026-10-30-doe-genesis-awards-ai-fusion-materials-quantum.md",
   "last_cycle_ci_observation": {
     "initial_commit": "6742ac1b9bf68b5d0a726f582efa0b5de7bda001",
     "initial_cold_start_run": 40454588726,
@@ -466,6 +467,7 @@
   },
   "latest_batch": "Batch 138 — power-law model-family counterexample and held-out falsification gate; see docs/BATCH_138_MODEL_FAMILY_COUNTEREXAMPLE_GATE.md",
   "latest_literature_watches": [
+    "docs/literature_watch/2026-10-30-doe-genesis-awards-ai-fusion-materials-quantum.md",
     "docs/literature_watch/2026-10-30-scaling-exponent-identifiability-msn-pinn.md",
     "docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md",
     "docs/literature_watch/2026-10-29-ai-open-ended-theorem-discovery-and-physics-formalization.md",
