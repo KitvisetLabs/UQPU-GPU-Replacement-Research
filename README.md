@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Batch 134 — sparse state-preparation Toffoli-cost model-alignment gate](docs/BATCH_134_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT.md) · [literature watch](docs/literature_watch/2026-10-29-sparse-stateprep-improved-toffoli-cost.md) · [focused gap](docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md) · [benchmark contract](research_lanes/A_quantum_programming_runtime/SPARSE_STATEPREP_TOFFOLI_BENCHMARK_V1.json) · [integration report](integration/DAILY_CYCLE_2026-10-29_SPARSE_STATEPREP_TOFFOLI.md) · [integration record](integration/INT-20261029-SPARSE-STATEPREP-TOFFOLI.json)
+
 - [Batch 133 — BIO-001 waste-pyrolysis techno-economic surveillance](docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md) · [literature watch](docs/literature_watch/2026-10-29-waste-biomass-pyrolysis-tea-yadav-lamers.md) · [BIO-001 transfer gap](docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_BIO001_PYROLYSIS_TEA.md) · [integration record](integration/INT-20261029-BIO001-PYROLYSIS-TEA.json)
 
 - [Batch 132 — amplitude-damping invariant-generator cross-check](docs/BATCH_132_AMPLITUDE_DAMPING_GENERATOR_CROSSCHECK.md) · [Lane A contract](research_lanes/A_quantum_programming_runtime/OPEN_QSYS_AMPLITUDE_DAMPING_FIXTURE_2026-10-29.md) · [implementation](software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py) · [tests](software/uqpu-prototype/tests/test_open_quantum_invariant_toy.py) · [integration report](integration/DAILY_CYCLE_2026-10-29_AMPLITUDE_DAMPING_CROSSCHECK.md) · [integration record](integration/INT-20261029-AMPLITUDE-DAMPING.json) · [A–H architecture placement gap](docs/RESEARCH_GAP_AUXILIARY_LANE_I_PLACEMENT_2026-10-29.md)

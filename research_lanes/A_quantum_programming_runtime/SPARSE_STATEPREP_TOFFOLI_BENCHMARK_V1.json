@@ -1,0 +1,117 @@
+{
+  "schema": "uqpu-sparse-stateprep-toffoli-benchmark-v1",
+  "version": "1.0.0",
+  "date": "2026-10-29",
+  "primary_owner": "Lane A",
+  "interfaces": {
+    "C": "Track classical description bytes, table storage, data movement and the distinction between state-space dimension and readable memory.",
+    "F": "Own evidence labels, matched baselines, resource accounting and cost per accepted useful task.",
+    "B": "Provider-neutral adapter and target/run provenance; simulator/dry-run before any authorized hardware run.",
+    "D/G": "Translate logical gate metrics to target-aware depth, routing, ancilla, QEC/factory, yield and manufacturing assumptions."
+  },
+  "source": {
+    "authors": [
+      "Felix Rupprecht",
+      "Sabine Wölk"
+    ],
+    "title": "Sparse quantum state preparation with improved Toffoli cost",
+    "journal": "Quantum",
+    "volume": 10,
+    "article": 2208,
+    "publication_date": "2026-09-10",
+    "doi": "10.22331/q-2026-09-10-2208",
+    "publisher_url": "https://quantum-journal.org/papers/q-2026-09-10-2208/",
+    "arxiv": "https://arxiv.org/abs/2601.09388",
+    "assets": "https://doi.org/10.5281/zenodo.18234600",
+    "project_reproduction": "NOT_PERFORMED"
+  },
+  "evidence_class": "PREREGISTERED_BENCHMARK_CONTRACT",
+  "objective": "Test whether the published sparse-isometry construction reproduces and improves complete state-preparation resources for a frozen useful-output workload under aligned input and gate-model assumptions.",
+  "external_claims_not_project_results": {
+    "isometry_toffoli_cost": "AUTHOR_REPORTED_APPROX_2s_WORST_CASE_FOR_SUFFICIENTLY_LARGE_n",
+    "random_state_numerical_cost": "AUTHOR_REPORTED_CLOSER_TO_s",
+    "improvement_factor": "AUTHOR_REPORTED_APPROX_LOG(s)/2_VS_PRIOR_STATE_OF_ART",
+    "independent_reproduction": false
+  },
+  "workload_families": [
+    {
+      "id": "SSP-001",
+      "name": "Small exact sparse states",
+      "purpose": "Compare synthesized circuits to an independent classical state-vector reference.",
+      "held_out": "Disjoint (n,s) pairs and amplitudes frozen before evaluation."
+    },
+    {
+      "id": "SSP-002",
+      "name": "Real-amplitude sparse states",
+      "purpose": "Test the paper's real-coefficient optimization pathway.",
+      "held_out": "New real amplitude profiles, including highly nonuniform magnitudes."
+    },
+    {
+      "id": "SSP-003",
+      "name": "Complex-amplitude sparse states",
+      "purpose": "Test whether the claimed resource behavior persists when phases are required.",
+      "held_out": "New phase patterns and support arrangements."
+    },
+    {
+      "id": "SSP-004",
+      "name": "Promise-violation negative control",
+      "purpose": "Verify fail-closed behavior when the declared sparse support or input access promise is false.",
+      "held_out": "Out-of-support addresses and inconsistent support manifests."
+    }
+  ],
+  "comparison_models": [
+    "Rupprecht-Wolk sparse-isometry construction; Toffoli count reported separately",
+    "Luo-Li sparse-state-preparation theorem contract; symbolic T-count only until full audit",
+    "Li-et-al sparse-QROM/state-preparation contract; keep its input-access assumptions separate",
+    "Direct exact state preparation for small instances",
+    "Best available competitive classical representation or computation for the same accepted output"
+  ],
+  "comparison_axes": [
+    "target_state_semantics",
+    "support_promise_and_discovery_cost",
+    "amplitude_representation_and_precision",
+    "Toffoli_count",
+    "decomposed_T_count",
+    "logical_depth",
+    "ancilla_count",
+    "classical_preprocessing_time",
+    "classical_description_bytes",
+    "state_fidelity_or_error",
+    "transfer_and_state_io",
+    "measurement_and_output_reconstruction",
+    "host_compute",
+    "energy_if_measured",
+    "provider_billing_if_authorized",
+    "total_cost_per_accepted_useful_task"
+  ],
+  "acceptance_gates": {
+    "source_version_and_asset_hashes_pinned": true,
+    "independent_small_instance_reproduction": true,
+    "theorem_assumptions_aligned_before_cross_paper_comparison": true,
+    "Toffoli_and_T_count_kept_distinct": true,
+    "disjoint_held_out_n_s_epsilon_cases": true,
+    "counterexample_and_promise_violation_tests": true,
+    "matched_useful_output_and_classical_baseline": true,
+    "cost_per_accepted_task_required_for_economic_claim": true,
+    "paid_qpu_requires_credentials_bounded_budget_and_explicit_consent": true
+  },
+  "evidence_promotion": [
+    "LITERATURE_ONLY",
+    "MODEL_ONLY",
+    "SIMULATION_ONLY",
+    "LAB_RESULT_OR_PUBLISHED_EXPERIMENT",
+    "INDEPENDENT_REPRODUCTION",
+    "END_TO_END_WORKLOAD_RESULT"
+  ],
+  "nonclaims": {
+    "independent_reproduction_completed": false,
+    "UQPU_hardware_advantage_established": false,
+    "energy_advantage_established": false,
+    "cost_advantage_established": false,
+    "readable_classical_memory_equivalence_established": false,
+    "universal_state_preparation_bound_established": false,
+    "new_physical_law_established": false,
+    "paid_QPU_execution_authorized": false,
+    "Hilbert_space_dimension_equals_readable_classical_bytes": false
+  }
+}

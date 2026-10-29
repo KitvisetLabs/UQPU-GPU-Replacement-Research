@@ -1,0 +1,68 @@
+{
+  "record_id": "INT-20261029-SPARSE-STATEPREP-TOFFOLI",
+  "date": "2026-10-29",
+  "starting_main_sha": "091c159584ee5a3adbdbe1aaaf00bf29059c3582",
+  "primary_owner": "A",
+  "integration_owner": "F",
+  "interfaces": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "G",
+    "H"
+  ],
+  "evidence_class": [
+    "PEER_REVIEWED_EXTERNAL_ALGORITHM",
+    "PREREGISTERED_BENCHMARK_CONTRACT"
+  ],
+  "literature_delta": {
+    "title": "Sparse quantum state preparation with improved Toffoli cost",
+    "authors": [
+      "Felix Rupprecht",
+      "Sabine Wölk"
+    ],
+    "doi": "10.22331/q-2026-09-10-2208",
+    "published": "2026-09-10",
+    "source_url": "https://quantum-journal.org/papers/q-2026-09-10-2208/",
+    "new_to_repository": true,
+    "independent_reproduction": false
+  },
+  "repo_search": {
+    "queries": [
+      "2601.09388",
+      "q-2026-09-10-2208",
+      "piecewise continuous functions state preparation Guseynov Liu",
+      "plc3-2jyx"
+    ],
+    "matching_files": []
+  },
+  "pre_change_ci": {
+    "cold_start_audit": {
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40889615896"
+    },
+    "prototype_and_invariants": {
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40889615921"
+    }
+  },
+  "implementation": {
+    "added_contract": "research_lanes/A_quantum_programming_runtime/SPARSE_STATEPREP_TOFFOLI_BENCHMARK_V1.json",
+    "added_test": "software/uqpu-prototype/tests/test_sparse_stateprep_toffoli_contract.py",
+    "test_scope": "Contract/schema and evidence-gate validation only; not external theorem reproduction."
+  },
+  "paid_qpu_jobs_submitted": 0,
+  "claims": {
+    "UQPU_hardware_advantage": false,
+    "energy_advantage": false,
+    "cost_advantage": false,
+    "readable_classical_memory_equivalence": false,
+    "new_physical_law": false,
+    "material_substitution": false,
+    "commercial_bio_oil": false,
+    "net_reliable_fusion_electricity": false,
+    "financing_rate_reduction": false
+  },
+  "next_gate": "Pin source/assets, reproduce exact small-n circuits, align Toffoli/T-count/sparse-QROM assumptions, and evaluate disjoint held-out cases before mapping to a matched useful-output workload."
+}
