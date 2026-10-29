@@ -2243,3 +2243,49 @@ Research-Sync: main
 - Main page, integration index, scoreboard, WORKLOG and RESEARCH_GAPS updated in the same commit. Next gate: implement exact small-model fixtures and a deterministic classical baseline, then run blind family-disjoint tests and adversarial controls.
 
 Research-Sync: main
+
+
+## 2026-10-29 — Batch 131: open-system toy oracle + qTPU hybrid runtime surveillance
+
+**Starting main SHA:** `ff2fbb5ea3fad629666a4407fe59942b86015592`  
+**Main immediately before this worklog sync:** `a99c9721d8a9cbac413e8e45b0763de0d2cf7965`  
+**Status:** all listed artifacts and index updates are committed on canonical `main`; exact-head Actions is not verified green.
+
+### Source-to-main commit reconciliation
+
+| Change | Main SHA |
+|---|---|
+| Lane A exact toy evaluator | `d6f644563aa8ab583efefe3b152c27b10cacb83d` |
+| Lane A nine-test suite | `e2de78b4652b26e881d89a19d15f1b8cd0ce5cae` |
+| qTPU literature watch | `f0ce34676133a25b93c56fc3d955af72420aad64` |
+| qTPU focused reproduction gap | `5934c79663e47b81828e819417499dd71662f8e2` |
+| Daily integration report | `ca09a3bb795b89dcbb87cf6a3ef9e0312fbcf638` |
+| Machine-readable integration record | `00ccab89835ddd5915c7acaa385aaba8e17de8ac` |
+| Lane A fixture contract | `22e7e2b11fdab7c56af3baadf2178a6faaed62e2` |
+| Batch 131 research record | `4cf5b88a0969a49d272a324287d36c1075273951` |
+| Batch 131 editorial correction | `3db92db2017233952d4d8ac31a62c44e621887d4` |
+| Lane A contract notation correction | `81e34625f17705fc831cc88d9db962a6ecb78c60` |
+| README index + latest-cycle summary | `22e8362a75240ffe80685ad379be8a42fe88d681` |
+| Integration hub index | `ef3257236d3a50fa103809481a3c7ecd02b489dd` |
+| Eight-lane scoreboard | `ac4e42d66bde6e8141d39335379694a84a3d34bf` |
+| Living research-gap register | `a99c9721d8a9cbac413e8e45b0763de0d2cf7965` |
+
+Each change above was made on `main` with a `Research-Sync: main` trailer. This worklog update is its own bookkeeping commit and will be reconciled at the next canonical-head audit, consistent with the sync policy's recursion rule.
+
+### Methods and actual results
+
+- Inspected current charter, invariant/goals/README, A–H operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, root directives 00/00A/01–06, main-commit sync policy, cross-lane protocol, newest Batch 130/129/128, focused gaps, scoreboard, and existing equation-discovery helpers.
+- Implemented a standard-library toy oracle for a declared one-qubit pure-dephasing generator. It separately tests generator invariance and operator-algebra closure, with strict input validation.
+- Nine synthetic regression methods passed in the equivalent local reference harness. Repository Actions/full-suite status remains unverified; a fresh clone could not be obtained because the execution container could not resolve GitHub.
+- Fresh literature surveillance found qTPU's USENIX OSDI 2026 hybrid tensor-network compiler/runtime source was not indexed in this repository. Official proceedings and public artifact README/reproduction/dependency/licence files were inspected. No qTPU code was copied or run; author-reported performance remains external evidence.
+- Added a dated source watch, focused qTPU gap, Lane A contract, Batch 131, integration report/JSON, README/hub/scoreboard/gap-register updates. Large canonical files were fetched in full and appended without deleting prior history.
+
+### A–H, foundations and mission impact
+
+A: toy invariance/algebra checks; qTPU-inspired lowering is a candidate only. B: provider-neutral target boundaries; no QPU. C: observable/tensor dimensions are not readable memory; resource fields remain required. D: no device result. E: BIO-001/FUS-001 gaps unchanged. F: matched useful-output and total-resource contract emphasized. G: D/G co-design retained, no manufacturing result. H: qTPU watch and strategic context preserved.
+
+FND-001/003/005 have no new measurements; FND-002 lower bound unchanged; FND-004 remains a known model; FND-006 has stronger toy counterexamples. EQN-001–006 remain evidence-gated, with invariance and closure tested separately. INV-029 through INV-035 and INV-025/026/027 are preserved. No new physical law, quantum advantage, readable-memory replacement, critical-material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone closure is claimed.
+
+### CI and next gate
+
+The combined-status endpoint returned no status contexts at the starting head. This is not a passing CI result. Check Actions for the latest `main` head, repair feasible failures and record actual run IDs. Then add a second analytically known generator and run the preregistered open-system benchmark with family/regime holdouts, >=30 seeds, negative controls, abstention and complete resources. Separately, freeze a matched-output qTPU/UQPU/classical-tensor-network manifest before any hardware run. No paid QPU job was submitted.
