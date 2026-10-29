@@ -1,9 +1,9 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-29T18:09:35Z",
+  "prepared_utc": "2026-10-29T18:10:10Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "canonical_start_sha": "2ac2cb6e0e4df8551ddbd95edfcf864100bc82e0",
+  "canonical_start_sha": "be7552c3397c4c8ce938c5bb83ffe58cad32b526",
   "priority_lane": "A",
   "current_frontier": "Batch 137 (2026-10-30): add a guarded classical log-linear baseline for the restricted positive power-law model, seven synthetic tests, and an ICML 2026/PMLR scaling-exponent identifiability watch. The isolated harness passed 7/7. MSN-PINN is not reproduced, exact-head Actions are unverified, and no physical law or mission advantage is claimed. Batch 136's sparse-state provenance guard still requires exact-head CI and controlled archive/hash/dependency audit.",
   "required_reading": [
@@ -443,18 +443,18 @@
     "note": "Core/invariant workflow passed on the Batch 107 starting head; the new Batch 107 commit requires exact-head validation."
   },
   "current_head_validation": {
-    "commit": "2ac2cb6e0e4df8551ddbd95edfcf864100bc82e0",
+    "commit": "be7552c3397c4c8ce938c5bb83ffe58cad32b526",
     "core_conclusion": "UNVERIFIED_NO_STATUS_CONTEXTS",
     "cold_start_conclusion": "UNVERIFIED_NO_WORKFLOW_RUNS_EXPOSED",
-    "observed_at_utc": "2026-10-29T18:09:35Z",
-    "note": "Observation applies to the pre-manifest-refresh main head. The exact-head Actions state is not confirmed; the manifest-refresh commit creates a new head and must itself be checked."
+    "observed_at_utc": "2026-10-29T18:10:10Z",
+    "note": "The latest checked pre-refresh main SHA has no exposed status contexts or workflow runs through the available endpoints. The current manifest update creates a new main SHA that must be checked separately."
   },
   "latest_cycle_ci_observation": {
-    "starting_commit": "2ac2cb6e0e4df8551ddbd95edfcf864100bc82e0",
+    "starting_commit": "be7552c3397c4c8ce938c5bb83ffe58cad32b526",
     "core_status": "UNVERIFIED_NO_STATUS_CONTEXTS",
     "cold_start_status": "UNVERIFIED_NO_WORKFLOW_RUNS_EXPOSED",
-    "observed_at_utc": "2026-10-29T18:09:35Z",
-    "note": "The combined commit-status endpoint returned no status contexts for this head. The available workflow-run wrapper returned no runs and only exposes PR-triggered runs. This is not a green result. The handoff-manifest refresh commit itself requires exact-head validation."
+    "observed_at_utc": "2026-10-29T18:10:10Z",
+    "note": "Checked this main SHA after Batch 137 and the handoff refresh: the combined-status endpoint returned no status contexts, and the available workflow-run wrapper returned no runs. Do not infer a green result. This follow-up manifest commit itself will need exact-head validation."
   },
   "latest_batch": "Batch 137 — scaling-exponent identifiability and known-law reference gate; see docs/BATCH_137_SCALING_EXPONENT_IDENTIFIABILITY_GATE.md",
   "latest_literature_watches": [
