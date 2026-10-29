@@ -2,6 +2,7 @@
 
 **Date:** 2026-10-29  
 **Starting canonical main SHA:** `49108f21ff23125c725d9847324d3a9798a24066`  
+**Substantive main commit:** `de45d470d226d77a0b12783d117b63f49865ad16`  
 **Primary owner:** Lane A — analytic toy oracle and workload acceptance  
 **Integration owner:** Lane F — evidence, scoreboard and repository architecture  
 **Publication/provenance interface:** Lane H  
@@ -82,7 +83,7 @@ The required generator → constraints → evaluator → held-out test → count
 
 ## 7. Synchronization, CI and next gate
 
-This batch, its code/tests, Lane A contract, integration report/JSON, README index, lane indexes, scoreboard, WORKLOG and architecture-gap note are intended to be committed together on canonical `main` with `Research-Sync: main`. Exact commit reconciliation is recorded in the follow-up sync marker.
+This batch, its code/tests, Lane A contract, integration report/JSON, README index, lane indexes, scoreboard, WORKLOG and architecture-gap note are intended to be committed together on canonical `main` with `Research-Sync: main`. The substantive 13-path change is recorded at [main commit `de45d470d226d77a0b12783d117b63f49865ad16`](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/de45d470d226d77a0b12783d117b63f49865ad16). This reconciliation update is itself a follow-up bookkeeping change; its own SHA is intentionally left for the next canonical-head audit.
 
 At authoring time, the latest `main` head had a successful cold-start handoff audit, while the last project test workflow was on an earlier commit; therefore the new code is **not CI-green until an exact-head test run confirms it**. No local full-repository test result is claimed.
 

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "record_id": "INT-20261029-BIO001-PYROLYSIS-TEA",
+  "date": "2026-10-29",
+  "primary_owner": "E",
+  "integration_owner": "F",
+  "provenance_owner": "H",
+  "starting_main_sha": "de45d470d226d77a0b12783d117b63f49865ad16",
+  "status": "LITERATURE_ONLY",
+  "evidence_class": "PEER_REVIEWED_SOURCE_METADATA_AND_ABSTRACT",
+  "source": {
+    "authors": [
+      "Geetanjali Yadav",
+      "Patrick Lamers"
+    ],
+    "title": "Process Feasibility Analysis of Waste Biomass Valorization to Biochar and Bio-Oil via Slow and Fast Pyrolysis",
+    "journal": "Energy & Fuels",
+    "year": 2026,
+    "volume": 40,
+    "issue": 9,
+    "pages": "4670-4682",
+    "doi": "10.1021/acs.energyfuels.5c05655",
+    "doi_url": "https://doi.org/10.1021/acs.energyfuels.5c05655",
+    "official_lab_record": "https://research-hub.nlr.gov/en/publications/process-feasibility-analysis-of-waste-biomass-valorization-to-bio-2/",
+    "full_text_audited": false,
+    "data_reproduced": false
+  },
+  "reported_model_values": {
+    "slow_pyrolysis_biochar_msp_usd_per_tonne": [
+      188,
+      260
+    ],
+    "fast_pyrolysis_bio_oil_msp_usd_per_gge": [
+      6.49,
+      9.68
+    ],
+    "drivers": [
+      "feedstock cost",
+      "product yield",
+      "scale"
+    ],
+    "values_are_source_reported_model_outputs": true,
+    "not_project_measurements": true
+  },
+  "watch": "docs/literature_watch/2026-10-29-waste-biomass-pyrolysis-tea-yadav-lamers.md",
+  "gap": "docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md",
+  "batch": "docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md",
+  "integration_report": "integration/DAILY_CYCLE_2026-10-29_BIO001_PYROLYSIS_TEA.md",
+  "mission_invariants": {
+    "INV029": "NO_PHONE_COMPRESSION_RESULT",
+    "INV030": "NO_MATERIAL_QUALIFICATION",
+    "INV031": "NO_ACCEPTED_PANGOLA_FUEL_RESULT",
+    "INV032": "NO_FUSION_ELECTRICITY_RESULT",
+    "INV033": "NO_FINANCING_EFFECT_MEASURED",
+    "INV034": "NO_NEW_PHYSICS_RESULT",
+    "INV035": "NO_NEW_EQUATION_OR_PHYSICAL_LAW"
+  },
+  "related_programs": {
+    "BIO001": "SOURCE_BASELINE_ONLY",
+    "FUS001": "UNCHANGED_OPEN",
+    "FIN001": "UNCHANGED_OPEN"
+  },
+  "nonclaims": [
+    "no Pangola transfer",
+    "no accepted saleable fuel",
+    "no universal carbon-material substitution",
+    "no net fusion electricity",
+    "no lower WACC",
+    "no UQPU commercial advantage"
+  ],
+  "paid_qpu_submitted": false
+}

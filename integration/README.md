@@ -13,6 +13,11 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — BIO-001 pyrolysis techno-economic surveillance
+
+- [Batch 133](../docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md), [literature watch](../docs/literature_watch/2026-10-29-waste-biomass-pyrolysis-tea-yadav-lamers.md), [focused gap](../docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md) and [machine-readable record](INT-20261029-BIO001-PYROLYSIS-TEA.json) add a new-to-repository peer-reviewed pyrolysis TEA source.
+- Source-reported biochar/bio-oil MSPs remain literature-only. No Pangola transfer, accepted fuel, or commercial price is established; FUS-001/FIN-001 remain separate.
+
 ## Latest integrated cycle — 2026-10-29 — amplitude-damping generator cross-check
 
 - [Batch 132](../docs/BATCH_132_AMPLITUDE_DAMPING_GENERATOR_CROSSCHECK.md), [Lane A contract](../research_lanes/A_quantum_programming_runtime/OPEN_QSYS_AMPLITUDE_DAMPING_FIXTURE_2026-10-29.md), [implementation/tests](../software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py) and [integration record](INT-20261029-AMPLITUDE-DAMPING.json) add a second analytically known open-system generator and separate invariance from algebra closure.

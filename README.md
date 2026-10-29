@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Batch 133 — BIO-001 waste-pyrolysis techno-economic surveillance](docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md) · [literature watch](docs/literature_watch/2026-10-29-waste-biomass-pyrolysis-tea-yadav-lamers.md) · [BIO-001 transfer gap](docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_BIO001_PYROLYSIS_TEA.md) · [integration record](integration/INT-20261029-BIO001-PYROLYSIS-TEA.json)
+
 - [Batch 132 — amplitude-damping invariant-generator cross-check](docs/BATCH_132_AMPLITUDE_DAMPING_GENERATOR_CROSSCHECK.md) · [Lane A contract](research_lanes/A_quantum_programming_runtime/OPEN_QSYS_AMPLITUDE_DAMPING_FIXTURE_2026-10-29.md) · [implementation](software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py) · [tests](software/uqpu-prototype/tests/test_open_quantum_invariant_toy.py) · [integration report](integration/DAILY_CYCLE_2026-10-29_AMPLITUDE_DAMPING_CROSSCHECK.md) · [integration record](integration/INT-20261029-AMPLITUDE-DAMPING.json) · [A–H architecture placement gap](docs/RESEARCH_GAP_AUXILIARY_LANE_I_PLACEMENT_2026-10-29.md)
 
 - [Batch 131 — open-system invariant toy oracle + qTPU hybrid runtime](docs/BATCH_131_QTPU_HYBRID_RUNTIME_AND_OPEN_QSYS_FIXTURE.md) · [qTPU literature watch](docs/literature_watch/2026-10-29-qtpu-hybrid-tensor-network-runtime.md) · [Lane A toy contract](research_lanes/A_quantum_programming_runtime/OPEN_QSYS_TOY_FIXTURE_2026-10-29.md) · [toy module](software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py) · [tests](software/uqpu-prototype/tests/test_open_quantum_invariant_toy.py) · [qTPU focused gap](docs/RESEARCH_GAP_QTPU_RESOURCE_MATCHED_REPRODUCTION_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_QTPU_AND_OPEN_QSYS_FIXTURE.md) · [integration record](integration/INT-20261029-QTPU-OPEN-QSYS.json)
@@ -183,6 +185,12 @@ A–H, INV-025/026/027 and INV-029–035 remain preserved. FND-001–006, EQN-00
 Fresh public searches found the relevant SymbolFit (v2 revised 2026-10-19), PiT-PO, MPNO and formal-proof-search sources already represented in the repository. No duplicate literature article was created. The README contents map now appears near the top for cold-start navigation; the six-language master-plan links and recorded strategic AI-agent/funding references remain preserved.
 
 Starting main was f3ca3c12b20b4fa28adfb276ae5804427f9ca2a8. Core/invariant run #1945 and cold-start audit #1204 passed on that exact starting head. The first new-head core run #1946 and cold-start audit #1205 failed only because the handoff manifest mistakenly listed docs/RESEARCH_GAPS.md instead of the canonical root RESEARCH_GAPS.md. All seven new predictive-interval unit tests passed in Python 3.12; the overall run failed on the existing cold-start audit test. The path is corrected in this follow-up; exact-head Actions must pass before calling the cycle green. Lane A Priority-1 remains the pinned-SDK signed-Max-Cut reconstruction gate, followed by provider-neutral lowering and target-aware simulation. No real HEP benchmark, paid QPU job, new physical law, material/fuel/electricity advantage, lower WACC or Data-Center-to-One-Phone physical compression is claimed.
+
+## Previous Eight-Lane research cycle — 2026-10-29 — BIO-001 pyrolysis techno-economic surveillance
+
+[Batch 133](docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md) records a new-to-repository peer-reviewed *Energy & Fuels* techno-economic analysis. Its abstract reports modelled minimum selling prices of US$188–260/t for slow-pyrolysis biochar and US$6.49–9.68/GGE for fast-pyrolysis bio-oil, with feedstock cost, yield and scale as key sensitivities. The full TEA and data have not been reproduced; these values are literature-only and are not transferred to Pangola or treated as accepted-fuel economics. See the [dated watch](docs/literature_watch/2026-10-29-waste-biomass-pyrolysis-tea-yadav-lamers.md) and [focused BIO-001 gap](docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md).
+
+The same run reconciled the Batch 132 source commit and kept the amplitude-damping fixture at MODEL_ONLY status. INV-029–035, BIO-001, FUS-001, FIN-001 and the 100,000,000× targets remain evidence-gated.
 
 ## Previous Eight-Lane research cycle — 2026-10-29 — amplitude-damping generator cross-check
 

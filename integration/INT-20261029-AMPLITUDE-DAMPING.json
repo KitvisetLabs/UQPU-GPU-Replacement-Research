@@ -6,7 +6,7 @@
   "integration_owner": "F",
   "provenance_owner": "H",
   "starting_main_sha": "49108f21ff23125c725d9847324d3a9798a24066",
-  "status": "COMMITTED_AWAITING_EXACT_HEAD_CI",
+  "status": "COMMITTED_EXACT_HEAD_TEST_MATRIX_GREEN_EXTENDED_JOBS_RUNNING",
   "evidence_class": "MODEL_ONLY",
   "implementation": "software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py",
   "tests": "software/uqpu-prototype/tests/test_open_quantum_invariant_toy.py",
@@ -67,7 +67,17 @@
     "INV025_026_027": "GOALS_REMAIN_FALSIFIABLE_AND_EVIDENCE_GATED"
   },
   "paid_qpu_submitted": false,
-  "exact_head_ci": "PENDING",
+  "exact_head_ci": {
+    "test_matrix": {
+      "python_3_10": "success",
+      "python_3_11": "success",
+      "python_3_12": "success"
+    },
+    "cold_start_handoff": "success",
+    "extended_jobs": "in_progress"
+  },
   "literature_watch_created": false,
-  "literature_watch_reason": "Freshly checked material sources already have dated repository watches; no duplicate article created."
+  "literature_watch_reason": "Freshly checked material sources already have dated repository watches; no duplicate article created.",
+  "main_commit_sha": "de45d470d226d77a0b12783d117b63f49865ad16",
+  "main_commit_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/de45d470d226d77a0b12783d117b63f49865ad16"
 }

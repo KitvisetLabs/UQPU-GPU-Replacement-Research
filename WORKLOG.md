@@ -2308,3 +2308,12 @@ Research-Sync: main
 - Literature/source and strategic context remain intact. No paid QPU job was submitted.
 
 Research-Sync: main
+
+## Literature-surveillance continuation — 2026-10-29 — BIO-001 pyrolysis TEA
+
+- A repository search confirmed DOI 10.1021/acs.energyfuels.5c05655 was not yet indexed. The official National Laboratory of the Rockies record identifies Yadav and Lamers' peer-reviewed *Energy & Fuels* paper (2026, 40(9), 4670–4682). The abstract reports modelled MSP ranges of US$188–260/t for slow-pyrolysis biochar and US$6.49–9.68/GGE for fast-pyrolysis bio-oil; feedstock cost, yield and scale are key sensitivities.
+- Published [literature watch](docs/literature_watch/2026-10-29-waste-biomass-pyrolysis-tea-yadav-lamers.md), [BIO-001 transfer gap](docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md), [Batch 133](docs/BATCH_133_BIO001_WASTE_PYROLYSIS_TEA_SURVEILLANCE.md), integration report and machine-readable record. Full paper/data were not reproduced; no Pangola transfer, accepted fuel or commercial price is claimed.
+- Batch 132 source-to-main reconciliation: the 13-path amplitude-damping and A–H architecture audit change is committed at `de45d470d226d77a0b12783d117b63f49865ad16`. At the latest CI check, Python 3.10/3.11/3.12 test matrix and cold-start handoff audit passed; extended QSP/QSVT/Qiskit/reference-benchmark jobs were still running.
+- BIO-001 now has a new external model baseline; FUS-001 and FIN-001 remain open and are not supported by the pyrolysis paper. The source does not establish fusion electricity, reduced WACC, material substitution or Data-Center-to-One-Phone progress.
+
+Research-Sync: main
