@@ -1,0 +1,41 @@
+{
+  "schema": "uqpu-integrated-evidence-v1",
+  "id": "INT-20261029-EQN-FINITE-ERROR-VALIDATION",
+  "created_date": "2026-10-29",
+  "primary_owner": "Lane A — quantum programming/workloads/compiler/runtime",
+  "interfaces": [
+    "F — economics/benchmarks/evidence/integration",
+    "H — literature surveillance/publication",
+    "C — state/data movement",
+    "D/G — device and manufacturing co-design",
+    "INV-034/035"
+  ],
+  "evidence_class": "SOFTWARE_CONTRACT_AND_REGRESSION_TESTS",
+  "status": "CI_PENDING_EXACT_HEAD",
+  "change": {
+    "target": "software/uqpu-prototype/uqpu/equation_discovery.py::EquationHypothesis.validate",
+    "defect": "Held-out errors only checked for negativity; NaN/infinity and bool values could pass the check, while non-numeric values could raise an uncontrolled comparison error.",
+    "correction": "Require non-boolean int/float, finite float conversion and non-negative value for each supplied held-out error.",
+    "tests": "software/uqpu-prototype/tests/test_equation_discovery.py::test_heldout_errors_must_be_finite_numeric_and_non_boolean"
+  },
+  "cross_lane_decisions": {
+    "A": "Fail closed on invalid numeric inputs before using held-out error to evaluate a candidate.",
+    "F": "This protects metric integrity only; it is not accepted-task quality, measured energy, lifecycle economics or a financing result.",
+    "H": "The OpenAI 2026-10-26 theorem/complexity/QFT claims are already tracked by RG-EQN-009; do not count them as a new literature delta or as UQPU evidence.",
+    "C": "Classical output-information, memory, transfer and reconstruction costs remain explicit.",
+    "D_G": "No device/fabrication/process/yield claims are inferred.",
+    "E": "BIO-001 and FUS-001 remain open/model-only; no material/fuel/electricity claim changes."
+  },
+  "acceptance": {
+    "numeric_values": [
+      "finite",
+      "non-negative",
+      "not boolean",
+      "int or float"
+    ],
+    "missing_value_policy": "None remains permitted for unmeasured held-out errors; missing values cannot imply improvement.",
+    "evidence_boundary": "Input validation and unit tests do not prove semantic equivalence, physical truth, theorem correctness, hardware advantage or economics."
+  },
+  "next_gate": "Check exact-head GitHub Actions, then pin/build public external proof artifacts under RG-EQN-009 and continue the sparse-entry/product-formula Lane A comparison.",
+  "source_watch": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+}

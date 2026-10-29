@@ -190,6 +190,24 @@ class EquationDiscoveryTests(unittest.TestCase):
         )
         self.assertFalse(false_discovery.ready_for_physical_candidate_claim)
 
+    def test_heldout_errors_must_be_finite_numeric_and_non_boolean(self):
+        invalid_values = (
+            float("nan"),
+            float("inf"),
+            float("-inf"),
+            True,
+            False,
+            "0.1",
+        )
+        for field_name in ("heldout_baseline_error", "heldout_candidate_error"):
+            for invalid_value in invalid_values:
+                with self.subTest(field=field_name, value=invalid_value):
+                    with self.assertRaisesRegex(ValueError, "finite numeric value"):
+                        self._candidate(**{field_name: invalid_value}).validate()
+
+        with self.assertRaisesRegex(ValueError, "cannot be negative"):
+            self._candidate(heldout_candidate_error=-0.1).validate()
+
     def test_contract_keeps_equation_baseline_constraints_and_falsifier(self):
         fields = required_discovery_fields()
         for name in (

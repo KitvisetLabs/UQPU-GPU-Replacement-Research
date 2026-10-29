@@ -51,3 +51,9 @@ Maximize scientifically defensible coupling among A-H so that software, provider
 ## Source deduplication note — 2026-10-29
 
 Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as previously indexed prior art. No duplicate RISR claim is counted as a fresh literature delta.
+
+
+## Latest integrated cycle — 2026-10-29 — finite equation-discovery metrics
+- [INT-20261029-EQN-FINITE-ERROR-VALIDATION](INT-20261029-EQN-FINITE-ERROR-VALIDATION.json) binds Lane A's finite numeric held-out-error guard to Lane F's evidence acceptance and Lane H's external theorem-claim review.
+- The change rejects NaN, infinities, booleans, non-numeric values and negative errors before metric-based reasoning. It does not verify equation equivalence or physical truth.
+- OpenAI's 2026-10-26 mathematics/complexity/QFT claims remain covered by [RG-EQN-009](../docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md); no duplicate source delta was counted.

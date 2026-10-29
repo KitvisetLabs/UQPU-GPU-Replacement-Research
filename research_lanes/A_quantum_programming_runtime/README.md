@@ -32,3 +32,8 @@ Special projects may add `algorithms/`, `compiler/`, `runtime/`, `workloads/`, `
 - Shared prototype helper: software/uqpu-prototype/uqpu/equation_discovery_benchmark.py.
 - Regression tests: software/uqpu-prototype/tests/test_equation_discovery_benchmark.py.
 - The helper checks grouped split disjointness and paired held-out errors; it does not parse equations or prove semantic equivalence. See docs/RESEARCH_GAP_EQN_DISCOVERY_MATCHED_ROBUSTNESS_2026-10-29.md.
+
+
+## Equation-discovery robustness gate — 2026-10-29
+- [Batch 120 finite-value validation](../../docs/BATCH_120_FINITE_EQUATION_METRICS_AND_EVIDENCE_GATE.md) closes a fail-open edge case where NaN/infinite or boolean held-out errors could pass a simple non-negative check.
+- Regression coverage is in `software/uqpu-prototype/tests/test_equation_discovery.py`; this guards numeric inputs only, not semantic equivalence or physical validity.
