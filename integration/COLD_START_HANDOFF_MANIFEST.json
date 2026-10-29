@@ -1,11 +1,11 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-29T19:05:00Z",
+  "prepared_utc": "2026-10-29T19:07:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "b7e7c4014f6e4e20291c3294bf032b6b6c6e2437",
   "priority_lane": "A",
-  "current_frontier": "Batch 138 (2026-10-30): add a regression counterexample showing that a restricted pure-power fit to y=1+x^2 can attain log-space R²≈0.99445 yet miss a held-out point by ≈24.24%. The isolated arithmetic check passed; repository tests and exact-head hosted CI remain unverified. This is synthetic MODEL_ONLY evidence, not a physical law or mission advantage. Work is pending PR synchronization. An additional official DOE Genesis award announcement (2026-10-08) was new to repository search and is recorded as program/funding context only; it supplies no technical result or UQPU funding eligibility.",
+  "current_frontier": "Batch 138 (2026-10-30): add a regression counterexample showing that a restricted pure-power fit to y=1+x^2 can attain log-space R²≈0.99445 yet miss a held-out point by ≈24.24%. The isolated arithmetic check passed. Workflow run 2057 on prior head 816dae passed unit/invariant and CLI-smoke jobs on Python 3.10/3.11/3.12; Python 3.12 finite-shot and equal-budget QAOA steps also passed. Additional Qiskit/QSP/QSVT/reference jobs were queued. Current PR head c6d7cd5 has no exact-head run exposed, so the full workflow and current-head CI remain unverified. This is synthetic MODEL_ONLY evidence, not a physical law or mission advantage. Work is pending PR synchronization. An additional official DOE Genesis award announcement (2026-10-08) was new to repository search and is recorded as program/funding context only; it supplies no technical result or UQPU funding eligibility.",
   "required_reading": [
     "docs/literature_watch/2026-10-30-doe-genesis-awards-ai-fusion-materials-quantum.md",
     "docs/BATCH_138_MODEL_FAMILY_COUNTEREXAMPLE_GATE.md",
@@ -452,18 +452,18 @@
     "note": "Core/invariant workflow passed on the Batch 107 starting head; the new Batch 107 commit requires exact-head validation."
   },
   "current_head_validation": {
-    "commit": "b7e7c4014f6e4e20291c3294bf032b6b6c6e2437",
-    "core_conclusion": "UNVERIFIED_NO_STATUS_CONTEXTS",
-    "cold_start_conclusion": "UNVERIFIED_NO_WORKFLOW_RUNS_EXPOSED",
-    "observed_at_utc": "2026-10-29T18:59:35Z",
-    "note": "The combined-status endpoint returned no status contexts for the base main SHA, and the available workflow-run wrapper returned no runs. This is not green CI. The source branch and any later merge require their own exact-head checks."
+    "commit": "c6d7cd5141a67ba97f1e6046c14bd67867de149d",
+    "core_conclusion": "UNVERIFIED_NO_EXACT_HEAD_RUN_EXPOSED",
+    "cold_start_conclusion": "UNVERIFIED_NO_EXACT_HEAD_RUN_EXPOSED",
+    "observed_at_utc": "2026-10-29T19:07:00Z",
+    "note": "Run 2057 completed unit/invariant and CLI-smoke jobs successfully on prior head 816dae72; other Qiskit/QSP/QSVT/reference jobs were queued. Current PR head c6d7cd5 has no associated run exposed by the available endpoint. Do not infer green exact-head CI."
   },
   "latest_cycle_ci_observation": {
     "starting_commit": "b7e7c4014f6e4e20291c3294bf032b6b6c6e2437",
-    "core_status": "UNVERIFIED_NO_STATUS_CONTEXTS",
-    "cold_start_status": "UNVERIFIED_NO_WORKFLOW_RUNS_EXPOSED",
-    "observed_at_utc": "2026-10-29T18:59:35Z",
-    "note": "Queried the base main SHA; no status contexts or workflow runs were exposed. The source branch is pending PR and has not been reported green."
+    "core_status": "PARTIAL_PASS_ON_PRIOR_PR_HEAD",
+    "cold_start_status": "CURRENT_HEAD_UNVERIFIED",
+    "observed_at_utc": "2026-10-29T19:07:00Z",
+    "note": "Run 2057 on prior head 816dae72 passed unit/invariant and CLI-smoke jobs in Python 3.10/3.11/3.12; Python 3.12 finite-shot and equal-budget QAOA steps passed. Additional Qiskit/QSP/QSVT/reference jobs were queued. Current head c6d7cd5 is not validated."
   },
   "latest_batch": "Batch 138 — power-law model-family counterexample and held-out falsification gate; see docs/BATCH_138_MODEL_FAMILY_COUNTEREXAMPLE_GATE.md",
   "latest_literature_watches": [
