@@ -60,3 +60,7 @@ Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as
 
 
 **CI snapshot for Batch 120:** code commit [`e67d122cae3d`](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e67d122cae3de89cef62655ab7b134e0493baf6d) passed the Python 3.10/3.11/3.12 test matrix and cold-start handoff audit; four additional reference/QSVT/Qiskit jobs were still running at this snapshot. No failures were observed. See [prototype workflow #1992](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40816096724).
+
+
+## Latest integrated cycle — 2026-10-29 — proof-DAG split-edge guard
+- [Batch 123 integration report](DAILY_CYCLE_2026-10-29_PROOFDAG_SPLIT_EDGE_GUARD.md) — held-out dependency leakage guard, four regression cases, deduplicated literature surveillance and exact-head CI gate.

@@ -124,6 +124,46 @@ class ProofDagReuseTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "independent_reproduction_count"):
             validate_proof_dag([node])
 
+    def test_train_node_cannot_depend_on_held_out_parent(self):
+        parent = dict(node_id="held-out", claim_family="held-family", split="test",
+                      status="CANDIDATE", statement_sha256=h("a"), parents=[],
+                      residual_premises=[])
+        child = dict(node_id="train-child", claim_family="train-family", split="train",
+                     status="CANDIDATE", statement_sha256=h("b"), parents=["held-out"],
+                     residual_premises=[])
+        with self.assertRaisesRegex(ValueError, "held-out dependency leakage"):
+            validate_proof_dag([parent, child])
+
+    def test_held_out_node_cannot_depend_on_other_held_out_family(self):
+        parent = dict(node_id="validation-fragment", claim_family="family-a", split="validation",
+                      status="CANDIDATE", statement_sha256=h("a"), parents=[],
+                      residual_premises=[])
+        child = dict(node_id="test-target", claim_family="family-b", split="test",
+                     status="CANDIDATE", statement_sha256=h("b"), parents=["validation-fragment"],
+                     residual_premises=[])
+        with self.assertRaisesRegex(ValueError, "held-out dependency leakage"):
+            validate_proof_dag([parent, child])
+
+    def test_same_family_same_split_internal_edge_is_allowed(self):
+        parent = dict(node_id="test-lemma", claim_family="family-test", split="test",
+                      status="CANDIDATE", statement_sha256=h("a"), parents=[],
+                      residual_premises=[])
+        child = dict(node_id="test-target", claim_family="family-test", split="test",
+                     status="CANDIDATE", statement_sha256=h("b"), parents=["test-lemma"],
+                     residual_premises=[])
+        result = validate_proof_dag([parent, child])
+        self.assertTrue(result["metadata_gate_passed"])
+
+    def test_validation_node_can_depend_on_training_parent(self):
+        parent = dict(node_id="train-lemma", claim_family="family-train", split="train",
+                      status="CANDIDATE", statement_sha256=h("a"), parents=[],
+                      residual_premises=[])
+        child = dict(node_id="validation-target", claim_family="family-validation",
+                     split="validation", status="CANDIDATE", statement_sha256=h("b"),
+                     parents=["train-lemma"], residual_premises=[])
+        result = validate_proof_dag([parent, child])
+        self.assertTrue(result["metadata_gate_passed"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -381,3 +381,19 @@ Batch 105 does not close RG-QAOA-PARITY-001, BIO-001, FUS-001 or FIN-001 and doe
 | H | New primary-source watch, batch and integration report published; six-language strategic context preserved. | RESEARCH_PUBLICATION | Continue handoff-ready publication; no strategic ambition treated as scientific/financial evidence. |
 
 Batch 107 adds no new physical law, real-QPU result, material substitution, accepted fuel, net fusion electricity, lower WACC or mission-level economic advantage.
+
+
+## Batch 123 — held-out proof-DAG dependency leakage guard (2026-10-29)
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| A | Parent-edge split guard rejects held-out dependency leakage; four regression cases added. | SOFTWARE_METADATA_CONTRACT | Exact-head CI, pinned corpus/kernel and equal-budget proof-search comparison |
+| B | Provider-neutral routes maintained; no paid target job. | MAINTAINED | Simulator/dry-run and paired provider/target quality-cost evidence |
+| C | State/memory/I/O accounting retained; no memory-equivalence claim. | MAINTAINED | Measure peak memory, transfers, host reconstruction and energy |
+| D | Device/fab scope retained. | NO_NEW_DEVICE_EVIDENCE | Target-native device evidence and D/G co-design |
+| E | BIO-001/FUS-001/material gates remain open. | OPEN_GAPS | Accepted-liquid and net-reliable-electricity cost closure |
+| F | Split-edge evidence gate strengthened. | SOFTWARE_CONTRACT | Cost per independently accepted held-out result |
+| G | D/G equipment and factory co-design retained. | NO_NEW_FACTORY_EVIDENCE | Cost per good die/device/package and yield |
+| H | Literature deduplication and strategic continuity recorded. | RESEARCH_PUBLICATION | Preserve six-language references and provenance |
+
+Batch 123 closes only a metadata-level split-edge path. It does not establish proof correctness, physical law, real-QPU advantage, material/fuel/electricity advantage, lower WACC or mission-level compression.

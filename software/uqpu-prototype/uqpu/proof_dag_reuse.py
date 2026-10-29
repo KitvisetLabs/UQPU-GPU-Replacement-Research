@@ -119,6 +119,18 @@ def validate_proof_dag(nodes: Iterable[Mapping[str, object]]) -> dict[str, objec
         for parent in dependencies:
             if parent not in by_id:
                 raise ValueError(f"{node_id} references missing parent: {parent}")
+            parent_node = by_id[parent]
+            parent_split = parent_node["split"]
+            # Held-out theorem families may use training dependencies, but a
+            # validation/test node must not import another held-out family's
+            # proof fragment. Same-family, same-split edges remain valid for
+            # internal proof-DAG structure.
+            if parent_split != "train" and (
+                parent_split != split or parent_node["claim_family"] != family
+            ):
+                raise ValueError(
+                    f"{node_id} has held-out dependency leakage through parent {parent}"
+                )
 
         status = node["status"]
         checked_or_failed = status in {

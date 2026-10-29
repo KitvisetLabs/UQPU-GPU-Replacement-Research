@@ -2163,3 +2163,15 @@ Started from observed main head `eae52617e5d3effa942b8f4653bb835a876cc355`; re-r
 ## 2026-10-29 — CI handoff-trailer repair follow-up
 
 The Batch 122 code/test commit triggered the expected exact-head workflows. The Prototype/Invariant job was still running at the first poll. The Autonomous Cold-Start Handoff Audit failed with the single reported error `missing_commit_trailer:Research-Sync: main`; its checkout, installation and lane/pair audit steps completed, and the artifact was uploaded. This was a commit-message compliance issue, not evidence of a code/test failure. A follow-up synchronization commit carries the required trailer and triggers a fresh exact-head audit. No claim of green CI is made until the rerun completes.
+
+
+## 2026-10-29 — Batch 123: held-out proof-DAG dependency leakage guard
+
+- Starting main SHA: `210c10042b7ef7579d5345090d9c8a64ae440e0f`. Inspected the canonical charter/invariants/goals/README, operating system, open-frontier directive, strategic model/references, root directives 00/00A/01–06, Batch 122 and its gap/integration, validator/tests, living gaps and lane scoreboard.
+- Lane A code inspection found dependency edges were not constrained by split: a training node could import a held-out parent, or a held-out family could import another held-out family via a normal parent edge. Added a fail-closed guard: non-training parent edges are allowed only within the same claim family and same split. Added four regression tests covering leakage rejection and permitted edges.
+- Fresh public literature surveillance revisited symbolic/neural-symbolic equation discovery, theorem discovery, physics-informed modeling, thermodynamic bounds and credible model changes. ProofEvolve, SymbolFit/LegoSR/RISR and the quantum-feedback/measurement-only sources are already recorded; no new-to-repository material source was found for this gate, so no duplicate literature article was created.
+- A–H: A/F advanced at software/evidence-contract level; B provider-neutral routes maintained; C memory/state/I/O accounting maintained; D/G co-design maintained; E biomass/material/fuel/fusion gates open; H provenance and six-language strategic context preserved. INV-034/035 remain cross-cutting.
+- Negative evidence: no local full-suite run due prior DNS/network clone block; exact-head CI is the acceptance gate. No proof kernel, external corpus, real QPU, physical experiment, commercial fuel/electricity, lower WACC or phone-class physical-compression result is claimed.
+- Next gate: exact-head CI, then pinned theorem-family corpus/kernel and equal-budget baseline-versus-schema-reuse comparison with independent held-out proof reproduction.
+
+Research-Sync: main
