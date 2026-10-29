@@ -64,3 +64,9 @@ Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as
 
 ## Latest integrated cycle — 2026-10-29 — proof-DAG split-edge guard
 - [Batch 123 integration report](DAILY_CYCLE_2026-10-29_PROOFDAG_SPLIT_EDGE_GUARD.md) — held-out dependency leakage guard, four regression cases, deduplicated literature surveillance and exact-head CI gate.
+
+
+## Latest integrated cycle — 2026-10-29 — exact-statement split guard
+- [Batch 124](../docs/BATCH_124_EXACT_STATEMENT_SPLIT_LEAKAGE_GUARD.md), [focused FND-006 gap](../docs/RESEARCH_GAP_FND006_EXACT_STATEMENT_SPLIT_OVERLAP_2026-10-29.md), [validator](../software/uqpu-prototype/uqpu/proof_dag_reuse.py), [regression tests](../software/uqpu-prototype/tests/test_proof_dag_reuse.py), and [integration report](DAILY_CYCLE_2026-10-29_EXACT_STATEMENT_SPLIT_GUARD.md) extend the proof-DAG split contract to reject exact statement-digest overlap across different splits even when claim-family IDs differ.
+- This is exact-byte identity checking, not semantic-equivalence or corpus-independence proof. The isolated guard logic passed two sanity cases; exact-head repository CI remains unverified because no status/check records were returned.
+- No new-to-repository primary literature result was found; sources remain externally reported and unreproduced. INV-029–035 and A–H remain evidence-gated.
