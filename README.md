@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Batch 136 — JSON provenance guard and DOE Genesis watch](docs/BATCH_136_JSON_PROVENANCE_GUARD_AND_GENESIS_WATCH.md) · [literature watch](docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md) · [integration report](integration/DAILY_CYCLE_2026-10-30_JSON_PROVENANCE_GUARD.md) · [integration record](integration/INT-20261030-JSON-PROVENANCE-GUARD.json)
+
 - [Batch 135 — sparse state-preparation asset provenance preflight](docs/BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md) · [asset manifest](research_lanes/A_quantum_programming_runtime/SPARSE_STATEPREP_TOFFOLI_ASSET_PROVENANCE_V1.json) · [regression test](software/uqpu-prototype/tests/test_sparse_stateprep_asset_provenance.py) · [focused gap](docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_SPARSE_STATEPREP_ASSET_PREFLIGHT.md) · [integration record](integration/INT-20261029-SPARSE-STATEPREP-ASSET-PROVENANCE.json)
 
 - [Literature watch — piecewise-function state preparation](docs/literature_watch/2026-10-29-piecewise-function-state-preparation.md) · [focused gap](docs/RESEARCH_GAP_A_FUNCTION_STRUCTURED_STATEPREP_2026-10-29.md) · [integration record](integration/INT-20261029-PIECEWISE-STATEPREP.json)
@@ -55,6 +57,12 @@
 - [Batch 110 — higher-order parity-QAOA circuit and exact certificate](docs/BATCH_110_PARITY_QAOA_CIRCUIT_AND_REFERENCE_CERTIFICATE.md) · [parity-QAOA prototype](software/uqpu-prototype/uqpu/parity_qaoa.py) · [parity-QAOA tests](software/uqpu-prototype/tests/test_parity_qaoa.py)
 - [Batch 109 — AI formal discovery and FND-006](docs/BATCH_109_AI_FORMAL_DISCOVERY_AND_FOUNDATIONAL_INTEGRATION.md) · [FND-006 reproduction gap](docs/RESEARCH_GAP_FND006_AI_FORMAL_DISCOVERY_REPRO_2026-10-29.md) · [AI theorem-discovery literature watch](docs/literature_watch/2026-10-29-ai-open-ended-theorem-discovery-and-physics-formalization.md)
 - [Batch 108 — quEStab extended-tableau audit](docs/BATCH_108_QUESTAB_EXTENDED_TABLEAU_AND_AH_INTEGRATION.md) · [quEStab reproduction gap](docs/RESEARCH_GAP_QUESTAB_EXTENDED_TABLEAU_REPRODUCTION_2026-10-29.md) · [quEStab literature watch](docs/literature_watch/2026-10-29-questab-extended-tableau-multigpu-audit.md) · [Batch 107 — GPU stabilizer simulator](docs/BATCH_107_GPU_STABILIZER_SIMULATOR_AND_AH_INTEGRATION.md) · [QuaSARQ reproduction gap](docs/RESEARCH_GAP_QUASARQ_STABILIZER_REPRODUCTION_2026-10-29.md) · [GPU stabilizer literature watch](docs/literature_watch/2026-10-29-gpu-accelerated-stabilizer-simulation.md) · [Batch 106 — photonic in-situ training](docs/BATCH_106_PHOTONIC_INSPIRE_AND_AH_INTEGRATION.md) · [INSPIRE acceptance gap](docs/RESEARCH_GAP_PHOTONIC_INSPIRE_END_TO_END_2026-10-29.md) · [Batch 105 — GF(2) parity rank and catalytic biomass](docs/BATCH_105_GF2_PARITY_RANK_AND_BIOMASS_CATALYST_SURVEILLANCE.md) · [Catalyst-biochar research gap](docs/RESEARCH_GAP_BIO001_CATALYST_BIOCHAR_FUNCTIONAL_ACCEPTANCE_2026-10-28.md)
+
+## Latest Eight-Lane research cycle — 2026-10-30 — JSON provenance guard and DOE Genesis watch
+
+**Batch 136:** [provenance parser guard + all-lane status](docs/BATCH_136_JSON_PROVENANCE_GUARD_AND_GENESIS_WATCH.md) · [DOE literature watch](docs/literature_watch/2026-10-30-doe-genesis-ai-accelerated-science.md) · [integration report](integration/DAILY_CYCLE_2026-10-30_JSON_PROVENANCE_GUARD.md) · [machine-readable record](integration/INT-20261030-JSON-PROVENANCE-GUARD.json).
+
+Lane A's sparse-state-preparation provenance test now rejects duplicate JSON keys instead of silently accepting conflicting evidence fields. The DOE Genesis Mission Frameworks report (2026-09-25) is recorded as an official strategy-level source for AI/HPC/quantum integration, fusion engineering, materials/recycling and bioeconomy—not as experimental or commercial proof. Provider surveillance found no authoritative, dated access/pricing change to justify changing the provider matrix. Exact-head CI is pending; no state-preparation reproduction or paid QPU job is claimed.
 
 ## Latest Eight-Lane research cycle — 2026-10-29 — open-system toy oracle and qTPU hybrid runtime
 

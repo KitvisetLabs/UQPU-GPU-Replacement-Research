@@ -2334,3 +2334,16 @@ Research-Sync: main
 - Post-commit Actions must be checked at the exact new main head before this batch is accepted. No paid QPU job was submitted.
 
 Research-Sync: main
+
+
+## Daily Eight-Lane research cycle — 2026-10-30 — JSON provenance guard and DOE Genesis watch
+
+- Starting canonical main SHA: `7603db37e2e907e7d549a54916b129c7b093446f`; work ID `QA-PROV-DUPKEY-001`; Batch 136.
+- Added recursive duplicate-key rejection to the sparse-state-preparation provenance test. Ordinary JSON parsing silently keeps the last repeated key; the new synthetic regression case requires a `ValueError` for conflicting evidence fields. The manifest itself remains source-metadata-only and unchanged.
+- Added a dated watch for the DOE Office of Science Advisory Committee's 2026-09-25 Genesis Mission Frameworks report. It is an official strategy-level source, not experimental evidence; it does not establish net fusion electricity, commercial fuel, material substitution, QPU advantage or financing effects.
+- Fresh surveillance rechecked symbolic/neural-symbolic equation discovery, formal theorem discovery, physics-informed modeling, automated experiment design, bounds/no-go results, sparse state preparation, biomass conversion, fusion and finance. The currently relevant sparse-state, ProofEvolve, PiT-PO, SymbolFit and CoSR-status records were already indexed; no duplicate watch was made for those.
+- A–H: A parser guard; B no target run; C state dimension remains distinct from classical bytes/I/O; D no device result; E strategy watch only; F evidence boundary strengthened; G no factory result; H strategic report indexed and multilingual links preserved.
+- FND-001–006 and EQN-001–006: no new measurement or equation promotion. INV-029–035 and INV-025/026/027 remain preserved and evidence-gated. BIO-001, FUS-001 and FIN-001 remain open.
+- Starting-head combined-status API returned no status records; exact-head CI is pending. The test change is on the research branch; no local full-suite run is claimed. No paid QPU job was submitted.
+
+Research-Sync: main

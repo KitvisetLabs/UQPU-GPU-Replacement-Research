@@ -49,3 +49,8 @@ Special projects may add `algorithms/`, `compiler/`, `runtime/`, `workloads/`, `
 
 - [TINN acceptance contract](TINN_TIME_DEPENDENT_PDE_ACCEPTANCE_CONTRACT_2026-10-29.md) preregisters a known-law comparison against conventional PINNs, compatible operator-splitting methods and a converged solver reference.
 - The contract requires grouped trajectory/regime holdouts, matched budgets, physical residual/conservation/bound metrics, failure retention and memory/I/O/energy/cost accounting. External source claims remain unreproduced; see [focused gap](../../docs/RESEARCH_GAP_TINN_TIME_DEPENDENT_PDE_GENERALIZATION_2026-10-29.md).
+
+
+## Duplicate-key JSON provenance guard — 2026-10-30
+
+The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The associated regression test now parses with an `object_pairs_hook` that rejects repeated keys recursively and includes a synthetic conflicting-`evidence_class` test. This prevents silent last-key-wins ambiguity in future evidence manifests. It does not verify downloaded bytes, source checksums, dependencies, the external circuit, physical resources or economics. See [Batch 136](../../docs/BATCH_136_JSON_PROVENANCE_GUARD_AND_GENESIS_WATCH.md) and [integration report](../../integration/DAILY_CYCLE_2026-10-30_JSON_PROVENANCE_GUARD.md).

@@ -509,3 +509,19 @@ Batch 131 does not establish a new physical law, quantum advantage, readable-mem
 
 **Integration result:** the external source gives a cost-driver reference, not an accepted-fuel result. FUS-001 and FIN-001 remain open. No new physical law, QPU advantage, material substitution, commercial fuel, net fusion electricity, lower WACC or Data-Center-to-One-Phone milestone is claimed.
 
+
+
+## Batch 136 — JSON provenance guard and DOE Genesis watch (2026-10-30)
+
+| Lane | Current advance | Evidence | Main next gate |
+|---|---|---|---|
+| **A** | Duplicate-key JSON parser guard added to the sparse-state provenance regression test | Test change; exact-head CI pending | Run CI, then controlled asset retrieval and independent small-instance reproduction |
+| **B** | Provider-neutral route unchanged | No provider execution | Keep simulator/dry-run first; paid jobs require explicit authorization |
+| **C** | Provenance parsing tightened; state dimension stays separate from classical bytes and I/O | Software/evidence guard | Measure bytes, transfer and reconstruction on matched workloads |
+| **D** | No device result | No new hardware evidence | Map validated logical resources to physical requirements |
+| **E** | DOE AI/fusion/material/bioeconomy report indexed | Official strategy report only | Convert proposals to measured feedstock/material/net-electric contracts |
+| **F** | Ambiguous duplicate-key provenance now fails closed | Test guard; CI pending | Exact-head workflow and full evidence accounting |
+| **G** | D/G co-design retained | No manufacturing result | Require process-window, yield and cost-per-good-device evidence |
+| **H** | Dated DOE report watch; multilingual plan context preserved | Strategy/publication | Translate priorities into staged, falsifiable work packages |
+
+**Integration result:** no new physical law, real-QPU advantage, material substitution, accepted fuel, net fusion electricity, lower WACC or Data-Center-to-One-Phone milestone is established. FND-001–006, EQN-001–006, INV-025/026/027 and INV-029–035 remain active and evidence-gated.
