@@ -2317,3 +2317,20 @@ Research-Sync: main
 - BIO-001 now has a new external model baseline; FUS-001 and FIN-001 remain open and are not supported by the pyrolysis paper. The source does not establish fusion electricity, reduced WACC, material substitution or Data-Center-to-One-Phone progress.
 
 Research-Sync: main
+
+
+## Daily Eight-Lane research cycle — 2026-10-29 — sparse state-preparation asset provenance preflight
+
+**Starting main SHA:** `12d59c9854d7783e4161ad38008f916f94b1a6fc`  
+**Batch:** [135](docs/BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md)  
+**Integration:** [report](integration/DAILY_CYCLE_2026-10-29_SPARSE_STATEPREP_ASSET_PREFLIGHT.md) · [machine-readable record](integration/INT-20261029-SPARSE-STATEPREP-ASSET-PROVENANCE.json)
+
+- Read the latest canonical charter, version invariants, goals, README, operating system, open-frontier directive, strategic model/reference links, permanent 00/00A/01–06 directives, latest Batch 134/133/132, state-preparation/equation-discovery gaps and current-head Actions. Core workflow run 40900037455 and cold-start audit run 40900037447 were green at the starting head.
+- Fresh literature surveillance covered symbolic/neural-symbolic equation discovery, AI/formal theorem discovery, physics-informed models, state preparation/sparse QROM, lower bounds, biomass conversion, fusion and R&D finance. Relevant method papers and the CoSR status conflict were already recorded; no duplicate literature watch was created.
+- Verified the upstream [Zenodo software record](https://zenodo.org/records/18234600): v1 archive metadata, publisher MD5, Apache-2.0 source license, Python/Rust implementation and dependency-security warning. The download request failed in the execution environment, so no archive/checksum/dependency/test/reproduction claim is made.
+- Added the source-asset provenance manifest and a standard-library regression test that guards the metadata and non-claim states. Updated Batch 135, the existing focused gap, README, living gap history and integration hub/record.
+- A: provenance gate added; independent small-instance state-preparation reproduction remains blocked. B: no provider target/job. C: state-space dimension remains distinct from readable classical bytes. D/G: device/factory mapping waits for validated logical resources; co-design remains active. E: BIO-001/FUS-001 unchanged. F: source metadata kept separate from measured economics. H: multilingual strategic references preserved.
+- FND-001/002/003/004/005 have no new measurements or mechanism. FND-006 and EQN-001–006 retain staged candidate generation plus explicit constraints, held-out tests, counterexamples, proof/experiment, independent replication and technology/economics gates. INV-029–035 and INV-025/026/027 remain intact; no mission-level, physical-law, material, fuel, fusion, financing or quantum-advantage claim is promoted.
+- Post-commit Actions must be checked at the exact new main head before this batch is accepted. No paid QPU job was submitted.
+
+Research-Sync: main

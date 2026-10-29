@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Batch 135 — sparse state-preparation asset provenance preflight](docs/BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md) · [asset manifest](research_lanes/A_quantum_programming_runtime/SPARSE_STATEPREP_TOFFOLI_ASSET_PROVENANCE_V1.json) · [regression test](software/uqpu-prototype/tests/test_sparse_stateprep_asset_provenance.py) · [focused gap](docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md) · [integration report](integration/DAILY_CYCLE_2026-10-29_SPARSE_STATEPREP_ASSET_PREFLIGHT.md) · [integration record](integration/INT-20261029-SPARSE-STATEPREP-ASSET-PROVENANCE.json)
+
 - [Literature watch — piecewise-function state preparation](docs/literature_watch/2026-10-29-piecewise-function-state-preparation.md) · [focused gap](docs/RESEARCH_GAP_A_FUNCTION_STRUCTURED_STATEPREP_2026-10-29.md) · [integration record](integration/INT-20261029-PIECEWISE-STATEPREP.json)
 
 - [Batch 134 — sparse state-preparation Toffoli-cost model-alignment gate](docs/BATCH_134_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT.md) · [literature watch](docs/literature_watch/2026-10-29-sparse-stateprep-improved-toffoli-cost.md) · [focused gap](docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md) · [benchmark contract](research_lanes/A_quantum_programming_runtime/SPARSE_STATEPREP_TOFFOLI_BENCHMARK_V1.json) · [integration report](integration/DAILY_CYCLE_2026-10-29_SPARSE_STATEPREP_TOFFOLI.md) · [integration record](integration/INT-20261029-SPARSE-STATEPREP-TOFFOLI.json) · [root gap index](RESEARCH_GAPS.md)

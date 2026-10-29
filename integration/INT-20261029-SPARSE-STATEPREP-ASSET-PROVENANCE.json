@@ -1,0 +1,67 @@
+{
+  "schema": "uqpu-daily-integration-v1",
+  "cycle_date": "2026-10-29",
+  "batch": 135,
+  "work_id": "RG-STATEPREP-TOFFOLI-001",
+  "starting_main_sha": "12d59c9854d7783e4161ad38008f916f94b1a6fc",
+  "primary_owner": "Lane A",
+  "integration_owner": "Lane F",
+  "provenance_owner": "Lane H",
+  "evidence_class": "SOURCE_METADATA_ONLY",
+  "upstream_asset": {
+    "record_url": "https://zenodo.org/records/18234600",
+    "filename": "Code_for_Sparse_quantum_state_preparation_with_improved_Toffoli_cost.zip",
+    "publisher_reported_md5": "c58634ba415b4e3fb729648460f32ad7",
+    "local_sha256": null,
+    "source_code_license": "Apache-2.0",
+    "figures_license": "CC-BY-4.0",
+    "upstream_dependency_security_review_required": true
+  },
+  "work_completed": [
+    "Pinned upstream paper and software record metadata",
+    "Added fail-closed asset provenance manifest",
+    "Added standard-library regression tests for metadata, checksum state, license/security note and non-claim boundaries",
+    "Updated focused gap and canonical README, RESEARCH_GAPS, WORKLOG and integration hub"
+  ],
+  "blockers": [
+    "Archive download failed in the current execution environment",
+    "Publisher MD5 not recomputed locally",
+    "No local SHA-256, archive audit, upstream tests or independent circuit reproduction"
+  ],
+  "lane_status": {
+    "A": "PROVENANCE_PREFLIGHT_ADDED_REPRODUCTION_BLOCKED",
+    "B": "NO_QPU_EXECUTION",
+    "C": "STATE_DIMENSION_AND_CLASSICAL_MEMORY_KEPT_DISTINCT",
+    "D": "WAITING_FOR_REPRODUCED_LOGICAL_RESOURCE_COUNTS",
+    "E": "BIO001_FUS001_UNCHANGED",
+    "F": "EVIDENCE_GATE_AND_COST_ACCOUNTING_PRESERVED",
+    "G": "D_G_CODESIGN_ACTIVE_NO_FACTORY_RESULT",
+    "H": "STRATEGIC_REFERENCES_PRESERVED"
+  },
+  "invariant_status": {
+    "INV-029": "NO_MISSION_CLOSURE_EVIDENCE",
+    "INV-030": "NO_MATERIAL_SUBSTITUTION_CLAIM",
+    "INV-031": "NO_ACCEPTED_PANGOLO_LIQUID_FUEL",
+    "INV-032": "NO_NET_RELIABLE_FUSION_ELECTRICITY_RESULT",
+    "INV-033": "NO_FINANCE_RATE_OR_PRINCIPAL_REDUCTION_MEASURED",
+    "INV-034": "ACTIVE_FOUNDATION_NO_NEW_PHYSICAL_MECHANISM",
+    "INV-035": "NO_EQUATION_PROMOTED_TO_PHYSICAL_LAW"
+  },
+  "ci_before_change": [
+    {
+      "name": "UQPU Prototype and Project Invariants",
+      "run_id": 40900037455,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40900037455"
+    },
+    {
+      "name": "Autonomous Cold-Start Handoff Audit",
+      "run_id": 40900037447,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40900037447"
+    }
+  ],
+  "ci_after_change": "PENDING_EXACT_HEAD_ACTIONS",
+  "paid_qpu_job_submitted": false,
+  "research_sync": "MAIN_COMMIT_WITH_README_SUMMARY"
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "uqpu-sparse-stateprep-toffoli-asset-provenance-v1",
+  "version": "1.0.0",
+  "date": "2026-10-29",
+  "primary_owner": "Lane A — quantum programming/workloads/compiler/runtime",
+  "interfaces": {
+    "B": "Provider-neutral target execution remains downstream; no QPU job is authorized by this manifest.",
+    "C": "Track state semantics, classical support/amplitude description bytes, storage, transfer and output reconstruction separately.",
+    "D_G": "Map logical resource counts to gate decomposition, routing, depth, ancillas, QEC/factory and manufacturing only after the source model is reproduced.",
+    "F": "Own evidence classification, source pinning, reproducibility and total cost per accepted useful task.",
+    "H": "Maintain source provenance and publication/strategic context."
+  },
+  "source": {
+    "authors": [
+      "Felix Rupprecht",
+      "Sabine Wölk"
+    ],
+    "paper_title": "Sparse quantum state preparation with improved Toffoli cost",
+    "paper_doi": "10.22331/q-2026-09-10-2208",
+    "paper_publisher_url": "https://quantum-journal.org/papers/q-2026-09-10-2208/",
+    "official_preprint_url": "https://arxiv.org/abs/2601.09388",
+    "software_record_url": "https://zenodo.org/records/18234600",
+    "software_record_doi": "10.5281/zenodo.18234600",
+    "software_record_version": "v1",
+    "software_record_published": "2026-01-13",
+    "software_record_modified": "2026-01-14",
+    "software_language_and_architecture": [
+      "Python / Qualtran Bloqs",
+      "Rust isometry-search implementation with Python wrapper",
+      "Python and Rust tests reported by the source record"
+    ]
+  },
+  "asset": {
+    "filename": "Code_for_Sparse_quantum_state_preparation_with_improved_Toffoli_cost.zip",
+    "publisher_reported_size": "950.9 kB",
+    "publisher_reported_md5": "c58634ba415b4e3fb729648460f32ad7",
+    "local_sha256": null
+  },
+  "licensing_and_security": {
+    "source_code_license": "Apache-2.0",
+    "figures_license": "CC-BY-4.0",
+    "upstream_dependency_warning": "The Zenodo record warns that Qualtran had an nbconvert dependency with a disclosed CVE affecting nbconvert <= 7.16.6 at upload time. The source record says nbconvert was manually removed from its lockfile; re-check the current dependency graph and advisories before installation.",
+    "isolated_environment_required": true,
+    "install_unpinned_dependencies_before_review": false
+  },
+  "provenance_state": {
+    "publisher_metadata_reviewed": true,
+    "asset_downloaded_in_this_cycle": false,
+    "publisher_md5_recomputed_locally": false,
+    "local_sha256_computed": false,
+    "archive_paths_audited": false,
+    "dependency_lockfile_audited": false,
+    "upstream_python_tests_run": false,
+    "upstream_rust_tests_run": false,
+    "independent_small_instance_reproduction": false,
+    "evidence_class": "SOURCE_METADATA_ONLY",
+    "project_reproduction": "NOT_PERFORMED"
+  },
+  "retrieval_note": "The public Zenodo record and its file link were inspected. The archive download request failed in the current execution environment; no local archive was created, so neither checksum verification nor code execution is claimed.",
+  "required_next_gate": [
+    "Retrieve the exact v1 archive in a controlled environment and preserve its original bytes.",
+    "Recompute publisher MD5 and local SHA-256; do not treat publisher MD5 alone as the project integrity record.",
+    "Inspect archive paths, license files, Cargo/uv lockfiles and current dependency advisories before installing.",
+    "Run upstream Python and Rust tests in an isolated environment with pinned dependencies.",
+    "Reproduce exact small sparse-state instances against an independent classical state-vector reference.",
+    "Keep Toffoli count, decomposed T-count, depth, ancillas, classical preprocessing, input bytes, transfer, fidelity and accepted-task cost separate."
+  ],
+  "nonclaims": {
+    "UQPU_source_code_reproduced": false,
+    "external_Toffoli_claim_independently_verified": false,
+    "numeric_T_count_established": false,
+    "hardware_advantage_established": false,
+    "energy_or_cost_advantage_established": false,
+    "Hilbert_space_dimension_equals_readable_classical_bytes": false,
+    "paid_QPU_execution_authorized": false
+  }
+}

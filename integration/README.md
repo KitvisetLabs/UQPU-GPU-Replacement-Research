@@ -4,6 +4,10 @@ This directory is the shared integration layer for all eight research lanes.
 
 It does **not** replace lane ownership. Each substantive artifact remains owned by one lane; this hub records interfaces, shared contracts, dependency maps, integrated experiments and system-level decisions.
 
+## Latest integrated cycle — 2026-10-29 — sparse state-preparation asset provenance preflight
+
+[Batch 135](../docs/BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md) adds a source-pinned manifest for the upstream sparse-state-preparation code asset and a regression test that distinguishes publisher metadata from local retrieval, checksum verification, dependency audit and independent reproduction. The archive download failed in this execution environment; the algorithm remains literature-only and no resource or cost claim is promoted.
+
 ## Core integration artifacts
 - `LANE_INTERFACE_CONTRACT.md` — standard input/output interface between lanes
 - `INTEGRATED_RESEARCH_BATCH_TEMPLATE.md` — template for eight-lane integrated cycles

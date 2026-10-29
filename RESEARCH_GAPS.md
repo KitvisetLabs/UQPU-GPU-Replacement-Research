@@ -1384,3 +1384,8 @@ Teretenkov, Kuznetsov & Pechen, *Physical Review A* 114, 043115 (published 2026-
 
 **Nonclaims:** No lower-bound bypass, readable-memory equivalence, real-QPU advantage, energy/cost saving or new physical law is established.
 
+
+
+## Cycle update — 2026-10-29 — RG-STATEPREP-TOFFOLI-001 asset provenance
+
+The existing [sparse state-preparation Toffoli-model gap](docs/RESEARCH_GAP_SPARSE_STATEPREP_TOFFOLI_MODEL_ALIGNMENT_2026-10-29.md) now links a source-asset preflight manifest and regression test. The official Zenodo record metadata and publisher-reported MD5 are recorded, along with the Apache-2.0 code license and the upstream `nbconvert <= 7.16.6` dependency-security warning. The ZIP could not be retrieved in this run; the local checksum, dependency audit, upstream tests and independent small-instance reproduction remain NOT DONE. This is an update to the existing gap, not a duplicate research claim. See [Batch 135](docs/BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md).

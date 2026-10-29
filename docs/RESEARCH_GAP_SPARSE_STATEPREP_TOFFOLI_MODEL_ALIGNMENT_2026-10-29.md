@@ -39,3 +39,10 @@ The existing software/uqpu-prototype/uqpu/sparse_stateprep_bounds.py records the
 ## Explicit nonclaims
 
 This gap establishes no universal state-preparation improvement, no lower bound beyond the cited theorem's scope, no readable classical-memory equivalence, no 100,000,000-unit replacement, no physical law, and no UQPU hardware, energy or cost advantage.
+
+
+## Asset acquisition preflight update — 2026-10-29
+
+The public [Zenodo v1 software record](https://zenodo.org/records/18234600) lists `Code_for_Sparse_quantum_state_preparation_with_improved_Toffoli_cost.zip` (publisher-reported 950.9 kB), MD5 `c58634ba415b4e3fb729648460f32ad7`, Apache-2.0 source-code license, Python/Rust implementation and tests. The record warns about the `nbconvert <= 7.16.6` CVE exposure in the dependency ecosystem at upload time and notes manual removal from its lockfile.
+
+The archive download request failed in the current execution environment after the public record and asset link were inspected. No local archive exists; the MD5 was not recomputed, SHA-256 is absent, dependencies were not installed, upstream tests were not run and no independent circuit reproduction occurred. See [asset provenance manifest](../research_lanes/A_quantum_programming_runtime/SPARSE_STATEPREP_TOFFOLI_ASSET_PROVENANCE_V1.json) and [Batch 135](BATCH_135_SPARSE_STATEPREP_ASSET_PROVENANCE_PREFLIGHT.md). Status remains OPEN / LITERATURE-ONLY / INDEPENDENT REPRODUCTION REQUIRED.
