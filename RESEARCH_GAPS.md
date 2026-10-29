@@ -1194,3 +1194,11 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Evidence:** dependency-free Lie-Trotter approximation for (H=\alpha Z+\beta X) compared with the analytic 2x2 Hermitian reference; tests cover error convergence, commuting limits, unitarity and fail-closed input handling. No hardware or economic evidence.  
 **Unlock:** pin sparse-entry semantics and compare exact evolution, product formula, qDRIFT and composite-qDRIFT on held-out 2x2/4x4 instances at matched error, with oracle construction, state preparation, synthesis, host compute, memory/I/O, retries, reconstruction and accepted-task cost separately accounted.  
 **Details:** [focused gap](docs/RESEARCH_GAP_A_FND002_PRODUCT_FORMULA_REFERENCE_2026-10-29.md); [Batch 115](docs/BATCH_115_MATCHED_PRODUCT_FORMULA_REFERENCE.md).
+
+
+## RG-B-OCI-HELIOS-ACCESS-001 — verify OCI early-access route and service boundary
+**Status:** ANNOUNCED / EARLY ACCESS / NOT ADAPTER-VERIFIED.  
+**Owner:** Lane B; interfaces A/C/D/G/F/H.  
+**Evidence:** Quantinuum/Oracle announced selected-participant access to Helios through OCI Quantum AI Compute Beta on 2026-10-22; AWS announced Braket FedRAMP Class C scope on 2026-10-16 with third-party QPU hardware outside the stated AWS-operated service boundary.  
+**Unlock:** verify official SDK/API, target identity, region, eligibility, credentials, quotas, pricing/billing, result retrieval, data retention and compliance scope; dry-run before any authorized live job. Do not infer hardware availability or advantage from an access announcement.  
+**Details:** [literature watch](docs/literature_watch/2026-10-29-cloud-route-and-compliance-updates.md); [Batch 116](docs/BATCH_116_PROVIDER_ROUTE_AND_COMPLIANCE_SURVEILLANCE.md).
