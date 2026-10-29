@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Temporal-parallel QEC decoder literature watch](docs/literature_watch/2026-10-30-temporal-parallel-qec-decoder.md) — external RTL/synthesis evidence only; no UQPU reproduction.
+
 - CI metadata repair: corrected Lane E evidence_class to the accepted LITERATURE_ONLY enum and Lane F owner_path to the existing eight-lane directory; exact-head validation of the repair commit is pending.
 
 - [Daily cycle — goal-only GPU baseline and equation frontier](integration/DAILY_CYCLE_2026-10-30_AGENT_BASELINE_AND_EQN_FRONTIER.md) · [JustGoal watch](docs/literature_watch/2026-10-30-justgoal-goal-only-gpu-kernel-baseline.md) · [validator](software/uqpu-prototype/uqpu/agent_baseline.py) · [10 tests](software/uqpu-prototype/tests/test_agent_baseline.py) · [GLE watch](docs/literature_watch/2026-10-30-exact-pair-coordinate-generalized-langevin.md) · [boson-star PINN watch](docs/literature_watch/2026-10-30-boson-star-branch-family-pinn.md) · [focused gaps](docs/RESEARCH_GAP_A_GOAL_ONLY_GPU_KERNEL_BASELINE_2026-10-30.md) · [integration record](integration/INT-20261030-AGENT-BASELINE-EQN-FRONTIER.json)
