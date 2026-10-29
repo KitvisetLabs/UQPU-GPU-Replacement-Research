@@ -57,6 +57,7 @@ def validate_proof_dag(nodes: Iterable[Mapping[str, object]]) -> dict[str, objec
 
     by_id: dict[str, dict[str, object]] = {}
     family_split: dict[str, str] = {}
+    statement_split: dict[str, str] = {}
     for raw in rows:
         if not isinstance(raw, Mapping):
             raise ValueError("each node must be a mapping")
@@ -85,6 +86,13 @@ def validate_proof_dag(nodes: Iterable[Mapping[str, object]]) -> dict[str, objec
             raise ValueError(f"claim family leakage across splits: {family}")
         family_split[family] = split
         _digest(node.get("statement_sha256"), f"{node_id}.statement_sha256", required=True)
+        statement_digest = str(node["statement_sha256"])
+        previous_statement_split = statement_split.get(statement_digest)
+        if previous_statement_split is not None and previous_statement_split != split:
+            raise ValueError(
+                f"statement digest leakage across splits: {statement_digest}"
+            )
+        statement_split[statement_digest] = split
         parents = _strings(f"{node_id}.parents", node["parents"], allow_empty=True)
         residuals = _strings(
             f"{node_id}.residual_premises",
