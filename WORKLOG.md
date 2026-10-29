@@ -2175,3 +2175,15 @@ The Batch 122 code/test commit triggered the expected exact-head workflows. The 
 - Next gate: exact-head CI, then pinned theorem-family corpus/kernel and equal-budget baseline-versus-schema-reuse comparison with independent held-out proof reproduction.
 
 Research-Sync: main
+
+
+## 2026-10-29 — Batch 125: time-dependent PDE generalization and resource gate
+
+- Starting main SHA: ee547aecfa1454f1f07adf16e13d150634a557c2. Inspected canonical project docs, root directives 00/00A/01–06, the Kanusanan Pongpanna Model, six-language strategic links, Batch 124 and current proof-DAG/equation-discovery code, including fundamental_limits.py, frontier_hypothesis.py and equation_discovery.py.
+- Fresh literature search found the official ICML/PMLR 2026 TINNs paper, new to the repository. Published a source-specific watch and preregistered Lane A contract; source code/data/license were not independently pinned and no UQPU benchmark was run.
+- The protocol compares conventional PINN, TINN, compatible neural-operator splitting if available, and a converged numerical reference. It requires grouped trajectory/regime holdouts, matched budgets, residual/conservation/bounds, median/worst-case error, failure retention and total-resource accounting.
+- A–H: A advanced at contract level; B provider-neutral routes maintained; C memory/I/O accounting specified; D/G co-design retained without device/factory evidence; E biomass/bio-oil/fusion claims unchanged; F accepted-result economics specified but unmeasured; H published the source watch and preserved strategic context.
+- FND-006 advances at protocol level only. FND-001–005 and EQN-001–006 remain open. INV-025/026/027 and INV-029–035 remain preserved. No new law, real-QPU advantage, material substitution, accepted fuel, net fusion electricity, WACC change or Data-Center-to-One-Phone result is claimed.
+- No paid QPU job was authorized or submitted. Exact-head Actions must be checked after this commit; external reproduction and independent review remain the next gate.
+
+Research-Sync: main

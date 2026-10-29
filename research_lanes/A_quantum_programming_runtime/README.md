@@ -37,3 +37,9 @@ Special projects may add `algorithms/`, `compiler/`, `runtime/`, `workloads/`, `
 ## Equation-discovery robustness gate — 2026-10-29
 - [Batch 120 finite-value validation](../../docs/BATCH_120_FINITE_EQUATION_METRICS_AND_EVIDENCE_GATE.md) closes a fail-open edge case where NaN/infinite or boolean held-out errors could pass a simple non-negative check.
 - Regression coverage is in `software/uqpu-prototype/tests/test_equation_discovery.py`; this guards numeric inputs only, not semantic equivalence or physical validity.
+
+
+## Time-dependent PDE surrogate gate — 2026-10-29
+
+- [TINN acceptance contract](TINN_TIME_DEPENDENT_PDE_ACCEPTANCE_CONTRACT_2026-10-29.md) preregisters a known-law comparison against conventional PINNs, compatible operator-splitting methods and a converged solver reference.
+- The contract requires grouped trajectory/regime holdouts, matched budgets, physical residual/conservation/bound metrics, failure retention and memory/I/O/energy/cost accounting. External source claims remain unreproduced; see [focused gap](../../docs/RESEARCH_GAP_TINN_TIME_DEPENDENT_PDE_GENERALIZATION_2026-10-29.md).

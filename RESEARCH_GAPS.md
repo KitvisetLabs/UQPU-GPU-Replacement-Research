@@ -1270,3 +1270,23 @@ Four synthetic regression tests cover the rejection and allowed-edge cases. This
 5. Report accepted-result rate, residual premises, invalid/changed statements, timeout, wall time, peak memory, energy where measurable and cost per independently accepted result.
 
 **Non-claims:** no theorem novelty, physics result, real-QPU advantage or mission-level economic improvement is established.
+
+
+## RG-A-TINN-TIME-DEPENDENT-PDE-001 — time-conditioned PDE surrogate generalization (2026-10-29)
+
+**Status:** OPEN / LITERATURE_ONLY / DATA_BLOCKED FOR UQPU REPRODUCTION  
+**Owner:** Lane A; publication owner Lane H; consumers C/D/E/F/G  
+**Primary source:** https://proceedings.mlr.press/v306/dai26a.html  
+**Canonical artifacts:** docs/literature_watch/2026-10-29-time-induced-neural-networks-pde-surrogate-acceptance.md, research_lanes/A_quantum_programming_runtime/TINN_TIME_DEPENDENT_PDE_ACCEPTANCE_CONTRACT_2026-10-29.md, integration/DAILY_CYCLE_2026-10-29_TINN_PDE_GENERALIZATION.md.
+
+**Objective:** test whether time-conditioned neural-network weights improve accepted predictions for a known time-dependent PDE under grouped held-out physical regimes and matched total resource budgets.
+
+**Current evidence:** the ICML/PMLR publisher reports up to 4× relative L2-error improvement and up to 10× faster convergence on its tested tasks. These are external author-reported results; UQPU has not reproduced them. They do not establish a new physical law, general OOD guarantee, device result, energy saving or economic advantage.
+
+**Blockers:** source/data revision and license not yet pinned; no UQPU frozen known-law PDE benchmark executed; reference-solver convergence, grouped split integrity, conservation/bound metrics and total-resource accounting remain open.
+
+**Unlock criteria:** (1) pin source/data/environment and provenance; (2) freeze a known-law PDE and converged reference; (3) split by complete trajectories/regimes rather than random points; (4) compare PINN/TINN and compatible operator-splitting baseline under equal budgets; (5) report median/worst-case error, residuals, conservation/bounds, failures, time, memory, bytes moved and energy where instrumented; (6) independently reproduce before downstream D/E/G use; (7) retain failed and inconclusive runs.
+
+**Next review:** after the first preregistered synthetic known-law benchmark or any material source/data/license change.
+
+**Non-claims:** no new equation, validated reactor/device model, biomass-carbon substitution, accepted bio-oil, net fusion electricity, QPU advantage, WACC change or mission-level compression is established.
