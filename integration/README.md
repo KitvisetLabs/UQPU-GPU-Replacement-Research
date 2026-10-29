@@ -13,6 +13,10 @@ It does **not** replace lane ownership. Each substantive artifact remains owned 
 Maximize scientifically defensible coupling among A-H so that software, provider execution, state movement, hardware, materials/infrastructure, economics/evidence, manufacturing and strategy converge on one useful-work and total-cost mission.
 
 
+## Latest integrated cycle — 2026-10-29 — equation-discovery robustness
+
+- [Batch 119](../docs/BATCH_119_AGENT_GUIDED_RESIDUAL_EQUATION_DISCOVERY_ROBUSTNESS.md), [LegoSR/RISR literature watch](../docs/literature_watch/2026-10-29-legosr-risr-equation-discovery-robustness.md), [matched-error helper](../software/uqpu-prototype/uqpu/equation_discovery_benchmark.py), [focused gap](../docs/RESEARCH_GAP_EQN_DISCOVERY_MATCHED_ROBUSTNESS_2026-10-29.md) and [integration report](DAILY_CYCLE_2026-10-29_EQUATION_DISCOVERY_ROBUSTNESS.md) add a testable robustness metric contract. External reproduction and physical validity remain open.
+
 ## Latest integrated cycle — 2026-10-29 — near-memory QUBO/RAG baseline
 
 - [Batch 117](../docs/BATCH_117_PDCIM_NEAR_MEMORY_QUBO_RAG_BASELINE.md), [literature watch](../docs/literature_watch/2026-10-29-pdcim-near-memory-isings-for-rag.md), [matched-QUBO contract](../research_lanes/A_quantum_programming_runtime/RAG_CONTEXT_SELECTION_CONTRACT_2026-10-29.json), [focused gap](../docs/RESEARCH_GAP_PDCIM_MATCHED_QUBO_RAG_COMPARISON_2026-10-29.md) and [integration report](DAILY_CYCLE_2026-10-29_PDCIM_NEAR_MEMORY_QUBO.md) add a classical near-memory baseline and a falsifiable accepted-answer comparison protocol. No UQPU reproduction or quantum advantage is claimed.

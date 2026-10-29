@@ -25,3 +25,10 @@ Special projects may add `algorithms/`, `compiler/`, `runtime/`, `workloads/`, `
 - Source watch: `docs/literature_watch/2026-10-29-pdcim-near-memory-isings-for-rag.md`; focused gap: `docs/RESEARCH_GAP_PDCIM_MATCHED_QUBO_RAG_COMPARISON_2026-10-29.md`.
 - Regression guard: `software/uqpu-prototype/tests/test_rag_context_selection_contract.py`.
 - p-DCIM is a classical near-memory baseline; larger source-paper workloads are model-based. No UQPU reproduction or quantum advantage is claimed.
+
+
+## Equation-discovery matched-metric gate — 2026-10-29
+
+- Shared prototype helper: software/uqpu-prototype/uqpu/equation_discovery_benchmark.py.
+- Regression tests: software/uqpu-prototype/tests/test_equation_discovery_benchmark.py.
+- The helper checks grouped split disjointness and paired held-out errors; it does not parse equations or prove semantic equivalence. See docs/RESEARCH_GAP_EQN_DISCOVERY_MATCHED_ROBUSTNESS_2026-10-29.md.

@@ -1226,3 +1226,8 @@ The small-QUBO exhaustive objective helper and regression tests are now on main 
 ## RG-FND006-EVOLPROVER-ROBUSTNESS-001 — 2026-10-29
 
 The official ICLR 2026 EvolProver paper is recorded as a literature-only robustness lead. **Still open:** pin the proof environment/data/configuration; test AST-equivalent transformations and checked domain translations; hold out theorem families/difficulty bands; classify invalid statements, counterexamples, failures and timeouts; require kernel-checked proofs and independent review. Formal proof remains distinct from physical truth. No new law or mission result.
+
+
+## RG-EQN-DISCOVERY-MATCHED-ROBUSTNESS-001 — 2026-10-29
+
+The matched equation-discovery robustness helper and synthetic tests are committed in Batch 119. Fresh official preprints LegoSR (arXiv:2610.33465, posted 2026-10-24) and RISR (arXiv:2610.11387, posted 2026-10-08) motivate a common candidate/evaluation record and residual-informed search. **Still open:** pin/reproduce source implementations and datasets; freeze grouped equation-family/system holdouts; compare static, controller, residual-guided and multi-solver methods under equal budgets; verify semantic transformations independently; report ID/OOD errors, complexity, uncertainty, counterexamples, false discoveries and resource use. The helper is MODEL_ONLY metric logic and does not verify equation truth. No new physical law or mission result.
