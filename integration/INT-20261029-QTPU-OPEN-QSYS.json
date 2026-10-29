@@ -1,0 +1,71 @@
+{
+  "record_id": "INT-20261029-QTPU-OPEN-QSYS",
+  "date": "2026-10-29",
+  "starting_main_sha": "ff2fbb5ea3fad629666a4407fe59942b86015592",
+  "primary_owner": "Lane A",
+  "scientific_interface_owner": "Lane B",
+  "integration_owner": "Lane F",
+  "literature_owner": "Lane H",
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py",
+    "module_commit": "d6f644563aa8ab583efefe3b152c27b10cacb83d",
+    "tests": "software/uqpu-prototype/tests/test_open_quantum_invariant_toy.py",
+    "test_commit": "e2de78b4652b26e881d89a19d15f1b8cd0ce5cae",
+    "test_count": 9,
+    "local_reference_harness": "9/9 passed; equivalent standard-library implementation, not repository Actions",
+    "evidence_class": "MODEL_ONLY"
+  },
+  "literature": {
+    "title": "qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration",
+    "venue": "USENIX OSDI 2026",
+    "official_url": "https://www.usenix.org/conference/osdi26/presentation/tornow",
+    "artifact_url": "https://github.com/TUM-DSE/qtpu",
+    "artifact_revision": "3f68fc96e5de9c336c96e82d4af0a2f7a96b5a22",
+    "evidence_class": "PEER_REVIEWED_SYSTEMS_PAPER_AND_PUBLIC_ARTIFACT_DOCS",
+    "uQpu_reproduction": false
+  },
+  "lane_status": {
+    "A": "Exact toy invariance/algebra-closure checker plus nine tests committed; qTPU comparison remains literature-only.",
+    "B": "Provider-neutral measurement interface preserved; no provider/QPU execution.",
+    "C": "Observable/tensor dimensions kept distinct from readable memory; state/transfer accounting remains required.",
+    "D": "No device evidence; downstream only.",
+    "E": "BIO-001/FUS-001 gaps unchanged; no fuel or fusion result.",
+    "F": "Total resources per accepted useful output required; no economics measured.",
+    "G": "D/G co-design retained; no manufacturing result.",
+    "H": "New-to-repository qTPU watch and focused reproduction gap published."
+  },
+  "foundational_status": {
+    "FND-001": "No new thermodynamic-gap measurement.",
+    "FND-002": "No information lower-bound change; observable algebra is not storage.",
+    "FND-003": "No matched quantum-speed-limit measurement.",
+    "FND-004": "Known dephasing model only; no alternative physical primitive.",
+    "FND-005": "No QFT/particle mechanism result.",
+    "FND-006": "Known-model exact checks and negative controls improved.",
+    "EQN-001": "qTPU source indexed; no new physical equation.",
+    "EQN-002": "Linear-span invariance is explicitly separate from algebra closure.",
+    "EQN-003": "Generator and Pauli-basis assumptions are declared.",
+    "EQN-004": "Non-invariant and non-algebra counterexamples tested.",
+    "EQN-005": "No new-physics claim.",
+    "EQN-006": "No technology/economic promotion without independent replication."
+  },
+  "artifacts": [
+    "software/uqpu-prototype/uqpu/open_quantum_invariant_toy.py",
+    "software/uqpu-prototype/tests/test_open_quantum_invariant_toy.py",
+    "docs/literature_watch/2026-10-29-qtpu-hybrid-tensor-network-runtime.md",
+    "docs/RESEARCH_GAP_QTPU_RESOURCE_MATCHED_REPRODUCTION_2026-10-29.md",
+    "integration/DAILY_CYCLE_2026-10-29_QTPU_AND_OPEN_QSYS_FIXTURE.md"
+  ],
+  "invariants": ["INV-025","INV-026","INV-027","INV-029","INV-030","INV-031","INV-032","INV-033","INV-034","INV-035"],
+  "non_claims": [
+    "No real-QPU advantage",
+    "No new physical law",
+    "No readable-memory/storage replacement",
+    "No critical-material substitution",
+    "No accepted low-cost bio-oil",
+    "No net delivered fusion electricity",
+    "No lower WACC",
+    "No Data-Center-to-One-Phone closure"
+  ],
+  "ci": "Combined-status query returned no contexts at starting head; exact-head Actions after new commits must be checked.",
+  "next_gate": "Check exact-head Actions; extend the exact toy fixture to a second known generator; preregister matched-output qTPU comparison before any hardware run."
+}
