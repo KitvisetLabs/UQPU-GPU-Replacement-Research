@@ -10,6 +10,8 @@
 
 The source supplies a target-specific latency/quantization comparator, not UQPU evidence. Keep decoder sources and datasets separate; require matched shots, logical-output quality, per-shot latency, memory/I/O and cost accounting before transfer claims.
 
+**Sync/CI note:** the first QEC latency cycle commit's cold-start audit failed only on a missing `Research-Sync: main` trailer. A metadata follow-up is updating this manifest and must pass its own exact-head checks; do not treat the new head as green before observation.
+
 ## Latest integrated cycle — 2026-10-30 — Quantum Genesis application contracts and scientific-agent workflow surveillance
 
 - [Literature watch](../docs/literature_watch/2026-10-30-doe-qgpa-agent-workflow-surveillance.md)

@@ -65,3 +65,8 @@ Updated the Lane B transfer contract and focused QEC gap with this separate comp
 At the starting head, the latest observed push workflows were successful for commit `3b295242b42c8c26ecddaa697040c2bc7673fdd4`: UQPU Prototype and Project Invariants, and Autonomous Cold-Start Handoff Audit. The new commit is documentation/contract-only and will trigger CI; its own post-commit checks must be queried before calling the new head green. No paid hardware was authorized or used.
 
 **Next highest-value gate:** complete QEC-TRANSFER-001 Gate 0 (pinned source checkout, license/data/model retrieval, byte hashes and isolated environment), then reproduce one source's baseline before any cross-device adaptation. In parallel, resolve the pending model-family held-out counterexample in draft PR #152 through its own CI/review; do not silently treat that PR as canonical main. Keep BIO-001, FUS-001 and FIN-001 open until their own measured evidence gates pass.
+
+
+## Post-commit CI/synchronization note — 2026-10-30
+
+The first published QEC latency cycle commit was `9a1d201e3ab49f3fbb71c72042d99a8e8bbfe96a`. Its core workflow #2077 was still running at last observation; cold-start audit #1353 failed on the required `Research-Sync: main` commit trailer. This follow-up adds the trailer, refreshes `integration/COLD_START_HANDOFF_MANIFEST.json` with the new source watch/report/record/contract/gap, and records the failure truthfully. It does not claim the repair commit's own checks have passed; exact-head core and cold-start runs must be observed after this commit.
