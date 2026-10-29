@@ -91,3 +91,9 @@ At starting head d6e929877e6a4cec763f6ca83c6a96651f8905db, prototype/invariant w
 No real-QPU advantage, new physical law, material/fuel/electricity advantage, lower WACC or mission closure is claimed.
 
 Research-Sync: main
+
+## CI metadata repair
+
+Cold-start audit #1356 failed on two manifest metadata checks only: lane_E evidence_class was outside the fixed enum, and lane_F owner_path did not match the existing directory. Corrected Lane E to LITERATURE_ONLY and Lane F to research_lanes/F_economics_benchmarks_evidence_integration. No lane scope, evidence claim or research result was changed. Core workflow #2080 was still running at the repair point. The repair commit requires its own exact-head CI observation.
+
+Research-Sync: main
