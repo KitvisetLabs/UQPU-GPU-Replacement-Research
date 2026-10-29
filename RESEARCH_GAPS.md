@@ -1186,3 +1186,11 @@ Gate: pin and hash the paper data and https://doi.org/10.5281/zenodo.21918485; r
 **Remaining blockers:** exact-head CI; a pinned sparse-entry access/oracle contract; candidate product-formula/qDRIFT-family algorithm; held-out matrices, times and tolerances; separate counts for oracle construction, state preparation, synthesis, host compute, memory/I/O, reconstruction, retries, verification and accepted-task cost.
 
 **Nonclaims:** this analytic fixture is not a theorem reproduction, scalable algorithm, physical runtime/energy result, real-QPU advantage, readable memory/storage replacement, material/fuel/electricity benefit, lower WACC or Data-Center-to-One-Phone milestone.
+
+
+## RG-A-FND002-TROTTER-REFERENCE-001 — exact evolution versus first-order product formula
+**Status:** MODEL_ONLY / unit-tested reference comparator; sparse-oracle and qDRIFT reproduction open.  
+**Owner:** Lane A; interfaces B/C/D/G/F/H.  
+**Evidence:** dependency-free Lie-Trotter approximation for (H=\alpha Z+\beta X) compared with the analytic 2x2 Hermitian reference; tests cover error convergence, commuting limits, unitarity and fail-closed input handling. No hardware or economic evidence.  
+**Unlock:** pin sparse-entry semantics and compare exact evolution, product formula, qDRIFT and composite-qDRIFT on held-out 2x2/4x4 instances at matched error, with oracle construction, state preparation, synthesis, host compute, memory/I/O, retries, reconstruction and accepted-task cost separately accounted.  
+**Details:** [focused gap](docs/RESEARCH_GAP_A_FND002_PRODUCT_FORMULA_REFERENCE_2026-10-29.md); [Batch 115](docs/BATCH_115_MATCHED_PRODUCT_FORMULA_REFERENCE.md).
