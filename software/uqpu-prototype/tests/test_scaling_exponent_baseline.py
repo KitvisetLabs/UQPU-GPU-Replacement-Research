@@ -1,0 +1,53 @@
+import math
+import unittest
+
+from uqpu.scaling_exponent_baseline import fit_power_law
+
+
+class ScalingExponentBaselineTests(unittest.TestCase):
+    def test_recovers_known_exponent_and_amplitude(self):
+        xs = (1.0, 2.0, 4.0, 8.0, 16.0)
+        ys = tuple(3.0 * x ** 2.5 for x in xs)
+        fit = fit_power_law(xs, ys)
+        self.assertAlmostEqual(fit.amplitude, 3.0, places=10)
+        self.assertAlmostEqual(fit.exponent, 2.5, places=10)
+        self.assertAlmostEqual(fit.r_squared, 1.0, places=12)
+
+    def test_holdout_prediction_is_separate_from_fit(self):
+        fit = fit_power_law((1, 2, 4, 8), (2, 8, 32, 128))
+        self.assertAlmostEqual(fit.predict(16), 512.0, places=8)
+
+    def test_exponent_is_invariant_to_x_unit_rescaling(self):
+        xs = (1.0, 2.0, 4.0, 8.0)
+        ys = tuple(3.0 * x ** 1.75 for x in xs)
+        fit_a = fit_power_law(xs, ys)
+        fit_b = fit_power_law(tuple(1000.0 * x for x in xs), ys)
+        self.assertAlmostEqual(fit_a.exponent, fit_b.exponent, places=10)
+        self.assertNotAlmostEqual(fit_a.amplitude, fit_b.amplitude, places=3)
+
+    def test_constant_x_design_is_rejected_as_nonidentifiable(self):
+        with self.assertRaisesRegex(ValueError, "not identifiable"):
+            fit_power_law((2.0, 2.0, 2.0), (1.0, 2.0, 4.0))
+
+    def test_near_constant_x_design_fails_predeclared_span_gate(self):
+        with self.assertRaisesRegex(ValueError, "insufficient log-x span"):
+            fit_power_law((1.0, 1.0 + 1e-8, 1.0 + 2e-8), (1.0, 1.1, 1.2))
+
+    def test_rejects_nonpositive_nonfinite_boolean_and_shape_errors(self):
+        with self.assertRaisesRegex(ValueError, "strictly positive"):
+            fit_power_law((1, 2, 3), (1, 0, 9))
+        with self.assertRaisesRegex(ValueError, "finite"):
+            fit_power_law((1, 2, math.inf), (1, 4, 9))
+        with self.assertRaisesRegex(ValueError, "not boolean"):
+            fit_power_law((1, True, 3), (1, 4, 9))
+        with self.assertRaisesRegex(ValueError, "equal lengths"):
+            fit_power_law((1, 2, 3), (1, 4, 9, 16))
+
+    def test_constant_response_recovers_zero_exponent_under_varied_x(self):
+        fit = fit_power_law((1, 2, 4, 8), (5, 5, 5, 5))
+        self.assertAlmostEqual(fit.exponent, 0.0, places=12)
+        self.assertAlmostEqual(fit.r_squared, 1.0, places=12)
+
+
+if __name__ == "__main__":
+    unittest.main()
