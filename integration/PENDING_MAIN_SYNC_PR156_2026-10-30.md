@@ -6,12 +6,12 @@
 **Source branch:** `research/batch-145-qsl-htl-diamond-and-qaoa-v2`  
 **Source PR:** [#156 — Batch 145: QAOA v2 holdout integrity and cross-lane research](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/156)  
 **Starting main SHA:** `41fac3953773ae0016a09539be57c3ed6b379771`  
-**Latest observed source head at summary preparation:** `bdc39c9fd0554f213181d52483239d066ae67951`  
-**Comparison:** 39 commits ahead, 0 behind, 23 changed files. No source commit is mapped to main yet.
+**Latest observed source head after metadata repair:** `20ee610448e2c0cacf4509249d4d0377a56ec120`  
+**Current comparison:** 40 commits ahead, 0 behind, 23 changed files. No source commit is mapped to main yet.
 
 ## Commit-level synchronization record
 
-All 29 commits in the source range carry a `Research-Sync: pending-main` trailer and are included in PR #156. The GitHub compare endpoint confirmed the range `41fac3953773ae0016a09539be57c3ed6b379771...1148496e1ff1c342604dc8775e45213a533f246b`, 29 commits ahead and 22 changed files. The available compare response exposes the count and file statistics but not the per-commit SHA list; exact enumeration of all 29 source SHAs remains an explicit reconciliation debt. Do not imply that the source commits or files are already on main.
+The current GitHub compare endpoint reports 40 commits ahead, 0 behind and 23 changed files. The available comparison response exposes aggregate counts and file statistics but not the complete per-commit SHA list or a trailer audit for every source commit. Exact enumeration and source-to-main mapping for all 40 commits remain explicit reconciliation debt. Do not imply that source commits or files are already on main.
 
 On merge, record the source-to-main SHA mapping for every source commit (including the resulting squash/merge SHA) in a follow-up reconciliation ledger. No merge was performed in this cycle.
 
@@ -81,7 +81,7 @@ Evidence is SOFTWARE_CONTRACT plus external peer-reviewed literature. INV-025/02
 
 At starting main SHA `41fac3953773ae0016a09539be57c3ed6b379771`, the combined-status endpoint returned no contexts. Predecessor `d3d41796f4b3e95217970f3d2dd98e90f19c690f` core run #2140 and cold-start #1430 passed; they do not validate main 41fac or PR #156.
 
-PR #156 initial head `31c067430899cd3c52b78982f0c4139974a05af4` had core run #2211 queued. Latest source head `bdc39c9fd0554f213181d52483239d066ae67951` has core run #2241 (run ID `41020189406`) queued with all three Python matrix jobs queued; combined-status contexts remain empty and no cold-start result is exposed. The earlier run #2219 was queued on the previous head. Do not merge until exact-head core and cold-start validation plus review/reconciliation are complete.
+Initial source head `bdc39c9fd0554f213181d52483239d066ae67951` core run #2241 (run ID `41020189406`) failed the cold-start handoff unit test because Lane H evidence class `STRATEGIC_RESEARCH` was outside the validator's closed enum (967 tests, one failure, 25 skipped). Repair commit `20ee610448e2c0cacf4509249d4d0377a56ec120` changes that field to validator-approved `CONCEPT` without changing the strategic description or evidence boundary. Repair-head core run #2252 (run ID `41024469294`) is queued; combined-status contexts are empty and no exact-head cold-start result is exposed. Do not merge until exact-head core and cold-start validation plus review/reconciliation are complete.
 
 PR #154/#155 remain open/unmerged. PR #154 run #2190 had 14 of 15 jobs successful with target-snapshot-noise queued at last observation; PR #155 is its pending-main summary. Historical/inaccessible branch and fork coverage remains incomplete.
 
