@@ -1,0 +1,101 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-EVENET-HEP-WORKLOAD",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_branch": "main",
+  "starting_head": "8ede9ca0a49be164958648382e9213c8a5798c2d",
+  "newest_committed_batch_at_start": 137,
+  "batch_138_status": "DRAFT_OPEN_PR_152_NOT_MERGED",
+  "primary_work_item": {
+    "id": "HEP-EVENET-001",
+    "lane": "A",
+    "status": "LITERATURE_ONLY_BENCHMARK_CONTRACT_ASSET_RETRIEVAL_AND_REPRODUCTION_NOT_RUN",
+    "primary_artifact": "research_lanes/A_quantum_programming_runtime/EVENET_HEP_FOUNDATION_MODEL_WORKLOAD_CONTRACT_2026-10-30.md",
+    "focused_gap": "docs/RESEARCH_GAP_EVENET_HEP_FOUNDATION_MODEL_TRANSFER_2026-10-30.md"
+  },
+  "literature": {
+    "title": "Foundation model for particle collision data analysis",
+    "journal": "Nature Machine Intelligence",
+    "published": "2026-10-29",
+    "doi": "10.1038/s42256-026-01322-9",
+    "preprint": "arXiv:2601.17126",
+    "evidence_class": "PEER_REVIEWED_PRIMARY_ARTICLE_SOURCE_REPORTED_RESULTS_NOT_INDEPENDENTLY_REPRODUCED_BY_UQPU"
+  },
+  "upstream_code": {
+    "repository": "EveNet-HEP/EveNet-Full",
+    "observed_main_commit": "06c3181d9a0f7df3e30edbb1c355b6fec8b5a3ad",
+    "code_license": "MIT",
+    "checkpoint_and_dataset_license": "UNVERIFIED",
+    "checkpoint_reference": "https://huggingface.co/Avencast/EveNet"
+  },
+  "source_reported_resources": {
+    "pretraining_events": 500000000,
+    "training_gpu_hours": 100000,
+    "gpu_count": 512,
+    "gpu_model": "NVIDIA A100",
+    "raw_simulation_data_tb": 4,
+    "preprocessed_parquet_gb": 180,
+    "downstream_finetuning": "A few to tens of GPU-hours per task",
+    "excluded_from_reported_pretraining_gpu_hours": [
+      "event_generation",
+      "preprocessing"
+    ],
+    "wall_plug_energy": "NOT_REPORTED_TO_UQPU_COMPARABLE_BOUNDARY",
+    "peak_gpu_memory": "NOT_REPORTED_TO_UQPU_COMPARABLE_BOUNDARY",
+    "end_to_end_latency_and_throughput": "NOT_REPORTED_TO_UQPU_COMPARABLE_BOUNDARY"
+  },
+  "implementation": {
+    "literature_watch": "docs/literature_watch/2026-10-30-evenet-particle-collision-foundation-model.md",
+    "lane_a_contract": "research_lanes/A_quantum_programming_runtime/EVENET_HEP_FOUNDATION_MODEL_WORKLOAD_CONTRACT_2026-10-30.md",
+    "focused_gap": "docs/RESEARCH_GAP_EVENET_HEP_FOUNDATION_MODEL_TRANSFER_2026-10-30.md",
+    "cycle_report": "integration/DAILY_CYCLE_2026-10-30_EVENET_HEP_FOUNDATION_MODEL.md",
+    "code_changed": false,
+    "local_tests": "NOT_RUN",
+    "UQPU_reproduction": false,
+    "GPU_or_NPU_hardware_run": false,
+    "QPU_execution": false,
+    "paid_provider_job": false
+  },
+  "lanes": {
+    "A": "HEP-EVENET-001 workload contract; exact QUBO/QAOA and competitive CPU/GPU/NPU baseline remains top computing gate.",
+    "B": "Source/code provenance only; provider-neutral paths preserved; no provider job.",
+    "C": "4 TB raw to 180 GB Parquet source pipeline recorded; actual memory, checkpoint, I/O and transfer remain unmeasured.",
+    "D": "No device, chip, process, packaging or fabricated-hardware evidence.",
+    "E": "No new Pangola carbon, accepted bio-oil, net fusion electricity or cooling measurement.",
+    "F": "Shared pretraining and task-specific cost boundary defined; no measured cost per accepted task, energy or financing result.",
+    "G": "D/G co-design preserved; no manufacturing yield, throughput or cost-per-good-device evidence.",
+    "H": "Peer-reviewed source and strategic publication path indexed; no funding or commercialization milestone."
+  },
+  "foundational": {
+    "FND-001": "No thermodynamic-gap or energy-per-accepted-task measurement.",
+    "FND-002": "No new output-information lower bound.",
+    "FND-003": "No matched control-versus-QSL measurement.",
+    "FND-004": "No alternative physical primitive demonstrated.",
+    "FND-005": "HEP quantum-correlation workload lead only; no new particle/QFT mechanism.",
+    "FND-006": "Known-model benchmark lead only; no new equation or theory.",
+    "EQN-001": "New-to-main peer-reviewed HEP foundation-model watch.",
+    "EQN-002": "Task-specific benchmark contract only.",
+    "EQN-003": "Physics-informed model is not a new UQPU equation.",
+    "EQN-004": "Group-disjoint holdouts and control channels specified.",
+    "EQN-005": "No new-physics escalation; Υ is a known resonance.",
+    "EQN-006": "No equation-to-device/economic chain passed."
+  },
+  "invariants": {
+    "INV-029": "No Data-Center-to-One-Phone physical compression demonstrated.",
+    "INV-030": "No Pangola-carbon functional substitution; no transmutation.",
+    "INV-031": "No accepted commercial ultra-low-cost bio-oil.",
+    "INV-032": "No reliable net-delivered fusion electricity cost result.",
+    "INV-033": "No measured project principal, interest or WACC change.",
+    "INV-034": "Foundational physics agenda preserved; no new theory.",
+    "INV-035": "AI equations remain hypotheses; no new physical law."
+  },
+  "ci": {
+    "starting_head_combined_status_contexts": 0,
+    "starting_head_pr_triggered_workflow_runs": 0,
+    "interpretation": "UNVERIFIED_NOT_GREEN",
+    "final_head_check_required": true
+  },
+  "sync_debt": "WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots; focused gap is canonical for this cycle.",
+  "next_highest_value_gate": "Continue exact Lane A QUBO/QAOA useful-output/reference-certificate and CPU/GPU/NPU baselines; in parallel verify EVENET asset licenses/hashes and reproduce one bounded downstream task."
+}
