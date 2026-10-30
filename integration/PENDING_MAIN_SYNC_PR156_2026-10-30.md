@@ -81,7 +81,7 @@ Evidence is SOFTWARE_CONTRACT plus external peer-reviewed literature. INV-025/02
 
 At starting main SHA `41fac3953773ae0016a09539be57c3ed6b379771`, the combined-status endpoint returned no contexts. Predecessor `d3d41796f4b3e95217970f3d2dd98e90f19c690f` core run #2140 and cold-start #1430 passed; they do not validate main 41fac or PR #156.
 
-PR #156 initial head `31c067430899cd3c52b78982f0c4139974a05af4` had core run #2211 queued. Latest source head `bdc39c9fd0554f213181d52483239d066ae67951` has no workflow run or combined-status contexts exposed. The last observed core run #2219 (run ID `41019737304`) was queued on the earlier head `1148496e1ff1c342604dc8775e45213a533f246b`; all three Python matrix jobs remained queued. No cold-start result is exposed. Do not merge until exact-head core and cold-start validation plus review/reconciliation are complete.
+PR #156 initial head `31c067430899cd3c52b78982f0c4139974a05af4` had core run #2211 queued. Latest source head `bdc39c9fd0554f213181d52483239d066ae67951` has core run #2241 (run ID `41020189406`) queued with all three Python matrix jobs queued; combined-status contexts remain empty and no cold-start result is exposed. The earlier run #2219 was queued on the previous head. Do not merge until exact-head core and cold-start validation plus review/reconciliation are complete.
 
 PR #154/#155 remain open/unmerged. PR #154 run #2190 had 14 of 15 jobs successful with target-snapshot-noise queued at last observation; PR #155 is its pending-main summary. Historical/inaccessible branch and fork coverage remains incomplete.
 
