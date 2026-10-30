@@ -345,3 +345,5 @@ External potato–okra HTL–AD–HDO process simulation/TEA only; no Pangola tr
 - [Daily integration](DAILY_CYCLE_2026-10-30_QAOA_V2_QSL_HTL_DIAMOND.md) · [machine record](INT-20261030-QAOA-V2-QSL-HTL-DIAMOND.json)
 
 The v2 contract uses train-only parameter fitting, validation-only selection and frozen test evaluation; exact references are scoring-only. The external QSL, microalgae HTL and diamond-chiplet sources are not UQPU project evidence.
+
+Batch 145 pairwise scan: [all 28 A–H pairs and five 3+ lane combinations](PAIRWISE_AH_SCREEN_2026-10-30.md). This is a candidate/blocked-edge screen; no end-to-end performance integration is claimed.
