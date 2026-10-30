@@ -1,5 +1,12 @@
 # Cross-Lane Integration Hub
 
+## Companion literature delta — 2026-10-30 — AI-driven physics experiment design
+
+- [Peer-reviewed Nature review watch](../docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md)
+- [D/G agentic detector co-design cycle](DAILY_CYCLE_2026-10-30_AGENTIC_DETECTOR_COSIGN.md) · [machine record](INT-20261030-AGENTIC-DETECTOR-COSIGN.json)
+
+The review supplies a four-axis method framework (search-space engineering, simulator fidelity, objective semantics, AI exploration). It is methodological synthesis only; no UQPU experiment, physical law, device, manufacturing, material, energy or financing advantage is claimed.
+
 ## Latest integrated delta — 2026-10-30 — agentic differentiable detector co-design
 
 - [Literature watch](../docs/literature_watch/2026-10-30-agentic-differentiable-detector-codesign.md) · [focused D/G gap](../docs/RESEARCH_GAP_DG_AGENTIC_DETECTOR_COSIGN_REPRODUCTION_2026-10-30.md)
