@@ -41,7 +41,16 @@
     "INV-035": "AI hypothesis/search role bounded by physics constraints, held-out tests and independent evidence"
   },
   "permanent_invariants": [
-    "INV-025","INV-026","INV-027","INV-029","INV-030","INV-031","INV-032","INV-033","INV-034","INV-035"
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
   ],
   "evidence_boundary": "Official preprint and source-reported full-simulation study only. No UQPU reproduction, quantum-device fabrication, process/yield improvement, Pangola substitution, accepted fuel, net fusion electricity, financing advantage, real-QPU advantage or new physical law.",
   "sync": {
@@ -50,5 +59,22 @@
     "focused_gap": "published as primary gap artifact",
     "exact_head_ci": "must pass before merge"
   },
-  "next_gate": "Pin source/code/data/environment; reproduce three fixed-protocol trajectories; then compare UQPU D/G transfer against equal-budget baselines and held-out device/process regimes."
+  "next_gate": "Pin source/code/data/environment; reproduce three fixed-protocol trajectories; then compare UQPU D/G transfer against equal-budget baselines and held-out device/process regimes.",
+  "literature_watches": [
+    {
+      "path": "docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md",
+      "doi": "10.1038/s41586-026-10898-6",
+      "published": "2026-09-02",
+      "evidence": "peer-reviewed review article; methodological synthesis only",
+      "uqpu_reproduced": false
+    }
+  ],
+  "strategic_references": [
+    {
+      "name": "SPRIND Next Frontier AI Challenge",
+      "source": "Nature review disclosure; author selection after manuscript submission",
+      "status": "ecosystem_context_only",
+      "uqpu_funding_commitment": false
+    }
+  ]
 }
