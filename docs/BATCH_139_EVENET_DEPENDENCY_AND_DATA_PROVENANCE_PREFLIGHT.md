@@ -12,7 +12,7 @@
 
 Resolved the current main head from GitHub at run start. Read PROJECT_CHARTER.md, VERSION_INVARIANTS.md, GOALS.md, README.md, docs/RESEARCH_OPERATING_SYSTEM.md, docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md, docs/KANUSANAN_PONGPANNA_MODEL.md, STRATEGIC_PLAN_REFERENCES.md, root directives 00, 00A and 01–06, Batch 137, the Batch 138 draft/PR #152 handoff, the latest 2026-10-30 cycle reports, focused evidence gaps, the A–H integration hub, the FND/EQN modules and the current cold-start handoff manifest.
 
-Batch 137 remains the newest numbered batch committed on main. Batch 138 remains draft/open in PR #152 and is not treated as main-branch work. The six-language Thai/English/Chinese/Japanese/Korean/German master-plan references, Kanusanan Pongpanan Model and recorded strategic AI-agent/funding references remain preserved.
+Batch 137 remains the newest numbered batch committed on main. Batch 138 remains draft/open in PR #152 and is not treated as main-branch work. The six-language Thai/English/Chinese/Japanese/Korean/German master-plan references, Kanusanan Pongpanna Model and recorded strategic AI-agent/funding references remain preserved.
 
 The exact-head combined-status endpoint returned no status contexts and the available commit-workflow endpoint returned no runs for the starting main SHA. This is **UNVERIFIED CI**, not green. The last recorded verified CI remains historical and does not validate the current head or this cycle's commit.
 
@@ -60,7 +60,7 @@ The prediction entry point requires Ray, Lightning, YAML configuration and an ex
 | **E — biomass/advanced materials/bio-oil/fusion/cooling/infrastructure** | No new material, bio-oil, fusion or cooling measurement. BIO-001 and FUS-001 remain blocked. | Continue named-component Pangola functional qualification, accepted-liquid mass/energy/cost closure and net reliable fusion-electricity envelopes. |
 | **F — economics/benchmarks/evidence/energy economics/interest-finance/integration** | Source-reported pretraining compute is not full lifecycle cost; event generation and preprocessing are excluded from the paper's GPU-hour figure. | Measure training, preprocessing, inference, storage, transfer, energy and cost per accepted analysis; declare any pretraining amortization denominator. |
 | **G — quantum-chip manufacturing equipment/software/factory systems** | D/G co-design preserved; no yield, defectivity, process-window, tool throughput or cost-per-good-device result. | Derive equipment/metrology requirements only after a validated D-lane device requirement exists. |
-| **H — Kanusanan Pongpanan Model strategy/finance/future-industry research and publication** | Published source trail extended with a reproducibility preflight; strategic model, six-language plans and AI-agent/funding references remain preserved. | Publish only independently reproduced capability/resource/economic evidence; no financing or commercialization milestone is claimed. |
+| **H — Kanusanan Pongpanna Model strategy/finance/future-industry research and publication** | Published source trail extended with a reproducibility preflight; strategic model, six-language plans and AI-agent/funding references remain preserved. | Publish only independently reproduced capability/resource/economic evidence; no financing or commercialization milestone is claimed. |
 
 D/G co-design remains continuous. INV-034 and INV-035 remain upstream cross-cutting layers feeding all A–H.
 
@@ -89,7 +89,7 @@ Current physical equations and established limits remain binding for present eng
 
 INV-025/026/027, the 100,000,000-GPU goal and universal 100,000,000-unit GPU/CPU/NPU/RAM/VRAM/storage moonshots remain falsifiable goals with subsystem-specific equivalent-useful-output contracts. Hilbert-space dimension is not readable classical memory. NPU comparison still requires actual workload semantics, quality, precision, latency, throughput, memory/data movement and cost.
 
-All eight high-visibility root directives, docs/KANUSANAN_PONGPANAN_MODEL.md, STRATEGIC_PLAN_REFERENCES.md and multilingual public master-plan links remain preserved. No paid QPU job was submitted.
+All eight high-visibility root directives, docs/KANUSANAN_PONGPANNA_MODEL.md, STRATEGIC_PLAN_REFERENCES.md and multilingual public master-plan links remain preserved. No paid QPU job was submitted.
 
 ## 7. Integration, synchronization and next gate
 
@@ -101,3 +101,8 @@ Stable IDs:
 The Lane A contract, focused gap, Batch 139, A–H cycle report and machine-readable integration record are linked from README and integration/README.md. The cold-start manifest is updated with all A–H statuses and the exact starting SHA. Large append-only WORKLOG.md and RESEARCH_GAPS.md remain unchanged; the focused gap is canonical pending safe aggregate reconciliation.
 
 **Next highest-value gate:** pin the model checkpoint and dataset revisions, licenses, file inventories and hashes; build a clean Python 3.12 lock; then reproduce one bounded paper-defined inference task with group-disjoint holdouts. Only after accepted-output quality passes should the same task be compared across competitive CPU/GPU/NPU baselines with complete resource and lifecycle-cost accounting.
+
+
+## Post-publication CI observation
+
+For the Batch 139 commit `e9fba347a4deb39b24a40fb1d05e32774296b905`, cold-start audit [#1382](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550656) passed. Core/invariant run [#2102](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550619) was still in progress at 2026-10-30T01:13:37Z: Python 3.11 and 3.12 jobs passed; Python 3.10 remained in progress. This is not a fully green matrix. The metadata follow-up commit below requires its own exact-head checks.

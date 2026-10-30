@@ -52,7 +52,7 @@
     "E": "No Pangola/material/bio-oil/fusion/cooling measurement",
     "F": "No accepted-task latency/throughput/energy/cost or financing measurement",
     "G": "D/G co-design maintained; no process/yield/tool/factory evidence",
-    "H": "Source trail extended; KPM, six-language plans and AI-agent/funding context preserved"
+    "H": "Source and reproducibility trail extended; Ketskaew Chulamani/Kanusanan Pongpanna Model, six-language plans and AI-agent/funding context preserved; no funding/commercialization milestone."
   },
   "foundational": {
     "FND_001_to_006": "No new measurement, primitive validation or physical mechanism",
@@ -78,7 +78,7 @@
       "05",
       "06"
     ],
-    "strategic_model": "docs/KANUSANAN_PONGPANAN_MODEL.md",
+    "strategic_model": "docs/KANUSANAN_PONGPANNA_MODEL.md",
     "strategic_references": "STRATEGIC_PLAN_REFERENCES.md",
     "languages": [
       "Thai",
@@ -99,8 +99,26 @@
   "ci": {
     "starting_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
     "starting_head_workflow_runs": "NO_RUNS_RETURNED_BY_AVAILABLE_PR_FILTERED_ENDPOINT",
-    "conclusion": "UNVERIFIED_NOT_GREEN",
-    "paid_qpu_authorized": false
+    "conclusion": "PARTIAL_NOT_GREEN: cold-start passed; core matrix still in progress",
+    "paid_qpu_authorized": false,
+    "batch139_commit": "e9fba347a4deb39b24a40fb1d05e32774296b905",
+    "cold_start_run": {
+      "run_number": 1382,
+      "run_id": 40984550656,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550656"
+    },
+    "core_run": {
+      "run_number": 2102,
+      "run_id": 40984550619,
+      "status": "in_progress",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550619",
+      "jobs": {
+        "3.10": "in_progress",
+        "3.11": "success",
+        "3.12": "success"
+      }
+    }
   },
   "sync": {
     "readme_updated": true,
@@ -109,7 +127,9 @@
     "worklog_updated": false,
     "research_gaps_aggregate_updated": false,
     "focused_gap_published": true,
-    "aggregate_sync_debt": "OPEN; large append-only files not overwritten from partial snapshots"
+    "aggregate_sync_debt": "OPEN; large append-only files not overwritten from partial snapshots",
+    "spelling_path_correction": true,
+    "note": "Corrected the canonical strategic-model spelling/path to docs/KANUSANAN_PONGPANNA_MODEL.md."
   },
   "next_gate": "Pin checkpoint and dataset revisions/licenses/file hashes; reconcile data-size units; build a clean Python 3.12 lock; reproduce one bounded paper-defined inference task with group-disjoint holdouts; then matched CPU/GPU/NPU baselines and full cost per accepted analysis."
 }

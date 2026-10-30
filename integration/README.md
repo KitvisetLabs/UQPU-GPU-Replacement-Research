@@ -226,3 +226,8 @@ Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as
 
 - [Batch 131](../docs/BATCH_131_QTPU_HYBRID_RUNTIME_AND_OPEN_QSYS_FIXTURE.md), [Lane A toy contract](../research_lanes/A_quantum_programming_runtime/OPEN_QSYS_TOY_FIXTURE_2026-10-29.md), [qTPU literature watch](../docs/literature_watch/2026-10-29-qtpu-hybrid-tensor-network-runtime.md), [qTPU focused gap](../docs/RESEARCH_GAP_QTPU_RESOURCE_MATCHED_REPRODUCTION_2026-10-29.md), [daily report](DAILY_CYCLE_2026-10-29_QTPU_AND_OPEN_QSYS_FIXTURE.md), and [machine-readable record](INT-20261029-QTPU-OPEN-QSYS.json) record the exact toy-model checks and new systems literature.
 - The toy helper and nine tests are MODEL_ONLY; the equivalent local reference harness passed 9/9, but exact-head repository Actions remains unverified. qTPU's author-reported gains remain external claims pending matched-output/resource reproduction. No paid QPU job was submitted.
+
+
+## Batch 139 post-commit CI and metadata correction
+
+For [source commit e9fba347a4de](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e9fba347a4deb39b24a40fb1d05e32774296b905), cold-start audit [#1382 passed](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550656). Core/invariant run [#2102](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550619) was still in progress at 2026-10-30T01:13:37Z: Python 3.11/3.12 passed; Python 3.10 remained in progress. This is not a full green result. The Batch 139 report and machine record now use the exact canonical path `docs/KANUSANAN_PONGPANNA_MODEL.md`.

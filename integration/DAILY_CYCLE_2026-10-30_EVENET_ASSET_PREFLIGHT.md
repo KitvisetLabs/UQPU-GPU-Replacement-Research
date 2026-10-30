@@ -8,11 +8,11 @@
 
 ## 1. Canonical start and governance
 
-Started from the newest committed main state resolved through GitHub, not a remembered batch number. Read the required charter, invariants, goals, README, research operating system, open-frontier directive, Kanusanan Pongpanan Model, strategic references, permanent root directives 00/00A/01–06, newest committed Batch 137, Batch 138 draft/PR #152, latest cycle reports, focused gaps, integration hub, FND/EQN modules and cold-start manifest.
+Started from the newest committed main state resolved through GitHub, not a remembered batch number. Read the required charter, invariants, goals, README, research operating system, open-frontier directive, Kanusanan Pongpanna Model, strategic references, permanent root directives 00/00A/01–06, newest committed Batch 137, Batch 138 draft/PR #152, latest cycle reports, focused gaps, integration hub, FND/EQN modules and cold-start manifest.
 
 Batch 137 is still the newest numbered batch committed on main. Batch 138 remains draft/open in PR #152 and is not canonical main work. The auxiliary historical Lane I remains a preserved legacy workstream, not a ninth operational lane. The permanent A–H map and D/G co-design are retained.
 
-The cold-start manifest continues to preserve Thai, English, Chinese, Japanese, Korean and German public master-plan references, the Kanusanan Pongpanan Model, and recorded strategic AI-agent/funding references. The eight root directives remain present. No append-only history was truncated.
+The cold-start manifest continues to preserve Thai, English, Chinese, Japanese, Korean and German public master-plan references, the Kanusanan Pongpanna Model, and recorded strategic AI-agent/funding references. The eight root directives remain present. No append-only history was truncated.
 
 ## 2. Fresh literature surveillance
 
@@ -51,7 +51,7 @@ No UQPU code was changed. No local installation, test, checkpoint/data download,
 | **E — Biomass/materials/bio-oil/fusion/cooling/infrastructure** | No new Pangola, material, fuel, fusion or cooling measurement; BIO-001/FUS-001 remain blocked. | Continue functional material qualification, accepted-liquid mass/energy/cost and net reliable fusion-electricity accounting. |
 | **F — Economics/benchmarks/evidence/energy economics/finance** | Source-reported pretraining compute excludes event generation/preprocessing; no inference cost, energy or accepted-task economics. | Measure all training/inference/data/energy/cost components; declare any pretraining amortization denominator. |
 | **G — Chip manufacturing equipment/software/factory systems** | D/G co-design retained; no yield, defectivity, process-window or cost-per-good-device evidence. | Translate only validated D requirements into metrology, equipment and factory cost contracts. |
-| **H — Kanusanan Pongpanan Model strategy/finance/future-industry research/publication** | Source and reproducibility trail extended; strategic model, six-language plans and AI-agent/funding references preserved. | Publish only independently reproduced capability/resource/economic evidence; no funding or commercialization milestone claimed. |
+| **H — Kanusanan Pongpanna Model strategy/finance/future-industry research/publication** | Source and reproducibility trail extended; strategic model, six-language plans and AI-agent/funding references preserved. | Publish only independently reproduced capability/resource/economic evidence; no funding or commercialization milestone claimed. |
 
 No lane was silently omitted. INV-034 and INV-035 remain upstream of all A–H.
 
@@ -91,3 +91,8 @@ INV-025/026/027, the 100,000,000-GPU goal and universal 100,000,000-unit GPU/CPU
 ## 8. Next highest-value gate
 
 Verify the model checkpoint revision/license/hash and the dataset revision/shard inventory/hash; reconcile 180 GB versus 193 GB; create a clean Python 3.12 locked environment; then reproduce one paper-defined bounded inference task with group-disjoint holdouts. Only after output quality passes should matched CPU/GPU/NPU performance and full lifecycle cost per accepted analysis be measured.
+
+
+## Post-commit CI observation
+
+For source head `e9fba347a4deb39b24a40fb1d05e32774296b905`, cold-start audit #1382 passed; core/invariant run #2102 remained in progress at 2026-10-30T01:13:37Z. Python 3.11 and 3.12 passed; Python 3.10 was still running. Full core CI is not yet green/complete. The following metadata correction commit requires its own exact-head CI.
