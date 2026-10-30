@@ -2367,3 +2367,16 @@ Research-Sync: main
 The QEC decoder cycle links were added to the README Contents in the preceding commit, but the full latest-cycle section was not inserted by the automated replacement. This follow-up corrects the README ordering, labels the scaling-exponent cycle as previous, and leaves all existing history intact. The complete QEC-TRANSFER-001 report and supporting gap/contract remain the source of detail.
 
 Research-Sync: main
+
+
+## 2026-10-30 — Batch 142 — Neural-DFEM constitutive discovery and canonical handoff synchronization
+
+- Started from canonical main SHA 8ecb8fef07f8ddbde7997aef0489049cf6b22c87 after re-reading the charter, invariants, goals, README, operating system, open-frontier directive, Kanusanan Pongpananna Model, strategic references, root directives 00/00A/01–06, newest Batch 141/140, focused evidence gaps and CI workflow.
+- Fresh primary-source surveillance added Regazzoni's peer-reviewed Neural-DFEM constitutive-discovery method (Computational Mechanics, published 2026-09-06; DOI 10.1007/s00466-026-02850-2; arXiv:2603.26517). The public code repository declares BSD-3-Clause and lists a legacy Python 3.8/FEniCS environment; the upstream immutable commit, local source/data hashes, clean install and reproduction remain unverified.
+- Added the literature watch, focused RG-D-NEURAL-DFEM-MATERIAL-TRANSFER-001, Lane D MAT-NEURAL-DFEM-001 contract, Batch 142, A–H integration report and machine-readable record. The contract blocks Pangola transfer until the material class is measured and shown compatible with isotropic, path-independent hyperelasticity; real coupon and independent solver/mesh validation remain open.
+- A–H reviewed: A remains Priority #1 with signed-Max-Cut/Qiskit semantic verification and parity-QAOA exact-reference prototype; B remains provider-neutral/no-submit; C has no new memory/transfer measurement; D adds a scoped constitutive method; E retains BIO-001/FUS-001 evidence gates; F has no measured UQPU cost or financing reduction; G retains D/G co-design without factory evidence; H publishes the watch and preserves multilingual strategic context.
+- FND-001–006 and EQN-001–006 remain active; no new matched thermodynamic/QSL measurement, lower bound, validated primitive, particle mechanism, theorem or physical equation was promoted. INV-029–035 and INV-025/026/027 remain preserved and evidence-gated.
+- The prior verified head cef917ec1b7f0130a5cbe86681695f1c4c33753a passed core/invariant run #2105 and cold-start audit #1385. Those runs predate Batch 141/142. The current cycle head returned no combined-status contexts and no PR-triggered runs through the available endpoint; exact-head CI is UNVERIFIED.
+- No paid QPU job, material coupon test, fusion experiment, hazardous test or financing transaction was performed. The focused gap remains literature-only; no mission advantage is claimed.
+
+Research-Sync: main
