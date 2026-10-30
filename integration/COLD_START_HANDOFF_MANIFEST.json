@@ -339,7 +339,7 @@
     "H": {
       "owner_path": "research_lanes/H_strategy_finance_future_industries",
       "status": "Batch 145 adds Lane H Article 010 on evidence-gated capital allocation; six-language master-plan links and strategic AI-agent/funding references remain preserved.",
-      "evidence_class": "STRATEGIC_RESEARCH",
+      "evidence_class": "CONCEPT",
       "next_gate": "Tie each funding tranche to independently accepted technical milestones and actual cashflow/interest records; keep principal, hurdle, WACC and risk premium separate."
     }
   },
