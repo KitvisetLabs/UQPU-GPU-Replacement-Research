@@ -10,7 +10,7 @@
 1. B. Feng, P. Walther, L. Zhang et al., “Agentic AI systems for scientific discovery,” Nature Reviews Methods Primers 6, article 81 (published 2026-10-22), DOI https://doi.org/10.1038/s43586-026-00534-y. This is a methods primer/review, not a new experimental result.
 2. Qile Jiang and George Karniadakis, “AgenticSciML: collaborative multi-agent systems for emergent discovery in scientific machine learning,” npj Artificial Intelligence 2, article 57 (published 2026-04-30), DOI https://doi.org/10.1038/s44387-026-00102-5. Full text: https://www.nature.com/articles/s44387-026-00102-5. Code: https://github.com/Qile-J/AgenticSciML.
 
-Existing UQPU watches cover adjacent SPARC, Maestro, A-SR, PiT-PO and AI theorem-discovery work. This watch adds the October 2026 methods primer and the specific AgenticSciML system; it does not duplicate those earlier sources.
+Existing UQPU watches cover adjacent SPARC, Maestro, A-SR, PiT-PO and AI theorem-discovery work. This watch adds the October 2026 methods primer and the specific AgenticSciML system; it does not duplicate those earlier sources. PR #154's separate pending source branch also records SRHarness v2, an agentic symbolic-regression runtime with persistent typed candidate/evidence state and a shared evaluator. SRHarness and AgenticSciML are complementary (runtime/state discipline versus multi-agent SciML model search); compare them through one frozen evaluator rather than merging their claims or agent roles.
 
 ## Genuine contribution
 
