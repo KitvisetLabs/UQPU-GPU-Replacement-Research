@@ -92,5 +92,10 @@
   ],
   "paid_qpu_execution_authorized": false,
   "hazardous_testing_authorized": false,
-  "next_gate": "Run v2 no-test-leakage test, implement paired direct/parity p=1 runner with train-only parameter fitting and validation-only selection, freeze before test, independently verify SDK/operator/decoder, then target-aware simulation and full accepted-task resource/cost accounting."
+  "next_gate": "Run v2 no-test-leakage test, implement paired direct/parity p=1 runner with train-only parameter fitting and validation-only selection, freeze before test, independently verify SDK/operator/decoder, then target-aware simulation and full accepted-task resource/cost accounting.",
+  "pairwise_screen_path": "integration/PAIRWISE_AH_SCREEN_2026-10-30.md",
+  "pairwise_pairs_reviewed": 28,
+  "three_plus_lane_combinations_reviewed": 5,
+  "tested_integration": "v2 manifest/reference SHA-256 static integrity check passed; hosted regression test not yet observed passing",
+  "integration_blocker": "core CI queued; no independent SDK, target-aware simulation or measured physical resource boundary"
 }
