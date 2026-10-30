@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Lane A workload contract — HEP-EVENET-001](research_lanes/A_quantum_programming_runtime/EVENET_HEP_FOUNDATION_MODEL_WORKLOAD_CONTRACT_2026-10-30.md) — task-specific CPU/GPU/NPU baseline candidate; no QPU mapping or reproduction yet.
+
 - [New literature watch — EVENET particle-collision foundation model](docs/literature_watch/2026-10-30-evenet-particle-collision-foundation-model.md) — Nature Machine Intelligence version of record published 2026-10-29; external paper evidence only.
 
 - [Daily Eight-Lane cycle — temporal-parallel QEC decoder](integration/DAILY_CYCLE_2026-10-30_TEMPORAL_PARALLEL_QEC_DECODER.md) · [literature watch](docs/literature_watch/2026-10-30-temporal-parallel-qec-decoder.md) · [focused gap](docs/RESEARCH_GAP_QEC_TEMPORAL_PARALLEL_DECODER_2026-10-30.md) · [comparison helper](software/uqpu-prototype/uqpu/qec_temporal_decoder.py) · [10 tests](software/uqpu-prototype/tests/test_qec_temporal_decoder.py) — external RTL/synthesis evidence only; exact-head CI must be verified. · [integration hub index](integration/README.md)
