@@ -23,6 +23,8 @@ Three new-to-main source deltas were identified and recorded:
 
 Searches also rechecked SymFM, PiT-PO, formal-proof discovery, symbolic regression and existing fusion learning-rate literature. Existing indexed sources were not duplicated. No new-to-main no-go theorem or experimental anomaly was verified in this pass.
 
+Two parallel unmerged source branches were inspected to prevent duplication and preserve integration: PR #154 (head 3b11949c517631df77ac893bbaa189a35e108971) carries SRHarness v2, Holthusen adaptive POD/ECSW adjoint hyperreduction, GINNGER, Shan & Zhang physics-constrained symbolic regression, peer-reviewed supercritical-water liquefaction and R&D credit-supply stress. PR #156 (head 20ee610448e2c0cacf4509249d4d0377a56ec120) carries QSL, biomass HTL, diamond microchiplet and the v2 QAOA holdout correction. These are separate source branches and remain unmerged; this cycle does not duplicate their watches or treat their artifacts as main.
+
 ## 3. Lane A priority and A–H status
 
 | Lane | Current state and cycle delta | Next gate |
@@ -100,7 +102,7 @@ INV-025/026/027 remain intact. The 100,000,000-GPU and universal 100,000,000-uni
 ## 7. CI, synchronization and next gates
 
 - Canonical main starting SHA: 41fac3953773ae0016a09539be57c3ed6b379771. Its combined-status endpoint returned no status contexts and the available commit-workflow-run endpoint exposed no PR-triggered run for this main SHA; exact-head main CI is therefore **UNVERIFIED**, not green.
-- PR #156 head 20ee610448e2c0cacf4509249d4d0377a56ec120: core run #2252 completed successfully with 15/15 jobs. PR remains unmerged; this does not validate main.
+- PR #156 head 20ee610448e2c0cacf4509249d4d0377a56ec120: core run #2252 completed successfully with 15/15 jobs. PR remains draft/open/unmerged; exact-head cold-start is not exposed and this does not validate main.
 - PR #154 head 3b11949c517631df77ac893bbaa189a35e108971: core run #2190 completed successfully with 15/15 jobs. PR remains unmerged; this does not validate main.
 - Cold-start audit for current main and the new source branch is not exposed by the available workflow-run endpoint; do not infer success from a predecessor.
 - No paid QPU job, material coupon test, bio-oil production, fusion experiment or financing transaction was performed.
