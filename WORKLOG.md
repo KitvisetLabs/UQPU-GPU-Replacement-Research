@@ -2424,3 +2424,14 @@ INV-029–033 and BIO-001/FUS-001/FIN-001 remain unadvanced empirically. INV-034
 CI: main exact-head 41fac395 had no combined-status contexts exposed. Prior core #2140 (15/15 returned jobs successful) and cold-start #1430 (successful) belong to d3d41796 and do not validate current main. Source branch `research/2026-10-30-equation-discovery-material-hyperreduction` contains commits f8e4bda, 87131c1 and 693ecdf; all are pending PR/main sync.
 
 Research-Sync: pending-main
+
+
+## 2026-10-30 — supplementary BIO-001 / FIN-001 literature surveillance
+
+Fresh public-source search found two peer-reviewed 2026 articles not yet indexed on starting main. *Energy & Fuels* 40(29), 15858–15879 (2026), DOI 10.1021/acs.energyfuels.6c01592, compares one-step and two-step supercritical-water liquefaction across biomass composition groups; the two-step path uses 30-minute subcritical-water pretreatment. Publisher full text/supplement was inaccessible, so no numerical yields/costs were extracted. A matched Pangola experiment and full accepted-liquid/mass/energy/lifecycle-cost gate is specified in [BIO-001 contract](../research_lanes/E_materials_energy_cooling_infrastructure/BIO001_SCWL_TWO_STEP_CONTROL_CONTRACT_2026-10-30.md) and [focused gap](../docs/RESEARCH_GAP_BIO001_SCWL_TWO_STEP_2026-10-30.md).
+
+Pragati Priya, *Emerging Markets Review* (2026), DOI 10.1016/j.ememar.2026.101479, uses Indian firm-level data 2002–2024; the abstract reports R&D-intensive firms are more sensitive to monetary tightening and bank credit-supply shocks. Full tables were inaccessible; no coefficient is transferred to UQPU or Thailand. A separate rate-only/credit-only/joint stress ledger is specified in [FIN-001 contract](../research_lanes/F_economics_benchmarks_evidence_integration/FIN001_CREDIT_SUPPLY_STRESS_CONTRACT_2026-10-30.md) and [focused gap](../docs/RESEARCH_GAP_FIN001_CREDIT_SUPPLY_STRESS_2026-10-30.md).
+
+The [BIO-001/FIN-001 literature watch](../docs/literature_watch/2026-10-30-biomass-scwl-and-rd-credit-supply.md) and [machine-readable integration record](../integration/INT-20261030-BIOFIN-SCWL-CREDIT.json) are on pending source branch PR #154. No Pangola yield, accepted fuel, commercial cost, project principal/interest saving, lower WACC or macro interest-rate effect is claimed. Source paper retrieval and independent reproduction remain open.
+
+Research-Sync: pending-main
