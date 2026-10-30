@@ -401,5 +401,20 @@
       ],
       "state": "OPEN_DRAFT_UNMERGED"
     }
-  ]
+  ],
+  "shared_material_data_interface": {
+    "id": "MAT-D-E-FEML-HYPERREDUCTION-SHARED-DATA-001",
+    "owner": "D",
+    "related_work_items": [
+      "MAT-FEML-PANGOLA-001",
+      "MAT-NEURAL-HYPERREDUCTION-001"
+    ],
+    "source_pr154_contract": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/3b11949c517631df77ac893bbaa189a35e108971/research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md",
+    "rule": "Reuse one material/function specification, batch/specimen/geometry splits, calibration and blind holdouts; compare conventional models, FEML and POD/ECSW hyperreduction under matched data/compute budgets; do not duplicate Pangola coupon campaigns.",
+    "separate_cost_terms": [
+      "FEML forward and adjoint solves",
+      "hyperreduction basis/sampling rebuilds, canaries and full-order checks"
+    ],
+    "evidence": "LITERATURE_ONLY"
+  }
 }
