@@ -35,3 +35,11 @@ LegoSR (arXiv:2610.33465) is new-to-repository. RISR (arXiv:2610.11387) is prior
 - The 2026-10-26 OpenAI announcement is already covered by the [2026-10-28 literature watch](../../docs/literature_watch/2026-10-28-openai-math-complexity-qft-claims-verification-boundary.md) and [RG-EQN-009](../../docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md).
 - This cycle rechecked the source and retained the existing OPEN / independent-review status rather than creating a duplicate article. The constructive-QFT artifacts remain unavailable for independent reproduction in the cited announcement.
 - Mathematical formalization claims remain distinct from physical validity, device consequences, accepted-task performance and economics.
+
+## 2026-10-30 — agentic scientific discovery and cold-start handoff
+
+- [Agentic AI methods primer / AgenticSciML watch](../../docs/literature_watch/2026-10-30-agentic-ai-scientific-discovery-primer.md)
+- [AGENTIC-HANDOFF-001 reproduction gap](../../docs/RESEARCH_GAP_AGENTIC_SCIENTIFIC_DISCOVERY_HANDOFF_2026-10-30.md)
+- [Daily A–H integration](../../integration/DAILY_CYCLE_2026-10-30_FEML_AGENTIC_SCIENTIFIC_DISCOVERY.md)
+
+The proposed benchmark measures whether a fresh agent can resume from GitHub-only canonical memory and whether multi-agent work improves independently accepted results under equal budgets. No autonomous-discovery performance is claimed.
