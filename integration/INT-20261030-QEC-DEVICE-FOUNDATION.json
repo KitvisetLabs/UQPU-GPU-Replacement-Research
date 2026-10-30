@@ -23,9 +23,34 @@
       "status": "LITERATURE_ONLY",
       "gap": "docs/RESEARCH_GAP_DG_WAVEGUIDE_AND_SPIN_QUBIT_TRANSFER_2026-10-30.md",
       "contract": "research_lanes/D_device_chip_fabrication_packaging/QUANTUM_INTERCONNECT_AND_SPIN_QUBIT_DEVICE_TRANSFER_CONTRACT_2026-10-30.md"
+    },
+    {
+      "id": "QEC-PLANAR-BOUNDARY-001",
+      "primary_lane": "A",
+      "co_lanes": [
+        "D",
+        "G"
+      ],
+      "status": "LITERATURE_ONLY",
+      "gap": "docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md",
+      "contract": "research_lanes/A_quantum_programming_runtime/PLANAR_QLDPC_BOUNDARY_ALGORITHM_TRANSFER_CONTRACT_2026-10-30.md"
+    },
+    {
+      "id": "NO-GO-GAUSSIAN-REPEATER-001",
+      "primary_lane": "B",
+      "status": "ALREADY_INDEXED_MAIN",
+      "watch": "docs/literature_watch/2026-10-27-formal-discovery-and-photonic-no-go-boundaries.md",
+      "note": "PRL publication 2026-10-23 rechecked; no duplicate watch created."
     }
   ],
   "literature_watches": [
+    {
+      "path": "docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md",
+      "doi": "10.1103/989h-xjqv",
+      "published": "2026-10-23",
+      "evidence": "peer-reviewed mathematical/algorithmic code-construction paper; no public research data/software",
+      "uqpu_reproduced": false
+    },
     {
       "path": "docs/literature_watch/2026-10-30-mamba-qec-decoder-peer-reviewed.md",
       "doi": "10.1038/s41534-026-01403-y",
@@ -61,18 +86,18 @@
     }
   ],
   "lane_status": {
-    "A": "QAOA v2 exact-head CI passed; no optimizer run; aggregate objective and shot semantics need clarification.",
+    "A": "QAOA v2 exact-head CI passed; no optimizer run; aggregate objective and shot semantics need clarification. Planar qLDPC boundary algorithm indexed; independent reimplementation not run.",
     "B": "Mamba QEC peer-reviewed source indexed; Gate 0 not run; no provider/QPU execution.",
     "C": "Decoder state, syndrome buffers and waveguide transfer bytes unmeasured.",
-    "D": "Waveguide and triple-dot device literature indexed; no UQPU device/process result.",
+    "D": "Waveguide and triple-dot device literature indexed; no UQPU device/process result. Planar boundary/defect geometry added as layout input only.",
     "E": "BIO-001/FUS-001 evidence boundaries unchanged; no accepted fuel or net fusion electricity.",
     "F": "No measured energy, accepted-output cost, principal, interest or WACC change.",
-    "G": "D/G co-design updated; no manufacturing equipment/yield/cost evidence.",
+    "G": "D/G co-design updated; no manufacturing equipment/yield/cost evidence. Check locality/weight, routing, gate depth, ancillas and process constraints added to D/G co-design gate.",
     "H": "Three source watches and integration report; multilingual strategic references preserved."
   },
   "foundational": {
     "FND001": "Strong-Mpemba optical experiment indexed; Davies-map reconstruction and matched controls open.",
-    "FND002": "No change; readable classical storage remains distinct from state-space dimension.",
+    "FND002": "No change; readable classical storage remains distinct from state-space dimension. No new information-bound theorem; planar qLDPC code parameters are not readable classical storage.",
     "FND003": "No matched QSL experiment; decoder latency model is not a QSL.",
     "FND004": "No alternative physical primitive demonstrated.",
     "FND005": "Majorana self-testing framework indexed; proof/assumption reconstruction open; no material observation.",
@@ -127,6 +152,14 @@
       "core_status": "queued",
       "cold_start_run": 1595,
       "cold_start": "queued"
+    },
+    "pr161_initial_head": {
+      "head": "70a067be786d6b4db0d6bb06bf61bb453d2955fe",
+      "core_run": 2317,
+      "core_status": "queued",
+      "cold_start_run": 1597,
+      "cold_start_status": "queued",
+      "note": "Initial PR #161 head; subsequent documentation refresh will create a new exact head and new checks."
     }
   },
   "synchronization": {

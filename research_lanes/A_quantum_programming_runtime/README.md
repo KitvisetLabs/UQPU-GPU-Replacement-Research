@@ -93,3 +93,11 @@ The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The 
 - Added `tests/test_qaoa_parity_heldout_mapping.py`: all 10 frozen signed-Max-Cut fixtures, 688 logical assignments, 7,072 physical parity strings, direct-QUBO exact baseline, parity exact certificate, fail-closed decoding and argmax correspondence.
 - Evidence: software contract + model-only exact small-instance reference. No QAOA optimizer, SDK, target-aware simulation, QPU execution or advantage claim.
 - Next: paired direct/parity optimizer/sampler under the frozen equal budgets; validate bit order, operator sign and decoder independently first.
+
+
+## Latest QEC code-construction research — 2026-10-30
+
+- [Planar qLDPC gapped-boundary literature watch](../../docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md)
+- [Focused reproduction gap](../../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md)
+- [Lane A transfer contract](PLANAR_QLDPC_BOUNDARY_ALGORITHM_TRANSFER_CONTRACT_2026-10-30.md)
+- Peer-reviewed algorithmic construction only; the paper states no public data/software. UQPU has not reimplemented the algebra, verified finite-size distance or mapped the code to hardware. Batch 144 remains latest numbered main; Batch 145 is still PR #156.

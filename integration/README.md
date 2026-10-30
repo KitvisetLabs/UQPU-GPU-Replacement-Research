@@ -2,6 +2,7 @@
 
 ## Latest integrated delta — 2026-10-30 — QEC, quantum device and foundational frontier
 
+- [Planar qLDPC boundary-construction watch](../docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md) · [focused gap](../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md) · [Lane A contract](../research_lanes/A_quantum_programming_runtime/PLANAR_QLDPC_BOUNDARY_ALGORITHM_TRANSFER_CONTRACT_2026-10-30.md)
 - [A–H daily cycle report](DAILY_CYCLE_2026-10-30_QEC_DEVICE_AND_FOUNDATIONAL_FRONTIER.md)
 - [Machine record](INT-20261030-QEC-DEVICE-FOUNDATION.json)
 - [Mamba QEC watch](../docs/literature_watch/2026-10-30-mamba-qec-decoder-peer-reviewed.md) · [gap](../docs/RESEARCH_GAP_QEC_MAMBA_DECODER_REPRODUCTION_2026-10-30.md) · [Lane B contract](../research_lanes/B_cloud_qpu_provider_integration/MAMBA_QEC_DECODER_TRANSFER_CONTRACT_2026-10-30.md)

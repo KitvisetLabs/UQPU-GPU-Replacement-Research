@@ -20,3 +20,8 @@ Future device/process/package subfolders are allowed subject to the 16-level dep
 - [Focused D/G gap](../../docs/RESEARCH_GAP_DG_WAVEGUIDE_AND_SPIN_QUBIT_TRANSFER_2026-10-30.md)
 - [Lane D/G contract](QUANTUM_INTERCONNECT_AND_SPIN_QUBIT_DEVICE_TRANSFER_CONTRACT_2026-10-30.md)
 - Two peer-reviewed external device experiments only; no UQPU device, process, packaging, yield or cost result. Waveguide and spin-gate metrics remain separate.
+
+
+## Planar QEC layout co-design — 2026-10-30
+
+[Planar qLDPC boundary-construction watch](../../docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md) and [focused gap](../../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md) provide a mathematical input for planar connectivity, boundary/defect layout, check locality and routing. No device or fabrication result is claimed.

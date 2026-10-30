@@ -19,7 +19,8 @@ Large append-only WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partia
 2. **Transmon-waveguide routing cell:** Mutsenik et al., *npj Quantum Information*, published 2026-10-29, DOI 10.1038/s41534-026-01399-5. One transmon couples two separated superconducting waveguides at 10 mK and approximately one photon at 6 GHz. Numeric transfer efficiency, uncertainty, bandwidth and control overhead still need full-text extraction.
 3. **Triple-dot spin-qubit control:** Matsumoto et al., *npj Quantum Information*, published 2026-10-24, DOI 10.1038/s41534-026-01400-1. GaAs triple-dot orbital-band tuning and FNN drift feedback are reported with 99.56% π/2 fidelity at 4.05 ns. No multi-device yield or silicon/germanium transfer follows.
 4. **Quantum strong Mpemba effect:** Zhan et al., *Physical Review Letters* 137, 170403, published 2026-10-22, DOI 10.1103/z9t9-mwgv. A single-qubit optical setup simulating a Davies map demonstrates a coherence-elimination mechanism; it does not lower Landauer's bound.
-5. **Majorana self-testing equivalence:** Michalski et al., *npj Quantum Information*, published 2026-10-24, DOI 10.1038/s41534-026-01383-z. A ROCN-matrix Bell-inequality construction and additional self-testing equivalence are mathematical results, not a material observation of Majorana particles.
+5. **Planar qLDPC gapped boundaries:** Liang et al., *PRX Quantum* 7, 043016, published 2026-10-23, DOI 10.1103/989h-xjqv. The paper constructs all gapped boundaries/defects for 2D topological Pauli stabilizer codes using boundary gauge algebra and Laurent-polynomial/Hermite/Smith normal forms. It reports a (3,3)-BB planar family with expected parameters [[288L²;8;d=12L−O(1)]] and a (2,−3)-BB anyon-string period 1023. The paper states no public research data/software; this is not a hardware overhead result. See the [planar qLDPC watch](../docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md) and [reproduction gap](../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md).
+6. **Majorana self-testing equivalence:** Michalski et al., *npj Quantum Information*, published 2026-10-24, DOI 10.1038/s41534-026-01383-z. A ROCN-matrix Bell-inequality construction and additional self-testing equivalence are mathematical results, not a material observation of Majorana particles.
 
 Existing AI-mathematics, theorem-discovery, symbolic-regression and PINN watches were found already indexed and were not duplicated. No new AI-generated equation or theorem was promoted. No credible anomaly requiring a change to established physics was identified.
 
@@ -27,13 +28,13 @@ Existing AI-mathematics, theorem-discovery, symbolic-regression and PINN watches
 
 | Lane | This cycle | Evidence boundary / next gate |
 |---|---|---|
-| **A — quantum programming/workloads/compiler/runtime, Priority #1** | Batch 144 mapping audit remains on main. PR #156 QAOA v2 exact-head core #2252 passed 15/15 and cold-start #1537 passed. A PR comment records the remaining train-objective aggregation and shot-budget semantics. | No optimizer/QAOA run. Define one global vector per method/encoding, deterministic aggregate train objective across four train graphs, update versus per-instance call counts, seed semantics and separate optimization/scoring shots; then implement paired runner. |
+| **A — quantum programming/workloads/compiler/runtime, Priority #1** | Batch 144 mapping audit remains on main. A peer-reviewed planar qLDPC boundary-synthesis algorithm is newly indexed with an independent algebra/reproduction gate.  PR #156 QAOA v2 exact-head core #2252 passed 15/15 and cold-start #1537 passed. A PR comment records the remaining train-objective aggregation and shot-budget semantics. | No optimizer/QAOA run. Define one global vector per method/encoding, deterministic aggregate train objective across four train graphs, update versus per-instance call counts, seed semantics and separate optimization/scoring shots; then implement paired runner. |
 | **B — cloud/QPU/provider integration** | Added Mamba QEC peer-reviewed watch, focused reproduction gap and provider-neutral contract. | Literature/contract only; no provider job, dataset reproduction or real-time controller feedback. Gate 0 source/version/data/license/hash verification. |
 | **C — RAM/VRAM/HBM/storage/state/data movement** | Mamba hidden state, syndrome buffers, model bytes and waveguide transfer are explicit future measurements. | No physical memory or interconnect measurement. Classical decoder state is not quantum memory or persistent storage. |
-| **D — quantum/photonic/semiconductor device/chip/process/fabrication/packaging** | Added transmon-waveguide routing and triple-dot spin-qubit literature watch with source-specific transfer gap. | External device experiments only; no UQPU device, process window, packaging, yield or multi-device replication. |
+| **D — quantum/photonic/semiconductor device/chip/process/fabrication/packaging** | Added transmon-waveguide/triple-dot device watch and planar qLDPC boundary-layout input; D/G transfer gaps remain source-specific. | External device experiments only; no UQPU device, process window, packaging, yield or multi-device replication. |
 | **E — biomass/materials/bio-oil/fusion/cooling/infrastructure** | BIO-001 and FUS-001 evidence boundaries reviewed and retained. | No new Pangola material, accepted liquid fuel, net delivered fusion electricity or cooling-energy measurement. |
 | **F — economics/benchmarks/evidence/energy/finance** | Accepted-output cost accounting required for decoder, interconnect and device arms; principal/interest/hurdle/WACC separation preserved. | No measured energy, cost, principal, interest or WACC improvement. |
-| **G — manufacturing equipment/software/factory systems** | D/G co-design linked to waveguide/spin device process windows, cryogenic test, metrology, packaging, variation and yield. | No equipment qualification, factory throughput, production yield or cost-per-good-device result. |
+| **G — manufacturing equipment/software/factory systems** | D/G co-design linked to waveguide/spin process windows and planar qLDPC check locality, routing, metrology, packaging and yield. | No equipment qualification, factory throughput, production yield or cost-per-good-device result. |
 | **H — strategy/finance/future industries/publication** | Three dated source watches and an A–H report added; six-language strategic references retained. | Strategic context only; no financing commitment, valuation or commercialization evidence. |
 
 ## Foundational physics and equation discovery
@@ -76,10 +77,11 @@ No paid QPU job, provider hardware job, device fabrication, fuel production or f
 ## Next highest-value gates
 
 1. Resolve PR #156's global training-objective aggregation and separate train/validation/test shot semantics; then implement the paired direct-versus-parity QAOA runner.
-2. Complete QEC-MAMBA-001 Gate 0: version-of-record reconciliation, dataset/license/hash verification and source-faithful environment.
-3. Complete DG-DEVICE-TRANSFER-001 Gate 0: full article/supplement extraction, device/process parameters and uncertainty.
-4. Reconstruct the Davies-map Mpemba mechanism and ROCN/Majorana self-testing assumptions under FND-001/FND-005.
-5. Observe exact-head CI for PRs #158–161; repair feasible failures without merging unreviewed branches.
-6. Continue BIO-001, FUS-001 and FIN-001 with accepted-function, net-electricity and financed-principal boundaries.
+2. Implement QEC-PLANAR-BOUNDARY-001 for small Z2/Z4 and BB examples; independently verify boundary commutation, ranks, local-logical removal and finite-size distance before layout.
+3. Complete QEC-MAMBA-001 Gate 0: version-of-record reconciliation, dataset/license/hash verification and source-faithful environment.
+4. Complete DG-DEVICE-TRANSFER-001 Gate 0: full article/supplement extraction, device/process parameters and uncertainty.
+5. Reconstruct the Davies-map Mpemba mechanism and ROCN/Majorana self-testing assumptions under FND-001/FND-005.
+6. Observe exact-head CI for PRs #158–161; repair feasible failures without merging unreviewed branches.
+7. Continue BIO-001, FUS-001 and FIN-001 with accepted-function, net-electricity and financed-principal boundaries.
 
 No paid QPU execution is authorized. No physical, material, fuel, fusion, financial or mission-level advantage is claimed.

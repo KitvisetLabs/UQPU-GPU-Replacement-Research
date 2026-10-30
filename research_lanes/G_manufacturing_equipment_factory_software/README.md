@@ -12,3 +12,8 @@ Future equipment/process/factory-software subfolders are allowed subject to the 
 ## Latest D/G co-design input — 2026-10-30
 
 The [waveguide/triple-dot device watch](../../docs/literature_watch/2026-10-30-transmon-waveguide-and-triple-dot-device-frontier.md) and [D/G transfer gap](../../docs/RESEARCH_GAP_DG_WAVEGUIDE_AND_SPIN_QUBIT_TRANSFER_2026-10-30.md) identify metrology, process-window, cryogenic-test, packaging, device-variation and yield questions. They are external experiments, not manufacturing or factory evidence.
+
+
+## Planar qLDPC D/G interface — 2026-10-30
+
+The [planar qLDPC boundary gap](../../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md) requires any code-level proposal to emit check weight/degree, geometric span, routing, native-gate depth, ancillas, measurement schedule and process/packaging/yield constraints before manufacturing claims.
