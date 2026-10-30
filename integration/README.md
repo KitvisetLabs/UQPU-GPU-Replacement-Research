@@ -277,3 +277,13 @@ Batch 139 is now the newest numbered batch committed on main at [e9fba347](https
 Regazzoni's peer-reviewed Neural-DFEM method couples differentiable finite elements to a structure-preserving hyperelastic constitutive model. Its reported validation is synthetic and same-solver; it is limited to isotropic path-independent hyperelasticity and real experimental validation remains open. The source repository's declared BSD-3-Clause license and legacy environment were inspected, but no immutable upstream commit, local source hash, installation or reproduction was completed. The Lane D contract blocks Pangola transfer until actual material class, coupon measurements, independent solver/mesh validation and the target function are established. No material substitution, device, new-law or economic claim is made.
 
 The canonical cold-start handoff is updated to Batch 142. WORKLOG.md and RESEARCH_GAPS.md remain untouched to protect large append-only history; focused gap synchronization debt is recorded. Current-head exact CI remains unverified.
+
+
+### Batch 142 post-publication append-only sync
+
+After the initial Batch 142 report was written, the complete current canonical contents of WORKLOG.md (251,138 bytes) and RESEARCH_GAPS.md (137,641 bytes) were fetched and safely appended without replacing either historical prefix.
+
+- RESEARCH_GAPS.md now indexes RG-D-NEURAL-DFEM-MATERIAL-TRANSFER-001 in commit 59db755487323c0a8aa83304f75d75c25cf46fcd.
+- WORKLOG.md now records Batch 142 in commit e987c90d3414a4261471d818ef8bba9882c11680.
+- The post-append files are 139,537 and 253,594 bytes respectively. This closes the current Batch 142 root-index/worklog sync debt; historical PR/branch/fork reconciliation remains open.
+- Exact-head CI for the subsequent commits is still UNVERIFIED. The successful prior-head runs #2105/#1385 on cef917ec are not inherited.
