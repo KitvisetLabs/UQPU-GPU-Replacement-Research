@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Cross-lane integration hub — EVENET HEP workload delta](integration/README.md) — current integration index and next-gate handoff.
+
 - [Machine-readable integration record — INT-20261030-EVENET-HEP-WORKLOAD](integration/INT-20261030-EVENET-HEP-WORKLOAD.json) — source pins, evidence class, A–H state and open gates.
 
 - [Daily Eight-Lane cycle — EVENET HEP workload](integration/DAILY_CYCLE_2026-10-30_EVENET_HEP_FOUNDATION_MODEL.md) · [focused gap](docs/RESEARCH_GAP_EVENET_HEP_FOUNDATION_MODEL_TRANSFER_2026-10-30.md) · [literature watch](docs/literature_watch/2026-10-30-evenet-particle-collision-foundation-model.md) · [Lane A contract](research_lanes/A_quantum_programming_runtime/EVENET_HEP_FOUNDATION_MODEL_WORKLOAD_CONTRACT_2026-10-30.md) — literature and contract only; no UQPU hardware claim.
