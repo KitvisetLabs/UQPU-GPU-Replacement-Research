@@ -1404,3 +1404,18 @@ Lange et al., arXiv:2610.03869, report a modular neural decoder evaluated on IBM
 **Next gate:** verify source/model/data licenses and SHA-256, reconstruct the pinned environment, reproduce released-model and MWPM metrics on identical shots, then preregister group-disjoint device/operation/noise holdouts and target-specific latency/throughput/cost measurement. No paid QPU job is needed or authorized.
 
 **Nonclaims:** no real-QPU advantage, universal decoder portability, new physical law, readable-memory equivalence, material substitution, accepted bio-oil, net fusion electricity, lower WACC or Data-Center-to-One-Phone feasibility is established.
+
+
+## RG-D-NEURAL-DFEM-MATERIAL-TRANSFER-001 — Neural-DFEM constitutive-model transfer (2026-10-30)
+
+**Status:** OPEN / LITERATURE_ONLY / UPSTREAM REPRODUCTION NOT RUN  
+**Primary owner:** Lane D; interfaces E, G, F and H.  
+**Detailed gap:** docs/RESEARCH_GAP_NEURAL_DFEM_PANGOLA_MATERIAL_TRANSFER_2026-10-30.md  
+**Lane D contract:** research_lanes/D_device_chip_fabrication_packaging/NEURAL_DFEM_CONSTITUTIVE_MODEL_TRANSFER_CONTRACT_2026-10-30.md  
+**Literature watch:** docs/literature_watch/2026-10-30-neural-dfem-structure-preserving-constitutive-discovery.md
+
+Regazzoni, *Computational Mechanics* (2026), DOI 10.1007/s00466-026-02850-2, reports a differentiable-FEM constitutive-discovery method with a structure-preserving hyperelastic neural class. The peer-reviewed numerical validation uses synthetic data and the same FE discretization/solver for data generation and identification. The current model is restricted to isotropic, path-independent hyperelasticity; the paper identifies real experimental validation as future work. The public source repository declares BSD-3-Clause and lists a legacy Python/FEniCS environment, but UQPU has not pinned an immutable upstream commit or verified local source/data bytes.
+
+**Unlock:** pin the upstream source/config/data/license; reproduce one Mooney–Rivlin synthetic case; run independent solver/mesh and non-polyconvex negative controls; quantify strain-state coverage and identifiability; classify actual Pangola-derived coupon behavior before any transfer; validate with independent DIC/force and local strain–stress data; then test the actual mechanical/electrical/thermal function and lifecycle cost.
+
+**Nonclaims:** no Pangola material test, critical-material substitution, elemental transmutation, device/fabrication result, new physical law, fuel/electricity/financing advantage or Data-Center-to-One-Phone progress is established.
