@@ -1,0 +1,54 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-AGENTIC-DETECTOR-COSIGN",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_branch": "main",
+  "starting_main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "newest_numbered_batch_on_main": 144,
+  "pending_batch_145_pr": 156,
+  "primary_owner": "Lane D",
+  "co_owner": "Lane G",
+  "work_items": [
+    {
+      "id": "DG-AGENTIC-CODESIGN-001",
+      "status": "LITERATURE_ONLY",
+      "source": "arXiv:2604.21804v3",
+      "source_revision_date": "2026-10-20",
+      "watch": "docs/literature_watch/2026-10-30-agentic-differentiable-detector-codesign.md",
+      "gap": "docs/RESEARCH_GAP_DG_AGENTIC_DETECTOR_COSIGN_REPRODUCTION_2026-10-30.md",
+      "contract": "research_lanes/D_device_chip_fabrication_packaging/AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md",
+      "uqpu_reproduced": false,
+      "paid_qpu_job": false,
+      "device_fabricated": false,
+      "physical_law_promoted": false
+    }
+  ],
+  "lane_status": {
+    "A": "software-first workload/device interface preserved; QAOA v2 optimizer budget clarification open",
+    "B": "provider-neutral; no SDK or paid QPU execution",
+    "C": "state/digitization/buffer/transfer accounting required; no memory measurement",
+    "D": "new differentiable full-simulation co-design method watch; reproduction open",
+    "E": "Pangola/material, accepted-liquid and fusion gates remain unproven",
+    "F": "equal-budget and full lifecycle/search-cost accounting added; no measured project economics",
+    "G": "D/G co-design adds process-window, metrology, defectivity, throughput and yield requirements",
+    "H": "source-bounded publication; multilingual master-plan context retained"
+  },
+  "foundations": {
+    "FND-001..006": "active; no new measurement or changed physical limit",
+    "EQN-001..006": "active; no new physical equation/law promoted",
+    "INV-034": "cross-cutting deep-frontier agenda preserved",
+    "INV-035": "AI hypothesis/search role bounded by physics constraints, held-out tests and independent evidence"
+  },
+  "permanent_invariants": [
+    "INV-025","INV-026","INV-027","INV-029","INV-030","INV-031","INV-032","INV-033","INV-034","INV-035"
+  ],
+  "evidence_boundary": "Official preprint and source-reported full-simulation study only. No UQPU reproduction, quantum-device fabrication, process/yield improvement, Pangola substitution, accepted fuel, net fusion electricity, financing advantage, real-QPU advantage or new physical law.",
+  "sync": {
+    "worklog_append": "not performed; append-only file preserved",
+    "research_gaps_append": "not performed; append-only file preserved",
+    "focused_gap": "published as primary gap artifact",
+    "exact_head_ci": "must pass before merge"
+  },
+  "next_gate": "Pin source/code/data/environment; reproduce three fixed-protocol trajectories; then compare UQPU D/G transfer against equal-budget baselines and held-out device/process regimes."
+}
