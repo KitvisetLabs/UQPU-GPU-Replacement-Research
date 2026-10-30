@@ -49,3 +49,10 @@ After the initial Batch 142 report was written, the complete current canonical c
 - WORKLOG.md now records Batch 142 in commit e987c90d3414a4261471d818ef8bba9882c11680.
 - The post-append files are 139,537 and 253,594 bytes respectively. This closes the current Batch 142 root-index/worklog sync debt; historical PR/branch/fork reconciliation remains open.
 - Exact-head CI for the subsequent commits is still UNVERIFIED. The successful prior-head runs #2105/#1385 on cef917ec are not inherited.
+
+
+## Post-publication pending-PR CI observation — 2026-10-30
+
+PR #152 remains OPEN and DRAFT (not merged), but its current head 1dbfb541944cbb3ee820bdb69256582203664124 now has workflow run #2067 completed successfully: all 15 returned jobs, including Python 3.10/3.11/3.12, Qiskit verification, QSP/QSVT, target-noise and reference benchmark, concluded success. This is PR-head CI only and does not validate or merge main.
+
+PR #153 remains OPEN, not merged, and currently reports mergeable=false. No merge or ready-for-review action was taken. The two PRs remain explicit review/synchronization gates.
