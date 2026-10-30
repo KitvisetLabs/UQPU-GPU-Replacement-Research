@@ -671,8 +671,8 @@
       "merged": false,
       "base": "main",
       "head": "sync/pending-pr156-batch145-summary",
-      "head_sha": "4adde9ca71ce1cdf93af38aa560a49d0f8ba51cc",
-      "note": "Pending-main summary branch; exact-head CI not exposed at last query."
+      "head_sha": null,
+      "note": "Pending-main summary PR #157. Resolve the current summary-branch head from PR metadata at each reconciliation checkpoint; this manifest update itself advances the branch, so no self-referential final SHA is asserted."
     }
   },
   "latest_pr_ci_observation": {
