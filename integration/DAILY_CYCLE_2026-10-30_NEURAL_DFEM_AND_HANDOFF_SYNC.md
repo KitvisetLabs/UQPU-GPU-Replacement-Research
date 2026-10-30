@@ -39,3 +39,13 @@ The last verified prior head cef917ec1b7f0130a5cbe86681695f1c4c33753a had core/i
 WORKLOG.md and RESEARCH_GAPS.md were not replaced from partial snapshots. The focused gap is canonical detail; append-only aggregate sync remains debt. PR #152/#153 and inaccessible historical branch/fork coverage remain unresolved.
 
 No paid QPU job, material test, fusion experiment or financing transaction was performed.
+
+
+## Post-publication append-only canonical sync — 2026-10-30
+
+After the initial Batch 142 report was written, the complete current canonical contents of WORKLOG.md (251,138 bytes) and RESEARCH_GAPS.md (137,641 bytes) were fetched and safely appended without replacing either historical prefix.
+
+- RESEARCH_GAPS.md now indexes RG-D-NEURAL-DFEM-MATERIAL-TRANSFER-001 in commit 59db755487323c0a8aa83304f75d75c25cf46fcd.
+- WORKLOG.md now records Batch 142 in commit e987c90d3414a4261471d818ef8bba9882c11680.
+- The post-append files are 139,537 and 253,594 bytes respectively. This closes the current Batch 142 root-index/worklog sync debt; historical PR/branch/fork reconciliation remains open.
+- Exact-head CI for the subsequent commits is still UNVERIFIED. The successful prior-head runs #2105/#1385 on cef917ec are not inherited.
