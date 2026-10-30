@@ -1,71 +1,137 @@
 {
-  "schema": "uqpu-integration-v1",
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-EVENET-ASSET-PREFLIGHT",
   "integration_id": "INT-20261030-EVENET-ASSET-PREFLIGHT",
   "date": "2026-10-30",
-  "starting_main_sha": "a252aa0a7a28d6cb6fc2201c225920762caef871",
-  "work_id": "HEP-EVENET-002",
-  "gap_id": "RG-HEP-EVENET-PREFLIGHT-001",
-  "evidence_class": "UPSTREAM_SOURCE_AUDIT_AND_PUBLIC_DATASET_METADATA",
-  "literature_delta": {
+  "cycle_date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_branch": "main",
+  "starting_head": "d8c012e79eb0d6c9d0d9975493cd8c4799be9109",
+  "newest_committed_batch_at_start": 137,
+  "batch_138_status": "DRAFT_OPEN_PR_152_NOT_MERGED",
+  "primary_work_item": {
+    "id": "HEP-EVENET-002",
+    "lane": "A",
+    "status": "SOURCE_RUNTIME_DATA_PREFLIGHT_PINNED_CODE_ONLY_CHECKPOINT_DATA_HASHES_AND_REPRODUCTION_OPEN",
+    "primary_artifact": "research_lanes/A_quantum_programming_runtime/EVENET_REPRODUCTION_PREFLIGHT_CONTRACT_2026-10-30.md",
+    "focused_gap": "docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md"
+  },
+  "evidence_class": [
+    "LITERATURE_ONLY",
+    "SOFTWARE_CONTRACT"
+  ],
+  "literature": {
     "new_to_main": false,
-    "note": "EveNet paper already indexed. CoSR APS acceptance/arXiv withdrawal conflict rechecked and already indexed; no new literature article required.",
+    "note": "EveNet paper already indexed. CoSR APS acceptance/arXiv withdrawal conflict rechecked and already indexed; no duplicate watch.",
     "sources": [
-      "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q",
-      "https://arxiv.org/abs/2603.13727",
-      "https://journals.science.org/doi/10.1126/science.aej2213"
+      {
+        "title": "Foundation model for particle collision data analysis",
+        "doi": "10.1038/s42256-026-01322-9",
+        "date": "2026-10-29",
+        "status": "PEER_REVIEWED_SOURCE_REPORTED_RESULTS_NOT_REPRODUCED"
+      },
+      {
+        "title": "Chain of symbolic regression",
+        "url": "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q",
+        "date": "2026-10-06",
+        "status": "APS_ACCEPTED_PAGE; ARXIV_RECORD_WITHDRAWN_WITH_METHOD_LIMITATION"
+      },
+      {
+        "title": "AI-driven formal proof search",
+        "doi": "10.1126/science.aej2213",
+        "date": "2026-10-08",
+        "status": "ALREADY_INDEXED; FORMAL_PROOF_NOT_PHYSICAL_LAW"
+      }
     ]
   },
-  "source_pins": {
-    "code_repository": "https://github.com/EveNet-HEP/EveNet-Full",
-    "code_commit": "06c3181d9a0f7df3e30edbb1c355b6fec8b5a3ad",
-    "code_license": "MIT declared by pinned LICENSE; applies to code repository only",
-    "pyproject": "Python >=3.12; package version 0.1.6; dependency list empty",
-    "requirements": "Pinned runtime requirements inspected; no resolved lock or clean install",
-    "prediction_entry": "scripts/predict.py",
-    "training_entry": "scripts/train.py; requires WANDB_API_KEY",
-    "model_weights": "https://huggingface.co/Avencast/EveNet; revision, files, hashes and license UNVERIFIED",
-    "dataset": "https://huggingface.co/datasets/Avencast/EveNet-Pretrain",
-    "dataset_card_license": "MIT label on current card; underlying source terms/revision UNVERIFIED",
-    "dataset_rows": 541248429,
-    "dataset_size_gb": 193,
-    "dataset_columns": 1100,
-    "dataset_viewer_limit_columns": 1000,
-    "paper_raw_to_parquet_claim": "approximately 4 TB raw to approximately 180 GB Parquet; exact revision/unit reconciliation OPEN"
+  "upstream_code": {
+    "repository": "EveNet-HEP/EveNet-Full",
+    "observed_main_commit": "06c3181d9a0f7df3e30edbb1c355b6fec8b5a3ad",
+    "code_license": "MIT declared by pinned LICENSE; code only",
+    "pyproject": "package version 0.1.6; Python >=3.12; dependencies empty",
+    "requirements": "requirements.txt separately pins Ray 2.44.1, Lightning 2.5.1, NumPy 2.1.3, PyTorch 2.6.0, PyArrow 19.0.1 and other runtime packages",
+    "prediction_entry": "scripts/predict.py; Ray dataset + YAML config + explicit checkpoint path",
+    "training_entry": "scripts/train.py; WANDB_API_KEY required for training path",
+    "checkpoint_reference": "https://huggingface.co/Avencast/EveNet",
+    "checkpoint_revision_hash_license": "UNVERIFIED"
   },
-  "source_audit": {
+  "source_reported_resources": {
+    "pretraining_events": 500000000,
+    "training_gpu_hours": 100000,
+    "gpu_count": 512,
+    "gpu_model": "NVIDIA A100",
+    "raw_simulation_data_tb": 4,
+    "paper_parquet_gb": 180,
+    "excluded_from_reported_pretraining_gpu_hours": [
+      "event_generation",
+      "preprocessing"
+    ],
+    "downstream_finetuning": "A few to tens of GPU-hours per task; source-reported only",
+    "wall_plug_energy": "NOT_REPORTED_TO_UQPU_COMPARABLE_BOUNDARY",
+    "peak_gpu_memory": "NOT_REPORTED_TO_UQPU_COMPARABLE_BOUNDARY",
+    "end_to_end_latency_throughput": "NOT_REPORTED_TO_UQPU_COMPARABLE_BOUNDARY"
+  },
+  "dataset_metadata": {
+    "repository": "Avencast/EveNet-Pretrain",
+    "url": "https://huggingface.co/datasets/Avencast/EveNet-Pretrain",
+    "accessed": "2026-10-30",
+    "card_license": "MIT label on current mutable card; underlying source-data terms/revision not verified",
+    "rows": 541248429,
+    "size_gb": 193,
+    "columns": 1100,
+    "viewer_limit_columns": 1000,
+    "revision_and_shard_hashes": "UNVERIFIED",
+    "reconciliation": "Paper approximately 180 GB Parquet vs current card 193 GB; exact revision and GB/GiB convention unresolved"
+  },
+  "implementation": {
+    "literature_watch": "docs/literature_watch/2026-10-30-evenet-particle-collision-foundation-model.md",
+    "original_lane_a_contract": "research_lanes/A_quantum_programming_runtime/EVENET_HEP_FOUNDATION_MODEL_WORKLOAD_CONTRACT_2026-10-30.md",
+    "new_lane_a_contract": "research_lanes/A_quantum_programming_runtime/EVENET_REPRODUCTION_PREFLIGHT_CONTRACT_2026-10-30.md",
+    "focused_gap": "docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md",
+    "cycle_report": "integration/DAILY_CYCLE_2026-10-30_EVENET_ASSET_PREFLIGHT.md",
+    "code_changed": false,
     "clean_install": false,
     "checkpoint_download": false,
     "dataset_download": false,
-    "local_hash_verification": false,
+    "local_tests": "NOT_RUN",
     "inference_reproduction": false,
     "cpu_gpu_npu_benchmark": false,
     "qpu_execution": false,
-    "tests_run": false,
-    "dependency_metadata_mismatch": true,
-    "evidence_note": "No local asset bytes, tests, performance, energy or economic result were produced."
+    "paid_provider_job": false
   },
   "lanes": {
-    "A": "HEP-EVENET-002 source/runtime/data preflight; no inference reproduction",
-    "B": "Provider-neutral paths maintained; no provider/SDK/target/job",
-    "C": "Public row/size/column metadata only; no local memory or transfer measurement",
-    "D": "No device/chip/process evidence; A100 is source-reported training hardware",
-    "E": "No Pangola/material/bio-oil/fusion/cooling measurement",
-    "F": "No accepted-task latency/throughput/energy/cost or financing measurement",
-    "G": "D/G co-design maintained; no process/yield/tool/factory evidence",
-    "H": "Source and reproducibility trail extended; Ketskaew Chulamani/Kanusanan Pongpanna Model, six-language plans and AI-agent/funding context preserved; no funding/commercialization milestone."
+    "A": "HEP-EVENET-002 source/runtime/data preflight; pinned code commit and MIT code license; dependency metadata mismatch; no inference reproduction.",
+    "B": "Provider-neutral paths preserved; no provider/SDK/target/job; EveNet remains classical and no QPU mapping is inferred.",
+    "C": "Dataset card reports 541,248,429 rows, 193 GB and 1,100 columns; no local bytes, RAM/VRAM or transfer measurement.",
+    "D": "No device/chip/process evidence; paper-reported A100 is external training hardware only.",
+    "E": "No new Pangola/material/bio-oil/fusion/cooling measurement; BIO-001 and FUS-001 remain blocked.",
+    "F": "No accepted-task latency/throughput/energy/cost; source pretraining compute excludes event generation/preprocessing; no principal/WACC result.",
+    "G": "D/G co-design preserved; no process-window, yield, defectivity, tool-throughput or cost-per-good-device evidence.",
+    "H": "Ketskaew Chulamani/Kanusanan Pongpanna Model, six-language plans and AI-agent/funding context preserved; no funding/commercialization milestone."
   },
   "foundational": {
-    "FND_001_to_006": "No new measurement, primitive validation or physical mechanism",
-    "EQN_001_to_006": "No equation promoted; discovery/falsification/replication pipeline unchanged"
+    "FND-001": "No measured energy per accepted task or thermodynamic-gap result.",
+    "FND-002": "No new output-information lower bound; classical dataset bytes are not quantum-readable memory.",
+    "FND-003": "No matched control-versus-quantum-speed-limit measurement.",
+    "FND-004": "No alternative physical primitive passed a discriminating experiment.",
+    "FND-005": "No new QFT/particle mechanism or device consequence.",
+    "FND-006": "No new equation or theorem established; source/model/split provenance remains mandatory.",
+    "EQN-001": "Literature status rechecked; no new-to-main source changed project evidence.",
+    "EQN-002": "No matched equation-discovery reproduction.",
+    "EQN-003": "No new constrained equation generator result.",
+    "EQN-004": "Counterexample and held-out tests remain mandatory; no new candidate passed.",
+    "EQN-005": "No anomaly-driven new-physics escalation.",
+    "EQN-006": "No equation-to-device/system/economics chain passed."
   },
   "invariants": {
-    "INV_029": "No one-phone service/physical-compression/energy/lifecycle-cost gate passed",
-    "INV_030": "No Pangola functional substitution or critical-material reduction",
-    "INV_031": "No accepted biomass liquid fuel or commercial cost result",
-    "INV_032": "No net reliable delivered fusion electricity",
-    "INV_033": "No lower principal, absolute interest, project WACC or economy-wide rate measured",
-    "INV_034": "Preserved; foundational research evidence-gated",
-    "INV_035": "Preserved; AI equations remain hypotheses pending full validation"
+    "INV-025/026/027": "Preserved; 100M-GPU and universal 100M-unit goals remain falsifiable, subsystem-specific targets.",
+    "INV-029": "No one-phone service/physical-compression/energy/lifecycle-cost gate passed.",
+    "INV-030": "No Pangola functional substitution or critical-material reduction; no transmutation.",
+    "INV-031": "No accepted biomass liquid fuel or commercial cost result.",
+    "INV-032": "No net reliable delivered fusion electricity.",
+    "INV-033": "No lower financed principal, absolute interest, project WACC or economy-wide rate measured.",
+    "INV-034": "Preserved; foundational research remains evidence-gated.",
+    "INV-035": "Preserved; AI-generated equations remain hypotheses pending full validation."
   },
   "preserved": {
     "root_directives": [
@@ -90,46 +156,42 @@
     ],
     "legacy_lane_I": "Preserved as legacy; operational lanes remain A-H"
   },
-  "moonshots": {
-    "INV_025_026_027": "Preserved",
-    "gpu_100000000": "Goal only; no new evidence",
-    "universal_100000000_unit": "Goal only; subsystem-specific equivalent-useful-output contracts remain mandatory",
-    "hilbert_dimension_is_readable_classical_memory": false
-  },
   "ci": {
-    "starting_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
-    "starting_head_workflow_runs": "NO_RUNS_RETURNED_BY_AVAILABLE_PR_FILTERED_ENDPOINT",
-    "conclusion": "PARTIAL_NOT_GREEN: cold-start passed; core matrix still in progress",
-    "paid_qpu_authorized": false,
-    "batch139_commit": "e9fba347a4deb39b24a40fb1d05e32774296b905",
+    "starting_head_combined_status_contexts": 0,
+    "starting_head_pr_triggered_workflow_runs": 0,
+    "interpretation": "PARTIAL_NOT_GREEN: cold-start passed; core matrix in progress",
     "cold_start_run": {
-      "run_number": 1382,
-      "run_id": 40984550656,
-      "conclusion": "success",
-      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550656"
+      "run_number": 1383,
+      "run_id": 40984698133,
+      "status": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984698133"
     },
     "core_run": {
+      "run_number": 2103,
+      "run_id": 40984698009,
+      "status": "in_progress",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984698009"
+    },
+    "prior_batch139_core_run": {
       "run_number": 2102,
       "run_id": 40984550619,
       "status": "in_progress",
-      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550619",
-      "jobs": {
-        "3.10": "in_progress",
-        "3.11": "success",
-        "3.12": "success"
-      }
-    }
+      "python_3_10": "success",
+      "python_3_11": "success",
+      "python_3_12": "success"
+    },
+    "final_head_check_required": true,
+    "paid_qpu_authorized": false
   },
-  "sync": {
-    "readme_updated": true,
-    "integration_hub_updated": true,
-    "cold_start_manifest_updated": true,
-    "worklog_updated": false,
-    "research_gaps_aggregate_updated": false,
-    "focused_gap_published": true,
-    "aggregate_sync_debt": "OPEN; large append-only files not overwritten from partial snapshots",
-    "spelling_path_correction": true,
-    "note": "Corrected the canonical strategic-model spelling/path to docs/KANUSANAN_PONGPANNA_MODEL.md."
+  "artifacts": {
+    "batch": "docs/BATCH_139_EVENET_DEPENDENCY_AND_DATA_PROVENANCE_PREFLIGHT.md",
+    "lane_a_contract": "research_lanes/A_quantum_programming_runtime/EVENET_REPRODUCTION_PREFLIGHT_CONTRACT_2026-10-30.md",
+    "focused_gap": "docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md",
+    "report": "integration/DAILY_CYCLE_2026-10-30_EVENET_ASSET_PREFLIGHT.md",
+    "machine_record": "integration/INT-20261030-EVENET-ASSET-PREFLIGHT.json"
   },
-  "next_gate": "Pin checkpoint and dataset revisions/licenses/file hashes; reconcile data-size units; build a clean Python 3.12 lock; reproduce one bounded paper-defined inference task with group-disjoint holdouts; then matched CPU/GPU/NPU baselines and full cost per accepted analysis."
+  "sync_debt": "README, integration hub and cold-start manifest updated. WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots; focused gap is canonical and aggregate synchronization remains open. PR #152 remains draft/open and PR #153 remains open/unmerged.",
+  "paid_qpu_job_submitted": false,
+  "mission_advantage_claimed": false,
+  "next_highest_value_gate": "Pin checkpoint and dataset revisions, individual licenses, file inventory and SHA-256; reconcile 180 GB versus 193 GB; build a clean Python 3.12 lock; reproduce one bounded paper-defined inference task with group-disjoint holdouts; then matched CPU/GPU/NPU baselines and complete cost per accepted analysis."
 }

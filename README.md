@@ -906,3 +906,6 @@ The current cycle is [the matched control / quantum-speed-limit contract](integr
 
 
 **FND-003 surveillance delta:** the new [OTOC quantum-speed-limit watch](docs/literature_watch/2026-10-28-otoc-quantum-speed-limit-fnd003.md) treats the published bound as a candidate theorem family for matched-observable analysis, not as an algorithm-runtime or useful-output speedup. The associated FND-003 gap now records the reproduction gate. This follow-up commit requires exact-head CI.
+
+
+- Batch 139 metadata repair (2026-10-30T01:15:43Z): machine-readable record aligned to `uqpu.integration.v1` with both `id` and `integration_id`, source pins and explicit A–H/FND/EQN/INV/CI fields. This is schema alignment only, not a new scientific result.

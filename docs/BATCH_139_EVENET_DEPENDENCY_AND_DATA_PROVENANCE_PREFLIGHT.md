@@ -106,3 +106,8 @@ The Lane A contract, focused gap, Batch 139, A–H cycle report and machine-read
 ## Post-publication CI observation
 
 For the Batch 139 commit `e9fba347a4deb39b24a40fb1d05e32774296b905`, cold-start audit [#1382](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550656) passed. Core/invariant run [#2102](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550619) was still in progress at 2026-10-30T01:13:37Z: Python 3.11 and 3.12 jobs passed; Python 3.10 remained in progress. This is not a fully green matrix. The metadata follow-up commit below requires its own exact-head checks.
+
+
+## Integration-record schema alignment
+
+The machine-readable record was aligned to the repository's `uqpu.integration.v1` convention and now carries both `id` and `integration_id`, explicit starting-main/batch state, source pins, A–H/foundational/invariant records, artifacts and CI status. This is a metadata/schema repair; it does not add a reproduction result.

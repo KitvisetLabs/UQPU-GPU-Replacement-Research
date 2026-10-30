@@ -231,3 +231,8 @@ Batch 119's corrected article identifies LegoSR as new-to-repository and RISR as
 ## Batch 139 post-commit CI and metadata correction
 
 For [source commit e9fba347a4de](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e9fba347a4deb39b24a40fb1d05e32774296b905), cold-start audit [#1382 passed](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550656). Core/invariant run [#2102](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984550619) was still in progress at 2026-10-30T01:13:37Z: Python 3.11/3.12 passed; Python 3.10 remained in progress. This is not a full green result. The Batch 139 report and machine record now use the exact canonical path `docs/KANUSANAN_PONGPANNA_MODEL.md`.
+
+
+## Batch 139 machine-record schema alignment
+
+The EveNet asset-preflight integration record now follows `uqpu.integration.v1` and includes both `id` and `integration_id`, explicit source pins, A–H/foundational/invariant state and CI provenance. No new reproduction or technology claim is added.

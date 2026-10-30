@@ -96,3 +96,8 @@ Verify the model checkpoint revision/license/hash and the dataset revision/shard
 ## Post-commit CI observation
 
 For source head `e9fba347a4deb39b24a40fb1d05e32774296b905`, cold-start audit #1382 passed; core/invariant run #2102 remained in progress at 2026-10-30T01:13:37Z. Python 3.11 and 3.12 passed; Python 3.10 was still running. Full core CI is not yet green/complete. The following metadata correction commit requires its own exact-head CI.
+
+
+## Integration-record schema alignment
+
+The machine-readable record was aligned to the repository's `uqpu.integration.v1` convention and now carries both `id` and `integration_id`, explicit starting-main/batch state, source pins, A–H/foundational/invariant records, artifacts and CI status. This is a metadata/schema repair; it does not add a reproduction result.
