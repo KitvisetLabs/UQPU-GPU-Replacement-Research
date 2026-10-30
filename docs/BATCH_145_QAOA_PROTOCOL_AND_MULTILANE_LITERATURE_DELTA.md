@@ -81,7 +81,7 @@ At the inspected main head `41fac3953773ae0016a09539be57c3ed6b379771`, the combi
 
 PR #154 (source head `3b11949c517631df77ac893bbaa189a35e108971`) and pending-main summary PR #155 remain open/unmerged; no merge was performed. Their source-branch CI is not a substitute for main-head CI. This Batch 145 work is staged on its own branch pending exact-head validation.
 
-The full append-only WORKLOG.md and RESEARCH_GAPS.md are to be fetched and checked as complete snapshots before append; no partial overwrite is permitted.
+WORKLOG.md and RESEARCH_GAPS.md were fetched as complete snapshots (258,877 and 142,903 characters at read time), checked for their canonical headers and appended without replacing historical prefixes. The append-only aggregate sync is complete for Batch 145.
 
 ## 8. Next highest-value gate
 
