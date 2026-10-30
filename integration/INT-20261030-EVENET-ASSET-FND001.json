@@ -1,0 +1,110 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-EVENET-ASSET-FND001",
+  "integration_id": "INT-20261030-EVENET-ASSET-FND001",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_branch": "main",
+  "starting_head": "e55f9c3d29429c5850cec79babb5d803787641ad",
+  "newest_committed_batch_at_start": 140,
+  "new_batch": 141,
+  "primary_work_item": {
+    "id": "HEP-EVENET-003",
+    "lane": "A",
+    "status": "SOURCE_LEVEL_CODE_MODEL_AND_ONE_PRETRAIN_SHARD_HASHES_PINNED; TASK_REPRODUCTION_OPEN",
+    "primary_artifact": "research_lanes/A_quantum_programming_runtime/EVENET_ASSET_PIN_MANIFEST_2026-10-30.json",
+    "focused_gap": "docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md"
+  },
+  "cross_cutting_work": [
+    "FND-001-NEQ-001",
+    "FND-001-TUR-001",
+    "FND-004-OPTICAL-NOGO-001",
+    "FND-006-COGENTIC-METHOD-001",
+    "EQN-001..006"
+  ],
+  "literature_watch": "docs/literature_watch/2026-10-30-nonequilibrium-thermodynamics-and-equation-discovery.md",
+  "evidence_class": [
+    "UPSTREAM_SOURCE_METADATA",
+    "REMOTE_XET_GIT_LFS_HASH_METADATA",
+    "PEER_REVIEWED_EXPERIMENT",
+    "PEER_REVIEWED_METHOD",
+    "PEER_REVIEWED_REVIEW",
+    "OFFICIAL_PREPRINT"
+  ],
+  "implementation": {
+    "new_code": false,
+    "local_tests": "NOT_RUN",
+    "upstream_tests": "NOT_RUN",
+    "local_asset_download": false,
+    "local_hash_recomputation": false,
+    "clean_install": false,
+    "inference_reproduction": false,
+    "cpu_gpu_npu_comparison": false,
+    "qpu_execution": false,
+    "paid_provider_job": false,
+    "measured_energy": false,
+    "measured_project_economics": false
+  },
+  "lanes": {
+    "A": "HEP-EVENET-003 pins code/model revisions, two checkpoint hashes and one pretraining shard hash at source; no local bytes or inference.",
+    "B": "Provider-neutral/no-submit; no SDK, target or paid QPU job.",
+    "C": "193GB/541M-row/1100-column metadata only; no local RAM/VRAM/transfer measurements.",
+    "D": "Linear-optical no-go and HDSAI literature indexed; no device/fabrication result.",
+    "E": "Pyrolysis TEA meta-analysis indexed; Batch 140 FUS-001 retained; no Pangola fuel/material or net fusion result.",
+    "F": "Evidence and cost boundaries clarified; no UQPU task cost or financing outcome.",
+    "G": "D/G co-design retained; no manufacturing yield/throughput/cost evidence.",
+    "H": "Batch and watch published; multilingual master-plan links and strategic AI-agent/funding references preserved."
+  },
+  "foundational": {
+    "FND-001": "Feedback-shifted erasure and quantum TUR literature added; no project thermodynamic measurement.",
+    "FND-002": "No new output-information lower bound.",
+    "FND-003": "No new matched control-versus-QSL experiment.",
+    "FND-004": "Scoped linear-optical no-go and quantum-TUR experiment lead added; no primitive validated.",
+    "FND-005": "No new QFT/elementary-particle mechanism.",
+    "FND-006": "Formal proof orchestration and hierarchical constitutive search methods indexed; no physical law.",
+    "EQN-001..006": "No equation promoted; all physical falsification and replication gates retained."
+  },
+  "invariants": {
+    "INV-025/026/027": "100M GPU and universal 100M-unit goals remain falsifiable; no readable-memory equivalence or NPU TOPS-only claim.",
+    "INV-029": "No phone-class physical compression or service/lifecycle-cost gate.",
+    "INV-030": "No Pangola functional substitution or critical-material reduction.",
+    "INV-031": "No accepted Pangola liquid fuel or commercial cost result.",
+    "INV-032": "No reliable net fusion electricity or commercial LCOE.",
+    "INV-033": "No UQPU principal, absolute-interest, WACC or hurdle-rate reduction.",
+    "INV-034": "Preserved; frontier agenda remains active.",
+    "INV-035": "Preserved; no AI equation declared a physical law."
+  },
+  "preserved": {
+    "root_directives": [
+      "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md",
+      "00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md",
+      "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md",
+      "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+      "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+      "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+      "05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md",
+      "06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md"
+    ],
+    "strategic_model": "docs/KANUSANAN_PONGPANNA_MODEL.md",
+    "strategic_references": "STRATEGIC_PLAN_REFERENCES.md",
+    "languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ]
+  },
+  "ci": {
+    "starting_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
+    "starting_head_pr_workflow_runs": "NO_RUNS_RETURNED_BY_PR_FILTERED_ENDPOINT",
+    "batch140_starting_cold_start_run": 1385,
+    "batch140_starting_core_run": 2105,
+    "conclusion": "CI_NOT_VERIFIED_GREEN; BATCH141_EXACT_HEAD_RUNS_PENDING"
+  },
+  "sync_debt": "WORKLOG.md and RESEARCH_GAPS.md remain untouched to protect append-only history. The focused EveNet gap is updated. Historical branches/forks and PR #152/#153 remain unmerged/unexhaustively reconciled.",
+  "paid_qpu_job_submitted": false,
+  "mission_advantage_claimed": false,
+  "next_highest_value_gate": "Pin downstream task/config/splits and source rights; pin torch-linear-assignment commit and Docker image digest; clean Python 3.12/CUDA/PyTorch install; local rehash; bounded inference reproduction; then identical-output CPU/GPU/NPU baseline."
+}
