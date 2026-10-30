@@ -322,3 +322,13 @@ The test checks all 688 logical assignments and 7,072 parity basis strings acros
 - [Batch 144](../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md)
 
 Pan et al. (Journal of Corporate Finance; early online 2026-10-14; DOI 10.1016/j.jcorpfin.2026.103099) models debt/equity/hybrid choice under R&D risk, collateral, cashflow and institutional quality. This is an external intertemporal model; the full PDF/calibration was not audited and no UQPU financing outcome is inferred.
+
+
+## 2026-10-30 — BIO-001 HTL–AD–HDO process-simulation comparator
+
+- [Potato–okra HTL–AD–HDO literature watch](../docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md)
+- [BIO-001 waste-pyrolysis/TEA transfer gap](../docs/RESEARCH_GAP_BIO001_WASTE_PYROLYSIS_TEA_TRANSFER_2026-10-29.md)
+- [Accepted-liquid cost contract](../research_lanes/E_materials_energy_cooling_infrastructure/BIO001_ACCEPTED_LIQUID_COST_CONTRACT.md)
+- [Batch 144](../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md)
+
+External potato–okra HTL–AD–HDO process simulation/TEA only; no Pangola transfer or commercial fuel claim. The watch flags yield-basis and deterministic-versus-Monte-Carlo NPV reconciliation before any use.

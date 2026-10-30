@@ -1439,3 +1439,8 @@ Regazzoni, *Computational Mechanics* (2026), DOI 10.1007/s00466-026-02850-2, rep
 ## 2026-10-30 — FIN-001 flexible-financing model watch
 
 Pan et al., *Journal of Corporate Finance* 102, 103099, early online 2026-10-14, DOI 10.1016/j.jcorpfin.2026.103099, is recorded in `docs/literature_watch/2026-10-30-flexible-financing-innovation-risk.md`. Its intertemporal model makes debt/equity/hybrid financing conditional on R&D risk, collateral/asset composition, cashflow and institutional quality; the full paper/calibration were not audited. This is not a UQPU financing result and does not establish lower interest, WACC, hurdle rates or economy-wide rates. Extend FIN-001 with instrument type, collateral, equity dilution/required return, subsidies/guarantees and matched milestone cashflows; validate on held-out actual financing events.
+
+
+## 2026-10-30 — BIO-001 potato–okra HTL–AD–HDO model watch
+
+Added `docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md` for Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), 100080, DOI 10.1016/j.cejgas.2026.100080. This is an external potato–okra process simulation/TEA, not Pangola evidence. Reproduction must reconcile the 36.9 wt% optimized versus 31.6 wt% integrated bio-crude yield bases, HTL-only ERR versus integrated energy recovery, and deterministic NPV (~US$11.24M) versus Monte Carlo mean (~US$2.79M). The source model/supplement and external validation must be independently audited. Pangola transfer requires matched measured feedstock batches, final accepted-liquid quality, complete mass/energy closure, H2/catalyst/utilities, lifecycle costs and non-double-counted coproduct credits. No commercial fuel claim.

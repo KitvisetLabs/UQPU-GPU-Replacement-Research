@@ -30,3 +30,10 @@ The regression test fixture is synthetic and used only for contract validation; 
 ## Evidence and limitations
 
 Every calculated result is labeled MODEL_ONLY. Input evidence classes do not automatically promote the result. The helper does not authenticate provenance, certify fuel, prove a commercial minimum selling price, establish carbon-material substitution or show an energy/economic advantage. Unknown costs must not be entered as zero; failed acceptance, missing required data, duplicated capital or overlapping coproduct credits block the relevant claim.
+
+
+## 2026-10-30 — HTL–AD–HDO literature comparator
+
+Hussaini et al. (Chemical Engineering Journal: Green and Sustainable 3 (2026), 100080; DOI 10.1016/j.cejgas.2026.100080) is added as an external process-simulation/TEA comparator. It models potato–okra food waste, not Pangola. Treat reported bio-crude yields, HHV, energy recovery, NPV, IRR and payback as model outputs until the source model, supplement and financial assumptions are independently reconstructed. Resolve the reported 36.9 versus 31.6 wt% yield basis and ~US$11.24M deterministic versus ~US$2.79M Monte Carlo mean NPV before transfer. A product HHV/ERR is not net plant energy; count water handling, heat/electricity, HDO hydrogen/catalyst, AD, wastewater, downtime and financing. Do not transfer negative feedstock gate fees or Nigeria-specific 2025 prices to Pangola.
+
+Matched Pangola HTL-versus-pyrolysis comparison must use the same measured feedstock lot and final accepted-liquid specification, close every mass/energy stream, and report credit-free and non-double-counted coproduct cases separately.

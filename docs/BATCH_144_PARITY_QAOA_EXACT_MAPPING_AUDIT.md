@@ -100,3 +100,8 @@ README, A-lane README, focused RG-QAOA-PARITY-001 gap, integration index, cold-s
 ## Supplemental FIN-001 literature delta — 2026-10-30
 
 The new [flexible-financing literature watch](literature_watch/2026-10-30-flexible-financing-innovation-risk.md) records Pan et al. (Journal of Corporate Finance; early online 2026-10-14; DOI 10.1016/j.jcorpfin.2026.103099). It adds an instrument-choice layer to FIN-001 (debt/equity/hybrid, collateral, asset composition, R&D risk, institutional quality, subsidies/guarantees). The article is an external intertemporal model; its PDF, equations and calibration were not independently audited, and no project-specific financing outcome is established. FIN-001 now requires matched milestone cashflows and held-out financing events before any instrument-choice inference.
+
+
+## Supplemental BIO-001 literature delta — HTL–AD–HDO comparator (2026-10-30)
+
+Added [the potato–okra HTL–AD–HDO literature watch](literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md), Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), 100080, DOI 10.1016/j.cejgas.2026.100080. The article is a process-simulation/TEA comparator, not Pangola evidence. Its abstract reports 36.9 wt% bio-crude at 320 °C, HHV 33.2 MJ/kg and HTL ERR 66.58%; the integrated route adds AD/HDO. The watch flags the need to reconcile the 36.9 versus 31.6 wt% product basis and deterministic NPV (~US$11.24M) versus Monte Carlo mean (~US$2.79M), and to distinguish HTL product ERR from net plant energy. No commercial fuel or cost claim is promoted.

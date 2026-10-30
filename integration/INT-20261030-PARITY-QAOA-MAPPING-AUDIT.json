@@ -177,7 +177,7 @@
     "B": "provider-neutral; no SDK/target/job",
     "C": "statevector payload formulas only; no measured memory/I/O",
     "D": "cycle-rank structure only; no native device/fabrication result",
-    "E": "BIO-001/FUS-001 open; no material/fuel/net-electric result",
+    "E": "BIO-001/Pangola gaps retained; new potato-okra HTL-AD-HDO simulation/TEA comparator indexed as external MODEL_ONLY, with yield/NPV reconciliation and Pangola transfer gates. No accepted Pangola liquid or commercial cost.",
     "F": "exact objective/reference alignment; no cost/energy result",
     "G": "D/G co-design preserved; no equipment/process/yield result",
     "H": "strategic model and six-language references preserved"
@@ -212,6 +212,17 @@
       "relevance": "FIN-001/INV-033: instrument choice among debt/equity/hybrid conditional on R&D risk, collateral, assets, cash flow and institutional quality",
       "limitation": "full PDF not retrieved; equations/calibration not independently audited; no UQPU financing data or measured interest/WACC change",
       "follow_up": "matched milestone cashflows; project tranche ledger; debt/equity/hybrid counterfactuals; held-out financing events; separate principal, interest, hurdle and WACC"
+    },
+    {
+      "id": "BIO001-POTATO-OKRA-HTL-TEA-2026-10-30",
+      "source": "Hussaini et al., Chemical Engineering Journal: Green and Sustainable 3 (2026), 100080",
+      "doi": "10.1016/j.cejgas.2026.100080",
+      "publication_date": "2026-09",
+      "watch_path": "docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md",
+      "evidence_class": "PEER_REVIEWED_ARTICLE_PROCESS_SIMULATION_TEA_MODEL_ONLY_EXTERNAL",
+      "relevance": "BIO-001/INV-031: HTL-AD-HDO wet-residue pathway comparator; accepted-liquid, upgrading, aqueous stream, coproduct, energy and lifecycle cost boundaries",
+      "limitations": "potato-okra not Pangola; HTL outputs predictive simulation; source/supplement not independently reproduced; 36.9 vs 31.6 wt% yield basis and ~11.24M vs ~2.79M NPV require reconciliation",
+      "follow_up": "reproduce Aspen model and supplement; reconcile product/NPV bases; validate held-out HTL data; matched Pangola HTL-vs-pyrolysis batch with accepted-liquid and complete net-energy/cost ledger"
     }
   ]
 }

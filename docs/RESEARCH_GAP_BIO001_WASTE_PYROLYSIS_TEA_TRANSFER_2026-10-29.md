@@ -37,3 +37,10 @@ The official National Laboratory of the Rockies record identifies the work as a 
 ## Non-claims
 
 No accepted Pangola bio-oil, commercial ultra-low-cost fuel, material substitution, net fusion electricity, lower WACC or Data-Center-to-One-Phone result is established.
+
+
+## 2026-10-30 — potato–okra HTL–AD–HDO comparator added
+
+New [literature watch](literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md): Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), 100080, DOI 10.1016/j.cejgas.2026.100080. It reports an Aspen Plus HTL–AD–HDO process-simulation/TEA for potato–okra food waste, not Pangola. Source-reported outputs include 36.9 wt% bio-crude at 320 °C, HHV 33.2 MJ/kg and HTL ERR 66.58%; the integrated route also models AD and HDO. Do not transfer its negative feedstock/gate-fee assumption, Nigeria Q4 2025 prices, 8:1 water ratio or modeled NPV/IRR to Pangola.
+
+**Reproduction flags:** reconcile optimized 36.9 wt% versus integrated-table 31.6 wt% bio-crude; distinguish HTL-only ERR from integrated energy recovery; reconcile deterministic NPV around US$11.24M with the reported Monte Carlo mean around US$2.79M; recover the supplement and cash-flow assumptions. The source describes model validation against external datasets, not direct experimental validation of the potato–okra process. Next gate is model/supplement pinning, held-out validation, then matched Pangola HTL-versus-pyrolysis batches with accepted-liquid quality, complete mass/energy closure and credit-free/coproduct-credit TEA. No commercial fuel claim is added.
