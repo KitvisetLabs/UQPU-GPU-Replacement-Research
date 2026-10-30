@@ -25,3 +25,12 @@ Future device/process/package subfolders are allowed subject to the 16-level dep
 ## Planar QEC layout co-design — 2026-10-30
 
 [Planar qLDPC boundary-construction watch](../../docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md) and [focused gap](../../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md) provide a mathematical input for planar connectivity, boundary/defect layout, check locality and routing. No device or fabrication result is claimed.
+
+
+## Agentic differentiable co-design — 2026-10-30
+
+- [VIBRATO literature watch](../../docs/literature_watch/2026-10-30-agentic-differentiable-detector-codesign.md)
+- [Focused D/G reproduction gap](../../docs/RESEARCH_GAP_DG_AGENTIC_DETECTOR_COSIGN_REPRODUCTION_2026-10-30.md)
+- [D/G transfer contract](AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md)
+
+The source is an external detector-design preprint. Only the workflow architecture is a candidate transfer; no quantum-chip/device/process result is claimed.
