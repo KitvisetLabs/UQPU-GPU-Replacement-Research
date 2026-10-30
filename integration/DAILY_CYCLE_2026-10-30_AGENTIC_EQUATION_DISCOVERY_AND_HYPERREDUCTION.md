@@ -77,3 +77,12 @@ Next highest-value gates:
 No paid QPU job, material coupon test, fuel production, fusion experiment or financing transaction was performed.
 
 Research-Sync: pending-main
+
+
+## Supplementary Lane E/F surveillance — BIO-001 and FIN-001 (2026-10-30)
+
+Two additional peer-reviewed 2026 studies not indexed on starting main were found:
+- *Energy & Fuels* 40(29), 15858–15879 (2026), DOI 10.1021/acs.energyfuels.6c01592: one-step versus two-step supercritical-water liquefaction across biomass composition groups; two-step route uses 30-minute subcritical pretreatment. Publisher full text/supplement was inaccessible; no numerical yields or costs were extracted. The proposed Pangola control is recorded in `research_lanes/E_materials_energy_cooling_infrastructure/BIO001_SCWL_TWO_STEP_CONTROL_CONTRACT_2026-10-30.md` and `docs/RESEARCH_GAP_BIO001_SCWL_TWO_STEP_2026-10-30.md`.
+- Pragati Priya, *Emerging Markets Review* (2026), DOI 10.1016/j.ememar.2026.101479: Indian firm-level data 2002–2024; abstract reports stronger sensitivity of R&D-intensive firms to monetary tightening and bank credit-supply shocks. Full tables were inaccessible; no project rate/WACC is inferred. The separate FIN-001 credit-supply stress gate is recorded in `research_lanes/F_economics_benchmarks_evidence_integration/FIN001_CREDIT_SUPPLY_STRESS_CONTRACT_2026-10-30.md` and `docs/RESEARCH_GAP_FIN001_CREDIT_SUPPLY_STRESS_2026-10-30.md`.
+
+The machine-readable cross-lane record is `integration/INT-20261030-BIOFIN-SCWL-CREDIT.json`. BIO-001 and FIN-001 remain OPEN; no Pangola experiment, accepted liquid, project finance offer, interest saving or WACC change was measured.
