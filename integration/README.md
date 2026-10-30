@@ -312,3 +312,13 @@ The 10-instance pilot is split 4/3/3 across train/validation/test with disjoint 
 - [Exact logical references](../benchmarks/references/qaoa-parity-exact-references-2026-10-30.json)
 
 The test checks all 688 logical assignments and 7,072 parity basis strings across 10 fixtures. It is an exact mapping/reference audit, not a QAOA performance run. No optimizer, SDK, target simulator, QPU, material, fuel, fusion or finance experiment was executed.
+
+
+## 2026-10-30 — FIN-001 flexible-financing literature watch
+
+- [Peer-reviewed article watch](../docs/literature_watch/2026-10-30-flexible-financing-innovation-risk.md)
+- [Updated FIN-001 gap](../docs/RESEARCH_GAP_FIN001_HURDLE_RATE_AND_INNOVATION_RISK_2026-10-30.md)
+- [FIN-001 contract](../research_lanes/F_economics_benchmarks_evidence_integration/FIN001_HURDLE_RATE_VS_COST_OF_CAPITAL_CONTRACT_2026-10-30.md)
+- [Batch 144](../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md)
+
+Pan et al. (Journal of Corporate Finance; early online 2026-10-14; DOI 10.1016/j.jcorpfin.2026.103099) models debt/equity/hybrid choice under R&D risk, collateral, cashflow and institutional quality. This is an external intertemporal model; the full PDF/calibration was not audited and no UQPU financing outcome is inferred.

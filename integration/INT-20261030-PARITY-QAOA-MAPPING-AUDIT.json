@@ -14,7 +14,7 @@
   "reference_sha256": "573ad3150cff7032d9325c864417b9c08f57ceda7777796f0f8d0abc9cbd52ee",
   "evidence_class": "SOFTWARE_CONTRACT + MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE",
   "test_path": "software/uqpu-prototype/tests/test_qaoa_parity_heldout_mapping.py",
-  "test_status": "ADDED_PENDING_EXACT_HEAD_CI",
+  "test_status": "PYTHON_3.10_3.11_3.12_PASS; EXTENDED_EXACT_HEAD_CI_PENDING",
   "instances": [
     {
       "id": "train-star5",
@@ -200,5 +200,18 @@
   ],
   "paid_qpu_execution_authorized": false,
   "hazardous_testing_authorized": false,
-  "next_gate": "paired direct-versus-parity p=1 QAOA run on frozen manifest with equal budgets, exact references for scoring only, independent SDK/operator checks, target-aware simulation and full accepted-task resource/cost accounting"
+  "next_gate": "paired direct-versus-parity p=1 QAOA run on frozen manifest with equal budgets, exact references for scoring only, independent SDK/operator checks, target-aware simulation and full accepted-task resource/cost accounting",
+  "literature_delta": [
+    {
+      "id": "FIN001-FLEXIBLE-FINANCING-2026-10-30",
+      "source": "Pan et al., Journal of Corporate Finance 102, 103099",
+      "doi": "10.1016/j.jcorpfin.2026.103099",
+      "early_online_date": "2026-10-14",
+      "watch_path": "docs/literature_watch/2026-10-30-flexible-financing-innovation-risk.md",
+      "evidence_class": "PEER_REVIEWED_ARTICLE_INTERTEMPORAL_MODEL_EXTERNAL",
+      "relevance": "FIN-001/INV-033: instrument choice among debt/equity/hybrid conditional on R&D risk, collateral, assets, cash flow and institutional quality",
+      "limitation": "full PDF not retrieved; equations/calibration not independently audited; no UQPU financing data or measured interest/WACC change",
+      "follow_up": "matched milestone cashflows; project tranche ledger; debt/equity/hybrid counterfactuals; held-out financing events; separate principal, interest, hurdle and WACC"
+    }
+  ]
 }

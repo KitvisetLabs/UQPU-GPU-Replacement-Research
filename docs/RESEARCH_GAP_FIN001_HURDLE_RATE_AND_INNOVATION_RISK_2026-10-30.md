@@ -43,3 +43,10 @@ Record separate, dated variables for each financing tranche/project:
 ## Nonclaims
 
 No UQPU principal, absolute-interest, hurdle-rate, WACC, risk-premium or economy-wide interest-rate reduction is measured. Lower principal and lower rates remain distinct causal pathways.
+
+
+## 2026-10-30 — flexible financing instrument-choice literature update
+
+Pan et al., “One size doesn't fit all: Flexible financing as a catalyst for innovation,” *Journal of Corporate Finance* 102, article 103099, early online 2026-10-14, DOI 10.1016/j.jcorpfin.2026.103099, is now recorded in [the literature watch](literature_watch/2026-10-30-flexible-financing-innovation-risk.md). Its intertemporal model makes debt/equity/hybrid choice conditional on R&D risk, collateral/asset composition, cashflow and institutional quality; it also reports a model result favoring R&D subsidies over risk guarantees under its assumptions. The full PDF/equations/calibration were not retrieved or independently audited. This is not a UQPU financing result and does not show lower interest, WACC or hurdle rates.
+
+**FIN-001 follow-up:** add instrument type, asset/collateral, cashflow, risk, guarantees/subsidies, equity dilution/required return and institutional context to the tranche ledger. Compare debt/equity/hybrid using identical milestone cashflows and technical-risk assumptions; report principal, interest, fees, equity cost, time-to-evidence and total financing cost per accepted milestone. Validate on held-out actual financing events. Keep the principal-only counterfactual separate from coupon/spread, WACC, internal hurdle and innovation-risk premium.

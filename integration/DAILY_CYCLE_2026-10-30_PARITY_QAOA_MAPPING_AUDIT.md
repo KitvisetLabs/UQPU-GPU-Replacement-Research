@@ -21,7 +21,7 @@ No material new-to-main primary result required a duplicate watch. AlphaProof Ne
 - **C:** basis-size and payload formulas only; no memory/transfer measurement.
 - **D:** cycle-rank/encoding structure only; no native-device/fabrication result.
 - **E:** BIO-001/Pangola/FUS-001 gates unchanged; no material, fuel or net-electric result.
-- **F:** direct-QUBO and parity exact references aligned; no cost/energy result.
+- **F:** direct-QUBO and parity exact references aligned; new FIN-001 instrument-choice literature watch added; no cost/interest/WACC result.
 - **G:** D/G co-design retained; no equipment/process/yield result.
 - **H:** strategic model and six-language plan links preserved.
 

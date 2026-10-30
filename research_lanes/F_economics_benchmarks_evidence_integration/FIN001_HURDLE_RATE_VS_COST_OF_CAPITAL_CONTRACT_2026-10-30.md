@@ -41,3 +41,10 @@ For each project and financing tranche record:
 ## Nonclaims
 
 No UQPU project principal, interest, hurdle rate, WACC, risk premium or economy-wide rate has been measured or reduced. A working-paper mechanism is a research hypothesis, not a project financing result.
+
+
+## 2026-10-30 — financing instrument-choice extension
+
+Pan et al. (Journal of Corporate Finance 102, 103099; early online 2026-10-14; DOI 10.1016/j.jcorpfin.2026.103099) adds a literature-only instrument-choice layer. The model makes debt/equity/hybrid financing conditional on R&D risk, collateral/asset composition, cashflow and institutional quality, and reports a conditional subsidy-versus-guarantee result. No universal ranking is inferred. The full PDF and calibration were not independently audited.
+
+Extend each FIN-001 financing event with instrument type, amount requested/committed/drawn/outstanding, coupon/fees, equity dilution/required return, collateral, guarantees/subsidies, cashflow, risk class, institutional context, milestone dates, time-to-evidence and failure/termination outcome. Compare instruments on identical accepted-milestone cashflows; validate instrument-choice predictions on held-out actual events. Report principal and absolute interest separately from hurdle rate, WACC and risk premium.

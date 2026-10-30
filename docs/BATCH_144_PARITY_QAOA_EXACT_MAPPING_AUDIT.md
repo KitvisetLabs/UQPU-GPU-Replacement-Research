@@ -45,11 +45,12 @@ Total logical assignments: 688. Total parity-register basis strings before feasi
 
 ## 4. Literature surveillance
 
-Fresh searches rechecked symbolic/neural-symbolic equation discovery, AI theorem/proof search, differentiable/physics-informed modeling, automated experiment design, constitutive laws, lower bounds/no-go results, QEC, quantum circuit discovery, biomass, fusion and finance. No material new-to-main primary source requiring a duplicate watch was found:
+Fresh searches rechecked symbolic/neural-symbolic equation discovery, AI theorem/proof search, differentiable/physics-informed modeling, automated experiment design, constitutive laws, lower bounds/no-go results, QEC, quantum circuit discovery, biomass, fusion and finance. The initial computing/foundational scan found the main AlphaProof, quantum-circuit co-design, SymbolFit, natural-proof and SPARC sources already indexed. A supplemental finance-specific scan found one new-to-main peer-reviewed article, now recorded in [the FIN-001 literature watch](literature_watch/2026-10-30-flexible-financing-innovation-risk.md):
 
 - Tsoukalas et al., *Science* (2026-10-08), DOI 10.1126/science.aej2213 / arXiv:2605.22763, already covered by the Oct 25/26 formal-proof watches.
 - Gu et al., arXiv:2610.22367 (2026-10-15), evaluator-guided LLM quantum-circuit co-design, already covered by the Oct 21 watch.
 - SymbolFit v2, arXiv:2607.19750 revised 2026-10-19; state-preparation natural-proof barrier, arXiv:2610.06826; SPARC, arXiv:2609.06887; and neural-QEC decoder work are already represented in main.
+- Pan et al. (2026-10-14 early online), “One size doesn't fit all: Flexible financing as a catalyst for innovation,” *Journal of Corporate Finance* 102, 103099, DOI 10.1016/j.jcorpfin.2026.103099, introduces a risk-/collateral-/institution-dependent bank/equity/hybrid financing model and testable R&D subsidy versus guarantee predictions. The full PDF was not retrieved in this pass; no UQPU financing result is inferred.
 - The CoSR journal-acceptance versus withdrawn-arXiv status conflict remains tracked; no positive validation is inferred.
 
 No external result was promoted to project evidence or a new physical law.
@@ -94,3 +95,8 @@ Current physics remains binding for engineering claims. Any challenge must ident
 README, A-lane README, focused RG-QAOA-PARITY-001 gap, integration index, cold-start handoff manifest, WORKLOG and RESEARCH_GAPS were updated. The large append-only files were fetched in full and appended without replacing historical prefixes. Exact-head CI for this commit remains pending.
 
 **Next gate:** paired direct-versus-parity p=1 QAOA on the frozen manifest with 8,192 shots, 32 optimizer evaluations and 10 repetitions per instance/method; exact references for scoring only; independent operator/bit-order/decoder and SDK checks; then target-aware simulation and complete accepted-task resource/cost accounting. No paid QPU job without explicit consent, credentials and bounded budget.
+
+
+## Supplemental FIN-001 literature delta — 2026-10-30
+
+The new [flexible-financing literature watch](literature_watch/2026-10-30-flexible-financing-innovation-risk.md) records Pan et al. (Journal of Corporate Finance; early online 2026-10-14; DOI 10.1016/j.jcorpfin.2026.103099). It adds an instrument-choice layer to FIN-001 (debt/equity/hybrid, collateral, asset composition, R&D risk, institutional quality, subsidies/guarantees). The article is an external intertemporal model; its PDF, equations and calibration were not independently audited, and no project-specific financing outcome is established. FIN-001 now requires matched milestone cashflows and held-out financing events before any instrument-choice inference.
