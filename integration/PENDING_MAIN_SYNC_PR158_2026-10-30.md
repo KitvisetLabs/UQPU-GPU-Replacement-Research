@@ -28,7 +28,7 @@ The FEML real-data result is a four-specimen Ti–6Al–4V shear-coupon benchmar
 
 - Canonical main SHA 41fac395... returned no combined-status contexts and no PR-triggered workflow run through the available commit-workflow query. Main exact-head CI is UNVERIFIED.
 - PR #154 head core run #2190 passed 15/15 jobs; PR #156 head core run #2252 passed 15/15 jobs. These are independent PR-head checks and do not validate main or PR #158.
-- PR #158 exact-head core and cold-start checks have not yet been observed.
+- PR #158 exact-head core run #2268 (41031784148) is queued with all three Python matrix jobs queued; exact-head cold-start is not exposed. The pending-main summary PR #159 core run #2273 (41031885136) is also queued with all three Python matrix jobs queued; its exact-head cold-start is not exposed.
 - Require exact-head core + cold-start validation, review, and explicit source-to-main SHA mapping before merge.
 
 ## Batch and invariant preservation
