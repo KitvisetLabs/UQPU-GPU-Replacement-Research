@@ -30,6 +30,10 @@ The paper reports a real-data demonstration on four Ti–6Al–4V shear-coupon s
 6. A fitted operator may be non-identifiable or non-generalizing. Objectivity, tensor symmetry, positivity, thermodynamic dissipation, energy balance, mesh objectivity, limiting cases and counterexamples must be checked.
 7. No independent source archive, environment or solver reproduction has been completed by UQPU.
 
+## Shared material-data interface with the parallel hyperreduction work
+
+PR #154 separately carries MAT-NEURAL-HYPERREDUCTION-001 (Holthusen et al., adaptive POD/ECSW and adjoint hyperreduction). Its contract is available on the source commit at https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/3b11949c517631df77ac893bbaa189a35e108971/research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md. Do not create two independent Pangola coupon campaigns. Reuse one versioned material/function specification, batch/specimen IDs, calibration records, geometry/load/thermal splits and blind holdouts; compare conventional models, FEML and hyperreduction as separate solver methods under matched data and compute budgets. Keep method-specific cost terms separate: FEML forward/adjoint solves versus hyperreduction basis/sampling rebuilds, canaries and full-order checks. Both remain literature-only until source reproduction and actual Pangola data pass.
+
 ## Acceptance gates
 
 - **Gate 0 — material/function specification:** define the intended substitute or hybrid function and incumbent reference material. Record composition, batch, process, porosity, orientation, density, ash/impurity, binder, moisture and thermal history.
