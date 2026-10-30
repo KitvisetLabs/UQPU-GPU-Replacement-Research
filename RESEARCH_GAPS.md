@@ -1444,3 +1444,23 @@ Pan et al., *Journal of Corporate Finance* 102, 103099, early online 2026-10-14,
 ## 2026-10-30 — BIO-001 potato–okra HTL–AD–HDO model watch
 
 Added `docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md` for Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), 100080, DOI 10.1016/j.cejgas.2026.100080. This is an external potato–okra process simulation/TEA, not Pangola evidence. Reproduction must reconcile the 36.9 wt% optimized versus 31.6 wt% integrated bio-crude yield bases, HTL-only ERR versus integrated energy recovery, and deterministic NPV (~US$11.24M) versus Monte Carlo mean (~US$2.79M). The source model/supplement and external validation must be independently audited. Pangola transfer requires matched measured feedstock batches, final accepted-liquid quality, complete mass/energy closure, H2/catalyst/utilities, lifecycle costs and non-double-counted coproduct credits. No commercial fuel claim.
+
+
+## 2026-10-30 — RG-EQN-NEURAL-MATERIAL-HYPERREDUCTION-001 / RG-A-QAOA-TEST-OBJECTIVE-LEAKAGE-001
+
+### RG-EQN-NEURAL-MATERIAL-HYPERREDUCTION-001
+- **Owner:** Lane D; interfaces A/C/E/F/G; **status:** LITERATURE_ONLY / REPRODUCTION_NOT_RUN.
+- **Objective:** test whether adaptive POD + ECSW + adjoint sensitivities reduce total inverse constitutive-model identification cost without losing full-order quality on independent specimens, meshes and deformation states.
+- **Evidence:** Holthusen et al., arXiv:2610.31322v1 (2026-10-22), report two experimental-data cases and one synthetic 3-D case, including about 9 h to 41 min for one case. Full-order bootstrap/canary checks remain material (about 41% of wall time in the first case); localization reduces efficiency; reaction-force fit is non-unique; demonstrated model is isotropic hyperelasticity. Source uses in-house ASIMOV/JAX; project has not installed or reproduced it.
+- **Blockers:** source implementation pin and environment not audited; generated study data pending publication; independent solver/mesh and localization tests absent; Pangola material class not measured.
+- **Next gate:** reproduce the first experimental case against full-order FE, count all canary/rebuild/check costs, then run independent mesh/load-path and localization negative controls. No Pangola transfer until measured coupons establish compatible constitutive behavior.
+- **Source watch:** [2026-10-30 agentic equation-discovery and constitutive-model watch](../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md); [Lane D transfer contract](../research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md).
+
+### RG-A-QAOA-TEST-OBJECTIVE-LEAKAGE-001
+- **Owner:** Lane A; **status:** SOFTWARE_PROTOCOL_GAP / NOT_EXECUTED.
+- **Objective:** preserve a valid held-out generalization estimate for the parity-QAOA versus direct encoding comparison.
+- **Finding:** the current QAOA manifest describes test as final-evaluation-only but allows per-instance variational-angle optimization on test objectives. Optimizing angles against a test instance is test-objective adaptation, even when the exact optimum/reference certificate is not used. The resulting score cannot be labelled held-out generalization.
+- **Next gate:** primary generalization track must freeze shared parameters/hyperparameters using train/validation only and use test solely for final sampling/scoring. If per-instance adaptation is desired, define it as a separate track with a disjoint optimization-shot budget and independent final-evaluation shots; report it as adaptation, not generalization. Add a manifest validator/test before any optimizer run.
+- **Evidence boundary:** no QAOA optimizer, target simulator or real QPU job was run; no advantage claim.
+
+Research-Sync: pending-main
