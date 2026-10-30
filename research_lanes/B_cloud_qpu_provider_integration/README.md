@@ -15,3 +15,11 @@ Future provider/program subfolders are allowed subject to the 16-level depth lim
 - OCI Quantum AI Compute Beta / Quantinuum Helios: **announced early access for selected participants; API, target, region, eligibility, billing and adapter remain unverified**.
 - Amazon Braket FedRAMP Class C: distinguish AWS-operated API/SDK/orchestration/compilation/S3 result scope from third-party QPU hardware outside that boundary.
 - No paid QPU submission. Continue provider-neutral registry states: announced, early access, software prepared, simulator verified, real-QPU verified.
+
+
+## Latest decoder research — 2026-10-30
+
+- [QEC-MAMBA-001 literature watch](../../docs/literature_watch/2026-10-30-mamba-qec-decoder-peer-reviewed.md)
+- [Focused reproduction gap](../../docs/RESEARCH_GAP_QEC_MAMBA_DECODER_REPRODUCTION_2026-10-30.md)
+- [Source-specific Lane B contract](MAMBA_QEC_DECODER_TRANSFER_CONTRACT_2026-10-30.md)
+- Peer-reviewed external paper only; no dataset retrieval, UQPU reproduction, provider job or measured real-time control path. Reconcile publisher/preprint scopes before transferring exact numbers.

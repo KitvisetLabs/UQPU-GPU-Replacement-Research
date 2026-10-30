@@ -35,3 +35,8 @@ LegoSR (arXiv:2610.33465) is new-to-repository. RISR (arXiv:2610.11387) is prior
 - The 2026-10-26 OpenAI announcement is already covered by the [2026-10-28 literature watch](../../docs/literature_watch/2026-10-28-openai-math-complexity-qft-claims-verification-boundary.md) and [RG-EQN-009](../../docs/RESEARCH_GAP_EQN009_EXTERNAL_AI_THEOREM_CLAIMS_2026-10-28.md).
 - This cycle rechecked the source and retained the existing OPEN / independent-review status rather than creating a duplicate article. The constructive-QFT artifacts remain unavailable for independent reproduction in the cited announcement.
 - Mathematical formalization claims remain distinct from physical validity, device consequences, accepted-task performance and economics.
+
+
+## AI-driven experiment-design literature — 2026-10-30
+
+[Klimesch et al., Nature 657 (2026)](../../docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md) is a peer-reviewed review, not a project experiment. Its SPRIND Next Frontier AI Challenge disclosure is recorded as ecosystem context only; it is not UQPU funding or a financing commitment.

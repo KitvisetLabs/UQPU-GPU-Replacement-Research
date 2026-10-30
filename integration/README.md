@@ -1,5 +1,31 @@
 # Cross-Lane Integration Hub
 
+## Companion literature delta — 2026-10-30 — AI-driven physics experiment design
+
+- [Peer-reviewed Nature review watch](../docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md)
+- [D/G agentic detector co-design cycle](DAILY_CYCLE_2026-10-30_AGENTIC_DETECTOR_COSIGN.md) · [machine record](INT-20261030-AGENTIC-DETECTOR-COSIGN.json)
+
+The review supplies a four-axis method framework (search-space engineering, simulator fidelity, objective semantics, AI exploration). It is methodological synthesis only; no UQPU experiment, physical law, device, manufacturing, material, energy or financing advantage is claimed.
+
+## Latest integrated delta — 2026-10-30 — agentic differentiable detector co-design
+
+- [Literature watch](../docs/literature_watch/2026-10-30-agentic-differentiable-detector-codesign.md) · [focused D/G gap](../docs/RESEARCH_GAP_DG_AGENTIC_DETECTOR_COSIGN_REPRODUCTION_2026-10-30.md)
+- [Lane D/G transfer contract](../research_lanes/D_device_chip_fabrication_packaging/AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md)
+- [A–H cycle report](DAILY_CYCLE_2026-10-30_AGENTIC_DETECTOR_COSIGN.md) · [machine record](INT-20261030-AGENTIC-DETECTOR-COSIGN.json)
+
+The VIBRATO source is an official preprint and source-reported detector simulation study. The transfer is methodological only; no UQPU reproduction, quantum-device fabrication, process/yield improvement, physical law, material/fuel/fusion result or project-finance advantage is claimed. Batch 144 remains newest numbered main batch; Batch 145 remains PR #156, open/unmerged.
+
+## Latest integrated delta — 2026-10-30 — QEC, quantum device and foundational frontier
+
+- [Planar qLDPC boundary-construction watch](../docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md) · [focused gap](../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md) · [Lane A contract](../research_lanes/A_quantum_programming_runtime/PLANAR_QLDPC_BOUNDARY_ALGORITHM_TRANSFER_CONTRACT_2026-10-30.md)
+- [A–H daily cycle report](DAILY_CYCLE_2026-10-30_QEC_DEVICE_AND_FOUNDATIONAL_FRONTIER.md)
+- [Machine record](INT-20261030-QEC-DEVICE-FOUNDATION.json)
+- [Mamba QEC watch](../docs/literature_watch/2026-10-30-mamba-qec-decoder-peer-reviewed.md) · [gap](../docs/RESEARCH_GAP_QEC_MAMBA_DECODER_REPRODUCTION_2026-10-30.md) · [Lane B contract](../research_lanes/B_cloud_qpu_provider_integration/MAMBA_QEC_DECODER_TRANSFER_CONTRACT_2026-10-30.md)
+- [Waveguide/triple-dot device watch](../docs/literature_watch/2026-10-30-transmon-waveguide-and-triple-dot-device-frontier.md) · [D/G gap](../docs/RESEARCH_GAP_DG_WAVEGUIDE_AND_SPIN_QUBIT_TRANSFER_2026-10-30.md) · [Lane D/G contract](../research_lanes/D_device_chip_fabrication_packaging/QUANTUM_INTERCONNECT_AND_SPIN_QUBIT_DEVICE_TRANSFER_CONTRACT_2026-10-30.md)
+- [Quantum thermodynamics/Majorana watch](../docs/literature_watch/2026-10-30-quantum-thermodynamics-and-majorana-self-testing.md)
+
+External literature only; no UQPU reproduction, device fabrication, paid QPU job, material/fuel/fusion/finance result or new physical law. Batch 144 remains newest numbered main batch; Batch 145 is PR #156, open/unmerged. WORKLOG.md and RESEARCH_GAPS.md remain append-only sync debt.
+
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
 
 - [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)
