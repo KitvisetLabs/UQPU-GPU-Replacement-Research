@@ -339,4 +339,4 @@ External potato–okra HTL–AD–HDO process simulation/TEA only; no Pangola tr
 - [Pending-main synchronization record](PENDING_MAIN_SYNC_PR156_2026-10-30.md)
 - [Source PR #156](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/156)
 
-The source branch is 29 commits ahead of starting main SHA `41fac3953773ae0016a09539be57c3ed6b379771`; it remains unmerged. Its research artifacts are not yet canonical main content. Exact per-commit SHA mapping and exact-head CI remain open.
+The source branch is 39 commits ahead with 23 changed files relative to starting main SHA `41fac3953773ae0016a09539be57c3ed6b379771`; it remains unmerged. Its research artifacts are not yet canonical main content. The 28-pair A–H scan is included. Exact per-commit SHA mapping and exact-head CI remain open.
