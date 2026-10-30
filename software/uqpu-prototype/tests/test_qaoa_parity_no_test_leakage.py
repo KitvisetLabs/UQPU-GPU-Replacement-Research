@@ -16,6 +16,7 @@ class QAOAParityNoTestLeakageTests(unittest.TestCase):
         cls.references = json.loads(REFERENCE_PATH.read_text(encoding="utf-8"))
 
     def test_test_split_is_never_used_for_parameter_or_method_selection(self):
+        self.assertEqual(self.manifest["schema"], "uqpu-qaoa-parity-heldout-manifest-v2")
         protocol = self.manifest["evaluation_protocol"]
         self.assertEqual(protocol["parameter_training_split"], "train")
         self.assertEqual(protocol["hyperparameter_selection_split"], "validation")
