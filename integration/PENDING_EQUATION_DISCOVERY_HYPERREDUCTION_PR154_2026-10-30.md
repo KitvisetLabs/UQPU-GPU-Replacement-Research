@@ -4,7 +4,7 @@
 **Canonical main SHA at source start:** `41fac3953773ae0016a09539be57c3ed6b379771`  
 **Source PR:** https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/154  
 **Source branch:** `research/2026-10-30-equation-discovery-material-hyperreduction`  
-**Source PR head at summary preparation:** `0233ac1716df1bff125c7ebbb9a62db3bb987d78`
+**Source PR head at summary preparation:** `9e9393eefb6f0572d547d76f885433ffb3e724b3`
 
 ## Pending work summary
 
@@ -27,13 +27,18 @@ All commits below are in PR #154. None is merged or mapped to a main commit SHA 
 | `0204c5bea465cee8a6e98f5f327b6e49aa47f1da` | Lane A index |
 | `33cc320262b9be3c78966daa10f89021f4b02ac4` | Lane D index |
 | `369c88f1a16572597a4a56bbd25764b73f2e3901` | Integration hub index |
-| `37b58644d13c6e3a6df4632aeb5b622c6cef581f` | Cold-start handoff |
+| `37b58644d13c6e3a6df4632aeb5b622c6cef581f` | Cold-start handoff refresh |
 | `05523afa69f99a363de0d044440b637e92792175` | WORKLOG append |
 | `e1b8a47ad7df3e06239e38355b48a6a91281f9ee` | RESEARCH_GAPS append |
 | `44656247e9d55896eca9f8ac27cb056957070185` | Root README index |
 | `230fe606aa57e7f3e698fd1eefa0d03de9edc173` | Source-branch pending-main ledger |
 | `600a4e97614d1b91e6559f180b5af5cdf643f6bb` | Source-branch cold-start pending PR mapping |
 | `0233ac1716df1bff125c7ebbb9a62db3bb987d78` | Source-branch root README sync-ledger link |
+| `8b5a7e31e98bfb4174b1049b5093c1f025c5db94` | Machine-readable integration record |
+| `d30446af1db0811f37b462d51c70bbf856fd8ab3` | Source sync ledger update |
+| `2e514621ef66471f1648a059d279f145698007c6` | Integration hub machine-record link |
+| `4a18e28c66348e7a6e6e9810aee1d0f03b0003f8` | Cold-start machine-record update |
+| `9e9393eefb6f0572d547d76f885433ffb3e724b3` | Root README machine-record link |
 
 ## Evidence boundary
 
@@ -45,7 +50,7 @@ No paid QPU job, material coupon test, fuel production, fusion experiment or fin
 
 - Parent main SHA 41fac395 had no combined-status contexts exposed by the available connector.
 - Parent d3d41796 core run #2140 returned 15/15 successful jobs and cold-start #1430 succeeded; those runs do not validate current main or PR #154.
-- Earlier PR #154 head 44656247 had core run #2149 queued/in progress (Python 3.10 in progress; 3.11/3.12 queued). Updated source head 0233ac had no workflow run exposed at the last query.
+- Earlier PR #154 head 44656247 had core run #2149; all three Python matrix jobs passed, two extended jobs were in progress and the remaining extended jobs were queued at last observation. Updated source head 9e9393 had no workflow run exposed at the last query.
 - PR #154 remains open/unmerged. Require exact-head CI, review and reconciliation before merge.
 - Inaccessible historical branches/forks and older open PRs remain outside this cycle's complete reconciliation.
 
