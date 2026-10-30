@@ -1,0 +1,107 @@
+{
+  "schema": "uqpu.asset-manifest.v1",
+  "work_id": "HEP-EVENET-003",
+  "date": "2026-10-30",
+  "primary_owner": "research_lanes/A_quantum_programming_runtime",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "evidence_class": "UPSTREAM_SOURCE_METADATA_AND_REMOTE_CONTENT_HASHES_ONLY",
+  "code": {
+    "repository": "EveNet-HEP/EveNet-Full",
+    "commit": "06c3181d9a0f7df3e30edbb1c355b6fec8b5a3ad",
+    "commit_date": "2026-08-17",
+    "license": "MIT",
+    "python_requirement": ">=3.12",
+    "pyproject_dependencies": [],
+    "requirements_file": "requirements.txt",
+    "dockerfile": "Docker/Dockerfile",
+    "docker_base": "Ubuntu 22.04 / NVIDIA CUDA 12.4.1",
+    "docker_python": "3.12.3",
+    "documentation_image_tag": "docker.io/avencast1994/evenet:1.5",
+    "image_digest": null,
+    "reproducibility_notes": [
+      "pyproject.toml declares an empty dependency list while requirements.txt contains pinned packages.",
+      "Dockerfile clones AvencastF/torch-linear-assignment from the default branch without a commit pin.",
+      "The documentation image is a mutable tag; no immutable registry digest was verified."
+    ]
+  },
+  "custom_dependency": {
+    "repository": "AvencastF/torch-linear-assignment",
+    "observed_main_commit": "7680e2c8ac1e8ab0d2eabd29fb4eb7b8fd8a2c8b",
+    "license": "Apache-2.0",
+    "dockerfile_pin_status": "UNPINNED_DEFAULT_BRANCH_CLONE",
+    "required_action": "Pin the exact commit and record the CUDA/PyTorch build matrix."
+  },
+  "model": {
+    "repository": "Avencast/EveNet",
+    "main_commit": "afba5b47478f0c25c6a5a5755ac30738925d73ad",
+    "declared_license": "MIT",
+    "checkpoint_candidates": [
+      {
+        "file": "SSL.20M.last.ckpt",
+        "file_commit": "44bbaf06c548b143ca45e4c35e4598881632c6e3",
+        "size_bytes": 220658079,
+        "sha256": "e2ed50ca4f2c44fc1692c07c504ffdbad7d4a2c36a8d6206b6b3e2a7f5f148b2",
+        "task_mapping": "NOT_YET_ESTABLISHED"
+      },
+      {
+        "file": "checkpoints.20M.a4.last.ckpt",
+        "file_commit": "3969201ae20b5353ddb99c1810254ea7115217ed",
+        "size_bytes": 267634251,
+        "sha256": "3c8b571328112988fd7186953a2f3155f0e22301a9c8d7e24f520881251a5ef2",
+        "task_mapping": "NOT_YET_ESTABLISHED",
+        "security_note": "Hugging Face file page flags detected pickle imports; load only from the pinned trusted source in an isolated environment."
+      }
+    ]
+  },
+  "dataset": {
+    "repository": "Avencast/EveNet-Pretrain",
+    "main_commit": "200a96e9c9d7b3876398169760540f3189df0205",
+    "declared_license_at_pinned_main": "MIT",
+    "license_history_note": "The March 30, 2026 README change replaced fair-noncommercial-research-license metadata with MIT. This is the current repository declaration, not an independent audit of every upstream event/source-data right.",
+    "card_rows": 541248429,
+    "card_total_size_bytes_approx": 193000000000,
+    "card_columns": 1100,
+    "selected_pretraining_shard": {
+      "file": "data_Combined_Balanced_run_0.parquet",
+      "file_commit": "e6da3c120f3d74304beb2958aedaa8426fb92a11",
+      "size_bytes": 201065223,
+      "sha256": "b9dafebb5ab49b3ed491f050d8eeb9d46bc8aed8d82e046fe42af86c549148cb"
+    },
+    "shard_scope": "ONE_PRETRAINING_SHARD_ONLY; NOT A DOWNSTREAM TEST SPLIT"
+  },
+  "hash_verification": {
+    "method": "REMOTE_HUGGING_FACE_XET_OR_GIT_LFS_POINTER_METADATA",
+    "locally_downloaded": false,
+    "locally_recomputed": false,
+    "independent_rehash": false,
+    "interpretation": "The SHA-256 values are publisher-hosted file metadata and immutable source pins; no local byte-level verification has yet occurred."
+  },
+  "paper_context": {
+    "arxiv": "2601.17126",
+    "source_reported_pretraining": "approximately 500 million retained events from roughly 3 billion simulated events",
+    "input_contract": "up to 18 reconstructed objects with seven per-object features plus global observables",
+    "downstream_task_candidates": [
+      "heavy-resonance search",
+      "H->aa->4b exotic Higgs",
+      "ttbar dilepton quantum-correlation measurement",
+      "CMS Open Data Upsilon anomaly rediscovery"
+    ],
+    "paper_metrics": "Publisher/model-card reported only; no project reproduction."
+  },
+  "open_gates": [
+    "Select the exact checkpoint and configuration for one paper-defined downstream task.",
+    "Pin the downstream evaluation dataset repository revision, all train/validation/test shards and their hashes.",
+    "Audit upstream simulated-event data provenance and terms separately from the repository MIT metadata.",
+    "Pin the torch-linear-assignment commit and immutable Docker image digest, or build a complete lock from source.",
+    "Reconcile the paper's approximately 180 GB Parquet statement with the dataset card's approximately 193 GB using explicit decimal/binary units and pinned files.",
+    "Download in a controlled environment, recompute every SHA-256 locally, verify Parquet schema/units/row counts and group/run disjointness.",
+    "Run a clean Python 3.12 inference smoke test, then one bounded paper-defined task; retain raw outputs and failures.",
+    "Only after accepted-output reproduction, compare CPU/GPU/NPU and measure RAM/VRAM, transfer, latency, throughput, energy and total cost."
+  ],
+  "nonclaims": [
+    "No EveNet inference or paper metric was reproduced.",
+    "No CPU/GPU/NPU comparison or UQPU advantage was measured.",
+    "No QPU execution or paid provider job was performed.",
+    "No memory/storage replacement, Data-Center-to-One-Phone milestone, new physical law, material substitution, bio-oil, fusion-electricity or financing advantage is established."
+  ]
+}
