@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Focused gap — RG-HEP-EVENET-TRANSFER-001](docs/RESEARCH_GAP_EVENET_HEP_FOUNDATION_MODEL_TRANSFER_2026-10-30.md) — asset/license/hash, task reproduction, generalization and total-cost gates.
+
 - [Lane A workload contract — HEP-EVENET-001](research_lanes/A_quantum_programming_runtime/EVENET_HEP_FOUNDATION_MODEL_WORKLOAD_CONTRACT_2026-10-30.md) — task-specific CPU/GPU/NPU baseline candidate; no QPU mapping or reproduction yet.
 
 - [New literature watch — EVENET particle-collision foundation model](docs/literature_watch/2026-10-30-evenet-particle-collision-foundation-model.md) — Nature Machine Intelligence version of record published 2026-10-29; external paper evidence only.
