@@ -1,5 +1,5 @@
 {
-  "schema": "uqpu-qaoa-parity-heldout-manifest-v1",
+  "schema": "uqpu-qaoa-parity-heldout-manifest-v2",
   "created_utc": "2026-10-30",
   "primary_owner": "Lane A",
   "integration_owner": "Lane F",
