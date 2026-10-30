@@ -11,7 +11,7 @@
   "publication_owner": "Lane H",
   "workload_contract_id": "SIGNED-MAXCUT-PARITY-QAOA-001",
   "manifest_path": "benchmarks/manifests/qaoa-parity-heldout-v2-2026-10-30.json",
-  "manifest_sha256": "4eaf5fcb3f12ad09207bd8a4f014d0372cb7e3f0fa59375a1f83dd7ddf8bcb9d",
+  "manifest_sha256": "5141575255c9ba9c7479745598f8e875ffc7e70b86bbc8e976e90fd07b063e0a",
   "reference_path": "benchmarks/references/qaoa-parity-exact-references-v2-2026-10-30.json",
   "test_path": "software/uqpu-prototype/tests/test_qaoa_parity_no_test_leakage.py",
   "test_status": "ADDED_NOT_YET_RUN_BY_HOSTED_CI",
