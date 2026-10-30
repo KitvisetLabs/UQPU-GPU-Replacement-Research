@@ -332,3 +332,11 @@ Pan et al. (Journal of Corporate Finance; early online 2026-10-14; DOI 10.1016/j
 - [Batch 144](../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md)
 
 External potato–okra HTL–AD–HDO process simulation/TEA only; no Pangola transfer or commercial fuel claim. The watch flags yield-basis and deterministic-versus-Monte-Carlo NPV reconciliation before any use.
+
+
+## Pending-main summary — Batch 145 source PR #156 (2026-10-30)
+
+- [Pending-main synchronization record](PENDING_MAIN_SYNC_PR156_2026-10-30.md)
+- [Source PR #156](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/156)
+
+The source branch is 39 commits ahead with 23 changed files relative to starting main SHA `41fac3953773ae0016a09539be57c3ed6b379771`; it remains unmerged. Its research artifacts are not yet canonical main content. The 28-pair A–H scan is included. Exact per-commit SHA mapping and exact-head CI remain open.
