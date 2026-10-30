@@ -1,5 +1,16 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — fusion maintenance and R&D finance
+
+- [Batch 140](../docs/BATCH_140_FUSION_MAINTENANCE_AND_RD_FINANCE_FRONTIER.md)
+- [Literature watch](../docs/literature_watch/2026-10-30-fusion-maintenance-costing-and-innovation-risk.md)
+- [FUS-001 gap](../docs/RESEARCH_GAP_FUS001_MAINTENANCE_AND_NET_ELECTRIC_COSTING_2026-10-30.md) · [Lane E contract](../research_lanes/E_materials_energy_cooling_infrastructure/FUS001_MAINTENANCE_NET_COST_ENVELOPE_CONTRACT_2026-10-30.md)
+- [FIN-001 gap](../docs/RESEARCH_GAP_FIN001_HURDLE_RATE_AND_INNOVATION_RISK_2026-10-30.md) · [Lane F contract](../research_lanes/F_economics_benchmarks_evidence_integration/FIN001_HURDLE_RATE_VS_COST_OF_CAPITAL_CONTRACT_2026-10-30.md)
+- [Daily A–H report](DAILY_CYCLE_2026-10-30_FUSION_FINANCE_DELTA.md)
+- [Machine record](INT-20261030-FUSION-FINANCE-DELTA.json)
+
+New source deltas: peer-reviewed fusion maintenance scheduling, pinned open-source 1cFE costing tools, and an official central-bank working paper on innovation hurdle rates versus financial cost of capital. All are scenario/model/working-paper evidence; no UQPU net-electricity, commercial LCOE, principal, interest or WACC result is claimed.
+
 ## Latest integrated delta — 2026-10-30 — EveNet dependency and data-provenance preflight
 
 - [Batch 139](../docs/BATCH_139_EVENET_DEPENDENCY_AND_DATA_PROVENANCE_PREFLIGHT.md)

@@ -1,0 +1,134 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-FUSION-FINANCE-DELTA",
+  "integration_id": "INT-20261030-FUSION-FINANCE-DELTA",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_branch": "main",
+  "starting_head": "cef917ec1b7f0130a5cbe86681695f1c4c33753a",
+  "newest_committed_batch_at_start": 139,
+  "batch_138_status": "DRAFT_OPEN_PR_152_NOT_MERGED",
+  "primary_work_item": {
+    "id": "FUS-001-MAINT-001",
+    "lane": "E",
+    "secondary_work_item": "FIN-001-RISK-001",
+    "status": "LITERATURE_WATCH_AND_REPRODUCTION_CONTRACTS_PUBLISHED_NOT_REPRODUCED",
+    "primary_artifact": "research_lanes/E_materials_energy_cooling_infrastructure/FUS001_MAINTENANCE_NET_COST_ENVELOPE_CONTRACT_2026-10-30.md",
+    "focused_gap": "docs/RESEARCH_GAP_FUS001_MAINTENANCE_AND_NET_ELECTRIC_COSTING_2026-10-30.md"
+  },
+  "evidence_class": [
+    "PEER_REVIEWED_SCENARIO_MODEL",
+    "OPEN_SOURCE_COSTING_MODEL",
+    "OFFICIAL_WORKING_PAPER"
+  ],
+  "literature": {
+    "new_to_main": true,
+    "watch": "docs/literature_watch/2026-10-30-fusion-maintenance-costing-and-innovation-risk.md",
+    "sources": [
+      {
+        "title": "Valuing Maintenance Strategies for Fusion Plants as Part of a Future Electricity Grid",
+        "doi": "10.1007/s10894-026-00551-5",
+        "venue": "Journal of Fusion Energy 45:15 (2026)",
+        "evidence": "PEER_REVIEWED_GENX_SCENARIO_NOT_PLANT_MEASUREMENT"
+      },
+      {
+        "title": "1costingfe",
+        "repository": "1cFE/1costingfe",
+        "commit": "44434d9fa95a1105621edc9927a8abe587703e81",
+        "license": "MIT",
+        "evidence": "OPEN_SOURCE_MODEL_NOT_REPRODUCED"
+      },
+      {
+        "title": "The 1¢ Envelope",
+        "repository": "1cFE/one-cent-envelope",
+        "commit": "b317102fcd19ae63ac7a49712ec924ef64d00e33",
+        "license": "MIT",
+        "evidence": "GENERIC_SCREENING_EQUATION_NOT_PLANT_FORECAST"
+      },
+      {
+        "title": "The innovator’s risk premium: Sticky hurdle rates, the cost of capital, and creative destruction",
+        "publisher": "Banco de España",
+        "working_paper": 2628,
+        "date": "2026-09-22",
+        "evidence": "OFFICIAL_WORKING_PAPER_MODEL_NOT_UQPU_FINANCING_DATA"
+      }
+    ]
+  },
+  "implementation": {
+    "new_code": false,
+    "local_tests": "NOT_RUN",
+    "external_model_tests": "NOT_RUN",
+    "external_model_reproduction": false,
+    "fusion_experiment": false,
+    "measured_net_electricity": false,
+    "measured_project_financing": false,
+    "qpu_execution": false,
+    "paid_provider_job": false
+  },
+  "lanes": {
+    "A": "HEP-EVENET-002 source/runtime/data preflight remains open; no inference reproduction.",
+    "B": "Provider-neutral/no-submit; no SDK, target or paid job.",
+    "C": "No local data/energy meter result; net MWh and recirculating energy boundaries specified.",
+    "D": "No device/chip result; component lifetime and neutron damage remain unmeasured.",
+    "E": "FUS-001 maintenance schedule, replacement, parasitic loads and public costing models added as reproduction targets; no commercial result.",
+    "F": "FIN-001 separates principal, interest, WACC, hurdle rate and innovation premium; no UQPU financing outcome.",
+    "G": "D/G co-design retained; remote handling/replacement equipment requirements specified, no factory data.",
+    "H": "New source watch/contracts/gaps published; Ketskaew Chulamani/Kanusanan Pongpanna Model and six-language references preserved."
+  },
+  "foundational": {
+    "FND-001..006": "No new physical measurement or theorem.",
+    "EQN-001..006": "No equation promoted; economic models do not alter physical laws."
+  },
+  "invariants": {
+    "INV-025/026/027": "Preserved; 100M GPU and universal 100M-unit goals remain falsifiable, subsystem-specific goals.",
+    "INV-029": "No Data-Center-to-One-Phone physical compression or lifecycle-cost gate.",
+    "INV-030": "No Pangola functional substitution or critical-material reduction; no transmutation.",
+    "INV-031": "No accepted Pangola-derived liquid fuel or commercial cost result.",
+    "INV-032": "Maintenance/net-output accounting improved; no net reliable delivered fusion electricity.",
+    "INV-033": "Hurdle rate/WACC/principal/interest distinguished; no UQPU financing reduction.",
+    "INV-034": "Preserved; foundational physics remains evidence-gated.",
+    "INV-035": "Preserved; no AI equation promoted to physical law."
+  },
+  "preserved": {
+    "root_directives": [
+      "00",
+      "00A",
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ],
+    "strategic_model": "docs/KANUSANAN_PONGPANNA_MODEL.md",
+    "strategic_references": "STRATEGIC_PLAN_REFERENCES.md",
+    "languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ],
+    "legacy_lane_I": "Preserved as legacy; operational lanes remain A-H"
+  },
+  "ci": {
+    "starting_head": "cef917ec1b7f0130a5cbe86681695f1c4c33753a",
+    "cold_start": {
+      "run_number": 1385,
+      "run_id": 40984903575,
+      "status": "success"
+    },
+    "core": {
+      "run_number": 2105,
+      "run_id": 40984903539,
+      "status": "in_progress"
+    },
+    "conclusion": "STARTING_HEAD_PARTIAL_NOT_GREEN",
+    "new_batch_commit_exact_head_ci": "PENDING"
+  },
+  "sync_debt": "README, integration hub and cold-start manifest updated. WORKLOG.md and RESEARCH_GAPS.md remain untouched to protect append-only history; focused FUS/FIN gaps are canonical pending safe aggregate reconciliation. PR #152 remains draft/open; PR #153 remains open/unmerged.",
+  "paid_qpu_job_submitted": false,
+  "mission_advantage_claimed": false,
+  "next_highest_value_gate": "Pin and reproduce Schwartz/GenX maintenance case; run 1costingfe tests and reproduce one example; independently test one-cent-envelope equation and audit exclusions/defaults; populate FIN-001 from actual financing tranches and dated evidence."
+}
