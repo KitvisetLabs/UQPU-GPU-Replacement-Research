@@ -103,23 +103,23 @@
       "next_gate": "Do not execute v1 for generalization. Review/merge PR156 only after exact-head core+cold-start and review; then paired direct/parity p=1 under v2 8192 shots, 32 optimizer evaluations and 10 repetitions, independent SDK/operator/decoder and target-aware simulation."
     },
     "B": {
-      "status": "Provider-neutral IBM, Braket, Azure, IonQ, Rigetti, D-Wave, IQM, Quantinuum, Pasqal, QuEra, Quandela, OQC routes preserved; no paid QPU job.",
-      "next_gate": "Same-provider/target/calibration/price binding; simulator/dry-run first."
+      "status": "Provider-neutral paths preserved. Main QEC-TRANSFER-001 is the latest daily-cycle Lane B gate: Lange et al. arXiv:2610.03869 and upstream commit afd6e170... are pinned, but assets are not hash-verified and UQPU has not reproduced the IBM/Google records or measured latency/throughput.",
+      "next_gate": "Retrieve/license/hash source assets, reproduce released decoder and same-shot MWPM, then group-disjoint device/patch/operation/noise transfer and streaming p50/p95/p99 cadence measurement."
     },
     "C": {
-      "status": "State dimension and parity register sizes remain mathematical counts, not readable RAM/VRAM/HBM or storage.",
+      "status": "QAOA logical/parity state counts are not readable bytes. QEC-TRANSFER-001 additionally requires syndrome/window/checkpoint/model bytes, buffering, host transfer, peak RAM/VRAM and output reconstruction; no UQPU memory profile exists.",
       "next_gate": "Measure bytes, peak memory, transfer, state/I/O, persistence and reconstruction."
     },
     "D": {
-      "status": "FEML literature watch and Pangola transfer contract; no device, coupon or fabrication result.",
+      "status": "FEML literature watch and Pangola transfer contract; no device, coupon or fabrication result. INV-036/FND-008 Pangola-carbon-to-synthetic-diamond-to-spin-device route remains a separate unproven hypothesis; no diamond/color-center/ODMR/coherence result.",
       "next_gate": "Pin Zenodo archive and independently reproduce Ti-6Al-4V SFC2 benchmark."
     },
     "E": {
-      "status": "FUS-001 stochastic cost preprint comparator; BIO-001/Pangola remains open. No accepted fuel, material substitution or net fusion electricity.",
+      "status": "FUS-001 stochastic cost preprint comparator; BIO-001/Pangola remains open. No accepted fuel, material substitution or net fusion electricity. Main also has Pangola carbon thermochemical-transfer and potato-okra HTL-AD-HDO model watches; INV-036 diamond precursor route is hypothesis only.",
       "next_gate": "Reconcile learning-rate models and complete net-electric/lifecycle boundary; measure Pangola feedstock/product."
     },
     "F": {
-      "status": "External source/model claims remain separate from project evidence; no project WACC, interest or accepted-task cost reduction.",
+      "status": "External source/model claims remain separate from project evidence; no project WACC, interest or accepted-task cost reduction. Main flexible-financing watch and PR154 R&D credit-supply stress are external models; no project principal/interest/WACC change.",
       "next_gate": "Matched uncertainty and all-in cost ledgers with source hashes."
     },
     "G": {
@@ -127,7 +127,7 @@
       "next_gate": "Map validated device/material requirements to process window, metrology and yield."
     },
     "H": {
-      "status": "Agentic AI primer and AgenticSciML watch; GitHub-only cold-start benchmark proposed; multilingual strategic context preserved.",
+      "status": "Agentic AI primer and AgenticSciML watch; GitHub-only cold-start benchmark proposed; multilingual strategic context preserved. Main EVENET/QGPA/AI-agent workflows remain indexed; six-language strategic plan and funding/agent references preserved.",
       "next_gate": "Run fresh-agent handoff and single-vs-multi-agent benchmark under frozen budgets."
     }
   },
@@ -289,7 +289,9 @@
     "INV-032": "no reliable net delivered fusion electricity or commercial LCOE",
     "INV-033": "no measured project principal/interest/WACC reduction",
     "INV-034": "foundational physics and mathematics agenda preserved",
-    "INV-035": "AI equation discovery permanent; no candidate promoted to law"
+    "INV-035": "AI equation discovery permanent; no candidate promoted to law",
+    "INV-036": "Difference-to-Technology Particle/Spacetime Principle remains active; FND-008 particle/spacetime and Pangola-carbon-to-synthetic-diamond route are falsifiable hypotheses only; no new particle/spacetime device or diamond technology advantage.",
+    "INV-037": "UQPU-UMRL 0.1 remains the typed mathematical/evidence interface; new FEML, agentic-handoff and FUS001 work items specify variables/units, domain, assumptions, uncertainty, decision predicate, falsifier, evidence/provenance and non-claims; SCM/canon mathematics remains separate from empirical evidence."
   },
   "legacy_invariants": [
     "INV-025",
@@ -416,5 +418,161 @@
       "hyperreduction basis/sampling rebuilds, canaries and full-order checks"
     ],
     "evidence": "LITERATURE_ONLY"
-  }
+  },
+  "current_main_context": {
+    "latest_main_commit_message": "Batch 144: add BIO-001 HTL-AD-HDO literature comparator",
+    "latest_numbered_batch_on_main": 144,
+    "latest_readme_daily_cycle": "integration/DAILY_CYCLE_2026-10-30_MODULAR_NEURAL_QEC_DECODER.md",
+    "active_qec_work_item": "QEC-TRANSFER-001",
+    "qec_source": "Lange et al., arXiv:2610.03869 (2026-10-02)",
+    "qec_upstream_commit": "afd6e170feb72f7bc99f4fd14cf1495c2731cf5c",
+    "qec_status": "source pinned in literature watch; assets not retrieved/hash-verified; no UQPU reproduction; no latency/throughput benchmark reported by source",
+    "other_main_qec_sources": [
+      "Itoh et al. arXiv:2607.27930 temporal-parallel Union-Find RTL/synthesis",
+      "Yan et al. arXiv:2605.12046 QEC accuracy/latency/quantization"
+    ],
+    "existing_main_lane_evidence": [
+      "EVENET HEP foundation model (version of record 2026-10-29)",
+      "Pangola carbon thermochemical transfer watch",
+      "potato-okra HTL-AD-HDO external model watch",
+      "flexible-financing innovation-risk watch"
+    ],
+    "parallel_unmerged_branches": [
+      154,
+      156
+    ]
+  },
+  "umrl_contracts": [
+    {
+      "id": "UMRL-MAT-FEML-PANGOLA-001",
+      "owner": "D",
+      "variables": [
+        "feedstock composition",
+        "process conditions",
+        "batch/specimen/geometry",
+        "observed response",
+        "learned operator",
+        "solver/adjoint resources"
+      ],
+      "units": [
+        "wt%",
+        "K",
+        "m",
+        "N",
+        "W/(m·K)",
+        "s",
+        "J",
+        "USD/accepted functional unit"
+      ],
+      "domain": "specified mechanical or thermal coupon/PDE experiment",
+      "assumptions": [
+        "known PDE and boundary conditions",
+        "calibrated sensors",
+        "batch/geometry holdouts",
+        "operator identifiability"
+      ],
+      "uncertainty": [
+        "instrument",
+        "batch variability",
+        "mesh/solver",
+        "model"
+      ],
+      "decision_predicate": "blind-batch and new-geometry predictions meet predeclared tolerance while all physics constraints pass",
+      "falsifier": "non-identifiability, failed holdout, constraint violation, no improvement over matched classical model or lifecycle-cost failure",
+      "evidence": "LITERATURE_ONLY until source reproduction and Pangola measurements",
+      "non_claims": [
+        "no material qualification",
+        "no electrical property without a separate PDE/measurement",
+        "no diamond or device claim",
+        "no new physical law"
+      ]
+    },
+    {
+      "id": "UMRL-AGENTIC-HANDOFF-001",
+      "owner": "H",
+      "variables": [
+        "task",
+        "model/tool versions",
+        "roles",
+        "dataset/split",
+        "evaluator",
+        "accepted result",
+        "resource use"
+      ],
+      "units": [
+        "count",
+        "tokens",
+        "USD",
+        "s",
+        "CPU/GPU h",
+        "bytes",
+        "J",
+        "accepted results"
+      ],
+      "domain": "frozen known-law recovery and GitHub-only cold-start tasks",
+      "assumptions": [
+        "identical budgets",
+        "frozen evaluator",
+        "independent reviewer",
+        "sealed test and retrieval split"
+      ],
+      "uncertainty": [
+        "model stochasticity",
+        "evaluator",
+        "benchmark sampling"
+      ],
+      "decision_predicate": "multi-agent improves independently accepted result or cold-start reconstruction at equal budget without higher false-discovery rate",
+      "falsifier": "no improvement, leakage, ungrounded claims, failed reproduction or excessive cost",
+      "evidence": "PROTOCOL_ONLY until independent runs",
+      "non_claims": [
+        "no autonomous discovery claim",
+        "no new physical law",
+        "no R&D cost reduction"
+      ]
+    },
+    {
+      "id": "UMRL-FUS001-STOCHASTIC-COST-001",
+      "owner": "E",
+      "variables": [
+        "CAPEX",
+        "OPEX",
+        "capacity factor",
+        "plant life",
+        "recirculating power",
+        "component lifetime/replacement",
+        "fuel cycle",
+        "WACC",
+        "net delivered MWh"
+      ],
+      "units": [
+        "USD",
+        "MW",
+        "%",
+        "years",
+        "MWh",
+        "USD/MWh"
+      ],
+      "domain": "MCF, ICF and MIF separately, with FOAK/NOAK states",
+      "assumptions": [
+        "source-specific cost boundary",
+        "matched currency/year",
+        "learning-rate/maturity definition",
+        "explicit financing and net-electric boundary"
+      ],
+      "uncertainty": [
+        "source data",
+        "cost distributions",
+        "deployment learning",
+        "plant availability"
+      ],
+      "decision_predicate": "reproduced model yields complete net reliable delivered-electricity cost under matched inputs",
+      "falsifier": "model not reproducible, boundary incomplete, or claimed advantage disappears under matched assumptions",
+      "evidence": "OFFICIAL_ARXIV_PREPRINT / MODEL_ONLY",
+      "non_claims": [
+        "no commercial fusion electricity",
+        "no project WACC reduction",
+        "no measured fleet learning"
+      ]
+    }
+  ]
 }
