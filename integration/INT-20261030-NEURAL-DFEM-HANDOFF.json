@@ -136,10 +136,32 @@
     "current_cycle_exact_head": "UNVERIFIED; last checked pre-final-sync head e3f72ce69f2d467c057992944b94e6289e965934 returned no status contexts; subsequent manifest/README metadata-sync commits require exact-head validation",
     "latest_checked_main_head": "e3f72ce69f2d467c057992944b94e6289e965934",
     "latest_checked_main_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
-    "latest_checked_main_head_workflow_runs": "NO_PR_TRIGGERED_RUNS_RETURNED"
+    "latest_checked_main_head_workflow_runs": "NO_PR_TRIGGERED_RUNS_RETURNED",
+    "pr152_current_head_run": "SUCCESS: 15 returned jobs; PR remains draft/open and unmerged; does not validate main.",
+    "pr153_state": "OPEN / UNMERGED / MERGEABLE_FALSE"
   },
   "sync_debt": "Batch 142 root synchronization is complete: full WORKLOG.md and RESEARCH_GAPS.md snapshots were fetched and appended without replacing prior history (commits 59db755487323c0a8aa83304f75d75c25cf46fcd and e987c90d3414a4261471d818ef8bba9882c11680). Historical PR #152/#153 and inaccessible branch/fork coverage remain unresolved.",
   "paid_qpu_job_submitted": false,
   "mission_advantage_claimed": false,
-  "next_highest_value_gate": "Lane A: observe exact-head CI, then run direct versus parity-QAOA on frozen held-out graph families with identical useful output, exact references, equal shots/optimizer budgets and full resource accounting. Lane D: pin Neural-DFEM source assets, reproduce one synthetic Mooney-Rivlin case, run independent solver/mesh and non-polyconvex negative controls, then classify actual Pangola material behavior before any transfer."
+  "next_highest_value_gate": "Lane A: observe exact-head CI, then run direct versus parity-QAOA on frozen held-out graph families with identical useful output, exact references, equal shots/optimizer budgets and full resource accounting. Lane D: pin Neural-DFEM source assets, reproduce one synthetic Mooney-Rivlin case, run independent solver/mesh and non-polyconvex negative controls, then classify actual Pangola material behavior before any transfer.",
+  "pending_prs": {
+    "152": {
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head_sha": "1dbfb541944cbb3ee820bdb69256582203664124",
+      "run_number": 2067,
+      "run_id": 40937012470,
+      "conclusion": "success",
+      "returned_jobs": 15,
+      "all_returned_jobs_success": true
+    },
+    "153": {
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "mergeable": false,
+      "head_sha": "3910ef7e7eefb9997a19cbb916b031e20ec7dfaf"
+    }
+  }
 }
