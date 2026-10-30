@@ -93,3 +93,10 @@ The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The 
 - Added `tests/test_qaoa_parity_heldout_mapping.py`: all 10 frozen signed-Max-Cut fixtures, 688 logical assignments, 7,072 physical parity strings, direct-QUBO exact baseline, parity exact certificate, fail-closed decoding and argmax correspondence.
 - Evidence: software contract + model-only exact small-instance reference. No QAOA optimizer, SDK, target-aware simulation, QPU execution or advantage claim.
 - Next: paired direct/parity optimizer/sampler under the frozen equal budgets; validate bit order, operator sign and decoder independently first.
+
+
+## 2026-10-30 — equation-discovery runtime and QAOA holdout gate
+
+- Literature interface: [SRHarness v2 and structure-preserving equation-discovery watch](../../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md). Persistent scientific state, a common evaluator and trajectory provenance are candidate design patterns for `equation_discovery.py`; no code adoption or license approval is claimed.
+- **Protocol defect found before execution:** `benchmarks/manifests/qaoa-parity-heldout-2026-10-30.json` describes test as final-evaluation-only but allows per-instance variational-angle optimization on test objectives. That is test-objective adaptation, not held-out generalization. Next gate: freeze shared angles/hyperparameters using train/validation only, or create a separate adaptation track with disjoint optimization and final-evaluation shots and label it non-generalization.
+- No QAOA optimizer, simulator or QPU job was run in this cycle.
