@@ -1,5 +1,13 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — agentic differentiable detector co-design
+
+- [Literature watch](../docs/literature_watch/2026-10-30-agentic-differentiable-detector-codesign.md) · [focused D/G gap](../docs/RESEARCH_GAP_DG_AGENTIC_DETECTOR_COSIGN_REPRODUCTION_2026-10-30.md)
+- [Lane D/G transfer contract](../research_lanes/D_device_chip_fabrication_packaging/AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md)
+- [A–H cycle report](DAILY_CYCLE_2026-10-30_AGENTIC_DETECTOR_COSIGN.md) · [machine record](INT-20261030-AGENTIC-DETECTOR-COSIGN.json)
+
+The VIBRATO source is an official preprint and source-reported detector simulation study. The transfer is methodological only; no UQPU reproduction, quantum-device fabrication, process/yield improvement, physical law, material/fuel/fusion result or project-finance advantage is claimed. Batch 144 remains newest numbered main batch; Batch 145 remains PR #156, open/unmerged.
+
 ## Latest integrated delta — 2026-10-30 — QEC, quantum device and foundational frontier
 
 - [Planar qLDPC boundary-construction watch](../docs/literature_watch/2026-10-30-planar-qldpc-gapped-boundary-construction.md) · [focused gap](../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md) · [Lane A contract](../research_lanes/A_quantum_programming_runtime/PLANAR_QLDPC_BOUNDARY_ALGORITHM_TRANSFER_CONTRACT_2026-10-30.md)
