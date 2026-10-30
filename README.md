@@ -1,6 +1,8 @@
 # UQPU: Universal Quantum Processing Unit
 
 ## Contents
+- Batch 141 link reconciliation: all asset-manifest and literature-watch paths now resolve relative to their owning documents; focused EveNet gap and root index remain synchronized.
+
 
 - [Batch 141 — EveNet immutable asset pins and FND-001 frontier](docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md) · [literature watch](docs/literature_watch/2026-10-30-nonequilibrium-thermodynamics-and-equation-discovery.md) · [Lane A asset manifest](research_lanes/A_quantum_programming_runtime/EVENET_ASSET_PIN_MANIFEST_2026-10-30.json) · [focused gap](docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md) · [integration record](integration/INT-20261030-EVENET-ASSET-FND001.json) · [cross-lane hub](integration/README.md) — source-level pins only; no local hash verification or inference reproduction; exact-head CI pending.
 
