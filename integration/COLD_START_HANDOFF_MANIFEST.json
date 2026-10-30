@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
   "priority_lane": "A",
-  "current_frontier": "2026-10-30 cross-lane cycle: FEML missing-physics method (Ti-6Al-4V real benchmark, synthetic thermal/material examples), AgenticSciML/agentic-science primer and stochastic fusion-cost preprint added as source-attributed literature. Focused FEML Pangola and agentic cold-start gaps; FUS-001 learning-rate model conflict open. New source PR #158; Batch 144 remains newest numbered batch on main and Batch 145 is already pending in PR #156. No project material, fuel, net-fusion, finance, QPU or new-physics result. Critical Lane A audit: the main v1 parity-QAOA manifest permits per-instance angle optimization on test objectives and is blocked for strict held-out generalization. PR #156 v2 removes test-objective adaptation but remains draft/open/unmerged; no paired QAOA run until v2 exact-head core+cold-start, review and canonical merge. Parallel source PR #154 (SRHarness/Holthusen/GINNGER/Shan-Zhang/SCWL/credit-supply) and PR #156 (QSL/HTL/diamond/QAOA v2) were checked for duplication; both remain unmerged. PR #158 current observed head f9065243... has core #2284 queued; PR #159 head b050a309... has no workflow run exposed.",
+  "current_frontier": "2026-10-30 cross-lane cycle: FEML missing-physics method (Ti-6Al-4V real benchmark, synthetic thermal/material examples), AgenticSciML/agentic-science primer and stochastic fusion-cost preprint added as source-attributed literature. Focused FEML Pangola and agentic cold-start gaps; FUS-001 learning-rate model conflict open. New source PR #158; Batch 144 remains newest numbered batch on main and Batch 145 is already pending in PR #156. No project material, fuel, net-fusion, finance, QPU or new-physics result. Critical Lane A audit: the main v1 parity-QAOA manifest permits per-instance angle optimization on test objectives and is blocked for strict held-out generalization. PR #156 v2 removes test-objective adaptation but remains draft/open/unmerged; no paired QAOA run until v2 exact-head core+cold-start, review and canonical merge. Parallel source PR #154 (SRHarness/Holthusen/GINNGER/Shan-Zhang/SCWL/credit-supply) and PR #156 (QSL/HTL/diamond/QAOA v2) were checked for duplication; both remain unmerged. PR #158 current observed head f9065243... has core #2284 queued; PR #159 head b050a309... has no workflow run exposed. Additional main context: latest README daily cycle is QEC-TRANSFER-001 (Lange et al. arXiv:2610.03869; upstream commit afd6e170... pinned, assets/reproduction/latency still open). Main also contains temporal-parallel QEC, QEC TCN accuracy/latency/quantization, EVENET, Pangola carbon thermochemical, potato-okra HTL-AD-HDO and flexible-financing watches. INV-036 and INV-037 are permanent additional invariants and remain active; no diamond/particle/spacetime technology or new physical law is demonstrated.",
   "required_reading": [
     "docs/BATCH_143_PARITY_QAOA_HELDOUT_MANIFEST_AND_REFERENCE_AUDIT.md",
     "docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md",
@@ -287,7 +287,14 @@
     "research_lanes/D_device_chip_fabrication_packaging/FEML_PANGOLA_CONSTITUTIVE_TRANSFER_CONTRACT_2026-10-30.md",
     "docs/RESEARCH_GAP_FUS001_ECONOMIC_GAIN_AND_LEARNING_RATES_2026-10-27.md",
     "integration/DAILY_CYCLE_2026-10-30_FEML_AGENTIC_SCIENTIFIC_DISCOVERY.md",
-    "integration/INT-20261030-FEML-AGENTIC-SCIML.json"
+    "integration/INT-20261030-FEML-AGENTIC-SCIML.json",
+    "00C_DIFFERENCE_TO_TECHNOLOGY_PARTICLE_SPACETIME_PRINCIPLE.md",
+    "00E_UNIFIED_MATHEMATICAL_LANGUAGE_AND_DISCOVERY_LEDGER.md",
+    "research_lanes/E_materials_energy_cooling/PANGOLA_BIOMASS_TO_SYNTHETIC_DIAMOND_RESEARCH_ROUTE.md",
+    "integration/DAILY_CYCLE_2026-10-30_MODULAR_NEURAL_QEC_DECODER.md",
+    "docs/literature_watch/2026-10-30-modular-neural-qec-decoder-transfer.md",
+    "integration/INT-20261030-NEURAL-QEC-DECODER.json",
+    "docs/literature_watch/2026-10-30-evenet-particle-collision-foundation-model.md"
   ],
   "lanes": {
     "A": {
@@ -753,5 +760,11 @@
       "jobs": "15/15",
       "state": "open_draft_unmerged"
     }
-  ]
+  ],
+  "permanent_invariants_additional": {
+    "INV-036": "Difference-to-Technology Particle/Spacetime Principle; FND-008 and Pangola-carbon-to-synthetic-diamond-to-spin-device route remain falsifiable hypotheses only.",
+    "INV-037": "Unified Mathematical Research Language; every goal/work item has typed variables/units, domain, assumptions, uncertainty, decision predicate, falsifier, evidence/provenance and non-claims; SCM/canon mathematics is separate from empirical evidence."
+  },
+  "latest_main_daily_cycle": "integration/DAILY_CYCLE_2026-10-30_MODULAR_NEURAL_QEC_DECODER.md",
+  "latest_main_daily_cycle_work_item": "QEC-TRANSFER-001"
 }
