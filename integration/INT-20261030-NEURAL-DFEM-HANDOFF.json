@@ -1,0 +1,142 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-NEURAL-DFEM-HANDOFF",
+  "integration_id": "INT-20261030-NEURAL-DFEM-HANDOFF",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_branch": "main",
+  "starting_head": "8ecb8fef07f8ddbde7997aef0489049cf6b22c87",
+  "newest_committed_batch_at_start": 141,
+  "new_batch": 142,
+  "primary_work_item": {
+    "id": "MAT-NEURAL-DFEM-001",
+    "lane": "D",
+    "status": "LITERATURE_ONLY; UPSTREAM_REPRODUCTION_NOT_RUN",
+    "primary_artifact": "research_lanes/D_device_chip_fabrication_packaging/NEURAL_DFEM_CONSTITUTIVE_MODEL_TRANSFER_CONTRACT_2026-10-30.md",
+    "focused_gap": "docs/RESEARCH_GAP_NEURAL_DFEM_PANGOLA_MATERIAL_TRANSFER_2026-10-30.md"
+  },
+  "cross_cutting_work": [
+    "A-GATE-SIGNED-MAXCUT-SDK-001",
+    "PARITY-QAOA-EXACT-REFERENCE",
+    "BIO-001",
+    "FUS-001",
+    "FIN-001",
+    "FND-001..006",
+    "EQN-001..006",
+    "INV-029..035",
+    "INV-025/026/027"
+  ],
+  "literature_watch": "docs/literature_watch/2026-10-30-neural-dfem-structure-preserving-constitutive-discovery.md",
+  "source": {
+    "title": "Hyperelastic constitutive model discovery with differentiable finite elements and structure-preserving neural networks",
+    "author": "Francesco Regazzoni",
+    "publisher": "Computational Mechanics",
+    "published_date": "2026-09-06",
+    "doi": "10.1007/s00466-026-02850-2",
+    "preprint": "https://arxiv.org/abs/2603.26517",
+    "code_repository": "https://github.com/FrancescoRegazzoni/Neural-DFEM",
+    "declared_code_license": "BSD-3-Clause",
+    "observed_upstream_commit_sha": null,
+    "source_tree_sha256": null,
+    "source_assets_downloaded": false,
+    "note": "Repository page showed three commits and a legacy environment; immutable revision and local bytes were not verified."
+  },
+  "evidence_class": [
+    "PEER_REVIEWED_METHOD",
+    "SYNTHETIC_NUMERICAL_VALIDATION",
+    "PUBLIC_SOURCE_REPOSITORY_METADATA",
+    "LITERATURE_ONLY"
+  ],
+  "implementation": {
+    "new_code": false,
+    "new_contract": true,
+    "local_tests": false,
+    "upstream_tests": false,
+    "source_commit_pinned": false,
+    "source_tree_hash_verified": false,
+    "license_bytes_verified": false,
+    "clean_environment_install": false,
+    "synthetic_reproduction": false,
+    "independent_solver_or_mesh_test": false,
+    "real_material_coupon_test": false,
+    "Pangola_material_transfer": false,
+    "functional_substitution": false,
+    "measured_energy": false,
+    "measured_project_economics": false,
+    "qpu_execution": false,
+    "paid_provider_job": false
+  },
+  "lanes": {
+    "A": "Signed-Max-Cut Qiskit 2.5.2 semantic verification and parity-QAOA exact-reference/statevector prototype exist; older verified head cef917 core run #2105 passed. Current cycle head and new commits require exact-head CI. EveNet HEP-EVENET-003 remains source-metadata only, with no local inference.",
+    "B": "Provider-neutral IBM, Braket, Azure, IonQ, Rigetti, D-Wave, IQM, Quantinuum, Pasqal, QuEra, Quandela and OQC routes retained; no SDK/target/paid job.",
+    "C": "No new RAM/VRAM/HBM, state, transfer or storage measurement; Hilbert-space dimension is not readable classical storage.",
+    "D": "Neural-DFEM constitutive method indexed and MAT-NEURAL-DFEM-001 contract added; no device/chip/fabrication result.",
+    "E": "BIO-001/FUS-001 remain open; no Pangola substitution, accepted bio-oil or net delivered fusion electricity.",
+    "F": "FIN-001 boundaries retained; no measured project principal, interest, hurdle-rate, WACC or cost/task reduction.",
+    "G": "D/G co-design retained; no process-window, throughput, yield or cost-per-good-device result.",
+    "H": "Batch 142, source watch and strategic publication context integrated; Thai/English/Chinese/Japanese/Korean/German links and AI-agent/funding references preserved."
+  },
+  "foundational": {
+    "FND-001": "No new project thermodynamic measurement; feedback/TUR sources remain externally scoped.",
+    "FND-002": "No new output-information lower bound.",
+    "FND-003": "No new matched control-versus-QSL experiment.",
+    "FND-004": "No new validated physical primitive; Batch 141 optical no-go remains assumption-scoped.",
+    "FND-005": "No new QFT/elementary-particle mechanism evidence.",
+    "FND-006": "Differentiable FEM with structure-preserving constitutive models is a candidate discovery method only.",
+    "EQN-001..006": "No equation promoted; all dimensional, symmetry, conservation, causality, limiting, held-out, counterexample and independent-validation gates retained."
+  },
+  "invariants": {
+    "INV-025/026/027": "100M GPU and universal 100M-unit moonshots remain falsifiable; no Hilbert-space/readable-memory equivalence or TOPS-only NPU claim.",
+    "INV-029": "No phone-class physical compression or service/energy/lifecycle-cost gate.",
+    "INV-030": "New constitutive-model method may inform future qualification only; no Pangola coupon, functional substitution, critical-material reduction or transmutation.",
+    "INV-031": "No accepted Pangola-derived liquid fuel or commercial cost result.",
+    "INV-032": "No reliable net delivered fusion electricity or commercial LCOE.",
+    "INV-033": "No measured principal, absolute-interest, hurdle-rate, risk-premium or WACC reduction.",
+    "INV-034": "Foundational Physics & Mathematics Deep-Frontier Agenda preserved.",
+    "INV-035": "AI-assisted equation discovery remains open; no equation declared a physical law."
+  },
+  "preserved": {
+    "root_directives": [
+      "00_ULTIMATE_NORTH_STAR_DATA_CENTER_TO_PHONE.md",
+      "00A_PERMANENT_AI_EQUATION_DISCOVERY_PRINCIPLE.md",
+      "01_PANGOLA_BIOMASS_CARBON_TECHNOLOGY_STRATEGY.md",
+      "02_ULTRA_LOW_COST_BIOMASS_BIO_OIL_STRATEGY.md",
+      "03_FUSION_ELECTRICITY_COST_STRATEGY.md",
+      "04_INTEREST_COST_AND_RND_FINANCE_STRATEGY.md",
+      "05_FOUNDATIONAL_PHYSICS_MATHEMATICS_DEEP_FRONTIER.md",
+      "06_AI_ASSISTED_PHYSICS_EQUATION_DISCOVERY.md"
+    ],
+    "strategic_model": "docs/KANUSANAN_PONGPANNA_MODEL.md",
+    "strategic_references": "STRATEGIC_PLAN_REFERENCES.md",
+    "languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ]
+  },
+  "ci": {
+    "starting_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
+    "starting_head_pr_workflow_runs": "NO_RUNS_RETURNED_BY_PR_FILTERED_ENDPOINT",
+    "latest_verified_prior_head": "cef917ec1b7f0130a5cbe86681695f1c4c33753a",
+    "prior_core_run": {
+      "run_number": 2105,
+      "run_id": 40984903539,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984903539"
+    },
+    "prior_cold_start_run": {
+      "run_number": 1385,
+      "run_id": 40984903575,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984903575"
+    },
+    "current_cycle_exact_head": "UNVERIFIED; prior successful runs predate Batch 141 and Batch 142"
+  },
+  "sync_debt": "WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots; the focused gap is the detailed record pending safe append-only aggregate synchronization. PR #152 (Batch 138) and PR #153 remain unmerged; historical/inaccessible branch and fork coverage is not claimed exhaustive.",
+  "paid_qpu_job_submitted": false,
+  "mission_advantage_claimed": false,
+  "next_highest_value_gate": "Lane A: observe exact-head CI, then run direct versus parity-QAOA on frozen held-out graph families with identical useful output, exact references, equal shots/optimizer budgets and full resource accounting. Lane D: pin Neural-DFEM source assets, reproduce one synthetic Mooney-Rivlin case, run independent solver/mesh and non-polyconvex negative controls, then classify actual Pangola material behavior before any transfer."
+}
