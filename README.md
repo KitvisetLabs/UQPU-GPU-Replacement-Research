@@ -2,6 +2,8 @@
 
 ## Contents
 
+- [Batch 139 — EveNet dependency and data-provenance preflight](docs/BATCH_139_EVENET_DEPENDENCY_AND_DATA_PROVENANCE_PREFLIGHT.md) · [daily A–H cycle](integration/DAILY_CYCLE_2026-10-30_EVENET_ASSET_PREFLIGHT.md) · [Lane A contract](research_lanes/A_quantum_programming_runtime/EVENET_REPRODUCTION_PREFLIGHT_CONTRACT_2026-10-30.md) · [focused gap](docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md) · [integration record](integration/INT-20261030-EVENET-ASSET-PREFLIGHT.json) — source metadata only; checkpoint/data hashes and reproduction remain open.
+
 - [Cross-lane integration hub — EVENET HEP workload delta](integration/README.md) — current integration index and next-gate handoff.
 
 - [Machine-readable integration record — INT-20261030-EVENET-HEP-WORKLOAD](integration/INT-20261030-EVENET-HEP-WORKLOAD.json) — source pins, evidence class, A–H state and open gates.

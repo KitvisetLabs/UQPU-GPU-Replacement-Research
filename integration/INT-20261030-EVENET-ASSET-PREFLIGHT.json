@@ -1,0 +1,115 @@
+{
+  "schema": "uqpu-integration-v1",
+  "integration_id": "INT-20261030-EVENET-ASSET-PREFLIGHT",
+  "date": "2026-10-30",
+  "starting_main_sha": "a252aa0a7a28d6cb6fc2201c225920762caef871",
+  "work_id": "HEP-EVENET-002",
+  "gap_id": "RG-HEP-EVENET-PREFLIGHT-001",
+  "evidence_class": "UPSTREAM_SOURCE_AUDIT_AND_PUBLIC_DATASET_METADATA",
+  "literature_delta": {
+    "new_to_main": false,
+    "note": "EveNet paper already indexed. CoSR APS acceptance/arXiv withdrawal conflict rechecked and already indexed; no new literature article required.",
+    "sources": [
+      "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q",
+      "https://arxiv.org/abs/2603.13727",
+      "https://journals.science.org/doi/10.1126/science.aej2213"
+    ]
+  },
+  "source_pins": {
+    "code_repository": "https://github.com/EveNet-HEP/EveNet-Full",
+    "code_commit": "06c3181d9a0f7df3e30edbb1c355b6fec8b5a3ad",
+    "code_license": "MIT declared by pinned LICENSE; applies to code repository only",
+    "pyproject": "Python >=3.12; package version 0.1.6; dependency list empty",
+    "requirements": "Pinned runtime requirements inspected; no resolved lock or clean install",
+    "prediction_entry": "scripts/predict.py",
+    "training_entry": "scripts/train.py; requires WANDB_API_KEY",
+    "model_weights": "https://huggingface.co/Avencast/EveNet; revision, files, hashes and license UNVERIFIED",
+    "dataset": "https://huggingface.co/datasets/Avencast/EveNet-Pretrain",
+    "dataset_card_license": "MIT label on current card; underlying source terms/revision UNVERIFIED",
+    "dataset_rows": 541248429,
+    "dataset_size_gb": 193,
+    "dataset_columns": 1100,
+    "dataset_viewer_limit_columns": 1000,
+    "paper_raw_to_parquet_claim": "approximately 4 TB raw to approximately 180 GB Parquet; exact revision/unit reconciliation OPEN"
+  },
+  "source_audit": {
+    "clean_install": false,
+    "checkpoint_download": false,
+    "dataset_download": false,
+    "local_hash_verification": false,
+    "inference_reproduction": false,
+    "cpu_gpu_npu_benchmark": false,
+    "qpu_execution": false,
+    "tests_run": false,
+    "dependency_metadata_mismatch": true,
+    "evidence_note": "No local asset bytes, tests, performance, energy or economic result were produced."
+  },
+  "lanes": {
+    "A": "HEP-EVENET-002 source/runtime/data preflight; no inference reproduction",
+    "B": "Provider-neutral paths maintained; no provider/SDK/target/job",
+    "C": "Public row/size/column metadata only; no local memory or transfer measurement",
+    "D": "No device/chip/process evidence; A100 is source-reported training hardware",
+    "E": "No Pangola/material/bio-oil/fusion/cooling measurement",
+    "F": "No accepted-task latency/throughput/energy/cost or financing measurement",
+    "G": "D/G co-design maintained; no process/yield/tool/factory evidence",
+    "H": "Source trail extended; KPM, six-language plans and AI-agent/funding context preserved"
+  },
+  "foundational": {
+    "FND_001_to_006": "No new measurement, primitive validation or physical mechanism",
+    "EQN_001_to_006": "No equation promoted; discovery/falsification/replication pipeline unchanged"
+  },
+  "invariants": {
+    "INV_029": "No one-phone service/physical-compression/energy/lifecycle-cost gate passed",
+    "INV_030": "No Pangola functional substitution or critical-material reduction",
+    "INV_031": "No accepted biomass liquid fuel or commercial cost result",
+    "INV_032": "No net reliable delivered fusion electricity",
+    "INV_033": "No lower principal, absolute interest, project WACC or economy-wide rate measured",
+    "INV_034": "Preserved; foundational research evidence-gated",
+    "INV_035": "Preserved; AI equations remain hypotheses pending full validation"
+  },
+  "preserved": {
+    "root_directives": [
+      "00",
+      "00A",
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ],
+    "strategic_model": "docs/KANUSANAN_PONGPANAN_MODEL.md",
+    "strategic_references": "STRATEGIC_PLAN_REFERENCES.md",
+    "languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ],
+    "legacy_lane_I": "Preserved as legacy; operational lanes remain A-H"
+  },
+  "moonshots": {
+    "INV_025_026_027": "Preserved",
+    "gpu_100000000": "Goal only; no new evidence",
+    "universal_100000000_unit": "Goal only; subsystem-specific equivalent-useful-output contracts remain mandatory",
+    "hilbert_dimension_is_readable_classical_memory": false
+  },
+  "ci": {
+    "starting_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
+    "starting_head_workflow_runs": "NO_RUNS_RETURNED_BY_AVAILABLE_PR_FILTERED_ENDPOINT",
+    "conclusion": "UNVERIFIED_NOT_GREEN",
+    "paid_qpu_authorized": false
+  },
+  "sync": {
+    "readme_updated": true,
+    "integration_hub_updated": true,
+    "cold_start_manifest_updated": true,
+    "worklog_updated": false,
+    "research_gaps_aggregate_updated": false,
+    "focused_gap_published": true,
+    "aggregate_sync_debt": "OPEN; large append-only files not overwritten from partial snapshots"
+  },
+  "next_gate": "Pin checkpoint and dataset revisions/licenses/file hashes; reconcile data-size units; build a clean Python 3.12 lock; reproduce one bounded paper-defined inference task with group-disjoint holdouts; then matched CPU/GPU/NPU baselines and full cost per accepted analysis."
+}

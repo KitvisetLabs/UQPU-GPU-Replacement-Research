@@ -1,5 +1,17 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — EveNet dependency and data-provenance preflight
+
+- [Batch 139](../docs/BATCH_139_EVENET_DEPENDENCY_AND_DATA_PROVENANCE_PREFLIGHT.md)
+- [Lane A preflight contract](../research_lanes/A_quantum_programming_runtime/EVENET_REPRODUCTION_PREFLIGHT_CONTRACT_2026-10-30.md)
+- [Focused gap](../docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md)
+- [Eight-lane cycle report](DAILY_CYCLE_2026-10-30_EVENET_ASSET_PREFLIGHT.md)
+- [Machine-readable record](INT-20261030-EVENET-ASSET-PREFLIGHT.json)
+
+The pinned code repository declares MIT, but its pyproject dependency list is empty while requirements.txt pins the runtime. The current Hugging Face dataset card reports 541,248,429 rows, 193 GB and 1,100 columns; checkpoint revision/license and dataset shard hashes remain unverified. No local download, inference, benchmark, QPU job or economic result was produced.
+
+**Next gate:** verify checkpoint/data revisions, individual licenses and SHA-256 values; build a clean Python 3.12 lock; reproduce one bounded paper-defined task before CPU/GPU/NPU comparison.
+
 ## Latest integrated delta — 2026-10-30 — EVENET HEP foundation-model workload
 
 - [Eight-lane cycle report](DAILY_CYCLE_2026-10-30_EVENET_HEP_FOUNDATION_MODEL.md)
