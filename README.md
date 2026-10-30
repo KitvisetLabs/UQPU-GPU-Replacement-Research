@@ -909,3 +909,6 @@ The current cycle is [the matched control / quantum-speed-limit contract](integr
 
 
 - Batch 139 metadata repair (2026-10-30T01:15:43Z): machine-readable record aligned to `uqpu.integration.v1` with both `id` and `integration_id`, source pins and explicit A–H/FND/EQN/INV/CI fields. This is schema alignment only, not a new scientific result.
+
+
+- Batch numbering and CI reconciliation (2026-10-30T01:15:43Z): Batch 139 is the newest numbered batch committed on main (commit [e9fba347](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e9fba347a4deb39b24a40fb1d05e32774296b905)); Batch 138 remains draft/open in PR #152. Latest schema-sync head [010d8554](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/010d8554ec4afb8b6882e426fa7b44999a1b59c5) has cold-start run [#1384 queued](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984834762) and core run [#2104 queued](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984834648). Earlier Batch 139 cold-start #1382 passed; its core #2102 unit matrix passed on Python 3.10/3.11/3.12 while extended jobs remained in progress.

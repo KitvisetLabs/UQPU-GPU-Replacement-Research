@@ -236,3 +236,8 @@ For [source commit e9fba347a4de](https://github.com/KitvisetLabs/UQPU-GPU-Replac
 ## Batch 139 machine-record schema alignment
 
 The EveNet asset-preflight integration record now follows `uqpu.integration.v1` and includes both `id` and `integration_id`, explicit source pins, A–H/foundational/invariant state and CI provenance. No new reproduction or technology claim is added.
+
+
+## Batch 139 canonical batch and latest CI reconciliation
+
+Batch 139 is now the newest numbered batch committed on main at [e9fba347](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e9fba347a4deb39b24a40fb1d05e32774296b905); Batch 138 remains draft/open in PR #152. For the later schema-sync head [010d8554](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/010d8554ec4afb8b6882e426fa7b44999a1b59c5), cold-start run #1384 and core run #2104 are queued. The earlier Batch 139 head passed cold-start #1382 and its Python 3.10/3.11/3.12 unit matrix, while extended core jobs remained in progress. No full-green claim is made for the latest head.

@@ -6,7 +6,7 @@
   "cycle_date": "2026-10-30",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
-  "starting_head": "d8c012e79eb0d6c9d0d9975493cd8c4799be9109",
+  "starting_head": "a252aa0a7a28d6cb6fc2201c225920762caef871",
   "newest_committed_batch_at_start": 137,
   "batch_138_status": "DRAFT_OPEN_PR_152_NOT_MERGED",
   "primary_work_item": {
@@ -159,7 +159,7 @@
   "ci": {
     "starting_head_combined_status_contexts": 0,
     "starting_head_pr_triggered_workflow_runs": 0,
-    "interpretation": "PARTIAL_NOT_GREEN: cold-start passed; core matrix in progress",
+    "interpretation": "UNVERIFIED_AT_START; post-commit checks are recorded separately and latest head remains pending",
     "cold_start_run": {
       "run_number": 1383,
       "run_id": 40984698133,
@@ -181,7 +181,50 @@
       "python_3_12": "success"
     },
     "final_head_check_required": true,
-    "paid_qpu_authorized": false
+    "paid_qpu_authorized": false,
+    "batch_139_commit": {
+      "sha": "e9fba347a4deb39b24a40fb1d05e32774296b905",
+      "cold_start": {
+        "run_number": 1382,
+        "run_id": 40984550656,
+        "status": "success"
+      },
+      "core": {
+        "run_number": 2102,
+        "run_id": 40984550619,
+        "status": "in_progress",
+        "python_3_10": "success",
+        "python_3_11": "success",
+        "python_3_12": "success",
+        "extended_jobs": "in_progress"
+      }
+    },
+    "metadata_correction_commit": {
+      "sha": "d8c012e79eb0d6c9d0d9975493cd8c4799be9109",
+      "cold_start": {
+        "run_number": 1383,
+        "run_id": 40984698133,
+        "status": "success"
+      },
+      "core": {
+        "run_number": 2103,
+        "run_id": 40984698009,
+        "status": "in_progress"
+      }
+    },
+    "schema_alignment_commit": {
+      "sha": "010d8554ec4afb8b6882e426fa7b44999a1b59c5",
+      "cold_start": {
+        "run_number": 1384,
+        "run_id": 40984834762,
+        "status": "queued"
+      },
+      "core": {
+        "run_number": 2104,
+        "run_id": 40984834648,
+        "status": "queued"
+      }
+    }
   },
   "artifacts": {
     "batch": "docs/BATCH_139_EVENET_DEPENDENCY_AND_DATA_PROVENANCE_PREFLIGHT.md",
@@ -193,5 +236,8 @@
   "sync_debt": "README, integration hub and cold-start manifest updated. WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots; focused gap is canonical and aggregate synchronization remains open. PR #152 remains draft/open and PR #153 remains open/unmerged.",
   "paid_qpu_job_submitted": false,
   "mission_advantage_claimed": false,
-  "next_highest_value_gate": "Pin checkpoint and dataset revisions, individual licenses, file inventory and SHA-256; reconcile 180 GB versus 193 GB; build a clean Python 3.12 lock; reproduce one bounded paper-defined inference task with group-disjoint holdouts; then matched CPU/GPU/NPU baselines and complete cost per accepted analysis."
+  "next_highest_value_gate": "Pin checkpoint and dataset revisions, individual licenses, file inventory and SHA-256; reconcile 180 GB versus 193 GB; build a clean Python 3.12 lock; reproduce one bounded paper-defined inference task with group-disjoint holdouts; then matched CPU/GPU/NPU baselines and complete cost per accepted analysis.",
+  "newest_committed_batch_after_cycle": 139,
+  "batch_139_status": "COMMITTED_ON_MAIN",
+  "batch_139_main_commit": "e9fba347a4deb39b24a40fb1d05e32774296b905"
 }
