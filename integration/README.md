@@ -1,5 +1,12 @@
 # Cross-Lane Integration Hub
 
+## Pending-main source PR #158 — 2026-10-30
+
+- [Source PR #158](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/158)
+- [Pending-main synchronization record](PENDING_MAIN_SYNC_PR158_2026-10-30.md)
+
+The source branch contains FEML, AgenticSciML and stochastic fusion-cost literature watches, focused gaps, Lane D transfer contract and an A–H integration record. It is draft/open/unmerged; main exact-head CI remains unverified. Batch 144 remains the newest numbered batch on main; Batch 145 is already pending in PR #156.
+
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
 
 - [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)
