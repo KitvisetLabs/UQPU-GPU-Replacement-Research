@@ -1,5 +1,16 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
+
+- [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)
+- [Literature watch](../docs/literature_watch/2026-10-30-nonequilibrium-thermodynamics-and-equation-discovery.md)
+- [Lane A immutable asset manifest](../research_lanes/A_quantum_programming_runtime/EVENET_ASSET_PIN_MANIFEST_2026-10-30.json)
+- [Focused EveNet gap](../docs/RESEARCH_GAP_EVENET_ASSET_AND_RUNTIME_REPRODUCTION_2026-10-30.md)
+- [Machine-readable record](INT-20261030-EVENET-ASSET-FND001.json)
+
+Lane A now has source-level pins for the EveNet code/model repositories, two candidate checkpoints and one pretraining shard. The SHA-256 values are publisher-hosted Xet/Git-LFS metadata only; no local download, rehash, clean install or inference was run. The literature watch adds the feedback-shifted Landauer experiment, quantum TUR preprint, scoped photonic no-go, formal proof-discovery workflow, HDSAI constitutive method, pyrolysis TEA meta-analysis and function-amplitude state preparation. No physical law, QPU advantage, Pangola substitution, accepted fuel, net fusion electricity, WACC reduction or Data-Center-to-One-Phone milestone is claimed.
+
+
 ## Latest integrated delta — 2026-10-30 — fusion maintenance and R&D finance
 
 - [Batch 140](../docs/BATCH_140_FUSION_MAINTENANCE_AND_RD_FINANCE_FRONTIER.md)
