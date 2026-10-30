@@ -263,3 +263,17 @@ The EveNet asset-preflight integration record now follows `uqpu.integration.v1` 
 ## Batch 139 canonical batch and latest CI reconciliation
 
 Batch 139 is now the newest numbered batch committed on main at [e9fba347](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e9fba347a4deb39b24a40fb1d05e32774296b905); Batch 138 remains draft/open in PR #152. For the later schema-sync head [010d8554](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/010d8554ec4afb8b6882e426fa7b44999a1b59c5), cold-start run #1384 and core run #2104 are queued. The earlier Batch 139 head passed cold-start #1382 and its Python 3.10/3.11/3.12 unit matrix, while extended core jobs remained in progress. No full-green claim is made for the latest head.
+
+
+## Latest integrated delta — 2026-10-30 — Batch 142 Neural-DFEM constitutive discovery
+
+- [Batch 142](../docs/BATCH_142_NEURAL_DFEM_CONSTITUTIVE_DISCOVERY_AND_HANDOFF_SYNC.md)
+- [Literature watch](../docs/literature_watch/2026-10-30-neural-dfem-structure-preserving-constitutive-discovery.md)
+- [Focused gap](../docs/RESEARCH_GAP_NEURAL_DFEM_PANGOLA_MATERIAL_TRANSFER_2026-10-30.md)
+- [Lane D contract](../research_lanes/D_device_chip_fabrication_packaging/NEURAL_DFEM_CONSTITUTIVE_MODEL_TRANSFER_CONTRACT_2026-10-30.md)
+- [Daily A–H report](DAILY_CYCLE_2026-10-30_NEURAL_DFEM_AND_HANDOFF_SYNC.md)
+- [Machine-readable record](INT-20261030-NEURAL-DFEM-HANDOFF.json)
+
+Regazzoni's peer-reviewed Neural-DFEM method couples differentiable finite elements to a structure-preserving hyperelastic constitutive model. Its reported validation is synthetic and same-solver; it is limited to isotropic path-independent hyperelasticity and real experimental validation remains open. The source repository's declared BSD-3-Clause license and legacy environment were inspected, but no immutable upstream commit, local source hash, installation or reproduction was completed. The Lane D contract blocks Pangola transfer until actual material class, coupon measurements, independent solver/mesh validation and the target function are established. No material substitution, device, new-law or economic claim is made.
+
+The canonical cold-start handoff is updated to Batch 142. WORKLOG.md and RESEARCH_GAPS.md remain untouched to protect large append-only history; focused gap synchronization debt is recorded. Current-head exact CI remains unverified.
