@@ -313,7 +313,19 @@
     "pr154_core_run": 2190,
     "pr154_core_run_id": 41013193779,
     "pr154_jobs": "15/15 SUCCESS",
-    "cold_start_exact_head": "NOT_EXPOSED_BY_AVAILABLE_WORKFLOW_QUERY"
+    "cold_start_exact_head": "NOT_EXPOSED_BY_AVAILABLE_WORKFLOW_QUERY",
+    "pr158": {
+      "head_sha": "f9065243c0cebbf76f201f842623161824273448",
+      "run_number": 2284,
+      "run_id": 41032445904,
+      "status": "queued",
+      "jobs": "3/3 queued"
+    },
+    "pr159": {
+      "head_sha": "b050a309bce56b17d8a099c942b569f7dc53aa22",
+      "run_status": "not_exposed",
+      "cold_start": "not_exposed"
+    }
   },
   "next_gates": [
     "A-Lane: block v1 test-objective adaptation; validate/review/merge PR156 v2 before any held-out QAOA run",
@@ -326,7 +338,9 @@
     "status": "PENDING_MAIN",
     "source_branch": "research/2026-10-30-feml-agentic-sciml-cross-lane",
     "merge_performed": false,
-    "canonical_main_modified": false
+    "canonical_main_modified": false,
+    "source_head_at_last_observation": "f9065243c0cebbf76f201f842623161824273448",
+    "pending_main_summary_pr": 159
   },
   "lane_a_holdout_integrity": {
     "main_v1_manifest": "BLOCKED_FOR_STRICT_HELDOUT_GENERALIZATION",
@@ -347,5 +361,45 @@
     "cold_start": "NOT_EXPOSED",
     "merge_status": "OPEN_DRAFT_UNMERGED",
     "execution_blocked_until": "v2 exact-head core+cold-start validation, review and canonical merge"
-  }
+  },
+  "parallel_pending_prs": [
+    {
+      "number": 154,
+      "title": "2026-10-30: equation-discovery and neural-material hyperreduction watch",
+      "head_sha": "3b11949c517631df77ac893bbaa189a35e108971",
+      "core_run": {
+        "number": 2190,
+        "run_id": 41013193779,
+        "conclusion": "success",
+        "jobs": "15/15"
+      },
+      "literature": [
+        "SRHarness v2",
+        "Holthusen adaptive POD/ECSW adjoint hyperreduction",
+        "GINNGER",
+        "Shan and Zhang physics-constrained symbolic regression",
+        "supercritical-water liquefaction comparator",
+        "R&D credit-supply stress"
+      ],
+      "state": "OPEN_UNMERGED"
+    },
+    {
+      "number": 156,
+      "title": "Batch 145: QAOA v2 holdout integrity and cross-lane research",
+      "head_sha": "20ee610448e2c0cacf4509249d4d0377a56ec120",
+      "core_run": {
+        "number": 2252,
+        "run_id": 41024469294,
+        "conclusion": "success",
+        "jobs": "15/15"
+      },
+      "literature": [
+        "QSL",
+        "biomass HTL",
+        "diamond microchiplet",
+        "Lane H evidence-gated capital allocation"
+      ],
+      "state": "OPEN_DRAFT_UNMERGED"
+    }
+  ]
 }
