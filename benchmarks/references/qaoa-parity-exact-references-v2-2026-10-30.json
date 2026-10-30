@@ -1,7 +1,7 @@
 {
   "schema": "uqpu-qaoa-parity-exact-reference-v2",
   "workload_contract_id": "SIGNED-MAXCUT-PARITY-QAOA-001",
-  "manifest_sha256": "d08b57d6bd05145766004618fa9cb7731e497938628e01b581ad8abf5c472e3d",
+  "manifest_sha256": "4eaf5fcb3f12ad09207bd8a4f014d0372cb7e3f0fa59375a1f83dd7ddf8bcb9d",
   "certificates": [
     {
       "instance_id": "train-star5",
