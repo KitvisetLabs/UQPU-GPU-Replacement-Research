@@ -22,3 +22,8 @@ The [planar qLDPC boundary gap](../../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDA
 ## Agentic D/G process co-design input — 2026-10-30
 
 The [VIBRATO literature watch](../../docs/literature_watch/2026-10-30-agentic-differentiable-detector-codesign.md), [focused gap](../../docs/RESEARCH_GAP_DG_AGENTIC_DETECTOR_COSIGN_REPRODUCTION_2026-10-30.md) and [Lane D transfer contract](../D_device_chip_fabrication_packaging/AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md) add a method-level candidate for coupling device geometry, process windows, metrology and downstream performance. No manufacturing equipment, yield or factory result is claimed.
+
+
+## AI-driven experiment-design framework — 2026-10-30
+
+The [Nature review watch](../../docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md) supplies a method-level framework for integrating process/equipment variables, validated simulators, multiobjective factory metrics and constrained search. No factory or yield result is claimed.
