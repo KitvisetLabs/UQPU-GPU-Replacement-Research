@@ -4,9 +4,12 @@
 
 - [Pending-main summary for source PR #154](../integration/PENDING_EQUATION_DISCOVERY_HYPERREDUCTION_PR154_2026-10-30.md)
 - [Source PR #154](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/154)
-- [Literature watch](../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md) · [Lane D transfer contract](../research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md) · [A–H integration report](../integration/DAILY_CYCLE_2026-10-30_AGENTIC_EQUATION_DISCOVERY_AND_HYPERREDUCTION.md)
+- [Equation-discovery/material watch](../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md) · [BIO-001/FIN-001 watch](../docs/literature_watch/2026-10-30-biomass-scwl-and-rd-credit-supply.md)
+- [Lane D contract](../research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md) · [BIO-001 contract](../research_lanes/E_materials_energy_cooling_infrastructure/BIO001_SCWL_TWO_STEP_CONTROL_CONTRACT_2026-10-30.md) · [FIN-001 contract](../research_lanes/F_economics_benchmarks_evidence_integration/FIN001_CREDIT_SUPPLY_STRESS_CONTRACT_2026-10-30.md)
+- [BIO-001 gap](../docs/RESEARCH_GAP_BIO001_SCWL_TWO_STEP_2026-10-30.md) · [FIN-001 gap](../docs/RESEARCH_GAP_FIN001_CREDIT_SUPPLY_STRESS_2026-10-30.md)
+- [A–H integration report](../integration/DAILY_CYCLE_2026-10-30_AGENTIC_EQUATION_DISCOVERY_AND_HYPERREDUCTION.md) · [D/E/F machine records](../integration/INT-20261030-NEURAL-MATERIAL-EQNDISCOVERY.json) / [BIO-FIN](../integration/INT-20261030-BIOFIN-SCWL-CREDIT.json)
 
-This summary is a separate pending-main PR based on `41fac3953773ae0016a09539be57c3ed6b379771`. Source PR #154 is open/unmerged. Its current source head is 9e9393eefb6f0572d547d76f885433ffb3e724b3; no source result is asserted to exist on main.
+This summary is a separate pending-main PR based on `41fac3953773ae0016a09539be57c3ed6b379771`. Source PR #154 is open/unmerged. Its current source head is 3b11949c517631df77ac893bbaa189a35e108971; no source result is asserted to exist on main.
 
 
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
