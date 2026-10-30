@@ -1,0 +1,94 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-BIOFIN-SCWL-CREDIT-001",
+  "integration_id": "INT-20261030-BIOFIN-SCWL-CREDIT-001",
+  "title": "Two-step SCWL process comparator and credit-supply stress integration",
+  "date": "2026-10-30",
+  "primary_owner": "Lane E",
+  "lanes": [
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "upstream_cross_cutting": [
+    "INV-030",
+    "INV-031",
+    "INV-033"
+  ],
+  "stable_work_items": [
+    "BIO-001",
+    "FIN-001"
+  ],
+  "source_main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "source_branch": "research/2026-10-30-equation-discovery-material-hyperreduction",
+  "source_pr": 154,
+  "status": "PROPOSED",
+  "evidence_class": "EXTERNAL_PEER_REVIEWED_PAPER_METADATA_AND_ABSTRACT_ONLY",
+  "inputs": [
+    {
+      "path": "docs/literature_watch/2026-10-30-biomass-scwl-and-rd-credit-supply.md",
+      "source_commit": "27512d1bc7ac1c521f08d71f1ac7d318aa99887a"
+    },
+    {
+      "path": "research_lanes/E_materials_energy_cooling_infrastructure/BIO001_SCWL_TWO_STEP_CONTROL_CONTRACT_2026-10-30.md",
+      "source_commit": "2ec7f4d1905e4d4310349b2b24540572a5cb7c36"
+    },
+    {
+      "path": "research_lanes/F_economics_benchmarks_evidence_integration/FIN001_CREDIT_SUPPLY_STRESS_CONTRACT_2026-10-30.md",
+      "source_commit": "09e9719aafbfe0db45a00480cccc309c6eb990a7"
+    }
+  ],
+  "hypothesis": "A matched one-step versus two-step SCWL comparison may reveal a Pangola-specific accepted-liquid benefit, while separate credit-supply and interest-rate stress accounting may improve FIN-001 milestone financing decisions.",
+  "mechanisms": [
+    "Subcritical-water pretreatment followed by supercritical liquefaction, compared against a matched one-step control",
+    "Separate interest-rate shocks from credit-availability/drawdown/covenant shocks in milestone tranche accounting"
+  ],
+  "baseline": "Matched one-step SCWL Pangola batch and baseline project-financing ledger using actual counterparty terms when available.",
+  "combined_output_contract": "Accepted liquid-fuel quality and MJ per dry feedstock with complete mass/energy/cost closure; for finance, same milestone plan with principal, rate and credit availability varied independently.",
+  "expected_gain": "Potential process-design information and improved finance-risk decomposition; no gain measured.",
+  "measured_gain": null,
+  "resource_accounting": [
+    "feedstock preparation",
+    "pretreatment and supercritical utilities",
+    "hydrogen and catalyst use",
+    "water recycle and wastewater",
+    "CAPEX/OPEX/logistics",
+    "working capital",
+    "financed principal",
+    "interest/fees",
+    "drawdown timing",
+    "time-to-evidence"
+  ],
+  "negative_effects": [
+    "two-step pretreatment may add energy/water costs",
+    "feedstock composition may dominate results",
+    "bio-crude yield is not accepted fuel yield",
+    "India empirical finance results do not transfer directly to Thailand or this project"
+  ],
+  "uncertainty": "High: publisher full texts/supplements inaccessible in this cycle; source data and project-specific experiments absent.",
+  "falsifier": "Reject two-step SCWL if accepted-fuel yield/quality or total cost does not improve under matched boundaries; reject finance benefit if it double-counts principal or infers lower WACC without counterparty evidence.",
+  "rollback": "Keep current one-step process as baseline and preserve separate rate/credit scenarios without promoting them to forecasts.",
+  "next_experiments": [
+    "Retrieve full ACS Energy & Fuels article and supplement; pin methods/data/licenses.",
+    "Reproduce source reference case where possible, then run randomized matched Pangola one-step/two-step batches.",
+    "Close mass, carbon and energy balances through final accepted fuel.",
+    "Retrieve full Emerging Markets Review tables and identification details.",
+    "Add rate-only, credit-only and joint stress scenarios to FIN-001 using documented counterparty terms."
+  ],
+  "invariant_impacts": [
+    "INV-030",
+    "INV-031",
+    "INV-033"
+  ],
+  "nonclaims": [
+    "No Pangola yield or accepted fuel",
+    "No commercial bio-oil cost",
+    "No project interest saving or WACC reduction",
+    "No economy-wide interest-rate claim",
+    "No new physical law or QPU advantage"
+  ],
+  "sync_status": "PENDING_MAIN",
+  "source_pr_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/154"
+}

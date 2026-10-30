@@ -2409,3 +2409,29 @@ Fresh finance-specific surveillance found Pan et al., “One size doesn't fit al
 ## Batch 144 supplemental literature update — BIO-001 HTL–AD–HDO (2026-10-30)
 
 Fresh biomass surveillance found Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), article 100080, DOI 10.1016/j.cejgas.2026.100080. Added a literature watch and updated the BIO-001 transfer gap/accepted-liquid contract, Batch 144 report, integration index, README and cold-start handoff. The paper models potato–okra HTL–AD–HDO; it is not Pangola data. Its reported 36.9 wt% optimized bio-crude yield, 31.6 wt% integrated stream-table value, HTL ERR 66.58%, integrated energy claims and NPV values require source/supplement reconstruction. In particular, deterministic NPV near US$11.24M versus a reported Monte Carlo mean near US$2.79M must be reconciled. No accepted Pangola liquid, commercial cost or net-energy claim is promoted.
+
+
+## 2026-10-30 — fresh equation-discovery and neural-material hyperreduction surveillance
+
+Main baseline at cycle start: `41fac3953773ae0016a09539be57c3ed6b379771`; newest numbered main batch: Batch 144. A–H, FND/EQN, root 00–06 directives, strategic references, cold-start principle, commit-sync policy and cross-lane integration protocol were reviewed. Fresh primary-source surveillance found four previously unindexed preprints: SRHarness v2 (arXiv:2609.35501v2, 2026-10-24), adaptive POD/ECSW hyperreduction for neural-material FE updating (arXiv:2610.31322v1, 2026-10-22), GINNGER thermodynamic-generator discovery for rheology (arXiv:2610.23352, 2026-10-16), and physics-constrained symbolic regression for ZPG wall turbulence (arXiv:2610.35276v1, 2026-10-26). Detailed source dates, evidence classes, novelty, limitations and falsifiable UQPU follow-ups are in [the literature watch](../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md).
+
+Lane D added MAT-NEURAL-HYPERREDUCTION-001, a reproduction/transfer contract covering full-order and canary cost, localization, identifiability, material-class boundaries, independent mesh/solver tests and lifecycle cost. Lane A's QAOA manifest was audited: it calls the test split final-evaluation-only while allowing per-instance variational-angle optimization on test objectives. This is test-objective adaptation and invalidates a held-out-generalization interpretation. Before any optimizer run, freeze parameters using train/validation only or separate adaptation from independent evaluation shots and label the result accordingly.
+
+The A–H all-pairs scan (28 pairs) and selected A+C+F, A+D+E+F+G, E+F+H and FND/EQN→A–H integration edges are recorded in [the daily integration report](../integration/DAILY_CYCLE_2026-10-30_AGENTIC_EQUATION_DISCOVERY_AND_HYPERREDUCTION.md). No combined empirical integration, source reproduction, QAOA run, paid QPU job, Pangola coupon, accepted-fuel test, fusion experiment or finance transaction was performed. All source claims remain external literature; no physical law or project advantage is promoted.
+
+INV-029–033 and BIO-001/FUS-001/FIN-001 remain unadvanced empirically. INV-034/035 gain candidate methods only; present physics remains binding. INV-025/026/027 and the Data-Center-to-One-Phone mission remain goals. Six-language strategic links and the Kanusanan Pongpanna Model remain unchanged.
+
+CI: main exact-head 41fac395 had no combined-status contexts exposed. Prior core #2140 (15/15 returned jobs successful) and cold-start #1430 (successful) belong to d3d41796 and do not validate current main. Source branch `research/2026-10-30-equation-discovery-material-hyperreduction` contains commits f8e4bda, 87131c1 and 693ecdf; all are pending PR/main sync.
+
+Research-Sync: pending-main
+
+
+## 2026-10-30 — supplementary BIO-001 / FIN-001 literature surveillance
+
+Fresh public-source search found two peer-reviewed 2026 articles not yet indexed on starting main. *Energy & Fuels* 40(29), 15858–15879 (2026), DOI 10.1021/acs.energyfuels.6c01592, compares one-step and two-step supercritical-water liquefaction across biomass composition groups; the two-step path uses 30-minute subcritical-water pretreatment. Publisher full text/supplement was inaccessible, so no numerical yields/costs were extracted. A matched Pangola experiment and full accepted-liquid/mass/energy/lifecycle-cost gate is specified in [BIO-001 contract](../research_lanes/E_materials_energy_cooling_infrastructure/BIO001_SCWL_TWO_STEP_CONTROL_CONTRACT_2026-10-30.md) and [focused gap](../docs/RESEARCH_GAP_BIO001_SCWL_TWO_STEP_2026-10-30.md).
+
+Pragati Priya, *Emerging Markets Review* (2026), DOI 10.1016/j.ememar.2026.101479, uses Indian firm-level data 2002–2024; the abstract reports R&D-intensive firms are more sensitive to monetary tightening and bank credit-supply shocks. Full tables were inaccessible; no coefficient is transferred to UQPU or Thailand. A separate rate-only/credit-only/joint stress ledger is specified in [FIN-001 contract](../research_lanes/F_economics_benchmarks_evidence_integration/FIN001_CREDIT_SUPPLY_STRESS_CONTRACT_2026-10-30.md) and [focused gap](../docs/RESEARCH_GAP_FIN001_CREDIT_SUPPLY_STRESS_2026-10-30.md).
+
+The [BIO-001/FIN-001 literature watch](../docs/literature_watch/2026-10-30-biomass-scwl-and-rd-credit-supply.md) and [machine-readable integration record](../integration/INT-20261030-BIOFIN-SCWL-CREDIT.json) are on pending source branch PR #154. No Pangola yield, accepted fuel, commercial cost, project principal/interest saving, lower WACC or macro interest-rate effect is claimed. Source paper retrieval and independent reproduction remain open.
+
+Research-Sync: pending-main

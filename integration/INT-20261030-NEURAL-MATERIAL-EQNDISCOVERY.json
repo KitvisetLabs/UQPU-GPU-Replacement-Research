@@ -1,0 +1,111 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-NEURAL-MATERIAL-EQNDISCOVERY-001",
+  "integration_id": "INT-20261030-NEURAL-MATERIAL-EQNDISCOVERY-001",
+  "title": "Agentic equation-discovery runtime and hyperreduced constitutive-model transfer",
+  "date": "2026-10-30",
+  "primary_owner": "Lane D",
+  "lanes": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "upstream_cross_cutting": [
+    "FND-001",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "source_main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "source_branch": "research/2026-10-30-equation-discovery-material-hyperreduction",
+  "source_pr": 154,
+  "status": "PROPOSED",
+  "evidence_class": "LITERATURE_ONLY",
+  "inputs": [
+    {
+      "path": "docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md",
+      "source_commit": "f8e4bda68553d506c77f0a448a5985c7268c21b4"
+    },
+    {
+      "path": "research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md",
+      "source_commit": "87131c1e45b55abb73d1fd146dcaa0dc98c1afb2"
+    },
+    {
+      "path": "integration/DAILY_CYCLE_2026-10-30_AGENTIC_EQUATION_DISCOVERY_AND_HYPERREDUCTION.md",
+      "source_commit": "693ecdf58ccccc3e8df6d8f0dd205c9faad757eb"
+    }
+  ],
+  "hypothesis": "A persistent, typed scientific-evidence runtime plus structure-preserving reduced-order inverse material identification may reduce search/calibration cost while preserving physical constraints and full-order predictive quality.",
+  "mechanism": "Use a shared evaluator and persistent candidate provenance for equation search; use adaptive POD/ECSW and adjoint sensitivities for inverse FE model updating, with full-order canaries and held-out material/load-path checks.",
+  "interface_version": "uqpu.integration.v1",
+  "physical_units_and_constraints": [
+    "explicit variable definitions and units",
+    "dimensional consistency",
+    "material objectivity",
+    "polyconvexity/coercivity where applicable",
+    "energy and entropy constraints for GENERIC models",
+    "full-order residual and reaction-force balance",
+    "held-out deformation-state coverage"
+  ],
+  "baseline": "Matched full-order FE identification and existing equation_discovery.py workflow under pinned datasets, solver, objective, hardware, precision and resource budgets.",
+  "combined_output_contract": "Same accepted equation/material prediction, same boundary conditions, same held-out specimens/load paths and same error tolerances.",
+  "expected_gain": "Lower total inverse-model/search cost without loss of held-out prediction quality; not yet measured by UQPU.",
+  "measured_gain": null,
+  "resource_accounting": [
+    "full-order bootstrap/canary/rebuild solves",
+    "reduced solves and adjoint solves",
+    "CPU/GPU model and precision",
+    "wall time",
+    "peak RAM",
+    "snapshot/archive bytes and I/O",
+    "energy where measurable",
+    "API/token costs for agentic search",
+    "cost per accepted model/prediction"
+  ],
+  "negative_effects": [
+    "localization may reduce reduced-basis efficiency",
+    "full-order checks may dominate wall time",
+    "reaction-force-only data may be non-identifying",
+    "anisotropy and inelasticity are outside demonstrated source scope",
+    "external benchmark results do not transfer directly to Pangola"
+  ],
+  "uncertainty": "High: external preprints only; no source implementation reproduction, project data, coupon tests or independent replication.",
+  "falsifier": "Reject if full-order checks erase total speed gain, held-out mesh/load-path errors exceed predeclared limits, localization causes unstable reduced predictions, or material parameters remain non-identifiable.",
+  "rollback": "Keep the current full-order FE and equation-discovery paths as the reference; disable any reduced model that fails canary or held-out checks.",
+  "next_experiments": [
+    "Pin and reproduce the first experimental case in arXiv:2610.31322 against full-order FE.",
+    "Measure bootstrap, canary, rebuild and final full-order costs separately.",
+    "Run localization negative control, independent mesh/solver and held-out deformation paths.",
+    "Compare persistent candidate/evidence state against equation_discovery.py with identical train/validation/test splits.",
+    "Qualify Pangola coupon material class before any transfer; reject isotropic-hyperelastic assumptions if measured behavior is anisotropic, viscoelastic or inelastic."
+  ],
+  "invariant_impacts": [
+    "INV-030",
+    "INV-034",
+    "INV-035",
+    "INV-025",
+    "INV-026",
+    "INV-027"
+  ],
+  "nonclaims": [
+    "No new physical law",
+    "No Pangola functional substitution",
+    "No accepted bio-oil",
+    "No net fusion electricity",
+    "No WACC or financing reduction",
+    "No QPU advantage",
+    "No Data-Center-to-One-Phone milestone"
+  ],
+  "reviewers": [],
+  "integration_commit": null,
+  "sync_status": "PENDING_MAIN",
+  "source_pr_url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/154"
+}
