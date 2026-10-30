@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
   "priority_lane": "A",
-  "current_frontier": "Batch 145 adds a no-test-objective-adaptation QAOA v2 protocol and hash-bound references, a regression test, FND-003 coherence/imaginary-time QSL literature, microalgae HTL multiobjective optimization, diamond microchiplet foundry fabrication, focused gaps and Lane H Article 010. No QAOA run, UQPU device/material/fuel/fusion/finance result or physical-law promotion.",
+  "current_frontier": "Batch 145 adds a no-test-objective-adaptation QAOA v2 protocol and hash-bound references, a regression test, FND-003 coherence/imaginary-time QSL literature, microalgae HTL multiobjective optimization, diamond microchiplet foundry fabrication, focused gaps and Lane H Article 010. No QAOA run, UQPU device/material/fuel/fusion/finance result or physical-law promotion. Mandatory 28-pair A–H and five selected 3+ lane combinations were screened; only static v2 manifest/reference integrity is checked, with hosted regression test pending.",
   "required_reading": [
     "docs/BATCH_143_PARITY_QAOA_HELDOUT_MANIFEST_AND_REFERENCE_AUDIT.md",
     "docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md",
@@ -290,7 +290,8 @@
     "docs/RESEARCH_GAP_DG_DIAMOND_MICROCHIPLET_TRANSFER_2026-10-30.md",
     "docs/LANE_H_ARTICLE_010_EVIDENCE_GATED_CAPITAL_ALLOCATION.md",
     "integration/DAILY_CYCLE_2026-10-30_QAOA_V2_QSL_HTL_DIAMOND.md",
-    "integration/INT-20261030-QAOA-V2-QSL-HTL-DIAMOND.json"
+    "integration/INT-20261030-QAOA-V2-QSL-HTL-DIAMOND.json",
+    "integration/PAIRWISE_AH_SCREEN_2026-10-30.md"
   ],
   "lanes": {
     "A": {
