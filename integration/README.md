@@ -332,3 +332,18 @@ Pan et al. (Journal of Corporate Finance; early online 2026-10-14; DOI 10.1016/j
 - [Batch 144](../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md)
 
 External potato–okra HTL–AD–HDO process simulation/TEA only; no Pangola transfer or commercial fuel claim. The watch flags yield-basis and deterministic-versus-Monte-Carlo NPV reconciliation before any use.
+
+
+## 2026-10-30 — Batch 145: QAOA holdout integrity and cross-lane literature
+
+- [Batch 145](../docs/BATCH_145_QAOA_PROTOCOL_AND_MULTILANE_LITERATURE_DELTA.md)
+- [V2 no-test-leakage manifest](../benchmarks/manifests/qaoa-parity-heldout-v2-2026-10-30.json) and [exact references](../benchmarks/references/qaoa-parity-exact-references-v2-2026-10-30.json)
+- [Regression test](../software/uqpu-prototype/tests/test_qaoa_parity_no_test_leakage.py) and [focused Lane A gap](../docs/RESEARCH_GAP_A_QAOA_TEST_LEAKAGE_AND_PARAMETER_TRANSFER_2026-10-30.md)
+- [QSL/HTL/diamond literature watch](../docs/literature_watch/2026-10-30-qsl-htl-diamond-multilane.md)
+- [FND-003 gap](../docs/RESEARCH_GAP_FND003_COHERENCE_IMAGINARY_TIME_QSL_2026-10-30.md), [BIO-001 gap](../docs/RESEARCH_GAP_BIO001_HTL_MULTI_OBJECTIVE_TRANSFER_2026-10-30.md), [D/G gap](../docs/RESEARCH_GAP_DG_DIAMOND_MICROCHIPLET_TRANSFER_2026-10-30.md)
+- [Lane H Article 010](../docs/LANE_H_ARTICLE_010_EVIDENCE_GATED_CAPITAL_ALLOCATION.md)
+- [Daily integration](DAILY_CYCLE_2026-10-30_QAOA_V2_QSL_HTL_DIAMOND.md) · [machine record](INT-20261030-QAOA-V2-QSL-HTL-DIAMOND.json)
+
+The v2 contract uses train-only parameter fitting, validation-only selection and frozen test evaluation; exact references are scoring-only. The external QSL, microalgae HTL and diamond-chiplet sources are not UQPU project evidence.
+
+Batch 145 pairwise scan: [all 28 A–H pairs and five 3+ lane combinations](PAIRWISE_AH_SCREEN_2026-10-30.md). This is a candidate/blocked-edge screen; no end-to-end performance integration is claimed.

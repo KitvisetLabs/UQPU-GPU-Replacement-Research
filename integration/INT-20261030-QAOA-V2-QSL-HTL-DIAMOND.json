@@ -1,0 +1,101 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-QAOA-V2-QSL-HTL-DIAMOND",
+  "integration_id": "INT-20261030-QAOA-V2-QSL-HTL-DIAMOND",
+  "created_utc": "2026-10-30T07:12:00Z",
+  "starting_main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "newest_batch_at_start": 144,
+  "batch": 145,
+  "primary_owner": "Lane A",
+  "evidence_owner": "Lane F",
+  "publication_owner": "Lane H",
+  "workload_contract_id": "SIGNED-MAXCUT-PARITY-QAOA-001",
+  "manifest_path": "benchmarks/manifests/qaoa-parity-heldout-v2-2026-10-30.json",
+  "manifest_sha256": "5141575255c9ba9c7479745598f8e875ffc7e70b86bbc8e976e90fd07b063e0a",
+  "reference_path": "benchmarks/references/qaoa-parity-exact-references-v2-2026-10-30.json",
+  "test_path": "software/uqpu-prototype/tests/test_qaoa_parity_no_test_leakage.py",
+  "test_status": "ADDED_NOT_YET_RUN_BY_HOSTED_CI",
+  "evidence_class": "SOFTWARE_CONTRACT + PEER_REVIEWED_EXTERNAL_LITERATURE_ONLY",
+  "lanes": {
+    "A": "v2 train-only parameter fit, validation-only selection, frozen test evaluation; no optimizer run",
+    "B": "provider-neutral routes maintained; no SDK/target/job",
+    "C": "basis/payload formulas only; no physical memory/I/O measurement",
+    "D": "diamond quantum microchiplet foundry process indexed; no UQPU device/process result",
+    "E": "microalgae HTL multiobjective comparator indexed; no Pangola accepted liquid or commercial cost",
+    "F": "evidence/accepted-function/financing contracts maintained; no project cost, energy or financing measurement",
+    "G": "D/G chiplet/foundry co-design gates indexed; no production yield/equipment cost measurement",
+    "H": "evidence-gated capital allocation Article 010 added; multilingual strategic context preserved"
+  },
+  "foundational": {
+    "FND001": "active; no full bit-plus-controller energy measurement",
+    "FND002": "active; output-information lower bounds retained; no readable-memory equivalence",
+    "FND003": "two QSL literature comparators indexed; full-text derivation and matched experiment open",
+    "FND004": "alternative primitives remain hypothesis/theorem gated",
+    "FND005": "QFT/particle scans remain source/provenance gated",
+    "FND006": "mathematics-first invention and proof tooling active",
+    "EQN001_to_006": "active; no candidate promoted to physical law"
+  },
+  "invariants": {
+    "INV029_to_035": "preserved; no mission-level claim promoted",
+    "INV025_026_027": "preserved; 100-million moonshots remain falsifiable goals",
+    "root_directives": "00,00A,01,02,03,04,05,06 present",
+    "multilingual_plans": "Thai, English, Chinese, Japanese, Korean and German links retained"
+  },
+  "literature_delta": [
+    {
+      "id": "FND003-COHERENT-QSL-2026",
+      "doi": "10.1103/rdpr-db6m",
+      "watch": "docs/literature_watch/2026-10-30-qsl-htl-diamond-multilane.md",
+      "evidence": "PEER_REVIEWED_THEORY_ABSTRACT_ONLY"
+    },
+    {
+      "id": "FND003-IMAGINARY-TIME-QSL-2026",
+      "doi": "10.1103/bln8-8xzy",
+      "watch": "docs/literature_watch/2026-10-30-qsl-htl-diamond-multilane.md",
+      "evidence": "PEER_REVIEWED_THEORY_ABSTRACT_ONLY"
+    },
+    {
+      "id": "BIO001-MICROALGAE-HTL-MULTIOBJECTIVE-2026",
+      "doi": "10.1021/acs.iecr.6c00395",
+      "watch": "docs/literature_watch/2026-10-30-qsl-htl-diamond-multilane.md",
+      "evidence": "PEER_REVIEWED_PROCESS_OPTIMIZATION_TEA_EXTERNAL"
+    },
+    {
+      "id": "DG-DIAMOND-MICROCHIPLETS-2026",
+      "doi": "10.1021/acs.nanolett.6c01048",
+      "watch": "docs/literature_watch/2026-10-30-qsl-htl-diamond-multilane.md",
+      "evidence": "PEER_REVIEWED_FABRICATION_DEMONSTRATION_EXTERNAL"
+    }
+  ],
+  "ci_observation": {
+    "starting_main_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
+    "predecessor_sha": "d3d41796f4b3e95217970f3d2dd98e90f19c690f",
+    "predecessor_core_run_number": 2140,
+    "predecessor_core_run_status": "SUCCESS_ALL_15_RETURNED_JOBS",
+    "predecessor_cold_start_run_number": 1430,
+    "predecessor_cold_start_status": "SUCCESS",
+    "current_head_status": "NOT_VERIFIED",
+    "pending_prs": [
+      154,
+      155
+    ]
+  },
+  "nonclaims": [
+    "no QAOA optimizer run or QPU advantage",
+    "no independent SDK validation or target-aware simulation",
+    "no physical RAM/VRAM/HBM/readable-storage result",
+    "no Pangola material substitution or accepted liquid fuel",
+    "no net delivered fusion electricity",
+    "no measured principal, interest, hurdle-rate, WACC or risk-premium reduction",
+    "no new physical law or AI-equation promotion",
+    "no physical Data-Center-to-One-Phone compression"
+  ],
+  "paid_qpu_execution_authorized": false,
+  "hazardous_testing_authorized": false,
+  "next_gate": "Run v2 no-test-leakage test, implement paired direct/parity p=1 runner with train-only parameter fitting and validation-only selection, freeze before test, independently verify SDK/operator/decoder, then target-aware simulation and full accepted-task resource/cost accounting.",
+  "pairwise_screen_path": "integration/PAIRWISE_AH_SCREEN_2026-10-30.md",
+  "pairwise_pairs_reviewed": 28,
+  "three_plus_lane_combinations_reviewed": 5,
+  "tested_integration": "v2 manifest/reference SHA-256 static integrity check passed; hosted regression test not yet observed passing",
+  "integration_blocker": "core CI queued; no independent SDK, target-aware simulation or measured physical resource boundary"
+}

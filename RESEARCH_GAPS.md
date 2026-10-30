@@ -1444,3 +1444,18 @@ Pan et al., *Journal of Corporate Finance* 102, 103099, early online 2026-10-14,
 ## 2026-10-30 — BIO-001 potato–okra HTL–AD–HDO model watch
 
 Added `docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md` for Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), 100080, DOI 10.1016/j.cejgas.2026.100080. This is an external potato–okra process simulation/TEA, not Pangola evidence. Reproduction must reconcile the 36.9 wt% optimized versus 31.6 wt% integrated bio-crude yield bases, HTL-only ERR versus integrated energy recovery, and deterministic NPV (~US$11.24M) versus Monte Carlo mean (~US$2.79M). The source model/supplement and external validation must be independently audited. Pangola transfer requires matched measured feedstock batches, final accepted-liquid quality, complete mass/energy closure, H2/catalyst/utilities, lifecycle costs and non-double-counted coproduct credits. No commercial fuel claim.
+
+
+## 2026-10-30 — Batch 145 focused gaps
+
+- **RG-A-QAOA-TEST-LEAKAGE-001:** v1 allowed test-objective variational-angle optimization while describing test as final evaluation. V1 remains historical; v2 adds train-only fitting, validation-only selection, frozen test evaluation, exact references for scoring only and a regression test. No optimizer run.
+- **RG-FND003-COHERENCE-IMAGINARY-TIME-QSL-001:** peer-reviewed coherence-resolved unitary and imaginary-time QSLs are indexed. Full theorem reconstruction, assumptions, equality conditions, physical-time distinction and matched control experiments remain open.
+- **RG-BIO001-HTL-MULTIOBJECTIVE-TRANSFER-001:** microalgae HTL multiobjective optimization is an external comparator; full paper/SI and response surfaces require reconstruction. No Pangola transfer or accepted liquid.
+- **RG-DG-DIAMOND-MICROCHIPLET-TRANSFER-001:** foundry-mask/microtransfer-printing diamond chiplet demonstration is indexed; process distributions, transfer yield, optical loss, defect/replacement, packaging and cost-per-good-chiplet require source audit and independent measurement.
+
+No gap is closed by literature alone. No QPU, material, fuel, fusion, financing or physical-law claim is promoted.
+
+
+## 2026-10-30 — Batch 145 pairwise integration blockers
+
+All 28 A–H pairs and five selected 3+ lane combinations were screened. A–F is SOFTWARE_CONTRACT_ADDED/CI_PENDING; D–G is a literature-only manufacturing edge; E–F and F–H remain blocked on measured accepted-function and cashflow evidence. A–B/C, A–D/G and B/C/D/F interfaces still need SDK/target, physical state/I/O and device/process measurements. See integration/PAIRWISE_AH_SCREEN_2026-10-30.md for all pairwise unblock tests. No empirical synergy is established.

@@ -93,3 +93,11 @@ The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The 
 - Added `tests/test_qaoa_parity_heldout_mapping.py`: all 10 frozen signed-Max-Cut fixtures, 688 logical assignments, 7,072 physical parity strings, direct-QUBO exact baseline, parity exact certificate, fail-closed decoding and argmax correspondence.
 - Evidence: software contract + model-only exact small-instance reference. No QAOA optimizer, SDK, target-aware simulation, QPU execution or advantage claim.
 - Next: paired direct/parity optimizer/sampler under the frozen equal budgets; validate bit order, operator sign and decoder independently first.
+
+
+## 2026-10-30 — parity-QAOA holdout integrity v2
+
+- [V2 manifest](../../benchmarks/manifests/qaoa-parity-heldout-v2-2026-10-30.json) and [hash-bound exact references](../../benchmarks/references/qaoa-parity-exact-references-v2-2026-10-30.json).
+- [No-test-leakage regression test](../../software/uqpu-prototype/tests/test_qaoa_parity_no_test_leakage.py).
+- [Focused gap](../../docs/RESEARCH_GAP_A_QAOA_TEST_LEAKAGE_AND_PARAMETER_TRANSFER_2026-10-30.md).
+- V1 is retained as historical; v2 prohibits test-objective optimization and per-instance test adaptation. No QAOA optimizer, SDK or QPU run has occurred.

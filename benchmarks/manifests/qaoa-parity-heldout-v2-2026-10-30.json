@@ -1,0 +1,582 @@
+{
+  "schema": "uqpu-qaoa-parity-heldout-manifest-v2",
+  "created_utc": "2026-10-30",
+  "primary_owner": "Lane A",
+  "integration_owner": "Lane F",
+  "workload_contract_id": "SIGNED-MAXCUT-PARITY-QAOA-001",
+  "objective": {
+    "sense": "maximize",
+    "formula": "sum_e w_e * (x_u XOR x_v)",
+    "variables": "x_v in {0,1}",
+    "signed_weights_preserved": true,
+    "edge_order": "canonical lexicographic undirected (u,v), u<v",
+    "acceptance": "valid decoded logical bitstring; score/regret evaluated under exact signed objective",
+    "no_test_optimum_for_selection": true
+  },
+  "splits": {
+    "train": {
+      "purpose": "parameter optimization and method development",
+      "families": [
+        "tree",
+        "cycle"
+      ],
+      "instances": [
+        "train-star5",
+        "train-cycle4",
+        "train-path6",
+        "train-branch6"
+      ]
+    },
+    "validation": {
+      "purpose": "hyperparameter/model selection only",
+      "families": [
+        "grid",
+        "prism",
+        "complete_bipartite"
+      ],
+      "instances": [
+        "validation-grid2x4",
+        "validation-prism6",
+        "validation-k23"
+      ]
+    },
+    "test": {
+      "purpose": "final evaluation only; public reference certificates are for audit and scoring, not parameter or method selection",
+      "families": [
+        "wheel",
+        "complete_minus_matching"
+      ],
+      "instances": [
+        "test-wheel5",
+        "test-wheel6",
+        "test-k6-minus-matching"
+      ]
+    }
+  },
+  "proposed_equal_budget": {
+    "qaoa_layers": 1,
+    "shots_per_instance_per_method_per_repetition": 8192,
+    "optimizer_evaluations_per_instance_per_method_per_repetition": 32,
+    "optimizer_evaluation_scope": "TRAIN_SPLIT_ONLY",
+    "independent_repetitions": 10,
+    "parameter_selection": "Fit one global p=1 parameter vector using train instances only. Validation instances may select among preregistered methods/hyperparameters. Freeze the selected parameter vector before any test evaluation.",
+    "test_use": "Final evaluation only. Test objective values and exact optima are never queried by the optimizer, parameter fitter, method selector or hyperparameter selector.",
+    "per_instance_test_adaptation": false,
+    "test_reference_use": "SCORING_AND_AUDIT_ONLY",
+    "same_target_and_configuration_required": true,
+    "same_calibration_snapshot_and_pricing_snapshot_required_for_real_qpu": true,
+    "paid_qpu_execution_authorized": false
+  },
+  "instances": [
+    {
+      "id": "train-star5",
+      "split": "train",
+      "family": "tree",
+      "vertex_count": 5,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "weights": [
+        2,
+        -1,
+        3,
+        -2
+      ]
+    },
+    {
+      "id": "train-cycle4",
+      "split": "train",
+      "family": "cycle",
+      "vertex_count": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "weights": [
+        1,
+        0.5,
+        -2,
+        1.5
+      ]
+    },
+    {
+      "id": "train-path6",
+      "split": "train",
+      "family": "tree",
+      "vertex_count": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "weights": [
+        -1,
+        2,
+        1,
+        -2,
+        3
+      ]
+    },
+    {
+      "id": "train-branch6",
+      "split": "train",
+      "family": "tree",
+      "vertex_count": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "weights": [
+        1.2,
+        -0.7,
+        2.1,
+        -1.1,
+        0.9
+      ]
+    },
+    {
+      "id": "validation-grid2x4",
+      "split": "validation",
+      "family": "grid",
+      "vertex_count": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "weights": [
+        1,
+        1.2,
+        -0.5,
+        -1.4,
+        2,
+        0.9,
+        2.1,
+        1.5,
+        -1,
+        0.7
+      ]
+    },
+    {
+      "id": "validation-prism6",
+      "split": "validation",
+      "family": "prism",
+      "vertex_count": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "weights": [
+        1,
+        1.5,
+        0.7,
+        -2,
+        -1.3,
+        1.1,
+        -0.5,
+        -1,
+        2
+      ]
+    },
+    {
+      "id": "validation-k23",
+      "split": "validation",
+      "family": "complete_bipartite",
+      "vertex_count": 5,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "weights": [
+        1,
+        -1,
+        2,
+        -2,
+        0.5,
+        1.5
+      ]
+    },
+    {
+      "id": "test-wheel5",
+      "split": "test",
+      "family": "wheel",
+      "vertex_count": 5,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "weights": [
+        1,
+        1.5,
+        -1,
+        -2,
+        2,
+        0.5,
+        -0.5,
+        1.2
+      ]
+    },
+    {
+      "id": "test-wheel6",
+      "split": "test",
+      "family": "wheel",
+      "vertex_count": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "weights": [
+        1,
+        -0.4,
+        -1.2,
+        -1,
+        0.6,
+        0.8,
+        1.5,
+        1.3,
+        -0.8,
+        0.9
+      ]
+    },
+    {
+      "id": "test-k6-minus-matching",
+      "split": "test",
+      "family": "complete_minus_matching",
+      "vertex_count": 6,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "weights": [
+        1,
+        -0.7,
+        1.2,
+        -1.1,
+        0.4,
+        -1.5,
+        0.8,
+        1.7,
+        -0.3,
+        0.9,
+        -1.2,
+        0.6
+      ]
+    }
+  ],
+  "status": "PREREGISTERED_NOT_EXECUTED",
+  "acceptance_contract": {
+    "id": "SIGNED-MAXCUT-PARITY-QAOA-ACCEPTANCE-001",
+    "logical_output": "one decoded vertex-bitstring x in {0,1}^|V|",
+    "parity_feasibility": "parity method must satisfy every fundamental-cycle even-parity constraint before decode",
+    "objective_score": "C(x)=sum_e w_e*(x_u XOR x_v), with signed weights preserved",
+    "normalized_regret": "max(0,C_star-C(x))/max(1,sum_e abs(w_e))",
+    "quality_pass": "normalized_regret <= 0.05",
+    "also_report": [
+      "exact_optimum_hit",
+      "full objective score",
+      "cycle-feasibility",
+      "decode/reconstruction cost"
+    ]
+  },
+  "manifest_version": 2,
+  "manifest_id": "SIGNED-MAXCUT-PARITY-QAOA-HELDOUT-V2-2026-10-30",
+  "supersedes": "benchmarks/manifests/qaoa-parity-heldout-2026-10-30.json",
+  "protocol_status": "PREREGISTERED_NO_TEST_OBJECTIVE_ADAPTATION",
+  "evaluation_protocol": {
+    "parameter_training_split": "train",
+    "hyperparameter_selection_split": "validation",
+    "final_evaluation_split": "test",
+    "training_instance_ids": [
+      "train-star5",
+      "train-cycle4",
+      "train-path6",
+      "train-branch6"
+    ],
+    "validation_instance_ids": [
+      "validation-grid2x4",
+      "validation-prism6",
+      "validation-k23"
+    ],
+    "test_instance_ids": [
+      "test-wheel5",
+      "test-wheel6",
+      "test-k6-minus-matching"
+    ],
+    "test_objective_used_for_parameter_optimization": false,
+    "per_instance_test_adaptation": false,
+    "test_reference_use": "scoring_only",
+    "parameter_freeze": "Freeze selected parameter vector and method before test evaluation; do not refit on train+validation or test.",
+    "adaptation_track": "Not part of this preregistered protocol. Any future per-instance adaptation must be separately preregistered with disjoint adaptation and evaluation shots and a distinct evidence label."
+  }
+}
