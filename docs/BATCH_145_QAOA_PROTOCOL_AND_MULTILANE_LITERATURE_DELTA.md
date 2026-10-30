@@ -86,3 +86,8 @@ WORKLOG.md and RESEARCH_GAPS.md were fetched as complete snapshots (258,877 and 
 ## 8. Next highest-value gate
 
 Implement the paired direct-versus-parity p=1 runner under v2: train-only parameter fitting, validation-only selection, frozen test evaluation, exact references for scoring only, equal shots/repetitions and independent SDK/operator/decoder checks. Then target-aware simulation with complete quality, latency, throughput, routing, state/I/O, host, retry, reconstruction, energy and cost-per-accepted-task accounting. No paid QPU job without credentials, a bounded budget and explicit user consent.
+
+
+## 9. Mandatory cross-lane integration scan
+
+All 28 unordered A–H pairs and five selected three-plus-lane combinations were screened in [PAIRWISE_AH_SCREEN_2026-10-30.md](../integration/PAIRWISE_AH_SCREEN_2026-10-30.md). The only tested integration is static manifest/reference hash binding; the hosted regression test is still queued. All other edges are explicitly CANDIDATE or BLOCKED with an unblock test; no synergy or performance gain is inferred.
