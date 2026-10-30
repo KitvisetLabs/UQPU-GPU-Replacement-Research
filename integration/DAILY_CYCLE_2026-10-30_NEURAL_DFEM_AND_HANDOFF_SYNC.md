@@ -56,3 +56,8 @@ After the initial Batch 142 report was written, the complete current canonical c
 PR #152 remains OPEN and DRAFT (not merged), but its current head 1dbfb541944cbb3ee820bdb69256582203664124 now has workflow run #2067 completed successfully: all 15 returned jobs, including Python 3.10/3.11/3.12, Qiskit verification, QSP/QSVT, target-noise and reference benchmark, concluded success. This is PR-head CI only and does not validate or merge main.
 
 PR #153 remains OPEN, not merged, and currently reports mergeable=false. No merge or ready-for-review action was taken. The two PRs remain explicit review/synchronization gates.
+
+
+## PR #153 metadata refresh — 2026-10-30
+
+A subsequent GitHub metadata read now reports PR #153 as OPEN / UNMERGED with mergeable=true (the earlier read in this cycle returned mergeable=false). No merge was performed; the PR still requires review and reconciliation against the current main handoff. PR #152 remains OPEN / DRAFT / UNMERGED with run #2067's 15 returned jobs successful.
