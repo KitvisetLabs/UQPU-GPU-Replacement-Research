@@ -1,5 +1,14 @@
 # Cross-Lane Integration Hub
 
+## Pending source-branch integration — 2026-10-30 — equation discovery and material hyperreduction
+
+- [Literature watch](../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md)
+- [Lane D transfer contract](../research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md)
+- [A–H integration audit](../integration/DAILY_CYCLE_2026-10-30_AGENTIC_EQUATION_DISCOVERY_AND_HYPERREDUCTION.md)
+
+This source branch is based on main `41fac3953773ae0016a09539be57c3ed6b379771` and is **not yet merged**. It records four external preprints, one Lane D transfer gate, the A–H scan, the QAOA test-split leakage issue and exact-head CI uncertainty. No project reproduction or accepted physical/economic advantage is claimed.
+
+
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
 
 - [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)
