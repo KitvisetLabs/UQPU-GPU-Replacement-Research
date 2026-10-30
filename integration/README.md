@@ -1,5 +1,15 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — QEC, quantum device and foundational frontier
+
+- [A–H daily cycle report](DAILY_CYCLE_2026-10-30_QEC_DEVICE_AND_FOUNDATIONAL_FRONTIER.md)
+- [Machine record](INT-20261030-QEC-DEVICE-FOUNDATION.json)
+- [Mamba QEC watch](../docs/literature_watch/2026-10-30-mamba-qec-decoder-peer-reviewed.md) · [gap](../docs/RESEARCH_GAP_QEC_MAMBA_DECODER_REPRODUCTION_2026-10-30.md) · [Lane B contract](../research_lanes/B_cloud_qpu_provider_integration/MAMBA_QEC_DECODER_TRANSFER_CONTRACT_2026-10-30.md)
+- [Waveguide/triple-dot device watch](../docs/literature_watch/2026-10-30-transmon-waveguide-and-triple-dot-device-frontier.md) · [D/G gap](../docs/RESEARCH_GAP_DG_WAVEGUIDE_AND_SPIN_QUBIT_TRANSFER_2026-10-30.md) · [Lane D/G contract](../research_lanes/D_device_chip_fabrication_packaging/QUANTUM_INTERCONNECT_AND_SPIN_QUBIT_DEVICE_TRANSFER_CONTRACT_2026-10-30.md)
+- [Quantum thermodynamics/Majorana watch](../docs/literature_watch/2026-10-30-quantum-thermodynamics-and-majorana-self-testing.md)
+
+External literature only; no UQPU reproduction, device fabrication, paid QPU job, material/fuel/fusion/finance result or new physical law. Batch 144 remains newest numbered main batch; Batch 145 is PR #156, open/unmerged. WORKLOG.md and RESEARCH_GAPS.md remain append-only sync debt.
+
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
 
 - [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)

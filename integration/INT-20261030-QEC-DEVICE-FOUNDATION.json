@@ -1,0 +1,139 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-QEC-DEVICE-FOUNDATION",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_branch": "main",
+  "starting_main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "newest_numbered_batch_on_main": 144,
+  "pending_batch_145_pr": 156,
+  "primary_owner": "Lane H",
+  "work_items": [
+    {
+      "id": "QEC-MAMBA-001",
+      "primary_lane": "B",
+      "status": "LITERATURE_ONLY",
+      "gap": "docs/RESEARCH_GAP_QEC_MAMBA_DECODER_REPRODUCTION_2026-10-30.md",
+      "contract": "research_lanes/B_cloud_qpu_provider_integration/MAMBA_QEC_DECODER_TRANSFER_CONTRACT_2026-10-30.md"
+    },
+    {
+      "id": "DG-DEVICE-TRANSFER-001",
+      "primary_lane": "D",
+      "co_lane": "G",
+      "status": "LITERATURE_ONLY",
+      "gap": "docs/RESEARCH_GAP_DG_WAVEGUIDE_AND_SPIN_QUBIT_TRANSFER_2026-10-30.md",
+      "contract": "research_lanes/D_device_chip_fabrication_packaging/QUANTUM_INTERCONNECT_AND_SPIN_QUBIT_DEVICE_TRANSFER_CONTRACT_2026-10-30.md"
+    }
+  ],
+  "literature_watches": [
+    {
+      "path": "docs/literature_watch/2026-10-30-mamba-qec-decoder-peer-reviewed.md",
+      "doi": "10.1038/s41534-026-01403-y",
+      "published": "2026-10-28",
+      "evidence": "peer-reviewed paper; Sycamore-data reanalysis and simulated real-time decoder-noise model",
+      "uqpu_reproduced": false
+    },
+    {
+      "path": "docs/literature_watch/2026-10-30-transmon-waveguide-and-triple-dot-device-frontier.md",
+      "dois": [
+        "10.1038/s41534-026-01399-5",
+        "10.1038/s41534-026-01400-1"
+      ],
+      "published": [
+        "2026-10-29",
+        "2026-10-24"
+      ],
+      "evidence": "two peer-reviewed device experiments",
+      "uqpu_reproduced": false
+    },
+    {
+      "path": "docs/literature_watch/2026-10-30-quantum-thermodynamics-and-majorana-self-testing.md",
+      "dois": [
+        "10.1103/z9t9-mwgv",
+        "10.1038/s41534-026-01383-z"
+      ],
+      "published": [
+        "2026-10-22",
+        "2026-10-24"
+      ],
+      "evidence": "single-qubit optical experiment and mathematical self-testing framework",
+      "uqpu_reproduced": false
+    }
+  ],
+  "lane_status": {
+    "A": "QAOA v2 exact-head CI passed; no optimizer run; aggregate objective and shot semantics need clarification.",
+    "B": "Mamba QEC peer-reviewed source indexed; Gate 0 not run; no provider/QPU execution.",
+    "C": "Decoder state, syndrome buffers and waveguide transfer bytes unmeasured.",
+    "D": "Waveguide and triple-dot device literature indexed; no UQPU device/process result.",
+    "E": "BIO-001/FUS-001 evidence boundaries unchanged; no accepted fuel or net fusion electricity.",
+    "F": "No measured energy, accepted-output cost, principal, interest or WACC change.",
+    "G": "D/G co-design updated; no manufacturing equipment/yield/cost evidence.",
+    "H": "Three source watches and integration report; multilingual strategic references preserved."
+  },
+  "foundational": {
+    "FND001": "Strong-Mpemba optical experiment indexed; Davies-map reconstruction and matched controls open.",
+    "FND002": "No change; readable classical storage remains distinct from state-space dimension.",
+    "FND003": "No matched QSL experiment; decoder latency model is not a QSL.",
+    "FND004": "No alternative physical primitive demonstrated.",
+    "FND005": "Majorana self-testing framework indexed; proof/assumption reconstruction open; no material observation.",
+    "FND006": "No new AI-generated theorem verified.",
+    "EQN001_006": "Existing generator-to-independent-validation gates preserved; no new law."
+  },
+  "invariants": {
+    "INV029": "No Data-Center-to-One-Phone physical-compression milestone.",
+    "INV030": "No Pangola functional material substitution; no transmutation claim.",
+    "INV031": "No accepted commercial biomass liquid fuel.",
+    "INV032": "No reliable net delivered fusion electricity.",
+    "INV033": "No measured principal/absolute-interest/WACC reduction.",
+    "INV034": "Foundational physics agenda retained; bounded source leads only.",
+    "INV035": "No AI-generated equation promoted to physical law.",
+    "INV025_027": "100,000,000x and universal subsystem goals remain falsifiable objectives."
+  },
+  "ci": {
+    "main": {
+      "sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+      "core_run": 2141,
+      "core_jobs": "15/15 success",
+      "cold_start_run": 1560,
+      "cold_start": "success",
+      "additional_cold_start_run": 1592,
+      "additional_status": "queued",
+      "combined_status": "pending"
+    },
+    "pr156": {
+      "head": "20ee610448e2c0cacf4509249d4d0377a56ec120",
+      "core_run": 2252,
+      "core_jobs": "15/15 success",
+      "cold_start_run": 1537,
+      "cold_start": "success"
+    },
+    "pr158": {
+      "head": "fc6cde0db88efadd418f28b388b65a35640f8f59",
+      "core_run": 2306,
+      "core_status": "queued",
+      "cold_start_run": 1589,
+      "cold_start": "success"
+    },
+    "pr159": {
+      "head": "39ef53f866e717ce675933dad6a33563c82c6864",
+      "core_run": 2309,
+      "core_status": "queued",
+      "cold_start_run": 1591,
+      "cold_start": "success"
+    },
+    "pr160": {
+      "head": "c3966b286f88b4148eb1afbd0bb62f7e9c72f6ea",
+      "core_run": 2314,
+      "core_status": "queued",
+      "cold_start_run": 1595,
+      "cold_start": "queued"
+    }
+  },
+  "synchronization": {
+    "worklog_updated": false,
+    "research_gaps_updated": false,
+    "sync_debt": "Large append-only WORKLOG.md and RESEARCH_GAPS.md were not rewritten from partial snapshots; focused gaps and integration report contain the durable cycle detail."
+  },
+  "paid_qpu_jobs": "NOT_AUTHORIZED_NOT_SUBMITTED",
+  "claims_promoted_to_physical_law": 0
+}

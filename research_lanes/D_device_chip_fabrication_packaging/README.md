@@ -12,3 +12,11 @@ Future device/process/package subfolders are allowed subject to the 16-level dep
 ## Latest transfer contract — 2026-10-30
 
 [MAT-NEURAL-DFEM-001](NEURAL_DFEM_CONSTITUTIVE_MODEL_TRANSFER_CONTRACT_2026-10-30.md) defines a source-pinned, falsifiable reproduction and material-class gate for differentiable-FEM constitutive discovery. It is literature-only; no UQPU reproduction, Pangola coupon test, device or fabrication result is claimed. See [focused gap](../../docs/RESEARCH_GAP_NEURAL_DFEM_PANGOLA_MATERIAL_TRANSFER_2026-10-30.md) and [literature watch](../../docs/literature_watch/2026-10-30-neural-dfem-structure-preserving-constitutive-discovery.md).
+
+
+## Latest D/G device-transfer research — 2026-10-30
+
+- [Transmon-waveguide and triple-dot spin-qubit watch](../../docs/literature_watch/2026-10-30-transmon-waveguide-and-triple-dot-device-frontier.md)
+- [Focused D/G gap](../../docs/RESEARCH_GAP_DG_WAVEGUIDE_AND_SPIN_QUBIT_TRANSFER_2026-10-30.md)
+- [Lane D/G contract](QUANTUM_INTERCONNECT_AND_SPIN_QUBIT_DEVICE_TRANSFER_CONTRACT_2026-10-30.md)
+- Two peer-reviewed external device experiments only; no UQPU device, process, packaging, yield or cost result. Waveguide and spin-gate metrics remain separate.
