@@ -518,23 +518,23 @@
     "note": "Core/invariant run succeeded on prior head; Qiskit verification, QSVT, target-noise and Python 3.10/3.11/3.12 jobs passed. Does not transfer to Batch 141/142."
   },
   "current_head_validation": {
-    "commit": "09d3916ee9f41575d3a29abb4af02d8e849c828c",
+    "commit": "e3f72ce69f2d467c057992944b94e6289e965934",
     "core_conclusion": "UNVERIFIED",
     "cold_start_conclusion": "UNVERIFIED",
-    "observed_at_utc": "2026-10-30T03:09:33Z",
+    "observed_at_utc": "2026-10-30T03:10:11Z",
     "combined_status_contexts": 0,
     "commit_workflow_runs_returned": 0,
-    "note": "Latest main head checked after Batch 142 root sync; combined status returned no contexts and the available commit-workflow-run endpoint returned no PR-triggered runs. Do not infer success or failure; exact-head Actions remains unverified."
+    "note": "Last checked main head before the final handoff/README metadata sync; combined status returned no contexts and the available commit-workflow-run endpoint returned no PR-triggered runs. The subsequent metadata-sync commits also require exact-head Actions."
   },
   "latest_cycle_ci_observation": {
     "starting_commit": "8ecb8fef07f8ddbde7997aef0489049cf6b22c87",
-    "latest_checked_main_head": "09d3916ee9f41575d3a29abb4af02d8e849c828c",
+    "latest_checked_main_head": "e3f72ce69f2d467c057992944b94e6289e965934",
     "core_status": "NO_STATUS_CONTEXTS_RETURNED",
     "core_run_id": null,
     "cold_start_status": "NO_STATUS_CONTEXTS_RETURNED",
     "cold_start_run_id": null,
-    "observed_at_utc": "2026-10-30T03:09:33Z",
-    "note": "No exact-head status contexts or PR-triggered workflow runs were returned for the latest main head. Prior successful cef917ec runs #2105/#1385 do not transfer."
+    "observed_at_utc": "2026-10-30T03:10:11Z",
+    "note": "Last checked pre-final-sync head returned no exact-head status contexts; prior successful cef917ec runs #2105/#1385 do not transfer. Subsequent manifest/README sync commits require their own Actions observation."
   },
   "latest_batch": "Batch 142 is the newest committed numbered batch on main after this cycle; Batch 141 is previous. Batch 138 remains draft/open in PR #152 and has not been merged.",
   "latest_literature_watches": [
