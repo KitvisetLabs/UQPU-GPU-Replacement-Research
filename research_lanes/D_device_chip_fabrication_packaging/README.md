@@ -34,3 +34,8 @@ Future device/process/package subfolders are allowed subject to the 16-level dep
 - [D/G transfer contract](AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md)
 
 The source is an external detector-design preprint. Only the workflow architecture is a candidate transfer; no quantum-chip/device/process result is claimed.
+
+
+## AI-driven physics experiment-design review — 2026-10-30
+
+[Klimesch et al., Nature 657 (2026)](../../docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md) frames co-design around expressive search spaces, reliable simulators, computable objectives and AI exploration. Methodological review only; no quantum-chip transfer is validated.
