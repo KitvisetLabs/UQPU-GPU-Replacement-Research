@@ -5,7 +5,7 @@
   "canonical_branch": "main",
   "canonical_start_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
   "priority_lane": "A",
-  "current_frontier": "2026-10-30 cross-lane cycle: FEML missing-physics method (Ti-6Al-4V real benchmark, synthetic thermal/material examples), AgenticSciML/agentic-science primer and stochastic fusion-cost preprint added as source-attributed literature. Focused FEML Pangola and agentic cold-start gaps; FUS-001 learning-rate model conflict open. New source PR #158; Batch 144 remains newest numbered batch on main and Batch 145 is already pending in PR #156. No project material, fuel, net-fusion, finance, QPU or new-physics result. Critical Lane A audit: the main v1 parity-QAOA manifest permits per-instance angle optimization on test objectives and is blocked for strict held-out generalization. PR #156 v2 removes test-objective adaptation but remains draft/open/unmerged; no paired QAOA run until v2 exact-head core+cold-start, review and canonical merge.",
+  "current_frontier": "2026-10-30 cross-lane cycle: FEML missing-physics method (Ti-6Al-4V real benchmark, synthetic thermal/material examples), AgenticSciML/agentic-science primer and stochastic fusion-cost preprint added as source-attributed literature. Focused FEML Pangola and agentic cold-start gaps; FUS-001 learning-rate model conflict open. New source PR #158; Batch 144 remains newest numbered batch on main and Batch 145 is already pending in PR #156. No project material, fuel, net-fusion, finance, QPU or new-physics result. Critical Lane A audit: the main v1 parity-QAOA manifest permits per-instance angle optimization on test objectives and is blocked for strict held-out generalization. PR #156 v2 removes test-objective adaptation but remains draft/open/unmerged; no paired QAOA run until v2 exact-head core+cold-start, review and canonical merge. Parallel source PR #154 (SRHarness/Holthusen/GINNGER/Shan-Zhang/SCWL/credit-supply) and PR #156 (QSL/HTL/diamond/QAOA v2) were checked for duplication; both remain unmerged. PR #158 current observed head f9065243... has core #2284 queued; PR #159 head b050a309... has no workflow run exposed.",
   "required_reading": [
     "docs/BATCH_143_PARITY_QAOA_HELDOUT_MANIFEST_AND_REFERENCE_AUDIT.md",
     "docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md",
@@ -571,26 +571,32 @@
     "main_cold_start_status": "UNVERIFIED_NOT_EXPOSED",
     "pr154": {
       "head_sha": "3b11949c517631df77ac893bbaa189a35e108971",
-      "core_run_number": 2190,
-      "core_run_id": 41013193779,
+      "run_number": 2190,
+      "run_id": 41013193779,
       "conclusion": "success",
       "jobs": "15/15"
     },
     "pr156": {
       "head_sha": "20ee610448e2c0cacf4509249d4d0377a56ec120",
-      "core_run_number": 2252,
-      "core_run_id": 41024469294,
+      "run_number": 2252,
+      "run_id": 41024469294,
       "conclusion": "success",
       "jobs": "15/15"
     },
     "pr158": {
-      "head_sha": "8da73a7729c429cca06959a1aa4d5059b4eb4ae5",
-      "state": "open/draft",
-      "core_status": "not_yet_observed",
-      "cold_start_status": "not_exposed"
+      "head_sha": "f9065243c0cebbf76f201f842623161824273448",
+      "run_number": 2284,
+      "run_id": 41032445904,
+      "status": "queued",
+      "jobs": "3/3 queued"
     },
     "observed_at_utc": "2026-10-30T09:12:17Z",
-    "note": "PR154/PR156 core runs are successful PR-head checks only. They do not validate canonical main or PR158. No paid QPU execution."
+    "note": "PR154/PR156 core runs are successful PR-head checks only. They do not validate canonical main or PR158. No paid QPU execution.",
+    "pr159": {
+      "head_sha": "b050a309bce56b17d8a099c942b569f7dc53aa22",
+      "status": "not_exposed",
+      "cold_start": "not_exposed"
+    }
   },
   "latest_batch": "Batch 144 is the newest numbered batch on main after this cycle; Batch 143 is previous. Batch 144 exact-head Actions must be observed after publication.",
   "latest_literature_watches": [
@@ -668,7 +674,6 @@
       "draft": false,
       "merged": false,
       "base": "main",
-      "head": "research/2026-10-30-agentic-equation-discovery-and-hyperreduction",
       "head_sha": "3b11949c517631df77ac893bbaa189a35e108971",
       "latest_observed_run": {
         "number": 2190,
@@ -678,7 +683,8 @@
         "all_returned_jobs_success": true,
         "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/41013193779"
       },
-      "note": "Source PR head core CI passed 15/15; remains open/unmerged. Does not validate main."
+      "note": "Source PR head core CI passed 15/15; remains open/unmerged. Does not validate main.",
+      "title": "2026-10-30: equation-discovery and neural-material hyperreduction watch"
     },
     "156": {
       "state": "open",
@@ -704,8 +710,14 @@
       "mergeable": false,
       "base": "main",
       "head": "research/2026-10-30-feml-agentic-sciml-cross-lane",
-      "head_sha": "8da73a7729c429cca06959a1aa4d5059b4eb4ae5",
-      "note": "New dated literature/integration cycle; exact-head core and cold-start CI not yet observed. Requires separate pending-main summary and review."
+      "head_sha": "f9065243c0cebbf76f201f842623161824273448",
+      "note": "Head SHA is the latest source head observed before this handoff-manifest refresh; core run #2284 is queued (3 Python jobs). This manifest commit itself advances the source branch and needs a new exact-head check. Exact-head cold-start is not exposed.",
+      "latest_observed_run": {
+        "number": 2284,
+        "run_id": 41032445904,
+        "status": "queued",
+        "queued_jobs": 3
+      }
     }
   },
   "latest_pr_ci_observation": {
@@ -721,5 +733,25 @@
     "draft": true,
     "merged": false,
     "note": "Exact PR-head core run passed 15/15. Cold-start result is not exposed. This does not validate main or PR158. PR154 run #2190 also passed 15/15."
-  }
+  },
+  "parallel_pending_prs": [
+    {
+      "number": 154,
+      "title": "2026-10-30: equation-discovery and neural-material hyperreduction watch",
+      "head_sha": "3b11949c517631df77ac893bbaa189a35e108971",
+      "core_run": 2190,
+      "core_conclusion": "success",
+      "jobs": "15/15",
+      "state": "open_unmerged"
+    },
+    {
+      "number": 156,
+      "title": "Batch 145: QAOA v2 holdout integrity and cross-lane research",
+      "head_sha": "20ee610448e2c0cacf4509249d4d0377a56ec120",
+      "core_run": 2252,
+      "core_conclusion": "success",
+      "jobs": "15/15",
+      "state": "open_draft_unmerged"
+    }
+  ]
 }
