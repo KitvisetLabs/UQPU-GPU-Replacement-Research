@@ -1,5 +1,13 @@
 # Cross-Lane Integration Hub
 
+## Pending-main synchronization — PR #160 (2026-10-30)
+
+- [Pending-main record](PENDING_MAIN_SYNC_PR160_2026-10-30.md)
+- [Source PR #160](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/160)
+- Source head: `c3966b286f88b4148eb1afbd0bb62f7e9c72f6ea` (3 ahead, 0 behind). PR #160 remains draft/open/unmerged; no source SHA is mapped to main.
+- Individual source commit SHAs are not exposed by the available commit-list interface and remain enumeration debt.
+- Exact-head core run #2315 is queued; cold-start exact-head status is not exposed. Do not infer merge readiness from predecessor CI.
+
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
 
 - [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)
