@@ -23,7 +23,7 @@ The following source commits are part of PR #154 and must be reconciled to a mai
 | `e1b8a47ad7df3e06239e38355b48a6a91281f9ee` | Complete RESEARCH_GAPS append |
 | `44656247e9d55896eca9f8ac27cb056957070185` | Root README index |
 
-This ledger commit adds the pending-main synchronization record. Its own SHA is recorded in the updated cold-start manifest and Git history; it is not mapped to main until PR #154 is merged.
+This ledger commit adds the pending-main synchronization record. The machine-readable integration record is linked from the integration hub and handoff manifest. Its own SHA is recorded in the updated cold-start manifest and Git history; it is not mapped to main until PR #154 is merged.
 
 ## Main summary required
 
