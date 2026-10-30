@@ -1464,3 +1464,12 @@ Added `docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md` for Hu
 - **Evidence boundary:** no QAOA optimizer, target simulator or real QPU job was run; no advantage claim.
 
 Research-Sync: pending-main
+
+
+## 2026-10-30 — BIO-001 two-step SCWL and FIN-001 credit-supply stress supplements
+
+- **RG-BIO001-SCWL-TWO-STEP-001:** two-step subcritical pretreatment + supercritical liquefaction is a literature comparator only. Full publisher paper/supplement unavailable; Pangola batches, accepted fuel, mass/energy closure and lifecycle cost not measured. See `docs/RESEARCH_GAP_BIO001_SCWL_TWO_STEP_2026-10-30.md` and `research_lanes/E_materials_energy_cooling_infrastructure/BIO001_SCWL_TWO_STEP_CONTROL_CONTRACT_2026-10-30.md`.
+- **RG-FIN001-CREDIT-SUPPLY-STRESS-001:** 2026 India R&D-intensive-firm study suggests credit-availability shocks should be separated from rate shocks, but full coefficient tables and local/project terms are unavailable. No project WACC or interest saving. See `docs/RESEARCH_GAP_FIN001_CREDIT_SUPPLY_STRESS_2026-10-30.md` and `research_lanes/F_economics_benchmarks_evidence_integration/FIN001_CREDIT_SUPPLY_STRESS_CONTRACT_2026-10-30.md`.
+- **Shared watch:** `docs/literature_watch/2026-10-30-biomass-scwl-and-rd-credit-supply.md`; machine-readable integration: `integration/INT-20261030-BIOFIN-SCWL-CREDIT.json`.
+
+Research-Sync: pending-main
