@@ -28,6 +28,10 @@ Record exact archive/source/data hashes, license, Firedrake/pyadjoint/PyTorch/JA
 7. Test a blind batch and a new geometry/loading/thermal regime. Search counterexamples and report failure cases.
 8. Extract symbolic equations only after the operator passes validation; test the expression outside its fitting range and against physical constraints.
 
+## Shared material-data interface with hyperreduction
+
+PR #154 separately proposes MAT-NEURAL-HYPERREDUCTION-001 using adaptive POD/ECSW and adjoint sensitivities. Its source-branch contract is at https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/blob/3b11949c517631df77ac893bbaa189a35e108971/research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md. Reuse one material/function specification and one batch/specimen/geometry split manifest for both methods; do not duplicate Pangola coupon campaigns. Compare conventional constitutive models, FEML and hyperreduction under equal data and compute budgets. Keep FEML forward/adjoint costs distinct from hyperreduction basis/sampling rebuild, canary and full-order validation costs.
+
 ## Resource and cost ledger
 
 Record mesh DOFs, forward and adjoint solves, load/time steps, optimizer epochs, CPU/GPU model, peak memory, wall time, retries, solver failures, energy where measurable and compute cost. The paper reports that adjoint solves dominate training; do not infer field-scale cost from its laptop examples.
