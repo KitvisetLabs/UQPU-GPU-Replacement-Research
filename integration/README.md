@@ -6,7 +6,7 @@
 - [Source PR #154](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/154)
 - [Literature watch](../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md) · [Lane D transfer contract](../research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md) · [A–H integration report](../integration/DAILY_CYCLE_2026-10-30_AGENTIC_EQUATION_DISCOVERY_AND_HYPERREDUCTION.md)
 
-This summary is a separate pending-main PR based on `41fac3953773ae0016a09539be57c3ed6b379771`. Source PR #154 is open/unmerged. No source result is asserted to exist on main.
+This summary is a separate pending-main PR based on `41fac3953773ae0016a09539be57c3ed6b379771`. Source PR #154 is open/unmerged. Its current source head is 9e9393eefb6f0572d547d76f885433ffb3e724b3; no source result is asserted to exist on main.
 
 
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
