@@ -43,3 +43,19 @@ PR #154 opened against main. Initial PR head `44656247e9d55896eca9f8ac27cb056957
 All sources are external literature. No project reproduction, QAOA optimizer, QPU job, material coupon, fuel production, fusion experiment or finance transaction occurred. If review rejects the transfer, retain this watch and gap as literature/negative evidence; do not delete the source provenance.
 
 Research-Sync: pending-main
+
+
+## Supplementary BIO-001 / FIN-001 source commits
+
+The source PR #154 was extended with two additional peer-reviewed 2026 literature comparators, Lane E/F contracts, focused gaps and a machine-readable integration record. These remain external evidence and are not Pangola or project-finance results.
+
+| Source SHA | Change |
+|---|---|
+| `27512d1bc7ac1c521f08d71f1ac7d318aa99887a` | BIO-001/FIN-001 literature watch |
+| `2ec7f4d1905e4d4310349b2b24540572a5cb7c36` | Lane E two-step SCWL contract |
+| `09e9719aafbfe0db45a00480cccc309c6eb990a7` | Lane F credit-supply stress contract |
+| `bc9673047fe971dff5b9b6b5d9d174521ef995bc` | BIO/FIN machine-readable integration record |
+| `7b0d50db764bee3dfac6eb87a59a058b3d22716f` | Focused BIO-001 gap |
+| `5e9a24ef2d613559ca01cced49183bea38c69598` | Focused FIN-001 gap |
+
+The pending-main summary and cold-start manifest require another refresh after these commits. PR #154 remains open/unmerged.
