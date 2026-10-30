@@ -133,8 +133,8 @@
       "conclusion": "success",
       "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984903575"
     },
-    "current_cycle_exact_head": "UNVERIFIED; latest checked main head 09d3916ee9f41575d3a29abb4af02d8e849c828c returned no status contexts; prior successful runs predate Batch 141/142 and root-sync commits",
-    "latest_checked_main_head": "09d3916ee9f41575d3a29abb4af02d8e849c828c",
+    "current_cycle_exact_head": "UNVERIFIED; last checked pre-final-sync head e3f72ce69f2d467c057992944b94e6289e965934 returned no status contexts; subsequent manifest/README metadata-sync commits require exact-head validation",
+    "latest_checked_main_head": "e3f72ce69f2d467c057992944b94e6289e965934",
     "latest_checked_main_head_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
     "latest_checked_main_head_workflow_runs": "NO_PR_TRIGGERED_RUNS_RETURNED"
   },
