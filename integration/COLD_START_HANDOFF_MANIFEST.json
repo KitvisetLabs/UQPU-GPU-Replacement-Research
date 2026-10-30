@@ -651,18 +651,19 @@
       "head": "research/batch-145-qsl-htl-diamond-and-qaoa-v2",
       "head_sha": null,
       "ahead_by": 39,
-      "exact_head_ci": "NO_RUN_OR_COMBINED_STATUS_CONTEXTS_EXPOSED_FOR_CURRENT_HEAD",
+      "exact_head_ci": "CORE_RUN_2241_QUEUED; COMBINED_STATUS_EMPTY; NO_COLD_START_RESULT",
       "note": "Resolve current source head from PR #156 metadata; latest comparison is 39 commits ahead, 23 changed files. Exact per-commit mapping remains sync debt.",
       "latest_observed_run": {
-        "number": 2219,
-        "run_id": 41019737304,
+        "number": 2241,
+        "run_id": 41020189406,
         "status": "QUEUED",
-        "queued_python_jobs": [
+        "head_sha": "bdc39c9fd0554f213181d52483239d066ae67951",
+        "queued_jobs": [
           "test (3.10)",
           "test (3.11)",
           "test (3.12)"
         ],
-        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/41019737304"
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/41020189406"
       },
       "changed_files": 23,
       "last_observed_run": {
