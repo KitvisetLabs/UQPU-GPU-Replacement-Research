@@ -8,7 +8,7 @@
 - Starting main SHA: 41fac3953773ae0016a09539be57c3ed6b379771
 - Source PR: https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/158
 - Source branch: research/2026-10-30-feml-agentic-sciml-cross-lane
-- Latest source head after cold-start manifest refresh: f9065243c0cebbf76f201f842623161824273448
+- Latest source head after cold-start manifest refresh: 4a362571cb54026efdee923eefc384098f6af9cd
 - Source PR remains draft/open/unmerged. No source commit is mapped to main.
 
 ## Proposed artifacts
