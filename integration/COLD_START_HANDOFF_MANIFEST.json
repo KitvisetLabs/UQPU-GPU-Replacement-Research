@@ -1,12 +1,13 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-30T05:20:00Z",
+  "prepared_utc": "2026-10-30T10:40:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "9f89bc2d4295a17d7c4d51858603e5e98bf8eab6",
   "priority_lane": "A",
-  "current_frontier": "2026-10-30 Batch 144 adds exhaustive parity-QAOA mapping checks (10 fixtures, 688 logical assignments, 7,072 parity strings), a FIN-001 flexible-financing model watch and a BIO-001 potato–okra HTL–AD–HDO simulation/TEA comparator watch. Matched QAOA and project-specific fuel/finance validation remain unrun.",
+  "current_frontier": "2026-10-30 Batch 144 adds exhaustive parity-QAOA mapping checks (10 fixtures, 688 logical assignments, 7,072 parity strings), a FIN-001 flexible-financing model watch and a BIO-001 potato–okra HTL–AD–HDO simulation/TEA comparator watch. Matched QAOA and project-specific fuel/finance validation remain unrun. Pending-main summary PR #162 records source PR #161 (12 commits ahead/0 behind; 10 source SHAs enumerated, two unresolved); PR #161 remains draft/open/unmerged with core run #2332 queued and cold-start exact-head unverified.",
   "required_reading": [
+    "integration/PENDING_MAIN_SYNC_PR161_2026-10-30.md",
     "docs/BATCH_143_PARITY_QAOA_HELDOUT_MANIFEST_AND_REFERENCE_AUDIT.md",
     "docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md",
     "benchmarks/manifests/qaoa-parity-heldout-2026-10-30.json",
@@ -386,6 +387,7 @@
     "BIO001-HTL-AD-HDO-TRANSFER-001: potato-okra external HTL-AD-HDO simulation/TEA reproduction and Pangola matched-batch transfer gate"
   ],
   "open_gates": [
+    "PR #161: exact-head core/cold-start CI, review, and enumeration of two unresolved source commit SHAs before merge.",
     "RG-033",
     "RG-034",
     "RG-EQN-008",
