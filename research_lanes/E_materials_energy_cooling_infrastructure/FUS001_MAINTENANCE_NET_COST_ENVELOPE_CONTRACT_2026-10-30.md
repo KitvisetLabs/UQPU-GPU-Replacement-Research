@@ -43,3 +43,12 @@ Estimate reliable net delivered electricity and full lifecycle cost for an archi
 ## Guardrails
 
 The published up-to-15% result is a scenario-specific market-value result, not an LCOE reduction. The 1¢/kWh target is a backcasting ambition, not a demonstrated commercial outcome. No plant design, physics solution, material lifetime or net-electric advantage is inferred from a cost model.
+
+
+## Learning-rate disagreement and source-pinned reconciliation — 2026-10-30
+
+Add Böhnlein et al., arXiv:2606.26536, as an external stochastic comparator alongside the existing Tang et al. Nature Energy analysis. The preprint abstract reports mature-stage mean LCOE values of US$114.6/MWh MCF, US$110.3/MWh ICF and US$143.9/MWh MIF and implied learning rates above 30%. Tang et al. report a 2–8% experience-rate range for the dominant magnetic and laser-inertial designs. These are methodologically distinct external projections, not observed commercial learning curves.
+
+Before scenario use, pin the preprint version/data/code, reconstruct currency/year, FOAK/NOAK definitions, initial CAPEX, deployment doublings, maturity transitions, WACC and uncertainty distributions. Compare matched technology families and cost boundaries; do not average or silently select the more optimistic estimate. Confirm whether the model covers recirculating power, thermal/electric conversion, cooling, component life/replacement, fuel cycle, maintenance/remote handling, grid interface and decommissioning. Any missing term stays explicit and unpriced; it is not zero.
+
+All outputs remain MODEL_ONLY until project-specific engineering evidence exists. A lower assumed WACC is not a UQPU finance result; INV-033 keeps principal, interest, capital lock-up, WACC and risk premium distinct.
