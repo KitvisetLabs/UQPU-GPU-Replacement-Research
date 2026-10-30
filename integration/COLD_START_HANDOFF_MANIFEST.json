@@ -1,12 +1,13 @@
 {
   "schema": "uqpu-cold-start-handoff-v1",
-  "prepared_utc": "2026-10-30T10:27:00Z",
+  "prepared_utc": "2026-10-30T10:55:00Z",
   "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
   "canonical_branch": "main",
   "canonical_start_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
   "priority_lane": "A",
-  "current_frontier": "Batch 144 remains newest numbered batch on main; Batch 145 is open/unmerged in PR #156. This cycle adds peer-reviewed Mamba QEC, transmon-waveguide, triple-dot spin-qubit and quantum thermodynamics/Majorana watches with focused reproduction/transfer contracts. No UQPU reproduction, paid QPU job, material/fuel/fusion/economic result or new physical law. A peer-reviewed planar qLDPC gapped-boundary construction (PRX Quantum 7, 043016, 2026-10-23) is also newly indexed; reimplementation is blocked by no public source software/data. This cycle also adds DG-AGENTIC-CODESIGN-001: a VIBRATO differentiable full-simulation/agentic detector co-design literature watch and D/G transfer gate; source and UQPU reproduction remain open.",
+  "current_frontier": "Batch 144 remains newest numbered batch on main; Batch 145 is open/unmerged in PR #156. This cycle adds peer-reviewed Mamba QEC, transmon-waveguide, triple-dot spin-qubit and quantum thermodynamics/Majorana watches with focused reproduction/transfer contracts. No UQPU reproduction, paid QPU job, material/fuel/fusion/economic result or new physical law. A peer-reviewed planar qLDPC gapped-boundary construction (PRX Quantum 7, 043016, 2026-10-23) is also newly indexed; reimplementation is blocked by no public source software/data. This cycle also adds DG-AGENTIC-CODESIGN-001: a VIBRATO differentiable full-simulation/agentic detector co-design literature watch and D/G transfer gate; source and UQPU reproduction remain open. Companion peer-reviewed Nature review (2026-09-02) on AI-driven physics experiment design is now indexed as a methodological framework for search spaces, simulators, objective functions and AI exploration; no UQPU experiment claim.",
   "required_reading": [
+    "docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md",
     "integration/INT-20261030-AGENTIC-DETECTOR-COSIGN.json",
     "integration/DAILY_CYCLE_2026-10-30_AGENTIC_DETECTOR_COSIGN.md",
     "research_lanes/D_device_chip_fabrication_packaging/AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md",
