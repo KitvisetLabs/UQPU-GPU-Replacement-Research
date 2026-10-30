@@ -1,13 +1,17 @@
 # Cross-Lane Integration Hub
 
-## Pending source-branch integration — 2026-10-30 — equation discovery and material hyperreduction
+## Pending source-branch integration — 2026-10-30 — equation discovery, material hyperreduction, BIO-001 and FIN-001
 
 - [Literature watch](../docs/literature_watch/2026-10-30-agentic-equation-discovery-and-constitutive-models.md)
 - [Lane D transfer contract](../research_lanes/D_device_chip_fabrication_packaging/NEURAL_MATERIAL_HYPERREDUCTION_TRANSFER_CONTRACT_2026-10-30.md)
 - [A–H integration audit](../integration/DAILY_CYCLE_2026-10-30_AGENTIC_EQUATION_DISCOVERY_AND_HYPERREDUCTION.md)
+- [BIO-001/FIN-001 literature watch](../docs/literature_watch/2026-10-30-biomass-scwl-and-rd-credit-supply.md)
+- [BIO-001 SCWL contract](../research_lanes/E_materials_energy_cooling_infrastructure/BIO001_SCWL_TWO_STEP_CONTROL_CONTRACT_2026-10-30.md) · [focused gap](../docs/RESEARCH_GAP_BIO001_SCWL_TWO_STEP_2026-10-30.md)
+- [FIN-001 credit-supply contract](../research_lanes/F_economics_benchmarks_evidence_integration/FIN001_CREDIT_SUPPLY_STRESS_CONTRACT_2026-10-30.md) · [focused gap](../docs/RESEARCH_GAP_FIN001_CREDIT_SUPPLY_STRESS_2026-10-30.md)
+- [BIO/FIN machine-readable record](../integration/INT-20261030-BIOFIN-SCWL-CREDIT.json)
 - [Machine-readable integration record](../integration/INT-20261030-NEURAL-MATERIAL-EQNDISCOVERY.json)
 
-This source branch is based on main `41fac3953773ae0016a09539be57c3ed6b379771` and is **not yet merged**. It records four external preprints, one Lane D transfer gate, the A–H scan, the QAOA test-split leakage issue and exact-head CI uncertainty. No project reproduction or accepted physical/economic advantage is claimed.
+This source branch is based on main `41fac3953773ae0016a09539be57c3ed6b379771` and is **not yet merged**. It records four external preprints, two peer-reviewed BIO/FIN comparators, Lane D/E/F transfer gates, the A–H scan, the QAOA test-split leakage issue and exact-head CI uncertainty. No project reproduction or accepted physical/economic advantage is claimed.
 
 
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
