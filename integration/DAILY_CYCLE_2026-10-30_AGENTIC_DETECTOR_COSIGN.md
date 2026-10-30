@@ -49,3 +49,8 @@ FND-001–006 remain active: thermodynamic-gap accounting, output-information lo
 Added the literature watch, focused D/G gap, D/G transfer contract, A–H report and machine-readable record. The existing Batch 144 remains newest numbered main batch; no competing batch number is assigned. WORKLOG.md and RESEARCH_GAPS.md remain untouched to preserve append-only history; the focused gap is the durable detail for this work item.
 
 **Next gate:** pin the source repository, environment, data and model hashes; reproduce the source's three trajectories; then run a bounded UQPU device/process design benchmark against exhaustive (where feasible), random/LHS, established optimizer and expert baselines under equal total simulation and search budgets. Exact-head core and cold-start CI must pass before merge. No paid QPU job is authorized.
+
+
+## Companion peer-reviewed review — AI-driven physics experiment design
+
+Klimesch et al., *Nature* 657, 47–58 (2026), DOI 10.1038/s41586-026-10898-6, provides a four-part design framework: expressive search spaces, fast/reliable simulators, computable scientific objectives and AI exploration across discrete/continuous choices. It is a review, not a new UQPU experiment. The source is now indexed in [the literature watch](../docs/literature_watch/2026-10-30-ai-driven-physics-experiment-design-review.md). Its main transfer is to make D/G co-design contracts explicit and to prevent simulator error, objective scaling and search cost from being hidden. The review's disclosed SPRIND Next Frontier AI Challenge selection is ecosystem context only, not UQPU funding.
