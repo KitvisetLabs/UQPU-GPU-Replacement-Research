@@ -46,7 +46,7 @@ Large append-only `RESEARCH_GAPS.md` and `WORKLOG.md` were not rewritten from pa
 
 ## 2026-10-30 Batch 141 update — source asset pins partially resolved
 
-The following source-level pins supersede the corresponding unverified-hash statements above. Canonical detailed manifest: research_lanes/A_quantum_programming_runtime/EVENET_ASSET_PIN_MANIFEST_2026-10-30.json.
+The following source-level pins supersede the corresponding unverified-hash statements above. Canonical detailed manifest: ../research_lanes/A_quantum_programming_runtime/EVENET_ASSET_PIN_MANIFEST_2026-10-30.json.
 
 - Code: EveNet-HEP/EveNet-Full@06c3181d9a0f7df3e30edbb1c355b6fec8b5a3ad, MIT. Python >=3.12; pyproject.toml has an empty dependency list while requirements.txt separately pins packages.
 - Model: Avencast/EveNet@afba5b47478f0c25c6a5a5755ac30738925d73ad, model-card MIT.
