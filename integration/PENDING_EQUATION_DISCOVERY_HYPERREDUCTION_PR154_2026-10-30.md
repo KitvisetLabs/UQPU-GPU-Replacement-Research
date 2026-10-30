@@ -63,3 +63,28 @@ No paid QPU job, material coupon test, fuel production, fusion experiment or fin
 5. After merge, map every source SHA to the resulting main SHA and run a fresh main reconciliation.
 
 Research-Sync: pending-main
+
+
+## Supplementary BIO-001 / FIN-001 source commits
+
+The source PR also adds a two-step SCWL comparator and credit-supply stress literature watch, Lane E/F contracts, focused gaps and a machine-readable integration record. The complete additional source commits are:
+
+| Source SHA | Change |
+|---|---|
+| `27512d1bc7ac1c521f08d71f1ac7d318aa99887a` | BIO-001/FIN-001 literature watch |
+| `2ec7f4d1905e4d4310349b2b24540572a5cb7c36` | Lane E two-step SCWL contract |
+| `09e9719aafbfe0db45a00480cccc309c6eb990a7` | Lane F credit-supply stress contract |
+| `bc9673047fe971dff5b9b6b5d9d174521ef995bc` | BIO/FIN machine-readable integration record |
+| `7b0d50db764bee3dfac6eb87a59a058b3d22716f` | Focused BIO-001 gap |
+| `5e9a24ef2d613559ca01cced49183bea38c69598` | Focused FIN-001 gap |
+| `58f62f314e75977b93305b02caaca394c751a921` | Lane E README index |
+| `804cd20ec1d56ef2c2d024e29ff3fb55017884ee` | Lane F README index |
+| `856c3d27895c47e32a0feaae613704c4a5b98431` | A-H integration report BIO/FIN supplement |
+| `e58f2b2f99a7f2de1ebdeade1448facf87ff8282` | Integration hub BIO/FIN links |
+| `4afd5e1e4bb58a2ae1c9358192e582bc83a8553b` | Cold-start BIO/FIN handoff refresh |
+| `1e513f45a414d2bc3f191a716d94d7794be1109a` | WORKLOG BIO/FIN append |
+| `19019db8960a2b9eb2d5e7c6d2f16be852fdcd65` | RESEARCH_GAPS BIO/FIN append |
+| `c8e61b1230ac3825e9024b0962c4059cedf9cb10` | Pending-main source ledger supplement |
+| `3b11949c517631df77ac893bbaa189a35e108971` | Root README BIO/FIN index |
+
+These studies are external peer-reviewed article metadata/abstract evidence only; publisher full text/supplement was inaccessible. No Pangola or project-finance result is claimed.
