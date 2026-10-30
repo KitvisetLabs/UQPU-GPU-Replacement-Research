@@ -2380,3 +2380,17 @@ Research-Sync: main
 - No paid QPU job, material coupon test, fusion experiment, hazardous test or financing transaction was performed. The focused gap remains literature-only; no mission advantage is claimed.
 
 Research-Sync: main
+
+
+## 2026-10-30 — Batch 143 parity-QAOA held-out manifest
+
+- Starting main SHA 420c29c56be07ec799766f947d36a3eec78db618; newest numbered batch at start was resolved from current main as Batch 142.
+- Starting-head exact CI: core run #2137 success (16/16 checks); cold-start audit #1427 success. These do not validate the new Batch 143 commit.
+- Added a 10-instance signed-Max-Cut manifest (4 train / 3 validation / 3 test) with disjoint graph families, canonical signed weights and a hash-bound exact-reference file.
+- Exhaustively enumerated all logical vertex assignments (688 total) and retained every optimum/argmax set. Added a common decoded-output acceptance contract, cycle-feasibility rule, normalized regret threshold 0.05 and equal proposed p=1 budgets.
+- Six isolated local tests passed for manifest/reference hashes, split/family disjointness, canonical edge/weight input, exact optimum recomputation, acceptance/budget fields and no-test-selection/no-paid-job rules.
+- No QAOA optimizer, provider SDK, target-aware simulator, real QPU, GPU/NPU baseline, material test, accepted fuel, fusion experiment or financing transaction was executed.
+- Fresh literature searches rechecked the newest EVENET Nature Machine Intelligence version of record (2026-10-29), Neural-DFEM, DC-PINN, neural QEC decoder, ProofEvolve, SymbolFit v2 and CoSR. They are already indexed; no duplicate literature watch was created. The EVENET pretraining investment must be included in lifecycle cost rather than excluded from accepted-task accounting.
+- A–H reviewed: A manifest/reference advance; B provider-neutral/no-submit; C no memory/transfer measurement; D native-gate/device mapping open; E BIO-001/FUS-001 open; F hash-bound benchmark and equal-budget contract; G D/G co-design without manufacturing evidence; H strategic model and six-language plan preserved.
+- FND-001–006 and EQN-001–006 remain evidence-gated; no new physical law or experimental result. INV-029–035 and INV-025/026/027 remain preserved; no moonshot or commercial claim promoted.
+- README, focused gap, lane README, integration index, cold-start manifest, WORKLOG and RESEARCH_GAPS updated from complete fetched contents. Full WORKLOG and RESEARCH_GAPS byte counts matched the Git tree before append; no historical prefix was truncated.

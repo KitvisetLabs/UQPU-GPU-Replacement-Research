@@ -1419,3 +1419,13 @@ Regazzoni, *Computational Mechanics* (2026), DOI 10.1007/s00466-026-02850-2, rep
 **Unlock:** pin the upstream source/config/data/license; reproduce one Mooney–Rivlin synthetic case; run independent solver/mesh and non-polyconvex negative controls; quantify strain-state coverage and identifiability; classify actual Pangola-derived coupon behavior before any transfer; validate with independent DIC/force and local strain–stress data; then test the actual mechanical/electrical/thermal function and lifecycle cost.
 
 **Nonclaims:** no Pangola material test, critical-material substitution, elemental transmutation, device/fabrication result, new physical law, fuel/electricity/financing advantage or Data-Center-to-One-Phone progress is established.
+
+
+## 2026-10-30 — RG-QAOA-PARITY-001 pilot manifest synchronization
+
+**Status:** OPEN / PREREGISTERED_NOT_EXECUTED.  
+**Primary owner:** Lane A; evidence/integration owner Lane F.  
+**Canonical detail:** docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md.  
+**New artifacts:** 10-instance train/validation/test manifest, exact logical references, six regression tests and Batch 143 integration report.  
+**Evidence class:** SOFTWARE_CONTRACT + MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE.  
+**Next gate:** matched direct-versus-parity QAOA runner, independent SDK/operator/decoder verification, target-aware simulation, exact reference scoring and full accepted-task resource/cost accounting. No paid QPU execution without explicit consent, credentials and a bounded budget.

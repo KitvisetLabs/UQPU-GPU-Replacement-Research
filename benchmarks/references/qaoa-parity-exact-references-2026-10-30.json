@@ -1,0 +1,130 @@
+{
+  "schema": "uqpu-qaoa-parity-exact-reference-v1",
+  "workload_contract_id": "SIGNED-MAXCUT-PARITY-QAOA-001",
+  "manifest_sha256": "b38bd65557b011a5519eae7a1360ed72cc31d9f141f16ad1f7bfa72a5c72ef7d",
+  "certificates": [
+    {
+      "instance_id": "train-star5",
+      "objective_sense": "maximize",
+      "optimum_score": 5.0,
+      "optimal_assignments": [
+        "01010",
+        "10101"
+      ],
+      "states_evaluated": 32,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "train-cycle4",
+      "objective_sense": "maximize",
+      "optimum_score": 2.5,
+      "optimal_assignments": [
+        "0110",
+        "1001"
+      ],
+      "states_evaluated": 16,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "train-path6",
+      "objective_sense": "maximize",
+      "optimum_score": 6.0,
+      "optimal_assignments": [
+        "001001",
+        "110110"
+      ],
+      "states_evaluated": 64,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "train-branch6",
+      "objective_sense": "maximize",
+      "optimum_score": 4.2,
+      "optimal_assignments": [
+        "010011",
+        "101100"
+      ],
+      "states_evaluated": 64,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "validation-grid2x4",
+      "objective_sense": "maximize",
+      "optimum_score": 8.0,
+      "optimal_assignments": [
+        "01101001",
+        "10010110"
+      ],
+      "states_evaluated": 256,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "validation-prism6",
+      "objective_sense": "maximize",
+      "optimum_score": 5.3,
+      "optimal_assignments": [
+        "011110",
+        "100001"
+      ],
+      "states_evaluated": 64,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "validation-k23",
+      "objective_sense": "maximize",
+      "optimum_score": 3.5,
+      "optimal_assignments": [
+        "00001",
+        "01101",
+        "10010",
+        "11110"
+      ],
+      "states_evaluated": 32,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "test-wheel5",
+      "objective_sense": "maximize",
+      "optimum_score": 5.2,
+      "optimal_assignments": [
+        "01110",
+        "10001"
+      ],
+      "states_evaluated": 32,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "test-wheel6",
+      "objective_sense": "maximize",
+      "optimum_score": 5.7,
+      "optimal_assignments": [
+        "011010",
+        "100101"
+      ],
+      "states_evaluated": 64,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    },
+    {
+      "instance_id": "test-k6-minus-matching",
+      "objective_sense": "maximize",
+      "optimum_score": 4.7,
+      "optimal_assignments": [
+        "011110",
+        "100001"
+      ],
+      "states_evaluated": 64,
+      "reference_method": "exhaustive classical enumeration",
+      "evidence_class": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE"
+    }
+  ],
+  "status": "EXACT_SMALL_INSTANCE_CLASSICAL_CERTIFICATES_NOT_QPU_EVIDENCE"
+}

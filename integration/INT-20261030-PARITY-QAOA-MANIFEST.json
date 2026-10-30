@@ -1,0 +1,88 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-PARITY-QAOA-MANIFEST",
+  "integration_id": "INT-20261030-PARITY-QAOA-MANIFEST",
+  "date": "2026-10-30",
+  "primary_owner": "A",
+  "integration_owner": "F",
+  "starting_main_sha": "420c29c56be07ec799766f947d36a3eec78db618",
+  "stable_gate_id": "A-GATE-PARITY-QAOA-HELDOUT-MANIFEST-001",
+  "workload_contract_id": "SIGNED-MAXCUT-PARITY-QAOA-001",
+  "acceptance_contract_id": "SIGNED-MAXCUT-PARITY-QAOA-ACCEPTANCE-001",
+  "artifacts": {
+    "batch": "docs/BATCH_143_PARITY_QAOA_HELDOUT_MANIFEST_AND_REFERENCE_AUDIT.md",
+    "manifest": "benchmarks/manifests/qaoa-parity-heldout-2026-10-30.json",
+    "exact_references": "benchmarks/references/qaoa-parity-exact-references-2026-10-30.json",
+    "focused_gap": "docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md",
+    "test": "software/uqpu-prototype/tests/test_qaoa_parity_heldout_manifest.py",
+    "daily_report": "integration/DAILY_CYCLE_2026-10-30_PARITY_QAOA_HELDOUT_MANIFEST.md"
+  },
+  "manifest_sha256": "b38bd65557b011a5519eae7a1360ed72cc31d9f141f16ad1f7bfa72a5c72ef7d",
+  "exact_reference_sha256": "573ad3150cff7032d9325c864417b9c08f57ceda7777796f0f8d0abc9cbd52ee",
+  "split_counts": {
+    "train": 4,
+    "validation": 3,
+    "test": 3
+  },
+  "graph_families_disjoint": true,
+  "logical_assignments_enumerated": 688,
+  "exact_reference_evidence": "MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE",
+  "proposed_budget": {
+    "qaoa_layers": 1,
+    "shots_per_instance_per_method_per_repetition": 8192,
+    "optimizer_evaluations_per_instance_per_method_per_repetition": 32,
+    "independent_repetitions": 10
+  },
+  "local_validation": {
+    "tests_passed": 6,
+    "tests_total": 6,
+    "scope": "manifest hash binding, split/family disjointness, signed graph inputs, exhaustive objective/argmax recomputation, acceptance/budget schema and test-selection/no-paid-job guards"
+  },
+  "literature_surveillance": {
+    "status": "FRESH_SEARCH_COMPLETED_NO_NEW_TO_MAIN_PRIMARY_SOURCE",
+    "duplicate_watch_created": false,
+    "latest_external_publication": "EVENET Nature Machine Intelligence version of record 2026-10-29"
+  },
+  "lanes": {
+    "A": "manifest/reference/tests added; matched QAOA run not executed",
+    "B": "provider-neutral; no SDK/target/job",
+    "C": "no RAM/VRAM/storage/transfer measurement",
+    "D": "software phase-gadget only; no native-device/fabrication result",
+    "E": "BIO-001/FUS-001 open; no material/fuel/fusion result",
+    "F": "hash-bound benchmark and equal-budget accounting contract; no cost/energy result",
+    "G": "D/G co-design preserved; no equipment/yield/process result",
+    "H": "strategic model and six-language links preserved"
+  },
+  "foundational": {
+    "FND_001_to_006": "active/evidence-gated/no new physical measurement",
+    "EQN_001_to_006": "active/evidence-gated/no equation promoted to physical law"
+  },
+  "invariant_status": {
+    "INV_029": "goal only; no data-center-to-phone result",
+    "INV_030": "no Pangola material substitution; no transmutation",
+    "INV_031": "no accepted commercial bio-oil",
+    "INV_032": "no net delivered fusion electricity",
+    "INV_033": "no project financing/WACC/interest reduction measured",
+    "INV_034": "formal mathematical traceability only",
+    "INV_035": "AI equation discovery remains evidence-gated",
+    "INV_025_026_027": "preserved; no 100M-unit replacement evidence"
+  },
+  "starting_head_ci": {
+    "core_run": 2137,
+    "core_run_id": 40996048424,
+    "checks": 16,
+    "successes": 16,
+    "failures": 0,
+    "cold_start_run": 1427,
+    "cold_start_run_id": 40996048508,
+    "conclusion": "success"
+  },
+  "post_commit_ci": "PENDING_EXACT_HEAD_OBSERVATION",
+  "paid_qpu_job_submitted": false,
+  "real_qpu_execution": false,
+  "quantum_advantage_demonstrated": false,
+  "physical_law_promoted": false,
+  "commercial_fuel_demonstrated": false,
+  "net_fusion_electricity_demonstrated": false,
+  "financing_change_measured": false
+}

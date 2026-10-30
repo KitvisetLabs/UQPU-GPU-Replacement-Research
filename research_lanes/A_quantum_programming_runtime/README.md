@@ -74,3 +74,14 @@ The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The 
 - [DC-PINN literature watch](../../docs/literature_watch/2026-10-30-derivative-constrained-pinns-equation-discovery.md) records the peer-reviewed APS method as external and unreproduced.
 - [Focused reproduction gap](../../docs/RESEARCH_GAP_DCPINN_REPRODUCTION_2026-10-30.md) requires source/data/license pinning, equal-resource baselines, frozen spatiotemporal holdouts, derivative-constraint counterexamples, and full runtime/memory accounting.
 - No PDE surrogate, physical equation, or engineering benefit is promoted from the paper abstract alone.
+
+
+## 2026-10-30 — signed-Max-Cut parity held-out manifest
+
+- Stable gate: A-GATE-PARITY-QAOA-HELDOUT-MANIFEST-001.
+- [Frozen 10-instance manifest](../../benchmarks/manifests/qaoa-parity-heldout-2026-10-30.json) and [exact logical reference certificates](../../benchmarks/references/qaoa-parity-exact-references-2026-10-30.json).
+- [Six manifest/reference tests](../../software/uqpu-prototype/tests/test_qaoa_parity_heldout_manifest.py).
+- Split: 4 train / 3 validation / 3 test, with disjoint graph families; exact enumeration covers 688 logical assignments and complete argmax sets.
+- Same decoded signed-Max-Cut objective; parity outputs must satisfy all cycle constraints; normalized regret threshold 0.05.
+- Proposed equal p=1 budgets: 8,192 shots, 32 optimizer evaluations and 10 repetitions per instance/method.
+- Status: PREREGISTERED_NOT_EXECUTED. Six isolated local tests passed. No QAOA optimizer, SDK, target-aware simulator or QPU run was performed.

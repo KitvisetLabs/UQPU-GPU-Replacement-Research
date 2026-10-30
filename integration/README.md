@@ -287,3 +287,16 @@ After the initial Batch 142 report was written, the complete current canonical c
 - WORKLOG.md now records Batch 142 in commit e987c90d3414a4261471d818ef8bba9882c11680.
 - The post-append files are 139,537 and 253,594 bytes respectively. This closes the current Batch 142 root-index/worklog sync debt; historical PR/branch/fork reconciliation remains open.
 - Exact-head CI for the subsequent commits is still UNVERIFIED. The successful prior-head runs #2105/#1385 on cef917ec are not inherited.
+
+
+## 2026-10-30 — Batch 143 parity-QAOA held-out manifest
+
+- [Batch 143](../docs/BATCH_143_PARITY_QAOA_HELDOUT_MANIFEST_AND_REFERENCE_AUDIT.md)
+- [Frozen workload manifest](../benchmarks/manifests/qaoa-parity-heldout-2026-10-30.json)
+- [Exact logical references](../benchmarks/references/qaoa-parity-exact-references-2026-10-30.json)
+- [Focused RG-QAOA-PARITY-001 gap](../docs/RESEARCH_GAP_QAOA_PARITY_MATCHED_EVIDENCE_2026-10-27.md)
+- [Lane A manifest tests](../software/uqpu-prototype/tests/test_qaoa_parity_heldout_manifest.py)
+- [Daily A–H report](DAILY_CYCLE_2026-10-30_PARITY_QAOA_HELDOUT_MANIFEST.md)
+- [Machine-readable record](INT-20261030-PARITY-QAOA-MANIFEST.json)
+
+The 10-instance pilot is split 4/3/3 across train/validation/test with disjoint graph families. Exact classical logical references cover 688 assignments. The manifest and certificates are MODEL_ONLY / PREREGISTERED_NOT_EXECUTED; no direct/parity optimizer run, SDK validation, QPU execution or cost advantage is claimed.
