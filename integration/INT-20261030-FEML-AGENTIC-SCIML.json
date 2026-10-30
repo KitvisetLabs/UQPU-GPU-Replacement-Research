@@ -1,0 +1,150 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-FEML-AGENTIC-SCIML",
+  "integration_id": "INT-20261030-FEML-AGENTIC-SCIML",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "canonical_start_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "newest_numbered_batch_on_main": 144,
+  "batch_numbering_note": "Batch 145 is already present on an unmerged source branch; this cycle uses dated artifacts rather than assigning a competing batch number.",
+  "source_branch": "research/2026-10-30-feml-agentic-sciml-cross-lane",
+  "evidence_class": "LITERATURE_ONLY_PLUS_SOFTWARE_CI_OBSERVATION",
+  "primary_owners": {
+    "MAT-FEML-PANGOLA-001": "D",
+    "AGENTIC-HANDOFF-001": "H",
+    "FUS001-STOCHASTIC-COST-COMPARATOR": "E",
+    "integration_accounting": "F"
+  },
+  "literature": [
+    {
+      "id": "LIT-FEML-2026-10-30",
+      "source": "Farsi, Bouziani and Ham, Scientific Reports (2026-08-25), DOI 10.1038/s41598-026-65125-z; arXiv:2507.15787v3",
+      "url": "https://doi.org/10.1038/s41598-026-65125-z",
+      "evidence": "PEER_REVIEWED_METHOD_AND_AUTHOR_REPORTED_REAL_TITANIUM_COUPON_BENCHMARK",
+      "novelty": "Differentiable FEM/PDE solver with structure-preserving learnable operator; real-data Ti-6Al-4V shear coupon and synthetic thermal/zero-shot examples.",
+      "limitations": "One real four-specimen titanium benchmark; reduced scalar damage law due non-identifiability; other material/thermal examples synthetic; adjoint training cost; no UQPU reproduction or Pangola data.",
+      "project_relevance": ["INV-030", "INV-035", "FND-006", "EQN-001", "EQN-002", "EQN-003", "EQN-004", "EQN-005", "EQN-006", "Lane D", "Lane E", "Lane F", "Lane G"],
+      "follow_up": "Pin Zenodo 10.5281/zenodo.21251671, reproduce the SFC2 benchmark, then use batch/specimen/geometry holdouts for a specified Pangola mechanical/thermal function."
+    },
+    {
+      "id": "LIT-AGENTIC-PRIMER-2026-10-30",
+      "source": "Feng et al., Nature Reviews Methods Primers 6, 81 (2026-10-22), DOI 10.1038/s43586-026-00534-y",
+      "url": "https://doi.org/10.1038/s43586-026-00534-y",
+      "evidence": "PEER_REVIEWED_METHODS_PRIMER",
+      "novelty": "Methods framing of memory, tool use, task decomposition, communication, reproducibility and human-in-the-loop control for agentic science.",
+      "limitations": "Review/primer, not an experimental UQPU benchmark; hallucination, tool misuse, interpretability and safety remain open.",
+      "project_relevance": ["INV-034", "INV-035", "Lane A", "Lane B", "Lane C", "Lane D", "Lane E", "Lane F", "Lane G", "Lane H"],
+      "follow_up": "Benchmark fresh-agent continuation from canonical GitHub artifacts only."
+    },
+    {
+      "id": "LIT-AGENTICSCIML-2026-10-30",
+      "source": "Jiang and Karniadakis, npj Artificial Intelligence 2, 57 (2026-04-30), DOI 10.1038/s44387-026-00102-5",
+      "url": "https://doi.org/10.1038/s44387-026-00102-5",
+      "evidence": "PEER_REVIEWED_SCIENTIFIC_ML_METHOD",
+      "novelty": "Persistent knowledge base and 10+ specialized agents for proposal, critique, retrieval, evaluation and iterative SciML implementation across six curated tasks.",
+      "limitations": "Reported 10-to->11000x figures are benchmark loss ratios, not speedups; retrieval quality matters; LLM debate is not proof; evaluation overhead and transfer to real experiments remain open.",
+      "project_relevance": ["INV-034", "INV-035", "Lane A", "Lane F", "Lane H"],
+      "follow_up": "Equal-budget single-agent versus multi-agent known-law and cold-start benchmark with independent evaluator."
+    },
+    {
+      "id": "LIT-FUSION-STOCHASTIC-2026-10-30",
+      "source": "Böhnlein et al., arXiv:2606.26536 (2026-06-25)",
+      "url": "https://arxiv.org/abs/2606.26536",
+      "evidence": "OFFICIAL_ARXIV_PREPRINT",
+      "novelty": "Stochastic LCOE and implied learning-rate analysis across MCF, ICF and MIF maturity stages.",
+      "limitations": "Preprint; model projections, not observed plant costs; above-30% implied learning-rate output conflicts methodologically with Tang et al. 2-8% experience-rate estimate; full net-electric boundary not yet audited.",
+      "project_relevance": ["INV-032", "INV-033", "FUS-001", "FIN-001", "Lane E", "Lane F", "Lane G", "Lane H"],
+      "follow_up": "Reconstruct inputs, FOAK/NOAK and learning definitions; compare like-for-like and add full net-electric/replacement/financing boundary."
+    }
+  ],
+  "lanes": {
+    "A": {"status": "Batch 144 exact parity mapping: 10 fixtures, 688 logical assignments, 7072 parity strings. PR156 core CI #2252 passed 15/15; no QAOA quality/QPU advantage claim.", "next_gate": "Paired direct/parity p=1 QAOA at frozen 8192 shots, 32 evaluations, 10 repetitions; independent SDK and target-aware simulation."},
+    "B": {"status": "Provider-neutral IBM, Braket, Azure, IonQ, Rigetti, D-Wave, IQM, Quantinuum, Pasqal, QuEra, Quandela, OQC routes preserved; no paid QPU job.", "next_gate": "Same-provider/target/calibration/price binding; simulator/dry-run first."},
+    "C": {"status": "State dimension and parity register sizes remain mathematical counts, not readable RAM/VRAM/HBM or storage.", "next_gate": "Measure bytes, peak memory, transfer, state/I/O, persistence and reconstruction."},
+    "D": {"status": "FEML literature watch and Pangola transfer contract; no device, coupon or fabrication result.", "next_gate": "Pin Zenodo archive and independently reproduce Ti-6Al-4V SFC2 benchmark."},
+    "E": {"status": "FUS-001 stochastic cost preprint comparator; BIO-001/Pangola remains open. No accepted fuel, material substitution or net fusion electricity.", "next_gate": "Reconcile learning-rate models and complete net-electric/lifecycle boundary; measure Pangola feedstock/product."},
+    "F": {"status": "External source/model claims remain separate from project evidence; no project WACC, interest or accepted-task cost reduction.", "next_gate": "Matched uncertainty and all-in cost ledgers with source hashes."},
+    "G": {"status": "D/G co-design retained; no process window, yield, equipment throughput or cost-per-good-device result.", "next_gate": "Map validated device/material requirements to process window, metrology and yield."},
+    "H": {"status": "Agentic AI primer and AgenticSciML watch; GitHub-only cold-start benchmark proposed; multilingual strategic context preserved.", "next_gate": "Run fresh-agent handoff and single-vs-multi-agent benchmark under frozen budgets."}
+  },
+  "pairwise_review": [
+    {"pair":"A-B","interface":"workload semantics to provider-neutral solver execution","status":"NO_PROVIDER_JOB"},
+    {"pair":"A-C","interface":"solver/operator memory and data movement","status":"MEASUREMENT_OPEN"},
+    {"pair":"A-D","interface":"FEML inverse operator and device/material models","status":"LITERATURE_ONLY"},
+    {"pair":"A-E","interface":"equation/solver tools for material, biomass and energy models","status":"NO_TRANSFER_CLAIM"},
+    {"pair":"A-F","interface":"frozen evaluator and accepted-output cost accounting","status":"CONTRACT_ONLY"},
+    {"pair":"A-G","interface":"solver resource requirements to manufacturing constraints","status":"NO_PROCESS_DATA"},
+    {"pair":"A-H","interface":"agentic equation discovery and GitHub-only cold start","status":"PROPOSED_BENCHMARK"},
+    {"pair":"B-C","interface":"provider runtime to state/I/O/transfer","status":"NO_MATCHED_RUN"},
+    {"pair":"B-D","interface":"target constraints to device/process architecture","status":"NO_TARGET_NATIVE_RESULT"},
+    {"pair":"B-E","interface":"cloud energy/cooling to infrastructure","status":"NO_FACILITY_MEASUREMENT"},
+    {"pair":"B-F","interface":"provider pricing to all-in accepted-task cost","status":"NO_BILLABLE_QPU_RESULT"},
+    {"pair":"B-G","interface":"provider/device capability to factory equipment","status":"NO_FAB_EVIDENCE"},
+    {"pair":"B-H","interface":"provider ecosystem to strategic industry","status":"LITERATURE_ONLY"},
+    {"pair":"C-D","interface":"memory hierarchy to chip/package constraints","status":"NO_PHYSICAL_MEMORY_RESULT"},
+    {"pair":"C-E","interface":"data movement, thermal load and energy infrastructure","status":"MEASUREMENT_OPEN"},
+    {"pair":"C-F","interface":"memory/I/O accounting to total cost","status":"CONTRACT_REQUIRED"},
+    {"pair":"C-G","interface":"memory packaging/interconnect to manufacturing","status":"NO_YIELD_EVIDENCE"},
+    {"pair":"C-H","interface":"state/data infrastructure in future-industry plan","status":"NO_QUANTITATIVE_MILESTONE"},
+    {"pair":"D-E","interface":"FEML material characterization and Pangola function","status":"TRANSFER_CONTRACT_ONLY"},
+    {"pair":"D-F","interface":"coupon/solver validation and measurement economics","status":"NO_REPRODUCTION"},
+    {"pair":"D-G","interface":"device/process co-design","status":"ACTIVE_NO_PROCESS_RESULT"},
+    {"pair":"D-H","interface":"material/device research to strategic plan","status":"NO_QUALIFICATION_CLAIM"},
+    {"pair":"E-F","interface":"accepted fuel/net-electric/material function to lifecycle economics","status":"NO_COMMERCIAL_RESULT"},
+    {"pair":"E-G","interface":"biomass/material process to equipment/process windows","status":"NO_SCALEUP_RESULT"},
+    {"pair":"E-H","interface":"Pangola/fusion strategy and capital allocation","status":"NO_INVESTMENT_CLAIM"},
+    {"pair":"F-G","interface":"qualified-device yield and cost-per-good-device","status":"NO_MANUFACTURING_DATA"},
+    {"pair":"F-H","interface":"principal, interest, hurdle/WACC and time-to-evidence","status":"NO_PROJECT_FINANCE_RECORD"},
+    {"pair":"G-H","interface":"factory capability and future-industry roadmap","status":"NO_FAB_RESULT"}
+  ],
+  "foundations": {
+    "FND-001": "thermodynamic-gap accounting open; no new measurement",
+    "FND-002": "output-information lower bounds binding; no new bound",
+    "FND-003": "matched control-versus-QSL measurement open",
+    "FND-004": "alternative physical primitives remain hypothesis/theorem gated",
+    "FND-005": "QFT/particle mechanism scans remain source/runtime/provenance gated",
+    "FND-006": "mathematics-first invention active; FEML/agentic methods are candidate workflows only",
+    "EQN-001-006": "generator-to-constraint-to-heldout-to-counterexample-to-proof/experiment-to-replication pipeline preserved"
+  },
+  "invariants": {
+    "INV-029": "Data-Center-to-One-Phone physical compression remains unproven",
+    "INV-030": "Pangola functional substitution only; no transmutation or material qualification",
+    "INV-031": "no accepted commercial Pangola bio-oil",
+    "INV-032": "no reliable net delivered fusion electricity or commercial LCOE",
+    "INV-033": "no measured project principal/interest/WACC reduction",
+    "INV-034": "foundational physics and mathematics agenda preserved",
+    "INV-035": "AI equation discovery permanent; no candidate promoted to law"
+  },
+  "legacy_invariants": ["INV-025", "INV-026", "INV-027"],
+  "paid_qpu_execution_authorized": false,
+  "physical_material_testing_performed": false,
+  "fuel_production_performed": false,
+  "fusion_experiment_performed": false,
+  "financing_transaction_performed": false,
+  "ci": {
+    "main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+    "main_combined_status": "NO_STATUS_CONTEXTS_RETURNED",
+    "main_exact_head_ci": "UNVERIFIED",
+    "pr156_head_sha": "20ee610448e2c0cacf4509249d4d0377a56ec120",
+    "pr156_core_run": 2252,
+    "pr156_core_run_id": 41024469294,
+    "pr156_jobs": "15/15 SUCCESS",
+    "pr154_head_sha": "3b11949c517631df77ac893bbaa189a35e108971",
+    "pr154_core_run": 2190,
+    "pr154_core_run_id": 41013193779,
+    "pr154_jobs": "15/15 SUCCESS",
+    "cold_start_exact_head": "NOT_EXPOSED_BY_AVAILABLE_WORKFLOW_QUERY"
+  },
+  "next_gates": [
+    "paired direct/parity p=1 QAOA under frozen equal budgets",
+    "pin and reproduce FEML Ti-6Al-4V archive before Pangola coupon work",
+    "reconcile Tang 2-8% and Böhnlein above-30% learning-rate methods with like-for-like inputs and complete net-electric boundaries",
+    "run AGENTIC-HANDOFF-001 fresh-agent GitHub-only cold-start and equal-budget single-vs-multi-agent benchmark"
+  ],
+  "sync": {
+    "status": "PENDING_MAIN",
+    "source_branch": "research/2026-10-30-feml-agentic-sciml-cross-lane",
+    "merge_performed": false,
+    "canonical_main_modified": false
+  }
+}
