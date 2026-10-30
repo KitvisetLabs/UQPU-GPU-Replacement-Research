@@ -85,3 +85,11 @@ The sparse-state-preparation asset manifest remains `SOURCE_METADATA_ONLY`. The 
 - Same decoded signed-Max-Cut objective; parity outputs must satisfy all cycle constraints; normalized regret threshold 0.05.
 - Proposed equal p=1 budgets: 8,192 shots, 32 optimizer evaluations and 10 repetitions per instance/method.
 - Status: PREREGISTERED_NOT_EXECUTED. Six isolated local tests passed. No QAOA optimizer, SDK, target-aware simulator or QPU run was performed.
+
+
+## 2026-10-30 — Batch 144 exact mapping audit
+
+- [Batch report](../../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md) and [daily integration](../../integration/DAILY_CYCLE_2026-10-30_PARITY_QAOA_MAPPING_AUDIT.md).
+- Added `tests/test_qaoa_parity_heldout_mapping.py`: all 10 frozen signed-Max-Cut fixtures, 688 logical assignments, 7,072 physical parity strings, direct-QUBO exact baseline, parity exact certificate, fail-closed decoding and argmax correspondence.
+- Evidence: software contract + model-only exact small-instance reference. No QAOA optimizer, SDK, target-aware simulation, QPU execution or advantage claim.
+- Next: paired direct/parity optimizer/sampler under the frozen equal budgets; validate bit order, operator sign and decoder independently first.

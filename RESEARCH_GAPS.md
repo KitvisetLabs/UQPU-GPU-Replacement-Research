@@ -1429,3 +1429,8 @@ Regazzoni, *Computational Mechanics* (2026), DOI 10.1007/s00466-026-02850-2, rep
 **New artifacts:** 10-instance train/validation/test manifest, exact logical references, six regression tests and Batch 143 integration report.  
 **Evidence class:** SOFTWARE_CONTRACT + MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE.  
 **Next gate:** matched direct-versus-parity QAOA runner, independent SDK/operator/decoder verification, target-aware simulation, exact reference scoring and full accepted-task resource/cost accounting. No paid QPU execution without explicit consent, credentials and a bounded budget.
+
+
+## 2026-10-30 — RG-QAOA-PARITY-001 mapping audit (Batch 144)
+
+**Status:** OPEN / EXACT_MAPPING_AUDIT_ADDED / MATCHED_QAOA_NOT_EXECUTED. **Owner:** Lane A; integration owner Lane F. **Evidence:** SOFTWARE_CONTRACT + MODEL_ONLY_EXACT_SMALL_INSTANCE_REFERENCE. The new test `software/uqpu-prototype/tests/test_qaoa_parity_heldout_mapping.py` independently checks the direct signed-Max-Cut QUBO and edge-parity encoding for all 10 frozen instances, all 688 logical assignments, all 7,072 parity basis strings, cycle constraints, fail-closed decoding, exact optimum scores and the full reference argmax mapping. It adds no QAOA optimizer run, SDK/target simulation, QPU result, cost, energy or advantage. Next: paired direct-versus-parity p=1 execution under the frozen equal budgets, independent operator/bit-order/decoder checks and complete accepted-task resource accounting. No paid QPU job without explicit consent, credentials and bounded budget.

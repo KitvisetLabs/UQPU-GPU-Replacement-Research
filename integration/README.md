@@ -300,3 +300,15 @@ After the initial Batch 142 report was written, the complete current canonical c
 - [Machine-readable record](INT-20261030-PARITY-QAOA-MANIFEST.json)
 
 The 10-instance pilot is split 4/3/3 across train/validation/test with disjoint graph families. Exact classical logical references cover 688 assignments. The manifest and certificates are MODEL_ONLY / PREREGISTERED_NOT_EXECUTED; no direct/parity optimizer run, SDK validation, QPU execution or cost advantage is claimed.
+
+
+## 2026-10-30 — Batch 144 parity-QAOA exact mapping audit
+
+- [Batch 144](../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md)
+- [Daily A–H report](DAILY_CYCLE_2026-10-30_PARITY_QAOA_MAPPING_AUDIT.md)
+- [Machine record](INT-20261030-PARITY-QAOA-MAPPING-AUDIT.json)
+- [Exhaustive mapping test](../software/uqpu-prototype/tests/test_qaoa_parity_heldout_mapping.py)
+- [Frozen workload manifest](../benchmarks/manifests/qaoa-parity-heldout-2026-10-30.json)
+- [Exact logical references](../benchmarks/references/qaoa-parity-exact-references-2026-10-30.json)
+
+The test checks all 688 logical assignments and 7,072 parity basis strings across 10 fixtures. It is an exact mapping/reference audit, not a QAOA performance run. No optimizer, SDK, target simulator, QPU, material, fuel, fusion or finance experiment was executed.
