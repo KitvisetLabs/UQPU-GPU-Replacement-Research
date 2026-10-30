@@ -651,8 +651,19 @@
       "head": "research/batch-145-qsl-htl-diamond-and-qaoa-v2",
       "head_sha": "1148496e1ff1c342604dc8775e45213a533f246b",
       "ahead_by": 29,
-      "exact_head_ci": "NOT_EXPOSED",
-      "note": "Batch 145 source PR; pending-main summary is tracked separately. No main SHA mapping."
+      "exact_head_ci": "CORE_RUN_2219_QUEUED; COMBINED_STATUS_EMPTY; NO_COLD_START_RESULT_EXPOSED",
+      "note": "Batch 145 source PR; pending-main summary is tracked separately. No main SHA mapping.",
+      "latest_observed_run": {
+        "number": 2219,
+        "run_id": 41019737304,
+        "status": "QUEUED",
+        "queued_python_jobs": [
+          "test (3.10)",
+          "test (3.11)",
+          "test (3.12)"
+        ],
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/41019737304"
+      }
     },
     "157": {
       "state": "pending_creation",
@@ -660,8 +671,8 @@
       "merged": false,
       "base": "main",
       "head": "sync/pending-pr156-batch145-summary",
-      "head_sha": "8f574f412355dc23115165212e3ec5d63585bd1d",
-      "note": "Pending-main summary branch for PR #156; not yet opened/merged."
+      "head_sha": "4adde9ca71ce1cdf93af38aa560a49d0f8ba51cc",
+      "note": "Pending-main summary branch; exact-head CI not exposed at last query."
     }
   },
   "latest_pr_ci_observation": {
