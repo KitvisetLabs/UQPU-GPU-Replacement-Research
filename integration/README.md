@@ -1,5 +1,14 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — EVENET HEP foundation-model workload
+
+- [Eight-lane cycle report](DAILY_CYCLE_2026-10-30_EVENET_HEP_FOUNDATION_MODEL.md)
+- [Lane A workload contract](../research_lanes/A_quantum_programming_runtime/EVENET_HEP_FOUNDATION_MODEL_WORKLOAD_CONTRACT_2026-10-30.md) and [focused reproduction gap](../docs/RESEARCH_GAP_EVENET_HEP_FOUNDATION_MODEL_TRANSFER_2026-10-30.md)
+- [Literature watch](../docs/literature_watch/2026-10-30-evenet-particle-collision-foundation-model.md) and [machine-readable record](INT-20261030-EVENET-HEP-WORKLOAD.json)
+- Source-reported scale: about 500 million events, 100,000 GPU-hours on 512 A100 GPUs, and about 4 TB raw to 180 GB Parquet; event generation and preprocessing are excluded from the GPU-hour figure.
+- Evidence boundary: peer-reviewed external article and public code metadata only; no UQPU reproduction, GPU/NPU benchmark, QPU job, energy measurement or economic advantage claim.
+- Next gate: verify checkpoint/data licenses and hashes, then reproduce one bounded task with group-disjoint holdouts and complete resource/cost accounting.
+
 ## Latest integrated delta — 2026-10-30 — temporal-parallel QEC decoder
 
 - [Eight-lane cycle report](DAILY_CYCLE_2026-10-30_TEMPORAL_PARALLEL_QEC_DECODER.md)
