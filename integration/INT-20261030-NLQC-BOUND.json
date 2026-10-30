@@ -1,0 +1,48 @@
+{
+  "schema": "uqpu.integration.v1",
+  "id": "INT-20261030-NLQC-BOUND",
+  "integration_id": "INT-20261030-NLQC-BOUND",
+  "date": "2026-10-30",
+  "canonical_repository": "KitvisetLabs/UQPU-GPU-Replacement-Research",
+  "starting_main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "latest_numbered_batch_on_main": 144,
+  "primary_owner": "B",
+  "integration_owner": "F",
+  "work_item_id": "NLQC-BOUND-001",
+  "gap_id": "RG-B-NLQC-ENTANGLEMENT-ROUTING-001",
+  "evidence_class": "OFFICIAL_PREPRINT_THEORY_ONLY",
+  "status": "LITERATURE_ONLY_NOT_REPRODUCED_NOT_APPLICABLE_TO_CURRENT_QAOA_CLOUD_PATH",
+  "source": {
+    "title": "New lower bounds for CDS and f-routing",
+    "authors": [
+      "Atsuya Hasegawa",
+      "Ranitha Mataraarachchi"
+    ],
+    "arxiv": "2609.24291v2",
+    "official_url": "https://arxiv.org/abs/2609.24291",
+    "v1_submitted": "2026-09-21",
+    "v2_revised": "2026-10-12"
+  },
+  "results": [
+    "Robust CDS shared-randomness cost lower-bounded by logarithm of deterministic SMP communication complexity; tight for equality.",
+    "One-sided-perfect f-routing entanglement cost lower-bounded in terms of sign rank; inner-product function obtains a linear lower bound matching a known upper bound."
+  ],
+  "nonclaims": [
+    "Not a general fully-robust f-routing entanglement theorem.",
+    "Not a lower bound for ordinary cloud QPU API submissions, generic QAOA, arbitrary distributed quantum computation, RAM/storage, device latency, energy or dollar cost.",
+    "Not reproduced by UQPU and not a new physical law."
+  ],
+  "lanes": {
+    "A": "No change; QAOA v2 review/budget clarification remains highest gate.",
+    "B": "Owns protocol applicability; current QAOA/cloud path is not NLQC.",
+    "C": "Keep entanglement/randomness distinct from classical memory bytes.",
+    "D": "No device/fabrication consequence.",
+    "E": "No material/fuel/fusion consequence.",
+    "F": "Owns lower-bound evidence and resource accounting.",
+    "G": "No manufacturing consequence; D/G co-design continues.",
+    "H": "Publish and preserve source context; no strategic claim promoted."
+  },
+  "next_gate": "Only if a future workload is genuinely distributed across quantum nodes, specify the exact function, protocol, input partition, communication, randomness, error model and entanglement resource, then reconstruct the theorem assumptions and proof mapping. Otherwise record NOT_APPLICABLE.",
+  "paid_qpu_execution_authorized": false,
+  "worklog_research_gaps_aggregate_sync": "DEFERRED_APPEND_ONLY; focused gap and integration report are canonical"
+}

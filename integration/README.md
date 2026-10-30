@@ -1,5 +1,15 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — nonlocal quantum routing lower-bound applicability
+
+- [Lane B literature watch](../docs/literature_watch/2026-10-30-nlqc-cds-frouting-entanglement-lower-bounds.md)
+- [Focused applicability gap](../docs/RESEARCH_GAP_NLQC_ENTANGLEMENT_ROUTING_BOUND_APPLICABILITY_2026-10-30.md)
+- [Eight-lane integration report](DAILY_CYCLE_2026-10-30_NLQC_ENTANGLEMENT_BOUND.md)
+- [Machine-readable record](INT-20261030-NLQC-BOUND.json)
+
+Hasegawa and Mataraarachchi (arXiv:2609.24291v2, revised 2026-10-12) establish scoped lower bounds for robust conditional disclosure of secrets and one-sided-perfect f-routing. This is an external theory/preprint result, not a bound for arbitrary cloud-QPU job submission, generic distributed quantum computation, or UQPU's current QAOA workload. The project action is to retain the theorem's exact protocol assumptions and only test applicability if a future Lane B workload actually uses nonlocal routing. No QPU advantage, new physical law, memory equivalence or cost result is claimed.
+
+
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
 
 - [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)
