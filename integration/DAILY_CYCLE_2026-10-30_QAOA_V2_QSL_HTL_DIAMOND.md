@@ -42,3 +42,8 @@ Main-head `41fac3953773ae0016a09539be57c3ed6b379771` returned no combined-status
 ## Next gate
 
 Run the v2 policy test, then implement train-only direct/parity QAOA parameter fitting with validation-only selection and frozen test evaluation. Require independent SDK/operator/decoder checks and target-aware simulation before considering any real-QPU job. Paid jobs remain unauthorized.
+
+
+## Mandatory 28-pair A–H integration scan
+
+The full 28-pair screen and five selected three-plus-lane combinations are recorded in [PAIRWISE_AH_SCREEN_2026-10-30.md](PAIRWISE_AH_SCREEN_2026-10-30.md). The only tested integration in this cycle is static v2 manifest/reference hash binding; the new regression test remains CI-pending. No end-to-end hardware or energy/material integration is claimed.
