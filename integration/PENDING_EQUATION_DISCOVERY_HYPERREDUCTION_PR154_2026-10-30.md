@@ -50,7 +50,7 @@ No paid QPU job, material coupon test, fuel production, fusion experiment or fin
 
 - Parent main SHA 41fac395 had no combined-status contexts exposed by the available connector.
 - Parent d3d41796 core run #2140 returned 15/15 successful jobs and cold-start #1430 succeeded; those runs do not validate current main or PR #154.
-- Earlier PR #154 head 44656247 had core run #2149; all three Python matrix jobs passed, two extended jobs were in progress and the remaining extended jobs were queued at last observation. Updated source head 9e9393 had no workflow run exposed at the last query.
+- Earlier PR #154 head 44656247 had core run #2149; all three Python matrix jobs passed, two extended jobs were in progress and the remaining extended jobs were queued. Prior source head 9e9393 had core run #2166 queued. Current source head 3b11949 has core run #2190 queued with all three Python matrix jobs queued; no completed cold-start result is exposed.
 - PR #154 remains open/unmerged. Require exact-head CI, review and reconciliation before merge.
 - Inaccessible historical branches/forks and older open PRs remain outside this cycle's complete reconciliation.
 
