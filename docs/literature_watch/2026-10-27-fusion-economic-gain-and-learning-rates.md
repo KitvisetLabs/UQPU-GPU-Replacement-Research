@@ -32,3 +32,8 @@ Use Whyte et al. as a candidate architecture-neutral cross-check for the normali
 Create a source-pinned sensitivity envelope with learning-rate scenarios of 2%, 5%, 8%, 13% and 20%; these are scenario values, not probability weights or forecasts. For each architecture, report assumptions and units for FOAK CAPEX, deployment doublings, construction schedule, utilization, net-electric efficiency, recirculating power, surface/component lifetime, replacement downtime/cost, fuel/blanket cycle, maintenance/remote handling, fixed and variable O&M, grid delivery, financing and decommissioning. Do not double-count heat/fuel coproduct credits or treat gross plasma gain as net electricity.
 
 Acceptance requires a reproducible model, source-linked inputs, sensitivity/uncertainty propagation, independent arithmetic checks, and explicit missing-data flags. Any output built from unvalidated inputs remains `MODEL_ONLY`; it cannot be reported as commercial ultra-low-cost fusion evidence.
+
+
+## 2026-10-30 supplemental comparator
+
+Böhnlein et al., arXiv:2606.26536 (2026-06-25), now has a separate [stochastic fusion-cost watch](2026-10-30-fusion-stochastic-cost-projections.md). Its abstract reports mature-stage mean LCOE values of US$110–144/MWh across MCF/ICF/MIF and implied learning rates above 30%, while describing the projections as optimistic. This preprint is not a measured plant cost and its learning-rate method differs from Tang et al.'s 2–8% estimate. Keep both source methods separate until FOAK/NOAK, deployment doublings, starting CAPEX, WACC and net-electric boundaries are reconciled; do not average them.

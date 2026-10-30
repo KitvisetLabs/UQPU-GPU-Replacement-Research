@@ -48,3 +48,10 @@ Current status is `LITERATURE_ONLY`. Any calculated envelope is `MODEL_ONLY` unt
 ## Next action
 
 Implement a reproducible scenario-input schema and unit checks after the architecture-neutral cost-driver interface is inspected. Do not overwrite existing FUS-001 work; integrate through its current cost ledger and keep this gap as the source/assumption specification.
+
+
+## 2026-10-30 supplemental stochastic model comparator
+
+Added Böhnlein et al., arXiv:2606.26536, through [the dedicated literature watch](literature_watch/2026-10-30-fusion-stochastic-cost-projections.md). Its abstract reports mature-stage mean LCOE values of US$114.6/MWh (MCF), US$110.3/MWh (ICF) and US$143.9/MWh (MIF), with implied learning rates above 30%. These are preprint model outputs, not observed costs. They differ from Tang et al.'s 2–8% technology-characteristic/expert-elicitation estimate. The apparent disagreement must be resolved using matched starting CAPEX, FOAK/NOAK definitions, deployment doublings, technology families, currency/year normalization, WACC and complete net-electric cost boundaries. Do not average the estimates or treat either as a project forecast.
+
+**New gate:** reconstruct the preprint's source dataset, uncertainty distributions, maturity mapping and Monte Carlo calculation; then compare like-for-like against Tang et al. Add/confirm recirculating power, conversion/cooling, component replacement, fuel cycle, maintenance/remote handling, grid delivery and decommissioning before any NET electricity comparison. Status remains LITERATURE_ONLY / MODEL_ONLY; no commercial fusion evidence.

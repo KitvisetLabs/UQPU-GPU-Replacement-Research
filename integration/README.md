@@ -1,5 +1,15 @@
 # Cross-Lane Integration Hub
 
+## Latest integrated delta — 2026-10-30 — FEML, agentic scientific discovery and fusion-cost uncertainty
+
+- [Daily A–H integration](DAILY_CYCLE_2026-10-30_FEML_AGENTIC_SCIENTIFIC_DISCOVERY.md)
+- [Machine-readable record](INT-20261030-FEML-AGENTIC-SCIML.json)
+- [FEML literature watch](../docs/literature_watch/2026-10-30-feml-missing-physics-discovery.md) and [Pangola transfer gap](../docs/RESEARCH_GAP_FEML_PANGOLA_CONSTITUTIVE_TRANSFER_2026-10-30.md)
+- [Agentic AI literature watch](../docs/literature_watch/2026-10-30-agentic-ai-scientific-discovery-primer.md) and [cold-start gap](../docs/RESEARCH_GAP_AGENTIC_SCIENTIFIC_DISCOVERY_HANDOFF_2026-10-30.md)
+- [Fusion stochastic-cost watch](../docs/literature_watch/2026-10-30-fusion-stochastic-cost-projections.md) and existing [FUS-001 learning-rate gap](../docs/RESEARCH_GAP_FUS001_ECONOMIC_GAIN_AND_LEARNING_RATES_2026-10-27.md)
+
+This cycle adds source-attributed FEML, agentic-SciML and stochastic-fusion-cost comparators. It reviews all 28 A–H interfaces, keeps the newest numbered main batch at 144 (Batch 145 is already pending on another branch), and does not claim Pangola transfer, new physics, net fusion electricity, reduced WACC or UQPU performance. Main exact-head CI remains unverified; PR-head CI observations do not transfer to main.
+
 ## Latest integrated delta — 2026-10-30 — Batch 141 EveNet asset pins and FND-001 frontier
 
 - [Batch 141](../docs/BATCH_141_EVENET_ASSET_HASHES_AND_FND001_FRONTIER.md)

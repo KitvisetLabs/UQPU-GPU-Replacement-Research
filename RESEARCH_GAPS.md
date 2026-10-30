@@ -1444,3 +1444,23 @@ Pan et al., *Journal of Corporate Finance* 102, 103099, early online 2026-10-14,
 ## 2026-10-30 — BIO-001 potato–okra HTL–AD–HDO model watch
 
 Added `docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md` for Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), 100080, DOI 10.1016/j.cejgas.2026.100080. This is an external potato–okra process simulation/TEA, not Pangola evidence. Reproduction must reconcile the 36.9 wt% optimized versus 31.6 wt% integrated bio-crude yield bases, HTL-only ERR versus integrated energy recovery, and deterministic NPV (~US$11.24M) versus Monte Carlo mean (~US$2.79M). The source model/supplement and external validation must be independently audited. Pangola transfer requires matched measured feedstock batches, final accepted-liquid quality, complete mass/energy closure, H2/catalyst/utilities, lifecycle costs and non-double-counted coproduct credits. No commercial fuel claim.
+
+
+## 2026-10-30 — FEML Pangola transfer and agentic cold-start gaps
+
+### RG-FEML-PANGOLA-TRANSFER-001 (MAT-FEML-PANGOLA-001)
+
+Farsi, Bouziani and Ham, Scientific Reports (2026-08-25), DOI 10.1038/s41598-026-65125-z, report differentiable finite-element learning of missing constitutive/thermal operators. The real-data result is a four-specimen Ti–6Al–4V shear-coupon benchmark; the paper's thermal and other transfer examples are synthetic. UQPU has not reproduced the Zenodo archive or measured any Pangola-derived material. Before transfer, define the target function and incumbent material, pin source/data/environment hashes, reproduce the published titanium benchmark, then collect replicated Pangola coupon data across batches and blind geometries. Enforce objectivity, tensor symmetry, positivity, dissipation/energy balance, mesh objectivity, held-out predictions and counterexample checks. Electrical-conductivity claims require a separate PDE and direct measurement. No material substitution or new law is claimed.
+
+### RG-AGENTIC-HANDOFF-001 (AGENTIC-HANDOFF-001)
+
+Feng et al.'s 2026-10-22 agentic-science methods primer and Jiang/Karniadakis AgenticSciML motivate a measurable cold-start benchmark. UQPU has not reproduced the AgenticSciML benchmark or demonstrated that a fresh agent can resume correctly from GitHub-only memory. Compare single-agent and role-specialized multi-agent workflows under identical frozen tasks, model/tool versions, data splits, retrieval corpus and token/API/compute budgets. Measure known-law recovery, held-out error, physics-constraint failures, false discoveries, counterexamples, independent reproduction, cold-start reconstruction accuracy, time, human correction and cost per accepted result. Agent agreement is not proof; physical claims still require independent experiment/proof.
+
+## 2026-10-30 — FUS-001 stochastic cost-model disagreement
+
+Böhnlein et al., arXiv:2606.26536, report stochastic mature-stage LCOE means of US$114.6/MWh MCF, US$110.3/MWh ICF and US$143.9/MWh MIF with implied learning rates above 30%. This is a preprint model, not measured plant cost. It differs from Tang et al.'s already indexed Nature Energy 2–8% experience-rate estimate. Reconcile source datasets, FOAK/NOAK definitions, starting CAPEX, deployment doublings, technology families, currency/year, WACC and full net-electric boundaries before scenario use. Do not average or treat either estimate as project forecast. Recirculating power, conversion/cooling, component replacement, fuel cycle, maintenance/remote handling, grid delivery and decommissioning remain explicit cost/energy gates. No commercial net-electricity result.
+
+
+## 2026-10-30 — Lane A v1 test-objective adaptation blocker
+
+The committed Batch 143/144 v1 manifest permits per-instance variational-angle optimization on test objectives while describing test as final evaluation only. This is test-objective adaptation and is not a strict held-out generalization protocol. Do not execute v1 for a generalization claim. PR #156 adds the v2 manifest/reference pair and regression test under RG-A-QAOA-TEST-LEAKAGE-001: one global p=1 parameter vector fitted on train only, validation-only preregistered selection, frozen test, no per-instance test adaptation and exact references for scoring/audit only. PR #156 core run #2252 passed 15/15 jobs, but the source PR remains draft/open/unmerged and exact-head cold-start is not exposed. The paired direct/parity pilot is blocked until v2 passes exact-head core/cold-start, review and canonical merge. No QAOA optimizer has been run.
