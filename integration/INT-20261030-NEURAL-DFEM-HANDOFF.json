@@ -160,8 +160,9 @@
       "state": "open",
       "draft": false,
       "merged": false,
-      "mergeable": false,
-      "head_sha": "3910ef7e7eefb9997a19cbb916b031e20ec7dfaf"
+      "mergeable": true,
+      "head_sha": "3910ef7e7eefb9997a19cbb916b031e20ec7dfaf",
+      "note": "Latest metadata read reports mergeable=true; still open/unmerged and requires review/reconciliation."
     }
   }
 }
