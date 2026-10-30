@@ -17,3 +17,8 @@ The [waveguide/triple-dot device watch](../../docs/literature_watch/2026-10-30-t
 ## Planar qLDPC D/G interface — 2026-10-30
 
 The [planar qLDPC boundary gap](../../docs/RESEARCH_GAP_QEC_PLANAR_GAPPED_BOUNDARY_REPRODUCTION_2026-10-30.md) requires any code-level proposal to emit check weight/degree, geometric span, routing, native-gate depth, ancillas, measurement schedule and process/packaging/yield constraints before manufacturing claims.
+
+
+## Agentic D/G process co-design input — 2026-10-30
+
+The [VIBRATO literature watch](../../docs/literature_watch/2026-10-30-agentic-differentiable-detector-codesign.md), [focused gap](../../docs/RESEARCH_GAP_DG_AGENTIC_DETECTOR_COSIGN_REPRODUCTION_2026-10-30.md) and [Lane D transfer contract](../D_device_chip_fabrication_packaging/AGENTIC_DIFFERENTIABLE_COSIGN_TRANSFER_CONTRACT_2026-10-30.md) add a method-level candidate for coupling device geometry, process windows, metrology and downstream performance. No manufacturing equipment, yield or factory result is claimed.
