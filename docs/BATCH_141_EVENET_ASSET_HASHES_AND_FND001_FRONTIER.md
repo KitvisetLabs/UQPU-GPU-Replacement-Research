@@ -19,7 +19,7 @@ Batch 140 was the newest committed numbered batch at start. Its FUS-001 maintena
 
 ### New verified source metadata
 
-The Lane A asset manifest is research_lanes/A_quantum_programming_runtime/EVENET_ASSET_PIN_MANIFEST_2026-10-30.json.
+The Lane A asset manifest is ../research_lanes/A_quantum_programming_runtime/EVENET_ASSET_PIN_MANIFEST_2026-10-30.json.
 
 | Asset | Pinned source | Source metadata verified | Still open |
 |---|---|---|---|
@@ -51,7 +51,7 @@ No inference, model training, GPU/NPU benchmark, SDK validation, simulator run o
 
 ## 3. Fresh literature delta
 
-Published the dedicated 2026-10-30 literature watch. Material deltas:
+Published the dedicated [2026-10-30 literature watch](literature_watch/2026-10-30-nonequilibrium-thermodynamics-and-equation-discovery.md). Material deltas:
 
 - FND-001: Dago & Bellon, PRL 137, 147101 (2026-09-30), report feedback-shifted nonequilibrium erasure cost below the bath-temperature reference. The result requires full controller/information/resource accounting; it is not a universal Landauer violation.
 - FND-001/FND-004: Sundelin et al., arXiv:2609.37149 (2026-09-29), report a quantum thermal-machine TUR ratio 1.71 ± 0.17 against the classical Q >= 2 bound at 81 mK. It remains a preprint; entropy-production boundary and matched classical control require scrutiny.
