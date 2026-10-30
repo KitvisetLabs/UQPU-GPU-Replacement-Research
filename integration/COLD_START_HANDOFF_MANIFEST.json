@@ -649,21 +649,33 @@
       "merged": false,
       "base": "main",
       "head": "research/batch-145-qsl-htl-diamond-and-qaoa-v2",
-      "head_sha": null,
-      "ahead_by": 39,
-      "exact_head_ci": "CORE_RUN_2241_QUEUED; COMBINED_STATUS_EMPTY; NO_COLD_START_RESULT",
-      "note": "Resolve current source head from PR #156 metadata; latest comparison is 39 commits ahead, 23 changed files. Exact per-commit mapping remains sync debt.",
-      "latest_observed_run": {
+      "head_sha": "20ee610448e2c0cacf4509249d4d0377a56ec120",
+      "ahead_by": 40,
+      "exact_head_ci": "CORE_RUN_2252_QUEUED; INITIAL_RUN_2241_FAILED_LANE_H_EVIDENCE_ENUM; NO_EXACT_HEAD_COLD_START_RESULT",
+      "note": "Current comparison is 40 commits ahead, 0 behind, 23 changed files. Initial run #2241 failed one cold-start handoff unit test because Lane H used invalid STRATEGIC_RESEARCH; repair commit normalized it to CONCEPT. Exact per-commit SHA mapping remains sync debt.",
+      "initial_failed_run": {
         "number": 2241,
         "run_id": 41020189406,
-        "status": "QUEUED",
+        "conclusion": "failure",
         "head_sha": "bdc39c9fd0554f213181d52483239d066ae67951",
+        "failed_test": "test_canonical_repository_passes_cold_start_audit",
+        "error": "lane_H:evidence_class_invalid",
+        "tests_run": 967,
+        "failures": 1,
+        "skipped": 25,
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/41020189406"
+      },
+      "latest_observed_run": {
+        "number": 2252,
+        "run_id": 41024469294,
+        "status": "QUEUED",
+        "head_sha": "20ee610448e2c0cacf4509249d4d0377a56ec120",
         "queued_jobs": [
           "test (3.10)",
           "test (3.11)",
           "test (3.12)"
         ],
-        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/41020189406"
+        "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/41024469294"
       },
       "changed_files": 23,
       "last_observed_run": {
@@ -674,13 +686,13 @@
       }
     },
     "157": {
-      "state": "pending_creation",
+      "state": "open",
       "draft": false,
       "merged": false,
       "base": "main",
       "head": "sync/pending-pr156-batch145-summary",
       "head_sha": null,
-      "note": "Pending-main summary PR #157. Resolve the current summary-branch head from PR metadata at each reconciliation checkpoint; this manifest update itself advances the branch, so no self-referential final SHA is asserted."
+      "note": "Pending-main summary PR #157 is open/unmerged. Resolve its current branch head from PR metadata at each checkpoint; this manifest update advances the branch and therefore does not self-assert its final SHA."
     }
   },
   "latest_pr_ci_observation": {
