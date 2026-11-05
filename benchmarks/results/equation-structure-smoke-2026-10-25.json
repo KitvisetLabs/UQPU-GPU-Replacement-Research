@@ -1,0 +1,46 @@
+{
+  "schema": "uqpu-equation-structure-smoke-v1",
+  "date": "2026-10-25",
+  "evidence_class": "MODEL_ONLY_SYNTHETIC_DIAGNOSTIC",
+  "metric": "project-defined canonical root-preserving tree edit distance; not L2G-SR's learned verifier or exact metric",
+  "settings": {
+    "grammar": "names, real constants, unary +/- , + - * / **, and whitelisted sin/cos/tan/exp/log/sqrt/abs",
+    "commutative_associative_normalization": [
+      "addition",
+      "multiplication"
+    ],
+    "numeric_constants_abstracted_by_default": true,
+    "target_expression_exposed_only_for_this_known_truth_fixture": true
+  },
+  "cases": [
+    {
+      "left": "x**2",
+      "right": "x**2",
+      "integer_distance": 0,
+      "normalized_distance": 0,
+      "interpretation": "identical canonical structure"
+    },
+    {
+      "left": "x + y",
+      "right": "y + x",
+      "integer_distance": 0,
+      "normalized_distance": 0,
+      "interpretation": "commutative equivalent form"
+    },
+    {
+      "left": "2*x + 3",
+      "right": "5*x + 7",
+      "integer_distance": 0,
+      "normalized_distance": 0,
+      "interpretation": "same abstract structure when numeric constants are intentionally ignored"
+    },
+    {
+      "left": "x**2",
+      "right": "x**2 + 0.001*x**3",
+      "integer_distance": 9,
+      "normalized_distance": 0.75,
+      "interpretation": "additional terms remain structurally distinct despite potentially small numeric contribution"
+    }
+  ],
+  "interpretation_boundary": "No numerical fit, learned verifier, physical equation, or generalization result is evaluated. This artifact tests deterministic normalization and metric plumbing only."
+}

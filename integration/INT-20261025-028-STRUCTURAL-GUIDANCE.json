@@ -1,0 +1,70 @@
+{
+  "schema": "uqpu-equation-structure-integration-v1",
+  "integration_id": "INT-20261025-028",
+  "date": "2026-10-25",
+  "starting_main_sha": "b5aac63f295c2b586f044bcbb228ad0ffb0660ef",
+  "source_branch": "research/2026-10-25-l2g-sr-structural-guidance",
+  "primary_owner_lane": "F_economics_benchmarks_evidence",
+  "implementation_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "work_item": "EQN-STRUCTURE-001",
+  "evidence_class": [
+    "LITERATURE_ONLY",
+    "SOFTWARE_HELPER",
+    "UNIT_TESTS",
+    "MODEL_ONLY_SYNTHETIC_DIAGNOSTIC"
+  ],
+  "status": "PENDING_REVIEW_AND_EXACT_HEAD_CI",
+  "literature": {
+    "title": "L2G-SR: Learning to Guide LLM-based Symbolic Regression",
+    "arxiv_id": "2610.20685",
+    "submitted": "2026-10-14",
+    "official_url": "https://arxiv.org/abs/2610.20685",
+    "novelty": "learned structural verifier complements numerical fit when selecting symbolic-regression search parents",
+    "project_reproduction": false
+  },
+  "artifacts": {
+    "module": "software/uqpu-prototype/uqpu/equation_structure.py",
+    "tests": "software/uqpu-prototype/tests/test_equation_structure.py",
+    "literature_watch": "docs/literature_watch/2026-10-25-l2g-sr-structural-guidance.md",
+    "gap": "docs/RESEARCH_GAP_RG049_STRUCTURAL_VERIFIER_CALIBRATION.md",
+    "batch": "docs/BATCH_067_L2G_SR_STRUCTURAL_GUIDANCE.md",
+    "smoke": "benchmarks/results/equation-structure-smoke-2026-10-25.json"
+  },
+  "test_scope": {
+    "focused_tests": 9,
+    "external_model_trained": false,
+    "external_benchmark_reproduced": false,
+    "real_qpu_jobs": 0,
+    "physical_experiments": 0
+  },
+  "lanes": {
+    "A": "deterministic equation-structure helper and tests; no workload advantage",
+    "B": "provider-neutral architecture preserved; no provider call",
+    "C": "no classical memory/storage equivalence or data movement reduction",
+    "D": "no device/material validation",
+    "E": "BIO-001/FUS-001 remain open; no accepted fuel or net-electric evidence",
+    "F": "matched-budget structural calibration and false-discovery gate owned here",
+    "G": "D/G co-design preserved; no fabrication/process/yield result",
+    "H": "literature watch and batch publication"
+  },
+  "foundational": {
+    "FND-001": "no measured wall-plug energy or erasure count",
+    "FND-002": "no output-information lower bound changed",
+    "FND-003": "no matched control-versus-speed-limit measurement",
+    "FND-004": "no alternative physical primitive demonstrated",
+    "FND-005": "no new QFT/particle mechanism or anomaly",
+    "FND-006": "formal structure metric is a search diagnostic, not physics evidence",
+    "EQN-001_to_EQN-006": "candidate generation/evaluation remains gated by holdouts, counterexamples, proof/experiment and independent replication"
+  },
+  "invariant_effects": {
+    "INV-029": "no phone-class physical compression or lifecycle-cost evidence",
+    "INV-030": "no Pangola carbon functional substitution; no transmutation claim",
+    "INV-031": "BIO-001 accepted liquid-energy cost remains open",
+    "INV-032": "FUS-001 net delivered electricity remains open",
+    "INV-033": "no principal, interest, time-to-evidence or WACC change measured",
+    "INV-034": "mathematics-first search diagnostic only",
+    "INV-035": "no equation promoted to a physical law"
+  },
+  "next_gate": "exact-head Python 3.10/3.11/3.12 and cold-start CI, then blinded law-family split-disjoint calibration under matched total budgets"
+}
