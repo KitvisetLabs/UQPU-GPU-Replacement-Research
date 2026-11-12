@@ -1,0 +1,90 @@
+{
+  "schema": "uqpu-integration-edge-v1",
+  "integration_id": "INT-20261024-002",
+  "work_id": "QALG-FAB-001",
+  "date": "2026-10-24",
+  "primary_owner_lane": "G",
+  "consumer_lanes": ["A", "B", "C", "D", "E", "F", "H"],
+  "base_main_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+  "source_branch": "research/2026-10-24-dg-resource-cost-bridge",
+  "latest_non_ledger_source_commit": "09e60c88f76f0a542844c1af7af444934115cc0d",
+  "source_commits": [
+    "f5b051ce219c33f5d35145d35cdf44e32b53bef9",
+    "20e8001e4a091c2f66fc33b770ae8c45690627e1",
+    "30f9834ddae395287240e94421c301badcf25d3e",
+    "dc64078741306f8a1bb411c407e9e518a17e578b",
+    "f7e91291f31ca0ad6733163680df7b8c3cb6ec3d",
+    "b0a2af716b5c302fd2e814546135140a7094eba5",
+    "20f6af72c282a9b4c0acce3e152968461d917f4e",
+    "09e60c88f76f0a542844c1af7af444934115cc0d"
+  ],
+  "sampled_ledger_bookkeeping_commits_excluded": [
+    "7d8bc6b078e5cb6d6bae12f83c7ec04d41c0643f",
+    "bc61d86245e58c1c7dc1ff1012898fcb28df0f48"
+  ],
+  "ledger_note": "The initial ledger commit and sampled updates are listed for traceability; later ledger-only updates are intentionally not self-listed to avoid recursive bookkeeping. Git history remains authoritative.",
+  "pull_request": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/80",
+  "artifacts": {
+    "implementation": "software/uqpu-prototype/uqpu/circuit_fab_bridge.py",
+    "tests": "software/uqpu-prototype/tests/test_circuit_fab_bridge.py",
+    "literature_fixture": "benchmarks/experiments/cycle010/qalg-fab-interface-001-literature-fixture.json",
+    "primary_lane_artifact": "research_lanes/G_manufacturing_equipment_factory_software/CIRCUIT_TO_FAB_BRIDGE_2026-10-24.md"
+  },
+  "interface_stages": [
+    "CIRCUIT_CERTIFICATE",
+    "TARGET_MAPPING",
+    "DEVICE_PROCESS",
+    "LIFECYCLE_ECONOMICS"
+  ],
+  "required_integrity_rules": [
+    "independent output equivalence against the same useful-output and quality contract",
+    "target-specific snapshot, calibration, native gates, routing, QEC, readout and physical-qubit accounting",
+    "device/process window, yield, cost per good die, package/test cost and useful lifetime",
+    "same workload/quality/measurement-window IDs for baseline and UQPU",
+    "same UQPU target ID for target-specific performance and provider pricing",
+    "host, energy, maintenance, reconstruction and uncertainty included in lifecycle accounting"
+  ],
+  "lane_edges": [
+    {"from": "A", "to": "G", "interface": "verified native gate histogram and routed depth", "status": "CONTRACT_DEFINED"},
+    {"from": "B", "to": "D", "interface": "redacted target snapshot and calibration identity", "status": "BLOCKED_UNTIL_AUTHORIZED_READ_ONLY_SNAPSHOT"},
+    {"from": "C", "to": "F", "interface": "state, I/O, transfer, memory and reconstruction measurements", "status": "REQUIRED_NOT_MEASURED"},
+    {"from": "D", "to": "G", "interface": "device/process/package requirements and process-window response", "status": "CO_DESIGN_OPEN"},
+    {"from": "E", "to": "D", "interface": "materials, thermal and power requirements", "status": "REVIEWED_NO_NEW_MEASUREMENT"},
+    {"from": "G", "to": "F", "interface": "yield-adjusted fab and package cost per useful lifetime task", "status": "MODEL_ONLY_UNTIL_QUALIFIED_INPUTS"},
+    {"from": "F", "to": "H", "interface": "cost per accepted task, capital lock-up and uncertainty", "status": "NO_ECONOMIC_PROMOTION"},
+    {"from": "H", "to": "A", "interface": "staged capital release after evidence gates", "status": "STRATEGIC_ONLY"}
+  ],
+  "local_validation": {
+    "method": "python -m unittest discover -s tests -v on an isolated mirror of the exact module/test logic",
+    "tests": 12,
+    "passed": 12,
+    "failed": 0,
+    "evidence_class": "SOFTWARE_CONTRACT_ONLY"
+  },
+  "github_validation": {
+    "exact_head_full_suite": "PENDING",
+    "main_status_checks_at_start": "NO_STATUS_ENTRIES_RETURNED",
+    "paid_qpu_jobs": 0,
+    "provider_service_initializations": 0,
+    "qpu_shots": 0
+  },
+  "evidence_class": "MODEL_ONLY_SOFTWARE_CONTRACT_AND_LITERATURE_ONLY_RESOURCE_REPORT",
+  "claim_promotion": "NONE",
+  "invariant_review": {
+    "INV-029": "physical-compression objective remains unachieved",
+    "INV-030": "no material substitution or transmutation claim",
+    "INV-031": "no accepted bio-oil/fuel cost result",
+    "INV-032": "no net delivered fusion-electricity result",
+    "INV-033": "no principal/interest/WACC improvement measured",
+    "INV-034": "no new foundational physics result",
+    "INV-035": "no AI-generated equation promoted to physical law",
+    "INV-025_026_027": "100-million-unit and open-frontier goals remain unproven"
+  },
+  "sync": {
+    "status": "PENDING_PR_REVIEW_AND_MAIN_SYNC",
+    "required_commit_trailer": "Research-Sync: pending-main",
+    "append_only_canonical_files_not_rewritten": ["RESEARCH_GAPS.md", "WORKLOG.md", "DECISIONS.md"],
+    "known_debt": "Main cold-start manifest and canonical gap/worklog/decision ledgers require safe reconciliation after review; historical/inaccessible branch/fork coverage is not claimed."
+  },
+  "next_gate": "Exact-head UQPU Prototype and Project Invariants CI; then apply the bridge to an independently verified circuit/resource certificate and an authorized read-only target snapshot."
+}

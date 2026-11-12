@@ -1,0 +1,36 @@
+{
+  "schema": "uqpu-circuit-fab-bridge-literature-fixture-v1",
+  "work_id": "QALG-FAB-001",
+  "date": "2026-10-24",
+  "evidence_class": "LITERATURE_ONLY",
+  "source": {
+    "title": "Discovering state-of-the-art quantum circuits with large language models",
+    "arxiv_id": "2610.22367v1",
+    "submitted": "2026-10-15",
+    "url": "https://arxiv.org/abs/2610.22367"
+  },
+  "reported_case": "Reed-Solomon decoder subroutine in Decoded Quantum Interferometry",
+  "reported_resource_counts": {
+    "baseline_toffoli_count": 5100000,
+    "baseline_peak_qubits": 1938,
+    "candidate_toffoli_count": 440000,
+    "candidate_peak_qubits": 1837,
+    "author_reported_toffoli_qubit_product_gain_approx": 12.0
+  },
+  "bridge_payload": {
+    "evidence_class": "LITERATURE_ONLY",
+    "reported_toffoli_count": 440000,
+    "reported_peak_qubits": 1837
+  },
+  "expected_assessment": "BLOCKED_CIRCUIT_CERTIFICATE",
+  "missing_stage": "CIRCUIT_CERTIFICATE",
+  "reason": "Reported circuit-level counts do not provide a UQPU workload/quality contract, independent semantic-equivalence certificate, target-specific routing/QEC/calibration, device process/yield, or lifecycle cost per accepted useful output.",
+  "non_claims": [
+    "not a UQPU measurement",
+    "not target hardware evidence",
+    "not fabrication or yield evidence",
+    "not readable RAM/VRAM/storage capacity",
+    "not a total cost per accepted task comparison",
+    "not a new physical law or demonstrated quantum advantage"
+  ]
+}
