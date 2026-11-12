@@ -1,0 +1,134 @@
+{
+  "schema": "uqpu-ai-newton-equation-discovery-integration-v1",
+  "integration_id": "INT-20261026-042",
+  "date": "2026-10-26",
+  "canonical_main_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+  "branch": "research/2026-10-26-ai-newton-cross-experiment-discovery",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "integration_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "cross_cutting": [
+    "INV-034",
+    "INV-035",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006"
+  ],
+  "status": "LITERATURE_ONLY_PREREGISTRATION_PROPOSAL",
+  "evidence_class": "APS_ACCEPTED_THIRD_PARTY_METHODS_PLUS_ARXIV_SURVEY; NO UQPU REPRODUCTION",
+  "sources": [
+    {
+      "id": "AI-NEWTON-APS-2026-10-09",
+      "title": "AI-Newton: A concept-driven physical law discovery system without prior physical knowledge",
+      "source_date": "2026-10-09",
+      "evidence_class": "APS_ACCEPTED_PAPER_RECORD",
+      "url": "https://journals.aps.org/prresearch/accepted/2a079YedZ1d1fd9af2aa0817e6bd8b9d84964ade7",
+      "relevance": "cross-experiment concept formation and progressive generalization",
+      "limitation": "reported rediscovery demonstrations do not establish new physical laws or UQPU performance"
+    },
+    {
+      "id": "COSR-APS-2026-10-06",
+      "title": "Data-driven progressive discovery of physical laws",
+      "source_date": "2026-10-06",
+      "evidence_class": "APS_ACCEPTED_PAPER_RECORD",
+      "url": "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q",
+      "relevance": "progressive composition baseline; existing open PR #56 is the related project contract",
+      "limitation": "no project reproduction; PR #56 remains open and is not canonical main"
+    },
+    {
+      "id": "AI-MATH-SURVEY-ARXIV-2610.17090",
+      "title": "What the Machine Invented: Mining New Mathematical Instruments from OpenAI's October 2026 Release of AI-Generated Mathematics",
+      "source_date": "2026-10-12",
+      "evidence_class": "ARXIV_SURVEY",
+      "url": "https://arxiv.org/abs/2610.17090",
+      "relevance": "formal verification and novelty-assessment caution",
+      "limitation": "survey states Lean developments were not compiled/kernel-checked"
+    }
+  ],
+  "research_method": {
+    "id": "EQN-AINEWTON-001",
+    "status": "PROPOSED_NOT_EXECUTED",
+    "arms": [
+      "one-shot symbolic regression",
+      "CoSR-style progressive composition",
+      "AI-Newton-style cross-experiment concept discovery",
+      "LLM-PySR-style search control"
+    ],
+    "mandatory_controls": [
+      "frozen source hashes and split manifest",
+      "held-out experiment conditions and held-out law family",
+      "matched candidate-evaluation, compute, memory, wall-time, API and monetary budgets",
+      "dimensional/symmetry/conservation/causality checks where applicable",
+      "noise, scaling, leakage, shuffled-target and over-flexible-grammar negative controls",
+      "independent scoring reproduction",
+      "false-discovery, failed-candidate, stability and cost-per-accepted-formula reporting"
+    ],
+    "falsifier": "no robust held-out gain or stability improvement over the matched one-shot baseline, or gains disappear under leakage/noise/scaling/counterexample controls",
+    "output_nonclaim": "method comparison only; no physical law or technology result"
+  },
+  "lane_status": {
+    "A": "BATCH_063 M-QSP negative fixture and mechanism-count preflight on main; equation-discovery comparison proposal added",
+    "B": "provider-neutral matrix retained; provider watch PRs remain unmerged; no provider/QPU job",
+    "C": "memory/state contract and FTQC spacetime/thermodynamic memory analysis remain MODEL_ONLY; no classical-memory equivalence",
+    "D": "device/process research matrix retained; no physical device result",
+    "E": "BIO-001 and FUS-001 remain open; no accepted fuel, material substitution or net-electric fusion result",
+    "F": "RG-039 and BIC/model-count work remain evidence-gated; end-to-end cost per accepted task not demonstrated",
+    "G": "D/G co-design and factory roadmap retained; no manufacturing/yield result",
+    "H": "six-language Kanusanan Pongpanna strategic context retained; new literature watch added; no financing outcome",
+    "I": "auxiliary special-project track exists in the manifest but does not replace or redefine A-H"
+  },
+  "foundational_status": {
+    "FND-001": "Batch 063 adds finite-sample calibration helper; MODEL_ONLY",
+    "FND-002": "output-information lower-bound program retained; no mission-level compression result",
+    "FND-003": "gate-level QSL source/contract work is in open PR #55; not merged",
+    "FND-004": "alternative physical primitives remain hypothesis-scoped",
+    "FND-005": "QFT/particle mechanism scan remains evidence-gated; no new particle claim",
+    "FND-006": "mathematics-first discovery strengthened by the proposed held-out cross-experiment protocol",
+    "EQN-001_through_EQN-006": "candidate generation remains separate from proof, held-out prediction, counterexample search and independent validation"
+  },
+  "invariant_disposition": {
+    "INV-025/026/027": "preserved; 100,000,000-unit targets remain falsifiable goals",
+    "INV-029": "no Data-Center-to-One-Phone compression result",
+    "INV-030": "no Pangola carbon substitution or transmutation claim",
+    "INV-031": "no accepted biomass liquid-energy product or full cost closure",
+    "INV-032": "no net reliable delivered fusion-electricity or lifecycle-cost result",
+    "INV-033": "no measured principal/interest/time-to-evidence/WACC effect",
+    "INV-034": "foundational methods continue under established physical constraints",
+    "INV-035": "AI-generated equations remain hypotheses until full evidence gates pass"
+  },
+  "sync_and_ci": {
+    "main_head": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+    "main_prototype_run": {
+      "id": 40211570832,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40211570832"
+    },
+    "main_cold_start_run": {
+      "id": 40211570871,
+      "conclusion": "success",
+      "url": "https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40211570871"
+    },
+    "stale_non_main_run": {
+      "id": 40218780144,
+      "conclusion": "failure",
+      "reason": "same SHA as main was tested on a non-main branch without the required Research-Sync: pending-main commit trailer; this is not a main-branch CI failure"
+    },
+    "new_branch_exact_head_ci": "PENDING_AT_PUBLICATION",
+    "canonical_large_files": "RESEARCH_GAPS.md and WORKLOG.md not rewritten; dated artifacts preserve sync history"
+  },
+  "next_gate": "Execute EQN-AINEWTON-001 only after frozen split/source hashes and matched budgets are reviewed; use held-out law-family prediction, counterexample controls and independent scoring. Continue provider-neutral QOS/QSVT acceptance gates and BIO-001/FUS-001/FIN-001 evidence collection.",
+  "nonclaims": [
+    "no real-QPU job",
+    "no quantum advantage",
+    "no physical-law discovery",
+    "no material substitution",
+    "no accepted bio-oil",
+    "no commercial fusion electricity",
+    "no WACC reduction",
+    "no Data-Center-to-One-Phone achievement"
+  ]
+}
