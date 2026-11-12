@@ -1,0 +1,78 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "integration_id": "INT-20261026-LINDBLADIAN-FF",
+  "date": "2026-10-26",
+  "canonical_starting_main_sha": "412403efebabd7186dcbfca286d8481308dab176",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "integration_owner_lane": "F_economics_benchmarks_evidence",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "co_design_lanes": [
+    "B_cloud_qpu_provider_integration",
+    "C_memory_state_data_movement",
+    "D_device_chip_process_fabrication_packaging",
+    "E_materials_energy_cooling_infrastructure",
+    "G_quantum_chip_manufacturing_equipment_software_factory"
+  ],
+  "feeds": [
+    "FND-001",
+    "FND-002",
+    "FND-003",
+    "FND-004",
+    "FND-005",
+    "FND-006",
+    "EQN-001",
+    "EQN-002",
+    "EQN-003",
+    "EQN-004",
+    "EQN-005",
+    "EQN-006",
+    "INV-029",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "source": "Gao, Ji and Liu, Physical Review Letters 137, 160405 (published 2026-10-16), DOI 10.1103/qy4b-gzlq; arXiv:2511.10253",
+  "evidence_class": "PEER_REVIEWED_THEORETICAL_ALGORITHM_AND_INFORMATION_THEORETIC_LOWER_BOUNDS",
+  "project_status": "LITERATURE_ONLY_NOT_REPRODUCED",
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-26-lindblad-fast-forwarding-lower-bounds.md",
+    "batch": "docs/BATCH_064_LINDBLADIAN_FAST_FORWARDING_RESOURCE_GATE.md",
+    "manifest": "benchmarks/manifests/lindbladian-fast-forwarding-2026-10-26.json",
+    "gap": "docs/RESEARCH_GAP_RG-LINDBLADIAN-FF-001.md"
+  },
+  "lane_status": {
+    "A": "New bounded open-system simulation benchmark contract; no implementation or test pass yet.",
+    "B": "Provider-neutral; no target, credentials, pricing or QPU job.",
+    "C": "Output reconstruction/state/I-O costs are required; no memory replacement result.",
+    "D": "No device result; future implementation must expose controls and calibration.",
+    "E": "No biomass, materials, fuel or fusion evidence.",
+    "F": "Matched useful-output cost protocol proposed; no energy/cost measurement.",
+    "G": "No manufacturing/process result; D/G co-design retained for future device work.",
+    "H": "Dated literature publication and strategic context preserved; no financing claim."
+  },
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "next_gate": "Independently reproduce Gaussian-dephasing and compound-Poisson fixtures, test held-out points and compare against a competitive classical solver under the same accepted-output/error/resource contract.",
+  "evidence_promoted_to_project": "none",
+  "sync_debt": [
+    "RESEARCH_GAPS.md and WORKLOG.md remain append-only and were not rewritten from partial history.",
+    "README/latest verified checkpoint should be reconciled only after review/merge and exact-head CI.",
+    "Starting-head CI is unverified for SHA 412403efebabd7186dcbfca286d8481308dab176; no pass is claimed."
+  ],
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "physical_experiments_authorized": false,
+    "funding_authorized": false
+  }
+}
