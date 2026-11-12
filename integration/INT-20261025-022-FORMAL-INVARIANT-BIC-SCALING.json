@@ -1,0 +1,81 @@
+{
+  "schema": "uqpu-formal-invariant-bic-scaling-integration-v1",
+  "integration_id": "INT-20261025-022",
+  "date": "2026-10-25",
+  "starting_main_sha": "70796ef8b918fe2e95382bc49cd7016a825db7e1",
+  "primary_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "cross_cutting_owners": [
+    "FND-006",
+    "EQN-001_to_EQN-006",
+    "F_economics_benchmarks_evidence",
+    "D_device_chip_fabrication",
+    "G_manufacturing_equipment_factory"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "status_at_creation": "BRANCH_COMMITTED_CI_PENDING",
+  "code_delta": {
+    "test": "software/uqpu-prototype/tests/test_equation_discovery.py",
+    "contract": "select_bic_candidate_count",
+    "property": "Common positive rescaling of all in-sample RSS values adds a common BIC offset and preserves ranking; candidate insertion order does not alter the result.",
+    "scale_factors": [
+      1e-12,
+      1000000000000
+    ],
+    "evidence_class": "SOFTWARE_REGRESSION_TEST"
+  },
+  "literature": {
+    "path": "docs/literature_watch/2026-10-25-large-lemma-miners-hardware-verification.md",
+    "source": "Peled et al., IJCAI 2026, Large Lemma Miners: Can LLMs Do Induction Proofs for Hardware?",
+    "source_url": "https://ijcai.org/proceedings/2026/444",
+    "doi": "10.24963/ijcai.2026/444",
+    "reported_task_count": 109,
+    "reported_task_coverage": "At least one prompting setup generated a provably correct inductive argument for 90% of the paper's tasks after sufficient reprompting.",
+    "transfer_boundary": "Method evidence only; no UQPU compiler/device proof or physical-law claim."
+  },
+  "artifacts": {
+    "batch": "docs/BATCH_065_PROOF_CHECKED_INVARIANTS_AND_BIC_SCALING.md",
+    "gap": "docs/RESEARCH_GAP_RG040_FORMAL_VERIFICATION_FOR_GENERATED_INVARIANTS.md",
+    "literature": "docs/literature_watch/2026-10-25-large-lemma-miners-hardware-verification.md",
+    "test": "software/uqpu-prototype/tests/test_equation_discovery.py"
+  },
+  "lanes": {
+    "A": "BIC unit-scaling and insertion-order regression; formal checker path proposed, not integrated.",
+    "B": "No provider changes or paid execution.",
+    "C": "No memory/storage evidence; classical state and I/O accounting remain binding.",
+    "D": "No device result; future RTL proof requires faithful frozen model/spec.",
+    "E": "No new Pangola, bio-oil or net-electric fusion evidence.",
+    "F": "Statistical-contract property added; no measured economic benefit.",
+    "G": "No factory or yield result; D/G co-design preserved.",
+    "H": "New primary-source watch, gap and batch record; multilingual plan references preserved."
+  },
+  "invariant_evaluation": {
+    "INV-029": "No physical-compression or equivalent-service closure.",
+    "INV-030": "No material substitution evidence; no elemental transmutation claim.",
+    "INV-031": "No accepted bio-oil/fuel evidence.",
+    "INV-032": "No reliable net delivered fusion-electricity evidence.",
+    "INV-033": "No measured principal/interest/WACC effect.",
+    "INV-034": "Formal verification route and unit-scaling regression improve method traceability only.",
+    "INV-035": "Generated candidates remain untrusted until checks, falsifiers and independent evidence pass."
+  },
+  "evidence_class": [
+    "SOFTWARE_REGRESSION_TEST",
+    "PEER_REVIEWED_LITERATURE_ONLY",
+    "PROPOSED_TEST_PROTOCOL"
+  ],
+  "project_evidence_promoted": false,
+  "paid_qpu_jobs_submitted": false,
+  "credentials_used": false,
+  "sync_debt": [
+    "The new batch, gap and literature watch are branch-only pending review and exact-head CI.",
+    "README checkpoint and large append-only WORKLOG/RESEARCH_GAPS histories were not overwritten.",
+    "No physical, material, fuel, electricity, financing or mission-level claim is promoted."
+  ],
+  "next_gates": [
+    "Exact-head Python 3.10/3.11/3.12, invariant and cold-start CI.",
+    "Formalize one small provider-neutral compiler rewrite with frozen semantics and a property hash.",
+    "Generate candidate invariants under a fixed budget; retain malformed outputs, counterexamples and timeouts.",
+    "Require initiation, consecution and implication checks in a trusted formal tool and independently reproduce an accepted proof.",
+    "Continue RG-039 known-truth K=1/2/3 calibration with blocked holdouts and false-multi-law reporting.",
+    "Keep QSP/QSVT exact-algebraic/independent implementation and all real-QPU/economic evidence gates open."
+  ]
+}
