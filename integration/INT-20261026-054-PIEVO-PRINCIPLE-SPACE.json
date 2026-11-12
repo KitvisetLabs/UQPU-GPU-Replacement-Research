@@ -1,0 +1,72 @@
+{
+  "schema": "uqpu-eight-lane-integration-v1",
+  "record_id": "INT-20261026-054-PIEVO-PRINCIPLE-SPACE",
+  "date": "2026-10-26",
+  "canonical_branch": "main",
+  "canonical_start_sha": "412403efebabd7186dcbfca286d8481308dab176",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "integration_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "evidence_class": ["LITERATURE_ONLY", "SOFTWARE_HELPER", "FOCUSED_UNIT_TESTS", "PREREGISTRATION"],
+  "status": "PENDING_REVIEW_AND_EXACT_HEAD_CI",
+  "source": {
+    "title": "Principle-Evolvable Scientific Discovery via Uncertainty Minimization",
+    "authors": ["Yingming Pu", "Tao Lin", "Hongyu Chen"],
+    "publication": "ICML 2026, PMLR 306:99931-99964",
+    "official_url": "https://proceedings.mlr.press/v306/pu26a.html",
+    "official_preprint": "https://arxiv.org/abs/2602.06448",
+    "official_code": "https://github.com/amair-lab/PiEvo",
+    "uqpu_reproduction": false
+  },
+  "work_item": {
+    "id": "EQN-PIEVO-001",
+    "objective": "Compare static and expanding principle-space equation discovery under matched budgets and sealed held-out evaluation.",
+    "status": "READY_FOR_PREREGISTRATION_NOT_EXECUTED",
+    "falsifier": "The reported benefit disappears under matched resources, sealed holdouts, independent scoring or complete failure/cost accounting.",
+    "helper": "software/uqpu-prototype/uqpu/equation_claim_gate.py",
+    "tests": "software/uqpu-prototype/tests/test_equation_claim_gate.py",
+    "focused_local_tests": {"passed": 9, "failed": 0, "scope": "isolated focused harness; full repository CI not run locally"}
+  },
+  "lanes": {
+    "A": "Adds a fail-closed metadata contract for incumbent assumption, alternative equation, physics checks, falsifier, held-out prediction, counterexamples, proof/simulation, experiment, independent validation, system consequence and economics. No algorithmic advantage established.",
+    "B": "Provider-neutral/no-submit path preserved; no provider initialized and no QPU job submitted.",
+    "C": "Memory, data movement and model-call resource costs are required in the future matched benchmark; no storage equivalence result.",
+    "D": "No device/chip/process result; only a downstream consequence if an independently validated equation changes requirements.",
+    "E": "No Pangola-carbon, accepted bio-oil, material substitution, cooling or net-fusion-electricity result.",
+    "F": "Requires all failed runs, retries, compute/API cost, measured energy and cost per accepted formula under a single named cost basis.",
+    "G": "D/G co-design preserved; no fabrication, yield or factory-economics result.",
+    "H": "Official source and limits recorded; no funding, WACC or strategic-industrial result.",
+    "I": "Auxiliary lane is unchanged and does not replace mandatory A-H."
+  },
+  "foundational": {
+    "FND-001": "No thermodynamic or wall-plug measurement.",
+    "FND-002": "No new output-information or readable-memory lower bound.",
+    "FND-003": "No matched quantum-speed-limit experiment.",
+    "FND-004": "No alternative physical primitive validated.",
+    "FND-005": "No new QFT/particle mechanism or discriminating anomaly.",
+    "FND-006": "Principle-space expansion is a candidate-generation method only.",
+    "EQN-001": "Official ICML/PMLR method watch recorded.",
+    "EQN-002": "Known-law recovery and held-out/OOD scoring required.",
+    "EQN-003": "Metadata gate added; no equation generator executed.",
+    "EQN-004": "Counterexample and false-discovery retention required.",
+    "EQN-005": "No new-physics escalation or law promotion.",
+    "EQN-006": "Source-to-claim, proof/experiment, independent validation, system consequence and economics gates specified."
+  },
+  "invariant_evaluation": {
+    "INV-025_026_027": "Preserved; no 100,000,000-unit replacement or Hilbert-space-to-readable-storage claim.",
+    "INV-029": "No Data-Center-to-One-Phone service, energy, physical compression or lifecycle-cost gate closed.",
+    "INV-030": "No functional Pangola-carbon substitution/recovery result and no transmutation claim.",
+    "INV-031": "No accepted bio-oil/fuel function or full cost-per-energy result.",
+    "INV-032": "No reliable net delivered fusion electricity or lifecycle-cost result.",
+    "INV-033": "No principal, absolute-interest, time-to-evidence or WACC effect measured.",
+    "INV-034": "Mathematics-first candidate generation remains active under present physical constraints.",
+    "INV-035": "The helper checks metadata completeness only and never promotes an AI-generated equation to physical law."
+  },
+  "project_evidence_promoted": false,
+  "sync_debt": [
+    "This source branch is not canonical main until reviewed and merged.",
+    "RESEARCH_GAPS.md and WORKLOG.md remain untouched to avoid truncating append-only history.",
+    "Exact-head hosted CI and full repository suite are pending."
+  ],
+  "next_highest_value_gate": "Review and run exact-head CI, then implement a matched-budget static-vs-expanding principle-space benchmark with pinned source/data, sealed holdout/OOD splits and complete failure/cost accounting."
+}
