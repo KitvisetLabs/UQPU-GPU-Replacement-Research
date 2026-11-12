@@ -1,0 +1,78 @@
+{
+  "record_id": "INT-20261025-024-BIC-SELECTION-STABILITY",
+  "date": "2026-10-25",
+  "status": "VALIDATION_PENDING",
+  "primary_owner": "Lane A — equation-discovery tooling",
+  "integration_owner": "Lane F — evidence and benchmark accounting",
+  "publication_owner": "Lane H — literature watch",
+  "canonical_start_main_sha": "b5aac63f295c2b586f044bcbb228ad0ffb0660ef",
+  "branch": "research/2026-10-25-bic-selection-stability",
+  "changes": [
+    {
+      "path": "software/uqpu-prototype/uqpu/equation_discovery.py",
+      "role": "Replicate-level BIC candidate-count selection stability diagnostic",
+      "evidence_class": "SOFTWARE"
+    },
+    {
+      "path": "software/uqpu-prototype/tests/test_equation_discovery.py",
+      "role": "Four stability, tie, metadata and threshold regression tests",
+      "evidence_class": "UNIT_TESTS"
+    },
+    {
+      "path": "docs/literature_watch/2026-10-25-smile-continuous-discrete-symbolic-recovery.md",
+      "role": "Primary-source literature watch with limitations and falsifiable follow-up",
+      "evidence_class": "LITERATURE_ONLY"
+    },
+    {
+      "path": "docs/RESEARCH_CYCLE_2026-10-25_BIC_SELECTION_STABILITY.md",
+      "role": "Cycle record, A-H status, INV-029–035 traceability, evidence and next gate",
+      "evidence_class": "RESEARCH_RECORD"
+    }
+  ],
+  "contract": {
+    "minimum_replicates": 2,
+    "candidate_count_set": "identical across all replicates",
+    "parameter_counts": "shared across replicates",
+    "sample_counts": "one explicit count per named replicate",
+    "stable_selection": "unique plurality meeting a preregistered fraction in (0,1]",
+    "ties": "fail closed as unstable",
+    "limitations": [
+      "Does not guarantee independent samples",
+      "Does not prove candidate-pool completeness or identifiability",
+      "Does not replace held-out generalization or counterexample search",
+      "Does not establish a physical mechanism or law"
+    ]
+  },
+  "literature": {
+    "id": "LIT-2026-09-04-SMILE-CONTINUOUS-DISCRETE-SR",
+    "title": "SMILE: Bridging Continuous Optimization and Discrete Symbolic Recovery",
+    "authors": [
+      "Mansooreh Montazerin",
+      "Antonio Ortega",
+      "Ajitesh Srivastava"
+    ],
+    "source": "https://arxiv.org/abs/2609.04639",
+    "first_submitted": "2026-09-04",
+    "evidence_class": "LITERATURE_ONLY",
+    "project_evidence_promotion": false
+  },
+  "mission_effect": {
+    "INV-029": "No physical compression result; no service, energy or lifecycle-cost gate passed",
+    "INV-030": "No material substitution or transmutation claim",
+    "INV-031": "BIO-001 accepted-liquid mass/energy/cost remains open",
+    "INV-032": "FUS-001 reliable net-electricity/lifecycle-cost remains open",
+    "INV-033": "No measured financing or WACC change",
+    "INV-034": "Advances model-selection robustness and false-discovery visibility",
+    "INV-035": "Maintains candidate generation plus explicit evidence gates"
+  },
+  "validation": {
+    "starting_main_prototype_run": "40188356586",
+    "starting_main_cold_start_run": "40188356599",
+    "this_branch_full_ci": "IN_PROGRESS",
+    "paid_qpu_jobs": 0,
+    "provider_credentials_used": false,
+    "physical_experiments": 0,
+    "cold_start_note": "Intermediate branch commits lacked the required Research-Sync: pending-main commit trailer; a final sync commit is being added and must pass the audit before PR readiness."
+  },
+  "next_gate": "Exact branch CI, then preregistered known-law/noise/scale-shift replication with matched compute and energy budgets."
+}
