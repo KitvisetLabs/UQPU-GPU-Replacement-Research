@@ -1,0 +1,189 @@
+{
+  "schema": "uqpu-daily-cycle-integration-v1",
+  "integration_id": "INT-20261026-050-MORPHINGNET-SR",
+  "date": "2026-10-26",
+  "canonical_branch": "main",
+  "starting_main_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+  "source_branch": "research/2026-10-26-morphingnet-symbolic-regression",
+  "source_head_before_record_commit": "cb3870672bfb26e0272933c10872296a3c1351c8",
+  "primary_owner_lane": "A_quantum_programming_runtime",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "integration_owner_lane": "F_economics_benchmarks_evidence_integration",
+  "evidence_class": [
+    "LITERATURE_ONLY",
+    "PREREGISTRATION",
+    "REPOSITORY_AUDIT"
+  ],
+  "status_at_creation": "PENDING_REVIEW_AND_EXACT_HEAD_CI",
+  "artifacts": {
+    "literature_watch": "docs/literature_watch/2026-10-26-morphingnet-symbolic-regression.md",
+    "lane_a_contract": "research_lanes/A_quantum_programming_runtime/EQN-MORPHINGNET-001.md",
+    "integration_record": "integration/INT-20261026-050-MORPHINGNET-SR.json",
+    "daily_report": "integration/DAILY_CYCLE_2026-10-26_MORPHINGNET_RESEARCH_WATCH.md"
+  },
+  "source": {
+    "title": "MorphingNet: Symbolic Regression Where the Network Is the Formula",
+    "authors": [
+      "Jincheng Gao",
+      "Jiahe Yi",
+      "Shuo Sun"
+    ],
+    "source": "arXiv:2610.19942",
+    "submitted_date": "2026-10-14",
+    "official_url": "https://arxiv.org/abs/2610.19942",
+    "evidence_class": "PREPRINT_WITH_AUTHOR_REPORTED_COMPUTATIONAL_BENCHMARKS",
+    "uqpu_evidence_class": "LITERATURE_ONLY",
+    "reported_claims_not_reproduced": [
+      "R^2 > 0.999 on 96–97% of 130 SRBench problems at three lower noise levels and 70% at the highest noise level",
+      "Generating formula recovered on 96 of 104 targets whose functions are in the tested library",
+      "About five minutes on GPU for one million samples, reported as 123x faster than Operon in the authors' setup"
+    ]
+  },
+  "work_item": {
+    "id": "EQN-MORPHINGNET-001",
+    "objective": "Evaluate continuous-form symbolic regression under matched data, split, evaluator and total-resource budgets against symbolic-search and neural-symbolic alternatives.",
+    "status": "READY_FOR_PREREGISTRATION",
+    "evidence_level": "LITERATURE_ONLY",
+    "acceptance_gates": [
+      "Freeze source/code/model/dataset/split hashes and environment before execution.",
+      "Use disjoint grouped held-out and extrapolation splits, not random-row splits alone.",
+      "Match wall-clock and resource budgets and retain failed runs, retries, false discoveries and counterexamples.",
+      "Measure exact recovery where ground truth exists, held-out/extrapolation error, formula complexity and constraint violations.",
+      "Record CPU/GPU time, training/inference, peak memory, energy if measured, and cost per accepted formula under one cost-basis identifier.",
+      "Require dimensional, symmetry, conservation, causality and limiting-case checks before any physical-candidate gate.",
+      "Require independent evaluation and reproducibility before claiming a computational benchmark win."
+    ],
+    "falsifier": "The claimed advantage disappears under matched budgets or held-out/extrapolation evaluation, depends on leakage or excluded failures, violates constraints, fails independent reproduction, or has no lower total cost per accepted formula.",
+    "non_claims": [
+      "No MorphingNet implementation or source-paper reproduction.",
+      "No new physical law or verified physical equation.",
+      "No real-QPU job, quantum advantage, memory/storage replacement or Data-Center-to-Phone result.",
+      "No material substitution, accepted bio-oil, net fusion electricity or financing-rate effect."
+    ]
+  },
+  "canonical_audit": {
+    "main_head": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+    "latest_main_commit_date_utc": "2026-10-25T16:25:06Z",
+    "required_docs_reviewed": [
+      "PROJECT_CHARTER.md",
+      "VERSION_INVARIANTS.md",
+      "GOALS.md",
+      "README.md",
+      "docs/RESEARCH_OPERATING_SYSTEM.md",
+      "docs/OPEN_FRONTIER_RESEARCH_DIRECTIVE.md",
+      "docs/KANUSANAN_PONGPANNA_MODEL.md",
+      "STRATEGIC_PLAN_REFERENCES.md",
+      "RESEARCH_GAPS.md",
+      "root directives 00, 00A, 01–06",
+      "latest canonical Batch documents and relevant pending Batch 064 proposal",
+      "integration/DAILY_CYCLE_2026-10-25_LATE_RECONCILIATION.md",
+      "integration/INT-20261025-PARALLEL-PR-COLLISION-AUDIT.json",
+      "integration/MAIN_COMMIT_SYNC_POLICY_2026-10-16.md",
+      "software/uqpu-prototype/uqpu/equation_discovery.py",
+      "software/uqpu-prototype/uqpu/frontier_hypothesis.py",
+      "software/uqpu-prototype/uqpu/fundamental_limits.py"
+    ],
+    "root_directives_00_to_06_present": true,
+    "master_plan_languages": [
+      "Thai",
+      "English",
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "German"
+    ],
+    "latest_canonical_batch": "docs/BATCH_063_MECHANISM_COUNT_AND_MQSP_NEGATIVE_FIXTURE.md",
+    "pending_batch": "Batch 064 is in open PR #98 and is not canonical main.",
+    "directory_depth": "Latest available canonical audit reported maximum observed depth 4, within the 16-level invariant.",
+    "main_ci_snapshot": {
+      "prototype_invariant_run_id": 40211570832,
+      "prototype_invariant_conclusion": "reported_success_on_base_sha_by_open_PR_116",
+      "cold_start_run_id": 40211570871,
+      "cold_start_conclusion": "reported_success_on_base_sha_by_open_PR_116",
+      "combined_status_api": "returned no status entries for the inspected main SHA",
+      "current_branch_ci": "PENDING_AFTER_NEW_COMMITS",
+      "note": "No new code tests or external benchmark were run in this documentation/preregistration cycle."
+    },
+    "open_pr_sync_debt": [
+      {
+        "pr": 116,
+        "status": "open; exact-head CI pending at inspected snapshot"
+      },
+      {
+        "pr": 112,
+        "status": "open; latest source head requires exact-head CI; full repository suite not run on that head"
+      },
+      {
+        "pr": 114,
+        "status": "open; Python 3.10/3.11/3.12 reported passed, 11 QSVT/reference jobs queued"
+      },
+      {
+        "pr": 111,
+        "status": "open; exact-head CI required before merge"
+      },
+      {
+        "pr": 109,
+        "status": "open; provider watch only, no adapter change"
+      },
+      {
+        "pr": 107,
+        "status": "open; literature-only, source-exact reproduction pending"
+      },
+      {
+        "pr": 98,
+        "status": "open and reported not mergeable at inspection; Batch 064 and matched-budget benchmark code are not canonical"
+      },
+      {
+        "pr": 104,
+        "status": "open; L2G-SR diagnostic is not canonical"
+      },
+      {
+        "pr": 56,
+        "status": "open; CoSR comparison proposal is not canonical"
+      }
+    ],
+    "known_sync_debt": [
+      "README latest-verified checkpoint still names Batch 062 although Batch 063 is canonical; do not overwrite the large README from partial content.",
+      "Large append-only RESEARCH_GAPS.md and WORKLOG.md remain untouched to avoid truncating history.",
+      "Multiple open PRs and duplicated integration IDs require reconciliation before merge; this record uses a separately checked unique ID.",
+      "A branch-creation cold-start workflow false failure has a proposed fix in open PR #116; the fix is not canonical until merged."
+    ]
+  },
+  "lanes": {
+    "A": "Added EQN-MORPHINGNET-001 matched-budget preregistration for a new symbolic-regression method; no implementation or workload result.",
+    "B": "Provider-neutral cloud architecture retained; no provider adapter, credentials, target execution or pricing change.",
+    "C": "Requires peak-memory, data-movement and training/inference accounting; no readable-memory or storage replacement evidence.",
+    "D": "No device/chip/process/fabrication result; only downstream if a validated equation changes device requirements.",
+    "E": "Pangola carbon, BIO-001, FUS-001, cooling and infrastructure remain open; no accepted product or energy measurement.",
+    "F": "Evidence taxonomy, failed-run accounting, matched budget and cost-per-accepted-formula contract specified; no measured economics.",
+    "G": "D/G co-design retained; no manufacturing equipment, yield or factory-cost result.",
+    "H": "Published a dated literature-watch proposal and preserved strategic publication context; no funding or WACC result.",
+    "I": "Auxiliary special-project lane remains auxiliary and does not replace mandatory A–H."
+  },
+  "foundational": {
+    "FND-001": "No new thermodynamic-gap measurement; current calibration remains synthetic and estimator-specific.",
+    "FND-002": "Output-information/reconstruction contract PR #112 remains open; no new physical memory or energy bound measured.",
+    "FND-003": "Matched control-versus-quantum-speed-limit measurement remains open.",
+    "FND-004": "No alternative physical primitive promoted.",
+    "FND-005": "Cold-atom gauge-theory and other frontier watches remain literature-only pending source-exact reproduction.",
+    "FND-006": "Adds a candidate-generator family to the mathematics-first search plan; no theorem or law established.",
+    "EQN-001": "New MorphingNet literature watch recorded.",
+    "EQN-002": "Known-law recovery and held-out/extrapolation criteria preserved.",
+    "EQN-003": "Constraint-aware generation remains a required future gate; no candidate equation generated here.",
+    "EQN-004": "Counterexamples, false discoveries and failed searches must be retained.",
+    "EQN-005": "No new-physics escalation or law promotion.",
+    "EQN-006": "Traceability from candidate generation through constraints, held-out tests, experiment, independent validation and economics preserved."
+  },
+  "invariant_evaluation": {
+    "INV-025_026_027": "Preserved; no 100,000,000-unit replacement claim and no Hilbert-space-to-readable-classical-memory equivalence.",
+    "INV-029": "No service/capability, energy, physical-support, lifecycle-cost or phone-class compression contract passed.",
+    "INV-030": "No elemental transmutation or qualified Pangola-carbon substitution/minimization/recovery result.",
+    "INV-031": "No accepted bio-oil/fuel function or full cost per delivered energy; BIO-001 remains open.",
+    "INV-032": "No reliable net delivered fusion electricity or full lifecycle cost; FUS-001 remains open.",
+    "INV-033": "No measured principal, absolute-interest, time-to-evidence, risk-premium or WACC effect.",
+    "INV-034": "Mathematics-first frontier remains active under current physical constraints.",
+    "INV-035": "AI-generated equations remain hypotheses; no law is promoted without falsification and independent evidence."
+  },
+  "project_evidence_promoted": false,
+  "next_highest_value_gate": "Complete exact-head CI and review the existing shared matched-budget comparison PRs; then add MorphingNet as a method to the same frozen harness with source-exact data, independent scoring and full resource accounting. Reconcile README Batch 062/063 pointer without truncating history."
+}
