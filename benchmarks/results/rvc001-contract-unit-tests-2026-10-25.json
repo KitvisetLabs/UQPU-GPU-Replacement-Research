@@ -1,0 +1,32 @@
+{
+  "schema": "uqpu-rvc001-contract-unit-test-summary-v1",
+  "date": "2026-10-25",
+  "evidence_class": "SOFTWARE_UNIT_TEST",
+  "environment": {
+    "runtime": "Python 3.13 isolated harness",
+    "repository_ci": "PENDING_EXACT_PR_HEAD"
+  },
+  "tests": {
+    "count": 10,
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0
+  },
+  "test_names": [
+    "test_fully_checked_candidate_is_eligible_for_resource_comparison",
+    "test_exhaustive_pass_requires_full_declared_basis_domain",
+    "test_unverified_phase_or_dirty_ancilla_blocks_comparison",
+    "test_failure_bound_must_fit_same_declared_budget",
+    "test_generator_and_evaluator_must_be_distinct_roles",
+    "test_formal_status_requires_proof_artifact_hash",
+    "test_pareto_dominance_requires_same_contract",
+    "test_tradeoff_is_not_collapsed_to_toffoli_times_qubits",
+    "test_different_semantics_or_failure_budget_are_incomparable",
+    "test_unverified_candidate_cannot_enter_resource_frontier"
+  ],
+  "non_claims": [
+    "No circuit simulation or LLM circuit generation was run.",
+    "No project Python 3.10/3.11/3.12 CI result is claimed by this artifact.",
+    "No real-QPU, physical-law, material, fuel, fusion, energy or economic advantage is claimed."
+  ]
+}

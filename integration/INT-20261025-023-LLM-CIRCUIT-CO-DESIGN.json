@@ -1,0 +1,299 @@
+{
+  "schema": "uqpu-cross-lane-integration-v2",
+  "id": "INT-20261025-023",
+  "date": "2026-10-25",
+  "primary_owner": "Lane F",
+  "contributing_lanes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "auxiliary_hub": "I",
+  "canonical_start_main_sha": "70796ef8b918fe2e95382bc49cd7016a825db7e1",
+  "source_branch": "research/2026-10-25-llm-evaluator-guided-circuit-co-design",
+  "status": "PROPOSED",
+  "evidence_class": [
+    "SOFTWARE_CONTRACT_TESTS",
+    "ARXIV_PREPRINT_LITERATURE_ONLY",
+    "PEER_REVIEWED_NO_GO_LITERATURE_ONLY_FOR_UQPU"
+  ],
+  "source_artifacts": [
+    "research_lanes/A_quantum_programming_runtime/RVC_001_EVALUATOR_VERIFIED_REVERSIBLE_CIRCUIT_CONTRACT.md",
+    "software/uqpu-prototype/uqpu/reversible_circuit_contract.py",
+    "software/uqpu-prototype/tests/test_reversible_circuit_contract.py",
+    "benchmarks/results/rvc001-contract-unit-tests-2026-10-25.json",
+    "docs/literature_watch/2026-10-25-llm-evaluator-guided-quantum-circuit-co-design.md",
+    "docs/literature_watch/2026-10-25-gaussian-quantum-repeater-no-go.md",
+    "docs/RESEARCH_GAP_RG041_EVALUATOR_VERIFIED_REVERSIBLE_CIRCUIT_CO_DESIGN.md",
+    "docs/BATCH_064_LLM_EVALUATOR_GUIDED_REVERSIBLE_CIRCUIT_CO_DESIGN.md"
+  ],
+  "hypothesis": "An evaluator-first contract that freezes semantics, relative phase, ancilla cleanup and failure budget can prevent invalid reversible-circuit resource comparisons and support a falsifiable Pareto search.",
+  "interface_version": "RVC-001-v1",
+  "expected_gain": "Better correctness/provenance and resource-comparison discipline; quantitative gain is unknown until a representative circuit is generated and independently evaluated.",
+  "measured_gain": null,
+  "resource_dimensions": [
+    "Toffoli count",
+    "peak logical qubits including live ancillas",
+    "T-depth",
+    "logical depth",
+    "failure-probability upper bound"
+  ],
+  "non_cost_proxy": "Toffoli_count * peak_qubits is descriptive only; it is not total cost or accepted-task economics.",
+  "acceptance_gates": [
+    "Identical function specification and SHA-256 across candidates",
+    "Distinct generator and evaluator roles with pinned hashes",
+    "Complete basis-state verification or proof artifact with explicit assumptions",
+    "Relative-phase semantics checked separately",
+    "Ancilla cleanup/uncomputation checked separately",
+    "Same allowed failure budget and supported input domain",
+    "Pareto comparison across multiple resource dimensions",
+    "Target-aware simulation and provider-neutral lowering only after logical acceptance",
+    "End-to-end accepted useful-task cost against a competitive CPU/GPU/NPU baseline"
+  ],
+  "selected_integration_edges": [
+    {
+      "edge": "A-C-F",
+      "status": "PROPOSED",
+      "rationale": "Candidate correctness and peak-qubit/ancilla accounting precede full accepted-task economics.",
+      "measured_gain": null
+    },
+    {
+      "edge": "A-D-G",
+      "status": "BLOCKED",
+      "rationale": "Requires a verified candidate and target-native gate/control/QEC mapping before fabrication implications.",
+      "unlock": "Attach a verified circuit, target snapshot, native decomposition and uncertainty ledger."
+    },
+    {
+      "edge": "B-C-F",
+      "status": "PROPOSED",
+      "rationale": "Any future networked-QPU claim must combine channel assumptions, state/data movement and lifecycle cost.",
+      "measured_gain": null
+    },
+    {
+      "edge": "E-F-H",
+      "status": "PROPOSED",
+      "rationale": "Permanent BIO-001/FUS-001/FIN-001 interfaces remain active, but this cycle supplies no new energy or finance inputs.",
+      "measured_gain": null
+    },
+    {
+      "edge": "A-F-H",
+      "status": "PROPOSED",
+      "rationale": "A logical resource reduction must pass accepted-output and cost accounting before strategic promotion.",
+      "measured_gain": null
+    }
+  ],
+  "pair_review": [
+    {
+      "pair": "A-B",
+      "status": "PROPOSED",
+      "rationale": "Lower only semantically verified candidates through provider-neutral adapters; no provider execution this cycle."
+    },
+    {
+      "pair": "A-C",
+      "status": "PROPOSED",
+      "rationale": "Track peak logical qubits and ancilla cleanup, but keep classical memory/storage and output bytes separate."
+    },
+    {
+      "pair": "A-D",
+      "status": "BLOCKED",
+      "rationale": "Target-native gate, calibration and physical-resource mapping requires a verified representative circuit."
+    },
+    {
+      "pair": "A-E",
+      "status": "N/A",
+      "rationale": "No direct materials, fuel, cooling or fusion data in the circuit-discovery source."
+    },
+    {
+      "pair": "A-F",
+      "status": "PROPOSED",
+      "rationale": "Use identical semantics and failure budgets before comparing resource frontiers and accepted-task economics."
+    },
+    {
+      "pair": "A-G",
+      "status": "BLOCKED",
+      "rationale": "Manufacturing co-design needs target-native circuit/resource requirements first."
+    },
+    {
+      "pair": "A-H",
+      "status": "PROPOSED",
+      "rationale": "Translate any future validated software gain through the strategic mission/economics gates."
+    },
+    {
+      "pair": "A-I",
+      "status": "PROPOSED",
+      "rationale": "Publish the stable RVC-001 contract and status through the integration hub."
+    },
+    {
+      "pair": "B-C",
+      "status": "PROPOSED",
+      "rationale": "Future network claims need channel, data-movement, buffering and readable-output accounting; no network measurement now."
+    },
+    {
+      "pair": "B-D",
+      "status": "BLOCKED",
+      "rationale": "No target/network hardware design or measured channel model is in scope."
+    },
+    {
+      "pair": "B-E",
+      "status": "N/A",
+      "rationale": "No direct cloud-network to biomass/fusion/material experiment in this source set."
+    },
+    {
+      "pair": "B-F",
+      "status": "PROPOSED",
+      "rationale": "Any future capacity/rate comparison must use same-channel assumptions and full lifecycle cost; no price measured."
+    },
+    {
+      "pair": "B-G",
+      "status": "N/A",
+      "rationale": "No provider-network manufacturing requirements established this cycle."
+    },
+    {
+      "pair": "B-H",
+      "status": "N/A",
+      "rationale": "The theorem is an architecture constraint, not a strategic-plan result by itself."
+    },
+    {
+      "pair": "B-I",
+      "status": "PROPOSED",
+      "rationale": "Track the no-go watch and keep provider/cloud assumptions discoverable."
+    },
+    {
+      "pair": "C-D",
+      "status": "BLOCKED",
+      "rationale": "Logical peak qubits cannot be translated to physical device needs without target mapping and QEC assumptions."
+    },
+    {
+      "pair": "C-E",
+      "status": "N/A",
+      "rationale": "No direct state/memory to biomass/fusion measurement."
+    },
+    {
+      "pair": "C-F",
+      "status": "PROPOSED",
+      "rationale": "Add host memory, transfers, reconstruction and cost per accepted task before any economics claim."
+    },
+    {
+      "pair": "C-G",
+      "status": "BLOCKED",
+      "rationale": "Memory/ancilla requirements are not yet mapped to packaging or manufacturing."
+    },
+    {
+      "pair": "C-H",
+      "status": "PROPOSED",
+      "rationale": "Memory/state compression is a mission concern but no phone-boundary result is shown."
+    },
+    {
+      "pair": "C-I",
+      "status": "PROPOSED",
+      "rationale": "Keep logical-state and classical-storage claims distinct in the integration hub."
+    },
+    {
+      "pair": "D-E",
+      "status": "N/A",
+      "rationale": "No device/material/energy causal result from these literature sources."
+    },
+    {
+      "pair": "D-F",
+      "status": "BLOCKED",
+      "rationale": "No target-native or device cost data to price."
+    },
+    {
+      "pair": "D-G",
+      "status": "PROPOSED",
+      "rationale": "Maintain mandatory device/fabrication co-design after logical candidates pass."
+    },
+    {
+      "pair": "D-H",
+      "status": "N/A",
+      "rationale": "No device-level or industrial result is established."
+    },
+    {
+      "pair": "D-I",
+      "status": "PROPOSED",
+      "rationale": "Record native-mapping blockers and the required target/device inputs."
+    },
+    {
+      "pair": "E-F",
+      "status": "PROPOSED",
+      "rationale": "Preserve BIO-001/FUS-001 full accounting interfaces; no new empirical inputs were found."
+    },
+    {
+      "pair": "E-G",
+      "status": "N/A",
+      "rationale": "No manufacturing equipment experiment is linked to this circuit-method result."
+    },
+    {
+      "pair": "E-H",
+      "status": "PROPOSED",
+      "rationale": "Keep biomass/fusion strategic pillars visible while labeling this cycle as no new energy evidence."
+    },
+    {
+      "pair": "E-I",
+      "status": "PROPOSED",
+      "rationale": "Record the explicit no-new-data blocker for BIO-001 and FUS-001."
+    },
+    {
+      "pair": "F-G",
+      "status": "BLOCKED",
+      "rationale": "No manufacturing cost, yield or throughput inputs are available to connect to finance."
+    },
+    {
+      "pair": "F-H",
+      "status": "PROPOSED",
+      "rationale": "Finance claims remain conditional; no principal, interest or WACC effect measured."
+    },
+    {
+      "pair": "F-I",
+      "status": "PROPOSED",
+      "rationale": "The integration record preserves evidence class, gaps, and sync status."
+    },
+    {
+      "pair": "G-H",
+      "status": "N/A",
+      "rationale": "No new factory or equipment result to translate into industrial strategy."
+    },
+    {
+      "pair": "G-I",
+      "status": "PROPOSED",
+      "rationale": "Track the D/G co-design gate without inferring fabrication feasibility."
+    },
+    {
+      "pair": "H-I",
+      "status": "PROPOSED",
+      "rationale": "Preserve multilingual strategic context and route only evidence-gated results into the plan."
+    }
+  ],
+  "evidence_boundary": {
+    "main_ci_at_start": {
+      "prototype_and_invariants": "success",
+      "cold_start_handoff": "success",
+      "head_sha": "70796ef8b918fe2e95382bc49cd7016a825db7e1"
+    },
+    "local_isolated_contract_tests": {
+      "runtime": "Python 3.13",
+      "passed": 10,
+      "failed": 0
+    },
+    "exact_pr_head_ci": "PENDING",
+    "paid_qpu_jobs": 0,
+    "real_qpu_evidence": false,
+    "physical_law_claim": false,
+    "material_substitution_evidence": false,
+    "accepted_bio_oil_evidence": false,
+    "net_electric_fusion_evidence": false,
+    "finance_rate_or_wacc_evidence": false,
+    "data_center_to_phone_evidence": false
+  },
+  "sync": {
+    "main_sync_status": "PENDING_REVIEW",
+    "note": "This branch is not canonical main. Do not update large append-only WORKLOG.md, RESEARCH_GAPS.md or README.md from partial reads; RG-041 and Batch 064 are dedicated dated artifacts. Record source-to-main SHA mapping after merge."
+  },
+  "falsifier": "No candidate passes correctness/phase/ancilla/failure gates, no Pareto improvement survives, or target-native/QEC/accepted-task cost erases the logical-resource improvement.",
+  "next_gate": "Freeze one representative reversible primitive and baseline; run an independent exact or proof-backed evaluator, then target-aware simulation. Keep Gaussian-repeater claims inside the theorem's stated scope."
+}
