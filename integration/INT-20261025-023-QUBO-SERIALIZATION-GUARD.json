@@ -1,0 +1,39 @@
+{
+  "schema": "uqpu-provider-neutral-qubo-serialization-v1",
+  "integration_id": "INT-20261025-023",
+  "work_id": "A-QUBO-LOWERING-OBJECTIVE-PRESERVATION",
+  "date": "2026-10-25",
+  "canonical_start_main": "b5aac63f295c2b586f044bcbb228ad0ffb0660ef",
+  "primary_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "integration_owner_lane": "F_economics_benchmarks_evidence",
+  "status": "SOFTWARE_REGRESSION_TESTS_LOCAL_PASS_CI_PENDING",
+  "change": {
+    "module": "software/uqpu-prototype/uqpu/qubo_serialization.py",
+    "test": "software/uqpu-prototype/tests/test_qubo_serialization_equivalence.py",
+    "finite_coefficient_guard": true,
+    "formats": ["uqpu-qubo-v1", "dwave-qubo"],
+    "fixture_features": [
+      "reversed pair orientation",
+      "diagonal quadratic term",
+      "nonzero objective offset",
+      "all binary assignments over three variables"
+    ],
+    "negative_cases": [
+      "NaN constant",
+      "infinite linear coefficient",
+      "NaN quadratic coefficient",
+      "non-numeric coefficient"
+    ],
+    "local_test_count": 8,
+    "local_tests_passed": true
+  },
+  "acceptance_boundary": {
+    "serialization_objective_preservation_checked": true,
+    "provider_sdk_execution_performed": false,
+    "real_qpu_execution_performed": false,
+    "useful_workload_quality_demonstrated": false,
+    "quantum_advantage_demonstrated": false,
+    "cost_advantage_demonstrated": false
+  },
+  "next_gate": "Run exact-head Python 3.10/3.11/3.12 and full reference/QSP/QSVT/provider-neutral checks; then independently validate provider payload conventions and continue identical useful-output CPU/GPU/QPU comparisons."
+}

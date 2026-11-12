@@ -1,0 +1,57 @@
+{
+  "schema": "uqpu-fusion-evidence-boundary-v1",
+  "integration_id": "INT-20261025-021",
+  "work_id": "FUS-001-LM26-PLASMA-TO-NET-ELECTRICITY",
+  "date": "2026-10-25",
+  "canonical_start_main": "b5aac63f295c2b586f044bcbb228ad0ffb0660ef",
+  "primary_owner_lane": "E_materials_energy_cooling_infrastructure",
+  "integration_owner_lane": "F_economics_benchmarks_evidence",
+  "co_design_lanes": [
+    "D_device_chip_process_fabrication_packaging",
+    "G_quantum_chip_manufacturing_equipment_software_factory"
+  ],
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "source_evidence": [
+    {
+      "id": "LM26-THOMSON-2026-10-08",
+      "title": "Thomson Scattering Measurement of 1 keV Electron Temperature on Lawson Machine 26",
+      "source_date": "2026-10-08",
+      "evidence_class": "OFFICIAL_PREPRINT",
+      "url": "https://arxiv.org/abs/2610.11769",
+      "reported_observable": "electron temperature 1090 +/- 40 eV by Thomson scattering"
+    },
+    {
+      "id": "LM26-COMPRESSIONAL-2026-10-08",
+      "title": "Compressional heating above 1 keV on the LM26 magnetized target fusion machine",
+      "source_date": "2026-10-08",
+      "evidence_class": "OFFICIAL_PREPRINT",
+      "url": "https://arxiv.org/abs/2610.11890",
+      "reported_observables": [
+        "electron temperature 1180 +/- 65 eV by filtered X-ray diodes",
+        "ion temperature 459 +/- 33 eV inferred from neutron yield"
+      ]
+    },
+    {
+      "id": "UKAEA-LM26-MILESTONE-2026-10-08",
+      "title": "UKAEA, General Fusion announce Magnetised Target Fusion milestone",
+      "source_date": "2026-10-08",
+      "evidence_class": "OFFICIAL_GOVERNMENT_ANNOUNCEMENT",
+      "url": "https://www.gov.uk/government/news/ukaea-general-fusion-announce-magnetised-target-fusion-milestone"
+    }
+  ],
+  "implementation": {
+    "module": "software/uqpu-prototype/uqpu/fusion_evidence.py",
+    "tests": "software/uqpu-prototype/tests/test_fusion_evidence.py",
+    "evidence_gate": "plasma temperature or fusion power alone never promotes to net-electricity evidence",
+    "accounting_equation": "net_delivered = gross_electric - recirculating - other_parasitic - grid_delivery_losses",
+    "status": "SOFTWARE_CONTRACT_ONLY"
+  },
+  "evidence_boundary": {
+    "net_electricity_demonstrated": false,
+    "commercial_fusion_demonstrated": false,
+    "cost_per_net_mwh_demonstrated": false,
+    "wacc_reduction_demonstrated": false,
+    "new_physical_law_claimed": false
+  },
+  "next_gate": "Independently reconstruct diagnostic/shot data and energy balance; require time-aligned plant-meter output, recirculating/parasitic loads, grid losses, repeated operation and lifecycle cost uncertainty before any net-electricity or economics promotion."
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "uqpu-scoped-no-go-literature-v1",
+  "integration_id": "INT-20261025-022",
+  "work_id": "QNET-GAUSSIAN-REPEATER-SCOPE",
+  "date": "2026-10-25",
+  "canonical_start_main": "b5aac63f295c2b586f044bcbb228ad0ffb0660ef",
+  "primary_owner_lane": "B_cloud_qpu_provider_integration",
+  "integration_owner_lane": "C_state_memory_storage_data_movement",
+  "evidence_class": "PEER_REVIEWED_PRIMARY_PAPER",
+  "source": {
+    "authors": ["Rabsan Galib Ahmed", "Graeme Smith"],
+    "title": "No-Go Theorem for Gaussian Quantum Repeaters from Fractional Extendibility",
+    "journal": "Physical Review Letters",
+    "volume": 137,
+    "article": 170804,
+    "published": "2026-10-23",
+    "accepted": "2026-09-28",
+    "doi": "10.1103/5cyh-2mqf",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/5cyh-2mqf"
+  },
+  "theorem_scope": {
+    "channel": "pure-loss bosonic attenuation",
+    "allowed_operations": "Gaussian operations, homodyne measurements and classical communication; theorem also treats arbitrary Gaussian LOCC for two-way capacities",
+    "conclusion": "Gaussian repeaters do not increase the specified quantum/private capacities beyond direct transmission under the stated assumptions"
+  },
+  "project_relevance": "Conditional architecture guardrail only; no evidence currently shows that UQPU provider integration depends on this repeater family.",
+  "non_claims": [
+    "does not rule out all quantum repeaters or all quantum networks",
+    "does not establish a UQPU hardware, memory, compute or cost advantage",
+    "does not apply automatically to non-Gaussian operations or different channel/resource assumptions",
+    "does not establish a new physical law"
+  ],
+  "next_gate": "For any proposed repeater path, freeze channel model, operation set, resource assumptions, target capacity/fidelity, direct-transmission baseline and full preparation/memory/measurement/communication/cost boundary before simulation."
+}
