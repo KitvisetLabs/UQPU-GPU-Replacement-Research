@@ -1,0 +1,84 @@
+{
+  "schema": "uqpu-literature-integration-v1",
+  "integration_id": "INT-20261025-014",
+  "date": "2026-10-25",
+  "primary_owner_lane": "E",
+  "integration_owner_lane": "F",
+  "canonical_main_base_sha": "6af8ce896368ed993fe2b8278afa6082e1ecc916",
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "evidence_class": "LITERATURE_ONLY",
+  "primary_artifact": "docs/literature_watch/2026-10-25-fusion-experience-rate-uncertainty.md",
+  "lane_artifact": "research_lanes/E_materials_energy_cooling_infrastructure/FUSION_EXPERIENCE_RATE_GATE_2026-10-25.md",
+  "work_id": "FUS-LR-001",
+  "source": {
+    "id": "LIT-FUSION-EXPERIENCE-RATE-2026-03-23",
+    "title": "Fusion power experience rates are overestimated",
+    "publication_date": "2026-03-23",
+    "venue": "Nature Energy 11, 926–934 (2026)",
+    "doi": "10.1038/S41560-026-02023-8",
+    "url": "https://doi.org/10.1038/S41560-026-02023-8",
+    "evidence_class": "PEER_REVIEWED_ANALYSIS",
+    "reported_capex_range_usd_per_kw": [
+      1400,
+      43000
+    ],
+    "scope": "Analysis of assumed fusion power-plant experience rates and first-of-a-kind CAPEX uncertainty.",
+    "limitations": [
+      "Not a commercial operating-plant cost measurement",
+      "No universal learning rate established",
+      "Architecture-specific subsystems and technology readiness limit transfer",
+      "No UQPU, Pangola, fuel, net-electricity or financing-rate evidence"
+    ]
+  },
+  "relevance": {
+    "FUS_001": "Use component-specific learning-rate scenarios; keep net delivered electricity and full lifecycle cost as the objective.",
+    "FIN_001": "Recompute principal, capital lock-up, time-to-evidence and absolute interest under each cost/schedule scenario; do not infer a lower WACC.",
+    "INV_031": "No bio-oil or coproduct evidence; keep separate.",
+    "INV_032": "No reliable net delivered fusion-electricity or commercial cost result.",
+    "INV_033": "No measured interest-rate or financing-rate effect."
+  },
+  "falsifiable_followup": {
+    "id": "FUS-LR-001",
+    "inputs": [
+      "component-level cost scope",
+      "deployment count",
+      "source-backed learning-rate range",
+      "uncertainty",
+      "construction schedule",
+      "replacement lifetime",
+      "net electricity",
+      "financing and decommissioning"
+    ],
+    "comparison": "low/base/high component-specific learning scenarios with double-counting controls",
+    "rejection": "Any target claim depending on an unsupported optimistic rate remains MODEL_ONLY; cost ranking must be reported as assumption-sensitive if plausible ranges reverse it.",
+    "independent_validation": "Compare to relevant historical manufacturing analogs only when scope and production unit are genuinely comparable; require future plant data for commercial validation."
+  },
+  "lane_status": {
+    "A": "No direct algorithm change; Priority #1 continues independently.",
+    "B": "No provider or QPU action.",
+    "C": "No new memory/data movement measurement.",
+    "D": "No material/device qualification; component requirements remain downstream.",
+    "E": "FUS-001 learning-rate uncertainty gate specified.",
+    "F": "Full lifecycle sensitivity and financing accounting required.",
+    "G": "Separate factory learning, yield and redesign; no process-window evidence.",
+    "H": "Use uncertainty for staged capital sequencing only; no WACC inference."
+  },
+  "cross_cutting": {
+    "FND_001_to_006": "No foundational-physics gate closed.",
+    "EQN_001_to_006": "No new equation or physical law.",
+    "INV_029_to_035": "Preserved; no mission-level result promoted.",
+    "INV_025_to_027": "Preserved; moonshots remain falsifiable goals."
+  },
+  "sync_debt": {
+    "canonical_gap_ledger": "RESEARCH_GAPS.md",
+    "required_followup": "Append FUS-LR-001 in a safe full-content sync; preserve existing RG IDs and do not overwrite partial history.",
+    "main_status_at_base": "Latest main SHA had no status entries at initial audit; exact-head PR CI must be checked after opening."
+  },
+  "authorization": {
+    "paid_qpu_jobs": 0,
+    "credentials_used": false,
+    "material_experiments": 0,
+    "fuel_production_runs": 0,
+    "fusion_tests": 0
+  }
+}
