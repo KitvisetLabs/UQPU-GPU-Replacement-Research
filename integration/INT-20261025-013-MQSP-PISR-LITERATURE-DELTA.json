@@ -1,0 +1,115 @@
+{
+  "schema": "uqpu-literature-integration-v1",
+  "integration_id": "INT-20261025-013",
+  "date": "2026-10-25",
+  "primary_owner_lane": "A",
+  "integration_owner_lane": "F",
+  "canonical_main_base_sha": "6af8ce896368ed993fe2b8278afa6082e1ecc916",
+  "evidence_class": "LITERATURE_ONLY",
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "primary_artifact": "docs/literature_watch/2026-10-25-mqsp-and-physics-informed-symbolic-regression.md",
+  "lane_artifact": "research_lanes/A_quantum_programming_runtime/batches/batch057-mqsp-multioracle-preflight.md",
+  "work_ids": [
+    "QOS-MQSP-001",
+    "EQN-PISR-001"
+  ],
+  "sources": [
+    {
+      "id": "LIT-MQSP-2026-10-01",
+      "title": "Multivariate Quantum Signal Processing",
+      "author": "Guang Hao Low",
+      "publication_date": "2026-10-01",
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2610.01125",
+      "evidence_class": "PREPRINT_THEORY",
+      "novelty": "Transfer-function framework for matrix-valued transformations of multiple noncommuting, nonnormal block-encoded matrices; explicit weighted multi-oracle cost framing.",
+      "limitations": [
+        "Theoretical result under stated oracle/block-encoding assumptions",
+        "No UQPU implementation or target execution",
+        "Asymptotic query costs omit unspecified application-specific preparation, readout, host, target, energy and billing costs"
+      ],
+      "canonical_prior_record": "docs/LITERATURE_WATCH_2026-10-17_MULTIVARIATE_QSP.md",
+      "status": "PREVIOUSLY_RECORDED_CROSS_WATCH_RECONCILIATION"
+    },
+    {
+      "id": "LIT-PISR-PARTICLE-INTERFACE-2026-09-08",
+      "title": "Physics-informed symbolic regression reveals a delayed oscillatory closure for particle–interface dynamics",
+      "authors": [
+        "Teddy Lazebnik",
+        "Chen Mortenfeld",
+        "Alex Liberzon"
+      ],
+      "publication_date": "2026-09-08",
+      "venue": "Machine Learning: Science and Technology 7, 055004",
+      "doi": "10.1088/2632-2153/ae9c8b",
+      "url": "https://doi.org/10.1088/2632-2153/ae9c8b",
+      "evidence_class": "PEER_REVIEWED_EXPERIMENT_INFORMED_MODEL",
+      "novelty": "Physics-informed symbolic regression produced a compact delayed damped-oscillatory force closure from measured sphere trajectories at water-salt and water-glycerol interfaces.",
+      "limitations": [
+        "Domain-specific effective closure, not a universal/fundamental law",
+        "Generalization and independent replication remain separate gates",
+        "No Pangola, semiconductor, fusion, UQPU or finance evidence"
+      ],
+      "status": "NEW_TO_CURRENT_WATCH"
+    }
+  ],
+  "canonical_control": {
+    "artifact": "docs/BATCH_056_BOUNDED_QSVT_MATRIX_FIXTURE.md",
+    "result_artifact": "benchmarks/results/batch056-qos-qsvt-matrix-fixture.json",
+    "evidence_label": "SIMULATION",
+    "polynomial_degree": 81,
+    "signal_queries": 81,
+    "phase_rotations": 82,
+    "signal_ancillas": 1,
+    "provider_jobs": 0,
+    "shots": 0,
+    "gate_decomposition": "NOT_PERFORMED",
+    "energy_cost": "NOT_MEASURED"
+  },
+  "lane_status": {
+    "A": "QOS-MQSP-001 contract specified; implementation deferred until full theorem-scope and QOS-QSVT-FEAS-001 gates are reproduced.",
+    "B": "Provider-neutral oracle contract; no credentials, provider calls, jobs, shots or billing.",
+    "C": "Require state preparation, input/output bytes, transfer, reconstruction and readable-output semantics; no memory equivalence.",
+    "D": "Native-gate/depth/control/device requirements remain downstream of target-aware lowering.",
+    "E": "PISR is method-only; BIO-001 and FUS-001 evidence unchanged.",
+    "F": "Weighted oracle costs and matched accepted-task economics specified; RG-028 remains data/credential blocked.",
+    "G": "D/G co-design retained; no process window/yield/factory-cost claim.",
+    "H": "Publication and multilingual strategy context retained; no financing effect."
+  },
+  "cross_cutting": {
+    "FND_001": "No measured wall-plug energy or irreversible erasures.",
+    "FND_002": "No readable classical-memory equivalence; output-information accounting remains mandatory.",
+    "FND_003": "No matched speed-limit/control timing-energy result.",
+    "FND_004": "No alternative primitive validated.",
+    "FND_005": "No particle/QFT mechanism or credible anomaly established.",
+    "FND_006": "Physics-informed model generation must pass held-out, counterexample, experiment and engineering gates.",
+    "EQN_001_to_006": "No new physical law; no AI-generated equation promoted.",
+    "INV_029_to_035": "Preserved; no mission-level evidence gate closed.",
+    "INV_025_to_027": "Preserved; moonshots remain falsifiable goals."
+  },
+  "sync_debt": {
+    "canonical_gap_ledger": "RESEARCH_GAPS.md",
+    "reason": "Large living append-only gap ledger not overwritten; current RG-035 concerns autonomous handoff reconciliation.",
+    "required_followup": "Append QOS-MQSP-001 and EQN-PISR-001 with existing IDs preserved during the next safe canonical gap-ledger sync; M-QSP is a refined existing follow-up, not a new source.",
+    "ci_at_base": "No status entries and no workflow runs returned for base SHA at audit time; CI not observed, not pass/failure.",
+    "stale_reconciliation_snapshot": {
+      "artifact": "integration/DAILY_CYCLE_2026-10-25_CANONICAL_RECONCILIATION.md",
+      "recorded_base_sha": "c7b5958af58fad04a101ef5c6abf6a29293c867e",
+      "current_main_sha_at_this_run": "6af8ce896368ed993fe2b8278afa6082e1ecc916",
+      "reason": "The snapshot says main was last observed on Oct 22 and treats the Oct 25 proof-search/QSP-QSVT watches as pending PRs, but the current main contains later Oct 24 commits integrating those watches.",
+      "required_followup": "Create a new reconciliation snapshot from the then-current main SHA; do not rewrite historical evidence or assume the older snapshot is current."
+    }
+  },
+  "authorization": {
+    "paid_qpu_jobs": 0,
+    "credentials_used": false,
+    "explicit_user_consent_for_paid_execution": false,
+    "material_experiments": 0,
+    "fuel_production_runs": 0,
+    "fusion_tests": 0
+  },
+  "source_disposition": {
+    "LIT-MQSP-2026-10-01": "Previously recorded in docs/LITERATURE_WATCH_2026-10-17_MULTIVARIATE_QSP.md; this cycle reconciles its multi-oracle boundary with Batch 056 and the current QSP/QSVT feasibility watch.",
+    "LIT-PISR-PARTICLE-INTERFACE-2026-09-08": "New-to-this-watch peer-reviewed, experiment-informed effective-model result."
+  }
+}
