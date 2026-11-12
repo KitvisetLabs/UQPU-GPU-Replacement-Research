@@ -1,0 +1,40 @@
+{
+  "schema": "uqpu-formula-discovery-benchmark-contract-smoke-v1",
+  "date": "2026-10-25",
+  "evidence_class": "MODEL_ONLY",
+  "environment": {
+    "python": "3.13",
+    "test_runner": "unittest"
+  },
+  "tests": {
+    "file": "software/uqpu-prototype/tests/test_formula_discovery_benchmark.py",
+    "run": 15,
+    "passed": 15,
+    "failed": 0,
+    "coverage": [
+      "matched method budgets",
+      "frozen dataset and split identity",
+      "non-distinct split hashes",
+      "non-finite metrics",
+      "duplicate seeds",
+      "false discovery and failed-search accounting",
+      "counterexample accounting",
+      "constraint failure retention",
+      "training-resource consistency by model hash",
+      "no automatic physical-law promotion",
+      "cost per accepted formula includes failed-run costs",
+      "common cost-basis enforcement"
+    ]
+  },
+  "external_benchmark_executed": false,
+  "transformer_weights_downloaded": false,
+  "physical_experiment_performed": false,
+  "real_qpu_jobs": 0,
+  "project_ci_matrix": [
+    "3.10",
+    "3.11",
+    "3.12"
+  ],
+  "project_ci_status": "PENDING",
+  "non_claim": "Synthetic contract tests only; no formula-generator accuracy, physical law, QPU advantage, material substitution, accepted fuel, net electricity, economic advantage or Data-Center-to-Phone result."
+}

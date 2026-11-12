@@ -1,0 +1,123 @@
+{
+  "schema": "uqpu-integration-v1",
+  "id": "INT-20261025-021",
+  "date": "2026-10-25",
+  "primary_owner_lane": "F",
+  "cross_lane_owners": [
+    "A",
+    "C",
+    "E",
+    "H"
+  ],
+  "work_item_ids": [
+    "EQN-001",
+    "EQN-002",
+    "EQN-006",
+    "FIN-001",
+    "RG-046",
+    "INV-034",
+    "INV-035"
+  ],
+  "starting_main_sha": "70796ef8b918fe2e95382bc49cd7016a825db7e1",
+  "status": "MODEL_ONLY_BENCHMARK_CONTRACT_READY_FOR_REVIEW",
+  "source": {
+    "id": "LIT-2026-10-02-SYNTH-PHYSICS-FORMULAE-TRANSFORMERS",
+    "title": "Synthesizing Physics Formulae with Transformers",
+    "source_date": "2026-10-02",
+    "source_type": "OFFICIAL_ARXIV_PREPRINT_V1",
+    "url": "https://arxiv.org/abs/2610.03947",
+    "claims_as_reported": [
+      "roughly ten-second formula synthesis on selected SRBench/LLM-SRBench tasks",
+      "improved extrapolation on evaluated tasks at comparable inference-time budgets",
+      "weaker results on LSR-Synth at input scales far from training distribution",
+      "roughly two weeks of training on one H100 80 GB GPU for a roughly 145-million-parameter model"
+    ],
+    "limitations": [
+      "not independently reproduced by UQPU",
+      "inference time is not full training-plus-inference lifecycle cost",
+      "benchmark formula accuracy is not proof of physical adequacy"
+    ]
+  },
+  "artifacts": {
+    "benchmark_helper": "software/uqpu-prototype/uqpu/formula_discovery_benchmark.py",
+    "unit_tests": "software/uqpu-prototype/tests/test_formula_discovery_benchmark.py",
+    "literature_watch": "docs/literature_watch/2026-10-25-transformer-physics-formula-synthesis.md",
+    "research_gap": "docs/RESEARCH_GAP_RG046_TRANSFORMER_FORMULA_GENERALIZATION.md",
+    "batch": "docs/BATCH_064_TRANSFORMER_FORMULA_DISCOVERY_GENERALIZATION.md",
+    "smoke_result": "benchmarks/results/formula-discovery-benchmark-contract-smoke-2026-10-25.json"
+  },
+  "method": {
+    "arms": [
+      "symbolic_search",
+      "transformer_generator",
+      "llm_guided_search",
+      "physics_constrained_hybrid"
+    ],
+    "minimum_seeds_per_arm_for_ci_smoke": 3,
+    "recommended_confirmatory_seeds_per_arm": 30,
+    "relative_wall_clock_budget_tolerance": 0.05,
+    "required_splits": [
+      "train",
+      "held_out_interpolation",
+      "extrapolation"
+    ],
+    "required_metrics": [
+      "train_error",
+      "heldout_error",
+      "extrapolation_error",
+      "candidate_complexity",
+      "dimensional_consistency",
+      "symmetry",
+      "conservation",
+      "causality",
+      "counterexamples",
+      "false_discoveries",
+      "failed_searches",
+      "wall_clock_seconds",
+      "host_cpu_seconds",
+      "peak_memory_bytes",
+      "tokens_when_applicable",
+      "energy_when_measurable",
+      "model_training_gpu_hours",
+      "model_training_energy",
+      "model_hash",
+      "full_cost_per_accepted_formula",
+      "accepted_candidate",
+      "total_cost_usd",
+      "cost_basis_id"
+    ]
+  },
+  "validation": {
+    "local_python_version": "3.13",
+    "local_tests_run": 15,
+    "local_tests_passed": 15,
+    "local_tests_failed": 0,
+    "project_ci_matrix": [
+      "3.10",
+      "3.11",
+      "3.12"
+    ],
+    "project_ci_status_for_new_head": "PENDING",
+    "external_model_downloaded": false,
+    "external_benchmark_reproduced": false,
+    "physical_experiment_performed": false
+  },
+  "lanes": {
+    "A": "Reusable formula-discovery comparison contract added; no quantum workload advantage.",
+    "B": "No provider adapter or QPU job changed; simulator/dry-run-first policy unchanged.",
+    "C": "Peak memory, token count and optional energy are explicit; no memory-replacement claim.",
+    "D": "No device/process/packaging result; H100 requirement is an external model-training input.",
+    "E": "No biomass, material, bio-oil or fusion result; future constitutive-model use remains hypothetical.",
+    "F": "Owns evidence contract, reproducibility record, RG-046 and matched-budget gate.",
+    "G": "Training resource provenance may feed future equipment/factory models; no fabrication result.",
+    "H": "Dated publication connects model-training amortization to FIN-001/INV-033 and external infrastructure to INV-029."
+  },
+  "evidence_boundary": "All implementation fixtures are synthetic MODEL_ONLY tests. No generated equation is a physical law. No QPU, material, fuel, net-electricity, WACC or Data-Center-to-Phone claim is promoted.",
+  "safety": {
+    "paid_qpu_jobs_authorized": false,
+    "material_experiments_authorized": false,
+    "fabrication_authorized": false,
+    "funding_authorized": false
+  },
+  "next_gate": "Pin the paper source/model/data versions, verify row-level split disjointness, run >=30 seeds per method at matched budgets, include training amortization and independent replication, then define a domain-specific discriminating experiment before any physical claim."
+}
