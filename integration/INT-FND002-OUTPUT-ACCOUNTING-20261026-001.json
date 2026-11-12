@@ -1,0 +1,144 @@
+{
+  "schema": "uqpu-integration-record-v1",
+  "record_id": "INT-FND002-OUTPUT-ACCOUNTING-20261026-001",
+  "date": "2026-10-26",
+  "canonical_start_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+  "canonical_branch": "main",
+  "source_branch": "research/2026-10-26-fnd002-output-accounting",
+  "primary_owner_lane": "C_state_memory_storage_data_movement",
+  "implementation_owner_lane": "A_quantum_programming_workloads_compiler_runtime",
+  "integration_owner_lane": "F_economics_benchmark_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "work_item_id": "FND002-OUT-001",
+  "evidence_class": [
+    "SOFTWARE_CONTRACT",
+    "UNIT_TESTS_PENDING_CI",
+    "THEORY_BOUND",
+    "LITERATURE_ONLY"
+  ],
+  "status": "PENDING_REVIEW_AND_EXACT_HEAD_CI",
+  "source_files": [
+    "software/uqpu-prototype/uqpu/output_accounting.py",
+    "software/uqpu-prototype/uqpu/workload_contracts.py",
+    "software/uqpu-prototype/uqpu/benchmark_pipeline.py",
+    "software/uqpu-prototype/tests/test_output_accounting.py",
+    "docs/DAILY_CYCLE_2026-10-26_FND002_OUTPUT_ACCOUNTING.md"
+  ],
+  "output_contract_fields": [
+    "distinguishable_outcomes",
+    "exactness_required",
+    "allowed_error_probability",
+    "uniform_prior_assumed",
+    "side_information_available",
+    "encoding_mode",
+    "required_results_per_second"
+  ],
+  "measurement_fields": [
+    "measured_output_bytes_per_accepted_result",
+    "reconstruction_seconds_per_accepted_result",
+    "side_information_bytes_per_accepted_result",
+    "measured_accepted_results_per_second",
+    "measured_error_probability"
+  ],
+  "test_count": 15,
+  "tests_locally_run": false,
+  "exact_head_ci": "PENDING",
+  "real_qpu_jobs": 0,
+  "paid_qpu_jobs_authorized": false,
+  "project_evidence_promoted": false,
+  "invariants_preserved": [
+    "INV-025",
+    "INV-026",
+    "INV-027",
+    "INV-029",
+    "INV-030",
+    "INV-031",
+    "INV-032",
+    "INV-033",
+    "INV-034",
+    "INV-035"
+  ],
+  "lane_review": {
+    "A": "output accounting integrated at workload/benchmark boundary; exact-head tests pending",
+    "B": "provider-neutral no-submit path; no provider/target evidence change",
+    "C": "FND-002 output and reconstruction contract advanced",
+    "D": "reviewed; no new device/process evidence",
+    "E": "BIO-001 and FUS-001 remain open; no accepted fuel or net-electric evidence",
+    "F": "cross-lane accounting improved; no economic advantage claimed",
+    "G": "D/G co-design preserved; no calibrated factory evidence",
+    "H": "master plan and six-language references preserved; no finance/WACC effect"
+  },
+  "foundational_status": {
+    "FND-001": "synthetic calibration only; no physical energy measurement",
+    "FND-002": "output contract and benchmark measurement plumbing added",
+    "FND-003": "no matched physical measurement",
+    "FND-004": "no validated alternative primitive",
+    "FND-005": "no validated particle/QFT technology mechanism",
+    "FND-006": "active; related symbolic discovery work remains pending",
+    "EQN-001_to_EQN-006": "evidence-gated workflow preserved; no new physical law"
+  },
+  "literature_delta": [
+    {
+      "source": "Chain of Symbolic Regression",
+      "date": "2026-10-06",
+      "status": "covered on open PR #56; not canonical main at cycle start",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://journals.aps.org/prresearch/accepted/10.1103/f2kp-pp4q"
+    },
+    {
+      "source": "Advancing mathematics research with AI-driven formal proof search",
+      "date": "2026-10-08",
+      "status": "already covered on main",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42848891/"
+    },
+    {
+      "source": "Designing physics experiments with artificial intelligence",
+      "date": "2026-09-02",
+      "status": "already cited in permanent equation-discovery directive",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://www.nature.com/articles/s41586-026-10898-6"
+    },
+    {
+      "source": "Synthesizing Physics Formulae with Transformers",
+      "date": "2026-10-02",
+      "status": "covered on open PR #98; not canonical main at cycle start",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://arxiv.org/abs/2610.03947"
+    },
+    {
+      "source": "L2G-SR",
+      "date": "2026-10-14",
+      "status": "covered on open PR #104; not canonical main at cycle start",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://arxiv.org/abs/2610.20685"
+    },
+    {
+      "source": "Beyond empirical models: Discovering constitutive laws in solids with graph-based equation discovery (GraphED)",
+      "date": "2026-09-11",
+      "status": "covered on open PR #53; older base and overlapping changes require conflict-aware review; not canonical main",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://doi.org/10.1126/sciadv.aec0989"
+    },
+    {
+      "source": "Physics-informed symbolic regression for particle-interface dynamics",
+      "date": "2026-09-08",
+      "status": "covered on open PR #87/#53; source-data reproduction remains DATA_BLOCKED",
+      "evidence_class": "LITERATURE_ONLY",
+      "source_url": "https://doi.org/10.1088/2632-2153/ae9c8b"
+    },
+    {
+      "source": "Probing False Vacuum Decay on a Cold-Atom Gauge-Theory Quantum Simulator",
+      "date": "2026-10-01",
+      "status": "new dated watch and falsifiable FND-005 follow-up on open PR #114; not canonical main at cycle start",
+      "evidence_class": "PUBLISHED_EXPERIMENT_SOURCE / LITERATURE_ONLY_FOR_UQPU",
+      "source_url": "https://journals.aps.org/prl/abstract/10.1103/vhnm-j9bw"
+    }
+  ],
+  "next_gate": "Run exact-head Python 3.10/3.11/3.12 and focused tests; integrate output accounting into a matched useful-output CPU/GPU/UQPU benchmark before any economics claim.",
+  "canonical_readme_checkpoint_sync_debt": {
+    "observed": "Top latest-verified checkpoint names Batch 062 while canonical Batch 063 exists and is referenced later in the README.",
+    "action": "Do not rewrite the large README from partial content; reconcile the top pointer with a focused, hash-checked edit after review."
+  },
+  "sync_debt": "Branch-only code and report are not canonical main until reviewed and merged; source-SHA-to-main-SHA mapping pending."
+}
