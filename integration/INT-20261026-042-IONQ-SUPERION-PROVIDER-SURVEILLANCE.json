@@ -1,0 +1,95 @@
+{
+  "schema": "uqpu-cross-lane-integration-v1",
+  "integration_id": "INT-20261026-042",
+  "date": "2026-10-26",
+  "canonical_branch": "main",
+  "canonical_start_sha": "5fbe3d295ad6ca5b7c701f05c64899829910cbe8",
+  "source_branch": "research/2026-10-26-ionq-superion-provider-watch",
+  "source_commits_before_integration_record": [
+    "ed8ab87da0a9ae6fe65987f9f572c30d66dd0039"
+  ],
+  "primary_owner_lane": "B_cloud_qpu_provider_integration",
+  "co_owners": [
+    "D_device_chip_fabrication",
+    "G_quantum_chip_manufacturing_equipment_software_factory_systems"
+  ],
+  "integration_owner_lane": "F_economics_benchmark_evidence_integration",
+  "publication_owner_lane": "H_strategy_finance_future_industries",
+  "status": "WATCH_ONLY_NO_ADAPTER_CHANGE",
+  "evidence_class": "VENDOR_ANNOUNCEMENT_FORWARD_LOOKING",
+  "project_evidence_promoted": false,
+  "official_sources": [
+    {
+      "date": "2026-09-08",
+      "title": "IonQ launches Superion product line",
+      "url": "https://www.ionq.com/news/ionq-launches-superion-product-line-industry-leading-upgradeable-platform-designed-to-scale-manufacturable-fault-tolerant-quantum-computing",
+      "relevance": "vendor reports integrated 256-qubit QPUs fabricated at SkyWater, ions trapped in prototypes, orders open, and customer deliveries expected in 2027"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "IonQ and SDT announce Asia-Pacific strategic partnership",
+      "url": "https://investors.ionq.com/news/news-details/2026/IonQ-and-SDT-Announce-the-First-Strategic-Partnership-to-Bring-Both-Advanced-Quantum-Computing-and-Quantum-Networking-to-the-Asia-Pacific-Region/default.aspx",
+      "relevance": "planned Superion 256 and silicon-vacancy memory module deployment in South Korea; proposed packaging and system-integration facility"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "IonQ Superion 256 planned for NVIDIA Accelerated Quantum Research Center",
+      "url": "https://www.ionq.com/news/ionq-to-advance-quantum-supercomputing-by-bringing-first-qpu-to-nvidia-accelerated-quantum-research-center",
+      "relevance": "planned on-premises deployment and 2027 installation target; not a current cloud access endpoint"
+    }
+  ],
+  "related_artifact": "docs/literature_watch/2026-10-26-ionq-superion-provider-manufacturing-watch.md",
+  "decision": "Do not change provider adapters or claim a current Superion cloud target. Continue official-documentation surveillance until a production target, access method, API, calibration semantics and price are verifiable.",
+  "integration_edges": [
+    {
+      "lanes": ["B", "A"],
+      "interface": "provider-neutral target capability card and compiler/runtime lowering",
+      "status": "WATCH_ONLY",
+      "unlock": "official target identifier, SDK/API docs, access conditions, gate set/topology, calibration and pricing semantics"
+    },
+    {
+      "lanes": ["D", "G"],
+      "interface": "chip/process/control/packaging co-design",
+      "status": "LITERATURE_ONLY",
+      "unlock": "independently supported device/process data, yield, reliability, control overhead and lifecycle-cost evidence"
+    },
+    {
+      "lanes": ["C", "D"],
+      "interface": "quantum-memory device and state-service boundary",
+      "status": "WATCH_ONLY",
+      "unlock": "specified memory function, retention/readout/transfer metrics and independent benchmark; no classical RAM equivalence inferred"
+    },
+    {
+      "lanes": ["F", "H"],
+      "interface": "vendor-claim and forward-looking forecast ledger",
+      "status": "DOCUMENTED_ONLY",
+      "unlock": "measured cost per accepted useful task and full lifecycle boundary; vendor cost-per-qubit roadmap remains a forecast"
+    }
+  ],
+  "lane_status": {
+    "A": "provider-neutral compiler/runtime preserved; no target-specific code change",
+    "B": "official IonQ product and APAC announcements recorded; current production cloud target not verified",
+    "C": "planned SiV memory module noted; no readable-storage or transfer result",
+    "D": "semiconductor-fabrication and electronic-control route noted; no device measurement",
+    "E": "no biomass, fuel, fusion or cooling result; no cross-domain claim transferred",
+    "F": "no cost-per-accepted-task or financing effect measured",
+    "G": "foundry, packaging and system-integration leads recorded; no yield/process-window data",
+    "H": "dated public-source watch created; strategic plan remains context, not proof"
+  },
+  "invariant_disposition": {
+    "INV-025": "preserved; no single-QPU 100M-GPU equivalence",
+    "INV-026": "preserved; no universal subsystem or classical-memory equivalence",
+    "INV-027": "preserved; claims remain falsifiable and evidence-gated",
+    "INV-029": "not closed; no phone-class physical compression",
+    "INV-030": "not closed; no Pangola material substitution",
+    "INV-031": "not closed; no accepted low-cost bio-oil/fuel",
+    "INV-032": "not closed; no net delivered fusion electricity",
+    "INV-033": "not closed; no lower principal, interest or WACC result",
+    "INV-034": "preserved; no foundational physical claim",
+    "INV-035": "preserved; vendor roadmap claims are not equations or laws"
+  },
+  "measured_gain": null,
+  "real_qpu_jobs_submitted": 0,
+  "paid_qpu_jobs_authorized": false,
+  "next_gate": "Recheck official IonQ cloud/API and pricing documentation as 2027 production delivery approaches; do not modify adapters until target availability is independently verifiable."
+}
