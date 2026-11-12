@@ -31,10 +31,12 @@
     {
       "id": "LIT-2026-09-01-PHYSICS-CONSTRAINED-CONSTITUTIVE-MODELS",
       "title": "LLM-driven design of physics-constrained constitutive models: two agents are better than one",
-      "publication_date": "2026-09-01",
-      "venue": "arXiv preprint v2",
-      "evidence_class": "PREPRINT",
-      "url": "https://arxiv.org/abs/2605.23754",
+      "publication_date": "2026-10-01",
+      "venue": "Machine Learning for Computational Science and Engineering 2, article 51 (2026), version of record",
+      "evidence_class": "PEER_REVIEWED_METHOD",
+      "url": "https://doi.org/10.1007/s44379-026-00099-3",
+      "preprint_url": "https://arxiv.org/abs/2605.23754",
+      "accepted_date": "2026-09-16",
       "non_claim": "Sampled numerical constraint checks are not global proof or independent material qualification."
     },
     {
