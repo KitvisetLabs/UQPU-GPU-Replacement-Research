@@ -2421,3 +2421,15 @@ Fresh biomass surveillance found Hussaini et al., *Chemical Engineering Journal:
 - No paid QPU job, hardware purchase or external spend was initiated or authorized. Next agents must inspect existing Lane A artifacts, freeze exact output contracts and baselines, and preserve null/negative results.
 
 Research-Sync: main
+
+
+## 2026-11-27 — Batch 146 — QGR-EXP-001 execution contracts
+
+- Added `docs/BATCH_146_QGR_EXP001_EXECUTION_CONTRACTS.md` and `benchmarks/manifests/qgr-exp-001-batch146-execution-contracts-2026-11-27.json`.
+- Froze EXP-00 semantic controls using the existing signed-Max-Cut held-out fixtures: independent objective/reference recomputation, sign/weight conventions, bit ordering, direct-QUBO/edge-parity equivalence, fail-closed parity feasibility, complete optimum/argmax checks and hash provenance. No duplicate dataset or split was created.
+- Froze EXP-01's separate kernel-resident and accepted-task end-to-end timing scopes, reproducibility metadata, correctness and uncertainty reporting, and explicit DATA_BLOCKED handling when physical GPU/telemetry is unavailable.
+- Selected the first EXP-05 structured matrix candidate: 1D Dirichlet Poisson (A_N=\operatorname{tridiag}(-1,2,-1)), (b=e_1), compact scalar (z_N=b^TA_N^{-1}b=N/(N+1)), with a stable tridiagonal classical comparator. Oracle/state preparation, QSVT degree, precision, measurement, QEC and host costs are mandatory.
+- This batch is a contract/design advance only. EXP-00, EXP-01 and EXP-05 were not executed; no simulator/QPU result, physical GPU measurement, energy result, quantum advantage, hardware purchase or external spend is claimed. Paid QPU and external spend remain unauthorized without explicit approval.
+- Next implementation order: independent EXP-00 evaluator and negative tests; exact Poisson scalar reference and classical tridiagonal baseline; then EXP-01 metadata/result harness and physical GPU capture only on an available device.
+
+Research-Sync: main
