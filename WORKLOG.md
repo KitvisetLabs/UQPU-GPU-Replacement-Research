@@ -2450,3 +2450,10 @@ Research-Sync: main
 - Confirmed the existing separate project homes `KitvisetLabs/Pangola-Grass` and `KitvisetLabs/Kitviset-AI-App` are visible to the connected GitHub account.
 - Updated the root README to index the split plan.
 - No new repository was created and no source was moved: the available GitHub connection exposes repository listing and file/issue operations but no repository-creation/transfer action. Migration remains gated on explicit boundary approval, destination setup, path/import/link/CI audit, provenance preservation and verification.
+
+
+## 2026-11-27 — QGR task decomposition
+
+- Added `research_lanes/I_foundational_physics_quantum_gravity/TASK_BOARD.md` with seven independently assignable research packages, deliverables, dependencies, evidence gates, status vocabulary and cold-start handoff requirements.
+- Updated root README to index the task board.
+- Work packages are OPEN / UNASSIGNED; no scientific result or completed experiment is claimed.
