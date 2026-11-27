@@ -941,3 +941,8 @@ The current cycle is [the matched control / quantum-speed-limit contract](integr
 ## New research program — AI-Assisted Quantum Gravity (QGR)
 
 A dedicated, evidence-gated quantum-gravity research program is now indexed at [research_lanes/I_foundational_physics_quantum_gravity/README.md](research_lanes/I_foundational_physics_quantum_gravity/README.md). It covers source verification, mathematical foundations, framework comparison, black-hole information, AI-assisted equation discovery, observational tests and reproducible computation. New contributors should also follow [docs/RESEARCH_HANDOFF_GUIDE.md](docs/RESEARCH_HANDOFF_GUIDE.md). The GitHub repository—not chat history—is the canonical handoff source. This program is newly documented; its proposed work queue is not a claim that the listed research tasks or a new quantum-gravity discovery have already been completed.
+
+
+## Repository architecture — independent projects and controlled splits
+
+The UQPU program keeps its eight tightly coupled A–H lanes in one repository. Independent programs are mapped in [Repository Boundaries and Split Plan](docs/REPOSITORY_BOUNDARIES_AND_SPLIT_PLAN.md): Quantum Gravity and contactless propulsion are proposed for separate repositories; Pangola Grass and Kitviset AI App already have separate repositories. No source files have been migrated and no new repositories are claimed as created. The split plan requires history/provenance, links, CI and integration contracts to be verified before any original files are removed.
