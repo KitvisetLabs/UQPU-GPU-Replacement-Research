@@ -2433,3 +2433,11 @@ Research-Sync: main
 - Next implementation order: independent EXP-00 evaluator and negative tests; exact Poisson scalar reference and classical tridiagonal baseline; then EXP-01 metadata/result harness and physical GPU capture only on an available device.
 
 Research-Sync: main
+
+
+## 2026-11-27 — QGR program and cold-start handoff foundation
+
+- Added the AI-Assisted Quantum Gravity Research program index at `research_lanes/I_foundational_physics_quantum_gravity/README.md`.
+- Added `docs/RESEARCH_HANDOFF_GUIDE.md` defining repository-first onboarding, task records, evidence discipline, branch/PR/CI rules, AI successor responsibilities and a session handoff template.
+- Updated the root README to expose the QGR program and contributor handoff guide.
+- Scope is documentation and workflow establishment only. Literature verification, mathematical reproduction, simulations, experiments and any new quantum-gravity discovery remain pending until separately performed and recorded.
