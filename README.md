@@ -1,3 +1,11 @@
+## Latest execution-contract tranche — 2026-11-27 — Batch 146
+
+- [Batch 146: EXP-00/01 execution contracts and first EXP-05 matrix workload](docs/BATCH_146_QGR_EXP001_EXECUTION_CONTRACTS.md) · [machine-readable contract](benchmarks/manifests/qgr-exp-001-batch146-execution-contracts-2026-11-27.json).
+- EXP-00 reuses the existing signed-Max-Cut held-out fixtures and freezes independent objective, bit-order, encoding/decoding, feasibility and exact-argmax checks; no duplicate split is created.
+- EXP-01 freezes kernel and accepted-task timing scopes plus hardware/software provenance, correctness, uncertainty and energy metadata. Missing physical GPU access is DATA_BLOCKED, never a fabricated benchmark.
+- EXP-05 selects the 1D Dirichlet Poisson family (A_N=\operatorname{tridiag}(-1,2,-1)), (b=e_1), with scalar output (b^T A_N^{-1}b=N/(N+1)). The classical comparator is a stable tridiagonal solve; quantum access/oracle, state-preparation, QSVT, precision, measurement, QEC and host costs must all be counted.
+- **Status:** contracts and candidate workload frozen for implementation; EXP-00/01/05 have NOT been run. No quantum advantage, GPU replacement, QPU job, physical GPU measurement or external spend is claimed or authorized.
+
 # UQPU: Universal Quantum Processing Unit
 
 ## Latest research program — 2026-11-27 — QGR-EXP-001 Quantum Processor GPU Replacement
