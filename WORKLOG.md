@@ -2441,3 +2441,12 @@ Research-Sync: main
 - Added `docs/RESEARCH_HANDOFF_GUIDE.md` defining repository-first onboarding, task records, evidence discipline, branch/PR/CI rules, AI successor responsibilities and a session handoff template.
 - Updated the root README to expose the QGR program and contributor handoff guide.
 - Scope is documentation and workflow establishment only. Literature verification, mathematical reproduction, simulations, experiments and any new quantum-gravity discovery remain pending until separately performed and recorded.
+
+
+## 2026-11-27 — Independent repository boundary plan
+
+- Added `docs/REPOSITORY_BOUNDARIES_AND_SPLIT_PLAN.md` to distinguish independent projects from UQPU's tightly integrated system lanes.
+- Decision: retain UQPU A–H in one repository because their workload, hardware, evidence and end-to-end economics interfaces are coupled; propose standalone repositories for Quantum Gravity and contactless propulsion/ionic-fusion propulsion after inventory and governance setup.
+- Confirmed the existing separate project homes `KitvisetLabs/Pangola-Grass` and `KitvisetLabs/Kitviset-AI-App` are visible to the connected GitHub account.
+- Updated the root README to index the split plan.
+- No new repository was created and no source was moved: the available GitHub connection exposes repository listing and file/issue operations but no repository-creation/transfer action. Migration remains gated on explicit boundary approval, destination setup, path/import/link/CI audit, provenance preservation and verification.
