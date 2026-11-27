@@ -1455,3 +1455,12 @@ The research target is full GPU compute replacement by quantum processing, with 
 **Next gate:** freeze EXP-00 semantics and EXP-01 optimized CPU/GPU baseline; select one EXP-05 structured matrix workload with explicit input-access/oracle and compact-output contract; reuse the existing signed-Max-Cut held-out fixtures for EXP-06; preregister a known-integral EXP-07 amplitude-estimation comparison. All experiments remain NOT RUN until evidence artifacts are added.
 
 **Nonclaims:** no QPU speedup, GPU replacement, physical implementation, QPU measurement, GPU measurement, energy saving or cost saving is established. State-space dimension is not equivalent to readable classical memory. No free QRAM/oracle/state preparation/QEC/measurement/postprocessing is assumed. Paid QPU jobs and external spend require explicit user authorization and bounded budget.
+
+
+## 2026-11-27 — RG-QGR-EXP-001 — Batch 146 execution contracts
+
+**Status:** OPEN / CONTRACTS_FROZEN_FOR_IMPLEMENTATION / EXPERIMENTS_NOT_RUN. **Owner:** Lane A; cross-lane interfaces B–H. **Canonical detail:** `docs/BATCH_146_QGR_EXP001_EXECUTION_CONTRACTS.md`; **machine record:** `benchmarks/manifests/qgr-exp-001-batch146-execution-contracts-2026-11-27.json`.
+
+EXP-00 now has a frozen exact-control contract reusing the existing signed-Max-Cut fixtures without changing their split. It requires independent objective and argmax recomputation, bit-order and sign-convention controls, direct-QUBO/edge-parity equivalence, fail-closed feasibility and hash-bound provenance. EXP-01 now distinguishes resident-kernel timing from complete accepted-task timing and requires full environment, correctness, uncertainty and energy metadata; absent hardware is DATA_BLOCKED. EXP-05 selects the 1D Dirichlet Poisson tridiagonal family with (A_N=\operatorname{tridiag}(-1,2,-1)), (b=e_1), and exact scalar (z_N=N/(N+1)); stable tridiagonal direct solve is the classical baseline.
+
+**Next gate:** implement and run EXP-00 independent evaluator/negative tests, then exact Poisson reference/classical baseline, then the EXP-01 measurement harness. No new experiment was executed in Batch 146. No QPU advantage, GPU replacement, physical GPU measurement, energy saving or cost saving is established. Paid QPU jobs and external expenditure still require explicit user approval.
