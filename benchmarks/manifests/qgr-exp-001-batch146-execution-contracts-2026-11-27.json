@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "QGR-EXP-001",
+  "batch": 146,
+  "date": "2026-11-27",
+  "status": "CONTRACTS_FROZEN_IMPLEMENTATION_NOT_RUN",
+  "evidence_class": [
+    "SOFTWARE_CONTRACT",
+    "THEORY",
+    "MODEL_ONLY"
+  ],
+  "exp00": {
+    "id": "EXP-00",
+    "status": "CONTRACT_FROZEN_IMPLEMENTATION_PENDING",
+    "dataset": "Reuse existing signed-Max-Cut held-out fixtures; do not duplicate or alter split",
+    "checks": [
+      "independent objective recomputation",
+      "sign and weight convention controls",
+      "bit-order and measurement decoding controls",
+      "direct-QUBO versus edge-parity equivalence",
+      "parity-cycle feasibility and fail-closed rejection",
+      "independent optimum and complete argmax recomputation",
+      "frozen feasibility and normalized-regret acceptance",
+      "manifest and reference hash binding"
+    ],
+    "pass_rule": "All exact controls agree on every frozen fixture; malformed controls are rejected; any mismatch blocks performance comparisons.",
+    "outputs": [
+      "hash-bound case manifest",
+      "independent evaluator",
+      "positive and negative tests",
+      "per-case provenance JSON"
+    ]
+  },
+  "exp01": {
+    "id": "EXP-01",
+    "status": "CONTRACT_FROZEN_IMPLEMENTATION_PENDING",
+    "scopes": [
+      "kernel-resident timing",
+      "accepted-task end-to-end timing"
+    ],
+    "required_metadata": [
+      "GPU and CPU model",
+      "RAM and VRAM",
+      "OS/driver/runtime/compiler/library versions",
+      "precision and power/clock policy",
+      "batch size and warm-up",
+      "repetitions and synchronization",
+      "input/output hashes",
+      "correctness and quality",
+      "median and p95 latency",
+      "throughput and peak memory",
+      "energy method or explicit null reason",
+      "reproducible command and environment"
+    ],
+    "pass_rule": "Independent correctness, reproducible environment and commands, optimized fair baseline, complete accepted-task accounting.",
+    "missing_data_policy": "Missing physical GPU or telemetry is DATA_BLOCKED; do not fabricate measurements."
+  },
+  "exp05": {
+    "id": "EXP-05",
+    "status": "CANDIDATE_FROZEN_NOT_RUN",
+    "workload": "1D Dirichlet Poisson tridiagonal matrix",
+    "matrix": "A_N = tridiag(-1,2,-1)",
+    "rhs": "b=e_1",
+    "accepted_output": "z_N = b^T A_N^{-1} b = N/(N+1)",
+    "sizes": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "quantum_candidate": "Block encoding / QSVT compact scalar observable",
+    "classical_baseline": "Stable tridiagonal direct solve; dense solver diagnostic only",
+    "mandatory_accounting": [
+      "logical qubits",
+      "physical qubits and QEC separately",
+      "block-encoding normalization",
+      "oracle construction and query cost",
+      "state preparation",
+      "QSVT degree",
+      "gate counts and depth",
+      "ancillas and routing",
+      "precision/error",
+      "shots or coherent repetitions",
+      "measurement and postprocessing",
+      "host work",
+      "complete classical baseline"
+    ],
+    "falsifier": "No end-to-end crossover after all access, precision, measurement, QEC and host costs."
+  },
+  "authorization": {
+    "paid_qpu_jobs": false,
+    "hardware_purchase": false,
+    "external_spend": false,
+    "requires_explicit_user_approval": true
+  },
+  "nonclaims": [
+    "No EXP-00 execution claimed",
+    "No EXP-01 physical GPU measurement claimed",
+    "No EXP-05 quantum simulation or QPU run claimed",
+    "No quantum advantage or GPU replacement established"
+  ]
+}
