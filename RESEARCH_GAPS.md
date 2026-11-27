@@ -1444,3 +1444,14 @@ Pan et al., *Journal of Corporate Finance* 102, 103099, early online 2026-10-14,
 ## 2026-10-30 — BIO-001 potato–okra HTL–AD–HDO model watch
 
 Added `docs/literature_watch/2026-10-30-potato-okra-htl-bio-crude-tea.md` for Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), 100080, DOI 10.1016/j.cejgas.2026.100080. This is an external potato–okra process simulation/TEA, not Pangola evidence. Reproduction must reconcile the 36.9 wt% optimized versus 31.6 wt% integrated bio-crude yield bases, HTL-only ERR versus integrated energy recovery, and deterministic NPV (~US$11.24M) versus Monte Carlo mean (~US$2.79M). The source model/supplement and external validation must be independently audited. Pangola transfer requires matched measured feedstock batches, final accepted-liquid quality, complete mass/energy closure, H2/catalyst/utilities, lifecycle costs and non-double-counted coproduct credits. No commercial fuel claim.
+
+
+## 2026-11-27 — RG-QGR-EXP-001 — Quantum Processor GPU Replacement
+
+**Status:** OPEN / EXPERIMENT PROGRAM PUBLISHED / EXPERIMENTS NOT RUN. **Owner:** Lane A; cross-lane interfaces B–H. **Canonical detail:** `research_lanes/A_quantum_programming_runtime/QUANTUM_GPU_REPLACEMENT_EXPERIMENT_PROGRAM_2026-11-27.md`. **Batch:** `docs/BATCH_145_QUANTUM_GPU_REPLACEMENT_EXPERIMENT_PROGRAM.md`. **Integration:** `integration/DAILY_CYCLE_2026-11-27_QUANTUM_GPU_REPLACEMENT.md`.
+
+The research target is full GPU compute replacement by quantum processing, with few logical qubits as a design pressure—not an assumed result. The program defines H0–H7, Q-001–Q-018, EXP-00–EXP-12 and gates G0–G9. Main risk areas include input/state preparation, oracle access, output bandwidth/readout, circuit depth and error, logical-to-physical overhead, QEC, host dependency, AI graph coverage and complete energy/economic boundary.
+
+**Next gate:** freeze EXP-00 semantics and EXP-01 optimized CPU/GPU baseline; select one EXP-05 structured matrix workload with explicit input-access/oracle and compact-output contract; reuse the existing signed-Max-Cut held-out fixtures for EXP-06; preregister a known-integral EXP-07 amplitude-estimation comparison. All experiments remain NOT RUN until evidence artifacts are added.
+
+**Nonclaims:** no QPU speedup, GPU replacement, physical implementation, QPU measurement, GPU measurement, energy saving or cost saving is established. State-space dimension is not equivalent to readable classical memory. No free QRAM/oracle/state preparation/QEC/measurement/postprocessing is assumed. Paid QPU jobs and external spend require explicit user authorization and bounded budget.
