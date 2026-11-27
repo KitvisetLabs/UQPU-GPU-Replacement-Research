@@ -959,3 +959,7 @@ The QGR program now has a task board with seven bounded, independently assignabl
 - [Contactless Propulsion Research](https://github.com/KitvisetLabs/Contactless-Propulsion-Research) — standalone propulsion/levitation project; initial research program and integration/optimization documents copied. Original UQPU source lane remains preserved.
 
 Migration policy: destination copies are not considered a history-preserving transfer. Keep source files until provenance, links and reproducibility checks are completed. See `docs/REPOSITORY_BOUNDARIES_AND_SPLIT_PLAN.md`.
+
+
+## Cross-repository integration: Quantum Gravity ↔ Propulsion
+UQPU's AI, simulation, optimization and reproducibility tools support both [Quantum Gravity Research](https://github.com/KitvisetLabs/Quantum-Gravity-Research) and [Contactless Propulsion Research](https://github.com/KitvisetLabs/Contactless-Propulsion-Research). Their research is bidirectionally integrated through [the shared bridge](integration/QUANTUM_GRAVITY_PROPULSION_BRIDGE.md), with explicit evidence classes, commit-level provenance, conventional baselines and safety gates. This is a research program, not a claim of demonstrated quantum-gravity propulsion.
