@@ -951,3 +951,11 @@ The UQPU program keeps its eight tightly coupled A–H lanes in one repository. 
 ## Quantum Gravity contributor work packages
 
 The QGR program now has a task board with seven bounded, independently assignable work packages (literature audit, mathematical foundations, framework comparison, AI-method audit, reproducibility benchmark, falsifiable tests, and black-hole/quantum-information review). All begin OPEN / UNASSIGNED. See [QGR Task Board](research_lanes/I_foundational_physics_quantum_gravity/TASK_BOARD.md). These are assignments, not completed findings.
+
+
+## Independent research repositories (2026-11-27)
+
+- [Quantum Gravity Research](https://github.com/KitvisetLabs/Quantum-Gravity-Research) — standalone QGR project; initial guide, task board and handoff protocol copied/adapted. Original UQPU source lane remains preserved.
+- [Contactless Propulsion Research](https://github.com/KitvisetLabs/Contactless-Propulsion-Research) — standalone propulsion/levitation project; initial research program and integration/optimization documents copied. Original UQPU source lane remains preserved.
+
+Migration policy: destination copies are not considered a history-preserving transfer. Keep source files until provenance, links and reproducibility checks are completed. See `docs/REPOSITORY_BOUNDARIES_AND_SPLIT_PLAN.md`.
