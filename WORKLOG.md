@@ -2457,3 +2457,13 @@ Research-Sync: main
 - Added `research_lanes/I_foundational_physics_quantum_gravity/TASK_BOARD.md` with seven independently assignable research packages, deliverables, dependencies, evidence gates, status vocabulary and cold-start handoff requirements.
 - Updated root README to index the task board.
 - Work packages are OPEN / UNASSIGNED; no scientific result or completed experiment is claimed.
+
+
+## 2026-11-27 — Initial repository split and content seeding
+
+- Verified `KitvisetLabs/Quantum-Gravity-Research` and `KitvisetLabs/Contactless-Propulsion-Research` exist, are public, use `main`, and grant this connection admin/push access.
+- Seeded QGR repository with a standalone project landing page, QGR task board, and research handoff guide.
+- Seeded Contactless Propulsion repository with its project README and three source research documents: research program, ionic-jet/fusion integration, and quiet/high-thrust/minimum-energy optimization.
+- Destination files are working copies; original source files have NOT been deleted or moved. Git history has not been transferred. Preserve provenance and validate internal links before any cleanup.
+- No physics result, levitation capability, antigravity effect, fusion propulsion, or experimental performance is claimed as demonstrated.
+- Next: verify every destination file, add canonical source/destination manifest, inventory remaining cross-links and artifacts, then create a history-preserving migration or PR if needed.
