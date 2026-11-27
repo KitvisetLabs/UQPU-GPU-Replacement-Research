@@ -946,3 +946,8 @@ A dedicated, evidence-gated quantum-gravity research program is now indexed at [
 ## Repository architecture — independent projects and controlled splits
 
 The UQPU program keeps its eight tightly coupled A–H lanes in one repository. Independent programs are mapped in [Repository Boundaries and Split Plan](docs/REPOSITORY_BOUNDARIES_AND_SPLIT_PLAN.md): Quantum Gravity and contactless propulsion are proposed for separate repositories; Pangola Grass and Kitviset AI App already have separate repositories. No source files have been migrated and no new repositories are claimed as created. The split plan requires history/provenance, links, CI and integration contracts to be verified before any original files are removed.
+
+
+## Quantum Gravity contributor work packages
+
+The QGR program now has a task board with seven bounded, independently assignable work packages (literature audit, mathematical foundations, framework comparison, AI-method audit, reproducibility benchmark, falsifiable tests, and black-hole/quantum-information review). All begin OPEN / UNASSIGNED. See [QGR Task Board](research_lanes/I_foundational_physics_quantum_gravity/TASK_BOARD.md). These are assignments, not completed findings.
