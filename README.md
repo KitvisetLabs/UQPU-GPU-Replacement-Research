@@ -936,3 +936,8 @@ The current cycle is [the matched control / quantum-speed-limit contract](integr
 
 
 - Batch numbering and CI reconciliation (2026-10-30T01:15:43Z): Batch 139 is the newest numbered batch committed on main (commit [e9fba347](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/e9fba347a4deb39b24a40fb1d05e32774296b905)); Batch 138 remains draft/open in PR #152. Latest schema-sync head [010d8554](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/commit/010d8554ec4afb8b6882e426fa7b44999a1b59c5) has cold-start run [#1384 queued](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984834762) and core run [#2104 queued](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/actions/runs/40984834648). Earlier Batch 139 cold-start #1382 passed; its core #2102 unit matrix passed on Python 3.10/3.11/3.12 while extended jobs remained in progress.
+
+
+## New research program — AI-Assisted Quantum Gravity (QGR)
+
+A dedicated, evidence-gated quantum-gravity research program is now indexed at [research_lanes/I_foundational_physics_quantum_gravity/README.md](research_lanes/I_foundational_physics_quantum_gravity/README.md). It covers source verification, mathematical foundations, framework comparison, black-hole information, AI-assisted equation discovery, observational tests and reproducible computation. New contributors should also follow [docs/RESEARCH_HANDOFF_GUIDE.md](docs/RESEARCH_HANDOFF_GUIDE.md). The GitHub repository—not chat history—is the canonical handoff source. This program is newly documented; its proposed work queue is not a claim that the listed research tasks or a new quantum-gravity discovery have already been completed.
