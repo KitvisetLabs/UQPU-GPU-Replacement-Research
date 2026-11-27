@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "work_id": "QGR-EXP-001",
+  "title": "Quantum Processor GPU Replacement — Research and Experiment Program",
+  "date": "2026-11-27",
+  "primary_owner": "Lane A — Quantum programming/workloads/compiler/runtime",
+  "cross_lane_owners": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "canonical_starting_main_sha": "41fac3953773ae0016a09539be57c3ed6b379771",
+  "merged_program_commit": "749c0c7f9841a51f640aee35988f2745dce3d9be",
+  "status": "EXPERIMENTS_DESIGNED_PREREGISTERED_DRAFT_NOT_EXECUTED",
+  "objective": "Investigate whether quantum processing can replace GPU compute capability for accepted workload families, prioritizing fewer logical qubits while evaluating total physical and system resources.",
+  "central_claim_status": "HYPOTHESIS_NOT_ESTABLISHED",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "claim": "At least one practical workload family has an end-to-end QPU advantage over the strongest fair GPU baseline.",
+      "falsifier": "No crossover after input encoding, QEC, shots, readout, host and system costs."
+    },
+    {
+      "id": "H2",
+      "claim": "A small logical-qubit register can represent and process selected useful tasks more efficiently.",
+      "falsifier": "State preparation, oracle, ancilla, precision, QEC or output costs erase the benefit."
+    },
+    {
+      "id": "H3",
+      "claim": "Block encoding/QSVT or quantum linear solvers can outperform GPUs on selected structured matrix tasks.",
+      "falsifier": "No crossover for the frozen matrix families and requested output contract."
+    },
+    {
+      "id": "H4",
+      "claim": "Quantum search/optimization improves accepted solution quality per total resource on selected families.",
+      "falsifier": "No credible gain under equal objective, quality and tuning/shot budgets."
+    },
+    {
+      "id": "H5",
+      "claim": "Amplitude estimation reduces total cost for selected sampling tasks at equal error/confidence.",
+      "falsifier": "Circuit and state-preparation costs exceed classical variance-reduced methods."
+    },
+    {
+      "id": "H6",
+      "claim": "Quantum-native representations can replace selected AI kernels or graphs at matched quality.",
+      "falsifier": "No matched-quality end-to-end crossover."
+    },
+    {
+      "id": "H7",
+      "claim": "Algorithm/compiler/device co-design reduces full-stack resource requirements.",
+      "falsifier": "Savings fail to survive physical mapping and system accounting."
+    },
+    {
+      "id": "H0",
+      "claim": "Optimized classical systems dominate the tested workload and size range.",
+      "falsifier": "A reproducible QPU advantage passes all gates."
+    }
+  ],
+  "open_questions": [
+    "Q-001 minimum logical qubits",
+    "Q-002 state-preparation and data access",
+    "Q-003 compact output versus full output",
+    "Q-004 compiled gate/depth/ancilla costs",
+    "Q-005 physical qubits and QEC",
+    "Q-006 useful entanglement contribution",
+    "Q-007 circuit depth and two-qubit gate reduction",
+    "Q-008 GPU crossover size",
+    "Q-009 shot count and confidence",
+    "Q-010 measurement/output reconstruction",
+    "Q-011 total energy boundary",
+    "Q-012 hardware modality and connectivity",
+    "Q-013 residual classical dependency",
+    "Q-014 useful family coverage with few qubits",
+    "Q-015 fault-tolerance overhead",
+    "Q-016 held-out and calibration robustness",
+    "Q-017 complete AI graph without hidden GPU",
+    "Q-018 workload scope outside quantum candidate"
+  ],
+  "experiments": [
+    {
+      "id": "EXP-00",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-01",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-02",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-03",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-04",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-05",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-06",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-07",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-08",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-09",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-10",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-11",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "EXP-12",
+      "status": "DESIGNED_NOT_RUN"
+    }
+  ],
+  "initial_logical_qubit_sweep": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    16
+  ],
+  "qubit_count_semantics": "logical_qubits; physical_qubits and QEC overhead must be estimated separately",
+  "comparison_rules": [
+    "same accepted useful-output contract",
+    "optimized CPU/GPU baselines",
+    "include state preparation and input/oracle access",
+    "include shots and output reconstruction",
+    "include QEC/control/host/network costs where applicable",
+    "report quality and uncertainty",
+    "no FLOP/s versus quantum-operation comparison"
+  ],
+  "gates": [
+    "G0_CONTRACT",
+    "G1_GPU_BASELINE",
+    "G2_ALGORITHMIC_FEASIBILITY",
+    "G3_IDEAL_CROSSOVER",
+    "G4_NOISE_AND_COMPILATION",
+    "G5_PHYSICAL_FEASIBILITY",
+    "G6_HARDWARE_EVIDENCE",
+    "G7_END_TO_END_ADVANTAGE",
+    "G8_REPLACEMENT_COVERAGE",
+    "G9_FULL_GPU_REPLACEMENT"
+  ],
+  "authorization": {
+    "paid_qpu_jobs": false,
+    "hardware_purchase": false,
+    "external_spend": false,
+    "requires_explicit_user_approval": true
+  },
+  "evidence_boundary": "No experiments, GPU measurements, QPU jobs, hardware claims or quantum advantage are asserted by this preregistration.",
+  "next_action": "Freeze EXP-00 and EXP-01 contracts, then select one EXP-05 structured matrix workload and reuse the existing signed-Max-Cut held-out fixtures for EXP-06."
+}
