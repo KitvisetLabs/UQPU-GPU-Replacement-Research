@@ -2409,3 +2409,15 @@ Fresh finance-specific surveillance found Pan et al., “One size doesn't fit al
 ## Batch 144 supplemental literature update — BIO-001 HTL–AD–HDO (2026-10-30)
 
 Fresh biomass surveillance found Hussaini et al., *Chemical Engineering Journal: Green and Sustainable* 3 (2026), article 100080, DOI 10.1016/j.cejgas.2026.100080. Added a literature watch and updated the BIO-001 transfer gap/accepted-liquid contract, Batch 144 report, integration index, README and cold-start handoff. The paper models potato–okra HTL–AD–HDO; it is not Pangola data. Its reported 36.9 wt% optimized bio-crude yield, 31.6 wt% integrated stream-table value, HTL ERR 66.58%, integrated energy claims and NPV values require source/supplement reconstruction. In particular, deterministic NPV near US$11.24M versus a reported Monte Carlo mean near US$2.79M must be reconciled. No accepted Pangola liquid, commercial cost or net-energy claim is promoted.
+
+
+## 2026-11-27 — Batch 145 — QGR-EXP-001 quantum processor GPU replacement experiment program
+
+- Published the full Lane A experiment program through PR #164 and merged it to main at `749c0c7f9841a51f640aee35988f2745dce3d9be`.
+- Added hypotheses H0–H7, competing explanations and falsifiers; open questions Q-001–Q-018; 13 experiment definitions EXP-00–EXP-12; multiple experimental forms; fair GPU comparison and statistical protocol; logical/physical resource accounting; and decision gates G0–G9.
+- Added the experiment matrix CSV, machine-readable preregistration JSON, Batch 145 report, A–H integration report and machine-readable integration record. Reused existing QSVT and signed-Max-Cut parity-QAOA artifacts as starting points; no duplicate held-out dataset was created.
+- Initial execution order is EXP-00/01 semantic and optimized GPU baselines, then one frozen structured matrix case for EXP-05, reuse existing held-out signed-Max-Cut fixtures for EXP-06, and one controlled amplitude-estimation task for EXP-07.
+- Evidence class is RESEARCH_DESIGN / PREREGISTERED_DRAFT. No new simulation, software test suite, GPU measurement, QPU job, hardware measurement, energy measurement or quantum advantage was produced by this publication. Logical and physical qubits remain separately accounted.
+- No paid QPU job, hardware purchase or external spend was initiated or authorized. Next agents must inspect existing Lane A artifacts, freeze exact output contracts and baselines, and preserve null/negative results.
+
+Research-Sync: main
