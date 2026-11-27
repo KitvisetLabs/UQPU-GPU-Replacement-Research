@@ -332,3 +332,16 @@ Pan et al. (Journal of Corporate Finance; early online 2026-10-14; DOI 10.1016/j
 - [Batch 144](../docs/BATCH_144_PARITY_QAOA_EXACT_MAPPING_AUDIT.md)
 
 External potato–okra HTL–AD–HDO process simulation/TEA only; no Pangola transfer or commercial fuel claim. The watch flags yield-basis and deterministic-versus-Monte-Carlo NPV reconciliation before any use.
+
+
+## Latest integrated cycle — 2026-11-27 — QGR-EXP-001 Quantum Processor GPU Replacement
+
+- [Batch 145](../docs/BATCH_145_QUANTUM_GPU_REPLACEMENT_EXPERIMENT_PROGRAM.md)
+- [Full Lane A experiment program](../research_lanes/A_quantum_programming_runtime/QUANTUM_GPU_REPLACEMENT_EXPERIMENT_PROGRAM_2026-11-27.md)
+- [13-experiment matrix](../benchmarks/experiments/qgr-exp-001-experiment-matrix-2026-11-27.csv)
+- [Machine-readable preregistration](../benchmarks/manifests/qgr-exp-001-preregistration-2026-11-27.json)
+- [Daily A–H report](DAILY_CYCLE_2026-11-27_QUANTUM_GPU_REPLACEMENT.md)
+- [Machine-readable integration record](INT-20261127-QUANTUM-GPU-REPLACEMENT.json)
+- [Merged PR #164](https://github.com/KitvisetLabs/UQPU-GPU-Replacement-Research/pull/164)
+
+The full GPU replacement objective is preserved. H0–H7 and Q-001–Q-018 are falsifiable; EXP-00–EXP-12 span exact controls, optimized GPU baselines, ideal/noisy simulation, QSVT/block encoding, QAOA/Grover, amplitude estimation, AI graph scope, hardware, fault tolerance and whole-system energy/cost. This is a design/preregistration only: no experiment was run and no advantage or replacement is claimed. Paid QPU execution remains unauthorized without explicit user approval.
